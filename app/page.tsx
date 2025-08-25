@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
+import Catchphrase from "@/components/Catchphrase"
 
 export const metadata: Metadata = {
   title: "3D print service in Gent | X3DPrints",
@@ -68,15 +69,18 @@ export default function HomePage() {
               <span className="h-2 w-2 rounded-full bg-emerald-400" />
               Snel, precies en betaalbaar
             </span>
-            <h1 className="mt-4 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              3D prints die wél kloppen.{" "}
+            <Catchphrase className="mt-4 block text-base font-medium text-indigo-600 sm:text-lg">
+              Where Design Meets Dimension
+            </Catchphrase>
+            <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
+              PLA prints die wél kloppen.{" "}
               <span className="bg-gradient-to-r from-indigo-600 via-sky-400 to-emerald-400 bg-clip-text text-transparent">
                 Van model naar functioneel onderdeel.
               </span>
             </h1>
             <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 sm:text-lg">
-              Van prototypes tot kleine series. Jij uploadt je STL/STEP, wij leveren strakke prints met consistente
-              kwaliteit. Materiaaladvies inbegrepen, nabewerking mogelijk.
+              Van prototypes tot kleine series. Specialist in PLA met consistente kwaliteit. Materiaaladvies voor andere
+              filamenten en nabewerking mogelijk.
             </p>
             <div className="mt-7 flex flex-wrap items-center gap-3">
               <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
@@ -93,7 +97,7 @@ export default function HomePage() {
             {[
               { k: "Tolerantie", v: "±0,2 mm" },
               { k: "Doorlooptijd", v: "2–5 werkdagen" },
-              { k: "Materialen", v: "PLA, PETG, ABS, ASA, Nylon, PA-CF" },
+              { k: "Materialen", v: "PLA (focus), PETG, ABS, ASA" },
             ].map((item) => (
               <div
                 key={item.k}
@@ -103,6 +107,19 @@ export default function HomePage() {
                 <div className="mt-1 text-xl font-semibold">{item.v}</div>
               </div>
             ))}
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ABOUT */}
+      <section className="px-6 py-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="max-w-3xl">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Over X3DPrints</h2>
+            <p className="mt-2 text-slate-600">
+              X3DPrints maakt deel uit van Xinu in Herzele. Ons doel? 3D prints betaalbaar en makkelijk beschikbaar maken.
+              We printen vooral PLA op een Bambu FDM-printer, maar ondersteunen ook andere materialen.
+            </p>
           </Reveal>
         </div>
       </section>
@@ -158,12 +175,13 @@ export default function HomePage() {
           <Reveal className="mb-6">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Materialen</h2>
             <p className="mt-2 max-w-2xl text-slate-600">
-              Kies op functie, omgeving en afwerking. Twijfel je? We adviseren zonder drama.
+              PLA is onze specialiteit voor prototypes met strak detail. Andere filamenten zijn beschikbaar wanneer de
+              toepassing dat vraagt.
             </p>
           </Reveal>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { n: "PLA", u: "Prototypes, display, strak detail." },
+              { n: "PLA", u: "Matte, silk, wood, metal, glow en meer varianten." },
               { n: "PETG", u: "Sterk, licht flexibel, vocht- en chemie-resistenter." },
               { n: "ABS / ASA", u: "Hitte- en UV-bestendig, goed voor outdoor." },
               { n: "Nylon (PA)", u: "Heel sterk, slijtvast, industriële toepassingen." },
