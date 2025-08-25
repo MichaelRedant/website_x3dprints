@@ -1,26 +1,29 @@
+/* ===== Tailwind v4 core imports ===== */
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ===== Jouw globale styles (hier mag je @apply blijven gebruiken) ===== */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* voorbeeld: typografie en kleur-tokens */
+:root{
+  --brand: #111827;
+  --accent: #00d6b9;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #111827;
+  background: white;
+  font-synthesis-weight: none;
+  text-rendering: optimizeLegibility;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-medium transition
+         bg-[#00d6b9] text-black hover:brightness-95 active:brightness-90;
+}
+
+/* voorbeeld utility compose */
+.section {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
