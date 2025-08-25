@@ -5,6 +5,7 @@ import type { ReactNode } from "react"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import Catchphrase from "@/components/Catchphrase"
+import GlassOrb from "@/components/GlassOrb"
 
 export const metadata: Metadata = {
   title: "3D print service in Herzele | X3DPrints",
@@ -435,13 +436,9 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="justify-self-end">
-                <Image
-                  src="/images/next.svg"
-                  alt=""
-                  width={160}
-                  height={160}
-                  className="opacity-80 [filter:contrast(1.05)_saturate(1.1)]"
-                />
+                <div className="justify-self-end">
+  <GlassOrb className="h-40 w-40 opacity-90" />
+</div>
               </div>
             </div>
           </Reveal>
