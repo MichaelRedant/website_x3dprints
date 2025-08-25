@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
+import type { ReactNode } from "react"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import Catchphrase from "@/components/Catchphrase"
@@ -23,6 +24,20 @@ export const metadata: Metadata = {
 }
 
 export default function HomePage() {
+  function icon(shape: ReactNode) {
+    return (
+      <svg
+        aria-hidden
+        className="mb-2 h-6 w-6 text-indigo-600"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        {shape}
+      </svg>
+    )
+  }
   const faq = [
     {
       q: "Welke bestanden kan ik uploaden?",
@@ -62,7 +77,7 @@ export default function HomePage() {
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.07]" />
 
       {/* HERO */}
-      <section className="px-6 pb-16 pt-14 sm:px-8 lg:px-12 lg:pb-24">
+      <section className="px-6 pb-24 pt-20 sm:px-8 lg:px-12 lg:pb-32 lg:pt-28">
         <div className="mx-auto max-w-6xl">
           <Reveal className="max-w-3xl">
             <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200/40 bg-white/60 px-3 py-1 text-xs text-slate-700 backdrop-blur">
@@ -83,27 +98,53 @@ export default function HomePage() {
               kleine series met strakke afwerking. PLA is onze standaard, maar we schakelen waar nodig over naar PETG,
               ABS/ASA, Nylon of PA-CF. Levertijd meestal 2–5 werkdagen, transparante offerte vooraf.
             </p>
-            <div className="mt-7 flex flex-wrap items-center gap-3">
+            <div className="mt-10 flex flex-wrap items-center gap-3">
               <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-300/60 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-800 backdrop-blur hover:bg-white"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-300/60 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-800 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white"
               >
                 Bekijk portfolio
               </Link>
             </div>
           </Reveal>
 
-          <Reveal delay={0.15} className="mt-12 grid gap-5 sm:grid-cols-3">
+          <Reveal delay={0.15} className="mt-16 grid gap-6 sm:grid-cols-3">
             {[
-              { k: "Tolerantie", v: "±0,2 mm" },
-              { k: "Doorlooptijd", v: "2–5 werkdagen" },
-              { k: "Bouwvolume", v: "Tot 25 × 25 × 25 cm" },
+              {
+                k: "Tolerantie",
+                v: "±0,2 mm",
+                icon: icon(
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 12h16M4 16h16" />
+                ),
+              },
+              {
+                k: "Doorlooptijd",
+                v: "2–5 werkdagen",
+                icon: icon(
+                  <>
+                    <circle cx={12} cy={12} r={9} />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l2 2" />
+                  </>
+                ),
+              },
+              {
+                k: "Bouwvolume",
+                v: "Tot 25 × 25 × 25 cm",
+                icon: icon(
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 16V8l-9-5-9 5v8l9 5 9-5ZM12 3v18M3 8l9 4 9-4"
+                  />
+                ),
+              },
             ].map((item) => (
               <div
                 key={item.k}
-                className="rounded-2xl border border-slate-200/70 bg-white/70 p-5 text-slate-800 backdrop-blur"
+                className="rounded-2xl border border-slate-200/70 bg-white/70 p-5 text-slate-800 backdrop-blur transition-transform hover:-translate-y-1 hover:shadow-lg"
               >
+                {item.icon}
                 <div className="text-sm text-slate-500">{item.k}</div>
                 <div className="mt-1 text-xl font-semibold">{item.v}</div>
               </div>
@@ -113,9 +154,9 @@ export default function HomePage() {
       </section>
 
       {/* ABOUT */}
-      <section className="px-6 py-12 sm:px-8 lg:px-12">
+      <section className="px-6 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
-          <Reveal className="grid items-center gap-8 sm:grid-cols-[1.2fr_.8fr]">
+          <Reveal className="grid items-center gap-12 sm:grid-cols-[1.2fr_.8fr]">
             <div className="max-w-3xl">
               <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Over X3DPrints</h2>
               <p className="mt-3 text-slate-600">
@@ -129,13 +170,13 @@ export default function HomePage() {
               <div className="mt-6 flex gap-3">
                 <Link
                   href="/services"
-                  className="rounded-xl border border-slate-300/60 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-800"
+                  className="rounded-xl border border-slate-300/60 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-800 transition-transform hover:-translate-y-0.5"
                 >
                   Diensten
                 </Link>
                 <Link
                   href="/materials"
-                  className="rounded-xl border border-slate-300/60 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-800"
+                  className="rounded-xl border border-slate-300/60 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-800 transition-transform hover:-translate-y-0.5"
                 >
                   Materialen
                 </Link>
@@ -149,7 +190,7 @@ export default function HomePage() {
       </section>
 
       {/* SEGMENTEN: particulieren vs. bedrijven */}
-      <section className="px-6 py-12 sm:px-8 lg:px-12">
+      <section className="px-6 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-8">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Voor wie we printen</h2>
@@ -157,8 +198,9 @@ export default function HomePage() {
               Geen one-size-fits-all. We print wat jij nodig hebt en denken mee over materiaal en geometrie.
             </p>
           </Reveal>
-          <div className="grid gap-5 sm:grid-cols-2">
-            <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-6">
+          <div className="grid gap-6 sm:grid-cols-2">
+            <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 transition-transform hover:-translate-y-1 hover:shadow-lg">
+              {icon(<circle cx={12} cy={12} r={9} />)}
               <h3 className="text-lg font-semibold text-slate-900">Particulieren</h3>
               <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
                 <li>Gepersonaliseerde cadeaus en naamplaatjes</li>
@@ -166,7 +208,8 @@ export default function HomePage() {
                 <li>Unieke accessoires en mini-sculpturen</li>
               </ul>
             </div>
-            <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-6">
+            <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 transition-transform hover:-translate-y-1 hover:shadow-lg">
+              {icon(<rect x={4} y={4} width={16} height={16} rx={2} />)}
               <h3 className="text-lg font-semibold text-slate-900">Bedrijven</h3>
               <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
                 <li>Etalage- en winkelmateriaal, displays en houders</li>
@@ -175,10 +218,10 @@ export default function HomePage() {
               </ul>
             </div>
           </div>
-          <div className="mt-5">
+          <div className="mt-8">
             <Link
               href="/portfolio"
-              className="inline-flex items-center rounded-xl border border-slate-300/60 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-800"
+              className="inline-flex items-center rounded-xl border border-slate-300/60 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-800 transition-transform hover:-translate-y-0.5"
             >
               Gallerij bekijken
             </Link>
@@ -187,7 +230,7 @@ export default function HomePage() {
       </section>
 
       {/* PERSONALISATIE */}
-      <section className="px-6 py-12 sm:px-8 lg:px-12">
+      <section className="px-6 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Personalisatie</h2>
@@ -196,13 +239,30 @@ export default function HomePage() {
               interieurelementen en items met karakter.
             </p>
           </Reveal>
-          <div className="grid gap-4 sm:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-3">
             {[
-              { t: "Kies ontwerp", d: "Vertrek van een bestaand model of een eenvoudige schets." },
-              { t: "Personaliseer", d: "Voeg tekst, logo of specifieke maatvoering toe." },
-              { t: "Wij printen", d: "Nette afwerking en levering binnen enkele werkdagen." },
+              {
+                t: "Kies ontwerp",
+                d: "Vertrek van een bestaand model of een eenvoudige schets.",
+                icon: icon(<polygon points="12 3 21 18 3 18" />),
+              },
+              {
+                t: "Personaliseer",
+                d: "Voeg tekst, logo of specifieke maatvoering toe.",
+                icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 4h16M4 12h16M4 20h16" />),
+              },
+              {
+                t: "Wij printen",
+                d: "Nette afwerking en levering binnen enkele werkdagen.",
+                icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 4h16v16H4z" />),
+              },
             ].map((s, i) => (
-              <Reveal key={s.t} delay={0.05 * (i + 1)} className="rounded-xl border border-slate-200/70 bg-white/70 p-5">
+              <Reveal
+                key={s.t}
+                delay={0.05 * (i + 1)}
+                className="rounded-xl border border-slate-200/70 bg-white/70 p-5 transition-transform hover:-translate-y-1 hover:shadow-lg"
+              >
+                {s.icon}
                 <div className="text-base font-semibold text-slate-900">{s.t}</div>
                 <div className="mt-1 text-sm text-slate-600">{s.d}</div>
               </Reveal>
@@ -212,7 +272,7 @@ export default function HomePage() {
       </section>
 
       {/* MATERIALEN + KLEUREN & AFWERKING */}
-      <section className="px-6 py-12 sm:px-8 lg:px-12">
+      <section className="px-6 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Materialen, kleuren & afwerking</h2>
@@ -221,16 +281,21 @@ export default function HomePage() {
               Nylon (PA) of PA-CF. Afwerking kan rauw, geschuurd, geprimed of gelakt; inserts en montage zijn mogelijk.
             </p>
           </Reveal>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { n: "PLA", u: "Matte, silk, wood, metal, glow en meer varianten." },
-              { n: "PETG", u: "Sterk, licht flexibel en vocht-/chemie-resistenter." },
-              { n: "ABS / ASA", u: "Hitte- en UV-bestendig; beter voor buiten." },
-              { n: "Nylon (PA)", u: "Zeer sterk en slijtvast; industriële toepassingen." },
-              { n: "PA-CF", u: "Nylon met carbon; stijf en licht voor jigs/fixtures." },
-              { n: "Specials", u: "TPU, vlamvertragend of glas-gevuld op aanvraag." },
+              { n: "PLA", u: "Matte, silk, wood, metal, glow en meer varianten.", icon: icon(<circle cx={12} cy={12} r={9} />) },
+              { n: "PETG", u: "Sterk, licht flexibel en vocht-/chemie-resistenter.", icon: icon(<rect x={4} y={4} width={16} height={16} rx={2} />) },
+              { n: "ABS / ASA", u: "Hitte- en UV-bestendig; beter voor buiten.", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M12 2v20M2 12h20" />) },
+              { n: "Nylon (PA)", u: "Zeer sterk en slijtvast; industriële toepassingen.", icon: icon(<polygon points="12 2 22 8 12 14 2 8" />) },
+              { n: "PA-CF", u: "Nylon met carbon; stijf en licht voor jigs/fixtures.", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 4h16v16H4z M4 4l16 16" />) },
+              { n: "Specials", u: "TPU, vlamvertragend of glas-gevuld op aanvraag.", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M12 3l8 6v6l-8 6-8-6V9l8-6z" />) },
             ].map((m, i) => (
-              <Reveal key={m.n} delay={0.05 * (i + 1)} className="rounded-xl border border-slate-200/70 bg-white/70 p-5">
+              <Reveal
+                key={m.n}
+                delay={0.05 * (i + 1)}
+                className="rounded-xl border border-slate-200/70 bg-white/70 p-5 transition-transform hover:-translate-y-1 hover:shadow-lg"
+              >
+                {m.icon}
                 <div className="text-base font-semibold text-slate-900">{m.n}</div>
                 <div className="mt-1 text-sm text-slate-600">{m.u}</div>
               </Reveal>
@@ -240,7 +305,7 @@ export default function HomePage() {
       </section>
 
       {/* WAAROM PLA (compact) */}
-      <section className="px-6 py-12 sm:px-8 lg:px-12">
+      <section className="px-6 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Waarom we vaak voor PLA kiezen</h2>
@@ -249,15 +314,40 @@ export default function HomePage() {
               afbreekbaar op industriële schaal, niet-toxisch en geschikt voor veel decoratieve en functionele toepassingen.
             </p>
           </Reveal>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { t: "Duurzaamheid", d: "Gemaakt uit hernieuwbare grondstoffen (bv. maïs, suikerriet)." },
-              { t: "Veiligheid", d: "Niet-toxisch en zonder scherpe dampen bij normaal gebruik." },
-              { t: "Afwerking", d: "Strakke details en levendige kleuren." },
-              { t: "Toepassing", d: "Geschikt voor decor, prototypes en lichte functionele onderdelen." },
-              { t: "Klantvriendelijk", d: "Licht, stevig genoeg en betaalbaar." },
+              {
+                t: "Duurzaamheid",
+                d: "Gemaakt uit hernieuwbare grondstoffen (bv. maïs, suikerriet).",
+                icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M12 2C7 2 4 6 4 10c0 6 8 12 8 12s8-6 8-12c0-4-3-8-8-8Zm0 0v10" />),
+              },
+              {
+                t: "Veiligheid",
+                d: "Niet-toxisch en zonder scherpe dampen bij normaal gebruik.",
+                icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M12 2 4 5v6c0 5 3.6 9.4 8 11 4.4-1.6 8-6 8-11V5l-8-3Z" />),
+              },
+              {
+                t: "Afwerking",
+                d: "Strakke details en levendige kleuren.",
+                icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5L12 3z" />),
+              },
+              {
+                t: "Toepassing",
+                d: "Geschikt voor decor, prototypes en lichte functionele onderdelen.",
+                icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M21 16V8l-9-5-9 5v8l9 5 9-5ZM12 3v18M3 8l9 4 9-4" />),
+              },
+              {
+                t: "Klantvriendelijk",
+                d: "Licht, stevig genoeg en betaalbaar.",
+                icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M8 14s2 2 4 2 4-2 4-2" />),
+              },
             ].map((s, i) => (
-              <Reveal key={s.t} delay={0.05 * (i + 1)} className="rounded-2xl border border-slate-200/70 bg-white/70 p-6">
+              <Reveal
+                key={s.t}
+                delay={0.05 * (i + 1)}
+                className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 transition-transform hover:-translate-y-1 hover:shadow-lg"
+              >
+                {s.icon}
                 <div className="text-base font-semibold text-slate-900">{s.t}</div>
                 <div className="mt-1 text-sm text-slate-600">{s.d}</div>
               </Reveal>
@@ -271,7 +361,7 @@ export default function HomePage() {
       </section>
 
       {/* PRIJZEN & LEVERING */}
-      <section className="px-6 py-12 sm:px-8 lg:px-12">
+      <section className="px-6 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Prijzen & levering</h2>
@@ -280,22 +370,39 @@ export default function HomePage() {
               vooraf over planning en oplevering.
             </p>
           </Reveal>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { t: "Prijsopbouw", d: "Materiaal, printtijd, afwerking en eventuele montage." },
-              { t: "Levertijd", d: "Gewoonlijk 2–5 werkdagen; spoed in overleg." },
-              { t: "Verzending/afhalen", d: "Verzending in BE of afhalen in regio Herzele/Gent." },
+              {
+                t: "Prijsopbouw",
+                d: "Materiaal, printtijd, afwerking en eventuele montage.",
+                icon: icon(<circle cx={12} cy={12} r={9} />),
+              },
+              {
+                t: "Levertijd",
+                d: "Gewoonlijk 2–5 werkdagen; spoed in overleg.",
+                icon: icon(<><circle cx={12} cy={12} r={9} /><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l2 2" /></>),
+              },
+              {
+                t: "Verzending/afhalen",
+                d: "Verzending in BE of afhalen in regio Herzele/Gent.",
+                icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 12h16M14 8l6 4-6 4" />),
+              },
             ].map((s, i) => (
-              <Reveal key={s.t} delay={0.05 * (i + 1)} className="rounded-2xl border border-slate-200/70 bg-white/70 p-6">
+              <Reveal
+                key={s.t}
+                delay={0.05 * (i + 1)}
+                className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 transition-transform hover:-translate-y-1 hover:shadow-lg"
+              >
+                {s.icon}
                 <div className="text-base font-semibold text-slate-900">{s.t}</div>
                 <div className="mt-1 text-sm text-slate-600">{s.d}</div>
               </Reveal>
             ))}
           </div>
-          <div className="mt-6 flex gap-3">
+          <div className="mt-10 flex gap-3">
             <Link
               href="/pricing"
-              className="rounded-xl border border-slate-300/60 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-800"
+              className="rounded-xl border border-slate-300/60 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-800 transition-transform hover:-translate-y-0.5"
             >
               Prijzen bekijken
             </Link>
@@ -305,7 +412,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="px-6 pb-20 pt-6 sm:px-8 lg:px-12">
+      <section className="px-6 pb-32 pt-10 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="overflow-hidden rounded-3xl border border-slate-200/70 bg-white/70 p-8 backdrop-blur sm:p-10">
             <div className="grid gap-6 sm:grid-cols-[1.2fr_.8fr] sm:items-center">
@@ -317,11 +424,11 @@ export default function HomePage() {
                   Stuur je model door en je krijgt snel een heldere prijs met het beste materiaaladvies voor jouw
                   toepassing.
                 </p>
-                <div className="mt-5 flex flex-wrap gap-3">
+                <div className="mt-8 flex flex-wrap gap-3">
                   <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
                   <Link
                     href="/portfolio"
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-300/60 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-800"
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-300/60 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-800 transition-transform hover:-translate-y-0.5"
                   >
                     Gallerij bekijken
                   </Link>
