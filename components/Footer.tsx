@@ -115,6 +115,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/about" className="hover:text-slate-900">
+                  Over ons
+                </Link>
+              </li>
+              <li>
                 <Link href="/pricing" className="hover:text-slate-900">
                   Prijzen
                 </Link>
