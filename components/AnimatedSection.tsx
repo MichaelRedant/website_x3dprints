@@ -9,7 +9,7 @@ export default function AnimatedSection({ children, className = "" }: { children
       className={className}
       initial={prefersReduced ? false : { opacity: 0, y: 20 }}
       whileInView={prefersReduced ? {} : { opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: false, amount: 0.2 }}
       transition={{ duration: 0.5 }}
     >
       {children}
