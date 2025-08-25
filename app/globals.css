@@ -1,6 +1,4 @@
 /* ===== Tailwind v4 core imports ===== */
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
 @import "tailwindcss";
 
 /* ===== Jouw globale styles (hier mag je @apply blijven gebruiken) ===== */
