@@ -3,8 +3,8 @@ import type { Metadata } from "next"
 import { SITE } from "@/lib/seo"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import ScrollProgress from "@/components/ScrollProgress"
 import { cn } from "@/lib/utils";
-
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -62,12 +62,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nl">
       <body className={cn("min-h-screen flex flex-col")}>
+        <ScrollProgress />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
         <script
           type="application/ld+json"
-          
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </body>

@@ -5,8 +5,8 @@ import Reveal from "@/components/Reveal"
 import Parallax from "@/components/Parallax"
 import TiltCard from "@/components/TiltCard"
 import Counter from "@/components/Counter"
-import ScrollProgress from "@/components/ScrollProgress"
 import GlassOrb from "@/components/GlassOrb"
+import GlassCard from "@/components/GlassCard"
 
 export const metadata: Metadata = {
   title: "Over X3DPrints | 3D-printstudio in Herzele",
@@ -37,8 +37,6 @@ export default function Page() {
 
   return (
     <main className="relative">
-      <ScrollProgress />
-
       {/* Decorative bg */}
       <div
         aria-hidden
@@ -47,11 +45,16 @@ export default function Page() {
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.06]" />
 
       {/* HERO / INTRO */}
-      <section className="px-6 pt-14 pb-10 sm:px-8 lg:px-12">
+      <section className="relative px-6 pt-14 pb-10 sm:px-8 lg:px-12">
+        <div className="absolute right-0 top-0 -z-10 hidden sm:block">
+          <GlassOrb className="h-64 w-64 opacity-40" />
+        </div>
         <div className="mx-auto max-w-6xl">
           <Reveal className="grid items-center gap-8 sm:grid-cols-[1.3fr_.7fr]">
             <div className="max-w-3xl">
-              <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Over X3DPrints</h1>
+              <h1 className="bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
+                Over X3DPrints
+              </h1>
               <p className="mt-3 text-slate-600">
                 X3DPrints is een éénpersoons 3D-printstudio in bijberoep, gevestigd in Herzele en onderdeel van
                 Xinudesign. Je spreekt rechtstreeks met de maker die ook produceert, test en afwerkt. Geen tickets,
@@ -66,19 +69,19 @@ export default function Page() {
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link
                   href="/materials"
-                  className="rounded-xl border border-slate-300/60 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-800 backdrop-blur hover:bg-white"
+                  className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
                 >
                   Materialen
                 </Link>
                 <Link
                   href="/services"
-                  className="rounded-xl border border-slate-300/60 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-800 backdrop-blur hover:bg-white"
+                  className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
                 >
                   Diensten
                 </Link>
                 <Link
                   href="/contact"
-                  className="rounded-xl border border-slate-300/60 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-800 backdrop-blur hover:bg-white"
+                  className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
                 >
                   Contact
                 </Link>
@@ -101,38 +104,38 @@ export default function Page() {
       </section>
 
       {/* STATS / COUNTERS */}
-<section className="px-6 pb-10 sm:px-8 lg:px-12">
-  <div className="mx-auto max-w-6xl">
-    <Reveal className="grid gap-4 sm:grid-cols-3">
-      {/* Bouwvolume */}
-      <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-5 text-center backdrop-blur">
-        <div className="text-xs uppercase tracking-wide text-slate-500">Bouwvolume</div>
-        <div className="mt-1 text-2xl font-semibold text-slate-900">
-          <Counter to={25} suffix=" cm" />
-        </div>
-        <div className="text-xs text-slate-500">per zijde (in één geheel)</div>
-      </div>
+      <section className="px-6 pb-10 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="grid gap-4 sm:grid-cols-3">
+            {/* Bouwvolume */}
+            <GlassCard className="p-5 text-center">
+              <div className="text-xs uppercase tracking-wide text-slate-500">Bouwvolume</div>
+              <div className="mt-1 text-2xl font-semibold text-slate-900">
+                <Counter to={25} suffix=" cm" />
+              </div>
+              <div className="text-xs text-slate-500">per zijde (in één geheel)</div>
+            </GlassCard>
 
-      {/* Doorlooptijd */}
-      <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-5 text-center backdrop-blur">
-        <div className="text-xs uppercase tracking-wide text-slate-500">Doorlooptijd</div>
-        <div className="mt-1 text-2xl font-semibold text-slate-900">
-          <Counter to={5} prefix="2–" suffix=" d" />
-        </div>
-        <div className="text-xs text-slate-500">afhankelijk van project</div>
-      </div>
+            {/* Doorlooptijd */}
+            <GlassCard className="p-5 text-center">
+              <div className="text-xs uppercase tracking-wide text-slate-500">Doorlooptijd</div>
+              <div className="mt-1 text-2xl font-semibold text-slate-900">
+                <Counter to={5} prefix="2–" suffix=" d" />
+              </div>
+              <div className="text-xs text-slate-500">afhankelijk van project</div>
+            </GlassCard>
 
-      {/* Tolerantie */}
-      <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-5 text-center backdrop-blur">
-        <div className="text-xs uppercase tracking-wide text-slate-500">Tolerantie</div>
-        <div className="mt-1 text-2xl font-semibold text-slate-900">
-          <Counter to={0.2} prefix="±" suffix=" mm" decimals={1} locale="nl-BE" />
+            {/* Tolerantie */}
+            <GlassCard className="p-5 text-center">
+              <div className="text-xs uppercase tracking-wide text-slate-500">Tolerantie</div>
+              <div className="mt-1 text-2xl font-semibold text-slate-900">
+                <Counter to={0.2} prefix="±" suffix=" mm" decimals={1} locale="nl-BE" />
+              </div>
+              <div className="text-xs text-slate-500">typisch voor FDM</div>
+            </GlassCard>
+          </Reveal>
         </div>
-        <div className="text-xs text-slate-500">typisch voor FDM</div>
-      </div>
-    </Reveal>
-  </div>
-</section>
+      </section>
 
 
       {/* USP CARDS met 3D tilt */}
@@ -145,9 +148,11 @@ export default function Page() {
               { t: "Afwerking op maat", d: "Rauw, geschuurd, geprimed of gelakt; inserts en montage mogelijk." },
             ].map((u, i) => (
               <Reveal key={u.t} delay={0.05 * (i + 1)}>
-                <TiltCard className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 shadow-sm backdrop-blur">
-                  <h3 className="text-lg font-semibold text-slate-900">{u.t}</h3>
-                  <p className="mt-1 text-slate-600">{u.d}</p>
+                <TiltCard>
+                  <GlassCard className="p-6">
+                    <h3 className="text-lg font-semibold text-slate-900">{u.t}</h3>
+                    <p className="mt-1 text-slate-600">{u.d}</p>
+                  </GlassCard>
                 </TiltCard>
               </Reveal>
             ))}
@@ -159,25 +164,29 @@ export default function Page() {
       <section className="px-6 pb-10 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="grid gap-8 sm:grid-cols-2">
-            <TiltCard className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 backdrop-blur">
-              <h2 className="text-xl font-semibold tracking-tight text-slate-900">Wat we doen</h2>
-              <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-600">
-                <li>Prototyping en kleine series</li>
-                <li>Winkelmateriaal: displays, houders en POS-oplossingen</li>
-                <li>Gepersonaliseerde items en cadeaus</li>
-                <li>Herstel en maatwerkonderdelen</li>
-              </ul>
+            <TiltCard>
+              <GlassCard className="p-6">
+                <h2 className="text-xl font-semibold tracking-tight text-slate-900">Wat we doen</h2>
+                <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-600">
+                  <li>Prototyping en kleine series</li>
+                  <li>Winkelmateriaal: displays, houders en POS-oplossingen</li>
+                  <li>Gepersonaliseerde items en cadeaus</li>
+                  <li>Herstel en maatwerkonderdelen</li>
+                </ul>
+              </GlassCard>
             </TiltCard>
 
-            <TiltCard className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 backdrop-blur">
-              <h2 className="text-xl font-semibold tracking-tight text-slate-900">Hoe we werken</h2>
-              <ol className="mt-3 list-decimal space-y-1 pl-5 text-slate-600">
-                <li>Upload je STL/STEP met toepassing en gewenste afwerking</li>
-                <li>Eerlijk materiaaladvies en transparante offerte</li>
-                <li>Productie, kwaliteitscheck en eventuele nabewerking</li>
-                <li>Verzending in BE of afhalen in regio Herzele/Gent</li>
-              </ol>
-              <p className="mt-3 text-sm text-slate-500">Levertijd meestal 2–5 werkdagen; spoed in overleg.</p>
+            <TiltCard>
+              <GlassCard className="p-6">
+                <h2 className="text-xl font-semibold tracking-tight text-slate-900">Hoe we werken</h2>
+                <ol className="mt-3 list-decimal space-y-1 pl-5 text-slate-600">
+                  <li>Upload je STL/STEP met toepassing en gewenste afwerking</li>
+                  <li>Eerlijk materiaaladvies en transparante offerte</li>
+                  <li>Productie, kwaliteitscheck en eventuele nabewerking</li>
+                  <li>Verzending in BE of afhalen in regio Herzele/Gent</li>
+                </ol>
+                <p className="mt-3 text-sm text-slate-500">Levertijd meestal 2–5 werkdagen; spoed in overleg.</p>
+              </GlassCard>
             </TiltCard>
           </Reveal>
         </div>
@@ -186,42 +195,44 @@ export default function Page() {
       {/* MATERIALEN & SPECIFICS */}
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
-          <Reveal className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 backdrop-blur">
-            <h2 className="text-xl font-semibold tracking-tight text-slate-900">Materialen & specificaties</h2>
-            <div className="mt-3 grid gap-6 sm:grid-cols-2">
-              <div>
-                <h3 className="text-sm font-semibold text-slate-900">Materialen</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
-                  <li>PLA (standaard, veel kleuren en varianten)</li>
-                  <li>PETG (sterker, vocht- en chemie-resistenter)</li>
-                  <li>ABS / ASA (hitte- en UV-bestendig)</li>
-                  <li>Nylon (PA) en PA-CF (stijf/sterk; jigs/fixtures)</li>
-                  <li>TPU (flexibel) op aanvraag</li>
-                </ul>
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-xl font-semibold tracking-tight text-slate-900">Materialen & specificaties</h2>
+              <div className="mt-3 grid gap-6 sm:grid-cols-2">
+                <div>
+                  <h3 className="text-sm font-semibold text-slate-900">Materialen</h3>
+                  <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
+                    <li>PLA (standaard, veel kleuren en varianten)</li>
+                    <li>PETG (sterker, vocht- en chemie-resistenter)</li>
+                    <li>ABS / ASA (hitte- en UV-bestendig)</li>
+                    <li>Nylon (PA) en PA-CF (stijf/sterk; jigs/fixtures)</li>
+                    <li>TPU (flexibel) op aanvraag</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-slate-900">Specs</h3>
+                  <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
+                    <li>Bouwvolume tot 25 × 25 × 25 cm per stuk</li>
+                    <li>Layerhoogte 0,12–0,28 mm</li>
+                    <li>Afwerking</li>
+                  </ul>
+                </div>
               </div>
-              <div>
-                <h3 className="text-sm font-semibold text-slate-900">Specs</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
-                  <li>Bouwvolume tot 25 × 25 × 25 cm per stuk</li>
-                  <li>Layerhoogte 0,12–0,28 mm</li>
-                  <li>Afwerking</li>
-                </ul>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Link
+                  href="/materials"
+                  className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+                >
+                  Alle materialen
+                </Link>
+                <Link
+                  href="/pricing"
+                  className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+                >
+                  Prijzen & levering
+                </Link>
               </div>
-            </div>
-            <div className="mt-5 flex flex-wrap gap-3">
-              <Link
-                href="/materials"
-                className="rounded-xl border border-slate-300/60 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-white"
-              >
-                Alle materialen
-              </Link>
-              <Link
-                href="/pricing"
-                className="rounded-xl border border-slate-300/60 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-white"
-              >
-                Prijzen & levering
-              </Link>
-            </div>
+            </GlassCard>
           </Reveal>
         </div>
       </section>
@@ -229,34 +240,36 @@ export default function Page() {
       {/* CTA */}
       <section className="px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
-          <Reveal className="overflow-hidden rounded-3xl border border-slate-200/70 bg-white/70 p-8 backdrop-blur sm:p-10">
-            <div className="grid gap-6 sm:grid-cols-[1.2fr_.8fr] sm:items-center">
-              <div>
-                <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Samen iets moois maken?</h2>
-                <p className="mt-2 max-w-prose text-slate-600">
-                  Stuur je model door en ontvang snel een heldere prijs met het beste materiaaladvies voor jouw toepassing.
-                </p>
-                <div className="mt-5 flex flex-wrap gap-3">
-                  <Link
-                    href="/contact"
-                    className="rounded-xl border border-slate-300/60 bg-black px-5 py-3 text-sm font-semibold text-white hover:brightness-110"
-                  >
-                    Offerte aanvragen
-                  </Link>
-                  <Link
-                    href="/portfolio"
-                    className="rounded-xl border border-slate-300/60 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-800"
-                  >
-                    Portfolio
-                  </Link>
+          <Reveal>
+            <GlassCard className="overflow-hidden p-8 sm:p-10">
+              <div className="grid gap-6 sm:grid-cols-[1.2fr_.8fr] sm:items-center">
+                <div>
+                  <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Samen iets moois maken?</h2>
+                  <p className="mt-2 max-w-prose text-slate-600">
+                    Stuur je model door en ontvang snel een heldere prijs met het beste materiaaladvies voor jouw toepassing.
+                  </p>
+                  <div className="mt-5 flex flex-wrap gap-3">
+                    <Link
+                      href="/contact"
+                      className="rounded-xl border border-white/20 bg-black px-5 py-3 text-sm font-semibold text-white hover:brightness-110"
+                    >
+                      Offerte aanvragen
+                    </Link>
+                    <Link
+                      href="/portfolio"
+                      className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+                    >
+                      Portfolio
+                    </Link>
+                  </div>
                 </div>
+                <Parallax offset={18} className="justify-self-end">
+                  <div className="justify-self-end">
+                    <GlassOrb className="h-40 w-40 opacity-90" />
+                  </div>
+                </Parallax>
               </div>
-              <Parallax offset={18} className="justify-self-end">
-                <div className="justify-self-end">
-  <GlassOrb className="h-40 w-40 opacity-90" />
-</div>
-              </Parallax>
-            </div>
+            </GlassCard>
           </Reveal>
         </div>
       </section>

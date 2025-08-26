@@ -6,6 +6,7 @@ import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import Catchphrase from "@/components/Catchphrase"
 import GlassOrb from "@/components/GlassOrb"
+import GlassCard from "@/components/GlassCard"
 
 export const metadata: Metadata = {
   title: "3D print service in Herzele | X3DPrints",
@@ -78,22 +79,25 @@ export default function HomePage() {
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.07]" />
 
       {/* HERO */}
-      <section className="px-6 pb-24 pt-20 sm:px-8 lg:px-12 lg:pb-32 lg:pt-28">
+      <section className="relative px-6 pb-24 pt-20 sm:px-8 lg:px-12 lg:pb-32 lg:pt-28">
+        <div className="absolute right-0 top-0 -z-10 hidden sm:block">
+          <GlassOrb className="h-72 w-72 opacity-40" />
+        </div>
         <div className="mx-auto max-w-6xl">
           <Reveal className="max-w-3xl">
-            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200/40 bg-white/60 px-3 py-1 text-xs text-slate-700 backdrop-blur">
+            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs text-slate-700 backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-emerald-400" />
               Snel, precies en betaalbaar
             </span>
             <Catchphrase className="mt-4 block text-base font-medium text-indigo-600 sm:text-lg">
-               Betaalbaar 3D printen
+              Betaalbaar 3D printen
             </Catchphrase>
-            <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              3D-prints die wél kloppen.{" "}
-              <span className="bg-gradient-to-r from-indigo-600 via-sky-400 to-emerald-400 bg-clip-text text-transparent">
-                Where design meets dimension.
-              </span>
+            <h1 className="mt-2 bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-balance text-4xl font-extrabold leading-tight tracking-tight text-transparent sm:text-5xl">
+              3D-prints die wél kloppen.
             </h1>
+            <p className="mt-2 text-balance text-lg font-medium text-slate-700">
+              Where design meets dimension.
+            </p>
             <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 sm:text-lg">
               X3DPrints is een compacte 3D-printstudio uit Herzele, onderdeel van Xinudesign. Ideaal voor prototypes en
               kleine series met strakke afwerking. PLA is onze standaard, maar we schakelen waar nodig over naar PETG,
@@ -103,7 +107,7 @@ export default function HomePage() {
               <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-300/60 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-800 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"
               >
                 Bekijk portfolio
               </Link>
@@ -141,14 +145,14 @@ export default function HomePage() {
                 ),
               },
             ].map((item) => (
-              <div
+              <GlassCard
                 key={item.k}
-                className="rounded-2xl border border-slate-200/70 bg-white/70 p-5 text-slate-800 backdrop-blur transition-transform hover:-translate-y-1 hover:shadow-lg"
+                className="p-5 text-center transition-transform hover:-translate-y-1"
               >
                 {item.icon}
                 <div className="text-sm text-slate-500">{item.k}</div>
-                <div className="mt-1 text-xl font-semibold">{item.v}</div>
-              </div>
+                <div className="mt-1 text-xl font-semibold text-slate-900">{item.v}</div>
+              </GlassCard>
             ))}
           </Reveal>
         </div>
@@ -171,13 +175,13 @@ export default function HomePage() {
               <div className="mt-6 flex gap-3">
                 <Link
                   href="/services"
-                  className="rounded-xl border border-slate-300/60 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-800 transition-transform hover:-translate-y-0.5"
+                  className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"
                 >
                   Diensten
                 </Link>
                 <Link
                   href="/materials"
-                  className="rounded-xl border border-slate-300/60 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-800 transition-transform hover:-translate-y-0.5"
+                  className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"
                 >
                   Materialen
                 </Link>
@@ -200,7 +204,7 @@ export default function HomePage() {
             </p>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-2">
-            <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 transition-transform hover:-translate-y-1 hover:shadow-lg">
+            <GlassCard className="p-6 transition-transform hover:-translate-y-1">
               {icon(<circle cx={12} cy={12} r={9} />)}
               <h3 className="text-lg font-semibold text-slate-900">Particulieren</h3>
               <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
@@ -208,8 +212,8 @@ export default function HomePage() {
                 <li>Decor & design: vazen, lampenkappen, interieurstukken</li>
                 <li>Unieke accessoires en mini-sculpturen</li>
               </ul>
-            </div>
-            <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 transition-transform hover:-translate-y-1 hover:shadow-lg">
+            </GlassCard>
+            <GlassCard className="p-6 transition-transform hover:-translate-y-1">
               {icon(<rect x={4} y={4} width={16} height={16} rx={2} />)}
               <h3 className="text-lg font-semibold text-slate-900">Bedrijven</h3>
               <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
@@ -217,12 +221,12 @@ export default function HomePage() {
                 <li>Bedrijfscadeaus en promotieartikelen</li>
                 <li>Prototyping, jigs, fixtures en kleine series</li>
               </ul>
-            </div>
+            </GlassCard>
           </div>
           <div className="mt-8">
             <Link
               href="/portfolio"
-              className="inline-flex items-center rounded-xl border border-slate-300/60 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-800 transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"
             >
               Gallerij bekijken
             </Link>
@@ -258,14 +262,12 @@ export default function HomePage() {
                 icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 4h16v16H4z" />),
               },
             ].map((s, i) => (
-              <Reveal
-                key={s.t}
-                delay={0.05 * (i + 1)}
-                className="rounded-xl border border-slate-200/70 bg-white/70 p-5 transition-transform hover:-translate-y-1 hover:shadow-lg"
-              >
-                {s.icon}
-                <div className="text-base font-semibold text-slate-900">{s.t}</div>
-                <div className="mt-1 text-sm text-slate-600">{s.d}</div>
+              <Reveal key={s.t} delay={0.05 * (i + 1)}>
+                <GlassCard className="p-5 transition-transform hover:-translate-y-1">
+                  {s.icon}
+                  <div className="text-base font-semibold text-slate-900">{s.t}</div>
+                  <div className="mt-1 text-sm text-slate-600">{s.d}</div>
+                </GlassCard>
               </Reveal>
             ))}
           </div>
@@ -291,14 +293,12 @@ export default function HomePage() {
               { n: "PA-CF", u: "Nylon met carbon; stijf en licht voor jigs/fixtures.", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 4h16v16H4z M4 4l16 16" />) },
               { n: "Specials", u: "TPU, vlamvertragend of glas-gevuld op aanvraag.", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M12 3l8 6v6l-8 6-8-6V9l8-6z" />) },
             ].map((m, i) => (
-              <Reveal
-                key={m.n}
-                delay={0.05 * (i + 1)}
-                className="rounded-xl border border-slate-200/70 bg-white/70 p-5 transition-transform hover:-translate-y-1 hover:shadow-lg"
-              >
-                {m.icon}
-                <div className="text-base font-semibold text-slate-900">{m.n}</div>
-                <div className="mt-1 text-sm text-slate-600">{m.u}</div>
+              <Reveal key={m.n} delay={0.05 * (i + 1)}>
+                <GlassCard className="p-5 transition-transform hover:-translate-y-1">
+                  {m.icon}
+                  <div className="text-base font-semibold text-slate-900">{m.n}</div>
+                  <div className="mt-1 text-sm text-slate-600">{m.u}</div>
+                </GlassCard>
               </Reveal>
             ))}
           </div>
@@ -343,14 +343,12 @@ export default function HomePage() {
                 icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M8 14s2 2 4 2 4-2 4-2" />),
               },
             ].map((s, i) => (
-              <Reveal
-                key={s.t}
-                delay={0.05 * (i + 1)}
-                className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 transition-transform hover:-translate-y-1 hover:shadow-lg"
-              >
-                {s.icon}
-                <div className="text-base font-semibold text-slate-900">{s.t}</div>
-                <div className="mt-1 text-sm text-slate-600">{s.d}</div>
+              <Reveal key={s.t} delay={0.05 * (i + 1)}>
+                <GlassCard className="p-6 transition-transform hover:-translate-y-1">
+                  {s.icon}
+                  <div className="text-base font-semibold text-slate-900">{s.t}</div>
+                  <div className="mt-1 text-sm text-slate-600">{s.d}</div>
+                </GlassCard>
               </Reveal>
             ))}
           </div>
@@ -389,21 +387,19 @@ export default function HomePage() {
                 icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 12h16M14 8l6 4-6 4" />),
               },
             ].map((s, i) => (
-              <Reveal
-                key={s.t}
-                delay={0.05 * (i + 1)}
-                className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 transition-transform hover:-translate-y-1 hover:shadow-lg"
-              >
-                {s.icon}
-                <div className="text-base font-semibold text-slate-900">{s.t}</div>
-                <div className="mt-1 text-sm text-slate-600">{s.d}</div>
+              <Reveal key={s.t} delay={0.05 * (i + 1)}>
+                <GlassCard className="p-6 transition-transform hover:-translate-y-1">
+                  {s.icon}
+                  <div className="text-base font-semibold text-slate-900">{s.t}</div>
+                  <div className="mt-1 text-sm text-slate-600">{s.d}</div>
+                </GlassCard>
               </Reveal>
             ))}
           </div>
           <div className="mt-10 flex gap-3">
             <Link
               href="/pricing"
-              className="rounded-xl border border-slate-300/60 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-800 transition-transform hover:-translate-y-0.5"
+              className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"
             >
               Prijzen bekijken
             </Link>
@@ -415,32 +411,32 @@ export default function HomePage() {
       {/* CTA */}
       <section className="px-6 pb-32 pt-10 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
-          <Reveal className="overflow-hidden rounded-3xl border border-slate-200/70 bg-white/70 p-8 backdrop-blur sm:p-10">
-            <div className="grid gap-6 sm:grid-cols-[1.2fr_.8fr] sm:items-center">
-              <div>
-                <h2 className="text-balance text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-                  Klaar om te printen?
-                </h2>
-                <p className="mt-2 max-w-prose text-slate-600">
-                  Stuur je model door en je krijgt snel een heldere prijs met het beste materiaaladvies voor jouw
-                  toepassing.
-                </p>
-                <div className="mt-8 flex flex-wrap gap-3">
-                  <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
-                  <Link
-                    href="/portfolio"
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-300/60 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-800 transition-transform hover:-translate-y-0.5"
-                  >
-                    Gallerij bekijken
-                  </Link>
+          <Reveal>
+            <GlassCard className="overflow-hidden p-8 sm:p-10">
+              <div className="grid gap-6 sm:grid-cols-[1.2fr_.8fr] sm:items-center">
+                <div>
+                  <h2 className="text-balance text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                    Klaar om te printen?
+                  </h2>
+                  <p className="mt-2 max-w-prose text-slate-600">
+                    Stuur je model door en je krijgt snel een heldere prijs met het beste materiaaladvies voor jouw
+                    toepassing.
+                  </p>
+                  <div className="mt-8 flex flex-wrap gap-3">
+                    <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
+                    <Link
+                      href="/portfolio"
+                      className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"
+                    >
+                      Gallerij bekijken
+                    </Link>
+                  </div>
+                </div>
+                <div className="justify-self-end">
+                  <GlassOrb className="h-40 w-40 opacity-90" />
                 </div>
               </div>
-              <div className="justify-self-end">
-                <div className="justify-self-end">
-  <GlassOrb className="h-40 w-40 opacity-90" />
-</div>
-              </div>
-            </div>
+            </GlassCard>
           </Reveal>
         </div>
       </section>
