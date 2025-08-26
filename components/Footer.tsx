@@ -126,7 +126,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/privacy" className="hover:text-slate-900">
-                  Privacy
+                  Privacybeleid
+                </Link>
+              </li>
+              <li>
+                <Link href="/algemene-voorwaarden" className="hover:text-slate-900">
+                  Algemene voorwaarden
                 </Link>
               </li>
               <li>

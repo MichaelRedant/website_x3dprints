@@ -2,7 +2,16 @@ import { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.x3dprints.be"
-  const routes = ["", "/services", "/materials", "/portfolio", "/pricing", "/contact"]
+  const routes = [
+    "",
+    "/services",
+    "/materials",
+    "/portfolio",
+    "/pricing",
+    "/contact",
+    "/privacy",
+    "/algemene-voorwaarden",
+  ]
   const now = new Date()
   return routes.map((r) => ({
     url: `${base}${r || "/"}`,
