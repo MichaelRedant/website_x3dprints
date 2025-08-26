@@ -7,6 +7,8 @@ import ShimmerButton from "@/components/ShimmerButton"
 import Catchphrase from "@/components/Catchphrase"
 import GlassOrb from "@/components/GlassOrb"
 import GlassCard from "@/components/GlassCard"
+import MaterialSwatches, { Swatch } from "@/components/MaterialSwatches"
+
 
 export const metadata: Metadata = {
   title: "3D print service in Herzele | X3DPrints",
@@ -274,36 +276,108 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* MATERIALEN + KLEUREN & AFWERKING */}
-      <section className="px-6 py-20 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl">
-          <Reveal className="mb-6">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Materialen, kleuren & afwerking</h2>
-            <p className="mt-2 max-w-2xl text-slate-600">
-              PLA voor strakke details en veel kleurkeuze. Voor sterkte, UV of hitte schakelen we naar PETG, ABS/ASA,
-              Nylon (PA) of PA-CF. Afwerking kan rauw, geschuurd, geprimed of gelakt; inserts en montage zijn mogelijk.
-            </p>
-          </Reveal>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              { n: "PLA", u: "Matte, silk, wood, metal, glow en meer varianten.", icon: icon(<circle cx={12} cy={12} r={9} />) },
-              { n: "PETG", u: "Sterk, licht flexibel en vocht-/chemie-resistenter.", icon: icon(<rect x={4} y={4} width={16} height={16} rx={2} />) },
-              { n: "ABS / ASA", u: "Hitte- en UV-bestendig; beter voor buiten.", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M12 2v20M2 12h20" />) },
-              { n: "Nylon (PA)", u: "Zeer sterk en slijtvast; industriële toepassingen.", icon: icon(<polygon points="12 2 22 8 12 14 2 8" />) },
-              { n: "PA-CF", u: "Nylon met carbon; stijf en licht voor jigs/fixtures.", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 4h16v16H4z M4 4l16 16" />) },
-              { n: "Specials", u: "TPU, vlamvertragend of glas-gevuld op aanvraag.", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M12 3l8 6v6l-8 6-8-6V9l8-6z" />) },
-            ].map((m, i) => (
-              <Reveal key={m.n} delay={0.05 * (i + 1)}>
-                <GlassCard className="p-5 transition-transform hover:-translate-y-1">
-                  {m.icon}
-                  <div className="text-base font-semibold text-slate-900">{m.n}</div>
-                  <div className="mt-1 text-sm text-slate-600">{m.u}</div>
-                </GlassCard>
-              </Reveal>
-            ))}
-          </div>
+      {/* MATERIALEN (homepage spotlight in dezelfde stijl) */}
+<section className="px-6 py-20 sm:px-8 lg:px-12">
+  <div className="mx-auto max-w-6xl">
+    <Reveal className="mb-6">
+      <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+        Materialen, kleuren & afwerking
+      </h2>
+      <p className="mt-2 max-w-2xl text-slate-600">
+        PLA voor strakke details en nette afwerking. Voor sterkte, UV of hitte schakelen we naar PETG, ABS/ASA,
+        Nylon (PA) of PA-CF. Afwerking kan rauw, geschuurd, geprimed of gelakt. Hieronder een greep uit wat we vaak printen.{" "}
+        <Link href="/materials" className="underline decoration-slate-300 hover:decoration-slate-500">
+          Alle varianten bekijken
+        </Link>.
+      </p>
+    </Reveal>
+
+    {(() => {
+      const translucent = (hex: string) => `linear-gradient(180deg,${hex}C0,${hex}50)`
+
+      const spotlight: { title: string; blurb: string; swatches: Swatch[] }[] = [
+        {
+          title: "PLA Matte (standaard)",
+          blurb:
+            "Mat oppervlak met strakke details. Ideaal voor prototypes en nette visuele stukken.",
+          swatches: [
+            // Jouw stock
+            { label: "Zwart", fill: "#0a0a0a", inStock: true },
+            { label: "Wit", fill: "#ffffff", inStock: true },
+            { label: "Blauw", fill: "#2563eb", inStock: true },
+            { label: "Geel", fill: "#facc15", inStock: true },
+            { label: "Groen", fill: "#16a34a", inStock: true },
+            { label: "Rood", fill: "#dc2626", inStock: true },
+            // Voorbeeld extra's op bestelling
+            { label: "Grijs", fill: "#9ca3af" },
+            { label: "Oranje", fill: "#fb923c" },
+          ],
+        },
+        {
+          title: "PLA Wood & Marble",
+          blurb:
+            "Decoratieve texturen met hout- of marmerlook. Voor props, decor en premium accenten.",
+          swatches: [
+            { label: "Wood Brown", fill: "linear-gradient(90deg,#7c5e3c,#6a4f33,#7c5e3c)", inStock: true },
+            { label: "Marble Grey", fill: "linear-gradient(135deg,#d6d3d1,#9ca3af 55%,#e7e5e4)", inStock: true },
+            { label: "Marble White", fill: "linear-gradient(135deg,#f3f4f6,#d1d5db 55%,#f9fafb)" },
+          ],
+        },
+        {
+          title: "PETG",
+          blurb:
+            "Tougher dan PLA, licht flexibel en beter bestand tegen warmte/chemie. Voor functionele onderdelen.",
+          swatches: [
+            { label: "Zwart", fill: "#000000", inStock: true },
+            { label: "Wit", fill: "#ffffff", inStock: true },
+            { label: "Transparant", fill: translucent("#e6fbff"), inStock: true },
+            { label: "Blauw", fill: "#3b82f6" },
+            { label: "Rood", fill: "#ef4444" },
+          ],
+        },
+        {
+          title: "TPU",
+          blurb:
+            "Flexibel en slijtvast. Ideaal voor grips, bumpers en demping. Trager te printen.",
+          swatches: [{ label: "Zwart", fill: "#000000", inStock: true }],
+        },
+        {
+          title: "Meer varianten op bestelling",
+          blurb:
+            "Silk, Translucent, Galaxy, Metal, Glow, PLA-CF, Aero, Basic Gradient en meer. Vraag advies.",
+          swatches: [
+            { label: "Silk Gold", fill: "linear-gradient(90deg,#a36f00,#f3d36b,#a36f00)" },
+            { label: "Translucent Aqua", fill: translucent("#7ae5ff") },
+            { label: "Galaxy", fill: "radial-gradient(circle at 35% 40%,#6366f1,transparent 45%),#0b1020" },
+            { label: "Metal Steel", fill: "linear-gradient(90deg,#c5ccd4,#8e9aa6,#c5ccd4)" },
+            { label: "Glow Green", fill: "#00ff7b" },
+            { label: "PLA-CF", fill: "linear-gradient(135deg,#0f172a,#1f2937)" },
+          ],
+        },
+      ]
+
+      return (
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {spotlight.map((m) => (
+            <Reveal key={m.title}>
+              <GlassCard className="p-5 transition-transform hover:-translate-y-1">
+                <div className="text-base font-semibold text-slate-900">{m.title}</div>
+                <p className="mt-1 text-sm text-slate-600">{m.blurb}</p>
+                <MaterialSwatches colors={m.swatches} />
+                <Link
+                  href="/materials"
+                  className="mt-3 inline-block text-xs font-medium text-slate-700 underline decoration-slate-300 hover:decoration-slate-500"
+                >
+                  Alle kleuren & varianten
+                </Link>
+              </GlassCard>
+            </Reveal>
+          ))}
         </div>
-      </section>
+      )
+    })()}
+  </div>
+</section>
 
       {/* WAAROM PLA (compact) */}
       <section className="px-6 py-20 sm:px-8 lg:px-12">
