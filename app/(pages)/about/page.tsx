@@ -5,7 +5,6 @@ import Reveal from "@/components/Reveal"
 import Parallax from "@/components/Parallax"
 import TiltCard from "@/components/TiltCard"
 import Counter from "@/components/Counter"
-import ScrollProgress from "@/components/ScrollProgress"
 import GlassOrb from "@/components/GlassOrb"
 import GlassCard from "@/components/GlassCard"
 
@@ -38,8 +37,6 @@ export default function Page() {
 
   return (
     <main className="relative">
-      <ScrollProgress />
-
       {/* Decorative bg */}
       <div
         aria-hidden
