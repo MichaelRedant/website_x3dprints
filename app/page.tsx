@@ -95,10 +95,10 @@ export default function HomePage() {
               Betaalbaar 3D printen
             </Catchphrase>
             <h1 className="mt-2 bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-balance text-4xl font-extrabold leading-tight tracking-tight text-transparent sm:text-5xl">
-              3D-prints die wél kloppen.
+              Where design meets dimension.
             </h1>
             <p className="mt-2 text-balance text-lg font-medium text-slate-700">
-              Where design meets dimension.
+              3D Prints die kloppen
             </p>
             <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 sm:text-lg">
               X3DPrints is een compacte 3D-printstudio uit Herzele, onderdeel van Xinudesign. Ideaal voor prototypes en
