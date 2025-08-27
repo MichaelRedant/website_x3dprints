@@ -2,6 +2,7 @@
 "use client"
 
 import { useMemo, useState } from "react"
+import { MATERIALS } from "@/lib/materials"
 
 type FormDataShape = {
   name: string
@@ -120,17 +121,7 @@ export default function ContactForm() {
   }
 
   const materialOptions = [
-    "PLA Matte",
-    "PLA Basic",
-    "PLA Translucent",
-    "PLA Silk / Silk+",
-    "PLA Galaxy",
-    "PLA Metal",
-    "PLA Glow",
-    "PLA Wood / Marble",
-    "PLA-CF",
-    "PETG",
-    "TPU",
+    ...Object.values(MATERIALS).map(m => m.name),
     "Onzeker – graag advies",
   ]
 
