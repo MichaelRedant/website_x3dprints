@@ -1,5 +1,6 @@
 // lib/materials.ts
 
+
 export type MaterialKey =
   | "PLA_TOUGH_PLUS"
   | "PLA_GLOW"
@@ -16,6 +17,7 @@ export type MaterialKey =
   | "PLA_SILK_MULTI_COLOR"
   | "PLA_CF"
   | "PLA_WOOD"
+
   | "PETG"
   | "TPU";
 
@@ -30,6 +32,7 @@ export type MaterialInfo = {
   description?: string;
   features?: string[];
   swatches: Swatch[];
+
 };
 
 // Gradient helpers (zelfde als oude materials page)
@@ -51,6 +54,7 @@ const g = {
 // - PLA Matte: wit, zwart, geel, blauw, groen, oranje, roze
 // - PLA Wood: Walnut
 // - PLA Glow: Glow Groen
+
 // - PETG: zwart, wit, transparant
 // - TPU: zwart
 // Alles buiten dit lijstje: op bestelling (inStock: false)
@@ -62,6 +66,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       "Taaier dan standaard PLA, behoudt vorm beter bij impact. Voor onderdelen die net iets meer mogen verdragen.",
     features: ["Tough, minder broos", "Strakke finish", "Printvriendelijk"],
     swatches: [
+
       { label: "Geel", color: "#f6c20f", inStock: false },
       { label: "Wit", color: "#ffffff", inStock: false },
       { label: "Rood", color: "#dc2626", inStock: false },
@@ -69,6 +74,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       { label: "Blauwgrijs", color: "#64748b", inStock: false },
       { label: "Lichtblauw", color: "#60a5fa", inStock: false },
       { label: "Zwart", color: "#000000", inStock: false },
+
     ],
   },
 
@@ -106,6 +112,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
     description:
       "PLA met glitterdeeltjes. Subtiel tot opvallend, afhankelijk van kleur en licht.",
     features: ["Glitter-effect", "Diepte in oppervlak"],
+
     swatches: [
       { label: "Graphite Sparkle", color: "linear-gradient(135deg,#1f2937,#0b1220)", inStock: false },
       { label: "Pine Sparkle", color: "linear-gradient(135deg,#1f3d2b,#0b1220)", inStock: false },
@@ -200,6 +207,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
     description: "Voorverlopen spoelen met zachte kleurovergangen. Elke print is uniek.",
     features: ["Kleurverloop", "Decoratief"],
     swatches: [
+
       { label: "Sunset", color: "linear-gradient(90deg,#f97316,#f43f5e,#8b5cf6)", inStock: false },
       { label: "Ocean", color: "linear-gradient(90deg,#22d3ee,#3b82f6,#0ea5e9)", inStock: false },
       { label: "Lemonade", color: "linear-gradient(90deg,#fde047,#fca5a5,#fcd34d)", inStock: false },
@@ -319,6 +327,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       { label: "Teak", color: "#7b5838", inStock: false },
       { label: "Oak", color: "#9b7a4e", inStock: false },
       { label: "Desert", color: "#b99a63", inStock: false },
+
     ],
   },
 
@@ -369,6 +378,7 @@ export const MATERIAL_COST_EUR_PER_KG: Record<MaterialKey, number> = {
   PETG: 30,
   TPU: 40,
 };
+
 
 export const MATERIAL_ORDER: MaterialKey[] = [
   "PLA_TOUGH_PLUS",

@@ -11,8 +11,10 @@ import {
 
 /* ========= Types ========= */
 
+
 type MaterialKey = keyof typeof MATERIALS;
 type ColorKey = string;
+
 
 /* ========= Helpers ========= */
 
