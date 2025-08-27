@@ -8,11 +8,12 @@ import { MATERIALS, MATERIAL_ORDER } from "@/lib/materials"
 export const metadata: Metadata = {
   title: "Materialen | X3DPrints",
   description:
-    "Overzicht van Bambu-compatibele filamenten: PLA-families (Matte, Basic, Translucent, Silk, Silk Multi-Color, Tough+, Glow, Marble, Sparkle, Metal, Galaxy, Aero, Basic Gradient, PLA-CF, Wood) plus PETG en TPU. Kleuren als swatches.",
+    "Overzicht van beschikbare filamenten (PLA, PETG, TPU) met voorraad-indicatie.",
   alternates: { canonical: "https://www.x3dprints.be/materials" },
 }
 
 export default function MaterialsPage() {
+
   const materials = MATERIAL_ORDER.map((key) => {
     const m = MATERIALS[key]
     return {
@@ -27,6 +28,7 @@ export default function MaterialsPage() {
     }
   })
 
+
   return (
     <main className="relative">
       <section className="px-6 pt-14 pb-8 sm:px-8 lg:px-12">
@@ -36,8 +38,11 @@ export default function MaterialsPage() {
               Materialen
             </h1>
             <p className="mt-3 max-w-2xl text-slate-600">
-              Volledige Bambu-reeks, zonder starter packs. Kleuren zijn indicatief.
-              Voorraad aangeduid met <span className="font-semibold">inStock: true</span>.
+
+
+             Volledige beschikbaarheid van de filamenten.
+
+
             </p>
           </Reveal>
         </div>
@@ -47,12 +52,7 @@ export default function MaterialsPage() {
         <div className="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2">
           {materials.map((m, i) => (
             <Reveal key={m.title} delay={i * 0.04}>
-              <MaterialCard
-                title={m.title}
-                description={m.description}
-                features={m.features}
-                swatches={m.swatches}
-              />
+              <MaterialCard title={m.title} swatches={m.swatches} />
             </Reveal>
           ))}
         </div>
