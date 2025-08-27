@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import MaterialCard from "@/components/MaterialCard"
+import { MATERIALS } from "@/lib/materials"
 
 export const metadata: Metadata = {
   title: "Materialen | X3DPrints",
