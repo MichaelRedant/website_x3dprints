@@ -1,5 +1,6 @@
 // lib/materials.ts
 
+
 export type MaterialKey =
   | "PLA_TOUGH_PLUS"
   | "PLA_GLOW"
@@ -16,6 +17,7 @@ export type MaterialKey =
   | "PLA_SILK_MULTI_COLOR"
   | "PLA_CF"
   | "PLA_WOOD"
+
   | "PETG"
   | "TPU";
 
@@ -49,8 +51,10 @@ const g = {
 
 // Voorraad (inStock: true):
 // - PLA Matte: wit, zwart, geel, blauw, groen, oranje, roze
+
 // - PLA Wood: Walnut
 // - PLA Glow: Glow Groen
+
 // - PETG: zwart, wit, transparant
 // - TPU: zwart
 // Alles buiten dit lijstje: op bestelling (inStock: false)
@@ -62,6 +66,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       "Taaier dan standaard PLA, behoudt vorm beter bij impact. Voor onderdelen die net iets meer mogen verdragen.",
     features: ["Tough, minder broos", "Strakke finish", "Printvriendelijk"],
     swatches: [
+
       { label: "Geel", color: "#f6c20f", inStock: false },
       { label: "Wit", color: "#ffffff", inStock: false },
       { label: "Rood", color: "#dc2626", inStock: false },
@@ -69,6 +74,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       { label: "Blauwgrijs", color: "#64748b", inStock: false },
       { label: "Lichtblauw", color: "#60a5fa", inStock: false },
       { label: "Zwart", color: "#000000", inStock: false },
+
     ],
   },
 
@@ -319,6 +325,15 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       { label: "Teak", color: "#7b5838", inStock: false },
       { label: "Oak", color: "#9b7a4e", inStock: false },
       { label: "Desert", color: "#b99a63", inStock: false },
+    ],
+  },
+
+  PLA_GLOW: {
+    name: "PLA Glow",
+    swatches: [
+      { label: "Glow Groen", color: "#00ff7b", inStock: true },
+      { label: "Glow Geel", color: "#faff00", inStock: false },
+      { label: "Glow Blauw", color: "#66e0ff", inStock: false },
     ],
   },
 
