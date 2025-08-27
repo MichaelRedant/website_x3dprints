@@ -25,11 +25,23 @@ const QUALITY_MULTIPLIER: Record<Quality, number> = {
 };
 
 const MATERIAL_MULTIPLIER: Record<MaterialKey, number> = {
-  PLA_MATTE: 1,
-  PLA_WOOD: 1,
-  PLA_MARBLE: 1,
-  PLA_PLUS: 1,
+
+  PLA_TOUGH_PLUS: 1,
   PLA_GLOW: 1,
+  PLA_MARBLE: 1,
+  PLA_SPARKLE: 1,
+  PLA_METAL: 1,
+  PLA_GALAXY: 1,
+  PLA_AERO: 1,
+  PLA_SILK_PLUS: 1,
+  PLA_BASIC_GRADIENT: 1,
+  PLA_BASIC: 1,
+  PLA_MATTE: 1,
+  PLA_TRANSLUCENT: 1,
+  PLA_SILK_MULTI_COLOR: 1,
+  PLA_CF: 1,
+  PLA_WOOD: 1,
+
   PETG: 1.25, // droger-toeslag inbegrepen
   TPU: 1.25,  // idem
 };

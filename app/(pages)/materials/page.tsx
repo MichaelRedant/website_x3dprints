@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import MaterialCard from "@/components/MaterialCard"
-import { MATERIALS } from "@/lib/materials"
+import { MATERIALS, MATERIAL_ORDER } from "@/lib/materials"
 
 export const metadata: Metadata = {
   title: "Materialen | X3DPrints",
@@ -13,14 +13,21 @@ export const metadata: Metadata = {
 }
 
 export default function MaterialsPage() {
-  const materials = Object.values(MATERIALS).map((m) => ({
-    title: m.name,
-    swatches: m.swatches.map((s) => ({
-      label: s.label,
-      fill: s.color,
-      inStock: s.inStock,
-    })),
-  }))
+
+  const materials = MATERIAL_ORDER.map((key) => {
+    const m = MATERIALS[key]
+    return {
+      title: m.name,
+      description: m.description,
+      features: m.features,
+      swatches: m.swatches.map((s) => ({
+        label: s.label,
+        fill: s.color,
+        inStock: s.inStock,
+      })),
+    }
+  })
+
 
   return (
     <main className="relative">
@@ -31,8 +38,10 @@ export default function MaterialsPage() {
               Materialen
             </h1>
             <p className="mt-3 max-w-2xl text-slate-600">
-              Kleuren zijn indicatief. Voorraad aangeduid met{" "}
-              <span className="font-semibold">inStock: true</span>.
+
+              Volledige Bambu-reeks, zonder starter packs. Kleuren zijn indicatief.
+              Voorraad aangeduid met <span className="font-semibold">inStock: true</span>.
+
             </p>
           </Reveal>
         </div>
