@@ -5,6 +5,8 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import PriceEstimator from "@/components/PriceEstimator"
+import { GRAMS_PER_TIER, calcUnitPrice, type Tier } from "@/lib/pricing"
+import type { MaterialKey } from "@/lib/materials"
 
 export const metadata: Metadata = {
   title: "Prijzen 3D printen | X3DPrints",
@@ -24,41 +26,37 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  // Basisprijzen (PLA Matte standaard)
-  const tiers = [
+  // Indicatieve prijzen berekend via filamentkost
+  const baseMaterial: MaterialKey = "PLA_MATTE"
+  const tierDefs: Array<{ name: Tier; size: string; notes: string }> = [
     {
       name: "Small",
       size: "≤ 5 × 5 × 5 cm",
-      base: "PLA Matte (standaard)",
-      price: 9, // vanaf €9
       notes: "Kleine onderdelen, clips, testgeometrie.",
-      priceLabel: "vanaf €9 / stuk",
     },
     {
       name: "Medium",
       size: "≤ 10 × 10 × 10 cm",
-      base: "PLA Matte (standaard)",
-      price: 15,
       notes: "Prototypes, kleine behuizingen, decor.",
-      priceLabel: "vanaf €15 / stuk",
     },
     {
       name: "Large",
       size: "≤ 20 × 20 × 20 cm",
-      base: "PLA Matte (standaard)",
-      price: 30,
       notes: "Grotere delen, brackets, jigs.",
-      priceLabel: "vanaf €30 / stuk",
-    },
-    {
-      name: "XL",
-      size: "≤ 25 × 25 × 25 cm",
-      base: "PLA Matte (standaard)",
-      price: 55,
-      notes: "Maximale bouwruimte in één geheel; groter = opsplitsen.",
-      priceLabel: "vanaf €55 / stuk",
     },
   ]
+
+  const tiers = tierDefs.map((t) => {
+    const grams = GRAMS_PER_TIER[t.name]
+    const price = calcUnitPrice(t.name, baseMaterial, "Standaard")
+    return {
+      ...t,
+      base: "PLA Matte (standaard)",
+      grams,
+      price,
+      priceLabel: `≈ €${price} / stuk`,
+    }
+  })
 
   // Opslagen (ten opzichte van PLA Matte)
   const materialMods = [
@@ -150,15 +148,17 @@ export default function Page() {
                   <div className="text-xs uppercase tracking-wide text-slate-500">{t.name}</div>
                   <div className="mt-1 text-lg font-semibold text-slate-900">{t.priceLabel}</div>
                   <div className="mt-1 text-sm text-slate-700">{t.size}</div>
-                  <div className="mt-1 text-sm text-slate-500">{t.base}</div>
+                  <div className="mt-1 text-sm text-slate-500">
+                    {t.base} · ≈{t.grams}g
+                  </div>
                   <p className="mt-3 text-sm text-slate-600">{t.notes}</p>
                 </GlassCard>
               </Reveal>
             ))}
           </div>
-          <p className="mt-4 text-xs text-slate-500">
-            Prijzen zijn indicatief en incl. btw voor particulieren. Exacte prijs via modelanalyse (support, infill, oriëntatie) en gekozen materiaal/kwaliteit.
-          </p>
+            <p className="mt-4 text-xs text-slate-500">
+              Prijzen zijn indicatief op basis van Bambu-filamentprijzen (+25% marge) en ±25% infill. Exacte prijs via modelanalyse.
+            </p>
         </div>
       </section>
 

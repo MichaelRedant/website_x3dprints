@@ -32,6 +32,7 @@ export type MaterialInfo = {
   description?: string;
   features?: string[];
   swatches: Swatch[];
+
 };
 
 // Gradient helpers (zelfde als oude materials page)
@@ -51,7 +52,6 @@ const g = {
 
 // Voorraad (inStock: true):
 // - PLA Matte: wit, zwart, geel, blauw, groen, oranje, roze
-
 // - PLA Wood: Walnut
 // - PLA Glow: Glow Groen
 
@@ -112,6 +112,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
     description:
       "PLA met glitterdeeltjes. Subtiel tot opvallend, afhankelijk van kleur en licht.",
     features: ["Glitter-effect", "Diepte in oppervlak"],
+
     swatches: [
       { label: "Graphite Sparkle", color: "linear-gradient(135deg,#1f2937,#0b1220)", inStock: false },
       { label: "Pine Sparkle", color: "linear-gradient(135deg,#1f3d2b,#0b1220)", inStock: false },
@@ -206,6 +207,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
     description: "Voorverlopen spoelen met zachte kleurovergangen. Elke print is uniek.",
     features: ["Kleurverloop", "Decoratief"],
     swatches: [
+
       { label: "Sunset", color: "linear-gradient(90deg,#f97316,#f43f5e,#8b5cf6)", inStock: false },
       { label: "Ocean", color: "linear-gradient(90deg,#22d3ee,#3b82f6,#0ea5e9)", inStock: false },
       { label: "Lemonade", color: "linear-gradient(90deg,#fde047,#fca5a5,#fcd34d)", inStock: false },
@@ -325,15 +327,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       { label: "Teak", color: "#7b5838", inStock: false },
       { label: "Oak", color: "#9b7a4e", inStock: false },
       { label: "Desert", color: "#b99a63", inStock: false },
-    ],
-  },
 
-  PLA_GLOW: {
-    name: "PLA Glow",
-    swatches: [
-      { label: "Glow Groen", color: "#00ff7b", inStock: true },
-      { label: "Glow Geel", color: "#faff00", inStock: false },
-      { label: "Glow Blauw", color: "#66e0ff", inStock: false },
     ],
   },
 
@@ -362,6 +356,29 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
     ],
   },
 };
+
+// Aankoopprijzen (€/kg) volgens Bambu-shop
+// Benaderingen; worden gebruikt voor prijsinschattingen
+export const MATERIAL_COST_EUR_PER_KG: Record<MaterialKey, number> = {
+  PLA_TOUGH_PLUS: 30,
+  PLA_GLOW: 33,
+  PLA_MARBLE: 33,
+  PLA_SPARKLE: 33,
+  PLA_METAL: 33,
+  PLA_GALAXY: 33,
+  PLA_AERO: 40,
+  PLA_SILK_PLUS: 33,
+  PLA_BASIC_GRADIENT: 29,
+  PLA_BASIC: 25,
+  PLA_MATTE: 30,
+  PLA_TRANSLUCENT: 33,
+  PLA_SILK_MULTI_COLOR: 39,
+  PLA_CF: 45,
+  PLA_WOOD: 35,
+  PETG: 30,
+  TPU: 40,
+};
+
 
 export const MATERIAL_ORDER: MaterialKey[] = [
   "PLA_TOUGH_PLUS",

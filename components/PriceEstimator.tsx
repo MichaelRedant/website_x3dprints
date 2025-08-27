@@ -2,49 +2,19 @@
 
 import { useMemo, useState } from "react";
 import { MATERIALS } from "@/lib/materials";
+import {
+  GRAMS_PER_TIER,
+  calcUnitPrice,
+  type Tier,
+  type Quality,
+} from "@/lib/pricing";
 
 /* ========= Types ========= */
 
-type Tier = "Small" | "Medium" | "Large";
-type Quality = "Standaard" | "Fijn";
 
 type MaterialKey = keyof typeof MATERIALS;
 type ColorKey = string;
 
-/* ========= Pricing model (hou dit in sync met je prijzenpagina) ========= */
-
-const TIER_BASE_PRICE: Record<Tier, number> = {
-  Small: 10,
-  Medium: 15,
-  Large: 26,
-};
-
-const QUALITY_MULTIPLIER: Record<Quality, number> = {
-  Standaard: 1,
-  Fijn: 1.2,
-};
-
-const MATERIAL_MULTIPLIER: Record<MaterialKey, number> = {
-
-  PLA_TOUGH_PLUS: 1,
-  PLA_GLOW: 1,
-  PLA_MARBLE: 1,
-  PLA_SPARKLE: 1,
-  PLA_METAL: 1,
-  PLA_GALAXY: 1,
-  PLA_AERO: 1,
-  PLA_SILK_PLUS: 1,
-  PLA_BASIC_GRADIENT: 1,
-  PLA_BASIC: 1,
-  PLA_MATTE: 1,
-  PLA_TRANSLUCENT: 1,
-  PLA_SILK_MULTI_COLOR: 1,
-  PLA_CF: 1,
-  PLA_WOOD: 1,
-
-  PETG: 1.25, // droger-toeslag inbegrepen
-  TPU: 1.25,  // idem
-};
 
 /* ========= Helpers ========= */
 
@@ -95,12 +65,10 @@ export default function PriceEstimator() {
   }, [colors, color]);
 
   // prijs per stuk
-  const unitPrice = useMemo(() => {
-    const base = TIER_BASE_PRICE[tier] ?? 0;
-    const q = QUALITY_MULTIPLIER[quality] ?? 1;
-    const m = MATERIAL_MULTIPLIER[safeMaterialKey(material)] ?? 1;
-    return Math.round(base * q * m);
-  }, [tier, quality, material]);
+  const unitPrice = useMemo(
+    () => calcUnitPrice(tier, material, quality),
+    [tier, material, quality],
+  );
 
   const total = unitPrice * Math.max(1, qty);
 
@@ -108,7 +76,8 @@ export default function PriceEstimator() {
     <div className="rounded-3xl border border-slate-200/70 bg-white/80 p-6 shadow-sm backdrop-blur">
       <h3 className="text-lg font-semibold text-slate-900">Snelle prijsinschatting</h3>
       <p className="mt-1 text-sm text-slate-600">
-        Ruwe indicatie. Definitieve prijs na modelcontrole en exacte materiaalspecificaties.
+        Indicatie op basis van materiaalprijs (<span className="font-medium">25% infill</span>,{" "}
+        ≈{GRAMS_PER_TIER[tier]}g). Definitieve prijs na modelcontrole.
       </p>
 
       {/* controls */}
@@ -121,9 +90,9 @@ export default function PriceEstimator() {
             value={tier}
             onChange={(e) => setTier(e.target.value as Tier)}
           >
-            <option value="Small">Small (≤ 5 cm)</option>
-            <option value="Medium">Medium (≤ 10 cm)</option>
-            <option value="Large">Large (≤ 20 cm)</option>
+            <option value="Small">Small (≤ 5 cm · ≈{GRAMS_PER_TIER.Small}g)</option>
+            <option value="Medium">Medium (≤ 10 cm · ≈{GRAMS_PER_TIER.Medium}g)</option>
+            <option value="Large">Large (≤ 20 cm · ≈{GRAMS_PER_TIER.Large}g)</option>
           </select>
         </div>
 

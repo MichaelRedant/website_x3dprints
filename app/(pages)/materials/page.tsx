@@ -39,8 +39,7 @@ export default function MaterialsPage() {
             </h1>
             <p className="mt-3 max-w-2xl text-slate-600">
 
-              Volledige Bambu-reeks, zonder starter packs. Kleuren zijn indicatief.
-              Voorraad aangeduid met <span className="font-semibold">inStock: true</span>.
+             Volledige beschikbaarheid van de filamenten.
 
             </p>
           </Reveal>
