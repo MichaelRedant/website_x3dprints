@@ -8,7 +8,7 @@ import { MATERIALS } from "@/lib/materials";
 type Tier = "Small" | "Medium" | "Large";
 type Quality = "Standaard" | "Fijn";
 
-type MaterialKey = keyof typeof MATERIALS | "PLA Matte" | "PETG" | "TPU"; // fallback keys
+type MaterialKey = keyof typeof MATERIALS;
 type ColorKey = string;
 
 /* ========= Pricing model (hou dit in sync met je prijzenpagina) ========= */
@@ -25,22 +25,21 @@ const QUALITY_MULTIPLIER: Record<Quality, number> = {
 };
 
 const MATERIAL_MULTIPLIER: Record<MaterialKey, number> = {
-  "PLA Matte": 1,
+  PLA_MATTE: 1,
+  PLA_WOOD: 1,
+  PLA_MARBLE: 1,
+  PLA_PLUS: 1,
+  PLA_GLOW: 1,
   PETG: 1.25, // droger-toeslag inbegrepen
   TPU: 1.25,  // idem
-  // Als je MATERIALS gebruikt met uitgebreidere keys, defaulten we naar 1
-  ...(Object.keys(MATERIALS).reduce((acc, k) => {
-    acc[k as MaterialKey] = acc[k as MaterialKey] ?? 1;
-    return acc;
-  }, {} as Record<MaterialKey, number>)),
 };
 
 /* ========= Helpers ========= */
 
 function safeMaterialKey(key: string): MaterialKey {
-  if ((MATERIALS as any)[key]) return key as MaterialKey;
-  if (key === "PLA Matte" || key === "PETG" || key === "TPU") return key;
-  return "PLA Matte";
+  return (Object.prototype.hasOwnProperty.call(MATERIALS, key)
+    ? key
+    : "PLA_MATTE") as MaterialKey;
 }
 
 function getColorsForMaterial(material: MaterialKey): Array<{
@@ -49,44 +48,13 @@ function getColorsForMaterial(material: MaterialKey): Array<{
   inStock?: boolean;
   hex?: string;
 }> {
-  const entry = (MATERIALS as any)[material];
-  if (!entry?.swatches) {
-    // Fallbackswatches
-    if (material === "PLA Matte") {
-      return [
-        { key: "zwart", label: "Zwart", inStock: true, hex: "#0a0a0a" },
-        { key: "wit", label: "Wit", inStock: true, hex: "#f5f5f5" },
-        { key: "blauw", label: "Blauw", inStock: true, hex: "#2563eb" },
-        { key: "geel", label: "Geel", inStock: true, hex: "#facc15" },
-        { key: "groen", label: "Groen", inStock: true, hex: "#22c55e" },
-        { key: "rood", label: "Rood", inStock: true, hex: "#dc2626" },
-      ];
-    }
-    if (material === "PETG") {
-      return [
-        { key: "zwart", label: "Zwart", inStock: true, hex: "#000000" },
-        { key: "wit", label: "Wit", inStock: true, hex: "#ffffff" },
-        { key: "transparant", label: "Transparant", inStock: true, hex: "#d0f0ff" },
-      ];
-    }
-    if (material === "TPU") {
-      return [{ key: "zwart", label: "Zwart", inStock: true, hex: "#000000" }];
-    }
-    return [];
-  }
-
-  // MATERIALS.swatches kan string of object bevatten; normaliseren
-  return entry.swatches.map((s: any, i: number) => {
-    if (typeof s === "string") {
-      return { key: s, label: s, inStock: true };
-    }
-    return {
-      key: s.label ?? String(i),
-      label: s.label ?? String(i),
-      inStock: s.inStock ?? false,
-      hex: typeof s.fill === "string" && s.fill.startsWith("#") ? s.fill : undefined,
-    };
-  });
+  const entry = MATERIALS[material];
+  return entry.swatches.map((s, i) => ({
+    key: s.label ?? String(i),
+    label: s.label ?? String(i),
+    inStock: s.inStock,
+    hex: s.color,
+  }));
 }
 
 function formatCurrency(n: number): string {
@@ -96,11 +64,14 @@ function formatCurrency(n: number): string {
 /* ========= Component ========= */
 
 export default function PriceEstimator() {
+  const defaultMaterial: MaterialKey = "PLA_MATTE";
   const [tier, setTier] = useState<Tier>("Medium");
-  const [material, setMaterial] = useState<MaterialKey>("PLA Matte");
+  const [material, setMaterial] = useState<MaterialKey>(defaultMaterial);
   const [quality, setQuality] = useState<Quality>("Standaard");
   const [qty, setQty] = useState<number>(1);
-  const [color, setColor] = useState<ColorKey>("geel"); // default van PLA Matte hierboven
+  const [color, setColor] = useState<ColorKey>(
+    MATERIALS[defaultMaterial].swatches[0].label,
+  );
 
   // kleurenlijst op basis van materiaal
   const colors = useMemo(() => getColorsForMaterial(material), [material]);
@@ -152,13 +123,9 @@ export default function PriceEstimator() {
             value={material}
             onChange={(e) => setMaterial(safeMaterialKey(e.target.value))}
           >
-            <option>PLA Matte</option>
-            <option>PETG</option>
-            <option>TPU</option>
-            {/* Optioneel: toon ook alle MATERIALS-keys */}
-            {Object.keys(MATERIALS).map((k) => (
+            {Object.entries(MATERIALS).map(([k, v]) => (
               <option key={k} value={k}>
-                {k}
+                {v.name}
               </option>
             ))}
           </select>
