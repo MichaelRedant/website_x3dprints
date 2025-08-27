@@ -3,10 +3,13 @@ import { MATERIAL_COST_EUR_PER_KG, type MaterialKey } from "./materials";
 export type Tier = "Small" | "Medium" | "Large";
 
 // Ruwe gewichtsinschatting bij 25% infill
+
+// Zwaardere modellen vergen meer materiaal en dus een hogere prijs
 export const GRAMS_PER_TIER: Record<Tier, number> = {
-  Small: 30,
-  Medium: 100,
-  Large: 250,
+  Small: 50,
+  Medium: 200,
+  Large: 500,
+
 };
 
 export type Quality = "Standaard" | "Fijn";
@@ -18,7 +21,9 @@ export const QUALITY_MULTIPLIER: Record<Quality, number> = {
 /**
  * Berekent verkoopprijs per stuk op basis van filamentkost.
  * - filamentprijs uit Bambu shop
- * - 25% marge
+
+ * - 50% marge op aankoopprijs
+
  * - schatting gewicht per formaat
  */
 export function calcUnitPrice(
@@ -27,7 +32,9 @@ export function calcUnitPrice(
   quality: Quality = "Standaard",
 ): number {
   const grams = GRAMS_PER_TIER[tier] ?? 0;
-  const costPerKg = (MATERIAL_COST_EUR_PER_KG[material] ?? 0) * 1.25;
+
+  const costPerKg = (MATERIAL_COST_EUR_PER_KG[material] ?? 0) * 1.5;
+
   const base = (grams / 1000) * costPerKg;
   return Math.round(base * QUALITY_MULTIPLIER[quality]);
 }

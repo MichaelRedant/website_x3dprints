@@ -76,7 +76,9 @@ export default function PriceEstimator() {
     <div className="rounded-3xl border border-slate-200/70 bg-white/80 p-6 shadow-sm backdrop-blur">
       <h3 className="text-lg font-semibold text-slate-900">Snelle prijsinschatting</h3>
       <p className="mt-1 text-sm text-slate-600">
-        Indicatie op basis van materiaalprijs (<span className="font-medium">25% infill</span>,{" "}
+
+        Indicatie op basis van filamentprijs,{" "}
+
         ≈{GRAMS_PER_TIER[tier]}g). Definitieve prijs na modelcontrole.
       </p>
 

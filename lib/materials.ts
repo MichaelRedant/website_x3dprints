@@ -25,6 +25,7 @@ export type Swatch = {
   label: string; // wat de gebruiker ziet
   color: string; // hex of css-gradient
   inStock: boolean; // of je het liggen hebt
+
 };
 
 export type MaterialInfo = {
@@ -32,7 +33,6 @@ export type MaterialInfo = {
   description?: string;
   features?: string[];
   swatches: Swatch[];
-
 };
 
 // Gradient helpers (zelfde als oude materials page)
@@ -49,6 +49,7 @@ const g = {
   wood: "linear-gradient(90deg,#7c5e3c,#6a4f33,#7c5e3c)",
   translucent: (c: string) => `linear-gradient(180deg,${c}C0,${c}50)`,
 };
+
 
 // Voorraad (inStock: true):
 // - PLA Matte: wit, zwart, geel, blauw, groen, oranje, roze
@@ -184,6 +185,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       "Zijdeachtige toplaag met sterke reflectie. Perfect voor showpieces en awards.",
     features: ["Zijdeglans", "Diepe kleuren"],
     swatches: [
+
       { label: "Black", color: "linear-gradient(90deg,#0b0b0b,#2a2a2a,#0b0b0b)", inStock: false },
       { label: "Graphite", color: "linear-gradient(90deg,#434343,#9e9e9e,#434343)", inStock: false },
       { label: "Silver", color: "linear-gradient(90deg,#a0a7af,#e5e7eb,#a0a7af)", inStock: false },
@@ -360,23 +362,24 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
 // Aankoopprijzen (€/kg) volgens Bambu-shop
 // Benaderingen; worden gebruikt voor prijsinschattingen
 export const MATERIAL_COST_EUR_PER_KG: Record<MaterialKey, number> = {
-  PLA_TOUGH_PLUS: 30,
-  PLA_GLOW: 33,
-  PLA_MARBLE: 33,
-  PLA_SPARKLE: 33,
-  PLA_METAL: 33,
-  PLA_GALAXY: 33,
-  PLA_AERO: 40,
-  PLA_SILK_PLUS: 33,
-  PLA_BASIC_GRADIENT: 29,
-  PLA_BASIC: 25,
-  PLA_MATTE: 30,
-  PLA_TRANSLUCENT: 33,
-  PLA_SILK_MULTI_COLOR: 39,
-  PLA_CF: 45,
-  PLA_WOOD: 35,
-  PETG: 30,
-  TPU: 40,
+
+  PLA_TOUGH_PLUS: 26.99,
+  PLA_GLOW: 27.99,
+  PLA_MARBLE: 27.99,
+  PLA_SPARKLE: 27.99,
+  PLA_METAL: 27.99,
+  PLA_GALAXY: 27.99,
+  PLA_AERO: 47.99,
+  PLA_SILK_PLUS: 25.99,
+  PLA_BASIC_GRADIENT: 27.99,
+  PLA_BASIC: 22.99,
+  PLA_MATTE: 22.99,
+  PLA_TRANSLUCENT: 27.99,
+  PLA_SILK_MULTI_COLOR: 27.99,
+  PLA_CF: 26.99,
+  PLA_WOOD: 27.99,
+  PETG: 22.99,
+  TPU: 39.99,
 };
 
 

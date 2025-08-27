@@ -157,7 +157,9 @@ export default function Page() {
             ))}
           </div>
             <p className="mt-4 text-xs text-slate-500">
-              Prijzen zijn indicatief op basis van Bambu-filamentprijzen (+25% marge) en ±25% infill. Exacte prijs via modelanalyse.
+
+              Prijzen zijn indicatief let ±25% infill. Grotere, zwaardere modellen vergen meer materiaal en kosten dus meer. Exacte prijs via modelanalyse.
+
             </p>
         </div>
       </section>
