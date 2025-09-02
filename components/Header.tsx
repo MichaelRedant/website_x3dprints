@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation"
 import { useEffect, useRef, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 
+
 const NAV = [
   { href: "/services", label: "Services" },
   { href: "/materials", label: "Materialen" },

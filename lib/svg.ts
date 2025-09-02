@@ -1,5 +1,10 @@
 // lib/svg.ts
 
+/**
+ * Genereert een deterministische Apple/Glass-achtige SVG en geeft een data:URI terug.
+ * Compatibel met Node (Buffer) en browser/edge (btoa), met correcte UTF-8 base64.
+ */
+
 function escapeXml(str: string): string {
   return str
     .replace(/&/g, "&amp;")
@@ -9,7 +14,7 @@ function escapeXml(str: string): string {
     .replace(/'/g, "&#39;");
 }
 
-// Eenvoudige, deterministische hash voor kleur/variatie
+/** Eenvoudige, deterministische hash voor kleur/variatie */
 function hashStr(s: string): number {
   let h = 2166136261;
   for (let i = 0; i < s.length; i++) {
@@ -19,8 +24,33 @@ function hashStr(s: string): number {
   return h >>> 0;
 }
 
-function hsl(h: number, s: number, l: number) {
+function hsl(h: number, s: number, l: number): string {
   return `hsl(${Math.round(h)},${Math.round(s)}%,${Math.round(l)}%)`;
+}
+
+/** Veilige base64 helper met UTF-8 support, werkt in Node en browser/edge runtimes */
+function toBase64Utf8(input: string): string {
+  // Node / V8 (server)
+  if (typeof Buffer !== "undefined") {
+    return Buffer.from(input, "utf8").toString("base64");
+  }
+
+  // Browser / Edge runtimes
+  const g = globalThis as unknown as Partial<WindowOrWorkerGlobalScope>;
+  if (g && typeof g.btoa === "function") {
+    // btoa verwacht binary string; converteer UTF-8 correct
+    if (typeof TextEncoder !== "undefined") {
+      const bytes = new TextEncoder().encode(input);
+      let bin = "";
+      for (let i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
+      return g.btoa(bin);
+    }
+    // Last resort (ASCII only)
+    return g.btoa(input);
+  }
+
+  // Fallback (uitzonderlijk)
+  throw new Error("Base64 encoding not supported in this runtime");
 }
 
 export function keywordSvgDataUri(
@@ -42,7 +72,7 @@ export function keywordSvgDataUri(
   const bgB = hsl(h2, 70, 74);
   const accent = hsl(h3, 68, 55);
 
-  // Blob-posities/afmetingen variëren deterministisch mee
+  // Blob-posities/afmetingen variëren deterministisch mee (percent → pixels)
   const b1x = 20 + (seed % 30);            // 20–49
   const b1y = 10 + ((seed >> 4) % 25);     // 10–34
   const b1r = 36 + ((seed >> 8) % 20);     // 36–55
@@ -57,6 +87,13 @@ export function keywordSvgDataUri(
 
   // IDs per seed zodat gradients/filters uniek zijn
   const id = (name: string) => `${name}-${seed.toString(36)}`;
+
+  // Afgeleide maten voor tekst zonder calc() in SVG attributes
+  const minSide = Math.min(width, height);
+  const titleFontSize = minSide * 0.07;
+  const subtitleFontSize = minSide * 0.028;
+  const subtitleYOffset = minSide * 0.065;
+  const subtitleY = height * 0.5 + subtitleYOffset;
 
   const svg = `
 <svg xmlns='http://www.w3.org/2000/svg' width='${width}' height='${height}' viewBox='0 0 ${width} ${height}' role='img'>
@@ -73,7 +110,7 @@ export function keywordSvgDataUri(
       <stop offset='100%' stop-color='${hsl(h2, 80, 50)}'/>
     </linearGradient>
 
-    <!-- Glas effect (lichte blur + inner highlight) -->
+    <!-- Glas effect (lichte blur) -->
     <filter id='${id("glass")}' x='-20%' y='-20%' width='140%' height='140%'>
       <feGaussianBlur in='SourceGraphic' stdDeviation='0.6' result='blur'/>
       <feComposite in='SourceGraphic' in2='blur' operator='over'/>
@@ -106,10 +143,10 @@ export function keywordSvgDataUri(
   <!-- Achtergrond -->
   <rect width='100%' height='100%' fill='url(#${id("bg")})'/>
 
-  <!-- Organische blobs (percentages voor responsieve positionering) -->
-  <circle cx='${(b1x / 100) * width}' cy='${(b1y / 100) * height}' r='${(b1r / 100) * width}' fill='url(#${id("blob1")})'/>
-  <circle cx='${(b2x / 100) * width}' cy='${(b2y / 100) * height}' r='${(b2r / 100) * width}' fill='url(#${id("blob2")})'/>
-  <circle cx='${(b3x / 100) * width}' cy='${(b3y / 100) * height}' r='${(b3r / 100) * width}' fill='url(#${id("blob3")})'/>
+  <!-- Organische blobs -->
+  <circle cx='${(b1x / 100) * width}' cy='${((b1y / 100) * height)}' r='${(b1r / 100) * width}' fill='url(#${id("blob1")})'/>
+  <circle cx='${(b2x / 100) * width}' cy='${((b2y / 100) * height)}' r='${(b2r / 100) * width}' fill='url(#${id("blob2")})'/>
+  <circle cx='${(b3x / 100) * width}' cy='${((b3y / 100) * height)}' r='${(b3r / 100) * width}' fill='url(#${id("blob3")})'/>
 
   <!-- Glazen kaart -->
   <g filter='url(#${id("glass")})'>
@@ -124,14 +161,14 @@ export function keywordSvgDataUri(
 
   <!-- Titeltekst -->
   <g>
-    <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle'
+    <text x='50%' y='${height * 0.5}' dominant-baseline='middle' text-anchor='middle'
           font-family='ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial'
-          font-weight='800' font-size='${Math.min(width, height) * 0.07}'
+          font-weight='800' font-size='${titleFontSize}'
           fill='url(#${id("accent")})' letter-spacing='.3px'>
       ${escaped}
     </text>
-    <text x='50%' y='calc(50% + ${Math.min(width, height) * 0.065}px)'
-          text-anchor='middle' font-size='${Math.min(width, height) * 0.028}'
+    <text x='50%' y='${subtitleY}'
+          text-anchor='middle' font-size='${subtitleFontSize}'
           font-family='ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial'
           fill='rgba(17,24,39,.72)'>
       X3DPrints — Precisie 3D print service
@@ -140,14 +177,9 @@ export function keywordSvgDataUri(
 
   <!-- Subtiele ruis bovenop alles -->
   <rect width='100%' height='100%' filter='url(#${id("noise")})' opacity='.35'/>
-</svg>`;
+</svg>`.trim();
 
   // Data URI
-  // Buffer bestaat in Node runtime; fallback voor edge (indien nodig)
-  const base64 =
-    typeof Buffer !== "undefined"
-      ? Buffer.from(svg).toString("base64")
-      : (globalThis as any).btoa?.(svg) ?? "";
-
+  const base64 = toBase64Utf8(svg);
   return `data:image/svg+xml;base64,${base64}`;
 }

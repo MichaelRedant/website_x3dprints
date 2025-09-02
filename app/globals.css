@@ -25,3 +25,124 @@ body {
 .section {
   @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
+
+/* Shimmer hover voor buttons/links met .has-shimmer */
+.has-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.has-shimmer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-120%);
+  background: linear-gradient(110deg, transparent, rgba(255,255,255,.6), transparent);
+  transition: transform .7s ease;
+}
+.has-shimmer:hover::before { transform: translateX(120%); }
+
+/* Light fade-ups zonder JS (al gebruikt in je pagina) */
+@keyframes fadeInUp { from { opacity:.0; transform: translateY(8px) } to { opacity:1; transform: translateY(0) } }
+@keyframes fadeIn { from { opacity:.0 } to { opacity:1 } }
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important }
+}
+
+/* app/globals.css — voeg onder je @tailwind utilities toe in een layer */
+@layer components {
+  /* Bullets iets subtieler kleuren */
+  .prose :where(ul>li)::marker { color: rgb(148 163 184); } /* slate-400 */
+
+  /* GFM task lists */
+  .prose :where(input[type="checkbox"]) {
+    appearance: none;
+    width: 1.05em; height: 1.05em;
+    margin-right: .55rem;
+    border-radius: .35rem;
+    border: 1px solid rgba(148,163,184,.6);
+    background: rgba(255,255,255,.6);
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+  .prose :where(input[type="checkbox"]:checked) {
+    background: linear-gradient(180deg,#22d3ee,#06b6d4);
+    border-color: transparent;
+  }
+  .prose :where(input[type="checkbox"]:checked)::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='white' d='M6.2 11.3 3.4 8.5l-1 1 3.8 3.8 7.4-7.4-1-1z'/></svg>") center/12px 12px no-repeat;
+    background: white;
+  }
+
+  /* Tabel scroll op mobiel */
+  .prose .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .prose .table-scroll table { min-width: 560px; }
+}
+
+@layer components {
+  /* Tabellen: glas, paddings, borders, leesbare head */
+  .prose :where(table) {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.95rem;
+    background: rgba(255,255,255,0.45);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    overflow: hidden; /* voor ronde hoeken */
+  }
+  .prose :where(thead) {
+    background: rgba(255,255,255,0.6);
+    color: rgb(30 41 59); /* slate-800 */
+  }
+  .prose :where(th, td) {
+    padding: .75rem 1rem;
+    border-bottom: 1px solid rgba(148,163,184,0.25); /* slate-400/25 */
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose :where(tbody tr:last-child td) {
+    border-bottom: none;
+  }
+
+  /* GFM checkboxes: netjes */
+  .prose :where(input[type="checkbox"]) {
+    appearance: none;
+    width: 1.05em; height: 1.05em;
+    margin-right: .55rem;
+    border-radius: .35rem;
+    border: 1px solid rgba(148,163,184,.6);
+    background: rgba(255,255,255,.6);
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+  .prose :where(input[type="checkbox"]:checked) {
+    background: linear-gradient(180deg,#22d3ee,#06b6d4);
+    border-color: transparent;
+  }
+  .prose :where(input[type="checkbox"]:checked)::after {
+    content: "";
+    position: absolute; inset: 0;
+    -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='white' d='M6.2 11.3 3.4 8.5l-1 1 3.8 3.8 7.4-7.4-1-1z'/></svg>") center/12px 12px no-repeat;
+            mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='white' d='M6.2 11.3 3.4 8.5l-1 1 3.8 3.8 7.4-7.4-1-1z'/></svg>") center/12px 12px no-repeat;
+    background: white;
+  }
+
+  /* Subtielere bullets */
+  .prose :where(ul>li)::marker { color: rgb(148 163 184); }
+}
+
+/* safety net if plugin variant isn't picked up */
+.prose.prose-x3d :where(p){ margin-top:1.1em; margin-bottom:1.1em; line-height:1.75 }
+.prose.prose-x3d :where(ul,ol){ margin-top:1.1em; margin-bottom:1.1em }
+.prose.prose-x3d :where(li){ margin-top:.35em; margin-bottom:.35em }
+.prose.prose-x3d :where(table){ margin-top:1.5em; margin-bottom:1.5em }
+.prose.prose-x3d :where(blockquote){ margin-top:1.4em; margin-bottom:1.4em }
+.prose.prose-x3d :where(hr){ display:none }
