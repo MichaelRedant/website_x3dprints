@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next"
+import { getAllLocationSlugs } from "@/lib/locations"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.x3dprints.be"
@@ -11,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/privacy",
     "/algemene-voorwaarden",
+    ...getAllLocationSlugs().map((s) => `/${s}`),
   ]
   const now = new Date()
   return routes.map((r) => ({
