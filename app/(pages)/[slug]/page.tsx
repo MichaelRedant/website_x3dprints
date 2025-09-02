@@ -193,8 +193,8 @@ try {
               <li className="flex items-start justify-center gap-2 sm:justify-start">
                 <span className="mt-1 inline-block h-2 w-2 rounded-full bg-teal-400" />
                 Snelle offerte:{" "}
-                <a className="underline decoration-cyan-500 underline-offset-4 hover:text-slate-900" href="/offerte">
-                  /offerte
+                <a className="underline decoration-cyan-500 underline-offset-4 hover:text-slate-900" href="/contact">
+                  vraag aan
                 </a>
               </li>
             </ul>

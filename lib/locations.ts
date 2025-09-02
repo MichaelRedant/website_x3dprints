@@ -50,6 +50,28 @@ export const locations: Location[] = [
     "3D model laten printen Geraardsbergen",
   ],
 },
+{
+  slug: "3d-printen-in-zottegem",
+  city: "Zottegem",
+  relatedPhrases: [
+    "3D print service Zottegem",
+    "rapid prototyping Zottegem",
+    "3D printing bedrijf Zottegem",
+    "3D printen nabij Zottegem",
+    "3D model laten printen Zottegem",
+  ],
+},
+{
+  slug: "3d-printen-in-oudenaarde",
+  city: "Oudenaarde",
+  relatedPhrases: [
+    "3D print service Oudenaarde",
+    "rapid prototyping Oudenaarde",
+    "3D printing bedrijf Oudenaarde",
+    "3D printen nabij Oudenaarde",
+    "3D model laten printen Oudenaarde",
+  ],
+},
 ];
 
 export function getLocationBySlug(slug: string): Location | undefined {
