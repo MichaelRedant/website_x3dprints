@@ -41,7 +41,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
 }
 
 export default async function Page({ params }: PageProps) {
-  const location = getLocationBySlug(params.slug)
+  const slug = params.slug.toLowerCase()
+  const location = getLocationBySlug(slug)
   if (!location) notFound()
 
   const keyphrase = `3D printen in ${location.city}`
