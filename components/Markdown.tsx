@@ -10,6 +10,7 @@ export default async function Markdown({ source, className }: MarkdownProps) {
   const html = await renderMarkdown(source)
 
   return (
+
     <div className="overflow-x-auto">
       <article
         className={cn(
@@ -19,5 +20,6 @@ export default async function Markdown({ source, className }: MarkdownProps) {
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </div>
+
   )
 }

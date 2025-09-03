@@ -361,11 +361,13 @@ export default async function Page({ params }: PageProps) {
           {/* CONTENT (MD) – glassy + centraal + animaties + tabel-scroll */}
 <section className="relative mx-auto mt-12 max-w-3xl">
   <div className="rounded-3xl bg-white/45 p-6 sm:p-8 ring-1 ring-white/30 backdrop-blur-xl shadow-glass">
+
   {mdSections.map((md, i) => (
     <div key={i} className={i > 0 ? "mt-8" : undefined}>
       <Markdown source={md} className="max-w-none" />
     </div>
   ))}
+
 </div>
 
 
