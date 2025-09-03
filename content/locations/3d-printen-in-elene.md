@@ -85,7 +85,6 @@ Elene ligt in de Vlaamse Ardennen en staat bekend om de Molenvijver. Bewoners pr
 
 ## Interne links rond 3D printen in Zottegem
 
-
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
 - [3D printen in Erwetegem](/3d-printen-in-erwetegem)
 - [3D printen in Godveerdegem](/3d-printen-in-godveerdegem)
@@ -96,7 +95,6 @@ Elene ligt in de Vlaamse Ardennen en staat bekend om de Molenvijver. Bewoners pr
 - [3D printen in Sint-Maria-Oudenhove](/3d-printen-in-sint-maria-oudenhove)
 - [3D printen in Strijpen](/3d-printen-in-strijpen)
 - [3D printen in Velzeke-Ruddershove](/3d-printen-in-velzeke-ruddershove)
-
 
 ---
 
