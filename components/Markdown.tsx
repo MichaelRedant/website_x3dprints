@@ -10,12 +10,16 @@ export default async function Markdown({ source, className }: MarkdownProps) {
   const html = await renderMarkdown(source)
 
   return (
-    <article
-      className={cn(
-        "prose prose-slate lg:prose-lg dark:prose-invert prose-x3d leading-relaxed",
-        className,
-      )}
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
+
+    <div className="overflow-x-auto">
+      <article
+        className={cn(
+          "prose prose-slate lg:prose-lg dark:prose-invert prose-x3d leading-relaxed",
+          className,
+        )}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+    </div>
+
   )
 }

@@ -28,7 +28,7 @@ interface PageProps {
 }
 
 export const dynamicParams = false;
-export const revalidate = 60 * 60 * 24; // 24u cache
+export const revalidate = 86400; // 24u cache
 
 export function generateStaticParams() {
   return getAllLocationSlugs().map((slug) => ({ slug }));
@@ -359,9 +359,7 @@ export default async function Page({ params }: PageProps) {
           {/* CONTENT (MD) – glassy + centraal + animaties + tabel-scroll */}
 <section className="relative mx-auto mt-12 max-w-3xl">
   <div className="rounded-3xl bg-white/45 p-6 sm:p-8 ring-1 ring-white/30 backdrop-blur-xl shadow-glass">
-  <div className="overflow-x-auto">
-    <Markdown source={contentMd} className="max-w-none" />
-  </div>
+  <Markdown source={contentMd} className="max-w-none" />
 </div>
 
 
