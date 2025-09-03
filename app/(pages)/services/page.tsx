@@ -6,14 +6,15 @@ import {
 } from "lucide-react"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
+import CtaBlock from "@/components/CtaBlock"
 
 export const metadata: Metadata = {
-  title: "3D Print Services | FDM, nabewerking & montage",
+  title: "3D Print Service België | Prototypes, Nabewerking & Montage",
   description:
-    "Professionele FDM 3D-printservice voor prototypes en kleine series. Materiaaladvies, nabewerking, inserts en montage. Regio Herzele/Gent.",
+    "Professionele 3D print service in Herzele/Gent voor prototypes en kleine series. Snelle FDM prints, materiaaladvies, nabewerking en montage.",
   alternates: { canonical: "https://www.x3dprints.be/services" },
   openGraph: {
-    title: "3D Print Services",
+    title: "3D Print Service België",
     description:
       "Van STL/STEP naar strakke, functionele prints. Snel, betaalbaar en consistent, met afwerking op maat.",
     url: "https://www.x3dprints.be/services",
@@ -141,6 +142,30 @@ export default function Page() {
       q: "Hoe snel krijg ik een offerte?",
       a: "Meestal binnen 24 uur na je aanvraag met model en korte beschrijving.",
     },
+    {
+      q: "Wat kost 3D-printen?",
+      a: "De prijs hangt af van materiaal, printtijd en nabewerking. Je ontvangt een offerte op basis van je model.",
+    },
+    {
+      q: "Hoe sterk zijn 3D-geprinte onderdelen?",
+      a: "FDM-prints zijn stevig, maar afhankelijk van oriëntatie en materiaal. Ontwerp bepaalt de uiteindelijke sterkte.",
+    },
+    {
+      q: "Kan ik één enkel stuk laten printen?",
+      a: "Ja, we printen vanaf één stuk en kunnen ook kleine series leveren.",
+    },
+    {
+      q: "Welke materialen gebruiken jullie?",
+      a: "PLA, PETG en TPU zijn standaard op voorraad. Andere filamenten zijn mogelijk op aanvraag.",
+    },
+    {
+      q: "Wat is de levertijd?",
+      a: "Meestal 2–5 werkdagen. Spoed of grotere oplages in overleg.",
+    },
+    {
+      q: "Kunnen jullie mijn model verbeteren?",
+      a: "We voeren basis modelreparaties uit. Voor uitgebreid CAD-werk schakelen we partners in.",
+    },
   ]
 
   const faqJsonLd = {
@@ -182,7 +207,7 @@ export default function Page() {
       <section className="px-6 pt-14 pb-10 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <h1 className="bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
+            <h1 className="bg-gradient-to-br from-indigo-600 to-sky-500 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
               Services
             </h1>
             <p className="mt-3 max-w-3xl text-slate-600">
@@ -214,7 +239,7 @@ export default function Page() {
             {services.map((s, i) => (
               <Reveal key={s.title} delay={i * 0.06}>
                 <GlassCard className="h-full p-6 transition-transform hover:-translate-y-1">
-                  <s.icon className="h-8 w-8 text-slate-900" aria-hidden />
+                  <s.icon className="h-8 w-8 text-indigo-600" aria-hidden />
                   <h3 className="mt-4 text-lg font-semibold text-slate-900">{s.title}</h3>
                   <p className="mt-2 text-sm text-slate-600">{s.description}</p>
                 </GlassCard>
@@ -237,7 +262,7 @@ export default function Page() {
             {useCases.map((u, i) => (
               <Reveal key={u.title} delay={i * 0.05}>
                 <GlassCard className="h-full p-6">
-                  <u.icon className="h-7 w-7 text-slate-900" aria-hidden />
+                  <u.icon className="h-7 w-7 text-indigo-600" aria-hidden />
                   <h3 className="mt-3 text-base font-semibold text-slate-900">{u.title}</h3>
                   <p className="mt-1 text-sm text-slate-600">{u.description}</p>
                 </GlassCard>
@@ -306,6 +331,11 @@ export default function Page() {
           </Reveal>
         </div>
       </section>
+
+      {/* CTA */}
+      <div className="px-6 pb-12 sm:px-8 lg:px-12">
+        <CtaBlock city="België" />
+      </div>
 
       {/* FAQ */}
       <section className="px-6 pb-20 sm:px-8 lg:px-12">
