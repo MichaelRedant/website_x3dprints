@@ -104,13 +104,13 @@ Met deze brede inzetbaarheid is 3D printen in Woubrechtegem een oplossing voor z
 
 Bezoekers die interesse hebben in 3D printen in Woubrechtegem lezen vaak ook over:
 
-- [3D printen in Herzele](/locaties/3d-printen-in-herzele)  
-- [3D printen in Borsbeke](/locaties/3d-printen-in-borsbeke)  
-- [3D printen in Hillegem](/locaties/3d-printen-in-hillegem)  
-- [3D printen in Ressegem](/locaties/3d-printen-in-ressegem)  
-- [3D printen in Sint-Antelinks](/locaties/3d-printen-in-sint-antelinks)  
-- [3D printen in Sint-Lievens-Esse](/locaties/3d-printen-in-sint-lievens-esse)  
-- [3D printen in Steenhuize-Wijnhuize](/locaties/3d-printen-in-steenhuize-wijnhuize)  
+- [3D printen in Herzele](/3d-printen-in-herzele)  
+- [3D printen in Borsbeke](/3d-printen-in-borsbeke)  
+- [3D printen in Hillegem](/3d-printen-in-hillegem)  
+- [3D printen in Ressegem](/3d-printen-in-ressegem)  
+- [3D printen in Sint-Antelinks](/3d-printen-in-sint-antelinks)  
+- [3D printen in Sint-Lievens-Esse](/3d-printen-in-sint-lievens-esse)  
+- [3D printen in Steenhuize-Wijnhuize](/3d-printen-in-steenhuize-wijnhuize)  
 
 Deze interne links versterken de vindbaarheid van de website en maken de regio zichtbaar als innovatieve hub.
 

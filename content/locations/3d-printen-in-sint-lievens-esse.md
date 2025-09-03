@@ -94,13 +94,13 @@ Met korte levertijden en flexibele opties blijf je altijd op schema.
 
 Ontdek ook onze andere locaties:  
 
-- [3D printen in Herzele](/locaties/3d-printen-in-herzele)  
-- [3D printen in Borsbeke](/locaties/3d-printen-in-borsbeke)  
-- [3D printen in Hillegem](/locaties/3d-printen-in-hillegem)  
-- [3D printen in Ressegem](/locaties/3d-printen-in-ressegem)  
-- [3D printen in Sint-Antelinks](/locaties/3d-printen-in-sint-antelinks)  
-- [3D printen in Steenhuize-Wijnhuize](/locaties/3d-printen-in-steenhuize-wijnhuize)  
-- [3D printen in Woubrechtegem](/locaties/3d-printen-in-woubrechtegem)  
+- [3D printen in Herzele](/3d-printen-in-herzele)  
+- [3D printen in Borsbeke](/3d-printen-in-borsbeke)  
+- [3D printen in Hillegem](/3d-printen-in-hillegem)  
+- [3D printen in Ressegem](/3d-printen-in-ressegem)  
+- [3D printen in Sint-Antelinks](/3d-printen-in-sint-antelinks)  
+- [3D printen in Steenhuize-Wijnhuize](/3d-printen-in-steenhuize-wijnhuize)  
+- [3D printen in Woubrechtegem](/3d-printen-in-woubrechtegem)  
 
 Deze interne links versterken de vindbaarheid van lokale 3D printdiensten in de regio.
 

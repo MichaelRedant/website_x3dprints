@@ -61,7 +61,9 @@ Het resultaat? Innovatie wordt toegankelijk, en **3D printen in Zottegem** zorgt
 ## 3D printen in Zottegem per deelgemeente
 
 ### 3D printen in Erwetegem
-In Erwetegem ondersteunt **3D printen in Zottegem** lokale makers, landbouwbedrijven en hobbyisten. De landelijke omgeving profiteert van **3D printen in Zottegem** voor mechanische onderdelen en gepersonaliseerde oplossingen. Meer weten? Lees de aparte pagina over [3D printen in Erwetegem](/locaties/3d-printen-in-erwetegem).
+
+In Erwetegem ondersteunt **3D printen in Zottegem** lokale makers, landbouwbedrijven en hobbyisten. De landelijke omgeving profiteert van **3D printen in Zottegem** voor mechanische onderdelen en gepersonaliseerde oplossingen. Meer weten? Lees de aparte pagina over [3D printen in Erwetegem](/3d-printen-in-erwetegem).
+
 
 ### 3D printen in Godveerdegem
 Godveerdegem is een groene oase waar **3D printen in Zottegem** helpt bij tuinprojecten, herstellingen en creatieve toepassingen. Ondernemers en gezinnen vertrouwen op **3D printen in Zottegem** voor maatwerk dat past bij hun levensstijl.
@@ -87,6 +89,7 @@ De archeologische site van Velzeke inspireert ook moderne maakprojecten. Met **3
 ### 3D printen in Elene
 Elene gebruikt **3D printen in Zottegem** voor praktische herstellingen en creatieve projecten. Lokale ondernemers kiezen **3D printen in Zottegem** om hun ideeën betaalbaar te realiseren.
 
+
 ---
 
 ## De link tussen 3D printen in Zottegem en de regio
@@ -108,6 +111,7 @@ Elke stap van **3D printen in Zottegem** gebeurt in overleg zodat je zeker bent 
 ---
 
 ## Levertijd en verzending bij 3D printen in Zottegem
+
 
 - **Standaard**: 2 tot 5 werkdagen voor **3D printen in Zottegem**
 - **Spoed**: mogelijk na overleg over **3D printen in Zottegem**
@@ -141,7 +145,9 @@ Bezoekers die interesse hebben in **3D printen in Zottegem** lezen vaak ook over
 - [3D printen in Godveerdegem](/3d-printen-in-godveerdegem)
 - [3D printen in Grotenberge](/3d-printen-in-grotenberge)
 - [3D printen in Leeuwergem](/3d-printen-in-leeuwergem)
-- [3D printen in Oombergen](/l3d-printen-in-oombergen)
+
+- [3D printen in Oombergen](/3d-printen-in-oombergen)
+
 - [3D printen in Sint-Goriks-Oudenhove](/3d-printen-in-sint-goriks-oudenhove)
 - [3D printen in Sint-Maria-Oudenhove](/3d-printen-in-sint-maria-oudenhove)
 - [3D printen in Strijpen](/3d-printen-in-strijpen)

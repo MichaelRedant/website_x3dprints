@@ -85,16 +85,18 @@ Strijpen ligt in de Zwalmstreek en is verbonden met Zottegem via de Gentsesteenw
 
 ## Interne links rond 3D printen in Zottegem
 
-- [3D printen in Zottegem](/locaties/3d-printen-in-zottegem)
-- [3D printen in Elene](/locaties/3d-printen-in-elene)
-- [3D printen in Erwetegem](/locaties/3d-printen-in-erwetegem)
-- [3D printen in Godveerdegem](/locaties/3d-printen-in-godveerdegem)
-- [3D printen in Grotenberge](/locaties/3d-printen-in-grotenberge)
-- [3D printen in Leeuwergem](/locaties/3d-printen-in-leeuwergem)
-- [3D printen in Oombergen](/locaties/3d-printen-in-oombergen)
-- [3D printen in Sint-Goriks-Oudenhove](/locaties/3d-printen-in-sint-goriks-oudenhove)
-- [3D printen in Sint-Maria-Oudenhove](/locaties/3d-printen-in-sint-maria-oudenhove)
-- [3D printen in Velzeke-Ruddershove](/locaties/3d-printen-in-velzeke-ruddershove)
+
+- [3D printen in Zottegem](/3d-printen-in-zottegem)
+- [3D printen in Elene](/3d-printen-in-elene)
+- [3D printen in Erwetegem](/3d-printen-in-erwetegem)
+- [3D printen in Godveerdegem](/3d-printen-in-godveerdegem)
+- [3D printen in Grotenberge](/3d-printen-in-grotenberge)
+- [3D printen in Leeuwergem](/3d-printen-in-leeuwergem)
+- [3D printen in Oombergen](/3d-printen-in-oombergen)
+- [3D printen in Sint-Goriks-Oudenhove](/3d-printen-in-sint-goriks-oudenhove)
+- [3D printen in Sint-Maria-Oudenhove](/3d-printen-in-sint-maria-oudenhove)
+- [3D printen in Velzeke-Ruddershove](/3d-printen-in-velzeke-ruddershove)
+
 
 ---
 
