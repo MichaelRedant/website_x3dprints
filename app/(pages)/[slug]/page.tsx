@@ -12,6 +12,7 @@ import GlassOrb from "@/components/GlassOrb"
 import GlassCard from "@/components/GlassCard"
 import TiltImage from "@/components/TiltImage"
 import Markdown from "@/components/Markdown"
+import { splitMarkdown } from "@/lib/markdown"
 
 import {
   getAllLocationSlugs,
@@ -92,6 +93,7 @@ export default async function Page({ params }: PageProps) {
   } catch {
     notFound();
   }
+  const mdSections = splitMarkdown(contentMd);
 
   function stripTags(html: string) {
   return html.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim()
@@ -359,7 +361,13 @@ export default async function Page({ params }: PageProps) {
           {/* CONTENT (MD) – glassy + centraal + animaties + tabel-scroll */}
 <section className="relative mx-auto mt-12 max-w-3xl">
   <div className="rounded-3xl bg-white/45 p-6 sm:p-8 ring-1 ring-white/30 backdrop-blur-xl shadow-glass">
-  <Markdown source={contentMd} className="max-w-none" />
+
+  {mdSections.map((md, i) => (
+    <div key={i} className={i > 0 ? "mt-8" : undefined}>
+      <Markdown source={md} className="max-w-none" />
+    </div>
+  ))}
+
 </div>
 
 

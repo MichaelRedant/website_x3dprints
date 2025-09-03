@@ -59,3 +59,14 @@ export async function renderMarkdown(markdown: string): Promise<string> {
 
   return String(file.value)
 }
+
+/**
+ * Split een markdown-string op horizontale regels (`---`).
+ * Handig om content-secties af te bakenen en ertussen custom HTML/JSX te injecteren.
+ */
+export function splitMarkdown(markdown: string): string[] {
+  return markdown
+    .split(/\n\s*---\s*\n/g)
+    .map((s) => s.trim())
+    .filter(Boolean)
+}
