@@ -1,4 +1,5 @@
 // components/ctablock.tsx
+import Link from "next/link"
 import { FaBolt, FaEnvelope, FaArrowRight, FaShieldAlt } from "react-icons/fa"
 import GlassOrb from "./GlassOrb"
 type Props = {
@@ -72,13 +73,13 @@ export default function CtaBlock({
 
           {/* Actions (geen telefoonknop) */}
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <a
+            <Link
               href="/contact"
               className="has-shimmer inline-flex items-center gap-2 rounded-2xl bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 ring-1 ring-slate-900/10 backdrop-blur transition hover:bg-white/90 hover:shadow-lg"
             >
               Offerte aanvragen
               <FaArrowRight aria-hidden />
-            </a>
+            </Link>
 
             <a
               href={mailHref}
