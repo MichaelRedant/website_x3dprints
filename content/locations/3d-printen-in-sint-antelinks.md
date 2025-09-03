@@ -90,13 +90,13 @@ Elk bestand wordt nagekeken en besproken, zodat je zeker bent van een correct en
 
 Ontdek ook andere locaties in de regio:
 
-- [3D printen in Herzele](/locaties/3d-printen-in-herzele)  
-- [3D printen in Borsbeke](/locaties/3d-printen-in-borsbeke)  
-- [3D printen in Hillegem](/locaties/3d-printen-in-hillegem)  
-- [3D printen in Ressegem](/locaties/3d-printen-in-ressegem)  
-- [3D printen in Sint-Lievens-Esse](/locaties/3d-printen-in-sint-lievens-esse)  
-- [3D printen in Steenhuize-Wijnhuize](/locaties/3d-printen-in-steenhuize-wijnhuize)  
-- [3D printen in Woubrechtegem](/locaties/3d-printen-in-woubrechtegem)
+- [3D printen in Herzele](/3d-printen-in-herzele)  
+- [3D printen in Borsbeke](/3d-printen-in-borsbeke)  
+- [3D printen in Hillegem](/3d-printen-in-hillegem)  
+- [3D printen in Ressegem](/3d-printen-in-ressegem)  
+- [3D printen in Sint-Lievens-Esse](/3d-printen-in-sint-lievens-esse)  
+- [3D printen in Steenhuize-Wijnhuize](/3d-printen-in-steenhuize-wijnhuize)  
+- [3D printen in Woubrechtegem](/3d-printen-in-woubrechtegem)
 
 Interne links versterken de online vindbaarheid en maken deel uit van een groter netwerk in Zuid-Oost-Vlaanderen.
 
