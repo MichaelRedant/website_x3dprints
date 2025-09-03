@@ -85,6 +85,7 @@ Velzeke-Ruddershove is bekend om zijn Romeinse verleden en het archeologisch mus
 
 ## Interne links rond 3D printen in Zottegem
 
+
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
 - [3D printen in Elene](/3d-printen-in-elene)
 - [3D printen in Erwetegem](/3d-printen-in-erwetegem)
@@ -95,6 +96,7 @@ Velzeke-Ruddershove is bekend om zijn Romeinse verleden en het archeologisch mus
 - [3D printen in Sint-Goriks-Oudenhove](/3d-printen-in-sint-goriks-oudenhove)
 - [3D printen in Sint-Maria-Oudenhove](/3d-printen-in-sint-maria-oudenhove)
 - [3D printen in Strijpen](/3d-printen-in-strijpen)
+
 
 ---
 

@@ -85,6 +85,7 @@ Leeuwergem ligt tussen velden en bossen en is vooral bekend om het Kasteel van L
 
 ## Interne links rond 3D printen in Zottegem
 
+
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
 - [3D printen in Elene](/3d-printen-in-elene)
 - [3D printen in Erwetegem](/3d-printen-in-erwetegem)
@@ -95,6 +96,7 @@ Leeuwergem ligt tussen velden en bossen en is vooral bekend om het Kasteel van L
 - [3D printen in Sint-Maria-Oudenhove](/3d-printen-in-sint-maria-oudenhove)
 - [3D printen in Strijpen](/3d-printen-in-strijpen)
 - [3D printen in Velzeke-Ruddershove](/3d-printen-in-velzeke-ruddershove)
+
 
 ---
 

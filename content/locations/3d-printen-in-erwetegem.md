@@ -93,11 +93,13 @@ Deze brede inzetbaarheid bewijst dat **3D printen in Erwetegem** geschikt is voo
 
 Wie meer wil weten over 3D printen in de regio, kan ook de volgende pagina’s bekijken:
 
+
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
 - [3D printen in Herzele](/3d-printen-in-herzele)
 - [3D printen in Borsbeke](/3d-printen-in-borsbeke)
 - [3D printen in Hillegem](/3d-printen-in-hillegem)
 - [3D printen in Ressegem](/3d-printen-in-ressegem)
+
 
 Deze interne links maken duidelijk hoe **3D printen in Erwetegem** past binnen een netwerk van lokale maakmogelijkheden.
 
@@ -130,7 +132,9 @@ Deze verhalen bewijzen dat **3D printen in Erwetegem** niet alleen theoretisch i
 
 ## Samenwerking tussen deelgemeenten
 
+
 **3D printen in Erwetegem** vormt een brug naar de andere deelgemeenten. Door kennis en ervaring te delen met bijvoorbeeld [3D printen in Zottegem](/3d-printen-in-zottegem) of initiatieven uit Velzeke, ontstaat er een creatief ecosysteem. Het uitwisselen van bestanden en ideeën versnelt innovatie, waardoor **3D printen in Erwetegem** deel wordt van een regionaal netwerk.
+
 
 ---
 
