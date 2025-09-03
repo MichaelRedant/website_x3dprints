@@ -4,20 +4,18 @@ import remarkParse from "remark-parse"
 import remarkGfm from "remark-gfm"
 import remarkRehype from "remark-rehype"
 import rehypeRaw from "rehype-raw"
-import rehypeSanitize from "rehype-sanitize"
+import rehypeSanitize, { type Schema } from "rehype-sanitize"
 import rehypeStringify from "rehype-stringify"
 
 /**
  * Minimal, expliciet sanitize schema zodat headings, lijsten, tabellen,
  * codeblokken, images en links blijven bestaan. Geen 'any', geen JSON hacks.
  */
-type SanitizeSchema = {
-  tagNames?: string[]
-  attributes?: Record<string, Array<string | [string]>>
+interface SafeSchema extends Schema {
   protocols?: Record<string, string[]>
 }
 
-const safeSchema: SanitizeSchema = {
+const safeSchema: SafeSchema = {
   tagNames: [
     "a","abbr","b","blockquote","br","code","em","i","img","hr","kbd","mark","s","strong","sub","sup","u",
     "p","h1","h2","h3","h4","h5","h6",
@@ -55,9 +53,20 @@ export async function renderMarkdown(markdown: string): Promise<string> {
     .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
-    .use(rehypeSanitize, safeSchema as unknown as any) // rehype-sanitize verwacht een Schema; structureel compatibel
+    .use(rehypeSanitize, safeSchema)
     .use(rehypeStringify)
     .process(markdown)
 
   return String(file.value)
+}
+
+/**
+ * Split een markdown-string op horizontale regels (`---`).
+ * Handig om content-secties af te bakenen en ertussen custom HTML/JSX te injecteren.
+ */
+export function splitMarkdown(markdown: string): string[] {
+  return markdown
+    .split(/\n\s*---\s*\n/g)
+    .map((s) => s.trim())
+    .filter(Boolean)
 }

@@ -4,7 +4,7 @@ import Link from "next/link"
 import GlassOrb from "@/components/GlassOrb"
 import { getAllLocationSlugs, getLocationBySlug } from "@/lib/locations"
 
-export const revalidate = 60 * 60 * 6 // 6u heropbouw
+export const revalidate = 21600 // 6u heropbouw
 
 export const metadata: Metadata = {
   title: "3D printen per stad | X3DPrints",
