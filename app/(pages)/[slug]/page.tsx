@@ -93,6 +93,11 @@ export default async function Page({ params }: PageProps) {
     notFound();
   }
 
+  function stripTags(html: string) {
+  return html.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim()
+}
+
+
   // JSON-LD
   const serviceJsonLd = {
     "@context": "https://schema.org",
@@ -106,29 +111,59 @@ export default async function Page({ params }: PageProps) {
   };
 
   const faqItems = [
-    {
-      q: `Welke materialen kan ik laten 3D printen in ${loc.city}?`,
-      a: "We printen o.a. PLA, PETG, ABS/ASA en TPU. Op aanvraag ook technische materialen. We adviseren het juiste materiaal op basis van jouw toepassing.",
-    },
-    {
-      q: `Wat is de levertijd voor 3D printen in ${loc.city}?`,
-      a: "Meestal 2–5 werkdagen afhankelijk van complexiteit en oplage. Spoed mogelijk in overleg.",
-    },
-    {
-      q: "Kan ik een prototype of kleine serie laten maken?",
-      a: "Ja. We zijn gespecialiseerd in rapid prototyping en kleine reeksen, met opties voor nabehandeling en montage.",
-    },
-  ];
+  {
+    q: `Welke materialen kan ik laten 3D printen in ${loc.city}?`,
+    aHtml: `Standaard <strong>PLA Matte</strong>, plus <strong>PETG</strong> en <strong>TPU</strong>. Op aanvraag: ABS/ASA, Nylon of PA-CF. Bekijk <a href="/materials">materialen & richtlijnen</a> voor details.`,
+  },
+  {
+    q: `Wat is de levertijd voor 3D printen in ${loc.city}?`,
+    aHtml: `Meestal <strong>2–5 werkdagen</strong>, afhankelijk van complexiteit en oplage. <a href="/contact">Spoed</a> mogelijk in overleg.`,
+  },
+  {
+    q: "Hoe worden de prijzen berekend?",
+    aHtml: `Transparant: formaat (<em>Small/Medium/Large/XL</em>), materiaaltoeslag (PLA Plus/PETG/TPU incl. drogen), nabehandeling en aantallen. Zie de tabel op <a href="/pricing">Prijzen</a>.`,
+  },
+  {
+    q: "Wat zijn de maximale bouwvolumes?",
+    aHtml: `Tot <strong>25 × 25 × 25 cm</strong> per onderdeel. Grotere onderdelen splitsen we in segmenten met nette passing.`,
+  },
+  {
+    q: "Welke bestandsformaten accepteer je?",
+    aHtml: `<strong>STL</strong> of <strong>STEP</strong>. Voeg indien mogelijk een korte toelichting toe: gewenste sterkte, zichtzijde, afwerking, aantallen.`,
+  },
+  {
+    q: "Welke toleranties haal je typisch?",
+    aHtml: `Richtwaarde <strong>±0,2 mm</strong> bij PLA/PETG, afhankelijk van geometrie en oriëntatie. Functionele passing? Vermeld dit in je aanvraag.`,
+  },
+  {
+    q: "Bieden jullie ontwerp op maat of aanpassingen?",
+    aHtml: `Ja. CAD-aanpassingen en ontwerp op maat aan <strong>€40/uur</strong>. Vraag een voorstel via <a href="/contact">contact</a>.`,
+  },
+  {
+    q: `Kan ik afhalen in plaats van verzending in ${loc.city}?`,
+    aHtml: `Afhalen kan op afspraak. Verzending: <strong>&lt; €50 = €7</strong>, <strong>€50–100 = €5</strong>, <strong>&gt; €100 = gratis</strong>. Zie <a href="/pricing">Prijzen</a>.`,
+  },
+  {
+    q: "Hoe zit het met vertrouwelijkheid en IP?",
+    aHtml: `Bestanden worden <strong>vertrouwelijk</strong> behandeld en uitsluitend gebruikt voor de offerte/ productie. NDA op aanvraag.`,
+  },
+  {
+    q: "Welke nabehandeling is mogelijk?",
+    aHtml: `Schuren, primen en lakken, plus eenvoudige <strong>montage</strong>. Zet je wensen in de aanvraag op <a href="/contact">/contact</a>.`,
+  },
+].map((it) => ({ ...it, aText: stripTags(it.aHtml) }))
+
 
   const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqItems.map((i) => ({
-      "@type": "Question",
-      name: i.q,
-      acceptedAnswer: { "@type": "Answer", text: i.a },
-    })),
-  };
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((i) => ({
+    "@type": "Question",
+    name: i.q,
+    acceptedAnswer: { "@type": "Answer", text: i.aText },
+  })),
+}
+
 
   // Kleine helper om snel consistente outline-icons te renderen
   const icon = (node: ReactNode) => (
@@ -345,7 +380,11 @@ export default async function Page({ params }: PageProps) {
 </section>
 
 <CtaBlock city={loc.city} className="mt-14" />
-<Faq city={loc.city} items={faqItems} className="mt-14" />
+<Faq
+  city={loc.city}
+  items={faqItems.map(({ q, aHtml }) => ({ q, a: aHtml }))}
+  className="mt-14"
+/>
 
           {/* Keyword visual — gecentreerd panel */}
           <div

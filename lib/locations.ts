@@ -116,6 +116,50 @@ export const locations: Location[] = [
     "3D model laten printen dendermonde",
   ],
 },
+{
+  slug: "3d-printen-in-haaltert",
+  city: "Haaltert",
+  relatedPhrases: [
+    "3D print service haaltert",
+    "rapid prototyping haaltert",
+    "3D printing bedrijf haaltert",
+    "3D printen nabij haaltert",
+    "3D model laten printen haaltert",
+  ],
+},
+{
+  slug: "3d-printen-in-lede",
+  city: "Lede",
+  relatedPhrases: [
+    "3D print service lede",
+    "rapid prototyping lede",
+    "3D printing bedrijf lede",
+    "3D printen nabij lede",
+    "3D model laten printen lede",
+  ],
+},
+{
+  slug: "3d-printen-in-lierde",
+  city: "Lierde",
+  relatedPhrases: [
+    "3D print service lierde",
+    "rapid prototyping lierde",
+    "3D printing bedrijf lierde",
+    "3D printen nabij lierde",
+    "3D model laten printen lierde",
+  ],
+},
+{
+  slug: "3d-printen-in-merelbeke",
+  city: "Merelbeke",
+  relatedPhrases: [
+    "3D print service merelbeke",
+    "rapid prototyping merelbeke",
+    "3D printing bedrijf merelbeke",
+    "3D printen nabij merelbeke",
+    "3D model laten printen merelbeke",
+  ],
+},
 ];
 
 export function getLocationBySlug(slug: string): Location | undefined {
