@@ -19,7 +19,8 @@ import {
 } from "@/lib/locations";
 import { keywordSvgDataUri } from "@/lib/svg";
 import CtaBlock from "@/components/CtaBlock";
-import type { ReactNode } from "react"
+import Faq from "@/components/Faq";
+import type { ReactNode } from "react";
 
 interface PageProps {
   params: { slug: string };
@@ -81,16 +82,16 @@ export default async function Page({ params }: PageProps) {
   const svgSrc = keywordSvgDataUri(keyphrase);
 
   // Markdown-inhoud laden
-let contentHtml = ""
-try {
-  const file = await readFile(
-    join(process.cwd(), "content", "locations", `${loc.slug}.md`),
-    "utf8"
-  )
-  contentHtml = await renderMarkdown(file) // <-- nieuwe renderer
-} catch {
-  notFound()
-}
+  let contentHtml = "";
+  try {
+    const file = await readFile(
+      join(process.cwd(), "content", "locations", `${loc.slug}.md`),
+      "utf8",
+    );
+    contentHtml = await renderMarkdown(file); // <-- nieuwe renderer
+  } catch {
+    notFound();
+  }
 
   // JSON-LD
   const serviceJsonLd = {
@@ -104,51 +105,45 @@ try {
     keywords: [keyphrase, ...phrases],
   };
 
+  const faqItems = [
+    {
+      q: `Welke materialen kan ik laten 3D printen in ${loc.city}?`,
+      a: "We printen o.a. PLA, PETG, ABS/ASA en TPU. Op aanvraag ook technische materialen. We adviseren het juiste materiaal op basis van jouw toepassing.",
+    },
+    {
+      q: `Wat is de levertijd voor 3D printen in ${loc.city}?`,
+      a: "Meestal 2–5 werkdagen afhankelijk van complexiteit en oplage. Spoed mogelijk in overleg.",
+    },
+    {
+      q: "Kan ik een prototype of kleine serie laten maken?",
+      a: "Ja. We zijn gespecialiseerd in rapid prototyping en kleine reeksen, met opties voor nabehandeling en montage.",
+    },
+  ];
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: `Welke materialen kan ik laten 3D printen in ${loc.city}?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "We printen o.a. PLA, PETG, ABS/ASA en TPU. Op aanvraag ook technische materialen. We adviseren het juiste materiaal op basis van jouw toepassing.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: `Wat is de levertijd voor 3D printen in ${loc.city}?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Meestal 2–5 werkdagen afhankelijk van complexiteit en oplage. Spoed mogelijk in overleg.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Kan ik een prototype of kleine serie laten maken?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Ja. We zijn gespecialiseerd in rapid prototyping en kleine reeksen, met opties voor nabehandeling en montage.",
-        },
-      },
-    ],
+    mainEntity: faqItems.map((i) => ({
+      "@type": "Question",
+      name: i.q,
+      acceptedAnswer: { "@type": "Answer", text: i.a },
+    })),
   };
 
   // Kleine helper om snel consistente outline-icons te renderen
-const icon = (node: ReactNode) => (
-  <svg
-    width="28"
-    height="28"
-    viewBox="0 0 24 24"
-    aria-hidden="true"
-    className="mx-auto mb-2 text-slate-700"
-  >
-    <g fill="none" stroke="currentColor" strokeWidth="1.6">
-      {node}
-    </g>
-  </svg>
-)
+  const icon = (node: ReactNode) => (
+    <svg
+      width="28"
+      height="28"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      className="mx-auto mb-2 text-slate-700"
+    >
+      <g fill="none" stroke="currentColor" strokeWidth="1.6">
+        {node}
+      </g>
+    </svg>
+  );
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -350,6 +345,7 @@ const icon = (node: ReactNode) => (
 </section>
 
 <CtaBlock city={loc.city} className="mt-14" />
+<Faq city={loc.city} items={faqItems} className="mt-14" />
 
           {/* Keyword visual — gecentreerd panel */}
           <div
