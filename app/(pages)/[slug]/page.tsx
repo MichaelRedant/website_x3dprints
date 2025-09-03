@@ -203,7 +203,7 @@ const icon = (node: ReactNode) => (
               </Link>
             </div>
           </Reveal>
-          <TiltImage src="/globe.svg" alt="Decoratieve wereldbol" className="mx-auto mt-12 w-64" />
+          <TiltImage src="/Logo.webp" alt="Logo X3DPrints" className="mx-auto mt-12 w-64" />
           <Reveal delay={0.15} className="mt-16 grid gap-6 sm:grid-cols-3">
             {[
               {
