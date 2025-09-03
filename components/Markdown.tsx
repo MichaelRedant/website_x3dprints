@@ -1,11 +1,15 @@
 import { cn } from "@/lib/utils"
 
+import { renderMarkdown } from "@/lib/markdown"
+
 interface MarkdownProps {
-  html: string
+  source: string
   className?: string
 }
 
-export default function Markdown({ html, className }: MarkdownProps) {
+export default async function Markdown({ source, className }: MarkdownProps) {
+  const html = await renderMarkdown(source)
+
   return (
     <article
       className={cn(
