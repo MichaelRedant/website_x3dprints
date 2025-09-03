@@ -63,6 +63,8 @@ De stad Aalst, met haar levendige Grote Markt, historische bezienswaardigheden e
 -   Snel prototypes en kleine series produceren voor lokale bedrijven en start-ups.
 -   Specifieke onderdelen laten maken die snel beschikbaar moeten zijn voor reparaties of projecten.
 -   Educatieve projecten ondersteunen met tastbare leermiddelen die inspireren.
+Meer informatie over de stad vind je op [Aalst](https://www.aalst.be).
+
 
 ---
 
@@ -90,6 +92,20 @@ De stad Aalst, met haar levendige Grote Markt, historische bezienswaardigheden e
 -   🏫 **Educatieve modellen** voor scholen en studentenprojecten die **prototypes Aalst** nodig hebben.
 -   🛠 **Maatwerk onderdelen** en reparaties voor kmo's en hobbyisten in de regio.
 -   🏗 **Architecturale maquettes** voor bouw- en renovatieprojecten in de stad.
+---
+
+## Interne links rond 3D printen in Aalst
+
+- [3D printen in Baardegem](/3d-printen-in-baardegem)
+- [3D printen in Erembodegem](/3d-printen-in-erembodegem)
+- [3D printen in Gijzegem](/3d-printen-in-gijzegem)
+- [3D printen in Herdersem](/3d-printen-in-herdersem)
+- [3D printen in Hofstade](/3d-printen-in-hofstade)
+- [3D printen in Meldert](/3d-printen-in-meldert)
+- [3D printen in Moorsel](/3d-printen-in-moorsel)
+- [3D printen in Nieuwerkerken](/3d-printen-in-nieuwerkerken)
+
+
 
 ---
 
