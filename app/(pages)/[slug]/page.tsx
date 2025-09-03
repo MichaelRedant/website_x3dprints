@@ -12,6 +12,7 @@ import GlassOrb from "@/components/GlassOrb"
 import GlassCard from "@/components/GlassCard"
 import TiltImage from "@/components/TiltImage"
 import Markdown from "@/components/Markdown"
+
 import {
   getAllLocationSlugs,
   getLocationBySlug,
@@ -367,7 +368,9 @@ export default async function Page({ params }: PageProps) {
   >
     {/* scroll wrapper zorgt dat tabellen zichtbaar blijven op mobiel */}
     <div className="table-wrap overflow-x-auto">
+
       <Markdown source={contentMd} className="mt-8 max-w-none" />
+
     </div>
   </div>
 
