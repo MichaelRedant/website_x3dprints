@@ -12,11 +12,9 @@ export default async function Markdown({ source, className }: MarkdownProps) {
 
   return (
     <article
-      className={cn(
-        "prose prose-slate lg:prose-lg dark:prose-invert prose-x3d leading-relaxed",
-        className,
-      )}
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
+  className="prose prose-slate lg:prose-lg dark:prose-invert prose-x3d leading-relaxed"
+  dangerouslySetInnerHTML={{ __html: html }}
+/>
+
   )
 }

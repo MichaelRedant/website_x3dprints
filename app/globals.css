@@ -146,3 +146,18 @@ body {
 .prose.prose-x3d :where(table){ margin-top:1.5em; margin-bottom:1.5em }
 .prose.prose-x3d :where(blockquote){ margin-top:1.4em; margin-bottom:1.4em }
 .prose.prose-x3d :where(hr){ display:none }
+
+/* Optioneel: kleine quality-of-life tweaks */
+.prose :where(table) {
+  display: table;            /* fix rare overflow issues */
+  width: 100%;
+}
+
+.prose :where(pre) {
+  white-space: pre;          /* geen wrap in codeblokken */
+}
+
+/* Donkere modus invert */
+:root.dark .prose a {
+  color: rgb(103 232 249);   /* cyan-300-ish */
+}

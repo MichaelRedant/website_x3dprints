@@ -358,21 +358,12 @@ export default async function Page({ params }: PageProps) {
 
           {/* CONTENT (MD) – glassy + centraal + animaties + tabel-scroll */}
 <section className="relative mx-auto mt-12 max-w-3xl">
-  <div
-    className="
-      rounded-3xl bg-white/45 p-6 sm:p-8 ring-1 ring-white/30 backdrop-blur-xl
-      shadow-glass transition duration-500
-      hover:shadow-[0_20px_60px_rgba(0,0,0,0.10)]
-      animate-[fadeIn_.6s_ease_out_.05s_both]
-    "
-  >
-    {/* scroll wrapper zorgt dat tabellen zichtbaar blijven op mobiel */}
-    <div className="table-wrap overflow-x-auto">
-
-      <Markdown source={contentMd} className="mt-8 max-w-none" />
-
-    </div>
+  <div className="rounded-3xl bg-white/45 p-6 sm:p-8 ring-1 ring-white/30 backdrop-blur-xl shadow-glass">
+  <div className="overflow-x-auto">
+    <Markdown source={contentMd} className="max-w-none" />
   </div>
+</div>
+
 
   {/* Soft glow randje bovenaan, purely decorative */}
   <div className="pointer-events-none absolute inset-x-0 -top-1 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
