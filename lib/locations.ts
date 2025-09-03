@@ -160,6 +160,50 @@ export const locations: Location[] = [
     "3D model laten printen merelbeke",
   ],
 },
+{
+  slug: "3d-printen-in-sint-lievens-houtem",
+  city: "Sint-Lievens-Houtem",
+  relatedPhrases: [
+    "3D print service sint-lievens-houtem",
+    "rapid prototyping sint-lievens-houtem",
+    "3D printing bedrijf sint-lievens-houtem",
+    "3D printen nabij sint-lievens-houtem",
+    "3D model laten printen sint-lievens-houtem",
+  ],
+},
+{
+  slug: "3d-printen-in-wetteren",
+  city: "Wetteren",
+  relatedPhrases: [
+    "3D print service wetteren",
+    "rapid prototyping wetteren",
+    "3D printing bedrijf wetteren",
+    "3D printen nabij wetteren",
+    "3D model laten printen wetteren",
+  ],
+},
+{
+  slug: "3d-printen-in-brakel",
+  city: "Brakel",
+  relatedPhrases: [
+    "3D print service brakel",
+    "rapid prototyping brakel",
+    "3D printing bedrijf brakel",
+    "3D printen nabij brakel",
+    "3D model laten printen brakel",
+  ],
+},
+{
+  slug: "3d-printen-in-gent",
+  city: "Gent",
+  relatedPhrases: [
+    "3D print service gent",
+    "rapid prototyping gent",
+    "3D printing bedrijf gent",
+    "3D printen nabij gent",
+    "3D model laten printen gent",
+  ],
+},
 ];
 
 export function getLocationBySlug(slug: string): Location | undefined {
