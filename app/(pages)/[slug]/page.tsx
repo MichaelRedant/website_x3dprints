@@ -11,7 +11,7 @@ import Catchphrase from "@/components/Catchphrase"
 import GlassOrb from "@/components/GlassOrb"
 import GlassCard from "@/components/GlassCard"
 import TiltImage from "@/components/TiltImage"
-import { renderMarkdown } from "@/lib/markdown"
+import Markdown from "@/components/Markdown"
 import {
   getAllLocationSlugs,
   getLocationBySlug,
@@ -82,13 +82,12 @@ export default async function Page({ params }: PageProps) {
   const svgSrc = keywordSvgDataUri(keyphrase);
 
   // Markdown-inhoud laden
-  let contentHtml = "";
+  let contentMd = "";
   try {
-    const file = await readFile(
+    contentMd = await readFile(
       join(process.cwd(), "content", "locations", `${loc.slug}.md`),
       "utf8",
     );
-    contentHtml = await renderMarkdown(file); // <-- nieuwe renderer
   } catch {
     notFound();
   }
@@ -368,10 +367,7 @@ export default async function Page({ params }: PageProps) {
   >
     {/* scroll wrapper zorgt dat tabellen zichtbaar blijven op mobiel */}
     <div className="table-wrap overflow-x-auto">
-      <article
-  className="prose prose-slate lg:prose-lg dark:prose-invert prose-x3d leading-relaxed mt-8 max-w-none"
-  dangerouslySetInnerHTML={{ __html: contentHtml }}
-/>
+      <Markdown source={contentMd} className="mt-8 max-w-none" />
     </div>
   </div>
 
