@@ -29,6 +29,83 @@ export const locations: Location[] = [
     ],
   },
   {
+    slug: "3d-printen-in-borsbeke",
+    city: "Borsbeke",
+    relatedPhrases: [
+      "3D print service Borsbeke",
+      "rapid prototyping Borsbeke",
+      "3D printing bedrijf Borsbeke",
+      "3D printen nabij Borsbeke",
+      "3D model laten printen Borsbeke",
+    ],
+  },
+  {
+    slug: "3d-printen-in-hillegem",
+    city: "Hillegem",
+    relatedPhrases: [
+      "3D print service Hillegem",
+      "rapid prototyping Hillegem",
+      "3D printing bedrijf Hillegem",
+      "3D printen nabij Hillegem",
+      "3D model laten printen Hillegem",
+    ],
+  },
+  {
+    slug: "3d-printen-in-ressegem",
+    city: "Ressegem",
+    relatedPhrases: [
+      "3D print service Ressegem",
+      "rapid prototyping Ressegem",
+      "3D printing bedrijf Ressegem",
+      "3D printen nabij Ressegem",
+      "3D model laten printen Ressegem",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-antelinks",
+    city: "Sint-Antelinks",
+    relatedPhrases: [
+      "3D print service Sint-Antelinks",
+      "rapid prototyping Sint-Antelinks",
+      "3D printing bedrijf Sint-Antelinks",
+      "3D printen nabij Sint-Antelinks",
+      "3D model laten printen Sint-Antelinks",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-lievens-esse",
+    city: "Sint-Lievens-Esse",
+    relatedPhrases: [
+      "3D print service Sint-Lievens-Esse",
+      "rapid prototyping Sint-Lievens-Esse",
+      "3D printing bedrijf Sint-Lievens-Esse",
+      "3D printen nabij Sint-Lievens-Esse",
+      "3D model laten printen Sint-Lievens-Esse",
+    ],
+  },
+  {
+    slug: "3d-printen-in-steenhuize-wijnhuize",
+    city: "Steenhuize-Wijnhuize",
+    relatedPhrases: [
+      "3D print service Steenhuize-Wijnhuize",
+      "rapid prototyping Steenhuize-Wijnhuize",
+      "3D printing bedrijf Steenhuize-Wijnhuize",
+      "3D printen nabij Steenhuize-Wijnhuize",
+      "3D model laten printen Steenhuize-Wijnhuize",
+    ],
+  },
+  {
+    slug: "3d-printen-in-woubrechtegem",
+    city: "Woubrechtegem",
+    relatedPhrases: [
+      "3D print service Woubrechtegem",
+      "rapid prototyping Woubrechtegem",
+      "3D printing bedrijf Woubrechtegem",
+      "3D printen nabij Woubrechtegem",
+      "3D model laten printen Woubrechtegem",
+    ],
+  },
+  {
   slug: "3d-printen-in-ninove",
   city: "Ninove",
   relatedPhrases: [
