@@ -8,6 +8,10 @@
   --brand: #111827;
   --accent: #00d6b9;
 }
+html:focus-within { scroll-behavior: smooth; }
+
+.prose h2,.prose h3,.prose h4,.prose h5,.prose h6 { scroll-margin-top: 15rem; }
+
 
 body {
   color: #111827;

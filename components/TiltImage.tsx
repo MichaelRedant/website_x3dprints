@@ -1,28 +1,60 @@
 "use client"
 
-import Image from "next/image"
-import { useState } from "react"
-import { motion, useReducedMotion } from "framer-motion"
+import Image, { type ImageProps } from "next/image"
+import { useRef } from "react"
 
-interface TiltImageProps {
-  src: string
-  alt: string
-  className?: string
+function cn(...a: Array<string | false | null | undefined>) {
+  return a.filter(Boolean).join(" ")
 }
 
-export default function TiltImage({ src, alt, className }: TiltImageProps) {
-  const reduce = useReducedMotion()
-  const [hovered, setHovered] = useState(false)
+export type TiltImageProps = ImageProps & {
+  intensity?: number // 0..1
+}
+
+/**
+ * Kleine tilt/parallax wrapper om Next/Image heen.
+ * Alle ImageProps (incl. priority) worden doorgelaten.
+ */
+export default function TiltImage({
+  className,
+  intensity = 0.12,
+  style,
+  ...imgProps
+}: TiltImageProps) {
+  const ref = useRef<HTMLDivElement>(null)
+
+  // optioneel: superlichte tilt (geen externe lib)
+  function onMouseMove(e: React.MouseEvent<HTMLDivElement>) {
+    const el = ref.current
+    if (!el) return
+    const rect = el.getBoundingClientRect()
+    const px = (e.clientX - rect.left) / rect.width - 0.5
+    const py = (e.clientY - rect.top) / rect.height - 0.5
+    el.style.transform = `rotateX(${-(py * 6 * intensity)}deg) rotateY(${px * 6 * intensity}deg) translateZ(0)`
+  }
+
+  function onMouseLeave() {
+    const el = ref.current
+    if (!el) return
+    el.style.transform = "rotateX(0deg) rotateY(0deg) translateZ(0)"
+  }
 
   return (
-    <motion.div
-      className={className}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      animate={reduce ? {} : hovered ? { rotateY: 8, rotateX: -8 } : { rotateY: 0, rotateX: 0 }}
-      transition={{ type: "spring", stiffness: 200, damping: 15 }}
+    <div
+      ref={ref}
+      onMouseMove={onMouseMove}
+      onMouseLeave={onMouseLeave}
+      className={cn(
+        "will-change-transform transition-transform duration-150 ease-out",
+        className,
+      )}
+      style={{
+        transformStyle: "preserve-3d",
+        perspective: "800px",
+        ...style,
+      }}
     >
-      <Image src={src} alt={alt} width={400} height={400} className="h-auto w-full rounded-2xl shadow-lg" />
-    </motion.div>
+      <Image {...imgProps} />
+    </div>
   )
 }
