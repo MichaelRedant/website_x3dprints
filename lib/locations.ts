@@ -293,8 +293,6 @@ export const locations: Location[] = [
   ],
 },
 {
-
-
   slug: "3d-printen-in-erwetegem",
   city: "Erwetegem",
   relatedPhrases: [
@@ -305,7 +303,6 @@ export const locations: Location[] = [
     "3D model laten printen erwetegem",
   ],
 },
-
 {
   slug: "3d-printen-in-elene",
   city: "Elene",
@@ -403,6 +400,94 @@ export const locations: Location[] = [
     "3D printing bedrijf velzeke-ruddershove",
     "3D printen nabij velzeke-ruddershove",
     "3D model laten printen velzeke-ruddershove",
+  ],
+
+},{
+  slug: "3d-printen-in-baardegem",
+  city: "Baardegem",
+  relatedPhrases: [
+    "3D print service baardegem",
+    "rapid prototyping baardegem",
+    "3D printing bedrijf baardegem",
+    "3D printen nabij baardegem",
+    "3D model laten printen baardegem",
+  ],
+},
+{
+  slug: "3d-printen-in-erembodegem",
+  city: "Erembodegem",
+  relatedPhrases: [
+    "3D print service erembodegem",
+    "rapid prototyping erembodegem",
+    "3D printing bedrijf erembodegem",
+    "3D printen nabij erembodegem",
+    "3D model laten printen erembodegem",
+  ],
+},
+{
+  slug: "3d-printen-in-gijzegem",
+  city: "Gijzegem",
+  relatedPhrases: [
+    "3D print service gijzegem",
+    "rapid prototyping gijzegem",
+    "3D printing bedrijf gijzegem",
+    "3D printen nabij gijzegem",
+    "3D model laten printen gijzegem",
+  ],
+},
+{
+  slug: "3d-printen-in-herdersem",
+  city: "Herdersem",
+  relatedPhrases: [
+    "3D print service herdersem",
+    "rapid prototyping herdersem",
+    "3D printing bedrijf herdersem",
+    "3D printen nabij herdersem",
+    "3D model laten printen herdersem",
+  ],
+},
+{
+  slug: "3d-printen-in-hofstade",
+  city: "Hofstade",
+  relatedPhrases: [
+    "3D print service hofstade",
+    "rapid prototyping hofstade",
+    "3D printing bedrijf hofstade",
+    "3D printen nabij hofstade",
+    "3D model laten printen hofstade",
+  ],
+},
+{
+  slug: "3d-printen-in-meldert",
+  city: "Meldert",
+  relatedPhrases: [
+    "3D print service meldert",
+    "rapid prototyping meldert",
+    "3D printing bedrijf meldert",
+    "3D printen nabij meldert",
+    "3D model laten printen meldert",
+  ],
+},
+{
+  slug: "3d-printen-in-moorsel",
+  city: "Moorsel",
+  relatedPhrases: [
+    "3D print service moorsel",
+    "rapid prototyping moorsel",
+    "3D printing bedrijf moorsel",
+    "3D printen nabij moorsel",
+    "3D model laten printen moorsel",
+  ],
+},
+{
+  slug: "3d-printen-in-nieuwerkerken",
+  city: "Nieuwerkerken",
+  relatedPhrases: [
+    "3D print service nieuwerkerken",
+    "rapid prototyping nieuwerkerken",
+    "3D printing bedrijf nieuwerkerken",
+    "3D printen nabij nieuwerkerken",
+    "3D model laten printen nieuwerkerken",
   ],
 },
 

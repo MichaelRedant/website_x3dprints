@@ -85,7 +85,6 @@ Het dorp ligt rond het Sint-Hubertusplein en het recente Wantenplein, een verwij
 
 ## Interne links rond 3D printen in Zottegem
 
-
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
 - [3D printen in Elene](/3d-printen-in-elene)
 - [3D printen in Erwetegem](/3d-printen-in-erwetegem)
@@ -96,7 +95,6 @@ Het dorp ligt rond het Sint-Hubertusplein en het recente Wantenplein, een verwij
 - [3D printen in Sint-Goriks-Oudenhove](/3d-printen-in-sint-goriks-oudenhove)
 - [3D printen in Strijpen](/3d-printen-in-strijpen)
 - [3D printen in Velzeke-Ruddershove](/3d-printen-in-velzeke-ruddershove)
-
 
 ---
 

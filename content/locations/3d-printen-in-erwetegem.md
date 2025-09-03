@@ -100,7 +100,6 @@ Wie meer wil weten over 3D printen in de regio, kan ook de volgende pagina’s b
 - [3D printen in Hillegem](/3d-printen-in-hillegem)
 - [3D printen in Ressegem](/3d-printen-in-ressegem)
 
-
 Deze interne links maken duidelijk hoe **3D printen in Erwetegem** past binnen een netwerk van lokale maakmogelijkheden.
 
 ---

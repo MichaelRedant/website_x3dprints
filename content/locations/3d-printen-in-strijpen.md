@@ -85,7 +85,6 @@ Strijpen ligt in de Zwalmstreek en is verbonden met Zottegem via de Gentsesteenw
 
 ## Interne links rond 3D printen in Zottegem
 
-
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
 - [3D printen in Elene](/3d-printen-in-elene)
 - [3D printen in Erwetegem](/3d-printen-in-erwetegem)
@@ -96,7 +95,6 @@ Strijpen ligt in de Zwalmstreek en is verbonden met Zottegem via de Gentsesteenw
 - [3D printen in Sint-Goriks-Oudenhove](/3d-printen-in-sint-goriks-oudenhove)
 - [3D printen in Sint-Maria-Oudenhove](/3d-printen-in-sint-maria-oudenhove)
 - [3D printen in Velzeke-Ruddershove](/3d-printen-in-velzeke-ruddershove)
-
 
 ---
 
