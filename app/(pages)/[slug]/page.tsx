@@ -11,6 +11,7 @@ import Catchphrase from "@/components/Catchphrase"
 import GlassOrb from "@/components/GlassOrb"
 import GlassCard from "@/components/GlassCard"
 import TiltImage from "@/components/TiltImage"
+import Markdown from "@/components/Markdown"
 import { renderMarkdown } from "@/lib/markdown"
 import {
   getAllLocationSlugs,
@@ -368,10 +369,7 @@ export default async function Page({ params }: PageProps) {
   >
     {/* scroll wrapper zorgt dat tabellen zichtbaar blijven op mobiel */}
     <div className="table-wrap overflow-x-auto">
-      <article
-  className="prose prose-slate lg:prose-lg dark:prose-invert prose-x3d leading-relaxed mt-8 max-w-none"
-  dangerouslySetInnerHTML={{ __html: contentHtml }}
-/>
+      <Markdown html={contentHtml} className="mt-8 max-w-none" />
     </div>
   </div>
 
