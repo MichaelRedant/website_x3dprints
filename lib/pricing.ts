@@ -36,5 +36,7 @@ export function calcUnitPrice(
   const costPerKg = (MATERIAL_COST_EUR_PER_KG[material] ?? 0) * 1.5;
 
   const base = (grams / 1000) * costPerKg;
-  return Math.round(base * QUALITY_MULTIPLIER[quality]);
+  const withQuality = base * QUALITY_MULTIPLIER[quality];
+  // Rond af op centen zodat kwaliteits- en materiaalverschillen zichtbaar blijven
+  return Math.round(withQuality * 100) / 100;
 }
