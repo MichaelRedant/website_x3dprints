@@ -293,6 +293,8 @@ export const locations: Location[] = [
   ],
 },
 {
+
+
   slug: "3d-printen-in-erwetegem",
   city: "Erwetegem",
   relatedPhrases: [
@@ -303,6 +305,107 @@ export const locations: Location[] = [
     "3D model laten printen erwetegem",
   ],
 },
+
+{
+  slug: "3d-printen-in-elene",
+  city: "Elene",
+  relatedPhrases: [
+    "3D print service elene",
+    "rapid prototyping elene",
+    "3D printing bedrijf elene",
+    "3D printen nabij elene",
+    "3D model laten printen elene",
+  ],
+},
+{
+  slug: "3d-printen-in-godveerdegem",
+  city: "Godveerdegem",
+  relatedPhrases: [
+    "3D print service godveerdegem",
+    "rapid prototyping godveerdegem",
+    "3D printing bedrijf godveerdegem",
+    "3D printen nabij godveerdegem",
+    "3D model laten printen godveerdegem",
+  ],
+},
+{
+  slug: "3d-printen-in-grotenberge",
+  city: "Grotenberge",
+  relatedPhrases: [
+    "3D print service grotenberge",
+    "rapid prototyping grotenberge",
+    "3D printing bedrijf grotenberge",
+    "3D printen nabij grotenberge",
+    "3D model laten printen grotenberge",
+  ],
+},
+{
+  slug: "3d-printen-in-leeuwergem",
+  city: "Leeuwergem",
+  relatedPhrases: [
+    "3D print service leeuwergem",
+    "rapid prototyping leeuwergem",
+    "3D printing bedrijf leeuwergem",
+    "3D printen nabij leeuwergem",
+    "3D model laten printen leeuwergem",
+  ],
+},
+{
+  slug: "3d-printen-in-oombergen",
+  city: "Oombergen",
+  relatedPhrases: [
+    "3D print service oombergen",
+    "rapid prototyping oombergen",
+    "3D printing bedrijf oombergen",
+    "3D printen nabij oombergen",
+    "3D model laten printen oombergen",
+  ],
+},
+{
+  slug: "3d-printen-in-sint-goriks-oudenhove",
+  city: "Sint-Goriks-Oudenhove",
+  relatedPhrases: [
+    "3D print service sint-goriks-oudenhove",
+    "rapid prototyping sint-goriks-oudenhove",
+    "3D printing bedrijf sint-goriks-oudenhove",
+    "3D printen nabij sint-goriks-oudenhove",
+    "3D model laten printen sint-goriks-oudenhove",
+  ],
+},
+{
+  slug: "3d-printen-in-sint-maria-oudenhove",
+  city: "Sint-Maria-Oudenhove",
+  relatedPhrases: [
+    "3D print service sint-maria-oudenhove",
+    "rapid prototyping sint-maria-oudenhove",
+    "3D printing bedrijf sint-maria-oudenhove",
+    "3D printen nabij sint-maria-oudenhove",
+    "3D model laten printen sint-maria-oudenhove",
+  ],
+},
+{
+  slug: "3d-printen-in-strijpen",
+  city: "Strijpen",
+  relatedPhrases: [
+    "3D print service strijpen",
+    "rapid prototyping strijpen",
+    "3D printing bedrijf strijpen",
+    "3D printen nabij strijpen",
+    "3D model laten printen strijpen",
+  ],
+},
+{
+  slug: "3d-printen-in-velzeke-ruddershove",
+  city: "Velzeke-Ruddershove",
+  relatedPhrases: [
+    "3D print service velzeke-ruddershove",
+    "rapid prototyping velzeke-ruddershove",
+    "3D printing bedrijf velzeke-ruddershove",
+    "3D printen nabij velzeke-ruddershove",
+    "3D model laten printen velzeke-ruddershove",
+  ],
+},
+
 ];
 
 export function getLocationBySlug(slug: string): Location | undefined {

@@ -135,11 +135,18 @@ Met deze brede inzetbaarheid is **3D printen in Zottegem** een oplossing voor el
 
 Bezoekers die interesse hebben in **3D printen in Zottegem** lezen vaak ook over:
 
-- [3D printen in Erwetegem](/locaties/3d-printen-in-erwetegem)
-- [3D printen in Herzele](/locaties/3d-printen-in-herzele)
-- [3D printen in Borsbeke](/locaties/3d-printen-in-borsbeke)
-- [3D printen in Hillegem](/locaties/3d-printen-in-hillegem)
-- [3D printen in Ressegem](/locaties/3d-printen-in-ressegem)
+
+- [3D printen in Elene](/3d-printen-in-elene)
+- [3D printen in Erwetegem](/3d-printen-in-erwetegem)
+- [3D printen in Godveerdegem](/3d-printen-in-godveerdegem)
+- [3D printen in Grotenberge](/3d-printen-in-grotenberge)
+- [3D printen in Leeuwergem](/3d-printen-in-leeuwergem)
+- [3D printen in Oombergen](/l3d-printen-in-oombergen)
+- [3D printen in Sint-Goriks-Oudenhove](/3d-printen-in-sint-goriks-oudenhove)
+- [3D printen in Sint-Maria-Oudenhove](/3d-printen-in-sint-maria-oudenhove)
+- [3D printen in Strijpen](/3d-printen-in-strijpen)
+- [3D printen in Velzeke-Ruddershove](/3d-printen-in-velzeke-ruddershove)
+
 
 Deze interne links versterken de vindbaarheid van de website en tonen dat **3D printen in Zottegem** deel uitmaakt van een regionaal netwerk.
 
