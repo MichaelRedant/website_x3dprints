@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils"
-
 import { renderMarkdown } from "@/lib/markdown"
 
 interface MarkdownProps {
@@ -12,9 +11,11 @@ export default async function Markdown({ source, className }: MarkdownProps) {
 
   return (
     <article
-  className="prose prose-slate lg:prose-lg dark:prose-invert prose-x3d leading-relaxed"
-  dangerouslySetInnerHTML={{ __html: html }}
-/>
-
+      className={cn(
+        "prose prose-slate lg:prose-lg dark:prose-invert prose-x3d leading-relaxed",
+        className,
+      )}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
   )
 }
