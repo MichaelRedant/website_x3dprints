@@ -7,6 +7,7 @@ import {
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import CtaBlock from "@/components/CtaBlock"
+import Faq from "@/components/Faq"
 
 export const metadata: Metadata = {
   title: "3D Print Service België | Prototypes, Nabewerking & Montage",
@@ -127,40 +128,100 @@ export default function Page() {
 
   const faq = [
     {
-      q: "Welke 3D-bestanden zijn ideaal?",
-      a: "STL of STEP. Voeg context toe: functie, omgeving (hitte/UV), kleur en gewenste afwerking.",
+      q: "Wat is 3D printen precies?",
+      a: "3D printen is een digitale productietechniek waarbij een object laag per laag wordt opgebouwd op basis van een 3D-bestand, meestal in STL- of STEP-formaat.",
+    },
+    {
+      q: "Welke materialen gebruiken jullie voor 3D printen?",
+      a: "Wij printen standaard in PLA, PETG en TPU, elk met eigen eigenschappen. PLA is detailrijk, PETG is sterker en hittebestendig, TPU is flexibel.",
+    },
+    {
+      q: "Kan ik een bestand aanleveren voor 3D printen?",
+      a: "Ja, je kan je .STL- of .STEP-bestand uploaden of mailen. Wij zorgen voor de voorbereiding en productie.",
+    },
+    {
+      q: "Moet ik ervaring hebben met 3D design om iets te laten printen?",
+      a: "Nee, wij kunnen je ondersteunen bij het optimaliseren van je ontwerp en adviseren over materiaalkeuze.",
+    },
+    {
+      q: "Hoe snel kan ik mijn 3D print ontvangen?",
+      a: "Onze standaard levertijd is 2–5 werkdagen, afhankelijk van complexiteit en oplage. Spoed is mogelijk op aanvraag.",
+    },
+    {
+      q: "Wat kost 3D printen?",
+      a: "De prijs hangt af van materiaal, printtijd, nabewerking en aantal stuks. Wij werken met een transparante prijsberekening.",
+    },
+    {
+      q: "Kan ik meerdere stuks tegelijk laten printen?",
+      a: "Ja, we bieden zowel prototypes als kleine series aan. Voor grotere aantallen maken we een offerte op maat.",
+    },
+    {
+      q: "Kunnen jullie ook prototypes printen?",
+      a: "Ja, onze service richt zich sterk op rapid prototyping, zodat je ontwerp snel getest kan worden.",
+    },
+    {
+      q: "Is 3D printen geschikt voor functionele onderdelen?",
+      a: "Ja, met materialen zoals PETG en TPU produceren we functionele onderdelen die gebruikt kunnen worden in dagelijkse toepassingen.",
+    },
+    {
+      q: "Bieden jullie nabewerking aan voor 3D prints?",
+      a: "Ja, we kunnen prints schuren, lakken of assembleren afhankelijk van jouw wensen.",
+    },
+    {
+      q: "Voor welke sectoren is 3D printen interessant?",
+      a: "3D printen is nuttig voor ondernemers, kmo’s, onderwijs, architectuur, productontwikkeling, hobbyisten en verenigingen.",
+    },
+    {
+      q: "Hoe lever ik mijn 3D model het best aan?",
+      a: "Gebruik bij voorkeur .STL of .STEP, voeg notities toe over sterkte, afwerking en aantallen.",
+    },
+    {
+      q: "Wat als mijn bestand niet correct is?",
+      a: "Wij controleren je bestand en geven advies of kleine correcties doorvoeren zodat het printbaar is.",
+    },
+    {
+      q: "Kan ik een 3D print laten maken zonder ontwerp?",
+      a: "Ja, wij kunnen je helpen bij het opmaken van een eenvoudig 3D ontwerp op basis van jouw idee of schets.",
+    },
+    {
+      q: "Worden mijn bestanden vertrouwelijk behandeld?",
+      a: "Ja, alle aangeleverde bestanden worden strikt vertrouwelijk behandeld en enkel gebruikt voor jouw bestelling.",
+    },
+    {
+      q: "Hoe groot kunnen jullie 3D prints zijn?",
+      a: "Onze printcapaciteit hangt af van het materiaal en de printer, maar we kunnen zowel kleine details als grotere objecten produceren.",
+    },
+    {
+      q: "Welke afwerkingen zijn mogelijk?",
+      a: "Afhankelijk van de toepassing kunnen we prints leveren onafgewerkt, geschuurd, geverfd of gecoat.",
+    },
+    {
+      q: "Kunnen jullie ook onderdelen namaken of vervangen?",
+      a: "Ja, mits een goed 3D model of fysiek voorbeeld kunnen we reserveonderdelen of custom componenten printen.",
+    },
+    {
+      q: "Is 3D printen duurzaam?",
+      a: "Ja, 3D printen produceert minder afval dan klassieke productiemethoden. PLA is bovendien een biogebaseerd materiaal.",
+    },
+    {
+      q: "Hoe vraag ik een offerte aan voor 3D printen?",
+      a: "Upload je bestand via de contactpagina of mail ons. Je ontvangt binnen 24 uur een duidelijke prijsindicatie.",
     },
     {
       q: "Welke regio leveren jullie?",
       a: "Herzele/Gent als uitvalsbasis. Verzenden binnen België of afhalen in overleg.",
     },
     {
-      q: "Doen jullie nabehandeling en montage?",
-      a: "Ja. Schuren, primen en lakken. Inserts, lijmen en basis-assemblage mogelijk.",
-    },
-    {
       q: "Hoe snel krijg ik een offerte?",
       a: "Meestal binnen 24 uur na je aanvraag met model en korte beschrijving.",
-    },
-    {
-      q: "Wat kost 3D-printen?",
-      a: "De prijs hangt af van materiaal, printtijd en nabewerking. Je ontvangt een offerte op basis van je model.",
-    },
-    {
-      q: "Hoe sterk zijn 3D-geprinte onderdelen?",
-      a: "FDM-prints zijn stevig, maar afhankelijk van oriëntatie en materiaal. Ontwerp bepaalt de uiteindelijke sterkte.",
     },
     {
       q: "Kan ik één enkel stuk laten printen?",
       a: "Ja, we printen vanaf één stuk en kunnen ook kleine series leveren.",
     },
     {
-      q: "Welke materialen gebruiken jullie?",
-      a: "PLA, PETG en TPU zijn standaard op voorraad. Andere filamenten zijn mogelijk op aanvraag.",
-    },
-    {
-      q: "Wat is de levertijd?",
-      a: "Meestal 2–5 werkdagen. Spoed of grotere oplages in overleg.",
+      q: "Hoe sterk zijn 3D-geprinte onderdelen?",
+      a: "FDM-prints zijn stevig, maar afhankelijk van oriëntatie en materiaal. Ontwerp bepaalt de uiteindelijke sterkte.",
     },
     {
       q: "Kunnen jullie mijn model verbeteren?",
@@ -341,25 +402,7 @@ export default function Page() {
       <section className="px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold tracking-tight text-slate-900">Veelgestelde vragen</h2>
-              <ul className="mt-3 space-y-3 text-slate-600">
-                {faq.map((f) => (
-                  <li key={f.q}>
-                    <h3 className="font-medium text-slate-900">{f.q}</h3>
-                    <p className="mt-1 text-sm">{f.a}</p>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-5">
-                <Link
-                  href="/contact"
-                  className="rounded-xl border border-white/20 bg-black px-5 py-3 text-sm font-semibold text-white hover:brightness-110"
-                >
-                  Offerte aanvragen
-                </Link>
-              </div>
-            </GlassCard>
+            <Faq city="België" items={faq} />
           </Reveal>
         </div>
       </section>
