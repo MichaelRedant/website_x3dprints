@@ -72,6 +72,50 @@ export const locations: Location[] = [
     "3D model laten printen Oudenaarde",
   ],
 },
+{
+  slug: "3d-printen-in-gentbrugge",
+  city: "Gentbrugge",
+  relatedPhrases: [
+    "3D print service gentbrugge",
+    "rapid prototyping gentbrugge",
+    "3D printing bedrijf gentbrugge",
+    "3D printen nabij gentbrugge",
+    "3D model laten printen gentbrugge",
+  ],
+},
+{
+  slug: "3d-printen-in-erpe-mere",
+  city: "Erpe-mere",
+  relatedPhrases: [
+    "3D print service erpe-mere",
+    "rapid prototyping erpe-mere",
+    "3D printing bedrijf erpe-mere",
+    "3D printen nabij erpe-mere",
+    "3D model laten printen erpe-mere",
+  ],
+},
+{
+  slug: "3d-printen-in-affligem",
+  city: "Affligem",
+  relatedPhrases: [
+    "3D print service affligem",
+    "rapid prototyping affligem",
+    "3D printing bedrijf affligem",
+    "3D printen nabij affligem",
+    "3D model laten printen affligem",
+  ],
+},
+{
+  slug: "3d-printen-in-dendermonde",
+  city: "Dendermonde",
+  relatedPhrases: [
+    "3D print service dendermonde",
+    "rapid prototyping dendermonde",
+    "3D printing bedrijf dendermonde",
+    "3D printen nabij dendermonde",
+    "3D model laten printen dendermonde",
+  ],
+},
 ];
 
 export function getLocationBySlug(slug: string): Location | undefined {

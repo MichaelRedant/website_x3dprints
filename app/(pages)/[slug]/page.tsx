@@ -5,6 +5,11 @@ import { notFound } from "next/navigation";
 import { readFile } from "fs/promises";
 import Link from "next/link";
 import { join } from "path";
+import Reveal from "@/components/Reveal"
+import ShimmerButton from "@/components/ShimmerButton"
+import Catchphrase from "@/components/Catchphrase"
+import GlassOrb from "@/components/GlassOrb"
+import GlassCard from "@/components/GlassCard"
 import { renderMarkdown } from "@/lib/markdown"
 import {
   getAllLocationSlugs,
@@ -13,6 +18,7 @@ import {
 } from "@/lib/locations";
 import { keywordSvgDataUri } from "@/lib/svg";
 import CtaBlock from "@/components/CtaBlock";
+import type { ReactNode } from "react"
 
 interface PageProps {
   params: { slug: string };
@@ -128,6 +134,21 @@ try {
     ],
   };
 
+  // Kleine helper om snel consistente outline-icons te renderen
+const icon = (node: ReactNode) => (
+  <svg
+    width="28"
+    height="28"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+    className="mx-auto mb-2 text-slate-700"
+  >
+    <g fill="none" stroke="currentColor" strokeWidth="1.6">
+      {node}
+    </g>
+  </svg>
+)
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -191,38 +212,123 @@ try {
                 Nabehandeling: schuren, primen, lakken
               </li>
               <li className="flex items-start justify-center gap-2 sm:justify-start">
-                <span className="mt-1 inline-block h-2 w-2 rounded-full bg-teal-400" />
-                Snelle offerte:{" "}
-                <a className="underline decoration-cyan-500 underline-offset-4 hover:text-slate-900" href="/contact">
-                  vraag aan
-                </a>
-              </li>
+  <span className="mt-1 inline-block h-2 w-2 rounded-full bg-teal-400" />
+  Snelle offerte:{" "}
+  <Link
+    href="/contact"
+    className="underline decoration-cyan-500 underline-offset-4 hover:text-slate-900"
+  >
+    vraag aan
+  </Link>
+</li>
+
             </ul>
 
             {/* Shimmer CTA */}
             <div className="mt-6">
-              <a
-                href="/contact"
-                className="
-                  group relative inline-flex items-center gap-2 rounded-2xl px-5 py-3
-                  font-semibold text-slate-900
-                  ring-1 ring-slate-900/10 bg-white/60 backdrop-blur
-                  transition hover:bg-white/80 hover:shadow-lg
-                  before:absolute before:inset-0 before:-translate-x-full
-                  before:bg-[linear-gradient(110deg,transparent,rgba(255,255,255,.6),transparent)]
-                  before:transition-transform before:duration-700 group-hover:before:translate-x-full
-                "
-              >
-                Offerte aanvragen
-                <svg width="18" height="18" viewBox="0 0 24 24" className="opacity-70">
-                  <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </a>
-            </div>
+  <Link
+    href="/contact"
+    className="
+      group relative inline-flex items-center gap-2 rounded-2xl px-5 py-3
+      font-semibold text-slate-900
+      ring-1 ring-slate-900/10 bg-white/60 backdrop-blur
+      transition hover:bg-white/80 hover:shadow-lg
+      before:absolute before:inset-0 before:-translate-x-full
+      before:bg-[linear-gradient(110deg,transparent,rgba(255,255,255,.6),transparent)]
+      before:transition-transform before:duration-700 group-hover:before:translate-x-full
+    "
+  >
+    Offerte aanvragen
+    <svg width="18" height="18" viewBox="0 0 24 24" className="opacity-70">
+      <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  </Link>
+</div>
+
 
             {/* glans bovenrand */}
             <div className="pointer-events-none absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
           </header>
+
+          {/* HERO */}
+                <section className="relative px-6 pb-24 pt-20 sm:px-8 lg:px-12 lg:pb-32 lg:pt-28">
+                  <div className="absolute right-0 top-0 -z-10 hidden sm:block">
+                    <GlassOrb className="h-72 w-72 opacity-40" />
+                  </div>
+                  <div className="mx-auto max-w-6xl">
+                    <Reveal className="max-w-3xl">
+                      <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs text-slate-700 backdrop-blur">
+                        <span className="h-2 w-2 rounded-full bg-emerald-400" />
+                        Snel, precies en betaalbaar
+                      </span>
+                      <Catchphrase className="mt-4 block text-base font-medium text-indigo-600 sm:text-lg">
+                        Betaalbaar 3D printen
+                      </Catchphrase>
+                      <h1 className="mt-2 bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-balance text-4xl font-extrabold leading-tight tracking-tight text-transparent sm:text-5xl">
+                        Where design meets dimension.
+                      </h1>
+                      <p className="mt-2 text-balance text-lg font-medium text-slate-700">
+                        3D Prints die kloppen
+                      </p>
+                      <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 sm:text-lg">
+                        X3DPrints is een compacte 3D-printstudio uit Herzele, onderdeel van Xinudesign. Ideaal voor prototypes en
+                        kleine series met strakke afwerking. PLA is onze standaard, maar we schakelen waar nodig over naar PETG,
+                        ABS/ASA, Nylon of PA-CF. Levertijd meestal 2–5 werkdagen, transparante offerte vooraf.
+                      </p>
+                      <div className="mt-10 flex flex-wrap items-center gap-3">
+                        <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
+                        <Link
+                          href="/portfolio"
+                          className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"
+                        >
+                          Bekijk portfolio
+                        </Link>
+                      </div>
+                    </Reveal>
+          
+                    <Reveal delay={0.15} className="mt-16 grid gap-6 sm:grid-cols-3">
+                      {[
+                        {
+                          k: "Tolerantie",
+                          v: "±0,2 mm",
+                          icon: icon(
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 12h16M4 16h16" />
+                          ),
+                        },
+                        {
+                          k: "Doorlooptijd",
+                          v: "2–5 werkdagen",
+                          icon: icon(
+                            <>
+                              <circle cx={12} cy={12} r={9} />
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l2 2" />
+                            </>
+                          ),
+                        },
+                        {
+                          k: "Bouwvolume",
+                          v: "Tot 25 × 25 × 25 cm",
+                          icon: icon(
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M21 16V8l-9-5-9 5v8l9 5 9-5ZM12 3v18M3 8l9 4 9-4"
+                            />
+                          ),
+                        },
+                      ].map((item) => (
+                        <GlassCard
+                          key={item.k}
+                          className="p-5 text-center transition-transform hover:-translate-y-1"
+                        >
+                          {item.icon}
+                          <div className="text-sm text-slate-500">{item.k}</div>
+                          <div className="mt-1 text-xl font-semibold text-slate-900">{item.v}</div>
+                        </GlassCard>
+                      ))}
+                    </Reveal>
+                  </div>
+                </section>
 
           {/* CONTENT (MD) – glassy + centraal + animaties + tabel-scroll */}
 <section className="relative mx-auto mt-12 max-w-3xl">
