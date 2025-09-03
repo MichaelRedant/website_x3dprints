@@ -1,9 +1,10 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import Image from "next/image"
 import AutoCarousel from "@/components/AutoCarousel"
 import GlassOrb from "@/components/GlassOrb"
 import ShimmerButton from "@/components/ShimmerButton"
+import { readdirSync } from "node:fs"
+import path from "node:path"
 
 export const metadata: Metadata = {
   title: "Portfolio 3D prints | X3DPrints",
@@ -20,20 +21,20 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
-const photos = [
-  { src: "/portfolio/fleshouder.jpg", alt: "3D geprinte fleshouder", info: "PLA Matte, 0.2 mm, 3 u printtijd" },
-  { src: "/portfolio/mesh-houder.jpg", alt: "Wireless mesh houder", info: "PETG zwart, 0.2 mm, hittebestendig" },
-  { src: "/portfolio/naamletter.jpg", alt: "Naamletter als babycadeau", info: "PLA zijdeglans, gepolijst" },
-  { src: "/portfolio/octopus.jpg", alt: "Articulated octopus", info: "PLA, articulaties direct uit de printer" },
-  { src: "/portfolio/kerstboom-transparant.jpg", alt: "Transparante kerstboom", info: "PETG transparant, 0.28 mm" },
-  { src: "/portfolio/tpu-case.jpg", alt: "TPU Samsung S24 Ultra case", info: "TPU 95A, flexibele bescherming" },
-]
-
-// Placeholder fallback voor ontbrekende bestanden (optioneel)
-// Je kunt dit blok verwijderen zodra je echte foto's plaatst.
-for (const p of photos) {
-  if (!p.src) p.src = "/Logo.webp"
-}
+const portfolioDir = path.join(process.cwd(), "public/images/portfolio")
+const photos = readdirSync(portfolioDir)
+  .filter((f) => /\.(?:png|jpe?g|webp)$/i.test(f))
+  .map((file) => {
+    const alt = file
+      .replace(/\.[^.]+$/, "")
+      .replace(/[-_]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+    return {
+      src: `/images/portfolio/${encodeURIComponent(file)}`,
+      alt,
+    }
+  })
 
 const videos = [
   { id: "tVDwEw3Od-8", title: "3D geprinte fleshouder", description: "Praktische fleshouder, laag per laag opgebouwd in PLA." },
@@ -64,7 +65,7 @@ const imageJsonLd = {
     "@type": "ImageObject",
     contentUrl: `https://www.x3dprints.be${p.src}`,
     name: p.alt,
-    description: p.info || p.alt,
+    description: p.alt,
   })),
 }
 
