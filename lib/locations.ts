@@ -282,7 +282,6 @@ export const locations: Location[] = [
   ],
 },
 {
-
   slug: "3d-printen-in-erwetegem",
   city: "Erwetegem",
   relatedPhrases: [
@@ -611,7 +610,6 @@ export const locations: Location[] = [
       "3D model laten printen Voorde",
     ],
   },
-
 ];
 
 export function getLocationBySlug(slug: string): Location | undefined {
