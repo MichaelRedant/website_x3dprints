@@ -293,7 +293,6 @@ export const locations: Location[] = [
   ],
 },
 {
-
   slug: "3d-printen-in-erwetegem",
   city: "Erwetegem",
   relatedPhrases: [
@@ -402,6 +401,7 @@ export const locations: Location[] = [
     "3D printen nabij velzeke-ruddershove",
     "3D model laten printen velzeke-ruddershove",
   ],
+
 },{
   slug: "3d-printen-in-baardegem",
   city: "Baardegem",
