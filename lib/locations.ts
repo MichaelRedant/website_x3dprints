@@ -281,6 +281,28 @@ export const locations: Location[] = [
     "3D model laten printen gent",
   ],
 },
+{
+  slug: "3d-printen-in-zottegem",
+  city: "Zottegem",
+  relatedPhrases: [
+    "3D print service zottegem",
+    "rapid prototyping zottegem",
+    "3D printing bedrijf zottegem",
+    "3D printen nabij zottegem",
+    "3D model laten printen zottegem",
+  ],
+},
+{
+  slug: "3d-printen-in-erwetegem",
+  city: "Erwetegem",
+  relatedPhrases: [
+    "3D print service erwetegem",
+    "rapid prototyping erwetegem",
+    "3D printing bedrijf erwetegem",
+    "3D printen nabij erwetegem",
+    "3D model laten printen erwetegem",
+  ],
+},
 ];
 
 export function getLocationBySlug(slug: string): Location | undefined {
