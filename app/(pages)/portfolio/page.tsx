@@ -123,7 +123,7 @@ export default function Page() {
 
           {/* Carousel */}
           <h2 className="mt-12 text-2xl font-bold tracking-tight text-slate-900">Afbeeldingen</h2>
-          <p className="mt-2 text-slate-600">Hover om te pauzeren. Klik voor details.</p>
+          <p className="mt-2 text-slate-600">Gebruik de pijlen om te navigeren. Klik voor details.</p>
           <div className="mt-6">
             <AutoCarousel items={photos} speed={20}  />
           </div>
