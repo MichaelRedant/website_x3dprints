@@ -98,8 +98,8 @@ export default function ContactForm() {
       })
       files.forEach(f => form.append("files", f, f.name))
 
-      const endpoint = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT ?? "/api/contact"
-      const res = await fetch(endpoint, { method: "POST", body: form })
+
+      const res = await fetch("/api/contact", { method: "POST", body: form })
       const json = await res.json().catch(() => null)
       setStatus(res.ok && json?.ok ? "ok" : "error")
       if (res.ok && json?.ok) {
