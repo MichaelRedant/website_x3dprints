@@ -98,7 +98,11 @@ export default function ContactForm() {
       })
       files.forEach(f => form.append("files", f, f.name))
 
-      const endpoint = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT ?? "/contact.php"
+      const endpoint =
+        process.env.NEXT_PUBLIC_CONTACT_ENDPOINT ??
+        (process.env.NODE_ENV === "development"
+          ? "http://localhost:8000/contact.php"
+          : "/contact.php")
       const res = await fetch(endpoint, {
         method: "POST",
         body: form,

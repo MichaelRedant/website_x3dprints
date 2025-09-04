@@ -2,10 +2,6 @@
 // public/contact.php
 // Beperkte mail relay voor static hosting (Vimexx). Gebruik PHPMailer voor betrouwbare verzending via SMTP.
 
-require __DIR__ . '/../php/vendor/autoload.php';
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
 header("Content-Type: application/json; charset=utf-8");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, OPTIONS");
@@ -21,6 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
   echo json_encode(["ok" => false, "error" => "Method not allowed"]);
   exit;
 }
+
+require __DIR__ . '/../php/vendor/autoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 // Honeypot
 if (!empty($_POST["hp"])) {
