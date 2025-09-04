@@ -271,17 +271,6 @@ export const locations: Location[] = [
   ],
 },
 {
-  slug: "3d-printen-in-zottegem",
-  city: "Zottegem",
-  relatedPhrases: [
-    "3D print service zottegem",
-    "rapid prototyping zottegem",
-    "3D printing bedrijf zottegem",
-    "3D printen nabij zottegem",
-    "3D model laten printen zottegem",
-  ],
-},
-{
   slug: "3d-printen-in-erwetegem",
   city: "Erwetegem",
   relatedPhrases: [
