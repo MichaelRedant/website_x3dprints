@@ -22,6 +22,13 @@ require __DIR__ . '/../php/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+$smtpHost = getenv('SMTP_HOST');
+$smtpUser = getenv('SMTP_USER');
+$smtpPass = getenv('SMTP_PASS');
+$smtpPort = (int)(getenv('SMTP_PORT') ?: 587);
+$smtpSecure = getenv('SMTP_SECURE') ?: 'tls';
+$debug = getenv('APP_DEBUG');
+
 // Honeypot
 if (!empty($_POST["hp"])) {
   echo json_encode(["ok" => true]); exit;
@@ -86,6 +93,23 @@ if (!empty($_FILES["files"])) {
 
 try {
   $mail = new PHPMailer(true);
+
+  if ($smtpHost) {
+    $mail->isSMTP();
+    $mail->Host = $smtpHost;
+    $mail->Port = $smtpPort;
+    if ($smtpSecure === 'ssl') {
+      $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    } else {
+      $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    }
+    if ($smtpUser) {
+      $mail->SMTPAuth = true;
+      $mail->Username = $smtpUser;
+      $mail->Password = $smtpPass;
+    }
+  }
+
   $mail->setFrom('no-reply@x3dprints.be', 'X3DPrints');
   $mail->addAddress('info@x3dprints.be');
   $mail->addReplyTo($email, $name);
@@ -119,5 +143,9 @@ try {
   echo json_encode(['ok' => true]);
 } catch (Exception $e) {
   http_response_code(500);
-  echo json_encode(['ok' => false, 'error' => 'Mail verzenden mislukt (server).']);
+  $err = 'Mail verzenden mislukt.';
+  if ($debug) {
+    $err .= ' ' . $mail->ErrorInfo;
+  }
+  echo json_encode(['ok' => false, 'error' => $err]);
 }

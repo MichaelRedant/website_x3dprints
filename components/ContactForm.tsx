@@ -101,9 +101,7 @@ export default function ContactForm() {
       const endpoint =
         process.env.NEXT_PUBLIC_CONTACT_ENDPOINT ??
         (process.env.NODE_ENV === "development"
-
           ? "http://127.0.0.1:8000/contact.php"
-
           : "/contact.php")
       const res = await fetch(endpoint, {
         method: "POST",

@@ -61,10 +61,22 @@ Voor lokale ontwikkeling:
 php -S 127.0.0.1:8000 -t public
 ```
 
-
 De component gebruikt standaard `http://127.0.0.1:8000/contact.php` in development (IPv4 om `localhost`/IPv6 issues te vermijden).
-
 Wijzig met `NEXT_PUBLIC_CONTACT_ENDPOINT` indien gewenst.
+
+#### SMTP configureren
+
+Voor productie gebruikt `public/contact.php` **PHPMailer**. Stel de volgende environment-variabelen of serverinstellingen in zodat de host via SMTP kan mailen:
+
+```
+SMTP_HOST=mail.voorbeeld.nl
+SMTP_PORT=587
+SMTP_USER=info@voorbeeld.nl
+SMTP_PASS=supergeheim
+SMTP_SECURE=tls # of 'ssl'
+```
+
+Zonder deze variabelen valt het script terug op `mail()`, wat op sommige hosts geblokkeerd kan zijn.
 
 # 4) Productiebouw (lokaal testen)
 npm run build && npm run start
