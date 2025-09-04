@@ -98,17 +98,11 @@ export default function ContactForm() {
       })
       files.forEach(f => form.append("files", f, f.name))
 
-      const endpoint =
-        process.env.NEXT_PUBLIC_CONTACT_ENDPOINT ??
-        (process.env.NODE_ENV === "development"
-          ? "http://127.0.0.1:8000/contact.php"
-          : "/contact.php")
-      const res = await fetch(endpoint, {
-        method: "POST",
-        body: form,
-      })
-      setStatus(res.ok ? "ok" : "error")
-      if (res.ok) {
+      const endpoint = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT ?? "/api/contact"
+      const res = await fetch(endpoint, { method: "POST", body: form })
+      const json = await res.json().catch(() => null)
+      setStatus(res.ok && json?.ok ? "ok" : "error")
+      if (res.ok && json?.ok) {
         setData({
           name: "",
           email: "",
