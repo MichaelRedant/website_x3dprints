@@ -78,6 +78,7 @@ SMTP_SECURE=tls # of 'ssl'
 
 Zonder deze variabelen valt het script terug op `mail()`, wat op sommige hosts geblokkeerd kan zijn.
 
+
 Optioneel kun je `APP_DEBUG=1` zetten om foutmeldingen te loggen en terug te geven. Het script werkt op PHP 7+ dankzij een kleine polyfill voor `str_ends_with`.
 
 # 4) Productiebouw (lokaal testen)
