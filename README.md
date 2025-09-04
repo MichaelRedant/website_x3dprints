@@ -53,6 +53,33 @@ npm ci
 # 3) Development
 npm run dev
 
+### Contactformulier lokaal testen
+Het contactformulier post naar een PHP-endpoint.
+Voor lokale ontwikkeling:
+
+```bash
+php -S 127.0.0.1:8000 -t public
+```
+
+De component gebruikt standaard `http://127.0.0.1:8000/contact.php` in development (IPv4 om `localhost`/IPv6 issues te vermijden).
+Wijzig met `NEXT_PUBLIC_CONTACT_ENDPOINT` indien gewenst.
+
+#### SMTP configureren
+
+Voor productie gebruikt `public/contact.php` **PHPMailer**. Stel de volgende environment-variabelen of serverinstellingen in zodat de host via SMTP kan mailen:
+
+```
+SMTP_HOST=mail.voorbeeld.nl
+SMTP_PORT=587
+SMTP_USER=info@voorbeeld.nl
+SMTP_PASS=supergeheim
+SMTP_SECURE=tls # of 'ssl'
+```
+
+Zonder deze variabelen valt het script terug op `mail()`, wat op sommige hosts geblokkeerd kan zijn.
+
+Optioneel kun je `APP_DEBUG=1` zetten om foutmeldingen te loggen en terug te geven. Het script werkt op PHP 7+ dankzij een kleine polyfill voor `str_ends_with`.
+
 # 4) Productiebouw (lokaal testen)
 npm run build && npm run start
 
