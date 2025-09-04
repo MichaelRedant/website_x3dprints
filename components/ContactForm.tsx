@@ -98,6 +98,7 @@ export default function ContactForm() {
       })
       files.forEach(f => form.append("files", f, f.name))
 
+
       const res = await fetch("/api/contact", { method: "POST", body: form })
       const json = await res.json().catch(() => null)
       setStatus(res.ok && json?.ok ? "ok" : "error")
