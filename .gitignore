@@ -41,4 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 # php
-/php/vendor
+# Commit vendor because hosting lacks Composer
+# (contains PHPMailer for contact endpoint)
