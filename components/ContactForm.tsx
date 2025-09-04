@@ -98,7 +98,10 @@ export default function ContactForm() {
       })
       files.forEach(f => form.append("files", f, f.name))
 
-      const res = await fetch("/api/contact", { method: "POST", body: form })
+      const res = await fetch(`${window.location.origin}/api/contact/`, {
+        method: "POST",
+        body: form,
+      })
       setStatus(res.ok ? "ok" : "error")
       if (res.ok) {
         setData({
