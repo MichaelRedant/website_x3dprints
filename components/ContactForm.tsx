@@ -98,8 +98,7 @@ export default function ContactForm() {
       })
       files.forEach(f => form.append("files", f, f.name))
 
-      const endpoint = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT ?? "/contact.php"
-      const res = await fetch(endpoint, {
+      const res = await fetch(`${window.location.origin}/api/contact`, {
         method: "POST",
         body: form,
       })
