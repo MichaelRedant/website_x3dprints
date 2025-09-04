@@ -53,6 +53,17 @@ npm ci
 # 3) Development
 npm run dev
 
+### Contactformulier lokaal testen
+Het contactformulier post naar een PHP-endpoint.
+Voor lokale ontwikkeling:
+
+```bash
+php -S 127.0.0.1:8000 -t public
+```
+
+De component gebruikt standaard `http://127.0.0.1:8000/contact.php` in development (IPv4 om `localhost`/IPv6 issues te vermijden).
+Wijzig met `NEXT_PUBLIC_CONTACT_ENDPOINT` indien gewenst.
+
 # 4) Productiebouw (lokaal testen)
 npm run build && npm run start
 
