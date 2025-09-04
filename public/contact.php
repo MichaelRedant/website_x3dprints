@@ -18,9 +18,23 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
   exit;
 }
 
-require __DIR__ . '/../php/vendor/autoload.php';
+$autoload = __DIR__ . '/../php/vendor/autoload.php';
+if (!file_exists($autoload)) {
+  http_response_code(500);
+  echo json_encode(["ok" => false, "error" => "Server misconfigured (autoload not found)"]);
+  exit;
+}
+require $autoload;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
+if (!function_exists('str_ends_with')) {
+  function str_ends_with($haystack, $needle) {
+    $len = strlen($needle);
+    if ($len === 0) { return true; }
+    return substr($haystack, -$len) === $needle;
+  }
+}
 
 $smtpHost = getenv('SMTP_HOST');
 $smtpUser = getenv('SMTP_USER');
@@ -64,7 +78,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   exit;
 }
 
-if (!empty($_FILES["files"])) {
+if (!empty($_FILES["files"]) && isset($_FILES["files"]["error"]) && $_FILES["files"]["error"][0] !== UPLOAD_ERR_NO_FILE) {
   if (count($_FILES["files"]["name"]) > $max_files) {
     http_response_code(400);
     echo json_encode(["ok"=>false,"error"=>"Max $max_files bestanden toegestaan."]);
@@ -72,6 +86,7 @@ if (!empty($_FILES["files"])) {
   }
   $total_bytes = 0;
   for ($i=0; $i<count($_FILES["files"]["name"]); $i++) {
+    if ($_FILES["files"]["error"][$i] !== UPLOAD_ERR_OK) { continue; }
     $n = sanitize_filename($_FILES["files"]["name"][$i]);
     $ok = false;
     foreach ($allowed_ext as $ext) {
@@ -82,7 +97,10 @@ if (!empty($_FILES["files"])) {
       echo json_encode(["ok"=>false,"error"=>"Ongeldig bestandstype voor $n."]);
       exit;
     }
-    $total_bytes += filesize($_FILES["files"]["tmp_name"][$i]);
+    $tmp = $_FILES["files"]["tmp_name"][$i];
+    if (is_uploaded_file($tmp)) {
+      $total_bytes += filesize($tmp);
+    }
   }
   if ($total_bytes > $max_total_mb * 1024 * 1024) {
     http_response_code(400);
@@ -131,11 +149,14 @@ try {
   $body .= '<pre style="white-space:pre-wrap;font-family:ui-monospace,Menlo,monospace">' . htmlspecialchars($message) . '</pre>';
   $mail->Body = $body;
 
-  if (!empty($_FILES['files'])) {
+  if (!empty($_FILES['files']) && isset($_FILES['files']['error']) && $_FILES['files']['error'][0] !== UPLOAD_ERR_NO_FILE) {
     for ($i=0; $i<count($_FILES['files']['name']); $i++) {
+      if ($_FILES['files']['error'][$i] !== UPLOAD_ERR_OK) { continue; }
       $tmp = $_FILES['files']['tmp_name'][$i];
       $filename = sanitize_filename($_FILES['files']['name'][$i]);
-      $mail->addAttachment($tmp, $filename);
+      if (is_uploaded_file($tmp)) {
+        $mail->addAttachment($tmp, $filename);
+      }
     }
   }
 
@@ -145,7 +166,8 @@ try {
   http_response_code(500);
   $err = 'Mail verzenden mislukt.';
   if ($debug) {
-    $err .= ' ' . $mail->ErrorInfo;
+    $err .= ' ' . $mail->ErrorInfo . ' ' . $e->getMessage();
   }
+  error_log($e->getMessage());
   echo json_encode(['ok' => false, 'error' => $err]);
 }
