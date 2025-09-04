@@ -54,32 +54,23 @@ npm ci
 npm run dev
 
 ### Contactformulier lokaal testen
-Het contactformulier post naar een PHP-endpoint.
-Voor lokale ontwikkeling:
-
-```bash
-php -S 127.0.0.1:8000 -t public
-```
-
-De component gebruikt standaard `http://127.0.0.1:8000/contact.php` in development (IPv4 om `localhost`/IPv6 issues te vermijden).
-Wijzig met `NEXT_PUBLIC_CONTACT_ENDPOINT` indien gewenst.
+Het contactformulier post naar de Next.js API-route `/api/contact`.
+Er is geen aparte PHP-server meer nodig.
 
 #### SMTP configureren
 
-Voor productie gebruikt `public/contact.php` **PHPMailer**. Stel de volgende environment-variabelen of serverinstellingen in zodat de host via SMTP kan mailen:
+De API-route gebruikt Nodemailer. Stel minimaal deze variabelen in om via SMTP te mailen:
 
 ```
 SMTP_HOST=mail.voorbeeld.nl
 SMTP_PORT=587
 SMTP_USER=info@voorbeeld.nl
 SMTP_PASS=supergeheim
-SMTP_SECURE=tls # of 'ssl'
+MAIL_TO=info@x3dprints.be
+MAIL_FROM="X3DPrints <no-reply@x3dprints.be>"
 ```
 
-Zonder deze variabelen valt het script terug op `mail()`, wat op sommige hosts geblokkeerd kan zijn.
-
-
-Optioneel kun je `APP_DEBUG=1` zetten om foutmeldingen te loggen en terug te geven. Het script werkt op PHP 7+ dankzij een kleine polyfill voor `str_ends_with`.
+Optioneel kun je `DKIM_DOMAIN`, `DKIM_SELECTOR` en `DKIM_PRIVATE_KEY` zetten voor DKIM-signing.
 
 # 4) Productiebouw (lokaal testen)
 npm run build && npm run start
