@@ -33,7 +33,6 @@ interface PageProps {
   params: { slug: string }
 }
 
-export const dynamicParams = false
 export const revalidate = 86_400 // 24u cache
 
 export function generateStaticParams() {
