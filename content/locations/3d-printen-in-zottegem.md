@@ -98,6 +98,7 @@ Elene gebruikt **3D printen in Zottegem** voor praktische herstellingen en creat
 
 ## Hoe bestel je 3D printen in Zottegem?
 
+
 1. Stuur je ontwerp (STL of STEP) via de [contactpagina](/contact) en vermeld dat het om **3D printen in Zottegem** gaat.
 2. Geef aan welk materiaal je verkiest voor **3D printen in Zottegem**.
 3. Je ontvangt binnen 24 uur een offerte voor **3D printen in Zottegem**.

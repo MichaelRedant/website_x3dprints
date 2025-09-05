@@ -271,6 +271,17 @@ export const locations: Location[] = [
   ],
 },
 {
+  slug: "3d-printen-in-zottegem",
+  city: "Zottegem",
+  relatedPhrases: [
+    "3D print service zottegem",
+    "rapid prototyping zottegem",
+    "3D printing bedrijf zottegem",
+    "3D printen nabij zottegem",
+    "3D model laten printen zottegem",
+  ],
+},
+{
   slug: "3d-printen-in-erwetegem",
   city: "Erwetegem",
   relatedPhrases: [
@@ -597,6 +608,84 @@ export const locations: Location[] = [
       "3D printing bedrijf Voorde",
       "3D printen nabij Voorde",
       "3D model laten printen Voorde",
+    ],
+  },
+
+  {
+    slug: "3d-printen-in-appels",
+    city: "Appels",
+    relatedPhrases: [
+      "3D print service appels",
+      "rapid prototyping appels",
+      "3D printing bedrijf appels",
+      "3D printen nabij appels",
+      "3D model laten printen appels",
+    ],
+  },
+  {
+    slug: "3d-printen-in-baasrode",
+    city: "Baasrode",
+    relatedPhrases: [
+      "3D print service baasrode",
+      "rapid prototyping baasrode",
+      "3D printing bedrijf baasrode",
+      "3D printen nabij baasrode",
+      "3D model laten printen baasrode",
+    ],
+  },
+  {
+    slug: "3d-printen-in-grembergen",
+    city: "Grembergen",
+    relatedPhrases: [
+      "3D print service grembergen",
+      "rapid prototyping grembergen",
+      "3D printing bedrijf grembergen",
+      "3D printen nabij grembergen",
+      "3D model laten printen grembergen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-mespelare",
+    city: "Mespelare",
+    relatedPhrases: [
+      "3D print service mespelare",
+      "rapid prototyping mespelare",
+      "3D printing bedrijf mespelare",
+      "3D printen nabij mespelare",
+      "3D model laten printen mespelare",
+    ],
+  },
+  {
+    slug: "3d-printen-in-oudegem",
+    city: "Oudegem",
+    relatedPhrases: [
+      "3D print service oudegem",
+      "rapid prototyping oudegem",
+      "3D printing bedrijf oudegem",
+      "3D printen nabij oudegem",
+      "3D model laten printen oudegem",
+    ],
+  },
+  {
+    slug: "3d-printen-in-schoonaarde",
+    city: "Schoonaarde",
+    relatedPhrases: [
+      "3D print service schoonaarde",
+      "rapid prototyping schoonaarde",
+      "3D printing bedrijf schoonaarde",
+      "3D printen nabij schoonaarde",
+      "3D model laten printen schoonaarde",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-gillis-dendermonde",
+    city: "Sint-Gillis-Dendermonde",
+    relatedPhrases: [
+      "3D print service sint-gillis-dendermonde",
+      "rapid prototyping sint-gillis-dendermonde",
+      "3D printing bedrijf sint-gillis-dendermonde",
+      "3D printen nabij sint-gillis-dendermonde",
+      "3D model laten printen sint-gillis-dendermonde",
     ],
   },
 ];

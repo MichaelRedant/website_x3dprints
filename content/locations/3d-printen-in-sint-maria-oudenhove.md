@@ -30,33 +30,25 @@ Op verzoek zijn ABS, ASA, Nylon en PA-CF beschikbaar.
 ## Voor wie is 3D printen in Sint-Maria-Oudenhove interessant?
 
 ### Ondernemers en zelfstandigen
-
 Lokale bedrijven testen ontwerpen via **3D printen in Sint-Maria-Oudenhove**.
 
 ### Makers en hobbyisten
-
 Creatieve projecten krijgen vorm met **3D printen in Sint-Maria-Oudenhove**.
 
 ### Scholen en verenigingen
-
 Lesmateriaal en decorstukken ontstaan dankzij **3D printen in Sint-Maria-Oudenhove**.
 
 ---
 
 ## Rapid prototyping in Sint-Maria-Oudenhove
-
 Met **3D printen in Sint-Maria-Oudenhove** doorloop je sneller de ontwerpfase:
-
 - Vorm en pasvorm snel controleren.
-  
 - Iteraties zonder hoge kosten.
-  
 - Minder risico bij productontwikkeling.
 
 ---
 
 ## Sint-Maria-Oudenhove en de link met Zottegem
-
 Het dorp ligt rond het Sint-Hubertusplein en het recente Wantenplein, een verwijzing naar de handschoennijverheid. Via **3D printen in Sint-Maria-Oudenhove** geniet je van lokale service, terwijl [Zottegem](https://www.zottegem.be) administratieve diensten aanbiedt.
 
 ---
