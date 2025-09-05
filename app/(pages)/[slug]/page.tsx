@@ -29,20 +29,20 @@ import { keywordSvgDataUri } from "@/lib/svg"
 import CtaBlock from "@/components/CtaBlock"
 import Faq from "@/components/Faq"
 
-interface PageProps {
-  params: { slug: string }
-}
 
-export const dynamicParams = false
 export const revalidate = 86_400 // 24u cache
+export const dynamicParams = false
 
-export function generateStaticParams() {
+export function generateStaticParams(): Array<{ slug: string }> {
   return getAllLocationSlugs().map((slug) => ({ slug }))
 }
 
 /** SEO: verbeterd met robots en title-template */
-export function generateMetadata({ params }: PageProps): Metadata {
-  const loc = getLocationBySlug(params.slug)
+export async function generateMetadata(
+  { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+  const { slug } = await params
+  const loc = getLocationBySlug(slug)
   if (!loc) return {}
 
   const keyphrase = `3D printen in ${loc.city}`
@@ -84,8 +84,11 @@ export function generateMetadata({ params }: PageProps): Metadata {
   }
 }
 
-export default async function Page({ params }: PageProps) {
-  const slug = params.slug.toLowerCase()
+export default async function Page(
+  { params }: { params: Promise<{ slug: string }> }
+) {
+  const { slug: rawSlug } = await params
+  const slug = rawSlug.toLowerCase()
   const loc = getLocationBySlug(slug)
   if (!loc) notFound()
 

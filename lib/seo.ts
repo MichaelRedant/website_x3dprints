@@ -7,12 +7,12 @@ export const SITE = {
     "Professionele 3D print service in België. Snel, nauwkeurig en betaalbaar. Upload je model en ontvang een offerte.",
   ogImage: "/og-x3dprints.jpg",
   locale: "nl_BE",
-  phone: "+32 470 00 00 00",
+  phone: "+32 496 90 85 03",
   address: {
-    street: "Jouw Straat 1",
-    locality: "Jouw Gemeente",
-    region: "Vlaanderen",
-    postalCode: "0000",
+    street: "Provincieweg 34a",
+    locality: "Borsbeke",
+    region: "Oost-Vlaanderen",
+    postalCode: "9552",
     country: "BE"
   },
   sameAs: [

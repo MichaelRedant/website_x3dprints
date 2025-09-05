@@ -282,7 +282,6 @@ export const locations: Location[] = [
   ],
 },
 {
-
   slug: "3d-printen-in-erwetegem",
   city: "Erwetegem",
   relatedPhrases: [

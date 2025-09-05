@@ -61,6 +61,7 @@ Het resultaat? Innovatie wordt toegankelijk, en **3D printen in Zottegem** zorgt
 ## 3D printen in Zottegem per deelgemeente
 
 ### 3D printen in Erwetegem
+
 In Erwetegem ondersteunt **3D printen in Zottegem** lokale makers, landbouwbedrijven en hobbyisten. De landelijke omgeving profiteert van **3D printen in Zottegem** voor mechanische onderdelen en gepersonaliseerde oplossingen. Meer weten? Lees de aparte pagina over [3D printen in Erwetegem](/3d-printen-in-erwetegem).
 
 ### 3D printen in Godveerdegem
@@ -96,6 +97,7 @@ Elene gebruikt **3D printen in Zottegem** voor praktische herstellingen en creat
 ---
 
 ## Hoe bestel je 3D printen in Zottegem?
+
 
 1. Stuur je ontwerp (STL of STEP) via de [contactpagina](/contact) en vermeld dat het om **3D printen in Zottegem** gaat.
 2. Geef aan welk materiaal je verkiest voor **3D printen in Zottegem**.

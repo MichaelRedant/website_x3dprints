@@ -53,6 +53,25 @@ npm ci
 # 3) Development
 npm run dev
 
+### Contactformulier lokaal testen
+Het contactformulier post naar de Next.js API-route `/api/contact`.
+Er is geen aparte PHP-server meer nodig.
+
+#### SMTP configureren
+
+De API-route gebruikt Nodemailer. Stel minimaal deze variabelen in om via SMTP te mailen:
+
+```
+SMTP_HOST=mail.voorbeeld.nl
+SMTP_PORT=587
+SMTP_USER=info@voorbeeld.nl
+SMTP_PASS=supergeheim
+MAIL_TO=info@x3dprints.be
+MAIL_FROM="X3DPrints <no-reply@x3dprints.be>"
+```
+
+Optioneel kun je `DKIM_DOMAIN`, `DKIM_SELECTOR` en `DKIM_PRIVATE_KEY` zetten voor DKIM-signing.
+
 # 4) Productiebouw (lokaal testen)
 npm run build && npm run start
 
