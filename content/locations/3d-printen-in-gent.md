@@ -64,6 +64,11 @@ De stad Gent, met haar rijke historische erfgoed, haar status als studentenstad 
 -   specifieke onderdelen laten maken die snel beschikbaar moeten zijn voor reparaties of projecten.
 -   educatieve projecten ondersteunen met tastbare leermiddelen die inspireren en de jeugd betrekken bij technologie en design.
 
+### Link met de stad
+
+- [Stad Gent](https://stad.gent) stimuleert innovatie en lokale maakinitiatieven.
+- X3DPrints levert in alle wijken en deelgemeenten van Gent.
+
 ---
 
 ## Hoe werkt het bestellen van uw 3D print?
@@ -90,6 +95,23 @@ De stad Gent, met haar rijke historische erfgoed, haar status als studentenstad 
 -   🏫 **educatieve modellen** voor scholen en studentenprojecten die **prototypes Gent** nodig hebben.
 -   🛠 **maatwerk onderdelen** en reparaties voor kmo's, laboratoria en hobbyisten in de stad.
 -   🏗 **architecturale maquettes** voor stadsontwikkeling en renovatieprojecten, perfect voor Gentse bouwplannen.
+
+---
+## Interne links rond 3D printen in Gent
+
+- [3D printen in Afsnee](/3d-printen-in-afsnee)
+- [3D printen in Desteldonk](/3d-printen-in-desteldonk)
+- [3D printen in Drongen](/3d-printen-in-drongen)
+- [3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
+- [3D printen in Ledeberg](/3d-printen-in-ledeberg)
+- [3D printen in Mariakerke](/3d-printen-in-mariakerke)
+- [3D printen in Mendonk](/3d-printen-in-mendonk)
+- [3D printen in Oostakker](/3d-printen-in-oostakker)
+- [3D printen in Sint-Amandsberg](/3d-printen-in-sint-amandsberg)
+- [3D printen in Sint-Kruis-Winkel](/3d-printen-in-sint-kruis-winkel)
+- [3D printen in Sint-Denijs-Westrem](/3d-printen-in-sint-denijs-westrem)
+- [3D printen in Wondelgem](/3d-printen-in-wondelgem)
+- [3D printen in Zwijnaarde](/3d-printen-in-zwijnaarde)
 
 ---
 

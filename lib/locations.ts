@@ -666,7 +666,7 @@ export const locations: Location[] = [
       "3D model laten printen Voorde",
     ],
     metaDescription: "Professionele 3D prints in Voorde, snel geleverd van prototypes tot kleine series. X3DPrints print jouw ontwerp met zorg. Kies uit PLA, PETG, TPU.",
-  },
+   },
   {
     slug: "3d-printen-in-appels",
     city: "Appels",
@@ -751,6 +751,7 @@ export const locations: Location[] = [
     ],
     metaDescription: "X3DPrints verzorgt 3D prints voor Sint-Gillis-Dendermonde en omgeving voor visuele modellen en technische onderdelen. Upload je model bij X3DPrints.",
   }
+
 ];
 
 export function getLocationBySlug(slug: string): Location | undefined {
