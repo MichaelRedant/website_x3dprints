@@ -116,10 +116,13 @@ export default function Footer() {
               <li><Link href="/sitemap.xml" className="hover:text-slate-900">Sitemap</Link></li>
             </ul>
           </div>
-
-          {/* lokale pagina's */}
-          <FooterLocations />
         </Container>
+        {/* lokale pagina's */}
+        <div className="border-t">
+          <Container className="py-12">
+            <FooterLocations />
+          </Container>
+        </div>
 
         {/* bottom bar */}
         <div className="border-t">
