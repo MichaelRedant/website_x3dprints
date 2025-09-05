@@ -88,7 +88,6 @@ De archeologische site van Velzeke inspireert ook moderne maakprojecten. Met **3
 ### 3D printen in Elene
 Elene gebruikt **3D printen in Zottegem** voor praktische herstellingen en creatieve projecten. Lokale ondernemers kiezen **3D printen in Zottegem** om hun ideeën betaalbaar te realiseren.
 
-
 ---
 
 ## De link tussen 3D printen in Zottegem en de regio
