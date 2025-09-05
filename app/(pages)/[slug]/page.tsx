@@ -38,10 +38,11 @@ export function generateStaticParams(): Array<{ slug: string }> {
 }
 
 /** SEO: verbeterd met robots en title-template */
-export function generateMetadata(
-  { params }: { params: { slug: string } }
-): Metadata {
-  const loc = getLocationBySlug(params.slug)
+export async function generateMetadata(
+  { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+  const { slug } = await params
+  const loc = getLocationBySlug(slug)
   if (!loc) return {}
 
   const keyphrase = `3D printen in ${loc.city}`
@@ -84,9 +85,10 @@ export function generateMetadata(
 }
 
 export default async function Page(
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
-  const slug = params.slug.toLowerCase()
+  const { slug: rawSlug } = await params
+  const slug = rawSlug.toLowerCase()
   const loc = getLocationBySlug(slug)
   if (!loc) notFound()
 
