@@ -3,6 +3,7 @@ export type Location = {
   slug: string;
   city: string;
   relatedPhrases?: string[];
+  metaDescription?: string;
 };
 
 export const locations: Location[] = [
@@ -16,6 +17,8 @@ export const locations: Location[] = [
       "3D printen nabij Aalst",
       "3D model laten printen Aalst",
     ],
+    metaDescription:
+      "3D printservice in Aalst voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-herzele",
