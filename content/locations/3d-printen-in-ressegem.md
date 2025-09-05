@@ -67,9 +67,9 @@ Dankzij **lokale productie** hoeven inwoners niet langer uit te wijken naar grot
 Samen met omliggende dorpen vormt Ressegem een **innovatief netwerk in Zuid-Oost-Vlaanderen**.
 
 Meer weten? Lees ook:  
-- [3D printen in Herzele](/locaties/3d-printen-in-herzele)  
-- [3D printen in Hillegem](/locaties/3d-printen-in-hillegem)  
-- [3D printen in Borsbeke](/locaties/3d-printen-in-borsbeke)  
+- [3D printen in Herzele](/3d-printen-in-herzele)  
+- [3D printen in Hillegem](/3d-printen-in-hillegem)  
+- [3D printen in Borsbeke](/3d-printen-in-borsbeke)  
 
 ---
 
@@ -109,10 +109,10 @@ Meer weten? Lees ook:
 ## 📈 SEO-interne links voor Ressegem
 
 Bezoekers van deze pagina kunnen ook ontdekken:  
-- [3D printen in Sint-Antelinks](/locaties/3d-printen-in-sint-antelinks)  
-- [3D printen in Sint-Lievens-Esse](/locaties/3d-printen-in-sint-lievens-esse)  
-- [3D printen in Steenhuize-Wijnhuize](/locaties/3d-printen-in-steenhuize-wijnhuize)  
-- [3D printen in Woubrechtegem](/locaties/3d-printen-in-woubrechtegem)  
+- [3D printen in Sint-Antelinks](/3d-printen-in-sint-antelinks)  
+- [3D printen in Sint-Lievens-Esse](/3d-printen-in-sint-lievens-esse)  
+- [3D printen in Steenhuize-Wijnhuize](/3d-printen-in-steenhuize-wijnhuize)  
+- [3D printen in Woubrechtegem](/3d-printen-in-woubrechtegem)  
 
 ---
 
