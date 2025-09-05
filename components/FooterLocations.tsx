@@ -16,6 +16,18 @@ export default function FooterLocations({ title = "Lokale pagina’s", maxVisibl
   const visible = locations.slice(0, maxVisible)
   const hidden = locations.slice(maxVisible)
 
+  // Groepeer verborgen locaties op initiaal voor logische navigatie
+  const grouped = hidden.reduce<Record<string, { slug: string; city: string }[]>>(
+    (acc, loc) => {
+      const k = (loc.city?.[0] ?? "#").toUpperCase()
+      if (!acc[k]) acc[k] = []
+      acc[k].push(loc)
+      return acc
+    },
+    {}
+  )
+  const letters = Object.keys(grouped).sort()
+
   // JSON-LD ItemList (beperk tot 50, dat is zat)
   const itemList = locations.slice(0, 50).map((loc, i) => ({
     "@type": "ListItem",
@@ -55,31 +67,37 @@ export default function FooterLocations({ title = "Lokale pagina’s", maxVisibl
             </svg>
           </summary>
 
-          <ul
-            className="
-              mt-3 grid grid-cols-1 gap-2
-              sm:grid-cols-2
-              lg:grid-cols-3
-            "
-          >
-            {hidden.map((loc) => (
-              <li key={loc.slug}>
-                <Link
-                  href={`/${loc.slug}`}
-                  className="inline-block rounded-full border border-white/30 bg-white/60 px-3 py-1.5 text-xs text-slate-700 backdrop-blur transition hover:bg-white hover:text-slate-900"
+          <div className="mt-3 space-y-6">
+            {letters.map((letter) => (
+              <div key={letter}>
+                <div className="mb-2 text-xs font-semibold tracking-wider text-slate-500">{letter}</div>
+                <ul
+                  className="
+                    grid grid-cols-1 gap-2
+                    sm:grid-cols-2
+                    lg:grid-cols-3
+                  "
                 >
-                  3D printen in {loc.city}
-                </Link>
-              </li>
+                  {grouped[letter].map((loc) => (
+                    <li key={loc.slug}>
+                      <Link
+                        href={`/${loc.slug}`}
+                        className="inline-block rounded-full border border-white/30 bg-white/60 px-3 py-1.5 text-xs text-slate-700 backdrop-blur transition hover:bg-white hover:text-slate-900"
+                      >
+                        3D printen in {loc.city}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </details>
       )}
 
       {/* JSON-LD ItemList */}
       <script
         type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
