@@ -2,7 +2,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import Container from "./Container"
-import { getAllLocationSlugs, getLocationBySlug } from "@/lib/locations"
+import FooterLocations from "./FooterLocations"
 
 const socials = [
   { href: "https://www.linkedin.com/company/x3dprints", label: "LinkedIn", icon: "linkedin" },
@@ -34,32 +34,6 @@ function SocialIcon({ type, className }: { type: string; className?: string }) {
 }
 
 export default function Footer() {
-  // Bouw locaties op (server component), sorteer alfabetisch
-  const slugs = getAllLocationSlugs()
-  const locations = slugs
-    .map((slug) => ({ slug, city: getLocationBySlug(slug)?.city ?? slug }))
-    .sort((a, b) => a.city.localeCompare(b.city, "nl"))
-
-  const topVisible = locations.slice(0, 12)
-  const rest = locations.slice(12)
-
-  // Groepeer rest op initiaal (A, B, C...)
-  const grouped: Record<string, { slug: string; city: string }[]> = {}
-  for (const loc of rest) {
-    const k = (loc.city?.[0] ?? "#").toUpperCase()
-    if (!grouped[k]) grouped[k] = []
-    grouped[k].push(loc)
-  }
-  const letters = Object.keys(grouped).sort()
-
-  // JSON-LD voor ItemList (cap op 50)
-  const itemList = locations.slice(0, 50).map((loc, i) => ({
-    "@type": "ListItem",
-    position: i + 1,
-    url: `https://www.x3dprints.be/${loc.slug}`,
-    name: `3D printen in ${loc.city}`,
-  }))
-
   return (
     <footer className="relative mt-24">
       {/* top gradient hairline */}
@@ -143,92 +117,10 @@ export default function Footer() {
             </ul>
           </div>
         </Container>
-
-        {/* LOKALE PAGINA'S: volle-breedte band onder de hoofdfooter */}
-        <div className="border-t bg-white/70">
-          <Container className="py-10">
-            <div className="flex items-center justify-between gap-4">
-              <div>
-                <h3 className="text-sm font-semibold tracking-tight text-slate-900">Lokale pagina’s</h3>
-                <p className="mt-1 text-xs text-slate-600">
-                  Snelle toegang per regio.
-                </p>
-              </div>
-              <Link
-                href="/locaties"
-                className="rounded-full border border-white/30 bg-white/70 px-3 py-1.5 text-xs text-slate-700 backdrop-blur transition hover:bg-white hover:text-slate-900"
-              >
-                Alle locaties pagina
-              </Link>
-            </div>
-
-            {/* Top 12 als pills */}
-            {topVisible.length > 0 && (
-              <ul className="mt-4 flex flex-wrap gap-2">
-                {topVisible.map((loc) => (
-                  <li key={loc.slug}>
-                    <Link
-                      href={`/${loc.slug}`}
-                      className="rounded-full border border-white/30 bg-white/70 px-3 py-1.5 text-xs text-slate-700 backdrop-blur transition hover:bg-white hover:text-slate-900"
-                    >
-                      3D printen in {loc.city}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            {/* Uitklapbare mega-lijst op alfabet, voor grote aantallen */}
-            {rest.length > 0 && (
-              <details className="group mt-5">
-                <summary className="inline-flex cursor-pointer select-none items-center gap-2 rounded-full border border-white/30 bg-white/60 px-3 py-1.5 text-xs font-medium text-slate-700 backdrop-blur transition hover:bg-white">
-                  Toon alle locaties
-                  <svg width="14" height="14" viewBox="0 0 24 24" className="opacity-70 transition group-open:rotate-180">
-                    <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="1.8" fill="none" strokeLinecap="round" />
-                  </svg>
-                </summary>
-
-                <div className="mt-4 space-y-6">
-                  {letters.map((letter) => (
-                    <div key={letter}>
-                      <div className="mb-2 text-xs font-semibold tracking-wider text-slate-500">{letter}</div>
-                      <ul
-                        className="
-                          grid grid-cols-1 gap-2
-                          sm:grid-cols-2
-                          md:grid-cols-3
-                          lg:grid-cols-4
-                        "
-                      >
-                        {grouped[letter].map((loc) => (
-                          <li key={loc.slug}>
-                            <Link
-                              href={`/${loc.slug}`}
-                              className="inline-block rounded-full border border-white/30 bg-white/60 px-3 py-1.5 text-xs text-slate-700 backdrop-blur transition hover:bg-white hover:text-slate-900"
-                            >
-                              3D printen in {loc.city}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              </details>
-            )}
-
-            {/* JSON-LD ItemList voor crawlers */}
-            <script
-              type="application/ld+json"
-              // eslint-disable-next-line react/no-danger
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify({
-                  "@context": "https://schema.org",
-                  "@type": "ItemList",
-                  itemListElement: itemList,
-                }),
-              }}
-            />
+        {/* lokale pagina's */}
+        <div className="border-t">
+          <Container className="py-12">
+            <FooterLocations />
           </Container>
         </div>
 
