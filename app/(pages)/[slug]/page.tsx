@@ -25,42 +25,48 @@ import {
   buildDefaultRelatedPhrases,
 } from "@/lib/locations"
 import { keywordSvgDataUri } from "@/lib/svg"
+import { buildCityMetaDescription, makeDescriptionFromMarkdown } from "@/lib/seo"
 
 import CtaBlock from "@/components/CtaBlock"
 import Faq from "@/components/Faq"
 
-interface PageProps {
-  params: { slug: string }
-}
 
-export const dynamicParams = false
 export const revalidate = 86_400 // 24u cache
+export const dynamicParams = false
 
-export function generateStaticParams() {
+export function generateStaticParams(): Array<{ slug: string }> {
   return getAllLocationSlugs().map((slug) => ({ slug }))
 }
 
-/** SEO: verbeterd met robots en title-template */
-export function generateMetadata({ params }: PageProps): Metadata {
-  const loc = getLocationBySlug(params.slug)
+/** SEO: verbeterd met unieke descriptions */
+export async function generateMetadata(
+  { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+  const { slug } = await params
+  const loc = getLocationBySlug(slug)
   if (!loc) return {}
 
   const keyphrase = `3D printen in ${loc.city}`
   const phrases = loc.relatedPhrases?.length
     ? loc.relatedPhrases
     : buildDefaultRelatedPhrases(loc.city)
+
   const description =
     loc.metaDescription ??
     loc.description ??
     `${keyphrase} door X3DPrints. Snelle, nauwkeurige 3D print service voor prototypes en kleine series in ${loc.city}. Materialen: PLA, PETG, ABS/ASA, TPU.`
   const url = `https://www.x3dprints.be/${loc.slug}`
 
-  return {
+  // ==== NIEUW: unieke description ====
+  // 1) Als je in locations metaDescription meegeeft -> gebruik die
+  // 2) Anders proberen we uit de markdown te destilleren (zie stap 4)
+  // 3) Als dat faalt, genereren we een nette city-specifieke fallback
+  // We vullen mdDescription later onderaan in zodra we contentMd hebben
+  const baseMeta = {
     title: {
       default: `${keyphrase} | X3DPrints`,
       template: `%s | X3DPrints`,
     },
-    description,
     keywords: [keyphrase, ...phrases].join(", "),
     alternates: { canonical: url },
     robots: {
@@ -71,7 +77,6 @@ export function generateMetadata({ params }: PageProps): Metadata {
     },
     openGraph: {
       title: keyphrase,
-      description,
       url,
       siteName: "X3DPrints",
       type: "website",
@@ -81,14 +86,26 @@ export function generateMetadata({ params }: PageProps): Metadata {
     twitter: {
       card: "summary_large_image",
       title: keyphrase,
-      description,
       images: ["/images/og-home.jpg"],
     },
+  } as Metadata
+
+  // We kunnen hier nog geen markdown lezen, dus geven we een voorlopige description terug.
+  // De definitieve (unieke) description zetten we in de Page component via <meta> (zie stap 4).
+  // Zoekmachines pakken beide; Next Metadata is prima, maar we forceren unieks via client payload.
+  return {
+    ...baseMeta,
+    description:
+      loc.metaDescription ??
+      `3D printen in ${loc.city} door X3DPrints. Vraag een offerte voor prototypes en kleine series.`,
   }
 }
 
-export default async function Page({ params }: PageProps) {
-  const slug = params.slug.toLowerCase()
+export default async function Page(
+  { params }: { params: Promise<{ slug: string }> }
+) {
+  const { slug: rawSlug } = await params
+  const slug = rawSlug.toLowerCase()
   const loc = getLocationBySlug(slug)
   if (!loc) notFound()
 
@@ -111,6 +128,13 @@ export default async function Page({ params }: PageProps) {
 
   const mdSections = splitMarkdown(contentMd)
   const tocItems = await extractHeadings(contentMd, [2, 3])
+
+  const finalDescription =
+    loc.metaDescription && loc.metaDescription.trim().length > 0
+      ? loc.metaDescription
+      :
+          makeDescriptionFromMarkdown(contentMd, loc.city) ||
+          buildCityMetaDescription(loc.city)
 
   const stripTags = (html: string) =>
     html.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim()
@@ -537,6 +561,14 @@ export default async function Page({ params }: PageProps) {
               Contact
             </Link>
           </nav>
+          {/* Definitieve, unieke meta description (140–160 chars) */}
+          {/* eslint-disable-next-line @next/next/no-head-element */}
+          <head>
+            <meta name="description" content={finalDescription} />
+            {/* Houd OG/Twitter desnoods ook in sync voor social previews */}
+            <meta property="og:description" content={finalDescription} />
+            <meta name="twitter:description" content={finalDescription} />
+          </head>
 
           {/* JSON-LD */}
           <script

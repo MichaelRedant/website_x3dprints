@@ -32,11 +32,13 @@ export default function MiniToc({
   defaultCollapsed = false,
   dismissible = true,
 }: Props) {
+  const escapeId = (id: string) =>
+    typeof CSS !== "undefined" && CSS.escape ? CSS.escape(id) : id
   const headings = useMemo(
     () =>
       items.map((i) => ({
         ...i,
-        selector: `#${CSS.escape(i.id)}`,
+        selector: `#${escapeId(i.id)}`,
       })),
     [items],
   )

@@ -1,12 +1,20 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+// next.config.ts
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  // We bouwen een pure statische site (FTP deploy)
+  output: "export",
+
+  // Zorgt voor /pad/ -> /pad/index.html mappen (handig op Apache)
+  trailingSlash: true,
+
+  // Gebruik <Image> zonder optimizer (geen Node runtime)
+  images: { unoptimized: true },
+
+  // Redirects verhuizen we naar .htaccess (Next export voert ze niet server-side uit)
   async redirects() {
-    return [
-      { source: "/category/:slug*", destination: "/portfolio", permanent: true },
-      { source: "/tag/:slug*", destination: "/portfolio", permanent: true },
-      { source: "/contact-us", destination: "/contact", permanent: true },
-      // voeg hier je WP-slugs toe -> nieuwe paden
-    ]
+    return [];
   },
-}
-export default nextConfig
+};
+
+export default nextConfig;

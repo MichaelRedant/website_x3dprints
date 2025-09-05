@@ -3,7 +3,6 @@ export type Location = {
   slug: string;
   city: string;
   relatedPhrases?: string[];
-  description?: string;
   metaDescription?: string;
 };
 
@@ -18,6 +17,7 @@ export const locations: Location[] = [
       "3D printen nabij Aalst",
       "3D model laten printen Aalst",
     ],
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Aalst van prototypes tot kleine series, PLA, PETG en TPU beschikbaar. Vraag een offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-herzele",
@@ -29,6 +29,7 @@ export const locations: Location[] = [
       "3D printen nabij Herzele",
       "3D model laten printen Herzele",
     ],
+    metaDescription: "X3DPrints verzorgt 3D prints voor Herzele en omgeving van prototypes tot kleine series, PLA, PETG en TPU beschikbaar. Upload je model bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-borsbeke",
@@ -40,6 +41,7 @@ export const locations: Location[] = [
       "3D printen nabij Borsbeke",
       "3D model laten printen Borsbeke",
     ],
+    metaDescription: "3D printservice in Borsbeke met focus op precisie van prototypes tot kleine series, PLA, PETG en TPU beschikbaar. X3DPrints helpt je project vooruit.",
   },
   {
     slug: "3d-printen-in-hillegem",
@@ -51,6 +53,7 @@ export const locations: Location[] = [
       "3D printen nabij Hillegem",
       "3D model laten printen Hillegem",
     ],
+    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Hillegem van prototypes tot kleine series, PLA, PETG en TPU beschikbaar. Ontvang je prijs bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-ressegem",
@@ -62,6 +65,7 @@ export const locations: Location[] = [
       "3D printen nabij Ressegem",
       "3D model laten printen Ressegem",
     ],
+    metaDescription: "Professionele 3D prints in Ressegem, snel geleverd van prototypes tot kleine series, PLA, PETG en TPU beschikbaar. X3DPrints print jouw ontwerp met zorg.",
   },
   {
     slug: "3d-printen-in-sint-antelinks",
@@ -73,6 +77,7 @@ export const locations: Location[] = [
       "3D printen nabij Sint-Antelinks",
       "3D model laten printen Sint-Antelinks",
     ],
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Sint-Antelinks voor prototypes, mallen en functionele onderdelen. Vraag een offerte bij X3DPrints. PLA, PETG.",
   },
   {
     slug: "3d-printen-in-sint-lievens-esse",
@@ -84,6 +89,7 @@ export const locations: Location[] = [
       "3D printen nabij Sint-Lievens-Esse",
       "3D model laten printen Sint-Lievens-Esse",
     ],
+    metaDescription: "X3DPrints verzorgt 3D prints voor Sint-Lievens-Esse en omgeving voor prototypes, mallen en functionele onderdelen. Upload je model bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-steenhuize-wijnhuize",
@@ -95,6 +101,7 @@ export const locations: Location[] = [
       "3D printen nabij Steenhuize-Wijnhuize",
       "3D model laten printen Steenhuize-Wijnhuize",
     ],
+    metaDescription: "3D printservice in Steenhuize-Wijnhuize met focus op precisie voor prototypes, mallen en functionele onderdelen. X3DPrints helpt je project vooruit.",
   },
   {
     slug: "3d-printen-in-woubrechtegem",
@@ -106,12 +113,14 @@ export const locations: Location[] = [
       "3D printen nabij Woubrechtegem",
       "3D model laten printen Woubrechtegem",
     ],
+    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Woubrechtegem voor prototypes, mallen en functionele onderdelen. Ontvang je prijs bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-geraardsbergen",
     city: "Geraardsbergen",
     relatedPhrases: [
       "3D print service Geraardsbergen",
+
     "rapid prototyping Geraardsbergen",
     "3D printing bedrijf Geraardsbergen",
     "3D printen nabij Geraardsbergen",
@@ -474,6 +483,398 @@ export const locations: Location[] = [
     "3D model laten printen moorsel",
   ],
 },
+      "rapid prototyping Geraardsbergen",
+      "3D printing bedrijf Geraardsbergen",
+      "3D printen nabij Geraardsbergen",
+      "3D model laten printen Geraardsbergen",
+    ],
+    metaDescription: "Professionele 3D prints in Geraardsbergen, snel geleverd voor prototypes, mallen en functionele onderdelen. X3DPrints print jouw ontwerp met zorg.",
+  },
+  {
+    slug: "3d-printen-in-zottegem",
+    city: "Zottegem",
+    relatedPhrases: [
+      "3D print service Zottegem",
+      "rapid prototyping Zottegem",
+      "3D printing bedrijf Zottegem",
+      "3D printen nabij Zottegem",
+      "3D model laten printen Zottegem",
+    ],
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Zottegem voor visuele modellen en technische onderdelen. Vraag een offerte bij X3DPrints. Kies uit PLA, PETG, TPU.",
+  },
+  {
+    slug: "3d-printen-in-oudenaarde",
+    city: "Oudenaarde",
+    relatedPhrases: [
+      "3D print service Oudenaarde",
+      "rapid prototyping Oudenaarde",
+      "3D printing bedrijf Oudenaarde",
+      "3D printen nabij Oudenaarde",
+      "3D model laten printen Oudenaarde",
+    ],
+    metaDescription: "X3DPrints verzorgt 3D prints voor Oudenaarde en omgeving voor visuele modellen en technische onderdelen. Upload je model bij X3DPrints. PLA, PETG.",
+  },
+  {
+    slug: "3d-printen-in-gentbrugge",
+    city: "Gentbrugge",
+    relatedPhrases: [
+      "3D print service gentbrugge",
+      "rapid prototyping gentbrugge",
+      "3D printing bedrijf gentbrugge",
+      "3D printen nabij gentbrugge",
+      "3D model laten printen gentbrugge",
+    ],
+    metaDescription: "3D printservice in Gentbrugge met focus op precisie voor visuele modellen en technische onderdelen. X3DPrints helpt je project vooruit. PLA, PETG.",
+  },
+  {
+    slug: "3d-printen-in-erpe-mere",
+    city: "Erpe-mere",
+    relatedPhrases: [
+      "3D print service erpe-mere",
+      "rapid prototyping erpe-mere",
+      "3D printing bedrijf erpe-mere",
+      "3D printen nabij erpe-mere",
+      "3D model laten printen erpe-mere",
+    ],
+    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Erpe-mere voor visuele modellen en technische onderdelen. Ontvang je prijs bij X3DPrints.",
+  },
+  {
+    slug: "3d-printen-in-affligem",
+    city: "Affligem",
+    relatedPhrases: [
+      "3D print service affligem",
+      "rapid prototyping affligem",
+      "3D printing bedrijf affligem",
+      "3D printen nabij affligem",
+      "3D model laten printen affligem",
+    ],
+    metaDescription: "Professionele 3D prints in Affligem, snel geleverd voor visuele modellen en technische onderdelen. X3DPrints print jouw ontwerp met zorg. PLA, PETG.",
+  },
+  {
+    slug: "3d-printen-in-dendermonde",
+    city: "Dendermonde",
+    relatedPhrases: [
+      "3D print service dendermonde",
+      "rapid prototyping dendermonde",
+      "3D printing bedrijf dendermonde",
+      "3D printen nabij dendermonde",
+      "3D model laten printen dendermonde",
+    ],
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Dendermonde voor productontwikkeling, reparaties en onderwijs. Vraag een offerte bij X3DPrints. PLA, PETG.",
+  },
+  {
+    slug: "3d-printen-in-haaltert",
+    city: "Haaltert",
+    relatedPhrases: [
+      "3D print service haaltert",
+      "rapid prototyping haaltert",
+      "3D printing bedrijf haaltert",
+      "3D printen nabij haaltert",
+      "3D model laten printen haaltert",
+    ],
+    metaDescription: "X3DPrints verzorgt 3D prints voor Haaltert en omgeving voor productontwikkeling, reparaties en onderwijs. Upload je model bij X3DPrints. PLA, PETG.",
+  },
+  {
+    slug: "3d-printen-in-lede",
+    city: "Lede",
+    relatedPhrases: [
+      "3D print service lede",
+      "rapid prototyping lede",
+      "3D printing bedrijf lede",
+      "3D printen nabij lede",
+      "3D model laten printen lede",
+    ],
+    metaDescription: "3D printservice in Lede met focus op precisie voor productontwikkeling, reparaties en onderwijs. X3DPrints helpt je project vooruit. Kies uit PLA, PETG, TPU.",
+  },
+  {
+    slug: "3d-printen-in-lierde",
+    city: "Lierde",
+    relatedPhrases: [
+      "3D print service lierde",
+      "rapid prototyping lierde",
+      "3D printing bedrijf lierde",
+      "3D printen nabij lierde",
+      "3D model laten printen lierde",
+    ],
+    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Lierde voor productontwikkeling, reparaties en onderwijs. Ontvang je prijs bij X3DPrints.",
+  },
+  {
+    slug: "3d-printen-in-merelbeke",
+    city: "Merelbeke",
+    relatedPhrases: [
+      "3D print service merelbeke",
+      "rapid prototyping merelbeke",
+      "3D printing bedrijf merelbeke",
+      "3D printen nabij merelbeke",
+      "3D model laten printen merelbeke",
+    ],
+    metaDescription: "Professionele 3D prints in Merelbeke, snel geleverd voor productontwikkeling, reparaties en onderwijs. X3DPrints print jouw ontwerp met zorg.",
+  },
+  {
+    slug: "3d-printen-in-sint-lievens-houtem",
+    city: "Sint-Lievens-Houtem",
+    relatedPhrases: [
+      "3D print service sint-lievens-houtem",
+      "rapid prototyping sint-lievens-houtem",
+      "3D printing bedrijf sint-lievens-houtem",
+      "3D printen nabij sint-lievens-houtem",
+      "3D model laten printen sint-lievens-houtem",
+    ],
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Sint-Lievens-Houtem voor maatwerk, prototypes en eindstukken. Vraag een offerte bij X3DPrints. PLA, PETG.",
+  },
+  {
+    slug: "3d-printen-in-wetteren",
+    city: "Wetteren",
+    relatedPhrases: [
+      "3D print service wetteren",
+      "rapid prototyping wetteren",
+      "3D printing bedrijf wetteren",
+      "3D printen nabij wetteren",
+      "3D model laten printen wetteren",
+    ],
+    metaDescription: "X3DPrints verzorgt 3D prints voor Wetteren en omgeving voor maatwerk, prototypes en eindstukken, PLA, PETG en TPU beschikbaar. Upload je model bij X3DPrints.",
+  },
+  {
+    slug: "3d-printen-in-brakel",
+    city: "Brakel",
+    relatedPhrases: [
+      "3D print service brakel",
+      "rapid prototyping brakel",
+      "3D printing bedrijf brakel",
+      "3D printen nabij brakel",
+      "3D model laten printen brakel",
+    ],
+    metaDescription: "3D printservice in Brakel met focus op precisie voor maatwerk, prototypes en eindstukken, PLA, PETG en TPU beschikbaar. X3DPrints helpt je project vooruit.",
+  },
+  {
+    slug: "3d-printen-in-gent",
+    city: "Gent",
+    relatedPhrases: [
+      "3D print service gent",
+      "rapid prototyping gent",
+      "3D printing bedrijf gent",
+      "3D printen nabij gent",
+      "3D model laten printen gent",
+    ],
+    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Gent voor maatwerk, prototypes en eindstukken. Ontvang je prijs bij X3DPrints. Kies uit PLA, PETG, TPU.",
+  },
+  {
+    slug: "3d-printen-in-zottegem",
+    city: "Zottegem",
+    relatedPhrases: [
+      "3D print service zottegem",
+      "rapid prototyping zottegem",
+      "3D printing bedrijf zottegem",
+      "3D printen nabij zottegem",
+      "3D model laten printen zottegem",
+    ],
+    metaDescription: "Professionele 3D prints in Zottegem, snel geleverd voor maatwerk, prototypes en eindstukken. X3DPrints print jouw ontwerp met zorg. Kies uit PLA, PETG, TPU.",
+  },
+  {
+    slug: "3d-printen-in-erwetegem",
+    city: "Erwetegem",
+    relatedPhrases: [
+      "3D print service erwetegem",
+      "rapid prototyping erwetegem",
+      "3D printing bedrijf erwetegem",
+      "3D printen nabij erwetegem",
+      "3D model laten printen erwetegem",
+    ],
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Erwetegem van prototypes tot kleine series, levering binnen 2–5 werkdagen. Vraag een offerte bij X3DPrints.",
+  },
+  {
+    slug: "3d-printen-in-elene",
+    city: "Elene",
+    relatedPhrases: [
+      "3D print service elene",
+      "rapid prototyping elene",
+      "3D printing bedrijf elene",
+      "3D printen nabij elene",
+      "3D model laten printen elene",
+    ],
+    metaDescription: "X3DPrints verzorgt 3D prints voor Elene en omgeving van prototypes tot kleine series, levering binnen 2–5 werkdagen. Upload je model bij X3DPrints.",
+  },
+  {
+    slug: "3d-printen-in-godveerdegem",
+    city: "Godveerdegem",
+    relatedPhrases: [
+      "3D print service godveerdegem",
+      "rapid prototyping godveerdegem",
+      "3D printing bedrijf godveerdegem",
+      "3D printen nabij godveerdegem",
+      "3D model laten printen godveerdegem",
+    ],
+    metaDescription: "3D printservice in Godveerdegem met focus op precisie van prototypes tot kleine series, levering binnen 2–5 werkdagen. X3DPrints helpt je project vooruit.",
+  },
+  {
+    slug: "3d-printen-in-grotenberge",
+    city: "Grotenberge",
+    relatedPhrases: [
+      "3D print service grotenberge",
+      "rapid prototyping grotenberge",
+      "3D printing bedrijf grotenberge",
+      "3D printen nabij grotenberge",
+      "3D model laten printen grotenberge",
+    ],
+    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Grotenberge van prototypes tot kleine series. Ontvang je prijs bij X3DPrints. Kies uit PLA, PETG, TPU.",
+  },
+  {
+    slug: "3d-printen-in-leeuwergem",
+    city: "Leeuwergem",
+    relatedPhrases: [
+      "3D print service leeuwergem",
+      "rapid prototyping leeuwergem",
+      "3D printing bedrijf leeuwergem",
+      "3D printen nabij leeuwergem",
+      "3D model laten printen leeuwergem",
+    ],
+    metaDescription: "Professionele 3D prints in Leeuwergem, snel geleverd van prototypes tot kleine series, levering binnen 2–5 werkdagen. X3DPrints print jouw ontwerp met zorg.",
+  },
+  {
+    slug: "3d-printen-in-oombergen",
+    city: "Oombergen",
+    relatedPhrases: [
+      "3D print service oombergen",
+      "rapid prototyping oombergen",
+      "3D printing bedrijf oombergen",
+      "3D printen nabij oombergen",
+      "3D model laten printen oombergen",
+    ],
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Oombergen voor prototypes, mallen en functionele onderdelen. Vraag een offerte bij X3DPrints. Kies uit PLA, PETG, TPU.",
+  },
+  {
+    slug: "3d-printen-in-sint-goriks-oudenhove",
+    city: "Sint-Goriks-Oudenhove",
+    relatedPhrases: [
+      "3D print service sint-goriks-oudenhove",
+      "rapid prototyping sint-goriks-oudenhove",
+      "3D printing bedrijf sint-goriks-oudenhove",
+      "3D printen nabij sint-goriks-oudenhove",
+      "3D model laten printen sint-goriks-oudenhove",
+    ],
+    metaDescription: "X3DPrints verzorgt 3D prints voor Sint-Goriks-Oudenhove en omgeving voor prototypes, mallen en functionele onderdelen. Upload je model bij X3DPrints.",
+  },
+  {
+    slug: "3d-printen-in-sint-maria-oudenhove",
+    city: "Sint-Maria-Oudenhove",
+    relatedPhrases: [
+      "3D print service sint-maria-oudenhove",
+      "rapid prototyping sint-maria-oudenhove",
+      "3D printing bedrijf sint-maria-oudenhove",
+      "3D printen nabij sint-maria-oudenhove",
+      "3D model laten printen sint-maria-oudenhove",
+    ],
+    metaDescription: "3D printservice in Sint-Maria-Oudenhove met focus op precisie voor prototypes, mallen en functionele onderdelen. X3DPrints helpt je project vooruit.",
+  },
+  {
+    slug: "3d-printen-in-strijpen",
+    city: "Strijpen",
+    relatedPhrases: [
+      "3D print service strijpen",
+      "rapid prototyping strijpen",
+      "3D printing bedrijf strijpen",
+      "3D printen nabij strijpen",
+      "3D model laten printen strijpen",
+    ],
+    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Strijpen voor prototypes, mallen en functionele onderdelen. Ontvang je prijs bij X3DPrints.",
+  },
+  {
+    slug: "3d-printen-in-velzeke-ruddershove",
+    city: "Velzeke-Ruddershove",
+    relatedPhrases: [
+      "3D print service velzeke-ruddershove",
+      "rapid prototyping velzeke-ruddershove",
+      "3D printing bedrijf velzeke-ruddershove",
+      "3D printen nabij velzeke-ruddershove",
+      "3D model laten printen velzeke-ruddershove",
+    ],
+    metaDescription: "Professionele 3D prints in Velzeke-Ruddershove, snel geleverd voor prototypes, mallen en functionele onderdelen. X3DPrints print jouw ontwerp met zorg.",
+  },
+  {
+    slug: "3d-printen-in-baardegem",
+    city: "Baardegem",
+    relatedPhrases: [
+      "3D print service baardegem",
+      "rapid prototyping baardegem",
+      "3D printing bedrijf baardegem",
+      "3D printen nabij baardegem",
+      "3D model laten printen baardegem",
+    ],
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Baardegem voor visuele modellen en technische onderdelen. Vraag een offerte bij X3DPrints. Kies uit PLA, PETG, TPU.",
+  },
+  {
+    slug: "3d-printen-in-erembodegem",
+    city: "Erembodegem",
+    relatedPhrases: [
+      "3D print service erembodegem",
+      "rapid prototyping erembodegem",
+      "3D printing bedrijf erembodegem",
+      "3D printen nabij erembodegem",
+      "3D model laten printen erembodegem",
+    ],
+    metaDescription: "X3DPrints verzorgt 3D prints voor Erembodegem en omgeving voor visuele modellen en technische onderdelen. Upload je model bij X3DPrints. PLA, PETG.",
+  },
+  {
+    slug: "3d-printen-in-gijzegem",
+    city: "Gijzegem",
+    relatedPhrases: [
+      "3D print service gijzegem",
+      "rapid prototyping gijzegem",
+      "3D printing bedrijf gijzegem",
+      "3D printen nabij gijzegem",
+      "3D model laten printen gijzegem",
+    ],
+    metaDescription: "3D printservice in Gijzegem met focus op precisie voor visuele modellen en technische onderdelen. X3DPrints helpt je project vooruit. Kies uit PLA, PETG, TPU.",
+  },
+  {
+    slug: "3d-printen-in-herdersem",
+    city: "Herdersem",
+    relatedPhrases: [
+      "3D print service herdersem",
+      "rapid prototyping herdersem",
+      "3D printing bedrijf herdersem",
+      "3D printen nabij herdersem",
+      "3D model laten printen herdersem",
+    ],
+    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Herdersem voor visuele modellen en technische onderdelen. Ontvang je prijs bij X3DPrints.",
+  },
+  {
+    slug: "3d-printen-in-hofstade",
+    city: "Hofstade",
+    relatedPhrases: [
+      "3D print service hofstade",
+      "rapid prototyping hofstade",
+      "3D printing bedrijf hofstade",
+      "3D printen nabij hofstade",
+      "3D model laten printen hofstade",
+    ],
+    metaDescription: "Professionele 3D prints in Hofstade, snel geleverd voor visuele modellen en technische onderdelen. X3DPrints print jouw ontwerp met zorg. PLA, PETG.",
+  },
+  {
+    slug: "3d-printen-in-meldert",
+    city: "Meldert",
+    relatedPhrases: [
+      "3D print service meldert",
+      "rapid prototyping meldert",
+      "3D printing bedrijf meldert",
+      "3D printen nabij meldert",
+      "3D model laten printen meldert",
+    ],
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Meldert voor productontwikkeling, reparaties en onderwijs. Vraag een offerte bij X3DPrints. Kies uit PLA, PETG, TPU.",
+  },
+  {
+    slug: "3d-printen-in-moorsel",
+    city: "Moorsel",
+    relatedPhrases: [
+      "3D print service moorsel",
+      "rapid prototyping moorsel",
+      "3D printing bedrijf moorsel",
+      "3D printen nabij moorsel",
+      "3D model laten printen moorsel",
+    ],
+    metaDescription: "X3DPrints verzorgt 3D prints voor Moorsel en omgeving voor productontwikkeling, reparaties en onderwijs. Upload je model bij X3DPrints. PLA, PETG.",
+  },
+
   {
     slug: "3d-printen-in-nieuwerkerken",
     city: "Nieuwerkerken",
@@ -484,6 +885,8 @@ export const locations: Location[] = [
       "3D printen nabij nieuwerkerken",
       "3D model laten printen nieuwerkerken",
     ],
+    metaDescription: "3D printservice in Nieuwerkerken met focus op precisie voor productontwikkeling, reparaties en onderwijs. X3DPrints helpt je project vooruit.",
+
   },
   {
     slug: "3d-printen-in-ninove",
@@ -495,6 +898,7 @@ export const locations: Location[] = [
       "3D printen nabij Ninove",
       "3D model laten printen Ninove",
     ],
+    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Ninove voor productontwikkeling, reparaties en onderwijs. Ontvang je prijs bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-appelterre-eichem",
@@ -506,6 +910,8 @@ export const locations: Location[] = [
       "3D printen nabij Appelterre-Eichem",
       "3D model laten printen Appelterre-Eichem",
     ],
+    metaDescription: "Professionele 3D prints in Appelterre-Eichem, snel geleverd voor productontwikkeling, reparaties en onderwijs. X3DPrints print jouw ontwerp met zorg.",
+
   },
   {
     slug: "3d-printen-in-aspelare",
@@ -517,6 +923,8 @@ export const locations: Location[] = [
       "3D printen nabij Aspelare",
       "3D model laten printen Aspelare",
     ],
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Aspelare voor maatwerk, prototypes en eindstukken, levering binnen 2–5 werkdagen. Vraag een offerte bij X3DPrints.",
+
   },
   {
     slug: "3d-printen-in-denderwindeke",
@@ -528,6 +936,8 @@ export const locations: Location[] = [
       "3D printen nabij Denderwindeke",
       "3D model laten printen Denderwindeke",
     ],
+    metaDescription: "X3DPrints verzorgt 3D prints voor Denderwindeke en omgeving voor maatwerk, prototypes en eindstukken. Upload je model bij X3DPrints. Kies uit PLA, PETG, TPU.",
+
   },
   {
     slug: "3d-printen-in-lieferinge",
@@ -539,6 +949,7 @@ export const locations: Location[] = [
       "3D printen nabij Lieferinge",
       "3D model laten printen Lieferinge",
     ],
+    metaDescription: "3D printservice in Lieferinge met focus op precisie voor maatwerk, prototypes en eindstukken. X3DPrints helpt je project vooruit. Kies uit PLA, PETG, TPU.",
   },
   {
     slug: "3d-printen-in-meerbeke",
@@ -550,6 +961,7 @@ export const locations: Location[] = [
       "3D printen nabij Meerbeke",
       "3D model laten printen Meerbeke",
     ],
+    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Meerbeke voor maatwerk, prototypes en eindstukken. Ontvang je prijs bij X3DPrints. PLA, PETG.",
   },
   {
     slug: "3d-printen-in-nederhasselt",
@@ -561,6 +973,7 @@ export const locations: Location[] = [
       "3D printen nabij Nederhasselt",
       "3D model laten printen Nederhasselt",
     ],
+    metaDescription: "Professionele 3D prints in Nederhasselt, snel geleverd voor maatwerk, prototypes en eindstukken. X3DPrints print jouw ontwerp met zorg. PLA, PETG.",
   },
   {
     slug: "3d-printen-in-neigem",
@@ -572,6 +985,8 @@ export const locations: Location[] = [
       "3D printen nabij Neigem",
       "3D model laten printen Neigem",
     ],
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Neigem van prototypes tot kleine series, persoonlijk advies en scherpe prijzen. Vraag een offerte bij X3DPrints.",
+
   },
   {
     slug: "3d-printen-in-okegem",
@@ -583,6 +998,9 @@ export const locations: Location[] = [
       "3D printen nabij Okegem",
       "3D model laten printen Okegem",
     ],
+
+    metaDescription: "X3DPrints verzorgt 3D prints voor Okegem en omgeving van prototypes tot kleine series, persoonlijk advies en scherpe prijzen. Upload je model bij X3DPrints.",
+
   },
   {
     slug: "3d-printen-in-outer",
@@ -594,6 +1012,7 @@ export const locations: Location[] = [
       "3D printen nabij Outer",
       "3D model laten printen Outer",
     ],
+    metaDescription: "3D printservice in Outer met focus op precisie van prototypes tot kleine series, persoonlijk advies en scherpe prijzen. X3DPrints helpt je project vooruit.",
   },
   {
     slug: "3d-printen-in-pollare",
@@ -605,6 +1024,7 @@ export const locations: Location[] = [
       "3D printen nabij Pollare",
       "3D model laten printen Pollare",
     ],
+    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Pollare van prototypes tot kleine series. Ontvang je prijs bij X3DPrints. Kies uit PLA, PETG, TPU.",
   },
   {
     slug: "3d-printen-in-voorde",
@@ -616,8 +1036,8 @@ export const locations: Location[] = [
       "3D printen nabij Voorde",
       "3D model laten printen Voorde",
     ],
-  },
-
+    metaDescription: "Professionele 3D prints in Voorde, snel geleverd van prototypes tot kleine series. X3DPrints print jouw ontwerp met zorg. Kies uit PLA, PETG, TPU.",
+   },
   {
     slug: "3d-printen-in-appels",
     city: "Appels",
@@ -628,6 +1048,7 @@ export const locations: Location[] = [
       "3D printen nabij appels",
       "3D model laten printen appels",
     ],
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Appels voor prototypes, mallen en functionele onderdelen. Vraag een offerte bij X3DPrints. Kies uit PLA, PETG, TPU.",
   },
   {
     slug: "3d-printen-in-baasrode",
@@ -639,6 +1060,7 @@ export const locations: Location[] = [
       "3D printen nabij baasrode",
       "3D model laten printen baasrode",
     ],
+    metaDescription: "X3DPrints verzorgt 3D prints voor Baasrode en omgeving voor prototypes, mallen en functionele onderdelen. Upload je model bij X3DPrints. PLA, PETG.",
   },
   {
     slug: "3d-printen-in-grembergen",
@@ -650,6 +1072,7 @@ export const locations: Location[] = [
       "3D printen nabij grembergen",
       "3D model laten printen grembergen",
     ],
+    metaDescription: "3D printservice in Grembergen met focus op precisie voor prototypes, mallen en functionele onderdelen. X3DPrints helpt je project vooruit. PLA, PETG.",
   },
   {
     slug: "3d-printen-in-mespelare",
@@ -661,6 +1084,7 @@ export const locations: Location[] = [
       "3D printen nabij mespelare",
       "3D model laten printen mespelare",
     ],
+    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Mespelare voor prototypes, mallen en functionele onderdelen. Ontvang je prijs bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-oudegem",
@@ -672,6 +1096,7 @@ export const locations: Location[] = [
       "3D printen nabij oudegem",
       "3D model laten printen oudegem",
     ],
+    metaDescription: "Professionele 3D prints in Oudegem, snel geleverd voor prototypes, mallen en functionele onderdelen. X3DPrints print jouw ontwerp met zorg. PLA, PETG.",
   },
   {
     slug: "3d-printen-in-schoonaarde",
@@ -683,6 +1108,7 @@ export const locations: Location[] = [
       "3D printen nabij schoonaarde",
       "3D model laten printen schoonaarde",
     ],
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Schoonaarde voor visuele modellen en technische onderdelen. Vraag een offerte bij X3DPrints. Kies uit PLA, PETG, TPU.",
   },
   {
     slug: "3d-printen-in-sint-gillis-dendermonde",
@@ -694,6 +1120,7 @@ export const locations: Location[] = [
       "3D printen nabij sint-gillis-dendermonde",
       "3D model laten printen sint-gillis-dendermonde",
     ],
+
   },
   {
     slug: "3d-printen-in-afsnee",
@@ -851,6 +1278,8 @@ export const locations: Location[] = [
     metaDescription:
       "Snelle 3D print service voor Zwijnaarde bij X3DPrints. Perfect voor prototypes, mallen en custom onderdelen met keuze uit meerdere materialen.",
   },
+    metaDescription: "X3DPrints verzorgt 3D prints voor Sint-Gillis-Dendermonde en omgeving voor visuele modellen en technische onderdelen. Upload je model bij X3DPrints.",
+  }
 ];
 
 export function getLocationBySlug(slug: string): Location | undefined {

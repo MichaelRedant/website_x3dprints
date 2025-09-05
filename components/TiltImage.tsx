@@ -19,6 +19,7 @@ export default function TiltImage({
   className,
   intensity = 0.12,
   style,
+  alt,
   ...imgProps
 }: TiltImageProps) {
   const ref = useRef<HTMLDivElement>(null)
@@ -54,7 +55,7 @@ export default function TiltImage({
         ...style,
       }}
     >
-      <Image {...imgProps} />
+      <Image alt={alt} {...imgProps} />
     </div>
   )
 }

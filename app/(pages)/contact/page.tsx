@@ -33,7 +33,7 @@ export default function ContactPage() {
               Offerte of vraag? Laat maar komen.
             </h1>
             <p className="mt-3 text-lg text-slate-600">
-              Upload-link, korte context en gewenst materiaal volstaan. Je krijgt snel een heldere prijs en timing.
+              STL link, korte context en gewenst materiaal volstaan. Je krijgt snel een heldere prijs en timing.
             </p>
           </Reveal>
 
@@ -66,7 +66,7 @@ export default function ContactPage() {
                   </p>
                   <p>
                     <span className="block text-slate-500">Bestanden</span>
-                    STL, STEP. Voeg tolerantie of afwerking toe in je beschrijving.
+                    STL, STEP. Voeg de link, tolerantie of afwerking toe in je beschrijving.
                   </p>
                   <div className="pt-2">
                     <h3 className="text-sm font-semibold text-slate-900">Handig om te vermelden</h3>
