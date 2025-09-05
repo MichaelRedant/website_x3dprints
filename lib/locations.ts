@@ -3,6 +3,7 @@ export type Location = {
   slug: string;
   city: string;
   relatedPhrases?: string[];
+  metaDescription?: string;
 };
 
 export const locations: Location[] = [
@@ -16,6 +17,8 @@ export const locations: Location[] = [
       "3D printen nabij Aalst",
       "3D model laten printen Aalst",
     ],
+    metaDescription:
+      "3D printservice in Aalst voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-herzele",
@@ -27,6 +30,8 @@ export const locations: Location[] = [
       "3D printen nabij Herzele",
       "3D model laten printen Herzele",
     ],
+    metaDescription:
+      "3D printservice in Herzele voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-borsbeke",
@@ -38,6 +43,8 @@ export const locations: Location[] = [
       "3D printen nabij Borsbeke",
       "3D model laten printen Borsbeke",
     ],
+  metaDescription:
+    "3D printservice in Borsbeke voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-hillegem",
@@ -49,6 +56,8 @@ export const locations: Location[] = [
       "3D printen nabij Hillegem",
       "3D model laten printen Hillegem",
     ],
+  metaDescription:
+    "3D printservice in Hillegem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-ressegem",
@@ -60,6 +69,8 @@ export const locations: Location[] = [
       "3D printen nabij Ressegem",
       "3D model laten printen Ressegem",
     ],
+  metaDescription:
+    "3D printservice in Ressegem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-sint-antelinks",
@@ -71,6 +82,8 @@ export const locations: Location[] = [
       "3D printen nabij Sint-Antelinks",
       "3D model laten printen Sint-Antelinks",
     ],
+  metaDescription:
+    "3D printservice in Sint-Antelinks voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-sint-lievens-esse",
@@ -82,6 +95,8 @@ export const locations: Location[] = [
       "3D printen nabij Sint-Lievens-Esse",
       "3D model laten printen Sint-Lievens-Esse",
     ],
+  metaDescription:
+    "3D printservice in Sint-Lievens-Esse voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-steenhuize-wijnhuize",
@@ -93,6 +108,8 @@ export const locations: Location[] = [
       "3D printen nabij Steenhuize-Wijnhuize",
       "3D model laten printen Steenhuize-Wijnhuize",
     ],
+  metaDescription:
+    "3D printservice in Steenhuize-Wijnhuize voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-woubrechtegem",
@@ -104,6 +121,8 @@ export const locations: Location[] = [
       "3D printen nabij Woubrechtegem",
       "3D model laten printen Woubrechtegem",
     ],
+  metaDescription:
+    "3D printservice in Woubrechtegem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-geraardsbergen",
@@ -115,6 +134,8 @@ export const locations: Location[] = [
     "3D printen nabij Geraardsbergen",
     "3D model laten printen Geraardsbergen",
   ],
+  metaDescription:
+    "3D printservice in Geraardsbergen voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-zottegem",
@@ -126,6 +147,8 @@ export const locations: Location[] = [
     "3D printen nabij Zottegem",
     "3D model laten printen Zottegem",
   ],
+  metaDescription:
+  "3D printservice in Zottegem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-oudenaarde",
@@ -137,6 +160,8 @@ export const locations: Location[] = [
     "3D printen nabij Oudenaarde",
     "3D model laten printen Oudenaarde",
   ],
+  metaDescription:
+  "3D printservice in Oudenaarde voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-gentbrugge",
@@ -148,6 +173,8 @@ export const locations: Location[] = [
     "3D printen nabij gentbrugge",
     "3D model laten printen gentbrugge",
   ],
+  metaDescription:
+  "3D printservice in Gentbrugge voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-erpe-mere",
@@ -159,6 +186,8 @@ export const locations: Location[] = [
     "3D printen nabij erpe-mere",
     "3D model laten printen erpe-mere",
   ],
+  metaDescription:
+  "3D printservice in Erpe-mere voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-affligem",
@@ -170,6 +199,8 @@ export const locations: Location[] = [
     "3D printen nabij affligem",
     "3D model laten printen affligem",
   ],
+  metaDescription:
+  "3D printservice in Affligem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-dendermonde",
@@ -181,6 +212,8 @@ export const locations: Location[] = [
     "3D printen nabij dendermonde",
     "3D model laten printen dendermonde",
   ],
+  metaDescription:
+  "3D printservice in Dendermonde voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-haaltert",
@@ -192,6 +225,8 @@ export const locations: Location[] = [
     "3D printen nabij haaltert",
     "3D model laten printen haaltert",
   ],
+  metaDescription:
+  "3D printservice in Haaltert voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-lede",
@@ -203,6 +238,8 @@ export const locations: Location[] = [
     "3D printen nabij lede",
     "3D model laten printen lede",
   ],
+  metaDescription:
+  "3D printservice in Lede voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-lierde",
@@ -214,6 +251,8 @@ export const locations: Location[] = [
     "3D printen nabij lierde",
     "3D model laten printen lierde",
   ],
+  metaDescription:
+  "3D printservice in Lierde voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-merelbeke",
@@ -225,6 +264,8 @@ export const locations: Location[] = [
     "3D printen nabij merelbeke",
     "3D model laten printen merelbeke",
   ],
+  metaDescription:
+  "3D printservice in Merelbeke voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-sint-lievens-houtem",
@@ -236,6 +277,8 @@ export const locations: Location[] = [
     "3D printen nabij sint-lievens-houtem",
     "3D model laten printen sint-lievens-houtem",
   ],
+  metaDescription:
+  "3D printservice in Sint-Lievens-Houtem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-wetteren",
@@ -247,6 +290,8 @@ export const locations: Location[] = [
     "3D printen nabij wetteren",
     "3D model laten printen wetteren",
   ],
+  metaDescription:
+  "3D printservice in Wetteren voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-brakel",
@@ -258,6 +303,8 @@ export const locations: Location[] = [
     "3D printen nabij brakel",
     "3D model laten printen brakel",
   ],
+  metaDescription:
+  "3D printservice in Brakel voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-gent",
@@ -269,6 +316,8 @@ export const locations: Location[] = [
     "3D printen nabij gent",
     "3D model laten printen gent",
   ],
+  metaDescription:
+  "3D printservice in Gent voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-zottegem",
@@ -280,6 +329,8 @@ export const locations: Location[] = [
     "3D printen nabij zottegem",
     "3D model laten printen zottegem",
   ],
+  metaDescription:
+  "3D printservice in Zottegem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-erwetegem",
@@ -291,6 +342,8 @@ export const locations: Location[] = [
     "3D printen nabij erwetegem",
     "3D model laten printen erwetegem",
   ],
+  metaDescription:
+  "3D printservice in Erwetegem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-elene",
@@ -302,6 +355,8 @@ export const locations: Location[] = [
     "3D printen nabij elene",
     "3D model laten printen elene",
   ],
+  metaDescription:
+  "3D printservice in Elene voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-godveerdegem",
@@ -313,6 +368,8 @@ export const locations: Location[] = [
     "3D printen nabij godveerdegem",
     "3D model laten printen godveerdegem",
   ],
+  metaDescription:
+  "3D printservice in Godveerdegem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-grotenberge",
@@ -324,6 +381,8 @@ export const locations: Location[] = [
     "3D printen nabij grotenberge",
     "3D model laten printen grotenberge",
   ],
+  metaDescription:
+  "3D printservice in Grotenberge voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-leeuwergem",
@@ -335,6 +394,8 @@ export const locations: Location[] = [
     "3D printen nabij leeuwergem",
     "3D model laten printen leeuwergem",
   ],
+  metaDescription:
+  "3D printservice in Leeuwergem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-oombergen",
@@ -346,6 +407,8 @@ export const locations: Location[] = [
     "3D printen nabij oombergen",
     "3D model laten printen oombergen",
   ],
+  metaDescription:
+  "3D printservice in Oombergen voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-sint-goriks-oudenhove",
@@ -357,6 +420,8 @@ export const locations: Location[] = [
     "3D printen nabij sint-goriks-oudenhove",
     "3D model laten printen sint-goriks-oudenhove",
   ],
+  metaDescription:
+  "3D printservice in Sint-Goriks-Oudenhove voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-sint-maria-oudenhove",
@@ -368,6 +433,8 @@ export const locations: Location[] = [
     "3D printen nabij sint-maria-oudenhove",
     "3D model laten printen sint-maria-oudenhove",
   ],
+  metaDescription:
+  "3D printservice in Sint-Maria-Oudenhove voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-strijpen",
@@ -379,6 +446,8 @@ export const locations: Location[] = [
     "3D printen nabij strijpen",
     "3D model laten printen strijpen",
   ],
+  metaDescription:
+  "3D printservice in Strijpen voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-velzeke-ruddershove",
@@ -390,6 +459,8 @@ export const locations: Location[] = [
     "3D printen nabij velzeke-ruddershove",
     "3D model laten printen velzeke-ruddershove",
   ],
+  metaDescription:
+  "3D printservice in Velzeke-Ruddershove voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },{
   slug: "3d-printen-in-baardegem",
   city: "Baardegem",
@@ -400,6 +471,8 @@ export const locations: Location[] = [
     "3D printen nabij baardegem",
     "3D model laten printen baardegem",
   ],
+  metaDescription:
+  "3D printservice in Baardegem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-erembodegem",
@@ -411,6 +484,8 @@ export const locations: Location[] = [
     "3D printen nabij erembodegem",
     "3D model laten printen erembodegem",
   ],
+  metaDescription:
+  "3D printservice in Erembodegem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-gijzegem",
@@ -422,6 +497,8 @@ export const locations: Location[] = [
     "3D printen nabij gijzegem",
     "3D model laten printen gijzegem",
   ],
+  metaDescription:
+  "3D printservice in Gijzegem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-herdersem",
@@ -433,6 +510,8 @@ export const locations: Location[] = [
     "3D printen nabij herdersem",
     "3D model laten printen herdersem",
   ],
+  metaDescription:
+  "3D printservice in Herdersem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-hofstade",
@@ -444,6 +523,8 @@ export const locations: Location[] = [
     "3D printen nabij hofstade",
     "3D model laten printen hofstade",
   ],
+  metaDescription:
+  "3D printservice in Hofstade voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-meldert",
@@ -455,6 +536,8 @@ export const locations: Location[] = [
     "3D printen nabij meldert",
     "3D model laten printen meldert",
   ],
+  metaDescription:
+  "3D printservice in Meldert voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
 {
   slug: "3d-printen-in-moorsel",
@@ -466,6 +549,8 @@ export const locations: Location[] = [
     "3D printen nabij moorsel",
     "3D model laten printen moorsel",
   ],
+  metaDescription:
+  "3D printservice in Moorsel voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
 },
   {
     slug: "3d-printen-in-nieuwerkerken",
@@ -477,6 +562,8 @@ export const locations: Location[] = [
       "3D printen nabij nieuwerkerken",
       "3D model laten printen nieuwerkerken",
     ],
+  metaDescription:
+    "3D printservice in Geraardsbergen voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-ninove",
@@ -488,6 +575,8 @@ export const locations: Location[] = [
       "3D printen nabij Ninove",
       "3D model laten printen Ninove",
     ],
+  metaDescription:
+    "3D printservice in Ninove voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-appelterre-eichem",
@@ -499,6 +588,8 @@ export const locations: Location[] = [
       "3D printen nabij Appelterre-Eichem",
       "3D model laten printen Appelterre-Eichem",
     ],
+  metaDescription:
+    "3D printservice in Appelterre-Eichem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-aspelare",
@@ -510,6 +601,8 @@ export const locations: Location[] = [
       "3D printen nabij Aspelare",
       "3D model laten printen Aspelare",
     ],
+  metaDescription:
+    "3D printservice in Aspelare voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-denderwindeke",
@@ -521,6 +614,8 @@ export const locations: Location[] = [
       "3D printen nabij Denderwindeke",
       "3D model laten printen Denderwindeke",
     ],
+  metaDescription:
+    "3D printservice in Denderwindeke voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-lieferinge",
@@ -532,6 +627,8 @@ export const locations: Location[] = [
       "3D printen nabij Lieferinge",
       "3D model laten printen Lieferinge",
     ],
+  metaDescription:
+    "3D printservice in Lieferinge voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-meerbeke",
@@ -543,6 +640,8 @@ export const locations: Location[] = [
       "3D printen nabij Meerbeke",
       "3D model laten printen Meerbeke",
     ],
+  metaDescription:
+    "3D printservice in Meerbeke voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-nederhasselt",
@@ -554,6 +653,8 @@ export const locations: Location[] = [
       "3D printen nabij Nederhasselt",
       "3D model laten printen Nederhasselt",
     ],
+  metaDescription:
+    "3D printservice in Nederhasselt voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-neigem",
@@ -565,6 +666,8 @@ export const locations: Location[] = [
       "3D printen nabij Neigem",
       "3D model laten printen Neigem",
     ],
+  metaDescription:
+    "3D printservice in Neigem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-okegem",
@@ -576,6 +679,8 @@ export const locations: Location[] = [
       "3D printen nabij Okegem",
       "3D model laten printen Okegem",
     ],
+  metaDescription:
+    "3D printservice in Okegem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-outer",
@@ -587,6 +692,8 @@ export const locations: Location[] = [
       "3D printen nabij Outer",
       "3D model laten printen Outer",
     ],
+  metaDescription:
+    "3D printservice in Outer voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-pollare",
@@ -598,6 +705,8 @@ export const locations: Location[] = [
       "3D printen nabij Pollare",
       "3D model laten printen Pollare",
     ],
+  metaDescription:
+    "3D printservice in Pollare voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-voorde",
@@ -609,6 +718,8 @@ export const locations: Location[] = [
       "3D printen nabij Voorde",
       "3D model laten printen Voorde",
     ],
+  metaDescription:
+    "3D printservice in Voorde voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
 
   {
@@ -621,6 +732,8 @@ export const locations: Location[] = [
       "3D printen nabij appels",
       "3D model laten printen appels",
     ],
+  metaDescription:
+    "3D printservice in Appels voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-baasrode",
@@ -632,6 +745,8 @@ export const locations: Location[] = [
       "3D printen nabij baasrode",
       "3D model laten printen baasrode",
     ],
+  metaDescription:
+    "3D printservice in Baasrode voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-grembergen",
@@ -643,6 +758,8 @@ export const locations: Location[] = [
       "3D printen nabij grembergen",
       "3D model laten printen grembergen",
     ],
+  metaDescription:
+    "3D printservice in Grembergen voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-mespelare",
@@ -654,6 +771,8 @@ export const locations: Location[] = [
       "3D printen nabij mespelare",
       "3D model laten printen mespelare",
     ],
+  metaDescription:
+    "3D printservice in Mespelare voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-oudegem",
@@ -665,6 +784,8 @@ export const locations: Location[] = [
       "3D printen nabij oudegem",
       "3D model laten printen oudegem",
     ],
+  metaDescription:
+    "3D printservice in Oudegem voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-schoonaarde",
@@ -676,6 +797,8 @@ export const locations: Location[] = [
       "3D printen nabij schoonaarde",
       "3D model laten printen schoonaarde",
     ],
+  metaDescription:
+    "3D printservice in Schoonaarde voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
   {
     slug: "3d-printen-in-sint-gillis-dendermonde",
@@ -687,6 +810,8 @@ export const locations: Location[] = [
       "3D printen nabij sint-gillis-dendermonde",
       "3D model laten printen sint-gillis-dendermonde",
     ],
+  metaDescription:
+    "3D printservice in Sint-Gillis-Dendermonde voor prototypes en kleine series. Snel, nauwkeurig en betaalbaar. Vraag je offerte bij X3DPrints.",
   },
 ];
 
