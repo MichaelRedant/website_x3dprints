@@ -29,19 +29,18 @@ import { keywordSvgDataUri } from "@/lib/svg"
 import CtaBlock from "@/components/CtaBlock"
 import Faq from "@/components/Faq"
 
-interface PageProps {
-  params: { slug: string }
-}
 
 export const revalidate = 86_400 // 24u cache
 export const dynamicParams = false
 
-export function generateStaticParams() {
+export function generateStaticParams(): Array<{ slug: string }> {
   return getAllLocationSlugs().map((slug) => ({ slug }))
 }
 
 /** SEO: verbeterd met robots en title-template */
-export function generateMetadata({ params }: PageProps): Metadata {
+export function generateMetadata(
+  { params }: { params: { slug: string } }
+): Metadata {
   const loc = getLocationBySlug(params.slug)
   if (!loc) return {}
 
@@ -84,7 +83,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
   }
 }
 
-export default async function Page({ params }: PageProps) {
+export default async function Page(
+  { params }: { params: { slug: string } }
+) {
   const slug = params.slug.toLowerCase()
   const loc = getLocationBySlug(slug)
   if (!loc) notFound()
