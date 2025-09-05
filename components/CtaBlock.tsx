@@ -52,7 +52,7 @@ export default function CtaBlock({
           </h2>
 
           <p className="mt-2 text-slate-700 dark:text-slate-300">
-            Upload je <strong>.STL</strong> of <strong>.STEP</strong>, kies materiaal (PLA, PETG, TPU) en ontvang binnen
+            Kies materiaal (PLA, PETG, TPU) en ontvang binnen
             <strong> 24 uur</strong> een heldere prijs en planning. Perfect voor prototypes en kleine series.
           </p>
 
