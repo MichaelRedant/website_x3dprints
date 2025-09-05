@@ -872,3 +872,34 @@ export const locations: Location[] = [
     metaDescription: "Professionele 3D prints in Zwijnaarde voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
   },
 ];
+// --- HELPERS -------------------------------------------------
+function normSlug(s: string): string {
+  return s.trim().toLowerCase().replace(/^\/|\/$/g, "")
+}
+
+// Standaard varianten om semantische keywords te vullen als je niets opgeeft.
+export function buildDefaultRelatedPhrases(city: string): string[] {
+  const c = city.trim()
+  return [
+    `3D printen in ${c}`,
+    `3D print service ${c}`,
+    `prototypes 3D print ${c}`,
+    `FDM 3D print ${c}`,
+    `PLA PETG TPU ${c}`,
+  ]
+}
+
+// --- API -----------------------------------------------------
+export function getAllLocationSlugs(): string[] {
+  return locations.map(l => l.slug)
+}
+
+export function getLocationBySlug(slug: string): Location | undefined {
+  const s = normSlug(slug)
+  return locations.find(l => normSlug(l.slug) === s)
+}
+
+// (Optioneel, handig tijdens migratie)
+export function listLocations(): Location[] {
+  return [...locations]
+}

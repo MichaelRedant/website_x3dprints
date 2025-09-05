@@ -56,6 +56,24 @@ export async function generateMetadata(
     `${keyphrase} door X3DPrints. Snelle, nauwkeurige 3D print service voor prototypes en kleine series in ${loc.city}. Materialen: PLA, PETG, ABS/ASA, TPU.`
   const url = `https://www.x3dprints.be/${loc.slug}`
 
+  // Markdown van deze locatie ophalen (voor een écht unieke snippet)
+  let contentMd = ""
+  try {
+    contentMd = await readFile(
+      join(process.cwd(), "content", "locations", `${loc.slug}.md`),
+      "utf8",
+    )
+  } catch {
+    // geen markdown? niet erg – val terug op city-fallback
+  }
+
+  const finalDescription =
+    (loc.metaDescription && loc.metaDescription.trim().length > 0)
+      ? loc.metaDescription
+      : (contentMd
+          ? makeDescriptionFromMarkdown(contentMd, loc.city)
+          : buildCityMetaDescription(loc.city))
+
   // ==== NIEUW: unieke description ====
   // 1) Als je in locations metaDescription meegeeft -> gebruik die
   // 2) Anders proberen we uit de markdown te destilleren (zie stap 4)
@@ -562,12 +580,7 @@ export default async function Page(
           </nav>
           {/* Definitieve, unieke meta description (140–160 chars) */}
           {/* eslint-disable-next-line @next/next/no-head-element */}
-          <head>
-            <meta name="description" content={finalDescription} />
-            {/* Houd OG/Twitter desnoods ook in sync voor social previews */}
-            <meta property="og:description" content={finalDescription} />
-            <meta name="twitter:description" content={finalDescription} />
-          </head>
+          
 
           {/* JSON-LD */}
           <script
