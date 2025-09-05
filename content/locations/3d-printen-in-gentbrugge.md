@@ -47,6 +47,11 @@ Produceer functionele prototypes, op maat gemaakte mallen of vervangonderdelen z
 
 Maak unieke kunstobjecten, gepersonaliseerde geschenken of onderdelen voor uw doe-het-zelfprojecten. Uw creativiteit is de enige limiet.
 
+### Gentbrugge en de link met Gent
+
+- [Stad Gent](https://stad.gent) investeert in duurzame maakinitiatieven.
+- X3DPrints levert 3D prints in Gentbrugge en alle Gentse buurten.
+
 ---
 
 ## Rapid Prototyping in Gentbrugge
@@ -79,6 +84,23 @@ Met onze **rapid prototyping service** in de regio Gentbrugge kunt u uw ontwerpp
 -   🔧 **Vervangonderdelen** voor machines en apparaten.
 -   🎁 **Gepersonaliseerde merchandise** en relatiegeschenken.
 -   💡 **Educatieve modellen** voor scholen en workshops.
+
+---
+## Interne links rond 3D printen in Gent
+
+- [3D printen in Gent](/3d-printen-in-gent)
+- [3D printen in Afsnee](/3d-printen-in-afsnee)
+- [3D printen in Desteldonk](/3d-printen-in-desteldonk)
+- [3D printen in Drongen](/3d-printen-in-drongen)
+- [3D printen in Ledeberg](/3d-printen-in-ledeberg)
+- [3D printen in Mariakerke](/3d-printen-in-mariakerke)
+- [3D printen in Mendonk](/3d-printen-in-mendonk)
+- [3D printen in Oostakker](/3d-printen-in-oostakker)
+- [3D printen in Sint-Amandsberg](/3d-printen-in-sint-amandsberg)
+- [3D printen in Sint-Kruis-Winkel](/3d-printen-in-sint-kruis-winkel)
+- [3D printen in Sint-Denijs-Westrem](/3d-printen-in-sint-denijs-westrem)
+- [3D printen in Wondelgem](/3d-printen-in-wondelgem)
+- [3D printen in Zwijnaarde](/3d-printen-in-zwijnaarde)
 
 ---
 
