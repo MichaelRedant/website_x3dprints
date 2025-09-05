@@ -27,7 +27,6 @@ export default function FooterLocations({ title = "Lokale pagina\u2019s" }: Prop
   })
 
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
-
   const itemList = filtered.slice(0, 50).map((loc, i) => ({
     "@type": "ListItem",
     position: i + 1,

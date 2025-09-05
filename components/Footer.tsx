@@ -61,7 +61,7 @@ export default function Footer() {
 
       {/* main footer */}
       <div className="mt-10 border-t bg-white/60 backdrop-blur">
-        <Container className="grid gap-10 py-12 text-sm text-slate-600 md:grid-cols-4">
+        <Container className="grid gap-10 py-12 text-sm text-slate-600 md:grid-cols-5">
           {/* brand */}
           <div className="md:col-span-2">
             <Link href="/" className="inline-flex items-center gap-3">
