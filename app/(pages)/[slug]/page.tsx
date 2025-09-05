@@ -51,9 +51,8 @@ export async function generateMetadata(
     ? loc.relatedPhrases
     : buildDefaultRelatedPhrases(loc.city)
 
-  const description =
+  const metaDescription =
     loc.metaDescription ??
-    loc.description ??
     `${keyphrase} door X3DPrints. Snelle, nauwkeurige 3D print service voor prototypes en kleine series in ${loc.city}. Materialen: PLA, PETG, ABS/ASA, TPU.`
   const url = `https://www.x3dprints.be/${loc.slug}`
 

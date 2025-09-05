@@ -481,12 +481,6 @@ export const locations: Location[] = [
     "3D printing bedrijf moorsel",
     "3D printen nabij moorsel",
     "3D model laten printen moorsel",
-  ],
-},
-      "rapid prototyping Geraardsbergen",
-      "3D printing bedrijf Geraardsbergen",
-      "3D printen nabij Geraardsbergen",
-      "3D model laten printen Geraardsbergen",
     ],
     metaDescription: "Professionele 3D prints in Geraardsbergen, snel geleverd voor prototypes, mallen en functionele onderdelen. X3DPrints print jouw ontwerp met zorg.",
   },
@@ -1278,8 +1272,6 @@ export const locations: Location[] = [
     metaDescription:
       "Snelle 3D print service voor Zwijnaarde bij X3DPrints. Perfect voor prototypes, mallen en custom onderdelen met keuze uit meerdere materialen.",
   },
-    metaDescription: "X3DPrints verzorgt 3D prints voor Sint-Gillis-Dendermonde en omgeving voor visuele modellen en technische onderdelen. Upload je model bij X3DPrints.",
-  }
 ];
 
 export function getLocationBySlug(slug: string): Location | undefined {
