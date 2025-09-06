@@ -581,6 +581,7 @@ export default async function Page(
           {/* Definitieve, unieke meta description (140–160 chars) */}
           {/* eslint-disable-next-line @next/next/no-head-element */}
           
+                    <meta name="description" content={finalDescription} />
 
           {/* JSON-LD */}
           <script
