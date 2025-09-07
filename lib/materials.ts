@@ -3,6 +3,7 @@
 
 export type MaterialKey =
   | "PLA_TOUGH_PLUS"
+  |"PLA_MATTE"
   | "PLA_GLOW"
   | "PLA_MARBLE"
   | "PLA_SPARKLE"
@@ -12,7 +13,6 @@ export type MaterialKey =
   | "PLA_SILK_PLUS"
   | "PLA_BASIC_GRADIENT"
   | "PLA_BASIC"
-  | "PLA_MATTE"
   | "PLA_TRANSLUCENT"
   | "PLA_SILK_MULTI_COLOR"
   | "PLA_CF"
@@ -51,15 +51,6 @@ const g = {
 };
 
 
-// Voorraad (inStock: true):
-// - PLA Matte: wit, zwart, geel, blauw, groen, oranje, roze
-// - PLA Wood: Walnut
-// - PLA Glow: Glow Groen
-
-// - PETG: zwart, wit, transparant
-// - TPU: zwart
-// Alles buiten dit lijstje: op bestelling (inStock: false)
-
 export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
   PLA_TOUGH_PLUS: {
     name: "PLA Tough+",
@@ -76,6 +67,31 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       { label: "Lichtblauw", color: "#60a5fa", inStock: false },
       { label: "Zwart", color: "#000000", inStock: false },
 
+    ],
+  },
+
+    PLA_MATTE: {
+    name: "PLA Matte",
+    description: "Matte PLA met lage glans. Verdoezelt layer-lijnen, oogt premium.",
+    features: ["Mat oppervlak", "Strakke details"],
+    swatches: [
+      { label: "White", color: "#f5f5f5", inStock: true },
+      { label: "Grey", color: "#a3a3a3", inStock: false },
+      { label: "Black", color: "#0a0a0a", inStock: true },
+      { label: "Sand", color: "#c8b69f", inStock: false },
+      { label: "Clay", color: "#b98a6d", inStock: false },
+      { label: "Terracotta", color: "#b45309", inStock: false },
+      { label: "Blush", color: "#e9a6b1", inStock: false },
+      { label: "Burgundy", color: "#7f1d1d", inStock: false },
+      { label: "Navy", color: "#1e3a8a", inStock: false },
+      { label: "Blue", color: "#2563eb", inStock: true },
+      { label: "Teal", color: "#0f766e", inStock: false },
+      { label: "Pine", color: "#14532d", inStock: false },
+      { label: "Olive", color: "#6b8e23", inStock: false },
+      { label: "Lime", color: "#84cc16", inStock: true },
+      { label: "Yellow", color: "#facc15", inStock: true },
+      { label: "Orange", color: "#fb923c", inStock: true },
+      { label: "Red", color: "#dc2626", inStock: false },
     ],
   },
 
@@ -252,30 +268,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
     ],
   },
 
-  PLA_MATTE: {
-    name: "PLA Matte",
-    description: "Matte PLA met lage glans. Verdoezelt layer-lijnen, oogt premium.",
-    features: ["Mat oppervlak", "Strakke details"],
-    swatches: [
-      { label: "White", color: "#f5f5f5", inStock: true },
-      { label: "Grey", color: "#a3a3a3", inStock: false },
-      { label: "Black", color: "#0a0a0a", inStock: true },
-      { label: "Sand", color: "#c8b69f", inStock: false },
-      { label: "Clay", color: "#b98a6d", inStock: false },
-      { label: "Terracotta", color: "#b45309", inStock: false },
-      { label: "Blush", color: "#e9a6b1", inStock: false },
-      { label: "Burgundy", color: "#7f1d1d", inStock: false },
-      { label: "Navy", color: "#1e3a8a", inStock: false },
-      { label: "Blue", color: "#2563eb", inStock: true },
-      { label: "Teal", color: "#0f766e", inStock: false },
-      { label: "Pine", color: "#14532d", inStock: false },
-      { label: "Olive", color: "#6b8e23", inStock: false },
-      { label: "Lime", color: "#84cc16", inStock: true },
-      { label: "Yellow", color: "#facc15", inStock: true },
-      { label: "Orange", color: "#fb923c", inStock: true },
-      { label: "Red", color: "#dc2626", inStock: false },
-    ],
-  },
+
 
   PLA_TRANSLUCENT: {
     name: "PLA Translucent",
@@ -385,6 +378,7 @@ export const MATERIAL_COST_EUR_PER_KG: Record<MaterialKey, number> = {
 
 export const MATERIAL_ORDER: MaterialKey[] = [
   "PLA_TOUGH_PLUS",
+  "PLA_MATTE",
   "PLA_GLOW",
   "PLA_MARBLE",
   "PLA_SPARKLE",
@@ -394,12 +388,12 @@ export const MATERIAL_ORDER: MaterialKey[] = [
   "PLA_SILK_PLUS",
   "PLA_BASIC_GRADIENT",
   "PLA_BASIC",
-  "PLA_MATTE",
+  "PETG",
   "PLA_TRANSLUCENT",
   "PLA_SILK_MULTI_COLOR",
   "PLA_CF",
   "PLA_WOOD",
-  "PETG",
+  
   "TPU",
 ];
 

@@ -8,20 +8,35 @@ import FaqPromo from "@/components/FaqPromo"
 import GlassCard from "@/components/GlassCard"
 
 export const metadata: Metadata = {
-  title: "Materialen | X3DPrints",
+  title: "Materialen (PLA, PETG, TPU) | X3DPrints",
   description:
-    "Overzicht van beschikbare filamenten (PLA, PETG, TPU) met voorraad-indicatie.",
+    "Overzicht van beschikbare filamenten met eigenschappen en voorraad: PLA (Matte, Silk, Marble, Wood, etc.), PETG en TPU. Vraag gratis materiaaladvies.",
   alternates: { canonical: "https://www.x3dprints.be/materials" },
+  openGraph: {
+    title: "Materialen | X3DPrints",
+    description:
+      "Materialen voor 3D printen: PLA-varianten, PETG en TPU. Zie eigenschappen, kleuren en beschikbaarheid.",
+    url: "https://www.x3dprints.be/materials",
+    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    siteName: "X3DPrints",
+    locale: "nl_BE",
+  },
+  twitter: { card: "summary_large_image" },
+}
+
+function slugify(input: string) {
+  return input.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
 }
 
 export default function MaterialsPage() {
-
   const materials = MATERIAL_ORDER.map((key) => {
     const m = MATERIALS[key]
     return {
+      key,
+      anchorId: slugify(m.name),
       title: m.name,
       description: m.description,
-      features: m.features,
+      features: m.features || [],
       swatches: m.swatches.map((s) => ({
         label: s.label,
         fill: s.color,
@@ -30,9 +45,34 @@ export default function MaterialsPage() {
     }
   })
 
+  // JSON-LD: ItemList van materialen (naam + beschrijving)
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Materialen voor 3D printen",
+    itemListElement: materials.map((m, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `https://www.x3dprints.be/materials#${m.anchorId}`,
+      item: {
+        "@type": "Product",
+        name: m.title,
+        description: m.description || undefined,
+        brand: { "@type": "Brand", name: "X3DPrints" },
+        category: "3D printing filament",
+      },
+    })),
+  }
 
   return (
     <main className="relative">
+      {/* decor */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(100%_50%_at_50%_0%,rgba(99,102,241,.14),transparent_70%)]"
+      />
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.07]" />
+
       <section className="px-6 pt-14 pb-8 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
@@ -40,11 +80,9 @@ export default function MaterialsPage() {
               Materialen
             </h1>
             <p className="mt-3 max-w-2xl text-slate-600">
-
-
-             Volledige beschikbaarheid van de filamenten.
-
-
+              Overzicht van onze meest gebruikte filamenten met eigenschappen, kleuropties en voorraad:
+              <strong> PLA</strong> (Matte, Tough+, Silk, Marble, Wood, Translucent, enz.),
+              <strong> PETG</strong> en <strong>TPU</strong>. Twijfel je? We helpen je kiezen.
             </p>
           </Reveal>
         </div>
@@ -54,11 +92,18 @@ export default function MaterialsPage() {
         <div className="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2">
           {materials.map((m, i) => (
             <Reveal key={m.title} delay={i * 0.04}>
-              <MaterialCard title={m.title} swatches={m.swatches} />
+              <MaterialCard
+                anchorId={m.anchorId}
+                title={m.title}
+                description={m.description}  
+                features={m.features}         
+                swatches={m.swatches}
+              />
             </Reveal>
           ))}
         </div>
 
+        {/* Legenda + CTA */}
         <div className="mx-auto mt-10 max-w-6xl rounded-2xl border border-slate-200/70 bg-white/70 p-5 text-sm text-slate-600 backdrop-blur">
           <div className="font-semibold text-slate-900">Legenda</div>
           <div className="mt-2 grid gap-4 sm:grid-cols-3">
@@ -92,18 +137,23 @@ export default function MaterialsPage() {
         </div>
       </section>
 
-      {/* FAQ */}
-            <section className="px-6 pb-20 sm:px-8 lg:px-12">
-              <div className="mx-auto max-w-6xl">
-                <Reveal>
-                  <GlassCard className="overflow-hidden p-8 sm:p-10">
-                    <FaqPromo className="mt-10" />
-                  </GlassCard>
-                </Reveal>
-              </div>
-            </section>
+      {/* FAQ / Promo */}
+      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="overflow-hidden p-8 sm:p-10">
+              <FaqPromo className="mt-10" />
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
 
+      {/* JSON-LD */}
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
     </main>
   )
 }
-

@@ -1,10 +1,11 @@
-// lib/locations.ts
+// /lib/locations.ts
 export type Location = {
-  slug: string;
-  city: string;
-  relatedPhrases?: string[];
-  metaDescription?: string;
-};
+  slug: string
+  city: string
+  relatedPhrases?: string[]
+  metaDescription?: string
+}
+
 
 export const locations: Location[] = [
   {
@@ -877,7 +878,6 @@ function normSlug(s: string): string {
   return s.trim().toLowerCase().replace(/^\/|\/$/g, "")
 }
 
-// Standaard varianten om semantische keywords te vullen als je niets opgeeft.
 export function buildDefaultRelatedPhrases(city: string): string[] {
   const c = city.trim()
   return [
@@ -889,17 +889,15 @@ export function buildDefaultRelatedPhrases(city: string): string[] {
   ]
 }
 
-// --- API -----------------------------------------------------
 export function getAllLocationSlugs(): string[] {
-  return locations.map(l => l.slug)
+  return locations.map((l) => l.slug)
 }
 
 export function getLocationBySlug(slug: string): Location | undefined {
   const s = normSlug(slug)
-  return locations.find(l => normSlug(l.slug) === s)
+  return locations.find((l) => normSlug(l.slug) === s)
 }
 
-// (Optioneel, handig tijdens migratie)
 export function listLocations(): Location[] {
   return [...locations]
 }

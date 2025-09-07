@@ -1,29 +1,35 @@
 // app/sitemap.ts
 import type { MetadataRoute } from "next"
+import { SITE } from "@/lib/seo"
 import { getAllLocationSlugs } from "@/lib/locations"
 
-// Optioneel: centraal beheer van je site-URL
-const BASE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, "") || "https://www.x3dprints.be"
+const BASE_URL = SITE.url.replace(/\/+$/, "") // https://www.x3dprints.be
 
 export const dynamic = "force-static"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Statische routes
-  const staticRoutes: MetadataRoute.Sitemap = [
-    "", "/services", "/materials", "/pricing", "/portfolio", "/about", "/contact",
-  ].map((path) => ({
-    url: `${BASE_URL}${path || "/"}`,
+  // Statische routes – met passende changeFrequency
+  const staticRoutes = [
+    { path: "/",                changeFrequency: "weekly"  as const, priority: 0.8 },
+    { path: "/services",        changeFrequency: "monthly" as const, priority: 0.8 },
+    { path: "/materials",       changeFrequency: "monthly" as const, priority: 0.8 },
+    { path: "/pricing",         changeFrequency: "weekly"  as const, priority: 0.8 },
+    { path: "/portfolio",       changeFrequency: "weekly"  as const, priority: 0.8 },
+    { path: "/about",           changeFrequency: "monthly" as const, priority: 0.6 },
+    { path: "/contact",         changeFrequency: "monthly" as const, priority: 0.6 },
+    { path: "/faq",             changeFrequency: "monthly" as const, priority: 0.6 },
+  ].map(({ path, changeFrequency, priority }) => ({
+    url: `${BASE_URL}${path}`,
     lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: 0.8,
+    changeFrequency,
+    priority,
   }))
 
   // Dynamische location-slugs
-  const locationRoutes: MetadataRoute.Sitemap = getAllLocationSlugs().map((slug) => ({
+  const locationRoutes = getAllLocationSlugs().map((slug) => ({
     url: `${BASE_URL}/${slug}`,
     lastModified: new Date(),
-    changeFrequency: "weekly",
+    changeFrequency: "weekly" as const,
     priority: 0.7,
   }))
 

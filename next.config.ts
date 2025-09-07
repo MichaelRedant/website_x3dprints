@@ -1,20 +1,20 @@
 // next.config.ts
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
-  // We bouwen een pure statische site (FTP deploy)
+  // Pure statische export (FTP/Apache)
   output: "export",
 
-  // Zorgt voor /pad/ -> /pad/index.html mappen (handig op Apache)
+  // /pad/ -> /pad/index.html mappen (apache/vimexx vriendelijk)
   trailingSlash: true,
 
-  // Gebruik <Image> zonder optimizer (geen Node runtime)
+  // <Image> zonder server optimizer (geen Node runtime)
   images: { unoptimized: true },
 
-  // Redirects verhuizen we naar .htaccess (Next export voert ze niet server-side uit)
+  // Redirects doe je via .htaccess op de server
   async redirects() {
-    return [];
+    return []
   },
-};
+}
 
-export default nextConfig;
+export default nextConfig
