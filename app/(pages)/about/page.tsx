@@ -7,6 +7,7 @@ import TiltCard from "@/components/TiltCard"
 import Counter from "@/components/Counter"
 import GlassOrb from "@/components/GlassOrb"
 import GlassCard from "@/components/GlassCard"
+import FaqPromo from "@/components/FaqPromo"
 
 export const metadata: Metadata = {
   title: "Over X3DPrints | 3D-printstudio in Herzele",
@@ -269,6 +270,17 @@ export default function Page() {
                   </div>
                 </Parallax>
               </div>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+       {/* FAQ */}
+      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="overflow-hidden p-8 sm:p-10">
+              <FaqPromo className="mt-10" />
             </GlassCard>
           </Reveal>
         </div>

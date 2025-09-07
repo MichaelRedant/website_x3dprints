@@ -4,6 +4,8 @@ import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import MaterialCard from "@/components/MaterialCard"
 import { MATERIALS, MATERIAL_ORDER } from "@/lib/materials"
+import FaqPromo from "@/components/FaqPromo"
+import GlassCard from "@/components/GlassCard"
 
 export const metadata: Metadata = {
   title: "Materialen | X3DPrints",
@@ -89,6 +91,18 @@ export default function MaterialsPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+            <section className="px-6 pb-20 sm:px-8 lg:px-12">
+              <div className="mx-auto max-w-6xl">
+                <Reveal>
+                  <GlassCard className="overflow-hidden p-8 sm:p-10">
+                    <FaqPromo className="mt-10" />
+                  </GlassCard>
+                </Reveal>
+              </div>
+            </section>
+
     </main>
   )
 }

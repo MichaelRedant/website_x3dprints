@@ -7,6 +7,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import PriceEstimator from "@/components/PriceEstimator"
 import { GRAMS_PER_TIER, calcUnitPrice, type Tier } from "@/lib/pricing"
 import type { MaterialKey } from "@/lib/materials"
+import FaqPromo from "@/components/FaqPromo"
 
 export const metadata: Metadata = {
   title: "Prijzen 3D printen | X3DPrints",
@@ -288,6 +289,17 @@ export default function Page() {
           </Reveal>
         </div>
       </section>
+
+      {/* FAQ */}
+            <section className="px-6 pb-20 sm:px-8 lg:px-12">
+              <div className="mx-auto max-w-6xl">
+                <Reveal>
+                  <GlassCard className="overflow-hidden p-8 sm:p-10">
+                    <FaqPromo className="mt-10" />
+                  </GlassCard>
+                </Reveal>
+              </div>
+            </section>
 
       {/* JSON-LD */}
       <script

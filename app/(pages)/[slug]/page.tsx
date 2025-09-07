@@ -6,7 +6,7 @@ import { readFile } from "fs/promises"
 import Link from "next/link"
 import { join } from "path"
 import type { ReactNode } from "react"
-
+import FaqPromo from "@/components/FaqPromo"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import Catchphrase from "@/components/Catchphrase"
@@ -507,11 +507,23 @@ export default async function Page(
           </section>
 
           {/* FAQ */}
+                      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+                        <div className="mx-auto max-w-6xl">
+                          <Reveal>
+                            <GlassCard className="overflow-hidden p-8 sm:p-10">
+                              <FaqPromo className="mt-10" />
+                            </GlassCard>
+                          </Reveal>
+                        </div>
+                      </section>
+
+          {/* FAQ Locale */}
           <Faq
             city={loc.city}
             items={faqItems.map(({ q, aHtml }) => ({ q, a: aHtml }))}
             className="mt-14"
           />
+          
 
           {/* Keyword visual — gecentreerd panel */}
           <div
