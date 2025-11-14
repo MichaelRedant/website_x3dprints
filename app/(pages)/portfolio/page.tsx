@@ -1,7 +1,9 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import AutoCarousel from "@/components/AutoCarousel"
+import GlassCard from "@/components/GlassCard"
 import GlassOrb from "@/components/GlassOrb"
+import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import { readdirSync } from "node:fs"
 import path from "node:path"
@@ -24,6 +26,7 @@ export const metadata: Metadata = {
 const portfolioDir = path.join(process.cwd(), "public/images/portfolio")
 const photos = readdirSync(portfolioDir)
   .filter((f) => /\.(?:png|jpe?g|webp)$/i.test(f))
+  .sort((a, b) => a.localeCompare(b))
   .map((file) => {
     const alt = file
       .replace(/\.[^.]+$/, "")
@@ -35,6 +38,28 @@ const photos = readdirSync(portfolioDir)
       alt,
     }
   })
+
+const stats = [
+  { label: "Projecten afgerond", value: "150+" },
+  { label: "Doorlooptijd", value: "2–5 werkdagen" },
+  { label: "Bouwvolume", value: "Tot 25 × 25 × 25 cm" },
+]
+
+const focusAreas = [
+  {
+    title: "Functioneel maatwerk",
+    description:
+      "Houders, adapters en productietools die direct inzetbaar zijn en tegen een stootje kunnen.",
+  },
+  {
+    title: "Gepersonaliseerde items",
+    description: "Gifts en decoratie met naam, logo of unieke afwerking die opvalt.",
+  },
+  {
+    title: "Seriewerk & prototypes",
+    description: "Van één teststuk tot kleine series met consistente kwaliteit per onderdeel.",
+  },
+]
 
 const videos = [
   {
@@ -82,6 +107,14 @@ const videos = [
   { id: "vOviHFKnqU0", title: "Articulated pompoen", description: "Scharnierende pompoen voor Halloween." },
 ]
 
+const newVideoIds = new Set([
+  "pEVjhj8Esmo",
+  "B-DnVHPTVJE",
+  "O9MYk5Mgytc",
+  "rRcWkRGwbTo",
+  "o9zBbvayF-4",
+])
+
 const imageJsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -109,88 +142,191 @@ const videoJsonLd = {
 
 export default function Page() {
   return (
-    <main className="relative">
-      {/* decor achtergrond */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 via-white to-teal-50" />
-        <div className="absolute -top-24 -left-20 hidden sm:block">
-          <GlassOrb className="h-64 w-64 opacity-40" />
-        </div>
-        <div className="absolute -bottom-28 -right-24 hidden md:block">
-          <GlassOrb className="h-72 w-72 opacity-30" />
-        </div>
-        <div className="absolute inset-0 opacity-[0.06] [background-image:radial-gradient(#000_1px,transparent_1px)] [background-size:12px_12px]" />
-      </div>
+    <main className="relative overflow-hidden">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(120%_80%_at_50%_0%,rgba(56,189,248,0.25),transparent_60%)]"
+      />
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.12]" />
 
-      <section className="px-6 py-12 sm:px-8 lg:px-12">
+      <section className="relative px-6 pb-24 pt-20 sm:px-8 lg:px-12">
+        <div className="absolute -left-16 top-12 -z-10 hidden md:block">
+          <GlassOrb className="h-72 w-72 opacity-35" />
+        </div>
+        <div className="absolute -right-12 -bottom-20 -z-10 hidden lg:block">
+          <GlassOrb className="h-80 w-80 opacity-25" />
+        </div>
         <div className="mx-auto max-w-6xl">
-          <header className="text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/60 px-3 py-1 text-xs text-slate-700 backdrop-blur">
-              <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              Cases & showcases
-            </span>
-            <h1 className="mt-3 bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-3xl font-extrabold tracking-tight text-transparent sm:text-4xl">
-              Portfolio
-            </h1>
-            <p className="mx-auto mt-3 max-w-prose text-slate-600">
-              Een selectie van recente prints, van functionele houders tot decoratieve stukken. Wil je iets gelijkaardigs?
-            </p>
-            <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
-              <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
-              <Link
-                href="/services"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/60 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:bg-white"
-              >
-                Bekijk diensten
-              </Link>
-            </div>
-          </header>
+          <div className="grid items-start gap-12 lg:grid-cols-[1.2fr_.8fr]">
+            <Reveal className="max-w-2xl">
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/60 px-3 py-1 text-xs font-semibold text-slate-700 backdrop-blur">
+                <span className="h-2 w-2 rounded-full bg-emerald-400" />
+                Portfolio
+              </span>
+              <h1 className="mt-4 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-600 bg-clip-text text-balance text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl">
+                Real-life 3D prints voor makers, retailers en events.
+              </h1>
+              <p className="mt-4 text-pretty text-lg text-slate-700">
+                Van articulated octopus tot custom winkelmateriaal: elk project combineert functionele eisen met een strakke afwerking.
+                Hier ontdek je een mix van maatwerk, seriewerk en persoonlijke cadeaus rechtstreeks uit het atelier in Herzele.
+              </p>
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
+                <Link
+                  href="/services"
+                  className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/60 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white"
+                >
+                  Bekijk diensten
+                </Link>
+                <Link
+                  href="/materials"
+                  className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/50 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white"
+                >
+                  Materialen & richtlijnen
+                </Link>
+              </div>
+            </Reveal>
 
-          {/* Carousel */}
-          <h2 className="mt-12 text-2xl font-bold tracking-tight text-slate-900">Afbeeldingen</h2>
-          <p className="mt-2 text-slate-600">Gebruik de pijlen om te navigeren. Klik voor details.</p>
-          <div className="mt-6">
-            <AutoCarousel items={photos} speed={20}  />
-          </div>
-
-          {/* Video's (ongewijzigd) */}
-          <h2 className="mt-12 text-2xl font-bold tracking-tight text-slate-900">Timelapse video’s</h2>
-          <p className="mt-2 text-slate-600">Kijk mee hoe onderdelen laag per laag ontstaan.</p>
-          <div className="mt-6 grid gap-8 md:grid-cols-2">
-            {videos.map((v) => (
-              <article key={v.id} className="rounded-2xl border border-white/30 bg-white/60 p-3 shadow-sm backdrop-blur">
-                <div className="aspect-video overflow-hidden rounded-xl">
-                  <iframe
-                    src={`https://www.youtube-nocookie.com/embed/${v.id}`}
-                    title={v.title}
-                    loading="lazy"
-                    allowFullScreen
-                    className="h-full w-full"
-                  />
+            <Reveal delay={0.15} className="grid gap-4">
+              <GlassCard className="overflow-hidden border border-white/50 bg-white/70 p-6 shadow-lg backdrop-blur">
+                <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Nieuw in de kijker</h2>
+                <p className="mt-2 text-sm text-slate-600">
+                  Vijf recente projecten die de veelzijdigheid van 3D-printing tonen.
+                </p>
+                <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                  {videos.slice(0, 5).map((video) => (
+                    <li key={video.id} className="flex items-start gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" aria-hidden />
+                      <span>{video.title}</span>
+                    </li>
+                  ))}
+                </ul>
+              </GlassCard>
+              <GlassCard className="border border-white/50 bg-white/70 p-6 shadow-lg backdrop-blur">
+                <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Waar we op focussen</h2>
+                <div className="mt-4 grid gap-3">
+                  {focusAreas.map((item) => (
+                    <div key={item.title}>
+                      <h3 className="text-sm font-semibold text-slate-900">{item.title}</h3>
+                      <p className="text-sm text-slate-600">{item.description}</p>
+                    </div>
+                  ))}
                 </div>
-                <h3 className="mt-2 font-semibold text-slate-900">{v.title}</h3>
-                <p className="mt-1 text-sm text-slate-600">{v.description}</p>
-              </article>
-            ))}
-          </div>
-
-          {/* CTA onderaan */}
-          <div className="mt-12 text-center">
-            <p className="text-sm text-slate-600">Interesse in een vergelijkbaar project?</p>
-            <div className="mt-3 flex justify-center gap-3">
-              <ShimmerButton href="/contact">Neem contact op</ShimmerButton>
-              <Link
-                href="/materials"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/60 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:bg-white"
-              >
-                Materialen & richtlijnen
-              </Link>
-            </div>
+              </GlassCard>
+            </Reveal>
           </div>
         </div>
       </section>
 
-      {/* JSON-LD */}
+      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="grid gap-4 sm:grid-cols-3">
+            {stats.map((stat) => (
+              <GlassCard
+                key={stat.label}
+                className="border border-white/50 bg-white/70 px-6 py-5 text-center shadow-md backdrop-blur transition-transform hover:-translate-y-1"
+              >
+                <div className="text-sm font-medium uppercase tracking-[0.2em] text-slate-500">{stat.label}</div>
+                <div className="mt-2 text-2xl font-semibold text-slate-900">{stat.value}</div>
+              </GlassCard>
+            ))}
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="px-6 py-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="max-w-3xl">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Afbeeldingen</h2>
+            <p className="mt-2 text-slate-600">
+              Scroll door de carousel met productshots, prototypes en afgewerkte decorstukken. Klik door voor een vergrote weergave.
+            </p>
+          </Reveal>
+          <Reveal delay={0.12} className="mt-8">
+            <AutoCarousel items={photos} speed={18} />
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="max-w-3xl">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Timelapse video’s</h2>
+            <p className="mt-2 text-slate-600">
+              Kijk mee hoe onderdelen laag per laag worden opgebouwd. Alle video’s zijn geprint en gefilmd in de studio van X3DPrints.
+            </p>
+          </Reveal>
+          <div className="mt-10 grid gap-10 md:grid-cols-2">
+            {videos.map((video, index) => (
+              <Reveal
+                key={video.id}
+                delay={0.1 + index * 0.03}
+                className="h-full"
+              >
+                <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/40 bg-white/70 p-4 shadow-lg backdrop-blur transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div className="relative overflow-hidden rounded-2xl border border-slate-200/60">
+                    <div className="absolute inset-0 bg-gradient-to-tr from-slate-900/0 via-slate-900/0 to-slate-900/10 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden />
+                    <iframe
+                      src={`https://www.youtube-nocookie.com/embed/${video.id}`}
+                      title={video.title}
+                      loading="lazy"
+                      allowFullScreen
+                      className="aspect-video w-full"
+                    />
+                    {newVideoIds.has(video.id) && (
+                      <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-emerald-500/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+                        Nieuw
+                      </span>
+                    )}
+                  </div>
+                  <div className="mt-4 flex flex-1 flex-col">
+                    <h3 className="text-lg font-semibold text-slate-900">{video.title}</h3>
+                    <p className="mt-2 flex-1 text-sm text-slate-600">{video.description}</p>
+                    <a
+                      href={`https://www.youtube.com/watch?v=${video.id}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 transition hover:text-emerald-700"
+                    >
+                      Bekijk op YouTube
+                      <span aria-hidden>→</span>
+                    </a>
+                  </div>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <div className="relative overflow-hidden rounded-3xl border border-white/40 bg-white/70 px-8 py-10 text-center shadow-xl backdrop-blur">
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/10 via-cyan-400/10 to-sky-400/10" aria-hidden />
+              <div className="relative">
+                <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Klaar voor het volgende project?</p>
+                <h2 className="mt-4 text-2xl font-semibold text-slate-900 sm:text-3xl">
+                  Laat ons mee nadenken over materiaal, afwerking en planning.
+                </h2>
+                <p className="mt-3 text-base text-slate-600">
+                  Deel je ontwerpbestanden en ontvang binnen één werkdag een vrijblijvende offerte met advies.
+                </p>
+                <div className="mt-6 flex flex-wrap justify-center gap-3">
+                  <ShimmerButton href="/contact">Vraag een offerte aan</ShimmerButton>
+                  <Link
+                    href="/faq"
+                    className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/60 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white"
+                  >
+                    Veelgestelde vragen
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(imageJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }} />
     </main>
