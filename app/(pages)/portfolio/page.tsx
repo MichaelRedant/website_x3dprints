@@ -37,6 +37,31 @@ const photos = readdirSync(portfolioDir)
   })
 
 const videos = [
+  {
+    id: "pEVjhj8Esmo",
+    title: "Articulated octopus voor Octopus.be",
+    description: "Flexibele octopus voor Octopus.be, direct uit de printer beweegbaar.",
+  },
+  {
+    id: "B-DnVHPTVJE",
+    title: "Oorring houder voor Choice Juwelen",
+    description: "Eigen ontwerp van een 3D-geprinte houder voor oorbellen.",
+  },
+  {
+    id: "O9MYk5Mgytc",
+    title: "Tesla kofferhaak in PETG",
+    description: "Stevige haak voor in de Tesla-koffer, geprint in PETG.",
+  },
+  {
+    id: "rRcWkRGwbTo",
+    title: "Gepersonaliseerde grafstekker",
+    description: "Custom 3D-geprinte grafstekker ontworpen voor een kinderherdenking.",
+  },
+  {
+    id: "o9zBbvayF-4",
+    title: "Cartoon figure met naam display",
+    description: "Cartoon-personage met gepersonaliseerd naamdisplay uit de 3D-printer.",
+  },
   { id: "tVDwEw3Od-8", title: "3D geprinte fleshouder", description: "Praktische fleshouder, laag per laag opgebouwd in PLA." },
   { id: "-CWmBhP_OO0", title: "Wireless mesh houder", description: "Compacte houder voor een draadloze mesh-node met strakke passtukken." },
   { id: "KlYc5fyDMLU", title: "Baby cadeau letter", description: "Persoonlijk kraamcadeau in de vorm van een initiaal." },
