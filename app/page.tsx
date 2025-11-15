@@ -11,14 +11,14 @@ import MaterialSwatches, { Swatch } from "@/components/MaterialSwatches"
 
 
 export const metadata: Metadata = {
-  title: "3D print service in Herzele | X3DPrints",
+  title: "3D printen in België | X3DPrints Herzele",
   description:
-    "Precisie 3D prints voor prototypes en kleine series. Snel, betaalbaar en consistent. PLA als standaard, met PETG, ABS/ASA, Nylon en PA-CF wanneer het project daarom vraagt.",
+    "Precisie 3D printen in België en Vlaanderen. Snelle oplevering vanuit Herzele met advies over PLA, PETG, ABS/ASA, Nylon en PA-CF voor prototypes, displays en functionele onderdelen.",
   alternates: { canonical: "https://www.x3dprints.be/" },
   openGraph: {
-    title: "X3DPrints — 3D print service in Herzele",
+    title: "X3DPrints — 3D print service in België",
     description:
-      "Van STL/STEP naar strakke, functionele prints. Snelle doorlooptijd, eerlijk materiaaladvies en nette afwerking.",
+      "Van STL/STEP naar strakke 3D prints in België. Lokale begeleiding, kortere doorlooptijd en duurzame afwerking voor projecten in Gent, Aalst en de rest van Vlaanderen.",
     url: "https://www.x3dprints.be/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
@@ -79,6 +79,18 @@ export default function HomePage() {
         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(100%_50%_at_50%_0%,rgba(99,102,241,.18),transparent_70%)]"
       />
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.07]" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[520px] bg-gradient-to-b from-white via-white/80 to-transparent"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -left-24 top-32 -z-10 hidden h-80 w-80 rounded-full bg-gradient-to-br from-indigo-300/40 via-purple-300/30 to-transparent blur-3xl sm:block"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-10 bottom-10 -z-10 hidden h-64 w-64 rounded-full bg-gradient-to-tl from-emerald-200/40 via-sky-200/30 to-transparent blur-2xl md:block"
+      />
 
       {/* HERO */}
       <section className="relative px-6 pb-24 pt-20 sm:px-8 lg:px-12 lg:pb-32 lg:pt-28">
@@ -87,29 +99,30 @@ export default function HomePage() {
         </div>
         <div className="mx-auto max-w-6xl">
           <Reveal className="max-w-3xl">
-            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs text-slate-700 backdrop-blur">
+            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-100/80 bg-white/70 px-3 py-1 text-xs font-medium text-slate-700 shadow-sm">
               <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              Snel, precies en betaalbaar
+              Lokale 3D print service in Vlaanderen
             </span>
-            <Catchphrase className="mt-4 block text-base font-medium text-indigo-600 sm:text-lg">
-              Betaalbaar 3D printen
+            <Catchphrase className="mt-4 block text-base font-semibold text-indigo-600 sm:text-lg">
+              3D printen voor Gent, Aalst en Vlaanderen
             </Catchphrase>
-            <h1 className="mt-2 bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-balance text-4xl font-extrabold leading-tight tracking-tight text-transparent sm:text-5xl">
-              Where design meets dimension.
+            <h1 className="mt-2 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 bg-clip-text text-balance text-4xl font-extrabold leading-tight tracking-tight text-transparent sm:text-5xl">
+              Belgische 3D prints op maat vanuit Herzele.
             </h1>
-            <p className="mt-2 text-balance text-lg font-medium text-slate-700">
-              3D Prints die kloppen
+            <p className="mt-3 text-balance text-lg font-semibold text-slate-700">
+              Engineeringkwaliteit, transparante prijzen en korte lijnen
             </p>
             <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 sm:text-lg">
-              X3DPrints is een compacte 3D-printstudio uit Herzele, onderdeel van Xinudesign. Ideaal voor prototypes en
-              kleine series met strakke afwerking. PLA is onze standaard, maar we schakelen waar nodig over naar PETG,
-              ABS/ASA, Nylon of PA-CF. Levertijd meestal 2–5 werkdagen, transparante offerte vooraf.
+              X3DPrints is een Belgische 3D-printstudio uit Herzele, vlak bij Gent. We begeleiden makers, engineers en
+              bedrijven doorheen elke stap van hun 3D print project in België: van STL/STEP controle en materiaaladvies
+              tot nabewerking en verzending. Je krijgt een transparante offerte vooraf en een doorlooptijd van meestal 2–5
+              werkdagen voor prototypes, displays, productonderdelen en gepersonaliseerde stukken.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"
+                className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >
                 Bekijk portfolio
               </Link>
@@ -147,14 +160,14 @@ export default function HomePage() {
                 ),
               },
             ].map((item) => (
-              <GlassCard
-                key={item.k}
-                className="p-5 text-center transition-transform hover:-translate-y-1"
-              >
-                {item.icon}
-                <div className="text-sm text-slate-500">{item.k}</div>
-                <div className="mt-1 text-xl font-semibold text-slate-900">{item.v}</div>
-              </GlassCard>
+            <GlassCard
+              key={item.k}
+              className="group border-white/40 bg-gradient-to-br from-white/80 to-white/40 p-5 text-center shadow-lg ring-1 ring-white/60 transition-transform hover:-translate-y-1"
+            >
+              {item.icon}
+              <div className="text-sm font-medium text-slate-500">{item.k}</div>
+              <div className="mt-1 text-xl font-semibold text-slate-900">{item.v}</div>
+            </GlassCard>
             ))}
           </Reveal>
         </div>
@@ -167,23 +180,25 @@ export default function HomePage() {
             <div className="max-w-3xl">
               <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Over X3DPrints</h2>
               <p className="mt-3 text-slate-600">
-                Eénpersoonsstudio in bijberoep. Je spreekt rechtstreeks met de maker die ook produceert, test en afwerkt.
-                Geen tickets of callcenters, wel korte lijnen, duidelijke afspraken en onderdelen die passen.
+                Eénpersoonsstudio in bijberoep. Je schakelt een Belgische 3D print service in met rechtstreeks contact
+                met de maker die ook produceert, test en afwerkt. Geen tickets of callcenters, wel korte lijnen,
+                duidelijke afspraken en onderdelen die passen.
               </p>
               <p className="mt-3 text-slate-600">
                 Actief in regio Gent, Aalst, Geraardsbergen en Oudenaarde. Van functionele prototypes en kleine series tot
-                winkelmateriaal, gepersonaliseerde cadeaus en maatwerk.
+                winkelmateriaal, gepersonaliseerde cadeaus en maatwerk. Zo leveren we 3D prints voor Vlaanderen die perfect
+                aansluiten bij jouw toepassing.
               </p>
               <div className="mt-6 flex gap-3">
                 <Link
                   href="/services"
-                  className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"
+                  className="rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
                 >
                   Diensten
                 </Link>
                 <Link
                   href="/materials"
-                  className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"
+                  className="rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
                 >
                   Materialen
                 </Link>
@@ -202,11 +217,12 @@ export default function HomePage() {
           <Reveal className="mb-8">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Voor wie we printen</h2>
             <p className="mt-2 max-w-2xl text-slate-600">
-              Geen one-size-fits-all. We print wat jij nodig hebt en denken mee over materiaal en geometrie.
+              Geen one-size-fits-all. We print wat jij nodig hebt en denken mee over materiaal en geometrie. Zo maak je
+              gebruik van een lokale 3D print service in België en Vlaanderen die mee bouwt aan jouw product.
             </p>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-2">
-            <GlassCard className="p-6 transition-transform hover:-translate-y-1">
+            <GlassCard className="group border-white/40 bg-gradient-to-br from-white/80 to-white/40 p-6 shadow-lg ring-1 ring-white/60 transition-transform hover:-translate-y-1">
               {icon(<circle cx={12} cy={12} r={9} />)}
               <h3 className="text-lg font-semibold text-slate-900">Particulieren</h3>
               <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
@@ -215,7 +231,7 @@ export default function HomePage() {
                 <li>Unieke accessoires en mini-sculpturen</li>
               </ul>
             </GlassCard>
-            <GlassCard className="p-6 transition-transform hover:-translate-y-1">
+            <GlassCard className="group border-white/40 bg-gradient-to-br from-white/80 to-white/40 p-6 shadow-lg ring-1 ring-white/60 transition-transform hover:-translate-y-1">
               {icon(<rect x={4} y={4} width={16} height={16} rx={2} />)}
               <h3 className="text-lg font-semibold text-slate-900">Bedrijven</h3>
               <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
@@ -225,12 +241,18 @@ export default function HomePage() {
               </ul>
             </GlassCard>
           </div>
-          <div className="mt-8">
+          <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
               href="/portfolio"
-              className="inline-flex items-center rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"
+              className="inline-flex items-center rounded-xl border border-indigo-100/70 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
             >
               Gallerij bekijken
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 rounded-xl border border-indigo-200/60 bg-indigo-50/60 px-4 py-2 text-sm font-semibold text-indigo-700 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
+            >
+              Start je Belgisch 3D printproject
             </Link>
           </div>
         </div>
@@ -243,7 +265,7 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Personalisatie</h2>
             <p className="mt-2 max-w-2xl text-slate-600">
               Maak je ontwerp persoonlijk met namen, initialen of een korte boodschap. Unieke geschenken, herkenbare
-              interieurelementen en items met karakter.
+              interieurelementen en items met karakter, rechtstreeks 3D geprint in België.
             </p>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-3">
@@ -265,7 +287,7 @@ export default function HomePage() {
               },
             ].map((s, i) => (
               <Reveal key={s.t} delay={0.05 * (i + 1)}>
-                <GlassCard className="p-5 transition-transform hover:-translate-y-1">
+                <GlassCard className="group border-white/40 bg-gradient-to-br from-white/80 to-white/40 p-5 shadow-lg ring-1 ring-white/60 transition-transform hover:-translate-y-1">
                   {s.icon}
                   <div className="text-base font-semibold text-slate-900">{s.t}</div>
                   <div className="mt-1 text-sm text-slate-600">{s.d}</div>
@@ -277,107 +299,107 @@ export default function HomePage() {
       </section>
 
       {/* MATERIALEN (homepage spotlight in dezelfde stijl) */}
-<section className="px-6 py-20 sm:px-8 lg:px-12">
-  <div className="mx-auto max-w-6xl">
-    <Reveal className="mb-6">
-      <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-        Materialen, kleuren & afwerking
-      </h2>
-      <p className="mt-2 max-w-2xl text-slate-600">
-        PLA voor strakke details en nette afwerking. Voor sterkte, UV of hitte schakelen we naar PETG, ABS/ASA,
-        Nylon (PA) of PA-CF. Afwerking kan rauw, geschuurd, geprimed of gelakt. Hieronder een greep uit wat we vaak printen.{" "}
-        <Link href="/materials" className="underline decoration-slate-300 hover:decoration-slate-500">
-          Alle varianten bekijken
-        </Link>.
-      </p>
-    </Reveal>
+      <section className="px-6 py-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="mb-6">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              Materialen, kleuren & afwerking
+            </h2>
+            <p className="mt-2 max-w-2xl text-slate-600">
+              PLA voor strakke details en nette afwerking. Voor sterkte, UV of hitte schakelen we naar PETG, ABS/ASA,
+              Nylon (PA) of PA-CF. Afwerking kan rauw, geschuurd, geprimed of gelakt. Hieronder een greep uit wat we vaak printen in België{" "}
+              <Link href="/materials" className="underline decoration-slate-300 hover:decoration-slate-500">
+                Alle varianten bekijken
+              </Link>.
+            </p>
+          </Reveal>
 
-    {(() => {
-      const translucent = (hex: string) => `linear-gradient(180deg,${hex}C0,${hex}50)`
+          {(() => {
+            const translucent = (hex: string) => `linear-gradient(180deg,${hex}C0,${hex}50)`
 
-      const spotlight: { title: string; blurb: string; swatches: Swatch[] }[] = [
-        {
-          title: "PLA Matte (standaard)",
-          blurb:
-            "Mat oppervlak met strakke details. Ideaal voor prototypes en nette visuele stukken.",
-          swatches: [
-            // Jouw stock
-            { label: "Zwart", fill: "#0a0a0a", inStock: true },
-            { label: "Wit", fill: "#ffffff", inStock: true },
-            { label: "Blauw", fill: "#2563eb", inStock: true },
-            { label: "Geel", fill: "#facc15", inStock: true },
-            { label: "Groen", fill: "#16a34a", inStock: true },
-            { label: "Rood", fill: "#dc2626", inStock: true },
-            // Voorbeeld extra's op bestelling
-            { label: "Grijs", fill: "#9ca3af" },
-            { label: "Oranje", fill: "#fb923c" },
-          ],
-        },
-        {
-          title: "PLA Wood & Marble",
-          blurb:
-            "Decoratieve texturen met hout- of marmerlook. Voor props, decor en premium accenten.",
-          swatches: [
-            { label: "Wood Brown", fill: "linear-gradient(90deg,#7c5e3c,#6a4f33,#7c5e3c)", inStock: true },
-            { label: "Marble Grey", fill: "linear-gradient(135deg,#d6d3d1,#9ca3af 55%,#e7e5e4)", inStock: true },
-            { label: "Marble White", fill: "linear-gradient(135deg,#f3f4f6,#d1d5db 55%,#f9fafb)" },
-          ],
-        },
-        {
-          title: "PETG",
-          blurb:
-            "Tougher dan PLA, licht flexibel en beter bestand tegen warmte/chemie. Voor functionele onderdelen.",
-          swatches: [
-            { label: "Zwart", fill: "#000000", inStock: true },
-            { label: "Wit", fill: "#ffffff", inStock: true },
-            { label: "Transparant", fill: translucent("#e6fbff"), inStock: true },
-            { label: "Blauw", fill: "#3b82f6" },
-            { label: "Rood", fill: "#ef4444" },
-          ],
-        },
-        {
-          title: "TPU",
-          blurb:
-            "Flexibel en slijtvast. Ideaal voor grips, bumpers en demping. Trager te printen.",
-          swatches: [{ label: "Zwart", fill: "#000000", inStock: true }],
-        },
-        {
-          title: "Meer varianten op bestelling",
-          blurb:
-            "Silk, Translucent, Galaxy, Metal, Glow, PLA-CF, Aero, Basic Gradient en meer. Vraag advies.",
-          swatches: [
-            { label: "Silk Gold", fill: "linear-gradient(90deg,#a36f00,#f3d36b,#a36f00)" },
-            { label: "Translucent Aqua", fill: translucent("#7ae5ff") },
-            { label: "Galaxy", fill: "radial-gradient(circle at 35% 40%,#6366f1,transparent 45%),#0b1020" },
-            { label: "Metal Steel", fill: "linear-gradient(90deg,#c5ccd4,#8e9aa6,#c5ccd4)" },
-            { label: "Glow Green", fill: "#00ff7b" },
-            { label: "PLA-CF", fill: "linear-gradient(135deg,#0f172a,#1f2937)" },
-          ],
-        },
-      ]
+            const spotlight: { title: string; blurb: string; swatches: Swatch[] }[] = [
+              {
+                title: "PLA Matte (standaard)",
+                blurb:
+                  "Mat oppervlak met strakke details. Ideaal voor prototypes en nette visuele stukken die lokaal worden geprint.",
+                swatches: [
+                  // Jouw stock
+                  { label: "Zwart", fill: "#0a0a0a", inStock: true },
+                  { label: "Wit", fill: "#ffffff", inStock: true },
+                  { label: "Blauw", fill: "#2563eb", inStock: true },
+                  { label: "Geel", fill: "#facc15", inStock: true },
+                  { label: "Groen", fill: "#16a34a", inStock: true },
+                  { label: "Rood", fill: "#dc2626", inStock: true },
+                  // Voorbeeld extra's op bestelling
+                  { label: "Grijs", fill: "#9ca3af" },
+                  { label: "Oranje", fill: "#fb923c" },
+                ],
+              },
+              {
+                title: "PLA Wood & Marble",
+                blurb:
+                  "Decoratieve texturen met hout- of marmerlook. Voor props, decor en premium accenten gemaakt in België.",
+                swatches: [
+                  { label: "Wood Brown", fill: "linear-gradient(90deg,#7c5e3c,#6a4f33,#7c5e3c)", inStock: true },
+                  { label: "Marble Grey", fill: "linear-gradient(135deg,#d6d3d1,#9ca3af 55%,#e7e5e4)", inStock: true },
+                  { label: "Marble White", fill: "linear-gradient(135deg,#f3f4f6,#d1d5db 55%,#f9fafb)" },
+                ],
+              },
+              {
+                title: "PETG",
+                blurb:
+                  "Tougher dan PLA, licht flexibel en beter bestand tegen warmte/chemie. Voor functionele onderdelen die tegen een stoot kunnen.",
+                swatches: [
+                  { label: "Zwart", fill: "#000000", inStock: true },
+                  { label: "Wit", fill: "#ffffff", inStock: true },
+                  { label: "Transparant", fill: translucent("#e6fbff"), inStock: true },
+                  { label: "Blauw", fill: "#3b82f6" },
+                  { label: "Rood", fill: "#ef4444" },
+                ],
+              },
+              {
+                title: "TPU",
+                blurb:
+                  "Flexibel en slijtvast. Ideaal voor grips, bumpers en demping. Trager te printen, maar perfect voor duurzame toepassingen.",
+                swatches: [{ label: "Zwart", fill: "#000000", inStock: true }],
+              },
+              {
+                title: "Meer varianten op bestelling",
+                blurb:
+                  "Silk, Translucent, Galaxy, Metal, Glow, PLA-CF, Aero, Basic Gradient en meer. Vraag advies voor jouw Belgische 3D print.",
+                swatches: [
+                  { label: "Silk Gold", fill: "linear-gradient(90deg,#a36f00,#f3d36b,#a36f00)" },
+                  { label: "Translucent Aqua", fill: translucent("#7ae5ff") },
+                  { label: "Galaxy", fill: "radial-gradient(circle at 35% 40%,#6366f1,transparent 45%),#0b1020" },
+                  { label: "Metal Steel", fill: "linear-gradient(90deg,#c5ccd4,#8e9aa6,#c5ccd4)" },
+                  { label: "Glow Green", fill: "#00ff7b" },
+                  { label: "PLA-CF", fill: "linear-gradient(135deg,#0f172a,#1f2937)" },
+                ],
+              },
+            ]
 
-      return (
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {spotlight.map((m) => (
-            <Reveal key={m.title}>
-              <GlassCard className="p-5 transition-transform hover:-translate-y-1">
-                <div className="text-base font-semibold text-slate-900">{m.title}</div>
-                <p className="mt-1 text-sm text-slate-600">{m.blurb}</p>
-                <MaterialSwatches colors={m.swatches} />
-                <Link
-                  href="/materials"
-                  className="mt-3 inline-block text-xs font-medium text-slate-700 underline decoration-slate-300 hover:decoration-slate-500"
-                >
-                  Alle kleuren & varianten
-                </Link>
-              </GlassCard>
-            </Reveal>
-          ))}
+            return (
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {spotlight.map((m) => (
+                  <Reveal key={m.title}>
+                    <GlassCard className="group border-white/40 bg-gradient-to-br from-white/80 to-white/40 p-5 shadow-lg ring-1 ring-white/60 transition-transform hover:-translate-y-1">
+                      <div className="text-base font-semibold text-slate-900">{m.title}</div>
+                      <p className="mt-1 text-sm text-slate-600">{m.blurb}</p>
+                      <MaterialSwatches colors={m.swatches} />
+                      <Link
+                        href="/materials"
+                        className="mt-3 inline-block text-xs font-medium text-slate-700 underline decoration-slate-300 hover:decoration-slate-500"
+                      >
+                        Alle kleuren & varianten
+                      </Link>
+                    </GlassCard>
+                  </Reveal>
+                ))}
+              </div>
+            )
+          })()}
         </div>
-      )
-    })()}
-  </div>
-</section>
+      </section>
 
       {/* WAAROM PLA (compact) */}
       <section className="px-6 py-20 sm:px-8 lg:px-12">
@@ -418,7 +440,7 @@ export default function HomePage() {
               },
             ].map((s, i) => (
               <Reveal key={s.t} delay={0.05 * (i + 1)}>
-                <GlassCard className="p-6 transition-transform hover:-translate-y-1">
+                <GlassCard className="group border-white/40 bg-gradient-to-br from-white/80 to-white/40 p-6 shadow-lg ring-1 ring-white/60 transition-transform hover:-translate-y-1">
                   {s.icon}
                   <div className="text-base font-semibold text-slate-900">{s.t}</div>
                   <div className="mt-1 text-sm text-slate-600">{s.d}</div>
@@ -440,19 +462,19 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Prijzen & levering</h2>
             <p className="mt-2 max-w-2xl text-slate-600">
               Transparante tarieven op basis van complexiteit, afmetingen, materiaal en afwerking. We communiceren
-              vooraf over planning en oplevering.
+              vooraf over planning en oplevering en helpen je kiezen wat het beste werkt voor jouw 3D print in België.
             </p>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
                 t: "Prijsopbouw",
-                d: "Materiaal, printtijd, afwerking en eventuele montage.",
+                d: "Materiaal, printtijd, afwerking en eventuele montage. We denken mee over optimalisatie voor Belgisch 3D printen.",
                 icon: icon(<circle cx={12} cy={12} r={9} />),
               },
               {
                 t: "Levertijd",
-                d: "Gewoonlijk 2–5 werkdagen; spoed in overleg.",
+                d: "Gewoonlijk 2–5 werkdagen; spoed in overleg voor klanten in België.",
                 icon: icon(<><circle cx={12} cy={12} r={9} /><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l2 2" /></>),
               },
               {
@@ -462,7 +484,7 @@ export default function HomePage() {
               },
             ].map((s, i) => (
               <Reveal key={s.t} delay={0.05 * (i + 1)}>
-                <GlassCard className="p-6 transition-transform hover:-translate-y-1">
+                <GlassCard className="group border-white/40 bg-gradient-to-br from-white/80 to-white/40 p-6 shadow-lg ring-1 ring-white/60 transition-transform hover:-translate-y-1">
                   {s.icon}
                   <div className="text-base font-semibold text-slate-900">{s.t}</div>
                   <div className="mt-1 text-sm text-slate-600">{s.d}</div>
@@ -473,7 +495,7 @@ export default function HomePage() {
           <div className="mt-10 flex gap-3">
             <Link
               href="/pricing"
-              className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"
+              className="rounded-xl border border-indigo-100/70 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
             >
               Prijzen bekijken
             </Link>
@@ -486,7 +508,7 @@ export default function HomePage() {
       <section className="px-6 pb-32 pt-10 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <GlassCard className="overflow-hidden p-8 sm:p-10">
+            <GlassCard className="overflow-hidden border-white/30 bg-gradient-to-br from-white/80 to-white/50 p-8 shadow-xl ring-1 ring-white/60 sm:p-10">
               <div className="grid gap-6 sm:grid-cols-[1.2fr_.8fr] sm:items-center">
                 <div>
                   <h2 className="text-balance text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
@@ -494,7 +516,7 @@ export default function HomePage() {
                   </h2>
                   <p className="mt-2 max-w-prose text-slate-600">
                     Stuur je model door en je krijgt snel een heldere prijs met het beste materiaaladvies voor jouw
-                    toepassing.
+                    toepassing, rechtstreeks van een Belgische 3D print partner.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
                     <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
