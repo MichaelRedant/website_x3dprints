@@ -1,5 +1,8 @@
 // lib/materials.ts
 
+export function materialSlug(input: string): string {
+  return input.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
+}
 
 export type MaterialKey =
   | "PLA_TOUGH_PLUS"
@@ -393,7 +396,19 @@ export const MATERIAL_ORDER: MaterialKey[] = [
   "PLA_SILK_MULTI_COLOR",
   "PLA_CF",
   "PLA_WOOD",
-  
+
   "TPU",
 ];
+
+export const MATERIAL_SLUGS: Record<MaterialKey, string> = MATERIAL_ORDER.reduce(
+  (acc, key) => {
+    acc[key] = materialSlug(MATERIALS[key].name)
+    return acc
+  },
+  {} as Record<MaterialKey, string>,
+)
+
+export const MATERIAL_KEY_BY_SLUG = Object.fromEntries(
+  MATERIAL_ORDER.map((key) => [MATERIAL_SLUGS[key], key]),
+) as Record<string, MaterialKey>
 
