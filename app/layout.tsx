@@ -4,7 +4,11 @@ import { SITE } from "@/lib/seo"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import ScrollProgress from "@/components/ScrollProgress"
+import CookieBanner from "@/components/CookieBanner"
+import AnalyticsConsent from "@/components/AnalyticsConsent"
 import { cn } from "@/lib/utils";
+
+const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -32,6 +36,11 @@ export const metadata: Metadata = {
     images: [SITE.ogImage],
   },
   icons: { icon: "/favicon.ico" },
+  other: googleSiteVerification
+    ? {
+        "google-site-verification": googleSiteVerification,
+      }
+    : undefined,
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -66,6 +75,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <CookieBanner />
+        <AnalyticsConsent />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
