@@ -350,7 +350,12 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
     features: ["Flexibel", "Schokabsorberend"],
     swatches: [
       { label: "Zwart", color: "#000000", inStock: true },
-      { label: "Wit", color: "#ffffff", inStock: false },
+      { label: "Grijs", color: "#9ca3af", inStock: true },
+      { label: "Wit", color: "#ffffff", inStock: true },
+      { label: "Rood", color: "#ef4444", inStock: true },
+      { label: "Geel", color: "#facc15", inStock: true },
+      { label: "Neon Groen", color: "#4ade80", inStock: true },
+      { label: "Blauw", color: "#2563eb", inStock: true },
     ],
   },
 };
