@@ -11,6 +11,7 @@ import { AnimatePresence, motion } from "framer-motion"
 const NAV = [
   { href: "/services", label: "Services" },
   { href: "/materials", label: "Materialen" },
+  { href: "/viewer", label: "3D Viewer" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/about", label: "Over ons" },
   { href: "/pricing", label: "Prijzen" },
