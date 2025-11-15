@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import MaterialCard from "@/components/MaterialCard"
-import { MATERIALS, MATERIAL_ORDER } from "@/lib/materials"
+import { MATERIALS, MATERIAL_ORDER, MATERIAL_SLUGS } from "@/lib/materials"
 import FaqPromo from "@/components/FaqPromo"
 import GlassCard from "@/components/GlassCard"
 
@@ -24,16 +24,14 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
-function slugify(input: string) {
-  return input.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
-}
-
 export default function MaterialsPage() {
   const materials = MATERIAL_ORDER.map((key) => {
     const m = MATERIALS[key]
+    const slug = MATERIAL_SLUGS[key]
     return {
       key,
-      anchorId: slugify(m.name),
+      anchorId: slug,
+      slug,
       title: m.name,
       description: m.description,
       features: m.features || [],
@@ -95,9 +93,10 @@ export default function MaterialsPage() {
               <MaterialCard
                 anchorId={m.anchorId}
                 title={m.title}
-                description={m.description}  
-                features={m.features}         
+                description={m.description}
+                features={m.features}
                 swatches={m.swatches}
+                href={`/materials/${m.slug}`}
               />
             </Reveal>
           ))}
@@ -151,7 +150,6 @@ export default function MaterialsPage() {
       {/* JSON-LD */}
       <script
         type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
     </main>

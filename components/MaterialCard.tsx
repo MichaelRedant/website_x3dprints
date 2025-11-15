@@ -1,4 +1,5 @@
 // components/MaterialCard.tsx
+import Link from "next/link"
 import React from "react"
 import GlassCard from "@/components/GlassCard"
 
@@ -15,6 +16,8 @@ type Props = {
   swatches: Swatch[]
   className?: string
   anchorId?: string // NIEUW: voor deeplinks / headings
+  href?: string
+  ctaLabel?: string
 }
 
 export default function MaterialCard({
@@ -24,6 +27,8 @@ export default function MaterialCard({
   swatches,
   className,
   anchorId,
+  href,
+  ctaLabel,
 }: Props) {
   return (
     <section id={anchorId} aria-labelledby={`${(anchorId || "mat")}-title`}>
@@ -85,6 +90,18 @@ export default function MaterialCard({
             )
           })}
         </div>
+
+        {href ? (
+          <div className="mt-6">
+            <Link
+              href={href}
+              className="inline-flex items-center gap-1 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+            >
+              {ctaLabel ?? "Meer lezen"}
+              <span aria-hidden>→</span>
+            </Link>
+          </div>
+        ) : null}
       </GlassCard>
     </section>
   )
