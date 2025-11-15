@@ -26,10 +26,6 @@ const ACCEPTED_EXTENSIONS = ["stl", "obj", "glb", "gltf"] as const
 const MAX_FILE_SIZE = 15 * 1024 * 1024 // 15 MB
 const MAX_FILE_SIZE_MB = Math.round(MAX_FILE_SIZE / (1024 * 1024))
 
-export type ModelViewerProps = {
-  className?: string
-}
-
 const material = new THREE.MeshStandardMaterial({
   color: new THREE.Color("#60a5fa"),
   metalness: 0.25,
@@ -143,7 +139,7 @@ function formatNumber(value: number) {
   return new Intl.NumberFormat("nl-BE").format(value)
 }
 
-export default function ModelViewer({ className }: ModelViewerProps) {
+export default function ModelViewer({ className }: { className?: string }) {
   const inputRef = useRef<HTMLInputElement | null>(null)
   const containerRef = useRef<HTMLDivElement | null>(null)
   const prefersReducedMotion = useReducedMotion()
