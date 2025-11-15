@@ -3,6 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import Container from "./Container"
 import FooterLocations from "./FooterLocations"
+import CookieSettingsButton from "./CookieSettingsButton"
 
 const socials = [
   { href: "https://www.linkedin.com/company/x3dprints", label: "LinkedIn", icon: "linkedin" },
@@ -129,12 +130,21 @@ export default function Footer() {
         <div className="border-t">
           <Container className="flex flex-col items-center justify-between gap-3 py-6 text-xs text-slate-500 md:flex-row">
             <p>© {new Date().getFullYear()} X3DPrints. Alle rechten voorbehouden.</p>
-            <p className="text-slate-400">
-              Gemaakt door{" "}
-              <Link href="https://www.xinudesign.be" className="hover:text-slate-900" target="_blank" rel="noopener noreferrer">
-                Xinudesign
-              </Link>.
-            </p>
+            <div className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
+              <CookieSettingsButton className="text-slate-500 hover:text-slate-900" />
+              <p className="text-slate-400">
+                Gemaakt door{" "}
+                <Link
+                  href="https://www.xinudesign.be"
+                  className="hover:text-slate-900"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Xinudesign
+                </Link>
+                .
+              </p>
+            </div>
           </Container>
         </div>
       </div>
