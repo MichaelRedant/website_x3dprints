@@ -11,14 +11,14 @@ import MaterialSwatches, { Swatch } from "@/components/MaterialSwatches"
 
 
 export const metadata: Metadata = {
-  title: "3D printen in België | X3DPrints Herzele",
+  title: "3D print service in Herzele | X3DPrints",
   description:
-    "Precisie 3D printen in België voor prototypes en kleine series. Snelle oplevering, eerlijk materiaaladvies en afwerking op maat in PLA, PETG, ABS/ASA, Nylon en PA-CF.",
+    "Precisie 3D prints voor prototypes en kleine series. Snel, betaalbaar en consistent. PLA als standaard, met PETG, ABS/ASA, Nylon en PA-CF wanneer het project daarom vraagt.",
   alternates: { canonical: "https://www.x3dprints.be/" },
   openGraph: {
-    title: "X3DPrints — 3D print service in België",
+    title: "X3DPrints — 3D print service in Herzele",
     description:
-      "Van STL/STEP naar strakke, functionele prints in België. Snelle doorlooptijd, lokaal materiaaladvies en nette afwerking.",
+      "Van STL/STEP naar strakke, functionele prints. Snelle doorlooptijd, eerlijk materiaaladvies en nette afwerking.",
     url: "https://www.x3dprints.be/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
@@ -79,14 +79,6 @@ export default function HomePage() {
         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(100%_50%_at_50%_0%,rgba(99,102,241,.18),transparent_70%)]"
       />
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.07]" />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -left-24 top-32 -z-10 hidden h-80 w-80 rounded-full bg-gradient-to-br from-indigo-300/40 via-purple-300/30 to-transparent blur-3xl sm:block"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-10 bottom-10 -z-10 hidden h-64 w-64 rounded-full bg-gradient-to-tl from-emerald-200/40 via-sky-200/30 to-transparent blur-2xl md:block"
-      />
 
       {/* HERO */}
       <section className="relative px-6 pb-24 pt-20 sm:px-8 lg:px-12 lg:pb-32 lg:pt-28">
@@ -100,18 +92,18 @@ export default function HomePage() {
               Snel, precies en betaalbaar
             </span>
             <Catchphrase className="mt-4 block text-base font-medium text-indigo-600 sm:text-lg">
-              Expert 3D printservice in België
+              Betaalbaar 3D printen
             </Catchphrase>
             <h1 className="mt-2 bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-balance text-4xl font-extrabold leading-tight tracking-tight text-transparent sm:text-5xl">
-              Precisie 3D printen vanuit Herzele.
+              Where design meets dimension.
             </h1>
             <p className="mt-2 text-balance text-lg font-medium text-slate-700">
-              Lokaal 3D printen met focus op detail
+              3D Prints die kloppen
             </p>
             <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 sm:text-lg">
-              X3DPrints is een Belgische 3D-printstudio uit Herzele, vlak bij Gent. Ideaal voor prototypes en kleine
-              series met strakke afwerking. PLA is onze standaard, maar we schakelen waar nodig over naar PETG, ABS/ASA,
-              Nylon of PA-CF. Je krijgt een transparante offerte vooraf en een snelle doorlooptijd van 2–5 werkdagen.
+              X3DPrints is een compacte 3D-printstudio uit Herzele, onderdeel van Xinudesign. Ideaal voor prototypes en
+              kleine series met strakke afwerking. PLA is onze standaard, maar we schakelen waar nodig over naar PETG,
+              ABS/ASA, Nylon of PA-CF. Levertijd meestal 2–5 werkdagen, transparante offerte vooraf.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
@@ -180,8 +172,7 @@ export default function HomePage() {
               </p>
               <p className="mt-3 text-slate-600">
                 Actief in regio Gent, Aalst, Geraardsbergen en Oudenaarde. Van functionele prototypes en kleine series tot
-                winkelmateriaal, gepersonaliseerde cadeaus en maatwerk. Zo leveren we Belgische 3D prints die perfect
-                aansluiten bij jouw toepassing.
+                winkelmateriaal, gepersonaliseerde cadeaus en maatwerk.
               </p>
               <div className="mt-6 flex gap-3">
                 <Link
@@ -211,8 +202,7 @@ export default function HomePage() {
           <Reveal className="mb-8">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Voor wie we printen</h2>
             <p className="mt-2 max-w-2xl text-slate-600">
-              Geen one-size-fits-all. We print wat jij nodig hebt en denken mee over materiaal en geometrie. Zo maak je
-              gebruik van een lokale 3D print service in België die mee bouwt aan jouw product.
+              Geen one-size-fits-all. We print wat jij nodig hebt en denken mee over materiaal en geometrie.
             </p>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-2">
@@ -235,18 +225,12 @@ export default function HomePage() {
               </ul>
             </GlassCard>
           </div>
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          <div className="mt-8">
             <Link
               href="/portfolio"
               className="inline-flex items-center rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"
             >
               Gallerij bekijken
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-xl border border-indigo-200/60 bg-indigo-50/60 px-4 py-2 text-sm font-semibold text-indigo-700 shadow-sm shadow-indigo-200 transition-transform hover:-translate-y-0.5 hover:bg-white"
-            >
-              Start je Belgisch 3D printproject
             </Link>
           </div>
         </div>
@@ -259,7 +243,7 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Personalisatie</h2>
             <p className="mt-2 max-w-2xl text-slate-600">
               Maak je ontwerp persoonlijk met namen, initialen of een korte boodschap. Unieke geschenken, herkenbare
-              interieurelementen en items met karakter, rechtstreeks 3D geprint in België.
+              interieurelementen en items met karakter.
             </p>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-3">
@@ -301,7 +285,7 @@ export default function HomePage() {
       </h2>
       <p className="mt-2 max-w-2xl text-slate-600">
         PLA voor strakke details en nette afwerking. Voor sterkte, UV of hitte schakelen we naar PETG, ABS/ASA,
-        Nylon (PA) of PA-CF. Afwerking kan rauw, geschuurd, geprimed of gelakt. Hieronder een greep uit wat we vaak printen in België.{" "}
+        Nylon (PA) of PA-CF. Afwerking kan rauw, geschuurd, geprimed of gelakt. Hieronder een greep uit wat we vaak printen.{" "}
         <Link href="/materials" className="underline decoration-slate-300 hover:decoration-slate-500">
           Alle varianten bekijken
         </Link>.
@@ -315,7 +299,7 @@ export default function HomePage() {
         {
           title: "PLA Matte (standaard)",
           blurb:
-            "Mat oppervlak met strakke details. Ideaal voor prototypes en nette visuele stukken die lokaal worden geprint.",
+            "Mat oppervlak met strakke details. Ideaal voor prototypes en nette visuele stukken.",
           swatches: [
             // Jouw stock
             { label: "Zwart", fill: "#0a0a0a", inStock: true },
@@ -332,7 +316,7 @@ export default function HomePage() {
         {
           title: "PLA Wood & Marble",
           blurb:
-            "Decoratieve texturen met hout- of marmerlook. Voor props, decor en premium accenten gemaakt in België.",
+            "Decoratieve texturen met hout- of marmerlook. Voor props, decor en premium accenten.",
           swatches: [
             { label: "Wood Brown", fill: "linear-gradient(90deg,#7c5e3c,#6a4f33,#7c5e3c)", inStock: true },
             { label: "Marble Grey", fill: "linear-gradient(135deg,#d6d3d1,#9ca3af 55%,#e7e5e4)", inStock: true },
@@ -342,7 +326,7 @@ export default function HomePage() {
         {
           title: "PETG",
           blurb:
-            "Tougher dan PLA, licht flexibel en beter bestand tegen warmte/chemie. Voor functionele onderdelen die tegen een stoot kunnen.",
+            "Tougher dan PLA, licht flexibel en beter bestand tegen warmte/chemie. Voor functionele onderdelen.",
           swatches: [
             { label: "Zwart", fill: "#000000", inStock: true },
             { label: "Wit", fill: "#ffffff", inStock: true },
@@ -354,13 +338,13 @@ export default function HomePage() {
         {
           title: "TPU",
           blurb:
-            "Flexibel en slijtvast. Ideaal voor grips, bumpers en demping. Trager te printen, maar perfect voor duurzame toepassingen.",
+            "Flexibel en slijtvast. Ideaal voor grips, bumpers en demping. Trager te printen.",
           swatches: [{ label: "Zwart", fill: "#000000", inStock: true }],
         },
         {
           title: "Meer varianten op bestelling",
           blurb:
-            "Silk, Translucent, Galaxy, Metal, Glow, PLA-CF, Aero, Basic Gradient en meer. Vraag advies voor jouw Belgische 3D print.",
+            "Silk, Translucent, Galaxy, Metal, Glow, PLA-CF, Aero, Basic Gradient en meer. Vraag advies.",
           swatches: [
             { label: "Silk Gold", fill: "linear-gradient(90deg,#a36f00,#f3d36b,#a36f00)" },
             { label: "Translucent Aqua", fill: translucent("#7ae5ff") },
@@ -456,19 +440,19 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Prijzen & levering</h2>
             <p className="mt-2 max-w-2xl text-slate-600">
               Transparante tarieven op basis van complexiteit, afmetingen, materiaal en afwerking. We communiceren
-              vooraf over planning en oplevering en helpen je kiezen wat het beste werkt voor jouw 3D print in België.
+              vooraf over planning en oplevering.
             </p>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
                 t: "Prijsopbouw",
-                d: "Materiaal, printtijd, afwerking en eventuele montage. We denken mee over optimalisatie voor Belgisch 3D printen.",
+                d: "Materiaal, printtijd, afwerking en eventuele montage.",
                 icon: icon(<circle cx={12} cy={12} r={9} />),
               },
               {
                 t: "Levertijd",
-                d: "Gewoonlijk 2–5 werkdagen; spoed in overleg voor klanten in België.",
+                d: "Gewoonlijk 2–5 werkdagen; spoed in overleg.",
                 icon: icon(<><circle cx={12} cy={12} r={9} /><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l2 2" /></>),
               },
               {
@@ -510,7 +494,7 @@ export default function HomePage() {
                   </h2>
                   <p className="mt-2 max-w-prose text-slate-600">
                     Stuur je model door en je krijgt snel een heldere prijs met het beste materiaaladvies voor jouw
-                    toepassing, rechtstreeks van een Belgische 3D print partner.
+                    toepassing.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
                     <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
