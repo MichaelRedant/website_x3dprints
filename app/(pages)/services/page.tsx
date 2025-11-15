@@ -11,14 +11,14 @@ import Faq from "@/components/Faq"
 import { servicesFaq } from "@/content/services-faq"
 
 export const metadata: Metadata = {
-  title: "3D Print Service België | Prototypes, Nabewerking & Montage",
+  title: "3D Print Service Herzele | X3DPrints bijberoep",
   description:
-    "Professionele 3D print service in Herzele/Gent voor prototypes en kleine series. Snelle FDM prints, materiaaladvies, nabewerking en montage.",
+    "Lokale FDM 3D-printservice uit Herzele (bijberoep). Prototypes en kleine reeksen in PLA, PETG of TPU met eerlijk advies en korte lijnen.",
   alternates: { canonical: "https://www.x3dprints.be/services" },
   openGraph: {
-    title: "3D Print Service België",
+    title: "3D Print Service Herzele",
     description:
-      "Van STL/STEP naar strakke, functionele prints. Snel, betaalbaar en consistent, met afwerking op maat.",
+      "Kleine oplages, snelle opvolging en realistisch advies over materiaal en ontwerp. Bijberoep vanuit Herzele/Gent.",
     url: "https://www.x3dprints.be/services",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
@@ -33,50 +33,50 @@ export default function Page() {
       icon: Printer,
       title: "FDM 3D-printen",
       description:
-        "Functionele onderdelen en prototypes. PLA standaard, PETG/TPU/PLA-varianten op aanvraag. Tot ~25×25×25 cm per stuk.",
+        "Functionele onderdelen en prototypes in PLA, PETG of TPU. Tot ~25×25×25 cm per stuk, opsplitsen mogelijk.",
     },
     {
       icon: Palette,
       title: "Materiaal- & kleuradvies",
       description:
-        "We matchen toepassing en omgeving met het juiste filament. Denk aan hitte/UV, flexibiliteit of visuele afwerking.",
-    },
-    {
-      icon: Brush,
-      title: "Nabewerking",
-      description:
-        "Schuren, primen, lakken. Nette visuele afwerking voor showmodellen of eindgebruik.",
-    },
-    {
-      icon: Wrench,
-      title: "Montage & kwaliteitscheck",
-      description:
-        "Samenstellen van onderdelen, passing controleren, en klaarzetten voor directe inzet.",
+        "We helpen kiezen tussen sterkte, flexibiliteit en look zodat je een haalbare oplossing krijgt voor je budget.",
     },
     {
       icon: Layers,
-      title: "DFM-review",
+      title: "Bestandscheck & slicing",
       description:
-        "Pragmatisch advies over wanddiktes, infill, oriëntatie en supports om tijd, gewicht en kosten te drukken.",
-    },
-    {
-      icon: Package,
-      title: "Kleine series",
-      description:
-        "Korte doorlooptijden voor batches. Consistente kwaliteit en duidelijke planning.",
+        "We controleren manifold issues, supports en oriëntatie en bereiden je model voor in de slicer.",
     },
     {
       icon: Ruler,
-      title: "Inserts & schroefdraad",
+      title: "DFM-review",
       description:
-        "Warmte-insert, bus of captive nut voor herhaalbare montage en stevige verbindingen.",
+        "Pragmatisch advies over wanddikte, infill en toleranties zodat prints vlot en betrouwbaar blijven.",
     },
     {
-  icon: Box, // i.p.v. Cube
-  title: "Modelreparatie (basis)",
-  description:
-    "Controle op manifold issues, orientatie, support en slicing-correcties. Complexe CAD-opmaak op aanvraag.",
-},
+      icon: Package,
+      title: "Prototypes & kleine reeksen",
+      description:
+        "Ideaal voor één stuk tot korte runs. Heldere planning en transparante prijs per batch.",
+    },
+    {
+      icon: Wrench,
+      title: "Kwaliteitscontrole",
+      description:
+        "We meten kritieke maten steekproefsgewijs na en bezorgen feedback voor eventuele iteraties.",
+    },
+    {
+      icon: Sparkles,
+      title: "Basis nabewerking",
+      description:
+        "Supportverwijdering en licht ontbramen waar nodig. Geen schuren, primen, lakken of lijmwerk.",
+    },
+    {
+      icon: Box,
+      title: "Afhalen of verzending",
+      description:
+        "Afhalen in Herzele of verzending binnen België. Verpakking afgestemd op kleine oplages.",
+    },
   ]
 
   const useCases = [
@@ -119,12 +119,12 @@ export default function Page() {
   ]
 
   const specs = [
-    { k: "Formaten", v: "Tot ~25 × 25 × 25 cm per stuk (splitsen mogelijk)" },
-    { k: "Layerhoogte", v: "0,12–0,28 mm (afhankelijk van onderdeel)" },
-    { k: "Tolerantie", v: "typisch ±0,2 mm (FDM)" },
-    { k: "Materialen", v: "PLA (mat/wood/marble/silk/… ), PETG, TPU; andere op aanvraag" },
-    { k: "Afwerking", v: "Rauw, geschuurd, geprimed, gelakt; inserts en montage" },
-    { k: "Doorlooptijd", v: "meestal 2–5 werkdagen, spoed in overleg" },
+    { k: "Formaat", v: "Tot ~25 × 25 × 25 cm per stuk (opdelen in segmenten kan)" },
+    { k: "Layerhoogte", v: "0,12–0,28 mm afhankelijk van detail en sterkte" },
+    { k: "Tolerantie", v: "Typisch ±0,2 mm voor FDM (bespreek kritische maten)" },
+    { k: "Materialen", v: "PLA (mat/wood/marble/silk/…), PETG, TPU; andere in overleg" },
+    { k: "Nabewerking", v: "Support verwijderen en licht ontbramen. Geen schuren, primer of lak." },
+    { k: "Planning", v: "Meestal 2–5 werkdagen. Productie in bijberoep, spoed enkel indien haalbaar." },
   ]
 
   const faqJsonLd = {
@@ -167,11 +167,11 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <h1 className="bg-gradient-to-br from-indigo-600 to-sky-500 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
-              Services
+              3D-printservice in Herzele
             </h1>
             <p className="mt-3 max-w-3xl text-slate-600">
-              Professionele 3D-printdienst voor prototypes en kleine series, met materiaaladvies, nette afwerking en
-              montage. Transparante communicatie en korte lijnen vanuit Herzele.
+              Lokale FDM 3D-printdienst in bijberoep. We helpen je snel van STL/STEP naar tastbare prototypes of kleine
+              reeksen met eerlijk advies over haalbaarheid, planning en budget.
             </p>
             <div className="mt-6 flex gap-3">
               <Link
@@ -214,7 +214,8 @@ export default function Page() {
           <Reveal className="mb-6">
             <h2 className="text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl">Waarvoor je 3D-printen inzet</h2>
             <p className="mt-2 max-w-3xl text-slate-600">
-              Van engineering tot retail: 3D-printen versnelt ontwikkeling, verlaagt kosten en geeft vrijheid in vorm en kleur.
+              Van engineering tot retail: 3D-printen versnelt ontwikkeling, verlaagt kosten en geeft vrijheid in vorm en
+              kleur, ook voor kleine oplages.
             </p>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -228,6 +229,36 @@ export default function Page() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* BIJBEROEP INFO */}
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="p-6 lg:p-8">
+              <h2 className="text-xl font-semibold tracking-tight text-slate-900">Lokale service in bijberoep</h2>
+              <p className="mt-3 text-slate-600">
+                X3DPrints draait naast een voltijdse job. Verwacht dus directe communicatie met de maker, een realistische
+                planning en duidelijkheid over wat wel en niet mogelijk is.
+              </p>
+              <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-lg border border-slate-200/70 bg-white/70 p-4">
+                  <h3 className="text-sm font-semibold text-slate-900">Beschikbaarheid</h3>
+                  <p className="mt-1 text-sm text-slate-600">
+                    Productie gebeurt vooral ’s avonds en in het weekend. We stemmen de planning meteen bij je aanvraag af.
+                  </p>
+                </div>
+                <div className="rounded-lg border border-slate-200/70 bg-white/70 p-4">
+                  <h3 className="text-sm font-semibold text-slate-900">Transparantie</h3>
+                  <p className="mt-1 text-sm text-slate-600">
+                    Je krijgt updates per mail over status en levering. Past iets niet in onze scope, dan zeggen we dat
+                    meteen.
+                  </p>
+                </div>
+              </div>
+            </GlassCard>
+          </Reveal>
         </div>
       </section>
 
@@ -254,20 +285,19 @@ export default function Page() {
 
             <Reveal delay={0.06}>
               <GlassCard className="p-6">
-                <h2 className="text-xl font-semibold tracking-tight text-slate-900">Afwerking & montage</h2>
+                <h2 className="text-xl font-semibold tracking-tight text-slate-900">Wat inbegrepen is</h2>
                 <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-slate-700">
-                  <li>Schuren, primen en lakken in nette, egale finish</li>
-                  <li>Thermische inserts, lijmverbindingen en eenvoudige montage</li>
-                  <li>Kleurkeuze in PLA-varianten (Matte, Wood, Marble, Silk, Translucent, …)</li>
+                  <li>Supportverwijdering en licht ontbramen na de print</li>
+                  <li>Persoonlijk advies over materiaal, oriëntatie en toleranties</li>
+                  <li>Updates over planning, levering en eventuele iteraties</li>
                 </ul>
-                <div className="mt-4">
-                  <Link
-                    href="/materials"
-                    className="inline-flex items-center rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
-                  >
-                    Kleuren & varianten bekijken
-                  </Link>
-                </div>
+                <p className="mt-4 text-sm text-slate-600">
+                  We focussen op wat FDM sterk maakt: snelle, functionele prints. Schuren, primen, lakken, inserts,
+                  lijmverbindingen of montage behoren niet tot onze service.
+                </p>
+                <p className="mt-3 text-xs uppercase tracking-wide text-slate-500">
+                  Toch nood aan die afwerking? We denken graag mee over partners of DIY-aanpak.
+                </p>
               </GlassCard>
             </Reveal>
           </div>
@@ -283,7 +313,7 @@ export default function Page() {
               <ol className="mt-3 list-decimal space-y-1 pl-5 text-slate-600">
                 <li>Upload STL/STEP en vermeld toepassing, kleur en gewenste afwerking</li>
                 <li>Materiaaladvies en offerte, doorgaans binnen 24 uur</li>
-                <li>Productie, kwaliteitscheck en eventuele nabewerking</li>
+                <li>Productie, kwaliteitscheck en basis nabewerking (support verwijderen)</li>
                 <li>Verzending of afhalen in Herzele; factuur digitaal</li>
               </ol>
             </GlassCard>
