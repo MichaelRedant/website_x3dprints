@@ -16,9 +16,9 @@ import {
   XCircle,
 } from "lucide-react"
 import * as THREE from "three"
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
-import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader"
-import { STLLoader } from "three/examples/jsm/loaders/STLLoader"
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
+import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js"
+import { STLLoader } from "three/examples/jsm/loaders/STLLoader.js"
 
 import { cn } from "@/lib/utils"
 
@@ -293,7 +293,7 @@ export default function ModelViewer({ className }: ModelViewerProps) {
           </Center>
 
           <ContactShadows opacity={0.4} scale={10} blur={1.4} far={4.5} />
-          <Environment preset="city" intensity={0.65} />
+          <Environment preset="city" environmentIntensity={0.65} />
           <OrbitControls
             enablePan
             enableZoom
