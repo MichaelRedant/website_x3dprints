@@ -21,7 +21,7 @@ export const servicesFaq = [
   },
   {
     q: "Wat kost 3D printen?",
-    a: "De prijs hangt af van materiaal, printtijd, nabewerking en aantal stuks. Wij werken met een transparante prijsberekening.",
+    a: "De prijs hangt af van materiaal, printtijd, basis nabewerking en aantal stuks. Wij werken met een transparante prijsberekening.",
   },
   {
     q: "Kan ik meerdere stuks tegelijk laten printen?",
@@ -37,7 +37,7 @@ export const servicesFaq = [
   },
   {
     q: "Bieden jullie nabewerking aan voor 3D prints?",
-    a: "Ja, we kunnen prints schuren, lakken of assembleren afhankelijk van jouw wensen.",
+    a: "We halen supportmateriaal weg en ontbramen licht. Voor schuren, lakken of montage verwijzen we graag door.",
   },
   {
     q: "Voor welke sectoren is 3D printen interessant?",
@@ -65,7 +65,7 @@ export const servicesFaq = [
   },
   {
     q: "Welke afwerkingen zijn mogelijk?",
-    a: "Afhankelijk van de toepassing kunnen we prints leveren onafgewerkt, geschuurd, geverfd of gecoat.",
+    a: "Standaard leveren we prints met verwijderde supports en licht ontbraamd. Voor schuren, primer of lak werk je zelf verder of schakelen we een partner in.",
   },
   {
     q: "Kunnen jullie ook onderdelen namaken of vervangen?",
