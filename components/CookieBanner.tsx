@@ -86,8 +86,8 @@ export default function CookieBanner() {
             <p className="mt-2 text-sm leading-relaxed text-slate-600">
               We gebruiken Google Analytics om de prestaties van onze website te meten. We plaatsen alleen analytische cookies
               nadat je hiervoor toestemming hebt gegeven. Lees meer in ons{" "}
-              <Link href="/privacy" className="font-medium text-slate-900 underline-offset-2 hover:underline">
-                privacybeleid
+              <Link href="/cookies" className="font-medium text-slate-900 underline-offset-2 hover:underline">
+                cookiebeleid
               </Link>
               .
             </p>

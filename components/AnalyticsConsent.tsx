@@ -4,15 +4,11 @@ import { useEffect, useState } from "react"
 import Script from "next/script"
 import { CookieConsentValue, onConsentChange, readStoredConsent } from "@/lib/cookie-consent"
 
-const DEFAULT_GA_ID = "G-QPQ7LDMSRV"
-const envTrackingId = process.env.NEXT_PUBLIC_GA_ID
-const GA_TRACKING_ID =
-  typeof envTrackingId === "string" && envTrackingId.trim().length > 0 ? envTrackingId.trim() : DEFAULT_GA_ID
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID
 
 export default function AnalyticsConsent() {
   const [consent, setConsent] = useState<CookieConsentValue | null>(null)
-  const hasTrackingId = GA_TRACKING_ID.length > 0
-  const canLoadAnalytics = consent === "granted" && hasTrackingId
+  const canLoadAnalytics = consent === "granted" && typeof GA_TRACKING_ID === "string" && GA_TRACKING_ID.length > 0
 
   useEffect(() => {
     const initial = readStoredConsent()
@@ -30,17 +26,13 @@ export default function AnalyticsConsent() {
   }, [])
 
   useEffect(() => {
-    if (!hasTrackingId) return
-    const disableKey = `ga-disable-${GA_TRACKING_ID}`
-    ;(window as typeof window & { [key: string]: unknown })[disableKey] = consent === "granted" ? false : true
-  }, [consent, hasTrackingId])
-
-  if (!hasTrackingId) {
-    if (process.env.NODE_ENV === "development") {
-      console.warn("Google Analytics tracking ID ontbreekt: stel NEXT_PUBLIC_GA_ID in of gebruik de default.")
+    if (typeof GA_TRACKING_ID !== "string" || GA_TRACKING_ID.length === 0) return
+    if (consent === "granted") {
+      ;(window as typeof window & { [key: string]: unknown })[`ga-disable-${GA_TRACKING_ID}`] = false
+    } else {
+      ;(window as typeof window & { [key: string]: unknown })[`ga-disable-${GA_TRACKING_ID}`] = true
     }
-    return null
-  }
+  }, [consent])
 
   if (!canLoadAnalytics) {
     return null

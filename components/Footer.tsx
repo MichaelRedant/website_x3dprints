@@ -115,6 +115,7 @@ export default function Footer() {
               <li><Link href="/faq" className="hover:text-slate-900">FAQ</Link></li>
               <li><Link href="/privacy" className="hover:text-slate-900">Privacybeleid</Link></li>
               <li><Link href="/algemene-voorwaarden" className="hover:text-slate-900">Algemene voorwaarden</Link></li>
+              <li><Link href="/cookies" className="hover:text-slate-900">Cookiebeleid</Link></li>
               <li><Link href="/sitemap.xml" className="hover:text-slate-900">Sitemap</Link></li>
             </ul>
           </div>
