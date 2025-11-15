@@ -142,11 +142,6 @@ export default async function MaterialDetailPage({
       name: spec.label,
       value: spec.value,
     })),
-    ...(detail.leadTime
-      ? {
-          productionLeadTime: detail.leadTime,
-        }
-      : {}),
   }
 
   const faqJsonLd = detail.faq
@@ -186,11 +181,6 @@ export default async function MaterialDetailPage({
             <p className="mt-4 max-w-3xl text-base text-slate-600">{detail.summary}</p>
 
             <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-slate-600">
-              {detail.leadTime ? (
-                <span className="inline-flex items-center rounded-full bg-white/80 px-3 py-1 font-medium text-slate-700 ring-1 ring-slate-200">
-                  {detail.leadTime}
-                </span>
-              ) : null}
               {detail.priceIndicator ? (
                 <span className="inline-flex items-center rounded-full bg-white/80 px-3 py-1 font-medium text-slate-700 ring-1 ring-slate-200">
                   {detail.priceIndicator}
@@ -310,7 +300,7 @@ export default async function MaterialDetailPage({
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">Project met {material.name} starten?</h2>
                 <p className="mt-2 max-w-xl text-sm text-slate-600">
-                  We adviseren je graag over design-aanpassingen, levertijd en afwerking zodat jouw print perfect aansluit bij de toepassing.
+                  We adviseren je graag over design-aanpassingen en afwerking zodat jouw print perfect aansluit bij de toepassing.
                 </p>
               </div>
               <ShimmerButton href="/contact">Plan een gesprek</ShimmerButton>
