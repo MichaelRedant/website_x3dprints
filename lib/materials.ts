@@ -75,8 +75,8 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
     description: "Matte PLA met lage glans. Verdoezelt layer-lijnen, oogt premium.",
     features: ["Mat oppervlak", "Strakke details"],
     swatches: [
-      { label: "White", color: "#f5f5f5", inStock: true },
-      { label: "Grey", color: "#a3a3a3", inStock: false },
+      { label: "White", color: "#f5f5f5", inStock: false },
+      { label: "Grey", color: "#a3a3a3", inStock: true },
       { label: "Black", color: "#0a0a0a", inStock: true },
       { label: "Sand", color: "#c8b69f", inStock: false },
       { label: "Clay", color: "#b98a6d", inStock: false },
@@ -91,7 +91,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       { label: "Lime", color: "#84cc16", inStock: true },
       { label: "Yellow", color: "#facc15", inStock: true },
       { label: "Orange", color: "#fb923c", inStock: true },
-      { label: "Red", color: "#dc2626", inStock: false },
+      { label: "Red", color: "#dc2626", inStock: true },
     ],
   },
 
