@@ -17,12 +17,12 @@ export default function AutoCarousel({
   items,
   className = "",
   speed = 5,
-  itemClass = "h-[360px] sm:h-[420px] lg:h-[500px]",
+  itemClass = "aspect-[4/3] sm:aspect-[3/2] lg:aspect-[16/10]",
 }: {
   items: Photo[]
   className?: string
   speed?: number
-  /** Responsive hoogte-classes voor elk item */
+  /** Responsive aspect/hoogte-classes voor elk item */
   itemClass?: string
 }) {
   const [active, setActive] = useState<Photo | null>(null)
@@ -49,7 +49,10 @@ export default function AutoCarousel({
         className,
       ].join(" ")}
     >
-      <div aria-hidden className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-r from-cyan-200/30 via-transparent to-teal-200/30" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-r from-cyan-200/30 via-transparent to-teal-200/30"
+      />
 
       <div className="relative w-full overflow-hidden">
         <div className={`relative ${itemClass}`}>
@@ -59,8 +62,9 @@ export default function AutoCarousel({
               onClick={() => setActive(p)}
               aria-label={`Vergroot afbeelding: ${p.alt}`}
               className={[
-                "absolute inset-0 w-full overflow-hidden rounded-2xl border border-white/30 bg-white/60",
-                "shadow-[0_10px_40px_rgba(0,0,0,0.06)] backdrop-blur",
+                "absolute inset-0 w-full overflow-hidden rounded-2xl border border-white/30",
+                "bg-gradient-to-br from-white/85 via-white/70 to-slate-50/85",
+                "shadow-[0_18px_45px_rgba(15,23,42,0.14)] backdrop-blur",
                 "transition-opacity duration-700",
                 i === index ? "opacity-100" : "pointer-events-none opacity-0",
               ].join(" ")}
@@ -69,11 +73,11 @@ export default function AutoCarousel({
                 src={p.src}
                 alt={p.alt}
                 fill
-                sizes="(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 680px"
-                className="object-cover"
+                sizes="(max-width: 768px) 90vw, (max-width: 1200px) 60vw, 720px"
+                className="object-contain"
                 priority={i === index}
               />
-              <span className="absolute bottom-2 left-2 rounded-md bg-white/75 px-2 py-1 text-[12px] font-medium text-slate-800 backdrop-blur">
+              <span className="absolute bottom-4 left-4 rounded-md bg-white/85 px-3 py-1 text-[12px] font-medium text-slate-800 shadow-sm backdrop-blur">
                 {p.alt}
               </span>
             </button>

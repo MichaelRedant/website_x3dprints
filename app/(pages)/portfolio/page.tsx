@@ -265,11 +265,13 @@ export default function Page() {
               >
                 <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/40 bg-white/70 p-4 shadow-lg backdrop-blur transition-transform hover:-translate-y-1 hover:shadow-xl">
                   <div className="relative overflow-hidden rounded-2xl border border-slate-200/60">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-slate-900/0 via-slate-900/0 to-slate-900/10 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-slate-900/0 via-slate-900/0 to-slate-900/10 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden />
                     <iframe
-                      src={`https://www.youtube-nocookie.com/embed/${video.id}`}
+                      src={`https://www.youtube-nocookie.com/embed/${video.id}?rel=0`}
                       title={video.title}
                       loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
                       allowFullScreen
                       className="aspect-video w-full"
                     />
