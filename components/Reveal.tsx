@@ -14,10 +14,11 @@ export default function Reveal({ children, delay = 0.1, className }: RevealProps
   return (
     <motion.div
       className={className}
-      initial={prefersReduced ? false : { opacity: 0, y: 16 }}
+      // Keep opacity at 1 on mount so content is immediately visible after SSR hydration.
+      initial={prefersReduced ? false : { opacity: 1, y: 12 }}
       whileInView={prefersReduced ? {} : { opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.6, delay }}
+      transition={{ duration: 0.45, ease: "easeOut", delay }}
     >
       {children}
     </motion.div>
