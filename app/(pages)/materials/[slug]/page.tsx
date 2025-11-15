@@ -1,5 +1,6 @@
 // app/(pages)/materials/[slug]/page.tsx
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import Reveal from "@/components/Reveal"
@@ -11,6 +12,10 @@ import {
   MATERIAL_DETAIL_SLUGS,
   type MaterialDetailContent,
 } from "@/content/material-details"
+import {
+  MATERIAL_GALLERY,
+  type MaterialGalleryItem,
+} from "@/content/material-gallery"
 
 export async function generateMetadata({
   params,
@@ -114,6 +119,47 @@ function SwatchList({
   )
 }
 
+function MaterialGallery({
+  items,
+}: {
+  items?: MaterialGalleryItem[]
+}) {
+  if (!items || items.length === 0) {
+    return null
+  }
+
+  return (
+    <div className="grid gap-4 sm:grid-cols-2">
+      {items.map((item, index) => (
+        <figure
+          key={item.src}
+          className="group overflow-hidden rounded-2xl border border-slate-200/70 bg-white/70 shadow-sm"
+        >
+          <div className="relative aspect-[4/3]">
+            <Image
+              src={`/images/filament/${item.src}`}
+              alt={item.alt}
+              fill
+              className="object-cover transition duration-500 group-hover:scale-[1.02]"
+              sizes="(min-width: 1024px) 45vw, (min-width: 640px) 50vw, 100vw"
+              priority={index === 0}
+            />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/30 via-slate-900/0 to-transparent opacity-0 transition group-hover:opacity-100"
+            />
+          </div>
+          {item.caption ? (
+            <figcaption className="px-4 pb-4 pt-3 text-sm text-slate-600">
+              {item.caption}
+            </figcaption>
+          ) : null}
+        </figure>
+      ))}
+    </div>
+  )
+}
+
 export default async function MaterialDetailPage({
   params,
 }: {
@@ -127,6 +173,7 @@ export default async function MaterialDetailPage({
   }
 
   const material = MATERIALS[detail.key]
+  const galleryItems = MATERIAL_GALLERY[detail.key]
 
   const productJsonLd = {
     "@context": "https://schema.org",
@@ -187,6 +234,12 @@ export default async function MaterialDetailPage({
                 </span>
               ) : null}
             </div>
+
+            {galleryItems && galleryItems.length > 0 ? (
+              <div className="mt-10">
+                <MaterialGallery items={galleryItems} />
+              </div>
+            ) : null}
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <ShimmerButton href="/contact">Vraag offerte of advies</ShimmerButton>
