@@ -7,10 +7,11 @@ export default function AnimatedSection({ children, className = "" }: { children
   return (
     <motion.section
       className={className}
-      initial={prefersReduced ? false : { opacity: 0, y: 20 }}
+      // Keep opacity at 1 on mount so sections remain visible immediately after load.
+      initial={prefersReduced ? false : { opacity: 1, y: 12 }}
       whileInView={prefersReduced ? {} : { opacity: 1, y: 0 }}
       viewport={{ once: false, amount: 0.2 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.45, ease: "easeOut" }}
     >
       {children}
     </motion.section>
