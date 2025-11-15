@@ -32,6 +32,30 @@ export const MATERIAL_GALLERY: Partial<Record<MaterialKey, MaterialGalleryItem[]
       caption: "Complexe vormen ogen strak door de lage glans van PLA Matte.",
     },
   ],
+  PLA_GALAXY: [
+    {
+      src: "pla_galaxy_prints_7.webp",
+      alt: "Diepblauwe projectbehuizing met kosmische glans in PLA Galaxy",
+      caption: "PLA Galaxy creëert een deep-space effect met microglitter en nevelachtige accenten.",
+    },
+    {
+      src: "pla_galaxy_prints_8.webp",
+      alt: "Decoratieve vaas met sterrenhemel-finish in PLA Galaxy",
+      caption: "Ideaal voor statement decor waarbij donkere tinten subtiel fonkelen.",
+    },
+  ],
+  TPU: [
+    {
+      src: "tpu1.webp",
+      alt: "Flexibele gripbeugel met golvende structuur in TPU",
+      caption: "TPU vangt schokken op en biedt slipvaste grip voor beschermende onderdelen.",
+    },
+    {
+      src: "tpu2.webp",
+      alt: "TPU bumpercover met elastische contouren",
+      caption: "Perfect voor impactbescherming en dempende toepassingen.",
+    },
+  ],
   PLA_GLOW: [
     {
       src: "pla_glow_model_3.webp",
