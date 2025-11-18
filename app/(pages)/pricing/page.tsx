@@ -119,7 +119,7 @@ export default function Page() {
       <section className="px-6 pt-14 pb-10 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <h1 className="bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
+            <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
               Prijzen 3D printen
             </h1>
             <p className="mt-3 max-w-3xl text-slate-600">
@@ -133,6 +133,18 @@ export default function Page() {
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
                 Materialen & kleuren
+              </Link>
+              <Link
+                href="/blog/hoeveel-kost-3d-printen"
+                className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+              >
+                Kostenblog
+              </Link>
+              <Link
+                href="/materials#material-suggestion-tool"
+                className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+              >
+                Material Suggestion Tool
               </Link>
             </div>
           </Reveal>

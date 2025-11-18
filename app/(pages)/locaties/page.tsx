@@ -68,7 +68,7 @@ export default function Page() {
       >
         <div className="text-center sm:text-left">
           <p className="text-xs font-semibold tracking-wide text-teal-700">Lokale landingspagina’s</p>
-          <h1 className="mt-2 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 bg-clip-text text-3xl font-extrabold tracking-tight text-transparent sm:text-4xl">
+          <h1 className="mt-2 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
             3D printen per stad
           </h1>
           <p className="mx-auto mt-3 max-w-prose text-slate-600 sm:mx-0">
@@ -171,7 +171,6 @@ export default function Page() {
       {/* JSON-LD */}
       <script
         type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -183,7 +182,6 @@ export default function Page() {
 
       {/* Keyframes + reduced-motion respect */}
       <style
-        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
           __html: `
           @keyframes fadeInUp { from { opacity:.0; transform: translateY(8px) } to { opacity:1; transform: translateY(0) } }

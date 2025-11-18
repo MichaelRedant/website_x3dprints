@@ -95,7 +95,6 @@ export default function NotFound() {
 
       {/* Small style helper for reduced-motion + subtle fade */}
       <style
-        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
           __html: `
           @keyframes floatup { from { opacity:.0; transform: translateY(6px) } to { opacity:1; transform: translateY(0) } }

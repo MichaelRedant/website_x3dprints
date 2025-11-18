@@ -1,229 +1,214 @@
 # AGENTS.md
 
-Project: **X3DPrints Website**
+Project: **X3DPrints Website**  
 Stack: **Next.js (App Router, TS)** · **Tailwind CSS v4** · **Framer Motion** · **Node 20** · **GitHub Actions**
 
-Deze gids definieert agent-rollen, eigenaarschap, werkafspraken, checklists en runbooks. Doel: sneller shippen met consistente kwaliteit.
+Deze gids definieert rollen, eigenaarschap, kwaliteitsafspraken, checklists en runbooks. Doel: snel shippen met consistente UX, SEO en performance.
 
 ---
 
 ## 1) Rollen (Agents)
 
 ### A. Lead Engineer
-**Doel:** Architectuur, codekwaliteit, velocity.
+**Doel:** Architectuur, security, velocity.  
 **Taken:**
-- Richtlijnen voor folderstructuur en code.
-- Review van PR’s met focus op veiligheid, performance en DX.
-- Technische roadmap en refactor-beslissingen.
+- Richtlijnen voor folderstructuur, data-lagen en tooling.
+- Code reviews met focus op veiligheid, performance en DX.
+- Roadmap, refactors, experimenten (bv. viewer, suggestion tool).
 
 ### B. UI Engineer
-**Doel:** Pixel-perfect UI met soepele animaties.
+**Doel:** Pixel-perfect UI met soepele animaties.  
 **Taken:**
-- Componentbibliotheek (reusable, a11y-first).
-- Animaties (Framer Motion) met `prefers-reduced-motion`.
-- Responsive & LCP/CLS optimalisaties (Next/Image).
+- Componentbibliotheek (`/components`, `/app/(pages)/**`) a11y-first.
+- Framer Motion interacties met `prefers-reduced-motion`.
+- Responsive gedrag (sm/md/lg/ultrawide), consistente hero-stijlen.
 
 ### C. Content & SEO Specialist
-**Doel:** Vindbare en converterende content.
+**Doel:** Vindbare en converterende content.  
 **Taken:**
-- On-page SEO (Metadata API, headings, interne links).
-- JSON-LD (Home: FAQ, Org/LocalBusiness in layout).
-- Copy die scanbaar en taakgericht is.
+- Metadata API, headings, interne links, CTA-copy.
+- JSON-LD (LocalBusiness, FAQ, HowTo, ItemList, Article, ImageObject).
+- Blog & segment landingspagina’s, tone of voice (1-persoonsstudio Herzele).
 
 ### D. QA Engineer
-**Doel:** Functioneel correct, toegankelijk en snel.
+**Doel:** Correct, toegankelijk en snel.  
 **Taken:**
 - Testplan per feature (happy path + edge cases).
-- A11y-check (keyboard, labels, contrast).
-- Performance budget (Lighthouse ≥ 90, LCP < 2.5s).
+- A11y-check (keyboard, labels, contrast, focus management).
+- Performance budget (Lighthouse >= 90, LCP < 2.5s, CLS < 0.1).
 
 ### E. DevOps
-**Doel:** Betrouwbare builds en releases.
+**Doel:** Betrouwbare builds en releases.  
 **Taken:**
-- CI (build, lint) en release tagging.
-- Environment secrets beheer.
-- Monitoring hooks (optioneel: Sentry).
+- GitHub Actions (build, lint) en environment secrets.
+- Release tagging, changelog, rollbackpad.
+- Monitoring hooks (optioneel Sentry).
 
 ### F. Analytics (optioneel)
-**Doel:** Meten = weten.
+**Doel:** Meten = weten.  
 **Taken:**
-- Pageview/event tracking (privacy-vriendelijk).
-- Berichtgeving over KPIs (conversie, drop-offs).
+- Privacy-vriendelijke tracking (pageviews/events).
+- Rapportering over KPI’s (conversie, drop-offs, segment engagement).
 
 ### G. Project Manager
-**Doel:** Scope bewaken en prioriteren.
+**Doel:** Scope en prioriteiten bewaken.  
 **Taken:**
-- Planning, releases, changelog.
-- Stakeholder sync.
+- Planning, releases, stakeholdersync.
+- Zorgt dat blog/segments/material tool linken naar elkaar.
 
 ---
 
 ## 2) Eigenaarschap per directory
 
-| Pad                        | Owner          | Notes |
-|---------------------------|----------------|-------|
-| `/app/layout.tsx`         | Lead Engineer  | Global metadata, JSON-LD. |
-| `/app/page.tsx`           | UI + SEO       | Home. Server component. |
-| `/app/(pages)/**/page.tsx`| UI + SEO       | Subpages, server components. |
-| `/components/**`          | UI Engineer    | Reusable, a11y-first. |
-| `/lib/seo.ts`             | SEO Specialist | SITE-config en helpers. |
-| `/lib/utils.ts`           | Lead Engineer  | `cn` helper, utils. |
-| `/public/**`              | UI + SEO       | Beelden (WebP/AVIF), og-images. |
-| `/app/api/**/route.ts`    | Lead Engineer  | API endpoints. |
-| `.github/workflows/**`    | DevOps         | CI pipelines. |
+| Pad                                   | Owner               | Notes |
+|--------------------------------------|---------------------|-------|
+| `/app/layout.tsx`                    | Lead Engineer       | Global metadata, LocalBusiness JSON-LD. |
+| `/app/page.tsx`                      | UI + SEO            | Home, hero, CTA’s. |
+| `/app/(pages)/materials/**`          | UI + SEO            | Material hub + detail slugs + suggestion anchor. |
+| `/components/MaterialSuggestionTool.tsx` | UI + Lead Engineer | Multi-step wizard, CTA’s prefill contact. |
+| `/app/(pages)/blog/**`               | Content & SEO       | Blog hub en artikels met Article JSON-LD. |
+| `/app/(pages)/segments/**`           | Content & SEO       | Segment hub + detail pagina’s. |
+| `/app/(pages)/services|portfolio|pricing|viewer|about|contact` | UI + SEO | Consistente hero’s, CTA’s, JSON-LD. |
+| `/app/api/**/route.ts`               | Lead Engineer       | Inputvalidatie, mail/webhooks. |
+| `/components/**`                     | UI Engineer         | Reusable, a11y-first. |
+| `/lib/seo.ts`, `/lib/utils.ts`       | Lead Engineer       | SITE-config, helpers. |
+| `/lib/materials.ts`, `/content/material-details.ts` | UI + SEO | Data voor materialen + FAQ. |
+| `/public/**`                         | UI + SEO            | Beelden (WebP/AVIF), og-images. |
+| `.github/workflows/**`               | DevOps              | CI pipelines. |
 
 ---
 
 ## 3) Code standaarden
 
-- **TypeScript strict**. Geen `any` tenzij echt nodig, dan typedefs.
-- **Next App Router**. Pagina’s als server component; client-only UI in child components met `"use client"`.
-- **Tailwind v4**: in `app/globals.css` enkel `@import "tailwindcss";` of `preflight/utilities`.
-- **Animaties**: Framer Motion; respecteer `useReducedMotion`.
-- **Images**: `next/image`, juiste `alt`, vermijd layout shifts.
-- **A11y**: Focus states, labels, roles waar nodig.
-- **Security**: Escape output, valideer input in API routes, geen secrets client-side.
+- **TypeScript strict.** Geen `any` tenzij gedocumenteerd typedef.
+- **Next App Router.** Pagina’s als server component; client-only UI met `"use client"`.
+- **Tailwind v4.** `app/globals.css` importeert enkel `tailwindcss` of `preflight/utilities`.
+- **Hero’s.** Gebruik `text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl` voor hoofdheadings.
+- **Material Suggestion Tool.** Houd multi-step logica in component, synchroniseer CTA’s naar `/contact?material=<slug>`.
+- **Contactformulier.** Query `material` moet select prefillen; houd fallback-copy voor 1-persoons planning (geen harde 2-5 dagen belofte).
+- **Animaties.** Framer Motion met `useReducedMotion`, geen blocking JS.
+- **Images.** `next/image`, juiste `alt`, vermijd CLS.
+- **Security.** Escape output, valideer API input, geen secrets client-side.
 
 ---
 
 ## 4) Git & PR flow
 
-- **Branching**: `main` = productie, feature branches: `feat/…`, fixes: `fix/…`.
-- **Commits**: Conventional commits
-  - `feat: …`, `fix: …`, `chore: …`, `docs: …`, `refactor: …`, `style: …`, `test: …`.
+- **Branching.** `main` = productie. Feature branches `feat/...`, fixes `fix/...`.
+- **Commits.** Conventional commits (`feat:`, `fix:`, `chore:`, `docs:`, `refactor:`, `style:`, `test:`).
 - **PR checklist** (verplicht in description):
   - [ ] Build OK (`npm run build`)
   - [ ] ESLint OK (`npm run lint`)
-  - [ ] Lighthouse ≥ 90 (Perf/SEO/A11y/Best practices)
+  - [ ] Lighthouse >= 90 (Perf/SEO/A11y/Best practices)
   - [ ] A11y (keyboard, labels, contrast)
   - [ ] Metadata/OG/JSON-LD up-to-date
-  - [ ] Responsive getest (sm/md/lg)
+  - [ ] Responsive getest (sm/md/lg + ultrawide)
   - [ ] Geen dode links/console errors
 
-**PR Template (kopieer naar `.github/pull_request_template.md`)**
+**PR Template** (`.github/pull_request_template.md`)
 ```md
 ## Wat
-- 
+-
 
 ## Waarom
-- 
+-
 
 ## Testplan
 - [ ] Build OK
 - [ ] Lint OK
-- [ ] Lighthouse ≥ 90
+- [ ] Lighthouse >= 90
 - [ ] A11y (keyboard/labels/contrast)
 - [ ] Responsive (sm/md/lg)
 - [ ] Geen console errors
 
 ## Screenshots/Video
+```
+
+---
 
 ## 5) SEO richtlijnen
 
-Metadata API per pagina (export const metadata).
+- Metadata API per pagina (`export const metadata`).
+- Headings: 1× H1, daarna logische H2/H3.
+- Interne links: home ↔ services/materials/portfolio/pricing/contact/blog/segments/suggestion tool.
+- JSON-LD:
+  - Layout: LocalBusiness/Organization met adres/telefoon.
+  - Home: FAQPage zichtbaar in content.
+  - Materials: FAQ per detailpagina + HowTo (suggestion tool) waar relevant.
+  - Portfolio: ImageObject entries voor hero cases.
+  - Blog: Article schema per post (inclusief `datePublished`).
+  - Segments: ItemList + detailpages met relevante schema (FAQ/HowTo/Service).
+- Robots & sitemap aanwezig (`app/robots.ts`, `app/sitemap.ts`).
 
-Headings: 1× H1, logische H2/H3.
-
-Interne links: Home → services/materials/portfolio/pricing/contact.
-
-Images: Beschrijvende alt, og-image per belangrijke pagina.
-
-JSON-LD:
-
-Layout: LocalBusiness/Organization met adres/telefoon.
-
-Home: FAQPage (zorg dat Q/A zichtbaar zijn).
-
-Robots/Sitemap:
-
-/app/robots.txt/route.ts
-
-/app/sitemap.xml/route.ts
+---
 
 ## 6) Performance budget
 
-LCP < 2.5s, CLS < 0.1, TBT laag.
+- LCP < 2.5s, CLS < 0.1, TBT laag.
+- Hero: minimal JS in viewport, prioriteer hero image (priority props).
+- Lazy load zware assets (viewer, suggestion tool steps) via dynamic imports indien nodig.
+- Optimaliseer afbeeldingen (WebP/AVIF) en gebruik `sizes`.
+- Fonts via `next/font`.
 
-Hero: minimal JS in viewport, prioriteer hero image.
-
-Images: geoptimaliseerd (WebP/AVIF), correcte dimensions.
-
-Code split: dynamic import voor zware UI.
-
-Fonts: next/font gebruiken om FOIT/FOUT/CLS te vermijden.
+---
 
 ## 7) A11y checklist
 
- Focus zichtbaar en logisch.
+- Focus zichtbaar en logisch.
+- Labels voor inputs, beschrijvende alt teksten.
+- Contrasten conform WCAG AA.
+- Toetsenbord-navigatie zonder valkuilen (viewer dropzone, suggestion tool).
+- Motion respecteert `prefers-reduced-motion`.
 
- Labels voor inputs, beschrijvende alt.
-
- Contrast ratio conform WCAG AA.
-
- Toetsenbord-navigatie zonder vallen.
-
- Motion respecteert prefers-reduced-motion.
+---
 
 ## 8) Runbooks
-### 8.1 Nieuwe pagina toevoegen
 
-Maak app/(pages)/<slug>/page.tsx (server component).
+### 8.1 Nieuwe pagina (subpage/segment/blog)
+1. Maak `app/(pages)/<slug>/page.tsx` (server component).
+2. Voeg `export const metadata` toe (title 50-60 chars, description 140-160 chars, canonical).
+3. Houd hero-styling consistent + CTA’s naar materials, blog, segments, contact.
+4. Voeg JSON-LD (FAQ/Article/HowTo) indien van toepassing.
+5. Link vanuit relevante pagina’s (home, footer, blog hub).
+6. Test Lighthouse, a11y, responsive.
 
-Voeg export const metadata toe (title, description, og).
+### 8.2 Nieuwe materiaal detailpagina
+1. Voeg content toe in `content/material-details.ts` + `lib/materials.ts` indien nieuw materiaal.
+2. FAQ invullen (min. 2 Q/A) voor SEO + JSON-LD.
+3. Verwijs vanuit `MaterialSuggestionTool` en `ContactForm` (prefill query).
+4. Update sitemap (material slug).
 
-Link intern vanuit relevante pagina’s.
+### 8.3 Material Suggestion Tool (component)
+1. Component: `components/MaterialSuggestionTool.tsx` blijft client component met multi-step wizard.
+2. Houd telkens mogelijkheid om terug te keren en antwoorden te wijzigen.
+3. Toon advies + lijst redenen; CTA’s:
+   - `Plan een gesprek` (contact)
+   - `Vraag advies` (contact?material=<slug>)
+4. Link anchor `#material-suggestion-tool` op `/materials` en elders (`/services`, `/viewer`, `/blog`).
+5. Respecteer `prefers-reduced-motion`, houd inputs accessible.
 
-Test Lighthouse, a11y en responsive.
+### 8.4 Blogartikel toevoegen
+1. Map `app/(pages)/blog/<slug>/page.tsx`.
+2. Metadata + Article JSON-LD (`datePublished`, `headline`, `description`).
+3. Gebruik bestaande components (GlassCard, Reveal, ShimmerButton).
+4. Interne links naar materialen, segments, viewer, contact.
+5. Voeg topic entry toe in `app/(pages)/blog/page.tsx`.
+6. Update sitemap.
 
-Template
+### 8.5 Segment landingpage
+1. Plaats onder `app/segments/<slug>/page.tsx`.
+2. Hero consistent, CTA’s naar contact + suggestion tool + relevante blog.
+3. Voeg highlights/stappenplan en FAQ of tips toe.
+4. JSON-LD (FAQ/Service) indien nuttig.
+5. Update `/app/(pages)/segments/page.tsx` ItemList en sitemap.
 
-import type { Metadata } from "next";
+### 8.6 Viewer verbeteringen
+1. WebGL component in `components/ModelViewer.tsx`; UI instructies (dropzone, privacy) buiten canvas.
+2. Link CTA’s naar suggestion tool en services.
+3. Zorg dat `Link`/`ShimmerButton` geïmporteerd zijn (build errors vermijden).
 
-export const metadata: Metadata = {
-  title: "Titel",
-  description: "Korte, taakgerichte beschrijving.",
-};
-
-export default function Page() {
-  return (
-    <section className="container mx-auto max-w-5xl px-6 py-12">
-      <h1 className="text-3xl font-bold tracking-tight">Titel</h1>
-      <p className="mt-3 text-slate-600">Inhoud…</p>
-    </section>
-  );
-}
-
-### 8.2 Client-side animatie toevoegen
-
-Maak client component in /components met "use client".
-
-Gebruik Framer Motion en useReducedMotion.
-
-Importeer in server page/component.
-
-Template
-
-"use client"
-import { motion, useReducedMotion } from "framer-motion"
-
-export function FadeIn({ children }: { children: React.ReactNode }) {
-  const reduce = useReducedMotion()
-  return (
-    <motion.div
-      initial={reduce ? undefined : { opacity: 0, y: 12 }}
-      whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.5 }}
-    >
-      {children}
-    </motion.div>
-  )
-}
-
-### 8.3 API endpoint (POST)
-
-app/api/<name>/route.ts
-
+### 8.7 API endpoint (POST)
+```ts
 import { NextResponse } from "next/server"
 
 export async function POST(req: Request) {
@@ -233,87 +218,55 @@ export async function POST(req: Request) {
   // TODO: validate, process, send mail/webhook
   return NextResponse.json({ ok: true })
 }
+```
 
-### 8.4 SEO: FAQ JSON-LD op pagina
-const faq = [
-  { q: "Vraag 1?", a: "Antwoord 1." },
-  { q: "Vraag 2?", a: "Antwoord 2." },
-]
-
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faq.map(i => ({
-    "@type": "Question",
-    name: i.q,
-    acceptedAnswer: { "@type": "Answer", text: i.a }
-  })),
-}
-
-// In server page render:
-script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
 ---
 
-## 9) Scripts & Commands
+## 9) Scripts & commands
+
+```
 npm run dev     # lokale ontwikkeling
 npm run build   # productie build
 npm run start   # serve build (lokale test)
 npm run lint    # eslint (als geconfigureerd)
-
+```
 
 Node 20 aanhouden in CI en hosting.
 
-## 10) Prompt-templates (voor AI-assistentie)
+---
 
-UI Component
+## 10) Prompt-templates (AI assistentie)
 
-Rol: UI Engineer. Bouw een toegankelijke React server component voor Next App Router.
-Vereisten: Tailwind v4 classes, geen inline styles, responsive, a11y (labels/alt/focus).
-Lever: component + korte uitleg van props en states. Geen lorem ipsum, korte NL copy.
+**UI Component**  
+Rol: UI Engineer. Bouw toegankelijke React server component. Tailwind v4 classes, geen inline styles, responsive, NL copy, geen lorem ipsum.
 
+**Animatie**  
+Rol: UI Engineer. Voeg subtiele in-view animatie toe met Framer Motion. Respecteer `prefers-reduced-motion`, kleine delays per kaart.
 
-Animatie
+**SEO**  
+Rol: SEO Specialist. Schrijf metadata (title 50-60 chars, description 140-160 chars, OG) voor pagina `<slug>`. NL value proposition.
 
-Rol: UI Engineer. Voeg subtiele in-view animatie toe met Framer Motion.
-Vereisten: respecteer prefers-reduced-motion, geen blocking JS, kleine delays per kaart.
-Lever: client component + voorbeeldgebruik in server page.
+**API Validatie**  
+Rol: Lead Engineer. Schrijf POST route validator voor `{ name, email, message }`: e-mail validatie, rate limiting hook (pseudocode), veilige responses.
 
-
-SEO
-
-Rol: SEO Specialist. Schrijf metadata (title, description, og) voor pagina <slug>.
-Vereisten: NL, 50-60 chars title, 140-160 chars description, duidelijke value proposition.
-Lever: export const metadata voor Next App Router.
-
-
-API Validatie
-
-Rol: Lead Engineer. Schrijf POST route validator voor { name, email, message }.
-Vereisten: e-mail validatie, rate limiting hook (pseudocode), veilige responses.
-Lever: route.ts + korte testcases.
+---
 
 ## 11) Releases
 
-Tagging: vX.Y.Z (SemVer).
+- Tag: SemVer `vX.Y.Z`.
+- Changelog: features/fixes per release.
+- Checklist:
+  - Build OK
+  - Lighthouse >= 90
+  - 404/500 pagina’s aanwezig
+  - Sitemap/robots correct
+  - OG-images aanwezig
+  - Suggestion tool + contact prefill getest
 
-Changelog: samenvatten per feature/fix.
-
-Checklist:
-
- Build OK
-
- Lighthouse ≥ 90
-
- 404/500 pagina’s aanwezig
-
- Sitemap/robots correct
-
- Og-images aanwezig
+---
 
 ## 12) Contactpunten
 
-Issues & roadmap: GitHub Issues / Projects
-
-Reviews: minimaal 1 reviewer, bij core files 2 reviewers
-
-Incidenten: rollback = vorige tag redeployen
+- Issues & roadmap: GitHub Issues / Projects.
+- Reviews: min. 1 reviewer; core files (layout, suggestion tool, contact) vragen 2.
+- Incidenten: rollback = vorige tag redeployen.

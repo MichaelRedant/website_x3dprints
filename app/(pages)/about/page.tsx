@@ -53,9 +53,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <Reveal className="grid items-center gap-8 sm:grid-cols-[1.3fr_.7fr]">
             <div className="max-w-3xl">
-              <h1 className="bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
-                Over X3DPrints
-              </h1>
+              <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">Over X3DPrints</h1>
               <p className="mt-3 text-slate-600">
                 X3DPrints is een éénpersoons 3D-printstudio in bijberoep, gevestigd in Herzele en onderdeel van
                 Xinudesign. Je spreekt rechtstreeks met de maker die ook produceert, test en afwerkt. Geen tickets,
@@ -186,7 +184,7 @@ export default function Page() {
                   <li>Productie, kwaliteitscheck en eventuele nabewerking</li>
                   <li>Verzending in BE of afhalen in regio Herzele/Gent</li>
                 </ol>
-                <p className="mt-3 text-sm text-slate-500">Levertijd meestal 2–5 werkdagen; spoed in overleg.</p>
+                <p className="mt-3 text-sm text-slate-500">Levertijd meestal enkele werkdagen; spoed in overleg.</p>
               </GlassCard>
             </TiltCard>
           </Reveal>

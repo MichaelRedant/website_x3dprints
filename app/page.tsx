@@ -49,7 +49,7 @@ export default function HomePage() {
     },
     {
       q: "Welke levertijd mag ik verwachten?",
-      a: "Meestal 2–5 werkdagen, afhankelijk van materiaal, volume en eventuele nabewerking.",
+      a: "Vaak enkele werkdagen, afhankelijk van queue, materiaal en eventuele nabewerking. We stemmen de planning samen af.",
     },
     {
       q: "Wat is het maximale bouwvolume?",
@@ -98,7 +98,7 @@ export default function HomePage() {
           <GlassOrb className="h-72 w-72 opacity-40" />
         </div>
         <div className="mx-auto max-w-6xl">
-          <Reveal className="max-w-3xl">
+          <Reveal className="max-w-3xl stacked-content">
             <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-100/80 bg-white/70 px-3 py-1 text-xs font-medium text-slate-700 shadow-sm">
               <span className="h-2 w-2 rounded-full bg-emerald-400" />
               Lokale 3D print service in Vlaanderen
@@ -106,7 +106,7 @@ export default function HomePage() {
             <Catchphrase className="mt-4 block text-base font-semibold text-indigo-600 sm:text-lg">
               3D printen voor Gent, Aalst en Vlaanderen
             </Catchphrase>
-            <h1 className="mt-2 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 bg-clip-text text-balance text-4xl font-extrabold leading-tight tracking-tight text-transparent sm:text-5xl">
+            <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
               Belgische 3D prints op maat vanuit Herzele.
             </h1>
             <p className="mt-3 text-balance text-lg font-semibold text-slate-700">
@@ -115,16 +115,33 @@ export default function HomePage() {
             <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 sm:text-lg">
               X3DPrints is een Belgische 3D-printstudio uit Herzele, vlak bij Gent. We begeleiden makers, engineers en
               bedrijven doorheen elke stap van hun 3D print project in België: van STL/STEP controle en materiaaladvies
-              tot nabewerking en verzending. Je krijgt een transparante offerte vooraf en een doorlooptijd van meestal 2–5
-              werkdagen voor prototypes, displays, productonderdelen en gepersonaliseerde stukken.
+              tot verzending. Als eenpersoonsstudio plannen we projecten in samenspraak, meestal binnen enkele werkdagen afhankelijk van complexiteit en queue.
             </p>
-            <div className="mt-10 flex flex-wrap items-center gap-3">
+            <div className="stacked-actions mt-10 flex flex-wrap items-center gap-3 justify-center sm:justify-start">
               <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
               <Link
                 href="/portfolio"
                 className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >
                 Bekijk portfolio
+              </Link>
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
+              >
+                Lees de blog
+              </Link>
+              <Link
+                href="/materials#material-suggestion-tool"
+                className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
+              >
+                Material Suggestion Tool
+              </Link>
+              <Link
+                href="/segments"
+                className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
+              >
+                Segmenten
               </Link>
             </div>
           </Reveal>
@@ -140,7 +157,7 @@ export default function HomePage() {
               },
               {
                 k: "Doorlooptijd",
-                v: "2–5 werkdagen",
+                v: "Enkele werkdagen (in overleg)",
                 icon: icon(
                   <>
                     <circle cx={12} cy={12} r={9} />
@@ -474,7 +491,7 @@ export default function HomePage() {
               },
               {
                 t: "Levertijd",
-                d: "Gewoonlijk 2–5 werkdagen; spoed in overleg voor klanten in België.",
+                d: "We mikken op oplevering binnen enkele werkdagen; spoed kan in overleg voor klanten in België.",
                 icon: icon(<><circle cx={12} cy={12} r={9} /><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l2 2" /></>),
               },
               {

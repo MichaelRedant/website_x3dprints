@@ -20,6 +20,35 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+@media (min-width: 1600px) {
+  body {
+    font-size: 1.05rem;
+  }
+}
+
+.stacked-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .stacked-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .stacked-actions {
+    justify-content: center !important;
+  }
+}
+
+@media (min-width: 641px) {
+  .stacked-content {
+    text-align: left;
+  }
+}
+
 .btn-primary {
   @apply inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-medium transition
          bg-[#00d6b9] text-black hover:brightness-95 active:brightness-90;

@@ -30,7 +30,7 @@ export default function FaqPromo({
   ctaLabel = "Bekijk de FAQ",
   qaItems = [
     { q: "Welke materialen printen jullie?", a: "Standaard PLA Matte, plus PETG en TPU. Op aanvraag ABS/ASA, Nylon, PA-CF." },
-    { q: "Wat is de gebruikelijke doorlooptijd?", a: "Meestal 2–5 werkdagen, afhankelijk van complexiteit en oplage." },
+    { q: "Wat is de gebruikelijke doorlooptijd?", a: "Doorgaans enkele werkdagen, afhankelijk van complexiteit en oplage." },
     { q: "Hoe vraag ik een offerte aan?", a: "Bezorg je STL/STEP en korte context via het formulier. Je krijgt snel prijs en timing." },
   ],
   emitJsonLd = false,
@@ -109,11 +109,7 @@ export default function FaqPromo({
 
       {/* Optioneel JSON-LD voor rich results (zet emitJsonLd={true} op één plaats per pagina) */}
       {emitJsonLd && (
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       )}
     </section>
   )

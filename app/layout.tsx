@@ -62,10 +62,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     },
     sameAs: SITE.sameAs,
     areaServed: "BE",
-    priceRange: "€€",
+    priceRange: "EUR",
     makesOffer: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "3D Print Service" } }
-    ]
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "3D Print Service" } },
+    ],
+  }
+
+  const breadcrumbList = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE.url}/` },
+      { "@type": "ListItem", position: 2, name: "Services", item: `${SITE.url}/services` },
+      { "@type": "ListItem", position: 3, name: "Materialen", item: `${SITE.url}/materials` },
+      { "@type": "ListItem", position: 4, name: "Portfolio", item: `${SITE.url}/portfolio` },
+      { "@type": "ListItem", position: 5, name: "Prijzen", item: `${SITE.url}/pricing` },
+      { "@type": "ListItem", position: 6, name: "Contact", item: `${SITE.url}/contact` },
+      { "@type": "ListItem", position: 7, name: "Blog", item: `${SITE.url}/blog` },
+    ],
   }
 
   return (
@@ -80,6 +94,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbList) }}
         />
       </body>
     </html>

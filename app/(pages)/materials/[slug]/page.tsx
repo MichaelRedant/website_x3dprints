@@ -174,6 +174,7 @@ export default async function MaterialDetailPage({
 
   const material = MATERIALS[detail.key]
   const galleryItems = MATERIAL_GALLERY[detail.key]
+  const contactHref = `/contact?material=${encodeURIComponent(material.name)}`
 
   const productJsonLd = {
     "@context": "https://schema.org",
@@ -242,7 +243,7 @@ export default async function MaterialDetailPage({
             ) : null}
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <ShimmerButton href="/contact">Vraag offerte of advies</ShimmerButton>
+              <ShimmerButton href={contactHref}>Vraag offerte of advies</ShimmerButton>
               <Link
                 href="/materials"
                 className="inline-flex items-center gap-1 text-sm font-semibold text-slate-700 transition hover:text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
@@ -356,7 +357,7 @@ export default async function MaterialDetailPage({
                   We adviseren je graag over design-aanpassingen en afwerking zodat jouw print perfect aansluit bij de toepassing.
                 </p>
               </div>
-              <ShimmerButton href="/contact">Plan een gesprek</ShimmerButton>
+              <ShimmerButton href={contactHref}>Plan een gesprek</ShimmerButton>
             </GlassCard>
           </Reveal>
         </div>

@@ -43,12 +43,12 @@ export default function Footer() {
       {/* CTA strip */}
       <div className="px-6 sm:px-8 lg:px-12">
         <div className="mx-auto -mt-10 max-w-6xl">
-          <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 shadow-sm backdrop-blur sm:flex sm:items-center sm:justify-between sm:p-8">
-            <div>
+          <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 text-center shadow-sm backdrop-blur sm:flex sm:items-center sm:justify-between sm:text-left sm:p-8">
+            <div className="space-y-1">
               <p className="text-sm font-semibold tracking-tight text-slate-900">Klaar om te printen?</p>
-              <p className="mt-1 text-sm text-slate-600">Stuur je STL/STEP en ontvang snel een transparante offerte.</p>
+              <p className="text-sm text-slate-600">Stuur je STL/STEP en ontvang snel een transparante offerte.</p>
             </div>
-            <div className="mt-4 sm:mt-0">
+            <div className="mt-4 flex justify-center sm:mt-0 sm:justify-end">
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(99,102,241,.35)] transition hover:brightness-110"
@@ -62,19 +62,19 @@ export default function Footer() {
 
       {/* main footer */}
       <div className="mt-10 border-t bg-white/60 backdrop-blur">
-        <Container className="grid gap-10 py-12 text-sm text-slate-600 md:grid-cols-5">
+        <Container className="grid gap-10 py-12 text-sm text-slate-600 text-center md:grid-cols-5 md:text-left">
           {/* brand */}
           <div className="md:col-span-2">
             <Link href="/" className="inline-flex items-center gap-3">
               <Image src="/Logo.webp" alt="X3DPrints" width={44} height={44} className="h-11 w-11 object-contain" />
               <span className="text-base font-semibold tracking-tight text-slate-900">X3DPrints</span>
             </Link>
-            <p className="mt-3 max-w-prose">
+            <p className="mt-3 max-w-prose mx-auto md:mx-0">
               3D-printstudio uit Herzele (regio Gent). Prototypes en kleine series met nette afwerking. Onderdeel van
               Xinudesign.
             </p>
 
-            <div className="mt-4 flex items-center gap-3">
+            <div className="mt-4 flex items-center justify-center gap-3 md:justify-start">
               {socials.map(({ href, label, icon }) => (
                 <Link
                   key={href}
@@ -91,7 +91,7 @@ export default function Footer() {
           </div>
 
           {/* contact */}
-          <div>
+          <div className="space-y-1">
             <div className="font-semibold text-slate-900">Contact</div>
             <ul className="mt-3 space-y-1">
               <li>Herzele, Oost-Vlaanderen</li>
@@ -110,6 +110,8 @@ export default function Footer() {
               <li><Link href="/services" className="hover:text-slate-900">Services</Link></li>
               <li><Link href="/materials" className="hover:text-slate-900">Materialen</Link></li>
               <li><Link href="/portfolio" className="hover:text-slate-900">Portfolio</Link></li>
+              <li><Link href="/segments" className="hover:text-slate-900">Segmenten</Link></li>
+              <li><Link href="/blog" className="hover:text-slate-900">Blog & kennisbank</Link></li>
               <li><Link href="/about" className="hover:text-slate-900">Over ons</Link></li>
               <li><Link href="/pricing" className="hover:text-slate-900">Prijzen</Link></li>
               <li><Link href="/faq" className="hover:text-slate-900">FAQ</Link></li>
@@ -129,9 +131,9 @@ export default function Footer() {
 
         {/* bottom bar */}
         <div className="border-t">
-          <Container className="flex flex-col items-center justify-between gap-3 py-6 text-xs text-slate-500 md:flex-row">
+          <Container className="flex flex-col items-center justify-between gap-3 py-6 text-center text-xs text-slate-500 sm:flex-row">
             <p>© {new Date().getFullYear()} X3DPrints. Alle rechten voorbehouden.</p>
-            <div className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
+            <div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-4">
               <CookieSettingsButton className="text-slate-500 hover:text-slate-900" />
               <p className="text-slate-400">
                 Gemaakt door{" "}

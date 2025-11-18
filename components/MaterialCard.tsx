@@ -2,6 +2,7 @@
 import Link from "next/link"
 import React from "react"
 import GlassCard from "@/components/GlassCard"
+import type { FaqItem } from "@/content/material-details"
 
 type Swatch = {
   label: string
@@ -18,6 +19,7 @@ type Props = {
   anchorId?: string // NIEUW: voor deeplinks / headings
   href?: string
   ctaLabel?: string
+  faq?: FaqItem[]
 }
 
 export default function MaterialCard({

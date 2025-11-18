@@ -9,55 +9,81 @@ import { readdirSync } from "node:fs"
 import path from "node:path"
 
 export const metadata: Metadata = {
-  title: "Portfolio 3D prints | X3DPrints",
-  description: "Timelapses en foto's van recente 3D-printprojecten uit het atelier in Herzele.",
+  title: "3D print portfolio & case studies | X3DPrints",
+  description:
+    "Bekijk real-life 3D print projecten: functionele onderdelen, merchandising en gifts geproduceerd in Herzele (Gent).",
   alternates: { canonical: "https://www.x3dprints.be/portfolio" },
   openGraph: {
-    title: "Portfolio 3D prints | X3DPrints",
-    description: "Bekijk timelapse video’s en foto’s van functionele en decoratieve 3D-prints uit onze studio.",
+    title: "3D print portfolio & case studies | X3DPrints",
+    description:
+      "Fotoreeksen en timelapses van maatwerk 3D prints: prototypes, merchandising en gepersonaliseerde cadeaus uit het atelier in Herzele.",
     url: "https://www.x3dprints.be/portfolio",
-    images: [{ url: "/Logo.webp", width: 1024, height: 1024 }],
+    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "X3DPrints portfolio" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "3D print portfolio & case studies | X3DPrints",
+    description:
+      "Functionele prototypes, merchandising en gifts: ontdek hoe X3DPrints projecten oplevert voor mkb, events en designers.",
+    images: ["/images/og-home.jpg"],
+  },
 }
 
 const portfolioDir = path.join(process.cwd(), "public/images/portfolio")
+const portfolioUrl = "https://www.x3dprints.be/portfolio"
+
+const toTitleCase = (value: string) =>
+  value
+    .split(" ")
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ")
+
 const photos = readdirSync(portfolioDir)
   .filter((f) => /\.(?:png|jpe?g|webp)$/i.test(f))
   .sort((a, b) => a.localeCompare(b))
-  .map((file) => {
-    const alt = file
+  .map((file, index) => {
+    const baseLabel = file
       .replace(/\.[^.]+$/, "")
-      .replace(/[-_]/g, " ")
+      .replace(/[-_]+/g, " ")
       .replace(/\s+/g, " ")
       .trim()
+    const cleaned = baseLabel
+      .replace(/^(afbeelding|image|img|foto)\s*/i, "")
+      .replace(/^\d+$/, "")
+      .trim()
+    const label = toTitleCase(cleaned || `maatwerk print ${index + 1}`)
+    const alt = `${label} 3D print`
+    const info = `Portfolio beeld ${index + 1}: ${label} geproduceerd door X3DPrints in Herzele.`
     return {
       src: `/images/portfolio/${encodeURIComponent(file)}`,
       alt,
+      info,
     }
   })
 
 const stats = [
-  { label: "Projecten afgerond", value: "150+" },
-  { label: "Doorlooptijd", value: "2–5 werkdagen" },
-  { label: "Bouwvolume", value: "Tot 25 × 25 × 25 cm" },
+  { label: "Projecten per jaar", value: "50+ cases" },
+  { label: "Materialen", value: "PLA / PETG / TPU / specials" },
+  { label: "Bouwvolume", value: "Tot 256 x 256 x 256 mm" },
+  { label: "Doorlooptijd", value: "Enkele werkdagen (samen ingepland)" },
 ]
 
 const focusAreas = [
   {
     title: "Functioneel maatwerk",
     description:
-      "Houders, adapters en productietools die direct inzetbaar zijn en tegen een stootje kunnen.",
+      "Houders, adapters en productietools die dagelijks gebruik doorstaan en naadloos aansluiten op bestaande onderdelen.",
   },
   {
     title: "Gepersonaliseerde items",
-    description: "Gifts en decoratie met naam, logo of unieke afwerking die opvalt.",
+    description: "Bedrijfs- en eventgifts, awards en interieurstukken met naam, logo of custom lettering.",
   },
   {
     title: "Seriewerk & prototypes",
-    description: "Van één teststuk tot kleine series met consistente kwaliteit per onderdeel.",
+    description: "Van het eerste teststuk tot short-run productie met gecontroleerde toleranties en kleurafspraak.",
   },
 ]
 
@@ -100,7 +126,7 @@ const videos = [
   { id: "DPUI88Nj9QU", title: "Gepersonaliseerde winkelkar coins", description: "Bedrukte winkelwagenmuntjes als bedrijfsgadget." },
   { id: "B0nTIBoHho0", title: "Baby boy gift", description: "Cadeau voor een pasgeboren jongen, op maat geprint." },
   { id: "0SQdnzZa034", title: "Gehaakte ballonhond", description: "Skelet voor een gehaakte ballonhond." },
-  { id: "QtUTEn1gaRw", title: "Zombie hand 'Thing'", description: "Halloweenprop geïnspireerd op 'Thing' uit Wednesday." },
+  { id: "QtUTEn1gaRw", title: "Zombie hand &lsquo;Thing&rsquo;", description: "Halloweenprop geïnspireerd op &lsquo;Thing&rsquo; uit Wednesday." },
   { id: "ek525KTB6rM", title: "QR code met standaard", description: "Staande QR-code voor promoties of menukaarten." },
   { id: "4aZpwYity2w", title: "Zen sculpture", description: "Minimalistische sculptuur voor een rustige sfeer." },
   { id: "Bo0jpv9hnyg", title: "Fidget studs", description: "Klikbare fidget-studs als speels bureauaccessoire." },
@@ -115,22 +141,55 @@ const newVideoIds = new Set([
   "o9zBbvayF-4",
 ])
 
+const organizationSchema = {
+  "@type": "Organization",
+  name: "X3DPrints",
+  url: "https://www.x3dprints.be",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://www.x3dprints.be/Logo.webp",
+  },
+}
+
+const imageObjects = photos.map((p, index) => {
+  const absoluteUrl = `https://www.x3dprints.be${p.src}`
+  return {
+    "@type": "ImageObject",
+    "@id": `${portfolioUrl}#image-${index + 1}`,
+    contentUrl: absoluteUrl,
+    url: absoluteUrl,
+    caption: p.alt,
+    description: p.info,
+    inLanguage: "nl-BE",
+    creditText: "X3DPrints",
+    creator: organizationSchema,
+    copyrightHolder: organizationSchema,
+    representativeOfPage: index === 0,
+  }
+})
+
 const imageJsonLd = {
   "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  name: "X3DPrints image gallery",
-  hasPart: photos.map((p) => ({
-    "@type": "ImageObject",
-    contentUrl: `https://www.x3dprints.be${p.src}`,
-    name: p.alt,
-    description: p.alt,
-  })),
+  "@type": "ImageGallery",
+  name: "X3DPrints portfolio fotogalerij",
+  description: "Fotoreeks van maatwerk 3D prints, merchandising en prototypes geproduceerd in Herzele.",
+  url: portfolioUrl,
+  publisher: organizationSchema,
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: imageObjects.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item,
+    })),
+  },
 }
 
 const videoJsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   name: "X3DPrints portfolio",
+  publisher: organizationSchema,
   hasPart: videos.map((v) => ({
     "@type": "VideoObject",
     name: v.title,
@@ -161,14 +220,14 @@ export default function Page() {
             <Reveal className="max-w-2xl">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/60 px-3 py-1 text-xs font-semibold text-slate-700 backdrop-blur">
                 <span className="h-2 w-2 rounded-full bg-emerald-400" />
-                Portfolio
+                Portfolio & reviews
               </span>
-              <h1 className="mt-4 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-600 bg-clip-text text-balance text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl">
-                Real-life 3D prints voor makers, retailers en events.
+              <h1 className="mt-4 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+                3D print portfolio met functionele onderdelen en branded gifts.
               </h1>
               <p className="mt-4 text-pretty text-lg text-slate-700">
                 Van articulated octopus tot custom winkelmateriaal: elk project combineert functionele eisen met een strakke afwerking.
-                Hier ontdek je een mix van maatwerk, seriewerk en persoonlijke cadeaus rechtstreeks uit het atelier in Herzele.
+                Bekijk hoe we prototypes, seriewerk en gepersonaliseerde cadeaus afleveren vanuit het atelier in Herzele (regio Gent).
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
@@ -183,6 +242,12 @@ export default function Page() {
                   className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/50 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white"
                 >
                   Materialen & richtlijnen
+                </Link>
+                <Link
+                  href="/pricing"
+                  className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/50 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
+                >
+                  Prijsindicaties
                 </Link>
               </div>
             </Reveal>
@@ -220,7 +285,7 @@ export default function Page() {
 
       <section className="px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
-          <Reveal className="grid gap-4 sm:grid-cols-3">
+          <Reveal className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <GlassCard
                 key={stat.label}
@@ -234,12 +299,59 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal className="space-y-4">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              Welke projecten zie je in deze 3D print portfolio?
+            </h2>
+            <p className="text-base text-slate-600">
+              De galerij bundelt maatwerk voor mkb, retail en agencies: merchandising, interieurstukken, technische prototypes en TPU beschermers.
+              Elk project wordt geprint in huis zodat kwaliteit, kleurmatch en levertijd controleerbaar blijven.
+            </p>
+            <ul className="list-disc space-y-2 pl-5 text-sm text-slate-600">
+              <li>
+                <Link className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600" href="/services">
+                  Services
+                </Link>{" "}
+                voor serieproductie, nabewerking en montage.
+              </li>
+              <li>
+                <Link className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600" href="/materials">
+                  Materialen
+                </Link>{" "}
+                zoals PLA Tough, PETG en TPU om juiste eigenschappen te kiezen.
+              </li>
+              <li>
+                <Link className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600" href="/blog">
+                  Blog & kennisbank
+                </Link>{" "}
+                met artikels over kostprijs, materiaalkeuze en Bambu X1C instellingen.
+              </li>
+              <li>
+                <Link className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600" href="/pricing">
+                  Prijsindicaties
+                </Link>{" "}
+                voor richtprijzen per materiaal en volume.
+              </li>
+              <li>
+                Klaar om te starten? Ga meteen naar{" "}
+                <Link className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600" href="/contact">
+                  het contactformulier
+                </Link>{" "}
+                en vermeld het project dat je in deze portfolio zag.
+              </li>
+            </ul>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="px-6 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="max-w-3xl">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Afbeeldingen</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Fotogalerij van 3D prints</h2>
             <p className="mt-2 text-slate-600">
-              Scroll door de carousel met productshots, prototypes en afgewerkte decorstukken. Klik door voor een vergrote weergave.
+              Scroll door productshots, prototypes en decorstukken. Klik door voor een vergrote weergave met context zodat elke foto scanbaar blijft voor klanten én zoekmachines.
             </p>
           </Reveal>
           <Reveal delay={0.12} className="mt-8">
@@ -251,9 +363,9 @@ export default function Page() {
       <section className="px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="max-w-3xl">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Timelapse video’s</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Timelapse video&rsquo;s van 3D print projecten</h2>
             <p className="mt-2 text-slate-600">
-              Kijk mee hoe onderdelen laag per laag worden opgebouwd. Alle video’s zijn geprint en gefilmd in de studio van X3DPrints.
+              Kijk mee hoe onderdelen laag per laag worden opgebouwd. Alle video&rsquo;s zijn geprint, gefilmd en nabewerkt in de studio van X3DPrints.
             </p>
           </Reveal>
           <div className="mt-10 grid gap-10 md:grid-cols-2">

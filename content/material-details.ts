@@ -11,7 +11,7 @@ type Spec = {
   value: string
 }
 
-type FaqItem = {
+export type FaqItem = {
   question: string
   answer: string
 }
@@ -33,6 +33,213 @@ export type MaterialDetailContent = {
   faq?: FaqItem[]
   leadTime?: string
   priceIndicator?: string
+}
+
+const materialFaq: Record<MaterialKey, FaqItem[]> = {
+  PLA_TOUGH_PLUS: [
+    {
+      question: "Is PLA Tough+ geschikt voor functionele 3D prints?",
+      answer:
+        "PLA Tough+ combineert PLA-detail met hogere slagvastheid, waardoor klemmen, montagehulpen en beschermkappen dagelijks gebruik verdragen.",
+    },
+    {
+      question: "Welke temperatuur weerstaat PLA Tough+ filament?",
+      answer:
+        "De prints blijven maatvast tot circa 60C; voor warmere toepassingen schakelen we over op PETG of Nylon.",
+    },
+  ],
+  PLA_MATTE: [
+    {
+      question: "Waarom PLA Matte filament kiezen voor designmodellen?",
+      answer:
+        "De micro-ruwe finish verstrooit licht zodat layerlijnen verdwijnen en prototypes camera-ready zijn zonder nabewerking.",
+    },
+    {
+      question: "Hoe verzorg je PLA Matte prints?",
+      answer:
+        "Stof af met een zachte doek en schuur licht met korrel 400 voor verf of primer zodat de matte huid egaal blijft.",
+    },
+  ],
+  PLA_GLOW: [
+    {
+      question: "Hoelang gloeit PLA Glow na het opladen?",
+      answer:
+        "Na tien minuten fel licht of UV straalt het filament drie tot zes uur zichtbaar, ideaal voor noodmarkeringen en decor pieces.",
+    },
+    {
+      question: "Is PLA Glow veilig voor binnengebruik?",
+      answer:
+        "Ja, de fosforescerende pigmenten zitten volledig opgesloten in PLA en geven geen geur of losse deeltjes af.",
+    },
+  ],
+  PLA_MARBLE: [
+    {
+      question: "Krijg je met PLA Marble een realistische marmerlook?",
+      answer:
+        "De subtiele spikkels en zachte glans imiteren natuursteen, waardoor bustes en interieurstukken luxueus ogen zonder schilderwerk.",
+    },
+    {
+      question: "Kun je PLA Marble nabewerken?",
+      answer:
+        "Gebruik fijne korrel om naden weg te werken; polijsten houdt de nerf zichtbaar en geeft extra diepte.",
+    },
+  ],
+  PLA_SPARKLE: [
+    {
+      question: "Wat maakt PLA Sparkle zo opvallend?",
+      answer:
+        "Reflecterende flakes laten het filament schitteren onder spotlights, perfect voor awards, retail displays en eye catchers.",
+    },
+    {
+      question: "Heb je speciale hardware nodig voor PLA Sparkle?",
+      answer:
+        "We printen met een geharde nozzle zodat de glitters de opening niet slijten, verder zijn standaard PLA-instellingen voldoende.",
+    },
+  ],
+  PLA_METAL: [
+    {
+      question: "Lijkt PLA Metal echt op geborsteld metaal?",
+      answer:
+        "De mica-additieven geven een metallische sheen waardoor prototypes en behuizingen ogen als geanodiseerd aluminium.",
+    },
+    {
+      question: "Hoe zwaar voelt PLA Metal?",
+      answer:
+        "Het weegt als PLA maar oogt massief; extra gewicht creeren we met vulling of messing inserts.",
+    },
+  ],
+  PLA_GALAXY: [
+    {
+      question: "Waarvoor gebruik je PLA Galaxy filament?",
+      answer:
+        "De mix van paars, blauw en sparkle geeft een kosmisch effect dat direct opvalt op events, merchandise en gaming props.",
+    },
+    {
+      question: "Kan PLA Galaxy fijne details aan?",
+      answer:
+        "Ja, ondanks de glinsters printen we betrouwbaar op 0.2 mm lagen zonder stringing of nozzle build-up.",
+    },
+  ],
+  PLA_AERO: [
+    {
+      question: "Waarom PLA Aero voor lichte onderdelen?",
+      answer:
+        "Door het foamgedrag is PLA Aero tot veertig procent lichter dan klassiek PLA, ideaal voor drones, RC-vleugels en volumestudies.",
+    },
+    {
+      question: "Hoe ziet de afwerking van PLA Aero eruit?",
+      answer:
+        "De huid is satijnzacht met microbelletjes; na licht schuren kun je het eenvoudig verven of vernissen.",
+    },
+  ],
+  PLA_SILK_PLUS: [
+    {
+      question: "Wanneer kies je PLA Silk+ filament?",
+      answer:
+        "Als je showpieces met spiegelglans zoekt; Silk+ accentueert curves en maakt awards of branding-objecten meteen fotogeniek.",
+    },
+    {
+      question: "Behoudt PLA Silk+ scherpe details?",
+      answer:
+        "De self-leveling polymeren vullen microsteps zodat logo's en typografie strak blijven zelfs bij 0.2 mm lagen.",
+    },
+  ],
+  PLA_BASIC_GRADIENT: [
+    {
+      question: "Hoe stuur je het kleurverloop bij PLA Gradient?",
+      answer:
+        "We bepalen de startpositie op de spoel en printen desnoods meerdere objecten tegelijk zodat de overgang over het zichtvlak vloeit.",
+    },
+    {
+      question: "Zijn PLA Gradient kleuren reproduceerbaar?",
+      answer:
+        "Elke spoel heeft een uniek patroon; we documenteren de gebruikte tint, maar kleine variaties horen bij het gradient-effect.",
+    },
+  ],
+  PLA_BASIC: [
+    {
+      question: "Wanneer is PLA Basic de beste keuze?",
+      answer:
+        "Voor snelle prototypes, educatieve modellen en displays: het is betaalbaar, duurzaam en verkrijgbaar in veel kleuren.",
+    },
+    {
+      question: "Kan PLA Basic buiten gebruikt worden?",
+      answer:
+        "Kortstondig wel, maar langdurige zon of hitte kan vervormen; voor outdoor projecten adviseren we PETG of ASA.",
+    },
+  ],
+  PETG: [
+    {
+      question: "Waarom PETG voor functionele 3D prints?",
+      answer:
+        "PETG is slagvast, licht flexibel en hittebestendiger dan PLA, ideaal voor behuizingen, klemmen en onderdelen die buiten gebruikt worden.",
+    },
+    {
+      question: "Hoe minimaliseren jullie stringing bij PETG?",
+      answer:
+        "We drogen elke spoel, gebruiken aangepaste retracties en PEI of lijmstick, waardoor onderdelen glad blijven.",
+    },
+  ],
+  PLA_TRANSLUCENT: [
+    {
+      question: "Hoeveel licht laat PLA Translucent door?",
+      answer:
+        "Met 0.8 mm wanden ontstaat een zachte gloed; we tunen wanddikte of vase-mode zodat lampenkappen egaal oplichten.",
+    },
+    {
+      question: "Verkleurt PLA Translucent door UV?",
+      answer:
+        "Binnen blijft de tint stabiel; voor langdurig buitengebruik schakelen we naar PETG Translucent dat beter tegen UV kan.",
+    },
+  ],
+  PLA_SILK_MULTI_COLOR: [
+    {
+      question: "Kun je bepalen waar de kleuren vallen bij PLA Silk Multi-Color?",
+      answer:
+        "We positioneren de spoel en printen eventueel meerdere stuks tegelijk om het verloop te spreiden, maar elke print blijft uniek.",
+    },
+    {
+      question: "Is PLA Silk Multi-Color krasgevoelig?",
+      answer:
+        "De spiegelglans toont krassen sneller; een dunne vernis beschermt merchandising en awards tijdens transport.",
+    },
+  ],
+  PLA_CF: [
+    {
+      question: "Waarvoor gebruik je PLA-CF filament?",
+      answer:
+        "De carbonvezels verhogen stijfheid en maatvastheid, perfect voor jigs, droneframes en technische brackets.",
+    },
+    {
+      question: "Heb je speciale nozzles nodig voor PLA-CF?",
+      answer:
+        "Ja, we printen standaard met geharde staalnozzles zodat de vezels geen slijtage veroorzaken en toleranties kloppen.",
+    },
+  ],
+  PLA_WOOD: [
+    {
+      question: "Geeft PLA Wood echt een houtlook?",
+      answer:
+        "Het materiaal bevat echte houtdeeltjes, dus prints ogen en ruiken warm en organisch zonder verf.",
+    },
+    {
+      question: "Kun je PLA Wood afwerken als hout?",
+      answer:
+        "Schuren, beitsen en vernissen werkt net als bij zacht hout; hogere printtemperatuur geeft een donkerder tint.",
+    },
+  ],
+  TPU: [
+    {
+      question: "Wat is de Shore-hardheid van jullie TPU prints?",
+      answer:
+        "We gebruiken Shore 95A TPU, stevig genoeg voor bescherming maar flexibel voor grips, bumpers en trillingsdempers.",
+    },
+    {
+      question: "Is TPU bestand tegen olie en vet?",
+      answer:
+        "Ja, het filament weerstaat de meeste olien en smeermiddelen; bij agressieve chemicalien testen we vooraf samen.",
+    },
+  ],
 }
 
 const details: MaterialDetailContent[] = [
@@ -84,18 +291,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Standaard levertijd 2-3 werkdagen",
     priceIndicator: "Prijsindicatie: €€",
-    faq: [
-      {
-        question: "Hoe verschilt PLA Tough+ van gewoon PLA?",
-        answer:
-          "Tough+ heeft een aangepaste polymerenmix waardoor het minder bros is. Het behoudt de printgemak van PLA, maar vangt klappen beter op en breekt minder snel.",
-      },
-      {
-        question: "Is nabewerking mogelijk?",
-        answer:
-          "Ja. Schuren en verven kan zoals bij standaard PLA. Dankzij de taaiheid kun je schroefdraad tappen of inserts plaatsen zonder dat de wand scheurt.",
-      },
-    ],
+    faq: materialFaq["PLA_TOUGH_PLUS"],
   },
   {
     key: "PLA_MATTE",
@@ -145,18 +341,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 2 werkdagen",
     priceIndicator: "Prijsindicatie: €",
-    faq: [
-      {
-        question: "Laat PLA Matte laaglijnen zien?",
-        answer:
-          "Veel minder dan glanzende PLA. De matte pigmenten vullen micro-poriën waardoor licht diffuus weerkaatst en lijntjes optisch verdwijnen.",
-      },
-      {
-        question: "Kan ik matte prints verven?",
-        answer:
-          "Zeker. Reinig het oppervlak, schuur licht op en gebruik een primer. De matte structuur zorgt dat verf goed hecht.",
-      },
-    ],
+    faq: materialFaq["PLA_MATTE"],
   },
   {
     key: "PLA_GLOW",
@@ -165,7 +350,7 @@ const details: MaterialDetailContent[] = [
     heroDescription:
       "PLA Glow geeft je ontwerpen een opvallende gloed zodra het licht uitgaat. Ideaal voor speelse accessoires of veiligheidsmarkeringen.",
     summary:
-      "Met fosforescerende pigmenten die snel opladen, creëer je prints die minutenlang helder blijven oplichten.",
+      "Met fosforescerende pigmenten die snel opladen, creëer je prints die urenlang helder blijven oplichten.",
     highlights: [
       {
         title: "Heldere naschijn",
@@ -206,18 +391,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 3 werkdagen",
     priceIndicator: "Prijsindicatie: €€",
-    faq: [
-      {
-        question: "Moet ik speciale instellingen gebruiken?",
-        answer:
-          "Gebruik een iets hogere temperatuur (220 °C) en trager tempo zodat het pigment homogeen smelt. Zo voorkom je spikkels.",
-      },
-      {
-        question: "Is PLA Glow voedselveilig?",
-        answer:
-          "Nee. De fosforescerende additieven zijn niet gecertificeerd voor voedingstoepassingen. Gebruik het vooral decoratief of functioneel.",
-      },
-    ],
+    faq: materialFaq["PLA_GLOW"],
   },
   {
     key: "PLA_MARBLE",
@@ -267,18 +441,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 3 werkdagen",
     priceIndicator: "Prijsindicatie: €€",
-    faq: [
-      {
-        question: "Lijken laaglijnen niet raar met spikkels?",
-        answer:
-          "De spikkels verdoezelen laaglijnen. Met een lichte nabehandeling oogt het als echt marmer, zelfs bij 0,2 mm lagen.",
-      },
-      {
-        question: "Kan PLA Marble buiten staan?",
-        answer:
-          "PLA blijft gevoelig voor langdurige UV en hitte. Gebruik het buiten enkel op beschutte plekken of kies PETG voor permanente outdoor toepassingen.",
-      },
-    ],
+    faq: materialFaq["PLA_MARBLE"],
   },
   {
     key: "PLA_SPARKLE",
@@ -328,18 +491,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 4 werkdagen",
     priceIndicator: "Prijsindicatie: €€",
-    faq: [
-      {
-        question: "Kan PLA Sparkle mijn nozzle verstoppen?",
-        answer:
-          "Nee, de deeltjes zijn erg fijn. We adviseren wel regelmatig een cold pull uit te voeren om residu te verwijderen.",
-      },
-      {
-        question: "Werkt het glittereffect op foto?",
-        answer:
-          "Ja. Plaats een lichtbron schuin voor het object en je ziet de schittering duidelijk verschijnen op camera.",
-      },
-    ],
+    faq: materialFaq["PLA_SPARKLE"],
   },
   {
     key: "PLA_METAL",
@@ -389,18 +541,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 3 werkdagen",
     priceIndicator: "Prijsindicatie: €€",
-    faq: [
-      {
-        question: "Is PLA Metal elektrisch geleidend?",
-        answer:
-          "Nee. Het betreft een PLA-basis met kleurpigment. Gebruik het enkel voor look & feel, niet voor functionele geleidende onderdelen.",
-      },
-      {
-        question: "Kan ik PLA Metal polijsten?",
-        answer:
-          "Ja. Met nat schuren en een polijstpasta krijg je een hoogglans resultaat. Werk in stappen van korrel 400 tot 2000.",
-      },
-    ],
+    faq: materialFaq["PLA_METAL"],
   },
   {
     key: "PLA_GALAXY",
@@ -450,18 +591,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 4 werkdagen",
     priceIndicator: "Prijsindicatie: €€€",
-    faq: [
-      {
-        question: "Is PLA Galaxy hetzelfde als Sparkle?",
-        answer:
-          "Galaxy gebruikt een donkere basiskleur met fijne glitters die diepte creëren. Sparkle heeft grotere glitters en meer contrast.",
-      },
-      {
-        question: "Kan ik transparante lak gebruiken?",
-        answer:
-          "Ja, een heldere vernislaag versterkt het diepte-effect en beschermt tegen krassen.",
-      },
-    ],
+    faq: materialFaq["PLA_GALAXY"],
   },
   {
     key: "PLA_AERO",
@@ -511,18 +641,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 5 werkdagen",
     priceIndicator: "Prijsindicatie: €€€",
-    faq: [
-      {
-        question: "Is PLA Aero even sterk?",
-        answer:
-          "Het materiaal is iets minder stijf dan klassiek PLA, maar dankzij het foamgedrag vangt het schokken beter op.",
-      },
-      {
-        question: "Welke afwerking krijg ik?",
-        answer:
-          "De huid oogt licht satijn en voelt fluweelachtig door het schuim. Je kunt het alsnog schuren of schilderen.",
-      },
-    ],
+    faq: materialFaq["PLA_AERO"],
   },
   {
     key: "PLA_SILK_PLUS",
@@ -572,18 +691,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 3 werkdagen",
     priceIndicator: "Prijsindicatie: €€",
-    faq: [
-      {
-        question: "Zijn laaglijnen zichtbaar?",
-        answer:
-          "De glans maakt laaglijnen minder zichtbaar. Voor een echt spiegelend resultaat raden we fijn schuren en polijsten aan.",
-      },
-      {
-        question: "Is PLA Silk+ kwetsbaar?",
-        answer:
-          "Het is iets brosser dan standaard PLA. Voor functionele onderdelen kies je beter PLA Tough+ of PETG.",
-      },
-    ],
+    faq: materialFaq["PLA_SILK_PLUS"],
   },
   {
     key: "PLA_BASIC_GRADIENT",
@@ -633,18 +741,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 3 werkdagen",
     priceIndicator: "Prijsindicatie: €€",
-    faq: [
-      {
-        question: "Kan ik het verloop sturen?",
-        answer:
-          "Het verloop hangt af van de spoellengte. We helpen je object oriënteren zodat de mooiste kleuren zichtbaar zijn.",
-      },
-      {
-        question: "Zijn de kleuren reproduceerbaar?",
-        answer:
-          "Elke spoel heeft een eigen patroon. We kiezen de juiste spoel voor je bestelling, maar kleine verschillen horen erbij.",
-      },
-    ],
+    faq: materialFaq["PLA_BASIC_GRADIENT"],
   },
   {
     key: "PLA_BASIC",
@@ -694,18 +791,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 2 werkdagen",
     priceIndicator: "Prijsindicatie: €",
-    faq: [
-      {
-        question: "Is PLA Basic voedselveilig?",
-        answer:
-          "Het filament is niet gecertificeerd voor voedselcontact. Voor decoratieve toepassingen is het perfect geschikt.",
-      },
-      {
-        question: "Kan PLA Basic buiten gebruikt worden?",
-        answer:
-          "Kortstondig kan dat, maar langdurige zon en warmte kunnen vervorming veroorzaken. Kies PETG voor outdoor projecten.",
-      },
-    ],
+    faq: materialFaq["PLA_BASIC"],
   },
   {
     key: "PETG",
@@ -755,18 +841,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 3 werkdagen",
     priceIndicator: "Prijsindicatie: €€",
-    faq: [
-      {
-        question: "Is PETG food-safe?",
-        answer:
-          "De grondstof kan food-safe zijn, maar 3D prints hebben microgroeven. Voor kritieke toepassingen raden we het niet aan.",
-      },
-      {
-        question: "Welke toleranties haal je?",
-        answer:
-          "We halen standaard ±0,2 mm. Voor kritieke passing stemmen we ontwerp en printinstellingen af.",
-      },
-    ],
+    faq: materialFaq["PETG"],
   },
   {
     key: "PLA_TRANSLUCENT",
@@ -816,18 +891,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 3 werkdagen",
     priceIndicator: "Prijsindicatie: €€",
-    faq: [
-      {
-        question: "Hoe homogeen is het licht?",
-        answer:
-          "We stemmen de wanddikte af op jouw toepassing. Met vase-mode prints krijg je een perfect gelijkmatige gloed.",
-      },
-      {
-        question: "Verkleurt het materiaal?",
-        answer:
-          "Langdurige UV kan lichte verkleuring geven. Voor outdoor lichtobjecten adviseren we PETG Translucent.",
-      },
-    ],
+    faq: materialFaq["PLA_TRANSLUCENT"],
   },
   {
     key: "PLA_SILK_MULTI_COLOR",
@@ -877,18 +941,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 4 werkdagen",
     priceIndicator: "Prijsindicatie: €€€",
-    faq: [
-      {
-        question: "Kan ik bepalen welke kleur waar komt?",
-        answer:
-          "We stemmen de startpositie van de spoel af, maar exacte kleurposities blijven uniek per print.",
-      },
-      {
-        question: "Is het materiaal krasgevoelig?",
-        answer:
-          "De glanslaag kan fijne krasjes vertonen bij intensief gebruik. Beschermende vernis helpt dit te beperken.",
-      },
-    ],
+    faq: materialFaq["PLA_SILK_MULTI_COLOR"],
   },
   {
     key: "PLA_CF",
@@ -938,18 +991,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 4 werkdagen",
     priceIndicator: "Prijsindicatie: €€€",
-    faq: [
-      {
-        question: "Hoe sterk is PLA-CF?",
-        answer:
-          "Het is stijver dan PLA maar iets brosser bij impact. Voor maximale taaiheid raden we PETG-CF aan.",
-      },
-      {
-        question: "Laat het vezels achter op het printbed?",
-        answer:
-          "Nee, maar we gebruiken PEI of glas met lijm voor betrouwbare hechting en eenvoudige verwijdering.",
-      },
-    ],
+    faq: materialFaq["PLA_CF"],
   },
   {
     key: "PLA_WOOD",
@@ -999,18 +1041,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 3 werkdagen",
     priceIndicator: "Prijsindicatie: €€",
-    faq: [
-      {
-        question: "Ruiken prints naar hout?",
-        answer:
-          "Ja, er blijft een subtiele houtgeur aanwezig. Je kunt het object vernissen om de geur te verzegelen indien gewenst.",
-      },
-      {
-        question: "Kan PLA Wood verbranden in de nozzle?",
-        answer:
-          "Houd de temperatuur onder 215 °C en print niet te langzaam. We reinigen de nozzle regelmatig om aanslag te voorkomen.",
-      },
-    ],
+    faq: materialFaq["PLA_WOOD"],
   },
   {
     key: "TPU",
@@ -1060,18 +1091,7 @@ const details: MaterialDetailContent[] = [
     },
     leadTime: "Levertijd 5 werkdagen",
     priceIndicator: "Prijsindicatie: €€€",
-    faq: [
-      {
-        question: "Is TPU olie- of chemicaliënbestendig?",
-        answer:
-          "TPU is bestand tegen de meeste oliën en vetten. Voor zware chemicaliën testen we graag samen op compatibiliteit.",
-      },
-      {
-        question: "Hoe flexibel is het eindproduct?",
-        answer:
-          "We gebruiken Shore 95A TPU. Het voelt als een stevige rubber: buigzaam maar vormvast. Dikkere wanden maken het stijver, dunne wanden buigen makkelijk.",
-      },
-    ],
+    faq: materialFaq["TPU"],
   },
 ]
 

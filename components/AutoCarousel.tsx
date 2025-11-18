@@ -168,7 +168,6 @@ export default function AutoCarousel({
       }
 
       <style
-        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
           __html: `
           @keyframes fadeIn {

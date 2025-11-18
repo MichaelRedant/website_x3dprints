@@ -8,6 +8,7 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import CtaBlock from "@/components/CtaBlock"
 import Faq from "@/components/Faq"
+import ShimmerButton from "@/components/ShimmerButton"
 import { servicesFaq } from "@/content/services-faq"
 
 export const metadata: Metadata = {
@@ -124,7 +125,7 @@ export default function Page() {
     { k: "Tolerantie", v: "Typisch ±0,2 mm voor FDM (bespreek kritische maten)" },
     { k: "Materialen", v: "PLA (mat/wood/marble/silk/…), PETG, TPU; andere in overleg" },
     { k: "Nabewerking", v: "Support verwijderen en licht ontbramen. Geen schuren, primer of lak." },
-    { k: "Planning", v: "Meestal 2–5 werkdagen. Productie in bijberoep, spoed enkel indien haalbaar." },
+    { k: "Planning", v: "Meestal enkele werkdagen. Productie in bijberoep, spoed enkel indien haalbaar." },
   ]
 
   const faqJsonLd = {
@@ -165,28 +166,76 @@ export default function Page() {
       {/* HERO */}
       <section className="px-6 pt-14 pb-10 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <h1 className="bg-gradient-to-br from-indigo-600 to-sky-500 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
-              3D-printservice in Herzele
+          <Reveal className="stacked-content">
+            <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+              3D print service uit Herzele (bijberoep)
             </h1>
-            <p className="mt-3 max-w-3xl text-slate-600">
-              Lokale FDM 3D-printdienst in bijberoep. We helpen je snel van STL/STEP naar tastbare prototypes of kleine
-              reeksen met eerlijk advies over haalbaarheid, planning en budget.
+            <p className="mt-3 max-w-3xl text-pretty text-slate-600">
+              X3DPrints is een éénmansstudio in bijberoep. Je spreekt rechtstreeks met de maker, krijgt eerlijke timings (meestal enkele werkdagen) en materiaaladvies dat past bij jouw project en budget.
             </p>
-            <div className="mt-6 flex gap-3">
+            <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
+              <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
               <Link
-                href="/contact"
-                className="rounded-xl border border-white/20 bg-black px-5 py-3 text-sm font-semibold text-white hover:brightness-110"
+                href="/materials#material-suggestion-tool"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
-                Offerte aanvragen
+                Material Suggestion Tool
               </Link>
               <Link
-                href="/materials"
-                className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+                href="/blog"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
-                Materialen & kleuren
+                Lees de blog
               </Link>
             </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* SOLO APPROACH */}
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <div className="grid gap-6 lg:grid-cols-2">
+                <div className="space-y-3">
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Waarom X3DPrints</p>
+                  <h2 className="text-2xl font-semibold text-slate-900">Bijberoep met focus en korte lijnen</h2>
+                  <p className="text-sm text-slate-600">
+                    Ik produceer vanuit Herzele en plan elke job persoonlijk. Geen ticket-systeem, wel rechtstreeks overleg met de maker, transparante communicatie en flexibiliteit voor lokale afhalingen.
+                  </p>
+                  <ul className="space-y-2 text-sm text-slate-600">
+                    <li className="flex gap-2"><span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-500" aria-hidden />Afhalen mogelijk voor Gent/Aalst, verzending voor heel België.</li>
+                    <li className="flex gap-2"><span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-500" aria-hidden />Planning in overleg: typisch enkele werkdagen, spoed enkel wanneer haalbaar.</li>
+                    <li className="flex gap-2"><span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-500" aria-hidden />Je krijgt feedback op design en materiaal voor we printen.</li>
+                  </ul>
+                </div>
+                <div className="space-y-3">
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Handige resources</p>
+                  <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-4 text-sm text-slate-600">
+                    <p className="font-semibold text-slate-900">Material Suggestion Tool</p>
+                    <p className="mt-1">Gebruik de interactieve wizard om een startpunt te krijgen voor PLA, PETG, TPU en specials.</p>
+                    <Link href="/materials#material-suggestion-tool" className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600">
+                      Ga naar de tool <span aria-hidden>-&gt;</span>
+                    </Link>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-4 text-sm text-slate-600">
+                    <p className="font-semibold text-slate-900">Kennisbank & blog</p>
+                    <p className="mt-1">Lees artikels over PLA vs PETG, kostprijsberekening en 3D printen in de buurt.</p>
+                    <Link href="/blog" className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600">
+                      Bekijk alle topics <span aria-hidden>-&gt;</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <p className="mt-6 text-xs text-slate-500">
+                Niet zeker welk filament je nodig hebt? Gebruik de{" "}
+                <Link href="/materials#material-suggestion-tool" className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600">
+                  Material Suggestion Tool
+                </Link>{" "}
+                of stuur je vraag door; we bekijken het persoonlijk.
+              </p>
+            </GlassCard>
           </Reveal>
         </div>
       </section>
@@ -205,6 +254,47 @@ export default function Page() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* KNOWLEDGE + SEO */}
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <div className="grid gap-6 md:grid-cols-3">
+                {[
+                  {
+                    title: "PLA vs PETG",
+                    body: "Vergelijk slagvastheid, hittebestendigheid en afwerking. Handig om materiaalkeuze te sturen.",
+                    href: "/blog/pla-vs-petg",
+                  },
+                  {
+                    title: "Hoeveel kost 3D printen?",
+                    body: "Leer welke factoren de kost beïnvloeden en hoe we offertes opstellen voor kleine reeksen.",
+                    href: "/blog/hoeveel-kost-3d-printen",
+                  },
+                  {
+                    title: "3D printen in de buurt",
+                    body: "Uitleg over afhalen in Herzele en leveringen richting Gent, Aalst en Antwerpen.",
+                    href: "/blog/3d-printen-in-de-buurt",
+                  },
+                ].map((item) => (
+                  <div key={item.title}>
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Kennis</p>
+                    <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
+                    <p className="mt-2 text-sm text-slate-600">{item.body}</p>
+                    <Link
+                      href={item.href}
+                      className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600"
+                    >
+                      Lees artikel <span aria-hidden>-&gt;</span>
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </GlassCard>
+          </Reveal>
         </div>
       </section>
 

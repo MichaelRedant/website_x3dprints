@@ -1,48 +1,46 @@
-# X3DPrints — Website (Next.js + Tailwind v4)
+# X3DPrints – Website (Next.js + Tailwind v4)
 
-Productiesite voor **X3DPrints**: snelle, consistente 3D-printservice. Gebouwd met **Next.js (App Router, TS)**, **Tailwind CSS v4**, **Framer Motion** en gericht op **performance, SEO en toegankelijkheid**.
+Productiesite voor **X3DPrints**, een snelle 3D-printservice uit Herzele. Gebouwd met **Next.js (App Router, TS)**, **Tailwind CSS v4** en **Framer Motion**, volledig geoptimaliseerd voor performance, SEO en a11y.
 
-- Live: https://www.x3dprints.be
-- Repo: `website_x3dprints`
+- Live: https://www.x3dprints.be  
+- Repo: `website_x3dprints`  
 - Node: **v20**
 
 ---
 
 ## Inhoud
-- [X3DPrints — Website (Next.js + Tailwind v4)](#x3dprints--website-nextjs--tailwind-v4)
-  - [Inhoud](#inhoud)
-  - [Features](#features)
-  - [Snel starten](#snel-starten)
-- [1) Node 20](#1-node-20)
-- [2) Dependencies](#2-dependencies)
-- [3) Development](#3-development)
-- [4) Productiebouw (lokaal testen)](#4-productiebouw-lokaal-testen)
-  - [Scripts](#scripts)
-  - [Structuur](#structuur)
-  - [Styling (Tailwind v4)](#styling-tailwind-v4)
-  - [SEO](#seo)
-  - [API Routes](#api-routes)
-  - [Omgeving / .env](#omgeving--env)
-- [.env.example](#envexample)
-  - [CI](#ci)
-- [.github/workflows/ci.yml](#githubworkflowsciyml)
-  - [Deploy](#deploy)
-  - [Troubleshooting](#troubleshooting)
-  - [Licentie](#licentie)
+
+- [Features](#features)
+- [Snel starten](#snel-starten)
+- [Structuur](#structuur)
+- [Styling (Tailwind v4)](#styling-tailwind-v4)
+- [SEO & Content](#seo--content)
+- [Material Suggestion Tool](#material-suggestion-tool)
+- [Contact & Prefill](#contact--prefill)
+- [Viewer](#viewer)
+- [API Routes](#api-routes)
+- [Omgeving / .env](#omgeving--env)
+- [CI](#ci)
+- [Deploy](#deploy)
+- [Troubleshooting](#troubleshooting)
 
 ---
 
 ## Features
+
 - **Next.js App Router** met server components, per-page metadata en route handlers.
-- **Tailwind v4** met PostCSS plugin `@tailwindcss/postcss` en minimal CSS.
-- **Framer Motion** micro-animaties met `prefers-reduced-motion`.
-- **On-page SEO**: Metadata API, OG/Twitter, interne linking, JSON-LD (LocalBusiness, FAQ).
-- **Snelle basis**: next/image, responsive layout, nette a11y defaults.
-- **Eenvoudige structuur** en duidelijke alias `@/*`.
+- **Tailwind v4** via `@tailwindcss/postcss`, minimale global CSS.
+- **Framer Motion** micro-animaties (`useReducedMotion` aware).
+- **Material Suggestion Tool** (multi-step wizard, HowTo JSON-LD, CTA’s die `/contact?material=<slug>` prefillen).
+- **Blog & segment hubs** met Article/ItemList JSON-LD en strategische interne links.
+- **Viewer** met moderne dropzone, privacycopy buiten canvas en CTA’s naar services/materials.
+- **On-page SEO**: Metadata API, FAQ + HowTo JSON-LD, ImageObject op portfolio, breadcrumbs, interne linking.
+- **Consistente hero-styling** (`text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl`).
 
 ---
 
 ## Snel starten
+
 ```bash
 # 1) Node 20
 node -v
@@ -52,135 +50,202 @@ npm ci
 
 # 3) Development
 npm run dev
+```
 
 ### Contactformulier lokaal testen
-Het contactformulier post naar de Next.js API-route `/api/contact`.
-Er is geen aparte PHP-server meer nodig.
 
-#### SMTP configureren
+Het contactformulier post naar `app/api/contact/route.ts`. Geen aparte PHP nodig.
 
-De API-route gebruikt Nodemailer. Stel minimaal deze variabelen in om via SMTP te mailen:
-
+SMTP variabelen:
 ```
-SMTP_HOST=mail.voorbeeld.nl
+SMTP_HOST=smtp.voorbeeld.be
 SMTP_PORT=587
-SMTP_USER=info@voorbeeld.nl
+SMTP_USER=info@voorbeeld.be
 SMTP_PASS=supergeheim
 MAIL_TO=info@x3dprints.be
 MAIL_FROM="X3DPrints <no-reply@x3dprints.be>"
 ```
 
-Optioneel kun je `DKIM_DOMAIN`, `DKIM_SELECTOR` en `DKIM_PRIVATE_KEY` zetten voor DKIM-signing.
+Optioneel: `DKIM_DOMAIN`, `DKIM_SELECTOR`, `DKIM_PRIVATE_KEY`.
 
-# 4) Productiebouw (lokaal testen)
+### Productiebouw (lokaal testen)
+
+```bash
 npm run build && npm run start
+```
 
-## Scripts
+### Scripts
+
+```
 npm run dev     # Next dev server
 npm run build   # Productie build
 npm run start   # Serve .next/standalone
-npm run lint    # (indien geconfigureerd)
+npm run lint    # ESLint (indien geconfigureerd)
+```
+
+---
 
 ## Structuur
+
+```
 app/
   (pages)/
-    materials/page.tsx
-    portfolio/page.tsx
-    pricing/page.tsx
-    services/page.tsx
-    contact/page.tsx        # server component
-    contact/ContactForm.tsx # client component
+    blog/
+      <slug>/page.tsx          # Artikel (server component)
+      page.tsx                 # Blog hub (server component)
+    materials/
+      page.tsx                 # Material overview + suggestion tool section
+      [slug]/page.tsx          # Materiaal detail (server component)
+    segments/
+      page.tsx                 # Segment hub (ItemList JSON-LD)
+    services|portfolio|pricing|viewer|about|contact|locaties|faq
+  segments/
+    <slug>/page.tsx            # Segment detail pagina’s
   api/
     contact/route.ts
+  layout.tsx                   # metadata + LocalBusiness JSON-LD
+  sitemap.ts                   # dynamic sitemap
+  robots.ts
   globals.css
-  layout.tsx
-  page.tsx                  # homepage (server component)
 
 components/
-  Reveal.tsx
-  ShimmerButton.tsx
-  Header.tsx
-  Footer.tsx
+  Container.tsx / GlassCard.tsx / Reveal.tsx / ShimmerButton.tsx
+  ContactForm.tsx
+  MaterialSuggestionTool.tsx   # multi-step wizard + CTA hooks
+  ModelViewer.tsx              # drag/drop + canvas UI
 
 lib/
-  seo.ts     # SITE-config voor metadata/JSON-LD
-  utils.ts   # cn() helper
+  seo.ts                       # SITE-config, metadata helpers
+  materials.ts                 # materiaal data + slugs
+  locations.ts                 # lokale landingspagina’s
+
+content/
+  material-details.ts          # hero/faq/spec copy per materiaal
+  material-gallery.ts          # hero gallery
 
 public/
-  images/... # og-home.jpg, hero/portfolio assets
+  images/...                   # og-home.jpg, portfolio shots
 
-postcss.config.js
-tsconfig.json
+postcss.config.js              # gebruikt '@tailwindcss/postcss'
+tailwind.config.ts             # (optioneel)
+tsconfig.json                  # pad alias '@/*'
 AGENTS.md
 README.md
+```
+
+---
 
 ## Styling (Tailwind v4)
 
-PostCSS plugin verplicht:
+- PostCSS config:
+  ```js
+  // postcss.config.js
+  module.exports = {
+    plugins: { "@tailwindcss/postcss": {} },
+  }
+  ```
+- `app/globals.css` bevat enkel:
+  ```css
+  @import "tailwindcss";
+  ```
+  of expliciet `preflight` + `utilities`.
+- `@apply` werkt zoals gewoonlijk. VS Code warnings zijn cosmetisch.
 
-// postcss.config.js
-module.exports = {
-  plugins: { '@tailwindcss/postcss': {} },
+---
 
+## SEO & Content
 
+- **Global:** `app/layout.tsx` zet LocalBusiness JSON-LD via `SITE` uit `lib/seo.ts`.
+- **Per pagina:** `export const metadata`.
+- **FAQ/HowTo JSON-LD:**  
+  - Materials detailpagina’s renderen FAQ + FAQ JSON-LD.  
+  - Material Suggestion Tool gebruikt HowTo JSON-LD.  
+  - Portfolio gebruikt ImageObject entries per case.  
+  - Blog posts hebben Article schema (met `datePublished`).  
+  - Segments hub genereert ItemList.
+- **Interne links:** elke hero koppelt naar `materials`, `materials#material-suggestion-tool`, `blog`, `segments`, `services`, `contact`.
+- **Tone of voice:** benadruk dat X3DPrints een éénmansstudio in bijberoep is (realistische planning, geen harde “2-5 dagen” belofte).
 
-Globals: kies één van beide
+---
 
-/* app/globals.css — korte variant */
-@import "tailwindcss";
+## Material Suggestion Tool
 
+- Component: `components/MaterialSuggestionTool.tsx` (client).
+- Beschikbaar op `/materials` met anchor `#material-suggestion-tool`.
+- CTA’s moeten query `material=<slug>` meegeven naar `/contact` zodat de select automatisch prefilled wordt.
+- Toon altijd:
+  - Multi-step vragen (min. 4) met mogelijkheid om terug te gaan.
+  - Resultaat met aanbeveling + redenen + disclaimers (“advies, afhankelijk van project”).
+  - CTA’s: `Vraag advies`, `Plan een gesprek`, `Bekijk materiaal`.
+- JSON-LD: HowTo script in component/page.
+- Link anchors vanuit home, blog, services, viewer, footer.
 
-of
+---
 
-/* expliciet */
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
+## Contact & Prefill
 
+- `components/ContactForm.tsx` leest `material` query param en kiest de juiste optie.
+- Links/knoppen die een materiaal aanbevelen moeten `href="/contact?material=<slug>"` gebruiken.
+- Copy moet transparant zijn over planning (“enkele werkdagen, afstemming in overleg”).
 
-@apply werkt. Eventuele VS Code warnings komen van de CSS-language server.
+---
 
-## SEO
+## Viewer
 
-Globaal: app/layout.tsx zet basis metadata en LocalBusiness JSON-LD (via SITE uit lib/seo.ts).
+- `app/(pages)/viewer/page.tsx` gebruikt uniforme hero-styling, CTA’s naar suggestion tool en services.
+- `components/ModelViewer.tsx`:
+  - Groter canvas (min. 640×480) met orbit controls.
+  - Dropzone + privacycopy buiten WebGL canvas.
+  - Ondersteunt STL/OBJ/GLB, toont polycount/afmetingen indien beschikbaar.
+  - CTA’s naar `/contact` en `/materials`.
 
-Per pagina: export const metadata in server pages.
-
-FAQ: homepage rendert FAQPage JSON-LD voor rich results.
-
-Interne links: home ↔ materialen/portfolio/prijzen/contact.
-
-Animaties
-
-Framer Motion via kleine client components (bv. Reveal.tsx, ShimmerButton.tsx).
-
-Houd server pages server-side; importeer client-only UI als child component.
-
-Respecteer useReducedMotion.
+---
 
 ## API Routes
 
-Voorbeeld: app/api/contact/route.ts (POST).
+- Voorbeeld `app/api/contact/route.ts` (POST):
+  ```ts
+  import { NextResponse } from "next/server"
 
-Valideer input, stuur mail/webhook of logica naar keuze.
+  export async function POST(req: Request) {
+    const data = await req.json().catch(() => null)
+    if (!data) return NextResponse.json({ error: "Invalid JSON" }, { status: 400 })
 
-Antwoorden met NextResponse.json.
+    // TODO: validate, send mail/webhook
+    return NextResponse.json({ ok: true })
+  }
+  ```
+- Valideer input, rate-limit indien nodig, return veilige errors.
+
+---
 
 ## Omgeving / .env
 
-Project draait zonder secrets. Voor e-mail/webhooks voeg later toe:
+Project draait zonder secrets, maar voor mailing zijn deze handig:
 
-# .env.example
-MAIL_API_KEY=
-WEBHOOK_URL=
+```
+SMTP_HOST=
+SMTP_PORT=
+SMTP_USER=
+SMTP_PASS=
+MAIL_TO=
+MAIL_FROM=
+DKIM_DOMAIN=
+DKIM_SELECTOR=
+DKIM_PRIVATE_KEY=
+```
+
+---
 
 ## CI
 
-Optionele GitHub Actions (build/lint). Zie voorbeeld:
+GitHub Actions voorbeeld (`.github/workflows/ci.yml`):
 
-# .github/workflows/ci.yml
+```yaml
 name: CI
 on:
-  push: { branches: [ main ] }
+  push:
+    branches: [main]
   pull_request:
 jobs:
   build:
@@ -188,52 +253,38 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: "20", cache: "npm" }
+        with:
+          node-version: "20"
+          cache: "npm"
       - run: npm ci
       - run: npm run lint --if-present
       - run: npm run build
+```
+
+---
 
 ## Deploy
 
-Geschikt voor elke Node-hosting die Next ondersteunt.
+- Geschikt voor elke Node-hosting die Next.js ondersteunt (Vercel, Render, eigen VPS).
+- Build: `npm run build` → `npm run start`.
+- Zorg dat Node 20 beschikbaar is en dat `PUBLIC_URL`/`SITE.url` correct staat.
 
-Build: npm run build → npm run start.
-
-Zorg dat Node 20 beschikbaar is.
+---
 
 ## Troubleshooting
 
-Tailwind v4 plugin error
-you're trying to use tailwindcss directly as a PostCSS plugin.
-Gebruik @tailwindcss/postcss in postcss.config.js.
+| Probleem | Oplossing |
+|----------|-----------|
+| **Tailwind v4 plugin error** | Zorg dat `postcss.config.js` `@tailwindcss/postcss` gebruikt; importeer `@import "tailwindcss";` in `app/globals.css`. |
+| **metadata + "use client" error** | Metadata kan niet in client component. Houd page server-side, importeer client component als child. |
+| **Contactmateriaal wordt niet geprefilled** | Check dat link `?material=<slug>` meegeeft én dat slug voorkomt in `lib/materials.ts`. |
+| **Material Suggestion Tool gooit build error** | Controleer dat alle arrays/steps afgesloten zijn en dat `recommendation` altijd aanwezig is voordat JSX rendert. |
+| **Viewer klaagt over ontbrekende `Link` of `ShimmerButton`** | Importeer deze expliciet in `app/(pages)/viewer/page.tsx`. |
+| **Sitemap mist nieuwe pagina** | Voeg slug toe aan `app/sitemap.ts` (static arrays) of haal uit content bron (`MATERIAL_DETAILS`, blog slugs, segments). |
 
-CSS laadt niet
-Verzeker app/globals.css is geïmporteerd in app/layout.tsx. Herstart dev server en wis .next.
-
-metadata + "use client" error
-export const metadata mag niet in client components. Houd page.tsx server-side en stop interactieve UI in een child met "use client".
-
-Alias @/lib/... niet gevonden
-tsconfig.json:
-
-{
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": { "@/*": ["*"] }
-  }
-}
-
-
-Bestanden moeten dan in /lib op repo-root bestaan.
+---
 
 ## Licentie
 
-MIT. Zie LICENSE (toevoegen indien nodig).
-
-Credits
-
-Next.js App Router, Tailwind v4, Framer Motion.
-
-Content en structuur afgestemd op X3DPrints (2025).
-
-Gemaakt door Xinudesign
+MIT (voeg `LICENSE` toe indien nodig).  
+Made by Xinudesign · Content afgestemd op X3DPrints (2025).

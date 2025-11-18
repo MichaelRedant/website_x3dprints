@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 
+import Link from "next/link"
 import Container from "@/components/Container"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
@@ -69,16 +70,16 @@ export default function Page() {
 
       <section className="py-20 sm:py-24">
         <Container className="relative">
-          <Reveal className="max-w-3xl">
+          <Reveal className="max-w-3xl stacked-content">
             <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-600">
               <span className="h-2 w-2 rounded-full bg-emerald-400" aria-hidden /> Nieuw: 3D preview
             </p>
-            <h1 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
+            <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
               Bekijk je 3D print realtime in de browser
             </h1>
             <p className="mt-6 text-lg text-slate-600">
               Upload je 3D-model en ontdek hoe de print eruitziet in een glanzende WebGL-viewer. Geen wachttijd, geen upload naar
-              servers — wel inzicht in meshkwaliteit en een ervaring in X3DPrints-stijl.
+              servers – wel inzicht in meshkwaliteit en een ervaring in X3DPrints-stijl.
             </p>
             <ul className="mt-8 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
               {bullets.map((item) => (
@@ -91,6 +92,20 @@ export default function Page() {
                 </li>
               ))}
             </ul>
+            <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
+              <Link
+                href="/materials#material-suggestion-tool"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+              >
+                Material Suggestion Tool
+              </Link>
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+              >
+                Lees de blog
+              </Link>
+            </div>
           </Reveal>
         </Container>
       </section>
@@ -98,7 +113,9 @@ export default function Page() {
       <section className="pb-20">
         <Container>
           <Reveal>
-            <ModelViewerClient />
+            <div className="rounded-[2rem] border border-white/30 bg-white/60 p-4 shadow-2xl backdrop-blur">
+              <ModelViewerClient className="h-[520px] w-full rounded-[1.5rem] bg-slate-900/80" />
+            </div>
           </Reveal>
         </Container>
       </section>

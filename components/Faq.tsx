@@ -123,7 +123,6 @@ export default function Faq({ city, items, className = "" }: Props) {
 
       {/* Keyframes + reduced motion */}
       <style
-        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
           __html: `
           @keyframes fadeInUp {

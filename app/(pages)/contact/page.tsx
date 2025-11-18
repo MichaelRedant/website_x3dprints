@@ -1,5 +1,6 @@
 // app/(pages)/contact/page.tsx
 import type { Metadata } from "next"
+import { Suspense } from "react"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import GlassOrb from "@/components/GlassOrb"
@@ -45,7 +46,9 @@ export default function ContactPage() {
                   Vul zo concreet mogelijk in. Voeg link(s) naar STL/STEP toe in het bericht.
                 </p>
                 <div className="mt-6">
-                  <ContactForm />
+                  <Suspense fallback={<div className="text-sm text-slate-500">Formulier wordt geladen…</div>}>
+                    <ContactForm />
+                  </Suspense>
                 </div>
               </GlassCard>
             </Reveal>

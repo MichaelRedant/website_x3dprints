@@ -231,7 +231,7 @@ export default function ModelViewer({ className }: ModelViewerProps) {
   )
 
   const onDrop = useCallback(
-    (event: DragEvent<HTMLLabelElement>) => {
+    (event: DragEvent<HTMLElement>) => {
       event.preventDefault()
       setDragActive(false)
       if (event.dataTransfer?.files?.length) {
@@ -241,12 +241,12 @@ export default function ModelViewer({ className }: ModelViewerProps) {
     [handleFiles]
   )
 
-  const onDragOver = useCallback((event: DragEvent<HTMLLabelElement>) => {
+  const onDragOver = useCallback((event: DragEvent<HTMLElement>) => {
     event.preventDefault()
     setDragActive(true)
   }, [])
 
-  const onDragLeave = useCallback((event: DragEvent<HTMLLabelElement>) => {
+  const onDragLeave = useCallback((event: DragEvent<HTMLElement>) => {
     event.preventDefault()
     if (!containerRef.current?.contains(event.relatedTarget as Node)) {
       setDragActive(false)
@@ -316,42 +316,55 @@ export default function ModelViewer({ className }: ModelViewerProps) {
       </div>
 
       <div className="space-y-4">
-        <label
-          onDragOver={onDragOver}
-          onDragLeave={onDragLeave}
-          onDrop={onDrop}
-          className={cn(
-            "relative flex cursor-pointer flex-col items-center justify-center gap-3 rounded-3xl border border-dashed p-6 text-center transition",
-            dragActive ? "border-sky-400/80 bg-sky-500/5" : "border-slate-400/40 bg-white/10 hover:border-slate-300/60"
-          )}
-        >
-          <input
-            ref={inputRef}
-            type="file"
-            name="model"
-            accept=".stl,.obj,.glb,.gltf"
-            className="sr-only"
-            onChange={(event) => {
-              void handleFiles(event.target.files)
-            }}
-          />
-          <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-sky-500/10">
-            <Upload className="h-5 w-5 text-sky-400" aria-hidden />
+        <div className="space-y-4 rounded-3xl border border-slate-200/70 bg-white/80 p-6 shadow-lg">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">1. Upload</p>
+          <div
+            onDragOver={onDragOver}
+            onDragLeave={onDragLeave}
+            onDrop={onDrop}
+            className={cn(
+              "relative flex flex-col items-center justify-center gap-4 rounded-3xl border border-dashed border-slate-300/60 p-6 text-center transition",
+              dragActive ? "border-sky-400/80 bg-sky-500/5" : "bg-white hover:border-slate-400"
+            )}
+          >
+            <input
+              ref={inputRef}
+              type="file"
+              name="model"
+              accept=".stl,.obj,.glb,.gltf"
+              className="sr-only"
+              onChange={(event) => {
+                void handleFiles(event.target.files)
+              }}
+            />
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-500/10">
+              <Upload className="h-5 w-5 text-sky-400" aria-hidden />
+            </div>
+            <div>
+              <div className="text-sm font-semibold text-slate-900">Sleep een STL, OBJ of GLB hierheen</div>
+              <p className="text-xs text-slate-600">Max. {MAX_FILE_SIZE_MB} MB – we verwerken alles lokaal</p>
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-2 text-xs text-slate-500">
+              <button
+                type="button"
+                onClick={() => inputRef.current?.click()}
+                className="rounded-full border border-slate-300/70 px-4 py-1.5 text-xs font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900"
+              >
+                Kies bestand
+              </button>
+              <span>of sleep het in deze zone</span>
+            </div>
           </div>
-          <div className="text-sm font-semibold text-slate-900">Sleep je bestand hierheen</div>
-          <p className="text-xs text-slate-600">
-            Ondersteunt STL, OBJ en GLB (max. {MAX_FILE_SIZE_MB} MB). Bestand blijft lokaal.
-          </p>
-        </label>
 
-        <div className="rounded-3xl border border-slate-200/70 bg-white/70 p-4 shadow-sm">
-          <div className="flex items-start gap-3">
-            <ShieldCheck className="mt-0.5 h-5 w-5 text-emerald-500" aria-hidden />
-            <div className="space-y-1 text-sm">
-              <p className="font-semibold text-slate-900">Privacy eerst</p>
-              <p className="text-slate-600">
-                Het model wordt nooit naar onze servers verzonden. Alles draait binnen je browser en verdwijnt zodra je de pagina sluit.
-              </p>
+          <div className="rounded-3xl border border-slate-200/70 bg-white/70 p-4 shadow-sm">
+            <div className="flex items-start gap-3">
+              <ShieldCheck className="mt-0.5 h-5 w-5 text-emerald-500" aria-hidden />
+              <div className="space-y-1 text-sm">
+                <p className="font-semibold text-slate-900">Privacy eerst</p>
+                <p className="text-slate-600">
+                  Het model wordt nooit naar onze servers verzonden. Alles draait binnen je browser en verdwijnt zodra je de pagina sluit.
+                </p>
+              </div>
             </div>
           </div>
         </div>

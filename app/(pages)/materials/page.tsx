@@ -1,5 +1,6 @@
 // app/(pages)/materials/page.tsx
 import type { Metadata } from "next"
+import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import MaterialCard from "@/components/MaterialCard"
@@ -7,6 +8,7 @@ import { MATERIALS, MATERIAL_ORDER, MATERIAL_SLUGS } from "@/lib/materials"
 import FaqPromo from "@/components/FaqPromo"
 import GlassCard from "@/components/GlassCard"
 import { MATERIAL_DETAILS } from "@/content/material-details"
+import MaterialSuggestionTool from "@/components/MaterialSuggestionTool"
 
 export const metadata: Metadata = {
   title: "Materialen (PLA, PETG, TPU) | X3DPrints",
@@ -98,17 +100,21 @@ export default function MaterialsPage() {
       <section className="px-6 pt-14 pb-8 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Materialen
-            </h1>
+            <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">Materialen</h1>
             <p className="mt-3 max-w-2xl text-slate-600">
               Overzicht van onze meest gebruikte filamenten met eigenschappen, kleuropties en voorraad:
               <strong> PLA</strong> (Matte, Tough+, Silk, Marble, Wood, Translucent, enz.),
               <strong> PETG</strong> en <strong>TPU</strong>. Twijfel je? We helpen je kiezen.
+              Gebruik ook de{" "}
+              <Link href="#material-suggestion-tool" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                Material Suggestion Tool
+              </Link>{" "}
+              voor een snel advies.
             </p>
           </Reveal>
         </div>
       </section>
+
 
       <section className="px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2">
@@ -155,20 +161,50 @@ export default function MaterialsPage() {
             </div>
           </div>
 
-          <div className="mt-4">
+          <div className="mt-4 space-y-2">
             <ShimmerButton href="/contact">Vraag materiaaladvies</ShimmerButton>
+            <p className="text-xs text-slate-500">
+              Eerst wat research doen? Gebruik de{" "}
+              <Link href="#material-suggestion-tool" className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600">
+                Material Suggestion Tool
+              </Link>{" "}
+              of lees de{" "}
+              <Link href="/blog" className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600">
+                blog & kennisbank
+              </Link>{" "}
+              voor materiaalvergelijkingen zoals PLA vs PETG.
+            </p>
           </div>
         </div>
       </section>
 
       {/* FAQ / Promo */}
-      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="overflow-hidden p-8 sm:p-10">
               <FaqPromo className="mt-10" />
             </GlassCard>
           </Reveal>
+        </div>
+      </section>
+
+      <section
+        id="material-suggestion-tool"
+        className="px-6 pb-24 sm:px-8 lg:px-12"
+        aria-label="Material Suggestion Tool"
+      >
+        <div className="mx-auto max-w-6xl space-y-6 text-center">
+          <Reveal>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              Material Suggestion Tool
+            </h2>
+            <p className="mx-auto max-w-3xl text-slate-600">
+              Selecteer projecttype, omgeving en gewenste afwerking. Je krijgt een suggestie uit onze materialenbibliotheek.
+              Dit blijft indicatief: we bekijken elk project persoonlijk en sturen het perfecte filament aan.
+            </p>
+          </Reveal>
+          <MaterialSuggestionTool />
         </div>
       </section>
 

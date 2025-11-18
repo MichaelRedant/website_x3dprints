@@ -35,8 +35,11 @@ export default function Counter({
   useEffect(() => {
     const unsub = mv.on("change", v => setVal(v as number))
     const controls = animate(mv, to, { duration: reduce ? 0 : duration, ease: "easeOut" })
-    return () => { unsub(); controls.stop() }
-  }, [to, duration, reduce])
+    return () => {
+      unsub()
+      controls.stop()
+    }
+  }, [mv, to, duration, reduce])
 
   // Rond af op gewenst aantal decimalen
   const numeric =

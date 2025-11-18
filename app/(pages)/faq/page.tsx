@@ -1,9 +1,7 @@
 // app/(pages)/faq/page.tsx
 import type { Metadata } from "next"
-import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import Faq from "@/components/Faq"
-import GlassCard from "@/components/GlassCard"
 import GlassOrb from "@/components/GlassOrb"
 import { servicesFaq } from "@/content/services-faq"
 
@@ -130,9 +128,7 @@ export default function Page() {
       </section>
 
       {/* Structured data */}
-      <script type="application/ld+json" // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     </main>
   )
 }

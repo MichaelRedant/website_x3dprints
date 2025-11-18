@@ -1,7 +1,8 @@
 // components/ContactForm.tsx
 "use client"
 
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
+import { useSearchParams } from "next/navigation"
 import { MATERIALS } from "@/lib/materials"
 
 type FormDataShape = {
@@ -21,13 +22,30 @@ const row = "grid gap-2"
 const groupCls = "rounded-2xl border border-slate-200 bg-white/70 p-4 sm:p-5"
 const headingCls = "text-sm font-semibold text-slate-900"
 
-export default function ContactForm() {
+type ContactFormProps = {
+  defaultMaterial?: string
+}
+
+export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) {
+  const searchParams = useSearchParams()
+  const materialFromQuery = searchParams.get("material") || ""
+  const decodedQueryMaterial = useMemo(() => {
+    if (!materialFromQuery) return ""
+    try {
+      return decodeURIComponent(materialFromQuery)
+    } catch {
+      return materialFromQuery
+    }
+  }, [materialFromQuery])
+  const initialMaterial = decodedQueryMaterial || defaultMaterial
+
+  const appliedDefaultRef = useRef(initialMaterial)
   const [data, setData] = useState<FormDataShape>({
     name: "",
     email: "",
     message: "",
     quantity: "",
-    material: "",
+    material: initialMaterial,
     hp: "",
   })
   const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">("idle")
@@ -36,6 +54,18 @@ export default function ContactForm() {
   function update<K extends keyof FormDataShape>(key: K, value: FormDataShape[K]) {
     setData(prev => ({ ...prev, [key]: value }))
   }
+
+  useEffect(() => {
+    const nextDefault = decodedQueryMaterial || defaultMaterial
+    if (!nextDefault) return
+    setData(prev => {
+      if (prev.material && prev.material !== appliedDefaultRef.current) {
+        return prev
+      }
+      return { ...prev, material: nextDefault }
+    })
+    appliedDefaultRef.current = nextDefault
+  }, [decodedQueryMaterial, defaultMaterial])
 
   const emailValid = useMemo(() => /\S+@\S+\.\S+/.test(data.email), [data.email])
 

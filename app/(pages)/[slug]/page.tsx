@@ -127,7 +127,7 @@ export default async function Page(
 
   const faqItems = [
     { q: `Welke materialen kan ik laten 3D printen in ${loc.city}?`, aHtml: `Standaard <strong>PLA Matte</strong>, plus <strong>PETG</strong> en <strong>TPU</strong>. Op aanvraag: ABS/ASA, Nylon of PA-CF. Bekijk <a href="/materials">materialen & richtlijnen</a>.` },
-    { q: `Wat is de levertijd voor 3D printen in ${loc.city}?`, aHtml: `Meestal <strong>2–5 werkdagen</strong>, afhankelijk van complexiteit en oplage. <a href="/contact">Spoed</a> mogelijk in overleg.` },
+    { q: `Wat is de levertijd voor 3D printen in ${loc.city}?`, aHtml: `Meestal <strong>enkele werkdagen</strong>, afhankelijk van complexiteit en oplage. <a href="/contact">Spoed</a> mogelijk in overleg.` },
     { q: "Hoe worden de prijzen berekend?", aHtml: `Transparant: formaat (<em>Small/Medium/Large/XL</em>), materiaaltoeslag, nabehandeling en aantallen. Zie <a href="/pricing">Prijzen</a>.` },
     { q: "Wat zijn de maximale bouwvolumes?", aHtml: `Tot <strong>25 × 25 × 25 cm</strong> per onderdeel. Grotere onderdelen splitsen we in segmenten met nette passing.` },
     { q: "Welke bestandsformaten accepteer je?", aHtml: `<strong>STL</strong> of <strong>STEP</strong>. Voeg indien mogelijk toelichting toe: gewenste sterkte, zichtzijde, afwerking, aantallen.` },
@@ -183,14 +183,14 @@ export default async function Page(
 
             <Catchphrase className="mt-4 block text-base font-medium text-indigo-600 sm:text-lg">Betaalbaar 3D printen</Catchphrase>
 
-            <h1 className="mt-2 bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-balance text-4xl font-extrabold leading-tight tracking-tight text-transparent sm:text-5xl">
+            <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
               Where design meets dimension.
             </h1>
 
             <p className="mt-2 text-balance text-lg font-medium text-slate-700">3D Prints die kloppen</p>
 
             <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 sm:text-lg">
-              X3DPrints is een compacte 3D‑printstudio uit Herzele, onderdeel van Xinudesign. Ideaal voor prototypes en kleine series met strakke afwerking. PLA is onze standaard, maar we schakelen waar nodig over naar PETG, ABS/ASA, Nylon of PA‑CF. Levertijd meestal 2–5 werkdagen, transparante offerte vooraf.
+              X3DPrints is een compacte 3D‑printstudio uit Herzele, onderdeel van Xinudesign. Ideaal voor prototypes en kleine series met strakke afwerking. PLA is onze standaard, maar we schakelen waar nodig over naar PETG, ABS/ASA, Nylon of PA‑CF. We spreken de doorlooptijd samen af en mikken doorgaans op enkele werkdagen met transparante offerte vooraf.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-3">
@@ -204,7 +204,7 @@ export default async function Page(
           <Reveal delay={0.15} className="mt-16 grid gap-6 sm:grid-cols-3">
             {[
               { k: "Tolerantie", v: "±0,2 mm", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 12h16M4 16h16" />) },
-              { k: "Doorlooptijd", v: "2–5 werkdagen", icon: icon(<><circle cx={12} cy={12} r={9} /><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l2 2" /></>) },
+              { k: "Doorlooptijd", v: "Afspraak in overleg (meestal enkele werkdagen)", icon: icon(<><circle cx={12} cy={12} r={9} /><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l2 2" /></>) },
               { k: "Bouwvolume", v: "Tot 25 × 25 × 25 cm", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M21 16V8l-9-5-9 5v8l9 5 9-5M12 3v18M3 8l9 4 9-4" />) },
             ].map((item) => (
               <GlassCard key={item.k} className="p-5 text-center transition-transform hover:-translate-y-1">
@@ -221,7 +221,7 @@ export default async function Page(
       <section className="px-4 pb-20 pt-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-screen-md lg:max-w-screen-lg">
           <header className="relative mx-auto rounded-3xl border border-white/30 bg-white/40 p-6 sm:p-8 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] animate-[fadeInUp_.6s_ease_out_0s_both] text-center">
-            <h1 className="font-extrabold tracking-tight text-[clamp(1.75rem,4vw,2.5rem)] bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 bg-clip-text text-transparent">{keyphrase}</h1>
+            <h1 className="font-extrabold tracking-tight text-[clamp(1.75rem,4vw,2.5rem)] text-slate-900">{keyphrase}</h1>
             <p className="mx-auto mt-3 max-w-prose text-pretty text-slate-600">Snelle, nauwkeurige 3D print service in {loc.city}. Perfect voor <strong>prototypes</strong> en <strong>kleine series</strong>. Persoonlijk advies, korte doorlooptijden.</p>
             <ul className="mx-auto mt-5 grid max-w-2xl gap-2 text-slate-700 sm:grid-cols-2">
               <li className="flex items-start justify-center gap-2 sm:justify-start"><span className="mt-1 inline-block h-2 w-2 rounded-full bg-cyan-400" />Materialen: PLA, PETG, ABS/ASA, TPU</li>
