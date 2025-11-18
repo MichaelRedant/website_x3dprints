@@ -6,6 +6,7 @@ import MaterialCard from "@/components/MaterialCard"
 import { MATERIALS, MATERIAL_ORDER, MATERIAL_SLUGS } from "@/lib/materials"
 import FaqPromo from "@/components/FaqPromo"
 import GlassCard from "@/components/GlassCard"
+import { MATERIAL_DETAILS } from "@/content/material-details"
 
 export const metadata: Metadata = {
   title: "Materialen (PLA, PETG, TPU) | X3DPrints",
@@ -28,6 +29,8 @@ export default function MaterialsPage() {
   const materials = MATERIAL_ORDER.map((key) => {
     const m = MATERIALS[key]
     const slug = MATERIAL_SLUGS[key]
+    const detail = MATERIAL_DETAILS[key]
+
     return {
       key,
       anchorId: slug,
@@ -40,6 +43,7 @@ export default function MaterialsPage() {
         fill: s.color,
         inStock: s.inStock,
       })),
+      faq: detail?.faq?.slice(0, 2) ?? [],
     }
   })
 
@@ -61,6 +65,26 @@ export default function MaterialsPage() {
       },
     })),
   }
+
+  const faqEntities = materials.flatMap((material) =>
+    material.faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  )
+
+  const faqJsonLd =
+    faqEntities.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqEntities,
+        }
+      : null
 
   return (
     <main className="relative">
@@ -97,6 +121,7 @@ export default function MaterialsPage() {
                 features={m.features}
                 swatches={m.swatches}
                 href={`/materials/${m.slug}`}
+                faq={m.faq}
               />
             </Reveal>
           ))}
@@ -152,6 +177,12 @@ export default function MaterialsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
+      {faqJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      ) : null}
     </main>
   )
 }
