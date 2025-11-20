@@ -132,6 +132,12 @@ export default function HomePage() {
                 Lees de blog
               </Link>
               <Link
+                href="/3d-modelleren"
+                className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
+              >
+                3D modelleren
+              </Link>
+              <Link
                 href="/materials#material-suggestion-tool"
                 className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >

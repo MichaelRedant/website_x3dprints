@@ -112,6 +112,7 @@ export default function Footer() {
               <li><Link href="/portfolio" className="hover:text-slate-900">Portfolio</Link></li>
               <li><Link href="/segments" className="hover:text-slate-900">Segmenten</Link></li>
               <li><Link href="/blog" className="hover:text-slate-900">Blog & kennisbank</Link></li>
+              <li><Link href="/3d-modelleren" className="hover:text-slate-900">3D modelleren</Link></li>
               <li><Link href="/about" className="hover:text-slate-900">Over ons</Link></li>
               <li><Link href="/pricing" className="hover:text-slate-900">Prijzen</Link></li>
               <li><Link href="/faq" className="hover:text-slate-900">FAQ</Link></li>
