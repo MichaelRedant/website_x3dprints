@@ -34,6 +34,123 @@ export const locations: Location[] = [
       "Professionele 3D prints in Antwerpen voor havenbedrijven, creatieve bureaus en onderwijs. PLA, PETG en TPU met snelle levering.",
   },
   {
+    slug: "3d-printen-in-berchem",
+    city: "Berchem",
+    relatedPhrases: [
+      "3D print service Berchem",
+      "rapid prototyping Berchem",
+      "3D printing bedrijf Berchem",
+      "3D printen nabij Berchem",
+      "3D model laten printen Berchem",
+    ],
+    metaDescription:
+      "3D printen in Berchem met snelle levering richting Zurenborg en het station. PLA, PETG en TPU op maat van jouw prototype of serie.",
+  },
+  {
+    slug: "3d-printen-in-berendrecht-zandvliet-lillo",
+    city: "Berendrecht-Zandvliet-Lillo",
+    relatedPhrases: [
+      "3D print service Berendrecht",
+      "3D printen Zandvliet",
+      "3D printing bedrijf Lillo",
+      "rapid prototyping BZL",
+      "3D model laten printen Berendrecht-Zandvliet-Lillo",
+    ],
+    metaDescription:
+      "Stevige 3D prints voor Berendrecht, Zandvliet en Lillo met focus op havenprojecten. Kies PLA, PETG of TPU en ontvang snel een offerte.",
+  },
+  {
+    slug: "3d-printen-in-borgerhout",
+    city: "Borgerhout",
+    relatedPhrases: [
+      "3D print service Borgerhout",
+      "rapid prototyping Borgerhout",
+      "3D printing bedrijf Borgerhout",
+      "3D printen nabij Borgerhout",
+      "3D model laten printen Borgerhout",
+    ],
+    metaDescription:
+      "3D printen in Borgerhout met snelle levering voor Turnhoutsebaan, De Roma en Spoor Oost. Materialen PLA, PETG en TPU beschikbaar.",
+  },
+  {
+    slug: "3d-printen-in-borsbeek",
+    city: "Borsbeek",
+    relatedPhrases: [
+      "3D print service Borsbeek",
+      "rapid prototyping Borsbeek",
+      "3D printing bedrijf Borsbeek",
+      "3D printen nabij Borsbeek",
+      "3D model laten printen Borsbeek",
+    ],
+    metaDescription:
+      "Scherpe 3D prints in Borsbeek met snelle verzending richting Fort 3 en luchthaven. PLA Matte, PETG en TPU voor prototypes en onderdelen.",
+  },
+  {
+    slug: "3d-printen-in-deurne",
+    city: "Deurne",
+    relatedPhrases: [
+      "3D print service Deurne",
+      "rapid prototyping Deurne",
+      "3D printing bedrijf Deurne",
+      "3D printen nabij Deurne",
+      "3D model laten printen Deurne",
+    ],
+    metaDescription:
+      "3D printen in Deurne voor projecten rond Rivierenhof en Sportpaleis. Snelle offertes en levering in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-ekeren",
+    city: "Ekeren",
+    relatedPhrases: [
+      "3D print service Ekeren",
+      "rapid prototyping Ekeren",
+      "3D printing bedrijf Ekeren",
+      "3D printen nabij Ekeren",
+      "3D model laten printen Ekeren",
+    ],
+    metaDescription:
+      "3D print service in Ekeren met focus op industrie en haven. Kies PLA, PETG of TPU en ontvang snel een voorstel.",
+  },
+  {
+    slug: "3d-printen-in-hoboken",
+    city: "Hoboken",
+    relatedPhrases: [
+      "3D print service Hoboken",
+      "rapid prototyping Hoboken",
+      "3D printing bedrijf Hoboken",
+      "3D printen nabij Hoboken",
+      "3D model laten printen Hoboken",
+    ],
+    metaDescription:
+      "Professionele 3D prints in Hoboken voor Blue Gate en Scheldeprojecten. PLA, PETG en TPU met snelle levering.",
+  },
+  {
+    slug: "3d-printen-in-merksem",
+    city: "Merksem",
+    relatedPhrases: [
+      "3D print service Merksem",
+      "rapid prototyping Merksem",
+      "3D printing bedrijf Merksem",
+      "3D printen nabij Merksem",
+      "3D model laten printen Merksem",
+    ],
+    metaDescription:
+      "3D prints in Merksem met snelle doorlooptijd voor Bredabaan en Sportpaleis. PLA, PETG en TPU beschikbaar.",
+  },
+  {
+    slug: "3d-printen-in-wilrijk",
+    city: "Wilrijk",
+    relatedPhrases: [
+      "3D print service Wilrijk",
+      "rapid prototyping Wilrijk",
+      "3D printing bedrijf Wilrijk",
+      "3D printen nabij Wilrijk",
+      "3D model laten printen Wilrijk",
+    ],
+    metaDescription:
+      "Snelle 3D print service in Wilrijk voor campus Drie Eiken en bedrijven langs de A12. Materialen PLA, PETG en TPU.",
+  },
+  {
     slug: "3d-printen-in-herzele",
     city: "Herzele",
     relatedPhrases: [

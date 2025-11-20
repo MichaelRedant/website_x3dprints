@@ -47,17 +47,17 @@ Van proof-of-concept tot kleine serie. Ideaal voor hardware-teams in Berchem, Bo
 
 ## Districts van Antwerpen die we ook bedienen
 
-We leveren in heel Antwerpen en plannen aparte pagina's voor elke deelgemeente. Tot die live staan, vind je updates op [de locaties-pagina](/locaties).
+We leveren in heel Antwerpen en hebben aparte pagina's voor de districten. Zo krijg je meteen de juiste info per buurt.
 
-- Berchem
-- Berendrecht-Zandvliet-Lillo
-- Borgerhout
-- Borsbeek
-- Deurne
-- Ekeren
-- Hoboken
-- Merksem
-- Wilrijk
+- [3D printen in Berchem](/3d-printen-in-berchem)
+- [3D printen in Berendrecht-Zandvliet-Lillo](/3d-printen-in-berendrecht-zandvliet-lillo)
+- [3D printen in Borgerhout](/3d-printen-in-borgerhout)
+- [3D printen in Borsbeek](/3d-printen-in-borsbeek)
+- [3D printen in Deurne](/3d-printen-in-deurne)
+- [3D printen in Ekeren](/3d-printen-in-ekeren)
+- [3D printen in Hoboken](/3d-printen-in-hoboken)
+- [3D printen in Merksem](/3d-printen-in-merksem)
+- [3D printen in Wilrijk](/3d-printen-in-wilrijk)
 
 Heb je nu al een project in één van deze districten? Stuur je bestand mee; we houden rekening met levering en timing in jouw buurt.
 
