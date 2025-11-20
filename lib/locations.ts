@@ -21,6 +21,19 @@ export const locations: Location[] = [
     metaDescription: "Laat je 3D-idee werkelijkheid worden in Aalst van prototypes tot kleine series, PLA, PETG en TPU beschikbaar. Vraag een offerte bij X3DPrints.",
   },
   {
+    slug: "3d-printen-in-antwerpen",
+    city: "Antwerpen",
+    relatedPhrases: [
+      "3D print service Antwerpen",
+      "rapid prototyping Antwerpen",
+      "3D printing bedrijf Antwerpen",
+      "3D printen haven Antwerpen",
+      "3D model laten printen Antwerpen",
+    ],
+    metaDescription:
+      "Professionele 3D prints in Antwerpen voor havenbedrijven, creatieve bureaus en onderwijs. PLA, PETG en TPU met snelle levering.",
+  },
+  {
     slug: "3d-printen-in-herzele",
     city: "Herzele",
     relatedPhrases: [
