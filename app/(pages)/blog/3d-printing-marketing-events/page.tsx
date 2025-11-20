@@ -31,41 +31,47 @@ export const metadata: Metadata = {
 const personaHighlights = [
   {
     title: "Brand & campaign managers",
-    copy: "Snel kleine runs voor activaties of roadshows. Denk aan awards, photobooth props en samples die klanten meenemen.",
+    copy:
+      "Kleine, gerichte runs voor activaties, roadshows of launches. Denk aan awards, photobooth-props, sampling tools en premium leave-behinds die je merkverhaal tastbaar maken.",
   },
   {
     title: "Event bureaus",
-    copy: "Lichte, modulaire displays die je per locatie kunt aanpassen. 3D printing laat je tot vlak voor de show itereren.",
+    copy:
+      "Lichte, modulaire displays en props die je per locatie kunt aanpassen. 3D printing laat je tot vlak voor het event finetunen zonder naar massaproductie te moeten grijpen.",
   },
   {
     title: "Retail & trade marketing",
-    copy: "POS-materialen met magnetische inserts, producthouders en custom labels die perfect in het schap passen.",
+    copy:
+      "POS-materialen die exact in het schap passen: producthouders, toppers, logo-blokken en magnetische elementen. Ideaal om een actie-zone of key SKU eruit te laten springen.",
   },
 ]
+
 
 const planningSteps = [
   {
     title: "Briefing & doel",
     detail:
-      "Omschrijf het campagnedoel, gewenste look & feel en KPI’s (organisatie, shares, leads). Voeg renders of brand guidelines toe.",
+      "Formuleer het campagnedoel, de context (event, roadshow, retailactie) en de KPI’s: awareness, engagement, leads, traffic naar landingpage, enzovoort. Voeg brand guidelines, referentiebeelden of moodboards toe zodat we meteen in de juiste merktaal zitten.",
   },
   {
     title: "Materialen & prototypes",
     detail:
-      "Test PLA Silk+ voor hoogglans of PLA Marble voor stone-look. Voor lichtdoorlatende props is PLA Translucent perfect voor LED’s.",
+      "Kies eerst het effect: hoogglans, stone-look of lichtdoorlatend. PLA Silk+ werkt sterk voor premium awards, PLA Marble voor ‘stone’ en PLA Translucent voor props met LED of lichtaccenten. Indien nodig starten we met een kleine proefprint om look & formaat te valideren.",
   },
   {
     title: "Productie & logistiek",
     detail:
-      "Plan een buffer van enkele werkdagen voor iteraties. Combineer leveringen met lokale afhaling in Herzele of verzekerd transport.",
+      "Reken enkele werkdagen voor productie, afhankelijk van volume en complexiteit. We bundelen sets per locatie of scenario en combineren waar mogelijk met afhaling in Herzele of verzending. Zo sluit de oplevering netjes aan op je media- en eventplanning.",
   },
 ]
 
+
 const kpiIdeas = [
-  "Traceerbare QR codes of NFC tags in props om campagneconversie te meten.",
-  "Giveaways nummeren zodat winnaars zich registreren en leads opleveren.",
-  "Use cases filmen voor social media: behind the scenes scoort hoog in engagement.",
+  "Integreer traceerbare QR-codes of NFC-tags in props om traffic naar een specifieke landingspagina of promo-actie te meten.",
+  "Nummer giveaways of limited-edition items zodat deelnemers zich registreren. Zo koppel je fysieke activatie aan concrete leads in je CRM.",
+  "Gebruik behind-the-scenes content van het 3D-printproces voor social media. Dit verhoogt engagement en verlengt de levensduur van je campagne.",
 ]
+
 
 const ctaLinks = [
   { label: "Materialen voor eye-catchers", href: "/materials#material-suggestion-tool" },
@@ -76,17 +82,18 @@ const ctaLinks = [
 const faq = [
   {
     q: "Welke materialen vallen het meest op tijdens events?",
-    a: "PLA Silk+ geeft een metallic glans, PLA Marble voelt premium aan en PLA Translucent laat LED-licht diffuus door. We stemmen kleur, textuur en infill af op jouw briefing.",
+    a: "PLA Silk+ geeft een metallic glans en werkt uitstekend voor awards, logo-objecten en hero-props. PLA Marble oogt premium en rustig, ideaal voor corporate of institutionele settings. PLA Translucent is perfect om licht of LED subtiel door te laten schijnen in display-elementen.",
   },
   {
     q: "Hoe snel kan X3DPrints leveren?",
-    a: "Omdat X3DPrints een éénmansstudio is plannen we realistisch: standaard enkele werkdagen, met prioriteit mogelijk als de agenda het toelaat. We communiceren transparant zodat je campagneplanning klopt.",
+    a: "We plannen realistisch rond je campagnedeadline. Voor de meeste marketing- en eventcases werken we met enkele werkdagen doorlooptijd. Als het echt snel moet, bekijken we samen wat haalbaar is en communiceren we open over prioriteiten en volumes.",
   },
   {
     q: "Kunnen jullie mee nadenken over montage of interactie?",
-    a: "Zeker. Denk aan magnetische inserts, draadgaten, verborgen LED-kanalen of integratie met NFC tags. We maken testprints zodat alles meteen past.",
+    a: "Zeker. We kunnen rekening houden met magnetische inserts, schroefgaten, verborgen kanalen voor LED of kabels, en ruimte voor QR- of NFC-integratie. Tijdens de offertefase kijken we hoe de props in het grotere event- of retailconcept passen.",
   },
 ]
+
 
 const articleJsonLd = {
   "@context": "https://schema.org",
@@ -125,8 +132,11 @@ export default function MarketingArticlePage() {
           3D printing voor marketing & events
         </h1>
         <p className="mt-4 text-base text-slate-600">
-          Eye-catching props en awards laten campagnes spreken. We delen hoe je van briefing tot logistiek het meeste haalt uit een lokale 3D print studio.
-        </p>
+  Eye-catching props, awards en slimme merch maken het verschil tussen een campagne die vergeten wordt en één die blijft hangen.
+  In dit artikel tonen we hoe je 3D printing strategisch inzet voor marketing & events: van briefing en materiaalkeuze tot timing,
+  logistiek en KPI’s die je echt kunt meten.
+</p>
+
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
           <ShimmerButton href="/contact?material=PLA%20Silk%2B">Vraag offerte of advies</ShimmerButton>
           <Link
@@ -142,8 +152,11 @@ export default function MarketingArticlePage() {
         <GlassCard className="p-6 sm:p-8">
           <h2 className="text-xl font-semibold text-slate-900">Wanneer 3D printing het verschil maakt</h2>
           <p className="mt-3 text-sm text-slate-600">
-            Campagnes en events hebben formaat-, kleur- en deadline-eisen waar traditionele productie niet op inspeelt. 3D printing geeft je de vrijheid om snel te itereren, iets tastbaars te tonen en toch binnen budget te blijven.
-          </p>
+  Campagnes en events hebben formaat-, kleur- en deadline-eisen waar traditionele productie vaak op achterloopt. 
+  Met 3D printing kun je snel activeren: kleine runs, last-minute iteraties en hyperrelevante props per locatie of doelgroep.
+  Je krijgt iets tastbaars in handen dat perfect aansluit bij je merk én binnen het mediabudget past.
+</p>
+
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             {personaHighlights.map((persona) => (
               <div key={persona.title} className="rounded-3xl border border-white/40 bg-white/70 p-4 text-sm text-slate-600">
@@ -182,9 +195,69 @@ export default function MarketingArticlePage() {
             ))}
           </ul>
           <p className="mt-4 text-sm text-slate-600">
-            Combineer tastbare props met een digitale journey. Bijvoorbeeld: een award met NFC die bezoekers naar je calculator of portfolio leidt zodat ze meteen converteren.
-          </p>
+  Combineer tastbare props met een digitale journey. Denk aan een award of display-element dat mensen letterlijk in handen nemen
+  en hen meteen naar een landingspagina, configurator of demo-aanvraag leidt. Zo wordt 3D printing niet alleen een visuele gimmick,
+  maar een meetbare touchpoint in je funnel.
+</p>
+
         </GlassCard>
+
+        <GlassCard className="p-6 sm:p-8">
+  <h2 className="text-xl font-semibold text-slate-900">Typische marketing use cases</h2>
+  <p className="mt-3 text-sm text-slate-600">
+    3D printing speelt steeds vaker een rol in marketingcampagnes omdat het zowel visueel sterk is
+    als extreem flexibel in formaat, kleur en timing. Hieronder vijf scenario’s waarin 3D objecten
+    de merkbeleving aantoonbaar versterken.
+  </p>
+
+  <div className="mt-6 grid gap-4 lg:grid-cols-2">
+    <div className="rounded-3xl border border-white/40 bg-white/70 p-4 text-sm text-slate-600">
+      <p className="font-semibold text-slate-900">1. Brand activations & roadshows</p>
+      <p className="mt-1">
+        Props, miniatuurproducten, oversized key visuals of interactieve objecten die letterlijk de
+        aandacht grijpen. Dankzij een korte doorlooptijd kun je itereren tot vlak voor de activatie.
+      </p>
+    </div>
+
+    <div className="rounded-3xl border border-white/40 bg-white/70 p-4 text-sm text-slate-600">
+      <p className="font-semibold text-slate-900">2. Social media campagnes</p>
+      <p className="mt-1">
+        Unieke objecten die gebruikt worden in reels, shorts en TikTok-shots. 3D props versterken
+        stop-scroll-waarde en maken content herkenbaar, shareable en visueel interessant.
+      </p>
+    </div>
+
+    <div className="rounded-3xl border border-white/40 bg-white/70 p-4 text-sm text-slate-600">
+      <p className="font-semibold text-slate-900">3. Retail & instore POS</p>
+      <p className="mt-1">
+        Producthouders, magnetische displays, shelf talkers, toppers en merch blocks die exact in het
+        winkelmeubel passen. Perfect voor tijdelijke promoties of limited-edition releases.
+      </p>
+    </div>
+
+    <div className="rounded-3xl border border-white/40 bg-white/70 p-4 text-sm text-slate-600">
+      <p className="font-semibold text-slate-900">4. Launch events & perskits</p>
+      <p className="mt-1">
+        Op maat gemaakte miniaturensets, schaalmodellen, awards of unieke giveaway-objecten voor pers,
+        influencers en stakeholders. Ideaal om narratieven tastbaar te maken.
+      </p>
+    </div>
+
+    <div className="rounded-3xl border border-white/40 bg-white/70 p-4 text-sm text-slate-600 lg:col-span-2">
+      <p className="font-semibold text-slate-900">5. Internal branding & HR</p>
+      <p className="mt-1">
+        Bedrijfstrofeeën, teambuilding props, onboarding kits of desk-objects die intern cultuur,
+        waarden en groei visualiseren. Klein oplage, hoge personaliseerbaarheid, sterke emotionele impact.
+      </p>
+    </div>
+  </div>
+
+  <p className="mt-6 text-xs text-slate-500">
+    Extra idee: combineer tastbare props met een digitale flow (QR/NFC), zodat elke fysieke interactie
+    gekoppeld is aan meetbare engagement of lead data.
+  </p>
+</GlassCard>
+
 
         <GlassCard className="p-6 sm:p-8">
           <h2 className="text-xl font-semibold text-slate-900">Veelgestelde vragen</h2>
@@ -221,8 +294,10 @@ export default function MarketingArticlePage() {
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">Volgende stap</p>
         <h2 className="mt-3 text-balance text-3xl font-bold text-slate-900">Klaar om je props te laten printen?</h2>
         <p className="mt-3 text-sm text-slate-600">
-          Dien je briefing in via de contactpagina of upload een STL in de 3D viewer. Je ontvangt een transparante planning die past bij je activatie.
-        </p>
+  Dien je briefing in via de contactpagina of upload een STL in de 3D viewer. We koppelen je creatieve idee aan een concreet productievoorstel,
+  met heldere timings en kosten zodat je de 3D-printing component netjes in je campagneplanning kunt inschuiven.
+</p>
+
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
           <ShimmerButton href="/contact?material=PLA%20Silk%2B">Plan een gesprek</ShimmerButton>
           <Link

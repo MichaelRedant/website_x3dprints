@@ -9,13 +9,12 @@ const canonical = "https://www.x3dprints.be/blog/pla-vs-petg"
 export const metadata: Metadata = {
   title: "PLA vs PETG: welke moet je kiezen? | X3DPrints Blog",
   description:
-    "Vergelijk PLA en PETG voor jouw 3D print: uiterlijk, sterkte, hittebestendigheid en nabewerking. Inclusief praktijkcases en tips om materiaal te kiezen.",
+  "Vergelijk PLA en PETG voor jouw 3D print: uiterlijk, sterkte, hittebestendigheid en toepassing. Inclusief praktijkcases en tips om materiaal te kiezen.",
   alternates: { canonical },
   openGraph: {
     title: "PLA vs PETG: welke moet je kiezen?",
-    description:
-      "De ultieme vergelijking tussen PLA en PETG met aandacht voor look, duurzaamheid, nabewerking en kost. Inclusief stappen om materiaal te testen.",
-    url: canonical,
+    description:  "De ultieme vergelijking tussen PLA en PETG met aandacht voor look, duurzaamheid, temperatuur en kost. Inclusief stappen om materiaal te testen.",
+url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "PLA vs PETG vergelijking" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -31,29 +30,35 @@ export const metadata: Metadata = {
 const highlightCards = [
   {
     title: "Look & afwerking",
-    pla: "PLA is beschikbaar in matte, silk, marble en wood varianten. Ideaal voor zichtwerk waar kleurmatching belangrijk is.",
-    petg: "PETG heeft een semi-glans finish en kan translucent geleverd worden. Minder varianten maar consistenter bij functional prints.",
+    pla: "PLA is beschikbaar in matte, silk, marble en wood varianten. Ideaal voor zichtwerk waar kleur, textuur en detail belangrijk zijn.",
+    petg: "PETG heeft een semi-glans finish en kan translucent geprint worden. Minder varianten, maar erg geschikt voor functionele prints met een nette look.",
   },
   {
     title: "Temperatuur & outdoor",
-    pla: "Begint rond 55-60 C te vervormen. Geschikt voor interieurs en lichte mechanische toepassingen.",
-    petg: "Behoudt vorm tot circa 80 C en is beter bestand tegen UV en vocht. Perfect voor kappen, klemmen of onderdelen buiten.",
+    pla: "Begint rond 55–60 °C te vervormen. Geschikt voor interieurs en lichte mechanische toepassingen die niet in de zon of in de auto liggen.",
+    petg: "Behoudt vorm tot circa 80 °C en is beter bestand tegen UV en vocht. Geschikt voor kappen, klemmen of onderdelen die buiten of in warmere omgevingen terechtkomen.",
   },
   {
     title: "Mechanische eigenschappen",
-    pla: "Stijf en nauwkeurig, maar brosser bij impact. Prima voor prototypes, behuizingen en decor.",
-    petg: "Taai, licht flexibel en chemisch resistenter. Beter voor clips, brackets, klemmen en vloeistofcontact.",
+    pla: "Stijf en nauwkeurig, maar brosser bij impact. Prima voor prototypes, behuizingen en decoratieve onderdelen.",
+    petg: "Taai, licht flexibel en beter chemisch resistent. Ideaal voor clips, brackets, klemmen en onderdelen in functioneel gebruik.",
   },
 ]
+
 
 const comparisonTable = [
   { property: "Stijfheid", pla: "Hoog, behoudt scherpe details", petg: "Middel, licht flexibel" },
   { property: "Slagvastheid", pla: "Gemiddeld", petg: "Hoog" },
   { property: "Hittebestendig", pla: "Tot 60 C", petg: "Tot 80 C" },
   { property: "Chemisch resistent", pla: "Beperkt", petg: "Beter bestand tegen oliën en vocht" },
-  { property: "Nabewerking", pla: "Makkelijk schuren/primen", petg: "Schuren vereist extra tijd" },
+  {
+    property: "Oppervlak & detail",
+    pla: "Zeer strak en mat mogelijk, ideaal voor visuele modellen",
+    petg: "Licht glanzend met goede laaghechting, iets meer stringing mogelijk",
+  },
   { property: "Kosten", pla: "Laag (baseline)", petg: "Circa 20 procent hoger" },
 ]
+
 
 const useCases = {
   pla: [
@@ -91,9 +96,10 @@ const faq = [
     a: "Zeker. Gebruik PLA voor zichtbare behuizingen en PETG voor onderdelen met scharnieren, clips of warmtebelasting. We stemmen de pasvorm af zodat beide materialen mooi uitlijnen.",
   },
   {
-    q: "Is PETG moeilijker te printen?",
-    a: "Het vraagt drogere opslag en iets lagere koeling, maar de Bambu X1C en Prusa MK4 draaien het stabiel. Verwacht een kleine opslag voor droogbehandeling en nozzle cleaning.",
-  },
+  q: "Is PETG moeilijker te printen?",
+  a: "PETG vraagt drogere opslag en iets lagere koeling dan PLA, maar met correcte instellingen print het zeer stabiel. Hou rekening met een kleine meerkost voor materiaalbehandeling en iets langere finetuning in de slicer.",
+},
+
   {
     q: "Welke materialen adviseren jullie als alternatief?",
     a: "Voor nog meer hittebestendigheid kies ASA of ABS. Voor flexibel werk: TPU (shore 95A). Deze bespreken we tijdens de offerte als jouw toepassing het vraagt.",
@@ -154,9 +160,11 @@ export default function BlogPlaVsPetgPage() {
               PLA vs PETG: welke moet je kiezen?
             </h1>
             <p className="mt-4 text-lg text-slate-700">
-              PLA blinkt uit in esthetiek en detail, terwijl PETG functionele eisen aankan zoals warmte en impact.
-              Hieronder vind je een complete vergelijking plus tips om het juiste filament voor jouw project te selecteren.
-            </p>
+  PLA blinkt uit in esthetiek en detail, terwijl PETG functionele eisen aankan zoals warmte en impact.
+  In dit artikel vergelijken we beide materialen stap voor stap, zodat je gericht kunt kiezen welk filament het best past
+  bij jouw 3D print: van zichtwerk tot functionele onderdelen.
+</p>
+
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
               <ShimmerButton href="/materials">Vergelijk materialen</ShimmerButton>
               <Link
@@ -191,6 +199,64 @@ export default function BlogPlaVsPetgPage() {
           ))}
         </div>
       </section>
+
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+  <div className="mx-auto max-w-5xl">
+    <Reveal>
+      <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+        <h2 className="text-2xl font-semibold text-slate-900">Hoe kies je snel tussen PLA en PETG?</h2>
+        <p className="mt-3 text-sm text-slate-600">
+          Twijfel je tussen PLA en PETG? Gebruik deze compacte beslisgids om snel te bepalen welk materiaal het best past
+          bij jouw toepassing.
+        </p>
+
+        <ul className="mt-5 space-y-3 text-sm text-slate-700">
+          <li className="flex items-start gap-3">
+            <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
+            <span>
+              <strong>Kies PLA</strong> wanneer je vooral een <strong>mooie afwerking, scherpe details</strong> en een
+              <strong> specifieke kleur</strong> nodig hebt. Ideaal voor prototypes, behuizingen, maquettes en decoratieve onderdelen.
+            </span>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
+            <span>
+              <strong>Kies PETG</strong> als het onderdeel <strong>buiten</strong> komt, lichte <strong>warmte</strong> moet
+              verdragen of mechanische <strong>impact / flexibiliteit</strong> nodig heeft.
+            </span>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
+            <span>
+              PLA is voordeliger en geschikt voor de meeste prints die niet zwaar belast worden. Voor 90% van de visuele en
+              indoor-projecten is PLA de beste keuze.
+            </span>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
+            <span>
+              PETG kost iets meer, maar biedt <strong>betere duurzaamheid, UV-bestendigheid</strong> en <strong>chemische weerstand</strong>.
+              Ideaal voor functionele onderdelen.
+            </span>
+          </li>
+        </ul>
+
+        <div className="mt-5">
+          <Link
+            href="/materials"
+            className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-indigo-700"
+          >
+            Bekijk alle materialen
+          </Link>
+        </div>
+      </GlassCard>
+    </Reveal>
+  </div>
+</section>
+
 
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">

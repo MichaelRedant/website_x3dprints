@@ -32,32 +32,33 @@ const costFactors = [
   {
     title: "Materiaal",
     description:
-      "PLA Matte is onze baseline. Speciale blends zoals Silk, Carbon of Wood vragen 15-30 procent opslag vanwege duurdere spoelen en hogere slijtage.",
-    tip: "Check de materialenpagina om kleuropties en voorraden te zien.",
+      "PLA Matte is onze baseline en de meest kostenefficiënte keuze voor prototypes en kleine onderdelen. Materialen zoals PETG of TPU variëren in prijs door hun specifieke eigenschappen, zoals extra taaiheid of flexibiliteit.",
+    tip: "Bekijk alle actuele materialen en kleuren in onze materialenlijst.",
     link: { href: "/materials", label: "Materialen vergelijken" },
   },
   {
     title: "Machine-uren",
     description:
-      "Fijnere laaghoogtes, extra infill of support verhogen de printtijd. Het grootste deel van de kostprijs komt uit deze machine-uren.",
-    tip: "Gebruik de prijscalculator om Small/Medium/Large scenario&rsquo;s te vergelijken.",
+      "Het grootste deel van de kostprijs komt van de printtijd. Complexere modellen, hogere resolutie of meer infill verhogen het aantal machine-uren en dus de totale prijs.",
+    tip: "Gebruik de prijscalculator om realistische tijds- en kosteninschattingen te krijgen.",
     link: { href: "/pricing", label: "Ga naar pricing & calculator" },
   },
   {
-    title: "Nabewerking",
+    title: "Modelcomplexiteit",
     description:
-      "Schuren, primen of lakken voegen manuren en verbruiksmateriaal toe. Voor zichtwerk zoals awards of interieurstukken plannen we een aparte afwerkingsfase.",
-    tip: "Beschrijf gewenste finishing in het formulier zodat we ze mee offreren.",
-    link: { href: "/contact", label: "Vraag finishing advies" },
+      "Sterk overhangende delen of dunne geometrieën kunnen extra ondersteuningsstructuren vereisen. Dit verhoogt printtijd en materiaalverbruik. Voor eenvoudige vormen is de kostprijs meestal lager.",
+    tip: "Laad je model in via de viewer om te controleren of er supports nodig zijn.",
+    link: { href: "/viewer", label: "STL controleren" },
   },
   {
     title: "Logistiek",
     description:
-      "Afhalen in Herzele is gratis. Bpost/levering varieert tussen 6 en 25 euro afhankelijk van gewicht en snelheid.",
-    tip: "Combineer meerdere onderdelen in een zending om verzendkost te drukken.",
+      "Afhalen in Herzele is gratis. Verzending via Bpost varieert tussen 6 en 25 euro afhankelijk van gewicht en snelheid. Grote prints worden stevig verpakt voor veilig transport.",
+    tip: "Combineer meerdere onderdelen in één verzending om kosten te drukken.",
     link: { href: "/pricing", label: "Zie verzendopties" },
   },
 ]
+
 
 const scenarios = [
   {
@@ -96,6 +97,19 @@ const faq = [
     q: "Kan ik zelf een printtijd inschatten?",
     a: "Ja. Gebruik de Small/Medium/Large richtprijzen op de pricing pagina. Voor precieze timing hebben we je model nodig zodat we slicer-data kunnen analyseren.",
   },
+  {
+  q: "Waarom verschillen prijzen tussen verschillende 3D printservices?",
+  a: "Elke 3D-printshop werkt met andere machines, materiaalkost, snelheid en kwaliteitsinstellingen. Bij X3DPrints gebruiken we een transparant model gebaseerd op printduur en materiaalverbruik. Dat geeft een eerlijke en voorspelbare prijs."
+},
+{
+  q: "Is 3D printen goedkoper als ik mijn model aanpas?",
+  a: "Ja. Kleinere schaal, minder infill, minder overhang of een andere oriëntatie kunnen de printtijd sterk verminderen. Je ziet de impact meteen in onze prijscalculator."
+},
+{
+  q: "Hoe weet ik of mijn model efficiënt geprint kan worden?",
+  a: "Onze slicer controleert automatisch de printbaarheid. Na je aanvraag krijg je gratis feedback over wanden, supports en eventuele optimalisaties."
+}
+
 ]
 
 const articleJsonLd = {
@@ -194,35 +208,76 @@ export default function BlogCostPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="overflow-hidden border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Voorbeeldberekening</h2>
-              <p className="mt-3 text-sm text-slate-600">
-                Deze scenario&rsquo;s tonen hoe materiaal, gewicht en machine-uren samen de kostprijs bepalen. Gebruik ze als startpunt
-                en stuur je model door voor een exacte analyse.
-              </p>
+              <h2 className="text-2xl font-semibold text-slate-900">
+  Hoeveel kost 3D printen in de praktijk?
+</h2>
+<p className="mt-3 text-sm text-slate-600">
+  Veel bezoekers zoeken een concreet antwoord op de vraag <strong>&quot;hoeveel kost 3D printen&quot;</strong>. 
+  Omdat elk model anders is, werken we met een prijscalculator die automatisch rekening houdt met materiaal, 
+  volume, gewicht en printduur. Zo krijg je geen vaste tabelprijzen die niet bij jouw project passen, maar 
+  een realistische inschatting op maat.
+</p>
+<p className="mt-3 text-sm text-slate-600">
+  Op de <Link href="/pricing" className="font-semibold text-emerald-600 hover:text-emerald-700">
+    pricing-pagina
+  </Link> kun je zelf scenario&apos;s testen. Je ziet meteen hoe de kost evolueert wanneer je het model 
+  schaalt, een ander materiaal kiest of de instellingen aanpast. Dat maakt het veel eenvoudiger om binnen 
+  je budget te blijven en toch de juiste kwaliteit te kiezen.
+</p>
+<div className="mt-4">
+  <Link
+    href="/pricing"
+    className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-sm font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-emerald-700"
+  >
+    Gebruik de prijscalculator
+  </Link>
+</div>
+<p className="mt-3 text-sm text-slate-600">
+  Hieronder zie je drie veelvoorkomende categorieën die klanten gebruiken als snelle richtlijn voor de 
+  vraag <strong>&quot;hoeveel kost 3D printen&quot;</strong>. Ze zijn gebaseerd op PLA Matte met 
+  ongeveer 25% infill. De exacte prijs hangt af van je STL en bepaal je het snelst via onze 
+  <Link href="/pricing" className="font-semibold text-emerald-600 hover:text-emerald-700"> prijscalculator</Link>.
+</p>
+
+
               <div className="mt-5 overflow-x-auto">
                 <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
-                  <thead>
-                    <tr className="text-xs uppercase tracking-wide text-slate-500">
-                      <th className="py-2 pr-4">Case</th>
-                      <th className="py-2 pr-4">Specificaties</th>
-                      <th className="py-2 pr-4">Gewicht</th>
-                      <th className="py-2 pr-4">Printtijd</th>
-                      <th className="py-2 pr-4">Indicatie</th>
-                    </tr>
-                  </thead>
                   <tbody className="divide-y divide-slate-100">
-                    {scenarios.map((scenario) => (
-                      <tr key={scenario.name}>
-                        <td className="py-3 pr-4 font-semibold text-slate-900">{scenario.name}</td>
-                        <td className="py-3 pr-4">{scenario.specs}</td>
-                        <td className="py-3 pr-4">{scenario.weight}</td>
-                        <td className="py-3 pr-4">{scenario.time}</td>
-                        <td className="py-3 pr-4 font-medium text-slate-900">{scenario.estimate}</td>
-                      </tr>
-                    ))}
-                  </tbody>
+
+  <tr>
+    <td className="py-3 pr-4 font-semibold text-slate-900">Small</td>
+    <td className="py-3 pr-4">≤ 5 × 5 × 5 cm • PLA Matte (standaard) • ≈ 50 g</td>
+    <td className="py-3 pr-4">≈ 50 g</td>
+    <td className="py-3 pr-4">≈ 0.8–1.5 uur</td>
+    <td className="py-3 pr-4 font-medium text-slate-900">≈ €1.72 / stuk</td>
+  </tr>
+
+  <tr>
+    <td className="py-3 pr-4 font-semibold text-slate-900">Medium</td>
+    <td className="py-3 pr-4">≤ 10 × 10 × 10 cm • PLA Matte (standaard) • ≈ 200 g</td>
+    <td className="py-3 pr-4">≈ 200 g</td>
+    <td className="py-3 pr-4">≈ 2–3.5 uur</td>
+    <td className="py-3 pr-4 font-medium text-slate-900">≈ €6.90 / stuk</td>
+  </tr>
+
+  <tr>
+    <td className="py-3 pr-4 font-semibold text-slate-900">Large</td>
+    <td className="py-3 pr-4">≤ 20 × 20 × 20 cm • PLA Matte (standaard) • ≈ 500 g</td>
+    <td className="py-3 pr-4">≈ 500 g</td>
+    <td className="py-3 pr-4">≈ 4–7 uur</td>
+    <td className="py-3 pr-4 font-medium text-slate-900">≈ €17.24 / stuk</td>
+  </tr>
+
+</tbody>
+
                 </table>
               </div>
+              <p className="mt-4 text-sm text-slate-600">
+  Deze richtprijzen gelden voor PLA Matte met standaardinstellingen. Grotere of zwaardere modellen gebruiken meer materiaal 
+  en kosten daardoor meer. Voor de meest nauwkeurige berekening gebruik je best de 
+  <Link href="/pricing" className="font-semibold text-emerald-600 hover:text-emerald-700"> prijscalculator</Link>.
+</p>
+
             </GlassCard>
           </Reveal>
         </div>
