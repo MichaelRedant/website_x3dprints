@@ -1,32 +1,34 @@
-# 3D printen in Wommelgem: snel klaar voor logistiek en retail
+# 3D printen in Wommelgem: snelle service aan de R11
 
-**3D printen in Wommelgem** betekent heldere prijzen, snelle levering en prints die passen. Ideaal voor projecten langs de R11, Autolei of logistieke hubs in de buurt.
-
----
-
-## Waarom wij
-- ⚡ **Tempo**: offerte meestal binnen 24 uur, levering in enkele werkdagen.
-- 🧱 **Materialen**: PLA Matte voor nette zichtdelen, PETG voor stevige onderdelen, TPU voor flexibele toepassingen.
-- 🧭 **Meedenken**: advies over oriëntatie, laaghoogte en nabewerking.
+Voor **3D printen in Wommelgem** leveren we prototypes en functionele onderdelen naar bedrijven rond de Herentalsebaan, Fort 2 en de R11/E313. Je krijgt stevige, nette prints die klaar zijn voor montage of presentatie.
 
 ---
 
-## Toepassingen
-- **Logistiek & fulfilment**: custom mounts, labelhouders en tooling.
-- **Retail & bureaus**: displays, props en prototypes voor campagnes.
-- **Onderwijs & makers**: modellen voor STEM en testreeksen.
+## Waarom X3DPrints
+- ⚡ **Snel**: offertes meestal binnen één werkdag, levering in enkele werkdagen.
+- 🎯 **Passend vanaf de eerste run**: we stemmen tolerantie en oriëntatie af zodat onderdelen direct klikken op bestaande hardware.
+- 🧱 **Materiaaladvies**: PLA Matte voor zichtwerk, PETG voor technische onderdelen, TPU voor flexibele buffers en kabelgeleiding.
+- 🤝 **Transparante updates**: directe lijn en fotoreports als je dat wil.
+
+---
+
+## Typische toepassingen
+- **Logistiek en productie langs de Autolei en E313**: klemmen, sensorbehuizingen en fixtures die intensief gebruikt worden.
+- **Events en sport rond Fort 2**: props, badgehouders en lichte display-elementen.
+- **Retail op de Herentalsebaan**: op maat gemaakte houders, signage-onderdelen en kleine series accessoires.
 
 ---
 
 ## Bestellen
-- Upload **STL of STEP** via [contact](/contact).
-- Max. **25 × 25 × 25 cm** per onderdeel; grotere modellen splitsen we.
-- Verzending of afhalen; zie [pricing](/pricing) voor tarieven.
+- Upload **STL/STEP** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
+- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere delen delen we slim op.
+- Verzending of afhalen mogelijk; bekijk [pricing](/pricing) voor tarieven.
 
 ---
 
-## Interne links
-- [3D printen in Wijnegem](/3d-printen-in-wijnegem)
-- [3D printen in Schilde](/3d-printen-in-schilde)
+## Handige links
 - [3D printen in Antwerpen](/3d-printen-in-antwerpen)
+- [3D printen in Wijnegem](/3d-printen-in-wijnegem)
+- [3D printen in Deurne](/3d-printen-in-deurne)
+- [3D printen in Schilde](/3d-printen-in-schilde)
 - [Materialen & richtlijnen](/materials)
