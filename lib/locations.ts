@@ -151,6 +151,201 @@ export const locations: Location[] = [
       "Snelle 3D print service in Wilrijk voor campus Drie Eiken en bedrijven langs de A12. Materialen PLA, PETG en TPU.",
   },
   {
+    slug: "3d-printen-in-mortsel",
+    city: "Mortsel",
+    relatedPhrases: [
+      "3D print service Mortsel",
+      "rapid prototyping Mortsel",
+      "3D printing bedrijf Mortsel",
+      "3D printen nabij Mortsel",
+      "3D model laten printen Mortsel",
+    ],
+    metaDescription:
+      "Snelle 3D prints in Mortsel voor projecten rond Fort 4, de Krijgsbaan en tramverbindingen richting Antwerpen. Kies uit PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-edegem",
+    city: "Edegem",
+    relatedPhrases: [
+      "3D print service Edegem",
+      "rapid prototyping Edegem",
+      "3D printing bedrijf Edegem",
+      "3D printen nabij Edegem",
+      "3D model laten printen Edegem",
+    ],
+    metaDescription:
+      "Professionele 3D prints in Edegem voor campus UZA, bedrijventerreinen en makers rond Hof Ter Linden. Offerte op maat met PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-kontich",
+    city: "Kontich",
+    relatedPhrases: [
+      "3D print service Kontich",
+      "rapid prototyping Kontich",
+      "3D printing bedrijf Kontich",
+      "3D printen nabij Kontich",
+      "3D model laten printen Kontich",
+    ],
+    metaDescription:
+      "3D printen in Kontich met focus op KMO-zones Prins Boudewijnlaan en Satenrozen. Snelle levering in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-schoten",
+    city: "Schoten",
+    relatedPhrases: [
+      "3D print service Schoten",
+      "rapid prototyping Schoten",
+      "3D printing bedrijf Schoten",
+      "3D printen nabij Schoten",
+      "3D model laten printen Schoten",
+    ],
+    metaDescription:
+      "3D prints voor Schoten met oog op industriezone Borgeind en creatieve projecten langs het kanaal. Kies PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-brasschaat",
+    city: "Brasschaat",
+    relatedPhrases: [
+      "3D print service Brasschaat",
+      "rapid prototyping Brasschaat",
+      "3D printing bedrijf Brasschaat",
+      "3D printen nabij Brasschaat",
+      "3D model laten printen Brasschaat",
+    ],
+    metaDescription:
+      "Nauwkeurige 3D prints in Brasschaat voor bedrijven rond de Bredabaan en projecten in de groene omgeving. PLA, PETG en TPU beschikbaar.",
+  },
+  {
+    slug: "3d-printen-in-kapellen",
+    city: "Kapellen",
+    relatedPhrases: [
+      "3D print service Kapellen",
+      "rapid prototyping Kapellen",
+      "3D printing bedrijf Kapellen",
+      "3D printen nabij Kapellen",
+      "3D model laten printen Kapellen",
+    ],
+    metaDescription:
+      "3D printing in Kapellen met snelle offertes voor ondernemers rond de Essenhoutstraat en KMO-zone Bosduin. Materialen PLA, PETG en TPU.",
+  },
+  {
+    slug: "3d-printen-in-schilde",
+    city: "Schilde",
+    relatedPhrases: [
+      "3D print service Schilde",
+      "rapid prototyping Schilde",
+      "3D printing bedrijf Schilde",
+      "3D printen nabij Schilde",
+      "3D model laten printen Schilde",
+    ],
+    metaDescription:
+      "3D printservice in Schilde voor creatieve bureaus en KMO's langs de Turnhoutsebaan. Kies PLA, PETG of TPU met snelle levering.",
+  },
+  {
+    slug: "3d-printen-in-aartselaar",
+    city: "Aartselaar",
+    relatedPhrases: [
+      "3D print service Aartselaar",
+      "rapid prototyping Aartselaar",
+      "3D printing bedrijf Aartselaar",
+      "3D printen nabij Aartselaar",
+      "3D model laten printen Aartselaar",
+    ],
+    metaDescription:
+      "3D prints in Aartselaar voor bedrijven langs de A12 en industriezone Cleydael. Beschikbaar in PLA, PETG en TPU.",
+  },
+  {
+    slug: "3d-printen-in-wommelgem",
+    city: "Wommelgem",
+    relatedPhrases: [
+      "3D print service Wommelgem",
+      "rapid prototyping Wommelgem",
+      "3D printing bedrijf Wommelgem",
+      "3D printen nabij Wommelgem",
+      "3D model laten printen Wommelgem",
+    ],
+    metaDescription:
+      "3D printen in Wommelgem met snelle verzending richting R11, Autolei en logistieke hubs. Materialen PLA, PETG en TPU.",
+  },
+  {
+    slug: "3d-printen-in-wijnegem",
+    city: "Wijnegem",
+    relatedPhrases: [
+      "3D print service Wijnegem",
+      "rapid prototyping Wijnegem",
+      "3D printing bedrijf Wijnegem",
+      "3D printen nabij Wijnegem",
+      "3D model laten printen Wijnegem",
+    ],
+    metaDescription:
+      "3D print service in Wijnegem voor retailprojecten rond Wijnegem Shop Eat Enjoy en KMO's aan het Albertkanaal. PLA, PETG, TPU.",
+  },
+  {
+    slug: "3d-printen-in-hove",
+    city: "Hove",
+    relatedPhrases: [
+      "3D print service Hove",
+      "rapid prototyping Hove",
+      "3D printing bedrijf Hove",
+      "3D printen nabij Hove",
+      "3D model laten printen Hove",
+    ],
+    metaDescription:
+      "3D prints in Hove met focus op lokale makers en ondernemers tussen Groenstraat en Lintsesteenweg. Kies PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-lint",
+    city: "Lint",
+    relatedPhrases: [
+      "3D print service Lint",
+      "rapid prototyping Lint",
+      "3D printing bedrijf Lint",
+      "3D printen nabij Lint",
+      "3D model laten printen Lint",
+    ],
+    metaDescription:
+      "3D printen in Lint met snelle levering richting industriezone Lerenveld en de spoorverbinding Antwerpen-Mechelen. PLA, PETG en TPU beschikbaar.",
+  },
+  {
+    slug: "3d-printen-in-boechout",
+    city: "Boechout",
+    relatedPhrases: [
+      "3D print service Boechout",
+      "rapid prototyping Boechout",
+      "3D printing bedrijf Boechout",
+      "3D printen nabij Boechout",
+      "3D model laten printen Boechout",
+    ],
+    metaDescription:
+      "3D printservice in Boechout voor projecten rond Spoor Oost, Vremde en Hove. Kies PLA, PETG of TPU met heldere offertes.",
+  },
+  {
+    slug: "3d-printen-in-boom",
+    city: "Boom",
+    relatedPhrases: [
+      "3D print service Boom",
+      "rapid prototyping Boom",
+      "3D printing bedrijf Boom",
+      "3D printen nabij Boom",
+      "3D model laten printen Boom",
+    ],
+    metaDescription:
+      "3D prints in Boom voor creatieve projecten rond De Schorre en industrie langs de A12. Materialen PLA, PETG en TPU met snelle verzending.",
+  },
+  {
+    slug: "3d-printen-in-rumst",
+    city: "Rumst",
+    relatedPhrases: [
+      "3D print service Rumst",
+      "rapid prototyping Rumst",
+      "3D printing bedrijf Rumst",
+      "3D printen nabij Rumst",
+      "3D model laten printen Rumst",
+    ],
+    metaDescription:
+      "3D printen in Rumst met aandacht voor bouw- en infrastructuurprojecten tussen Rupel en Nete. Snelle offerte voor PLA, PETG of TPU.",
+  },
+  {
     slug: "3d-printen-in-herzele",
     city: "Herzele",
     relatedPhrases: [
