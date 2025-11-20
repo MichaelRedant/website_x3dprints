@@ -1,31 +1,33 @@
-# 3D printen in Lint: vlot voor spoor en KMO
+# 3D printen in Lint: maatwerk voor een compacte gemeente
 
-**3D printen in Lint** helpt je prototypes en onderdelen snel klaar te hebben voor projecten rond Lerenveld of de spoorlijn Antwerpen-Mechelen. Reken op duidelijke communicatie en nette afwerking.
-
----
-
-## Wat je krijgt
-- ⚡ **Tempo**: offerte meestal binnen 24 uur, levering in enkele werkdagen.
-- 🧱 **Materiaalselectie**: PLA Matte voor zichtwerk, PETG voor stevige toepassingen, TPU voor flexibele delen.
-- 🧭 **Mee advies** over passing en nabewerking.
+Met **3D printen in Lint** lever je snel onderdelen voor ateliers rond de Liersesteenweg, de industriezone Lerenveld en de sport- en jeugdverenigingen in de dorpskern. We stemmen materiaal en passing af zodat je prototypes en hulpstukken meteen bruikbaar zijn.
 
 ---
 
-## Typische projecten
-- **KMO's en logistiek**: jigs, klemmen en houders.
-- **Makers**: maquettes, props en kleine series.
-- **Onderwijs**: modellen voor STEM of demo's.
+## Sterktes van X3DPrints
+- ⚡ **Snelle reacties**: offertes doorgaans binnen een werkdag, levering in enkele werkdagen richting Lint en omgeving.
+- 🎯 **Nauwkeurigheid**: strakke tolerantie voor behuizingen, klemmen en kleine series die perfect moeten passen.
+- 🧱 **Materiaalkeuze per toepassing**: PLA Matte voor zichtwerk, PETG voor robuuste hulpmiddelen, TPU voor flexibele of dempende delen.
+- 🤝 **Heldere communicatie**: directe lijn, fotoupdates indien gewenst.
 
 ---
 
-## Bestellen
-- Upload **STL/STEP** via [contact](/contact) met aantallen en materiaal.
-- Max. **25 × 25 × 25 cm** per onderdeel.
-- Verzending of afhalen mogelijk; tarieven op [pricing](/pricing).
+## Cases uit Lint
+- **Lokale KMO's in Lerenveld**: machinecovers, fixture-onderdelen en sensorhouders.
+- **Clubs en verenigingen rond het gemeenschapscentrum**: lichte props, displays of badgehouders voor events.
+- **Makers langs de Liersesteenweg**: prototypes voor IoT, custom mounts voor fietsen of domotica.
 
 ---
 
-## Interne links
+## Zo bestel je
+- Stuur je **STL/STEP** via [contact](/contact) met aantallen, materiaalkeuze en gewenste leverdatum.
+- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere items splitsen en verlijmen we netjes.
+- Verzending of afhalen mogelijk; tarieven staan op [pricing](/pricing).
+
+---
+
+## Handige links
+- [3D printen in Antwerpen](/3d-printen-in-antwerpen)
 - [3D printen in Hove](/3d-printen-in-hove)
 - [3D printen in Boechout](/3d-printen-in-boechout)
 - [3D printen in Mortsel](/3d-printen-in-mortsel)

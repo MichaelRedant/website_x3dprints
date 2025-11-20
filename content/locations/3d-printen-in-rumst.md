@@ -1,32 +1,33 @@
-# 3D printen in Rumst: bouw en infrastructuur ondersteund
+# 3D printen in Rumst: stevig werk tussen Rupel en Nete
 
-**3D printen in Rumst** helpt je projecten tussen Rupel en Nete vooruit. We leveren nauwkeurige onderdelen en prototypes voor bouw, infra en creatieve teams.
+Voor **3D printen in Rumst** leveren we onderdelen die klaar zijn voor de werven langs de Rupel, ateliers in Reet en projecten nabij de Nete. We stemmen materiaal en passing af op industriële toepassingen, retail of events in de Rupelstreek.
 
 ---
 
 ## Waarom X3DPrints
-- ⚡ **Snel**: offerte binnen een dag, levering in enkele werkdagen.
-- 🧱 **Sterk of strak**: PLA Matte voor zichtwerk, PETG voor stevige toepassingen, TPU voor flexibele delen.
-- 🧭 **Advies**: meedenken over oriëntatie, wanddikte en nabewerking.
+- ⚡ **Korte doorlooptijd**: offerte meestal binnen één werkdag, levering in enkele werkdagen richting Rumst of Reet.
+- 🧱 **Materiaalkeuze voor buiten en binnen**: PETG voor vochtige omgevingen langs de Rupel, PLA Matte voor strak zichtwerk, TPU voor flexibele kappen en bumpers.
+- 🎯 **Precisie**: strakke toleranties zodat onderdelen direct passen op bestaande installaties of montages.
+- 🤝 **Transparante updates**: directe lijn en fotoreports op aanvraag.
 
 ---
 
-## Toepassingen
-- **Bouw en infra**: maatwerkhouders, klemmen en prototypes voor werven.
-- **KMO's**: jigs en kleine series voor productiehulpmiddelen.
-- **Makers en bureaus**: maquettes en props voor pitches.
+## Typische toepassingen
+- **Steenbakkerijen en productie langs de Rupeldijk**: hulpmiddelen, klemmen en beschermkappen die dagelijks gebruikt worden.
+- **Events en retail rond het centrum**: displays, props en badges voor lokale activiteiten.
+- **Installateurs in Reet**: custom mounts voor HVAC, sensoren of domotica in renovaties.
 
 ---
 
 ## Bestellen
-- Upload **STL/STEP** via [contact](/contact) met aantallen en materiaal.
-- Tot **25 × 25 × 25 cm** per onderdeel.
-- Verzending richting Rumst of afhalen; tarieven staan op [pricing](/pricing).
+- Upload **STL/STEP** via [contact](/contact) met aantallen, materiaalvoorkeur en gewenste leverdatum.
+- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere delen splitsen we slim.
+- Levering of afhalen mogelijk; bekijk [pricing](/pricing) voor tarieven.
 
 ---
 
-## Interne links
+## Handige links
 - [3D printen in Boom](/3d-printen-in-boom)
 - [3D printen in Aartselaar](/3d-printen-in-aartselaar)
-- [3D printen in Kontich](/3d-printen-in-kontich)
+- [3D printen in Antwerpen](/3d-printen-in-antwerpen)
 - [Materialen & richtlijnen](/materials)

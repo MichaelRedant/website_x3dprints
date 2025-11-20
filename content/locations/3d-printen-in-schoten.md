@@ -1,32 +1,34 @@
-# 3D printen in Schoten: stevige prints langs het kanaal
+# 3D printen in Schoten: precisie tussen Albertkanaal en Vordenstein
 
-Met **3D printen in Schoten** krijg je snel functionele onderdelen en nette prototypes voor industriezone Borgeind of creatieve projecten aan het Albertkanaal. X3DPrints combineert snelle levering met scherpe detaillering.
+Voor **3D printen in Schoten** leveren we snelle en nauwkeurige onderdelen richting Deuzeld, de site rond Park Vordenstein en bedrijven langs het Albertkanaal. We zorgen dat je prototypes, fixtures en behuizingen direct bruikbaar zijn.
 
 ---
 
 ## Waarom X3DPrints
-- ⚡ **Tempo**: offerte binnen een werkdag, levering in enkele werkdagen.
-- 🧲 **Materiaalkeuze**: PLA Matte voor zichtwerk, PETG voor stevige tools, TPU voor flexibele bumpers.
-- 🔧 **Meedenken**: advies over oriëntatie, layer height en nabewerking.
+- ⚡ **Korte doorlooptijd**: offerte meestal binnen één werkdag, levering in enkele werkdagen.
+- 🎯 **Strakke passing**: ideaal voor onderdelen die op bestaande machines of installaties moeten klikken.
+- 🧱 **Materiaalkeuze op toepassing**: PLA Matte voor zichtwerk, PETG voor robuuste tools, TPU voor flexibele kappen en bumpers.
+- 🤝 **Direct contact**: duidelijke statusupdates en fotoreports indien gewenst.
 
 ---
 
-## Typische toepassingen
-- **Industrie en logistiek**: jigs, klemmen en vervangonderdelen die tegen een stootje kunnen.
-- **Bureaus en makers**: props en maquettes voor events of pitches in de regio Schoten-Wijnegem.
-- **Onderwijs**: modellen voor STEM-projecten en robotica.
+## Typische opdrachten in Schoten
+- **Industrie langs het Albertkanaal**: sensorbehuizingen, custom mounts en tijdelijke vervangstukken die tegen intensief gebruik kunnen.
+- **Events en cultuur rond Vordenstein**: maquettes, props en signage met een cleane afwerking.
+- **Retail in Deuzeld en dorpskern**: displays, kassahulpmiddelen en kleine series producthouders.
 
 ---
 
 ## Bestellen
-- Upload **STL of STEP** via [contact](/contact) met aantallen en gewenste kleur.
-- Maximaal **25 × 25 × 25 cm** per onderdeel; grotere stukken splitsen we.
-- Verzending richting Schoten of afhalen mogelijk; tarieven zie [pricing](/pricing).
+- Upload **STL/STEP** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
+- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere items splitsen we slim.
+- Verzending of afhalen mogelijk; zie [pricing](/pricing) voor tarieven.
 
 ---
 
-## Interne links
+## Handige links
+- [3D printen in Antwerpen](/3d-printen-in-antwerpen)
 - [3D printen in Brasschaat](/3d-printen-in-brasschaat)
 - [3D printen in Kapellen](/3d-printen-in-kapellen)
-- [3D printen in Antwerpen](/3d-printen-in-antwerpen)
+- [3D printen in Schilde](/3d-printen-in-schilde)
 - [Materialen & richtlijnen](/materials)

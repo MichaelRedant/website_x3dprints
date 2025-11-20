@@ -1,33 +1,34 @@
-# 3D printen in Edegem: klaar voor campus en KMO
+# 3D printen in Edegem: nauwkeurig voor campus en dorpskern
 
-**3D printen in Edegem** nodig voor een prototype, custom mount of kleine serie? Wij leveren snel richting UZA, Hof Ter Linden of je werkplek aan de Mechelsesteenweg. Verwacht heldere offertes en prints die meteen passen.
+Met **3D printen in Edegem** help je projecten vooruit rond Fort 5, UZA/UZ Antwerpen en Campus Drie Eiken. We leveren prototypes, behuizingen en kleine series met de juiste passing zodat ze meteen functioneren in lab, klas of winkel.
 
 ---
 
 ## Waarom X3DPrints
-- ⚡ **Snel**: offerte binnen één werkdag, productie in enkele werkdagen.
-- 🔒 **Consistent**: PLA Matte voor zichtwerk, PETG voor robuuste onderdelen, TPU voor flexibele dempers.
-- 🧭 **Meedenken**: advies over oriëntatie, dikte en afwerking voor indoor en outdoor gebruik.
+- ⚡ **Snel voorstel**: meestal binnen één werkdag een offerte, levering in enkele werkdagen richting 2650.
+- 🎯 **Technische precisie**: strakke toleranties voor mounts, medische hulpstukken of onderwijsprojecten.
+- 🧱 **Materiaalkeuze op toepassing**: PLA Matte voor cleane zichtmodellen, PETG voor stevige hulpmiddelen, TPU voor flexibele grips en bumpers.
+- 🤝 **Heldere communicatie**: rechtstreekse lijn zonder tussenlagen, met optionele fotoupdates.
 
 ---
 
-## Voor wie in Edegem
-- **Healthcare & labo's** rond UZA: houders, fixtures en covers.
-- **Lokale ondernemers** aan Drie Eiken of de Prins Boudewijnlaan: maatwerk onderdelen en displays.
-- **Onderwijs en makers**: STEM-projecten, demo-modellen en maquettes.
+## Waarvoor printen we in Edegem?
+- **UZA & Campus Drie Eiken**: custom houders, sensorkappen of functionele prototypes voor onderzoek en labs.
+- **Makers rond Fort 5 en Buizegem**: maquettes, props en behuizingen voor IoT of renovaties.
+- **Retail en horeca in het centrum**: nette displays, kleine series houders en gepersonaliseerde onderdelen.
 
 ---
 
-## Praktisch bestellen
-- Upload **STL of STEP** via [contact](/contact) met gewenste aantallen en materiaal.
-- Bouwvolume tot **25 × 25 × 25 cm** per stuk, grotere prints worden netjes opgesplitst.
-- Verzending richting Edegem of afhalen mogelijk; tarieven staan op [pricing](/pricing).
+## Praktische aanpak
+- Upload **STL/STEP** via [contact](/contact) met aantallen, gewenste leverdatum en materiaalvoorkeur.
+- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere delen worden slim opgesplitst.
+- Verzending of afhalen kan; bekijk prijzen op [pricing](/pricing).
 
 ---
 
-## Interne links
+## Handige links
 - [3D printen in Antwerpen](/3d-printen-in-antwerpen)
-- [3D printen in Mortsel](/3d-printen-in-mortsel)
 - [3D printen in Kontich](/3d-printen-in-kontich)
+- [3D printen in Mortsel](/3d-printen-in-mortsel)
 - [3D printen in Hove](/3d-printen-in-hove)
 - [Materialen & richtlijnen](/materials)

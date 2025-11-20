@@ -1,32 +1,34 @@
-# 3D printen in Kapellen: klaar voor KMO en retail
+# 3D printen in Kapellen: duurzame onderdelen voor 2950
 
-Met **3D printen in Kapellen** krijg je snelle prototypes en kleine series voor ondernemers rond Bosduin en de Essenhoutstraat. Wij verzorgen nette afwerking, heldere prijzen en advies over materiaalkeuze.
-
----
-
-## Waarom wij
-- ⚡ **Tempo**: prijsindicatie in een dag, levering in enkele werkdagen.
-- 🧱 **Materiaalopties**: PLA Matte voor zichtwerk, PETG voor stevige onderdelen, TPU voor flexibele toepassingen.
-- 🧭 **Meedenken** over passing, layer height en post-processing.
+Voor **3D printen in Kapellen** leveren we prototypes en kleine series naar Hoogboom, Putte-Kapellen en bedrijven langs de Kapelsestraat of aan het station. We combineren precisie met materiaalkeuze zodat je onderdelen meteen passen en lang meegaan.
 
 ---
 
-## Ideaal voor
-- **Lokale handelaars en bureaus**: displays, maquettes en props.
-- **KMO's**: jigs, klemmen en functionele onderdelen voor machines.
-- **Makers** in Kapellen en Hoevenen: kleine reeksen of unieke stuks.
+## Waarom X3DPrints
+- ⚡ **Vlotte timings**: offerte meestal binnen één werkdag, levering in enkele werkdagen richting Kapellen en omgeving.
+- 🧱 **Sterkte waar nodig**: PETG voor stevige hulpmiddelen, PLA Matte voor cleane zichtmodellen, TPU voor flexibele kappen of demping.
+- 🎯 **Consistente passing**: we letten op toleranties zodat behuizingen, mounts of klemmen direct bruikbaar zijn.
+- 🤝 **Rechtstreeks contact**: geen supportlagen, gewoon duidelijke updates en foto's indien gewenst.
 
 ---
 
-## Bestellen
-- Upload **STL/STEP** via [contact](/contact) met aantallen en gewenste kleur.
-- Tot **25 × 25 × 25 cm** per stuk; grotere delen worden opgesplitst.
-- Verzending richting Kapellen of afhalen; bekijk [pricing](/pricing).
+## Projecten uit Kapellen
+- **Retail en hospitality op de Kapelsestraat**: displays, producthouders of gepersonaliseerde signage in kleine oplages.
+- **Industrie rond Hoogboom en industriepark Bosduin**: maatwerkbeugels, sensorhouders en tijdelijke vervangstukken.
+- **Makers aan het station en in Putte-Kapellen**: maquettes, props of behuizingen voor elektronica en IoT.
 
 ---
 
-## Interne links
+## Bestel eenvoudig
+- Stuur je **STL/STEP** via [contact](/contact) met aantallen, materiaalkeuze en gewenste leverdatum.
+- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere delen splitsen we slim op.
+- Verzending of afhalen mogelijk; bekijk [pricing](/pricing) voor tarieven.
+
+---
+
+## Handige links
+- [3D printen in Antwerpen](/3d-printen-in-antwerpen)
 - [3D printen in Brasschaat](/3d-printen-in-brasschaat)
 - [3D printen in Schoten](/3d-printen-in-schoten)
-- [3D printen in Antwerpen](/3d-printen-in-antwerpen)
+- [3D printen in Schilde](/3d-printen-in-schilde)
 - [Materialen & richtlijnen](/materials)

@@ -1,33 +1,34 @@
-# 3D printen in Kontich: prototypes zonder omweg
+# 3D printen in Kontich: prototypes voor Prins Boudewijnlaan en E19
 
-Voor **3D printen in Kontich** wil je snelheid en betrouwbaarheid. We leveren vanuit Herzele richting Prins Boudewijnlaan en Satenrozen, met duidelijke prijzen en prints die klaar zijn voor montage of test.
-
----
-
-## Wat je krijgt
-- ⚡ **Snelle doorlooptijd**: offertes snel, levering in enkele werkdagen.
-- 🧱 **Sterk of strak**: PLA Matte voor nette zichtdelen, PETG voor functionele sterkte, TPU voor flex.
-- 🛠 **Engineering-minded**: we denken mee over passing, toleranties en oriëntatie.
+Met **3D printen in Kontich** krijg je snel nette prototypes en functionele onderdelen voor projecten in Satenrozen, langs de Prins Boudewijnlaan of in het centrum. We denken mee over passing, oriëntatie en materiaal zodat je onderdelen meteen bruikbaar zijn, van fixture tot display.
 
 ---
 
-## Toepassingen in Kontich
-- **KMO's en logistiek** langs de E19: reserveonderdelen, fixtures, productiehulpen.
-- **Design- en marketingteams**: maquettes en props voor pitches en events.
-- **Onderwijs en makers**: proof-of-concepts en STEM-projecten.
+## Waarom teams in Kontich voor ons kiezen
+- ⚡ **Snelle offertes**: meestal binnen één werkdag, levering in enkele werkdagen richting 2550.
+- 🧭 **Meedenken over montage**: we stemmen tolerantie, infill en oriëntatie af op je toepassing.
+- 🧱 **Materialen op functie**: PLA Matte voor zichtwerk, PETG voor stevige hulpmiddelen, TPU voor flexibele kappen en buffers.
+- 🤝 **Duidelijke communicatie**: rechtstreeks contact en optionele fotoupdates.
 
 ---
 
-## Bestellen
-- Upload **STL/STEP** via [contact](/contact) met aantallen en materiaalvoorkeur.
-- Stukken tot **25 × 25 × 25 cm**, grotere delen worden opgesplitst en naadloos samengezet.
-- Verzending of afhalen; check [pricing](/pricing) voor tarieven.
+## Typische toepassingen
+- **Bedrijvenzone Satenrozen en E19-corridor**: klemmen, behuizingen of sensorhouders die dagelijks gebruikt worden.
+- **Bureaus rond het gemeentepark**: schaalmodellen, mock-ups en maquettes voor pitches of klantvoorstellingen.
+- **Installateurs op de Prins Boudewijnlaan**: custom brackets voor HVAC, domotica of retailinrichting.
 
 ---
 
-## Interne links
+## Bestel zo
+- Stuur je **STL/STEP** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
+- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere items delen we slim op en werken we na.
+- Verzending of afhalen mogelijk; prijzen vind je op [pricing](/pricing).
+
+---
+
+## Handige links
 - [3D printen in Antwerpen](/3d-printen-in-antwerpen)
 - [3D printen in Edegem](/3d-printen-in-edegem)
 - [3D printen in Aartselaar](/3d-printen-in-aartselaar)
-- [3D printen in Mortsel](/3d-printen-in-mortsel)
+- [3D printen in Boom](/3d-printen-in-boom)
 - [Materialen & richtlijnen](/materials)

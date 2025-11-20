@@ -1,34 +1,34 @@
-# 3D printen in Mortsel: precies wat je nodig hebt
+# 3D printen in Mortsel: precisie tussen Fort 4 en de Krijgsbaan
 
-Op zoek naar een partner voor **3D printen in Mortsel**? X3DPrints levert vanuit Herzele snelle, nette onderdelen richting Fort 4, de Krijgsbaan of je atelier aan de Mechelsesteenweg. Of je nu een prototype voor een pitch hebt of een functioneel onderdeel voor een machinepark, we denken mee over materiaal, tolerantie en afwerking.
-
----
-
-## Waarom kiezen Mortsel
-- ⚡ **Snel**: offertes doorgaans binnen een werkdag, levering in enkele werkdagen.
-- 🎯 **Nauwkeurig**: strakke passing voor mounts, behuizingen en fixtures.
-- 🌦 **Materiaalkeuze**: PLA Matte voor zichtwerk, PETG voor robuuste onderdelen, TPU voor flexibele stukken.
-- 🤝 **Persoonlijk**: rechtstreeks contact, inclusief fotoupdates van je print.
+Zoek je **3D printen in Mortsel**? We leveren vanuit Herzele snelle, nette onderdelen richting Fort 4, de Krijgsbaan, de Mechelsesteenweg en ateliers rond station Mortsel-Deurnesteenweg. Elk onderdeel wordt afgestemd op passing, sterkte en afwerking zodat je het meteen kunt inzetten.
 
 ---
 
-## Typische toepassingen
-- **KMO's langs de Krijgsbaan**: reserveonderdelen, prototypes voor nieuwe producten.
-- **Makers en bureaus**: props, maquettes of slimme houders voor expo's en retail in de buurt van Fort 4.
-- **Onderwijs**: STEM-projecten met duidelijke richtlijnen voor sterkte en afwerking.
+## Waarom Mortsel-klanten voor ons kiezen
+- ⚡ **Tempo**: offertes vaak binnen één werkdag, levering in enkele werkdagen richting 2640.
+- 🎯 **Detail & passing**: ideaal voor behuizingen, maquettes en technische onderdelen die perfect moeten aansluiten.
+- 🧱 **Materiaalkeuze**: PLA Matte voor strak zichtwerk, PETG voor stevige toepassingen, TPU voor flexibele buffers of grips.
+- 🤝 **Transparante updates**: rechtstreeks contact met optionele fotoreports tijdens het printen.
+
+---
+
+## Projecten die we printen
+- **KMO's langs de Krijgsbaan en Mechelsesteenweg**: klemmen, sensorhouders en tijdelijke vervangstukken voor machines.
+- **Makers rond Fort 4**: props en maquettes voor expo's of prototypes voor installaties in creatieve hubs.
+- **Retail in het centrum**: lichte displays, badgehouders en custom mounting voor winkelinrichting.
 
 ---
 
 ## Praktisch
-- Bestanden in **STL of STEP** via [contact](/contact).
-- Formaat tot **25 × 25 × 25 cm** per onderdeel, grotere stukken delen we op.
-- Verzending of afhalen op afspraak; prijzen en opties staan op [pricing](/pricing).
+- Stuur **STL/STEP** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
+- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere items delen we slim op en werken we na.
+- Levering of afhalen mogelijk; zie [pricing](/pricing) voor tarieven.
 
 ---
 
 ## Interne links
 - [3D printen in Antwerpen](/3d-printen-in-antwerpen)
-- [Materialen & richtlijnen](/materials)
 - [3D printen in Edegem](/3d-printen-in-edegem)
 - [3D printen in Kontich](/3d-printen-in-kontich)
 - [3D printen in Hove](/3d-printen-in-hove)
+- [Materialen & richtlijnen](/materials)

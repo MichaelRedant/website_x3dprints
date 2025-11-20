@@ -1,32 +1,34 @@
-# 3D printen in Aartselaar: snel en functioneel
+# 3D printen in Aartselaar: klaar voor A12-tempo
 
-Voor **3D printen in Aartselaar** leveren we onderdelen en prototypes richting industriezone Cleydael en de A12. Je krijgt transparante prijzen en prints die meteen inzetbaar zijn.
-
----
-
-## Pluspunten
-- ⚡ **Snel**: offerte binnen een werkdag, levering in enkele werkdagen.
-- 🧱 **Materiaalkeuze**: PLA Matte voor zichtwerk, PETG voor sterkte, TPU voor flexibele delen.
-- 🧭 **Meedenken**: advies over passing, oriëntatie en post-processing.
+Wie **3D printen in Aartselaar** zoekt, wil snelheid én precisie. Vanuit Herzele leveren we prototypes en kleine series richting Cleydael Golf, de bedrijvenzones langs de Boomsesteenweg (A12) en ateliers in het dorpscentrum. We stemmen materiaal, tolerantie en afwerking af op je toepassing zodat je onderdelen meteen inzetbaar zijn.
 
 ---
 
-## Ideaal voor
-- **KMO's langs de A12**: jigs, klemmen en reserveonderdelen.
-- **Engineering & R&D**: prototypes voor tests en validatie.
-- **Marketing & events**: displays en props die opvallen.
+## Waarom X3DPrints
+- ⚡ **Tempo op jouw ritme**: offertes doorgaans binnen één werkdag, levering in enkele werkdagen richting A12-corridor of gemeentekern.
+- 🧭 **Meedenkende engineers**: advies over passing, oriëntatie en nabewerking voor jigs, behuizingen of zichtwerk.
+- 🧱 **Gerichte materialen**: PLA Matte voor cleane visuals, PETG voor stevige hulpmiddelen, TPU voor flexibele klemmen en pads.
+- 🤝 **Transparante communicatie**: rechtstreekse lijn met duidelijke statusupdates.
 
 ---
 
-## Zo bestel je
-- Upload **STL/STEP** via [contact](/contact) met aantallen en materiaal.
-- Tot **25 × 25 × 25 cm** per onderdeel; grotere stukken delen we netjes op.
-- Verzending of afhalen; prijzen staan op [pricing](/pricing).
+## Projecten die we vaak printen in Aartselaar
+- **KMO's langs de Boomsesteenweg en Helst**: maatwerkbeugels, machinecovers of tijdelijke fixtures voor productielijnen.
+- **Sport & events rond Cleydael**: props, displays en merchandising-hardware die tegen een stootje kan.
+- **Installateurs en makers in het centrum**: nette behuizingen, sensorhouders of custom mounts voor renovaties en domotica.
 
 ---
 
-## Interne links
-- [3D printen in Kontich](/3d-printen-in-kontich)
-- [3D printen in Boom](/3d-printen-in-boom)
-- [3D printen in Rumst](/3d-printen-in-rumst)
+## Praktisch bestellen
+- Bestanden in **STL of STEP** via [contact](/contact). Voeg aantallen, materiaalvoorkeur en gewenste leverdatum toe.
+- Formaat tot **25 × 25 × 25 cm** per onderdeel; grotere stukken delen we netjes op en laten we naadloos aansluiten.
+- Levering of afhalen mogelijk; prijzen en opties vind je op [pricing](/pricing).
+
+---
+
+## Handige interne links
 - [3D printen in Antwerpen](/3d-printen-in-antwerpen)
+- [3D printen in Boom](/3d-printen-in-boom)
+- [3D printen in Kontich](/3d-printen-in-kontich)
+- [3D printen in Rumst](/3d-printen-in-rumst)
+- [Materialen & richtlijnen](/materials)

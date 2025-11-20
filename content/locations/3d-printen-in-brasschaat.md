@@ -1,32 +1,34 @@
-# 3D printen in Brasschaat: strak werk in het groen
+# 3D printen in Brasschaat: strak werk voor park en kazerne
 
-Voor **3D printen in Brasschaat** leveren we prototypes en onderdelen richting de Bredabaan, bedrijventerreinen en creatieve ateliers. Verwacht scherpe details, snelle communicatie en materiaaladvies op maat.
-
----
-
-## Waarom X3DPrints
-- ⚡ **Snelle offertes** met realistische levertijd.
-- 🎯 **Precisie** voor maquettes, houders en functionele onderdelen.
-- 🌲 **Flexibel**: PLA Matte voor strakke zichtdelen, PETG voor sterkte, TPU voor schokdemping.
+Voor **3D printen in Brasschaat** leveren we snelle, nauwkeurige onderdelen richting Park van Brasschaat, de Miksebaan, Kaart en de bedrijvenzones langs de Bredabaan. Van maquettes voor vastgoed tot technische onderdelen voor defensie- of outdoorprojecten: we zorgen voor de juiste sterkte en afwerking.
 
 ---
 
-## Toepassingen
-- **Retail & hospitality** langs de Bredabaan: displays en maatwerkhouders.
-- **Techniek en logistiek**: reserveonderdelen, jigs en klemmen.
-- **Makers** in de groene rand: projecten voor expo's of productlanceringen.
+## Waarom X3DPrints voor Brasschaat
+- ⚡ **Snel schakelen**: offertes doorgaans binnen één werkdag, levering in enkele werkdagen richting 2930.
+- 🧱 **Materiaalkeuze op functie**: PETG voor stevige buitenopstellingen, PLA Matte voor representatieve prototypes, TPU voor schokdemping of grips.
+- 🎯 **Precisie en consistentie**: strakke toleranties voor onderdelen die moeten passen in bestaande behuizingen of mounts.
+- 🤝 **Direct contact**: geen omwegen, gewoon heldere updates en foto's als je dat wenst.
 
 ---
 
-## Praktisch
-- Upload **STL/STEP** via [contact](/contact) met aantallen en materiaalkeuze.
-- Bouwvolume tot **25 × 25 × 25 cm** per onderdeel.
-- Verzending of afhalen; tarieven op [pricing](/pricing).
+## Typische opdrachten
+- **Outdoor & defensie rond de kazerne**: beschermkappen, custom mounts of hulpstukken die tegen ruw gebruik kunnen.
+- **Retail en hospitality aan de Bredabaan**: nette displayhouders, signage-onderdelen of kleine series voor shopinrichting.
+- **Vastgoed en events in Park van Brasschaat**: schaalmodellen, maquette-elementen en props met een cleane afwerking.
 
 ---
 
-## Interne links
-- [3D printen in Schoten](/3d-printen-in-schoten)
-- [3D printen in Kapellen](/3d-printen-in-kapellen)
+## Bestellen in drie stappen
+- Stuur je **STL of STEP** via [contact](/contact) met aantallen, gewenste leverdatum en afwerking.
+- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere delen splitsen we slim op.
+- Verzending of afhalen mogelijk; tarieven staan op [pricing](/pricing).
+
+---
+
+## Handige links
 - [3D printen in Antwerpen](/3d-printen-in-antwerpen)
+- [3D printen in Kapellen](/3d-printen-in-kapellen)
+- [3D printen in Schoten](/3d-printen-in-schoten)
+- [3D printen in Schilde](/3d-printen-in-schilde)
 - [Materialen & richtlijnen](/materials)
