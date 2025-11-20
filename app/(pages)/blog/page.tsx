@@ -105,6 +105,23 @@ const topics: Topic[] = [
     intent: "transactional",
   },
   {
+    id: "3d-geprinte-platen-nasiam",
+    title: "NaSiam: 3D-geprinte platen met QR",
+    summary:
+      "Case study: twee herbruikbare platen met logo en QR-code voor massagesalon NaSiam in Sint-Job. Inclusief materiaalkeuzes, montage-opties en links naar marketingartikelen.",
+    highlights: [
+      "Matte basis met contrasterende inleg voor scanbare QR-codes.",
+      "Herbruikbaar op events en in het salon, met vlakke zones voor tape of klittenband.",
+      "Interne links naar marketing & events segment plus Antwerpse landingspagina.",
+    ],
+    links: [
+      { label: "Lees volledig artikel", href: "/blog/3d-geprinte-platen-nasiam" },
+      { label: "Marketing & events artikel", href: "/blog/3d-printing-marketing-events" },
+      { label: "Segment marketing & events", href: "/segments/3d-printing-marketing" },
+    ],
+    intent: "transactional",
+  },
+  {
     id: "ontwerp-3d-printbaar-model",
     title: "Hoe ontwerp je een 3D printbaar model?",
     summary:
