@@ -10,24 +10,33 @@ const canonical = "https://www.x3dprints.be/blog/3d-geprinte-platen-nasiam"
 export const metadata: Metadata = {
   title: "NaSiam x X3DPrints: 3D-geprinte platen met QR | Blog",
   description:
-    "Ontdek hoe we voor NaSiam in Sint-Job twee herbruikbare platen met logo en QR maakten voor events en het salon. Materiaalkeuze, montage en lokale links.",
+    "Ontdek hoe we voor NaSiam, een Thaise massagepraktijk in Sint-Job-in-'t-Goor, twee herbruikbare platen met logo en QR maakten voor events en het salon. Materiaalkeuze, montage en lokale zichtbaarheid.",
   alternates: { canonical },
   openGraph: {
     title: "NaSiam x X3DPrints: 3D-geprinte platen met QR",
     description:
-      "Case study: twee stevige, herbruikbare platen met logo en QR-code voor het massagesalon NaSiam in Sint-Job. Inclusief materiaalkeuzes en montageadvies.",
+      "Case study: twee stevige, herbruikbare platen met logo en QR-code voor NaSiam, een salon voor Thaise massage in Sint-Job-in-'t-Goor nabij Antwerpen. Inclusief materiaalkeuzes en montageadvies.",
     url: canonical,
-    images: [{ url: "/images/3d-geprinte-platen.webp", width: 1200, height: 630, alt: "3D-geprinte platen met QR-code voor NaSiam" }],
+    images: [
+      {
+        url: "/images/3d-geprinte-platen.webp",
+        width: 1200,
+        height: 630,
+        alt: "3D-geprinte platen met QR-code voor NaSiam",
+      },
+    ],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
   twitter: {
     card: "summary_large_image",
     title: "NaSiam x X3DPrints: 3D-geprinte platen met QR",
-    description: "Case: herbruikbare platen met QR-code voor events en salon in Sint-Job (NaSiam).",
+    description:
+      "Case: herbruikbare platen met QR-code voor massagesalon NaSiam in Sint-Job-in-'t-Goor, inzetbaar op events en in het salon.",
     images: ["/images/3d-geprinte-platen.webp"],
   },
 }
+
 
 const highlights = [
   "Twee platen met custom NaSiam-logo, één voor events en één voor in het salon.",
@@ -38,10 +47,11 @@ const highlights = [
 
 const buildSteps = [
   {
-    title: "Briefing vanuit het salon",
-    detail:
-      "NaSiam wilde herbruikbare dragers die zowel in het salon (Brugstraat 19, 2960 Sint-Job) als op events konden staan. Belangrijk: een duidelijke QR naar de website, warme branding en een vlakke achterkant om op standaard houders te passen.",
-  },
+  title: "Briefing vanuit het salon",
+  detail:
+    "NaSiam wilde herbruikbare dragers die zowel in het salon (Brugstraat 19, 2960 Sint-Job) als op events konden staan. De vraag: hoe leiden we mensen op een rustige, niet-opdringerige manier naar de juiste info en online afspraken? Belangrijk waren een duidelijke QR naar de website, een warme uitstraling die bij Thaise massage past en een vlakke achterkant om de platen eenvoudig op standaard houders te plaatsen.",
+},
+
   {
     title: "Materiaal- en kleurkeuze",
     detail:
@@ -64,7 +74,7 @@ const reuseIdeas = [
 const faq = [
   {
     q: "Waarom PLA Matte voor deze platen?",
-    a: "PLA Matte geeft weinig schittering onder spotlights en is tegelijkertijd stijf genoeg voor herhaald gebruik. De textuur helpt de QR-code leesbaar te houden en voelt premium aan in het salon.",
+a: "PLA Matte geeft weinig schittering onder spotlights en is tegelijkertijd stijf genoeg voor herhaald gebruik. De textuur helpt de QR-code leesbaar te houden en voelt premium aan in een setting zoals het NaSiam massagesalon, waar rust en kwaliteit centraal staan.",
   },
   {
     q: "Hoe bevestig je de platen zonder beschadigingen?",
@@ -113,24 +123,45 @@ export default function NaSiamArticlePage() {
           NaSiam x X3DPrints: 3D-geprinte platen met QR-code
         </h1>
         <p className="mt-4 text-base text-slate-600">
-          Voor massagesalon NaSiam in Sint-Job maakten we twee herbruikbare platen met hun logo en QR-code. Ze staan zowel in het salon aan Brugstraat 19 als op events, zodat bezoekers meteen naar de juiste pagina doorklikken. In deze case lees je hoe we dat aanpakten en welke materialen het verschil maken.
-        </p>
+  Voor massagesalon NaSiam in Sint-Job-in-&apos;t-Goor maakten we twee herbruikbare platen met hun logo en QR-code. 
+  NaSiam is een kleinschalige, professionele praktijk voor Thaise massage waar welzijn en persoonlijke aandacht centraal staan. 
+  De platen worden gebruikt in het salon aan Brugstraat 19 én op events, zodat bezoekers meteen naar{" "}
+  <Link
+    href="https://www.nasiam.be"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-semibold text-amber-700 underline underline-offset-4"
+  >
+    NaSiam.be
+  </Link>{" "}
+  kunnen doorklikken voor info en afspraken. In deze case lees je hoe we dat aanpakten en welke materialen het verschil maken.
+</p>
+
 
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact?material=PLA%20Matte">Vraag een gelijkaardig project aan</ShimmerButton>
-          <Link
-            href="/blog/3d-printing-marketing-events"
-            className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
-          >
-            Lees marketing & events artikel
-          </Link>
-          <Link
-            href="/segments/3d-printing-marketing"
-            className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
-          >
-            Segment marketing & events
-          </Link>
-        </div>
+  <ShimmerButton href="/contact?material=PLA%20Matte">Vraag een gelijkaardig project aan</ShimmerButton>
+  <Link
+    href="/blog/3d-printing-marketing-events"
+    className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
+  >
+    Lees marketing & events artikel
+  </Link>
+  <Link
+    href="/segments/3d-printing-marketing"
+    className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
+  >
+    Segment marketing & events
+  </Link>
+  <Link
+    href="https://www.nasiam.be"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-full border border-amber-300/70 bg-white/90 px-4 py-2 font-semibold text-amber-800 shadow-sm hover:-translate-y-0.5 hover:bg-white transition"
+  >
+    Bezoek NaSiam.be
+  </Link>
+</div>
+
       </header>
 
       <Reveal className="mx-auto mt-12 max-w-5xl space-y-6">
@@ -139,8 +170,11 @@ export default function NaSiamArticlePage() {
             <div>
               <h2 className="text-xl font-semibold text-slate-900">Waarom deze platen werken</h2>
               <p className="mt-3 text-sm text-slate-600">
-                NaSiam wilde iets tastbaars dat hun warme branding uitstraalt en tegelijk digitaal verkeer stuurt. Met een ingewerkte QR-code en een matte afwerking krijg je een heldere scan in wisselende lichtomstandigheden. Het geheel is licht genoeg voor events, maar stevig genoeg voor dagelijks gebruik in het salon.
-              </p>
+  NaSiam wilde iets tastbaars dat dezelfde rust en warmte uitstraalt als hun Thaise massages. 
+  Een bezoek aan het salon start altijd met een warm welkom en een gesprek over klachten en doelen; de communicatiedragers moesten diezelfde zorgvuldigheid tonen. 
+  Met een ingewerkte QR-code, een matte afwerking en duidelijke branding krijgt de QR een hoge scanbaarheid in wisselende lichtomstandigheden, terwijl de platen licht genoeg blijven voor events en stevig genoeg zijn voor dagelijks gebruik in het salon.
+</p>
+
               <ul className="mt-4 space-y-2 text-sm text-slate-600">
                 {highlights.map((item) => (
                   <li key={item} className="flex items-start gap-2">
@@ -181,8 +215,21 @@ export default function NaSiamArticlePage() {
         <GlassCard className="p-6 sm:p-8">
           <h2 className="text-xl font-semibold text-slate-900">Hoe NaSiam de platen inzet</h2>
           <p className="mt-3 text-sm text-slate-600">
-            De dragers wisselen vlot tussen het salon en events. Bij wellnessbeurzen staat de QR centraal op de stand; in Sint-Job krijgt hij een plek aan de balie zodat vaste klanten nieuwigheden ontdekken. Door dezelfde QR te koppelen aan een campagne-URL kun je meten hoeveel scans uit de Antwerpse regio komen.
-          </p>
+  De dragers wisselen vlot tussen het salon en events. Bij wellnessbeurzen en lokale acties staat de QR centraal op de stand; 
+  in Sint-Job krijgt hij een zichtbare maar rustige plek aan de balie, zodat bezoekers na hun massage of bij het maken van een nieuwe afspraak meteen kunnen scannen. 
+  De QR linkt naar{" "}
+  <Link
+    href="https://www.nasiam.be"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-semibold text-amber-700 underline underline-offset-4"
+  >
+    NaSiam.be
+  </Link>{" "}
+  waar mensen meer lezen over de verschillende vormen van Thaise massage, therapeutische behandelingen en cadeaubonnen. 
+  Door dezelfde QR te koppelen aan een campagne-URL kun je bovendien meten hoeveel scans uit de Antwerpse regio komen.
+</p>
+
           <ul className="mt-4 space-y-2 text-sm text-slate-600">
             {reuseIdeas.map((idea) => (
               <li key={idea} className="flex items-start gap-2">
@@ -206,6 +253,35 @@ export default function NaSiamArticlePage() {
             </Link>
           </div>
         </GlassCard>
+
+                <GlassCard className="p-6 sm:p-8">
+          <h2 className="text-xl font-semibold text-slate-900">Over NaSiam: Thaise massage in Sint-Job-in-&apos;t-Goor</h2>
+          <p className="mt-3 text-sm text-slate-600">
+            NaSiam is een kleinschalige, professionele praktijk voor Thaise massage in Sint-Job-in-&#39;t-Goor, op korte afstand van Antwerpen. 
+            In een rustige, schone omgeving neemt Nalita de tijd om te luisteren naar jouw klachten en doelen. 
+            Elke sessie start met een korte intake, zodat druk, tempo en technieken afgestemd worden op wat jouw lichaam nodig heeft.
+          </p>
+          <p className="mt-3 text-sm text-slate-600">
+            De focus ligt op welzijn: beter slapen, vrijer bewegen en structureel minder stress ervaren. 
+            Afhankelijk van je noden kan een behandeling bestaan uit traditionele Thaise massage met strekkingen en drukpunten, 
+            therapeutische Thaise massage met extra aandacht voor rug, nek en schouders, of een combinatie met deep tissue en aromatherapie als de spanning dieper zit.
+          </p>
+          <p className="mt-3 text-sm text-slate-600">
+            Als massagepraktijk in Sint-Job helpt NaSiam zowel mensen uit de buurt als bezoekers uit de regio Antwerpen die bewust willen investeren in herstel en ontspanning. 
+            De 3D-geprinte platen zorgen ervoor dat nieuwe en bestaande klanten op een rustige manier hun weg vinden naar meer info en het online afsprakenplatform.
+          </p>
+          <div className="mt-5">
+            <Link
+              href="https://www.nasiam.be"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-amber-300/70 bg-white/90 px-4 py-2 text-sm font-semibold text-amber-800 shadow-sm hover:-translate-y-0.5 hover:bg-white transition"
+            >
+              Ga naar NaSiam.be
+            </Link>
+          </div>
+        </GlassCard>
+
 
         <GlassCard className="p-6 sm:p-8">
           <h2 className="text-xl font-semibold text-slate-900">Veelgestelde vragen</h2>
