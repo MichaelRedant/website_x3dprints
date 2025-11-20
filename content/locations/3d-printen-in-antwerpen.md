@@ -59,6 +59,25 @@ We leveren in heel Antwerpen en hebben aparte pagina's voor de districten. Zo kr
 - [3D printen in Merksem](/3d-printen-in-merksem)
 - [3D printen in Wilrijk](/3d-printen-in-wilrijk)
 
+### 🌆 Rand rond Antwerpen die je nog kan coveren
+Voor fijnmazige SEO en hyperlokale intent kun je de randgemeenten mee opnemen. Suggesties:
+
+- [3D printen in Mortsel](/3d-printen-in-mortsel)
+- [3D printen in Edegem](/3d-printen-in-edegem)
+- [3D printen in Kontich](/3d-printen-in-kontich)
+- [3D printen in Aartselaar](/3d-printen-in-aartselaar)
+- [3D printen in Wommelgem](/3d-printen-in-wommelgem)
+- [3D printen in Wijnegem](/3d-printen-in-wijnegem)
+- [3D printen in Schilde](/3d-printen-in-schilde)
+- [3D printen in Schoten](/3d-printen-in-schoten)
+- [3D printen in Brasschaat](/3d-printen-in-brasschaat)
+- [3D printen in Kapellen](/3d-printen-in-kapellen)
+- [3D printen in Hove](/3d-printen-in-hove)
+- [3D printen in Lint](/3d-printen-in-lint)
+- [3D printen in Boechout](/3d-printen-in-boechout)
+- [3D printen in Boom](/3d-printen-in-boom)
+- [3D printen in Rumst](/3d-printen-in-rumst)
+
 Heb je nu al een project in één van deze districten? Stuur je bestand mee; we houden rekening met levering en timing in jouw buurt.
 
 ---
