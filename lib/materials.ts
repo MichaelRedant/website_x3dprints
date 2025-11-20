@@ -93,7 +93,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       { label: "Olive", color: "#6b8e23", inStock: false },
       { label: "Lime", color: "#84cc16", inStock: true },
       { label: "Yellow", color: "#facc15", inStock: true },
-      { label: "Orange", color: "#fb923c", inStock: true },
+      { label: "Orange", color: "#fb923c", inStock: false },
       { label: "Red", color: "#dc2626", inStock: true },
     ],
   },
