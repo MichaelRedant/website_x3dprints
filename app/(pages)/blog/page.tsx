@@ -71,6 +71,91 @@ const topics: Topic[] = [
     intent: "informational",
   },
   {
+    id: "3d-printen-mini-figuren",
+    title: "3D printen van miniaturen voor tabletop gaming",
+    summary:
+      "D&D en Warhammer minis met scherpe details, stevige bases en veilige levering. Tips voor laaghoogte, supports, materiaalkeuze en dice towers met grip.",
+    highlights: [
+      "Detail: 0,12-0,16 mm layers en oriëntatie met gezicht naar boven voor supportvrije features.",
+      "Materialen: PLA Matte voor strak zichtwerk, PETG voor robuuste props/terrain, TPU voor rubber feet onder dice towers.",
+      "Levering: persoonlijke EV-levering in zones of pakketdienst; breekbare minis afzonderlijk verpakt.",
+    ],
+    links: [
+      { label: "Lees volledig artikel", href: "/blog/3d-printen-mini-figuren" },
+      { label: "Bekijk DnD mini", href: "/portfolio" },
+      { label: "Dice tower voorbeeld", href: "/portfolio" },
+    ],
+    intent: "informational",
+  },
+  {
+    id: "3d-printen-herfst-halloween",
+    title: "3D printen voor herfst & Halloween",
+    summary:
+      "Pumpkins, haunted props en lantaarns in Silk/Marble/Translucent PLA. Incl. tips voor leds, wanddiktes en leverzones.",
+    highlights: [
+      "Silk/Marble voor luxe glans, Translucent voor lichtgloed",
+      "Layer 0,16-0,2 mm; wand >1,2 mm voor stevige decor",
+      "Ontwerpbestand niet inbegrepen; lever STL/STEP of ontwerpservice",
+    ],
+    links: [
+      { label: "Lees volledig artikel", href: "/blog/3d-printen-herfst-halloween" },
+      { label: "Seasonal segment", href: "/segments/3d-printing-seasonal" },
+      { label: "Plan je Halloween print", href: "/contact" },
+    ],
+    intent: "informational",
+  },
+  {
+    id: "3d-printen-lente-pasen",
+    title: "3D printen voor lente & Pasen",
+    summary:
+      "Pastel ornamenten, eieren en bloemdecor in Silk/Matte/Translucent PLA. Checklist voor materiaal en ophang.",
+    highlights: [
+      "Pastel Silk/Matte PLA, Translucent voor lichtobjecten",
+      "Oogjes/pin-holes integreren, wand >1,2 mm",
+      "Ontwerp niet inbegrepen; ontwerpservice €45/uur",
+    ],
+    links: [
+      { label: "Lees volledig artikel", href: "/blog/3d-printen-lente-pasen" },
+      { label: "Seasonal segment", href: "/segments/3d-printing-seasonal" },
+      { label: "Plan paasprints", href: "/contact" },
+    ],
+    intent: "informational",
+  },
+  {
+    id: "3d-printen-zomer",
+    title: "3D printen voor de zomer",
+    summary:
+      "Outdoor decor, nautische props en terrasaccessoires in PETG/TPU. Tips voor hittebestendigheid en antislip.",
+    highlights: [
+      "PETG voor zon/vocht, TPU voor antislip feet",
+      "Layer 0,2 mm voor grote stukken, 0,16 mm voor detail",
+      "Ontwerp niet inbegrepen; ontwerpservice €45/uur",
+    ],
+    links: [
+      { label: "Lees volledig artikel", href: "/blog/3d-printen-zomer" },
+      { label: "Seasonal segment", href: "/segments/3d-printing-seasonal" },
+      { label: "Plan zomerprints", href: "/contact" },
+    ],
+    intent: "informational",
+  },
+  {
+    id: "3d-printen-winter-kerst-nieuwjaar",
+    title: "3D printen voor winter, Kerst & Nieuwjaar",
+    summary:
+      "Ornamenten, sneeuwvlokken en party props in Silk/Marble/Translucent PLA. Levering via EV-zones of pakketdienst.",
+    highlights: [
+      "Silk/Marble voor glans, Translucent voor lichtobjecten",
+      "Oogjes integreren, wand 1,6-2 mm voor diffuse gloed",
+      "Ontwerp niet inbegrepen; ontwerpservice €45/uur",
+    ],
+    links: [
+      { label: "Lees volledig artikel", href: "/blog/3d-printen-winter-kerst-nieuwjaar" },
+      { label: "Seasonal segment", href: "/segments/3d-printing-seasonal" },
+      { label: "Plan kerstprints", href: "/contact" },
+    ],
+    intent: "informational",
+  },
+  {
     id: "bambu-printer-instellingen",
     title: "Beste instellingen voor jouw Bambu printer",
     summary:
@@ -347,7 +432,7 @@ export default function BlogPage() {
                   <div className="mt-6 flex flex-wrap gap-3">
                     {topic.links.map((link) => (
                       <Link
-                        key={link.href}
+                        key={`${link.href}-${link.label}`}
                         href={link.href}
                         className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
                       >

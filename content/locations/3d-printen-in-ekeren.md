@@ -6,12 +6,12 @@ Heb je **3D printen in Ekeren** nodig voor prototypes, tools of maquettes? X3DPr
 
 ## Waarom X3DPrints voor Ekeren?
 
-- ⚡ **Snelle service**: korte lead times richting Ekeren en omgeving.
-- 🎯 **Precisie**: strakke toleranties voor onderdelen die direct moeten passen.
-- 🧪 **Materiaaladvies**: van zichtwerk tot stevige industriële onderdelen.
-- 🤝 **Heldere updates**: transparante offertes en voortgangsfoto's indien gewenst.
+- Snelle service: korte lead times richting Ekeren en omgeving.
+- Precisie: strakke toleranties voor onderdelen die direct moeten passen.
+- Materiaaladvies: van zichtwerk tot stevige industriële onderdelen voor de Scheldelaan of havenkades.
+- Heldere updates: transparante offertes en voortgangsfoto's indien gewenst.
 
-**Lokale touch:** Ekeren balanceert wonen, industrie en logistiek. Denk aan een behuizing voor een sensorkast in de haven, een maquette voor een project rond Veltwijckpark of een custom mount voor een testopstelling langs de A12. We stemmen de print daarop af.
+**Lokale touch:** Ekeren balanceert wonen, industrie en logistiek. Denk aan een behuizing voor een sensorkast in de Ekerse Putten, een maquette voor een project rond Veltwijckpark of een custom mount voor een testopstelling langs de A12. We stemmen de print daarop af.
 
 ---
 
@@ -19,7 +19,7 @@ Heb je **3D printen in Ekeren** nodig voor prototypes, tools of maquettes? X3DPr
 
 | Materiaal     | Pluspunt                      | Ideaal voor |
 | :------------ | :--------------------------- | :---------- |
-| **PLA Matte** | Strakke look, detailrijk     | Maquettes en visuals voor pitches |
+| **PLA Matte** | Strakke look, detailrijk     | Maquettes en visuals voor pitches in woonprojecten |
 | **PETG**      | Sterk en temperatuurvast     | Functionele onderdelen in industriële omgevingen |
 | **TPU**       | Flexibel en schokdempend     | Beschermhoezen, afdichtingen en grips |
 
@@ -27,9 +27,9 @@ Heb je **3D printen in Ekeren** nodig voor prototypes, tools of maquettes? X3DPr
 
 ## Toepassingen in Ekeren
 
-- 🏭 **Industrie & logistiek**: vervangstukken en hulpmiddelen voor teams langs de haven.
-- 🏢 **Kmo's & bureaus**: prototypes voor klantpresentaties of pilots.
-- 🌳 **Publieke projecten**: maquettes voor park- of infrastructuurdossiers.
+- Industrie en logistiek: vervangstukken en hulpmiddelen voor teams langs de haven en A12.
+- Kmo's en bureaus: prototypes voor klantpresentaties of pilots rond Marktplein en Veltwijcklaan.
+- Publieke projecten: maquettes voor park- of infrastructuurdossiers in het Veltwijckpark.
 
 ---
 

@@ -77,6 +77,28 @@ const segments: SegmentCard[] = [
       "Afhalen in Herzele of verzending in België",
     ],
   },
+  {
+    slug: "segments/3d-printing-tabletop",
+    title: "3D printing voor tabletop minis",
+    description:
+      "D&D en Warhammer miniaturen, bases en dice towers met haarscherpe details. Ontwerp van het 3D model niet inbegrepen; aanleveren of ontwerpservice mogelijk.",
+    highlights: [
+      "0,12-0,16 mm layers voor premium detail",
+      "PLA Matte/PETG voor minis en scenery, TPU voor rubber feet",
+      "Persoonlijke EV-levering of pakketdienst voor breekbare prints",
+    ],
+  },
+  {
+    slug: "segments/3d-printing-seasonal",
+    title: "Seasonal 3D designs",
+    description:
+      "Herfst/Halloween, lente/Pasen, zomer, winter/kerst decor. Ontwerpbestand niet inbegrepen; aanleveren of ontwerpservice.",
+    highlights: [
+      "Silk/Marble/Translucent PLA voor feestelijke looks",
+      "Outdoor props in PETG, antislip in TPU",
+      "EV-levering met zones of pakketdienst",
+    ],
+  },
 ]
 
 export const metadata: Metadata = {

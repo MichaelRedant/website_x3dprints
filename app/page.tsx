@@ -27,7 +27,26 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
+function getSeasonCta(date: Date) {
+  const month = date.getUTCMonth() + 1 // 1-12
+  const day = date.getUTCDate()
+  const after = (m: number, d: number) => month > m || (month === m && day >= d)
+  const before = (m: number, d: number) => month < m || (month === m && day <= d)
+
+  if (after(11, 11) || before(2, 10)) {
+    return { label: "Winter, Kerst & Nieuwjaar", href: "/blog/3d-printen-winter-kerst-nieuwjaar" }
+  }
+  if (after(2, 11) && before(5, 10)) {
+    return { label: "Lente & Pasen", href: "/blog/3d-printen-lente-pasen" }
+  }
+  if (after(5, 11) && before(9, 10)) {
+    return { label: "Zomer decor", href: "/blog/3d-printen-zomer" }
+  }
+  return { label: "Herfst & Halloween", href: "/blog/3d-printen-herfst-halloween" }
+}
+
 export default function HomePage() {
+  const seasonCta = getSeasonCta(new Date())
   function icon(shape: ReactNode) {
     return (
       <svg
@@ -148,6 +167,12 @@ export default function HomePage() {
                 className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >
                 Segmenten
+              </Link>
+              <Link
+                href={seasonCta.href}
+                className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
+              >
+                {seasonCta.label}
               </Link>
             </div>
           </Reveal>

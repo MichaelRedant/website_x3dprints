@@ -132,7 +132,7 @@ export default async function Page(
     { q: "Wat zijn de maximale bouwvolumes?", aHtml: `Tot <strong>25 × 25 × 25 cm</strong> per onderdeel. Grotere onderdelen splitsen we in segmenten met nette passing.` },
     { q: "Welke bestandsformaten accepteer je?", aHtml: `<strong>STL</strong> of <strong>STEP</strong>. Voeg indien mogelijk toelichting toe: gewenste sterkte, zichtzijde, afwerking, aantallen.` },
     { q: "Welke toleranties haal je typisch?", aHtml: `Richtwaarde <strong>±0,2 mm</strong> bij PLA/PETG, afhankelijk van geometrie en oriëntatie. Functionele passing? Vermeld dit in je aanvraag.` },
-    { q: "Bieden jullie ontwerp op maat of aanpassingen?", aHtml: `Ja. CAD‑aanpassingen en ontwerp op maat aan <strong>€40/uur</strong>. Vraag een voorstel via <a href="/contact">contact</a>.` },
+    { q: "Bieden jullie ontwerp op maat of aanpassingen?", aHtml: `Ja. CAD‑aanpassingen en ontwerp op maat aan <strong>€45/uur</strong>. Vraag een voorstel via <a href="/contact">contact</a>.` },
     { q: `Kan ik afhalen i.p.v. verzending in ${loc.city}?`, aHtml: `Afhalen kan op afspraak. Verzending: <strong>&lt; €50 = €7</strong>, <strong>€50–100 = €5</strong>, <strong>&gt; €100 = gratis</strong>. Zie <a href="/pricing">Prijzen</a>.` },
   ].map((it) => ({ ...it, aText: stripTags(it.aHtml) }))
 

@@ -68,23 +68,31 @@ export default function Page() {
 
   // Kwaliteit/fijnere layers (optioneel)
   const qualityMods = [
-    { label: "Standaard layerhoogte (0,2–0,28 mm)", mod: "0%" },
-    { label: "Fijn (≈ 0,16 mm)", mod: "+15%" },
-    { label: "Ultra (≈ 0,12 mm)", mod: "+25%" },
+    { label: "Standaard layerhoogte (0,2-0,28 mm)", mod: "0%" },
+    { label: "Fijn (~ 0,16 mm)", mod: "+15%" },
+    { label: "Ultra (~ 0,12 mm)", mod: "+25%" },
+  ]
+
+  const deliveryZones = [
+    { k: "Zone 1 tot 25 km (EV)", v: "Standaard 48-72u: 25€, Spoed 24u (mits haalbaar): 35€" },
+    { k: "Zone 2  25-50 km (EV)", v: "Standaard: 45€  Spoed: 60€" },
+    { k: "Zone 3  50-75 km (EV)", v: "Standaard: 60€  Spoed: 80€" },
+    { k: "Verder dan 75 km", v: "Maatwerkprijs of pakketdienst, in overleg" },
+    { k: "Vertrekpunt", v: "Afstanden gerekend vanaf Herzele (heen en terug)" },
   ]
 
   const shipping = [
-    { k: "Bpost", v: "€9 < €50 • €6 voor €50–€100 • Gratis > €100" },
+    { k: "Persoonlijke levering", v: "Elektrische wagen, veilig voor grote of breekbare prints. Zie zones hieronder." },
     { k: "Afhalen", v: "Gratis (regio Herzele/Gent, in overleg)" },
-    { k: "Persoonlijke levering ≤ 25 km", v: "Binnen 24u: €25 • Binnen 48u: €18" },
+    { k: "Pakketdienst", v: "Op aanvraag via pakketdienst, afhankelijk van formaat/gewicht." },
   ]
 
   const design = [
     { k: "Eigen ontwerp (STL/STEP)", v: "Gratis beoordeling + offerte" },
-    { k: "Ontwerp op maat", v: "€45/uur (incl. digitaal voorbeeld vóór productie)" },
+    { k: "Ontwerp op maat", v: "€45/uur (incl. digitaal voorbeeld voor productie)" },
   ]
 
-  // JSON-LD: OfferCatalog met indicatieve prijzen
+// JSON-LD: OfferCatalog met indicatieve prijzen
   const offerCatalog = {
     "@context": "https://schema.org",
     "@type": "OfferCatalog",
@@ -256,6 +264,17 @@ export default function Page() {
                     </div>
                   ))}
                 </dl>
+                <div className="mt-4 rounded-xl border border-dashed border-teal-200 bg-white/60 p-4">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">Persoonlijke levering (EV)</p>
+                  <div className="mt-2 grid gap-2 sm:grid-cols-2">
+                    {deliveryZones.map((z) => (
+                      <div key={z.k} className="rounded-lg border border-white/60 bg-white/80 p-3 shadow-sm">
+                        <div className="text-sm font-semibold text-slate-800">{z.k}</div>
+                        <div className="mt-1 text-sm text-slate-700">{z.v}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </GlassCard>
             </Reveal>
 

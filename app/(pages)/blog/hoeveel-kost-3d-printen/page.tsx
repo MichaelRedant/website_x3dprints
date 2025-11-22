@@ -60,30 +60,6 @@ const costFactors = [
 ]
 
 
-const scenarios = [
-  {
-    name: "Small prototype",
-    specs: "PLA Matte, 5 x 5 x 5 cm, 0.2 mm layer",
-    weight: "35 g",
-    time: "1.2 h",
-    estimate: "EUR 18 - 25",
-  },
-  {
-    name: "Medium behuizing",
-    specs: "PLA Tough+, 12 x 9 x 6 cm, 0.2 mm layer",
-    weight: "140 g",
-    time: "4 h",
-    estimate: "EUR 55 - 75",
-  },
-  {
-    name: "Functioneel PETG deel",
-    specs: "PETG, 18 x 12 x 4 cm, 0.24 mm layer",
-    weight: "220 g",
-    time: "5.5 h",
-    estimate: "EUR 80 - 110",
-  },
-]
-
 const faq = [
   {
     q: "Hoe snel krijg ik een exacte offerte?",
@@ -292,7 +268,7 @@ export default function BlogCostPage() {
                 <ul className="mt-4 space-y-2 text-sm text-slate-600">
                   <li>Voeg STL/STEP toe en vermeld of prototypes nog aangepast mogen worden.</li>
                   <li>Geef gewenste materiaal, kleur en afwerking mee (bijvoorbeeld PLA Matte wit, gezandstraald).</li>
-                  <li>Noteer deadline en leveroptie: afhalen, Bpost of persoonlijke levering.</li>
+                  <li>Noteer deadline en leveroptie: afhalen, persoonlijke levering (EV, zones) of pakketdienst.</li>
                   <li>Bij functionele onderdelen: deel belastingsinfo of omgeving (temperatuur, UV, chemie).</li>
                 </ul>
               </GlassCard>

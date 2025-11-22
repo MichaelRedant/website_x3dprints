@@ -1,15 +1,15 @@
 # 3D printen in Merksem: dichtbij Sportpaleis en havens
 
-Op zoek naar **3D printen in Merksem**? X3DPrints helpt bedrijven en makers rond het Sportpaleis, de Bredabaan en de noordelijke havenzones. We leveren snel prototypes, vervangstukken en displays met materiaalkeuze op maat.
+Op zoek naar **3D printen in Merksem**? X3DPrints helpt bedrijven en makers rond het Sportpaleis, de Bredabaan, Park Spoor Noord en de noordelijke havenzones. We leveren snel prototypes, vervangstukken en displays met materiaalkeuze op maat.
 
 ---
 
 ## Waarom X3DPrints voor Merksem?
 
-- ⚡ **Korte doorlooptijd**: vaak binnen enkele werkdagen verzonden naar Merksem.
-- 🎯 **Nauwkeurige pasvorm**: ideaal voor onderdelen die in bestaande installaties moeten klikken.
-- 🧪 **Materiaaladvies**: PLA Matte voor zichtwerk, PETG voor robuuste toepassingen, TPU voor flexibele of schokdempende onderdelen.
-- 🤝 **Transparant**: duidelijke offertes en updates.
+- Korte doorlooptijd: vaak binnen enkele werkdagen verzonden naar Merksem.
+- Nauwkeurige pasvorm: ideaal voor onderdelen die in bestaande installaties moeten klikken.
+- Materiaaladvies: PLA Matte voor zichtwerk, PETG voor robuuste toepassingen, TPU voor flexibele of schokdempende onderdelen.
+- Transparant: duidelijke offertes en updates.
 
 **Lokale touch:** of het nu een display is voor een event in het Sportpaleis, een behuizing voor sensoren langs de haven of een custom jig voor een werkplaats aan de Bredabaan: we stemmen de print af op je gebruik.
 
@@ -19,17 +19,17 @@ Op zoek naar **3D printen in Merksem**? X3DPrints helpt bedrijven en makers rond
 
 | Materiaal     | Pluspunt                     | Ideaal voor |
 | :------------ | :-------------------------- | :---------- |
-| **PLA Matte** | Strak detail, veel kleuren  | Maquettes en presentaties |
-| **PETG**      | Stevig en temperatuurvast   | Functionele onderdelen voor machines of logistiek |
+| **PLA Matte** | Strak detail, veel kleuren  | Maquettes en presentaties in Ridderhal of buurtcentrum |
+| **PETG**      | Stevig en temperatuurvast   | Functionele onderdelen voor machines of logistiek langs de Groenendaallaan |
 | **TPU**       | Flexibel en slijtvast       | Beschermhoezen, dempers of kabelklemmen |
 
 ---
 
 ## Toepassingen in Merksem
 
-- 🎶 **Events**: props en displays voor Sportpaleis of Lotto Arena.
-- 🏭 **Industrie & logistiek**: vervangstukken en hulpmiddelen langs de haven.
-- 🛠 **Makers & repair**: custom mounts of adapters voor ateliers.
+- Events: props en displays voor Sportpaleis of Lotto Arena.
+- Industrie en logistiek: vervangstukken en hulpmiddelen langs de haven.
+- Makers en repair: custom mounts of adapters voor ateliers rond Lambrechtshoeken.
 
 ---
 

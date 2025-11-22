@@ -229,6 +229,97 @@ export const locations: Location[] = [
       "3D printing in Kapellen met snelle offertes voor ondernemers rond de Essenhoutstraat en KMO-zone Bosduin. Materialen PLA, PETG en TPU.",
   },
   {
+    slug: "3d-printen-in-mechelen",
+    city: "Mechelen",
+    relatedPhrases: [
+      "3D print service Mechelen",
+      "rapid prototyping Mechelen",
+      "3D printing bedrijf Mechelen",
+      "3D printen nabij Nekkerhal",
+      "3D model laten printen Mechelen",
+    ],
+    metaDescription:
+      "3D printen in Mechelen voor teams rond Grote Markt, Nekkerhal en Kazerne Dossin. Snelle levering van PLA, PETG en TPU prototypes.",
+  },
+  {
+    slug: "3d-printen-in-heffen",
+    city: "Heffen",
+    relatedPhrases: [
+      "3D print service Heffen",
+      "rapid prototyping Heffen",
+      "3D printing bedrijf Heffen",
+      "3D printen nabij Heffen",
+      "3D model laten printen Heffen",
+    ],
+    metaDescription:
+      "Professionele 3D prints in Heffen, dicht bij het Zennegat en jachthaven. Prototypes en onderdelen in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-hombeek",
+    city: "Hombeek",
+    relatedPhrases: [
+      "3D print service Hombeek",
+      "rapid prototyping Hombeek",
+      "3D printing bedrijf Hombeek",
+      "3D printen nabij Hombeek",
+      "3D model laten printen Hombeek",
+    ],
+    metaDescription:
+      "3D printing in Hombeek vlak bij Leuven-Dijle kanaal en Mechelen-Noord. Snelle prototypes en kleine series in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-leest",
+    city: "Leest",
+    relatedPhrases: [
+      "3D print service Leest",
+      "rapid prototyping Leest",
+      "3D printing bedrijf Leest",
+      "3D printen nabij Leest",
+      "3D model laten printen Leest",
+    ],
+    metaDescription:
+      "3D printen in Leest tussen Zenne en kleiputten. Snelle levering van prototypes en onderdelen op maat.",
+  },
+  {
+    slug: "3d-printen-in-muizen",
+    city: "Muizen",
+    relatedPhrases: [
+      "3D print service Muizen",
+      "rapid prototyping Muizen",
+      "3D printing bedrijf Muizen",
+      "3D printen nabij Muizen",
+      "3D model laten printen Muizen",
+    ],
+    metaDescription:
+      "3D prints in Muizen, vlak bij Planckendael en Dijlevallei. Nette PLA, PETG of TPU onderdelen met snelle doorlooptijd.",
+  },
+  {
+    slug: "3d-printen-in-walem",
+    city: "Walem",
+    relatedPhrases: [
+      "3D print service Walem",
+      "rapid prototyping Walem",
+      "3D printing bedrijf Walem",
+      "3D printen nabij Walem",
+      "3D model laten printen Walem",
+    ],
+    metaDescription:
+      "3D print service in Walem nabij Fort van Walem en E19. Prototypes en kleine series op maat in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-brecht",
+    city: "Brecht",
+    relatedPhrases: [
+      "3D print service Brecht",
+      "rapid prototyping Brecht",
+      "3D printing bedrijf Brecht",
+      "3D printen nabij Brecht",
+      "3D model laten printen Brecht",
+    ],
+    metaDescription:
+      "3D print service in Brecht nabij E19 en station Noorderkempen. Prototypes en kleine series in PLA, PETG of TPU, snel geleverd in de Kempen.",
+  },
+  {
     slug: "3d-printen-in-schilde",
     city: "Schilde",
     relatedPhrases: [
@@ -454,6 +545,253 @@ export const locations: Location[] = [
     metaDescription: "Professionele 3D prints in Geraardsbergen voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
   },
   {
+    slug: "3d-printen-in-oosterzele",
+    city: "Oosterzele",
+    relatedPhrases: [
+      "3D print service Oosterzele",
+      "rapid prototyping Oosterzele",
+      "3D printing bedrijf Oosterzele",
+      "3D printen nabij Oosterzele",
+      "3D model laten printen Oosterzele",
+    ],
+    metaDescription:
+      "3D printen in Oosterzele en deelgemeenten. Snelle levering van PLA, PETG en TPU prototypes voor projecten rond Gondebeekvallei en Markt Oosterzele.",
+  },
+  {
+    slug: "3d-printen-in-balegem",
+    city: "Balegem",
+    relatedPhrases: [
+      "3D print service Balegem",
+      "rapid prototyping Balegem",
+      "3D printing bedrijf Balegem",
+      "3D printen nabij Balegem",
+      "3D model laten printen Balegem",
+    ],
+    metaDescription:
+      "3D print service in Balegem voor projecten rond de Balegemse molens en steenwegen. Prototypes en onderdelen in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-gijzenzele",
+    city: "Gijzenzele",
+    relatedPhrases: [
+      "3D print service Gijzenzele",
+      "rapid prototyping Gijzenzele",
+      "3D printing bedrijf Gijzenzele",
+      "3D printen nabij Gijzenzele",
+      "3D model laten printen Gijzenzele",
+    ],
+    metaDescription:
+      "3D prints in Gijzenzele nabij oorlogsmuseum en landelijke as Wetteren-Zottegem. Snelle levering van PLA, PETG of TPU onderdelen.",
+  },
+  {
+    slug: "3d-printen-in-landskouter",
+    city: "Landskouter",
+    relatedPhrases: [
+      "3D print service Landskouter",
+      "rapid prototyping Landskouter",
+      "3D printing bedrijf Landskouter",
+      "3D printen nabij Landskouter",
+      "3D model laten printen Landskouter",
+    ],
+    metaDescription:
+      "3D printen in Landskouter tussen Lemberge en Moortsele. Prototypes en kleine series in PLA, PETG of TPU met snelle doorlooptijd.",
+  },
+  {
+    slug: "3d-printen-in-moortsele",
+    city: "Moortsele",
+    relatedPhrases: [
+      "3D print service Moortsele",
+      "rapid prototyping Moortsele",
+      "3D printing bedrijf Moortsele",
+      "3D printen nabij Moortsele",
+      "3D model laten printen Moortsele",
+    ],
+    metaDescription:
+      "3D print service in Moortsele met focus op projecten rond Gondebeekvallei en spoorlijn. Snelle PLA, PETG en TPU leveringen.",
+  },
+  {
+    slug: "3d-printen-in-scheldewindeke",
+    city: "Scheldewindeke",
+    relatedPhrases: [
+      "3D print service Scheldewindeke",
+      "rapid prototyping Scheldewindeke",
+      "3D printing bedrijf Scheldewindeke",
+      "3D printen nabij Scheldewindeke",
+      "3D model laten printen Scheldewindeke",
+    ],
+    metaDescription:
+      "3D printen in Scheldewindeke richting station, Driesplein en Molenhoek. Prototypes en onderdelen in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-onkerzele",
+    city: "Onkerzele",
+    relatedPhrases: [
+      "3D print service Onkerzele",
+      "rapid prototyping Onkerzele",
+      "3D printing bedrijf Onkerzele",
+      "3D printen nabij Onkerzele",
+      "3D model laten printen Onkerzele",
+    ],
+    metaDescription:
+      "3D prints in Onkerzele nabij de Bosberg en Provinciaal Domein De Gavers. Snelle prototypes en kleine series in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-overboelare",
+    city: "Overboelare",
+    relatedPhrases: [
+      "3D print service Overboelare",
+      "rapid prototyping Overboelare",
+      "3D printing bedrijf Overboelare",
+      "3D printen nabij Overboelare",
+      "3D model laten printen Overboelare",
+    ],
+    metaDescription:
+      "3D printen in Overboelare langs de Dender en Boelarebos. Nette PLA, PETG en TPU onderdelen met snelle levering.",
+  },
+  {
+    slug: "3d-printen-in-nederboelare",
+    city: "Nederboelare",
+    relatedPhrases: [
+      "3D print service Nederboelare",
+      "rapid prototyping Nederboelare",
+      "3D printing bedrijf Nederboelare",
+      "3D printen nabij Nederboelare",
+      "3D model laten printen Nederboelare",
+    ],
+    metaDescription:
+      "3D prints in Nederboelare dichtbij de Muur en Abdijpark. Prototypes en functionele onderdelen op maat in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-ophasselt",
+    city: "Ophasselt",
+    relatedPhrases: [
+      "3D print service Ophasselt",
+      "rapid prototyping Ophasselt",
+      "3D printing bedrijf Ophasselt",
+      "3D printen nabij Ophasselt",
+      "3D model laten printen Ophasselt",
+    ],
+    metaDescription:
+      "3D printen in Ophasselt rond Ophasseltbos en N42. Snelle levering van sterke PLA, PETG of TPU onderdelen.",
+  },
+  {
+    slug: "3d-printen-in-schendelbeke",
+    city: "Schendelbeke",
+    relatedPhrases: [
+      "3D print service Schendelbeke",
+      "rapid prototyping Schendelbeke",
+      "3D printing bedrijf Schendelbeke",
+      "3D printen nabij Schendelbeke",
+      "3D model laten printen Schendelbeke",
+    ],
+    metaDescription:
+      "3D prints in Schendelbeke vlak bij station en Dendervallei. Prototypes en kleine series in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-zandbergen",
+    city: "Zandbergen",
+    relatedPhrases: [
+      "3D print service Zandbergen",
+      "rapid prototyping Zandbergen",
+      "3D printing bedrijf Zandbergen",
+      "3D printen nabij Zandbergen",
+      "3D model laten printen Zandbergen",
+    ],
+    metaDescription:
+      "3D print service in Zandbergen langs de Dender en station Zandbergen. Snelle levering in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-idegem",
+    city: "Idegem",
+    relatedPhrases: [
+      "3D print service Idegem",
+      "rapid prototyping Idegem",
+      "3D printing bedrijf Idegem",
+      "3D printen nabij Idegem",
+      "3D model laten printen Idegem",
+    ],
+    metaDescription:
+      "3D prints in Idegem dichtbij Dendermeersen en sluizen. Functionele onderdelen en maquettes in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-goeferdinge",
+    city: "Goeferdinge",
+    relatedPhrases: [
+      "3D print service Goeferdinge",
+      "rapid prototyping Goeferdinge",
+      "3D printing bedrijf Goeferdinge",
+      "3D printen nabij Goeferdinge",
+      "3D model laten printen Goeferdinge",
+    ],
+    metaDescription:
+      "3D printen in Goeferdinge met zicht op Raspaillebos en Dender. Snelle prototypes en series in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-grimminge",
+    city: "Grimminge",
+    relatedPhrases: [
+      "3D print service Grimminge",
+      "rapid prototyping Grimminge",
+      "3D printing bedrijf Grimminge",
+      "3D printen nabij Grimminge",
+      "3D model laten printen Grimminge",
+    ],
+    metaDescription:
+      "3D print service in Grimminge langs de Dender. Prototypes en hulpstukken in PLA, PETG of TPU met snelle doorlooptijd.",
+  },
+  {
+    slug: "3d-printen-in-waarbeke",
+    city: "Waarbeke",
+    relatedPhrases: [
+      "3D print service Waarbeke",
+      "rapid prototyping Waarbeke",
+      "3D printing bedrijf Waarbeke",
+      "3D printen nabij Waarbeke",
+      "3D model laten printen Waarbeke",
+    ],
+    metaDescription:
+      "3D prints in Waarbeke dichtbij Waarbekeveld en trage wegen. Nette PLA, PETG en TPU onderdelen voor lokale projecten.",
+  },
+  {
+    slug: "3d-printen-in-viane",
+    city: "Viane",
+    relatedPhrases: [
+      "3D print service Viane",
+      "rapid prototyping Viane",
+      "3D printing bedrijf Viane",
+      "3D printen nabij Viane",
+      "3D model laten printen Viane",
+    ],
+    metaDescription:
+      "3D printen in Viane rond kasteeldomein en Pajotse grens. Prototypes en kleine series in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-moerbeke-geraardsbergen",
+    city: "Moerbeke (Geraardsbergen)",
+    relatedPhrases: [
+      "3D print service Moerbeke",
+      "rapid prototyping Moerbeke",
+      "3D printing bedrijf Moerbeke",
+      "3D printen nabij Moerbeke Geraardsbergen",
+      "3D model laten printen Moerbeke",
+    ],
+    metaDescription:
+      "3D prints in Moerbeke-Geraardsbergen langs de Dender. Snelle levering van PLA, PETG of TPU onderdelen op maat.",
+  },
+  {
+    slug: "3d-printen-in-smeerebbe-vloerzegem",
+    city: "Smeerebbe-Vloerzegem",
+    relatedPhrases: [
+      "3D print service Smeerebbe-Vloerzegem",
+      "rapid prototyping Smeerebbe-Vloerzegem",
+      "3D printing bedrijf Smeerebbe-Vloerzegem",
+      "3D printen nabij Smeerebbe-Vloerzegem",
+      "3D model laten printen Smeerebbe-Vloerzegem",
+    ],
+    metaDescription:
+      "3D printen in Smeerebbe-Vloerzegem aan de rand van Raspaillebos. Prototypes en functionele onderdelen in PLA, PETG of TPU.",
+  },
+  {
     slug: "3d-printen-in-erpe-mere",
     city: "Erpe-mere",
     relatedPhrases: [
@@ -512,6 +850,45 @@ export const locations: Location[] = [
       "3D model laten printen affligem",
     ],
     metaDescription: "Professionele 3D prints in Affligem voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
+  },
+  {
+    slug: "3d-printen-in-essene",
+    city: "Essene",
+    relatedPhrases: [
+      "3D print service Essene",
+      "rapid prototyping Essene",
+      "3D printing bedrijf Essene",
+      "3D printen nabij Essene",
+      "3D model laten printen Essene",
+    ],
+    metaDescription:
+      "3D prints in Essene voor projecten rond dorpskern en hoptraditie. Snelle levering in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-hekelgem",
+    city: "Hekelgem",
+    relatedPhrases: [
+      "3D print service Hekelgem",
+      "rapid prototyping Hekelgem",
+      "3D printing bedrijf Hekelgem",
+      "3D printen nabij Hekelgem",
+      "3D model laten printen Hekelgem",
+    ],
+    metaDescription:
+      "3D printservice in Hekelgem met focus op lokale kmo's en projecten rond Molenbeekvallei. PLA, PETG en TPU met duidelijke offertes.",
+  },
+  {
+    slug: "3d-printen-in-teralfene",
+    city: "Teralfene",
+    relatedPhrases: [
+      "3D print service Teralfene",
+      "rapid prototyping Teralfene",
+      "3D printing bedrijf Teralfene",
+      "3D printen nabij Teralfene",
+      "3D model laten printen Teralfene",
+    ],
+    metaDescription:
+      "3D printen in Teralfene voor dorpskern en kermis-projecten. Snelle levering van prototypes en onderdelen in PLA, PETG of TPU.",
   },
   {
     slug: "3d-printen-in-dendermonde",
@@ -610,6 +987,97 @@ export const locations: Location[] = [
     metaDescription: "Professionele 3D prints in Brakel voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
   },
   {
+    slug: "3d-printen-in-michelbeke",
+    city: "Michelbeke",
+    relatedPhrases: [
+      "3D print service Michelbeke",
+      "rapid prototyping Michelbeke",
+      "3D printing bedrijf Michelbeke",
+      "3D printen nabij Michelbeke",
+      "3D model laten printen Michelbeke",
+    ],
+    metaDescription:
+      "3D printen in Michelbeke met focus op Valkenberg en omliggende ateliers. Snelle levering in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-parike",
+    city: "Parike",
+    relatedPhrases: [
+      "3D print service Parike",
+      "rapid prototyping Parike",
+      "3D printing bedrijf Parike",
+      "3D printen nabij Parike",
+      "3D model laten printen Parike",
+    ],
+    metaDescription:
+      "3D prints in Parike met oog op Parikevijver en molen. Prototypes en onderdelen in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-opbrakel",
+    city: "Opbrakel",
+    relatedPhrases: [
+      "3D print service Opbrakel",
+      "rapid prototyping Opbrakel",
+      "3D printing bedrijf Opbrakel",
+      "3D printen nabij Opbrakel",
+      "3D model laten printen Opbrakel",
+    ],
+    metaDescription:
+      "3D printen in Opbrakel voor projecten rond Brakelbos en Valkenberg. Stevige PLA, PETG en TPU leveringen.",
+  },
+  {
+    slug: "3d-printen-in-zegelsem",
+    city: "Zegelsem",
+    relatedPhrases: [
+      "3D print service Zegelsem",
+      "rapid prototyping Zegelsem",
+      "3D printing bedrijf Zegelsem",
+      "3D printen nabij Zegelsem",
+      "3D model laten printen Zegelsem",
+    ],
+    metaDescription:
+      "3D print service in Zegelsem, bekend als stilste dorp. Snelle prototypes en kleine series in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-elst",
+    city: "Elst",
+    relatedPhrases: [
+      "3D print service Elst",
+      "rapid prototyping Elst",
+      "3D printing bedrijf Elst",
+      "3D printen nabij Elst",
+      "3D model laten printen Elst",
+    ],
+    metaDescription:
+      "3D printing in Elst bij Geuzenhoek en Zwalmvallei. Prototypes en functionele onderdelen in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-everbeek",
+    city: "Everbeek",
+    relatedPhrases: [
+      "3D print service Everbeek",
+      "rapid prototyping Everbeek",
+      "3D printing bedrijf Everbeek",
+      "3D printen nabij Everbeek",
+      "3D model laten printen Everbeek",
+    ],
+    metaDescription:
+      "3D prints in Everbeek-Beneden en Everbeek-Boven met focus op Brakelbos. Stevige onderdelen in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-nederbrakel",
+    city: "Nederbrakel",
+    relatedPhrases: [
+      "3D print service Nederbrakel",
+      "rapid prototyping Nederbrakel",
+      "3D printing bedrijf Nederbrakel",
+      "3D printen nabij Nederbrakel",
+      "3D model laten printen Nederbrakel",
+    ],
+    metaDescription:
+      "3D printen in Nederbrakel met centrale ligging voor Brakel centrum en omliggende deelgemeenten. Snelle levering in PLA, PETG of TPU.",
+  },
+  {
     slug: "3d-printen-in-gent",
     city: "Gent",
     relatedPhrases: [
@@ -620,6 +1088,19 @@ export const locations: Location[] = [
       "3D model laten printen gent",
     ],
     metaDescription: "Professionele 3D prints in Gent voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
+  },
+  {
+    slug: "3d-printen-in-deinze",
+    city: "Deinze",
+    relatedPhrases: [
+      "3D print service Deinze",
+      "rapid prototyping Deinze",
+      "3D printing bedrijf Deinze",
+      "3D printen nabij Deinze",
+      "3D model laten printen Deinze",
+    ],
+    metaDescription:
+      "Professionele 3D prints in Deinze langs de Leie en De Prijkels. Snelle levering van prototypes en kleine series in PLA, PETG of TPU.",
   },
   {
     slug: "3d-printen-in-erwetegem",
@@ -1196,6 +1677,123 @@ export const locations: Location[] = [
       "3D model laten printen zwijnaarde",
     ],
     metaDescription: "Professionele 3D prints in Zwijnaarde voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
+  },
+  {
+    slug: "3d-printen-in-asse",
+    city: "Asse",
+    relatedPhrases: [
+      "3D print service Asse",
+      "rapid prototyping Asse",
+      "3D printing bedrijf Asse",
+      "3D printen nabij Asse",
+      "3D model laten printen Asse",
+    ],
+    metaDescription:
+      "3D printen in Asse voor bedrijven rond de Markt, industriezone Mollem en stationsomgeving. Snelle levering van PLA, PETG en TPU.",
+  },
+  {
+    slug: "3d-printen-in-zellik",
+    city: "Zellik",
+    relatedPhrases: [
+      "3D print service Zellik",
+      "rapid prototyping Zellik",
+      "3D printing bedrijf Zellik",
+      "3D printen nabij Zellik",
+      "3D model laten printen Zellik",
+    ],
+    metaDescription:
+      "3D prints in Zellik voor bedrijven langs E40/R0 en bedrijventerrein Researchpark. PLA, PETG en TPU met snelle offerte.",
+  },
+  {
+    slug: "3d-printen-in-mollem",
+    city: "Mollem",
+    relatedPhrases: [
+      "3D print service Mollem",
+      "rapid prototyping Mollem",
+      "3D printing bedrijf Mollem",
+      "3D printen nabij Mollem",
+      "3D model laten printen Mollem",
+    ],
+    metaDescription:
+      "3D printservice in Mollem met focus op KMO-zones en projecten rond Warandepark. Snelle levering in PLA, PETG of TPU.",
+  },
+  {
+    slug: "3d-printen-in-kobbegem",
+    city: "Kobbegem",
+    relatedPhrases: [
+      "3D print service Kobbegem",
+      "rapid prototyping Kobbegem",
+      "3D printing bedrijf Kobbegem",
+      "3D printen nabij Kobbegem",
+      "3D model laten printen Kobbegem",
+    ],
+    metaDescription:
+      "3D prints in Kobbegem, bekend van de brouwerijsite. PLA, PETG en TPU voor prototypes, vervangstukken en displays.",
+  },
+  {
+    slug: "3d-printen-in-relegem",
+    city: "Relegem",
+    relatedPhrases: [
+      "3D print service Relegem",
+      "rapid prototyping Relegem",
+      "3D printing bedrijf Relegem",
+      "3D printen nabij Relegem",
+      "3D model laten printen Relegem",
+    ],
+    metaDescription:
+      "3D printing in Relegem met leveringen richting R0 en landbouwbedrijven. PLA, PETG of TPU met duidelijke prijzen.",
+  },
+  {
+    slug: "3d-printen-in-bekkerzeel",
+    city: "Bekkerzeel",
+    relatedPhrases: [
+      "3D print service Bekkerzeel",
+      "rapid prototyping Bekkerzeel",
+      "3D printing bedrijf Bekkerzeel",
+      "3D printen nabij Bekkerzeel",
+      "3D model laten printen Bekkerzeel",
+    ],
+    metaDescription:
+      "3D prints in Bekkerzeel voor projecten langs de R0 en lokale KMO zones. PLA, PETG en TPU met korte doorlooptijd.",
+  },
+  {
+    slug: "3d-printen-in-ternat",
+    city: "Ternat",
+    relatedPhrases: [
+      "3D print service Ternat",
+      "rapid prototyping Ternat",
+      "3D printing bedrijf Ternat",
+      "3D printen nabij Ternat",
+      "3D model laten printen Ternat",
+    ],
+    metaDescription:
+      "3D printen in Ternat voor projecten rond station, industriezone en Kasteel Kruikenburg. Snelle levering van PLA, PETG en TPU.",
+  },
+  {
+    slug: "3d-printen-in-sint-katherina-lombeek",
+    city: "Sint-Katherina-Lombeek",
+    relatedPhrases: [
+      "3D print service Sint-Katherina-Lombeek",
+      "rapid prototyping Sint-Katherina-Lombeek",
+      "3D printing bedrijf Sint-Katherina-Lombeek",
+      "3D printen nabij Sint-Katherina-Lombeek",
+      "3D model laten printen Sint-Katherina-Lombeek",
+    ],
+    metaDescription:
+      "3D prints in Sint-Katherina-Lombeek voor lokale bedrijven en makers. Levering in PLA, PETG of TPU met duidelijke prijzen.",
+  },
+  {
+    slug: "3d-printen-in-wambeek",
+    city: "Wambeek",
+    relatedPhrases: [
+      "3D print service Wambeek",
+      "rapid prototyping Wambeek",
+      "3D printing bedrijf Wambeek",
+      "3D printen nabij Wambeek",
+      "3D model laten printen Wambeek",
+    ],
+    metaDescription:
+      "3D printservice in Wambeek nabij landelijke assen en lokale kmo’s. Snelle levering in PLA, PETG en TPU.",
   },
 ];
 // --- HELPERS -------------------------------------------------

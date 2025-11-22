@@ -1,17 +1,17 @@
 # 3D printen in Berendrecht, Zandvliet en Lillo: klaar voor de haven
 
-Werk je in de polders of aan de Antwerpse haven en zoek je een betrouwbare partner voor **3D printen in Berendrecht-Zandvliet-Lillo**? X3DPrints levert stevige onderdelen en prototypes voor teams in de buurt van BASF, het Havencentrum of de historische dorpskern van Lillo. Reken op korte doorlooptijden en duidelijke communicatie.
+Werk je in de polders of aan de Antwerpse haven en zoek je een betrouwbare partner voor **3D printen in Berendrecht-Zandvliet-Lillo**? X3DPrints levert stevige onderdelen en prototypes voor teams in de buurt van BASF, het Havencentrum, de Kieldrechtsluis of de historische dorpskern van Lillo. Reken op korte doorlooptijden en duidelijke communicatie.
 
 ---
 
 ## Waarom X3DPrints voor BZL?
 
-- ⚙️ **Functionele sterkte**: PETG en TPU voor onderdelen die tegen een stootje kunnen in werkplaatsen of op kades.
-- ⏱️ **Snelle levering**: vaak binnen enkele werkdagen verzonden richting Noorderlaan of Scheldelaan.
-- 🧭 **Projectbegeleiding**: advies over oriëntatie en laaghoogte zodat onderdelen passen in bestaande installaties.
-- 🤝 **Heldere prijzen**: transparant over kost en lead time, zonder verrassingen.
+- Functionele sterkte: PETG en TPU voor onderdelen die tegen een stootje kunnen in werkplaatsen of op kades.
+- Snelle levering: vaak binnen enkele werkdagen verzonden richting Noorderlaan of Scheldelaan.
+- Projectbegeleiding: advies over orientatie en laaghoogte zodat onderdelen passen in bestaande installaties.
+- Heldere prijzen: transparant over kost en lead time, zonder verrassingen.
 
-**Lokale touch:** we kennen de mix van zware industrie en dorpsgevoel rond het Fort van Lillo. Of je nu een bracket nodig hebt voor meetapparatuur, een behuizing voor sensoren of een schaalmodel voor het Havencentrum, we stemmen materiaal en afwerking af op de omgeving.
+**Lokale touch:** we kennen de mix van zware industrie en dorpsgevoel rond het Fort van Lillo. Of je nu een bracket nodig hebt voor meetapparatuur, een behuizing voor sensoren langs de Schelde of een schaalmodel voor het Havencentrum, we stemmen materiaal en afwerking af op de omgeving.
 
 ---
 
@@ -27,9 +27,9 @@ Werk je in de polders of aan de Antwerpse haven en zoek je een betrouwbare partn
 
 ## Toepassingen in BZL
 
-- 🏭 **Industrie & maintenance**: snelle vervangstukken voor installaties langs de Scheldelaan.
-- 📡 **Meet- en sensorteams**: custom behuizingen die buiten kunnen staan.
-- 🧑‍🏫 **Educatie & bezoekerscentra**: maquettes en interactieve onderdelen voor het Havencentrum of rondleidingen in Lillo.
+- Industrie en maintenance: snelle vervangstukken voor installaties langs de Scheldelaan en kades rond de sluizen.
+- Meet- en sensorteams: custom behuizingen die buiten kunnen staan zonder extra nabewerking.
+- Educatie en bezoekerscentra: maquettes en interactieve onderdelen voor het Havencentrum of rondleidingen in Lillo.
 
 ---
 

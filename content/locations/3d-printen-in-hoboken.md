@@ -1,17 +1,17 @@
 # 3D printen in Hoboken: tussen Schelde en Blue Gate Antwerp
 
-Heb je **3D printen in Hoboken** nodig voor prototypes, tools of displays? X3DPrints helpt teams in de buurt van Blue Gate Antwerp, de Schelde en de woonkernen van Hoboken. Reken op duidelijke prijzen, snelle levering en materiaaladvies op maat.
+Heb je **3D printen in Hoboken** nodig voor prototypes, tools of displays? X3DPrints helpt teams in de buurt van Blue Gate Antwerp, de Schelde en de Umicore-site. Reken op duidelijke prijzen, snelle levering en materiaaladvies op maat.
 
 ---
 
 ## Waarom X3DPrints?
 
-- ⚡ **Snel geleverd**: vaak binnen enkele werkdagen richting Hoboken.
-- 🎯 **Precisie**: strakke toleranties voor onderdelen die direct moeten passen.
-- 🌍 **Materiaalkeuze**: PLA Matte voor zichtwerk, PETG voor stevige toepassingen, TPU voor flexibele delen.
-- 🤝 **Duidelijke communicatie**: transparant over lead time en opties.
+- Snel geleverd: vaak binnen enkele werkdagen richting Hoboken.
+- Precisie: strakke toleranties voor onderdelen die direct moeten passen.
+- Materiaalkeuze: PLA Matte voor zichtwerk, PETG voor stevige toepassingen, TPU voor flexibele delen.
+- Duidelijke communicatie: transparant over lead time en opties.
 
-**Lokale touch:** of het nu gaat om een behuizing voor sensoren in de scheepswerf, een maquette voor een project aan de Schelde of een display voor een stand in Blue Gate Antwerp: we stemmen afwerking en materiaal op jouw gebruik.
+**Lokale touch:** of het nu gaat om een behuizing voor sensoren in de scheepswerf, een maquette voor een project aan de Schelde of een display voor een stand in Blue Gate, we stemmen afwerking en materiaal op jouw gebruik.
 
 ---
 
@@ -27,9 +27,9 @@ Heb je **3D printen in Hoboken** nodig voor prototypes, tools of displays? X3DPr
 
 ## Toepassingen in Hoboken
 
-- 🏭 **Industrie & scheepsbouw**: custom mounts en vervangstukken voor werkplaatsen.
-- 🌱 **Innovatie in Blue Gate**: prototypes voor cleantech en circulaire projecten.
-- 🏪 **Retail & events**: displays of branded gadgets voor lokale zaken.
+- Industrie en scheepsbouw: custom mounts en vervangstukken voor werkplaatsen langs de Schelde.
+- Innovatie in Blue Gate: prototypes voor cleantech en circulaire projecten.
+- Retail en events: displays of branded gadgets voor lokale zaken rond de Kioskplaats.
 
 ---
 

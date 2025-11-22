@@ -6,12 +6,12 @@ Voor **3D printen in Wilrijk** helpt X3DPrints bedrijven rond de UA-campus Drie 
 
 ## Waarom X3DPrints voor Wilrijk?
 
-- ⚡ **Snel geleverd**: vaak binnen enkele werkdagen richting Wilrijk.
-- 🎯 **Nauwkeurig**: perfecte pasvorm voor onderdelen in testopstellingen of producten.
-- 🌿 **Afwerking naar keuze**: PLA Matte voor zichtwerk, PETG voor stevige onderdelen, TPU voor flexibele of dempende stukken.
-- 🤝 **Heldere communicatie**: transparante prijzen en updates tijdens productie.
+- Snel geleverd: vaak binnen enkele werkdagen richting Wilrijk.
+- Nauwkeurig: perfecte pasvorm voor onderdelen in testopstellingen of producten.
+- Afwerking naar keuze: PLA Matte voor zichtwerk, PETG voor stevige onderdelen, TPU voor flexibele of dempende stukken.
+- Heldere communicatie: transparante prijzen en updates tijdens productie.
 
-**Lokale touch:** denk aan een prototype voor een spin-off op Campus Drie Eiken, een maquette voor een project rond het Nachtegalenpark of een custom fixture voor een bedrijf langs de A12. We stemmen materiaal en oriëntatie af op je toepassing.
+**Lokale touch:** denk aan een prototype voor een spin-off op Campus Drie Eiken, een maquette voor een project rond het Nachtegalenpark of een custom fixture voor een bedrijf langs de A12 of in het industriepark Neerland. We stemmen materiaal en orientatie af op je toepassing.
 
 ---
 
@@ -19,17 +19,17 @@ Voor **3D printen in Wilrijk** helpt X3DPrints bedrijven rond de UA-campus Drie 
 
 | Materiaal     | Pluspunt                     | Ideaal voor |
 | :------------ | :-------------------------- | :---------- |
-| **PLA Matte** | Strakke look, veel kleuren  | Maquettes en presentaties |
-| **PETG**      | Sterk en temperatuurvast    | Functionele onderdelen voor labs of productie |
+| **PLA Matte** | Strakke look, veel kleuren  | Maquettes en presentaties voor projecten rond Middelheim en parkzones |
+| **PETG**      | Sterk en temperatuurvast    | Functionele onderdelen voor labs of productie aan de A12 |
 | **TPU**       | Flexibel en slijtvast       | Beschermhoezen, grips of dempers |
 
 ---
 
 ## Toepassingen in Wilrijk
 
-- 🎓 **Onderzoek & onderwijs**: prototypes voor universitaire labs.
-- 🏭 **Kmo's & productie**: custom tooling en vervangstukken.
-- 🌳 **Publieke projecten**: maquettes voor park- of mobiliteitsdossiers.
+- Onderzoek en onderwijs: prototypes voor universitaire labs of spin-offs.
+- Kmo's en productie: custom tooling en vervangstukken langs de Boomsesteenweg.
+- Publieke projecten: maquettes voor park- of mobiliteitsdossiers rond Middelheim en Nachtegalenpark.
 
 ---
 

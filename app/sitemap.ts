@@ -42,6 +42,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "bestanden-voor-3d-printen",
     "hoe-lang-duurt-3d-printen",
     "3d-printing-marketing-events",
+    "3d-printen-mini-figuren",
+    "3d-printen-herfst-halloween",
+    "3d-printen-lente-pasen",
+    "3d-printen-zomer",
+    "3d-printen-winter-kerst-nieuwjaar",
   ]
 
   const segmentSlugs = [
@@ -51,6 +56,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "3d-printing-engineers",
     "3d-printing-marketing",
     "3d-printing-makers",
+    "3d-printing-tabletop",
+    "3d-printing-seasonal",
   ]
 
   const blogRoutes = blogPostSlugs.map((slug) => ({
