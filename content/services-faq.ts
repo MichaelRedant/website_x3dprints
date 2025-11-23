@@ -5,7 +5,7 @@ export const servicesFaq = [
   },
   {
     q: "Welke materialen gebruiken jullie voor 3D printen?",
-    a: "Wij printen standaard in PLA, PETG en TPU, elk met eigen eigenschappen. PLA is detailrijk, PETG is sterker en hittebestendig, TPU is flexibel.",
+    a: `X3DPrints print standaard in PLA, PETG en TPU. PLA is detailrijk, PETG is sterker en hittebestendig, TPU is flexibel. Zie <a href="/materials">/materials</a> voor kleuren en richtlijnen.`,
   },
   {
     q: "Kan ik een bestand aanleveren voor 3D printen?",
@@ -17,11 +17,11 @@ export const servicesFaq = [
   },
   {
     q: "Hoe snel kan ik mijn 3D print ontvangen?",
-    a: "Onze standaard levertijd is 2–5 werkdagen, afhankelijk van complexiteit en oplage. Spoed is mogelijk op aanvraag.",
+    a: `Onze standaard levertijd bij X3DPrints is 2-5 werkdagen vanuit Herzele (Oost-Vlaanderen), afhankelijk van complexiteit en oplage. Spoed is mogelijk op aanvraag via <a href="/contact">/contact</a>.`,
   },
   {
     q: "Wat kost 3D printen?",
-    a: "De prijs hangt af van materiaal, printtijd, basis nabewerking en aantal stuks. Wij werken met een transparante prijsberekening.",
+    a: `Prijs = materiaal + printtijd + basis nabewerking + oplage. Gebruik de prijscalculator en price estimator op <a href="/pricing">/pricing</a> voor een richtprijs; X3DPrints bevestigt na modelcontrole.`,
   },
   {
     q: "Kan ik meerdere stuks tegelijk laten printen?",
@@ -41,15 +41,15 @@ export const servicesFaq = [
   },
   {
     q: "Voor welke sectoren is 3D printen interessant?",
-    a: "3D printen is nuttig voor ondernemers, kmo’s, onderwijs, architectuur, productontwikkeling, hobbyisten en verenigingen.",
+    a: "3D printen is nuttig voor ondernemers, kmo's, onderwijs, architectuur, productontwikkeling, hobbyisten en verenigingen.",
   },
   {
     q: "Hoe lever ik mijn 3D model het best aan?",
-    a: "Gebruik bij voorkeur .STL of .STEP, voeg notities toe over sterkte, afwerking en aantallen.",
+    a: `Gebruik bij voorkeur .STL of .STEP, voeg notities toe over sterkte, afwerking en aantallen. Check je bestand vooraf in de <a href="/viewer">viewer</a> van X3DPrints.`,
   },
   {
     q: "Wat als mijn bestand niet correct is?",
-    a: "Wij controleren je bestand en geven advies of kleine correcties doorvoeren zodat het printbaar is.",
+    a: "X3DPrints controleert je bestand en geeft advies of voert kleine correcties door zodat het printbaar is.",
   },
   {
     q: "Kan ik een 3D print laten maken zonder ontwerp?",
@@ -77,11 +77,11 @@ export const servicesFaq = [
   },
   {
     q: "Hoe vraag ik een offerte aan voor 3D printen?",
-    a: "Upload je bestand via de contactpagina of mail ons. Je ontvangt binnen 24 uur een duidelijke prijsindicatie.",
+    a: `Upload je bestand via de <a href="/contact">contactpagina</a> van X3DPrints. Je ontvangt binnen 24 uur een duidelijke prijsindicatie.`,
   },
   {
     q: "Welke regio leveren jullie?",
-    a: "Herzele/Gent als uitvalsbasis. Verzenden binnen België of afhalen in overleg.",
+    a: `X3DPrints levert vanuit Herzele/Gent; we verzenden binnen Belgie of je haalt af in overleg. Zie lokale pagina's onder <a href="/locaties">/locaties</a>.`,
   },
   {
     q: "Hoe snel krijg ik een offerte?",

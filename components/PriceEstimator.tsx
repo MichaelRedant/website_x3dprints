@@ -1,104 +1,140 @@
-"use client";
+"use client"
 
-import { useMemo, useState } from "react";
-import { MATERIALS } from "@/lib/materials";
+import Link from "next/link"
+import { useEffect, useMemo, useState } from "react"
+import { MATERIALS } from "@/lib/materials"
 import {
   GRAMS_PER_TIER,
-  calcUnitPrice,
-  type Tier,
+  PRINT_TIME_HOURS_PER_TIER,
+  calculatePrintJob,
   type Quality,
-} from "@/lib/pricing";
+  type Tier,
+} from "@/lib/pricing"
 
-/* ========= Types ========= */
-
-
-type MaterialKey = keyof typeof MATERIALS;
-type ColorKey = string;
-
-
-/* ========= Helpers ========= */
+type MaterialKey = keyof typeof MATERIALS
 
 function safeMaterialKey(key: string): MaterialKey {
   return (Object.prototype.hasOwnProperty.call(MATERIALS, key)
     ? key
-    : "PLA_MATTE") as MaterialKey;
+    : "PLA_MATTE") as MaterialKey
 }
 
-function getColorsForMaterial(material: MaterialKey): Array<{
-  key: ColorKey;
-  label: string;
-  inStock?: boolean;
-  hex?: string;
-}> {
-  const entry = MATERIALS[material];
-  return entry.swatches.map((s, i) => ({
-    key: s.label ?? String(i),
-    label: s.label ?? String(i),
-    inStock: s.inStock,
-    hex: s.color,
-  }));
+const euro = new Intl.NumberFormat("nl-BE", {
+  style: "currency",
+  currency: "EUR",
+  minimumFractionDigits: 2,
+})
+
+const SIZE_CM_PER_TIER: Record<Tier, number> = {
+  Small: 5,
+  Medium: 10,
+  Large: 20,
 }
 
-function formatCurrency(n: number): string {
-  return `€ ${n.toFixed(2).replace(".00", "")}`;
+const PRESET_POINTS = [
+  { size: 5, weight: 50, hours: 2 },
+  { size: 10, weight: 200, hours: 6.5 },
+  { size: 20, weight: 500, hours: 15 },
+]
+
+function interpolateHours(value: number, points: Array<{ x: number; y: number }>): number {
+  const sorted = [...points].sort((a, b) => a.x - b.x)
+  if (value <= sorted[0].x) return sorted[0].y * (value / Math.max(sorted[0].x, 1))
+  for (let i = 0; i < sorted.length - 1; i++) {
+    const a = sorted[i]
+    const b = sorted[i + 1]
+    if (value <= b.x) {
+      const t = (value - a.x) / Math.max(b.x - a.x, 1)
+      return a.y + (b.y - a.y) * t
+    }
+  }
+  const last = sorted[sorted.length - 1]
+  const prev = sorted[sorted.length - 2]
+  const slope = (last.y - prev.y) / Math.max(last.x - prev.x, 1)
+  return last.y + (value - last.x) * slope
 }
 
-/* ========= Component ========= */
+function estimatePrintHours(weightGrams: number, sizeCm: number): number {
+  const hoursFromWeight = interpolateHours(weightGrams, PRESET_POINTS.map((p) => ({ x: p.weight, y: p.hours })))
+  const hoursFromSize =
+    sizeCm > 0 ? interpolateHours(sizeCm, PRESET_POINTS.map((p) => ({ x: p.size, y: p.hours }))) : null
+  const blended = hoursFromSize ? (hoursFromWeight + hoursFromSize) / 2 : hoursFromWeight
+  return Math.max(0.5, blended)
+}
 
 export default function PriceEstimator() {
-  const defaultMaterial: MaterialKey = "PLA_MATTE";
-  const [tier, setTier] = useState<Tier>("Medium");
-  const [material, setMaterial] = useState<MaterialKey>(defaultMaterial);
-  const [quality, setQuality] = useState<Quality>("Standaard");
-  const [qty, setQty] = useState<number>(1);
-  const [color, setColor] = useState<ColorKey>(
-    MATERIALS[defaultMaterial].swatches[0].label,
-  );
+  const defaultMaterial: MaterialKey = "PLA_MATTE"
+  const [tier, setTier] = useState<Tier>("Medium")
+  const [material, setMaterial] = useState<MaterialKey>(defaultMaterial)
+  const [quality, setQuality] = useState<Quality>("Standaard")
+  const [qty, setQty] = useState<number>(1)
+  const [weight, setWeight] = useState<number>(GRAMS_PER_TIER[tier])
+  const [sizeCm, setSizeCm] = useState<number>(SIZE_CM_PER_TIER[tier])
+  const [printHours, setPrintHours] = useState<number>(
+    PRINT_TIME_HOURS_PER_TIER[tier],
+  )
 
-  // kleurenlijst op basis van materiaal
-  const colors = useMemo(() => getColorsForMaterial(material), [material]);
+  useEffect(() => {
+    setWeight(GRAMS_PER_TIER[tier])
+    setSizeCm(SIZE_CM_PER_TIER[tier])
+    setPrintHours(PRINT_TIME_HOURS_PER_TIER[tier])
+  }, [tier])
 
-  // als gekozen kleur niet bestaat voor huidig materiaal, forceer eerste kleur
-  const selectedColor = useMemo(() => {
-    const found = colors.find((c) => c.key === color) ?? colors[0];
-    return found;
-  }, [colors, color]);
+  useEffect(() => {
+    setPrintHours(estimatePrintHours(Math.max(1, weight), Math.max(1, sizeCm)))
+  }, [weight, sizeCm])
 
-  // prijs per stuk
-  const unitPrice = useMemo(
-    () => calcUnitPrice(tier, material, quality),
-    [tier, material, quality],
-  );
+  const breakdown = useMemo(
+    () =>
+      calculatePrintJob({
+        filamentWeightGrams: Math.max(1, weight),
+        printingTimeHours: Math.max(0.1, printHours),
+        material,
+        quality,
+        quantity: Math.max(1, qty),
+      }),
+    [weight, printHours, material, quality, qty],
+  )
 
-  const total = unitPrice * Math.max(1, qty);
+  const quoteSummary = useMemo(() => {
+    const parts = [
+      `Per stuk: EUR ${breakdown.pricePerPrintEur.toFixed(2)}`,
+      `Totaal (${breakdown.input.quantity} st): EUR ${breakdown.totalEur.toFixed(2)}`,
+      `Formaat: ~${sizeCm} cm langste zijde · Gewicht: ~${weight} g`,
+      `Materiaal: ${materialLabel(material)} · Kwaliteit: ${quality}`,
+    ]
+    return parts.join(" | ")
+  }, [breakdown.pricePerPrintEur, breakdown.totalEur, breakdown.input.quantity, sizeCm, weight, material, quality])
+
+  const contactHref = useMemo(
+    () =>
+      `/contact?material=${encodeURIComponent(materialLabel(material))}&quote=${encodeURIComponent(quoteSummary)}`,
+    [material, quoteSummary],
+  )
 
   return (
     <div className="rounded-3xl border border-slate-200/70 bg-white/80 p-6 shadow-sm backdrop-blur">
       <h3 className="text-lg font-semibold text-slate-900">Snelle prijsinschatting</h3>
       <p className="mt-1 text-sm text-slate-600">
-
-        Indicatie op basis van filamentprijs,{" "}
-
-        ≈{GRAMS_PER_TIER[tier]}g). Definitieve prijs na modelcontrole.
+        Onze prijsschatting geeft je duidelijke vanafprijzen op basis van formaat, gewicht en materiaalverbruik.
+Vul het geschatte gewicht en de grootste afmeting in en je ziet meteen een realistische indicatie per stuk en voor de volledige oplage.
+De exacte prijs bevestigen we na een korte modelcontrole, zodat je altijd zeker bent van de juiste kost en kwaliteit.
       </p>
 
-      {/* controls */}
       <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {/* Formaat */}
         <div className="flex flex-col gap-1">
-          <label className="text-xs font-medium text-slate-500">Formaat</label>
+          <label className="text-xs font-medium text-slate-500">Formaat preset</label>
           <select
             className="h-11 rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none ring-0 focus:border-slate-300"
             value={tier}
             onChange={(e) => setTier(e.target.value as Tier)}
           >
-            <option value="Small">Small (≤ 5 cm · ≈{GRAMS_PER_TIER.Small}g)</option>
-            <option value="Medium">Medium (≤ 10 cm · ≈{GRAMS_PER_TIER.Medium}g)</option>
-            <option value="Large">Large (≤ 20 cm · ≈{GRAMS_PER_TIER.Large}g)</option>
+            <option value="Small">Small (~5 cm, {GRAMS_PER_TIER.Small}g)</option>
+            <option value="Medium">Medium (~10 cm, {GRAMS_PER_TIER.Medium}g)</option>
+            <option value="Large">Large (~20 cm, {GRAMS_PER_TIER.Large}g)</option>
           </select>
         </div>
 
-        {/* Materiaal */}
         <div className="flex flex-col gap-1">
           <label className="text-xs font-medium text-slate-500">Materiaal</label>
           <select
@@ -112,46 +148,11 @@ export default function PriceEstimator() {
               </option>
             ))}
           </select>
+          <span className="text-[11px] text-slate-500">
+            Droogbehandeling inbegrepen voor TPU/PLA Wood/PETG.
+          </span>
         </div>
 
-        {/* Kleur */}
-        <div className="flex flex-col gap-1">
-          <label className="text-xs font-medium text-slate-500">Kleur</label>
-          <div className="flex items-center gap-2">
-            <select
-              className="h-11 flex-1 rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none ring-0 focus:border-slate-300"
-              value={selectedColor?.key ?? ""}
-              onChange={(e) => setColor(e.target.value)}
-            >
-              {colors.map((c) => (
-                <option key={c.key} value={c.key}>
-                  {c.label}
-                </option>
-              ))}
-            </select>
-            <span
-              className="inline-block h-5 w-5 rounded-full border border-slate-200"
-              title={selectedColor?.label}
-              style={selectedColor?.hex ? { background: selectedColor.hex } : undefined}
-            />
-          </div>
-          {selectedColor && (
-            <span
-              className={`mt-1 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] ${
-                selectedColor.inStock ? "bg-emerald-50 text-emerald-700" : "bg-amber-50 text-amber-700"
-              }`}
-            >
-              <span
-                className={`h-1.5 w-1.5 rounded-full ${
-                  selectedColor.inStock ? "bg-emerald-500" : "bg-amber-500"
-                }`}
-              />
-              {selectedColor.inStock ? "Op voorraad" : "Op bestelling"}
-            </span>
-          )}
-        </div>
-
-        {/* Kwaliteit */}
         <div className="flex flex-col gap-1">
           <label className="text-xs font-medium text-slate-500">Kwaliteit</label>
           <select
@@ -159,14 +160,37 @@ export default function PriceEstimator() {
             value={quality}
             onChange={(e) => setQuality(e.target.value as Quality)}
           >
-            <option>Standaard</option>
-            <option>Fijn</option>
+            <option value="Standaard">Standaard</option>
+            <option value="Fijn">Fijn</option>
+            <option value="Ultra">Ultra</option>
           </select>
         </div>
 
-        {/* Aantal (laat op nieuwe rij op small), maar aligned dankzij auto-rows */}
         <div className="flex flex-col gap-1">
-          <label className="text-xs font-medium text-slate-500">Aantal</label>
+          <label className="text-xs font-medium text-slate-500">Gewicht per stuk (g)</label>
+          <input
+            type="number"
+            min={1}
+            className="h-11 rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none ring-0 focus:border-slate-300"
+            value={weight}
+            onChange={(e) => setWeight(Math.max(1, Number(e.target.value) || 1))}
+          />
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <label className="text-xs font-medium text-slate-500">Langste maat (cm)</label>
+          <input
+            type="number"
+            min={1}
+            step={0.5}
+            className="h-11 rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none ring-0 focus:border-slate-300"
+            value={sizeCm}
+            onChange={(e) => setSizeCm(Math.max(1, Number(e.target.value) || 1))}
+          />
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <label className="text-xs font-medium text-slate-500">Aantal stuks</label>
           <input
             type="number"
             min={1}
@@ -177,19 +201,42 @@ export default function PriceEstimator() {
         </div>
       </div>
 
-      {/* totals */}
       <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
         <div className="rounded-2xl border border-slate-200 bg-white p-4">
           <div className="text-xs uppercase tracking-wide text-slate-500">Indicatie per stuk</div>
-          <div className="mt-1 text-2xl font-semibold text-slate-900">{formatCurrency(unitPrice)}</div>
-          <div className="text-xs text-slate-500">Incl. gekozen materiaal/kwaliteit</div>
+          <div className="mt-1 text-2xl font-semibold text-slate-900">
+            {euro.format(breakdown.pricePerPrintEur)}
+          </div>
+          <div className="text-xs text-slate-500">
+            Incl. {materialLabel(material)} / {quality}
+          </div>
         </div>
         <div className="rounded-2xl border border-slate-200 bg-white p-4">
-          <div className="text-xs uppercase tracking-wide text-slate-500">Totaal (excl. verzending)</div>
-          <div className="mt-1 text-2xl font-semibold text-slate-900">{formatCurrency(total)}</div>
-          <div className="text-xs text-slate-500">Indicatief; exacte offerte na modelcontrole</div>
+          <div className="text-xs uppercase tracking-wide text-slate-500">Totaal (excl. levering)</div>
+          <div className="mt-1 text-2xl font-semibold text-slate-900">
+            {euro.format(breakdown.totalEur)}
+          </div>
+          <div className="text-xs text-slate-500">
+            Op basis van {breakdown.input.quantity} stuk(ken).
+          </div>
         </div>
       </div>
+
+      <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-center">
+        <Link
+          href={contactHref}
+          className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-emerald-700"
+        >
+          Verstuur deze inschatting
+        </Link>
+        <p className="text-xs text-slate-600">
+          Richtprijs excl. btw, ontwerpkosten en eventuele premium STL-bestanden. Finale voorstel na modelcontrole.
+        </p>
+      </div>
     </div>
-  );
+  )
+}
+
+function materialLabel(key: MaterialKey): string {
+  return MATERIALS[key]?.name ?? key
 }

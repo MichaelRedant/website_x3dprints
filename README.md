@@ -165,6 +165,7 @@ README.md
   - Segments hub genereert ItemList.
 - **Interne links:** elke hero koppelt naar `materials`, `materials#material-suggestion-tool`, `blog`, `segments`, `services`, `contact`.
 - **Tone of voice:** benadruk dat X3DPrints een éénmansstudio in bijberoep is (realistische planning, geen harde “2-5 dagen” belofte).
+- **LLM/ai.txt:** `public/llms.txt` wordt geserveerd op `/llms.txt` en staat vermeld in `app/robots.ts` zodat crawlers de merk- en contactrichtlijnen vinden.
 
 ---
 

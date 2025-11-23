@@ -32,7 +32,6 @@ import {
 } from "@/lib/seo"
 
 export const revalidate = 86_400 // 24h
-export const dynamicParams = false
 
 export function generateStaticParams(): Array<{ slug: string }> {
   return getAllLocationSlugs().map((slug) => ({ slug }))

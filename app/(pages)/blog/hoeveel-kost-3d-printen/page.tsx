@@ -209,10 +209,10 @@ export default function BlogCostPage() {
   </Link>
 </div>
 <p className="mt-3 text-sm text-slate-600">
-  Hieronder zie je drie veelvoorkomende categorieën die klanten gebruiken als snelle richtlijn voor de 
-  vraag <strong>&quot;hoeveel kost 3D printen&quot;</strong>. Ze zijn gebaseerd op PLA Matte met 
-  ongeveer 25% infill. De exacte prijs hangt af van je STL en bepaal je het snelst via onze 
-  <Link href="/pricing" className="font-semibold text-emerald-600 hover:text-emerald-700"> prijscalculator</Link>.
+  Hieronder zie je drie veelvoorkomende categorieën als sales-ready richtprijs, identiek aan de{" "}
+  <Link href="/pricing" className="font-semibold text-emerald-600 hover:text-emerald-700">prijspagina</Link>. Richtprijzen
+  op basis van PLA Matte, circa 25% infill en 200% marge (x3) op de basiskost. Exacte prijs volgt na STL-analyse in de{" "}
+  <Link href="/pricing" className="font-semibold text-emerald-600 hover:text-emerald-700">prijscalculator</Link>.
 </p>
 
 
@@ -220,30 +220,30 @@ export default function BlogCostPage() {
                 <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
                   <tbody className="divide-y divide-slate-100">
 
+  
   <tr>
     <td className="py-3 pr-4 font-semibold text-slate-900">Small</td>
-    <td className="py-3 pr-4">≤ 5 × 5 × 5 cm • PLA Matte (standaard) • ≈ 50 g</td>
-    <td className="py-3 pr-4">≈ 50 g</td>
-    <td className="py-3 pr-4">≈ 0.8–1.5 uur</td>
-    <td className="py-3 pr-4 font-medium text-slate-900">≈ €1.72 / stuk</td>
+    <td className="py-3 pr-4">ca. 5 x 5 x 5 cm - PLA Matte (standaard) - ~50 g</td>
+    <td className="py-3 pr-4">~50 g</td>
+    <td className="py-3 pr-4">~2 uur</td>
+    <td className="py-3 pr-4 font-medium text-slate-900">EUR 4.93 / stuk</td>
   </tr>
 
   <tr>
     <td className="py-3 pr-4 font-semibold text-slate-900">Medium</td>
-    <td className="py-3 pr-4">≤ 10 × 10 × 10 cm • PLA Matte (standaard) • ≈ 200 g</td>
-    <td className="py-3 pr-4">≈ 200 g</td>
-    <td className="py-3 pr-4">≈ 2–3.5 uur</td>
-    <td className="py-3 pr-4 font-medium text-slate-900">≈ €6.90 / stuk</td>
+    <td className="py-3 pr-4">ca. 10 x 10 x 10 cm - PLA Matte (standaard) - ~200 g</td>
+    <td className="py-3 pr-4">~200 g</td>
+    <td className="py-3 pr-4">~6.5 uur</td>
+    <td className="py-3 pr-4 font-medium text-slate-900">EUR 19.17 / stuk</td>
   </tr>
 
   <tr>
     <td className="py-3 pr-4 font-semibold text-slate-900">Large</td>
-    <td className="py-3 pr-4">≤ 20 × 20 × 20 cm • PLA Matte (standaard) • ≈ 500 g</td>
-    <td className="py-3 pr-4">≈ 500 g</td>
-    <td className="py-3 pr-4">≈ 4–7 uur</td>
-    <td className="py-3 pr-4 font-medium text-slate-900">≈ €17.24 / stuk</td>
+    <td className="py-3 pr-4">ca. 20 x 20 x 20 cm - PLA Matte (standaard) - ~500 g</td>
+    <td className="py-3 pr-4">~500 g</td>
+    <td className="py-3 pr-4">~15 uur</td>
+    <td className="py-3 pr-4 font-medium text-slate-900">EUR 47.48 / stuk</td>
   </tr>
-
 </tbody>
 
                 </table>

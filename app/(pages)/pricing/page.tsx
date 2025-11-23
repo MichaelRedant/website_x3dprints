@@ -32,17 +32,17 @@ export default function Page() {
   const tierDefs: Array<{ name: Tier; size: string; notes: string }> = [
     {
       name: "Small",
-      size: "≤ 5 × 5 × 5 cm",
+      size: "ca. 5 x 5 x 5 cm",
       notes: "Kleine onderdelen, clips, testgeometrie.",
     },
     {
       name: "Medium",
-      size: "≤ 10 × 10 × 10 cm",
+      size: "ca. 10 x 10 x 10 cm",
       notes: "Prototypes, kleine behuizingen, decor.",
     },
     {
       name: "Large",
-      size: "≤ 20 × 20 × 20 cm",
+      size: "ca. 20 x 20 x 20 cm",
       notes: "Grotere delen, brackets, jigs.",
     },
   ]
@@ -55,13 +55,13 @@ export default function Page() {
       base: "PLA Matte (standaard)",
       grams,
       price,
-      priceLabel: `≈ €${price} / stuk`,
+      priceLabel: `EUR ${price.toFixed(2)} / stuk`,
     }
   })
 
   // Opslagen (ten opzichte van PLA Matte)
   const materialMods = [
-    { label: "PLA+ / specials (Silk, Wood, Marble, Translucent…)", mod: "+20%" },
+    { label: "PLA+ / specials (Silk, Wood, Marble, Translucent)", mod: "+20%" },
     { label: "PETG (incl. droogbehandeling)", mod: "+20%" },
     { label: "TPU (incl. droogbehandeling)", mod: "+30%" },
   ]
@@ -74,9 +74,9 @@ export default function Page() {
   ]
 
   const deliveryZones = [
-    { k: "Zone 1 tot 25 km (EV)", v: "Standaard 48-72u: 25€, Spoed 24u (mits haalbaar): 35€" },
-    { k: "Zone 2  25-50 km (EV)", v: "Standaard: 45€  Spoed: 60€" },
-    { k: "Zone 3  50-75 km (EV)", v: "Standaard: 60€  Spoed: 80€" },
+    { k: "Zone 1 tot 25 km (EV)", v: "Standaard 48-72u: EUR 25, Spoed 24u (mits haalbaar): EUR 35" },
+    { k: "Zone 2  25-50 km (EV)", v: "Standaard: EUR 45  Spoed: EUR 60" },
+    { k: "Zone 3  50-75 km (EV)", v: "Standaard: EUR 60  Spoed: EUR 80" },
     { k: "Verder dan 75 km", v: "Maatwerkprijs of pakketdienst, in overleg" },
     { k: "Vertrekpunt", v: "Afstanden gerekend vanaf Herzele (heen en terug)" },
   ]
@@ -131,8 +131,10 @@ export default function Page() {
               Prijzen 3D printen
             </h1>
             <p className="mt-3 max-w-3xl text-slate-600">
-              Duidelijke indicatieve tarieven. **PLA Matte** is standaard. **PLA+ varianten**, **PETG** en **TPU** zijn
-              beschikbaar wanneer toepassing of look daarom vraagt. Droogbehandeling voor PETG/TPU is inbegrepen.
+              Sales-ready prijzen: kleine prints starten rond EUR 5, medium cases rond EUR 20 en grotere stukken rond
+              EUR 49. PLA Matte is standaard; PLA+ varianten, PETG en TPU zijn beschikbaar voor extra look
+              of performance. Droogbehandeling voor PETG/TPU is inbegrepen. Klaar om te bestellen? Vraag meteen je
+              offerte.
             </p>
             <div className="mt-6 flex gap-3">
               <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
@@ -170,18 +172,20 @@ export default function Page() {
                   <div className="mt-1 text-lg font-semibold text-slate-900">{t.priceLabel}</div>
                   <div className="mt-1 text-sm text-slate-700">{t.size}</div>
                   <div className="mt-1 text-sm text-slate-500">
-                    {t.base} · ≈{t.grams}g
+                    {t.base} - ~{t.grams}g
                   </div>
                   <p className="mt-3 text-sm text-slate-600">{t.notes}</p>
                 </GlassCard>
               </Reveal>
             ))}
           </div>
-            <p className="mt-4 text-xs text-slate-500">
-
-              Prijzen zijn indicatief let ±25% infill. Grotere, zwaardere modellen vergen meer materiaal en kosten dus meer. Exacte prijs via modelanalyse.
-
+          <div className="mt-4 space-y-1 text-xs text-slate-600">
+            <p>
+              Richtprijzen bij standaard kwaliteit: Small ~ EUR 5, Medium ~ EUR 20, Large ~ EUR 49. Grotere of zwaardere
+              modellen vergen meer materiaal en tijd.
             </p>
+            <p>Exacte prijs volgt na modelanalyse; we stemmen levering en afwerking af op jouw use-case.</p>
+          </div>
         </div>
       </section>
 
@@ -237,10 +241,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold tracking-tight text-slate-900">Snelle prijsinschatting</h2>
-              <p className="mt-2 text-sm text-slate-600">
-                Krijg een ruwe indicatie. Definitieve prijs volgt na modelcontrole. Finale prijs is afhankelijk van gewicht, grootte, kleur, afwerking en soort filament
-              </p>
+             
               <div className="mt-4">
                 <PriceEstimator />
               </div>

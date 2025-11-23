@@ -11,6 +11,7 @@ type FormDataShape = {
   message: string
   quantity: string
   material: string
+  quote: string
   hp: string // honeypot value (we mappen dit naar name="website")
 }
 
@@ -29,6 +30,7 @@ type ContactFormProps = {
 export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) {
   const searchParams = useSearchParams()
   const materialFromQuery = searchParams.get("material") || ""
+  const quoteFromQuery = searchParams.get("quote") || ""
   const decodedQueryMaterial = useMemo(() => {
     if (!materialFromQuery) return ""
     try {
@@ -37,15 +39,25 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
       return materialFromQuery
     }
   }, [materialFromQuery])
+  const decodedQuote = useMemo(() => {
+    if (!quoteFromQuery) return ""
+    try {
+      return decodeURIComponent(quoteFromQuery)
+    } catch {
+      return quoteFromQuery
+    }
+  }, [quoteFromQuery])
   const initialMaterial = decodedQueryMaterial || defaultMaterial
 
   const appliedDefaultRef = useRef(initialMaterial)
+  const appliedQuoteRef = useRef(decodedQuote)
   const [data, setData] = useState<FormDataShape>({
     name: "",
     email: "",
     message: "",
     quantity: "",
     material: initialMaterial,
+    quote: decodedQuote ? decodedQuote : "",
     hp: "",
   })
   const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">("idle")
@@ -67,6 +79,18 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
     appliedDefaultRef.current = nextDefault
   }, [decodedQueryMaterial, defaultMaterial])
 
+  useEffect(() => {
+    if (!decodedQuote) return
+    setData(prev => {
+      if (prev.quote && prev.quote !== appliedQuoteRef.current) return prev
+      return {
+        ...prev,
+        quote: decodedQuote,
+      }
+    })
+    appliedQuoteRef.current = decodedQuote
+  }, [decodedQuote])
+
   const emailValid = useMemo(() => /\S+@\S+\.\S+/.test(data.email), [data.email])
 
   async function onSubmit(e: React.FormEvent) {
@@ -86,6 +110,7 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
       // Optioneel: human-friendly extra velden naar PHP (zelfde handler voegt ze onderaan toe)
       if (data.quantity) form.append("quantity", data.quantity)
       if (data.material) form.append("material", data.material)
+      if (data.quote) form.append("quote", data.quote)
 
       const res = await fetch("/contact.php", { method: "POST", body: form })
       const result = await res.json().catch(() => null)
@@ -94,7 +119,7 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
       setStatus(ok ? "ok" : "error")
 
       if (ok) {
-        setData({ name: "", email: "", message: "", quantity: "", material: "", hp: "" })
+        setData({ name: "", email: "", message: "", quantity: "", material: "", quote: "", hp: "" })
       }
     } catch {
       setStatus("error")
@@ -102,8 +127,8 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
   }
 
   const materialOptions = [
-    ...Object.values(MATERIALS).map(m => m.name),
-    "Onzeker – graag advies",
+    ...Object.values(MATERIALS).map((m) => m.name),
+    "Onzeker, graag advies",
   ]
 
   return (
@@ -174,6 +199,26 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
           </div>
         </div>
       </section>
+
+      {/* Indicatieve schatting (readonly) */}
+      {data.quote ? (
+        <section className={groupCls} aria-labelledby="quote-legend">
+          <h3 id="quote-legend" className={headingCls}>
+            Indicatieve schatting (excl. btw, ontwerpkosten, premium STL)
+          </h3>
+          <p className="mt-2 text-xs text-slate-600">
+            Deze berekening komt uit de prijscalculator. Pas desnoods aan of laat staan voor context.
+          </p>
+          <div className="mt-3 grid gap-2">
+            <textarea
+              id="quote"
+              className={`${inputBase} min-h-[80px]`}
+              value={data.quote}
+              readOnly
+            />
+          </div>
+        </section>
+      ) : null}
 
       {/* Beschrijving */}
       <section className={groupCls} aria-labelledby="message-legend">
