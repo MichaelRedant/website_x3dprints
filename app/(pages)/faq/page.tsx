@@ -54,61 +54,147 @@ export default function Page() {
   // Extra FAQ-items (bovenop servicesFaq)
   const extraFaq = [
     {
-      q: "Leveren jullie diensten aan particulieren?",
-      a: "Zeker. Particulieren, verenigingen en bedrijven kunnen bij ons terecht.",
+      q: "Werken jullie met particulieren?",
+      a: "Ja. Particulieren, verenigingen, scholen en bedrijven kunnen terecht voor een stuk of kleine series. Start met een aanvraag via <a href=\"/contact\">/contact</a>.",
     },
     {
       q: "Waarom moet ik het aanvraagformulier invullen?",
-      a: "We verzamelen meteen de juiste info (materiaal, aantallen, afwerking) om snel een correcte offerte te maken.",
+      a: "We capteren materiaal, aantallen, afwerking en toepassing in een keer. Zo kunnen we snel een correcte offerte maken zonder heen-en-weer.",
     },
     {
       q: "Hoe verloopt een project van aanvraag tot levering?",
-      a: "Na je aanvraag toetsen we de haalbaarheid, sturen we een voorstel en starten we na akkoord met testprint of serieproductie.",
+      a: "We controleren je STL/STEP, sturen een voorstel, doen indien nodig een testprint en plannen productie. Je krijgt updates tot levering of afhaling in Herzele.",
     },
     {
-      q: "Helpen jullie bij het maken van een 3D model?",
-      a: "Ja. Met schetsen, foto's of een voorbeeld kunnen we een eenvoudig 3D ontwerp uitwerken.",
+      q: "Helpen jullie bij het maken van een 3D-model?",
+      a: "Ja. Op basis van schetsen, foto's of een referentiestuk maken we een printklaar 3D-model. Vraag dit aan via <a href=\"/contact\">/contact</a>.",
     },
     {
       q: "Kunnen jullie 3D-scannen?",
-      a: "Nee, maar we kunnen wel metingen en foto's gebruiken om een 3D model op te maken.",
+      a: "Nee, maar met duidelijke foto's, metingen of een fysiek voorbeeld kunnen we het model digitaliseren en voorbereiden op print.",
     },
     {
       q: "Wat is jullie gemiddelde reactietijd?",
-      a: "Meestal binnen een werkdag. Vermeld het als je project dringend is.",
+      a: "Meestal binnen een werkdag. Is het dringend? Vermeld je deadline, dan bekijken we spoedopties voor levering in Vlaanderen.",
     },
-    { q: "Wat betekent AM?", a: "Additive Manufacturing: onderdelen laag voor laag opbouwen vanuit een 3D model." },
-    { q: "Wat is FDM?", a: "Fused Deposition Modeling: gesmolten filament laag voor laag neerleggen." },
-    { q: "Wat is SLA?", a: "Stereolithografie: een UV-laser verhardt vloeibare hars tot zeer nauwkeurige onderdelen." },
-    { q: "Welke verzendopties zijn er?", a: "Afhalen op afspraak, laten leveren of verzending met BPost." },
-    { q: "Waar vind ik voorbeelden van projecten?", a: "Bekijk de selectie op de portfolio-pagina." },
+    { q: "Wat betekent AM?", a: "AM staat voor Additive Manufacturing: onderdelen laag voor laag opbouwen vanuit een 3D-model." },
+    { q: "Wat is FDM?", a: "FDM legt gesmolten filament laag per laag. Sterk en betaalbaar voor prototypes en functionele stukken." },
+    { q: "Wat is SLA?", a: "SLA verhardt vloeibare hars met een UV-laser. Zeer hoge nauwkeurigheid en glad oppervlak." },
     {
-      q: "Lever je ook rond Gent, Aalst of Antwerpen?",
-      a: "Ja. Vanuit Herzele leveren we dagelijks naar Oost-Vlaanderen, de Denderstreek en Antwerpen. Zie ook de lokale pagina's onder /locaties.",
+      q: "Welke verzendopties bieden jullie?",
+      a: "Afhalen op afspraak, lokale levering of verzending via Bpost. Spoedlevering kan in overleg. Geef je gemeente/district door bij <a href=\"/contact\">/contact</a>.",
+    },
+    {
+      q: "Waar vind ik voorbeelden van projecten?",
+      a: "Bekijk het overzicht op <a href=\"/portfolio\">/portfolio</a> met prototypes, minis en functionele onderdelen.",
+    },
+    {
+      q: "Leveren jullie in Gent, Aalst of Antwerpen?",
+      a: "Ja. Vanuit Herzele leveren we dagelijks in Oost-Vlaanderen, de Denderstreek en Antwerpen. Zie <a href=\"/locaties\">/locaties</a> voor de zones.",
     },
     {
       q: "Kan ik materialen vooraf zien?",
-      a: "Je vindt richtlijnen en foto's op /materials. Op aanvraag sturen we fotos van recente prints in PLA Matte, PETG of TPU.",
+      a: "Op <a href=\"/materials\">/materials</a> vind je kleuren en richtlijnen. Op verzoek sturen we recente voorbeelden in PLA Matte, PETG of TPU.",
     },
     {
       q: "Hoe optimaliseren jullie prints voor sterkte?",
-      a: "We stemmen laaghoogte, infill en orientatie af op belasting. Bij functionele onderdelen adviseren we PETG of TPU en verstevigingsrippen indien nodig.",
+      a: "We kiezen laaghoogte, infill, orientatie en wanddikte volgens de belasting. PETG of TPU voor functionele stukken; PLA Matte voor esthetiek.",
     },
     {
-      q: "Hebben jullie een viewer om mijn STL/STEP te checken?",
-      a: "Ja, op /viewer zie je orientatie en oppervlakte. Noteer je gewenste orientatie bij de aanvraag (zichtzijde boven, kritieke maat in XY vlak).",
+      q: "Hebben jullie een STL/STEP viewer?",
+      a: "Ja, via <a href=\"/viewer\">/viewer</a> kan je orientatie en schaal checken. Noteer je voorkeur in de aanvraag.",
     },
     {
-      q: "Hoe verwerk je AI-gegenereerde modellen?",
-      a: "We controleren op manifold, wanddikte en overhang. Indien nodig herwerken we het model zodat het printbaar is.",
+      q: "Hoe verwerken jullie AI-gegenereerde modellen?",
+      a: "We checken op manifold, wanddikte en overhang. Indien nodig corrigeren we het bestand zodat het foutloos print.",
     },
     {
-      q: "Bieden jullie geo-gespecificeerde levering?",
-      a: "Ja. Geef gemeente of district door (bv. Antwerpen, Gent, Aalst, Geraardsbergen), dan plannen we lever windows en verzendopties daarop.",
+      q: "Bieden jullie levering op locatie?",
+      a: "Ja. Geef gemeente of district door en we plannen EV-levering, koerier of Bpost. Afhalen in Herzele/Gent kan ook.",
+    },
+    {
+      q: "Wat is 3D printen precies?",
+      a: "Een digitale productiemethode waarbij een object laag per laag wordt opgebouwd vanuit .STL of .STEP. We leggen het proces graag uit in de <a href=\"/blog\">blog</a>.",
+    },
+    {
+      q: "Welke materialen bieden jullie aan?",
+      a: "PLA, PETG en TPU zijn standaard. PLA is ideaal voor detail, PETG voor sterkte/hitte, TPU voor flexibiliteit. Details op <a href=\"/materials\">/materials</a>.",
+    },
+    {
+      q: "Kan ik mijn eigen bestand aanleveren?",
+      a: "Ja. Upload STL/STEP via <a href=\"/contact\">/contact</a> of gebruik de <a href=\"/viewer\">viewer</a> om te dubbelchecken.",
+    },
+    {
+      q: "Hoe snel kunnen jullie leveren?",
+      a: "Doorgaans 2-5 werkdagen afhankelijk van complexiteit en oplage. Spoed mogelijk op aanvraag via <a href=\"/contact\">/contact</a>.",
+    },
+    {
+      q: "Wat kost een 3D print?",
+      a: "Prijs = materiaal + printtijd + nabewerking. Gebruik de calculator op <a href=\"/pricing\">/pricing</a> voor een richtprijs, definitief na modelcheck.",
+    },
+    {
+      q: "Kan ik meerdere stuks laten printen?",
+      a: "Zeker. Vanaf een stuk tot kleine series. Grotere volumes krijgen staffelprijzen; vraag dit aan via <a href=\"/pricing\">/pricing</a> of <a href=\"/contact\">/contact</a>.",
+    },
+    {
+      q: "Is 3D printen geschikt voor functionele onderdelen?",
+      a: "Ja. PETG en TPU voor belastbare of flexibele delen. We stemmen orientatie en infill af op de krachten.",
+    },
+    {
+      q: "Bieden jullie nabewerking aan?",
+      a: "We verwijderen supports en ontbramen licht. Voor schuren, lak of montage werken we samen met partners; vermeld dit in je aanvraag.",
+    },
+    {
+      q: "Welke sectoren gebruiken jullie prints?",
+      a: "Startups, kmo's, onderwijs, makers, automotive, marketing en architectuur. Zie <a href=\"/segments\">/segments</a> voor segmentpagina's.",
+    },
+    {
+      q: "Wat als mijn model fouten bevat?",
+      a: "We detecteren en repareren kleine issues. Bij grotere problemen adviseren we de beste aanpak of CAD-correcties.",
+    },
+    {
+      q: "Hoe groot kunnen jullie printen?",
+      a: "Tot ca. 25 x 25 x 25 cm in een stuk. Groter kan door te splitsen en te monteren; dit stemmen we vooraf af.",
+    },
+    {
+      q: "Kunnen jullie onderdelen namaken of vervangen?",
+      a: "Ja, met een model, schets of fysiek voorbeeld. We helpen optimaliseren voor sterkte en passing.",
+    },
+    {
+      q: "Is 3D printen duurzaam?",
+      a: "FDM genereert weinig afval. PLA is biogebaseerd en recyclebaar. We adviseren dunner materiaal en slimme orientatie waar mogelijk.",
+    },
+    {
+      q: "Hoe vraag ik een offerte aan?",
+      a: "Upload je bestand via <a href=\"/contact\">/contact</a>. Je krijgt meestal binnen 24 uur een duidelijk voorstel.",
+    },
+    {
+      q: "Printen jullie ook een enkel stuk?",
+      a: "Ja, vanaf een stuk. We focussen zowel op proefprints als kleine series. Check prijzen op <a href=\"/pricing\">/pricing</a>.",
+    },
+    {
+      q: "Hoe sterk zijn FDM prints?",
+      a: "Sterkte hangt af van materiaal en orientatie. We adviseren ribben, wanddikte en infill afgestemd op de belasting.",
+    },
+    {
+      q: "Kunnen jullie mijn ontwerp verbeteren?",
+      a: "We voeren basisreparaties uit en geven tips voor een beter resultaat. Voor uitgebreid CAD-werk kunnen we partners inschakelen.",
+    },
+    {
+      q: "Hoe lever ik mijn bestand goed aan?",
+      a: "Gebruik STL of STEP, vermeld toepassing, sterkte en aantallen. Controleer het bestand in de <a href=\"/viewer\">viewer</a> en voeg notities toe.",
     },
   ] as const
 
-  const faq = [...extraFaq, ...servicesFaq]
+  // Combine baseline FAQ + new entries while deduping identical questions (prevents duplicate keys in the accordion)
+  const combinedFaq = [...servicesFaq, ...extraFaq]
+  const seen = new Set<string>()
+  const faq = combinedFaq.filter((item) => {
+    const key = item.q.trim().toLowerCase()
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
 
   // JSON-LD (FAQPage)
   const faqJsonLd = {
@@ -235,3 +321,4 @@ export default function Page() {
     </main>
   )
 }
+
