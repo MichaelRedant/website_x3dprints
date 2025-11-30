@@ -2,7 +2,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import Container from "./Container"
-import FooterLocations from "./FooterLocations"
+import FooterLocationFinder from "./FooterLocationFinder"
 import CookieSettingsButton from "./CookieSettingsButton"
 
 const socials = [
@@ -62,7 +62,7 @@ export default function Footer() {
 
       {/* main footer */}
       <div className="mt-10 border-t bg-white/60 backdrop-blur">
-        <Container className="grid gap-10 py-12 text-sm text-slate-600 text-center md:grid-cols-5 md:text-left">
+          <Container className="grid gap-10 py-12 text-sm text-slate-600 text-center md:grid-cols-5 md:text-left">
           {/* brand */}
           <div className="md:col-span-2">
             <Link href="/" className="inline-flex items-center gap-3">
@@ -122,13 +122,18 @@ export default function Footer() {
               <li><Link href="/sitemap.xml" className="hover:text-slate-900">Sitemap</Link></li>
             </ul>
           </div>
+
+          {/* lokale zoek */}
+          <div>
+            <div className="font-semibold text-slate-900">Lokale pagina&apos;s</div>
+            <p className="mt-2 text-xs text-slate-600">
+              Vind je stad zonder lange lijsten. Zoek en filter per letter.
+            </p>
+            <div className="mt-3">
+              <FooterLocationFinder />
+            </div>
+          </div>
         </Container>
-        {/* lokale pagina's */}
-        <div className="border-t">
-          <Container className="py-12">
-            <FooterLocations />
-          </Container>
-        </div>
 
         {/* bottom bar */}
         <div className="border-t">

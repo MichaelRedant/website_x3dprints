@@ -6,9 +6,13 @@ import Footer from "@/components/Footer"
 import ScrollProgress from "@/components/ScrollProgress"
 import CookieBanner from "@/components/CookieBanner"
 import AnalyticsConsent from "@/components/AnalyticsConsent"
+import ThemeProvider from "@/components/ThemeProvider"
+import { Orbitron, JetBrains_Mono } from "next/font/google"
 import { cn } from "@/lib/utils";
 
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron", weight: ["400", "500", "600", "700"] })
+const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", weight: ["400", "500", "600", "700"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -83,14 +87,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   }
 
   return (
-    <html lang="nl">
-      <body className={cn("min-h-screen flex flex-col")}>
-        <ScrollProgress />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <CookieBanner />
-        <AnalyticsConsent />
+    <html lang="nl" data-theme="light" suppressHydrationWarning>
+      <body className={cn("min-h-screen flex flex-col antialiased", orbitron.variable, mono.variable)}>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{const key="x3d-theme";const stored=localStorage.getItem(key);const prefers=window.matchMedia("(prefers-color-scheme: dark)").matches;const theme=(stored==="dark"||stored==="light")?stored:(prefers?"dark":"light");const root=document.documentElement;if(theme==="dark"){root.classList.add("dark");root.dataset.theme="hawkins";}else{root.classList.remove("dark");root.dataset.theme="light";}}catch(e){}})();`,
+          }}
+        />
+        <ThemeProvider>
+          <ScrollProgress />
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <CookieBanner />
+          <AnalyticsConsent />
+        </ThemeProvider>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

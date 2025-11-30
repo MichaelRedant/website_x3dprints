@@ -210,11 +210,13 @@ export default function HomePage() {
             ].map((item) => (
             <GlassCard
               key={item.k}
-              className="group border-white/40 bg-gradient-to-br from-white/80 to-white/40 p-5 text-center shadow-lg ring-1 ring-white/60 transition-transform hover:-translate-y-1"
+              className="group border-white/40 bg-gradient-to-br from-white/80 to-white/40 p-5 text-center shadow-lg ring-1 ring-white/60 transition-transform hover:-translate-y-1 dark:border-[#0F203C] dark:bg-[radial-gradient(140%_140%_at_20%_10%,rgba(0,230,255,0.08),transparent),radial-gradient(120%_120%_at_80%_0%,rgba(215,38,61,0.07),transparent),#0B0F1A] dark:ring-0 dark:shadow-[0_18px_50px_rgba(0,0,0,0.55),0_0_0_1px_rgba(0,230,255,0.15)]"
             >
-              {item.icon}
-              <div className="text-sm font-medium text-slate-500">{item.k}</div>
-              <div className="mt-1 text-xl font-semibold text-slate-900">{item.v}</div>
+              <div className="flex items-center justify-center text-indigo-600 dark:text-[#00E6FF]">
+                {item.icon}
+              </div>
+              <div className="text-sm font-medium text-slate-500 dark:text-slate-100">{item.k}</div>
+              <div className="mt-1 text-xl font-semibold text-slate-900 dark:text-white">{item.v}</div>
             </GlassCard>
             ))}
           </Reveal>
