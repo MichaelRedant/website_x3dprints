@@ -33,6 +33,16 @@ export default function Header() {
   }, [])
 
   useEffect(() => {
+    if (open) {
+      const original = document.body.style.overflow
+      document.body.style.overflow = "hidden"
+      return () => {
+        document.body.style.overflow = original
+      }
+    }
+  }, [open])
+
+  useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpen(false)
     }
@@ -48,7 +58,7 @@ export default function Header() {
   return (
     <header
       className={[
-        "sticky top-0 z-50 transition-all relative overflow-hidden",
+        "sticky top-0 z-[120] transition-all relative",
         "supports-[backdrop-filter]:bg-white/60 supports-[backdrop-filter]:backdrop-blur",
         "border-b",
         scrolled
@@ -78,14 +88,14 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-4 md:flex">
+        <nav className="hidden items-center gap-3 lg:flex lg:overflow-x-auto lg:whitespace-nowrap lg:px-1 lg:-mx-1">
           {NAV.map((item) => {
             const active = isActive(item.href)
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className="group relative px-3 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900 dark:text-[#e7f5ff] dark:hover:text-white dark:tracking-[0.14em] dark:uppercase dark:bg-transparent dark:shadow-none"
+                className="group relative px-3 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900 dark:text-[#e7f5ff] dark:hover:text-white dark:tracking-[0.12em] dark:uppercase dark:bg-transparent dark:shadow-none md:text-[13px] lg:text-sm"
               >
                 <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(0,230,255,0.55),transparent)] opacity-30" />
                 <span className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,0,168,0.55),transparent)] opacity-0 transition duration-200 group-hover:opacity-100" />
@@ -122,7 +132,7 @@ export default function Header() {
           aria-label="Open menu"
           aria-expanded={open}
           onClick={() => setOpen(true)}
-          className="relative inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200/60 bg-white/70 text-slate-900 shadow-sm backdrop-blur transition hover:border-slate-300 dark:border-[#1f2336] dark:bg-[#0B0F1A] dark:text-slate-100 md:hidden"
+          className="relative inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200/60 bg-white/70 text-slate-900 shadow-sm backdrop-blur transition hover:border-slate-300 dark:border-[#1f2336] dark:bg-[#0B0F1A] dark:text-slate-100 lg:hidden"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
             <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
@@ -137,14 +147,14 @@ export default function Header() {
               <motion.button
                 ref={overlayRef}
                 aria-label="Sluit menu"
-                className="fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm md:hidden"
+                className="fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm lg:hidden"
                 onClick={() => setOpen(false)}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
               />
               <motion.div
-                className="fixed left-1/2 top-2 z-[70] w-[94%] max-w-md -translate-x-1/2 overflow-hidden rounded-2xl border border-slate-200/70 bg-white/80 p-4 shadow-xl backdrop-blur md:hidden dark:border-[#1f2336] dark:bg-[#0B0F1A]/95 dark:text-slate-100"
+                className="fixed left-1/2 top-3 z-[70] w-[94%] max-w-md -translate-x-1/2 overflow-hidden rounded-2xl border border-slate-200/70 bg-white/90 p-4 shadow-xl backdrop-blur lg:hidden dark:border-[#1f2336] dark:bg-[#0B0F1A]/95 dark:text-slate-100 max-h-[calc(100vh-1.5rem)] overflow-y-auto"
                 role="dialog"
                 aria-modal="true"
                 initial={{ y: -16, opacity: 0 }}

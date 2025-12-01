@@ -52,6 +52,34 @@ body {
   z-index: 1;
 }
 
+@media (max-width: 640px) {
+  :root.dark body {
+    background:
+      radial-gradient(180% 120% at 50% -10%, rgba(0,230,255,0.08), transparent),
+      linear-gradient(180deg, #06060A 0%, #06060A 100%);
+  }
+  :root.dark main {
+    background:
+      radial-gradient(150% 120% at 50% -5%, rgba(215,38,61,0.05), transparent),
+      linear-gradient(180deg, rgba(11,15,26,0.96) 0%, #06060A 100%);
+  }
+}
+
+@media (min-width: 1440px) {
+  :root.dark body {
+    background:
+      radial-gradient(120% 80% at 30% 5%, rgba(215,38,61,0.05), transparent),
+      radial-gradient(120% 80% at 70% 0%, rgba(0,230,255,0.05), transparent),
+      linear-gradient(180deg, #06060A 0%, #06060A 100%);
+    background-size: cover;
+  }
+  :root.dark main {
+    background:
+      radial-gradient(180% 200% at 50% -20%, rgba(0,230,255,0.04), transparent),
+      linear-gradient(180deg, rgba(11,15,26,0.94) 0%, #06060A 100%);
+  }
+}
+
 :root.dark body::before {
   content: "";
   position: fixed;
