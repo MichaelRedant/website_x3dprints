@@ -1,3 +1,4 @@
+<<<<<<< ours
 // app/(pages)/services/page.tsx
 import type { Metadata } from "next"
 import Link from "next/link"
@@ -8,10 +9,17 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import CtaBlock from "@/components/CtaBlock"
 import Faq from "@/components/Faq"
+=======
+import type { Metadata } from "next"
+import Link from "next/link"
+
+import Reveal from "@/components/Reveal"
+>>>>>>> theirs
 import ShimmerButton from "@/components/ShimmerButton"
 import { servicesFaq } from "@/content/services-faq"
 
 export const metadata: Metadata = {
+<<<<<<< ours
   title: "3D Print Service Herzele | X3DPrints bijberoep",
   description:
     "Lokale FDM 3D-printservice uit Herzele (bijberoep). Prototypes en kleine reeksen in PLA, PETG of TPU met eerlijk advies en korte lijnen.",
@@ -152,10 +160,71 @@ export default function Page() {
         areaServed: "BE",
         provider: { "@type": "LocalBusiness", name: "X3DPrints" },
       },
+=======
+  title: "Services",
+  description: "Van FDM-printing tot nabewerking en montage. Snelle doorlooptijd, materiaaladvies en nette afwerking.",
+}
+
+const serviceBlocks = [
+  {
+    title: "FDM-printproductie",
+    body:
+      "Functionele prototypes en kleine series met consistente kwaliteit. We optimaliseren printoriëntatie voor sterkte en oppervlakte.",
+    bullets: ["PLA, PETG, ABS/ASA, Nylon (PA) en PA-CF", "Tolerantie typisch ±0,2 mm", "Controle op maatvoering en hechting"],
+  },
+  {
+    title: "Materiaal- en ontwerpadvies",
+    body:
+      "We denken mee over materiaalselectie, wanddikte, infill en inserts. Doel: onderdelen die passen, presteren en langer meegaan.",
+    bullets: ["Advies op basis van toepassing en omgeving", "Aanpassingen voor betere printbaarheid", "Check op sterkte, UV en hitte"],
+  },
+  {
+    title: "Nabewerking & finishing",
+    body:
+      "Strakkere look nodig? We schuren, primen en lakken voor een representatieve afwerking van behuizingen of zichtdelen.",
+    bullets: ["Schuren en primer", "Spuitlak in huisstijlkleuren", "Eenvoudige label- of logo-toepassingen"],
+  },
+  {
+    title: "Assemblage & functioneel testen",
+    body:
+      "Klaar voor gebruik afleveren. Denk aan metalen inserts, simpele montage en controle of bewegende delen vrij lopen.",
+    bullets: ["Heat-set inserts en schroefdraad", "Klik- of boutmontage", "Basisfunctionele check voor passing"],
+  },
+]
+
+const workflow = [
+  {
+    title: "Bestanden & context",
+    detail: "Upload STL/STEP en vermeld toepassing, kritieke maten en gewenste afwerking.",
+  },
+  {
+    title: "Materiaal & offerte",
+    detail: "We matchen materiaal, printstrategie en nabehandeling en sturen een duidelijke prijsindicatie.",
+  },
+  {
+    title: "Productie & kwaliteitscheck",
+    detail: "Printen, visuele inspectie en maatcontrole op kritieke punten. Waar nodig lichte nabewerking.",
+  },
+  {
+    title: "Levering of afhalen",
+    detail: "Verzending in beschermde verpakking of ophalen in Gent. Factuur digitaal aangeleverd.",
+  },
+]
+
+export default function Page() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: servicesFaq.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+>>>>>>> theirs
     })),
   }
 
   return (
+<<<<<<< ours
     <main className="relative">
       <div
         aria-hidden
@@ -236,10 +305,55 @@ export default function Page() {
                 of stuur je vraag door; we bekijken het persoonlijk.
               </p>
             </GlassCard>
+=======
+    <main className="relative bg-slate-50">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(80%_60%_at_50%_0%,rgba(99,102,241,0.15),transparent_70%)]"
+      />
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.07]" />
+
+      <section className="px-6 pb-12 pt-14 sm:px-10 lg:px-12 lg:pb-16">
+        <div className="mx-auto max-w-5xl">
+          <Reveal className="max-w-3xl">
+            <p className="inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/80 px-3 py-1 text-xs font-medium text-slate-700 backdrop-blur">
+              Services
+            </p>
+            <h1 className="mt-5 text-balance text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl">
+              Van model naar functioneel onderdeel, zonder ruis.
+            </h1>
+            <p className="mt-4 max-w-2xl text-lg leading-7 text-slate-600">
+              Wij combineren FDM-printing met pragmatisch advies en nette afwerking. Gericht op B2B-teams die snel, herhaalbaar
+              en zonder verrassingen willen leveren.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <ShimmerButton href="/contact">Project bespreken</ShimmerButton>
+              <Link
+                href="/portfolio"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-300/70 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-800 backdrop-blur hover:bg-white"
+              >
+                Bekijk portfolio
+              </Link>
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.12} className="mt-10 grid gap-4 sm:grid-cols-3">
+            {[
+              { label: "Doorlooptijd", value: "2–5 werkdagen" },
+              { label: "Tolerantie", value: "Typisch ±0,2 mm" },
+              { label: "Afwerking", value: "Schuren, primer, lak" },
+            ].map((item) => (
+              <div key={item.label} className="rounded-2xl border border-slate-200/70 bg-white/80 p-5 text-slate-800 backdrop-blur">
+                <div className="text-sm text-slate-500">{item.label}</div>
+                <div className="mt-1 text-xl font-semibold">{item.value}</div>
+              </div>
+            ))}
+>>>>>>> theirs
           </Reveal>
         </div>
       </section>
 
+<<<<<<< ours
       {/* SERVICES GRID */}
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
@@ -251,12 +365,40 @@ export default function Page() {
                   <h3 className="mt-4 text-lg font-semibold text-slate-900">{s.title}</h3>
                   <p className="mt-2 text-sm text-slate-600">{s.description}</p>
                 </GlassCard>
+=======
+      <section className="px-6 py-12 sm:px-10 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal className="mb-6 max-w-3xl">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Wat we voor je oplossen</h2>
+            <p className="mt-2 text-slate-600">
+              Geen marketingpraat, wel duidelijke output: onderdelen die passen, stevig zijn en er verzorgd uitzien.
+            </p>
+          </Reveal>
+          <div className="grid gap-5 sm:grid-cols-2">
+            {serviceBlocks.map((block, index) => (
+              <Reveal
+                key={block.title}
+                delay={0.05 * (index + 1)}
+                className="h-full rounded-2xl border border-slate-200/70 bg-white/80 p-6 backdrop-blur"
+              >
+                <h3 className="text-lg font-semibold text-slate-900">{block.title}</h3>
+                <p className="mt-2 text-sm text-slate-600">{block.body}</p>
+                <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                  {block.bullets.map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+>>>>>>> theirs
               </Reveal>
             ))}
           </div>
         </div>
       </section>
 
+<<<<<<< ours
       {/* KNOWLEDGE + SEO */}
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
@@ -348,10 +490,94 @@ export default function Page() {
                 </div>
               </div>
             </GlassCard>
+=======
+      <section className="px-6 py-12 sm:px-10 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal className="mb-5 max-w-3xl">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Wanneer past X3DPrints?</h2>
+            <p className="mt-2 text-slate-600">
+              Typische cases: validatieprototypes, jigs en fixtures, behuizingen met nette afwerking en kleine series voor pilots.
+            </p>
+          </Reveal>
+          <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
+            <Reveal className="rounded-2xl border border-slate-200/70 bg-white/80 p-6 backdrop-blur">
+              <h3 className="text-base font-semibold text-slate-900">Hoe wij value leveren</h3>
+              <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                {["Sparren over ontwerp zodat passing en sterkte kloppen.", "Snelle iteraties zonder in te boeten op afwerking.", "Heldere communicatie, inclusief haalbaarheid en risico's.", "Kleine series met voorspelbare kosten en levertijden."].map((line) => (
+                  <li key={line} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-500" />
+                    <span>{line}</span>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+            <Reveal delay={0.08} className="rounded-2xl border border-slate-200/70 bg-white/80 p-6 backdrop-blur">
+              <h3 className="text-base font-semibold text-slate-900">Praktische info</h3>
+              <dl className="mt-3 space-y-3 text-sm text-slate-700">
+                {[{ term: "Bestandsformaten", detail: "STL en STEP, liefst met tolerantie-info." }, { term: "Minimale oplage", detail: "Vanaf 1 stuk, prijsoptimalisatie bij batches." }, { term: "Industries", detail: "B2B, productteams, maakbedrijven, onderwijs & labs." }, { term: "Verzending", detail: "Beschermde verpakking, tracking en optioneel afhalen in Gent." }].map((row) => (
+                  <div key={row.term} className="flex gap-3">
+                    <dt className="min-w-[130px] text-slate-500">{row.term}</dt>
+                    <dd className="font-medium text-slate-900">{row.detail}</dd>
+                  </div>
+                ))}
+              </dl>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-12 sm:px-10 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal className="mb-5 max-w-3xl">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Workflow</h2>
+            <p className="mt-2 text-slate-600">Een duidelijke route zodat je weet waar je staat.</p>
+          </Reveal>
+          <ol className="relative ms-4 space-y-6 border-s-l border-slate-200 pl-6">
+            {workflow.map((step, index) => (
+              <Reveal key={step.title} delay={0.05 * (index + 1)} className="relative">
+                <span className="absolute -start-[29px] top-1.5 grid h-3.5 w-3.5 place-items-center rounded-full bg-indigo-500 ring-4 ring-white" />
+                <h3 className="text-base font-semibold text-slate-900">{`${index + 1}. ${step.title}`}</h3>
+                <p className="text-slate-600">{step.detail}</p>
+              </Reveal>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section className="px-6 pb-16 pt-4 sm:px-10 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal className="rounded-3xl border border-slate-200/70 bg-white/80 p-8 backdrop-blur sm:p-10">
+            <div className="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] sm:items-center">
+              <div>
+                <h2 className="text-balance text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Veelgestelde vragen</h2>
+                <p className="mt-2 max-w-prose text-slate-600">
+                  Alles wat je moet weten over bestanden, doorlooptijd en afwerking. Mis je info? Stuur ons een berichtje.
+                </p>
+                <div className="mt-5 flex flex-wrap gap-3">
+                  <ShimmerButton href="/contact">Vraag stellen</ShimmerButton>
+                  <Link
+                    href="/pricing"
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-300/70 bg-white px-5 py-3 text-sm font-semibold text-slate-800"
+                  >
+                    Bekijk prijzen
+                  </Link>
+                </div>
+              </div>
+              <div className="space-y-4">
+                {servicesFaq.map((item) => (
+                  <div key={item.q} className="rounded-2xl border border-slate-200/70 bg-slate-50/80 p-4">
+                    <h3 className="text-sm font-semibold text-slate-900">{item.q}</h3>
+                    <p className="mt-1 text-sm text-slate-600">{item.a}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+>>>>>>> theirs
           </Reveal>
         </div>
       </section>
 
+<<<<<<< ours
       {/* SPECS + AFWERKING */}
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
@@ -421,13 +647,52 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <Faq city="België" items={servicesFaq} />
+=======
+      <section className="px-6 pb-20 sm:px-10 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal className="overflow-hidden rounded-3xl border border-slate-200/70 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 p-8 text-white shadow-soft sm:p-10">
+            <div className="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] sm:items-center">
+              <div>
+                <p className="text-xs uppercase tracking-[0.15em] text-slate-300">Klaar voor de volgende iteratie</p>
+                <h2 className="mt-3 text-balance text-3xl font-bold leading-tight sm:text-4xl">
+                  Plan je volgende print of kleine serie. Wij regelen de rest.
+                </h2>
+                <p className="mt-3 max-w-prose text-slate-200">
+                  Stuur je bestanden door en ontvang een duidelijk voorstel met materiaalkeuze, levertijd en eventuele afwerking.
+                </p>
+                <div className="mt-5 flex flex-wrap gap-3">
+                  <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
+                  <Link
+                    href="/portfolio"
+                    className="inline-flex items-center gap-2 rounded-xl border border-white/30 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10"
+                  >
+                    Portfolio
+                  </Link>
+                </div>
+              </div>
+              <div className="rounded-2xl border border-white/15 bg-white/5 p-5">
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {[{ title: "Industrieel", detail: "Jigs, fixtures, machineonderdelen" }, { title: "Productteams", detail: "Validatieprototypes en pilots" }, { title: "Education & labs", detail: "Kleine batches zonder eigen printers" }, { title: "Service bureaus", detail: "Overflow support met voorspelbare kwaliteit" }].map((item) => (
+                    <div key={item.title} className="rounded-xl border border-white/10 bg-white/5 p-3">
+                      <div className="text-sm font-semibold text-white">{item.title}</div>
+                      <div className="text-sm text-slate-200">{item.detail}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+>>>>>>> theirs
           </Reveal>
         </div>
       </section>
 
+<<<<<<< ours
       {/* JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(catalogJsonLd) }} />
+=======
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+>>>>>>> theirs
     </main>
   )
 }

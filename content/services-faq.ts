@@ -1,5 +1,6 @@
 export const servicesFaq = [
   {
+<<<<<<< ours
     q: "Wat is 3D printen precies?",
     a: "3D printen is een digitale productietechniek waarbij een object laag per laag wordt opgebouwd op basis van een 3D-bestand, meestal in STL- of STEP-formaat.",
   },
@@ -102,3 +103,29 @@ export const servicesFaq = [
 ]
 
 export type ServiceFaqItem = (typeof servicesFaq)[number]
+=======
+    q: "Welke bestanden werken het beste?",
+    a: "STEP en STL zijn ideaal. Voeg info toe over kritieke maten, gewenste afwerking en de omgeving waarin het onderdeel moet presteren.",
+  },
+  {
+    q: "Welke toleranties kan ik verwachten?",
+    a: "Voor FDM hanteren we typisch ±0,2 mm bij normale geometrieën. Kritieke passing? Vermeld dit zodat we de printoriëntatie en nabewerking hierop afstemmen.",
+  },
+  {
+    q: "Hoe snel leveren jullie?",
+    a: "Standaard 2–5 werkdagen afhankelijk van volume, materiaal en eventuele afwerking. Spoed of een strakke deadline? Geef het aan, dan plannen we mee.",
+  },
+  {
+    q: "Helpen jullie mee met materiaalkeuze?",
+    a: "Ja. We matchen jouw toepassing met PLA, PETG, ABS/ASA, Nylon (PA) of PA-CF. UV, hitte of chemische belasting? We adviseren wat het best standhoudt.",
+  },
+  {
+    q: "Kunnen jullie nabewerken en assembleren?",
+    a: "We schuren, primen en lakken voor een nette finish. Eenvoudige montage en inserts plaatsen kan ook, zolang we de specificaties kennen.",
+  },
+  {
+    q: "Hoe zit het met privacy en NDA's?",
+    a: "Files blijven intern en we tekenen desgewenst een NDA. We delen niets met derden zonder expliciete toestemming.",
+  },
+]
+>>>>>>> theirs
