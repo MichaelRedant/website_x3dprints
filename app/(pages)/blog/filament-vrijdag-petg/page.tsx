@@ -18,11 +18,9 @@ export const metadata: Metadata = {
       "PETG uitgelegd door X3DPrints: eigenschappen, printinstellingen, typische toepassingen en wanneer je beter TPU of ASA kiest.",
     url: canonical,
     type: "article",
-    article: {
-      publishedTime: publishedDate,
-      authors: ["https://www.x3dprints.be"],
-      tags: ["PETG 3D printen", "Filament Vrijdag", "3D print materiaal"],
-    },
+    publishedTime: publishedDate,
+    authors: ["https://www.x3dprints.be"],
+    tags: ["PETG 3D printen", "Filament Vrijdag", "3D print materiaal"],
     images: [
       {
         url: "/images/og-home.jpg",
@@ -175,11 +173,7 @@ const externalReferences = [
     href: "https://www.matterhackers.com/articles/petg-filament-3d-printing-guide",
     description: "Praktische gids rond instellingen, sterkte en gebruik buiten.",
   },
-  {
-    label: "Bambu Lab PETG profiel",
-    href: "https://wiki.bambulab.com/en/materials/petg",
-    description: "Materiaalnotes en AMS tips rechtstreeks van Bambu Lab.",
-  },
+
 ]
 
 const upcomingPosts = [
@@ -242,7 +236,7 @@ export default function FilamentVrijdagPetgPage() {
                 <li>
                   <Link
                     href="/blog"
-                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                   >
                     Blog
                   </Link>

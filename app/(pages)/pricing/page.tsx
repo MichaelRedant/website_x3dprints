@@ -89,7 +89,7 @@ export default function Page() {
 
   const design = [
     { k: "Eigen ontwerp (STL/STEP)", v: "Gratis beoordeling + offerte" },
-    { k: "Ontwerp op maat", v: "€45/uur (incl. digitaal voorbeeld voor productie)" },
+    { k: "Ontwerp op maat", v: "EUR 45/uur (incl. digitaal voorbeeld voor productie)" },
   ]
 
 // JSON-LD: OfferCatalog met indicatieve prijzen
@@ -101,8 +101,8 @@ export default function Page() {
       "@type": "Offer",
       itemOffered: {
         "@type": "Service",
-        name: `3D print – ${t.name}`,
-        description: `${t.size} • ${t.base}`,
+        name: `3D print - ${t.name}`,
+        description: `${t.size} - ${t.base}`,
         areaServed: "BE",
         provider: { "@type": "LocalBusiness", name: "X3DPrints" },
       },

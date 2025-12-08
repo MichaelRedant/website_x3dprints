@@ -1,4 +1,4 @@
-# X3DPrints – Website (Next.js + Tailwind v4)
+# X3DPrints · Website (Next.js + Tailwind v4)
 
 Productiesite voor **X3DPrints**, een snelle 3D-printservice uit Herzele. Gebouwd met **Next.js (App Router, TS)**, **Tailwind CSS v4** en **Framer Motion**, volledig geoptimaliseerd voor performance, SEO en a11y.
 
@@ -31,11 +31,12 @@ Productiesite voor **X3DPrints**, een snelle 3D-printservice uit Herzele. Gebouw
 - **Next.js App Router** met server components, per-page metadata en route handlers.
 - **Tailwind v4** via `@tailwindcss/postcss`, minimale global CSS.
 - **Framer Motion** micro-animaties (`useReducedMotion` aware).
-- **Material Suggestion Tool** (multi-step wizard, HowTo JSON-LD, CTA’s die `/contact?material=<slug>` prefillen).
-- **Blog & segment hubs** met Article/ItemList JSON-LD en strategische interne links.
-- **Viewer** met moderne dropzone, privacycopy buiten canvas en CTA’s naar services/materials.
-- **On-page SEO**: Metadata API, FAQ + HowTo JSON-LD, ImageObject op portfolio, breadcrumbs, interne linking.
-- **Consistente hero-styling** (`text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl`).
+- **Material Suggestion Tool** (multi-step wizard, HowTo JSON-LD, CTA's die `/contact?material=<slug>` prefillen).
+- **Segment hubs & detailpagina's** met Article/ItemList/FAQ JSON-LD, verplichte `Faq`-component en CTA's naar suggestion tool + contact-prefill.
+- **Portfolio carousel & VideoGallery** laden enkel zichtbare slides/iframes voor optimale LCP/TBT.
+- **Viewer** met moderne dropzone, privacycopy buiten canvas en CTA's naar services/materials.
+- **On-page SEO**: Metadata API, FAQ + HowTo/Service JSON-LD, ImageObject op portfolio, breadcrumbs, interne linking.
+- **Consistente hero-styling** (`text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl`) in light/dark mode.
 
 ---
 
@@ -98,9 +99,9 @@ app/
       [slug]/page.tsx          # Materiaal detail (server component)
     segments/
       page.tsx                 # Segment hub (ItemList JSON-LD)
-    services|portfolio|pricing|viewer|about|contact|locaties|faq
+    services|portfolio|pricing|viewer|about|contact|locaties|faq|sustainability
   segments/
-    <slug>/page.tsx            # Segment detail pagina’s
+    <slug>/page.tsx            # Segment detail pagina's
   api/
     contact/route.ts
   layout.tsx                   # metadata + LocalBusiness JSON-LD
@@ -162,8 +163,9 @@ README.md
   - Material Suggestion Tool gebruikt HowTo JSON-LD.  
   - Portfolio gebruikt ImageObject entries per case.  
   - Blog posts hebben Article schema (met `datePublished`).  
-  - Segments hub genereert ItemList.
+  - Segments hub genereert ItemList en elke segment detailpagina heeft een `Faq`-component + FAQ JSON-LD.
 - **Interne links:** elke hero koppelt naar `materials`, `materials#material-suggestion-tool`, `blog`, `segments`, `services`, `contact`.
+- **Segment CTA’s:** primaire CTA → `/contact?material=<slug>` (prefill), secundaire CTA → `/materials#material-suggestion-tool` (+ relevante blog/portfolio links).
 - **Tone of voice:** benadruk dat X3DPrints een éénmansstudio in bijberoep is (realistische planning, geen harde “2-5 dagen” belofte).
 - **LLM/ai.txt:** `public/llms.txt` wordt geserveerd op `/llms.txt` en staat vermeld in `app/robots.ts` zodat crawlers de merk- en contactrichtlijnen vinden.
 
@@ -188,6 +190,7 @@ README.md
 - `components/ContactForm.tsx` leest `material` query param en kiest de juiste optie.
 - Links/knoppen die een materiaal aanbevelen moeten `href="/contact?material=<slug>"` gebruiken.
 - Copy moet transparant zijn over planning (“enkele werkdagen, afstemming in overleg”).
+- Dark mode: inputs tonen witte tekst/caret en behouden focuscontrast; wijzigingen aan het formulier mogen dit niet regressief maken.
 
 ---
 
@@ -198,6 +201,15 @@ README.md
   - Groter canvas (min. 640×480) met orbit controls.
   - Dropzone + privacycopy buiten WebGL canvas.
   - Ondersteunt STL/OBJ/GLB, toont polycount/afmetingen indien beschikbaar.
+
+---
+
+## Portfolio
+
+- `components/AutoCarousel.tsx` rendert enkel actieve + vorige slides, prelaadt de volgende en gebruikt `next/image` (geen regressie op LCP/CLS).
+- `components/VideoGallery.tsx` gebruikt de `LiteVideo` preview (thumbnail + opt-in iframe) zodat TBT laag blijft; voeg geen sync YouTube iframes toe buiten deze flow.
+- Portfolio-pagina bevat ImageObject, CollectionPage & ItemList JSON-LD; breid data enkel uit via `lib/seo` helpers om schema consistent te houden.
+- CTA’s op portfolio verwijzen naar services/materials/pricing + segmenten voor cross-linking.
   - CTA’s naar `/contact` en `/materials`.
 
 ---

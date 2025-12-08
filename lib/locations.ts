@@ -4,6 +4,8 @@ export type Location = {
   city: string
   relatedPhrases?: string[]
   metaDescription?: string
+  servicedAreas?: string[]
+  sectors?: string[]
 }
 
 
@@ -19,6 +21,8 @@ export const locations: Location[] = [
       "3D model laten printen Aalst",
     ],
     metaDescription: "Laat je 3D-idee werkelijkheid worden in Aalst van prototypes tot kleine series, PLA, PETG en TPU beschikbaar. Vraag een offerte bij X3DPrints.",
+    servicedAreas: ["Aalst centrum", "Erembodegem", "Hofstade", "Ninove", "Denderleeuw", "Afhalen Herzele"],
+    sectors: ["Prototyping voor maakbedrijven in Aalst", "Marketing/events in Denderstreek", "Onderwijs en labs in Aalst-Ninove"],
   },
   {
     slug: "3d-printen-in-antwerpen",
@@ -32,6 +36,8 @@ export const locations: Location[] = [
     ],
     metaDescription:
       "Professionele 3D prints in Antwerpen voor havenbedrijven, creatieve bureaus en onderwijs. PLA, PETG en TPU met snelle levering.",
+    servicedAreas: ["Antwerpen centrum", "Linkeroever", "Berchem", "Borgerhout", "Haven", "Afhalen Herzele"],
+    sectors: ["Haven/logistiek tools", "Marketing/props voor events Antwerpen", "Onderwijs en labs in Antwerpen"],
   },
   {
     slug: "3d-printen-in-berchem",
@@ -45,6 +51,8 @@ export const locations: Location[] = [
     ],
     metaDescription:
       "3D printen in Berchem met snelle levering richting Zurenborg en het station. PLA, PETG en TPU op maat van jouw prototype of serie.",
+    servicedAreas: ["Berchem centrum", "Zurenborg", "Groen Kwartier", "Antwerpen-Zuid", "Afhalen Herzele"],
+    sectors: ["Interieur/props voor Zurenborg boutiques", "Prototyping voor creatieve bureaus", "Onderwijs/kunstacademies Berchem"],
   },
   {
     slug: "3d-printen-in-berendrecht-zandvliet-lillo",
@@ -58,6 +66,8 @@ export const locations: Location[] = [
     ],
     metaDescription:
       "Stevige 3D prints voor Berendrecht, Zandvliet en Lillo met focus op havenprojecten. Kies PLA, PETG of TPU en ontvang snel een offerte.",
+    servicedAreas: ["Berendrecht", "Zandvliet", "Lillo", "Ekeren", "Havengebied", "Afhalen Herzele"],
+    sectors: ["Havenprojecten en tooling", "Industrieel maatwerk nabij PSA/DP World", "Onderwijs en labs in de regio"],
   },
   {
     slug: "3d-printen-in-borgerhout",
@@ -71,6 +81,8 @@ export const locations: Location[] = [
     ],
     metaDescription:
       "3D printen in Borgerhout met snelle levering voor Turnhoutsebaan, De Roma en Spoor Oost. Materialen PLA, PETG en TPU beschikbaar.",
+    servicedAreas: ["Turnhoutsebaan", "Spoor Oost", "De Roma", "Borgerhout centrum", "Afhalen Herzele"],
+    sectors: ["Culturele events en props", "Prototypes voor creatieve bureaus", "Retail/interieur in Borgerhout"],
   },
   {
     slug: "3d-printen-in-borsbeek",
@@ -84,6 +96,8 @@ export const locations: Location[] = [
     ],
     metaDescription:
       "Scherpe 3D prints in Borsbeek met snelle verzending richting Fort 3 en luchthaven. PLA Matte, PETG en TPU voor prototypes en onderdelen.",
+    servicedAreas: ["Borsbeek centrum", "Fort 3", "Luchthavenzone", "Deurne", "Afhalen Herzele"],
+    sectors: ["Luchtvaart/lucht-hubs", "KMO's in Borsbeek/Deurne", "Props/retail voor buurtwinkels"],
   },
   {
     slug: "3d-printen-in-deurne",
@@ -97,6 +111,8 @@ export const locations: Location[] = [
     ],
     metaDescription:
       "3D printen in Deurne voor projecten rond Rivierenhof en Sportpaleis. Snelle offertes en levering in PLA, PETG of TPU.",
+    servicedAreas: ["Deurne centrum", "Rivierenhof", "Sportpaleis omgeving", "Haven-Zuid", "Borgerhout/Antwerpen oost", "Afhalen Herzele"],
+    sectors: ["Events/props rond Sportpaleis", "Tooling voor maakbedrijven Deurne/Antwerpen", "Onderwijs/techniek Deurne"],
   },
   {
     slug: "3d-printen-in-ekeren",
@@ -110,6 +126,8 @@ export const locations: Location[] = [
     ],
     metaDescription:
       "3D print service in Ekeren met focus op industrie en haven. Kies PLA, PETG of TPU en ontvang snel een voorstel.",
+    servicedAreas: ["Ekeren centrum", "Rozemaai", "Leugenberg", "Ekeren-Donk", "Kapellen grens", "Afhalen Herzele"],
+    sectors: ["Haven/industrie tooling Ekeren", "Retail/props Bredabaan", "Prototyping voor KMO's Ekeren/Kapellen"],
   },
   {
     slug: "3d-printen-in-hoboken",
@@ -123,6 +141,8 @@ export const locations: Location[] = [
     ],
     metaDescription:
       "Professionele 3D prints in Hoboken voor Blue Gate en Scheldeprojecten. PLA, PETG en TPU met snelle levering.",
+    servicedAreas: ["Hoboken centrum", "Blue Gate", "Kiel/Hoboken grens", "A12-corridor", "Afhalen Herzele"],
+    sectors: ["Schelde/industrie projecten", "Tooling voor Blue Gate bedrijven", "Props/retail voor Kiel/Hoboken"],
   },
   {
     slug: "3d-printen-in-merksem",
@@ -136,6 +156,8 @@ export const locations: Location[] = [
     ],
     metaDescription:
       "3D prints in Merksem met snelle doorlooptijd voor Bredabaan en Sportpaleis. PLA, PETG en TPU beschikbaar.",
+    servicedAreas: ["Merksem centrum", "Bredabaan", "Sportpaleis omgeving", "Ekeren/Merksem grens", "Afhalen Herzele"],
+    sectors: ["Retail/props Bredabaan", "Events/Sportpaleis omgeving", "KMO tooling in Merksem/Ekeren"],
   },
   {
     slug: "3d-printen-in-wilrijk",
@@ -149,6 +171,68 @@ export const locations: Location[] = [
     ],
     metaDescription:
       "Snelle 3D print service in Wilrijk voor campus Drie Eiken en bedrijven langs de A12. Materialen PLA, PETG en TPU.",
+    servicedAreas: ["Wilrijk centrum", "Campus Drie Eiken", "A12-corridor", "Hoboken/Wilrijk grens", "Afhalen Herzele"],
+    sectors: ["Onderwijs/UAntwerpen Drie Eiken", "KMO's langs A12", "Props/events voor lokale organisaties"],
+  },
+  {
+    slug: "3d-printen-in-kortrijk",
+    city: "Kortrijk",
+    relatedPhrases: [
+      "3D print service Kortrijk",
+      "rapid prototyping Kortrijk",
+      "3D printing bedrijf Kortrijk",
+      "3D printen nabij Kortrijk",
+      "3D model laten printen Kortrijk",
+    ],
+    metaDescription:
+      "3D printen in Kortrijk voor prototypes, tools en props. Snelle levering richting Kortrijk Weide, Overleie en R8. PLA, PETG of TPU met persoonlijk advies.",
+    servicedAreas: [
+      "Kortrijk centrum",
+      "Kortrijk Weide",
+      "Overleie",
+      "Heule",
+      "Marke",
+      "Bissegem",
+      "Kuurne",
+      "Harelbeke",
+      "Afhalen Provincieweg 34a, 9552 Herzele",
+    ],
+    sectors: [
+      "Prototyping voor maakbedrijven in Kortrijk/Kuurne",
+      "Fixtures/tooling voor industrie langs R8 en E17",
+      "Props en displays voor events op Kortrijk Xpo",
+      "Onderwijs/Howest en Kulak studentenprojecten",
+    ],
+  },
+  {
+    slug: "3d-printen-in-mechelen",
+    city: "Mechelen",
+    relatedPhrases: [
+      "3D print service Mechelen",
+      "rapid prototyping Mechelen",
+      "3D printing bedrijf Mechelen",
+      "3D printen nabij Mechelen",
+      "3D model laten printen Mechelen",
+    ],
+    metaDescription:
+      "3D printen in Mechelen voor prototypes, tooling en props. Snelle levering richting Mechelen-Zuid, Nekkerhal en KMO-zones. PLA, PETG of TPU met persoonlijk advies.",
+    servicedAreas: [
+      "Mechelen centrum",
+      "Mechelen-Zuid",
+      "Nekkerhal",
+      "Battel",
+      "Muizen",
+      "Walem",
+      "Leest",
+      "Hombeek",
+      "Afhalen Provincieweg 34a, 9552 Herzele",
+    ],
+    sectors: [
+      "Prototyping voor KMO's in Mechelen",
+      "Fixtures/tooling voor bedrijven langs E19/R6",
+      "Props en displays voor events in Nekkerhal",
+      "Onderwijs en labs (Thomas More, KU Leuven campus Mechelen)",
+    ],
   },
   {
     slug: "3d-printen-in-mortsel",
@@ -227,19 +311,6 @@ export const locations: Location[] = [
     ],
     metaDescription:
       "3D printing in Kapellen met snelle offertes voor ondernemers rond de Essenhoutstraat en KMO-zone Bosduin. Materialen PLA, PETG en TPU.",
-  },
-  {
-    slug: "3d-printen-in-mechelen",
-    city: "Mechelen",
-    relatedPhrases: [
-      "3D print service Mechelen",
-      "rapid prototyping Mechelen",
-      "3D printing bedrijf Mechelen",
-      "3D printen nabij Nekkerhal",
-      "3D model laten printen Mechelen",
-    ],
-    metaDescription:
-      "3D printen in Mechelen voor teams rond Grote Markt, Nekkerhal en Kazerne Dossin. Snelle levering van PLA, PETG en TPU prototypes.",
   },
   {
     slug: "3d-printen-in-heffen",
@@ -955,6 +1026,8 @@ export const locations: Location[] = [
       "3D model laten printen gentbrugge",
     ],
     metaDescription: "Professionele 3D prints in Gentbrugge voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
+    servicedAreas: ["Gentbrugge centrum", "Ledeberg", "Oostakker/Gentbrugge grens", "Scheldekaai", "Afhalen Herzele"],
+    sectors: ["Prototyping voor KMO's in Gentbrugge/Ledeberg", "Retail/props voor Gentbrugse wijken", "Tooling voor bedrijven langs R4/Schelde"],
   },
   {
     slug: "3d-printen-in-affligem",
@@ -1018,6 +1091,8 @@ export const locations: Location[] = [
       "3D model laten printen dendermonde",
     ],
     metaDescription: "Professionele 3D prints in Dendermonde voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
+    servicedAreas: ["Dendermonde centrum", "Sint-Gillis-bij-Dendermonde", "Grembergen", "Baasrode", "Hamme", "Afhalen Herzele"],
+    sectors: ["Prototyping voor KMO's in Dendermonde/Hamme", "Fixtures/tooling voor industrie rond Schelde/Dender", "Props/events voor culturele sites in Dendermonde"],
   },
   {
     slug: "3d-printen-in-haaltert",
@@ -1090,6 +1165,8 @@ export const locations: Location[] = [
       "3D model laten printen wetteren",
     ],
     metaDescription: "Professionele 3D prints in Wetteren voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
+    servicedAreas: ["Wetteren centrum", "Massemen", "Serskamp", "Overbeke", "Destelbergen/Wetteren grens", "Afhalen Herzele"],
+    sectors: ["Chemie/lab tooling in Wetteren", "Retail/props voor Dampoort/Wetteren", "Prototyping voor KMO's in Wetteren"],
   },
   {
     slug: "3d-printen-in-brakel",
@@ -1205,6 +1282,13 @@ export const locations: Location[] = [
       "3D model laten printen gent",
     ],
     metaDescription: "Professionele 3D prints in Gent voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
+    servicedAreas: ["Gent centrum", "Zwijnaarde", "Destelbergen", "Merelbeke", "Drongen", "Gent Zeehaven", "Afhalen Herzele"],
+    sectors: [
+      "Prototyping voor start-ups (Tech Lane Zwijnaarde)",
+      "Tooling/fixtures voor maakbedrijven in Gent Zeehaven",
+      "Props en displays voor musea/cultuurhuizen in Gent",
+      "Onderwijs en labs (UGent, hogescholen) in Gent",
+    ],
   },
   {
     slug: "3d-printen-in-deinze",
@@ -1910,7 +1994,7 @@ export const locations: Location[] = [
       "3D model laten printen Wambeek",
     ],
     metaDescription:
-      "3D printservice in Wambeek nabij landelijke assen en lokale kmo’s. Snelle levering in PLA, PETG en TPU.",
+      "3D printservice in Wambeek nabij landelijke assen en lokale kmos. Snelle levering in PLA, PETG en TPU.",
   },
   {
     slug: "3d-printen-in-maldegem",
@@ -2094,6 +2178,281 @@ export const locations: Location[] = [
     metaDescription:
       "3D prints in Middelburg (Maldegem) vlak bij Krommewege en industriezone. Prototypes en kleine series in PLA, PETG en TPU.",
   },
+  {
+    slug: "3d-printen-in-avekapelle",
+    city: "Avekapelle",
+    relatedPhrases: [
+      "3D print service Avekapelle",
+      "rapid prototyping Avekapelle",
+      "3D printing bedrijf Avekapelle",
+      "3D printen nabij Avekapelle",
+      "3D model laten printen Avekapelle",
+    ],
+    metaDescription:
+      "3D print service voor Avekapelle en de Viconia Kleiputten: PLA, PETG en TPU voor natuur, landbouw en retail met snelle levering.",
+    servicedAreas: [
+      "Avekapelle dorpskern",
+      "Viconia Kleiputten",
+      "Lovaart en omliggende hoeves",
+      "Rand Veurne en Koksijde",
+      "Afhalen Provincieweg 34a, 9552 Herzele",
+    ],
+    sectors: [
+      "Natuur- en educatieprojecten rond Viconia",
+      "Landbouw en hoeveverkoop tussen Veurne en Koksijde",
+      "Creatieve zelfstandigen en retail in Avekapelle",
+    ],
+  },
+  {
+    slug: "3d-printen-in-booitshoeke",
+    city: "Booitshoeke",
+    relatedPhrases: [
+      "3D print service Booitshoeke",
+      "rapid prototyping Booitshoeke",
+      "3D printing bedrijf Booitshoeke",
+      "3D printen nabij Booitshoeke",
+      "3D model laten printen Booitshoeke",
+    ],
+    metaDescription:
+      "3D prints voor Booitshoeke en de polderbedrijven langs de Lovaart. Functionele onderdelen en zichtwerk in PLA, PETG of TPU.",
+    servicedAreas: [
+      "Booitshoeke dorpskern",
+      "Lovaart en polderbedrijven",
+      "Fintele en De Moeren route",
+      "Veurne en Alveringem rand",
+      "Afhalen Provincieweg 34a, 9552 Herzele",
+    ],
+    sectors: [
+      "Landbouwmechanisatie en irrigatie",
+      "Streekproducten en hoevewinkels",
+      "Toerisme en wandelroutes rond Booitshoeke",
+    ],
+  },
+  {
+    slug: "3d-printen-in-bulskamp",
+    city: "Bulskamp",
+    relatedPhrases: [
+      "3D print service Bulskamp",
+      "rapid prototyping Bulskamp",
+      "3D printing bedrijf Bulskamp",
+      "3D printen nabij Bulskamp",
+      "3D model laten printen Bulskamp",
+    ],
+    metaDescription:
+      "3D print service voor Bulskamp, tussen Veurne en Lo-Reninge. Kies PLA, PETG of TPU voor landbouw, toerisme en techniek.",
+    servicedAreas: [
+      "Bulskamp dorpskern",
+      "Kanaal Nieuwpoort-Duinkerke",
+      "Lo-Reninge en Veurne rand",
+      "Polderbedrijven richting Houtem",
+      "Afhalen Provincieweg 34a, 9552 Herzele",
+    ],
+    sectors: [
+      "Landbouw en irrigatieprojecten in de polders",
+      "Toerisme en erfgoed rond Lo en kanaalzone",
+      "Techniek en onderhoud voor lokale KMO's",
+    ],
+  },
+  {
+    slug: "3d-printen-in-de-moeren",
+    city: "De Moeren",
+    relatedPhrases: [
+      "3D print service De Moeren",
+      "rapid prototyping De Moeren",
+      "3D printing bedrijf De Moeren",
+      "3D printen nabij De Moeren",
+      "3D model laten printen De Moeren",
+    ],
+    metaDescription:
+      "3D prints voor De Moeren met focus op outdoor onderdelen en sensorkasten. PETG en TPU die bestand zijn tegen wind en vocht.",
+    servicedAreas: [
+      "De Moeren laagte",
+      "Grens Frankrijk",
+      "Adinkerke en De Panne rand",
+      "Landbouwbedrijven langs de plassen",
+      "Afhalen Provincieweg 34a, 9552 Herzele",
+    ],
+    sectors: [
+      "Waterbeheer en sensing in de polders",
+      "Landbouw en tuinbouw in De Moeren",
+      "Outdoor en toeristische projecten richting kust",
+    ],
+  },
+  {
+    slug: "3d-printen-in-eggewaartskapelle",
+    city: "Eggewaartskapelle",
+    relatedPhrases: [
+      "3D print service Eggewaartskapelle",
+      "rapid prototyping Eggewaartskapelle",
+      "3D printing bedrijf Eggewaartskapelle",
+      "3D printen nabij Eggewaartskapelle",
+      "3D model laten printen Eggewaartskapelle",
+    ],
+    metaDescription:
+      "3D printen in Eggewaartskapelle voor erfgoed, landbouw en verenigingen. Snelle levering van PLA, PETG en TPU onderdelen.",
+    servicedAreas: [
+      "Eggewaartskapelle dorpskom",
+      "Vaubanrand Veurne",
+      "Lampernisse en polders",
+      "Avekapelle en Steenkerke",
+      "Afhalen Provincieweg 34a, 9552 Herzele",
+    ],
+    sectors: [
+      "Erfgoed- en kerkprojecten rond de dorpskern",
+      "Landbouw en maatwerk voor hoeves",
+      "Lokale verenigingen en evenementen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-houtem",
+    city: "Houtem (Veurne)",
+    relatedPhrases: [
+      "3D print service Houtem Veurne",
+      "rapid prototyping Houtem Veurne",
+      "3D printing bedrijf Houtem Veurne",
+      "3D printen nabij Houtem",
+      "3D model laten printen Houtem",
+    ],
+    metaDescription:
+      "3D prints voor Houtem bij Veurne: tooling voor defensie, installateurs en landbouw. PLA, PETG en TPU met korte doorlooptijd.",
+    servicedAreas: [
+      "Houtem dorpskern",
+      "Militaire site en logistiek kwartier",
+      "Veurne I en II bedrijventerreinen",
+      "N355 richting De Moeren",
+      "Afhalen Provincieweg 34a, 9552 Herzele",
+    ],
+    sectors: [
+      "Defensie en logistieke ondersteuning",
+      "Installateurs en KMO's langs Veurne I-II",
+      "Landbouw en outdoor toepassingen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-steenkerke",
+    city: "Steenkerke",
+    relatedPhrases: [
+      "3D print service Steenkerke",
+      "rapid prototyping Steenkerke",
+      "3D printing bedrijf Steenkerke",
+      "3D printen nabij Steenkerke",
+      "3D model laten printen Steenkerke",
+    ],
+    metaDescription:
+      "3D print service Steenkerke voor erfgoed, landbouw en toerisme rond de Lovaart. Kies PLA, PETG of TPU met persoonlijke begeleiding.",
+    servicedAreas: [
+      "Steenkerke dorpskern",
+      "Lovaart en Fintele",
+      "IJzervlakte",
+      "Veurne en Lo-Reninge",
+      "Afhalen Provincieweg 34a, 9552 Herzele",
+    ],
+    sectors: [
+      "Erfgoed- en WOI-projecten",
+      "Landbouw en mechanisatie",
+      "Toerisme en wandelroutes rond Steenkerke",
+    ],
+  },
+  {
+    slug: "3d-printen-in-veurne",
+    city: "Veurne",
+    relatedPhrases: [
+      "3D print service Veurne",
+      "rapid prototyping Veurne",
+      "3D printing bedrijf Veurne",
+      "3D printen kustregio Veurne",
+      "3D model laten printen Veurne",
+    ],
+    metaDescription:
+      "3D print service voor Veurne: prototypes, zichtwerk en functionele onderdelen voor toerisme, industrie en landbouw. Snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Grote Markt en Vaubanvesten",
+      "Veurne I en II bedrijventerreinen",
+      "Koksijde en De Panne corridor",
+      "De Moeren en polders",
+      "Afhalen Provincieweg 34a, 9552 Herzele",
+    ],
+    sectors: [
+      "Toerisme en musea rond Grote Markt en Vauban",
+      "Landbouw en foodbedrijven in Veurne-Ambacht",
+      "Retail en events langs de E40 en kust",
+    ],
+  },
+  {
+    slug: "3d-printen-in-vinkem",
+    city: "Vinkem",
+    relatedPhrases: [
+      "3D print service Vinkem",
+      "rapid prototyping Vinkem",
+      "3D printing bedrijf Vinkem",
+      "3D printen nabij Vinkem",
+      "3D model laten printen Vinkem",
+    ],
+    metaDescription:
+      "3D prints in Vinkem en Cabourduinen: PLA, PETG en TPU voor landbouw, toerisme en grenslogistiek.",
+    servicedAreas: [
+      "Vinkem dorpskern",
+      "Cabourduinen en grenszone",
+      "Beauvoorde omgeving",
+      "De Moeren en Adinkerke",
+      "Afhalen Provincieweg 34a, 9552 Herzele",
+    ],
+    sectors: [
+      "Landbouw in de grenspolders",
+      "Toerisme en B&B's rond Beauvoorde",
+      "Mobiliteit en fietsen richting Frankrijk",
+    ],
+  },
+  {
+    slug: "3d-printen-in-wulveringem",
+    city: "Wulveringem",
+    relatedPhrases: [
+      "3D print service Wulveringem",
+      "rapid prototyping Wulveringem",
+      "3D printing bedrijf Wulveringem",
+      "3D printen nabij Wulveringem",
+      "3D model laten printen Wulveringem",
+    ],
+    metaDescription:
+      "3D print service Wulveringem met focus op Kasteel Beauvoorde, landbouw en hospitality. Snelle levering van PLA, PETG en TPU.",
+    servicedAreas: [
+      "Wulveringem dorpskern",
+      "Kasteel Beauvoorde",
+      "Alveringem en Veurne corridor",
+      "Polderbedrijven richting Vinkem",
+      "Afhalen Provincieweg 34a, 9552 Herzele",
+    ],
+    sectors: [
+      "Cultureel erfgoed en musea rond Beauvoorde",
+      "Landbouw en mechanisatie",
+      "Gastvrijheid en B&B's in Wulveringem",
+    ],
+  },
+  {
+    slug: "3d-printen-in-zoutenaaie",
+    city: "Zoutenaaie",
+    relatedPhrases: [
+      "3D print service Zoutenaaie",
+      "rapid prototyping Zoutenaaie",
+      "3D printing bedrijf Zoutenaaie",
+      "3D printen nabij Zoutenaaie",
+      "3D model laten printen Zoutenaaie",
+    ],
+    metaDescription:
+      "3D prints in Zoutenaaie tussen Veurne en Diksmuide. Outdoor onderdelen en zichtwerk in PLA, PETG of TPU met levering in de Westhoek.",
+    servicedAreas: [
+      "Zoutenaaie dorpskern",
+      "Handzamevaart en N8",
+      "Veurne-Diksmuide corridor",
+      "Steenkerke en Alveringem rand",
+      "Afhalen Provincieweg 34a, 9552 Herzele",
+    ],
+    sectors: [
+      "Landbouw en agro-tech langs de Handzamevaart",
+      "Toeristische routes naar IJzertoren en Veurne",
+      "Installateurs en aannemers op de N8",
+    ],
+  },
 ];
 // --- HELPERS -------------------------------------------------
 function normSlug(s: string): string {
@@ -2111,15 +2470,46 @@ export function buildDefaultRelatedPhrases(city: string): string[] {
   ]
 }
 
+function buildDefaultServicedAreas(city: string): string[] {
+  const c = city.trim()
+  return [
+    `${c} centrum`,
+    `${c} industriezone`,
+    `${c} en deelgemeenten`,
+    "Afhalen Provincieweg 34a, 9552 Herzele",
+    "Levering in Vlaanderen",
+  ]
+}
+
+function buildDefaultSectors(city: string): string[] {
+  const c = city.trim()
+  return [
+    `Prototyping voor productteams in ${c}`,
+    `Fixtures/tooling voor maakbedrijven rond ${c}`,
+    `Displays/props voor marketing en events in ${c}`,
+    `Onderwijs en makers in ${c}`,
+  ]
+}
+
 export function getAllLocationSlugs(): string[] {
   return locations.map((l) => l.slug)
 }
 
 export function getLocationBySlug(slug: string): Location | undefined {
   const s = normSlug(slug)
-  return locations.find((l) => normSlug(l.slug) === s)
+  const loc = locations.find((l) => normSlug(l.slug) === s)
+  if (!loc) return undefined
+  return {
+    ...loc,
+    servicedAreas: loc.servicedAreas ?? buildDefaultServicedAreas(loc.city),
+    sectors: loc.sectors ?? buildDefaultSectors(loc.city),
+  }
 }
 
 export function listLocations(): Location[] {
-  return [...locations]
+  return locations.map((loc) => ({
+    ...loc,
+    servicedAreas: loc.servicedAreas ?? buildDefaultServicedAreas(loc.city),
+    sectors: loc.sectors ?? buildDefaultSectors(loc.city),
+  }))
 }

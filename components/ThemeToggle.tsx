@@ -15,7 +15,7 @@ export default function ThemeToggle({ className = "" }: { className?: string }) 
       onClick={toggleTheme}
       className={cn(
         "group relative inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] transition",
-        "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-400",
+        "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-400",
         isDark
           ? "border border-[#161821] bg-gradient-to-r from-[#0B0F1A] via-[#0B0F1A] to-[#0F1324] text-[#7dd0ff] shadow-[0_0_16px_rgba(0,230,255,.28)] hover:border-[#00E6FF] hover:shadow-[0_0_26px_rgba(0,230,255,.36)]"
           : "border border-slate-200 bg-white/85 text-slate-700 shadow-sm hover:border-slate-300 hover:bg-white",

@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import Faq from "@/components/Faq"
+import { SITE, buildLocalBusinessSchema, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "3D printing voor marketing & events | X3DPrints",
@@ -42,6 +44,55 @@ const highlights = [
   "Planning afgestemd op campagnekalender",
 ]
 
+const faqItems = [
+  {
+    q: "Welke materialen werken goed voor marketingprops?",
+    a: "Voor eye-catchers kiezen we meestal <strong>PLA Silk+</strong>, Marble of Translucent PLA zodat licht en textuur meespelen. Functionele onderdelen kunnen naar PETG wanneer stevigheid primeert.",
+  },
+  {
+    q: "Hoe snel kunnen props klaar zijn?",
+    a: "Kleine batches passen meestal binnen enkele werkdagen. Voor roadshows of events plannen we samen de productie en voorzien we reserveprints indien nodig.",
+  },
+  {
+    q: "Helpen jullie ook met logistiek?",
+    a: "Ja. Afhalen kan in Herzele en verzending binnen België regelen we per project. Vermeld deadlines en leveradres in je aanvraag zodat we meteen een realistische planning geven.",
+  },
+]
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a.replace(/<[^>]*>/g, "") },
+  })),
+}
+
+const pageUrl = String(
+  metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-marketing`,
+)
+const pageDescription = metadata.description ?? SITE.description
+
+const serviceOffers: SchemaOfferInput[] = [
+  {
+    serviceName: "Marketing & events 3D printing",
+    price: "EUR 5",
+    description: "Retail props, awards en activatiematerialen in PLA Silk+, Marble of Translucent.",
+    url: pageUrl,
+  },
+]
+
+const localBusinessJsonLd = buildLocalBusinessSchema({
+  pageUrl,
+  description: pageDescription,
+  image: "/images/og-home.jpg",
+  areaServed: "Gent & Vlaanderen",
+  priceRange: "EUR 5 - EUR 49",
+})
+
+const serviceJsonLd = buildServiceSchema("3D printing voor marketing & events", serviceOffers, pageUrl)
+
 export default function MarketingSegmentPage() {
   return (
     <main className="relative overflow-hidden px-4 pb-24 pt-12 sm:px-6 lg:px-8">
@@ -60,7 +111,7 @@ export default function MarketingSegmentPage() {
           Props, giveaways en instore displays vanuit een éénmansstudio in Herzele. Je krijgt transparante timings, materiaaladvies en snelle updates zonder agency-lagen.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact?material=PLA%20Silk%2B">Vraag offerte of advies</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-silk-plus">Vraag offerte of advies</ShimmerButton>
           <Link
             href="/materials#material-suggestion-tool"
             className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
@@ -142,6 +193,20 @@ export default function MarketingSegmentPage() {
           </ul>
         </GlassCard>
       </section>
+
+      <Faq title="FAQ marketing & events" items={faqItems} className="mt-12" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
     </main>
   )
 }

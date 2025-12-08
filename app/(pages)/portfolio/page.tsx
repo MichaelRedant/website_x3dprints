@@ -5,7 +5,8 @@ import GlassCard from "@/components/GlassCard"
 import GlassOrb from "@/components/GlassOrb"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
-import { readdirSync } from "node:fs"
+import VideoGallery from "@/components/VideoGallery"
+import { readdirSync, statSync } from "node:fs"
 import path from "node:path"
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export const metadata: Metadata = {
 
 const portfolioDir = path.join(process.cwd(), "public/images/portfolio")
 const portfolioUrl = "https://www.x3dprints.be/portfolio"
+const siteUrl = "https://www.x3dprints.be"
 
 const toTitleCase = (value: string) =>
   value
@@ -43,9 +45,13 @@ const toTitleCase = (value: string) =>
 
 const photos = readdirSync(portfolioDir)
   .filter((f) => /\.(?:png|jpe?g|webp)$/i.test(f))
-  .sort((a, b) => a.localeCompare(b))
-  .map((file, index) => {
-    const baseLabel = file
+  .map((file) => {
+    const stats = statSync(path.join(portfolioDir, file))
+    return { file, mtime: stats.mtimeMs }
+  })
+  .sort((a, b) => b.mtime - a.mtime)
+  .map((entry, index) => {
+    const baseLabel = entry.file
       .replace(/\.[^.]+$/, "")
       .replace(/[-_]+/g, " ")
       .replace(/\s+/g, " ")
@@ -55,10 +61,10 @@ const photos = readdirSync(portfolioDir)
       .replace(/^\d+$/, "")
       .trim()
     const label = toTitleCase(cleaned || `maatwerk print ${index + 1}`)
-    const alt = `${label} 3D print`
+    const alt = `${label} – maatwerk 3D print uit Herzele`
     const info = `Portfolio beeld ${index + 1}: ${label} geproduceerd door X3DPrints in Herzele.`
     return {
-      src: `/images/portfolio/${encodeURIComponent(file)}`,
+      src: `/images/portfolio/${encodeURIComponent(entry.file)}`,
       alt,
       info,
     }
@@ -88,6 +94,11 @@ const focusAreas = [
 ]
 
 const videos = [
+  { id: "5OoKjbqdtTw", title: "Carnaval Aalst Badge", description: "Kleurrijke badge-ets in het thema van Carnaval Aalst." },
+  { id: "IlWhi3ppB30", title: "Tesla Model 3 center compartiment houder", description: "Functionele houder voor het centrale compartiment van een Tesla Model 3." },
+  { id: "ZUqF1z_TqVM", title: "Kerstboom", description: "Decoratieve kerstboom met speelse scharnieren en lichteffecten." },
+  { id: "gY0DRwYZ9pw", title: "Pencil holder (klant ontwerp)", description: "Klantgericht pencil holder design on demand." },
+  { id: "l3lWZZQe1KU", title: "\"You got this\" desk ornament", description: "Motiverend bureauornament geprint op aanvraag." },
   {
     id: "pEVjhj8Esmo",
     title: "Articulated octopus voor Octopus.be",
@@ -126,7 +137,7 @@ const videos = [
   { id: "DPUI88Nj9QU", title: "Gepersonaliseerde winkelkar coins", description: "Bedrukte winkelwagenmuntjes als bedrijfsgadget." },
   { id: "B0nTIBoHho0", title: "Baby boy gift", description: "Cadeau voor een pasgeboren jongen, op maat geprint." },
   { id: "0SQdnzZa034", title: "Gehaakte ballonhond", description: "Skelet voor een gehaakte ballonhond." },
-  { id: "QtUTEn1gaRw", title: "Zombie hand &lsquo;Thing&rsquo;", description: "Halloweenprop geïnspireerd op &lsquo;Thing&rsquo; uit Wednesday." },
+  { id: "QtUTEn1gaRw", title: "Zombie hand 'Thing'", description: "Halloweenprop geinspireerd op 'Thing' uit Wednesday." },
   { id: "ek525KTB6rM", title: "QR code met standaard", description: "Staande QR-code voor promoties of menukaarten." },
   { id: "4aZpwYity2w", title: "Zen sculpture", description: "Minimalistische sculptuur voor een rustige sfeer." },
   { id: "Bo0jpv9hnyg", title: "Fidget studs", description: "Klikbare fidget-studs als speels bureauaccessoire." },
@@ -139,20 +150,25 @@ const newVideoIds = new Set([
   "O9MYk5Mgytc",
   "rRcWkRGwbTo",
   "o9zBbvayF-4",
+  "5OoKjbqdtTw",
+  "IlWhi3ppB30",
+  "ZUqF1z_TqVM",
+  "gY0DRwYZ9pw",
+  "l3lWZZQe1KU",
 ])
 
 const organizationSchema = {
   "@type": "Organization",
   name: "X3DPrints",
-  url: "https://www.x3dprints.be",
+  url: siteUrl,
   logo: {
     "@type": "ImageObject",
-    url: "https://www.x3dprints.be/Logo.webp",
+    url: `${siteUrl}/og-x3dprints.jpg`,
   },
 }
 
 const imageObjects = photos.map((p, index) => {
-  const absoluteUrl = `https://www.x3dprints.be${p.src}`
+  const absoluteUrl = `${siteUrl}${p.src}`
   return {
     "@type": "ImageObject",
     "@id": `${portfolioUrl}#image-${index + 1}`,
@@ -196,6 +212,19 @@ const videoJsonLd = {
     description: v.description,
     thumbnailUrl: `https://img.youtube.com/vi/${v.id}/hqdefault.jpg`,
     embedUrl: `https://www.youtube.com/watch?v=${v.id}`,
+  })),
+}
+
+const itemListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "X3DPrints portfolio items",
+  itemListElement: photos.map((photo, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: `${siteUrl}${photo.src}`,
+    name: photo.alt,
+    description: photo.info,
   })),
 }
 
@@ -248,6 +277,20 @@ export default function Page() {
                   className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/50 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
                 >
                   Prijsindicaties
+                </Link>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <Link
+                  href="/segments/3d-printing-marketing"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/60 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-slate-900 hover:bg-white"
+                >
+                  Retail cases
+                </Link>
+                <Link
+                  href="/segments/3d-printing-tabletop"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/60 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-slate-900 hover:bg-white"
+                >
+                  Tabletop & hobby
                 </Link>
               </div>
             </Reveal>
@@ -335,6 +378,33 @@ export default function Page() {
                 voor richtprijzen per materiaal en volume.
               </li>
               <li>
+                <Link
+                  className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600"
+                  href="/segments/3d-printing-marketing"
+                >
+                  Retail & marketing cases
+                </Link>{" "}
+                als inspiratie voor etalages, POS props en displays.
+              </li>
+              <li>
+                <Link
+                  className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600"
+                  href="/segments/3d-printing-tabletop"
+                >
+                  Tabletop & hobby series
+                </Link>{" "}
+                met miniatures, terrain en accessoires voor de niche community.
+              </li>
+              <li>
+                <Link
+                  className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600"
+                  href="/segments/3d-printing-makers"
+                >
+                  Particulieren prints
+                </Link>{" "}
+                voor functioneel, recreatief of decoratief maatwerk.
+              </li>
+              <li>
                 Klaar om te starten? Ga meteen naar{" "}
                 <Link className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600" href="/contact">
                   het contactformulier
@@ -351,10 +421,10 @@ export default function Page() {
           <Reveal className="max-w-3xl">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Fotogalerij van 3D prints</h2>
             <p className="mt-2 text-slate-600">
-              Scroll door productshots, prototypes en decorstukken. Klik door voor een vergrote weergave met context zodat elke foto scanbaar blijft voor klanten én zoekmachines.
+              Scroll door productshots, prototypes en decorstukken. Klik door voor een vergrote weergave met context zodat elke foto scanbaar blijft voor klanten en zoekmachines.
             </p>
           </Reveal>
-          <Reveal delay={0.12} className="mt-8">
+          <Reveal className="mt-10">
             <AutoCarousel items={photos} speed={18} />
           </Reveal>
         </div>
@@ -368,47 +438,8 @@ export default function Page() {
               Kijk mee hoe onderdelen laag per laag worden opgebouwd. Alle video&rsquo;s zijn geprint, gefilmd en nabewerkt in de studio van X3DPrints.
             </p>
           </Reveal>
-          <div className="mt-10 grid gap-10 md:grid-cols-2">
-            {videos.map((video, index) => (
-              <Reveal
-                key={video.id}
-                delay={0.1 + index * 0.03}
-                className="h-full"
-              >
-                <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/40 bg-white/70 p-4 shadow-lg backdrop-blur transition-transform hover:-translate-y-1 hover:shadow-xl">
-                  <div className="relative overflow-hidden rounded-2xl border border-slate-200/60">
-                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-slate-900/0 via-slate-900/0 to-slate-900/10 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden />
-                    <iframe
-                      src={`https://www.youtube-nocookie.com/embed/${video.id}?rel=0`}
-                      title={video.title}
-                      loading="lazy"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                      className="aspect-video w-full"
-                    />
-                    {newVideoIds.has(video.id) && (
-                      <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-emerald-500/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
-                        Nieuw
-                      </span>
-                    )}
-                  </div>
-                  <div className="mt-4 flex flex-1 flex-col">
-                    <h3 className="text-lg font-semibold text-slate-900">{video.title}</h3>
-                    <p className="mt-2 flex-1 text-sm text-slate-600">{video.description}</p>
-                    <a
-                      href={`https://www.youtube.com/watch?v=${video.id}`}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 transition hover:text-emerald-700"
-                    >
-                      Bekijk op YouTube
-                      <span aria-hidden>→</span>
-                    </a>
-                  </div>
-                </article>
-              </Reveal>
-            ))}
+          <div className="mt-10">
+            <VideoGallery videos={videos} highlightIds={Array.from(newVideoIds)} />
           </div>
         </div>
       </section>
@@ -424,7 +455,7 @@ export default function Page() {
                   Laat ons mee nadenken over materiaal, afwerking en planning.
                 </h2>
                 <p className="mt-3 text-base text-slate-600">
-                  Deel je ontwerpbestanden en ontvang binnen één werkdag een vrijblijvende offerte met advies.
+                  Deel je ontwerpbestanden en ontvang binnen een werkdag een vrijblijvende offerte met advies.
                 </p>
                 <div className="mt-6 flex flex-wrap justify-center gap-3">
                   <ShimmerButton href="/contact">Vraag een offerte aan</ShimmerButton>
@@ -443,6 +474,7 @@ export default function Page() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(imageJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
     </main>
   )
 }

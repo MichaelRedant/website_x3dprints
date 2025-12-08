@@ -18,11 +18,9 @@ export const metadata: Metadata = {
       "Filament Vrijdag van X3DPrints. Alles over PLA: eigenschappen, toepassingen, beperkingen en printinstellingen plus vergelijking met PETG en TPU.",
     url: canonical,
     type: "article",
-    article: {
-      publishedTime: publishedDate,
-      authors: ["https://www.x3dprints.be"],
-      tags: ["PLA 3D printen", "Filament Vrijdag", "3D print materiaal"],
-    },
+    publishedTime: publishedDate,
+    authors: ["https://www.x3dprints.be"],
+    tags: ["PLA 3D printen", "Filament Vrijdag", "3D print materiaal"],
     images: [
       {
         url: "/images/og-home.jpg",
@@ -246,7 +244,7 @@ export default function FilamentVrijdagPlaPage() {
                 <li>
                   <Link
                     href="/blog"
-                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                   >
                     Blog
                   </Link>

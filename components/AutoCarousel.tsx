@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useState, useEffect } from "react"
+import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import { createPortal } from "react-dom"
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
@@ -27,19 +27,61 @@ export default function AutoCarousel({
 }) {
   const [active, setActive] = useState<Photo | null>(null)
   const [index, setIndex] = useState(0)
+  const [previousIndex, setPreviousIndex] = useState<number | null>(null)
   const [mounted, setMounted] = useState(false)
+  const preloaded = useRef<Set<string>>(new Set())
+
   useEffect(() => setMounted(true), [])
+
+  const goTo = useCallback(
+    (direction: 1 | -1) => {
+      if (items.length <= 1) return
+      setIndex((current) => {
+        const nextIndex = (current + direction + items.length) % items.length
+        setPreviousIndex(current)
+        return nextIndex
+      })
+    },
+    [items.length],
+  )
 
   useEffect(() => {
     if (items.length <= 1) return
-    const id = setInterval(() => {
-      setIndex((i) => (i + 1) % items.length)
-    }, speed * 1000)
+    const id = setInterval(() => goTo(1), speed * 1000)
     return () => clearInterval(id)
-  }, [items.length, speed])
+  }, [items.length, speed, goTo])
 
-  const prev = () => setIndex((i) => (i - 1 + items.length) % items.length)
-  const next = () => setIndex((i) => (i + 1) % items.length)
+  useEffect(() => {
+    if (items.length === 0) return
+    const next = items[(index + 1) % items.length]
+    if (!next || preloaded.current.has(next.src) || typeof window === "undefined") return
+    const img = new window.Image()
+    img.src = next.src
+    preloaded.current.add(next.src)
+  }, [index, items])
+
+  useEffect(() => {
+    if (!active) return
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setActive(null)
+    }
+    window.addEventListener("keydown", onKeyDown)
+    return () => window.removeEventListener("keydown", onKeyDown)
+  }, [active])
+
+  const visibleIndices = useMemo(() => {
+    const set = new Set<number>()
+    set.add(index)
+    if (previousIndex !== null) set.add(previousIndex)
+    return Array.from(set)
+  }, [index, previousIndex])
+
+  const prev = () => goTo(-1 as const)
+  const next = () => goTo(1 as const)
+
+  if (items.length === 0) {
+    return null
+  }
 
   return (
     <section
@@ -56,32 +98,37 @@ export default function AutoCarousel({
 
       <div className="relative w-full overflow-hidden">
         <div className={`relative ${itemClass}`}>
-          {items.map((p, i) => (
-            <button
-              key={p.src}
-              onClick={() => setActive(p)}
-              aria-label={`Vergroot afbeelding: ${p.alt}`}
-              className={[
-                "absolute inset-0 w-full overflow-hidden rounded-2xl border border-white/30",
-                "bg-gradient-to-br from-white/85 via-white/70 to-slate-50/85",
-                "shadow-[0_18px_45px_rgba(15,23,42,0.14)] backdrop-blur",
-                "transition-opacity duration-700",
-                i === index ? "opacity-100" : "pointer-events-none opacity-0",
-              ].join(" ")}
-            >
-              <Image
-                src={p.src}
-                alt={p.alt}
-                fill
-                sizes="(max-width: 768px) 90vw, (max-width: 1200px) 60vw, 720px"
-                className="object-contain"
-                priority={i === index}
-              />
-              <span className="absolute bottom-4 left-4 rounded-md bg-white/85 px-3 py-1 text-[12px] font-medium text-slate-800 shadow-sm backdrop-blur">
-                {p.alt}
-              </span>
-            </button>
-          ))}
+          {visibleIndices.map((visibleIdx) => {
+            const photo = items[visibleIdx]
+            const isActive = visibleIdx === index
+            return (
+              <button
+                key={`${photo.src}-${visibleIdx}`}
+                onClick={() => setActive(photo)}
+                aria-label={`Vergroot afbeelding: ${photo.alt}`}
+                className={[
+                  "absolute inset-0 w-full overflow-hidden rounded-2xl border border-white/30",
+                  "bg-gradient-to-br from-white/85 via-white/70 to-slate-50/85",
+                  "shadow-[0_18px_45px_rgba(15,23,42,0.14)] backdrop-blur",
+                  "transition-opacity duration-700",
+                  isActive ? "opacity-100" : "pointer-events-none opacity-0",
+                ].join(" ")}
+              >
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  sizes="(max-width: 768px) 90vw, (max-width: 1200px) 60vw, 720px"
+                  className="object-contain"
+                  priority={visibleIdx === 0}
+                  loading={visibleIdx === 0 ? "eager" : "lazy"}
+                />
+                <span className="absolute bottom-4 left-4 rounded-md bg-white/85 px-3 py-1 text-[12px] font-medium text-slate-800 shadow-sm backdrop-blur">
+                  {photo.alt}
+                </span>
+              </button>
+            )
+          })}
         </div>
 
         {items.length > 1 && (
@@ -104,7 +151,8 @@ export default function AutoCarousel({
         )}
       </div>
 
-      {mounted && active &&
+      {mounted &&
+        active &&
         createPortal(
           <div
             role="dialog"
@@ -147,25 +195,9 @@ export default function AutoCarousel({
                 {active.info && <p className="mt-1 text-sm text-slate-700">{active.info}</p>}
               </div>
             </div>
-
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  (function(){
-                    const onKey = (e) => { if (e.key === 'Escape') window.__closeX3D?.() }
-                    window.__closeX3D = () => {
-                      document.querySelector('[data-x3d-close]')?.click?.()
-                    }
-                    window.addEventListener('keydown', onKey, { once: true })
-                  })()
-                `,
-              }}
-            />
-            <button data-x3d-close onClick={() => setActive(null)} className="hidden" />
           </div>,
-          document.body
-        )
-      }
+          document.body,
+        )}
 
       <style
         dangerouslySetInnerHTML={{

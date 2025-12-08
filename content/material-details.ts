@@ -33,6 +33,11 @@ export type MaterialDetailContent = {
   faq?: FaqItem[]
   leadTime?: string
   priceIndicator?: string
+  filamentFriday?: {
+    title: string
+    description: string
+    href: string
+  }
 }
 
 const materialFaq: Record<MaterialKey, FaqItem[]> = {

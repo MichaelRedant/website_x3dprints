@@ -1,6 +1,18 @@
 /* ===== Tailwind v4 core imports ===== */
 @import "tailwindcss";
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* ===== Jouw globale styles (hier mag je @apply blijven gebruiken) ===== */
 
 /* voorbeeld: typografie en kleur-tokens */
@@ -29,6 +41,9 @@ body {
   text-rendering: optimizeLegibility;
   position: relative;
   min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
 }
 
 :root.dark {
@@ -42,6 +57,19 @@ body {
     linear-gradient(180deg, #06060A 0%, #06060A 100%);
   color: #dfe7ff;
   text-shadow: 0 0 12px rgba(0,230,255,0.12);
+}
+
+:root.dark input,
+:root.dark textarea,
+:root.dark select {
+  color: #f7fbff;
+  caret-color: #f7fbff;
+}
+
+:root.dark input::placeholder,
+:root.dark textarea::placeholder,
+:root.dark select::placeholder {
+  color: rgba(247, 251, 255, 0.6);
 }
 
 :root.dark main {

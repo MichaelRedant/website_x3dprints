@@ -14,6 +14,38 @@ export const metadata: Metadata = {
 }
 
 export default function ContactPage() {
+  const faq = [
+    {
+      q: "Hoe snel krijg ik antwoord?",
+      a: "Meestal binnen 24 uur. Voeg STL/STEP en gewenste timing toe voor een gericht voorstel.",
+    },
+    {
+      q: "Welke bestanden kan ik doorsturen?",
+      a: "STL en STEP zijn ideaal. Vermeld kritieke maten, toepassing en gewenst materiaal.",
+    },
+    {
+      q: "Kunnen jullie materiaal adviseren?",
+      a: "Ja. Geef door waarvoor het onderdeel dient; we matchen PLA, PETG of TPU en delen advies in de reply.",
+    },
+  ]
+
+  const contactJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    mainEntityOfPage: "https://www.x3dprints.be/contact",
+    description: metadata.description,
+  }
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  }
+
   return (
     <main className="relative">
       {/* decor */}
@@ -46,7 +78,7 @@ export default function ContactPage() {
                   Vul zo concreet mogelijk in. Voeg link(s) naar STL/STEP toe in het bericht.
                 </p>
                 <div className="mt-6">
-                  <Suspense fallback={<div className="text-sm text-slate-500">Formulier wordt geladen…</div>}>
+                  <Suspense fallback={<div className="text-sm text-slate-500">Formulier wordt geladen...</div>}>
                     <ContactForm />
                   </Suspense>
                 </div>
@@ -65,7 +97,7 @@ export default function ContactPage() {
                   </p>
                   <p>
                     <span className="block text-slate-500">Regio</span>
-                    Herzele — leveringen in groot Gent/Aalst mogelijk
+                    Herzele - leveringen in groot Gent/Aalst mogelijk
                   </p>
                   <p>
                     <span className="block text-slate-500">Bestanden</span>
@@ -75,7 +107,7 @@ export default function ContactPage() {
                     <h3 className="text-sm font-semibold text-slate-900">Handig om te vermelden</h3>
                     <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
                       <li>Toepassing en omgeving (binnen/buiten, warmte/UV)</li>
-                      <li>Gewenst materiaal (PLA, PETG, TPU, …) en kleur</li>
+                      <li>Gewenst materiaal (PLA, PETG, TPU, etc.) en kleur</li>
                       <li>Afwerking: rauw, geschuurd, geprimed, gelakt</li>
                       <li>Aantal stuks en gewenste leverdatum</li>
                     </ul>
@@ -86,6 +118,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     </main>
   )
 }

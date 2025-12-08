@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import Faq from "@/components/Faq"
+import { SITE, buildLocalBusinessSchema, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "3D printing voor tabletop minis | X3DPrints",
@@ -40,7 +42,7 @@ const workflow = [
   "Finishing: optioneel licht schuren + primer (grijs) zodat je direct kan schilderen.",
 ]
 
-const faq = [
+const faqItems = [
   {
     q: "Kan ik minis laten ontwerpen?",
     a: "Ja, maar ontwerp zit niet in de printprijs. Lever STL/STEP of vraag onze ontwerpservice aan €45/uur.",
@@ -58,6 +60,40 @@ const faq = [
     a: "Ja, we kunnen licht schuren en primeren (grijs). Vermeld het bij je aanvraag.",
   },
 ]
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+}
+
+const pageUrl = String(
+  metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-tabletop`,
+)
+const pageDescription = metadata.description ?? SITE.description
+
+const serviceOffers: SchemaOfferInput[] = [
+  {
+    serviceName: "Tabletop & hobby 3D printing",
+    price: "EUR 5",
+    description: "Miniatures, terrain en accessoires in PLA Matte, PETG of TPU.",
+    url: pageUrl,
+  },
+]
+
+const localBusinessJsonLd = buildLocalBusinessSchema({
+  pageUrl,
+  description: pageDescription,
+  image: "/images/og-home.jpg",
+  areaServed: "Gent & Vlaanderen",
+  priceRange: "EUR 5 - EUR 49",
+})
+
+const serviceJsonLd = buildServiceSchema("3D printing voor tabletop minis", serviceOffers, pageUrl)
 
 export default function TabletopSegmentPage() {
   return (
@@ -78,7 +114,7 @@ export default function TabletopSegmentPage() {
           Ontwerp van het 3D model is niet inbegrepen; je levert STL/STEP of we ontwerpen aan €45/uur.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact">Bespreek je minis</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-matte">Bespreek je minis</ShimmerButton>
           <Link
             href="/blog/3d-printen-mini-figuren"
             className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
@@ -90,6 +126,12 @@ export default function TabletopSegmentPage() {
             className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
           >
             Bekijk voorbeelden
+          </Link>
+          <Link
+            href="/materials#material-suggestion-tool"
+            className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
+          >
+            Material Suggestion Tool
           </Link>
         </div>
       </header>
@@ -169,26 +211,28 @@ export default function TabletopSegmentPage() {
             <Link href="/blog/3d-printen-mini-figuren" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
               Lees de miniaturen blog
             </Link>
-            <Link href="/contact" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
+            <Link href="/contact?material=pla-matte" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
               Start je aanvraag
             </Link>
           </div>
         </GlassCard>
       </section>
 
-      <section className="mx-auto mt-10 max-w-5xl">
-        <GlassCard className="p-6 sm:p-8">
-          <h2 className="text-xl font-semibold text-slate-900">FAQ voor tabletop minis</h2>
-          <div className="mt-4 space-y-3 text-sm text-slate-700">
-            {faq.map((item) => (
-              <div key={item.q} className="rounded-xl border border-slate-200/70 bg-white/70 p-3">
-                <p className="text-sm font-semibold text-slate-800">{item.q}</p>
-                <p className="mt-1 text-sm text-slate-700">{item.a}</p>
-              </div>
-            ))}
-          </div>
-        </GlassCard>
+      <section className="mx-auto mt-12 max-w-4xl">
+        <Faq title="FAQ voor tabletop minis" items={faqItems} />
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
     </main>
   )
 }

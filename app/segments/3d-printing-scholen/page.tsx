@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import Faq from "@/components/Faq"
+import { SITE, buildLocalBusinessSchema, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "3D printing voor scholen | X3DPrints",
@@ -25,6 +27,55 @@ const offerings = [
   { title: "Materiaaladvies", copy: "PLA Matte voor maquettes, PETG voor functionele onderdelen, Translucent voor lichtobjecten." },
 ]
 
+const faqItems = [
+  {
+    q: "Welke bestanden leveren leerlingen best aan?",
+    a: "STL of STEP volstaat. Laat leerlingen kort vermelden welke functie het onderdeel heeft en welke maat belangrijk is.",
+  },
+  {
+    q: "Kunnen we meerdere ontwerpen tegelijk laten printen?",
+    a: "Ja. Verzamel de STL/STEP-bestanden in één map, dan plannen we batches per kleur of materiaal om tijd te winnen.",
+  },
+  {
+    q: "Helpen jullie met feedback of workshops?",
+    a: "We kunnen een korte online of on-site sessie geven over materiaalkeuze, oriëntatie en veiligheid. Vermeld de gewenste datum in je aanvraag.",
+  },
+]
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+}
+
+const pageUrl = String(
+  metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-scholen`,
+)
+const pageDescription = metadata.description ?? SITE.description
+
+const serviceOffers: SchemaOfferInput[] = [
+  {
+    serviceName: "Scholen 3D printing",
+    price: "EUR 5",
+    description: "Educatieve pakketten, workshops en bulkprints voor leerlingen.",
+    url: pageUrl,
+  },
+]
+
+const localBusinessJsonLd = buildLocalBusinessSchema({
+  pageUrl,
+  description: pageDescription,
+  image: "/images/og-home.jpg",
+  areaServed: "Gent & Vlaanderen",
+  priceRange: "EUR 5 - EUR 49",
+})
+
+const serviceJsonLd = buildServiceSchema("3D printing voor scholen", serviceOffers, pageUrl)
+
 export default function SchoolsSegmentPage() {
   return (
     <main className="relative overflow-hidden px-4 pb-24 pt-12 sm:px-6 lg:px-8">
@@ -42,7 +93,7 @@ export default function SchoolsSegmentPage() {
           Stimuleer STEM-projecten met betrouwbare prints. We helpen leerlingen STL/STEP op te leveren en geven feedback die ze kunnen toepassen.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact">Vraag educatieve offerte</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-matte">Vraag educatieve offerte</ShimmerButton>
           <Link href="/blog/3d-printen-voor-beginners" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
             Lees: beginnersgids
           </Link>
@@ -102,7 +153,22 @@ export default function SchoolsSegmentPage() {
           </div>
         </GlassCard>
       </section>
+
+      <section className="mx-auto mt-12 max-w-4xl">
+        <Faq title="FAQ voor scholen" items={faqItems} />
+      </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
     </main>
   )
 }
-

@@ -85,10 +85,12 @@ Deze gids definieert rollen, eigenaarschap, kwaliteitsafspraken, checklists en r
 - **Tailwind v4.** `app/globals.css` importeert enkel `tailwindcss` of `preflight/utilities`.
 - **Hero’s.** Gebruik `text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl` voor hoofdheadings.
 - **Material Suggestion Tool.** Houd multi-step logica in component, synchroniseer CTA’s naar `/contact?material=<slug>`.
-- **Contactformulier.** Query `material` moet select prefillen; houd fallback-copy voor 1-persoons planning (geen harde 2-5 dagen belofte).
+- **Contactformulier.** Query `material` moet select prefillen; houd fallback-copy voor 1-persoons planning (geen harde 2-5 dagen belofte) en zorg dat tekst/caret in dark mode altijd leesbaar blijft.
+- **Segment detailpagina's.** Gebruik het `Faq`-component (min. 3 Q/A) + FAQ JSON-LD, toon CTA’s naar `/materials#material-suggestion-tool` en `/contact?material=<slug>`, en herhaal interne links naar relevante blogposts/diensten.
 - **Animaties.** Framer Motion met `useReducedMotion`, geen blocking JS.
 - **Images.** `next/image`, juiste `alt`, vermijd CLS.
 - **Security.** Escape output, valideer API input, geen secrets client-side.
+- **Media componenten.** `AutoCarousel` mag enkel actieve/vorige slides renderen en `VideoGallery` gebruikt de lichte preview-embed. Regressies die LCP/TBT verzwaren moeten vermeden worden.
 
 ---
 
@@ -130,7 +132,7 @@ Deze gids definieert rollen, eigenaarschap, kwaliteitsafspraken, checklists en r
 
 - Metadata API per pagina (`export const metadata`).
 - Headings: 1× H1, daarna logische H2/H3.
-- Interne links: home ↔ services/materials/portfolio/pricing/contact/blog/segments/suggestion tool.
+- Interne links: home ↔ services/materials/portfolio/pricing/contact/blog/segments/suggestion tool. Lokale `[slug]`-pagina’s moeten bovendien `/locaties` linken in de “Verder lezen”-nav.
 - JSON-LD:
   - Layout: LocalBusiness/Organization met adres/telefoon.
   - Home: FAQPage zichtbaar in content.
@@ -170,7 +172,8 @@ Deze gids definieert rollen, eigenaarschap, kwaliteitsafspraken, checklists en r
 3. Houd hero-styling consistent + CTA’s naar materials, blog, segments, contact.
 4. Voeg JSON-LD (FAQ/Article/HowTo) indien van toepassing.
 5. Link vanuit relevante pagina’s (home, footer, blog hub).
-6. Test Lighthouse, a11y, responsive.
+6. Lokale `[slug]`-pagina’s moeten in de “Verder lezen”-nav naar `/locaties` linken (naast services/materials/pricing/contact).
+7. Test Lighthouse, a11y, responsive.
 
 ### 8.2 Nieuwe materiaal detailpagina
 1. Voeg content toe in `content/material-details.ts` + `lib/materials.ts` indien nieuw materiaal.
@@ -197,9 +200,9 @@ Deze gids definieert rollen, eigenaarschap, kwaliteitsafspraken, checklists en r
 
 ### 8.5 Segment landingpage
 1. Plaats onder `app/segments/<slug>/page.tsx`.
-2. Hero consistent, CTA’s naar contact + suggestion tool + relevante blog.
-3. Voeg highlights/stappenplan en FAQ of tips toe.
-4. JSON-LD (FAQ/Service) indien nuttig.
+2. Hero consistent; primaire CTA linkt naar `/contact?material=<slug>` (prefill) en secundaire CTA naar `/materials#material-suggestion-tool` + relevante blog/portfolio items.
+3. Voeg highlights/stappenplan en het `Faq`-component (min. 3 Q/A) toe; hergebruik copy in FAQ JSON-LD.
+4. Voeg Service/FAQ schema toe en plak `<script>` JSON-LD onderaan de pagina.
 5. Update `/app/(pages)/segments/page.tsx` ItemList en sitemap.
 
 ### 8.6 Viewer verbeteringen

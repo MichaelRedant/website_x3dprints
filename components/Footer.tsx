@@ -10,6 +10,8 @@ const socials = [
   { href: "https://www.instagram.com/x3dprints", label: "Instagram", icon: "instagram" },
 ]
 
+const googleReviewLink = "https://g.page/r/CSpxVPgHhTzZEAE/review"
+
 function SocialIcon({ type, className }: { type: string; className?: string }) {
   if (type === "linkedin") {
     return (
@@ -101,6 +103,15 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+            <a
+              href={googleReviewLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 rounded-full border border-amber-200 bg-white/80 px-3 py-1.5 text-xs font-semibold text-amber-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+            >
+              <span aria-hidden className="text-base">⭐</span>
+              Deel je Google review
+            </a>
           </div>
 
           {/* statische links */}
@@ -108,11 +119,13 @@ export default function Footer() {
             <div className="font-semibold text-slate-900">Links</div>
             <ul className="mt-3 space-y-2">
               <li><Link href="/services" className="hover:text-slate-900">Services</Link></li>
+              <li><Link href="/3d-printen" className="hover:text-slate-900">3D printen</Link></li>
               <li><Link href="/materials" className="hover:text-slate-900">Materialen</Link></li>
               <li><Link href="/portfolio" className="hover:text-slate-900">Portfolio</Link></li>
               <li><Link href="/segments" className="hover:text-slate-900">Segmenten</Link></li>
               <li><Link href="/blog" className="hover:text-slate-900">Blog & kennisbank</Link></li>
               <li><Link href="/3d-modelleren" className="hover:text-slate-900">3D modelleren</Link></li>
+              <li><Link href="/sustainability" className="hover:text-slate-900">Duurzaamheid</Link></li>
               <li><Link href="/about" className="hover:text-slate-900">Over ons</Link></li>
               <li><Link href="/pricing" className="hover:text-slate-900">Prijzen</Link></li>
               <li><Link href="/faq" className="hover:text-slate-900">FAQ</Link></li>
@@ -138,7 +151,7 @@ export default function Footer() {
         {/* bottom bar */}
         <div className="border-t">
           <Container className="flex flex-col items-center justify-between gap-3 py-6 text-center text-xs text-slate-500 sm:flex-row">
-            <p>© {new Date().getFullYear()} X3DPrints. Alle rechten voorbehouden.</p>
+            <p>(c) {new Date().getFullYear()} X3DPrints. Alle rechten voorbehouden.</p>
             <div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-4">
               <CookieSettingsButton className="text-slate-500 hover:text-slate-900" />
               <p className="text-slate-400">

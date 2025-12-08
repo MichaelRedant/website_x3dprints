@@ -2,6 +2,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import GlassOrb from "@/components/GlassOrb"
+import { SITE, buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 import { getAllLocationSlugs, getLocationBySlug } from "@/lib/locations"
 
 export const revalidate = 21600 // 6u heropbouw
@@ -9,12 +10,12 @@ export const revalidate = 21600 // 6u heropbouw
 export const metadata: Metadata = {
   title: "3D printen per stad | X3DPrints",
   description:
-    "Overzicht van lokale landingspagina’s: 3D printen per stad. Snel intern linken en meteen naar je regio navigeren.",
+    "Overzicht van lokale landingspaginas: 3D printen per stad. Snel intern linken en meteen naar je regio navigeren.",
   alternates: { canonical: "https://www.x3dprints.be/locaties" },
   openGraph: {
     title: "3D printen per stad",
     description:
-      "Overzicht van lokale landingspagina’s: 3D printen per stad. Snel intern linken en meteen naar je regio navigeren.",
+      "Overzicht van lokale landingspaginas: 3D printen per stad. Snel intern linken en meteen naar je regio navigeren.",
     url: "https://www.x3dprints.be/locaties",
     siteName: "X3DPrints",
     type: "website",
@@ -39,6 +40,12 @@ export default function Page() {
   }
   const letters = Object.keys(grouped).sort()
 
+  const localOffers: SchemaOfferInput[] = [
+    { serviceName: "3D printen in Herzele", price: "EUR 5", description: "Snel prototyping en kleine batches." },
+    { serviceName: "3D printen in Gent", price: "EUR 5", description: "PLA, PETG en TPU voor creatieve teams." },
+    { serviceName: "3D printen in Aalst", price: "EUR 0", description: "Gratis intake + material suggestion call." },
+  ]
+
   // JSON-LD ItemList (cap op 100)
   const itemList = locations.slice(0, 100).map((loc, i) => ({
     "@type": "ListItem",
@@ -46,6 +53,19 @@ export default function Page() {
     url: `https://www.x3dprints.be/${loc.slug}`,
     name: `3D printen in ${loc.city}`,
   }))
+
+  const pageDescription = metadata.description ?? ""
+  const canonicalUrl =
+    typeof metadata.alternates?.canonical === "string" ? metadata.alternates.canonical : `${SITE.url}/locaties`
+  const catalogJsonLd = buildOfferCatalog("Lokale 3D print services", localOffers)
+  const localBusinessJsonLd = buildLocalBusinessSchema({
+    description: pageDescription,
+    pageUrl: canonicalUrl,
+    image: "/images/og-home.jpg",
+    areaServed: "Gent, Herzele, Aalst en omstreken",
+    priceRange: "EUR 0 - EUR 5",
+  })
+  const serviceJsonLd = buildServiceSchema("Lokale 3D print service", localOffers, canonicalUrl)
 
   return (
     <main className="relative overflow-clip px-4 pb-20 pt-12 sm:px-6 lg:px-8">
@@ -67,7 +87,7 @@ export default function Page() {
         "
       >
         <div className="text-center sm:text-left">
-          <p className="text-xs font-semibold tracking-wide text-teal-700">Lokale landingspagina’s</p>
+          <p className="text-xs font-semibold tracking-wide text-teal-700">Lokale landingspaginas</p>
           <h1 className="mt-2 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
             3D printen per stad
           </h1>
@@ -107,6 +127,62 @@ export default function Page() {
           <div className="pointer-events-none absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
         </div>
       </header>
+
+      {/* CTA naar pillar */}
+      <section className="mx-auto mt-8 max-w-5xl">
+        <div className="rounded-3xl border border-white/30 bg-white/70 px-6 py-5 text-center backdrop-blur shadow-[0_8px_28px_rgba(0,0,0,0.06)] sm:text-left sm:px-8 sm:py-6">
+          <h2 className="text-xl font-semibold text-slate-900">Meer weten over 3D printen?</h2>
+          <p className="mt-2 text-sm text-slate-700">
+            Bekijk de 3D-printen pillar met materialen, prijsvoorbeelden, workflow en FAQ. Klaar om te bestellen? Vraag meteen een offerte.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-3">
+            <Link
+              href="/3d-printen"
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200/70 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+            >
+              Naar 3D printen
+            </Link>
+            <Link
+              href="/pricing"
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200/70 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+            >
+              Prijzen
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200/70 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+            >
+              Offerte aanvragen
+            </Link>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-slate-700">
+            <Link
+              href="/materials#material-suggestion-tool"
+              className="rounded-full border border-slate-200/70 bg-white/70 px-3 py-1.5 transition hover:-translate-y-0.5 hover:bg-white"
+            >
+              Material Suggestion Tool
+            </Link>
+            <Link
+              href="/segments/3d-printing-marketing"
+              className="rounded-full border border-slate-200/70 bg-white/70 px-3 py-1.5 transition hover:-translate-y-0.5 hover:bg-white"
+            >
+              Retail & marketing
+            </Link>
+            <Link
+              href="/segments/3d-printing-tabletop"
+              className="rounded-full border border-slate-200/70 bg-white/70 px-3 py-1.5 transition hover:-translate-y-0.5 hover:bg-white"
+            >
+              Tabletop & hobby
+            </Link>
+            <Link
+              href="/segments/3d-printing-makers"
+              className="rounded-full border border-slate-200/70 bg-white/70 px-3 py-1.5 transition hover:-translate-y-0.5 hover:bg-white"
+            >
+              Particulieren prints
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* OVERZICHT */}
       <section
@@ -171,13 +247,19 @@ export default function Page() {
       {/* JSON-LD */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            itemListElement: itemList,
-          }),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "ItemList", itemListElement: itemList }) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(catalogJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
       />
 
       {/* Keyframes + reduced-motion respect */}

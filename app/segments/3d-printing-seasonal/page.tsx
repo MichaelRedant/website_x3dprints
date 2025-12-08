@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import Faq from "@/components/Faq"
+import { SITE, buildLocalBusinessSchema, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "Seasonal 3D designs | X3DPrints",
@@ -57,6 +59,55 @@ const logistics = [
   "Afhalen in Herzele op afspraak is gratis.",
 ]
 
+const faqItems = [
+  {
+    q: "Wanneer plan ik best mijn seizoensdecor in?",
+    a: "Idealiter minstens twee weken voor het event zodat we materiaalbeslissingen en nabewerking kunnen plannen. Spoed? Geef je deadline door, dan kijken we wat haalbaar is.",
+  },
+  {
+    q: "Leveren jullie props gemonteerd of als modules?",
+    a: "Grote decorstukken leveren we modulair met pin-holes of magneetgaten. Vermeld of je wenst dat we verlijmen of dat je dat zelf doet op locatie.",
+  },
+  {
+    q: "Welke materialen zijn geschikt voor buitengebruik?",
+    a: "Voor buiten kiezen we meestal <strong>PETG</strong> of <strong>TPU</strong>. Binnen decor en lichtobjecten werken goed in PLA Silk, Marble of Translucent.",
+  },
+]
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a.replace(/<[^>]*>/g, "") },
+  })),
+}
+
+const pageUrl = String(
+  metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-seasonal`,
+)
+const pageDescription = metadata.description ?? SITE.description
+
+const serviceOffers: SchemaOfferInput[] = [
+  {
+    serviceName: "Seasonal 3D designs",
+    price: "EUR 5",
+    description: "Seizoensdecor en props in PLA, Marble en PETG.",
+    url: pageUrl,
+  },
+]
+
+const localBusinessJsonLd = buildLocalBusinessSchema({
+  pageUrl,
+  description: pageDescription,
+  image: "/images/og-home.jpg",
+  areaServed: "Gent & Vlaanderen",
+  priceRange: "EUR 5 - EUR 49",
+})
+
+const serviceJsonLd = buildServiceSchema("Seasonal 3D designs", serviceOffers, pageUrl)
+
 function getSeasonCta(date: Date) {
   const month = date.getUTCMonth() + 1 // 1-12
   const day = date.getUTCDate()
@@ -95,7 +146,7 @@ export default function SeasonalSegmentPage() {
           of kies onze ontwerpservice aan €45/uur. Lever klaar om te schilderen, te verlichten of meteen te gebruiken.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact">Plan je seizoen</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-silk-plus">Plan je seizoen</ShimmerButton>
           <Link
             href={seasonCta.href}
             className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
@@ -107,6 +158,12 @@ export default function SeasonalSegmentPage() {
             className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
           >
             Bekijk voorbeelden
+          </Link>
+          <Link
+            href="/materials#material-suggestion-tool"
+            className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
+          >
+            Material Suggestion Tool
           </Link>
         </div>
       </header>
@@ -181,12 +238,28 @@ export default function SeasonalSegmentPage() {
             <Link href="/pricing" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
               Prijzen & leverzones
             </Link>
-            <Link href="/contact" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
+            <Link href="/contact?material=pla-silk-plus" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
               Start je aanvraag
             </Link>
           </div>
         </GlassCard>
       </section>
+
+      <section className="mx-auto mt-12 max-w-4xl">
+        <Faq title="FAQ Seasonal 3D designs" items={faqItems} />
+      </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
     </main>
   )
 }

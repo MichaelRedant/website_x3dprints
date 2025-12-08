@@ -29,6 +29,7 @@ import { keywordSvgDataUri } from "@/lib/svg"
 import {
   buildCityMetaDescription,
   makeDescriptionFromMarkdown,
+  SITE,
 } from "@/lib/seo"
 
 export const revalidate = 86_400 // 24h
@@ -112,27 +113,96 @@ export default async function Page(
 
   const stripTags = (html: string) => html.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim()
 
-  // JSON‑LD blocks
+  const servicedAreas = loc.servicedAreas?.length
+    ? loc.servicedAreas
+    : [
+        `${loc.city} centrum`,
+        `${loc.city} industriezone`,
+        `${loc.city} en omliggende deelgemeenten`,
+        "Afhalen Provincieweg 34a, 9552 Herzele",
+        "Levering in Vlaanderen",
+      ]
+
+  const sectors = loc.sectors?.length
+    ? loc.sectors
+    : [
+        `Prototyping en productteams in ${loc.city}`,
+        `Fixtures/tooling voor maakbedrijven rond ${loc.city}`,
+        `Displays/props voor marketing en events in ${loc.city}`,
+        `Onderwijs en makers in ${loc.city}`,
+      ]
+
+  // Hero variant selection per city for unique wording
+  const heroVariants = [
+    (city: string) => ({
+      title: `3D printen in ${city}: prototypes, tools en props.`,
+      subtitle: `Lokale service voor prototypes, fixtures, behuizingen en zichtwerk in ${city}.`,
+    }),
+    (city: string) => ({
+      title: `3D prints op maat in ${city} voor makers en bedrijven.`,
+      subtitle: `Van rapid prototyping tot kleine series in ${city} en omgeving, met persoonlijk advies.`,
+    }),
+    (city: string) => ({
+      title: `${city}: 3D print service voor functionele onderdelen en designwerk.`,
+      subtitle: `PLA, PETG of TPU, afgestemd op jouw project in ${city} en snel geleverd.`,
+    }),
+    (city: string) => ({
+      title: `Laat je 3D modellen printen in ${city} met korte lijnen.`,
+      subtitle: `Snelle feedback, transparante prijzen en levering richting ${city} en Vlaanderen.`,
+    }),
+  ]
+  const variantIndex = loc.city
+    .split("")
+    .map((c) => c.charCodeAt(0))
+    .reduce((sum, code) => sum + code, 0) % heroVariants.length
+  const heroContent = heroVariants[variantIndex](loc.city)
+
+  // JSON-LD blocks
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: keyphrase,
-    areaServed: { "@type": "City", name: loc.city },
+    areaServed: [{ "@type": "City", name: loc.city }, { "@type": "State", name: "Oost-Vlaanderen" }],
     provider: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
     url: `https://www.x3dprints.be/${loc.slug}`,
     serviceType: "3D printing",
     keywords: [keyphrase, ...phrases],
   }
 
+  const localBusinessJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "X3DPrints",
+    url: "https://www.x3dprints.be",
+    image: "https://www.x3dprints.be/og-x3dprints.jpg",
+    telephone: SITE.phone,
+    hasMap: "https://www.google.com/maps/search/?api=1&query=Provincieweg+34a+9552+Herzele",
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 50.8839,
+      longitude: 3.8932,
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: SITE.address.street,
+      addressLocality: SITE.address.locality,
+      addressRegion: SITE.address.region,
+      postalCode: SITE.address.postalCode,
+      addressCountry: SITE.address.country,
+    },
+    areaServed: loc.city,
+    sameAs: SITE.sameAs,
+  }
+
   const faqItems = [
     { q: `Welke materialen kan ik laten 3D printen in ${loc.city}?`, aHtml: `Standaard <strong>PLA Matte</strong>, plus <strong>PETG</strong> en <strong>TPU</strong>. Op aanvraag: ABS/ASA, Nylon of PA-CF. Bekijk <a href="/materials">materialen & richtlijnen</a>.` },
     { q: `Wat is de levertijd voor 3D printen in ${loc.city}?`, aHtml: `Meestal <strong>enkele werkdagen</strong>, afhankelijk van complexiteit en oplage. <a href="/contact">Spoed</a> mogelijk in overleg.` },
     { q: "Hoe worden de prijzen berekend?", aHtml: `Transparant: formaat (<em>Small/Medium/Large/XL</em>), materiaaltoeslag, nabehandeling en aantallen. Zie <a href="/pricing">Prijzen</a>.` },
-    { q: "Wat zijn de maximale bouwvolumes?", aHtml: `Tot <strong>25 × 25 × 25 cm</strong> per onderdeel. Grotere onderdelen splitsen we in segmenten met nette passing.` },
-    { q: "Welke bestandsformaten accepteer je?", aHtml: `<strong>STL</strong> of <strong>STEP</strong>. Voeg indien mogelijk toelichting toe: gewenste sterkte, zichtzijde, afwerking, aantallen.` },
-    { q: "Welke toleranties haal je typisch?", aHtml: `Richtwaarde <strong>±0,2 mm</strong> bij PLA/PETG, afhankelijk van geometrie en oriëntatie. Functionele passing? Vermeld dit in je aanvraag.` },
-    { q: "Bieden jullie ontwerp op maat of aanpassingen?", aHtml: `Ja. CAD‑aanpassingen en ontwerp op maat aan <strong>€45/uur</strong>. Vraag een voorstel via <a href="/contact">contact</a>.` },
-    { q: `Kan ik afhalen i.p.v. verzending in ${loc.city}?`, aHtml: `Afhalen kan op afspraak. Verzending: <strong>&lt; €50 = €7</strong>, <strong>€50–100 = €5</strong>, <strong>&gt; €100 = gratis</strong>. Zie <a href="/pricing">Prijzen</a>.` },
+    { q: "Wat zijn de maximale bouwvolumes?", aHtml: `Tot <strong>25 x 25 x 25 cm</strong> per onderdeel. Grotere onderdelen splitsen we in segmenten met nette passing.` },
+    { q: "Welke bestandsformaten accepteer je?", aHtml: `<strong>STL</strong> of <strong>STEP</strong>. Voeg toelichting toe: gewenste sterkte, zichtzijde, afwerking, aantallen.` },
+    { q: "Welke toleranties haal je typisch?", aHtml: `Richtwaarde <strong>+/-0,2 mm</strong> bij PLA/PETG, afhankelijk van geometrie en orientatie. Functionele passing? Vermeld dit in je aanvraag.` },
+    { q: "Bieden jullie ontwerp op maat of aanpassingen?", aHtml: `Ja. CAD-aanpassingen en ontwerp op maat aan <strong>EUR 45/uur</strong>. Vraag een voorstel via <a href="/contact">contact</a>.` },
+    { q: `Kan ik afhalen i.p.v. verzending in ${loc.city}?`, aHtml: `Afhalen kan op afspraak. Verzending: <strong>&lt; EUR 50 = EUR 7</strong>, <strong>EUR 50-100 = EUR 5</strong>, <strong>&gt; EUR 100 = gratis</strong>. Zie <a href="/pricing">Prijzen</a>.` },
   ].map((it) => ({ ...it, aText: stripTags(it.aHtml) }))
 
   const faqJsonLd = {
@@ -177,19 +247,24 @@ export default async function Page(
           <Reveal className="max-w-3xl">
             <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs text-slate-700 backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              Snel, precies en betaalbaar
+              Lokale 3D print service in {loc.city}
             </span>
 
-            <Catchphrase className="mt-4 block text-base font-medium text-indigo-600 sm:text-lg">Betaalbaar 3D printen</Catchphrase>
+            <Catchphrase className="mt-4 block text-base font-medium text-indigo-600 sm:text-lg">
+              3D printen in {loc.city}
+            </Catchphrase>
 
             <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              Where design meets dimension.
+              {heroContent.title}
             </h1>
 
-            <p className="mt-2 text-balance text-lg font-medium text-slate-700">3D Prints die kloppen</p>
+            <p className="mt-2 text-balance text-lg font-medium text-slate-700">
+              {heroContent.subtitle}
+            </p>
 
             <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 sm:text-lg">
-              X3DPrints is een compacte 3D‑printstudio uit Herzele, onderdeel van Xinudesign. Ideaal voor prototypes en kleine series met strakke afwerking. PLA is onze standaard, maar we schakelen waar nodig over naar PETG, ABS/ASA, Nylon of PA‑CF. We spreken de doorlooptijd samen af en mikken doorgaans op enkele werkdagen met transparante offerte vooraf.
+              X3DPrints print vanuit Herzele (tussen Gent en Aalst) voor {loc.city} en omgeving. Stuur je STL/STEP, kies
+              PLA, PETG of TPU en ontvang een voorstel met planning. Doorlooptijd meestal enkele werkdagen na akkoord.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-3">
@@ -202,9 +277,9 @@ export default async function Page(
 
           <Reveal delay={0.15} className="mt-16 grid gap-6 sm:grid-cols-3">
             {[
-              { k: "Tolerantie", v: "±0,2 mm", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 12h16M4 16h16" />) },
+              { k: "Tolerantie", v: "+/-0,2 mm", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 12h16M4 16h16" />) },
               { k: "Doorlooptijd", v: "Afspraak in overleg (meestal enkele werkdagen)", icon: icon(<><circle cx={12} cy={12} r={9} /><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l2 2" /></>) },
-              { k: "Bouwvolume", v: "Tot 25 × 25 × 25 cm", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M21 16V8l-9-5-9 5v8l9 5 9-5M12 3v18M3 8l9 4 9-4" />) },
+              { k: "Bouwvolume", v: "Tot 25 x 25 x 25 cm", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M21 16V8l-9-5-9 5v8l9 5 9-5M12 3v18M3 8l9 4 9-4" />) },
             ].map((item) => (
               <GlassCard key={item.k} className="p-5 text-center transition-transform hover:-translate-y-1">
                 {item.icon}
@@ -212,6 +287,75 @@ export default async function Page(
                 <div className="mt-1 text-xl font-semibold text-slate-900">{item.v}</div>
               </GlassCard>
             ))}
+          </Reveal>
+        </div>
+      </section>
+
+      {/* NAP + servicegebied */}
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="grid gap-6 p-6 sm:grid-cols-[1.1fr_0.9fr] sm:p-8">
+              <div>
+                <h2 className="text-xl font-semibold text-slate-900">Adres en contact</h2>
+                <div className="mt-3 space-y-2 text-sm text-slate-700">
+                  <p className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
+                    <span>{SITE.address.street}, {SITE.address.postalCode} {SITE.address.locality}</span>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
+                    <span>{SITE.phone}</span>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
+                    <a href="mailto:michael@xinudesign.be" className="underline decoration-slate-300 hover:decoration-slate-600">
+                      michael@xinudesign.be
+                    </a>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
+                    <span>Serviced areas: {loc.city}, Gent, Aalst en Vlaanderen (afhalen in Herzele, levering op aanvraag).</span>
+                  </p>
+                </div>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
+                  <Link href="/3d-printen" className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-600">
+                    Hoe 3D printen werkt <span aria-hidden>-&gt;</span>
+                  </Link>
+                </div>
+                <div className="mt-6">
+                  <h3 className="text-sm font-semibold text-slate-900">Serviced areas</h3>
+                  <ul className="mt-2 flex flex-wrap gap-2 text-xs text-slate-700">
+                    {servicedAreas.map((area) => (
+                      <li key={area} className="rounded-full border border-slate-200/70 bg-white/80 px-3 py-1">
+                        {area}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-base font-semibold text-slate-900">Handige links</h3>
+                <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                  <li><Link className="hover:text-slate-900" href="/pricing">Prijzen & voorbeelden</Link></li>
+                  <li><Link className="hover:text-slate-900" href="/materials">Materialen & richtlijnen</Link></li>
+                  <li><Link className="hover:text-slate-900" href="/viewer">STL/STEP viewer</Link></li>
+                  <li><Link className="hover:text-slate-900" href="/portfolio">Portfolio</Link></li>
+                </ul>
+                <div className="mt-4">
+                  <h3 className="text-sm font-semibold text-slate-900">Typische sectoren</h3>
+                  <ul className="mt-2 space-y-2 text-xs text-slate-700">
+                    {sectors.map((sector) => (
+                      <li key={sector} className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-500" aria-hidden />
+                        <span>{sector}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </GlassCard>
           </Reveal>
         </div>
       </section>
@@ -271,6 +415,8 @@ export default async function Page(
           {/* internal links */}
           <nav className="mx-auto mt-10 flex max-w-3xl flex-wrap items-center justify-center gap-3 text-sm animate-[fadeIn_.6s_ease_out_.15s_both]" aria-label="Verder lezen">
             <span className="font-medium text-slate-700">Verder lezen:</span>
+            <Link href="/3d-printen" className="rounded-full border border-white/30 bg-white/60 px-4 py-2 text-slate-700 backdrop-blur transition hover:bg-white">3D printen (overzicht)</Link>
+            <Link href="/locaties" className="rounded-full border border-white/30 bg-white/60 px-4 py-2 text-slate-700 backdrop-blur transition hover:bg-white">Locaties</Link>
             <Link href="/services" className="rounded-full border border-white/30 bg-white/60 px-4 py-2 text-slate-700 backdrop-blur transition hover:bg-white">Services</Link>
             <Link href="/materials" className="rounded-full border border-white/30 bg-white/60 px-4 py-2 text-slate-700 backdrop-blur transition hover:bg-white">Materialen & richtlijnen</Link>
             <Link href="/pricing" className="rounded-full border border-white/30 bg-white/60 px-4 py-2 text-slate-700 backdrop-blur transition hover:bg-white">Prijzen</Link>
@@ -278,10 +424,11 @@ export default async function Page(
             <Link href="/contact" className="rounded-full border border-white/30 bg-white/60 px-4 py-2 text-slate-700 backdrop-blur transition hover:bg-white">Contact</Link>
           </nav>
 
-          {/* JSON‑LD */}
+          {/* JSON-LD */}
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
         </div>
       </section>
 

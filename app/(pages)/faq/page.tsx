@@ -288,7 +288,7 @@ export default function Page() {
           </Reveal>
 
           <Reveal>
-            <Faq city="Belgie" items={faq} />
+            <Faq city="België" items={faq} />
           </Reveal>
 
           <Reveal className="mt-10 grid gap-4 sm:grid-cols-2">

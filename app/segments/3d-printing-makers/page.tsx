@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import Faq from "@/components/Faq"
+import { SITE, buildLocalBusinessSchema, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "3D printing voor makers & hobbyisten | X3DPrints",
@@ -42,6 +44,58 @@ const steps = [
   },
 ]
 
+const faqItems = [
+  {
+    q: "Welke bestanden hebben jullie nodig?",
+    a: "Een <strong>STL</strong> of <strong>STEP</strong> volstaat. Voeg foto's of referenties toe zodat we meteen het juiste materiaal en de gewenste afwerking adviseren.",
+  },
+  {
+    q: "Kan ik mijn ontwerp laten tweaken?",
+    a: "Kleine aanpassingen zoals gaten, splitsingen of tekst kunnen we uitvoeren. Voor grotere wijzigingen rekenen we <strong>€45/uur</strong> CAD-ondersteuning.",
+  },
+  {
+    q: "Hoe snel kan ik mijn print krijgen?",
+    a: "Meestal binnen enkele werkdagen. Vermeld deadline, materiaalkeuze en of verzending of afhalen gewenst is; dan plannen we meteen in.",
+  },
+]
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a.replace(/<[^>]*>/g, ""),
+    },
+  })),
+}
+
+const pageUrl = String(
+  metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-makers`,
+)
+const pageDescription = metadata.description ?? SITE.description
+
+const serviceOffers: SchemaOfferInput[] = [
+  {
+    serviceName: "Makers & hobbyisten 3D printing",
+    price: "EUR 5",
+    description: "Custom onderdelen, cosplay props en repair-jobs in PLA, PLA Tough+ of PETG.",
+    url: pageUrl,
+  },
+]
+
+const localBusinessJsonLd = buildLocalBusinessSchema({
+  pageUrl,
+  description: pageDescription,
+  image: "/images/og-home.jpg",
+  areaServed: "Gent & Vlaanderen",
+  priceRange: "EUR 5 - EUR 49",
+})
+
+const serviceJsonLd = buildServiceSchema("3D printing voor makers & hobbyisten", serviceOffers, pageUrl)
+
 export default function MakersSegmentPage() {
   return (
     <main className="relative overflow-hidden px-4 pb-24 pt-12 sm:px-6 lg:px-8">
@@ -60,7 +114,7 @@ export default function MakersSegmentPage() {
           Of je nu cosplay armor, modelbouwdetails of een custom mount voor sensoren nodig hebt: je krijgt eerlijke timings, materiaaladvies en directe communicatie met de printer zelf.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact">Plan een gesprek</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-matte">Plan een gesprek</ShimmerButton>
           <Link
             href="/materials#material-suggestion-tool"
             className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
@@ -137,6 +191,22 @@ export default function MakersSegmentPage() {
           </ul>
         </GlassCard>
       </section>
+
+      <section className="mx-auto mt-12 max-w-4xl">
+        <Faq title="FAQ voor makers & hobbyisten" items={faqItems} />
+      </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
     </main>
   )
 }

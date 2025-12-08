@@ -18,11 +18,9 @@ export const metadata: Metadata = {
       "TPU uitgelegd door X3DPrints: wanneer je flexibele onderdelen nodig hebt, welke instellingen werken en waar de grenzen liggen.",
     url: canonical,
     type: "article",
-    article: {
-      publishedTime: publishedDate,
-      authors: ["https://www.x3dprints.be"],
-      tags: ["TPU 3D printen", "Filament Vrijdag", "3D print materiaal"],
-    },
+    publishedTime: publishedDate,
+    authors: ["https://www.x3dprints.be"],
+    tags: ["TPU 3D printen", "Filament Vrijdag", "3D print materiaal"],
     images: [
       {
         url: "/images/og-home.jpg",
@@ -185,11 +183,7 @@ const externalReferences = [
     href: "https://www.matterhackers.com/articles/how-to-succeed-when-printing-with-flexible-filament",
     description: "Praktische gids voor flexibel filament, inclusief troubleshooting.",
   },
-  {
-    label: "Bambu Lab - TPU materiaalpagina",
-    href: "https://wiki.bambulab.com/en/materials/tpu",
-    description: "Specifieke tips voor TPU profielen en AMS gebruik op Bambu printers.",
-  },
+
 ]
 
 const upcomingPosts = [
@@ -252,7 +246,7 @@ export default function FilamentVrijdagTpuPage() {
                 <li>
                   <Link
                     href="/blog"
-                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                   >
                     Blog
                   </Link>
@@ -529,8 +523,7 @@ export default function FilamentVrijdagTpuPage() {
             <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">Wanneer TPU bestellen bij X3DPrints?</h2>
               <p className="mt-2 text-sm text-slate-600">
-                TPU komt bijna altijd in beeld wanneer er iets beschermd, gedempt of comfortabel gemaakt moet worden. Typische
-                scenario's:
+                TPU komt bijna altijd in beeld wanneer er iets beschermd, gedempt of comfortabel gemaakt moet worden. Typische cases:
               </p>
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
                 <li className="flex items-start gap-3">

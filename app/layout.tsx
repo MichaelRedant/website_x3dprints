@@ -4,6 +4,7 @@ import { SITE } from "@/lib/seo"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import ScrollProgress from "@/components/ScrollProgress"
+import BackToTop from "@/components/BackToTop"
 import CookieBanner from "@/components/CookieBanner"
 import AnalyticsConsent from "@/components/AnalyticsConsent"
 import ThemeProvider from "@/components/ThemeProvider"
@@ -100,6 +101,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="flex-1">{children}</main>
           <Footer />
           <CookieBanner />
+          <BackToTop />
           <AnalyticsConsent />
         </ThemeProvider>
         <script

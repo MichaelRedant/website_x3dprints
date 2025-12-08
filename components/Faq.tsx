@@ -8,9 +8,10 @@ interface FaqItem {
 }
 
 interface Props {
-  city: string
+  city?: string
   items: FaqItem[]
   className?: string
+  title?: string
 }
 
 /** Simpele slugifier voor anchor-id’s */
@@ -23,7 +24,11 @@ function stripTags(html: string) {
   return html.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim()
 }
 
-export default function Faq({ city, items, className = "" }: Props) {
+export default function Faq({ city, items, className = "", title }: Props) {
+  const heading =
+    title ??
+    (city ? `Veelgestelde vragen over 3D printen in ${city}` : "Veelgestelde vragen over 3D printen")
+
   return (
     <section
       aria-labelledby="faq-title"
@@ -38,7 +43,7 @@ export default function Faq({ city, items, className = "" }: Props) {
         "
       >
         <h2 id="faq-title" className="text-xl font-extrabold tracking-tight text-slate-900">
-          Veelgestelde vragen over 3D printen in {city}
+          {heading}
         </h2>
 
         <ul className="mt-6 space-y-3">

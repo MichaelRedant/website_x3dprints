@@ -9,9 +9,10 @@ const BASE_URL = SITE.url.replace(/\/+$/, "") // https://www.x3dprints.be
 export const dynamic = "force-static"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Statische routes – met passende changeFrequency
+  // Statische routes - met passende changeFrequency
   const staticRoutes = [
     { path: "/",                  changeFrequency: "weekly"  as const, priority: 0.8 },
+    { path: "/3d-printen",        changeFrequency: "weekly"  as const, priority: 0.8 },
     { path: "/services",          changeFrequency: "monthly" as const, priority: 0.8 },
     { path: "/materials",         changeFrequency: "weekly"  as const, priority: 0.8 },
     { path: "/pricing",           changeFrequency: "weekly"  as const, priority: 0.8 },
@@ -21,6 +22,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/viewer",            changeFrequency: "weekly"  as const, priority: 0.7 },
     { path: "/3d-modelleren",     changeFrequency: "monthly" as const, priority: 0.6 },
     { path: "/about",             changeFrequency: "monthly" as const, priority: 0.6 },
+    { path: "/sustainability",    changeFrequency: "monthly" as const, priority: 0.6 },
     { path: "/contact",           changeFrequency: "monthly" as const, priority: 0.6 },
     { path: "/faq",               changeFrequency: "monthly" as const, priority: 0.6 },
     { path: "/locaties",          changeFrequency: "monthly" as const, priority: 0.6 },
@@ -32,21 +34,34 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }))
 
   const blogPostSlugs = [
-    "hoeveel-kost-3d-printen",
-    "pla-vs-petg",
-    "beste-instellingen-bambu-printer",
-    "ontwerp-3d-printbaar-model",
-    "3d-printen-voor-beginners",
-    "3d-printen-in-de-buurt",
-    "3d-printen-op-bestelling",
-    "bestanden-voor-3d-printen",
-    "hoe-lang-duurt-3d-printen",
-    "3d-printing-marketing-events",
-    "3d-printen-mini-figuren",
+    "3d-geprinte-platen-nasiam",
     "3d-printen-herfst-halloween",
+    "3d-printen-in-de-buurt",
     "3d-printen-lente-pasen",
-    "3d-printen-zomer",
+    "3d-printen-mini-figuren",
+    "3d-printen-op-bestelling",
+    "3d-printen-voor-beginners",
     "3d-printen-winter-kerst-nieuwjaar",
+    "3d-printen-zomer",
+    "3d-printing-marketing-events",
+    "bestanden-voor-3d-printen",
+    "beste-instellingen-bambu-printer",
+    "filament-vrijdag-pla",
+    "filament-vrijdag-petg",
+    "filament-vrijdag-tpu",
+    "filament-vrijdag-pla-wood",
+    "filament-vrijdag-pla-marble",
+    "filament-vrijdag-pla-glow",
+    "filament-vrijdag-pla-metal",
+    "filament-vrijdag-pla-silk-plus",
+    "finishing-friday-schuren-primen-lakken",
+    "juiste-3d-print-materiaal",
+    "hoe-3d-print-je-onderdelen-voor-buitengebruik",
+    "hoe-lang-duurt-3d-printen",
+    "hoeveel-kost-3d-printen",
+    "ontwerp-3d-printbaar-model",
+    "pla-vs-petg",
+    "use-cases-tpu",
   ]
 
   const segmentSlugs = [

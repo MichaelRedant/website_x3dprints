@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import Faq from "@/components/Faq"
+import { SITE, buildLocalBusinessSchema, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "3D printing voor modelbouwers | X3DPrints",
@@ -25,6 +27,55 @@ const materials = [
   { title: "PLA Translucent", copy: "Voor lichtobjecten, ramen en displaystukken met zachte gloed." },
 ]
 
+const faqItems = [
+  {
+    q: "Welke layerhoogte raden jullie aan voor maquettes?",
+    a: "Voor zichtwerk printen we meestal op <strong>0,16 mm</strong> in PLA Wood of Matte. Voor terrein of grote volumes kan 0,2 mm om het budget scherp te houden.",
+  },
+  {
+    q: "Kunnen grote modellen in modules geleverd worden?",
+    a: "Ja. We splitsen maquettes en scenery in pin-fit modules zodat transport veilig blijft en je ze snel kunt assembleren.",
+  },
+  {
+    q: "Welke afwerking is inbegrepen?",
+    a: "Standaard verwijderen we supports en ontbramen we licht. Optioneel schuren en primeren kan, vermeld het in je aanvraag zodat we de planning afstemmen.",
+  },
+]
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a.replace(/<[^>]*>/g, "") },
+  })),
+}
+
+const pageUrl = String(
+  metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-modelbouwers`,
+)
+const pageDescription = metadata.description ?? SITE.description
+
+const serviceOffers: SchemaOfferInput[] = [
+  {
+    serviceName: "Modelbouwers 3D printing",
+    price: "EUR 5",
+    description: "PLA Wood, Marble en Translucent voor maquettes en scenery met nabewerkingstips.",
+    url: pageUrl,
+  },
+]
+
+const localBusinessJsonLd = buildLocalBusinessSchema({
+  pageUrl,
+  description: pageDescription,
+  image: "/images/og-home.jpg",
+  areaServed: "Gent & Vlaanderen",
+  priceRange: "EUR 5 - EUR 49",
+})
+
+const serviceJsonLd = buildServiceSchema("3D printing voor modelbouwers", serviceOffers, pageUrl)
+
 export default function ModelbouwSegmentPage() {
   return (
     <main className="relative overflow-hidden px-4 pb-24 pt-12 sm:px-6 lg:px-8">
@@ -38,12 +89,18 @@ export default function ModelbouwSegmentPage() {
           3D printing voor modelbouwers
         </h1>
         <p className="mt-4 text-base text-slate-600">
-          Maak schaalmodellen, scenery en diorama’s die indruk maken. We printen met speciale PLA blends en adviseren over nabewerking.
+          Maak schaalmodellen, scenery en diorama&rsquo;s die indruk maken. We printen met speciale PLA blends en adviseren over nabewerking.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact">Project bespreken</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-wood">Project bespreken</ShimmerButton>
           <Link href="/portfolio" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
             Bekijk portfolio
+          </Link>
+          <Link
+            href="/materials#material-suggestion-tool"
+            className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
+          >
+            Material Suggestion Tool
           </Link>
         </div>
       </header>
@@ -103,7 +160,22 @@ export default function ModelbouwSegmentPage() {
           </ul>
         </GlassCard>
       </section>
+
+      <section className="mx-auto mt-12 max-w-4xl">
+        <Faq title="FAQ voor modelbouwers" items={faqItems} />
+      </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
     </main>
   )
 }
-

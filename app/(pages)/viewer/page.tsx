@@ -27,14 +27,14 @@ export default function Page() {
   const bullets = [
     "WebGL-viewer met orbit controls en auto-rotate (uitschakelbaar)",
     "On-device parsing met STL/OBJ/GLB-ondersteuning tot 15 MB",
-    "Mesh stats voor snelle sanity-checks vóór je offerte-aanvraag",
+    "Mesh stats voor snelle sanity-checks voor je offerte-aanvraag",
   ]
 
   const highlights = [
     {
       title: "Performance voorop",
       description:
-        "Adaptive pixel density, orbit damping en lightweight shadows houden de viewer soepel — ook op mobiel.",
+        "Adaptive pixel density, orbit damping en lightweight shadows houden de viewer soepel - ook op mobiel.",
     },
     {
       title: "Validatie zonder stress",
@@ -63,6 +63,16 @@ export default function Page() {
     },
   ]
 
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "STL/OBJ bekijken in de X3DPrints 3D Viewer",
+    description: "Snelle in-browser preview zonder uploads naar servers, inclusief mesh stats.",
+    supply: [{ "@type": "HowToSupply", name: "STL, OBJ of GLB bestand (max ~15 MB)" }],
+    step: workflow.map((item) => ({ "@type": "HowToStep", name: item.step, text: item.copy })),
+    tool: [{ "@type": "HowToTool", name: "X3DPrints WebGL viewer" }],
+  }
+
   return (
     <main className="relative overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-x-0 top-[-30%] h-[480px] bg-[radial-gradient(circle_at_top,#1e3a8a33,transparent_65%)]" />
@@ -79,7 +89,7 @@ export default function Page() {
             </h1>
             <p className="mt-6 text-lg text-slate-600">
               Upload je 3D-model en ontdek hoe de print eruitziet in een glanzende WebGL-viewer. Geen wachttijd, geen upload naar
-              servers – wel inzicht in meshkwaliteit en een ervaring in X3DPrints-stijl.
+                            servers - wel inzicht in meshkwaliteit en een ervaring in X3DPrints-stijl. in meshkwaliteit en een ervaring in X3DPrints-stijl.
             </p>
             <ul className="mt-8 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
               {bullets.map((item) => (
@@ -138,8 +148,8 @@ export default function Page() {
           <Reveal className="rounded-3xl border border-slate-200/70 bg-white/80 p-8 shadow-lg">
             <h2 className="text-2xl font-semibold text-slate-900">Van preview naar print</h2>
             <p className="mt-4 max-w-2xl text-base text-slate-600">
-              Gebruik de viewer als snelle sanity-check. Zo kunnen we samen efficiënter schakelen wanneer je een offerte of
-              maatwerktraject aanvraagt.
+              Gebruik de viewer als snelle sanity-check. Zo kunnen we samen efficienter schakelen wanneer je een offerte
+              of maatwerktraject aanvraagt.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {workflow.map((item) => (
@@ -158,6 +168,7 @@ export default function Page() {
           </Reveal>
         </Container>
       </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
     </main>
   )
 }

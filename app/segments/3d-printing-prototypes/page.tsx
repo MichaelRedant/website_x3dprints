@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import Faq from "@/components/Faq"
+import { SITE, buildLocalBusinessSchema, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "3D printing voor prototypes | X3DPrints",
@@ -27,10 +29,59 @@ const steps = [
 ]
 
 const highlights = [
-  "Layerhoogte 0,12–0,24 mm voor detail versus snelheid",
+  "Layerhoogte 0,12-0,24 mm voor detail versus snelheid",
   "Typische tolerantie ±0,2 mm met DFM-feedback",
   "Lokale afhaling of verzending binnen België",
 ]
+
+const faqItems = [
+  {
+    q: "Welke bestanden leveren productteams best aan?",
+    a: "Bij voorkeur <strong>STL</strong> of <strong>STEP</strong> met context over functie, gewenste toleranties en eventuele kritieke afmetingen.",
+  },
+  {
+    q: "Kunnen jullie foto's of meetrapporten bezorgen?",
+    a: "Ja. Op verzoek sturen we foto-updates en korte meetrapporten zodat stakeholders sneller feedback kunnen geven.",
+  },
+  {
+    q: "Hoe snel zijn prototypes klaar?",
+    a: "Meestal binnen enkele werkdagen. Geef sprintdeadlines en reserveprints door zodat we de planning meteen vastleggen.",
+  },
+]
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a.replace(/<[^>]*>/g, "") },
+  })),
+}
+
+const pageUrl = String(
+  metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-prototypes`,
+)
+const pageDescription = metadata.description ?? SITE.description
+
+const serviceOffers: SchemaOfferInput[] = [
+  {
+    serviceName: "Prototypes 3D printing",
+    price: "EUR 5",
+    description: "Snelle iteraties in PLA Matte, PLA Tough+ of PETG met DFM-feedback.",
+    url: pageUrl,
+  },
+]
+
+const localBusinessJsonLd = buildLocalBusinessSchema({
+  pageUrl,
+  description: pageDescription,
+  image: "/images/og-home.jpg",
+  areaServed: "Gent & Vlaanderen",
+  priceRange: "EUR 5 - EUR 49",
+})
+
+const serviceJsonLd = buildServiceSchema("3D printing voor prototypes", serviceOffers, pageUrl)
 
 export default function PrototypeSegmentPage() {
   return (
@@ -50,7 +101,7 @@ export default function PrototypeSegmentPage() {
           Snelle iteraties, eerlijke timings en persoonlijke begeleiding vanuit Herzele. Gebruik deze pagina als startpunt voor je volgende sprint.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-tough-plus">Offerte aanvragen</ShimmerButton>
           <Link href="/materials#material-suggestion-tool" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
             Material Suggestion Tool
           </Link>
@@ -111,7 +162,22 @@ export default function PrototypeSegmentPage() {
           </ul>
         </GlassCard>
       </section>
+
+      <section className="mx-auto mt-12 max-w-4xl">
+        <Faq title="FAQ voor prototypes" items={faqItems} />
+      </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
     </main>
   )
 }
-

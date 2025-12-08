@@ -1,53 +1,41 @@
-# 3D printen in Mechelen: van Sint-Romboutstoren tot Nekkerhal
+# 3D printen in Mechelen: prototypes, tooling en props
 
-Voor **3D printen in Mechelen** levert X3DPrints snelle prototypes en kleine series naar teams rond de Grote Markt, Nekkerhal, Kazerne Dossin en Technopolis. We denken mee over passing, afwerking en materiaal, zodat je onderdelen meteen inzetbaar zijn.
+Mechelen ligt centraal tussen Antwerpen en Brussel. We printen voor teams rond Mechelen-Zuid, Nekkerhal en de R6/E19-zone. Kies PLA voor strak zichtwerk, PETG voor sterkere onderdelen of TPU voor flexibele bumpers en grips.
 
----
+## Waar we vaak voor printen in Mechelen
 
-## Waarom X3DPrints voor Mechelen?
+- Prototyping voor KMO's en maakbedrijven in Mechelen  
+- Tooling en fixtures voor bedrijven langs E19/R6  
+- Props en displays voor events in Nekkerhal  
+- Studenten- en onderzoeksprojecten (Thomas More, KU Leuven campus Mechelen)
 
-- Snel geleverd: offertes meestal binnen een werkdag, levering in enkele werkdagen richting stadscentrum of Mechelen-Noord.
-- Strakke toleranties: ideaal voor behuizingen en maquettes die moeten passen in bestaande opstellingen.
-- Materiaalkeuze op maat: PLA Matte voor zichtwerk, PETG voor stevige tools, TPU voor flexibele buffers.
-- Duidelijke communicatie: transparante prijzen en optionele fotoupdates.
+## Materialen en afwerking
 
-**Lokale touch:** we kennen de mix van cultuur en techniek in Mechelen. Denk aan displays voor Beiaard- of Vismarkt-events, props voor Nekkerhal-beurzen, studieprojecten rond Technopolis of maquettes voor projecten langs de Dijle en Kruidtuin.
+- **PLA (Matte/Silk/Marble)**: strak zichtwerk en decoratieve stukken  
+- **PETG**: slagvast en beter tegen hitte of buitengebruik  
+- **TPU**: flexibel voor bumpers, grips en pads  
+- Nabewerking: supportverwijdering en licht ontbramen; lak/primer in overleg
 
----
+## Prijsindicaties
 
-## Materialen
+- Small (ca. 5 x 5 x 5 cm) vanaf ~EUR 5 in PLA Matte  
+- Medium (ca. 10 x 10 x 10 cm) vanaf ~EUR 20  
+- Large (ca. 20 x 20 x 20 cm) vanaf ~EUR 49  
+- Opslagen: specials (Silk/Marble/Translucent) +20-30%, PETG/TPU +20-30%
 
-| Materiaal     | Pluspunt                       | Ideaal voor |
-| :------------ | :---------------------------- | :---------- |
-| **PLA Matte** | Strakke look, veel kleuren    | Maquettes voor presentaties in Lamot of visuals rond Sint-Rombouts |
-| **PETG**      | Stevig en temperatuurvast     | Functionele tools voor beurzen in Nekkerhal of installaties in Technopolis |
-| **TPU**       | Flexibel en schokdempend      | Beschermhoezen en kabelgeleiding voor fieldtests rond Mechelen-Noord |
+## Workflow
 
----
+1. Upload STL/STEP met toepassing, kritieke maten en gewenste afwerking  
+2. Materiaaladvies (PLA/PETG/TPU) + prijsvoorstel binnen een werkdag  
+3. Print, supportverwijdering en steekproef op kritieke maten  
+4. Afhalen in Herzele of levering richting Mechelen en Vlaanderen
 
-## Toepassingen in Mechelen
+## Levering of afhalen
 
-- Events en expo: props, mountings en signage voor Nekkerhal of zalen rond Lamot.
-- Retail en horeca: displays en houders voor winkels aan de Bruul en aan de Vismarkt.
-- Onderwijs en innovatie: prototypes voor Technopolis, Thomas More-campus De Vest of labs langs de Dijle.
+- Afhalen: Provincieweg 34a, 9552 Herzele (afspraak)  
+- Levering Mechelen/Battel/Muizen/Walem/Leest: in overleg, beschermde verpakking  
+- Bpost/pakketdienst voor andere adressen in Vlaanderen
 
----
+## Klaar om te starten?
 
-## Logistiek
-
-Dagelijkse verzending naar Mechelen en deelgemeenten. Afhalen in Herzele kan op afspraak; tarieven staan op [pricing](/pricing). Deadline? Vermeld datum en locatie; we plannen mee.
-
----
-
-## Handige links
-
-- [Materialen en richtlijnen](/materials)
-- [Prijzen](/pricing)
-- [3D printen in Antwerpen](/3d-printen-in-antwerpen)
-- [3D printen in Gent](/3d-printen-in-gent)
-
----
-
-## Offerte voor 3D printen in Mechelen
-
-Upload je STL- of STEP-bestand via [contact](/contact). Vermeld aantallen, materiaal en deadline; je ontvangt snel een voorstel op maat voor Mechelen.
+Stuur je STL/STEP via het contactformulier. Vermeld materiaal (PLA/PETG/TPU), gewenste leverdatum en kritieke maten, dan plannen we samen je job in.

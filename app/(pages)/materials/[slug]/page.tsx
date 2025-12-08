@@ -6,7 +6,7 @@ import { notFound } from "next/navigation"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import GlassCard from "@/components/GlassCard"
-import { MATERIALS } from "@/lib/materials"
+import { MATERIALS, type MaterialKey } from "@/lib/materials"
 import {
   MATERIAL_DETAILS_BY_SLUG,
   MATERIAL_DETAIL_SLUGS,
@@ -61,7 +61,7 @@ function MaterialBreadcrumb({ current }: { current: string }) {
         <li>
           <Link
             href="/materials"
-            className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+            className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
           >
             Materialen
           </Link>
@@ -160,6 +160,66 @@ function MaterialGallery({
   )
 }
 
+const FILAMENT_FRIDAY_LINKS: Partial<
+  Record<
+    MaterialKey,
+    {
+      title: string
+      description: string
+      href: string
+    }
+  >
+> = {
+  PLA_BASIC: {
+    title: "Filament Vrijdag #1: PLA 3D printen",
+    description:
+      "Verdiep je in PLA varianten, typische instellingen en wanneer je beter voor PETG of TPU kiest.",
+    href: "/blog/filament-vrijdag-pla",
+  },
+  PETG: {
+    title: "Filament Vrijdag #2: PETG 3D printen",
+    description:
+      "Hoe we PETG tunen voor outdoor onderdelen, welke instellingen werken en waar je rekening mee houdt.",
+    href: "/blog/filament-vrijdag-petg",
+  },
+  TPU: {
+    title: "Filament Vrijdag #3: TPU 3D printen",
+    description:
+      "Alles over flexibele TPU prints: hardwaretips, instellingen en typische toepassingen.",
+    href: "/blog/filament-vrijdag-tpu",
+  },
+  PLA_WOOD: {
+    title: "Filament Vrijdag #4: PLA Wood & special materials",
+    description:
+      "Checklist voor hout gevulde filamenten met instellingen, nabewerking en alternatieve blends.",
+    href: "/blog/filament-vrijdag-pla-wood",
+  },
+  PLA_MARBLE: {
+    title: "Filament Vrijdag #5: PLA Marble & esthetische materialen",
+    description:
+      "Wanneer stone-look filamenten uitblinken, hoe je ze fijn print en wanneer je beter doorschakelt.",
+    href: "/blog/filament-vrijdag-pla-marble",
+  },
+  PLA_GLOW: {
+    title: "Filament Vrijdag #6: PLA Glow",
+    description:
+      "Diepgaande gids over glow-in-the-dark pigmenten, nozzlekeuzes en designcases waar glow werkt.",
+    href: "/blog/filament-vrijdag-pla-glow",
+  },
+  PLA_METAL: {
+    title: "Filament Vrijdag #7: PLA Metal",
+    description:
+      "Leer hoe metallic PLA zich gedraagt, hoe je de glans onder controle houdt en welke nozzles je nodig hebt.",
+    href: "/blog/filament-vrijdag-pla-metal",
+  },
+  PLA_SILK_PLUS: {
+    title: "Filament Vrijdag #8: PLA Silk+",
+    description:
+      "Wanneer je Silk+ inzet voor premium zichtwerk, welke instellingen wij gebruiken en hoe je glans combineert met leesbaarheid.",
+    href: "/blog/filament-vrijdag-pla-silk-plus",
+  },
+}
+
 export default async function MaterialDetailPage({
   params,
 }: {
@@ -175,6 +235,7 @@ export default async function MaterialDetailPage({
   const material = MATERIALS[detail.key]
   const galleryItems = MATERIAL_GALLERY[detail.key]
   const contactHref = `/contact?material=${encodeURIComponent(material.name)}`
+  const filamentFriday = detail.filamentFriday ?? FILAMENT_FRIDAY_LINKS[detail.key]
 
   const productJsonLd = {
     "@context": "https://schema.org",
@@ -246,11 +307,29 @@ export default async function MaterialDetailPage({
               <ShimmerButton href={contactHref}>Vraag offerte of advies</ShimmerButton>
               <Link
                 href="/materials"
-                className="inline-flex items-center gap-1 text-sm font-semibold text-slate-700 transition hover:text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="inline-flex items-center gap-1 text-sm font-semibold text-slate-700 transition hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
                 ← Terug naar materialen
               </Link>
             </div>
+            {filamentFriday ? (
+              <div className="mt-8 w-full">
+                <GlassCard className="p-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.4em] text-indigo-500">Filament Vrijdag</p>
+                  <h2 className="mt-3 text-2xl font-semibold text-slate-900">{filamentFriday.title}</h2>
+                  <p className="mt-2 text-sm text-slate-600">{filamentFriday.description}</p>
+                  <div className="mt-4">
+                    <Link
+                      href={filamentFriday.href}
+                      className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
+                    >
+                      Lees de Filament Vrijdag editie
+                      <span aria-hidden>-&gt;</span>
+                    </Link>
+                  </div>
+                </GlassCard>
+              </div>
+            ) : null}
           </Reveal>
         </div>
       </section>

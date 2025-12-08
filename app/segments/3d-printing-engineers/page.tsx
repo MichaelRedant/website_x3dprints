@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import Faq from "@/components/Faq"
+import { SITE, buildLocalBusinessSchema, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "3D printing voor engineers | X3DPrints",
@@ -25,6 +27,58 @@ const engineerHighlights = [
   "Beschikbaarheid van meetrapporten, foto-updates en herhaalbatches",
 ]
 
+const faqItems = [
+  {
+    q: "Welke toleranties zijn haalbaar?",
+    a: "We mikken standaard op <strong>±0,2 mm</strong> bij FDM. Vermeld kritieke maten in je aanvraag, dan stemmen we orientatie en eventuele nabewerking af.",
+  },
+  {
+    q: "Kunnen jullie meetrapporten of foto-updates delen?",
+    a: "Ja. Op verzoek leveren we korte meetrapporten en fotologs zodat product- en QA-teams snel kunnen vrijgeven.",
+  },
+  {
+    q: "Welk materiaal past bij mijn toepassing?",
+    a: "<strong>PLA Tough+</strong> is ideaal voor taaie prototypes, <strong>PETG</strong> voor warmte of chemische belasting en <strong>TPU</strong> voor flexibele onderdelen. We adviseren graag mee in je aanvraag.",
+  },
+]
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a.replace(/<[^>]*>/g, ""),
+    },
+  })),
+}
+
+const pageUrl = String(
+  metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-engineers`,
+)
+const pageDescription = metadata.description ?? SITE.description
+
+const serviceOffers: SchemaOfferInput[] = [
+  {
+    serviceName: "Engineers 3D printing",
+    price: "EUR 5",
+    description: "Functionele prototypes, jigs en fixtures met DFM-feedback.",
+    url: pageUrl,
+  },
+]
+
+const localBusinessJsonLd = buildLocalBusinessSchema({
+  pageUrl,
+  description: pageDescription,
+  image: "/images/og-home.jpg",
+  areaServed: "Gent & Vlaanderen",
+  priceRange: "EUR 5 - EUR 49",
+})
+
+const serviceJsonLd = buildServiceSchema("3D printing voor engineers", serviceOffers, pageUrl)
+
 export default function EngineersSegmentPage() {
   return (
     <main className="relative overflow-hidden px-4 pb-24 pt-12 sm:px-6 lg:px-8">
@@ -40,12 +94,18 @@ export default function EngineersSegmentPage() {
         <p className="mt-4 text-base text-slate-600">
           Voor jigs, fixtures, behuizingen en functionele prototypes. We denken mee over tolerantie, materiaal en planning.
         </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact">Vraag een technisch gesprek</ShimmerButton>
-          <Link href="/materials" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
-            Materialen bekijken
-          </Link>
-        </div>
+          <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
+            <ShimmerButton href="/contact?material=pla-tough-plus">Vraag een technisch gesprek</ShimmerButton>
+            <Link href="/materials" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
+              Materialen bekijken
+            </Link>
+            <Link
+              href="/materials#material-suggestion-tool"
+              className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
+            >
+              Material Suggestion Tool
+            </Link>
+          </div>
       </header>
 
       <section className="mx-auto mt-10 max-w-5xl grid gap-6 lg:grid-cols-2">
@@ -54,7 +114,7 @@ export default function EngineersSegmentPage() {
           <ul className="mt-4 space-y-2 text-sm text-slate-600">
             <li>Functionele prototypes voor productontwerp</li>
             <li>Jigs en fixtures voor assemblage of testen</li>
-            <li>Behulzingen, brackets en custom tooling</li>
+            <li>Behuizingen, brackets en custom tooling</li>
           </ul>
           <p className="mt-4 text-xs text-slate-500">
             Afwerking: supportverwijdering en licht ontbramen standaard inbegrepen. Extra nabewerking in overleg.
@@ -99,7 +159,22 @@ export default function EngineersSegmentPage() {
           </ul>
         </GlassCard>
       </section>
+
+      <section className="mx-auto mt-12 max-w-4xl">
+        <Faq title="FAQ voor engineers" items={faqItems} />
+      </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
     </main>
   )
 }
-

@@ -3,7 +3,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react"
 import { useSearchParams } from "next/navigation"
-import { MATERIALS } from "@/lib/materials"
+import { MATERIALS, MATERIAL_KEY_BY_SLUG, materialSlug, type MaterialKey } from "@/lib/materials"
 
 type FormDataShape = {
   name: string
@@ -16,15 +16,35 @@ type FormDataShape = {
 }
 
 const inputBase =
-  "w-full rounded-lg border border-slate-300 bg-white/90 px-3 py-2.5 text-sm text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-500/10"
+  "w-full rounded-lg border border-slate-300 bg-white/90 px-3 py-2.5 text-sm text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 dark:border-slate-600 dark:bg-[#0F1324]/80 dark:text-white dark:placeholder:text-slate-400 dark:focus:border-[#00E6FF] dark:focus:ring-[#00E6FF]/20"
 
-const labelCls = "text-xs font-semibold text-slate-700"
+const labelCls = "text-xs font-semibold text-slate-700 dark:text-slate-200"
 const row = "grid gap-2"
-const groupCls = "rounded-2xl border border-slate-200 bg-white/70 p-4 sm:p-5"
-const headingCls = "text-sm font-semibold text-slate-900"
+const groupCls =
+  "rounded-2xl border border-slate-200 bg-white/70 p-4 sm:p-5 dark:border-[#1f2336] dark:bg-[#0B0F1A]/70"
+const headingCls = "text-sm font-semibold text-slate-900 dark:text-slate-100"
 
 type ContactFormProps = {
   defaultMaterial?: string
+}
+
+function resolveMaterialName(raw: string) {
+  const value = raw.trim()
+  if (!value) return ""
+
+  const directMatch = Object.values(MATERIALS).find((m) => m.name.toLowerCase() === value.toLowerCase())
+  if (directMatch) return directMatch.name
+
+  const normalizedSlug = materialSlug(value)
+  const slugKey = MATERIAL_KEY_BY_SLUG[normalizedSlug]
+  if (slugKey) return MATERIALS[slugKey].name
+
+  if ((value as MaterialKey) in MATERIALS) {
+    const maybeKey = value as MaterialKey
+    return MATERIALS[maybeKey].name
+  }
+
+  return value
 }
 
 export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) {
@@ -34,9 +54,9 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
   const decodedQueryMaterial = useMemo(() => {
     if (!materialFromQuery) return ""
     try {
-      return decodeURIComponent(materialFromQuery)
+      return resolveMaterialName(decodeURIComponent(materialFromQuery))
     } catch {
-      return materialFromQuery
+      return resolveMaterialName(materialFromQuery)
     }
   }, [materialFromQuery])
   const decodedQuote = useMemo(() => {
@@ -189,7 +209,7 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
               id="material"
               className={inputBase}
               list="materials"
-              placeholder="PLA Matte, PETG, TPU…"
+              placeholder="PLA Matte, PETG, TPU..."
               value={data.material}
               onChange={e => update("material", e.target.value)}
             />
@@ -206,7 +226,7 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
           <h3 id="quote-legend" className={headingCls}>
             Indicatieve schatting (excl. btw, ontwerpkosten, premium STL)
           </h3>
-          <p className="mt-2 text-xs text-slate-600">
+          <p className="mt-2 text-xs text-slate-600 dark:text-slate-400">
             Deze berekening komt uit de prijscalculator. Pas desnoods aan of laat staan voor context.
           </p>
           <div className="mt-3 grid gap-2">
@@ -228,7 +248,7 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
           <textarea
             id="message"
             className={`${inputBase} min-h-[160px]`}
-            placeholder="Downloadlink(s) naar STL/STEP, afmetingen, gewenste afwerking, deadline…"
+            placeholder="Downloadlink(s) naar STL/STEP, afmetingen, gewenste afwerking, deadline..."
             value={data.message}
             onChange={e => update("message", e.target.value)}
             rows={6}
@@ -253,12 +273,18 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
         <button
           type="submit"
           disabled={status === "loading" || !emailValid}
-          className="rounded-xl border border-slate-300 bg-white/90 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white disabled:opacity-60"
+          className="rounded-xl border border-slate-300 bg-white/90 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white disabled:opacity-60 dark:border-slate-600 dark:bg-[#0F1324] dark:text-white dark:hover:bg-[#111a2d]"
         >
-          {status === "loading" ? "Versturen…" : "Verstuur aanvraag"}
+          {status === "loading" ? "Versturen..." : "Verstuur aanvraag"}
         </button>
-        {status === "ok" && <span className="text-sm font-medium text-emerald-600">Verzonden. Bedankt!</span>}
-        {status === "error" && <span className="text-sm font-medium text-red-600">{serverError || "Er ging iets mis. Probeer opnieuw."}</span>}
+        {status === "ok" && (
+          <span className="text-sm font-medium text-emerald-600 dark:text-emerald-400">Verzonden. Bedankt!</span>
+        )}
+        {status === "error" && (
+          <span className="text-sm font-medium text-red-600 dark:text-red-400">
+            {serverError || "Er ging iets mis. Probeer opnieuw."}
+          </span>
+        )}
       </div>
     </form>
   )

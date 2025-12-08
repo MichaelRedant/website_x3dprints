@@ -1,4 +1,4 @@
-// components/ctablock.tsx
+﻿// components/ctablock.tsx
 import Link from "next/link"
 import { FaBolt, FaEnvelope, FaArrowRight, FaShieldAlt } from "react-icons/fa"
 import GlassOrb from "./GlassOrb"
@@ -60,7 +60,7 @@ export default function CtaBlock({
           <ul className="mt-4 grid gap-2 text-sm text-slate-700 dark:text-slate-300 sm:grid-cols-2">
             {[
               "Korte doorlooptijd (we plannen samen, doorgaans enkele werkdagen)",
-              "Transparante prijzen — geen verrassingen",
+              "Transparante prijzen - geen verrassingen",
               "Nabehandeling: schuren, lakken, montage",
               "Persoonlijk advies bij materiaalkeuze",
             ].map((t, i) => (
@@ -97,7 +97,7 @@ export default function CtaBlock({
           </p>
         </div>
 
-        {/* Right: Visual — eigen GlassOrb (anders dan je keyword-SVG) */}
+        {/* Right: Visual â€” eigen GlassOrb (anders dan je keyword-SVG) */}
         <div className="relative hidden items-center justify-center overflow-hidden rounded-2xl ring-1 ring-white/30 sm:flex dark:ring-white/10">
           {/* subtiele paneelgradient */}
           
@@ -116,3 +116,4 @@ export default function CtaBlock({
     </section>
   )
 }
+

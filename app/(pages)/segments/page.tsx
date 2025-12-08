@@ -50,7 +50,7 @@ const segments: SegmentCard[] = [
     description:
       "Precisieprints in PLA Tough+ of PETG voor jigs, fixtures en pre-production prototypes. Inclusief meetrapporten.",
     highlights: [
-      "Typische tolerantie ±0,2 mm",
+      "Typische tolerantie +/-0,2 mm",
       "Functionaliteit gericht op sterkte en hittebestendigheid",
       "Makkelijk combineren met metaal/elektronica",
     ],
@@ -63,7 +63,7 @@ const segments: SegmentCard[] = [
     highlights: [
       "Showpieces klaar voor fotoshoots",
       "Snelle runs voor events en pop-ups",
-      "Afstemming met agencies over look & feel",
+      "Afhalen in Herzele of verzending in België",
     ],
   },
   {
@@ -103,7 +103,7 @@ const segments: SegmentCard[] = [
 
 export const metadata: Metadata = {
   title: "3D printing per segment | X3DPrints",
-  description: "Landingpagina’s voor veelgevraagde 3D print segmenten: prototypes, scholen, modelbouwers en engineers.",
+  description: "Landingpaginas voor veelgevraagde 3D print segmenten: prototypes, scholen, modelbouwers en engineers.",
   alternates: { canonical: "https://www.x3dprints.be/segments" },
   openGraph: {
     title: "3D printing per segment",
@@ -123,6 +123,32 @@ export default function SegmentsPage() {
     url: `https://www.x3dprints.be/${segment.slug}`,
     name: segment.title,
   }))
+
+  const faq = [
+    {
+      q: "Welke segmenten bedient X3DPrints?",
+      a: "We werken vaak voor prototypes, scholen, modelbouwers, marketing/events en engineers. Elk segment krijgt eigen materiaal- en workflowtips.",
+    },
+    {
+      q: "Kan ik maatwerk vragen buiten deze segmenten?",
+      a: "Ja, de segmenten zijn richtinggevend. Deel je toepassing; we kijken naar materiaal, toleranties en planning.",
+    },
+    {
+      q: "Hoe snel krijg ik een voorstel?",
+      a: "Meestal binnen 24 uur na STL/STEP en context. Planning stemmen we af op complexiteit en oplage.",
+    },
+  ]
+
+  const itemListJsonLd = { "@context": "https://schema.org", "@type": "ItemList", itemListElement: itemList }
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  }
 
   return (
     <main className="relative overflow-clip px-4 pb-24 pt-12 sm:px-6 lg:px-8">
@@ -184,10 +210,30 @@ export default function SegmentsPage() {
         ))}
       </section>
 
+      <section className="mx-auto mt-12 max-w-4xl px-2">
+        <GlassCard className="p-6 sm:p-8">
+          <h2 className="text-2xl font-semibold text-slate-900">FAQ over segmenten</h2>
+          <div className="mt-4 space-y-3 text-sm text-slate-700">
+            {faq.map((item) => (
+              <div key={item.q} className="rounded-xl border border-slate-200/70 bg-white/80 p-4">
+                <p className="text-base font-semibold text-slate-900">{item.q}</p>
+                <p className="mt-1 text-slate-700">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </GlassCard>
+      </section>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({ "@context": "https://schema.org", "@type": "ItemList", itemListElement: itemList }),
+          __html: JSON.stringify(itemListJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd),
         }}
       />
     </main>
