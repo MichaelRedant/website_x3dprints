@@ -335,11 +335,21 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       "Tougher dan PLA, licht flexibel en beter bestand tegen warmte en chemicaliën. Voor functionele onderdelen.",
     features: ["Functioneel", "Chemisch resistenter", "Vormvast"],
     swatches: [
+      { label: "Geel", color: "#FFD00B", inStock: true },
+      { label: "Oranje", color: "#F75403", inStock: true },
+      { label: "Groen", color: "#00AE42", inStock: true },
+      { label: "Rood", color: "#EB3A3A", inStock: true },
+      { label: "Blauw", color: "#002E96", inStock: true },
       { label: "Zwart", color: "#000000", inStock: true },
-      { label: "Wit", color: "#ffffff", inStock: true },
-      { label: "Transparant", color: g.translucent("#e6fbff"), inStock: true },
-      { label: "Blauw", color: "#3b82f6", inStock: false },
-      { label: "Rood", color: "#ef4444", inStock: false },
+      { label: "Wit", color: "#FFFFFF", inStock: true },
+      { label: "Transparant", color: g.translucent("#E6FBFF"), inStock: true },
+      { label: "Cream", color: "#F9DFB9", inStock: true },
+      { label: "Lime Green", color: "#6EE53C", inStock: true },
+      { label: "Forest Green", color: "#39541A", inStock: true },
+      { label: "Lake Blue", color: "#1F79E5", inStock: true },
+      { label: "Peanut Brown", color: "#875718", inStock: true },
+      { label: "Grijs", color: "#ADB1B2", inStock: true },
+      { label: "Donkergrijs", color: "#515151", inStock: true },
     ],
   },
 
@@ -387,6 +397,7 @@ export const MATERIAL_COST_EUR_PER_KG: Record<MaterialKey, number> = {
 export const MATERIAL_ORDER: MaterialKey[] = [
   "PLA_TOUGH_PLUS",
   "PLA_MATTE",
+  "PETG",
   "PLA_GLOW",
   "PLA_MARBLE",
   "PLA_SPARKLE",
@@ -396,7 +407,6 @@ export const MATERIAL_ORDER: MaterialKey[] = [
   "PLA_SILK_PLUS",
   "PLA_BASIC_GRADIENT",
   "PLA_BASIC",
-  "PETG",
   "PLA_TRANSLUCENT",
   "PLA_SILK_MULTI_COLOR",
   "PLA_CF",
@@ -416,4 +426,3 @@ export const MATERIAL_SLUGS: Record<MaterialKey, string> = MATERIAL_ORDER.reduce
 export const MATERIAL_KEY_BY_SLUG = Object.fromEntries(
   MATERIAL_ORDER.map((key) => [MATERIAL_SLUGS[key], key]),
 ) as Record<string, MaterialKey>
-
