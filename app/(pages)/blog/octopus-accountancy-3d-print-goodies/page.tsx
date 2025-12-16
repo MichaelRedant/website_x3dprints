@@ -1,9 +1,11 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
+import ShareActions from "@/components/ShareActions"
+import VideoGallery from "@/components/VideoGallery"
+import Image from "next/image"
 
 const canonical = "https://www.x3dprints.be/blog/octopus-accountancy-3d-print-goodies"
 const publishedDate = "2025-12-16T08:00:00+01:00"
@@ -128,6 +130,19 @@ const results = [
   "Het format leent zich perfect voor SaaS: snel testen, bijsturen en opnieuw inzetten bij volgende events.",
 ]
 
+const timelapseVideos = [
+  {
+    id: "EomHXEwzXMY",
+    title: "Timelapse: Octopus mascotte print (2025)",
+    description: "Versnelde opname van een PLA Matte/Silk Octopus print met AMS kleurwissel.",
+  },
+  {
+    id: "pEVjhj8Esmo",
+    title: "Timelapse: eerste Octopus batch",
+    description: "Eerdere run met focus op laaghoogte en stringingcontrole voor de mascotte.",
+  },
+]
+
 const faq = [
   {
     q: "Kunnen jullie ook kleine reeksen maken (bv. 10–30 stuks)?",
@@ -186,7 +201,16 @@ export default function OctopusCasePage() {
           <Link href="/segments/3d-printing-marketing" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
             3D printing voor marketing & events
           </Link>
+          <a
+            href="https://www.octopus.be"
+            target="_blank"
+            rel="noreferrer"
+            className="text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+          >
+            Bezoek Octopus.be
+          </a>
         </div>
+
 
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
           {heroStats.map((item) => (
@@ -266,6 +290,7 @@ export default function OctopusCasePage() {
         </Reveal>
       </section>
 
+      
       {/* TIMELAPSE */}
       <section className="mx-auto mt-12 max-w-5xl">
         <Reveal>
@@ -274,40 +299,30 @@ export default function OctopusCasePage() {
               <div>
                 <h2 className="text-2xl font-semibold text-slate-900">Timelapse van een Octopus-print</h2>
                 <p className="mt-1 text-sm text-slate-600">
-                  Voor wie graag ziet hoe zo’n mascot tot leven komt: een korte timelapse van een print.
+                  Voor wie graag ziet hoe zo&apos;n mascot tot leven komt: een korte timelapse van een print.
                 </p>
               </div>
-              <a
-                href="https://youtu.be/pEVjhj8Esmo"
+              <Link
+                href="https://youtu.be/EomHXEwzXMY"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noreferrer"
                 className="text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
               >
-                Open op YouTube ↗
-              </a>
+                Open op YouTube -&gt;
+              </Link>
             </div>
 
-            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200 bg-black">
-              <div className="relative aspect-video">
-                <iframe
-                  className="absolute inset-0 h-full w-full"
-                  src="https://www.youtube-nocookie.com/embed/pEVjhj8Esmo"
-                  title="Octopus print timelapse"
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
-              </div>
+            <div className="mt-4">
+              <VideoGallery videos={timelapseVideos} highlightIds={["EomHXEwzXMY"]} />
             </div>
 
             <p className="mt-3 text-xs text-slate-500">
-              Tip: voor promo-content werkt een timelapse vaak beter dan een “statische” foto. Het toont maakbaarheid en vakmanschap in 10 seconden.
+              Tip: voor promo-content werkt een timelapse vaak beter dan een statische foto. Het toont maakbaarheid en vakmanschap in 10 seconden, met een lite embed die snel laadt.
             </p>
           </GlassCard>
         </Reveal>
       </section>
-
-      {/* MATERIALS */}
+{/* MATERIALS */}
       <section className="mx-auto mt-12 max-w-5xl">
         <Reveal>
           <GlassCard className="border border-white/50 bg-white/85 p-6 shadow-lg backdrop-blur">
