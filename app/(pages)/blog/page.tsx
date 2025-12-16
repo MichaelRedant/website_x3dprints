@@ -716,6 +716,24 @@ const topics: Topic[] = [
     category: "segments-cases",
   },
   {
+    id: "octopus-accountancy-3d-print-goodies",
+    title: "Case: Octopus.be 3D-geprinte goodies",
+    summary:
+      "Samenwerking met Octopus.be: merk-eigen octopussen, magnetische badges en give-aways met meetbare QR/UTM links. Ideaal voor demo's, partnerdagen en onboarding.",
+    highlights: [
+      "PLA Matte/Silk mascottes die scherp ogen op foto's en in demo-opstellingen.",
+      "PETG Matte badges met verzonken magneten zodat ze daily use aankunnen.",
+      "Kits per event of partner, gelinkt aan Octopus landingpages voor tracking.",
+    ],
+    links: [
+      { label: "Lees de Octopus case", href: "/blog/octopus-accountancy-3d-print-goodies" },
+      { label: "Segment marketing & events", href: "/segments/3d-printing-marketing" },
+      { label: "Plan een merch run", href: "/contact?topic=octopus-case" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
     id: "3d-geprinte-platen-nasiam",
     title: "NaSiam: 3D-geprinte platen met QR",
     summary:

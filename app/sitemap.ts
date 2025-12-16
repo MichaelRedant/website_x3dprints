@@ -44,6 +44,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "3d-printen-winter-kerst-nieuwjaar",
     "3d-printen-zomer",
     "3d-printing-marketing-events",
+    "octopus-accountancy-3d-print-goodies",
     "bestanden-voor-3d-printen",
     "beste-instellingen-bambu-printer",
     "filament-vrijdag-pla",
