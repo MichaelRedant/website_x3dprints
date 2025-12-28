@@ -47,7 +47,7 @@ const faqItems = [
   },
   {
     q: "Hoe worden breekbare prints geleverd?",
-    a: "We verpakken gescheiden met schuim en kraftpapier en leveren met EV in zones. Zone 1 €25/€35, Zone 2 €45/€60, Zone 3 €60/€80, >75 km maatwerk of pakketdienst. Afhalen kan gratis.",
+    a: "We verpakken gescheiden met schuim en kraftpapier en leveren met EV in zones. Zone 1 €15, Zone 2 €30, Zone 3 €45, >75 km maatwerk of pakketdienst. Afhalen kan gratis.",
   },
   {
     q: "Is het 3D model inbegrepen?",
@@ -126,7 +126,7 @@ export default function BlogWinter() {
                 af op jouw gebruik: display-only, kids-safe of outdoor.
               </p>
               <p className="mt-3 text-sm text-slate-700">
-                Leveropties: Zone 1 (tot 25 km) €25 / €35 spoed, Zone 2 €45 / €60, Zone 3 €60 / €80, &gt;75 km maatwerk of
+                Leveropties: Zone 1 (tot 25 km) €15, Zone 2 €30, Zone 3 €45, &gt;75 km maatwerk of
                 pakketdienst. Afhalen in Herzele is gratis. Voeg datum + leveroptie toe bij je aanvraag voor een strakke planning.
               </p>
               <div className="mt-4 flex flex-wrap gap-3 text-sm">

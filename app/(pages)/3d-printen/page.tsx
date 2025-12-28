@@ -165,6 +165,37 @@ const workflow = [
   },
 ]
 
+const knowledgeLinks = [
+  {
+    title: "Filament Vrijdag",
+    description: "Wekelijkse deep dives in PLA, PETG, TPU, PC en andere materialen voor 3D printen.",
+    href: "/blog/filament-vrijdag-pla",
+  },
+  {
+    title: "Maker Monday",
+    description: "Ontwerp- en engineeringtips rond scharnieren, tolerantie en wanddiktes voor FDM 3D printen.",
+    href: "/blog/maker-monday-fdm-scharnieren",
+  },
+  {
+    title: "Prijzen & calculator",
+    description: "Transparante uitleg over kostenstructuur, calculator en voorbeelden voor 3D printen.",
+    href: "/pricing",
+  },
+  {
+    title: "Materialenbibliotheek",
+    description: "Alle filamenten, kleuren en FAQ's inclusief PC, PETG en PLA Wood cases.",
+    href: "/materials",
+  },
+]
+
+const fileChecklist = [
+  "STL of STEP-bestand zonder niet-manifolde vlakken of losse shells",
+  "Oriëntatievoorkeur en kritieke maatvoering (schroefgaten, scharnierpennen)",
+  "Info over omgeving: binnen/buiten, chemie, hitte (helpt bij materiaalkeuze)",
+  "Gewenste afwerking (mat, silk, translucent) en eventuele nabewerking",
+  "Deadline of eventdatum zodat we planning voor 3D printen correct opzetten",
+]
+
 const faq = [
   {
     q: "Welke bestanden werken het best voor 3D printen?",
@@ -271,6 +302,63 @@ export default function Page() {
                 Materialen voor 3D printen
               </Link>
             </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* DEFINITION & KNOWLEDGE */}
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+            <GlassCard className="h-full p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Wat bedoelen we met 3D printen?</h2>
+              <p className="mt-3 text-sm text-slate-600">
+                X3DPrints is een FDM 3D printservice in Vlaanderen. We printen met PLA, PETG, TPU en specials, allemaal op
+                pro-printers in een gesloten omgeving. Dat betekent: strakke toleranties (+/-0,2 mm), controle over support en
+                oriëntatie en eerlijk advies wanneer een ontwerp beter herwerkt wordt alvorens te 3D printen.
+              </p>
+              <p className="mt-3 text-sm text-slate-600">
+                Zoek je een “3D print bureau” voor marketingprops, tabletop of functionele onderdelen? Deze pagina koppelt je direct
+                aan de juiste resources: materialen, prijzen, upload en segmenten. Zo bouw je sneller autoriteit en vertrouwen op
+                richting stakeholders én Google.
+              </p>
+              <p className="mt-3 text-sm text-slate-600">
+                Wil je dieper duiken? Gebruik de onderstaande kennisbanklinks of start meteen in de{" "}
+                <Link href="/blog" className="text-indigo-600 underline underline-offset-4">
+                  blog & kennisbank
+                </Link>{" "}
+                waar we Filament Vrijdag, Maker Monday en sectorcases bundelen.
+              </p>
+            </GlassCard>
+
+            <GlassCard className="h-full p-6 sm:p-8">
+              <h2 className="text-xl font-semibold text-slate-900">Kennisbank en checklist</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Elk 3D printproject start met goede input. Deze links bundelen de populairste gidsen en de checklist toont wat we
+                graag ontvangen bij een aanvraag.
+              </p>
+              <ul className="mt-4 space-y-3 text-sm text-slate-700">
+                {knowledgeLinks.map((item) => (
+                  <li key={item.href} className="rounded-2xl border border-slate-200/70 bg-white/80 p-3">
+                    <Link href={item.href} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                      {item.title}
+                    </Link>
+                    <p className="text-sm text-slate-600">{item.description}</p>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Bestandschecklist</p>
+                <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                  {fileChecklist.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-500" aria-hidden />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </GlassCard>
           </Reveal>
         </div>
       </section>

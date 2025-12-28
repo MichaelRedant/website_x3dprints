@@ -140,6 +140,24 @@ const topics: Topic[] = [
     category: "filament-friday",
   },
   {
+    id: "filament-vrijdag-pc",
+    title: "Filament Vrijdag #5: polycarbonaat (PC) 3D printen",
+    summary:
+      "PC filament staat voor hittebestendigheid en UV-stabiliteit, maar eist droge spoelen, een enclosure en strikte planning. Deze aflevering bundelt settings, droogtijd en realistische use cases.",
+    highlights: [
+      "SEO focus op zoekwoorden als “polycarbonaat 3D printen”, “PC filament settings” en “PC filament drogen” met concrete studio-data.",
+      "Benadrukt droogprotocol (8 uur) en planning zodat lezers begrijpen waarom PC duurdere leadtimes heeft.",
+      "Interne links naar de PC materiaalfiche, Material Suggestion Tool en PETG/PLA edities om de cluster sterk te houden.",
+    ],
+    links: [
+      { label: "Lees Filament Vrijdag #5", href: "/blog/filament-vrijdag-pc" },
+      { label: "PC materiaalprofiel", href: "/materials/pc" },
+      { label: "Plan een PC run", href: "/contact?material=PC" },
+    ],
+    intent: "informational",
+    category: "filament-friday",
+  },
+  {
     id: "finishing-friday-schuren-primen-lakken",
     title: "Finishing Friday: schuren, primen & lakken",
     summary:

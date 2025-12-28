@@ -55,7 +55,7 @@ const faqItems = [
   },
   {
     q: "Hoe lever je breekbare decor veilig?",
-    a: "Gescheiden verpakt met schuim; EV-levering in zones (Zone 1 €25/€35, Zone 2 €45/€60, Zone 3 €60/€80) of pakketdienst. Afhalen kan gratis.",
+    a: "Gescheiden verpakt met schuim; EV-levering in zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) of pakketdienst. Afhalen kan gratis.",
   },
   {
     q: "Is het 3D model inbegrepen?",

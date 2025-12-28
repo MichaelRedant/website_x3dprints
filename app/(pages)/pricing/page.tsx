@@ -74,9 +74,9 @@ export default function Page() {
   ]
 
   const deliveryZones = [
-    { k: "Zone 1 tot 25 km (EV)", v: "Standaard 48-72u: EUR 25, Spoed 24u (mits haalbaar): EUR 35" },
-    { k: "Zone 2  25-50 km (EV)", v: "Standaard: EUR 45  Spoed: EUR 60" },
-    { k: "Zone 3  50-75 km (EV)", v: "Standaard: EUR 60  Spoed: EUR 80" },
+    { k: "Zone 1 tot 25 km (EV)", v: "Standaard 48-72u: EUR 15" },
+    { k: "Zone 2  25-50 km (EV)", v: "Standaard: EUR 30" },
+    { k: "Zone 3  50-75 km (EV)", v: "Standaard: EUR 45" },
     { k: "Verder dan 75 km", v: "Maatwerkprijs of pakketdienst, in overleg" },
     { k: "Vertrekpunt", v: "Afstanden gerekend vanaf Herzele (heen en terug)" },
   ]

@@ -54,7 +54,7 @@ const materials = [
 ]
 
 const logistics = [
-  "EV-levering: Zone 1 (tot 25 km) €25 / €35 spoed, Zone 2 €45 / €60, Zone 3 €60 / €80. Verder dan 75 km = maatwerk of pakketdienst.",
+  "EV-levering: Zone 1 (tot 25 km) €15, Zone 2 €30, Zone 3 €45. Verder dan 75 km = maatwerk of pakketdienst.",
   "Breekbare decorstukken worden gescheiden verpakt met schuim en kraftpapier.",
   "Afhalen in Herzele op afspraak is gratis.",
 ]

@@ -144,7 +144,7 @@ const LOOK_PRIORITY: Partial<Record<LookAnswer, MaterialKey[]>> = {
   silk: ["PLA_SILK_PLUS"],
 }
 
-const PERMANENT_OUTDOOR_KEYS = new Set<MaterialKey>(["PETG", "PLA_CF", "TPU"])
+const PERMANENT_OUTDOOR_KEYS = new Set<MaterialKey>(["PETG", "PLA_CF", "PC", "TPU"])
 
 function scoreLabel(score: number, high: string, medium: string, low: string): string {
   if (score >= 4) return high
@@ -261,7 +261,12 @@ function calculateScore(record: MaterialSuggestionRecord, answers: SolidAnswers)
       break
     case "strongFunctional":
       score += record.mechanical.strength * 3 + record.mechanical.impactResistance * 2 + record.environment.tempResistance * 1.5
-      if (record.materialKey === "PETG" || record.materialKey === "PLA_CF" || record.materialKey === "PLA_TOUGH_PLUS") {
+      if (
+        record.materialKey === "PETG" ||
+        record.materialKey === "PC" ||
+        record.materialKey === "PLA_CF" ||
+        record.materialKey === "PLA_TOUGH_PLUS"
+      ) {
         score += 4
       }
       break
@@ -290,7 +295,12 @@ function calculateScore(record: MaterialSuggestionRecord, answers: SolidAnswers)
     if (record.flags.specialLook && fragileLooks.has(record.flags.specialLook)) {
       score -= 3
     }
-    if (record.materialKey === "PETG" || record.materialKey === "PLA_TOUGH_PLUS" || record.materialKey === "PLA_CF") {
+    if (
+      record.materialKey === "PETG" ||
+      record.materialKey === "PC" ||
+      record.materialKey === "PLA_TOUGH_PLUS" ||
+      record.materialKey === "PLA_CF"
+    ) {
       score += 4
     }
   } else if (answers.size === "small") {

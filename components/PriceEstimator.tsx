@@ -149,7 +149,7 @@ De exacte prijs bevestigen we na een korte modelcontrole, zodat je altijd zeker 
             ))}
           </select>
           <span className="text-[11px] text-slate-500">
-            Droogbehandeling inbegrepen voor TPU/PLA Wood/PETG.
+            Droogbehandeling inbegrepen voor TPU/PLA Wood/PETG/PC.
           </span>
         </div>
 

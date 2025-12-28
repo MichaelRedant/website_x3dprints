@@ -54,7 +54,7 @@ const faqItems = [
   },
   {
     q: "Hoe lever je breekbare stukken veilig?",
-    a: "We verpakken gescheiden met schuim en leveren via EV-zones (Zone 1 €25/€35, Zone 2 €45/€60, Zone 3 €60/€80) of pakketdienst. Afhalen in Herzele kan gratis.",
+    a: "We verpakken gescheiden met schuim en leveren via EV-zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) of pakketdienst. Afhalen in Herzele kan gratis.",
   },
   {
     q: "Is het 3D model inbegrepen?",

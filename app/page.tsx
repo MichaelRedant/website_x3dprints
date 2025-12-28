@@ -376,8 +376,8 @@ export default function HomePage() {
               Materialen, kleuren & afwerking
             </h2>
             <p className="mt-2 max-w-2xl text-slate-600">
-              PLA voor strakke details en nette afwerking. Voor sterkte, UV of hitte schakelen we naar PETG, ABS/ASA,
-              Nylon (PA) of PA-CF. Afwerking kan rauw, geschuurd, geprimed of gelakt. Hieronder een greep uit wat we vaak printen in Belgi{" "}
+              PLA voor strakke details en nette afwerking. Voor sterkte, UV of hitte schakelen we naar PETG, PC,
+              ABS/ASA, Nylon (PA) of PA-CF. Afwerking kan rauw, geschuurd, geprimed of gelakt. Hieronder een greep uit wat we vaak printen in Belgi{" "}
               <Link href="/materials" className="underline decoration-slate-300 hover:decoration-slate-500">
                 Alle varianten bekijken
               </Link>.
@@ -435,6 +435,16 @@ export default function HomePage() {
                   { label: "Peanut Brown", fill: "#875718", inStock: true },
                   { label: "Grijs", fill: "#ADB1B2", inStock: true },
                   { label: "Donkergrijs", fill: "#515151", inStock: true },
+                ],
+              },
+              {
+                title: "PC (Polycarbonaat)",
+                blurb:
+                  "Voor onderdelen die continu zon, olie of hitte zien. PC blijft strak tot ongeveer 110 graden en vraagt wel 8u drogen maar levert premium functionaliteit.",
+                swatches: [
+                  { label: "Transparant", fill: translucent("#E6FBFF"), inStock: true },
+                  { label: "Helder Zwart", fill: "linear-gradient(180deg,#1b1b1f,#050505)", inStock: true },
+                  { label: "Zwart", fill: "#000000", inStock: true },
                 ],
               },
               {

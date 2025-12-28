@@ -272,9 +272,9 @@ export default function BlogMiniaturesPage() {
                 met dubbele doos en fragile-label.
               </p>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                <li>Zone 1 (tot 25 km): €25 standaard / €35 spoed</li>
-                <li>Zone 2 (25-50 km): €45 standaard / €60 spoed</li>
-                <li>Zone 3 (50-75 km): €60 standaard / €80 spoed</li>
+                <li>Zone 1 (tot 25 km): €15</li>
+                <li>Zone 2 (25-50 km): €30</li>
+                <li>Zone 3 (50-75 km): €45</li>
                 <li>&gt; 75 km: maatwerk of pakketdienst</li>
               </ul>
             </GlassCard>

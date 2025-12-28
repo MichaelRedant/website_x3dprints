@@ -164,6 +164,18 @@ export const MATERIAL_GALLERY: Partial<Record<MaterialKey, MaterialGalleryItem[]
       caption: "Perfect voor functionele toepassingen die tegen een stootje kunnen.",
     },
   ],
+  PC: [
+    {
+      src: "PC_img1.webp",
+      alt: "Polycarbonaat behuizing met semi-transparante wand",
+      caption: "PC blijft glashelder en maatvast voor technische covers.",
+    },
+    {
+      src: "PC_img2.webp",
+      alt: "Donker getinte PC bracket met metalen inserts",
+      caption: "Helder Zwart PC combineert rookglaslook met hoge weerstand.",
+    },
+  ],
   PLA_TRANSLUCENT: [
     {
       src: "Translucent_K2_Butterfly.webp",

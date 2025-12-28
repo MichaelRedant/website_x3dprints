@@ -218,6 +218,12 @@ const FILAMENT_FRIDAY_LINKS: Partial<
       "Wanneer je Silk+ inzet voor premium zichtwerk, welke instellingen wij gebruiken en hoe je glans combineert met leesbaarheid.",
     href: "/blog/filament-vrijdag-pla-silk-plus",
   },
+  PC: {
+    title: "Filament Vrijdag #5: polycarbonaat (PC)",
+    description:
+      "Polycarbonaat 3D printen met droge spoelen, gesloten printers en realistische verwachtingen over leadtime.",
+    href: "/blog/filament-vrijdag-pc",
+  },
 }
 
 export default async function MaterialDetailPage({

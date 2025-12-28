@@ -418,6 +418,32 @@ export const MATERIAL_SUGGESTION_DATA: MaterialSuggestionRecord[] = [
     colors: ["Black", "White", "Transparent", "Blue", "Red"],
   },
   {
+    id: "pc",
+    materialKey: "PC",
+    name: "PC",
+    category: "Engineering",
+    descriptionShort: "Polycarbonaat voor hittebestendige onderdelen.",
+    descriptionLong:
+      "PC combineert hoge slagvastheid met uitstekende hitte- en UV-bestendigheid. Perfect voor behuizingen en brackets die in de zon of naast motorblokken belanden.",
+    finish: "Semi-glans, optioneel licht transparant.",
+    bestFor: ["Technische behuizingen", "Machine covers", "Outdoor brackets", "LED diffusers"],
+    highlightTags: ["Hittebestendig", "UV-bestendig", "Functioneel"],
+    environment: {
+      suitability: { indoor: 5, outdoorSeasonal: 4, outdoorPermanent: 4 },
+      uvResistance: 4,
+      tempResistance: 5,
+    },
+    mechanical: { strength: 5, flexibility: 2, impactResistance: 4 },
+    printProfile: {
+      difficulty: 4,
+      needsDryer: true,
+      notes: "Droog minstens 8 uur en print in een gesloten behuizing voor beste resultaten.",
+    },
+    economics: { priceLevel: "premium", costFactor: 4 },
+    flags: { isFlexible: false, specialLook: null },
+    colors: ["Transparant", "Helder Zwart", "Zwart"],
+  },
+  {
     id: "pla_translucent",
     materialKey: "PLA_TRANSLUCENT",
     name: "PLA Translucent",

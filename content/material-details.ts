@@ -185,6 +185,18 @@ const materialFaq: Record<MaterialKey, FaqItem[]> = {
         "We drogen elke spoel, gebruiken aangepaste retracties en PEI of lijmstick, waardoor onderdelen glad blijven.",
     },
   ],
+  PC: [
+    {
+      question: "Wanneer kies je PC in plaats van PETG?",
+      answer:
+        "Polycarbonaat blijft maatvast tot ruim 110ƒ?î¶øC, is UV-bestendig en kan continu buiten hangen. We gebruiken het voor machinecovers, brackets rond motoren en onderdelen die permanente zon of chemicaliÇ®n trotseren.",
+    },
+    {
+      question: "Hoe vermijden jullie scheuren of warping bij PC?",
+      answer:
+        "Elke spoel droogt minstens acht uur, daarna printen we in een gesloten behuizing met hoge bedtemperatuur en lijmstick. Perimeterinstellingen en gecontroleerde koeling zorgen voor spanningsvrije resultaten.",
+    },
+  ],
   PLA_TRANSLUCENT: [
     {
       question: "Hoeveel licht laat PLA Translucent door?",
@@ -847,6 +859,56 @@ const details: MaterialDetailContent[] = [
     leadTime: "Levertijd 3 werkdagen",
     priceIndicator: "Prijsindicatie: €€",
     faq: materialFaq["PETG"],
+  },
+  {
+    key: "PC",
+    slug: MATERIAL_SLUGS["PC"],
+    heroTagline: "Polycarbonaat voor extreme omstandigheden",
+    heroDescription:
+      "PC zetten we in wanneer hitte, UV en mechanische belasting tegelijk spelen. Het levert strakke onderdelen met een technische look.",
+    summary:
+      "Polycarbonaat blijft maatvast boven 100ƒ?î¶øC, weerstaat olie en UV en is daarmee perfect voor machinecovers, outdoor brackets en displayonderdelen die beter bestand moeten zijn dan PETG.",
+    highlights: [
+      {
+        title: "Hitte- en UV-bestendig",
+        description:
+          "Met een glasovergang rond 110 deg C vervormt PC niet in de zon of naast motoren en verkleurt het nauwelijks.",
+      },
+      {
+        title: "Sterk én taai",
+        description:
+          "Het materiaal vangt impact op maar blijft stijf genoeg voor schroefbare behuizingen en machinecomponenten.",
+      },
+      {
+        title: "Helder of smoky",
+        description:
+          "Van volledig Transparant tot Helder Zwart voor diffusers en vensters waar je licht wil doorlaten zonder visuele rommel.",
+      },
+    ],
+    idealFor: [
+      "Outdoor brackets en technische klemmen",
+      "Machinecovers en protectoren",
+      "LED-diffusers en prototypes die licht tonen",
+      "Behuizingen nabij warmtebronnen",
+    ],
+    specs: [
+      { label: "Glasovergang", value: "~110 deg C" },
+      { label: "Printtemperatuur", value: "260-280 deg C" },
+      { label: "Bedtemperatuur", value: "100-110 deg C" },
+    ],
+    printTips: [
+      "Droog elke spoel minstens 8 uur rond 80 deg C voor perfecte laaghechting.",
+      "Print in een gesloten behuizing met beperkte koeling om scheuren te vermijden.",
+      "Gebruik lijmstick of tekstuur-PEI plus een brim voor betrouwbare bedhechting.",
+    ],
+    seo: {
+      title: "PC polycarbonaat 3D prints op maat",
+      description:
+        "Laat hittebestendige polycarbonaat (PC) onderdelen printen bij X3DPrints in Herzele. Ideaal voor machinecovers, outdoor brackets en UV-bestendige displayonderdelen.",
+    },
+    leadTime: "Levertijd 4-6 werkdagen",
+    priceIndicator: "Prijsindicatie: €€€",
+    faq: materialFaq["PC"],
   },
   {
     key: "PLA_TRANSLUCENT",

@@ -22,6 +22,7 @@ export type MaterialKey =
   | "PLA_WOOD"
 
   | "PETG"
+  | "PC"
   | "TPU";
 
 export type Swatch = {
@@ -353,6 +354,18 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
     ],
   },
 
+  PC: {
+    name: "PC",
+    description:
+      "Polycarbonaat voor hittebestendige, mechanisch sterke onderdelen met een strakke, semi-transparante look.",
+    features: ["Hittebestendig", "UV-bestendig", "Technische onderdelen"],
+    swatches: [
+      { label: "Transparant", color: g.translucent("#E6FBFF"), inStock: true },
+      { label: "Helder Zwart", color: "linear-gradient(180deg,#1b1b1f,#050505)", inStock: true },
+      { label: "Zwart", color: "#000000", inStock: true },
+    ],
+  },
+
   TPU: {
     name: "TPU",
     description:
@@ -390,6 +403,7 @@ export const MATERIAL_COST_EUR_PER_KG: Record<MaterialKey, number> = {
   PLA_CF: 26.99,
   PLA_WOOD: 27.99,
   PETG: 22.99,
+  PC: 34.39,
   TPU: 39.99,
 };
 
@@ -398,6 +412,7 @@ export const MATERIAL_ORDER: MaterialKey[] = [
   "PLA_TOUGH_PLUS",
   "PLA_MATTE",
   "PETG",
+  "PC",
   "PLA_GLOW",
   "PLA_MARBLE",
   "PLA_SPARKLE",

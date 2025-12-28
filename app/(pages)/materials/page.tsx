@@ -12,14 +12,14 @@ import MaterialSuggestionTool from "@/components/MaterialSuggestionTool"
 import { buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "Materialen (PLA, PETG, TPU) | X3DPrints",
+  title: "Materialen voor 3D printen (PLA, PETG, TPU) | X3DPrints",
   description:
-    "Overzicht van beschikbare filamenten met eigenschappen en voorraad: PLA (Matte, Silk, Marble, Wood, etc.), PETG en TPU. Vraag gratis materiaaladvies.",
+    "Materialen voor 3D printen in Vlaanderen: PLA Matte/Silk/Wood, PETG, TPU en specials. Bekijk eigenschappen, voorraad en vraag gratis materiaaladvies.",
   alternates: { canonical: "https://www.x3dprints.be/materials" },
   openGraph: {
-    title: "Materialen | X3DPrints",
+    title: "Materialen voor 3D printen | X3DPrints",
     description:
-      "Materialen voor 3D printen: PLA-varianten, PETG en TPU. Zie eigenschappen, kleuren en beschikbaarheid.",
+      "Materialen voor 3D printen: PLA-varianten, PETG en TPU met kleuren, specs en voorraadstatus.",
     url: "https://www.x3dprints.be/materials",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     siteName: "X3DPrints",
@@ -138,7 +138,9 @@ export default function MaterialsPage() {
       <section className="px-6 pt-14 pb-8 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">Materialen</h1>
+            <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+              Materialen voor 3D printen
+            </h1>
             <p className="mt-3 max-w-2xl text-slate-600">
               Overzicht van onze meest gebruikte filamenten met eigenschappen, kleuropties en voorraad:
               <strong> PLA</strong> (Matte, Tough+, Silk, Marble, Wood, Translucent, enz.),
@@ -163,7 +165,7 @@ export default function MaterialsPage() {
             <Reveal>
               <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-500">Waarom deze tool?</p>
-                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Sneller naar de juiste materiaalkeuze</h2>
+                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Sneller naar de juiste materiaalkeuze voor 3D printen</h2>
                 <p className="mt-3 text-sm text-slate-600">
                   Bezoekers willen weten welk filament best past, hoe het eruitziet, of het buiten kan en wat dat doet met de prijs.
                   Deze tool combineert die antwoorden met onze voorraaddata en toont maximaal drie opties: aanbevolen, budgetvriendelijk
@@ -203,7 +205,7 @@ export default function MaterialsPage() {
             <Reveal delay={0.05}>
               <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Uitkomst</p>
-                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Wat je te zien krijgt</h2>
+                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Wat je te zien krijgt voor je 3D printen-project</h2>
                 <p className="mt-3 text-sm text-slate-600">
                   Beantwoord alle vijf vragen en je krijgt maximaal drie opties:
                 </p>
