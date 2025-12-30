@@ -42,7 +42,7 @@ const services = [
   {
     icon: Printer,
     title: "FDM 3D-printen",
-    description: "Functionele onderdelen en prototypes in PLA, PETG of TPU. Tot ~25 x 25 x 25 cm per stuk, opsplitsen mogelijk.",
+    description: "Functionele onderdelen en prototypes in PLA, PETG of TPU. Tot ~35 x 32 x 35 cm per stuk, opsplitsen mogelijk.",
   },
   {
     icon: Palette,
@@ -115,7 +115,7 @@ const useCases = [
 ] as const
 
 const specs = [
-  { k: "Formaat", v: "Tot ~25 x 25 x 25 cm per stuk (opdelen in segmenten kan)" },
+  { k: "Formaat", v: "Tot ~35 x 32 x 35 cm per stuk (opdelen in segmenten kan)" },
   { k: "Layerhoogte", v: "0,12-0,28 mm afhankelijk van detail en sterkte" },
   { k: "Tolerantie", v: "Typisch +/-0,2 mm voor FDM (bespreek kritieke maten)" },
   { k: "Materialen", v: "PLA (mat/wood/marble/silk/etc.), PETG, TPU; andere in overleg" },

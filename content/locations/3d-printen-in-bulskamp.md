@@ -39,3 +39,4 @@ Bulskamp ligt op de as Veurne - Lo-Reninge en grenst aan het kanaal Nieuwpoort-D
 ## Klaar om te starten?
 
 Stuur je bestanden en context door en we plannen productie zodat je snel verder kan. Zo hoef jij enkel te kiezen tussen PLA, PETG of TPU en wij regelen de rest richting Bulskamp.
+

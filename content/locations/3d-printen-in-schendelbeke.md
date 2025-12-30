@@ -35,7 +35,7 @@ Voor **3D printen in Schendelbeke** levert X3DPrints prototypes en functionele o
 
 ## Praktisch
 
-Stuur STL of STEP via [contact](/contact) met aantallen, materiaal en deadline. Onderdelen tot 25 x 25 x 25 cm printen we in een stuk; grotere delen delen we slim. Verzending of afhalen mogelijk; zie [pricing](/pricing).
+Stuur STL of STEP via [contact](/contact) met aantallen, materiaal en deadline. Onderdelen tot 35 x 32 x 35 cm printen we in een stuk; grotere delen delen we slim. Verzending of afhalen mogelijk; zie [pricing](/pricing).
 
 ---
 

@@ -21,7 +21,7 @@ Met **3D printen in Schilde** krijg je snelle, nauwkeurige onderdelen voor ateli
 
 ## Bestellen
 - Upload **STL/STEP** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
-- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere items delen we slim op.
+- Onderdelen tot **35 � 32 � 35 cm** printen we in één stuk; grotere items delen we slim op.
 - Levering of afhalen kan; bekijk [pricing](/pricing) voor tarieven.
 
 ---
@@ -32,3 +32,6 @@ Met **3D printen in Schilde** krijg je snelle, nauwkeurige onderdelen voor ateli
 - [3D printen in Brasschaat](/3d-printen-in-brasschaat)
 - [3D printen in Kapellen](/3d-printen-in-kapellen)
 - [Materialen & richtlijnen](/materials)
+
+
+

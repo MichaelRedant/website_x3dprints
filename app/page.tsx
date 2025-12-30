@@ -28,11 +28,42 @@ export const metadata: Metadata = {
 }
 
 function getSeasonCta(date: Date) {
+  const MS_IN_DAY = 86_400_000
+  const isWithinWindow = (target: Date, daysBefore: number, daysAfter: number) => {
+    const diff = target.getTime() - date.getTime()
+    return diff <= daysAfter * MS_IN_DAY && diff >= -daysBefore * MS_IN_DAY
+  }
+  const getNthWeekday = (month: number, weekday: number, n: number) => {
+    // month is 1-12, weekday 0=Sun..6=Sat
+    const first = new Date(Date.UTC(date.getUTCFullYear(), month - 1, 1))
+    const firstWeekday = first.getUTCDay()
+    const offset = (weekday - firstWeekday + 7) % 7
+    const day = 1 + offset + 7 * (n - 1)
+    return new Date(Date.UTC(date.getUTCFullYear(), month - 1, day))
+  }
+
   const month = date.getUTCMonth() + 1 // 1-12
   const day = date.getUTCDate()
   const after = (m: number, d: number) => month > m || (month === m && day >= d)
   const before = (m: number, d: number) => month < m || (month === m && day <= d)
 
+  // België: Moederdag = 2e zondag mei, Vaderdag = 2e zondag juni (uitgezonderd Antwerpen)
+  const mothersDay = getNthWeekday(5, 0, 2)
+  const fathersDay = getNthWeekday(6, 0, 2)
+
+  const isValentijnWindow = (month === 1 && day >= 15) || (month === 2 && day <= 16)
+  const isParentsWindow =
+    isWithinWindow(mothersDay, 21, 1) || isWithinWindow(fathersDay, 21, 1) // 3 weken ervoor t/m dag zelf
+  const isBackToSchoolWindow = month === 8 || month === 9
+  if (isValentijnWindow) {
+    return { label: "Valentijn cadeaus", href: "/valentijn-3d-printen" }
+  }
+  if (isParentsWindow) {
+    return { label: "Vaderdag & Moederdag", href: "/blog/3d-printen-vaderdag-moederdag" }
+  }
+  if (isBackToSchoolWindow) {
+    return { label: "Back to School", href: "/blog/3d-printen-back-to-school" }
+  }
   if (after(11, 11) || before(2, 10)) {
     return { label: "Winter, Kerst & Nieuwjaar", href: "/blog/3d-printen-winter-kerst-nieuwjaar" }
   }
@@ -198,7 +229,7 @@ export default function HomePage() {
               },
               {
                 k: "Bouwvolume",
-                v: "Tot 25  25  25 cm",
+                v: "Tot 35 x 32 x 35 cm",
                 icon: icon(
                   <path
                     strokeLinecap="round"

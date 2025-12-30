@@ -21,7 +21,7 @@ Wie **3D printen in Aartselaar** zoekt, wil snelheid én precisie. Vanuit Herzel
 
 ## Praktisch bestellen
 - Bestanden in **STL of STEP** via [contact](/contact). Voeg aantallen, materiaalvoorkeur en gewenste leverdatum toe.
-- Formaat tot **25 × 25 × 25 cm** per onderdeel; grotere stukken delen we netjes op en laten we naadloos aansluiten.
+- Formaat tot **35 � 32 � 35 cm** per onderdeel; grotere stukken delen we netjes op en laten we naadloos aansluiten.
 - Levering of afhalen mogelijk; prijzen en opties vind je op [pricing](/pricing).
 
 ---
@@ -32,3 +32,7 @@ Wie **3D printen in Aartselaar** zoekt, wil snelheid én precisie. Vanuit Herzel
 - [3D printen in Kontich](/3d-printen-in-kontich)
 - [3D printen in Rumst](/3d-printen-in-rumst)
 - [Materialen & richtlijnen](/materials)
+
+
+
+

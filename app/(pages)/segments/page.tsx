@@ -10,7 +10,7 @@ type SegmentCard = {
   highlights: string[]
 }
 
-const segments: SegmentCard[] = [
+const coreSegments: SegmentCard[] = [
   {
     slug: "segments/3d-printing-prototypes",
     title: "3D printing voor prototypes",
@@ -88,6 +88,42 @@ const segments: SegmentCard[] = [
       "Persoonlijke EV-levering of pakketdienst voor breekbare prints",
     ],
   },
+]
+
+const seasonalSegments: SegmentCard[] = [
+  {
+    slug: "segments/3d-printing-back-to-school",
+    title: "Back to School 3D printing",
+    description:
+      "Pennenhouders, naamplaatjes, bureau organizers en educatieve STEM-modellen. Ontwerpbestand niet inbegrepen; aanleveren of ontwerpservice.",
+    highlights: [
+      "PLA Matte/PETG voor klasmateriaal, TPU antislipvoetjes",
+      "Batchen van namen/klassen voor consistente kleur",
+      "Planning augustus–september zonder overpromise",
+    ],
+  },
+  {
+    slug: "segments/3d-printing-vaderdag-moederdag",
+    title: "Vaderdag & Moederdag 3D printing",
+    description:
+      "Gepersonaliseerde sleutelhangers, desk items en naamcadeaus. Ontwerpbestand niet inbegrepen; aanleveren of ontwerpservice.",
+    highlights: [
+      "Silk/Matte PLA voor luxe of zachte look; PETG voor sterkere items",
+      "Tekstdiepte en afgeronde randen voor dagelijks gebruik",
+      "Batchen van namen/initialen voor consistente afwerking",
+    ],
+  },
+  {
+    slug: "segments/3d-printing-valentijn",
+    title: "3D printing voor Valentijn",
+    description:
+      "Hartdecor, naamplaatjes en gifts in Silk, Matte en Translucent PLA. Ontwerpbestand niet inbegrepen; aanleveren of ontwerpservice.",
+    highlights: [
+      "Silk/Marble voor glansrijke cadeaus, Matte voor zachte pastels",
+      "Uitsparingen voor leds/magneten en antislip feet in TPU",
+      "Planning richting 14 februari zonder overpromise",
+    ],
+  },
   {
     slug: "segments/3d-printing-seasonal",
     title: "Seasonal 3D designs",
@@ -117,7 +153,101 @@ export const metadata: Metadata = {
 }
 
 export default function SegmentsPage() {
-  const itemList = segments.map((segment, index) => ({
+  const quickLinks = [
+    { label: "Prototypes & engineers", href: "/segments/3d-printing-prototypes" },
+    { label: "Scholen & Back to School", href: "/segments/3d-printing-back-to-school" },
+    { label: "Marketing & seasonal", href: "/segments/3d-printing-marketing" },
+    { label: "Makers & tabletop", href: "/segments/3d-printing-makers" },
+    { label: "Valentijn (jan–feb)", href: "/segments/3d-printing-valentijn" },
+  ]
+
+  const relatedBySlug: Record<string, { label: string; href: string }[]> = {
+    "segments/3d-printing-prototypes": [
+      { label: "Engineers segment", href: "/segments/3d-printing-engineers" },
+      { label: "Services", href: "/services" },
+      { label: "Pricing", href: "/pricing" },
+    ],
+    "segments/3d-printing-scholen": [
+      { label: "Back to School", href: "/segments/3d-printing-back-to-school" },
+      { label: "Materials", href: "/materials" },
+      { label: "Viewer", href: "/viewer" },
+    ],
+    "segments/3d-printing-back-to-school": [
+      { label: "Scholen segment", href: "/segments/3d-printing-scholen" },
+      { label: "Back to School blog", href: "/blog/3d-printen-back-to-school" },
+      { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+    ],
+    "segments/3d-printing-modelbouwers": [
+      { label: "Seasonal decor", href: "/segments/3d-printing-seasonal" },
+      { label: "Portfolio", href: "/portfolio" },
+      { label: "Materials", href: "/materials" },
+    ],
+    "segments/3d-printing-engineers": [
+      { label: "Prototypes", href: "/segments/3d-printing-prototypes" },
+      { label: "Pricing", href: "/pricing" },
+      { label: "3D modelleren", href: "/3d-modelleren" },
+    ],
+    "segments/3d-printing-marketing": [
+      { label: "Seasonal segment", href: "/segments/3d-printing-seasonal" },
+      { label: "Portfolio", href: "/portfolio" },
+      { label: "Services", href: "/services" },
+    ],
+    "segments/3d-printing-makers": [
+      { label: "Tabletop minis", href: "/segments/3d-printing-tabletop" },
+      { label: "Materials", href: "/materials" },
+      { label: "Viewer", href: "/viewer" },
+    ],
+    "segments/3d-printing-tabletop": [
+      { label: "Makers & hobby", href: "/segments/3d-printing-makers" },
+      { label: "Materials", href: "/materials" },
+      { label: "Contact", href: "/contact" },
+    ],
+    "segments/3d-printing-vaderdag-moederdag": [
+      { label: "Seasonal segment", href: "/segments/3d-printing-seasonal" },
+      { label: "Vaderdag/Moederdag blog", href: "/blog/3d-printen-vaderdag-moederdag" },
+      { label: "Contact", href: "/contact?material=pla-silk-plus" },
+    ],
+    "segments/3d-printing-valentijn": [
+      { label: "Seasonal segment", href: "/segments/3d-printing-seasonal" },
+      { label: "Valentijn landing", href: "/valentijn-3d-printen" },
+      { label: "Contact", href: "/contact?material=pla-silk-plus" },
+    ],
+    "segments/3d-printing-seasonal": [
+      { label: "Marketing & events", href: "/segments/3d-printing-marketing" },
+      { label: "Back to School", href: "/segments/3d-printing-back-to-school" },
+      { label: "Seasonal blogs", href: "/blog" },
+    ],
+  }
+
+  const relatedLinks = [
+    {
+      title: "Onderwijs & Back to School",
+      items: [
+        { label: "Back to School segment", href: "/segments/3d-printing-back-to-school" },
+        { label: "Scholen segment", href: "/segments/3d-printing-scholen" },
+        { label: "Back to School blog", href: "/blog/3d-printen-back-to-school" },
+      ],
+    },
+    {
+      title: "Marketing & seasonal campagnes",
+      items: [
+        { label: "Marketing & events", href: "/segments/3d-printing-marketing" },
+        { label: "Seasonal segment", href: "/segments/3d-printing-seasonal" },
+        { label: "Seasonal blogs", href: "/blog" },
+      ],
+    },
+    {
+      title: "Makers, tabletop & hobby",
+      items: [
+        { label: "Makers & hobbyisten", href: "/segments/3d-printing-makers" },
+        { label: "Tabletop minis", href: "/segments/3d-printing-tabletop" },
+        { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+      ],
+    },
+  ]
+  const allSegments = [...coreSegments, ...seasonalSegments]
+
+  const itemList = allSegments.map((segment, index) => ({
     "@type": "ListItem",
     position: index + 1,
     url: `https://www.x3dprints.be/${segment.slug}`,
@@ -166,6 +296,17 @@ export default function SegmentsPage() {
         <p className="mt-4 text-base text-slate-600">
           Van prototypes en onderwijs tot modelbouwers, marketingteams en engineers: kies je segment en ontdek hoe X3DPrints het verschil maakt.
         </p>
+        <div className="mt-6 flex flex-wrap justify-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-slate-600">
+          {quickLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm text-slate-700">
           <Link
             href="/materials#material-suggestion-tool"
@@ -183,7 +324,11 @@ export default function SegmentsPage() {
       </header>
 
       <section className="mx-auto mt-12 max-w-5xl space-y-6">
-        {segments.map((segment) => (
+        <div className="flex items-baseline justify-between px-1">
+          <h2 className="text-xl font-semibold text-slate-900">Kernsegmenten</h2>
+          <span className="text-xs uppercase tracking-[0.2em] text-slate-500">Prototypes, onderwijs, marketing</span>
+        </div>
+        {coreSegments.map((segment) => (
           <GlassCard key={segment.slug} className="p-6 sm:p-8">
             <div className="sm:flex sm:items-start sm:justify-between">
               <div>
@@ -208,6 +353,76 @@ export default function SegmentsPage() {
             </ul>
           </GlassCard>
         ))}
+      </section>
+
+      <section className="mx-auto mt-12 max-w-5xl space-y-6">
+        <div className="flex items-baseline justify-between px-1">
+          <h2 className="text-xl font-semibold text-slate-900">Seasonal & campagnes</h2>
+          <span className="text-xs uppercase tracking-[0.2em] text-slate-500">Tijdelijke periodes</span>
+        </div>
+        {seasonalSegments.map((segment) => (
+          <GlassCard key={segment.slug} className="p-6 sm:p-8">
+            <div className="sm:flex sm:items-start sm:justify-between">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Seasonal</p>
+                <h2 className="mt-2 text-2xl font-semibold text-slate-900">{segment.title}</h2>
+                <p className="mt-2 text-sm text-slate-600">{segment.description}</p>
+              </div>
+              <Link
+                href={`/${segment.slug}`}
+                className="mt-4 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white sm:mt-0"
+              >
+                Naar segment <span aria-hidden>-&gt;</span>
+              </Link>
+            </div>
+            <ul className="mt-4 grid gap-2 text-sm text-slate-600 md:grid-cols-2">
+              {segment.highlights.map((highlight) => (
+                <li key={highlight} className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
+                  <span>{highlight}</span>
+                </li>
+              ))}
+            </ul>
+            {relatedBySlug[segment.slug] && (
+              <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">
+                {relatedBySlug[segment.slug].map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 transition hover:-translate-y-0.5 hover:bg-white"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </GlassCard>
+        ))}
+      </section>
+
+      <section className="mx-auto mt-10 max-w-5xl space-y-4 px-2">
+        <GlassCard className="p-6 sm:p-8">
+          <h2 className="text-2xl font-semibold text-slate-900">Interne links tussen segmenten</h2>
+          <p className="mt-2 text-sm text-slate-700">
+            Combineer trajecten: back-to-school draait in augustus–september, seasonal campagnes koppelen we aan marketing, en makers vinden vaak ook tabletop of materiaaladvies interessant.
+          </p>
+          <div className="mt-4 grid gap-4 sm:grid-cols-3">
+            {relatedLinks.map((group) => (
+              <div key={group.title} className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
+                <p className="text-sm font-semibold text-slate-900">{group.title}</p>
+                <ul className="mt-2 space-y-2 text-sm text-slate-700">
+                  {group.items.map((item) => (
+                    <li key={item.href}>
+                      <Link href={item.href} className="underline decoration-slate-300 hover:decoration-slate-500">
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </GlassCard>
       </section>
 
       <section className="mx-auto mt-12 max-w-4xl px-2">

@@ -220,7 +220,7 @@ const faq = [
   {
     q: "Hoe groot kan een 3D-geprint onderdeel zijn?",
     a:
-      "Tot ca. 25 x 25 x 25 cm in één stuk. Grotere projecten kunnen door slim te splitsen en nadien te monteren toch 3D geprint worden.",
+      "Tot ca. 35 x 32 x 35 cm in één stuk. Grotere projecten kunnen door slim te splitsen en nadien te monteren toch 3D geprint worden.",
   },
   {
     q: "Bieden jullie 3D printen aan in mijn regio?",

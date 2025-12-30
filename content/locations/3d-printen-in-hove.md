@@ -21,7 +21,7 @@ Voor **3D printen in Hove** leveren we snel richting het centrum, de Lintsesteen
 
 ## Zo bestel je
 - Deel je **STL/STEP** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
-- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere items verdelen we slim.
+- Onderdelen tot **35 � 32 � 35 cm** printen we in één stuk; grotere items verdelen we slim.
 - Levering of afhalen kan; prijzen staan op [pricing](/pricing).
 
 ---
@@ -32,3 +32,6 @@ Voor **3D printen in Hove** leveren we snel richting het centrum, de Lintsesteen
 - [3D printen in Edegem](/3d-printen-in-edegem)
 - [3D printen in Lint](/3d-printen-in-lint)
 - [Materialen & richtlijnen](/materials)
+
+
+

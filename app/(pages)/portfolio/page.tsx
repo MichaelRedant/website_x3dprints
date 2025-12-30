@@ -73,7 +73,7 @@ const photos = readdirSync(portfolioDir)
 const stats = [
   { label: "Projecten per jaar", value: "50+ cases" },
   { label: "Materialen", value: "PLA / PETG / TPU / specials" },
-  { label: "Bouwvolume", value: "Tot 256 x 256 x 256 mm" },
+  { label: "Bouwvolume", value: "Tot 350 x 320 x 350 mm" },
   { label: "Doorlooptijd", value: "Enkele werkdagen (samen ingepland)" },
 ]
 
@@ -94,6 +94,10 @@ const focusAreas = [
 ]
 
 const videos = [
+  { id: "JRWyFUfqUlM", title: "Funko dude custom", description: "Op maat geprinte Funko-stijl figure met articulatie." },
+  { id: "yEN9ZY75pDg", title: "Potloodhouder op aanvraag", description: "Klant-specifieke potloodhouder met strakke afwerking." },
+  { id: "ChOJa13HU3E", title: "Lange oorbelhouders", description: "Minimalistische oorbelhouders met extra hoogte voor lange sets." },
+  { id: "js1994tDE18", title: "Valentijn articulated boy", description: "Silk PLA articulated Valentijn figuur met flexibele gewrichten." },
   { id: "5OoKjbqdtTw", title: "Carnaval Aalst Badge", description: "Kleurrijke badge-ets in het thema van Carnaval Aalst." },
   { id: "IlWhi3ppB30", title: "Tesla Model 3 center compartiment houder", description: "Functionele houder voor het centrale compartiment van een Tesla Model 3." },
   { id: "ZUqF1z_TqVM", title: "Kerstboom", description: "Decoratieve kerstboom met speelse scharnieren en lichteffecten." },
@@ -145,16 +149,10 @@ const videos = [
 ]
 
 const newVideoIds = new Set([
-  "pEVjhj8Esmo",
-  "B-DnVHPTVJE",
-  "O9MYk5Mgytc",
-  "rRcWkRGwbTo",
-  "o9zBbvayF-4",
-  "5OoKjbqdtTw",
-  "IlWhi3ppB30",
-  "ZUqF1z_TqVM",
-  "gY0DRwYZ9pw",
-  "l3lWZZQe1KU",
+  "JRWyFUfqUlM",
+  "yEN9ZY75pDg",
+  "ChOJa13HU3E",
+  "js1994tDE18",
 ])
 
 const organizationSchema = {
@@ -425,7 +423,13 @@ export default function Page() {
             </p>
           </Reveal>
           <Reveal className="mt-10">
-            <AutoCarousel items={photos} speed={18} />
+            <AutoCarousel
+              items={photos}
+              speed={14}
+              visibleCount={4}
+              newCount={8}
+              itemClass="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]"
+            />
           </Reveal>
         </div>
       </section>

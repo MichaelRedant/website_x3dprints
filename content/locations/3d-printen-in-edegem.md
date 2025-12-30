@@ -21,7 +21,7 @@ Met **3D printen in Edegem** help je projecten vooruit rond Fort 5, UZA/UZ Antwe
 
 ## Praktische aanpak
 - Upload **STL/STEP** via [contact](/contact) met aantallen, gewenste leverdatum en materiaalvoorkeur.
-- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere delen worden slim opgesplitst.
+- Onderdelen tot **35 � 32 � 35 cm** printen we in één stuk; grotere delen worden slim opgesplitst.
 - Verzending of afhalen kan; bekijk prijzen op [pricing](/pricing).
 
 ---
@@ -32,3 +32,6 @@ Met **3D printen in Edegem** help je projecten vooruit rond Fort 5, UZA/UZ Antwe
 - [3D printen in Mortsel](/3d-printen-in-mortsel)
 - [3D printen in Hove](/3d-printen-in-hove)
 - [Materialen & richtlijnen](/materials)
+
+
+

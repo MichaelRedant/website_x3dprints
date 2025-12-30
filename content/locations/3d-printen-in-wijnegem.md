@@ -21,7 +21,7 @@ Voor **3D printen in Wijnegem** leveren we prototypes en functionele onderdelen 
 
 ## Praktisch bestellen
 - Stuur je **STL/STEP** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
-- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere items delen we slim.
+- Onderdelen tot **35 � 32 � 35 cm** printen we in één stuk; grotere items delen we slim.
 - Verzending of afhalen mogelijk; bekijk [pricing](/pricing) voor tarieven.
 
 ---
@@ -32,3 +32,6 @@ Voor **3D printen in Wijnegem** leveren we prototypes en functionele onderdelen 
 - [3D printen in Schoten](/3d-printen-in-schoten)
 - [3D printen in Schilde](/3d-printen-in-schilde)
 - [Materialen & richtlijnen](/materials)
+
+
+

@@ -35,7 +35,7 @@ Voor **3D printen in Gijzenzele** levert X3DPrints prototypes en kleine series r
 
 ## Praktisch
 
-Stuur STL of STEP via [contact](/contact) met aantallen en deadline. Onderdelen tot 25 x 25 x 25 cm printen we in een stuk; grotere delen delen we slim. Verzending of afhalen mogelijk; tarieven staan op [pricing](/pricing).
+Stuur STL of STEP via [contact](/contact) met aantallen en deadline. Onderdelen tot 35 x 32 x 35 cm printen we in een stuk; grotere delen delen we slim. Verzending of afhalen mogelijk; tarieven staan op [pricing](/pricing).
 
 ---
 

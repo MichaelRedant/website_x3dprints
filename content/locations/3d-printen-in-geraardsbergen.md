@@ -37,7 +37,7 @@ Zoek je **3D printen in Geraardsbergen** voor een prototype, maquette of kleine 
 ## Praktisch
 
 - Stuur STL of STEP via [contact](/contact) met aantallen en deadline.
-- Onderdelen tot 25 x 25 x 25 cm printen we in een stuk; grotere items delen we slim.
+- Onderdelen tot 35 x 32 x 35 cm printen we in een stuk; grotere items delen we slim.
 - Verzending of afhalen mogelijk; tarieven staan op [pricing](/pricing).
 
 ---

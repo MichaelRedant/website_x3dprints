@@ -680,6 +680,60 @@ const topics: Topic[] = [
     category: "segments-cases",
   },
   {
+    id: "3d-printen-back-to-school",
+    title: "Back to School 3D printen",
+    summary:
+      "Pennenhouders, naamplaatjes, organizers en educatieve STEM-modellen. Materiaaladvies voor scholen en studenten met levering in aug–sep.",
+    highlights: [
+      "PLA Matte/PETG voor klasgebruik, TPU voor antislip",
+      "Batchen van namen/klassen voor consistente kleur",
+      "Ontwerp niet inbegrepen; ontwerpservice 45/uur",
+    ],
+    links: [
+      { label: "Lees volledig artikel", href: "/blog/3d-printen-back-to-school" },
+      { label: "Back to School segment", href: "/segments/3d-printing-back-to-school" },
+      { label: "Plan schoolprints", href: "/contact?material=pla-matte" },
+    ],
+    intent: "informational",
+    category: "segments-cases",
+  },
+  {
+    id: "3d-printen-valentijn",
+    title: "3D printen voor Valentijn cadeaus",
+    summary:
+      "Hartdecor, naamplaatjes en lichtobjecten in Silk, Matte en Translucent PLA. Inclusief checklist voor leds, magneten en leveropties.",
+    highlights: [
+      "Silk/Marble voor luxe look, Matte voor zachte pastels, Translucent voor led-gloed",
+      "Uitsparingen voor leds/magneten en antislip feet in TPU",
+      "Ontwerp niet inbegrepen; ontwerpservice 45/uur, leveropties EV of pakketdienst",
+    ],
+    links: [
+      { label: "Lees volledig artikel", href: "/blog/3d-printen-valentijn" },
+      { label: "Valentijn segment", href: "/segments/3d-printing-valentijn" },
+      { label: "Plan Valentijnprints", href: "/contact?material=pla-silk-plus" },
+    ],
+    intent: "informational",
+    category: "segments-cases",
+  },
+  {
+    id: "3d-printen-vaderdag-moederdag",
+    title: "3D printen voor Vaderdag & Moederdag",
+    summary:
+      "Gepersonaliseerde sleutelhangers, desk items en naamcadeaus in Silk/Matte/PETG. Tips voor leesbaarheid, afrondingen en leveropties.",
+    highlights: [
+      "Silk/Matte PLA voor look, PETG voor sterkere items",
+      "Tekstdiepte >0,6 mm en afgeronde randen voor dagelijks gebruik",
+      "Ontwerpservice 45/uur, levering via EV of pakketdienst",
+    ],
+    links: [
+      { label: "Lees volledig artikel", href: "/blog/3d-printen-vaderdag-moederdag" },
+      { label: "Vaderdag/Moederdag segment", href: "/segments/3d-printing-vaderdag-moederdag" },
+      { label: "Plan je gifts", href: "/contact?material=pla-silk-plus" },
+    ],
+    intent: "informational",
+    category: "segments-cases",
+  },
+  {
     id: "bambu-printer-instellingen",
     title: "Beste instellingen voor jouw Bambu printer",
     summary:

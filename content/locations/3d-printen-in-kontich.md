@@ -21,7 +21,7 @@ Met **3D printen in Kontich** krijg je snel nette prototypes en functionele onde
 
 ## Bestel zo
 - Stuur je **STL/STEP** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
-- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere items delen we slim op en werken we na.
+- Onderdelen tot **35 � 32 � 35 cm** printen we in één stuk; grotere items delen we slim op en werken we na.
 - Verzending of afhalen mogelijk; prijzen vind je op [pricing](/pricing).
 
 ---
@@ -32,3 +32,6 @@ Met **3D printen in Kontich** krijg je snel nette prototypes en functionele onde
 - [3D printen in Aartselaar](/3d-printen-in-aartselaar)
 - [3D printen in Boom](/3d-printen-in-boom)
 - [Materialen & richtlijnen](/materials)
+
+
+

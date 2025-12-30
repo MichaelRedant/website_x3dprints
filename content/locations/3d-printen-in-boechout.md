@@ -21,7 +21,7 @@ Voor **3D printen in Boechout** leveren we vanuit Herzele prototypes en function
 
 ## Praktische info
 - Upload **STL/STEP** via [contact](/contact) met aantallen en materiaalvoorkeur; we denken mee over oriÃ«ntatie en finish.
-- Maximaal **25 Ã— 25 Ã— 25 cm** per onderdeel; grotere stukken worden slim opgesplitst en gelijmd.
+- Maximaal **35 × 32 × 35 cm** per onderdeel; grotere stukken worden slim opgesplitst en gelijmd.
 - Verzending of afhalen kan; tarieven vind je op [pricing](/pricing).
 
 ---
@@ -32,3 +32,6 @@ Voor **3D printen in Boechout** leveren we vanuit Herzele prototypes en function
 - [3D printen in Lint](/3d-printen-in-lint)
 - [3D printen in Mortsel](/3d-printen-in-mortsel)
 - [Materialen & richtlijnen](/materials)
+
+
+

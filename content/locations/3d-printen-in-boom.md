@@ -21,7 +21,7 @@ Met **3D printen in Boom** lever je snel props, prototypes en functionele onderd
 
 ## Praktische aanpak
 - Stuur je **STL of STEP** via [contact](/contact); vermeld aantallen, gewenste leverdatum en materiaalvoorkeur.
-- Formaat tot **25 Ã— 25 Ã— 25 cm** per onderdeel. Grotere items delen we op en lijmen we desgewenst af.
+- Formaat tot **35 × 32 × 35 cm** per onderdeel. Grotere items delen we op en lijmen we desgewenst af.
 - Verzending of afhalen mogelijk; bekijk tarieven op [pricing](/pricing).
 
 ---
@@ -32,3 +32,6 @@ Met **3D printen in Boom** lever je snel props, prototypes en functionele onderd
 - [3D printen in Aartselaar](/3d-printen-in-aartselaar)
 - [3D printen in Kontich](/3d-printen-in-kontich)
 - [Materialen & richtlijnen](/materials)
+
+
+

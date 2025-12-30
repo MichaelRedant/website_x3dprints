@@ -35,7 +35,7 @@ Voor **3D printen in Hombeek** leveren we prototypes en kleine series naar bedri
 
 ## Praktisch
 
-Stuur STL of STEP via [contact](/contact) met aantallen, materiaal en leverdatum. Onderdelen tot 25 x 25 x 25 cm printen we in een stuk; grotere delen splitsen we slim. Verzending of afhalen mogelijk; zie [pricing](/pricing).
+Stuur STL of STEP via [contact](/contact) met aantallen, materiaal en leverdatum. Onderdelen tot 35 x 32 x 35 cm printen we in een stuk; grotere delen splitsen we slim. Verzending of afhalen mogelijk; zie [pricing](/pricing).
 
 ---
 

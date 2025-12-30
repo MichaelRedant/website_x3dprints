@@ -36,7 +36,7 @@ Voor **3D printen in Brecht** leveren we prototypes en functionele onderdelen na
 ## Praktisch
 
 - Deel je STL of STEP via [contact](/contact) met aantallen, kleur en deadline.
-- Onderdelen tot 25 x 25 x 25 cm printen we in een stuk; grotere items delen we slim.
+- Onderdelen tot 35 x 32 x 35 cm printen we in een stuk; grotere items delen we slim.
 - Verzending of afhalen kan; bekijk [pricing](/pricing) voor tarieven.
 
 ---

@@ -35,7 +35,7 @@ Voor **3D printen in Walem** levert X3DPrints prototypes en functionele onderdel
 
 ## Praktisch
 
-Stuur je STL of STEP via [contact](/contact) met aantallen en gewenste leverdatum. Onderdelen tot 25 x 25 x 25 cm printen we in een stuk; grotere delen splitsen we slim. Verzending of afhalen mogelijk; prijzen staan op [pricing](/pricing).
+Stuur je STL of STEP via [contact](/contact) met aantallen en gewenste leverdatum. Onderdelen tot 35 x 32 x 35 cm printen we in een stuk; grotere delen splitsen we slim. Verzending of afhalen mogelijk; prijzen staan op [pricing](/pricing).
 
 ---
 

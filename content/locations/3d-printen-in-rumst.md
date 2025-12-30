@@ -21,7 +21,7 @@ Voor **3D printen in Rumst** leveren we onderdelen die klaar zijn voor de werven
 
 ## Bestellen
 - Upload **STL/STEP** via [contact](/contact) met aantallen, materiaalvoorkeur en gewenste leverdatum.
-- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere delen splitsen we slim.
+- Onderdelen tot **35 � 32 � 35 cm** printen we in één stuk; grotere delen splitsen we slim.
 - Levering of afhalen mogelijk; bekijk [pricing](/pricing) voor tarieven.
 
 ---
@@ -31,3 +31,6 @@ Voor **3D printen in Rumst** leveren we onderdelen die klaar zijn voor de werven
 - [3D printen in Aartselaar](/3d-printen-in-aartselaar)
 - [3D printen in Antwerpen](/3d-printen-in-antwerpen)
 - [Materialen & richtlijnen](/materials)
+
+
+

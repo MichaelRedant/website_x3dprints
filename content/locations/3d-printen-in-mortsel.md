@@ -21,7 +21,7 @@ Zoek je **3D printen in Mortsel**? We leveren vanuit Herzele snelle, nette onder
 
 ## Praktisch
 - Stuur **STL/STEP** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
-- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere items delen we slim op en werken we na.
+- Onderdelen tot **35 � 32 � 35 cm** printen we in één stuk; grotere items delen we slim op en werken we na.
 - Levering of afhalen mogelijk; zie [pricing](/pricing) voor tarieven.
 
 ---
@@ -32,3 +32,6 @@ Zoek je **3D printen in Mortsel**? We leveren vanuit Herzele snelle, nette onder
 - [3D printen in Kontich](/3d-printen-in-kontich)
 - [3D printen in Hove](/3d-printen-in-hove)
 - [Materialen & richtlijnen](/materials)
+
+
+

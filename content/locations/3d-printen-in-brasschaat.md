@@ -21,7 +21,7 @@ Voor **3D printen in Brasschaat** leveren we snelle, nauwkeurige onderdelen rich
 
 ## Bestellen in drie stappen
 - Stuur je **STL of STEP** via [contact](/contact) met aantallen, gewenste leverdatum en afwerking.
-- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere delen splitsen we slim op.
+- Onderdelen tot **35 � 32 � 35 cm** printen we in één stuk; grotere delen splitsen we slim op.
 - Verzending of afhalen mogelijk; tarieven staan op [pricing](/pricing).
 
 ---
@@ -32,3 +32,6 @@ Voor **3D printen in Brasschaat** leveren we snelle, nauwkeurige onderdelen rich
 - [3D printen in Schoten](/3d-printen-in-schoten)
 - [3D printen in Schilde](/3d-printen-in-schilde)
 - [Materialen & richtlijnen](/materials)
+
+
+

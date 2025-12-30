@@ -18,12 +18,18 @@ export default function AutoCarousel({
   className = "",
   speed = 5,
   itemClass = "aspect-[4/3] sm:aspect-[3/2] lg:aspect-[16/10]",
+  visibleCount = 3,
+  newCount = 0,
 }: {
   items: Photo[]
   className?: string
   speed?: number
   /** Responsive aspect/hoogte-classes voor elk item */
   itemClass?: string
+  /** Aantal zichtbare kaarten in de strip */
+  visibleCount?: number
+  /** Markeer eerste N items als nieuw */
+  newCount?: number
 }) {
   const [active, setActive] = useState<Photo | null>(null)
   const [index, setIndex] = useState(0)
@@ -69,12 +75,14 @@ export default function AutoCarousel({
     return () => window.removeEventListener("keydown", onKeyDown)
   }, [active])
 
-  const visibleIndices = useMemo(() => {
-    const set = new Set<number>()
-    set.add(index)
-    if (previousIndex !== null) set.add(previousIndex)
-    return Array.from(set)
-  }, [index, previousIndex])
+  const visibleItems = useMemo(
+    () => Array.from({ length: Math.min(visibleCount, items.length) }, (_, i) => items[(index + i) % items.length]),
+    [index, items, visibleCount],
+  )
+
+  const colsClass =
+    visibleCount >= 4 ? "lg:grid-cols-4" : visibleCount === 3 ? "lg:grid-cols-3" : "lg:grid-cols-2"
+  const smColsClass = visibleCount >= 2 ? "sm:grid-cols-2" : "sm:grid-cols-1"
 
   const prev = () => goTo(-1 as const)
   const next = () => goTo(1 as const)
@@ -97,38 +105,44 @@ export default function AutoCarousel({
       />
 
       <div className="relative w-full overflow-hidden">
-        <div className={`relative ${itemClass}`}>
-          {visibleIndices.map((visibleIdx) => {
-            const photo = items[visibleIdx]
-            const isActive = visibleIdx === index
-            return (
-              <button
-                key={`${photo.src}-${visibleIdx}`}
-                onClick={() => setActive(photo)}
-                aria-label={`Vergroot afbeelding: ${photo.alt}`}
-                className={[
-                  "absolute inset-0 w-full overflow-hidden rounded-2xl border border-white/30",
-                  "bg-gradient-to-br from-white/85 via-white/70 to-slate-50/85",
-                  "shadow-[0_18px_45px_rgba(15,23,42,0.14)] backdrop-blur",
-                  "transition-opacity duration-700",
-                  isActive ? "opacity-100" : "pointer-events-none opacity-0",
-                ].join(" ")}
-              >
+        <div
+          className={`grid grid-cols-1 ${smColsClass} ${colsClass} gap-4 transition-transform duration-500`}
+          style={{ transform: `translateX(${0}px)` }}
+        >
+          {visibleItems.map((photo, idx) => (
+            <button
+              key={`${photo.src}-${idx}`}
+              onClick={() => setActive(photo)}
+              aria-label={`Vergroot afbeelding: ${photo.alt}`}
+              className={[
+                "group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/50",
+                "bg-white/95 shadow-[0_18px_45px_rgba(15,23,42,0.12)] backdrop-blur",
+                "transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(15,23,42,0.18)]",
+              ].join(" ")}
+            >
+              {newCount > 0 && idx < newCount && (
+                <span className="absolute left-3 top-3 z-10 inline-flex items-center rounded-full bg-indigo-600/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white shadow-sm ring-1 ring-white/40">
+                  Nieuw
+                </span>
+              )}
+              <div className={`relative w-full ${itemClass}`}>
                 <Image
                   src={photo.src}
                   alt={photo.alt}
                   fill
                   sizes="(max-width: 768px) 90vw, (max-width: 1200px) 60vw, 720px"
-                  className="object-contain"
-                  priority={visibleIdx === 0}
-                  loading={visibleIdx === 0 ? "eager" : "lazy"}
+                  className="object-contain transition duration-300 group-hover:scale-[1.01]"
+                  priority={idx === 0}
+                  loading={idx === 0 ? "eager" : "lazy"}
                 />
-                <span className="absolute bottom-4 left-4 rounded-md bg-white/85 px-3 py-1 text-[12px] font-medium text-slate-800 shadow-sm backdrop-blur">
+              </div>
+              <div className="mt-2 px-3 pb-3 text-center">
+                <span className="inline-block rounded-md bg-white/85 px-3 py-1 text-[12px] font-medium text-slate-800 shadow-sm">
                   {photo.alt}
                 </span>
-              </button>
-            )
-          })}
+              </div>
+            </button>
+          ))}
         </div>
 
         {items.length > 1 && (

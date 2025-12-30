@@ -24,6 +24,21 @@ export const metadata: Metadata = {
 
 const themes = [
   {
+    title: "Back to School",
+    copy: "Pennenhouders, naamplaatjes, organizers en STEM-modellen voor augustus-september. Matte PLA of PETG met antislip TPU.",
+    link: "/blog/3d-printen-back-to-school",
+  },
+  {
+    title: "Vaderdag & Moederdag",
+    copy: "Gepersonaliseerde sleutelhangers, desk items en naamcadeaus. Silk/Matte PLA of PETG met antislipvoetjes.",
+    link: "/blog/3d-printen-vaderdag-moederdag",
+  },
+  {
+    title: "Valentijn",
+    copy: "Hartdecor, naamplaatjes en gifts met Silk/Matte/Translucent PLA. Optioneel leds en magneten.",
+    link: "/blog/3d-printen-valentijn",
+  },
+  {
     title: "Herfst & Halloween",
     copy: "Pumpkins, haunted house props, tafelstukjes in PLA Silk/Marble. Led-vensters in Translucent voor kaars- of fairy light glow.",
     link: "/blog/3d-printen-herfst-halloween",
@@ -109,11 +124,37 @@ const localBusinessJsonLd = buildLocalBusinessSchema({
 const serviceJsonLd = buildServiceSchema("Seasonal 3D designs", serviceOffers, pageUrl)
 
 function getSeasonCta(date: Date) {
+  const MS_IN_DAY = 86_400_000
+  const isWithinWindow = (target: Date, daysBefore: number, daysAfter: number) => {
+    const diff = target.getTime() - date.getTime()
+    return diff <= daysAfter * MS_IN_DAY && diff >= -daysBefore * MS_IN_DAY
+  }
+  const getNthWeekday = (month: number, weekday: number, n: number) => {
+    const first = new Date(Date.UTC(date.getUTCFullYear(), month - 1, 1))
+    const offset = (weekday - first.getUTCDay() + 7) % 7
+    const day = 1 + offset + 7 * (n - 1)
+    return new Date(Date.UTC(date.getUTCFullYear(), month - 1, day))
+  }
+
   const month = date.getUTCMonth() + 1 // 1-12
   const day = date.getUTCDate()
   const after = (m: number, d: number) => month > m || (month === m && day >= d)
   const before = (m: number, d: number) => month < m || (month === m && day <= d)
 
+  const mothersDay = getNthWeekday(5, 0, 2)
+  const fathersDay = getNthWeekday(6, 0, 2)
+  const isValentijnWindow = (month === 1 && day >= 15) || (month === 2 && day <= 16)
+  const isParentsWindow = isWithinWindow(mothersDay, 21, 1) || isWithinWindow(fathersDay, 21, 1)
+  const isBackToSchoolWindow = month === 8 || month === 9
+  if (isValentijnWindow) {
+    return { label: "Valentijn cadeaus", href: "/valentijn-3d-printen" }
+  }
+  if (isParentsWindow) {
+    return { label: "Vaderdag & Moederdag", href: "/blog/3d-printen-vaderdag-moederdag" }
+  }
+  if (isBackToSchoolWindow) {
+    return { label: "Back to School", href: "/blog/3d-printen-back-to-school" }
+  }
   if (after(11, 11) || before(2, 10)) {
     return { label: "Winter, Kerst & Nieuwjaar", href: "/blog/3d-printen-winter-kerst-nieuwjaar" }
   }

@@ -198,7 +198,7 @@ export default async function Page(
     { q: `Welke materialen kan ik laten 3D printen in ${loc.city}?`, aHtml: `Standaard <strong>PLA Matte</strong>, plus <strong>PETG</strong> en <strong>TPU</strong>. Op aanvraag: ABS/ASA, Nylon of PA-CF. Bekijk <a href="/materials">materialen & richtlijnen</a>.` },
     { q: `Wat is de levertijd voor 3D printen in ${loc.city}?`, aHtml: `Meestal <strong>enkele werkdagen</strong>, afhankelijk van complexiteit en oplage. <a href="/contact">Spoed</a> mogelijk in overleg.` },
     { q: "Hoe worden de prijzen berekend?", aHtml: `Transparant: formaat (<em>Small/Medium/Large/XL</em>), materiaaltoeslag, nabehandeling en aantallen. Zie <a href="/pricing">Prijzen</a>.` },
-    { q: "Wat zijn de maximale bouwvolumes?", aHtml: `Tot <strong>25 x 25 x 25 cm</strong> per onderdeel. Grotere onderdelen splitsen we in segmenten met nette passing.` },
+    { q: "Wat zijn de maximale bouwvolumes?", aHtml: `Tot <strong>35 x 32 x 35 cm</strong> per onderdeel. Grotere onderdelen splitsen we in segmenten met nette passing.` },
     { q: "Welke bestandsformaten accepteer je?", aHtml: `<strong>STL</strong> of <strong>STEP</strong>. Voeg toelichting toe: gewenste sterkte, zichtzijde, afwerking, aantallen.` },
     { q: "Welke toleranties haal je typisch?", aHtml: `Richtwaarde <strong>+/-0,2 mm</strong> bij PLA/PETG, afhankelijk van geometrie en orientatie. Functionele passing? Vermeld dit in je aanvraag.` },
     { q: "Bieden jullie ontwerp op maat of aanpassingen?", aHtml: `Ja. CAD-aanpassingen en ontwerp op maat aan <strong>EUR 45/uur</strong>. Vraag een voorstel via <a href="/contact">contact</a>.` },
@@ -279,7 +279,7 @@ export default async function Page(
             {[
               { k: "Tolerantie", v: "+/-0,2 mm", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 12h16M4 16h16" />) },
               { k: "Doorlooptijd", v: "Afspraak in overleg (meestal enkele werkdagen)", icon: icon(<><circle cx={12} cy={12} r={9} /><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l2 2" /></>) },
-              { k: "Bouwvolume", v: "Tot 25 x 25 x 25 cm", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M21 16V8l-9-5-9 5v8l9 5 9-5M12 3v18M3 8l9 4 9-4" />) },
+              { k: "Bouwvolume", v: "Tot 35 x 32 x 35 cm", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M21 16V8l-9-5-9 5v8l9 5 9-5M12 3v18M3 8l9 4 9-4" />) },
             ].map((item) => (
               <GlassCard key={item.k} className="p-5 text-center transition-transform hover:-translate-y-1">
                 {item.icon}

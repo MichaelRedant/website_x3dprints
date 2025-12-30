@@ -154,7 +154,7 @@ export default function Page() {
     },
     {
       q: "Hoe groot kunnen jullie printen?",
-      a: "Tot ca. 25 x 25 x 25 cm in een stuk. Groter kan door te splitsen en te monteren; dit stemmen we vooraf af.",
+      a: "Tot ca. 35 x 32 x 35 cm in een stuk. Groter kan door te splitsen en te monteren; dit stemmen we vooraf af.",
     },
     {
       q: "Kunnen jullie onderdelen namaken of vervangen?",

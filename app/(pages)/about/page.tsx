@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
@@ -211,8 +211,8 @@ export default function Page() {
                 <div>
                   <h3 className="text-sm font-semibold text-slate-900">Specs</h3>
                   <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
-                    <li>Bouwvolume tot 25 × 25 × 25 cm per stuk</li>
-                    <li>Layerhoogte 0,12–0,28 mm</li>
+                    <li>Bouwvolume tot 35 x 32 x 35 cm per stuk</li>
+                    <li>Layerhoogte 0,12-0,28 mm</li>
                     <li>Afwerking</li>
                   </ul>
                 </div>
@@ -289,3 +289,9 @@ export default function Page() {
     </main>
   )
 }
+
+
+
+
+
+

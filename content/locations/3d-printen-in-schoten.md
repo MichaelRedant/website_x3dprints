@@ -21,7 +21,7 @@ Voor **3D printen in Schoten** leveren we snelle en nauwkeurige onderdelen richt
 
 ## Bestellen
 - Upload **STL/STEP** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
-- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere items splitsen we slim.
+- Onderdelen tot **35 � 32 � 35 cm** printen we in één stuk; grotere items splitsen we slim.
 - Verzending of afhalen mogelijk; zie [pricing](/pricing) voor tarieven.
 
 ---
@@ -32,3 +32,6 @@ Voor **3D printen in Schoten** leveren we snelle en nauwkeurige onderdelen richt
 - [3D printen in Kapellen](/3d-printen-in-kapellen)
 - [3D printen in Schilde](/3d-printen-in-schilde)
 - [Materialen & richtlijnen](/materials)
+
+
+

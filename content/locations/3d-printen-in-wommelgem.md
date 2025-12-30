@@ -21,7 +21,7 @@ Voor **3D printen in Wommelgem** leveren we prototypes en functionele onderdelen
 
 ## Bestellen
 - Upload **STL/STEP** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
-- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere delen delen we slim op.
+- Onderdelen tot **35 � 32 � 35 cm** printen we in één stuk; grotere delen delen we slim op.
 - Verzending of afhalen mogelijk; bekijk [pricing](/pricing) voor tarieven.
 
 ---
@@ -32,3 +32,6 @@ Voor **3D printen in Wommelgem** leveren we prototypes en functionele onderdelen
 - [3D printen in Deurne](/3d-printen-in-deurne)
 - [3D printen in Schilde](/3d-printen-in-schilde)
 - [Materialen & richtlijnen](/materials)
+
+
+

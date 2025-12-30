@@ -28,7 +28,7 @@ Onze studio in Herzele combineert korte doorlooptijden met persoonlijke begeleid
 | **Nylon / PA-CF** *(op aanvraag)* | zeer sterk, vormvast         | functionele parts met hogere eisen                  |
 
 **Toleranties**: richtwaarde **±0,2 mm** (geometrie-afhankelijk).  
-**Bouwvolume**: tot **25 × 25 × 25 cm** per onderdeel (groter kan in segmenten).  
+**Bouwvolume**: tot **35 � 32 � 35 cm** per onderdeel (groter kan in segmenten).  
 **Bestandsformaten**: **STL** of **STEP** (met korte toelichting over eisen & aantallen).
 
 ---
@@ -110,3 +110,6 @@ Verken ook onze andere lokale pagina’s:
 ## Offerte aanvragen
 
 Klaar om te starten in Herzele? Stuur je **STL/STEP** via de [contactpagina](/contact). Geef **aantallen**, **materiaalvoorkeur** en eventuele **nabehandeling** mee — je krijgt snel een duidelijke offerte terug.
+
+
+

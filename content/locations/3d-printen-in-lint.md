@@ -21,7 +21,7 @@ Met **3D printen in Lint** lever je snel onderdelen voor ateliers rond de Lierse
 
 ## Zo bestel je
 - Stuur je **STL/STEP** via [contact](/contact) met aantallen, materiaalkeuze en gewenste leverdatum.
-- Onderdelen tot **25 × 25 × 25 cm** printen we in één stuk; grotere items splitsen en verlijmen we netjes.
+- Onderdelen tot **35 � 32 � 35 cm** printen we in één stuk; grotere items splitsen en verlijmen we netjes.
 - Verzending of afhalen mogelijk; tarieven staan op [pricing](/pricing).
 
 ---
@@ -32,3 +32,6 @@ Met **3D printen in Lint** lever je snel onderdelen voor ateliers rond de Lierse
 - [3D printen in Boechout](/3d-printen-in-boechout)
 - [3D printen in Mortsel](/3d-printen-in-mortsel)
 - [Materialen & richtlijnen](/materials)
+
+
+
