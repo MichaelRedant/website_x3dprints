@@ -176,16 +176,16 @@ export default function HomePage() {
                 Particulieren advies
               </Link>
               <Link
-                href="/segments/3d-printing-marketing"
+                href="/segments"
                 className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >
-                Retail & marketing props
+                Segmenten
               </Link>
               <Link
-                href="/segments/3d-printing-tabletop"
+                href="/blog"
                 className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >
-                Tabletop & hobby runs
+                Kennisbank
               </Link>
               <Link
                 href="/3d-printen"

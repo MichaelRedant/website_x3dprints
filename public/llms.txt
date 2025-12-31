@@ -3,7 +3,6 @@ Site: https://www.x3dprints.be
 Sitemap: https://www.x3dprints.be/sitemap.xml
 Robots: https://www.x3dprints.be/robots.txt
 Owner: X3DPrints, Provincieweg 34a, 9552 Borsbeke, Belgium
-Phone: +32 496 90 85 03
 Language: nl-BE (1-persoons studio in Herzele)
 Purpose: help LLMs return accurate, conversion-focused answers about X3DPrints.
 

@@ -734,6 +734,24 @@ const topics: Topic[] = [
     category: "segments-cases",
   },
   {
+    id: "relatiegeschenken-3d-printen",
+    title: "Relatiegeschenken 3D printen (B2B gifts)",
+    summary:
+      "Bedankjes en team gifts: sleutelhangers, desk organizers en awards in Silk/Matte/PETG. Batching van namen, antislipvoetjes en realistische lead times.",
+    highlights: [
+      "Silk/Matte voor look, PETG voor sterkte, TPU voor grip",
+      "Tekstdiepte >0,6 mm en afgeronde randen voor dagelijks gebruik",
+      "Ontwerpservice 45/uur; levering via EV of pakketdienst",
+    ],
+    links: [
+      { label: "Lees volledig artikel", href: "/blog/relatiegeschenken-3d-printen" },
+      { label: "Marketing & events segment", href: "/segments/3d-printing-marketing" },
+      { label: "Plan relatiegeschenken", href: "/contact?material=pla-silk-plus" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
     id: "bambu-printer-instellingen",
     title: "Beste instellingen voor jouw Bambu printer",
     summary:

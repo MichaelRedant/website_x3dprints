@@ -6,7 +6,7 @@
     "Professionele 3D print service in Belgie. Snel, nauwkeurig en betaalbaar. Upload je model en ontvang een offerte.",
   ogImage: "/og-x3dprints.jpg",
   locale: "nl_BE",
-  phone: "+32 496 90 85 03",
+  phone: "",
   address: {
     street: "Provincieweg 34a",
     locality: "Borsbeke",
@@ -55,7 +55,7 @@ export function buildLocalBusinessSchema(options: LocalBusinessSchemaInput = {})
     name: SITE.name,
     url: options.pageUrl || SITE.url,
     description: options.description || SITE.description,
-    telephone: SITE.phone,
+    ...(SITE.phone ? { telephone: SITE.phone } : {}),
     address: {
       "@type": "PostalAddress",
       streetAddress: SITE.address.street,
@@ -110,7 +110,7 @@ export function buildServiceSchema(serviceName: string, offers: SchemaOfferInput
       "@type": "LocalBusiness",
       name: SITE.name,
       url: SITE.url,
-      telephone: SITE.phone,
+      ...(SITE.phone ? { telephone: SITE.phone } : {}),
     },
     serviceOutput: offers.map((offer) => ({
       "@type": "Text",

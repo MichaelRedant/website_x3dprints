@@ -1,14 +1,12 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Algemene Voorwaarden – X3DPrints",
-  description:
-    "Voorwaarden voor offertes, bestellingen en leveringen bij X3DPrints.",
+  title: "Algemene Voorwaarden | X3DPrints",
+  description: "Voorwaarden voor offertes, bestellingen en leveringen bij X3DPrints.",
   alternates: { canonical: "https://www.x3dprints.be/algemene-voorwaarden" },
   openGraph: {
-    title: "Algemene Voorwaarden – X3DPrints",
-    description:
-      "Voorwaarden voor offertes, bestellingen en leveringen bij X3DPrints.",
+    title: "Algemene Voorwaarden | X3DPrints",
+    description: "Voorwaarden voor offertes, bestellingen en leveringen bij X3DPrints.",
     url: "https://www.x3dprints.be/algemene-voorwaarden",
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -57,18 +55,14 @@ export default function TermsPage() {
           </li>
           <li>
             <h2 className="text-xl font-semibold text-slate-900">Eigendomsvoorbehoud</h2>
-            <p className="mt-2 text-slate-600">
-              Geleverde goederen blijven eigendom van X3DPrints tot volledige betaling.
-            </p>
+            <p className="mt-2 text-slate-600">Geleverde goederen blijven eigendom van X3DPrints tot volledige betaling.</p>
           </li>
           <li>
             <h2 className="text-xl font-semibold text-slate-900">Garantie &amp; Aansprakelijkheid</h2>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
               <li>3D-prints zijn maatwerk en kunnen lichte toleranties of afwijkingen vertonen.</li>
               <li>X3DPrints garandeert een correcte uitvoering volgens best mogelijke technieken.</li>
-              <li>
-                Geen aansprakelijkheid voor indirecte schade (verlies van gegevens, winstderving).
-              </li>
+              <li>Geen aansprakelijkheid voor indirecte schade (verlies van gegevens, winstderving).</li>
               <li>Aansprakelijkheid beperkt tot het factuurbedrag van de betrokken bestelling.</li>
             </ul>
           </li>
@@ -105,4 +99,3 @@ export default function TermsPage() {
     </main>
   )
 }
-
