@@ -2,6 +2,8 @@
 
 3D printen in Hillegem brengt innovatieve technologie naar een groene deelgemeente van Herzele. Dankzij een **lokale 3D print service** hoeven ondernemers, makers en scholen niet langer uit te wijken naar verre steden. Je krijgt directe toegang tot **betaalbare prototyping, kleine series en maatwerk**, met korte lijnen en persoonlijke begeleiding. 3D printen in Hillegem combineert landelijke charme met moderne maakindustrie en stimuleert creativiteit dicht bij huis.
 
+X3DPrints is een **Herzeelse handelaar** en **100% Belgische 3D printstudio**. We leveren vanuit Herzele in een korte keten en zijn een **trots lid van de Werkgroep Ondernemend Herzele**. Geen outsourcing of dropshipping - je schakelt rechtstreeks met de maker in het atelier. Lees meer over onze aanpak op [de lokale & Belgische pagina](/lokaal-belgisch) en je kan ook betalen met de Herzeelse Euro (Heuro).
+
 ---
 
 ## Waarom kiezen voor 3D printen in Hillegem?

@@ -33,12 +33,6 @@ export const metadata: Metadata = {
   },
 }
 
-const heroStats = [
-  { label: "Beste look", value: "PLA Silk/Matte", detail: "Glans of zachte feel" },
-  { label: "Sterk", value: "PETG", detail: "Taai voor sleutelhangers/desk" },
-  { label: "Grip", value: "TPU 95A", detail: "Antislip pads/voetjes" },
-]
-
 const tips = [
   "Silk PLA voor luxe glans; Matte PLA voor zachte feel en leesbare tekst. PETG voor sterkere sleutelhangers of desk items.",
   "Tekstdiepte min. 0,6 mm; rond randen af voor prettige feel. Voeg pockets toe voor magneten of TPU pads.",

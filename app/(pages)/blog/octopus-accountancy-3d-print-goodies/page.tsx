@@ -3,7 +3,6 @@ import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
-import ShareActions from "@/components/ShareActions"
 import VideoGallery from "@/components/VideoGallery"
 import Image from "next/image"
 

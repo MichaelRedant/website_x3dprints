@@ -254,6 +254,53 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* LOKAAL */}
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="border-white/40 bg-gradient-to-br from-white/85 to-white/60 p-6 shadow-lg ring-1 ring-white/60">
+              <div className="grid gap-4 sm:grid-cols-[1.2fr_.8fr] sm:items-center">
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600">Lokaal & 100% Belgisch</p>
+                  <h2 className="mt-1 text-balance text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                    Herzeelse handelaar, verankerd in Vlaanderen.
+                  </h2>
+                  <p className="mt-2 text-sm text-slate-700 sm:text-base">
+                    We produceren in Herzele en leveren in Vlaanderen. Als lid van de Werkgroep Ondernemend Herzele werken we met
+                    Belgische partners, transparante prijzen en korte lijnen. Betalen kan ook met de{" "}
+                    <Link
+                      href="https://www.herzele.be/heuro"
+                      target="_blank"
+                      rel="noreferrer"
+                      prefetch={false}
+                      className="font-semibold text-indigo-700 underline decoration-indigo-200 hover:decoration-indigo-500"
+                    >
+                      Herzeelse Euro (Heuro)
+                    </Link>
+                    .
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    <ShimmerButton href="/lokaal-belgisch">Bekijk onze lokale aanpak</ShimmerButton>
+                    <Link
+                      href="https://www.herzele.be"
+                      target="_blank"
+                      rel="noreferrer"
+                      prefetch={false}
+                      className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
+                    >
+                      Gemeente Herzele
+                    </Link>
+                  </div>
+                </div>
+                <div className="justify-self-end">
+                  <GlassOrb className="h-36 w-36 opacity-70" />
+                </div>
+              </div>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ABOUT */}
       <section className="px-6 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
@@ -270,6 +317,7 @@ export default function HomePage() {
                 winkelmateriaal, gepersonaliseerde cadeaus en maatwerk. Zo leveren we 3D prints voor Vlaanderen die perfect
                 aansluiten bij jouw toepassing.
               </p>
+              
               <div className="mt-6 flex gap-3">
                 <Link
                   href="/services"

@@ -2,6 +2,8 @@
 
 3D printen in Sint-Lievens-Esse brengt moderne technologie naar een groene en landelijke omgeving. Lokale ondernemers, makers en scholen krijgen directe toegang tot een betrouwbare 3D print service. Dankzij korte communicatielijnen en een persoonlijke aanpak blijft 3D printen in Sint-Lievens-Esse snel, transparant en flexibel.
 
+X3DPrints is een **Herzeelse handelaar** en **100% Belgische 3D printstudio**. We leveren vanuit Herzele in een korte keten en zijn een **trots lid van de Werkgroep Ondernemend Herzele**. Geen outsourcing of dropshipping - je schakelt rechtstreeks met de maker in het atelier. Lees meer over onze aanpak op [de lokale & Belgische pagina](/lokaal-belgisch) en je kan ook betalen met de Herzeelse Euro (Heuro).
+
 ---
 
 ## Waarom kiezen voor 3D printen in Sint-Lievens-Esse?

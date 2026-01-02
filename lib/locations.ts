@@ -517,7 +517,8 @@ export const locations: Location[] = [
       "3D printen nabij Herzele",
       "3D model laten printen Herzele",
     ],
-    metaDescription: "X3DPrints verzorgt 3D prints voor Herzele en omgeving van prototypes tot kleine series, PLA, PETG en TPU beschikbaar. Upload je model bij X3DPrints.",
+    metaDescription:
+      "Herzeelse handelaar en 100% Belgische 3D printstudio voor Herzele en deelgemeenten. Lid van Werkgroep Ondernemend Herzele, PLA/PETG/TPU voor prototypes en kleine series.",
   },
   {
     slug: "3d-printen-in-borsbeke",
@@ -529,7 +530,8 @@ export const locations: Location[] = [
       "3D printen nabij Borsbeke",
       "3D model laten printen Borsbeke",
     ],
-    metaDescription: "3D printservice in Borsbeke met focus op precisie van prototypes tot kleine series, PLA, PETG en TPU beschikbaar. X3DPrints helpt je project vooruit.",
+    metaDescription:
+      "Herzeelse handelaar en 100% Belgische 3D printservice voor Borsbeke. Lid van Werkgroep Ondernemend Herzele, snelle offertes voor prototypes en kleine series in PLA, PETG en TPU.",
   },
   {
     slug: "3d-printen-in-hillegem",
@@ -541,7 +543,8 @@ export const locations: Location[] = [
       "3D printen nabij Hillegem",
       "3D model laten printen Hillegem",
     ],
-    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Hillegem van prototypes tot kleine series, PLA, PETG en TPU beschikbaar. Ontvang je prijs bij X3DPrints.",
+    metaDescription:
+      "Herzeelse handelaar, 100% Belgische 3D printstudio voor Hillegem. Lid van Werkgroep Ondernemend Herzele met PLA, PETG en TPU voor prototypes en kleine series.",
   },
   {
     slug: "3d-printen-in-ressegem",
@@ -553,7 +556,8 @@ export const locations: Location[] = [
       "3D printen nabij Ressegem",
       "3D model laten printen Ressegem",
     ],
-    metaDescription: "Professionele 3D prints in Ressegem, snel geleverd van prototypes tot kleine series, PLA, PETG en TPU beschikbaar. X3DPrints print jouw ontwerp met zorg.",
+    metaDescription:
+      "Herzeelse handelaar en 100% Belgische 3D printservice voor Ressegem. Lid van Werkgroep Ondernemend Herzele met snelle levering van PLA, PETG en TPU prototypes en kleine series.",
   },
   {
     slug: "3d-printen-in-sint-antelinks",
@@ -565,7 +569,8 @@ export const locations: Location[] = [
       "3D printen nabij Sint-Antelinks",
       "3D model laten printen Sint-Antelinks",
     ],
-    metaDescription: "Laat je 3D-idee werkelijkheid worden in Sint-Antelinks voor prototypes, mallen en functionele onderdelen. Vraag een offerte bij X3DPrints. PLA, PETG.",
+    metaDescription:
+      "Herzeelse handelaar en 100% Belgische 3D printstudio voor Sint-Antelinks. Lid van Werkgroep Ondernemend Herzele; PLA, PETG en TPU voor prototypes en functionele onderdelen.",
   },
   {
     slug: "3d-printen-in-sint-lievens-esse",
@@ -577,7 +582,8 @@ export const locations: Location[] = [
       "3D printen nabij Sint-Lievens-Esse",
       "3D model laten printen Sint-Lievens-Esse",
     ],
-    metaDescription: "X3DPrints verzorgt 3D prints voor Sint-Lievens-Esse en omgeving voor prototypes, mallen en functionele onderdelen. Upload je model bij X3DPrints.",
+    metaDescription:
+      "Herzeelse handelaar en 100% Belgische 3D printservice voor Sint-Lievens-Esse. Lid van Werkgroep Ondernemend Herzele, met PLA/PETG/TPU voor prototypes en functionele onderdelen.",
   },
   {
     slug: "3d-printen-in-steenhuize-wijnhuize",
@@ -589,7 +595,8 @@ export const locations: Location[] = [
       "3D printen nabij Steenhuize-Wijnhuize",
       "3D model laten printen Steenhuize-Wijnhuize",
     ],
-    metaDescription: "3D printservice in Steenhuize-Wijnhuize met focus op precisie voor prototypes, mallen en functionele onderdelen. X3DPrints helpt je project vooruit.",
+    metaDescription:
+      "Herzeelse handelaar en 100% Belgische 3D printservice voor Steenhuize-Wijnhuize. Lid van Werkgroep Ondernemend Herzele; PLA, PETG en TPU voor prototypes en functionele onderdelen.",
   },
   {
     slug: "3d-printen-in-woubrechtegem",
@@ -601,7 +608,8 @@ export const locations: Location[] = [
       "3D printen nabij Woubrechtegem",
       "3D model laten printen Woubrechtegem",
     ],
-    metaDescription: "Nauwkeurige 3D printing voor bedrijven en makers in Woubrechtegem voor prototypes, mallen en functionele onderdelen. Ontvang je prijs bij X3DPrints.",
+    metaDescription:
+      "Herzeelse handelaar en 100% Belgische 3D printstudio voor Woubrechtegem. Lid van Werkgroep Ondernemend Herzele met PLA, PETG en TPU voor prototypes en functionele onderdelen.",
   },
   {
     slug: "3d-printen-in-geraardsbergen",
