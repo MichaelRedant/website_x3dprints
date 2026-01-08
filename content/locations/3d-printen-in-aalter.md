@@ -1,0 +1,120 @@
+# 3D printen in Aalter: prototypes en maatwerk rond het kanaal
+
+**3D printen in Aalter** brengt snelle prototyping en maatwerk naar de kanaalzone tussen Gent en Brugge. X3DPrints print in Herzele en levert vlot in Aalter en de deelgemeenten Bellem, Knesselare, Lotenhulle, Poeke en Ursel. Zo hoeft u niet ver te rijden voor betrouwbare 3D print service.
+
+---
+
+## Waarom 3D printen in Aalter bij X3DPrints?
+
+- **Snelle doorlooptijd**: meestal enkele werkdagen, afhankelijk van complexiteit.
+- **Materiaaladvies**: hulp bij keuze tussen PLA, PETG en TPU.
+- **Nauwkeurige prints**: geschikt voor functionele onderdelen en prototypes.
+- **Lokale afhaling**: ophalen in Herzele of levering op afspraak.
+
+---
+
+## Lokale punten in Aalter
+
+- [Sint-Corneliuskerk](https://nl.wikipedia.org/wiki/Corneliuskerk_(Aalter)) als herkenningspunt in het centrum.
+- [Kasteel Nobelstede](https://nl.wikipedia.org/wiki/Kasteel_Nobelstede) met historische link naar de regio.
+- [Warandemolen](https://nl.wikipedia.org/wiki/Warandemolen), een opvallend molenrestant.
+
+---
+
+## Lokale focus in Aalter
+
+Werk je in Aalter? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Sint-Corneliuskerk.
+
+- Maquettes en detailmodellen voor erfgoed en presentaties.
+- Montagehulpstukken en klemmen voor snelle herstellingen.
+- Behuizingen en beschermkappen voor elektronica of sensoren.
+
+## Materialen voor 3D printen in Aalter
+
+| Materiaal   | Eigenschappen            | Typische toepassingen |
+|-------------|--------------------------|-----------------------|
+| **PLA Matte** | Stijf, detailrijk         | Maquettes, displays en prototypen |
+| **PETG**     | Taai, temperatuurbestendig | Functionele onderdelen en behuizingen |
+| **TPU**      | Flexibel, schokabsorberend | Beschermhoezen, klemmen en dempers |
+
+Meer info over materialen vindt u op [materialen](/materials).
+
+---
+
+## Voor wie is 3D printen in Aalter interessant?
+
+### KMO's en techniekers
+Snelle prototypes, hulpstukken en kleine series voor lokale bedrijven.
+
+### Makers en hobbyisten
+Van reserveonderdeel tot uniek object, zonder lange wachttijden.
+
+### Scholen en verenigingen
+Educatieve modellen, prijzen of kleine series voor lokale initiatieven.
+
+---
+
+## Rapid prototyping in Aalter
+
+Met rapid prototyping test u vorm en pasvorm snel, zodat u fouten vroeg detecteert en sneller bijstuurt.
+
+---
+
+## Hoe bestellen bij X3DPrints?
+
+1. Stuur uw STL of STEP via de [contactpagina](/contact).
+2. Geef materiaal, kleur en aantallen door.
+3. U ontvangt een duidelijke offerte en planning.
+
+---
+
+## Levertijd en verzending
+
+- **Standaard**: meestal enkele werkdagen.
+- **Spoed**: mogelijk na overleg.
+- **Verzending**: tarieven op de [prijzenpagina](/pricing).
+- **Afhaling**: op afspraak in Herzele.
+
+---
+
+## Toepassingen van 3D printen in Aalter
+
+- Prototypes en producttests
+- Maatwerk onderdelen en adapters
+- Displays en presentatiehulpmiddelen
+- Onderdelen voor machines en herstellingen
+- Educatieve modellen
+
+---
+
+## Veelgestelde vragen over 3D printen in Aalter
+
+**Hoe werkt een offerte voor 3D printen in Aalter?**
+Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
+
+**Welke bestanden kan ik aanleveren voor Aalter?**
+STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
+
+**Kunnen jullie kleine series leveren in Aalter?**
+Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+
+## Interne links rond 3D printen in Aalter
+
+- [3D printen in Bellem](/3d-printen-in-bellem)
+- [3D printen in Knesselare](/3d-printen-in-knesselare)
+- [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
+- [3D printen in Poeke](/3d-printen-in-poeke)
+- [3D printen in Ursel](/3d-printen-in-ursel)
+
+---
+
+## Externe links
+
+- [Aalter op Wikipedia](https://nl.wikipedia.org/wiki/Aalter)
+- [Kasteel van Poeke](https://nl.wikipedia.org/wiki/Kasteel_van_Poeke)
+
+---
+
+## Offerte voor 3D printen in Aalter
+
+Wil u een prototype of maatwerk laten printen in Aalter? Vraag een vrijblijvende offerte aan via [contact](/contact).

@@ -1,53 +1,74 @@
-# 3D printen in Berendrecht, Zandvliet en Lillo: klaar voor de haven
+# 3D printen in Berendrecht, Zandvliet en Lillo: klaar voor de haven
+
+Werk je in de polders of aan de Antwerpse haven en zoek je een betrouwbare partner voor **3D printen in Berendrecht-Zandvliet-Lillo**? X3DPrints levert stevige onderdelen en prototypes voor teams in de buurt van BASF, het Havencentrum, de Kieldrechtsluis of de historische dorpskern van Lillo. Reken op korte doorlooptijden en duidelijke communicatie.
+
+---
+
+## Waarom X3DPrints voor BZL?
+
+- Functionele sterkte: PETG en TPU voor onderdelen die tegen een stootje kunnen in werkplaatsen of op kades.
+- Snelle levering: vaak binnen enkele werkdagen verzonden richting Noorderlaan of Scheldelaan.
+- Projectbegeleiding: advies over orientatie en laaghoogte zodat onderdelen passen in bestaande installaties.
+- Heldere prijzen: transparant over kost en lead time, zonder verrassingen.
+
+**Lokale touch:** we kennen de mix van zware industrie en dorpsgevoel rond het Fort van Lillo. Of je nu een bracket nodig hebt voor meetapparatuur, een behuizing voor sensoren langs de Schelde of een schaalmodel voor het Havencentrum, we stemmen materiaal en afwerking af op de omgeving.
+
+---
+
 
-Werk je in de polders of aan de Antwerpse haven en zoek je een betrouwbare partner voor **3D printen in Berendrecht-Zandvliet-Lillo**? X3DPrints levert stevige onderdelen en prototypes voor teams in de buurt van BASF, het Havencentrum, de Kieldrechtsluis of de historische dorpskern van Lillo. Reken op korte doorlooptijden en duidelijke communicatie.
 
----
+## Lokale focus in Berendrecht, Zandvliet en Lillo
 
-## Waarom X3DPrints voor BZL?
+Voor projecten in Berendrecht, Zandvliet en Lillo combineren we korte doorlooptijd met strakke afwerking.
 
-- Functionele sterkte: PETG en TPU voor onderdelen die tegen een stootje kunnen in werkplaatsen of op kades.
-- Snelle levering: vaak binnen enkele werkdagen verzonden richting Noorderlaan of Scheldelaan.
-- Projectbegeleiding: advies over orientatie en laaghoogte zodat onderdelen passen in bestaande installaties.
-- Heldere prijzen: transparant over kost en lead time, zonder verrassingen.
+- Displays en maquettes voor presentaties, events of showroomwerk.
+- Vervangonderdelen en clips om machines snel weer op gang te krijgen.
+- Ergonomische grips en handgrepen op maat.
 
-**Lokale touch:** we kennen de mix van zware industrie en dorpsgevoel rond het Fort van Lillo. Of je nu een bracket nodig hebt voor meetapparatuur, een behuizing voor sensoren langs de Schelde of een schaalmodel voor het Havencentrum, we stemmen materiaal en afwerking af op de omgeving.
+## Materialen voor havenprojecten
+
+| Materiaal     | Pluspunt                        | Ideaal voor |
+| :------------ | :----------------------------- | :---------- |
+| **PETG**      | Chemisch en temperatuurvast    | Behuizingen of klemmen in industriële installaties |
+| **TPU**       | Flexibel en schokdempend       | Dempers, grips of beschermhoezen voor veldwerk |
+| **PLA Matte** | Strak detail voor zichtwerk    | Maquettes van het Havenhuis of visuals voor opleidingen |
+
+---
+
+## Toepassingen in BZL
+
+- Industrie en maintenance: snelle vervangstukken voor installaties langs de Scheldelaan en kades rond de sluizen.
+- Meet- en sensorteams: custom behuizingen die buiten kunnen staan zonder extra nabewerking.
+- Educatie en bezoekerscentra: maquettes en interactieve onderdelen voor het Havencentrum of rondleidingen in Lillo.
+
+---
+
+## Logistiek
+
+We versturen dagelijks richting de noordelijke districten. Spoed nodig? Vermeld het in je aanvraag, dan plannen we productie en verzending in lijn met je deadline. Afhalen in Herzele kan op afspraak.
+
+---
+
+## Veelgestelde vragen over 3D printen in Berendrecht, Zandvliet en Lillo
 
----
+**Kunnen jullie kleine series leveren in Berendrecht, Zandvliet en Lillo?**
+Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
-## Materialen voor havenprojecten
+**Welk materiaal past het best bij een project in Berendrecht, Zandvliet en Lillo?**
+PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
-| Materiaal     | Pluspunt                        | Ideaal voor |
-| :------------ | :----------------------------- | :---------- |
-| **PETG**      | Chemisch en temperatuurvast    | Behuizingen of klemmen in industriële installaties |
-| **TPU**       | Flexibel en schokdempend       | Dempers, grips of beschermhoezen voor veldwerk |
-| **PLA Matte** | Strak detail voor zichtwerk    | Maquettes van het Havenhuis of visuals voor opleidingen |
+**Hoe snel is 3D printen in Berendrecht, Zandvliet en Lillo?**
+Meestal enkele werkdagen. Spoed kan in overleg; levering richting Berendrecht, Zandvliet en Lillo of afhalen in Herzele.
 
----
-
-## Toepassingen in BZL
-
-- Industrie en maintenance: snelle vervangstukken voor installaties langs de Scheldelaan en kades rond de sluizen.
-- Meet- en sensorteams: custom behuizingen die buiten kunnen staan zonder extra nabewerking.
-- Educatie en bezoekerscentra: maquettes en interactieve onderdelen voor het Havencentrum of rondleidingen in Lillo.
-
----
-
-## Logistiek
-
-We versturen dagelijks richting de noordelijke districten. Spoed nodig? Vermeld het in je aanvraag, dan plannen we productie en verzending in lijn met je deadline. Afhalen in Herzele kan op afspraak.
-
----
-
-## Interne links rond Antwerpen
-
-- [3D printen in Antwerpen](/3d-printen-in-antwerpen)
-- [3D printen in Ekeren](/3d-printen-in-ekeren)
-- [3D printen in Merksem](/3d-printen-in-merksem)
-- [3D printen in Hoboken](/3d-printen-in-hoboken)
-
----
-
-## Start je aanvraag
-
-Upload je STL- of STEP-bestand via [contact](/contact). Voeg aantallen en materiaalvoorkeur toe; we bezorgen snel een voorstel voor je project in Berendrecht, Zandvliet of Lillo.
+## Interne links rond Antwerpen
+
+- [3D printen in Antwerpen](/3d-printen-in-antwerpen)
+- [3D printen in Ekeren](/3d-printen-in-ekeren)
+- [3D printen in Merksem](/3d-printen-in-merksem)
+- [3D printen in Hoboken](/3d-printen-in-hoboken)
+
+---
+
+## Start je aanvraag
+
+Upload je STL- of STEP-bestand via [contact](/contact). Voeg aantallen en materiaalvoorkeur toe; we bezorgen snel een voorstel voor je project in Berendrecht, Zandvliet of Lillo.

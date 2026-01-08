@@ -18,6 +18,7 @@ import GlassCard from "@/components/GlassCard"
 import CtaBlock from "@/components/CtaBlock"
 import Faq from "@/components/Faq"
 import ShimmerButton from "@/components/ShimmerButton"
+import ReadMoreLinks from "@/components/ReadMoreLinks"
 import { buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema } from "@/lib/seo"
 import { servicesFaq } from "@/content/services-faq"
 
@@ -460,6 +461,21 @@ export default function Page() {
           </Reveal>
         </div>
       </section>
+
+      <ReadMoreLinks
+        title="Plan je 3D print project"
+        intro="Kies materiaal, check pricing en start meteen met een duidelijke offerte-aanvraag."
+        primaryLinks={[
+          { label: "Materialen & richtlijnen", href: "/materials" },
+          { label: "Prijzen & calculator", href: "/pricing" },
+          { label: "Offerte aanvragen", href: "/contact" },
+        ]}
+        secondaryLinks={[
+          { label: "Portfolio", href: "/portfolio" },
+          { label: "Segmenten & cases", href: "/segments" },
+          { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+        ]}
+      />
 
       {/* CTA */}
       <div className="px-6 pb-12 sm:px-8 lg:px-12">

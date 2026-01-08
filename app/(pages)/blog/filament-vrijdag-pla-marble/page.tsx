@@ -3,6 +3,7 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pla-marble"
 const publishedDate = "2025-10-10T08:00:00+02:00"
@@ -595,6 +596,8 @@ export default function FilamentVrijdagPlaMarblePage() {
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogReadMore />
+
     </main>
   )
 }

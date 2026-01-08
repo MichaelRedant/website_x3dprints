@@ -3,7 +3,8 @@ import { cn } from "@/lib/utils"
 import { renderMarkdown } from "@/lib/markdown"
 
 interface MarkdownProps {
-  source: string
+  source?: string
+  html?: string
   className?: string
 }
 
@@ -11,8 +12,8 @@ interface MarkdownProps {
  * Server Component die markdown rendert naar gesanitize HTML
  * en in een typografisch "prose" blok toont.
  */
-export default async function Markdown({ source, className }: MarkdownProps) {
-  const html = await renderMarkdown(source)
+export default async function Markdown({ source, html, className }: MarkdownProps) {
+  const output = html ?? (source ? await renderMarkdown(source) : "")
 
   return (
     <div className="overflow-x-auto">
@@ -24,7 +25,7 @@ export default async function Markdown({ source, className }: MarkdownProps) {
           "[&_.table-wrapper]:-mx-4 [&_.table-wrapper]:overflow-x-auto [&_.table-wrapper_table]:min-w-full",
           className,
         )}
-        dangerouslySetInnerHTML={{ __html: html }}
+        dangerouslySetInnerHTML={{ __html: output }}
       />
     </div>
   )

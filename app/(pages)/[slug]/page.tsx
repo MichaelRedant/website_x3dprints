@@ -8,9 +8,10 @@ import { join } from "path"
 import type { ReactNode } from "react"
 
 import Reveal from "@/components/Reveal"
+import Parallax from "@/components/Parallax"
 import ShimmerButton from "@/components/ShimmerButton"
 import Catchphrase from "@/components/Catchphrase"
-import GlassOrb from "@/components/GlassOrb"
+import FilamentHeroVisual from "@/components/FilamentHeroVisual"
 import GlassCard from "@/components/GlassCard"
 import TiltImage from "@/components/TiltImage"
 import Markdown from "@/components/Markdown"
@@ -18,7 +19,7 @@ import MiniToc from "@/components/MiniToc"
 import CtaBlock from "@/components/CtaBlock"
 import Faq from "@/components/Faq"
 
-import { splitMarkdown } from "@/lib/markdown"
+import { renderMarkdown, splitMarkdown } from "@/lib/markdown"
 import { extractHeadings } from "@/lib/headings"
 import {
   getAllLocationSlugs,
@@ -28,11 +29,111 @@ import {
 import { keywordSvgDataUri } from "@/lib/svg"
 import {
   buildCityMetaDescription,
+  clampToWords,
   makeDescriptionFromMarkdown,
   SITE,
 } from "@/lib/seo"
 
 export const revalidate = 86_400 // 24h
+
+type FaqItemMd = { q: string; a: string }
+
+function escapeRegExp(input: string) {
+  return input.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+}
+
+function extractSection(markdown: string, headingPrefix: string) {
+  const headingRe = new RegExp(
+    `^##\\s+${escapeRegExp(headingPrefix)}[^\\n]*\\n`,
+    "mi",
+  )
+  const match = markdown.match(headingRe)
+  if (!match || match.index === undefined) return null
+  const start = match.index
+  const afterHeading = start + match[0].length
+  const rest = markdown.slice(afterHeading)
+  const nextHeadingIdx = rest.search(/^##\\s+/m)
+  const end = nextHeadingIdx === -1 ? markdown.length : afterHeading + nextHeadingIdx
+  const body = markdown.slice(afterHeading, end).trim()
+  return { body, start, end }
+}
+
+function stripSection(markdown: string, headingPrefix: string) {
+  const section = extractSection(markdown, headingPrefix)
+  if (!section) return markdown
+  const before = markdown.slice(0, section.start).trimEnd()
+  const after = markdown.slice(section.end).trimStart()
+  return [before, after].filter(Boolean).join("\n\n")
+}
+
+function stripLeadingH1(markdown: string) {
+  return markdown.replace(/^\s*#\s+.*(?:\r?\n)+/, "").trimStart()
+}
+
+function splitHtmlByHr(html: string) {
+  return html
+    .split(/\s*<hr\s*\/?>\s*/i)
+    .map((section) => section.trim())
+    .filter(Boolean)
+}
+
+function firstParagraph(text: string) {
+  const para = text.split(/\n{2,}/).find((p) => p.trim().length > 0)
+  return para ? para.replace(/\s+/g, " ").trim() : ""
+}
+
+function parseFaqItems(sectionBody: string): FaqItemMd[] {
+  const items: FaqItemMd[] = []
+  const boldQa = /\*\*(.+?)\*\*\s*([\s\S]*?)(?=\n\*\*|$)/g
+  let match: RegExpExecArray | null
+  while ((match = boldQa.exec(sectionBody))) {
+    const q = match[1].trim()
+    const a = match[2].trim()
+    if (q && a) items.push({ q, a })
+  }
+  if (items.length) return items
+
+  const headingSplit = sectionBody.split(/^###\s+/m).filter(Boolean)
+  for (const block of headingSplit) {
+    const lines = block.split(/\r?\n/)
+    const q = (lines.shift() || "").trim()
+    const a = lines.join("\n").trim()
+    if (q && a) items.push({ q, a })
+  }
+  return items
+}
+
+function parseLocalPoints(sectionBody: string) {
+  const items: Array<{ name: string; url?: string }> = []
+  const lines = sectionBody.split(/\r?\n/)
+  const seen = new Set<string>()
+
+  for (const line of lines) {
+    const match = line.match(/^\s*[-*]\s+(.*)$/)
+    if (!match) continue
+    const content = match[1].trim()
+    if (!content) continue
+
+    const linkMatch = content.match(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/)
+    const name = (linkMatch ? linkMatch[1] : content).trim()
+    const url = linkMatch ? linkMatch[2].trim() : undefined
+    const key = name.toLowerCase()
+    if (!name || seen.has(key)) continue
+    seen.add(key)
+    items.push({ name, url })
+  }
+
+  return items
+}
+
+function buildSeoDescription(markdown: string, city: string, metaDescription?: string) {
+  if (metaDescription && metaDescription.trim()) return metaDescription.trim()
+  const focusSection = extractSection(markdown, "Lokale focus")
+  const focusPara = focusSection ? firstParagraph(focusSection.body) : ""
+  if (focusPara) return clampToWords(focusPara, 158)
+  const normalized = stripLeadingH1(markdown)
+  return normalized ? makeDescriptionFromMarkdown(normalized, city) : buildCityMetaDescription(city)
+}
 
 export function generateStaticParams(): Array<{ slug: string }> {
   return getAllLocationSlugs().map((slug) => ({ slug }))
@@ -60,9 +161,7 @@ export async function generateMetadata(
     )
   } catch {}
 
-  const description =
-    (loc.metaDescription && loc.metaDescription.trim()) ||
-    (contentMd ? makeDescriptionFromMarkdown(contentMd, loc.city) : buildCityMetaDescription(loc.city))
+  const description = buildSeoDescription(contentMd, loc.city, loc.metaDescription)
 
   return {
     title: { default: `${keyphrase} | X3DPrints`, template: `%s | X3DPrints` },
@@ -108,8 +207,19 @@ export default async function Page(
     notFound()
   }
 
-  const mdSections = splitMarkdown(contentMd)
-  const tocItems = await extractHeadings(contentMd, [2, 3])
+  const faqSection = extractSection(contentMd, "Veelgestelde vragen")
+  const localPointsSection = extractSection(contentMd, "Lokale punten")
+  const localPoints = localPointsSection ? parseLocalPoints(localPointsSection.body) : []
+  const contentMdStripped = faqSection ? stripSection(contentMd, "Veelgestelde vragen") : contentMd
+  const contentMdNormalized = stripLeadingH1(contentMdStripped)
+  const mdSections = splitMarkdown(contentMdNormalized)
+  const contentHtml = await renderMarkdown(contentMdNormalized)
+  const htmlSections = splitHtmlByHr(contentHtml)
+  const sectionHtml =
+    htmlSections.length === mdSections.length
+      ? htmlSections
+      : await Promise.all(mdSections.map((md) => renderMarkdown(md)))
+  const tocItems = await extractHeadings(contentMdNormalized, [2, 3])
 
   const stripTags = (html: string) => html.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim()
 
@@ -156,12 +266,14 @@ export default async function Page(
     .map((c) => c.charCodeAt(0))
     .reduce((sum, code) => sum + code, 0) % heroVariants.length
   const heroContent = heroVariants[variantIndex](loc.city)
+  const seoDescription = buildSeoDescription(contentMd, loc.city, loc.metaDescription)
 
   // JSON-LD blocks
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: keyphrase,
+    description: seoDescription,
     areaServed: [{ "@type": "City", name: loc.city }, { "@type": "State", name: "Oost-Vlaanderen" }],
     provider: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
     url: `https://www.x3dprints.be/${loc.slug}`,
@@ -175,6 +287,7 @@ export default async function Page(
     name: "X3DPrints",
     url: "https://www.x3dprints.be",
     image: "https://www.x3dprints.be/og-x3dprints.jpg",
+    description: seoDescription,
     telephone: SITE.phone,
     hasMap: "https://www.google.com/maps/search/?api=1&query=Provincieweg+34a+9552+Herzele",
     geo: {
@@ -194,7 +307,8 @@ export default async function Page(
     sameAs: SITE.sameAs,
   }
 
-  const faqItems = [
+  const faqFromMarkdown = faqSection ? parseFaqItems(faqSection.body) : []
+  const fallbackFaqItems = [
     { q: `Welke materialen kan ik laten 3D printen in ${loc.city}?`, aHtml: `Standaard <strong>PLA Matte</strong>, plus <strong>PETG</strong> en <strong>TPU</strong>. Op aanvraag: ABS/ASA, Nylon of PA-CF. Bekijk <a href="/materials">materialen & richtlijnen</a>.` },
     { q: `Wat is de levertijd voor 3D printen in ${loc.city}?`, aHtml: `Meestal <strong>enkele werkdagen</strong>, afhankelijk van complexiteit en oplage. <a href="/contact">Spoed</a> mogelijk in overleg.` },
     { q: "Hoe worden de prijzen berekend?", aHtml: `Transparant: formaat (<em>Small/Medium/Large/XL</em>), materiaaltoeslag, nabehandeling en aantallen. Zie <a href="/pricing">Prijzen</a>.` },
@@ -204,6 +318,15 @@ export default async function Page(
     { q: "Bieden jullie ontwerp op maat of aanpassingen?", aHtml: `Ja. CAD-aanpassingen en ontwerp op maat aan <strong>EUR 45/uur</strong>. Vraag een voorstel via <a href="/contact">contact</a>.` },
     { q: `Kan ik afhalen i.p.v. verzending in ${loc.city}?`, aHtml: `Afhalen kan op afspraak. Verzending: <strong>&lt; EUR 50 = EUR 7</strong>, <strong>EUR 50-100 = EUR 5</strong>, <strong>&gt; EUR 100 = gratis</strong>. Zie <a href="/pricing">Prijzen</a>.` },
   ].map((it) => ({ ...it, aText: stripTags(it.aHtml) }))
+
+  const faqItems = faqFromMarkdown.length
+    ? await Promise.all(
+        faqFromMarkdown.map(async (item) => {
+          const html = await renderMarkdown(item.a)
+          return { q: item.q, aHtml: html, aText: stripTags(html) }
+        }),
+      )
+    : fallbackFaqItems
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -219,6 +342,25 @@ export default async function Page(
       { "@type": "ListItem", position: 2, name: "Locaties", item: "https://www.x3dprints.be/locaties" },
       { "@type": "ListItem", position: 3, name: loc.city, item: `https://www.x3dprints.be/${loc.slug}` },
     ],
+  }
+
+  const pageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: keyphrase,
+    description: seoDescription,
+    url: `https://www.x3dprints.be/${loc.slug}`,
+    inLanguage: "nl-BE",
+    about: [{ "@type": "Place", name: loc.city }],
+    ...(localPoints.length
+      ? {
+          mentions: localPoints.map((point) => ({
+            "@type": "Place",
+            name: point.name,
+            ...(point.url ? { sameAs: point.url } : {}),
+          })),
+        }
+      : {}),
   }
 
   const icon = (node: ReactNode) => (
@@ -239,9 +381,14 @@ export default async function Page(
 
       {/* hero */}
       <section className="relative px-6 pb-24 pt-20 sm:px-8 lg:px-12 lg:pb-32 lg:pt-28">
-        <div className="absolute right-0 top-0 -z-10 hidden sm:block">
-          <GlassOrb className="h-72 w-72 opacity-40" />
-        </div>
+        <Parallax
+          mode="page"
+          range={520}
+          offset={260}
+          className="pointer-events-none absolute right-12 top-6 -z-10 hidden lg:block"
+        >
+          <FilamentHeroVisual className="h-[22rem] w-[22rem] opacity-60" />
+        </Parallax>
 
         <div className="mx-auto max-w-6xl">
           <Reveal className="max-w-3xl">
@@ -364,7 +511,7 @@ export default async function Page(
       <section className="px-4 pb-20 pt-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-screen-md lg:max-w-screen-lg">
           <header className="relative mx-auto rounded-3xl border border-white/30 bg-white/40 p-6 sm:p-8 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] animate-[fadeInUp_.6s_ease_out_0s_both] text-center">
-            <h1 className="font-extrabold tracking-tight text-[clamp(1.75rem,4vw,2.5rem)] text-slate-900">{keyphrase}</h1>
+            <h2 className="font-extrabold tracking-tight text-[clamp(1.75rem,4vw,2.5rem)] text-slate-900">{keyphrase}</h2>
             <p className="mx-auto mt-3 max-w-prose text-pretty text-slate-600">Snelle, nauwkeurige 3D print service in {loc.city}. Perfect voor <strong>prototypes</strong> en <strong>kleine series</strong>. Persoonlijk advies, korte doorlooptijden.</p>
             <ul className="mx-auto mt-5 grid max-w-2xl gap-2 text-slate-700 sm:grid-cols-2">
               <li className="flex items-start justify-center gap-2 sm:justify-start"><span className="mt-1 inline-block h-2 w-2 rounded-full bg-cyan-400" />Materialen: PLA, PETG, ABS/ASA, TPU</li>
@@ -387,9 +534,9 @@ export default async function Page(
 
           <section className="relative mx-auto mt-6 max-w-3xl">
             <div className="rounded-3xl bg-white/45 p-6 ring-1 ring-white/30 backdrop-blur-xl shadow-glass sm:p-8">
-              {mdSections.map((md, i) => (
+              {sectionHtml.map((html, i) => (
                 <div key={i} className={i > 0 ? "mt-8" : undefined}>
-                  <Markdown source={md} className="max-w-none prose-headings:scroll-mt-28" />
+                  <Markdown html={html} className="max-w-none prose-headings:scroll-mt-28" />
                   {i === 0 && (
                     <div className="mt-8"><GlassCard className="p-5"><p className="text-sm text-slate-700">Snel offerte nodig? Bezorg je STL/STEP via <Link href="/contact" className="underline decoration-cyan-500 underline-offset-4">het contactformulier</Link>.</p></GlassCard></div>
                   )}
@@ -428,6 +575,7 @@ export default async function Page(
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
         </div>
       </section>

@@ -4,6 +4,7 @@ import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-lente-pasen"
 
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     description:
       "Eieren, konijnen, bloemdecor en lantaarns in pastel PLA of Translucent. Slicer-tips, afwerking en leverzones.",
     url: canonical,
+    type: "article",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte paasdecor" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -66,6 +68,34 @@ const faqItems = [
     a: "Voor pastel PLA volstaat vaak raw of licht schuren. Wil je schilderen, vraag dan een grijze primer. Voor Translucent lichtobjecten is primer niet nodig.",
   },
 ]
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "3D printen voor lente & Pasen",
+  description:
+    "Pastel decor, paasornamenten en lichtobjecten in Silk, Matte en Translucent PLA. Tips voor supports, magneten en levering.",
+  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
+  publisher: {
+    "@type": "Organization",
+    name: "X3DPrints",
+    url: "https://www.x3dprints.be",
+    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
+  },
+  mainEntityOfPage: canonical,
+  url: canonical,
+  image: ["https://www.x3dprints.be/images/og-home.jpg"],
+}
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+}
 
 const inspirationImages = [
   { src: "/images/portfolio/Easter1.webp", alt: "3D geprinte paasdecor set 1" },
@@ -252,6 +282,11 @@ export default function BlogSpringEaster() {
           </Reveal>
         </div>
       </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogReadMore />
+
     </main>
   )
 }

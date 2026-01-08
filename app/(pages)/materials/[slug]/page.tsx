@@ -6,6 +6,7 @@ import { notFound } from "next/navigation"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import GlassCard from "@/components/GlassCard"
+import ReadMoreLinks from "@/components/ReadMoreLinks"
 import { MATERIALS, type MaterialKey } from "@/lib/materials"
 import {
   MATERIAL_DETAILS_BY_SLUG,
@@ -447,6 +448,21 @@ export default async function MaterialDetailPage({
           </Reveal>
         </div>
       </section>
+
+      <ReadMoreLinks
+        title={`Meer over ${material.name}`}
+        intro="Vergelijk materialen, bekijk prijzen en start je aanvraag met de juiste info."
+        primaryLinks={[
+          { label: "Materialen overzicht", href: "/materials" },
+          { label: "Prijzen & calculator", href: "/pricing" },
+          { label: "Offerte aanvragen", href: contactHref },
+        ]}
+        secondaryLinks={[
+          { label: "3D print service", href: "/services" },
+          { label: "Portfolio", href: "/portfolio" },
+          { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+        ]}
+      />
 
       <script
         type="application/ld+json"

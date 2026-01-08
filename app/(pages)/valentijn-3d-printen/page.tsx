@@ -184,7 +184,7 @@ export default function ValentijnLandingPage() {
               <div className="overflow-hidden rounded-xl border border-white/60 bg-white">
                 <Image
                   src="/images/portfolio/big%20valentijn%20boy%20articulated.webp"
-                  alt="3D geprint Valentijn figuur articulated"
+                  alt="3D geprinte articulated Valentijn figuur"
                   width={640}
                   height={480}
                   className="h-full w-full object-cover"

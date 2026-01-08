@@ -2,6 +2,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
+import ReadMoreLinks from "@/components/ReadMoreLinks"
 
 type SegmentCard = {
   slug: string
@@ -438,6 +439,21 @@ export default function SegmentsPage() {
           </div>
         </GlassCard>
       </section>
+
+      <ReadMoreLinks
+        title="Verder met je segment"
+        intro="Kies een segment en koppel het aan materialen, pricing en een concrete aanvraag."
+        primaryLinks={[
+          { label: "3D print service", href: "/services" },
+          { label: "Materialen & richtlijnen", href: "/materials" },
+          { label: "Prijzen & calculator", href: "/pricing" },
+        ]}
+        secondaryLinks={[
+          { label: "Portfolio", href: "/portfolio" },
+          { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+          { label: "Offerte aanvragen", href: "/contact" },
+        ]}
+      />
 
       <script
         type="application/ld+json"

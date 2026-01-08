@@ -1,32 +1,57 @@
-# 3D printen in Nokere: koers- en kassei-proof
+# 3D printen in Nokere: koers- en kassei-proof
+
+Nokere is bekend om de Nokereberg en Nokere Koerse. X3DPrints levert hier snelle 3D prints voor cycling-events, kmo's en makers die onderdelen nodig hebben die tegen een stootje kunnen.
+
+---
+
+## Waarom X3DPrints voor Nokere?
+
+- **Snelle levering**: 2-5 werkdagen; spoed in overleg.  
+- **Levering** richting Nokereberg, dorpskern en Nokeredorp; afhalen in Herzele kan.  
+- **Materiaaladvies**: PLA voor trofee- en displaywerk, PETG voor outdoor opstellingen langs kasseihellingen, TPU voor flexibele klemmen en dempers.  
+- **Duidelijke prijzen**: zie [pricing](/pricing) of vraag direct via [contact](/contact).
+
+## Lokale use-cases
+
+- **Nokere Koerse**: routebordjes, props en houders in PLA/PETG.  
+- **Werkplaatsen**: jigs en behuizingen voor KMO's rond Nokeredorp.  
+- **Outdoor**: PETG onderdelen die regen en trillingen aan kunnen.
+
 
-Nokere is bekend om de Nokereberg en Nokere Koerse. X3DPrints levert hier snelle 3D prints voor cycling-events, kmo's en makers die onderdelen nodig hebben die tegen een stootje kunnen.
 
----
+## Lokale focus in Nokere
 
-## Waarom X3DPrints voor Nokere?
+In Nokere helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
 
-- **Snelle levering**: 2-5 werkdagen; spoed in overleg.  
-- **Levering** richting Nokereberg, dorpskern en Nokeredorp; afhalen in Herzele kan.  
-- **Materiaaladvies**: PLA voor trofee- en displaywerk, PETG voor outdoor opstellingen langs kasseihellingen, TPU voor flexibele klemmen en dempers.  
-- **Duidelijke prijzen**: zie [pricing](/pricing) of vraag direct via [contact](/contact).
+- Behuizingen en covers voor elektronica, sensoren of prototypes.
+- Displays en maquettes voor presentaties, events of showroomwerk.
+- Vervangonderdelen en clips om machines snel weer op gang te krijgen.
 
-## Lokale use-cases
+## Materialen
+
+- **PLA**: detail en nette afwerking.  
+- **PETG**: taai, weerbestendiger.  
+- **TPU**: flexibel voor grips, pads en schokdempers.
+
+## Zo werkt het
+
+1) Upload STL/STEP via [contact](/contact) met afmetingen en toepassing.  
+2) Wij adviseren orientatie en materiaalkeuze.  
+3) Print, QC en levering in Nokere of afhalen.
+
+Check kleuren op [materials](/materials), controleer je model in de [viewer](/viewer), en bekijk sectorcases op [segments](/segments). Tips vind je in de [blog](/blog).
 
-- **Nokere Koerse**: routebordjes, props en houders in PLA/PETG.  
-- **Werkplaatsen**: jigs en behuizingen voor KMO's rond Nokeredorp.  
-- **Outdoor**: PETG onderdelen die regen en trillingen aan kunnen.
 
-## Materialen
+## Veelgestelde vragen over 3D printen in Nokere
 
-- **PLA**: detail en nette afwerking.  
-- **PETG**: taai, weerbestendiger.  
-- **TPU**: flexibel voor grips, pads en schokdempers.
+**Wat kost 3D printen in Nokere?**
 
-## Zo werkt het
+De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je model of schets en je krijgt snel een duidelijke offerte.
 
-1) Upload STL/STEP via [contact](/contact) met afmetingen en toepassing.  
-2) Wij adviseren orientatie en materiaalkeuze.  
-3) Print, QC en levering in Nokere of afhalen.
+**Welke bestanden kan ik aanleveren?**
 
-Check kleuren op [materials](/materials), controleer je model in de [viewer](/viewer), en bekijk sectorcases op [segments](/segments). Tips vind je in de [blog](/blog).
+STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen met het modelleren.
+
+**Hoe snel is de doorlooptijd?**
+
+Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.

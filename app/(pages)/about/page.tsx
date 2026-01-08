@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
@@ -91,7 +91,7 @@ export default function Page() {
             <Parallax offset={28} className="justify-self-end">
               <Image
                 src="/Logo.webp"
-                alt="X3DPrints"
+                alt="X3DPrints logo"
                 width={260}
                 height={260}
                 className="h-32 w-auto opacity-95 sm:h-40 md:h-48"

@@ -4,6 +4,7 @@ import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
+import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/blog/3d-geprinte-platen-nasiam"
 
@@ -322,6 +323,8 @@ export default function NaSiamArticlePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <BlogReadMore />
+
     </article>
   )
 }

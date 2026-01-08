@@ -4,6 +4,7 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-mini-figuren"
 
@@ -202,7 +203,7 @@ export default function BlogMiniaturesPage() {
                 <div className="overflow-hidden rounded-2xl border border-white/50 bg-white/60 shadow">
                   <Image
                     src="/images/portfolio/dndMini.webp"
-                    alt="3D geprinte DnD miniatuur"
+                    alt="3D geprinte DnD miniatuur in PLA Matte"
                     width={800}
                     height={600}
                     className="h-auto w-full object-cover"
@@ -216,7 +217,7 @@ export default function BlogMiniaturesPage() {
                 <div className="overflow-hidden rounded-2xl border border-white/50 bg-white/60 shadow">
                   <Image
                     src="/images/portfolio/diceTower.webp"
-                    alt="3D geprinte dice tower"
+                    alt="3D geprinte dice tower in PETG met TPU pads"
                     width={800}
                     height={600}
                     className="h-auto w-full object-cover"
@@ -308,6 +309,8 @@ export default function BlogMiniaturesPage() {
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogReadMore />
+
     </main>
   )
 }

@@ -1,4 +1,4 @@
-﻿export const servicesFaq = [
+export const servicesFaq = [
   {
     q: "Welke bestanden werken het beste?",
     a: "STEP en STL zijn ideaal. Voeg info toe over kritieke maten, gewenste afwerking en de omgeving waarin het onderdeel moet presteren.",

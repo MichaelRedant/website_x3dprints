@@ -4,6 +4,7 @@ import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-winter-kerst-nieuwjaar"
 
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     description:
       "Feestelijke decor met glans of lichtgloed. Materiaalkeuze, slicer-tips en leveropties voor eindejaar.",
     url: canonical,
+    type: "article",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte kerstdecor" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -54,6 +56,34 @@ const faqItems = [
     a: "Nee. Je levert STL/STEP aan of laat ons ontwerpen aan €45/uur. We optimaliseren voor printbaarheid, wanddiktes en supports.",
   },
 ]
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "3D printen voor winter, Kerst & Nieuwjaar",
+  description:
+    "Sneeuwvlokken, ornamenten, tafelkaartjes en party props in Silk, Marble en Translucent PLA. Tips voor lichtobjecten en levering.",
+  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
+  publisher: {
+    "@type": "Organization",
+    name: "X3DPrints",
+    url: "https://www.x3dprints.be",
+    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
+  },
+  mainEntityOfPage: canonical,
+  url: canonical,
+  image: ["https://www.x3dprints.be/images/og-home.jpg"],
+}
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+}
 
 export default function BlogWinter() {
   return (
@@ -204,19 +234,19 @@ export default function BlogWinter() {
                 <p className="text-sm font-semibold text-slate-800">Voorbeelden</p>
                 <div className="grid gap-3 sm:grid-cols-2">
                   <div className="overflow-hidden rounded-xl border border-white/60 bg-white/80 shadow">
-                    <Image src="/images/portfolio/xmasTree.jpg" alt="3D geprinte kerstboom ornamenten" width={640} height={480} className="h-full w-full object-cover" sizes="(min-width: 1024px) 320px, 100vw" priority />
+                    <Image src="/images/portfolio/xmasTree.jpg" alt="3D geprinte kerstboom ornamenten set" width={640} height={480} className="h-full w-full object-cover" sizes="(min-width: 1024px) 320px, 100vw" />
                   </div>
                   <div className="overflow-hidden rounded-xl border border-white/60 bg-white/80 shadow">
-                    <Image src="/images/portfolio/XmasScene.webp" alt="3D geprinte winter scene" width={640} height={480} className="h-full w-full object-cover" sizes="(min-width: 1024px) 320px, 100vw" />
+                    <Image src="/images/portfolio/XmasScene.webp" alt="3D geprinte winter scene decorstuk" width={640} height={480} className="h-full w-full object-cover" sizes="(min-width: 1024px) 320px, 100vw" />
                   </div>
                   <div className="overflow-hidden rounded-xl border border-white/60 bg-white/80 shadow">
-                    <Image src="/images/portfolio/XmasBalls2.webp" alt="3D geprinte kerstballen set 2" width={640} height={480} className="h-full w-full object-cover" sizes="(min-width: 1024px) 320px, 100vw" />
+                    <Image src="/images/portfolio/XmasBalls2.webp" alt="3D geprinte kerstballen set detail" width={640} height={480} className="h-full w-full object-cover" sizes="(min-width: 1024px) 320px, 100vw" />
                   </div>
                   <div className="overflow-hidden rounded-xl border border-white/60 bg-white/80 shadow">
-                    <Image src="/images/portfolio/XmasBalls.webp" alt="3D geprinte kerstballen set" width={640} height={480} className="h-full w-full object-cover" sizes="(min-width: 1024px) 320px, 100vw" />
+                    <Image src="/images/portfolio/XmasBalls.webp" alt="3D geprinte kerstballen set overzicht" width={640} height={480} className="h-full w-full object-cover" sizes="(min-width: 1024px) 320px, 100vw" />
                   </div>
                   <div className="overflow-hidden rounded-xl border border-white/60 bg-white/80 shadow sm:col-span-2">
-                    <Image src="/images/portfolio/XmasDoorTrim.webp" alt="3D geprinte kerst deurversiering" width={960} height={540} className="h-full w-full object-cover" sizes="(min-width: 1024px) 640px, 100vw" />
+                    <Image src="/images/portfolio/XmasDoorTrim.webp" alt="3D geprinte kerst deurversiering op paneel" width={960} height={540} className="h-full w-full object-cover" sizes="(min-width: 1024px) 640px, 100vw" />
                   </div>
                 </div>
                 <p className="text-xs text-slate-600">Foto&apos;s tonen Silk en multicolor PLA kerstballen, translucent lichtobjecten en deur/boom decor.</p>
@@ -225,6 +255,11 @@ export default function BlogWinter() {
           </Reveal>
         </div>
       </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogReadMore />
+
     </main>
   )
 }

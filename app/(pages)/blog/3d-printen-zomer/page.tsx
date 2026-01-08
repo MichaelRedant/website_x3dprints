@@ -4,6 +4,7 @@ import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-zomer"
 
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     title: "3D printen voor de zomer",
     description: "Tuin- en stranddecor, nautische thema’s en custom holders. Materialen, slicer-tips, levering en ontwerpservice.",
     url: canonical,
+    type: "article",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte zomer decor" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -65,6 +67,34 @@ const faqItems = [
     a: "Kies PETG voor buiten, vermijd donkere PLA in volle zon en hou wanddikte >1,6 mm. Voor zwaardere items voorzien we bredere bases of TPU feet.",
   },
 ]
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "3D printen voor de zomer",
+  description:
+    "Outdoor decor, nautische props en terrasaccessoires. PETG voor zon/vocht, PLA Silk/Marble voor luxe tafeldecor, TPU voor grip.",
+  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
+  publisher: {
+    "@type": "Organization",
+    name: "X3DPrints",
+    url: "https://www.x3dprints.be",
+    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
+  },
+  mainEntityOfPage: canonical,
+  url: canonical,
+  image: ["https://www.x3dprints.be/images/og-home.jpg"],
+}
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+}
 
 const inspirationImages = [
   { src: "/images/portfolio/Summer1.webp", alt: "3D geprinte zomer decor 1" },
@@ -252,6 +282,11 @@ export default function BlogSummer() {
           </Reveal>
         </div>
       </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogReadMore />
+
     </main>
   )
 }
