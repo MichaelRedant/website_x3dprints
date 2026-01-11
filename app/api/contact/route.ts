@@ -107,7 +107,7 @@ export async function POST(req: Request) {
 
     try { await transporter.verify() } catch { /* sommige servers weigeren verify() */ }
 
-    const subject = `[Contact] ${payload.type === "business" ? "Bedrijf" : "Particulier"} — ${payload.name}`
+    const subject = `[Contact] ${payload.type === "business" ? "Bedrijf" : "Particulier"} - ${payload.name}`
     const text = `
 Naam: ${payload.name}
 E-mail: ${payload.email}

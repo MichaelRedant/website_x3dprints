@@ -132,15 +132,32 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
       if (data.material) form.append("material", data.material)
       if (data.quote) form.append("quote", data.quote)
 
-      const res = await fetch("/contact.php", { method: "POST", body: form })
-      const result = await res.json().catch(() => null)
-      const ok = !!result?.success
-      if (!ok && result?.error) setServerError(result.error)
-      setStatus(ok ? "ok" : "error")
+      const endpoints = ["/contact.php", "/api/contact"]
+      let lastError = ""
 
-      if (ok) {
-        setData({ name: "", email: "", message: "", quantity: "", material: "", quote: "", hp: "" })
+      for (const endpoint of endpoints) {
+        try {
+          const res = await fetch(endpoint, { method: "POST", body: form })
+          const contentType = res.headers.get("content-type") || ""
+          const isJson = contentType.includes("application/json")
+          const result = isJson ? await res.json().catch(() => null) : null
+          const ok = isJson ? Boolean(result?.success || result?.ok) : false
+
+          if (ok) {
+            setStatus("ok")
+            setData({ name: "", email: "", message: "", quantity: "", material: "", quote: "", hp: "" })
+            return
+          }
+
+          const endpointError = result?.error || (!isJson ? "Onverwacht serverantwoord." : res.statusText || "Onbekende fout.")
+          lastError = endpointError
+        } catch (err) {
+          lastError = (err instanceof Error ? err.message : "Netwerkfout")
+        }
       }
+
+      setServerError(lastError || "Er ging iets mis. Probeer opnieuw.")
+      setStatus("error")
     } catch {
       setStatus("error")
     }
