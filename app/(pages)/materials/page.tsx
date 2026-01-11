@@ -10,6 +10,7 @@ import GlassCard from "@/components/GlassCard"
 import { MATERIAL_DETAILS } from "@/content/material-details"
 import MaterialSuggestionTool from "@/components/MaterialSuggestionTool"
 import { buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
+import ReadMoreLinks from "@/components/ReadMoreLinks"
 
 export const metadata: Metadata = {
   title: "Materialen voor 3D printen (PLA, PETG, TPU) | X3DPrints",
@@ -306,6 +307,21 @@ export default function MaterialsPage() {
           </Reveal>
         </div>
       </section>
+
+      <ReadMoreLinks
+        title="Verder met materialen?"
+        intro="Vergelijk toepassingen, bekijk prijzen en start meteen met een offerte-aanvraag."
+        primaryLinks={[
+          { label: "3D print service", href: "/services" },
+          { label: "Prijzen & calculator", href: "/pricing" },
+          { label: "Offerte aanvragen", href: "/contact" },
+        ]}
+        secondaryLinks={[
+          { label: "Portfolio", href: "/portfolio" },
+          { label: "Segmenten & cases", href: "/segments" },
+          { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+        ]}
+      />
 
 
 

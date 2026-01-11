@@ -3,6 +3,8 @@ import Image from "next/image"
 import Link from "next/link"
 import type { ReactNode } from "react"
 import Reveal from "@/components/Reveal"
+import Parallax from "@/components/Parallax"
+import FilamentHeroVisual from "@/components/FilamentHeroVisual"
 import ShimmerButton from "@/components/ShimmerButton"
 import Catchphrase from "@/components/Catchphrase"
 import GlassOrb from "@/components/GlassOrb"
@@ -144,9 +146,14 @@ export default function HomePage() {
 
       {/* HERO */}
       <section className="relative px-6 pb-24 pt-20 sm:px-8 lg:px-12 lg:pb-32 lg:pt-28">
-        <div className="absolute right-0 top-0 -z-10 hidden sm:block">
-          <GlassOrb className="h-72 w-72 opacity-40" />
-        </div>
+        <Parallax
+          mode="page"
+          range={520}
+          offset={260}
+          className="pointer-events-none absolute right-16 top-8 -z-10 hidden lg:block"
+        >
+          <FilamentHeroVisual className="h-[23rem] w-[23rem] opacity-70 dark:opacity-50" />
+        </Parallax>
         <div className="mx-auto max-w-6xl">
           <Reveal className="max-w-3xl stacked-content">
             <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-100/80 bg-white/70 px-3 py-1 text-xs font-medium text-slate-700 shadow-sm">

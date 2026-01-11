@@ -25,6 +25,2249 @@ export const locations: Location[] = [
     sectors: ["Prototyping voor maakbedrijven in Aalst", "Marketing/events in Denderstreek", "Onderwijs en labs in Aalst-Ninove"],
   },
   {
+    slug: "3d-printen-in-aalter",
+    city: "Aalter",
+    relatedPhrases: [
+      "3D print service Aalter",
+      "rapid prototyping Aalter",
+      "3D printing bedrijf Aalter",
+      "3D printen nabij Aalter",
+      "3D model laten printen Aalter",
+    ],
+    metaDescription:
+      "3D printen in Aalter voor prototypes en maatwerk, met levering vanuit Herzele. PLA, PETG en TPU met persoonlijk advies.",
+    servicedAreas: [
+      "Aalter centrum",
+      "Aalter-Brug",
+      "Maria-Aalter",
+      "Bellem",
+      "Knesselare",
+      "Lotenhulle",
+      "Poeke",
+      "Ursel",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "KMO's langs E40 en N44",
+      "Logistiek en landbouw rond Aalter",
+      "Retail, horeca en lokale verenigingen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-bellem",
+    city: "Bellem",
+    relatedPhrases: [
+      "3D print service Bellem",
+      "rapid prototyping Bellem",
+      "3D printing bedrijf Bellem",
+      "3D printen nabij Bellem",
+      "3D model laten printen Bellem",
+    ],
+    metaDescription:
+      "3D printen in Bellem (Aalter) voor prototypes en kleine series, met snelle afstemming en levering vanuit Herzele.",
+    servicedAreas: ["Bellem centrum", "Aalter", "Knesselare", "Lotenhulle", "Poeke", "Ursel", "Afhalen Herzele"],
+    sectors: [
+      "Lokale makers en zelfstandigen",
+      "Scholen en verenigingen in Aalter",
+      "Landelijke projecten en maatwerk",
+    ],
+  },
+  {
+    slug: "3d-printen-in-knesselare",
+    city: "Knesselare",
+    relatedPhrases: [
+      "3D print service Knesselare",
+      "rapid prototyping Knesselare",
+      "3D printing bedrijf Knesselare",
+      "3D printen nabij Knesselare",
+      "3D model laten printen Knesselare",
+    ],
+    metaDescription:
+      "3D printen in Knesselare (Aalter) voor functionele onderdelen en prototypes, met advies over PLA, PETG en TPU.",
+    servicedAreas: ["Knesselare centrum", "Aalter", "Bellem", "Lotenhulle", "Poeke", "Ursel", "Afhalen Herzele"],
+    sectors: [
+      "KMO's en techniekers in de regio",
+      "Projecten voor landbouw en bosbeheer",
+      "Lokale retail en evenementen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-lotenhulle",
+    city: "Lotenhulle",
+    relatedPhrases: [
+      "3D print service Lotenhulle",
+      "rapid prototyping Lotenhulle",
+      "3D printing bedrijf Lotenhulle",
+      "3D printen nabij Lotenhulle",
+      "3D model laten printen Lotenhulle",
+    ],
+    metaDescription:
+      "3D printen in Lotenhulle (Aalter) voor kleine series, maquettes en onderdelen op maat met snelle levering.",
+    servicedAreas: ["Lotenhulle centrum", "Aalter", "Bellem", "Knesselare", "Poeke", "Ursel", "Afhalen Herzele"],
+    sectors: [
+      "Makers en hobbyisten",
+      "Kleine ondernemingen en herstellingen",
+      "Educatieve projecten en demo's",
+    ],
+  },
+  {
+    slug: "3d-printen-in-poeke",
+    city: "Poeke",
+    relatedPhrases: [
+      "3D print service Poeke",
+      "rapid prototyping Poeke",
+      "3D printing bedrijf Poeke",
+      "3D printen nabij Poeke",
+      "3D model laten printen Poeke",
+    ],
+    metaDescription:
+      "3D printen in Poeke (Aalter) voor prototypes en creatieve projecten, met persoonlijke service vanuit Herzele.",
+    servicedAreas: ["Poeke centrum", "Aalter", "Bellem", "Knesselare", "Lotenhulle", "Ursel", "Afhalen Herzele"],
+    sectors: [
+      "Creatieve projecten en decor",
+      "Maatwerk voor lokale ondernemers",
+      "Verenigingen en cultuur",
+    ],
+  },
+  {
+    slug: "3d-printen-in-ursel",
+    city: "Ursel",
+    relatedPhrases: [
+      "3D print service Ursel",
+      "rapid prototyping Ursel",
+      "3D printing bedrijf Ursel",
+      "3D printen nabij Ursel",
+      "3D model laten printen Ursel",
+    ],
+    metaDescription:
+      "3D printen in Ursel (Aalter) voor sterke onderdelen en prototypes, met lokale levering en materiaaladvies.",
+    servicedAreas: ["Ursel centrum", "Aalter", "Bellem", "Knesselare", "Lotenhulle", "Poeke", "Afhalen Herzele"],
+    sectors: [
+      "Bos- en natuurprojecten",
+      "Lokale KMO's en techniekers",
+      "Makers en verenigingen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-assenede",
+    city: "Assenede",
+    relatedPhrases: [
+      "3D print service Assenede",
+      "rapid prototyping Assenede",
+      "3D printing bedrijf Assenede",
+      "3D printen nabij Assenede",
+      "3D model laten printen Assenede",
+    ],
+    metaDescription:
+      "3D printen in Assenede voor prototypes, maatwerk en kleine series in het Meetjesland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Assenede centrum",
+      "Bassevelde",
+      "Boekhoute",
+      "Oosteeklo",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "KMO's en zelfstandigen in het Meetjesland",
+      "Landbouw en logistiek rond N49/E34",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-bassevelde",
+    city: "Bassevelde",
+    relatedPhrases: [
+      "3D print service Bassevelde",
+      "rapid prototyping Bassevelde",
+      "3D printing bedrijf Bassevelde",
+      "3D printen nabij Bassevelde",
+      "3D model laten printen Bassevelde",
+    ],
+    metaDescription:
+      "3D printen in Bassevelde (Assenede) voor prototypes en onderdelen op maat, met snelle levering en persoonlijk advies.",
+    servicedAreas: ["Bassevelde centrum", "Assenede", "Boekhoute", "Oosteeklo", "Afhalen Herzele"],
+    sectors: [
+      "Lokale makers en ondernemers",
+      "Technische herstellingen en maatwerk",
+      "Scholen en verenigingen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-boekhoute",
+    city: "Boekhoute",
+    relatedPhrases: [
+      "3D print service Boekhoute",
+      "rapid prototyping Boekhoute",
+      "3D printing bedrijf Boekhoute",
+      "3D printen nabij Boekhoute",
+      "3D model laten printen Boekhoute",
+    ],
+    metaDescription:
+      "3D printen in Boekhoute (Assenede) voor prototypes, onderdelen en kleine series, met snelle levering in PLA, PETG en TPU.",
+    servicedAreas: ["Boekhoute centrum", "Assenede", "Bassevelde", "Oosteeklo", "Afhalen Herzele"],
+    sectors: [
+      "Creatieve projecten en retail",
+      "Maatwerk voor lokale KMO's",
+      "Verenigingen en events",
+    ],
+  },
+  {
+    slug: "3d-printen-in-oosteeklo",
+    city: "Oosteeklo",
+    relatedPhrases: [
+      "3D print service Oosteeklo",
+      "rapid prototyping Oosteeklo",
+      "3D printing bedrijf Oosteeklo",
+      "3D printen nabij Oosteeklo",
+      "3D model laten printen Oosteeklo",
+    ],
+    metaDescription:
+      "3D printen in Oosteeklo (Assenede) voor snelle prototypes en functionele onderdelen, met advies over materiaalkeuze.",
+    servicedAreas: ["Oosteeklo centrum", "Assenede", "Bassevelde", "Boekhoute", "Afhalen Herzele"],
+    sectors: [
+      "Lokale ondernemers en techniekers",
+      "Educatieve en creatieve projecten",
+      "Makers en hobbyisten",
+    ],
+  },
+  {
+    slug: "3d-printen-in-berlare",
+    city: "Berlare",
+    relatedPhrases: [
+      "3D print service Berlare",
+      "rapid prototyping Berlare",
+      "3D printing bedrijf Berlare",
+      "3D printen nabij Berlare",
+      "3D model laten printen Berlare",
+    ],
+    metaDescription:
+      "3D printen in Berlare voor prototypes en maatwerk met snelle levering. PLA, PETG en TPU met persoonlijk advies vanuit Herzele.",
+    servicedAreas: [
+      "Berlare centrum",
+      "Donk",
+      "Overmere",
+      "Uitbergen",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale KMO's en zelfstandigen",
+      "Verenigingen en events rond Donkmeer",
+      "Makers en hobbyisten",
+    ],
+  },
+  {
+    slug: "3d-printen-in-overmere",
+    city: "Overmere",
+    relatedPhrases: [
+      "3D print service Overmere",
+      "rapid prototyping Overmere",
+      "3D printing bedrijf Overmere",
+      "3D printen nabij Overmere",
+      "3D model laten printen Overmere",
+    ],
+    metaDescription:
+      "3D printen in Overmere (Berlare) voor snelle prototypes en onderdelen op maat, met levering vanuit Herzele.",
+    servicedAreas: ["Overmere centrum", "Donkmeer", "Berlare", "Uitbergen", "Afhalen Herzele"],
+    sectors: [
+      "Lokale ondernemers en techniekers",
+      "Toerisme en horeca rond Donkmeer",
+      "Makers en verenigingen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-uitbergen",
+    city: "Uitbergen",
+    relatedPhrases: [
+      "3D print service Uitbergen",
+      "rapid prototyping Uitbergen",
+      "3D printing bedrijf Uitbergen",
+      "3D printen nabij Uitbergen",
+      "3D model laten printen Uitbergen",
+    ],
+    metaDescription:
+      "3D printen in Uitbergen (Berlare) voor functionele onderdelen en maatwerk met korte doorlooptijd.",
+    servicedAreas: ["Uitbergen centrum", "Berlare", "Overmere", "Donk", "Afhalen Herzele"],
+    sectors: [
+      "Lokale KMO's en zelfstandigen",
+      "Onderwijs en verenigingen",
+      "Makers en hobbyisten",
+    ],
+  },
+  {
+    slug: "3d-printen-in-beveren-kruibeke-zwijndrecht",
+    city: "Beveren-Kruibeke-Zwijndrecht",
+    relatedPhrases: [
+      "3D print service Beveren-Kruibeke-Zwijndrecht",
+      "rapid prototyping Beveren-Kruibeke-Zwijndrecht",
+      "3D printing bedrijf Beveren-Kruibeke-Zwijndrecht",
+      "3D printen Waasland",
+      "3D model laten printen Beveren",
+    ],
+    metaDescription:
+      "3D printen in Beveren-Kruibeke-Zwijndrecht voor prototypes en maatwerk in het Waasland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Beveren",
+      "Kruibeke",
+      "Zwijndrecht",
+      "Bazel",
+      "Burcht",
+      "Doel",
+      "Haasdonk",
+      "Kallo",
+      "Kieldrecht",
+      "Melsele",
+      "Rupelmonde",
+      "Verrebroek",
+      "Vrasene",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Waaslandhaven en industrie",
+      "Logistiek, onderhoud en tooling",
+      "Verenigingen, retail en events",
+    ],
+  },
+  {
+    slug: "3d-printen-in-beveren",
+    city: "Beveren",
+    relatedPhrases: [
+      "3D print service Beveren",
+      "rapid prototyping Beveren",
+      "3D printing bedrijf Beveren",
+      "3D printen nabij Beveren",
+      "3D model laten printen Beveren",
+    ],
+    metaDescription:
+      "3D printen in Beveren voor prototypes en onderdelen op maat, met snelle levering en persoonlijk advies vanuit Herzele.",
+    servicedAreas: [
+      "Beveren centrum",
+      "Kallo",
+      "Melsele",
+      "Haasdonk",
+      "Vrasene",
+      "Verrebroek",
+      "Kieldrecht",
+      "Doel",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "KMO's en zelfstandigen",
+      "Industrie rond Waaslandhaven",
+      "Verenigingen en lokale events",
+    ],
+  },
+  {
+    slug: "3d-printen-in-kruibeke",
+    city: "Kruibeke",
+    relatedPhrases: [
+      "3D print service Kruibeke",
+      "rapid prototyping Kruibeke",
+      "3D printing bedrijf Kruibeke",
+      "3D printen nabij Kruibeke",
+      "3D model laten printen Kruibeke",
+    ],
+    metaDescription:
+      "3D printen in Kruibeke voor snelle prototypes en functionele onderdelen, met levering vanuit Herzele.",
+    servicedAreas: [
+      "Kruibeke centrum",
+      "Bazel",
+      "Rupelmonde",
+      "Burcht",
+      "Zwijndrecht",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale ondernemers en techniekers",
+      "Scheldeprojecten en herstellingen",
+      "Makers en hobbyisten",
+    ],
+  },
+  {
+    slug: "3d-printen-in-zwijndrecht",
+    city: "Zwijndrecht",
+    relatedPhrases: [
+      "3D print service Zwijndrecht",
+      "rapid prototyping Zwijndrecht",
+      "3D printing bedrijf Zwijndrecht",
+      "3D printen nabij Zwijndrecht",
+      "3D model laten printen Zwijndrecht",
+    ],
+    metaDescription:
+      "3D printen in Zwijndrecht voor prototypes en maatwerk, met snelle levering in PLA, PETG en TPU.",
+    servicedAreas: [
+      "Zwijndrecht centrum",
+      "Burcht",
+      "Kruibeke",
+      "Bazel",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Logistiek en industrie",
+      "Verenigingen en lokale events",
+      "Makers en hobbyisten",
+    ],
+  },
+  {
+    slug: "3d-printen-in-bazel",
+    city: "Bazel",
+    relatedPhrases: [
+      "3D print service Bazel",
+      "rapid prototyping Bazel",
+      "3D printing bedrijf Bazel",
+      "3D printen nabij Bazel",
+      "3D model laten printen Bazel",
+    ],
+    metaDescription:
+      "3D printen in Bazel (Kruibeke) voor snelle prototypes en onderdelen op maat, met duidelijke planning.",
+    servicedAreas: ["Bazel centrum", "Kruibeke", "Rupelmonde", "Burcht", "Afhalen Herzele"],
+    sectors: [
+      "Lokale ondernemers en techniekers",
+      "Makers en hobbyisten",
+      "Verenigingen en events",
+    ],
+  },
+  {
+    slug: "3d-printen-in-burcht",
+    city: "Burcht",
+    relatedPhrases: [
+      "3D print service Burcht",
+      "rapid prototyping Burcht",
+      "3D printing bedrijf Burcht",
+      "3D printen nabij Burcht",
+      "3D model laten printen Burcht",
+    ],
+    metaDescription:
+      "3D printen in Burcht (Zwijndrecht) voor prototypes en maatwerk met snelle levering.",
+    servicedAreas: ["Burcht centrum", "Zwijndrecht", "Kruibeke", "Bazel", "Afhalen Herzele"],
+    sectors: [
+      "Lokale KMO's en zelfstandigen",
+      "Onderwijs en verenigingen",
+      "Makers en hobbyisten",
+    ],
+  },
+  {
+    slug: "3d-printen-in-doel",
+    city: "Doel",
+    relatedPhrases: [
+      "3D print service Doel",
+      "rapid prototyping Doel",
+      "3D printing bedrijf Doel",
+      "3D printen nabij Doel",
+      "3D model laten printen Doel",
+    ],
+    metaDescription:
+      "3D printen in Doel voor prototypes en kleine series, met levering vanuit Herzele en advies op maat.",
+    servicedAreas: ["Doel", "Kieldrecht", "Verrebroek", "Kallo", "Afhalen Herzele"],
+    sectors: [
+      "Lokale ondernemers en makers",
+      "Industrie en havenprojecten",
+      "Creatieve projecten en events",
+    ],
+  },
+  {
+    slug: "3d-printen-in-haasdonk",
+    city: "Haasdonk",
+    relatedPhrases: [
+      "3D print service Haasdonk",
+      "rapid prototyping Haasdonk",
+      "3D printing bedrijf Haasdonk",
+      "3D printen nabij Haasdonk",
+      "3D model laten printen Haasdonk",
+    ],
+    metaDescription:
+      "3D printen in Haasdonk voor functionele onderdelen en prototypes, met snelle levering en duidelijke communicatie.",
+    servicedAreas: ["Haasdonk centrum", "Beveren", "Melsele", "Kallo", "Afhalen Herzele"],
+    sectors: [
+      "Lokale KMO's en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en lokale events",
+    ],
+  },
+  {
+    slug: "3d-printen-in-kallo",
+    city: "Kallo",
+    relatedPhrases: [
+      "3D print service Kallo",
+      "rapid prototyping Kallo",
+      "3D printing bedrijf Kallo",
+      "3D printen nabij Kallo",
+      "3D model laten printen Kallo",
+    ],
+    metaDescription:
+      "3D printen in Kallo voor prototypes en tooling, met levering vanuit Herzele en materialen op maat.",
+    servicedAreas: ["Kallo centrum", "Beveren", "Doel", "Kieldrecht", "Afhalen Herzele"],
+    sectors: [
+      "Haven en logistiek",
+      "Technische projecten en tooling",
+      "Makers en hobbyisten",
+    ],
+  },
+  {
+    slug: "3d-printen-in-kieldrecht",
+    city: "Kieldrecht",
+    relatedPhrases: [
+      "3D print service Kieldrecht",
+      "rapid prototyping Kieldrecht",
+      "3D printing bedrijf Kieldrecht",
+      "3D printen nabij Kieldrecht",
+      "3D model laten printen Kieldrecht",
+    ],
+    metaDescription:
+      "3D printen in Kieldrecht voor snelle prototypes en onderdelen op maat, met persoonlijk advies.",
+    servicedAreas: ["Kieldrecht centrum", "Doel", "Verrebroek", "Kallo", "Afhalen Herzele"],
+    sectors: [
+      "Lokale KMO's en techniekers",
+      "Industrie rond Waaslandhaven",
+      "Makers en hobbyisten",
+    ],
+  },
+  {
+    slug: "3d-printen-in-melsele",
+    city: "Melsele",
+    relatedPhrases: [
+      "3D print service Melsele",
+      "rapid prototyping Melsele",
+      "3D printing bedrijf Melsele",
+      "3D printen nabij Melsele",
+      "3D model laten printen Melsele",
+    ],
+    metaDescription:
+      "3D printen in Melsele voor prototypes, maatwerk en kleine series met snelle levering vanuit Herzele.",
+    servicedAreas: ["Melsele centrum", "Beveren", "Haasdonk", "Kallo", "Afhalen Herzele"],
+    sectors: [
+      "Lokale ondernemers en makers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-rupelmonde",
+    city: "Rupelmonde",
+    relatedPhrases: [
+      "3D print service Rupelmonde",
+      "rapid prototyping Rupelmonde",
+      "3D printing bedrijf Rupelmonde",
+      "3D printen nabij Rupelmonde",
+      "3D model laten printen Rupelmonde",
+    ],
+    metaDescription:
+      "3D printen in Rupelmonde voor snelle prototypes en maatwerk, met heldere planning en advies.",
+    servicedAreas: ["Rupelmonde centrum", "Kruibeke", "Bazel", "Burcht", "Afhalen Herzele"],
+    sectors: [
+      "Lokale ondernemers en techniekers",
+      "Creatieve projecten aan de Schelde",
+      "Makers en hobbyisten",
+    ],
+  },
+  {
+    slug: "3d-printen-in-verrebroek",
+    city: "Verrebroek",
+    relatedPhrases: [
+      "3D print service Verrebroek",
+      "rapid prototyping Verrebroek",
+      "3D printing bedrijf Verrebroek",
+      "3D printen nabij Verrebroek",
+      "3D model laten printen Verrebroek",
+    ],
+    metaDescription:
+      "3D printen in Verrebroek voor prototypes en onderdelen op maat, met snelle levering en persoonlijke service.",
+    servicedAreas: ["Verrebroek centrum", "Kieldrecht", "Doel", "Kallo", "Afhalen Herzele"],
+    sectors: [
+      "Haven en logistiek",
+      "Lokale KMO's en techniekers",
+      "Verenigingen en events",
+    ],
+  },
+  {
+    slug: "3d-printen-in-vrasene",
+    city: "Vrasene",
+    relatedPhrases: [
+      "3D print service Vrasene",
+      "rapid prototyping Vrasene",
+      "3D printing bedrijf Vrasene",
+      "3D printen nabij Vrasene",
+      "3D model laten printen Vrasene",
+    ],
+    metaDescription:
+      "3D printen in Vrasene voor snelle prototypes en maatwerk, met levering vanuit Herzele en duidelijke offerte.",
+    servicedAreas: ["Vrasene centrum", "Beveren", "Haasdonk", "Melsele", "Afhalen Herzele"],
+    sectors: [
+      "Lokale ondernemers en makers",
+      "Technische herstellingen",
+      "Onderwijs en verenigingen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-buggenhout",
+    city: "Buggenhout",
+    relatedPhrases: [
+      "3D print service Buggenhout",
+      "rapid prototyping Buggenhout",
+      "3D printing bedrijf Buggenhout",
+      "3D printen nabij Buggenhout",
+      "3D model laten printen Buggenhout",
+    ],
+    metaDescription:
+      "3D printen in Buggenhout voor snelle prototypes en maatwerk. Persoonlijk advies en levering vanuit Herzele in PLA, PETG en TPU.",
+    servicedAreas: [
+      "Buggenhout centrum",
+      "Opdorp",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale KMO's en zelfstandigen",
+      "Landbouw en herstellingen",
+      "Verenigingen en lokale events",
+    ],
+  },
+  {
+    slug: "3d-printen-in-opdorp",
+    city: "Opdorp",
+    relatedPhrases: [
+      "3D print service Opdorp",
+      "rapid prototyping Opdorp",
+      "3D printing bedrijf Opdorp",
+      "3D printen nabij Opdorp",
+      "3D model laten printen Opdorp",
+    ],
+    metaDescription:
+      "3D printen in Opdorp (Buggenhout) voor prototypes en onderdelen op maat met snelle levering en duidelijke planning.",
+    servicedAreas: [
+      "Opdorp centrum",
+      "Buggenhout",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale ondernemers en makers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-denderleeuw",
+    city: "Denderleeuw",
+    relatedPhrases: [
+      "3D print service Denderleeuw",
+      "rapid prototyping Denderleeuw",
+      "3D printing bedrijf Denderleeuw",
+      "3D printen nabij Denderleeuw",
+      "3D model laten printen Denderleeuw",
+    ],
+    metaDescription:
+      "3D printen in Denderleeuw voor snelle prototypes en maatwerk met levering vanuit Herzele. PLA, PETG en TPU met persoonlijk advies.",
+    servicedAreas: [
+      "Denderleeuw centrum",
+      "Iddergem",
+      "Welle",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale KMO's en zelfstandigen",
+      "Onderhoud en techniek langs de Dender",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-iddergem",
+    city: "Iddergem",
+    relatedPhrases: [
+      "3D print service Iddergem",
+      "rapid prototyping Iddergem",
+      "3D printing bedrijf Iddergem",
+      "3D printen nabij Iddergem",
+      "3D model laten printen Iddergem",
+    ],
+    metaDescription:
+      "3D printen in Iddergem (Denderleeuw) voor functionele onderdelen en kleine series met snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Iddergem centrum",
+      "Denderleeuw",
+      "Welle",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Landelijke projecten en herstellingen",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-welle",
+    city: "Welle",
+    relatedPhrases: [
+      "3D print service Welle",
+      "rapid prototyping Welle",
+      "3D printing bedrijf Welle",
+      "3D printen nabij Welle",
+      "3D model laten printen Welle",
+    ],
+    metaDescription:
+      "3D printen in Welle (Denderleeuw) voor prototypes, tooling en zichtwerk met korte doorlooptijd en heldere planning.",
+    servicedAreas: [
+      "Welle centrum",
+      "Denderleeuw",
+      "Iddergem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "KMO's en zelfstandigen",
+      "Onderwijs en makers",
+      "Events en lokale handel",
+    ],
+  },
+  {
+    slug: "3d-printen-in-destelbergen",
+    city: "Destelbergen",
+    relatedPhrases: [
+      "3D print service Destelbergen",
+      "rapid prototyping Destelbergen",
+      "3D printing bedrijf Destelbergen",
+      "3D printen nabij Destelbergen",
+      "3D model laten printen Destelbergen",
+    ],
+    metaDescription:
+      "3D printen in Destelbergen voor snelle prototypes en maatwerk met levering vanuit Herzele. PLA, PETG en TPU met persoonlijk advies.",
+    servicedAreas: [
+      "Destelbergen centrum",
+      "Heusden",
+      "Gent rand",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale KMO's en zelfstandigen",
+      "Design en maatwerk rond Gent",
+      "Onderwijs en verenigingen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-heusden",
+    city: "Heusden",
+    relatedPhrases: [
+      "3D print service Heusden",
+      "rapid prototyping Heusden",
+      "3D printing bedrijf Heusden",
+      "3D printen nabij Heusden",
+      "3D model laten printen Heusden",
+    ],
+    metaDescription:
+      "3D printen in Heusden (Destelbergen) voor prototypes en functionele onderdelen met snelle levering en duidelijke planning.",
+    servicedAreas: [
+      "Heusden centrum",
+      "Destelbergen",
+      "Gent rand",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Projecten langs de Schelde",
+      "KMO's en verenigingen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-eeklo",
+    city: "Eeklo",
+    relatedPhrases: [
+      "3D print service Eeklo",
+      "rapid prototyping Eeklo",
+      "3D printing bedrijf Eeklo",
+      "3D printen Meetjesland",
+      "3D model laten printen Eeklo",
+    ],
+    metaDescription:
+      "3D printen in Eeklo voor prototypes en kleine series in het Meetjesland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Eeklo centrum",
+      "Meetjesland",
+      "Maldegem",
+      "Assenede",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "KMO's en zelfstandigen in het Meetjesland",
+      "Retail, horeca en events in Eeklo",
+      "Onderwijs en makers",
+    ],
+  },
+  {
+    slug: "3d-printen-in-evergem",
+    city: "Evergem",
+    relatedPhrases: [
+      "3D print service Evergem",
+      "rapid prototyping Evergem",
+      "3D printing bedrijf Evergem",
+      "3D printen nabij Evergem",
+      "3D model laten printen Evergem",
+    ],
+    metaDescription:
+      "3D printen in Evergem voor prototypes en kleine series in het Meetjesland en rond de kanaalzone. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Evergem centrum",
+      "Ertvelde",
+      "Sleidinge",
+      "Kluizen",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "KMO's en techniekers rond de kanaalzone",
+      "Retail en lokale handel",
+      "Onderwijs en makers",
+    ],
+  },
+  {
+    slug: "3d-printen-in-ertvelde",
+    city: "Ertvelde",
+    relatedPhrases: [
+      "3D print service Ertvelde",
+      "rapid prototyping Ertvelde",
+      "3D printing bedrijf Ertvelde",
+      "3D printen nabij Ertvelde",
+      "3D model laten printen Ertvelde",
+    ],
+    metaDescription:
+      "3D printen in Ertvelde (Evergem) voor sterke prototypes en functionele onderdelen met korte doorlooptijd en heldere planning.",
+    servicedAreas: [
+      "Ertvelde centrum",
+      "Rieme",
+      "Evergem",
+      "Kluizen",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Industrie en logistiek rond de kanaalzone",
+      "Lokale makers en onderhoud",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sleidinge",
+    city: "Sleidinge",
+    relatedPhrases: [
+      "3D print service Sleidinge",
+      "rapid prototyping Sleidinge",
+      "3D printing bedrijf Sleidinge",
+      "3D printen nabij Sleidinge",
+      "3D model laten printen Sleidinge",
+    ],
+    metaDescription:
+      "3D printen in Sleidinge (Evergem) voor maatwerk, prototypes en kleine series. PLA, PETG en TPU met snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Sleidinge centrum",
+      "Evergem",
+      "Kluizen",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "KMO's en zelfstandigen",
+      "Onderwijs en makers",
+      "Events en lokale handel",
+    ],
+  },
+  {
+    slug: "3d-printen-in-kluizen",
+    city: "Kluizen",
+    relatedPhrases: [
+      "3D print service Kluizen",
+      "rapid prototyping Kluizen",
+      "3D printing bedrijf Kluizen",
+      "3D printen nabij Kluizen",
+      "3D model laten printen Kluizen",
+    ],
+    metaDescription:
+      "3D printen in Kluizen (Evergem) voor betrouwbare prototypes en functionele onderdelen met snelle doorlooptijd.",
+    servicedAreas: [
+      "Kluizen centrum",
+      "Sleidinge",
+      "Ertvelde",
+      "Evergem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale ondernemers en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-gavere",
+    city: "Gavere",
+    relatedPhrases: [
+      "3D print service Gavere",
+      "rapid prototyping Gavere",
+      "3D printing bedrijf Gavere",
+      "3D printen nabij Gavere",
+      "3D model laten printen Gavere",
+    ],
+    metaDescription:
+      "3D printen in Gavere voor prototypes en kleine series langs de Schelde. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Gavere centrum",
+      "Semmerzake",
+      "Vurste",
+      "Baaigem",
+      "Dikkelvenne",
+      "Asper",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "KMO's en zelfstandigen in de Scheldevallei",
+      "Makers en ontwerpers rond Gavere",
+      "Onderwijs en verenigingen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-semmerzake",
+    city: "Semmerzake",
+    relatedPhrases: [
+      "3D print service Semmerzake",
+      "rapid prototyping Semmerzake",
+      "3D printing bedrijf Semmerzake",
+      "3D printen nabij Semmerzake",
+      "3D model laten printen Semmerzake",
+    ],
+    metaDescription:
+      "3D printen in Semmerzake (Gavere) voor maatwerk en functionele onderdelen met snelle doorlooptijd en heldere planning.",
+    servicedAreas: [
+      "Semmerzake centrum",
+      "Gavere",
+      "Vurste",
+      "Dikkelvenne",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-vurste",
+    city: "Vurste",
+    relatedPhrases: [
+      "3D print service Vurste",
+      "rapid prototyping Vurste",
+      "3D printing bedrijf Vurste",
+      "3D printen nabij Vurste",
+      "3D model laten printen Vurste",
+    ],
+    metaDescription:
+      "3D printen in Vurste (Gavere) voor prototypes en kleine series met korte doorlooptijd en betrouwbare kwaliteit.",
+    servicedAreas: [
+      "Vurste centrum",
+      "Gavere",
+      "Semmerzake",
+      "Dikkelvenne",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale ondernemers en makers",
+      "Projecten langs de Schelde",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-baaigem",
+    city: "Baaigem",
+    relatedPhrases: [
+      "3D print service Baaigem",
+      "rapid prototyping Baaigem",
+      "3D printing bedrijf Baaigem",
+      "3D printen nabij Baaigem",
+      "3D model laten printen Baaigem",
+    ],
+    metaDescription:
+      "3D printen in Baaigem (Gavere) voor prototypes, maquettes en sterke onderdelen in PLA, PETG of TPU.",
+    servicedAreas: [
+      "Baaigem centrum",
+      "Gavere",
+      "Vurste",
+      "Dikkelvenne",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Creatieve projecten en maquettes",
+      "Landelijke ondernemingen",
+      "Onderwijs en makers",
+    ],
+  },
+  {
+    slug: "3d-printen-in-dikkelvenne",
+    city: "Dikkelvenne",
+    relatedPhrases: [
+      "3D print service Dikkelvenne",
+      "rapid prototyping Dikkelvenne",
+      "3D printing bedrijf Dikkelvenne",
+      "3D printen nabij Dikkelvenne",
+      "3D model laten printen Dikkelvenne",
+    ],
+    metaDescription:
+      "3D printen in Dikkelvenne (Gavere) voor functionele onderdelen en kleine series met snelle levering en duidelijke planning.",
+    servicedAreas: [
+      "Dikkelvenne centrum",
+      "Gavere",
+      "Baaigem",
+      "Vurste",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "KMO's en zelfstandigen",
+      "Onderhoud en herstellingen",
+      "Verenigingen en events",
+    ],
+  },
+  {
+    slug: "3d-printen-in-asper",
+    city: "Asper",
+    relatedPhrases: [
+      "3D print service Asper",
+      "rapid prototyping Asper",
+      "3D printing bedrijf Asper",
+      "3D printen nabij Asper",
+      "3D model laten printen Asper",
+    ],
+    metaDescription:
+      "3D printen in Asper (Gavere) voor betrouwbare prototypes en maatwerk met korte doorlooptijd en strakke afwerking.",
+    servicedAreas: [
+      "Asper centrum",
+      "Gavere",
+      "Semmerzake",
+      "Dikkelvenne",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Retail en lokale handel",
+      "Onderwijs en verenigingen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-hamme",
+    city: "Hamme",
+    relatedPhrases: [
+      "3D print service Hamme",
+      "rapid prototyping Hamme",
+      "3D printing bedrijf Hamme",
+      "3D printen nabij Hamme",
+      "3D model laten printen Hamme",
+    ],
+    metaDescription:
+      "3D printen in Hamme voor prototypes en kleine series aan de Durme. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Hamme centrum",
+      "Moerzeke",
+      "Zogge",
+      "Sint-Anna",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale KMO's en zelfstandigen",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-moerzeke",
+    city: "Moerzeke",
+    relatedPhrases: [
+      "3D print service Moerzeke",
+      "rapid prototyping Moerzeke",
+      "3D printing bedrijf Moerzeke",
+      "3D printen nabij Moerzeke",
+      "3D model laten printen Moerzeke",
+    ],
+    metaDescription:
+      "3D printen in Moerzeke (Hamme) voor functionele onderdelen en maatwerk met korte doorlooptijd en heldere planning.",
+    servicedAreas: [
+      "Moerzeke centrum",
+      "Kastel",
+      "Hamme",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Kleine series en maatwerk",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-horebeke",
+    city: "Horebeke",
+    relatedPhrases: [
+      "3D print service Horebeke",
+      "rapid prototyping Horebeke",
+      "3D printing bedrijf Horebeke",
+      "3D printen nabij Horebeke",
+      "3D model laten printen Horebeke",
+    ],
+    metaDescription:
+      "3D printen in Horebeke voor prototypes en kleine series in de Vlaamse Ardennen. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Horebeke centrum",
+      "Sint-Maria-Horebeke",
+      "Sint-Kornelis-Horebeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-maria-horebeke",
+    city: "Sint-Maria-Horebeke",
+    relatedPhrases: [
+      "3D print service Sint-Maria-Horebeke",
+      "rapid prototyping Sint-Maria-Horebeke",
+      "3D printing bedrijf Sint-Maria-Horebeke",
+      "3D printen nabij Sint-Maria-Horebeke",
+      "3D model laten printen Sint-Maria-Horebeke",
+    ],
+    metaDescription:
+      "3D printen in Sint-Maria-Horebeke (Horebeke) voor prototypes en functionele onderdelen met korte doorlooptijd.",
+    servicedAreas: [
+      "Sint-Maria-Horebeke centrum",
+      "Horebeke",
+      "Sint-Kornelis-Horebeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Creatieve projecten en maquettes",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-kornelis-horebeke",
+    city: "Sint-Kornelis-Horebeke",
+    relatedPhrases: [
+      "3D print service Sint-Kornelis-Horebeke",
+      "rapid prototyping Sint-Kornelis-Horebeke",
+      "3D printing bedrijf Sint-Kornelis-Horebeke",
+      "3D printen nabij Sint-Kornelis-Horebeke",
+      "3D model laten printen Sint-Kornelis-Horebeke",
+    ],
+    metaDescription:
+      "3D printen in Sint-Kornelis-Horebeke (Horebeke) voor maatwerk en kleine series met snelle levering.",
+    servicedAreas: [
+      "Sint-Kornelis-Horebeke centrum",
+      "Horebeke",
+      "Sint-Maria-Horebeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "KMO's en zelfstandigen",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-kaprijke",
+    city: "Kaprijke",
+    relatedPhrases: [
+      "3D print service Kaprijke",
+      "rapid prototyping Kaprijke",
+      "3D printing bedrijf Kaprijke",
+      "3D printen nabij Kaprijke",
+      "3D model laten printen Kaprijke",
+    ],
+    metaDescription:
+      "3D printen in Kaprijke voor prototypes en kleine series in het Meetjesland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Kaprijke centrum",
+      "Lembeke",
+      "Bentille",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-lembeke",
+    city: "Lembeke",
+    relatedPhrases: [
+      "3D print service Lembeke",
+      "rapid prototyping Lembeke",
+      "3D printing bedrijf Lembeke",
+      "3D printen nabij Lembeke",
+      "3D model laten printen Lembeke",
+    ],
+    metaDescription:
+      "3D printen in Lembeke (Kaprijke) voor prototypes en functionele onderdelen met korte doorlooptijd en heldere planning.",
+    servicedAreas: [
+      "Lembeke centrum",
+      "Kaprijke",
+      "Bentille",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Creatieve projecten en maquettes",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-bentille",
+    city: "Bentille",
+    relatedPhrases: [
+      "3D print service Bentille",
+      "rapid prototyping Bentille",
+      "3D printing bedrijf Bentille",
+      "3D printen nabij Bentille",
+      "3D model laten printen Bentille",
+    ],
+    metaDescription:
+      "3D printen in Bentille (Kaprijke) voor maatwerk en kleine series met snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Bentille kern",
+      "Kaprijke",
+      "Lembeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "KMO's en zelfstandigen",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-laarne",
+    city: "Laarne",
+    relatedPhrases: [
+      "3D print service Laarne",
+      "rapid prototyping Laarne",
+      "3D printing bedrijf Laarne",
+      "3D printen nabij Laarne",
+      "3D model laten printen Laarne",
+    ],
+    metaDescription:
+      "3D printen in Laarne voor prototypes en kleine series met snelle levering vanuit Herzele. PLA, PETG en TPU met persoonlijk advies.",
+    servicedAreas: [
+      "Laarne centrum",
+      "Kalken",
+      "Wetteren",
+      "Destelbergen",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-kalken",
+    city: "Kalken",
+    relatedPhrases: [
+      "3D print service Kalken",
+      "rapid prototyping Kalken",
+      "3D printing bedrijf Kalken",
+      "3D printen nabij Kalken",
+      "3D model laten printen Kalken",
+    ],
+    metaDescription:
+      "3D printen in Kalken (Laarne) voor prototypes en functionele onderdelen met korte doorlooptijd en heldere planning.",
+    servicedAreas: [
+      "Kalken centrum",
+      "Laarne",
+      "Wetteren",
+      "Destelbergen",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Kleine series en maatwerk",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-lebbeke",
+    city: "Lebbeke",
+    relatedPhrases: [
+      "3D print service Lebbeke",
+      "rapid prototyping Lebbeke",
+      "3D printing bedrijf Lebbeke",
+      "3D printen nabij Lebbeke",
+      "3D model laten printen Lebbeke",
+    ],
+    metaDescription:
+      "3D printen in Lebbeke voor prototypes en kleine series met snelle levering vanuit Herzele. PLA, PETG en TPU met persoonlijk advies.",
+    servicedAreas: [
+      "Lebbeke centrum",
+      "Denderbelle",
+      "Wieze",
+      "Buggenhout",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-denderbelle",
+    city: "Denderbelle",
+    relatedPhrases: [
+      "3D print service Denderbelle",
+      "rapid prototyping Denderbelle",
+      "3D printing bedrijf Denderbelle",
+      "3D printen nabij Denderbelle",
+      "3D model laten printen Denderbelle",
+    ],
+    metaDescription:
+      "3D printen in Denderbelle (Lebbeke) voor prototypes en functionele onderdelen met korte doorlooptijd en heldere planning.",
+    servicedAreas: [
+      "Denderbelle centrum",
+      "Lebbeke",
+      "Wieze",
+      "Dendermonde",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Kleine series en maatwerk",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-wieze",
+    city: "Wieze",
+    relatedPhrases: [
+      "3D print service Wieze",
+      "rapid prototyping Wieze",
+      "3D printing bedrijf Wieze",
+      "3D printen nabij Wieze",
+      "3D model laten printen Wieze",
+    ],
+    metaDescription:
+      "3D printen in Wieze (Lebbeke) voor prototypes en kleine series met snelle levering en duidelijke planning.",
+    servicedAreas: [
+      "Wieze centrum",
+      "Lebbeke",
+      "Denderbelle",
+      "Buggenhout",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale ondernemers en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-oordegem",
+    city: "Oordegem",
+    relatedPhrases: [
+      "3D print service Oordegem",
+      "rapid prototyping Oordegem",
+      "3D printing bedrijf Oordegem",
+      "3D printen nabij Oordegem",
+      "3D model laten printen Oordegem",
+    ],
+    metaDescription:
+      "3D printen in Oordegem (Lede) voor prototypes en functionele onderdelen met korte doorlooptijd en heldere planning.",
+    servicedAreas: [
+      "Oordegem centrum",
+      "Lede",
+      "Smetlede",
+      "Wanzele",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Kleine series en maatwerk",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-smetlede",
+    city: "Smetlede",
+    relatedPhrases: [
+      "3D print service Smetlede",
+      "rapid prototyping Smetlede",
+      "3D printing bedrijf Smetlede",
+      "3D printen nabij Smetlede",
+      "3D model laten printen Smetlede",
+    ],
+    metaDescription:
+      "3D printen in Smetlede (Lede) voor prototypes en kleine series met snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Smetlede centrum",
+      "Lede",
+      "Oordegem",
+      "Impe",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-impe",
+    city: "Impe",
+    relatedPhrases: [
+      "3D print service Impe",
+      "rapid prototyping Impe",
+      "3D printing bedrijf Impe",
+      "3D printen nabij Impe",
+      "3D model laten printen Impe",
+    ],
+    metaDescription:
+      "3D printen in Impe (Lede) voor maatwerk en functionele onderdelen met korte doorlooptijd.",
+    servicedAreas: [
+      "Impe centrum",
+      "Lede",
+      "Smetlede",
+      "Wanzele",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Kleine series en maatwerk",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-wanzele",
+    city: "Wanzele",
+    relatedPhrases: [
+      "3D print service Wanzele",
+      "rapid prototyping Wanzele",
+      "3D printing bedrijf Wanzele",
+      "3D printen nabij Wanzele",
+      "3D model laten printen Wanzele",
+    ],
+    metaDescription:
+      "3D printen in Wanzele (Lede) voor prototypes en kleine series met snelle levering en duidelijke planning.",
+    servicedAreas: [
+      "Wanzele centrum",
+      "Lede",
+      "Oordegem",
+      "Impe",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale ondernemers en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-deftinge",
+    city: "Deftinge",
+    relatedPhrases: [
+      "3D print service Deftinge",
+      "rapid prototyping Deftinge",
+      "3D printing bedrijf Deftinge",
+      "3D printen nabij Deftinge",
+      "3D model laten printen Deftinge",
+    ],
+    metaDescription:
+      "3D printen in Deftinge (Lierde) voor prototypes en functionele onderdelen met korte doorlooptijd en heldere planning.",
+    servicedAreas: [
+      "Deftinge centrum",
+      "Lierde",
+      "Hemelveerdegem",
+      "Sint-Maria-Lierde",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Kleine series en maatwerk",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-hemelveerdegem",
+    city: "Hemelveerdegem",
+    relatedPhrases: [
+      "3D print service Hemelveerdegem",
+      "rapid prototyping Hemelveerdegem",
+      "3D printing bedrijf Hemelveerdegem",
+      "3D printen nabij Hemelveerdegem",
+      "3D model laten printen Hemelveerdegem",
+    ],
+    metaDescription:
+      "3D printen in Hemelveerdegem (Lierde) voor prototypes en kleine series met snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Hemelveerdegem centrum",
+      "Lierde",
+      "Deftinge",
+      "Sint-Maria-Lierde",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-maria-lierde",
+    city: "Sint-Maria-Lierde",
+    relatedPhrases: [
+      "3D print service Sint-Maria-Lierde",
+      "rapid prototyping Sint-Maria-Lierde",
+      "3D printing bedrijf Sint-Maria-Lierde",
+      "3D printen nabij Sint-Maria-Lierde",
+      "3D model laten printen Sint-Maria-Lierde",
+    ],
+    metaDescription:
+      "3D printen in Sint-Maria-Lierde (Lierde) voor maatwerk en functionele onderdelen met korte doorlooptijd.",
+    servicedAreas: [
+      "Sint-Maria-Lierde centrum",
+      "Lierde",
+      "Deftinge",
+      "Hemelveerdegem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Kleine series en maatwerk",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-lievegem",
+    city: "Lievegem",
+    relatedPhrases: [
+      "3D print service Lievegem",
+      "rapid prototyping Lievegem",
+      "3D printing bedrijf Lievegem",
+      "3D printen Meetjesland",
+      "3D model laten printen Lievegem",
+    ],
+    metaDescription:
+      "3D printen in Lievegem voor prototypes en kleine series in het Meetjesland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Lievegem centrum",
+      "Lovendegem",
+      "Waarschoot",
+      "Zomergem",
+      "Oostwinkel",
+      "Ronsele",
+      "Vinderhoute",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-lovendegem",
+    city: "Lovendegem",
+    relatedPhrases: [
+      "3D print service Lovendegem",
+      "rapid prototyping Lovendegem",
+      "3D printing bedrijf Lovendegem",
+      "3D printen nabij Lovendegem",
+      "3D model laten printen Lovendegem",
+    ],
+    metaDescription:
+      "3D printen in Lovendegem (Lievegem) voor prototypes en functionele onderdelen met korte doorlooptijd.",
+    servicedAreas: [
+      "Lovendegem centrum",
+      "Lievegem",
+      "Vinderhoute",
+      "Zomergem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Kleine series en maatwerk",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-waarschoot",
+    city: "Waarschoot",
+    relatedPhrases: [
+      "3D print service Waarschoot",
+      "rapid prototyping Waarschoot",
+      "3D printing bedrijf Waarschoot",
+      "3D printen nabij Waarschoot",
+      "3D model laten printen Waarschoot",
+    ],
+    metaDescription:
+      "3D printen in Waarschoot (Lievegem) voor prototypes en kleine series met snelle levering en duidelijke planning.",
+    servicedAreas: [
+      "Waarschoot centrum",
+      "Lievegem",
+      "Zomergem",
+      "Oostwinkel",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale ondernemers en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-zomergem",
+    city: "Zomergem",
+    relatedPhrases: [
+      "3D print service Zomergem",
+      "rapid prototyping Zomergem",
+      "3D printing bedrijf Zomergem",
+      "3D printen nabij Zomergem",
+      "3D model laten printen Zomergem",
+    ],
+    metaDescription:
+      "3D printen in Zomergem (Lievegem) voor prototypes en functionele onderdelen met korte doorlooptijd en heldere planning.",
+    servicedAreas: [
+      "Zomergem centrum",
+      "Lievegem",
+      "Waarschoot",
+      "Ronsele",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-oostwinkel",
+    city: "Oostwinkel",
+    relatedPhrases: [
+      "3D print service Oostwinkel",
+      "rapid prototyping Oostwinkel",
+      "3D printing bedrijf Oostwinkel",
+      "3D printen nabij Oostwinkel",
+      "3D model laten printen Oostwinkel",
+    ],
+    metaDescription:
+      "3D printen in Oostwinkel (Lievegem) voor prototypes en kleine series met snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Oostwinkel centrum",
+      "Lievegem",
+      "Waarschoot",
+      "Zomergem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-ronsele",
+    city: "Ronsele",
+    relatedPhrases: [
+      "3D print service Ronsele",
+      "rapid prototyping Ronsele",
+      "3D printing bedrijf Ronsele",
+      "3D printen nabij Ronsele",
+      "3D model laten printen Ronsele",
+    ],
+    metaDescription:
+      "3D printen in Ronsele (Lievegem) voor prototypes en functionele onderdelen met korte doorlooptijd.",
+    servicedAreas: [
+      "Ronsele centrum",
+      "Lievegem",
+      "Zomergem",
+      "Lovendegem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-ronse",
+    city: "Ronse",
+    relatedPhrases: [
+      "3D print service Ronse",
+      "rapid prototyping Ronse",
+      "3D printing bedrijf Ronse",
+      "3D printen nabij Ronse",
+      "3D model laten printen Ronse",
+    ],
+    metaDescription:
+      "3D printen in Ronse voor prototypes en maatwerk in de Vlaamse Ardennen. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Ronse centrum",
+      "De Klijpe",
+      "Louise-Marie",
+      "Maarkedal",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-de-klijpe",
+    city: "De Klijpe",
+    relatedPhrases: [
+      "3D print service De Klijpe",
+      "rapid prototyping De Klijpe",
+      "3D printing bedrijf De Klijpe",
+      "3D printen nabij De Klijpe",
+      "3D model laten printen De Klijpe",
+    ],
+    metaDescription:
+      "3D printen in De Klijpe (Ronse) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "De Klijpe centrum",
+      "Ronse",
+      "Louise-Marie",
+      "Maarkedal",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-louise-marie",
+    city: "Louise-Marie",
+    relatedPhrases: [
+      "3D print service Louise-Marie",
+      "rapid prototyping Louise-Marie",
+      "3D printing bedrijf Louise-Marie",
+      "3D printen nabij Louise-Marie",
+      "3D model laten printen Louise-Marie",
+    ],
+    metaDescription:
+      "3D printen in Louise-Marie (Ronse) voor prototypes en kleine series met snelle levering.",
+    servicedAreas: [
+      "Louise-Marie centrum",
+      "Ronse",
+      "De Klijpe",
+      "Maarkedal",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-vinderhoute",
+    city: "Vinderhoute",
+    relatedPhrases: [
+      "3D print service Vinderhoute",
+      "rapid prototyping Vinderhoute",
+      "3D printing bedrijf Vinderhoute",
+      "3D printen nabij Vinderhoute",
+      "3D model laten printen Vinderhoute",
+    ],
+    metaDescription:
+      "3D printen in Vinderhoute (Lievegem) voor prototypes en kleine series met snelle levering en duidelijke planning.",
+    servicedAreas: [
+      "Vinderhoute centrum",
+      "Lievegem",
+      "Lovendegem",
+      "Zomergem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale ondernemers en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-lochristi",
+    city: "Lochristi",
+    relatedPhrases: [
+      "3D print service Lochristi",
+      "rapid prototyping Lochristi",
+      "3D printing bedrijf Lochristi",
+      "3D printen nabij Lochristi",
+      "3D model laten printen Lochristi",
+    ],
+    metaDescription:
+      "3D printen in Lochristi voor prototypes en kleine series rond Gent, met snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Lochristi centrum",
+      "Beervelde",
+      "Zaffelare",
+      "Zeveneken",
+      "Wachtebeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-beervelde",
+    city: "Beervelde",
+    relatedPhrases: [
+      "3D print service Beervelde",
+      "rapid prototyping Beervelde",
+      "3D printing bedrijf Beervelde",
+      "3D printen nabij Beervelde",
+      "3D model laten printen Beervelde",
+    ],
+    metaDescription:
+      "3D printen in Beervelde (Lochristi) voor prototypes en functionele onderdelen met korte doorlooptijd.",
+    servicedAreas: [
+      "Beervelde centrum",
+      "Lochristi",
+      "Zaffelare",
+      "Zeveneken",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-zaffelare",
+    city: "Zaffelare",
+    relatedPhrases: [
+      "3D print service Zaffelare",
+      "rapid prototyping Zaffelare",
+      "3D printing bedrijf Zaffelare",
+      "3D printen nabij Zaffelare",
+      "3D model laten printen Zaffelare",
+    ],
+    metaDescription:
+      "3D printen in Zaffelare (Lochristi) voor prototypes en kleine series met snelle levering en duidelijke planning.",
+    servicedAreas: [
+      "Zaffelare centrum",
+      "Lochristi",
+      "Beervelde",
+      "Zeveneken",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale ondernemers en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-zeveneken",
+    city: "Zeveneken",
+    relatedPhrases: [
+      "3D print service Zeveneken",
+      "rapid prototyping Zeveneken",
+      "3D printing bedrijf Zeveneken",
+      "3D printen nabij Zeveneken",
+      "3D model laten printen Zeveneken",
+    ],
+    metaDescription:
+      "3D printen in Zeveneken (Lochristi) voor prototypes en functionele onderdelen met korte doorlooptijd.",
+    servicedAreas: [
+      "Zeveneken centrum",
+      "Lochristi",
+      "Zaffelare",
+      "Wachtebeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-wachtebeke",
+    city: "Wachtebeke",
+    relatedPhrases: [
+      "3D print service Wachtebeke",
+      "rapid prototyping Wachtebeke",
+      "3D printing bedrijf Wachtebeke",
+      "3D printen nabij Wachtebeke",
+      "3D model laten printen Wachtebeke",
+    ],
+    metaDescription:
+      "3D printen in Wachtebeke (Lochristi) voor prototypes en kleine series met snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Wachtebeke centrum",
+      "Lochristi",
+      "Zeveneken",
+      "Zaffelare",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-lokeren",
+    city: "Lokeren",
+    relatedPhrases: [
+      "3D print service Lokeren",
+      "rapid prototyping Lokeren",
+      "3D printing bedrijf Lokeren",
+      "3D printen nabij Lokeren",
+      "3D model laten printen Lokeren",
+    ],
+    metaDescription:
+      "3D printen in Lokeren voor prototypes en kleine series met snelle levering vanuit Herzele. PLA, PETG en TPU met persoonlijk advies.",
+    servicedAreas: [
+      "Lokeren centrum",
+      "Eksaarde",
+      "Daknam",
+      "Moerbeke-Waas",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-moerbeke-waas",
+    city: "Moerbeke-Waas",
+    relatedPhrases: [
+      "3D print service Moerbeke-Waas",
+      "rapid prototyping Moerbeke-Waas",
+      "3D printing bedrijf Moerbeke-Waas",
+      "3D printen nabij Moerbeke-Waas",
+      "3D model laten printen Moerbeke-Waas",
+    ],
+    metaDescription:
+      "3D printen in Moerbeke-Waas (Lokeren) voor prototypes en functionele onderdelen met korte doorlooptijd.",
+    servicedAreas: [
+      "Moerbeke-Waas centrum",
+      "Lokeren",
+      "Eksaarde",
+      "Daknam",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-eksaarde",
+    city: "Eksaarde",
+    relatedPhrases: [
+      "3D print service Eksaarde",
+      "rapid prototyping Eksaarde",
+      "3D printing bedrijf Eksaarde",
+      "3D printen nabij Eksaarde",
+      "3D model laten printen Eksaarde",
+    ],
+    metaDescription:
+      "3D printen in Eksaarde (Lokeren) voor prototypes en kleine series met snelle levering en duidelijke planning.",
+    servicedAreas: [
+      "Eksaarde centrum",
+      "Lokeren",
+      "Daknam",
+      "Moerbeke-Waas",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-daknam",
+    city: "Daknam",
+    relatedPhrases: [
+      "3D print service Daknam",
+      "rapid prototyping Daknam",
+      "3D printing bedrijf Daknam",
+      "3D printen nabij Daknam",
+      "3D model laten printen Daknam",
+    ],
+    metaDescription:
+      "3D printen in Daknam (Lokeren) voor prototypes en functionele onderdelen met korte doorlooptijd.",
+    servicedAreas: [
+      "Daknam centrum",
+      "Lokeren",
+      "Eksaarde",
+      "Moerbeke-Waas",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale ondernemers en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-maarkedal",
+    city: "Maarkedal",
+    relatedPhrases: [
+      "3D print service Maarkedal",
+      "rapid prototyping Maarkedal",
+      "3D printing bedrijf Maarkedal",
+      "3D printen nabij Maarkedal",
+      "3D model laten printen Maarkedal",
+    ],
+    metaDescription:
+      "3D printen in Maarkedal voor prototypes en maatwerk in de Vlaamse Ardennen. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Maarkedal centrum",
+      "Etikhove",
+      "Maarke-Kerkem",
+      "Nukerke",
+      "Schorisse",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Makers en ontwerpers in de Vlaamse Ardennen",
+      "Landelijke KMO's en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-etikhove",
+    city: "Etikhove",
+    relatedPhrases: [
+      "3D print service Etikhove",
+      "rapid prototyping Etikhove",
+      "3D printing bedrijf Etikhove",
+      "3D printen nabij Etikhove",
+      "3D model laten printen Etikhove",
+    ],
+    metaDescription:
+      "3D printen in Etikhove (Maarkedal) voor prototypes, herstellingen en kleine series met snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Etikhove centrum",
+      "Maarkedal",
+      "Maarke-Kerkem",
+      "Nukerke",
+      "Schorisse",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Landelijke KMO's en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-maarke-kerkem",
+    city: "Maarke-Kerkem",
+    relatedPhrases: [
+      "3D print service Maarke-Kerkem",
+      "rapid prototyping Maarke-Kerkem",
+      "3D printing bedrijf Maarke-Kerkem",
+      "3D printen nabij Maarke-Kerkem",
+      "3D model laten printen Maarke-Kerkem",
+    ],
+    metaDescription:
+      "3D printen in Maarke-Kerkem (Maarkedal) voor prototypes en functionele onderdelen met korte doorlooptijd.",
+    servicedAreas: [
+      "Maarke-Kerkem centrum",
+      "Maarkedal",
+      "Etikhove",
+      "Nukerke",
+      "Schorisse",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Landelijke KMO's en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-nukerke",
+    city: "Nukerke",
+    relatedPhrases: [
+      "3D print service Nukerke",
+      "rapid prototyping Nukerke",
+      "3D printing bedrijf Nukerke",
+      "3D printen nabij Nukerke",
+      "3D model laten printen Nukerke",
+    ],
+    metaDescription:
+      "3D printen in Nukerke (Maarkedal) voor maatwerk, vervangstukken en kleine series met korte doorlooptijd.",
+    servicedAreas: [
+      "Nukerke centrum",
+      "Maarkedal",
+      "Etikhove",
+      "Maarke-Kerkem",
+      "Schorisse",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Landelijke KMO's en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-schorisse",
+    city: "Schorisse",
+    relatedPhrases: [
+      "3D print service Schorisse",
+      "rapid prototyping Schorisse",
+      "3D printing bedrijf Schorisse",
+      "3D printen nabij Schorisse",
+      "3D model laten printen Schorisse",
+    ],
+    metaDescription:
+      "3D printen in Schorisse (Maarkedal) voor prototypes, onderdelen en kleine series met snelle levering.",
+    servicedAreas: [
+      "Schorisse centrum",
+      "Maarkedal",
+      "Nukerke",
+      "Etikhove",
+      "Maarke-Kerkem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Landelijke KMO's en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-kluisbergen",
+    city: "Kluisbergen",
+    relatedPhrases: [
+      "3D print service Kluisbergen",
+      "rapid prototyping Kluisbergen",
+      "3D printing bedrijf Kluisbergen",
+      "3D printen Vlaamse Ardennen",
+      "3D model laten printen Kluisbergen",
+    ],
+    metaDescription:
+      "3D printen in Kluisbergen voor prototypes en kleine series in de Vlaamse Ardennen. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Kluisbergen centrum",
+      "Berchem",
+      "Kwaremont",
+      "Ruien",
+      "Zulzeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Makers en ontwerpers in de Vlaamse Ardennen",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-berchem-kluisbergen",
+    city: "Berchem (Kluisbergen)",
+    relatedPhrases: [
+      "3D print service Berchem Kluisbergen",
+      "rapid prototyping Berchem Kluisbergen",
+      "3D printing bedrijf Berchem Kluisbergen",
+      "3D printen nabij Berchem Kluisbergen",
+      "3D model laten printen Berchem Kluisbergen",
+    ],
+    metaDescription:
+      "3D printen in Berchem (Kluisbergen) voor prototypes en functionele onderdelen met korte doorlooptijd en heldere planning.",
+    servicedAreas: [
+      "Berchem centrum",
+      "Kluisbergen",
+      "Kwaremont",
+      "Ruien",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en techniekers",
+      "Creatieve projecten en maquettes",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-kwaremont",
+    city: "Kwaremont",
+    relatedPhrases: [
+      "3D print service Kwaremont",
+      "rapid prototyping Kwaremont",
+      "3D printing bedrijf Kwaremont",
+      "3D printen nabij Kwaremont",
+      "3D model laten printen Kwaremont",
+    ],
+    metaDescription:
+      "3D printen in Kwaremont (Kluisbergen) voor prototypes, props en kleine series met snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Kwaremont centrum",
+      "Kluisbergen",
+      "Berchem",
+      "Zulzeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Creatieve bureaus en makers",
+      "Events en presentatie",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-ruien",
+    city: "Ruien",
+    relatedPhrases: [
+      "3D print service Ruien",
+      "rapid prototyping Ruien",
+      "3D printing bedrijf Ruien",
+      "3D printen nabij Ruien",
+      "3D model laten printen Ruien",
+    ],
+    metaDescription:
+      "3D printen in Ruien (Kluisbergen) voor sterke onderdelen en maatwerk met korte doorlooptijd.",
+    servicedAreas: [
+      "Ruien centrum",
+      "Kluisbergen",
+      "Berchem",
+      "Zulzeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Onderhoud en herstellingen",
+      "Kleine series en maatwerk",
+      "Verenigingen en scholen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-zulzeke",
+    city: "Zulzeke",
+    relatedPhrases: [
+      "3D print service Zulzeke",
+      "rapid prototyping Zulzeke",
+      "3D printing bedrijf Zulzeke",
+      "3D printen nabij Zulzeke",
+      "3D model laten printen Zulzeke",
+    ],
+    metaDescription:
+      "3D printen in Zulzeke (Kluisbergen) voor prototypes en functionele onderdelen met snelle levering en duidelijke planning.",
+    servicedAreas: [
+      "Zulzeke centrum",
+      "Kluisbergen",
+      "Kwaremont",
+      "Ruien",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale ondernemers en techniekers",
+      "Onderhoud en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
     slug: "3d-printen-in-antwerpen",
     city: "Antwerpen",
     relatedPhrases: [
@@ -1149,6 +3392,1623 @@ export const locations: Location[] = [
       "3D model laten printen merelbeke",
     ],
     metaDescription: "Professionele 3D prints in Merelbeke voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
+  },
+  {
+    slug: "3d-printen-in-nazareth-de-pinte",
+    city: "Nazareth-De Pinte",
+    relatedPhrases: [
+      "3D print service Nazareth-De Pinte",
+      "rapid prototyping Nazareth-De Pinte",
+      "3D printing bedrijf Nazareth-De Pinte",
+      "3D printen nabij Nazareth-De Pinte",
+      "3D model laten printen Nazareth-De Pinte",
+    ],
+    metaDescription:
+      "3D printen in Nazareth-De Pinte voor prototypes en maatwerk in de Gentse rand. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Nazareth",
+      "De Pinte",
+      "Eke",
+      "Zevergem",
+      "Merelbeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "KMO's en maakbedrijven in de Gentse rand",
+      "Makers en ontwerpers",
+      "Scholen en verenigingen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-nazareth",
+    city: "Nazareth",
+    relatedPhrases: [
+      "3D print service Nazareth",
+      "rapid prototyping Nazareth",
+      "3D printing bedrijf Nazareth",
+      "3D printen nabij Nazareth",
+      "3D model laten printen Nazareth",
+    ],
+    metaDescription:
+      "3D printen in Nazareth voor prototypes, herstellingen en kleine series met snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Nazareth centrum",
+      "Eke",
+      "De Pinte",
+      "Merelbeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-de-pinte",
+    city: "De Pinte",
+    relatedPhrases: [
+      "3D print service De Pinte",
+      "rapid prototyping De Pinte",
+      "3D printing bedrijf De Pinte",
+      "3D printen nabij De Pinte",
+      "3D model laten printen De Pinte",
+    ],
+    metaDescription:
+      "3D printen in De Pinte voor prototypes en functionele onderdelen met korte doorlooptijd.",
+    servicedAreas: [
+      "De Pinte centrum",
+      "Zevergem",
+      "Nazareth",
+      "Merelbeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-eke",
+    city: "Eke",
+    relatedPhrases: [
+      "3D print service Eke",
+      "rapid prototyping Eke",
+      "3D printing bedrijf Eke",
+      "3D printen nabij Eke",
+      "3D model laten printen Eke",
+    ],
+    metaDescription:
+      "3D printen in Eke voor prototypes, herstellingen en kleine series met duidelijke planning.",
+    servicedAreas: [
+      "Eke centrum",
+      "Nazareth",
+      "De Pinte",
+      "Merelbeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-zevergem",
+    city: "Zevergem",
+    relatedPhrases: [
+      "3D print service Zevergem",
+      "rapid prototyping Zevergem",
+      "3D printing bedrijf Zevergem",
+      "3D printen nabij Zevergem",
+      "3D model laten printen Zevergem",
+    ],
+    metaDescription:
+      "3D printen in Zevergem voor prototypes en maatwerk met korte doorlooptijd en heldere afspraken.",
+    servicedAreas: [
+      "Zevergem centrum",
+      "De Pinte",
+      "Nazareth",
+      "Merelbeke",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-merelbeke-melle",
+    city: "Merelbeke-Melle",
+    relatedPhrases: [
+      "3D print service Merelbeke-Melle",
+      "rapid prototyping Merelbeke-Melle",
+      "3D printing bedrijf Merelbeke-Melle",
+      "3D printen nabij Merelbeke-Melle",
+      "3D model laten printen Merelbeke-Melle",
+    ],
+    metaDescription:
+      "3D printen in Merelbeke-Melle voor prototypes en maatwerk in de Gentse rand. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Merelbeke",
+      "Melle",
+      "Bottelare",
+      "Lemberge",
+      "Melsen",
+      "Munte",
+      "Schelderode",
+      "Gontrode",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "KMO's en maakbedrijven in de Gentse rand",
+      "Makers en ontwerpers",
+      "Scholen en verenigingen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-melle",
+    city: "Melle",
+    relatedPhrases: [
+      "3D print service Melle",
+      "rapid prototyping Melle",
+      "3D printing bedrijf Melle",
+      "3D printen nabij Melle",
+      "3D model laten printen Melle",
+    ],
+    metaDescription:
+      "3D printen in Melle voor prototypes, herstellingen en kleine series met snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Melle centrum",
+      "Gontrode",
+      "Merelbeke",
+      "Wetteren",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale ondernemers en makers",
+      "Technische herstellingen en maatwerk",
+      "Scholen en verenigingen",
+    ],
+  },
+  {
+    slug: "3d-printen-in-gontrode",
+    city: "Gontrode",
+    relatedPhrases: [
+      "3D print service Gontrode",
+      "rapid prototyping Gontrode",
+      "3D printing bedrijf Gontrode",
+      "3D printen nabij Gontrode",
+      "3D model laten printen Gontrode",
+    ],
+    metaDescription:
+      "3D printen in Gontrode voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Gontrode centrum",
+      "Melle",
+      "Merelbeke",
+      "Wetteren",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-gillis-waas",
+    city: "Sint-Gillis-Waas",
+    relatedPhrases: [
+      "3D print service Sint-Gillis-Waas",
+      "rapid prototyping Sint-Gillis-Waas",
+      "3D printing bedrijf Sint-Gillis-Waas",
+      "3D printen nabij Sint-Gillis-Waas",
+      "3D model laten printen Sint-Gillis-Waas",
+    ],
+    metaDescription:
+      "3D printen in Sint-Gillis-Waas voor prototypes, maatwerk en kleine series. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Sint-Gillis-Waas centrum",
+      "De Klinge",
+      "Meerdonk",
+      "Sint-Pauwels",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Landelijke KMO's en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-de-klinge",
+    city: "De Klinge",
+    relatedPhrases: [
+      "3D print service De Klinge",
+      "rapid prototyping De Klinge",
+      "3D printing bedrijf De Klinge",
+      "3D printen nabij De Klinge",
+      "3D model laten printen De Klinge",
+    ],
+    metaDescription:
+      "3D printen in De Klinge (Sint-Gillis-Waas) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "De Klinge centrum",
+      "Sint-Gillis-Waas",
+      "Meerdonk",
+      "Sint-Pauwels",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-meerdonk",
+    city: "Meerdonk",
+    relatedPhrases: [
+      "3D print service Meerdonk",
+      "rapid prototyping Meerdonk",
+      "3D printing bedrijf Meerdonk",
+      "3D printen nabij Meerdonk",
+      "3D model laten printen Meerdonk",
+    ],
+    metaDescription:
+      "3D printen in Meerdonk (Sint-Gillis-Waas) voor prototypes, herstellingen en kleine series met snelle levering.",
+    servicedAreas: [
+      "Meerdonk centrum",
+      "Sint-Gillis-Waas",
+      "De Klinge",
+      "Sint-Pauwels",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Landelijke KMO's en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-pauwels",
+    city: "Sint-Pauwels",
+    relatedPhrases: [
+      "3D print service Sint-Pauwels",
+      "rapid prototyping Sint-Pauwels",
+      "3D printing bedrijf Sint-Pauwels",
+      "3D printen nabij Sint-Pauwels",
+      "3D model laten printen Sint-Pauwels",
+    ],
+    metaDescription:
+      "3D printen in Sint-Pauwels (Sint-Gillis-Waas) voor prototypes en maatwerk met korte doorlooptijd.",
+    servicedAreas: [
+      "Sint-Pauwels centrum",
+      "Sint-Gillis-Waas",
+      "De Klinge",
+      "Meerdonk",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-laureins",
+    city: "Sint-Laureins",
+    relatedPhrases: [
+      "3D print service Sint-Laureins",
+      "rapid prototyping Sint-Laureins",
+      "3D printing bedrijf Sint-Laureins",
+      "3D printen nabij Sint-Laureins",
+      "3D model laten printen Sint-Laureins",
+    ],
+    metaDescription:
+      "3D printen in Sint-Laureins voor prototypes en maatwerk in het Meetjesland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Sint-Laureins centrum",
+      "Sint-Jan-in-Eremo",
+      "Sint-Margriete",
+      "Watervliet",
+      "Waterland-Oudeman",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Landelijke KMO's en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-jan-in-eremo",
+    city: "Sint-Jan-in-Eremo",
+    relatedPhrases: [
+      "3D print service Sint-Jan-in-Eremo",
+      "rapid prototyping Sint-Jan-in-Eremo",
+      "3D printing bedrijf Sint-Jan-in-Eremo",
+      "3D printen nabij Sint-Jan-in-Eremo",
+      "3D model laten printen Sint-Jan-in-Eremo",
+    ],
+    metaDescription:
+      "3D printen in Sint-Jan-in-Eremo (Sint-Laureins) voor prototypes en functionele onderdelen met korte doorlooptijd.",
+    servicedAreas: [
+      "Sint-Jan-in-Eremo centrum",
+      "Sint-Laureins",
+      "Sint-Margriete",
+      "Watervliet",
+      "Waterland-Oudeman",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Landelijke KMO's en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-margriete",
+    city: "Sint-Margriete",
+    relatedPhrases: [
+      "3D print service Sint-Margriete",
+      "rapid prototyping Sint-Margriete",
+      "3D printing bedrijf Sint-Margriete",
+      "3D printen nabij Sint-Margriete",
+      "3D model laten printen Sint-Margriete",
+    ],
+    metaDescription:
+      "3D printen in Sint-Margriete (Sint-Laureins) voor prototypes, herstellingen en kleine series met snelle levering.",
+    servicedAreas: [
+      "Sint-Margriete centrum",
+      "Sint-Laureins",
+      "Sint-Jan-in-Eremo",
+      "Watervliet",
+      "Waterland-Oudeman",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Landelijke KMO's en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-watervliet",
+    city: "Watervliet",
+    relatedPhrases: [
+      "3D print service Watervliet",
+      "rapid prototyping Watervliet",
+      "3D printing bedrijf Watervliet",
+      "3D printen nabij Watervliet",
+      "3D model laten printen Watervliet",
+    ],
+    metaDescription:
+      "3D printen in Watervliet (Sint-Laureins) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Watervliet centrum",
+      "Sint-Laureins",
+      "Sint-Margriete",
+      "Waterland-Oudeman",
+      "Sint-Jan-in-Eremo",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Landelijke KMO's en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-waterland-oudeman",
+    city: "Waterland-Oudeman",
+    relatedPhrases: [
+      "3D print service Waterland-Oudeman",
+      "rapid prototyping Waterland-Oudeman",
+      "3D printing bedrijf Waterland-Oudeman",
+      "3D printen nabij Waterland-Oudeman",
+      "3D model laten printen Waterland-Oudeman",
+    ],
+    metaDescription:
+      "3D printen in Waterland-Oudeman (Sint-Laureins) voor prototypes en maatwerk met korte doorlooptijd.",
+    servicedAreas: [
+      "Waterland-Oudeman centrum",
+      "Sint-Laureins",
+      "Watervliet",
+      "Sint-Margriete",
+      "Sint-Jan-in-Eremo",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Landelijke KMO's en herstellingen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-niklaas",
+    city: "Sint-Niklaas",
+    relatedPhrases: [
+      "3D print service Sint-Niklaas",
+      "rapid prototyping Sint-Niklaas",
+      "3D printing bedrijf Sint-Niklaas",
+      "3D printen nabij Sint-Niklaas",
+      "3D model laten printen Sint-Niklaas",
+    ],
+    metaDescription:
+      "3D printen in Sint-Niklaas voor prototypes en maatwerk in het Waasland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Sint-Niklaas centrum",
+      "Belsele",
+      "Nieuwkerken-Waas",
+      "Sinaai",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "KMO's en herstellingen in het Waasland",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-belsele",
+    city: "Belsele",
+    relatedPhrases: [
+      "3D print service Belsele",
+      "rapid prototyping Belsele",
+      "3D printing bedrijf Belsele",
+      "3D printen nabij Belsele",
+      "3D model laten printen Belsele",
+    ],
+    metaDescription:
+      "3D printen in Belsele (Sint-Niklaas) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Belsele centrum",
+      "Sint-Niklaas",
+      "Nieuwkerken-Waas",
+      "Sinaai",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-nieuwkerken-waas",
+    city: "Nieuwkerken-Waas",
+    relatedPhrases: [
+      "3D print service Nieuwkerken-Waas",
+      "rapid prototyping Nieuwkerken-Waas",
+      "3D printing bedrijf Nieuwkerken-Waas",
+      "3D printen nabij Nieuwkerken-Waas",
+      "3D model laten printen Nieuwkerken-Waas",
+    ],
+    metaDescription:
+      "3D printen in Nieuwkerken-Waas (Sint-Niklaas) voor prototypes en functionele onderdelen met snelle levering.",
+    servicedAreas: [
+      "Nieuwkerken-Waas centrum",
+      "Sint-Niklaas",
+      "Belsele",
+      "Sinaai",
+      "Sint-Gillis-Waas",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sinaai",
+    city: "Sinaai",
+    relatedPhrases: [
+      "3D print service Sinaai",
+      "rapid prototyping Sinaai",
+      "3D printing bedrijf Sinaai",
+      "3D printen nabij Sinaai",
+      "3D model laten printen Sinaai",
+    ],
+    metaDescription:
+      "3D printen in Sinaai (Sint-Niklaas) voor prototypes, herstellingen en kleine series met korte doorlooptijd.",
+    servicedAreas: [
+      "Sinaai centrum",
+      "Sint-Niklaas",
+      "Belsele",
+      "Lokeren",
+      "Sint-Gillis-Waas",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-stekene",
+    city: "Stekene",
+    relatedPhrases: [
+      "3D print service Stekene",
+      "rapid prototyping Stekene",
+      "3D printing bedrijf Stekene",
+      "3D printen nabij Stekene",
+      "3D model laten printen Stekene",
+    ],
+    metaDescription:
+      "3D printen in Stekene voor prototypes en maatwerk in het Waasland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Stekene centrum",
+      "Kemzeke",
+      "Klein-Sinaai",
+      "Houtem (Stekene)",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "KMO's en herstellingen in het Waasland",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-kemzeke",
+    city: "Kemzeke",
+    relatedPhrases: [
+      "3D print service Kemzeke",
+      "rapid prototyping Kemzeke",
+      "3D printing bedrijf Kemzeke",
+      "3D printen nabij Kemzeke",
+      "3D model laten printen Kemzeke",
+    ],
+    metaDescription:
+      "3D printen in Kemzeke (Stekene) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Kemzeke centrum",
+      "Stekene",
+      "Klein-Sinaai",
+      "Houtem (Stekene)",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-klein-sinaai",
+    city: "Klein-Sinaai",
+    relatedPhrases: [
+      "3D print service Klein-Sinaai",
+      "rapid prototyping Klein-Sinaai",
+      "3D printing bedrijf Klein-Sinaai",
+      "3D printen nabij Klein-Sinaai",
+      "3D model laten printen Klein-Sinaai",
+    ],
+    metaDescription:
+      "3D printen in Klein-Sinaai (Stekene) voor prototypes, herstellingen en kleine series met snelle levering.",
+    servicedAreas: [
+      "Klein-Sinaai centrum",
+      "Stekene",
+      "Kemzeke",
+      "Houtem (Stekene)",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-houtem-stekene",
+    city: "Houtem (Stekene)",
+    relatedPhrases: [
+      "3D print service Houtem Stekene",
+      "rapid prototyping Houtem Stekene",
+      "3D printing bedrijf Houtem Stekene",
+      "3D printen nabij Houtem Stekene",
+      "3D model laten printen Houtem Stekene",
+    ],
+    metaDescription:
+      "3D printen in Houtem (Stekene) voor prototypes en maatwerk met korte doorlooptijd.",
+    servicedAreas: [
+      "Houtem (Stekene) centrum",
+      "Stekene",
+      "Kemzeke",
+      "Klein-Sinaai",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-temse",
+    city: "Temse",
+    relatedPhrases: [
+      "3D print service Temse",
+      "rapid prototyping Temse",
+      "3D printing bedrijf Temse",
+      "3D printen nabij Temse",
+      "3D model laten printen Temse",
+    ],
+    metaDescription:
+      "3D printen in Temse voor prototypes en maatwerk langs de Schelde. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Temse centrum",
+      "Tielrode",
+      "Elversele",
+      "Steendorp",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "KMO's en herstellingen langs de Schelde",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-tielrode",
+    city: "Tielrode",
+    relatedPhrases: [
+      "3D print service Tielrode",
+      "rapid prototyping Tielrode",
+      "3D printing bedrijf Tielrode",
+      "3D printen nabij Tielrode",
+      "3D model laten printen Tielrode",
+    ],
+    metaDescription:
+      "3D printen in Tielrode (Temse) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Tielrode centrum",
+      "Temse",
+      "Steendorp",
+      "Elversele",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-elversele",
+    city: "Elversele",
+    relatedPhrases: [
+      "3D print service Elversele",
+      "rapid prototyping Elversele",
+      "3D printing bedrijf Elversele",
+      "3D printen nabij Elversele",
+      "3D model laten printen Elversele",
+    ],
+    metaDescription:
+      "3D printen in Elversele (Temse) voor prototypes en functionele onderdelen met snelle levering.",
+    servicedAreas: [
+      "Elversele centrum",
+      "Temse",
+      "Tielrode",
+      "Steendorp",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-steendorp",
+    city: "Steendorp",
+    relatedPhrases: [
+      "3D print service Steendorp",
+      "rapid prototyping Steendorp",
+      "3D printing bedrijf Steendorp",
+      "3D printen nabij Steendorp",
+      "3D model laten printen Steendorp",
+    ],
+    metaDescription:
+      "3D printen in Steendorp (Temse) voor prototypes, herstellingen en kleine series met korte doorlooptijd.",
+    servicedAreas: [
+      "Steendorp centrum",
+      "Temse",
+      "Tielrode",
+      "Elversele",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-waasmunster",
+    city: "Waasmunster",
+    relatedPhrases: [
+      "3D print service Waasmunster",
+      "rapid prototyping Waasmunster",
+      "3D printing bedrijf Waasmunster",
+      "3D printen nabij Waasmunster",
+      "3D model laten printen Waasmunster",
+    ],
+    metaDescription:
+      "3D printen in Waasmunster voor prototypes en maatwerk langs de Durme. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Waasmunster centrum",
+      "Sombeke",
+      "Hamme",
+      "Lokeren",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "KMO's en herstellingen langs de Durme",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sombeke",
+    city: "Sombeke",
+    relatedPhrases: [
+      "3D print service Sombeke",
+      "rapid prototyping Sombeke",
+      "3D printing bedrijf Sombeke",
+      "3D printen nabij Sombeke",
+      "3D model laten printen Sombeke",
+    ],
+    metaDescription:
+      "3D printen in Sombeke (Waasmunster) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Sombeke centrum",
+      "Waasmunster",
+      "Hamme",
+      "Lokeren",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-wichelen",
+    city: "Wichelen",
+    relatedPhrases: [
+      "3D print service Wichelen",
+      "rapid prototyping Wichelen",
+      "3D printing bedrijf Wichelen",
+      "3D printen nabij Wichelen",
+      "3D model laten printen Wichelen",
+    ],
+    metaDescription:
+      "3D printen in Wichelen voor prototypes en maatwerk langs de Dender. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Wichelen centrum",
+      "Schellebelle",
+      "Serskamp",
+      "Wetteren",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "KMO's en herstellingen in de Denderstreek",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-schellebelle",
+    city: "Schellebelle",
+    relatedPhrases: [
+      "3D print service Schellebelle",
+      "rapid prototyping Schellebelle",
+      "3D printing bedrijf Schellebelle",
+      "3D printen nabij Schellebelle",
+      "3D model laten printen Schellebelle",
+    ],
+    metaDescription:
+      "3D printen in Schellebelle (Wichelen) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Schellebelle centrum",
+      "Wichelen",
+      "Serskamp",
+      "Wetteren",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-serskamp",
+    city: "Serskamp",
+    relatedPhrases: [
+      "3D print service Serskamp",
+      "rapid prototyping Serskamp",
+      "3D printing bedrijf Serskamp",
+      "3D printen nabij Serskamp",
+      "3D model laten printen Serskamp",
+    ],
+    metaDescription:
+      "3D printen in Serskamp (Wichelen) voor prototypes, herstellingen en kleine series met snelle levering.",
+    servicedAreas: [
+      "Serskamp centrum",
+      "Wichelen",
+      "Schellebelle",
+      "Wetteren",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-wortegem-petegem",
+    city: "Wortegem-Petegem",
+    relatedPhrases: [
+      "3D print service Wortegem-Petegem",
+      "rapid prototyping Wortegem-Petegem",
+      "3D printing bedrijf Wortegem-Petegem",
+      "3D printen nabij Wortegem-Petegem",
+      "3D model laten printen Wortegem-Petegem",
+    ],
+    metaDescription:
+      "3D printen in Wortegem-Petegem voor prototypes en maatwerk langs de Schelde. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Wortegem-Petegem centrum",
+      "Wortegem",
+      "Petegem-aan-de-Schelde",
+      "Moregem",
+      "Elsegem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "KMO's en herstellingen langs de Schelde",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-wortegem",
+    city: "Wortegem",
+    relatedPhrases: [
+      "3D print service Wortegem",
+      "rapid prototyping Wortegem",
+      "3D printing bedrijf Wortegem",
+      "3D printen nabij Wortegem",
+      "3D model laten printen Wortegem",
+    ],
+    metaDescription:
+      "3D printen in Wortegem (Wortegem-Petegem) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Wortegem centrum",
+      "Wortegem-Petegem",
+      "Petegem-aan-de-Schelde",
+      "Moregem",
+      "Elsegem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-petegem-aan-de-schelde",
+    city: "Petegem-aan-de-Schelde",
+    relatedPhrases: [
+      "3D print service Petegem-aan-de-Schelde",
+      "rapid prototyping Petegem-aan-de-Schelde",
+      "3D printing bedrijf Petegem-aan-de-Schelde",
+      "3D printen nabij Petegem-aan-de-Schelde",
+      "3D model laten printen Petegem-aan-de-Schelde",
+    ],
+    metaDescription:
+      "3D printen in Petegem-aan-de-Schelde (Wortegem-Petegem) voor prototypes en maatwerk met snelle levering.",
+    servicedAreas: [
+      "Petegem-aan-de-Schelde centrum",
+      "Wortegem-Petegem",
+      "Wortegem",
+      "Moregem",
+      "Elsegem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-moregem",
+    city: "Moregem",
+    relatedPhrases: [
+      "3D print service Moregem",
+      "rapid prototyping Moregem",
+      "3D printing bedrijf Moregem",
+      "3D printen nabij Moregem",
+      "3D model laten printen Moregem",
+    ],
+    metaDescription:
+      "3D printen in Moregem (Wortegem-Petegem) voor prototypes, herstellingen en kleine series met snelle levering.",
+    servicedAreas: [
+      "Moregem centrum",
+      "Wortegem-Petegem",
+      "Wortegem",
+      "Petegem-aan-de-Schelde",
+      "Elsegem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-elsegem",
+    city: "Elsegem",
+    relatedPhrases: [
+      "3D print service Elsegem",
+      "rapid prototyping Elsegem",
+      "3D printing bedrijf Elsegem",
+      "3D printen nabij Elsegem",
+      "3D model laten printen Elsegem",
+    ],
+    metaDescription:
+      "3D printen in Elsegem (Wortegem-Petegem) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Elsegem centrum",
+      "Wortegem-Petegem",
+      "Wortegem",
+      "Petegem-aan-de-Schelde",
+      "Moregem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-zele",
+    city: "Zele",
+    relatedPhrases: [
+      "3D print service Zele",
+      "rapid prototyping Zele",
+      "3D printing bedrijf Zele",
+      "3D printen nabij Zele",
+      "3D model laten printen Zele",
+    ],
+    metaDescription:
+      "3D printen in Zele voor prototypes en maatwerk in de Denderstreek. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Zele centrum",
+      "Heikant (Zele)",
+      "Hamme",
+      "Dendermonde",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "KMO's en herstellingen in de Denderstreek",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-heikant-zele",
+    city: "Heikant (Zele)",
+    relatedPhrases: [
+      "3D print service Heikant Zele",
+      "rapid prototyping Heikant Zele",
+      "3D printing bedrijf Heikant Zele",
+      "3D printen nabij Heikant Zele",
+      "3D model laten printen Heikant Zele",
+    ],
+    metaDescription:
+      "3D printen in Heikant (Zele) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Heikant (Zele) centrum",
+      "Zele",
+      "Hamme",
+      "Dendermonde",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-zelzate",
+    city: "Zelzate",
+    relatedPhrases: [
+      "3D print service Zelzate",
+      "rapid prototyping Zelzate",
+      "3D printing bedrijf Zelzate",
+      "3D printen nabij Zelzate",
+      "3D model laten printen Zelzate",
+    ],
+    metaDescription:
+      "3D printen in Zelzate voor prototypes en maatwerk aan het kanaal Gent-Terneuzen. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Zelzate centrum",
+      "Evergem",
+      "Wachtebeke",
+      "Assenede",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Industrie en logistiek langs kanaal Gent-Terneuzen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-zulte",
+    city: "Zulte",
+    relatedPhrases: [
+      "3D print service Zulte",
+      "rapid prototyping Zulte",
+      "3D printing bedrijf Zulte",
+      "3D printen nabij Zulte",
+      "3D model laten printen Zulte",
+    ],
+    metaDescription:
+      "3D printen in Zulte voor prototypes en maatwerk langs de Leie. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Zulte centrum",
+      "Machelen (Zulte)",
+      "Olsene",
+      "Astene",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "KMO's en herstellingen langs de Leie",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-machelen-zulte",
+    city: "Machelen (Zulte)",
+    relatedPhrases: [
+      "3D print service Machelen Zulte",
+      "rapid prototyping Machelen Zulte",
+      "3D printing bedrijf Machelen Zulte",
+      "3D printen nabij Machelen Zulte",
+      "3D model laten printen Machelen Zulte",
+    ],
+    metaDescription:
+      "3D printen in Machelen (Zulte) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Machelen (Zulte) centrum",
+      "Zulte",
+      "Olsene",
+      "Astene",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-olsene",
+    city: "Olsene",
+    relatedPhrases: [
+      "3D print service Olsene",
+      "rapid prototyping Olsene",
+      "3D printing bedrijf Olsene",
+      "3D printen nabij Olsene",
+      "3D model laten printen Olsene",
+    ],
+    metaDescription:
+      "3D printen in Olsene (Zulte) voor prototypes, herstellingen en kleine series met snelle levering.",
+    servicedAreas: [
+      "Olsene centrum",
+      "Zulte",
+      "Machelen (Zulte)",
+      "Astene",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-astene",
+    city: "Astene",
+    relatedPhrases: [
+      "3D print service Astene",
+      "rapid prototyping Astene",
+      "3D printing bedrijf Astene",
+      "3D printen nabij Astene",
+      "3D model laten printen Astene",
+    ],
+    metaDescription:
+      "3D printen in Astene (Zulte) voor prototypes en maatwerk met korte doorlooptijd.",
+    servicedAreas: [
+      "Astene centrum",
+      "Zulte",
+      "Machelen (Zulte)",
+      "Olsene",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-zwalm",
+    city: "Zwalm",
+    relatedPhrases: [
+      "3D print service Zwalm",
+      "rapid prototyping Zwalm",
+      "3D printing bedrijf Zwalm",
+      "3D printen nabij Zwalm",
+      "3D model laten printen Zwalm",
+    ],
+    metaDescription:
+      "3D printen in Zwalm voor prototypes en maatwerk in de Vlaamse Ardennen. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+    servicedAreas: [
+      "Zwalm centrum",
+      "Nederzwalm-Hermelgem",
+      "Munkzwalm",
+      "Roborst",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "KMO's en herstellingen in de Vlaamse Ardennen",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-nederzwalm-hermelgem",
+    city: "Nederzwalm-Hermelgem",
+    relatedPhrases: [
+      "3D print service Nederzwalm-Hermelgem",
+      "rapid prototyping Nederzwalm-Hermelgem",
+      "3D printing bedrijf Nederzwalm-Hermelgem",
+      "3D printen nabij Nederzwalm-Hermelgem",
+      "3D model laten printen Nederzwalm-Hermelgem",
+    ],
+    metaDescription:
+      "3D printen in Nederzwalm-Hermelgem (Zwalm) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Nederzwalm-Hermelgem centrum",
+      "Zwalm",
+      "Munkzwalm",
+      "Roborst",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-munkzwalm",
+    city: "Munkzwalm",
+    relatedPhrases: [
+      "3D print service Munkzwalm",
+      "rapid prototyping Munkzwalm",
+      "3D printing bedrijf Munkzwalm",
+      "3D printen nabij Munkzwalm",
+      "3D model laten printen Munkzwalm",
+    ],
+    metaDescription:
+      "3D printen in Munkzwalm (Zwalm) voor prototypes en maatwerk met snelle levering.",
+    servicedAreas: [
+      "Munkzwalm centrum",
+      "Zwalm",
+      "Nederzwalm-Hermelgem",
+      "Roborst",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-roborst",
+    city: "Roborst",
+    relatedPhrases: [
+      "3D print service Roborst",
+      "rapid prototyping Roborst",
+      "3D printing bedrijf Roborst",
+      "3D printen nabij Roborst",
+      "3D model laten printen Roborst",
+    ],
+    metaDescription:
+      "3D printen in Roborst (Zwalm) voor prototypes, herstellingen en kleine series met korte doorlooptijd.",
+    servicedAreas: [
+      "Roborst centrum",
+      "Zwalm",
+      "Munkzwalm",
+      "Nederzwalm-Hermelgem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-blasius-boekel",
+    city: "Sint-Blasius-Boekel",
+    relatedPhrases: [
+      "3D print service Sint-Blasius-Boekel",
+      "rapid prototyping Sint-Blasius-Boekel",
+      "3D printing bedrijf Sint-Blasius-Boekel",
+      "3D printen nabij Sint-Blasius-Boekel",
+      "3D model laten printen Sint-Blasius-Boekel",
+    ],
+    metaDescription:
+      "3D printen in Sint-Blasius-Boekel (Zwalm) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Sint-Blasius-Boekel centrum",
+      "Zwalm",
+      "Munkzwalm",
+      "Roborst",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-denijs-boekel",
+    city: "Sint-Denijs-Boekel",
+    relatedPhrases: [
+      "3D print service Sint-Denijs-Boekel",
+      "rapid prototyping Sint-Denijs-Boekel",
+      "3D printing bedrijf Sint-Denijs-Boekel",
+      "3D printen nabij Sint-Denijs-Boekel",
+      "3D model laten printen Sint-Denijs-Boekel",
+    ],
+    metaDescription:
+      "3D printen in Sint-Denijs-Boekel (Zwalm) voor prototypes en maatwerk met snelle levering.",
+    servicedAreas: [
+      "Sint-Denijs-Boekel centrum",
+      "Zwalm",
+      "Munkzwalm",
+      "Roborst",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-rozebeke-zwalm",
+    city: "Rozebeke (Zwalm)",
+    relatedPhrases: [
+      "3D print service Rozebeke Zwalm",
+      "rapid prototyping Rozebeke Zwalm",
+      "3D printing bedrijf Rozebeke Zwalm",
+      "3D printen nabij Rozebeke Zwalm",
+      "3D model laten printen Rozebeke Zwalm",
+    ],
+    metaDescription:
+      "3D printen in Rozebeke (Zwalm) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Rozebeke (Zwalm) centrum",
+      "Zwalm",
+      "Munkzwalm",
+      "Nederzwalm-Hermelgem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-maria-latem-zwalm",
+    city: "Sint-Maria-Latem (Zwalm)",
+    relatedPhrases: [
+      "3D print service Sint-Maria-Latem Zwalm",
+      "rapid prototyping Sint-Maria-Latem Zwalm",
+      "3D printing bedrijf Sint-Maria-Latem Zwalm",
+      "3D printen nabij Sint-Maria-Latem Zwalm",
+      "3D model laten printen Sint-Maria-Latem Zwalm",
+    ],
+    metaDescription:
+      "3D printen in Sint-Maria-Latem (Zwalm) voor prototypes en maatwerk met snelle levering.",
+    servicedAreas: [
+      "Sint-Maria-Latem (Zwalm) centrum",
+      "Zwalm",
+      "Munkzwalm",
+      "Nederzwalm-Hermelgem",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-beerlegem",
+    city: "Beerlegem",
+    relatedPhrases: [
+      "3D print service Beerlegem",
+      "rapid prototyping Beerlegem",
+      "3D printing bedrijf Beerlegem",
+      "3D printen nabij Beerlegem",
+      "3D model laten printen Beerlegem",
+    ],
+    metaDescription:
+      "3D printen in Beerlegem (Zwalm) voor prototypes en maatwerk met korte doorlooptijd.",
+    servicedAreas: [
+      "Beerlegem centrum",
+      "Zwalm",
+      "Nederzwalm-Hermelgem",
+      "Munkzwalm",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-dikkele",
+    city: "Dikkele",
+    relatedPhrases: [
+      "3D print service Dikkele",
+      "rapid prototyping Dikkele",
+      "3D printing bedrijf Dikkele",
+      "3D printen nabij Dikkele",
+      "3D model laten printen Dikkele",
+    ],
+    metaDescription:
+      "3D printen in Dikkele (Zwalm) voor prototypes, herstellingen en kleine series met snelle levering.",
+    servicedAreas: [
+      "Dikkele centrum",
+      "Zwalm",
+      "Nederzwalm-Hermelgem",
+      "Munkzwalm",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-hundelgem",
+    city: "Hundelgem",
+    relatedPhrases: [
+      "3D print service Hundelgem",
+      "rapid prototyping Hundelgem",
+      "3D printing bedrijf Hundelgem",
+      "3D printen nabij Hundelgem",
+      "3D model laten printen Hundelgem",
+    ],
+    metaDescription:
+      "3D printen in Hundelgem (Zwalm) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Hundelgem centrum",
+      "Zwalm",
+      "Nederzwalm-Hermelgem",
+      "Munkzwalm",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-meilegem",
+    city: "Meilegem",
+    relatedPhrases: [
+      "3D print service Meilegem",
+      "rapid prototyping Meilegem",
+      "3D printing bedrijf Meilegem",
+      "3D printen nabij Meilegem",
+      "3D model laten printen Meilegem",
+    ],
+    metaDescription:
+      "3D printen in Meilegem (Zwalm) voor prototypes en maatwerk met snelle levering.",
+    servicedAreas: [
+      "Meilegem centrum",
+      "Zwalm",
+      "Nederzwalm-Hermelgem",
+      "Munkzwalm",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-paulatem",
+    city: "Paulatem",
+    relatedPhrases: [
+      "3D print service Paulatem",
+      "rapid prototyping Paulatem",
+      "3D printing bedrijf Paulatem",
+      "3D printen nabij Paulatem",
+      "3D model laten printen Paulatem",
+    ],
+    metaDescription:
+      "3D printen in Paulatem (Zwalm) voor prototypes en onderdelen op maat met korte doorlooptijd.",
+    servicedAreas: [
+      "Paulatem centrum",
+      "Zwalm",
+      "Nederzwalm-Hermelgem",
+      "Munkzwalm",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-bottelare",
+    city: "Bottelare",
+    relatedPhrases: [
+      "3D print service Bottelare",
+      "rapid prototyping Bottelare",
+      "3D printing bedrijf Bottelare",
+      "3D printen nabij Bottelare",
+      "3D model laten printen Bottelare",
+    ],
+    metaDescription:
+      "3D printen in Bottelare voor prototypes en functionele onderdelen met snelle levering vanuit Herzele.",
+    servicedAreas: [
+      "Bottelare centrum",
+      "Merelbeke",
+      "Munte",
+      "Lemberge",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-lemberge",
+    city: "Lemberge",
+    relatedPhrases: [
+      "3D print service Lemberge",
+      "rapid prototyping Lemberge",
+      "3D printing bedrijf Lemberge",
+      "3D printen nabij Lemberge",
+      "3D model laten printen Lemberge",
+    ],
+    metaDescription:
+      "3D printen in Lemberge voor prototypes, herstellingen en kleine series met duidelijke planning.",
+    servicedAreas: [
+      "Lemberge centrum",
+      "Merelbeke",
+      "Bottelare",
+      "Munte",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-melsen",
+    city: "Melsen",
+    relatedPhrases: [
+      "3D print service Melsen",
+      "rapid prototyping Melsen",
+      "3D printing bedrijf Melsen",
+      "3D printen nabij Melsen",
+      "3D model laten printen Melsen",
+    ],
+    metaDescription:
+      "3D printen in Melsen voor onderdelen op maat en prototypes met snelle levering.",
+    servicedAreas: [
+      "Melsen centrum",
+      "Merelbeke",
+      "Munte",
+      "Schelderode",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-munte",
+    city: "Munte",
+    relatedPhrases: [
+      "3D print service Munte",
+      "rapid prototyping Munte",
+      "3D printing bedrijf Munte",
+      "3D printen nabij Munte",
+      "3D model laten printen Munte",
+    ],
+    metaDescription:
+      "3D printen in Munte voor prototypes en functionele onderdelen met korte doorlooptijd.",
+    servicedAreas: [
+      "Munte centrum",
+      "Merelbeke",
+      "Bottelare",
+      "Lemberge",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
+  },
+  {
+    slug: "3d-printen-in-schelderode",
+    city: "Schelderode",
+    relatedPhrases: [
+      "3D print service Schelderode",
+      "rapid prototyping Schelderode",
+      "3D printing bedrijf Schelderode",
+      "3D printen nabij Schelderode",
+      "3D model laten printen Schelderode",
+    ],
+    metaDescription:
+      "3D printen in Schelderode voor prototypes en kleine series met snelle afstemming.",
+    servicedAreas: [
+      "Schelderode centrum",
+      "Merelbeke",
+      "Melsen",
+      "Munte",
+      "Afhalen Herzele",
+    ],
+    sectors: [
+      "Lokale makers en ontwerpers",
+      "Kleine series en maatwerk",
+      "Verenigingen en onderwijs",
+    ],
   },
   {
     slug: "3d-printen-in-sint-lievens-houtem",

@@ -3,6 +3,7 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-scholen"
 const publishedDate = "2025-12-09T08:00:00+01:00"
@@ -541,6 +542,8 @@ export default function UseCaseDinsdagScholenPage() {
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogReadMore />
+
     </main>
   )
 }

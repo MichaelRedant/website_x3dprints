@@ -1,32 +1,56 @@
-# 3D printen in Adegem: nauwkeurig en snel geleverd
+# 3D printen in Adegem: nauwkeurig en snel geleverd
+
+Van Canada War Cemetery tot N49-corridor: X3DPrints verzorgt 3D prints voor Adegem met korte doorlooptijd en duidelijk advies. Ideaal voor prototypes, replacement parts en kleine series.
+
+---
+
+## Sterk voor Adegem
+
+- **Snelle offertes**: meestal binnen 24 uur. Check indicatieve prijzen op [pricing](/pricing).  
+- **Materiaalkeuze**: PLA voor showpieces, PETG voor weerbestendige montage rond kanaalzones, TPU voor flexibele clips.  
+- **Levering**: bezorging richting Adegem centrum, Kasteeldreef en bedrijventerrein aan de N49; afhalen in Herzele kan ook.  
+- **Interne links**: gebruik de [viewer](/viewer) om orientatie te checken en [materials](/materials) voor kleuren.
+
+## Lokale use-cases
+
+- **Herdenkings- en museale props** nabij Canada War Cemetery.  
+- **Engineering & kmo’s** langs N49: jigs, behuizingen en functionele onderdelen in PETG.  
+- **Retail en scholen** in Adegem centrum: maquettes, displays en didactische modellen in PLA Matte/Silk.
+
+## Workflow in 3 stappen
+
+1) **Upload STL/STEP** via [contact](/contact) met afmetingen en aantallen.  
+2) **Advies** op materiaal, layerhoogte en orientatie.  
+3) **Print & levering** binnen 2-5 werkdagen, spoed in overleg.
+
+## Materiaalshortlist
+
+- **PLA Matte/Silk**: voor detail en nette visuals rond tentoonstellingen.  
+- **PETG**: voor buiten of trillende omgevingen nabij kanaalzones.  
+- **TPU**: voor schokdempers, kabelclips of antislip pads.
+
+Meer weten? Bekijk ook onze sectorpagina’s op [segments](/segments) of vraag direct een offerte via [contact](/contact).
 
-Van Canada War Cemetery tot N49-corridor: X3DPrints verzorgt 3D prints voor Adegem met korte doorlooptijd en duidelijk advies. Ideaal voor prototypes, replacement parts en kleine series.
 
----
+## Lokale focus in Adegem
 
-## Sterk voor Adegem
+Werk je in Adegem? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
-- **Snelle offertes**: meestal binnen 24 uur. Check indicatieve prijzen op [pricing](/pricing).  
-- **Materiaalkeuze**: PLA voor showpieces, PETG voor weerbestendige montage rond kanaalzones, TPU voor flexibele clips.  
-- **Levering**: bezorging richting Adegem centrum, Kasteeldreef en bedrijventerrein aan de N49; afhalen in Herzele kan ook.  
-- **Interne links**: gebruik de [viewer](/viewer) om orientatie te checken en [materials](/materials) voor kleuren.
+- Jigs, montagehulpen en boormallen voor snelle assemblage.
+- Behuizingen en covers voor elektronica, sensoren of prototypes.
+- Displays en maquettes voor presentaties, events of showroomwerk.
 
-## Lokale use-cases
 
-- **Herdenkings- en museale props** nabij Canada War Cemetery.  
-- **Engineering & kmo’s** langs N49: jigs, behuizingen en functionele onderdelen in PETG.  
-- **Retail en scholen** in Adegem centrum: maquettes, displays en didactische modellen in PLA Matte/Silk.
+## Veelgestelde vragen over 3D printen in Adegem
 
-## Workflow in 3 stappen
+**Kunnen jullie ook kleine series printen?**
 
-1) **Upload STL/STEP** via [contact](/contact) met afmetingen en aantallen.  
-2) **Advies** op materiaal, layerhoogte en orientatie.  
-3) **Print & levering** binnen 2-5 werkdagen, spoed in overleg.
+Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
-## Materiaalshortlist
+**Welke materialen raden jullie aan?**
 
-- **PLA Matte/Silk**: voor detail en nette visuals rond tentoonstellingen.  
-- **PETG**: voor buiten of trillende omgevingen nabij kanaalzones.  
-- **TPU**: voor schokdempers, kabelclips of antislip pads.
+PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU voor flexibele toepassingen.
 
-Meer weten? Bekijk ook onze sectorpagina’s op [segments](/segments) of vraag direct een offerte via [contact](/contact).
+**Leveren jullie ook in Adegem?**
+
+Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.

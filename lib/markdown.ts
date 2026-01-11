@@ -8,6 +8,40 @@ import rehypeSlug from "rehype-slug"
 import rehypeSanitize, { defaultSchema, type Schema } from "rehype-sanitize"
 import rehypeStringify from "rehype-stringify"
 
+function normalizeLineEndings(input: string) {
+  return input.replace(/\r\n/g, "\n").replace(/\r/g, "\n")
+}
+
+function normalizeTables(markdown: string) {
+  const lines = normalizeLineEndings(markdown).split("\n")
+  const out: string[] = []
+  let inFence = false
+
+  const isFence = (line: string) => /^\s*```/.test(line) || /^\s*~~~/.test(line)
+  const isTableRow = (line: string) => /^\s*\|/.test(line)
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]
+    if (isFence(line)) {
+      inFence = !inFence
+      out.push(line)
+      continue
+    }
+
+    if (!inFence && line.trim() === "" && i > 0 && isTableRow(lines[i - 1])) {
+      let j = i + 1
+      while (j < lines.length && lines[j].trim() === "") j += 1
+      if (j < lines.length && isTableRow(lines[j])) {
+        continue
+      }
+    }
+
+    out.push(line)
+  }
+
+  return out.join("\n")
+}
+
 /**
  * Breidt het rehype-sanitize Schema type-safely uit met 'protocols'.
  * (Runtime ondersteunt rehype-sanitize dit veld, maar de TS types niet.)
@@ -83,6 +117,7 @@ schema.protocols = {
 
 /** Markdown -> veilige HTML string (GFM, raw HTML allowed + sanitized). */
 export async function renderMarkdown(markdown: string): Promise<string> {
+  const normalized = normalizeTables(markdown)
   const file = await unified()
     .use(remarkParse)
     .use(remarkGfm)
@@ -91,7 +126,7 @@ export async function renderMarkdown(markdown: string): Promise<string> {
     .use(rehypeSlug) // ids op headings (voor anchors/TOC)
     .use(rehypeSanitize, schema)
     .use(rehypeStringify)
-    .process(markdown)
+    .process(normalized)
 
   return String(file.value)
 }
@@ -101,8 +136,8 @@ export async function renderMarkdown(markdown: string): Promise<string> {
  * Handig om JSX/HTML tussen stukken te injecteren.
  */
 export function splitMarkdown(markdown: string): string[] {
-  return markdown
-    .split(/\r?\n\s*---\s*\r?\n/g)
+  return normalizeLineEndings(markdown)
+    .split(/\n\s*---\s*\n/g)
     .map((s) => s.trim())
     .filter(Boolean)
 }

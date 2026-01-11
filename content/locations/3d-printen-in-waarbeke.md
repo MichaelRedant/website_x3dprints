@@ -1,44 +1,69 @@
-# 3D printen in Waarbeke: trage wegen en Waarbekeveld
+# 3D printen in Waarbeke: trage wegen en Waarbekeveld
+
+Voor **3D printen in Waarbeke** levert X3DPrints prototypes en kleine series richting Waarbekeveld, trage wegen en ateliers in de dorpskern. Je krijgt strakke prints met heldere prijzen.
+
+---
+
+## Waarom X3DPrints voor Waarbeke?
+
+- Snelle offertes: meestal binnen een werkdag, levering in enkele werkdagen.
+- Nauwkeurige pasvorm: onderdelen zijn klaar voor montage.
+- Materiaalkeuze: PLA voor zichtwerk, PETG voor robuuste onderdelen, TPU voor flexibele buffers.
+- Duidelijke communicatie: directe lijn en optionele fotoupdates.
+
+**Lokale touch:** afgestemd op wandel- en fietsprojecten rond Waarbekeveld, agrarische toepassingen in de velden en retail in Geraardsbergen en Ninove-corridor.
+
+---
+
 
-Voor **3D printen in Waarbeke** levert X3DPrints prototypes en kleine series richting Waarbekeveld, trage wegen en ateliers in de dorpskern. Je krijgt strakke prints met heldere prijzen.
 
----
+## Lokale focus in Waarbeke
 
-## Waarom X3DPrints voor Waarbeke?
+Zoek je 3D printen in Waarbeke? We denken mee over passing, sterkte en look zodat je onderdeel meteen werkt.
 
-- Snelle offertes: meestal binnen een werkdag, levering in enkele werkdagen.
-- Nauwkeurige pasvorm: onderdelen zijn klaar voor montage.
-- Materiaalkeuze: PLA voor zichtwerk, PETG voor robuuste onderdelen, TPU voor flexibele buffers.
-- Duidelijke communicatie: directe lijn en optionele fotoupdates.
+- Functionele beugels, houders en kabelgeleiders voor installaties.
+- Jigs, montagehulpen en boormallen voor snelle assemblage.
+- Behuizingen en covers voor elektronica, sensoren of prototypes.
 
-**Lokale touch:** afgestemd op wandel- en fietsprojecten rond Waarbekeveld, agrarische toepassingen in de velden en retail in Geraardsbergen en Ninove-corridor.
+## Materialen
+
+| Materiaal     | Pluspunt                       | Ideaal voor |
+| :------------ | :---------------------------- | :---------- |
+| **PLA Matte** | Strakke look, veel kleuren    | Maquettes en displays voor plattelands- of toerismeprojecten |
+| **PETG**      | Stevig en temperatuurvast     | Functionele onderdelen voor buitengebruik en machines |
+| **TPU**       | Flexibel en schokdempend      | Beschermhoezen en dempers voor veldopstellingen |
+
+---
+
+## Toepassingen in Waarbeke
+
+- Signage-onderdelen of houders voor routes rond Waarbekeveld.
+- Klemmen en hulpstukken voor landbouw- of werkplaatsgebruik.
+- Displays en props voor lokale verenigingen en events.
+
+---
+
+## Praktisch
+
+Stuur STL of STEP via [contact](/contact) met aantallen en deadline. Onderdelen tot 35 x 32 x 35 cm printen we in een stuk; grotere delen delen we slim. Verzending of afhalen mogelijk; tarieven op [pricing](/pricing).
+
+---
+
+## Offerte aanvragen
+
+Upload je bestand en ontvang snel een voorstel voor **3D printen in Waarbeke**.
 
----
 
-## Materialen
+## Veelgestelde vragen over 3D printen in Waarbeke
 
-| Materiaal     | Pluspunt                       | Ideaal voor |
-| :------------ | :---------------------------- | :---------- |
-| **PLA Matte** | Strakke look, veel kleuren    | Maquettes en displays voor plattelands- of toerismeprojecten |
-| **PETG**      | Stevig en temperatuurvast     | Functionele onderdelen voor buitengebruik en machines |
-| **TPU**       | Flexibel en schokdempend      | Beschermhoezen en dempers voor veldopstellingen |
+**Welke materialen raden jullie aan?**
 
----
+PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU voor flexibele toepassingen.
 
-## Toepassingen in Waarbeke
+**Leveren jullie ook in Waarbeke?**
 
-- Signage-onderdelen of houders voor routes rond Waarbekeveld.
-- Klemmen en hulpstukken voor landbouw- of werkplaatsgebruik.
-- Displays en props voor lokale verenigingen en events.
+Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
 
----
+**Wat kost 3D printen in Waarbeke?**
 
-## Praktisch
-
-Stuur STL of STEP via [contact](/contact) met aantallen en deadline. Onderdelen tot 35 x 32 x 35 cm printen we in een stuk; grotere delen delen we slim. Verzending of afhalen mogelijk; tarieven op [pricing](/pricing).
-
----
-
-## Offerte aanvragen
-
-Upload je bestand en ontvang snel een voorstel voor **3D printen in Waarbeke**.
+De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je model of schets en je krijgt snel een duidelijke offerte.

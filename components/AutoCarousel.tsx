@@ -130,8 +130,7 @@ export default function AutoCarousel({
                   fill
                   sizes="(max-width: 768px) 90vw, (max-width: 1200px) 60vw, 720px"
                   className="object-contain transition duration-300 group-hover:scale-[1.01]"
-                  priority={idx === 0}
-                  loading={idx === 0 ? "eager" : "lazy"}
+                  loading="lazy"
                 />
               </div>
               <div className="mt-2 px-3 pb-3 text-center">
@@ -188,7 +187,7 @@ export default function AutoCarousel({
                     fill
                     sizes="100vw"
                     className="object-contain"
-                    priority
+                    loading="lazy"
                   />
                 </div>
 

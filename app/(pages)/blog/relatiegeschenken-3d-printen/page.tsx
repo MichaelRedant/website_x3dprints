@@ -5,6 +5,7 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
+import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/blog/relatiegeschenken-3d-printen"
 const publishedDate = "2025-08-20T08:00:00+01:00"
@@ -288,6 +289,8 @@ export default function BlogRelatiegeschenken() {
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogReadMore />
+
     </main>
   )
 }

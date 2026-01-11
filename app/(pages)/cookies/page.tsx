@@ -1,19 +1,35 @@
 import type { Metadata } from "next"
 
+const canonical = "https://www.x3dprints.be/cookies"
+
 export const metadata: Metadata = {
   title: "Cookiebeleid – X3DPrints",
   description:
     "Lees hoe X3DPrints cookies inzet voor essentiële functies en anonieme analytics, met tips om je voorkeuren te beheren.",
-  alternates: { canonical: "https://www.x3dprints.be/cookies" },
+  alternates: { canonical },
   openGraph: {
     title: "Cookiebeleid – X3DPrints",
     description:
       "Lees hoe X3DPrints cookies inzet voor essentiële functies en anonieme analytics, met tips om je voorkeuren te beheren.",
-    url: "https://www.x3dprints.be/cookies",
+    url: canonical,
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
   twitter: { card: "summary_large_image" },
+}
+
+const pageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Cookiebeleid",
+  description: metadata.description,
+  url: canonical,
+  inLanguage: "nl-BE",
+  isPartOf: {
+    "@type": "WebSite",
+    name: "X3DPrints",
+    url: "https://www.x3dprints.be",
+  },
 }
 
 export default function CookiePolicyPage() {
@@ -97,6 +113,8 @@ export default function CookiePolicyPage() {
           </p>
         </section>
       </div>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
     </main>
   )
 }

@@ -4,6 +4,7 @@ import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-herfst-halloween"
 
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     description:
       "Maak pumpkins, spooky props en lantaarns in Silk/Marble/Translucent PLA. Materialen, slicer-tips, leverzones en ontwerpservice.",
     url: canonical,
+    type: "article",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte Halloween decor" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -66,6 +68,34 @@ const faqItems = [
     a: "Ja, licht schuren en grijze primer zijn mogelijk. Vermeld het in je aanvraag.",
   },
 ]
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "3D printen voor herfst & Halloween",
+  description:
+    "Pumpkins, haunted props en sfeerlantaarns in Silk, Marble en Translucent PLA. Tips voor supports, lichtdiffusie en levering.",
+  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
+  publisher: {
+    "@type": "Organization",
+    name: "X3DPrints",
+    url: "https://www.x3dprints.be",
+    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
+  },
+  mainEntityOfPage: canonical,
+  url: canonical,
+  image: ["https://www.x3dprints.be/images/og-home.jpg"],
+}
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+}
 
 const inspirationImages = [
   { src: "/images/portfolio/Halloween1.webp", alt: "3D geprinte Halloween decor set 1" },
@@ -254,6 +284,11 @@ export default function BlogAutumnHalloween() {
           </Reveal>
         </div>
       </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogReadMore />
+
     </main>
   )
 }

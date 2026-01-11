@@ -68,7 +68,7 @@ export default function Footer() {
           {/* brand */}
           <div className="md:col-span-2">
             <Link href="/" className="inline-flex items-center gap-3">
-              <Image src="/Logo.webp" alt="X3DPrints" width={44} height={44} className="h-11 w-11 object-contain" />
+              <Image src="/Logo.webp" alt="X3DPrints logo" width={44} height={44} className="h-11 w-11 object-contain" />
               <span className="text-base font-semibold tracking-tight text-slate-900">X3DPrints</span>
             </Link>
             <p className="mt-3 max-w-prose mx-auto md:mx-0">

@@ -5,6 +5,7 @@ import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import Image from "next/image"
+import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/blog/octopus-accountancy-3d-print-goodies"
 const publishedDate = "2025-12-16T08:00:00+01:00"
@@ -437,6 +438,8 @@ export default function OctopusCasePage() {
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogReadMore />
+
     </article>
   )
 }

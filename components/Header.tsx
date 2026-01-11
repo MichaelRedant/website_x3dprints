@@ -76,7 +76,7 @@ export default function Header() {
         <Link href="/" className="group inline-flex items-center gap-3">
           <Image
             src="/Logo.webp"
-            alt="X3DPrints"
+            alt="X3DPrints logo"
             width={58}
             height={58}
             priority
@@ -166,7 +166,7 @@ export default function Header() {
                   <div className="inline-flex items-center gap-3">
                     <Image
                       src="/Logo.webp"
-                      alt="X3DPrints"
+                      alt="X3DPrints logo"
                       width={40}
                       height={40}
                       className="h-10 w-10 object-contain drop-shadow-[0_0_12px_rgba(255,0,56,.35)]"

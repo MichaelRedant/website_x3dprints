@@ -1,0 +1,117 @@
+# 3D printen in Beervelde: lokaal maatwerk met korte doorlooptijd
+
+**3D printen in Beervelde** (Lochristi) is ideaal voor prototypes, maatwerk en kleine series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+
+---
+
+## Waarom 3D printen in Beervelde bij X3DPrints?
+
+- **Snelle offerte**: prijs en timing zijn meteen duidelijk.
+- **Korte doorlooptijd**: meestal enkele werkdagen.
+- **Materiaalkeuze**: PLA, PETG of TPU passend bij uw project.
+- **Betrouwbare kwaliteit**: nette details en goede passing.
+
+---
+
+## Lokale punten in Beervelde
+
+- [Park van Beervelde](https://nl.wikipedia.org/wiki/Park_van_Beervelde)
+- [Kasteel Ertbuer](https://nl.wikipedia.org/wiki/Kasteel_Ertbuer)
+- [Sint-Danielkerk (Beervelde)](https://nl.wikipedia.org/wiki/Sint-Dani%C3%ABlkerk_(Beervelde))
+
+---
+
+## Lokale focus in Beervelde
+
+In Beervelde combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
+
+- Behuizingen en beschermkappen voor elektronica of sensoren.
+
+## Materialen voor 3D printen in Beervelde
+
+| Materiaal   | Eigenschappen            | Typische toepassingen |
+|-------------|--------------------------|-----------------------|
+| **PLA Matte** | Detailrijk               | Prototypes en maquettes |
+| **PETG**     | Sterk en taai            | Functionele onderdelen |
+| **TPU**      | Flexibel                 | Dempers en beschermhoezen |
+
+Meer info over materialen vindt u op [materialen](/materials).
+
+---
+
+## Voor wie is 3D printen in Beervelde interessant?
+
+### Lokale makers en techniekers
+Snelle iteraties met duidelijke feedback en strakke prints.
+
+### Onderhoud en herstellingen
+Sterke onderdelen die tegen een stootje kunnen.
+
+### Verenigingen en scholen
+Projecten met heldere afspraken en betrouwbare planning.
+
+---
+
+## Rapid prototyping in Beervelde
+
+Test uw ontwerp snel en verbeter zonder tijdverlies.
+
+---
+
+## Hoe bestellen bij X3DPrints?
+
+1. Stuur uw STL of STEP via de [contactpagina](/contact).
+2. Kies materiaal, kleur en aantallen.
+3. U ontvangt een offerte en planning.
+
+---
+
+## Levertijd en verzending
+
+- **Standaard**: meestal enkele werkdagen.
+- **Spoed**: mogelijk na overleg.
+- **Verzending**: tarieven op de [prijzenpagina](/pricing).
+- **Afhaling**: op afspraak in Herzele.
+
+---
+
+## Toepassingen van 3D printen in Beervelde
+
+- Prototypes en producttests
+- Onderdelen voor herstellingen
+- Presentatiemodellen
+- Kleine series voor lokale handel
+
+---
+
+## Veelgestelde vragen over 3D printen in Beervelde
+
+**Welk materiaal past het best bij een project in Beervelde?**
+PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
+
+**Hoe snel is 3D printen in Beervelde?**
+Meestal enkele werkdagen. Spoed kan in overleg; levering richting Park van Beervelde of afhalen in Herzele.
+
+**Hoe werkt een offerte voor 3D printen in Beervelde?**
+Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
+
+## Interne links rond 3D printen in Beervelde
+
+- [3D printen in Lochristi](/3d-printen-in-lochristi)
+- [3D printen in Zaffelare](/3d-printen-in-zaffelare)
+- [3D printen in Zeveneken](/3d-printen-in-zeveneken)
+- [3D printen in Gent](/3d-printen-in-gent)
+
+---
+
+## Externe links
+
+- [Beervelde op Wikipedia](https://nl.wikipedia.org/wiki/Beervelde)
+- [Park van Beervelde](https://nl.wikipedia.org/wiki/Park_van_Beervelde)
+- [Kasteel Ertbuer](https://nl.wikipedia.org/wiki/Kasteel_Ertbuer)
+
+---
+
+## Offerte voor 3D printen in Beervelde
+
+Vraag een vrijblijvende offerte aan via [contact](/contact).

@@ -6,6 +6,7 @@ import GlassOrb from "@/components/GlassOrb"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
+import ReadMoreLinks from "@/components/ReadMoreLinks"
 import { readdirSync, statSync } from "node:fs"
 import path from "node:path"
 
@@ -447,6 +448,21 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <ReadMoreLinks
+        title="Bekijk ook deze pagina's"
+        intro="Gebruik deze links om materialen, prijzen en services sneller naast elkaar te leggen."
+        primaryLinks={[
+          { label: "Materialen & richtlijnen", href: "/materials" },
+          { label: "Prijzen & calculator", href: "/pricing" },
+          { label: "3D print service", href: "/services" },
+        ]}
+        secondaryLinks={[
+          { label: "Segmenten & cases", href: "/segments" },
+          { label: "3D viewer", href: "/viewer" },
+          { label: "Offerte aanvragen", href: "/contact" },
+        ]}
+      />
 
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
