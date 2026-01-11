@@ -3,8 +3,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
-import MaterialCard from "@/components/MaterialCard"
 import { MATERIALS, MATERIAL_ORDER, MATERIAL_SLUGS } from "@/lib/materials"
+import MaterialGrid from "@/components/MaterialGrid"
 import FaqPromo from "@/components/FaqPromo"
 import GlassCard from "@/components/GlassCard"
 import { MATERIAL_DETAILS } from "@/content/material-details"
@@ -236,21 +236,7 @@ export default function MaterialsPage() {
 
 
       <section className="px-6 pb-16 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2">
-          {materials.map((m, i) => (
-            <Reveal key={m.title} delay={i * 0.04}>
-              <MaterialCard
-                anchorId={m.anchorId}
-                title={m.title}
-                description={m.description}
-                features={m.features}
-                swatches={m.swatches}
-                href={`/materials/${m.slug}`}
-                faq={m.faq}
-              />
-            </Reveal>
-          ))}
-        </div>
+        <MaterialGrid materials={materials} />
 
         {/* Legenda + CTA */}
         <div className="mx-auto mt-10 max-w-6xl rounded-2xl border border-slate-200/70 bg-white/70 p-5 text-sm text-slate-600 backdrop-blur">

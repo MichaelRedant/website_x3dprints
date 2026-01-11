@@ -6,7 +6,7 @@ export function materialSlug(input: string): string {
 
 export type MaterialKey =
   | "PLA_TOUGH_PLUS"
-  |"PLA_MATTE"
+  | "PLA_MATTE"
   | "PLA_GLOW"
   | "PLA_MARBLE"
   | "PLA_SPARKLE"
@@ -20,16 +20,14 @@ export type MaterialKey =
   | "PLA_SILK_MULTI_COLOR"
   | "PLA_CF"
   | "PLA_WOOD"
-
   | "PETG"
   | "PC"
-  | "TPU";
+  | "TPU"
 
 export type Swatch = {
   label: string; // wat de gebruiker ziet
   color: string; // hex of css-gradient
   inStock: boolean; // of je het liggen hebt
-
 };
 
 export type MaterialInfo = {
@@ -62,47 +60,59 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       "Taaier dan standaard PLA, behoudt vorm beter bij impact. Voor onderdelen die net iets meer mogen verdragen.",
     features: ["Tough, minder broos", "Strakke finish", "Printvriendelijk"],
     swatches: [
-
-      { label: "Geel", color: "#f6c20f", inStock: false },
-      { label: "Wit", color: "#ffffff", inStock: false },
-      { label: "Rood", color: "#dc2626", inStock: false },
-      { label: "Lichtgrijs", color: "#cbd5e1", inStock: false },
-      { label: "Blauwgrijs", color: "#64748b", inStock: false },
-      { label: "Lichtblauw", color: "#60a5fa", inStock: false },
-      { label: "Zwart", color: "#000000", inStock: false },
-
+      { label: "Black", color: "#0b0b0b", inStock: false },
+      { label: "White", color: "#ffffff", inStock: false },
+      { label: "Grey", color: "#9ca3af", inStock: false },
+      { label: "Red", color: "#e11d48", inStock: false },
+      { label: "Yellow", color: "#f5c211", inStock: false },
+      { label: "Orange", color: "#f97316", inStock: false },
+      { label: "Blue", color: "#2563eb", inStock: false },
+      { label: "Green", color: "#16a34a", inStock: false },
     ],
   },
 
-    PLA_MATTE: {
+  PLA_MATTE: {
     name: "PLA Matte",
     description: "Matte PLA met lage glans. Verdoezelt layer-lijnen, oogt premium.",
     features: ["Mat oppervlak", "Strakke details"],
     swatches: [
-      { label: "White", color: "#f5f5f5", inStock: false },
-      { label: "Grey", color: "#a3a3a3", inStock: true },
-      { label: "Black", color: "#0a0a0a", inStock: true },
-      { label: "Sand", color: "#c8b69f", inStock: false },
-      { label: "Clay", color: "#b98a6d", inStock: false },
-      { label: "Terracotta", color: "#b45309", inStock: false },
-      { label: "Blush", color: "#e9a6b1", inStock: false },
-      { label: "Burgundy", color: "#7f1d1d", inStock: false },
-      { label: "Navy", color: "#1e3a8a", inStock: false },
-      { label: "Blue", color: "#2563eb", inStock: true },
-      { label: "Teal", color: "#0f766e", inStock: false },
-      { label: "Pine", color: "#14532d", inStock: false },
-      { label: "Olive", color: "#6b8e23", inStock: false },
-      { label: "Lime", color: "#84cc16", inStock: true },
-      { label: "Yellow", color: "#facc15", inStock: true },
-      { label: "Orange", color: "#fb923c", inStock: false },
-      { label: "Red", color: "#dc2626", inStock: true },
+      // Whites & Grays
+      { label: "Ivory White", color: "#f8f4e3", inStock: false },
+      { label: "Bone White", color: "#e7e2d3", inStock: true },
+      { label: "Ash Gray", color: "#b2b6bd", inStock: true },
+      { label: "Nardo Gray", color: "#7e7f80", inStock: true },
+      { label: "Charcoal (Black)", color: "#111827", inStock: true },
+      // Browns & Tans
+      { label: "Latte Brown", color: "#b58b65", inStock: false },
+      { label: "Desert Tan", color: "#d2b48c", inStock: false },
+      { label: "Caramel", color: "#c97b4a", inStock: false },
+      { label: "Terracotta", color: "#c6613e", inStock: false },
+      { label: "Dark Brown", color: "#5a3a1a", inStock: false },
+      { label: "Dark Chocolate", color: "#3b2615", inStock: false },
+      // Reds & Purples
+      { label: "Scarlet Red", color: "#d0281f", inStock: true },
+      { label: "Dark Red", color: "#8b1a1a", inStock: false },
+      { label: "Plum", color: "#5b2746", inStock: false },
+      { label: "Sakura Pink", color: "#f7c6d5", inStock: false },
+      { label: "Lilac Purple", color: "#b18ac8", inStock: false },
+      // Greens & Blues
+      { label: "Apple Green", color: "#6bbf59", inStock: false },
+      { label: "Grass Green", color: "#2f8f2f", inStock: false },
+      { label: "Dark Green", color: "#14532d", inStock: true },
+      { label: "Ice Blue", color: "#9fd6f5", inStock: false },
+      { label: "Sky Blue", color: "#72b4f8", inStock: true },
+      { label: "Marine Blue", color: "#1e6091", inStock: false },
+      { label: "Dark Blue", color: "#0f2f5f", inStock: false },
+      // Yellows & Oranges
+      { label: "Lemon Yellow", color: "#f6d32d", inStock: true },
+      { label: "Mandarin Orange", color: "#f97316", inStock: true },
     ],
   },
 
   PLA_GLOW: {
     name: "PLA Glow",
     description:
-      "Gloeit in het donker. Laadt op met licht, geeft een helder ‘neon’ effect in low-light.",
+      "Gloeit in het donker. Laadt op met licht, geeft een helder 'neon' effect in low-light.",
     features: ["Glow-in-the-dark", "Decoratief en fun"],
     swatches: [
       { label: "Glow Groen", color: "#00ff7b", inStock: true },
@@ -146,7 +156,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
   PLA_METAL: {
     name: "PLA Metal",
     description:
-      "Metaalachtige glans zonder conductiviteit. Ideaal voor props of industriële esthetiek.",
+      "Metaalachtige glans zonder conductiviteit. Ideaal voor props of industriele esthetiek.",
     features: ["Metallic glans", "Egale lijnen"],
     swatches: [
       { label: "Steel", color: g.metal, inStock: false },
@@ -159,7 +169,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
 
   PLA_GALAXY: {
     name: "PLA Galaxy",
-    description: "Diepe basiskleuren met micro-glitter voor een ‘deep space’ vibe.",
+    description: "Diepe basiskleuren met micro-glitter voor een 'deep space' vibe.",
     features: ["Diepe tinten", "Subtiele glitter"],
     swatches: [
       { label: "Plum Nebula", color: g.galaxy, inStock: false },
@@ -207,20 +217,14 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
     swatches: [
 
       { label: "Black", color: "linear-gradient(90deg,#0b0b0b,#2a2a2a,#0b0b0b)", inStock: false },
-      { label: "Graphite", color: "linear-gradient(90deg,#434343,#9e9e9e,#434343)", inStock: false },
       { label: "Silver", color: "linear-gradient(90deg,#a0a7af,#e5e7eb,#a0a7af)", inStock: false },
-      { label: "White", color: "linear-gradient(90deg,#f8fafc,#ffffff,#f8fafc)", inStock: false },
-      { label: "Champagne", color: "linear-gradient(90deg,#c5a572,#f3d79c,#c5a572)", inStock: false },
-      { label: "Copper", color: "linear-gradient(90deg,#b66a3a,#e3a367,#b66a3a)", inStock: false },
       { label: "Gold", color: "linear-gradient(90deg,#a36f00,#f3d36b,#a36f00)", inStock: false },
+      { label: "Copper", color: "linear-gradient(90deg,#b66a3a,#e3a367,#b66a3a)", inStock: false },
+      { label: "Champagne", color: "linear-gradient(90deg,#c5a572,#f3d79c,#c5a572)", inStock: false },
       { label: "Red", color: "linear-gradient(90deg,#7f1d1d,#ef4444,#7f1d1d)", inStock: false },
-      { label: "Green", color: "linear-gradient(90deg,#065f46,#10b981,#065f46)", inStock: false },
       { label: "Blue", color: "linear-gradient(90deg,#1e3a8a,#3b82f6,#1e3a8a)", inStock: false },
-      { label: "Cyan", color: "linear-gradient(90deg,#006d7e,#22d3ee,#006d7e)", inStock: false },
-      { label: "Magenta", color: "linear-gradient(90deg,#7b1fa2,#e91e63,#7b1fa2)", inStock: false },
-      { label: "Rose", color: "linear-gradient(90deg,#be185d,#f472b6,#be185d)", inStock: false },
-      { label: "Sand", color: "linear-gradient(90deg,#b59f7a,#d6c3a1,#b59f7a)", inStock: false },
-      { label: "Stone", color: "linear-gradient(90deg,#7f7f7f,#c9c9c9,#7f7f7f)", inStock: false },
+      { label: "Green", color: "linear-gradient(90deg,#065f46,#10b981,#065f46)", inStock: false },
+      { label: "Purple", color: "linear-gradient(90deg,#5b21b6,#7c3aed,#5b21b6)", inStock: false },
     ],
   },
 
@@ -242,33 +246,26 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
     description: "Klassieke PLA-lijn met brede kleurdekking. Voor algemene prints en maquettes.",
     features: ["Veel kleuren", "Betaalbaar"],
     swatches: [
+      { label: "Black", color: "#0b0b0b", inStock: false },
       { label: "White", color: "#ffffff", inStock: false },
-      { label: "Ivory", color: "#f5f1e6", inStock: false },
-      { label: "Light Grey", color: "#d1d5db", inStock: false },
-      { label: "Grey", color: "#9ca3af", inStock: false },
-      { label: "Black", color: "#000000", inStock: false },
+      { label: "Cool Gray", color: "#9ca3af", inStock: false },
+      { label: "Light Gray", color: "#d1d5db", inStock: false },
+      { label: "Silver", color: "#b0b8c4", inStock: false },
       { label: "Brown", color: "#8b5a3c", inStock: false },
       { label: "Beige", color: "#d6c3a1", inStock: false },
-      { label: "Tan", color: "#c8a46a", inStock: false },
       { label: "Yellow", color: "#fde047", inStock: false },
       { label: "Orange", color: "#fb923c", inStock: false },
-      { label: "Coral", color: "#f87171", inStock: false },
-      { label: "Pink", color: "#f472b6", inStock: false },
-      { label: "Magenta", color: "#db2777", inStock: false },
       { label: "Red", color: "#ef4444", inStock: false },
-      { label: "Maroon", color: "#7f1d1d", inStock: false },
+      { label: "Pink", color: "#f472b6", inStock: false },
       { label: "Purple", color: "#8b5cf6", inStock: false },
-      { label: "Violet", color: "#7c3aed", inStock: false },
-      { label: "Indigo", color: "#4f46e5", inStock: false },
-      { label: "Blue", color: "#3b82f6", inStock: false },
-      { label: "Sky", color: "#38bdf8", inStock: false },
-      { label: "Teal", color: "#14b8a6", inStock: false },
-      { label: "Turquoise", color: "#06b6d4", inStock: false },
-      { label: "Cyan", color: "#22d3ee", inStock: false },
-      { label: "Mint", color: "#86efac", inStock: false },
+      { label: "Blue", color: "#2563eb", inStock: false },
+      { label: "Sky Blue", color: "#38bdf8", inStock: false },
+      { label: "Cyan", color: "#06b6d4", inStock: false },
+      { label: "Mint Green", color: "#86efac", inStock: false },
       { label: "Green", color: "#22c55e", inStock: false },
       { label: "Olive", color: "#6b8e23", inStock: false },
-      { label: "Lime", color: "#84cc16", inStock: false },
+      { label: "Transparent", color: g.translucent("#ffffff"), inStock: false },
+      { label: "Gold", color: "#E4BD68", inStock: false },
     ],
   },
 
@@ -333,24 +330,18 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
   PETG: {
     name: "PETG",
     description:
-      "Tougher dan PLA, licht flexibel en beter bestand tegen warmte en chemicaliën. Voor functionele onderdelen.",
+      "Tougher dan PLA, licht flexibel en beter bestand tegen warmte en chemicalien. Voor functionele onderdelen.",
     features: ["Functioneel", "Chemisch resistenter", "Vormvast"],
     swatches: [
-      { label: "Geel", color: "#FFD00B", inStock: true },
-      { label: "Oranje", color: "#F75403", inStock: true },
-      { label: "Groen", color: "#00AE42", inStock: true },
-      { label: "Rood", color: "#EB3A3A", inStock: true },
-      { label: "Blauw", color: "#002E96", inStock: true },
-      { label: "Zwart", color: "#000000", inStock: true },
-      { label: "Wit", color: "#FFFFFF", inStock: true },
-      { label: "Transparant", color: g.translucent("#E6FBFF"), inStock: true },
-      { label: "Cream", color: "#F9DFB9", inStock: true },
-      { label: "Lime Green", color: "#6EE53C", inStock: true },
-      { label: "Forest Green", color: "#39541A", inStock: true },
-      { label: "Lake Blue", color: "#1F79E5", inStock: true },
-      { label: "Peanut Brown", color: "#875718", inStock: true },
-      { label: "Grijs", color: "#ADB1B2", inStock: true },
-      { label: "Donkergrijs", color: "#515151", inStock: true },
+      { label: "Black", color: "#0b0b0b", inStock: true },
+      { label: "White", color: "#ffffff", inStock: true },
+      { label: "Gray", color: "#9ca3af", inStock: true },
+      { label: "Red", color: "#e11d48", inStock: true },
+      { label: "Orange", color: "#f97316", inStock: true },
+      { label: "Yellow", color: "#f5c211", inStock: true },
+      { label: "Green", color: "#16a34a", inStock: true },
+      { label: "Blue", color: "#2563eb", inStock: true },
+      { label: "Transparent", color: g.translucent("#E6FBFF"), inStock: true },
     ],
   },
 
@@ -372,18 +363,18 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       "Flexibel en slijtvast. Ideaal voor grips, bumpers en demping. Vereist trager printen.",
     features: ["Flexibel", "Schokabsorberend"],
     swatches: [
-      { label: "Zwart", color: "#000000", inStock: true },
-      { label: "Grijs", color: "#9ca3af", inStock: false },
-      { label: "Wit", color: "#ffffff", inStock: false },
-      { label: "Rood", color: "#ef4444", inStock: false },
-      { label: "Geel", color: "#facc15", inStock: false },
-      { label: "Neon Groen", color: "#4ade80", inStock: false },
-      { label: "Blauw", color: "#2563eb", inStock: false },
+      { label: "Black", color: "#000000", inStock: true },
+      { label: "White", color: "#ffffff", inStock: false },
+      { label: "Gray", color: "#9ca3af", inStock: false },
+      { label: "Red", color: "#ef4444", inStock: false },
+      { label: "Yellow", color: "#facc15", inStock: false },
+      { label: "Blue", color: "#2563eb", inStock: false },
+      { label: "Green", color: "#16a34a", inStock: false },
     ],
   },
 };
 
-// Aankoopprijzen (€/kg) volgens Bambu-shop
+// Aankoopprijzen (EUR/kg) volgens Bambu-shop
 // Benaderingen; worden gebruikt voor prijsinschattingen
 export const MATERIAL_COST_EUR_PER_KG: Record<MaterialKey, number> = {
 
