@@ -150,22 +150,30 @@ export default function Footer() {
 
         {/* bottom bar */}
         <div className="border-t">
-          <Container className="flex flex-col items-center justify-between gap-3 py-6 text-center text-xs text-slate-500 sm:flex-row">
+          <Container className="flex flex-col items-center justify-center gap-4 py-6 text-center text-xs text-slate-500">
             <p>(c) {new Date().getFullYear()} X3DPrints. Alle rechten voorbehouden.</p>
-            <div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-4">
+            <div className="flex flex-wrap items-center justify-center gap-3">
               <CookieSettingsButton className="text-slate-500 hover:text-slate-900" />
-              <p className="text-slate-400">
-                Gemaakt door{" "}
-                <Link
-                  href="https://www.xinudesign.be"
-                  className="hover:text-slate-900"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Xinudesign
-                </Link>
-                .
-              </p>
+              <Link
+                href="https://www.pixapop.be"
+                className="group flex items-center gap-3 rounded-2xl border border-slate-200/80 bg-white/80 px-3 py-2 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-slate-300 hover:bg-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/Pixapop_black-e1687083855421-1024x299.webp"
+                  alt="Pixapop partner"
+                  width={120}
+                  height={32}
+                  className="h-6 w-auto opacity-90 transition group-hover:opacity-100"
+                />
+                <div className="flex flex-col">
+                  <span className="text-[11px] font-semibold uppercase tracking-wide text-slate-700">Pixapop-partner</span>
+                  <span className="max-w-[240px] text-slate-500 sm:max-w-none">
+                    Gebrouwen door je favoriete Pixapop-partner in crime (extra koffie inbegrepen).
+                  </span>
+                </div>
+              </Link>
             </div>
           </Container>
         </div>

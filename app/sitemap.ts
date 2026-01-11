@@ -67,6 +67,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "hoe-3d-print-je-onderdelen-voor-buitengebruik",
     "hoe-lang-duurt-3d-printen",
     "hoeveel-kost-3d-printen",
+    "maker-monday-snapfit-parts",
     "ontwerp-3d-printbaar-model",
     "pla-vs-petg",
     "use-cases-tpu",

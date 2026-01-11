@@ -33,7 +33,6 @@ export default function AutoCarousel({
 }) {
   const [active, setActive] = useState<Photo | null>(null)
   const [index, setIndex] = useState(0)
-  const [previousIndex, setPreviousIndex] = useState<number | null>(null)
   const [mounted, setMounted] = useState(false)
   const preloaded = useRef<Set<string>>(new Set())
 
@@ -44,7 +43,6 @@ export default function AutoCarousel({
       if (items.length <= 1) return
       setIndex((current) => {
         const nextIndex = (current + direction + items.length) % items.length
-        setPreviousIndex(current)
         return nextIndex
       })
     },

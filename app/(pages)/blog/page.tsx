@@ -302,6 +302,24 @@ const topics: Topic[] = [
     category: "maker-monday",
   },
   {
+    id: "maker-monday-snapfit-parts",
+    title: "Maker Monday #8: Snap-fit parts die blijven klikken",
+    summary:
+      "Gids voor snap-fit parts in PLA, PETG en TPU. Types (cantilever, torsie, annular), starttoleranties, arm-diktes, fillets en testplan zodat je clips niet na twee cycli breken.",
+    highlights: [
+      "Bouwt verder op Maker Monday #2 (wanddiktes) en #3 (toleranties) met concrete waarden voor snap-fit arms en groeven.",
+      "Bevat faalmodi-checklist en 5-stappen testprotocol met elephant's foot compensatie en ori\u00ebntatie tips.",
+      "Interne links naar materialen, segments en contact plus een externe Hubs referentie voor extra EEAT-signaal.",
+    ],
+    links: [
+      { label: "Lees Maker Monday #8", href: "/blog/maker-monday-snapfit-parts" },
+      { label: "Materialenoverzicht", href: "/materials" },
+      { label: "Vraag snap-fit review", href: "/contact?topic=maker-monday-snapfits" },
+    ],
+    intent: "how-to",
+    category: "maker-monday",
+  },
+  {
     id: "use-case-dinsdag-auto-fiets",
     title: "Use Case Dinsdag #1: Auto & fietsaccessoires",
     summary:

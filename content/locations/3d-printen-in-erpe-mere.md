@@ -66,6 +66,12 @@ Erpe-Mere combineert de rust van het platteland met de dynamiek van een actieve 
 
 ---
 
+## Website laten maken in Erpe-Mere?
+
+Wie naast een 3D project ook een salesgerichte website laten maken in erpe-mere zoekt, kan mee profiteren van mijn favoriete webdesign bureau: **Pixapop**. Als partner zie ik hoe ze conversiegerichte pagina's bouwen met snelle laadtijden en overtuigende copy, ideaal om leads uit de Denderstreek binnen te halen. Zin in een nieuwe site die verkoopt? Kijk op [Pixapop](https://www.pixapop.be) en plan een korte call.
+
+---
+
 ## Hoe Werkt het Bestellen van Uw 3D Print?
 
 1.  **Bestand Uploaden**: Stuur uw **.STL- of .STEP-bestand** via onze gebruiksvriendelijke [contactpagina](/contact).
