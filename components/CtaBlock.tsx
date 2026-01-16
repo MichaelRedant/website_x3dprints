@@ -2,18 +2,55 @@
 import Link from "next/link"
 import { FaBolt, FaEnvelope, FaArrowRight, FaShieldAlt } from "react-icons/fa"
 import GlassOrb from "./GlassOrb"
+import { localizeHref } from "@/lib/i18n/paths"
 type Props = {
   city?: string
   className?: string
   email?: string        // optioneel override
+  locale?: "nl" | "en"
 }
 
 export default function CtaBlock({
   city = "jouw regio",
   className = "",
   email = "michael@xinudesign.be",
+  locale = "nl",
 }: Props) {
-  const mailHref = `mailto:${email}?subject=${encodeURIComponent(`Vraag 3D printen in ${city}`)}`
+  const isEn = locale === "en"
+  const contactHref = localizeHref("/contact", locale)
+  const copy = isEn
+    ? {
+        kicker: "Fast & clear",
+        title: `Quote for 3D printing in ${city}`,
+        body: "Pick a material (PLA, PETG, TPU) and receive a clear price and planning within 24 hours. Ideal for prototypes and small batches.",
+        benefits: [
+          "Short lead time (we plan together, typically a few business days)",
+          "Transparent pricing - no surprises",
+          "Basic post-processing: support removal and light deburring",
+          "Personal advice on material selection",
+        ],
+        primaryCta: "Request a quote",
+        mailCta: "Email",
+        trust: "Files are handled confidentially. We only use them to calculate your price.",
+        subject: `Request 3D printing in ${city}`,
+      }
+    : {
+        kicker: "Snel & duidelijk",
+        title: `Offerte voor 3D printen in ${city}`,
+        body: "Kies materiaal (PLA, PETG, TPU) en ontvang binnen 24 uur een heldere prijs en planning. Perfect voor prototypes en kleine series.",
+        benefits: [
+          "Korte doorlooptijd (we plannen samen, doorgaans enkele werkdagen)",
+          "Transparante prijzen - geen verrassingen",
+          "Basis nabewerking: support verwijderen en licht ontbramen",
+          "Persoonlijk advies bij materiaalkeuze",
+        ],
+        primaryCta: "Offerte aanvragen",
+        mailCta: "Mailen",
+        trust: "Bestanden worden vertrouwelijk behandeld. We gebruiken ze enkel om je prijs te berekenen.",
+        subject: `Vraag 3D printen in ${city}`,
+      }
+
+  const mailHref = `mailto:${email}?subject=${encodeURIComponent(copy.subject)}`
 
   return (
     <section
@@ -41,29 +78,21 @@ export default function CtaBlock({
         <div>
           <p className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-teal-700 dark:text-teal-300">
             <FaBolt aria-hidden className="shrink-0" />
-            Snel & duidelijk
+            {copy.kicker}
           </p>
 
           <h2
             id="cta-title"
             className="mt-2 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 bg-clip-text text-2xl font-extrabold tracking-tight text-transparent dark:from-white dark:via-slate-200 dark:to-slate-300"
           >
-            Offerte voor 3D printen in {city}
+            {copy.title}
           </h2>
 
-          <p className="mt-2 text-slate-700 dark:text-slate-300">
-            Kies materiaal (PLA, PETG, TPU) en ontvang binnen
-            <strong> 24 uur</strong> een heldere prijs en planning. Perfect voor prototypes en kleine series.
-          </p>
+          <p className="mt-2 text-slate-700 dark:text-slate-300">{copy.body}</p>
 
           {/* Benefits */}
           <ul className="mt-4 grid gap-2 text-sm text-slate-700 dark:text-slate-300 sm:grid-cols-2">
-            {[
-              "Korte doorlooptijd (we plannen samen, doorgaans enkele werkdagen)",
-              "Transparante prijzen - geen verrassingen",
-              "Nabehandeling: schuren, lakken, montage",
-              "Persoonlijk advies bij materiaalkeuze",
-            ].map((t, i) => (
+            {copy.benefits.map((t, i) => (
               <li key={i} className="flex items-start gap-2">
                 <span className="mt-1 h-2 w-2 rounded-full bg-teal-500" />
                 {t}
@@ -74,10 +103,10 @@ export default function CtaBlock({
           {/* Actions (geen telefoonknop) */}
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link
-              href="/contact"
+              href={contactHref}
               className="has-shimmer inline-flex items-center gap-2 rounded-2xl bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 ring-1 ring-slate-900/10 backdrop-blur transition hover:bg-white/90 hover:shadow-lg"
             >
-              Offerte aanvragen
+              {copy.primaryCta}
               <FaArrowRight aria-hidden />
             </Link>
 
@@ -86,18 +115,18 @@ export default function CtaBlock({
               className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 text-sm ring-1 ring-slate-200/70 hover:bg-white/60 dark:ring-white/10 dark:hover:bg-white/5"
             >
               <FaEnvelope aria-hidden />
-              Mailen
+              {copy.mailCta}
             </a>
           </div>
 
           {/* Trust */}
           <p className="mt-4 flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
             <FaShieldAlt aria-hidden />
-            Bestanden worden vertrouwelijk behandeld. We gebruiken ze enkel om je prijs te berekenen.
+            {copy.trust}
           </p>
         </div>
 
-        {/* Right: Visual â€” eigen GlassOrb (anders dan je keyword-SVG) */}
+        {/* Right: Visual - eigen GlassOrb (anders dan je keyword-SVG) */}
         <div className="relative hidden items-center justify-center overflow-hidden rounded-2xl ring-1 ring-white/30 sm:flex dark:ring-white/10">
           {/* subtiele paneelgradient */}
           

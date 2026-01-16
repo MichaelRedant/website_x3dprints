@@ -4,6 +4,7 @@ import Image from "next/image"
 import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import { createPortal } from "react-dom"
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
+import { useLocale } from "./LocaleProvider"
 
 type Photo = {
   src: string
@@ -31,6 +32,24 @@ export default function AutoCarousel({
   /** Markeer eerste N items als nieuw */
   newCount?: number
 }) {
+  const { locale } = useLocale()
+  const copy = locale === "en"
+    ? {
+        ariaLabel: "Portfolio carousel",
+        zoomLabel: (alt: string) => `Enlarge image: ${alt}`,
+        newLabel: "New",
+        prevLabel: "Previous image",
+        nextLabel: "Next image",
+        closeLabel: "Close image viewer",
+      }
+    : {
+        ariaLabel: "Portfolio carrousel",
+        zoomLabel: (alt: string) => `Vergroot afbeelding: ${alt}`,
+        newLabel: "Nieuw",
+        prevLabel: "Vorige afbeelding",
+        nextLabel: "Volgende afbeelding",
+        closeLabel: "Sluit afbeeldingsweergave",
+      }
   const [active, setActive] = useState<Photo | null>(null)
   const [index, setIndex] = useState(0)
   const [mounted, setMounted] = useState(false)
@@ -91,7 +110,7 @@ export default function AutoCarousel({
 
   return (
     <section
-      aria-label="Portfolio carrousel"
+      aria-label={copy.ariaLabel}
       className={[
         "group relative overflow-hidden rounded-3xl ring-1 ring-white/30 bg-white/55 backdrop-blur-xl shadow-glass",
         className,
@@ -111,7 +130,7 @@ export default function AutoCarousel({
             <button
               key={`${photo.src}-${idx}`}
               onClick={() => setActive(photo)}
-              aria-label={`Vergroot afbeelding: ${photo.alt}`}
+              aria-label={copy.zoomLabel(photo.alt)}
               className={[
                 "group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/50",
                 "bg-white/95 shadow-[0_18px_45px_rgba(15,23,42,0.12)] backdrop-blur",
@@ -120,7 +139,7 @@ export default function AutoCarousel({
             >
               {newCount > 0 && idx < newCount && (
                 <span className="absolute left-3 top-3 z-10 inline-flex items-center rounded-full bg-indigo-600/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white shadow-sm ring-1 ring-white/40">
-                  Nieuw
+                  {copy.newLabel}
                 </span>
               )}
               <div className={`relative w-full ${itemClass}`}>
@@ -145,14 +164,14 @@ export default function AutoCarousel({
         {items.length > 1 && (
           <>
             <button
-              aria-label="Vorige afbeelding"
+              aria-label={copy.prevLabel}
               onClick={prev}
               className="absolute left-3 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-lg bg-white/85 text-slate-900 shadow-sm backdrop-blur transition hover:bg-white"
             >
               <FaChevronLeft aria-hidden />
             </button>
             <button
-              aria-label="Volgende afbeelding"
+              aria-label={copy.nextLabel}
               onClick={next}
               className="absolute right-3 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-lg bg-white/85 text-slate-900 shadow-sm backdrop-blur transition hover:bg-white"
             >
@@ -192,7 +211,7 @@ export default function AutoCarousel({
                 </div>
 
                 <button
-                  aria-label="Sluit afbeeldingsweergave"
+                  aria-label={copy.closeLabel}
                   onClick={() => setActive(null)}
                   className="absolute right-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/85 text-slate-900 shadow-sm backdrop-blur transition hover:bg-white"
                 >

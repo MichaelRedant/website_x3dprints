@@ -5,6 +5,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation"
 import { LOCALE_LABELS, LOCALE_NAMES, type Locale, DEFAULT_LOCALE } from "@/lib/i18n/locales"
 import { useLocale } from "./LocaleProvider"
 import { cn } from "@/lib/utils"
+import { localizeHref } from "@/lib/i18n/paths"
 
 function buildHref(pathname: string, searchParams: URLSearchParams, locale: Locale) {
   const params = new URLSearchParams(searchParams.toString())
@@ -14,7 +15,8 @@ function buildHref(pathname: string, searchParams: URLSearchParams, locale: Loca
     params.set("lang", locale)
   }
   const query = params.toString()
-  return `${pathname}${query ? `?${query}` : ""}${typeof window !== "undefined" ? window.location.hash : ""}`
+  const hash = typeof window !== "undefined" ? window.location.hash : ""
+  return localizeHref(`${pathname}${query ? `?${query}` : ""}${hash}`, locale)
 }
 
 export default function LanguageSwitcher({ className }: { className?: string }) {

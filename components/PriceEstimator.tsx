@@ -10,20 +10,20 @@ import {
   type Quality,
   type Tier,
 } from "@/lib/pricing"
+import type { Locale } from "@/lib/i18n/locales"
+import { localizeHref } from "@/lib/i18n/paths"
 
 type MaterialKey = keyof typeof MATERIALS
+
+type Props = {
+  locale?: Locale
+}
 
 function safeMaterialKey(key: string): MaterialKey {
   return (Object.prototype.hasOwnProperty.call(MATERIALS, key)
     ? key
     : "PLA_MATTE") as MaterialKey
 }
-
-const euro = new Intl.NumberFormat("nl-BE", {
-  style: "currency",
-  currency: "EUR",
-  minimumFractionDigits: 2,
-})
 
 const SIZE_CM_PER_TIER: Record<Tier, number> = {
   Small: 5,
@@ -36,6 +36,12 @@ const PRESET_POINTS = [
   { size: 10, weight: 200, hours: 6.5 },
   { size: 20, weight: 500, hours: 15 },
 ]
+
+const QUALITY_LABELS: Record<Quality, { nl: string; en: string }> = {
+  Standaard: { nl: "Standaard", en: "Standard" },
+  Fijn: { nl: "Fijn", en: "Fine" },
+  Ultra: { nl: "Ultra", en: "Ultra" },
+}
 
 function interpolateHours(value: number, points: Array<{ x: number; y: number }>): number {
   const sorted = [...points].sort((a, b) => a.x - b.x)
@@ -62,7 +68,95 @@ function estimatePrintHours(weightGrams: number, sizeCm: number): number {
   return Math.max(0.5, blended)
 }
 
-export default function PriceEstimator() {
+export default function PriceEstimator({ locale = "nl" }: Props) {
+  const isEn = locale === "en"
+  const copy = isEn
+    ? {
+        title: "Quick price estimate",
+        intro:
+          "Our estimator gives you clear starting prices based on size, weight and material usage. Enter the estimated weight and the longest dimension to see a realistic per-piece and batch estimate. We confirm final pricing after a short model review so you know the exact cost and quality.",
+        labels: {
+          preset: "Size preset",
+          material: "Material",
+          quality: "Quality",
+          weight: "Weight per piece (g)",
+          size: "Longest side (cm)",
+          qty: "Quantity",
+        },
+        help: {
+          drying: "Drying included for TPU/PLA Wood/PETG/PC.",
+        },
+        cards: {
+          perPiece: "Estimate per piece",
+          total: "Total (excl. delivery)",
+          includes: "Includes",
+          basedOn: "Based on",
+          pieces: "pcs",
+        },
+        summary: {
+          perPiece: "Per piece",
+          total: "Total",
+          size: "Size",
+          weight: "Weight",
+          material: "Material",
+          quality: "Quality",
+          pieces: "pcs",
+          longestSide: "longest side",
+        },
+        cta: {
+          send: "Send this estimate",
+          note:
+            "Guideline price excl. VAT, design time and any premium STL files. Final quote after model review.",
+        },
+      }
+    : {
+        title: "Snelle prijsinschatting",
+        intro:
+          "Onze prijsschatting geeft je duidelijke vanafprijzen op basis van formaat, gewicht en materiaalverbruik. Vul het geschatte gewicht en de grootste afmeting in en je ziet meteen een realistische indicatie per stuk en voor de volledige oplage. De exacte prijs bevestigen we na een korte modelcontrole, zodat je altijd zeker bent van de juiste kost en kwaliteit.",
+        labels: {
+          preset: "Formaat preset",
+          material: "Materiaal",
+          quality: "Kwaliteit",
+          weight: "Gewicht per stuk (g)",
+          size: "Langste maat (cm)",
+          qty: "Aantal stuks",
+        },
+        help: {
+          drying: "Droogbehandeling inbegrepen voor TPU/PLA Wood/PETG/PC.",
+        },
+        cards: {
+          perPiece: "Indicatie per stuk",
+          total: "Totaal (excl. levering)",
+          includes: "Incl.",
+          basedOn: "Op basis van",
+          pieces: "st",
+        },
+        summary: {
+          perPiece: "Per stuk",
+          total: "Totaal",
+          size: "Formaat",
+          weight: "Gewicht",
+          material: "Materiaal",
+          quality: "Kwaliteit",
+          pieces: "st",
+          longestSide: "langste zijde",
+        },
+        cta: {
+          send: "Verstuur deze inschatting",
+          note: "Richtprijs excl. btw, ontwerpkosten en eventuele premium STL-bestanden. Finale voorstel na modelcontrole.",
+        },
+      }
+
+  const euro = useMemo(
+    () =>
+      new Intl.NumberFormat(isEn ? "en-BE" : "nl-BE", {
+        style: "currency",
+        currency: "EUR",
+        minimumFractionDigits: 2,
+      }),
+    [isEn],
+  )
+
   const defaultMaterial: MaterialKey = "PLA_MATTE"
   const [tier, setTier] = useState<Tier>("Medium")
   const [material, setMaterial] = useState<MaterialKey>(defaultMaterial)
@@ -70,9 +164,7 @@ export default function PriceEstimator() {
   const [qty, setQty] = useState<number>(1)
   const [weight, setWeight] = useState<number>(GRAMS_PER_TIER[tier])
   const [sizeCm, setSizeCm] = useState<number>(SIZE_CM_PER_TIER[tier])
-  const [printHours, setPrintHours] = useState<number>(
-    PRINT_TIME_HOURS_PER_TIER[tier],
-  )
+  const [printHours, setPrintHours] = useState<number>(PRINT_TIME_HOURS_PER_TIER[tier])
 
   useEffect(() => {
     setWeight(GRAMS_PER_TIER[tier])
@@ -96,34 +188,47 @@ export default function PriceEstimator() {
     [weight, printHours, material, quality, qty],
   )
 
+  const qualityLabel = QUALITY_LABELS[quality]?.[isEn ? "en" : "nl"] ?? quality
+
   const quoteSummary = useMemo(() => {
     const parts = [
-      `Per stuk: EUR ${breakdown.pricePerPrintEur.toFixed(2)}`,
-      `Totaal (${breakdown.input.quantity} st): EUR ${breakdown.totalEur.toFixed(2)}`,
-      `Formaat: ~${sizeCm} cm langste zijde · Gewicht: ~${weight} g`,
-      `Materiaal: ${materialLabel(material)} · Kwaliteit: ${quality}`,
+      `${copy.summary.perPiece}: EUR ${breakdown.pricePerPrintEur.toFixed(2)}`,
+      `${copy.summary.total} (${breakdown.input.quantity} ${copy.summary.pieces}): EUR ${breakdown.totalEur.toFixed(2)}`,
+      `${copy.summary.size}: ~${sizeCm} cm ${copy.summary.longestSide} | ${copy.summary.weight}: ~${weight} g`,
+      `${copy.summary.material}: ${materialLabel(material)} | ${copy.summary.quality}: ${qualityLabel}`,
     ]
     return parts.join(" | ")
-  }, [breakdown.pricePerPrintEur, breakdown.totalEur, breakdown.input.quantity, sizeCm, weight, material, quality])
+  }, [
+    copy.summary.material,
+    copy.summary.perPiece,
+    copy.summary.pieces,
+    copy.summary.quality,
+    copy.summary.size,
+    copy.summary.total,
+    copy.summary.weight,
+    copy.summary.longestSide,
+    breakdown.pricePerPrintEur,
+    breakdown.totalEur,
+    breakdown.input.quantity,
+    sizeCm,
+    weight,
+    material,
+    qualityLabel,
+  ])
 
-  const contactHref = useMemo(
-    () =>
-      `/contact?material=${encodeURIComponent(materialLabel(material))}&quote=${encodeURIComponent(quoteSummary)}`,
-    [material, quoteSummary],
-  )
+  const contactHref = useMemo(() => {
+    const href = `/contact?material=${encodeURIComponent(materialLabel(material))}&quote=${encodeURIComponent(quoteSummary)}`
+    return localizeHref(href, locale)
+  }, [material, quoteSummary, locale])
 
   return (
     <div className="rounded-3xl border border-slate-200/70 bg-white/80 p-6 shadow-sm backdrop-blur">
-      <h3 className="text-lg font-semibold text-slate-900">Snelle prijsinschatting</h3>
-      <p className="mt-1 text-sm text-slate-600">
-        Onze prijsschatting geeft je duidelijke vanafprijzen op basis van formaat, gewicht en materiaalverbruik.
-Vul het geschatte gewicht en de grootste afmeting in en je ziet meteen een realistische indicatie per stuk en voor de volledige oplage.
-De exacte prijs bevestigen we na een korte modelcontrole, zodat je altijd zeker bent van de juiste kost en kwaliteit.
-      </p>
+      <h3 className="text-lg font-semibold text-slate-900">{copy.title}</h3>
+      <p className="mt-1 text-sm text-slate-600">{copy.intro}</p>
 
       <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-1">
-          <label className="text-xs font-medium text-slate-500">Formaat preset</label>
+          <label className="text-xs font-medium text-slate-500">{copy.labels.preset}</label>
           <select
             className="h-11 rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none ring-0 focus:border-slate-300"
             value={tier}
@@ -136,7 +241,7 @@ De exacte prijs bevestigen we na een korte modelcontrole, zodat je altijd zeker 
         </div>
 
         <div className="flex flex-col gap-1">
-          <label className="text-xs font-medium text-slate-500">Materiaal</label>
+          <label className="text-xs font-medium text-slate-500">{copy.labels.material}</label>
           <select
             className="h-11 rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none ring-0 focus:border-slate-300"
             value={material}
@@ -148,26 +253,24 @@ De exacte prijs bevestigen we na een korte modelcontrole, zodat je altijd zeker 
               </option>
             ))}
           </select>
-          <span className="text-[11px] text-slate-500">
-            Droogbehandeling inbegrepen voor TPU/PLA Wood/PETG/PC.
-          </span>
+          <span className="text-[11px] text-slate-500">{copy.help.drying}</span>
         </div>
 
         <div className="flex flex-col gap-1">
-          <label className="text-xs font-medium text-slate-500">Kwaliteit</label>
+          <label className="text-xs font-medium text-slate-500">{copy.labels.quality}</label>
           <select
             className="h-11 rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none ring-0 focus:border-slate-300"
             value={quality}
             onChange={(e) => setQuality(e.target.value as Quality)}
           >
-            <option value="Standaard">Standaard</option>
-            <option value="Fijn">Fijn</option>
-            <option value="Ultra">Ultra</option>
+            <option value="Standaard">{QUALITY_LABELS.Standaard[isEn ? "en" : "nl"]}</option>
+            <option value="Fijn">{QUALITY_LABELS.Fijn[isEn ? "en" : "nl"]}</option>
+            <option value="Ultra">{QUALITY_LABELS.Ultra[isEn ? "en" : "nl"]}</option>
           </select>
         </div>
 
         <div className="flex flex-col gap-1">
-          <label className="text-xs font-medium text-slate-500">Gewicht per stuk (g)</label>
+          <label className="text-xs font-medium text-slate-500">{copy.labels.weight}</label>
           <input
             type="number"
             min={1}
@@ -178,7 +281,7 @@ De exacte prijs bevestigen we na een korte modelcontrole, zodat je altijd zeker 
         </div>
 
         <div className="flex flex-col gap-1">
-          <label className="text-xs font-medium text-slate-500">Langste maat (cm)</label>
+          <label className="text-xs font-medium text-slate-500">{copy.labels.size}</label>
           <input
             type="number"
             min={1}
@@ -190,7 +293,7 @@ De exacte prijs bevestigen we na een korte modelcontrole, zodat je altijd zeker 
         </div>
 
         <div className="flex flex-col gap-1">
-          <label className="text-xs font-medium text-slate-500">Aantal stuks</label>
+          <label className="text-xs font-medium text-slate-500">{copy.labels.qty}</label>
           <input
             type="number"
             min={1}
@@ -203,21 +306,21 @@ De exacte prijs bevestigen we na een korte modelcontrole, zodat je altijd zeker 
 
       <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
         <div className="rounded-2xl border border-slate-200 bg-white p-4">
-          <div className="text-xs uppercase tracking-wide text-slate-500">Indicatie per stuk</div>
+          <div className="text-xs uppercase tracking-wide text-slate-500">{copy.cards.perPiece}</div>
           <div className="mt-1 text-2xl font-semibold text-slate-900">
             {euro.format(breakdown.pricePerPrintEur)}
           </div>
           <div className="text-xs text-slate-500">
-            Incl. {materialLabel(material)} / {quality}
+            {copy.cards.includes} {materialLabel(material)} / {qualityLabel}
           </div>
         </div>
         <div className="rounded-2xl border border-slate-200 bg-white p-4">
-          <div className="text-xs uppercase tracking-wide text-slate-500">Totaal (excl. levering)</div>
+          <div className="text-xs uppercase tracking-wide text-slate-500">{copy.cards.total}</div>
           <div className="mt-1 text-2xl font-semibold text-slate-900">
             {euro.format(breakdown.totalEur)}
           </div>
           <div className="text-xs text-slate-500">
-            Op basis van {breakdown.input.quantity} stuk(ken).
+            {copy.cards.basedOn} {breakdown.input.quantity} {copy.cards.pieces}.
           </div>
         </div>
       </div>
@@ -227,11 +330,9 @@ De exacte prijs bevestigen we na een korte modelcontrole, zodat je altijd zeker 
           href={contactHref}
           className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-emerald-700"
         >
-          Verstuur deze inschatting
+          {copy.cta.send}
         </Link>
-        <p className="text-xs text-slate-600">
-          Richtprijs excl. btw, ontwerpkosten en eventuele premium STL-bestanden. Finale voorstel na modelcontrole.
-        </p>
+        <p className="text-xs text-slate-600">{copy.cta.note}</p>
       </div>
     </div>
   )

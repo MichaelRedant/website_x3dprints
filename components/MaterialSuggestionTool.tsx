@@ -9,6 +9,7 @@ import { MATERIAL_SUGGESTION_DATA, type MaterialSuggestionRecord } from "@/conte
 import { MATERIAL_SLUGS, type MaterialKey } from "@/lib/materials"
 import { useLocale } from "./LocaleProvider"
 import type { Locale } from "@/lib/i18n/locales"
+import { localizeHref } from "@/lib/i18n/paths"
 
 type LocationAnswer = "indoor" | "outdoorSeasonal" | "outdoorPermanent"
 type FunctionalityAnswer = "decor" | "lightFunctional" | "strongFunctional" | "flex"
@@ -496,7 +497,10 @@ export default function MaterialSuggestionTool() {
       <div className="grid gap-4">
         {recommendationCards ? (
           recommendationCards.map((card) => {
-            const contactHref = `/contact?material=${encodeURIComponent(card.slug)}`
+            const contactHref = localizeHref(
+              `/contact?material=${encodeURIComponent(card.slug)}`,
+              locale,
+            )
             return (
       <GlassCard key={card.record.id} className="border border-emerald-100 bg-white/95 p-5 shadow-lg backdrop-blur">
         <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-500">{card.label}</p>
@@ -519,7 +523,7 @@ export default function MaterialSuggestionTool() {
                 <div className="mt-4 flex flex-wrap gap-3">
                   <ShimmerButton href={contactHref}>{copy.labels.quoteCta}</ShimmerButton>
                   <Link
-                    href={`/materials/${card.slug}`}
+                    href={localizeHref(`/materials/${card.slug}`, locale)}
                     className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                   >
                     {copy.labels.viewMaterial}

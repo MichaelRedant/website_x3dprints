@@ -5,19 +5,27 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import PriceEstimator from "@/components/PriceEstimator"
-import { GRAMS_PER_TIER, calcUnitPrice, type Tier } from "@/lib/pricing"
+import { GRAMS_PER_TIER, calcUnitPrice, type Quality, type Tier } from "@/lib/pricing"
 import type { MaterialKey } from "@/lib/materials"
 import FaqPromo from "@/components/FaqPromo"
+import { normalizeLocale } from "@/lib/i18n/locales"
+import { localizeHref } from "@/lib/i18n/paths"
 
-export const metadata: Metadata = {
+const NL_METADATA: Metadata = {
   title: "Prijzen 3D printen | X3DPrints",
   description:
     "Transparante prijzen voor 3D printen in PLA (standaard), met opties voor PLA+ varianten, PETG en TPU. Droogbehandeling voor PETG/TPU inbegrepen. Offerte binnen 24 uur.",
-  alternates: { canonical: "https://www.x3dprints.be/pricing" },
+  alternates: {
+    canonical: "https://www.x3dprints.be/pricing",
+    languages: {
+      "nl-BE": "https://www.x3dprints.be/pricing",
+      en: "https://www.x3dprints.be/en/pricing",
+    },
+  },
   openGraph: {
     title: "Prijzen 3D printen",
     description:
-      "Indicatieve tarieven voor prototypes en kleine series. Materialen: PLA (standaard), PLA+ varianten, PETG en TPU. Levering in heel België.",
+      "Indicatieve tarieven voor prototypes en kleine series. Materialen: PLA (standaard), PLA+ varianten, PETG en TPU. Levering in heel Belgie.",
     url: "https://www.x3dprints.be/pricing",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
@@ -26,77 +34,258 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
-export default function Page() {
-  // Indicatieve prijzen berekend via filamentkost
-  const baseMaterial: MaterialKey = "PLA_MATTE"
-  const tierDefs: Array<{ name: Tier; size: string; notes: string }> = [
-    {
-      name: "Small",
-      size: "ca. 5 x 5 x 5 cm",
-      notes: "Kleine onderdelen, clips, testgeometrie.",
+export const EN_METADATA: Metadata = {
+  title: "3D Printing Prices | X3DPrints",
+  description:
+    "Transparent pricing for FDM 3D printing in PLA (standard), with PLA+ variants, PETG and TPU options. Drying for PETG/TPU included. Quote within 24 hours.",
+  alternates: {
+    canonical: "https://www.x3dprints.be/en/pricing",
+    languages: {
+      "nl-BE": "https://www.x3dprints.be/pricing",
+      en: "https://www.x3dprints.be/en/pricing",
     },
-    {
-      name: "Medium",
-      size: "ca. 10 x 10 x 10 cm",
-      notes: "Prototypes, kleine behuizingen, decor.",
-    },
-    {
-      name: "Large",
-      size: "ca. 20 x 20 x 20 cm",
-      notes: "Grotere delen, brackets, jigs.",
-    },
-  ]
+  },
+  openGraph: {
+    title: "3D printing prices",
+    description:
+      "Indicative rates for prototypes and small batches. Materials: PLA (standard), PLA+ variants, PETG and TPU. Delivery across Belgium.",
+    url: "https://www.x3dprints.be/en/pricing",
+    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    locale: "en_BE",
+    siteName: "X3DPrints",
+  },
+  twitter: { card: "summary_large_image" },
+}
 
+export const metadata: Metadata = NL_METADATA
+
+const PRICING_COPY_NL = {
+  hero: {
+    title: "Prijzen 3D printen",
+    body:
+      "Richtprijzen: kleine prints starten rond EUR 5, medium rond EUR 20 en grotere stukken rond EUR 49. PLA Matte is standaard; PLA+ varianten, PETG en TPU zijn beschikbaar voor extra look of performance. Droogbehandeling voor PETG/TPU is inbegrepen. Klaar om te bestellen? Vraag meteen je offerte.",
+    ctas: {
+      quote: "Offerte aanvragen",
+      materials: "Materialen & kleuren",
+      blog: "Kostenblog",
+      tool: "Material Suggestion Tool",
+    },
+  },
+  tiers: {
+    baseMaterialLabel: "PLA Matte (standaard)",
+    priceLabel: (price: number) => `EUR ${price.toFixed(2)} / stuk`,
+    summary:
+      "Richtprijzen bij standaard kwaliteit: Small ~ EUR 5, Medium ~ EUR 20, Large ~ EUR 49. Grotere of zwaardere modellen vergen meer materiaal en tijd.",
+    note: "Exacte prijs volgt na modelanalyse; we stemmen levering en afwerking af op jouw use-case.",
+    items: [
+      {
+        name: "Small" as Tier,
+        size: "ca. 5 x 5 x 5 cm",
+        notes: "Kleine onderdelen, clips, testgeometrie.",
+      },
+      {
+        name: "Medium" as Tier,
+        size: "ca. 10 x 10 x 10 cm",
+        notes: "Prototypes, kleine behuizingen, decor.",
+      },
+      {
+        name: "Large" as Tier,
+        size: "ca. 20 x 20 x 20 cm",
+        notes: "Grotere delen, brackets, jigs.",
+      },
+    ],
+  },
+  mods: {
+    material: {
+      title: "Materiaal-opslagen",
+      items: [
+        { label: "PLA+ / specials (Silk, Wood, Marble, Translucent)", mod: "+20%" },
+        { label: "PETG (incl. droogbehandeling)", mod: "+20%" },
+        { label: "TPU (incl. droogbehandeling)", mod: "+30%" },
+      ],
+      note: "PETG/TPU worden vooraf gedroogd voor optimale kwaliteit. Deze behandeling is meegerekend.",
+    },
+    quality: {
+      title: "Kwaliteit (layerhoogte)",
+      items: [
+        { label: "Standaard layerhoogte (0,2-0,28 mm)", mod: "0%" },
+        { label: "Fijn (~ 0,16 mm)", mod: "+15%" },
+        { label: "Ultra (~ 0,12 mm)", mod: "+25%" },
+      ],
+      note: "Kies standaard voor functionele prints. Fijner voor visueel werk of strakkere rondingen.",
+    },
+  },
+  shipping: {
+    title: "Verzending & levering",
+    items: [
+      { k: "Persoonlijke levering", v: "Elektrische wagen, veilig voor grote of breekbare prints. Zie zones hieronder." },
+      { k: "Afhalen", v: "Gratis (regio Herzele/Gent, in overleg)" },
+      { k: "Pakketdienst", v: "Op aanvraag via pakketdienst, afhankelijk van formaat/gewicht." },
+    ],
+    deliveryTitle: "Persoonlijke levering (EV)",
+    zones: [
+      { k: "Zone 1 tot 25 km (EV)", v: "Standaard 48-72u: EUR 15" },
+      { k: "Zone 2  25-50 km (EV)", v: "Standaard: EUR 30" },
+      { k: "Zone 3  50-75 km (EV)", v: "Standaard: EUR 45" },
+      { k: "Verder dan 75 km", v: "Maatwerkprijs of pakketdienst, in overleg" },
+      { k: "Vertrekpunt", v: "Afstanden gerekend vanaf Herzele (heen en terug)" },
+    ],
+  },
+  design: {
+    title: "Ontwerpservice",
+    items: [
+      { k: "Eigen ontwerp (STL/STEP)", v: "Gratis beoordeling + offerte" },
+      { k: "Ontwerp op maat", v: "EUR 45/uur (incl. digitaal voorbeeld voor productie)" },
+    ],
+    note: "Voor CAD-hertekenen of complexe aanpassingen stemmen we de aanpak vooraf af.",
+  },
+  cta: {
+    title: "Offerte nodig?",
+    body: "Upload STL/STEP met een korte beschrijving. Je krijgt snel een voorstel met materiaaladvies, prijs en levertermijn.",
+    primary: "Offerte aanvragen",
+    secondary: "Services bekijken",
+  },
+  faqPromo: {
+    title: "Vragen over 3D printen?",
+    intro: "Antwoorden over materialen, levertijden, prijzen en onze werkwijze.",
+    ctaLabel: "Bekijk de FAQ",
+    qaItems: [
+      { q: "Welke materialen printen jullie?", a: "Standaard PLA Matte, plus PETG en TPU. Op aanvraag ABS/ASA, Nylon, PA-CF." },
+      { q: "Wat is de gebruikelijke doorlooptijd?", a: "Doorgaans enkele werkdagen, afhankelijk van complexiteit en oplage." },
+      { q: "Hoe vraag ik een offerte aan?", a: "Bezorg je STL/STEP en korte context via het formulier. Je krijgt snel prijs en timing." },
+    ],
+  },
+  schema: {
+    catalogName: "X3DPrints indicatieve 3D-printtarieven",
+  },
+}
+
+const PRICING_COPY_EN = {
+  hero: {
+    title: "3D printing pricing",
+    body:
+      "Guideline pricing: small prints start around EUR 5, medium around EUR 20 and larger parts around EUR 49. PLA Matte is standard; PLA+ variants, PETG and TPU are available for extra look or performance. Drying for PETG/TPU is included. Ready to order? Request a quote right away.",
+    ctas: {
+      quote: "Request a quote",
+      materials: "Materials & colors",
+      blog: "Cost guide",
+      tool: "Material Suggestion Tool",
+    },
+  },
+  tiers: {
+    baseMaterialLabel: "PLA Matte (standard)",
+    priceLabel: (price: number) => `EUR ${price.toFixed(2)} / piece`,
+    summary:
+      "Guideline prices at standard quality: Small ~ EUR 5, Medium ~ EUR 20, Large ~ EUR 49. Larger or heavier models require more material and time.",
+    note: "Final pricing follows after a model check; we align delivery and finish with your use case.",
+    items: [
+      {
+        name: "Small" as Tier,
+        size: "approx. 5 x 5 x 5 cm",
+        notes: "Small parts, clips, test geometry.",
+      },
+      {
+        name: "Medium" as Tier,
+        size: "approx. 10 x 10 x 10 cm",
+        notes: "Prototypes, small enclosures, decor.",
+      },
+      {
+        name: "Large" as Tier,
+        size: "approx. 20 x 20 x 20 cm",
+        notes: "Larger parts, brackets, jigs.",
+      },
+    ],
+  },
+  mods: {
+    material: {
+      title: "Material surcharges",
+      items: [
+        { label: "PLA+ / specials (Silk, Wood, Marble, Translucent)", mod: "+20%" },
+        { label: "PETG (incl. drying)", mod: "+20%" },
+        { label: "TPU (incl. drying)", mod: "+30%" },
+      ],
+      note: "PETG/TPU are dried before printing for optimal quality. This is included.",
+    },
+    quality: {
+      title: "Quality (layer height)",
+      items: [
+        { label: "Standard layer height (0.2-0.28 mm)", mod: "0%" },
+        { label: "Fine (~ 0.16 mm)", mod: "+15%" },
+        { label: "Ultra (~ 0.12 mm)", mod: "+25%" },
+      ],
+      note: "Choose standard for functional prints. Finer works well for visual work or smoother curves.",
+    },
+  },
+  shipping: {
+    title: "Shipping and delivery",
+    items: [
+      { k: "Personal delivery", v: "Electric vehicle, safe for large or fragile prints. See zones below." },
+      { k: "Pickup", v: "Free (Herzele/Ghent region, by arrangement)" },
+      { k: "Parcel service", v: "On request via carrier, depending on size and weight." },
+    ],
+    deliveryTitle: "Personal delivery (EV)",
+    zones: [
+      { k: "Zone 1 up to 25 km (EV)", v: "Standard 48-72h: EUR 15" },
+      { k: "Zone 2  25-50 km (EV)", v: "Standard: EUR 30" },
+      { k: "Zone 3  50-75 km (EV)", v: "Standard: EUR 45" },
+      { k: "Beyond 75 km", v: "Custom quote or carrier shipping, by arrangement" },
+      { k: "Starting point", v: "Distances calculated from Herzele (round trip)" },
+    ],
+  },
+  design: {
+    title: "Design services",
+    items: [
+      { k: "Your own design (STL/STEP)", v: "Free review + quote" },
+      { k: "Custom design", v: "EUR 45/hour (incl. digital preview for production)" },
+    ],
+    note: "For CAD redraws or complex edits, we align the approach first.",
+  },
+  cta: {
+    title: "Need a quote?",
+    body: "Upload STL/STEP with a short description. You get a fast proposal with material advice, price and lead time.",
+    primary: "Request a quote",
+    secondary: "View services",
+  },
+  faqPromo: {
+    title: "Questions about 3D printing?",
+    intro: "Answers about materials, lead times, pricing and how we work.",
+    ctaLabel: "View the FAQ",
+    qaItems: [
+      { q: "Which materials do you print?", a: "Standard PLA Matte, plus PETG and TPU. ABS/ASA, Nylon, PA-CF on request." },
+      { q: "What is the usual lead time?", a: "Typically a few business days, depending on complexity and quantity." },
+      { q: "How do I request a quote?", a: "Send your STL/STEP and short context via the form. You get pricing and timing quickly." },
+    ],
+  },
+  schema: {
+    catalogName: "X3DPrints indicative 3D printing pricing",
+  },
+}
+
+export default function Page({ searchParams }: { searchParams?: { lang?: string } }) {
+  const locale = normalizeLocale(searchParams?.lang)
+  const isEn = locale === "en"
+  const copy = isEn ? PRICING_COPY_EN : PRICING_COPY_NL
+  const localize = (href: string) => localizeHref(href, locale)
+
+  const baseMaterial: MaterialKey = "PLA_MATTE"
+  const baseQuality: Quality = "Standaard"
+  const tierDefs = copy.tiers.items
   const tiers = tierDefs.map((t) => {
     const grams = GRAMS_PER_TIER[t.name]
-    const price = calcUnitPrice(t.name, baseMaterial, "Standaard")
+    const price = calcUnitPrice(t.name, baseMaterial, baseQuality)
     return {
       ...t,
-      base: "PLA Matte (standaard)",
+      base: copy.tiers.baseMaterialLabel,
       grams,
       price,
-      priceLabel: `EUR ${price.toFixed(2)} / stuk`,
+      priceLabel: copy.tiers.priceLabel(price),
     }
   })
 
-  // Opslagen (ten opzichte van PLA Matte)
-  const materialMods = [
-    { label: "PLA+ / specials (Silk, Wood, Marble, Translucent)", mod: "+20%" },
-    { label: "PETG (incl. droogbehandeling)", mod: "+20%" },
-    { label: "TPU (incl. droogbehandeling)", mod: "+30%" },
-  ]
-
-  // Kwaliteit/fijnere layers (optioneel)
-  const qualityMods = [
-    { label: "Standaard layerhoogte (0,2-0,28 mm)", mod: "0%" },
-    { label: "Fijn (~ 0,16 mm)", mod: "+15%" },
-    { label: "Ultra (~ 0,12 mm)", mod: "+25%" },
-  ]
-
-  const deliveryZones = [
-    { k: "Zone 1 tot 25 km (EV)", v: "Standaard 48-72u: EUR 15" },
-    { k: "Zone 2  25-50 km (EV)", v: "Standaard: EUR 30" },
-    { k: "Zone 3  50-75 km (EV)", v: "Standaard: EUR 45" },
-    { k: "Verder dan 75 km", v: "Maatwerkprijs of pakketdienst, in overleg" },
-    { k: "Vertrekpunt", v: "Afstanden gerekend vanaf Herzele (heen en terug)" },
-  ]
-
-  const shipping = [
-    { k: "Persoonlijke levering", v: "Elektrische wagen, veilig voor grote of breekbare prints. Zie zones hieronder." },
-    { k: "Afhalen", v: "Gratis (regio Herzele/Gent, in overleg)" },
-    { k: "Pakketdienst", v: "Op aanvraag via pakketdienst, afhankelijk van formaat/gewicht." },
-  ]
-
-  const design = [
-    { k: "Eigen ontwerp (STL/STEP)", v: "Gratis beoordeling + offerte" },
-    { k: "Ontwerp op maat", v: "EUR 45/uur (incl. digitaal voorbeeld voor productie)" },
-  ]
-
-// JSON-LD: OfferCatalog met indicatieve prijzen
   const offerCatalog = {
     "@context": "https://schema.org",
     "@type": "OfferCatalog",
-    name: "X3DPrints indicatieve 3D-printtarieven",
+    name: copy.schema.catalogName,
     itemListElement: tiers.map((t) => ({
       "@type": "Offer",
       itemOffered: {
@@ -128,33 +317,28 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              Prijzen 3D printen
+              {copy.hero.title}
             </h1>
-            <p className="mt-3 max-w-3xl text-slate-600">
-              Sales-ready prijzen: kleine prints starten rond EUR 5, medium cases rond EUR 20 en grotere stukken rond
-              EUR 49. PLA Matte is standaard; PLA+ varianten, PETG en TPU zijn beschikbaar voor extra look
-              of performance. Droogbehandeling voor PETG/TPU is inbegrepen. Klaar om te bestellen? Vraag meteen je
-              offerte.
-            </p>
-            <div className="mt-6 flex gap-3">
-              <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
+            <p className="mt-3 max-w-3xl text-slate-600">{copy.hero.body}</p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <ShimmerButton href={localize("/contact")}>{copy.hero.ctas.quote}</ShimmerButton>
               <Link
-                href="/materials"
+                href={localize("/materials")}
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
-                Materialen & kleuren
+                {copy.hero.ctas.materials}
               </Link>
               <Link
-                href="/blog/hoeveel-kost-3d-printen"
+                href={localize("/blog/hoeveel-kost-3d-printen")}
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
-                Kostenblog
+                {copy.hero.ctas.blog}
               </Link>
               <Link
-                href="/materials#material-suggestion-tool"
+                href={localize("/materials#material-suggestion-tool")}
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
-                Material Suggestion Tool
+                {copy.hero.ctas.tool}
               </Link>
             </div>
           </Reveal>
@@ -180,11 +364,8 @@ export default function Page() {
             ))}
           </div>
           <div className="mt-4 space-y-1 text-xs text-slate-600">
-            <p>
-              Richtprijzen bij standaard kwaliteit: Small ~ EUR 5, Medium ~ EUR 20, Large ~ EUR 49. Grotere of zwaardere
-              modellen vergen meer materiaal en tijd.
-            </p>
-            <p>Exacte prijs volgt na modelanalyse; we stemmen levering en afwerking af op jouw use-case.</p>
+            <p>{copy.tiers.summary}</p>
+            <p>{copy.tiers.note}</p>
           </div>
         </div>
       </section>
@@ -195,9 +376,9 @@ export default function Page() {
           <div className="grid gap-6 lg:grid-cols-2">
             <Reveal>
               <GlassCard className="p-6">
-                <h2 className="text-xl font-semibold tracking-tight text-slate-900">Materiaal-opslagen</h2>
+                <h2 className="text-xl font-semibold tracking-tight text-slate-900">{copy.mods.material.title}</h2>
                 <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                  {materialMods.map((m) => (
+                  {copy.mods.material.items.map((m) => (
                     <li
                       key={m.label}
                       className="flex items-center justify-between rounded-lg border border-slate-200/70 bg-white/70 px-3 py-2"
@@ -207,17 +388,15 @@ export default function Page() {
                     </li>
                   ))}
                 </ul>
-                <p className="mt-3 text-xs text-slate-500">
-                  PETG/TPU worden vooraf gedroogd voor optimale kwaliteit. Deze behandeling is meegerekend.
-                </p>
+                <p className="mt-3 text-xs text-slate-500">{copy.mods.material.note}</p>
               </GlassCard>
             </Reveal>
 
             <Reveal delay={0.06}>
               <GlassCard className="p-6">
-                <h2 className="text-xl font-semibold tracking-tight text-slate-900">Kwaliteit (layerhoogte)</h2>
+                <h2 className="text-xl font-semibold tracking-tight text-slate-900">{copy.mods.quality.title}</h2>
                 <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                  {qualityMods.map((m) => (
+                  {copy.mods.quality.items.map((m) => (
                     <li
                       key={m.label}
                       className="flex items-center justify-between rounded-lg border border-slate-200/70 bg-white/70 px-3 py-2"
@@ -227,9 +406,7 @@ export default function Page() {
                     </li>
                   ))}
                 </ul>
-                <p className="mt-3 text-xs text-slate-500">
-                  Kies standaard voor functionele prints. Fijner voor visueel werk of strakkere rondingen.
-                </p>
+                <p className="mt-3 text-xs text-slate-500">{copy.mods.quality.note}</p>
               </GlassCard>
             </Reveal>
           </div>
@@ -241,9 +418,8 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="p-6">
-             
               <div className="mt-4">
-                <PriceEstimator />
+                <PriceEstimator locale={locale} />
               </div>
             </GlassCard>
           </Reveal>
@@ -256,9 +432,9 @@ export default function Page() {
           <div className="grid gap-6 lg:grid-cols-2">
             <Reveal>
               <GlassCard className="p-6">
-                <h2 className="text-xl font-semibold tracking-tight text-slate-900">Verzending & levering</h2>
+                <h2 className="text-xl font-semibold tracking-tight text-slate-900">{copy.shipping.title}</h2>
                 <dl className="mt-3 grid gap-3 sm:grid-cols-2">
-                  {shipping.map((s) => (
+                  {copy.shipping.items.map((s) => (
                     <div key={s.k} className="rounded-lg border border-slate-200/70 bg-white/70 p-3">
                       <dt className="text-xs uppercase tracking-wide text-slate-500">{s.k}</dt>
                       <dd className="mt-1 text-sm text-slate-700">{s.v}</dd>
@@ -266,9 +442,9 @@ export default function Page() {
                   ))}
                 </dl>
                 <div className="mt-4 rounded-xl border border-dashed border-teal-200 bg-white/60 p-4">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">Persoonlijke levering (EV)</p>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">{copy.shipping.deliveryTitle}</p>
                   <div className="mt-2 grid gap-2 sm:grid-cols-2">
-                    {deliveryZones.map((z) => (
+                    {copy.shipping.zones.map((z) => (
                       <div key={z.k} className="rounded-lg border border-white/60 bg-white/80 p-3 shadow-sm">
                         <div className="text-sm font-semibold text-slate-800">{z.k}</div>
                         <div className="mt-1 text-sm text-slate-700">{z.v}</div>
@@ -281,18 +457,16 @@ export default function Page() {
 
             <Reveal delay={0.06}>
               <GlassCard className="p-6">
-                <h2 className="text-xl font-semibold tracking-tight text-slate-900">Ontwerpservice</h2>
+                <h2 className="text-xl font-semibold tracking-tight text-slate-900">{copy.design.title}</h2>
                 <dl className="mt-3 grid gap-3">
-                  {design.map((d) => (
+                  {copy.design.items.map((d) => (
                     <div key={d.k} className="rounded-lg border border-slate-200/70 bg-white/70 p-3">
                       <dt className="text-xs uppercase tracking-wide text-slate-500">{d.k}</dt>
                       <dd className="mt-1 text-sm text-slate-700">{d.v}</dd>
                     </div>
                   ))}
                 </dl>
-                <p className="mt-3 text-xs text-slate-500">
-                  Voor CAD-hertekenen of complexe aanpassingen stemmen we de aanpak vooraf af.
-                </p>
+                <p className="mt-3 text-xs text-slate-500">{copy.design.note}</p>
               </GlassCard>
             </Reveal>
           </div>
@@ -304,17 +478,15 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="p-8 sm:p-10">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Offerte nodig?</h2>
-              <p className="mt-2 max-w-prose text-slate-600">
-                Upload STL/STEP met een korte beschrijving. Je krijgt snel een voorstel met materiaaladvies, prijs en levertermijn.
-              </p>
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{copy.cta.title}</h2>
+              <p className="mt-2 max-w-prose text-slate-600">{copy.cta.body}</p>
               <div className="mt-5 flex flex-wrap gap-3">
-                <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
+                <ShimmerButton href={localize("/contact")}>{copy.cta.primary}</ShimmerButton>
                 <Link
-                  href="/services"
+                  href={localize("/services")}
                   className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
                 >
-                  Services bekijken
+                  {copy.cta.secondary}
                 </Link>
               </div>
             </GlassCard>
@@ -323,21 +495,25 @@ export default function Page() {
       </section>
 
       {/* FAQ */}
-            <section className="px-6 pb-20 sm:px-8 lg:px-12">
-              <div className="mx-auto max-w-6xl">
-                <Reveal>
-                  <GlassCard className="overflow-hidden p-8 sm:p-10">
-                    <FaqPromo className="mt-10" />
-                  </GlassCard>
-                </Reveal>
-              </div>
-            </section>
+      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="overflow-hidden p-8 sm:p-10">
+              <FaqPromo
+                className="mt-10"
+                title={copy.faqPromo.title}
+                intro={copy.faqPromo.intro}
+                ctaLabel={copy.faqPromo.ctaLabel}
+                qaItems={copy.faqPromo.qaItems}
+                href={localize("/faq")}
+              />
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
 
       {/* JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(offerCatalog) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerCatalog) }} />
     </main>
   )
 }

@@ -5,15 +5,47 @@ import Link from "next/link"
 import { getAllLocationSlugs, getLocationBySlug } from "@/lib/locations"
 import { AnimatePresence, motion } from "framer-motion"
 import { cn } from "@/lib/utils"
+import { useLocale } from "./LocaleProvider"
+import { localizeHref } from "@/lib/i18n/paths"
+
+const COPY = {
+  nl: {
+    trigger: "Lokale pagina's zoeken",
+    overlayClose: "Sluit lokale pagina's",
+    modalEyebrow: "Lokale pagina's",
+    modalTitle: "Zoek 3D printen per stad",
+    close: "Sluit",
+    searchLabel: "Zoek stad of gemeente",
+    searchPlaceholder: "Zoek stad of gemeente...",
+    filterAll: "Alle",
+    results: (count: number) => `${count} resultaten`,
+    quickAccess: "Snelle toegang",
+  },
+  en: {
+    trigger: "Search local pages",
+    overlayClose: "Close local pages",
+    modalEyebrow: "Local pages",
+    modalTitle: "Find 3D printing by city",
+    close: "Close",
+    searchLabel: "Search city or town",
+    searchPlaceholder: "Search city or town...",
+    filterAll: "All",
+    results: (count: number) => `${count} results`,
+    quickAccess: "Quick access",
+  },
+}
 
 export default function FooterLocationFinder() {
+  const { locale } = useLocale()
+  const localize = (href: string) => localizeHref(href, locale)
+  const copy = locale === "en" ? COPY.en : COPY.nl
   const slugs = getAllLocationSlugs()
   const locations = useMemo(
     () =>
       slugs
         .map((slug) => ({ slug, city: getLocationBySlug(slug)?.city ?? slug }))
-        .sort((a, b) => a.city.localeCompare(b.city, "nl")),
-    [slugs],
+        .sort((a, b) => a.city.localeCompare(b.city, locale === "en" ? "en" : "nl")),
+    [slugs, locale],
   )
 
   const [open, setOpen] = useState(false)
@@ -34,7 +66,7 @@ export default function FooterLocationFinder() {
         onClick={() => setOpen(true)}
         className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white/80 px-3 py-2 text-xs font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-white dark:border-[#1f2336] dark:bg-[#0B0F1A] dark:text-slate-100 dark:shadow-[0_12px_30px_rgba(0,0,0,0.45)]"
       >
-        Lokale pagina&apos;s zoeken
+        {copy.trigger}
         <span aria-hidden className="text-[10px] text-slate-400 dark:text-slate-500">({locations.length})</span>
       </button>
 
@@ -47,7 +79,7 @@ export default function FooterLocationFinder() {
             exit={{ opacity: 0 }}
           >
             <button
-              aria-label="Sluit lokale pagina&apos;s"
+              aria-label={copy.overlayClose}
               className="absolute inset-0 bg-black/60 backdrop-blur-sm"
               onClick={() => setOpen(false)}
             />
@@ -60,14 +92,16 @@ export default function FooterLocationFinder() {
             >
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500 dark:text-slate-400">Lokale pagina&apos;s</p>
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100">Zoek 3D printen per stad</h3>
+                  <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500 dark:text-slate-400">
+                    {copy.modalEyebrow}
+                  </p>
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100">{copy.modalTitle}</h3>
                 </div>
                 <button
                   type="button"
                   onClick={() => setOpen(false)}
                   className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200/70 bg-white/80 text-slate-700 transition hover:bg-white dark:border-[#1f2336] dark:bg-[#0B0F1A] dark:text-slate-100"
-                  aria-label="Sluit"
+                  aria-label={copy.close}
                 >
                   <span aria-hidden>&times;</span>
                 </button>
@@ -77,30 +111,30 @@ export default function FooterLocationFinder() {
                 <div className="space-y-3">
                   <input
                     type="text"
-                    aria-label="Zoek stad of gemeente"
-                    placeholder="Zoek stad of gemeente..."
+                    aria-label={copy.searchLabel}
+                    placeholder={copy.searchPlaceholder}
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     className="w-full rounded-xl border border-slate-200 bg-white/90 px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 shadow-sm transition focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200 dark:border-[#1f2336] dark:bg-[#0F1324] dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-[#00E6FF] dark:focus:ring-[#00E6FF]/30"
                   />
                   <div className="flex flex-wrap gap-1">
-                    <FilterChip label="Alle" active={letter === ""} onClick={() => setLetter("")} />
+                    <FilterChip label={copy.filterAll} active={letter === ""} onClick={() => setLetter("")} />
                     {alphabet.map((l) => (
                       <FilterChip key={l} label={l} active={letter === l} onClick={() => setLetter(l)} />
                     ))}
                   </div>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">{filtered.length} resultaten</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">{copy.results(filtered.length)}</p>
                 </div>
 
                 <div className="rounded-2xl border border-slate-200/70 bg-white/80 p-3 shadow-sm dark:border-[#1f2336] dark:bg-[#0F1324]">
                   <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-600 dark:text-slate-300">
-                    Snelle toegang
+                    {copy.quickAccess}
                   </p>
                   <div className="mt-2 flex flex-wrap gap-2">
                     {locations.slice(0, 12).map((loc) => (
                       <Link
                         key={loc.slug}
-                        href={`/${loc.slug}`}
+                        href={localize(`/${loc.slug}`)}
                         className="rounded-lg border border-slate-200 bg-white/70 px-3 py-1.5 text-xs font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-white dark:border-[#1f2336] dark:bg-[#0B0F1A] dark:text-slate-100"
                         onClick={() => setOpen(false)}
                       >
@@ -116,7 +150,7 @@ export default function FooterLocationFinder() {
                   {filtered.map((loc) => (
                     <li key={loc.slug}>
                       <Link
-                        href={`/${loc.slug}`}
+                        href={localize(`/${loc.slug}`)}
                         className={cn(
                           "block rounded-lg border border-slate-200/70 bg-white/90 px-3 py-2 text-xs text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-white",
                           "dark:border-[#1f2336] dark:bg-[#0F1324] dark:text-slate-100",

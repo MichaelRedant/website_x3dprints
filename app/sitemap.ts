@@ -12,14 +12,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Statische routes - met passende changeFrequency
   const staticRoutes = [
     { path: "/",                  changeFrequency: "weekly"  as const, priority: 0.8 },
+    { path: "/en",                changeFrequency: "weekly"  as const, priority: 0.8 },
     { path: "/3d-printen",        changeFrequency: "weekly"  as const, priority: 0.8 },
     { path: "/services",          changeFrequency: "monthly" as const, priority: 0.8 },
+    { path: "/en/services",       changeFrequency: "monthly" as const, priority: 0.8 },
     { path: "/materials",         changeFrequency: "weekly"  as const, priority: 0.8 },
     { path: "/pricing",           changeFrequency: "weekly"  as const, priority: 0.8 },
+    { path: "/en/pricing",        changeFrequency: "weekly"  as const, priority: 0.8 },
     { path: "/portfolio",         changeFrequency: "weekly"  as const, priority: 0.8 },
+    { path: "/en/portfolio",      changeFrequency: "weekly"  as const, priority: 0.8 },
     { path: "/valentijn-3d-printen", changeFrequency: "weekly" as const, priority: 0.7 },
     { path: "/segments",          changeFrequency: "weekly"  as const, priority: 0.7 },
     { path: "/blog",              changeFrequency: "weekly"  as const, priority: 0.7 },
+    { path: "/en/blog",           changeFrequency: "weekly"  as const, priority: 0.7 },
     { path: "/viewer",            changeFrequency: "weekly"  as const, priority: 0.7 },
     { path: "/3d-modelleren",     changeFrequency: "monthly" as const, priority: 0.6 },
     { path: "/lokaal-belgisch",   changeFrequency: "monthly" as const, priority: 0.7 },
@@ -73,6 +78,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "use-cases-tpu",
   ]
 
+  const enBlogPostSlugs = [
+    "octopus-accountancy-3d-print-goodies",
+  ]
+
   const segmentSlugs = [
     "3d-printing-prototypes",
     "3d-printing-scholen",
@@ -89,6 +98,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const blogRoutes = blogPostSlugs.map((slug) => ({
     url: `${BASE_URL}/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }))
+
+  const enBlogRoutes = enBlogPostSlugs.map((slug) => ({
+    url: `${BASE_URL}/en/blog/${slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.6,
@@ -119,6 +135,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     ...staticRoutes,
     ...blogRoutes,
+    ...enBlogRoutes,
     ...segmentRoutes,
     ...materialDetailRoutes,
     ...locationRoutes,

@@ -5,6 +5,8 @@ import { useEffect, useState } from "react"
 import Reveal from "@/components/Reveal"
 import MaterialCard from "@/components/MaterialCard"
 import type { MaterialKey } from "@/lib/materials"
+import { useLocale } from "./LocaleProvider"
+import { localizeHref } from "@/lib/i18n/paths"
 
 type Swatch = { label: string; fill: string; inStock: boolean }
 type MaterialItem = {
@@ -25,6 +27,8 @@ type MaterialGridProps = {
 }
 
 export default function MaterialGrid({ materials }: MaterialGridProps) {
+  const { locale } = useLocale()
+  const localize = (href: string) => localizeHref(href, locale)
   const [overrides, setOverrides] = useState<Overrides>({})
 
   useEffect(() => {
@@ -68,7 +72,7 @@ export default function MaterialGrid({ materials }: MaterialGridProps) {
             description={m.description}
             features={m.features}
             swatches={m.swatches}
-            href={`/materials/${m.slug}`}
+            href={localize(`/materials/${m.slug}`)}
             faq={m.faq}
           />
         </Reveal>

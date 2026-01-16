@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
+import { useLocale } from "./LocaleProvider"
+import { localizeHref } from "@/lib/i18n/paths"
 import {
   CookieConsentValue,
   REQUEST_BANNER_EVENT,
@@ -12,6 +14,8 @@ import {
 } from "@/lib/cookie-consent"
 
 export default function CookieBanner() {
+  const { locale } = useLocale()
+  const localize = (href: string) => localizeHref(href, locale)
   const [open, setOpen] = useState(false)
   const [lastChoice, setLastChoice] = useState<CookieConsentValue | null>(null)
   const dialogRef = useRef<HTMLDivElement | null>(null)
@@ -86,7 +90,7 @@ export default function CookieBanner() {
             <p className="mt-2 text-sm leading-relaxed text-slate-600">
               We gebruiken Google Analytics om de prestaties van onze website te meten. We plaatsen alleen analytische cookies
               nadat je hiervoor toestemming hebt gegeven. Lees meer in ons{" "}
-              <Link href="/cookies" className="font-medium text-slate-900 underline-offset-2 hover:underline">
+              <Link href={localize("/cookies")} className="font-medium text-slate-900 underline-offset-2 hover:underline">
                 cookiebeleid
               </Link>
               .

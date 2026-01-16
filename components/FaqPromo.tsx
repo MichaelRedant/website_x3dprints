@@ -1,7 +1,11 @@
+"use client"
+
 // components/FaqPromo.tsx
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
+import { useLocale } from "./LocaleProvider"
+import { localizeHref } from "@/lib/i18n/paths"
 
 type QA = { q: string; a: string }
 
@@ -36,6 +40,8 @@ export default function FaqPromo({
   emitJsonLd = false,
   className = "",
 }: FaqPromoProps) {
+  const { locale } = useLocale()
+  const resolvedHref = localizeHref(href, locale)
   // JSON-LD block (optioneel). Tip: gebruik dit maar één keer per pagina om duplicatie te vermijden.
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -92,7 +98,7 @@ export default function FaqPromo({
             {/* CTA */}
             <div className="flex flex-wrap items-center gap-3">
               <Link
-                href={href}
+                href={resolvedHref}
                 aria-label="Ga naar de veelgestelde vragen"
                 className="rounded-xl border border-slate-300 bg-white/90 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >

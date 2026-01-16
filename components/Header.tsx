@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import LanguageSwitcher from "./LanguageSwitcher"
 import { useLocale } from "./LocaleProvider"
+import { localizeHref } from "@/lib/i18n/paths"
 
 
 const NAV = [
@@ -60,16 +61,7 @@ export default function Header() {
     return normalizedPath === href || normalizedPath?.startsWith(href + "/")
   }
 
-  const localizeHref = (href: string) => {
-    if (locale === "nl") return href
-    const [pathPart, hash] = href.split("#")
-    const [base, query] = pathPart.split("?")
-    const params = new URLSearchParams(query || "")
-    params.delete("lang")
-    const queryString = params.toString()
-    const withQuery = `/en${base === "/" ? "" : base}${queryString ? `?${queryString}` : ""}`
-    return hash ? `${withQuery}#${hash}` : withQuery
-  }
+  const localizedHref = (href: string) => localizeHref(href, locale)
 
   const quoteLabel = locale === "en" ? "Request a quote" : "Offerte"
 
@@ -91,7 +83,7 @@ export default function Header() {
         <div className="pointer-events-none absolute inset-x-0 -top-6 hidden h-3 bg-[radial-gradient(circle_at_50%_100%,rgba(0,230,255,0.35),transparent)] blur-lg md:block" />
         <div className="pointer-events-none absolute inset-0 -z-10 hidden bg-[linear-gradient(120deg,rgba(0,230,255,0.08),rgba(215,38,61,0.08))] opacity-50 md:block" />
         {/* Brand */}
-        <Link href="/" className="group inline-flex items-center gap-3">
+        <Link href={localizedHref("/")} className="group inline-flex items-center gap-3">
           <Image
             src="/Logo.webp"
             alt="X3DPrints logo"
@@ -110,7 +102,7 @@ export default function Header() {
           {NAV.map((item) => {
             const active = isActive(item.href)
             const label = locale === "en" ? item.label.en : item.label.nl
-            const href = localizeHref(item.href)
+            const href = localizedHref(item.href)
             return (
               <Link
                 key={item.href}
@@ -141,7 +133,7 @@ export default function Header() {
           <LanguageSwitcher className="ml-2" />
           <ThemeToggle className="ml-2" />
           <Link
-            href={localizeHref("/contact")}
+            href={localizedHref("/contact")}
             className="ml-2 inline-flex items-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(99,102,241,.35)] transition hover:brightness-110 dark:border-[#1f2336] dark:bg-[linear-gradient(90deg,#D7263D,45%,#7A00FF)] dark:shadow-[0_8px_24px_rgba(215,38,61,.4)] dark:ring-1 dark:ring-[#00E6FF]/40"
           >
             {quoteLabel}
@@ -209,7 +201,7 @@ export default function Header() {
                   {NAV.map((item) => {
                     const active = isActive(item.href)
                     const label = locale === "en" ? item.label.en : item.label.nl
-                    const href = localizeHref(item.href)
+                    const href = localizedHref(item.href)
                     return (
                       <Link
                         key={item.href}
@@ -236,7 +228,7 @@ export default function Header() {
 
                 <div className="mt-3 border-t border-slate-200/70 pt-3">
                   <Link
-                    href={localizeHref("/contact")}
+                    href={localizedHref("/contact")}
                     onClick={() => setOpen(false)}
                     className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#D7263D,45%,#7A00FF)] px-4 py-2.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(215,38,61,.35)] transition hover:brightness-110 dark:border-[#1f2336]"
                   >

@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal"
 import Link from "next/link"
 import Image from "next/image"
 import { useEffect, useMemo, useRef, useState } from "react"
+import { useLocale } from "./LocaleProvider"
 
 type Video = { id: string; title: string; description: string }
 
@@ -12,7 +13,15 @@ type Props = {
   highlightIds: string[]
 }
 
-function LiteVideo({ videoId, title }: { videoId: string; title: string }) {
+type VideoCopy = {
+  loadVideo: (title: string) => string
+  previewAlt: (title: string) => string
+  newLabel: string
+  watchOnYoutube: string
+  loadMore: string
+}
+
+function LiteVideo({ videoId, title, copy }: { videoId: string; title: string; copy: VideoCopy }) {
   const [shouldLoad, setShouldLoad] = useState(false)
   const containerRef = useRef<HTMLDivElement | null>(null)
 
@@ -52,11 +61,11 @@ function LiteVideo({ videoId, title }: { videoId: string; title: string }) {
           type="button"
           onClick={() => setShouldLoad(true)}
           className="group relative block h-full w-full"
-          aria-label={`Laad video ${title}`}
+          aria-label={copy.loadVideo(title)}
         >
           <Image
             src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-            alt={`Voorbeeldbeeld bij ${title}`}
+            alt={copy.previewAlt(title)}
             fill
             sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 560px"
             className="h-full w-full object-cover"
@@ -75,6 +84,23 @@ function LiteVideo({ videoId, title }: { videoId: string; title: string }) {
 }
 
 export default function VideoGallery({ videos, highlightIds }: Props) {
+  const { locale } = useLocale()
+  const copy: VideoCopy =
+    locale === "en"
+      ? {
+          loadVideo: (title) => `Load video ${title}`,
+          previewAlt: (title) => `Preview image for ${title}`,
+          newLabel: "New",
+          watchOnYoutube: "Watch on YouTube",
+          loadMore: "Load more videos",
+        }
+      : {
+          loadVideo: (title) => `Laad video ${title}`,
+          previewAlt: (title) => `Voorbeeldbeeld bij ${title}`,
+          newLabel: "Nieuw",
+          watchOnYoutube: "Bekijk op YouTube",
+          loadMore: "Meer videos laden",
+        }
   const [visible, setVisible] = useState(10)
   const highlightSet = useMemo(() => new Set(highlightIds), [highlightIds])
   const hasMore = visible < videos.length
@@ -90,10 +116,10 @@ export default function VideoGallery({ videos, highlightIds }: Props) {
                   className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-slate-900/0 via-slate-900/0 to-slate-900/10 opacity-0 transition-opacity group-hover:opacity-100"
                   aria-hidden
                 />
-                <LiteVideo videoId={video.id} title={video.title} />
+                <LiteVideo videoId={video.id} title={video.title} copy={copy} />
                 {highlightSet.has(video.id) && (
                   <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-emerald-500/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
-                    Nieuw
+                    {copy.newLabel}
                   </span>
                 )}
               </div>
@@ -106,7 +132,7 @@ export default function VideoGallery({ videos, highlightIds }: Props) {
                   rel="noreferrer"
                   className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 transition hover:text-emerald-700"
                 >
-                  Bekijk op YouTube
+                  {copy.watchOnYoutube}
                   <span aria-hidden>-&gt;</span>
                 </Link>
               </div>
@@ -121,7 +147,7 @@ export default function VideoGallery({ videos, highlightIds }: Props) {
             className="rounded-full border border-slate-300 px-6 py-2 text-sm font-semibold text-slate-900 shadow transition hover:-translate-y-px hover:bg-white"
             onClick={() => setVisible((prev) => Math.min(videos.length, prev + 10))}
           >
-            Meer video&rsquo;s laden
+            {copy.loadMore}
           </button>
         </div>
       )}

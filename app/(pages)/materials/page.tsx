@@ -12,6 +12,7 @@ import MaterialSuggestionTool from "@/components/MaterialSuggestionTool"
 import { buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import { normalizeLocale } from "@/lib/i18n/locales"
+import { localizeHref } from "@/lib/i18n/paths"
 
 export const metadata: Metadata = {
   title: "Materialen voor 3D printen (PLA, PETG, TPU) | X3DPrints",
@@ -39,6 +40,7 @@ export const metadata: Metadata = {
 export default function MaterialsPage({ searchParams }: { searchParams?: { lang?: string } }) {
   const locale = normalizeLocale(searchParams?.lang)
   const isEn = locale === "en"
+  const localize = (href: string) => localizeHref(href, locale)
   const materialsMap = materialsByLocale(locale)
   const materials = MATERIAL_ORDER.map((key) => {
     const m = materialsMap[key]
@@ -314,11 +316,11 @@ export default function MaterialsPage({ searchParams }: { searchParams?: { lang?
                 </ul>
                 <p className="mt-4 text-sm text-slate-600">
                   {copy.whyFooterIntro}{" "}
-                  <Link href="/pricing" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  <Link href={localize("/pricing")} className="font-semibold text-indigo-600 hover:text-indigo-500">
                     {copy.whyFooterPricing}
                   </Link>{" "}
                   {isEn ? "or to the" : "of naar de"}{" "}
-                  <Link href="/blog/juiste-3d-print-materiaal" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  <Link href={localize("/blog/juiste-3d-print-materiaal")} className="font-semibold text-indigo-600 hover:text-indigo-500">
                     {copy.whyFooterGuide}
                   </Link>
                   . {isEn ? "That keeps the flow to a quote short." : "Zo blijft de flow richting offerte kort."}
@@ -381,14 +383,14 @@ export default function MaterialsPage({ searchParams }: { searchParams?: { lang?
           </div>
 
           <div className="mt-4 space-y-2">
-            <ShimmerButton href="/contact">{copy.adviceCta}</ShimmerButton>
+            <ShimmerButton href={localize("/contact")}>{copy.adviceCta}</ShimmerButton>
             <p className="text-xs text-slate-500">
               {copy.researchLead} {isEn ? "Check the" : "Check bovenaan de"}{" "}
               <Link href="#material-suggestion-tool" className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600">
                 {copy.researchTool}
               </Link>{" "}
               {isEn ? "and read the" : "en lees de"}{" "}
-              <Link href="/blog" className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600">
+              <Link href={localize("/blog")} className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600">
                 {copy.researchBlog}
               </Link>{" "}
               {isEn ? "for comparisons like PLA vs PETG." : "voor materiaalvergelijkingen zoals PLA vs PETG."}
@@ -402,7 +404,7 @@ export default function MaterialsPage({ searchParams }: { searchParams?: { lang?
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="overflow-hidden p-8 sm:p-10">
-              <FaqPromo className="mt-10" />
+              <FaqPromo className="mt-10" href={localize("/faq")} />
             </GlassCard>
           </Reveal>
         </div>
@@ -412,14 +414,14 @@ export default function MaterialsPage({ searchParams }: { searchParams?: { lang?
         title={copy.readMoreTitle}
         intro={copy.readMoreIntro}
         primaryLinks={[
-          { label: copy.readMorePrimary.services, href: "/services" },
-          { label: copy.readMorePrimary.pricing, href: "/pricing" },
-          { label: copy.readMorePrimary.quote, href: "/contact" },
+          { label: copy.readMorePrimary.services, href: localize("/services") },
+          { label: copy.readMorePrimary.pricing, href: localize("/pricing") },
+          { label: copy.readMorePrimary.quote, href: localize("/contact") },
         ]}
         secondaryLinks={[
-          { label: copy.readMoreSecondary.portfolio, href: "/portfolio" },
-          { label: copy.readMoreSecondary.segments, href: "/segments" },
-          { label: copy.readMoreSecondary.tool, href: "/materials#material-suggestion-tool" },
+          { label: copy.readMoreSecondary.portfolio, href: localize("/portfolio") },
+          { label: copy.readMoreSecondary.segments, href: localize("/segments") },
+          { label: copy.readMoreSecondary.tool, href: localize("/materials#material-suggestion-tool") },
         ]}
       />
 

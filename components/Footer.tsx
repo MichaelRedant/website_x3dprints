@@ -1,9 +1,13 @@
+"use client"
+
 // components/Footer.tsx
 import Link from "next/link"
 import Image from "next/image"
 import Container from "./Container"
 import FooterLocationFinder from "./FooterLocationFinder"
 import CookieSettingsButton from "./CookieSettingsButton"
+import { useLocale } from "./LocaleProvider"
+import { localizeHref } from "@/lib/i18n/paths"
 
 const socials = [
   { href: "https://www.linkedin.com/company/x3dprints", label: "LinkedIn", icon: "linkedin" },
@@ -11,6 +15,99 @@ const socials = [
 ]
 
 const googleReviewLink = "https://g.page/r/CSpxVPgHhTzZEAE/review"
+
+const COPY = {
+  nl: {
+    cta: {
+      title: "Klaar om te printen?",
+      body: "Stuur je STL/STEP en ontvang snel een transparante offerte.",
+      button: "Offerte aanvragen",
+    },
+    brand: {
+      description:
+        "3D-printstudio uit Herzele (regio Gent). Prototypes en kleine series met nette afwerking. Onderdeel van Xinudesign.",
+    },
+    contact: {
+      title: "Contact",
+      location: "Herzele, Oost-Vlaanderen",
+      review: "Deel je Google review",
+    },
+    links: {
+      title: "Links",
+      items: [
+        { label: "Services", href: "/services" },
+        { label: "3D printen", href: "/3d-printen" },
+        { label: "Materialen", href: "/materials" },
+        { label: "Portfolio", href: "/portfolio" },
+        { label: "Segmenten", href: "/segments" },
+        { label: "Blog & kennisbank", href: "/blog" },
+        { label: "3D modelleren", href: "/3d-modelleren" },
+        { label: "Duurzaamheid", href: "/sustainability" },
+        { label: "Over ons", href: "/about" },
+        { label: "Prijzen", href: "/pricing" },
+        { label: "FAQ", href: "/faq" },
+        { label: "Privacybeleid", href: "/privacy" },
+        { label: "Algemene voorwaarden", href: "/algemene-voorwaarden" },
+        { label: "Cookiebeleid", href: "/cookies" },
+        { label: "Sitemap", href: "/sitemap.xml", external: true },
+      ],
+    },
+    local: {
+      title: "Lokale pagina's",
+      body: "Vind je stad zonder lange lijsten. Zoek en filter per letter.",
+    },
+    copyright: "Alle rechten voorbehouden.",
+    pixapop: {
+      title: "Pixapop-partner",
+      body: "Gebrouwen door je favoriete Pixapop-partner in crime (extra koffie inbegrepen).",
+    },
+  },
+  en: {
+    cta: {
+      title: "Ready to print?",
+      body: "Send your STL/STEP and get a clear quote fast.",
+      button: "Request a quote",
+    },
+    brand: {
+      description:
+        "3D printing studio in Herzele (Ghent region). Prototypes and small batches with clean finish. Part of Xinudesign.",
+    },
+    contact: {
+      title: "Contact",
+      location: "Herzele, East Flanders",
+      review: "Share your Google review",
+    },
+    links: {
+      title: "Links",
+      items: [
+        { label: "Services", href: "/services" },
+        { label: "3D printing", href: "/3d-printen" },
+        { label: "Materials", href: "/materials" },
+        { label: "Portfolio", href: "/portfolio" },
+        { label: "Segments", href: "/segments" },
+        { label: "Blog & knowledge base", href: "/blog" },
+        { label: "3D modeling", href: "/3d-modelleren" },
+        { label: "Sustainability", href: "/sustainability" },
+        { label: "About", href: "/about" },
+        { label: "Pricing", href: "/pricing" },
+        { label: "FAQ", href: "/faq" },
+        { label: "Privacy policy", href: "/privacy" },
+        { label: "Terms and conditions", href: "/algemene-voorwaarden" },
+        { label: "Cookie policy", href: "/cookies" },
+        { label: "Sitemap", href: "/sitemap.xml", external: true },
+      ],
+    },
+    local: {
+      title: "Local pages",
+      body: "Find your city without long lists. Search and filter by letter.",
+    },
+    copyright: "All rights reserved.",
+    pixapop: {
+      title: "Pixapop partner",
+      body: "Brewed by your favorite Pixapop partner in crime (extra coffee included).",
+    },
+  },
+}
 
 function SocialIcon({ type, className }: { type: string; className?: string }) {
   if (type === "linkedin") {
@@ -37,6 +134,10 @@ function SocialIcon({ type, className }: { type: string; className?: string }) {
 }
 
 export default function Footer() {
+  const { locale } = useLocale()
+  const localize = (href: string) => localizeHref(href, locale)
+  const copy = locale === "en" ? COPY.en : COPY.nl
+
   return (
     <footer className="relative mt-24">
       {/* top gradient hairline */}
@@ -47,15 +148,15 @@ export default function Footer() {
         <div className="mx-auto -mt-10 max-w-6xl">
           <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 text-center shadow-sm backdrop-blur sm:flex sm:items-center sm:justify-between sm:text-left sm:p-8">
             <div className="space-y-1">
-              <p className="text-sm font-semibold tracking-tight text-slate-900">Klaar om te printen?</p>
-              <p className="text-sm text-slate-600">Stuur je STL/STEP en ontvang snel een transparante offerte.</p>
+              <p className="text-sm font-semibold tracking-tight text-slate-900">{copy.cta.title}</p>
+              <p className="text-sm text-slate-600">{copy.cta.body}</p>
             </div>
             <div className="mt-4 flex justify-center sm:mt-0 sm:justify-end">
               <Link
-                href="/contact"
+                href={localize("/contact")}
                 className="inline-flex items-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(99,102,241,.35)] transition hover:brightness-110"
               >
-                Offerte aanvragen
+                {copy.cta.button}
               </Link>
             </div>
           </div>
@@ -64,17 +165,14 @@ export default function Footer() {
 
       {/* main footer */}
       <div className="mt-10 border-t bg-white/60 backdrop-blur">
-          <Container className="grid gap-10 py-12 text-sm text-slate-600 text-center md:grid-cols-5 md:text-left">
+        <Container className="grid gap-10 py-12 text-center text-sm text-slate-600 md:grid-cols-5 md:text-left">
           {/* brand */}
           <div className="md:col-span-2">
-            <Link href="/" className="inline-flex items-center gap-3">
+            <Link href={localize("/")} className="inline-flex items-center gap-3">
               <Image src="/Logo.webp" alt="X3DPrints logo" width={44} height={44} className="h-11 w-11 object-contain" />
               <span className="text-base font-semibold tracking-tight text-slate-900">X3DPrints</span>
             </Link>
-            <p className="mt-3 max-w-prose mx-auto md:mx-0">
-              3D-printstudio uit Herzele (regio Gent). Prototypes en kleine series met nette afwerking. Onderdeel van
-              Xinudesign.
-            </p>
+            <p className="mt-3 mx-auto max-w-prose md:mx-0">{copy.brand.description}</p>
 
             <div className="mt-4 flex items-center justify-center gap-3 md:justify-start">
               {socials.map(({ href, label, icon }) => (
@@ -94,9 +192,9 @@ export default function Footer() {
 
           {/* contact */}
           <div className="space-y-1">
-            <div className="font-semibold text-slate-900">Contact</div>
+            <div className="font-semibold text-slate-900">{copy.contact.title}</div>
             <ul className="mt-3 space-y-1">
-              <li>Herzele, Oost-Vlaanderen</li>
+              <li>{copy.contact.location}</li>
               <li>
                 <a href="mailto:michael@xinudesign.be" className="underline-offset-2 hover:underline">
                   michael@xinudesign.be
@@ -110,38 +208,34 @@ export default function Footer() {
               className="mt-4 inline-flex items-center gap-2 rounded-full border border-amber-200 bg-white/80 px-3 py-1.5 text-xs font-semibold text-amber-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
             >
               <span aria-hidden className="text-base">⭐</span>
-              Deel je Google review
+              {copy.contact.review}
             </a>
           </div>
 
           {/* statische links */}
           <div>
-            <div className="font-semibold text-slate-900">Links</div>
+            <div className="font-semibold text-slate-900">{copy.links.title}</div>
             <ul className="mt-3 space-y-2">
-              <li><Link href="/services" className="hover:text-slate-900">Services</Link></li>
-              <li><Link href="/3d-printen" className="hover:text-slate-900">3D printen</Link></li>
-              <li><Link href="/materials" className="hover:text-slate-900">Materialen</Link></li>
-              <li><Link href="/portfolio" className="hover:text-slate-900">Portfolio</Link></li>
-              <li><Link href="/segments" className="hover:text-slate-900">Segmenten</Link></li>
-              <li><Link href="/blog" className="hover:text-slate-900">Blog & kennisbank</Link></li>
-              <li><Link href="/3d-modelleren" className="hover:text-slate-900">3D modelleren</Link></li>
-              <li><Link href="/sustainability" className="hover:text-slate-900">Duurzaamheid</Link></li>
-              <li><Link href="/about" className="hover:text-slate-900">Over ons</Link></li>
-              <li><Link href="/pricing" className="hover:text-slate-900">Prijzen</Link></li>
-              <li><Link href="/faq" className="hover:text-slate-900">FAQ</Link></li>
-              <li><Link href="/privacy" className="hover:text-slate-900">Privacybeleid</Link></li>
-              <li><Link href="/algemene-voorwaarden" className="hover:text-slate-900">Algemene voorwaarden</Link></li>
-              <li><Link href="/cookies" className="hover:text-slate-900">Cookiebeleid</Link></li>
-              <li><a href="/sitemap.xml" className="hover:text-slate-900">Sitemap</a></li>
+              {copy.links.items.map((item) => (
+                <li key={item.href}>
+                  {item.external ? (
+                    <a href={item.href} className="hover:text-slate-900">
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link href={localize(item.href)} className="hover:text-slate-900">
+                      {item.label}
+                    </Link>
+                  )}
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* lokale zoek */}
           <div>
-            <div className="font-semibold text-slate-900">Lokale pagina&apos;s</div>
-            <p className="mt-2 text-xs text-slate-600">
-              Vind je stad zonder lange lijsten. Zoek en filter per letter.
-            </p>
+            <div className="font-semibold text-slate-900">{copy.local.title}</div>
+            <p className="mt-2 text-xs text-slate-600">{copy.local.body}</p>
             <div className="mt-3">
               <FooterLocationFinder />
             </div>
@@ -151,7 +245,9 @@ export default function Footer() {
         {/* bottom bar */}
         <div className="border-t">
           <Container className="flex flex-col items-center justify-center gap-4 py-6 text-center text-xs text-slate-500">
-            <p>(c) {new Date().getFullYear()} X3DPrints. Alle rechten voorbehouden.</p>
+            <p>
+              (c) {new Date().getFullYear()} X3DPrints. {copy.copyright}
+            </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <CookieSettingsButton className="text-slate-500 hover:text-slate-900" />
               <Link
@@ -168,9 +264,11 @@ export default function Footer() {
                   className="h-6 w-auto opacity-90 transition group-hover:opacity-100"
                 />
                 <div className="flex flex-col">
-                  <span className="text-[11px] font-semibold uppercase tracking-wide text-slate-700">Pixapop-partner</span>
+                  <span className="text-[11px] font-semibold uppercase tracking-wide text-slate-700">
+                    {copy.pixapop.title}
+                  </span>
                   <span className="max-w-[240px] text-slate-500 sm:max-w-none">
-                    Gebrouwen door je favoriete Pixapop-partner in crime (extra koffie inbegrepen).
+                    {copy.pixapop.body}
                   </span>
                 </div>
               </Link>
