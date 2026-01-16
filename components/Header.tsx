@@ -7,19 +7,22 @@ import ThemeToggle from "./ThemeToggle"
 import { usePathname } from "next/navigation"
 import { useEffect, useRef, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
+import LanguageSwitcher from "./LanguageSwitcher"
+import { useLocale } from "./LocaleProvider"
 
 
 const NAV = [
-  { href: "/services", label: "Services" },
-  { href: "/materials", label: "Materialen" },
-  { href: "/viewer", label: "3D Viewer" },
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/about", label: "Over ons" },
-  { href: "/pricing", label: "Prijzen" },
-  { href: "/contact", label: "Contact" },
+  { href: "/services", label: { nl: "Services", en: "Services" } },
+  { href: "/materials", label: { nl: "Materialen", en: "Materials" } },
+  { href: "/viewer", label: { nl: "3D Viewer", en: "3D Viewer" } },
+  { href: "/portfolio", label: { nl: "Portfolio", en: "Portfolio" } },
+  { href: "/about", label: { nl: "Over ons", en: "About" } },
+  { href: "/pricing", label: { nl: "Prijzen", en: "Pricing" } },
+  { href: "/contact", label: { nl: "Contact", en: "Contact" } },
 ]
 
 export default function Header() {
+  const { locale } = useLocale()
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -50,10 +53,25 @@ export default function Header() {
     return () => window.removeEventListener("keydown", onKey)
   }, [])
 
+  const normalizedPath = pathname?.replace(/^\/en(?=\/|$)/, "") || "/"
+
   function isActive(href: string) {
-    if (href === "/") return pathname === "/"
-    return pathname === href || pathname?.startsWith(href + "/")
+    if (href === "/") return normalizedPath === "/"
+    return normalizedPath === href || normalizedPath?.startsWith(href + "/")
   }
+
+  const localizeHref = (href: string) => {
+    if (locale === "nl") return href
+    const [pathPart, hash] = href.split("#")
+    const [base, query] = pathPart.split("?")
+    const params = new URLSearchParams(query || "")
+    params.delete("lang")
+    const queryString = params.toString()
+    const withQuery = `/en${base === "/" ? "" : base}${queryString ? `?${queryString}` : ""}`
+    return hash ? `${withQuery}#${hash}` : withQuery
+  }
+
+  const quoteLabel = locale === "en" ? "Request a quote" : "Offerte"
 
   return (
     <header
@@ -91,17 +109,19 @@ export default function Header() {
         <nav className="hidden items-center gap-3 lg:flex lg:overflow-x-auto lg:whitespace-nowrap lg:px-1 lg:-mx-1">
           {NAV.map((item) => {
             const active = isActive(item.href)
+            const label = locale === "en" ? item.label.en : item.label.nl
+            const href = localizeHref(item.href)
             return (
               <Link
                 key={item.href}
-                href={item.href}
+                href={href}
                 className="group relative px-3 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900 dark:text-[#e7f5ff] dark:hover:text-white dark:tracking-[0.12em] dark:uppercase dark:bg-transparent dark:shadow-none md:text-[13px] lg:text-sm"
               >
                 <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(0,230,255,0.55),transparent)] opacity-30" />
                 <span className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,0,168,0.55),transparent)] opacity-0 transition duration-200 group-hover:opacity-100" />
                 <span className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_200%,rgba(0,230,255,0.12),transparent)] opacity-0 transition duration-200 group-hover:opacity-70" />
                 <span className="relative drop-shadow-[0_0_12px_rgba(0,230,255,.4)] group-hover:drop-shadow-[0_0_16px_rgba(255,0,168,.5)]">
-                  {item.label}
+                  {label}
                 </span>
                 <AnimatePresence>
                   {active && (
@@ -118,12 +138,13 @@ export default function Header() {
               </Link>
             )
           })}
+          <LanguageSwitcher className="ml-2" />
           <ThemeToggle className="ml-2" />
           <Link
-            href="/contact"
+            href={localizeHref("/contact")}
             className="ml-2 inline-flex items-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(99,102,241,.35)] transition hover:brightness-110 dark:border-[#1f2336] dark:bg-[linear-gradient(90deg,#D7263D,45%,#7A00FF)] dark:shadow-[0_8px_24px_rgba(215,38,61,.4)] dark:ring-1 dark:ring-[#00E6FF]/40"
           >
-            Offerte
+            {quoteLabel}
           </Link>
         </nav>
 
@@ -187,10 +208,12 @@ export default function Header() {
                 <div className="mt-2 grid gap-1">
                   {NAV.map((item) => {
                     const active = isActive(item.href)
+                    const label = locale === "en" ? item.label.en : item.label.nl
+                    const href = localizeHref(item.href)
                     return (
                       <Link
                         key={item.href}
-                        href={item.href}
+                        href={href}
                         onClick={() => setOpen(false)}
                         className={[
                           "rounded-xl px-3 py-2.5 text-base font-medium transition",
@@ -199,10 +222,13 @@ export default function Header() {
                             : "text-slate-700 hover:bg-white hover:text-slate-900 dark:text-slate-200 dark:hover:bg-[#111525] dark:hover:text-white",
                         ].join(" ")}
                       >
-                        {item.label}
+                        {label}
                       </Link>
                     )
                   })}
+                  <div className="mt-2">
+                    <LanguageSwitcher className="w-full justify-between" />
+                  </div>
                   <div className="mt-2">
                     <ThemeToggle className="w-full justify-between" />
                   </div>
@@ -210,11 +236,11 @@ export default function Header() {
 
                 <div className="mt-3 border-t border-slate-200/70 pt-3">
                   <Link
-                    href="/contact"
+                    href={localizeHref("/contact")}
                     onClick={() => setOpen(false)}
                     className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#D7263D,45%,#7A00FF)] px-4 py-2.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(215,38,61,.35)] transition hover:brightness-110 dark:border-[#1f2336]"
                   >
-                    Offerte aanvragen
+                    {locale === "en" ? "Request a quote" : "Offerte aanvragen"}
                   </Link>
                 </div>
               </motion.div>

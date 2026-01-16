@@ -577,6 +577,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* PRINTABLES CALL-TO-ACTION (lager op de pagina) */}
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="border-white/50 bg-gradient-to-br from-white/85 to-white/60 p-5 shadow-lg ring-1 ring-white/60">
+              <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+                <div className="max-w-3xl">
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600">Nog geen ontwerp</p>
+                  <p className="mt-1 text-sm text-slate-700 sm:text-base">
+                    Browse de Printables.com bibliotheek voor kant-en-klare modellen en stuur de link door. Wij checken
+                    licentie, schaal en materiaal en printen het lokaal in Belgie.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  <ShimmerButton href="/contact?source=printables">Stuur je Printables link</ShimmerButton>
+                  <Link
+                    href="https://www.printables.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    prefetch={false}
+                    className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-4 py-2.5 text-sm font-semibold text-indigo-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                  >
+                    Open Printables.com
+                  </Link>
+                </div>
+              </div>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       {/* WAAROM PLA (compact) */}
       <section className="px-6 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">

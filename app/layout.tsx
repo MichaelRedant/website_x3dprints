@@ -10,6 +10,7 @@ import AnalyticsConsent from "@/components/AnalyticsConsent"
 import ThemeProvider from "@/components/ThemeProvider"
 import { Orbitron, JetBrains_Mono } from "next/font/google"
 import { cn } from "@/lib/utils";
+import LocaleProvider from "@/components/LocaleProvider"
 
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
 const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron", weight: ["400", "500", "600", "700"] })
@@ -95,15 +96,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: `(function(){try{const key="x3d-theme";const stored=localStorage.getItem(key);const prefers=window.matchMedia("(prefers-color-scheme: dark)").matches;const theme=(stored==="dark"||stored==="light")?stored:(prefers?"dark":"light");const root=document.documentElement;if(theme==="dark"){root.classList.add("dark");root.dataset.theme="hawkins";}else{root.classList.remove("dark");root.dataset.theme="light";}}catch(e){}})();`,
           }}
         />
-        <ThemeProvider>
-          <ScrollProgress />
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <CookieBanner />
-          <BackToTop />
-          <AnalyticsConsent />
-        </ThemeProvider>
+        <LocaleProvider>
+          <ThemeProvider>
+            <ScrollProgress />
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <CookieBanner />
+            <BackToTop />
+            <AnalyticsConsent />
+          </ThemeProvider>
+        </LocaleProvider>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

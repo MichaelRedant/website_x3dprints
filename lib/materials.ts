@@ -37,6 +37,12 @@ export type MaterialInfo = {
   swatches: Swatch[];
 };
 
+export type MaterialCopy = {
+  name: string;
+  description?: string;
+  features?: string[];
+};
+
 // Gradient helpers (zelfde als oude materials page)
 const g = {
   rainbow:
@@ -432,3 +438,149 @@ export const MATERIAL_SLUGS: Record<MaterialKey, string> = MATERIAL_ORDER.reduce
 export const MATERIAL_KEY_BY_SLUG = Object.fromEntries(
   MATERIAL_ORDER.map((key) => [MATERIAL_SLUGS[key], key]),
 ) as Record<string, MaterialKey>
+
+const MATERIAL_COPY_NL: Record<MaterialKey, MaterialCopy> = MATERIAL_ORDER.reduce(
+  (acc, key) => {
+    const { name, description, features } = MATERIALS[key]
+    acc[key] = { name, description, features }
+    return acc
+  },
+  {} as Record<MaterialKey, MaterialCopy>,
+)
+
+const MATERIAL_COPY_EN: Record<MaterialKey, MaterialCopy> = {
+  PLA_TOUGH_PLUS: {
+    name: "PLA Tough+",
+    description:
+      "Tougher than standard PLA and keeps its shape better on impact. For parts that need to take a little more abuse.",
+    features: ["Tough, less brittle", "Clean finish", "Print friendly"],
+  },
+  PLA_MATTE: {
+    name: "PLA Matte",
+    description: "Matte PLA with low gloss. Masks layer lines and looks premium.",
+    features: ["Matte surface", "Sharp details"],
+  },
+  PLA_GLOW: {
+    name: "PLA Glow",
+    description: "Charges with light and glows brightly in the dark.",
+    features: ["Glow in the dark", "Decorative and fun"],
+  },
+  PLA_MARBLE: {
+    name: "PLA Marble",
+    description: "Subtle marble look with speckles for an elegant, premium finish.",
+    features: ["Matte marble texture", "Stylish look"],
+  },
+  PLA_SPARKLE: {
+    name: "PLA Sparkle",
+    description: "PLA with glitter particles. Subtle to eye-catching depending on light and color.",
+    features: ["Glitter effect", "Depth in the surface"],
+  },
+  PLA_METAL: {
+    name: "PLA Metal",
+    description:
+      "Metallic sheen without conductivity. Great for props or an industrial aesthetic.",
+    features: ["Metallic sheen", "Even lines"],
+  },
+  PLA_GALAXY: {
+    name: "PLA Galaxy",
+    description: "Deep base colors with micro glitter for a deep-space vibe.",
+    features: ["Deep tones", "Subtle sparkle"],
+  },
+  PLA_AERO: {
+    name: "PLA Aero",
+    description: "Lightweight PLA variant with lower density. Ideal for large, light models.",
+    features: ["Lightweight", "High volume at low mass"],
+  },
+  PLA_SILK_PLUS: {
+    name: "PLA Silk+",
+    description:
+      "Silky top layer with strong reflection. Perfect for showpieces and awards.",
+    features: ["Silky shine", "Deep colors"],
+  },
+  PLA_BASIC_GRADIENT: {
+    name: "PLA Basic Gradient",
+    description: "Pre-blended spools with soft gradients. Every print is unique.",
+    features: ["Color gradient", "Decorative"],
+  },
+  PLA_BASIC: {
+    name: "PLA Basic",
+    description: "Classic PLA line with wide color coverage. For general prints and mockups.",
+    features: ["Many colors", "Affordable"],
+  },
+  PLA_TRANSLUCENT: {
+    name: "PLA Translucent",
+    description: "Semi-transparent PLA for light-transmitting applications.",
+    features: ["Light transmitting", "Ambient look"],
+  },
+  PLA_SILK_MULTI_COLOR: {
+    name: "PLA Silk Multi-Color",
+    description: "Silky gloss with built-in gradients for spectacular prints.",
+    features: ["Color gradient", "High gloss"],
+  },
+  PLA_CF: {
+    name: "PLA-CF",
+    description:
+      "Carbon-filled PLA. Stiff and matte; for jigs, panels and functional parts where PLA alone is too soft.",
+    features: ["Stiff and light", "Matte look"],
+  },
+  PLA_WOOD: {
+    name: "PLA Wood",
+    description:
+      "PLA with wood particles. Warm, natural finish that sands and paints well.",
+    features: ["Natural look", "Light wood scent while printing"],
+  },
+  PETG: {
+    name: "PETG",
+    description:
+      "Tougher than PLA, slightly flexible and more resistant to heat and chemicals. For functional parts.",
+    features: ["Functional", "More chemical resistance", "Dimensional stability"],
+  },
+  PC: {
+    name: "PC",
+    description:
+      "Polycarbonate for heat-resistant, mechanically strong parts with a sleek, semi-transparent look.",
+    features: ["Heat resistant", "UV resistant", "Technical parts"],
+  },
+  TPU: {
+    name: "TPU",
+    description:
+      "Flexible and wear-resistant. Great for grips, bumpers and damping. Requires slower printing.",
+    features: ["Flexible", "Shock absorbing"],
+  },
+}
+
+const SWATCH_LABEL_OVERRIDES_EN: Record<string, string> = {
+  "Glow Groen": "Glow Green",
+  "Glow Geel": "Glow Yellow",
+  "Glow Blauw": "Glow Blue",
+  "Transparant": "Transparent",
+  "Helder Zwart": "Clear Black",
+  Zwart: "Black",
+  Grijs: "Gray",
+}
+
+export function materialCopyByLocale(locale: Locale): Record<MaterialKey, MaterialCopy> {
+  return locale === "en" ? MATERIAL_COPY_EN : MATERIAL_COPY_NL
+}
+
+export function materialsByLocale(locale: Locale): Record<MaterialKey, MaterialInfo> {
+  const copy = materialCopyByLocale(locale)
+  return MATERIAL_ORDER.reduce((acc, key) => {
+    const base = MATERIALS[key]
+    acc[key] = {
+      ...base,
+      name: copy[key].name,
+      description: copy[key].description,
+      features: copy[key].features ?? base.features,
+      swatches: base.swatches.map((swatch) => ({
+        ...swatch,
+        label:
+          locale === "en"
+            ? SWATCH_LABEL_OVERRIDES_EN[swatch.label] ?? swatch.label
+            : swatch.label,
+      })),
+    }
+    return acc
+  }, {} as Record<MaterialKey, MaterialInfo>)
+}
+import { type Locale } from "./i18n/locales"
