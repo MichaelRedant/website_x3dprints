@@ -98,7 +98,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-3 lg:flex lg:overflow-x-auto lg:whitespace-nowrap lg:px-1 lg:-mx-1">
+        <nav className="hidden items-center gap-3 lg:flex lg:overflow-x-auto lg:overflow-y-visible lg:whitespace-nowrap lg:px-1 lg:-mx-1">
           {NAV.map((item) => {
             const active = isActive(item.href)
             const label = locale === "en" ? item.label.en : item.label.nl

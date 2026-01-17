@@ -73,6 +73,7 @@ export default function MaterialGrid({ materials }: MaterialGridProps) {
             features={m.features}
             swatches={m.swatches}
             href={localize(`/materials/${m.slug}`)}
+            ctaLabel={locale === "en" ? "Read more" : "Meer lezen"}
             faq={m.faq}
           />
         </Reveal>

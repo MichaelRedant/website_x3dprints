@@ -4,11 +4,14 @@ const EN_PREFIX = "/en"
 
 const EN_PATHS = new Set<string>([
   "/",
+  "/about",
   "/blog",
   "/materials",
   "/portfolio",
   "/pricing",
+  "/segments",
   "/services",
+  "/contact",
 ])
 
 const EN_BLOG_SLUGS = new Set<string>([
@@ -38,6 +41,9 @@ function hasEnglishRoute(path: string) {
   if (normalized.startsWith("/blog/")) {
     const slug = normalized.slice("/blog/".length).split("/")[0]
     return EN_BLOG_SLUGS.has(slug)
+  }
+  if (normalized.startsWith("/materials/")) {
+    return true
   }
   return false
 }

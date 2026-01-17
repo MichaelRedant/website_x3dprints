@@ -4,6 +4,7 @@
 import { useEffect, useMemo, useRef, useState } from "react"
 import { useSearchParams } from "next/navigation"
 import { MATERIALS, MATERIAL_KEY_BY_SLUG, materialSlug, type MaterialKey } from "@/lib/materials"
+import { useLocale } from "./LocaleProvider"
 
 type FormDataShape = {
   name: string
@@ -28,6 +29,55 @@ type ContactFormProps = {
   defaultMaterial?: string
 }
 
+const COPY = {
+  nl: {
+    contactHeading: "Contactgegevens",
+    nameLabel: "Naam*",
+    namePlaceholder: "Voornaam Naam",
+    emailLabel: "E-mail*",
+    emailPlaceholder: "jij@voorbeeld.be",
+    projectHeading: "Projectdetails",
+    quantityLabel: "Aantal",
+    materialLabel: "Materiaal",
+    materialPlaceholder: "PLA Matte, PETG, TPU...",
+    unknownMaterial: "Onzeker, graag advies",
+    estimateHeading: "Indicatieve schatting (excl. btw, ontwerpkosten, premium STL)",
+    estimateHelp: "Deze berekening komt uit de prijscalculator. Pas desnoods aan of laat staan voor context.",
+    descriptionHeading: "Beschrijving",
+    descriptionPlaceholder: "Downloadlink(s) naar STL/STEP, afmetingen, gewenste afwerking, deadline...",
+    submit: "Verstuur aanvraag",
+    submitting: "Versturen...",
+    success: "Verzonden. Bedankt!",
+    errorGeneric: "Er ging iets mis. Probeer opnieuw.",
+    errorUnexpected: "Onverwacht serverantwoord.",
+    errorUnknown: "Onbekende fout.",
+    errorNetwork: "Netwerkfout",
+  },
+  en: {
+    contactHeading: "Contact details",
+    nameLabel: "Name*",
+    namePlaceholder: "First name Last name",
+    emailLabel: "Email*",
+    emailPlaceholder: "you@example.com",
+    projectHeading: "Project details",
+    quantityLabel: "Quantity",
+    materialLabel: "Material",
+    materialPlaceholder: "PLA Matte, PETG, TPU...",
+    unknownMaterial: "Not sure, need advice",
+    estimateHeading: "Indicative estimate (excl. VAT, design, premium STL)",
+    estimateHelp: "This calculation comes from the pricing calculator. Adjust if needed or leave as context.",
+    descriptionHeading: "Description",
+    descriptionPlaceholder: "Download link(s) to STL/STEP, dimensions, desired finish, deadline...",
+    submit: "Send request",
+    submitting: "Sending...",
+    success: "Sent. Thank you!",
+    errorGeneric: "Something went wrong. Please try again.",
+    errorUnexpected: "Unexpected server response.",
+    errorUnknown: "Unknown error.",
+    errorNetwork: "Network error",
+  },
+}
+
 function resolveMaterialName(raw: string) {
   const value = raw.trim()
   if (!value) return ""
@@ -49,6 +99,8 @@ function resolveMaterialName(raw: string) {
 
 export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) {
   const searchParams = useSearchParams()
+  const { locale } = useLocale()
+  const copy = locale === "en" ? COPY.en : COPY.nl
   const materialFromQuery = searchParams.get("material") || ""
   const quoteFromQuery = searchParams.get("quote") || ""
   const decodedQueryMaterial = useMemo(() => {
@@ -149,14 +201,16 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
             return
           }
 
-          const endpointError = result?.error || (!isJson ? "Onverwacht serverantwoord." : res.statusText || "Onbekende fout.")
+          const endpointError =
+            result?.error ||
+            (!isJson ? copy.errorUnexpected : res.statusText || copy.errorUnknown)
           lastError = endpointError
         } catch (err) {
-          lastError = (err instanceof Error ? err.message : "Netwerkfout")
+          lastError = err instanceof Error ? err.message : copy.errorNetwork
         }
       }
 
-      setServerError(lastError || "Er ging iets mis. Probeer opnieuw.")
+      setServerError(lastError || copy.errorGeneric)
       setStatus("error")
     } catch {
       setStatus("error")
@@ -165,22 +219,22 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
 
   const materialOptions = [
     ...Object.values(MATERIALS).map((m) => m.name),
-    "Onzeker, graag advies",
+    copy.unknownMaterial,
   ]
 
   return (
     <form onSubmit={onSubmit} className="grid gap-5">
       {/* Contactgegevens (basic) */}
       <section className={groupCls} aria-labelledby="contact-legend">
-        <h3 id="contact-legend" className={headingCls}>Contactgegevens</h3>
+        <h3 id="contact-legend" className={headingCls}>{copy.contactHeading}</h3>
 
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <div className={row}>
-            <label className={labelCls} htmlFor="name">Naam*</label>
+            <label className={labelCls} htmlFor="name">{copy.nameLabel}</label>
             <input
               id="name"
               className={inputBase}
-              placeholder="Voornaam Naam"
+              placeholder={copy.namePlaceholder}
               value={data.name}
               onChange={e => update("name", e.target.value)}
               required
@@ -188,12 +242,12 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
           </div>
 
           <div className={row}>
-            <label className={labelCls} htmlFor="email">E-mail*</label>
+            <label className={labelCls} htmlFor="email">{copy.emailLabel}</label>
             <input
               id="email"
               type="email"
               className={`${inputBase} ${data.email && !emailValid ? "border-red-400 ring-4 ring-red-400/10" : ""}`}
-              placeholder="jij@voorbeeld.be"
+              placeholder={copy.emailPlaceholder}
               value={data.email}
               onChange={e => update("email", e.target.value)}
               required
@@ -205,10 +259,10 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
 
       {/* Projectdetails (optioneel, maar simpel gehouden) */}
       <section className={groupCls} aria-labelledby="project-legend">
-        <h3 id="project-legend" className={headingCls}>Projectdetails</h3>
+        <h3 id="project-legend" className={headingCls}>{copy.projectHeading}</h3>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <div className={row}>
-            <label className={labelCls} htmlFor="quantity">Aantal</label>
+            <label className={labelCls} htmlFor="quantity">{copy.quantityLabel}</label>
             <input
               id="quantity"
               type="number"
@@ -221,12 +275,12 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
           </div>
 
           <div className={row}>
-            <label className={labelCls} htmlFor="material">Materiaal</label>
+            <label className={labelCls} htmlFor="material">{copy.materialLabel}</label>
             <input
               id="material"
               className={inputBase}
               list="materials"
-              placeholder="PLA Matte, PETG, TPU..."
+              placeholder={copy.materialPlaceholder}
               value={data.material}
               onChange={e => update("material", e.target.value)}
             />
@@ -241,10 +295,10 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
       {data.quote ? (
         <section className={groupCls} aria-labelledby="quote-legend">
           <h3 id="quote-legend" className={headingCls}>
-            Indicatieve schatting (excl. btw, ontwerpkosten, premium STL)
+            {copy.estimateHeading}
           </h3>
           <p className="mt-2 text-xs text-slate-600 dark:text-slate-400">
-            Deze berekening komt uit de prijscalculator. Pas desnoods aan of laat staan voor context.
+            {copy.estimateHelp}
           </p>
           <div className="mt-3 grid gap-2">
             <textarea
@@ -259,13 +313,13 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
 
       {/* Beschrijving */}
       <section className={groupCls} aria-labelledby="message-legend">
-        <h3 id="message-legend" className={headingCls}>Beschrijving</h3>
+        <h3 id="message-legend" className={headingCls}>{copy.descriptionHeading}</h3>
         <div className="mt-3 grid gap-2">
-          <label className="sr-only" htmlFor="message">Beschrijving</label>
+          <label className="sr-only" htmlFor="message">{copy.descriptionHeading}</label>
           <textarea
             id="message"
             className={`${inputBase} min-h-[160px]`}
-            placeholder="Downloadlink(s) naar STL/STEP, afmetingen, gewenste afwerking, deadline..."
+            placeholder={copy.descriptionPlaceholder}
             value={data.message}
             onChange={e => update("message", e.target.value)}
             rows={6}
@@ -292,14 +346,14 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
           disabled={status === "loading" || !emailValid}
           className="rounded-xl border border-slate-300 bg-white/90 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white disabled:opacity-60 dark:border-slate-600 dark:bg-[#0F1324] dark:text-white dark:hover:bg-[#111a2d]"
         >
-          {status === "loading" ? "Versturen..." : "Verstuur aanvraag"}
+          {status === "loading" ? copy.submitting : copy.submit}
         </button>
         {status === "ok" && (
-          <span className="text-sm font-medium text-emerald-600 dark:text-emerald-400">Verzonden. Bedankt!</span>
+          <span className="text-sm font-medium text-emerald-600 dark:text-emerald-400">{copy.success}</span>
         )}
         {status === "error" && (
           <span className="text-sm font-medium text-red-600 dark:text-red-400">
-            {serverError || "Er ging iets mis. Probeer opnieuw."}
+            {serverError || copy.errorGeneric}
           </span>
         )}
       </div>

@@ -8,17 +8,25 @@ import Counter from "@/components/Counter"
 import GlassOrb from "@/components/GlassOrb"
 import GlassCard from "@/components/GlassCard"
 import FaqPromo from "@/components/FaqPromo"
+import { normalizeLocale } from "@/lib/i18n/locales"
+import { localizeHref } from "@/lib/i18n/paths"
 
-export const metadata: Metadata = {
+const NL_METADATA: Metadata = {
   title: "Over X3DPrints | 3D-printstudio in Herzele",
   description:
     "Maak kennis met X3DPrints: compacte 3D-printstudio in Herzele voor prototypes en kleine series. Rechtstreeks contact, eerlijk materiaaladvies en nette afwerking.",
-  alternates: { canonical: "https://www.x3dprints.be/over" },
+  alternates: {
+    canonical: "https://www.x3dprints.be/about",
+    languages: {
+      "nl-BE": "https://www.x3dprints.be/about",
+      en: "https://www.x3dprints.be/en/about",
+    },
+  },
   openGraph: {
     title: "Over X3DPrints",
     description:
       "Compacte 3D-printstudio in Herzele. PLA als standaard, met PETG, ABS/ASA, Nylon en PA-CF wanneer het project dat vraagt.",
-    url: "https://www.x3dprints.be/over",
+    url: "https://www.x3dprints.be/about",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -26,14 +34,216 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
-export default function Page() {
+export const EN_METADATA: Metadata = {
+  title: "About X3DPrints | 3D print studio in Herzele",
+  description:
+    "Meet X3DPrints: a compact 3D printing studio in Herzele for prototypes and small batches. Direct contact, honest material advice and clean finishing.",
+  alternates: {
+    canonical: "https://www.x3dprints.be/en/about",
+    languages: {
+      "nl-BE": "https://www.x3dprints.be/about",
+      en: "https://www.x3dprints.be/en/about",
+    },
+  },
+  openGraph: {
+    title: "About X3DPrints",
+    description:
+      "Compact 3D printing studio in Herzele. PLA as standard, with PETG, ABS/ASA, Nylon and PA-CF when the project demands it.",
+    url: "https://www.x3dprints.be/en/about",
+    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    locale: "en_BE",
+    siteName: "X3DPrints",
+  },
+  twitter: { card: "summary_large_image" },
+}
+
+export const metadata: Metadata = NL_METADATA
+
+const ABOUT_COPY_NL = {
+  hero: {
+    title: "Over X3DPrints",
+    introOne:
+      "X3DPrints is een eenpersoons 3D-printstudio in bijberoep, gevestigd in Herzele en onderdeel van Xinudesign. Je spreekt rechtstreeks met de maker die ook produceert, test en afwerkt. Geen tickets, wel korte lijnen en onderdelen die gewoon passen.",
+    introTwo:
+      "Ideaal voor prototypes en kleine series. PLA is onze standaard voor strak detail, en waar nodig schakelen we over naar PETG, ABS/ASA, Nylon (PA) of PA-CF. We leveren vooral in de regio Gent, Aalst, Geraardsbergen en Oudenaarde.",
+    ctas: {
+      materials: "Materialen",
+      services: "Diensten",
+      contact: "Contact",
+    },
+  },
+  stats: {
+    buildVolumeLabel: "Bouwvolume",
+    buildVolumeNote: "langste zijde (een geheel)",
+    leadTimeLabel: "Doorlooptijd",
+    leadTimeNote: "afhankelijk van project",
+    toleranceLabel: "Tolerantie",
+    toleranceNote: "typisch voor FDM",
+  },
+  usp: [
+    { title: "Korte lijnen", description: "Snelle feedback op STL/STEP en duidelijke afspraken." },
+    { title: "Consistente kwaliteit", description: "Gekalibreerde FDM-setup en kwaliteitscheck voor levering." },
+    { title: "Afwerking op maat", description: "Ruw, geschuurd, geprimed of gelakt; inserts en montage mogelijk." },
+  ],
+  work: {
+    whatTitle: "Wat we doen",
+    whatItems: [
+      "Prototyping en kleine series",
+      "Winkelmateriaal: displays, houders en POS-oplossingen",
+      "Gepersonaliseerde items en cadeaus",
+      "Herstel en maatwerkonderdelen",
+    ],
+    howTitle: "Hoe we werken",
+    howItems: [
+      "Upload je STL/STEP met toepassing en gewenste afwerking",
+      "Eerlijk materiaaladvies en transparante offerte",
+      "Productie, kwaliteitscheck en eventuele nabewerking",
+      "Verzending in BE of afhalen in regio Herzele/Gent",
+    ],
+    howNote: "Levertijd meestal enkele werkdagen; spoed in overleg.",
+  },
+  materials: {
+    title: "Materialen & specificaties",
+    materialsLabel: "Materialen",
+    materialsItems: [
+      "PLA (standaard, veel kleuren en varianten)",
+      "PETG (sterker, vocht- en chemie-resistenter)",
+      "ABS / ASA (hitte- en UV-bestendig)",
+      "Nylon (PA) en PA-CF (stijf/sterk; jigs/fixtures)",
+      "TPU (flexibel) op aanvraag",
+    ],
+    specsLabel: "Specs",
+    specsItems: [
+      "Bouwvolume tot 35 x 32 x 35 cm per stuk",
+      "Layerhoogte 0,12-0,28 mm",
+      "Afwerking: ruw, geschuurd, geprimed of gelakt; inserts en montage mogelijk",
+    ],
+    ctas: {
+      materials: "Alle materialen",
+      pricing: "Prijzen & levering",
+    },
+  },
+  cta: {
+    title: "Samen iets moois maken?",
+    body:
+      "Stuur je model door en ontvang snel een heldere prijs met het beste materiaaladvies voor jouw toepassing.",
+    primary: "Offerte aanvragen",
+    secondary: "Portfolio",
+  },
+  faqPromo: {
+    title: "Vragen over 3D printen?",
+    intro: "Antwoorden over materialen, levertijden, prijzen en onze werkwijze.",
+    ctaLabel: "Bekijk de FAQ",
+    qaItems: [
+      { q: "Welke materialen printen jullie?", a: "Standaard PLA Matte, plus PETG en TPU. Op aanvraag ABS/ASA, Nylon, PA-CF." },
+      { q: "Wat is de gebruikelijke doorlooptijd?", a: "Doorgaans enkele werkdagen, afhankelijk van complexiteit en oplage." },
+      { q: "Hoe vraag ik een offerte aan?", a: "Bezorg je STL/STEP en korte context via het formulier. Je krijgt snel prijs en timing." },
+    ],
+  },
+}
+
+const ABOUT_COPY_EN = {
+  hero: {
+    title: "About X3DPrints",
+    introOne:
+      "X3DPrints is a one-person 3D printing studio, run part-time in Herzele and part of Xinudesign. You speak directly with the maker who also prints, tests and finishes each part. No ticketing, just direct communication and parts that fit.",
+    introTwo:
+      "Ideal for prototypes and small batches. PLA is our standard for crisp detail; when needed we switch to PETG, ABS/ASA, Nylon (PA) or PA-CF. We mainly serve the Ghent, Aalst, Geraardsbergen and Oudenaarde region.",
+    ctas: {
+      materials: "Materials",
+      services: "Services",
+      contact: "Contact",
+    },
+  },
+  stats: {
+    buildVolumeLabel: "Build volume",
+    buildVolumeNote: "longest side (single piece)",
+    leadTimeLabel: "Lead time",
+    leadTimeNote: "depends on scope",
+    toleranceLabel: "Tolerance",
+    toleranceNote: "typical for FDM",
+  },
+  usp: [
+    { title: "Short lines", description: "Fast feedback on STL/STEP and clear agreements." },
+    { title: "Consistent quality", description: "Calibrated FDM setup and quality checks before delivery." },
+    { title: "Finishing to match", description: "Raw, sanded, primed or painted; inserts and assembly possible." },
+  ],
+  work: {
+    whatTitle: "What we do",
+    whatItems: [
+      "Prototyping and small batches",
+      "Retail materials: displays, holders and POS solutions",
+      "Personalized items and gifts",
+      "Repairs and custom parts",
+    ],
+    howTitle: "How we work",
+    howItems: [
+      "Upload your STL/STEP with use case and desired finish",
+      "Honest material advice and a transparent quote",
+      "Production, quality checks and any post-processing",
+      "Shipping in Belgium or pickup around Herzele/Ghent",
+    ],
+    howNote: "Lead time is usually a few business days; rush by arrangement.",
+  },
+  materials: {
+    title: "Materials and specs",
+    materialsLabel: "Materials",
+    materialsItems: [
+      "PLA (standard, many colors and variants)",
+      "PETG (stronger, more moisture and chemical resistant)",
+      "ABS / ASA (heat and UV resistant)",
+      "Nylon (PA) and PA-CF (stiff/strong; jigs/fixtures)",
+      "TPU (flexible) on request",
+    ],
+    specsLabel: "Specs",
+    specsItems: [
+      "Build volume up to 35 x 32 x 35 cm per part",
+      "Layer height 0.12-0.28 mm",
+      "Finishing: raw, sanded, primed or painted; inserts and assembly possible",
+    ],
+    ctas: {
+      materials: "All materials",
+      pricing: "Pricing and delivery",
+    },
+  },
+  cta: {
+    title: "Ready to make something great?",
+    body:
+      "Send your model and get a clear price plus the best material advice for your use case.",
+    primary: "Request a quote",
+    secondary: "Portfolio",
+  },
+  faqPromo: {
+    title: "Questions about 3D printing?",
+    intro: "Answers about materials, lead times, pricing and how we work.",
+    ctaLabel: "View the FAQ",
+    qaItems: [
+      { q: "Which materials do you print?", a: "Standard PLA Matte, plus PETG and TPU. ABS/ASA, Nylon, PA-CF on request." },
+      { q: "What is the usual lead time?", a: "Typically a few business days, depending on complexity and quantity." },
+      { q: "How do I request a quote?", a: "Send your STL/STEP and a short brief via the form. You get pricing and timing quickly." },
+    ],
+  },
+}
+
+const BUILD_VOLUME_CM = 35
+const LEAD_TIME_DAYS = 5
+const TOLERANCE_MM = 0.2
+
+export default function Page({ searchParams }: { searchParams?: { lang?: string } }) {
+  const locale = normalizeLocale(searchParams?.lang)
+  const isEn = locale === "en"
+  const copy = isEn ? ABOUT_COPY_EN : ABOUT_COPY_NL
+  const localize = (href: string) => localizeHref(href, locale)
+  const pageUrl = isEn ? "https://www.x3dprints.be/en/about" : "https://www.x3dprints.be/about"
+  const numberLocale = isEn ? "en-GB" : "nl-BE"
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    name: "Over X3DPrints",
-    url: "https://www.x3dprints.be/over",
-    mainEntityOfPage: "https://www.x3dprints.be/over",
-    breadcrumb: "Home > Over",
+    name: copy.hero.title,
+    url: pageUrl,
+    mainEntityOfPage: pageUrl,
+    breadcrumb: isEn ? "Home > About" : "Home > Over",
   }
 
   return (
@@ -53,36 +263,28 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <Reveal className="grid items-center gap-8 sm:grid-cols-[1.3fr_.7fr]">
             <div className="max-w-3xl">
-              <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">Over X3DPrints</h1>
-              <p className="mt-3 text-slate-600">
-                X3DPrints is een éénpersoons 3D-printstudio in bijberoep, gevestigd in Herzele en onderdeel van
-                Xinudesign. Je spreekt rechtstreeks met de maker die ook produceert, test en afwerkt. Geen tickets,
-                wel korte lijnen en onderdelen die gewoon passen.
-              </p>
-              <p className="mt-3 text-slate-600">
-                Ideaal voor prototypes en kleine series. PLA is onze standaard voor strak detail, en waar nodig
-                schakelen we over naar PETG, ABS/ASA, Nylon (PA) of PA-CF. We leveren vooral in de regio Gent, Aalst,
-                Geraardsbergen en Oudenaarde.
-              </p>
+              <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">{copy.hero.title}</h1>
+              <p className="mt-3 text-slate-600">{copy.hero.introOne}</p>
+              <p className="mt-3 text-slate-600">{copy.hero.introTwo}</p>
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link
-                  href="/materials"
+                  href={localize("/materials")}
                   className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
                 >
-                  Materialen
+                  {copy.hero.ctas.materials}
                 </Link>
                 <Link
-                  href="/services"
+                  href={localize("/services")}
                   className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
                 >
-                  Diensten
+                  {copy.hero.ctas.services}
                 </Link>
                 <Link
-                  href="/contact"
+                  href={localize("/contact")}
                   className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
                 >
-                  Contact
+                  {copy.hero.ctas.contact}
                 </Link>
               </div>
             </div>
@@ -108,29 +310,29 @@ export default function Page() {
           <Reveal className="grid gap-4 sm:grid-cols-3">
             {/* Bouwvolume */}
             <GlassCard className="p-5 text-center">
-              <div className="text-xs uppercase tracking-wide text-slate-500">Bouwvolume</div>
+              <div className="text-xs uppercase tracking-wide text-slate-500">{copy.stats.buildVolumeLabel}</div>
               <div className="mt-1 text-2xl font-semibold text-slate-900">
-                <Counter to={25} suffix=" cm" />
+                <Counter to={BUILD_VOLUME_CM} suffix=" cm" />
               </div>
-              <div className="text-xs text-slate-500">per zijde (in één geheel)</div>
+              <div className="text-xs text-slate-500">{copy.stats.buildVolumeNote}</div>
             </GlassCard>
 
             {/* Doorlooptijd */}
             <GlassCard className="p-5 text-center">
-              <div className="text-xs uppercase tracking-wide text-slate-500">Doorlooptijd</div>
+              <div className="text-xs uppercase tracking-wide text-slate-500">{copy.stats.leadTimeLabel}</div>
               <div className="mt-1 text-2xl font-semibold text-slate-900">
-                <Counter to={5} prefix="2–" suffix=" d" />
+                <Counter to={LEAD_TIME_DAYS} prefix="~" suffix={isEn ? " business days" : " werkdagen"} />
               </div>
-              <div className="text-xs text-slate-500">afhankelijk van project</div>
+              <div className="text-xs text-slate-500">{copy.stats.leadTimeNote}</div>
             </GlassCard>
 
             {/* Tolerantie */}
             <GlassCard className="p-5 text-center">
-              <div className="text-xs uppercase tracking-wide text-slate-500">Tolerantie</div>
+              <div className="text-xs uppercase tracking-wide text-slate-500">{copy.stats.toleranceLabel}</div>
               <div className="mt-1 text-2xl font-semibold text-slate-900">
-                <Counter to={0.2} prefix="±" suffix=" mm" decimals={1} locale="nl-BE" />
+                <Counter to={TOLERANCE_MM} prefix="+/-" suffix=" mm" decimals={1} locale={numberLocale} />
               </div>
-              <div className="text-xs text-slate-500">typisch voor FDM</div>
+              <div className="text-xs text-slate-500">{copy.stats.toleranceNote}</div>
             </GlassCard>
           </Reveal>
         </div>
@@ -141,16 +343,12 @@ export default function Page() {
       <section className="px-6 pb-10 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              { t: "Korte lijnen", d: "Snel feedback op STL/STEP en duidelijke afspraken." },
-              { t: "Consistente kwaliteit", d: "Gekalibreerde FDM-setup en kwaliteitscheck voor levering." },
-              { t: "Afwerking op maat", d: "Rauw, geschuurd, geprimed of gelakt; inserts en montage mogelijk." },
-            ].map((u, i) => (
-              <Reveal key={u.t} delay={0.05 * (i + 1)}>
+            {copy.usp.map((u, i) => (
+              <Reveal key={u.title} delay={0.05 * (i + 1)}>
                 <TiltCard>
                   <GlassCard className="p-6">
-                    <h3 className="text-lg font-semibold text-slate-900">{u.t}</h3>
-                    <p className="mt-1 text-slate-600">{u.d}</p>
+                    <h3 className="text-lg font-semibold text-slate-900">{u.title}</h3>
+                    <p className="mt-1 text-slate-600">{u.description}</p>
                   </GlassCard>
                 </TiltCard>
               </Reveal>
@@ -165,26 +363,24 @@ export default function Page() {
           <Reveal className="grid gap-8 sm:grid-cols-2">
             <TiltCard>
               <GlassCard className="p-6">
-                <h2 className="text-xl font-semibold tracking-tight text-slate-900">Wat we doen</h2>
+                <h2 className="text-xl font-semibold tracking-tight text-slate-900">{copy.work.whatTitle}</h2>
                 <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-600">
-                  <li>Prototyping en kleine series</li>
-                  <li>Winkelmateriaal: displays, houders en POS-oplossingen</li>
-                  <li>Gepersonaliseerde items en cadeaus</li>
-                  <li>Herstel en maatwerkonderdelen</li>
+                  {copy.work.whatItems.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
                 </ul>
               </GlassCard>
             </TiltCard>
 
             <TiltCard>
               <GlassCard className="p-6">
-                <h2 className="text-xl font-semibold tracking-tight text-slate-900">Hoe we werken</h2>
+                <h2 className="text-xl font-semibold tracking-tight text-slate-900">{copy.work.howTitle}</h2>
                 <ol className="mt-3 list-decimal space-y-1 pl-5 text-slate-600">
-                  <li>Upload je STL/STEP met toepassing en gewenste afwerking</li>
-                  <li>Eerlijk materiaaladvies en transparante offerte</li>
-                  <li>Productie, kwaliteitscheck en eventuele nabewerking</li>
-                  <li>Verzending in BE of afhalen in regio Herzele/Gent</li>
+                  {copy.work.howItems.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
                 </ol>
-                <p className="mt-3 text-sm text-slate-500">Levertijd meestal enkele werkdagen; spoed in overleg.</p>
+                <p className="mt-3 text-sm text-slate-500">{copy.work.howNote}</p>
               </GlassCard>
             </TiltCard>
           </Reveal>
@@ -196,39 +392,37 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold tracking-tight text-slate-900">Materialen & specificaties</h2>
+              <h2 className="text-xl font-semibold tracking-tight text-slate-900">{copy.materials.title}</h2>
               <div className="mt-3 grid gap-6 sm:grid-cols-2">
                 <div>
-                  <h3 className="text-sm font-semibold text-slate-900">Materialen</h3>
+                  <h3 className="text-sm font-semibold text-slate-900">{copy.materials.materialsLabel}</h3>
                   <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
-                    <li>PLA (standaard, veel kleuren en varianten)</li>
-                    <li>PETG (sterker, vocht- en chemie-resistenter)</li>
-                    <li>ABS / ASA (hitte- en UV-bestendig)</li>
-                    <li>Nylon (PA) en PA-CF (stijf/sterk; jigs/fixtures)</li>
-                    <li>TPU (flexibel) op aanvraag</li>
+                    {copy.materials.materialsItems.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-slate-900">Specs</h3>
+                  <h3 className="text-sm font-semibold text-slate-900">{copy.materials.specsLabel}</h3>
                   <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
-                    <li>Bouwvolume tot 35 x 32 x 35 cm per stuk</li>
-                    <li>Layerhoogte 0,12-0,28 mm</li>
-                    <li>Afwerking</li>
+                    {copy.materials.specsItems.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
                   </ul>
                 </div>
               </div>
               <div className="mt-5 flex flex-wrap gap-3">
                 <Link
-                  href="/materials"
+                  href={localize("/materials")}
                   className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
                 >
-                  Alle materialen
+                  {copy.materials.ctas.materials}
                 </Link>
                 <Link
-                  href="/pricing"
+                  href={localize("/pricing")}
                   className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
                 >
-                  Prijzen & levering
+                  {copy.materials.ctas.pricing}
                 </Link>
               </div>
             </GlassCard>
@@ -243,22 +437,20 @@ export default function Page() {
             <GlassCard className="overflow-hidden p-8 sm:p-10">
               <div className="grid gap-6 sm:grid-cols-[1.2fr_.8fr] sm:items-center">
                 <div>
-                  <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Samen iets moois maken?</h2>
-                  <p className="mt-2 max-w-prose text-slate-600">
-                    Stuur je model door en ontvang snel een heldere prijs met het beste materiaaladvies voor jouw toepassing.
-                  </p>
+                  <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{copy.cta.title}</h2>
+                  <p className="mt-2 max-w-prose text-slate-600">{copy.cta.body}</p>
                   <div className="mt-5 flex flex-wrap gap-3">
                     <Link
-                      href="/contact"
+                      href={localize("/contact")}
                       className="rounded-xl border border-white/20 bg-black px-5 py-3 text-sm font-semibold text-white hover:brightness-110"
                     >
-                      Offerte aanvragen
+                      {copy.cta.primary}
                     </Link>
                     <Link
-                      href="/portfolio"
+                      href={localize("/portfolio")}
                       className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
                     >
-                      Portfolio
+                      {copy.cta.secondary}
                     </Link>
                   </div>
                 </div>
@@ -278,7 +470,14 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="overflow-hidden p-8 sm:p-10">
-              <FaqPromo className="mt-10" />
+              <FaqPromo
+                className="mt-10"
+                title={copy.faqPromo.title}
+                intro={copy.faqPromo.intro}
+                ctaLabel={copy.faqPromo.ctaLabel}
+                qaItems={copy.faqPromo.qaItems}
+                href={localize("/faq")}
+              />
             </GlassCard>
           </Reveal>
         </div>
@@ -289,9 +488,3 @@ export default function Page() {
     </main>
   )
 }
-
-
-
-
-
-

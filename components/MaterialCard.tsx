@@ -100,7 +100,7 @@ export default function MaterialCard({
               className="inline-flex items-center gap-1 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
             >
               {ctaLabel ?? "Meer lezen"}
-              <span aria-hidden>→</span>
+              <span aria-hidden>&rarr;</span>
             </Link>
           </div>
         ) : null}
