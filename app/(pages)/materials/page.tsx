@@ -112,6 +112,7 @@ export default function MaterialsPage({ searchParams }: { searchParams?: { lang?
           portfolio: "Portfolio",
           segments: "Segments & cases",
           tool: "Material Suggestion Tool",
+          findModels: "Find 3D models",
         },
         catalogName: "Material advice and samples",
         serviceName: "Filament material advice",
@@ -164,6 +165,7 @@ export default function MaterialsPage({ searchParams }: { searchParams?: { lang?
           portfolio: "Portfolio",
           segments: "Segmenten & cases",
           tool: "Material Suggestion Tool",
+          findModels: "3D modellen vinden",
         },
         catalogName: "Materialen advies en samples",
         serviceName: "Filament materiaaladvies",
@@ -422,6 +424,7 @@ export default function MaterialsPage({ searchParams }: { searchParams?: { lang?
           { label: copy.readMoreSecondary.portfolio, href: localize("/portfolio") },
           { label: copy.readMoreSecondary.segments, href: localize("/segments") },
           { label: copy.readMoreSecondary.tool, href: localize("/materials#material-suggestion-tool") },
+          { label: copy.readMoreSecondary.findModels, href: localize("/3d-modellen-vinden") },
         ]}
       />
 

@@ -1,0 +1,191 @@
+import type { Metadata } from "next"
+import Link from "next/link"
+import Reveal from "@/components/Reveal"
+import GlassCard from "@/components/GlassCard"
+import ShimmerButton from "@/components/ShimmerButton"
+import BlogReadMore from "@/components/BlogReadMore"
+
+const canonical = "https://www.x3dprints.be/en/blog/maker-monday-schroefdraad-inserts"
+const publishedDate = "2025-12-08T08:00:00+01:00"
+
+export const metadata: Metadata = {
+  title: "Maker Monday #5: threads and inserts in FDM prints | X3DPrints",
+  description:
+    "Design screws, bosses and heat-set inserts for PLA, PETG and TPU. Pocket sizes, wall thickness and fillets to stop cracks around fasteners.",
+  alternates: {
+    canonical,
+    languages: {
+      "nl-BE": "https://www.x3dprints.be/blog/maker-monday-schroefdraad-inserts",
+      en: canonical,
+    },
+  },
+  openGraph: {
+    title: "Maker Monday #5: threads and inserts in FDM prints",
+    description: "Pocket dimensions, wall thickness and material advice for reliable threaded features in FDM parts.",
+    url: canonical,
+    type: "article",
+    publishedTime: publishedDate,
+    authors: ["https://www.x3dprints.be"],
+    tags: ["Maker Monday", "Heat-set inserts", "3D printed threads"],
+    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Threads and inserts" }],
+    locale: "en_BE",
+    siteName: "X3DPrints",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Maker Monday #5: threads and inserts",
+    description: "How to design bosses, inserts and printed threads for PLA, PETG and TPU.",
+    images: ["/images/og-home.jpg"],
+  },
+}
+
+const pockets = [
+  { size: "M2 insert pocket", dimension: "3.6-3.7 mm", note: "Chamfer 0.3-0.5 mm to guide the insert." },
+  { size: "M3 insert pocket", dimension: "4.6-4.7 mm", note: "Use at least 2.4-3.0 mm walls around the boss." },
+  { size: "M4 insert pocket", dimension: "6.1-6.2 mm", note: "Add ribs or gussets to prevent ovalisation." },
+]
+
+const guidance = [
+  "Use PETG for inserts when possible; it handles heat better than PLA.",
+  "Add fillets and ribs behind bosses to spread load and heat.",
+  "For self-tapping screws, start with pilot holes +0.2 mm over nominal.",
+  "Printed threads only make sense for large diameters (M10+).",
+]
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: "Maker Monday #5: threads and inserts in FDM prints",
+  description:
+    "Design rules for heat-set inserts, bosses and printed threads in PLA, PETG and TPU with pocket sizes and wall guidance.",
+  datePublished: publishedDate,
+  dateModified: publishedDate,
+  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
+  publisher: {
+    "@type": "Organization",
+    name: "X3DPrints",
+    url: "https://www.x3dprints.be",
+    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/og-x3dprints.jpg" },
+  },
+  mainEntityOfPage: canonical,
+  url: canonical,
+  image: "https://www.x3dprints.be/images/og-home.jpg",
+  inLanguage: "en-BE",
+}
+
+export default function MakerMondayInsertsEnPage() {
+  return (
+    <main className="relative">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(150%_85%_at_50%_-15%,rgba(59,130,246,0.18),transparent_70%)]"
+      />
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.07]" />
+
+      <section className="px-6 pb-12 pt-16 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-4xl">
+          <Reveal className="stacked-content">
+            <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
+              <ol className="flex flex-wrap gap-2">
+                <li>
+                  <Link
+                    href="/en/blog"
+                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                  >
+                    Blog
+                  </Link>
+                </li>
+                <li aria-hidden>/</li>
+                <li className="font-medium text-slate-700">Maker Monday</li>
+                <li aria-hidden>/</li>
+                <li className="font-medium text-slate-900">Threads & inserts</li>
+              </ol>
+            </nav>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Maker Monday #5</p>
+            <h1 className="mt-4 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+              Threads and inserts that do not crack your part.
+            </h1>
+            <p className="mt-4 text-lg text-slate-700">
+              Fasteners are often the weak link. Use these pocket sizes, wall rules and material tips to keep bosses intact and
+              inserts seated firmly.
+            </p>
+            <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
+              <ShimmerButton href="/en/contact?topic=maker-monday-fasteners">Ask fastener advice</ShimmerButton>
+              <Link
+                href="/en/blog/maker-monday-wanddiktes-ribs"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
+              >
+                Wall thickness guide
+              </Link>
+              <Link
+                href="/en/blog/maker-monday-snapfits"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
+              >
+                Snap-fit guidance
+              </Link>
+            </div>
+            <p className="mt-6 text-sm text-slate-500">Published 8 December 2025.</p>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
+          <Reveal>
+            <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Heat-set insert pockets</h2>
+              <ul className="mt-3 space-y-2 text-sm text-slate-600">
+                {pockets.map((item) => (
+                  <li key={item.size} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                    <p className="text-sm font-semibold text-slate-900">{item.size}</p>
+                    <p className="text-sm text-slate-600">{item.dimension}</p>
+                    <p className="text-xs text-slate-500">{item.note}</p>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Design guidance</h2>
+              <ul className="mt-3 space-y-2 text-sm text-slate-600">
+                {guidance.map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-4xl">
+          <Reveal>
+            <GlassCard className="flex flex-col gap-6 border border-white/40 bg-white/85 p-6 shadow-xl backdrop-blur sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Next step</p>
+                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Need threaded features checked?</h2>
+                <p className="mt-2 text-sm text-slate-600">
+                  Share the screw size, load and environment. We will confirm pocket sizes, material and ribbing before production.
+                </p>
+              </div>
+              <div className="flex flex-col gap-3 sm:items-end">
+                <ShimmerButton href="/en/contact?topic=maker-monday-fasteners">Book a fastener review</ShimmerButton>
+                <Link href="/en/pricing" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
+                  Pricing & lead times
+                </Link>
+              </div>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogReadMore />
+    </main>
+  )
+}
+

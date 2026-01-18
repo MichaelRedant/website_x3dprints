@@ -70,6 +70,10 @@ export default function Page() {
       a: "Ja. Op basis van schetsen, foto's of een referentiestuk maken we een printklaar 3D-model. Vraag dit aan via <a href=\"/contact\">/contact</a>.",
     },
     {
+      q: "Waar vind ik 3D modellen om te laten printen?",
+      a: "Bekijk de gids <a href=\"/3d-modellen-vinden\">3D modellen vinden</a> met links naar Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults en Thangs en tips over schaal en printbaarheid.",
+    },
+    {
       q: "Kunnen jullie 3D-scannen?",
       a: "Nee, maar met duidelijke foto's, metingen of een fysiek voorbeeld kunnen we het model digitaliseren en voorbereiden op print.",
     },

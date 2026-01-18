@@ -109,6 +109,11 @@ const SERVICES_COPY_NL = {
         body: "Lees artikels over PLA vs PETG, kostprijsberekening en 3D printen in de buurt.",
         cta: "Bekijk alle topics",
       },
+      {
+        title: "3D modellen vinden",
+        body: "Gids met de beste platformen om STL/3MF te vinden en meteen te laten printen.",
+        cta: "Bekijk gids",
+      },
     ],
     footer:
       "Niet zeker welk filament je nodig hebt? Gebruik de Material Suggestion Tool of stuur je vraag door; we bekijken het persoonlijk.",
@@ -181,6 +186,12 @@ const SERVICES_COPY_NL = {
         body: "Overzichtspagina met use-cases, richtprijzen en FAQ. Goed startpunt voor nieuwe klanten.",
         href: "/3d-printen",
         cta: "Lees artikel",
+      },
+      {
+        title: "3D modellen vinden",
+        body: "Gids met de beste platformen om STL/3MF te vinden en meteen te laten printen.",
+        href: "/3d-modellen-vinden",
+        cta: "Bekijk gids",
       },
     ],
   },
@@ -351,6 +362,11 @@ const SERVICES_COPY_EN = {
         title: "Knowledge base and blog",
         body: "Read articles about PLA vs PETG, cost calculation and local 3D printing.",
         cta: "View all topics",
+      },
+      {
+        title: "Find 3D models",
+        body: "Guide to the best places to source STL/3MF and have them printed immediately.",
+        cta: "View guide",
       },
     ],
     footer:

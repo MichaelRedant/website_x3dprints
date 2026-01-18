@@ -19,7 +19,7 @@ const NAV = [
   { href: "/portfolio", label: { nl: "Portfolio", en: "Portfolio" } },
   { href: "/about", label: { nl: "Over ons", en: "About" } },
   { href: "/pricing", label: { nl: "Prijzen", en: "Pricing" } },
-  { href: "/contact", label: { nl: "Contact", en: "Contact" } },
+  { href: "/3d-modellen-vinden", label: { nl: "3D modellen", en: "3D models" } },
 ]
 
 export default function Header() {

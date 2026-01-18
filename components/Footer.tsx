@@ -42,6 +42,7 @@ const COPY = {
         { label: "Segmenten", href: "/segments" },
         { label: "Blog & kennisbank", href: "/blog" },
         { label: "3D modelleren", href: "/3d-modelleren" },
+        { label: "3D modellen vinden", href: "/3d-modellen-vinden" },
         { label: "Duurzaamheid", href: "/sustainability" },
         { label: "Over ons", href: "/about" },
         { label: "Prijzen", href: "/pricing" },
@@ -87,6 +88,7 @@ const COPY = {
         { label: "Segments", href: "/segments" },
         { label: "Blog & knowledge base", href: "/blog" },
         { label: "3D modeling", href: "/3d-modelleren" },
+        { label: "Find 3D models", href: "/en/3d-modellen-vinden" },
         { label: "Sustainability", href: "/sustainability" },
         { label: "About", href: "/about" },
         { label: "Pricing", href: "/pricing" },
@@ -215,15 +217,15 @@ export default function Footer() {
           {/* statische links */}
           <div>
             <div className="font-semibold text-slate-900">{copy.links.title}</div>
-            <ul className="mt-3 space-y-2">
+            <ul className="mt-3 grid grid-cols-2 gap-2 text-left text-sm text-slate-700 sm:grid-cols-2">
               {copy.links.items.map((item) => (
                 <li key={item.href}>
                   {item.external ? (
-                    <a href={item.href} className="hover:text-slate-900">
+                    <a href={item.href} className="inline-flex items-center gap-1 hover:text-slate-900">
                       {item.label}
                     </a>
                   ) : (
-                    <Link href={localize(item.href)} className="hover:text-slate-900">
+                    <Link href={localize(item.href)} className="inline-flex items-center gap-1 hover:text-slate-900">
                       {item.label}
                     </Link>
                   )}

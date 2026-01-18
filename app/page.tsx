@@ -202,6 +202,16 @@ const HOME_COPY_NL = {
       },
     ],
   },
+  findModels: {
+    kicker: "Nog geen ontwerp?",
+    title: "Vind snel een 3D model om te laten printen.",
+    body:
+      "Kies een model op Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults of Thangs en stuur de link. Wij checken schaal, materiaal en printbaarheid en printen lokaal in Belgie.",
+    ctas: {
+      browse: "Waar vind je 3D modellen?",
+      send: "Stuur je model-link",
+    },
+  },
   materials: {
     title: "Materialen, kleuren & afwerking",
     body:
@@ -289,9 +299,9 @@ const HOME_COPY_NL = {
   printables: {
     kicker: "Nog geen ontwerp",
     body:
-      "Browse de Printables.com bibliotheek voor kant-en-klare modellen en stuur de link door. Wij checken licentie, schaal en materiaal en printen het lokaal in Belgie.",
-    ctaPrimary: "Stuur je Printables link",
-    ctaSecondary: "Open Printables.com",
+      "Kies een model op Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults of Thangs en stuur de link. Wij checken schaal, materiaal en printbaarheid en printen het lokaal in Belgie.",
+    ctaPrimary: "Waar vind je 3D modellen?",
+    ctaSecondary: "Stuur je model-link",
   },
   pla: {
     title: "Waarom we vaak voor PLA kiezen",
@@ -467,6 +477,16 @@ const HOME_COPY_EN = {
       },
     ],
   },
+  findModels: {
+    kicker: "No design yet?",
+    title: "Quickly find a 3D model to print.",
+    body:
+      "Pick a model on Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults or Thangs and share the link. We check scale, material and printability and print it locally in Belgium.",
+    ctas: {
+      browse: "Where to find 3D models?",
+      send: "Send your model link",
+    },
+  },
   materials: {
     title: "Materials, colors & finishing",
     body:
@@ -554,9 +574,9 @@ const HOME_COPY_EN = {
   printables: {
     kicker: "No design yet",
     body:
-      "Browse the Printables.com library for ready-to-print models and send the link. We check license, scale and material and print locally in Belgium.",
-    ctaPrimary: "Send your Printables link",
-    ctaSecondary: "Open Printables.com",
+      "Pick a model on Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults or Thangs and share the link. We check scale, material and printability and print it locally in Belgium.",
+    ctaPrimary: "Where to find 3D models?",
+    ctaSecondary: "Send your model link",
   },
   pla: {
     title: "Why we often pick PLA",
@@ -1019,12 +1039,9 @@ export default function HomePage({ searchParams }: { searchParams?: { lang?: str
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-3">
-                  <ShimmerButton href={localize("/contact?source=printables")}>{copy.printables.ctaPrimary}</ShimmerButton>
+                  <ShimmerButton href={localize("/3d-modellen-vinden")}>{copy.printables.ctaPrimary}</ShimmerButton>
                   <Link
-                    href="https://www.printables.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    prefetch={false}
+                    href={localize("/contact?quote=Link%20naar%203D%20model")}
                     className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-4 py-2.5 text-sm font-semibold text-indigo-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
                   >
                     {copy.printables.ctaSecondary}

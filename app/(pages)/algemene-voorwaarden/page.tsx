@@ -100,7 +100,7 @@ export default function TermsPage() {
             <h2 className="text-xl font-semibold text-slate-900">Intellectuele eigendom &amp; bestanden</h2>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
               <li>Aangeleverde 3D-bestanden blijven eigendom van de klant.</li>
-              <li>De klant staat in voor de rechten op aangeleverde bestanden en vrijwaart X3DPrints voor claims van derden.</li>
+              <li>De klant staat in voor alle rechten (o.a. auteurs-, licentie- en merkrechten) op aangeleverde bestanden en vrijwaart X3DPrints voor claims van derden.</li>
               <li>Door X3DPrints ontworpen modellen blijven eigendom van X3DPrints, tenzij anders schriftelijk overeengekomen.</li>
               <li>Gebruik van foto&apos;s voor portfolio gebeurt enkel met toestemming.</li>
             </ul>
@@ -112,6 +112,7 @@ export default function TermsPage() {
               <li>X3DPrints is niet aansprakelijk voor indirecte schade (verlies van gegevens, winstderving).</li>
               <li>Aansprakelijkheid is beperkt tot het factuurbedrag van de betrokken bestelling.</li>
               <li>Geen aansprakelijkheid voor foutief gebruik of toepassing buiten de afgesproken context.</li>
+              <li>X3DPrints draagt geen verantwoordelijkheid voor de rechtmatigheid van aangeleverde 3D-modellen of licenties; de klant garandeert dat gebruik en reproductie legaal zijn en vrijwaart X3DPrints voor elke aanspraak hieromtrent.</li>
             </ul>
           </li>
           <li>
