@@ -229,11 +229,13 @@ const BUILD_VOLUME_CM = 35
 const LEAD_TIME_DAYS = 5
 const TOLERANCE_MM = 0.2
 
-export default function Page({ searchParams }: { searchParams?: { lang?: string } }) {
-  const locale = normalizeLocale(searchParams?.lang)
-  const isEn = locale === "en"
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+
+export default function Page({ locale }: PageProps) {
+  const normalizedLocale = normalizeLocale(locale)
+  const isEn = normalizedLocale === "en"
   const copy = isEn ? ABOUT_COPY_EN : ABOUT_COPY_NL
-  const localize = (href: string) => localizeHref(href, locale)
+  const localize = (href: string) => localizeHref(href, normalizedLocale)
   const pageUrl = isEn ? "https://www.x3dprints.be/en/about" : "https://www.x3dprints.be/about"
   const numberLocale = isEn ? "en-GB" : "nl-BE"
 

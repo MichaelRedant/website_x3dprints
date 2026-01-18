@@ -6,18 +6,15 @@ import MaterialDetailPage, {
 
 type PageProps = {
   params: Promise<{ slug: string }>
-  searchParams?: { lang?: string }
+  searchParams?: Promise<{ lang?: string } | undefined>
 }
 
 export { generateStaticParams }
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
-  return baseGenerateMetadata({
-    ...props,
-    searchParams: { ...props.searchParams, lang: "en" },
-  })
+  return baseGenerateMetadata({ ...props, locale: "en" })
 }
 
 export default function MaterialDetailPageEn(props: PageProps) {
-  return <MaterialDetailPage {...props} searchParams={{ ...props.searchParams, lang: "en" }} />
+  return <MaterialDetailPage {...props} locale="en" />
 }

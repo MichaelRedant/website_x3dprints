@@ -472,11 +472,13 @@ const organizationSchema = {
   },
 }
 
-export default function Page({ searchParams }: { searchParams?: { lang?: string } }) {
-  const locale = normalizeLocale(searchParams?.lang)
-  const copy = locale === "en" ? PORTFOLIO_COPY_EN : PORTFOLIO_COPY_NL
-  const localize = (href: string) => localizeHref(href, locale)
-  const portfolioPath = localizeHref("/portfolio", locale)
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+
+export default function Page({ locale }: PageProps) {
+  const normalizedLocale = normalizeLocale(locale)
+  const copy = normalizedLocale === "en" ? PORTFOLIO_COPY_EN : PORTFOLIO_COPY_NL
+  const localize = (href: string) => localizeHref(href, normalizedLocale)
+  const portfolioPath = localizeHref("/portfolio", normalizedLocale)
   const portfolioUrl = `${siteUrl}${portfolioPath}`
 
   const photos = photoEntries.map((photo, index) => {

@@ -3,6 +3,8 @@ import OctopusCasePage, { EN_METADATA } from "@/app/(pages)/blog/octopus-account
 
 export const metadata: Metadata = EN_METADATA
 
-export default function OctopusCasePageEn() {
-  return <OctopusCasePage searchParams={{ lang: "en" }} />
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+
+export default function OctopusCasePageEn(props: PageProps) {
+  return <OctopusCasePage {...props} locale="en" />
 }

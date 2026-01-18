@@ -9,6 +9,7 @@ import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-valentijn"
 const ogImage = "https://www.x3dprints.be/images/og-home.jpg"
+const publishedDate = "2025-02-01T08:00:00+01:00"
 
 export const metadata: Metadata = {
   title: "3D printing Valentine gifts | X3DPrints Blog",
@@ -84,7 +85,7 @@ const valentijnVideos = [
   {
     id: "js1994tDE18",
     title: "Valentine heart decor - PLA Silk",
-    thumbnail: "https://img.youtube.com/vi/js1994tDE18/hqdefault.jpg",
+    description: "Silk hearts with soft gradients and tips for wall thickness and eyelets.",
   },
 ]
 
@@ -249,12 +250,14 @@ export default function ValentinesBlogEnPage() {
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
-            <VideoGallery
-              eyebrow="Video"
-              title="A quick look at Valentine prints"
-              description="See Silk hearts and translucent decor in action. Share your model and we will pick the right blend."
-              videos={valentijnVideos}
-            />
+            <div className="mb-4 space-y-2">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Video</p>
+              <h2 className="text-2xl font-semibold text-slate-900">A quick look at Valentine prints</h2>
+              <p className="text-sm text-slate-600">
+                See Silk hearts and translucent decor in action. Share your model and we will pick the right blend.
+              </p>
+            </div>
+            <VideoGallery videos={valentijnVideos} highlightIds={[]} />
           </Reveal>
         </div>
       </section>

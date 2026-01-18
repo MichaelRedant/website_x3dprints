@@ -129,11 +129,11 @@ const EN_COPY = {
   description: EN_METADATA.description ?? "",
 }
 
-type PageProps = { searchParams?: { lang?: string } }
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
 
-export default function ContactPage({ searchParams }: PageProps) {
-  const locale = normalizeLocale(searchParams?.lang)
-  const isEn = locale === "en"
+export default function ContactPage({ locale }: PageProps) {
+  const normalizedLocale = normalizeLocale(locale)
+  const isEn = normalizedLocale === "en"
   const copy = isEn ? EN_COPY : NL_COPY
 
   const contactJsonLd = {

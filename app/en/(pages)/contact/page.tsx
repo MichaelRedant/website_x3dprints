@@ -3,6 +3,8 @@ import ContactPage, { EN_METADATA } from "@/app/(pages)/contact/page"
 
 export const metadata: Metadata = EN_METADATA
 
-export default function ContactPageEn(props: { searchParams?: { lang?: string } }) {
-  return <ContactPage {...props} searchParams={{ ...props.searchParams, lang: "en" }} />
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+
+export default function ContactPageEn(props: PageProps) {
+  return <ContactPage {...props} locale="en" />
 }

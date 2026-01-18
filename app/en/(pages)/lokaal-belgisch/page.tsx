@@ -236,7 +236,7 @@ export default function Page() {
                   Ready for a local 3D print partner?
                 </h2>
                 <p className="mt-3 max-w-3xl text-base text-slate-600">
-                  Send your STL/STEP, describe the use case and we'll share material advice, planning and pricing - all produced in Herzele.
+                  Send your STL/STEP, describe the use case and we will share material advice, planning and pricing - all produced in Herzele.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <ShimmerButton href="/contact">Request a quote</ShimmerButton>

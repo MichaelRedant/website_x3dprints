@@ -24,13 +24,14 @@ type SearchParams = { lang?: string }
 
 type PageProps = {
   params: Promise<{ slug: string }>
-  searchParams?: SearchParams
+  searchParams?: Promise<SearchParams | undefined>
+  locale?: string
 }
 
-export async function generateMetadata({ params, searchParams }: PageProps): Promise<Metadata> {
+export async function generateMetadata({ params, locale }: PageProps): Promise<Metadata> {
   const { slug } = await params
-  const locale = normalizeLocale(searchParams?.lang)
-  const isEn = locale === "en"
+  const normalizedLocale = normalizeLocale(locale)
+  const isEn = normalizedLocale === "en"
   const detail = isEn
     ? MATERIAL_DETAILS_BY_SLUG_EN[slug] ?? MATERIAL_DETAILS_BY_SLUG[slug]
     : MATERIAL_DETAILS_BY_SLUG[slug]
@@ -406,12 +407,12 @@ function MaterialGallery({
   )
 }
 
-export default async function MaterialDetailPage({ params, searchParams }: PageProps) {
+export default async function MaterialDetailPage({ params, locale }: PageProps) {
   const { slug } = await params
-  const locale = normalizeLocale(searchParams?.lang)
-  const isEn = locale === "en"
+  const normalizedLocale = normalizeLocale(locale)
+  const isEn = normalizedLocale === "en"
   const copy = isEn ? DETAIL_COPY_EN : DETAIL_COPY_NL
-  const localize = (href: string) => localizeHref(href, locale)
+  const localize = (href: string) => localizeHref(href, normalizedLocale)
 
   const detail = isEn
     ? MATERIAL_DETAILS_BY_SLUG_EN[slug] ?? MATERIAL_DETAILS_BY_SLUG[slug]
@@ -421,9 +422,9 @@ export default async function MaterialDetailPage({ params, searchParams }: PageP
     notFound()
   }
 
-  const materialsMap = materialsByLocale(locale)
+  const materialsMap = materialsByLocale(normalizedLocale)
   const material = materialsMap[detail.key]
-  const galleryItems = materialGalleryByLocale(locale)[detail.key]
+  const galleryItems = materialGalleryByLocale(normalizedLocale)[detail.key]
   const contactHref = localize(`/contact?material=${encodeURIComponent(material.name)}`)
   const filamentFridayLinks = isEn ? FILAMENT_FRIDAY_LINKS_EN : FILAMENT_FRIDAY_LINKS_NL
   const filamentFriday = detail.filamentFriday ?? filamentFridayLinks[detail.key]

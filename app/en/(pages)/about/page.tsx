@@ -3,6 +3,8 @@ import AboutPage, { EN_METADATA } from "@/app/(pages)/about/page"
 
 export const metadata: Metadata = EN_METADATA
 
-export default function AboutPageEn() {
-  return <AboutPage searchParams={{ lang: "en" }} />
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+
+export default function AboutPageEn(props: PageProps) {
+  return <AboutPage {...props} locale="en" />
 }

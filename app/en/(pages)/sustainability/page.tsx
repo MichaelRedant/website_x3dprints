@@ -402,7 +402,7 @@ export default function SustainabilityPage() {
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Move forward together</p>
         <h2 className="mt-3 text-2xl font-semibold text-slate-900 sm:text-3xl">Have an idea that should last?</h2>
         <p className="mt-3 text-sm text-slate-600">
-          We love thinking along about circular cases, education projects or simply a batch of parts that need to last longer. Reach out and we'll schedule a call.
+          We love thinking along about circular cases, education projects or simply a batch of parts that need to last longer. Reach out and we will schedule a call.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <ShimmerButton href="/contact">Schedule a call</ShimmerButton>

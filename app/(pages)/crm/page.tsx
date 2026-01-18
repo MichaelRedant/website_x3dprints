@@ -106,7 +106,7 @@ export default function CrmGate() {
         if (!res.ok) throw new Error(`Status ${res.status}`)
         const json = (await res.json()) as LogEntry[]
         setLogs(Array.isArray(json) ? json : [])
-      } catch (e) {
+      } catch {
         setLogError("Kon logbestand niet laden.")
       } finally {
         setLoadingLogs(false)
@@ -148,7 +148,7 @@ export default function CrmGate() {
         if (!res.ok) throw new Error(`Status ${res.status}`)
         const json = (await res.json()) as Record<string, Record<string, boolean>>
         setMaterialOverrides(json || {})
-      } catch (e) {
+      } catch {
         setMaterialError("Kon materiaal-stock niet laden.")
       } finally {
         setMaterialLoading(false)
@@ -167,7 +167,7 @@ export default function CrmGate() {
         if (!res.ok) throw new Error(`Status ${res.status}`)
         const json = (await res.json()) as ReplyEntry[]
         setReplies(Array.isArray(json) ? json : [])
-      } catch (e) {
+      } catch {
         setRepliesError("Kon replies niet laden.")
       } finally {
         setLoadingReplies(false)
@@ -304,7 +304,7 @@ export default function CrmGate() {
       if (!res.ok) {
         throw new Error("Write failed")
       }
-    } catch (e) {
+    } catch {
       setMaterialOverrides((prev) => {
         const next = { ...prev }
         if (next[key]) {
@@ -375,7 +375,7 @@ export default function CrmGate() {
         throw new Error(json?.error || `Status ${res.status}`)
       }
       setReplyStatus("ok")
-    } catch (e) {
+    } catch {
       setReplyStatus("error")
       setReplyError("OKersturen mislukt. Controleer token of server.")
     }

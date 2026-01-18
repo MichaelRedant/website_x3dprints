@@ -129,7 +129,7 @@ export default function ValentinesLandingPage() {
               >
                 Printables (external)
               </Link>{" "}
-              and share references; we'll align material and finish.
+              and share references; we will align material and finish.
             </p>
           </GlassCard>
 

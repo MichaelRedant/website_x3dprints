@@ -7,11 +7,19 @@ import { localizeHref } from "@/lib/i18n/paths"
 
 type BlogSearchLink = { label: string; href: string }
 
+type CategoryKey =
+  | "filament-friday"
+  | "maker-monday"
+  | "use-case-dinsdag"
+  | "materials-pricing"
+  | "segments-cases"
+  | "how-to"
+
 type BlogSearchTopic = {
   id: string
   title: string
   summary: string
-  category: string
+  category: CategoryKey
   links: BlogSearchLink[]
 }
 

@@ -261,11 +261,13 @@ const PRICING_COPY_EN = {
   },
 }
 
-export default function Page({ searchParams }: { searchParams?: { lang?: string } }) {
-  const locale = normalizeLocale(searchParams?.lang)
-  const isEn = locale === "en"
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+
+export default function Page({ locale }: PageProps) {
+  const normalizedLocale = normalizeLocale(locale)
+  const isEn = normalizedLocale === "en"
   const copy = isEn ? PRICING_COPY_EN : PRICING_COPY_NL
-  const localize = (href: string) => localizeHref(href, locale)
+  const localize = (href: string) => localizeHref(href, normalizedLocale)
 
   const baseMaterial: MaterialKey = "PLA_MATTE"
   const baseQuality: Quality = "Standaard"
@@ -419,7 +421,7 @@ export default function Page({ searchParams }: { searchParams?: { lang?: string 
           <Reveal>
             <GlassCard className="p-6">
               <div className="mt-4">
-                <PriceEstimator locale={locale} />
+                <PriceEstimator locale={normalizedLocale} />
               </div>
             </GlassCard>
           </Reveal>

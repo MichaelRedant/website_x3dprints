@@ -17,7 +17,7 @@ import { renderMarkdown, splitMarkdown } from "@/lib/markdown"
 import { extractHeadings } from "@/lib/headings"
 import { getLocationBySlug, getEnglishLocationSlugs } from "@/lib/locations"
 import { keywordSvgDataUri } from "@/lib/svg"
-import { SITE, clampToWords, makeDescriptionFromMarkdown } from "@/lib/seo"
+import { SITE, clampToWords } from "@/lib/seo"
 
 export const revalidate = 86_400 // 24h
 
@@ -104,7 +104,6 @@ export default async function LocationEnPage({ params }: { params: Promise<{ slu
       : await Promise.all(mdSections.map((md) => renderMarkdown(md)))
   const tocItems = await extractHeadings(contentMdNormalized, [2, 3])
   const svgSrc = keywordSvgDataUri(keyphrase)
-  const description = buildSeoDescription(contentMd, loc.city)
 
   const faqItems = [
     { q: `Which materials can I order in ${loc.city}?`, a: "Standard: PLA Matte, PETG and TPU. On request: ABS/ASA, Nylon or PA-CF. See the materials overview." },
@@ -247,4 +246,3 @@ export default async function LocationEnPage({ params }: { params: Promise<{ slu
     </main>
   )
 }
-

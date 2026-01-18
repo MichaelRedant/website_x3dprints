@@ -522,7 +522,7 @@ export default function ThreeDPrintingPage() {
                   Ready to start 3D printing?
                 </h2>
                 <p className="mt-3 max-w-3xl text-base text-slate-600">
-                  Share your STL/STEP, preferred material and timing. You'll receive a proposal with planning, pricing and any optimisations for your prints.
+                  Share your STL/STEP, preferred material and timing. You&apos;ll receive a proposal with planning, pricing and any optimisations for your prints.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <ShimmerButton href="/contact">Book a call</ShimmerButton>

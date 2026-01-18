@@ -574,12 +574,14 @@ const SERVICES_COPY_EN = {
   ],
 }
 
-export default function Page({ searchParams }: { searchParams?: { lang?: string } }) {
-  const locale = normalizeLocale(searchParams?.lang)
-  const isEn = locale === "en"
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+
+export default function Page({ locale }: PageProps) {
+  const normalizedLocale = normalizeLocale(locale)
+  const isEn = normalizedLocale === "en"
   const copy = isEn ? SERVICES_COPY_EN : SERVICES_COPY_NL
-  const localize = (href: string) => localizeHref(href, locale)
-  const faqItems = servicesFaqByLocale(locale)
+  const localize = (href: string) => localizeHref(href, normalizedLocale)
+  const faqItems = servicesFaqByLocale(normalizedLocale)
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -874,7 +876,7 @@ export default function Page({ searchParams }: { searchParams?: { lang?: string 
 
       {/* CTA */}
       <div className="px-6 pb-12 sm:px-8 lg:px-12">
-        <CtaBlock city={copy.cta.city} locale={locale} />
+        <CtaBlock city={copy.cta.city} locale={normalizedLocale} />
       </div>
 
       {/* FAQ */}

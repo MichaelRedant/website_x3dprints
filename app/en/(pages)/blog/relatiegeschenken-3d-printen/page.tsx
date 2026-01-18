@@ -246,12 +246,18 @@ export default function CorporateGiftsBlogEn() {
         </div>
       </section>
 
-      <VideoGallery
-        eyebrow="Video"
-        title="See how we pack and finish"
-        description="Short clip showing Silk PLA gifts with names and logo, packed safely for delivery."
-        videos={videos}
-      />
+      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-4 space-y-2">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Video</p>
+            <h2 className="text-2xl font-semibold text-slate-900">See how we pack and finish</h2>
+            <p className="text-sm text-slate-600">
+              Short clip showing Silk PLA gifts with names and logo, packed safely for delivery.
+            </p>
+          </div>
+          <VideoGallery videos={videos} highlightIds={[]} />
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogReadMore />

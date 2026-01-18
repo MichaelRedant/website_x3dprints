@@ -659,10 +659,12 @@ const HOME_COPY_EN = {
   ],
 }
 
-export default function HomePage({ searchParams }: { searchParams?: { lang?: string } }) {
-  const locale = normalizeLocale(searchParams?.lang)
-  const isEn = locale === "en"
-  const localize = (href: string) => localizeHref(href, locale)
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+
+export default function HomePage({ locale }: PageProps) {
+  const normalizedLocale = normalizeLocale(locale)
+  const isEn = normalizedLocale === "en"
+  const localize = (href: string) => localizeHref(href, normalizedLocale)
   const copy = isEn ? HOME_COPY_EN : HOME_COPY_NL
   const seasonCta = getSeasonCta(new Date(), isEn)
   function icon(shape: ReactNode) {

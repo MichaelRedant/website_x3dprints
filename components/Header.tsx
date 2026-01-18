@@ -5,7 +5,7 @@ import Image from "next/image"
 import Container from "./Container"
 import ThemeToggle from "./ThemeToggle"
 import { usePathname } from "next/navigation"
-import { useEffect, useRef, useState } from "react"
+import { Suspense, useEffect, useRef, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import LanguageSwitcher from "./LanguageSwitcher"
 import { useLocale } from "./LocaleProvider"
@@ -156,7 +156,9 @@ export default function Header() {
               </Link>
             )
           })}
-          <LanguageSwitcher className="ml-2" />
+          <Suspense fallback={null}>
+            <LanguageSwitcher className="ml-2" />
+          </Suspense>
           <ThemeToggle className="ml-2" />
           <Link
             href={localizedHref("/contact")}
@@ -245,7 +247,9 @@ export default function Header() {
                     )
                   })}
                   <div className="mt-2">
-                    <LanguageSwitcher className="w-full justify-between" />
+                    <Suspense fallback={null}>
+                      <LanguageSwitcher className="w-full justify-between" />
+                    </Suspense>
                   </div>
                   <div className="mt-2">
                     <ThemeToggle className="w-full justify-between" />

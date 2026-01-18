@@ -439,11 +439,13 @@ function buildMetadata(meta: MetaInput, canonical: string, locale: "nl_BE" | "en
 export const metadata: Metadata = buildMetadata(COPY.nl.meta, NL_CANONICAL, "nl_BE")
 export const EN_METADATA: Metadata = buildMetadata(COPY.en.meta, EN_CANONICAL, "en_BE")
 
-export default function OctopusCasePage({ searchParams }: { searchParams?: { lang?: string } }) {
-  const locale = normalizeLocale(searchParams?.lang)
-  const isEn = locale === "en"
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+
+export default function OctopusCasePage({ locale }: PageProps) {
+  const normalizedLocale = normalizeLocale(locale)
+  const isEn = normalizedLocale === "en"
   const copy = isEn ? COPY.en : COPY.nl
-  const localize = (href: string) => localizeHref(href, locale)
+  const localize = (href: string) => localizeHref(href, normalizedLocale)
   const canonical = isEn ? EN_CANONICAL : NL_CANONICAL
 
   const articleJsonLd = {

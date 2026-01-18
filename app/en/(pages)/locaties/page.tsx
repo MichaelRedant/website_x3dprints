@@ -2,7 +2,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import GlassOrb from "@/components/GlassOrb"
-import { SITE, buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
+import { buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 import { getLocationBySlug, getEnglishLocationSlugs } from "@/lib/locations"
 
 export const revalidate = 21600 // 6h rebuild

@@ -96,12 +96,6 @@ const alternatives = [
   { material: "PA-CF", reason: "For stiff, strong parts at higher temps; requires hardened nozzle and enclosure." },
 ]
 
-const resourceLinks = [
-  { label: "Materials library", href: "/en/materials", description: "Compare PC with PETG, ASA and other technical materials." },
-  { label: "Pricing & calculator", href: "/en/pricing", description: "See cost impact of PC prep, drying and slower speeds." },
-  { label: "Material Suggestion Tool", href: "/en/materials#material-suggestion-tool", description: "Check if PC is the right call." },
-]
-
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",

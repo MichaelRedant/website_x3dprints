@@ -236,9 +236,9 @@ export default function FindModelsPage() {
             <GlassCard className="p-6 sm:p-8">
               <h3 className="text-xl font-semibold text-slate-900">Quick checklist</h3>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                <li>- Add the link plus which parts you need (if it's a set).</li>
+                <li>- Add the link plus which parts you need (if it&apos;s a set).</li>
                 <li>- Note desired scale (mm) and whether text/logo must stay.</li>
-                <li>- Tell us if it's for indoor/outdoor use and which colour/look you want.</li>
+                <li>- Tell us if it&apos;s for indoor/outdoor use and which colour/look you want.</li>
                 <li>- Add a screenshot when the model has multiple variants.</li>
               </ul>
             </GlassCard>
@@ -251,7 +251,7 @@ export default function FindModelsPage() {
           <Reveal className="grid gap-6 lg:grid-cols-[1.05fr_.95fr] lg:items-center">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600">We model too</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Didn't find the right model?</h2>
+              <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Didn&apos;t find the right model?</h2>
               <p className="mt-2 text-sm text-slate-700">
                 We model in Fusion 360 or Tinkercad. Perfect when an existing STL is wrong or you need something fully custom. You get a printable STL/STEP plus advice on orientation, supports and material.
               </p>
@@ -277,7 +277,7 @@ export default function FindModelsPage() {
               <h3 className="text-lg font-semibold text-slate-900">When to choose modeling?</h3>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
                 <li>- Existing STL has wrong tolerances or too many supports.</li>
-                <li>- You want branding (logo/text) or custom features you can't find online.</li>
+                <li>- You want branding (logo/text) or custom features you can&apos;t find online.</li>
                 <li>- Assembly points, inserts or threads must be exact.</li>
                 <li>- You want to iterate with test prints then run a small batch.</li>
               </ul>

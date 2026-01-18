@@ -37,11 +37,13 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
-export default function MaterialsPage({ searchParams }: { searchParams?: { lang?: string } }) {
-  const locale = normalizeLocale(searchParams?.lang)
-  const isEn = locale === "en"
-  const localize = (href: string) => localizeHref(href, locale)
-  const materialsMap = materialsByLocale(locale)
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+
+export default function MaterialsPage({ locale }: PageProps) {
+  const normalizedLocale = normalizeLocale(locale)
+  const isEn = normalizedLocale === "en"
+  const localize = (href: string) => localizeHref(href, normalizedLocale)
+  const materialsMap = materialsByLocale(normalizedLocale)
   const materials = MATERIAL_ORDER.map((key) => {
     const m = materialsMap[key]
     const slug = MATERIAL_SLUGS[key]

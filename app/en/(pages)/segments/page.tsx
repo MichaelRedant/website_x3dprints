@@ -3,6 +3,8 @@ import SegmentsPage, { EN_METADATA } from "@/app/(pages)/segments/page"
 
 export const metadata: Metadata = EN_METADATA
 
-export default function SegmentsPageEn() {
-  return <SegmentsPage searchParams={{ lang: "en" }} />
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+
+export default function SegmentsPageEn(props: PageProps) {
+  return <SegmentsPage {...props} locale="en" />
 }

@@ -635,10 +635,12 @@ const SEGMENTS_COPY_EN: SegmentCopy = {
   },
 }
 
-export default function SegmentsPage({ searchParams }: { searchParams?: { lang?: string } }) {
-  const locale = normalizeLocale(searchParams?.lang)
-  const copy = locale === "en" ? SEGMENTS_COPY_EN : SEGMENTS_COPY_NL
-  const localize = (href: string) => localizeHref(href, locale)
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+
+export default function SegmentsPage({ locale }: PageProps) {
+  const normalizedLocale = normalizeLocale(locale)
+  const copy = normalizedLocale === "en" ? SEGMENTS_COPY_EN : SEGMENTS_COPY_NL
+  const localize = (href: string) => localizeHref(href, normalizedLocale)
   const toAbsolute = (href: string) => `https://www.x3dprints.be${localize(href)}`
 
   const coreSegments = copy.coreSegments

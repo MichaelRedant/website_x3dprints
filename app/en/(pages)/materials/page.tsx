@@ -24,6 +24,8 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
-export default function MaterialsPageEn() {
-  return <MaterialsPage searchParams={{ lang: "en" }} />
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+
+export default function MaterialsPageEn(props: PageProps) {
+  return <MaterialsPage {...props} locale="en" />
 }

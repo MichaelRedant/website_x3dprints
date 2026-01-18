@@ -3,6 +3,8 @@ import PricingPage, { EN_METADATA } from "@/app/(pages)/pricing/page"
 
 export const metadata: Metadata = EN_METADATA
 
-export default function PricingPageEn() {
-  return <PricingPage searchParams={{ lang: "en" }} />
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+
+export default function PricingPageEn(props: PageProps) {
+  return <PricingPage {...props} locale="en" />
 }

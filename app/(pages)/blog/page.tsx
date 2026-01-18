@@ -2164,15 +2164,17 @@ function TopicCard({ topic, intentLabels, seoIntentLabel, localize }: TopicCardP
   )
 }
 
-export default function BlogPage({ searchParams }: { searchParams?: { lang?: string } }) {
-  const locale = normalizeLocale(searchParams?.lang)
-  const isEn = locale === "en"
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+
+export default function BlogPage({ locale }: PageProps) {
+  const normalizedLocale = normalizeLocale(locale)
+  const isEn = normalizedLocale === "en"
   const copy = isEn ? BLOG_COPY_EN : BLOG_COPY_NL
   const topics = isEn ? TOPICS_EN : TOPICS_NL
   const categorySections = isEn ? CATEGORY_SECTIONS_EN : CATEGORY_SECTIONS_NL
   const extraResources = isEn ? EXTRA_RESOURCES_EN : EXTRA_RESOURCES_NL
   const quickLinks = isEn ? QUICK_LINKS_EN : QUICK_LINKS_NL
-  const localize = (href: string) => localizeHref(href, locale)
+  const localize = (href: string) => localizeHref(href, normalizedLocale)
   const toAbsolute = (href: string) => `https://www.x3dprints.be${localize(href)}`
 
   const filamentTopics = topics.filter((topic) => topic.category === "filament-friday")

@@ -1,9 +1,8 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
+import ReadMoreLinks from "@/components/ReadMoreLinks"
 
 const canonical = "https://www.x3dprints.be/en/blog/hoeveel-kost-3d-printen"
 
@@ -178,13 +177,14 @@ export default function CostArticleEn() {
           ))}
         </section>
 
-        <BlogReadMore
+        <ReadMoreLinks
           title="Next up"
-          links={[
+          primaryLinks={[
             { label: "Lead times for 3D printing", href: "/en/blog/hoe-lang-duurt-3d-printen" },
             { label: "PLA vs PETG comparison", href: "/en/blog/pla-vs-petg" },
             { label: "Find ready-to-print 3D models", href: "/en/3d-modellen-vinden" },
           ]}
+          secondaryLinks={[]}
         />
       </article>
 

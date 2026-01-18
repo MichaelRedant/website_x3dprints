@@ -246,12 +246,14 @@ export default function BlogBackToSchoolEn() {
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
-            <VideoGallery
-              eyebrow="Video"
-              title="Desk buddies and organisers"
-              description="See personalised holders and nameplates. Send your model and class list; we batch for consistent colour and finish."
-              videos={videos}
-            />
+            <div className="mb-4 space-y-2">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Video</p>
+              <h2 className="text-2xl font-semibold text-slate-900">Desk buddies and organisers</h2>
+              <p className="text-sm text-slate-600">
+                See personalised holders and nameplates. Send your model and class list; we batch for consistent colour and finish.
+              </p>
+            </div>
+            <VideoGallery videos={videos} highlightIds={[]} />
           </Reveal>
         </div>
       </section>

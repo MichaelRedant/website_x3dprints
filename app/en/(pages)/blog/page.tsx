@@ -3,6 +3,8 @@ import BlogPage, { EN_METADATA } from "@/app/(pages)/blog/page"
 
 export const metadata: Metadata = EN_METADATA
 
-export default function BlogPageEn() {
-  return <BlogPage searchParams={{ lang: "en" }} />
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+
+export default function BlogPageEn(props: PageProps) {
+  return <BlogPage {...props} locale="en" />
 }

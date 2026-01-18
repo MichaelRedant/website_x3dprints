@@ -9,7 +9,7 @@ import BlogReadMore from "@/components/BlogReadMore"
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-vaderdag-moederdag"
 
 export const metadata: Metadata = {
-  title: "Father's Day & Mother's Day 3D printing | X3DPrints Blog",
+  title: "Father&apos;s Day & Mother&apos;s Day 3D printing | X3DPrints Blog",
   description:
     "Personalised keychains, desk items and name gifts in Silk/Matte/PETG. Tips for legibility, rounded edges and delivery (May-June).",
   alternates: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Father's Day & Mother's Day 3D printing",
+    title: "Father&apos;s Day & Mother&apos;s Day 3D printing",
     description: "Custom gifts with name/initials, rounded edges and anti-slip feet. Material picks and delivery tips for Father's/Mother's Day.",
     url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Father's Day Mother's Day 3D prints" }],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Father's Day & Mother's Day 3D printing",
+    title: "Father&apos;s Day & Mother&apos;s Day 3D printing",
     description: "Personalised gifts in Silk/Matte/PETG with rounded edges and fast delivery.",
     images: ["/images/og-home.jpg"],
   },
@@ -53,7 +53,7 @@ const checklist = [
 const faqItems = [
   {
     q: "Can you add custom names or logos?",
-    a: "Yes. Provide STL/STEP with text or let us add emboss/deboss via design service (€45/hour). We ensure legibility and rounded edges.",
+    a: "Yes. Provide STL/STEP with text or let us add emboss/deboss via design service (EUR 45/hour). We ensure legibility and rounded edges.",
   },
   {
     q: "Which material lasts longer on keychains?",
@@ -65,7 +65,7 @@ const faqItems = [
   },
   {
     q: "Is the design included?",
-    a: "No. Design is not included. Provide STL/STEP or choose design service at €45/hour; we optimise for comfort and strength.",
+    a: "No. Design is not included. Provide STL/STEP or choose design service at EUR 45/hour; we optimise for comfort and strength.",
   },
 ]
 
@@ -79,7 +79,7 @@ const inspirationImages = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Father's Day & Mother's Day 3D printing",
+  headline: "Father&apos;s Day & Mother&apos;s Day 3D printing",
   description:
     "Personalised gifts in Silk/Matte/PETG with guidance on legibility, rounded edges and delivery for May-June.",
   author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
@@ -107,11 +107,11 @@ export default function FathersMothersDayBlogEn() {
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-rose-700">Seasonal</p>
             <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              Father's Day & Mother's Day 3D printing
+              Father&apos;s Day & Mother&apos;s Day 3D printing
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Personalised keychains, desk items and name gifts in Silk, Matte or PETG. Design file not included; provide STL/STEP or choose design service
-              (€45/hour). Rounded edges and legible text for daily use.
+              (EUR 45/hour). Rounded edges and legible text for daily use.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact?material=PLA">Plan my gift</ShimmerButton>

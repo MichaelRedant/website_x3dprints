@@ -55,24 +55,6 @@ const printSettings = [
   { label: "Retraction", value: "0.8-1.2 mm", note: "Keep slightly lower than standard PLA to limit stringing" },
 ]
 
-const silkPlusVariants = [
-  {
-    name: "Silk+ Solid Colors",
-    description: "Rich, saturated colours with strong gloss. Ideal for brand objects, logo elements and hero pieces on stands.",
-    bestFor: ["Branding props", "Retail display", "Showcase models"],
-  },
-  {
-    name: "Silk+ Metallic Tones",
-    description: "Middle ground between classic Silk and Metal. Less raw metal look, more luxury finish with soft reflection.",
-    bestFor: ["Premium packaging mockups", "Luxury interior accents", "Cosplay armour parts"],
-  },
-  {
-    name: "Silk multi-colour and gradient",
-    description: "Multi-colour silk blends with filament gradients. Needs attention to orientation but yields unique prints.",
-    bestFor: ["Eye-catchers", "Limited edition props", "Decorative sculptures"],
-  },
-]
-
 const whenToUse = [
   "Logo blocks, awards, plinths and brand objects where gloss is part of the concept.",
   "Showcase prototypes for marketing and sales that need a premium feel.",
