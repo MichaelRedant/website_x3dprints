@@ -401,6 +401,8 @@ export default function MaterialSuggestionTool() {
   const howToJsonLd = {
     "@context": "https://schema.org",
     "@type": "HowTo",
+
+    inLanguage: ["nl-BE", "en-BE"],
     name: copy.howTo.name,
     description: copy.howTo.description,
     step: steps.map((item, index) => ({

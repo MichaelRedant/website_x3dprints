@@ -77,6 +77,8 @@ const faqItems = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printing for autumn & Halloween",
   description:
     "Pumpkins, haunted props and mood lanterns in Silk, Marble and Translucent PLA. Tips for supports, light diffusion and delivery.",
@@ -96,6 +98,8 @@ const articleJsonLd = {
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+
+  inLanguage: ["nl-BE", "en-BE"],
   mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,

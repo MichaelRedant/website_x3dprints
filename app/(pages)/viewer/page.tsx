@@ -66,6 +66,8 @@ export default function Page() {
   const howToJsonLd = {
     "@context": "https://schema.org",
     "@type": "HowTo",
+
+    inLanguage: ["nl-BE", "en-BE"],
     name: "STL/OBJ bekijken in de X3DPrints 3D Viewer",
     description: "Snelle in-browser preview zonder uploads naar servers, inclusief mesh stats.",
     supply: [{ "@type": "HowToSupply", name: "STL, OBJ of GLB bestand (max ~15 MB)" }],

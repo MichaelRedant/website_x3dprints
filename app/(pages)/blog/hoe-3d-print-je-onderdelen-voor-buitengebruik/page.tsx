@@ -104,6 +104,8 @@ const externalResources = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "Hoe 3D print je onderdelen voor buitengebruik?",
   description:
     "Praktische gids voor outdoor 3D print projecten met PETG, TPU en hybride constructies. Inclusief bevestigingstips en kostinschatting.",

@@ -92,6 +92,8 @@ const faq = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "Hoeveel kost 3D printen?",
   description:
     "Volledige gids over de kostprijs van 3D printen, inclusief materiaalprijzen, machine-uren, nabewerking en logistiek.",

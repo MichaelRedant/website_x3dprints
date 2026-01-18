@@ -232,6 +232,8 @@ const faq = [
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+
+  inLanguage: ["nl-BE", "en-BE"],
   mainEntity: faq.map((item) => ({
     "@type": "Question",
     name: item.q,
@@ -242,6 +244,8 @@ const faqJsonLd = {
 const howToJsonLd = {
   "@context": "https://schema.org",
   "@type": "HowTo",
+
+  inLanguage: ["nl-BE", "en-BE"],
   name: "3D printen aanvragen bij X3DPrints",
   description: "Upload STL/STEP, ontvang materiaaladvies en prijs, wij 3D printen en leveren of jij haalt af.",
   supply: [{ "@type": "HowToSupply", name: "STL- of STEP-bestand voor 3D printen" }],

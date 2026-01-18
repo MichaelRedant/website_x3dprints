@@ -26,6 +26,8 @@ type LocalBusinessSchemaInput = {
   image?: string
   priceRange?: string
   areaServed?: string
+  inLanguage?: string | string[]
+  alternateName?: string | string[]
 }
 
 export type SchemaOfferInput = {
@@ -46,6 +48,8 @@ export const BASE_ORGANIZATION_SCHEMA = {
     url: `${SITE.url}${SITE.ogImage}`,
   },
   sameAs: SITE.sameAs,
+  alternateName: ["X3DPrints", "X3DPrints (English)"],
+  inLanguage: ["nl-BE", "en-BE"],
 } as const
 
 export function buildLocalBusinessSchema(options: LocalBusinessSchemaInput = {}) {
@@ -55,6 +59,10 @@ export function buildLocalBusinessSchema(options: LocalBusinessSchemaInput = {})
     name: SITE.name,
     url: options.pageUrl || SITE.url,
     description: options.description || SITE.description,
+    inLanguage: options.inLanguage ?? ["nl-BE", "en-BE"],
+    ...(options.alternateName
+      ? { alternateName: options.alternateName }
+      : { alternateName: ["X3DPrints", "X3DPrints (English)"] }),
     ...(SITE.phone ? { telephone: SITE.phone } : {}),
     address: {
       "@type": "PostalAddress",

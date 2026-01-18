@@ -73,6 +73,8 @@ export default function Page() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+
+    inLanguage: ["nl-BE", "en-BE"],
     headline: "3D modelleren voor 3D-printen",
     description:
       "Uitleg over hoe X3DPrints 3D-modellen maakt met Autodesk Fusion 360, Tinkercad en Blender voor printbare resultaten.",

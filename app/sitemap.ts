@@ -1,242 +1,266 @@
 // app/sitemap.ts
 import type { MetadataRoute } from "next"
+import { promises as fs } from "fs"
+import type { Stats } from "fs"
+import path from "path"
 import { SITE } from "@/lib/seo"
-import { getAllLocationSlugs } from "@/lib/locations"
-import { getEnglishLocationSlugs } from "@/lib/locations"
+import { EN_LOCATION_SLUGS, getAllLocationSlugs } from "@/lib/locations"
 import { MATERIAL_DETAIL_SLUGS } from "@/content/material-details"
 
 const BASE_URL = SITE.url.replace(/\/+$/, "") // https://www.x3dprints.be
+const ROOT = process.cwd()
+
+type ChangeFrequency = NonNullable<MetadataRoute.Sitemap[number]["changeFrequency"]>
+
+type StaticRouteConfig = {
+  nl: string
+  en?: string
+  changeFrequency: ChangeFrequency
+  priority: number
+  sources?: string[]
+}
+
+async function statIfExists(target: string) {
+  try {
+    const fullPath = path.isAbsolute(target) ? target : path.join(ROOT, target)
+    return await fs.stat(fullPath)
+  } catch {
+    return null
+  }
+}
+
+async function latestMtime(paths: string[]): Promise<Date | null> {
+  const stats = await Promise.all(paths.map(statIfExists))
+  const mtimes = stats.filter(Boolean).map((s) => (s as Stats).mtime.getTime())
+  if (!mtimes.length) return null
+  return new Date(Math.max(...mtimes))
+}
+
+function buildAlternates(nlPath?: string, enPath?: string) {
+  if (!nlPath || !enPath) return undefined
+  return {
+    languages: {
+      "nl-BE": `${BASE_URL}${nlPath}`,
+      en: `${BASE_URL}${enPath}`,
+    },
+  }
+}
+
+async function toRouteEntries(config: StaticRouteConfig): Promise<MetadataRoute.Sitemap> {
+  const lastModified =
+    (config.sources && config.sources.length ? await latestMtime(config.sources) : null) ??
+    new Date()
+  const alternates = buildAlternates(config.nl, config.en)
+
+  const baseEntry = {
+    changeFrequency: config.changeFrequency,
+    priority: config.priority,
+    lastModified,
+    ...(alternates ? { alternates } : {}),
+  }
+
+  const entries: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}${config.nl}`, ...baseEntry },
+  ]
+
+  if (config.en) {
+    entries.push({
+      url: `${BASE_URL}${config.en}`,
+      ...baseEntry,
+    })
+  }
+
+  return entries
+}
+
+async function getBlogSlugs(locale: "nl" | "en") {
+  const dir = locale === "nl" ? "app/(pages)/blog" : "app/en/(pages)/blog"
+  try {
+    const entries = await fs.readdir(path.join(ROOT, dir), { withFileTypes: true })
+    return entries.filter((e) => e.isDirectory()).map((e) => e.name)
+  } catch {
+    return []
+  }
+}
+
+async function getSegmentSlugs() {
+  try {
+    const entries = await fs.readdir(path.join(ROOT, "app/segments"), { withFileTypes: true })
+    return entries.filter((e) => e.isDirectory()).map((e) => e.name)
+  } catch {
+    return []
+  }
+}
+
+async function getLocationMtime(slug: string) {
+  const candidates = [
+    `content/locations/${slug}.md`,
+    `content/en/locations/${slug}.md`,
+    "lib/locations.ts",
+    "app/(pages)/[slug]/page.tsx",
+    "app/en/(pages)/[slug]/page.tsx",
+  ]
+  return (await latestMtime(candidates)) ?? new Date()
+}
 
 export const dynamic = "force-static"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Statische routes - met passende changeFrequency
-  const staticRoutes = [
-    { path: "/",                  changeFrequency: "weekly"  as const, priority: 0.8 },
-    { path: "/en",                changeFrequency: "weekly"  as const, priority: 0.8 },
-    { path: "/3d-printen",        changeFrequency: "weekly"  as const, priority: 0.8 },
-    { path: "/en/3d-printen",     changeFrequency: "weekly"  as const, priority: 0.8 },
-    { path: "/services",          changeFrequency: "monthly" as const, priority: 0.8 },
-    { path: "/en/services",       changeFrequency: "monthly" as const, priority: 0.8 },
-    { path: "/materials",         changeFrequency: "weekly"  as const, priority: 0.8 },
-    { path: "/en/materials",      changeFrequency: "weekly"  as const, priority: 0.8 },
-    { path: "/pricing",           changeFrequency: "weekly"  as const, priority: 0.8 },
-    { path: "/en/pricing",        changeFrequency: "weekly"  as const, priority: 0.8 },
-    { path: "/portfolio",         changeFrequency: "weekly"  as const, priority: 0.8 },
-    { path: "/en/portfolio",      changeFrequency: "weekly"  as const, priority: 0.8 },
-    { path: "/valentijn-3d-printen", changeFrequency: "weekly" as const, priority: 0.7 },
-    { path: "/en/valentijn-3d-printen", changeFrequency: "weekly" as const, priority: 0.7 },
-    { path: "/segments",          changeFrequency: "weekly"  as const, priority: 0.7 },
-    { path: "/en/segments",       changeFrequency: "weekly"  as const, priority: 0.7 },
-    { path: "/blog",              changeFrequency: "weekly"  as const, priority: 0.7 },
-    { path: "/en/blog",           changeFrequency: "weekly"  as const, priority: 0.7 },
-    { path: "/viewer",            changeFrequency: "weekly"  as const, priority: 0.7 },
-    { path: "/en/viewer",         changeFrequency: "weekly"  as const, priority: 0.7 },
-    { path: "/3d-modelleren",     changeFrequency: "monthly" as const, priority: 0.6 },
-    { path: "/en/3d-modelleren",  changeFrequency: "monthly" as const, priority: 0.6 },
-    { path: "/lokaal-belgisch",   changeFrequency: "monthly" as const, priority: 0.7 },
-    { path: "/en/lokaal-belgisch", changeFrequency: "monthly" as const, priority: 0.7 },
-    { path: "/about",             changeFrequency: "monthly" as const, priority: 0.6 },
-    { path: "/en/about",          changeFrequency: "monthly" as const, priority: 0.6 },
-    { path: "/sustainability",    changeFrequency: "monthly" as const, priority: 0.6 },
-    { path: "/en/sustainability", changeFrequency: "monthly" as const, priority: 0.6 },
-    { path: "/3d-modellen-vinden", changeFrequency: "weekly" as const, priority: 0.7 },
-    { path: "/en/3d-modellen-vinden", changeFrequency: "weekly" as const, priority: 0.7 },
-    { path: "/contact",           changeFrequency: "monthly" as const, priority: 0.6 },
-    { path: "/en/contact",        changeFrequency: "monthly" as const, priority: 0.6 },
-    { path: "/faq",               changeFrequency: "monthly" as const, priority: 0.6 },
-    { path: "/en/faq",            changeFrequency: "monthly" as const, priority: 0.6 },
-    { path: "/locaties",          changeFrequency: "monthly" as const, priority: 0.6 },
-    { path: "/en/locaties",       changeFrequency: "monthly" as const, priority: 0.6 },
-    { path: "/privacy",           changeFrequency: "yearly" as const, priority: 0.4 },
-    { path: "/en/privacy",        changeFrequency: "yearly" as const, priority: 0.4 },
-    { path: "/cookies",           changeFrequency: "yearly" as const, priority: 0.4 },
-    { path: "/en/cookies",        changeFrequency: "yearly" as const, priority: 0.4 },
-    { path: "/algemene-voorwaarden", changeFrequency: "yearly" as const, priority: 0.4 },
-    { path: "/en/algemene-voorwaarden", changeFrequency: "yearly" as const, priority: 0.4 },
-  ].map(({ path, changeFrequency, priority }) => ({
-    url: `${BASE_URL}${path}`,
-    lastModified: new Date(),
-    changeFrequency,
-    priority,
-  }))
-
-  const blogPostSlugs = [
-    "3d-geprinte-platen-nasiam",
-    "3d-printen-herfst-halloween",
-    "3d-printen-in-de-buurt",
-    "3d-printen-back-to-school",
-    "3d-printen-lente-pasen",
-    "3d-printen-mini-figuren",
-    "3d-printen-op-bestelling",
-    "3d-printen-valentijn",
-    "relatiegeschenken-3d-printen",
-    "3d-printen-vaderdag-moederdag",
-    "3d-printen-voor-beginners",
-    "3d-printen-winter-kerst-nieuwjaar",
-    "3d-printen-zomer",
-    "3d-printing-marketing-events",
-    "octopus-accountancy-3d-print-goodies",
-    "bestanden-voor-3d-printen",
-    "beste-instellingen-bambu-printer",
-    "filament-vrijdag-pla",
-    "filament-vrijdag-petg",
-    "filament-vrijdag-tpu",
-    "filament-vrijdag-pla-wood",
-    "filament-vrijdag-pla-marble",
-    "filament-vrijdag-pla-glow",
-    "filament-vrijdag-pla-metal",
-    "filament-vrijdag-pla-silk-plus",
-    "filament-vrijdag-pc",
-    "finishing-friday-schuren-primen-lakken",
-    "juiste-3d-print-materiaal",
-    "hoe-3d-print-je-onderdelen-voor-buitengebruik",
-    "hoe-lang-duurt-3d-printen",
-    "hoeveel-kost-3d-printen",
-    "maker-monday-fdm-scharnieren",
-    "maker-monday-wanddiktes-ribs",
-    "maker-monday-toleranties-3d-printen",
-    "maker-monday-snapfits",
-    "maker-monday-snapfit-parts",
-    "maker-monday-schroefdraad-inserts",
-    "maker-monday-schroefdraad-bevestigingen",
-    "maker-monday-warping-layer-cracks",
-    "ontwerp-3d-printbaar-model",
-    "pla-vs-petg",
-    "use-cases-tpu",
-    "use-case-dinsdag-auto-fiets",
-    "use-case-dinsdag-events",
-    "use-case-dinsdag-interieur",
-    "use-case-dinsdag-productontwikkeling",
-    "use-case-dinsdag-retail-displays",
-    "use-case-dinsdag-scholen",
-    "use-case-dinsdag-stem",
-    "use-case-dinsdag-tabletop",
+  const staticRouteConfigs: StaticRouteConfig[] = [
+    { nl: "/", en: "/en", changeFrequency: "weekly", priority: 0.8, sources: ["app/page.tsx", "app/en/page.tsx"] },
+    { nl: "/3d-printen", en: "/en/3d-printen", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/3d-printen/page.tsx", "app/en/(pages)/3d-printen/page.tsx"] },
+    { nl: "/services", en: "/en/services", changeFrequency: "monthly", priority: 0.8, sources: ["app/(pages)/services/page.tsx", "app/en/(pages)/services/page.tsx"] },
+    { nl: "/materials", en: "/en/materials", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/materials/page.tsx", "app/en/(pages)/materials/page.tsx"] },
+    { nl: "/pricing", en: "/en/pricing", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/pricing/page.tsx", "app/en/(pages)/pricing/page.tsx"] },
+    { nl: "/portfolio", en: "/en/portfolio", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/portfolio/page.tsx", "app/en/(pages)/portfolio/page.tsx"] },
+    { nl: "/valentijn-3d-printen", en: "/en/valentijn-3d-printen", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/valentijn-3d-printen/page.tsx", "app/en/(pages)/valentijn-3d-printen/page.tsx"] },
+    { nl: "/segments", en: "/en/segments", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/segments/page.tsx", "app/en/(pages)/segments/page.tsx"] },
+    { nl: "/blog", en: "/en/blog", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/blog/page.tsx", "app/en/(pages)/blog/page.tsx"] },
+    { nl: "/viewer", en: "/en/viewer", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/viewer/page.tsx", "app/en/(pages)/viewer/page.tsx"] },
+    { nl: "/3d-modelleren", en: "/en/3d-modelleren", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/3d-modelleren/page.tsx", "app/en/(pages)/3d-modelleren/page.tsx"] },
+    { nl: "/lokaal-belgisch", en: "/en/lokaal-belgisch", changeFrequency: "monthly", priority: 0.7, sources: ["app/(pages)/lokaal-belgisch/page.tsx", "app/en/(pages)/lokaal-belgisch/page.tsx"] },
+    { nl: "/about", en: "/en/about", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/about/page.tsx", "app/en/(pages)/about/page.tsx"] },
+    { nl: "/sustainability", en: "/en/sustainability", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/sustainability/page.tsx", "app/en/(pages)/sustainability/page.tsx"] },
+    { nl: "/3d-modellen-vinden", en: "/en/3d-modellen-vinden", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/3d-modellen-vinden/page.tsx", "app/en/(pages)/3d-modellen-vinden/page.tsx"] },
+    { nl: "/contact", en: "/en/contact", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/contact/page.tsx", "app/en/(pages)/contact/page.tsx"] },
+    { nl: "/faq", en: "/en/faq", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/faq/page.tsx", "app/en/(pages)/faq/page.tsx"] },
+    { nl: "/locaties", en: "/en/locaties", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/locaties/page.tsx", "app/en/(pages)/locaties/page.tsx"] },
+    { nl: "/privacy", en: "/en/privacy", changeFrequency: "yearly", priority: 0.4, sources: ["app/(pages)/privacy/page.tsx", "app/en/(pages)/privacy/page.tsx"] },
+    { nl: "/cookies", en: "/en/cookies", changeFrequency: "yearly", priority: 0.4, sources: ["app/(pages)/cookies/page.tsx", "app/en/(pages)/cookies/page.tsx"] },
+    { nl: "/algemene-voorwaarden", en: "/en/algemene-voorwaarden", changeFrequency: "yearly", priority: 0.4, sources: ["app/(pages)/algemene-voorwaarden/page.tsx", "app/en/(pages)/algemene-voorwaarden/page.tsx"] },
   ]
 
-  const enBlogPostSlugs = [
-    "octopus-accountancy-3d-print-goodies",
-    "hoeveel-kost-3d-printen",
-    "hoe-lang-duurt-3d-printen",
-    "pla-vs-petg",
-    "3d-printen-in-de-buurt",
-    "3d-printen-voor-beginners",
-    "bestanden-voor-3d-printen",
-    "hoe-3d-print-je-onderdelen-voor-buitengebruik",
-    "juiste-3d-print-materiaal",
-    "3d-printen-op-bestelling",
-    "ontwerp-3d-printbaar-model",
-    "use-cases-tpu",
-    "filament-vrijdag-tpu",
-    "filament-vrijdag-pla",
-    "filament-vrijdag-petg",
-    "filament-vrijdag-pla-wood",
-    "filament-vrijdag-pla-marble",
-    "filament-vrijdag-pla-glow",
-    "filament-vrijdag-pla-metal",
-    "filament-vrijdag-pla-silk-plus",
-    "filament-vrijdag-pc",
-    "finishing-friday-schuren-primen-lakken",
-    "maker-monday-fdm-scharnieren",
-    "maker-monday-wanddiktes-ribs",
-    "maker-monday-toleranties-3d-printen",
-    "maker-monday-snapfits",
-    "maker-monday-snapfit-parts",
-    "maker-monday-schroefdraad-inserts",
-    "maker-monday-schroefdraad-bevestigingen",
-    "maker-monday-warping-layer-cracks",
-    "3d-printen-valentijn",
-    "3d-printen-back-to-school",
-    "3d-printen-zomer",
-    "3d-printing-marketing-events",
-    "3d-printen-herfst-halloween",
-    "3d-printen-lente-pasen",
-    "3d-printen-mini-figuren",
-    "3d-printen-vaderdag-moederdag",
-    "3d-printen-winter-kerst-nieuwjaar",
-    "3d-geprinte-platen-nasiam",
-    "use-case-dinsdag-auto-fiets",
-    "use-case-dinsdag-events",
-    "use-case-dinsdag-interieur",
-    "use-case-dinsdag-productontwikkeling",
-    "use-case-dinsdag-retail-displays",
-    "use-case-dinsdag-scholen",
-    "use-case-dinsdag-stem",
-    "use-case-dinsdag-tabletop",
-  ]
+  const staticRoutes = (await Promise.all(staticRouteConfigs.map(toRouteEntries))).flat()
 
-  const segmentSlugs = [
-    "3d-printing-prototypes",
-    "3d-printing-scholen",
-    "3d-printing-modelbouwers",
-    "3d-printing-engineers",
-    "3d-printing-marketing",
-    "3d-printing-makers",
-    "3d-printing-tabletop",
-    "3d-printing-back-to-school",
-    "3d-printing-vaderdag-moederdag",
-    "3d-printing-valentijn",
-    "3d-printing-seasonal",
-  ]
+  const [nlBlogSlugs, enBlogSlugs, segmentSlugs] = await Promise.all([
+    getBlogSlugs("nl"),
+    getBlogSlugs("en"),
+    getSegmentSlugs(),
+  ])
 
-  const blogRoutes = blogPostSlugs.map((slug) => ({
-    url: `${BASE_URL}/blog/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }))
+  const blogRoutes: MetadataRoute.Sitemap = await Promise.all(
+    nlBlogSlugs.flatMap((slug) => {
+      const enPath = enBlogSlugs.includes(slug) ? `/en/blog/${slug}` : undefined
+      const sources = [
+        `app/(pages)/blog/${slug}/page.tsx`,
+        enPath ? `app/en/(pages)/blog/${slug}/page.tsx` : undefined,
+      ].filter(Boolean) as string[]
+      const alternates = enPath ? buildAlternates(`/blog/${slug}`, enPath) : undefined
 
-  const enBlogRoutes = enBlogPostSlugs.map((slug) => ({
-    url: `${BASE_URL}/en/blog/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }))
+      return [
+        (async () => ({
+          url: `${BASE_URL}/blog/${slug}`,
+          priority: 0.6,
+          changeFrequency: "monthly" as const,
+          lastModified: (await latestMtime(sources)) ?? new Date(),
+          ...(alternates ? { alternates } : {}),
+        }))(),
+        ...(enPath
+          ? [
+              (async () => ({
+                url: `${BASE_URL}${enPath}`,
+                priority: 0.6,
+                changeFrequency: "monthly" as const,
+                lastModified: (await latestMtime(sources)) ?? new Date(),
+                alternates,
+              }))(),
+            ]
+          : []),
+      ]
+    }),
+  ).then((entries) => entries.flat())
 
-  const segmentRoutes = segmentSlugs.map((slug) => ({
-    url: `${BASE_URL}/segments/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }))
+  const enOnlyBlogRoutes: MetadataRoute.Sitemap = await Promise.all(
+    enBlogSlugs
+      .filter((slug) => !nlBlogSlugs.includes(slug))
+      .map(async (slug) => ({
+        url: `${BASE_URL}/en/blog/${slug}`,
+        priority: 0.6,
+        changeFrequency: "monthly" as const,
+        lastModified:
+          (await latestMtime([`app/en/(pages)/blog/${slug}/page.tsx`])) ?? new Date(),
+      })),
+  )
 
-  const materialDetailRoutes = MATERIAL_DETAIL_SLUGS.map((slug) => ({
-    url: `${BASE_URL}/materials/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }))
+  const blogRouteEntries: MetadataRoute.Sitemap = [...blogRoutes, ...enOnlyBlogRoutes]
 
-  const enMaterialDetailRoutes = MATERIAL_DETAIL_SLUGS.map((slug) => ({
-    url: `${BASE_URL}/en/materials/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }))
+  const segmentRoutes: MetadataRoute.Sitemap = await Promise.all(
+    segmentSlugs.map(async (slug) => {
+      const lastModified =
+        (await latestMtime([`app/segments/${slug}/page.tsx`])) ?? new Date()
+      return {
+        url: `${BASE_URL}/segments/${slug}`,
+        lastModified,
+        changeFrequency: "monthly" as const,
+        priority: 0.6,
+      }
+    }),
+  )
 
-  // Dynamische location-slugs
-  const locationRoutes = getAllLocationSlugs().map((slug) => ({
-    url: `${BASE_URL}/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }))
+  const materialDetailRoutes: MetadataRoute.Sitemap = await Promise.all(
+    MATERIAL_DETAIL_SLUGS.flatMap((slug) => {
+      const sources = [
+        "content/material-details.ts",
+        "content/material-details-en.ts",
+        "app/(pages)/materials/[slug]/page.tsx",
+        "app/en/(pages)/materials/[slug]/page.tsx",
+      ]
 
-  const enLocationRoutes = getEnglishLocationSlugs().map((slug) => ({
-    url: `${BASE_URL}/en/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }))
+      const alternates = buildAlternates(`/materials/${slug}`, `/en/materials/${slug}`)
+
+      return [
+        (async () => ({
+          url: `${BASE_URL}/materials/${slug}`,
+          lastModified: (await latestMtime(sources)) ?? new Date(),
+          changeFrequency: "monthly" as const,
+          priority: 0.7,
+          alternates,
+        }))(),
+        (async () => ({
+          url: `${BASE_URL}/en/materials/${slug}`,
+          lastModified: (await latestMtime(sources)) ?? new Date(),
+          changeFrequency: "monthly" as const,
+          priority: 0.7,
+          alternates,
+        }))(),
+      ]
+    }),
+  ).then((entries) => entries.flat())
+
+  const locationRoutes: MetadataRoute.Sitemap = await Promise.all(
+    getAllLocationSlugs().flatMap((slug) => {
+      const hasEn = EN_LOCATION_SLUGS.has(slug)
+      const alternates = hasEn
+        ? buildAlternates(`/${slug}`, `/en/${slug}`)
+        : undefined
+      return [
+        (async () => ({
+          url: `${BASE_URL}/${slug}`,
+          lastModified: (await getLocationMtime(slug)) ?? new Date(),
+          changeFrequency: "weekly" as const,
+          priority: 0.7,
+          ...(alternates ? { alternates } : {}),
+        }))(),
+        ...(hasEn
+          ? [
+              (async () => ({
+                url: `${BASE_URL}/en/${slug}`,
+                lastModified: (await getLocationMtime(slug)) ?? new Date(),
+                changeFrequency: "weekly" as const,
+                priority: 0.7,
+                alternates,
+              }))(),
+            ]
+          : []),
+      ]
+    }),
+  ).then((entries) => entries.flat())
 
   return [
     ...staticRoutes,
-    ...blogRoutes,
-    ...enBlogRoutes,
+    ...blogRouteEntries,
     ...segmentRoutes,
     ...materialDetailRoutes,
-    ...enMaterialDetailRoutes,
     ...locationRoutes,
-    ...enLocationRoutes,
   ]
 }

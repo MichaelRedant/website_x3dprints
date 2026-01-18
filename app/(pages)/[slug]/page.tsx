@@ -25,6 +25,7 @@ import {
   getAllLocationSlugs,
   getLocationBySlug,
   buildDefaultRelatedPhrases,
+  EN_LOCATION_SLUGS,
 } from "@/lib/locations"
 import { keywordSvgDataUri } from "@/lib/svg"
 import {
@@ -151,6 +152,8 @@ export async function generateMetadata(
     ? loc.relatedPhrases
     : buildDefaultRelatedPhrases(loc.city)
   const url = `https://www.x3dprints.be/${loc.slug}`
+  const enUrl = `https://www.x3dprints.be/en/${loc.slug}`
+  const hasEnglish = EN_LOCATION_SLUGS.has(loc.slug)
 
   // Try to read markdown to craft a unique description
   let contentMd = ""
@@ -167,7 +170,17 @@ export async function generateMetadata(
     title: { default: `${keyphrase} | X3DPrints`, template: `%s | X3DPrints` },
     description,
     keywords: [keyphrase, ...(phrases || [])].join(", "),
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      ...(hasEnglish
+        ? {
+            languages: {
+              "nl-BE": url,
+              en: enUrl,
+            },
+          }
+        : {}),
+    },
     robots: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large" },
     openGraph: {
       title: keyphrase,
@@ -274,6 +287,7 @@ export default async function Page(
     "@type": "Service",
     name: keyphrase,
     description: seoDescription,
+    inLanguage: "nl-BE",
     areaServed: [{ "@type": "City", name: loc.city }, { "@type": "State", name: "Oost-Vlaanderen" }],
     provider: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
     url: `https://www.x3dprints.be/${loc.slug}`,
@@ -288,6 +302,8 @@ export default async function Page(
     url: "https://www.x3dprints.be",
     image: "https://www.x3dprints.be/og-x3dprints.jpg",
     description: seoDescription,
+    inLanguage: "nl-BE",
+    alternateName: ["X3DPrints", "X3DPrints (English)"],
     telephone: SITE.phone,
     hasMap: "https://www.google.com/maps/search/?api=1&query=Provincieweg+34a+9552+Herzele",
     geo: {
@@ -331,12 +347,14 @@ export default async function Page(
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    inLanguage: "nl-BE",
     mainEntity: faqItems.map((i) => ({ "@type": "Question", name: i.q, acceptedAnswer: { "@type": "Answer", text: i.aText } })),
   }
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    inLanguage: "nl-BE",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://www.x3dprints.be" },
       { "@type": "ListItem", position: 2, name: "Locaties", item: "https://www.x3dprints.be/locaties" },

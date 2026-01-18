@@ -93,6 +93,8 @@ const materialSuggestions = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printing for marketing & events",
   description:
     "How to use 3D printing for marketing and events: props, awards, merch, with planning, materials, logistics and KPIs.",

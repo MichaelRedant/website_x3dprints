@@ -77,6 +77,8 @@ const faqItems = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printing for summer",
   description:
     "Outdoor decor, nautical props and terrace accessories. PETG for sun/moisture, PLA Silk/Marble for luxe table decor, TPU for grip.",
@@ -96,6 +98,8 @@ const articleJsonLd = {
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+
+  inLanguage: ["nl-BE", "en-BE"],
   mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,

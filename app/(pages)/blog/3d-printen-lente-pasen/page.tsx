@@ -72,6 +72,8 @@ const faqItems = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printen voor lente & Pasen",
   description:
     "Pastel decor, paasornamenten en lichtobjecten in Silk, Matte en Translucent PLA. Tips voor supports, magneten en levering.",
@@ -90,6 +92,8 @@ const articleJsonLd = {
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+
+  inLanguage: ["nl-BE", "en-BE"],
   mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,

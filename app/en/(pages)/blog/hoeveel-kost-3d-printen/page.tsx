@@ -87,6 +87,8 @@ const faq = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "How much does 3D printing cost?",
   description:
     "Guide to 3D printing cost factors: material, machine hours, complexity, finishing and logistics, plus example pricing.",

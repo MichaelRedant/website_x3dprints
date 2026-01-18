@@ -73,6 +73,8 @@ const faqItems = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printing for spring & Easter",
   description:
     "Pastel decor, ornaments and light objects in Silk, Matte and Translucent PLA with tips for supports, magnets and delivery.",
@@ -92,6 +94,8 @@ const articleJsonLd = {
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+
+  inLanguage: ["nl-BE", "en-BE"],
   mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,

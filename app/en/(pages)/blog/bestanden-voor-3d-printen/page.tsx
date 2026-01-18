@@ -72,6 +72,8 @@ const documentationTips = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "Which files do you need for 3D printing?",
   description:
     "Checklist for file formats and export settings for 3D printing, including mesh checks and documentation.",

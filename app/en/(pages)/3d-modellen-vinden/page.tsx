@@ -97,6 +97,8 @@ const faqItems = [
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+
+  inLanguage: ["nl-BE", "en-BE"],
   mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,
@@ -107,6 +109,8 @@ const faqJsonLd = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "Where to find 3D models to print",
   description:
     "Overview of the best places to download 3D models (Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults, Thangs) plus quality tips for X3DPrints.",

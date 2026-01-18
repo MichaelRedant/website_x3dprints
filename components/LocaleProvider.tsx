@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useEffect, useMemo, useState } from "react"
 import { DEFAULT_LOCALE, normalizeLocale, type Locale } from "@/lib/i18n/locales"
+import { localizeHref } from "@/lib/i18n/paths"
 
 type LocaleContextValue = {
   locale: Locale
@@ -21,17 +22,26 @@ export default function LocaleProvider({
 }) {
   const [locale, setLocale] = useState<Locale>(initialLocale)
 
+  const applyContentLanguageMeta = (value: Locale) => {
+    if (typeof document === "undefined") return
+    const langValue = value === "en" ? "en-BE" : "nl-BE"
+    let meta = document.querySelector('meta[http-equiv="content-language"]') as HTMLMetaElement | null
+    if (!meta) {
+      meta = document.createElement("meta")
+      meta.httpEquiv = "content-language"
+      document.head.appendChild(meta)
+    }
+    meta.content = langValue
+  }
+
   // Initialize from query param/localStorage/navigator
   useEffect(() => {
-    const fromQuery =
-      typeof window !== "undefined"
-        ? new URLSearchParams(window.location.search).get("lang")
-        : null
-    const stored = typeof window !== "undefined" ? localStorage.getItem(STORAGE_KEY) : null
-    const fromPath =
-      typeof window !== "undefined"
-        ? window.location.pathname.split("/").filter(Boolean)[0] // e.g. "en"
-        : null
+    if (typeof window === "undefined") return
+
+    const url = new URL(window.location.href)
+    const fromQuery = url.searchParams.get("lang")
+    const stored = localStorage.getItem(STORAGE_KEY)
+    const fromPath = url.pathname.split("/").filter(Boolean)[0] // e.g. "en"
     const fromNavigator =
       typeof navigator !== "undefined" ? navigator.language ?? navigator.languages?.[0] : null
 
@@ -43,11 +53,29 @@ export default function LocaleProvider({
       next = fromNavigator.toLowerCase().startsWith("nl") ? "nl" : "en"
     else next = DEFAULT_LOCALE
 
+    const canonicalHref = localizeHref(
+      `${url.pathname}${url.search}${url.hash}`,
+      next,
+    )
+    const currentHref = `${url.pathname}${url.search}${url.hash}`
+
+    // Normalize ?lang= to canonical path to avoid duplicate indexation
+    if (canonicalHref !== currentHref) {
+      window.location.replace(canonicalHref)
+      return
+    }
+
+    if (fromQuery) {
+      url.searchParams.delete("lang")
+      const cleaned = `${url.pathname}${url.searchParams.toString() ? `?${url.searchParams.toString()}` : ""}${url.hash}`
+      if (cleaned !== currentHref) {
+        window.history.replaceState({}, "", cleaned)
+      }
+    }
+
     setLocale(next)
     document.documentElement.lang = next
-    if (typeof window !== "undefined") {
-      localStorage.setItem(STORAGE_KEY, next)
-    }
+    applyContentLanguageMeta(next)
   }, [])
 
   // Persist and mirror on <html>
@@ -57,6 +85,7 @@ export default function LocaleProvider({
     }
     document.documentElement.lang = locale
     document.documentElement.dataset.locale = locale
+    applyContentLanguageMeta(locale)
   }, [locale])
 
   const value = useMemo(() => ({ locale, setLocale }), [locale])

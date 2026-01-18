@@ -147,6 +147,8 @@ const pageUrl = `${SITE.url}/sustainability`
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "FuturePrint Lab: duurzaamheid bij X3DPrints",
   description:
     "Overzicht van de praktische duurzaamheidsprincipes van X3DPrints: slim ontwerp, efficiënte materiaalkeuzes, lokale productie en kleine reeksen op maat.",
@@ -163,6 +165,8 @@ const articleJsonLd = {
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+
+  inLanguage: ["nl-BE", "en-BE"],
   mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,

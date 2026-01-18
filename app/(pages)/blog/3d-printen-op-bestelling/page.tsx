@@ -57,6 +57,8 @@ const reorders = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printen op bestelling",
   description:
     "Uitleg over het bestelproces bij X3DPrints: intake, productie, levering en herhaalorders.",

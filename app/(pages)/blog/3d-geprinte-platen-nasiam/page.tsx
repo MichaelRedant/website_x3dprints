@@ -90,6 +90,8 @@ a: "PLA Matte geeft weinig schittering onder spotlights en is tegelijkertijd sti
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "NaSiam x X3DPrints: 3D-geprinte platen met QR",
   description:
     "Case study over twee herbruikbare 3D-geprinte platen met logo en QR-code voor NaSiam in Sint-Job, inclusief materiaalkeuzes en montageadvies.",

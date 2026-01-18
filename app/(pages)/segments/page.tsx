@@ -664,6 +664,8 @@ export default function SegmentsPage({ locale }: PageProps) {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+
+    inLanguage: ["nl-BE", "en-BE"],
     mainEntity: copy.faq.items.map((item) => ({
       "@type": "Question",
       name: item.q,

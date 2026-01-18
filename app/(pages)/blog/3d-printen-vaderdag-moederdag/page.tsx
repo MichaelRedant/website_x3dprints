@@ -77,6 +77,8 @@ const inspirationImages = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "Vaderdag & Moederdag 3D printen",
   description: metadata.description,
   author: { "@type": "Organization", name: "X3DPrints" },

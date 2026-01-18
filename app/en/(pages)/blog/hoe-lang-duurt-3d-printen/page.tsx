@@ -82,6 +82,8 @@ const faq = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "How long does 3D printing take?",
   description:
     "Lead time guide for 3D printing: what impacts turnaround, indicative timelines and how to secure rush capacity.",

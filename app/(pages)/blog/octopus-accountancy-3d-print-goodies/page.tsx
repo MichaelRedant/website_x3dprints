@@ -451,6 +451,8 @@ export default function OctopusCasePage({ locale }: PageProps) {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+
+    inLanguage: ["nl-BE", "en-BE"],
     headline: copy.meta.jsonLdHeadline,
     description: copy.meta.jsonLdDescription,
     author: { "@type": "Organization", name: "X3DPrints" },

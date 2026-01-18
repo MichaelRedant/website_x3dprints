@@ -88,6 +88,8 @@ const videos = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "Back to School: 3D printen voor school",
   description: metadata.description,
   author: { "@type": "Organization", name: "X3DPrints" },

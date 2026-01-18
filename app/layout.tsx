@@ -58,6 +58,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     url: SITE.url,
     telephone: SITE.phone,
     image: `${SITE.url}${SITE.ogImage}`,
+    inLanguage: ["nl-BE", "en-BE"],
+    alternateName: ["X3DPrints", "X3DPrints (English)"],
     address: {
       "@type": "PostalAddress",
       streetAddress: SITE.address.street,
@@ -67,7 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       addressCountry: SITE.address.country,
     },
     sameAs: SITE.sameAs,
-    areaServed: "België",
+    areaServed: "Belgium",
     priceRange: "EUR",
     makesOffer: [{ "@type": "Offer", itemOffered: { "@type": "Service", name: "3D Print Service" } }],
     geo: { "@type": "GeoCoordinates", latitude: 50.8839, longitude: 3.8932 },
@@ -82,6 +84,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       url: `${SITE.url}/locaties`,
       telephone: SITE.phone,
       address: baseLocalBusiness.address,
+      inLanguage: baseLocalBusiness.inLanguage,
+      alternateName: baseLocalBusiness.alternateName,
       areaServed: ["Gent", "Zottegem", "Geraardsbergen", "Oudenaarde", "Ninove"],
       makesOffer: baseLocalBusiness.makesOffer,
       parentOrganization: { "@id": baseLocalBusiness["@id"] },
@@ -93,6 +97,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       url: `${SITE.url}/locaties`,
       telephone: SITE.phone,
       address: baseLocalBusiness.address,
+      inLanguage: baseLocalBusiness.inLanguage,
+      alternateName: baseLocalBusiness.alternateName,
       areaServed: ["Aalst", "Denderleeuw", "Ninove", "Haaltert"],
       makesOffer: baseLocalBusiness.makesOffer,
       parentOrganization: { "@id": baseLocalBusiness["@id"] },
@@ -104,6 +110,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       url: `${SITE.url}/locaties`,
       telephone: SITE.phone,
       address: baseLocalBusiness.address,
+      inLanguage: baseLocalBusiness.inLanguage,
+      alternateName: baseLocalBusiness.alternateName,
       areaServed: ["Sint-Niklaas", "Beveren", "Lokeren", "Temse"],
       makesOffer: baseLocalBusiness.makesOffer,
       parentOrganization: { "@id": baseLocalBusiness["@id"] },
@@ -115,6 +123,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       url: `${SITE.url}/locaties`,
       telephone: SITE.phone,
       address: baseLocalBusiness.address,
+      inLanguage: baseLocalBusiness.inLanguage,
+      alternateName: baseLocalBusiness.alternateName,
       areaServed: ["Kortrijk", "Waregem", "Deinze", "Zulte"],
       makesOffer: baseLocalBusiness.makesOffer,
       parentOrganization: { "@id": baseLocalBusiness["@id"] },
@@ -132,6 +142,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const breadcrumbList = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    inLanguage: "nl-BE",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${SITE.url}/` },
       { "@type": "ListItem", position: 2, name: "Services", item: `${SITE.url}/services` },
@@ -145,6 +156,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="nl" data-theme="light" suppressHydrationWarning>
+      <head>
+        <meta httpEquiv="content-language" content="nl-BE" />
+      </head>
       <body className={cn("min-h-screen flex flex-col antialiased pt-16 md:pt-[72px]", orbitron.variable, mono.variable)}>
         <script
           dangerouslySetInnerHTML={{

@@ -110,6 +110,8 @@ const faq = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "PLA vs PETG: welke moet je kiezen?",
   description:
     "Vergelijking tussen PLA en PETG voor 3D printen met aandacht voor uiterlijk, mechanische eigenschappen, temperatuur en kost.",

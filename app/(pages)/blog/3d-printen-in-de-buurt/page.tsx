@@ -57,6 +57,8 @@ const process = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printen in de buurt (Gent, Aalst, Dendermonde)",
   description:
     "Lokale gids voor 3D printen in Gent, Aalst en Dendermonde met logistieke opties en voorbeelden van gerealiseerde projecten.",

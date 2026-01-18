@@ -586,6 +586,8 @@ export default function Page({ locale }: PageProps) {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+
+    inLanguage: ["nl-BE", "en-BE"],
     mainEntity: faqItems.map((item) => ({
       "@type": "Question",
       name: item.q,

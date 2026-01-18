@@ -76,6 +76,8 @@ const faq = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "Hoe lang duurt 3D printen?",
   description:
     "Praktische gids over de doorlooptijd van 3D prints met aandacht voor machine-uren, nabewerking en logistiek.",

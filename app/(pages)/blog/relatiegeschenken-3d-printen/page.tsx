@@ -86,6 +86,8 @@ const videos = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "Relatiegeschenken 3D printen voor B2B",
   description: metadata.description,
   author: { "@type": "Organization", name: "X3DPrints" },

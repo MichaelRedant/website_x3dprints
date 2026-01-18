@@ -97,6 +97,8 @@ const faq = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printen van miniaturen voor tabletop gaming",
   description:
     "Volledige gids voor 3D printing van D&D en Warhammer miniaturen: materiaalkeuze, detail, supports, nabewerking, dice towers en veilige levering.",

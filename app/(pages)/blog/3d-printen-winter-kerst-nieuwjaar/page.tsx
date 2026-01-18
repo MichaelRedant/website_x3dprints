@@ -60,6 +60,8 @@ const faqItems = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printen voor winter, Kerst & Nieuwjaar",
   description:
     "Sneeuwvlokken, ornamenten, tafelkaartjes en party props in Silk, Marble en Translucent PLA. Tips voor lichtobjecten en levering.",
@@ -78,6 +80,8 @@ const articleJsonLd = {
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+
+  inLanguage: ["nl-BE", "en-BE"],
   mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,

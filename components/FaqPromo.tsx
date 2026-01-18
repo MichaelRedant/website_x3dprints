@@ -46,6 +46,8 @@ export default function FaqPromo({
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+
+    inLanguage: ["nl-BE", "en-BE"],
     mainEntity: qaItems.slice(0, 3).map((i) => ({
       "@type": "Question",
       name: clampText(i.q, 110),

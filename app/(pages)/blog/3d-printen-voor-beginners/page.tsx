@@ -47,6 +47,8 @@ const pitfalls = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printen voor beginners",
   description:
     "Gids voor beginners met stappenplan, materiaalkeuze en veelgemaakte fouten. Inclusief tips voor begeleiding en opleiding.",

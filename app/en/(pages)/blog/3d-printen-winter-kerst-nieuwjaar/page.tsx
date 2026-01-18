@@ -81,6 +81,8 @@ const inspirationImages = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printing for winter, Christmas and New Year",
   description:
     "Snowflakes, ornaments, place cards and party props in Silk, Marble and Translucent PLA with tips for light objects and delivery.",
@@ -100,6 +102,8 @@ const articleJsonLd = {
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+
+  inLanguage: ["nl-BE", "en-BE"],
   mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,

@@ -87,6 +87,8 @@ const snapFitTips = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "How do you design a 3D printable model?",
   description:
     "Checklist and guidelines to design 3D printable models with focus on wall thickness, tolerance, support and file formats.",

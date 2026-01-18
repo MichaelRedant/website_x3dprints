@@ -112,6 +112,8 @@ const testChecklist = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "Maker Monday #8: Snap-fit parts die blijven klikken",
   description:
     "Ontwerp snap-fit onderdelen voor PLA, PETG en TPU met juiste clearance, fillets, arm-diktes en testprotocol. Bevat interne links naar wanddikte- en tolerantiegidsen.",

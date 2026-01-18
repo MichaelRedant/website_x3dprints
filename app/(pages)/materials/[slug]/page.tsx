@@ -411,6 +411,7 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
   const { slug } = await params
   const normalizedLocale = normalizeLocale(locale)
   const isEn = normalizedLocale === "en"
+  const languageCode = isEn ? "en-BE" : "nl-BE"
   const copy = isEn ? DETAIL_COPY_EN : DETAIL_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
 
@@ -442,6 +443,7 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
     material: material.name,
     brand: { "@type": "Brand", name: "X3DPrints" },
     url: pageUrl,
+    inLanguage: languageCode,
     additionalProperty: detail.specs.map((spec) => ({
       "@type": "PropertyValue",
       name: spec.label,
@@ -453,6 +455,7 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
     ? {
         "@context": "https://schema.org",
         "@type": "FAQPage",
+        inLanguage: languageCode,
         mainEntity: detail.faq.map((item) => ({
           "@type": "Question",
           name: item.question,

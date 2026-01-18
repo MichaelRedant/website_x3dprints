@@ -86,6 +86,8 @@ const valentijnVideos = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printen voor Valentijn cadeaus",
   description: metadata.description,
   author: { "@type": "Organization", name: "X3DPrints" },

@@ -246,6 +246,8 @@ export default function MaterialsPage({ locale }: PageProps) {
       ? {
           "@context": "https://schema.org",
           "@type": "FAQPage",
+
+          inLanguage: ["nl-BE", "en-BE"],
           mainEntity: faqEntities,
         }
       : null

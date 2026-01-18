@@ -110,6 +110,8 @@ const faq = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "Beste instellingen voor jouw Bambu printer",
   description:
     "Studio-geteste instellingen voor PLA, PETG en TPU op Bambu printers inclusief kalibratie, AMS tips en troubleshooting.",

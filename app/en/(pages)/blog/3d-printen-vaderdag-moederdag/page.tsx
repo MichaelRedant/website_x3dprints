@@ -79,6 +79,8 @@ const inspirationImages = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "Father&apos;s Day & Mother&apos;s Day 3D printing",
   description:
     "Personalised gifts in Silk/Matte/PETG with guidance on legibility, rounded edges and delivery for May-June.",

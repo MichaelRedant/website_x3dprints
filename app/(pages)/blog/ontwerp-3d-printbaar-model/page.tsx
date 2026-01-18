@@ -84,6 +84,8 @@ const snapFitTips = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "Hoe ontwerp je een 3D printbaar model?",
   description:
     "Checklist en richtlijnen om 3D printbare modellen te ontwerpen met focus op wanddiktes, tolerantie, support en bestandsformaten.",

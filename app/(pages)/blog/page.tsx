@@ -2194,6 +2194,8 @@ export default function BlogPage({ locale }: PageProps) {
       position: index + 1,
       item: {
         "@type": "Article",
+
+        inLanguage: ["nl-BE", "en-BE"],
         headline: topic.title,
         description: topic.summary,
         url: toAbsolute(`/blog/${topic.id}`),

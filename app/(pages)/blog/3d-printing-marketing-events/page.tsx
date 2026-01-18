@@ -99,6 +99,8 @@ const faq = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printing voor marketing & events",
   description:
     "Strategische gids voor marketeers en event teams die 3D printing willen inzetten voor props, awards en merchandising.",

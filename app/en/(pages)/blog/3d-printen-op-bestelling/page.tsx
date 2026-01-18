@@ -62,6 +62,8 @@ const reorders = [
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+
+  inLanguage: ["nl-BE", "en-BE"],
   headline: "3D printing on demand",
   description: "Explanation of the ordering process at X3DPrints: intake, production, delivery and repeat jobs.",
   author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
