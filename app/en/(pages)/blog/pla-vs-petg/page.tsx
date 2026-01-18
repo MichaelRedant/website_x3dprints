@@ -114,8 +114,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
-  headline: "PLA vs PETG: which should you choose?",
+    headline: "PLA vs PETG: which should you choose?",
   description:
     "Comparison between PLA and PETG for 3D printing covering look, mechanical behaviour, temperature resistance and cost.",
   author: {
@@ -373,3 +372,4 @@ export default function BlogPlaVsPetgEnPage() {
     </main>
   )
 }
+

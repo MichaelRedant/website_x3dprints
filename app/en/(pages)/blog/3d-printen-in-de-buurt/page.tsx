@@ -64,8 +64,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
-  headline: "Local 3D printing near Ghent, Aalst and Dendermonde",
+    headline: "Local 3D printing near Ghent, Aalst and Dendermonde",
   description:
     "Local guide for 3D printing in Ghent, Aalst and Dendermonde with logistics options and examples of delivered projects.",
   author: {
@@ -193,3 +192,4 @@ export default function LocalArticleEnPage() {
     </main>
   )
 }
+

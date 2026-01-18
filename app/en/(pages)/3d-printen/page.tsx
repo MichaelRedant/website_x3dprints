@@ -238,7 +238,7 @@ const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "en-BE",
   mainEntity: faq.map((item) => ({
     "@type": "Question",
     name: item.q,
@@ -250,7 +250,7 @@ const howToJsonLd = {
   "@context": "https://schema.org",
   "@type": "HowTo",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "en-BE",
   name: "Request 3D printing from X3DPrints",
   description: "Upload STL/STEP, choose material and receive a clear quote with planning.",
   supply: [
@@ -570,3 +570,4 @@ export default function ThreeDPrintingPage() {
     </main>
   )
 }
+

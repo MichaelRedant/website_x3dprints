@@ -94,8 +94,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
-  headline: "3D printing for marketing & events",
+    headline: "3D printing for marketing & events",
   description:
     "How to use 3D printing for marketing and events: props, awards, merch, with planning, materials, logistics and KPIs.",
   author: { "@type": "Organization", name: "X3DPrints" },
@@ -248,3 +247,4 @@ export default function MarketingEventsBlogEn() {
     </main>
   )
 }
+

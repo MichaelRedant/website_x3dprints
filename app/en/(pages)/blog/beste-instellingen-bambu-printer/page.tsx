@@ -96,8 +96,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
-  headline: "Best settings for your Bambu printer",
+    headline: "Best settings for your Bambu printer",
   description: "Studio-tested PLA/PETG/TPU presets for Bambu printers with calibration, AMS and maintenance tips.",
   author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
   publisher: {
@@ -240,3 +239,4 @@ export default function BambuSettingsBlogEn() {
     </main>
   )
 }
+

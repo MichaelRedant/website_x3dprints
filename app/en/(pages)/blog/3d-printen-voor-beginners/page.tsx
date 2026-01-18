@@ -54,8 +54,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
-  headline: "3D printing for beginners",
+    headline: "3D printing for beginners",
   description:
     "Beginner guide with steps, material choices and common pitfalls. Includes tips for coaching and guidance.",
   author: {
@@ -221,3 +220,4 @@ export default function BeginnersArticleEnPage() {
     </main>
   )
 }
+

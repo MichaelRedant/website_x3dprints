@@ -78,8 +78,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
-  headline: "3D printing for autumn & Halloween",
+    headline: "3D printing for autumn & Halloween",
   description:
     "Pumpkins, haunted props and mood lanterns in Silk, Marble and Translucent PLA. Tips for supports, light diffusion and delivery.",
   author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
@@ -99,8 +98,7 @@ const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
 
-  inLanguage: ["nl-BE", "en-BE"],
-  mainEntity: faqItems.map((item) => ({
+    mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,
     acceptedAnswer: { "@type": "Answer", text: item.a },
@@ -257,3 +255,4 @@ export default function BlogAutumnHalloweenEn() {
     </main>
   )
 }
+

@@ -61,7 +61,7 @@ const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "en-BE",
   mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,
@@ -245,3 +245,4 @@ export default function ValentinesLandingPage() {
     </main>
   )
 }
+

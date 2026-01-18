@@ -154,8 +154,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
-  headline: "FuturePrint Lab: sustainability at X3DPrints",
+    headline: "FuturePrint Lab: sustainability at X3DPrints",
   description:
   "Overview of X3DPrints' practical sustainability principles: smart design, efficient material choices, local production and tailored small batches.",
   author: { "@type": "Organization", name: "X3DPrints", url: SITE.url },
@@ -173,8 +172,7 @@ const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
 
-  inLanguage: ["nl-BE", "en-BE"],
-  mainEntity: faqItems.map((item) => ({
+    mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,
     acceptedAnswer: { "@type": "Answer", text: item.a },
@@ -425,3 +423,4 @@ export default function SustainabilityPage() {
     </main>
   )
 }
+

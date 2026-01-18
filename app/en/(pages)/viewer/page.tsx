@@ -73,7 +73,7 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "HowTo",
 
-    inLanguage: ["nl-BE", "en-BE"],
+    inLanguage: "en-BE",
     name: "View STL/OBJ in the X3DPrints 3D Viewer",
     description: "Fast in-browser preview without uploads to servers, including mesh stats.",
     supply: [{ "@type": "HowToSupply", name: "STL, OBJ or GLB file (max ~15 MB)" }],
@@ -178,3 +178,4 @@ export default function Page() {
     </main>
   )
 }
+

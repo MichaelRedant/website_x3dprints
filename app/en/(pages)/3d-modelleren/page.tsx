@@ -80,7 +80,6 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
 
-    inLanguage: ["nl-BE", "en-BE"],
     headline: "3D modeling for 3D printing",
     description:
       "How X3DPrints creates 3D models with Autodesk Fusion 360, Tinkercad and Blender for print-ready results.",

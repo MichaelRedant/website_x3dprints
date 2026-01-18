@@ -74,8 +74,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
-  headline: "3D printing for spring & Easter",
+    headline: "3D printing for spring & Easter",
   description:
     "Pastel decor, ornaments and light objects in Silk, Matte and Translucent PLA with tips for supports, magnets and delivery.",
   author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
@@ -95,8 +94,7 @@ const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
 
-  inLanguage: ["nl-BE", "en-BE"],
-  mainEntity: faqItems.map((item) => ({
+    mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,
     acceptedAnswer: { "@type": "Answer", text: item.a },
@@ -250,3 +248,4 @@ export default function BlogSpringEasterEn() {
     </main>
   )
 }
+

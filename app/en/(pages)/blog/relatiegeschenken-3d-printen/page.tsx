@@ -94,8 +94,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
-  headline: "B2B corporate gifts with 3D printing",
+    headline: "B2B corporate gifts with 3D printing",
   description:
     "Personalised keychains, desk items and awards in Silk/Matte/PETG with guidance on legibility, materials and delivery.",
   author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
@@ -266,3 +265,4 @@ export default function CorporateGiftsBlogEn() {
     </main>
   )
 }
+

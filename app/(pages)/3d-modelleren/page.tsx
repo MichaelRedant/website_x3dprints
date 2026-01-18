@@ -74,14 +74,13 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
 
-    inLanguage: ["nl-BE", "en-BE"],
-    headline: "3D modelleren voor 3D-printen",
-    description:
-      "Uitleg over hoe X3DPrints 3D-modellen maakt met Autodesk Fusion 360, Tinkercad en Blender voor printbare resultaten.",
-    author: { "@type": "Person", name: "X3DPrints" },
-    inLanguage: "nl-BE",
-    mainEntityOfPage: "https://www.x3dprints.be/3d-modelleren",
-  }
+  inLanguage: ["nl-BE", "en-BE"],
+  headline: "3D modelleren voor 3D-printen",
+  description:
+    "Uitleg over hoe X3DPrints 3D-modellen maakt met Autodesk Fusion 360, Tinkercad en Blender voor printbare resultaten.",
+  author: { "@type": "Person", name: "X3DPrints" },
+  mainEntityOfPage: "https://www.x3dprints.be/3d-modelleren",
+}
 
   return (
     <main className="relative">

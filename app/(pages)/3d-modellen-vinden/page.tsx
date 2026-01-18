@@ -108,7 +108,6 @@ const articleJsonLd = {
   headline: "Waar 3D modellen vinden om te laten printen",
   description:
     "Overzicht van de beste plaatsen om 3D modellen te downloaden (Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults, Thangs) plus kwaliteitstips voor X3DPrints.",
-  inLanguage: "nl-BE",
   author: { "@type": "Organization", name: "X3DPrints" },
   mainEntityOfPage: "https://www.x3dprints.be/3d-modellen-vinden",
 }
