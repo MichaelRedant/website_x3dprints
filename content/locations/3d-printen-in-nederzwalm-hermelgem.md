@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Nederzwalm-Hermelgem of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Nederzwalm-Hermelgem
-
 - [3D printen in Zwalm](/3d-printen-in-zwalm)
 - [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
 - [3D printen in Roborst](/3d-printen-in-roborst)
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Nederzwalm-Her
 
 ## Offerte voor 3D printen in Nederzwalm-Hermelgem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Nederzwalm-Hermelgem
+
+- Dekking: Nederzwalm-Hermelgem, Nederzwalm-Hermelgem centrum, Zwalm, Munkzwalm, Roborst, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Nederzwalm-Hermelgem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Zwalm](/3d-printen-in-zwalm)
+- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+- [3D printen in Roborst](/3d-printen-in-roborst)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Nederzwalm-Hermelgem centrum.
+- Vaak gevraagd: 3D print service Nederzwalm-Hermelgem; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Nederzwalm-Hermelgem en Nederzwalm-Hermelgem centrum.
+
+## Locaties die we bedienen nabij Nederzwalm-Hermelgem
+- Centrum van Nederzwalm-Hermelgem
+- Lokale bedrijvenzone in Nederzwalm-Hermelgem
+- Sporthal in Nederzwalm-Hermelgem
+
+## Sectorfocus nabij Nederzwalm-Hermelgem
+- Lokale makers en ontwerpers (Nederzwalm-Hermelgem)
+- Kleine series en maatwerk (Nederzwalm-Hermelgem)
+- Verenigingen en onderwijs (Nederzwalm-Hermelgem)
+
+## Typische aanvragen rond Nederzwalm-Hermelgem
+- 3D print service Nederzwalm-Hermelgem
+- rapid prototyping Nederzwalm-Hermelgem
+- 3D printing bedrijf Nederzwalm-Hermelgem
+<!-- LOCAL_ENRICH_END -->

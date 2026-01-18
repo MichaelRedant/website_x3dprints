@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Lebbeke
-
 - [3D printen in Denderbelle](/3d-printen-in-denderbelle)
 - [3D printen in Wieze](/3d-printen-in-wieze)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
 - [3D printen in Buggenhout](/3d-printen-in-buggenhout)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Lebbeke
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Lebbeke
+
+- Dekking: Lebbeke, Lebbeke centrum, Denderbelle, Wieze, Buggenhout, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Lebbeke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Denderbelle](/3d-printen-in-denderbelle)
+- [3D printen in Wieze](/3d-printen-in-wieze)
+- [3D printen in Buggenhout](/3d-printen-in-buggenhout)
+## Spotlight rond Lebbeke
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Lebbeke centrum.
+- Terugkerende order: 3D print service Lebbeke; we bewaren je instellingen.
+- Leverfocus: Lebbeke, Lebbeke centrum, Denderbelle.
+
+## Landmarks in de buurt van Lebbeke
+- Centrum van Lebbeke
+- Lokale bedrijvenzone in Lebbeke
+- Sporthal in Lebbeke
+
+## Teams die we ondersteunen rond Lebbeke
+- Lokale makers en ontwerpers (Lebbeke)
+- Onderhoud en herstellingen (Lebbeke)
+- Verenigingen en onderwijs (Lebbeke)
+
+## Wat vaak wordt gevraagd in Lebbeke
+- 3D print service Lebbeke
+- rapid prototyping Lebbeke
+- 3D printing bedrijf Lebbeke
+<!-- LOCAL_ENRICH_END -->

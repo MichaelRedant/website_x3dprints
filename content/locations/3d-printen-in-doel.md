@@ -97,12 +97,9 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in de havenzone
-
 - [3D printen in Kallo](/3d-printen-in-kallo)
 - [3D printen in Kieldrecht](/3d-printen-in-kieldrecht)
 - [3D printen in Verrebroek](/3d-printen-in-verrebroek)
-- [3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
-
 ---
 
 ## Externe links
@@ -115,3 +112,36 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 ## Offerte voor 3D printen in Doel
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Doel
+
+- Dekking: Doel, Kieldrecht, Verrebroek, Kallo, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Doel.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Kieldrecht](/3d-printen-in-kieldrecht)
+- [3D printen in Verrebroek](/3d-printen-in-verrebroek)
+- [3D printen in Kallo](/3d-printen-in-kallo)
+## Spotlight rond Doel
+- Lokale ondernemers en makers: behuizingen en pasmallen voor teams in Kieldrecht.
+- Terugkerende order: 3D print service Doel; we bewaren je instellingen.
+- Leverfocus: Doel, Kieldrecht, Verrebroek.
+
+## Landmarks in de buurt van Doel
+- Centrum van Doel
+- Lokale bedrijvenzone in Doel
+- Sporthal in Doel
+
+## Teams die we ondersteunen rond Doel
+- Lokale ondernemers en makers (Doel)
+- Industrie en havenprojecten (Doel)
+- Creatieve projecten en events (Doel)
+
+## Wat vaak wordt gevraagd in Doel
+- 3D print service Doel
+- rapid prototyping Doel
+- 3D printing bedrijf Doel
+<!-- LOCAL_ENRICH_END -->

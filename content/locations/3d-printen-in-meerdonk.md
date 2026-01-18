@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Meerdonk of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Meerdonk
-
 - [3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
 - [3D printen in De Klinge](/3d-printen-in-de-klinge)
 - [3D printen in Sint-Pauwels](/3d-printen-in-sint-pauwels)
 - [3D printen in Beveren](/3d-printen-in-beveren)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Meerdonk of af
 
 ## Offerte voor 3D printen in Meerdonk
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Meerdonk
+
+- Dekking: Meerdonk, Meerdonk centrum, Sint-Gillis-Waas, De Klinge, Sint-Pauwels, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Meerdonk.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
+- [3D printen in De Klinge](/3d-printen-in-de-klinge)
+- [3D printen in Sint-Pauwels](/3d-printen-in-sint-pauwels)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Meerdonk centrum.
+- Vaak gevraagd: 3D print service Meerdonk; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Meerdonk en Meerdonk centrum.
+
+## Locaties die we bedienen nabij Meerdonk
+- Centrum van Meerdonk
+- Lokale bedrijvenzone in Meerdonk
+- Sporthal in Meerdonk
+
+## Sectorfocus nabij Meerdonk
+- Lokale makers en ontwerpers (Meerdonk)
+- Landelijke KMO's en herstellingen (Meerdonk)
+- Verenigingen en onderwijs (Meerdonk)
+
+## Typische aanvragen rond Meerdonk
+- 3D print service Meerdonk
+- rapid prototyping Meerdonk
+- 3D printing bedrijf Meerdonk
+<!-- LOCAL_ENRICH_END -->

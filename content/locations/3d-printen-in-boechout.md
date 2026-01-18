@@ -96,3 +96,34 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 **Leveren jullie ook in Boechout?**
 
 Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Boechout
+
+- Dekking: Boechout; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Boechout.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Klantenspotlight
+- Lokale teams in Boechout: kleine reeksen met vaste settings rond Boechout.
+- Vaak gevraagd: 3D print service Boechout; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Boechout en Boechout.
+
+## Locaties die we bedienen nabij Boechout
+- Centrum van Boechout
+- Lokale bedrijvenzone in Boechout
+- Sporthal in Boechout
+
+## Sectorfocus nabij Boechout
+- KMO's en makers in Boechout: pasmallen en behuizingen.
+- Retail/events rond Boechout: displays en props.
+- Onderwijs/labs in Boechout: lesklare prints.
+
+## Typische aanvragen rond Boechout
+- 3D print service Boechout
+- rapid prototyping Boechout
+- 3D printing bedrijf Boechout
+<!-- LOCAL_ENRICH_END -->

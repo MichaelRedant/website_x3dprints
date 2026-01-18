@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Zulzeke
-
 - [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
 - [3D printen in Kwaremont](/3d-printen-in-kwaremont)
 - [3D printen in Ruien](/3d-printen-in-ruien)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Zulzeke
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Zulzeke
+
+- Dekking: Zulzeke, Zulzeke centrum, Kluisbergen, Kwaremont, Ruien, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Zulzeke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
+- [3D printen in Kwaremont](/3d-printen-in-kwaremont)
+- [3D printen in Ruien](/3d-printen-in-ruien)
+## Klantenspotlight
+- Lokale ondernemers en techniekers: kleine reeksen met vaste settings rond Zulzeke centrum.
+- Vaak gevraagd: 3D print service Zulzeke; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Zulzeke en Zulzeke centrum.
+
+## Locaties die we bedienen nabij Zulzeke
+- Centrum van Zulzeke
+- Lokale bedrijvenzone in Zulzeke
+- Sporthal in Zulzeke
+
+## Sectorfocus nabij Zulzeke
+- Lokale ondernemers en techniekers (Zulzeke)
+- Onderhoud en herstellingen (Zulzeke)
+- Verenigingen en onderwijs (Zulzeke)
+
+## Typische aanvragen rond Zulzeke
+- 3D print service Zulzeke
+- rapid prototyping Zulzeke
+- 3D printing bedrijf Zulzeke
+<!-- LOCAL_ENRICH_END -->

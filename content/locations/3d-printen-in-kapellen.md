@@ -96,3 +96,34 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 **Welke materialen raden jullie aan?**
 
 PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU voor flexibele toepassingen.
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Kapellen
+
+- Dekking: Kapellen; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kapellen.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Gent](/3d-printen-in-gent)
+## Spotlight rond Kapellen
+- Lokale teams in Kapellen: behuizingen en pasmallen voor teams in Kapellen.
+- Terugkerende order: 3D print service Kapellen; we bewaren je instellingen.
+- Leverfocus: Kapellen.
+
+## Landmarks in de buurt van Kapellen
+- Centrum van Kapellen
+- Lokale bedrijvenzone in Kapellen
+- Sporthal in Kapellen
+
+## Teams die we ondersteunen rond Kapellen
+- KMO's en makers in Kapellen: pasmallen en behuizingen.
+- Retail/events rond Kapellen: displays en props.
+- Onderwijs/labs in Kapellen: lesklare prints.
+
+## Wat vaak wordt gevraagd in Kapellen
+- 3D print service Kapellen
+- rapid prototyping Kapellen
+- 3D printing bedrijf Kapellen
+<!-- LOCAL_ENRICH_END -->

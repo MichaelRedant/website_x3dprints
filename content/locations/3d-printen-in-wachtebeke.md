@@ -98,12 +98,11 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Wachtebeke
-
 - [3D printen in Lochristi](/3d-printen-in-lochristi)
 - [3D printen in Zeveneken](/3d-printen-in-zeveneken)
 - [3D printen in Zaffelare](/3d-printen-in-zaffelare)
+- [3D printen in Beervelde](/3d-printen-in-beervelde)
 - [3D printen in Destelbergen](/3d-printen-in-destelbergen)
-
 ---
 
 ## Externe links
@@ -116,4 +115,38 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Wachtebeke
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Wachtebeke
+
+- Dekking: Wachtebeke, Wachtebeke centrum, Lochristi, Zeveneken, Zaffelare, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Wachtebeke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Lochristi](/3d-printen-in-lochristi)
+- [3D printen in Zeveneken](/3d-printen-in-zeveneken)
+- [3D printen in Zaffelare](/3d-printen-in-zaffelare)
+- [3D printen in Beervelde](/3d-printen-in-beervelde)
+## Spotlight rond Wachtebeke
+- Lokale makers en techniekers: behuizingen en pasmallen voor teams in Wachtebeke centrum.
+- Terugkerende order: 3D print service Wachtebeke; we bewaren je instellingen.
+- Leverfocus: Wachtebeke, Wachtebeke centrum, Lochristi.
+
+## Landmarks in de buurt van Wachtebeke
+- Centrum van Wachtebeke
+- Lokale bedrijvenzone in Wachtebeke
+- Sporthal in Wachtebeke
+
+## Teams die we ondersteunen rond Wachtebeke
+- Lokale makers en techniekers (Wachtebeke)
+- Onderhoud en herstellingen (Wachtebeke)
+- Verenigingen en onderwijs (Wachtebeke)
+
+## Wat vaak wordt gevraagd in Wachtebeke
+- 3D print service Wachtebeke
+- rapid prototyping Wachtebeke
+- 3D printing bedrijf Wachtebeke
+<!-- LOCAL_ENRICH_END -->

@@ -10,6 +10,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import LanguageSwitcher from "./LanguageSwitcher"
 import { useLocale } from "./LocaleProvider"
 import { localizeHref } from "@/lib/i18n/paths"
+import { cn } from "@/lib/utils"
 
 
 const NAV = [
@@ -67,19 +68,32 @@ export default function Header() {
 
   return (
     <header
-      className={[
-        "sticky top-0 z-[120] transition-all relative",
-        "supports-[backdrop-filter]:bg-white/60 supports-[backdrop-filter]:backdrop-blur",
-        "border-b",
+      className={cn(
+        "fixed inset-x-0 top-0 isolate overflow-visible transition-all duration-500",
+        open ? "z-[1200]" : "z-[200]",
         scrolled
-          ? "bg-white/80 shadow-[0_10px_30px_rgba(0,0,0,.05)] dark:bg-[#0B0F1A]/90 dark:shadow-[0_14px_30px_rgba(0,0,0,.55)]"
-          : "bg-white/40 dark:bg-[radial-gradient(120%_120%_at_50%_0%,rgba(0,230,255,0.12),transparent),#06060A]",
-        "dark:border-[#161821] dark:shadow-[0_20px_50px_rgba(0,0,0,0.55)]",
-        "dark:before:pointer-events-none dark:before:absolute dark:before:inset-0 dark:before:bg-[linear-gradient(90deg,rgba(0,230,255,0.12),transparent,rgba(215,38,61,0.12))] dark:before:opacity-70",
-        "dark:after:pointer-events-none dark:after:absolute dark:after:inset-x-0 dark:after:bottom-0 dark:after:h-px dark:after:bg-[radial-gradient(circle_at_10%_50%,rgba(0,230,255,0.4),transparent),radial-gradient(circle_at_90%_50%,rgba(215,38,61,0.35),transparent)]",
-      ].join(" ")}
+          ? "bg-white/80 shadow-[0_12px_34px_rgba(0,0,0,.08)] border-b border-slate-200/70 supports-[backdrop-filter]:backdrop-blur-2xl supports-[backdrop-filter]:backdrop-saturate-150 dark:border-[#161821] dark:bg-[#0B0F1A]/92 dark:shadow-[0_18px_36px_rgba(0,0,0,.55)]"
+          : "bg-transparent border-b border-transparent shadow-none dark:before:opacity-0 dark:after:opacity-0",
+        scrolled &&
+          "dark:before:pointer-events-none dark:before:absolute dark:before:inset-0 dark:before:bg-[linear-gradient(90deg,rgba(0,230,255,0.12),transparent,rgba(215,38,61,0.12))] dark:before:opacity-70 dark:after:pointer-events-none dark:after:absolute dark:after:inset-x-0 dark:after:bottom-0 dark:after:h-px dark:after:bg-[radial-gradient(circle_at_10%_50%,rgba(0,230,255,0.4),transparent),radial-gradient(circle_at_90%_50%,rgba(215,38,61,0.35),transparent)]",
+      )}
     >
-      <Container className="relative flex h-16 items-center justify-between dark:py-2">
+      <div
+        className={cn(
+          "pointer-events-none absolute inset-0 -z-10 overflow-hidden transition-opacity duration-500",
+          scrolled ? "opacity-100" : "opacity-0",
+        )}
+      >
+        <div className="absolute -left-10 top-[-35%] h-48 w-48 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(0,230,255,0.32),transparent_55%)] blur-3xl opacity-80" />
+        <div className="absolute right-[-18%] top-1/2 h-52 w-52 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_70%_40%,rgba(255,0,168,0.28),transparent_60%)] blur-3xl opacity-70" />
+        <div className="absolute bottom-[-28%] left-1/4 h-28 w-64 rounded-full bg-[conic-gradient(from_120deg_at_50%_50%,rgba(255,255,255,0.35),rgba(0,230,255,0.12),rgba(255,0,168,0.14),rgba(255,255,255,0.35))] blur-2xl opacity-60" />
+      </div>
+      <Container
+        className={cn(
+          "relative flex items-center justify-between transition-all duration-500 dark:py-2",
+          scrolled ? "h-14 py-1" : "h-16",
+        )}
+      >
         <div className="pointer-events-none absolute inset-x-0 -top-6 hidden h-3 bg-[radial-gradient(circle_at_50%_100%,rgba(0,230,255,0.35),transparent)] blur-lg md:block" />
         <div className="pointer-events-none absolute inset-0 -z-10 hidden bg-[linear-gradient(120deg,rgba(0,230,255,0.08),rgba(215,38,61,0.08))] opacity-50 md:block" />
         {/* Brand */}
@@ -90,9 +104,18 @@ export default function Header() {
             width={58}
             height={58}
             priority
-            className="h-10 w-10 md:h-11 md:w-11 object-contain drop-shadow-[0_0_14px_rgba(255,0,56,.35)]"
+            className={cn(
+              "object-contain drop-shadow-[0_0_14px_rgba(255,0,56,.35)] transition-all duration-500",
+              scrolled ? "h-9 w-9 md:h-10 md:w-10" : "h-10 w-10 md:h-11 md:w-11",
+            )}
           />
-          <span className="text-md font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+          <span
+            className={cn(
+              "font-semibold tracking-tight transition-all duration-500",
+              scrolled ? "text-[14px]" : "text-[15px]",
+              "text-slate-900 dark:text-slate-100",
+            )}
+          >
             X3DPrints
           </span>
         </Link>
@@ -107,7 +130,10 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={href}
-                className="group relative px-3 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900 dark:text-[#e7f5ff] dark:hover:text-white dark:tracking-[0.12em] dark:uppercase dark:bg-transparent dark:shadow-none md:text-[13px] lg:text-sm"
+                className={cn(
+                  "group relative px-3 py-2 text-sm font-semibold transition hover:text-slate-900 dark:text-[#e7f5ff] dark:hover:text-white dark:tracking-[0.12em] dark:uppercase dark:bg-transparent dark:shadow-none md:text-[13px] lg:text-sm",
+                  scrolled ? "text-slate-800" : "text-slate-700",
+                )}
               >
                 <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(0,230,255,0.55),transparent)] opacity-30" />
                 <span className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,0,168,0.55),transparent)] opacity-0 transition duration-200 group-hover:opacity-100" />
@@ -160,14 +186,14 @@ export default function Header() {
               <motion.button
                 ref={overlayRef}
                 aria-label="Sluit menu"
-                className="fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm lg:hidden"
+                className="fixed inset-0 z-[1210] bg-black/50 backdrop-blur-sm lg:hidden"
                 onClick={() => setOpen(false)}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
               />
               <motion.div
-                className="fixed left-1/2 top-3 z-[70] w-[94%] max-w-md -translate-x-1/2 overflow-hidden rounded-2xl border border-slate-200/70 bg-white/90 p-4 shadow-xl backdrop-blur lg:hidden dark:border-[#1f2336] dark:bg-[#0B0F1A]/95 dark:text-slate-100 max-h-[calc(100vh-1.5rem)] overflow-y-auto"
+                className="fixed left-1/2 top-3 z-[1220] w-[94%] max-w-md -translate-x-1/2 overflow-hidden rounded-2xl border border-slate-200/70 bg-white/90 p-4 shadow-xl backdrop-blur lg:hidden dark:border-[#1f2336] dark:bg-[#0B0F1A]/95 dark:text-slate-100 max-h-[calc(100vh-1.5rem)] overflow-y-auto"
                 role="dialog"
                 aria-modal="true"
                 initial={{ y: -16, opacity: 0 }}

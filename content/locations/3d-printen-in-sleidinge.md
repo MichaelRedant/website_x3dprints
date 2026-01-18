@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Sleidinge
-
 - [3D printen in Evergem](/3d-printen-in-evergem)
 - [3D printen in Ertvelde](/3d-printen-in-ertvelde)
 - [3D printen in Kluizen](/3d-printen-in-kluizen)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
-
 ---
 
 ## Externe links
@@ -116,4 +114,36 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Sleidinge
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Sleidinge
+
+- Dekking: Sleidinge, Sleidinge centrum, Evergem, Kluizen, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sleidinge.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Evergem](/3d-printen-in-evergem)
+- [3D printen in Kluizen](/3d-printen-in-kluizen)
+## Lokale spotlight
+- KMO's en zelfstandigen: PLA/PETG onderdelen afgestemd op projecten rond Sleidinge centrum.
+- Vaak gevraagd: 3D print service Sleidinge; we adviseren materiaal en afwerking.
+- Leverfocus: Sleidinge, Sleidinge centrum, Evergem.
+
+## Plaatsen waar we vaak leveren rond Sleidinge
+- Centrum van Sleidinge
+- Lokale bedrijvenzone in Sleidinge
+- Sporthal in Sleidinge
+
+## Sectoren die we vaak helpen in Sleidinge
+- KMO's en zelfstandigen (Sleidinge)
+- Onderwijs en makers (Sleidinge)
+- Events en lokale handel (Sleidinge)
+
+## Veelgevraagde zoekopdrachten in Sleidinge
+- 3D print service Sleidinge
+- rapid prototyping Sleidinge
+- 3D printing bedrijf Sleidinge
+<!-- LOCAL_ENRICH_END -->

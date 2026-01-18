@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Semmerzake
-
 - [3D printen in Gavere](/3d-printen-in-gavere)
 - [3D printen in Vurste](/3d-printen-in-vurste)
 - [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
 - [3D printen in Asper](/3d-printen-in-asper)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Semmerzake
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Semmerzake
+
+- Dekking: Semmerzake, Semmerzake centrum, Gavere, Vurste, Dikkelvenne, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Semmerzake.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Gavere](/3d-printen-in-gavere)
+- [3D printen in Vurste](/3d-printen-in-vurste)
+- [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+## Klantenspotlight
+- Lokale makers en techniekers: kleine reeksen met vaste settings rond Semmerzake centrum.
+- Vaak gevraagd: 3D print service Semmerzake; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Semmerzake en Semmerzake centrum.
+
+## Locaties die we bedienen nabij Semmerzake
+- Centrum van Semmerzake
+- Lokale bedrijvenzone in Semmerzake
+- Sporthal in Semmerzake
+
+## Sectorfocus nabij Semmerzake
+- Lokale makers en techniekers (Semmerzake)
+- Onderhoud en herstellingen (Semmerzake)
+- Verenigingen en scholen (Semmerzake)
+
+## Typische aanvragen rond Semmerzake
+- 3D print service Semmerzake
+- rapid prototyping Semmerzake
+- 3D printing bedrijf Semmerzake
+<!-- LOCAL_ENRICH_END -->

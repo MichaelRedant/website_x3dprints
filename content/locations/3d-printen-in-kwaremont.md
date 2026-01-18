@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Kwaremont
-
 - [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
 - [3D printen in Berchem (Kluisbergen)](/3d-printen-in-berchem-kluisbergen)
 - [3D printen in Zulzeke](/3d-printen-in-zulzeke)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Kwaremont
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Kwaremont
+
+- Dekking: Kwaremont, Kwaremont centrum, Kluisbergen, Berchem, Zulzeke, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kwaremont.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
+- [3D printen in Berchem](/3d-printen-in-berchem)
+- [3D printen in Zulzeke](/3d-printen-in-zulzeke)
+## Spotlight rond Kwaremont
+- Creatieve bureaus en makers: behuizingen en pasmallen voor teams in Kwaremont centrum.
+- Terugkerende order: 3D print service Kwaremont; we bewaren je instellingen.
+- Leverfocus: Kwaremont, Kwaremont centrum, Kluisbergen.
+
+## Landmarks in de buurt van Kwaremont
+- Centrum van Kwaremont
+- Lokale bedrijvenzone in Kwaremont
+- Sporthal in Kwaremont
+
+## Teams die we ondersteunen rond Kwaremont
+- Creatieve bureaus en makers (Kwaremont)
+- Events en presentatie (Kwaremont)
+- Verenigingen en onderwijs (Kwaremont)
+
+## Wat vaak wordt gevraagd in Kwaremont
+- 3D print service Kwaremont
+- rapid prototyping Kwaremont
+- 3D printing bedrijf Kwaremont
+<!-- LOCAL_ENRICH_END -->

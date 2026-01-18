@@ -98,10 +98,7 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Donkmeer of af
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Berlare
-
-- [3D printen in Overmere](/3d-printen-in-overmere)
 - [3D printen in Uitbergen](/3d-printen-in-uitbergen)
-
 ---
 
 ## Externe links
@@ -114,3 +111,35 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 ## Offerte voor 3D printen in Berlare
 
 Wilt u snel starten? Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Berlare
+
+- Dekking: Berlare, Berlare centrum, Donk, Overmere, Uitbergen, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Berlare.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Overmere](/3d-printen-in-overmere)
+- [3D printen in Uitbergen](/3d-printen-in-uitbergen)
+## Spotlight rond Berlare
+- Lokale KMO's en zelfstandigen: behuizingen en pasmallen voor teams in Berlare centrum.
+- Terugkerende order: 3D print service Berlare; we bewaren je instellingen.
+- Leverfocus: Berlare, Berlare centrum, Donk.
+
+## Landmarks in de buurt van Berlare
+- Centrum van Berlare
+- Lokale bedrijvenzone in Berlare
+- Sporthal in Berlare
+
+## Teams die we ondersteunen rond Berlare
+- Lokale KMO's en zelfstandigen (Berlare)
+- Verenigingen en events rond Donkmeer (Berlare)
+- Makers en hobbyisten (Berlare)
+
+## Wat vaak wordt gevraagd in Berlare
+- 3D print service Berlare
+- rapid prototyping Berlare
+- 3D printing bedrijf Berlare
+<!-- LOCAL_ENRICH_END -->

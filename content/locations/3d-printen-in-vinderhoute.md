@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Vinderhoute
-
 - [3D printen in Lievegem](/3d-printen-in-lievegem)
 - [3D printen in Lovendegem](/3d-printen-in-lovendegem)
 - [3D printen in Zomergem](/3d-printen-in-zomergem)
 - [3D printen in Gent](/3d-printen-in-gent)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Vinderhoute
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Vinderhoute
+
+- Dekking: Vinderhoute, Vinderhoute centrum, Lievegem, Lovendegem, Zomergem, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Vinderhoute.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Lievegem](/3d-printen-in-lievegem)
+- [3D printen in Lovendegem](/3d-printen-in-lovendegem)
+- [3D printen in Zomergem](/3d-printen-in-zomergem)
+## Lokale spotlight
+- Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Vinderhoute centrum.
+- Vaak gevraagd: 3D print service Vinderhoute; we adviseren materiaal en afwerking.
+- Leverfocus: Vinderhoute, Vinderhoute centrum, Lievegem.
+
+## Plaatsen waar we vaak leveren rond Vinderhoute
+- Centrum van Vinderhoute
+- Lokale bedrijvenzone in Vinderhoute
+- Sporthal in Vinderhoute
+
+## Sectoren die we vaak helpen in Vinderhoute
+- Lokale ondernemers en techniekers (Vinderhoute)
+- Onderhoud en herstellingen (Vinderhoute)
+- Verenigingen en onderwijs (Vinderhoute)
+
+## Veelgevraagde zoekopdrachten in Vinderhoute
+- 3D print service Vinderhoute
+- rapid prototyping Vinderhoute
+- 3D printing bedrijf Vinderhoute
+<!-- LOCAL_ENRICH_END -->

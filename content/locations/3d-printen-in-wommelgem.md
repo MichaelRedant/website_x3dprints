@@ -96,3 +96,34 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 **Welke materialen raden jullie aan?**
 
 PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU voor flexibele toepassingen.
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Wommelgem
+
+- Dekking: Wommelgem; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Wommelgem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Klantenspotlight
+- Lokale teams in Wommelgem: kleine reeksen met vaste settings rond Wommelgem.
+- Vaak gevraagd: 3D print service Wommelgem; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Wommelgem en Wommelgem.
+
+## Locaties die we bedienen nabij Wommelgem
+- Centrum van Wommelgem
+- Lokale bedrijvenzone in Wommelgem
+- Sporthal in Wommelgem
+
+## Sectorfocus nabij Wommelgem
+- KMO's en makers in Wommelgem: pasmallen en behuizingen.
+- Retail/events rond Wommelgem: displays en props.
+- Onderwijs/labs in Wommelgem: lesklare prints.
+
+## Typische aanvragen rond Wommelgem
+- 3D print service Wommelgem
+- rapid prototyping Wommelgem
+- 3D printing bedrijf Wommelgem
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Brouwerij Thie
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Etikhove
-
 - [3D printen in Maarkedal](/3d-printen-in-maarkedal)
 - [3D printen in Maarke-Kerkem](/3d-printen-in-maarke-kerkem)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 - [3D printen in Gavere](/3d-printen-in-gavere)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Etikhove
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Etikhove
+
+- Dekking: Etikhove, Etikhove centrum, Maarkedal, Maarke-Kerkem, Nukerke, Schorisse; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Etikhove.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Maarkedal](/3d-printen-in-maarkedal)
+- [3D printen in Maarke-Kerkem](/3d-printen-in-maarke-kerkem)
+- [3D printen in Nukerke](/3d-printen-in-nukerke)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Etikhove centrum.
+- Vaak gevraagd: 3D print service Etikhove; we adviseren materiaal en afwerking.
+- Leverfocus: Etikhove, Etikhove centrum, Maarkedal.
+
+## Plaatsen waar we vaak leveren rond Etikhove
+- Centrum van Etikhove
+- Lokale bedrijvenzone in Etikhove
+- Sporthal in Etikhove
+
+## Sectoren die we vaak helpen in Etikhove
+- Lokale makers en ontwerpers (Etikhove)
+- Landelijke KMO's en herstellingen (Etikhove)
+- Verenigingen en onderwijs (Etikhove)
+
+## Veelgevraagde zoekopdrachten in Etikhove
+- 3D print service Etikhove
+- rapid prototyping Etikhove
+- 3D printing bedrijf Etikhove
+<!-- LOCAL_ENRICH_END -->

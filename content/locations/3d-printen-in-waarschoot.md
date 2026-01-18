@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Ghislenus
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Waarschoot
-
 - [3D printen in Lievegem](/3d-printen-in-lievegem)
 - [3D printen in Oostwinkel](/3d-printen-in-oostwinkel)
 - [3D printen in Zomergem](/3d-printen-in-zomergem)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Waarschoot
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Waarschoot
+
+- Dekking: Waarschoot, Waarschoot centrum, Lievegem, Zomergem, Oostwinkel, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Waarschoot.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Lievegem](/3d-printen-in-lievegem)
+- [3D printen in Zomergem](/3d-printen-in-zomergem)
+- [3D printen in Oostwinkel](/3d-printen-in-oostwinkel)
+## Spotlight rond Waarschoot
+- Lokale ondernemers en techniekers: behuizingen en pasmallen voor teams in Waarschoot centrum.
+- Terugkerende order: 3D print service Waarschoot; we bewaren je instellingen.
+- Leverfocus: Waarschoot, Waarschoot centrum, Lievegem.
+
+## Landmarks in de buurt van Waarschoot
+- Centrum van Waarschoot
+- Lokale bedrijvenzone in Waarschoot
+- Sporthal in Waarschoot
+
+## Teams die we ondersteunen rond Waarschoot
+- Lokale ondernemers en techniekers (Waarschoot)
+- Onderhoud en herstellingen (Waarschoot)
+- Verenigingen en onderwijs (Waarschoot)
+
+## Wat vaak wordt gevraagd in Waarschoot
+- 3D print service Waarschoot
+- rapid prototyping Waarschoot
+- 3D printing bedrijf Waarschoot
+<!-- LOCAL_ENRICH_END -->

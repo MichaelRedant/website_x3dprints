@@ -1,14 +1,14 @@
-# 3D printen in Mechelen: prototypes, tooling en props
-
-Mechelen ligt centraal tussen Antwerpen en Brussel. We printen voor teams rond Mechelen-Zuid, Nekkerhal en de R6/E19-zone. Kies PLA voor strak zichtwerk, PETG voor sterkere onderdelen of TPU voor flexibele bumpers en grips.
-
-## Waar we vaak voor printen in Mechelen
-
-- Prototyping voor KMO's en maakbedrijven in Mechelen  
-- Tooling en fixtures voor bedrijven langs E19/R6  
-- Props en displays voor events in Nekkerhal  
-- Studenten- en onderzoeksprojecten (Thomas More, KU Leuven campus Mechelen)
-
+# 3D printen in Mechelen: prototypes, tooling en props
+
+Mechelen ligt centraal tussen Antwerpen en Brussel. We printen voor teams rond Mechelen-Zuid, Nekkerhal en de R6/E19-zone. Kies PLA voor strak zichtwerk, PETG voor sterkere onderdelen of TPU voor flexibele bumpers en grips.
+
+## Waar we vaak voor printen in Mechelen
+
+- Prototyping voor KMO's en maakbedrijven in Mechelen  
+- Tooling en fixtures voor bedrijven langs E19/R6  
+- Props en displays voor events in Nekkerhal  
+- Studenten- en onderzoeksprojecten (Thomas More, KU Leuven campus Mechelen)
+
 
 
 ## Lokale focus in Mechelen
@@ -19,36 +19,36 @@ Voor projecten in Mechelen combineren we korte doorlooptijd met strakke afwerkin
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 
-## Materialen en afwerking
-
-- **PLA (Matte/Silk/Marble)**: strak zichtwerk en decoratieve stukken  
-- **PETG**: slagvast en beter tegen hitte of buitengebruik  
-- **TPU**: flexibel voor bumpers, grips en pads  
-- Nabewerking: supportverwijdering en licht ontbramen; lak/primer in overleg
-
-## Prijsindicaties
-
-- Small (ca. 5 x 5 x 5 cm) vanaf ~EUR 5 in PLA Matte  
-- Medium (ca. 10 x 10 x 10 cm) vanaf ~EUR 20  
-- Large (ca. 20 x 20 x 20 cm) vanaf ~EUR 49  
-- Opslagen: specials (Silk/Marble/Translucent) +20-30%, PETG/TPU +20-30%
-
-## Workflow
-
-1. Upload STL/STEP met toepassing, kritieke maten en gewenste afwerking  
-2. Materiaaladvies (PLA/PETG/TPU) + prijsvoorstel binnen een werkdag  
-3. Print, supportverwijdering en steekproef op kritieke maten  
-4. Afhalen in Herzele of levering richting Mechelen en Vlaanderen
-
-## Levering of afhalen
-
-- Afhalen: Provincieweg 34a, 9552 Herzele (afspraak)  
-- Levering Mechelen/Battel/Muizen/Walem/Leest: in overleg, beschermde verpakking  
-- Bpost/pakketdienst voor andere adressen in Vlaanderen
-
-## Klaar om te starten?
-
-Stuur je STL/STEP via het contactformulier. Vermeld materiaal (PLA/PETG/TPU), gewenste leverdatum en kritieke maten, dan plannen we samen je job in.
+## Materialen en afwerking
+
+- **PLA (Matte/Silk/Marble)**: strak zichtwerk en decoratieve stukken  
+- **PETG**: slagvast en beter tegen hitte of buitengebruik  
+- **TPU**: flexibel voor bumpers, grips en pads  
+- Nabewerking: supportverwijdering en licht ontbramen; lak/primer in overleg
+
+## Prijsindicaties
+
+- Small (ca. 5 x 5 x 5 cm) vanaf ~EUR 5 in PLA Matte  
+- Medium (ca. 10 x 10 x 10 cm) vanaf ~EUR 20  
+- Large (ca. 20 x 20 x 20 cm) vanaf ~EUR 49  
+- Opslagen: specials (Silk/Marble/Translucent) +20-30%, PETG/TPU +20-30%
+
+## Workflow
+
+1. Upload STL/STEP met toepassing, kritieke maten en gewenste afwerking  
+2. Materiaaladvies (PLA/PETG/TPU) + prijsvoorstel binnen een werkdag  
+3. Print, supportverwijdering en steekproef op kritieke maten  
+4. Afhalen in Herzele of levering richting Mechelen en Vlaanderen
+
+## Levering of afhalen
+
+- Afhalen: Provincieweg 34a, 9552 Herzele (afspraak)  
+- Levering Mechelen/Battel/Muizen/Walem/Leest: in overleg, beschermde verpakking  
+- Bpost/pakketdienst voor andere adressen in Vlaanderen
+
+## Klaar om te starten?
+
+Stuur je STL/STEP via het contactformulier. Vermeld materiaal (PLA/PETG/TPU), gewenste leverdatum en kritieke maten, dan plannen we samen je job in.
 
 
 ## Veelgestelde vragen over 3D printen in Mechelen
@@ -64,3 +64,37 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 **Leveren jullie ook in Mechelen?**
 
 Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Mechelen
+
+- Dekking: Mechelen, Mechelen centrum, Mechelen-Zuid, Nekkerhal, Battel, Muizen; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Mechelen.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Muizen](/3d-printen-in-muizen)
+- [3D printen in Walem](/3d-printen-in-walem)
+- [3D printen in Leest](/3d-printen-in-leest)
+## Lokale spotlight
+- Prototyping voor KMO's in Mechelen: PLA/PETG onderdelen afgestemd op projecten rond Mechelen centrum.
+- Vaak gevraagd: 3D print service Mechelen; we adviseren materiaal en afwerking.
+- Leverfocus: Mechelen, Mechelen centrum, Mechelen-Zuid.
+
+## Plaatsen waar we vaak leveren rond Mechelen
+- Centrum van Mechelen
+- Lokale bedrijvenzone in Mechelen
+- Sporthal in Mechelen
+
+## Sectoren die we vaak helpen in Mechelen
+- Prototyping voor KMO's in Mechelen
+- Fixtures/tooling voor bedrijven langs E19/R6 (Mechelen)
+- Props en displays voor events in Nekkerhal (Mechelen)
+- Onderwijs en labs (Thomas More, KU Leuven campus Mechelen)
+
+## Veelgevraagde zoekopdrachten in Mechelen
+- 3D print service Mechelen
+- rapid prototyping Mechelen
+- 3D printing bedrijf Mechelen
+<!-- LOCAL_ENRICH_END -->

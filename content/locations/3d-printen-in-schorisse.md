@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Schorisse
-
 - [3D printen in Maarkedal](/3d-printen-in-maarkedal)
 - [3D printen in Nukerke](/3d-printen-in-nukerke)
 - [3D printen in Horebeke](/3d-printen-in-horebeke)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Schorisse
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Schorisse
+
+- Dekking: Schorisse, Schorisse centrum, Maarkedal, Nukerke, Etikhove, Maarke-Kerkem; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Schorisse.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Maarkedal](/3d-printen-in-maarkedal)
+- [3D printen in Nukerke](/3d-printen-in-nukerke)
+- [3D printen in Etikhove](/3d-printen-in-etikhove)
+## Spotlight rond Schorisse
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Schorisse centrum.
+- Terugkerende order: 3D print service Schorisse; we bewaren je instellingen.
+- Leverfocus: Schorisse, Schorisse centrum, Maarkedal.
+
+## Landmarks in de buurt van Schorisse
+- Centrum van Schorisse
+- Lokale bedrijvenzone in Schorisse
+- Sporthal in Schorisse
+
+## Teams die we ondersteunen rond Schorisse
+- Lokale makers en ontwerpers (Schorisse)
+- Landelijke KMO's en herstellingen (Schorisse)
+- Verenigingen en onderwijs (Schorisse)
+
+## Wat vaak wordt gevraagd in Schorisse
+- 3D print service Schorisse
+- rapid prototyping Schorisse
+- 3D printing bedrijf Schorisse
+<!-- LOCAL_ENRICH_END -->

@@ -96,3 +96,34 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 **Hoe snel is de doorlooptijd?**
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Wijnegem
+
+- Dekking: Wijnegem; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Wijnegem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Gent](/3d-printen-in-gent)
+## Spotlight rond Wijnegem
+- Lokale teams in Wijnegem: behuizingen en pasmallen voor teams in Wijnegem.
+- Terugkerende order: 3D print service Wijnegem; we bewaren je instellingen.
+- Leverfocus: Wijnegem.
+
+## Landmarks in de buurt van Wijnegem
+- Centrum van Wijnegem
+- Lokale bedrijvenzone in Wijnegem
+- Sporthal in Wijnegem
+
+## Teams die we ondersteunen rond Wijnegem
+- KMO's en makers in Wijnegem: pasmallen en behuizingen.
+- Retail/events rond Wijnegem: displays en props.
+- Onderwijs/labs in Wijnegem: lesklare prints.
+
+## Wat vaak wordt gevraagd in Wijnegem
+- 3D print service Wijnegem
+- rapid prototyping Wijnegem
+- 3D printing bedrijf Wijnegem
+<!-- LOCAL_ENRICH_END -->

@@ -99,13 +99,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Aalter
-
-- [3D printen in Bellem](/3d-printen-in-bellem)
 - [3D printen in Knesselare](/3d-printen-in-knesselare)
 - [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
 - [3D printen in Poeke](/3d-printen-in-poeke)
 - [3D printen in Ursel](/3d-printen-in-ursel)
-
 ---
 
 ## Externe links
@@ -118,3 +115,38 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 ## Offerte voor 3D printen in Aalter
 
 Wil u een prototype of maatwerk laten printen in Aalter? Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Aalter
+
+- Dekking: Aalter, Aalter centrum, Aalter-Brug, Maria-Aalter, Bellem, Knesselare; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Aalter.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Bellem](/3d-printen-in-bellem)
+- [3D printen in Knesselare](/3d-printen-in-knesselare)
+- [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
+- [3D printen in Poeke](/3d-printen-in-poeke)
+- [3D printen in Ursel](/3d-printen-in-ursel)
+## Spotlight rond Aalter
+- KMO's langs E40 en N44: behuizingen en pasmallen voor teams in Aalter centrum.
+- Terugkerende order: 3D print service Aalter; we bewaren je instellingen.
+- Leverfocus: Aalter, Aalter centrum, Aalter-Brug.
+
+## Landmarks in de buurt van Aalter
+- Centrum van Aalter
+- Lokale bedrijvenzone in Aalter
+- Sporthal in Aalter
+
+## Teams die we ondersteunen rond Aalter
+- KMO's langs E40 en N44 (Aalter)
+- Logistiek en landbouw rond Aalter
+- Retail, horeca en lokale verenigingen (Aalter)
+
+## Wat vaak wordt gevraagd in Aalter
+- 3D print service Aalter
+- rapid prototyping Aalter
+- 3D printing bedrijf Aalter
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Lembeke
-
 - [3D printen in Kaprijke](/3d-printen-in-kaprijke)
 - [3D printen in Bentille](/3d-printen-in-bentille)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
 - [3D printen in Assenede](/3d-printen-in-assenede)
-
 ---
 
 ## Externe links
@@ -116,4 +114,36 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Lembeke
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Lembeke
+
+- Dekking: Lembeke, Lembeke centrum, Kaprijke, Bentille, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Lembeke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Kaprijke](/3d-printen-in-kaprijke)
+- [3D printen in Bentille](/3d-printen-in-bentille)
+## Lokale spotlight
+- Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Lembeke centrum.
+- Vaak gevraagd: 3D print service Lembeke; we adviseren materiaal en afwerking.
+- Leverfocus: Lembeke, Lembeke centrum, Kaprijke.
+
+## Plaatsen waar we vaak leveren rond Lembeke
+- Centrum van Lembeke
+- Lokale bedrijvenzone in Lembeke
+- Sporthal in Lembeke
+
+## Sectoren die we vaak helpen in Lembeke
+- Lokale makers en techniekers (Lembeke)
+- Creatieve projecten en maquettes (Lembeke)
+- Verenigingen en scholen (Lembeke)
+
+## Veelgevraagde zoekopdrachten in Lembeke
+- 3D print service Lembeke
+- rapid prototyping Lembeke
+- 3D printing bedrijf Lembeke
+<!-- LOCAL_ENRICH_END -->

@@ -98,10 +98,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Buggenhout
-
 - [3D printen in Buggenhout](/3d-printen-in-buggenhout)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
-
 ---
 
 ## Externe links
@@ -114,3 +112,34 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 ## Offerte voor 3D printen in Opdorp
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Opdorp
+
+- Dekking: Opdorp, Opdorp centrum, Buggenhout, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Opdorp.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Buggenhout](/3d-printen-in-buggenhout)
+## Spotlight rond Opdorp
+- Lokale ondernemers en makers: behuizingen en pasmallen voor teams in Opdorp centrum.
+- Terugkerende order: 3D print service Opdorp; we bewaren je instellingen.
+- Leverfocus: Opdorp, Opdorp centrum, Buggenhout.
+
+## Landmarks in de buurt van Opdorp
+- Centrum van Opdorp
+- Lokale bedrijvenzone in Opdorp
+- Sporthal in Opdorp
+
+## Teams die we ondersteunen rond Opdorp
+- Lokale ondernemers en makers (Opdorp)
+- Onderhoud en herstellingen (Opdorp)
+- Verenigingen en scholen (Opdorp)
+
+## Wat vaak wordt gevraagd in Opdorp
+- 3D print service Opdorp
+- rapid prototyping Opdorp
+- 3D printing bedrijf Opdorp
+<!-- LOCAL_ENRICH_END -->

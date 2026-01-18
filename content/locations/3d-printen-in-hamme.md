@@ -98,11 +98,9 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Pieters-B
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Hamme
-
 - [3D printen in Moerzeke](/3d-printen-in-moerzeke)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
 - [3D printen in Waasmunster](/3d-printen-in-waasmunster)
-
 ---
 
 ## Externe links
@@ -115,4 +113,35 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Hamme
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Hamme
+
+- Dekking: Hamme, Hamme centrum, Moerzeke, Zogge, Sint-Anna, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Hamme.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Moerzeke](/3d-printen-in-moerzeke)
+## Klantenspotlight
+- Lokale KMO's en zelfstandigen: kleine reeksen met vaste settings rond Hamme centrum.
+- Vaak gevraagd: 3D print service Hamme; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Hamme en Hamme centrum.
+
+## Locaties die we bedienen nabij Hamme
+- Centrum van Hamme
+- Lokale bedrijvenzone in Hamme
+- Sporthal in Hamme
+
+## Sectorfocus nabij Hamme
+- Lokale KMO's en zelfstandigen (Hamme)
+- Onderhoud en herstellingen (Hamme)
+- Verenigingen en onderwijs (Hamme)
+
+## Typische aanvragen rond Hamme
+- 3D print service Hamme
+- rapid prototyping Hamme
+- 3D printing bedrijf Hamme
+<!-- LOCAL_ENRICH_END -->

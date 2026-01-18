@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Baaigem
-
 - [3D printen in Gavere](/3d-printen-in-gavere)
 - [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
 - [3D printen in Vurste](/3d-printen-in-vurste)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Baaigem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Baaigem
+
+- Dekking: Baaigem, Baaigem centrum, Gavere, Vurste, Dikkelvenne, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Baaigem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Gavere](/3d-printen-in-gavere)
+- [3D printen in Vurste](/3d-printen-in-vurste)
+- [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+## Klantenspotlight
+- Creatieve projecten en maquettes: kleine reeksen met vaste settings rond Baaigem centrum.
+- Vaak gevraagd: 3D print service Baaigem; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Baaigem en Baaigem centrum.
+
+## Locaties die we bedienen nabij Baaigem
+- Centrum van Baaigem
+- Lokale bedrijvenzone in Baaigem
+- Sporthal in Baaigem
+
+## Sectorfocus nabij Baaigem
+- Creatieve projecten en maquettes (Baaigem)
+- Landelijke ondernemingen (Baaigem)
+- Onderwijs en makers (Baaigem)
+
+## Typische aanvragen rond Baaigem
+- 3D print service Baaigem
+- rapid prototyping Baaigem
+- 3D printing bedrijf Baaigem
+<!-- LOCAL_ENRICH_END -->

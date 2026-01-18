@@ -26,7 +26,7 @@ Wie **3D printen in Aartselaar** zoekt, wil snelheid én precisie. Vanuit Herzel
 
 
 
-## Projecten die we vaak printen in Aartselaar
+## Projecten die we vaak leveren voor klanten uit Aartselaar
 
 - **KMO's langs de Boomsesteenweg en Helst**: maatwerkbeugels, machinecovers of tijdelijke fixtures voor productielijnen.
 
@@ -98,3 +98,34 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 **Wat kost 3D printen in Aartselaar?**
 
 De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je model of schets en je krijgt snel een duidelijke offerte.
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Aartselaar
+
+- Dekking: Aartselaar; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Aartselaar.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Gent](/3d-printen-in-gent)
+## Spotlight rond Aartselaar
+- Lokale teams in Aartselaar: behuizingen en pasmallen voor teams in Aartselaar.
+- Terugkerende order: 3D print service Aartselaar; we bewaren je instellingen.
+- Leverfocus: Aartselaar.
+
+## Landmarks in de buurt van Aartselaar
+- Centrum van Aartselaar
+- Lokale bedrijvenzone in Aartselaar
+- Sporthal in Aartselaar
+
+## Teams die we ondersteunen rond Aartselaar
+- KMO's en makers in Aartselaar: pasmallen en behuizingen.
+- Retail/events rond Aartselaar: displays en props.
+- Onderwijs/labs in Aartselaar: lesklare prints.
+
+## Wat vaak wordt gevraagd in Aartselaar
+- 3D print service Aartselaar
+- rapid prototyping Aartselaar
+- 3D printing bedrijf Aartselaar
+<!-- LOCAL_ENRICH_END -->

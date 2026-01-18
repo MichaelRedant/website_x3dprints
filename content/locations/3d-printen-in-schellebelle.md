@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Schellebelle
-
 - [3D printen in Wichelen](/3d-printen-in-wichelen)
 - [3D printen in Serskamp](/3d-printen-in-serskamp)
 - [3D printen in Wetteren](/3d-printen-in-wetteren)
 - [3D printen in Denderleeuw](/3d-printen-in-denderleeuw)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Schellebelle
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Schellebelle
+
+- Dekking: Schellebelle, Schellebelle centrum, Wichelen, Serskamp, Wetteren, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Schellebelle.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Wichelen](/3d-printen-in-wichelen)
+- [3D printen in Serskamp](/3d-printen-in-serskamp)
+- [3D printen in Wetteren](/3d-printen-in-wetteren)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Schellebelle centrum.
+- Vaak gevraagd: 3D print service Schellebelle; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Schellebelle en Schellebelle centrum.
+
+## Locaties die we bedienen nabij Schellebelle
+- Centrum van Schellebelle
+- Lokale bedrijvenzone in Schellebelle
+- Sporthal in Schellebelle
+
+## Sectorfocus nabij Schellebelle
+- Lokale makers en ontwerpers (Schellebelle)
+- Kleine series en maatwerk (Schellebelle)
+- Verenigingen en onderwijs (Schellebelle)
+
+## Typische aanvragen rond Schellebelle
+- 3D print service Schellebelle
+- rapid prototyping Schellebelle
+- 3D printing bedrijf Schellebelle
+<!-- LOCAL_ENRICH_END -->

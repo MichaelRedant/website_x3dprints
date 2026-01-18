@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Corneliuskerk (Ruien) of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Ruien
-
 - [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
 - [3D printen in Kwaremont](/3d-printen-in-kwaremont)
 - [3D printen in Zulzeke](/3d-printen-in-zulzeke)
 - [3D printen in Ronse](/3d-printen-in-ronse)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Cornelius
 
 ## Offerte voor 3D printen in Ruien
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Ruien
+
+- Dekking: Ruien, Ruien centrum, Kluisbergen, Berchem, Zulzeke, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Ruien.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
+- [3D printen in Berchem](/3d-printen-in-berchem)
+- [3D printen in Zulzeke](/3d-printen-in-zulzeke)
+## Klantenspotlight
+- Onderhoud en herstellingen: kleine reeksen met vaste settings rond Ruien centrum.
+- Vaak gevraagd: 3D print service Ruien; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Ruien en Ruien centrum.
+
+## Locaties die we bedienen nabij Ruien
+- Centrum van Ruien
+- Lokale bedrijvenzone in Ruien
+- Sporthal in Ruien
+
+## Sectorfocus nabij Ruien
+- Onderhoud en herstellingen (Ruien)
+- Kleine series en maatwerk (Ruien)
+- Verenigingen en scholen (Ruien)
+
+## Typische aanvragen rond Ruien
+- 3D print service Ruien
+- rapid prototyping Ruien
+- 3D printing bedrijf Ruien
+<!-- LOCAL_ENRICH_END -->

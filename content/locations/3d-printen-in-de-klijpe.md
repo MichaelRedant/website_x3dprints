@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in De Klijpe
-
 - [3D printen in Ronse](/3d-printen-in-ronse)
 - [3D printen in Louise-Marie](/3d-printen-in-louise-marie)
 - [3D printen in Maarkedal](/3d-printen-in-maarkedal)
 - [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in De Klijpe
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond De Klijpe
+
+- Dekking: De Klijpe, De Klijpe centrum, Ronse, Louise-Marie, Maarkedal, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in De Klijpe.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Ronse](/3d-printen-in-ronse)
+- [3D printen in Louise-Marie](/3d-printen-in-louise-marie)
+- [3D printen in Maarkedal](/3d-printen-in-maarkedal)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond De Klijpe centrum.
+- Vaak gevraagd: 3D print service De Klijpe; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar De Klijpe en De Klijpe centrum.
+
+## Locaties die we bedienen nabij De Klijpe
+- Centrum van De Klijpe
+- Lokale bedrijvenzone in De Klijpe
+- Sporthal in De Klijpe
+
+## Sectorfocus nabij De Klijpe
+- Lokale makers en ontwerpers (De Klijpe)
+- Kleine series en maatwerk (De Klijpe)
+- Verenigingen en onderwijs (De Klijpe)
+
+## Typische aanvragen rond De Klijpe
+- 3D print service De Klijpe
+- rapid prototyping De Klijpe
+- 3D printing bedrijf De Klijpe
+<!-- LOCAL_ENRICH_END -->

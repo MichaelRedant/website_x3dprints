@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Louise-Marie (
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Louise-Marie
-
 - [3D printen in Ronse](/3d-printen-in-ronse)
 - [3D printen in De Klijpe](/3d-printen-in-de-klijpe)
 - [3D printen in Maarkedal](/3d-printen-in-maarkedal)
 - [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Louise-Marie
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Louise-Marie
+
+- Dekking: Louise-Marie, Louise-Marie centrum, Ronse, De Klijpe, Maarkedal, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Louise-Marie.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Ronse](/3d-printen-in-ronse)
+- [3D printen in De Klijpe](/3d-printen-in-de-klijpe)
+- [3D printen in Maarkedal](/3d-printen-in-maarkedal)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Louise-Marie centrum.
+- Vaak gevraagd: 3D print service Louise-Marie; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Louise-Marie en Louise-Marie centrum.
+
+## Locaties die we bedienen nabij Louise-Marie
+- Centrum van Louise-Marie
+- Lokale bedrijvenzone in Louise-Marie
+- Sporthal in Louise-Marie
+
+## Sectorfocus nabij Louise-Marie
+- Lokale makers en ontwerpers (Louise-Marie)
+- Kleine series en maatwerk (Louise-Marie)
+- Verenigingen en onderwijs (Louise-Marie)
+
+## Typische aanvragen rond Louise-Marie
+- 3D print service Louise-Marie
+- rapid prototyping Louise-Marie
+- 3D printing bedrijf Louise-Marie
+<!-- LOCAL_ENRICH_END -->

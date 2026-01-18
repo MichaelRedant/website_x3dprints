@@ -96,12 +96,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Tielrode of af
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Tielrode
-
 - [3D printen in Temse](/3d-printen-in-temse)
 - [3D printen in Elversele](/3d-printen-in-elversele)
 - [3D printen in Steendorp](/3d-printen-in-steendorp)
 - [3D printen in Hamme](/3d-printen-in-hamme)
-
 ---
 
 ## Externe links
@@ -114,4 +112,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Tielrode
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Tielrode
+
+- Dekking: Tielrode, Tielrode centrum, Temse, Steendorp, Elversele, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Tielrode.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Temse](/3d-printen-in-temse)
+- [3D printen in Steendorp](/3d-printen-in-steendorp)
+- [3D printen in Elversele](/3d-printen-in-elversele)
+## Spotlight rond Tielrode
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Tielrode centrum.
+- Terugkerende order: 3D print service Tielrode; we bewaren je instellingen.
+- Leverfocus: Tielrode, Tielrode centrum, Temse.
+
+## Landmarks in de buurt van Tielrode
+- Centrum van Tielrode
+- Lokale bedrijvenzone in Tielrode
+- Sporthal in Tielrode
+
+## Teams die we ondersteunen rond Tielrode
+- Lokale makers en ontwerpers (Tielrode)
+- Kleine series en maatwerk (Tielrode)
+- Verenigingen en onderwijs (Tielrode)
+
+## Wat vaak wordt gevraagd in Tielrode
+- 3D print service Tielrode
+- rapid prototyping Tielrode
+- 3D printing bedrijf Tielrode
+<!-- LOCAL_ENRICH_END -->

@@ -96,3 +96,34 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 **Hoe snel is de doorlooptijd?**
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Kontich
+
+- Dekking: Kontich; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kontich.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Lokale spotlight
+- Lokale teams in Kontich: PLA/PETG onderdelen afgestemd op projecten rond Kontich.
+- Vaak gevraagd: 3D print service Kontich; we adviseren materiaal en afwerking.
+- Leverfocus: Kontich.
+
+## Plaatsen waar we vaak leveren rond Kontich
+- Centrum van Kontich
+- Lokale bedrijvenzone in Kontich
+- Sporthal in Kontich
+
+## Sectoren die we vaak helpen in Kontich
+- KMO's en makers in Kontich: pasmallen en behuizingen.
+- Retail/events rond Kontich: displays en props.
+- Onderwijs/labs in Kontich: lesklare prints.
+
+## Veelgevraagde zoekopdrachten in Kontich
+- 3D print service Kontich
+- rapid prototyping Kontich
+- 3D printing bedrijf Kontich
+<!-- LOCAL_ENRICH_END -->

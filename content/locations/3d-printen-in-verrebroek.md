@@ -97,12 +97,9 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in de havenzone
-
-- [3D printen in Kieldrecht](/3d-printen-in-kieldrecht)
 - [3D printen in Doel](/3d-printen-in-doel)
 - [3D printen in Kallo](/3d-printen-in-kallo)
-- [3D printen in Beveren](/3d-printen-in-beveren)
-
+- [3D printen in Kieldrecht](/3d-printen-in-kieldrecht)
 ---
 
 ## Externe links
@@ -115,3 +112,36 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 ## Offerte voor 3D printen in Verrebroek
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Verrebroek
+
+- Dekking: Verrebroek, Verrebroek centrum, Kieldrecht, Doel, Kallo, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Verrebroek.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Kieldrecht](/3d-printen-in-kieldrecht)
+- [3D printen in Doel](/3d-printen-in-doel)
+- [3D printen in Kallo](/3d-printen-in-kallo)
+## Klantenspotlight
+- Haven en logistiek: kleine reeksen met vaste settings rond Verrebroek centrum.
+- Vaak gevraagd: 3D print service Verrebroek; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Verrebroek en Verrebroek centrum.
+
+## Locaties die we bedienen nabij Verrebroek
+- Centrum van Verrebroek
+- Lokale bedrijvenzone in Verrebroek
+- Sporthal in Verrebroek
+
+## Sectorfocus nabij Verrebroek
+- Haven en logistiek (Verrebroek)
+- Lokale KMO's en techniekers (Verrebroek)
+- Verenigingen en events (Verrebroek)
+
+## Typische aanvragen rond Verrebroek
+- 3D print service Verrebroek
+- rapid prototyping Verrebroek
+- 3D printing bedrijf Verrebroek
+<!-- LOCAL_ENRICH_END -->

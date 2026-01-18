@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Moregem
-
 - [3D printen in Wortegem-Petegem](/3d-printen-in-wortegem-petegem)
 - [3D printen in Wortegem](/3d-printen-in-wortegem)
 - [3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Moregem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Moregem
+
+- Dekking: Moregem, Moregem centrum, Wortegem-Petegem, Wortegem, Petegem-aan-de-Schelde, Elsegem; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Moregem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Wortegem-Petegem](/3d-printen-in-wortegem-petegem)
+- [3D printen in Wortegem](/3d-printen-in-wortegem)
+- [3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Moregem centrum.
+- Vaak gevraagd: 3D print service Moregem; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Moregem en Moregem centrum.
+
+## Locaties die we bedienen nabij Moregem
+- Centrum van Moregem
+- Lokale bedrijvenzone in Moregem
+- Sporthal in Moregem
+
+## Sectorfocus nabij Moregem
+- Lokale makers en ontwerpers (Moregem)
+- Kleine series en maatwerk (Moregem)
+- Verenigingen en onderwijs (Moregem)
+
+## Typische aanvragen rond Moregem
+- 3D print service Moregem
+- rapid prototyping Moregem
+- 3D printing bedrijf Moregem
+<!-- LOCAL_ENRICH_END -->

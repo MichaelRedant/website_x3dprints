@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Kemzeke of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Kemzeke
-
 - [3D printen in Stekene](/3d-printen-in-stekene)
 - [3D printen in Klein-Sinaai](/3d-printen-in-klein-sinaai)
 - [3D printen in Houtem (Stekene)](/3d-printen-in-houtem-stekene)
 - [3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Kemzeke of afh
 
 ## Offerte voor 3D printen in Kemzeke
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Kemzeke
+
+- Dekking: Kemzeke, Kemzeke centrum, Stekene, Klein-Sinaai, Houtem (Stekene), Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kemzeke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Stekene](/3d-printen-in-stekene)
+- [3D printen in Klein-Sinaai](/3d-printen-in-klein-sinaai)
+- [3D printen in Houtem (Stekene)](/3d-printen-in-houtem-stekene)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Kemzeke centrum.
+- Vaak gevraagd: 3D print service Kemzeke; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Kemzeke en Kemzeke centrum.
+
+## Locaties die we bedienen nabij Kemzeke
+- Centrum van Kemzeke
+- Lokale bedrijvenzone in Kemzeke
+- Sporthal in Kemzeke
+
+## Sectorfocus nabij Kemzeke
+- Lokale makers en ontwerpers (Kemzeke)
+- Kleine series en maatwerk (Kemzeke)
+- Verenigingen en onderwijs (Kemzeke)
+
+## Typische aanvragen rond Kemzeke
+- 3D print service Kemzeke
+- rapid prototyping Kemzeke
+- 3D printing bedrijf Kemzeke
+<!-- LOCAL_ENRICH_END -->

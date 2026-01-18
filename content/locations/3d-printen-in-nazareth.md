@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Nazareth of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Nazareth
-
 - [3D printen in Nazareth-De Pinte](/3d-printen-in-nazareth-de-pinte)
 - [3D printen in Eke](/3d-printen-in-eke)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [3D printen in Melle](/3d-printen-in-melle)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Nazareth of af
 
 ## Offerte voor 3D printen in Nazareth
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Nazareth
+
+- Dekking: Nazareth, Nazareth centrum, Eke, De Pinte, Merelbeke, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Nazareth.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Eke](/3d-printen-in-eke)
+- [3D printen in De Pinte](/3d-printen-in-de-pinte)
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+## Spotlight rond Nazareth
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Nazareth centrum.
+- Terugkerende order: 3D print service Nazareth; we bewaren je instellingen.
+- Leverfocus: Nazareth, Nazareth centrum, Eke.
+
+## Landmarks in de buurt van Nazareth
+- Centrum van Nazareth
+- Lokale bedrijvenzone in Nazareth
+- Sporthal in Nazareth
+
+## Teams die we ondersteunen rond Nazareth
+- Lokale makers en ontwerpers (Nazareth)
+- Kleine series en maatwerk (Nazareth)
+- Verenigingen en onderwijs (Nazareth)
+
+## Wat vaak wordt gevraagd in Nazareth
+- 3D print service Nazareth
+- rapid prototyping Nazareth
+- 3D printing bedrijf Nazareth
+<!-- LOCAL_ENRICH_END -->

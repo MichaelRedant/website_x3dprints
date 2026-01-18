@@ -98,11 +98,8 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting De dorpskern m
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Assenede
-
-- [3D printen in Bassevelde](/3d-printen-in-bassevelde)
 - [3D printen in Boekhoute](/3d-printen-in-boekhoute)
 - [3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
-
 ---
 
 ## Externe links
@@ -115,3 +112,36 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 ## Offerte voor 3D printen in Assenede
 
 Wilt u snel starten? Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Assenede
+
+- Dekking: Assenede, Assenede centrum, Bassevelde, Boekhoute, Oosteeklo, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Assenede.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Bassevelde](/3d-printen-in-bassevelde)
+- [3D printen in Boekhoute](/3d-printen-in-boekhoute)
+- [3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
+## Lokale spotlight
+- KMO's en zelfstandigen in het Meetjesland: PLA/PETG onderdelen afgestemd op projecten rond Assenede centrum.
+- Vaak gevraagd: 3D print service Assenede; we adviseren materiaal en afwerking.
+- Leverfocus: Assenede, Assenede centrum, Bassevelde.
+
+## Plaatsen waar we vaak leveren rond Assenede
+- Centrum van Assenede
+- Lokale bedrijvenzone in Assenede
+- Sporthal in Assenede
+
+## Sectoren die we vaak helpen in Assenede
+- KMO's en zelfstandigen in het Meetjesland (Assenede)
+- Landbouw en logistiek rond N49/E34 (Assenede)
+- Verenigingen en scholen (Assenede)
+
+## Veelgevraagde zoekopdrachten in Assenede
+- 3D print service Assenede
+- rapid prototyping Assenede
+- 3D printing bedrijf Assenede
+<!-- LOCAL_ENRICH_END -->

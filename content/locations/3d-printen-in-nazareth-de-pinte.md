@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Nazareth-De Pinte
-
 - [3D printen in Nazareth](/3d-printen-in-nazareth)
 - [3D printen in De Pinte](/3d-printen-in-de-pinte)
 - [3D printen in Eke](/3d-printen-in-eke)
 - [3D printen in Zevergem](/3d-printen-in-zevergem)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Nazareth-De Pinte
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Nazareth-De Pinte
+
+- Dekking: Nazareth-De Pinte, Nazareth, De Pinte, Eke, Zevergem, Merelbeke; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Nazareth-De Pinte.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Nazareth](/3d-printen-in-nazareth)
+- [3D printen in De Pinte](/3d-printen-in-de-pinte)
+- [3D printen in Eke](/3d-printen-in-eke)
+## Spotlight rond Nazareth-De Pinte
+- KMO's en maakbedrijven in de Gentse rand: behuizingen en pasmallen voor teams in Nazareth.
+- Terugkerende order: 3D print service Nazareth-De Pinte; we bewaren je instellingen.
+- Leverfocus: Nazareth-De Pinte, Nazareth, De Pinte.
+
+## Landmarks in de buurt van Nazareth-De Pinte
+- Centrum van Nazareth-De Pinte
+- Lokale bedrijvenzone in Nazareth-De Pinte
+- Sporthal in Nazareth-De Pinte
+
+## Teams die we ondersteunen rond Nazareth-De Pinte
+- KMO's en maakbedrijven in de Gentse rand (Nazareth-De Pinte)
+- Makers en ontwerpers (Nazareth-De Pinte)
+- Scholen en verenigingen (Nazareth-De Pinte)
+
+## Wat vaak wordt gevraagd in Nazareth-De Pinte
+- 3D print service Nazareth-De Pinte
+- rapid prototyping Nazareth-De Pinte
+- 3D printing bedrijf Nazareth-De Pinte
+<!-- LOCAL_ENRICH_END -->

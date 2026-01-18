@@ -214,29 +214,13 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links
-
-
-
-Verken ook onze andere lokale pagina’s:
-
-
-
-- [3D printen in Borsbeke](/3d-printen-in-borsbeke)  
-
-- [3D printen in Hillegem](/3d-printen-in-hillegem)  
-
-- [3D printen in Ressegem](/3d-printen-in-ressegem)  
-
-- [3D printen in Sint-Antelinks](/3d-printen-in-sint-antelinks)  
-
-- [3D printen in Sint-Lievens-Esse](/3d-printen-in-sint-lievens-esse)  
-
-- [3D printen in Steenhuize-Wijnhuize](/3d-printen-in-steenhuize-wijnhuize)  
-
+- [3D printen in Borsbeke](/3d-printen-in-borsbeke)
+- [3D printen in Hillegem](/3d-printen-in-hillegem)
+- [3D printen in Ressegem](/3d-printen-in-ressegem)
+- [3D printen in Sint-Antelinks](/3d-printen-in-sint-antelinks)
+- [3D printen in Sint-Lievens-Esse](/3d-printen-in-sint-lievens-esse)
+- [3D printen in Steenhuize-Wijnhuize](/3d-printen-in-steenhuize-wijnhuize)
 - [3D printen in Woubrechtegem](/3d-printen-in-woubrechtegem)
-
-
-
 ---
 
 
@@ -247,9 +231,33 @@ Verken ook onze andere lokale pagina’s:
 
 Klaar om te starten in Herzele? Stuur je **STL/STEP** via de [contactpagina](/contact). Geef **aantallen**, **materiaalvoorkeur** en eventuele **nabehandeling** mee — je krijgt snel een duidelijke offerte terug.
 
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Herzele
 
+- Dekking: Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Herzele.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
+## Nabijgelegen pagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Lokale spotlight
+- Lokale teams in Herzele: PLA/PETG onderdelen afgestemd op projecten rond Herzele.
+- Vaak gevraagd: 3D print service Herzele; we adviseren materiaal en afwerking.
+- Leverfocus: Herzele.
 
+## Plaatsen waar we vaak leveren rond Herzele
+- Centrum van Herzele
+- Lokale bedrijvenzone in Herzele
+- Sporthal in Herzele
 
+## Sectoren die we vaak helpen in Herzele
+- KMO's en makers in Herzele: pasmallen en behuizingen.
+- Retail/events rond Herzele: displays en props.
+- Onderwijs/labs in Herzele: lesklare prints.
 
-
+## Veelgevraagde zoekopdrachten in Herzele
+- 3D print service Herzele
+- rapid prototyping Herzele
+- 3D printing bedrijf Herzele
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Wieze
-
 - [3D printen in Lebbeke](/3d-printen-in-lebbeke)
 - [3D printen in Denderbelle](/3d-printen-in-denderbelle)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
 - [3D printen in Aalst](/3d-printen-in-aalst)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Wieze
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Wieze
+
+- Dekking: Wieze, Wieze centrum, Lebbeke, Denderbelle, Buggenhout, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Wieze.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Lebbeke](/3d-printen-in-lebbeke)
+- [3D printen in Denderbelle](/3d-printen-in-denderbelle)
+- [3D printen in Buggenhout](/3d-printen-in-buggenhout)
+## Lokale spotlight
+- Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Wieze centrum.
+- Vaak gevraagd: 3D print service Wieze; we adviseren materiaal en afwerking.
+- Leverfocus: Wieze, Wieze centrum, Lebbeke.
+
+## Plaatsen waar we vaak leveren rond Wieze
+- Centrum van Wieze
+- Lokale bedrijvenzone in Wieze
+- Sporthal in Wieze
+
+## Sectoren die we vaak helpen in Wieze
+- Lokale ondernemers en techniekers (Wieze)
+- Onderhoud en herstellingen (Wieze)
+- Verenigingen en onderwijs (Wieze)
+
+## Veelgevraagde zoekopdrachten in Wieze
+- 3D print service Wieze
+- rapid prototyping Wieze
+- 3D printing bedrijf Wieze
+<!-- LOCAL_ENRICH_END -->

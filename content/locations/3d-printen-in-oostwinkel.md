@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Jans Onthoofdingkerk (Oostwinkel) of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Oostwinkel
-
 - [3D printen in Lievegem](/3d-printen-in-lievegem)
 - [3D printen in Waarschoot](/3d-printen-in-waarschoot)
 - [3D printen in Zomergem](/3d-printen-in-zomergem)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Jans Onth
 
 ## Offerte voor 3D printen in Oostwinkel
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Oostwinkel
+
+- Dekking: Oostwinkel, Oostwinkel centrum, Lievegem, Waarschoot, Zomergem, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Oostwinkel.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Lievegem](/3d-printen-in-lievegem)
+- [3D printen in Waarschoot](/3d-printen-in-waarschoot)
+- [3D printen in Zomergem](/3d-printen-in-zomergem)
+## Spotlight rond Oostwinkel
+- Lokale makers en techniekers: behuizingen en pasmallen voor teams in Oostwinkel centrum.
+- Terugkerende order: 3D print service Oostwinkel; we bewaren je instellingen.
+- Leverfocus: Oostwinkel, Oostwinkel centrum, Lievegem.
+
+## Landmarks in de buurt van Oostwinkel
+- Centrum van Oostwinkel
+- Lokale bedrijvenzone in Oostwinkel
+- Sporthal in Oostwinkel
+
+## Teams die we ondersteunen rond Oostwinkel
+- Lokale makers en techniekers (Oostwinkel)
+- Onderhoud en herstellingen (Oostwinkel)
+- Verenigingen en onderwijs (Oostwinkel)
+
+## Wat vaak wordt gevraagd in Oostwinkel
+- 3D print service Oostwinkel
+- rapid prototyping Oostwinkel
+- 3D printing bedrijf Oostwinkel
+<!-- LOCAL_ENRICH_END -->

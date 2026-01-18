@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in De Klinge
-
 - [3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
 - [3D printen in Meerdonk](/3d-printen-in-meerdonk)
 - [3D printen in Sint-Pauwels](/3d-printen-in-sint-pauwels)
 - [3D printen in Beveren](/3d-printen-in-beveren)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in De Klinge
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor De Klinge
+
+- Dekking: De Klinge, De Klinge centrum, Sint-Gillis-Waas, Meerdonk, Sint-Pauwels, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in De Klinge.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
+- [3D printen in Meerdonk](/3d-printen-in-meerdonk)
+- [3D printen in Sint-Pauwels](/3d-printen-in-sint-pauwels)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond De Klinge centrum.
+- Vaak gevraagd: 3D print service De Klinge; we adviseren materiaal en afwerking.
+- Leverfocus: De Klinge, De Klinge centrum, Sint-Gillis-Waas.
+
+## Plaatsen waar we vaak leveren rond De Klinge
+- Centrum van De Klinge
+- Lokale bedrijvenzone in De Klinge
+- Sporthal in De Klinge
+
+## Sectoren die we vaak helpen in De Klinge
+- Lokale makers en ontwerpers (De Klinge)
+- Kleine series en maatwerk (De Klinge)
+- Verenigingen en onderwijs (De Klinge)
+
+## Veelgevraagde zoekopdrachten in De Klinge
+- 3D print service De Klinge
+- rapid prototyping De Klinge
+- 3D printing bedrijf De Klinge
+<!-- LOCAL_ENRICH_END -->

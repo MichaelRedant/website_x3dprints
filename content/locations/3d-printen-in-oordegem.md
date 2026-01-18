@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Oordegem
-
 - [3D printen in Lede](/3d-printen-in-lede)
 - [3D printen in Smetlede](/3d-printen-in-smetlede)
 - [3D printen in Impe](/3d-printen-in-impe)
 - [3D printen in Wanzele](/3d-printen-in-wanzele)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Oordegem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Oordegem
+
+- Dekking: Oordegem, Oordegem centrum, Lede, Smetlede, Wanzele, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Oordegem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Lede](/3d-printen-in-lede)
+- [3D printen in Smetlede](/3d-printen-in-smetlede)
+- [3D printen in Wanzele](/3d-printen-in-wanzele)
+## Klantenspotlight
+- Lokale makers en techniekers: kleine reeksen met vaste settings rond Oordegem centrum.
+- Vaak gevraagd: 3D print service Oordegem; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Oordegem en Oordegem centrum.
+
+## Locaties die we bedienen nabij Oordegem
+- Centrum van Oordegem
+- Lokale bedrijvenzone in Oordegem
+- Sporthal in Oordegem
+
+## Sectorfocus nabij Oordegem
+- Lokale makers en techniekers (Oordegem)
+- Kleine series en maatwerk (Oordegem)
+- Verenigingen en scholen (Oordegem)
+
+## Typische aanvragen rond Oordegem
+- 3D print service Oordegem
+- rapid prototyping Oordegem
+- 3D printing bedrijf Oordegem
+<!-- LOCAL_ENRICH_END -->

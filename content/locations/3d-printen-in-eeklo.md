@@ -98,11 +98,9 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Eeklo
-
 - [3D printen in Maldegem](/3d-printen-in-maldegem)
 - [3D printen in Assenede](/3d-printen-in-assenede)
 - [3D printen in Gent](/3d-printen-in-gent)
-
 ---
 
 ## Externe links
@@ -115,4 +113,36 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Eeklo
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Eeklo
+
+- Dekking: Eeklo, Eeklo centrum, Meetjesland, Maldegem, Assenede, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Eeklo.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Maldegem](/3d-printen-in-maldegem)
+- [3D printen in Assenede](/3d-printen-in-assenede)
+## Spotlight rond Eeklo
+- KMO's en zelfstandigen in het Meetjesland: behuizingen en pasmallen voor teams in Eeklo centrum.
+- Terugkerende order: 3D print service Eeklo; we bewaren je instellingen.
+- Leverfocus: Eeklo, Eeklo centrum, Meetjesland.
+
+## Landmarks in de buurt van Eeklo
+- Centrum van Eeklo
+- Lokale bedrijvenzone in Eeklo
+- Sporthal in Eeklo
+
+## Teams die we ondersteunen rond Eeklo
+- KMO's en zelfstandigen in het Meetjesland (Eeklo)
+- Retail, horeca en events in Eeklo
+- Onderwijs en makers (Eeklo)
+
+## Wat vaak wordt gevraagd in Eeklo
+- 3D print service Eeklo
+- rapid prototyping Eeklo
+- 3D printing bedrijf Eeklo
+<!-- LOCAL_ENRICH_END -->

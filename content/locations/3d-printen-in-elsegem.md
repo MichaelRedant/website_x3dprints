@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Elsegem
-
 - [3D printen in Wortegem-Petegem](/3d-printen-in-wortegem-petegem)
 - [3D printen in Wortegem](/3d-printen-in-wortegem)
 - [3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Elsegem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Elsegem
+
+- Dekking: Elsegem, Elsegem centrum, Wortegem-Petegem, Wortegem, Petegem-aan-de-Schelde, Moregem; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Elsegem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Wortegem-Petegem](/3d-printen-in-wortegem-petegem)
+- [3D printen in Wortegem](/3d-printen-in-wortegem)
+- [3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Elsegem centrum.
+- Vaak gevraagd: 3D print service Elsegem; we adviseren materiaal en afwerking.
+- Leverfocus: Elsegem, Elsegem centrum, Wortegem-Petegem.
+
+## Plaatsen waar we vaak leveren rond Elsegem
+- Centrum van Elsegem
+- Lokale bedrijvenzone in Elsegem
+- Sporthal in Elsegem
+
+## Sectoren die we vaak helpen in Elsegem
+- Lokale makers en ontwerpers (Elsegem)
+- Kleine series en maatwerk (Elsegem)
+- Verenigingen en onderwijs (Elsegem)
+
+## Veelgevraagde zoekopdrachten in Elsegem
+- 3D print service Elsegem
+- rapid prototyping Elsegem
+- 3D printing bedrijf Elsegem
+<!-- LOCAL_ENRICH_END -->

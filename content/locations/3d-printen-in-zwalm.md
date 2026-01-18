@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Zwalm
-
 - [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
 - [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
 - [3D printen in Roborst](/3d-printen-in-roborst)
 - [3D printen in Sint-Denijs-Boekel](/3d-printen-in-sint-denijs-boekel)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Zwalm
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Zwalm
+
+- Dekking: Zwalm, Zwalm centrum, Nederzwalm-Hermelgem, Munkzwalm, Roborst, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Zwalm.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
+- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+- [3D printen in Roborst](/3d-printen-in-roborst)
+## Spotlight rond Zwalm
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Zwalm centrum.
+- Terugkerende order: 3D print service Zwalm; we bewaren je instellingen.
+- Leverfocus: Zwalm, Zwalm centrum, Nederzwalm-Hermelgem.
+
+## Landmarks in de buurt van Zwalm
+- Centrum van Zwalm
+- Lokale bedrijvenzone in Zwalm
+- Sporthal in Zwalm
+
+## Teams die we ondersteunen rond Zwalm
+- Lokale makers en ontwerpers (Zwalm)
+- KMO's en herstellingen in de Vlaamse Ardennen (Zwalm)
+- Verenigingen en onderwijs (Zwalm)
+
+## Wat vaak wordt gevraagd in Zwalm
+- 3D print service Zwalm
+- rapid prototyping Zwalm
+- 3D printing bedrijf Zwalm
+<!-- LOCAL_ENRICH_END -->

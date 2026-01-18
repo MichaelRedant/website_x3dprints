@@ -51,9 +51,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   // JSON-LD Organization/LocalBusiness
-  const schema = {
-    "@context": "https://schema.org",
+  const baseLocalBusiness = {
     "@type": "LocalBusiness",
+    "@id": `${SITE.url}#x3dprints-main`,
     name: SITE.name,
     url: SITE.url,
     telephone: SITE.phone,
@@ -64,13 +64,68 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       addressLocality: SITE.address.locality,
       addressRegion: SITE.address.region,
       postalCode: SITE.address.postalCode,
-      addressCountry: SITE.address.country
+      addressCountry: SITE.address.country,
     },
     sameAs: SITE.sameAs,
-    areaServed: "BE",
+    areaServed: "België",
     priceRange: "EUR",
-    makesOffer: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "3D Print Service" } },
+    makesOffer: [{ "@type": "Offer", itemOffered: { "@type": "Service", name: "3D Print Service" } }],
+    geo: { "@type": "GeoCoordinates", latitude: 50.8839, longitude: 3.8932 },
+    hasMap: "https://www.google.com/maps/search/?api=1&query=Provincieweg+34a+9552+Herzele",
+  }
+
+  const clusterLocalBusinesses = [
+    {
+      "@type": "LocalBusiness",
+      "@id": `${SITE.url}#x3dprints-gent`,
+      name: "X3DPrints Gent & Vlaamse Ardennen",
+      url: `${SITE.url}/locaties`,
+      telephone: SITE.phone,
+      address: baseLocalBusiness.address,
+      areaServed: ["Gent", "Zottegem", "Geraardsbergen", "Oudenaarde", "Ninove"],
+      makesOffer: baseLocalBusiness.makesOffer,
+      parentOrganization: { "@id": baseLocalBusiness["@id"] },
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": `${SITE.url}#x3dprints-dender`,
+      name: "X3DPrints Aalst & Denderstreek",
+      url: `${SITE.url}/locaties`,
+      telephone: SITE.phone,
+      address: baseLocalBusiness.address,
+      areaServed: ["Aalst", "Denderleeuw", "Ninove", "Haaltert"],
+      makesOffer: baseLocalBusiness.makesOffer,
+      parentOrganization: { "@id": baseLocalBusiness["@id"] },
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": `${SITE.url}#x3dprints-waasland`,
+      name: "X3DPrints Waasland",
+      url: `${SITE.url}/locaties`,
+      telephone: SITE.phone,
+      address: baseLocalBusiness.address,
+      areaServed: ["Sint-Niklaas", "Beveren", "Lokeren", "Temse"],
+      makesOffer: baseLocalBusiness.makesOffer,
+      parentOrganization: { "@id": baseLocalBusiness["@id"] },
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": `${SITE.url}#x3dprints-kortrijk`,
+      name: "X3DPrints Kortrijk & Leievallei",
+      url: `${SITE.url}/locaties`,
+      telephone: SITE.phone,
+      address: baseLocalBusiness.address,
+      areaServed: ["Kortrijk", "Waregem", "Deinze", "Zulte"],
+      makesOffer: baseLocalBusiness.makesOffer,
+      parentOrganization: { "@id": baseLocalBusiness["@id"] },
+    },
+  ]
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      baseLocalBusiness,
+      ...clusterLocalBusinesses,
     ],
   }
 
@@ -90,7 +145,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="nl" data-theme="light" suppressHydrationWarning>
-      <body className={cn("min-h-screen flex flex-col antialiased", orbitron.variable, mono.variable)}>
+      <body className={cn("min-h-screen flex flex-col antialiased pt-16 md:pt-[72px]", orbitron.variable, mono.variable)}>
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{const key="x3d-theme";const stored=localStorage.getItem(key);const prefers=window.matchMedia("(prefers-color-scheme: dark)").matches;const theme=(stored==="dark"||stored==="light")?stored:(prefers?"dark":"light");const root=document.documentElement;if(theme==="dark"){root.classList.add("dark");root.dataset.theme="hawkins";}else{root.classList.remove("dark");root.dataset.theme="light";}}catch(e){}})();`,

@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Ertvelde
-
 - [3D printen in Evergem](/3d-printen-in-evergem)
 - [3D printen in Sleidinge](/3d-printen-in-sleidinge)
 - [3D printen in Kluizen](/3d-printen-in-kluizen)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
-
 ---
 
 ## Externe links
@@ -116,4 +114,36 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Ertvelde
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Ertvelde
+
+- Dekking: Ertvelde, Ertvelde centrum, Rieme, Evergem, Kluizen, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Ertvelde.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Evergem](/3d-printen-in-evergem)
+- [3D printen in Kluizen](/3d-printen-in-kluizen)
+## Klantenspotlight
+- Industrie en logistiek rond de kanaalzone: kleine reeksen met vaste settings rond Ertvelde centrum.
+- Vaak gevraagd: 3D print service Ertvelde; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Ertvelde en Ertvelde centrum.
+
+## Locaties die we bedienen nabij Ertvelde
+- Centrum van Ertvelde
+- Lokale bedrijvenzone in Ertvelde
+- Sporthal in Ertvelde
+
+## Sectorfocus nabij Ertvelde
+- Industrie en logistiek rond de kanaalzone (Ertvelde)
+- Lokale makers en onderhoud (Ertvelde)
+- Verenigingen en scholen (Ertvelde)
+
+## Typische aanvragen rond Ertvelde
+- 3D print service Ertvelde
+- rapid prototyping Ertvelde
+- 3D printing bedrijf Ertvelde
+<!-- LOCAL_ENRICH_END -->

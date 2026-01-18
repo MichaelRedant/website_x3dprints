@@ -96,3 +96,34 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 **Wat kost 3D printen in Schilde?**
 
 De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je model of schets en je krijgt snel een duidelijke offerte.
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Schilde
+
+- Dekking: Schilde; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Schilde.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Lokale spotlight
+- Lokale teams in Schilde: PLA/PETG onderdelen afgestemd op projecten rond Schilde.
+- Vaak gevraagd: 3D print service Schilde; we adviseren materiaal en afwerking.
+- Leverfocus: Schilde.
+
+## Plaatsen waar we vaak leveren rond Schilde
+- Centrum van Schilde
+- Lokale bedrijvenzone in Schilde
+- Sporthal in Schilde
+
+## Sectoren die we vaak helpen in Schilde
+- KMO's en makers in Schilde: pasmallen en behuizingen.
+- Retail/events rond Schilde: displays en props.
+- Onderwijs/labs in Schilde: lesklare prints.
+
+## Veelgevraagde zoekopdrachten in Schilde
+- 3D print service Schilde
+- rapid prototyping Schilde
+- 3D printing bedrijf Schilde
+<!-- LOCAL_ENRICH_END -->

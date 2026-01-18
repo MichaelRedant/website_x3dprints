@@ -97,13 +97,11 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Beveren
-
 - [3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
 - [3D printen in Kallo](/3d-printen-in-kallo)
 - [3D printen in Melsele](/3d-printen-in-melsele)
 - [3D printen in Haasdonk](/3d-printen-in-haasdonk)
 - [3D printen in Vrasene](/3d-printen-in-vrasene)
-
 ---
 
 ## Externe links
@@ -116,3 +114,36 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 ## Offerte voor 3D printen in Beveren
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Beveren
+
+- Dekking: Beveren, Beveren centrum, Kallo, Melsele, Haasdonk, Vrasene; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Beveren.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Kallo](/3d-printen-in-kallo)
+- [3D printen in Melsele](/3d-printen-in-melsele)
+- [3D printen in Haasdonk](/3d-printen-in-haasdonk)
+## Klantenspotlight
+- KMO's en zelfstandigen: kleine reeksen met vaste settings rond Beveren centrum.
+- Vaak gevraagd: 3D print service Beveren; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Beveren en Beveren centrum.
+
+## Locaties die we bedienen nabij Beveren
+- Centrum van Beveren
+- Lokale bedrijvenzone in Beveren
+- Sporthal in Beveren
+
+## Sectorfocus nabij Beveren
+- KMO's en zelfstandigen (Beveren)
+- Industrie rond Waaslandhaven (Beveren)
+- Verenigingen en lokale events (Beveren)
+
+## Typische aanvragen rond Beveren
+- 3D print service Beveren
+- rapid prototyping Beveren
+- 3D printing bedrijf Beveren
+<!-- LOCAL_ENRICH_END -->

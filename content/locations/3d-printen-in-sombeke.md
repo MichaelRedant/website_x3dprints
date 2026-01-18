@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sombeke of afh
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Sombeke
-
 - [3D printen in Waasmunster](/3d-printen-in-waasmunster)
 - [3D printen in Hamme](/3d-printen-in-hamme)
 - [3D printen in Lokeren](/3d-printen-in-lokeren)
 - [3D printen in Temse](/3d-printen-in-temse)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Sombeke
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Sombeke
+
+- Dekking: Sombeke, Sombeke centrum, Waasmunster, Hamme, Lokeren, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sombeke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Waasmunster](/3d-printen-in-waasmunster)
+- [3D printen in Hamme](/3d-printen-in-hamme)
+- [3D printen in Lokeren](/3d-printen-in-lokeren)
+## Spotlight rond Sombeke
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Sombeke centrum.
+- Terugkerende order: 3D print service Sombeke; we bewaren je instellingen.
+- Leverfocus: Sombeke, Sombeke centrum, Waasmunster.
+
+## Landmarks in de buurt van Sombeke
+- Centrum van Sombeke
+- Lokale bedrijvenzone in Sombeke
+- Sporthal in Sombeke
+
+## Teams die we ondersteunen rond Sombeke
+- Lokale makers en ontwerpers (Sombeke)
+- Kleine series en maatwerk (Sombeke)
+- Verenigingen en onderwijs (Sombeke)
+
+## Wat vaak wordt gevraagd in Sombeke
+- 3D print service Sombeke
+- rapid prototyping Sombeke
+- 3D printing bedrijf Sombeke
+<!-- LOCAL_ENRICH_END -->

@@ -96,3 +96,34 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 **Kunnen jullie ook kleine series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Boom
+
+- Dekking: Boom; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Boom.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Gent](/3d-printen-in-gent)
+## Spotlight rond Boom
+- Lokale teams in Boom: behuizingen en pasmallen voor teams in Boom.
+- Terugkerende order: 3D print service Boom; we bewaren je instellingen.
+- Leverfocus: Boom.
+
+## Landmarks in de buurt van Boom
+- Centrum van Boom
+- Lokale bedrijvenzone in Boom
+- Sporthal in Boom
+
+## Teams die we ondersteunen rond Boom
+- KMO's en makers in Boom: pasmallen en behuizingen.
+- Retail/events rond Boom: displays en props.
+- Onderwijs/labs in Boom: lesklare prints.
+
+## Wat vaak wordt gevraagd in Boom
+- 3D print service Boom
+- rapid prototyping Boom
+- 3D printing bedrijf Boom
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Stekene of afh
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Stekene
-
 - [3D printen in Kemzeke](/3d-printen-in-kemzeke)
 - [3D printen in Klein-Sinaai](/3d-printen-in-klein-sinaai)
 - [3D printen in Houtem (Stekene)](/3d-printen-in-houtem-stekene)
 - [3D printen in Sint-Niklaas](/3d-printen-in-sint-niklaas)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Stekene
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Stekene
+
+- Dekking: Stekene, Stekene centrum, Kemzeke, Klein-Sinaai, Houtem (Stekene), Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Stekene.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Kemzeke](/3d-printen-in-kemzeke)
+- [3D printen in Klein-Sinaai](/3d-printen-in-klein-sinaai)
+- [3D printen in Houtem (Stekene)](/3d-printen-in-houtem-stekene)
+## Spotlight rond Stekene
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Stekene centrum.
+- Terugkerende order: 3D print service Stekene; we bewaren je instellingen.
+- Leverfocus: Stekene, Stekene centrum, Kemzeke.
+
+## Landmarks in de buurt van Stekene
+- Centrum van Stekene
+- Lokale bedrijvenzone in Stekene
+- Sporthal in Stekene
+
+## Teams die we ondersteunen rond Stekene
+- Lokale makers en ontwerpers (Stekene)
+- KMO's en herstellingen in het Waasland (Stekene)
+- Verenigingen en onderwijs (Stekene)
+
+## Wat vaak wordt gevraagd in Stekene
+- 3D print service Stekene
+- rapid prototyping Stekene
+- 3D printing bedrijf Stekene
+<!-- LOCAL_ENRICH_END -->

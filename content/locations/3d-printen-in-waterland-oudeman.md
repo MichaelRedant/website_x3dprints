@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Waterland-Oudeman
-
 - [3D printen in Sint-Laureins](/3d-printen-in-sint-laureins)
 - [3D printen in Watervliet](/3d-printen-in-watervliet)
 - [3D printen in Sint-Jan-in-Eremo](/3d-printen-in-sint-jan-in-eremo)
 - [3D printen in Assenede](/3d-printen-in-assenede)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Waterland-Oudeman
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Waterland-Oudeman
+
+- Dekking: Waterland-Oudeman, Waterland-Oudeman centrum, Sint-Laureins, Watervliet, Sint-Margriete, Sint-Jan-in-Eremo; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Waterland-Oudeman.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Sint-Laureins](/3d-printen-in-sint-laureins)
+- [3D printen in Watervliet](/3d-printen-in-watervliet)
+- [3D printen in Sint-Margriete](/3d-printen-in-sint-margriete)
+## Spotlight rond Waterland-Oudeman
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Waterland-Oudeman centrum.
+- Terugkerende order: 3D print service Waterland-Oudeman; we bewaren je instellingen.
+- Leverfocus: Waterland-Oudeman, Waterland-Oudeman centrum, Sint-Laureins.
+
+## Landmarks in de buurt van Waterland-Oudeman
+- Centrum van Waterland-Oudeman
+- Lokale bedrijvenzone in Waterland-Oudeman
+- Sporthal in Waterland-Oudeman
+
+## Teams die we ondersteunen rond Waterland-Oudeman
+- Lokale makers en ontwerpers (Waterland-Oudeman)
+- Landelijke KMO's en herstellingen (Waterland-Oudeman)
+- Verenigingen en onderwijs (Waterland-Oudeman)
+
+## Wat vaak wordt gevraagd in Waterland-Oudeman
+- 3D print service Waterland-Oudeman
+- rapid prototyping Waterland-Oudeman
+- 3D printing bedrijf Waterland-Oudeman
+<!-- LOCAL_ENRICH_END -->

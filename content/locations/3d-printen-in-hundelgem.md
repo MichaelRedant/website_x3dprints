@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Hundelgem of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Hundelgem
-
 - [3D printen in Zwalm](/3d-printen-in-zwalm)
 - [3D printen in Dikkele](/3d-printen-in-dikkele)
 - [3D printen in Meilegem](/3d-printen-in-meilegem)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Hundelgem of a
 
 ## Offerte voor 3D printen in Hundelgem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Hundelgem
+
+- Dekking: Hundelgem, Hundelgem centrum, Zwalm, Nederzwalm-Hermelgem, Munkzwalm, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Hundelgem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Zwalm](/3d-printen-in-zwalm)
+- [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
+- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Hundelgem centrum.
+- Vaak gevraagd: 3D print service Hundelgem; we adviseren materiaal en afwerking.
+- Leverfocus: Hundelgem, Hundelgem centrum, Zwalm.
+
+## Plaatsen waar we vaak leveren rond Hundelgem
+- Centrum van Hundelgem
+- Lokale bedrijvenzone in Hundelgem
+- Sporthal in Hundelgem
+
+## Sectoren die we vaak helpen in Hundelgem
+- Lokale makers en ontwerpers (Hundelgem)
+- Kleine series en maatwerk (Hundelgem)
+- Verenigingen en onderwijs (Hundelgem)
+
+## Veelgevraagde zoekopdrachten in Hundelgem
+- 3D print service Hundelgem
+- rapid prototyping Hundelgem
+- 3D printing bedrijf Hundelgem
+<!-- LOCAL_ENRICH_END -->

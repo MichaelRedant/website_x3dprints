@@ -97,12 +97,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Zwijndrecht
-
 - [3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
 - [3D printen in Burcht](/3d-printen-in-burcht)
 - [3D printen in Kruibeke](/3d-printen-in-kruibeke)
 - [3D printen in Bazel](/3d-printen-in-bazel)
-
 ---
 
 ## Externe links
@@ -115,3 +113,36 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 ## Offerte voor 3D printen in Zwijndrecht
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Zwijndrecht
+
+- Dekking: Zwijndrecht, Zwijndrecht centrum, Burcht, Kruibeke, Bazel, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Zwijndrecht.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Burcht](/3d-printen-in-burcht)
+- [3D printen in Kruibeke](/3d-printen-in-kruibeke)
+- [3D printen in Bazel](/3d-printen-in-bazel)
+## Spotlight rond Zwijndrecht
+- Logistiek en industrie: behuizingen en pasmallen voor teams in Zwijndrecht centrum.
+- Terugkerende order: 3D print service Zwijndrecht; we bewaren je instellingen.
+- Leverfocus: Zwijndrecht, Zwijndrecht centrum, Burcht.
+
+## Landmarks in de buurt van Zwijndrecht
+- Centrum van Zwijndrecht
+- Lokale bedrijvenzone in Zwijndrecht
+- Sporthal in Zwijndrecht
+
+## Teams die we ondersteunen rond Zwijndrecht
+- Logistiek en industrie (Zwijndrecht)
+- Verenigingen en lokale events (Zwijndrecht)
+- Makers en hobbyisten (Zwijndrecht)
+
+## Wat vaak wordt gevraagd in Zwijndrecht
+- 3D print service Zwijndrecht
+- rapid prototyping Zwijndrecht
+- 3D printing bedrijf Zwijndrecht
+<!-- LOCAL_ENRICH_END -->

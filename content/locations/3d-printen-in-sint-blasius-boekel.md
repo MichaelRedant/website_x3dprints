@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Blasius-Boekel of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Sint-Blasius-Boekel
-
 - [3D printen in Zwalm](/3d-printen-in-zwalm)
 - [3D printen in Sint-Denijs-Boekel](/3d-printen-in-sint-denijs-boekel)
 - [3D printen in Roborst](/3d-printen-in-roborst)
 - [3D printen in Horebeke](/3d-printen-in-horebeke)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Blasius-B
 
 ## Offerte voor 3D printen in Sint-Blasius-Boekel
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Sint-Blasius-Boekel
+
+- Dekking: Sint-Blasius-Boekel, Sint-Blasius-Boekel centrum, Zwalm, Munkzwalm, Roborst, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Blasius-Boekel.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Zwalm](/3d-printen-in-zwalm)
+- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+- [3D printen in Roborst](/3d-printen-in-roborst)
+## Spotlight rond Sint-Blasius-Boekel
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Sint-Blasius-Boekel centrum.
+- Terugkerende order: 3D print service Sint-Blasius-Boekel; we bewaren je instellingen.
+- Leverfocus: Sint-Blasius-Boekel, Sint-Blasius-Boekel centrum, Zwalm.
+
+## Landmarks in de buurt van Sint-Blasius-Boekel
+- Centrum van Sint-Blasius-Boekel
+- Lokale bedrijvenzone in Sint-Blasius-Boekel
+- Sporthal in Sint-Blasius-Boekel
+
+## Teams die we ondersteunen rond Sint-Blasius-Boekel
+- Lokale makers en ontwerpers (Sint-Blasius-Boekel)
+- Kleine series en maatwerk (Sint-Blasius-Boekel)
+- Verenigingen en onderwijs (Sint-Blasius-Boekel)
+
+## Wat vaak wordt gevraagd in Sint-Blasius-Boekel
+- 3D print service Sint-Blasius-Boekel
+- rapid prototyping Sint-Blasius-Boekel
+- 3D printing bedrijf Sint-Blasius-Boekel
+<!-- LOCAL_ENRICH_END -->

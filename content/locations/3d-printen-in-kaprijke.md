@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Onze-Lieve-Vro
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Kaprijke
-
 - [3D printen in Lembeke](/3d-printen-in-lembeke)
 - [3D printen in Bentille](/3d-printen-in-bentille)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
 - [3D printen in Assenede](/3d-printen-in-assenede)
-
 ---
 
 ## Externe links
@@ -116,4 +114,36 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Kaprijke
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Kaprijke
+
+- Dekking: Kaprijke, Kaprijke centrum, Lembeke, Bentille, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kaprijke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Lembeke](/3d-printen-in-lembeke)
+- [3D printen in Bentille](/3d-printen-in-bentille)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Kaprijke centrum.
+- Vaak gevraagd: 3D print service Kaprijke; we adviseren materiaal en afwerking.
+- Leverfocus: Kaprijke, Kaprijke centrum, Lembeke.
+
+## Plaatsen waar we vaak leveren rond Kaprijke
+- Centrum van Kaprijke
+- Lokale bedrijvenzone in Kaprijke
+- Sporthal in Kaprijke
+
+## Sectoren die we vaak helpen in Kaprijke
+- Lokale makers en ontwerpers (Kaprijke)
+- Kleine series en maatwerk (Kaprijke)
+- Verenigingen en onderwijs (Kaprijke)
+
+## Veelgevraagde zoekopdrachten in Kaprijke
+- 3D print service Kaprijke
+- rapid prototyping Kaprijke
+- 3D printing bedrijf Kaprijke
+<!-- LOCAL_ENRICH_END -->

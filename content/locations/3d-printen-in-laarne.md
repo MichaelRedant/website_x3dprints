@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Laarne
-
 - [3D printen in Kalken](/3d-printen-in-kalken)
 - [3D printen in Wetteren](/3d-printen-in-wetteren)
 - [3D printen in Destelbergen](/3d-printen-in-destelbergen)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Laarne
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Laarne
+
+- Dekking: Laarne, Laarne centrum, Kalken, Wetteren, Destelbergen, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Laarne.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Kalken](/3d-printen-in-kalken)
+- [3D printen in Wetteren](/3d-printen-in-wetteren)
+- [3D printen in Destelbergen](/3d-printen-in-destelbergen)
+## Spotlight rond Laarne
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Laarne centrum.
+- Terugkerende order: 3D print service Laarne; we bewaren je instellingen.
+- Leverfocus: Laarne, Laarne centrum, Kalken.
+
+## Landmarks in de buurt van Laarne
+- Centrum van Laarne
+- Lokale bedrijvenzone in Laarne
+- Sporthal in Laarne
+
+## Teams die we ondersteunen rond Laarne
+- Lokale makers en ontwerpers (Laarne)
+- Onderhoud en herstellingen (Laarne)
+- Verenigingen en onderwijs (Laarne)
+
+## Wat vaak wordt gevraagd in Laarne
+- 3D print service Laarne
+- rapid prototyping Laarne
+- 3D printing bedrijf Laarne
+<!-- LOCAL_ENRICH_END -->

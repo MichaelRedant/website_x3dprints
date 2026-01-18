@@ -97,12 +97,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Zwijndrecht
-
 - [3D printen in Zwijndrecht](/3d-printen-in-zwijndrecht)
 - [3D printen in Bazel](/3d-printen-in-bazel)
 - [3D printen in Kruibeke](/3d-printen-in-kruibeke)
 - [3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
-
 ---
 
 ## Externe links
@@ -115,3 +113,36 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 ## Offerte voor 3D printen in Burcht
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Burcht
+
+- Dekking: Burcht, Burcht centrum, Zwijndrecht, Kruibeke, Bazel, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Burcht.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Zwijndrecht](/3d-printen-in-zwijndrecht)
+- [3D printen in Kruibeke](/3d-printen-in-kruibeke)
+- [3D printen in Bazel](/3d-printen-in-bazel)
+## Spotlight rond Burcht
+- Lokale KMO's en zelfstandigen: behuizingen en pasmallen voor teams in Burcht centrum.
+- Terugkerende order: 3D print service Burcht; we bewaren je instellingen.
+- Leverfocus: Burcht, Burcht centrum, Zwijndrecht.
+
+## Landmarks in de buurt van Burcht
+- Centrum van Burcht
+- Lokale bedrijvenzone in Burcht
+- Sporthal in Burcht
+
+## Teams die we ondersteunen rond Burcht
+- Lokale KMO's en zelfstandigen (Burcht)
+- Onderwijs en verenigingen (Burcht)
+- Makers en hobbyisten (Burcht)
+
+## Wat vaak wordt gevraagd in Burcht
+- 3D print service Burcht
+- rapid prototyping Burcht
+- 3D printing bedrijf Burcht
+<!-- LOCAL_ENRICH_END -->

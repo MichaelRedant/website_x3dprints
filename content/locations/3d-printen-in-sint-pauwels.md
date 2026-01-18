@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Sint-Pauwels
-
 - [3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
 - [3D printen in De Klinge](/3d-printen-in-de-klinge)
 - [3D printen in Meerdonk](/3d-printen-in-meerdonk)
 - [3D printen in Beveren](/3d-printen-in-beveren)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Sint-Pauwels
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Sint-Pauwels
+
+- Dekking: Sint-Pauwels, Sint-Pauwels centrum, Sint-Gillis-Waas, De Klinge, Meerdonk, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Pauwels.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
+- [3D printen in De Klinge](/3d-printen-in-de-klinge)
+- [3D printen in Meerdonk](/3d-printen-in-meerdonk)
+## Spotlight rond Sint-Pauwels
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Sint-Pauwels centrum.
+- Terugkerende order: 3D print service Sint-Pauwels; we bewaren je instellingen.
+- Leverfocus: Sint-Pauwels, Sint-Pauwels centrum, Sint-Gillis-Waas.
+
+## Landmarks in de buurt van Sint-Pauwels
+- Centrum van Sint-Pauwels
+- Lokale bedrijvenzone in Sint-Pauwels
+- Sporthal in Sint-Pauwels
+
+## Teams die we ondersteunen rond Sint-Pauwels
+- Lokale makers en ontwerpers (Sint-Pauwels)
+- Kleine series en maatwerk (Sint-Pauwels)
+- Verenigingen en onderwijs (Sint-Pauwels)
+
+## Wat vaak wordt gevraagd in Sint-Pauwels
+- 3D print service Sint-Pauwels
+- rapid prototyping Sint-Pauwels
+- 3D printing bedrijf Sint-Pauwels
+<!-- LOCAL_ENRICH_END -->

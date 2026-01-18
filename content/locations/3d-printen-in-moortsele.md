@@ -1,20 +1,20 @@
-# 3D printen in Moortsele: station en Gondebeekvallei
-
-Voor **3D printen in Moortsele** levert X3DPrints prototypes en functionele onderdelen richting station Moortsele, Gondebeekvallei en ateliers langs de spoorlijn Gent-Zottegem. Je krijgt nette prints met snelle doorlooptijd.
-
----
-
-## Waarom X3DPrints voor Moortsele?
-
-- Offerte binnen een werkdag; levering in enkele werkdagen.
-- Strakke toleranties zodat onderdelen meteen passen.
-- Materiaalkeuze: PLA voor zichtwerk, PETG voor robuuste toepassingen, TPU voor flexibele klemmen.
-- Direct contact en optionele fotoreports.
-
-**Lokale touch:** afgestemd op pendel- en mobiliteitsprojecten rond het station, outdoor-gebruik in de vallei en retail in de dorpskern.
-
----
-
+# 3D printen in Moortsele: station en Gondebeekvallei
+
+Voor **3D printen in Moortsele** levert X3DPrints prototypes en functionele onderdelen richting station Moortsele, Gondebeekvallei en ateliers langs de spoorlijn Gent-Zottegem. Je krijgt nette prints met snelle doorlooptijd.
+
+---
+
+## Waarom X3DPrints voor Moortsele?
+
+- Offerte binnen een werkdag; levering in enkele werkdagen.
+- Strakke toleranties zodat onderdelen meteen passen.
+- Materiaalkeuze: PLA voor zichtwerk, PETG voor robuuste toepassingen, TPU voor flexibele klemmen.
+- Direct contact en optionele fotoreports.
+
+**Lokale touch:** afgestemd op pendel- en mobiliteitsprojecten rond het station, outdoor-gebruik in de vallei en retail in de dorpskern.
+
+---
+
 
 
 ## Lokale focus in Moortsele
@@ -25,33 +25,33 @@ Zoek je 3D printen in Moortsele? We denken mee over passing, sterkte en look zod
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 - Behuizingen en covers voor elektronica, sensoren of prototypes.
 
-## Materialen
-
-| Materiaal     | Pluspunt                       | Ideaal voor |
-| :------------ | :---------------------------- | :---------- |
-| **PLA Matte** | Strakke look, veel kleuren    | Maquettes en displays voor presentaties |
-| **PETG**      | Stevig en temperatuurvast     | Functionele onderdelen voor rail- of buitengebruik |
-| **TPU**       | Flexibel en schokdempend      | Beschermhoezen en dempers voor veldopstellingen |
-
----
-
-## Toepassingen in Moortsele
-
-- Klemmen en hulponderdelen voor rail- en mobiliteitsopstellingen rond het station.
-- Behuizingen voor sensoren of buitenprojecten in de Gondebeekvallei.
-- Displays en kleine series voor lokale winkels.
-
----
-
-## Praktisch
-
-Stuur STL of STEP via [contact](/contact) met aantallen en deadline. Onderdelen tot 35 x 32 x 35 cm printen we in een stuk; grotere delen delen we slim. Verzending of afhalen mogelijk; tarieven op [pricing](/pricing).
-
----
-
-## Offerte aanvragen
-
-Upload je bestand en ontvang snel een voorstel voor **3D printen in Moortsele**.
+## Materialen
+
+| Materiaal     | Pluspunt                       | Ideaal voor |
+| :------------ | :---------------------------- | :---------- |
+| **PLA Matte** | Strakke look, veel kleuren    | Maquettes en displays voor presentaties |
+| **PETG**      | Stevig en temperatuurvast     | Functionele onderdelen voor rail- of buitengebruik |
+| **TPU**       | Flexibel en schokdempend      | Beschermhoezen en dempers voor veldopstellingen |
+
+---
+
+## Toepassingen in Moortsele
+
+- Klemmen en hulponderdelen voor rail- en mobiliteitsopstellingen rond het station.
+- Behuizingen voor sensoren of buitenprojecten in de Gondebeekvallei.
+- Displays en kleine series voor lokale winkels.
+
+---
+
+## Praktisch
+
+Stuur STL of STEP via [contact](/contact) met aantallen en deadline. Onderdelen tot 35 x 32 x 35 cm printen we in een stuk; grotere delen delen we slim. Verzending of afhalen mogelijk; tarieven op [pricing](/pricing).
+
+---
+
+## Offerte aanvragen
+
+Upload je bestand en ontvang snel een voorstel voor **3D printen in Moortsele**.
 
 
 ## Veelgestelde vragen over 3D printen in Moortsele
@@ -67,3 +67,34 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 **Hoe snel is de doorlooptijd?**
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Moortsele
+
+- Dekking: Moortsele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Moortsele.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Klantenspotlight
+- Lokale teams in Moortsele: kleine reeksen met vaste settings rond Moortsele.
+- Vaak gevraagd: 3D print service Moortsele; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Moortsele en Moortsele.
+
+## Locaties die we bedienen nabij Moortsele
+- Centrum van Moortsele
+- Lokale bedrijvenzone in Moortsele
+- Sporthal in Moortsele
+
+## Sectorfocus nabij Moortsele
+- KMO's en makers in Moortsele: pasmallen en behuizingen.
+- Retail/events rond Moortsele: displays en props.
+- Onderwijs/labs in Moortsele: lesklare prints.
+
+## Typische aanvragen rond Moortsele
+- 3D print service Moortsele
+- rapid prototyping Moortsele
+- 3D printing bedrijf Moortsele
+<!-- LOCAL_ENRICH_END -->

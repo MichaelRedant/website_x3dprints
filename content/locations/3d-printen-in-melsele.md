@@ -97,12 +97,8 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Beveren
-
-- [3D printen in Beveren](/3d-printen-in-beveren)
 - [3D printen in Haasdonk](/3d-printen-in-haasdonk)
-- [3D printen in Vrasene](/3d-printen-in-vrasene)
-- [3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
-
+- [3D printen in Kallo](/3d-printen-in-kallo)
 ---
 
 ## Externe links
@@ -115,3 +111,36 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 ## Offerte voor 3D printen in Melsele
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Melsele
+
+- Dekking: Melsele, Melsele centrum, Beveren, Haasdonk, Kallo, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Melsele.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Beveren](/3d-printen-in-beveren)
+- [3D printen in Haasdonk](/3d-printen-in-haasdonk)
+- [3D printen in Kallo](/3d-printen-in-kallo)
+## Lokale spotlight
+- Lokale ondernemers en makers: PLA/PETG onderdelen afgestemd op projecten rond Melsele centrum.
+- Vaak gevraagd: 3D print service Melsele; we adviseren materiaal en afwerking.
+- Leverfocus: Melsele, Melsele centrum, Beveren.
+
+## Plaatsen waar we vaak leveren rond Melsele
+- Centrum van Melsele
+- Lokale bedrijvenzone in Melsele
+- Sporthal in Melsele
+
+## Sectoren die we vaak helpen in Melsele
+- Lokale ondernemers en makers (Melsele)
+- Onderhoud en herstellingen (Melsele)
+- Verenigingen en scholen (Melsele)
+
+## Veelgevraagde zoekopdrachten in Melsele
+- 3D print service Melsele
+- rapid prototyping Melsele
+- 3D printing bedrijf Melsele
+<!-- LOCAL_ENRICH_END -->

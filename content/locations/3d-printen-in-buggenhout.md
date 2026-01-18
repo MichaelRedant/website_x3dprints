@@ -98,10 +98,8 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Buggenhoutbos of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Buggenhout
-
-- [3D printen in Opdorp](/3d-printen-in-opdorp)
-- [3D printen in Dendermonde](/3d-printen-in-dendermonde)
-
+- [3D printen in Berchem](/3d-printen-in-berchem)
+- [3D printen in Borgerhout](/3d-printen-in-borgerhout)
 ---
 
 ## Externe links
@@ -114,3 +112,36 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Buggenhoutbos 
 ## Offerte voor 3D printen in Buggenhout
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Buggenhout
+
+- Dekking: Buggenhout, Buggenhout centrum, Opdorp, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Buggenhout.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Opdorp](/3d-printen-in-opdorp)
+- [3D printen in Berchem](/3d-printen-in-berchem)
+- [3D printen in Borgerhout](/3d-printen-in-borgerhout)
+## Lokale spotlight
+- Lokale KMO's en zelfstandigen: PLA/PETG onderdelen afgestemd op projecten rond Buggenhout centrum.
+- Vaak gevraagd: 3D print service Buggenhout; we adviseren materiaal en afwerking.
+- Leverfocus: Buggenhout, Buggenhout centrum, Opdorp.
+
+## Plaatsen waar we vaak leveren rond Buggenhout
+- Centrum van Buggenhout
+- Lokale bedrijvenzone in Buggenhout
+- Sporthal in Buggenhout
+
+## Sectoren die we vaak helpen in Buggenhout
+- Lokale KMO's en zelfstandigen (Buggenhout)
+- Landbouw en herstellingen (Buggenhout)
+- Verenigingen en lokale events (Buggenhout)
+
+## Veelgevraagde zoekopdrachten in Buggenhout
+- 3D print service Buggenhout
+- rapid prototyping Buggenhout
+- 3D printing bedrijf Buggenhout
+<!-- LOCAL_ENRICH_END -->

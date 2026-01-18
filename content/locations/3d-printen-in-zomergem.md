@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Zomergem
-
 - [3D printen in Lievegem](/3d-printen-in-lievegem)
 - [3D printen in Waarschoot](/3d-printen-in-waarschoot)
 - [3D printen in Ronsele](/3d-printen-in-ronsele)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Zomergem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Zomergem
+
+- Dekking: Zomergem, Zomergem centrum, Lievegem, Waarschoot, Ronsele, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Zomergem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Lievegem](/3d-printen-in-lievegem)
+- [3D printen in Waarschoot](/3d-printen-in-waarschoot)
+- [3D printen in Ronsele](/3d-printen-in-ronsele)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Zomergem centrum.
+- Vaak gevraagd: 3D print service Zomergem; we adviseren materiaal en afwerking.
+- Leverfocus: Zomergem, Zomergem centrum, Lievegem.
+
+## Plaatsen waar we vaak leveren rond Zomergem
+- Centrum van Zomergem
+- Lokale bedrijvenzone in Zomergem
+- Sporthal in Zomergem
+
+## Sectoren die we vaak helpen in Zomergem
+- Lokale makers en ontwerpers (Zomergem)
+- Kleine series en maatwerk (Zomergem)
+- Verenigingen en scholen (Zomergem)
+
+## Veelgevraagde zoekopdrachten in Zomergem
+- 3D print service Zomergem
+- rapid prototyping Zomergem
+- 3D printing bedrijf Zomergem
+<!-- LOCAL_ENRICH_END -->

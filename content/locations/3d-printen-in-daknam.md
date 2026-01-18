@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Daknam
-
 - [3D printen in Lokeren](/3d-printen-in-lokeren)
 - [3D printen in Eksaarde](/3d-printen-in-eksaarde)
 - [3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
 - [3D printen in Hamme](/3d-printen-in-hamme)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Daknam
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Daknam
+
+- Dekking: Daknam, Daknam centrum, Lokeren, Eksaarde, Moerbeke-Waas, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Daknam.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Lokeren](/3d-printen-in-lokeren)
+- [3D printen in Eksaarde](/3d-printen-in-eksaarde)
+- [3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
+## Lokale spotlight
+- Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Daknam centrum.
+- Vaak gevraagd: 3D print service Daknam; we adviseren materiaal en afwerking.
+- Leverfocus: Daknam, Daknam centrum, Lokeren.
+
+## Plaatsen waar we vaak leveren rond Daknam
+- Centrum van Daknam
+- Lokale bedrijvenzone in Daknam
+- Sporthal in Daknam
+
+## Sectoren die we vaak helpen in Daknam
+- Lokale ondernemers en techniekers (Daknam)
+- Onderhoud en herstellingen (Daknam)
+- Verenigingen en onderwijs (Daknam)
+
+## Veelgevraagde zoekopdrachten in Daknam
+- 3D print service Daknam
+- rapid prototyping Daknam
+- 3D printing bedrijf Daknam
+<!-- LOCAL_ENRICH_END -->

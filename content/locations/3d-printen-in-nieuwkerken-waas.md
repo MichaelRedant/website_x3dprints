@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Nieuwkerken-Waas
-
 - [3D printen in Sint-Niklaas](/3d-printen-in-sint-niklaas)
 - [3D printen in Belsele](/3d-printen-in-belsele)
 - [3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
 - [3D printen in Beveren](/3d-printen-in-beveren)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Nieuwkerken-Waas
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Nieuwkerken-Waas
+
+- Dekking: Nieuwkerken-Waas, Nieuwkerken-Waas centrum, Sint-Niklaas, Belsele, Sinaai, Sint-Gillis-Waas; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Nieuwkerken-Waas.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Sint-Niklaas](/3d-printen-in-sint-niklaas)
+- [3D printen in Belsele](/3d-printen-in-belsele)
+- [3D printen in Sinaai](/3d-printen-in-sinaai)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Nieuwkerken-Waas centrum.
+- Vaak gevraagd: 3D print service Nieuwkerken-Waas; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Nieuwkerken-Waas en Nieuwkerken-Waas centrum.
+
+## Locaties die we bedienen nabij Nieuwkerken-Waas
+- Centrum van Nieuwkerken-Waas
+- Lokale bedrijvenzone in Nieuwkerken-Waas
+- Sporthal in Nieuwkerken-Waas
+
+## Sectorfocus nabij Nieuwkerken-Waas
+- Lokale makers en ontwerpers (Nieuwkerken-Waas)
+- Kleine series en maatwerk (Nieuwkerken-Waas)
+- Verenigingen en onderwijs (Nieuwkerken-Waas)
+
+## Typische aanvragen rond Nieuwkerken-Waas
+- 3D print service Nieuwkerken-Waas
+- rapid prototyping Nieuwkerken-Waas
+- 3D printing bedrijf Nieuwkerken-Waas
+<!-- LOCAL_ENRICH_END -->

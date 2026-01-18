@@ -96,3 +96,34 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 **Kunnen jullie ook kleine series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Edegem
+
+- Dekking: Edegem; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Edegem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Gent](/3d-printen-in-gent)
+## Spotlight rond Edegem
+- Lokale teams in Edegem: behuizingen en pasmallen voor teams in Edegem.
+- Terugkerende order: 3D print service Edegem; we bewaren je instellingen.
+- Leverfocus: Edegem.
+
+## Landmarks in de buurt van Edegem
+- Centrum van Edegem
+- Lokale bedrijvenzone in Edegem
+- Sporthal in Edegem
+
+## Teams die we ondersteunen rond Edegem
+- KMO's en makers in Edegem: pasmallen en behuizingen.
+- Retail/events rond Edegem: displays en props.
+- Onderwijs/labs in Edegem: lesklare prints.
+
+## Wat vaak wordt gevraagd in Edegem
+- 3D print service Edegem
+- rapid prototyping Edegem
+- 3D printing bedrijf Edegem
+<!-- LOCAL_ENRICH_END -->

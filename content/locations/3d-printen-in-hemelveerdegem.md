@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Hemelveerdegem
-
 - [3D printen in Lierde](/3d-printen-in-lierde)
 - [3D printen in Deftinge](/3d-printen-in-deftinge)
 - [3D printen in Sint-Maria-Lierde](/3d-printen-in-sint-maria-lierde)
 - [3D printen in Geraardsbergen](/3d-printen-in-geraardsbergen)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Hemelveerdegem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Hemelveerdegem
+
+- Dekking: Hemelveerdegem, Hemelveerdegem centrum, Lierde, Deftinge, Sint-Maria-Lierde, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Hemelveerdegem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Lierde](/3d-printen-in-lierde)
+- [3D printen in Deftinge](/3d-printen-in-deftinge)
+- [3D printen in Sint-Maria-Lierde](/3d-printen-in-sint-maria-lierde)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Hemelveerdegem centrum.
+- Vaak gevraagd: 3D print service Hemelveerdegem; we adviseren materiaal en afwerking.
+- Leverfocus: Hemelveerdegem, Hemelveerdegem centrum, Lierde.
+
+## Plaatsen waar we vaak leveren rond Hemelveerdegem
+- Centrum van Hemelveerdegem
+- Lokale bedrijvenzone in Hemelveerdegem
+- Sporthal in Hemelveerdegem
+
+## Sectoren die we vaak helpen in Hemelveerdegem
+- Lokale makers en ontwerpers (Hemelveerdegem)
+- Onderhoud en herstellingen (Hemelveerdegem)
+- Verenigingen en onderwijs (Hemelveerdegem)
+
+## Veelgevraagde zoekopdrachten in Hemelveerdegem
+- 3D print service Hemelveerdegem
+- rapid prototyping Hemelveerdegem
+- 3D printing bedrijf Hemelveerdegem
+<!-- LOCAL_ENRICH_END -->

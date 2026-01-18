@@ -97,10 +97,8 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Donkmeer of af
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Berlare
-
 - [3D printen in Berlare](/3d-printen-in-berlare)
 - [3D printen in Uitbergen](/3d-printen-in-uitbergen)
-
 ---
 
 ## Externe links
@@ -113,3 +111,35 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 ## Offerte voor 3D printen in Overmere
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Overmere
+
+- Dekking: Overmere, Overmere centrum, Donkmeer, Berlare, Uitbergen, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Overmere.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Berlare](/3d-printen-in-berlare)
+- [3D printen in Uitbergen](/3d-printen-in-uitbergen)
+## Klantenspotlight
+- Lokale ondernemers en techniekers: kleine reeksen met vaste settings rond Overmere centrum.
+- Vaak gevraagd: 3D print service Overmere; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Overmere en Overmere centrum.
+
+## Locaties die we bedienen nabij Overmere
+- Centrum van Overmere
+- Lokale bedrijvenzone in Overmere
+- Sporthal in Overmere
+
+## Sectorfocus nabij Overmere
+- Lokale ondernemers en techniekers (Overmere)
+- Toerisme en horeca rond Donkmeer (Overmere)
+- Makers en verenigingen (Overmere)
+
+## Typische aanvragen rond Overmere
+- 3D print service Overmere
+- rapid prototyping Overmere
+- 3D printing bedrijf Overmere
+<!-- LOCAL_ENRICH_END -->

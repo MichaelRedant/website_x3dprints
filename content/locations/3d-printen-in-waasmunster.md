@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Waasmunster
-
 - [3D printen in Sombeke](/3d-printen-in-sombeke)
 - [3D printen in Hamme](/3d-printen-in-hamme)
 - [3D printen in Lokeren](/3d-printen-in-lokeren)
 - [3D printen in Temse](/3d-printen-in-temse)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Waasmunster
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Waasmunster
+
+- Dekking: Waasmunster, Waasmunster centrum, Sombeke, Hamme, Lokeren, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Waasmunster.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Sombeke](/3d-printen-in-sombeke)
+- [3D printen in Hamme](/3d-printen-in-hamme)
+- [3D printen in Lokeren](/3d-printen-in-lokeren)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Waasmunster centrum.
+- Vaak gevraagd: 3D print service Waasmunster; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Waasmunster en Waasmunster centrum.
+
+## Locaties die we bedienen nabij Waasmunster
+- Centrum van Waasmunster
+- Lokale bedrijvenzone in Waasmunster
+- Sporthal in Waasmunster
+
+## Sectorfocus nabij Waasmunster
+- Lokale makers en ontwerpers (Waasmunster)
+- KMO's en herstellingen langs de Durme (Waasmunster)
+- Verenigingen en onderwijs (Waasmunster)
+
+## Typische aanvragen rond Waasmunster
+- 3D print service Waasmunster
+- rapid prototyping Waasmunster
+- 3D printing bedrijf Waasmunster
+<!-- LOCAL_ENRICH_END -->

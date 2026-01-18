@@ -96,12 +96,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Melsen
-
 - [3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [3D printen in Schelderode](/3d-printen-in-schelderode)
 - [3D printen in Munte](/3d-printen-in-munte)
-
 ---
 
 ## Externe links
@@ -114,4 +112,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Melsen
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Melsen
+
+- Dekking: Melsen, Melsen centrum, Merelbeke, Munte, Schelderode, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Melsen.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [3D printen in Munte](/3d-printen-in-munte)
+- [3D printen in Schelderode](/3d-printen-in-schelderode)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Melsen centrum.
+- Vaak gevraagd: 3D print service Melsen; we adviseren materiaal en afwerking.
+- Leverfocus: Melsen, Melsen centrum, Merelbeke.
+
+## Plaatsen waar we vaak leveren rond Melsen
+- Centrum van Melsen
+- Lokale bedrijvenzone in Melsen
+- Sporthal in Melsen
+
+## Sectoren die we vaak helpen in Melsen
+- Lokale makers en ontwerpers (Melsen)
+- Kleine series en maatwerk (Melsen)
+- Verenigingen en onderwijs (Melsen)
+
+## Veelgevraagde zoekopdrachten in Melsen
+- 3D print service Melsen
+- rapid prototyping Melsen
+- 3D printing bedrijf Melsen
+<!-- LOCAL_ENRICH_END -->

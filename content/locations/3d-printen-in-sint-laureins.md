@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Laureins 
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Sint-Laureins
-
 - [3D printen in Sint-Jan-in-Eremo](/3d-printen-in-sint-jan-in-eremo)
 - [3D printen in Sint-Margriete](/3d-printen-in-sint-margriete)
 - [3D printen in Watervliet](/3d-printen-in-watervliet)
 - [3D printen in Waterland-Oudeman](/3d-printen-in-waterland-oudeman)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Sint-Laureins
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Sint-Laureins
+
+- Dekking: Sint-Laureins, Sint-Laureins centrum, Sint-Jan-in-Eremo, Sint-Margriete, Watervliet, Waterland-Oudeman; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Laureins.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Sint-Jan-in-Eremo](/3d-printen-in-sint-jan-in-eremo)
+- [3D printen in Sint-Margriete](/3d-printen-in-sint-margriete)
+- [3D printen in Watervliet](/3d-printen-in-watervliet)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Sint-Laureins centrum.
+- Vaak gevraagd: 3D print service Sint-Laureins; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Sint-Laureins en Sint-Laureins centrum.
+
+## Locaties die we bedienen nabij Sint-Laureins
+- Centrum van Sint-Laureins
+- Lokale bedrijvenzone in Sint-Laureins
+- Sporthal in Sint-Laureins
+
+## Sectorfocus nabij Sint-Laureins
+- Lokale makers en ontwerpers (Sint-Laureins)
+- Landelijke KMO's en herstellingen (Sint-Laureins)
+- Verenigingen en onderwijs (Sint-Laureins)
+
+## Typische aanvragen rond Sint-Laureins
+- 3D print service Sint-Laureins
+- rapid prototyping Sint-Laureins
+- 3D printing bedrijf Sint-Laureins
+<!-- LOCAL_ENRICH_END -->

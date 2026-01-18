@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Lemberge of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Lemberge
-
 - [3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [3D printen in Bottelare](/3d-printen-in-bottelare)
 - [3D printen in Munte](/3d-printen-in-munte)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Lemberge of af
 
 ## Offerte voor 3D printen in Lemberge
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Lemberge
+
+- Dekking: Lemberge, Lemberge centrum, Merelbeke, Bottelare, Munte, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Lemberge.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [3D printen in Bottelare](/3d-printen-in-bottelare)
+- [3D printen in Munte](/3d-printen-in-munte)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Lemberge centrum.
+- Vaak gevraagd: 3D print service Lemberge; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Lemberge en Lemberge centrum.
+
+## Locaties die we bedienen nabij Lemberge
+- Centrum van Lemberge
+- Lokale bedrijvenzone in Lemberge
+- Sporthal in Lemberge
+
+## Sectorfocus nabij Lemberge
+- Lokale makers en ontwerpers (Lemberge)
+- Kleine series en maatwerk (Lemberge)
+- Verenigingen en onderwijs (Lemberge)
+
+## Typische aanvragen rond Lemberge
+- 3D print service Lemberge
+- rapid prototyping Lemberge
+- 3D printing bedrijf Lemberge
+<!-- LOCAL_ENRICH_END -->

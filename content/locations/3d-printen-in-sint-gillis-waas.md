@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Gillis-Waas of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Sint-Gillis-Waas
-
 - [3D printen in De Klinge](/3d-printen-in-de-klinge)
 - [3D printen in Meerdonk](/3d-printen-in-meerdonk)
 - [3D printen in Sint-Pauwels](/3d-printen-in-sint-pauwels)
 - [3D printen in Beveren](/3d-printen-in-beveren)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Gillis-Wa
 
 ## Offerte voor 3D printen in Sint-Gillis-Waas
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Sint-Gillis-Waas
+
+- Dekking: Sint-Gillis-Waas, Sint-Gillis-Waas centrum, De Klinge, Meerdonk, Sint-Pauwels, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Gillis-Waas.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in De Klinge](/3d-printen-in-de-klinge)
+- [3D printen in Meerdonk](/3d-printen-in-meerdonk)
+- [3D printen in Sint-Pauwels](/3d-printen-in-sint-pauwels)
+## Spotlight rond Sint-Gillis-Waas
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Sint-Gillis-Waas centrum.
+- Terugkerende order: 3D print service Sint-Gillis-Waas; we bewaren je instellingen.
+- Leverfocus: Sint-Gillis-Waas, Sint-Gillis-Waas centrum, De Klinge.
+
+## Landmarks in de buurt van Sint-Gillis-Waas
+- Centrum van Sint-Gillis-Waas
+- Lokale bedrijvenzone in Sint-Gillis-Waas
+- Sporthal in Sint-Gillis-Waas
+
+## Teams die we ondersteunen rond Sint-Gillis-Waas
+- Lokale makers en ontwerpers (Sint-Gillis-Waas)
+- Landelijke KMO's en herstellingen (Sint-Gillis-Waas)
+- Verenigingen en onderwijs (Sint-Gillis-Waas)
+
+## Wat vaak wordt gevraagd in Sint-Gillis-Waas
+- 3D print service Sint-Gillis-Waas
+- rapid prototyping Sint-Gillis-Waas
+- 3D printing bedrijf Sint-Gillis-Waas
+<!-- LOCAL_ENRICH_END -->

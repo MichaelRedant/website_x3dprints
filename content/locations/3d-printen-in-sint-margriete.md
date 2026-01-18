@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Margriete
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Sint-Margriete
-
 - [3D printen in Sint-Laureins](/3d-printen-in-sint-laureins)
 - [3D printen in Watervliet](/3d-printen-in-watervliet)
 - [3D printen in Waterland-Oudeman](/3d-printen-in-waterland-oudeman)
 - [3D printen in Assenede](/3d-printen-in-assenede)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Sint-Margriete
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Sint-Margriete
+
+- Dekking: Sint-Margriete, Sint-Margriete centrum, Sint-Laureins, Sint-Jan-in-Eremo, Watervliet, Waterland-Oudeman; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Margriete.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Sint-Laureins](/3d-printen-in-sint-laureins)
+- [3D printen in Sint-Jan-in-Eremo](/3d-printen-in-sint-jan-in-eremo)
+- [3D printen in Watervliet](/3d-printen-in-watervliet)
+## Spotlight rond Sint-Margriete
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Sint-Margriete centrum.
+- Terugkerende order: 3D print service Sint-Margriete; we bewaren je instellingen.
+- Leverfocus: Sint-Margriete, Sint-Margriete centrum, Sint-Laureins.
+
+## Landmarks in de buurt van Sint-Margriete
+- Centrum van Sint-Margriete
+- Lokale bedrijvenzone in Sint-Margriete
+- Sporthal in Sint-Margriete
+
+## Teams die we ondersteunen rond Sint-Margriete
+- Lokale makers en ontwerpers (Sint-Margriete)
+- Landelijke KMO's en herstellingen (Sint-Margriete)
+- Verenigingen en onderwijs (Sint-Margriete)
+
+## Wat vaak wordt gevraagd in Sint-Margriete
+- 3D print service Sint-Margriete
+- rapid prototyping Sint-Margriete
+- 3D printing bedrijf Sint-Margriete
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Burreken of af
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Maarkedal
-
 - [3D printen in Etikhove](/3d-printen-in-etikhove)
 - [3D printen in Maarke-Kerkem](/3d-printen-in-maarke-kerkem)
 - [3D printen in Nukerke](/3d-printen-in-nukerke)
 - [3D printen in Schorisse](/3d-printen-in-schorisse)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Maarkedal
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Maarkedal
+
+- Dekking: Maarkedal, Maarkedal centrum, Etikhove, Maarke-Kerkem, Nukerke, Schorisse; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Maarkedal.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Etikhove](/3d-printen-in-etikhove)
+- [3D printen in Maarke-Kerkem](/3d-printen-in-maarke-kerkem)
+- [3D printen in Nukerke](/3d-printen-in-nukerke)
+## Lokale spotlight
+- Makers en ontwerpers in de Vlaamse Ardennen: PLA/PETG onderdelen afgestemd op projecten rond Maarkedal centrum.
+- Vaak gevraagd: 3D print service Maarkedal; we adviseren materiaal en afwerking.
+- Leverfocus: Maarkedal, Maarkedal centrum, Etikhove.
+
+## Plaatsen waar we vaak leveren rond Maarkedal
+- Centrum van Maarkedal
+- Lokale bedrijvenzone in Maarkedal
+- Sporthal in Maarkedal
+
+## Sectoren die we vaak helpen in Maarkedal
+- Makers en ontwerpers in de Vlaamse Ardennen (Maarkedal)
+- Landelijke KMO's en herstellingen (Maarkedal)
+- Verenigingen en onderwijs (Maarkedal)
+
+## Veelgevraagde zoekopdrachten in Maarkedal
+- 3D print service Maarkedal
+- rapid prototyping Maarkedal
+- 3D printing bedrijf Maarkedal
+<!-- LOCAL_ENRICH_END -->

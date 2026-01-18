@@ -96,12 +96,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Pietersbandenkerk (Welle) of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Welle
-
 - [3D printen in Denderleeuw](/3d-printen-in-denderleeuw)
 - [3D printen in Iddergem](/3d-printen-in-iddergem)
 - [3D printen in Aalst](/3d-printen-in-aalst)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
-
 ---
 
 ## Externe links
@@ -113,4 +111,36 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Pietersba
 
 ## Offerte voor 3D printen in Welle
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Welle
+
+- Dekking: Welle, Welle centrum, Denderleeuw, Iddergem, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Welle.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Denderleeuw](/3d-printen-in-denderleeuw)
+- [3D printen in Iddergem](/3d-printen-in-iddergem)
+## Spotlight rond Welle
+- KMO's en zelfstandigen: behuizingen en pasmallen voor teams in Welle centrum.
+- Terugkerende order: 3D print service Welle; we bewaren je instellingen.
+- Leverfocus: Welle, Welle centrum, Denderleeuw.
+
+## Landmarks in de buurt van Welle
+- Centrum van Welle
+- Lokale bedrijvenzone in Welle
+- Sporthal in Welle
+
+## Teams die we ondersteunen rond Welle
+- KMO's en zelfstandigen (Welle)
+- Onderwijs en makers (Welle)
+- Events en lokale handel (Welle)
+
+## Wat vaak wordt gevraagd in Welle
+- 3D print service Welle
+- rapid prototyping Welle
+- 3D printing bedrijf Welle
+<!-- LOCAL_ENRICH_END -->

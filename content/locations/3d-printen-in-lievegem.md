@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Lovendegem of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Lievegem
-
 - [3D printen in Lovendegem](/3d-printen-in-lovendegem)
 - [3D printen in Waarschoot](/3d-printen-in-waarschoot)
 - [3D printen in Zomergem](/3d-printen-in-zomergem)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Lovendegem of 
 
 ## Offerte voor 3D printen in Lievegem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Lievegem
+
+- Dekking: Lievegem, Lievegem centrum, Lovendegem, Waarschoot, Zomergem, Oostwinkel; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Lievegem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Lovendegem](/3d-printen-in-lovendegem)
+- [3D printen in Waarschoot](/3d-printen-in-waarschoot)
+- [3D printen in Zomergem](/3d-printen-in-zomergem)
+## Spotlight rond Lievegem
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Lievegem centrum.
+- Terugkerende order: 3D print service Lievegem; we bewaren je instellingen.
+- Leverfocus: Lievegem, Lievegem centrum, Lovendegem.
+
+## Landmarks in de buurt van Lievegem
+- Centrum van Lievegem
+- Lokale bedrijvenzone in Lievegem
+- Sporthal in Lievegem
+
+## Teams die we ondersteunen rond Lievegem
+- Lokale makers en ontwerpers (Lievegem)
+- Kleine series en maatwerk (Lievegem)
+- Verenigingen en onderwijs (Lievegem)
+
+## Wat vaak wordt gevraagd in Lievegem
+- 3D print service Lievegem
+- rapid prototyping Lievegem
+- 3D printing bedrijf Lievegem
+<!-- LOCAL_ENRICH_END -->

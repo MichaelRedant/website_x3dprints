@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Eksaarde
-
 - [3D printen in Lokeren](/3d-printen-in-lokeren)
 - [3D printen in Daknam](/3d-printen-in-daknam)
 - [3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
 - [3D printen in Lochristi](/3d-printen-in-lochristi)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Eksaarde
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Eksaarde
+
+- Dekking: Eksaarde, Eksaarde centrum, Lokeren, Daknam, Moerbeke-Waas, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Eksaarde.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Lokeren](/3d-printen-in-lokeren)
+- [3D printen in Daknam](/3d-printen-in-daknam)
+- [3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
+## Spotlight rond Eksaarde
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Eksaarde centrum.
+- Terugkerende order: 3D print service Eksaarde; we bewaren je instellingen.
+- Leverfocus: Eksaarde, Eksaarde centrum, Lokeren.
+
+## Landmarks in de buurt van Eksaarde
+- Centrum van Eksaarde
+- Lokale bedrijvenzone in Eksaarde
+- Sporthal in Eksaarde
+
+## Teams die we ondersteunen rond Eksaarde
+- Lokale makers en ontwerpers (Eksaarde)
+- Kleine series en maatwerk (Eksaarde)
+- Verenigingen en onderwijs (Eksaarde)
+
+## Wat vaak wordt gevraagd in Eksaarde
+- 3D print service Eksaarde
+- rapid prototyping Eksaarde
+- 3D printing bedrijf Eksaarde
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Serskamp
-
 - [3D printen in Wichelen](/3d-printen-in-wichelen)
 - [3D printen in Schellebelle](/3d-printen-in-schellebelle)
 - [3D printen in Wetteren](/3d-printen-in-wetteren)
 - [3D printen in Lede](/3d-printen-in-lede)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Serskamp
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Serskamp
+
+- Dekking: Serskamp, Serskamp centrum, Wichelen, Schellebelle, Wetteren, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Serskamp.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Wichelen](/3d-printen-in-wichelen)
+- [3D printen in Schellebelle](/3d-printen-in-schellebelle)
+- [3D printen in Wetteren](/3d-printen-in-wetteren)
+## Spotlight rond Serskamp
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Serskamp centrum.
+- Terugkerende order: 3D print service Serskamp; we bewaren je instellingen.
+- Leverfocus: Serskamp, Serskamp centrum, Wichelen.
+
+## Landmarks in de buurt van Serskamp
+- Centrum van Serskamp
+- Lokale bedrijvenzone in Serskamp
+- Sporthal in Serskamp
+
+## Teams die we ondersteunen rond Serskamp
+- Lokale makers en ontwerpers (Serskamp)
+- Kleine series en maatwerk (Serskamp)
+- Verenigingen en onderwijs (Serskamp)
+
+## Wat vaak wordt gevraagd in Serskamp
+- 3D print service Serskamp
+- rapid prototyping Serskamp
+- 3D printing bedrijf Serskamp
+<!-- LOCAL_ENRICH_END -->

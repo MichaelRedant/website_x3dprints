@@ -97,13 +97,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Heilig-Kruiske
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Aalter
-
 - [3D printen in Aalter](/3d-printen-in-aalter)
-- [3D printen in Bellem](/3d-printen-in-bellem)
 - [3D printen in Knesselare](/3d-printen-in-knesselare)
 - [3D printen in Poeke](/3d-printen-in-poeke)
 - [3D printen in Ursel](/3d-printen-in-ursel)
-
 ---
 
 ## Externe links
@@ -116,3 +113,38 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 ## Offerte voor 3D printen in Lotenhulle
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Lotenhulle
+
+- Dekking: Lotenhulle, Lotenhulle centrum, Aalter, Bellem, Knesselare, Poeke; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Lotenhulle.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Aalter](/3d-printen-in-aalter)
+- [3D printen in Knesselare](/3d-printen-in-knesselare)
+- [3D printen in Poeke](/3d-printen-in-poeke)
+- [3D printen in Ursel](/3d-printen-in-ursel)
+- [3D printen in Bellem](/3d-printen-in-bellem)
+## Lokale spotlight
+- Makers en hobbyisten: PLA/PETG onderdelen afgestemd op projecten rond Lotenhulle centrum.
+- Vaak gevraagd: 3D print service Lotenhulle; we adviseren materiaal en afwerking.
+- Leverfocus: Lotenhulle, Lotenhulle centrum, Aalter.
+
+## Plaatsen waar we vaak leveren rond Lotenhulle
+- Centrum van Lotenhulle
+- Lokale bedrijvenzone in Lotenhulle
+- Sporthal in Lotenhulle
+
+## Sectoren die we vaak helpen in Lotenhulle
+- Makers en hobbyisten (Lotenhulle)
+- Kleine ondernemingen en herstellingen (Lotenhulle)
+- Educatieve projecten en demo's (Lotenhulle)
+
+## Veelgevraagde zoekopdrachten in Lotenhulle
+- 3D print service Lotenhulle
+- rapid prototyping Lotenhulle
+- 3D printing bedrijf Lotenhulle
+<!-- LOCAL_ENRICH_END -->

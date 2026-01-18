@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Paulatem of af
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Paulatem
-
 - [3D printen in Zwalm](/3d-printen-in-zwalm)
 - [3D printen in Meilegem](/3d-printen-in-meilegem)
 - [3D printen in Sint-Maria-Latem (Zwalm)](/3d-printen-in-sint-maria-latem-zwalm)
 - [3D printen in Maarkedal](/3d-printen-in-maarkedal)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Paulatem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Paulatem
+
+- Dekking: Paulatem, Paulatem centrum, Zwalm, Nederzwalm-Hermelgem, Munkzwalm, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Paulatem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Zwalm](/3d-printen-in-zwalm)
+- [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
+- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Paulatem centrum.
+- Vaak gevraagd: 3D print service Paulatem; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Paulatem en Paulatem centrum.
+
+## Locaties die we bedienen nabij Paulatem
+- Centrum van Paulatem
+- Lokale bedrijvenzone in Paulatem
+- Sporthal in Paulatem
+
+## Sectorfocus nabij Paulatem
+- Lokale makers en ontwerpers (Paulatem)
+- Kleine series en maatwerk (Paulatem)
+- Verenigingen en onderwijs (Paulatem)
+
+## Typische aanvragen rond Paulatem
+- 3D print service Paulatem
+- rapid prototyping Paulatem
+- 3D printing bedrijf Paulatem
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sinaai of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Sinaai
-
 - [3D printen in Sint-Niklaas](/3d-printen-in-sint-niklaas)
 - [3D printen in Belsele](/3d-printen-in-belsele)
 - [3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
 - [3D printen in Lokeren](/3d-printen-in-lokeren)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sinaai of afha
 
 ## Offerte voor 3D printen in Sinaai
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Sinaai
+
+- Dekking: Sinaai, Sinaai centrum, Sint-Niklaas, Belsele, Lokeren, Sint-Gillis-Waas; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sinaai.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Sint-Niklaas](/3d-printen-in-sint-niklaas)
+- [3D printen in Belsele](/3d-printen-in-belsele)
+- [3D printen in Lokeren](/3d-printen-in-lokeren)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Sinaai centrum.
+- Vaak gevraagd: 3D print service Sinaai; we adviseren materiaal en afwerking.
+- Leverfocus: Sinaai, Sinaai centrum, Sint-Niklaas.
+
+## Plaatsen waar we vaak leveren rond Sinaai
+- Centrum van Sinaai
+- Lokale bedrijvenzone in Sinaai
+- Sporthal in Sinaai
+
+## Sectoren die we vaak helpen in Sinaai
+- Lokale makers en ontwerpers (Sinaai)
+- Kleine series en maatwerk (Sinaai)
+- Verenigingen en onderwijs (Sinaai)
+
+## Veelgevraagde zoekopdrachten in Sinaai
+- 3D print service Sinaai
+- rapid prototyping Sinaai
+- 3D printing bedrijf Sinaai
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Rozebeke (Zwalm)
-
 - [3D printen in Zwalm](/3d-printen-in-zwalm)
 - [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
 - [3D printen in Sint-Maria-Latem (Zwalm)](/3d-printen-in-sint-maria-latem-zwalm)
 - [3D printen in Maarkedal](/3d-printen-in-maarkedal)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Rozebeke (Zwalm)
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Rozebeke (Zwalm)
+
+- Dekking: Rozebeke (Zwalm), Rozebeke (Zwalm) centrum, Zwalm, Munkzwalm, Nederzwalm-Hermelgem, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Rozebeke (Zwalm).
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Zwalm](/3d-printen-in-zwalm)
+- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+- [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Rozebeke (Zwalm) centrum.
+- Vaak gevraagd: 3D print service Rozebeke Zwalm; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Rozebeke (Zwalm) en Rozebeke (Zwalm) centrum.
+
+## Locaties die we bedienen nabij Rozebeke (Zwalm)
+- Centrum van Rozebeke (Zwalm)
+- Lokale bedrijvenzone in Rozebeke (Zwalm)
+- Sporthal in Rozebeke (Zwalm)
+
+## Sectorfocus nabij Rozebeke (Zwalm)
+- Lokale makers en ontwerpers (Rozebeke (Zwalm))
+- Kleine series en maatwerk (Rozebeke (Zwalm))
+- Verenigingen en onderwijs (Rozebeke (Zwalm))
+
+## Typische aanvragen rond Rozebeke (Zwalm)
+- 3D print service Rozebeke Zwalm
+- rapid prototyping Rozebeke Zwalm
+- 3D printing bedrijf Rozebeke Zwalm
+<!-- LOCAL_ENRICH_END -->

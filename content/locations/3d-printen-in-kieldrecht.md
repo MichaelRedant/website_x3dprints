@@ -97,12 +97,9 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Michielskerk of afhalen in Herzele.
 
 ## Interne links rond 3D printen in de havenzone
-
 - [3D printen in Doel](/3d-printen-in-doel)
-- [3D printen in Verrebroek](/3d-printen-in-verrebroek)
 - [3D printen in Kallo](/3d-printen-in-kallo)
-- [3D printen in Beveren](/3d-printen-in-beveren)
-
+- [3D printen in Verrebroek](/3d-printen-in-verrebroek)
 ---
 
 ## Externe links
@@ -115,3 +112,36 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Michielsk
 ## Offerte voor 3D printen in Kieldrecht
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Kieldrecht
+
+- Dekking: Kieldrecht, Kieldrecht centrum, Doel, Verrebroek, Kallo, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kieldrecht.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Doel](/3d-printen-in-doel)
+- [3D printen in Verrebroek](/3d-printen-in-verrebroek)
+- [3D printen in Kallo](/3d-printen-in-kallo)
+## Lokale spotlight
+- Lokale KMO's en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Kieldrecht centrum.
+- Vaak gevraagd: 3D print service Kieldrecht; we adviseren materiaal en afwerking.
+- Leverfocus: Kieldrecht, Kieldrecht centrum, Doel.
+
+## Plaatsen waar we vaak leveren rond Kieldrecht
+- Centrum van Kieldrecht
+- Lokale bedrijvenzone in Kieldrecht
+- Sporthal in Kieldrecht
+
+## Sectoren die we vaak helpen in Kieldrecht
+- Lokale KMO's en techniekers (Kieldrecht)
+- Industrie rond Waaslandhaven (Kieldrecht)
+- Makers en hobbyisten (Kieldrecht)
+
+## Veelgevraagde zoekopdrachten in Kieldrecht
+- 3D print service Kieldrecht
+- rapid prototyping Kieldrecht
+- 3D printing bedrijf Kieldrecht
+<!-- LOCAL_ENRICH_END -->

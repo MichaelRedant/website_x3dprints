@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Munte of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Munte
-
 - [3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [3D printen in Bottelare](/3d-printen-in-bottelare)
 - [3D printen in Lemberge](/3d-printen-in-lemberge)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Munte of afhal
 
 ## Offerte voor 3D printen in Munte
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Munte
+
+- Dekking: Munte, Munte centrum, Merelbeke, Bottelare, Lemberge, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Munte.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [3D printen in Bottelare](/3d-printen-in-bottelare)
+- [3D printen in Lemberge](/3d-printen-in-lemberge)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Munte centrum.
+- Vaak gevraagd: 3D print service Munte; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Munte en Munte centrum.
+
+## Locaties die we bedienen nabij Munte
+- Centrum van Munte
+- Lokale bedrijvenzone in Munte
+- Sporthal in Munte
+
+## Sectorfocus nabij Munte
+- Lokale makers en ontwerpers (Munte)
+- Kleine series en maatwerk (Munte)
+- Verenigingen en onderwijs (Munte)
+
+## Typische aanvragen rond Munte
+- 3D print service Munte
+- rapid prototyping Munte
+- 3D printing bedrijf Munte
+<!-- LOCAL_ENRICH_END -->

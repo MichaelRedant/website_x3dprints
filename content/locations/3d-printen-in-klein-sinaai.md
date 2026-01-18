@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Klein-Sinaai o
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Klein-Sinaai
-
 - [3D printen in Stekene](/3d-printen-in-stekene)
 - [3D printen in Kemzeke](/3d-printen-in-kemzeke)
 - [3D printen in Houtem (Stekene)](/3d-printen-in-houtem-stekene)
 - [3D printen in Sint-Niklaas](/3d-printen-in-sint-niklaas)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Klein-Sinaai
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Klein-Sinaai
+
+- Dekking: Klein-Sinaai, Klein-Sinaai centrum, Stekene, Kemzeke, Houtem (Stekene), Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Klein-Sinaai.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Stekene](/3d-printen-in-stekene)
+- [3D printen in Kemzeke](/3d-printen-in-kemzeke)
+- [3D printen in Houtem (Stekene)](/3d-printen-in-houtem-stekene)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Klein-Sinaai centrum.
+- Vaak gevraagd: 3D print service Klein-Sinaai; we adviseren materiaal en afwerking.
+- Leverfocus: Klein-Sinaai, Klein-Sinaai centrum, Stekene.
+
+## Plaatsen waar we vaak leveren rond Klein-Sinaai
+- Centrum van Klein-Sinaai
+- Lokale bedrijvenzone in Klein-Sinaai
+- Sporthal in Klein-Sinaai
+
+## Sectoren die we vaak helpen in Klein-Sinaai
+- Lokale makers en ontwerpers (Klein-Sinaai)
+- Kleine series en maatwerk (Klein-Sinaai)
+- Verenigingen en onderwijs (Klein-Sinaai)
+
+## Veelgevraagde zoekopdrachten in Klein-Sinaai
+- 3D print service Klein-Sinaai
+- rapid prototyping Klein-Sinaai
+- 3D printing bedrijf Klein-Sinaai
+<!-- LOCAL_ENRICH_END -->

@@ -97,12 +97,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Kruibeke
-
 - [3D printen in Kruibeke](/3d-printen-in-kruibeke)
 - [3D printen in Rupelmonde](/3d-printen-in-rupelmonde)
 - [3D printen in Burcht](/3d-printen-in-burcht)
 - [3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
-
 ---
 
 ## Externe links
@@ -115,3 +113,36 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 ## Offerte voor 3D printen in Bazel
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Bazel
+
+- Dekking: Bazel, Bazel centrum, Kruibeke, Rupelmonde, Burcht, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Bazel.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Kruibeke](/3d-printen-in-kruibeke)
+- [3D printen in Rupelmonde](/3d-printen-in-rupelmonde)
+- [3D printen in Burcht](/3d-printen-in-burcht)
+## Klantenspotlight
+- Lokale ondernemers en techniekers: kleine reeksen met vaste settings rond Bazel centrum.
+- Vaak gevraagd: 3D print service Bazel; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Bazel en Bazel centrum.
+
+## Locaties die we bedienen nabij Bazel
+- Centrum van Bazel
+- Lokale bedrijvenzone in Bazel
+- Sporthal in Bazel
+
+## Sectorfocus nabij Bazel
+- Lokale ondernemers en techniekers (Bazel)
+- Makers en hobbyisten (Bazel)
+- Verenigingen en events (Bazel)
+
+## Typische aanvragen rond Bazel
+- 3D print service Bazel
+- rapid prototyping Bazel
+- 3D printing bedrijf Bazel
+<!-- LOCAL_ENRICH_END -->

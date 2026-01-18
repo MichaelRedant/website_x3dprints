@@ -600,3 +600,89 @@ body {
 :root.dark .prose a {
   color: rgb(103 232 249);   /* cyan-300-ish */
 }
+
+/* Markdown heading hierarchy for NL/EN location pages */
+@layer components {
+  .prose.prose-x3d h1,
+  .prose.prose-x3d h2,
+  .prose.prose-x3d h3 {
+    background-image: none;
+    color: #0f172a;
+    text-shadow: none;
+  }
+  .prose.prose-x3d h2 {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-top: 2.75rem;
+    margin-bottom: 0.85rem;
+    font-size: clamp(1.55rem, 2.4vw, 2.2rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .prose.prose-x3d h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.82em;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 9999px;
+    background: linear-gradient(120deg, #22c55e, #0ea5e9);
+    box-shadow:
+      0 0 0 8px rgba(14, 165, 233, 0.12),
+      0 4px 18px rgba(14, 165, 233, 0.18);
+  }
+  .prose.prose-x3d h3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.9rem;
+    margin-bottom: 0.35rem;
+    padding: 0.2rem 0.75rem;
+    font-size: clamp(1.1rem, 1.7vw, 1.35rem);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(14, 165, 233, 0.12), rgba(34, 197, 94, 0.12));
+    color: #0f172a;
+  }
+  .prose.prose-x3d h3::before {
+    content: "";
+    display: inline-block;
+    width: 1.25rem;
+    height: 2px;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #0ea5e9, #22c55e);
+  }
+  .prose.prose-x3d h4 {
+    margin-top: 1.35rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.98rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #475569;
+  }
+  .prose.prose-x3d p + h2,
+  .prose.prose-x3d ul + h2,
+  .prose.prose-x3d ol + h2 {
+    margin-top: 3rem;
+  }
+}
+:root.dark .prose.prose-x3d h1,
+:root.dark .prose.prose-x3d h2,
+:root.dark .prose.prose-x3d h3 {
+  color: #e2e8f0;
+}
+:root.dark .prose.prose-x3d h2::before {
+  box-shadow:
+    0 0 0 8px rgba(59, 130, 246, 0.2),
+    0 4px 18px rgba(59, 130, 246, 0.25);
+  background: linear-gradient(120deg, #22d3ee, #34d399);
+}
+:root.dark .prose.prose-x3d h3 {
+  background: linear-gradient(90deg, rgba(34, 197, 94, 0.2), rgba(6, 182, 212, 0.22));
+  color: #e2e8f0;
+}
+:root.dark .prose.prose-x3d h4 {
+  color: #cbd5e1;
+}

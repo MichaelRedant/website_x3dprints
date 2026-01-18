@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Kasteel Ter Weiden of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Kalken
-
 - [3D printen in Laarne](/3d-printen-in-laarne)
 - [3D printen in Wetteren](/3d-printen-in-wetteren)
 - [3D printen in Destelbergen](/3d-printen-in-destelbergen)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Kasteel Ter We
 
 ## Offerte voor 3D printen in Kalken
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Kalken
+
+- Dekking: Kalken, Kalken centrum, Laarne, Wetteren, Destelbergen, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kalken.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Laarne](/3d-printen-in-laarne)
+- [3D printen in Wetteren](/3d-printen-in-wetteren)
+- [3D printen in Destelbergen](/3d-printen-in-destelbergen)
+## Spotlight rond Kalken
+- Lokale makers en techniekers: behuizingen en pasmallen voor teams in Kalken centrum.
+- Terugkerende order: 3D print service Kalken; we bewaren je instellingen.
+- Leverfocus: Kalken, Kalken centrum, Laarne.
+
+## Landmarks in de buurt van Kalken
+- Centrum van Kalken
+- Lokale bedrijvenzone in Kalken
+- Sporthal in Kalken
+
+## Teams die we ondersteunen rond Kalken
+- Lokale makers en techniekers (Kalken)
+- Kleine series en maatwerk (Kalken)
+- Verenigingen en scholen (Kalken)
+
+## Wat vaak wordt gevraagd in Kalken
+- 3D print service Kalken
+- rapid prototyping Kalken
+- 3D printing bedrijf Kalken
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Zulte
-
 - [3D printen in Machelen (Zulte)](/3d-printen-in-machelen-zulte)
 - [3D printen in Olsene](/3d-printen-in-olsene)
 - [3D printen in Astene](/3d-printen-in-astene)
 - [3D printen in Deinze](/3d-printen-in-deinze)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Zulte
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Zulte
+
+- Dekking: Zulte, Zulte centrum, Machelen (Zulte), Olsene, Astene, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Zulte.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Machelen (Zulte)](/3d-printen-in-machelen-zulte)
+- [3D printen in Olsene](/3d-printen-in-olsene)
+- [3D printen in Astene](/3d-printen-in-astene)
+## Spotlight rond Zulte
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Zulte centrum.
+- Terugkerende order: 3D print service Zulte; we bewaren je instellingen.
+- Leverfocus: Zulte, Zulte centrum, Machelen (Zulte).
+
+## Landmarks in de buurt van Zulte
+- Centrum van Zulte
+- Lokale bedrijvenzone in Zulte
+- Sporthal in Zulte
+
+## Teams die we ondersteunen rond Zulte
+- Lokale makers en ontwerpers (Zulte)
+- KMO's en herstellingen langs de Leie (Zulte)
+- Verenigingen en onderwijs (Zulte)
+
+## Wat vaak wordt gevraagd in Zulte
+- 3D print service Zulte
+- rapid prototyping Zulte
+- 3D printing bedrijf Zulte
+<!-- LOCAL_ENRICH_END -->

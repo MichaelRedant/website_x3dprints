@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Ertvelde of af
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Evergem
-
 - [3D printen in Ertvelde](/3d-printen-in-ertvelde)
 - [3D printen in Sleidinge](/3d-printen-in-sleidinge)
 - [3D printen in Kluizen](/3d-printen-in-kluizen)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Evergem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Evergem
+
+- Dekking: Evergem, Evergem centrum, Ertvelde, Sleidinge, Kluizen, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Evergem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Ertvelde](/3d-printen-in-ertvelde)
+- [3D printen in Sleidinge](/3d-printen-in-sleidinge)
+- [3D printen in Kluizen](/3d-printen-in-kluizen)
+## Lokale spotlight
+- KMO's en techniekers rond de kanaalzone: PLA/PETG onderdelen afgestemd op projecten rond Evergem centrum.
+- Vaak gevraagd: 3D print service Evergem; we adviseren materiaal en afwerking.
+- Leverfocus: Evergem, Evergem centrum, Ertvelde.
+
+## Plaatsen waar we vaak leveren rond Evergem
+- Centrum van Evergem
+- Lokale bedrijvenzone in Evergem
+- Sporthal in Evergem
+
+## Sectoren die we vaak helpen in Evergem
+- KMO's en techniekers rond de kanaalzone (Evergem)
+- Retail en lokale handel (Evergem)
+- Onderwijs en makers (Evergem)
+
+## Veelgevraagde zoekopdrachten in Evergem
+- 3D print service Evergem
+- rapid prototyping Evergem
+- 3D printing bedrijf Evergem
+<!-- LOCAL_ENRICH_END -->

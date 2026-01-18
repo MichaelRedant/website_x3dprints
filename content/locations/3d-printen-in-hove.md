@@ -96,3 +96,34 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 **Hoe snel is de doorlooptijd?**
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Hove
+
+- Dekking: Hove; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Hove.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Lokale spotlight
+- Lokale teams in Hove: PLA/PETG onderdelen afgestemd op projecten rond Hove.
+- Vaak gevraagd: 3D print service Hove; we adviseren materiaal en afwerking.
+- Leverfocus: Hove.
+
+## Plaatsen waar we vaak leveren rond Hove
+- Centrum van Hove
+- Lokale bedrijvenzone in Hove
+- Sporthal in Hove
+
+## Sectoren die we vaak helpen in Hove
+- KMO's en makers in Hove: pasmallen en behuizingen.
+- Retail/events rond Hove: displays en props.
+- Onderwijs/labs in Hove: lesklare prints.
+
+## Veelgevraagde zoekopdrachten in Hove
+- 3D print service Hove
+- rapid prototyping Hove
+- 3D printing bedrijf Hove
+<!-- LOCAL_ENRICH_END -->

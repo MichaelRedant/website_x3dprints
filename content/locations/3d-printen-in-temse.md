@@ -96,12 +96,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Temse
-
 - [3D printen in Tielrode](/3d-printen-in-tielrode)
 - [3D printen in Elversele](/3d-printen-in-elversele)
 - [3D printen in Steendorp](/3d-printen-in-steendorp)
 - [3D printen in Hamme](/3d-printen-in-hamme)
-
 ---
 
 ## Externe links
@@ -114,4 +112,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Temse
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Temse
+
+- Dekking: Temse, Temse centrum, Tielrode, Elversele, Steendorp, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Temse.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Tielrode](/3d-printen-in-tielrode)
+- [3D printen in Elversele](/3d-printen-in-elversele)
+- [3D printen in Steendorp](/3d-printen-in-steendorp)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Temse centrum.
+- Vaak gevraagd: 3D print service Temse; we adviseren materiaal en afwerking.
+- Leverfocus: Temse, Temse centrum, Tielrode.
+
+## Plaatsen waar we vaak leveren rond Temse
+- Centrum van Temse
+- Lokale bedrijvenzone in Temse
+- Sporthal in Temse
+
+## Sectoren die we vaak helpen in Temse
+- Lokale makers en ontwerpers (Temse)
+- KMO's en herstellingen langs de Schelde (Temse)
+- Verenigingen en onderwijs (Temse)
+
+## Veelgevraagde zoekopdrachten in Temse
+- 3D print service Temse
+- rapid prototyping Temse
+- 3D printing bedrijf Temse
+<!-- LOCAL_ENRICH_END -->

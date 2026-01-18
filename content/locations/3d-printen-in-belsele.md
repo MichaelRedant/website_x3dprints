@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Belsele
-
 - [3D printen in Sint-Niklaas](/3d-printen-in-sint-niklaas)
 - [3D printen in Nieuwkerken-Waas](/3d-printen-in-nieuwkerken-waas)
 - [3D printen in Sinaai](/3d-printen-in-sinaai)
 - [3D printen in Beveren](/3d-printen-in-beveren)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Belsele
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Belsele
+
+- Dekking: Belsele, Belsele centrum, Sint-Niklaas, Nieuwkerken-Waas, Sinaai, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Belsele.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Sint-Niklaas](/3d-printen-in-sint-niklaas)
+- [3D printen in Nieuwkerken-Waas](/3d-printen-in-nieuwkerken-waas)
+- [3D printen in Sinaai](/3d-printen-in-sinaai)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Belsele centrum.
+- Vaak gevraagd: 3D print service Belsele; we adviseren materiaal en afwerking.
+- Leverfocus: Belsele, Belsele centrum, Sint-Niklaas.
+
+## Plaatsen waar we vaak leveren rond Belsele
+- Centrum van Belsele
+- Lokale bedrijvenzone in Belsele
+- Sporthal in Belsele
+
+## Sectoren die we vaak helpen in Belsele
+- Lokale makers en ontwerpers (Belsele)
+- Kleine series en maatwerk (Belsele)
+- Verenigingen en onderwijs (Belsele)
+
+## Veelgevraagde zoekopdrachten in Belsele
+- 3D print service Belsele
+- rapid prototyping Belsele
+- 3D printing bedrijf Belsele
+<!-- LOCAL_ENRICH_END -->

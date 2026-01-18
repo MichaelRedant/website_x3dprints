@@ -97,11 +97,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Assenede
-
 - [3D printen in Assenede](/3d-printen-in-assenede)
-- [3D printen in Bassevelde](/3d-printen-in-bassevelde)
 - [3D printen in Boekhoute](/3d-printen-in-boekhoute)
-
 ---
 
 ## Externe links
@@ -114,3 +111,36 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 ## Offerte voor 3D printen in Oosteeklo
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Oosteeklo
+
+- Dekking: Oosteeklo, Oosteeklo centrum, Assenede, Bassevelde, Boekhoute, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Oosteeklo.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Assenede](/3d-printen-in-assenede)
+- [3D printen in Boekhoute](/3d-printen-in-boekhoute)
+- [3D printen in Bassevelde](/3d-printen-in-bassevelde)
+## Spotlight rond Oosteeklo
+- Lokale ondernemers en techniekers: behuizingen en pasmallen voor teams in Oosteeklo centrum.
+- Terugkerende order: 3D print service Oosteeklo; we bewaren je instellingen.
+- Leverfocus: Oosteeklo, Oosteeklo centrum, Assenede.
+
+## Landmarks in de buurt van Oosteeklo
+- Centrum van Oosteeklo
+- Lokale bedrijvenzone in Oosteeklo
+- Sporthal in Oosteeklo
+
+## Teams die we ondersteunen rond Oosteeklo
+- Lokale ondernemers en techniekers (Oosteeklo)
+- Educatieve en creatieve projecten (Oosteeklo)
+- Makers en hobbyisten (Oosteeklo)
+
+## Wat vaak wordt gevraagd in Oosteeklo
+- 3D print service Oosteeklo
+- rapid prototyping Oosteeklo
+- 3D printing bedrijf Oosteeklo
+<!-- LOCAL_ENRICH_END -->

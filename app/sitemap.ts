@@ -2,6 +2,7 @@
 import type { MetadataRoute } from "next"
 import { SITE } from "@/lib/seo"
 import { getAllLocationSlugs } from "@/lib/locations"
+import { getEnglishLocationSlugs } from "@/lib/locations"
 import { MATERIAL_DETAIL_SLUGS } from "@/content/material-details"
 
 const BASE_URL = SITE.url.replace(/\/+$/, "") // https://www.x3dprints.be
@@ -46,6 +47,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/faq",               changeFrequency: "monthly" as const, priority: 0.6 },
     { path: "/en/faq",            changeFrequency: "monthly" as const, priority: 0.6 },
     { path: "/locaties",          changeFrequency: "monthly" as const, priority: 0.6 },
+    { path: "/en/locaties",       changeFrequency: "monthly" as const, priority: 0.6 },
     { path: "/privacy",           changeFrequency: "yearly" as const, priority: 0.4 },
     { path: "/en/privacy",        changeFrequency: "yearly" as const, priority: 0.4 },
     { path: "/cookies",           changeFrequency: "yearly" as const, priority: 0.4 },
@@ -220,6 +222,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }))
 
+  const enLocationRoutes = getEnglishLocationSlugs().map((slug) => ({
+    url: `${BASE_URL}/en/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }))
+
   return [
     ...staticRoutes,
     ...blogRoutes,
@@ -228,5 +237,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...materialDetailRoutes,
     ...enMaterialDetailRoutes,
     ...locationRoutes,
+    ...enLocationRoutes,
   ]
 }

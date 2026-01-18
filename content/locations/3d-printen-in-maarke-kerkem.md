@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Maarke-Kerkem
-
 - [3D printen in Maarkedal](/3d-printen-in-maarkedal)
 - [3D printen in Nukerke](/3d-printen-in-nukerke)
 - [3D printen in Horebeke](/3d-printen-in-horebeke)
 - [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Maarke-Kerkem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Maarke-Kerkem
+
+- Dekking: Maarke-Kerkem, Maarke-Kerkem centrum, Maarkedal, Etikhove, Nukerke, Schorisse; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Maarke-Kerkem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Maarkedal](/3d-printen-in-maarkedal)
+- [3D printen in Etikhove](/3d-printen-in-etikhove)
+- [3D printen in Nukerke](/3d-printen-in-nukerke)
+## Spotlight rond Maarke-Kerkem
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Maarke-Kerkem centrum.
+- Terugkerende order: 3D print service Maarke-Kerkem; we bewaren je instellingen.
+- Leverfocus: Maarke-Kerkem, Maarke-Kerkem centrum, Maarkedal.
+
+## Landmarks in de buurt van Maarke-Kerkem
+- Centrum van Maarke-Kerkem
+- Lokale bedrijvenzone in Maarke-Kerkem
+- Sporthal in Maarke-Kerkem
+
+## Teams die we ondersteunen rond Maarke-Kerkem
+- Lokale makers en ontwerpers (Maarke-Kerkem)
+- Landelijke KMO's en herstellingen (Maarke-Kerkem)
+- Verenigingen en onderwijs (Maarke-Kerkem)
+
+## Wat vaak wordt gevraagd in Maarke-Kerkem
+- 3D print service Maarke-Kerkem
+- rapid prototyping Maarke-Kerkem
+- 3D printing bedrijf Maarke-Kerkem
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Watervliet
-
 - [3D printen in Sint-Laureins](/3d-printen-in-sint-laureins)
 - [3D printen in Sint-Margriete](/3d-printen-in-sint-margriete)
 - [3D printen in Waterland-Oudeman](/3d-printen-in-waterland-oudeman)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Watervliet
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Watervliet
+
+- Dekking: Watervliet, Watervliet centrum, Sint-Laureins, Sint-Margriete, Waterland-Oudeman, Sint-Jan-in-Eremo; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Watervliet.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Sint-Laureins](/3d-printen-in-sint-laureins)
+- [3D printen in Sint-Margriete](/3d-printen-in-sint-margriete)
+- [3D printen in Waterland-Oudeman](/3d-printen-in-waterland-oudeman)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Watervliet centrum.
+- Vaak gevraagd: 3D print service Watervliet; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Watervliet en Watervliet centrum.
+
+## Locaties die we bedienen nabij Watervliet
+- Centrum van Watervliet
+- Lokale bedrijvenzone in Watervliet
+- Sporthal in Watervliet
+
+## Sectorfocus nabij Watervliet
+- Lokale makers en ontwerpers (Watervliet)
+- Landelijke KMO's en herstellingen (Watervliet)
+- Verenigingen en onderwijs (Watervliet)
+
+## Typische aanvragen rond Watervliet
+- 3D print service Watervliet
+- rapid prototyping Watervliet
+- 3D printing bedrijf Watervliet
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Machelen (Zulte)
-
 - [3D printen in Zulte](/3d-printen-in-zulte)
 - [3D printen in Olsene](/3d-printen-in-olsene)
 - [3D printen in Astene](/3d-printen-in-astene)
 - [3D printen in Deinze](/3d-printen-in-deinze)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Machelen (Zulte)
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Machelen (Zulte)
+
+- Dekking: Machelen (Zulte), Machelen (Zulte) centrum, Zulte, Olsene, Astene, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Machelen (Zulte).
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Zulte](/3d-printen-in-zulte)
+- [3D printen in Olsene](/3d-printen-in-olsene)
+- [3D printen in Astene](/3d-printen-in-astene)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Machelen (Zulte) centrum.
+- Vaak gevraagd: 3D print service Machelen Zulte; we adviseren materiaal en afwerking.
+- Leverfocus: Machelen (Zulte), Machelen (Zulte) centrum, Zulte.
+
+## Plaatsen waar we vaak leveren rond Machelen (Zulte)
+- Centrum van Machelen (Zulte)
+- Lokale bedrijvenzone in Machelen (Zulte)
+- Sporthal in Machelen (Zulte)
+
+## Sectoren die we vaak helpen in Machelen (Zulte)
+- Lokale makers en ontwerpers (Machelen (Zulte))
+- Kleine series en maatwerk (Machelen (Zulte))
+- Verenigingen en onderwijs (Machelen (Zulte))
+
+## Veelgevraagde zoekopdrachten in Machelen (Zulte)
+- 3D print service Machelen Zulte
+- rapid prototyping Machelen Zulte
+- 3D printing bedrijf Machelen Zulte
+<!-- LOCAL_ENRICH_END -->

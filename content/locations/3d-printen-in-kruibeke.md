@@ -97,12 +97,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Kruibeke
-
 - [3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
 - [3D printen in Bazel](/3d-printen-in-bazel)
 - [3D printen in Rupelmonde](/3d-printen-in-rupelmonde)
 - [3D printen in Burcht](/3d-printen-in-burcht)
-
 ---
 
 ## Externe links
@@ -115,3 +113,36 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 ## Offerte voor 3D printen in Kruibeke
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Kruibeke
+
+- Dekking: Kruibeke, Kruibeke centrum, Bazel, Rupelmonde, Burcht, Zwijndrecht; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kruibeke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Bazel](/3d-printen-in-bazel)
+- [3D printen in Rupelmonde](/3d-printen-in-rupelmonde)
+- [3D printen in Burcht](/3d-printen-in-burcht)
+## Lokale spotlight
+- Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Kruibeke centrum.
+- Vaak gevraagd: 3D print service Kruibeke; we adviseren materiaal en afwerking.
+- Leverfocus: Kruibeke, Kruibeke centrum, Bazel.
+
+## Plaatsen waar we vaak leveren rond Kruibeke
+- Centrum van Kruibeke
+- Lokale bedrijvenzone in Kruibeke
+- Sporthal in Kruibeke
+
+## Sectoren die we vaak helpen in Kruibeke
+- Lokale ondernemers en techniekers (Kruibeke)
+- Scheldeprojecten en herstellingen (Kruibeke)
+- Makers en hobbyisten (Kruibeke)
+
+## Veelgevraagde zoekopdrachten in Kruibeke
+- 3D print service Kruibeke
+- rapid prototyping Kruibeke
+- 3D printing bedrijf Kruibeke
+<!-- LOCAL_ENRICH_END -->

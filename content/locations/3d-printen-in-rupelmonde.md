@@ -97,12 +97,7 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Kruibeke
-
-- [3D printen in Kruibeke](/3d-printen-in-kruibeke)
-- [3D printen in Bazel](/3d-printen-in-bazel)
 - [3D printen in Burcht](/3d-printen-in-burcht)
-- [3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
-
 ---
 
 ## Externe links
@@ -115,3 +110,36 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 ## Offerte voor 3D printen in Rupelmonde
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Rupelmonde
+
+- Dekking: Rupelmonde, Rupelmonde centrum, Kruibeke, Bazel, Burcht, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Rupelmonde.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Kruibeke](/3d-printen-in-kruibeke)
+- [3D printen in Burcht](/3d-printen-in-burcht)
+- [3D printen in Bazel](/3d-printen-in-bazel)
+## Lokale spotlight
+- Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Rupelmonde centrum.
+- Vaak gevraagd: 3D print service Rupelmonde; we adviseren materiaal en afwerking.
+- Leverfocus: Rupelmonde, Rupelmonde centrum, Kruibeke.
+
+## Plaatsen waar we vaak leveren rond Rupelmonde
+- Centrum van Rupelmonde
+- Lokale bedrijvenzone in Rupelmonde
+- Sporthal in Rupelmonde
+
+## Sectoren die we vaak helpen in Rupelmonde
+- Lokale ondernemers en techniekers (Rupelmonde)
+- Creatieve projecten aan de Schelde (Rupelmonde)
+- Makers en hobbyisten (Rupelmonde)
+
+## Veelgevraagde zoekopdrachten in Rupelmonde
+- 3D print service Rupelmonde
+- rapid prototyping Rupelmonde
+- 3D printing bedrijf Rupelmonde
+<!-- LOCAL_ENRICH_END -->

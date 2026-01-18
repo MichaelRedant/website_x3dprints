@@ -96,3 +96,34 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 **Hoe snel is de doorlooptijd?**
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Brasschaat
+
+- Dekking: Brasschaat; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Brasschaat.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Gent](/3d-printen-in-gent)
+## Spotlight rond Brasschaat
+- Lokale teams in Brasschaat: behuizingen en pasmallen voor teams in Brasschaat.
+- Terugkerende order: 3D print service Brasschaat; we bewaren je instellingen.
+- Leverfocus: Brasschaat.
+
+## Landmarks in de buurt van Brasschaat
+- Centrum van Brasschaat
+- Lokale bedrijvenzone in Brasschaat
+- Sporthal in Brasschaat
+
+## Teams die we ondersteunen rond Brasschaat
+- KMO's en makers in Brasschaat: pasmallen en behuizingen.
+- Retail/events rond Brasschaat: displays en props.
+- Onderwijs/labs in Brasschaat: lesklare prints.
+
+## Wat vaak wordt gevraagd in Brasschaat
+- 3D print service Brasschaat
+- rapid prototyping Brasschaat
+- 3D printing bedrijf Brasschaat
+<!-- LOCAL_ENRICH_END -->

@@ -107,3 +107,34 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 **Welke bestanden kan ik aanleveren?**
 
 STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen met het modelleren.
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Veurne
+
+- Dekking: Veurne, Grote Markt en Vaubanvesten, Veurne I en II bedrijventerreinen, Koksijde en De Panne corridor, De Moeren en polders, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Veurne.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Klantenspotlight
+- Toerisme en musea rond Grote Markt en Vauban: kleine reeksen met vaste settings rond Grote Markt en Vaubanvesten.
+- Vaak gevraagd: 3D print service Veurne; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Veurne en Grote Markt en Vaubanvesten.
+
+## Locaties die we bedienen nabij Veurne
+- Centrum van Veurne
+- Lokale bedrijvenzone in Veurne
+- Sporthal in Veurne
+
+## Sectorfocus nabij Veurne
+- Toerisme en musea rond Grote Markt en Vauban (Veurne)
+- Landbouw en foodbedrijven in Veurne-Ambacht
+- Retail en events langs de E40 en kust (Veurne)
+
+## Typische aanvragen rond Veurne
+- 3D print service Veurne
+- rapid prototyping Veurne
+- 3D printing bedrijf Veurne
+<!-- LOCAL_ENRICH_END -->

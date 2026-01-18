@@ -97,10 +97,7 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Pietersba
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Berlare
-
 - [3D printen in Berlare](/3d-printen-in-berlare)
-- [3D printen in Overmere](/3d-printen-in-overmere)
-
 ---
 
 ## Externe links
@@ -113,3 +110,35 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 ## Offerte voor 3D printen in Uitbergen
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Uitbergen
+
+- Dekking: Uitbergen, Uitbergen centrum, Berlare, Overmere, Donk, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Uitbergen.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Berlare](/3d-printen-in-berlare)
+- [3D printen in Overmere](/3d-printen-in-overmere)
+## Klantenspotlight
+- Lokale KMO's en zelfstandigen: kleine reeksen met vaste settings rond Uitbergen centrum.
+- Vaak gevraagd: 3D print service Uitbergen; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Uitbergen en Uitbergen centrum.
+
+## Locaties die we bedienen nabij Uitbergen
+- Centrum van Uitbergen
+- Lokale bedrijvenzone in Uitbergen
+- Sporthal in Uitbergen
+
+## Sectorfocus nabij Uitbergen
+- Lokale KMO's en zelfstandigen (Uitbergen)
+- Onderwijs en verenigingen (Uitbergen)
+- Makers en hobbyisten (Uitbergen)
+
+## Typische aanvragen rond Uitbergen
+- 3D print service Uitbergen
+- rapid prototyping Uitbergen
+- 3D printing bedrijf Uitbergen
+<!-- LOCAL_ENRICH_END -->

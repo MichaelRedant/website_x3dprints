@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Zevergem
-
 - [3D printen in De Pinte](/3d-printen-in-de-pinte)
 - [3D printen in Nazareth-De Pinte](/3d-printen-in-nazareth-de-pinte)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [3D printen in Melle](/3d-printen-in-melle)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Zevergem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Zevergem
+
+- Dekking: Zevergem, Zevergem centrum, De Pinte, Nazareth, Merelbeke, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Zevergem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in De Pinte](/3d-printen-in-de-pinte)
+- [3D printen in Nazareth](/3d-printen-in-nazareth)
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+## Spotlight rond Zevergem
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Zevergem centrum.
+- Terugkerende order: 3D print service Zevergem; we bewaren je instellingen.
+- Leverfocus: Zevergem, Zevergem centrum, De Pinte.
+
+## Landmarks in de buurt van Zevergem
+- Centrum van Zevergem
+- Lokale bedrijvenzone in Zevergem
+- Sporthal in Zevergem
+
+## Teams die we ondersteunen rond Zevergem
+- Lokale makers en ontwerpers (Zevergem)
+- Kleine series en maatwerk (Zevergem)
+- Verenigingen en onderwijs (Zevergem)
+
+## Wat vaak wordt gevraagd in Zevergem
+- 3D print service Zevergem
+- rapid prototyping Zevergem
+- 3D printing bedrijf Zevergem
+<!-- LOCAL_ENRICH_END -->

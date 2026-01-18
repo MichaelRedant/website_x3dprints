@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in De Pinte
-
 - [3D printen in Nazareth-De Pinte](/3d-printen-in-nazareth-de-pinte)
 - [3D printen in Zevergem](/3d-printen-in-zevergem)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [3D printen in Melle](/3d-printen-in-melle)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in De Pinte
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor De Pinte
+
+- Dekking: De Pinte, De Pinte centrum, Zevergem, Nazareth, Merelbeke, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in De Pinte.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Zevergem](/3d-printen-in-zevergem)
+- [3D printen in Nazareth](/3d-printen-in-nazareth)
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond De Pinte centrum.
+- Vaak gevraagd: 3D print service De Pinte; we adviseren materiaal en afwerking.
+- Leverfocus: De Pinte, De Pinte centrum, Zevergem.
+
+## Plaatsen waar we vaak leveren rond De Pinte
+- Centrum van De Pinte
+- Lokale bedrijvenzone in De Pinte
+- Sporthal in De Pinte
+
+## Sectoren die we vaak helpen in De Pinte
+- Lokale makers en ontwerpers (De Pinte)
+- Kleine series en maatwerk (De Pinte)
+- Verenigingen en onderwijs (De Pinte)
+
+## Veelgevraagde zoekopdrachten in De Pinte
+- 3D print service De Pinte
+- rapid prototyping De Pinte
+- 3D printing bedrijf De Pinte
+<!-- LOCAL_ENRICH_END -->

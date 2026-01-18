@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Houtem of afha
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Houtem (Stekene)
-
 - [3D printen in Stekene](/3d-printen-in-stekene)
 - [3D printen in Kemzeke](/3d-printen-in-kemzeke)
 - [3D printen in Klein-Sinaai](/3d-printen-in-klein-sinaai)
 - [3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Houtem (Stekene)
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Houtem (Stekene)
+
+- Dekking: Houtem (Stekene), Houtem (Stekene) centrum, Stekene, Kemzeke, Klein-Sinaai, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Houtem (Stekene).
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Stekene](/3d-printen-in-stekene)
+- [3D printen in Kemzeke](/3d-printen-in-kemzeke)
+- [3D printen in Klein-Sinaai](/3d-printen-in-klein-sinaai)
+## Spotlight rond Houtem (Stekene)
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Houtem (Stekene) centrum.
+- Terugkerende order: 3D print service Houtem Stekene; we bewaren je instellingen.
+- Leverfocus: Houtem (Stekene), Houtem (Stekene) centrum, Stekene.
+
+## Landmarks in de buurt van Houtem (Stekene)
+- Centrum van Houtem (Stekene)
+- Lokale bedrijvenzone in Houtem (Stekene)
+- Sporthal in Houtem (Stekene)
+
+## Teams die we ondersteunen rond Houtem (Stekene)
+- Lokale makers en ontwerpers (Houtem (Stekene))
+- Kleine series en maatwerk (Houtem (Stekene))
+- Verenigingen en onderwijs (Houtem (Stekene))
+
+## Wat vaak wordt gevraagd in Houtem (Stekene)
+- 3D print service Houtem Stekene
+- rapid prototyping Houtem Stekene
+- 3D printing bedrijf Houtem Stekene
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Elversele
-
 - [3D printen in Temse](/3d-printen-in-temse)
 - [3D printen in Tielrode](/3d-printen-in-tielrode)
 - [3D printen in Steendorp](/3d-printen-in-steendorp)
 - [3D printen in Sint-Niklaas](/3d-printen-in-sint-niklaas)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Elversele
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Elversele
+
+- Dekking: Elversele, Elversele centrum, Temse, Tielrode, Steendorp, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Elversele.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Temse](/3d-printen-in-temse)
+- [3D printen in Tielrode](/3d-printen-in-tielrode)
+- [3D printen in Steendorp](/3d-printen-in-steendorp)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Elversele centrum.
+- Vaak gevraagd: 3D print service Elversele; we adviseren materiaal en afwerking.
+- Leverfocus: Elversele, Elversele centrum, Temse.
+
+## Plaatsen waar we vaak leveren rond Elversele
+- Centrum van Elversele
+- Lokale bedrijvenzone in Elversele
+- Sporthal in Elversele
+
+## Sectoren die we vaak helpen in Elversele
+- Lokale makers en ontwerpers (Elversele)
+- Kleine series en maatwerk (Elversele)
+- Verenigingen en onderwijs (Elversele)
+
+## Veelgevraagde zoekopdrachten in Elversele
+- 3D print service Elversele
+- rapid prototyping Elversele
+- 3D printing bedrijf Elversele
+<!-- LOCAL_ENRICH_END -->

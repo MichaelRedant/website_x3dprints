@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Denderbelle
-
 - [3D printen in Lebbeke](/3d-printen-in-lebbeke)
 - [3D printen in Wieze](/3d-printen-in-wieze)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
 - [3D printen in Aalst](/3d-printen-in-aalst)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Denderbelle
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Denderbelle
+
+- Dekking: Denderbelle, Denderbelle centrum, Lebbeke, Wieze, Dendermonde, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Denderbelle.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Lebbeke](/3d-printen-in-lebbeke)
+- [3D printen in Wieze](/3d-printen-in-wieze)
+- [3D printen in Dendermonde](/3d-printen-in-dendermonde)
+## Lokale spotlight
+- Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Denderbelle centrum.
+- Vaak gevraagd: 3D print service Denderbelle; we adviseren materiaal en afwerking.
+- Leverfocus: Denderbelle, Denderbelle centrum, Lebbeke.
+
+## Plaatsen waar we vaak leveren rond Denderbelle
+- Centrum van Denderbelle
+- Lokale bedrijvenzone in Denderbelle
+- Sporthal in Denderbelle
+
+## Sectoren die we vaak helpen in Denderbelle
+- Lokale makers en techniekers (Denderbelle)
+- Kleine series en maatwerk (Denderbelle)
+- Verenigingen en scholen (Denderbelle)
+
+## Veelgevraagde zoekopdrachten in Denderbelle
+- 3D print service Denderbelle
+- rapid prototyping Denderbelle
+- 3D printing bedrijf Denderbelle
+<!-- LOCAL_ENRICH_END -->

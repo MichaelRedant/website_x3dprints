@@ -97,11 +97,9 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting De dorpskern als uitvalsbasis voor lokale ondernemers. of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Assenede
-
 - [3D printen in Assenede](/3d-printen-in-assenede)
 - [3D printen in Boekhoute](/3d-printen-in-boekhoute)
 - [3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
-
 ---
 
 ## Externe links
@@ -114,3 +112,36 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting De dorpskern a
 ## Offerte voor 3D printen in Bassevelde
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Bassevelde
+
+- Dekking: Bassevelde, Bassevelde centrum, Assenede, Boekhoute, Oosteeklo, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Bassevelde.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Assenede](/3d-printen-in-assenede)
+- [3D printen in Boekhoute](/3d-printen-in-boekhoute)
+- [3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
+## Klantenspotlight
+- Lokale makers en ondernemers: kleine reeksen met vaste settings rond Bassevelde centrum.
+- Vaak gevraagd: 3D print service Bassevelde; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Bassevelde en Bassevelde centrum.
+
+## Locaties die we bedienen nabij Bassevelde
+- Centrum van Bassevelde
+- Lokale bedrijvenzone in Bassevelde
+- Sporthal in Bassevelde
+
+## Sectorfocus nabij Bassevelde
+- Lokale makers en ondernemers (Bassevelde)
+- Technische herstellingen en maatwerk (Bassevelde)
+- Scholen en verenigingen (Bassevelde)
+
+## Typische aanvragen rond Bassevelde
+- 3D print service Bassevelde
+- rapid prototyping Bassevelde
+- 3D printing bedrijf Bassevelde
+<!-- LOCAL_ENRICH_END -->

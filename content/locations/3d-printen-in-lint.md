@@ -96,3 +96,34 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 **Welke bestanden kan ik aanleveren?**
 
 STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen met het modelleren.
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Lint
+
+- Dekking: Lint; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Lint.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Klantenspotlight
+- Lokale teams in Lint: kleine reeksen met vaste settings rond Lint.
+- Vaak gevraagd: 3D print service Lint; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Lint en Lint.
+
+## Locaties die we bedienen nabij Lint
+- Centrum van Lint
+- Lokale bedrijvenzone in Lint
+- Sporthal in Lint
+
+## Sectorfocus nabij Lint
+- KMO's en makers in Lint: pasmallen en behuizingen.
+- Retail/events rond Lint: displays en props.
+- Onderwijs/labs in Lint: lesklare prints.
+
+## Typische aanvragen rond Lint
+- 3D print service Lint
+- rapid prototyping Lint
+- 3D printing bedrijf Lint
+<!-- LOCAL_ENRICH_END -->

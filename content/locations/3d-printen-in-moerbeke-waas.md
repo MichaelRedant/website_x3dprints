@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Antonius Abtkerk (Moerbeke) of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Moerbeke-Waas
-
 - [3D printen in Lokeren](/3d-printen-in-lokeren)
 - [3D printen in Eksaarde](/3d-printen-in-eksaarde)
 - [3D printen in Daknam](/3d-printen-in-daknam)
 - [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Antonius 
 
 ## Offerte voor 3D printen in Moerbeke-Waas
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Moerbeke-Waas
+
+- Dekking: Moerbeke-Waas, Moerbeke-Waas centrum, Lokeren, Eksaarde, Daknam, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Moerbeke-Waas.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Lokeren](/3d-printen-in-lokeren)
+- [3D printen in Eksaarde](/3d-printen-in-eksaarde)
+- [3D printen in Daknam](/3d-printen-in-daknam)
+## Lokale spotlight
+- Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Moerbeke-Waas centrum.
+- Vaak gevraagd: 3D print service Moerbeke-Waas; we adviseren materiaal en afwerking.
+- Leverfocus: Moerbeke-Waas, Moerbeke-Waas centrum, Lokeren.
+
+## Plaatsen waar we vaak leveren rond Moerbeke-Waas
+- Centrum van Moerbeke-Waas
+- Lokale bedrijvenzone in Moerbeke-Waas
+- Sporthal in Moerbeke-Waas
+
+## Sectoren die we vaak helpen in Moerbeke-Waas
+- Lokale makers en techniekers (Moerbeke-Waas)
+- Onderhoud en herstellingen (Moerbeke-Waas)
+- Verenigingen en onderwijs (Moerbeke-Waas)
+
+## Veelgevraagde zoekopdrachten in Moerbeke-Waas
+- 3D print service Moerbeke-Waas
+- rapid prototyping Moerbeke-Waas
+- 3D printing bedrijf Moerbeke-Waas
+<!-- LOCAL_ENRICH_END -->

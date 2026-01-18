@@ -1,22 +1,22 @@
-# 3D printen in Leupegem (Oudenaarde): langs Schelde en Koppenberg-route
-
-X3DPrints levert 3D prints voor Leupegem met zicht op Schelde, Koppenberg en de Vlaamse Ardennen. Ideaal voor makers, kmo's en events die snelle prototypes of vervangstukken nodig hebben.
-
----
-
-## Sterk voor Leupegem
-
-- **Snelle doorlooptijd**: 2-5 werkdagen; spoed op aanvraag.  
-- **Levering** richting Stationsstraat, Koppenberg-route en Scheldeboorden; afhalen in Herzele kan.  
-- **Materiaaladvies**: PLA Matte/Silk voor visuele onderdelen, PETG voor buitengebruik langs rivier of kassei, TPU voor flexibele koppelingen.  
-- **Prijsinzicht**: check [pricing](/pricing) of vraag direct via [contact](/contact).
-
-## Lokale use-cases
-
-- **Cycling & events**: trofee-onderdelen, bordjes, custom props in PLA.  
-- **Scheldetoepassingen**: PETG klemmen of houders die vocht aankunnen.  
-- **Werkplaatsen**: jigs en behuizingen voor KMO's langs N60.
-
+# 3D printen in Leupegem (Oudenaarde): langs Schelde en Koppenberg-route
+
+X3DPrints levert 3D prints voor Leupegem met zicht op Schelde, Koppenberg en de Vlaamse Ardennen. Ideaal voor makers, kmo's en events die snelle prototypes of vervangstukken nodig hebben.
+
+---
+
+## Sterk voor Leupegem
+
+- **Snelle doorlooptijd**: 2-5 werkdagen; spoed op aanvraag.  
+- **Levering** richting Stationsstraat, Koppenberg-route en Scheldeboorden; afhalen in Herzele kan.  
+- **Materiaaladvies**: PLA Matte/Silk voor visuele onderdelen, PETG voor buitengebruik langs rivier of kassei, TPU voor flexibele koppelingen.  
+- **Prijsinzicht**: check [pricing](/pricing) of vraag direct via [contact](/contact).
+
+## Lokale use-cases
+
+- **Cycling & events**: trofee-onderdelen, bordjes, custom props in PLA.  
+- **Scheldetoepassingen**: PETG klemmen of houders die vocht aankunnen.  
+- **Werkplaatsen**: jigs en behuizingen voor KMO's langs N60.
+
 
 
 ## Lokale focus in Leupegem (Oudenaarde)
@@ -27,19 +27,19 @@ In Leupegem (Oudenaarde) helpen we makers en bedrijven met 3D prints die vlot pa
 - Displays en maquettes voor presentaties, events of showroomwerk.
 - Vervangonderdelen en clips om machines snel weer op gang te krijgen.
 
-## Materialen
-
-- **PLA**: detail en nette afwerking voor maquettes en displays.  
-- **PETG**: taai en UV-bestendiger voor buiten.  
-- **TPU**: flexibel voor dempers, grips en kabelmanagement.
-
-## Werkwijze
-
-1) Upload STL/STEP via [contact](/contact) met afmetingen, aantallen en toepassing.  
-2) Wij adviseren orientatie en materiaalkeuze.  
-3) We printen, controleren en leveren in Leupegem of voorzien afhalen.
-
-Bekijk ook [materials](/materials) voor kleuren, de [viewer](/viewer) voor checks, en sectorcases op [segments](/segments). Tips staan op de [blog](/blog).
+## Materialen
+
+- **PLA**: detail en nette afwerking voor maquettes en displays.  
+- **PETG**: taai en UV-bestendiger voor buiten.  
+- **TPU**: flexibel voor dempers, grips en kabelmanagement.
+
+## Werkwijze
+
+1) Upload STL/STEP via [contact](/contact) met afmetingen, aantallen en toepassing.  
+2) Wij adviseren orientatie en materiaalkeuze.  
+3) We printen, controleren en leveren in Leupegem of voorzien afhalen.
+
+Bekijk ook [materials](/materials) voor kleuren, de [viewer](/viewer) voor checks, en sectorcases op [segments](/segments). Tips staan op de [blog](/blog).
 
 
 ## Veelgestelde vragen over 3D printen in Leupegem (Oudenaarde)
@@ -55,3 +55,34 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 **Wat kost 3D printen in Leupegem (Oudenaarde)?**
 
 De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je model of schets en je krijgt snel een duidelijke offerte.
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Leupegem (Oudenaarde)
+
+- Dekking: Leupegem (Oudenaarde); levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Leupegem (Oudenaarde).
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Gent](/3d-printen-in-gent)
+## Spotlight rond Leupegem (Oudenaarde)
+- Lokale teams in Leupegem (Oudenaarde): behuizingen en pasmallen voor teams in Leupegem (Oudenaarde).
+- Terugkerende order: 3D print service Leupegem; we bewaren je instellingen.
+- Leverfocus: Leupegem (Oudenaarde).
+
+## Landmarks in de buurt van Leupegem (Oudenaarde)
+- Centrum van Leupegem (Oudenaarde)
+- Lokale bedrijvenzone in Leupegem (Oudenaarde)
+- Sporthal in Leupegem (Oudenaarde)
+
+## Teams die we ondersteunen rond Leupegem (Oudenaarde)
+- KMO's en makers in Leupegem (Oudenaarde): pasmallen en behuizingen.
+- Retail/events rond Leupegem (Oudenaarde): displays en props.
+- Onderwijs/labs in Leupegem (Oudenaarde): lesklare prints.
+
+## Wat vaak wordt gevraagd in Leupegem (Oudenaarde)
+- 3D print service Leupegem
+- rapid prototyping Leupegem
+- 3D printing bedrijf Leupegem
+<!-- LOCAL_ENRICH_END -->

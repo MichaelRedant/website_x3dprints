@@ -97,13 +97,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Willibror
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Aalter
-
 - [3D printen in Aalter](/3d-printen-in-aalter)
-- [3D printen in Bellem](/3d-printen-in-bellem)
 - [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
 - [3D printen in Poeke](/3d-printen-in-poeke)
 - [3D printen in Ursel](/3d-printen-in-ursel)
-
 ---
 
 ## Externe links
@@ -116,3 +113,38 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 ## Offerte voor 3D printen in Knesselare
 
 Vraag een vrijblijvende offerte aan via [contact](/contact) en ontdek wat mogelijk is.
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Knesselare
+
+- Dekking: Knesselare, Knesselare centrum, Aalter, Bellem, Lotenhulle, Poeke; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Knesselare.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Aalter](/3d-printen-in-aalter)
+- [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
+- [3D printen in Poeke](/3d-printen-in-poeke)
+- [3D printen in Ursel](/3d-printen-in-ursel)
+- [3D printen in Bellem](/3d-printen-in-bellem)
+## Spotlight rond Knesselare
+- KMO's en techniekers in de regio: behuizingen en pasmallen voor teams in Knesselare centrum.
+- Terugkerende order: 3D print service Knesselare; we bewaren je instellingen.
+- Leverfocus: Knesselare, Knesselare centrum, Aalter.
+
+## Landmarks in de buurt van Knesselare
+- Centrum van Knesselare
+- Lokale bedrijvenzone in Knesselare
+- Sporthal in Knesselare
+
+## Teams die we ondersteunen rond Knesselare
+- KMO's en techniekers in de regio (Knesselare)
+- Projecten voor landbouw en bosbeheer (Knesselare)
+- Lokale retail en evenementen (Knesselare)
+
+## Wat vaak wordt gevraagd in Knesselare
+- 3D print service Knesselare
+- rapid prototyping Knesselare
+- 3D printing bedrijf Knesselare
+<!-- LOCAL_ENRICH_END -->

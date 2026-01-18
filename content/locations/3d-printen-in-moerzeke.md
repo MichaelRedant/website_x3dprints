@@ -98,11 +98,9 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Moerzeke
-
 - [3D printen in Hamme](/3d-printen-in-hamme)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
 - [3D printen in Waasmunster](/3d-printen-in-waasmunster)
-
 ---
 
 ## Externe links
@@ -115,4 +113,35 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Moerzeke
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Moerzeke
+
+- Dekking: Moerzeke, Moerzeke centrum, Kastel, Hamme, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Moerzeke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Hamme](/3d-printen-in-hamme)
+## Spotlight rond Moerzeke
+- Lokale makers en techniekers: behuizingen en pasmallen voor teams in Moerzeke centrum.
+- Terugkerende order: 3D print service Moerzeke; we bewaren je instellingen.
+- Leverfocus: Moerzeke, Moerzeke centrum, Kastel.
+
+## Landmarks in de buurt van Moerzeke
+- Centrum van Moerzeke
+- Lokale bedrijvenzone in Moerzeke
+- Sporthal in Moerzeke
+
+## Teams die we ondersteunen rond Moerzeke
+- Lokale makers en techniekers (Moerzeke)
+- Kleine series en maatwerk (Moerzeke)
+- Verenigingen en scholen (Moerzeke)
+
+## Wat vaak wordt gevraagd in Moerzeke
+- 3D print service Moerzeke
+- rapid prototyping Moerzeke
+- 3D printing bedrijf Moerzeke
+<!-- LOCAL_ENRICH_END -->

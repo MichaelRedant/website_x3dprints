@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Lovendegem
-
 - [3D printen in Lievegem](/3d-printen-in-lievegem)
 - [3D printen in Vinderhoute](/3d-printen-in-vinderhoute)
 - [3D printen in Zomergem](/3d-printen-in-zomergem)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Lovendegem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Lovendegem
+
+- Dekking: Lovendegem, Lovendegem centrum, Lievegem, Vinderhoute, Zomergem, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Lovendegem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Lievegem](/3d-printen-in-lievegem)
+- [3D printen in Vinderhoute](/3d-printen-in-vinderhoute)
+- [3D printen in Zomergem](/3d-printen-in-zomergem)
+## Spotlight rond Lovendegem
+- Lokale makers en techniekers: behuizingen en pasmallen voor teams in Lovendegem centrum.
+- Terugkerende order: 3D print service Lovendegem; we bewaren je instellingen.
+- Leverfocus: Lovendegem, Lovendegem centrum, Lievegem.
+
+## Landmarks in de buurt van Lovendegem
+- Centrum van Lovendegem
+- Lokale bedrijvenzone in Lovendegem
+- Sporthal in Lovendegem
+
+## Teams die we ondersteunen rond Lovendegem
+- Lokale makers en techniekers (Lovendegem)
+- Kleine series en maatwerk (Lovendegem)
+- Verenigingen en scholen (Lovendegem)
+
+## Wat vaak wordt gevraagd in Lovendegem
+- 3D print service Lovendegem
+- rapid prototyping Lovendegem
+- 3D printing bedrijf Lovendegem
+<!-- LOCAL_ENRICH_END -->

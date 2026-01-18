@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Lokeren
-
 - [3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
 - [3D printen in Eksaarde](/3d-printen-in-eksaarde)
 - [3D printen in Daknam](/3d-printen-in-daknam)
 - [3D printen in Lochristi](/3d-printen-in-lochristi)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Lokeren
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Lokeren
+
+- Dekking: Lokeren, Lokeren centrum, Eksaarde, Daknam, Moerbeke-Waas, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Lokeren.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Eksaarde](/3d-printen-in-eksaarde)
+- [3D printen in Daknam](/3d-printen-in-daknam)
+- [3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Lokeren centrum.
+- Vaak gevraagd: 3D print service Lokeren; we adviseren materiaal en afwerking.
+- Leverfocus: Lokeren, Lokeren centrum, Eksaarde.
+
+## Plaatsen waar we vaak leveren rond Lokeren
+- Centrum van Lokeren
+- Lokale bedrijvenzone in Lokeren
+- Sporthal in Lokeren
+
+## Sectoren die we vaak helpen in Lokeren
+- Lokale makers en ontwerpers (Lokeren)
+- Kleine series en maatwerk (Lokeren)
+- Verenigingen en onderwijs (Lokeren)
+
+## Veelgevraagde zoekopdrachten in Lokeren
+- 3D print service Lokeren
+- rapid prototyping Lokeren
+- 3D printing bedrijf Lokeren
+<!-- LOCAL_ENRICH_END -->

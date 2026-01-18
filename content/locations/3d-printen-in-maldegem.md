@@ -1,23 +1,23 @@
-# 3D printen in Maldegem: lokaal, snel en met oog voor detail
-
-X3DPrints levert nauwkeurige 3D prints in Maldegem en deelgemeenten. We helpen makers, kmo’s en scholen met prototypes, kleine series en vervangstukken, met korte lijnen richting Stoomcentrum Maldegem en Drongengoedbos.
-
----
-
-## Waarom X3DPrints voor Maldegem?
-
-- **Korte doorlooptijd**: doorgaans 2-5 werkdagen, spoed op aanvraag.  
-- **Levering of afhalen**: bezorging richting Markt, Krommewege en industriezone via N49/E34, of afhalen in Herzele.  
-- **Heldere prijzen**: check indicaties op [pricing](/pricing) of vraag een offerte via [contact](/contact).  
-- **Materiaaladvies**: PLA Matte voor displays, PETG voor buitengebruik langs Schipdonk- en Leopoldkanaal, TPU voor dempers en clips.
-
-## Lokale accenten
-
-- **Stoomcentrum Maldegem**: schaalmodellen, props of reserveonderdelen voor expo’s.  
-- **Drongengoed en Lembeekse bossen**: outdoor belettering en fixtures in PETG.  
-- **Station/Markt Maldegem**: retail POS of beursprops in PLA Silk/Matte.  
-- **Krommewege & Adegem industrie**: functionele onderdelen, jigs of montagehulpstukken.
-
+# 3D printen in Maldegem: lokaal, snel en met oog voor detail
+
+X3DPrints levert nauwkeurige 3D prints in Maldegem en deelgemeenten. We helpen makers, kmo’s en scholen met prototypes, kleine series en vervangstukken, met korte lijnen richting Stoomcentrum Maldegem en Drongengoedbos.
+
+---
+
+## Waarom X3DPrints voor Maldegem?
+
+- **Korte doorlooptijd**: doorgaans 2-5 werkdagen, spoed op aanvraag.  
+- **Levering of afhalen**: bezorging richting Markt, Krommewege en industriezone via N49/E34, of afhalen in Herzele.  
+- **Heldere prijzen**: check indicaties op [pricing](/pricing) of vraag een offerte via [contact](/contact).  
+- **Materiaaladvies**: PLA Matte voor displays, PETG voor buitengebruik langs Schipdonk- en Leopoldkanaal, TPU voor dempers en clips.
+
+## Lokale accenten
+
+- **Stoomcentrum Maldegem**: schaalmodellen, props of reserveonderdelen voor expo’s.  
+- **Drongengoed en Lembeekse bossen**: outdoor belettering en fixtures in PETG.  
+- **Station/Markt Maldegem**: retail POS of beursprops in PLA Silk/Matte.  
+- **Krommewege & Adegem industrie**: functionele onderdelen, jigs of montagehulpstukken.
+
 
 
 ## Lokale focus in Maldegem
@@ -28,26 +28,26 @@ In Maldegem helpen we makers en bedrijven met 3D prints die vlot passen en lang 
 - Displays en maquettes voor presentaties, events of showroomwerk.
 - Vervangonderdelen en clips om machines snel weer op gang te krijgen.
 
-## Materialen en toepassingen
-
-| Materiaal | Eigenschap | Gebruik in Maldegem |
-| --- | --- | --- |
-| PLA Matte | Strak, detailrijk | Maquettes, behuizingen, POS rond centrum |
-| PETG | Taai, weerbestendiger | Buitenborden langs kanalen, klemmen in werkplaatsen |
-| TPU | Flexibel, schokdempend | Antislip voor apparaten, dempers voor machines |
-
-## Zo werken we
-
-1) **Upload STL/STEP** via [contact](/contact) en noteer afmeting + toepassing.  
-2) **Materiaalkeuze**: we adviseren snel (PLA/PETG/TPU) en layerhoogte.  
-3) **Productie & levering**: printen, kwaliteitscheck, dan levering/afhalen.
-
-## Snel naar
-
-- [Materials](/materials) voor kleuren en richtlijnen.  
-- [Viewer](/viewer) om je model te controleren.  
-- [Segments](/segments) voor sector-specifieke cases.  
-- [Blog](/blog) voor tips zoals PLA vs PETG.
+## Materialen en toepassingen
+
+| Materiaal | Eigenschap | Gebruik in Maldegem |
+| --- | --- | --- |
+| PLA Matte | Strak, detailrijk | Maquettes, behuizingen, POS rond centrum |
+| PETG | Taai, weerbestendiger | Buitenborden langs kanalen, klemmen in werkplaatsen |
+| TPU | Flexibel, schokdempend | Antislip voor apparaten, dempers voor machines |
+
+## Zo werken we
+
+1) **Upload STL/STEP** via [contact](/contact) en noteer afmeting + toepassing.  
+2) **Materiaalkeuze**: we adviseren snel (PLA/PETG/TPU) en layerhoogte.  
+3) **Productie & levering**: printen, kwaliteitscheck, dan levering/afhalen.
+
+## Snel naar
+
+- [Materials](/materials) voor kleuren en richtlijnen.  
+- [Viewer](/viewer) om je model te controleren.  
+- [Segments](/segments) voor sector-specifieke cases.  
+- [Blog](/blog) voor tips zoals PLA vs PETG.
 
 
 ## Veelgestelde vragen over 3D printen in Maldegem
@@ -63,3 +63,34 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 **Wat kost 3D printen in Maldegem?**
 
 De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je model of schets en je krijgt snel een duidelijke offerte.
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Maldegem
+
+- Dekking: Maldegem; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Maldegem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Klantenspotlight
+- Lokale teams in Maldegem: kleine reeksen met vaste settings rond Maldegem.
+- Vaak gevraagd: 3D print service Maldegem; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Maldegem en Maldegem.
+
+## Locaties die we bedienen nabij Maldegem
+- Centrum van Maldegem
+- Lokale bedrijvenzone in Maldegem
+- Sporthal in Maldegem
+
+## Sectorfocus nabij Maldegem
+- KMO's en makers in Maldegem: pasmallen en behuizingen.
+- Retail/events rond Maldegem: displays en props.
+- Onderwijs/labs in Maldegem: lesklare prints.
+
+## Typische aanvragen rond Maldegem
+- 3D print service Maldegem
+- rapid prototyping Maldegem
+- 3D printing bedrijf Maldegem
+<!-- LOCAL_ENRICH_END -->

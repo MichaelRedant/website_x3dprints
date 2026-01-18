@@ -97,11 +97,8 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Het vissersverleden en het visserijmuseum in het dorp. of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Assenede
-
 - [3D printen in Assenede](/3d-printen-in-assenede)
-- [3D printen in Bassevelde](/3d-printen-in-bassevelde)
 - [3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
-
 ---
 
 ## Externe links
@@ -114,3 +111,36 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Het vissersver
 ## Offerte voor 3D printen in Boekhoute
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Boekhoute
+
+- Dekking: Boekhoute, Boekhoute centrum, Assenede, Bassevelde, Oosteeklo, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Boekhoute.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Assenede](/3d-printen-in-assenede)
+- [3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
+- [3D printen in Bassevelde](/3d-printen-in-bassevelde)
+## Lokale spotlight
+- Creatieve projecten en retail: PLA/PETG onderdelen afgestemd op projecten rond Boekhoute centrum.
+- Vaak gevraagd: 3D print service Boekhoute; we adviseren materiaal en afwerking.
+- Leverfocus: Boekhoute, Boekhoute centrum, Assenede.
+
+## Plaatsen waar we vaak leveren rond Boekhoute
+- Centrum van Boekhoute
+- Lokale bedrijvenzone in Boekhoute
+- Sporthal in Boekhoute
+
+## Sectoren die we vaak helpen in Boekhoute
+- Creatieve projecten en retail (Boekhoute)
+- Maatwerk voor lokale KMO's (Boekhoute)
+- Verenigingen en events (Boekhoute)
+
+## Veelgevraagde zoekopdrachten in Boekhoute
+- 3D print service Boekhoute
+- rapid prototyping Boekhoute
+- 3D printing bedrijf Boekhoute
+<!-- LOCAL_ENRICH_END -->

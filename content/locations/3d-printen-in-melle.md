@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Melle
-
 - [3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
 - [3D printen in Gontrode](/3d-printen-in-gontrode)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [3D printen in Wetteren](/3d-printen-in-wetteren)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Melle
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Melle
+
+- Dekking: Melle, Melle centrum, Gontrode, Merelbeke, Wetteren, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Melle.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Gontrode](/3d-printen-in-gontrode)
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [3D printen in Wetteren](/3d-printen-in-wetteren)
+## Lokale spotlight
+- Lokale ondernemers en makers: PLA/PETG onderdelen afgestemd op projecten rond Melle centrum.
+- Vaak gevraagd: 3D print service Melle; we adviseren materiaal en afwerking.
+- Leverfocus: Melle, Melle centrum, Gontrode.
+
+## Plaatsen waar we vaak leveren rond Melle
+- Centrum van Melle
+- Lokale bedrijvenzone in Melle
+- Sporthal in Melle
+
+## Sectoren die we vaak helpen in Melle
+- Lokale ondernemers en makers (Melle)
+- Technische herstellingen en maatwerk (Melle)
+- Scholen en verenigingen (Melle)
+
+## Veelgevraagde zoekopdrachten in Melle
+- 3D print service Melle
+- rapid prototyping Melle
+- 3D printing bedrijf Melle
+<!-- LOCAL_ENRICH_END -->

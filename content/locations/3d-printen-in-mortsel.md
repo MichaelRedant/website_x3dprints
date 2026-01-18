@@ -26,7 +26,7 @@ Zoek je **3D printen in Mortsel**? We leveren vanuit Herzele snelle, nette onder
 
 
 
-## Projecten die we printen
+## Projecten die we vaak leveren voor klanten uit Mortsel
 
 - **KMO's langs de Krijgsbaan en Mechelsesteenweg**: klemmen, sensorhouders en tijdelijke vervangstukken voor machines.
 
@@ -76,20 +76,38 @@ Zoek je 3D printen in Mortsel? We denken mee over passing, sterkte en look zodat
 - Fixtures en passtukken voor controle en kalibratie.
 
 ## Interne links
-
 - [3D printen in Antwerpen](/3d-printen-in-antwerpen)
-
 - [3D printen in Edegem](/3d-printen-in-edegem)
-
 - [3D printen in Kontich](/3d-printen-in-kontich)
-
 - [3D printen in Hove](/3d-printen-in-hove)
+- [3D printen in materials](/materials)
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Mortsel
 
-- [Materialen & richtlijnen](/materials)
+- Dekking: Mortsel; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Mortsel.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
+## Dichtbij gelegen locaties
+- [3D printen in Gent](/3d-printen-in-gent)
+## Spotlight rond Mortsel
+- Lokale teams in Mortsel: behuizingen en pasmallen voor teams in Mortsel.
+- Terugkerende order: 3D print service Mortsel; we bewaren je instellingen.
+- Leverfocus: Mortsel.
 
+## Landmarks in de buurt van Mortsel
+- Centrum van Mortsel
+- Lokale bedrijvenzone in Mortsel
+- Sporthal in Mortsel
 
+## Teams die we ondersteunen rond Mortsel
+- KMO's en makers in Mortsel: pasmallen en behuizingen.
+- Retail/events rond Mortsel: displays en props.
+- Onderwijs/labs in Mortsel: lesklare prints.
 
-
-
-
+## Wat vaak wordt gevraagd in Mortsel
+- 3D print service Mortsel
+- rapid prototyping Mortsel
+- 3D printing bedrijf Mortsel
+<!-- LOCAL_ENRICH_END -->

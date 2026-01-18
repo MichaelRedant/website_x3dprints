@@ -97,12 +97,8 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Fort Liefkensh
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in de havenzone
-
 - [3D printen in Doel](/3d-printen-in-doel)
 - [3D printen in Kieldrecht](/3d-printen-in-kieldrecht)
-- [3D printen in Verrebroek](/3d-printen-in-verrebroek)
-- [3D printen in Beveren](/3d-printen-in-beveren)
-
 ---
 
 ## Externe links
@@ -115,3 +111,36 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 ## Offerte voor 3D printen in Kallo
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Kallo
+
+- Dekking: Kallo, Kallo centrum, Beveren, Doel, Kieldrecht, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kallo.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Beveren](/3d-printen-in-beveren)
+- [3D printen in Doel](/3d-printen-in-doel)
+- [3D printen in Kieldrecht](/3d-printen-in-kieldrecht)
+## Spotlight rond Kallo
+- Haven en logistiek: behuizingen en pasmallen voor teams in Kallo centrum.
+- Terugkerende order: 3D print service Kallo; we bewaren je instellingen.
+- Leverfocus: Kallo, Kallo centrum, Beveren.
+
+## Landmarks in de buurt van Kallo
+- Centrum van Kallo
+- Lokale bedrijvenzone in Kallo
+- Sporthal in Kallo
+
+## Teams die we ondersteunen rond Kallo
+- Haven en logistiek (Kallo)
+- Technische projecten en tooling (Kallo)
+- Makers en hobbyisten (Kallo)
+
+## Wat vaak wordt gevraagd in Kallo
+- 3D print service Kallo
+- rapid prototyping Kallo
+- 3D printing bedrijf Kallo
+<!-- LOCAL_ENRICH_END -->

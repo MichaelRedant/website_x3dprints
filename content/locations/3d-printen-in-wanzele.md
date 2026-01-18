@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Wanzele
-
 - [3D printen in Lede](/3d-printen-in-lede)
 - [3D printen in Oordegem](/3d-printen-in-oordegem)
 - [3D printen in Smetlede](/3d-printen-in-smetlede)
 - [3D printen in Impe](/3d-printen-in-impe)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Wanzele
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Wanzele
+
+- Dekking: Wanzele, Wanzele centrum, Lede, Oordegem, Impe, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Wanzele.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Lede](/3d-printen-in-lede)
+- [3D printen in Oordegem](/3d-printen-in-oordegem)
+- [3D printen in Impe](/3d-printen-in-impe)
+## Spotlight rond Wanzele
+- Lokale ondernemers en techniekers: behuizingen en pasmallen voor teams in Wanzele centrum.
+- Terugkerende order: 3D print service Wanzele; we bewaren je instellingen.
+- Leverfocus: Wanzele, Wanzele centrum, Lede.
+
+## Landmarks in de buurt van Wanzele
+- Centrum van Wanzele
+- Lokale bedrijvenzone in Wanzele
+- Sporthal in Wanzele
+
+## Teams die we ondersteunen rond Wanzele
+- Lokale ondernemers en techniekers (Wanzele)
+- Onderhoud en herstellingen (Wanzele)
+- Verenigingen en onderwijs (Wanzele)
+
+## Wat vaak wordt gevraagd in Wanzele
+- 3D print service Wanzele
+- rapid prototyping Wanzele
+- 3D printing bedrijf Wanzele
+<!-- LOCAL_ENRICH_END -->

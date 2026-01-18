@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Zeveneken
-
 - [3D printen in Lochristi](/3d-printen-in-lochristi)
 - [3D printen in Beervelde](/3d-printen-in-beervelde)
 - [3D printen in Zaffelare](/3d-printen-in-zaffelare)
 - [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
-
 ---
 
 ## Externe links
@@ -116,4 +114,38 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Zeveneken
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Zeveneken
+
+- Dekking: Zeveneken, Zeveneken centrum, Lochristi, Zaffelare, Wachtebeke, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Zeveneken.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Lochristi](/3d-printen-in-lochristi)
+- [3D printen in Beervelde](/3d-printen-in-beervelde)
+- [3D printen in Zaffelare](/3d-printen-in-zaffelare)
+- [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Zeveneken centrum.
+- Vaak gevraagd: 3D print service Zeveneken; we adviseren materiaal en afwerking.
+- Leverfocus: Zeveneken, Zeveneken centrum, Lochristi.
+
+## Plaatsen waar we vaak leveren rond Zeveneken
+- Centrum van Zeveneken
+- Lokale bedrijvenzone in Zeveneken
+- Sporthal in Zeveneken
+
+## Sectoren die we vaak helpen in Zeveneken
+- Lokale makers en ontwerpers (Zeveneken)
+- Kleine series en maatwerk (Zeveneken)
+- Verenigingen en onderwijs (Zeveneken)
+
+## Veelgevraagde zoekopdrachten in Zeveneken
+- 3D print service Zeveneken
+- rapid prototyping Zeveneken
+- 3D printing bedrijf Zeveneken
+<!-- LOCAL_ENRICH_END -->

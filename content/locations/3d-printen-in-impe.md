@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Impe
-
 - [3D printen in Lede](/3d-printen-in-lede)
 - [3D printen in Oordegem](/3d-printen-in-oordegem)
 - [3D printen in Smetlede](/3d-printen-in-smetlede)
 - [3D printen in Wanzele](/3d-printen-in-wanzele)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Impe
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Impe
+
+- Dekking: Impe, Impe centrum, Lede, Smetlede, Wanzele, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Impe.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Lede](/3d-printen-in-lede)
+- [3D printen in Smetlede](/3d-printen-in-smetlede)
+- [3D printen in Wanzele](/3d-printen-in-wanzele)
+## Klantenspotlight
+- Lokale makers en techniekers: kleine reeksen met vaste settings rond Impe centrum.
+- Vaak gevraagd: 3D print service Impe; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Impe en Impe centrum.
+
+## Locaties die we bedienen nabij Impe
+- Centrum van Impe
+- Lokale bedrijvenzone in Impe
+- Sporthal in Impe
+
+## Sectorfocus nabij Impe
+- Lokale makers en techniekers (Impe)
+- Kleine series en maatwerk (Impe)
+- Verenigingen en scholen (Impe)
+
+## Typische aanvragen rond Impe
+- 3D print service Impe
+- rapid prototyping Impe
+- 3D printing bedrijf Impe
+<!-- LOCAL_ENRICH_END -->

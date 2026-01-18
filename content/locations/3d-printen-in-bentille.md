@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Bentille
-
 - [3D printen in Kaprijke](/3d-printen-in-kaprijke)
 - [3D printen in Lembeke](/3d-printen-in-lembeke)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
 - [3D printen in Assenede](/3d-printen-in-assenede)
-
 ---
 
 ## Externe links
@@ -116,4 +114,36 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Bentille
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Bentille
+
+- Dekking: Bentille, Bentille kern, Kaprijke, Lembeke, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Bentille.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Kaprijke](/3d-printen-in-kaprijke)
+- [3D printen in Lembeke](/3d-printen-in-lembeke)
+## Lokale spotlight
+- KMO's en zelfstandigen: PLA/PETG onderdelen afgestemd op projecten rond Bentille kern.
+- Vaak gevraagd: 3D print service Bentille; we adviseren materiaal en afwerking.
+- Leverfocus: Bentille, Bentille kern, Kaprijke.
+
+## Plaatsen waar we vaak leveren rond Bentille
+- Centrum van Bentille
+- Lokale bedrijvenzone in Bentille
+- Sporthal in Bentille
+
+## Sectoren die we vaak helpen in Bentille
+- KMO's en zelfstandigen (Bentille)
+- Onderhoud en herstellingen (Bentille)
+- Verenigingen en onderwijs (Bentille)
+
+## Veelgevraagde zoekopdrachten in Bentille
+- 3D print service Bentille
+- rapid prototyping Bentille
+- 3D printing bedrijf Bentille
+<!-- LOCAL_ENRICH_END -->

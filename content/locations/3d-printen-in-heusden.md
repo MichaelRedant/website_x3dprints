@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Heusden
-
 - [3D printen in Destelbergen](/3d-printen-in-destelbergen)
 - [3D printen in Gent](/3d-printen-in-gent)
 - [3D printen in Wetteren](/3d-printen-in-wetteren)
 - [3D printen in Oosterzele](/3d-printen-in-oosterzele)
-
 ---
 
 ## Externe links
@@ -116,4 +114,35 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Heusden
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Heusden
+
+- Dekking: Heusden, Heusden centrum, Destelbergen, Gent rand, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Heusden.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Destelbergen](/3d-printen-in-destelbergen)
+## Lokale spotlight
+- Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Heusden centrum.
+- Vaak gevraagd: 3D print service Heusden; we adviseren materiaal en afwerking.
+- Leverfocus: Heusden, Heusden centrum, Destelbergen.
+
+## Plaatsen waar we vaak leveren rond Heusden
+- Centrum van Heusden
+- Lokale bedrijvenzone in Heusden
+- Sporthal in Heusden
+
+## Sectoren die we vaak helpen in Heusden
+- Lokale makers en techniekers (Heusden)
+- Projecten langs de Schelde (Heusden)
+- KMO's en verenigingen (Heusden)
+
+## Veelgevraagde zoekopdrachten in Heusden
+- 3D print service Heusden
+- rapid prototyping Heusden
+- 3D printing bedrijf Heusden
+<!-- LOCAL_ENRICH_END -->

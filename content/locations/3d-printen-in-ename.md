@@ -1,22 +1,22 @@
-# 3D printen in Ename (Oudenaarde): abdijsite en Scheldevallei als decor
-
-Voor projecten rond de abdijsite, Archeopark en Scheldevallei levert X3DPrints nauwkeurige 3D prints. Perfect voor educatieve maquettes, outdoor fixtures en technische onderdelen.
-
----
-
-## Waarom X3DPrints in Ename?
-
-- **Korte lijnen**: offerte meestal binnen 24 uur.  
-- **Levering** richting Archeopark, Abdijstraat en Scheldekaaien; afhalen in Herzele kan.  
-- **Materiaalkeuze**: PLA Matte voor museale maquettes, PETG voor buitenobjecten langs de rivier, TPU voor flexibele beschermers.  
-- **Transparante prijzen**: bekijk [pricing](/pricing) of start via [contact](/contact).
-
-## Lokale toepassingen
-
-- **Archeopark & erfgoed**: schaalmodellen, infopanelen en props in PLA.  
-- **Scheldeprojecten**: PETG markers, houders en klemmen voor vochtige omgevingen.  
-- **KMO's**: jigs, behuizingen en prototypes met snelle doorlooptijd.
-
+# 3D printen in Ename (Oudenaarde): abdijsite en Scheldevallei als decor
+
+Voor projecten rond de abdijsite, Archeopark en Scheldevallei levert X3DPrints nauwkeurige 3D prints. Perfect voor educatieve maquettes, outdoor fixtures en technische onderdelen.
+
+---
+
+## Waarom X3DPrints in Ename?
+
+- **Korte lijnen**: offerte meestal binnen 24 uur.  
+- **Levering** richting Archeopark, Abdijstraat en Scheldekaaien; afhalen in Herzele kan.  
+- **Materiaalkeuze**: PLA Matte voor museale maquettes, PETG voor buitenobjecten langs de rivier, TPU voor flexibele beschermers.  
+- **Transparante prijzen**: bekijk [pricing](/pricing) of start via [contact](/contact).
+
+## Lokale toepassingen
+
+- **Archeopark & erfgoed**: schaalmodellen, infopanelen en props in PLA.  
+- **Scheldeprojecten**: PETG markers, houders en klemmen voor vochtige omgevingen.  
+- **KMO's**: jigs, behuizingen en prototypes met snelle doorlooptijd.
+
 
 
 ## Lokale focus in Ename (Oudenaarde)
@@ -27,19 +27,19 @@ Zoek je 3D printen in Ename (Oudenaarde)? We denken mee over passing, sterkte en
 - Ergonomische grips en handgrepen op maat.
 - Fixtures en passtukken voor controle en kalibratie.
 
-## Materialen
-
-- **PLA**: strak en detailrijk, ideaal voor educatief materiaal.  
-- **PETG**: taai en weerbestendig voor buiten.  
-- **TPU**: flexibel, dempend en geschikt voor anti-slip.
-
-## Aanpak
-
-1) Upload je STL/STEP via [contact](/contact) en noteer toepassing + aantallen.  
-2) Wij adviseren materiaal en orientatie.  
-3) Print, QC en levering in Ename of afhalen.
-
-Meer weten? Check [materials](/materials), [viewer](/viewer) en sectorcases op [segments](/segments). Tips vind je op de [blog](/blog).
+## Materialen
+
+- **PLA**: strak en detailrijk, ideaal voor educatief materiaal.  
+- **PETG**: taai en weerbestendig voor buiten.  
+- **TPU**: flexibel, dempend en geschikt voor anti-slip.
+
+## Aanpak
+
+1) Upload je STL/STEP via [contact](/contact) en noteer toepassing + aantallen.  
+2) Wij adviseren materiaal en orientatie.  
+3) Print, QC en levering in Ename of afhalen.
+
+Meer weten? Check [materials](/materials), [viewer](/viewer) en sectorcases op [segments](/segments). Tips vind je op de [blog](/blog).
 
 
 ## Veelgestelde vragen over 3D printen in Ename (Oudenaarde)
@@ -55,3 +55,34 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 **Hoe snel is de doorlooptijd?**
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Ename (Oudenaarde)
+
+- Dekking: Ename (Oudenaarde); levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Ename (Oudenaarde).
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Lokale spotlight
+- Lokale teams in Ename (Oudenaarde): PLA/PETG onderdelen afgestemd op projecten rond Ename (Oudenaarde).
+- Vaak gevraagd: 3D print service Ename; we adviseren materiaal en afwerking.
+- Leverfocus: Ename (Oudenaarde).
+
+## Plaatsen waar we vaak leveren rond Ename (Oudenaarde)
+- Centrum van Ename (Oudenaarde)
+- Lokale bedrijvenzone in Ename (Oudenaarde)
+- Sporthal in Ename (Oudenaarde)
+
+## Sectoren die we vaak helpen in Ename (Oudenaarde)
+- KMO's en makers in Ename (Oudenaarde): pasmallen en behuizingen.
+- Retail/events rond Ename (Oudenaarde): displays en props.
+- Onderwijs/labs in Ename (Oudenaarde): lesklare prints.
+
+## Veelgevraagde zoekopdrachten in Ename (Oudenaarde)
+- 3D print service Ename
+- rapid prototyping Ename
+- 3D printing bedrijf Ename
+<!-- LOCAL_ENRICH_END -->

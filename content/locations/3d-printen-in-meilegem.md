@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Meilegem
-
 - [3D printen in Zwalm](/3d-printen-in-zwalm)
 - [3D printen in Hundelgem](/3d-printen-in-hundelgem)
 - [3D printen in Paulatem](/3d-printen-in-paulatem)
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Meilegem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Meilegem
+
+- Dekking: Meilegem, Meilegem centrum, Zwalm, Nederzwalm-Hermelgem, Munkzwalm, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Meilegem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Zwalm](/3d-printen-in-zwalm)
+- [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
+- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+## Spotlight rond Meilegem
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Meilegem centrum.
+- Terugkerende order: 3D print service Meilegem; we bewaren je instellingen.
+- Leverfocus: Meilegem, Meilegem centrum, Zwalm.
+
+## Landmarks in de buurt van Meilegem
+- Centrum van Meilegem
+- Lokale bedrijvenzone in Meilegem
+- Sporthal in Meilegem
+
+## Teams die we ondersteunen rond Meilegem
+- Lokale makers en ontwerpers (Meilegem)
+- Kleine series en maatwerk (Meilegem)
+- Verenigingen en onderwijs (Meilegem)
+
+## Wat vaak wordt gevraagd in Meilegem
+- 3D print service Meilegem
+- rapid prototyping Meilegem
+- 3D printing bedrijf Meilegem
+<!-- LOCAL_ENRICH_END -->

@@ -94,3 +94,34 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 **Welke bestanden kan ik aanleveren?**
 
 STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen met het modelleren.
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Rumst
+
+- Dekking: Rumst; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Rumst.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Klantenspotlight
+- Lokale teams in Rumst: kleine reeksen met vaste settings rond Rumst.
+- Vaak gevraagd: 3D print service Rumst; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Rumst en Rumst.
+
+## Locaties die we bedienen nabij Rumst
+- Centrum van Rumst
+- Lokale bedrijvenzone in Rumst
+- Sporthal in Rumst
+
+## Sectorfocus nabij Rumst
+- KMO's en makers in Rumst: pasmallen en behuizingen.
+- Retail/events rond Rumst: displays en props.
+- Onderwijs/labs in Rumst: lesklare prints.
+
+## Typische aanvragen rond Rumst
+- 3D print service Rumst
+- rapid prototyping Rumst
+- 3D printing bedrijf Rumst
+<!-- LOCAL_ENRICH_END -->

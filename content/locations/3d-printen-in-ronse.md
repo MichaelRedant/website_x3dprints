@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Ronse
-
 - [3D printen in De Klijpe](/3d-printen-in-de-klijpe)
 - [3D printen in Louise-Marie](/3d-printen-in-louise-marie)
 - [3D printen in Maarkedal](/3d-printen-in-maarkedal)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Ronse
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Ronse
+
+- Dekking: Ronse, Ronse centrum, De Klijpe, Louise-Marie, Maarkedal, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Ronse.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in De Klijpe](/3d-printen-in-de-klijpe)
+- [3D printen in Louise-Marie](/3d-printen-in-louise-marie)
+- [3D printen in Maarkedal](/3d-printen-in-maarkedal)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Ronse centrum.
+- Vaak gevraagd: 3D print service Ronse; we adviseren materiaal en afwerking.
+- Leverfocus: Ronse, Ronse centrum, De Klijpe.
+
+## Plaatsen waar we vaak leveren rond Ronse
+- Centrum van Ronse
+- Lokale bedrijvenzone in Ronse
+- Sporthal in Ronse
+
+## Sectoren die we vaak helpen in Ronse
+- Lokale makers en ontwerpers (Ronse)
+- Kleine series en maatwerk (Ronse)
+- Verenigingen en onderwijs (Ronse)
+
+## Veelgevraagde zoekopdrachten in Ronse
+- 3D print service Ronse
+- rapid prototyping Ronse
+- 3D printing bedrijf Ronse
+<!-- LOCAL_ENRICH_END -->

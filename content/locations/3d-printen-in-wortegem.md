@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Wortegem of af
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Wortegem
-
 - [3D printen in Wortegem-Petegem](/3d-printen-in-wortegem-petegem)
 - [3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
 - [3D printen in Moregem](/3d-printen-in-moregem)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Wortegem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Wortegem
+
+- Dekking: Wortegem, Wortegem centrum, Wortegem-Petegem, Petegem-aan-de-Schelde, Moregem, Elsegem; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Wortegem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Wortegem-Petegem](/3d-printen-in-wortegem-petegem)
+- [3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
+- [3D printen in Moregem](/3d-printen-in-moregem)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Wortegem centrum.
+- Vaak gevraagd: 3D print service Wortegem; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Wortegem en Wortegem centrum.
+
+## Locaties die we bedienen nabij Wortegem
+- Centrum van Wortegem
+- Lokale bedrijvenzone in Wortegem
+- Sporthal in Wortegem
+
+## Sectorfocus nabij Wortegem
+- Lokale makers en ontwerpers (Wortegem)
+- Kleine series en maatwerk (Wortegem)
+- Verenigingen en onderwijs (Wortegem)
+
+## Typische aanvragen rond Wortegem
+- 3D print service Wortegem
+- rapid prototyping Wortegem
+- 3D printing bedrijf Wortegem
+<!-- LOCAL_ENRICH_END -->

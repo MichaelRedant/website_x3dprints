@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Merelbeke-Melle
-
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [3D printen in Melle](/3d-printen-in-melle)
 - [3D printen in Gontrode](/3d-printen-in-gontrode)
 - [3D printen in Bottelare](/3d-printen-in-bottelare)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Merelbeke-Melle
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Merelbeke-Melle
+
+- Dekking: Merelbeke-Melle, Merelbeke, Melle, Bottelare, Lemberge, Melsen; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Merelbeke-Melle.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [3D printen in Melle](/3d-printen-in-melle)
+- [3D printen in Bottelare](/3d-printen-in-bottelare)
+## Spotlight rond Merelbeke-Melle
+- KMO's en maakbedrijven in de Gentse rand: behuizingen en pasmallen voor teams in Merelbeke.
+- Terugkerende order: 3D print service Merelbeke-Melle; we bewaren je instellingen.
+- Leverfocus: Merelbeke-Melle, Merelbeke, Melle.
+
+## Landmarks in de buurt van Merelbeke-Melle
+- Centrum van Merelbeke-Melle
+- Lokale bedrijvenzone in Merelbeke-Melle
+- Sporthal in Merelbeke-Melle
+
+## Teams die we ondersteunen rond Merelbeke-Melle
+- KMO's en maakbedrijven in de Gentse rand (Merelbeke-Melle)
+- Makers en ontwerpers (Merelbeke-Melle)
+- Scholen en verenigingen (Merelbeke-Melle)
+
+## Wat vaak wordt gevraagd in Merelbeke-Melle
+- 3D print service Merelbeke-Melle
+- rapid prototyping Merelbeke-Melle
+- 3D printing bedrijf Merelbeke-Melle
+<!-- LOCAL_ENRICH_END -->

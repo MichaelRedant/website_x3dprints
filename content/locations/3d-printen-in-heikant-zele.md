@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Heikant (Zele)
-
 - [3D printen in Zele](/3d-printen-in-zele)
 - [3D printen in Hamme](/3d-printen-in-hamme)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
 - [3D printen in Lokeren](/3d-printen-in-lokeren)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Heikant (Zele)
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Heikant (Zele)
+
+- Dekking: Heikant (Zele), Heikant (Zele) centrum, Zele, Hamme, Dendermonde, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Heikant (Zele).
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Zele](/3d-printen-in-zele)
+- [3D printen in Hamme](/3d-printen-in-hamme)
+- [3D printen in Dendermonde](/3d-printen-in-dendermonde)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Heikant (Zele) centrum.
+- Vaak gevraagd: 3D print service Heikant Zele; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Heikant (Zele) en Heikant (Zele) centrum.
+
+## Locaties die we bedienen nabij Heikant (Zele)
+- Centrum van Heikant (Zele)
+- Lokale bedrijvenzone in Heikant (Zele)
+- Sporthal in Heikant (Zele)
+
+## Sectorfocus nabij Heikant (Zele)
+- Lokale makers en ontwerpers (Heikant (Zele))
+- Kleine series en maatwerk (Heikant (Zele))
+- Verenigingen en onderwijs (Heikant (Zele))
+
+## Typische aanvragen rond Heikant (Zele)
+- 3D print service Heikant Zele
+- rapid prototyping Heikant Zele
+- 3D printing bedrijf Heikant Zele
+<!-- LOCAL_ENRICH_END -->

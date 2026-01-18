@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Sint-Maria-Latem (Zwalm)
-
 - [3D printen in Zwalm](/3d-printen-in-zwalm)
 - [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
 - [3D printen in Rozebeke (Zwalm)](/3d-printen-in-rozebeke-zwalm)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Sint-Maria-Latem (Zwalm)
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Sint-Maria-Latem (Zwalm)
+
+- Dekking: Sint-Maria-Latem (Zwalm), Sint-Maria-Latem (Zwalm) centrum, Zwalm, Munkzwalm, Nederzwalm-Hermelgem, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Maria-Latem (Zwalm).
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Zwalm](/3d-printen-in-zwalm)
+- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+- [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Sint-Maria-Latem (Zwalm) centrum.
+- Vaak gevraagd: 3D print service Sint-Maria-Latem Zwalm; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Sint-Maria-Latem (Zwalm) en Sint-Maria-Latem (Zwalm) centrum.
+
+## Locaties die we bedienen nabij Sint-Maria-Latem (Zwalm)
+- Centrum van Sint-Maria-Latem (Zwalm)
+- Lokale bedrijvenzone in Sint-Maria-Latem (Zwalm)
+- Sporthal in Sint-Maria-Latem (Zwalm)
+
+## Sectorfocus nabij Sint-Maria-Latem (Zwalm)
+- Lokale makers en ontwerpers (Sint-Maria-Latem (Zwalm))
+- Kleine series en maatwerk (Sint-Maria-Latem (Zwalm))
+- Verenigingen en onderwijs (Sint-Maria-Latem (Zwalm))
+
+## Typische aanvragen rond Sint-Maria-Latem (Zwalm)
+- 3D print service Sint-Maria-Latem Zwalm
+- rapid prototyping Sint-Maria-Latem Zwalm
+- 3D printing bedrijf Sint-Maria-Latem Zwalm
+<!-- LOCAL_ENRICH_END -->

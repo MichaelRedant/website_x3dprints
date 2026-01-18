@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Zele
-
 - [3D printen in Heikant (Zele)](/3d-printen-in-heikant-zele)
 - [3D printen in Hamme](/3d-printen-in-hamme)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
 - [3D printen in Lokeren](/3d-printen-in-lokeren)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Zele
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Zele
+
+- Dekking: Zele, Zele centrum, Heikant (Zele), Hamme, Dendermonde, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Zele.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Heikant (Zele)](/3d-printen-in-heikant-zele)
+- [3D printen in Hamme](/3d-printen-in-hamme)
+- [3D printen in Dendermonde](/3d-printen-in-dendermonde)
+## Spotlight rond Zele
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Zele centrum.
+- Terugkerende order: 3D print service Zele; we bewaren je instellingen.
+- Leverfocus: Zele, Zele centrum, Heikant (Zele).
+
+## Landmarks in de buurt van Zele
+- Centrum van Zele
+- Lokale bedrijvenzone in Zele
+- Sporthal in Zele
+
+## Teams die we ondersteunen rond Zele
+- Lokale makers en ontwerpers (Zele)
+- KMO's en herstellingen in de Denderstreek (Zele)
+- Verenigingen en onderwijs (Zele)
+
+## Wat vaak wordt gevraagd in Zele
+- 3D print service Zele
+- rapid prototyping Zele
+- 3D printing bedrijf Zele
+<!-- LOCAL_ENRICH_END -->

@@ -96,12 +96,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Gontrode
-
 - [3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
 - [3D printen in Melle](/3d-printen-in-melle)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [3D printen in Schelderode](/3d-printen-in-schelderode)
-
 ---
 
 ## Externe links
@@ -114,4 +112,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Gontrode
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Gontrode
+
+- Dekking: Gontrode, Gontrode centrum, Melle, Merelbeke, Wetteren, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Gontrode.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Melle](/3d-printen-in-melle)
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [3D printen in Wetteren](/3d-printen-in-wetteren)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Gontrode centrum.
+- Vaak gevraagd: 3D print service Gontrode; we adviseren materiaal en afwerking.
+- Leverfocus: Gontrode, Gontrode centrum, Melle.
+
+## Plaatsen waar we vaak leveren rond Gontrode
+- Centrum van Gontrode
+- Lokale bedrijvenzone in Gontrode
+- Sporthal in Gontrode
+
+## Sectoren die we vaak helpen in Gontrode
+- Lokale makers en ontwerpers (Gontrode)
+- Kleine series en maatwerk (Gontrode)
+- Verenigingen en onderwijs (Gontrode)
+
+## Veelgevraagde zoekopdrachten in Gontrode
+- 3D print service Gontrode
+- rapid prototyping Gontrode
+- 3D printing bedrijf Gontrode
+<!-- LOCAL_ENRICH_END -->

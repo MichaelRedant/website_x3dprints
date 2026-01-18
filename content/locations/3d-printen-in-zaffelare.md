@@ -98,12 +98,11 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Zaffelare
-
 - [3D printen in Lochristi](/3d-printen-in-lochristi)
 - [3D printen in Beervelde](/3d-printen-in-beervelde)
+- [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
 - [3D printen in Zeveneken](/3d-printen-in-zeveneken)
 - [3D printen in Destelbergen](/3d-printen-in-destelbergen)
-
 ---
 
 ## Externe links
@@ -116,4 +115,38 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Zaffelare
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Zaffelare
+
+- Dekking: Zaffelare, Zaffelare centrum, Lochristi, Beervelde, Zeveneken, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Zaffelare.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Lochristi](/3d-printen-in-lochristi)
+- [3D printen in Beervelde](/3d-printen-in-beervelde)
+- [3D printen in Zeveneken](/3d-printen-in-zeveneken)
+- [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
+## Klantenspotlight
+- Lokale ondernemers en techniekers: kleine reeksen met vaste settings rond Zaffelare centrum.
+- Vaak gevraagd: 3D print service Zaffelare; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Zaffelare en Zaffelare centrum.
+
+## Locaties die we bedienen nabij Zaffelare
+- Centrum van Zaffelare
+- Lokale bedrijvenzone in Zaffelare
+- Sporthal in Zaffelare
+
+## Sectorfocus nabij Zaffelare
+- Lokale ondernemers en techniekers (Zaffelare)
+- Onderhoud en herstellingen (Zaffelare)
+- Verenigingen en onderwijs (Zaffelare)
+
+## Typische aanvragen rond Zaffelare
+- 3D print service Zaffelare
+- rapid prototyping Zaffelare
+- 3D printing bedrijf Zaffelare
+<!-- LOCAL_ENRICH_END -->

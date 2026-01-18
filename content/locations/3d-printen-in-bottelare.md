@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Bottelare
-
 - [3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [3D printen in Munte](/3d-printen-in-munte)
 - [3D printen in Lemberge](/3d-printen-in-lemberge)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Bottelare
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Bottelare
+
+- Dekking: Bottelare, Bottelare centrum, Merelbeke, Munte, Lemberge, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Bottelare.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [3D printen in Munte](/3d-printen-in-munte)
+- [3D printen in Lemberge](/3d-printen-in-lemberge)
+## Spotlight rond Bottelare
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Bottelare centrum.
+- Terugkerende order: 3D print service Bottelare; we bewaren je instellingen.
+- Leverfocus: Bottelare, Bottelare centrum, Merelbeke.
+
+## Landmarks in de buurt van Bottelare
+- Centrum van Bottelare
+- Lokale bedrijvenzone in Bottelare
+- Sporthal in Bottelare
+
+## Teams die we ondersteunen rond Bottelare
+- Lokale makers en ontwerpers (Bottelare)
+- Kleine series en maatwerk (Bottelare)
+- Verenigingen en onderwijs (Bottelare)
+
+## Wat vaak wordt gevraagd in Bottelare
+- 3D print service Bottelare
+- rapid prototyping Bottelare
+- 3D printing bedrijf Bottelare
+<!-- LOCAL_ENRICH_END -->

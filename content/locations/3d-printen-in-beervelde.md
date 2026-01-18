@@ -96,12 +96,11 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Park van Beerv
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Beervelde
-
 - [3D printen in Lochristi](/3d-printen-in-lochristi)
 - [3D printen in Zaffelare](/3d-printen-in-zaffelare)
 - [3D printen in Zeveneken](/3d-printen-in-zeveneken)
+- [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
 - [3D printen in Gent](/3d-printen-in-gent)
-
 ---
 
 ## Externe links
@@ -114,4 +113,38 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Beervelde
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Beervelde
+
+- Dekking: Beervelde, Beervelde centrum, Lochristi, Zaffelare, Zeveneken, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Beervelde.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Lochristi](/3d-printen-in-lochristi)
+- [3D printen in Zaffelare](/3d-printen-in-zaffelare)
+- [3D printen in Zeveneken](/3d-printen-in-zeveneken)
+- [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
+## Spotlight rond Beervelde
+- Lokale makers en techniekers: behuizingen en pasmallen voor teams in Beervelde centrum.
+- Terugkerende order: 3D print service Beervelde; we bewaren je instellingen.
+- Leverfocus: Beervelde, Beervelde centrum, Lochristi.
+
+## Landmarks in de buurt van Beervelde
+- Centrum van Beervelde
+- Lokale bedrijvenzone in Beervelde
+- Sporthal in Beervelde
+
+## Teams die we ondersteunen rond Beervelde
+- Lokale makers en techniekers (Beervelde)
+- Onderhoud en herstellingen (Beervelde)
+- Verenigingen en onderwijs (Beervelde)
+
+## Wat vaak wordt gevraagd in Beervelde
+- 3D print service Beervelde
+- rapid prototyping Beervelde
+- 3D printing bedrijf Beervelde
+<!-- LOCAL_ENRICH_END -->

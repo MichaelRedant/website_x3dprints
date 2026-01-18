@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Gavere
-
 - [3D printen in Semmerzake](/3d-printen-in-semmerzake)
 - [3D printen in Vurste](/3d-printen-in-vurste)
 - [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
 - [3D printen in Asper](/3d-printen-in-asper)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Gavere
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Gavere
+
+- Dekking: Gavere, Gavere centrum, Semmerzake, Vurste, Baaigem, Dikkelvenne; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Gavere.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Semmerzake](/3d-printen-in-semmerzake)
+- [3D printen in Vurste](/3d-printen-in-vurste)
+- [3D printen in Baaigem](/3d-printen-in-baaigem)
+## Klantenspotlight
+- KMO's en zelfstandigen in de Scheldevallei: kleine reeksen met vaste settings rond Gavere centrum.
+- Vaak gevraagd: 3D print service Gavere; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Gavere en Gavere centrum.
+
+## Locaties die we bedienen nabij Gavere
+- Centrum van Gavere
+- Lokale bedrijvenzone in Gavere
+- Sporthal in Gavere
+
+## Sectorfocus nabij Gavere
+- KMO's en zelfstandigen in de Scheldevallei (Gavere)
+- Makers en ontwerpers rond Gavere
+- Onderwijs en verenigingen (Gavere)
+
+## Typische aanvragen rond Gavere
+- 3D print service Gavere
+- rapid prototyping Gavere
+- 3D printing bedrijf Gavere
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Sint-Maria-Horebeke
-
 - [3D printen in Horebeke](/3d-printen-in-horebeke)
 - [3D printen in Sint-Kornelis-Horebeke](/3d-printen-in-sint-kornelis-horebeke)
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,36 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Sint-Maria-Horebeke
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Sint-Maria-Horebeke
+
+- Dekking: Sint-Maria-Horebeke, Sint-Maria-Horebeke centrum, Horebeke, Sint-Kornelis-Horebeke, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Maria-Horebeke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Horebeke](/3d-printen-in-horebeke)
+- [3D printen in Sint-Kornelis-Horebeke](/3d-printen-in-sint-kornelis-horebeke)
+## Klantenspotlight
+- Lokale makers en techniekers: kleine reeksen met vaste settings rond Sint-Maria-Horebeke centrum.
+- Vaak gevraagd: 3D print service Sint-Maria-Horebeke; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Sint-Maria-Horebeke en Sint-Maria-Horebeke centrum.
+
+## Locaties die we bedienen nabij Sint-Maria-Horebeke
+- Centrum van Sint-Maria-Horebeke
+- Lokale bedrijvenzone in Sint-Maria-Horebeke
+- Sporthal in Sint-Maria-Horebeke
+
+## Sectorfocus nabij Sint-Maria-Horebeke
+- Lokale makers en techniekers (Sint-Maria-Horebeke)
+- Creatieve projecten en maquettes (Sint-Maria-Horebeke)
+- Verenigingen en scholen (Sint-Maria-Horebeke)
+
+## Typische aanvragen rond Sint-Maria-Horebeke
+- 3D print service Sint-Maria-Horebeke
+- rapid prototyping Sint-Maria-Horebeke
+- 3D printing bedrijf Sint-Maria-Horebeke
+<!-- LOCAL_ENRICH_END -->

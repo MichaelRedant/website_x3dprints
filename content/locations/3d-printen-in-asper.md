@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Asper
-
 - [3D printen in Gavere](/3d-printen-in-gavere)
 - [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
 - [3D printen in Semmerzake](/3d-printen-in-semmerzake)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Asper
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Asper
+
+- Dekking: Asper, Asper centrum, Gavere, Semmerzake, Dikkelvenne, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Asper.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Gavere](/3d-printen-in-gavere)
+- [3D printen in Semmerzake](/3d-printen-in-semmerzake)
+- [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+## Lokale spotlight
+- Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Asper centrum.
+- Vaak gevraagd: 3D print service Asper; we adviseren materiaal en afwerking.
+- Leverfocus: Asper, Asper centrum, Gavere.
+
+## Plaatsen waar we vaak leveren rond Asper
+- Centrum van Asper
+- Lokale bedrijvenzone in Asper
+- Sporthal in Asper
+
+## Sectoren die we vaak helpen in Asper
+- Lokale makers en techniekers (Asper)
+- Retail en lokale handel (Asper)
+- Onderwijs en verenigingen (Asper)
+
+## Veelgevraagde zoekopdrachten in Asper
+- 3D print service Asper
+- rapid prototyping Asper
+- 3D printing bedrijf Asper
+<!-- LOCAL_ENRICH_END -->

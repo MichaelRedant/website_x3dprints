@@ -1,4 +1,5 @@
 import { type Locale } from "./locales"
+import { EN_LOCATION_SLUGS } from "@/lib/locations"
 
 const EN_PREFIX = "/en"
 
@@ -23,6 +24,7 @@ const EN_PATHS = new Set<string>([
   "/cookies",
   "/faq",
   "/algemene-voorwaarden",
+  "/locaties",
 ])
 
 const EN_BLOG_SLUGS = new Set<string>([
@@ -103,6 +105,10 @@ function hasEnglishRoute(path: string) {
   }
   if (normalized.startsWith("/materials/")) {
     return true
+  }
+  if (normalized.startsWith("/")) {
+    const slug = normalized.slice(1).split("/")[0]
+    if (EN_LOCATION_SLUGS.has(slug)) return true
   }
   return false
 }

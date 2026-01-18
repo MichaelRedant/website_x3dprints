@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Lochristi
-
 - [3D printen in Beervelde](/3d-printen-in-beervelde)
 - [3D printen in Zaffelare](/3d-printen-in-zaffelare)
 - [3D printen in Zeveneken](/3d-printen-in-zeveneken)
 - [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
-
 ---
 
 ## Externe links
@@ -116,4 +114,38 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Lochristi
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Lochristi
+
+- Dekking: Lochristi, Lochristi centrum, Beervelde, Zaffelare, Zeveneken, Wachtebeke; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Lochristi.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Beervelde](/3d-printen-in-beervelde)
+- [3D printen in Zaffelare](/3d-printen-in-zaffelare)
+- [3D printen in Zeveneken](/3d-printen-in-zeveneken)
+- [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Lochristi centrum.
+- Vaak gevraagd: 3D print service Lochristi; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Lochristi en Lochristi centrum.
+
+## Locaties die we bedienen nabij Lochristi
+- Centrum van Lochristi
+- Lokale bedrijvenzone in Lochristi
+- Sporthal in Lochristi
+
+## Sectorfocus nabij Lochristi
+- Lokale makers en ontwerpers (Lochristi)
+- Kleine series en maatwerk (Lochristi)
+- Verenigingen en onderwijs (Lochristi)
+
+## Typische aanvragen rond Lochristi
+- 3D print service Lochristi
+- rapid prototyping Lochristi
+- 3D printing bedrijf Lochristi
+<!-- LOCAL_ENRICH_END -->

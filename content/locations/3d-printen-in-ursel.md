@@ -97,13 +97,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Aalter
-
 - [3D printen in Aalter](/3d-printen-in-aalter)
-- [3D printen in Bellem](/3d-printen-in-bellem)
 - [3D printen in Knesselare](/3d-printen-in-knesselare)
 - [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
 - [3D printen in Poeke](/3d-printen-in-poeke)
-
 ---
 
 ## Externe links
@@ -116,3 +113,38 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 ## Offerte voor 3D printen in Ursel
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Ursel
+
+- Dekking: Ursel, Ursel centrum, Aalter, Bellem, Knesselare, Lotenhulle; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Ursel.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Aalter](/3d-printen-in-aalter)
+- [3D printen in Knesselare](/3d-printen-in-knesselare)
+- [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
+- [3D printen in Poeke](/3d-printen-in-poeke)
+- [3D printen in Bellem](/3d-printen-in-bellem)
+## Spotlight rond Ursel
+- Bos- en natuurprojecten: behuizingen en pasmallen voor teams in Ursel centrum.
+- Terugkerende order: 3D print service Ursel; we bewaren je instellingen.
+- Leverfocus: Ursel, Ursel centrum, Aalter.
+
+## Landmarks in de buurt van Ursel
+- Centrum van Ursel
+- Lokale bedrijvenzone in Ursel
+- Sporthal in Ursel
+
+## Teams die we ondersteunen rond Ursel
+- Bos- en natuurprojecten (Ursel)
+- Lokale KMO's en techniekers (Ursel)
+- Makers en verenigingen (Ursel)
+
+## Wat vaak wordt gevraagd in Ursel
+- 3D print service Ursel
+- rapid prototyping Ursel
+- 3D printing bedrijf Ursel
+<!-- LOCAL_ENRICH_END -->

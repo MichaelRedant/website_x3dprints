@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Petruskerk (Dikkelvenne) of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Dikkelvenne
-
 - [3D printen in Gavere](/3d-printen-in-gavere)
 - [3D printen in Baaigem](/3d-printen-in-baaigem)
 - [3D printen in Asper](/3d-printen-in-asper)
 - [3D printen in Oosterzele](/3d-printen-in-oosterzele)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Petrusker
 
 ## Offerte voor 3D printen in Dikkelvenne
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Dikkelvenne
+
+- Dekking: Dikkelvenne, Dikkelvenne centrum, Gavere, Baaigem, Vurste, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Dikkelvenne.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Gavere](/3d-printen-in-gavere)
+- [3D printen in Baaigem](/3d-printen-in-baaigem)
+- [3D printen in Vurste](/3d-printen-in-vurste)
+## Spotlight rond Dikkelvenne
+- KMO's en zelfstandigen: behuizingen en pasmallen voor teams in Dikkelvenne centrum.
+- Terugkerende order: 3D print service Dikkelvenne; we bewaren je instellingen.
+- Leverfocus: Dikkelvenne, Dikkelvenne centrum, Gavere.
+
+## Landmarks in de buurt van Dikkelvenne
+- Centrum van Dikkelvenne
+- Lokale bedrijvenzone in Dikkelvenne
+- Sporthal in Dikkelvenne
+
+## Teams die we ondersteunen rond Dikkelvenne
+- KMO's en zelfstandigen (Dikkelvenne)
+- Onderhoud en herstellingen (Dikkelvenne)
+- Verenigingen en events (Dikkelvenne)
+
+## Wat vaak wordt gevraagd in Dikkelvenne
+- 3D print service Dikkelvenne
+- rapid prototyping Dikkelvenne
+- 3D printing bedrijf Dikkelvenne
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Sint-Niklaas
-
 - [3D printen in Belsele](/3d-printen-in-belsele)
 - [3D printen in Nieuwkerken-Waas](/3d-printen-in-nieuwkerken-waas)
 - [3D printen in Sinaai](/3d-printen-in-sinaai)
 - [3D printen in Beveren](/3d-printen-in-beveren)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Sint-Niklaas
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Sint-Niklaas
+
+- Dekking: Sint-Niklaas, Sint-Niklaas centrum, Belsele, Nieuwkerken-Waas, Sinaai, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Niklaas.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Belsele](/3d-printen-in-belsele)
+- [3D printen in Nieuwkerken-Waas](/3d-printen-in-nieuwkerken-waas)
+- [3D printen in Sinaai](/3d-printen-in-sinaai)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Sint-Niklaas centrum.
+- Vaak gevraagd: 3D print service Sint-Niklaas; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Sint-Niklaas en Sint-Niklaas centrum.
+
+## Locaties die we bedienen nabij Sint-Niklaas
+- Centrum van Sint-Niklaas
+- Lokale bedrijvenzone in Sint-Niklaas
+- Sporthal in Sint-Niklaas
+
+## Sectorfocus nabij Sint-Niklaas
+- Lokale makers en ontwerpers (Sint-Niklaas)
+- KMO's en herstellingen in het Waasland (Sint-Niklaas)
+- Verenigingen en onderwijs (Sint-Niklaas)
+
+## Typische aanvragen rond Sint-Niklaas
+- 3D print service Sint-Niklaas
+- rapid prototyping Sint-Niklaas
+- 3D printing bedrijf Sint-Niklaas
+<!-- LOCAL_ENRICH_END -->

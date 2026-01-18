@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Munkzwalm of a
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Munkzwalm
-
 - [3D printen in Zwalm](/3d-printen-in-zwalm)
 - [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
 - [3D printen in Beerlegem](/3d-printen-in-beerlegem)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Munkzwalm
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Munkzwalm
+
+- Dekking: Munkzwalm, Munkzwalm centrum, Zwalm, Nederzwalm-Hermelgem, Roborst, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Munkzwalm.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Zwalm](/3d-printen-in-zwalm)
+- [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
+- [3D printen in Roborst](/3d-printen-in-roborst)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Munkzwalm centrum.
+- Vaak gevraagd: 3D print service Munkzwalm; we adviseren materiaal en afwerking.
+- Leverfocus: Munkzwalm, Munkzwalm centrum, Zwalm.
+
+## Plaatsen waar we vaak leveren rond Munkzwalm
+- Centrum van Munkzwalm
+- Lokale bedrijvenzone in Munkzwalm
+- Sporthal in Munkzwalm
+
+## Sectoren die we vaak helpen in Munkzwalm
+- Lokale makers en ontwerpers (Munkzwalm)
+- Kleine series en maatwerk (Munkzwalm)
+- Verenigingen en onderwijs (Munkzwalm)
+
+## Veelgevraagde zoekopdrachten in Munkzwalm
+- 3D print service Munkzwalm
+- rapid prototyping Munkzwalm
+- 3D printing bedrijf Munkzwalm
+<!-- LOCAL_ENRICH_END -->

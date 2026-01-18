@@ -27,7 +27,7 @@ export default function LanguageSwitcher({ className }: { className?: string }) 
   const router = useRouter()
   const [open, setOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
-  const [menuStyle, setMenuStyle] = useState({ top: 0, left: 0, width: 220 })
+  const [menuStyle, setMenuStyle] = useState({ top: 0, left: 0, width: 190 })
   const rootRef = useRef<HTMLDivElement | null>(null)
   const triggerRef = useRef<HTMLButtonElement | null>(null)
   const menuRef = useRef<HTMLDivElement | null>(null)
@@ -40,7 +40,7 @@ export default function LanguageSwitcher({ className }: { className?: string }) 
   const updateMenuPosition = () => {
     if (!triggerRef.current) return
     const rect = triggerRef.current.getBoundingClientRect()
-    const width = 220
+    const width = 190
     const viewportPadding = 8
     const left = Math.min(
       Math.max(viewportPadding, rect.right - width),
@@ -110,12 +110,12 @@ export default function LanguageSwitcher({ className }: { className?: string }) 
         aria-expanded={open}
         aria-label={locale === "en" ? "Choose language" : "Kies taal"}
         className={cn(
-          "inline-flex items-center gap-3 rounded-2xl border border-slate-200/80 bg-white/80 px-3 py-2 shadow-[0_10px_24px_rgba(15,23,42,0.12)] transition hover:-translate-y-0.5",
+          "inline-flex items-center gap-2 rounded-xl border border-slate-200/80 bg-white/80 px-2.5 py-1.5 shadow-[0_10px_24px_rgba(15,23,42,0.12)] transition hover:-translate-y-0.5",
           "dark:border-[#1f2336] dark:bg-[#0B0F1A]/90 dark:shadow-[0_12px_30px_rgba(0,0,0,0.45)]",
           "focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-[#0B0F1A]",
         )}
       >
-        <span className="inline-flex h-6 w-9 items-center justify-center overflow-hidden rounded-md border border-white/70 bg-white/70">
+        <span className="inline-flex h-6 w-8 items-center justify-center overflow-hidden rounded-md border border-white/70 bg-white/70">
           {(() => {
             const Flag = flagFor(locale)
             return Flag ? (
@@ -128,12 +128,12 @@ export default function LanguageSwitcher({ className }: { className?: string }) 
           })()}
         </span>
         <span className="flex flex-col items-start leading-tight">
-          <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-700 dark:text-slate-100">
+          <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-slate-700 dark:text-slate-100">
             {LOCALE_LABELS[locale]}
           </span>
-          <span className="text-xs text-slate-500 dark:text-slate-300">{LOCALE_NAMES[locale]}</span>
+          <span className="text-[11px] text-slate-500 dark:text-slate-300">{LOCALE_NAMES[locale]}</span>
         </span>
-        <svg viewBox="0 0 20 20" aria-hidden className="h-4 w-4 text-slate-500">
+        <svg viewBox="0 0 20 20" aria-hidden className="h-3.5 w-3.5 text-slate-500">
           <path d="M5 7l5 6 5-6" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
         </svg>
       </button>

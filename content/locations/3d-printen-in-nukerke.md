@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Nukerke of afh
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Nukerke
-
 - [3D printen in Maarkedal](/3d-printen-in-maarkedal)
 - [3D printen in Schorisse](/3d-printen-in-schorisse)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 - [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Nukerke
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Nukerke
+
+- Dekking: Nukerke, Nukerke centrum, Maarkedal, Etikhove, Maarke-Kerkem, Schorisse; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Nukerke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Maarkedal](/3d-printen-in-maarkedal)
+- [3D printen in Etikhove](/3d-printen-in-etikhove)
+- [3D printen in Maarke-Kerkem](/3d-printen-in-maarke-kerkem)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Nukerke centrum.
+- Vaak gevraagd: 3D print service Nukerke; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Nukerke en Nukerke centrum.
+
+## Locaties die we bedienen nabij Nukerke
+- Centrum van Nukerke
+- Lokale bedrijvenzone in Nukerke
+- Sporthal in Nukerke
+
+## Sectorfocus nabij Nukerke
+- Lokale makers en ontwerpers (Nukerke)
+- Landelijke KMO's en herstellingen (Nukerke)
+- Verenigingen en onderwijs (Nukerke)
+
+## Typische aanvragen rond Nukerke
+- 3D print service Nukerke
+- rapid prototyping Nukerke
+- 3D printing bedrijf Nukerke
+<!-- LOCAL_ENRICH_END -->

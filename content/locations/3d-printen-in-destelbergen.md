@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Destelbergen
-
 - [3D printen in Heusden](/3d-printen-in-heusden)
 - [3D printen in Gent](/3d-printen-in-gent)
 - [3D printen in Wetteren](/3d-printen-in-wetteren)
 - [3D printen in Oosterzele](/3d-printen-in-oosterzele)
-
 ---
 
 ## Externe links
@@ -116,4 +114,35 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Destelbergen
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Destelbergen
+
+- Dekking: Destelbergen, Destelbergen centrum, Heusden, Gent rand, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Destelbergen.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Heusden](/3d-printen-in-heusden)
+## Spotlight rond Destelbergen
+- Lokale KMO's en zelfstandigen: behuizingen en pasmallen voor teams in Destelbergen centrum.
+- Terugkerende order: 3D print service Destelbergen; we bewaren je instellingen.
+- Leverfocus: Destelbergen, Destelbergen centrum, Heusden.
+
+## Landmarks in de buurt van Destelbergen
+- Centrum van Destelbergen
+- Lokale bedrijvenzone in Destelbergen
+- Sporthal in Destelbergen
+
+## Teams die we ondersteunen rond Destelbergen
+- Lokale KMO's en zelfstandigen (Destelbergen)
+- Design en maatwerk rond Gent (Destelbergen)
+- Onderwijs en verenigingen (Destelbergen)
+
+## Wat vaak wordt gevraagd in Destelbergen
+- 3D print service Destelbergen
+- rapid prototyping Destelbergen
+- 3D printing bedrijf Destelbergen
+<!-- LOCAL_ENRICH_END -->

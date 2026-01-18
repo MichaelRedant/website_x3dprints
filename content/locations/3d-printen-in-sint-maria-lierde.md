@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Maria-Mag
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Sint-Maria-Lierde
-
 - [3D printen in Lierde](/3d-printen-in-lierde)
 - [3D printen in Deftinge](/3d-printen-in-deftinge)
 - [3D printen in Hemelveerdegem](/3d-printen-in-hemelveerdegem)
 - [3D printen in Geraardsbergen](/3d-printen-in-geraardsbergen)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Sint-Maria-Lierde
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Sint-Maria-Lierde
+
+- Dekking: Sint-Maria-Lierde, Sint-Maria-Lierde centrum, Lierde, Deftinge, Hemelveerdegem, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Maria-Lierde.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Lierde](/3d-printen-in-lierde)
+- [3D printen in Deftinge](/3d-printen-in-deftinge)
+- [3D printen in Hemelveerdegem](/3d-printen-in-hemelveerdegem)
+## Lokale spotlight
+- Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Sint-Maria-Lierde centrum.
+- Vaak gevraagd: 3D print service Sint-Maria-Lierde; we adviseren materiaal en afwerking.
+- Leverfocus: Sint-Maria-Lierde, Sint-Maria-Lierde centrum, Lierde.
+
+## Plaatsen waar we vaak leveren rond Sint-Maria-Lierde
+- Centrum van Sint-Maria-Lierde
+- Lokale bedrijvenzone in Sint-Maria-Lierde
+- Sporthal in Sint-Maria-Lierde
+
+## Sectoren die we vaak helpen in Sint-Maria-Lierde
+- Lokale makers en techniekers (Sint-Maria-Lierde)
+- Kleine series en maatwerk (Sint-Maria-Lierde)
+- Verenigingen en scholen (Sint-Maria-Lierde)
+
+## Veelgevraagde zoekopdrachten in Sint-Maria-Lierde
+- 3D print service Sint-Maria-Lierde
+- rapid prototyping Sint-Maria-Lierde
+- 3D printing bedrijf Sint-Maria-Lierde
+<!-- LOCAL_ENRICH_END -->

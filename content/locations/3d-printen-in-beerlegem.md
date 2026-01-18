@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Beerlegem of a
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Beerlegem
-
 - [3D printen in Zwalm](/3d-printen-in-zwalm)
 - [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
 - [3D printen in Dikkele](/3d-printen-in-dikkele)
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Beerlegem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Beerlegem
+
+- Dekking: Beerlegem, Beerlegem centrum, Zwalm, Nederzwalm-Hermelgem, Munkzwalm, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Beerlegem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Zwalm](/3d-printen-in-zwalm)
+- [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
+- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+## Spotlight rond Beerlegem
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Beerlegem centrum.
+- Terugkerende order: 3D print service Beerlegem; we bewaren je instellingen.
+- Leverfocus: Beerlegem, Beerlegem centrum, Zwalm.
+
+## Landmarks in de buurt van Beerlegem
+- Centrum van Beerlegem
+- Lokale bedrijvenzone in Beerlegem
+- Sporthal in Beerlegem
+
+## Teams die we ondersteunen rond Beerlegem
+- Lokale makers en ontwerpers (Beerlegem)
+- Kleine series en maatwerk (Beerlegem)
+- Verenigingen en onderwijs (Beerlegem)
+
+## Wat vaak wordt gevraagd in Beerlegem
+- 3D print service Beerlegem
+- rapid prototyping Beerlegem
+- 3D printing bedrijf Beerlegem
+<!-- LOCAL_ENRICH_END -->

@@ -96,12 +96,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Denderleeuw
-
 - [3D printen in Iddergem](/3d-printen-in-iddergem)
 - [3D printen in Welle](/3d-printen-in-welle)
 - [3D printen in Aalst](/3d-printen-in-aalst)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
-
 ---
 
 ## Externe links
@@ -113,4 +111,36 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Denderleeuw
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Denderleeuw
+
+- Dekking: Denderleeuw, Denderleeuw centrum, Iddergem, Welle, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Denderleeuw.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Iddergem](/3d-printen-in-iddergem)
+- [3D printen in Welle](/3d-printen-in-welle)
+## Lokale spotlight
+- Lokale KMO's en zelfstandigen: PLA/PETG onderdelen afgestemd op projecten rond Denderleeuw centrum.
+- Vaak gevraagd: 3D print service Denderleeuw; we adviseren materiaal en afwerking.
+- Leverfocus: Denderleeuw, Denderleeuw centrum, Iddergem.
+
+## Plaatsen waar we vaak leveren rond Denderleeuw
+- Centrum van Denderleeuw
+- Lokale bedrijvenzone in Denderleeuw
+- Sporthal in Denderleeuw
+
+## Sectoren die we vaak helpen in Denderleeuw
+- Lokale KMO's en zelfstandigen (Denderleeuw)
+- Onderhoud en techniek langs de Dender (Denderleeuw)
+- Verenigingen en onderwijs (Denderleeuw)
+
+## Veelgevraagde zoekopdrachten in Denderleeuw
+- 3D print service Denderleeuw
+- rapid prototyping Denderleeuw
+- 3D printing bedrijf Denderleeuw
+<!-- LOCAL_ENRICH_END -->

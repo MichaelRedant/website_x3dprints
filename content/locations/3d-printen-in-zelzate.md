@@ -96,12 +96,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Zelzate of afh
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Zelzate
-
 - [3D printen in Evergem](/3d-printen-in-evergem)
 - [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
 - [3D printen in Assenede](/3d-printen-in-assenede)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
-
 ---
 
 ## Externe links
@@ -114,4 +112,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Zelzate
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Zelzate
+
+- Dekking: Zelzate, Zelzate centrum, Evergem, Wachtebeke, Assenede, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Zelzate.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Evergem](/3d-printen-in-evergem)
+- [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
+- [3D printen in Assenede](/3d-printen-in-assenede)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Zelzate centrum.
+- Vaak gevraagd: 3D print service Zelzate; we adviseren materiaal en afwerking.
+- Leverfocus: Zelzate, Zelzate centrum, Evergem.
+
+## Plaatsen waar we vaak leveren rond Zelzate
+- Centrum van Zelzate
+- Lokale bedrijvenzone in Zelzate
+- Sporthal in Zelzate
+
+## Sectoren die we vaak helpen in Zelzate
+- Lokale makers en ontwerpers (Zelzate)
+- Industrie en logistiek langs kanaal Gent-Terneuzen (Zelzate)
+- Verenigingen en onderwijs (Zelzate)
+
+## Veelgevraagde zoekopdrachten in Zelzate
+- 3D print service Zelzate
+- rapid prototyping Zelzate
+- 3D printing bedrijf Zelzate
+<!-- LOCAL_ENRICH_END -->

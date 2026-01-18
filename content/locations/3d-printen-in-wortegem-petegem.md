@@ -96,12 +96,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Wortegem-Petegem
-
 - [3D printen in Wortegem](/3d-printen-in-wortegem)
 - [3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
 - [3D printen in Moregem](/3d-printen-in-moregem)
 - [3D printen in Elsegem](/3d-printen-in-elsegem)
-
 ---
 
 ## Externe links
@@ -114,4 +112,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Wortegem-Petegem
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Wortegem-Petegem
+
+- Dekking: Wortegem-Petegem, Wortegem-Petegem centrum, Wortegem, Petegem-aan-de-Schelde, Moregem, Elsegem; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Wortegem-Petegem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Wortegem](/3d-printen-in-wortegem)
+- [3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
+- [3D printen in Moregem](/3d-printen-in-moregem)
+## Spotlight rond Wortegem-Petegem
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Wortegem-Petegem centrum.
+- Terugkerende order: 3D print service Wortegem-Petegem; we bewaren je instellingen.
+- Leverfocus: Wortegem-Petegem, Wortegem-Petegem centrum, Wortegem.
+
+## Landmarks in de buurt van Wortegem-Petegem
+- Centrum van Wortegem-Petegem
+- Lokale bedrijvenzone in Wortegem-Petegem
+- Sporthal in Wortegem-Petegem
+
+## Teams die we ondersteunen rond Wortegem-Petegem
+- Lokale makers en ontwerpers (Wortegem-Petegem)
+- KMO's en herstellingen langs de Schelde (Wortegem-Petegem)
+- Verenigingen en onderwijs (Wortegem-Petegem)
+
+## Wat vaak wordt gevraagd in Wortegem-Petegem
+- 3D print service Wortegem-Petegem
+- rapid prototyping Wortegem-Petegem
+- 3D printing bedrijf Wortegem-Petegem
+<!-- LOCAL_ENRICH_END -->

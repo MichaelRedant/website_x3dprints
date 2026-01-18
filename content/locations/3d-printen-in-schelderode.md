@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Schelderode
-
 - [3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [3D printen in Melsen](/3d-printen-in-melsen)
 - [3D printen in Munte](/3d-printen-in-munte)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Schelderode
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Schelderode
+
+- Dekking: Schelderode, Schelderode centrum, Merelbeke, Melsen, Munte, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Schelderode.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [3D printen in Melsen](/3d-printen-in-melsen)
+- [3D printen in Munte](/3d-printen-in-munte)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Schelderode centrum.
+- Vaak gevraagd: 3D print service Schelderode; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Schelderode en Schelderode centrum.
+
+## Locaties die we bedienen nabij Schelderode
+- Centrum van Schelderode
+- Lokale bedrijvenzone in Schelderode
+- Sporthal in Schelderode
+
+## Sectorfocus nabij Schelderode
+- Lokale makers en ontwerpers (Schelderode)
+- Kleine series en maatwerk (Schelderode)
+- Verenigingen en onderwijs (Schelderode)
+
+## Typische aanvragen rond Schelderode
+- 3D print service Schelderode
+- rapid prototyping Schelderode
+- 3D printing bedrijf Schelderode
+<!-- LOCAL_ENRICH_END -->

@@ -97,12 +97,8 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Heilig Kruiske
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Beveren
-
-- [3D printen in Beveren](/3d-printen-in-beveren)
 - [3D printen in Haasdonk](/3d-printen-in-haasdonk)
 - [3D printen in Melsele](/3d-printen-in-melsele)
-- [3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
-
 ---
 
 ## Externe links
@@ -115,3 +111,36 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 ## Offerte voor 3D printen in Vrasene
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Vrasene
+
+- Dekking: Vrasene, Vrasene centrum, Beveren, Haasdonk, Melsele, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Vrasene.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Beveren](/3d-printen-in-beveren)
+- [3D printen in Haasdonk](/3d-printen-in-haasdonk)
+- [3D printen in Melsele](/3d-printen-in-melsele)
+## Klantenspotlight
+- Lokale ondernemers en makers: kleine reeksen met vaste settings rond Vrasene centrum.
+- Vaak gevraagd: 3D print service Vrasene; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Vrasene en Vrasene centrum.
+
+## Locaties die we bedienen nabij Vrasene
+- Centrum van Vrasene
+- Lokale bedrijvenzone in Vrasene
+- Sporthal in Vrasene
+
+## Sectorfocus nabij Vrasene
+- Lokale ondernemers en makers (Vrasene)
+- Technische herstellingen (Vrasene)
+- Onderwijs en verenigingen (Vrasene)
+
+## Typische aanvragen rond Vrasene
+- 3D print service Vrasene
+- rapid prototyping Vrasene
+- 3D printing bedrijf Vrasene
+<!-- LOCAL_ENRICH_END -->

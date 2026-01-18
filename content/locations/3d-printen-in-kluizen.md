@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Molen Buysse of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Kluizen
-
 - [3D printen in Evergem](/3d-printen-in-evergem)
 - [3D printen in Ertvelde](/3d-printen-in-ertvelde)
 - [3D printen in Sleidinge](/3d-printen-in-sleidinge)
 - [3D printen in Eeklo](/3d-printen-in-eeklo)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Molen Buysse o
 
 ## Offerte voor 3D printen in Kluizen
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Kluizen
+
+- Dekking: Kluizen, Kluizen centrum, Sleidinge, Ertvelde, Evergem, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kluizen.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Sleidinge](/3d-printen-in-sleidinge)
+- [3D printen in Ertvelde](/3d-printen-in-ertvelde)
+- [3D printen in Evergem](/3d-printen-in-evergem)
+## Lokale spotlight
+- Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Kluizen centrum.
+- Vaak gevraagd: 3D print service Kluizen; we adviseren materiaal en afwerking.
+- Leverfocus: Kluizen, Kluizen centrum, Sleidinge.
+
+## Plaatsen waar we vaak leveren rond Kluizen
+- Centrum van Kluizen
+- Lokale bedrijvenzone in Kluizen
+- Sporthal in Kluizen
+
+## Sectoren die we vaak helpen in Kluizen
+- Lokale ondernemers en techniekers (Kluizen)
+- Onderhoud en herstellingen (Kluizen)
+- Verenigingen en scholen (Kluizen)
+
+## Veelgevraagde zoekopdrachten in Kluizen
+- 3D print service Kluizen
+- rapid prototyping Kluizen
+- 3D printing bedrijf Kluizen
+<!-- LOCAL_ENRICH_END -->

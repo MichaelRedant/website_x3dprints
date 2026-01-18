@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Deftinge
-
 - [3D printen in Lierde](/3d-printen-in-lierde)
 - [3D printen in Hemelveerdegem](/3d-printen-in-hemelveerdegem)
 - [3D printen in Sint-Maria-Lierde](/3d-printen-in-sint-maria-lierde)
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Deftinge
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Deftinge
+
+- Dekking: Deftinge, Deftinge centrum, Lierde, Hemelveerdegem, Sint-Maria-Lierde, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Deftinge.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Lierde](/3d-printen-in-lierde)
+- [3D printen in Hemelveerdegem](/3d-printen-in-hemelveerdegem)
+- [3D printen in Sint-Maria-Lierde](/3d-printen-in-sint-maria-lierde)
+## Lokale spotlight
+- Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Deftinge centrum.
+- Vaak gevraagd: 3D print service Deftinge; we adviseren materiaal en afwerking.
+- Leverfocus: Deftinge, Deftinge centrum, Lierde.
+
+## Plaatsen waar we vaak leveren rond Deftinge
+- Centrum van Deftinge
+- Lokale bedrijvenzone in Deftinge
+- Sporthal in Deftinge
+
+## Sectoren die we vaak helpen in Deftinge
+- Lokale makers en techniekers (Deftinge)
+- Kleine series en maatwerk (Deftinge)
+- Verenigingen en scholen (Deftinge)
+
+## Veelgevraagde zoekopdrachten in Deftinge
+- 3D print service Deftinge
+- rapid prototyping Deftinge
+- 3D printing bedrijf Deftinge
+<!-- LOCAL_ENRICH_END -->

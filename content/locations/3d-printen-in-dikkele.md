@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Dikkele of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Dikkele
-
 - [3D printen in Zwalm](/3d-printen-in-zwalm)
 - [3D printen in Beerlegem](/3d-printen-in-beerlegem)
 - [3D printen in Hundelgem](/3d-printen-in-hundelgem)
 - [3D printen in Horebeke](/3d-printen-in-horebeke)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Dikkele of afh
 
 ## Offerte voor 3D printen in Dikkele
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Dikkele
+
+- Dekking: Dikkele, Dikkele centrum, Zwalm, Nederzwalm-Hermelgem, Munkzwalm, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Dikkele.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Zwalm](/3d-printen-in-zwalm)
+- [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
+- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Dikkele centrum.
+- Vaak gevraagd: 3D print service Dikkele; we adviseren materiaal en afwerking.
+- Leverfocus: Dikkele, Dikkele centrum, Zwalm.
+
+## Plaatsen waar we vaak leveren rond Dikkele
+- Centrum van Dikkele
+- Lokale bedrijvenzone in Dikkele
+- Sporthal in Dikkele
+
+## Sectoren die we vaak helpen in Dikkele
+- Lokale makers en ontwerpers (Dikkele)
+- Kleine series en maatwerk (Dikkele)
+- Verenigingen en onderwijs (Dikkele)
+
+## Veelgevraagde zoekopdrachten in Dikkele
+- 3D print service Dikkele
+- rapid prototyping Dikkele
+- 3D printing bedrijf Dikkele
+<!-- LOCAL_ENRICH_END -->

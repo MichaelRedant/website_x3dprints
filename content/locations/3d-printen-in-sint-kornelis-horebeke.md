@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Sint-Kornelis-Horebeke
-
 - [3D printen in Horebeke](/3d-printen-in-horebeke)
 - [3D printen in Sint-Maria-Horebeke](/3d-printen-in-sint-maria-horebeke)
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
 - [3D printen in Geraardsbergen](/3d-printen-in-geraardsbergen)
-
 ---
 
 ## Externe links
@@ -116,4 +114,36 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Sint-Kornelis-Horebeke
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Sint-Kornelis-Horebeke
+
+- Dekking: Sint-Kornelis-Horebeke, Sint-Kornelis-Horebeke centrum, Horebeke, Sint-Maria-Horebeke, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Kornelis-Horebeke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Horebeke](/3d-printen-in-horebeke)
+- [3D printen in Sint-Maria-Horebeke](/3d-printen-in-sint-maria-horebeke)
+## Lokale spotlight
+- KMO's en zelfstandigen: PLA/PETG onderdelen afgestemd op projecten rond Sint-Kornelis-Horebeke centrum.
+- Vaak gevraagd: 3D print service Sint-Kornelis-Horebeke; we adviseren materiaal en afwerking.
+- Leverfocus: Sint-Kornelis-Horebeke, Sint-Kornelis-Horebeke centrum, Horebeke.
+
+## Plaatsen waar we vaak leveren rond Sint-Kornelis-Horebeke
+- Centrum van Sint-Kornelis-Horebeke
+- Lokale bedrijvenzone in Sint-Kornelis-Horebeke
+- Sporthal in Sint-Kornelis-Horebeke
+
+## Sectoren die we vaak helpen in Sint-Kornelis-Horebeke
+- KMO's en zelfstandigen (Sint-Kornelis-Horebeke)
+- Onderhoud en herstellingen (Sint-Kornelis-Horebeke)
+- Verenigingen en onderwijs (Sint-Kornelis-Horebeke)
+
+## Veelgevraagde zoekopdrachten in Sint-Kornelis-Horebeke
+- 3D print service Sint-Kornelis-Horebeke
+- rapid prototyping Sint-Kornelis-Horebeke
+- 3D printing bedrijf Sint-Kornelis-Horebeke
+<!-- LOCAL_ENRICH_END -->

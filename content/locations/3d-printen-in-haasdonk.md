@@ -97,12 +97,8 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Beveren
-
-- [3D printen in Beveren](/3d-printen-in-beveren)
+- [3D printen in Kallo](/3d-printen-in-kallo)
 - [3D printen in Melsele](/3d-printen-in-melsele)
-- [3D printen in Vrasene](/3d-printen-in-vrasene)
-- [3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
-
 ---
 
 ## Externe links
@@ -115,3 +111,36 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 ## Offerte voor 3D printen in Haasdonk
 
 Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Haasdonk
+
+- Dekking: Haasdonk, Haasdonk centrum, Beveren, Melsele, Kallo, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Haasdonk.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Beveren](/3d-printen-in-beveren)
+- [3D printen in Melsele](/3d-printen-in-melsele)
+- [3D printen in Kallo](/3d-printen-in-kallo)
+## Klantenspotlight
+- Lokale KMO's en techniekers: kleine reeksen met vaste settings rond Haasdonk centrum.
+- Vaak gevraagd: 3D print service Haasdonk; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Haasdonk en Haasdonk centrum.
+
+## Locaties die we bedienen nabij Haasdonk
+- Centrum van Haasdonk
+- Lokale bedrijvenzone in Haasdonk
+- Sporthal in Haasdonk
+
+## Sectorfocus nabij Haasdonk
+- Lokale KMO's en techniekers (Haasdonk)
+- Onderhoud en herstellingen (Haasdonk)
+- Verenigingen en lokale events (Haasdonk)
+
+## Typische aanvragen rond Haasdonk
+- 3D print service Haasdonk
+- rapid prototyping Haasdonk
+- 3D printing bedrijf Haasdonk
+<!-- LOCAL_ENRICH_END -->

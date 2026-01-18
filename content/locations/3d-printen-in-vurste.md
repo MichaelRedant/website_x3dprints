@@ -96,12 +96,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Vurste
-
 - [3D printen in Gavere](/3d-printen-in-gavere)
 - [3D printen in Baaigem](/3d-printen-in-baaigem)
 - [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
 - [3D printen in Semmerzake](/3d-printen-in-semmerzake)
-
 ---
 
 ## Externe links
@@ -114,4 +112,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Vurste
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Vurste
+
+- Dekking: Vurste, Vurste centrum, Gavere, Semmerzake, Dikkelvenne, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Vurste.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Gavere](/3d-printen-in-gavere)
+- [3D printen in Semmerzake](/3d-printen-in-semmerzake)
+- [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+## Spotlight rond Vurste
+- Lokale ondernemers en makers: behuizingen en pasmallen voor teams in Vurste centrum.
+- Terugkerende order: 3D print service Vurste; we bewaren je instellingen.
+- Leverfocus: Vurste, Vurste centrum, Gavere.
+
+## Landmarks in de buurt van Vurste
+- Centrum van Vurste
+- Lokale bedrijvenzone in Vurste
+- Sporthal in Vurste
+
+## Teams die we ondersteunen rond Vurste
+- Lokale ondernemers en makers (Vurste)
+- Projecten langs de Schelde (Vurste)
+- Verenigingen en scholen (Vurste)
+
+## Wat vaak wordt gevraagd in Vurste
+- 3D print service Vurste
+- rapid prototyping Vurste
+- 3D printing bedrijf Vurste
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Steendorp
-
 - [3D printen in Temse](/3d-printen-in-temse)
 - [3D printen in Tielrode](/3d-printen-in-tielrode)
 - [3D printen in Elversele](/3d-printen-in-elversele)
 - [3D printen in Hamme](/3d-printen-in-hamme)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Steendorp
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Steendorp
+
+- Dekking: Steendorp, Steendorp centrum, Temse, Tielrode, Elversele, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Steendorp.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Temse](/3d-printen-in-temse)
+- [3D printen in Tielrode](/3d-printen-in-tielrode)
+- [3D printen in Elversele](/3d-printen-in-elversele)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Steendorp centrum.
+- Vaak gevraagd: 3D print service Steendorp; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Steendorp en Steendorp centrum.
+
+## Locaties die we bedienen nabij Steendorp
+- Centrum van Steendorp
+- Lokale bedrijvenzone in Steendorp
+- Sporthal in Steendorp
+
+## Sectorfocus nabij Steendorp
+- Lokale makers en ontwerpers (Steendorp)
+- Kleine series en maatwerk (Steendorp)
+- Verenigingen en onderwijs (Steendorp)
+
+## Typische aanvragen rond Steendorp
+- 3D print service Steendorp
+- rapid prototyping Steendorp
+- 3D printing bedrijf Steendorp
+<!-- LOCAL_ENRICH_END -->

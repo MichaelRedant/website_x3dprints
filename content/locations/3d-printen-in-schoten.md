@@ -96,3 +96,34 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 **Wat kost 3D printen in Schoten?**
 
 De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je model of schets en je krijgt snel een duidelijke offerte.
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Schoten
+
+- Dekking: Schoten; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Schoten.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Lokale spotlight
+- Lokale teams in Schoten: PLA/PETG onderdelen afgestemd op projecten rond Schoten.
+- Vaak gevraagd: 3D print service Schoten; we adviseren materiaal en afwerking.
+- Leverfocus: Schoten.
+
+## Plaatsen waar we vaak leveren rond Schoten
+- Centrum van Schoten
+- Lokale bedrijvenzone in Schoten
+- Sporthal in Schoten
+
+## Sectoren die we vaak helpen in Schoten
+- KMO's en makers in Schoten: pasmallen en behuizingen.
+- Retail/events rond Schoten: displays en props.
+- Onderwijs/labs in Schoten: lesklare prints.
+
+## Veelgevraagde zoekopdrachten in Schoten
+- 3D print service Schoten
+- rapid prototyping Schoten
+- 3D printing bedrijf Schoten
+<!-- LOCAL_ENRICH_END -->

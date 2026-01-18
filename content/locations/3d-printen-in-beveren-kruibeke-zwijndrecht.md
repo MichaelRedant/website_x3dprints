@@ -97,21 +97,8 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Beveren-Kruibeke-Zwijndrecht
-
-- [3D printen in Beveren](/3d-printen-in-beveren)
-- [3D printen in Bazel](/3d-printen-in-bazel)
 - [3D printen in Burcht](/3d-printen-in-burcht)
-- [3D printen in Doel](/3d-printen-in-doel)
-- [3D printen in Haasdonk](/3d-printen-in-haasdonk)
-- [3D printen in Kallo](/3d-printen-in-kallo)
-- [3D printen in Kieldrecht](/3d-printen-in-kieldrecht)
-- [3D printen in Kruibeke](/3d-printen-in-kruibeke)
-- [3D printen in Melsele](/3d-printen-in-melsele)
 - [3D printen in Rupelmonde](/3d-printen-in-rupelmonde)
-- [3D printen in Verrebroek](/3d-printen-in-verrebroek)
-- [3D printen in Vrasene](/3d-printen-in-vrasene)
-- [3D printen in Zwijndrecht](/3d-printen-in-zwijndrecht)
-
 ---
 
 ## Externe links
@@ -124,3 +111,38 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 ## Offerte voor 3D printen in Beveren-Kruibeke-Zwijndrecht
 
 Wilt u snel starten? Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Beveren-Kruibeke-Zwijndrecht
+
+- Dekking: Beveren-Kruibeke-Zwijndrecht, Beveren, Kruibeke, Zwijndrecht, Bazel, Burcht; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Beveren-Kruibeke-Zwijndrecht.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Beveren](/3d-printen-in-beveren)
+- [3D printen in Rupelmonde](/3d-printen-in-rupelmonde)
+- [3D printen in Burcht](/3d-printen-in-burcht)
+- [3D printen in Kruibeke](/3d-printen-in-kruibeke)
+- [3D printen in Zwijndrecht](/3d-printen-in-zwijndrecht)
+## Spotlight rond Beveren-Kruibeke-Zwijndrecht
+- Waaslandhaven en industrie: behuizingen en pasmallen voor teams in Beveren.
+- Terugkerende order: 3D print service Beveren-Kruibeke-Zwijndrecht; we bewaren je instellingen.
+- Leverfocus: Beveren-Kruibeke-Zwijndrecht, Beveren, Kruibeke.
+
+## Landmarks in de buurt van Beveren-Kruibeke-Zwijndrecht
+- Centrum van Beveren-Kruibeke-Zwijndrecht
+- Lokale bedrijvenzone in Beveren-Kruibeke-Zwijndrecht
+- Sporthal in Beveren-Kruibeke-Zwijndrecht
+
+## Teams die we ondersteunen rond Beveren-Kruibeke-Zwijndrecht
+- Waaslandhaven en industrie (Beveren-Kruibeke-Zwijndrecht)
+- Logistiek, onderhoud en tooling (Beveren-Kruibeke-Zwijndrecht)
+- Verenigingen, retail en events (Beveren-Kruibeke-Zwijndrecht)
+
+## Wat vaak wordt gevraagd in Beveren-Kruibeke-Zwijndrecht
+- 3D print service Beveren-Kruibeke-Zwijndrecht
+- rapid prototyping Beveren-Kruibeke-Zwijndrecht
+- 3D printing bedrijf Beveren-Kruibeke-Zwijndrecht
+<!-- LOCAL_ENRICH_END -->

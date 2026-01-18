@@ -98,12 +98,10 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Eke
-
 - [3D printen in Nazareth](/3d-printen-in-nazareth)
 - [3D printen in Nazareth-De Pinte](/3d-printen-in-nazareth-de-pinte)
 - [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [3D printen in De Pinte](/3d-printen-in-de-pinte)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 
 ## Offerte voor 3D printen in Eke
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Eke
+
+- Dekking: Eke, Eke centrum, Nazareth, De Pinte, Merelbeke, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Eke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Nazareth](/3d-printen-in-nazareth)
+- [3D printen in De Pinte](/3d-printen-in-de-pinte)
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+## Spotlight rond Eke
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Eke centrum.
+- Terugkerende order: 3D print service Eke; we bewaren je instellingen.
+- Leverfocus: Eke, Eke centrum, Nazareth.
+
+## Landmarks in de buurt van Eke
+- Centrum van Eke
+- Lokale bedrijvenzone in Eke
+- Sporthal in Eke
+
+## Teams die we ondersteunen rond Eke
+- Lokale makers en ontwerpers (Eke)
+- Kleine series en maatwerk (Eke)
+- Verenigingen en onderwijs (Eke)
+
+## Wat vaak wordt gevraagd in Eke
+- 3D print service Eke
+- rapid prototyping Eke
+- 3D printing bedrijf Eke
+<!-- LOCAL_ENRICH_END -->

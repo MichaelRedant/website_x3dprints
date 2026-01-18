@@ -105,3 +105,34 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 **Welke materialen raden jullie aan?**
 
 PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU voor flexibele toepassingen.
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor De Moeren
+
+- Dekking: De Moeren, De Moeren laagte, Grens Frankrijk, Adinkerke en De Panne rand, Landbouwbedrijven langs de plassen, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in De Moeren.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Gent](/3d-printen-in-gent)
+## Lokale spotlight
+- Waterbeheer en sensing in de polders: PLA/PETG onderdelen afgestemd op projecten rond De Moeren laagte.
+- Vaak gevraagd: 3D print service De Moeren; we adviseren materiaal en afwerking.
+- Leverfocus: De Moeren, De Moeren laagte, Grens Frankrijk.
+
+## Plaatsen waar we vaak leveren rond De Moeren
+- Centrum van De Moeren
+- Lokale bedrijvenzone in De Moeren
+- Sporthal in De Moeren
+
+## Sectoren die we vaak helpen in De Moeren
+- Waterbeheer en sensing in de polders (De Moeren)
+- Landbouw en tuinbouw in De Moeren
+- Outdoor en toeristische projecten richting kust (De Moeren)
+
+## Veelgevraagde zoekopdrachten in De Moeren
+- 3D print service De Moeren
+- rapid prototyping De Moeren
+- 3D printing bedrijf De Moeren
+<!-- LOCAL_ENRICH_END -->

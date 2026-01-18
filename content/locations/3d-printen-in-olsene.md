@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Olsene
-
 - [3D printen in Zulte](/3d-printen-in-zulte)
 - [3D printen in Machelen (Zulte)](/3d-printen-in-machelen-zulte)
 - [3D printen in Astene](/3d-printen-in-astene)
 - [3D printen in Deinze](/3d-printen-in-deinze)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Olsene
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Olsene
+
+- Dekking: Olsene, Olsene centrum, Zulte, Machelen (Zulte), Astene, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Olsene.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Zulte](/3d-printen-in-zulte)
+- [3D printen in Machelen (Zulte)](/3d-printen-in-machelen-zulte)
+- [3D printen in Astene](/3d-printen-in-astene)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Olsene centrum.
+- Vaak gevraagd: 3D print service Olsene; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Olsene en Olsene centrum.
+
+## Locaties die we bedienen nabij Olsene
+- Centrum van Olsene
+- Lokale bedrijvenzone in Olsene
+- Sporthal in Olsene
+
+## Sectorfocus nabij Olsene
+- Lokale makers en ontwerpers (Olsene)
+- Kleine series en maatwerk (Olsene)
+- Verenigingen en onderwijs (Olsene)
+
+## Typische aanvragen rond Olsene
+- 3D print service Olsene
+- rapid prototyping Olsene
+- 3D printing bedrijf Olsene
+<!-- LOCAL_ENRICH_END -->

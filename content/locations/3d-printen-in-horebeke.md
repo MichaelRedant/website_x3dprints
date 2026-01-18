@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Horebeke
-
 - [3D printen in Sint-Maria-Horebeke](/3d-printen-in-sint-maria-horebeke)
 - [3D printen in Sint-Kornelis-Horebeke](/3d-printen-in-sint-kornelis-horebeke)
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,36 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Horebeke
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Horebeke
+
+- Dekking: Horebeke, Horebeke centrum, Sint-Maria-Horebeke, Sint-Kornelis-Horebeke, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Horebeke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Sint-Maria-Horebeke](/3d-printen-in-sint-maria-horebeke)
+- [3D printen in Sint-Kornelis-Horebeke](/3d-printen-in-sint-kornelis-horebeke)
+## Spotlight rond Horebeke
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Horebeke centrum.
+- Terugkerende order: 3D print service Horebeke; we bewaren je instellingen.
+- Leverfocus: Horebeke, Horebeke centrum, Sint-Maria-Horebeke.
+
+## Landmarks in de buurt van Horebeke
+- Centrum van Horebeke
+- Lokale bedrijvenzone in Horebeke
+- Sporthal in Horebeke
+
+## Teams die we ondersteunen rond Horebeke
+- Lokale makers en ontwerpers (Horebeke)
+- Kleine series en maatwerk (Horebeke)
+- Verenigingen en onderwijs (Horebeke)
+
+## Wat vaak wordt gevraagd in Horebeke
+- 3D print service Horebeke
+- rapid prototyping Horebeke
+- 3D printing bedrijf Horebeke
+<!-- LOCAL_ENRICH_END -->

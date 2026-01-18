@@ -35,7 +35,14 @@ export default function LocaleProvider({
     const fromNavigator =
       typeof navigator !== "undefined" ? navigator.language ?? navigator.languages?.[0] : null
 
-    const next = normalizeLocale(fromQuery ?? stored ?? fromPath ?? fromNavigator)
+    let next: Locale
+    if (fromQuery) next = normalizeLocale(fromQuery)
+    else if (stored) next = normalizeLocale(stored)
+    else if (fromPath) next = normalizeLocale(fromPath)
+    else if (fromNavigator)
+      next = fromNavigator.toLowerCase().startsWith("nl") ? "nl" : "en"
+    else next = DEFAULT_LOCALE
+
     setLocale(next)
     document.documentElement.lang = next
     if (typeof window !== "undefined") {

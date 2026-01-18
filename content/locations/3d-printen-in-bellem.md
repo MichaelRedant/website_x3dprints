@@ -97,13 +97,11 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Onze-Lieve-Vro
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Aalter
-
 - [3D printen in Aalter](/3d-printen-in-aalter)
 - [3D printen in Knesselare](/3d-printen-in-knesselare)
 - [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
 - [3D printen in Poeke](/3d-printen-in-poeke)
 - [3D printen in Ursel](/3d-printen-in-ursel)
-
 ---
 
 ## Externe links
@@ -116,3 +114,36 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 ## Offerte voor 3D printen in Bellem
 
 Wilt u starten met 3D printen in Bellem? Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Bellem
+
+- Dekking: Bellem, Bellem centrum, Aalter, Knesselare, Lotenhulle, Poeke; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Bellem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Aalter](/3d-printen-in-aalter)
+- [3D printen in Knesselare](/3d-printen-in-knesselare)
+- [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
+## Klantenspotlight
+- Lokale makers en zelfstandigen: kleine reeksen met vaste settings rond Bellem centrum.
+- Vaak gevraagd: 3D print service Bellem; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Bellem en Bellem centrum.
+
+## Locaties die we bedienen nabij Bellem
+- Centrum van Bellem
+- Lokale bedrijvenzone in Bellem
+- Sporthal in Bellem
+
+## Sectorfocus nabij Bellem
+- Lokale makers en zelfstandigen (Bellem)
+- Scholen en verenigingen in Aalter (Bellem)
+- Landelijke projecten en maatwerk (Bellem)
+
+## Typische aanvragen rond Bellem
+- 3D print service Bellem
+- rapid prototyping Bellem
+- 3D printing bedrijf Bellem
+<!-- LOCAL_ENRICH_END -->

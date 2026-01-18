@@ -97,13 +97,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Aalter
-
 - [3D printen in Aalter](/3d-printen-in-aalter)
-- [3D printen in Bellem](/3d-printen-in-bellem)
 - [3D printen in Knesselare](/3d-printen-in-knesselare)
 - [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
 - [3D printen in Ursel](/3d-printen-in-ursel)
-
 ---
 
 ## Externe links
@@ -116,3 +113,38 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 ## Offerte voor 3D printen in Poeke
 
 Vraag een vrijblijvende offerte aan via [contact](/contact) en ontdek de mogelijkheden.
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Poeke
+
+- Dekking: Poeke, Poeke centrum, Aalter, Bellem, Knesselare, Lotenhulle; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Poeke.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Aalter](/3d-printen-in-aalter)
+- [3D printen in Knesselare](/3d-printen-in-knesselare)
+- [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
+- [3D printen in Ursel](/3d-printen-in-ursel)
+- [3D printen in Bellem](/3d-printen-in-bellem)
+## Klantenspotlight
+- Creatieve projecten en decor: kleine reeksen met vaste settings rond Poeke centrum.
+- Vaak gevraagd: 3D print service Poeke; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Poeke en Poeke centrum.
+
+## Locaties die we bedienen nabij Poeke
+- Centrum van Poeke
+- Lokale bedrijvenzone in Poeke
+- Sporthal in Poeke
+
+## Sectorfocus nabij Poeke
+- Creatieve projecten en decor (Poeke)
+- Maatwerk voor lokale ondernemers (Poeke)
+- Verenigingen en cultuur (Poeke)
+
+## Typische aanvragen rond Poeke
+- 3D print service Poeke
+- rapid prototyping Poeke
+- 3D printing bedrijf Poeke
+<!-- LOCAL_ENRICH_END -->

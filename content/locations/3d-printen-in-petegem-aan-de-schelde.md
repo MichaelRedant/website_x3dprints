@@ -98,12 +98,10 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Petegem-aan-de
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Petegem-aan-de-Schelde
-
 - [3D printen in Wortegem-Petegem](/3d-printen-in-wortegem-petegem)
 - [3D printen in Wortegem](/3d-printen-in-wortegem)
 - [3D printen in Moregem](/3d-printen-in-moregem)
 - [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Petegem-aan-de-Schelde
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Petegem-aan-de-Schelde
+
+- Dekking: Petegem-aan-de-Schelde, Petegem-aan-de-Schelde centrum, Wortegem-Petegem, Wortegem, Moregem, Elsegem; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Petegem-aan-de-Schelde.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Wortegem-Petegem](/3d-printen-in-wortegem-petegem)
+- [3D printen in Wortegem](/3d-printen-in-wortegem)
+- [3D printen in Moregem](/3d-printen-in-moregem)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Petegem-aan-de-Schelde centrum.
+- Vaak gevraagd: 3D print service Petegem-aan-de-Schelde; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Petegem-aan-de-Schelde en Petegem-aan-de-Schelde centrum.
+
+## Locaties die we bedienen nabij Petegem-aan-de-Schelde
+- Centrum van Petegem-aan-de-Schelde
+- Lokale bedrijvenzone in Petegem-aan-de-Schelde
+- Sporthal in Petegem-aan-de-Schelde
+
+## Sectorfocus nabij Petegem-aan-de-Schelde
+- Lokale makers en ontwerpers (Petegem-aan-de-Schelde)
+- Kleine series en maatwerk (Petegem-aan-de-Schelde)
+- Verenigingen en onderwijs (Petegem-aan-de-Schelde)
+
+## Typische aanvragen rond Petegem-aan-de-Schelde
+- 3D print service Petegem-aan-de-Schelde
+- rapid prototyping Petegem-aan-de-Schelde
+- 3D printing bedrijf Petegem-aan-de-Schelde
+<!-- LOCAL_ENRICH_END -->

@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Sint-Jan-in-Eremo
-
 - [3D printen in Sint-Laureins](/3d-printen-in-sint-laureins)
 - [3D printen in Sint-Margriete](/3d-printen-in-sint-margriete)
 - [3D printen in Watervliet](/3d-printen-in-watervliet)
 - [3D printen in Kaprijke](/3d-printen-in-kaprijke)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Sint-Jan-in-Eremo
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Sint-Jan-in-Eremo
+
+- Dekking: Sint-Jan-in-Eremo, Sint-Jan-in-Eremo centrum, Sint-Laureins, Sint-Margriete, Watervliet, Waterland-Oudeman; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Jan-in-Eremo.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Sint-Laureins](/3d-printen-in-sint-laureins)
+- [3D printen in Sint-Margriete](/3d-printen-in-sint-margriete)
+- [3D printen in Watervliet](/3d-printen-in-watervliet)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Sint-Jan-in-Eremo centrum.
+- Vaak gevraagd: 3D print service Sint-Jan-in-Eremo; we adviseren materiaal en afwerking.
+- Leverfocus: Sint-Jan-in-Eremo, Sint-Jan-in-Eremo centrum, Sint-Laureins.
+
+## Plaatsen waar we vaak leveren rond Sint-Jan-in-Eremo
+- Centrum van Sint-Jan-in-Eremo
+- Lokale bedrijvenzone in Sint-Jan-in-Eremo
+- Sporthal in Sint-Jan-in-Eremo
+
+## Sectoren die we vaak helpen in Sint-Jan-in-Eremo
+- Lokale makers en ontwerpers (Sint-Jan-in-Eremo)
+- Landelijke KMO's en herstellingen (Sint-Jan-in-Eremo)
+- Verenigingen en onderwijs (Sint-Jan-in-Eremo)
+
+## Veelgevraagde zoekopdrachten in Sint-Jan-in-Eremo
+- 3D print service Sint-Jan-in-Eremo
+- rapid prototyping Sint-Jan-in-Eremo
+- 3D printing bedrijf Sint-Jan-in-Eremo
+<!-- LOCAL_ENRICH_END -->

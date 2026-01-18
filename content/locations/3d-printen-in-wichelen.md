@@ -98,12 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Wichelen
-
 - [3D printen in Schellebelle](/3d-printen-in-schellebelle)
 - [3D printen in Serskamp](/3d-printen-in-serskamp)
 - [3D printen in Wetteren](/3d-printen-in-wetteren)
 - [3D printen in Lede](/3d-printen-in-lede)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Wichelen
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Wichelen
+
+- Dekking: Wichelen, Wichelen centrum, Schellebelle, Serskamp, Wetteren, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Wichelen.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [3D printen in Schellebelle](/3d-printen-in-schellebelle)
+- [3D printen in Serskamp](/3d-printen-in-serskamp)
+- [3D printen in Wetteren](/3d-printen-in-wetteren)
+## Lokale spotlight
+- Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Wichelen centrum.
+- Vaak gevraagd: 3D print service Wichelen; we adviseren materiaal en afwerking.
+- Leverfocus: Wichelen, Wichelen centrum, Schellebelle.
+
+## Plaatsen waar we vaak leveren rond Wichelen
+- Centrum van Wichelen
+- Lokale bedrijvenzone in Wichelen
+- Sporthal in Wichelen
+
+## Sectoren die we vaak helpen in Wichelen
+- Lokale makers en ontwerpers (Wichelen)
+- KMO's en herstellingen in de Denderstreek (Wichelen)
+- Verenigingen en onderwijs (Wichelen)
+
+## Veelgevraagde zoekopdrachten in Wichelen
+- 3D print service Wichelen
+- rapid prototyping Wichelen
+- 3D printing bedrijf Wichelen
+<!-- LOCAL_ENRICH_END -->

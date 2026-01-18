@@ -98,12 +98,10 @@ Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspeci
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Smetlede
-
 - [3D printen in Lede](/3d-printen-in-lede)
 - [3D printen in Oordegem](/3d-printen-in-oordegem)
 - [3D printen in Impe](/3d-printen-in-impe)
 - [3D printen in Wanzele](/3d-printen-in-wanzele)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Smetlede
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Smetlede
+
+- Dekking: Smetlede, Smetlede centrum, Lede, Oordegem, Impe, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Smetlede.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [3D printen in Lede](/3d-printen-in-lede)
+- [3D printen in Oordegem](/3d-printen-in-oordegem)
+- [3D printen in Impe](/3d-printen-in-impe)
+## Klantenspotlight
+- Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Smetlede centrum.
+- Vaak gevraagd: 3D print service Smetlede; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Smetlede en Smetlede centrum.
+
+## Locaties die we bedienen nabij Smetlede
+- Centrum van Smetlede
+- Lokale bedrijvenzone in Smetlede
+- Sporthal in Smetlede
+
+## Sectorfocus nabij Smetlede
+- Lokale makers en ontwerpers (Smetlede)
+- Onderhoud en herstellingen (Smetlede)
+- Verenigingen en onderwijs (Smetlede)
+
+## Typische aanvragen rond Smetlede
+- 3D print service Smetlede
+- rapid prototyping Smetlede
+- 3D printing bedrijf Smetlede
+<!-- LOCAL_ENRICH_END -->

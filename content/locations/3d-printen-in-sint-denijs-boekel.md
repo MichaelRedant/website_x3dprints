@@ -98,12 +98,10 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Denijs-Boekel of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Sint-Denijs-Boekel
-
 - [3D printen in Zwalm](/3d-printen-in-zwalm)
 - [3D printen in Sint-Blasius-Boekel](/3d-printen-in-sint-blasius-boekel)
 - [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
-
 ---
 
 ## Externe links
@@ -116,4 +114,37 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Denijs-Bo
 
 ## Offerte voor 3D printen in Sint-Denijs-Boekel
 
-Vraag een vrijblijvende offerte aan via [contact](/contact).
+Vraag een vrijblijvende offerte aan via [contact](/contact).
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Sint-Denijs-Boekel
+
+- Dekking: Sint-Denijs-Boekel, Sint-Denijs-Boekel centrum, Zwalm, Munkzwalm, Roborst, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Denijs-Boekel.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [3D printen in Zwalm](/3d-printen-in-zwalm)
+- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+- [3D printen in Roborst](/3d-printen-in-roborst)
+## Spotlight rond Sint-Denijs-Boekel
+- Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Sint-Denijs-Boekel centrum.
+- Terugkerende order: 3D print service Sint-Denijs-Boekel; we bewaren je instellingen.
+- Leverfocus: Sint-Denijs-Boekel, Sint-Denijs-Boekel centrum, Zwalm.
+
+## Landmarks in de buurt van Sint-Denijs-Boekel
+- Centrum van Sint-Denijs-Boekel
+- Lokale bedrijvenzone in Sint-Denijs-Boekel
+- Sporthal in Sint-Denijs-Boekel
+
+## Teams die we ondersteunen rond Sint-Denijs-Boekel
+- Lokale makers en ontwerpers (Sint-Denijs-Boekel)
+- Kleine series en maatwerk (Sint-Denijs-Boekel)
+- Verenigingen en onderwijs (Sint-Denijs-Boekel)
+
+## Wat vaak wordt gevraagd in Sint-Denijs-Boekel
+- 3D print service Sint-Denijs-Boekel
+- rapid prototyping Sint-Denijs-Boekel
+- 3D printing bedrijf Sint-Denijs-Boekel
+<!-- LOCAL_ENRICH_END -->

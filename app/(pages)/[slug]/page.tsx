@@ -385,44 +385,63 @@ export default async function Page(
           mode="page"
           range={520}
           offset={260}
-          className="pointer-events-none absolute right-12 top-6 -z-10 hidden lg:block"
+          className="pointer-events-none absolute right-6 top-4 -z-10 hidden lg:block xl:right-12 xl:top-6"
         >
           <FilamentHeroVisual className="h-[22rem] w-[22rem] opacity-60" />
         </Parallax>
 
         <div className="mx-auto max-w-6xl">
-          <Reveal className="max-w-3xl">
-            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs text-slate-700 backdrop-blur">
-              <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              Lokale 3D print service in {loc.city}
-            </span>
+          <nav aria-label="Breadcrumb" className="mb-8 flex items-center gap-2 text-sm text-slate-600">
+            <Link href="/" className="hover:text-slate-900">Home</Link>
+            <span aria-hidden className="text-slate-400">/</span>
+            <Link href="/locaties" className="hover:text-slate-900">Locaties</Link>
+            <span aria-hidden className="text-slate-400">/</span>
+            <span className="text-slate-800 font-semibold">{loc.city}</span>
+          </nav>
 
-            <Catchphrase className="mt-4 block text-base font-medium text-indigo-600 sm:text-lg">
-              3D printen in {loc.city}
-            </Catchphrase>
+          <div className="grid items-center gap-10 md:gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+            <Reveal className="max-w-3xl">
+              <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs text-slate-700 backdrop-blur">
+                <span className="h-2 w-2 rounded-full bg-emerald-400" />
+                Lokale 3D print service in {loc.city}
+              </span>
 
-            <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              {heroContent.title}
-            </h1>
+              <Catchphrase className="mt-4 block text-base font-medium text-indigo-600 sm:text-lg">
+                3D printen in {loc.city}
+              </Catchphrase>
 
-            <p className="mt-2 text-balance text-lg font-medium text-slate-700">
-              {heroContent.subtitle}
-            </p>
+              <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
+                {heroContent.title}
+              </h1>
 
-            <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 sm:text-lg">
-              X3DPrints print vanuit Herzele (tussen Gent en Aalst) voor {loc.city} en omgeving. Stuur je STL/STEP, kies
-              PLA, PETG of TPU en ontvang een voorstel met planning. Doorlooptijd meestal enkele werkdagen na akkoord.
-            </p>
+              <p className="mt-2 text-balance text-lg font-medium text-slate-700">
+                {heroContent.subtitle}
+              </p>
 
-            <div className="mt-10 flex flex-wrap items-center gap-3">
-              <ShimmerButton href="/contact" aria-label="Offerte aanvragen">Offerte aanvragen</ShimmerButton>
-              <Link href="/portfolio" className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20" aria-label="Bekijk portfolio">Bekijk portfolio</Link>
-            </div>
-          </Reveal>
+              <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 sm:text-lg">
+                X3DPrints print vanuit Herzele (tussen Gent en Aalst) voor {loc.city} en omgeving. Stuur je STL/STEP, kies
+                PLA, PETG of TPU en ontvang een voorstel met planning. Doorlooptijd meestal enkele werkdagen na akkoord.
+              </p>
 
-          <TiltImage src="/Logo.webp" alt="X3DPrints logo" width={256} height={256} className="mx-auto mt-12 w-64" priority />
+              <div className="mt-10 flex flex-wrap items-center gap-3">
+                <ShimmerButton href="/contact" aria-label="Offerte aanvragen">Offerte aanvragen</ShimmerButton>
+                <Link href="/portfolio" className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20" aria-label="Bekijk portfolio">Bekijk portfolio</Link>
+              </div>
+            </Reveal>
 
-          <Reveal delay={0.15} className="mt-16 grid gap-6 sm:grid-cols-3">
+            <Reveal delay={0.1} className="flex justify-center lg:justify-end">
+              <TiltImage
+                src="/Logo.webp"
+                alt="X3DPrints logo"
+                width={256}
+                height={256}
+                className="w-52 sm:w-60 md:w-64 lg:w-72 xl:w-80 drop-shadow-[0_20px_60px_rgba(14,165,233,0.15)]"
+                priority
+              />
+            </Reveal>
+          </div>
+
+          <Reveal delay={0.15} className="mt-14 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:mt-16">
             {[
               { k: "Tolerantie", v: "+/-0,2 mm", icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 12h16M4 16h16" />) },
               { k: "Doorlooptijd", v: "Afspraak in overleg (meestal enkele werkdagen)", icon: icon(<><circle cx={12} cy={12} r={9} /><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l2 2" /></>) },
