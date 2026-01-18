@@ -135,6 +135,7 @@ Benieuwd hoe **3D printen in Elene** jouw idee versterkt? Vraag een **gratis off
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Elene: PLA/PETG onderdelen afgestemd op projecten rond Elene.
 - Vaak gevraagd: 3D print service elene; we adviseren materiaal en afwerking.

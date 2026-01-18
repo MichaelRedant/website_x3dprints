@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Eksaarde](/3d-printen-in-eksaarde)
-- [3D printen in Daknam](/3d-printen-in-daknam)
-- [3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
+- [Buurpagina: 3D printen in Eksaarde](/3d-printen-in-eksaarde)
+- [Buurpagina: 3D printen in Daknam](/3d-printen-in-daknam)
+- [Buurpagina: 3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
+- [Hoofdpagina: 3D printen in Sinaai](/3d-printen-in-sinaai)
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Lokeren centrum.
 - Vaak gevraagd: 3D print service Lokeren; we adviseren materiaal en afwerking.

@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
-- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
-- [3D printen in Roborst](/3d-printen-in-roborst)
+- [Buurpagina: 3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
+- [Buurpagina: 3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+- [Buurpagina: 3D printen in Roborst](/3d-printen-in-roborst)
+- [Hoofdpagina: 3D printen in Sint-Blasius-Boekel](/3d-printen-in-sint-blasius-boekel)
+
 ## Spotlight rond Zwalm
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Zwalm centrum.
 - Terugkerende order: 3D print service Zwalm; we bewaren je instellingen.

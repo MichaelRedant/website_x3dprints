@@ -121,9 +121,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Beveren](/3d-printen-in-beveren)
-- [3D printen in Melsele](/3d-printen-in-melsele)
-- [3D printen in Kallo](/3d-printen-in-kallo)
+- [Buurpagina: 3D printen in Beveren](/3d-printen-in-beveren)
+- [Buurpagina: 3D printen in Melsele](/3d-printen-in-melsele)
+- [Buurpagina: 3D printen in Kallo](/3d-printen-in-kallo)
+- [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
 ## Klantenspotlight
 - Lokale KMO's en techniekers: kleine reeksen met vaste settings rond Haasdonk centrum.
 - Vaak gevraagd: 3D print service Haasdonk; we adviseren materiaal en afwerking.

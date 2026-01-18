@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in De Pin
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Zevergem](/en/3d-printen-in-zevergem)
-- [3D printing in Nazareth](/en/3d-printen-in-nazareth)
-- [3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
+- [Nearby: 3D printing in Zevergem](/en/3d-printen-in-zevergem)
+- [Nearby: 3D printing in Nazareth](/en/3d-printen-in-nazareth)
+- [Nearby: 3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
+- [Parent page: 3D printing in Nazareth-De Pinte](/en/3d-printen-in-nazareth-de-pinte)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near De Pinte centrum.

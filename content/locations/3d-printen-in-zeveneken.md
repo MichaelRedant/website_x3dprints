@@ -125,10 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Lochristi](/3d-printen-in-lochristi)
-- [3D printen in Beervelde](/3d-printen-in-beervelde)
-- [3D printen in Zaffelare](/3d-printen-in-zaffelare)
-- [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
+- [Buurpagina: 3D printen in Lochristi](/3d-printen-in-lochristi)
+- [Buurpagina: 3D printen in Zaffelare](/3d-printen-in-zaffelare)
+- [Buurpagina: 3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
+- [Hoofdpagina: 3D printen in Beervelde](/3d-printen-in-beervelde)
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Zeveneken centrum.
 - Vaak gevraagd: 3D print service Zeveneken; we adviseren materiaal en afwerking.

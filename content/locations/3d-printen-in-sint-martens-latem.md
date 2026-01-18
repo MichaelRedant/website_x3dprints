@@ -66,6 +66,7 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Sint-Martens-Latem: kleine reeksen met vaste settings rond Sint-Martens-Latem.
 - Vaak gevraagd: 3D print service Sint-Martens-Latem; we adviseren materiaal en afwerking.

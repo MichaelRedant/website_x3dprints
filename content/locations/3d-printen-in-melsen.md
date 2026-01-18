@@ -123,9 +123,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
-- [3D printen in Munte](/3d-printen-in-munte)
-- [3D printen in Schelderode](/3d-printen-in-schelderode)
+- [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [Buurpagina: 3D printen in Munte](/3d-printen-in-munte)
+- [Buurpagina: 3D printen in Schelderode](/3d-printen-in-schelderode)
+- [Hoofdpagina: 3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Melsen centrum.
 - Vaak gevraagd: 3D print service Melsen; we adviseren materiaal en afwerking.

@@ -121,9 +121,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Assenede](/3d-printen-in-assenede)
-- [3D printen in Boekhoute](/3d-printen-in-boekhoute)
-- [3D printen in Bassevelde](/3d-printen-in-bassevelde)
+- [Buurpagina: 3D printen in Assenede](/3d-printen-in-assenede)
+- [Buurpagina: 3D printen in Bassevelde](/3d-printen-in-bassevelde)
+- [Buurpagina: 3D printen in Boekhoute](/3d-printen-in-boekhoute)
+
 ## Spotlight rond Oosteeklo
 - Lokale ondernemers en techniekers: behuizingen en pasmallen voor teams in Oosteeklo centrum.
 - Terugkerende order: 3D print service Oosteeklo; we bewaren je instellingen.

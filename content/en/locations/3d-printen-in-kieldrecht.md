@@ -117,9 +117,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Kieldr
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Doel](/en/3d-printen-in-doel)
-- [3D printing in Verrebroek](/en/3d-printen-in-verrebroek)
-- [3D printing in Kallo](/en/3d-printen-in-kallo)
+- [Nearby: 3D printing in Doel](/en/3d-printen-in-doel)
+- [Nearby: 3D printing in Verrebroek](/en/3d-printen-in-verrebroek)
+- [Nearby: 3D printing in Kallo](/en/3d-printen-in-kallo)
+- [Parent page: 3D printing in Beveren-Kruibeke-Zwijndrecht](/en/3d-printen-in-beveren-kruibeke-zwijndrecht)
 
 ## Local spotlight
 - Lokale KMO's en techniekers: PLA/PETG parts tuned for projects near Kieldrecht centrum.

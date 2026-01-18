@@ -117,9 +117,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Bevere
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Kallo](/en/3d-printen-in-kallo)
-- [3D printing in Melsele](/en/3d-printen-in-melsele)
-- [3D printing in Haasdonk](/en/3d-printen-in-haasdonk)
+- [Nearby: 3D printing in Kallo](/en/3d-printen-in-kallo)
+- [Nearby: 3D printing in Melsele](/en/3d-printen-in-melsele)
+- [Nearby: 3D printing in Haasdonk](/en/3d-printen-in-haasdonk)
+- [Nearby: 3D printing in Vrasene](/en/3d-printen-in-vrasene)
 
 ## Customer spotlight
 - KMO's en zelfstandigen: small batches with consistent settings near Beveren centrum.

@@ -66,6 +66,7 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Wannegem-Lede: kleine reeksen met vaste settings rond Wannegem-Lede.
 - Vaak gevraagd: 3D print service Wannegem-Lede; we adviseren materiaal en afwerking.

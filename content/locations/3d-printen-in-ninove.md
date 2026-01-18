@@ -177,7 +177,8 @@ Wil je ervaren hoe **3D printen in Ninove** jouw project vooruithelpt? Vraag van
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Aalst](/3d-printen-in-aalst)
+
 ## Klantenspotlight
 - Lokale teams in Ninove: kleine reeksen met vaste settings rond Ninove.
 - Vaak gevraagd: 3D print service Ninove; we adviseren materiaal en afwerking.

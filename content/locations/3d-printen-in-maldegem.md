@@ -73,7 +73,8 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Eeklo](/3d-printen-in-eeklo)
+
 ## Klantenspotlight
 - Lokale teams in Maldegem: kleine reeksen met vaste settings rond Maldegem.
 - Vaak gevraagd: 3D print service Maldegem; we adviseren materiaal en afwerking.

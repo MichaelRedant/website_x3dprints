@@ -78,6 +78,7 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Nederboelare
 - Lokale teams in Nederboelare: behuizingen en pasmallen voor teams in Nederboelare.
 - Terugkerende order: 3D print service Nederboelare; we bewaren je instellingen.

@@ -78,6 +78,7 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Gijzenzele
 - Lokale teams in Gijzenzele: behuizingen en pasmallen voor teams in Gijzenzele.
 - Terugkerende order: 3D print service Gijzenzele; we bewaren je instellingen.

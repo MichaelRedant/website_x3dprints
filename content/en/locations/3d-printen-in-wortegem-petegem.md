@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Worteg
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Wortegem](/en/3d-printen-in-wortegem)
-- [3D printing in Petegem-aan-de-Schelde](/en/3d-printen-in-petegem-aan-de-schelde)
-- [3D printing in Moregem](/en/3d-printen-in-moregem)
+- [Nearby: 3D printing in Wortegem](/en/3d-printen-in-wortegem)
+- [Nearby: 3D printing in Petegem-aan-de-Schelde](/en/3d-printen-in-petegem-aan-de-schelde)
+- [Nearby: 3D printing in Moregem](/en/3d-printen-in-moregem)
+- [Nearby: 3D printing in Elsegem](/en/3d-printen-in-elsegem)
 
 ## Spotlight near Wortegem-Petegem
 - Lokale makers en ontwerpers: fixtures and housings for teams around Wortegem-Petegem centrum.

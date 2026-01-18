@@ -66,6 +66,7 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Leupegem (Oudenaarde)
 - Lokale teams in Leupegem (Oudenaarde): behuizingen en pasmallen voor teams in Leupegem (Oudenaarde).
 - Terugkerende order: 3D print service Leupegem; we bewaren je instellingen.

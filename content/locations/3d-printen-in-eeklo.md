@@ -124,8 +124,9 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Maldegem](/3d-printen-in-maldegem)
-- [3D printen in Assenede](/3d-printen-in-assenede)
+- [Buurpagina: 3D printen in Maldegem](/3d-printen-in-maldegem)
+- [Buurpagina: 3D printen in Assenede](/3d-printen-in-assenede)
+
 ## Spotlight rond Eeklo
 - KMO's en zelfstandigen in het Meetjesland: behuizingen en pasmallen voor teams in Eeklo centrum.
 - Terugkerende order: 3D print service Eeklo; we bewaren je instellingen.

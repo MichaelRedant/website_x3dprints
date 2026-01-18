@@ -132,6 +132,7 @@ Benieuwd hoe **3D printen in Oudegem** jouw idee versterkt? Vraag een **gratis o
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Oudegem
 - Lokale teams in Oudegem: behuizingen en pasmallen voor teams in Oudegem.
 - Terugkerende order: 3D print service oudegem; we bewaren je instellingen.

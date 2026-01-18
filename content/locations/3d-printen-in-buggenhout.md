@@ -122,9 +122,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Opdorp](/3d-printen-in-opdorp)
-- [3D printen in Berchem](/3d-printen-in-berchem)
-- [3D printen in Borgerhout](/3d-printen-in-borgerhout)
+- [Buurpagina: 3D printen in Opdorp](/3d-printen-in-opdorp)
+- [Hoofdpagina: 3D printen in Lebbeke](/3d-printen-in-lebbeke)
+- [Hoofdpagina: 3D printen in Wieze](/3d-printen-in-wieze)
+
 ## Lokale spotlight
 - Lokale KMO's en zelfstandigen: PLA/PETG onderdelen afgestemd op projecten rond Buggenhout centrum.
 - Vaak gevraagd: 3D print service Buggenhout; we adviseren materiaal en afwerking.

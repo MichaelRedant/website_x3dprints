@@ -137,6 +137,7 @@ Benieuwd hoe **3D printen in Oostakker** jouw idee versterkt? Vraag een **gratis
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Oostakker: kleine reeksen met vaste settings rond Oostakker.
 - Vaak gevraagd: 3D print service oostakker; we adviseren materiaal en afwerking.

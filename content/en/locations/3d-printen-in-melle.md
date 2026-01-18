@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Melle*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Gontrode](/en/3d-printen-in-gontrode)
-- [3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
-- [3D printing in Wetteren](/en/3d-printen-in-wetteren)
+- [Nearby: 3D printing in Gontrode](/en/3d-printen-in-gontrode)
+- [Nearby: 3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
+- [Nearby: 3D printing in Wetteren](/en/3d-printen-in-wetteren)
+- [Parent page: 3D printing in Merelbeke-Melle](/en/3d-printen-in-merelbeke-melle)
 
 ## Local spotlight
 - Lokale ondernemers en makers: PLA/PETG parts tuned for projects near Melle centrum.

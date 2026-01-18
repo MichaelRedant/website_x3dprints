@@ -121,11 +121,11 @@ Wilt u snel starten? Vraag een vrijblijvende offerte aan via [contact](/contact)
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Beveren](/3d-printen-in-beveren)
-- [3D printen in Rupelmonde](/3d-printen-in-rupelmonde)
-- [3D printen in Burcht](/3d-printen-in-burcht)
-- [3D printen in Kruibeke](/3d-printen-in-kruibeke)
-- [3D printen in Zwijndrecht](/3d-printen-in-zwijndrecht)
+- [Buurpagina: 3D printen in Beveren](/3d-printen-in-beveren)
+- [Buurpagina: 3D printen in Kruibeke](/3d-printen-in-kruibeke)
+- [Buurpagina: 3D printen in Zwijndrecht](/3d-printen-in-zwijndrecht)
+- [Buurpagina: 3D printen in Bazel](/3d-printen-in-bazel)
+
 ## Spotlight rond Beveren-Kruibeke-Zwijndrecht
 - Waaslandhaven en industrie: behuizingen en pasmallen voor teams in Beveren.
 - Terugkerende order: 3D print service Beveren-Kruibeke-Zwijndrecht; we bewaren je instellingen.

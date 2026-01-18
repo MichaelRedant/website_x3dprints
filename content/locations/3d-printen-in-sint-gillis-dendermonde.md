@@ -132,6 +132,7 @@ Benieuwd hoe **3D printen in Sint-Gillis-Dendermonde** jouw idee versterkt? Vraa
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Sint-Gillis-Dendermonde: kleine reeksen met vaste settings rond Sint-Gillis-Dendermonde.
 - Vaak gevraagd: 3D print service sint-gillis-dendermonde; we adviseren materiaal en afwerking.

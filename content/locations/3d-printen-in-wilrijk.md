@@ -81,6 +81,7 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en aan
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Wilrijk
 - Onderwijs/UAntwerpen Drie Eiken: behuizingen en pasmallen voor teams in Wilrijk centrum.
 - Terugkerende order: 3D print service Wilrijk; we bewaren je instellingen.

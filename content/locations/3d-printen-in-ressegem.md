@@ -159,6 +159,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Ressegem: PLA/PETG onderdelen afgestemd op projecten rond Ressegem.
 - Vaak gevraagd: 3D print service Ressegem; we adviseren materiaal en afwerking.

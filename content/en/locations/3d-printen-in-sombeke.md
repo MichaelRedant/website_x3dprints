@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Sombek
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Waasmunster](/en/3d-printen-in-waasmunster)
-- [3D printing in Hamme](/en/3d-printen-in-hamme)
-- [3D printing in Lokeren](/en/3d-printen-in-lokeren)
+- [Nearby: 3D printing in Waasmunster](/en/3d-printen-in-waasmunster)
+- [Nearby: 3D printing in Hamme](/en/3d-printen-in-hamme)
+- [Nearby: 3D printing in Lokeren](/en/3d-printen-in-lokeren)
 
 ## Spotlight near Sombeke
 - Lokale makers en ontwerpers: fixtures and housings for teams around Sombeke centrum.

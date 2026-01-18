@@ -107,6 +107,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Kapellen
 - Lokale teams in Kapellen: behuizingen en pasmallen voor teams in Kapellen.
 - Terugkerende order: 3D print service Kapellen; we bewaren je instellingen.

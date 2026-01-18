@@ -137,9 +137,11 @@ Benieuwd hoe **3D printen in Dendermonde** uw project kan versnellen of uw idee 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Grembergen](/3d-printen-in-grembergen)
-- [3D printen in Baasrode](/3d-printen-in-baasrode)
-- [3D printen in Hamme](/3d-printen-in-hamme)
+- [Buurpagina: 3D printen in Grembergen](/3d-printen-in-grembergen)
+- [Buurpagina: 3D printen in Baasrode](/3d-printen-in-baasrode)
+- [Buurpagina: 3D printen in Hamme](/3d-printen-in-hamme)
+- [Hoofdpagina: 3D printen in Denderbelle](/3d-printen-in-denderbelle)
+
 ## Lokale spotlight
 - Prototyping voor KMO's in Dendermonde/Hamme: PLA/PETG onderdelen afgestemd op projecten rond Dendermonde centrum.
 - Vaak gevraagd: 3D print service dendermonde; we adviseren materiaal en afwerking.

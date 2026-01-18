@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Waterv
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Sint-Laureins](/en/3d-printen-in-sint-laureins)
-- [3D printing in Sint-Margriete](/en/3d-printen-in-sint-margriete)
-- [3D printing in Waterland-Oudeman](/en/3d-printen-in-waterland-oudeman)
+- [Nearby: 3D printing in Sint-Laureins](/en/3d-printen-in-sint-laureins)
+- [Nearby: 3D printing in Sint-Margriete](/en/3d-printen-in-sint-margriete)
+- [Nearby: 3D printing in Waterland-Oudeman](/en/3d-printen-in-waterland-oudeman)
+- [Nearby: 3D printing in Sint-Jan-in-Eremo](/en/3d-printen-in-sint-jan-in-eremo)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Watervliet centrum.

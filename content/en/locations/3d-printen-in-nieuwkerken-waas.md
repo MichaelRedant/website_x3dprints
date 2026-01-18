@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Nieuwk
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Sint-Niklaas](/en/3d-printen-in-sint-niklaas)
-- [3D printing in Belsele](/en/3d-printen-in-belsele)
-- [3D printing in Sinaai](/en/3d-printen-in-sinaai)
+- [Nearby: 3D printing in Sint-Niklaas](/en/3d-printen-in-sint-niklaas)
+- [Nearby: 3D printing in Belsele](/en/3d-printen-in-belsele)
+- [Nearby: 3D printing in Sinaai](/en/3d-printen-in-sinaai)
+- [Nearby: 3D printing in Sint-Gillis-Waas](/en/3d-printen-in-sint-gillis-waas)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Nieuwkerken-Waas centrum.

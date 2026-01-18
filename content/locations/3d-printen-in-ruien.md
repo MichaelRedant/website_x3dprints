@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
-- [3D printen in Berchem](/3d-printen-in-berchem)
-- [3D printen in Zulzeke](/3d-printen-in-zulzeke)
+- [Buurpagina: 3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
+- [Buurpagina: 3D printen in Berchem](/3d-printen-in-berchem)
+- [Buurpagina: 3D printen in Zulzeke](/3d-printen-in-zulzeke)
+- [Hoofdpagina: 3D printen in Berchem (Kluisbergen)](/3d-printen-in-berchem-kluisbergen)
+
 ## Klantenspotlight
 - Onderhoud en herstellingen: kleine reeksen met vaste settings rond Ruien centrum.
 - Vaak gevraagd: 3D print service Ruien; we adviseren materiaal en afwerking.

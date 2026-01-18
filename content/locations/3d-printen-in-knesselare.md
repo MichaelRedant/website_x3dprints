@@ -123,11 +123,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact) en ontdek wat mogeli
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Aalter](/3d-printen-in-aalter)
-- [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
-- [3D printen in Poeke](/3d-printen-in-poeke)
-- [3D printen in Ursel](/3d-printen-in-ursel)
-- [3D printen in Bellem](/3d-printen-in-bellem)
+- [Buurpagina: 3D printen in Aalter](/3d-printen-in-aalter)
+- [Buurpagina: 3D printen in Bellem](/3d-printen-in-bellem)
+- [Buurpagina: 3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
+- [Buurpagina: 3D printen in Poeke](/3d-printen-in-poeke)
+
 ## Spotlight rond Knesselare
 - KMO's en techniekers in de regio: behuizingen en pasmallen voor teams in Knesselare centrum.
 - Terugkerende order: 3D print service Knesselare; we bewaren je instellingen.

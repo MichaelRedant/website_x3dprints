@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Baaige
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Gavere](/en/3d-printen-in-gavere)
-- [3D printing in Vurste](/en/3d-printen-in-vurste)
-- [3D printing in Dikkelvenne](/en/3d-printen-in-dikkelvenne)
+- [Nearby: 3D printing in Gavere](/en/3d-printen-in-gavere)
+- [Nearby: 3D printing in Vurste](/en/3d-printen-in-vurste)
+- [Nearby: 3D printing in Dikkelvenne](/en/3d-printen-in-dikkelvenne)
 
 ## Customer spotlight
 - Creatieve projecten en maquettes: small batches with consistent settings near Baaigem centrum.

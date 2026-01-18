@@ -107,6 +107,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Wommelgem: kleine reeksen met vaste settings rond Wommelgem.
 - Vaak gevraagd: 3D print service Wommelgem; we adviseren materiaal en afwerking.

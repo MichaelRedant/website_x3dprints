@@ -133,6 +133,7 @@ Wil je ervaren hoe **3D printen in Neigem** jouw project vooruithelpt? Vraag van
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Neigem: PLA/PETG onderdelen afgestemd op projecten rond Neigem.
 - Vaak gevraagd: 3D print service Neigem; we adviseren materiaal en afwerking.

@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Zevene
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Lochristi](/en/3d-printen-in-lochristi)
-- [3D printing in Zaffelare](/en/3d-printen-in-zaffelare)
-- [3D printing in Wachtebeke](/en/3d-printen-in-wachtebeke)
+- [Nearby: 3D printing in Lochristi](/en/3d-printen-in-lochristi)
+- [Nearby: 3D printing in Zaffelare](/en/3d-printen-in-zaffelare)
+- [Nearby: 3D printing in Wachtebeke](/en/3d-printen-in-wachtebeke)
+- [Parent page: 3D printing in Beervelde](/en/3d-printen-in-beervelde)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near Zeveneken centrum.

@@ -124,8 +124,9 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Denderleeuw](/3d-printen-in-denderleeuw)
-- [3D printen in Welle](/3d-printen-in-welle)
+- [Buurpagina: 3D printen in Denderleeuw](/3d-printen-in-denderleeuw)
+- [Buurpagina: 3D printen in Welle](/3d-printen-in-welle)
+
 ## Klantenspotlight
 - Lokale makers en techniekers: kleine reeksen met vaste settings rond Iddergem centrum.
 - Vaak gevraagd: 3D print service Iddergem; we adviseren materiaal en afwerking.

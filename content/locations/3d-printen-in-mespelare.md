@@ -132,6 +132,7 @@ Benieuwd hoe **3D printen in Mespelare** jouw idee versterkt? Vraag een **gratis
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Mespelare
 - Lokale teams in Mespelare: behuizingen en pasmallen voor teams in Mespelare.
 - Terugkerende order: 3D print service mespelare; we bewaren je instellingen.

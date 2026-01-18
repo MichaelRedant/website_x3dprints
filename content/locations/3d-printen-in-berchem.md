@@ -80,7 +80,11 @@ Stuur je STL- of STEP-bestand via [contact](/contact) en vermeld kleur, aantal e
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
+- [Hoofdpagina: 3D printen in Kwaremont](/3d-printen-in-kwaremont)
+- [Hoofdpagina: 3D printen in Ruien](/3d-printen-in-ruien)
+- [Hoofdpagina: 3D printen in Antwerpen](/3d-printen-in-antwerpen)
+
 ## Lokale spotlight
 - Interieur/props voor Zurenborg boutiques: PLA/PETG onderdelen afgestemd op projecten rond Berchem centrum.
 - Vaak gevraagd: 3D print service Berchem; we adviseren materiaal en afwerking.

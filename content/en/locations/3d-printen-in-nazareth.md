@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Nazare
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Eke](/en/3d-printen-in-eke)
-- [3D printing in De Pinte](/en/3d-printen-in-de-pinte)
-- [3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
+- [Nearby: 3D printing in Eke](/en/3d-printen-in-eke)
+- [Nearby: 3D printing in De Pinte](/en/3d-printen-in-de-pinte)
+- [Nearby: 3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
+- [Parent page: 3D printing in Nazareth-De Pinte](/en/3d-printen-in-nazareth-de-pinte)
 
 ## Spotlight near Nazareth
 - Lokale makers en ontwerpers: fixtures and housings for teams around Nazareth centrum.

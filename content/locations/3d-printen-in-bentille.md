@@ -125,8 +125,9 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Kaprijke](/3d-printen-in-kaprijke)
-- [3D printen in Lembeke](/3d-printen-in-lembeke)
+- [Buurpagina: 3D printen in Kaprijke](/3d-printen-in-kaprijke)
+- [Buurpagina: 3D printen in Lembeke](/3d-printen-in-lembeke)
+
 ## Lokale spotlight
 - KMO's en zelfstandigen: PLA/PETG onderdelen afgestemd op projecten rond Bentille kern.
 - Vaak gevraagd: 3D print service Bentille; we adviseren materiaal en afwerking.

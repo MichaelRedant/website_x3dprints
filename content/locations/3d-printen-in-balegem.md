@@ -78,6 +78,7 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Balegem: PLA/PETG onderdelen afgestemd op projecten rond Balegem.
 - Vaak gevraagd: 3D print service Balegem; we adviseren materiaal en afwerking.

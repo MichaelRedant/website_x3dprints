@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-L
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Sint-Jan-in-Eremo](/en/3d-printen-in-sint-jan-in-eremo)
-- [3D printing in Sint-Margriete](/en/3d-printen-in-sint-margriete)
-- [3D printing in Watervliet](/en/3d-printen-in-watervliet)
+- [Nearby: 3D printing in Sint-Jan-in-Eremo](/en/3d-printen-in-sint-jan-in-eremo)
+- [Nearby: 3D printing in Sint-Margriete](/en/3d-printen-in-sint-margriete)
+- [Nearby: 3D printing in Watervliet](/en/3d-printen-in-watervliet)
+- [Nearby: 3D printing in Waterland-Oudeman](/en/3d-printen-in-waterland-oudeman)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Sint-Laureins centrum.

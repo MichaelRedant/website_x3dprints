@@ -125,8 +125,9 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Sint-Maria-Horebeke](/3d-printen-in-sint-maria-horebeke)
-- [3D printen in Sint-Kornelis-Horebeke](/3d-printen-in-sint-kornelis-horebeke)
+- [Buurpagina: 3D printen in Sint-Maria-Horebeke](/3d-printen-in-sint-maria-horebeke)
+- [Buurpagina: 3D printen in Sint-Kornelis-Horebeke](/3d-printen-in-sint-kornelis-horebeke)
+
 ## Spotlight rond Horebeke
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Horebeke centrum.
 - Terugkerende order: 3D print service Horebeke; we bewaren je instellingen.

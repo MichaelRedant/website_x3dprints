@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Ertvelde](/3d-printen-in-ertvelde)
-- [3D printen in Sleidinge](/3d-printen-in-sleidinge)
-- [3D printen in Kluizen](/3d-printen-in-kluizen)
+- [Buurpagina: 3D printen in Ertvelde](/3d-printen-in-ertvelde)
+- [Buurpagina: 3D printen in Sleidinge](/3d-printen-in-sleidinge)
+- [Buurpagina: 3D printen in Kluizen](/3d-printen-in-kluizen)
+- [Hoofdpagina: 3D printen in Zelzate](/3d-printen-in-zelzate)
+
 ## Lokale spotlight
 - KMO's en techniekers rond de kanaalzone: PLA/PETG onderdelen afgestemd op projecten rond Evergem centrum.
 - Vaak gevraagd: 3D print service Evergem; we adviseren materiaal en afwerking.

@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Belsele](/3d-printen-in-belsele)
-- [3D printen in Nieuwkerken-Waas](/3d-printen-in-nieuwkerken-waas)
-- [3D printen in Sinaai](/3d-printen-in-sinaai)
+- [Buurpagina: 3D printen in Belsele](/3d-printen-in-belsele)
+- [Buurpagina: 3D printen in Nieuwkerken-Waas](/3d-printen-in-nieuwkerken-waas)
+- [Buurpagina: 3D printen in Sinaai](/3d-printen-in-sinaai)
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Sint-Niklaas centrum.
 - Vaak gevraagd: 3D print service Sint-Niklaas; we adviseren materiaal en afwerking.

@@ -79,7 +79,8 @@ Upload je bestand via [contact](/contact). Je krijgt snel een voorstel zodat je 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Mechelen](/3d-printen-in-mechelen)
+
 ## Spotlight rond Hombeek
 - Lokale teams in Hombeek: behuizingen en pasmallen voor teams in Hombeek.
 - Terugkerende order: 3D print service Hombeek; we bewaren je instellingen.

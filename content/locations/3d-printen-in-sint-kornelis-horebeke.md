@@ -125,8 +125,9 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Horebeke](/3d-printen-in-horebeke)
-- [3D printen in Sint-Maria-Horebeke](/3d-printen-in-sint-maria-horebeke)
+- [Buurpagina: 3D printen in Horebeke](/3d-printen-in-horebeke)
+- [Buurpagina: 3D printen in Sint-Maria-Horebeke](/3d-printen-in-sint-maria-horebeke)
+
 ## Lokale spotlight
 - KMO's en zelfstandigen: PLA/PETG onderdelen afgestemd op projecten rond Sint-Kornelis-Horebeke centrum.
 - Vaak gevraagd: 3D print service Sint-Kornelis-Horebeke; we adviseren materiaal en afwerking.

@@ -118,7 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Destel
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Heusden](/en/3d-printen-in-heusden)
+- [Nearby: 3D printing in Heusden](/en/3d-printen-in-heusden)
+- [Parent page: 3D printing in Laarne](/en/3d-printen-in-laarne)
+- [Parent page: 3D printing in Kalken](/en/3d-printen-in-kalken)
+- [Parent page: 3D printing in Gent](/en/3d-printen-in-gent)
 
 ## Spotlight near Destelbergen
 - Lokale KMO's en zelfstandigen: fixtures and housings for teams around Destelbergen centrum.

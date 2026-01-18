@@ -118,8 +118,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Eeklo*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Maldegem](/en/3d-printen-in-maldegem)
-- [3D printing in Assenede](/en/3d-printen-in-assenede)
+- [Nearby: 3D printing in Maldegem](/en/3d-printen-in-maldegem)
+- [Nearby: 3D printing in Assenede](/en/3d-printen-in-assenede)
 
 ## Spotlight near Eeklo
 - KMO's en zelfstandigen in het Meetjesland: fixtures and housings for teams around Eeklo centrum.

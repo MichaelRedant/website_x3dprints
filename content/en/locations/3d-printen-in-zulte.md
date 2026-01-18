@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Zulte*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Machelen (Zulte)](/en/3d-printen-in-machelen-zulte)
-- [3D printing in Olsene](/en/3d-printen-in-olsene)
-- [3D printing in Astene](/en/3d-printen-in-astene)
+- [Nearby: 3D printing in Machelen (Zulte)](/en/3d-printen-in-machelen-zulte)
+- [Nearby: 3D printing in Olsene](/en/3d-printen-in-olsene)
+- [Nearby: 3D printing in Astene](/en/3d-printen-in-astene)
 
 ## Spotlight near Zulte
 - Lokale makers en ontwerpers: fixtures and housings for teams around Zulte centrum.

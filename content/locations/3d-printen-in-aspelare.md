@@ -133,6 +133,7 @@ Benieuwd hoe **3D printen in Aspelare** jouw idee kan versterken? Vraag vandaag 
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Aspelare: kleine reeksen met vaste settings rond Aspelare.
 - Vaak gevraagd: 3D print service Aspelare; we adviseren materiaal en afwerking.

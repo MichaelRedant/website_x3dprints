@@ -116,6 +116,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Waterbeheer en sensing in de polders: PLA/PETG onderdelen afgestemd op projecten rond De Moeren laagte.
 - Vaak gevraagd: 3D print service De Moeren; we adviseren materiaal en afwerking.

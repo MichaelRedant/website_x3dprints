@@ -133,6 +133,7 @@ Wil je ervaren hoe **3D printen in Nederhasselt** jouw project vooruithelpt? Vra
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Nederhasselt: kleine reeksen met vaste settings rond Nederhasselt.
 - Vaak gevraagd: 3D print service Nederhasselt; we adviseren materiaal en afwerking.

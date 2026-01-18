@@ -118,7 +118,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Berend
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ekeren](/en/3d-printen-in-ekeren)
+- [Nearby: 3D printing in Ekeren](/en/3d-printen-in-ekeren)
 
 ## Local spotlight
 - Havenprojecten en tooling: PLA/PETG parts tuned for projects near Berendrecht.

@@ -118,8 +118,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Ertvel
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Evergem](/en/3d-printen-in-evergem)
-- [3D printing in Kluizen](/en/3d-printen-in-kluizen)
+- [Nearby: 3D printing in Evergem](/en/3d-printen-in-evergem)
+- [Nearby: 3D printing in Kluizen](/en/3d-printen-in-kluizen)
 
 ## Customer spotlight
 - Industrie en logistiek rond de kanaalzone: small batches with consistent settings near Ertvelde centrum.

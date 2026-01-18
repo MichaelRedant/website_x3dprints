@@ -118,7 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Merelb
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Parent page: 3D printing in Nazareth-De Pinte](/en/3d-printen-in-nazareth-de-pinte)
+- [Parent page: 3D printing in Nazareth](/en/3d-printen-in-nazareth)
+- [Parent page: 3D printing in De Pinte](/en/3d-printen-in-de-pinte)
+- [Parent page: 3D printing in Eke](/en/3d-printen-in-eke)
 
 ## Customer spotlight
 - Local teams in Merelbeke: small batches with consistent settings near Merelbeke.

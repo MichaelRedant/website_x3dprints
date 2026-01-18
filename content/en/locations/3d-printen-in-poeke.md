@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Poeke*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Aalter](/en/3d-printen-in-aalter)
-- [3D printing in Bellem](/en/3d-printen-in-bellem)
-- [3D printing in Knesselare](/en/3d-printen-in-knesselare)
+- [Nearby: 3D printing in Aalter](/en/3d-printen-in-aalter)
+- [Nearby: 3D printing in Bellem](/en/3d-printen-in-bellem)
+- [Nearby: 3D printing in Knesselare](/en/3d-printen-in-knesselare)
+- [Nearby: 3D printing in Lotenhulle](/en/3d-printen-in-lotenhulle)
 
 ## Customer spotlight
 - Creatieve projecten en decor: small batches with consistent settings near Poeke centrum.

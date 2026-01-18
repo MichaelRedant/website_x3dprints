@@ -91,6 +91,7 @@ Zoek je 3D printen in Mortsel? We denken mee over passing, sterkte en look zodat
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Mortsel
 - Lokale teams in Mortsel: behuizingen en pasmallen voor teams in Mortsel.
 - Terugkerende order: 3D print service Mortsel; we bewaren je instellingen.

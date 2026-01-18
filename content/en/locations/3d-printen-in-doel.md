@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Doel**
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Kieldrecht](/en/3d-printen-in-kieldrecht)
-- [3D printing in Verrebroek](/en/3d-printen-in-verrebroek)
-- [3D printing in Kallo](/en/3d-printen-in-kallo)
+- [Nearby: 3D printing in Kieldrecht](/en/3d-printen-in-kieldrecht)
+- [Nearby: 3D printing in Verrebroek](/en/3d-printen-in-verrebroek)
+- [Nearby: 3D printing in Kallo](/en/3d-printen-in-kallo)
+- [Parent page: 3D printing in Beveren-Kruibeke-Zwijndrecht](/en/3d-printen-in-beveren-kruibeke-zwijndrecht)
 
 ## Spotlight near Doel
 - Lokale ondernemers en makers: fixtures and housings for teams around Kieldrecht.

@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
-- [3D printen in Melsen](/3d-printen-in-melsen)
-- [3D printen in Munte](/3d-printen-in-munte)
+- [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [Buurpagina: 3D printen in Melsen](/3d-printen-in-melsen)
+- [Buurpagina: 3D printen in Munte](/3d-printen-in-munte)
+- [Hoofdpagina: 3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Schelderode centrum.
 - Vaak gevraagd: 3D print service Schelderode; we adviseren materiaal en afwerking.

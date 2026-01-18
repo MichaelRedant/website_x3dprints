@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
-- [3D printen in Kwaremont](/3d-printen-in-kwaremont)
-- [3D printen in Ruien](/3d-printen-in-ruien)
+- [Buurpagina: 3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
+- [Buurpagina: 3D printen in Kwaremont](/3d-printen-in-kwaremont)
+- [Buurpagina: 3D printen in Ruien](/3d-printen-in-ruien)
+
 ## Klantenspotlight
 - Lokale ondernemers en techniekers: kleine reeksen met vaste settings rond Zulzeke centrum.
 - Vaak gevraagd: 3D print service Zulzeke; we adviseren materiaal en afwerking.

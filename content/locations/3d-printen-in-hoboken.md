@@ -81,6 +81,7 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en dea
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Schelde/industrie projecten: PLA/PETG onderdelen afgestemd op projecten rond Hoboken centrum.
 - Vaak gevraagd: 3D print service Hoboken; we adviseren materiaal en afwerking.

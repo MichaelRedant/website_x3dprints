@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Heikant (Zele)](/3d-printen-in-heikant-zele)
-- [3D printen in Hamme](/3d-printen-in-hamme)
-- [3D printen in Dendermonde](/3d-printen-in-dendermonde)
+- [Buurpagina: 3D printen in Heikant (Zele)](/3d-printen-in-heikant-zele)
+- [Buurpagina: 3D printen in Hamme](/3d-printen-in-hamme)
+- [Buurpagina: 3D printen in Dendermonde](/3d-printen-in-dendermonde)
+
 ## Spotlight rond Zele
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Zele centrum.
 - Terugkerende order: 3D print service Zele; we bewaren je instellingen.

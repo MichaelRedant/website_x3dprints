@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
-- [3D printen in De Klinge](/3d-printen-in-de-klinge)
-- [3D printen in Sint-Pauwels](/3d-printen-in-sint-pauwels)
+- [Buurpagina: 3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
+- [Buurpagina: 3D printen in De Klinge](/3d-printen-in-de-klinge)
+- [Buurpagina: 3D printen in Sint-Pauwels](/3d-printen-in-sint-pauwels)
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Meerdonk centrum.
 - Vaak gevraagd: 3D print service Meerdonk; we adviseren materiaal en afwerking.

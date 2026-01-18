@@ -123,9 +123,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Wortegem](/3d-printen-in-wortegem)
-- [3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
-- [3D printen in Moregem](/3d-printen-in-moregem)
+- [Buurpagina: 3D printen in Wortegem](/3d-printen-in-wortegem)
+- [Buurpagina: 3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
+- [Buurpagina: 3D printen in Moregem](/3d-printen-in-moregem)
+- [Buurpagina: 3D printen in Elsegem](/3d-printen-in-elsegem)
+
 ## Spotlight rond Wortegem-Petegem
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Wortegem-Petegem centrum.
 - Terugkerende order: 3D print service Wortegem-Petegem; we bewaren je instellingen.

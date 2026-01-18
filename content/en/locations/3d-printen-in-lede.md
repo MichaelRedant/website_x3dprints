@@ -118,7 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Lede**
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Parent page: 3D printing in Oordegem](/en/3d-printen-in-oordegem)
+- [Parent page: 3D printing in Smetlede](/en/3d-printen-in-smetlede)
+- [Parent page: 3D printing in Impe](/en/3d-printen-in-impe)
+- [Parent page: 3D printing in Wanzele](/en/3d-printen-in-wanzele)
 
 ## Local spotlight
 - Local teams in Lede: PLA/PETG parts tuned for projects near Lede.

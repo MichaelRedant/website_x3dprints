@@ -118,8 +118,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Berlar
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Overmere](/en/3d-printen-in-overmere)
-- [3D printing in Uitbergen](/en/3d-printen-in-uitbergen)
+- [Nearby: 3D printing in Overmere](/en/3d-printen-in-overmere)
+- [Nearby: 3D printing in Uitbergen](/en/3d-printen-in-uitbergen)
 
 ## Spotlight near Berlare
 - Lokale KMO's en zelfstandigen: fixtures and housings for teams around Berlare centrum.

@@ -81,6 +81,7 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Hekelgem: PLA/PETG onderdelen afgestemd op projecten rond Hekelgem.
 - Vaak gevraagd: 3D print service Hekelgem; we adviseren materiaal en afwerking.

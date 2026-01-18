@@ -74,6 +74,7 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Natuur- en educatieprojecten rond Viconia: kleine reeksen met vaste settings rond Avekapelle dorpskern.
 - Vaak gevraagd: 3D print service Avekapelle; we adviseren materiaal en afwerking.

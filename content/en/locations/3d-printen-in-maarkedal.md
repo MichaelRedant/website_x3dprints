@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Maarke
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Etikhove](/en/3d-printen-in-etikhove)
-- [3D printing in Maarke-Kerkem](/en/3d-printen-in-maarke-kerkem)
-- [3D printing in Nukerke](/en/3d-printen-in-nukerke)
+- [Nearby: 3D printing in Etikhove](/en/3d-printen-in-etikhove)
+- [Nearby: 3D printing in Maarke-Kerkem](/en/3d-printen-in-maarke-kerkem)
+- [Nearby: 3D printing in Nukerke](/en/3d-printen-in-nukerke)
+- [Nearby: 3D printing in Schorisse](/en/3d-printen-in-schorisse)
 
 ## Local spotlight
 - Makers en ontwerpers in de Vlaamse Ardennen: PLA/PETG parts tuned for projects near Maarkedal centrum.

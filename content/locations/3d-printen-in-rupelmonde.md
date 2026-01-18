@@ -120,9 +120,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Kruibeke](/3d-printen-in-kruibeke)
-- [3D printen in Burcht](/3d-printen-in-burcht)
-- [3D printen in Bazel](/3d-printen-in-bazel)
+- [Buurpagina: 3D printen in Kruibeke](/3d-printen-in-kruibeke)
+- [Buurpagina: 3D printen in Bazel](/3d-printen-in-bazel)
+- [Buurpagina: 3D printen in Burcht](/3d-printen-in-burcht)
+- [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
 ## Lokale spotlight
 - Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Rupelmonde centrum.
 - Vaak gevraagd: 3D print service Rupelmonde; we adviseren materiaal en afwerking.

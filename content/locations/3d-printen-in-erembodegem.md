@@ -132,7 +132,8 @@ Benieuwd hoe **3D printen in Erembodegem** jouw idee versterkt? Vraag een **grat
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Aalst](/3d-printen-in-aalst)
+
 ## Spotlight rond Erembodegem
 - Lokale teams in Erembodegem: behuizingen en pasmallen voor teams in Erembodegem.
 - Terugkerende order: 3D print service erembodegem; we bewaren je instellingen.

@@ -118,8 +118,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Idderg
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Denderleeuw](/en/3d-printen-in-denderleeuw)
-- [3D printing in Welle](/en/3d-printen-in-welle)
+- [Nearby: 3D printing in Denderleeuw](/en/3d-printen-in-denderleeuw)
+- [Nearby: 3D printing in Welle](/en/3d-printen-in-welle)
 
 ## Customer spotlight
 - Lokale makers en techniekers: small batches with consistent settings near Iddergem centrum.

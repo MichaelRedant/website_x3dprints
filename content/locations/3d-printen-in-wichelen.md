@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Schellebelle](/3d-printen-in-schellebelle)
-- [3D printen in Serskamp](/3d-printen-in-serskamp)
-- [3D printen in Wetteren](/3d-printen-in-wetteren)
+- [Buurpagina: 3D printen in Schellebelle](/3d-printen-in-schellebelle)
+- [Buurpagina: 3D printen in Serskamp](/3d-printen-in-serskamp)
+- [Buurpagina: 3D printen in Wetteren](/3d-printen-in-wetteren)
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Wichelen centrum.
 - Vaak gevraagd: 3D print service Wichelen; we adviseren materiaal en afwerking.

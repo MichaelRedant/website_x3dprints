@@ -137,6 +137,7 @@ Benieuwd hoe **3D printen in Mendonk** jouw idee versterkt? Vraag een **gratis o
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Mendonk: kleine reeksen met vaste settings rond Mendonk.
 - Vaak gevraagd: 3D print service mendonk; we adviseren materiaal en afwerking.

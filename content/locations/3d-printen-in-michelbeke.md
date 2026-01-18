@@ -81,6 +81,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Michelbeke
 - Lokale teams in Michelbeke: behuizingen en pasmallen voor teams in Michelbeke.
 - Terugkerende order: 3D print service Michelbeke; we bewaren je instellingen.

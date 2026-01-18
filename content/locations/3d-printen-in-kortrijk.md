@@ -75,6 +75,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Kortrijk
 - Prototyping voor maakbedrijven in Kortrijk/Kuurne: behuizingen en pasmallen voor teams in Kortrijk centrum.
 - Terugkerende order: 3D print service Kortrijk; we bewaren je instellingen.

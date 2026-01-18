@@ -81,6 +81,7 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Affligem: kleine reeksen met vaste settings rond Affligem.
 - Vaak gevraagd: 3D print service affligem; we adviseren materiaal en afwerking.

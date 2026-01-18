@@ -89,6 +89,7 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Asse: PLA/PETG onderdelen afgestemd op projecten rond Asse.
 - Vaak gevraagd: 3D print service Asse; we adviseren materiaal en afwerking.

@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Robors
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Zwalm](/en/3d-printen-in-zwalm)
-- [3D printing in Munkzwalm](/en/3d-printen-in-munkzwalm)
-- [3D printing in Nederzwalm-Hermelgem](/en/3d-printen-in-nederzwalm-hermelgem)
+- [Nearby: 3D printing in Zwalm](/en/3d-printen-in-zwalm)
+- [Nearby: 3D printing in Munkzwalm](/en/3d-printen-in-munkzwalm)
+- [Nearby: 3D printing in Nederzwalm-Hermelgem](/en/3d-printen-in-nederzwalm-hermelgem)
+- [Parent page: 3D printing in Sint-Blasius-Boekel](/en/3d-printen-in-sint-blasius-boekel)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Roborst centrum.

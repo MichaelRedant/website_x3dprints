@@ -133,6 +133,7 @@ Wil je ervaren hoe **3D printen in Voorde** jouw project vooruithelpt? Vraag van
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Voorde: kleine reeksen met vaste settings rond Voorde.
 - Vaak gevraagd: 3D print service Voorde; we adviseren materiaal en afwerking.

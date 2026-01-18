@@ -137,6 +137,7 @@ Benieuwd hoe **3D printen in Mariakerke** jouw idee versterkt? Vraag een **grati
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Mariakerke: PLA/PETG onderdelen afgestemd op projecten rond Mariakerke.
 - Vaak gevraagd: 3D print service mariakerke; we adviseren materiaal en afwerking.

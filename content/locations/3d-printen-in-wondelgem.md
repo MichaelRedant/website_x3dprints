@@ -137,6 +137,7 @@ Benieuwd hoe **3D printen in Wondelgem** jouw idee versterkt? Vraag een **gratis
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Wondelgem: PLA/PETG onderdelen afgestemd op projecten rond Wondelgem.
 - Vaak gevraagd: 3D print service wondelgem; we adviseren materiaal en afwerking.

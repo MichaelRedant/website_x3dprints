@@ -135,6 +135,7 @@ Wil je zelf **3D printen in Strijpen** ervaren? Vraag een **gratis offerte** aan
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Strijpen
 - Lokale teams in Strijpen: behuizingen en pasmallen voor teams in Strijpen.
 - Terugkerende order: 3D print service strijpen; we bewaren je instellingen.

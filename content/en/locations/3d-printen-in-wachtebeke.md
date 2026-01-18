@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Wachte
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Lochristi](/en/3d-printen-in-lochristi)
-- [3D printing in Zeveneken](/en/3d-printen-in-zeveneken)
-- [3D printing in Zaffelare](/en/3d-printen-in-zaffelare)
+- [Nearby: 3D printing in Lochristi](/en/3d-printen-in-lochristi)
+- [Nearby: 3D printing in Zeveneken](/en/3d-printen-in-zeveneken)
+- [Nearby: 3D printing in Zaffelare](/en/3d-printen-in-zaffelare)
+- [Parent page: 3D printing in Zelzate](/en/3d-printen-in-zelzate)
 
 ## Spotlight near Wachtebeke
 - Lokale makers en techniekers: fixtures and housings for teams around Wachtebeke centrum.

@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Meerdo
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Sint-Gillis-Waas](/en/3d-printen-in-sint-gillis-waas)
-- [3D printing in De Klinge](/en/3d-printen-in-de-klinge)
-- [3D printing in Sint-Pauwels](/en/3d-printen-in-sint-pauwels)
+- [Nearby: 3D printing in Sint-Gillis-Waas](/en/3d-printen-in-sint-gillis-waas)
+- [Nearby: 3D printing in De Klinge](/en/3d-printen-in-de-klinge)
+- [Nearby: 3D printing in Sint-Pauwels](/en/3d-printen-in-sint-pauwels)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Meerdonk centrum.

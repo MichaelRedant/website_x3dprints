@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
-- [3D printen in Munte](/3d-printen-in-munte)
-- [3D printen in Lemberge](/3d-printen-in-lemberge)
+- [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [Buurpagina: 3D printen in Munte](/3d-printen-in-munte)
+- [Buurpagina: 3D printen in Lemberge](/3d-printen-in-lemberge)
+- [Hoofdpagina: 3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
+
 ## Spotlight rond Bottelare
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Bottelare centrum.
 - Terugkerende order: 3D print service Bottelare; we bewaren je instellingen.

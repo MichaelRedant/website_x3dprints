@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Tielro
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Temse](/en/3d-printen-in-temse)
-- [3D printing in Steendorp](/en/3d-printen-in-steendorp)
-- [3D printing in Elversele](/en/3d-printen-in-elversele)
+- [Nearby: 3D printing in Temse](/en/3d-printen-in-temse)
+- [Nearby: 3D printing in Steendorp](/en/3d-printen-in-steendorp)
+- [Nearby: 3D printing in Elversele](/en/3d-printen-in-elversele)
 
 ## Spotlight near Tielrode
 - Lokale makers en ontwerpers: fixtures and housings for teams around Tielrode centrum.

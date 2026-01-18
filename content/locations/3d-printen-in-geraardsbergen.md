@@ -84,6 +84,7 @@ Upload je bestand via [contact](/contact). Je ontvangt snel een voorstel zodat j
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Geraardsbergen: PLA/PETG onderdelen afgestemd op projecten rond Geraardsbergen.
 - Vaak gevraagd: 3D print service Geraardsbergen; we adviseren materiaal en afwerking.

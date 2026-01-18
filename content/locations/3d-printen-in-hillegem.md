@@ -153,6 +153,7 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Hillegem
 - Lokale teams in Hillegem: behuizingen en pasmallen voor teams in Hillegem.
 - Terugkerende order: 3D print service Hillegem; we bewaren je instellingen.

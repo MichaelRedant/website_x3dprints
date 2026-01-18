@@ -118,7 +118,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Maldeg
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Parent page: 3D printing in Eeklo](/en/3d-printen-in-eeklo)
 
 ## Customer spotlight
 - Local teams in Maldegem: small batches with consistent settings near Maldegem.

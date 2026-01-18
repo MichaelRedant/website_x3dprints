@@ -107,6 +107,7 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Brasschaat
 - Lokale teams in Brasschaat: behuizingen en pasmallen voor teams in Brasschaat.
 - Terugkerende order: 3D print service Brasschaat; we bewaren je instellingen.

@@ -135,6 +135,7 @@ Klaar om **3D printen in Sint-Goriks-Oudenhove** te proberen? Vraag een **gratis
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Sint-Goriks-Oudenhove: kleine reeksen met vaste settings rond Sint-Goriks-Oudenhove.
 - Vaak gevraagd: 3D print service sint-goriks-oudenhove; we adviseren materiaal en afwerking.

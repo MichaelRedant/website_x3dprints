@@ -125,11 +125,11 @@ Wil u een prototype of maatwerk laten printen in Aalter? Vraag een vrijblijvende
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Bellem](/3d-printen-in-bellem)
-- [3D printen in Knesselare](/3d-printen-in-knesselare)
-- [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
-- [3D printen in Poeke](/3d-printen-in-poeke)
-- [3D printen in Ursel](/3d-printen-in-ursel)
+- [Buurpagina: 3D printen in Bellem](/3d-printen-in-bellem)
+- [Buurpagina: 3D printen in Knesselare](/3d-printen-in-knesselare)
+- [Buurpagina: 3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
+- [Buurpagina: 3D printen in Poeke](/3d-printen-in-poeke)
+
 ## Spotlight rond Aalter
 - KMO's langs E40 en N44: behuizingen en pasmallen voor teams in Aalter centrum.
 - Terugkerende order: 3D print service Aalter; we bewaren je instellingen.

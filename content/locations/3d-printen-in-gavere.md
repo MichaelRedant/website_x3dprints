@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Semmerzake](/3d-printen-in-semmerzake)
-- [3D printen in Vurste](/3d-printen-in-vurste)
-- [3D printen in Baaigem](/3d-printen-in-baaigem)
+- [Buurpagina: 3D printen in Semmerzake](/3d-printen-in-semmerzake)
+- [Buurpagina: 3D printen in Vurste](/3d-printen-in-vurste)
+- [Buurpagina: 3D printen in Baaigem](/3d-printen-in-baaigem)
+- [Buurpagina: 3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+
 ## Klantenspotlight
 - KMO's en zelfstandigen in de Scheldevallei: kleine reeksen met vaste settings rond Gavere centrum.
 - Vaak gevraagd: 3D print service Gavere; we adviseren materiaal en afwerking.

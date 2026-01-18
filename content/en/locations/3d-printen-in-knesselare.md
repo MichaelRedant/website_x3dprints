@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Knesse
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Aalter](/en/3d-printen-in-aalter)
-- [3D printing in Bellem](/en/3d-printen-in-bellem)
-- [3D printing in Lotenhulle](/en/3d-printen-in-lotenhulle)
+- [Nearby: 3D printing in Aalter](/en/3d-printen-in-aalter)
+- [Nearby: 3D printing in Bellem](/en/3d-printen-in-bellem)
+- [Nearby: 3D printing in Lotenhulle](/en/3d-printen-in-lotenhulle)
+- [Nearby: 3D printing in Poeke](/en/3d-printen-in-poeke)
 
 ## Spotlight near Knesselare
 - KMO's en techniekers in de regio: fixtures and housings for teams around Knesselare centrum.

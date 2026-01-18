@@ -66,6 +66,7 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Volkegem (Oudenaarde)
 - Lokale teams in Volkegem (Oudenaarde): behuizingen en pasmallen voor teams in Volkegem (Oudenaarde).
 - Terugkerende order: 3D print service Volkegem; we bewaren je instellingen.

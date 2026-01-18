@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Maarkedal](/3d-printen-in-maarkedal)
-- [3D printen in Etikhove](/3d-printen-in-etikhove)
-- [3D printen in Nukerke](/3d-printen-in-nukerke)
+- [Buurpagina: 3D printen in Maarkedal](/3d-printen-in-maarkedal)
+- [Buurpagina: 3D printen in Etikhove](/3d-printen-in-etikhove)
+- [Buurpagina: 3D printen in Nukerke](/3d-printen-in-nukerke)
+- [Buurpagina: 3D printen in Schorisse](/3d-printen-in-schorisse)
+
 ## Spotlight rond Maarke-Kerkem
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Maarke-Kerkem centrum.
 - Terugkerende order: 3D print service Maarke-Kerkem; we bewaren je instellingen.

@@ -135,6 +135,7 @@ Wil je aan de slag met **3D printen in Grotenberge**? Vraag een **gratis offerte
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Grotenberge
 - Lokale teams in Grotenberge: behuizingen en pasmallen voor teams in Grotenberge.
 - Terugkerende order: 3D print service grotenberge; we bewaren je instellingen.

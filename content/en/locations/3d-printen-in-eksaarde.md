@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Eksaar
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Lokeren](/en/3d-printen-in-lokeren)
-- [3D printing in Daknam](/en/3d-printen-in-daknam)
-- [3D printing in Moerbeke-Waas](/en/3d-printen-in-moerbeke-waas)
+- [Nearby: 3D printing in Lokeren](/en/3d-printen-in-lokeren)
+- [Nearby: 3D printing in Daknam](/en/3d-printen-in-daknam)
+- [Nearby: 3D printing in Moerbeke-Waas](/en/3d-printen-in-moerbeke-waas)
 
 ## Spotlight near Eksaarde
 - Lokale makers en ontwerpers: fixtures and housings for teams around Eksaarde centrum.

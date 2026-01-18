@@ -125,10 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Beervelde](/3d-printen-in-beervelde)
-- [3D printen in Zaffelare](/3d-printen-in-zaffelare)
-- [3D printen in Zeveneken](/3d-printen-in-zeveneken)
-- [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
+- [Buurpagina: 3D printen in Beervelde](/3d-printen-in-beervelde)
+- [Buurpagina: 3D printen in Zaffelare](/3d-printen-in-zaffelare)
+- [Buurpagina: 3D printen in Zeveneken](/3d-printen-in-zeveneken)
+- [Buurpagina: 3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Lochristi centrum.
 - Vaak gevraagd: 3D print service Lochristi; we adviseren materiaal en afwerking.

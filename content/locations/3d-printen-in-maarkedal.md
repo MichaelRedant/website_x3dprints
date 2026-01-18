@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Etikhove](/3d-printen-in-etikhove)
-- [3D printen in Maarke-Kerkem](/3d-printen-in-maarke-kerkem)
-- [3D printen in Nukerke](/3d-printen-in-nukerke)
+- [Buurpagina: 3D printen in Etikhove](/3d-printen-in-etikhove)
+- [Buurpagina: 3D printen in Maarke-Kerkem](/3d-printen-in-maarke-kerkem)
+- [Buurpagina: 3D printen in Nukerke](/3d-printen-in-nukerke)
+- [Buurpagina: 3D printen in Schorisse](/3d-printen-in-schorisse)
+
 ## Lokale spotlight
 - Makers en ontwerpers in de Vlaamse Ardennen: PLA/PETG onderdelen afgestemd op projecten rond Maarkedal centrum.
 - Vaak gevraagd: 3D print service Maarkedal; we adviseren materiaal en afwerking.

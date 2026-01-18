@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-G
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in De Klinge](/en/3d-printen-in-de-klinge)
-- [3D printing in Meerdonk](/en/3d-printen-in-meerdonk)
-- [3D printing in Sint-Pauwels](/en/3d-printen-in-sint-pauwels)
+- [Nearby: 3D printing in De Klinge](/en/3d-printen-in-de-klinge)
+- [Nearby: 3D printing in Meerdonk](/en/3d-printen-in-meerdonk)
+- [Nearby: 3D printing in Sint-Pauwels](/en/3d-printen-in-sint-pauwels)
+- [Parent page: 3D printing in Nieuwkerken-Waas](/en/3d-printen-in-nieuwkerken-waas)
 
 ## Spotlight near Sint-Gillis-Waas
 - Lokale makers en ontwerpers: fixtures and housings for teams around Sint-Gillis-Waas centrum.

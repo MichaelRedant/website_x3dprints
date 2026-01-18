@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Smetle
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Lede](/en/3d-printen-in-lede)
-- [3D printing in Oordegem](/en/3d-printen-in-oordegem)
-- [3D printing in Impe](/en/3d-printen-in-impe)
+- [Nearby: 3D printing in Lede](/en/3d-printen-in-lede)
+- [Nearby: 3D printing in Oordegem](/en/3d-printen-in-oordegem)
+- [Nearby: 3D printing in Impe](/en/3d-printen-in-impe)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Smetlede centrum.

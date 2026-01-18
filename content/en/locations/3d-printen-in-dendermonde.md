@@ -117,9 +117,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Dender
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Grembergen](/en/3d-printen-in-grembergen)
-- [3D printing in Baasrode](/en/3d-printen-in-baasrode)
-- [3D printing in Hamme](/en/3d-printen-in-hamme)
+- [Nearby: 3D printing in Grembergen](/en/3d-printen-in-grembergen)
+- [Nearby: 3D printing in Baasrode](/en/3d-printen-in-baasrode)
+- [Nearby: 3D printing in Hamme](/en/3d-printen-in-hamme)
+- [Parent page: 3D printing in Denderbelle](/en/3d-printen-in-denderbelle)
 
 ## Local spotlight
 - Prototyping voor KMO's in Dendermonde/Hamme: PLA/PETG parts tuned for projects near Dendermonde centrum.

@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Lebbeke](/3d-printen-in-lebbeke)
-- [3D printen in Wieze](/3d-printen-in-wieze)
-- [3D printen in Dendermonde](/3d-printen-in-dendermonde)
+- [Buurpagina: 3D printen in Lebbeke](/3d-printen-in-lebbeke)
+- [Buurpagina: 3D printen in Wieze](/3d-printen-in-wieze)
+- [Buurpagina: 3D printen in Dendermonde](/3d-printen-in-dendermonde)
+
 ## Lokale spotlight
 - Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Denderbelle centrum.
 - Vaak gevraagd: 3D print service Denderbelle; we adviseren materiaal en afwerking.

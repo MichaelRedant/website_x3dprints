@@ -123,9 +123,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Evergem](/3d-printen-in-evergem)
-- [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
-- [3D printen in Assenede](/3d-printen-in-assenede)
+- [Buurpagina: 3D printen in Evergem](/3d-printen-in-evergem)
+- [Buurpagina: 3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
+- [Buurpagina: 3D printen in Assenede](/3d-printen-in-assenede)
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Zelzate centrum.
 - Vaak gevraagd: 3D print service Zelzate; we adviseren materiaal en afwerking.

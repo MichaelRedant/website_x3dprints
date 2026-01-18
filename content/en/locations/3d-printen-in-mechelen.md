@@ -119,9 +119,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Mechel
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Muizen](/en/3d-printen-in-muizen)
-- [3D printing in Walem](/en/3d-printen-in-walem)
-- [3D printing in Leest](/en/3d-printen-in-leest)
+- [Nearby: 3D printing in Muizen](/en/3d-printen-in-muizen)
+- [Nearby: 3D printing in Walem](/en/3d-printen-in-walem)
+- [Nearby: 3D printing in Leest](/en/3d-printen-in-leest)
+- [Nearby: 3D printing in Hombeek](/en/3d-printen-in-hombeek)
 
 ## Local spotlight
 - Prototyping voor KMO's in Mechelen: PLA/PETG parts tuned for projects near Mechelen centrum.

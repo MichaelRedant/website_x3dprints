@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Merelb
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
-- [3D printing in Melle](/en/3d-printen-in-melle)
-- [3D printing in Bottelare](/en/3d-printen-in-bottelare)
+- [Nearby: 3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
+- [Nearby: 3D printing in Melle](/en/3d-printen-in-melle)
+- [Nearby: 3D printing in Bottelare](/en/3d-printen-in-bottelare)
+- [Nearby: 3D printing in Lemberge](/en/3d-printen-in-lemberge)
 
 ## Spotlight near Merelbeke-Melle
 - KMO's en maakbedrijven in de Gentse rand: fixtures and housings for teams around Merelbeke.

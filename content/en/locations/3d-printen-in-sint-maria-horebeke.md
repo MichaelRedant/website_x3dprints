@@ -118,8 +118,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-M
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Horebeke](/en/3d-printen-in-horebeke)
-- [3D printing in Sint-Kornelis-Horebeke](/en/3d-printen-in-sint-kornelis-horebeke)
+- [Nearby: 3D printing in Horebeke](/en/3d-printen-in-horebeke)
+- [Nearby: 3D printing in Sint-Kornelis-Horebeke](/en/3d-printen-in-sint-kornelis-horebeke)
 
 ## Customer spotlight
 - Lokale makers en techniekers: small batches with consistent settings near Sint-Maria-Horebeke centrum.

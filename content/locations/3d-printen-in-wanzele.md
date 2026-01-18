@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Lede](/3d-printen-in-lede)
-- [3D printen in Oordegem](/3d-printen-in-oordegem)
-- [3D printen in Impe](/3d-printen-in-impe)
+- [Buurpagina: 3D printen in Lede](/3d-printen-in-lede)
+- [Buurpagina: 3D printen in Oordegem](/3d-printen-in-oordegem)
+- [Buurpagina: 3D printen in Impe](/3d-printen-in-impe)
+
 ## Spotlight rond Wanzele
 - Lokale ondernemers en techniekers: behuizingen en pasmallen voor teams in Wanzele centrum.
 - Terugkerende order: 3D print service Wanzele; we bewaren je instellingen.

@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in De Kli
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Sint-Gillis-Waas](/en/3d-printen-in-sint-gillis-waas)
-- [3D printing in Meerdonk](/en/3d-printen-in-meerdonk)
-- [3D printing in Sint-Pauwels](/en/3d-printen-in-sint-pauwels)
+- [Nearby: 3D printing in Sint-Gillis-Waas](/en/3d-printen-in-sint-gillis-waas)
+- [Nearby: 3D printing in Meerdonk](/en/3d-printen-in-meerdonk)
+- [Nearby: 3D printing in Sint-Pauwels](/en/3d-printen-in-sint-pauwels)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near De Klinge centrum.

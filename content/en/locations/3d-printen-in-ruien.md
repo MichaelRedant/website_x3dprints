@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Ruien*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Kluisbergen](/en/3d-printen-in-kluisbergen)
-- [3D printing in Berchem](/en/3d-printen-in-berchem)
-- [3D printing in Zulzeke](/en/3d-printen-in-zulzeke)
+- [Nearby: 3D printing in Kluisbergen](/en/3d-printen-in-kluisbergen)
+- [Nearby: 3D printing in Berchem](/en/3d-printen-in-berchem)
+- [Nearby: 3D printing in Zulzeke](/en/3d-printen-in-zulzeke)
+- [Parent page: 3D printing in Berchem (Kluisbergen)](/en/3d-printen-in-berchem-kluisbergen)
 
 ## Customer spotlight
 - Onderhoud en herstellingen: small batches with consistent settings near Ruien centrum.

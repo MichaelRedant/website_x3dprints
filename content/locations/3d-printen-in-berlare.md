@@ -121,8 +121,9 @@ Wilt u snel starten? Vraag een vrijblijvende offerte aan via [contact](/contact)
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Overmere](/3d-printen-in-overmere)
-- [3D printen in Uitbergen](/3d-printen-in-uitbergen)
+- [Buurpagina: 3D printen in Overmere](/3d-printen-in-overmere)
+- [Buurpagina: 3D printen in Uitbergen](/3d-printen-in-uitbergen)
+
 ## Spotlight rond Berlare
 - Lokale KMO's en zelfstandigen: behuizingen en pasmallen voor teams in Berlare centrum.
 - Terugkerende order: 3D print service Berlare; we bewaren je instellingen.

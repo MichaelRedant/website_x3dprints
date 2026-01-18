@@ -133,6 +133,7 @@ Benieuwd hoe **3D printen in Meldert** jouw idee versterkt? Vraag een **gratis o
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Meldert: PLA/PETG onderdelen afgestemd op projecten rond Meldert.
 - Vaak gevraagd: 3D print service meldert; we adviseren materiaal en afwerking.

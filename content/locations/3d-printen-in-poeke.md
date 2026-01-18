@@ -123,11 +123,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact) en ontdek de mogelij
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Aalter](/3d-printen-in-aalter)
-- [3D printen in Knesselare](/3d-printen-in-knesselare)
-- [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
-- [3D printen in Ursel](/3d-printen-in-ursel)
-- [3D printen in Bellem](/3d-printen-in-bellem)
+- [Buurpagina: 3D printen in Aalter](/3d-printen-in-aalter)
+- [Buurpagina: 3D printen in Bellem](/3d-printen-in-bellem)
+- [Buurpagina: 3D printen in Knesselare](/3d-printen-in-knesselare)
+- [Buurpagina: 3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
+
 ## Klantenspotlight
 - Creatieve projecten en decor: kleine reeksen met vaste settings rond Poeke centrum.
 - Vaak gevraagd: 3D print service Poeke; we adviseren materiaal en afwerking.

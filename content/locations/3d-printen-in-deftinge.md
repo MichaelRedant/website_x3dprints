@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Lierde](/3d-printen-in-lierde)
-- [3D printen in Hemelveerdegem](/3d-printen-in-hemelveerdegem)
-- [3D printen in Sint-Maria-Lierde](/3d-printen-in-sint-maria-lierde)
+- [Buurpagina: 3D printen in Lierde](/3d-printen-in-lierde)
+- [Buurpagina: 3D printen in Hemelveerdegem](/3d-printen-in-hemelveerdegem)
+- [Buurpagina: 3D printen in Sint-Maria-Lierde](/3d-printen-in-sint-maria-lierde)
+
 ## Lokale spotlight
 - Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Deftinge centrum.
 - Vaak gevraagd: 3D print service Deftinge; we adviseren materiaal en afwerking.

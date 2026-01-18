@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Zwalm](/3d-printen-in-zwalm)
-- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
-- [3D printen in Roborst](/3d-printen-in-roborst)
+- [Buurpagina: 3D printen in Zwalm](/3d-printen-in-zwalm)
+- [Buurpagina: 3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+- [Buurpagina: 3D printen in Roborst](/3d-printen-in-roborst)
+
 ## Spotlight rond Sint-Denijs-Boekel
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Sint-Denijs-Boekel centrum.
 - Terugkerende order: 3D print service Sint-Denijs-Boekel; we bewaren je instellingen.

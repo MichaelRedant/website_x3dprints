@@ -89,6 +89,7 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Deinze
 - Lokale teams in Deinze: behuizingen en pasmallen voor teams in Deinze.
 - Terugkerende order: 3D print service Deinze; we bewaren je instellingen.

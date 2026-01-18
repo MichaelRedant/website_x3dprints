@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
-- [3D printen in Melle](/3d-printen-in-melle)
-- [3D printen in Bottelare](/3d-printen-in-bottelare)
+- [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [Buurpagina: 3D printen in Melle](/3d-printen-in-melle)
+- [Buurpagina: 3D printen in Bottelare](/3d-printen-in-bottelare)
+- [Buurpagina: 3D printen in Lemberge](/3d-printen-in-lemberge)
+
 ## Spotlight rond Merelbeke-Melle
 - KMO's en maakbedrijven in de Gentse rand: behuizingen en pasmallen voor teams in Merelbeke.
 - Terugkerende order: 3D print service Merelbeke-Melle; we bewaren je instellingen.

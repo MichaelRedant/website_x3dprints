@@ -118,7 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Wetter
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Serskamp](/en/3d-printen-in-serskamp)
+- [Nearby: 3D printing in Serskamp](/en/3d-printen-in-serskamp)
+- [Parent page: 3D printing in Laarne](/en/3d-printen-in-laarne)
+- [Parent page: 3D printing in Kalken](/en/3d-printen-in-kalken)
+- [Parent page: 3D printing in Melle](/en/3d-printen-in-melle)
 
 ## Customer spotlight
 - Chemie/lab tooling in Wetteren: small batches with consistent settings near Wetteren centrum.

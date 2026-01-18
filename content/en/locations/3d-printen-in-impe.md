@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Impe**
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Lede](/en/3d-printen-in-lede)
-- [3D printing in Smetlede](/en/3d-printen-in-smetlede)
-- [3D printing in Wanzele](/en/3d-printen-in-wanzele)
+- [Nearby: 3D printing in Lede](/en/3d-printen-in-lede)
+- [Nearby: 3D printing in Smetlede](/en/3d-printen-in-smetlede)
+- [Nearby: 3D printing in Wanzele](/en/3d-printen-in-wanzele)
 
 ## Customer spotlight
 - Lokale makers en techniekers: small batches with consistent settings near Impe centrum.

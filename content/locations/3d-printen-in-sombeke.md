@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Waasmunster](/3d-printen-in-waasmunster)
-- [3D printen in Hamme](/3d-printen-in-hamme)
-- [3D printen in Lokeren](/3d-printen-in-lokeren)
+- [Buurpagina: 3D printen in Waasmunster](/3d-printen-in-waasmunster)
+- [Buurpagina: 3D printen in Hamme](/3d-printen-in-hamme)
+- [Buurpagina: 3D printen in Lokeren](/3d-printen-in-lokeren)
+
 ## Spotlight rond Sombeke
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Sombeke centrum.
 - Terugkerende order: 3D print service Sombeke; we bewaren je instellingen.

@@ -118,7 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Hamme*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Moerzeke](/en/3d-printen-in-moerzeke)
+- [Nearby: 3D printing in Moerzeke](/en/3d-printen-in-moerzeke)
+- [Parent page: 3D printing in Dendermonde](/en/3d-printen-in-dendermonde)
+- [Parent page: 3D printing in Waasmunster](/en/3d-printen-in-waasmunster)
+- [Parent page: 3D printing in Sombeke](/en/3d-printen-in-sombeke)
 
 ## Customer spotlight
 - Lokale KMO's en zelfstandigen: small batches with consistent settings near Hamme centrum.

@@ -76,6 +76,7 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Bulskamp
 - Landbouw en irrigatieprojecten in de polders: behuizingen en pasmallen voor teams in Bulskamp dorpskern.
 - Terugkerende order: 3D print service Bulskamp; we bewaren je instellingen.

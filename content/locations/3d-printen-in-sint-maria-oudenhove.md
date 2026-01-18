@@ -135,6 +135,7 @@ Start met **3D printen in Sint-Maria-Oudenhove** en vraag een **gratis offerte**
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Sint-Maria-Oudenhove
 - Lokale teams in Sint-Maria-Oudenhove: behuizingen en pasmallen voor teams in Sint-Maria-Oudenhove.
 - Terugkerende order: 3D print service sint-maria-oudenhove; we bewaren je instellingen.

@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Ronse*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in De Klijpe](/en/3d-printen-in-de-klijpe)
-- [3D printing in Louise-Marie](/en/3d-printen-in-louise-marie)
-- [3D printing in Maarkedal](/en/3d-printen-in-maarkedal)
+- [Nearby: 3D printing in De Klijpe](/en/3d-printen-in-de-klijpe)
+- [Nearby: 3D printing in Louise-Marie](/en/3d-printen-in-louise-marie)
+- [Nearby: 3D printing in Maarkedal](/en/3d-printen-in-maarkedal)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near Ronse centrum.

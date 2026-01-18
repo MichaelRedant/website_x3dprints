@@ -125,7 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Heusden](/3d-printen-in-heusden)
+- [Buurpagina: 3D printen in Heusden](/3d-printen-in-heusden)
+- [Hoofdpagina: 3D printen in Laarne](/3d-printen-in-laarne)
+- [Hoofdpagina: 3D printen in Kalken](/3d-printen-in-kalken)
+- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Destelbergen
 - Lokale KMO's en zelfstandigen: behuizingen en pasmallen voor teams in Destelbergen centrum.
 - Terugkerende order: 3D print service Destelbergen; we bewaren je instellingen.

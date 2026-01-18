@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Lede](/3d-printen-in-lede)
-- [3D printen in Smetlede](/3d-printen-in-smetlede)
-- [3D printen in Wanzele](/3d-printen-in-wanzele)
+- [Buurpagina: 3D printen in Lede](/3d-printen-in-lede)
+- [Buurpagina: 3D printen in Smetlede](/3d-printen-in-smetlede)
+- [Buurpagina: 3D printen in Wanzele](/3d-printen-in-wanzele)
+
 ## Klantenspotlight
 - Lokale makers en techniekers: kleine reeksen met vaste settings rond Oordegem centrum.
 - Vaak gevraagd: 3D print service Oordegem; we adviseren materiaal en afwerking.

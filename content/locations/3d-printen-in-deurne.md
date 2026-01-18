@@ -81,7 +81,8 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Borsbeek](/3d-printen-in-borsbeek)
+
 ## Klantenspotlight
 - Events/props rond Sportpaleis: kleine reeksen met vaste settings rond Deurne centrum.
 - Vaak gevraagd: 3D print service Deurne; we adviseren materiaal en afwerking.

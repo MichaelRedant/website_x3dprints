@@ -133,6 +133,7 @@ Wil je ervaren hoe **3D printen in Meerbeke** jouw project vooruithelpt? Vraag v
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Meerbeke: kleine reeksen met vaste settings rond Meerbeke.
 - Vaak gevraagd: 3D print service Meerbeke; we adviseren materiaal en afwerking.

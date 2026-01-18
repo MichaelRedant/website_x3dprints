@@ -133,6 +133,7 @@ Benieuwd hoe **3D printen in Denderwindeke** jouw project kan versterken? Vraag 
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Denderwindeke: PLA/PETG onderdelen afgestemd op projecten rond Denderwindeke.
 - Vaak gevraagd: 3D print service Denderwindeke; we adviseren materiaal en afwerking.

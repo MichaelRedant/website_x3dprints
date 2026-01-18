@@ -81,6 +81,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Bekkerzeel: kleine reeksen met vaste settings rond Bekkerzeel.
 - Vaak gevraagd: 3D print service Bekkerzeel; we adviseren materiaal en afwerking.

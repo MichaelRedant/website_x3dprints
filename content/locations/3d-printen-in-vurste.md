@@ -123,9 +123,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gavere](/3d-printen-in-gavere)
-- [3D printen in Semmerzake](/3d-printen-in-semmerzake)
-- [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+- [Buurpagina: 3D printen in Gavere](/3d-printen-in-gavere)
+- [Buurpagina: 3D printen in Semmerzake](/3d-printen-in-semmerzake)
+- [Buurpagina: 3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+- [Hoofdpagina: 3D printen in Baaigem](/3d-printen-in-baaigem)
+
 ## Spotlight rond Vurste
 - Lokale ondernemers en makers: behuizingen en pasmallen voor teams in Vurste centrum.
 - Terugkerende order: 3D print service Vurste; we bewaren je instellingen.

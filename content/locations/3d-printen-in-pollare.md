@@ -133,6 +133,7 @@ Wil je ervaren hoe **3D printen in Pollare** jouw project vooruithelpt? Vraag va
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Pollare
 - Lokale teams in Pollare: behuizingen en pasmallen voor teams in Pollare.
 - Terugkerende order: 3D print service Pollare; we bewaren je instellingen.

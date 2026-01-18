@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gontrode](/3d-printen-in-gontrode)
-- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
-- [3D printen in Wetteren](/3d-printen-in-wetteren)
+- [Buurpagina: 3D printen in Gontrode](/3d-printen-in-gontrode)
+- [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [Buurpagina: 3D printen in Wetteren](/3d-printen-in-wetteren)
+- [Hoofdpagina: 3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
+
 ## Lokale spotlight
 - Lokale ondernemers en makers: PLA/PETG onderdelen afgestemd op projecten rond Melle centrum.
 - Vaak gevraagd: 3D print service Melle; we adviseren materiaal en afwerking.

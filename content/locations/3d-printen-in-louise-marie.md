@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Ronse](/3d-printen-in-ronse)
-- [3D printen in De Klijpe](/3d-printen-in-de-klijpe)
-- [3D printen in Maarkedal](/3d-printen-in-maarkedal)
+- [Buurpagina: 3D printen in Ronse](/3d-printen-in-ronse)
+- [Buurpagina: 3D printen in De Klijpe](/3d-printen-in-de-klijpe)
+- [Buurpagina: 3D printen in Maarkedal](/3d-printen-in-maarkedal)
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Louise-Marie centrum.
 - Vaak gevraagd: 3D print service Louise-Marie; we adviseren materiaal en afwerking.

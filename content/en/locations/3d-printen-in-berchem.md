@@ -118,7 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Berche
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Parent page: 3D printing in Kluisbergen](/en/3d-printen-in-kluisbergen)
+- [Parent page: 3D printing in Kwaremont](/en/3d-printen-in-kwaremont)
+- [Parent page: 3D printing in Ruien](/en/3d-printen-in-ruien)
+- [Parent page: 3D printing in Antwerpen](/en/3d-printen-in-antwerpen)
 
 ## Local spotlight
 - Interieur/props voor Zurenborg boutiques: PLA/PETG parts tuned for projects near Berchem centrum.

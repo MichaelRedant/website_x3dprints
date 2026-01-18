@@ -121,9 +121,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Beveren](/3d-printen-in-beveren)
-- [3D printen in Haasdonk](/3d-printen-in-haasdonk)
-- [3D printen in Melsele](/3d-printen-in-melsele)
+- [Buurpagina: 3D printen in Beveren](/3d-printen-in-beveren)
+- [Buurpagina: 3D printen in Haasdonk](/3d-printen-in-haasdonk)
+- [Buurpagina: 3D printen in Melsele](/3d-printen-in-melsele)
+- [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
 ## Klantenspotlight
 - Lokale ondernemers en makers: kleine reeksen met vaste settings rond Vrasene centrum.
 - Vaak gevraagd: 3D print service Vrasene; we adviseren materiaal en afwerking.

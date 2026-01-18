@@ -78,6 +78,7 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Landskouter: PLA/PETG onderdelen afgestemd op projecten rond Landskouter.
 - Vaak gevraagd: 3D print service Landskouter; we adviseren materiaal en afwerking.

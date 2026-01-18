@@ -80,7 +80,8 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Berendrecht-Zandvliet-Lillo](/3d-printen-in-berendrecht-zandvliet-lillo)
+
 ## Klantenspotlight
 - Haven/industrie tooling Ekeren: kleine reeksen met vaste settings rond Ekeren centrum.
 - Vaak gevraagd: 3D print service Ekeren; we adviseren materiaal en afwerking.

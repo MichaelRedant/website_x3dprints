@@ -107,6 +107,7 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Wijnegem
 - Lokale teams in Wijnegem: behuizingen en pasmallen voor teams in Wijnegem.
 - Terugkerende order: 3D print service Wijnegem; we bewaren je instellingen.

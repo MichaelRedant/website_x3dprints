@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Machel
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Zulte](/en/3d-printen-in-zulte)
-- [3D printing in Olsene](/en/3d-printen-in-olsene)
-- [3D printing in Astene](/en/3d-printen-in-astene)
+- [Nearby: 3D printing in Zulte](/en/3d-printen-in-zulte)
+- [Nearby: 3D printing in Olsene](/en/3d-printen-in-olsene)
+- [Nearby: 3D printing in Astene](/en/3d-printen-in-astene)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near Machelen (Zulte) centrum.

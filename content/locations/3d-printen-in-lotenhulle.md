@@ -123,11 +123,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Aalter](/3d-printen-in-aalter)
-- [3D printen in Knesselare](/3d-printen-in-knesselare)
-- [3D printen in Poeke](/3d-printen-in-poeke)
-- [3D printen in Ursel](/3d-printen-in-ursel)
-- [3D printen in Bellem](/3d-printen-in-bellem)
+- [Buurpagina: 3D printen in Aalter](/3d-printen-in-aalter)
+- [Buurpagina: 3D printen in Bellem](/3d-printen-in-bellem)
+- [Buurpagina: 3D printen in Knesselare](/3d-printen-in-knesselare)
+- [Buurpagina: 3D printen in Poeke](/3d-printen-in-poeke)
+
 ## Lokale spotlight
 - Makers en hobbyisten: PLA/PETG onderdelen afgestemd op projecten rond Lotenhulle centrum.
 - Vaak gevraagd: 3D print service Lotenhulle; we adviseren materiaal en afwerking.

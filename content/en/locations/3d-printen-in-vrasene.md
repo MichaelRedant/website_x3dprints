@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Vrasen
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Beveren](/en/3d-printen-in-beveren)
-- [3D printing in Haasdonk](/en/3d-printen-in-haasdonk)
-- [3D printing in Melsele](/en/3d-printen-in-melsele)
+- [Nearby: 3D printing in Beveren](/en/3d-printen-in-beveren)
+- [Nearby: 3D printing in Haasdonk](/en/3d-printen-in-haasdonk)
+- [Nearby: 3D printing in Melsele](/en/3d-printen-in-melsele)
+- [Parent page: 3D printing in Beveren-Kruibeke-Zwijndrecht](/en/3d-printen-in-beveren-kruibeke-zwijndrecht)
 
 ## Customer spotlight
 - Lokale ondernemers en makers: small batches with consistent settings near Vrasene centrum.

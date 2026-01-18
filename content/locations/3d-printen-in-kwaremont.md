@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
-- [3D printen in Berchem](/3d-printen-in-berchem)
-- [3D printen in Zulzeke](/3d-printen-in-zulzeke)
+- [Buurpagina: 3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
+- [Buurpagina: 3D printen in Berchem](/3d-printen-in-berchem)
+- [Buurpagina: 3D printen in Zulzeke](/3d-printen-in-zulzeke)
+- [Hoofdpagina: 3D printen in Berchem (Kluisbergen)](/3d-printen-in-berchem-kluisbergen)
+
 ## Spotlight rond Kwaremont
 - Creatieve bureaus en makers: behuizingen en pasmallen voor teams in Kwaremont centrum.
 - Terugkerende order: 3D print service Kwaremont; we bewaren je instellingen.

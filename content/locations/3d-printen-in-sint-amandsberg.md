@@ -137,6 +137,7 @@ Benieuwd hoe **3D printen in Sint-Amandsberg** jouw idee versterkt? Vraag een **
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Sint-Amandsberg: PLA/PETG onderdelen afgestemd op projecten rond Sint-Amandsberg.
 - Vaak gevraagd: 3D print service sint-amandsberg; we adviseren materiaal en afwerking.

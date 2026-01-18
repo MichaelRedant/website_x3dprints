@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Elvers
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Temse](/en/3d-printen-in-temse)
-- [3D printing in Tielrode](/en/3d-printen-in-tielrode)
-- [3D printing in Steendorp](/en/3d-printen-in-steendorp)
+- [Nearby: 3D printing in Temse](/en/3d-printen-in-temse)
+- [Nearby: 3D printing in Tielrode](/en/3d-printen-in-tielrode)
+- [Nearby: 3D printing in Steendorp](/en/3d-printen-in-steendorp)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near Elversele centrum.

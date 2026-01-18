@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-N
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Belsele](/en/3d-printen-in-belsele)
-- [3D printing in Nieuwkerken-Waas](/en/3d-printen-in-nieuwkerken-waas)
-- [3D printing in Sinaai](/en/3d-printen-in-sinaai)
+- [Nearby: 3D printing in Belsele](/en/3d-printen-in-belsele)
+- [Nearby: 3D printing in Nieuwkerken-Waas](/en/3d-printen-in-nieuwkerken-waas)
+- [Nearby: 3D printing in Sinaai](/en/3d-printen-in-sinaai)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Sint-Niklaas centrum.

@@ -135,6 +135,7 @@ Wil je starten met **3D printen in Velzeke-Ruddershove**? Vraag een **gratis off
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Velzeke-Ruddershove: PLA/PETG onderdelen afgestemd op projecten rond Velzeke-Ruddershove.
 - Vaak gevraagd: 3D print service velzeke-ruddershove; we adviseren materiaal en afwerking.

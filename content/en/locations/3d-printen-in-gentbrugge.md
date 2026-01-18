@@ -118,7 +118,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Gentbr
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ledeberg](/en/3d-printen-in-ledeberg)
+- [Nearby: 3D printing in Ledeberg](/en/3d-printen-in-ledeberg)
 
 ## Customer spotlight
 - Prototyping voor KMO's in Gentbrugge/Ledeberg: small batches with consistent settings near Gentbrugge centrum.

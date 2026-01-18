@@ -107,6 +107,7 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Hove: PLA/PETG onderdelen afgestemd op projecten rond Hove.
 - Vaak gevraagd: 3D print service Hove; we adviseren materiaal en afwerking.

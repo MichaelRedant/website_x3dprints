@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Semmer
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Gavere](/en/3d-printen-in-gavere)
-- [3D printing in Vurste](/en/3d-printen-in-vurste)
-- [3D printing in Dikkelvenne](/en/3d-printen-in-dikkelvenne)
+- [Nearby: 3D printing in Gavere](/en/3d-printen-in-gavere)
+- [Nearby: 3D printing in Vurste](/en/3d-printen-in-vurste)
+- [Nearby: 3D printing in Dikkelvenne](/en/3d-printen-in-dikkelvenne)
+- [Parent page: 3D printing in Asper](/en/3d-printen-in-asper)
 
 ## Customer spotlight
 - Lokale makers en techniekers: small batches with consistent settings near Semmerzake centrum.

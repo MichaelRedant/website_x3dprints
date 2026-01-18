@@ -131,8 +131,9 @@ Klaar om te starten met je project in Antwerpen of een van de districten? Upload
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Berchem](/3d-printen-in-berchem)
-- [3D printen in Borgerhout](/3d-printen-in-borgerhout)
+- [Buurpagina: 3D printen in Berchem](/3d-printen-in-berchem)
+- [Buurpagina: 3D printen in Borgerhout](/3d-printen-in-borgerhout)
+
 ## Klantenspotlight
 - Haven/logistiek tools: kleine reeksen met vaste settings rond Antwerpen centrum.
 - Vaak gevraagd: 3D print service Antwerpen; we adviseren materiaal en afwerking.

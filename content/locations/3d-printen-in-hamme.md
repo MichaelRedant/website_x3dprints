@@ -124,7 +124,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Moerzeke](/3d-printen-in-moerzeke)
+- [Buurpagina: 3D printen in Moerzeke](/3d-printen-in-moerzeke)
+- [Hoofdpagina: 3D printen in Dendermonde](/3d-printen-in-dendermonde)
+- [Hoofdpagina: 3D printen in Waasmunster](/3d-printen-in-waasmunster)
+- [Hoofdpagina: 3D printen in Sombeke](/3d-printen-in-sombeke)
+
 ## Klantenspotlight
 - Lokale KMO's en zelfstandigen: kleine reeksen met vaste settings rond Hamme centrum.
 - Vaak gevraagd: 3D print service Hamme; we adviseren materiaal en afwerking.

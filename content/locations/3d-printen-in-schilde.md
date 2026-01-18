@@ -107,6 +107,7 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Schilde: PLA/PETG onderdelen afgestemd op projecten rond Schilde.
 - Vaak gevraagd: 3D print service Schilde; we adviseren materiaal en afwerking.

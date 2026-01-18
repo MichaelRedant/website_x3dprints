@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Waasmu
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Sombeke](/en/3d-printen-in-sombeke)
-- [3D printing in Hamme](/en/3d-printen-in-hamme)
-- [3D printing in Lokeren](/en/3d-printen-in-lokeren)
+- [Nearby: 3D printing in Sombeke](/en/3d-printen-in-sombeke)
+- [Nearby: 3D printing in Hamme](/en/3d-printen-in-hamme)
+- [Nearby: 3D printing in Lokeren](/en/3d-printen-in-lokeren)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Waasmunster centrum.

@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Melsen
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
-- [3D printing in Munte](/en/3d-printen-in-munte)
-- [3D printing in Schelderode](/en/3d-printen-in-schelderode)
+- [Nearby: 3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
+- [Nearby: 3D printing in Munte](/en/3d-printen-in-munte)
+- [Nearby: 3D printing in Schelderode](/en/3d-printen-in-schelderode)
+- [Parent page: 3D printing in Merelbeke-Melle](/en/3d-printen-in-merelbeke-melle)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near Melsen centrum.

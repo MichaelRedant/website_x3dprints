@@ -81,6 +81,7 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Kobbegem: PLA/PETG onderdelen afgestemd op projecten rond Kobbegem.
 - Vaak gevraagd: 3D print service Kobbegem; we adviseren materiaal en afwerking.

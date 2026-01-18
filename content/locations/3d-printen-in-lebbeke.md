@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Denderbelle](/3d-printen-in-denderbelle)
-- [3D printen in Wieze](/3d-printen-in-wieze)
-- [3D printen in Buggenhout](/3d-printen-in-buggenhout)
+- [Buurpagina: 3D printen in Denderbelle](/3d-printen-in-denderbelle)
+- [Buurpagina: 3D printen in Wieze](/3d-printen-in-wieze)
+- [Buurpagina: 3D printen in Buggenhout](/3d-printen-in-buggenhout)
+
 ## Spotlight rond Lebbeke
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Lebbeke centrum.
 - Terugkerende order: 3D print service Lebbeke; we bewaren je instellingen.

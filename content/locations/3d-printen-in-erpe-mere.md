@@ -113,6 +113,7 @@ Benieuwd hoe **3D printen in Erpe-Mere** uw project kan versnellen of uw idee ka
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Erpe-mere
 - Lokale teams in Erpe-mere: behuizingen en pasmallen voor teams in Erpe-mere.
 - Terugkerende order: 3D print service erpe-mere; we bewaren je instellingen.

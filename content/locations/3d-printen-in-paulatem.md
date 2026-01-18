@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Zwalm](/3d-printen-in-zwalm)
-- [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
-- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+- [Buurpagina: 3D printen in Zwalm](/3d-printen-in-zwalm)
+- [Buurpagina: 3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
+- [Buurpagina: 3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Paulatem centrum.
 - Vaak gevraagd: 3D print service Paulatem; we adviseren materiaal en afwerking.

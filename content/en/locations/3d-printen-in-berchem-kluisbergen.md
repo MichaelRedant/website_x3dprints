@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Berche
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Kluisbergen](/en/3d-printen-in-kluisbergen)
-- [3D printing in Kwaremont](/en/3d-printen-in-kwaremont)
-- [3D printing in Ruien](/en/3d-printen-in-ruien)
+- [Nearby: 3D printing in Kluisbergen](/en/3d-printen-in-kluisbergen)
+- [Nearby: 3D printing in Kwaremont](/en/3d-printen-in-kwaremont)
+- [Nearby: 3D printing in Ruien](/en/3d-printen-in-ruien)
 
 ## Customer spotlight
 - Lokale makers en techniekers: small batches with consistent settings near Berchem centrum.

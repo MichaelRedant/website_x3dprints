@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Laarne](/3d-printen-in-laarne)
-- [3D printen in Wetteren](/3d-printen-in-wetteren)
-- [3D printen in Destelbergen](/3d-printen-in-destelbergen)
+- [Buurpagina: 3D printen in Laarne](/3d-printen-in-laarne)
+- [Buurpagina: 3D printen in Wetteren](/3d-printen-in-wetteren)
+- [Buurpagina: 3D printen in Destelbergen](/3d-printen-in-destelbergen)
+
 ## Spotlight rond Kalken
 - Lokale makers en techniekers: behuizingen en pasmallen voor teams in Kalken centrum.
 - Terugkerende order: 3D print service Kalken; we bewaren je instellingen.

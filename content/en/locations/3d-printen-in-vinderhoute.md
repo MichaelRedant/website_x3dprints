@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Vinder
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Lievegem](/en/3d-printen-in-lievegem)
-- [3D printing in Lovendegem](/en/3d-printen-in-lovendegem)
-- [3D printing in Zomergem](/en/3d-printen-in-zomergem)
+- [Nearby: 3D printing in Lievegem](/en/3d-printen-in-lievegem)
+- [Nearby: 3D printing in Lovendegem](/en/3d-printen-in-lovendegem)
+- [Nearby: 3D printing in Zomergem](/en/3d-printen-in-zomergem)
 
 ## Local spotlight
 - Lokale ondernemers en techniekers: PLA/PETG parts tuned for projects near Vinderhoute centrum.

@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Sint-Niklaas](/3d-printen-in-sint-niklaas)
-- [3D printen in Nieuwkerken-Waas](/3d-printen-in-nieuwkerken-waas)
-- [3D printen in Sinaai](/3d-printen-in-sinaai)
+- [Buurpagina: 3D printen in Sint-Niklaas](/3d-printen-in-sint-niklaas)
+- [Buurpagina: 3D printen in Nieuwkerken-Waas](/3d-printen-in-nieuwkerken-waas)
+- [Buurpagina: 3D printen in Sinaai](/3d-printen-in-sinaai)
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Belsele centrum.
 - Vaak gevraagd: 3D print service Belsele; we adviseren materiaal en afwerking.

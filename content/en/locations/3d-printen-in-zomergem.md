@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Zomerg
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Lievegem](/en/3d-printen-in-lievegem)
-- [3D printing in Waarschoot](/en/3d-printen-in-waarschoot)
-- [3D printing in Ronsele](/en/3d-printen-in-ronsele)
+- [Nearby: 3D printing in Lievegem](/en/3d-printen-in-lievegem)
+- [Nearby: 3D printing in Waarschoot](/en/3d-printen-in-waarschoot)
+- [Nearby: 3D printing in Ronsele](/en/3d-printen-in-ronsele)
+- [Parent page: 3D printing in Lovendegem](/en/3d-printen-in-lovendegem)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near Zomergem centrum.

@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Dikkel
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Gavere](/en/3d-printen-in-gavere)
-- [3D printing in Baaigem](/en/3d-printen-in-baaigem)
-- [3D printing in Vurste](/en/3d-printen-in-vurste)
+- [Nearby: 3D printing in Gavere](/en/3d-printen-in-gavere)
+- [Nearby: 3D printing in Baaigem](/en/3d-printen-in-baaigem)
+- [Nearby: 3D printing in Vurste](/en/3d-printen-in-vurste)
+- [Parent page: 3D printing in Semmerzake](/en/3d-printen-in-semmerzake)
 
 ## Spotlight near Dikkelvenne
 - KMO's en zelfstandigen: fixtures and housings for teams around Dikkelvenne centrum.

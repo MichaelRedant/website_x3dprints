@@ -74,9 +74,11 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Muizen](/3d-printen-in-muizen)
-- [3D printen in Walem](/3d-printen-in-walem)
-- [3D printen in Leest](/3d-printen-in-leest)
+- [Buurpagina: 3D printen in Muizen](/3d-printen-in-muizen)
+- [Buurpagina: 3D printen in Walem](/3d-printen-in-walem)
+- [Buurpagina: 3D printen in Leest](/3d-printen-in-leest)
+- [Buurpagina: 3D printen in Hombeek](/3d-printen-in-hombeek)
+
 ## Lokale spotlight
 - Prototyping voor KMO's in Mechelen: PLA/PETG onderdelen afgestemd op projecten rond Mechelen centrum.
 - Vaak gevraagd: 3D print service Mechelen; we adviseren materiaal en afwerking.

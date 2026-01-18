@@ -136,7 +136,8 @@ Benieuwd hoe **3D printen in Ledeberg** jouw idee versterkt? Vraag een **gratis 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
+
 ## Klantenspotlight
 - Lokale teams in Ledeberg: kleine reeksen met vaste settings rond Ledeberg.
 - Vaak gevraagd: 3D print service ledeberg; we adviseren materiaal en afwerking.

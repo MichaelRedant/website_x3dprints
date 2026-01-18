@@ -126,10 +126,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Lochristi](/3d-printen-in-lochristi)
-- [3D printen in Zeveneken](/3d-printen-in-zeveneken)
-- [3D printen in Zaffelare](/3d-printen-in-zaffelare)
-- [3D printen in Beervelde](/3d-printen-in-beervelde)
+- [Buurpagina: 3D printen in Lochristi](/3d-printen-in-lochristi)
+- [Buurpagina: 3D printen in Zeveneken](/3d-printen-in-zeveneken)
+- [Buurpagina: 3D printen in Zaffelare](/3d-printen-in-zaffelare)
+- [Hoofdpagina: 3D printen in Zelzate](/3d-printen-in-zelzate)
+
 ## Spotlight rond Wachtebeke
 - Lokale makers en techniekers: behuizingen en pasmallen voor teams in Wachtebeke centrum.
 - Terugkerende order: 3D print service Wachtebeke; we bewaren je instellingen.

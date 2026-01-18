@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Rupelm
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Kruibeke](/en/3d-printen-in-kruibeke)
-- [3D printing in Bazel](/en/3d-printen-in-bazel)
-- [3D printing in Burcht](/en/3d-printen-in-burcht)
+- [Nearby: 3D printing in Kruibeke](/en/3d-printen-in-kruibeke)
+- [Nearby: 3D printing in Bazel](/en/3d-printen-in-bazel)
+- [Nearby: 3D printing in Burcht](/en/3d-printen-in-burcht)
+- [Parent page: 3D printing in Beveren-Kruibeke-Zwijndrecht](/en/3d-printen-in-beveren-kruibeke-zwijndrecht)
 
 ## Local spotlight
 - Lokale ondernemers en techniekers: PLA/PETG parts tuned for projects near Rupelmonde centrum.

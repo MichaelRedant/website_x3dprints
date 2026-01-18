@@ -131,7 +131,8 @@ Benieuwd hoe **3D printen in Grembergen** jouw idee versterkt? Vraag een **grati
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Dendermonde](/3d-printen-in-dendermonde)
+
 ## Lokale spotlight
 - Lokale teams in Grembergen: PLA/PETG onderdelen afgestemd op projecten rond Grembergen.
 - Vaak gevraagd: 3D print service grembergen; we adviseren materiaal en afwerking.

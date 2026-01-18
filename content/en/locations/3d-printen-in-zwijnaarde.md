@@ -118,7 +118,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Zwijna
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Parent page: 3D printing in Gent](/en/3d-printen-in-gent)
 
 ## Spotlight near Zwijnaarde
 - Local teams in Zwijnaarde: fixtures and housings for teams around Zwijnaarde.

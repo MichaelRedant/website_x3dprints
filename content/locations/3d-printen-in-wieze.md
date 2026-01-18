@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Lebbeke](/3d-printen-in-lebbeke)
-- [3D printen in Denderbelle](/3d-printen-in-denderbelle)
-- [3D printen in Buggenhout](/3d-printen-in-buggenhout)
+- [Buurpagina: 3D printen in Lebbeke](/3d-printen-in-lebbeke)
+- [Buurpagina: 3D printen in Denderbelle](/3d-printen-in-denderbelle)
+- [Buurpagina: 3D printen in Buggenhout](/3d-printen-in-buggenhout)
+
 ## Lokale spotlight
 - Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Wieze centrum.
 - Vaak gevraagd: 3D print service Wieze; we adviseren materiaal en afwerking.

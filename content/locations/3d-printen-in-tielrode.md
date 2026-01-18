@@ -123,9 +123,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Temse](/3d-printen-in-temse)
-- [3D printen in Steendorp](/3d-printen-in-steendorp)
-- [3D printen in Elversele](/3d-printen-in-elversele)
+- [Buurpagina: 3D printen in Temse](/3d-printen-in-temse)
+- [Buurpagina: 3D printen in Steendorp](/3d-printen-in-steendorp)
+- [Buurpagina: 3D printen in Elversele](/3d-printen-in-elversele)
+
 ## Spotlight rond Tielrode
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Tielrode centrum.
 - Terugkerende order: 3D print service Tielrode; we bewaren je instellingen.

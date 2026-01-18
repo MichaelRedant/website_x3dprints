@@ -78,6 +78,7 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Onkerzele: PLA/PETG onderdelen afgestemd op projecten rond Onkerzele.
 - Vaak gevraagd: 3D print service Onkerzele; we adviseren materiaal en afwerking.

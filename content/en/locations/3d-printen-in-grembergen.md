@@ -118,7 +118,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Grembe
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Parent page: 3D printing in Dendermonde](/en/3d-printen-in-dendermonde)
 
 ## Local spotlight
 - Local teams in Grembergen: PLA/PETG parts tuned for projects near Grembergen.

@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Zevergem](/3d-printen-in-zevergem)
-- [3D printen in Nazareth](/3d-printen-in-nazareth)
-- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [Buurpagina: 3D printen in Zevergem](/3d-printen-in-zevergem)
+- [Buurpagina: 3D printen in Nazareth](/3d-printen-in-nazareth)
+- [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [Hoofdpagina: 3D printen in Nazareth-De Pinte](/3d-printen-in-nazareth-de-pinte)
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond De Pinte centrum.
 - Vaak gevraagd: 3D print service De Pinte; we adviseren materiaal en afwerking.

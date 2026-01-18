@@ -66,6 +66,7 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Kleit
 - Lokale teams in Kleit: behuizingen en pasmallen voor teams in Kleit.
 - Terugkerende order: 3D print service Kleit; we bewaren je instellingen.

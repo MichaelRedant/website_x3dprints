@@ -78,6 +78,7 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Goeferdinge: PLA/PETG onderdelen afgestemd op projecten rond Goeferdinge.
 - Vaak gevraagd: 3D print service Goeferdinge; we adviseren materiaal en afwerking.

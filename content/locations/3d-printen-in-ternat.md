@@ -81,6 +81,7 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Ternat
 - Lokale teams in Ternat: behuizingen en pasmallen voor teams in Ternat.
 - Terugkerende order: 3D print service Ternat; we bewaren je instellingen.

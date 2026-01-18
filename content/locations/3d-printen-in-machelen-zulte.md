@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Zulte](/3d-printen-in-zulte)
-- [3D printen in Olsene](/3d-printen-in-olsene)
-- [3D printen in Astene](/3d-printen-in-astene)
+- [Buurpagina: 3D printen in Zulte](/3d-printen-in-zulte)
+- [Buurpagina: 3D printen in Olsene](/3d-printen-in-olsene)
+- [Buurpagina: 3D printen in Astene](/3d-printen-in-astene)
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Machelen (Zulte) centrum.
 - Vaak gevraagd: 3D print service Machelen Zulte; we adviseren materiaal en afwerking.

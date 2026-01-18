@@ -66,6 +66,7 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Nederename (Oudenaarde): kleine reeksen met vaste settings rond Nederename (Oudenaarde).
 - Vaak gevraagd: 3D print service Nederename; we adviseren materiaal en afwerking.

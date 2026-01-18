@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-B
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Zwalm](/en/3d-printen-in-zwalm)
-- [3D printing in Munkzwalm](/en/3d-printen-in-munkzwalm)
-- [3D printing in Roborst](/en/3d-printen-in-roborst)
+- [Nearby: 3D printing in Zwalm](/en/3d-printen-in-zwalm)
+- [Nearby: 3D printing in Munkzwalm](/en/3d-printen-in-munkzwalm)
+- [Nearby: 3D printing in Roborst](/en/3d-printen-in-roborst)
 
 ## Spotlight near Sint-Blasius-Boekel
 - Lokale makers en ontwerpers: fixtures and housings for teams around Sint-Blasius-Boekel centrum.

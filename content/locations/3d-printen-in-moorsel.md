@@ -133,6 +133,7 @@ Benieuwd hoe **3D printen in Moorsel** jouw idee versterkt? Vraag een **gratis o
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Moorsel: kleine reeksen met vaste settings rond Moorsel.
 - Vaak gevraagd: 3D print service moorsel; we adviseren materiaal en afwerking.

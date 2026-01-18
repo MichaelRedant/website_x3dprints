@@ -133,6 +133,7 @@ Benieuwd hoe **3D printen in Nieuwerkerken** jouw idee versterkt? Vraag een **gr
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Nieuwerkerken
 - Lokale teams in Nieuwerkerken: behuizingen en pasmallen voor teams in Nieuwerkerken.
 - Terugkerende order: 3D print service nieuwerkerken; we bewaren je instellingen.

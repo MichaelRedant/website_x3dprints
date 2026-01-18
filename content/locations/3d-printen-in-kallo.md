@@ -121,9 +121,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Beveren](/3d-printen-in-beveren)
-- [3D printen in Doel](/3d-printen-in-doel)
-- [3D printen in Kieldrecht](/3d-printen-in-kieldrecht)
+- [Buurpagina: 3D printen in Beveren](/3d-printen-in-beveren)
+- [Buurpagina: 3D printen in Doel](/3d-printen-in-doel)
+- [Buurpagina: 3D printen in Kieldrecht](/3d-printen-in-kieldrecht)
+- [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
 ## Spotlight rond Kallo
 - Haven en logistiek: behuizingen en pasmallen voor teams in Kallo centrum.
 - Terugkerende order: 3D print service Kallo; we bewaren je instellingen.

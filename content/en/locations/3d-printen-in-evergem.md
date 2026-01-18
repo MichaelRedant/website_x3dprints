@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Everge
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ertvelde](/en/3d-printen-in-ertvelde)
-- [3D printing in Sleidinge](/en/3d-printen-in-sleidinge)
-- [3D printing in Kluizen](/en/3d-printen-in-kluizen)
+- [Nearby: 3D printing in Ertvelde](/en/3d-printen-in-ertvelde)
+- [Nearby: 3D printing in Sleidinge](/en/3d-printen-in-sleidinge)
+- [Nearby: 3D printing in Kluizen](/en/3d-printen-in-kluizen)
+- [Parent page: 3D printing in Zelzate](/en/3d-printen-in-zelzate)
 
 ## Local spotlight
 - KMO's en techniekers rond de kanaalzone: PLA/PETG parts tuned for projects near Evergem centrum.

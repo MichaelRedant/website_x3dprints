@@ -78,6 +78,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Idegem: kleine reeksen met vaste settings rond Idegem.
 - Vaak gevraagd: 3D print service Idegem; we adviseren materiaal en afwerking.

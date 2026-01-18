@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Scheld
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
-- [3D printing in Melsen](/en/3d-printen-in-melsen)
-- [3D printing in Munte](/en/3d-printen-in-munte)
+- [Nearby: 3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
+- [Nearby: 3D printing in Melsen](/en/3d-printen-in-melsen)
+- [Nearby: 3D printing in Munte](/en/3d-printen-in-munte)
+- [Parent page: 3D printing in Merelbeke-Melle](/en/3d-printen-in-merelbeke-melle)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Schelderode centrum.

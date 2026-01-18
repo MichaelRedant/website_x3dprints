@@ -133,6 +133,7 @@ Wil je ervaren hoe **3D printen in Appelterre-Eichem** jouw idee versterkt? Vraa
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Appelterre-Eichem: PLA/PETG onderdelen afgestemd op projecten rond Appelterre-Eichem.
 - Vaak gevraagd: 3D print service Appelterre-Eichem; we adviseren materiaal en afwerking.

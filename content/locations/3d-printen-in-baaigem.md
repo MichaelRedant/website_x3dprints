@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gavere](/3d-printen-in-gavere)
-- [3D printen in Vurste](/3d-printen-in-vurste)
-- [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+- [Buurpagina: 3D printen in Gavere](/3d-printen-in-gavere)
+- [Buurpagina: 3D printen in Vurste](/3d-printen-in-vurste)
+- [Buurpagina: 3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+
 ## Klantenspotlight
 - Creatieve projecten en maquettes: kleine reeksen met vaste settings rond Baaigem centrum.
 - Vaak gevraagd: 3D print service Baaigem; we adviseren materiaal en afwerking.

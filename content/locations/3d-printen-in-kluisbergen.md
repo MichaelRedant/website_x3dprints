@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Berchem](/3d-printen-in-berchem)
-- [3D printen in Kwaremont](/3d-printen-in-kwaremont)
-- [3D printen in Ruien](/3d-printen-in-ruien)
+- [Buurpagina: 3D printen in Berchem](/3d-printen-in-berchem)
+- [Buurpagina: 3D printen in Kwaremont](/3d-printen-in-kwaremont)
+- [Buurpagina: 3D printen in Ruien](/3d-printen-in-ruien)
+- [Buurpagina: 3D printen in Zulzeke](/3d-printen-in-zulzeke)
+
 ## Lokale spotlight
 - Makers en ontwerpers in de Vlaamse Ardennen: PLA/PETG onderdelen afgestemd op projecten rond Kluisbergen centrum.
 - Vaak gevraagd: 3D print service Kluisbergen; we adviseren materiaal en afwerking.

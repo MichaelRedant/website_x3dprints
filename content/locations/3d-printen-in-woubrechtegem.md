@@ -150,6 +150,7 @@ Benieuwd hoe 3D printen in Woubrechtegem jouw idee kan versterken? Vraag vandaag
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Woubrechtegem
 - Lokale teams in Woubrechtegem: behuizingen en pasmallen voor teams in Woubrechtegem.
 - Terugkerende order: 3D print service Woubrechtegem; we bewaren je instellingen.

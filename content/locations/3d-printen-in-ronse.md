@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in De Klijpe](/3d-printen-in-de-klijpe)
-- [3D printen in Louise-Marie](/3d-printen-in-louise-marie)
-- [3D printen in Maarkedal](/3d-printen-in-maarkedal)
+- [Buurpagina: 3D printen in De Klijpe](/3d-printen-in-de-klijpe)
+- [Buurpagina: 3D printen in Louise-Marie](/3d-printen-in-louise-marie)
+- [Buurpagina: 3D printen in Maarkedal](/3d-printen-in-maarkedal)
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Ronse centrum.
 - Vaak gevraagd: 3D print service Ronse; we adviseren materiaal en afwerking.

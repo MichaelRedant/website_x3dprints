@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Zwalm](/3d-printen-in-zwalm)
-- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
-- [3D printen in Roborst](/3d-printen-in-roborst)
+- [Buurpagina: 3D printen in Zwalm](/3d-printen-in-zwalm)
+- [Buurpagina: 3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+- [Buurpagina: 3D printen in Roborst](/3d-printen-in-roborst)
+- [Hoofdpagina: 3D printen in Rozebeke (Zwalm)](/3d-printen-in-rozebeke-zwalm)
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Nederzwalm-Hermelgem centrum.
 - Vaak gevraagd: 3D print service Nederzwalm-Hermelgem; we adviseren materiaal en afwerking.

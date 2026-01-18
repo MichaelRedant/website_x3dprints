@@ -123,9 +123,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Burcht](/3d-printen-in-burcht)
-- [3D printen in Kruibeke](/3d-printen-in-kruibeke)
-- [3D printen in Bazel](/3d-printen-in-bazel)
+- [Buurpagina: 3D printen in Burcht](/3d-printen-in-burcht)
+- [Buurpagina: 3D printen in Kruibeke](/3d-printen-in-kruibeke)
+- [Buurpagina: 3D printen in Bazel](/3d-printen-in-bazel)
+- [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
 ## Spotlight rond Zwijndrecht
 - Logistiek en industrie: behuizingen en pasmallen voor teams in Zwijndrecht centrum.
 - Terugkerende order: 3D print service Zwijndrecht; we bewaren je instellingen.

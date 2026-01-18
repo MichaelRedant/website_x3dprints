@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Sint-Laureins](/3d-printen-in-sint-laureins)
-- [3D printen in Watervliet](/3d-printen-in-watervliet)
-- [3D printen in Sint-Margriete](/3d-printen-in-sint-margriete)
+- [Buurpagina: 3D printen in Sint-Laureins](/3d-printen-in-sint-laureins)
+- [Buurpagina: 3D printen in Watervliet](/3d-printen-in-watervliet)
+- [Buurpagina: 3D printen in Sint-Margriete](/3d-printen-in-sint-margriete)
+- [Buurpagina: 3D printen in Sint-Jan-in-Eremo](/3d-printen-in-sint-jan-in-eremo)
+
 ## Spotlight rond Waterland-Oudeman
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Waterland-Oudeman centrum.
 - Terugkerende order: 3D print service Waterland-Oudeman; we bewaren je instellingen.

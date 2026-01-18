@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Assene
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Bassevelde](/en/3d-printen-in-bassevelde)
-- [3D printing in Boekhoute](/en/3d-printen-in-boekhoute)
-- [3D printing in Oosteeklo](/en/3d-printen-in-oosteeklo)
+- [Nearby: 3D printing in Bassevelde](/en/3d-printen-in-bassevelde)
+- [Nearby: 3D printing in Boekhoute](/en/3d-printen-in-boekhoute)
+- [Nearby: 3D printing in Oosteeklo](/en/3d-printen-in-oosteeklo)
+- [Parent page: 3D printing in Eeklo](/en/3d-printen-in-eeklo)
 
 ## Local spotlight
 - KMO's en zelfstandigen in het Meetjesland: PLA/PETG parts tuned for projects near Assenede centrum.

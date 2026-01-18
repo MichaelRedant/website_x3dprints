@@ -81,6 +81,7 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Opbrakel: PLA/PETG onderdelen afgestemd op projecten rond Opbrakel.
 - Vaak gevraagd: 3D print service Opbrakel; we adviseren materiaal en afwerking.

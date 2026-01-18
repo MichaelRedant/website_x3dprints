@@ -81,6 +81,7 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Wambeek: kleine reeksen met vaste settings rond Wambeek.
 - Vaak gevraagd: 3D print service Wambeek; we adviseren materiaal en afwerking.

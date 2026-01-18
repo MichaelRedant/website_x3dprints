@@ -133,6 +133,7 @@ Wil je ervaren hoe **3D printen in Lieferinge** jouw project vooruithelpt? Vraag
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Lieferinge: kleine reeksen met vaste settings rond Lieferinge.
 - Vaak gevraagd: 3D print service Lieferinge; we adviseren materiaal en afwerking.

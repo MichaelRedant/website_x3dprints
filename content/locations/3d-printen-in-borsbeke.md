@@ -163,6 +163,7 @@ Vraag vandaag nog een offerte aan en ontdek hoe we jouw project snel en betaalba
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Borsbeke: kleine reeksen met vaste settings rond Borsbeke.
 - Vaak gevraagd: 3D print service Borsbeke; we adviseren materiaal en afwerking.

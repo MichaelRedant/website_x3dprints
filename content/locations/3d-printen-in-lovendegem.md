@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Lievegem](/3d-printen-in-lievegem)
-- [3D printen in Vinderhoute](/3d-printen-in-vinderhoute)
-- [3D printen in Zomergem](/3d-printen-in-zomergem)
+- [Buurpagina: 3D printen in Lievegem](/3d-printen-in-lievegem)
+- [Buurpagina: 3D printen in Vinderhoute](/3d-printen-in-vinderhoute)
+- [Buurpagina: 3D printen in Zomergem](/3d-printen-in-zomergem)
+- [Hoofdpagina: 3D printen in Ronsele](/3d-printen-in-ronsele)
+
 ## Spotlight rond Lovendegem
 - Lokale makers en techniekers: behuizingen en pasmallen voor teams in Lovendegem centrum.
 - Terugkerende order: 3D print service Lovendegem; we bewaren je instellingen.

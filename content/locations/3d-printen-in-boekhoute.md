@@ -121,9 +121,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Assenede](/3d-printen-in-assenede)
-- [3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
-- [3D printen in Bassevelde](/3d-printen-in-bassevelde)
+- [Buurpagina: 3D printen in Assenede](/3d-printen-in-assenede)
+- [Buurpagina: 3D printen in Bassevelde](/3d-printen-in-bassevelde)
+- [Buurpagina: 3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
+
 ## Lokale spotlight
 - Creatieve projecten en retail: PLA/PETG onderdelen afgestemd op projecten rond Boekhoute centrum.
 - Vaak gevraagd: 3D print service Boekhoute; we adviseren materiaal en afwerking.

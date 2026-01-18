@@ -125,7 +125,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Destelbergen](/3d-printen-in-destelbergen)
+- [Buurpagina: 3D printen in Destelbergen](/3d-printen-in-destelbergen)
+
 ## Lokale spotlight
 - Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Heusden centrum.
 - Vaak gevraagd: 3D print service Heusden; we adviseren materiaal en afwerking.

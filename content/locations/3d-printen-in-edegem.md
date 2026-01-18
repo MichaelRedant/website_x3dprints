@@ -107,6 +107,7 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Edegem
 - Lokale teams in Edegem: behuizingen en pasmallen voor teams in Edegem.
 - Terugkerende order: 3D print service Edegem; we bewaren je instellingen.

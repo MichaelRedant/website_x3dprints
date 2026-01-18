@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Lokeren](/3d-printen-in-lokeren)
-- [3D printen in Daknam](/3d-printen-in-daknam)
-- [3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
+- [Buurpagina: 3D printen in Lokeren](/3d-printen-in-lokeren)
+- [Buurpagina: 3D printen in Daknam](/3d-printen-in-daknam)
+- [Buurpagina: 3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
+
 ## Spotlight rond Eksaarde
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Eksaarde centrum.
 - Terugkerende order: 3D print service Eksaarde; we bewaren je instellingen.

@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Wieze*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Lebbeke](/en/3d-printen-in-lebbeke)
-- [3D printing in Denderbelle](/en/3d-printen-in-denderbelle)
-- [3D printing in Buggenhout](/en/3d-printen-in-buggenhout)
+- [Nearby: 3D printing in Lebbeke](/en/3d-printen-in-lebbeke)
+- [Nearby: 3D printing in Denderbelle](/en/3d-printen-in-denderbelle)
+- [Nearby: 3D printing in Buggenhout](/en/3d-printen-in-buggenhout)
 
 ## Local spotlight
 - Lokale ondernemers en techniekers: PLA/PETG parts tuned for projects near Wieze centrum.

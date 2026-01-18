@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
-- [3D printen in Bottelare](/3d-printen-in-bottelare)
-- [3D printen in Lemberge](/3d-printen-in-lemberge)
+- [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [Buurpagina: 3D printen in Bottelare](/3d-printen-in-bottelare)
+- [Buurpagina: 3D printen in Lemberge](/3d-printen-in-lemberge)
+- [Hoofdpagina: 3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Munte centrum.
 - Vaak gevraagd: 3D print service Munte; we adviseren materiaal en afwerking.

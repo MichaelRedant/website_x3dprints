@@ -131,6 +131,7 @@ Wil je een prototype, maquette of serie onderdelen laten maken? Vraag vandaag no
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Sint-Antelinks: kleine reeksen met vaste settings rond Sint-Antelinks.
 - Vaak gevraagd: 3D print service Sint-Antelinks; we adviseren materiaal en afwerking.

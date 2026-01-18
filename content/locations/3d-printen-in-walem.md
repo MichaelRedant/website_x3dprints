@@ -79,7 +79,8 @@ Upload je bestand via [contact](/contact). Je krijgt snel een helder voorstel vo
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Mechelen](/3d-printen-in-mechelen)
+
 ## Spotlight rond Walem
 - Lokale teams in Walem: behuizingen en pasmallen voor teams in Walem.
 - Terugkerende order: 3D print service Walem; we bewaren je instellingen.

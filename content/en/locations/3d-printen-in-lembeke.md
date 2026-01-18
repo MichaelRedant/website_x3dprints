@@ -118,8 +118,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Lembek
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Kaprijke](/en/3d-printen-in-kaprijke)
-- [3D printing in Bentille](/en/3d-printen-in-bentille)
+- [Nearby: 3D printing in Kaprijke](/en/3d-printen-in-kaprijke)
+- [Nearby: 3D printing in Bentille](/en/3d-printen-in-bentille)
 
 ## Local spotlight
 - Lokale makers en techniekers: PLA/PETG parts tuned for projects near Lembeke centrum.

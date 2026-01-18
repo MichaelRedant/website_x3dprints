@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gavere](/3d-printen-in-gavere)
-- [3D printen in Vurste](/3d-printen-in-vurste)
-- [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+- [Buurpagina: 3D printen in Gavere](/3d-printen-in-gavere)
+- [Buurpagina: 3D printen in Vurste](/3d-printen-in-vurste)
+- [Buurpagina: 3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+- [Hoofdpagina: 3D printen in Asper](/3d-printen-in-asper)
+
 ## Klantenspotlight
 - Lokale makers en techniekers: kleine reeksen met vaste settings rond Semmerzake centrum.
 - Vaak gevraagd: 3D print service Semmerzake; we adviseren materiaal en afwerking.

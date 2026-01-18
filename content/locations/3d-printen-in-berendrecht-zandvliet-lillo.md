@@ -77,7 +77,8 @@ Upload je STL- of STEP-bestand via [contact](/contact). Voeg aantallen en materi
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Ekeren](/3d-printen-in-ekeren)
+- [Buurpagina: 3D printen in Ekeren](/3d-printen-in-ekeren)
+
 ## Lokale spotlight
 - Havenprojecten en tooling: PLA/PETG onderdelen afgestemd op projecten rond Berendrecht.
 - Vaak gevraagd: 3D print service Berendrecht; we adviseren materiaal en afwerking.

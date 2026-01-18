@@ -135,6 +135,7 @@ Wil je starten met **3D printen in Godveerdegem**? Vraag een **gratis offerte** 
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Godveerdegem: kleine reeksen met vaste settings rond Godveerdegem.
 - Vaak gevraagd: 3D print service godveerdegem; we adviseren materiaal en afwerking.

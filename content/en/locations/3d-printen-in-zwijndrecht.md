@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Zwijnd
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Burcht](/en/3d-printen-in-burcht)
-- [3D printing in Kruibeke](/en/3d-printen-in-kruibeke)
-- [3D printing in Bazel](/en/3d-printen-in-bazel)
+- [Nearby: 3D printing in Burcht](/en/3d-printen-in-burcht)
+- [Nearby: 3D printing in Kruibeke](/en/3d-printen-in-kruibeke)
+- [Nearby: 3D printing in Bazel](/en/3d-printen-in-bazel)
+- [Parent page: 3D printing in Beveren-Kruibeke-Zwijndrecht](/en/3d-printen-in-beveren-kruibeke-zwijndrecht)
 
 ## Spotlight near Zwijndrecht
 - Logistiek en industrie: fixtures and housings for teams around Zwijndrecht centrum.

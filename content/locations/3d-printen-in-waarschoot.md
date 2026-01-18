@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Lievegem](/3d-printen-in-lievegem)
-- [3D printen in Zomergem](/3d-printen-in-zomergem)
-- [3D printen in Oostwinkel](/3d-printen-in-oostwinkel)
+- [Buurpagina: 3D printen in Lievegem](/3d-printen-in-lievegem)
+- [Buurpagina: 3D printen in Zomergem](/3d-printen-in-zomergem)
+- [Buurpagina: 3D printen in Oostwinkel](/3d-printen-in-oostwinkel)
+
 ## Spotlight rond Waarschoot
 - Lokale ondernemers en techniekers: behuizingen en pasmallen voor teams in Waarschoot centrum.
 - Terugkerende order: 3D print service Waarschoot; we bewaren je instellingen.

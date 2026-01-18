@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Zwalm](/3d-printen-in-zwalm)
-- [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
-- [3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+- [Buurpagina: 3D printen in Zwalm](/3d-printen-in-zwalm)
+- [Buurpagina: 3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
+- [Buurpagina: 3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
+
 ## Spotlight rond Meilegem
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Meilegem centrum.
 - Terugkerende order: 3D print service Meilegem; we bewaren je instellingen.

@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Lochri
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Beervelde](/en/3d-printen-in-beervelde)
-- [3D printing in Zaffelare](/en/3d-printen-in-zaffelare)
-- [3D printing in Zeveneken](/en/3d-printen-in-zeveneken)
+- [Nearby: 3D printing in Beervelde](/en/3d-printen-in-beervelde)
+- [Nearby: 3D printing in Zaffelare](/en/3d-printen-in-zaffelare)
+- [Nearby: 3D printing in Zeveneken](/en/3d-printen-in-zeveneken)
+- [Nearby: 3D printing in Wachtebeke](/en/3d-printen-in-wachtebeke)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Lochristi centrum.

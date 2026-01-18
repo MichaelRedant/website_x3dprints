@@ -125,8 +125,9 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Evergem](/3d-printen-in-evergem)
-- [3D printen in Kluizen](/3d-printen-in-kluizen)
+- [Buurpagina: 3D printen in Evergem](/3d-printen-in-evergem)
+- [Buurpagina: 3D printen in Kluizen](/3d-printen-in-kluizen)
+
 ## Klantenspotlight
 - Industrie en logistiek rond de kanaalzone: kleine reeksen met vaste settings rond Ertvelde centrum.
 - Vaak gevraagd: 3D print service Ertvelde; we adviseren materiaal en afwerking.

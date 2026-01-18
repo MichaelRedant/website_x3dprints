@@ -78,6 +78,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Ophasselt
 - Lokale teams in Ophasselt: behuizingen en pasmallen voor teams in Ophasselt.
 - Terugkerende order: 3D print service Ophasselt; we bewaren je instellingen.

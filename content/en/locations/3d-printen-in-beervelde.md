@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Beerve
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Lochristi](/en/3d-printen-in-lochristi)
-- [3D printing in Zaffelare](/en/3d-printen-in-zaffelare)
-- [3D printing in Zeveneken](/en/3d-printen-in-zeveneken)
+- [Nearby: 3D printing in Lochristi](/en/3d-printen-in-lochristi)
+- [Nearby: 3D printing in Zaffelare](/en/3d-printen-in-zaffelare)
+- [Nearby: 3D printing in Zeveneken](/en/3d-printen-in-zeveneken)
 
 ## Spotlight near Beervelde
 - Lokale makers en techniekers: fixtures and housings for teams around Beervelde centrum.

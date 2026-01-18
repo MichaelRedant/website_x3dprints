@@ -66,6 +66,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Kruishoutem
 - Lokale teams in Kruishoutem: behuizingen en pasmallen voor teams in Kruishoutem.
 - Terugkerende order: 3D print service Kruishoutem; we bewaren je instellingen.

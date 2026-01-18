@@ -135,6 +135,7 @@ Interesse in **3D printen in Oombergen**? Vraag een **gratis offerte** aan.
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Oombergen
 - Lokale teams in Oombergen: behuizingen en pasmallen voor teams in Oombergen.
 - Terugkerende order: 3D print service oombergen; we bewaren je instellingen.

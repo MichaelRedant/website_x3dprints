@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Bazel*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Kruibeke](/en/3d-printen-in-kruibeke)
-- [3D printing in Rupelmonde](/en/3d-printen-in-rupelmonde)
-- [3D printing in Burcht](/en/3d-printen-in-burcht)
+- [Nearby: 3D printing in Kruibeke](/en/3d-printen-in-kruibeke)
+- [Nearby: 3D printing in Rupelmonde](/en/3d-printen-in-rupelmonde)
+- [Nearby: 3D printing in Burcht](/en/3d-printen-in-burcht)
+- [Parent page: 3D printing in Beveren-Kruibeke-Zwijndrecht](/en/3d-printen-in-beveren-kruibeke-zwijndrecht)
 
 ## Customer spotlight
 - Lokale ondernemers en techniekers: small batches with consistent settings near Bazel centrum.

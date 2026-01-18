@@ -130,7 +130,11 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Serskamp](/3d-printen-in-serskamp)
+- [Buurpagina: 3D printen in Serskamp](/3d-printen-in-serskamp)
+- [Hoofdpagina: 3D printen in Laarne](/3d-printen-in-laarne)
+- [Hoofdpagina: 3D printen in Kalken](/3d-printen-in-kalken)
+- [Hoofdpagina: 3D printen in Melle](/3d-printen-in-melle)
+
 ## Klantenspotlight
 - Chemie/lab tooling in Wetteren: kleine reeksen met vaste settings rond Wetteren centrum.
 - Vaak gevraagd: 3D print service wetteren; we adviseren materiaal en afwerking.

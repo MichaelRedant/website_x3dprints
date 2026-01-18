@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Lievegem](/3d-printen-in-lievegem)
-- [3D printen in Lovendegem](/3d-printen-in-lovendegem)
-- [3D printen in Zomergem](/3d-printen-in-zomergem)
+- [Buurpagina: 3D printen in Lievegem](/3d-printen-in-lievegem)
+- [Buurpagina: 3D printen in Lovendegem](/3d-printen-in-lovendegem)
+- [Buurpagina: 3D printen in Zomergem](/3d-printen-in-zomergem)
+
 ## Lokale spotlight
 - Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Vinderhoute centrum.
 - Vaak gevraagd: 3D print service Vinderhoute; we adviseren materiaal en afwerking.

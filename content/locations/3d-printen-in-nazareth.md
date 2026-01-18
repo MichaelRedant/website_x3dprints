@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Eke](/3d-printen-in-eke)
-- [3D printen in De Pinte](/3d-printen-in-de-pinte)
-- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [Buurpagina: 3D printen in Eke](/3d-printen-in-eke)
+- [Buurpagina: 3D printen in De Pinte](/3d-printen-in-de-pinte)
+- [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [Hoofdpagina: 3D printen in Nazareth-De Pinte](/3d-printen-in-nazareth-de-pinte)
+
 ## Spotlight rond Nazareth
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Nazareth centrum.
 - Terugkerende order: 3D print service Nazareth; we bewaren je instellingen.

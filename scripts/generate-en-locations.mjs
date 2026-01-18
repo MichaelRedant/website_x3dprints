@@ -1,6 +1,12 @@
-const fs = require("fs")
-const path = require("path")
-const ts = require("typescript")
+import fs from "fs"
+import path from "path"
+import ts from "typescript"
+import { createRequire } from "module"
+import { fileURLToPath } from "url"
+
+const require = createRequire(import.meta.url)
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const root = path.join(__dirname, "..")
 const locationsPath = path.join(root, "lib", "locations.ts")
@@ -13,7 +19,6 @@ function loadLocations() {
   }).outputText
 
   const mod = { exports: {} }
-  // eslint-disable-next-line no-new-func
   const runtime = new Function("require", "module", "exports", transpiled)
   runtime(require, mod, mod.exports)
 
@@ -170,12 +175,6 @@ function mapSectorsToEn(sectors, city) {
   return unique(mapped).slice(0, 4)
 }
 
-function pick(valueList, fallback, limit) {
-  const clean = unique((valueList || []).map((v) => v && `${v}`.trim()).filter(Boolean))
-  if (limit) return clean.slice(0, limit).length > 0 ? clean.slice(0, limit) : [fallback]
-  return clean.length > 0 ? clean : [fallback]
-}
-
 function getLandmarks(loc, city) {
   const list = Array.isArray(loc.landmarks) ? loc.landmarks : []
   const mapped = unique(list.map((l) => `${l}`.trim()).filter(Boolean))
@@ -241,7 +240,6 @@ function renderLocation(loc, slugSet) {
 
   const primaryArea = coverageList[0] || city
   const secondaryArea = coverageList[1] || city
-  const tertiaryArea = coverageList[2] || city
 
   const sectorLines = mapSectorsToEn(loc.sectors, city)
 
@@ -428,7 +426,6 @@ function main() {
     fs.writeFileSync(dest, md, "utf8")
   }
 
-  // eslint-disable-next-line no-console
   console.log(`Generated ${locations.length} English location pages.`)
 }
 

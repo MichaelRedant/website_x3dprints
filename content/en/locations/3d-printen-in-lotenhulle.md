@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Lotenh
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Aalter](/en/3d-printen-in-aalter)
-- [3D printing in Bellem](/en/3d-printen-in-bellem)
-- [3D printing in Knesselare](/en/3d-printen-in-knesselare)
+- [Nearby: 3D printing in Aalter](/en/3d-printen-in-aalter)
+- [Nearby: 3D printing in Bellem](/en/3d-printen-in-bellem)
+- [Nearby: 3D printing in Knesselare](/en/3d-printen-in-knesselare)
+- [Nearby: 3D printing in Poeke](/en/3d-printen-in-poeke)
 
 ## Local spotlight
 - Makers en hobbyisten: PLA/PETG parts tuned for projects near Lotenhulle centrum.

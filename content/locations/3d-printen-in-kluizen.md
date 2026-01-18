@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Sleidinge](/3d-printen-in-sleidinge)
-- [3D printen in Ertvelde](/3d-printen-in-ertvelde)
-- [3D printen in Evergem](/3d-printen-in-evergem)
+- [Buurpagina: 3D printen in Sleidinge](/3d-printen-in-sleidinge)
+- [Buurpagina: 3D printen in Ertvelde](/3d-printen-in-ertvelde)
+- [Buurpagina: 3D printen in Evergem](/3d-printen-in-evergem)
+
 ## Lokale spotlight
 - Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Kluizen centrum.
 - Vaak gevraagd: 3D print service Kluizen; we adviseren materiaal en afwerking.

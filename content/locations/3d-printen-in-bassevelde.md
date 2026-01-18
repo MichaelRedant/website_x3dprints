@@ -122,9 +122,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Assenede](/3d-printen-in-assenede)
-- [3D printen in Boekhoute](/3d-printen-in-boekhoute)
-- [3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
+- [Buurpagina: 3D printen in Assenede](/3d-printen-in-assenede)
+- [Buurpagina: 3D printen in Boekhoute](/3d-printen-in-boekhoute)
+- [Buurpagina: 3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
+
 ## Klantenspotlight
 - Lokale makers en ondernemers: kleine reeksen met vaste settings rond Bassevelde centrum.
 - Vaak gevraagd: 3D print service Bassevelde; we adviseren materiaal en afwerking.

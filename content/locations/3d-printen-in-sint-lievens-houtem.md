@@ -131,6 +131,7 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Sint-Lievens-Houtem: kleine reeksen met vaste settings rond Sint-Lievens-Houtem.
 - Vaak gevraagd: 3D print service sint-lievens-houtem; we adviseren materiaal en afwerking.

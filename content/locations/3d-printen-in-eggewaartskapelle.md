@@ -74,6 +74,7 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Erfgoed- en kerkprojecten rond de dorpskern: PLA/PETG onderdelen afgestemd op projecten rond Eggewaartskapelle dorpskom.
 - Vaak gevraagd: 3D print service Eggewaartskapelle; we adviseren materiaal en afwerking.

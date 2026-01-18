@@ -136,7 +136,8 @@ Klaar om uw project te lanceren? Ontdek zelf de voordelen van lokaal **3D printe
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Ledeberg](/3d-printen-in-ledeberg)
+- [Buurpagina: 3D printen in Ledeberg](/3d-printen-in-ledeberg)
+
 ## Klantenspotlight
 - Prototyping voor KMO's in Gentbrugge/Ledeberg: kleine reeksen met vaste settings rond Gentbrugge centrum.
 - Vaak gevraagd: 3D print service gentbrugge; we adviseren materiaal en afwerking.

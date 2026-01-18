@@ -75,6 +75,7 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Landbouw in de grenspolders: PLA/PETG onderdelen afgestemd op projecten rond Vinkem dorpskern.
 - Vaak gevraagd: 3D print service Vinkem; we adviseren materiaal en afwerking.

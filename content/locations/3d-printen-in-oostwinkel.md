@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Lievegem](/3d-printen-in-lievegem)
-- [3D printen in Waarschoot](/3d-printen-in-waarschoot)
-- [3D printen in Zomergem](/3d-printen-in-zomergem)
+- [Buurpagina: 3D printen in Lievegem](/3d-printen-in-lievegem)
+- [Buurpagina: 3D printen in Waarschoot](/3d-printen-in-waarschoot)
+- [Buurpagina: 3D printen in Zomergem](/3d-printen-in-zomergem)
+
 ## Spotlight rond Oostwinkel
 - Lokale makers en techniekers: behuizingen en pasmallen voor teams in Oostwinkel centrum.
 - Terugkerende order: 3D print service Oostwinkel; we bewaren je instellingen.

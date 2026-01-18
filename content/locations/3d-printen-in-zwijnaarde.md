@@ -136,7 +136,8 @@ Benieuwd hoe **3D printen in Zwijnaarde** jouw idee versterkt? Vraag een **grati
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Zwijnaarde
 - Lokale teams in Zwijnaarde: behuizingen en pasmallen voor teams in Zwijnaarde.
 - Terugkerende order: 3D print service zwijnaarde; we bewaren je instellingen.

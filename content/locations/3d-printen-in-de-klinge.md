@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
-- [3D printen in Meerdonk](/3d-printen-in-meerdonk)
-- [3D printen in Sint-Pauwels](/3d-printen-in-sint-pauwels)
+- [Buurpagina: 3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
+- [Buurpagina: 3D printen in Meerdonk](/3d-printen-in-meerdonk)
+- [Buurpagina: 3D printen in Sint-Pauwels](/3d-printen-in-sint-pauwels)
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond De Klinge centrum.
 - Vaak gevraagd: 3D print service De Klinge; we adviseren materiaal en afwerking.

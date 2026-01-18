@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Daknam
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Lokeren](/en/3d-printen-in-lokeren)
-- [3D printing in Eksaarde](/en/3d-printen-in-eksaarde)
-- [3D printing in Moerbeke-Waas](/en/3d-printen-in-moerbeke-waas)
+- [Nearby: 3D printing in Lokeren](/en/3d-printen-in-lokeren)
+- [Nearby: 3D printing in Eksaarde](/en/3d-printen-in-eksaarde)
+- [Nearby: 3D printing in Moerbeke-Waas](/en/3d-printen-in-moerbeke-waas)
 
 ## Local spotlight
 - Lokale ondernemers en techniekers: PLA/PETG parts tuned for projects near Daknam centrum.

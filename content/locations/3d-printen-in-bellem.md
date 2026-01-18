@@ -124,9 +124,11 @@ Wilt u starten met 3D printen in Bellem? Vraag een vrijblijvende offerte aan via
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Aalter](/3d-printen-in-aalter)
-- [3D printen in Knesselare](/3d-printen-in-knesselare)
-- [3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
+- [Buurpagina: 3D printen in Aalter](/3d-printen-in-aalter)
+- [Buurpagina: 3D printen in Knesselare](/3d-printen-in-knesselare)
+- [Buurpagina: 3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
+- [Buurpagina: 3D printen in Poeke](/3d-printen-in-poeke)
+
 ## Klantenspotlight
 - Lokale makers en zelfstandigen: kleine reeksen met vaste settings rond Bellem centrum.
 - Vaak gevraagd: 3D print service Bellem; we adviseren materiaal en afwerking.

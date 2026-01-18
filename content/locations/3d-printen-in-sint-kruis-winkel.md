@@ -137,6 +137,7 @@ Benieuwd hoe **3D printen in Sint-Kruis-Winkel** jouw idee versterkt? Vraag een 
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Sint-Kruis-Winkel
 - Lokale teams in Sint-Kruis-Winkel: behuizingen en pasmallen voor teams in Sint-Kruis-Winkel.
 - Terugkerende order: 3D print service sint-kruis-winkel; we bewaren je instellingen.

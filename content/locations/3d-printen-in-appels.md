@@ -132,6 +132,7 @@ Benieuwd hoe **3D printen in Appels** jouw idee versterkt? Vraag een **gratis of
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Appels
 - Lokale teams in Appels: behuizingen en pasmallen voor teams in Appels.
 - Terugkerende order: 3D print service appels; we bewaren je instellingen.

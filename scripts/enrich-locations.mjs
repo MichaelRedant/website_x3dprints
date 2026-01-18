@@ -1,6 +1,12 @@
-const fs = require("fs")
-const path = require("path")
-const ts = require("typescript")
+import fs from "fs"
+import path from "path"
+import ts from "typescript"
+import { createRequire } from "module"
+import { fileURLToPath } from "url"
+
+const require = createRequire(import.meta.url)
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const root = path.join(__dirname, "..")
 const locationsPath = path.join(root, "lib", "locations.ts")
@@ -17,7 +23,6 @@ function loadLocations() {
   }).outputText
 
   const mod = { exports: {} }
-  // eslint-disable-next-line no-new-func
   const runtime = new Function("require", "module", "exports", transpiled)
   runtime(require, mod, mod.exports)
 
@@ -25,7 +30,8 @@ function loadLocations() {
   if (!locations || !Array.isArray(locations)) throw new Error("locations array missing")
   const enSet = EN_LOCATION_SLUGS ? new Set(Array.from(EN_LOCATION_SLUGS)) : null
   const locs = enSet ? locations.filter((loc) => enSet.has(loc.slug)) : locations
-  return { locations: locs, slugSet: new Set(locs.map((l) => l.slug)) }
+  const slugMap = new Map(locs.map((l) => [l.slug, l]))
+  return { locations: locs, slugMap }
 }
 
 function unique(list) {
@@ -47,18 +53,47 @@ function coverageList(loc) {
   return unique([city, ...areas].map((v) => `${v}`.trim()).filter(Boolean))
 }
 
-function neighbourSlugs(list, slugSet) {
-  const slugs = []
-  for (const name of list) {
-    const slug = `3d-printen-in-${name
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-+|-+$/g, "")}`
-    if (slugSet.has(slug)) slugs.push({ name, slug })
+function normalizeKey(name) {
+  return `${name}`
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+}
+
+function nameToSlug(name) {
+  return `3d-printen-in-${normalizeKey(name)}`
+}
+
+function neighbourSlugs(loc, slugMap) {
+  const neighbours = []
+  const seen = new Set()
+
+  function addCandidate(name, relation) {
+    const slug = nameToSlug(name)
+    if (slug === loc.slug) return
+    if (!slugMap.has(slug)) return
+    if (seen.has(slug)) return
+    seen.add(slug)
+    const target = slugMap.get(slug)
+    neighbours.push({ name: target?.city || name, slug, relation })
   }
-  return unique(slugs).slice(0, 3)
+
+  // Forward: serviced areas near the city
+  const coverage = coverageList(loc)
+  for (const name of coverage.slice(1)) addCandidate(name, "sibling")
+
+  // Reverse: pages that list this city in their coverage (e.g. parent/hoofdpagina)
+  for (const other of slugMap.values()) {
+    if (other.slug === loc.slug) continue
+    const otherCoverage = coverageList(other)
+    if (otherCoverage.some((n) => normalizeKey(n) === normalizeKey(loc.city))) {
+      addCandidate(other.city || other.slug, "parent")
+    }
+  }
+
+  return neighbours.slice(0, 4)
 }
 
 function pickPhrases(loc) {
@@ -187,15 +222,20 @@ function insertBlock(filePath, block) {
   fs.writeFileSync(filePath, content, "utf8")
 }
 
-function buildEnBlock(loc, slugSet) {
+function buildEnBlock(loc, slugMap) {
   const city = loc.city
   const areas = coverageList(loc)
   const variant = hashSlug(loc.slug) % 3
   const areaText = areas.slice(0, 6).join(", ")
-  const neighbours = neighbourSlugs(areas.slice(1), slugSet)
+  const neighbours = neighbourSlugs(loc, slugMap)
   const neighbourLinks =
     neighbours.length > 0
-      ? neighbours.map((n) => `- [3D printing in ${n.name}](/en/${n.slug})`).join("\n")
+      ? neighbours
+          .map((n) => {
+            const label = n.relation === "parent" ? `Parent page: 3D printing in ${n.name}` : `Nearby: 3D printing in ${n.name}`
+            return `- [${label}](/en/${n.slug})`
+          })
+          .join("\n")
       : "- [3D printing in Ghent](/en/3d-printen-in-gent)"
   const phrases = pickPhrases(loc)
   const phraseLines =
@@ -260,15 +300,23 @@ ${sectors.map((s) => `- ${s}`).join("\n")}
 ${phraseLines}`
 }
 
-function buildNlBlock(loc, slugSet) {
+function buildNlBlock(loc, slugMap) {
   const city = loc.city
   const areas = coverageList(loc)
   const variant = hashSlug(loc.slug) % 3
   const areaText = areas.slice(0, 6).join(", ")
-  const neighbours = neighbourSlugs(areas.slice(1), slugSet)
+  const neighbours = neighbourSlugs(loc, slugMap)
   const neighbourLinks =
     neighbours.length > 0
-      ? neighbours.map((n) => `- [3D printen in ${n.name}](/${n.slug})`).join("\n")
+      ? neighbours
+          .map((n) => {
+            const label =
+              n.relation === "parent"
+                ? `Hoofdpagina: 3D printen in ${n.name}`
+                : `Buurpagina: 3D printen in ${n.name}`
+            return `- [${label}](/${n.slug})`
+          })
+          .join("\n")
       : "- [3D printen in Gent](/3d-printen-in-gent)"
   const phrases = pickPhrases(loc)
   const phraseLines =
@@ -334,17 +382,16 @@ ${phraseLines}`
 }
 
 function enrichAll() {
-  const { locations, slugSet } = loadLocations()
+  const { locations, slugMap } = loadLocations()
   ensureDir(enDir)
   ensureDir(nlDir)
 
   for (const loc of locations) {
     const enPath = path.join(enDir, `${loc.slug}.md`)
     const nlPath = path.join(nlDir, `${loc.slug}.md`)
-    if (fs.existsSync(enPath)) insertBlock(enPath, buildEnBlock(loc, slugSet))
-    if (fs.existsSync(nlPath)) insertBlock(nlPath, buildNlBlock(loc, slugSet))
+    if (fs.existsSync(enPath)) insertBlock(enPath, buildEnBlock(loc, slugMap))
+    if (fs.existsSync(nlPath)) insertBlock(nlPath, buildNlBlock(loc, slugMap))
   }
-  // eslint-disable-next-line no-console
   console.log(`Enriched ${locations.length} EN/NL location pages with local highlights.`)
 }
 

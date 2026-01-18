@@ -66,6 +66,7 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Welden (Oudenaarde)
 - Lokale teams in Welden (Oudenaarde): behuizingen en pasmallen voor teams in Welden (Oudenaarde).
 - Terugkerende order: 3D print service Welden; we bewaren je instellingen.

@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Houtem
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Stekene](/en/3d-printen-in-stekene)
-- [3D printing in Kemzeke](/en/3d-printen-in-kemzeke)
-- [3D printing in Klein-Sinaai](/en/3d-printen-in-klein-sinaai)
+- [Nearby: 3D printing in Stekene](/en/3d-printen-in-stekene)
+- [Nearby: 3D printing in Kemzeke](/en/3d-printen-in-kemzeke)
+- [Nearby: 3D printing in Klein-Sinaai](/en/3d-printen-in-klein-sinaai)
 
 ## Spotlight near Houtem (Stekene)
 - Lokale makers en ontwerpers: fixtures and housings for teams around Houtem (Stekene) centrum.

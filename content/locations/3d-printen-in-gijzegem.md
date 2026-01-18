@@ -133,6 +133,7 @@ Benieuwd hoe **3D printen in Gijzegem** jouw idee versterkt? Vraag een **gratis 
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Gijzegem
 - Lokale teams in Gijzegem: behuizingen en pasmallen voor teams in Gijzegem.
 - Terugkerende order: 3D print service gijzegem; we bewaren je instellingen.

@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Lede](/3d-printen-in-lede)
-- [3D printen in Oordegem](/3d-printen-in-oordegem)
-- [3D printen in Impe](/3d-printen-in-impe)
+- [Buurpagina: 3D printen in Lede](/3d-printen-in-lede)
+- [Buurpagina: 3D printen in Oordegem](/3d-printen-in-oordegem)
+- [Buurpagina: 3D printen in Impe](/3d-printen-in-impe)
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Smetlede centrum.
 - Vaak gevraagd: 3D print service Smetlede; we adviseren materiaal en afwerking.

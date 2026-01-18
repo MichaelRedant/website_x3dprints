@@ -117,7 +117,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Ekeren
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Parent page: 3D printing in Berendrecht-Zandvliet-Lillo](/en/3d-printen-in-berendrecht-zandvliet-lillo)
 
 ## Customer spotlight
 - Haven/industrie tooling Ekeren: small batches with consistent settings near Ekeren centrum.

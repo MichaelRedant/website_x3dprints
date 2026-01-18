@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Sinaai
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Sint-Niklaas](/en/3d-printen-in-sint-niklaas)
-- [3D printing in Belsele](/en/3d-printen-in-belsele)
-- [3D printing in Lokeren](/en/3d-printen-in-lokeren)
+- [Nearby: 3D printing in Sint-Niklaas](/en/3d-printen-in-sint-niklaas)
+- [Nearby: 3D printing in Belsele](/en/3d-printen-in-belsele)
+- [Nearby: 3D printing in Lokeren](/en/3d-printen-in-lokeren)
+- [Nearby: 3D printing in Sint-Gillis-Waas](/en/3d-printen-in-sint-gillis-waas)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near Sinaai centrum.

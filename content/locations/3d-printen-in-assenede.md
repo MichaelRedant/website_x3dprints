@@ -122,9 +122,11 @@ Wilt u snel starten? Vraag een vrijblijvende offerte aan via [contact](/contact)
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Bassevelde](/3d-printen-in-bassevelde)
-- [3D printen in Boekhoute](/3d-printen-in-boekhoute)
-- [3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
+- [Buurpagina: 3D printen in Bassevelde](/3d-printen-in-bassevelde)
+- [Buurpagina: 3D printen in Boekhoute](/3d-printen-in-boekhoute)
+- [Buurpagina: 3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
+- [Hoofdpagina: 3D printen in Eeklo](/3d-printen-in-eeklo)
+
 ## Lokale spotlight
 - KMO's en zelfstandigen in het Meetjesland: PLA/PETG onderdelen afgestemd op projecten rond Assenede centrum.
 - Vaak gevraagd: 3D print service Assenede; we adviseren materiaal en afwerking.

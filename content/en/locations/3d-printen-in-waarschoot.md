@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Waarsc
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Lievegem](/en/3d-printen-in-lievegem)
-- [3D printing in Zomergem](/en/3d-printen-in-zomergem)
-- [3D printing in Oostwinkel](/en/3d-printen-in-oostwinkel)
+- [Nearby: 3D printing in Lievegem](/en/3d-printen-in-lievegem)
+- [Nearby: 3D printing in Zomergem](/en/3d-printen-in-zomergem)
+- [Nearby: 3D printing in Oostwinkel](/en/3d-printen-in-oostwinkel)
 
 ## Spotlight near Waarschoot
 - Lokale ondernemers en techniekers: fixtures and housings for teams around Waarschoot centrum.

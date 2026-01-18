@@ -118,7 +118,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Hofsta
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Parent page: 3D printing in Aalst](/en/3d-printen-in-aalst)
 
 ## Spotlight near Hofstade
 - Local teams in Hofstade: fixtures and housings for teams around Hofstade.

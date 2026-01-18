@@ -118,8 +118,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Antwer
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Berchem](/en/3d-printen-in-berchem)
-- [3D printing in Borgerhout](/en/3d-printen-in-borgerhout)
+- [Nearby: 3D printing in Berchem](/en/3d-printen-in-berchem)
+- [Nearby: 3D printing in Borgerhout](/en/3d-printen-in-borgerhout)
 
 ## Customer spotlight
 - Haven/logistiek tools: small batches with consistent settings near Antwerpen centrum.

@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Maarke
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Maarkedal](/en/3d-printen-in-maarkedal)
-- [3D printing in Etikhove](/en/3d-printen-in-etikhove)
-- [3D printing in Nukerke](/en/3d-printen-in-nukerke)
+- [Nearby: 3D printing in Maarkedal](/en/3d-printen-in-maarkedal)
+- [Nearby: 3D printing in Etikhove](/en/3d-printen-in-etikhove)
+- [Nearby: 3D printing in Nukerke](/en/3d-printen-in-nukerke)
+- [Nearby: 3D printing in Schorisse](/en/3d-printen-in-schorisse)
 
 ## Spotlight near Maarke-Kerkem
 - Lokale makers en ontwerpers: fixtures and housings for teams around Maarke-Kerkem centrum.

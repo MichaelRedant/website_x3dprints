@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Belsel
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Sint-Niklaas](/en/3d-printen-in-sint-niklaas)
-- [3D printing in Nieuwkerken-Waas](/en/3d-printen-in-nieuwkerken-waas)
-- [3D printing in Sinaai](/en/3d-printen-in-sinaai)
+- [Nearby: 3D printing in Sint-Niklaas](/en/3d-printen-in-sint-niklaas)
+- [Nearby: 3D printing in Nieuwkerken-Waas](/en/3d-printen-in-nieuwkerken-waas)
+- [Nearby: 3D printing in Sinaai](/en/3d-printen-in-sinaai)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near Belsele centrum.

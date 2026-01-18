@@ -80,7 +80,8 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Antwerpen](/3d-printen-in-antwerpen)
+
 ## Klantenspotlight
 - Culturele events en props: kleine reeksen met vaste settings rond Turnhoutsebaan.
 - Vaak gevraagd: 3D print service Borgerhout; we adviseren materiaal en afwerking.

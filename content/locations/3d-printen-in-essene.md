@@ -81,6 +81,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Essene: kleine reeksen met vaste settings rond Essene.
 - Vaak gevraagd: 3D print service Essene; we adviseren materiaal en afwerking.

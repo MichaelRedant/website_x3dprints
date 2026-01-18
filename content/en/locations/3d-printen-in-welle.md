@@ -118,8 +118,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Welle*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Denderleeuw](/en/3d-printen-in-denderleeuw)
-- [3D printing in Iddergem](/en/3d-printen-in-iddergem)
+- [Nearby: 3D printing in Denderleeuw](/en/3d-printen-in-denderleeuw)
+- [Nearby: 3D printing in Iddergem](/en/3d-printen-in-iddergem)
 
 ## Spotlight near Welle
 - KMO's en zelfstandigen: fixtures and housings for teams around Welle centrum.

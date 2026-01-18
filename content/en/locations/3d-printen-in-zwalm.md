@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Zwalm*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Nederzwalm-Hermelgem](/en/3d-printen-in-nederzwalm-hermelgem)
-- [3D printing in Munkzwalm](/en/3d-printen-in-munkzwalm)
-- [3D printing in Roborst](/en/3d-printen-in-roborst)
+- [Nearby: 3D printing in Nederzwalm-Hermelgem](/en/3d-printen-in-nederzwalm-hermelgem)
+- [Nearby: 3D printing in Munkzwalm](/en/3d-printen-in-munkzwalm)
+- [Nearby: 3D printing in Roborst](/en/3d-printen-in-roborst)
+- [Parent page: 3D printing in Sint-Blasius-Boekel](/en/3d-printen-in-sint-blasius-boekel)
 
 ## Spotlight near Zwalm
 - Lokale makers en ontwerpers: fixtures and housings for teams around Zwalm centrum.

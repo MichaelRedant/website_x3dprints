@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Stekene](/3d-printen-in-stekene)
-- [3D printen in Kemzeke](/3d-printen-in-kemzeke)
-- [3D printen in Klein-Sinaai](/3d-printen-in-klein-sinaai)
+- [Buurpagina: 3D printen in Stekene](/3d-printen-in-stekene)
+- [Buurpagina: 3D printen in Kemzeke](/3d-printen-in-kemzeke)
+- [Buurpagina: 3D printen in Klein-Sinaai](/3d-printen-in-klein-sinaai)
+
 ## Spotlight rond Houtem (Stekene)
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Houtem (Stekene) centrum.
 - Terugkerende order: 3D print service Houtem Stekene; we bewaren je instellingen.

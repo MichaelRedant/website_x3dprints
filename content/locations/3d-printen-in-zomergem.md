@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Lievegem](/3d-printen-in-lievegem)
-- [3D printen in Waarschoot](/3d-printen-in-waarschoot)
-- [3D printen in Ronsele](/3d-printen-in-ronsele)
+- [Buurpagina: 3D printen in Lievegem](/3d-printen-in-lievegem)
+- [Buurpagina: 3D printen in Waarschoot](/3d-printen-in-waarschoot)
+- [Buurpagina: 3D printen in Ronsele](/3d-printen-in-ronsele)
+- [Hoofdpagina: 3D printen in Lovendegem](/3d-printen-in-lovendegem)
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Zomergem centrum.
 - Vaak gevraagd: 3D print service Zomergem; we adviseren materiaal en afwerking.

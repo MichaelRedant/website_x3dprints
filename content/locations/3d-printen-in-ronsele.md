@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Lievegem](/3d-printen-in-lievegem)
-- [3D printen in Zomergem](/3d-printen-in-zomergem)
-- [3D printen in Lovendegem](/3d-printen-in-lovendegem)
+- [Buurpagina: 3D printen in Lievegem](/3d-printen-in-lievegem)
+- [Buurpagina: 3D printen in Zomergem](/3d-printen-in-zomergem)
+- [Buurpagina: 3D printen in Lovendegem](/3d-printen-in-lovendegem)
+
 ## Spotlight rond Ronsele
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Ronsele centrum.
 - Terugkerende order: 3D print service Ronsele; we bewaren je instellingen.

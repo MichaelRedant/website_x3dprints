@@ -132,6 +132,7 @@ Benieuwd hoe **3D printen in Schoonaarde** jouw idee versterkt? Vraag een **grat
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Schoonaarde: kleine reeksen met vaste settings rond Schoonaarde.
 - Vaak gevraagd: 3D print service schoonaarde; we adviseren materiaal en afwerking.

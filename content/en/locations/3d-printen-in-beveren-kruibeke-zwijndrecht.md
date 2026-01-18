@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Bevere
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Beveren](/en/3d-printen-in-beveren)
-- [3D printing in Kruibeke](/en/3d-printen-in-kruibeke)
-- [3D printing in Zwijndrecht](/en/3d-printen-in-zwijndrecht)
+- [Nearby: 3D printing in Beveren](/en/3d-printen-in-beveren)
+- [Nearby: 3D printing in Kruibeke](/en/3d-printen-in-kruibeke)
+- [Nearby: 3D printing in Zwijndrecht](/en/3d-printen-in-zwijndrecht)
+- [Nearby: 3D printing in Bazel](/en/3d-printen-in-bazel)
 
 ## Spotlight near Beveren-Kruibeke-Zwijndrecht
 - Waaslandhaven en industrie: fixtures and housings for teams around Beveren.

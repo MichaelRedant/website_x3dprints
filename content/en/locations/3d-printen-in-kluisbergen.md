@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Kluisb
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Berchem](/en/3d-printen-in-berchem)
-- [3D printing in Kwaremont](/en/3d-printen-in-kwaremont)
-- [3D printing in Ruien](/en/3d-printen-in-ruien)
+- [Nearby: 3D printing in Berchem](/en/3d-printen-in-berchem)
+- [Nearby: 3D printing in Kwaremont](/en/3d-printen-in-kwaremont)
+- [Nearby: 3D printing in Ruien](/en/3d-printen-in-ruien)
+- [Nearby: 3D printing in Zulzeke](/en/3d-printen-in-zulzeke)
 
 ## Local spotlight
 - Makers en ontwerpers in de Vlaamse Ardennen: PLA/PETG parts tuned for projects near Kluisbergen centrum.

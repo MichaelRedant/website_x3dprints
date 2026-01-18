@@ -66,6 +66,7 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Kruisem
 - Lokale teams in Kruisem: behuizingen en pasmallen voor teams in Kruisem.
 - Terugkerende order: 3D print service Kruisem; we bewaren je instellingen.

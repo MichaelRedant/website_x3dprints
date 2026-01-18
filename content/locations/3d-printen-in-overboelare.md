@@ -78,6 +78,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Overboelare
 - Lokale teams in Overboelare: behuizingen en pasmallen voor teams in Overboelare.
 - Terugkerende order: 3D print service Overboelare; we bewaren je instellingen.

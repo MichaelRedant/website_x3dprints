@@ -133,6 +133,7 @@ Benieuwd hoe **3D printen in Herdersem** jouw idee versterkt? Vraag een **gratis
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Herdersem: PLA/PETG onderdelen afgestemd op projecten rond Herdersem.
 - Vaak gevraagd: 3D print service herdersem; we adviseren materiaal en afwerking.

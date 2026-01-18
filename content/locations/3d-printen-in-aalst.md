@@ -139,9 +139,11 @@ Benieuwd hoe **3D printen in Aalst** uw project kan versnellen of uw idee kan ve
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Erembodegem](/3d-printen-in-erembodegem)
-- [3D printen in Hofstade](/3d-printen-in-hofstade)
-- [3D printen in Ninove](/3d-printen-in-ninove)
+- [Buurpagina: 3D printen in Erembodegem](/3d-printen-in-erembodegem)
+- [Buurpagina: 3D printen in Hofstade](/3d-printen-in-hofstade)
+- [Buurpagina: 3D printen in Ninove](/3d-printen-in-ninove)
+- [Buurpagina: 3D printen in Denderleeuw](/3d-printen-in-denderleeuw)
+
 ## Lokale spotlight
 - Prototyping voor maakbedrijven in Aalst: PLA/PETG onderdelen afgestemd op projecten rond Aalst centrum.
 - Vaak gevraagd: 3D print service Aalst; we adviseren materiaal en afwerking.

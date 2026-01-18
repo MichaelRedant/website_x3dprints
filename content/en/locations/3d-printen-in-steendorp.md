@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Steend
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Temse](/en/3d-printen-in-temse)
-- [3D printing in Tielrode](/en/3d-printen-in-tielrode)
-- [3D printing in Elversele](/en/3d-printen-in-elversele)
+- [Nearby: 3D printing in Temse](/en/3d-printen-in-temse)
+- [Nearby: 3D printing in Tielrode](/en/3d-printen-in-tielrode)
+- [Nearby: 3D printing in Elversele](/en/3d-printen-in-elversele)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Steendorp centrum.

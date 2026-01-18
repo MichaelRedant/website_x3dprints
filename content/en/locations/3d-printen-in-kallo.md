@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Kallo*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Beveren](/en/3d-printen-in-beveren)
-- [3D printing in Doel](/en/3d-printen-in-doel)
-- [3D printing in Kieldrecht](/en/3d-printen-in-kieldrecht)
+- [Nearby: 3D printing in Beveren](/en/3d-printen-in-beveren)
+- [Nearby: 3D printing in Doel](/en/3d-printen-in-doel)
+- [Nearby: 3D printing in Kieldrecht](/en/3d-printen-in-kieldrecht)
+- [Parent page: 3D printing in Beveren-Kruibeke-Zwijndrecht](/en/3d-printen-in-beveren-kruibeke-zwijndrecht)
 
 ## Spotlight near Kallo
 - Haven en logistiek: fixtures and housings for teams around Kallo centrum.

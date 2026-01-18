@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Stekene](/3d-printen-in-stekene)
-- [3D printen in Kemzeke](/3d-printen-in-kemzeke)
-- [3D printen in Houtem (Stekene)](/3d-printen-in-houtem-stekene)
+- [Buurpagina: 3D printen in Stekene](/3d-printen-in-stekene)
+- [Buurpagina: 3D printen in Kemzeke](/3d-printen-in-kemzeke)
+- [Buurpagina: 3D printen in Houtem (Stekene)](/3d-printen-in-houtem-stekene)
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Klein-Sinaai centrum.
 - Vaak gevraagd: 3D print service Klein-Sinaai; we adviseren materiaal en afwerking.

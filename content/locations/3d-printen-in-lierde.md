@@ -130,7 +130,10 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Deftinge](/3d-printen-in-deftinge)
+- [Hoofdpagina: 3D printen in Hemelveerdegem](/3d-printen-in-hemelveerdegem)
+- [Hoofdpagina: 3D printen in Sint-Maria-Lierde](/3d-printen-in-sint-maria-lierde)
+
 ## Lokale spotlight
 - Lokale teams in Lierde: PLA/PETG onderdelen afgestemd op projecten rond Lierde.
 - Vaak gevraagd: 3D print service lierde; we adviseren materiaal en afwerking.

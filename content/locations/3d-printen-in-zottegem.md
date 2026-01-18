@@ -194,6 +194,7 @@ Met deze FAQ wordt duidelijk hoe toegankelijk, flexibel en voordelig **3D printe
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Zottegem: PLA/PETG onderdelen afgestemd op projecten rond Zottegem.
 - Vaak gevraagd: 3D print service zottegem; we adviseren materiaal en afwerking.

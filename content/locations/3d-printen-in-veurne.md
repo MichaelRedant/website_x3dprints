@@ -118,6 +118,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Toerisme en musea rond Grote Markt en Vauban: kleine reeksen met vaste settings rond Grote Markt en Vaubanvesten.
 - Vaak gevraagd: 3D print service Veurne; we adviseren materiaal en afwerking.

@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Elsege
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Wortegem-Petegem](/en/3d-printen-in-wortegem-petegem)
-- [3D printing in Wortegem](/en/3d-printen-in-wortegem)
-- [3D printing in Petegem-aan-de-Schelde](/en/3d-printen-in-petegem-aan-de-schelde)
+- [Nearby: 3D printing in Wortegem-Petegem](/en/3d-printen-in-wortegem-petegem)
+- [Nearby: 3D printing in Wortegem](/en/3d-printen-in-wortegem)
+- [Nearby: 3D printing in Petegem-aan-de-Schelde](/en/3d-printen-in-petegem-aan-de-schelde)
+- [Nearby: 3D printing in Moregem](/en/3d-printen-in-moregem)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near Elsegem centrum.

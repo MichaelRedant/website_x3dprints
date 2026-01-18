@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Serska
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Wichelen](/en/3d-printen-in-wichelen)
-- [3D printing in Schellebelle](/en/3d-printen-in-schellebelle)
-- [3D printing in Wetteren](/en/3d-printen-in-wetteren)
+- [Nearby: 3D printing in Wichelen](/en/3d-printen-in-wichelen)
+- [Nearby: 3D printing in Schellebelle](/en/3d-printen-in-schellebelle)
+- [Nearby: 3D printing in Wetteren](/en/3d-printen-in-wetteren)
 
 ## Spotlight near Serskamp
 - Lokale makers en ontwerpers: fixtures and housings for teams around Serskamp centrum.

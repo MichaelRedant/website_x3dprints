@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Kalken
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Laarne](/en/3d-printen-in-laarne)
-- [3D printing in Wetteren](/en/3d-printen-in-wetteren)
-- [3D printing in Destelbergen](/en/3d-printen-in-destelbergen)
+- [Nearby: 3D printing in Laarne](/en/3d-printen-in-laarne)
+- [Nearby: 3D printing in Wetteren](/en/3d-printen-in-wetteren)
+- [Nearby: 3D printing in Destelbergen](/en/3d-printen-in-destelbergen)
 
 ## Spotlight near Kalken
 - Lokale makers en techniekers: fixtures and housings for teams around Kalken centrum.

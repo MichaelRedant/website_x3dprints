@@ -118,7 +118,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Walem*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Parent page: 3D printing in Mechelen](/en/3d-printen-in-mechelen)
 
 ## Spotlight near Walem
 - Local teams in Walem: fixtures and housings for teams around Walem.

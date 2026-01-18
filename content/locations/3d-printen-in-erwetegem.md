@@ -192,6 +192,7 @@ Of je nu een student, ondernemer of hobbyist bent, **3D printen in Erwetegem** b
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Erwetegem
 - Lokale teams in Erwetegem: behuizingen en pasmallen voor teams in Erwetegem.
 - Terugkerende order: 3D print service erwetegem; we bewaren je instellingen.

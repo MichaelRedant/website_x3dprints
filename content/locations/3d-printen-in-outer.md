@@ -133,6 +133,7 @@ Wil je ervaren hoe **3D printen in Outer** jouw project vooruithelpt? Vraag vand
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Outer: kleine reeksen met vaste settings rond Outer.
 - Vaak gevraagd: 3D print service Outer; we adviseren materiaal en afwerking.

@@ -75,6 +75,7 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Wulveringem
 - Cultureel erfgoed en musea rond Beauvoorde: behuizingen en pasmallen voor teams in Wulveringem dorpskern.
 - Terugkerende order: 3D print service Wulveringem; we bewaren je instellingen.

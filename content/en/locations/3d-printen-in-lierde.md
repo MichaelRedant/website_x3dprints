@@ -118,7 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Lierde
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Parent page: 3D printing in Deftinge](/en/3d-printen-in-deftinge)
+- [Parent page: 3D printing in Hemelveerdegem](/en/3d-printen-in-hemelveerdegem)
+- [Parent page: 3D printing in Sint-Maria-Lierde](/en/3d-printen-in-sint-maria-lierde)
 
 ## Local spotlight
 - Local teams in Lierde: PLA/PETG parts tuned for projects near Lierde.

@@ -118,8 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Dender
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Iddergem](/en/3d-printen-in-iddergem)
-- [3D printing in Welle](/en/3d-printen-in-welle)
+- [Nearby: 3D printing in Iddergem](/en/3d-printen-in-iddergem)
+- [Nearby: 3D printing in Welle](/en/3d-printen-in-welle)
+- [Parent page: 3D printing in Aalst](/en/3d-printen-in-aalst)
 
 ## Local spotlight
 - Lokale KMO's en zelfstandigen: PLA/PETG parts tuned for projects near Denderleeuw centrum.

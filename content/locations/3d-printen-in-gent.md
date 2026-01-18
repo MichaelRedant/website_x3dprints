@@ -147,9 +147,11 @@ Benieuwd hoe **3D printen in Gent** uw project kan versnellen of uw idee kan ver
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Zwijnaarde](/3d-printen-in-zwijnaarde)
-- [3D printen in Destelbergen](/3d-printen-in-destelbergen)
-- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [Buurpagina: 3D printen in Zwijnaarde](/3d-printen-in-zwijnaarde)
+- [Buurpagina: 3D printen in Destelbergen](/3d-printen-in-destelbergen)
+- [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [Buurpagina: 3D printen in Drongen](/3d-printen-in-drongen)
+
 ## Klantenspotlight
 - Prototyping voor start-ups (Tech Lane Zwijnaarde): kleine reeksen met vaste settings rond Gent centrum.
 - Vaak gevraagd: 3D print service gent; we adviseren materiaal en afwerking.

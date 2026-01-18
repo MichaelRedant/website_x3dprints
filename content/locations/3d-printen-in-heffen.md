@@ -80,6 +80,7 @@ Upload je bestand via [contact](/contact) en noteer materiaal en deadline. We be
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Heffen: PLA/PETG onderdelen afgestemd op projecten rond Heffen.
 - Vaak gevraagd: 3D print service Heffen; we adviseren materiaal en afwerking.

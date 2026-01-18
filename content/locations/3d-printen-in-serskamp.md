@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Wichelen](/3d-printen-in-wichelen)
-- [3D printen in Schellebelle](/3d-printen-in-schellebelle)
-- [3D printen in Wetteren](/3d-printen-in-wetteren)
+- [Buurpagina: 3D printen in Wichelen](/3d-printen-in-wichelen)
+- [Buurpagina: 3D printen in Schellebelle](/3d-printen-in-schellebelle)
+- [Buurpagina: 3D printen in Wetteren](/3d-printen-in-wetteren)
+
 ## Spotlight rond Serskamp
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Serskamp centrum.
 - Terugkerende order: 3D print service Serskamp; we bewaren je instellingen.

@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Gavere
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Semmerzake](/en/3d-printen-in-semmerzake)
-- [3D printing in Vurste](/en/3d-printen-in-vurste)
-- [3D printing in Baaigem](/en/3d-printen-in-baaigem)
+- [Nearby: 3D printing in Semmerzake](/en/3d-printen-in-semmerzake)
+- [Nearby: 3D printing in Vurste](/en/3d-printen-in-vurste)
+- [Nearby: 3D printing in Baaigem](/en/3d-printen-in-baaigem)
+- [Nearby: 3D printing in Dikkelvenne](/en/3d-printen-in-dikkelvenne)
 
 ## Customer spotlight
 - KMO's en zelfstandigen in de Scheldevallei: small batches with consistent settings near Gavere centrum.

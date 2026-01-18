@@ -122,9 +122,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Kieldrecht](/3d-printen-in-kieldrecht)
-- [3D printen in Doel](/3d-printen-in-doel)
-- [3D printen in Kallo](/3d-printen-in-kallo)
+- [Buurpagina: 3D printen in Kieldrecht](/3d-printen-in-kieldrecht)
+- [Buurpagina: 3D printen in Doel](/3d-printen-in-doel)
+- [Buurpagina: 3D printen in Kallo](/3d-printen-in-kallo)
+- [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
 ## Klantenspotlight
 - Haven en logistiek: kleine reeksen met vaste settings rond Verrebroek centrum.
 - Vaak gevraagd: 3D print service Verrebroek; we adviseren materiaal en afwerking.

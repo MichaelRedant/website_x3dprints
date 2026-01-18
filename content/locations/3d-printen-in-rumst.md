@@ -105,6 +105,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Rumst: kleine reeksen met vaste settings rond Rumst.
 - Vaak gevraagd: 3D print service Rumst; we adviseren materiaal en afwerking.

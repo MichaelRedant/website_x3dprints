@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Dender
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Lebbeke](/en/3d-printen-in-lebbeke)
-- [3D printing in Wieze](/en/3d-printen-in-wieze)
-- [3D printing in Dendermonde](/en/3d-printen-in-dendermonde)
+- [Nearby: 3D printing in Lebbeke](/en/3d-printen-in-lebbeke)
+- [Nearby: 3D printing in Wieze](/en/3d-printen-in-wieze)
+- [Nearby: 3D printing in Dendermonde](/en/3d-printen-in-dendermonde)
 
 ## Local spotlight
 - Lokale makers en techniekers: PLA/PETG parts tuned for projects near Denderbelle centrum.

@@ -78,6 +78,7 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Viane
 - Lokale teams in Viane: behuizingen en pasmallen voor teams in Viane.
 - Terugkerende order: 3D print service Viane; we bewaren je instellingen.

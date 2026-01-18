@@ -136,7 +136,8 @@ Benieuwd hoe **3D printen in Drongen** jouw idee versterkt? Vraag een **gratis o
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Drongen: kleine reeksen met vaste settings rond Drongen.
 - Vaak gevraagd: 3D print service drongen; we adviseren materiaal en afwerking.

@@ -81,6 +81,7 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en aan
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Merksem
 - Retail/props Bredabaan: behuizingen en pasmallen voor teams in Merksem centrum.
 - Terugkerende order: 3D print service Merksem; we bewaren je instellingen.

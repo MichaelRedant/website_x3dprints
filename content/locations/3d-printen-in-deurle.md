@@ -66,6 +66,7 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Deurle (Sint-Martens-Latem): PLA/PETG onderdelen afgestemd op projecten rond Deurle (Sint-Martens-Latem).
 - Vaak gevraagd: 3D print service Deurle; we adviseren materiaal en afwerking.

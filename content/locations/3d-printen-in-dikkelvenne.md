@@ -125,9 +125,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gavere](/3d-printen-in-gavere)
-- [3D printen in Baaigem](/3d-printen-in-baaigem)
-- [3D printen in Vurste](/3d-printen-in-vurste)
+- [Buurpagina: 3D printen in Gavere](/3d-printen-in-gavere)
+- [Buurpagina: 3D printen in Baaigem](/3d-printen-in-baaigem)
+- [Buurpagina: 3D printen in Vurste](/3d-printen-in-vurste)
+- [Hoofdpagina: 3D printen in Semmerzake](/3d-printen-in-semmerzake)
+
 ## Spotlight rond Dikkelvenne
 - KMO's en zelfstandigen: behuizingen en pasmallen voor teams in Dikkelvenne centrum.
 - Terugkerende order: 3D print service Dikkelvenne; we bewaren je instellingen.

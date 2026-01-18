@@ -118,7 +118,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Borsbe
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Deurne](/en/3d-printen-in-deurne)
+- [Nearby: 3D printing in Deurne](/en/3d-printen-in-deurne)
 
 ## Customer spotlight
 - Luchtvaart/lucht-hubs: small batches with consistent settings near Borsbeek centrum.

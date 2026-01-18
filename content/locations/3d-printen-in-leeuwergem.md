@@ -135,6 +135,7 @@ Start vandaag met **3D printen in Leeuwergem** en vraag een **gratis offerte** a
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Leeuwergem
 - Lokale teams in Leeuwergem: behuizingen en pasmallen voor teams in Leeuwergem.
 - Terugkerende order: 3D print service leeuwergem; we bewaren je instellingen.

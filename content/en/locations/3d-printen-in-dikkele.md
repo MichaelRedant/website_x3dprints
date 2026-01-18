@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Dikkel
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Zwalm](/en/3d-printen-in-zwalm)
-- [3D printing in Nederzwalm-Hermelgem](/en/3d-printen-in-nederzwalm-hermelgem)
-- [3D printing in Munkzwalm](/en/3d-printen-in-munkzwalm)
+- [Nearby: 3D printing in Zwalm](/en/3d-printen-in-zwalm)
+- [Nearby: 3D printing in Nederzwalm-Hermelgem](/en/3d-printen-in-nederzwalm-hermelgem)
+- [Nearby: 3D printing in Munkzwalm](/en/3d-printen-in-munkzwalm)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near Dikkele centrum.

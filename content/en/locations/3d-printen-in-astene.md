@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Astene
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Zulte](/en/3d-printen-in-zulte)
-- [3D printing in Machelen (Zulte)](/en/3d-printen-in-machelen-zulte)
-- [3D printing in Olsene](/en/3d-printen-in-olsene)
+- [Nearby: 3D printing in Zulte](/en/3d-printen-in-zulte)
+- [Nearby: 3D printing in Machelen (Zulte)](/en/3d-printen-in-machelen-zulte)
+- [Nearby: 3D printing in Olsene](/en/3d-printen-in-olsene)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Astene centrum.

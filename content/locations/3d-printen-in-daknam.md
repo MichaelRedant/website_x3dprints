@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Lokeren](/3d-printen-in-lokeren)
-- [3D printen in Eksaarde](/3d-printen-in-eksaarde)
-- [3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
+- [Buurpagina: 3D printen in Lokeren](/3d-printen-in-lokeren)
+- [Buurpagina: 3D printen in Eksaarde](/3d-printen-in-eksaarde)
+- [Buurpagina: 3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
+
 ## Lokale spotlight
 - Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Daknam centrum.
 - Vaak gevraagd: 3D print service Daknam; we adviseren materiaal en afwerking.

@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Temse](/3d-printen-in-temse)
-- [3D printen in Tielrode](/3d-printen-in-tielrode)
-- [3D printen in Steendorp](/3d-printen-in-steendorp)
+- [Buurpagina: 3D printen in Temse](/3d-printen-in-temse)
+- [Buurpagina: 3D printen in Tielrode](/3d-printen-in-tielrode)
+- [Buurpagina: 3D printen in Steendorp](/3d-printen-in-steendorp)
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Elversele centrum.
 - Vaak gevraagd: 3D print service Elversele; we adviseren materiaal en afwerking.

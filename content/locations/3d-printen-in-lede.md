@@ -131,7 +131,11 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Oordegem](/3d-printen-in-oordegem)
+- [Hoofdpagina: 3D printen in Smetlede](/3d-printen-in-smetlede)
+- [Hoofdpagina: 3D printen in Impe](/3d-printen-in-impe)
+- [Hoofdpagina: 3D printen in Wanzele](/3d-printen-in-wanzele)
+
 ## Lokale spotlight
 - Lokale teams in Lede: PLA/PETG onderdelen afgestemd op projecten rond Lede.
 - Vaak gevraagd: 3D print service lede; we adviseren materiaal en afwerking.

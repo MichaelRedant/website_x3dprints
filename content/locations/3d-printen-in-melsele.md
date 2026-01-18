@@ -121,9 +121,11 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Beveren](/3d-printen-in-beveren)
-- [3D printen in Haasdonk](/3d-printen-in-haasdonk)
-- [3D printen in Kallo](/3d-printen-in-kallo)
+- [Buurpagina: 3D printen in Beveren](/3d-printen-in-beveren)
+- [Buurpagina: 3D printen in Haasdonk](/3d-printen-in-haasdonk)
+- [Buurpagina: 3D printen in Kallo](/3d-printen-in-kallo)
+- [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
 ## Lokale spotlight
 - Lokale ondernemers en makers: PLA/PETG onderdelen afgestemd op projecten rond Melsele centrum.
 - Vaak gevraagd: 3D print service Melsele; we adviseren materiaal en afwerking.

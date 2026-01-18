@@ -137,6 +137,7 @@ Benieuwd hoe **3D printen in Sint-Denijs-Westrem** jouw idee versterkt? Vraag ee
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Lokale teams in Sint-Denijs-Westrem: kleine reeksen met vaste settings rond Sint-Denijs-Westrem.
 - Vaak gevraagd: 3D print service sint-denijs-westrem; we adviseren materiaal en afwerking.

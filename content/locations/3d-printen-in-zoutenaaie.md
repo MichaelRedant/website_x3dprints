@@ -75,6 +75,7 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 
 ## Gerelateerde buurtpagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Klantenspotlight
 - Landbouw en agro-tech langs de Handzamevaart: kleine reeksen met vaste settings rond Zoutenaaie dorpskern.
 - Vaak gevraagd: 3D print service Zoutenaaie; we adviseren materiaal en afwerking.

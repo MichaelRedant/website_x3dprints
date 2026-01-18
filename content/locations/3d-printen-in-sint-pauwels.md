@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
-- [3D printen in De Klinge](/3d-printen-in-de-klinge)
-- [3D printen in Meerdonk](/3d-printen-in-meerdonk)
+- [Buurpagina: 3D printen in Sint-Gillis-Waas](/3d-printen-in-sint-gillis-waas)
+- [Buurpagina: 3D printen in De Klinge](/3d-printen-in-de-klinge)
+- [Buurpagina: 3D printen in Meerdonk](/3d-printen-in-meerdonk)
+
 ## Spotlight rond Sint-Pauwels
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Sint-Pauwels centrum.
 - Terugkerende order: 3D print service Sint-Pauwels; we bewaren je instellingen.

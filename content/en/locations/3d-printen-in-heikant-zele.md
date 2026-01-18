@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Heikan
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Zele](/en/3d-printen-in-zele)
-- [3D printing in Hamme](/en/3d-printen-in-hamme)
-- [3D printing in Dendermonde](/en/3d-printen-in-dendermonde)
+- [Nearby: 3D printing in Zele](/en/3d-printen-in-zele)
+- [Nearby: 3D printing in Hamme](/en/3d-printen-in-hamme)
+- [Nearby: 3D printing in Dendermonde](/en/3d-printen-in-dendermonde)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Heikant (Zele) centrum.

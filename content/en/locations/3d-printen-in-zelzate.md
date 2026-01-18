@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Zelzat
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Evergem](/en/3d-printen-in-evergem)
-- [3D printing in Wachtebeke](/en/3d-printen-in-wachtebeke)
-- [3D printing in Assenede](/en/3d-printen-in-assenede)
+- [Nearby: 3D printing in Evergem](/en/3d-printen-in-evergem)
+- [Nearby: 3D printing in Wachtebeke](/en/3d-printen-in-wachtebeke)
+- [Nearby: 3D printing in Assenede](/en/3d-printen-in-assenede)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near Zelzate centrum.

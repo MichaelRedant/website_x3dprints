@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Deftin
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Lierde](/en/3d-printen-in-lierde)
-- [3D printing in Hemelveerdegem](/en/3d-printen-in-hemelveerdegem)
-- [3D printing in Sint-Maria-Lierde](/en/3d-printen-in-sint-maria-lierde)
+- [Nearby: 3D printing in Lierde](/en/3d-printen-in-lierde)
+- [Nearby: 3D printing in Hemelveerdegem](/en/3d-printen-in-hemelveerdegem)
+- [Nearby: 3D printing in Sint-Maria-Lierde](/en/3d-printen-in-sint-maria-lierde)
 
 ## Local spotlight
 - Lokale makers en techniekers: PLA/PETG parts tuned for projects near Deftinge centrum.

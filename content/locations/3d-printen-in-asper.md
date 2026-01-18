@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gavere](/3d-printen-in-gavere)
-- [3D printen in Semmerzake](/3d-printen-in-semmerzake)
-- [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+- [Buurpagina: 3D printen in Gavere](/3d-printen-in-gavere)
+- [Buurpagina: 3D printen in Semmerzake](/3d-printen-in-semmerzake)
+- [Buurpagina: 3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+
 ## Lokale spotlight
 - Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Asper centrum.
 - Vaak gevraagd: 3D print service Asper; we adviseren materiaal en afwerking.

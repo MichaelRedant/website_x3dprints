@@ -122,8 +122,9 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Denderleeuw](/3d-printen-in-denderleeuw)
-- [3D printen in Iddergem](/3d-printen-in-iddergem)
+- [Buurpagina: 3D printen in Denderleeuw](/3d-printen-in-denderleeuw)
+- [Buurpagina: 3D printen in Iddergem](/3d-printen-in-iddergem)
+
 ## Spotlight rond Welle
 - KMO's en zelfstandigen: behuizingen en pasmallen voor teams in Welle centrum.
 - Terugkerende order: 3D print service Welle; we bewaren je instellingen.

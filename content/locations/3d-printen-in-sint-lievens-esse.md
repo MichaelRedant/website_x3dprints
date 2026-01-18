@@ -135,6 +135,7 @@ Wil je je idee tastbaar maken? Vraag vandaag nog een **offerte voor 3D printen i
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Sint-Lievens-Esse
 - Lokale teams in Sint-Lievens-Esse: behuizingen en pasmallen voor teams in Sint-Lievens-Esse.
 - Terugkerende order: 3D print service Sint-Lievens-Esse; we bewaren je instellingen.

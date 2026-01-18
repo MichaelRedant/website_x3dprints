@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Bassev
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Assenede](/en/3d-printen-in-assenede)
-- [3D printing in Boekhoute](/en/3d-printen-in-boekhoute)
-- [3D printing in Oosteeklo](/en/3d-printen-in-oosteeklo)
+- [Nearby: 3D printing in Assenede](/en/3d-printen-in-assenede)
+- [Nearby: 3D printing in Boekhoute](/en/3d-printen-in-boekhoute)
+- [Nearby: 3D printing in Oosteeklo](/en/3d-printen-in-oosteeklo)
 
 ## Customer spotlight
 - Lokale makers en ondernemers: small batches with consistent settings near Bassevelde centrum.

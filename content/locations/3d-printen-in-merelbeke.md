@@ -130,7 +130,11 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Nazareth-De Pinte](/3d-printen-in-nazareth-de-pinte)
+- [Hoofdpagina: 3D printen in Nazareth](/3d-printen-in-nazareth)
+- [Hoofdpagina: 3D printen in De Pinte](/3d-printen-in-de-pinte)
+- [Hoofdpagina: 3D printen in Eke](/3d-printen-in-eke)
+
 ## Klantenspotlight
 - Lokale teams in Merelbeke: kleine reeksen met vaste settings rond Merelbeke.
 - Vaak gevraagd: 3D print service merelbeke; we adviseren materiaal en afwerking.

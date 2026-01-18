@@ -131,7 +131,8 @@ Benieuwd hoe **3D printen in Baasrode** jouw idee versterkt? Vraag een **gratis 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Dendermonde](/3d-printen-in-dendermonde)
+
 ## Klantenspotlight
 - Lokale teams in Baasrode: kleine reeksen met vaste settings rond Baasrode.
 - Vaak gevraagd: 3D print service baasrode; we adviseren materiaal en afwerking.

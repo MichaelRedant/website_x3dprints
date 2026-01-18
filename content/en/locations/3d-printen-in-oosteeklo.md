@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Oostee
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Assenede](/en/3d-printen-in-assenede)
-- [3D printing in Bassevelde](/en/3d-printen-in-bassevelde)
-- [3D printing in Boekhoute](/en/3d-printen-in-boekhoute)
+- [Nearby: 3D printing in Assenede](/en/3d-printen-in-assenede)
+- [Nearby: 3D printing in Bassevelde](/en/3d-printen-in-bassevelde)
+- [Nearby: 3D printing in Boekhoute](/en/3d-printen-in-boekhoute)
 
 ## Spotlight near Oosteeklo
 - Lokale ondernemers en techniekers: fixtures and housings for teams around Oosteeklo centrum.

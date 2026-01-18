@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Hemelv
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Lierde](/en/3d-printen-in-lierde)
-- [3D printing in Deftinge](/en/3d-printen-in-deftinge)
-- [3D printing in Sint-Maria-Lierde](/en/3d-printen-in-sint-maria-lierde)
+- [Nearby: 3D printing in Lierde](/en/3d-printen-in-lierde)
+- [Nearby: 3D printing in Deftinge](/en/3d-printen-in-deftinge)
+- [Nearby: 3D printing in Sint-Maria-Lierde](/en/3d-printen-in-sint-maria-lierde)
 
 ## Local spotlight
 - Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near Hemelveerdegem centrum.

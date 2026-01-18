@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Lieveg
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Lovendegem](/en/3d-printen-in-lovendegem)
-- [3D printing in Waarschoot](/en/3d-printen-in-waarschoot)
-- [3D printing in Zomergem](/en/3d-printen-in-zomergem)
+- [Nearby: 3D printing in Lovendegem](/en/3d-printen-in-lovendegem)
+- [Nearby: 3D printing in Waarschoot](/en/3d-printen-in-waarschoot)
+- [Nearby: 3D printing in Zomergem](/en/3d-printen-in-zomergem)
+- [Nearby: 3D printing in Oostwinkel](/en/3d-printen-in-oostwinkel)
 
 ## Spotlight near Lievegem
 - Lokale makers en ontwerpers: fixtures and housings for teams around Lievegem centrum.

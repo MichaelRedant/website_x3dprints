@@ -241,6 +241,7 @@ Klaar om te starten in Herzele? Stuur je **STL/STEP** via de [contactpagina](/co
 
 ## Nabijgelegen pagina's
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Lokale spotlight
 - Lokale teams in Herzele: PLA/PETG onderdelen afgestemd op projecten rond Herzele.
 - Vaak gevraagd: 3D print service Herzele; we adviseren materiaal en afwerking.

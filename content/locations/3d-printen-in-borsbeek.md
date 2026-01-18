@@ -77,7 +77,8 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld aantallen en mat
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Deurne](/3d-printen-in-deurne)
+- [Buurpagina: 3D printen in Deurne](/3d-printen-in-deurne)
+
 ## Klantenspotlight
 - Luchtvaart/lucht-hubs: kleine reeksen met vaste settings rond Borsbeek centrum.
 - Vaak gevraagd: 3D print service Borsbeek; we adviseren materiaal en afwerking.

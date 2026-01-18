@@ -125,9 +125,10 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Sombeke](/3d-printen-in-sombeke)
-- [3D printen in Hamme](/3d-printen-in-hamme)
-- [3D printen in Lokeren](/3d-printen-in-lokeren)
+- [Buurpagina: 3D printen in Sombeke](/3d-printen-in-sombeke)
+- [Buurpagina: 3D printen in Hamme](/3d-printen-in-hamme)
+- [Buurpagina: 3D printen in Lokeren](/3d-printen-in-lokeren)
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Waasmunster centrum.
 - Vaak gevraagd: 3D print service Waasmunster; we adviseren materiaal en afwerking.

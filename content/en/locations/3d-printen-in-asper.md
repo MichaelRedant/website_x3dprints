@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Asper*
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Gavere](/en/3d-printen-in-gavere)
-- [3D printing in Semmerzake](/en/3d-printen-in-semmerzake)
-- [3D printing in Dikkelvenne](/en/3d-printen-in-dikkelvenne)
+- [Nearby: 3D printing in Gavere](/en/3d-printen-in-gavere)
+- [Nearby: 3D printing in Semmerzake](/en/3d-printen-in-semmerzake)
+- [Nearby: 3D printing in Dikkelvenne](/en/3d-printen-in-dikkelvenne)
 
 ## Local spotlight
 - Lokale makers en techniekers: PLA/PETG parts tuned for projects near Asper centrum.

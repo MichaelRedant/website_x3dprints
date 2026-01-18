@@ -118,8 +118,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Bentil
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Kaprijke](/en/3d-printen-in-kaprijke)
-- [3D printing in Lembeke](/en/3d-printen-in-lembeke)
+- [Nearby: 3D printing in Kaprijke](/en/3d-printen-in-kaprijke)
+- [Nearby: 3D printing in Lembeke](/en/3d-printen-in-lembeke)
 
 ## Local spotlight
 - KMO's en zelfstandigen: PLA/PETG parts tuned for projects near Bentille kern.

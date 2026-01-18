@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Louise
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ronse](/en/3d-printen-in-ronse)
-- [3D printing in De Klijpe](/en/3d-printen-in-de-klijpe)
-- [3D printing in Maarkedal](/en/3d-printen-in-maarkedal)
+- [Nearby: 3D printing in Ronse](/en/3d-printen-in-ronse)
+- [Nearby: 3D printing in De Klijpe](/en/3d-printen-in-de-klijpe)
+- [Nearby: 3D printing in Maarkedal](/en/3d-printen-in-maarkedal)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Louise-Marie centrum.

@@ -118,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Kemzek
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Stekene](/en/3d-printen-in-stekene)
-- [3D printing in Klein-Sinaai](/en/3d-printen-in-klein-sinaai)
-- [3D printing in Houtem (Stekene)](/en/3d-printen-in-houtem-stekene)
+- [Nearby: 3D printing in Stekene](/en/3d-printen-in-stekene)
+- [Nearby: 3D printing in Klein-Sinaai](/en/3d-printen-in-klein-sinaai)
+- [Nearby: 3D printing in Houtem (Stekene)](/en/3d-printen-in-houtem-stekene)
 
 ## Customer spotlight
 - Lokale makers en ontwerpers: small batches with consistent settings near Kemzeke centrum.

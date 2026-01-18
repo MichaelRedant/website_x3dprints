@@ -132,7 +132,8 @@ Benieuwd hoe **3D printen in Hofstade** jouw idee versterkt? Vraag een **gratis 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Aalst](/3d-printen-in-aalst)
+
 ## Spotlight rond Hofstade
 - Lokale teams in Hofstade: behuizingen en pasmallen voor teams in Hofstade.
 - Terugkerende order: 3D print service hofstade; we bewaren je instellingen.

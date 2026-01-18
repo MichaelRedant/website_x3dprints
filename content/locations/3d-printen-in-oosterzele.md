@@ -80,6 +80,7 @@ Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D
 
 ## Dichtbij gelegen locaties
 - [3D printen in Gent](/3d-printen-in-gent)
+
 ## Spotlight rond Oosterzele
 - Lokale teams in Oosterzele: behuizingen en pasmallen voor teams in Oosterzele.
 - Terugkerende order: 3D print service Oosterzele; we bewaren je instellingen.

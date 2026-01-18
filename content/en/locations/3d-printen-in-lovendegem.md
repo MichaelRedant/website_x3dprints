@@ -118,9 +118,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Lovend
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Lievegem](/en/3d-printen-in-lievegem)
-- [3D printing in Vinderhoute](/en/3d-printen-in-vinderhoute)
-- [3D printing in Zomergem](/en/3d-printen-in-zomergem)
+- [Nearby: 3D printing in Lievegem](/en/3d-printen-in-lievegem)
+- [Nearby: 3D printing in Vinderhoute](/en/3d-printen-in-vinderhoute)
+- [Nearby: 3D printing in Zomergem](/en/3d-printen-in-zomergem)
+- [Parent page: 3D printing in Ronsele](/en/3d-printen-in-ronsele)
 
 ## Spotlight near Lovendegem
 - Lokale makers en techniekers: fixtures and housings for teams around Lovendegem centrum.
