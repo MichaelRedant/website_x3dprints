@@ -17,15 +17,18 @@ export const PRINT_TIME_HOURS_PER_TIER: Record<Tier, number> = {
 };
 
 export type Quality = "Standaard" | "Fijn" | "Ultra";
-export const QUALITY_MULTIPLIER: Record<Quality, number> = {
+export const QUALITY_TIME_MULTIPLIER: Record<Quality, number> = {
   Standaard: 1,
   Fijn: 1.15,
   Ultra: 1.25,
 };
 
+// Backwards compat: oude naam blijft beschikbaar
+export const QUALITY_MULTIPLIER = QUALITY_TIME_MULTIPLIER;
+
 export type DeliveryType = "afhaling" | "post" | "24h" | "48h";
 
-// Filamentprijzen (�'�/kg) op basis van aangeleverde tabel
+// Filamentprijzen (EUR/kg) op basis van aangeleverde tabel
 const BASE_FILAMENT_PRICE_EUR_PER_KG: Record<MaterialKey, number> = {
   PLA_BASIC: 23.38,
   PLA_BASIC_GRADIENT: 33.54,
@@ -45,6 +48,7 @@ const BASE_FILAMENT_PRICE_EUR_PER_KG: Record<MaterialKey, number> = {
   PETG: 23.38,
   PC: 42.99,
   PC_FR: 56.99,
+  PC: 42.99,
   TPU: 25.5,
 };
 
@@ -54,10 +58,10 @@ export const DRYING_FILAMENTS = new Set<MaterialKey>(["TPU", "PLA_WOOD", "PETG",
 export const DRYING_FIXED_SURCHARGE_EUR = 5;
 export const DRYING_COST_PER_PRINT_EUR = 0.05;
 
-export const DEFAULT_ELECTRICITY_COST_EUR_PER_KWH = 0.12;
+export const DEFAULT_ELECTRICITY_COST_EUR_PER_KWH = 0.23;
 export const DEFAULT_PRINTER_POWER_KW = 1;
 export const DEFAULT_MATERIAL_MARKUP = 0.2; // +20%
-export const DEFAULT_PROFIT_FACTOR = 3; // 200% marge → basiskost × 3
+export const DEFAULT_PROFIT_FACTOR = 3; // 200% marge => basiskost * 3
 export const DEFAULT_DESIGN_RATE_EUR_PER_HOUR = 40;
 
 export type PriceInput = {
@@ -79,15 +83,22 @@ export type PriceInput = {
 
 export type PriceBreakdown = {
   input: PriceInput;
+  unitFilamentCostEur: number;
   filamentRawEur: number;
+  unitFilamentWithMarkupEur: number;
   filamentWithMarkupEur: number;
+  unitElectricityEur: number;
   electricityEur: number;
   dryingCostEur: number;
+  unitBaseCostEur: number;
   baseCostPerPrintEur: number;
+  unitSellPriceEur: number;
   costWithMarginPerPrintEur: number;
+  printsSubtotalEur: number;
   designCostEur: number;
   deliveryCostEur: number;
   extraAllowancesEur: number;
+  subtotalBeforeDeliveryEur: number;
   subtotalBeforeDiscountEur: number;
   discountValueEur: number;
   totalEur: number;
@@ -104,10 +115,7 @@ export function calculateDeliveryCost(
   return 0;
 }
 
-export function calculateDryingCost(
-  material: MaterialKey,
-  quantity: number,
-): number {
+export function calculateDryingCost(material: MaterialKey, quantity: number): number {
   if (!DRYING_FILAMENTS.has(material)) return 0;
   return DRYING_FIXED_SURCHARGE_EUR + DRYING_COST_PER_PRINT_EUR * quantity;
 }
@@ -123,30 +131,30 @@ export function calculatePrintJob(job: PriceInput): PriceBreakdown {
   const electricityCost = job.electricityCostPerKwh ?? DEFAULT_ELECTRICITY_COST_EUR_PER_KWH;
   const printerPower = job.printerPowerKw ?? DEFAULT_PRINTER_POWER_KW;
   const quality = job.quality ?? "Standaard";
-  const qualityMultiplier = QUALITY_MULTIPLIER[quality] ?? 1;
+  const qualityMultiplier = QUALITY_TIME_MULTIPLIER[quality] ?? 1;
 
-  const pricePerKg =
+  const materialPricePerKg =
     BASE_FILAMENT_PRICE_EUR_PER_KG[job.material] ?? BASE_PRICE_FALLBACK_EUR_PER_KG;
-  const filamentRawEur = (job.filamentWeightGrams / 1000) * pricePerKg;
-  const filamentWithMarkupEur = filamentRawEur * (1 + materialMarkup);
+  const unitFilamentCostEur = (job.filamentWeightGrams / 1000) * materialPricePerKg;
+  const unitFilamentWithMarkupEur = unitFilamentCostEur * (1 + materialMarkup);
 
   const effectivePrintHours = job.printingTimeHours * qualityMultiplier;
-  const electricityEur = effectivePrintHours * printerPower * electricityCost;
+  const unitElectricityEur = effectivePrintHours * printerPower * electricityCost;
 
-  const baseCostPerPrintEur = filamentWithMarkupEur + electricityEur;
-  const costWithMarginPerPrintEur = baseCostPerPrintEur * profitFactor;
+  const unitBaseCostEur = unitFilamentWithMarkupEur + unitElectricityEur;
+  const unitSellPriceEur = unitBaseCostEur * profitFactor;
 
-  const totalFilamentWithMarkupEur = costWithMarginPerPrintEur * job.quantity;
+  const printsSubtotalEur = unitSellPriceEur * job.quantity;
   const designCostEur = (job.designHours ?? 0) * designRate;
   const dryingCostEur = calculateDryingCost(job.material, job.quantity);
   const extraAllowancesEur = job.extraAllowancesEur ?? 0;
 
-  const subtotalBeforeDelivery =
-    totalFilamentWithMarkupEur + designCostEur + dryingCostEur + extraAllowancesEur;
+  const subtotalBeforeDeliveryEur =
+    printsSubtotalEur + designCostEur + dryingCostEur + extraAllowancesEur;
   const deliveryType = job.deliveryType ?? "afhaling";
-  const deliveryCostEur = calculateDeliveryCost(deliveryType, subtotalBeforeDelivery);
+  const deliveryCostEur = calculateDeliveryCost(deliveryType, subtotalBeforeDeliveryEur);
 
-  const subtotalBeforeDiscountEur = subtotalBeforeDelivery + deliveryCostEur;
+  const subtotalBeforeDiscountEur = subtotalBeforeDeliveryEur + deliveryCostEur;
   const discountPercent = Math.min(Math.max(job.discountPercent ?? 0, 0), 100);
   const discountValueEur = subtotalBeforeDiscountEur * (discountPercent / 100);
 
@@ -155,15 +163,22 @@ export function calculatePrintJob(job: PriceInput): PriceBreakdown {
 
   return {
     input: job,
-    filamentRawEur: roundTo2(filamentRawEur),
-    filamentWithMarkupEur: roundTo2(filamentWithMarkupEur),
-    electricityEur: roundTo2(electricityEur),
+    unitFilamentCostEur: roundTo2(unitFilamentCostEur),
+    filamentRawEur: roundTo2(unitFilamentCostEur),
+    unitFilamentWithMarkupEur: roundTo2(unitFilamentWithMarkupEur),
+    filamentWithMarkupEur: roundTo2(unitFilamentWithMarkupEur),
+    unitElectricityEur: roundTo2(unitElectricityEur),
+    electricityEur: roundTo2(unitElectricityEur),
     dryingCostEur: roundTo2(dryingCostEur),
-    baseCostPerPrintEur: roundTo2(baseCostPerPrintEur),
-    costWithMarginPerPrintEur: roundTo2(costWithMarginPerPrintEur),
+    unitBaseCostEur: roundTo2(unitBaseCostEur),
+    baseCostPerPrintEur: roundTo2(unitBaseCostEur),
+    unitSellPriceEur: roundTo2(unitSellPriceEur),
+    costWithMarginPerPrintEur: roundTo2(unitSellPriceEur),
+    printsSubtotalEur: roundTo2(printsSubtotalEur),
     designCostEur: roundTo2(designCostEur),
     deliveryCostEur: roundTo2(deliveryCostEur),
     extraAllowancesEur: roundTo2(extraAllowancesEur),
+    subtotalBeforeDeliveryEur: roundTo2(subtotalBeforeDeliveryEur),
     subtotalBeforeDiscountEur: roundTo2(subtotalBeforeDiscountEur),
     discountValueEur: roundTo2(discountValueEur),
     totalEur: roundTo2(totalEur),
@@ -191,4 +206,72 @@ export function calcUnitPrice(
 
 function roundTo2(n: number): number {
   return Math.round(n * 100) / 100;
+}
+
+export type ProductionTimeInput = {
+  quantity: number;
+  itemsPerJob: number;
+  printHoursPerJob: number;
+  setupMinutesPerJob?: number;
+  riskBufferPercent?: number;
+};
+
+export type ProductionTimeEstimate = {
+  jobsCount: number;
+  pureHours: number;
+  setupHours: number;
+  bufferHours: number;
+  totalHours: number;
+  days: number;
+  hours: number;
+  minutes: number;
+};
+
+export function estimateProductionTime(input: ProductionTimeInput): ProductionTimeEstimate {
+  if (input.quantity < 1) throw new Error("Aantal moet minstens 1 zijn.");
+  if (input.itemsPerJob < 1) throw new Error("Items per job moet minstens 1 zijn.");
+  if (input.printHoursPerJob <= 0) throw new Error("Printtijd per job moet > 0 zijn.");
+
+  const jobsCount = Math.ceil(input.quantity / input.itemsPerJob);
+  const setupMinutesPerJob = input.setupMinutesPerJob ?? 15;
+  const riskBufferPercent = input.riskBufferPercent ?? 10;
+
+  const pureHours = input.printHoursPerJob * jobsCount;
+  const setupHours = (setupMinutesPerJob / 60) * jobsCount;
+  const bufferHours = (pureHours + setupHours) * Math.max(riskBufferPercent, 0) * 0.01;
+  const totalHours = pureHours + setupHours + bufferHours;
+
+  const days = Math.floor(totalHours / 24);
+  const remainingHours = totalHours - days * 24;
+  let hours = Math.floor(remainingHours);
+  let minutes = Math.round((remainingHours - hours) * 60);
+
+  if (minutes === 60) {
+    hours += 1;
+    minutes = 0;
+  }
+
+  if (hours === 24) {
+    return {
+      jobsCount,
+      pureHours: roundTo2(pureHours),
+      setupHours: roundTo2(setupHours),
+      bufferHours: roundTo2(bufferHours),
+      totalHours: roundTo2(totalHours),
+      days: days + 1,
+      hours: 0,
+      minutes,
+    };
+  }
+
+  return {
+    jobsCount,
+    pureHours: roundTo2(pureHours),
+    setupHours: roundTo2(setupHours),
+    bufferHours: roundTo2(bufferHours),
+    totalHours: roundTo2(totalHours),
+    days,
+    hours,
+    minutes,
+  };
 }
