@@ -39,8 +39,8 @@
     // "typeRoots": ["./types", "./node_modules/@types"],
     "types": [
       "node",
-      "vitest"
-    ],
+    // Vitest types staan niet in de Next build nodig; uitgesloten om build errors te vermijden.
+  ],
     "incremental": true
   },
   "include": [
@@ -51,6 +51,7 @@
     "types/**/*.d.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "vitest.config.ts"
   ]
 }

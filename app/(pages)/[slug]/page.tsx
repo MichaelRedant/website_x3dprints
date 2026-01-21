@@ -288,7 +288,10 @@ export default async function Page(
     name: keyphrase,
     description: seoDescription,
     inLanguage: "nl-BE",
-    areaServed: [{ "@type": "City", name: loc.city }, { "@type": "State", name: "Oost-Vlaanderen" }],
+    areaServed: [
+      { "@type": "City", name: loc.city },
+      { "@type": "State", name: loc.province ?? SITE.address.region },
+    ],
     provider: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
     url: `https://www.x3dprints.be/${loc.slug}`,
     serviceType: "3D printing",
@@ -319,7 +322,7 @@ export default async function Page(
       postalCode: SITE.address.postalCode,
       addressCountry: SITE.address.country,
     },
-    areaServed: loc.city,
+    areaServed: loc.province ? [loc.city, loc.province] : loc.city,
     sameAs: SITE.sameAs,
   }
 

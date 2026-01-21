@@ -48,7 +48,6 @@ const BASE_FILAMENT_PRICE_EUR_PER_KG: Record<MaterialKey, number> = {
   PETG: 23.38,
   PC: 42.99,
   PC_FR: 56.99,
-  PC: 42.99,
   TPU: 25.5,
 };
 

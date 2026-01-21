@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react"
 import Link from "next/link"
-import { getAllLocationSlugs, getLocationBySlug } from "@/lib/locations"
+import { EN_LOCATION_SLUGS, getAllLocationSlugs, getLocationBySlug } from "@/lib/locations"
 import { AnimatePresence, motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { useLocale } from "./LocaleProvider"
@@ -35,6 +35,35 @@ const COPY = {
   },
 }
 
+const HIGHLIGHT_SLUGS = [
+  // hoofd hubs
+  "3d-printen-in-gent",
+  "3d-printen-in-aalst",
+  "3d-printen-in-antwerpen",
+  "3d-printen-in-leuven",
+  // Vlaams-Brabant clusters
+  "3d-printen-in-vilvoorde",
+  "3d-printen-in-zaventem",
+  "3d-printen-in-machelen",
+  "3d-printen-in-steenokkerzeel",
+  "3d-printen-in-kortenberg",
+  "3d-printen-in-herent",
+  "3d-printen-in-kampenhout",
+  "3d-printen-in-sterrebeek",
+  "3d-printen-in-nossegem",
+  "3d-printen-in-dilbeek",
+  "3d-printen-in-sint-pieters-leeuw",
+  "3d-printen-in-beersel",
+  "3d-printen-in-grimbergen",
+  "3d-printen-in-tervuren",
+  "3d-printen-in-overijse",
+  "3d-printen-in-hoeilaart",
+  "3d-printen-in-rotselaar",
+  "3d-printen-in-haacht",
+  "3d-printen-in-tremelo",
+  "3d-printen-in-keerbergen",
+]
+
 export default function FooterLocationFinder() {
   const { locale } = useLocale()
   const localize = (href: string) => localizeHref(href, locale)
@@ -47,6 +76,22 @@ export default function FooterLocationFinder() {
         .sort((a, b) => a.city.localeCompare(b.city, locale === "en" ? "en" : "nl")),
     [slugs, locale],
   )
+  const highlightLocations = useMemo(() => {
+    const mapped = HIGHLIGHT_SLUGS.map((slug) => {
+      const loc = getLocationBySlug(slug)
+      return loc ? { slug, city: loc.city } : null
+    })
+      .filter((loc): loc is { slug: string; city: string } => Boolean(loc))
+      .filter((loc) => (locale === "en" ? EN_LOCATION_SLUGS.has(loc.slug) : true))
+    const seen = new Set<string>()
+    return [...mapped, ...locations]
+      .filter((loc) => {
+        if (seen.has(loc.slug)) return false
+        seen.add(loc.slug)
+        return true
+      })
+      .slice(0, 24)
+  }, [locations, locale])
 
   const [open, setOpen] = useState(false)
   const [query, setQuery] = useState("")
@@ -131,7 +176,7 @@ export default function FooterLocationFinder() {
                     {copy.quickAccess}
                   </p>
                   <div className="mt-2 flex flex-wrap gap-2">
-                    {locations.slice(0, 12).map((loc) => (
+                    {highlightLocations.map((loc) => (
                       <Link
                         key={loc.slug}
                         href={localize(`/${loc.slug}`)}

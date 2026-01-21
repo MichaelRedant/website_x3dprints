@@ -128,11 +128,21 @@ export function localizeHref(href: string, locale: Locale) {
   const [rawPath, rawQuery] = pathAndQuery.split("?")
   const path = rawPath || "/"
   const params = new URLSearchParams(rawQuery || "")
+  const normalizedPath = normalizePath(path)
+  const slugCandidate =
+    normalizedPath.startsWith("/") && normalizedPath.length > 1
+      ? normalizedPath.slice(1).split("/")[0]
+      : null
+  const hasEnglishLocation = slugCandidate ? EN_LOCATION_SLUGS.has(slugCandidate) : false
 
   if (locale === "en") {
     params.delete("lang")
     if (path.startsWith(EN_PREFIX)) {
       return buildHref(path, params, hash)
+    }
+    if (hasEnglishLocation) {
+      const prefixed = normalizedPath === "/" ? EN_PREFIX : `${EN_PREFIX}${normalizedPath}`
+      return buildHref(prefixed, params, hash)
     }
     if (hasEnglishRoute(path)) {
       const localized = path === "/" ? EN_PREFIX : `${EN_PREFIX}${path}`
