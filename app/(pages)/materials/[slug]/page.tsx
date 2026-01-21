@@ -7,7 +7,12 @@ import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import GlassCard from "@/components/GlassCard"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
-import { materialsByLocale, type MaterialKey, type MaterialInfo } from "@/lib/materials"
+import {
+  MATERIAL_SLUGS,
+  materialsByLocale,
+  type MaterialKey,
+  type MaterialInfo,
+} from "@/lib/materials"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import {
@@ -160,6 +165,33 @@ const DETAIL_COPY_EN = {
   },
 }
 
+const PC_COMPARISON = {
+  nl: {
+    title: "Vergelijking PC vs PC FR",
+    intro: "Kies PC voor hitte/UV en transparantie; kies PC FR wanneer UL94 V-0 vereist is.",
+    otherLabel: { PC: "Bekijk PC FR", PC_FR: "Bekijk PC" },
+    rows: [
+      { label: "Vlamvertragend", PC: "Nee", PC_FR: "Ja (UL94 V-0)" },
+      { label: "Glasovergang", PC: "~110 °C", PC_FR: "~110 °C" },
+      { label: "UV / outdoor", PC: "Ja", PC_FR: "Ja" },
+      { label: "Toepassing", PC: "Machinecovers, outdoor brackets", PC_FR: "Elektronica, rail-kasten, safety critical" },
+      { label: "Prijsindicatie", PC: "€€€", PC_FR: "€€€+" },
+    ],
+  },
+  en: {
+    title: "PC vs PC FR",
+    intro: "Pick PC for heat/UV strength; pick PC FR when UL94 V-0 compliance is needed.",
+    otherLabel: { PC: "View PC FR", PC_FR: "View PC" },
+    rows: [
+      { label: "Flame retardant", PC: "No", PC_FR: "Yes (UL94 V-0)" },
+      { label: "Glass transition", PC: "~110 °C", PC_FR: "~110 °C" },
+      { label: "UV / outdoor", PC: "Yes", PC_FR: "Yes" },
+      { label: "Use case", PC: "Machine covers, outdoor brackets", PC_FR: "Electronics, rail enclosures, safety critical" },
+      { label: "Price indicator", PC: "€€€", PC_FR: "€€€+" },
+    ],
+  },
+} as const
+
 const FILAMENT_FRIDAY_LINKS_NL: Partial<
   Record<
     MaterialKey,
@@ -223,6 +255,11 @@ const FILAMENT_FRIDAY_LINKS_NL: Partial<
     description:
       "Polycarbonaat 3D printen met droge spoelen, gesloten printers en realistische verwachtingen over leadtime.",
     href: "/blog/filament-vrijdag-pc",
+  },
+  PC_FR: {
+    title: "Filament Vrijdag: PC FR (UL94 V-0)",
+    description: "Wanneer PC FR loont tegenover standaard PC: brandnormen, instellingen en leadtime-impact.",
+    href: "/blog/filament-vrijdag-pc-fr",
   },
 }
 
@@ -289,6 +326,11 @@ const FILAMENT_FRIDAY_LINKS_EN: Partial<
     description:
       "Polycarbonate 3D printing with dried spools, enclosed printers and realistic lead time expectations.",
     href: "/blog/filament-vrijdag-pc",
+  },
+  PC_FR: {
+    title: "Filament Friday: PC FR (UL94 V-0)",
+    description: "When PC FR wins over standard PC: flame rating, settings and lead time impact.",
+    href: "/blog/filament-vrijdag-pc-fr",
   },
 }
 
@@ -429,6 +471,11 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
   const contactHref = localize(`/contact?material=${encodeURIComponent(material.name)}`)
   const filamentFridayLinks = isEn ? FILAMENT_FRIDAY_LINKS_EN : FILAMENT_FRIDAY_LINKS_NL
   const filamentFriday = detail.filamentFriday ?? filamentFridayLinks[detail.key]
+  const comparison = detail.key === "PC" || detail.key === "PC_FR" ? PC_COMPARISON[isEn ? "en" : "nl"] : null
+  const otherSlug =
+    detail.key === "PC" ? MATERIAL_SLUGS.PC_FR : detail.key === "PC_FR" ? MATERIAL_SLUGS.PC : null
+  const otherLabel =
+    detail.key === "PC" ? comparison?.otherLabel.PC : detail.key === "PC_FR" ? comparison?.otherLabel.PC_FR : null
 
   const pageUrl = isEn
     ? `https://www.x3dprints.be/en/materials/${detail.slug}`
@@ -515,11 +562,11 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
                 {copy.backLabel}
               </Link>
             </div>
-            {filamentFriday ? (
-              <div className="mt-8 w-full">
-                <GlassCard className="p-6">
-                  <p className="text-xs font-semibold uppercase tracking-[0.4em] text-indigo-500">{copy.filamentFridayLabel}</p>
-                  <h2 className="mt-3 text-2xl font-semibold text-slate-900">{filamentFriday.title}</h2>
+          {filamentFriday ? (
+            <div className="mt-8 w-full">
+              <GlassCard className="p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-indigo-500">{copy.filamentFridayLabel}</p>
+                <h2 className="mt-3 text-2xl font-semibold text-slate-900">{filamentFriday.title}</h2>
                   <p className="mt-2 text-sm text-slate-600">{filamentFriday.description}</p>
                   <div className="mt-4">
                     <Link
@@ -534,6 +581,47 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
               </div>
             ) : null}
           </Reveal>
+
+          {comparison && otherSlug ? (
+            <Reveal>
+              <GlassCard className="mt-6 p-6">
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <h2 className="text-xl font-semibold text-slate-900">{comparison.title}</h2>
+                    <p className="text-sm text-slate-600">{comparison.intro}</p>
+                  </div>
+                  {otherLabel ? (
+                    <Link
+                      href={localize(`/materials/${otherSlug}`)}
+                      className="text-sm font-semibold text-indigo-600 hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                    >
+                      {otherLabel}
+                    </Link>
+                  ) : null}
+                </div>
+                <div className="mt-4 overflow-x-auto">
+                  <table className="min-w-[320px] text-sm text-slate-700">
+                    <thead>
+                      <tr className="text-left text-slate-500">
+                        <th className="py-2 pr-4 font-semibold">{isEn ? "Aspect" : "Aspect"}</th>
+                        <th className="py-2 pr-4 font-semibold">PC</th>
+                        <th className="py-2 pr-4 font-semibold">PC FR</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {comparison.rows.map((row) => (
+                        <tr key={row.label} className="border-t border-slate-200/70">
+                          <td className="py-2 pr-4 font-medium text-slate-900">{row.label}</td>
+                          <td className="py-2 pr-4">{row.PC}</td>
+                          <td className="py-2 pr-4">{row.PC_FR}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </GlassCard>
+            </Reveal>
+          ) : null}
         </div>
       </section>
 

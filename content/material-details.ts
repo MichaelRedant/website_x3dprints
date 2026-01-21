@@ -189,7 +189,7 @@ const materialFaq: Record<MaterialKey, FaqItem[]> = {
     {
       question: "Wanneer kies je PC in plaats van PETG?",
       answer:
-        "Polycarbonaat blijft maatvast tot ruim 110ƒ?î¶øC, is UV-bestendig en kan continu buiten hangen. We gebruiken het voor machinecovers, brackets rond motoren en onderdelen die permanente zon of chemicaliÇ®n trotseren.",
+        "Polycarbonaat blijft maatvast tot ruim 110 C, is UV-bestendig en kan continu buiten hangen. We gebruiken het voor machinecovers, brackets rond motoren en onderdelen die permanente zon of chemicalien trotseren.",
     },
     {
       question: "Hoe vermijden jullie scheuren of warping bij PC?",
@@ -197,6 +197,20 @@ const materialFaq: Record<MaterialKey, FaqItem[]> = {
         "Elke spoel droogt minstens acht uur, daarna printen we in een gesloten behuizing met hoge bedtemperatuur en lijmstick. Perimeterinstellingen en gecontroleerde koeling zorgen voor spanningsvrije resultaten.",
     },
   ],
+
+  PC_FR: [
+    {
+      question: "Wat maakt PC FR vlamvertragend?",
+      answer:
+        "Het filament is UL94 V-0 gecertificeerd en dooft zichzelf binnen seconden. Ideaal voor elektronica- en machinebehuizingen waar vlamvertraging vereist is.",
+    },
+    {
+      question: "Wanneer kies je PC FR boven standaard PC?",
+      answer:
+        "Bij toepassingen met verhoogd brandrisico of normeringen (bv. panelen, DIN-rail kasten, automotive). Je krijgt vergelijkbare sterkte en hittebestendigheid, plus gecertificeerde vlamvertraging.",
+    },
+  ],
+
   PLA_TRANSLUCENT: [
     {
       question: "Hoeveel licht laat PLA Translucent door?",
@@ -867,15 +881,15 @@ const details: MaterialDetailContent[] = [
     heroDescription:
       "PC zetten we in wanneer hitte, UV en mechanische belasting tegelijk spelen. Het levert strakke onderdelen met een technische look.",
     summary:
-      "Polycarbonaat blijft maatvast boven 100ƒ?î¶øC, weerstaat olie en UV en is daarmee perfect voor machinecovers, outdoor brackets en displayonderdelen die beter bestand moeten zijn dan PETG.",
+      "Polycarbonaat blijft maatvast boven 100 C, weerstaat olie en UV en is daarmee perfect voor machinecovers, outdoor brackets en displayonderdelen die beter bestand moeten zijn dan PETG.",
     highlights: [
       {
         title: "Hitte- en UV-bestendig",
         description:
-          "Met een glasovergang rond 110 deg C vervormt PC niet in de zon of naast motoren en verkleurt het nauwelijks.",
+          "Met een glasovergang rond 110 C vervormt PC niet in de zon of naast motoren en verkleurt het nauwelijks.",
       },
       {
-        title: "Sterk én taai",
+        title: "Sterk ?n taai",
         description:
           "Het materiaal vangt impact op maar blijft stijf genoeg voor schroefbare behuizingen en machinecomponenten.",
       },
@@ -892,12 +906,12 @@ const details: MaterialDetailContent[] = [
       "Behuizingen nabij warmtebronnen",
     ],
     specs: [
-      { label: "Glasovergang", value: "~110 deg C" },
-      { label: "Printtemperatuur", value: "260-280 deg C" },
-      { label: "Bedtemperatuur", value: "100-110 deg C" },
+      { label: "Glasovergang", value: "~110 C" },
+      { label: "Printtemperatuur", value: "260-280 C" },
+      { label: "Bedtemperatuur", value: "100-110 C" },
     ],
     printTips: [
-      "Droog elke spoel minstens 8 uur rond 80 deg C voor perfecte laaghechting.",
+      "Droog elke spoel minstens 8 uur rond 80 C voor perfecte laaghechting.",
       "Print in een gesloten behuizing met beperkte koeling om scheuren te vermijden.",
       "Gebruik lijmstick of tekstuur-PEI plus een brim voor betrouwbare bedhechting.",
     ],
@@ -907,9 +921,66 @@ const details: MaterialDetailContent[] = [
         "Laat hittebestendige polycarbonaat (PC) onderdelen printen bij X3DPrints in Herzele. Ideaal voor machinecovers, outdoor brackets en UV-bestendige displayonderdelen.",
     },
     leadTime: "Levertijd 4-6 werkdagen",
-    priceIndicator: "Prijsindicatie: €€€",
+    priceIndicator: "Prijsindicatie: ???",
     faq: materialFaq["PC"],
   },
+
+  {
+    key: "PC_FR",
+    slug: MATERIAL_SLUGS["PC_FR"],
+    heroTagline: "Vlamvertragend polycarbonaat (UL94 V-0)",
+    heroDescription:
+      "PC FR combineert de sterkte van polycarbonaat met UL94 V-0 vlamvertraging. Ideaal voor kritieke behuizingen, rail-kasten en onderdelen nabij warmtebronnen.",
+    summary:
+      "Gebruik PC FR voor technische onderdelen die zowel hitte, UV als vlamrisico moeten trotseren. Het materiaal blijft maatvast, dooft zichzelf en levert een strakke, semi-transparante look in zwart, grijs of wit.",
+    highlights: [
+      {
+        title: "UL94 V-0 gecertificeerd",
+        description:
+          "Dooft binnen seconden en vertraagt vlamverspreiding, geschikt voor elektronica, automotive en machinebouw.",
+      },
+      {
+        title: "Hoge hitte- en slagvastheid",
+        description:
+          "Glasovergang rond 110 C en mechanische sterkte vergelijkbaar met PC; blijft stijf en vormvast onder belasting.",
+      },
+      {
+        title: "Afwerking op maat",
+        description:
+          "Beschikbaar in wit, grijs en zwart voor gesloten behuizingen of semi-transparante vensters met professionele look.",
+      },
+    ],
+    idealFor: [
+      "Elektronica- en IoT-behuizingen met vlamvertragingsplicht",
+      "DIN-rail kasten en control panels",
+      "Machinecovers nabij motoren of PSU's",
+      "Automotive en industriele brackets waar hitte en veiligheid tellen",
+    ],
+    specs: [
+      { label: "Glasovergang", value: "~110 C" },
+      { label: "Printtemperatuur", value: "260-280 C" },
+      { label: "Bedtemperatuur", value: "90-110 C met lijmstick of PEI" },
+    ],
+    printTips: [
+      "Dry elke spoel 8 uur op ~80 C en print in een gesloten behuizing om scheuren te vermijden.",
+      "Gebruik lijmstick of textured PEI plus een brim voor betrouwbare hechting.",
+      "Beperk koeling tot 0-20% en verlaag snelheid voor sterke laaghechting.",
+    ],
+    seo: {
+      title: "PC FR vlamvertragende 3D prints (UL94 V-0)",
+      description:
+        "Laat vlamvertragende PC FR onderdelen printen bij X3DPrints. UL94 V-0, hittebestendig en mechanisch sterk voor behuizingen en industriele brackets.",
+    },
+    filamentFriday: {
+      title: "Filament Vrijdag: PC FR (UL94 V-0)",
+      description: "Flame-retardant polycarbonaat met settings, droogroutine en vergelijking met PC en PETG.",
+      href: "/blog/filament-vrijdag-pc-fr",
+    },
+    leadTime: "Levertijd 5-7 werkdagen",
+    priceIndicator: "Prijsindicatie: hoog",
+    faq: materialFaq["PC_FR"],
+  },
+
   {
     key: "PLA_TRANSLUCENT",
     slug: MATERIAL_SLUGS["PLA_TRANSLUCENT"],

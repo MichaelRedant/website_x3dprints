@@ -69,7 +69,7 @@ const LOOK_PRIORITY: Partial<Record<LookAnswer, MaterialKey[]>> = {
   silk: ["PLA_SILK_PLUS"],
 }
 
-const PERMANENT_OUTDOOR_KEYS = new Set<MaterialKey>(["PETG", "PLA_CF", "PC", "TPU"])
+const PERMANENT_OUTDOOR_KEYS = new Set<MaterialKey>(["PETG", "PLA_CF", "PC", "PC_FR", "TPU"])
 
 type LocalizedCopy = {
   steps: StepConfig[]

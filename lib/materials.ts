@@ -21,6 +21,7 @@ export type MaterialKey =
   | "PLA_CF"
   | "PLA_WOOD"
   | "PETG"
+  | "PC_FR"
   | "PC"
   | "TPU"
 
@@ -83,29 +84,29 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
     features: ["Mat oppervlak", "Strakke details"],
     swatches: [
       // Whites & Grays
-      { label: "Ivory White", color: "#f8f4e3", inStock: false },
-      { label: "Bone White", color: "#e7e2d3", inStock: true },
+      { label: "Ivory White", color: "#f8f4e3", inStock: true },
+      { label: "Bone White", color: "#e7e2d3", inStock: false },
       { label: "Ash Gray", color: "#b2b6bd", inStock: true },
-      { label: "Nardo Gray", color: "#7e7f80", inStock: true },
+      { label: "Nardo Gray", color: "#7e7f80", inStock: false },
       { label: "Charcoal (Black)", color: "#111827", inStock: true },
       // Browns & Tans
-      { label: "Latte Brown", color: "#b58b65", inStock: false },
+      { label: "Latte Brown", color: "#b58b65", inStock: true },
       { label: "Desert Tan", color: "#d2b48c", inStock: false },
       { label: "Caramel", color: "#c97b4a", inStock: false },
       { label: "Terracotta", color: "#c6613e", inStock: false },
-      { label: "Dark Brown", color: "#5a3a1a", inStock: false },
+      { label: "Dark Brown", color: "#5a3a1a", inStock: true },
       { label: "Dark Chocolate", color: "#3b2615", inStock: false },
       // Reds & Purples
       { label: "Scarlet Red", color: "#d0281f", inStock: true },
       { label: "Dark Red", color: "#8b1a1a", inStock: false },
       { label: "Plum", color: "#5b2746", inStock: false },
-      { label: "Sakura Pink", color: "#f7c6d5", inStock: false },
-      { label: "Lilac Purple", color: "#b18ac8", inStock: false },
+      { label: "Sakura Pink", color: "#f7c6d5", inStock: true },
+      { label: "Lilac Purple", color: "#b18ac8", inStock: true },
       // Greens & Blues
       { label: "Apple Green", color: "#6bbf59", inStock: false },
-      { label: "Grass Green", color: "#2f8f2f", inStock: false },
-      { label: "Dark Green", color: "#14532d", inStock: true },
-      { label: "Ice Blue", color: "#9fd6f5", inStock: false },
+      { label: "Grass Green", color: "#2f8f2f", inStock: true },
+      { label: "Dark Green", color: "#14532d", inStock: false },
+      { label: "Ice Blue", color: "#9fd6f5", inStock: true },
       { label: "Sky Blue", color: "#72b4f8", inStock: true },
       { label: "Marine Blue", color: "#1e6091", inStock: false },
       { label: "Dark Blue", color: "#0f2f5f", inStock: false },
@@ -139,7 +140,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       {
         label: "Marble White",
         color: "linear-gradient(135deg,#f3f4f6,#d1d5db 55%,#f9fafb)",
-        inStock: false,
+        inStock: true,
       },
     ],
   },
@@ -271,7 +272,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       { label: "Green", color: "#22c55e", inStock: false },
       { label: "Olive", color: "#6b8e23", inStock: false },
       { label: "Transparent", color: g.translucent("#ffffff"), inStock: false },
-      { label: "Gold", color: "#E4BD68", inStock: false },
+      { label: "Gold", color: "#E4BD68", inStock: true },
     ],
   },
 
@@ -324,11 +325,11 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       "PLA met houtdeeltjes. Warme, natuurlijke afwerking. Goed schuurbaar en prima te schilderen.",
     features: ["Natuurlijke look", "Licht geurend bij print"],
     swatches: [
-      { label: "Walnut", color: "#6b4f2a", inStock: true },
+      { label: "Walnut", color: "#6b4f2a", inStock: false },
       { label: "Mahogany", color: "#5b3a24", inStock: false },
       { label: "Teak", color: "#7b5838", inStock: false },
       { label: "Oak", color: "#9b7a4e", inStock: false },
-      { label: "Desert", color: "#b99a63", inStock: false },
+      { label: "Desert", color: "#b99a63", inStock: true },
 
     ],
   },
@@ -341,12 +342,12 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
     swatches: [
       { label: "Black", color: "#0b0b0b", inStock: true },
       { label: "White", color: "#ffffff", inStock: true },
-      { label: "Gray", color: "#9ca3af", inStock: true },
-      { label: "Red", color: "#e11d48", inStock: true },
-      { label: "Orange", color: "#f97316", inStock: true },
+      { label: "Gray", color: "#9ca3af", inStock: false },
+      { label: "Red", color: "#e11d48", inStock: false },
+      { label: "Orange", color: "#f97316", inStock: false },
       { label: "Yellow", color: "#f5c211", inStock: true },
-      { label: "Green", color: "#16a34a", inStock: true },
-      { label: "Blue", color: "#2563eb", inStock: true },
+      { label: "Green", color: "#16a34a", inStock: false },
+      { label: "Blue", color: "#2563eb", inStock: false },
       { label: "Transparent", color: g.translucent("#E6FBFF"), inStock: true },
     ],
   },
@@ -357,9 +358,22 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
       "Polycarbonaat voor hittebestendige, mechanisch sterke onderdelen met een strakke, semi-transparante look.",
     features: ["Hittebestendig", "UV-bestendig", "Technische onderdelen"],
     swatches: [
-      { label: "Transparant", color: g.translucent("#E6FBFF"), inStock: true },
-      { label: "Helder Zwart", color: "linear-gradient(180deg,#1b1b1f,#050505)", inStock: true },
-      { label: "Zwart", color: "#000000", inStock: true },
+      { label: "Transparant", color: g.translucent("#E6FBFF"), inStock: false },
+      { label: "Helder Zwart", color: "linear-gradient(180deg,#1b1b1f,#050505)", inStock: false },
+      { label: "Wit", color: "#ffffff", inStock: false },
+      { label: "Zwart", color: "#000000", inStock: false },
+    ],
+  },
+
+  PC_FR: {
+    name: "PC FR",
+    description:
+      "Vlamvertragend polycarbonaat (UL94 V-0) voor technische toepassingen waar hitte en veiligheid cruciaal zijn.",
+    features: ["UL94 V-0", "Mechanisch sterk", "Voor behuizingen en techniek"],
+    swatches: [
+      { label: "Wit", color: "#ffffff", inStock: false },
+      { label: "Grijs", color: "#a8a8aa", inStock: false },
+      { label: "Zwart", color: "#000000", inStock: false },
     ],
   },
 
@@ -400,7 +414,8 @@ export const MATERIAL_COST_EUR_PER_KG: Record<MaterialKey, number> = {
   PLA_CF: 26.99,
   PLA_WOOD: 27.99,
   PETG: 22.99,
-  PC: 34.39,
+  PC: 42.99,
+  PC_FR: 56.99,
   TPU: 39.99,
 };
 
@@ -410,6 +425,7 @@ export const MATERIAL_ORDER: MaterialKey[] = [
   "PLA_MATTE",
   "PETG",
   "PC",
+  "PC_FR",
   "PLA_GLOW",
   "PLA_MARBLE",
   "PLA_SPARKLE",
@@ -541,6 +557,12 @@ const MATERIAL_COPY_EN: Record<MaterialKey, MaterialCopy> = {
       "Polycarbonate for heat-resistant, mechanically strong parts with a sleek, semi-transparent look.",
     features: ["Heat resistant", "UV resistant", "Technical parts"],
   },
+  PC_FR: {
+    name: "PC FR",
+    description:
+      "Flame-retardant polycarbonate (UL94 V-0) for technical parts where heat resistance and safety are key.",
+    features: ["UL94 V-0", "Mechanical strength", "For housings and technical use"],
+  },
   TPU: {
     name: "TPU",
     description:
@@ -555,6 +577,7 @@ const SWATCH_LABEL_OVERRIDES_EN: Record<string, string> = {
   "Glow Blauw": "Glow Blue",
   "Transparant": "Transparent",
   "Helder Zwart": "Clear Black",
+  Wit: "White",
   Zwart: "Black",
   Grijs: "Gray",
 }

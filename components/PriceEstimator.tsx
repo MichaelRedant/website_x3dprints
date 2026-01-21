@@ -84,7 +84,7 @@ export default function PriceEstimator({ locale = "nl" }: Props) {
           qty: "Quantity",
         },
         help: {
-          drying: "Drying included for TPU/PLA Wood/PETG/PC.",
+          drying: "Drying included for TPU/PLA Wood/PETG/PC/PC FR.",
         },
         cards: {
           perPiece: "Estimate per piece",
@@ -122,7 +122,7 @@ export default function PriceEstimator({ locale = "nl" }: Props) {
           qty: "Aantal stuks",
         },
         help: {
-          drying: "Droogbehandeling inbegrepen voor TPU/PLA Wood/PETG/PC.",
+          drying: "Droogbehandeling inbegrepen voor TPU/PLA Wood/PETG/PC/PC FR.",
         },
         cards: {
           perPiece: "Indicatie per stuk",

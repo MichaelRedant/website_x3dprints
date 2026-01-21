@@ -444,6 +444,32 @@ export const MATERIAL_SUGGESTION_DATA: MaterialSuggestionRecord[] = [
     colors: ["Transparant", "Helder Zwart", "Zwart"],
   },
   {
+    id: "pc_fr",
+    materialKey: "PC_FR",
+    name: "PC FR",
+    category: "Engineering",
+    descriptionShort: "Vlamvertragend polycarbonaat (UL94 V-0).",
+    descriptionLong:
+      "PC FR combineert de hitte- en UV-bestendigheid van PC met een UL94 V-0 rating. Ideaal voor rail-kasten, PSU covers en elektronica met brandvereisten.",
+    finish: "Semi-glans, halftransparant in zwart/grijs/wit.",
+    bestFor: ["Elektronica behuizingen", "Rail-kasten", "Machinecovers nabij warmte", "Industriële brackets"],
+    highlightTags: ["UL94 V-0", "Hittebestendig", "Functioneel"],
+    environment: {
+      suitability: { indoor: 5, outdoorSeasonal: 4, outdoorPermanent: 4 },
+      uvResistance: 4,
+      tempResistance: 5,
+    },
+    mechanical: { strength: 5, flexibility: 2, impactResistance: 4 },
+    printProfile: {
+      difficulty: 4,
+      needsDryer: true,
+      notes: "Droog 8u en gebruik enclosure met beperkte koeling. Lijmstick + brim aanbevolen.",
+    },
+    economics: { priceLevel: "premium", costFactor: 5 },
+    flags: { isFlexible: false, specialLook: null },
+    colors: ["Wit", "Grijs", "Zwart"],
+  },
+  {
     id: "pla_translucent",
     materialKey: "PLA_TRANSLUCENT",
     name: "PLA Translucent",

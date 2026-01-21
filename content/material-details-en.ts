@@ -158,6 +158,20 @@ const materialFaqEn: Record<MaterialKey, FaqItem[]> = {
         "We dry each spool at least eight hours, then print in an enclosed machine with high bed temperature and glue stick. Perimeter settings and controlled cooling reduce stress.",
     },
   ],
+
+  PC_FR: [
+    {
+      question: "What makes PC FR flame retardant?",
+      answer:
+        "It is UL94 V-0 certified and self-extinguishes within seconds. Ideal for electronics and machine housings that require flame retardancy.",
+    },
+    {
+      question: "When pick PC FR over standard PC?",
+      answer:
+        "For applications with higher fire risk or compliance needs (panels, DIN-rail enclosures, automotive). You get similar strength and heat resistance plus certified flame retardancy.",
+    },
+  ],
+
   PLA_TRANSLUCENT: [
     {
       question: "How much light does PLA Translucent transmit?",
@@ -871,6 +885,62 @@ const detailsEn: MaterialDetailContent[] = [
     priceIndicator: "Price indicator: High",
     faq: materialFaqEn["PC"],
   },
+  {
+    key: "PC_FR",
+    slug: MATERIAL_SLUGS["PC_FR"],
+    heroTagline: "Flame-retardant polycarbonate (UL94 V-0)",
+    heroDescription:
+      "PC FR pairs polycarbonate strength with UL94 V-0 flame retardancy. Ideal for critical enclosures, rail cabinets and parts near heat sources.",
+    summary:
+      "Choose PC FR for technical parts that face heat, UV and fire risk. It stays dimensionally stable, self-extinguishes and delivers a clean, semi-transparent look in black, gray or white.",
+    highlights: [
+      {
+        title: "UL94 V-0 certified",
+        description:
+          "Self-extinguishes within seconds and slows flame spread, fit for electronics, automotive and machinery.",
+      },
+      {
+        title: "High heat and impact strength",
+        description:
+          "Glass transition around 110 C with PC-like mechanical strength; stays stiff under load.",
+      },
+      {
+        title: "Finish options",
+        description:
+          "Available in white, gray and black for closed housings or semi-transparent windows with a professional look.",
+      },
+    ],
+    idealFor: [
+      "Electronics and IoT housings with flame requirements",
+      "DIN-rail cabinets and control panels",
+      "Machine guards near motors or PSUs",
+      "Automotive and industrial brackets where heat and safety matter",
+    ],
+    specs: [
+      { label: "Glass transition", value: "~110 C" },
+      { label: "Print temperature", value: "260-280 C" },
+      { label: "Bed temperature", value: "90-110 C with glue stick or PEI" },
+    ],
+    printTips: [
+      "Dry each spool 8 hours around 80 C and print in an enclosed chamber to avoid cracking.",
+      "Use glue stick or textured PEI plus a brim for reliable adhesion.",
+      "Keep cooling low (0-20%) and slow down for strong layer bonding.",
+    ],
+    seo: {
+      title: "PC FR flame-retardant 3D prints (UL94 V-0)",
+      description:
+        "Order flame-retardant PC FR parts from X3DPrints. UL94 V-0, heat resistant and strong for housings and industrial brackets.",
+    },
+    filamentFriday: {
+      title: "Filament Friday: PC FR (UL94 V-0)",
+      description: "Flame-rated polycarbonate with settings, drying routine and comparison vs PC and PETG.",
+      href: "/blog/filament-vrijdag-pc-fr",
+    },
+    leadTime: "Typical lead time 5-7 business days",
+    priceIndicator: "Price indicator: High",
+    faq: materialFaqEn["PC_FR"],
+  },
+
   {
     key: "PLA_TRANSLUCENT",
     slug: MATERIAL_SLUGS["PLA_TRANSLUCENT"],

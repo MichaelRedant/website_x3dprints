@@ -176,6 +176,18 @@ const MATERIAL_GALLERY_NL: Partial<Record<MaterialKey, MaterialGalleryItem[]>> =
       caption: "Helder Zwart PC combineert rookglaslook met hoge weerstand.",
     },
   ],
+  PC_FR: [
+    {
+      src: "PC_FR_K1_1.webp",
+      alt: "PC FR behuizing met ventilatiegroeven",
+      caption: "Vlamvertragende PC FR behuizing voor elektronica en control panels.",
+    },
+    {
+      src: "pc_fr1.webp",
+      alt: "PC FR bracket in zwarte afwerking",
+      caption: "PC FR blijft stijf en zelfdovend voor industriële brackets.",
+    },
+  ],
   PLA_TRANSLUCENT: [
     {
       src: "Translucent_K2_Butterfly.webp",
@@ -393,6 +405,18 @@ const MATERIAL_GALLERY_EN: Partial<Record<MaterialKey, MaterialGalleryItem[]>> =
       src: "PC_img2.webp",
       alt: "Dark-tinted PC bracket with metal inserts",
       caption: "Clear Black PC combines a smoked-glass look with high strength.",
+    },
+  ],
+  PC_FR: [
+    {
+      src: "PC_FR_K1_1.webp",
+      alt: "PC FR enclosure with vented panels",
+      caption: "Flame-retardant PC FR housing for electronics and control panels.",
+    },
+    {
+      src: "pc_fr1.webp",
+      alt: "Black PC FR bracket with mounting holes",
+      caption: "PC FR stays stiff and self-extinguishing for industrial brackets.",
     },
   ],
   PLA_TRANSLUCENT: [

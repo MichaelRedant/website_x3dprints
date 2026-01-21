@@ -43,13 +43,14 @@ const BASE_FILAMENT_PRICE_EUR_PER_KG: Record<MaterialKey, number> = {
   PLA_TRANSLUCENT: 23.38,
   PLA_TOUGH_PLUS: 23.38,
   PETG: 23.38,
-  PC: 34.39,
+  PC: 42.99,
+  PC_FR: 56.99,
   TPU: 25.5,
 };
 
 const BASE_PRICE_FALLBACK_EUR_PER_KG = 23.38; // valt terug op PLA Basic
 
-export const DRYING_FILAMENTS = new Set<MaterialKey>(["TPU", "PLA_WOOD", "PETG", "PC"]);
+export const DRYING_FILAMENTS = new Set<MaterialKey>(["TPU", "PLA_WOOD", "PETG", "PC", "PC_FR"]);
 export const DRYING_FIXED_SURCHARGE_EUR = 5;
 export const DRYING_COST_PER_PRINT_EUR = 0.05;
 

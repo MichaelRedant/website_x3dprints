@@ -219,6 +219,24 @@ const TOPICS_NL: Topic[] = [
     category: "filament-friday",
   },
   {
+    id: "filament-vrijdag-pc-fr",
+    title: "Filament Vrijdag #9: PC FR (UL94 V-0) 3D printen",
+    summary:
+      "Vlamvertragend polycarbonaat voor rail-kasten, PSU covers en elektronica met brandnormen. Instellingen, droogtijd en beslisboom: wanneer PC FR loont en wanneer standaard PC of PETG volstaat.",
+    highlights: [
+      "Publicatie 23 januari 2026 (vrijdag) om de Filament Vrijdag reeks actueel te houden met safety-materialen.",
+      "Interne links naar PC FR en PC materiaalprofielen, pricing en de PC blog voor duidelijk onderscheid.",
+      "Bevat externe bronnen (Bambu PC FR guide, UL94 uitleg) voor EEAT en compliance context.",
+    ],
+    links: [
+      { label: "Lees Filament Vrijdag: PC FR", href: "/blog/filament-vrijdag-pc-fr" },
+      { label: "PC FR materiaalprofiel", href: "/materials/pc-fr" },
+      { label: "Vergelijk met PC blog", href: "/blog/filament-vrijdag-pc" },
+    ],
+    intent: "informational",
+    category: "filament-friday",
+  },
+  {
     id: "finishing-friday-schuren-primen-lakken",
     title: "Finishing Friday: schuren, primen & lakken",
     summary:
@@ -1118,6 +1136,42 @@ const TOPICS_EN: Topic[] = [
       { label: "Read Filament Friday #5", href: "/blog/filament-vrijdag-pc" },
       { label: "PC material profile", href: "/materials/pc" },
       { label: "Plan a PC run", href: "/contact?material=PC" },
+    ],
+    intent: "informational",
+    category: "filament-friday",
+  },
+  {
+    id: "filament-vrijdag-pc-fr",
+    title: "Filament Friday #9: PC FR (UL94 V-0) 3D printing",
+    summary:
+      "Flame-retardant polycarbonate for enclosures with safety requirements. Settings, drying and a decision path vs standard PC and PETG.",
+    highlights: [
+      "Published January 23, 2026 (Friday) to keep the Filament Friday series fresh with safety materials.",
+      "Internal links to PC FR and PC material profiles, pricing, and the PC article for clear differentiation.",
+      "Includes external refs (Bambu PC FR guide, UL94 overview) to strengthen EEAT and compliance context.",
+    ],
+    links: [
+      { label: "Read Filament Friday: PC FR", href: "/en/blog/filament-vrijdag-pc-fr" },
+      { label: "PC FR material profile", href: "/en/materials/pc-fr" },
+      { label: "Compare to PC article", href: "/en/blog/filament-vrijdag-pc" },
+    ],
+    intent: "informational",
+    category: "filament-friday",
+  },
+  {
+    id: "filament-vrijdag-pc-fr",
+    title: "Filament Friday #9: PC FR (UL94 V-0) 3D printing",
+    summary:
+      "Flame-retardant polycarbonate for enclosures with safety requirements. Settings, drying and a decision path vs. standard PC and PETG.",
+    highlights: [
+      "Published January 23, 2026 (Friday) to keep the Filament Friday series fresh with safety materials.",
+      "Internal links to PC FR and PC material profiles, pricing, and the PC article for clear differentiation.",
+      "Includes external refs (Bambu PC FR guide, UL94 overview) to strengthen EEAT and compliance context.",
+    ],
+    links: [
+      { label: "Read Filament Friday: PC FR", href: "/blog/filament-vrijdag-pc-fr" },
+      { label: "PC FR material profile", href: "/materials/pc-fr" },
+      { label: "Compare to PC article", href: "/blog/filament-vrijdag-pc" },
     ],
     intent: "informational",
     category: "filament-friday",
@@ -2177,12 +2231,32 @@ export default function BlogPage({ locale }: PageProps) {
   const localize = (href: string) => localizeHref(href, normalizedLocale)
   const toAbsolute = (href: string) => `https://www.x3dprints.be${localize(href)}`
 
-  const filamentTopics = topics.filter((topic) => topic.category === "filament-friday")
-  const makerMondayTopics = topics.filter((topic) => topic.category === "maker-monday")
-  const useCaseTopics = topics.filter((topic) => topic.category === "use-case-dinsdag")
+  const SORT_PREFERENCE: Record<TopicCategory, "featured" | "az"> = {
+    "filament-friday": "featured",
+    "maker-monday": "featured",
+    "use-case-dinsdag": "featured",
+    "materials-pricing": "az",
+    "segments-cases": "az",
+    "how-to": "az",
+  }
+
+  const sortTopics = (list: Topic[], category: TopicCategory) => {
+    const mode = SORT_PREFERENCE[category] ?? "featured"
+    if (mode === "az") {
+      return [...list].sort((a, b) => a.title.localeCompare(b.title))
+    }
+    return list
+  }
+
+  const filamentTopics = sortTopics(topics.filter((topic) => topic.category === "filament-friday"), "filament-friday")
+  const makerMondayTopics = sortTopics(topics.filter((topic) => topic.category === "maker-monday"), "maker-monday")
+  const useCaseTopics = sortTopics(topics.filter((topic) => topic.category === "use-case-dinsdag"), "use-case-dinsdag")
   const groupedSections = categorySections.map((section) => ({
     ...section,
-    topics: topics.filter((topic) => topic.category === section.id),
+    topics: sortTopics(
+      topics.filter((topic) => topic.category === section.id),
+      section.id,
+    ),
   }))
 
   const articleListJsonLd = {
