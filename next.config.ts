@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   // Pure statische export (FTP/Apache)
   output: "export",
 
+  // Sommige dynamische pagina's (locaties/blog) hebben wat langere build-tijd nodig
+  staticPageGenerationTimeout: 240,
+
   // /pad/ -> /pad/index.html mappen (apache/vimexx vriendelijk)
   trailingSlash: true,
 

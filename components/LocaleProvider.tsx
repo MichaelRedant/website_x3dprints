@@ -20,7 +20,23 @@ export default function LocaleProvider({
   children: React.ReactNode
   initialLocale?: Locale
 }) {
-  const [locale, setLocale] = useState<Locale>(initialLocale)
+  const deriveInitialLocale = (): Locale => {
+    if (typeof window === "undefined") return initialLocale
+    const url = new URL(window.location.href)
+    const fromQuery = url.searchParams.get("lang")
+    const fromStorage = localStorage.getItem(STORAGE_KEY)
+    const fromPath = url.pathname.split("/").filter(Boolean)[0] // e.g. "en"
+    const fromNavigator =
+      typeof navigator !== "undefined" ? navigator.language ?? navigator.languages?.[0] : null
+
+    if (fromQuery) return normalizeLocale(fromQuery)
+    if (fromStorage) return normalizeLocale(fromStorage)
+    if (fromPath) return normalizeLocale(fromPath)
+    if (fromNavigator) return fromNavigator.toLowerCase().startsWith("nl") ? "nl" : "en"
+    return initialLocale
+  }
+
+  const [locale, setLocale] = useState<Locale>(deriveInitialLocale)
 
   const applyContentLanguageMeta = (value: Locale) => {
     if (typeof document === "undefined") return
@@ -34,28 +50,13 @@ export default function LocaleProvider({
     meta.content = langValue
   }
 
-  // Initialize from query param/localStorage/navigator
+  // Normalize URL (?lang=) and keep <html lang> in sync on mount
   useEffect(() => {
     if (typeof window === "undefined") return
-
     const url = new URL(window.location.href)
-    const fromQuery = url.searchParams.get("lang")
-    const stored = localStorage.getItem(STORAGE_KEY)
-    const fromPath = url.pathname.split("/").filter(Boolean)[0] // e.g. "en"
-    const fromNavigator =
-      typeof navigator !== "undefined" ? navigator.language ?? navigator.languages?.[0] : null
-
-    let next: Locale
-    if (fromQuery) next = normalizeLocale(fromQuery)
-    else if (stored) next = normalizeLocale(stored)
-    else if (fromPath) next = normalizeLocale(fromPath)
-    else if (fromNavigator)
-      next = fromNavigator.toLowerCase().startsWith("nl") ? "nl" : "en"
-    else next = DEFAULT_LOCALE
-
     const canonicalHref = localizeHref(
       `${url.pathname}${url.search}${url.hash}`,
-      next,
+      locale,
     )
     const currentHref = `${url.pathname}${url.search}${url.hash}`
 
@@ -65,7 +66,7 @@ export default function LocaleProvider({
       return
     }
 
-    if (fromQuery) {
+    if (url.searchParams.has("lang")) {
       url.searchParams.delete("lang")
       const cleaned = `${url.pathname}${url.searchParams.toString() ? `?${url.searchParams.toString()}` : ""}${url.hash}`
       if (cleaned !== currentHref) {
@@ -73,10 +74,9 @@ export default function LocaleProvider({
       }
     }
 
-    setLocale(next)
-    document.documentElement.lang = next
-    applyContentLanguageMeta(next)
-  }, [])
+    document.documentElement.lang = locale
+    applyContentLanguageMeta(locale)
+  }, [locale])
 
   // Persist and mirror on <html>
   useEffect(() => {

@@ -6,6 +6,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import BlogSearch from "@/components/BlogSearch"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
+import OrganizerCta from "@/components/OrganizerCta"
 
 const NL_METADATA: Metadata = {
   title: "3D print blog & kennisbank | X3DPrints",
@@ -73,6 +74,7 @@ type Topic = {
   summary: string
   highlights: string[]
   links: { label: string; href: string }[]
+  date?: string // ISO date; used for sorting (newest first)
   intent: "informational" | "transactional" | "how-to"
   category: TopicCategory
 }
@@ -1050,6 +1052,25 @@ const TOPICS_NL: Topic[] = [
 
 const TOPICS_EN: Topic[] = [
   {
+    id: "tool-organizers-3d-printing",
+    title: "3D printing tool organizers: ModuGrid, Packout and custom",
+    date: "2026-01-29",
+    summary:
+      "Complete guide to printed organizers: intake checklist, materials, label zones, anti-slip and when to choose ModuGrid, Packout, TSTAK or fully custom inserts.",
+    highlights: [
+      "Internal links to the organizers hub, materials and pricing so you can plan fast.",
+      "System-by-system guidance (ModuGrid/gridfinity-style, Packout, TSTAK, custom/Skådis) plus what to send during intake.",
+      "External context on pegboards and Packout ecosystems to strengthen EEAT.",
+    ],
+    links: [
+      { label: "Read the organizers guide", href: "/blog/tool-organizers-3d-printing" },
+      { label: "Organizers hub", href: "/organizers" },
+      { label: "Plan a layout", href: "/contact?material=organizers" },
+    ],
+    intent: "informational",
+    category: "segments-cases",
+  },
+  {
     id: "filament-vrijdag-pla",
     title: "Filament Friday #1: PLA 3D printing",
     summary:
@@ -1933,6 +1954,25 @@ const TOPICS_EN: Topic[] = [
     category: "how-to",
   },
   {
+    id: "tool-organizers-3d-printen",
+    title: "Tool organizers 3D printen: van ModuGrid tot Packout",
+    date: "2026-01-29",
+    summary:
+      "Alles wat je moet weten om organizers te laten printen: intake, materiaalkeuze, labelzones, anti-slip en wanneer je kiest voor ModuGrid, Packout, TSTAK of een custom insert.",
+    highlights: [
+      "Bevat interne links naar de organizers hub, materialen en pricing zodat je meteen kunt plannen.",
+      "Uitleg per systeem (ModuGrid/gridfinity-stijl, Packout, TSTAK, custom/Skådis) met intakechecklist.",
+      "Externe context over pegboards en Packout ecosystemen om EEAT te versterken.",
+    ],
+    links: [
+      { label: "Lees de organizers gids", href: "/blog/tool-organizers-3d-printen" },
+      { label: "Organizers hub", href: "/organizers" },
+      { label: "Plan een indeling", href: "/contact?material=organizers" },
+    ],
+    intent: "informational",
+    category: "segments-cases",
+  },
+  {
     id: "3d-printen-in-de-buurt",
     title: "3D printing near you (Ghent, Aalst, Dendermonde)",
     summary:
@@ -2041,6 +2081,7 @@ const QUICK_LINKS_NL = [
   { label: "Materialen & pricing", href: "#materials-pricing" },
   { label: "Segmenten & cases", href: "#segments-cases" },
   { label: "How-to & workflows", href: "#how-to" },
+  { label: "Organizers gids", href: "/blog/tool-organizers-3d-printen" },
 ]
 
 const QUICK_LINKS_EN = [
@@ -2050,6 +2091,7 @@ const QUICK_LINKS_EN = [
   { label: "Materials & pricing", href: "#materials-pricing" },
   { label: "Segments & cases", href: "#segments-cases" },
   { label: "How-to & workflows", href: "#how-to" },
+  { label: "Organizers guide", href: "/en/blog/tool-organizers-3d-printing" },
 ]
 
 const BLOG_COPY_NL = {
@@ -2241,7 +2283,16 @@ export default function BlogPage({ locale }: PageProps) {
   }
 
   const sortTopics = (list: Topic[], category: TopicCategory) => {
+    const hasDates = list.some((t) => t.date)
     const mode = SORT_PREFERENCE[category] ?? "featured"
+    if (hasDates) {
+      return [...list].sort((a, b) => {
+        if (a.date && b.date) return b.date.localeCompare(a.date)
+        if (a.date && !b.date) return -1
+        if (!a.date && b.date) return 1
+        return 0
+      })
+    }
     if (mode === "az") {
       return [...list].sort((a, b) => a.title.localeCompare(b.title))
     }
@@ -2541,6 +2592,12 @@ export default function BlogPage({ locale }: PageProps) {
               ))}
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <OrganizerCta locale={normalizedLocale === "en" ? "en" : "nl"} />
         </div>
       </section>
 

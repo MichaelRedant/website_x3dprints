@@ -7,6 +7,7 @@ import { MATERIAL_ORDER, MATERIAL_SLUGS, materialsByLocale } from "@/lib/materia
 import MaterialGrid from "@/components/MaterialGrid"
 import FaqPromo from "@/components/FaqPromo"
 import GlassCard from "@/components/GlassCard"
+import OrganizerCta from "@/components/OrganizerCta"
 import { MATERIAL_DETAILS } from "@/content/material-details"
 import MaterialSuggestionTool from "@/components/MaterialSuggestionTool"
 import { buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
@@ -404,6 +405,10 @@ export default function MaterialsPage({ locale }: PageProps) {
           </div>
         </div>
       </section>
+
+      <div className="px-6 pb-12 sm:px-8 lg:px-12">
+        <OrganizerCta locale={isEn ? "en" : "nl"} />
+      </div>
 
       {/* FAQ / Promo */}
       <section className="px-6 pb-12 sm:px-8 lg:px-12">

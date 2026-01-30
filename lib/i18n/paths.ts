@@ -6,6 +6,11 @@ const EN_PREFIX = "/en"
 const EN_PATHS = new Set<string>([
   "/",
   "/about",
+  "/organizers",
+  "/organizers/modugrid",
+  "/organizers/packout",
+  "/organizers/tstak",
+  "/organizers/custom",
   "/blog",
   "/contact",
   "/3d-printen",
@@ -77,7 +82,13 @@ const EN_BLOG_SLUGS = new Set<string>([
   "use-case-dinsdag-scholen",
   "use-case-dinsdag-stem",
   "use-case-dinsdag-tabletop",
+  "tool-organizers-3d-printing",
 ])
+
+// Map NL blog slugs naar hun ENG-equivalent zodat de taalswitch naar de juiste slug gaat
+const BLOG_SLUG_MAP_TO_EN: Record<string, string> = {
+  "tool-organizers-3d-printen": "tool-organizers-3d-printing",
+}
 
 const EXTERNAL_PREFIXES = ["http://", "https://", "mailto:", "tel:"]
 
@@ -137,6 +148,17 @@ export function localizeHref(href: string, locale: Locale) {
 
   if (locale === "en") {
     params.delete("lang")
+    // Blog slug mapping NL -> EN
+    if (normalizedPath.startsWith("/blog/")) {
+      const rest = normalizedPath.slice("/blog/".length)
+      const slug = rest.split("/")[0]
+      const mapped = BLOG_SLUG_MAP_TO_EN[slug]
+      if (mapped) {
+        const remainder = rest.slice(slug.length)
+        const localized = `/en/blog/${mapped}${remainder}`
+        return buildHref(localized, params, hash)
+      }
+    }
     if (path.startsWith(EN_PREFIX)) {
       return buildHref(path, params, hash)
     }

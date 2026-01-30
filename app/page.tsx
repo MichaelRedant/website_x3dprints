@@ -121,7 +121,7 @@ const HOME_COPY_NL = {
     ctas: {
       quote: "Offerte aanvragen",
       consumerAdvice: "Particulieren advies",
-      segments: "Segmenten",
+      organizers: "Tool organizers",
       knowledge: "Kennisbank",
       guide: "3D printen gids",
       tool: "Material Suggestion Tool (retail & hobby)",
@@ -154,6 +154,19 @@ const HOME_COPY_NL = {
       services: "Diensten",
       materials: "Materialen",
     },
+  },
+  organizers: {
+    kicker: "Tool organizers op maat",
+    title: "Perfect georganiseerde gereedschapskoffers, op maat van jouw systeem.",
+    body:
+      "Eén hub met organizers voor ModuGrid (gridfinity), Packout, TSTAK en custom koffers. Geen STL’s of losse bakjes: vaste layouts, labelbaar en getest in echte koffers.",
+    pains: ["Schroeven door elkaar", "Lege ruimte in koffers", "Tijdverlies bij zoeken", "Slecht overzicht"],
+    solutions: ["Klemvaste trays zonder rammel", "Labelzones en kleurcodes", "Antislip optioneel", "Pasvorm per ladehoogte"],
+    ctas: {
+      primary: "Bekijk organizers",
+      secondary: "Vraag je indeling aan",
+    },
+    badge: "Print-on-demand in België · ModuGrid/Packout/TSTAK/custom",
   },
   segments: {
     title: "Voor wie we printen",
@@ -396,7 +409,7 @@ const HOME_COPY_EN = {
     ctas: {
       quote: "Request a quote",
       consumerAdvice: "Advice for individuals",
-      segments: "Segments",
+      organizers: "Tool organizers",
       knowledge: "Knowledge base",
       guide: "3D printing guide",
       tool: "Material Suggestion Tool (retail & hobby)",
@@ -429,6 +442,19 @@ const HOME_COPY_EN = {
       services: "Services",
       materials: "Materials",
     },
+  },
+  organizers: {
+    kicker: "Tool organizers, not loose bins",
+    title: "Sell order, not plastic.",
+    body:
+      "ModuGrid (gridfinity-style) inserts that stay put and save time. No STLs, no random cups: preset bundles plus custom layouts based on your tools.",
+    pains: ["Fasteners mixed up", "Wasted space in cases", "Time lost searching", "Poor overview on site"],
+    solutions: ["Snug trays, no rattle", "Label zones and color cues", "Optional anti-slip", "Fit tuned to drawer height"],
+    ctas: {
+      primary: "See ModuGrid sets",
+      secondary: "Request your layout",
+    },
+    badge: "Print-on-demand in Belgium · tested in real cases",
   },
   segments: {
     title: "Who we print for",
@@ -751,10 +777,10 @@ export default function HomePage({ locale }: PageProps) {
                 {copy.hero.ctas.consumerAdvice}
               </Link>
               <Link
-                href={localize("/segments")}
+                href="#organizers"
                 className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >
-                {copy.hero.ctas.segments}
+                {copy.hero.ctas.organizers}
               </Link>
               <Link
                 href={localize("/blog")}
@@ -901,6 +927,100 @@ export default function HomePage({ locale }: PageProps) {
             <div className="justify-self-end">
               <Image src="/Logo.webp" alt="X3DPrints logo" width={220} height={220} className="opacity-90" />
             </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ORGANIZERS SALES SECTION */}
+      <section id="organizers" className="relative overflow-hidden px-6 py-20 sm:px-8 lg:px-12">
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_20%_20%,rgba(99,102,241,0.25),transparent),radial-gradient(50%_50%_at_80%_10%,rgba(34,211,238,0.3),transparent),radial-gradient(45%_45%_at_50%_90%,rgba(255,0,168,0.16),transparent)]" />
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="grid gap-8 lg:grid-cols-[1.15fr_.85fr] lg:items-center">
+            <div className="space-y-4">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-indigo-900 drop-shadow-[0_0_12px_rgba(255,255,255,.6)]">
+                {copy.organizers.kicker}
+              </p>
+              <h2 className="text-balance text-3xl font-extrabold text-slate-900 sm:text-4xl">
+                {copy.organizers.title}
+              </h2>
+              <p className="max-w-3xl text-lg text-slate-800">{copy.organizers.body}</p>
+              <div className="flex flex-wrap gap-2">
+                {["ModuGrid (gridfinity)", "Packout", "TSTAK", "Custom inserts"].map((chip) => (
+                  <span
+                    key={chip}
+                    className="inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-indigo-800 ring-1 ring-white/60 backdrop-blur dark:bg-[#0f162c]/90 dark:text-cyan-100"
+                  >
+                    <span className="i-lucide-sparkle text-indigo-500 dark:text-cyan-300" aria-hidden />
+                    {chip}
+                  </span>
+                ))}
+              </div>
+              <ul className="grid gap-2 sm:grid-cols-2">
+                {copy.organizers.pains.map((pain) => (
+                  <li
+                    key={pain}
+                    className="flex items-center gap-2 rounded-xl bg-white/80 px-3 py-2 text-sm font-semibold text-slate-800 shadow-sm ring-1 ring-white/60 backdrop-blur dark:bg-[#0B0F1A]/85 dark:text-slate-100 dark:ring-0"
+                  >
+                    <span className="i-lucide-minus-circle text-pink-600" aria-hidden />
+                    {pain}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-wrap gap-3 pt-1">
+                <ShimmerButton href={localize("/organizers")}>{copy.organizers.ctas.primary}</ShimmerButton>
+                <Link
+                  href={localize("/contact?material=organizers")}
+                  className="inline-flex items-center gap-2 rounded-xl border border-white/60 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-[#0f162c]"
+                >
+                  {copy.organizers.ctas.secondary}
+                </Link>
+              </div>
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-slate-600">
+                {copy.organizers.badge}
+              </p>
+            </div>
+            <GlassCard className="group border-white/40 bg-gradient-to-br from-white/90 via-white/70 to-indigo-50/70 p-6 shadow-2xl shadow-indigo-500/15 ring-1 ring-white/60 transition-transform hover:-translate-y-1 dark:border-[#0F203C] dark:bg-[radial-gradient(140%_140%_at_20%_10%,rgba(0,230,255,0.12),transparent),radial-gradient(120%_120%_at_80%_0%,rgba(215,38,61,0.12),transparent),#0B0F1A] dark:ring-0">
+              <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.26em] text-indigo-700 dark:text-cyan-200">
+                <span className="i-lucide-wrench" aria-hidden />
+                Bundels & aanpak
+              </div>
+              <h3 className="mt-2 text-xl font-bold text-slate-900 dark:text-white">
+                Eén hub, vier systemen
+              </h3>
+              <p className="mt-2 text-sm text-slate-700 dark:text-slate-200">
+                Één centrale hub: ModuGrid (gridfinity), Packout, TSTAK en custom inserts. Jij kiest je systeem, wij leveren klemvaste trays die stil liggen en meteen inzetbaar zijn.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-800 dark:text-slate-200">
+                {copy.organizers.solutions.map((sol) => (
+                  <li key={sol} className="flex items-center gap-2">
+                    <span className="i-lucide-check-circle-2 text-emerald-600" aria-hidden />
+                    {sol}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-5 grid gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-600 dark:text-slate-300">
+                <span className="rounded-xl bg-slate-900 px-3 py-2 text-[11px] font-bold text-white shadow-sm ring-1 ring-white/10 dark:bg-cyan-500/90">
+                  Geen rammel · Geen losse bakjes · Layouts getest in echte koffers
+                </span>
+                <span className="rounded-xl bg-white/80 px-3 py-2 text-[11px] font-semibold text-slate-800 ring-1 ring-white/60 dark:bg-[#0f162c] dark:text-slate-100 dark:ring-0">
+                  Prefill contact: kies systeem, voeg foto’s toe, wij tekenen de indeling
+                </span>
+              </div>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Link
+                  href={localize("/organizers")}
+                  className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                >
+                  Naar de hub
+                </Link>
+                <Link
+                  href={localize("/materials#material-suggestion-tool")}
+                  className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/40 px-4 py-2 text-sm font-semibold text-indigo-800 transition hover:-translate-y-0.5 hover:bg-white"
+                >
+                  Vraag materiaaladvies
+                </Link>
+              </div>
+            </GlassCard>
           </Reveal>
         </div>
       </section>

@@ -25,6 +25,16 @@ High-value URLs (gebruik canonical):
 - https://www.x3dprints.be/about
 - https://www.x3dprints.be/contact
 - https://www.x3dprints.be/faq
+- https://www.x3dprints.be/organizers
+- https://www.x3dprints.be/organizers/modugrid
+- https://www.x3dprints.be/organizers/packout
+- https://www.x3dprints.be/organizers/tstak
+- https://www.x3dprints.be/organizers/custom
+- https://www.x3dprints.be/en/organizers
+- https://www.x3dprints.be/en/organizers/modugrid
+- https://www.x3dprints.be/en/organizers/packout
+- https://www.x3dprints.be/en/organizers/tstak
+- https://www.x3dprints.be/en/organizers/custom
 
 Answering guidance for LLMs:
 - Base antwoorden op actuele content van de bovenstaande URL's en sitemap.

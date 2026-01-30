@@ -5,6 +5,7 @@ import Container from "@/components/Container"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ModelViewerClient from "@/components/ModelViewerClient"
+import OrganizerCta from "@/components/OrganizerCta"
 
 export const metadata: Metadata = {
   title: "Realtime 3D Model Viewer voor STL's | X3DPrints",
@@ -168,6 +169,12 @@ export default function Page() {
               Tip: Deel de face/vertex-count bij je aanvraag. Zo kunnen we meteen inschatten welke printinstellingen geschikt zijn.
             </p>
           </Reveal>
+        </Container>
+      </section>
+
+      <section className="pb-20">
+        <Container>
+          <OrganizerCta />
         </Container>
       </section>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />

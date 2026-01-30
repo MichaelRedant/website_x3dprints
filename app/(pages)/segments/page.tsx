@@ -4,6 +4,7 @@ import GlassCard from "@/components/GlassCard"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
+import OrganizerCta from "@/components/OrganizerCta"
 
 type SegmentCard = {
   slug: string
@@ -809,6 +810,10 @@ export default function SegmentsPage({ locale }: PageProps) {
             ))}
           </div>
         </GlassCard>
+      </section>
+
+      <section className="mx-auto mt-10 max-w-5xl px-2">
+        <OrganizerCta locale={normalizedLocale === "en" ? "en" : "nl"} />
       </section>
 
       <section className="mx-auto mt-12 max-w-4xl px-2">

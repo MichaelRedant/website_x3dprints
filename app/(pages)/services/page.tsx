@@ -16,6 +16,7 @@ import {
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import CtaBlock from "@/components/CtaBlock"
+import OrganizerCta from "@/components/OrganizerCta"
 import Faq from "@/components/Faq"
 import ShimmerButton from "@/components/ShimmerButton"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
@@ -879,6 +880,10 @@ export default function Page({ locale }: PageProps) {
       {/* CTA */}
       <div className="px-6 pb-12 sm:px-8 lg:px-12">
         <CtaBlock city={copy.cta.city} locale={normalizedLocale} />
+      </div>
+
+      <div className="px-6 pb-12 sm:px-8 lg:px-12">
+        <OrganizerCta locale={normalizedLocale === "en" ? "en" : "nl"} />
       </div>
 
       {/* FAQ */}

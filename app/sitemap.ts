@@ -111,6 +111,58 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { nl: "/3d-printen", en: "/en/3d-printen", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/3d-printen/page.tsx", "app/en/(pages)/3d-printen/page.tsx"] },
     { nl: "/services", en: "/en/services", changeFrequency: "monthly", priority: 0.8, sources: ["app/(pages)/services/page.tsx", "app/en/(pages)/services/page.tsx"] },
     { nl: "/materials", en: "/en/materials", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/materials/page.tsx", "app/en/(pages)/materials/page.tsx"] },
+    {
+      nl: "/organizers",
+      en: "/en/organizers",
+      changeFrequency: "weekly",
+      priority: 0.75,
+      sources: [
+        "app/(pages)/organizers/page.tsx",
+        "app/en/(pages)/organizers/page.tsx",
+        "content/organizer-details.ts",
+        "components/OrganizerBundles.tsx",
+      ],
+    },
+    {
+      nl: "/organizers/modugrid",
+      en: "/en/organizers/modugrid",
+      changeFrequency: "monthly",
+      priority: 0.7,
+      sources: [
+        "app/(pages)/organizers/modugrid/page.tsx",
+        "content/organizer-details.ts",
+      ],
+    },
+    {
+      nl: "/organizers/packout",
+      en: "/en/organizers/packout",
+      changeFrequency: "monthly",
+      priority: 0.7,
+      sources: [
+        "app/(pages)/organizers/packout/page.tsx",
+        "content/organizer-details.ts",
+      ],
+    },
+    {
+      nl: "/organizers/tstak",
+      en: "/en/organizers/tstak",
+      changeFrequency: "monthly",
+      priority: 0.7,
+      sources: [
+        "app/(pages)/organizers/tstak/page.tsx",
+        "content/organizer-details.ts",
+      ],
+    },
+    {
+      nl: "/organizers/custom",
+      en: "/en/organizers/custom",
+      changeFrequency: "monthly",
+      priority: 0.7,
+      sources: [
+        "app/(pages)/organizers/custom/page.tsx",
+        "content/organizer-details.ts",
+      ],
+    },
     { nl: "/pricing", en: "/en/pricing", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/pricing/page.tsx", "app/en/(pages)/pricing/page.tsx"] },
     { nl: "/portfolio", en: "/en/portfolio", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/portfolio/page.tsx", "app/en/(pages)/portfolio/page.tsx"] },
     { nl: "/valentijn-3d-printen", en: "/en/valentijn-3d-printen", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/valentijn-3d-printen/page.tsx", "app/en/(pages)/valentijn-3d-printen/page.tsx"] },

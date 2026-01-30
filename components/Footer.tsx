@@ -10,8 +10,8 @@ import { useLocale } from "./LocaleProvider"
 import { localizeHref } from "@/lib/i18n/paths"
 
 const socials = [
-  { href: "https://www.linkedin.com/company/x3dprints", label: "LinkedIn", icon: "linkedin" },
-  { href: "https://www.instagram.com/x3dprints", label: "Instagram", icon: "instagram" },
+  { href: "https://www.linkedin.com/in/michael-redant/", label: "LinkedIn", icon: "linkedin" },
+  { href: "https://www.instagram.com/x3d_prints/", label: "Instagram", icon: "instagram" },
 ]
 
 const googleReviewLink = "https://g.page/r/CSpxVPgHhTzZEAE/review"
@@ -38,6 +38,7 @@ const COPY = {
         { label: "Services", href: "/services" },
         { label: "3D printen", href: "/3d-printen" },
         { label: "Materialen", href: "/materials" },
+        { label: "Organizers", href: "/organizers" },
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segmenten", href: "/segments" },
         { label: "Blog & kennisbank", href: "/blog" },
@@ -84,6 +85,7 @@ const COPY = {
         { label: "Services", href: "/services" },
         { label: "3D printing", href: "/3d-printen" },
         { label: "Materials", href: "/materials" },
+        { label: "Organizers", href: "/organizers/modugrid" },
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segments", href: "/segments" },
         { label: "Blog & knowledge base", href: "/blog" },

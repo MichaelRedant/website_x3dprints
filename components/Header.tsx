@@ -12,16 +12,87 @@ import { useLocale } from "./LocaleProvider"
 import { localizeHref } from "@/lib/i18n/paths"
 import { cn } from "@/lib/utils"
 
+function DesktopDropdown({
+  group,
+  locale,
+  isActive,
+  hrefFn,
+  scrolled,
+}: {
+  group: { label: { nl: string; en: string }; items: { href: string; label: { nl: string; en: string } }[] }
+  locale: string
+  isActive: (href: string) => boolean
+  hrefFn: (href: string) => string
+  scrolled: boolean
+}) {
+  const label = locale === "en" ? group.label.en : group.label.nl
+  return (
+    <div className="group relative">
+      <button
+        type="button"
+        className={cn(
+          "group inline-flex items-center gap-1 px-3 py-2 text-sm font-semibold transition hover:text-slate-900 dark:text-[#e7f5ff] dark:hover:text-white md:text-[13px] lg:text-sm",
+          scrolled ? "text-slate-800" : "text-slate-700",
+        )}
+      >
+        <span className="relative drop-shadow-[0_0_12px_rgba(0,230,255,.4)] group-hover:drop-shadow-[0_0_16px_rgba(255,0,168,.5)]">
+          {label}
+        </span>
+        <span className="i-lucide-chevron-down text-xs opacity-80" aria-hidden />
+      </button>
+      <div className="pointer-events-none invisible absolute left-0 top-full z-[1200] w-64 translate-y-1 rounded-2xl border border-slate-200/70 bg-white/95 p-3 shadow-2xl shadow-slate-900/10 opacity-0 transition duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto dark:border-[#1f2336] dark:bg-[#0B0F1A]/95 dark:shadow-black/40">
+        <ul className="space-y-1 text-sm">
+          {group.items.map((item) => {
+            const href = hrefFn(item.href)
+            const active = isActive(item.href)
+            const itemLabel = locale === "en" ? item.label.en : item.label.nl
+            return (
+              <li key={item.href}>
+                <Link
+                  href={href}
+                  className={cn(
+                    "flex items-center justify-between rounded-xl px-3 py-2 transition hover:bg-slate-100 dark:hover:bg-[#111525]",
+                    active ? "bg-slate-100 font-semibold dark:bg-[#111525]" : "text-slate-700 dark:text-slate-200",
+                  )}
+                >
+                  {itemLabel}
+                  {active ? <span className="i-lucide-dot text-cyan-500" aria-hidden /> : null}
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+    </div>
+  )
+}
 
-const NAV = [
-  { href: "/services", label: { nl: "Services", en: "Services" } },
+const PRIMARY_LINKS = [
   { href: "/materials", label: { nl: "Materialen", en: "Materials" } },
-  { href: "/viewer", label: { nl: "3D Viewer", en: "3D Viewer" } },
   { href: "/portfolio", label: { nl: "Portfolio", en: "Portfolio" } },
-  { href: "/about", label: { nl: "Over ons", en: "About" } },
   { href: "/pricing", label: { nl: "Prijzen", en: "Pricing" } },
-  { href: "/3d-modellen-vinden", label: { nl: "3D modellen", en: "3D models" } },
 ]
+
+const SERVICES_GROUP = {
+  label: { nl: "Diensten", en: "Services" },
+  items: [
+    { href: "/services", label: { nl: "Onze services", en: "Our services" } },
+    { href: "/3d-modelleren", label: { nl: "3D modelleren", en: "3D modelling" } },
+    { href: "/segments", label: { nl: "Segmenten", en: "Segments" } },
+    { href: "/viewer", label: { nl: "3D viewer", en: "3D viewer" } },
+    { href: "/3d-modellen-vinden", label: { nl: "Vind mijn 3D model", en: "Find my 3D model" } },
+  ],
+}
+
+const APPLICATIONS_GROUP = {
+  label: { nl: "Toepassingen", en: "Use cases" },
+  items: [
+    { href: "/blog", label: { nl: "Kennisbank", en: "Knowledge base" } },
+    { href: "/organizers", label: { nl: "Organizers", en: "Organizers" } },
+    { href: "/3d-printen", label: { nl: "3D printen", en: "3D printing" } },
+    { href: "/about", label: { nl: "Over ons", en: "About" } },
+  ],
+}
 
 export default function Header() {
   const { locale } = useLocale()
@@ -121,17 +192,19 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-3 lg:flex lg:overflow-x-auto lg:overflow-y-visible lg:whitespace-nowrap lg:px-1 lg:-mx-1">
-          {NAV.map((item) => {
+        <nav className="hidden items-center gap-2 lg:flex lg:whitespace-nowrap lg:px-1 lg:-mx-1">
+          <DesktopDropdown group={SERVICES_GROUP} locale={locale} isActive={isActive} hrefFn={localizedHref} scrolled={scrolled} />
+          <DesktopDropdown group={APPLICATIONS_GROUP} locale={locale} isActive={isActive} hrefFn={localizedHref} scrolled={scrolled} />
+          {PRIMARY_LINKS.map((item) => {
             const active = isActive(item.href)
-            const label = locale === "en" ? item.label.en : item.label.nl
-            const href = localizedHref(item.href)
+                    const label = locale === "en" ? item.label.en : item.label.nl
+                    const href = localizedHref(item.href)
             return (
               <Link
                 key={item.href}
                 href={href}
                 className={cn(
-                  "group relative px-3 py-2 text-sm font-semibold transition hover:text-slate-900 dark:text-[#e7f5ff] dark:hover:text-white dark:tracking-[0.12em] dark:uppercase dark:bg-transparent dark:shadow-none md:text-[13px] lg:text-sm",
+                  "group relative px-3 py-2 text-sm font-semibold transition hover:text-slate-900 dark:text-[#e7f5ff] dark:hover:text-white md:text-[13px] lg:text-sm",
                   scrolled ? "text-slate-800" : "text-slate-700",
                 )}
               >
@@ -225,27 +298,85 @@ export default function Header() {
                   </button>
                 </div>
 
-                <div className="mt-2 grid gap-1">
-                  {NAV.map((item) => {
-                    const active = isActive(item.href)
-                    const label = locale === "en" ? item.label.en : item.label.nl
-                    const href = localizedHref(item.href)
-                    return (
-                      <Link
-                        key={item.href}
-                        href={href}
-                        onClick={() => setOpen(false)}
-                        className={[
-                          "rounded-xl px-3 py-2.5 text-base font-medium transition",
-                          active
-                            ? "bg-white text-slate-900 shadow-sm dark:bg-[#111525] dark:text-white"
-                            : "text-slate-700 hover:bg-white hover:text-slate-900 dark:text-slate-200 dark:hover:bg-[#111525] dark:hover:text-white",
-                        ].join(" ")}
-                      >
-                        {label}
-                      </Link>
-                    )
-                  })}
+                <div className="mt-2 grid gap-3">
+                  <div>
+                    <p className="px-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">Diensten</p>
+                    <div className="mt-1 grid gap-1">
+                      {SERVICES_GROUP.items.map((item) => {
+                        const href = localizedHref(item.href)
+                        const label = locale === "en" ? item.label.en : item.label.nl
+                        const active = isActive(item.href)
+                        return (
+                          <Link
+                            key={item.href}
+                            href={href}
+                            onClick={() => setOpen(false)}
+                            className={[
+                              "rounded-xl px-3 py-2.5 text-base font-medium transition",
+                              active
+                                ? "bg-white text-slate-900 shadow-sm dark:bg-[#111525] dark:text-white"
+                                : "text-slate-700 hover:bg-white hover:text-slate-900 dark:text-slate-200 dark:hover:bg-[#111525] dark:hover:text-white",
+                            ].join(" ")}
+                          >
+                            {label}
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="px-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">Toepassingen</p>
+                    <div className="mt-1 grid gap-1">
+                      {APPLICATIONS_GROUP.items.map((item) => {
+                        const href = localizedHref(item.href)
+                        const label = locale === "en" ? item.label.en : item.label.nl
+                        const active = isActive(item.href)
+                        return (
+                          <Link
+                            key={item.href}
+                            href={href}
+                            onClick={() => setOpen(false)}
+                            className={[
+                              "rounded-xl px-3 py-2.5 text-base font-medium transition",
+                              active
+                                ? "bg-white text-slate-900 shadow-sm dark:bg-[#111525] dark:text-white"
+                                : "text-slate-700 hover:bg-white hover:text-slate-900 dark:text-slate-200 dark:hover:bg-[#111525] dark:hover:text-white",
+                            ].join(" ")}
+                          >
+                            {label}
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="px-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">Meer</p>
+                    <div className="mt-1 grid gap-1">
+                      {PRIMARY_LINKS.map((item) => {
+                        const href = localizedHref(item.href)
+                        const label = locale === "en" ? item.label.en : item.label.nl
+                        const active = isActive(item.href)
+                        return (
+                          <Link
+                            key={item.href}
+                            href={href}
+                            onClick={() => setOpen(false)}
+                            className={[
+                              "rounded-xl px-3 py-2.5 text-base font-medium transition",
+                              active
+                                ? "bg-white text-slate-900 shadow-sm dark:bg-[#111525] dark:text-white"
+                                : "text-slate-700 hover:bg-white hover:text-slate-900 dark:text-slate-200 dark:hover:bg-[#111525] dark:hover:text-white",
+                            ].join(" ")}
+                          >
+                            {label}
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  </div>
+
                   <div className="mt-2">
                     <Suspense fallback={null}>
                       <LanguageSwitcher className="w-full justify-between" />
