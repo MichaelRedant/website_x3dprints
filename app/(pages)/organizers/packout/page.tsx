@@ -94,17 +94,20 @@ export default function PackoutPage() {
                 className="h-auto w-full object-cover"
               />
             </div>
-            <div className="flex flex-wrap gap-3 text-sm">
-              <a href="#bundles" className="underline decoration-cyan-400 hover:decoration-cyan-700">
-                Bundels & presets
-              </a>
-              <a href="#carousel" className="underline decoration-cyan-400 hover:decoration-cyan-700">
-                Foto’s
-              </a>
-              <a href="#faq" className="underline decoration-cyan-400 hover:decoration-cyan-700">
-                FAQ
-              </a>
-            </div>
+          <div className="flex flex-wrap gap-3 text-sm">
+            <a href="#bundles" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+              Bundels & presets
+            </a>
+            <a href="#carousel" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+              Foto’s
+            </a>
+            <a href="#faq" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+              FAQ
+            </a>
+            <Link href="/blog/tool-organizers-3d-printen" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+              Organizers blog
+            </Link>
+          </div>
           </div>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">

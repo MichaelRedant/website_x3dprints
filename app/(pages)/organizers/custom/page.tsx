@@ -109,6 +109,13 @@ export default function CustomOrganizerPage() {
               >
                 Bekijk materialen
               </Link>
+              <Link
+                href="/blog/tool-organizers-3d-printen"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900 dark:border-slate-700 dark:text-slate-100"
+              >
+                Organizers blog
+                <span className="i-lucide-book-open" aria-hidden />
+              </Link>
               <a href="#faq" className="underline decoration-cyan-400 hover:decoration-cyan-700">
                 FAQ
               </a>

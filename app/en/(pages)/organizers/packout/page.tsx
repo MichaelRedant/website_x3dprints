@@ -173,6 +173,9 @@ export default function PackoutPageEn() {
               <a href="#faq" className="underline decoration-amber-400 hover:decoration-amber-700">
                 FAQ
               </a>
+              <Link href="/en/blog/tool-organizers-3d-printing" className="underline decoration-amber-400 hover:decoration-amber-700">
+                Organizers blog
+              </Link>
             </div>
           </div>
 

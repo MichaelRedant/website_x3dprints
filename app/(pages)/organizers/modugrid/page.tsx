@@ -37,17 +37,17 @@ export default function ModuGridPage() {
   const contactHref = buildOrganizerContactHref(PAGE.slug)
   const schemas = buildOrganizerSchemas(PAGE, PAGE_URL)
   const carouselItems = [
-    { src: "/images/organizers/modugrid/ModuGrid1.jpg", alt: "ModuGrid lade overzicht (gridfinity alternatief)", width: 1200, height: 900 },
-    { src: "/images/organizers/modugrid/ModuGrid2.jpg", alt: "ModuGrid lade met schroeven en bits (tool organizer op maat)", width: 1200, height: 900 },
-    { src: "/images/organizers/modugrid/ModuGrid3.webp", alt: "ModuGrid lade met bits en schroeven, labelbaar", width: 1200, height: 900 },
-    { src: "/images/organizers/modugrid/ModuGrid4.webp", alt: "ModuGrid bakjes voor bureau tools en EDC", width: 1200, height: 900 },
-    { src: "/images/organizers/modugrid/ModuGrid5.webp", alt: "ModuGrid detail met labels en antislip", width: 1200, height: 900 },
-    { src: "/images/organizers/modugrid/ModuGrid6.webp", alt: "ModuGrid insert met antislip, klaar voor transport", width: 1200, height: 900 },
-    { src: "/images/organizers/modugrid/ModuGrid7.webp", alt: "ModuGrid lade tijdens gebruik, snelle toegang", width: 1200, height: 900 },
-    { src: "/images/organizers/modugrid/ModuGrid8.webp", alt: "ModuGrid custom vak voor multimeter en probes", width: 1200, height: 900 },
-    { src: "/images/organizers/modugrid/ModuGrid9.webp", alt: "ModuGrid baseplate met gemengde bakjes (toolbox inlay op maat)", width: 1200, height: 900 },
-    { src: "/images/organizers/modugrid/ModuGrid10.webp", alt: "ModuGrid hobby setup voor verf en miniaturen", width: 1200, height: 900 },
-    { src: "/images/organizers/modugrid/ModuGrid11.webp", alt: "ModuGrid lade met tools en labels, gridfinity compatibel", width: 1200, height: 900 },
+    { src: "/images/organizers/modugrid/ModuGrid1.jpg", alt: "Gridfinity lade overzicht (gridfinity alternatief)", width: 1200, height: 900 },
+    { src: "/images/organizers/modugrid/ModuGrid2.jpg", alt: "Gridfinity lade met schroeven en bits (tool organizer op maat)", width: 1200, height: 900 },
+    { src: "/images/organizers/modugrid/ModuGrid3.webp", alt: "Gridfinity lade met bits en schroeven, labelbaar", width: 1200, height: 900 },
+    { src: "/images/organizers/modugrid/ModuGrid4.webp", alt: "Gridfinity bakjes voor bureau tools en EDC", width: 1200, height: 900 },
+    { src: "/images/organizers/modugrid/ModuGrid5.webp", alt: "Gridfinity detail met labels en antislip", width: 1200, height: 900 },
+    { src: "/images/organizers/modugrid/ModuGrid6.webp", alt: "Gridfinity insert met antislip, klaar voor transport", width: 1200, height: 900 },
+    { src: "/images/organizers/modugrid/ModuGrid7.webp", alt: "Gridfinity lade tijdens gebruik, snelle toegang", width: 1200, height: 900 },
+    { src: "/images/organizers/modugrid/ModuGrid8.webp", alt: "Gridfinity custom vak voor multimeter en probes", width: 1200, height: 900 },
+    { src: "/images/organizers/modugrid/ModuGrid9.webp", alt: "Gridfinity baseplate met gemengde bakjes (toolbox inlay op maat)", width: 1200, height: 900 },
+    { src: "/images/organizers/modugrid/ModuGrid10.webp", alt: "Gridfinity hobby setup voor verf en miniaturen", width: 1200, height: 900 },
+    { src: "/images/organizers/modugrid/ModuGrid11.webp", alt: "Gridfinity lade met tools en labels, gridfinity compatibel", width: 1200, height: 900 },
   ]
   const imageObjects = carouselItems.slice(0, 5).map((img) => ({
     "@context": "https://schema.org",
@@ -77,7 +77,7 @@ export default function ModuGridPage() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-20">
         <Reveal className="space-y-6">
           <div className="inline-flex items-center gap-2 rounded-full bg-cyan-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-800 ring-1 ring-cyan-100 dark:bg-[#0f162c] dark:text-cyan-200">
-            ModuGrid · gridfinity-stijl zonder losse bakjes
+            Gridfinity · open-source raster zonder losse bakjes
           </div>
 
           <div className="space-y-4">
@@ -89,25 +89,32 @@ export default function ModuGridPage() {
               {PAGE.intro} Een gridfinity compatibel alternatief als toolbox inlay op maat, gemaakt in Vlaanderen/België
               (regio Gent/Aalst) met focus op pasvorm en snelheid in gebruik.
             </p>
+            <p className="max-w-3xl text-slate-700 dark:text-slate-200">
+              Elk standaard bakje kan ook custom: stuur foto + maten en we modelleren een eigen pocket met labelrand en antislip,
+              zodat elke unieke tool exact past.
+            </p>
 
-            <div className="flex flex-wrap gap-3 text-sm">
-              <a href="#bundles" className="underline decoration-cyan-400 hover:decoration-cyan-700">
-                Bundels & presets
-              </a>
-              <a href="#carousel" className="underline decoration-cyan-400 hover:decoration-cyan-700">
-                Foto’s
-              </a>
-              <a href="#faq" className="underline decoration-cyan-400 hover:decoration-cyan-700">
-                FAQ
-              </a>
-            </div>
+          <div className="flex flex-wrap gap-3 text-sm">
+            <a href="#bundles" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+              Bundels & presets
+            </a>
+            <a href="#carousel" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+              Foto’s
+            </a>
+            <a href="#faq" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+              FAQ
+            </a>
+            <Link href="/blog/gridfinity-modulair-opslagsysteem" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+              Gridfinity gids
+            </Link>
+          </div>
           </div>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
             <div className="flex flex-wrap gap-3">
               <Link href={contactHref} className="no-underline">
                 <div className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:brightness-110 dark:bg-cyan-500">
-                  Plan een indeling voor ModuGrid
+                  Plan een Gridfinity indeling
                   <span className="i-lucide-arrow-right" aria-hidden />
                 </div>
               </Link>
@@ -150,13 +157,13 @@ export default function ModuGridPage() {
         <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
           <div className="grid gap-4 lg:grid-cols-[1.1fr_.9fr] lg:items-start">
             <div className="space-y-3">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700">Wat is ModuGrid?</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700">Wat is Gridfinity?</p>
               <h2 className="text-xl font-bold text-slate-900 dark:text-white">
                 Modulaire basis (gridfinity-stijl) voor bureau, lade of koffer
               </h2>
 
               <p className="text-slate-700 dark:text-slate-200">
-                ModuGrid is een raster van baseplates met modulaire vakken. Je schuift trays en inserts per “grid unit”
+                Gridfinity is een open-source raster van baseplates met modulaire vakken. Je schuift trays en inserts per “grid unit”
                 op hun plek, zodat alles strak zit en snel terug te vinden is. Ideaal voor bureaulades, werkbanken,
                 servicekoffers en makerspaces: elke tool krijgt een vaste positie zonder rammel.
               </p>
@@ -331,7 +338,7 @@ export default function ModuGridPage() {
                 <h2 className="text-xl font-bold text-slate-900 dark:text-white">Standaard bakjes of eigen vak per tool</h2>
 
                 <p className="text-slate-700 dark:text-slate-200">
-                  ModuGrid heeft standaard trays, maar je kan ook per tool een eigen vak laten maken. Zo ligt elke tang,
+                  Gridfinity heeft standaard trays, maar je kan ook per tool een eigen vak laten maken. Zo ligt elke tang,
                   meter of bitset altijd “juist”, zonder dat je moet duwen, proppen of zoeken.
                 </p>
               </div>
@@ -364,7 +371,7 @@ export default function ModuGridPage() {
 
       <div className="mx-auto max-w-5xl px-4 py-12 sm:py-16">
         <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
-          <Faq items={PAGE.faq} title="Veelgestelde vragen over ModuGrid organizers" className="mt-0" />
+          <Faq items={PAGE.faq} title="Veelgestelde vragen over Gridfinity organizers" className="mt-0" />
         </Reveal>
 
         <div className="mt-8 flex flex-col gap-3 rounded-2xl border border-slate-100 bg-slate-900 px-5 py-6 text-white shadow-lg shadow-slate-900/30 dark:border-slate-800">
@@ -382,7 +389,7 @@ export default function ModuGridPage() {
                 href={contactHref}
                 className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5"
               >
-                Offerte met ModuGrid prefill
+                Offerte met Gridfinity prefill
                 <span className="i-lucide-arrow-right" aria-hidden />
               </Link>
 
@@ -408,14 +415,14 @@ export default function ModuGridPage() {
             {
               "@context": "https://schema.org",
               "@type": "HowTo",
-              name: "Custom ModuGrid vak aanvragen",
+              name: "Custom Gridfinity vak aanvragen",
               description: "Vraag een custom bakje per tool aan met foto en maten.",
               step: [
                 { "@type": "HowToStep", position: 1, name: "Maak foto", text: "Foto van de tool van bovenaf in open koffer of op papier." },
                 { "@type": "HowToStep", position: 2, name: "Noteer maten", text: "Lengte, breedte en hoogte (of diameter x hoogte) in millimeter." },
                 { "@type": "HowToStep", position: 3, name: "Kies positie", text: "Geef aan of de tool plat of rechtop moet liggen." },
                 { "@type": "HowToStep", position: 4, name: "Aantal stuks", text: "Meld hoeveel identieke tools in dezelfde lade moeten passen." },
-                { "@type": "HowToStep", position: 5, name: "Stuur door", text: "Upload alles via het contactformulier (prefill ModuGrid)." },
+                { "@type": "HowToStep", position: 5, name: "Stuur door", text: "Upload alles via het contactformulier (prefill Gridfinity)." },
               ],
               tool: ["Foto", "Meetlat of schuifmaat"],
               totalTime: "PT10M",

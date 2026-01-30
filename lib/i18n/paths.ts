@@ -83,11 +83,13 @@ const EN_BLOG_SLUGS = new Set<string>([
   "use-case-dinsdag-stem",
   "use-case-dinsdag-tabletop",
   "tool-organizers-3d-printing",
+  "gridfinity-modular-storage-system",
 ])
 
 // Map NL blog slugs naar hun ENG-equivalent zodat de taalswitch naar de juiste slug gaat
 const BLOG_SLUG_MAP_TO_EN: Record<string, string> = {
   "tool-organizers-3d-printen": "tool-organizers-3d-printing",
+  "gridfinity-modulair-opslagsysteem": "gridfinity-modular-storage-system",
 }
 
 const EXTERNAL_PREFIXES = ["http://", "https://", "mailto:", "tel:"]

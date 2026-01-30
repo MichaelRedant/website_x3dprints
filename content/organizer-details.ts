@@ -6,16 +6,16 @@ export const ORGANIZER_SLUGS: OrganizerSlug[] = ["modugrid", "packout", "tstak",
 export const ORGANIZER_PAGES: Record<OrganizerSlug, OrganizerPageContent> = {
   modugrid: {
     slug: "modugrid",
-    systemName: "ModuGrid (gridfinity-stijl)",
-    heroTitle: "Organizers op maat voor jouw ModuGrid / gridfinity setup",
-    heroSubtitle: "Geen gerammel. Geen tijdverlies. Alles perfect op zijn plaats.",
+    systemName: "Gridfinity",
+    heroTitle: "Organizers op maat voor jouw Gridfinity setup",
+    heroSubtitle: "Open-source grid, geen gerammel. Eén vaste plek per tool.",
     intro:
-      "Voor lades, bureaus, werkbanken en koffers die volgens het gridfinity-principe (ModuGrid) werken. Jij kiest de tools, wij leveren een rustige, vaste indeling op maat. Voor hobbyisten én professionals.",
+      "Voor lades, bureaus, werkbanken en koffers die volgens het gridfinity-principe werken. Jij kiest de tools, wij leveren een rustige, vaste indeling op maat. Voor hobbyisten én professionals.",
     summary:
-      "Prefab sets voor bits, schroeven en elektriciensmateriaal. Elk standaard bakje kan ook custom per tool: foto + maten doorgeven en we modelleren een eigen vak.",
+      "Prefab sets voor bits, schroeven en elektriciensmateriaal. Elke pocket kan ook custom per tool: foto + maten doorgeven en we modelleren een eigen vak met label en antislip-optie.",
     pains: ["Schroeven door elkaar", "Lege ruimte in koffers", "Tijdverlies bij zoeken", "Slecht overzicht"],
     steps: [
-      { title: "Kies je systeem", description: "ModuGrid raster met jouw lade- of kofferafmetingen als startpunt." },
+      { title: "Kies je systeem", description: "Gridfinity raster met jouw lade- of kofferafmetingen als startpunt." },
       { title: "Selecteer wat je wil opbergen", description: "Schroeven, bits, Wago-klemmen, accu's, drivers of meettools." },
       { title: "Wij modelleren & printen op maat", description: "Pasvorm afgestemd op jouw vakhoogte, met antislip-optie." },
       { title: "Klaar voor gebruik", description: "Vastzittende trays, labelzones en geen rammel onderweg." },
@@ -51,7 +51,7 @@ export const ORGANIZER_PAGES: Record<OrganizerSlug, OrganizerPageContent> = {
       },
     ],
     priceCopy:
-      "Transparant maatwerk: prijs op aanvraag, afhankelijk van indeling en materiaal (PLA of PETG). Made-to-order, past perfect in jouw ModuGrid raster.",
+      "Transparant maatwerk: prijs op aanvraag, afhankelijk van indeling en materiaal (PLA of PETG). Made-to-order, past perfect in jouw Gridfinity raster.",
     upsells: ["PETG upgrade voor impact", "Antislip bodem", "Naam of label in print", "Extra vakje voor later"],
     proofPoints: [
       " Ontworpen op basis van jouw koffer- of ladematen",
@@ -61,7 +61,7 @@ export const ORGANIZER_PAGES: Record<OrganizerSlug, OrganizerPageContent> = {
     ],
     faq: [
       {
-        q: "Moet ik zelf STL-bestanden aanleveren voor ModuGrid inserts",
+        q: "Moet ik zelf STL-bestanden aanleveren voor Gridfinity inserts",
         a: "Nee. Jij geeft door welke tools of schroeven erin moeten en de binnenmaten van je lade of koffer. Wij modelleren de indeling en leveren plug-and-play trays.",
       },
       {
@@ -73,26 +73,26 @@ export const ORGANIZER_PAGES: Record<OrganizerSlug, OrganizerPageContent> = {
         a: "Zeker. Kies bij bestelling voor een extra vakje of naam/label in de print. Heb je al een set We kunnen aanvullende modules bijprinten met dezelfde pasvorm.",
       },
       {
-        q: "Is ModuGrid alleen voor werkmannen",
+        q: "Is Gridfinity alleen voor werkmannen",
         a: "Nee. Het past net zo goed in bureaulades, hobby- en makersruimtes, ESD-stations voor elektronica, verf/miniaturen-opslag, naai- en craft-koffers, of educatieve STEM-sets.",
       },
       {
         q: "Hoe vraag ik een custom vak voor een specifieke tool aan",
-        a: "Stuur een foto van de tool van bovenaf, vermeld lengte/breedte/hoogte (of diameter), hoe de tool moet liggen (plat/rechtop) en hoeveel stuks in dezelfde lade. Wij modelleren het vak en sturen een voorstel ter bevestiging.",
+        a: "Stuur een foto van de tool van bovenaf, vermeld lengte/breedte/hoogte (of diameter), hoe de tool moet liggen (plat/rechtop) en hoeveel stuks in dezelfde lade. Wij modelleren het vak, sturen een preview en passen aan tot het klopt.",
       },
       {
-        q: "Welk materiaal raden jullie aan voor ModuGrid bakjes",
+        q: "Welk materiaal raden jullie aan voor Gridfinity bakjes",
         a: "PLA Matte voor een strakke look in bureaulades, PETG voor koffers en transport. Antislip-bodem en ingegoten labels zijn optionele upgrades.",
       },
       {
-        q: "Hoe snel kan ik mijn ModuGrid set krijgen",
+        q: "Hoe snel kan ik mijn Gridfinity set krijgen",
         a: "Na je intake (foto + maten) plannen we de batch in. Meestal enkele werkdagen afhankelijk van het aantal vakken en materiaal. We communiceren upfront over timing.",
       },
     ],
     seo: {
-      title: "ModuGrid organizers op maat | X3DPrints",
-      description:
-        "ModuGrid (gridfinity) organizers voor bureaulades, werkbanken en koffers. Prefab sets + custom vak per tool, labelzones en antislip. Gridfinity alternatief, toolbox inlay op maat in België (Gent/Aalst).",
+    title: "Gridfinity organizers op maat | X3DPrints",
+    description:
+      "Gridfinity organizers voor bureaulades, werkbanken en koffers. Prefab sets + custom vak per tool, labelzones en antislip. Toolbox inlay op maat in België (Gent/Aalst).",
       canonical: "https://www.x3dprints.be/organizers/modugrid",
       ogImage: "/images/organizers/modugrid/ModuGrid3.webp",
     },
@@ -268,7 +268,7 @@ export const ORGANIZER_PAGES: Record<OrganizerSlug, OrganizerPageContent> = {
     heroTitle: "Custom toolbox inserts met foto + lijst",
     heroSubtitle: "Parametrisch ontwerp op basis van jouw koffer en tools.",
     intro:
-      "Geen Packout/ModuGrid/TSTAK We modelleren een insert op maat met jouw foto, maten en tool-lijst. Geschikt voor hobbyisten en professionals met unieke koffers.",
+      "Geen Packout/Gridfinity/TSTAK We modelleren een insert op maat met jouw foto, maten en tool-lijst. Geschikt voor hobbyisten en professionals met unieke koffers.",
     summary: "Upload foto en afmetingen, wij sturen een preview en printen on-demand.",
     pains: ["Onregelmatige tools", "Geen passend raster", "Meetwerk zonder guidance", "Tijdverlies door zoeken"],
     steps: [

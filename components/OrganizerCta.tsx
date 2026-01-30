@@ -8,9 +8,9 @@ const copy = {
   nl: {
     kicker: "Tool organizers op maat",
     title: "Perfect georganiseerde gereedschapskoffers, op maat van jouw systeem.",
-    body: "ModuGrid (gridfinity alternatief), Milwaukee Packout, TSTAK en volledig custom inserts. Geen rammel, labelbaar, antislip optioneel.",
+    body: "Gridfinity, Milwaukee Packout, TSTAK en volledig custom inserts. Geen rammel, labelbaar, antislip optioneel.",
     bullets: [
-      "ModuGrid · gridfinity-stijl voor lades/bureaus/koffers",
+      "Gridfinity · open-source grid voor lades/bureaus/koffers",
       "Packout inlays die stil blijven in de camionette",
       "TSTAK inserts met labelzones en antislip",
       "Custom pegboard/Skådis, bins of parametric organizers",
@@ -22,9 +22,9 @@ const copy = {
   en: {
     kicker: "Tool organizers, made to fit",
     title: "Perfectly organized tool cases, tailored to your system.",
-    body: "ModuGrid (gridfinity-style), Milwaukee Packout, TSTAK and fully custom inserts. No rattle, label-ready, anti-slip optional.",
+    body: "Gridfinity, Milwaukee Packout, TSTAK and fully custom inserts. No rattle, label-ready, anti-slip optional.",
     bullets: [
-      "ModuGrid · gridfinity-style for drawers/desks/cases",
+      "Gridfinity · open-source grid for drawers/desks/cases",
       "Packout inlays that stay quiet in the van",
       "TSTAK inserts with label zones and anti-slip",
       "Custom pegboard/Skådis, bins or parametric organizers",

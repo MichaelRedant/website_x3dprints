@@ -21,7 +21,7 @@ const PAGE_EN: OrganizerPageContent = {
   heroTitle: "Custom toolbox inserts with photo + list",
   heroSubtitle: "Parametric design based on your case and tools.",
   intro:
-    "No Packout/ModuGrid/TSTAK? We design a made-to-fit insert with your photo, measurements and tool list. For hobbyists and professionals with unique cases.",
+    "No Packout/Gridfinity/TSTAK? We design a made-to-fit insert with your photo, measurements and tool list. For hobbyists and professionals with unique cases.",
   summary: "Upload a photo and dimensions, we send a preview and print on demand.",
 }
 const FAQ_EN = [

@@ -7,9 +7,9 @@ const canonical = "https://www.x3dprints.be/blog/tool-organizers-3d-printen"
 const publishedDate = "2026-01-29T08:00:00+01:00"
 
 export const metadata: Metadata = {
-  title: "Tool organizers 3D printen: ModuGrid, Packout, TSTAK & custom | X3DPrints",
+  title: "Tool organizers 3D printen: Gridfinity, Packout, TSTAK & custom | X3DPrints",
   description:
-    "Uitgebreide gids over 3D-geprinte tool organizers: intake, materiaalkeuze, labelzones, antislip en wanneer je kiest voor ModuGrid, Packout, TSTAK of custom (Skådis/pegboard).",
+    "Uitgebreide gids over 3D-geprinte tool organizers: intake, materiaalkeuze, labelzones, antislip en wanneer je kiest voor Gridfinity, Packout, TSTAK of custom (Skådis/pegboard).",
   alternates: {
     canonical,
     languages: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tool organizers 3D printen | X3DPrints",
     description:
-      "Alles wat je moet weten over 3D-geprinte organizers: gridfinity-stijl (ModuGrid), Packout, TSTAK en custom inserts met labels en antislip.",
+      "Alles wat je moet weten over 3D-geprinte organizers: gridfinity-stijl (Gridfinity), Packout, TSTAK en custom inserts met labels en antislip.",
     url: canonical,
     type: "article",
     publishedTime: publishedDate,
@@ -38,7 +38,7 @@ export default function ToolOrganizersBlog() {
         <header className="space-y-4 pt-10 sm:pt-14">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-700">Organizers · gids</p>
           <h1 className="text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
-            Tool organizers 3D printen: ModuGrid, Packout, TSTAK en custom
+            Tool organizers 3D printen: Gridfinity, Packout, TSTAK en custom
           </h1>
           <p className="text-lg text-slate-700 dark:text-slate-200">
             Zo kies je het juiste systeem, stuur je een perfecte intake en krijg je een organizer die niet rammelt. Inclusief
@@ -64,7 +64,7 @@ export default function ToolOrganizersBlog() {
             </li>
             <li className="flex gap-2 rounded-xl border border-slate-200 bg-white/80 p-3 shadow-sm dark:border-slate-700 dark:bg-[#0B0F1A]/80">
               <span className="i-lucide-ruler text-cyan-600" aria-hidden />
-              Binnenmaten L×B×H in mm; bij ModuGrid: raster + vakhoogte.
+              Binnenmaten L×B×H in mm; bij Gridfinity: raster + vakhoogte.
             </li>
             <li className="flex gap-2 rounded-xl border border-slate-200 bg-white/80 p-3 shadow-sm dark:border-slate-700 dark:bg-[#0B0F1A]/80">
               <span className="i-lucide-wrench text-cyan-600" aria-hidden />
@@ -88,7 +88,7 @@ export default function ToolOrganizersBlog() {
           <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Welke organizer kies je?</h3>
           <div className="grid gap-4 md:grid-cols-2">
             <div>
-              <p className="text-sm font-semibold text-cyan-700">ModuGrid (gridfinity-stijl)</p>
+              <p className="text-sm font-semibold text-cyan-700">Gridfinity (gridfinity-stijl)</p>
               <p className="text-sm text-slate-700 dark:text-slate-200">
                 Raster- en bakjessysteem voor lades, bureaus en koffers. Perfect voor bits, schroeven, EDC en hobby. Custom vakjes
                 per tool zijn eenvoudig dankzij het grid. Gridfinity werd populair gemaakt door Zack Freedman
@@ -185,7 +185,7 @@ export default function ToolOrganizersBlog() {
             <GlassCard className="border border-white/50 bg-white/85 p-4 text-sm dark:border-slate-800 dark:bg-[#0B0F1A]/80">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">Hobby/desk</p>
               <p className="mt-2 text-slate-700 dark:text-slate-200">
-                ModuGrid (gridfinity-stijl) voor bits, EDC en soldeer-accessoires. Kleurcodes per categorie, labelbare rand, één
+                Gridfinity (gridfinity-stijl) voor bits, EDC en soldeer-accessoires. Kleurcodes per categorie, labelbare rand, één
                 custom vak voor je multimeter.
               </p>
             </GlassCard>
@@ -228,7 +228,7 @@ export default function ToolOrganizersBlog() {
               <Link href="/organizers">Organizers hub</Link>
             </li>
             <li>
-              <Link href="/organizers/modugrid">ModuGrid (gridfinity-stijl)</Link> ·{" "}
+              <Link href="/organizers/modugrid">Gridfinity (gridfinity-stijl)</Link> ·{" "}
               <Link href="/organizers/packout">Packout</Link> · <Link href="/organizers/tstak">TSTAK</Link> ·{" "}
               <Link href="/organizers/custom">Custom</Link>
             </li>

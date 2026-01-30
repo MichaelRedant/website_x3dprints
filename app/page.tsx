@@ -159,14 +159,14 @@ const HOME_COPY_NL = {
     kicker: "Tool organizers op maat",
     title: "Perfect georganiseerde gereedschapskoffers, op maat van jouw systeem.",
     body:
-      "Eén hub met organizers voor ModuGrid (gridfinity), Packout, TSTAK en custom koffers. Geen STL’s of losse bakjes: vaste layouts, labelbaar en getest in echte koffers.",
+      "Eén hub met organizers voor Gridfinity, Packout, TSTAK en custom koffers. Geen STL’s of losse bakjes: vaste layouts, labelbaar en getest in echte koffers.",
     pains: ["Schroeven door elkaar", "Lege ruimte in koffers", "Tijdverlies bij zoeken", "Slecht overzicht"],
     solutions: ["Klemvaste trays zonder rammel", "Labelzones en kleurcodes", "Antislip optioneel", "Pasvorm per ladehoogte"],
     ctas: {
       primary: "Bekijk organizers",
       secondary: "Vraag je indeling aan",
     },
-    badge: "Print-on-demand in België · ModuGrid/Packout/TSTAK/custom",
+    badge: "Print-on-demand in België · Gridfinity/Packout/TSTAK/custom",
   },
   segments: {
     title: "Voor wie we printen",
@@ -447,11 +447,11 @@ const HOME_COPY_EN = {
     kicker: "Tool organizers, not loose bins",
     title: "Sell order, not plastic.",
     body:
-      "ModuGrid (gridfinity-style) inserts that stay put and save time. No STLs, no random cups: preset bundles plus custom layouts based on your tools.",
+      "Gridfinity inserts that stay put and save time. No STLs, no random cups: preset bundles plus custom layouts based on your tools.",
     pains: ["Fasteners mixed up", "Wasted space in cases", "Time lost searching", "Poor overview on site"],
     solutions: ["Snug trays, no rattle", "Label zones and color cues", "Optional anti-slip", "Fit tuned to drawer height"],
     ctas: {
-      primary: "See ModuGrid sets",
+      primary: "See Gridfinity sets",
       secondary: "Request your layout",
     },
     badge: "Print-on-demand in Belgium · tested in real cases",
@@ -945,7 +945,7 @@ export default function HomePage({ locale }: PageProps) {
               </h2>
               <p className="max-w-3xl text-lg text-slate-800">{copy.organizers.body}</p>
               <div className="flex flex-wrap gap-2">
-                {["ModuGrid (gridfinity)", "Packout", "TSTAK", "Custom inserts"].map((chip) => (
+                {["Gridfinity", "Packout", "TSTAK", "Custom inserts"].map((chip) => (
                   <span
                     key={chip}
                     className="inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-indigo-800 ring-1 ring-white/60 backdrop-blur dark:bg-[#0f162c]/90 dark:text-cyan-100"
@@ -988,7 +988,7 @@ export default function HomePage({ locale }: PageProps) {
                 Eén hub, vier systemen
               </h3>
               <p className="mt-2 text-sm text-slate-700 dark:text-slate-200">
-                Één centrale hub: ModuGrid (gridfinity), Packout, TSTAK en custom inserts. Jij kiest je systeem, wij leveren klemvaste trays die stil liggen en meteen inzetbaar zijn.
+                Één centrale hub: Gridfinity, Packout, TSTAK en custom inserts. Jij kiest je systeem, wij leveren klemvaste trays die stil liggen en meteen inzetbaar zijn.
               </p>
               <ul className="mt-4 space-y-2 text-sm text-slate-800 dark:text-slate-200">
                 {copy.organizers.solutions.map((sol) => (

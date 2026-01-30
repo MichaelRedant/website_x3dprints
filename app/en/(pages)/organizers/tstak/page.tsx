@@ -150,6 +150,9 @@ export default function TstakPageEn() {
               <a href="#faq" className="underline decoration-yellow-400 hover:decoration-yellow-700">
                 FAQ
               </a>
+              <Link href="/en/blog/tool-organizers-3d-printing" className="underline decoration-yellow-400 hover:decoration-yellow-700">
+                Organizers blog
+              </Link>
             </div>
           </div>
 

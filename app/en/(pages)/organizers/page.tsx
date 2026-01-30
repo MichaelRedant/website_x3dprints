@@ -10,7 +10,7 @@ import { SITE } from "@/lib/seo"
 export const metadata: Metadata = {
   title: "Tool organizers made to fit | X3DPrints",
   description:
-    "Gridfinity-style ModuGrid, Packout inserts, TSTAK inserts and fully custom toolbox layouts from Belgium. No STL hassle—fixed, labelable, anti-slip layouts for vans and workbenches.",
+    "Gridfinity organizers, Packout inserts, TSTAK inserts and fully custom toolbox layouts from Belgium. No STL hassle—fixed, labelable, anti-slip layouts for vans and workbenches.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/organizers",
     languages: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tool organizers made to fit | X3DPrints",
     description:
-      "Choose your system: ModuGrid (gridfinity alternative), Packout, TSTAK or custom inserts. Quiet, labelable layouts that stay put in vans and workshops.",
+      "Choose your system: Gridfinity, Packout, TSTAK or custom inserts. Quiet, labelable layouts that stay put in vans and workshops.",
     url: "https://www.x3dprints.be/en/organizers",
     images: [
       { url: `${SITE.url}/images/organizers/modugrid/ModuGrid2.jpg`, width: 1200, height: 630, alt: "Tool organizers, made to fit" },
@@ -36,9 +36,9 @@ const ORDER = ["modugrid", "packout", "tstak", "custom"] as const
 
 const CARD_COPY_EN = {
   modugrid: {
-    systemName: "ModuGrid (gridfinity-style)",
-    heroTitle: "ModuGrid organizers made to fit",
-    heroSubtitle: "Gridfinity-style layouts for drawers, desks and cases.",
+    systemName: "Gridfinity",
+    heroTitle: "Gridfinity organizers made to fit",
+    heroSubtitle: "Open-source grid layouts for drawers, desks and cases.",
     intro:
       "Fixed layouts with label zones and optional anti-slip for hobbyists and pros. Custom pocket per tool with photo + dimensions.",
     pains: ["Screws mixing", "Empty wasted space", "Time lost searching", "No overview in drawers"],
@@ -72,7 +72,7 @@ const CARD_COPY_EN = {
 const FAQ_ITEMS = [
   {
     q: "How does the intake work?",
-    a: "Pick your system (ModuGrid/Packout/TSTAK/Custom), add photos and a tool list. We design the layout, send a preview and print on demand.",
+    a: "Pick your system (Gridfinity/Packout/TSTAK/Custom), add photos and a tool list. We design the layout, send a preview and print on demand.",
   },
   {
     q: "Do I need to supply STL files?",
@@ -110,7 +110,7 @@ export default function OrganizersHubPageEn() {
               </span>
             </div>
             <p className="max-w-3xl text-lg text-slate-100/90">
-              ModuGrid (gridfinity), Packout, TSTAK and custom cases. Quiet, labelable layouts that fit your setup. Pick your system or send photos + tool list.
+              Gridfinity, Packout, TSTAK and custom cases. Quiet, labelable layouts that fit your setup. Pick your system or send photos + tool list.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link

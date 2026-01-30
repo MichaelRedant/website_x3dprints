@@ -7,9 +7,9 @@ const canonical = "https://www.x3dprints.be/en/blog/tool-organizers-3d-printing"
 const publishedDate = "2026-01-29T08:00:00+01:00"
 
 export const metadata: Metadata = {
-  title: "3D printing tool organizers: ModuGrid, Packout, TSTAK & custom | X3DPrints",
+  title: "3D printing tool organizers: Gridfinity, Packout, TSTAK & custom | X3DPrints",
   description:
-    "Comprehensive guide to printed tool organizers: intake checklist, materials, label zones, anti-slip and when to choose ModuGrid, Packout, TSTAK or fully custom (Skadis/pegboard).",
+    "Comprehensive guide to printed tool organizers: intake checklist, materials, label zones, anti-slip and when to choose Gridfinity, Packout, TSTAK or fully custom (Skadis/pegboard).",
   alternates: {
     canonical,
     languages: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "3D printing tool organizers | X3DPrints",
     description:
-      "Everything you need to know about printed organizers: gridfinity-style (ModuGrid), Packout, TSTAK and custom inserts with labels and anti-slip.",
+      "Everything you need to know about printed organizers: gridfinity-style (Gridfinity), Packout, TSTAK and custom inserts with labels and anti-slip.",
     url: canonical,
     type: "article",
     publishedTime: publishedDate,
@@ -38,7 +38,7 @@ export default function ToolOrganizersBlogEn() {
         <header className="space-y-4 pt-10 sm:pt-14">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-indigo-700">Organizers - guide</p>
           <h1 className="text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
-            3D printing tool organizers: ModuGrid, Packout, TSTAK and custom
+            3D printing tool organizers: Gridfinity, Packout, TSTAK and custom
           </h1>
           <p className="text-lg text-slate-700 dark:text-slate-200">
             Choose the right system, send a great intake and receive an organizer that doesn’t rattle. Includes tips for labels,
@@ -62,7 +62,7 @@ export default function ToolOrganizersBlogEn() {
             </li>
             <li className="flex gap-2 rounded-xl border border-slate-200 bg-white/80 p-3 shadow-sm dark:border-slate-700 dark:bg-[#0B0F1A]/80">
               <span className="i-lucide-ruler text-indigo-600" aria-hidden />
-              Inner dimensions LxWxH in mm; for ModuGrid: grid + pocket height.
+              Inner dimensions LxWxH in mm; for Gridfinity: grid + pocket height.
             </li>
             <li className="flex gap-2 rounded-xl border border-slate-200 bg-white/80 p-3 shadow-sm dark:border-slate-700 dark:bg-[#0B0F1A]/80">
               <span className="i-lucide-wrench text-indigo-600" aria-hidden />
@@ -86,7 +86,7 @@ export default function ToolOrganizersBlogEn() {
           <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Which organizer should you pick</h3>
           <div className="grid gap-4 md:grid-cols-2">
             <div>
-              <p className="text-sm font-semibold text-indigo-700">ModuGrid (gridfinity-style)</p>
+              <p className="text-sm font-semibold text-indigo-700">Gridfinity (gridfinity-style)</p>
               <p className="text-sm text-slate-700 dark:text-slate-200">
                 Grid and bin system for drawers, desks and cases. Perfect for bits, screws, EDC and hobby. Custom per-tool pockets are
                 easy thanks to the grid. Gridfinity became popular via Zack Freedman (
@@ -186,7 +186,7 @@ export default function ToolOrganizersBlogEn() {
             <GlassCard className="border border-white/50 bg-white/85 p-4 text-sm dark:border-slate-800 dark:bg-[#0B0F1A]/80">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-700">Hobby/desk</p>
               <p className="mt-2 text-slate-700 dark:text-slate-200">
-                ModuGrid (gridfinity-style) for bits, EDC and soldering accessories. Colour codes per category, a label-ready edge, one
+                Gridfinity (gridfinity-style) for bits, EDC and soldering accessories. Colour codes per category, a label-ready edge, one
                 custom pocket for your multimeter.
               </p>
             </GlassCard>
@@ -229,7 +229,7 @@ export default function ToolOrganizersBlogEn() {
               <Link href="/organizers">Organizers hub</Link>
             </li>
             <li>
-              <Link href="/organizers/modugrid">ModuGrid (gridfinity-style)</Link> {" | "}
+              <Link href="/organizers/modugrid">Gridfinity (gridfinity-style)</Link> {" | "}
               <Link href="/organizers/packout">Packout</Link> {" | "}
               <Link href="/organizers/tstak">TSTAK</Link> {" | "}
               <Link href="/organizers/custom">Custom</Link>

@@ -10,7 +10,7 @@ import { SITE } from "@/lib/seo"
 export const metadata: Metadata = {
   title: "Tool organizers op maat | X3DPrints",
   description:
-    "Tool organizers op maat: ModuGrid (gridfinity alternatief), Packout inlays, TSTAK inserts en custom toolbox op maat. Klemvast, labelbaar, antislip opties. Vraag je indeling aan vanuit Vlaanderen/België.",
+    "Tool organizers op maat: Gridfinity, Packout inlays, TSTAK inserts en custom toolbox op maat. Klemvast, labelbaar, antislip opties. Vraag je indeling aan vanuit Vlaanderen/België.",
   alternates: {
     canonical: "https://www.x3dprints.be/organizers",
     languages: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tool organizers op maat | X3DPrints",
     description:
-      "Kies je systeem: ModuGrid (gridfinity-stijl), Packout, TSTAK of custom inserts. Geen losse bakjes, wel rust in je koffer.",
+      "Kies je systeem: Gridfinity, Packout, TSTAK of custom inserts. Geen losse bakjes, wel rust in je koffer.",
     url: "https://www.x3dprints.be/organizers",
     images: [
       { url: `${SITE.url}/images/organizers/modugrid/ModuGrid2.jpg`, width: 1200, height: 630, alt: "Tool organizers op maat" },
@@ -37,7 +37,7 @@ const ORDER = ["modugrid", "packout", "tstak", "custom"] as const
 const FAQ_ITEMS = [
   {
     q: "Hoe werkt de intake voor een organizer?",
-    a: "Kies je systeem (ModuGrid/Packout/TSTAK/Custom), voeg foto’s en een lijst tools toe. We tekenen een indeling, sturen een preview en printen on-demand.",
+    a: "Kies je systeem (Gridfinity/Packout/TSTAK/Custom), voeg foto’s en een lijst tools toe. We tekenen een indeling, sturen een preview en printen on-demand.",
   },
   {
     q: "Moet ik STL-bestanden aanleveren?",
@@ -61,7 +61,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Welke systemen dekken jullie exact af?",
-    a: "ModuGrid (gridfinity-stijl) voor lades/bureaus/koffers (hobby én pro), Milwaukee Packout voor serviceploegen, Stanley/DeWALT TSTAK voor field teams, en custom inserts voor unieke koffers of cases.",
+    a: "Gridfinity voor lades/bureaus/koffers (hobby én pro), Milwaukee Packout voor serviceploegen, Stanley/DeWALT TSTAK voor field teams, en custom inserts voor unieke koffers of cases.",
   },
   {
     q: "Wat maakt jullie organizers verkoopgericht?",
@@ -96,7 +96,7 @@ export default function OrganizersHubPage() {
               </span>
             </div>
             <p className="max-w-3xl text-lg text-slate-100/90">
-              ModuGrid (gridfinity), Packout, TSTAK en custom koffers. Vaste layouts die stil liggen, labelbaar zijn en
+              Gridfinity, Packout, TSTAK en custom koffers. Vaste layouts die stil liggen, labelbaar zijn en
               passen bij jouw set-up. Kies je systeem of stuur foto + tool lijst.
             </p>
             <div className="flex flex-wrap gap-3">
@@ -118,7 +118,7 @@ export default function OrganizersHubPage() {
               {[
                 { icon: "i-lucide-sparkle", label: "Rust in je koffer", text: "Klemvast, geen rammel onderweg." },
                 { icon: "i-lucide-stamp", label: "Labelbaar & kleurcode", text: "Zones voor bits, schroeven, accu's." },
-                { icon: "i-lucide-cpu", label: "Hobby & pro", text: "ModuGrid voor hobby én pro; Packout/TSTAK voor teams; Custom voor iedereen." },
+                { icon: "i-lucide-cpu", label: "Hobby & pro", text: "Gridfinity voor hobby én pro; Packout/TSTAK voor teams; Custom voor iedereen." },
               ].map((item) => (
                 <div
                   key={item.label}

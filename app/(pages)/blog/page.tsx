@@ -130,6 +130,44 @@ const CATEGORY_SECTIONS_EN: CategorySection[] = [
 
 const TOPICS_NL: Topic[] = [
   {
+    id: "tool-organizers-3d-printen",
+    title: "Tool organizers 3D printen: van Gridfinity tot Packout",
+    date: "2026-01-29",
+    summary:
+      "Alles wat je moet weten om organizers te laten printen: intake, materiaalkeuze, labelzones, anti-slip en wanneer je kiest voor Gridfinity, Packout, TSTAK of een custom insert.",
+    highlights: [
+      "Bevat interne links naar de organizers hub, materialen en pricing zodat je meteen kunt plannen.",
+      "Uitleg per systeem (Gridfinity, Packout, TSTAK, custom/Skådis) met intakechecklist.",
+      "Externe context over pegboards en Packout ecosystemen om EEAT te versterken.",
+    ],
+    links: [
+      { label: "Lees de organizers gids", href: "/blog/tool-organizers-3d-printen" },
+      { label: "Organizers hub", href: "/organizers" },
+      { label: "Plan een indeling", href: "/contact?material=organizers" },
+    ],
+    intent: "informational",
+    category: "segments-cases",
+  },
+  {
+    id: "gridfinity-modulair-opslagsysteem",
+    title: "Gridfinity: modulair opslagsysteem met maatwerk door X3DPrints",
+    date: "2026-01-30",
+    summary:
+      "Uitleg van het 42×42×7 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
+    highlights: [
+      "Technische kern: raster, magneten, labels, materialen en generators.",
+      "Toepassingen van werkplaats tot keuken en Packout-koffers.",
+      "Call-to-actions naar Gridfinity pagina en contact met prefill.",
+    ],
+    links: [
+      { label: "Lees Gridfinity gids", href: "/blog/gridfinity-modulair-opslagsysteem" },
+      { label: "Gridfinity organizers", href: "/organizers/modugrid" },
+      { label: "Vraag een custom bin", href: "/contact?material=modugrid" },
+    ],
+    intent: "informational",
+    category: "segments-cases",
+  },
+  {
     id: "filament-vrijdag-pla",
     title: "Filament Vrijdag #1: PLA 3D printen",
     summary:
@@ -650,7 +688,7 @@ const TOPICS_NL: Topic[] = [
       { label: "Vraag TPU advies", href: "/contact?material=TPU" },
     ],
     intent: "informational",
-    category: "segments-cases",
+    category: "how-to",
   },
   {
     id: "hoeveel-kost-3d-printen",
@@ -1053,19 +1091,38 @@ const TOPICS_NL: Topic[] = [
 const TOPICS_EN: Topic[] = [
   {
     id: "tool-organizers-3d-printing",
-    title: "3D printing tool organizers: ModuGrid, Packout and custom",
+    title: "3D printing tool organizers: Gridfinity, Packout and custom",
     date: "2026-01-29",
     summary:
-      "Complete guide to printed organizers: intake checklist, materials, label zones, anti-slip and when to choose ModuGrid, Packout, TSTAK or fully custom inserts.",
+      "Complete guide to printed organizers: intake checklist, materials, label zones, anti-slip and when to choose Gridfinity, Packout, TSTAK or fully custom inserts.",
     highlights: [
       "Internal links to the organizers hub, materials and pricing so you can plan fast.",
-      "System-by-system guidance (ModuGrid/gridfinity-style, Packout, TSTAK, custom/Skådis) plus what to send during intake.",
+      "System-by-system guidance (Gridfinity/gridfinity-style, Packout, TSTAK, custom/Skådis) plus what to send during intake.",
       "External context on pegboards and Packout ecosystems to strengthen EEAT.",
     ],
     links: [
       { label: "Read the organizers guide", href: "/blog/tool-organizers-3d-printing" },
       { label: "Organizers hub", href: "/organizers" },
       { label: "Plan a layout", href: "/contact?material=organizers" },
+    ],
+    intent: "informational",
+    category: "segments-cases",
+  },
+  {
+    id: "gridfinity-modular-storage-system",
+    title: "Gridfinity: modular storage system, custom-fit by X3DPrints",
+    date: "2026-01-30",
+    summary:
+      "Explains the 42×42×7 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
+    highlights: [
+      "Technical core: grid, magnets, labels, materials and generators.",
+      "Use cases from workshops to kitchens and Packout cases.",
+      "Calls-to-action to the Gridfinity page and contact prefill.",
+    ],
+    links: [
+      { label: "Read the Gridfinity guide", href: "/en/blog/gridfinity-modular-storage-system" },
+      { label: "Gridfinity organizers", href: "/en/organizers/modugrid" },
+      { label: "Request a custom bin", href: "/en/contact?material=modugrid" },
     ],
     intent: "informational",
     category: "segments-cases",
@@ -1955,19 +2012,57 @@ const TOPICS_EN: Topic[] = [
   },
   {
     id: "tool-organizers-3d-printen",
-    title: "Tool organizers 3D printen: van ModuGrid tot Packout",
-    date: "2026-01-29",
+    title: "Tool organizers 3D printen: van Gridfinity tot Packout",
+    date: "2026-12-31",
     summary:
-      "Alles wat je moet weten om organizers te laten printen: intake, materiaalkeuze, labelzones, anti-slip en wanneer je kiest voor ModuGrid, Packout, TSTAK of een custom insert.",
+      "Alles wat je moet weten om organizers te laten printen: intake, materiaalkeuze, labelzones, anti-slip en wanneer je kiest voor Gridfinity, Packout, TSTAK of een custom insert.",
     highlights: [
       "Bevat interne links naar de organizers hub, materialen en pricing zodat je meteen kunt plannen.",
-      "Uitleg per systeem (ModuGrid/gridfinity-stijl, Packout, TSTAK, custom/Skådis) met intakechecklist.",
+      "Uitleg per systeem (Gridfinity/gridfinity-stijl, Packout, TSTAK, custom/Skådis) met intakechecklist.",
       "Externe context over pegboards en Packout ecosystemen om EEAT te versterken.",
     ],
     links: [
       { label: "Lees de organizers gids", href: "/blog/tool-organizers-3d-printen" },
       { label: "Organizers hub", href: "/organizers" },
       { label: "Plan een indeling", href: "/contact?material=organizers" },
+    ],
+    intent: "informational",
+    category: "how-to",
+  },
+  {
+    id: "gridfinity-modular-storage-system",
+    title: "Gridfinity: modular storage system, custom-fit by X3DPrints",
+    date: "2026-01-30",
+    summary:
+      "Explains the 42×42×7 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
+    highlights: [
+      "Technical core: grid, magnets, labels, materials and generators.",
+      "Use cases from workshops to kitchens and Packout cases.",
+      "Calls-to-action to the Gridfinity page and contact prefill.",
+    ],
+    links: [
+      { label: "Read the Gridfinity guide", href: "/en/blog/gridfinity-modular-storage-system" },
+      { label: "Gridfinity organizers", href: "/en/organizers/modugrid" },
+      { label: "Request a custom bin", href: "/en/contact?material=modugrid" },
+    ],
+    intent: "informational",
+    category: "segments-cases",
+  },
+  {
+    id: "gridfinity-modulair-opslagsysteem",
+    title: "Gridfinity: modulair opslagsysteem met maatwerk door X3DPrints",
+    date: "2026-12-30",
+    summary:
+      "Uitleg van het 42×42×7 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
+    highlights: [
+      "Technische kern: raster, magneten, labels, materialen en generators.",
+      "Toepassingen van werkplaats tot keuken en Packout-koffers.",
+      "Call-to-actions naar Gridfinity pagina en contact met prefill.",
+    ],
+    links: [
+      { label: "Lees Gridfinity gids", href: "/blog/gridfinity-modulair-opslagsysteem" },
+      { label: "Gridfinity organizers", href: "/organizers/modugrid" },
+      { label: "Vraag een custom bin", href: "/contact?material=modugrid" },
     ],
     intent: "informational",
     category: "segments-cases",
