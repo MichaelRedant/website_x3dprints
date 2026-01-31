@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import type { ReactNode } from "react"
@@ -159,7 +159,7 @@ const HOME_COPY_NL = {
     kicker: "Tool organizers op maat",
     title: "Perfect georganiseerde gereedschapskoffers, op maat van jouw systeem.",
     body:
-      "Eén hub met organizers voor Gridfinity, Packout, TSTAK en custom koffers. Geen STL’s of losse bakjes: vaste layouts, labelbaar en getest in echte koffers.",
+      "Eén hub met organizers voor Gridfinity, Packout, TSTAK en custom koffers. Geen STL’s of losse bakjes: vaste layouts, labelbaar en fit per ladehoogte. Gridfinity krijgt extra aandacht: open-source raster, hyper-flexibel en volledig op maat te printen.",
     pains: ["Schroeven door elkaar", "Lege ruimte in koffers", "Tijdverlies bij zoeken", "Slecht overzicht"],
     solutions: ["Klemvaste trays zonder rammel", "Labelzones en kleurcodes", "Antislip optioneel", "Pasvorm per ladehoogte"],
     ctas: {
@@ -447,14 +447,14 @@ const HOME_COPY_EN = {
     kicker: "Tool organizers, not loose bins",
     title: "Sell order, not plastic.",
     body:
-      "Gridfinity inserts that stay put and save time. No STLs, no random cups: preset bundles plus custom layouts based on your tools.",
+      "One hub with organizers for Gridfinity, Packout, TSTAK and custom cases. No STLs or loose cups: fixed layouts, label-ready and tuned to tray height. Gridfinity gets extra spotlight: open-source grid, hyper flexible and fully custom per tool.",
     pains: ["Fasteners mixed up", "Wasted space in cases", "Time lost searching", "Poor overview on site"],
     solutions: ["Snug trays, no rattle", "Label zones and color cues", "Optional anti-slip", "Fit tuned to drawer height"],
     ctas: {
-      primary: "See Gridfinity sets",
+      primary: "Explore organizers",
       secondary: "Request your layout",
     },
-    badge: "Print-on-demand in Belgium · tested in real cases",
+    badge: "Print-on-demand in Belgium · Gridfinity/Packout/TSTAK/custom",
   },
   segments: {
     title: "Who we print for",
@@ -955,17 +955,70 @@ export default function HomePage({ locale }: PageProps) {
                   </span>
                 ))}
               </div>
-              <ul className="grid gap-2 sm:grid-cols-2">
-                {copy.organizers.pains.map((pain) => (
-                  <li
-                    key={pain}
-                    className="flex items-center gap-2 rounded-xl bg-white/80 px-3 py-2 text-sm font-semibold text-slate-800 shadow-sm ring-1 ring-white/60 backdrop-blur dark:bg-[#0B0F1A]/85 dark:text-slate-100 dark:ring-0"
+              <div className="grid gap-3 pt-2 sm:grid-cols-2">
+                {(locale === "nl"
+                  ? [
+                      {
+                        label: "Gridfinity (open-source)",
+                        desc: "Raster van 42 mm, hyper-flexibel en volledig te customizen per tool.",
+                        href: "/organizers/gridinfinity",
+                        highlight: true,
+                      },
+                      {
+                        label: "Milwaukee Packout inlays",
+                        desc: "Klemvaste trays voor professionals en servicewagens.",
+                        href: "/organizers/packout",
+                      },
+                      {
+                        label: "Stanley / DeWALT TSTAK inserts",
+                        desc: "Rust in je koffer: slimme indelingen voor bits, batterijen en klein materiaal.",
+                        href: "/organizers/tstak",
+                      },
+                      {
+                        label: "Custom toolbox & pegboard",
+                        desc: "Parametrische inserts, labels en specials wanneer niets standaard past.",
+                        href: "/organizers/custom",
+                      },
+                    ]
+                  : [
+                      {
+                        label: "Gridfinity (open-source)",
+                        desc: "42 mm grid, hyper-flexible and tailored per tool.",
+                        href: "/organizers/gridinfinity",
+                        highlight: true,
+                      },
+                      {
+                        label: "Milwaukee Packout inlays",
+                        desc: "Rattle-free trays for pros and service vans.",
+                        href: "/organizers/packout",
+                      },
+                      {
+                        label: "Stanley / DeWALT TSTAK inserts",
+                        desc: "Calm, labelled layouts for bits, batteries and small parts.",
+                        href: "/organizers/tstak",
+                      },
+                      {
+                        label: "Custom toolbox & pegboard",
+                        desc: "Parametric inserts, labels and specials when nothing off-the-shelf fits.",
+                        href: "/organizers/custom",
+                      },
+                    ]
+                ).map((item) => (
+                  <Link
+                    key={item.href}
+                    href={localize(item.href)}
+                    className={`group inline-flex flex-col gap-1 rounded-2xl border border-white/60 bg-white/80 px-4 py-3 text-left shadow-sm transition hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-[#0f162c] ${
+                      item.highlight ? "ring-2 ring-indigo-300 dark:ring-cyan-400" : ""
+                    }`}
                   >
-                    <span className="i-lucide-minus-circle text-pink-600" aria-hidden />
-                    {pain}
-                  </li>
+                    <span className="flex items-center gap-2 text-sm font-semibold text-slate-900 dark:text-white">
+                      <span className="i-lucide-arrow-up-right text-indigo-500 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 dark:text-cyan-300" />
+                      {item.label}
+                    </span>
+                    <span className="text-xs text-slate-700 dark:text-slate-300">{item.desc}</span>
+                  </Link>
                 ))}
-              </ul>
+              </div>
               <div className="flex flex-wrap gap-3 pt-1">
                 <ShimmerButton href={localize("/organizers")}>{copy.organizers.ctas.primary}</ShimmerButton>
                 <Link
@@ -988,7 +1041,7 @@ export default function HomePage({ locale }: PageProps) {
                 Eén hub, vier systemen
               </h3>
               <p className="mt-2 text-sm text-slate-700 dark:text-slate-200">
-                Één centrale hub: Gridfinity, Packout, TSTAK en custom inserts. Jij kiest je systeem, wij leveren klemvaste trays die stil liggen en meteen inzetbaar zijn.
+                Eén centrale hub: Gridfinity, Packout, TSTAK en custom inserts. Jij kiest je systeem, wij leveren klemvaste trays die stil liggen en meteen inzetbaar zijn.
               </p>
               <ul className="mt-4 space-y-2 text-sm text-slate-800 dark:text-slate-200">
                 {copy.organizers.solutions.map((sol) => (
@@ -1000,7 +1053,7 @@ export default function HomePage({ locale }: PageProps) {
               </ul>
               <div className="mt-5 grid gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-600 dark:text-slate-300">
                 <span className="rounded-xl bg-slate-900 px-3 py-2 text-[11px] font-bold text-white shadow-sm ring-1 ring-white/10 dark:bg-cyan-500/90">
-                  Geen rammel · Geen losse bakjes · Layouts getest in echte koffers
+                  Geen rammel · Geen losse bakjes · Layouts die passen in je koffer
                 </span>
                 <span className="rounded-xl bg-white/80 px-3 py-2 text-[11px] font-semibold text-slate-800 ring-1 ring-white/60 dark:bg-[#0f162c] dark:text-slate-100 dark:ring-0">
                   Prefill contact: kies systeem, voeg foto’s toe, wij tekenen de indeling
@@ -1310,3 +1363,4 @@ export default function HomePage({ locale }: PageProps) {
     </main>
   )
 }
+
