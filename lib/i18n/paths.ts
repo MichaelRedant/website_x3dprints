@@ -112,6 +112,7 @@ function normalizePath(path: string) {
 function hasEnglishRoute(path: string) {
   const normalized = normalizePath(path)
   if (EN_PATHS.has(normalized)) return true
+  if (normalized === "/cases" || normalized.startsWith("/cases/")) return true
   if (normalized.startsWith("/blog/")) {
     const slug = normalized.slice("/blog/".length).split("/")[0]
     return EN_BLOG_SLUGS.has(slug)

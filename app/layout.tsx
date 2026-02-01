@@ -1,16 +1,8 @@
 import "./globals.css"
 import type { Metadata } from "next"
 import { SITE } from "@/lib/seo"
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
-import ScrollProgress from "@/components/ScrollProgress"
-import BackToTop from "@/components/BackToTop"
-import CookieBanner from "@/components/CookieBanner"
-import AnalyticsConsent from "@/components/AnalyticsConsent"
-import ThemeProvider from "@/components/ThemeProvider"
 import { Orbitron, JetBrains_Mono } from "next/font/google"
-import { cn } from "@/lib/utils";
-import LocaleProvider from "@/components/LocaleProvider"
+import { cn } from "@/lib/utils"
 
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
 const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron", weight: ["400", "500", "600", "700"] })
@@ -49,8 +41,7 @@ export const metadata: Metadata = {
     : undefined,
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // JSON-LD Organization/LocalBusiness
+function buildSchema() {
   const baseLocalBusiness = {
     "@type": "LocalBusiness",
     "@id": `${SITE.url}#x3dprints-main`,
@@ -131,59 +122,43 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     },
   ]
 
-  const schema = {
+  return {
     "@context": "https://schema.org",
-    "@graph": [
-      baseLocalBusiness,
-      ...clusterLocalBusinesses,
-    ],
+    "@graph": [baseLocalBusiness, ...clusterLocalBusinesses],
   }
+}
 
-  const breadcrumbList = {
+function buildBreadcrumbList(locale: "nl" | "en") {
+  const isEn = locale === "en"
+  return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    inLanguage: "nl-BE",
+    inLanguage: isEn ? "en-BE" : "nl-BE",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${SITE.url}/` },
-      { "@type": "ListItem", position: 2, name: "Services", item: `${SITE.url}/services` },
-      { "@type": "ListItem", position: 3, name: "Materialen", item: `${SITE.url}/materials` },
+      { "@type": "ListItem", position: 2, name: isEn ? "Services" : "Services", item: `${SITE.url}/services` },
+      { "@type": "ListItem", position: 3, name: isEn ? "Materials" : "Materialen", item: `${SITE.url}/materials` },
       { "@type": "ListItem", position: 4, name: "Portfolio", item: `${SITE.url}/portfolio` },
-      { "@type": "ListItem", position: 5, name: "Prijzen", item: `${SITE.url}/pricing` },
+      { "@type": "ListItem", position: 5, name: isEn ? "Pricing" : "Prijzen", item: `${SITE.url}/pricing` },
       { "@type": "ListItem", position: 6, name: "Contact", item: `${SITE.url}/contact` },
       { "@type": "ListItem", position: 7, name: "Blog", item: `${SITE.url}/blog` },
     ],
   }
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const schema = buildSchema()
+  const breadcrumbList = buildBreadcrumbList("nl")
 
   return (
     <html lang="nl" data-theme="light" suppressHydrationWarning>
       <head>
         <meta httpEquiv="content-language" content="nl-BE" />
       </head>
-      <body className={cn("min-h-screen flex flex-col antialiased pt-16 md:pt-[72px]", orbitron.variable, mono.variable)}>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{const key="x3d-theme";const stored=localStorage.getItem(key);const prefers=window.matchMedia("(prefers-color-scheme: dark)").matches;const theme=(stored==="dark"||stored==="light")?stored:(prefers?"dark":"light");const root=document.documentElement;if(theme==="dark"){root.classList.add("dark");root.dataset.theme="hawkins";}else{root.classList.remove("dark");root.dataset.theme="light";}}catch(e){}})();`,
-          }}
-        />
-        <LocaleProvider>
-          <ThemeProvider>
-            <ScrollProgress />
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-            <CookieBanner />
-            <BackToTop />
-            <AnalyticsConsent />
-          </ThemeProvider>
-        </LocaleProvider>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbList) }}
-        />
+      <body className={cn("min-h-screen flex flex-col antialiased", orbitron.variable, mono.variable)}>
+        {children}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbList) }} />
       </body>
     </html>
   )

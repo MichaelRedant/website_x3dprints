@@ -107,7 +107,7 @@ export const dynamic = "force-static"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRouteConfigs: StaticRouteConfig[] = [
-    { nl: "/", en: "/en", changeFrequency: "weekly", priority: 0.8, sources: ["app/page.tsx", "app/en/page.tsx"] },
+    { nl: "/", en: "/en", changeFrequency: "weekly", priority: 0.8, sources: ["app/(home)/page.tsx", "app/en/(home)/page.tsx"] },
     { nl: "/3d-printen", en: "/en/3d-printen", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/3d-printen/page.tsx", "app/en/(pages)/3d-printen/page.tsx"] },
     { nl: "/services", en: "/en/services", changeFrequency: "monthly", priority: 0.8, sources: ["app/(pages)/services/page.tsx", "app/en/(pages)/services/page.tsx"] },
     { nl: "/materials", en: "/en/materials", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/materials/page.tsx", "app/en/(pages)/materials/page.tsx"] },
@@ -180,6 +180,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { nl: "/privacy", en: "/en/privacy", changeFrequency: "yearly", priority: 0.4, sources: ["app/(pages)/privacy/page.tsx", "app/en/(pages)/privacy/page.tsx"] },
     { nl: "/cookies", en: "/en/cookies", changeFrequency: "yearly", priority: 0.4, sources: ["app/(pages)/cookies/page.tsx", "app/en/(pages)/cookies/page.tsx"] },
     { nl: "/algemene-voorwaarden", en: "/en/algemene-voorwaarden", changeFrequency: "yearly", priority: 0.4, sources: ["app/(pages)/algemene-voorwaarden/page.tsx", "app/en/(pages)/algemene-voorwaarden/page.tsx"] },
+    {
+      nl: "/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
+      en: "/en/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
+      changeFrequency: "monthly",
+      priority: 0.6,
+      sources: [
+        "app/(pages)/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem/page.tsx",
+        "app/en/(pages)/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem/page.tsx",
+      ],
+    },
   ]
 
   const staticRoutes = (await Promise.all(staticRouteConfigs.map(toRouteEntries))).flat()

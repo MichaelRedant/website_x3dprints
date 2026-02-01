@@ -168,6 +168,25 @@ const TOPICS_NL: Topic[] = [
     category: "segments-cases",
   },
   {
+    id: "selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
+    title: "Case: selectieve val tegen Aziatische hoornaar (Sint-Lievens-Houtem)",
+    date: "2026-02-01",
+    summary:
+      "Samen met #9520KLIMAAT produceerden we een selectief 3D-geprint deksel voor glazen potten. Lage kost, weinig bijvangst en klaar om snel op te schalen tijdens het vroege voorjaar.",
+    highlights: [
+      "Selectief design: trechter + ontsnappingsopeningen beperken bijvangst.",
+      "PETG Matte voor buitengebruik, batches op maat van lokale acties.",
+      "Interne links naar PETG fiche, pricing en contact met prefill.",
+    ],
+    links: [
+      { label: "Lees de case", href: "/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem" },
+      { label: "PETG materiaalfiche", href: "/materials/petg" },
+      { label: "Plan lokale actie", href: "/contact?topic=case-selectieve-val" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
     id: "filament-vrijdag-pla",
     title: "Filament Vrijdag #1: PLA 3D printen",
     summary:
@@ -1125,6 +1144,25 @@ const TOPICS_EN: Topic[] = [
       { label: "Request a custom bin", href: "/en/contact?material=modugrid" },
     ],
     intent: "informational",
+    category: "segments-cases",
+  },
+  {
+    id: "selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
+    title: "Case: selective trap for the Asian hornet (Sint-Lievens-Houtem)",
+    date: "2026-02-01",
+    summary:
+      "With #9520KLIMAAT we produce a selective 3D printed lid for wide-mouth jars. Low cost, low bycatch and ready to scale during early spring.",
+    highlights: [
+      "Selective design: funnel plus escape openings to reduce bycatch.",
+      "PETG Matte for outdoor use, batches tailored to community actions.",
+      "Internal links to PETG sheet, pricing and contact with prefill.",
+    ],
+    links: [
+      { label: "Read the case", href: "/en/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem" },
+      { label: "PETG material sheet", href: "/en/materials/petg" },
+      { label: "Plan a local action", href: "/en/contact?topic=case-selective-trap" },
+    ],
+    intent: "transactional",
     category: "segments-cases",
   },
   {
