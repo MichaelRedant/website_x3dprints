@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Vaderdag & Moederdag 3D printing | Gepersonaliseerde gifts | X3DPrints",
   description:
     "Gepersonaliseerde Vaderdag en Moederdag gifts: desk items, sleutelhangers en naamplaatjes in Silk/Matte/Translucent PLA. Ontwerpbestand niet inbegrepen; aanleveren of ontwerpservice.",
-  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-vaderdag-moederdag" },
+  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-vaderdag-moederdag/", languages: { "nl-BE": "https://www.x3dprints.be/segments/3d-printing-vaderdag-moederdag/", en: "https://www.x3dprints.be/en/segments/3d-printing-vaderdag-moederdag/", "x-default": "https://www.x3dprints.be/segments/3d-printing-vaderdag-moederdag/", }, },
   openGraph: {
     title: "Vaderdag & Moederdag 3D printing",
     description:
       "Maatwerk cadeaus voor Vaderdag/Moederdag: sleutelhangers, desk organizers, naamplaatjes. Snelle runs, Silk/Matte PLA en PETG.",
-    url: "https://www.x3dprints.be/segments/3d-printing-vaderdag-moederdag",
+    url: "https://www.x3dprints.be/segments/3d-printing-vaderdag-moederdag/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -106,7 +106,7 @@ export default function ParentsDaySegmentPage() {
           niet inbegrepen; lever STL/STEP of kies ontwerpservice aan EUR 45/uur.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact?material=pla-silk-plus">Plan je Vader-/Moederdag run</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-silk-plus" event={ { action: "cta_click", category: "segments_parentsday", label: "plan-run" } }> Plan je Vader-/Moederdag run</ShimmerButton>
           <Link
             href="/blog/3d-printen-vaderdag-moederdag"
             className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"

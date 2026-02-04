@@ -3,8 +3,15 @@ import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/hoeveel-kost-3d-printen"
+const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=how-much-3d-printing-cost"
+const datePublished = "2024-10-01"
+const dateModified = "2026-02-04"
+const pricingHref = `/en/pricing${utm}`
+const contactHref = `/en/contact${utm}`
+const materialsHref = `/en/materials${utm}#material-suggestion-tool`
 
 export const metadata: Metadata = {
   title: "How much does 3D printing cost? | X3DPrints Blog",
@@ -84,17 +91,16 @@ const faq = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "How much does 3D printing cost?",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "How much does 3D printing cost?",
   description:
     "Guide to 3D printing cost factors: material, machine hours, complexity, finishing and logistics, plus example pricing.",
-  author: { "@type": "Organization", name: "X3DPrints" },
-  mainEntityOfPage: canonical,
+  datePublished,
+  dateModified,
+  image: "/images/portfolio/2d-6-1-1.webp",
   inLanguage: "en-BE",
-}
+})
 
 export default function CostArticleEn() {
   return (
@@ -110,9 +116,11 @@ export default function CostArticleEn() {
             A clear breakdown of what drives price: material choice, machine hours, complexity, finishing and logistics. Use it to budget realistically before you request a quote.
           </p>
           <div className="flex flex-wrap gap-3">
-            <ShimmerButton href="/en/pricing">View pricing & calculator</ShimmerButton>
+            <ShimmerButton href={pricingHref} event={{ action: "cta_click", category: "blog_top", label: "pricing_cost_en" }}>
+              View pricing & calculator
+            </ShimmerButton>
             <Link
-              href="/en/contact"
+              href={contactHref}
               className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/20 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/40"
             >
               Request a tailored quote
@@ -131,6 +139,27 @@ export default function CostArticleEn() {
               </Link>
             </GlassCard>
           ))}
+        </section>
+
+        <section className="rounded-2xl border border-emerald-100 bg-white/85 p-6 shadow-lg backdrop-blur">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600">Next step</p>
+              <h2 className="text-xl font-semibold text-slate-900">Check price and pick a material</h2>
+              <p className="text-sm text-slate-700">Test your model in the calculator and prefill material advice in one go.</p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <ShimmerButton href={pricingHref} event={{ action: "cta_click", category: "blog_mid", label: "pricing_cost_en_mid" }}>
+                Open pricing
+              </ShimmerButton>
+              <ShimmerButton
+                href={materialsHref}
+                event={{ action: "cta_click", category: "blog_mid", label: "materials_tool_cost_en_mid" }}
+              >
+                Material suggestion tool
+              </ShimmerButton>
+            </div>
+          </div>
         </section>
 
         <section className="grid gap-6 lg:grid-cols-[1.05fr_.95fr]">

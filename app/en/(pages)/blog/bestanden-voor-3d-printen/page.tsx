@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/bestanden-voor-3d-printen"
 
@@ -69,31 +70,15 @@ const documentationTips = [
   "Use the viewer to share links to large cloud files (Dropbox/Drive) to avoid email limits.",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "Which files do you need for 3D printing?",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "Which files do you need for 3D printing?",
   description:
-    "Checklist for file formats and export settings for 3D printing, including mesh checks and documentation.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+    "STL, STEP or native CAD? Learn which format to use for 3D printing, what resolution to export and how to submit a complete request.",
+  datePublished: "2024-09-01",
+  dateModified: "2024-09-01",
   inLanguage: "en-BE",
-}
+})
 
 export default function FilesArticleEnPage() {
   return (

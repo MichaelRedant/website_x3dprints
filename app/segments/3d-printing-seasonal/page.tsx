@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Seasonal 3D designs | X3DPrints",
   description:
     "Vier elk seizoen met 3D geprinte decor, props en gifts: herfst & Halloween, lente & Pasen, zomer decor, winter & kerst/nieuwjaar. Ontwerpbestand niet inbegrepen; aanleveren of ontwerpservice.",
-  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-seasonal" },
+  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-seasonal/", languages: { "nl-BE": "https://www.x3dprints.be/segments/3d-printing-seasonal/", en: "https://www.x3dprints.be/en/segments/3d-printing-seasonal/", "x-default": "https://www.x3dprints.be/segments/3d-printing-seasonal/", }, },
   openGraph: {
     title: "Seasonal 3D designs",
     description:
       "Herfst/Halloween, lente/Pasen, zomer en winter/kerst decor. PLA Matte, Silk, Marble en PETG. Leveringszones en ontwerpservice beschikbaar.",
-    url: "https://www.x3dprints.be/segments/3d-printing-seasonal",
+    url: "https://www.x3dprints.be/segments/3d-printing-seasonal/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -189,7 +189,7 @@ export default function SeasonalSegmentPage() {
           of kies onze ontwerpservice aan €45/uur. Lever klaar om te schilderen, te verlichten of meteen te gebruiken.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact?material=pla-silk-plus">Plan je seizoen</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-silk-plus" event={ { action: "cta_click", category: "segments_seasonal", label: "plan-season" } }> Plan je seizoen</ShimmerButton>
           <Link
             href={seasonCta.href}
             className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"

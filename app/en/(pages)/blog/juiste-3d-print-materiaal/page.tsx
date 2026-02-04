@@ -3,9 +3,16 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/juiste-3d-print-materiaal"
-const publishedDate = "2025-11-07T08:00:00+01:00"
+const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=right-material"
+const pricingHref = `/en/pricing${utm}`
+const toolHref = `/en/materials${utm}#material-suggestion-tool`
+const contactHref = `/en/contact${utm}`
+const publishedDate = "2024-09-10"
+const datePublished = "2024-09-10"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "How do you choose the right 3D print material? | X3DPrints",
@@ -123,33 +130,16 @@ const scenarios = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "How do you choose the right 3D print material?",
   description:
-    "Step-by-step guide from X3DPrints to decide the right 3D print material. Compare PLA Matte, PETG and TPU on use, environment and budget.",
-  datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/og-x3dprints.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+    "Step-by-step guide from X3DPrints to determine the right 3D print material. Compare PLA Matte, PETG and TPU on use case, environment and budget.",
+  datePublished,
+  dateModified,
+  image: "/images/og-home.jpg",
   inLanguage: "en-BE",
-}
+})
 
 export default function RightMaterialGuideEnPage() {
   return (
@@ -186,7 +176,18 @@ export default function RightMaterialGuideEnPage() {
               pricing and contact so you can decide faster without extra review rounds.
             </p>
             <div className="flex flex-wrap gap-3">
-              <ShimmerButton href="/en/materials">View materials</ShimmerButton>
+              <ShimmerButton
+                href={pricingHref}
+                event={{ action: "cta_click", category: "blog_top", label: "pricing_right_material_en" }}
+              >
+                View pricing & calculator
+              </ShimmerButton>
+              <ShimmerButton
+                href={toolHref}
+                event={{ action: "cta_click", category: "blog_top", label: "tool_right_material_en" }}
+              >
+                Use the Material Suggestion Tool
+              </ShimmerButton>
               <Link
                 href="/en/3d-printen"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
@@ -201,6 +202,40 @@ export default function RightMaterialGuideEnPage() {
               </Link>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <GlassCard className="flex flex-col gap-4 border border-emerald-100 bg-white/85 p-6 shadow-lg backdrop-blur">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600">Next step</p>
+              <h2 className="mt-2 text-xl font-semibold text-slate-900">Check price & pick a material</h2>
+              <p className="mt-2 text-sm text-slate-700">
+                Open the calculator and prefill material advice in one go. Faster intake, clearer budget.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <ShimmerButton
+                href={pricingHref}
+                event={{ action: "cta_click", category: "blog_mid", label: "pricing_right_material_en_mid" }}
+              >
+                Go to pricing
+              </ShimmerButton>
+              <ShimmerButton
+                href={toolHref}
+                event={{ action: "cta_click", category: "blog_mid", label: "tool_right_material_en_mid" }}
+              >
+                Start material advice
+              </ShimmerButton>
+              <Link
+                href={contactHref}
+                className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
+              >
+                Request a tailored quote
+              </Link>
+            </div>
+          </GlassCard>
         </div>
       </section>
 

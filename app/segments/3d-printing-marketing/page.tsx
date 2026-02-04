@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "3D printing voor marketing & events | X3DPrints",
   description:
     "Showpieces, awards en activatieprops in PLA Silk+, Marble of Translucent. Lokale productie vanuit Herzele met flexibele planning.",
-  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-marketing" },
+  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-marketing/", languages: { "nl-BE": "https://www.x3dprints.be/segments/3d-printing-marketing/", en: "https://www.x3dprints.be/en/segments/3d-printing-marketing/", "x-default": "https://www.x3dprints.be/segments/3d-printing-marketing/", }, },
   openGraph: {
     title: "3D printing voor marketing & events",
     description:
       "Laat eye-catching props en giveaways printen met korte lijnen. Ideaal voor activaties, retail displays en events in België.",
-    url: "https://www.x3dprints.be/segments/3d-printing-marketing",
+    url: "https://www.x3dprints.be/segments/3d-printing-marketing/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -113,7 +113,7 @@ export default function MarketingSegmentPage() {
           Props, giveaways en instore displays vanuit een éénmansstudio in Herzele. Je krijgt transparante timings, materiaaladvies en snelle updates zonder agency-lagen.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact?material=pla-silk-plus">Vraag offerte of advies</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-silk-plus" event={ { action: "cta_click", category: "segments_marketing", label: "quote" } }> Vraag offerte of advies</ShimmerButton>
           <Link
             href="/materials#material-suggestion-tool"
             className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"

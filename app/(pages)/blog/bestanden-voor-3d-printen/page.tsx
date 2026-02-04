@@ -4,8 +4,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/bestanden-voor-3d-printen"
+const datePublished = "2024-08-01"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "Welke bestanden heb je nodig voor 3D printen? | X3DPrints Blog",
@@ -16,7 +19,7 @@ export const metadata: Metadata = {
     title: "Welke bestanden heb je nodig voor 3D printen?",
     description:
       "Volledige gids over bestandsformaten, exportinstellingen en mesh-controle voor 3D printen. Inclusief checklist en uploadtips.",
-    url: canonical,
+  url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Bestanden voor 3D printen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -64,31 +67,14 @@ const documentationTips = [
   "Gebruik de viewer om links naar grote cloudbestanden te delen (Dropbox/Drive), zo vermijden we e-mail-limieten.",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: ["nl-BE", "en-BE"],
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Welke bestanden heb je nodig voor 3D printen?",
   description:
-    "Checklist voor bestandsformaten en exportinstellingen voor 3D printen, inclusief meshcontrole en documentatie.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-}
+    "STL, STEP of native CAD? Leer welk bestandsformaat je gebruikt voor 3D printen, welke resolutie nodig is en hoe je een complete aanvraag aanlevert.",
+  datePublished,
+  dateModified,
+})
 
 export default function FilesArticlePage() {
   return (
@@ -224,3 +210,7 @@ export default function FilesArticlePage() {
     </main>
   )
 }
+
+
+
+

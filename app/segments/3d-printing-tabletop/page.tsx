@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "3D printing voor tabletop minis | X3DPrints",
   description:
     "D&D en Warhammer minis, dice towers en scenery met haarscherp detail. PLA Matte, PETG, TPU. Ontwerp van het 3D model niet inbegrepen; STL/STEP aanleveren of ontwerpservice aan €45/uur.",
-  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-tabletop" },
+  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-tabletop/", languages: { "nl-BE": "https://www.x3dprints.be/segments/3d-printing-tabletop/", en: "https://www.x3dprints.be/en/segments/3d-printing-tabletop/", "x-default": "https://www.x3dprints.be/segments/3d-printing-tabletop/", }, },
   openGraph: {
     title: "3D printing voor tabletop minis",
     description:
       "Detailprints voor Dungeons & Dragons en Warhammer: minis, bases, dice towers. Levering via EV-zones, ontwerpmodel niet inbegrepen.",
-    url: "https://www.x3dprints.be/segments/3d-printing-tabletop",
+    url: "https://www.x3dprints.be/segments/3d-printing-tabletop/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -116,7 +116,7 @@ export default function TabletopSegmentPage() {
           Ontwerp van het 3D model is niet inbegrepen; je levert STL/STEP of we ontwerpen aan €45/uur.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact?material=pla-matte">Bespreek je minis</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-matte" event={ { action: "cta_click", category: "segments_tabletop", label: "discuss-minis" } }> Bespreek je minis</ShimmerButton>
           <Link
             href="/blog/3d-printen-mini-figuren"
             className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"

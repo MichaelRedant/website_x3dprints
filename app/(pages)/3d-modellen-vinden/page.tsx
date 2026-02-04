@@ -11,7 +11,14 @@ export const metadata: Metadata = {
   title: "3D modellen vinden om te laten printen | X3DPrints",
   description:
     "Vind 3D modellen die klaar zijn voor print: Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults en Thangs. Tips over kwaliteit en hoe je de link doorstuurt zodat wij lokaal kunnen printen.",
-  alternates: { canonical: "https://www.x3dprints.be/3d-modellen-vinden" },
+  alternates: {
+    canonical: "https://www.x3dprints.be/3d-modellen-vinden/",
+    languages: {
+      "nl-BE": "https://www.x3dprints.be/3d-modellen-vinden/",
+      en: "https://www.x3dprints.be/en/3d-modellen-vinden/",
+      "x-default": "https://www.x3dprints.be/3d-modellen-vinden/",
+    },
+  },
   openGraph: {
     title: "Waar 3D modellen vinden om te laten printen",
     description:

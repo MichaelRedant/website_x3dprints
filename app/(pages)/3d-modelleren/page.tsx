@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "3D modelleren voor print | Fusion 360, Tinkercad, Blender",
   description:
     "3D modelleren op maat van 3D-printen. Fusion 360 voor technische onderdelen, Tinkercad voor snelle concepten en Blender voor organische vormen.",
-  alternates: { canonical: "https://www.x3dprints.be/3d-modelleren" },
+  alternates: { canonical: "https://www.x3dprints.be/3d-modelleren/", languages: { "nl-BE": "https://www.x3dprints.be/3d-modelleren/", en: "https://www.x3dprints.be/en/3d-modelleren/", "x-default": "https://www.x3dprints.be/3d-modelleren/", }, },
   openGraph: {
     title: "3D modelleren voor 3D prints | X3DPrints",
     description:
       "Ontwerpen die printbaar zijn: Fusion 360 voor precisie, Tinkercad voor snelle iteraties en af en toe Blender voor organische vormen.",
-    url: "https://www.x3dprints.be/3d-modelleren",
+    url: "https://www.x3dprints.be/3d-modelleren/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",

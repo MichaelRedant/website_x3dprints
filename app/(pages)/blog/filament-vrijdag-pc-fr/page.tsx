@@ -104,7 +104,6 @@ const articleJsonLd = {
   description:
     "PC FR vlamvertragend polycarbonaat voor industriële behuizingen. Instellingen, droogtijd, use cases en alternatieven.",
   datePublished: publishedDate,
-  dateModified: publishedDate,
   author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
   publisher: {
     "@type": "Organization",
@@ -113,6 +112,7 @@ const articleJsonLd = {
     logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/og-x3dprints.jpg" },
   },
   mainEntityOfPage: canonical,
+  dateModified: "2026-02-04T11:15:50+01:00",
   url: canonical,
   image: "https://www.x3dprints.be/images/og-home.jpg",
 }
@@ -410,3 +410,11 @@ export default function FilamentVrijdagPcFrPage({}: PageProps) {
     </main>
   )
 }
+
+
+
+
+
+
+
+

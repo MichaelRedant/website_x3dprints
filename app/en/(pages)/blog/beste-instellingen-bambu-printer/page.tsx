@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/beste-instellingen-bambu-printer"
 
@@ -92,24 +93,15 @@ const troubleshoot = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "Best settings for your Bambu printer",
-  description: "Studio-tested PLA/PETG/TPU presets for Bambu printers with calibration, AMS and maintenance tips.",
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "Best settings for your Bambu printer",
+  description:
+    "Use these presets for PLA, PETG and TPU on Bambu printers: temperatures, speeds, retract and calibration. Includes tips for flow, AMS and maintenance.",
+  datePublished: "2024-09-01",
+  dateModified: "2024-09-01",
   inLanguage: "en-BE",
-}
+})
 
 export default function BambuSettingsBlogEn() {
   return (

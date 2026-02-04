@@ -4,8 +4,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-op-bestelling"
+const datePublished = "2024-05-20"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "3D printen op bestelling | X3DPrints",
@@ -16,7 +19,7 @@ export const metadata: Metadata = {
     title: "3D printen op bestelling: proces & tips",
     description:
       "Leer hoe je een 3D print bestelling start, welke info we nodig hebben en hoe we communiceren over planning, updates en levering.",
-    url: canonical,
+  url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printen op bestelling" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -54,31 +57,14 @@ const reorders = [
   "Combineer meerdere kleine bestellingen tot één batch voor betere prijzen en kortere queue.",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: ["nl-BE", "en-BE"],
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "3D printen op bestelling",
   description:
-    "Uitleg over het bestelproces bij X3DPrints: intake, productie, levering en herhaalorders.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-}
+    "Zo werkt 3D printen op bestelling bij X3DPrints: van aanvraag tot levering, met voorbeelden en tips voor herhaalorders.",
+  datePublished,
+  dateModified,
+})
 
 export default function OrderArticlePage() {
   return (
@@ -211,4 +197,8 @@ export default function OrderArticlePage() {
     </main>
   )
 }
+
+
+
+
 

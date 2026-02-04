@@ -4,8 +4,14 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/hoeveel-kost-3d-printen"
+const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=hoeveel-kost-3d-printen"
+const datePublished = "2024-10-01"
+const dateModified = "2026-02-04"
+const contactHref = `/contact${utm}`
+const toolHref = `/materials${utm}#material-suggestion-tool`
 
 export const metadata: Metadata = {
   title: "Hoeveel kost 3D printen? | X3DPrints Blog",
@@ -17,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "Volledige breakdown van materiaalprijs, machine-uren, afwerking en logistiek. Gebruik onze prijscalculator en vraag een offerte.",
     url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Kostprijs 3D printen" }],
+    images: [{ url: "/images/portfolio/2d-6-1-1.webp", width: 1200, height: 630, alt: "Kostprijs 3D printen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -89,31 +95,15 @@ const faq = [
 
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: ["nl-BE", "en-BE"],
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Hoeveel kost 3D printen?",
   description:
     "Volledige gids over de kostprijs van 3D printen, inclusief materiaalprijzen, machine-uren, nabewerking en logistiek.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-}
+  datePublished,
+  dateModified,
+  image: "/images/portfolio/2d-6-1-1.webp",
+})
 
 export default function BlogCostPage() {
   return (
@@ -149,12 +139,18 @@ export default function BlogCostPage() {
               In dit artikel tonen we hoe wij prijzen berekenen, inclusief voorbeelden en tips om budget te optimaliseren.
             </p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href="/pricing">Gebruik de prijscalculator</ShimmerButton>
+              <ShimmerButton href={`/pricing${utm}`}>Gebruik de prijscalculator</ShimmerButton>
               <Link
-                href="/contact"
+                href={contactHref}
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Vraag offerte
+              </Link>
+              <Link
+                href={toolHref}
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm hover:border-slate-300 hover:bg-slate-50"
+              >
+                Materialen kiezen
               </Link>
             </div>
           </Reveal>
@@ -180,6 +176,35 @@ export default function BlogCostPage() {
               </GlassCard>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* Inline CTA block to push conversions earlier */}
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-4xl">
+          <GlassCard className="flex flex-col gap-4 border border-emerald-100 bg-white/85 p-6 shadow-lg backdrop-blur">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600">Volgende stap</p>
+              <h2 className="mt-2 text-xl font-semibold text-slate-900">Zie direct prijs & materiaalopties</h2>
+              <p className="mt-2 text-sm text-slate-700">
+                Test je model in de prijscalculator en vergelijk meteen de belangrijkste materialen. We vullen je intake vooraf met de gekozen optie.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <ShimmerButton
+                href={`/pricing${utm}`}
+                event={{ action: "cta_click", category: "blog_mid", label: "pricing_hoeveel-kost" }}
+              >
+                Ga naar pricing & calculator
+              </ShimmerButton>
+              <ShimmerButton
+                href={`/materials${utm}#material-suggestion-tool`}
+                event={{ action: "cta_click", category: "blog_mid", label: "materials_tool_hoeveel-kost" }}
+              >
+                Start materiaaladvies
+              </ShimmerButton>
+            </div>
+          </GlassCard>
         </div>
       </section>
 
@@ -349,3 +374,7 @@ export default function BlogCostPage() {
     </main>
   )
 }
+
+
+
+

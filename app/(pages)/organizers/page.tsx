@@ -12,10 +12,11 @@ export const metadata: Metadata = {
   description:
     "Tool organizers op maat: Gridfinity, Packout inlays, TSTAK inserts en custom toolbox op maat. Klemvast, labelbaar, antislip opties. Vraag je indeling aan vanuit Vlaanderen/België.",
   alternates: {
-    canonical: "https://www.x3dprints.be/organizers",
+    canonical: "https://www.x3dprints.be/organizers/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/organizers",
-      en: "https://www.x3dprints.be/en/organizers",
+      "nl-BE": "https://www.x3dprints.be/organizers/",
+      en: "https://www.x3dprints.be/en/organizers/",
+      "x-default": "https://www.x3dprints.be/organizers/",
     },
   },
   openGraph: {
@@ -23,9 +24,7 @@ export const metadata: Metadata = {
     description:
       "Kies je systeem: Gridfinity, Packout, TSTAK of custom inserts. Geen losse bakjes, wel rust in je koffer.",
     url: "https://www.x3dprints.be/organizers",
-    images: [
-      { url: `${SITE.url}/images/organizers/modugrid/ModuGrid2.jpg`, width: 1200, height: 630, alt: "Tool organizers op maat" },
-    ],
+    images: [{ url: `${SITE.url}/images/organizers/modugrid/ModuGrid2.jpg`, width: 1200, height: 630, alt: "Tool organizers op maat" }],
     locale: SITE.locale,
     siteName: SITE.name,
   },

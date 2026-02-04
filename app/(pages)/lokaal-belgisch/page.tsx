@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Lokaal & 100% Belgisch 3D printen | X3DPrints Herzele",
   description:
     "Herzeelse handelaar en 100% Belgische 3D printstudio. Korte keten, duidelijke afspraken en lid van Werkgroep Ondernemend Herzele. Vraag je offerte.",
-  alternates: { canonical: "https://www.x3dprints.be/lokaal-belgisch" },
+  alternates: { canonical: "https://www.x3dprints.be/lokaal-belgisch/" },
   openGraph: {
     title: "Lokaal & Belgisch 3D printen | X3DPrints",
     description:

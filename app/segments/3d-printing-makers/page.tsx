@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "3D printing voor makers & hobbyisten | X3DPrints",
   description:
     "Lokale 3D print service voor makers, cosplayers en hobbyprojecten. Flexibele planning, duidelijk advies en support vanuit Herzele.",
-  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-makers" },
+  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-makers/", languages: { "nl-BE": "https://www.x3dprints.be/segments/3d-printing-makers/", en: "https://www.x3dprints.be/en/segments/3d-printing-makers/", "x-default": "https://www.x3dprints.be/segments/3d-printing-makers/", }, },
   openGraph: {
     title: "3D printing voor makers & hobbyisten",
     description:
       "Laat custom onderdelen, cosplay props of repair parts printen in PLA, PLA Tough+ of PETG. Persoonlijk advies inbegrepen.",
-    url: "https://www.x3dprints.be/segments/3d-printing-makers",
+    url: "https://www.x3dprints.be/segments/3d-printing-makers/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -116,7 +116,7 @@ export default function MakersSegmentPage() {
           Of je nu cosplay armor, modelbouwdetails of een custom mount voor sensoren nodig hebt: je krijgt eerlijke timings, materiaaladvies en directe communicatie met de printer zelf.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact?material=pla-matte">Plan een gesprek</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-matte" event={ { action: "cta_click", category: "segments_makers", label: "plan-gesprek" } }> Plan een gesprek</ShimmerButton>
           <Link
             href="/materials#material-suggestion-tool"
             className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"

@@ -15,7 +15,14 @@ export const metadata: Metadata = {
   title: "Veelgestelde vragen 3D printen | X3DPrints",
   description:
     "FAQ over 3D printen, levertijden, materialen (PLA, PETG, TPU), nabehandeling en werkwijze. Met geo-info voor Herzele, Gent, Antwerpen en Oost-Vlaanderen.",
-  alternates: { canonical: "https://www.x3dprints.be/faq" },
+  alternates: {
+    canonical: "https://www.x3dprints.be/faq/",
+    languages: {
+      "nl-BE": "https://www.x3dprints.be/faq/",
+      en: "https://www.x3dprints.be/en/faq/",
+      "x-default": "https://www.x3dprints.be/faq/",
+    },
+  },
   robots: {
     index: true,
     follow: true,

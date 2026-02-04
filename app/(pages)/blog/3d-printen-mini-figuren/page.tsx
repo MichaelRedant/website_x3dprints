@@ -5,8 +5,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-mini-figuren"
+const datePublished = "2024-06-10"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "3D printen van miniaturen voor tabletop gaming | X3DPrints Blog",
@@ -17,7 +20,7 @@ export const metadata: Metadata = {
     title: "3D printen van miniaturen voor tabletop gaming",
     description:
       "Leer hoe je haarscherpe D&D en Warhammer mini’s print: materiaalkeuze, detail, supports, primer, schilderen en veilige levering.",
-    url: canonical,
+  url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte miniaturen en dice tower" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -94,24 +97,14 @@ const faq = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: ["nl-BE", "en-BE"],
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "3D printen van miniaturen voor tabletop gaming",
   description:
-    "Volledige gids voor 3D printing van D&D en Warhammer miniaturen: materiaalkeuze, detail, supports, nabewerking, dice towers en veilige levering.",
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/images/og-home.jpg" },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-}
+    "Gids voor 3D printing van miniaturen en dice towers voor Dungeons & Dragons en Warhammer. Materialen, detailtips, supports, nabewerking en levering.",
+  datePublished,
+  dateModified,
+})
 
 export default function BlogMiniaturesPage() {
   return (
@@ -316,3 +309,7 @@ export default function BlogMiniaturesPage() {
     </main>
   )
 }
+
+
+
+

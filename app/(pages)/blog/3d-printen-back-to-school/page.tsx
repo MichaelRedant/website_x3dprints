@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Back to School: 3D printen voor school",
     description:
       "Educatief 3D printen: gepersonaliseerde schoolmaterialen, pennenhouders en STEM-modellen in PLA/PETG. Materiaal- en leveringtips.",
-    url: canonical,
+  url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Back to School 3D printen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -309,3 +309,7 @@ export default function BlogBackToSchool() {
     </main>
   )
 }
+
+
+
+

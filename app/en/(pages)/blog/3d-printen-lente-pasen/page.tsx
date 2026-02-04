@@ -5,8 +5,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-lente-pasen"
+const datePublished = "2024-03-15"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "3D printing for spring and Easter | X3DPrints Blog",
@@ -23,7 +26,6 @@ export const metadata: Metadata = {
     title: "3D printing for spring and Easter",
     description: "Eggs, bunnies, floral decor and lanterns in pastel PLA or Translucent. Slicer tips, finishing and delivery zones.",
     url: canonical,
-    type: "article",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printed Easter decor" }],
     locale: "en_BE",
     siteName: "X3DPrints",
@@ -70,25 +72,16 @@ const faqItems = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "3D printing for spring & Easter",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "3D printing for spring & Easter",
   description:
-    "Pastel decor, ornaments and light objects in Silk, Matte and Translucent PLA with tips for supports, magnets and delivery.",
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-  image: ["https://www.x3dprints.be/images/og-home.jpg"],
+    "Pastel decor, Easter ornaments and light objects in Silk, Matte and Translucent PLA. Tips for supports, magnets, delivery and design service (model not included). Shipping across Belgium; Bpost export for expat gifts or EU events on request.",
+  datePublished,
+  dateModified,
+  image: "https://www.x3dprints.be/images/og-home.jpg",
   inLanguage: "en-BE",
-}
+})
 
 const faqJsonLd = {
   "@context": "https://schema.org",

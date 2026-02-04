@@ -4,8 +4,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/beste-instellingen-bambu-printer"
+const datePublished = "2024-09-01"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "Beste instellingen voor jouw Bambu printer | X3DPrints Blog",
@@ -16,7 +19,7 @@ export const metadata: Metadata = {
     title: "Beste instellingen voor jouw Bambu printer",
     description:
       "Studio-geteste instellingen voor PLA, PETG en TPU inclusief flow kalibratie, AMS tips en onderhoud zodat je prints foutloos uit de Bambu komt.",
-    url: canonical,
+  url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Bambu printer instellingen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -107,31 +110,14 @@ const faq = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: ["nl-BE", "en-BE"],
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Beste instellingen voor jouw Bambu printer",
   description:
-    "Studio-geteste instellingen voor PLA, PETG en TPU op Bambu printers inclusief kalibratie, AMS tips en troubleshooting.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-}
+    "Gebruik deze presets voor PLA, PETG en TPU op Bambu printers: temperaturen, snelheden, retract en kalibratie. Inclusief tips voor flow, AMS en onderhoud.",
+  datePublished,
+  dateModified,
+})
 
 export default function BambuSettingsPage() {
   return (
@@ -307,3 +293,7 @@ export default function BambuSettingsPage() {
     </main>
   )
 }
+
+
+
+

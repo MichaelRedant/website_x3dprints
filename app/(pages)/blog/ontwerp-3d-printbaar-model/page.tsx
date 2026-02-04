@@ -4,8 +4,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/ontwerp-3d-printbaar-model"
+const datePublished = "2024-05-01"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "Hoe ontwerp je een 3D printbaar model? | X3DPrints Blog",
@@ -16,7 +19,7 @@ export const metadata: Metadata = {
     title: "Hoe ontwerp je een 3D printbaar model?",
     description:
       "Volledige gids met ontwerpprincipes voor 3D prints: wanddiktes, overhangen, snap-fit, tolerantie en exporttips.",
-    url: canonical,
+  url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Ontwerp 3D printbaar model" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -81,31 +84,14 @@ const snapFitTips = [
   "Plaats de snap-fit langs de printlaagrichting voor maximale sterkte. Bij horizontale clips voeg je ribs toe.",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: ["nl-BE", "en-BE"],
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Hoe ontwerp je een 3D printbaar model?",
   description:
-    "Checklist en richtlijnen om 3D printbare modellen te ontwerpen met focus op wanddiktes, tolerantie, support en bestandsformaten.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-}
+    "Checklist voor printbare ontwerpen: wanddiktes, tolerantie, oriëntatie, support en bestandsformaten. Inclusief tips voor PLA, PETG en TPU.",
+  datePublished,
+  dateModified,
+})
 
 export default function DesignArticlePage() {
   return (
@@ -265,3 +251,7 @@ export default function DesignArticlePage() {
     </main>
   )
 }
+
+
+
+

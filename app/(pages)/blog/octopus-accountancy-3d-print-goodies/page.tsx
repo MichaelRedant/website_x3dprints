@@ -717,3 +717,7 @@ export default function OctopusCasePage({ locale }: PageProps) {
     </article>
   )
 }
+
+
+
+

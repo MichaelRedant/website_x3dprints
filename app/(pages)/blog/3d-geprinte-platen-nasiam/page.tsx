@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "NaSiam x X3DPrints: 3D-geprinte platen met QR",
     description:
       "Case study: twee stevige, herbruikbare platen met logo en QR-code voor NaSiam, een salon voor Thaise massage in Sint-Job-in-'t-Goor nabij Antwerpen. Inclusief materiaalkeuzes en montageadvies.",
-    url: canonical,
+  url: canonical,
     images: [
       {
         url: "/images/3d-geprinte-platen.webp",
@@ -330,3 +330,7 @@ export default function NaSiamArticlePage() {
     </article>
   )
 }
+
+
+
+

@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "3D printing voor prototypes | X3DPrints",
   description:
     "Snelle iteraties met 3D print prototypes vanuit Herzele. PLA Matte, PLA Tough+ en PETG met feedback over DFM, tolerantie en planning.",
-  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-prototypes" },
+  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-prototypes/", languages: { "nl-BE": "https://www.x3dprints.be/segments/3d-printing-prototypes/", en: "https://www.x3dprints.be/en/segments/3d-printing-prototypes/", "x-default": "https://www.x3dprints.be/segments/3d-printing-prototypes/", }, },
   openGraph: {
     title: "3D printing voor prototypes",
     description:
       "Krijg strakke prototypes in PLA, PLA Tough+ of PETG. Korte lijnen, DFM-feedback en tooling zoals de Material Suggestion Tool.",
-    url: "https://www.x3dprints.be/segments/3d-printing-prototypes",
+    url: "https://www.x3dprints.be/segments/3d-printing-prototypes/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -103,7 +103,7 @@ export default function PrototypeSegmentPage() {
           Snelle iteraties, eerlijke timings en persoonlijke begeleiding vanuit Herzele. Gebruik deze pagina als startpunt voor je volgende sprint.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact?material=pla-tough-plus">Offerte aanvragen</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-tough-plus" event={ { action: "cta_click", category: "segments_prototypes", label: "quote" } }> Offerte aanvragen</ShimmerButton>
           <Link href="/materials#material-suggestion-tool" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
             Material Suggestion Tool
           </Link>

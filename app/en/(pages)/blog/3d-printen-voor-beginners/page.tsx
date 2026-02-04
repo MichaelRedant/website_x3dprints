@@ -4,8 +4,15 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-voor-beginners"
+const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=beginners"
+const pricingHref = `/en/pricing${utm}`
+const viewerHref = `/en/viewer${utm}`
+const contactHref = `/en/contact${utm}`
+const datePublished = "2024-08-20"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "3D printing for beginners | X3DPrints",
@@ -50,31 +57,16 @@ const pitfalls = [
   "Forgetting finishing. Specify if you want raw, sanded or painted; it affects price and planning.",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "3D printing for beginners",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "3D printing for beginners",
   description:
     "Beginner guide with steps, material choices and common pitfalls. Includes tips for coaching and guidance.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  datePublished,
+  dateModified,
+  image: "/images/portfolio/20241024_081839-1.jpg",
   inLanguage: "en-BE",
-}
+})
 
 export default function BeginnersArticleEnPage() {
   return (
@@ -106,15 +98,23 @@ export default function BeginnersArticleEnPage() {
               Starting with 3D printing? Here is your playbook.
             </h1>
             <p className="mt-4 text-lg text-slate-700">
-              Whether you are a student, marketer or maker: with a solid file and clear context you get a professional result fast.
+              Whether you are a student, marketer or maker: with a solid file and clear context you get a professional result fast. We coach in English, ship across Belgium, and can hand over source files for your internal teams.
             </p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href="/en/viewer">Upload your first model</ShimmerButton>
+              <ShimmerButton href={viewerHref} event={{ action: "cta_click", category: "blog_top", label: "viewer_beginners_en" }}>
+                Upload your first model
+              </ShimmerButton>
               <Link
-                href="/en/contact"
+                href={contactHref}
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Request guidance
+              </Link>
+              <Link
+                href={pricingHref}
+                className="inline-flex items-center gap-2 rounded-xl border border-emerald-100 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 shadow-sm hover:-translate-y-0.5 hover:bg-emerald-100"
+              >
+                View pricing
               </Link>
             </div>
           </Reveal>

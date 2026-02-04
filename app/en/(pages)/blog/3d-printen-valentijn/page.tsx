@@ -6,10 +6,12 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-valentijn"
 const ogImage = "https://www.x3dprints.be/images/og-home.jpg"
-const publishedDate = "2025-02-01T08:00:00+01:00"
+const publishedDate = "2024-01-25"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "3D printing Valentine gifts | X3DPrints Blog",
@@ -43,7 +45,7 @@ const tips = [
   "Translucent PLA (1.6-2 mm walls) for light objects with fairy lights; keep ventilation for LEDs.",
   "Integrate eyelets or pin-holes for magnets and make text at least 0.6 mm thick for legibility.",
   "Design/model not included: provide STL/STEP or choose design service at €45/hour.",
-  "Delivery options: EV zones or parcel service. Fragile pieces are packed separately; pickup in Herzele is free.",
+  "Delivery options: EV zones or parcel service. Fragile pieces are packed separately; pickup in Herzele is free. Bpost export possible for expat gifting or UK/EU partners.",
 ]
 
 const checklist = [
@@ -89,26 +91,16 @@ const valentijnVideos = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "3D printing Valentine gifts",
   description:
-    "Guide for 3D printed Valentine gifts: Silk/Matte/Translucent PLA, LED tips, magnets and delivery checklist. Design file not included.",
-  mainEntityOfPage: canonical,
-  url: canonical,
-  image: ogImage,
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
-  },
+    "Heart decor, personalised gifts and light objects in Silk, Matte and Translucent PLA. Checklist for material, LEDs and delivery options. Design file not included.",
   datePublished: publishedDate,
-  dateModified: publishedDate,
+  dateModified,
+  image: ogImage,
   inLanguage: "en-BE",
-}
+})
 
 export default function ValentinesBlogEnPage() {
   return (

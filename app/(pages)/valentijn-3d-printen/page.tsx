@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Valentijn 3D prints op maat | X3DPrints",
   description:
     "Hartdecor, naamplaatjes en gepersonaliseerde cadeaus in Silk, Matte en Translucent PLA. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice.",
-  alternates: { canonical: "https://www.x3dprints.be/valentijn-3d-printen" },
+  alternates: { canonical: "https://www.x3dprints.be/valentijn-3d-printen/", languages: { "nl-BE": "https://www.x3dprints.be/valentijn-3d-printen/", en: "https://www.x3dprints.be/en/valentijn-3d-printen/", "x-default": "https://www.x3dprints.be/valentijn-3d-printen/", }, },
   openGraph: {
     title: "Valentijn 3D prints op maat",
     description:
       "Valentijn gifts met glans of lichtgloed. Silk/Matte/Translucent PLA, led-uitsparingen en leveropties in Vlaanderen.",
-    url: "https://www.x3dprints.be/valentijn-3d-printen",
+    url: "https://www.x3dprints.be/valentijn-3d-printen/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",

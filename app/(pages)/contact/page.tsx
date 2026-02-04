@@ -12,18 +12,19 @@ const NL_METADATA: Metadata = {
   description:
     "Vraag een offerte aan voor 3D printen: prototypes of kleine series. Snel, duidelijk en zonder onzin. Regio Herzele/Gent.",
   alternates: {
-    canonical: "https://www.x3dprints.be/contact",
+    canonical: "https://www.x3dprints.be/contact/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/contact",
-      en: "https://www.x3dprints.be/en/contact",
+      "nl-BE": "https://www.x3dprints.be/contact/",
+      en: "https://www.x3dprints.be/en/contact/",
+      "x-default": "https://www.x3dprints.be/contact/",
     },
   },
   openGraph: {
     title: "Contact | X3DPrints",
     description:
       "Vraag een offerte aan voor 3D printen in PLA, PETG of TPU. Korte lijnen, helder over prijs en levertijd.",
-    url: "https://www.x3dprints.be/contact",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    url: "https://www.x3dprints.be/contact/",
+    images: [{ url: "/images/portfolio/20230916_085011.webp", width: 1200, height: 630, alt: "Contact X3DPrints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -35,18 +36,19 @@ export const EN_METADATA: Metadata = {
   description:
     "Request a 3D printing quote: prototypes or small batches. Fast, clear and no fluff. Based in Herzele/Ghent region.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/contact",
+    canonical: "https://www.x3dprints.be/en/contact/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/contact",
-      en: "https://www.x3dprints.be/en/contact",
+      "nl-BE": "https://www.x3dprints.be/contact/",
+      en: "https://www.x3dprints.be/en/contact/",
+      "x-default": "https://www.x3dprints.be/contact/",
     },
   },
   openGraph: {
     title: "Contact | X3DPrints Belgium",
     description:
       "Request a quote for PLA, PETG or TPU prints. Direct communication, clear on price and lead time.",
-    url: "https://www.x3dprints.be/en/contact",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    url: "https://www.x3dprints.be/en/contact/",
+    images: [{ url: "/images/portfolio/20230916_085011.webp", width: 1200, height: 630, alt: "Contact X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },

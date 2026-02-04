@@ -6,6 +6,13 @@ import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-voor-beginners"
+const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=3d-printen-voor-beginners"
+const contactHref = `/contact${utm}`
+const toolHref = `/materials${utm}#material-suggestion-tool`
+const pricingHref = `/pricing${utm}`
+const viewerHref = `/viewer${utm}`
+const datePublished = "2024-08-20"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "3D printen voor beginners | X3DPrints",
@@ -17,7 +24,7 @@ export const metadata: Metadata = {
     description:
       "Leer stap voor stap hoe je jouw eerste 3D print laat maken: materiaal, files, voorbeelden en begeleiding vanuit Herzele.",
     url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printen voor beginners" }],
+    images: [{ url: "/images/portfolio/20241024_081839-1.jpg", width: 1200, height: 630, alt: "3D printen voor beginners" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -67,6 +74,8 @@ const articleJsonLd = {
     },
   },
   mainEntityOfPage: canonical,
+  datePublished,
+  dateModified,
   url: canonical,
 }
 
@@ -103,12 +112,20 @@ export default function BeginnersArticlePage() {
               Of je nu student, marketeer of maker bent: met een goed bestand en duidelijke context krijg je snel een professioneel resultaat.
             </p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href="/viewer">Upload je eerste model</ShimmerButton>
+              <ShimmerButton href={viewerHref} event={{ action: "cta_click", category: "blog_top", label: "viewer_beginners" }}>
+                Upload je eerste model
+              </ShimmerButton>
               <Link
-                href="/contact"
+                href={contactHref}
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Vraag begeleiding
+              </Link>
+              <Link
+                href={pricingHref}
+                className="inline-flex items-center gap-2 rounded-xl border border-emerald-100 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 shadow-sm hover:-translate-y-0.5 hover:bg-emerald-100"
+              >
+                Bekijk pricing
               </Link>
             </div>
           </Reveal>
@@ -199,9 +216,15 @@ export default function BeginnersArticlePage() {
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href="/contact">Vraag advies</ShimmerButton>
-                <Link href="/pricing" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
+                <ShimmerButton href={contactHref}>Vraag advies</ShimmerButton>
+                <Link href={`/pricing${utm}`} className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
                   Bekijk tarieven
+                </Link>
+                <Link
+                  href={toolHref}
+                  className="text-sm font-semibold text-slate-700 transition hover:text-slate-900"
+                >
+                  Materialen kiezen
                 </Link>
               </div>
             </GlassCard>
@@ -215,4 +238,8 @@ export default function BeginnersArticlePage() {
     </main>
   )
 }
+
+
+
+
 

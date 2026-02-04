@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/pla-vs-petg"
 
@@ -110,31 +111,15 @@ const faq = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "PLA vs PETG: which should you choose?",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "PLA vs PETG: which should you choose?",
   description:
-    "Comparison between PLA and PETG for 3D printing covering look, mechanical behaviour, temperature resistance and cost.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+    "Compare PLA and PETG for 3D printing: look, strength, heat resistance and use cases. Includes practical cases and print tips.",
+  datePublished: "2024-09-01",
+  dateModified: "2024-09-01",
   inLanguage: "en-BE",
-}
+})
 
 export default function BlogPlaVsPetgEnPage() {
   return (

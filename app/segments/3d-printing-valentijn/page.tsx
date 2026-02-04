@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "3D printing voor Valentijn cadeaus | X3DPrints",
   description:
     "Gepersonaliseerde Valentijn cadeaus, hartdecor en lichtobjecten in Silk, Matte en Translucent PLA. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice.",
-  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-valentijn" },
+  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-valentijn/", languages: { "nl-BE": "https://www.x3dprints.be/segments/3d-printing-valentijn/", en: "https://www.x3dprints.be/en/segments/3d-printing-valentijn/", "x-default": "https://www.x3dprints.be/segments/3d-printing-valentijn/", }, },
   openGraph: {
     title: "3D printing voor Valentijn cadeaus",
     description:
       "Hartvormige props, naamplaatjes en sfeerverlichting in Silk/Matte/Translucent PLA. Snelle planning vanuit Herzele.",
-    url: "https://www.x3dprints.be/segments/3d-printing-valentijn",
+    url: "https://www.x3dprints.be/segments/3d-printing-valentijn/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -120,7 +120,7 @@ export default function ValentijnSegmentPage() {
           Hartvormige props, gepersonaliseerde gifts en sfeerverlichting in Silk, Matte of Translucent PLA. Ontwerp van het 3D model is niet inbegrepen; lever STL/STEP of kies ontwerpservice aan EUR 45/uur.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact?material=pla-silk-plus">Plan je Valentijn run</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-silk-plus" event={ { action: "cta_click", category: "segments_valentijn", label: "plan-run" } }> Plan je Valentijn run</ShimmerButton>
           <Link
             href="/materials#material-suggestion-tool"
             className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"

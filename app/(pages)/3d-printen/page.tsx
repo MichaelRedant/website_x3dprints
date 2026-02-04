@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "3D printen in België · Lokaal 3D printen vanuit Herzele | X3DPrints",
   description:
     "3D printen voor marketing, tabletop en particulieren. Lokale 3D printservice (FDM) vanuit Herzele met advies over ontwerp, materiaal, prijs en workflow.",
-  alternates: { canonical: "https://www.x3dprints.be/3d-printen" },
+  alternates: { canonical: "https://www.x3dprints.be/3d-printen/", languages: { "nl-BE": "https://www.x3dprints.be/3d-printen/", en: "https://www.x3dprints.be/en/3d-printen/", "x-default": "https://www.x3dprints.be/3d-printen/", }, },
   openGraph: {
     title: "3D printen in België | X3DPrints",
     description:
       "3D printen voor marketingmateriaal, tabletop en consumenten. Lokaal 3D printen vanuit Herzele (tussen Gent en Aalst) met duidelijke workflow en materiaaladvies.",
-    url: "https://www.x3dprints.be/3d-printen",
+    url: "https://www.x3dprints.be/3d-printen/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printen landing" }],
     locale: "nl_BE",
     siteName: "X3DPrints",

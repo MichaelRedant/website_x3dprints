@@ -14,11 +14,13 @@ type FaqPromoProps = {
   intro?: string
   href?: string
   ctaLabel?: string
+  ctaAriaLabel?: string
   /** Toon 2–3 korte Q&A’s inline (goed voor UX/SEO). */
   qaItems?: QA[]
   /** Voeg JSON-LD FAQ schema toe. Zet true als je dit blok 1× per pagina gebruikt. */
   emitJsonLd?: boolean
   className?: string
+  tagline?: string
 }
 
 /** Kleine helper: maak nette, korte zinnen (max ~160 chars) voor microcopy/SEO. */
@@ -32,6 +34,7 @@ export default function FaqPromo({
   intro = "Antwoorden over materialen, levertijden, prijzen en onze werkwijze.",
   href = "/faq",
   ctaLabel = "Bekijk de FAQ",
+  ctaAriaLabel = "Ga naar de veelgestelde vragen",
   qaItems = [
     { q: "Welke materialen printen jullie?", a: "Standaard PLA Matte, plus PETG en TPU. Op aanvraag ABS/ASA, Nylon, PA-CF." },
     { q: "Wat is de gebruikelijke doorlooptijd?", a: "Doorgaans enkele werkdagen, afhankelijk van complexiteit en oplage." },
@@ -39,6 +42,7 @@ export default function FaqPromo({
   ],
   emitJsonLd = false,
   className = "",
+  tagline = "Duidelijke antwoorden. Geen buzzword-bingo.",
 }: FaqPromoProps) {
   const { locale } = useLocale()
   const resolvedHref = localizeHref(href, locale)
@@ -101,15 +105,13 @@ export default function FaqPromo({
             <div className="flex flex-wrap items-center gap-3">
               <Link
                 href={resolvedHref}
-                aria-label="Ga naar de veelgestelde vragen"
+                aria-label={ctaAriaLabel}
                 className="rounded-xl border border-slate-300 bg-white/90 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >
                 {ctaLabel}
               </Link>
 
-              <span className="text-xs text-slate-500">
-                Duidelijke antwoorden. Geen buzzword-bingo.
-              </span>
+              <span className="text-xs text-slate-500">{tagline}</span>
             </div>
           </div>
         </GlassCard>

@@ -7,6 +7,8 @@ import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-herfst-halloween"
+const datePublished = "2024-10-01"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "3D printen voor herfst en Halloween | X3DPrints Blog",
@@ -17,7 +19,7 @@ export const metadata: Metadata = {
     title: "3D printen voor herfst en Halloween",
     description:
       "Maak pumpkins, spooky props en lantaarns in Silk/Marble/Translucent PLA. Materialen, slicer-tips, leverzones en ontwerpservice.",
-    url: canonical,
+  url: canonical,
     type: "article",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte Halloween decor" }],
     locale: "nl_BE",
@@ -85,6 +87,8 @@ const articleJsonLd = {
     logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
   },
   mainEntityOfPage: canonical,
+  datePublished,
+  dateModified,
   url: canonical,
   image: ["https://www.x3dprints.be/images/og-home.jpg"],
 }
@@ -296,3 +300,7 @@ export default function BlogAutumnHalloween() {
     </main>
   )
 }
+
+
+
+

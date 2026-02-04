@@ -22,7 +22,8 @@ const NL_METADATA: Metadata = {
     canonical: "https://www.x3dprints.be/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/",
-      en: "https://www.x3dprints.be/en",
+      en: "https://www.x3dprints.be/en/",
+      "x-default": "https://www.x3dprints.be/",
     },
   },
   openGraph: {
@@ -42,17 +43,18 @@ export const EN_METADATA: Metadata = {
   description:
     "Precision 3D printing in Belgium and Flanders. Fast turnaround from Herzele with advice on PLA, PETG, ABS/ASA, Nylon and PA-CF for prototypes, displays and functional parts.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en",
+    canonical: "https://www.x3dprints.be/en/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/",
-      en: "https://www.x3dprints.be/en",
+      en: "https://www.x3dprints.be/en/",
+      "x-default": "https://www.x3dprints.be/",
     },
   },
   openGraph: {
     title: "X3DPrints - 3D print service in Belgium",
     description:
       "From STL/STEP to clean 3D prints in Belgium. Local guidance, shorter lead times and durable finishing for projects in Ghent, Aalst and across Flanders.",
-    url: "https://www.x3dprints.be/en",
+    url: "https://www.x3dprints.be/en/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "en_BE",
     siteName: "X3DPrints",
@@ -769,7 +771,12 @@ export default function HomePage({ locale }: PageProps) {
               {copy.hero.intro}
             </p>
             <div className="stacked-actions mt-10 flex flex-wrap items-center gap-3 justify-center sm:justify-start">
-              <ShimmerButton href={localize("/contact")}>{copy.hero.ctas.quote}</ShimmerButton>
+              <ShimmerButton
+                href={localize("/contact")}
+                event={{ action: "cta_click", category: "home_hero", label: "quote" }}
+              >
+                {copy.hero.ctas.quote}
+              </ShimmerButton>
               <Link
                 href={localize("/contact?material=PLA_MATTE")}
                 className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-indigo-50/80 px-5 py-3 text-sm font-semibold text-indigo-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-indigo-50"
@@ -875,7 +882,12 @@ export default function HomePage({ locale }: PageProps) {
                     {copy.local.bodyEnd}
                   </p>
                   <div className="mt-4 flex flex-wrap gap-3">
-                    <ShimmerButton href={localize("/lokaal-belgisch")}>{copy.local.ctas.primary}</ShimmerButton>
+                <ShimmerButton
+                  href={localize("/lokaal-belgisch")}
+                  event={{ action: "cta_click", category: "home_local", label: "lokaal-belgisch" }}
+                >
+                  {copy.local.ctas.primary}
+                </ShimmerButton>
                     <Link
                       href="https://www.herzele.be"
                       target="_blank"
@@ -1020,7 +1032,12 @@ export default function HomePage({ locale }: PageProps) {
                 ))}
               </div>
               <div className="flex flex-wrap gap-3 pt-1">
-                <ShimmerButton href={localize("/organizers")}>{copy.organizers.ctas.primary}</ShimmerButton>
+                <ShimmerButton
+                  href={localize("/organizers")}
+                  event={{ action: "cta_click", category: "home_organizers", label: "organizers" }}
+                >
+                  {copy.organizers.ctas.primary}
+                </ShimmerButton>
                 <Link
                   href={localize("/contact?material=organizers")}
                   className="inline-flex items-center gap-2 rounded-xl border border-white/60 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-[#0f162c]"
@@ -1216,7 +1233,12 @@ export default function HomePage({ locale }: PageProps) {
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-3">
-                  <ShimmerButton href={localize("/3d-modellen-vinden")}>{copy.printables.ctaPrimary}</ShimmerButton>
+                  <ShimmerButton
+                    href={localize("/3d-modellen-vinden")}
+                    event={{ action: "cta_click", category: "home_printables", label: "models-guide" }}
+                  >
+                    {copy.printables.ctaPrimary}
+                  </ShimmerButton>
                   <Link
                     href={localize("/contact?quote=Link%20naar%203D%20model")}
                     className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-4 py-2.5 text-sm font-semibold text-indigo-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
@@ -1321,7 +1343,12 @@ export default function HomePage({ locale }: PageProps) {
             >
               {copy.pricing.ctas.pricing}
             </Link>
-            <ShimmerButton href={localize("/contact")}>{copy.pricing.ctas.request}</ShimmerButton>
+            <ShimmerButton
+              href={localize("/contact")}
+              event={{ action: "cta_click", category: "home_pricing", label: "request" }}
+            >
+              {copy.pricing.ctas.request}
+            </ShimmerButton>
           </div>
         </div>
       </section>
@@ -1340,7 +1367,12 @@ export default function HomePage({ locale }: PageProps) {
                     {copy.closing.body}
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <ShimmerButton href={localize("/contact")}>{copy.closing.ctas.quote}</ShimmerButton>
+                    <ShimmerButton
+                      href={localize("/contact")}
+                      event={{ action: "cta_click", category: "home_closing", label: "quote" }}
+                    >
+                      {copy.closing.ctas.quote}
+                    </ShimmerButton>
                     <Link
                       href={localize("/portfolio")}
                       className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white/20"

@@ -4,8 +4,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/hoe-lang-duurt-3d-printen"
+const datePublished = "2024-09-15"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "How long does 3D printing take? | X3DPrints",
@@ -79,31 +82,16 @@ const faq = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "How long does 3D printing take?",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "How long does 3D printing take?",
   description:
     "Lead time guide for 3D printing: what impacts turnaround, indicative timelines and how to secure rush capacity.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  datePublished,
+  dateModified,
+  image: "/images/portfolio/20241030_080710-1.jpg",
   inLanguage: "en-BE",
-}
+})
 
 export default function BlogLeadTimesEnPage() {
   return (
@@ -136,7 +124,7 @@ export default function BlogLeadTimesEnPage() {
             </h1>
             <p className="mt-4 text-lg text-slate-700">
               Turnaround ranges from express (raw prints within 24 hours) to several weeks (large batches with finishing). Below you will see what
-              influences lead time and how to get your project into the queue faster.
+              influences lead time and how to get your project into the queue faster. We print from Herzele (Ghent area) and ship across Belgium—Bpost export to EU/UK on request.
             </p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
               <ShimmerButton href="/en/pricing">View guide prices & timing</ShimmerButton>

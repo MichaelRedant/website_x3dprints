@@ -16,10 +16,11 @@ const NL_METADATA: Metadata = {
   description:
     "Maak kennis met X3DPrints: compacte 3D-printstudio in Herzele voor prototypes en kleine series. Rechtstreeks contact, eerlijk materiaaladvies en nette afwerking.",
   alternates: {
-    canonical: "https://www.x3dprints.be/about",
+    canonical: "https://www.x3dprints.be/about/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/about",
-      en: "https://www.x3dprints.be/en/about",
+      "nl-BE": "https://www.x3dprints.be/about/",
+      en: "https://www.x3dprints.be/en/about/",
+      "x-default": "https://www.x3dprints.be/about/",
     },
   },
   openGraph: {

@@ -498,6 +498,46 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
     })),
   }
 
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: languageCode,
+    name: isEn ? `Get the right material: ${material.name}` : `Kies het juiste materiaal: ${material.name}`,
+    description: isEn
+      ? "Four quick steps to confirm suitability, see price impact and send a quote with the material prefilled."
+      : "Vier snelle stappen om geschiktheid te checken, prijsimpact te zien en een offerte met vooraf ingevuld materiaal te sturen.",
+    totalTime: "PT2M",
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: isEn ? "Check suitability" : "Check geschiktheid",
+        text: isEn
+          ? `Verify ${material.name} fits your environment and tolerance needs.`
+          : `Controleer of ${material.name} past bij omgeving en toleranties.`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: isEn ? "Pick colour/stock" : "Kies kleur/voorraad",
+        text: isEn ? "Pick a colour from the swatches and note stock status." : "Kies een kleur en noteer voorraadstatus.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: isEn ? "See price range" : "Bekijk prijsschatting",
+        url: localize(`/pricing?utm_source=material-detail&utm_medium=howto&utm_campaign=${detail.slug}`),
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: isEn ? "Request a quote (prefilled)" : "Vraag offerte (vooraf ingevuld)",
+        url: contactHref,
+      },
+    ],
+    tool: [{ "@type": "HowToTool", name: "Material Suggestion Tool" }],
+  }
+
   const faqJsonLd = detail.faq
     ? {
         "@context": "https://schema.org",
@@ -528,20 +568,33 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
       <section className="px-6 pt-14 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
-            <MaterialBreadcrumb current={material.name} href={localize("/materials")} label={copy.breadcrumbLabel} />
-            <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-indigo-600">
-              {detail.heroTagline}
-            </p>
-            <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              {material.name}
-            </h1>
-            <p className="mt-4 text-lg text-slate-700">{detail.heroDescription}</p>
-            <p className="mt-4 max-w-3xl text-base text-slate-600">{detail.summary}</p>
+          <MaterialBreadcrumb current={material.name} href={localize("/materials")} label={copy.breadcrumbLabel} />
+          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-indigo-600">
+            {detail.heroTagline}
+          </p>
+          <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            {material.name}
+          </h1>
+          <p className="mt-4 text-lg text-slate-700">{detail.heroDescription}</p>
+          <p className="mt-4 max-w-3xl text-base text-slate-600">{detail.summary}</p>
 
-            <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-slate-600">
-              {detail.priceIndicator ? (
-                <span className="inline-flex items-center rounded-full bg-white/80 px-3 py-1 font-medium text-slate-700 ring-1 ring-slate-200">
-                  {detail.priceIndicator}
+          <div className="mt-6 flex flex-wrap gap-3">
+            <ShimmerButton href={contactHref}>{isEn ? "Request a quote" : "Offerte aanvragen"}</ShimmerButton>
+            <ShimmerButton href={localize(`/materials?utm_source=material-detail&utm_medium=cta&utm_campaign=${slug}#material-suggestion-tool`)}>
+              {isEn ? "Material Suggestion Tool" : "Material Suggestion Tool"}
+            </ShimmerButton>
+            <Link
+              href={localize(`/pricing?utm_source=material-detail&utm_medium=cta&utm_campaign=${slug}`)}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm hover:border-slate-300 hover:bg-slate-50"
+            >
+              {isEn ? "See price guide" : "Bekijk prijsindicaties"}
+            </Link>
+          </div>
+
+          <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-slate-600">
+            {detail.priceIndicator ? (
+              <span className="inline-flex items-center rounded-full bg-white/80 px-3 py-1 font-medium text-slate-700 ring-1 ring-slate-200">
+                {detail.priceIndicator}
                 </span>
               ) : null}
             </div>
@@ -751,6 +804,10 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
       />
       {faqJsonLd ? (
         <script

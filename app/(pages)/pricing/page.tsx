@@ -16,18 +16,19 @@ const NL_METADATA: Metadata = {
   description:
     "Transparante prijzen voor 3D printen in PLA (standaard), met opties voor PLA+ varianten, PETG en TPU. Droogbehandeling voor PETG/TPU inbegrepen. Offerte binnen 24 uur.",
   alternates: {
-    canonical: "https://www.x3dprints.be/pricing",
+    canonical: "https://www.x3dprints.be/pricing/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/pricing",
-      en: "https://www.x3dprints.be/en/pricing",
+      "nl-BE": "https://www.x3dprints.be/pricing/",
+      en: "https://www.x3dprints.be/en/pricing/",
+      "x-default": "https://www.x3dprints.be/pricing/",
     },
   },
   openGraph: {
     title: "Prijzen 3D printen",
     description:
       "Indicatieve tarieven voor prototypes en kleine series. Materialen: PLA (standaard), PLA+ varianten, PETG en TPU. Levering in heel Belgie.",
-    url: "https://www.x3dprints.be/pricing",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    url: "https://www.x3dprints.be/pricing/",
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -39,18 +40,19 @@ export const EN_METADATA: Metadata = {
   description:
     "Transparent pricing for FDM 3D printing in PLA (standard), with PLA+ variants, PETG and TPU options. Drying for PETG/TPU included. Quote within 24 hours.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/pricing",
+    canonical: "https://www.x3dprints.be/en/pricing/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/pricing",
-      en: "https://www.x3dprints.be/en/pricing",
+      "nl-BE": "https://www.x3dprints.be/pricing/",
+      en: "https://www.x3dprints.be/en/pricing/",
+      "x-default": "https://www.x3dprints.be/pricing/",
     },
   },
   openGraph: {
     title: "3D printing prices",
     description:
       "Indicative rates for prototypes and small batches. Materials: PLA (standard), PLA+ variants, PETG and TPU. Delivery across Belgium.",
-    url: "https://www.x3dprints.be/en/pricing",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    url: "https://www.x3dprints.be/en/pricing/",
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -323,7 +325,12 @@ export default function Page({ locale }: PageProps) {
             </h1>
             <p className="mt-3 max-w-3xl text-slate-600">{copy.hero.body}</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href={localize("/contact")}>{copy.hero.ctas.quote}</ShimmerButton>
+              <ShimmerButton
+                href={localize("/contact")}
+                event={{ action: "cta_click", category: "pricing_hero", label: "quote" }}
+              >
+                {copy.hero.ctas.quote}
+              </ShimmerButton>
               <Link
                 href={localize("/materials")}
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -483,7 +490,12 @@ export default function Page({ locale }: PageProps) {
               <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{copy.cta.title}</h2>
               <p className="mt-2 max-w-prose text-slate-600">{copy.cta.body}</p>
               <div className="mt-5 flex flex-wrap gap-3">
-                <ShimmerButton href={localize("/contact")}>{copy.cta.primary}</ShimmerButton>
+                <ShimmerButton
+                  href={localize("/contact")}
+                  event={{ action: "cta_click", category: "pricing_cta", label: "contact" }}
+                >
+                  {copy.cta.primary}
+                </ShimmerButton>
                 <Link
                   href={localize("/services")}
                   className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"

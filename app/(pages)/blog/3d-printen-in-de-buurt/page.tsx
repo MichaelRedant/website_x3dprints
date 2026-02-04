@@ -4,8 +4,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-in-de-buurt"
+const datePublished = "2024-07-01"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "3D printen in de buurt (Gent, Aalst, Dendermonde) | X3DPrints",
@@ -16,7 +19,7 @@ export const metadata: Metadata = {
     title: "3D printen in de buurt (Gent, Aalst, Dendermonde)",
     description:
       "X3DPrints produceert in Herzele en levert in Gent, Aalst en Dendermonde. Bekijk voorbeelden, logistiek en hoe je snel een offerte krijgt.",
-    url: canonical,
+  url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printen in de buurt" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -54,31 +57,14 @@ const process = [
   "Betaal via factuur of overschrijving; herhaalbestellingen verlopen nog sneller.",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: ["nl-BE", "en-BE"],
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "3D printen in de buurt (Gent, Aalst, Dendermonde)",
   description:
     "Lokale gids voor 3D printen in Gent, Aalst en Dendermonde met logistieke opties en voorbeelden van gerealiseerde projecten.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-}
+  datePublished,
+  dateModified,
+})
 
 export default function LocalArticlePage() {
   return (
@@ -208,4 +194,8 @@ export default function LocalArticlePage() {
     </main>
   )
 }
+
+
+
+
 

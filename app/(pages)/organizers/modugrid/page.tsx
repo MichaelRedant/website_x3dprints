@@ -26,7 +26,9 @@ export const metadata: Metadata = {
     title: PAGE.seo.title,
     description: PAGE.seo.description,
     url: PAGE_URL,
-    images: PAGE.seo.ogImage ? [{ url: PAGE.seo.ogImage, width: 1200, height: 630 }] : undefined,
+    images: PAGE.seo.ogImage
+      ? [{ url: PAGE.seo.ogImage, width: 1200, height: 630, alt: "Gridfinity organizer op maat" }]
+      : [{ url: "/images/organizers/modugrid/ModuGrid2.jpg", width: 1200, height: 900, alt: "Gridfinity organizer op maat" }],
     siteName: SITE.name,
     locale: SITE.locale,
   },

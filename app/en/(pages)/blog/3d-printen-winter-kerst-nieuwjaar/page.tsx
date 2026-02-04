@@ -5,8 +5,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-winter-kerst-nieuwjaar"
+const datePublished = "2024-11-15"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "3D printing for winter, Christmas and New Year | X3DPrints Blog",
@@ -21,12 +24,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "3D printing for winter, Christmas and New Year",
-    description: "Festive decor with gloss or glow. Material choices, slicer tips and delivery options for year-end.",
-    url: canonical,
-    type: "article",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printed Christmas decor" }],
-    locale: "en_BE",
-    siteName: "X3DPrints",
+  description: "Festive decor with gloss or glow. Material choices, slicer tips and delivery options for year-end.",
+  url: canonical,
+  images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printed Christmas decor" }],
+  locale: "en_BE",
+  siteName: "X3DPrints",
   },
   twitter: {
     card: "summary_large_image",
@@ -78,25 +80,15 @@ const inspirationImages = [
   { src: "/images/portfolio/winter6.webp", alt: "3D printed winter decor 6" },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "3D printing for winter, Christmas and New Year",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "3D printing for winter, Christmas and New Year",
   description:
-    "Snowflakes, ornaments, place cards and party props in Silk, Marble and Translucent PLA with tips for light objects and delivery.",
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+    "Snowflakes, ornaments, place cards and party props in Silk, Marble and Translucent PLA. Tips for light objects, mounting and delivery. Design file not included.",
+  datePublished,
+  dateModified,
   inLanguage: "en-BE",
-}
+})
 
 const faqJsonLd = {
   "@context": "https://schema.org",
@@ -125,7 +117,7 @@ export default function WinterHolidaysBlogEn() {
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Snowflakes, ornaments, place cards and party props with gloss or glow. Design file not included; provide STL/STEP or choose design service
-              (€45/hour). EV delivery for fragile pieces or parcel service elsewhere.
+              (€45/hour). EV delivery in Belgium, parcel elsewhere; Bpost export for EU/UK gifting on request.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact?material=PLA">Plan holiday prints</ShimmerButton>

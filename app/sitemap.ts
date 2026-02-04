@@ -40,8 +40,9 @@ function buildAlternates(nlPath?: string, enPath?: string) {
   if (!nlPath || !enPath) return undefined
   return {
     languages: {
-      "nl-BE": `${BASE_URL}${nlPath}`,
-      en: `${BASE_URL}${enPath}`,
+      "nl-BE": `${BASE_URL}${nlPath.endsWith("/") ? nlPath : `${nlPath}/`}`,
+      en: `${BASE_URL}${enPath.endsWith("/") ? enPath : `${enPath}/`}`,
+      "x-default": `${BASE_URL}${nlPath.endsWith("/") ? nlPath : `${nlPath}/`}`,
     },
   }
 }
@@ -107,15 +108,15 @@ export const dynamic = "force-static"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRouteConfigs: StaticRouteConfig[] = [
-    { nl: "/", en: "/en", changeFrequency: "weekly", priority: 0.8, sources: ["app/(home)/page.tsx", "app/en/(home)/page.tsx"] },
+    { nl: "/", en: "/en/", changeFrequency: "weekly", priority: 0.8, sources: ["app/(home)/page.tsx", "app/en/(home)/page.tsx"] },
     { nl: "/3d-printen", en: "/en/3d-printen", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/3d-printen/page.tsx", "app/en/(pages)/3d-printen/page.tsx"] },
-    { nl: "/services", en: "/en/services", changeFrequency: "monthly", priority: 0.8, sources: ["app/(pages)/services/page.tsx", "app/en/(pages)/services/page.tsx"] },
-    { nl: "/materials", en: "/en/materials", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/materials/page.tsx", "app/en/(pages)/materials/page.tsx"] },
+    { nl: "/services/", en: "/en/services/", changeFrequency: "monthly", priority: 0.95, sources: ["app/(pages)/services/page.tsx", "app/en/(pages)/services/page.tsx"] },
+    { nl: "/materials/", en: "/en/materials/", changeFrequency: "weekly", priority: 0.95, sources: ["app/(pages)/materials/page.tsx", "app/en/(pages)/materials/page.tsx"] },
     {
-      nl: "/organizers",
-      en: "/en/organizers",
+      nl: "/organizers/",
+      en: "/en/organizers/",
       changeFrequency: "weekly",
-      priority: 0.75,
+      priority: 0.95,
       sources: [
         "app/(pages)/organizers/page.tsx",
         "app/en/(pages)/organizers/page.tsx",
@@ -127,7 +128,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       nl: "/organizers/modugrid",
       en: "/en/organizers/modugrid",
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.85,
       sources: [
         "app/(pages)/organizers/modugrid/page.tsx",
         "content/organizer-details.ts",
@@ -137,7 +138,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       nl: "/organizers/packout",
       en: "/en/organizers/packout",
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.85,
       sources: [
         "app/(pages)/organizers/packout/page.tsx",
         "content/organizer-details.ts",
@@ -147,7 +148,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       nl: "/organizers/tstak",
       en: "/en/organizers/tstak",
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.85,
       sources: [
         "app/(pages)/organizers/tstak/page.tsx",
         "content/organizer-details.ts",
@@ -157,17 +158,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       nl: "/organizers/custom",
       en: "/en/organizers/custom",
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.85,
       sources: [
         "app/(pages)/organizers/custom/page.tsx",
         "content/organizer-details.ts",
       ],
     },
-    { nl: "/pricing", en: "/en/pricing", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/pricing/page.tsx", "app/en/(pages)/pricing/page.tsx"] },
-    { nl: "/portfolio", en: "/en/portfolio", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/portfolio/page.tsx", "app/en/(pages)/portfolio/page.tsx"] },
+    { nl: "/pricing/", en: "/en/pricing/", changeFrequency: "weekly", priority: 0.95, sources: ["app/(pages)/pricing/page.tsx", "app/en/(pages)/pricing/page.tsx"] },
+    { nl: "/portfolio/", en: "/en/portfolio/", changeFrequency: "weekly", priority: 0.95, sources: ["app/(pages)/portfolio/page.tsx", "app/en/(pages)/portfolio/page.tsx"] },
     { nl: "/valentijn-3d-printen", en: "/en/valentijn-3d-printen", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/valentijn-3d-printen/page.tsx", "app/en/(pages)/valentijn-3d-printen/page.tsx"] },
     { nl: "/segments", en: "/en/segments", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/segments/page.tsx", "app/en/(pages)/segments/page.tsx"] },
-    { nl: "/blog", en: "/en/blog", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/blog/page.tsx", "app/en/(pages)/blog/page.tsx"] },
+    { nl: "/blog/", en: "/en/blog/", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/blog/page.tsx", "app/en/(pages)/blog/page.tsx"] },
     { nl: "/viewer", en: "/en/viewer", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/viewer/page.tsx", "app/en/(pages)/viewer/page.tsx"] },
     { nl: "/3d-modelleren", en: "/en/3d-modelleren", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/3d-modelleren/page.tsx", "app/en/(pages)/3d-modelleren/page.tsx"] },
     { nl: "/lokaal-belgisch", en: "/en/lokaal-belgisch", changeFrequency: "monthly", priority: 0.7, sources: ["app/(pages)/lokaal-belgisch/page.tsx", "app/en/(pages)/lokaal-belgisch/page.tsx"] },
@@ -175,11 +176,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { nl: "/sustainability", en: "/en/sustainability", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/sustainability/page.tsx", "app/en/(pages)/sustainability/page.tsx"] },
     { nl: "/3d-modellen-vinden", en: "/en/3d-modellen-vinden", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/3d-modellen-vinden/page.tsx", "app/en/(pages)/3d-modellen-vinden/page.tsx"] },
     { nl: "/contact", en: "/en/contact", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/contact/page.tsx", "app/en/(pages)/contact/page.tsx"] },
-    { nl: "/faq", en: "/en/faq", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/faq/page.tsx", "app/en/(pages)/faq/page.tsx"] },
+    { nl: "/faq", en: "/en/faq", changeFrequency: "monthly", priority: 0.55, sources: ["app/(pages)/faq/page.tsx", "app/en/(pages)/faq/page.tsx"] },
     { nl: "/locaties", en: "/en/locaties", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/locaties/page.tsx", "app/en/(pages)/locaties/page.tsx"] },
-    { nl: "/privacy", en: "/en/privacy", changeFrequency: "yearly", priority: 0.4, sources: ["app/(pages)/privacy/page.tsx", "app/en/(pages)/privacy/page.tsx"] },
-    { nl: "/cookies", en: "/en/cookies", changeFrequency: "yearly", priority: 0.4, sources: ["app/(pages)/cookies/page.tsx", "app/en/(pages)/cookies/page.tsx"] },
-    { nl: "/algemene-voorwaarden", en: "/en/algemene-voorwaarden", changeFrequency: "yearly", priority: 0.4, sources: ["app/(pages)/algemene-voorwaarden/page.tsx", "app/en/(pages)/algemene-voorwaarden/page.tsx"] },
+    { nl: "/privacy", en: "/en/privacy", changeFrequency: "yearly", priority: 0.2, sources: ["app/(pages)/privacy/page.tsx", "app/en/(pages)/privacy/page.tsx"] },
+    { nl: "/cookies", en: "/en/cookies", changeFrequency: "yearly", priority: 0.2, sources: ["app/(pages)/cookies/page.tsx", "app/en/(pages)/cookies/page.tsx"] },
+    { nl: "/algemene-voorwaarden", en: "/en/algemene-voorwaarden", changeFrequency: "yearly", priority: 0.2, sources: ["app/(pages)/algemene-voorwaarden/page.tsx", "app/en/(pages)/algemene-voorwaarden/page.tsx"] },
     {
       nl: "/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
       en: "/en/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem",

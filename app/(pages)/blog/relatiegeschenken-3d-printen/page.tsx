@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "Relatiegeschenken 3D printen | B2B gifts",
     description:
       "Gepersonaliseerde B2B gifts: sleutelhangers, desk items en awards in Silk/Matte/PETG. Tips voor materiaal, leesbaarheid en levering.",
-    url: canonical,
+  url: canonical,
     type: "article",
     publishedTime: publishedDate,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte relatiegeschenken" }],
@@ -296,4 +296,8 @@ export default function BlogRelatiegeschenken() {
     </main>
   )
 }
+
+
+
+
 

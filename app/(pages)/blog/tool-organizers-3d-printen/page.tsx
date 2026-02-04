@@ -3,7 +3,10 @@ import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
 
-const canonical = "https://www.x3dprints.be/blog/tool-organizers-3d-printen"
+const canonical = "https://www.x3dprints.be/blog/tool-organizers-3d-printen";
+const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=tool-organizers-3d-printen";
+const contactHref = `/contact${utm}`;
+const toolHref = `/materials${utm}#material-suggestion-tool`;
 const publishedDate = "2026-01-29T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -26,7 +29,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["tool organizers", "gridfinity alternatief", "Packout inlay", "TSTAK insert", "custom toolbox insert"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Tool organizers op maat" }],
+    images: [{ url: "/images/organizers/modugrid/ModuGrid2.jpg", width: 1200, height: 630, alt: "Tool organizers op maat" }],
   },
   twitter: { card: "summary_large_image" },
 }
@@ -44,6 +47,26 @@ export default function ToolOrganizersBlog() {
             Zo kies je het juiste systeem, stuur je een perfecte intake en krijg je een organizer die niet rammelt. Inclusief
             tips voor labels, antislip en materiaalkeuze.
           </p>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href={contactHref}
+              className="inline-flex items-center gap-2 rounded-xl border border-cyan-200 bg-cyan-50 px-4 py-2 text-sm font-semibold text-cyan-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-cyan-100"
+            >
+              Intake insturen
+            </Link>
+            <Link
+              href={toolHref}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm hover:border-slate-300 hover:bg-slate-50"
+            >
+              Materialen kiezen
+            </Link>
+            <Link
+              href={`/pricing${utm}`}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm hover:border-slate-300 hover:bg-slate-50"
+            >
+              Zie impact op prijs
+            </Link>
+          </div>
           <div className="flex flex-wrap gap-3 text-sm text-slate-600">
             <span>Laatste update: 29 januari 2026</span>
             <span className="inline-flex items-center gap-1 rounded-full bg-cyan-50 px-2 py-1 text-xs font-semibold text-cyan-700 ring-1 ring-cyan-100">
@@ -247,3 +270,5 @@ export default function ToolOrganizersBlog() {
     </main>
   )
 }
+
+

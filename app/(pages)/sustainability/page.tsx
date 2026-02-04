@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "FuturePrint Lab · Duurzaamheid & circulariteit | X3DPrints",
   description:
     "Duurzame 3D-printing vanuit Herzele. X3DPrints focust op slim ontwerp, efficiënte materiaalkeuzes en lokale levering voor ondernemers, scholen en verenigingen in Oost-Vlaanderen.",
-  alternates: { canonical: "https://www.x3dprints.be/sustainability" },
+  alternates: { canonical: "https://www.x3dprints.be/sustainability/", languages: { "nl-BE": "https://www.x3dprints.be/sustainability/", en: "https://www.x3dprints.be/en/sustainability/", "x-default": "https://www.x3dprints.be/sustainability/", }, },
   openGraph: {
     title: "Duurzame 3D-printing bij X3DPrints",
     description:

@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "3D printing voor scholen | X3DPrints",
   description:
     "Ondersteuning voor scholen en STEM-projecten: 3D prints voor leerlingen, workshops en materiaaladvies vanuit Herzele.",
-  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-scholen" },
+  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-scholen/", languages: { "nl-BE": "https://www.x3dprints.be/segments/3d-printing-scholen/", en: "https://www.x3dprints.be/en/segments/3d-printing-scholen/", "x-default": "https://www.x3dprints.be/segments/3d-printing-scholen/", }, },
   openGraph: {
     title: "3D printing voor scholen",
     description: "Laat leerlingen STL/STEP opsturen en ontvang prints met feedback. Educatieve pakketten en coaching op maat.",
-    url: "https://www.x3dprints.be/segments/3d-printing-scholen",
+    url: "https://www.x3dprints.be/segments/3d-printing-scholen/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -95,7 +95,7 @@ export default function SchoolsSegmentPage() {
           Stimuleer STEM-projecten met betrouwbare prints. We helpen leerlingen STL/STEP op te leveren en geven feedback die ze kunnen toepassen.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact?material=pla-matte">Vraag educatieve offerte</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-matte" event={ { action: "cta_click", category: "segments_scholen", label: "education-quote" } }> Vraag educatieve offerte</ShimmerButton>
           <Link href="/blog/3d-printen-voor-beginners" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
             Lees: beginnersgids
           </Link>

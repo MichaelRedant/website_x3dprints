@@ -4,11 +4,11 @@ import { useEffect, useState } from "react"
 import Script from "next/script"
 import { CookieConsentValue, onConsentChange, readStoredConsent } from "@/lib/cookie-consent"
 
-const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-QPQ7LDMSRV"
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID
 
 export default function AnalyticsConsent() {
   const [consent, setConsent] = useState<CookieConsentValue | null>(null)
-  const hasTrackingId = GA_TRACKING_ID.length > 0
+  const hasTrackingId = Boolean(GA_TRACKING_ID)
   const canLoadAnalytics = consent === "granted" && hasTrackingId
 
   useEffect(() => {
@@ -71,7 +71,7 @@ export default function AnalyticsConsent() {
               analytics_storage: 'granted',
             });
             gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', { anonymize_ip: true });
+            gtag('config', '${GA_TRACKING_ID}', { anonymize_ip: true, cookie_domain: 'auto' });
           `}
         </Script>
       )}

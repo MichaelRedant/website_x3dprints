@@ -5,8 +5,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-winter-kerst-nieuwjaar"
+const datePublished = "2024-11-15"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "3D printen voor winter, Kerst en Nieuwjaar | X3DPrints Blog",
@@ -17,7 +20,7 @@ export const metadata: Metadata = {
     title: "3D printen voor winter, Kerst en Nieuwjaar",
     description:
       "Feestelijke decor met glans of lichtgloed. Materiaalkeuze, slicer-tips en leveropties voor eindejaar.",
-    url: canonical,
+  url: canonical,
     type: "article",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte kerstdecor" }],
     locale: "nl_BE",
@@ -57,25 +60,15 @@ const faqItems = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: ["nl-BE", "en-BE"],
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "3D printen voor winter, Kerst & Nieuwjaar",
   description:
-    "Sneeuwvlokken, ornamenten, tafelkaartjes en party props in Silk, Marble en Translucent PLA. Tips voor lichtobjecten en levering.",
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-  image: ["https://www.x3dprints.be/images/og-home.jpg"],
-}
+    "Sneeuwvlokken, ornamenten, tafelkaartjes en party props in Silk, Marble en Translucent PLA. Tips voor lichtobjecten, montage en levering. Ontwerpbestand niet inbegrepen.",
+  datePublished,
+  dateModified,
+  image: "https://www.x3dprints.be/images/og-home.jpg",
+})
 
 const faqJsonLd = {
   "@context": "https://schema.org",
@@ -267,3 +260,7 @@ export default function BlogWinter() {
     </main>
   )
 }
+
+
+
+

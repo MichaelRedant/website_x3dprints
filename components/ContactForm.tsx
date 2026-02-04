@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react"
 import { useSearchParams } from "next/navigation"
 import { MATERIALS, MATERIAL_KEY_BY_SLUG, materialSlug, type MaterialKey } from "@/lib/materials"
 import { useLocale } from "./LocaleProvider"
+import { trackEvent } from "@/lib/analytics"
 
 type FormDataShape = {
   name: string
@@ -198,6 +199,11 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
           if (ok) {
             setStatus("ok")
             setData({ name: "", email: "", message: "", quantity: "", material: "", quote: "", hp: "" })
+            trackEvent({
+              action: "contact_submit",
+              category: "lead",
+              label: data.material || "unknown",
+            })
             return
           }
 

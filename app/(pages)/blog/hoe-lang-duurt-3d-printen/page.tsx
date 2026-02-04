@@ -4,8 +4,15 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/blog/hoe-lang-duurt-3d-printen"
+const canonical = "https://www.x3dprints.be/blog/hoe-lang-duurt-3d-printen";
+const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=hoe-lang-duurt-3d-printen";
+const datePublished = "2024-09-15";
+const dateModified = "2026-02-04";
+const contactHref = `/contact${utm}`;
+const toolHref = `/materials${utm}#material-suggestion-tool`;
+const pricingHref = `/pricing${utm}`;
 
 export const metadata: Metadata = {
   title: "Hoe lang duurt 3D printen? | X3DPrints Blog",
@@ -17,7 +24,7 @@ export const metadata: Metadata = {
     description:
       "Ontdek hoe materiaal, afwerking en logistiek de levertijd beïnvloeden. Inclusief scenario’s en tips om projecten te versnellen.",
     url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Hoe lang duurt 3D printen" }],
+    images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "Hoe lang duurt 3D printen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -25,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hoe lang duurt 3D printen?",
     description: "Planning guide voor 3D prints: machine-uren, nabewerking en logistiek stap voor stap uitgelegd.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/portfolio/20241030_080710-1.jpg"],
   },
 }
 
@@ -73,31 +80,15 @@ const faq = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: ["nl-BE", "en-BE"],
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Hoe lang duurt 3D printen?",
   description:
     "Praktische gids over de doorlooptijd van 3D prints met aandacht voor machine-uren, nabewerking en logistiek.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-}
+  datePublished,
+  dateModified,
+  image: "/images/portfolio/20241030_080710-1.jpg",
+})
 
 export default function LeadTimeArticle() {
   return (
@@ -132,12 +123,18 @@ export default function LeadTimeArticle() {
               Doorlooptijden lopen uiteen van express (ruwe prints binnen 24 uur) tot enkele weken (grote batches met finishing). Hieronder lees je welke factoren meespelen en hoe jij je project sneller in de queue krijgt.
             </p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href="/pricing">Bekijk richtprijzen & timing</ShimmerButton>
+              <ShimmerButton href={pricingHref}>Bekijk richtprijzen & timing</ShimmerButton>
               <Link
-                href="/contact"
+                href={contactHref}
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Plan levering
+              </Link>
+              <Link
+                href={toolHref}
+                className="inline-flex items-center gap-2 rounded-xl border border-emerald-100/70 bg-emerald-50/80 px-5 py-3 text-sm font-semibold text-emerald-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+              >
+                Kies materiaaladvies
               </Link>
             </div>
           </Reveal>
@@ -222,8 +219,8 @@ export default function LeadTimeArticle() {
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href="/contact">Plan mijn project</ShimmerButton>
-                <Link href="/pricing" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
+                <ShimmerButton href={contactHref}>Plan mijn project</ShimmerButton>
+                <Link href={pricingHref} className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
                   Bekijk doorlooptijden
                 </Link>
               </div>
@@ -238,3 +235,7 @@ export default function LeadTimeArticle() {
     </main>
   )
 }
+
+
+
+

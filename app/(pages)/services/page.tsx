@@ -30,18 +30,19 @@ const NL_METADATA: Metadata = {
   description:
     "Lokale FDM 3D-printservice uit Herzele (bijberoep). Prototypes en kleine reeksen in PLA, PETG of TPU met eerlijk advies en korte lijnen.",
   alternates: {
-    canonical: "https://www.x3dprints.be/services",
+    canonical: "https://www.x3dprints.be/services/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/services",
-      en: "https://www.x3dprints.be/en/services",
+      "nl-BE": "https://www.x3dprints.be/services/",
+      en: "https://www.x3dprints.be/en/services/",
+      "x-default": "https://www.x3dprints.be/services/",
     },
   },
   openGraph: {
     title: "3D print service Herzele",
     description:
       "Kleine oplages, snelle opvolging en realistisch advies over materiaal en ontwerp. Bijberoep vanuit Herzele/Gent.",
-    url: "https://www.x3dprints.be/services",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    url: "https://www.x3dprints.be/services/",
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -53,18 +54,19 @@ export const EN_METADATA: Metadata = {
   description:
     "Local FDM 3D printing from Herzele (part-time studio). Prototypes and small batches in PLA, PETG or TPU with honest advice and direct communication.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/services",
+    canonical: "https://www.x3dprints.be/en/services/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/services",
-      en: "https://www.x3dprints.be/en/services",
+      "nl-BE": "https://www.x3dprints.be/services/",
+      en: "https://www.x3dprints.be/en/services/",
+      "x-default": "https://www.x3dprints.be/services/",
     },
   },
   openGraph: {
     title: "3D print service in Belgium",
     description:
       "Small batches, fast follow-up and pragmatic advice on material and design. Part-time studio in Herzele/Ghent.",
-    url: "https://www.x3dprints.be/en/services",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    url: "https://www.x3dprints.be/en/services/",
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -601,9 +603,11 @@ export default function Page({ locale }: PageProps) {
   const localBusinessJsonLd = buildLocalBusinessSchema({
     pageUrl: safeUrl,
     description: copy.meta.description,
-    image: "/images/og-home.jpg",
+    image: "/images/portfolio/20241030_080710-1.jpg",
     priceRange: "EUR 5 - EUR 49",
     areaServed: copy.areaServed,
+    offersName: copy.catalogName,
+    offers: copy.pricingOffers,
   })
   const serviceJsonLd = buildServiceSchema(copy.serviceName, copy.pricingOffers, safeUrl)
   const readMorePrimaryLinks = copy.readMore.primaryLinks.map((link) => ({
@@ -634,7 +638,12 @@ export default function Page({ locale }: PageProps) {
               {copy.hero.intro}
             </p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href={localize("/contact")}>{copy.hero.ctas.quote}</ShimmerButton>
+              <ShimmerButton
+                href={localize("/contact")}
+                event={{ action: "cta_click", category: "services_hero", label: "quote" }}
+              >
+                {copy.hero.ctas.quote}
+              </ShimmerButton>
               <Link
                 href={localize("/materials#material-suggestion-tool")}
                 className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"

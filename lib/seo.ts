@@ -1,4 +1,7 @@
-﻿export const SITE = {
+﻿const BUSINESS_PHONE = process.env.NEXT_PUBLIC_BUSINESS_PHONE ?? ""
+const BUSINESS_PRICE_RANGE = process.env.NEXT_PUBLIC_PRICE_RANGE ?? "€€"
+
+export const SITE = {
   name: "X3DPrints",
   url: "https://www.x3dprints.be",
   title: "X3DPrints — 3D Print Service",
@@ -6,7 +9,8 @@
     "Professionele 3D print service in Belgie. Snel, nauwkeurig en betaalbaar. Upload je model en ontvang een offerte.",
   ogImage: "/og-x3dprints.jpg",
   locale: "nl_BE",
-  phone: "",
+  phone: BUSINESS_PHONE,
+  priceRange: BUSINESS_PRICE_RANGE,
   address: {
     street: "Provincieweg 34a",
     locality: "Borsbeke",
@@ -28,6 +32,8 @@ type LocalBusinessSchemaInput = {
   areaServed?: string
   inLanguage?: string | string[]
   alternateName?: string | string[]
+  offersName?: string
+  offers?: SchemaOfferInput[]
 }
 
 export type SchemaOfferInput = {
@@ -53,6 +59,11 @@ export const BASE_ORGANIZATION_SCHEMA = {
 } as const
 
 export function buildLocalBusinessSchema(options: LocalBusinessSchemaInput = {}) {
+  const offerCatalog =
+    options.offers && options.offers.length
+      ? buildOfferCatalog(options.offersName ?? "3D Print Services", options.offers)
+      : undefined
+
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -67,14 +78,15 @@ export function buildLocalBusinessSchema(options: LocalBusinessSchemaInput = {})
     address: {
       "@type": "PostalAddress",
       streetAddress: SITE.address.street,
-      addressLocality: SITE.address.locality,
-      addressRegion: SITE.address.region,
-      postalCode: SITE.address.postalCode,
-      addressCountry: SITE.address.country,
-    },
+    addressLocality: SITE.address.locality,
+    addressRegion: SITE.address.region,
+    postalCode: SITE.address.postalCode,
+    addressCountry: SITE.address.country,
+  },
     image: options.image ? `${SITE.url}${options.image}` : `${SITE.url}${SITE.ogImage}`,
-    priceRange: options.priceRange,
+    priceRange: options.priceRange ?? SITE.priceRange,
     areaServed: options.areaServed ?? "BE",
+    ...(offerCatalog ? { hasOfferCatalog: offerCatalog } : {}),
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -149,6 +161,54 @@ export function clampToWords(input: string, max = 158): string {
 export function buildCityMetaDescription(city: string): string {
   const msg = `3D printen in ${city} door X3DPrints: prototypes en kleine series, strakke afwerking. Levertijd 2-5 werkdagen. Materialen: PLA, PETG, TPU. Vraag je offerte.`
   return clampToWords(msg, 158)
+}
+
+type ArticleSchemaInput = {
+  canonical: string
+  headline: string
+  description: string
+  datePublished: string
+  dateModified: string
+  image?: string | string[]
+  inLanguage?: string | string[]
+}
+
+export function buildArticleJsonLd({
+  canonical,
+  headline,
+  description,
+  datePublished,
+  dateModified,
+  image,
+  inLanguage = ["nl-BE", "en-BE"],
+}: ArticleSchemaInput) {
+  const images = Array.isArray(image) ? image : image ? [image] : [`${SITE.url}${SITE.ogImage}`]
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline,
+    description,
+    datePublished,
+    dateModified,
+    mainEntityOfPage: canonical,
+    url: canonical,
+    inLanguage,
+    image: images.map((img) => (img.startsWith("http") ? img : `${SITE.url}${img}`)),
+    author: {
+      "@type": "Organization",
+      name: SITE.name,
+      url: SITE.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE.name,
+      url: SITE.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE.url}${SITE.ogImage}`,
+      },
+    },
+  }
 }
 
 /**

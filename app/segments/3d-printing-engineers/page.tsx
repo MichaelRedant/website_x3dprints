@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "3D printing voor engineers | X3DPrints",
   description:
     "Functional prototypes, jigs en fixtures in PLA Tough+, PETG of TPU. Inclusief DFM-feedback en meetrapporten.",
-  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-engineers" },
+  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-engineers/", languages: { "nl-BE": "https://www.x3dprints.be/segments/3d-printing-engineers/", en: "https://www.x3dprints.be/en/segments/3d-printing-engineers/", "x-default": "https://www.x3dprints.be/segments/3d-printing-engineers/", }, },
   openGraph: {
     title: "3D printing voor engineers",
     description: "Precisieprints met focus op tolerantie, materiaaladvies en planning voor engineers in België.",
-    url: "https://www.x3dprints.be/segments/3d-printing-engineers",
+    url: "https://www.x3dprints.be/segments/3d-printing-engineers/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -97,7 +97,7 @@ export default function EngineersSegmentPage() {
           Voor jigs, fixtures, behuizingen en functionele prototypes. We denken mee over tolerantie, materiaal en planning.
         </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-            <ShimmerButton href="/contact?material=pla-tough-plus">Vraag een technisch gesprek</ShimmerButton>
+            <ShimmerButton href="/contact?material=pla-tough-plus" event={ { action: "cta_click", category: "segments_engineers", label: "tech-talk" } }> Vraag een technisch gesprek</ShimmerButton>
             <Link href="/materials" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
               Materialen bekijken
             </Link>

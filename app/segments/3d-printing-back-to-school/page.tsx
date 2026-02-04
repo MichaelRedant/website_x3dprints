@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Back to School 3D printing | pennenhouders, naamplaatjes, STEM | X3DPrints",
   description:
     "Gepersonaliseerde schoolmaterialen: pennenhouders, naamplaatjes, bureau organizers en educatieve modellen. Back-to-school productie in Silk, Matte en PETG. Ontwerpbestand niet inbegrepen.",
-  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-back-to-school" },
+  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-back-to-school/", languages: { "nl-BE": "https://www.x3dprints.be/segments/3d-printing-back-to-school/", en: "https://www.x3dprints.be/en/segments/3d-printing-back-to-school/", "x-default": "https://www.x3dprints.be/segments/3d-printing-back-to-school/", }, },
   openGraph: {
     title: "Back to School 3D printing",
     description:
       "Educatief 3D printen: pennenhouders, naamplaatjes, STEM-modellen en organizers. Materiaaladvies voor scholen en studenten.",
-    url: "https://www.x3dprints.be/segments/3d-printing-back-to-school",
+    url: "https://www.x3dprints.be/segments/3d-printing-back-to-school/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -91,7 +91,7 @@ export default function BackToSchoolSegmentPage() {
           Pennenhouders, naamplaatjes, bureau organizers en STEM-modellen. Ontwerp van het 3D model is niet inbegrepen; lever STL/STEP of kies ontwerpservice aan EUR 45/uur. Materiaaladvies voor scholen, studenten en bureaus.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact?material=pla-matte">Plan je schoolprint</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-matte" event={ { action: "cta_click", category: "segments_back_to_school", label: "plan-school" } }> Plan je schoolprint</ShimmerButton>
           <Link
             href="/blog/3d-printen-back-to-school"
             className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"

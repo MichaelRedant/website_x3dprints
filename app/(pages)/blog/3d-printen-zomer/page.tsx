@@ -5,8 +5,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-zomer"
+const datePublished = "2024-07-15"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "3D printen voor de zomer | X3DPrints Blog",
@@ -16,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "3D printen voor de zomer",
     description: "Tuin- en stranddecor, nautische thema’s en custom holders. Materialen, slicer-tips, levering en ontwerpservice.",
-    url: canonical,
+  url: canonical,
     type: "article",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte zomer decor" }],
     locale: "nl_BE",
@@ -68,25 +71,15 @@ const faqItems = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: ["nl-BE", "en-BE"],
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "3D printen voor de zomer",
   description:
-    "Outdoor decor, nautische props en terrasaccessoires. PETG voor zon/vocht, PLA Silk/Marble voor luxe tafeldecor, TPU voor grip.",
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-  image: ["https://www.x3dprints.be/images/og-home.jpg"],
-}
+    "Outdoor decor, nautische props en terrasaccessoires. PETG voor zon/vocht, PLA Silk/Marble voor luxe tafeldecor, TPU voor grip. Ontwerpbestand niet inbegrepen; ontwerpservice beschikbaar.",
+  datePublished,
+  dateModified,
+  image: "https://www.x3dprints.be/images/og-home.jpg",
+})
 
 const faqJsonLd = {
   "@context": "https://schema.org",
@@ -294,3 +287,7 @@ export default function BlogSummer() {
     </main>
   )
 }
+
+
+
+

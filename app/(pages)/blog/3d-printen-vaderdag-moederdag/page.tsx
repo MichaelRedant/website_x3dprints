@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Vaderdag & Moederdag 3D printen",
     description:
       "Custom gifts met naam/initialen, afgeronde randen en antislipvoetjes. Materiaalkeuzes en leveringtips voor Vaderdag/Moederdag.",
-    url: canonical,
+  url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Vaderdag Moederdag 3D prints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -254,3 +254,7 @@ export default function BlogParentsDay() {
     </main>
   )
 }
+
+
+
+

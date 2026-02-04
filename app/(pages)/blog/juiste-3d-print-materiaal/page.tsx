@@ -5,8 +5,13 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 
-const canonical = "https://www.x3dprints.be/blog/juiste-3d-print-materiaal"
-const publishedDate = "2025-11-07T08:00:00+01:00"
+const canonical = "https://www.x3dprints.be/blog/juiste-3d-print-materiaal";
+const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=juiste-3d-print-materiaal";
+const contactHref = `/contact${utm}`;
+const toolHref = `/materials${utm}#material-suggestion-tool`;
+const pricingHref = `/pricing${utm}`;
+const publishedDate = "2024-09-10"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "Hoe kies je het juiste 3D print materiaal? | X3DPrints",
@@ -129,7 +134,7 @@ const articleJsonLd = {
   description:
     "Stap-voor-stap gids van X3DPrints om het juiste 3D print materiaal te bepalen. Vergelijk PLA Matte, PETG en TPU op toepassing, omgeving en budget.",
   datePublished: publishedDate,
-  dateModified: publishedDate,
+  dateModified,
   author: {
     "@type": "Organization",
     name: "X3DPrints",
@@ -184,18 +189,24 @@ export default function RightMaterialGuidePage() {
               onze materiaalpagina&apos;s, pricing en contact zodat je sneller beslist en geen revisierondes verliest.
             </p>
             <div className="flex flex-wrap gap-3">
-              <ShimmerButton href="/materials">Bekijk materialen</ShimmerButton>
+              <ShimmerButton href={toolHref}>Materialen kiezen</ShimmerButton>
               <Link
-                href="/3d-printen"
+                href={`/3d-printen${utm}`}
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Naar de 3D-printen pillar
               </Link>
               <Link
-                href="/pricing"
+                href={`/pricing${utm}`}
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Zie impact op prijs
+              </Link>
+              <Link
+                href={contactHref}
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm hover:border-slate-300 hover:bg-slate-50"
+              >
+                Vraag offerte/advies
               </Link>
             </div>
           </Reveal>
@@ -223,6 +234,34 @@ export default function RightMaterialGuidePage() {
               </ol>
             </GlassCard>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <GlassCard className="flex flex-col gap-4 border border-emerald-100 bg-white/85 p-6 shadow-lg backdrop-blur">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600">Volgende stap</p>
+              <h2 className="mt-2 text-xl font-semibold text-slate-900">Check prijs & kies materiaal</h2>
+              <p className="mt-2 text-sm text-slate-700">
+                Test je model in de calculator en laat de Material Suggestion Tool alvast drie opties invullen. Dat versnelt de intake.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <ShimmerButton
+                href={pricingHref}
+                event={{ action: "cta_click", category: "blog_mid", label: "pricing_juiste_materiaal_mid" }}
+              >
+                Naar pricing
+              </ShimmerButton>
+              <ShimmerButton
+                href={toolHref}
+                event={{ action: "cta_click", category: "blog_mid", label: "tool_juiste_materiaal_mid" }}
+              >
+                Start materiaaladvies
+              </ShimmerButton>
+            </div>
+          </GlassCard>
         </div>
       </section>
 
@@ -418,3 +457,7 @@ export default function RightMaterialGuidePage() {
     </main>
   )
 }
+
+
+
+

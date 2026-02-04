@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "3D printing voor modelbouwers | X3DPrints",
   description:
     "Print schaalmodellen, scenery en custom onderdelen met PLA Wood, Marble, Silk en Translucent blends. Lokale ondersteuning vanuit Herzele.",
-  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-modelbouwers" },
+  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-modelbouwers/", languages: { "nl-BE": "https://www.x3dprints.be/segments/3d-printing-modelbouwers/", en: "https://www.x3dprints.be/en/segments/3d-printing-modelbouwers/", "x-default": "https://www.x3dprints.be/segments/3d-printing-modelbouwers/", }, },
   openGraph: {
     title: "3D printing voor modelbouwers",
     description: "Wood, Marble, Silk, Translucent en detail prints voor maquettes en diorama’s met tips voor nabewerking.",
-    url: "https://www.x3dprints.be/segments/3d-printing-modelbouwers",
+    url: "https://www.x3dprints.be/segments/3d-printing-modelbouwers/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -94,7 +94,7 @@ export default function ModelbouwSegmentPage() {
           Maak schaalmodellen, scenery en diorama&rsquo;s die indruk maken. We printen met speciale PLA blends en adviseren over nabewerking.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact?material=pla-wood">Project bespreken</ShimmerButton>
+          <ShimmerButton href="/contact?material=pla-wood" event={ { action: "cta_click", category: "segments_modelbouw", label: "project" } }> Project bespreken</ShimmerButton>
           <Link href="/portfolio" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
             Bekijk portfolio
           </Link>

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "3D printen voor Valentijn cadeaus",
     description:
       "Kies Silk/Matte/Translucent PLA voor Valentijn gifts, naamplaatjes en lichtobjecten. Tips voor leds, magneten en leverzones.",
-    url: canonical,
+  url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte Valentijn decor" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -321,3 +321,7 @@ export default function BlogValentijn() {
     </main>
   )
 }
+
+
+
+

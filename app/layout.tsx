@@ -1,6 +1,6 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { SITE } from "@/lib/seo"
+import { SITE, buildOfferCatalog, type SchemaOfferInput } from "@/lib/seo"
 import { Orbitron, JetBrains_Mono } from "next/font/google"
 import { cn } from "@/lib/utils"
 
@@ -42,12 +42,21 @@ export const metadata: Metadata = {
 }
 
 function buildSchema() {
+  const offerItems: SchemaOfferInput[] = [
+    { serviceName: "Prototype prints", price: "EUR 0", description: "Quote + planning", url: `${SITE.url}/services` },
+    { serviceName: "Small batches", price: "EUR 0", description: "Batch advice and unit pricing", url: `${SITE.url}/services` },
+    { serviceName: "Tool organizers", price: "EUR 0", description: "Custom inserts and organizers", url: `${SITE.url}/organizers` },
+  ]
+
+  const offerCatalog = buildOfferCatalog("3D Print Services", offerItems)
+
   const baseLocalBusiness = {
     "@type": "LocalBusiness",
     "@id": `${SITE.url}#x3dprints-main`,
     name: SITE.name,
     url: SITE.url,
     telephone: SITE.phone,
+    priceRange: SITE.priceRange,
     image: `${SITE.url}${SITE.ogImage}`,
     inLanguage: ["nl-BE", "en-BE"],
     alternateName: ["X3DPrints", "X3DPrints (English)"],
@@ -61,10 +70,18 @@ function buildSchema() {
     },
     sameAs: SITE.sameAs,
     areaServed: "Belgium",
-    priceRange: "EUR",
     makesOffer: [{ "@type": "Offer", itemOffered: { "@type": "Service", name: "3D Print Service" } }],
+    hasOfferCatalog: offerCatalog,
     geo: { "@type": "GeoCoordinates", latitude: 50.8839, longitude: 3.8932 },
     hasMap: "https://www.google.com/maps/search/?api=1&query=Provincieweg+34a+9552+Herzele",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "20:00",
+      },
+    ],
   }
 
   const clusterLocalBusinesses = [
@@ -128,27 +145,38 @@ function buildSchema() {
   }
 }
 
-function buildBreadcrumbList(locale: "nl" | "en") {
-  const isEn = locale === "en"
-  return {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    inLanguage: isEn ? "en-BE" : "nl-BE",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE.url}/` },
-      { "@type": "ListItem", position: 2, name: isEn ? "Services" : "Services", item: `${SITE.url}/services` },
-      { "@type": "ListItem", position: 3, name: isEn ? "Materials" : "Materialen", item: `${SITE.url}/materials` },
-      { "@type": "ListItem", position: 4, name: "Portfolio", item: `${SITE.url}/portfolio` },
-      { "@type": "ListItem", position: 5, name: isEn ? "Pricing" : "Prijzen", item: `${SITE.url}/pricing` },
-      { "@type": "ListItem", position: 6, name: "Contact", item: `${SITE.url}/contact` },
-      { "@type": "ListItem", position: 7, name: "Blog", item: `${SITE.url}/blog` },
-    ],
-  }
+const breadcrumbNl = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  inLanguage: "nl-BE",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE.url}/` },
+    { "@type": "ListItem", position: 2, name: "Services", item: `${SITE.url}/services/` },
+    { "@type": "ListItem", position: 3, name: "Materialen", item: `${SITE.url}/materials/` },
+    { "@type": "ListItem", position: 4, name: "Portfolio", item: `${SITE.url}/portfolio/` },
+    { "@type": "ListItem", position: 5, name: "Pricing", item: `${SITE.url}/pricing/` },
+    { "@type": "ListItem", position: 6, name: "Contact", item: `${SITE.url}/contact/` },
+    { "@type": "ListItem", position: 7, name: "Blog", item: `${SITE.url}/blog/` },
+  ],
+}
+
+const breadcrumbEn = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  inLanguage: "en-BE",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE.url}/en/` },
+    { "@type": "ListItem", position: 2, name: "Services", item: `${SITE.url}/en/services/` },
+    { "@type": "ListItem", position: 3, name: "Materials", item: `${SITE.url}/en/materials/` },
+    { "@type": "ListItem", position: 4, name: "Portfolio", item: `${SITE.url}/en/portfolio/` },
+    { "@type": "ListItem", position: 5, name: "Pricing", item: `${SITE.url}/en/pricing/` },
+    { "@type": "ListItem", position: 6, name: "Contact", item: `${SITE.url}/en/contact/` },
+    { "@type": "ListItem", position: 7, name: "Blog", item: `${SITE.url}/en/blog/` },
+  ],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const schema = buildSchema()
-  const breadcrumbList = buildBreadcrumbList("nl")
 
   return (
     <html lang="nl" data-theme="light" suppressHydrationWarning>
@@ -158,7 +186,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={cn("min-h-screen flex flex-col antialiased", orbitron.variable, mono.variable)}>
         {children}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbList) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbNl) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbEn) }} />
       </body>
     </html>
   )

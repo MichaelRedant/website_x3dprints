@@ -4,8 +4,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/pla-vs-petg"
+const datePublished = "2024-08-25"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "PLA vs PETG: welke moet je kiezen? | X3DPrints Blog",
@@ -15,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PLA vs PETG: welke moet je kiezen?",
     description:  "De ultieme vergelijking tussen PLA en PETG met aandacht voor look, duurzaamheid, temperatuur en kost. Inclusief stappen om materiaal te testen.",
-url: canonical,
+  url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "PLA vs PETG vergelijking" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -107,31 +110,14 @@ const faq = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: ["nl-BE", "en-BE"],
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "PLA vs PETG: welke moet je kiezen?",
   description:
-    "Vergelijking tussen PLA en PETG voor 3D printen met aandacht voor uiterlijk, mechanische eigenschappen, temperatuur en kost.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-}
+    "Vergelijk PLA en PETG voor jouw 3D print: uiterlijk, sterkte, hittebestendigheid en toepassing. Inclusief praktijkcases en tips om materiaal te kiezen.",
+  datePublished,
+  dateModified,
+})
 
 export default function BlogPlaVsPetgPage() {
   return (
@@ -379,3 +365,7 @@ export default function BlogPlaVsPetgPage() {
     </main>
   )
 }
+
+
+
+

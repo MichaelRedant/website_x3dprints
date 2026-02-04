@@ -5,8 +5,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-zomer"
+const datePublished = "2024-07-15"
+const dateModified = "2026-02-04"
 
 export const metadata: Metadata = {
   title: "3D printing for summer | X3DPrints Blog",
@@ -23,7 +26,6 @@ export const metadata: Metadata = {
     title: "3D printing for summer",
     description: "Garden and beach decor, nautical themes and custom holders. Materials, slicer tips, delivery and design service.",
     url: canonical,
-    type: "article",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printed summer decor" }],
     locale: "en_BE",
     siteName: "X3DPrints",
@@ -74,25 +76,16 @@ const faqItems = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "3D printing for summer",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "3D printing for summer",
   description:
-    "Outdoor decor, nautical props and terrace accessories. PETG for sun/moisture, PLA Silk/Marble for luxe table decor, TPU for grip.",
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-  image: ["https://www.x3dprints.be/images/og-home.jpg"],
+    "Outdoor decor, nautical props and terrace accessories. PETG for sun/moisture, PLA Silk/Marble for luxe table decor, TPU for grip. Design file not included; design service available.",
+  datePublished,
+  dateModified,
+  image: "https://www.x3dprints.be/images/og-home.jpg",
   inLanguage: "en-BE",
-}
+})
 
 const faqJsonLd = {
   "@context": "https://schema.org",
@@ -164,7 +157,7 @@ export default function BlogSummerEn() {
                 luxe use Silk/Marble PLA.
               </p>
               <p className="mt-3 text-sm text-slate-700">
-                Delivery: EV zones or parcel service. Fragile parts are packed separately; large decor can ship in modules so the interior stays smooth.
+                Delivery: EV zones or parcel service. Fragile parts are packed separately; large decor can ship in modules so the interior stays smooth. Bpost export is possible for beach houses or overseas events.
               </p>
             </GlassCard>
           </Reveal>

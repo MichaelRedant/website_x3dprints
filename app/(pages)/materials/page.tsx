@@ -20,18 +20,19 @@ export const metadata: Metadata = {
   description:
     "Materialen voor 3D printen in Vlaanderen: PLA Matte/Silk/Wood, PETG, TPU en specials. Bekijk eigenschappen, voorraad en vraag gratis materiaaladvies.",
   alternates: {
-    canonical: "https://www.x3dprints.be/materials",
+    canonical: "https://www.x3dprints.be/materials/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/materials",
-      en: "https://www.x3dprints.be/en/materials",
+      "nl-BE": "https://www.x3dprints.be/materials/",
+      en: "https://www.x3dprints.be/en/materials/",
+      "x-default": "https://www.x3dprints.be/materials/",
     },
   },
   openGraph: {
     title: "Materialen voor 3D printen | X3DPrints",
     description:
       "Materialen voor 3D printen: PLA-varianten, PETG en TPU met kleuren, specs en voorraadstatus.",
-    url: "https://www.x3dprints.be/materials",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    url: "https://www.x3dprints.be/materials/",
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints" }],
     siteName: "X3DPrints",
     locale: "nl_BE",
   },
@@ -174,6 +175,21 @@ export default function MaterialsPage({ locale }: PageProps) {
         serviceName: "Filament materiaaladvies",
       }
 
+  const faqPromoProps = isEn
+    ? {
+        title: "Questions about 3D printing?",
+        intro: "Answers about materials, lead times, pricing and how we work.",
+        ctaLabel: "View the FAQ",
+        ctaAriaLabel: "Go to the frequently asked questions",
+        qaItems: [
+          { q: "Which materials do you print?", a: "Standard PLA Matte, plus PETG and TPU. On request ABS/ASA, Nylon, PA-CF." },
+          { q: "What is the usual lead time?", a: "Typically a few working days, depending on complexity and batch size." },
+          { q: "How do I request a quote?", a: "Send your STL/STEP and short context via the form. You receive price and timing fast." },
+        ],
+        tagline: "Clear answers. No buzzword bingo.",
+      }
+    : undefined
+
   const materialOffers: SchemaOfferInput[] = isEn
     ? [
         {
@@ -212,6 +228,7 @@ export default function MaterialsPage({ locale }: PageProps) {
 
   // JSON-LD: ItemList van materialen (naam + beschrijving)
   const pageBase = isEn ? "https://www.x3dprints.be/en/materials" : "https://www.x3dprints.be/materials"
+  const toolUrl = `${pageBase}#material-suggestion-tool`
 
   const itemListJsonLd = {
     "@context": "https://schema.org",
@@ -229,6 +246,57 @@ export default function MaterialsPage({ locale }: PageProps) {
         category: "3D printing filament",
       },
     })),
+  }
+
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: isEn ? "Choose 3D printing material with the Material Suggestion Tool" : "Kies 3D-printmateriaal via de Material Suggestion Tool",
+    description: isEn
+      ? "Answer five short questions to get three material options (recommended, budget, premium look) with price impact and direct quote links."
+      : "Beantwoord vijf korte vragen en krijg drie materiaalopties (aanbevolen, budget, premium look) met prijsimpact en directe offerte-links.",
+    totalTime: "PT2M",
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: isEn ? "Open the tool" : "Open de tool",
+        url: toolUrl,
+        itemListElement: [
+          { "@type": "HowToDirection", text: isEn ? "Scroll to the Material Suggestion Tool" : "Scroll naar de Material Suggestion Tool" },
+        ],
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: isEn ? "Answer 5 questions" : "Beantwoord 5 vragen",
+        itemListElement: [
+          { "@type": "HowToTip", text: isEn ? "Indicate indoor/outdoor use and look preference" : "Geef binnen/buitengebruik en gewenste look aan" },
+          { "@type": "HowToTip", text: isEn ? "Mention tolerance or flexibility needs" : "Vermeld tolerantie of nood aan flexibiliteit" },
+        ],
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: isEn ? "Review 3 options" : "Bekijk 3 opties",
+        itemListElement: [
+          { "@type": "HowToDirection", text: isEn ? "Compare recommended, budget and premium look" : "Vergelijk aanbevolen, budget en premium look" },
+        ],
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: isEn ? "Request a quote" : "Vraag een offerte",
+        itemListElement: [
+          { "@type": "HowToDirection", text: isEn ? "Click the preferred option to prefill the contact form" : "Klik op je keuze om het contactformulier vooraf te vullen" },
+        ],
+      },
+    ],
+    tool: [
+      { "@type": "HowToTool", name: isEn ? "STL/STEP/3MF file (optional)" : "STL/STEP/3MF-bestand (optioneel)" },
+      { "@type": "HowToTool", name: isEn ? "Material Suggestion Tool" : "Material Suggestion Tool" },
+    ],
+    url: toolUrl,
   }
 
   const faqEntities = materials.flatMap((material) =>
@@ -268,7 +336,7 @@ export default function MaterialsPage({ locale }: PageProps) {
   const localBusinessJsonLd = buildLocalBusinessSchema({
     pageUrl: canonicalUrl,
     description: pageDescription,
-    image: "/images/og-home.jpg",
+    image: "/images/portfolio/20241024_081839-1.jpg",
     priceRange: "EUR 0 - EUR 15",
     areaServed: "BE",
   })
@@ -390,7 +458,12 @@ export default function MaterialsPage({ locale }: PageProps) {
           </div>
 
           <div className="mt-4 space-y-2">
-            <ShimmerButton href={localize("/contact")}>{copy.adviceCta}</ShimmerButton>
+            <ShimmerButton
+              href={localize("/contact")}
+              event={{ action: "cta_click", category: "materials_hero", label: "contact" }}
+            >
+              {copy.adviceCta}
+            </ShimmerButton>
             <p className="text-xs text-slate-500">
               {copy.researchLead} {isEn ? "Check the" : "Check bovenaan de"}{" "}
               <Link href="#material-suggestion-tool" className="font-semibold text-slate-900 underline decoration-slate-300 hover:decoration-slate-600">
@@ -415,7 +488,7 @@ export default function MaterialsPage({ locale }: PageProps) {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="overflow-hidden p-8 sm:p-10">
-              <FaqPromo className="mt-10" href={localize("/faq")} />
+              <FaqPromo className="mt-10" href={localize("/faq")} {...(faqPromoProps ?? {})} />
             </GlassCard>
           </Reveal>
         </div>
@@ -443,6 +516,10 @@ export default function MaterialsPage({ locale }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
       />
       {faqJsonLd ? (
         <script

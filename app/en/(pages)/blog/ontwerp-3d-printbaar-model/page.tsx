@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/ontwerp-3d-printbaar-model"
 
@@ -84,24 +85,15 @@ const snapFitTips = [
   "Place the snap-fit along the layer direction for maximum strength. For horizontal clips add ribs.",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "How do you design a 3D printable model?",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "How do you design a 3D printable model?",
   description:
-    "Checklist and guidelines to design 3D printable models with focus on wall thickness, tolerance, support and file formats.",
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+    "Checklist for printable designs: wall thicknesses, tolerance, orientation, support and file formats. Includes tips for PLA, PETG and TPU.",
+  datePublished: "2024-09-01",
+  dateModified: "2024-09-01",
   inLanguage: "en-BE",
-}
+})
 
 export default function DesignArticleEnPage() {
   return (

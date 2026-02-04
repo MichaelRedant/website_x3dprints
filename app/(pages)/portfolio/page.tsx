@@ -17,18 +17,19 @@ const NL_METADATA: Metadata = {
   description:
     "Bekijk real-life 3D print projecten: functionele onderdelen, merchandising en gifts geproduceerd in Herzele (Gent).",
   alternates: {
-    canonical: "https://www.x3dprints.be/portfolio",
+    canonical: "https://www.x3dprints.be/portfolio/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/portfolio",
-      en: "https://www.x3dprints.be/en/portfolio",
+      "nl-BE": "https://www.x3dprints.be/portfolio/",
+      en: "https://www.x3dprints.be/en/portfolio/",
+      "x-default": "https://www.x3dprints.be/portfolio/",
     },
   },
   openGraph: {
     title: "3D print portfolio & case studies | X3DPrints",
     description:
       "Fotoreeksen en timelapses van maatwerk 3D prints: prototypes, merchandising en gepersonaliseerde cadeaus uit het atelier in Herzele.",
-    url: "https://www.x3dprints.be/portfolio",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "X3DPrints portfolio" }],
+    url: "https://www.x3dprints.be/portfolio/",
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -37,7 +38,7 @@ const NL_METADATA: Metadata = {
     title: "3D print portfolio & case studies | X3DPrints",
     description:
       "Functionele prototypes, merchandising en gifts: ontdek hoe X3DPrints projecten oplevert voor mkb, events en designers.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/portfolio/2d-5-3.webp"],
   },
 }
 
@@ -46,18 +47,19 @@ export const EN_METADATA: Metadata = {
   description:
     "See real-world 3D printing projects: functional parts, merchandising and gifts produced in Herzele (Ghent).",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/portfolio",
+    canonical: "https://www.x3dprints.be/en/portfolio/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/portfolio",
-      en: "https://www.x3dprints.be/en/portfolio",
+      "nl-BE": "https://www.x3dprints.be/portfolio/",
+      en: "https://www.x3dprints.be/en/portfolio/",
+      "x-default": "https://www.x3dprints.be/portfolio/",
     },
   },
   openGraph: {
     title: "3D printing portfolio & case studies | X3DPrints",
     description:
       "Photo series and timelapses of custom 3D prints: prototypes, merchandising and personalized gifts from the Herzele studio.",
-    url: "https://www.x3dprints.be/en/portfolio",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "X3DPrints portfolio" }],
+    url: "https://www.x3dprints.be/en/portfolio/",
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -66,7 +68,7 @@ export const EN_METADATA: Metadata = {
     title: "3D printing portfolio & case studies | X3DPrints",
     description:
       "Functional prototypes, merchandising and gifts: see how X3DPrints delivers projects for SMEs, events and designers.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/portfolio/2d-5-3.webp"],
   },
 }
 
@@ -584,7 +586,12 @@ export default function Page({ locale }: PageProps) {
               </h1>
               <p className="mt-4 text-pretty text-lg text-slate-700">{copy.hero.body}</p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <ShimmerButton href={localize("/contact")}>{copy.hero.ctas.quote}</ShimmerButton>
+                <ShimmerButton
+                  href={localize("/contact")}
+                  event={{ action: "cta_click", category: "portfolio_hero", label: "quote" }}
+                >
+                  {copy.hero.ctas.quote}
+                </ShimmerButton>
                 <Link
                   href={localize("/services")}
                   className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/60 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white"
@@ -741,7 +748,12 @@ export default function Page({ locale }: PageProps) {
                 <h2 className="mt-4 text-2xl font-semibold text-slate-900 sm:text-3xl">{copy.cta.title}</h2>
                 <p className="mt-3 text-base text-slate-600">{copy.cta.body}</p>
                 <div className="mt-6 flex flex-wrap justify-center gap-3">
-                  <ShimmerButton href={localize("/contact")}>{copy.cta.primary}</ShimmerButton>
+                  <ShimmerButton
+                    href={localize("/contact")}
+                    event={{ action: "cta_click", category: "portfolio_cta", label: "contact" }}
+                  >
+                    {copy.cta.primary}
+                  </ShimmerButton>
                   <Link
                     href={localize("/faq")}
                     className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/60 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white"

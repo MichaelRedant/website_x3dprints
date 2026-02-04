@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     images: PAGE.seo.ogImage
       ? [{ url: PAGE.seo.ogImage, width: 1200, height: 630, alt: "TSTAK organizer op maat" }]
-      : undefined,
+      : [{ url: "/images/organizers/tstak/tstak1.jpg", width: 1200, height: 900, alt: "TSTAK organizer op maat" }],
     siteName: SITE.name,
     locale: SITE.locale,
   },
@@ -70,6 +70,7 @@ export default function TstakPage() {
                 width={1600}
                 height={900}
                 priority
+                sizes="(min-width: 1280px) 1200px, (min-width: 768px) 90vw, 100vw"
                 className="h-auto w-full object-cover"
               />
             </div>
