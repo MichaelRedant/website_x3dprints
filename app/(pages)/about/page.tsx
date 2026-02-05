@@ -301,6 +301,7 @@ export default function Page({ locale }: PageProps) {
                 height={260}
                 className="h-32 w-auto opacity-95 sm:h-40 md:h-48"
                 priority
+                sizes="(min-width:1024px) 260px, 45vw"
               />
             </Parallax>
           </Reveal>

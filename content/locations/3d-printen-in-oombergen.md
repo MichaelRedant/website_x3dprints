@@ -75,7 +75,7 @@ Oombergen ligt ten noorden van Zottegem en staat bekend om het Kerkendriesplein.
 
 - **Standaard**: 2–5 werkdagen.
 - **Spoed**: mogelijk na overleg.
-- **Verzending**: zie [prijzenpagina](/prijzen).
+- **Verzending**: zie [prijzenpagina](/pricing).
 - **Afhaling**: in de regio Oombergen of Herzele.
 
 ---

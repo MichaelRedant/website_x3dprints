@@ -118,6 +118,7 @@ const articleJsonLd = {
   },
   mainEntityOfPage: canonical,
   datePublished: "2025-11-18",
+  dateModified: "2025-11-18",
 }
 
 export default function MarketingArticlePage() {
@@ -318,6 +319,7 @@ export default function MarketingArticlePage() {
     </article>
   )
 }
+
 
 
 

@@ -75,7 +75,7 @@ Baasrode ligt langs de Schelde en staat bekend om zijn scheepsbouwverleden en he
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Baasrode**.
 - **Spoed**: in overleg mogelijk.
-- **Verzending**: tarieven volgens [prijzenpagina](/prijzen).
+- **Verzending**: tarieven volgens [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de buurt van Baasrode of Borsbeke.
 
 ---

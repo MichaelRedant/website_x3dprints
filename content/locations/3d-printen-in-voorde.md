@@ -78,7 +78,7 @@ Voorde is bekend om zijn kasteel en groene omgeving ten zuiden van Ninove. Via [
 
 - **Standaard levering**: 2 tot 5 werkdagen.
 - **Spoed**: mogelijk na overleg.
-- **Verzending**: tarieven op de [prijzenpagina](/prijzen).
+- **Verzending**: tarieven op de [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in Ninove of omgeving.
 
 ---

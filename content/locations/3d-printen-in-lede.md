@@ -88,7 +88,7 @@ De gemeente Lede, met haar idyllische landschappen langs de Dender, haar sterke 
 
 -   **standaard**: 2 tot 5 werkdagen, afhankelijk van de complexiteit en omvang van uw bestelling.
 -   **spoed**: neem contact met ons op voor de mogelijkheden bij dringende opdrachten, we denken graag met u mee.
--   **verzending**: wij verzenden uw bestelling veilig en snel conform de tarieven op onze [prijzenpagina](/prijzen).
+-   **verzending**: wij verzenden uw bestelling veilig en snel conform de tarieven op onze [prijzenpagina](/pricing).
 -   **afhalen**: uw afgewerkte 3D prints kunnen op afspraak worden afgehaald in de nabijgelegen regio Borsbeke.
 
 ---

@@ -75,7 +75,7 @@ Grembergen ligt aan de Dender en staat bekend om zijn pittoreske dorpskern. Bewo
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Grembergen**.
 - **Spoed**: in overleg mogelijk.
-- **Verzending**: tarieven volgens [prijzenpagina](/prijzen).
+- **Verzending**: tarieven volgens [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de buurt van Grembergen of Borsbeke.
 
 ---

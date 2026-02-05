@@ -75,7 +75,7 @@ Gijzegem ligt langs de Dender en grenst aan de Gijzegemkouter. Bewoners genieten
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Gijzegem**.
 - **Spoed**: in overleg mogelijk.
-- **Verzending**: tarieven volgens [prijzenpagina](/prijzen).
+- **Verzending**: tarieven volgens [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de buurt van Gijzegem of Borsbeke.
 
 ---

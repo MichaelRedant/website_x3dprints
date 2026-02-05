@@ -86,7 +86,7 @@ Alle bestanden worden nagekeken, en indien nodig gebeurt bijsturing in overleg.
 
 - **Standaard:** 2–5 werkdagen  
 - **Spoed:** mogelijk in overleg  
-- **Verzending:** volgens [prijzenpagina](/prijzen)  
+- **Verzending:** volgens [prijzenpagina](/pricing)  
 - **Afhalen:** op afspraak in Hillegem of regio Herzele  
 
 Korte doorlooptijden en flexibiliteit zorgen ervoor dat jouw project altijd op schema blijft.

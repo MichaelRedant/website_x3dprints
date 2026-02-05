@@ -71,7 +71,7 @@ export async function generateMetadata({ params, locale }: PageProps): Promise<M
       url: canonical,
       siteName: "X3DPrints",
       locale: isEn ? "en_BE" : "nl_BE",
-      images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+      images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: `${detail.seo.title} by X3DPrints` }],
     },
     twitter: { card: "summary_large_image" },
   }
@@ -498,10 +498,11 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
     })),
   }
 
-  const howToJsonLd = {
+ const howToJsonLd = {
     "@context": "https://schema.org",
     "@type": "HowTo",
     inLanguage: languageCode,
+    mainEntityOfPage: pageUrl,
     name: isEn ? `Get the right material: ${material.name}` : `Kies het juiste materiaal: ${material.name}`,
     description: isEn
       ? "Four quick steps to confirm suitability, see price impact and send a quote with the material prefilled."
@@ -536,6 +537,7 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
       },
     ],
     tool: [{ "@type": "HowToTool", name: "Material Suggestion Tool" }],
+    supply: [{ "@type": "HowToSupply", name: isEn ? "STL or STEP file" : "STL- of STEP-bestand" }],
   }
 
   const faqJsonLd = detail.faq
@@ -543,6 +545,7 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
         "@context": "https://schema.org",
         "@type": "FAQPage",
         inLanguage: languageCode,
+        mainEntityOfPage: pageUrl,
         mainEntity: detail.faq.map((item) => ({
           "@type": "Question",
           name: item.question,

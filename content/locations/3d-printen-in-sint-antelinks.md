@@ -78,7 +78,7 @@ Elk bestand wordt nagekeken en besproken, zodat je zeker bent van een correct en
 
 - **Standaard:** 2–5 werkdagen.  
 - **Spoed:** mogelijk na overleg.  
-- **Verzending:** tarieven op de [prijzenpagina](/prijzen).  
+- **Verzending:** tarieven op de [prijzenpagina](/pricing).  
 - **Afhalen:** op afspraak in de regio Sint-Antelinks.
 
 ---

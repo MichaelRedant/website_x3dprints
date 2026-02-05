@@ -75,7 +75,7 @@ Schoonaarde ligt langs de Schelde en wordt gekenmerkt door de markante Schoonaar
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Schoonaarde**.
 - **Spoed**: in overleg mogelijk.
-- **Verzending**: tarieven volgens [prijzenpagina](/prijzen).
+- **Verzending**: tarieven volgens [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de buurt van Schoonaarde of Borsbeke.
 
 ---

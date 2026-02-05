@@ -75,7 +75,7 @@ Nieuwerkerken ligt in een landelijke omgeving nabij de Dender. Bewoners genieten
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Nieuwerkerken**.
 - **Spoed**: in overleg mogelijk.
-- **Verzending**: tarieven volgens [prijzenpagina](/prijzen).
+- **Verzending**: tarieven volgens [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de buurt van Nieuwerkerken of Borsbeke.
 
 ---

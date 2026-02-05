@@ -97,6 +97,7 @@ const articleJsonLd = {
     logo: { "@type": "ImageObject", url: ogImage },
   },
   datePublished: "2025-01-05",
+  dateModified: "2025-01-05",
   image: ogImage,
   mainEntityOfPage: canonical,
 }
@@ -321,6 +322,7 @@ export default function BlogValentijn() {
     </main>
   )
 }
+
 
 
 

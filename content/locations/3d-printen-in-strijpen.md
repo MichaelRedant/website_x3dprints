@@ -75,7 +75,7 @@ Strijpen ligt in de Zwalmstreek en is verbonden met Zottegem via de Gentsesteenw
 
 - **Standaard**: 2–5 werkdagen.
 - **Spoed**: mogelijk na overleg.
-- **Verzending**: tarieven op de [prijzenpagina](/prijzen).
+- **Verzending**: tarieven op de [prijzenpagina](/pricing).
 - **Afhaling**: in de buurt van Strijpen of Herzele.
 
 ---

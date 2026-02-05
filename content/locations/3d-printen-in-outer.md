@@ -78,7 +78,7 @@ Outer ligt tussen Ninove en Aalst en heeft een landelijk karakter met open velde
 
 - **Standaard levering**: 2 tot 5 werkdagen.
 - **Spoed**: mogelijk na overleg.
-- **Verzending**: tarieven op de [prijzenpagina](/prijzen).
+- **Verzending**: tarieven op de [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in Ninove of omgeving.
 
 ---

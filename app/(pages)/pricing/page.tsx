@@ -8,6 +8,7 @@ import PriceEstimator from "@/components/PriceEstimator"
 import { GRAMS_PER_TIER, calcUnitPrice, type Quality, type Tier } from "@/lib/pricing"
 import type { MaterialKey } from "@/lib/materials"
 import FaqPromo from "@/components/FaqPromo"
+import ReadMoreLinks from "@/components/ReadMoreLinks"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 
@@ -147,6 +148,21 @@ const PRICING_COPY_NL = {
     primary: "Offerte aanvragen",
     secondary: "Services bekijken",
   },
+  readMore: {
+    title: "Verder verkennen?",
+    intro: "Leg prijzen naast materialen, services en voorbeelden voor een snelle beslissing.",
+    primary: [
+      { label: "3D print service", href: "/services" },
+      { label: "Materialen & looks", href: "/materials" },
+      { label: "Contact & offerte", href: "/contact" },
+    ],
+    secondary: [
+      { label: "Portfolio", href: "/portfolio" },
+      { label: "Segments & cases", href: "/segments" },
+      { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+      { label: "Kostprijs gids", href: "/blog/hoeveel-kost-3d-printen" },
+    ],
+  },
   faqPromo: {
     title: "Vragen over 3D printen?",
     intro: "Antwoorden over materialen, levertijden, prijzen en onze werkwijze.",
@@ -247,6 +263,21 @@ const PRICING_COPY_EN = {
     body: "Upload STL/STEP with a short description. You get a fast proposal with material advice, price and lead time.",
     primary: "Request a quote",
     secondary: "View services",
+  },
+  readMore: {
+    title: "Keep exploring?",
+    intro: "Pair pricing with materials, services and examples to decide faster.",
+    primary: [
+      { label: "3D print service", href: "/en/services" },
+      { label: "Materials & looks", href: "/en/materials" },
+      { label: "Contact & quote", href: "/en/contact" },
+    ],
+    secondary: [
+      { label: "Portfolio", href: "/en/portfolio" },
+      { label: "Segments & cases", href: "/en/segments" },
+      { label: "Material Suggestion Tool", href: "/en/materials#material-suggestion-tool" },
+      { label: "Cost guide", href: "/en/blog/hoeveel-kost-3d-printen" },
+    ],
   },
   faqPromo: {
     title: "Questions about 3D printing?",
@@ -481,6 +512,13 @@ export default function Page({ locale }: PageProps) {
           </div>
         </div>
       </section>
+
+      <ReadMoreLinks
+        title={copy.readMore.title}
+        intro={copy.readMore.intro}
+        primaryLinks={copy.readMore.primary.map((link) => ({ ...link, href: localize(link.href) }))}
+        secondaryLinks={copy.readMore.secondary.map((link) => ({ ...link, href: localize(link.href) }))}
+      />
 
       {/* CTA */}
       <section className="px-6 pb-20 sm:px-8 lg:px-12">

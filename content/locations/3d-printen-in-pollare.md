@@ -78,7 +78,7 @@ Pollare ligt langs de Dender en staat bekend om het Pollareveld en de brug over 
 
 - **Standaard levering**: 2 tot 5 werkdagen.
 - **Spoed**: mogelijk na overleg.
-- **Verzending**: tarieven op de [prijzenpagina](/prijzen).
+- **Verzending**: tarieven op de [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in Ninove of omgeving.
 
 ---

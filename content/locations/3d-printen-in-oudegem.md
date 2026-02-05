@@ -75,7 +75,7 @@ Oudegem ligt aan de Schelde en grenst aan het natuurgebied de Oudegemse Beemden.
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Oudegem**.
 - **Spoed**: in overleg mogelijk.
-- **Verzending**: tarieven volgens [prijzenpagina](/prijzen).
+- **Verzending**: tarieven volgens [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de buurt van Oudegem of Borsbeke.
 
 ---

@@ -75,7 +75,7 @@ Grotenberge ligt langs de N46 en herbergt de Sint-Pieters-Banden en Sint-Berlind
 
 - **Standaard**: 2–5 werkdagen.
 - **Spoed**: op aanvraag bij **3D printen in Grotenberge**.
-- **Verzending**: tarieven op de [prijzenpagina](/prijzen).
+- **Verzending**: tarieven op de [prijzenpagina](/pricing).
 - **Afhaling**: in de regio Grotenberge of Herzele.
 
 ---

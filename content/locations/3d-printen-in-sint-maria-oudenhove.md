@@ -75,7 +75,7 @@ Het dorp ligt rond het Sint-Hubertusplein en het recente Wantenplein, een verwij
 
 - **Standaard**: 2–5 werkdagen.
 - **Spoed**: mogelijk in overleg.
-- **Verzending**: tarieven op de [prijzenpagina](/prijzen).
+- **Verzending**: tarieven op de [prijzenpagina](/pricing).
 - **Afhaling**: in de buurt van Sint-Maria-Oudenhove of Herzele.
 
 ---

@@ -79,7 +79,7 @@ Alle bestanden worden nagekeken, met duidelijke feedback indien bijsturing nodig
 
 - **Standaard**: 2 tot 5 werkdagen  
 - **Spoed**: mogelijk in overleg  
-- **Verzending**: volgens de [prijzenpagina](/prijzen)  
+- **Verzending**: volgens de [prijzenpagina](/pricing)  
 - **Afhalen**: op afspraak in de regio  
 
 Met korte levertijden en flexibele opties blijf je altijd op schema.

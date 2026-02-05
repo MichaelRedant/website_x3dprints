@@ -78,7 +78,7 @@ Neigem grenst aan het uitgestrekte Neigembos en ligt ten oosten van Ninove. De s
 
 - **Standaard levering**: 2 tot 5 werkdagen.
 - **Spoed**: mogelijk na overleg.
-- **Verzending**: tarieven op de [prijzenpagina](/prijzen).
+- **Verzending**: tarieven op de [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in Ninove of omgeving.
 
 ---

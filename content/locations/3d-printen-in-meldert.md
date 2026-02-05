@@ -75,7 +75,7 @@ Meldert ligt aan het Kravaalbos en heeft een rijk dorpsleven. Bewoners profitere
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Meldert**.
 - **Spoed**: in overleg mogelijk.
-- **Verzending**: tarieven volgens [prijzenpagina](/prijzen).
+- **Verzending**: tarieven volgens [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de buurt van Meldert of Borsbeke.
 
 ---

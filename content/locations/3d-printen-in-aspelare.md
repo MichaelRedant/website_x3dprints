@@ -78,7 +78,7 @@ Aspelare ligt ten noorden van Ninove en is bekend om zijn landelijke wegen en Si
 
 - **Standaard levering**: 2 tot 5 werkdagen.
 - **Spoed**: mogelijk na overleg.
-- **Verzending**: tarieven op de [prijzenpagina](/prijzen).
+- **Verzending**: tarieven op de [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in Ninove of omgeving.
 
 ---

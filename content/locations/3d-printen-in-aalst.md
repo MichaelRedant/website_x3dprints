@@ -90,7 +90,7 @@ Meer informatie over de stad vind je op [Aalst](https://www.aalst.be).
 
 -   **Standaard**: 2 tot 5 werkdagen, afhankelijk van de complexiteit en omvang van uw bestelling.
 -   **Spoed**: Neem contact met ons op voor de mogelijkheden bij dringende opdrachten, we denken graag met u mee.
--   **Verzending**: Wij verzenden uw bestelling veilig en snel conform de tarieven op onze [prijzenpagina](/prijzen).
+-   **Verzending**: Wij verzenden uw bestelling veilig en snel conform de tarieven op onze [prijzenpagina](/pricing).
 -   **Afhalen**: Uw afgewerkte 3D prints kunnen op afspraak worden afgehaald in de nabijgelegen regio Borsbeke.
 
 ---

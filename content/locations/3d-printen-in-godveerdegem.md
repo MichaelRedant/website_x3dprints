@@ -75,7 +75,7 @@ Godveerdegem sluit direct aan op het stadscentrum en herbergt de Sint-Paulus-Bek
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Godveerdegem**.
 - **Spoed**: mogelijk na overleg.
-- **Verzending**: tarieven staan op de [prijzenpagina](/prijzen).
+- **Verzending**: tarieven staan op de [prijzenpagina](/pricing).
 - **Afhaling**: in de buurt van Godveerdegem of Herzele.
 
 ---

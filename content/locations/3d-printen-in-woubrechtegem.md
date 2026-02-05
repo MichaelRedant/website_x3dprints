@@ -88,7 +88,7 @@ Alle bestanden worden **vertrouwelijk** behandeld en nagekeken. Eventuele bijstu
 
 - **Standaard levering**: 2 tot 5 werkdagen.  
 - **Spoed**: mogelijk na overleg.  
-- **Verzending**: volgens tarieven op de [prijzenpagina](/prijzen).  
+- **Verzending**: volgens tarieven op de [prijzenpagina](/pricing).  
 - **Afhaling**: op afspraak in Woubrechtegem of Herzele.  
 
 Zo blijven projecten op schema zonder onnodige vertragingen.

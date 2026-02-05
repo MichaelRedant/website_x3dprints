@@ -109,6 +109,7 @@ const articleJsonLd = {
   },
   mainEntityOfPage: canonical,
   datePublished: "2025-01-15",
+  dateModified: "2025-01-15",
 }
 
 export default function NaSiamArticlePage() {
@@ -330,6 +331,7 @@ export default function NaSiamArticlePage() {
     </article>
   )
 }
+
 
 
 

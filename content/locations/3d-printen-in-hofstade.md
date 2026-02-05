@@ -75,7 +75,7 @@ Hofstade ligt aan de Dender en staat bekend om het Schotte-park. Bewoners profit
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Hofstade**.
 - **Spoed**: in overleg mogelijk.
-- **Verzending**: tarieven volgens [prijzenpagina](/prijzen).
+- **Verzending**: tarieven volgens [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de buurt van Hofstade of Borsbeke.
 
 ---

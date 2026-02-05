@@ -75,7 +75,7 @@ Leeuwergem ligt tussen velden en bossen en is vooral bekend om het Kasteel van L
 
 - **Standaard**: 2–5 werkdagen.
 - **Spoed**: mogelijk bij **3D printen in Leeuwergem**.
-- **Verzending**: tarieven op [prijzenpagina](/prijzen).
+- **Verzending**: tarieven op [prijzenpagina](/pricing).
 - **Afhaling**: in de buurt van Leeuwergem of Herzele.
 
 ---

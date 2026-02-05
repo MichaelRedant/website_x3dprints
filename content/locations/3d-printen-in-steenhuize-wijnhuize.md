@@ -95,7 +95,7 @@ Alle bestanden worden zorgvuldig nagekeken en indien nodig bijgestuurd in overle
 
 - **Standaard levering:** 2 tot 5 werkdagen  
 - **Spoedopdrachten:** mogelijk in overleg  
-- **Verzending:** volgens tarieven op de [prijzenpagina](/prijzen)  
+- **Verzending:** volgens tarieven op de [prijzenpagina](/pricing)  
 - **Afhalen:** mogelijk op afspraak  
 
 Met korte levertijden en flexibele verzending blijft jouw project altijd op schema.

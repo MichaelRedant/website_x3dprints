@@ -9,7 +9,7 @@ import FaqPromo from "@/components/FaqPromo"
 import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
 import { MATERIAL_DETAILS } from "@/content/material-details"
-import MaterialSuggestionTool from "@/components/MaterialSuggestionTool"
+import MaterialSuggestionToolLoader from "@/components/MaterialSuggestionToolLoader"
 import { buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import { normalizeLocale } from "@/lib/i18n/locales"
@@ -421,7 +421,7 @@ export default function MaterialsPage({ locale }: PageProps) {
               </GlassCard>
             </Reveal>
           </div>
-          <MaterialSuggestionTool />
+          <MaterialSuggestionToolLoader />
         </div>
       </section>
 

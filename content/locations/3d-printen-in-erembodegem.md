@@ -75,7 +75,7 @@ Erembodegem ligt langs de Dender en vormt de westelijke toegang tot Aalst. Bewon
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Erembodegem**.
 - **Spoed**: in overleg mogelijk.
-- **Verzending**: tarieven volgens [prijzenpagina](/prijzen).
+- **Verzending**: tarieven volgens [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de buurt van Erembodegem of Borsbeke.
 
 ---

@@ -75,7 +75,7 @@ Herdersem ligt in de Dendervallei en grenst aan het Groot Park. Bewoners profite
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Herdersem**.
 - **Spoed**: in overleg mogelijk.
-- **Verzending**: tarieven volgens [prijzenpagina](/prijzen).
+- **Verzending**: tarieven volgens [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de buurt van Herdersem of Borsbeke.
 
 ---

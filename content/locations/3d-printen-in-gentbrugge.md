@@ -82,7 +82,7 @@ Met onze **rapid prototyping service** in de regio Gentbrugge kunt u uw ontwerpp
 
 -   **Standaardproductie**: 2–5 werkdagen.
 -   **Spoedlevering**: Mogelijk in overleg voor dringende projecten.
--   **Verzending**: Veilige en snelle verzending volgens de tarieven op onze [prijzenpagina](/prijzen).
+-   **Verzending**: Veilige en snelle verzending volgens de tarieven op onze [prijzenpagina](/pricing).
 -   **Afhalen**: Ophalen in Borsbeke is mogelijk op afspraak.
 
 ---

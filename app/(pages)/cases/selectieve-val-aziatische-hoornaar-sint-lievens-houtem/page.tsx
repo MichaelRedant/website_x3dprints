@@ -5,6 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { SITE } from "@/lib/seo"
 
 const slug = "selectieve-val-aziatische-hoornaar-sint-lievens-houtem"
 const canonical = `https://www.x3dprints.be/cases/${slug}`
@@ -168,6 +169,37 @@ const articleJsonLd = {
   url: canonical,
   image: "https://www.x3dprints.be/images/og-home.jpg",
   inLanguage: ["nl-BE", "en-BE"],
+}
+
+const imageObjectJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  contentUrl: `${SITE.url}/Logo.webp`,
+  thumbnail: `${SITE.url}/Logo.webp`,
+  caption: "Selectieve val tegen Aziatische hoornaar - 3D print case",
+}
+
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Custom 3D printing — selectieve val tegen Aziatische hoornaar",
+  serviceType: "3D printing",
+  areaServed: ["Belgium", "Flanders"],
+  provider: {
+    "@type": "LocalBusiness",
+    name: SITE.name,
+    url: SITE.url,
+    ...(SITE.phone ? { telephone: SITE.phone } : {}),
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "3D Print Services",
+    itemListElement: [
+      { "@type": "Offer", name: "Prototype prints", url: `${SITE.url}/services` },
+      { "@type": "Offer", name: "Small batches", url: `${SITE.url}/services` },
+      { "@type": "Offer", name: "Custom organizers", url: `${SITE.url}/organizers` },
+    ],
+  },
 }
 
 function SectionDivider() {
@@ -594,6 +626,16 @@ export default function CaseStudySelectiveTrapPage() {
       {/* JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(imageObjectJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
     </main>
   )
 }
+
+
+
+
+
+
+
+

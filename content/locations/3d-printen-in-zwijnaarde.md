@@ -74,7 +74,7 @@ Met **rapid prototyping** via **3D printen in Zwijnaarde** doorloop je sneller d
 
 - **Standaard**: 2 tot 5 werkdagen.
 - **Spoed**: mogelijk na overleg.
-- **Verzending**: volgens tarieven op de [prijzenpagina](/prijzen).
+- **Verzending**: volgens tarieven op de [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de regio Gent.
 
 ---

@@ -75,7 +75,7 @@ Elene ligt in de Vlaamse Ardennen en staat bekend om de Molenvijver. Bewoners pr
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Elene**.
 - **Spoed**: in overleg mogelijk.
-- **Verzending**: tarieven volgens [prijzenpagina](/prijzen).
+- **Verzending**: tarieven volgens [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de buurt van Elene of Herzele.
 
 ---

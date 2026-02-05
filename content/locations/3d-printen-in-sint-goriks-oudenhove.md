@@ -75,7 +75,7 @@ De dorpskern ligt tussen heuvels en velden in de Zwalmvallei. Via **3D printen i
 
 - **Standaard**: 2–5 werkdagen.
 - **Spoed**: mogelijk op aanvraag.
-- **Verzending**: tarieven staan op de [prijzenpagina](/prijzen).
+- **Verzending**: tarieven staan op de [prijzenpagina](/pricing).
 - **Afhaling**: in de buurt van Sint-Goriks-Oudenhove of Herzele.
 
 ---

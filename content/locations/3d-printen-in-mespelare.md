@@ -75,7 +75,7 @@ Mespelare ligt tussen velden en wordt gekenmerkt door een rustige dorpskern. Bew
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Mespelare**.
 - **Spoed**: in overleg mogelijk.
-- **Verzending**: tarieven volgens [prijzenpagina](/prijzen).
+- **Verzending**: tarieven volgens [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de buurt van Mespelare of Borsbeke.
 
 ---

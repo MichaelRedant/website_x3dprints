@@ -92,7 +92,7 @@ Met **3D printen in Oudenaarde** kun je:
 
 -   **standaard**: 2–5 werkdagen, afhankelijk van complexiteit en oplage.
 -   **spoed mogelijk**: in overleg voor dringende projecten.
--   **verzending**: volgens tarieven op de [prijzenpagina](/prijzen).
+-   **verzending**: volgens tarieven op de [prijzenpagina](/pricing).
 -   **ophalen**: mogelijk in de nabijgelegen regio Borsbeke.
 
 ---

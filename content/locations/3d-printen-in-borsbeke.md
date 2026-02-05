@@ -103,7 +103,7 @@ Elk ontwerp wordt zorgvuldig nagekeken en waar nodig bijgestuurd in overleg.
 
 - **Standaard**: 2–5 werkdagen  
 - **Spoed**: mogelijk na overleg  
-- **Verzending**: volgens tarieven op de [prijzenpagina](/prijzen)  
+- **Verzending**: volgens tarieven op de [prijzenpagina](/pricing)  
 - **Afhalen**: kan op afspraak in de regio  
 
 De **lokale aanpak** minimaliseert transport en houdt levertijden kort.

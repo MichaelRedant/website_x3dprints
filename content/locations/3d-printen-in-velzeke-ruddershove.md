@@ -75,7 +75,7 @@ Velzeke-Ruddershove is bekend om zijn Romeinse verleden en het archeologisch mus
 
 - **Standaard**: 2–5 werkdagen.
 - **Spoed**: op aanvraag.
-- **Verzending**: tarieven op de [prijzenpagina](/prijzen).
+- **Verzending**: tarieven op de [prijzenpagina](/pricing).
 - **Afhaling**: in de buurt van Velzeke-Ruddershove of Herzele.
 
 ---

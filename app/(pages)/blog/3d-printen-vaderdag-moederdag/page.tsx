@@ -88,6 +88,7 @@ const articleJsonLd = {
     logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/images/og-home.jpg" },
   },
   datePublished: "2025-03-15",
+  dateModified: "2025-03-15",
   image: "https://www.x3dprints.be/images/og-home.jpg",
   mainEntityOfPage: canonical,
   keywords: [
@@ -254,6 +255,7 @@ export default function BlogParentsDay() {
     </main>
   )
 }
+
 
 
 

@@ -75,7 +75,7 @@ Baardegem ligt tussen velden en de Molenbeek en draagt bij aan de dynamiek van d
 
 - **Standaard**: 2–5 werkdagen voor **3D printen in Baardegem**.
 - **Spoed**: in overleg mogelijk.
-- **Verzending**: tarieven volgens [prijzenpagina](/prijzen).
+- **Verzending**: tarieven volgens [prijzenpagina](/pricing).
 - **Afhaling**: op afspraak in de buurt van Baardegem of Borsbeke.
 
 ---

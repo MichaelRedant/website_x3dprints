@@ -937,7 +937,14 @@ export default function HomePage({ locale }: PageProps) {
               </div>
             </div>
             <div className="justify-self-end">
-              <Image src="/Logo.webp" alt="X3DPrints logo" width={220} height={220} className="opacity-90" />
+              <Image
+                src="/Logo.webp"
+                alt="X3DPrints logo"
+                width={220}
+                height={220}
+                className="opacity-90"
+                sizes="(min-width:1024px) 220px, 40vw"
+              />
             </div>
           </Reveal>
         </div>
