@@ -7,7 +7,11 @@
     "build": "next build",
     "preview": "npx serve -s out -l 3000",
     "lint": "eslint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "check:seo:metadata": "node scripts/check-seo-metadata.mjs",
+    "check:seo:schema": "node scripts/check-seo-schema.mjs",
+    "check:seo:links": "node scripts/check-seo-links.mjs",
+    "check:seo": "npm run check:seo:metadata && npm run check:seo:schema && npm run check:seo:links"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",

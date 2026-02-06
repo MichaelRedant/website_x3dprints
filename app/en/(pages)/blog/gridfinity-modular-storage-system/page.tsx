@@ -1,11 +1,11 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
 import Faq from "@/components/Faq"
 
-const canonical = "https://www.x3dprints.be/en/blog/gridfinity-modular-storage-system"
+const canonical = "https://www.x3dprints.be/en/blog/gridfinity-modular-storage-system/"
 const publishedDate = "2026-01-30T08:00:00+01:00"
 
 const GRID_IMAGES = [
@@ -53,8 +53,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/gridfinity-modulair-opslagsysteem",
+      "nl-BE": "https://www.x3dprints.be/blog/gridfinity-modulair-opslagsysteem/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/gridfinity-modulair-opslagsysteem/",
     },
   },
   openGraph: {

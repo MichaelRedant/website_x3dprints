@@ -15,7 +15,9 @@ export default function EnPagesLayout({ children }: { children: React.ReactNode 
       <ThemeProvider>
         <ScrollProgress />
         <Header />
-        <main className="flex-1 pt-16 md:pt-[72px]">{children}</main>
+        <main lang="en-BE" className="flex-1 pt-16 md:pt-[72px]">
+          {children}
+        </main>
         <Footer />
         <CookieBanner />
         <BackToTop />

@@ -13,17 +13,18 @@ export const metadata: Metadata = {
   description:
     "Herzele-based merchant and 100% Belgian 3D print studio. Short supply chain, clear agreements and member of Werkgroep Ondernemend Herzele. Request your quote.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/lokaal-belgisch",
+    canonical: "https://www.x3dprints.be/en/lokaal-belgisch/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/lokaal-belgisch",
-      en: "https://www.x3dprints.be/en/lokaal-belgisch",
+      "nl-BE": "https://www.x3dprints.be/lokaal-belgisch/",
+      en: "https://www.x3dprints.be/en/lokaal-belgisch/",
+      "x-default": "https://www.x3dprints.be/lokaal-belgisch/",
     },
   },
   openGraph: {
     title: "Local & Belgian 3D printing | X3DPrints",
     description:
       "X3DPrints is a Herzele merchant and 100% Belgian 3D print studio. Short chain, clear agreements and proud partner of Werkgroep Ondernemend Herzele.",
-    url: "https://www.x3dprints.be/en/lokaal-belgisch",
+    url: "https://www.x3dprints.be/en/lokaal-belgisch/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "en_BE",
     siteName: "X3DPrints",
@@ -67,7 +68,7 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Local & Belgian 3D printing",
-    url: "https://www.x3dprints.be/en/lokaal-belgisch",
+    url: "https://www.x3dprints.be/en/lokaal-belgisch/",
     description:
       "X3DPrints is a Herzele merchant and 100% Belgian 3D print studio. Short chain, clear agreements and member of Werkgroep Ondernemend Herzele.",
     inLanguage: "en-BE",
@@ -81,7 +82,7 @@ export default function Page() {
   }
 
   const localBusinessJsonLd = buildLocalBusinessSchema({
-    pageUrl: "https://www.x3dprints.be/en/lokaal-belgisch",
+    pageUrl: "https://www.x3dprints.be/en/lokaal-belgisch/",
     description:
       "Herzele merchant and 100% Belgian 3D print studio with a short supply chain, clear agreements and membership of Werkgroep Ondernemend Herzele.",
     areaServed: "BE",
@@ -138,15 +139,15 @@ export default function Page() {
               .
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <ShimmerButton href="/contact">Request a quote</ShimmerButton>
+              <ShimmerButton href="/en/contact">Request a quote</ShimmerButton>
               <Link
-                href="/materials"
+                href="/en/materials"
                 className="inline-flex items-center gap-2 rounded-xl border border-emerald-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Materials & guidelines
               </Link>
               <Link
-                href="/locaties"
+                href="/en/locaties"
                 className="inline-flex items-center gap-2 rounded-xl border border-emerald-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Local delivery zones
@@ -239,15 +240,15 @@ export default function Page() {
                   Send your STL/STEP, describe the use case and we will share material advice, planning and pricing - all produced in Herzele.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <ShimmerButton href="/contact">Request a quote</ShimmerButton>
+                  <ShimmerButton href="/en/contact">Request a quote</ShimmerButton>
                   <Link
-                    href="/segments"
+                    href="/en/segments"
                     className="inline-flex items-center gap-2 rounded-xl border border-emerald-100/80 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:-translate-y-0.5"
                   >
                     View segments
                   </Link>
                   <Link
-                    href="/materials"
+                    href="/en/materials"
                     className="inline-flex items-center gap-2 rounded-xl border border-emerald-100/80 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:-translate-y-0.5"
                   >
                     Materials library

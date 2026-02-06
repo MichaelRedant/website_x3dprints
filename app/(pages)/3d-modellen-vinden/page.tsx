@@ -7,6 +7,9 @@ import Reveal from "@/components/Reveal"
 import FilamentHeroVisual from "@/components/FilamentHeroVisual"
 import GlassOrb from "@/components/GlassOrb"
 
+const datePublished = "2026-02-06"
+const dateModified = "2026-02-06"
+
 export const metadata: Metadata = {
   title: "3D modellen vinden om te laten printen | X3DPrints",
   description:
@@ -99,7 +102,7 @@ const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,
@@ -111,11 +114,13 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   headline: "Waar 3D modellen vinden om te laten printen",
   description:
     "Overzicht van de beste plaatsen om 3D modellen te downloaden (Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults, Thangs) plus kwaliteitstips voor X3DPrints.",
   author: { "@type": "Organization", name: "X3DPrints" },
+  datePublished,
+  dateModified,
   mainEntityOfPage: "https://www.x3dprints.be/3d-modellen-vinden",
 }
 

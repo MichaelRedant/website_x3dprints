@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 
-const canonical = "https://www.x3dprints.be/en/privacy"
+const canonical = "https://www.x3dprints.be/en/privacy/"
 
 export const metadata: Metadata = {
   title: "Privacy Policy | X3DPrints",
@@ -9,8 +9,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/privacy",
+      "nl-BE": "https://www.x3dprints.be/privacy/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/privacy/",
     },
   },
   openGraph: {

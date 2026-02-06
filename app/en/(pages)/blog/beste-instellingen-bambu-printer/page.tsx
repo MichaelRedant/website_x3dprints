@@ -6,7 +6,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/en/blog/beste-instellingen-bambu-printer"
+const canonical = "https://www.x3dprints.be/en/blog/beste-instellingen-bambu-printer/"
 
 export const metadata: Metadata = {
   title: "Best settings for your Bambu printer | X3DPrints Blog",
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/beste-instellingen-bambu-printer",
+      "nl-BE": "https://www.x3dprints.be/blog/beste-instellingen-bambu-printer/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/beste-instellingen-bambu-printer/",
     },
   },
   openGraph: {

@@ -29,11 +29,17 @@ const NL_METADATA: Metadata = {
     description:
       "Indicatieve tarieven voor prototypes en kleine series. Materialen: PLA (standaard), PLA+ varianten, PETG en TPU. Levering in heel Belgie.",
     url: "https://www.x3dprints.be/pricing/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints" }],
+    images: [{ url: "/images/portfolio/2d-6-1-1.webp", width: 1200, height: 630, alt: "Prijzen voor 3D printen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "Prijzen 3D printen",
+    description:
+      "Indicatieve tarieven voor prototypes en kleine series. Materialen: PLA (standaard), PLA+ varianten, PETG en TPU. Levering in heel Belgie.",
+    images: ["/images/portfolio/2d-6-1-1.webp"],
+  },
 }
 
 export const EN_METADATA: Metadata = {
@@ -53,11 +59,17 @@ export const EN_METADATA: Metadata = {
     description:
       "Indicative rates for prototypes and small batches. Materials: PLA (standard), PLA+ variants, PETG and TPU. Delivery across Belgium.",
     url: "https://www.x3dprints.be/en/pricing/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints" }],
+    images: [{ url: "/images/portfolio/2d-6-1-1.webp", width: 1200, height: 630, alt: "3D printing prices" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "3D printing prices",
+    description:
+      "Indicative rates for prototypes and small batches. Materials: PLA (standard), PLA+ variants, PETG and TPU. Delivery across Belgium.",
+    images: ["/images/portfolio/2d-6-1-1.webp"],
+  },
 }
 
 export const metadata: Metadata = NL_METADATA

@@ -6,7 +6,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/en/blog/pla-vs-petg"
+const canonical = "https://www.x3dprints.be/en/blog/pla-vs-petg/"
 
 export const metadata: Metadata = {
   title: "PLA vs PETG: which should you choose? | X3DPrints",
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/pla-vs-petg",
+      "nl-BE": "https://www.x3dprints.be/blog/pla-vs-petg/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/pla-vs-petg/",
     },
   },
   openGraph: {

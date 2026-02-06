@@ -7,7 +7,7 @@ import { getLocationBySlug, getEnglishLocationSlugs } from "@/lib/locations"
 
 export const revalidate = 21600 // 6h rebuild
 
-const canonical = "https://www.x3dprints.be/en/locaties"
+const canonical = "https://www.x3dprints.be/en/locaties/"
 const pageDescription =
   "Overview of local landing pages: 3D printing per city. Quickly jump to your region with strong internal linking."
 
@@ -17,8 +17,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/locaties",
+      "nl-BE": "https://www.x3dprints.be/locaties/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/locaties/",
     },
   },
   openGraph: {

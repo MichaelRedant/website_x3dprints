@@ -6,7 +6,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/en/blog/3d-printen-voor-beginners"
+const canonical = "https://www.x3dprints.be/en/blog/3d-printen-voor-beginners/"
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=beginners"
 const pricingHref = `/en/pricing${utm}`
 const viewerHref = `/en/viewer${utm}`
@@ -21,8 +21,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-voor-beginners",
+      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-voor-beginners/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/3d-printen-voor-beginners/",
     },
   },
   openGraph: {

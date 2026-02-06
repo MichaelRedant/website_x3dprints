@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-pla-wood"
+const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-pla-wood/"
 const publishedDate = "2025-09-26T08:00:00+02:00"
 
 export const metadata: Metadata = {
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/filament-vrijdag-pla-wood",
+      "nl-BE": "https://www.x3dprints.be/blog/filament-vrijdag-pla-wood/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/filament-vrijdag-pla-wood/",
     },
   },
   openGraph: {

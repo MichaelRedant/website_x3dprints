@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/3d-printen-in-de-buurt"
+const canonical = "https://www.x3dprints.be/en/blog/3d-printen-in-de-buurt/"
 
 export const metadata: Metadata = {
   title: "Local 3D printing near Ghent, Aalst and Dendermonde | X3DPrints",
@@ -14,8 +14,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-in-de-buurt",
+      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-in-de-buurt/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/3d-printen-in-de-buurt/",
     },
   },
   openGraph: {
@@ -83,6 +84,8 @@ const articleJsonLd = {
   },
   mainEntityOfPage: canonical,
   url: canonical,
+  datePublished: "2025-05-20",
+  dateModified: "2026-02-06",
   inLanguage: "en-BE",
 }
 

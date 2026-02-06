@@ -6,7 +6,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/en/blog/ontwerp-3d-printbaar-model"
+const canonical = "https://www.x3dprints.be/en/blog/ontwerp-3d-printbaar-model/"
 
 export const metadata: Metadata = {
   title: "How do you design a 3D printable model? | X3DPrints Blog",
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/ontwerp-3d-printbaar-model",
+      "nl-BE": "https://www.x3dprints.be/blog/ontwerp-3d-printbaar-model/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/ontwerp-3d-printbaar-model/",
     },
   },
   openGraph: {

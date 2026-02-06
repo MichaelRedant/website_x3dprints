@@ -7,7 +7,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/relatiegeschenken-3d-printen"
+const canonical = "https://www.x3dprints.be/en/blog/relatiegeschenken-3d-printen/"
 const publishedDate = "2025-08-20T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -17,8 +17,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/relatiegeschenken-3d-printen",
+      "nl-BE": "https://www.x3dprints.be/blog/relatiegeschenken-3d-printen/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/relatiegeschenken-3d-printen/",
     },
   },
   openGraph: {
@@ -108,6 +109,7 @@ const articleJsonLd = {
   url: canonical,
   image: "https://www.x3dprints.be/images/og-home.jpg",
   datePublished: publishedDate,
+  dateModified: "2026-02-06",
   inLanguage: "en-BE",
 }
 

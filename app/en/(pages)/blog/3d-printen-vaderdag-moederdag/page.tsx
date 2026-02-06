@@ -6,7 +6,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/3d-printen-vaderdag-moederdag"
+const canonical = "https://www.x3dprints.be/en/blog/3d-printen-vaderdag-moederdag/"
 
 export const metadata: Metadata = {
   title: "Father&apos;s Day & Mother&apos;s Day 3D printing | X3DPrints Blog",
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-vaderdag-moederdag",
+      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-vaderdag-moederdag/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/3d-printen-vaderdag-moederdag/",
     },
   },
   openGraph: {
@@ -93,6 +94,8 @@ const articleJsonLd = {
   mainEntityOfPage: canonical,
   url: canonical,
   image: "https://www.x3dprints.be/images/og-home.jpg",
+  datePublished: "2025-04-30",
+  dateModified: "2026-02-06",
   inLanguage: "en-BE",
 }
 

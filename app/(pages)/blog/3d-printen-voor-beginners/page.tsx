@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "3D printen voor beginners",
     description:
       "Een praktische gids voor iedereen die net begint met 3D printen. Inclusief tips, fouten die je vermijdt en opleidingsmogelijkheden.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/portfolio/20241024_081839-1.jpg"],
   },
 }
 

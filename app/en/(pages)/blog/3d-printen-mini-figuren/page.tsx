@@ -6,7 +6,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/3d-printen-mini-figuren"
+const canonical = "https://www.x3dprints.be/en/blog/3d-printen-mini-figuren/"
 
 export const metadata: Metadata = {
   title: "3D printing miniatures for tabletop gaming | X3DPrints Blog",
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-mini-figuren",
+      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-mini-figuren/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/3d-printen-mini-figuren/",
     },
   },
   openGraph: {
@@ -96,6 +97,8 @@ const articleJsonLd = {
   mainEntityOfPage: canonical,
   url: canonical,
   image: "https://www.x3dprints.be/images/og-home.jpg",
+  datePublished: "2025-04-18",
+  dateModified: "2026-02-06",
   inLanguage: "en-BE",
 }
 

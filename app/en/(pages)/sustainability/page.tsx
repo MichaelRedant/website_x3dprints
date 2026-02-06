@@ -14,17 +14,18 @@ export const metadata: Metadata = {
   description:
     "Sustainable 3D printing from Herzele. X3DPrints focuses on smart design, efficient material choices and local delivery for entrepreneurs, schools and associations in East Flanders.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/sustainability",
+    canonical: "https://www.x3dprints.be/en/sustainability/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/sustainability",
-      en: "https://www.x3dprints.be/en/sustainability",
+      "nl-BE": "https://www.x3dprints.be/sustainability/",
+      en: "https://www.x3dprints.be/en/sustainability/",
+      "x-default": "https://www.x3dprints.be/sustainability/",
     },
   },
   openGraph: {
     title: "Sustainable 3D printing at X3DPrints",
     description:
       "Discover how X3DPrints, a local 3D printing studio in Herzele, focuses on efficient production, long lifespan and smart material choices.",
-    url: "https://www.x3dprints.be/en/sustainability",
+    url: "https://www.x3dprints.be/en/sustainability/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "en_BE",
     siteName: "X3DPrints",
@@ -67,8 +68,8 @@ const pillars: Pillar[] = [
       "Every print starts with the model. We review wall thickness, infill and orientation so you need less material and parts last longer. 3D printing becomes a deliberate solution instead of a gimmick.",
     icon: "material",
     links: [
-      { href: "/materials", label: "See materials and guidelines" },
-      { href: "/viewer", label: "Check your 3D model in the viewer" },
+      { href: "/en/materials", label: "See materials and guidelines" },
+      { href: "/en/viewer", label: "Check your 3D model in the viewer" },
     ],
   },
   {
@@ -77,8 +78,8 @@ const pillars: Pillar[] = [
       "X3DPrints is not a mass factory but a compact workspace where small runs and prototypes are carefully planned. Where possible, prints are bundled per material and colour to limit changeovers and purge cycles.",
     icon: "energy",
     links: [
-      { href: "/pricing", label: "How pricing is built" },
-      { href: "/segments/3d-printing-prototypes", label: "More on prototyping" },
+      { href: "/en/pricing", label: "How pricing is built" },
+      { href: "/en/segments/3d-printing-prototypes", label: "More on prototyping" },
     ],
   },
   {
@@ -87,8 +88,8 @@ const pillars: Pillar[] = [
       "Pickup by appointment in Herzele. For Ghent and surrounding towns we combine deliveries with existing routes. Beyond that we use compact parcel services.",
     icon: "loop",
     links: [
-      { href: "/locaties", label: "Delivery and regions" },
-      { href: "/contact", label: "Discuss a project" },
+      { href: "/en/locaties", label: "Delivery and regions" },
+      { href: "/en/contact", label: "Discuss a project" },
     ],
   },
 ]
@@ -164,6 +165,7 @@ const articleJsonLd = {
     logo: { "@type": "ImageObject", url: `${SITE.url}/og-x3dprints.jpg` },
   },
   datePublished: "2024-12-01",
+  dateModified: "2026-02-06",
   mainEntityOfPage: pageUrl,
   inLanguage: "en-BE",
 }
@@ -250,15 +252,15 @@ export default function SustainabilityPage() {
                 Small-batch 3D printing that favours smart design, efficient runs and local delivery. Less waste, more longevity - for SMEs, schools and associations.
               </p>
               <div className="flex flex-wrap gap-3">
-                <ShimmerButton href="/contact">Plan a project</ShimmerButton>
+                <ShimmerButton href="/en/contact">Plan a project</ShimmerButton>
                 <Link
-                  href="/pricing"
+                  href="/en/pricing"
                   className="inline-flex items-center gap-2 rounded-xl border border-emerald-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
                 >
                   Pricing & approach
                 </Link>
                 <Link
-                  href="/blog/3d-printen-in-de-buurt"
+                  href="/en/blog/3d-printen-in-de-buurt"
                   className="inline-flex items-center gap-2 rounded-xl border border-emerald-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
                 >
                   Read: 3D printing nearby
@@ -384,9 +386,9 @@ export default function SustainabilityPage() {
               <li>- Realistic planning: we align when you need the parts and how we can make that workable.</li>
             </ul>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact">Start your project</ShimmerButton>
+              <ShimmerButton href="/en/contact">Start your project</ShimmerButton>
               <Link
-                href="/segments/3d-printing-marketing"
+                href="/en/segments/3d-printing-marketing"
                 className="inline-flex items-center gap-2 text-sm text-emerald-300 hover:text-white"
               >
                 3D printing for marketing & events <span aria-hidden>-&gt;</span>
@@ -407,9 +409,9 @@ export default function SustainabilityPage() {
           We love thinking along about circular cases, education projects or simply a batch of parts that need to last longer. Reach out and we will schedule a call.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <ShimmerButton href="/contact">Schedule a call</ShimmerButton>
+          <ShimmerButton href="/en/contact">Schedule a call</ShimmerButton>
           <Link
-            href="/blog/3d-printen-in-de-buurt"
+            href="/en/blog/3d-printen-in-de-buurt"
             className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm hover:-translate-y-0.5"
           >
             Read: 3D printing nearby

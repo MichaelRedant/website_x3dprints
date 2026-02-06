@@ -15,7 +15,9 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
       <ThemeProvider>
         <ScrollProgress />
         <Header />
-        <main className="flex-1 pt-16 md:pt-[72px]">{children}</main>
+        <main lang="nl-BE" className="flex-1 pt-16 md:pt-[72px]">
+          {children}
+        </main>
         <Footer />
         <CookieBanner />
         <BackToTop />

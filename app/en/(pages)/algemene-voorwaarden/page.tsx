@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 
-const canonical = "https://www.x3dprints.be/en/algemene-voorwaarden"
+const canonical = "https://www.x3dprints.be/en/algemene-voorwaarden/"
 
 export const metadata: Metadata = {
   title: "Terms & Conditions | X3DPrints",
@@ -8,8 +8,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/algemene-voorwaarden",
+      "nl-BE": "https://www.x3dprints.be/algemene-voorwaarden/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/algemene-voorwaarden/",
     },
   },
   openGraph: {

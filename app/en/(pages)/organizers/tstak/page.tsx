@@ -102,6 +102,7 @@ export const metadata: Metadata = {
     languages: {
       "nl-BE": `${SITE.url}/organizers/tstak`,
       en: PAGE_URL,
+      "x-default": `${SITE.url}/organizers/tstak`,
     },
   },
   openGraph: {

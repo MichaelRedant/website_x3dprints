@@ -148,7 +148,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   headline: "FuturePrint Lab: duurzaamheid bij X3DPrints",
   description:
     "Overzicht van de praktische duurzaamheidsprincipes van X3DPrints: slim ontwerp, efficiënte materiaalkeuzes, lokale productie en kleine reeksen op maat.",
@@ -159,6 +159,7 @@ const articleJsonLd = {
     logo: { "@type": "ImageObject", url: `${SITE.url}/og-x3dprints.jpg` },
   },
   datePublished: "2024-12-01",
+  dateModified: "2026-02-06",
   mainEntityOfPage: pageUrl,
 }
 
@@ -166,7 +167,7 @@ const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   mainEntity: faqItems.map((item) => ({
     "@type": "Question",
     name: item.q,

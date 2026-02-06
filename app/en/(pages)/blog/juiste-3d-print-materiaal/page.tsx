@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import { buildArticleJsonLd } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/en/blog/juiste-3d-print-materiaal"
+const canonical = "https://www.x3dprints.be/en/blog/juiste-3d-print-materiaal/"
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=right-material"
 const pricingHref = `/en/pricing${utm}`
 const toolHref = `/en/materials${utm}#material-suggestion-tool`
@@ -21,8 +21,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/juiste-3d-print-materiaal",
+      "nl-BE": "https://www.x3dprints.be/blog/juiste-3d-print-materiaal/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/juiste-3d-print-materiaal/",
     },
   },
   openGraph: {

@@ -12,17 +12,18 @@ export const metadata: Metadata = {
   description:
     "Find 3D models ready for printing: Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults and Thangs. Tips on quality and how to send the link so we can print locally in Belgium.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/3d-modellen-vinden",
+    canonical: "https://www.x3dprints.be/en/3d-modellen-vinden/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/3d-modellen-vinden",
-      en: "https://www.x3dprints.be/en/3d-modellen-vinden",
+      "nl-BE": "https://www.x3dprints.be/3d-modellen-vinden/",
+      en: "https://www.x3dprints.be/en/3d-modellen-vinden/",
+      "x-default": "https://www.x3dprints.be/3d-modellen-vinden/",
     },
   },
   openGraph: {
     title: "Where to find 3D models to print",
     description:
       "Guide to the best platforms to download 3D models: share links, assess quality and get them printed at X3DPrints.",
-    url: "https://www.x3dprints.be/en/3d-modellen-vinden",
+    url: "https://www.x3dprints.be/en/3d-modellen-vinden/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Find 3D models" }],
     locale: "en_BE",
     siteName: "X3DPrints",
@@ -112,9 +113,11 @@ const articleJsonLd = {
   headline: "Where to find 3D models to print",
   description:
     "Overview of the best places to download 3D models (Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults, Thangs) plus quality tips for X3DPrints.",
+  datePublished: "2025-07-22",
+  dateModified: "2026-02-06",
   inLanguage: "en-BE",
   author: { "@type": "Organization", name: "X3DPrints" },
-  mainEntityOfPage: "https://www.x3dprints.be/en/3d-modellen-vinden",
+  mainEntityOfPage: "https://www.x3dprints.be/en/3d-modellen-vinden/",
 }
 
 const process = [
@@ -147,9 +150,9 @@ export default function FindModelsPage() {
                 Choose a model on Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults or Thangs and share the link. We check scale, material and printability and print locally in Belgium.
               </p>
               <div className="flex flex-wrap gap-3">
-                <ShimmerButton href="/contact?quote=Link%20to%203D%20model">Send your link</ShimmerButton>
+                <ShimmerButton href="/en/contact?quote=Link%20to%203D%20model">Send your link</ShimmerButton>
                 <Link
-                  href="/materials#material-suggestion-tool"
+                  href="/en/materials#material-suggestion-tool"
                   className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
                 >
                   Material Suggestion Tool
@@ -225,9 +228,9 @@ export default function FindModelsPage() {
                 ))}
               </ol>
               <div className="mt-4 flex flex-wrap gap-3">
-                <ShimmerButton href="/contact?quote=Link%20to%203D%20model">Share your model</ShimmerButton>
+                <ShimmerButton href="/en/contact?quote=Link%20to%203D%20model">Share your model</ShimmerButton>
                 <Link
-                  href="/pricing"
+                  href="/en/pricing"
                   className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:-translate-y-0.5"
                 >
                   Pricing & lead times

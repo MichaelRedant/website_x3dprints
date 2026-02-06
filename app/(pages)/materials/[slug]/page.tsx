@@ -63,6 +63,7 @@ export async function generateMetadata({ params, locale }: PageProps): Promise<M
       languages: {
         "nl-BE": `https://www.x3dprints.be/materials/${detail.slug}`,
         en: `https://www.x3dprints.be/en/materials/${detail.slug}`,
+        "x-default": `https://www.x3dprints.be/materials/${detail.slug}`,
       },
     },
     openGraph: {

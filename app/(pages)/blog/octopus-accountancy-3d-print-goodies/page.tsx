@@ -14,7 +14,7 @@ const EN_CANONICAL = "https://www.x3dprints.be/en/blog/octopus-accountancy-3d-pr
 const PUBLISHED_DATE = "2025-12-16T08:00:00+01:00"
 
 const OG_IMAGE = {
-  url: "/images/og-home.jpg",
+  url: "/images/portfolio/Octopus25-50.webp",
   width: 1200,
   height: 630,
   alt: "Octopus x X3DPrints case",
@@ -413,6 +413,7 @@ function buildMetadata(meta: MetaInput, canonical: string, locale: "nl_BE" | "en
       languages: {
         "nl-BE": NL_CANONICAL,
         en: EN_CANONICAL,
+        "x-default": NL_CANONICAL,
       },
     },
     openGraph: {
@@ -452,7 +453,7 @@ export default function OctopusCasePage({ locale }: PageProps) {
     "@context": "https://schema.org",
     "@type": "Article",
 
-    inLanguage: ["nl-BE", "en-BE"],
+    inLanguage: isEn ? "en-BE" : "nl-BE",
     headline: copy.meta.jsonLdHeadline,
     description: copy.meta.jsonLdDescription,
     author: { "@type": "Organization", name: "X3DPrints" },
@@ -464,7 +465,7 @@ export default function OctopusCasePage({ locale }: PageProps) {
     mainEntityOfPage: canonical,
     datePublished: PUBLISHED_DATE,
     dateModified: PUBLISHED_DATE,
-    image: ["https://www.x3dprints.be/images/og-home.jpg"],
+    image: [`https://www.x3dprints.be${OG_IMAGE.url}`],
   }
 
   return (

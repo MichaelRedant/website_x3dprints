@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-pc-fr"
+const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-pc-fr/"
 const publishedDate = "2026-01-23T08:00:00+01:00" // Friday, January 2026
 
 export const metadata: Metadata = {
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/filament-vrijdag-pc-fr",
+      "nl-BE": "https://www.x3dprints.be/blog/filament-vrijdag-pc-fr/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/filament-vrijdag-pc-fr/",
     },
   },
   openGraph: {

@@ -4,6 +4,9 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 
+const datePublished = "2026-02-06"
+const dateModified = "2026-02-06"
+
 export const metadata: Metadata = {
   title: "3D modelleren voor print | Fusion 360, Tinkercad, Blender",
   description:
@@ -74,11 +77,13 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   headline: "3D modelleren voor 3D-printen",
   description:
     "Uitleg over hoe X3DPrints 3D-modellen maakt met Autodesk Fusion 360, Tinkercad en Blender voor printbare resultaten.",
   author: { "@type": "Person", name: "X3DPrints" },
+  datePublished,
+  dateModified,
   mainEntityOfPage: "https://www.x3dprints.be/3d-modelleren",
 }
 

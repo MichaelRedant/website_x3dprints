@@ -6,7 +6,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/en/blog/bestanden-voor-3d-printen"
+const canonical = "https://www.x3dprints.be/en/blog/bestanden-voor-3d-printen/"
 
 export const metadata: Metadata = {
   title: "Which files do you need for 3D printing? | X3DPrints Blog",
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/bestanden-voor-3d-printen",
+      "nl-BE": "https://www.x3dprints.be/blog/bestanden-voor-3d-printen/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/bestanden-voor-3d-printen/",
     },
   },
   openGraph: {

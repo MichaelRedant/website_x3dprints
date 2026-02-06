@@ -7,6 +7,10 @@ const TARGET = "/pricing"
 export const metadata: Metadata = {
   title: "Prijzen & calculator | X3DPrints",
   description: "Doorverwijzing naar de actuele prijzen- en calculatorpagina.",
+  robots: {
+    index: false,
+    follow: false,
+  },
   alternates: {
     canonical: `${SITE.url}${TARGET}/`,
     languages: {

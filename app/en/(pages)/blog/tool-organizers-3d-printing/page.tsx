@@ -3,7 +3,7 @@ import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
 
-const canonical = "https://www.x3dprints.be/en/blog/tool-organizers-3d-printing"
+const canonical = "https://www.x3dprints.be/en/blog/tool-organizers-3d-printing/"
 const publishedDate = "2026-01-29T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -13,8 +13,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/tool-organizers-3d-printen",
+      "nl-BE": "https://www.x3dprints.be/blog/tool-organizers-3d-printen/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/tool-organizers-3d-printen/",
     },
   },
   openGraph: {
@@ -132,13 +133,13 @@ export default function ToolOrganizersBlogEn() {
           </p>
           <ul className="list-disc space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-200">
             <li>
-              <Link href="/materials/pla" className="font-semibold underline decoration-indigo-400 hover:decoration-indigo-600">
+              <Link href="/en/materials/pla" className="font-semibold underline decoration-indigo-400 hover:decoration-indigo-600">
                 PLA Matte
               </Link>{" "}
               for modular trays and colour codes.
             </li>
             <li>
-              <Link href="/materials/petg" className="font-semibold underline decoration-indigo-400 hover:decoration-indigo-600">
+              <Link href="/en/materials/petg" className="font-semibold underline decoration-indigo-400 hover:decoration-indigo-600">
                 PETG
               </Link>{" "}
               for Packout/TSTAK or any case that travels upright or in a van.
@@ -211,7 +212,7 @@ export default function ToolOrganizersBlogEn() {
           <p className="text-slate-700 dark:text-slate-200">
             After intake you get a preview and price range. Complex trays or multiple cases are planned in batches. Pricing is on
             request; see{" "}
-            <Link href="/pricing" className="font-semibold underline decoration-indigo-400 hover:decoration-indigo-600">
+            <Link href="/en/pricing" className="font-semibold underline decoration-indigo-400 hover:decoration-indigo-600">
               pricing & calculator
             </Link>{" "}
             for general guidance.
@@ -226,21 +227,21 @@ export default function ToolOrganizersBlogEn() {
           <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Internal links to continue</h3>
           <ul className="grid gap-2 text-sm text-indigo-800 underline decoration-indigo-400 hover:decoration-indigo-600 dark:text-indigo-200">
             <li>
-              <Link href="/organizers">Organizers hub</Link>
+              <Link href="/en/organizers">Organizers hub</Link>
             </li>
             <li>
-              <Link href="/organizers/modugrid">Gridfinity (gridfinity-style)</Link> {" | "}
-              <Link href="/organizers/packout">Packout</Link> {" | "}
-              <Link href="/organizers/tstak">TSTAK</Link> {" | "}
-              <Link href="/organizers/custom">Custom</Link>
+              <Link href="/en/organizers/modugrid">Gridfinity (gridfinity-style)</Link> {" | "}
+              <Link href="/en/organizers/packout">Packout</Link> {" | "}
+              <Link href="/en/organizers/tstak">TSTAK</Link> {" | "}
+              <Link href="/en/organizers/custom">Custom</Link>
             </li>
             <li>
-              <Link href="/viewer">3D Viewer</Link> to send your models
+              <Link href="/en/viewer">3D Viewer</Link> to send your models
             </li>
             <li>
-              <Link href="/materials">Materials</Link> {" | "}
-              <Link href="/pricing">Pricing</Link> {" | "}
-              <Link href="/contact?material=organizers">Plan a layout</Link>
+              <Link href="/en/materials">Materials</Link> {" | "}
+              <Link href="/en/pricing">Pricing</Link> {" | "}
+              <Link href="/en/contact?material=organizers">Plan a layout</Link>
             </li>
           </ul>
         </GlassCard>

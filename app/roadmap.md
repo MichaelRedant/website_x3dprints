@@ -1,34 +1,97 @@
-Grootste kansen zitten in structured data volledigheid, hreflang/canonical hygiene, content-differentiatie per intent en CRO-doorverwijzingen vanuit blog/segments.
-Highest-impact fixes (week 1–2)
+SEO Roadmap - On-page vindbaarheid (excl. locaties)
 
-Voeg telefoon en priceRange in seo.ts + environment NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION; vult LocalBusiness schema + verifieert domein.
-Zet x-default hreflang op kernpagina’s (home, services, materials, portfolio, pricing, blog) via alternates.languages zodat Google de NL/EN variant beter clustert.
-Unieke OG-images per money page (services, materials, portfolio, pricing, organizers) i.p.v. gedeelde og-home.jpg; verhoogt CTR op social/LinkedIn.
-Canonicals controleren op subfolders: sommige EN/NL pagina’s definiëren canonical zonder trailing slash; maak consistent (b.v. https://www.x3dprints.be/en/portfolio/).
-LocalBusiness JSON-LD in layout.tsx: voeg openingHoursSpecification en hasOfferCatalog (services) toe; nu ontbreekt contact/price cues.
-Sitemap-prio: verlaag legal pages naar 0.2–0.3 en verhoog /services, /materials, /portfolio, /organizers naar 0.9; dit stuurt crawl-budget.
-Content & intent
+Doel:
+Maximale indexeerbaarheid, duidelijke taalclustering (NL/EN), sterkere rich results en hogere CTR.
 
-Materials hub/detail: voeg mini use-cases + interlinks naar relevante blogposts per materiaal (PLA→beginners, PETG→buitengebruik, TPU→use-cases-tpu). Dit vangt mid-funnel zoekintenties “materiaal + toepassing”.
-Services/segments: zorg dat elke segmentpagina 1) linkt naar 2–3 case/budget voorbeelden, 2) bevat FAQ met pricing signalen (“vanaf €X per stuk bij Y stuks”), 3) heeft CTA naar /contact?material=<slug> én /materials#material-suggestion-tool (consistent met runbook).
-Blog → money pages: voeg bovenaan en na de eerste H2 een contextuele CTA (materials, pricing, organizers) met UTM tags; huidige posts converteren pas onderaan.
-Duplicate angle NL/EN: check dat EN posts unieke intro & examples hebben; vermijd vertaalde kopieën zonder nieuwe waarde om thin content te voorkomen.
-Technical / CWV
+Statusmodel:
+- P0 = eerst uitvoeren (hoogste impact op vindbaarheid)
+- P1 = daarna uitvoeren (sterke verbetering)
+- P2 = optimalisatie (nice-to-have, maar waardevol)
 
-Check LCP op hero’s: prioriteer hero image per page via priority en zet sizes="(min-width:1024px) 50vw, 100vw" om CLS/LCP te borgen.
-Defer zware widgets (MaterialSuggestionTool, Viewer) met dynamic import + loading="lazy" op iframe/video previews (VideoGallery).
-Robots: voeg Disallow: /api en Crawl-delay niet nodig; maar voeg Host al aanwezig, ok.
-Structured data
+P0 - Foundation fixes
 
-Add mainEntityOfPage + dateModified aan blog Article JSON-LD; koppel author en publisher (SITE).
-Portfolio: per case in /app/(pages)/cases/... een ImageObject + Service schema; nu alleen hero OG.
-Materials: voeg HowTo schema rond MaterialSuggestionTool (input→advice→CTA) en FAQ per detailpagina (min. 3 Q/A) conform runbook 8.2/8.3.
-Breadcrumb JSON-LD is enkel NL; dupliceer voor EN en koppel @id aan itemListElement.
-Internal linking
+1) Taal-signalen corrigeren
+- Maak html lang en content-language correct per locale (NL vs EN).
+- Voorkom dat EN-pagina's met NL taal-signalen renderen.
 
-Footers/headers bevatten basics; voeg “Verder lezen” blokjes op /services, /materials en /portfolio naar blog topics + segments (zonder locaties).
-Gebruik next/link anchor #material-suggestion-tool vanuit services, viewer en blog evergreen posts.
-Measurement
+2) Hreflang + canonical hygiene finaliseren
+- Voeg x-default toe waar languages al bestaat maar x-default ontbreekt.
+- Maak canonicals consistent met trailing slash waar de sitemap ook slash gebruikt.
+- Vermijd mixed canonical formats binnen dezelfde routegroep.
 
-GA ID fallback G-QPQ7LDMSRV is hardcoded; vervang door echte property en stel cookie_domain: 'auto'. Voeg event-tracking voor CTA’s (quote, contact, tool) zodat we ROAS/lead attribution kunnen meten.
-Zet Search Console (site-verificatie), Bing Webmaster en schema validator checks in CI (lichtgewicht npm script).
+3) EN interne links zonder NL-leaks
+- Corrigeer EN pagina-links die nog naar NL paden verwijzen.
+- Focus eerst op money pages en viewer/blog CTA links.
+
+4) Index hygiene
+- Zet noindex,nofollow op utility pages:
+  - /crm
+  - /prijzen
+  - /en/prijzen
+- Houd pricing als enige indexeerbare prijspagina.
+
+5) Security + SEO trust
+
+- Verplaats naar server-side controle of env-only flow.
+
+P1 - Structured data completion
+
+1) Article JSON-LD afronden
+- Vul ontbrekende datePublished/dateModified op posts met handmatige articleJsonLd.
+- Behoud mainEntityOfPage, author en publisher consistent.
+
+1) Locale-correct schema
+- Zorg dat inLanguage aansluit op paginalocale (nl-BE of en-BE).
+- Vermijd generieke meertalige default op single-locale pagina's waar mogelijk.
+
+1) Breadcrumb schema aanscherpen
+- Voeg stabiele @id's toe aan breadcrumb entities.
+- Houd NL en EN breadcrumb structuur parallel.
+
+P1 - CTR/snippet verbetering
+
+9) OG-image deduplicatie
+- Verminder hergebruik van og-home.jpg op money pages + top blogposts.
+- Gebruik page-specifieke OG assets met duidelijke context.
+
+P2 - Content en linking optimalisatie
+
+10) NL/EN content differentiatie
+- Versterk unieke intro's, voorbeelden en use-cases op EN varianten.
+- Vermijd vertaalde near-duplicates op belangrijke posts.
+
+11) Interne linkblokken verfijnen
+- Behoud en verbeter "Verder lezen" / equivalent op money pages.
+- Stuur intern verkeer gericht naar materials, pricing, services, contact.
+
+P2 - Meetbaarheid en governance
+
+12) Measurement hardening
+- Behoud GA via NEXT_PUBLIC_GA_ID en cookie_domain auto.
+- Breid CTA-event tracking uit op key conversion paden.
+
+13) CI checks (lichtgewicht)
+- Voeg scripts toe voor:
+  - schema validatie smoke checks
+  - metadata/hreflang regressie checks
+  - basis linkintegriteit checks
+
+Uitvoervolgorde (implementatie)
+
+Sprint 1:
+- P0.1 t/m P0.4
+
+Sprint 2:
+- P0.5 + P1.6 + P1.7
+
+Sprint 3:
+- P1.8 + P1.9 + P2.10
+
+Sprint 4:
+- P2.11 + P2.12 + P2.13
+
+Definition of done per item
+- Build blijft groen.
+- Geen regressie in metadata/alternates.
+- Interne links correct per locale.
+- JSON-LD valide in page source.

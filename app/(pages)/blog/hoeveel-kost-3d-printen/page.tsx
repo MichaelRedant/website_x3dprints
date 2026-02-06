@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hoeveel kost 3D printen?",
     description: "Strategische gids om de kostprijs van 3D prints in te schatten, inclusief voorbeeldberekening.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/portfolio/2d-6-1-1.webp"],
   },
 }
 

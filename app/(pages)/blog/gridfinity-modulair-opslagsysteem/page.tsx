@@ -55,6 +55,7 @@ export const metadata: Metadata = {
     languages: {
       "nl-BE": canonical,
       en: "https://www.x3dprints.be/en/blog/gridfinity-modular-storage-system",
+      "x-default": canonical,
     },
   },
   openGraph: {

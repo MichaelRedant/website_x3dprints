@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     languages: {
       "nl-BE": canonical,
       en: enCanonical,
+      "x-default": canonical,
     },
   },
   openGraph: {
@@ -168,7 +169,7 @@ const articleJsonLd = {
   mainEntityOfPage: canonical,
   url: canonical,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
 }
 
 const imageObjectJsonLd = {

@@ -211,6 +211,41 @@ export function buildArticleJsonLd({
   }
 }
 
+type BreadcrumbSchemaItem = {
+  name: string
+  url: string
+}
+
+type BreadcrumbSchemaInput = {
+  id: string
+  inLanguage: string
+  items: BreadcrumbSchemaItem[]
+}
+
+export function buildBreadcrumbSchema({ id, inLanguage, items }: BreadcrumbSchemaInput) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": id,
+    inLanguage,
+    itemListElement: items.map((item, index) => {
+      const position = index + 1
+      return {
+        "@type": "ListItem",
+        "@id": `${id}#item-${position}`,
+        position,
+        name: item.name,
+        item: {
+          "@type": "WebPage",
+          "@id": item.url,
+          url: item.url,
+          name: item.name,
+        },
+      }
+    }),
+  }
+}
+
 /**
  * Try to pull a good one-liner from the first markdown paragraph.
  * Falls back to city meta if too short.

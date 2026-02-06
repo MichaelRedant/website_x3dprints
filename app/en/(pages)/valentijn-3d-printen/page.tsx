@@ -10,17 +10,18 @@ export const metadata: Metadata = {
   description:
     "Heart decor, nameplates and personalised gifts in Silk, Matte and Translucent PLA. Design file not included; send STL/STEP or choose our design service.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/valentijn-3d-printen",
+    canonical: "https://www.x3dprints.be/en/valentijn-3d-printen/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/valentijn-3d-printen",
-      en: "https://www.x3dprints.be/en/valentijn-3d-printen",
+      "nl-BE": "https://www.x3dprints.be/valentijn-3d-printen/",
+      en: "https://www.x3dprints.be/en/valentijn-3d-printen/",
+      "x-default": "https://www.x3dprints.be/valentijn-3d-printen/",
     },
   },
   openGraph: {
     title: "Valentine 3D prints on demand",
     description:
       "Valentine gifts with gloss or glow. Silk/Matte/Translucent PLA, LED cut-outs and delivery options in Flanders.",
-    url: "https://www.x3dprints.be/en/valentijn-3d-printen",
+    url: "https://www.x3dprints.be/en/valentijn-3d-printen/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "en_BE",
     siteName: "X3DPrints",
@@ -86,21 +87,21 @@ export default function ValentinesLandingPage() {
             Heart decor, nameplates and personalised gifts in Silk, Matte and Translucent PLA. Design not included; send STL/STEP or choose design service at EUR 45/hour. Delivery via EV zones or parcel service.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <ShimmerButton href="/contact?material=pla-silk-plus">Plan your Valentine print</ShimmerButton>
+            <ShimmerButton href="/en/contact?material=pla-silk-plus">Plan your Valentine print</ShimmerButton>
             <Link
-              href="/segments/3d-printing-valentijn"
+              href="/en/segments/3d-printing-valentijn"
               className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
             >
               To Valentine segment
             </Link>
             <Link
-              href="/materials#material-suggestion-tool"
+              href="/en/materials#material-suggestion-tool"
               className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
             >
               Material Suggestion Tool
             </Link>
             <Link
-              href="/blog/3d-printen-valentijn"
+              href="/en/blog/3d-printen-valentijn"
               className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
             >
               Read the blog
@@ -147,13 +148,13 @@ export default function ValentinesLandingPage() {
             </ol>
             <div className="mt-4 flex flex-wrap gap-3 text-sm">
               <Link
-                href="/pricing"
+                href="/en/pricing"
                 className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Pricing & delivery zones
               </Link>
               <Link
-                href="/segments/3d-printing-seasonal"
+                href="/en/segments/3d-printing-seasonal"
                 className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
               >
                 To seasonal segment
@@ -174,19 +175,19 @@ export default function ValentinesLandingPage() {
                 </p>
                 <div className="mt-4 grid gap-3 text-sm">
                   <Link
-                    href="/portfolio"
+                    href="/en/portfolio"
                     className="inline-flex items-center gap-2 text-rose-700 underline underline-offset-4 hover:text-rose-600"
                   >
                     Portfolio (Valentine & decor) <span aria-hidden>-&gt;</span>
                   </Link>
                   <Link
-                    href="/materials/pla-silk-plus"
+                    href="/en/materials/pla-silk-plus"
                     className="inline-flex items-center gap-2 text-rose-700 underline underline-offset-4 hover:text-rose-600"
                   >
                     PLA Silk+ material page <span aria-hidden>-&gt;</span>
                   </Link>
                   <Link
-                    href="/materials/pla-translucent"
+                    href="/en/materials/pla-translucent"
                     className="inline-flex items-center gap-2 text-rose-700 underline underline-offset-4 hover:text-rose-600"
                   >
                     PLA Translucent material page <span aria-hidden>-&gt;</span>
@@ -228,9 +229,9 @@ export default function ValentinesLandingPage() {
                 Send your STL/STEP, preferred finish and deadline. We share options in Silk, Marble, Matte or Translucent PLA with realistic delivery.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <ShimmerButton href="/contact?material=pla-silk-plus">Request a quote</ShimmerButton>
+                <ShimmerButton href="/en/contact?material=pla-silk-plus">Request a quote</ShimmerButton>
                 <Link
-                  href="/blog/3d-printen-valentijn"
+                  href="/en/blog/3d-printen-valentijn"
                   className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:-translate-y-0.5 hover:bg-white"
                 >
                   Read Valentine ideas

@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/maker-monday-schroefdraad-inserts"
+const canonical = "https://www.x3dprints.be/en/blog/maker-monday-schroefdraad-inserts/"
 const publishedDate = "2025-12-08T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/maker-monday-schroefdraad-inserts",
+      "nl-BE": "https://www.x3dprints.be/blog/maker-monday-schroefdraad-inserts/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/maker-monday-schroefdraad-inserts/",
     },
   },
   openGraph: {

@@ -8,13 +8,22 @@ import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
 
 const canonical = "https://www.x3dprints.be/blog/relatiegeschenken-3d-printen"
+const enCanonical = "https://www.x3dprints.be/en/blog/relatiegeschenken-3d-printen/"
 const publishedDate = "2025-08-20T08:00:00+01:00"
+const dateModified = "2026-02-06T08:00:00+01:00"
 
 export const metadata: Metadata = {
   title: "Relatiegeschenken 3D printen voor B2B | X3DPrints Blog",
   description:
     "Relatiegeschenken, bedankjes en team gifts op maat: sleutelhangers, desk organizers en awards in Silk/Matte/PETG. Korte lijnen, ontwerpservice mogelijk.",
-  alternates: { canonical },
+  alternates: {
+    canonical,
+    languages: {
+      "nl-BE": canonical,
+      en: enCanonical,
+      "x-default": canonical,
+    },
+  },
   openGraph: {
     title: "Relatiegeschenken 3D printen | B2B gifts",
     description:
@@ -87,7 +96,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   headline: "Relatiegeschenken 3D printen voor B2B",
   description: metadata.description,
   author: { "@type": "Organization", name: "X3DPrints" },
@@ -97,6 +106,7 @@ const articleJsonLd = {
     logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/images/og-home.jpg" },
   },
   datePublished: publishedDate,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
   mainEntityOfPage: canonical,
   keywords: [

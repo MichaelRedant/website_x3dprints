@@ -9,17 +9,18 @@ export const metadata: Metadata = {
   description:
     "Print-ready 3D modeling. Fusion 360 for precise parts, Tinkercad for quick concepts and Blender for the occasional organic shape.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/3d-modelleren",
+    canonical: "https://www.x3dprints.be/en/3d-modelleren/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/3d-modelleren",
-      en: "https://www.x3dprints.be/en/3d-modelleren",
+      "nl-BE": "https://www.x3dprints.be/3d-modelleren/",
+      en: "https://www.x3dprints.be/en/3d-modelleren/",
+      "x-default": "https://www.x3dprints.be/3d-modelleren/",
     },
   },
   openGraph: {
     title: "3D modeling for 3D prints | X3DPrints",
     description:
       "Designs that print well: Fusion 360 for precision, Tinkercad for fast iterations and occasionally Blender for organic forms.",
-    url: "https://www.x3dprints.be/en/3d-modelleren",
+    url: "https://www.x3dprints.be/en/3d-modelleren/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "en_BE",
     siteName: "X3DPrints",
@@ -84,8 +85,10 @@ export default function Page() {
     description:
       "How X3DPrints creates 3D models with Autodesk Fusion 360, Tinkercad and Blender for print-ready results.",
     author: { "@type": "Person", name: "X3DPrints" },
-    inLanguage: "en-BE",
-    mainEntityOfPage: "https://www.x3dprints.be/en/3d-modelleren",
+    datePublished: "2025-07-10",
+  dateModified: "2026-02-06",
+  inLanguage: "en-BE",
+    mainEntityOfPage: "https://www.x3dprints.be/en/3d-modelleren/",
   }
 
   return (
@@ -107,15 +110,15 @@ export default function Page() {
               I create 3D models that are immediately ready for FDM printing. Fusion 360 for technical accuracy, Tinkercad for quick concepts and Blender only when organic shapes are needed. Your file stays printable without surprises in the slicer.
             </p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href="/contact">Plan a 3D model</ShimmerButton>
+              <ShimmerButton href="/en/contact">Plan a 3D model</ShimmerButton>
               <Link
-                href="/portfolio"
+                href="/en/portfolio"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/20 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:bg-white/40"
               >
                 View portfolio
               </Link>
               <Link
-                href="/materials#material-suggestion-tool"
+                href="/en/materials#material-suggestion-tool"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/20 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:bg-white/40"
               >
                 Material Suggestion Tool
@@ -183,9 +186,9 @@ export default function Page() {
                 </GlassCard>
               ))}
               <div className="flex flex-wrap gap-3">
-                <ShimmerButton href="/contact">Request a model</ShimmerButton>
+                <ShimmerButton href="/en/contact">Request a model</ShimmerButton>
                 <Link
-                  href="/segments"
+                  href="/en/segments"
                   className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/60 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-white"
                 >
                   View segments

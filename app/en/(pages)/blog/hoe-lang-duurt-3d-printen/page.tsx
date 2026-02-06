@@ -6,7 +6,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/en/blog/hoe-lang-duurt-3d-printen"
+const canonical = "https://www.x3dprints.be/en/blog/hoe-lang-duurt-3d-printen/"
 const datePublished = "2024-09-15"
 const dateModified = "2026-02-04"
 
@@ -17,8 +17,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/hoe-lang-duurt-3d-printen",
+      "nl-BE": "https://www.x3dprints.be/blog/hoe-lang-duurt-3d-printen/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/hoe-lang-duurt-3d-printen/",
     },
   },
   openGraph: {

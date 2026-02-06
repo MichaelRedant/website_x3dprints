@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     authors: ["https://www.x3dprints.be"],
     tags: ["juiste materiaal voor 3D print", "3D print materiaal kiezen", "how-to"],
     images: [
-      { url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Overzicht van 3D print materialen door X3DPrints" },
+      { url: "/images/filament/pla_matte_Car_PC.webp", width: 1200, height: 630, alt: "Overzicht van 3D print materialen door X3DPrints" },
     ],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How-to: kies het juiste 3D print materiaal",
     description: "Van PLA Matte tot PETG en TPU: zo bepaal je het beste materiaal voor jouw 3D print opdracht.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/filament/pla_matte_Car_PC.webp"],
   },
 }
 
@@ -151,7 +151,7 @@ const articleJsonLd = {
   },
   mainEntityOfPage: canonical,
   url: canonical,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/filament/pla_matte_Car_PC.webp",
 }
 
 export default function RightMaterialGuidePage() {

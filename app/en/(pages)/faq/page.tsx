@@ -13,17 +13,18 @@ export const metadata: Metadata = {
   title: "3D printing FAQ | X3DPrints",
   description: "FAQ on 3D printing, lead times, materials (PLA, PETG, TPU), finishing and workflow. With local info for Herzele, Ghent, Antwerp and East Flanders.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/faq",
+    canonical: "https://www.x3dprints.be/en/faq/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/faq",
-      en: "https://www.x3dprints.be/en/faq",
+      "nl-BE": "https://www.x3dprints.be/faq/",
+      en: "https://www.x3dprints.be/en/faq/",
+      "x-default": "https://www.x3dprints.be/faq/",
     },
   },
   robots: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large" },
   openGraph: {
     title: "3D printing FAQ | X3DPrints",
     description: "All about 3D printing: materials, lead times, pricing, finishing and workflow.",
-    url: "https://www.x3dprints.be/en/faq",
+    url: "https://www.x3dprints.be/en/faq/",
     siteName: "X3DPrints",
     type: "website",
     locale: "en_BE",

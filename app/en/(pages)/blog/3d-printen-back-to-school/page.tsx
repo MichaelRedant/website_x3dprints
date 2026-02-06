@@ -7,7 +7,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/3d-printen-back-to-school"
+const canonical = "https://www.x3dprints.be/en/blog/3d-printen-back-to-school/"
 
 export const metadata: Metadata = {
   title: "Back to School: 3D printing for school | X3DPrints Blog",
@@ -16,8 +16,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-back-to-school",
+      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-back-to-school/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/3d-printen-back-to-school/",
     },
   },
   openGraph: {

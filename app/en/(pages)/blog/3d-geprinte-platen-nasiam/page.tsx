@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/3d-geprinte-platen-nasiam"
+const canonical = "https://www.x3dprints.be/en/blog/3d-geprinte-platen-nasiam/"
 const publishedDate = "2025-11-04T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/3d-geprinte-platen-nasiam",
+      "nl-BE": "https://www.x3dprints.be/blog/3d-geprinte-platen-nasiam/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/3d-geprinte-platen-nasiam/",
     },
   },
   openGraph: {

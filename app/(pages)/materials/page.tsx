@@ -32,11 +32,17 @@ export const metadata: Metadata = {
     description:
       "Materialen voor 3D printen: PLA-varianten, PETG en TPU met kleuren, specs en voorraadstatus.",
     url: "https://www.x3dprints.be/materials/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints" }],
+    images: [{ url: "/images/filament/petg_1.webp", width: 1200, height: 630, alt: "Materialen voor 3D printen bij X3DPrints" }],
     siteName: "X3DPrints",
     locale: "nl_BE",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "Materialen voor 3D printen | X3DPrints",
+    description:
+      "Materialen voor 3D printen: PLA-varianten, PETG en TPU met kleuren, specs en voorraadstatus.",
+    images: ["/images/filament/petg_1.webp"],
+  },
 }
 
 type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }

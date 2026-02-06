@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     languages: {
       "nl-BE": PAGE.seo.canonical,
       en: `${SITE.url}/en/organizers/${PAGE.slug}`,
+      "x-default": PAGE.seo.canonical,
     },
   },
   openGraph: {

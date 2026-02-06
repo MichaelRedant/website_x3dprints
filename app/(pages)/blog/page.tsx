@@ -2455,10 +2455,12 @@ export default function BlogPage({ locale }: PageProps) {
       item: {
         "@type": "Article",
 
-        inLanguage: ["nl-BE", "en-BE"],
+        inLanguage: copy.schema.language,
         headline: topic.title,
         description: topic.summary,
         url: toAbsolute(`/blog/${topic.id}`),
+        datePublished: topic.date,
+        dateModified: topic.date,
       },
     })),
   }
@@ -2474,6 +2476,8 @@ export default function BlogPage({ locale }: PageProps) {
       headline: topic.title,
       description: topic.summary,
       url: toAbsolute(`/blog/${topic.id}`),
+      datePublished: topic.date,
+      dateModified: topic.date,
     })),
   }
 

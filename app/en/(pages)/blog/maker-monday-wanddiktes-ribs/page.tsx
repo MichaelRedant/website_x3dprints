@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/maker-monday-wanddiktes-ribs"
+const canonical = "https://www.x3dprints.be/en/blog/maker-monday-wanddiktes-ribs/"
 const publishedDate = "2025-11-10T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/maker-monday-wanddiktes-ribs",
+      "nl-BE": "https://www.x3dprints.be/blog/maker-monday-wanddiktes-ribs/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/maker-monday-wanddiktes-ribs/",
     },
   },
   openGraph: {

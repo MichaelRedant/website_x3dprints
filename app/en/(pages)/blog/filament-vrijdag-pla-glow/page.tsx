@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-pla-glow"
+const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-pla-glow/"
 const publishedDate = "2025-10-17T08:00:00+02:00"
 
 export const metadata: Metadata = {
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/filament-vrijdag-pla-glow",
+      "nl-BE": "https://www.x3dprints.be/blog/filament-vrijdag-pla-glow/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/filament-vrijdag-pla-glow/",
     },
   },
   openGraph: {

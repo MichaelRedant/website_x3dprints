@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-tpu"
+const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-tpu/"
 const publishedDate = "2025-09-19T08:00:00+02:00"
 
 export const metadata: Metadata = {
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/filament-vrijdag-tpu",
+      "nl-BE": "https://www.x3dprints.be/blog/filament-vrijdag-tpu/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/filament-vrijdag-tpu/",
     },
   },
   openGraph: {

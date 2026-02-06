@@ -1,6 +1,6 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { SITE, buildOfferCatalog, type SchemaOfferInput } from "@/lib/seo"
+import { SITE, buildBreadcrumbSchema, buildOfferCatalog, type SchemaOfferInput } from "@/lib/seo"
 import { Orbitron, JetBrains_Mono } from "next/font/google"
 import { cn } from "@/lib/utils"
 
@@ -145,44 +145,39 @@ function buildSchema() {
   }
 }
 
-const breadcrumbNl = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
+const breadcrumbNl = buildBreadcrumbSchema({
+  id: `${SITE.url}/#breadcrumb-nl`,
   inLanguage: "nl-BE",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE.url}/` },
-    { "@type": "ListItem", position: 2, name: "Services", item: `${SITE.url}/services/` },
-    { "@type": "ListItem", position: 3, name: "Materialen", item: `${SITE.url}/materials/` },
-    { "@type": "ListItem", position: 4, name: "Portfolio", item: `${SITE.url}/portfolio/` },
-    { "@type": "ListItem", position: 5, name: "Pricing", item: `${SITE.url}/pricing/` },
-    { "@type": "ListItem", position: 6, name: "Contact", item: `${SITE.url}/contact/` },
-    { "@type": "ListItem", position: 7, name: "Blog", item: `${SITE.url}/blog/` },
+  items: [
+    { name: "Home", url: `${SITE.url}/` },
+    { name: "Services", url: `${SITE.url}/services/` },
+    { name: "Materialen", url: `${SITE.url}/materials/` },
+    { name: "Portfolio", url: `${SITE.url}/portfolio/` },
+    { name: "Pricing", url: `${SITE.url}/pricing/` },
+    { name: "Contact", url: `${SITE.url}/contact/` },
+    { name: "Blog", url: `${SITE.url}/blog/` },
   ],
-}
+})
 
-const breadcrumbEn = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
+const breadcrumbEn = buildBreadcrumbSchema({
+  id: `${SITE.url}/en/#breadcrumb-en`,
   inLanguage: "en-BE",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE.url}/en/` },
-    { "@type": "ListItem", position: 2, name: "Services", item: `${SITE.url}/en/services/` },
-    { "@type": "ListItem", position: 3, name: "Materials", item: `${SITE.url}/en/materials/` },
-    { "@type": "ListItem", position: 4, name: "Portfolio", item: `${SITE.url}/en/portfolio/` },
-    { "@type": "ListItem", position: 5, name: "Pricing", item: `${SITE.url}/en/pricing/` },
-    { "@type": "ListItem", position: 6, name: "Contact", item: `${SITE.url}/en/contact/` },
-    { "@type": "ListItem", position: 7, name: "Blog", item: `${SITE.url}/en/blog/` },
+  items: [
+    { name: "Home", url: `${SITE.url}/en/` },
+    { name: "Services", url: `${SITE.url}/en/services/` },
+    { name: "Materials", url: `${SITE.url}/en/materials/` },
+    { name: "Portfolio", url: `${SITE.url}/en/portfolio/` },
+    { name: "Pricing", url: `${SITE.url}/en/pricing/` },
+    { name: "Contact", url: `${SITE.url}/en/contact/` },
+    { name: "Blog", url: `${SITE.url}/en/blog/` },
   ],
-}
+})
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const schema = buildSchema()
 
   return (
     <html lang="nl" data-theme="light" suppressHydrationWarning>
-      <head>
-        <meta httpEquiv="content-language" content="nl-BE" />
-      </head>
       <body className={cn("min-h-screen flex flex-col antialiased", orbitron.variable, mono.variable)}>
         {children}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

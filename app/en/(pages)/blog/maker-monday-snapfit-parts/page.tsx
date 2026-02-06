@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/maker-monday-snapfit-parts"
+const canonical = "https://www.x3dprints.be/en/blog/maker-monday-snapfit-parts/"
 const publishedDate = "2025-12-01T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/maker-monday-snapfit-parts",
+      "nl-BE": "https://www.x3dprints.be/blog/maker-monday-snapfit-parts/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/maker-monday-snapfit-parts/",
     },
   },
   openGraph: {

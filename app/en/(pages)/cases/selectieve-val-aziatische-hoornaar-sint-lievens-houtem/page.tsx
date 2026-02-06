@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     languages: {
       "nl-BE": nlCanonical,
       en: canonical,
+      "x-default": nlCanonical,
     },
   },
   openGraph: {
@@ -159,7 +160,7 @@ const articleJsonLd = {
   mainEntityOfPage: canonical,
   url: canonical,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "en-BE",
 }
 
 function SectionDivider() {

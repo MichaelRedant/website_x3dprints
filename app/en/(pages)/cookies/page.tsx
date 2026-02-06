@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 
-const canonical = "https://www.x3dprints.be/en/cookies"
+const canonical = "https://www.x3dprints.be/en/cookies/"
 
 export const metadata: Metadata = {
   title: "Cookie Policy | X3DPrints",
@@ -8,8 +8,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/cookies",
+      "nl-BE": "https://www.x3dprints.be/cookies/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/cookies/",
     },
   },
   openGraph: {

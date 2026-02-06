@@ -12,17 +12,18 @@ export const metadata: Metadata = {
   description:
     "Gridfinity organizers, Packout inserts, TSTAK inserts and fully custom toolbox layouts from Belgium. No STL hassle—fixed, labelable, anti-slip layouts for vans and workbenches.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/organizers",
+    canonical: "https://www.x3dprints.be/en/organizers/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/organizers",
-      en: "https://www.x3dprints.be/en/organizers",
+      "nl-BE": "https://www.x3dprints.be/organizers/",
+      en: "https://www.x3dprints.be/en/organizers/",
+      "x-default": "https://www.x3dprints.be/organizers/",
     },
   },
   openGraph: {
     title: "Tool organizers made to fit | X3DPrints",
     description:
       "Choose your system: Gridfinity, Packout, TSTAK or custom inserts. Quiet, labelable layouts that stay put in vans and workshops.",
-    url: "https://www.x3dprints.be/en/organizers",
+    url: "https://www.x3dprints.be/en/organizers/",
     images: [
       { url: `${SITE.url}/images/organizers/modugrid/ModuGrid2.jpg`, width: 1200, height: 630, alt: "Tool organizers, made to fit" },
     ],
@@ -204,7 +205,7 @@ export default function OrganizersHubPageEn() {
                         {ctaLabel}
                       </Link>
                       <Link
-                        href="/materials#material-suggestion-tool"
+                        href="/en/materials#material-suggestion-tool"
                         className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/40 px-4 py-2 text-sm font-semibold text-indigo-800 transition hover:-translate-y-0.5 hover:bg-white"
                       >
                         Ask material advice
@@ -237,7 +238,7 @@ export default function OrganizersHubPageEn() {
                   "@type": "ListItem",
                   position: i + 1,
                   name: ORGANIZER_PAGES[slug].systemName,
-                  url: `${SITE.url}/organizers${slug === "modugrid" ? "/modugrid" : ""}`,
+                  url: `${SITE.url}/en/organizers/${slug}/`,
                 })),
               },
               {

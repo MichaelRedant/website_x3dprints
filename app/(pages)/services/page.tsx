@@ -42,11 +42,17 @@ const NL_METADATA: Metadata = {
     description:
       "Kleine oplages, snelle opvolging en realistisch advies over materiaal en ontwerp. Bijberoep vanuit Herzele/Gent.",
     url: "https://www.x3dprints.be/services/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints" }],
+    images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "3D print service in Herzele" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "3D print service Herzele",
+    description:
+      "Kleine oplages, snelle opvolging en realistisch advies over materiaal en ontwerp. Bijberoep vanuit Herzele/Gent.",
+    images: ["/images/portfolio/20241030_080710-1.jpg"],
+  },
 }
 
 export const EN_METADATA: Metadata = {
@@ -66,11 +72,17 @@ export const EN_METADATA: Metadata = {
     description:
       "Small batches, fast follow-up and pragmatic advice on material and design. Part-time studio in Herzele/Ghent.",
     url: "https://www.x3dprints.be/en/services/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints" }],
+    images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "3D printing service in Belgium" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "3D print service in Belgium",
+    description:
+      "Small batches, fast follow-up and pragmatic advice on material and design. Part-time studio in Herzele/Ghent.",
+    images: ["/images/portfolio/20241030_080710-1.jpg"],
+  },
 }
 
 export const metadata: Metadata = NL_METADATA

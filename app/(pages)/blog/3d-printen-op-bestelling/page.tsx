@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description:
       "Leer hoe je een 3D print bestelling start, welke info we nodig hebben en hoe we communiceren over planning, updates en levering.",
   url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printen op bestelling" }],
+    images: [{ url: "/images/portfolio/20230916_085011.webp", width: 1200, height: 630, alt: "3D printen op bestelling" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "3D printen op bestelling",
     description:
       "Stap-voor-stap gids voor het bestellen van 3D prints bij X3DPrints, inclusief prijsinschatting, voorbeelden en follow-up.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/portfolio/20230916_085011.webp"],
   },
 }
 

@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     languages: {
       "nl-BE": canonical,
       en: "https://www.x3dprints.be/en/blog/tool-organizers-3d-printing",
+      "x-default": canonical,
     },
   },
   openGraph: {

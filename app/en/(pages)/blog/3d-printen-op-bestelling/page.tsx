@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/3d-printen-op-bestelling"
+const canonical = "https://www.x3dprints.be/en/blog/3d-printen-op-bestelling/"
 
 export const metadata: Metadata = {
   title: "3D printing on demand | X3DPrints",
@@ -14,8 +14,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-op-bestelling",
+      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-op-bestelling/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/3d-printen-op-bestelling/",
     },
   },
   openGraph: {
@@ -74,6 +75,8 @@ const articleJsonLd = {
   },
   mainEntityOfPage: canonical,
   url: canonical,
+  datePublished: "2025-03-27",
+  dateModified: "2026-02-06",
   inLanguage: "en-BE",
 }
 

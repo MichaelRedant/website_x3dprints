@@ -68,6 +68,7 @@ export const metadata: Metadata = {
     languages: {
       "nl-BE": `${SITE.url}/organizers/${PAGE.slug}`,
       en: PAGE_URL,
+      "x-default": `${SITE.url}/organizers/${PAGE.slug}`,
     },
   },
   openGraph: {

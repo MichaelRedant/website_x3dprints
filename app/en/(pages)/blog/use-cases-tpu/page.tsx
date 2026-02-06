@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/use-cases-tpu"
+const canonical = "https://www.x3dprints.be/en/blog/use-cases-tpu/"
 const publishedDate = "2025-10-03T08:00:00+02:00"
 
 export const metadata: Metadata = {
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/use-cases-tpu",
+      "nl-BE": "https://www.x3dprints.be/blog/use-cases-tpu/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/use-cases-tpu/",
     },
   },
   openGraph: {

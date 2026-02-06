@@ -44,6 +44,7 @@ export const EN_METADATA: Metadata = {
     languages: {
       "nl-BE": "https://www.x3dprints.be/about",
       en: "https://www.x3dprints.be/en/about",
+      "x-default": "https://www.x3dprints.be/about",
     },
   },
   openGraph: {

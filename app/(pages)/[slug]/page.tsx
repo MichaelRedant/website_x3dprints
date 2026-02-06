@@ -29,6 +29,7 @@ import {
 } from "@/lib/locations"
 import { keywordSvgDataUri } from "@/lib/svg"
 import {
+  buildBreadcrumbSchema,
   buildCityMetaDescription,
   clampToWords,
   makeDescriptionFromMarkdown,
@@ -177,6 +178,7 @@ export async function generateMetadata(
             languages: {
               "nl-BE": url,
               en: enUrl,
+              "x-default": url,
             },
           }
         : {}),
@@ -354,16 +356,15 @@ export default async function Page(
     mainEntity: faqItems.map((i) => ({ "@type": "Question", name: i.q, acceptedAnswer: { "@type": "Answer", text: i.aText } })),
   }
 
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
+  const breadcrumbJsonLd = buildBreadcrumbSchema({
+    id: `https://www.x3dprints.be/${loc.slug}#breadcrumb`,
     inLanguage: "nl-BE",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.x3dprints.be" },
-      { "@type": "ListItem", position: 2, name: "Locaties", item: "https://www.x3dprints.be/locaties" },
-      { "@type": "ListItem", position: 3, name: loc.city, item: `https://www.x3dprints.be/${loc.slug}` },
+    items: [
+      { name: "Home", url: "https://www.x3dprints.be/" },
+      { name: "Locaties", url: "https://www.x3dprints.be/locaties/" },
+      { name: loc.city, url: `https://www.x3dprints.be/${loc.slug}` },
     ],
-  }
+  })
 
   const pageJsonLd = {
     "@context": "https://schema.org",

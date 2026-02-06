@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/en/blog/use-case-dinsdag-retail-displays"
+const canonical = "https://www.x3dprints.be/en/blog/use-case-dinsdag-retail-displays/"
 const publishedDate = "2025-12-23T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/use-case-dinsdag-retail-displays",
+      "nl-BE": "https://www.x3dprints.be/blog/use-case-dinsdag-retail-displays/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/use-case-dinsdag-retail-displays/",
     },
   },
   openGraph: {

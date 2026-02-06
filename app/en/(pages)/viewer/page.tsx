@@ -11,17 +11,18 @@ export const metadata: Metadata = {
   description:
     "Upload an STL, OBJ or GLB and instantly preview your 3D print. Everything stays in your browser with validation, privacy and smooth interaction.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/viewer",
+    canonical: "https://www.x3dprints.be/en/viewer/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/viewer",
-      en: "https://www.x3dprints.be/en/viewer",
+      "nl-BE": "https://www.x3dprints.be/viewer/",
+      en: "https://www.x3dprints.be/en/viewer/",
+      "x-default": "https://www.x3dprints.be/viewer/",
     },
   },
   openGraph: {
     title: "Realtime 3D Model Viewer for STLs",
     description:
       "Upload an STL, OBJ or GLB and see immediately how your print looks. Privacy-friendly, performant and in X3DPrints style.",
-    url: "https://www.x3dprints.be/en/viewer",
+    url: "https://www.x3dprints.be/en/viewer/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "en_BE",
     siteName: "X3DPrints",
@@ -111,13 +112,13 @@ export default function Page() {
             </ul>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
               <Link
-                href="/materials#material-suggestion-tool"
+                href="/en/materials#material-suggestion-tool"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
                 Material Suggestion Tool
               </Link>
               <Link
-                href="/blog"
+                href="/en/blog"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
                 Read the blog

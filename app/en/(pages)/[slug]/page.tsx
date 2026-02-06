@@ -63,8 +63,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     alternates: {
       canonical: url,
       languages: {
-        "nl-BE": `https://www.x3dprints.be/${loc.slug}`,
-        en: url,
+      "nl-BE": `https://www.x3dprints.be/${loc.slug}`,
+      en: url,
+      "x-default": `https://www.x3dprints.be/${loc.slug}`,
       },
     },
     robots: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large" },

@@ -5,7 +5,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import { buildArticleJsonLd } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/en/blog/hoeveel-kost-3d-printen"
+const canonical = "https://www.x3dprints.be/en/blog/hoeveel-kost-3d-printen/"
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=how-much-3d-printing-cost"
 const datePublished = "2024-10-01"
 const dateModified = "2026-02-04"
@@ -20,8 +20,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/hoeveel-kost-3d-printen",
+      "nl-BE": "https://www.x3dprints.be/blog/hoeveel-kost-3d-printen/",
       en: canonical,
+      "x-default": "https://www.x3dprints.be/blog/hoeveel-kost-3d-printen/",
     },
   },
   openGraph: {
@@ -47,28 +48,28 @@ const costFactors = [
     description:
       "PLA Matte is our baseline and the most cost-efficient choice for prototypes and small parts. Materials like PETG or TPU differ in price because of added toughness or flexibility.",
     tip: "See all current materials and colours in our materials list.",
-    link: { href: "/materials", label: "Compare materials" },
+    link: { href: "/en/materials", label: "Compare materials" },
   },
   {
     title: "Machine hours",
     description:
       "Most of the cost comes from print time. Complex models, higher resolution or more infill increase machine hours and total cost.",
     tip: "Use the pricing calculator for realistic time and cost estimates.",
-    link: { href: "/pricing", label: "Go to pricing & calculator" },
+    link: { href: "/en/pricing", label: "Go to pricing & calculator" },
   },
   {
     title: "Model complexity",
     description:
       "Heavy overhangs or thin geometries can require extra supports. That raises print time and material use. Simple shapes are usually cheaper.",
     tip: "Load your model in the viewer to see if supports are needed.",
-    link: { href: "/viewer", label: "Check STL" },
+    link: { href: "/en/viewer", label: "Check STL" },
   },
   {
     title: "Logistics",
     description:
       "Pickup in Herzele is free. Bpost shipping ranges from ~€6 to €25 depending on weight and speed. Large prints are packed securely for transport.",
     tip: "Combine parts in one shipment to reduce cost.",
-    link: { href: "/pricing", label: "See shipping options" },
+    link: { href: "/en/pricing", label: "See shipping options" },
   },
 ]
 
@@ -134,7 +135,7 @@ export default function CostArticleEn() {
               <h2 className="text-lg font-semibold text-slate-900">{factor.title}</h2>
               <p className="mt-2 text-sm text-slate-700">{factor.description}</p>
               <p className="mt-2 text-xs text-slate-500">{factor.tip}</p>
-              <Link href={`/en${factor.link.href}`} className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 hover:text-indigo-500">
+              <Link href={factor.link.href} className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 hover:text-indigo-500">
                 {factor.link.label} <span aria-hidden>→</span>
               </Link>
             </GlassCard>

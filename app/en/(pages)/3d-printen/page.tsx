@@ -10,17 +10,18 @@ export const metadata: Metadata = {
   description:
     "3D printing for marketing props, tabletop batches and consumer projects. Local FDM studio near Ghent with guidance on design, materials, pricing and workflow.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/3d-printen",
+    canonical: "https://www.x3dprints.be/en/3d-printen/",
     languages: {
-      "nl-BE": "https://www.x3dprints.be/3d-printen",
-      en: "https://www.x3dprints.be/en/3d-printen",
+      "nl-BE": "https://www.x3dprints.be/3d-printen/",
+      en: "https://www.x3dprints.be/en/3d-printen/",
+      "x-default": "https://www.x3dprints.be/3d-printen/",
     },
   },
   openGraph: {
     title: "3D printing in Belgium | X3DPrints",
     description:
       "3D printing for marketing materials, tabletop runs and consumers. Local 3D printing from Herzele (between Ghent and Aalst) with a clear workflow and material advice.",
-    url: "https://www.x3dprints.be/en/3d-printen",
+    url: "https://www.x3dprints.be/en/3d-printen/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printing landing" }],
     locale: "en_BE",
     siteName: "X3DPrints",
@@ -33,25 +34,25 @@ const useCases = [
     title: "Prototypes",
     body:
       "Quick iterations in PLA Matte or PLA Silk. 3D printing with feedback on orientation, wall thickness and tolerances for predictable fit.",
-    link: "/portfolio",
+    link: "/en/portfolio",
   },
   {
     title: "Jigs & fixtures",
     body:
       "Functional helpers in PETG for heat and chemical resistance. Typically +/-0.2 mm tolerance and tuned infill on printed tools.",
-    link: "/services",
+    link: "/en/services",
   },
   {
     title: "Enclosures",
     body:
       "Custom housings and brackets with a clean finish. 3D prints in matte or silk looks; inserts and fitment on request.",
-    link: "/materials",
+    link: "/en/materials",
   },
   {
     title: "Marketing props",
     body:
       "Small runs of props, displays and awards in Silk/Marble/Translucent PLA. Prints ready for photo shoots and events.",
-    link: "/segments/3d-printing-marketing",
+    link: "/en/segments/3d-printing-marketing",
   },
 ]
 
@@ -65,7 +66,7 @@ const focusSegments = [
       "Stronger PETG parts for outdoor use or exhibitions",
       "Adhesive- and mounting-friendly designs, ready to install",
     ],
-    cta: "/segments/3d-printing-marketing",
+    cta: "/en/segments/3d-printing-marketing",
     ctaText: "Marketing cases",
   },
   {
@@ -77,7 +78,7 @@ const focusSegments = [
       "Dice towers, organisers and upgrades for hobby storage",
       "Short runs, pre-order batches or prototypes with fast follow-up",
     ],
-    cta: "/segments/3d-printing-tabletop",
+    cta: "/en/segments/3d-printing-tabletop",
     ctaText: "For tabletop",
   },
   {
@@ -89,7 +90,7 @@ const focusSegments = [
       "Recreational: game pieces, gifts, gadgets and fandom art",
       "Decorative: light objects, sculptures and statement pieces in colour or translucent",
     ],
-    cta: "/contact",
+    cta: "/en/contact",
     ctaText: "Request advice",
   },
 ]
@@ -174,22 +175,22 @@ const knowledgeLinks = [
   {
     title: "Filament Friday",
     description: "Weekly deep dives on PLA, PETG, TPU, PC and other 3D printing materials.",
-    href: "/blog/filament-vrijdag-pla",
+    href: "/en/blog/filament-vrijdag-pla",
   },
   {
     title: "Maker Monday",
     description: "Design and engineering tips on hinges, tolerance and wall thicknesses for FDM printing.",
-    href: "/blog/maker-monday-fdm-scharnieren",
+    href: "/en/blog/maker-monday-fdm-scharnieren",
   },
   {
     title: "Pricing & calculator",
     description: "Transparent breakdown of cost, calculator and examples for 3D printing.",
-    href: "/pricing",
+    href: "/en/pricing",
   },
   {
     title: "Materials library",
     description: "All filaments, colours and FAQs including PC, PETG and PLA Wood cases.",
-    href: "/materials",
+    href: "/en/materials",
   },
 ]
 
@@ -267,7 +268,7 @@ const howToJsonLd = {
 
 const catalogJsonLd = buildOfferCatalog("3D printing packages", consultationOffers)
 const localBusinessJsonLd = buildLocalBusinessSchema({
-  pageUrl: "https://www.x3dprints.be/en/3d-printen",
+  pageUrl: "https://www.x3dprints.be/en/3d-printen/",
   description: metadata.description ?? "",
   areaServed: "BE",
 })
@@ -275,7 +276,7 @@ const localBusinessJsonLd = buildLocalBusinessSchema({
 const serviceJsonLd = buildServiceSchema(
   "3D printing services",
   consultationOffers,
-  "https://www.x3dprints.be/en/3d-printen",
+  "https://www.x3dprints.be/en/3d-printen/",
 )
 
 export default function ThreeDPrintingPage() {
@@ -296,15 +297,15 @@ export default function ThreeDPrintingPage() {
               FDM 3D printing with direct communication. We check your STL/STEP, suggest PLA/PETG/TPU, give realistic timelines and deliver small batches without fuss. Based in Herzele near Ghent/Aalst.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact">Request a quote</ShimmerButton>
+              <ShimmerButton href="/en/contact">Request a quote</ShimmerButton>
               <Link
-                href="/materials#material-suggestion-tool"
+                href="/en/materials#material-suggestion-tool"
                 className="rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Material Suggestion Tool
               </Link>
               <Link
-                href="/portfolio"
+                href="/en/portfolio"
                 className="rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
               >
                 View portfolio
@@ -416,9 +417,9 @@ export default function ThreeDPrintingPage() {
                   ))}
                 </ul>
                 <div className="mt-4 flex flex-wrap gap-3">
-                  <ShimmerButton href="/pricing">Full pricing & calculator</ShimmerButton>
+                  <ShimmerButton href="/en/pricing">Full pricing & calculator</ShimmerButton>
                   <Link
-                    href="/materials"
+                    href="/en/materials"
                     className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
                   >
                     Materials library
@@ -529,9 +530,9 @@ export default function ThreeDPrintingPage() {
                   Share your STL/STEP, preferred material and timing. You&apos;ll receive a proposal with planning, pricing and any optimisations for your prints.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <ShimmerButton href="/contact">Book a call</ShimmerButton>
+                  <ShimmerButton href="/en/contact">Book a call</ShimmerButton>
                   <Link
-                    href="/viewer"
+                    href="/en/viewer"
                     className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:-translate-y-0.5 hover:bg-white"
                   >
                     Upload STL/STEP

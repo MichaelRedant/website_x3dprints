@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "PLA vs PETG: welke moet je kiezen?",
     description:  "De ultieme vergelijking tussen PLA en PETG met aandacht voor look, duurzaamheid, temperatuur en kost. Inclusief stappen om materiaal te testen.",
   url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "PLA vs PETG vergelijking" }],
+    images: [{ url: "/images/filament/petg_1.webp", width: 1200, height: 630, alt: "PLA vs PETG vergelijking" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PLA vs PETG: welke moet je kiezen?",
     description: "Leer wanneer PLA volstaat en wanneer PETG meerwaarde biedt. Met design- en printtips.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/filament/petg_1.webp"],
   },
 }
 
