@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-scholen"
+const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-scholen/"
 const publishedDate = "2025-12-09T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -270,7 +270,7 @@ export default function UseCaseDinsdagScholenPage() {
               inschakelt.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact-topic=use-case-scholen">Vraag schooladvies</ShimmerButton>
+              <ShimmerButton href="/contact?topic=use-case-scholen">Vraag schooladvies</ShimmerButton>
               <Link
                 href="/materials"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
@@ -531,7 +531,7 @@ export default function UseCaseDinsdagScholenPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href="/contact-topic=use-case-scholen">Plan een intake</ShimmerButton>
+                <ShimmerButton href="/contact?topic=use-case-scholen">Plan een intake</ShimmerButton>
                 <Link href="/viewer" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
                   Upload bestanden
                 </Link>
@@ -547,6 +547,8 @@ export default function UseCaseDinsdagScholenPage() {
     </main>
   )
 }
+
+
 
 
 

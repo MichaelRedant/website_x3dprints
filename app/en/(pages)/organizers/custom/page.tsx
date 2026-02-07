@@ -1,12 +1,13 @@
 // app/en/(pages)/organizers/custom/page.tsx
 import type { Metadata } from "next"
 import Link from "next/link"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Faq from "@/components/Faq"
 import OrganizerBundles from "@/components/OrganizerBundles"
 import Reveal from "@/components/Reveal"
 import { ORGANIZER_PAGES } from "@/content/organizer-details"
 import { buildOrganizerContactHref, buildOrganizerSchemas, type OrganizerPageContent } from "@/lib/organizers"
-import { SITE } from "@/lib/seo"
+import { SITE, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 const BASE = ORGANIZER_PAGES.custom
 const PAGE_EN: OrganizerPageContent = {
@@ -64,17 +65,40 @@ const FAQ_EN = [
 ]
 
 const PAGE_URL = `${SITE.url}/en/organizers/${PAGE_EN.slug}`
-const contactHref = buildOrganizerContactHref("custom")
+const contactHref = buildOrganizerContactHref("custom", undefined, "en")
 const schemas = buildOrganizerSchemas(PAGE_EN, PAGE_URL)
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: FAQ_EN.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+const faqSchema = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  mainEntityOfPage: PAGE_URL,
+  items: FAQ_EN,
+})
+const howToSchema = buildHowToSchema({
+  name: "Request a custom toolbox insert",
+  description: "Send a photo, dimensions and tool list to receive a fitted insert.",
+  inLanguage: "en-BE",
+  mainEntityOfPage: PAGE_URL,
+  totalTime: "PT12M",
+  toolNames: ["Photo", "Measuring tape or caliper"],
+  url: PAGE_URL,
+  steps: [
+    { name: "Take a photo", text: "Photo of the open case, foam removed if present." },
+    { name: "Measure the inside", text: "Inner length/width/height or diameter x height in millimetres." },
+    { name: "List tools", text: "Name + quantity per tool and how they should lie (flat/upright)." },
+    { name: "Send via contact form", text: "Use the contact form with custom prefill to upload everything." },
+  ],
+})
+const tocItems = [
+  { id: "howto", label: "How does the custom intake work?" },
+  { id: "bundles", label: "Which options and bundles are available?" },
+  { id: "faq", label: "Custom insert FAQ" },
+  { id: "custom-sources", label: "Sources and references" },
+]
+const references = [
+  { label: "IKEA Skadis product range", url: "https://www.ikea.com/be/en/search/?q=skadis" },
+  { label: "ISO/ASTM 52900 terminology", url: "https://www.astm.org/f2997-13r21.html" },
+  { label: "Prusa material guide", url: "https://help.prusa3d.com/article/material-guide_220" },
+]
+const lastUpdatedLabel = "Last updated: February 6, 2026"
 
 export const metadata: Metadata = {
   title: PAGE_EN.seo.title,
@@ -83,7 +107,7 @@ export const metadata: Metadata = {
     canonical: PAGE_URL,
     languages: {
       "nl-BE": `${SITE.url}/organizers/custom`,
-      en: PAGE_URL,
+      "en-BE": PAGE_URL,
       "x-default": `${SITE.url}/organizers/custom`,
     },
   },
@@ -110,6 +134,8 @@ export default function CustomOrganizersPageEn() {
             <h1 className="text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">{PAGE_EN.heroTitle}</h1>
             <p className="max-w-3xl text-lg text-slate-700 dark:text-slate-200">{PAGE_EN.heroSubtitle}</p>
             <p className="max-w-3xl text-slate-700 dark:text-slate-200">{PAGE_EN.intro}</p>
+            <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Contents" items={tocItems} className="max-w-xl" />
             <p className="max-w-3xl text-sm font-semibold text-slate-600 dark:text-slate-300">
               For unique cases: photography, measurement gear, makers, RC/FPV, medical kits and more.
             </p>
@@ -164,6 +190,9 @@ export default function CustomOrganizersPageEn() {
               <a href="#faq" className="underline decoration-indigo-400 hover:decoration-indigo-700">
                 FAQ
               </a>
+              <a href="#custom-sources" className="underline decoration-indigo-400 hover:decoration-indigo-700">
+                Sources
+              </a>
             </div>
           </div>
 
@@ -204,7 +233,7 @@ export default function CustomOrganizersPageEn() {
             </ul>
           </Reveal>
 
-          <section id="howto">
+          <section id="howto" className="scroll-mt-28">
           <Reveal
             className="rounded-3xl border border-slate-100 bg-white/80 p-6 shadow-lg shadow-slate-900/5 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0"
           >
@@ -238,13 +267,13 @@ export default function CustomOrganizersPageEn() {
           </Reveal>
           </section>
 
-          <section id="bundles">
+          <section id="bundles" className="scroll-mt-28">
           <Reveal>
             <OrganizerBundles systemSlug={PAGE_EN.slug} systemName={PAGE_EN.systemName} bundles={PAGE_EN.bundles} />
           </Reveal>
           </section>
 
-          <section id="faq">
+          <section id="faq" className="scroll-mt-28">
           <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
             <Faq items={FAQ_EN} title="Custom insert FAQ" className="mt-0" />
           </Reveal>
@@ -261,6 +290,26 @@ export default function CustomOrganizersPageEn() {
               </p>
             </div>
           </Reveal>
+
+          <section id="custom-sources" className="scroll-mt-28">
+            <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
+              <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Sources and references</h2>
+              <p className="mt-2 text-sm text-slate-600 dark:text-slate-200">
+                These references are used to keep terminology and system mappings on this page up to date.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-100">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </section>
         </div>
       </section>
 
@@ -279,20 +328,7 @@ export default function CustomOrganizersPageEn() {
               thumbnail: PAGE_EN.seo.ogImage,
               caption: "Custom toolbox insert with labels and anti-slip, made in Belgium",
             },
-            {
-              "@context": "https://schema.org",
-              "@type": "HowTo",
-              name: "Request a custom toolbox insert",
-              description: "Send a photo, dimensions and tool list to receive a fitted insert.",
-              step: [
-                { "@type": "HowToStep", position: 1, name: "Take a photo", text: "Photo of the open case, foam removed if present." },
-                { "@type": "HowToStep", position: 2, name: "Measure the inside", text: "Inner length/width/height or diameter x height in millimetres." },
-                { "@type": "HowToStep", position: 3, name: "List tools", text: "Name + quantity per tool and how they should lie (flat/upright)." },
-                { "@type": "HowToStep", position: 4, name: "Send via contact form", text: "Use the contact form with custom prefill to upload everything." },
-              ],
-              tool: ["Photo", "Measuring tape or caliper"],
-              totalTime: "PT12M",
-            },
+            howToSchema,
           ]),
         }}
       />

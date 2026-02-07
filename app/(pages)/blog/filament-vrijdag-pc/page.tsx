@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pc"
+const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pc/"
 const publishedDate = "2025-12-15T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -131,7 +131,7 @@ const mitigationTips = [
   {
     title: "Design voor PC",
     insight:
-      "Vermijd scherpe hoeken, voeg filet toe en plan uniforme wanddiktes. PC houdt niet van plots variëren tussen dikke en dunne secties. Als je het toch nodig hebt, anneal dan na het printen.",
+      "Vermijd scherpe hoeken, voeg filet toe en plan uniforme wanddiktes. PC houdt niet van plots variÃ«ren tussen dikke en dunne secties. Als je het toch nodig hebt, anneal dan na het printen.",
   },
 ]
 
@@ -177,7 +177,7 @@ const resourceLinks = [
   {
     label: "Materialen overzicht",
     href: "/materials",
-    description: "Vergelijk PC met PETG, PLA-CF en TPU in één oogopslag.",
+    description: "Vergelijk PC met PETG, PLA-CF en TPU in Ã©Ã©n oogopslag.",
   },
   {
     label: "Pricing & calculator",
@@ -195,7 +195,7 @@ const externalReferences = [
   {
     label: "Bambu Lab PC handleiding",
     href: "https://wiki.bambulab.com/en/filament/pc",
-    description: "Officiële richtlijnen rond nozzletemperatuur, bedhechting en compatibele platen.",
+    description: "OfficiÃ«le richtlijnen rond nozzletemperatuur, bedhechting en compatibele platen.",
   },
   {
     label: "Bambu Lab filament guideline",
@@ -286,7 +286,7 @@ export default function FilamentVrijdagPcPage() {
             <p className="mt-4 text-lg text-slate-700">
               PC filament belooft hittebestendige, taaie onderdelen en helder materiaal voor lampen of covers. Maar het vraagt
               droogdiscipline, een gesloten printer en realistische verwachtingen. Deze blog verzamelt onze studio-notities,
-              SEO-zoekwoorden zoals {"“polycarbonaat 3D printen”"} en {"“PC filament drogen”"} en koppelt ze aan concrete cases.
+              SEO-zoekwoorden zoals {"â€œpolycarbonaat 3D printenâ€"} en {"â€œPC filament drogenâ€"} en koppelt ze aan concrete cases.
             </p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/contact?material=PC">Vraag PC advies</ShimmerButton>
@@ -329,7 +329,7 @@ export default function FilamentVrijdagPcPage() {
               <p className="mt-3 text-sm text-slate-600">
                 Polycarbonaat is bekend uit spuitgietproducten: helmen, machinecovers en automotive clips. In 3D printvorm krijg
                 je een semi-transparant materiaal met hoge slagvastheid, een glasovergang rond 110 deg C en degelijke
-                UV-bestendigheid. Ideaal voor {"“PC filament Gent”"} en {"“polycarbonaat 3D print service”"} zoekopdrachten waarbij
+                UV-bestendigheid. Ideaal voor {"â€œPC filament Gentâ€"} en {"â€œpolycarbonaat 3D print serviceâ€"} zoekopdrachten waarbij
                 betrouwbaarheid primeert boven snelheid.
               </p>
               <p className="mt-3 text-sm text-slate-600">
@@ -420,7 +420,7 @@ export default function FilamentVrijdagPcPage() {
                 ))}
               </dl>
               <p className="mt-4 text-xs text-slate-500">
-                Zoekwoorden zoals {"“PC filament instellingen”"} scoren alleen als je eerlijk bent over de randvoorwaarden: een
+                Zoekwoorden zoals {"â€œPC filament instellingenâ€"} scoren alleen als je eerlijk bent over de randvoorwaarden: een
                 enclosure, droge spoelen en adhesiecontrole. Zonder dat trio blijft PC frustratie.
               </p>
             </GlassCard>
@@ -497,7 +497,7 @@ export default function FilamentVrijdagPcPage() {
                 <li className="rounded-2xl border border-slate-100 bg-white/60 p-4">
                   <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Machinecovers</p>
                   <p className="mt-2">
-                    Transparante vensters voor CNC en food-equipment waar chemicaliën en hete dampen samenkomen. PC levert taalbare
+                    Transparante vensters voor CNC en food-equipment waar chemicaliÃ«n en hete dampen samenkomen. PC levert taalbare
                     onderdelen die dagelijks schoonmaken overleven.
                   </p>
                 </li>
@@ -559,7 +559,7 @@ export default function FilamentVrijdagPcPage() {
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">Bronnen en verder lezen</h2>
               <p className="mt-2 text-sm text-slate-600">
-                Kritische bronnen voor wie {"“PC filament settings”"} of {"“polycarbonate drying time”"} wil uitdiepen:
+                Kritische bronnen voor wie {"â€œPC filament settingsâ€"} of {"â€œpolycarbonate drying timeâ€"} wil uitdiepen:
               </p>
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
                 {externalReferences.map((ref) => (
@@ -610,6 +610,7 @@ export default function FilamentVrijdagPcPage() {
     </main>
   )
 }
+
 
 
 

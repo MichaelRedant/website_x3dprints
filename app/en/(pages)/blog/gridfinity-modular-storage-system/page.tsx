@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/gridfinity-modulair-opslagsysteem/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/gridfinity-modulair-opslagsysteem/",
     },
   },
@@ -213,6 +213,18 @@ export default function GridfinityBlogEn() {
                 className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900 dark:border-slate-700 dark:text-slate-100"
               >
                 Start an intake
+              </Link>
+              <Link
+                href="/en/materials#material-suggestion-tool"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900 dark:border-slate-700 dark:text-slate-100"
+              >
+                Material Suggestion Tool
+              </Link>
+              <Link
+                href="/en/pricing"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900 dark:border-slate-700 dark:text-slate-100"
+              >
+                View pricing
               </Link>
             </div>
           </GlassCard>

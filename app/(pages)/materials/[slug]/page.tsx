@@ -24,6 +24,7 @@ import {
   materialGalleryByLocale,
   type MaterialGalleryItem,
 } from "@/content/material-gallery"
+import { buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 type SearchParams = { lang?: string }
 
@@ -62,7 +63,7 @@ export async function generateMetadata({ params, locale }: PageProps): Promise<M
       canonical,
       languages: {
         "nl-BE": `https://www.x3dprints.be/materials/${detail.slug}`,
-        en: `https://www.x3dprints.be/en/materials/${detail.slug}`,
+        "en-BE": `https://www.x3dprints.be/en/materials/${detail.slug}`,
         "x-default": `https://www.x3dprints.be/materials/${detail.slug}`,
       },
     },
@@ -173,10 +174,10 @@ const PC_COMPARISON = {
     otherLabel: { PC: "Bekijk PC FR", PC_FR: "Bekijk PC" },
     rows: [
       { label: "Vlamvertragend", PC: "Nee", PC_FR: "Ja (UL94 V-0)" },
-      { label: "Glasovergang", PC: "~110 °C", PC_FR: "~110 °C" },
+      { label: "Glasovergang", PC: "~110 C", PC_FR: "~110 C" },
       { label: "UV / outdoor", PC: "Ja", PC_FR: "Ja" },
       { label: "Toepassing", PC: "Machinecovers, outdoor brackets", PC_FR: "Elektronica, rail-kasten, safety critical" },
-      { label: "Prijsindicatie", PC: "€€€", PC_FR: "€€€+" },
+      { label: "Prijsindicatie", PC: "Hoog", PC_FR: "Hoog+" },
     ],
   },
   en: {
@@ -185,14 +186,131 @@ const PC_COMPARISON = {
     otherLabel: { PC: "View PC FR", PC_FR: "View PC" },
     rows: [
       { label: "Flame retardant", PC: "No", PC_FR: "Yes (UL94 V-0)" },
-      { label: "Glass transition", PC: "~110 °C", PC_FR: "~110 °C" },
+      { label: "Glass transition", PC: "~110 C", PC_FR: "~110 C" },
       { label: "UV / outdoor", PC: "Yes", PC_FR: "Yes" },
       { label: "Use case", PC: "Machine covers, outdoor brackets", PC_FR: "Electronics, rail enclosures, safety critical" },
-      { label: "Price indicator", PC: "€€€", PC_FR: "€€€+" },
+      { label: "Price indicator", PC: "High", PC_FR: "High+" },
     ],
   },
 } as const
 
+type DecisionGuide = {
+  title: string
+  intro: string
+  avoidTitle: string
+  avoidItems: string[]
+  alternativeTitle: string
+  alternativeReason: string
+  alternativeSlug: string
+  alternativeCta: string
+  contactMaterial: string
+  contactCta: string
+}
+
+const TOP_SLUG_DECISION_GUIDE: Record<string, { nl: DecisionGuide; en: DecisionGuide }> = {
+  "pla-matte": {
+    nl: {
+      title: "Wanneer kies je beter iets anders dan PLA Matte?",
+      intro: "PLA Matte is sterk voor visuele prototypes en snelle iteraties, maar niet altijd de beste eindkeuze.",
+      avoidTitle: "Kies een alternatief wanneer:",
+      avoidItems: [
+        "het onderdeel buiten in zon of regen gebruikt wordt",
+        "constante hittebelasting hoger ligt dan typische PLA-limieten",
+        "je extra slagvastheid nodig hebt voor dagelijks gebruik",
+      ],
+      alternativeTitle: "Betere match in dit scenario",
+      alternativeReason: "PETG is meestal de veiligere route voor buitengebruik, warmte en intensiever gebruik.",
+      alternativeSlug: "petg",
+      alternativeCta: "Vergelijk met PETG",
+      contactMaterial: "petg",
+      contactCta: "Vraag PETG advies",
+    },
+    en: {
+      title: "When should you avoid PLA Matte?",
+      intro: "PLA Matte is excellent for visual prototypes and fast iterations, but not always the right final material.",
+      avoidTitle: "Switch material when:",
+      avoidItems: [
+        "the part is used outdoors in sun or rain",
+        "constant heat exposure exceeds typical PLA limits",
+        "you need higher impact resistance for daily handling",
+      ],
+      alternativeTitle: "Better match for this case",
+      alternativeReason: "PETG is usually the safer route for outdoor use, heat and heavier handling.",
+      alternativeSlug: "petg",
+      alternativeCta: "Compare with PETG",
+      contactMaterial: "petg",
+      contactCta: "Request PETG advice",
+    },
+  },
+  petg: {
+    nl: {
+      title: "Wanneer kies je beter iets anders dan PETG?",
+      intro: "PETG is robuust en veelzijdig, maar voor bepaalde toepassingen zijn andere materialen efficienter.",
+      avoidTitle: "Kies een alternatief wanneer:",
+      avoidItems: [
+        "je maximale stijfheid en scherp detail voor indoor parts zoekt",
+        "een zeer strakke matte afwerking belangrijker is dan outdoor sterkte",
+        "je onderdeel flexibel moet kunnen plooien zonder terugveerproblemen",
+      ],
+      alternativeTitle: "Betere match in dit scenario",
+      alternativeReason: "PLA Tough+ of PLA Matte geeft vaak strakkere details; TPU is beter voor echte flexibiliteit.",
+      alternativeSlug: "pla-tough",
+      alternativeCta: "Vergelijk met PLA Tough+",
+      contactMaterial: "pla-tough",
+      contactCta: "Vraag materiaaladvies",
+    },
+    en: {
+      title: "When should you avoid PETG?",
+      intro: "PETG is robust and versatile, but other materials can be more efficient for specific use cases.",
+      avoidTitle: "Switch material when:",
+      avoidItems: [
+        "you need maximum stiffness and sharp details for indoor parts",
+        "a matte premium finish matters more than outdoor strength",
+        "the part must bend repeatedly without spring-back issues",
+      ],
+      alternativeTitle: "Better match for this case",
+      alternativeReason: "PLA Tough+ or PLA Matte often provides cleaner details; TPU is better for real flexibility.",
+      alternativeSlug: "pla-tough",
+      alternativeCta: "Compare with PLA Tough+",
+      contactMaterial: "pla-tough",
+      contactCta: "Request material advice",
+    },
+  },
+  tpu: {
+    nl: {
+      title: "Wanneer kies je beter iets anders dan TPU?",
+      intro: "TPU is ideaal voor flexibele onderdelen, maar overkill als je net een stijve, maatvaste part nodig hebt.",
+      avoidTitle: "Kies een alternatief wanneer:",
+      avoidItems: [
+        "je onderdeel absoluut vormvast en stijf moet blijven",
+        "nauwkeurige passing zonder rek belangrijker is dan flexibiliteit",
+        "de applicatie vooral vraagt om hittebestendigheid en sterkte",
+      ],
+      alternativeTitle: "Betere match in dit scenario",
+      alternativeReason: "PETG is meestal de juiste keuze voor stevige functionele onderdelen zonder flex.",
+      alternativeSlug: "petg",
+      alternativeCta: "Vergelijk met PETG",
+      contactMaterial: "petg",
+      contactCta: "Vraag PETG advies",
+    },
+    en: {
+      title: "When should you avoid TPU?",
+      intro: "TPU is perfect for flexible parts, but unnecessary when you need a rigid and dimension-stable component.",
+      avoidTitle: "Switch material when:",
+      avoidItems: [
+        "the part must stay rigid under load",
+        "tight dimensional fit matters more than flexibility",
+        "the application mainly needs heat resistance and structural strength",
+      ],
+      alternativeTitle: "Better match for this case",
+      alternativeReason: "PETG is usually the right choice for sturdy functional parts without flex behavior.",
+      alternativeSlug: "petg",
+      alternativeCta: "Compare with PETG",
+      contactMaterial: "petg",
+      contactCta: "Request PETG advice",
+    },
+  },
+}
 const FILAMENT_FRIDAY_LINKS_NL: Partial<
   Record<
     MaterialKey,
@@ -477,6 +595,17 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
     detail.key === "PC" ? MATERIAL_SLUGS.PC_FR : detail.key === "PC_FR" ? MATERIAL_SLUGS.PC : null
   const otherLabel =
     detail.key === "PC" ? comparison?.otherLabel.PC : detail.key === "PC_FR" ? comparison?.otherLabel.PC_FR : null
+  const decisionGuideEntry = TOP_SLUG_DECISION_GUIDE[detail.slug]
+  const decisionGuide = decisionGuideEntry ? decisionGuideEntry[isEn ? "en" : "nl"] : null
+  const decisionContactHref = decisionGuide
+    ? localize(
+        `/contact?material=${encodeURIComponent(decisionGuide.contactMaterial)}&quote=${encodeURIComponent(
+          isEn
+            ? `Material advice request from ${detail.slug} page`
+            : `Materiaaladvies vanaf ${detail.slug} pagina`,
+        )}`,
+      )
+    : contactHref
 
   const pageUrl = isEn
     ? `https://www.x3dprints.be/en/materials/${detail.slug}`
@@ -499,9 +628,7 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
     })),
   }
 
- const howToJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
+  const howToJsonLd = buildHowToSchema({
     inLanguage: languageCode,
     mainEntityOfPage: pageUrl,
     name: isEn ? `Get the right material: ${material.name}` : `Kies het juiste materiaal: ${material.name}`,
@@ -509,53 +636,39 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
       ? "Four quick steps to confirm suitability, see price impact and send a quote with the material prefilled."
       : "Vier snelle stappen om geschiktheid te checken, prijsimpact te zien en een offerte met vooraf ingevuld materiaal te sturen.",
     totalTime: "PT2M",
-    step: [
+    steps: [
       {
-        "@type": "HowToStep",
-        position: 1,
         name: isEn ? "Check suitability" : "Check geschiktheid",
         text: isEn
           ? `Verify ${material.name} fits your environment and tolerance needs.`
           : `Controleer of ${material.name} past bij omgeving en toleranties.`,
       },
       {
-        "@type": "HowToStep",
-        position: 2,
         name: isEn ? "Pick colour/stock" : "Kies kleur/voorraad",
         text: isEn ? "Pick a colour from the swatches and note stock status." : "Kies een kleur en noteer voorraadstatus.",
       },
       {
-        "@type": "HowToStep",
-        position: 3,
         name: isEn ? "See price range" : "Bekijk prijsschatting",
         url: localize(`/pricing?utm_source=material-detail&utm_medium=howto&utm_campaign=${detail.slug}`),
       },
       {
-        "@type": "HowToStep",
-        position: 4,
         name: isEn ? "Request a quote (prefilled)" : "Vraag offerte (vooraf ingevuld)",
         url: contactHref,
       },
     ],
-    tool: [{ "@type": "HowToTool", name: "Material Suggestion Tool" }],
-    supply: [{ "@type": "HowToSupply", name: isEn ? "STL or STEP file" : "STL- of STEP-bestand" }],
-  }
+    toolNames: ["Material Suggestion Tool"],
+    supplyNames: [isEn ? "STL or STEP file" : "STL- of STEP-bestand"],
+  })
 
-  const faqJsonLd = detail.faq
-    ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
+  const faqJsonLd = detail.faq?.length
+    ? buildFaqPageSchema({
         inLanguage: languageCode,
         mainEntityOfPage: pageUrl,
-        mainEntity: detail.faq.map((item) => ({
-          "@type": "Question",
-          name: item.question,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: item.answer,
-          },
+        items: detail.faq.map((item) => ({
+          question: item.question,
+          answer: item.answer,
         })),
-      }
+      })
     : null
 
   const projectTitle = `${copy.project.titlePrefix} ${material.name}${copy.project.titleSuffix}`
@@ -583,8 +696,16 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
           <p className="mt-4 max-w-3xl text-base text-slate-600">{detail.summary}</p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <ShimmerButton href={contactHref}>{isEn ? "Request a quote" : "Offerte aanvragen"}</ShimmerButton>
-            <ShimmerButton href={localize(`/materials?utm_source=material-detail&utm_medium=cta&utm_campaign=${slug}#material-suggestion-tool`)}>
+            <ShimmerButton
+              href={contactHref}
+              event={{ action: "cta_click", category: "materials_detail", label: `${detail.slug}_quote_hero` }}
+            >
+              {isEn ? "Request a quote" : "Offerte aanvragen"}
+            </ShimmerButton>
+            <ShimmerButton
+              href={localize(`/materials?utm_source=material-detail&utm_medium=cta&utm_campaign=${slug}#material-suggestion-tool`)}
+              event={{ action: "cta_click", category: "materials_detail", label: `${detail.slug}_tool_hero` }}
+            >
               {isEn ? "Material Suggestion Tool" : "Material Suggestion Tool"}
             </ShimmerButton>
             <Link
@@ -610,7 +731,12 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
             ) : null}
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <ShimmerButton href={contactHref}>{isEn ? "Request a quote or advice" : "Vraag offerte of advies"}</ShimmerButton>
+              <ShimmerButton
+                href={contactHref}
+                event={{ action: "cta_click", category: "materials_detail", label: `${detail.slug}_quote_mid` }}
+              >
+                {isEn ? "Request a quote or advice" : "Vraag offerte of advies"}
+              </ShimmerButton>
               <Link
                 href={localize("/materials")}
                 className="inline-flex items-center gap-1 text-sm font-semibold text-slate-700 transition hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
@@ -675,6 +801,47 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
                       ))}
                     </tbody>
                   </table>
+                </div>
+              </GlassCard>
+            </Reveal>
+          ) : null}
+
+          {decisionGuide ? (
+            <Reveal>
+              <GlassCard className="mt-6 p-6">
+                <h2 className="text-xl font-semibold text-slate-900">{decisionGuide.title}</h2>
+                <p className="mt-2 text-sm text-slate-600">{decisionGuide.intro}</p>
+
+                <h3 className="mt-5 text-sm font-semibold uppercase tracking-wide text-slate-500">
+                  {decisionGuide.avoidTitle}
+                </h3>
+                <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                  {decisionGuide.avoidItems.map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-5 rounded-2xl border border-slate-200/70 bg-white/70 p-4">
+                  <p className="text-sm font-semibold text-slate-900">{decisionGuide.alternativeTitle}</p>
+                  <p className="mt-1 text-sm text-slate-600">{decisionGuide.alternativeReason}</p>
+                  <div className="mt-3 flex flex-wrap items-center gap-2">
+                    <Link
+                      href={localize(`/materials/${decisionGuide.alternativeSlug}`)}
+                      className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-800 hover:border-slate-300 hover:bg-slate-50"
+                    >
+                      {decisionGuide.alternativeCta}
+                    </Link>
+                    <ShimmerButton
+                      href={decisionContactHref}
+                      className="px-4 py-2 text-xs"
+                      event={{ action: "cta_click", category: "materials_detail_decision", label: detail.slug }}
+                    >
+                      {decisionGuide.contactCta}
+                    </ShimmerButton>
+                  </div>
                 </div>
               </GlassCard>
             </Reveal>
@@ -784,7 +951,12 @@ export default async function MaterialDetailPage({ params, locale }: PageProps) 
                   {copy.project.body}
                 </p>
               </div>
-              <ShimmerButton href={contactHref}>{copy.project.cta}</ShimmerButton>
+              <ShimmerButton
+                href={contactHref}
+                event={{ action: "cta_click", category: "materials_detail", label: `${detail.slug}_quote_bottom` }}
+              >
+                {copy.project.cta}
+              </ShimmerButton>
             </GlassCard>
           </Reveal>
         </div>

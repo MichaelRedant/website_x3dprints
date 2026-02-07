@@ -402,7 +402,7 @@ export default function MaterialSuggestionTool() {
     "@context": "https://schema.org",
     "@type": "HowTo",
 
-    inLanguage: ["nl-BE", "en-BE"],
+    inLanguage: locale === "en" ? "en-BE" : "nl-BE",
     name: copy.howTo.name,
     description: copy.howTo.description,
     step: steps.map((item, index) => ({

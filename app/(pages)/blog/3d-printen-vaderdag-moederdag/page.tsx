@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -6,7 +6,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/3d-printen-vaderdag-moederdag"
+const canonical = "https://www.x3dprints.be/blog/3d-printen-vaderdag-moederdag/"
 
 export const metadata: Metadata = {
   title: "Vaderdag & Moederdag 3D printen | X3DPrints Blog",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const tips = [
   "Silk PLA voor glansrijke gifts, Matte PLA voor zachte look; PETG voor sterkere sleutelhangers/desk items.",
   "Min. 0,6 mm tekstdiepte en afgeronde randen voor prettige feel in dagelijks gebruik.",
-  "TPU pads voor antislip; gebruik pockets of geïntegreerde voetjes.",
+  "TPU pads voor antislip; gebruik pockets of geÃ¯ntegreerde voetjes.",
   "Layerhoogte 0,16-0,24 mm voor nette lijnen zonder lange printtijd.",
   "Batch namen/initialen per print-run voor consistente kleur en finish.",
 ]
@@ -42,7 +42,7 @@ const checklist = [
   "Type gift: sleutelhanger, desk organizer, naamplaat of klein decor.",
   "Materiaal: Silk/Matte PLA voor look; PETG voor sterkte; TPU voor grip.",
   "Afwerking: raw of licht geschuurd; primer optioneel als je wil schilderen.",
-  "Deadline: Vaderdag/Moederdag (mei–juni) + leveroptie (EV-zone of pakketdienst).",
+  "Deadline: Vaderdag/Moederdag (meiâ€“juni) + leveroptie (EV-zone of pakketdienst).",
   "Bestand: STL/STEP. Ontwerp nodig? Ontwerpservice EUR 45/uur.",
 ]
 
@@ -78,7 +78,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   headline: "Vaderdag & Moederdag 3D printen",
   description: metadata.description,
   author: { "@type": "Organization", name: "X3DPrints" },
@@ -116,10 +116,10 @@ export default function BlogParentsDay() {
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Gepersonaliseerde sleutelhangers, desk items en naamcadeaus in Silk, Matte of PETG. Ontwerpbestand niet inbegrepen;
-              lever STL/STEP of kies ontwerpservice (EUR 45/uur). Planning richting mei–juni zonder overpromise.
+              lever STL/STEP of kies ontwerpservice (EUR 45/uur). Planning richting meiâ€“juni zonder overpromise.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact?material=pla-silk-plus">Plan je gift run</ShimmerButton>
+              <ShimmerButton href="/contact?material=pla-silk">Plan je gift run</ShimmerButton>
               <Link
                 href="/segments/3d-printing-vaderdag-moederdag"
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -255,6 +255,8 @@ export default function BlogParentsDay() {
     </main>
   )
 }
+
+
 
 
 

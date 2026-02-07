@@ -1,116 +1,149 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import GlassCard from "@/components/GlassCard"
-import ShimmerButton from "@/components/ShimmerButton"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Faq from "@/components/Faq"
-import { SITE, buildLocalBusinessSchema, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
+import GlassCard from "@/components/GlassCard"
+import Reveal from "@/components/Reveal"
+import ShimmerButton from "@/components/ShimmerButton"
+import {
+  SITE,
+  buildFaqPageSchema,
+  buildHowToSchema,
+  buildLocalBusinessSchema,
+  buildServiceSchema,
+  SchemaOfferInput,
+} from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "Seasonal 3D designs | X3DPrints",
   description:
-    "Vier elk seizoen met 3D geprinte decor, props en gifts: herfst & Halloween, lente & Pasen, zomer decor, winter & kerst/nieuwjaar. Ontwerpbestand niet inbegrepen; aanleveren of ontwerpservice.",
-  alternates: { canonical: "https://www.x3dprints.be/segments/3d-printing-seasonal/", languages: { "nl-BE": "https://www.x3dprints.be/segments/3d-printing-seasonal/", en: "https://www.x3dprints.be/en/segments/3d-printing-seasonal/", "x-default": "https://www.x3dprints.be/segments/3d-printing-seasonal/", }, },
+    "Seizoensgebonden 3D prints voor decor, gifts en eventprops met duidelijke planning en materiaaladvies vanuit Herzele.",
+  alternates: {
+    canonical: "https://www.x3dprints.be/segments/3d-printing-seasonal/",
+    languages: {
+      "nl-BE": "https://www.x3dprints.be/segments/3d-printing-seasonal/",
+      "en-BE": "https://www.x3dprints.be/en/segments/3d-printing-seasonal/",
+      "x-default": "https://www.x3dprints.be/segments/3d-printing-seasonal/",
+    },
+  },
   openGraph: {
     title: "Seasonal 3D designs",
     description:
-      "Herfst/Halloween, lente/Pasen, zomer en winter/kerst decor. PLA Matte, Silk, Marble en PETG. Leveringszones en ontwerpservice beschikbaar.",
+      "Van valentijn tot kerst: 3D geprinte decorstukken en gifts met snelle lokale opvolging.",
     url: "https://www.x3dprints.be/segments/3d-printing-seasonal/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Seasonal 3D designs" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "Seasonal 3D designs",
+    description:
+      "Seizoensdecor en cadeaus met materiaaladvies en voorspelbare timing.",
+    images: ["/Logo.webp"],
+  },
 }
 
-const themes = [
+const pageUrl = String(
+  metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-seasonal/`,
+)
+const pageDescription = metadata.description ?? SITE.description
+const lastUpdatedLabel = "Laatst bijgewerkt: 7 februari 2026"
+
+const tocItems = [
+  { id: "segment-overview", label: "Wat levert deze seasonal-route op?" },
+  { id: "segment-workflow", label: "Hoe plan je seizoensproductie slim?" },
+  { id: "segment-campaigns", label: "Welke seizoenscampagnes werken goed?" },
+  { id: "segment-links", label: "Welke links geven extra inspiratie?" },
+  { id: "segment-faq", label: "FAQ Seasonal 3D designs" },
+  { id: "segment-sources", label: "Bronnen en referenties" },
+]
+
+const workflowSteps = [
   {
-    title: "Back to School",
-    copy: "Pennenhouders, naamplaatjes, organizers en STEM-modellen voor augustus-september. Matte PLA of PETG met antislip TPU.",
-    link: "/blog/3d-printen-back-to-school",
+    title: "1. Thema en deadline bepalen",
+    copy: "Koppel je campagne aan een duidelijke datum zoals valentijn, pasen, zomer of kerst.",
   },
   {
-    title: "Vaderdag & Moederdag",
-    copy: "Gepersonaliseerde sleutelhangers, desk items en naamcadeaus. Silk/Matte PLA of PETG met antislipvoetjes.",
-    link: "/blog/3d-printen-vaderdag-moederdag",
+    title: "2. Materiaal en look kiezen",
+    copy: "Kies PLA Silk, PLA Matte, PLA Marble of PETG volgens uitstraling en gebruik.",
   },
   {
-    title: "Valentijn",
-    copy: "Hartdecor, naamplaatjes en gifts met Silk/Matte/Translucent PLA. Optioneel leds en magneten.",
-    link: "/blog/3d-printen-valentijn",
-  },
-  {
-    title: "Herfst & Halloween",
-    copy: "Pumpkins, haunted house props, tafelstukjes in PLA Silk/Marble. Led-vensters in Translucent voor kaars- of fairy light glow.",
-    link: "/blog/3d-printen-herfst-halloween",
-  },
-  {
-    title: "Lente & Pasen",
-    copy: "Eierschalen, konijnen, bloemdecor en paastak-ornamenten. Pastel PLA en translucent accenten.",
-    link: "/blog/3d-printen-lente-pasen",
-  },
-  {
-    title: "Zomer",
-    copy: "Tuin- en terrasdecor, nautische thema’s, custom drinkware-houders. PETG voor outdoor gebruik, TPU voor antislip.",
-    link: "/blog/3d-printen-zomer",
-  },
-  {
-    title: "Winter, Kerst & Nieuwjaar",
-    copy: "Sneeuwvlokken, ornamenten, tafelkaartjes en party props. Marble/Silk PLA voor luxe glans, Translucent voor lichtobjecten.",
-    link: "/blog/3d-printen-winter-kerst-nieuwjaar",
+    title: "3. Productie en levering afstemmen",
+    copy: "We plannen printmomenten en levering zodat je assets tijdig klaarstaan.",
   },
 ]
 
-const materials = [
-  "PLA Matte: strak detail voor table decor en ornamenten.",
-  "PLA Silk/Marble: glans of steenlook voor feestelijke accenten.",
-  "PLA Translucent: sfeerverlichting, lantaarns en vensters.",
-  "PETG: outdoor decor dat zon en vocht beter verdraagt.",
-  "TPU: antislip feet en bumpers voor delicate props.",
+const campaignRows = [
+  {
+    season: "Valentijn en voorjaar",
+    focus: "Gifts, naamdecor en tafelstukken",
+    blog: "/blog/3d-printen-valentijn",
+  },
+  {
+    season: "Lente en Pasen",
+    focus: "Decorsets, lichte displaystukken en eventprops",
+    blog: "/blog/3d-printen-lente-pasen",
+  },
+  {
+    season: "Herfst en Halloween",
+    focus: "Themadecor, signage en opvallende props",
+    blog: "/blog/3d-printen-herfst-halloween",
+  },
+  {
+    season: "Winter en eindejaar",
+    focus: "Kerstdecor, relatiegeschenken en feestelijke displays",
+    blog: "/blog/3d-printen-winter-kerst-nieuwjaar",
+  },
 ]
 
-const logistics = [
-  "EV-levering: Zone 1 (tot 25 km) €15, Zone 2 €30, Zone 3 €45. Verder dan 75 km = maatwerk of pakketdienst.",
-  "Breekbare decorstukken worden gescheiden verpakt met schuim en kraftpapier.",
-  "Afhalen in Herzele op afspraak is gratis.",
+const logisticsPoints = [
+  "Afhaling op afspraak in Herzele is mogelijk.",
+  "Verzending en levering worden afgestemd op je campagneplanning.",
+  "Voor breekbare stukken gebruiken we extra beschermde verpakking.",
 ]
 
 const faqItems = [
   {
-    q: "Wanneer plan ik best mijn seizoensdecor in?",
-    a: "Idealiter minstens twee weken voor het event zodat we materiaalbeslissingen en nabewerking kunnen plannen. Spoed? Geef je deadline door, dan kijken we wat haalbaar is.",
+    q: "Hoe vroeg plan ik best seizoensdecor?",
+    a: "Idealiter enkele weken op voorhand zodat materiaalkeuze, testprint en levering zonder tijdsdruk kunnen gebeuren.",
   },
   {
-    q: "Leveren jullie props gemonteerd of als modules?",
-    a: "Grote decorstukken leveren we modulair met pin-holes of magneetgaten. Vermeld of je wenst dat we verlijmen of dat je dat zelf doet op locatie.",
+    q: "Welk materiaal werkt het best voor eventdecor?",
+    a: "Binnen kiezen we vaak PLA Silk of PLA Matte. Voor robuust of buitengebruik schakelen we sneller naar PETG.",
   },
   {
-    q: "Welke materialen zijn geschikt voor buitengebruik?",
-    a: "Voor buiten kiezen we meestal <strong>PETG</strong> of <strong>TPU</strong>. Binnen decor en lichtobjecten werken goed in PLA Silk, Marble of Translucent.",
+    q: "Kunnen jullie ook kleine oplages met variaties leveren?",
+    a: "Ja. We kunnen variaties op tekst, kleur of formaat in dezelfde batch verwerken.",
   },
 ]
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
+const references = [
+  {
+    label: "Prusa material guide (PLA, PETG, TPU)",
+    href: "https://help.prusa3d.com/article/material-guide_220",
+  },
+  {
+    label: "Google Search docs: crawlable links",
+    href: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+  },
+  {
+    label: "All3DP FDM process explainer",
+    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+  },
+]
 
-  inLanguage: ["nl-BE", "en-BE"],
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a.replace(/<[^>]*>/g, "") },
-  })),
-}
-
-const pageUrl = String(
-  metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-seasonal`,
-)
-const pageDescription = metadata.description ?? SITE.description
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  mainEntityOfPage: pageUrl,
+  items: faqItems.map((item) => ({ q: item.q, a: item.a })),
+})
 
 const serviceOffers: SchemaOfferInput[] = [
   {
     serviceName: "Seasonal 3D designs",
     price: "EUR 5",
-    description: "Seizoensdecor en props in PLA, Marble en PETG.",
+    description: "Seizoensdecor, gifts en campagneprops met materiaaladvies.",
     url: pageUrl,
   },
 ]
@@ -118,191 +151,224 @@ const serviceOffers: SchemaOfferInput[] = [
 const localBusinessJsonLd = buildLocalBusinessSchema({
   pageUrl,
   description: pageDescription,
-  image: "/images/og-home.jpg",
-  areaServed: "Gent & Vlaanderen",
+  image: "/Logo.webp",
+  areaServed: "Gent en Vlaanderen",
   priceRange: "EUR 5 - EUR 49",
 })
 
-const serviceJsonLd = buildServiceSchema("Seasonal 3D designs", serviceOffers, pageUrl)
+const serviceJsonLd = buildServiceSchema(
+  "Seasonal 3D designs",
+  serviceOffers,
+  pageUrl,
+  {
+    description: pageDescription,
+    inLanguage: "nl-BE",
+    mainEntityOfPage: pageUrl,
+  },
+)
 
-function getSeasonCta(date: Date) {
-  const MS_IN_DAY = 86_400_000
-  const isWithinWindow = (target: Date, daysBefore: number, daysAfter: number) => {
-    const diff = target.getTime() - date.getTime()
-    return diff <= daysAfter * MS_IN_DAY && diff >= -daysBefore * MS_IN_DAY
-  }
-  const getNthWeekday = (month: number, weekday: number, n: number) => {
-    const first = new Date(Date.UTC(date.getUTCFullYear(), month - 1, 1))
-    const offset = (weekday - first.getUTCDay() + 7) % 7
-    const day = 1 + offset + 7 * (n - 1)
-    return new Date(Date.UTC(date.getUTCFullYear(), month - 1, day))
-  }
-
-  const month = date.getUTCMonth() + 1 // 1-12
-  const day = date.getUTCDate()
-  const after = (m: number, d: number) => month > m || (month === m && day >= d)
-  const before = (m: number, d: number) => month < m || (month === m && day <= d)
-
-  const mothersDay = getNthWeekday(5, 0, 2)
-  const fathersDay = getNthWeekday(6, 0, 2)
-  const isValentijnWindow = (month === 1 && day >= 15) || (month === 2 && day <= 16)
-  const isParentsWindow = isWithinWindow(mothersDay, 21, 1) || isWithinWindow(fathersDay, 21, 1)
-  const isBackToSchoolWindow = month === 8 || month === 9
-  if (isValentijnWindow) {
-    return { label: "Valentijn cadeaus", href: "/valentijn-3d-printen" }
-  }
-  if (isParentsWindow) {
-    return { label: "Vaderdag & Moederdag", href: "/blog/3d-printen-vaderdag-moederdag" }
-  }
-  if (isBackToSchoolWindow) {
-    return { label: "Back to School", href: "/blog/3d-printen-back-to-school" }
-  }
-  if (after(11, 11) || before(2, 10)) {
-    return { label: "Winter, Kerst & Nieuwjaar", href: "/blog/3d-printen-winter-kerst-nieuwjaar" }
-  }
-  if (after(2, 11) && before(5, 10)) {
-    return { label: "Lente & Pasen", href: "/blog/3d-printen-lente-pasen" }
-  }
-  if (after(5, 11) && before(9, 10)) {
-    return { label: "Zomer decor", href: "/blog/3d-printen-zomer" }
-  }
-  return { label: "Herfst & Halloween", href: "/blog/3d-printen-herfst-halloween" }
-}
+const howToJsonLd = buildHowToSchema({
+  name: "Seasonal campagneprint in 4 stappen",
+  description:
+    "Plan seizoensgebonden 3D prints met de juiste materiaalkeuze, timing en prefill aanvraag.",
+  inLanguage: "nl-BE",
+  mainEntityOfPage: pageUrl,
+  totalTime: "PT3M",
+  steps: [
+    {
+      name: "Thema en deadline vastleggen",
+      text: "Kies campagneperiode en stel duidelijke opleverdatum in.",
+    },
+    {
+      name: "Materiaalroute bepalen",
+      text: "Kies PLA Silk, PLA Matte, PLA Marble of PETG afhankelijk van look en gebruik.",
+    },
+    {
+      name: "Prijs en timing bekijken",
+      url: "/pricing?utm_source=segment-seasonal&utm_medium=howto&utm_campaign=seasonal-flow",
+    },
+    {
+      name: "Aanvraag met prefill versturen",
+      url: "/contact?material=pla-silk&quote=Seasonal%20campagne%20aanvraag",
+    },
+  ],
+  toolNames: ["Material Suggestion Tool"],
+  supplyNames: ["STL of STEP bestand"],
+})
 
 export default function SeasonalSegmentPage() {
-  const seasonCta = getSeasonCta(new Date())
   return (
-    <main className="relative overflow-hidden px-4 pb-28 pt-12 sm:px-6 lg:px-8">
+    <main className="relative overflow-hidden px-4 pb-24 pt-12 sm:px-6 lg:px-8">
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-white to-sky-50" />
-        <div className="absolute -top-28 left-10 h-[24rem] w-[24rem] rounded-full bg-amber-200/40 blur-[120px]" />
-        <div className="absolute -bottom-32 right-16 h-[26rem] w-[26rem] rounded-full bg-blue-200/35 blur-[140px]" />
+        <div className="absolute left-10 top-[-18%] h-[22rem] w-[22rem] rounded-full bg-amber-200/35 blur-[120px]" />
       </div>
 
-      <header className="mx-auto max-w-4xl text-center">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Segment</p>
-        <h1 className="mt-3 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-          Seasonal 3D designs
-        </h1>
-        <p className="mt-4 text-base text-slate-600">
-          Vier elk seizoen met 3D geprinte decor, props en gifts. Ontwerp van het 3D model is niet inbegrepen; lever STL/STEP
-          of kies onze ontwerpservice aan €45/uur. Lever klaar om te schilderen, te verlichten of meteen te gebruiken.
-        </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-          <ShimmerButton href="/contact?material=pla-silk-plus" event={ { action: "cta_click", category: "segments_seasonal", label: "plan-season" } }> Plan je seizoen</ShimmerButton>
-          <Link
-            href={seasonCta.href}
-            className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
-          >
-            {seasonCta.label} blog
-          </Link>
-          <Link
-            href="/portfolio"
-            className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
-          >
-            Bekijk voorbeelden
-          </Link>
-          <Link
-            href="/materials#material-suggestion-tool"
-            className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm"
-          >
-            Material Suggestion Tool
-          </Link>
-        </div>
-      </header>
+      <section id="segment-overview" className="mx-auto max-w-5xl scroll-mt-28">
+        <Reveal>
+          <header className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Segment</p>
+            <h1 className="mt-3 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+              Seasonal 3D designs
+            </h1>
+            <p className="mt-4 text-base text-slate-600">
+              Voor seizoensgebonden decor, gifts en eventprops met snelle lokale opvolging en heldere timing.
+            </p>
+            <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <ShimmerButton
+                href="/contact?material=pla-silk&quote=Seasonal%20campagne%20aanvraag"
+                event={{ action: "cta_click", category: "segments_seasonal", label: "contact_prefill" }}
+              >
+                Start seasonal aanvraag
+              </ShimmerButton>
+              <ShimmerButton
+                href="/materials#material-suggestion-tool"
+                className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+                event={{ action: "cta_click", category: "segments_seasonal", label: "material_tool" }}
+              >
+                Material Suggestion Tool
+              </ShimmerButton>
+              <Link
+                href="/services"
+                className="rounded-xl border border-slate-300/70 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm"
+              >
+                Bekijk services
+              </Link>
+            </div>
+          </header>
+          <ContentTableOfContents title="Inhoud" items={tocItems} className="mx-auto mt-6 max-w-2xl" />
+        </Reveal>
+      </section>
 
-      <section className="mx-auto mt-10 grid max-w-5xl gap-6 lg:grid-cols-2">
-        <GlassCard className="p-6 sm:p-8">
-          <h2 className="text-xl font-semibold text-slate-900">Seizoensthema’s</h2>
-          <div className="mt-4 space-y-3 text-sm text-slate-600">
-            {themes.map((theme) => (
-              <div key={theme.title} className="rounded-3xl border border-slate-200/70 bg-white/70 p-4">
-                <p className="font-semibold text-slate-900">{theme.title}</p>
-                <p className="mt-1 text-xs text-slate-600">{theme.copy}</p>
-                <Link href={theme.link} className="mt-2 inline-block text-xs font-semibold text-indigo-700 underline">
-                  Lees het blog
-                </Link>
-              </div>
-            ))}
-          </div>
-          <p className="mt-4 text-xs text-slate-500">
-            Tip: denk aan modulair ontwerp (losse delen) voor grote decorstukken en voorzie pin-holes voor magneten of led-kabels.
-          </p>
-        </GlassCard>
+      <section id="segment-workflow" className="mx-auto mt-10 grid max-w-5xl gap-6 scroll-mt-28 lg:grid-cols-2">
+        <Reveal>
+          <GlassCard className="p-6 sm:p-8">
+            <h2 className="text-xl font-semibold text-slate-900">Hoe plan je seizoensproductie slim?</h2>
+            <div className="mt-4 space-y-3">
+              {workflowSteps.map((step) => (
+                <div key={step.title} className="rounded-2xl border border-slate-200/70 bg-white/80 p-4 text-sm text-slate-700">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{step.title}</p>
+                  <p className="mt-2">{step.copy}</p>
+                </div>
+              ))}
+            </div>
+          </GlassCard>
+        </Reveal>
 
-        <GlassCard className="p-6 sm:p-8">
-          <h2 className="text-xl font-semibold text-slate-900">Materialen & finishes</h2>
-          <ul className="mt-4 space-y-2 text-sm text-slate-600">
-            {materials.map((m) => (
-              <li key={m} className="flex items-start gap-2">
-                <span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-500" aria-hidden />
-                <span>{m}</span>
+        <Reveal delay={0.06}>
+          <GlassCard className="p-6 sm:p-8">
+            <h2 className="text-xl font-semibold text-slate-900">Levering en bescherming</h2>
+            <ul className="mt-4 space-y-2 text-sm text-slate-700">
+              {logisticsPoints.map((point) => (
+                <li key={point} className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 rounded-full bg-amber-500" aria-hidden />
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+          </GlassCard>
+        </Reveal>
+      </section>
+
+      <section id="segment-campaigns" className="mx-auto mt-10 max-w-5xl scroll-mt-28">
+        <Reveal>
+          <GlassCard className="p-6 sm:p-8">
+            <h2 className="text-xl font-semibold text-slate-900">Seizoenscampagnes en inspiratie</h2>
+            <div className="mt-4 overflow-x-auto">
+              <table className="min-w-[460px] text-left text-sm text-slate-700">
+                <thead>
+                  <tr className="border-b border-slate-200/70 text-slate-500">
+                    <th className="py-2 pr-4 font-semibold">Periode</th>
+                    <th className="py-2 pr-4 font-semibold">Focus</th>
+                    <th className="py-2 pr-4 font-semibold">Inspireer je</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {campaignRows.map((row) => (
+                    <tr key={row.season} className="border-b border-slate-200/70 last:border-0">
+                      <td className="py-2 pr-4 font-medium text-slate-900">{row.season}</td>
+                      <td className="py-2 pr-4">{row.focus}</td>
+                      <td className="py-2 pr-4">
+                        <Link href={row.blog} className="font-semibold text-indigo-600 hover:text-indigo-500">
+                          Bekijk blog
+                        </Link>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </GlassCard>
+        </Reveal>
+      </section>
+
+      <section id="segment-links" className="mx-auto mt-10 max-w-5xl scroll-mt-28">
+        <Reveal>
+          <GlassCard className="p-6 sm:p-8">
+            <h2 className="text-xl font-semibold text-slate-900">Handige vervolgstappen</h2>
+            <ul className="mt-4 space-y-2 text-sm text-slate-700">
+              <li>
+                <Link href="/blog/3d-printen-vaderdag-moederdag" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  Vaderdag en Moederdag blog
+                </Link>{" "}
+                voor gift en campagne-inspiratie.
               </li>
-            ))}
-          </ul>
-          <p className="mt-4 text-xs text-slate-500">
-            Afwerking? We kunnen licht schuren en primeren (grijs) zodat je direct kunt schilderen. Silk/Marble hebben al een
-            feestelijke look zonder primer.
-          </p>
-        </GlassCard>
-      </section>
-
-      <section className="mx-auto mt-10 max-w-5xl">
-        <GlassCard className="p-6 sm:p-8">
-          <h2 className="text-xl font-semibold text-slate-900">Workflow & ontwerp</h2>
-          <ol className="mt-4 space-y-2 text-sm text-slate-600">
-            <li>1. Lever STL/STEP of kies ontwerpservice (3D model niet inbegrepen in printprijs; €45/uur voor design).</li>
-            <li>2. Noteer seizoen + deadline: herfst/Halloween, lente/Pasen, zomer of winter/kerst/NY.</li>
-            <li>3. Kies materiaal en gewenste finish (raw, geschuurd, geprimed).</li>
-            <li>4. We controleren wanddiktes en overhang, splitsen grote decor in modules en optimaliseren supports.</li>
-            <li>5. Levering/afhalen: kies EV-zones, pakketdienst of afhalen in Herzele.</li>
-          </ol>
-          <p className="mt-4 text-xs text-slate-500">
-            Voeg referentiefoto’s of kleurenpalet toe zodat we de juiste filamentblend kiezen (Silk, Marble, Translucent, Matte).
-          </p>
-        </GlassCard>
-      </section>
-
-      <section className="mx-auto mt-10 max-w-5xl">
-        <GlassCard className="p-6 sm:p-8">
-          <h2 className="text-xl font-semibold text-slate-900">Levering & veiligheid</h2>
-          <ul className="mt-4 space-y-2 text-sm text-slate-600">
-            {logistics.map((d) => (
-              <li key={d} className="flex items-start gap-2">
-                <span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-500" aria-hidden />
-                <span>{d}</span>
+              <li>
+                <Link href="/blog/3d-printen-back-to-school" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  Back to School blog
+                </Link>{" "}
+                voor education cases en planning.
               </li>
-            ))}
-          </ul>
-          <p className="mt-4 text-xs text-slate-500">
-            Fragiele decorstukken verpakken we gescheiden met schuim. Grote stukken kunnen gelijmd of als modules geleverd worden.
-          </p>
-          <div className="mt-4 flex flex-wrap gap-3 text-sm">
-            <Link href="/pricing" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
-              Prijzen & leverzones
-            </Link>
-            <Link href="/contact?material=pla-silk-plus" className="rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm">
-              Start je aanvraag
-            </Link>
-          </div>
-        </GlassCard>
+              <li>
+                <Link href="/pricing" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  Prijzen
+                </Link>{" "}
+                om budget en timing direct te valideren.
+              </li>
+              <li>
+                <Link href="/locaties" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  Locaties
+                </Link>{" "}
+                voor afhaling en levering in de regio.
+              </li>
+            </ul>
+          </GlassCard>
+        </Reveal>
       </section>
 
-      <section className="mx-auto mt-12 max-w-4xl">
+      <section id="segment-faq" className="mx-auto mt-12 max-w-4xl scroll-mt-28">
         <Faq title="FAQ Seasonal 3D designs" items={faqItems} />
       </section>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
+
+      <section id="segment-sources" className="mx-auto mt-12 max-w-5xl scroll-mt-28">
+        <Reveal>
+          <GlassCard className="p-6 sm:p-8">
+            <h2 className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
+            <ul className="mt-4 space-y-2 text-sm text-slate-700">
+              {references.map((reference) => (
+                <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                  <cite className="not-italic">
+                    <a
+                      href={reference.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-indigo-600 hover:text-indigo-500"
+                    >
+                      {reference.label}
+                    </a>
+                  </cite>
+                </li>
+              ))}
+            </ul>
+          </GlassCard>
+        </Reveal>
+      </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
     </main>
   )
 }

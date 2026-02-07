@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/3d-printen-valentijn/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/3d-printen-valentijn/",
     },
   },
@@ -45,7 +45,7 @@ const tips = [
   "PLA Silk or Marble for shiny hearts and nameplates; Matte PLA for soft pastels.",
   "Translucent PLA (1.6-2 mm walls) for light objects with fairy lights; keep ventilation for LEDs.",
   "Integrate eyelets or pin-holes for magnets and make text at least 0.6 mm thick for legibility.",
-  "Design/model not included: provide STL/STEP or choose design service at €45/hour.",
+  "Design/model not included: provide STL/STEP or choose design service at â‚¬45/hour.",
   "Delivery options: EV zones or parcel service. Fragile pieces are packed separately; pickup in Herzele is free. Bpost export possible for expat gifting or UK/EU partners.",
 ]
 
@@ -60,7 +60,7 @@ const checklist = [
 const faqItems = [
   {
     q: "Do you also make the design?",
-    a: "Optionally, yes. The 3D model is not included. Provide STL/STEP or choose design service at €45/hour; we tune wall thickness, text and supports.",
+    a: "Optionally, yes. The 3D model is not included. Provide STL/STEP or choose design service at â‚¬45/hour; we tune wall thickness, text and supports.",
   },
   {
     q: "Which filament colours do you recommend?",
@@ -231,7 +231,7 @@ export default function ValentinesBlogEnPage() {
                     diffusion.
                   </p>
                   <div className="mt-3 text-sm font-semibold text-indigo-600">
-                    <Link href="/en/materials/pla">See PLA colours</Link>
+                    <Link href="/en/materials">See PLA colours</Link>
                   </div>
                 </div>
               </div>
@@ -282,3 +282,4 @@ export default function ValentinesBlogEnPage() {
     </main>
   )
 }
+

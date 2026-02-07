@@ -1,13 +1,13 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import { buildArticleJsonLd } from "@/lib/seo"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/blog/3d-printen-zomer"
+const canonical = "https://www.x3dprints.be/blog/3d-printen-zomer/"
 const datePublished = "2024-07-15"
 const dateModified = "2026-02-04"
 
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   alternates: { canonical },
   openGraph: {
     title: "3D printen voor de zomer",
-    description: "Tuin- en stranddecor, nautische thema’s en custom holders. Materialen, slicer-tips, levering en ontwerpservice.",
+    description: "Tuin- en stranddecor, nautische themaâ€™s en custom holders. Materialen, slicer-tips, levering en ontwerpservice.",
   url: canonical,
     type: "article",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte zomer decor" }],
@@ -37,7 +37,7 @@ const tips = [
   "Gebruik PETG voor outdoor decor: beter tegen zon en vocht. PLA Silk/Marble voor luxe tafeldecor binnen.",
   "Layerhoogte 0,2 mm voor grotere stukken; 0,16 mm voor sierlijke details. Wanddikte >1,6 mm voor items in de zon.",
   "TPU voor antislip feet onder trays of beach-gear. Combineer PLA of PETG bovenop voor stijve structuur.",
-  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan €45/uur.",
+  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan â‚¬45/uur.",
   "Voor drinkware-holders: voorzie drainagegaten en afronden randen voor comfort.",
 ]
 
@@ -55,15 +55,15 @@ const faqItems = [
   },
   {
     q: "Kan ik strand- of nautische props laten maken?",
-    a: "Ja. Ankertjes, vuurtorens, schelpen of custom holders voor drinkware en gadgets. Lever STL/STEP of laat ontwerpen aan €45/uur.",
+    a: "Ja. Ankertjes, vuurtorens, schelpen of custom holders voor drinkware en gadgets. Lever STL/STEP of laat ontwerpen aan â‚¬45/uur.",
   },
   {
     q: "Hoe lever je breekbare stukken veilig?",
-    a: "We verpakken gescheiden met schuim en leveren via EV-zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) of pakketdienst. Afhalen in Herzele kan gratis.",
+    a: "We verpakken gescheiden met schuim en leveren via EV-zones (Zone 1 â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45) of pakketdienst. Afhalen in Herzele kan gratis.",
   },
   {
     q: "Is het 3D model inbegrepen?",
-    a: "Nee. Ontwerpbestand is niet inbegrepen; je levert STL/STEP of kiest ontwerpservice aan €45/uur. We optimaliseren wanddiktes en supports.",
+    a: "Nee. Ontwerpbestand is niet inbegrepen; je levert STL/STEP of kiest ontwerpservice aan â‚¬45/uur. We optimaliseren wanddiktes en supports.",
   },
   {
     q: "Hoe voorkom je vervorming in de zon?",
@@ -81,20 +81,13 @@ const articleJsonLd = buildArticleJsonLd({
   image: "https://www.x3dprints.be/images/og-home.jpg",
 })
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-
-  inLanguage: ["nl-BE", "en-BE"],
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  items: faqItems,
+})
 
 const inspirationImages = [
-  { src: "/images/portfolio/Summer1.webp", alt: "3D geprinte zomer decor 1" },
+  { src: "/images/portfolio/summer1.webp", alt: "3D geprinte zomer decor 1" },
   { src: "/images/portfolio/Summer2.webp", alt: "3D geprinte zomer decor 2" },
   { src: "/images/portfolio/Summer3.webp", alt: "3D geprinte zomer decor 3" },
   { src: "/images/portfolio/Summer4.webp", alt: "3D geprinte zomer decor 4" },
@@ -118,8 +111,8 @@ export default function BlogSummer() {
               3D printen voor de zomer
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Terrasdecor, nautische thema’s en custom holders voor festivals of beach trips. Ontwerpbestand niet inbegrepen; lever
-              STL/STEP of kies ontwerpservice (€45/uur). EV-levering voor breekbare stukken of pakketdienst indien verder weg.
+              Terrasdecor, nautische themaâ€™s en custom holders voor festivals of beach trips. Ontwerpbestand niet inbegrepen; lever
+              STL/STEP of kies ontwerpservice (â‚¬45/uur). EV-levering voor breekbare stukken of pakketdienst indien verder weg.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact">Plan je zomerprints</ShimmerButton>
@@ -128,6 +121,12 @@ export default function BlogSummer() {
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
                 Naar seasonal segment
+              </Link>
+              <Link
+                href="/materials#material-suggestion-tool"
+                className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+              >
+                Material Suggestion Tool
               </Link>
             </div>
           </Reveal>
@@ -224,7 +223,7 @@ export default function BlogSummer() {
                 <li>Optioneel primer/schuren zodat je direct kan schilderen of afwerken.</li>
               </ul>
               <p className="mt-3 text-sm text-slate-700">
-                Herinnering: het 3D model is niet inbegrepen in de printprijs. Lever STL/STEP of laat ons ontwerpen aan €45/uur.
+                Herinnering: het 3D model is niet inbegrepen in de printprijs. Lever STL/STEP of laat ons ontwerpen aan â‚¬45/uur.
                 Vermeld je eventdatum en leveroptie bij de aanvraag.
               </p>
             </GlassCard>
@@ -234,8 +233,8 @@ export default function BlogSummer() {
             <GlassCard className="p-6">
               <h3 className="text-xl font-semibold tracking-tight text-slate-900">SEO inspiratiehoek</h3>
               <p className="mt-2 text-sm text-slate-700">
-                Zoek je “3D geprinte zomer decor”, “3D print outdoor decor”, “PETG beach props”, “TPU antislip tray” of “nautische
-                3D prints”? Hier vind je materiaalkeuze (PETG, PLA Silk/Marble, TPU), support- en wanddikte tips om snel te beslissen.
+                Zoek je â€œ3D geprinte zomer decorâ€, â€œ3D print outdoor decorâ€, â€œPETG beach propsâ€, â€œTPU antislip trayâ€ of â€œnautische
+                3D printsâ€? Hier vind je materiaalkeuze (PETG, PLA Silk/Marble, TPU), support- en wanddikte tips om snel te beslissen.
               </p>
               <p className="mt-3 text-sm text-slate-700">
                 Populaire opdrachten: nautische sets (ankers, schelpen, vuurtorens), outdoor lantaarns, custom drinkware-houders,
@@ -287,6 +286,9 @@ export default function BlogSummer() {
     </main>
   )
 }
+
+
+
 
 
 

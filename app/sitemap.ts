@@ -41,7 +41,7 @@ function buildAlternates(nlPath?: string, enPath?: string) {
   return {
     languages: {
       "nl-BE": `${BASE_URL}${nlPath.endsWith("/") ? nlPath : `${nlPath}/`}`,
-      en: `${BASE_URL}${enPath.endsWith("/") ? enPath : `${enPath}/`}`,
+      "en-BE": `${BASE_URL}${enPath.endsWith("/") ? enPath : `${enPath}/`}`,
       "x-default": `${BASE_URL}${nlPath.endsWith("/") ? nlPath : `${nlPath}/`}`,
     },
   }
@@ -248,17 +248,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogRouteEntries: MetadataRoute.Sitemap = [...blogRoutes, ...enOnlyBlogRoutes]
 
   const segmentRoutes: MetadataRoute.Sitemap = await Promise.all(
-    segmentSlugs.map(async (slug) => {
-      const lastModified =
-        (await latestMtime([`app/segments/${slug}/page.tsx`])) ?? new Date()
-      return {
-        url: `${BASE_URL}/segments/${slug}`,
-        lastModified,
-        changeFrequency: "monthly" as const,
-        priority: 0.6,
-      }
+    segmentSlugs.flatMap((slug) => {
+      const sources = [
+        `app/segments/${slug}/page.tsx`,
+        "app/en/(pages)/segments/[slug]/page.tsx",
+      ]
+      const alternates = buildAlternates(`/segments/${slug}`, `/en/segments/${slug}`)
+      return [
+        (async () => ({
+          url: `${BASE_URL}/segments/${slug}`,
+          lastModified: (await latestMtime(sources)) ?? new Date(),
+          changeFrequency: "monthly" as const,
+          priority: 0.6,
+          alternates,
+        }))(),
+        (async () => ({
+          url: `${BASE_URL}/en/segments/${slug}`,
+          lastModified: (await latestMtime(sources)) ?? new Date(),
+          changeFrequency: "monthly" as const,
+          priority: 0.6,
+          alternates,
+        }))(),
+      ]
     }),
-  )
+  ).then((entries) => entries.flat())
 
   const materialDetailRoutes: MetadataRoute.Sitemap = await Promise.all(
     MATERIAL_DETAIL_SLUGS.flatMap((slug) => {

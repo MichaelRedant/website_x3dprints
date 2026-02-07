@@ -1,9 +1,9 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import Faq from "@/components/Faq"
-import { SITE, buildLocalBusinessSchema } from "@/lib/seo"
+import { SITE, buildLocalBusinessSchema, buildFaqPageSchema } from "@/lib/seo"
 
 type Stat = { label: string; value: string; detail: string }
 type PillarLink = { href: string; label: string; external?: boolean }
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://www.x3dprints.be/en/sustainability/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/sustainability/",
-      en: "https://www.x3dprints.be/en/sustainability/",
+      "en-BE": "https://www.x3dprints.be/en/sustainability/",
       "x-default": "https://www.x3dprints.be/sustainability/",
     },
   },
@@ -170,16 +170,10 @@ const articleJsonLd = {
   inLanguage: "en-BE",
 }
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-
-    mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  items: faqItems,
+})
 
 function PillarIcon({ type }: { type: "material" | "energy" | "loop" }) {
   if (type === "material") {
@@ -425,4 +419,5 @@ export default function SustainabilityPage() {
     </main>
   )
 }
+
 

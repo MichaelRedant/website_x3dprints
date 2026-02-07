@@ -5,8 +5,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import { useLocale } from "./LocaleProvider"
 import { localizeHref } from "@/lib/i18n/paths"
-
-type ReadMoreLink = { label: string; href: string }
+import {
+  getRelatedLinks,
+  type RelatedLink as ReadMoreLink,
+  type RelatedLinksPageType,
+} from "@/lib/seo-related-links"
 
 const COPY = {
   nl: {
@@ -25,33 +28,8 @@ const COPY = {
   },
 }
 
-const defaultPrimary: Record<"nl" | "en", ReadMoreLink[]> = {
-  nl: [
-    { label: "3D print service", href: "/services" },
-    { label: "Materialen & richtlijnen", href: "/materials" },
-    { label: "Prijzen & calculator", href: "/pricing" },
-  ],
-  en: [
-    { label: "3D print service", href: "/services" },
-    { label: "Materials and guidelines", href: "/materials" },
-    { label: "Pricing and calculator", href: "/pricing" },
-  ],
-}
-
-const defaultSecondary: Record<"nl" | "en", ReadMoreLink[]> = {
-  nl: [
-    { label: "Segmenten & cases", href: "/segments" },
-    { label: "Portfolio", href: "/portfolio" },
-    { label: "Offerte aanvragen", href: "/contact" },
-  ],
-  en: [
-    { label: "Segments & cases", href: "/segments" },
-    { label: "Portfolio", href: "/portfolio" },
-    { label: "Request a quote", href: "/contact" },
-  ],
-}
-
 type ReadMoreLinksProps = {
+  pageType?: RelatedLinksPageType
   title?: string
   intro?: string
   primaryLinks?: ReadMoreLink[]
@@ -59,6 +37,7 @@ type ReadMoreLinksProps = {
 }
 
 export default function ReadMoreLinks({
+  pageType = "default",
   title,
   intro,
   primaryLinks,
@@ -66,10 +45,11 @@ export default function ReadMoreLinks({
 }: ReadMoreLinksProps) {
   const { locale } = useLocale()
   const copy = locale === "en" ? COPY.en : COPY.nl
+  const defaults = getRelatedLinks(pageType, locale)
   const resolvedTitle = title ?? copy.title
   const resolvedIntro = intro ?? copy.intro
-  const resolvedPrimary = primaryLinks ?? defaultPrimary[locale]
-  const resolvedSecondary = secondaryLinks ?? defaultSecondary[locale]
+  const resolvedPrimary = primaryLinks ?? defaults.primary
+  const resolvedSecondary = secondaryLinks ?? defaults.secondary
   const localize = (href: string) => localizeHref(href, locale)
   const localizedPrimary = resolvedPrimary.map((item) => ({ ...item, href: localize(item.href) }))
   const localizedSecondary = resolvedSecondary.map((item) => ({ ...item, href: localize(item.href) }))

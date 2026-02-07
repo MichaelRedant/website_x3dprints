@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/3d-printen-voor-beginners"
+const canonical = "https://www.x3dprints.be/blog/3d-printen-voor-beginners/"
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=3d-printen-voor-beginners"
 const contactHref = `/contact${utm}`
 const toolHref = `/materials${utm}#material-suggestion-tool`
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 const beginnerSteps = [
   "Bepaal het doel: prototype, decoratie, functioneel onderdeel of merchandising. Doel dicteert materiaal en afwerking.",
   "Kies materiaal: PLA voor design, PETG voor functionaliteit, TPU voor flexibiliteit. Bekijk de materialenpagina voor alle opties.",
-  "Verzamel bestanden: STL voor productie, STEP als je nog wijzigingen verwacht. Voeg referentiefoto’s of schetsen toe.",
+  "Verzamel bestanden: STL voor productie, STEP als je nog wijzigingen verwacht. Voeg referentiefotoâ€™s of schetsen toe.",
   "Vraag een offerte met context (aantal stuks, deadline, afwerking) en we begeleiden je door elke stap.",
 ]
 
@@ -48,14 +48,14 @@ const pitfalls = [
   "Te dunne wanden (minder dan 1.2 mm) breken makkelijk. Voeg ribs of fillets toe.",
   "Te strakke passtukken. Voorzie 0.2-0.3 mm speling voor PLA/PETG.",
   "Geen orientatie-opmerking. Laat weten welke zijde zichtbaar is zodat we support slim plaatsen.",
-  "Vergeten afwerking. Geef aan of je ruw, geschuurd of gelakt wil; dat beïnvloedt de prijs en planning.",
+  "Vergeten afwerking. Geef aan of je ruw, geschuurd of gelakt wil; dat beÃ¯nvloedt de prijs en planning.",
 ]
 
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   headline: "3D printen voor beginners",
   description:
     "Gids voor beginners met stappenplan, materiaalkeuze en veelgemaakte fouten. Inclusief tips voor begeleiding en opleiding.",
@@ -238,6 +238,7 @@ export default function BeginnersArticlePage() {
     </main>
   )
 }
+
 
 
 

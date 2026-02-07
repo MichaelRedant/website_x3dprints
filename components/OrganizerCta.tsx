@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import { cn } from "@/lib/utils"
+import { localizeHref } from "@/lib/i18n/paths"
 
 type Locale = "nl" | "en"
 
@@ -45,6 +46,7 @@ export default function OrganizerCta({
   className?: string
 }) {
   const t = copy[locale]
+  const localize = (href: string) => localizeHref(href, locale)
   const dark = variant === "dark"
   return (
     <Reveal
@@ -78,7 +80,7 @@ export default function OrganizerCta({
         </div>
         <div className="flex flex-wrap gap-3">
           <Link
-            href="/organizers"
+            href={localize("/organizers")}
             className={cn(
               "inline-flex items-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold transition",
               dark
@@ -90,7 +92,7 @@ export default function OrganizerCta({
             <span className="i-lucide-arrow-right" aria-hidden />
           </Link>
           <Link
-            href="/contact?material=organizers"
+            href={localize("/contact?material=organizers")}
             className={cn(
               "inline-flex items-center gap-2 rounded-xl border px-4 py-3 text-sm font-semibold transition",
               dark
@@ -102,7 +104,7 @@ export default function OrganizerCta({
             <span className="i-lucide-layout-grid" aria-hidden />
           </Link>
           <Link
-            href="/materials#material-suggestion-tool"
+            href={localize("/materials#material-suggestion-tool")}
             className={cn(
               "inline-flex items-center gap-2 rounded-xl border px-4 py-3 text-sm font-semibold transition",
               dark

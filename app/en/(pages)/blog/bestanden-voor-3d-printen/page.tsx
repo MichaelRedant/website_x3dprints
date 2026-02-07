@@ -1,217 +1,336 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import Reveal from "@/components/Reveal"
-import GlassCard from "@/components/GlassCard"
-import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import { buildArticleJsonLd } from "@/lib/seo"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import Faq from "@/components/Faq"
+import GlassCard from "@/components/GlassCard"
+import Reveal from "@/components/Reveal"
+import ShimmerButton from "@/components/ShimmerButton"
+import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/bestanden-voor-3d-printen/"
+const nlCanonical = "https://www.x3dprints.be/blog/bestanden-voor-3d-printen/"
+const datePublished = "2024-08-01"
+const dateModified = "2026-02-07"
+const viewerHref = "/en/viewer?utm_source=blog&utm_medium=cta&utm_campaign=files-en"
+const pricingHref = "/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=files-en"
+const materialsHref = "/en/materials#material-suggestion-tool"
+const locatiesHref = "/en/locaties?utm_source=blog&utm_medium=cta&utm_campaign=files-en"
+const contactHref = "/en/contact?material=pla-matte&quote=File%20check%20for%203D%20printing"
 
 export const metadata: Metadata = {
-  title: "Which files do you need for 3D printing? | X3DPrints Blog",
+  title: "Which files do you need for 3D printing? | X3DPrints",
   description:
-    "STL, STEP or native CAD? Learn which format to use for 3D printing, what resolution to export and how to submit a complete request.",
+    "STL, STEP or native CAD? This practical guide explains file formats, export checks and context that speeds up your 3D print quote.",
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/bestanden-voor-3d-printen/",
-      en: canonical,
-      "x-default": "https://www.x3dprints.be/blog/bestanden-voor-3d-printen/",
+      "nl-BE": nlCanonical,
+      "en-BE": canonical,
+      "x-default": nlCanonical,
     },
   },
   openGraph: {
     title: "Which files do you need for 3D printing?",
     description:
-      "Full guide on file formats, export settings and mesh checks for 3D printing. Includes checklist and upload tips.",
+      "Use this file handoff checklist to avoid delays: format choice, mesh checks, naming and project context.",
     url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Files for 3D printing" }],
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Files for 3D printing" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
   twitter: {
     card: "summary_large_image",
     title: "Which files do you need for 3D printing?",
-    description: "Checklist for STL/STEP export, mesh repair and documentation so your request can be processed immediately.",
-    images: ["/images/og-home.jpg"],
+    description: "Complete STL and STEP checklist for faster 3D print processing.",
+    images: ["/Logo.webp"],
   },
 }
+
+const tocItems = [
+  { id: "files-formats", label: "Which formats work best?" },
+  { id: "files-export", label: "How do you export correctly?" },
+  { id: "files-context", label: "Which extra context helps most?" },
+  { id: "files-faq", label: "FAQ about file handoff" },
+  { id: "files-sources", label: "Sources and references" },
+]
 
 const formatCards = [
   {
     format: "STL",
-    description:
-      "Ideal for final production. Export with enough resolution (0.01-0.05 mm). Check for non-manifold edges and duplicate faces before you upload.",
-    tips: ["Choose Binary STL to keep files compact", "Split moving parts into separate STLs"],
+    description: "Best for final production when geometry is fixed and ready to print.",
+    tips: ["Keep units consistent", "Repair holes and non-manifold geometry before upload"],
   },
   {
     format: "STEP",
-    description:
-      "Perfect when iterations are expected. We can tweak dimensions, check wall thickness and review tolerance in STEP or native CAD.",
-    tips: ["Export at assembly level so the reference origin stays intact", "Remove irrelevant bodies such as sketch helpers"],
+    description: "Best when design iterations are still likely and dimensions may need tuning.",
+    tips: ["Preserve assembly structure", "Include critical mating faces in your notes"],
   },
   {
     format: "Native CAD + PDF",
-    description:
-      "For complex projects we prefer the original CAD plus a PDF with dimensions. That keeps mating surfaces and interfaces correct.",
-    tips: ["Use clear layer names", "Add a material list or BOM when multiple parts belong together"],
+    description: "Best for complex projects where tolerances, revisions and interfaces matter.",
+    tips: ["Tag revision versions clearly", "Add dimension notes in a short PDF"],
   },
 ]
 
-const exportSteps = [
-  "Check if the model is watertight (no holes). Tools: Fusion Inspect, SolidWorks Check, Meshmixer.",
-  "Remove flipped normals and stray triangles to avoid print artefacts.",
-  "Lock units: export in millimetre and include it in the filename (e.g. bracket-mm-v03.stl).",
-  "Zip multiple files together and add a short readme with context (material, quantities, deadline).",
+const exportChecklist = [
+  "Validate watertight meshes and remove stray surfaces.",
+  "Use clear filenames with revision and unit naming.",
+  "Bundle multi-part projects in a zip with a short readme.",
+  "Share critical dimensions and tolerance notes in the briefing.",
 ]
 
-const documentationTips = [
-  "Add reference images or renders so we understand the required orientation and look.",
-  "Write tolerance notes (e.g. hole for M3 screw: 2.9 mm) directly in the message or on a PDF.",
-  "Use the viewer to share links to large cloud files (Dropbox/Drive) to avoid email limits.",
+const contextTips = [
+  "Add reference images for orientation and expected finish.",
+  "Share your preferred material, or request guidance via the material tool.",
+  "State your target deadline and delivery preference up front.",
+  "Run a quick visual sanity-check in the viewer before submitting.",
+]
+
+const faqItems = [
+  {
+    q: "Is STL enough for a quote?",
+    a: "Yes, for many projects STL is enough when the geometry is final and units are clear.",
+  },
+  {
+    q: "When should we send STEP instead of STL?",
+    a: "Send STEP when dimensions, tolerances or fit details may still change before production.",
+  },
+  {
+    q: "What causes most intake delays?",
+    a: "Missing context, unclear units and mesh issues usually create extra review rounds.",
+  },
+]
+
+const references = [
+  {
+    label: "Google Search docs: crawlable links",
+    href: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+  },
+  {
+    label: "All3DP FDM process explainer",
+    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+  },
+  {
+    label: "Prusa material guide",
+    href: "https://help.prusa3d.com/article/material-guide_220",
+  },
 ]
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "Which files do you need for 3D printing?",
   description:
-    "STL, STEP or native CAD? Learn which format to use for 3D printing, what resolution to export and how to submit a complete request.",
-  datePublished: "2024-09-01",
-  dateModified: "2024-09-01",
+    "File preparation guide for STL and STEP with practical export checks and faster quote handoff.",
+  datePublished,
+  dateModified,
+  image: "/Logo.webp",
   inLanguage: "en-BE",
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  mainEntityOfPage: canonical,
+  items: faqItems.map((item) => ({ q: item.q, a: item.a })),
+})
+
+const howToJsonLd = buildHowToSchema({
+  name: "Prepare 3D print files in 4 steps",
+  description:
+    "Choose the right file format, validate your export and send complete project context for faster intake.",
+  inLanguage: "en-BE",
+  mainEntityOfPage: canonical,
+  totalTime: "PT3M",
+  steps: [
+    {
+      name: "Choose STL or STEP",
+      text: "Use STL for fixed geometry and STEP when iterations may still happen.",
+    },
+    {
+      name: "Run mesh and naming checks",
+      text: "Confirm watertight geometry, clear units and revision naming.",
+    },
+    {
+      name: "Validate in the 3D viewer",
+      url: viewerHref,
+    },
+    {
+      name: "Send prefilled request",
+      url: contactHref,
+    },
+  ],
+  toolNames: ["X3DPrints 3D viewer", "Material Suggestion Tool"],
+  supplyNames: ["STL or STEP file", "Short project briefing"],
 })
 
 export default function FilesArticleEnPage() {
   return (
-    <main className="relative">
+    <main className="relative overflow-hidden px-6 pb-24 pt-16 sm:px-8 lg:px-12">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(150%_85%_at_50%_-15%,rgba(16,185,129,0.18),transparent_70%)]"
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(130%_60%_at_50%_0%,rgba(16,185,129,.16),transparent_72%)]"
       />
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.07]" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.08]" />
 
-      <section className="px-6 pb-12 pt-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
-          <Reveal className="stacked-content">
-            <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
-              <ol className="flex flex-wrap gap-2">
-                <li>
-                  <Link
-                    href="/en/blog"
-                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li aria-hidden>/</li>
-                <li className="font-medium text-slate-700">Files for 3D printing</li>
-              </ol>
-            </nav>
-            <h1 className="mt-6 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              Which files do you need for 3D printing?
-            </h1>
-            <p className="mt-4 text-lg text-slate-700">
-              Send STL for production and STEP when you expect changes. This guide shows how to export, check and document your files for a fast quote.
-            </p>
-            <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href="/en/viewer">Upload now</ShimmerButton>
-              <Link
-                href="/en/contact"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
-              >
-                Request a design review
-              </Link>
+      <article className="mx-auto max-w-5xl space-y-10">
+        <header className="space-y-4">
+          <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
+            <ol className="flex flex-wrap gap-2">
+              <li>
+                <Link href="/en/blog" className="font-medium text-indigo-600 hover:text-indigo-500">
+                  Blog
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li className="font-medium text-slate-700">Files for 3D printing</li>
+            </ol>
+          </nav>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600">File guide</p>
+          <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+            Which files do you need for 3D printing?
+          </h1>
+          <p className="max-w-3xl text-lg text-slate-700">
+            Quick answer: STL for fixed geometry, STEP for iterative work. A clean handoff with context reduces delays.
+          </p>
+          <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
+            Last updated: February 7, 2026
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <ShimmerButton href={viewerHref} event={{ action: "cta_click", category: "blog_files_en_top", label: "viewer" }}>
+              Check in viewer
+            </ShimmerButton>
+            <ShimmerButton
+              href={contactHref}
+              className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+              event={{ action: "cta_click", category: "blog_files_en_top", label: "contact_prefill" }}
+            >
+              Request file check
+            </ShimmerButton>
+            <Link
+              href={pricingHref}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300 hover:bg-slate-50"
+            >
+              Review pricing anchors
+            </Link>
+          </div>
+          <ContentTableOfContents title="Contents" items={tocItems} className="max-w-2xl" />
+        </header>
+
+        <section id="files-formats" className="scroll-mt-28">
+          <Reveal>
+            <h2 className="text-2xl font-semibold text-slate-900">Which formats work best?</h2>
+            <div className="mt-4 grid gap-4 md:grid-cols-3">
+              {formatCards.map((card) => (
+                <GlassCard key={card.format} className="p-6">
+                  <h3 className="text-lg font-semibold text-slate-900">{card.format}</h3>
+                  <p className="mt-2 text-sm text-slate-700">{card.description}</p>
+                  <ul className="mt-3 space-y-1 text-xs text-slate-500">
+                    {card.tips.map((tip) => (
+                      <li key={tip} className="flex items-start gap-2">
+                        <span aria-hidden>-</span>
+                        <span>{tip}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </GlassCard>
+              ))}
             </div>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
-          {formatCards.map((card) => (
-            <Reveal key={card.format}>
-              <GlassCard className="h-full border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Format</p>
-                <h2 className="mt-2 text-xl font-semibold text-slate-900">{card.format}</h2>
-                <p className="mt-2 text-sm text-slate-600">{card.description}</p>
-                <ul className="mt-3 space-y-1.5 text-xs text-slate-500">
-                  {card.tips.map((tip) => (
-                    <li key={tip} className="flex gap-2">
-                      <span aria-hidden>-</span>
-                      <span>{tip}</span>
-                    </li>
-                  ))}
-                </ul>
-              </GlassCard>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+        <section id="files-export" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Export checklist</h2>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                {exportSteps.map((step) => (
-                  <li key={step} className="flex items-start gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
-                    <span>{step}</span>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">How do you export correctly?</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {exportChecklist.map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-500" aria-hidden />
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <ShimmerButton href={viewerHref} event={{ action: "cta_click", category: "blog_files_en_mid", label: "viewer" }}>
+                  Open viewer
+                </ShimmerButton>
+                <ShimmerButton
+                  href={contactHref}
+                  className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+                  event={{ action: "cta_click", category: "blog_files_en_mid", label: "contact_prefill" }}
+                >
+                  Start request
+                </ShimmerButton>
+              </div>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+        <section id="files-context" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900">Documentation and communication</h2>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                {documentationTips.map((tip) => (
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Which extra context helps most?</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {contextTips.map((tip) => (
                   <li key={tip} className="flex items-start gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
                     <span>{tip}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-xs text-slate-500">
-                The more complete your info, the faster we can confirm pricing and lead time. Feel free to add a short video or photo of the intended use.
+              <p className="mt-4 text-sm text-slate-600">
+                Combine this with{" "}
+                <Link href="/en/services" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  services
+                </Link>{" "}
+                and{" "}
+                <Link href={materialsHref} className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  material advice
+                </Link>{" "}
+                for faster production decisions. For planning, you can also review{" "}
+                <Link href={locatiesHref} className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  locations
+                </Link>
+                .
               </p>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
+        <section id="files-faq" className="scroll-mt-28">
+          <Faq title="FAQ about files for 3D printing" items={faqItems} />
+        </section>
+
+        <section id="files-sources" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="flex flex-col gap-6 border border-white/40 bg-white/85 p-6 shadow-xl backdrop-blur sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Next step</p>
-                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Drop your files</h2>
-                <p className="mt-2 text-sm text-slate-600">
-                  Use the viewer for STL/STEP. We review and share feedback on material, orientation and price.
-                </p>
-              </div>
-              <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href="/en/viewer">Upload now</ShimmerButton>
-                <Link href="/en/services" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
-                  Explore design service
-                </Link>
-              </div>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
+      </article>
+
+      <BlogReadMore />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <BlogReadMore />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
     </main>
   )
 }
-

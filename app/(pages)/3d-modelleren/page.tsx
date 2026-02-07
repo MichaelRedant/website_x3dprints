@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   title: "3D modelleren voor print | Fusion 360, Tinkercad, Blender",
   description:
     "3D modelleren op maat van 3D-printen. Fusion 360 voor technische onderdelen, Tinkercad voor snelle concepten en Blender voor organische vormen.",
-  alternates: { canonical: "https://www.x3dprints.be/3d-modelleren/", languages: { "nl-BE": "https://www.x3dprints.be/3d-modelleren/", en: "https://www.x3dprints.be/en/3d-modelleren/", "x-default": "https://www.x3dprints.be/3d-modelleren/", }, },
+  alternates: { canonical: "https://www.x3dprints.be/3d-modelleren/", languages: { "nl-BE": "https://www.x3dprints.be/3d-modelleren/", "en-BE": "https://www.x3dprints.be/en/3d-modelleren/", "x-default": "https://www.x3dprints.be/3d-modelleren/", }, },
   openGraph: {
     title: "3D modelleren voor 3D prints | X3DPrints",
     description:
@@ -25,6 +26,17 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
+  const tocItems = [
+    { id: "modeling-tooling", label: "Welke software gebruiken we voor 3D modelleren?" },
+    { id: "modeling-workflow", label: "Hoe loopt de workflow van idee naar print?" },
+    { id: "modeling-sources", label: "Bronnen en referenties" },
+  ]
+  const references = [
+    { label: "Autodesk Fusion 360 productpagina", url: "https://www.autodesk.com/products/fusion-360/overview" },
+    { label: "Tinkercad van Autodesk", url: "https://www.tinkercad.com/" },
+    { label: "Blender foundation", url: "https://www.blender.org/" },
+  ]
+  const lastUpdatedLabel = "Laatst bijgewerkt: 6 februari 2026"
   const tooling = [
     {
       title: "Autodesk Fusion 360",
@@ -107,6 +119,7 @@ export default function Page() {
               Tinkercad voor snelle concepten en Blender slechts occasioneel voor organische vormen. Zo blijft je bestand geschikt
               voor slicing zonder verrassingen.
             </p>
+            <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
               <ShimmerButton href="/contact">Plan een 3D-model</ShimmerButton>
               <Link
@@ -122,12 +135,19 @@ export default function Page() {
                 Material Suggestion Tool
               </Link>
             </div>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="mt-6 max-w-2xl" />
           </Reveal>
         </div>
       </section>
 
-      <section className="px-6 pb-14 sm:px-8 lg:px-12">
+      <section id="modeling-tooling" className="scroll-mt-28 px-6 pb-14 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
+          <Reveal className="mb-6">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Softwarestack voor printbare modellen</h2>
+            <p className="mt-2 max-w-3xl text-slate-600">
+              Per project kies ik de snelste route naar een printbaar resultaat: parametrisch waar passing telt, snel conceptueel waar iteraties primeren.
+            </p>
+          </Reveal>
           <Reveal className="grid gap-6 sm:grid-cols-3">
             {tooling.map((tool) => (
               <GlassCard
@@ -150,7 +170,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="modeling-workflow" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
             <GlassCard className="border-white/50 bg-gradient-to-br from-white/85 to-white/60 p-6 shadow-sm ring-1 ring-white/60">
@@ -193,6 +213,30 @@ export default function Page() {
                 </Link>
               </div>
             </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="modeling-sources" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="border-white/50 bg-white/85 p-6 ring-1 ring-white/60">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Bronnen en referenties</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Deze bronnen gebruiken we om tooling, terminologie en workflows actueel te houden.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
           </Reveal>
         </div>
       </section>

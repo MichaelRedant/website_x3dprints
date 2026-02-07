@@ -1,17 +1,17 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/maker-monday-fdm-scharnieren"
+const canonical = "https://www.x3dprints.be/blog/maker-monday-fdm-scharnieren/"
 const publishedDate = "2025-12-08T08:00:00+01:00"
 
 export const metadata: Metadata = {
   title: "Maker Monday #1: FDM scharnieren ontwerpen die echt werken | X3DPrints",
   description:
-    "How-to gids voor FDM scharnieren. Materiaalkeuze, oriëntatie, wanddiktes, pin-toleranties en verstevigingen zodat PLA, PETG of TPU scharnieren betrouwbaar openen.",
+    "How-to gids voor FDM scharnieren. Materiaalkeuze, oriÃ«ntatie, wanddiktes, pin-toleranties en verstevigingen zodat PLA, PETG of TPU scharnieren betrouwbaar openen.",
   alternates: { canonical },
   openGraph: {
     title: "Maker Monday #1: Zo ontwerp je sterke FDM scharnieren",
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
 
 const heroStats = [
   { label: "Aanbevolen materiaal", value: "PETG", detail: "Taai, buigt voor het breekt" },
-  { label: "Min. wanddikte", value: "2.4 – 3.2 mm", detail: "Afhankelijk van materiaal en impactzone" },
-  { label: "Pin speling", value: "+0.20 – 0.40 mm", detail: "PLA het minst, TPU het meest" },
+  { label: "Min. wanddikte", value: "2.4 â€“ 3.2 mm", detail: "Afhankelijk van materiaal en impactzone" },
+  { label: "Pin speling", value: "+0.20 â€“ 0.40 mm", detail: "PLA het minst, TPU het meest" },
 ]
 
 const materials = [
@@ -79,7 +79,7 @@ const materials = [
     name: "TPU",
     highlights: [
       "Voor flex-hinges en snaps",
-      "Ideaal als silent damper of geïntegreerde bumper",
+      "Ideaal als silent damper of geÃ¯ntegreerde bumper",
       "Link: Filament Vrijdag TPU",
     ],
     link: "/blog/filament-vrijdag-tpu",
@@ -107,18 +107,18 @@ const wallGuidelines = [
 ]
 
 const pinGuidelines = [
-  { type: "Kleine doosjes", pin: "2.5 – 3 mm", tolerances: "PLA +0.20 mm, PETG +0.25 mm" },
-  { type: "Middelgrote deksels", pin: "3.5 – 4 mm", tolerances: "Zelfde spelingsregels, socket ruimer houden" },
-  { type: "Zware covers", pin: "4.5 – 6 mm", tolerances: "PETG +0.30 mm, TPU insert +0.40 mm mogelijk" },
+  { type: "Kleine doosjes", pin: "2.5 â€“ 3 mm", tolerances: "PLA +0.20 mm, PETG +0.25 mm" },
+  { type: "Middelgrote deksels", pin: "3.5 â€“ 4 mm", tolerances: "Zelfde spelingsregels, socket ruimer houden" },
+  { type: "Zware covers", pin: "4.5 â€“ 6 mm", tolerances: "PETG +0.30 mm, TPU insert +0.40 mm mogelijk" },
 ]
 
 const reinforcementTips = [
   {
     title: "Radiale ribs",
-    detail: "Ribs van 1–1.2 mm die uit de cilinder vertrekken verhogen de stijfheid met 20–30%.",
+    detail: "Ribs van 1â€“1.2 mm die uit de cilinder vertrekken verhogen de stijfheid met 20â€“30%.",
   },
   {
-    title: "Fillets van 2–4 mm",
+    title: "Fillets van 2â€“4 mm",
     detail: "Rond de aansluiting van cilinder en body af zodat stress zich kan verspreiden.",
   },
   {
@@ -212,7 +212,7 @@ export default function MakerMondayFdmScharnierenPage() {
               Hoe ontwerp je een FDM scharnier dat niet bij de eerste rotatie breekt?
             </h1>
             <p className="mt-4 text-lg text-slate-700">
-              Een goed scharnier is geen miniatuurdeur. Het faalt niet door filament, maar door ontwerp: slechte oriëntatie,
+              Een goed scharnier is geen miniatuurdeur. Het faalt niet door filament, maar door ontwerp: slechte oriÃ«ntatie,
               te dunne wanden of foute tolerantie. Dit is exact hoe wij scharnieren uit PLA, PETG en TPU laten overleven, cycle
               na cycle.
             </p>
@@ -232,7 +232,7 @@ export default function MakerMondayFdmScharnierenPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-slate-500">
-              Gepubliceerd op 8 december 2025 • Deel van de Maker Monday knowledge hub.
+              Gepubliceerd op 8 december 2025 â€¢ Deel van de Maker Monday knowledge hub.
             </p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
@@ -287,7 +287,7 @@ export default function MakerMondayFdmScharnierenPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">2. Oriëntatie: lagen loodrecht op de as</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">2. OriÃ«ntatie: lagen loodrecht op de as</h2>
               <p className="mt-2 text-sm text-slate-600">
                 De grootste fout? Een scharnier rechtop printen omdat dat minder support geeft. De layers worden dan de
                 zwakste schakel. Houd je aan deze regels:
@@ -403,7 +403,7 @@ export default function MakerMondayFdmScharnierenPage() {
               </p>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-600">
                 <li>Gebruik een klassieke male-female opbouw.</li>
-                <li>Beperk je tot 2–3 tanden per zijde voor makkelijke assemblage.</li>
+                <li>Beperk je tot 2â€“3 tanden per zijde voor makkelijke assemblage.</li>
                 <li>Laat een steunvlak onder elke tand zodat de pin niet scheef trekt.</li>
               </ul>
               <p className="mt-4 text-sm text-slate-600">
@@ -534,6 +534,7 @@ export default function MakerMondayFdmScharnierenPage() {
     </main>
   )
 }
+
 
 
 

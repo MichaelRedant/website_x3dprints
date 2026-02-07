@@ -1,4 +1,4 @@
-// app/(pages)/faq/page.tsx
+﻿// app/(pages)/faq/page.tsx
 import Link from "next/link"
 import type { Metadata } from "next"
 
@@ -7,7 +7,9 @@ import Faq from "@/components/Faq"
 import GlassOrb from "@/components/GlassOrb"
 import ShimmerButton from "@/components/ShimmerButton"
 import GlassCard from "@/components/GlassCard"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { servicesFaq } from "@/content/services-faq"
+import { buildFaqPageSchema } from "@/lib/seo"
 
 // --- SEO via Metadata API ---
 export const revalidate = 86_400 // 24u cache
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
     canonical: "https://www.x3dprints.be/faq/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/faq/",
-      en: "https://www.x3dprints.be/en/faq/",
+      "en-BE": "https://www.x3dprints.be/en/faq/",
       "x-default": "https://www.x3dprints.be/faq/",
     },
   },
@@ -206,19 +208,23 @@ export default function Page() {
     seen.add(key)
     return true
   })
+  const tocItems = [
+    { id: "faq-main", label: "Veelgestelde vragen per onderwerp" },
+    { id: "faq-help", label: "Wat als je nog vragen hebt?" },
+    { id: "faq-sources", label: "Bronnen en referenties" },
+  ]
+  const references = [
+    { label: "ISO/ASTM 52900 terminologie voor additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
+    { label: "Prusa materialenoverzicht (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+    { label: "Autodesk uitleg over additive manufacturing", url: "https://www.autodesk.com/solutions/additive-manufacturing/what-is-additive-manufacturing" },
+  ]
+  const lastUpdatedLabel = "Laatst bijgewerkt: 6 februari 2026"
 
   // JSON-LD (FAQPage)
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-
-    inLanguage: ["nl-BE", "en-BE"],
-    mainEntity: faq.map((i) => ({
-      "@type": "Question",
-      name: i.q,
-      acceptedAnswer: { "@type": "Answer", text: i.a },
-    })),
-  }
+  const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  items: faq,
+})
 
   return (
     <main className="relative overflow-clip">
@@ -248,6 +254,7 @@ export default function Page() {
               <p className="mt-4 max-w-2xl text-pretty text-lg text-slate-700">
                 Alle antwoorden op een plek: materialen, levertijden, geo-levering (Herzele - Gent - Antwerpen), viewer-checklist en nabewerking.
               </p>
+              <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <ShimmerButton href="/contact" aria-label="Stel je vraag of vraag een offerte aan">
                   Stel je vraag
@@ -259,6 +266,7 @@ export default function Page() {
                   Materialen & richtlijnen
                 </Link>
               </div>
+              <ContentTableOfContents title="Inhoud" items={tocItems} className="mt-6 max-w-xl" />
             </div>
 
             <div className="flex-1">
@@ -286,8 +294,14 @@ export default function Page() {
       </section>
 
       {/* FAQ blok */}
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+      <section id="faq-main" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
+          <Reveal className="mb-6">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Veelgestelde vragen per onderwerp</h2>
+            <p className="mt-2 max-w-3xl text-slate-600">
+              Hieronder vind je praktische antwoorden over levering, materiaalkeuze, bestandsformaten en workflow.
+            </p>
+          </Reveal>
           <Reveal className="mb-6 flex flex-wrap items-center gap-3">
             <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
               Bambu enthousiast
@@ -301,29 +315,55 @@ export default function Page() {
           </Reveal>
 
           <Reveal>
-            <Faq city="België" items={faq} />
+            <Faq city="Belgie" items={faq} />
           </Reveal>
 
-          <Reveal className="mt-10 grid gap-4 sm:grid-cols-2">
-            <GlassCard className="animate-[fadeInUp_.7s_ease_out_both]">
-              <div className="text-sm font-semibold text-slate-800">Nog vragen?</div>
+          <section id="faq-help" className="scroll-mt-28">
+            <Reveal className="mt-10 grid gap-4 sm:grid-cols-2">
+              <GlassCard className="animate-[fadeInUp_.7s_ease_out_both]">
+                <div className="text-sm font-semibold text-slate-800">Nog vragen?</div>
+                <p className="mt-2 text-sm text-slate-600">
+                  Geen antwoord gevonden? Stuur je bestand via{" "}
+                  <Link href="/contact" className="text-teal-700 underline underline-offset-2">
+                    contact
+                  </Link>{" "}
+                  met gewenste leverdatum en gemeente/district. We antwoorden meestal binnen een werkdag.
+                </p>
+              </GlassCard>
+              <GlassCard className="animate-[fadeInUp_.8s_ease_out_both]">
+                <div className="text-sm font-semibold text-slate-800">Check de viewer</div>
+                <p className="mt-2 text-sm text-slate-600">
+                  Upload je STL/STEP in de{" "}
+                  <Link href="/viewer" className="text-teal-700 underline underline-offset-2">
+                    viewer
+                  </Link>{" "}
+                  en noteer de gewenste orientatie. Tip: zichtzijde boven, kritieke maat in XY vlak.
+                </p>
+              </GlassCard>
+            </Reveal>
+          </section>
+        </div>
+      </section>
+
+      <section id="faq-sources" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard>
+              <h2 className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <p className="mt-2 text-sm text-slate-600">
-                Geen antwoord gevonden? Stuur je bestand via{" "}
-                <Link href="/contact" className="text-teal-700 underline underline-offset-2">
-                  contact
-                </Link>{" "}
-                met gewenste leverdatum en gemeente/district. We antwoorden meestal binnen een werkdag.
+                Deze referenties gebruiken we voor terminologie en materiaaluitleg in deze FAQ.
               </p>
-            </GlassCard>
-            <GlassCard className="animate-[fadeInUp_.8s_ease_out_both]">
-              <div className="text-sm font-semibold text-slate-800">Check de viewer</div>
-              <p className="mt-2 text-sm text-slate-600">
-                Upload je STL/STEP in de{" "}
-                <Link href="/viewer" className="text-teal-700 underline underline-offset-2">
-                  viewer
-                </Link>{" "}
-                en noteer de gewenste orientatie. Tip: zichtzijde boven, kritieke maat in XY vlak.
-              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
         </div>
@@ -334,4 +374,5 @@ export default function Page() {
     </main>
   )
 }
+
 

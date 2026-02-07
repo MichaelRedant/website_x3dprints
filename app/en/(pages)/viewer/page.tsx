@@ -5,6 +5,9 @@ import Container from "@/components/Container"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ModelViewerClient from "@/components/ModelViewerClient"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import ShimmerButton from "@/components/ShimmerButton"
+import { buildHowToSchema } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "Realtime 3D Model Viewer for STLs | X3DPrints",
@@ -14,7 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://www.x3dprints.be/en/viewer/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/viewer/",
-      en: "https://www.x3dprints.be/en/viewer/",
+      "en-BE": "https://www.x3dprints.be/en/viewer/",
       "x-default": "https://www.x3dprints.be/viewer/",
     },
   },
@@ -31,6 +34,20 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
+  const tocItems = [
+    { id: "viewer-canvas", label: "How does the 3D preview work?" },
+    { id: "viewer-highlights", label: "Which technical highlights are included?" },
+    { id: "viewer-workflow", label: "How do you move from preview to quote?" },
+    { id: "viewer-next", label: "What is the fastest next step?" },
+    { id: "viewer-sources", label: "Sources and references" },
+  ]
+  const references = [
+    { label: "Three.js documentation", url: "https://threejs.org/docs/" },
+    { label: "Google WebGL performance fundamentals", url: "https://developers.google.com/web/fundamentals/performance/rendering" },
+    { label: "Schema.org HowTo", url: "https://schema.org/HowTo" },
+  ]
+  const lastUpdatedLabel = "Last updated: February 6, 2026"
+
   const bullets = [
     "WebGL viewer with orbit controls and auto-rotate (toggleable)",
     "On-device parsing with STL/OBJ/GLB support up to ~15 MB",
@@ -70,17 +87,16 @@ export default function Page() {
     },
   ]
 
-  const howToJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-
+  const pageUrl = "https://www.x3dprints.be/en/viewer/"
+  const howToJsonLd = buildHowToSchema({
     inLanguage: "en-BE",
+    mainEntityOfPage: pageUrl,
     name: "View STL/OBJ in the X3DPrints 3D Viewer",
     description: "Fast in-browser preview without uploads to servers, including mesh stats.",
-    supply: [{ "@type": "HowToSupply", name: "STL, OBJ or GLB file (max ~15 MB)" }],
-    step: workflow.map((item) => ({ "@type": "HowToStep", name: item.step, text: item.copy })),
-    tool: [{ "@type": "HowToTool", name: "X3DPrints WebGL viewer" }],
-  }
+    steps: workflow.map((item) => ({ name: item.step, text: item.copy })),
+    supplyNames: ["STL, OBJ or GLB file (max ~15 MB)"],
+    toolNames: ["X3DPrints WebGL viewer"],
+  })
 
   return (
     <main className="relative overflow-hidden">
@@ -99,6 +115,7 @@ export default function Page() {
             <p className="mt-6 text-lg text-slate-600">
               Upload your 3D model and explore it in a polished WebGL viewer. No wait times, no server upload - just instant mesh insights and an experience in X3DPrints style.
             </p>
+            <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <ul className="mt-8 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
               {bullets.map((item) => (
                 <li
@@ -111,11 +128,23 @@ export default function Page() {
               ))}
             </ul>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
+              <ShimmerButton
+                href="/en/contact?quote=Viewer%20check%20completed%2C%20requesting%20quote"
+                event={{ action: "cta_click", category: "viewer_hero_en", label: "contact_prefill" }}
+              >
+                Request quote after preview
+              </ShimmerButton>
               <Link
                 href="/en/materials#material-suggestion-tool"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
                 Material Suggestion Tool
+              </Link>
+              <Link
+                href="/en/services"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+              >
+                View services
               </Link>
               <Link
                 href="/en/blog"
@@ -124,11 +153,12 @@ export default function Page() {
                 Read the blog
               </Link>
             </div>
+            <ContentTableOfContents title="Contents" items={tocItems} className="mt-6 max-w-2xl" />
           </Reveal>
         </Container>
       </section>
 
-      <section className="pb-20">
+      <section id="viewer-canvas" className="scroll-mt-28 pb-20">
         <Container>
           <Reveal>
             <div className="rounded-[2rem] border border-white/30 bg-white/60 p-4 shadow-2xl backdrop-blur">
@@ -138,7 +168,7 @@ export default function Page() {
         </Container>
       </section>
 
-      <section className="pb-20">
+      <section id="viewer-highlights" className="scroll-mt-28 pb-20">
         <Container>
           <Reveal className="grid gap-6 lg:grid-cols-3">
             {highlights.map((item) => (
@@ -151,7 +181,7 @@ export default function Page() {
         </Container>
       </section>
 
-      <section className="pb-24">
+      <section id="viewer-workflow" className="scroll-mt-28 pb-24">
         <Container>
           <Reveal className="rounded-3xl border border-slate-200/70 bg-white/80 p-8 shadow-lg">
             <h2 className="text-2xl font-semibold text-slate-900">From preview to print</h2>
@@ -172,6 +202,54 @@ export default function Page() {
             <p className="mt-6 text-xs text-slate-500">
               Tip: share the face/vertex count with your request. It helps us pick suitable print settings immediately.
             </p>
+          </Reveal>
+        </Container>
+      </section>
+
+      <section id="viewer-next" className="scroll-mt-28 pb-20">
+        <Container>
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">What is your fastest next step?</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Use your preview as intake context so we can lock material choice and pricing faster.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <ShimmerButton
+                  href="/en/contact?quote=Viewer%20analysis%20completed%2C%20requesting%20pricing"
+                  event={{ action: "cta_click", category: "viewer_next_en", label: "contact_prefill" }}
+                >
+                  Start quote flow
+                </ShimmerButton>
+                <ShimmerButton
+                  href="/en/pricing?utm_source=viewer&utm_medium=cta&utm_campaign=viewer-next-en"
+                  className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+                  event={{ action: "cta_click", category: "viewer_next_en", label: "pricing" }}
+                >
+                  Open pricing calculator
+                </ShimmerButton>
+              </div>
+            </GlassCard>
+          </Reveal>
+        </Container>
+      </section>
+      <section id="viewer-sources" className="scroll-mt-28 pb-20">
+        <Container>
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
           </Reveal>
         </Container>
       </section>

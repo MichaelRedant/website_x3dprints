@@ -1,12 +1,13 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
+import BlogReadMore from "@/components/BlogReadMore"
+import { buildFaqPageSchema } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/blog/3d-printen-herfst-halloween"
+const canonical = "https://www.x3dprints.be/blog/3d-printen-herfst-halloween/"
 const datePublished = "2024-10-01"
 const dateModified = "2026-02-04"
 
@@ -36,9 +37,9 @@ export const metadata: Metadata = {
 const tips = [
   "Gebruik PLA Silk of Marble voor pumpkins en statues; Translucent voor lantaarns met leds of fairy lights.",
   "Layerhoogte 0,16-0,2 mm; houd wanddikte >1,2 mm voor stevige decor die je kunt ophangen of neerzetten.",
-  "Oriënteer zichtzijden omhoog en laat onderkant vlak voor stabiele plaatsing.",
+  "OriÃ«nteer zichtzijden omhoog en laat onderkant vlak voor stabiele plaatsing.",
   "Integreer kabelgaten of magneten voor led-strips of battery packs en zorg voor ventilatie bij warmere leds.",
-  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan €45/uur.",
+  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan â‚¬45/uur.",
 ]
 
 const checklist = [
@@ -51,7 +52,7 @@ const checklist = [
 const faqItems = [
   {
     q: "Kunnen jullie pumpkins hol printen?",
-    a: "Ja. We houden 2-3 perimeter lagen, aangepaste infill en openingsgaten voor leds/batterijen. Lever STL/STEP of laat ons ontwerpen aan €45/uur.",
+    a: "Ja. We houden 2-3 perimeter lagen, aangepaste infill en openingsgaten voor leds/batterijen. Lever STL/STEP of laat ons ontwerpen aan â‚¬45/uur.",
   },
   {
     q: "Wat is het beste materiaal voor spooky props?",
@@ -59,11 +60,11 @@ const faqItems = [
   },
   {
     q: "Hoe lever je breekbare decor veilig?",
-    a: "Gescheiden verpakt met schuim; EV-levering in zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) of pakketdienst. Afhalen kan gratis.",
+    a: "Gescheiden verpakt met schuim; EV-levering in zones (Zone 1 â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45) of pakketdienst. Afhalen kan gratis.",
   },
   {
     q: "Is het 3D model inbegrepen?",
-    a: "Nee. Het ontwerpbestand is niet inbegrepen in de printprijs. Lever STL/STEP of kies ontwerpservice aan €45/uur; we optimaliseren wanddiktes en supports.",
+    a: "Nee. Het ontwerpbestand is niet inbegrepen in de printprijs. Lever STL/STEP of kies ontwerpservice aan â‚¬45/uur; we optimaliseren wanddiktes en supports.",
   },
   {
     q: "Kun je primeren of schilderklaar leveren?",
@@ -75,7 +76,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   headline: "3D printen voor herfst & Halloween",
   description:
     "Pumpkins, haunted props en sfeerlantaarns in Silk, Marble en Translucent PLA. Tips voor supports, lichtdiffusie en levering.",
@@ -93,20 +94,13 @@ const articleJsonLd = {
   image: ["https://www.x3dprints.be/images/og-home.jpg"],
 }
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-
-  inLanguage: ["nl-BE", "en-BE"],
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  items: faqItems,
+})
 
 const inspirationImages = [
-  { src: "/images/portfolio/Halloween1.webp", alt: "3D geprinte Halloween decor set 1" },
+  { src: "/images/portfolio/halloween1.webp", alt: "3D geprinte Halloween decor set 1" },
   { src: "/images/portfolio/Halloween2.webp", alt: "3D geprinte Halloween decor set 2" },
   { src: "/images/portfolio/Halloween3.webp", alt: "3D geprinte Halloween decor set 3" },
   { src: "/images/portfolio/Halloween4.webp", alt: "3D geprinte Halloween decor set 4" },
@@ -130,7 +124,7 @@ export default function BlogAutumnHalloween() {
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Pumpkins, haunted props en sfeerlantaarns in Silk, Marble en Translucent PLA. Ontwerpbestand niet inbegrepen; lever
-              STL/STEP of kies ontwerpservice (€45/uur). EV-levering voor breekbare onderdelen of pakketdienst als je verder zit.
+              STL/STEP of kies ontwerpservice (â‚¬45/uur). EV-levering voor breekbare onderdelen of pakketdienst als je verder zit.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact">Plan je Halloween print</ShimmerButton>
@@ -139,6 +133,12 @@ export default function BlogAutumnHalloween() {
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
                 Naar seasonal segment
+              </Link>
+              <Link
+                href="/materials#material-suggestion-tool"
+                className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+              >
+                Material Suggestion Tool
               </Link>
             </div>
           </Reveal>
@@ -235,7 +235,7 @@ export default function BlogAutumnHalloween() {
                 <li>Optioneel primer/schuren zodat je direct kan schilderen.</li>
               </ul>
               <p className="mt-3 text-sm text-slate-700">
-                Herinnering: het 3D model is niet inbegrepen in de printprijs. Lever STL/STEP of laat ons ontwerpen aan €45/uur.
+                Herinnering: het 3D model is niet inbegrepen in de printprijs. Lever STL/STEP of laat ons ontwerpen aan â‚¬45/uur.
                 Vermeld je eventdatum en leveroptie bij de aanvraag.
               </p>
             </GlassCard>
@@ -245,8 +245,8 @@ export default function BlogAutumnHalloween() {
             <GlassCard className="p-6">
               <h3 className="text-xl font-semibold tracking-tight text-slate-900">SEO inspiratiehoek</h3>
               <p className="mt-2 text-sm text-slate-700">
-                Zoek je “3D geprinte Halloween decor”, “3D print pumpkin”, “translucent lantaarn”, “Silk PLA spooky props” of
-                “custom Halloween gift”? Hier vind je materiaalkeuze (Silk/Marble/Translucent, PETG, TPU) en support-tips om snel
+                Zoek je â€œ3D geprinte Halloween decorâ€, â€œ3D print pumpkinâ€, â€œtranslucent lantaarnâ€, â€œSilk PLA spooky propsâ€ of
+                â€œcustom Halloween giftâ€? Hier vind je materiaalkeuze (Silk/Marble/Translucent, PETG, TPU) en support-tips om snel
                 te beslissen.
               </p>
               <p className="mt-3 text-sm text-slate-700">
@@ -300,6 +300,8 @@ export default function BlogAutumnHalloween() {
     </main>
   )
 }
+
+
 
 
 

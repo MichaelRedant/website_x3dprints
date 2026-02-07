@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/filament-vrijdag-pla-silk-plus/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/filament-vrijdag-pla-silk-plus/",
     },
   },
@@ -155,7 +155,7 @@ export default function FilamentFridayPlaSilkPlusEnPage() {
               filament makes more sense.
             </p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
-              <ShimmerButton href="/en/materials/pla">See PLA visuals</ShimmerButton>
+              <ShimmerButton href="/en/materials">See PLA visuals</ShimmerButton>
               <Link
                 href="/en/materials#material-suggestion-tool"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
@@ -337,3 +337,4 @@ export default function FilamentFridayPlaSilkPlusEnPage() {
     </main>
   )
 }
+

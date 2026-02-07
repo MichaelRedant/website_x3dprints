@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/juiste-3d-print-materiaal/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/juiste-3d-print-materiaal/",
     },
   },
@@ -35,7 +35,9 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["choose 3D print material", "PLA vs PETG vs TPU", "how-to"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Overview of 3D print materials by X3DPrints" }],
+    images: [
+      { url: "/images/filament/pla_matte_Car_PC.webp", width: 1200, height: 630, alt: "Overview of 3D print materials by X3DPrints" },
+    ],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -43,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How-to: choose the right 3D print material",
     description: "From PLA Matte to PETG and TPU: how to select the best material for your 3D print job.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/filament/pla_matte_Car_PC.webp"],
   },
 }
 
@@ -138,7 +140,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Step-by-step guide from X3DPrints to determine the right 3D print material. Compare PLA Matte, PETG and TPU on use case, environment and budget.",
   datePublished,
   dateModified,
-  image: "/images/og-home.jpg",
+  image: "/images/filament/pla_matte_Car_PC.webp",
   inLanguage: "en-BE",
 })
 

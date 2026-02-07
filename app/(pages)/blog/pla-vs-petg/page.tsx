@@ -1,371 +1,357 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import Reveal from "@/components/Reveal"
-import GlassCard from "@/components/GlassCard"
-import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import { buildArticleJsonLd } from "@/lib/seo"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import Faq from "@/components/Faq"
+import GlassCard from "@/components/GlassCard"
+import Reveal from "@/components/Reveal"
+import ShimmerButton from "@/components/ShimmerButton"
+import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/blog/pla-vs-petg"
+const canonical = "https://www.x3dprints.be/blog/pla-vs-petg/"
+const enCanonical = "https://www.x3dprints.be/en/blog/pla-vs-petg/"
 const datePublished = "2024-08-25"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-07"
+const contactHref = "/contact?material=pla-matte&quote=Advies%20PLA%20vs%20PETG%20voor%20mijn%20project"
+const materialsHref = "/materials#material-suggestion-tool"
+const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=pla-vs-petg"
 
 export const metadata: Metadata = {
-  title: "PLA vs PETG: welke moet je kiezen? | X3DPrints Blog",
+  title: "PLA vs PETG: welk materiaal kies je? | X3DPrints",
   description:
-  "Vergelijk PLA en PETG voor jouw 3D print: uiterlijk, sterkte, hittebestendigheid en toepassing. Inclusief praktijkcases en tips om materiaal te kiezen.",
-  alternates: { canonical },
+    "Vergelijk PLA en PETG op afwerking, sterkte, hittebestendigheid en kost zodat je sneller het juiste materiaal kiest.",
+  alternates: {
+    canonical,
+    languages: {
+      "nl-BE": canonical,
+      "en-BE": enCanonical,
+      "x-default": canonical,
+    },
+  },
   openGraph: {
-    title: "PLA vs PETG: welke moet je kiezen?",
-    description:  "De ultieme vergelijking tussen PLA en PETG met aandacht voor look, duurzaamheid, temperatuur en kost. Inclusief stappen om materiaal te testen.",
-  url: canonical,
-    images: [{ url: "/images/filament/petg_1.webp", width: 1200, height: 630, alt: "PLA vs PETG vergelijking" }],
+    title: "PLA vs PETG: welk materiaal kies je?",
+    description:
+      "Praktische vergelijking met gebruiksscenario's, materiaalmatrix en snelle beslisregels.",
+    url: canonical,
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "PLA vs PETG vergelijking" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PLA vs PETG: welke moet je kiezen?",
-    description: "Leer wanneer PLA volstaat en wanneer PETG meerwaarde biedt. Met design- en printtips.",
-    images: ["/images/filament/petg_1.webp"],
+    title: "PLA vs PETG: welk materiaal kies je?",
+    description: "Materialengids met duidelijke keuzehulp voor jouw 3D print.",
+    images: ["/Logo.webp"],
   },
 }
 
-const highlightCards = [
+const tocItems = [
+  { id: "material-difference", label: "Wat is het verschil tussen PLA en PETG?" },
+  { id: "material-matrix", label: "Welke matrix helpt bij snelle keuze?" },
+  { id: "material-use-cases", label: "Wanneer kies je welk materiaal?" },
+  { id: "material-faq", label: "FAQ over PLA en PETG" },
+  { id: "material-sources", label: "Bronnen en referenties" },
+]
+
+const compareCards = [
   {
-    title: "Look & afwerking",
-    pla: "PLA is beschikbaar in matte, silk, marble en wood varianten. Ideaal voor zichtwerk waar kleur, textuur en detail belangrijk zijn.",
-    petg: "PETG heeft een semi-glans finish en kan translucent geprint worden. Minder varianten, maar erg geschikt voor functionele prints met een nette look.",
+    title: "Look en afwerking",
+    pla: "PLA heeft veel varianten zoals matte, silk en marble. Sterk voor visuele toepassingen.",
+    petg: "PETG heeft meestal een gladdere glans en is handig wanneer uiterlijk en robuustheid samen moeten.",
   },
   {
-    title: "Temperatuur & outdoor",
-    pla: "Begint rond 55–60 °C te vervormen. Geschikt voor interieurs en lichte mechanische toepassingen die niet in de zon of in de auto liggen.",
-    petg: "Behoudt vorm tot circa 80 °C en is beter bestand tegen UV en vocht. Geschikt voor kappen, klemmen of onderdelen die buiten of in warmere omgevingen terechtkomen.",
+    title: "Temperatuur en omgeving",
+    pla: "PLA is prima voor indoor gebruik zonder hoge hittebelasting.",
+    petg: "PETG presteert beter bij warmte, vocht en meer intensief gebruik.",
   },
   {
-    title: "Mechanische eigenschappen",
-    pla: "Stijf en nauwkeurig, maar brosser bij impact. Prima voor prototypes, behuizingen en decoratieve onderdelen.",
-    petg: "Taai, licht flexibel en beter chemisch resistent. Ideaal voor clips, brackets, klemmen en onderdelen in functioneel gebruik.",
+    title: "Mechanische belasting",
+    pla: "PLA is stijver en vaak makkelijker voor strakke prototypes.",
+    petg: "PETG is taaier en beter voor clips, houders en functionele onderdelen.",
   },
 ]
 
-
-const comparisonTable = [
-  { property: "Stijfheid", pla: "Hoog, behoudt scherpe details", petg: "Middel, licht flexibel" },
+const comparisonRows = [
+  { property: "Detail en visuele kwaliteit", pla: "Zeer sterk", petg: "Goed" },
   { property: "Slagvastheid", pla: "Gemiddeld", petg: "Hoog" },
-  { property: "Hittebestendig", pla: "Tot 60 C", petg: "Tot 80 C" },
-  { property: "Chemisch resistent", pla: "Beperkt", petg: "Beter bestand tegen oliën en vocht" },
-  {
-    property: "Oppervlak & detail",
-    pla: "Zeer strak en mat mogelijk, ideaal voor visuele modellen",
-    petg: "Licht glanzend met goede laaghechting, iets meer stringing mogelijk",
-  },
-  { property: "Kosten", pla: "Laag (baseline)", petg: "Circa 20 procent hoger" },
+  { property: "Hittebestendigheid", pla: "Lager", petg: "Hoger" },
+  { property: "Outdoor geschiktheid", pla: "Beperkt", petg: "Sterker" },
+  { property: "Printgemak", pla: "Zeer toegankelijk", petg: "Iets meer tuning nodig" },
+  { property: "Kost", pla: "Baseline", petg: "Meestal hoger" },
 ]
-
 
 const useCases = {
   pla: [
-    "Designmodellen, awards en merchandising met specifieke kleuren",
-    "Prototypes die vooral visueel beoordeeld worden",
-    "Behuizingen en gadgets voor indoor gebruik",
-    "Architecturale maquettes en decoratieve prints",
+    "Visuele prototypes en presentatiemodellen",
+    "Decoratieve onderdelen met hoge detailfocus",
+    "Indoor onderdelen met beperkte mechanische stress",
   ],
   petg: [
-    "Functionele onderdelen die buiten of in vochtige omgevingen leven",
-    "Klemmen, houders en brackets die belasting krijgen",
-    "Onderdelen in contact met water, detergenten of oliën",
-    "Kappen of covers die in de auto of bij machines komen",
+    "Functionele onderdelen met hogere belasting",
+    "Onderdelen voor warmere of vochtigere omgeving",
+    "Clips, klemmen en brackets met langere levensduur",
   ],
 }
 
-const switchingTips = [
+const faqItems = [
   {
-    title: "Printinstellingen",
-    body: "PETG vraagt 235-250 C nozzle, 70-85 C bed en minder koeling (30-50%). PLA blijft bij 205-220 C met 60 C bed en volle koeling. Gebruik de presets in de slicer en pas retraction aan.",
+    q: "Kan ik PLA en PETG combineren in 1 project?",
+    a: "Ja, dat kan. Vaak is PLA geschikt voor zichtdelen en PETG voor functionele delen.",
   },
   {
-    title: "Design tweaks",
-    body: "Voor PETG voeg je liever fillets toe zodat stress niet op hoeken zit. Voor PLA volstaat 1.2 mm wand, bij PETG ga je gerust naar 1.6 mm voor extra taaiheid.",
+    q: "Wanneer is PETG de meerprijs waard?",
+    a: "Voor onderdelen met warmte, impact of intensief gebruik geeft PETG meestal meer betrouwbaarheid.",
   },
   {
-    title: "Test prints",
-    body: "Print een klein onderdeel in beide materialen om look en sterkte in de praktijk te voelen. Wij kunnen dezelfde G-code in twee materialen draaien zodat je snel vergelijkt.",
+    q: "Hoe kies ik snel tussen deze materialen?",
+    a: "Start met functie, belasting en omgeving. Gebruik daarna de material tool en vraag advies op je exacte model.",
   },
 ]
 
-const faq = [
+const references = [
   {
-    q: "Kun je PLA en PETG combineren in één project?",
-    a: "Zeker. Gebruik PLA voor zichtbare behuizingen en PETG voor onderdelen met scharnieren, clips of warmtebelasting. We stemmen de pasvorm af zodat beide materialen mooi uitlijnen.",
+    label: "Prusa material guide (PLA, PETG, TPU)",
+    href: "https://help.prusa3d.com/article/material-guide_220",
   },
   {
-  q: "Is PETG moeilijker te printen?",
-  a: "PETG vraagt drogere opslag en iets lagere koeling dan PLA, maar met correcte instellingen print het zeer stabiel. Hou rekening met een kleine meerkost voor materiaalbehandeling en iets langere finetuning in de slicer.",
-},
-
+    label: "All3DP FDM process explainer",
+    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+  },
   {
-    q: "Welke materialen adviseren jullie als alternatief?",
-    a: "Voor nog meer hittebestendigheid kies ASA of ABS. Voor flexibel werk: TPU (shore 95A). Deze bespreken we tijdens de offerte als jouw toepassing het vraagt.",
+    label: "Google Search docs: crawlable links",
+    href: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
   },
 ]
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
-  headline: "PLA vs PETG: welke moet je kiezen?",
+  headline: "PLA vs PETG: welk materiaal kies je?",
   description:
-    "Vergelijk PLA en PETG voor jouw 3D print: uiterlijk, sterkte, hittebestendigheid en toepassing. Inclusief praktijkcases en tips om materiaal te kiezen.",
+    "Praktische vergelijking van PLA en PETG voor esthetiek, sterkte, hitte en kost.",
   datePublished,
   dateModified,
+  image: "/Logo.webp",
+  inLanguage: "nl-BE",
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  mainEntityOfPage: canonical,
+  items: faqItems.map((item) => ({ q: item.q, a: item.a })),
+})
+
+const howToJsonLd = buildHowToSchema({
+  name: "PLA vs PETG kiezen in 4 stappen",
+  description:
+    "Bepaal snel of PLA of PETG beter past via toepassing, omgeving, budget en materiaalsimulatie.",
+  inLanguage: "nl-BE",
+  mainEntityOfPage: canonical,
+  totalTime: "PT3M",
+  steps: [
+    {
+      name: "Gebruikssituatie bepalen",
+      text: "Check of je focus op uiterlijk, sterkte of hittebestendigheid ligt.",
+    },
+    {
+      name: "Materiaalmatrix doorlopen",
+      text: "Vergelijk PLA en PETG op detail, belasting en omgeving.",
+    },
+    {
+      name: "Prijsimpact bekijken",
+      url: pricingHref,
+    },
+    {
+      name: "Advies met prefill aanvragen",
+      url: contactHref,
+    },
+  ],
+  toolNames: ["Material Suggestion Tool"],
+  supplyNames: ["STL of STEP bestand"],
 })
 
 export default function BlogPlaVsPetgPage() {
   return (
-    <main className="relative">
+    <main className="relative overflow-hidden px-6 pb-24 pt-16 sm:px-8 lg:px-12">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(160%_90%_at_50%_-20%,rgba(99,102,241,0.18),transparent_75%)]"
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(130%_60%_at_50%_0%,rgba(99,102,241,.16),transparent_72%)]"
       />
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.08]" />
 
-      <section className="px-6 pb-12 pt-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
-          <Reveal className="stacked-content">
-            <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
-              <ol className="flex flex-wrap gap-2">
-                <li>
-                  <Link
-                    href="/blog"
-                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li aria-hidden>/</li>
-                <li className="font-medium text-slate-700">PLA vs PETG</li>
-              </ol>
-            </nav>
-            <h1 className="mt-6 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              PLA vs PETG: welke moet je kiezen?
-            </h1>
-            <p className="mt-4 text-lg text-slate-700">
-  PLA blinkt uit in esthetiek en detail, terwijl PETG functionele eisen aankan zoals warmte en impact.
-  In dit artikel vergelijken we beide materialen stap voor stap, zodat je gericht kunt kiezen welk filament het best past
-  bij jouw 3D print: van zichtwerk tot functionele onderdelen.
-</p>
+      <article className="mx-auto max-w-5xl space-y-10">
+        <header className="space-y-4">
+          <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
+            <ol className="flex flex-wrap gap-2">
+              <li>
+                <Link href="/blog" className="font-medium text-indigo-600 hover:text-indigo-500">
+                  Blog
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li className="font-medium text-slate-700">PLA vs PETG</li>
+            </ol>
+          </nav>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600">Material guide</p>
+          <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+            PLA vs PETG: welk materiaal kies je?
+          </h1>
+          <p className="max-w-3xl text-lg text-slate-700">
+            Kort samengevat: PLA wint op snelle visuele output, PETG op functionele robuustheid. De juiste keuze hangt af van je use-case.
+          </p>
+          <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
+            Laatst bijgewerkt: 7 februari 2026
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <ShimmerButton
+              href={materialsHref}
+              event={{ action: "cta_click", category: "blog_pla_petg_top", label: "materials" }}
+            >
+              Material Suggestion Tool
+            </ShimmerButton>
+            <ShimmerButton
+              href={contactHref}
+              className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+              event={{ action: "cta_click", category: "blog_pla_petg_top", label: "contact_prefill" }}
+            >
+              Vraag materiaaladvies
+            </ShimmerButton>
+            <Link
+              href={pricingHref}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300 hover:bg-slate-50"
+            >
+              Bekijk prijsimpact
+            </Link>
+          </div>
+          <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
+        </header>
 
-            <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href="/materials">Vergelijk materialen</ShimmerButton>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
-              >
-                Vraag advies
-              </Link>
+        <section id="material-difference" className="scroll-mt-28">
+          <Reveal>
+            <h2 className="text-2xl font-semibold text-slate-900">Wat is het verschil tussen PLA en PETG?</h2>
+            <div className="mt-4 grid gap-4 md:grid-cols-3">
+              {compareCards.map((card) => (
+                <GlassCard key={card.title} className="p-6">
+                  <h3 className="text-lg font-semibold text-slate-900">{card.title}</h3>
+                  <div className="mt-3 space-y-2 text-sm text-slate-700">
+                    <p>
+                      <span className="font-semibold text-slate-900">PLA:</span> {card.pla}
+                    </p>
+                    <p>
+                      <span className="font-semibold text-slate-900">PETG:</span> {card.petg}
+                    </p>
+                  </div>
+                </GlassCard>
+              ))}
             </div>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
-          {highlightCards.map((card) => (
-            <Reveal key={card.title}>
-              <GlassCard className="h-full border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
-                <h2 className="text-xl font-semibold text-slate-900">{card.title}</h2>
-                <div className="mt-4 space-y-3 text-sm text-slate-600">
-                  <div>
-                    <p className="font-semibold text-slate-900">PLA</p>
-                    <p>{card.pla}</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-slate-900">PETG</p>
-                    <p>{card.petg}</p>
-                  </div>
-                </div>
-              </GlassCard>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-  <div className="mx-auto max-w-5xl">
-    <Reveal>
-      <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-        <h2 className="text-2xl font-semibold text-slate-900">Hoe kies je snel tussen PLA en PETG?</h2>
-        <p className="mt-3 text-sm text-slate-600">
-          Twijfel je tussen PLA en PETG? Gebruik deze compacte beslisgids om snel te bepalen welk materiaal het best past
-          bij jouw toepassing.
-        </p>
-
-        <ul className="mt-5 space-y-3 text-sm text-slate-700">
-          <li className="flex items-start gap-3">
-            <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
-            <span>
-              <strong>Kies PLA</strong> wanneer je vooral een <strong>mooie afwerking, scherpe details</strong> en een
-              <strong> specifieke kleur</strong> nodig hebt. Ideaal voor prototypes, behuizingen, maquettes en decoratieve onderdelen.
-            </span>
-          </li>
-
-          <li className="flex items-start gap-3">
-            <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
-            <span>
-              <strong>Kies PETG</strong> als het onderdeel <strong>buiten</strong> komt, lichte <strong>warmte</strong> moet
-              verdragen of mechanische <strong>impact / flexibiliteit</strong> nodig heeft.
-            </span>
-          </li>
-
-          <li className="flex items-start gap-3">
-            <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
-            <span>
-              PLA is voordeliger en geschikt voor de meeste prints die niet zwaar belast worden. Voor 90% van de visuele en
-              indoor-projecten is PLA de beste keuze.
-            </span>
-          </li>
-
-          <li className="flex items-start gap-3">
-            <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
-            <span>
-              PETG kost iets meer, maar biedt <strong>betere duurzaamheid, UV-bestendigheid</strong> en <strong>chemische weerstand</strong>.
-              Ideaal voor functionele onderdelen.
-            </span>
-          </li>
-        </ul>
-
-        <div className="mt-5">
-          <Link
-            href="/materials"
-            className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-indigo-700"
-          >
-            Bekijk alle materialen
-          </Link>
-        </div>
-      </GlassCard>
-    </Reveal>
-  </div>
-</section>
-
-
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+        <section id="material-matrix" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="overflow-x-auto border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Eigenschappen in detail</h2>
-              <table className="mt-5 min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
-                <thead>
-                  <tr className="text-xs uppercase tracking-wide text-slate-500">
-                    <th className="py-2 pr-4">Eigenschap</th>
-                    <th className="py-2 pr-4">PLA</th>
-                    <th className="py-2 pr-4">PETG</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-100">
-                  {comparisonTable.map((row) => (
-                    <tr key={row.property}>
-                      <td className="py-3 pr-4 font-medium text-slate-900">{row.property}</td>
-                      <td className="py-3 pr-4">{row.pla}</td>
-                      <td className="py-3 pr-4">{row.petg}</td>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Welke matrix helpt bij snelle keuze?</h2>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-[620px] text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="border-b border-slate-200/70 text-slate-500">
+                      <th className="py-2 pr-4 font-semibold">Eigenschap</th>
+                      <th className="py-2 pr-4 font-semibold">PLA</th>
+                      <th className="py-2 pr-4 font-semibold">PETG</th>
                     </tr>
+                  </thead>
+                  <tbody>
+                    {comparisonRows.map((row) => (
+                      <tr key={row.property} className="border-b border-slate-200/70 last:border-0">
+                        <td className="py-2 pr-4 font-medium text-slate-900">{row.property}</td>
+                        <td className="py-2 pr-4">{row.pla}</td>
+                        <td className="py-2 pr-4">{row.petg}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </GlassCard>
+          </Reveal>
+        </section>
+
+        <section id="material-use-cases" className="scroll-mt-28">
+          <Reveal>
+            <div className="grid gap-4 md:grid-cols-2">
+              <GlassCard className="p-6">
+                <h2 className="text-xl font-semibold text-slate-900">Wanneer kies je PLA?</h2>
+                <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                  {useCases.pla.map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-500" aria-hidden />
+                      <span>{item}</span>
+                    </li>
                   ))}
-                </tbody>
-              </table>
-            </GlassCard>
+                </ul>
+              </GlassCard>
+              <GlassCard className="p-6">
+                <h2 className="text-xl font-semibold text-slate-900">Wanneer kies je PETG?</h2>
+                <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                  {useCases.petg.map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </GlassCard>
+            </div>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <ShimmerButton
+                href={materialsHref}
+                event={{ action: "cta_click", category: "blog_pla_petg_mid", label: "materials" }}
+              >
+                Gebruik material tool
+              </ShimmerButton>
+              <ShimmerButton
+                href={contactHref}
+                className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+                event={{ action: "cta_click", category: "blog_pla_petg_mid", label: "contact_prefill" }}
+              >
+                Bespreek je model
+              </ShimmerButton>
+            </div>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl">
-          <Reveal className="grid gap-6 lg:grid-cols-2">
-            <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900">Wanneer kies je PLA?</h2>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                {useCases.pla.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
-                    <span>{item}</span>
+        <section id="material-faq" className="scroll-mt-28">
+          <Faq title="FAQ over PLA en PETG" items={faqItems} />
+        </section>
+
+        <section id="material-sources" className="scroll-mt-28">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
                   </li>
                 ))}
               </ul>
             </GlassCard>
-            <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900">Wanneer kies je PETG?</h2>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                {useCases.petg.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
+      </article>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
-          <Reveal>
-            <GlassCard className="grid gap-6 border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur lg:grid-cols-3">
-              {switchingTips.map((tip) => (
-                <div key={tip.title}>
-                  <h3 className="text-base font-semibold text-slate-900">{tip.title}</h3>
-                  <p className="mt-2 text-sm text-slate-600">{tip.body}</p>
-                </div>
-              ))}
-            </GlassCard>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
-          <Reveal>
-            <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900">Veelgestelde vragen</h2>
-              <div className="mt-4 space-y-4 text-sm text-slate-600">
-                {faq.map((item) => (
-                  <div key={item.q}>
-                    <h3 className="text-base font-semibold text-slate-900">{item.q}</h3>
-                    <p className="mt-1">{item.a}</p>
-                  </div>
-                ))}
-              </div>
-            </GlassCard>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
-          <Reveal>
-            <GlassCard className="flex flex-col gap-6 border border-white/40 bg-white/85 p-6 shadow-xl backdrop-blur sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Volgende stap</p>
-                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Laat ons meedenken over jouw materiaalkeuze</h2>
-                <p className="mt-2 text-sm text-slate-600">
-                  Deel je STL/STEP en vermeld de eisen rond temperatuur, impact en look. We sturen binnen een werkdag advies en prijs.
-                </p>
-              </div>
-              <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href="/contact">Vraag advies</ShimmerButton>
-                <Link href="/pricing" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
-                  Bekijk tarieven
-                </Link>
-              </div>
-            </GlassCard>
-          </Reveal>
-        </div>
-      </section>
-
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogReadMore />
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
     </main>
   )
 }
-
-
-
-

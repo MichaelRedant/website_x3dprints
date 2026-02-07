@@ -1,32 +1,35 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import GlassCard from "@/components/GlassCard"
-import ShimmerButton from "@/components/ShimmerButton"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Faq from "@/components/Faq"
-import Reveal from "@/components/Reveal"
 import FilamentHeroVisual from "@/components/FilamentHeroVisual"
+import GlassCard from "@/components/GlassCard"
 import GlassOrb from "@/components/GlassOrb"
+import Reveal from "@/components/Reveal"
+import ShimmerButton from "@/components/ShimmerButton"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
+const canonical = "https://www.x3dprints.be/3d-modellen-vinden/"
 const datePublished = "2026-02-06"
 const dateModified = "2026-02-06"
 
 export const metadata: Metadata = {
-  title: "3D modellen vinden om te laten printen | X3DPrints",
+  title: "3D modellen printen: waar vind je goede bestanden? | X3DPrints",
   description:
-    "Vind 3D modellen die klaar zijn voor print: Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults en Thangs. Tips over kwaliteit en hoe je de link doorstuurt zodat wij lokaal kunnen printen.",
+    "Vind 3D modellen om te printen via Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults en Thangs. Ideaal als je een 3D model wil laten printen in België.",
   alternates: {
-    canonical: "https://www.x3dprints.be/3d-modellen-vinden/",
+    canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/3d-modellen-vinden/",
-      en: "https://www.x3dprints.be/en/3d-modellen-vinden/",
-      "x-default": "https://www.x3dprints.be/3d-modellen-vinden/",
+      "nl-BE": canonical,
+      "en-BE": "https://www.x3dprints.be/en/3d-modellen-vinden/",
+      "x-default": canonical,
     },
   },
   openGraph: {
-    title: "Waar 3D modellen vinden om te laten printen",
+    title: "3D modellen printen: beste bronnen en checks",
     description:
-      "Gids met de beste platformen om 3D modellen te downloaden: links delen, kwaliteit controleren en direct laten printen bij X3DPrints.",
-    url: "https://www.x3dprints.be/3d-modellen-vinden",
+      "Gids met de beste platformen om 3D modellen te downloaden en direct te laten printen, inclusief kwaliteitscheck en materiaaladvies.",
+    url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D modellen vinden" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -39,265 +42,383 @@ const sources = [
     name: "Printables.com",
     url: "https://www.printables.com",
     badge: "Aanrader",
-    description: "Grote community, duidelijke kwaliteitslabels, veel geverifieerde prints met foto's en instellingen.",
-    notes: ["Filter op 'Printables Verified' voor betrouwbare bestanden", "Check comments voor materiaal- en oriëntatietips"],
+    description:
+      "Grote community met veel geverifieerde prints, inclusief echte gebruikersfoto's en slicer-notes.",
+    notes: [
+      "Filter op Printables Verified voor betrouwbaarheid",
+      "Controleer comments op materiaal en orientatie",
+    ],
+    bestFor: "Functionele onderdelen en organizers",
+    qualitySignal: "Verified badge + makes",
   },
   {
     name: "MakerWorld (Bambu Lab)",
     url: "https://makerworld.com/",
     badge: "Veel presets",
-    description: "Veel modellen met Bambu AMS-profielen en exacte slicer-instellingen.",
-    notes: ["Download het 3MF-bestand voor presets", "Check remix-info (schaal/support)"],
+    description:
+      "Veel modellen met 3MF-profielen en uitgewerkte settings, handig voor snelle en consistente output.",
+    notes: ["Download bij voorkeur 3MF", "Check remix-info en schaal"],
+    bestFor: "Snelle start met duidelijke presets",
+    qualitySignal: "3MF-profielen + comments",
   },
   {
     name: "Thingiverse",
     url: "https://www.thingiverse.com/",
     badge: "Klassieker",
-    description: "Zeer grote bibliotheek; kwaliteit varieert. Let extra op comments en remixes.",
-    notes: ["Bekijk 'Makes' voor bewijs van printbaarheid", "Vermijd modellen zonder foto's of comments"],
+    description:
+      "Grote bibliotheek met wisselende kwaliteit. Werkt goed als je streng filtert op bewijs van printbaarheid.",
+    notes: ["Bekijk Makes als bewijs", "Vermijd listings zonder feedback"],
+    bestFor: "Legacy en oudere community ontwerpen",
+    qualitySignal: "Aantal makes + actieve commentaren",
   },
   {
     name: "MyMiniFactory",
     url: "https://www.myminifactory.com/",
     badge: "Minis & props",
-    description: "Sterk in tabletop, props en decor. Vaak duidelijke info en paid/patreon opties.",
-    notes: ["Controleer schaal (mm) en supports", "Bewaar koopbewijs voor betaalde modellen"],
+    description:
+      "Sterk in tabletop en prop-designs met vaak duidelijke modelinformatie en licentiecontext.",
+    notes: ["Controleer schaal in mm", "Bewaar aankoopbewijs bij betaalde modellen"],
+    bestFor: "Tabletop, props en displaystukken",
+    qualitySignal: "Designerprofiel + productreviews",
   },
   {
     name: "Cults3D",
     url: "https://cults3d.com/",
     badge: "Mix free/paid",
-    description: "Betaalde en gratis modellen met variabele kwaliteit. Screenshots en reviews goed nalezen.",
-    notes: ["Download alle onderdelen (STL/OBJ)", "Bewaar factuur of link voor referentie"],
+    description:
+      "Combinatie van gratis en betaalde bestanden. Kwaliteit varieert, dus screenshots en feedback zijn cruciaal.",
+    notes: ["Download alle onderdelen uit de set", "Bewaar factuur of referentielink"],
+    bestFor: "Niche ontwerpen en betaalde bundles",
+    qualitySignal: "Reviews + volledigheid van files",
   },
   {
     name: "Thangs",
     url: "https://thangs.com/",
     badge: "Zoekmachine",
-    description: "Zoekt door meerdere platformen en toont varianten. Handig om alternatieven te vinden.",
-    notes: ["Klik door naar de bron voor detailinfo", "Let op units (mm/inch)"],
+    description:
+      "Zoekt over meerdere platformen en toont varianten. Ideaal als startpunt voor vergelijkingen.",
+    notes: ["Klik door naar de originele bron", "Controleer units (mm/inch)"],
+    bestFor: "Vergelijken en alternatieven vinden",
+    qualitySignal: "Bronverwijzing + variantvergelijking",
   },
 ]
 
 const faqItems = [
   {
     q: "Welke link moet ik doorsturen?",
-    a: "Stuur de directe pagina-link van het model en noteer welke onderdelen je nodig hebt. Voeg eventueel een screenshot of gewenste schaal toe.",
+    a: "Stuur de directe modelpagina en vermeld welke onderdelen je exact nodig hebt. Voeg bij varianten ook een screenshot of schaal toe.",
   },
   {
     q: "Mag ik een remix aanleveren?",
-    a: "Ja. Stuur je aangepaste STL/3MF mee of een link naar het originele model + jouw wijzigingen. Vermeld of supports al in het bestand zitten.",
+    a: "Ja. Stuur je aangepaste STL/3MF of de originele link met duidelijke wijzigingen. Vermeld of supports al mee in het bestand zitten.",
   },
   {
     q: "Kunnen jullie ook het model maken of aanpassen?",
-    a: "Ja. We modelleren in Fusion 360 of Tinkercad en passen bestaande STL/3MF aan (schaal, tekst/logo, toleranties, inserts). Je krijgt een printbaar bestand en een voorstel voor materiaal en planning.",
+    a: "Ja. We modelleren in Fusion 360 of Tinkercad en passen STL/3MF aan voor schaal, tekst/logo, toleranties en inserts.",
   },
   {
     q: "Welke formaten werken het best?",
-    a: "STL en 3MF zijn ideaal. 3MF met presets uit MakerWorld nemen we over en stemmen we af op onze printers.",
+    a: "STL en 3MF zijn ideaal. 3MF met presets uit MakerWorld nemen we mee in de intake en stemmen we af op onze printers.",
   },
 ]
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
+const tocItems = [
+  { id: "platformen", label: "Welke platformen werken het best?" },
+  { id: "vergelijking", label: "Welke bron kies je voor jouw use-case?" },
+  { id: "aanpak", label: "Hoe verwerken wij je model-link?" },
+  { id: "modelleren", label: "Wanneer is modelleren slimmer?" },
+  { id: "bronnen", label: "Bronnen en referenties" },
+  { id: "faq", label: "FAQ over model-links" },
+]
 
+const faqJsonLd = buildFaqPageSchema({
   inLanguage: "nl-BE",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+  mainEntityOfPage: canonical,
+  items: faqItems,
+})
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: "nl-BE",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Waar 3D modellen vinden om te laten printen",
   description:
-    "Overzicht van de beste plaatsen om 3D modellen te downloaden (Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults, Thangs) plus kwaliteitstips voor X3DPrints.",
-  author: { "@type": "Organization", name: "X3DPrints" },
+    "Overzicht van de beste plaatsen om 3D modellen te downloaden (Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults en Thangs) met kwaliteitschecks.",
   datePublished,
   dateModified,
-  mainEntityOfPage: "https://www.x3dprints.be/3d-modellen-vinden",
-}
+  inLanguage: "nl-BE",
+})
 
 const process = [
-  "Bestandscheck: meerdere onderdelen, zitten supports erin en welke schaal geldt?",
-  "Materiaal & prijs: we adviseren PLA/PETG/TPU en delen richtprijzen en planning.",
-  "Productie: we printen lokaal in Herzele en plannen levering of afhalen in Vlaanderen.",
+  "Bestandscheck: we valideren onderdelen, schaal en support-behoefte.",
+  "Materiaaladvies: we adviseren PLA, PETG of TPU met een heldere prijsinschatting.",
+  "Productieplanning: we printen lokaal in Herzele en stemmen levering of afhaling af.",
 ]
 
 const modelingPoints = [
-  "CAD in Fusion 360 of Tinkercad voor printbare resultaten.",
-  "We denken mee over wanddikte, supports en toleranties.",
-  "Snelle iteraties met screenshots of testprints.",
+  "CAD in Fusion 360 of Tinkercad voor printklare resultaten.",
+  "We bewaken wanddikte, toleranties en montagepassing.",
+  "Snelle iteraties via screenshots of testprints.",
+]
+
+const references = [
+  { label: "Printables", url: "https://www.printables.com" },
+  { label: "MakerWorld", url: "https://makerworld.com/" },
+  { label: "Thingiverse", url: "https://www.thingiverse.com/" },
+  { label: "MyMiniFactory", url: "https://www.myminifactory.com/" },
+  { label: "Cults3D", url: "https://cults3d.com/" },
+  { label: "Thangs", url: "https://thangs.com/" },
 ]
 
 export default function FindModelsPage() {
   return (
     <main className="relative overflow-hidden">
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(120%_80%_at_50%_0%,rgba(99,102,241,.12),transparent_70%)]" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(120%_80%_at_50%_0%,rgba(99,102,241,.12),transparent_70%)]"
+      />
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.06]" />
 
-      <section className="px-6 pb-14 pt-14 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl">
-          <Reveal className="grid gap-8 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
-            <div className="space-y-4">
-              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-indigo-600">Gids</p>
-              <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-                Waar vind je 3D modellen om te laten printen?
-              </h1>
-              <p className="text-lg text-slate-700">
-                Kies een model op Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults of Thangs en stuur de link. Wij checken schaal, materiaal en printbaarheid en printen lokaal in Belgie.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <ShimmerButton href="/contact?quote=Link%20naar%203D%20model">Stuur je link</ShimmerButton>
-                <Link
-                  href="/materials#material-suggestion-tool"
-                  className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
-                >
-                  Material Suggestion Tool
-                </Link>
-              </div>
-            </div>
-            <GlassCard className="overflow-hidden border-white/60 bg-white/70 p-6 shadow-lg ring-1 ring-white/70">
-              <div className="relative flex h-full min-h-[260px] items-center justify-center">
-                <div className="hidden w-full max-w-[360px] md:block">
-                  <FilamentHeroVisual className="w-full" />
+      <article>
+        <section className="px-6 pb-12 pt-14 sm:px-8 lg:px-12">
+          <div className="mx-auto max-w-6xl">
+            <Reveal className="grid gap-8 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
+              <div className="space-y-4">
+                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-indigo-600">Gids</p>
+                <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+                  Waar vind je 3D modellen om te printen?
+                </h1>
+                <p className="text-lg text-slate-700">
+                  Je vindt de meest printklare 3D modellen op Printables en MakerWorld, met Thingiverse, MyMiniFactory,
+                  Cults en Thangs als extra bronnen. Wil je een 3D model laten printen? Stuur ons de model-link, wij
+                  doen de kwaliteitscheck en printen lokaal in Belgie.
+                </p>
+                <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
+                  Laatst bijgewerkt: 6 februari 2026
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <ShimmerButton href="/contact?quote=Link%20naar%203D%20model">Stuur je link</ShimmerButton>
+                  <Link
+                    href="/materials#material-suggestion-tool"
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                  >
+                    Material Suggestion Tool
+                  </Link>
                 </div>
-                <div className="flex w-full justify-center md:hidden">
-                  <GlassOrb className="h-40 w-40 opacity-70" />
-                </div>
+                <ContentTableOfContents
+                  title="Inhoud van deze gids"
+                  items={tocItems}
+                  className="mt-2 max-w-xl"
+                />
               </div>
-            </GlassCard>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="px-6 pb-14 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl">
-          <Reveal className="mb-6 max-w-3xl">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">De beste plekken om te starten</h2>
-            <p className="mt-2 text-slate-600">Gebruik de links hieronder en stuur de exacte modelpagina door.</p>
-          </Reveal>
-          <div className="grid gap-5 lg:grid-cols-3">
-            {sources.map((source) => (
-              <Reveal key={source.name}>
-                <GlassCard className="h-full p-5">
-                  <div className="flex items-center justify-between gap-3">
-                    <div>
-                      <div className="text-lg font-semibold text-slate-900">{source.name}</div>
-                      <div className="mt-0.5 inline-flex items-center gap-2 rounded-full bg-indigo-50 px-2.5 py-1 text-xs font-semibold text-indigo-700">
-                        {source.badge}
-                      </div>
-                    </div>
-                    <Link
-                      href={source.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-sm font-semibold text-indigo-600 hover:text-indigo-500"
-                    >
-                      Open <span aria-hidden>-&gt;</span>
-                    </Link>
+              <GlassCard className="overflow-hidden border-white/60 bg-white/70 p-6 shadow-lg ring-1 ring-white/70">
+                <div className="relative flex h-full min-h-[260px] items-center justify-center">
+                  <div className="hidden w-full max-w-[360px] md:block">
+                    <FilamentHeroVisual className="w-full" />
                   </div>
-                  <p className="mt-3 text-sm text-slate-600">{source.description}</p>
-                  <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                    {source.notes.map((note) => (
-                      <li key={note} className="flex items-start gap-2">
-                        <span aria-hidden className="mt-1 h-2 w-2 rounded-full bg-emerald-400" />
-                        <span>{note}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </GlassCard>
-              </Reveal>
-            ))}
+                  <div className="flex w-full justify-center md:hidden">
+                    <GlassOrb className="h-40 w-40 opacity-70" />
+                  </div>
+                </div>
+              </GlassCard>
+            </Reveal>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl">
-          <Reveal className="grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
-            <GlassCard className="p-6 sm:p-8">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Hoe wij je link verwerken</h2>
-              <ol className="mt-3 space-y-2 text-sm text-slate-700">
-                {process.map((step, index) => (
-                  <li key={step}>
-                    {index + 1}. {step}
-                  </li>
-                ))}
-              </ol>
-              <div className="mt-4 flex flex-wrap gap-3">
-                <ShimmerButton href="/contact?quote=Link%20naar%203D%20model">Deel je model</ShimmerButton>
-                <Link
-                  href="/pricing"
-                  className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:-translate-y-0.5"
-                >
-                  Prijzen & levertijden
-                </Link>
-              </div>
-            </GlassCard>
-
-            <GlassCard className="p-6 sm:p-8">
-              <h3 className="text-xl font-semibold text-slate-900">Kleine checklist</h3>
-              <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                <li>- Voeg de link toe, plus welke onderdelen je wil (als het een set is).</li>
-                <li>- Noteer gewenste schaal (mm) en of tekst/logo moet blijven staan.</li>
-                <li>- Geef door of het binnen/buiten gebruikt wordt en welke kleur/look je wil.</li>
-                <li>- Stuur een screenshot mee wanneer het model meerdere varianten heeft.</li>
-              </ul>
-            </GlassCard>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl">
-          <Reveal className="grid gap-6 lg:grid-cols-[1.05fr_.95fr] lg:items-center">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600">Ook modelleren</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Geen passend model gevonden?</h2>
-              <p className="mt-2 text-sm text-slate-700">
-                We modelleren zelf in Fusion 360 of Tinkercad. Ideaal als een bestaand model niet klopt of je iets volledig op maat wil. Je krijgt een printbaar STL/STEP met advies over orientatie, support en materiaal.
+        <section className="px-6 pb-12 sm:px-8 lg:px-12">
+          <div className="mx-auto max-w-6xl">
+            <Reveal className="mb-6 max-w-3xl">
+              <h2 id="platformen" className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                Welke platformen leveren de meest printklare 3D modellen?
+              </h2>
+              <p className="mt-2 text-slate-600">
+                Gebruik deze bronnen als startpunt en stuur altijd de exacte modelpagina mee bij je aanvraag.
               </p>
+            </Reveal>
+            <div className="grid gap-5 lg:grid-cols-3">
+              {sources.map((source) => (
+                <Reveal key={source.name}>
+                  <GlassCard className="h-full p-5">
+                    <div className="flex items-center justify-between gap-3">
+                      <div>
+                        <div className="text-lg font-semibold text-slate-900">{source.name}</div>
+                        <div className="mt-0.5 inline-flex items-center gap-2 rounded-full bg-indigo-50 px-2.5 py-1 text-xs font-semibold text-indigo-700">
+                          {source.badge}
+                        </div>
+                      </div>
+                      <Link
+                        href={source.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-sm font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        Open <span aria-hidden>-&gt;</span>
+                      </Link>
+                    </div>
+                    <p className="mt-3 text-sm text-slate-600">{source.description}</p>
+                    <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                      {source.notes.map((note) => (
+                        <li key={note} className="flex items-start gap-2">
+                          <span aria-hidden className="mt-1 h-2 w-2 rounded-full bg-emerald-400" />
+                          <span>{note}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </GlassCard>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="px-6 pb-12 sm:px-8 lg:px-12">
+          <div className="mx-auto max-w-6xl">
+            <Reveal className="rounded-2xl border border-slate-200/80 bg-white/80 p-5 shadow-sm">
+              <h2 id="vergelijking" className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                Welke bron kies je best per use-case?
+              </h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Deze tabel maakt platformkeuze sneller voor AI-snippets, vergelijkingen en intakegesprekken.
+              </p>
+              <div className="mt-4 overflow-x-auto rounded-xl border border-slate-200">
+                <table className="min-w-full divide-y divide-slate-200 text-left text-sm">
+                  <caption className="sr-only">Vergelijking van platformen voor printbare 3D modellen</caption>
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th scope="col" className="px-4 py-3 font-semibold text-slate-800">
+                        Platform
+                      </th>
+                      <th scope="col" className="px-4 py-3 font-semibold text-slate-800">
+                        Beste voor
+                      </th>
+                      <th scope="col" className="px-4 py-3 font-semibold text-slate-800">
+                        Kwaliteitssignaal
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 bg-white">
+                    {sources.map((source) => (
+                      <tr key={`table-${source.name}`}>
+                        <td className="px-4 py-3 align-top">
+                          <Link href={source.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-700 hover:underline">
+                            {source.name}
+                          </Link>
+                        </td>
+                        <td className="px-4 py-3 align-top text-slate-700">{source.bestFor}</td>
+                        <td className="px-4 py-3 align-top text-slate-700">{source.qualitySignal}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        <section className="px-6 pb-12 sm:px-8 lg:px-12">
+          <div className="mx-auto max-w-6xl">
+            <Reveal className="grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
+              <GlassCard className="p-6 sm:p-8">
+                <h2 id="aanpak" className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                  Hoe verwerken wij je model-link in de praktijk?
+                </h2>
+                <ol className="mt-3 space-y-2 text-sm text-slate-700">
+                  {process.map((step, index) => (
+                    <li key={step}>
+                      {index + 1}. {step}
+                    </li>
+                  ))}
+                </ol>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <ShimmerButton href="/contact?quote=Link%20naar%203D%20model">Deel je model</ShimmerButton>
+                  <Link
+                    href="/pricing"
+                    className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:-translate-y-0.5"
+                  >
+                    Prijzen en levertijden
+                  </Link>
+                </div>
+              </GlassCard>
+
+              <GlassCard className="p-6 sm:p-8">
+                <h3 className="text-xl font-semibold text-slate-900">Kleine intake-checklist</h3>
+                <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                  <li>- Voeg de link toe met exact welke onderdelen je wil printen.</li>
+                  <li>- Noteer gewenste schaal (mm) en eventuele tekst/logo vereisten.</li>
+                  <li>- Geef gebruikscontext door (binnen, buiten, hitte, impact).</li>
+                  <li>- Voeg screenshot toe als de listing meerdere varianten bevat.</li>
+                </ul>
+              </GlassCard>
+            </Reveal>
+          </div>
+        </section>
+
+        <section className="px-6 pb-12 sm:px-8 lg:px-12">
+          <div className="mx-auto max-w-6xl">
+            <Reveal className="grid gap-6 lg:grid-cols-[1.05fr_.95fr] lg:items-center">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600">Ook modelleren</p>
+                <h2 id="modelleren" className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                  Wanneer kies je beter voor modelleren op maat?
+                </h2>
+                <p className="mt-2 text-sm text-slate-700">
+                  We modelleren in Fusion 360 of Tinkercad wanneer een bestaand STL-bestand niet klopt of wanneer je
+                  een volledig eigen onderdeel nodig hebt.
+                </p>
+                <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                  {modelingPoints.map((point) => (
+                    <li key={point} className="flex items-start gap-2">
+                      <span aria-hidden className="mt-1 h-2 w-2 rounded-full bg-indigo-500" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <ShimmerButton href="/3d-modelleren">Ontdek 3D-modelleren</ShimmerButton>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                  >
+                    Vraag een model aan
+                  </Link>
+                </div>
+              </div>
+              <GlassCard className="border-white/40 bg-gradient-to-br from-white/80 to-white/60 p-6 shadow-lg ring-1 ring-white/60">
+                <h3 className="text-lg font-semibold text-slate-900">Typische signalen voor maatwerk</h3>
+                <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                  <li>- Bestaande STL heeft foute toleranties of te veel supports.</li>
+                  <li>- Je wil branding of vormdetails die je online niet vindt.</li>
+                  <li>- Assemblagepunten, inserts of schroefdraad moeten exact kloppen.</li>
+                  <li>- Je wil eerst testprints en daarna een kleine serie.</li>
+                </ul>
+              </GlassCard>
+            </Reveal>
+          </div>
+        </section>
+
+        <section className="px-6 pb-12 sm:px-8 lg:px-12">
+          <div className="mx-auto max-w-6xl">
+            <Reveal className="rounded-2xl border border-slate-200/80 bg-white/80 p-5 shadow-sm">
+              <h2 id="bronnen" className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                Welke bronnen gebruiken we voor deze gids?
+              </h2>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                {modelingPoints.map((point) => (
-                  <li key={point} className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1 h-2 w-2 rounded-full bg-indigo-500" />
-                    <span>{point}</span>
+                {references.map((reference) => (
+                  <li key={reference.url}>
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="text-indigo-700 hover:underline">
+                        {reference.label}
+                      </Link>
+                    </cite>
                   </li>
                 ))}
               </ul>
-              <div className="mt-4 flex flex-wrap gap-3">
-                <ShimmerButton href="/3d-modelleren">Ontdek 3D-modelleren</ShimmerButton>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
-                >
-                  Vraag een model aan
-                </Link>
-              </div>
-            </div>
-            <GlassCard className="border-white/40 bg-gradient-to-br from-white/80 to-white/60 p-6 shadow-lg ring-1 ring-white/60">
-              <h3 className="text-lg font-semibold text-slate-900">Wanneer kiezen voor modelleren?</h3>
-              <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                <li>- Bestaande STL heeft foute toleranties of te veel supports.</li>
-                <li>- Je wil branding (logo/tekst) of maatwerk dat je nergens vindt.</li>
-                <li>- Assemblagepunten, inserts of schroefdraad moeten exact kloppen.</li>
-                <li>- Je wil itereren met testprints en daarna een kleine serie.</li>
-              </ul>
-            </GlassCard>
-          </Reveal>
-        </div>
-      </section>
+            </Reveal>
+          </div>
+        </section>
 
-      <section className="mx-auto mb-16 max-w-5xl">
-        <Faq title="FAQ over modellen vinden" items={faqItems} />
-      </section>
+        <section id="faq" className="mx-auto mb-16 max-w-5xl px-6 sm:px-8 lg:px-12">
+          <Faq title="FAQ over modellen vinden" items={faqItems} />
+        </section>
+      </article>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

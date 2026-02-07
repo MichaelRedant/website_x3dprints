@@ -1,17 +1,17 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pla-metal"
+const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pla-metal/"
 const publishedDate = "2025-10-24T08:00:00+02:00"
 
 export const metadata: Metadata = {
   title: "PLA Metal 3D printen: metaalachtige look zonder gedoe | X3DPrints",
   description:
-    "Filament Vrijdag #7. Alles over PLA Metal: metallic glans, instellingen, nozzlekeuze en toepassingen voor props, industriële look en designprints.",
+    "Filament Vrijdag #7. Alles over PLA Metal: metallic glans, instellingen, nozzlekeuze en toepassingen voor props, industriÃ«le look en designprints.",
   alternates: { canonical },
   openGraph: {
     title: "PLA Metal 3D printen: metaalachtige look zonder conductiviteit",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Filament Vrijdag: PLA Metal 3D printen",
-    description: "PLA Metal instellingen en toepassingen voor props, industriële esthetiek en designprints.",
+    description: "PLA Metal instellingen en toepassingen voor props, industriÃ«le esthetiek en designprints.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -45,7 +45,7 @@ const heroStats = [
   {
     label: "Look & feel",
     value: "Metaalachtig, niet geleidend",
-    detail: "Ideaal voor props en industriële esthetiek",
+    detail: "Ideaal voor props en industriÃ«le esthetiek",
   },
   {
     label: "Aanbevolen nozzle",
@@ -69,7 +69,7 @@ const printSettings = [
 ]
 
 const whenToUse = [
-  "Props en decorstukken met een industriële of sci-fi look.",
+  "Props en decorstukken met een industriÃ«le of sci-fi look.",
   "Knoppen, dials en panelen die op metaal mogen lijken zonder gewicht.",
   "Behuizingen en covers in showroom- of beurscontext.",
   "Designobjecten en interieuraccenten met een metalen accent.",
@@ -117,7 +117,7 @@ const comparisonRows = [
   {
     property: "Typische toepassingen",
     pla: "Algemene prototypes, decor.",
-    metal: "Props, industriële esthetiek, displays.",
+    metal: "Props, industriÃ«le esthetiek, displays.",
     petg: "Functionele onderdelen, brackets.",
   },
 ]
@@ -129,7 +129,7 @@ const mitigationTips = [
   },
   {
     title: "Layerlijnen onder controle houden",
-    insight: "Print niet te dik (0.16-0.2 mm voor zichtwerk) en oriënteer zichtvlakken slim; metallic glans benadrukt elk lijntje.",
+    insight: "Print niet te dik (0.16-0.2 mm voor zichtwerk) en oriÃ«nteer zichtvlakken slim; metallic glans benadrukt elk lijntje.",
   },
   {
     title: "Nabewerking slim inzetten",
@@ -144,28 +144,28 @@ const mitigationTips = [
 const resourceLinks = [
   { label: "3D printen pillar", href: "/3d-printen", description: "Overzicht van workflow, materialen en planning." },
   { label: "Materialenbibliotheek", href: "/materials", description: "PLA Metal, Marble, Matte en andere visuals naast elkaar." },
-  { label: "Prijzen & calculator", href: "/pricing", description: "Zie hoe materiaalkeuze de offerte beïnvloedt." },
+  { label: "Prijzen & calculator", href: "/pricing", description: "Zie hoe materiaalkeuze de offerte beÃ¯nvloedt." },
   { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool", description: "Laat de wizard mee kiezen." },
 ]
 
 const externalReferences = [
   {
-    label: "Prusa – Different nozzle types",
+    label: "Prusa â€“ Different nozzle types",
     href: "https://help.prusa3d.com/article/different-nozzle-types_2193",
     description: "Waarom gevulde filamenten een geharde nozzle vragen.",
   },
   {
-    label: "Prusa – How to smooth & paint prints",
+    label: "Prusa â€“ How to smooth & paint prints",
     href: "https://blog.prusa3d.com/how-to-smooth-and-paint-3d-prints_12547/",
     description: "Interessant voor wie metallic prints extra wil afwerken.",
   },
   {
-    label: "All3DP – Metal filament guide",
+    label: "All3DP â€“ Metal filament guide",
     href: "https://all3dp.com/2/metal-filament-3d-printing/",
-    description: "Overzicht van metaal-gevulde PLA’s en hun gedrag.",
+    description: "Overzicht van metaal-gevulde PLAâ€™s en hun gedrag.",
   },
   {
-    label: "Bambu Lab – PLA gids",
+    label: "Bambu Lab â€“ PLA gids",
     href: "https://wiki.bambulab.com/en/filament/pla",
     description: "Baseline instellingen voor PLA, bruikbaar voor special blends.",
   },
@@ -259,7 +259,7 @@ export default function FilamentVrijdagPlaMetalPage() {
                 Terug naar pillar
               </Link>
             </div>
-            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 24 oktober 2025 – esthetische tak van Filament Vrijdag.</p>
+            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 24 oktober 2025 â€“ esthetische tak van Filament Vrijdag.</p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
             {heroStats.map((stat) => (
@@ -294,7 +294,7 @@ export default function FilamentVrijdagPlaMetalPage() {
                 >
                   Prusa uitleg over verschillende nozzles
                 </Link>{" "}
-                – hier lees je waarom gevulde filamenten beter draaien op geharde nozzles. Voor baseline PLA settings blijft de{" "}
+                â€“ hier lees je waarom gevulde filamenten beter draaien op geharde nozzles. Voor baseline PLA settings blijft de{" "}
                 <Link
                   href="https://wiki.bambulab.com/en/filament/pla"
                   target="_blank"
@@ -305,7 +305,7 @@ export default function FilamentVrijdagPlaMetalPage() {
                 </Link>{" "}
                 een prima startpunt.
               </p>
-              <p className="mt-3 text-sm text-slate-600">Gebruik PLA Metal wanneer het verhaal visueel baat heeft bij metaallook, niet “omdat het kan”.</p>
+              <p className="mt-3 text-sm text-slate-600">Gebruik PLA Metal wanneer het verhaal visueel baat heeft bij metaallook, niet â€œomdat het kanâ€.</p>
             </GlassCard>
           </Reveal>
           <Reveal delay={0.1}>
@@ -439,14 +439,14 @@ export default function FilamentVrijdagPlaMetalPage() {
                   <p className="mt-2">Panel lines, greephandles en behuizingen die realistisch ogen op video of podium.</p>
                 </li>
                 <li className="rounded-2xl border border-slate-100 bg-white/60 p-4">
-                  <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Industriële look</p>
+                  <p className="text-xs uppercase tracking-[0.3em] text-slate-500">IndustriÃ«le look</p>
                   <p className="mt-2">
-                    Conceptmock-ups voor machines en interfaces waar stakeholders “metaal” willen zien zonder CNC-traject.
+                    Conceptmock-ups voor machines en interfaces waar stakeholders â€œmetaalâ€ willen zien zonder CNC-traject.
                   </p>
                 </li>
                 <li className="rounded-2xl border border-slate-100 bg-white/60 p-4">
                   <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Interieur & retail</p>
-                  <p className="mt-2">Logo’s, sokkels en accenten met metaallook voor winkels, showrooms of beurzen.</p>
+                  <p className="mt-2">Logoâ€™s, sokkels en accenten met metaallook voor winkels, showrooms of beurzen.</p>
                 </li>
                 <li className="rounded-2xl border border-slate-100 bg-white/60 p-4">
                   <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Marketingmock-ups</p>
@@ -475,7 +475,7 @@ export default function FilamentVrijdagPlaMetalPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
-                  <span>Industriële mock-ups of demo-opstellingen rond machines en user interfaces.</span>
+                  <span>IndustriÃ«le mock-ups of demo-opstellingen rond machines en user interfaces.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
@@ -624,6 +624,7 @@ export default function FilamentVrijdagPlaMetalPage() {
     </main>
   )
 }
+
 
 
 

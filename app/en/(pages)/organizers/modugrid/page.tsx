@@ -1,13 +1,14 @@
 // app/en/(pages)/organizers/modugrid/page.tsx
 import type { Metadata } from "next"
 import Link from "next/link"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Faq from "@/components/Faq"
 import OrganizerBundles from "@/components/OrganizerBundles"
 import AutoCarousel from "@/components/AutoCarousel"
 import Reveal from "@/components/Reveal"
 import { ORGANIZER_PAGES } from "@/content/organizer-details"
 import { buildOrganizerSchemas } from "@/lib/organizers"
-import { SITE } from "@/lib/seo"
+import { SITE, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 const PAGE = ORGANIZER_PAGES.modugrid
 const PAGE_URL = `${SITE.url}/en/organizers/${PAGE.slug}`
@@ -67,7 +68,7 @@ export const metadata: Metadata = {
     canonical: PAGE_URL,
     languages: {
       "nl-BE": `${SITE.url}/organizers/${PAGE.slug}`,
-      en: PAGE_URL,
+      "en-BE": PAGE_URL,
       "x-default": `${SITE.url}/organizers/${PAGE.slug}`,
     },
   },
@@ -119,15 +120,40 @@ export default function ModuGridPageEn() {
     width: img.width,
     height: img.height,
   }))
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: FAQ_EN.map((item) => ({
-      "@type": "Question",
-      name: item.q,
-      acceptedAnswer: { "@type": "Answer", text: item.a },
-    })),
-  }
+  const faqSchema = buildFaqPageSchema({
+    inLanguage: "en-BE",
+    mainEntityOfPage: PAGE_URL,
+    items: FAQ_EN,
+  })
+  const howToSchema = buildHowToSchema({
+    name: "Request a custom Gridfinity pocket",
+    description: "Ask a custom per-tool pocket with photo and dimensions.",
+    inLanguage: "en-BE",
+    mainEntityOfPage: PAGE_URL,
+    totalTime: "PT10M",
+    toolNames: ["Photo", "Ruler or caliper"],
+    url: PAGE_URL,
+    steps: [
+      { name: "Take a photo", text: "Top-down photo of the tool in the open case or on paper." },
+      { name: "Measure", text: "Length, width and height (or diameter x height) in millimetres." },
+      { name: "Choose orientation", text: "Flat or upright placement." },
+      { name: "Qty", text: "Tell how many identical tools go in the same drawer." },
+      { name: "Send", text: "Upload via the contact form (prefill Gridfinity)." },
+    ],
+  })
+  const tocItems = [
+    { id: "modugrid-intro", label: "What is this Gridfinity setup?" },
+    { id: "bundles", label: "Bundles and presets" },
+    { id: "carousel", label: "Layout photos" },
+    { id: "faq", label: "Gridfinity FAQ" },
+    { id: "modugrid-sources", label: "Sources and references" },
+  ]
+  const references = [
+    { label: "Gridfinity open-source project", url: "https://gridfinity.xyz/" },
+    { label: "Gridfinity GitHub repository", url: "https://github.com/joetesla7/gridfinity" },
+    { label: "ISO/ASTM 52900 terminology", url: "https://www.astm.org/f2997-13r21.html" },
+  ]
+  const lastUpdatedLabel = "Last updated: February 6, 2026"
 
   return (
     <>
@@ -137,7 +163,7 @@ export default function ModuGridPageEn() {
             Gridfinity · open-source grid without loose bins
           </div>
           <div className="space-y-4">
-            <h1 className="text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
+            <h1 id="modugrid-intro" className="scroll-mt-28 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
               Custom Gridfinity organizers for your system.
             </h1>
             <p className="max-w-3xl text-lg text-slate-700 dark:text-slate-200">
@@ -146,6 +172,8 @@ export default function ModuGridPageEn() {
             <p className="max-w-3xl text-slate-700 dark:text-slate-200">
               Every bin can be customized: send a photo + dimensions and we model a per-tool pocket with label edge and optional anti-slip.
             </p>
+            <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Contents" items={tocItems} className="max-w-xl" />
             <div className="flex flex-wrap gap-3 text-sm">
               <a href="#bundles" className="underline decoration-cyan-400 hover:decoration-cyan-700">
                 Bundles & presets
@@ -159,6 +187,9 @@ export default function ModuGridPageEn() {
               <Link href="/en/blog/gridfinity-modular-storage-system" className="underline decoration-cyan-400 hover:decoration-cyan-700">
                 Gridfinity guide
               </Link>
+              <a href="#modugrid-sources" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+                Sources
+              </a>
             </div>
           </div>
 
@@ -194,13 +225,13 @@ export default function ModuGridPageEn() {
 
       <section className="bg-gradient-to-b from-white to-slate-50 px-4 py-12 sm:py-16 dark:from-[#050815] dark:to-[#0B0F1A]">
         <div className="mx-auto max-w-6xl space-y-10">
-          <section id="bundles">
+          <section id="bundles" className="scroll-mt-28">
             <Reveal>
               <OrganizerBundles systemSlug={PAGE.slug} systemName="Gridfinity" bundles={BUNDLES_EN} />
             </Reveal>
           </section>
 
-          <section id="carousel">
+          <section id="carousel" className="scroll-mt-28">
             <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
               <AutoCarousel
                 visibleCount={3}
@@ -214,10 +245,30 @@ export default function ModuGridPageEn() {
       </section>
 
       <div className="mx-auto max-w-5xl px-4 py-12 sm:py-16">
-        <section id="faq">
+        <section id="faq" className="scroll-mt-28">
         <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
           <Faq items={FAQ_EN} title="Frequently asked questions about Gridfinity organizers" className="mt-0" />
         </Reveal>
+        </section>
+
+        <section id="modugrid-sources" className="scroll-mt-28 mt-8">
+          <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
+            <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Sources and references</h2>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-200">
+              These references support terminology and compatibility framing used on this Gridfinity page.
+            </p>
+            <ul className="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-100">
+              {references.map((reference) => (
+                <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
+                  <cite className="not-italic">
+                    <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                      {reference.label}
+                    </Link>
+                  </cite>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
         </section>
       </div>
 
@@ -229,21 +280,7 @@ export default function ModuGridPageEn() {
             schemas.offerCatalog,
             faqSchema,
             ...imageObjects,
-            {
-              "@context": "https://schema.org",
-              "@type": "HowTo",
-              name: "Request a custom Gridfinity pocket",
-              description: "Ask a custom per-tool pocket with photo and dimensions.",
-              step: [
-                { "@type": "HowToStep", position: 1, name: "Take a photo", text: "Top-down photo of the tool in the open case or on paper." },
-                { "@type": "HowToStep", position: 2, name: "Measure", text: "Length, width and height (or diameter x height) in millimetres." },
-                { "@type": "HowToStep", position: 3, name: "Choose orientation", text: "Flat or upright placement." },
-                { "@type": "HowToStep", position: 4, name: "Qty", text: "Tell how many identical tools go in the same drawer." },
-                { "@type": "HowToStep", position: 5, name: "Send", text: "Upload via the contact form (prefill Gridfinity)." },
-              ],
-              tool: ["Photo", "Ruler or caliper"],
-              totalTime: "PT10M",
-            },
+            howToSchema,
           ]),
         }}
       />

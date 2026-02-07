@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-stem"
+const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-stem/"
 const publishedDate = "2026-01-13T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -546,6 +546,7 @@ export default function UseCaseDinsdagStemPage() {
     </main>
   )
 }
+
 
 
 

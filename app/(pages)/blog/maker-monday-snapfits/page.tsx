@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/maker-monday-snapfits"
+const canonical = "https://www.x3dprints.be/blog/maker-monday-snapfits/"
 const publishedDate = "2025-10-27T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Maker Monday #4: Zo ontwerp je betrouwbare 3D geprinte snapfits",
     description:
-      "Richtlijnen voor FDM clips en klemmen: wanddiktes, flex-oriëntatie, tolerantie en materiaalkeuze voor PLA, PETG en TPU.",
+      "Richtlijnen voor FDM clips en klemmen: wanddiktes, flex-oriÃ«ntatie, tolerantie en materiaalkeuze voor PLA, PETG en TPU.",
     url: canonical,
     type: "article",
     publishedTime: publishedDate,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Maker Monday #4: Printbare clips & snapfits",
     description:
-      "Materiaalkeuze, wanddiktes, oriëntatie en tolerantie voor PLA, PETG en TPU clips. Inclusief testmethodes en ribs.",
+      "Materiaalkeuze, wanddiktes, oriÃ«ntatie en tolerantie voor PLA, PETG en TPU clips. Inclusief testmethodes en ribs.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -136,9 +136,9 @@ export default function MakerMondaySnapfitsPage() {
               Hoe ontwerp je printbare clips, klemmen en snapfits?
             </h1>
             <p className="mt-4 text-lg text-slate-700">
-              Snapfits falen meestal door ontwerp, niet door het printproces. Te dunne armen, verkeerde oriëntatie, geen fillets
+              Snapfits falen meestal door ontwerp, niet door het printproces. Te dunne armen, verkeerde oriÃ«ntatie, geen fillets
               of foutieve tolerantie zorgen ervoor dat een clip na twee cycli breekt. Deze gids toont hoe wij PLA, PETG en TPU
-              klemmen wél betrouwbaar maken.
+              klemmen wÃ©l betrouwbaar maken.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=maker-monday-snapfits">Vraag clip-review</ShimmerButton>
@@ -155,7 +155,7 @@ export default function MakerMondaySnapfitsPage() {
                 Zie prijsimpact
               </Link>
             </div>
-            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 27 oktober 2025 • Deel van Maker Monday.</p>
+            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 27 oktober 2025 â€¢ Deel van Maker Monday.</p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
             {heroStats.map((stat) => (
@@ -190,7 +190,7 @@ export default function MakerMondaySnapfitsPage() {
                   TPU
                 </Link>{" "}
                 is dan weer ideaal voor anti-tril klemmen en soft latches. Het materiaal bepaalt hoeveel wanddikte, tolerantie en
-                oriëntatie je nodig hebt.
+                oriÃ«ntatie je nodig hebt.
               </p>
               <p className="mt-4 text-sm text-slate-600">
                 Toch een ABS, ASA of nylon vraagstuk? Laat het weten tijdens de intake. Onze productie draait op PLA, PETG en TPU
@@ -201,7 +201,7 @@ export default function MakerMondaySnapfitsPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">2. Oriëntatie: buig in X/Y, niet in Z</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">2. OriÃ«ntatie: buig in X/Y, niet in Z</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Clips breken wanneer de buigkracht de layer-lines uit elkaar trekt. Leg de clip zo neer dat de flex-arm in de X/Y
                 richting buigt. De lagen lopen dan mee en de arm gedraagt zich als een veer. Staat de arm rechtop in Z, dan breekt
@@ -269,7 +269,7 @@ export default function MakerMondaySnapfitsPage() {
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">4. Geometrie van een betrouwbare snapfit</h2>
               <p className="mt-2 text-sm text-slate-600">
-                Een haakhoek van 15-25° zorgt voor een gecontroleerde klik. Voeg 1-2 mm fillet aan de binnenkant van de haak en
+                Een haakhoek van 15-25Â° zorgt voor een gecontroleerde klik. Voeg 1-2 mm fillet aan de binnenkant van de haak en
                 2-4 mm fillet aan de basis van de arm. Voorzie een duidelijke schouder waar de clip tegen stopt. Zonder deze
                 details breekt de arm exact op de overgang.
               </p>
@@ -356,7 +356,7 @@ export default function MakerMondaySnapfitsPage() {
               <h2 className="text-2xl font-semibold text-slate-900">9. Testen voor de finale print</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Voer altijd een mini-test uit: print een clip op 20-30% schaal met identieke parameters, voer een flex-test tot
-                10-15° en test de clip op het doelobject. Zo vang je tolerantie- of oriëntatiefouten voordat je een volledige
+                10-15Â° en test de clip op het doelobject. Zo vang je tolerantie- of oriÃ«ntatiefouten voordat je een volledige
                 serie print.
               </p>
             </GlassCard>
@@ -371,7 +371,7 @@ export default function MakerMondaySnapfitsPage() {
               <h2 className="text-2xl font-semibold text-slate-900">10. Wanneer X3DPrints inschakelen?</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Laat ons meekijken als je clip mechanisch kritiek is, PETG of TPU combineert, of als de klem naadloos moet klikken.
-                We optimaliseren wanddiktes, tolerantie, oriëntatie en materiaalkeuze zodat je ontwerp meteen slaagt. Meer weten
+                We optimaliseren wanddiktes, tolerantie, oriÃ«ntatie en materiaalkeuze zodat je ontwerp meteen slaagt. Meer weten
                 over aanpak en tarieven? Check{" "}
                 <Link href="/pricing" className="font-semibold text-indigo-600 transition hover:text-indigo-500">
                   pricing
@@ -437,6 +437,7 @@ export default function MakerMondaySnapfitsPage() {
     </main>
   )
 }
+
 
 
 

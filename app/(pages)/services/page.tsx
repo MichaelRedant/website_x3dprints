@@ -12,6 +12,10 @@ import {
   Box,
   Sparkles,
   Puzzle,
+  CheckCircle2,
+  Clock3,
+  MapPin,
+  ShieldCheck,
 } from "lucide-react"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
@@ -20,27 +24,28 @@ import OrganizerCta from "@/components/OrganizerCta"
 import Faq from "@/components/Faq"
 import ShimmerButton from "@/components/ShimmerButton"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
-import { buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema } from "@/lib/seo"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildFaqPageSchema, buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema } from "@/lib/seo"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import { servicesFaqByLocale } from "@/content/services-faq"
 
 const NL_METADATA: Metadata = {
-  title: "3D Print Service Herzele | X3DPrints bijberoep",
+  title: "3D print service België | 3D printen op maat | X3DPrints",
   description:
-    "Lokale FDM 3D-printservice uit Herzele (bijberoep). Prototypes en kleine reeksen in PLA, PETG of TPU met eerlijk advies en korte lijnen.",
+    "Lokale FDM 3D print service België vanuit Herzele (regio Gent). 3D printen op maat in PLA, PETG of TPU voor prototypes en kleine reeksen.",
   alternates: {
     canonical: "https://www.x3dprints.be/services/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/services/",
-      en: "https://www.x3dprints.be/en/services/",
+      "en-BE": "https://www.x3dprints.be/en/services/",
       "x-default": "https://www.x3dprints.be/services/",
     },
   },
   openGraph: {
-    title: "3D print service Herzele",
+    title: "3D print service België vanuit Herzele",
     description:
-      "Kleine oplages, snelle opvolging en realistisch advies over materiaal en ontwerp. Bijberoep vanuit Herzele/Gent.",
+      "3D printen op maat voor klanten in Gent, Aalst en Vlaanderen. Kleine oplages, snelle opvolging en realistisch materiaaladvies.",
     url: "https://www.x3dprints.be/services/",
     images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "3D print service in Herzele" }],
     locale: "nl_BE",
@@ -48,9 +53,9 @@ const NL_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D print service Herzele",
+    title: "3D print service België",
     description:
-      "Kleine oplages, snelle opvolging en realistisch advies over materiaal en ontwerp. Bijberoep vanuit Herzele/Gent.",
+      "3D printen op maat vanuit Herzele. Kleine oplages met snelle opvolging en transparante communicatie.",
     images: ["/images/portfolio/20241030_080710-1.jpg"],
   },
 }
@@ -63,7 +68,7 @@ export const EN_METADATA: Metadata = {
     canonical: "https://www.x3dprints.be/en/services/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/services/",
-      en: "https://www.x3dprints.be/en/services/",
+      "en-BE": "https://www.x3dprints.be/en/services/",
       "x-default": "https://www.x3dprints.be/services/",
     },
   },
@@ -90,12 +95,12 @@ export const metadata: Metadata = NL_METADATA
 const SERVICES_COPY_NL = {
   meta: {
     description:
-      "Lokale FDM 3D-printservice uit Herzele (bijberoep). Prototypes en kleine reeksen in PLA, PETG of TPU met eerlijk advies en korte lijnen.",
+      "Lokale FDM 3D print service België vanuit Herzele (regio Gent). 3D printen op maat in PLA, PETG of TPU voor prototypes en kleine reeksen.",
   },
   hero: {
-    title: "3D print service uit Herzele (bijberoep)",
+    title: "3D print service in België vanuit Herzele",
     intro:
-      "X3DPrints is een eenmansstudio in bijberoep. Je spreekt rechtstreeks met de maker, krijgt eerlijke planning (meestal enkele werkdagen) en materiaaladvies dat past bij jouw project en budget.",
+      "X3DPrints is een eenmansstudio in bijberoep. Wil je een 3D model laten printen? Je spreekt rechtstreeks met de maker, krijgt eerlijke planning (meestal enkele werkdagen) en materiaaladvies dat past bij jouw project en budget in regio Gent en de rest van Vlaanderen.",
     ctas: {
       quote: "Offerte aanvragen",
       tool: "Material Suggestion Tool",
@@ -261,6 +266,43 @@ const SERVICES_COPY_NL = {
         title: "Transparantie",
         body:
           "Je krijgt updates per mail over status en levering. Past iets niet in onze scope, dan zeggen we dat meteen.",
+      },
+    ],
+  },
+  quickPaths: {
+    title: "Snelle routes per projectdoel",
+    intro:
+      "Kies je projecttype en start meteen met de juiste materiaalroute, prijscontext en contactprefill.",
+    items: [
+      {
+        title: "Prototype en pasvormtest",
+        description: "Snel valideren met PLA Matte en daarna gericht opschalen naar PETG of Tough+.",
+        materialHref: "/materials/pla-matte",
+        materialLabel: "Bekijk PLA Matte",
+        contactHref:
+          "/contact?material=pla-matte&quote=Prototype%20aanvraag%20met%20PLA%20Matte%20basis",
+        contactLabel: "Start prototype aanvraag",
+        eventLabel: "prototype",
+      },
+      {
+        title: "Outdoor en functioneel onderdeel",
+        description: "PETG als robuuste basis voor buitengebruik, warmtebelasting en dagelijkse handling.",
+        materialHref: "/materials/petg",
+        materialLabel: "Bekijk PETG",
+        contactHref:
+          "/contact?material=petg&quote=Functioneel%20onderdeel%20met%20PETG%20als%20basis",
+        contactLabel: "Start functionele aanvraag",
+        eventLabel: "functional",
+      },
+      {
+        title: "Flexibele onderdelen",
+        description: "TPU voor grips, beschermdelen en parts die moeten plooien zonder te scheuren.",
+        materialHref: "/materials/tpu",
+        materialLabel: "Bekijk TPU",
+        contactHref:
+          "/contact?material=tpu&quote=Aanvraag%20voor%20flexibel%20onderdeel%20in%20TPU",
+        contactLabel: "Start TPU aanvraag",
+        eventLabel: "flexible",
       },
     ],
   },
@@ -512,6 +554,43 @@ const SERVICES_COPY_EN = {
       },
     ],
   },
+  quickPaths: {
+    title: "Fast paths by project goal",
+    intro:
+      "Pick your project type and start immediately with the right material route, pricing context and contact prefill.",
+    items: [
+      {
+        title: "Prototype and fit check",
+        description: "Validate quickly with PLA Matte first, then move to PETG or Tough+ when needed.",
+        materialHref: "/materials/pla-matte",
+        materialLabel: "View PLA Matte",
+        contactHref:
+          "/contact?material=pla-matte&quote=Prototype%20request%20with%20PLA%20Matte%20baseline",
+        contactLabel: "Start prototype request",
+        eventLabel: "prototype",
+      },
+      {
+        title: "Outdoor and functional part",
+        description: "PETG as a robust baseline for outdoor use, heat exposure and daily handling.",
+        materialHref: "/materials/petg",
+        materialLabel: "View PETG",
+        contactHref:
+          "/contact?material=petg&quote=Functional%20part%20request%20with%20PETG%20baseline",
+        contactLabel: "Start functional request",
+        eventLabel: "functional",
+      },
+      {
+        title: "Flexible components",
+        description: "TPU for grips, protective parts and components that must bend without cracking.",
+        materialHref: "/materials/tpu",
+        materialLabel: "View TPU",
+        contactHref:
+          "/contact?material=tpu&quote=Request%20for%20a%20flexible%20TPU%20component",
+        contactLabel: "Start TPU request",
+        eventLabel: "flexible",
+      },
+    ],
+  },
   segmentSpotlight: {
     title: "Segment spotlight",
     body:
@@ -597,20 +676,74 @@ export default function Page({ locale }: PageProps) {
   const copy = isEn ? SERVICES_COPY_EN : SERVICES_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
   const faqItems = servicesFaqByLocale(normalizedLocale)
-
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-
-    inLanguage: ["nl-BE", "en-BE"],
-    mainEntity: faqItems.map((item) => ({
-      "@type": "Question",
-      name: item.q,
-      acceptedAnswer: { "@type": "Answer", text: item.a },
-    })),
-  }
+  const tocItems = isEn
+    ? [
+      { id: "service-approach", label: "How does the service approach work?" },
+      { id: "service-use-cases", label: "Which 3D printing use cases do we cover?" },
+      { id: "service-quick-paths", label: "What is the fastest route for my project?" },
+      { id: "service-segments", label: "Which segments do we support?" },
+      { id: "service-specs", label: "What are the key specs and inclusions?" },
+      { id: "service-workflow", label: "What is the workflow from file to delivery?" },
+        { id: "service-faq", label: "FAQ" },
+        { id: "service-sources", label: "Sources and references" },
+      ]
+    : [
+      { id: "service-approach", label: "Hoe werkt onze aanpak als 3D print service?" },
+      { id: "service-use-cases", label: "Welke 3D print-toepassingen ondersteunen we?" },
+      { id: "service-quick-paths", label: "Wat is de snelste route voor jouw project?" },
+      { id: "service-segments", label: "Voor welke segmenten printen we?" },
+      { id: "service-specs", label: "Wat zijn de belangrijkste specs en inclusies?" },
+      { id: "service-workflow", label: "Hoe loopt de workflow van bestand tot levering?" },
+        { id: "service-faq", label: "FAQ" },
+        { id: "service-sources", label: "Bronnen en referenties" },
+      ]
+  const references = isEn
+    ? [
+        { label: "ISO/ASTM 52900 terminology for additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
+        { label: "Prusa materials overview (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "All3DP FDM process explainer", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
+      ]
+    : [
+        { label: "ISO/ASTM 52900 terminologie voor additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
+        { label: "Prusa materialenoverzicht (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "All3DP uitleg van het FDM-proces", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
+      ]
+  const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"
+  const heroFacts = isEn
+    ? [
+        { icon: Clock3, label: "Lead time", value: "Usually a few business days" },
+        { icon: MapPin, label: "Service area", value: "Herzele, Ghent and all of Belgium" },
+        { icon: ShieldCheck, label: "Production style", value: "Direct contact with one maker" },
+      ]
+    : [
+        { icon: Clock3, label: "Doorlooptijd", value: "Meestal enkele werkdagen" },
+        { icon: MapPin, label: "Servicegebied", value: "Herzele, Gent en heel Belgie" },
+        { icon: ShieldCheck, label: "Werkwijze", value: "Rechtstreeks met een maker" },
+      ]
+  const heroTrustPoints = isEn
+    ? [
+        "Local FDM 3D print service in Belgium",
+        "Clear quote route for prototypes and small batches",
+        "Material advice for PLA, PETG and TPU",
+      ]
+    : [
+        "Lokale FDM 3D print service Belgie",
+        "Heldere offerteflow voor prototypes en kleine reeksen",
+        "Materiaaladvies voor PLA, PETG en TPU",
+      ]
+  const servicesSectionLead = isEn
+    ? "From 3D model printing to small batch production: this is the complete service stack for practical, measurable results."
+    : "Van 3D model printen tot kleine reeksen: dit is de volledige service-stack voor praktische en meetbare resultaten."
+  const knowledgeSectionIntro = isEn
+    ? "These pages support faster decisions around pricing, materials and local production planning."
+    : "Deze pagina's helpen je sneller beslissen rond prijs, materiaalkeuze en lokale productieplanning."
 
   const safeUrl = isEn ? "https://www.x3dprints.be/en/services" : "https://www.x3dprints.be/services"
+  const faqJsonLd = buildFaqPageSchema({
+    inLanguage: isEn ? "en-BE" : "nl-BE",
+    mainEntityOfPage: safeUrl,
+    items: faqItems.map((item) => ({ q: item.q, a: item.a })),
+  })
   const catalogJsonLd = buildOfferCatalog(copy.catalogName, copy.pricingOffers)
   const localBusinessJsonLd = buildLocalBusinessSchema({
     pageUrl: safeUrl,
@@ -621,16 +754,11 @@ export default function Page({ locale }: PageProps) {
     offersName: copy.catalogName,
     offers: copy.pricingOffers,
   })
-  const serviceJsonLd = buildServiceSchema(copy.serviceName, copy.pricingOffers, safeUrl)
-  const readMorePrimaryLinks = copy.readMore.primaryLinks.map((link) => ({
-    ...link,
-    href: localize(link.href),
-  }))
-  const readMoreSecondaryLinks = copy.readMore.secondaryLinks.map((link) => ({
-    ...link,
-    href: localize(link.href),
-  }))
-
+  const serviceJsonLd = buildServiceSchema(copy.serviceName, copy.pricingOffers, safeUrl, {
+    description: copy.meta.description,
+    inLanguage: isEn ? "en-BE" : "nl-BE",
+    mainEntityOfPage: safeUrl,
+  })
   return (
     <main className="relative">
       <div
@@ -642,34 +770,69 @@ export default function Page({ locale }: PageProps) {
       {/* HERO */}
       <section className="px-6 pt-14 pb-10 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
-          <Reveal className="stacked-content">
-            <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              {copy.hero.title}
-            </h1>
-            <p className="mt-3 max-w-3xl text-pretty text-slate-600">
-              {copy.hero.intro}
-            </p>
-            <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton
-                href={localize("/contact")}
-                event={{ action: "cta_click", category: "services_hero", label: "quote" }}
-              >
-                {copy.hero.ctas.quote}
-              </ShimmerButton>
-              <Link
-                href={localize("/materials#material-suggestion-tool")}
-                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
-              >
-                {copy.hero.ctas.tool}
-              </Link>
-              <Link
-                href={localize("/blog")}
-                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
-              >
-                {copy.hero.ctas.blog}
-              </Link>
-            </div>
-          </Reveal>
+          <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+            <Reveal className="stacked-content">
+              <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+                {copy.hero.title}
+              </h1>
+              <p className="mt-3 max-w-3xl text-pretty text-slate-600">
+                {copy.hero.intro}
+              </p>
+              <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <ShimmerButton
+                  href={localize("/contact")}
+                  event={{ action: "cta_click", category: "services_hero", label: "quote" }}
+                >
+                  {copy.hero.ctas.quote}
+                </ShimmerButton>
+                <Link
+                  href={localize("/materials#material-suggestion-tool")}
+                  className="inline-flex items-center justify-center rounded-xl border border-slate-200/80 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white"
+                >
+                  {copy.hero.ctas.tool}
+                </Link>
+                <Link
+                  href={localize("/blog")}
+                  className="inline-flex items-center justify-center text-sm font-semibold text-indigo-700 transition hover:text-indigo-600"
+                >
+                  {copy.hero.ctas.blog} <span aria-hidden className="ml-1">-&gt;</span>
+                </Link>
+              </div>
+              <ContentTableOfContents
+                title={isEn ? "Contents" : "Inhoud"}
+                items={tocItems}
+                className="mt-6 max-w-2xl"
+              />
+            </Reveal>
+
+            <Reveal delay={0.05}>
+              <GlassCard className="p-6 sm:p-7">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                  {isEn ? "At a glance" : "In een oogopslag"}
+                </p>
+                <ul className="mt-4 space-y-3">
+                  {heroFacts.map((fact) => (
+                    <li key={fact.label} className="flex gap-3 rounded-2xl border border-slate-200/70 bg-white/75 p-3">
+                      <fact.icon className="mt-0.5 h-5 w-5 text-indigo-600" aria-hidden />
+                      <div>
+                        <p className="text-xs uppercase tracking-wide text-slate-500">{fact.label}</p>
+                        <p className="text-sm font-semibold text-slate-900">{fact.value}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <ul className="mt-5 space-y-2 text-sm text-slate-600">
+                  {heroTrustPoints.map((point) => (
+                    <li key={point} className="flex items-start gap-2">
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 text-emerald-600" aria-hidden />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </GlassCard>
+            </Reveal>
+          </div>
         </div>
       </section>
 
@@ -681,7 +844,7 @@ export default function Page({ locale }: PageProps) {
               <div className="grid gap-6 lg:grid-cols-2">
                 <div className="space-y-3">
                   <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.solo.kicker}</p>
-                  <h2 className="text-2xl font-semibold text-slate-900">{copy.solo.title}</h2>
+                  <h2 id="service-approach" className="scroll-mt-28 text-2xl font-semibold text-slate-900">{copy.solo.title}</h2>
                   <p className="text-sm text-slate-600">{copy.solo.body}</p>
                   <ul className="space-y-2 text-sm text-slate-600">
                     {copy.solo.bullets.map((item) => (
@@ -721,10 +884,19 @@ export default function Page({ locale }: PageProps) {
       {/* SERVICES GRID */}
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <Reveal className="mb-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+              {isEn ? "Core services" : "Kernservices"}
+            </p>
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-900">
+              {isEn ? "Professional 3D printing services with clear scope" : "Professionele 3D print services met duidelijke scope"}
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm text-slate-600">{servicesSectionLead}</p>
+          </Reveal>
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {copy.services.map((service, index) => (
               <Reveal key={service.title} delay={index * 0.06}>
-                <GlassCard className="h-full p-6 transition-transform hover:-translate-y-1">
+                <GlassCard className="h-full border-slate-200/70 bg-white/80 p-6 shadow-[0_10px_30px_rgba(15,23,42,0.08)] transition hover:-translate-y-1">
                   <service.icon className="h-8 w-8 text-indigo-600" aria-hidden />
                   <h3 className="mt-4 text-lg font-semibold text-slate-900">{service.title}</h3>
                   <p className="mt-2 text-sm text-slate-600">{service.description}</p>
@@ -740,11 +912,17 @@ export default function Page({ locale }: PageProps) {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="p-6 sm:p-8">
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="mb-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.knowledge.label}</p>
+                <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-900">
+                  {isEn ? "SEO support pages for faster quote decisions" : "SEO-hulppagina's voor snellere offertebeslissingen"}
+                </h2>
+                <p className="mt-2 max-w-3xl text-sm text-slate-600">{knowledgeSectionIntro}</p>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 {copy.knowledge.items.map((item) => (
-                  <div key={item.title}>
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.knowledge.label}</p>
-                    <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
+                  <div key={item.title} className="rounded-2xl border border-slate-200/70 bg-white/75 p-4">
+                    <h3 className="text-base font-semibold text-slate-900">{item.title}</h3>
                     <p className="mt-2 text-sm text-slate-600">{item.body}</p>
                     <Link
                       href={localize(item.href)}
@@ -764,7 +942,7 @@ export default function Page({ locale }: PageProps) {
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6">
-            <h2 className="text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl">{copy.useCases.title}</h2>
+            <h2 id="service-use-cases" className="scroll-mt-28 text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl">{copy.useCases.title}</h2>
             <p className="mt-2 max-w-3xl text-slate-600">{copy.useCases.intro}</p>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -774,6 +952,46 @@ export default function Page({ locale }: PageProps) {
                   <useCase.icon className="h-7 w-7 text-indigo-600" aria-hidden />
                   <h3 className="mt-3 text-base font-semibold text-slate-900">{useCase.title}</h3>
                   <p className="mt-1 text-sm text-slate-600">{useCase.description}</p>
+                </GlassCard>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <h2
+              id="service-quick-paths"
+              className="scroll-mt-28 text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl"
+            >
+              {copy.quickPaths.title}
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm text-slate-600">{copy.quickPaths.intro}</p>
+          </Reveal>
+          <div className="mt-6 grid gap-4 lg:grid-cols-3">
+            {copy.quickPaths.items.map((item, index) => (
+              <Reveal key={item.title} delay={index * 0.05}>
+                <GlassCard className="h-full border-slate-200/70 bg-white/80 p-6">
+                  <h3 className="text-base font-semibold text-slate-900">{item.title}</h3>
+                  <p className="mt-2 text-sm text-slate-600">{item.description}</p>
+                  <p className="mt-3 text-xs font-medium uppercase tracking-[0.12em] text-slate-500">
+                    {isEn ? "Recommended material route" : "Aanbevolen materiaalroute"}
+                  </p>
+                  <Link
+                    href={localize(item.materialHref)}
+                    className="mt-1 inline-flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-600"
+                  >
+                    {item.materialLabel} <span aria-hidden>-&gt;</span>
+                  </Link>
+                  <ShimmerButton
+                    href={localize(item.contactHref)}
+                    className="mt-4 px-4 py-2.5 text-xs"
+                    event={{ action: "cta_click", category: "services_quick_path", label: item.eventLabel }}
+                  >
+                    {item.contactLabel}
+                  </ShimmerButton>
                 </GlassCard>
               </Reveal>
             ))}
@@ -805,7 +1023,7 @@ export default function Page({ locale }: PageProps) {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="p-6 sm:p-8">
-              <h2 className="text-xl font-semibold text-slate-900">{copy.segmentSpotlight.title}</h2>
+              <h2 id="service-segments" className="scroll-mt-28 text-xl font-semibold text-slate-900">{copy.segmentSpotlight.title}</h2>
               <p className="mt-2 text-sm text-slate-600">{copy.segmentSpotlight.body}</p>
               <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {copy.segmentSpotlight.links.map((link) => (
@@ -840,7 +1058,7 @@ export default function Page({ locale }: PageProps) {
           <div className="grid gap-6 lg:grid-cols-[1.2fr_.8fr]">
             <Reveal>
               <GlassCard className="p-6">
-                <h2 className="text-xl font-semibold tracking-tight text-slate-900">{copy.specs.title}</h2>
+                <h2 id="service-specs" className="scroll-mt-28 text-xl font-semibold tracking-tight text-slate-900">{copy.specs.title}</h2>
                 <dl className="mt-3 grid gap-3 sm:grid-cols-2">
                   {copy.specs.items.map((spec) => (
                     <div key={spec.label} className="rounded-lg border border-slate-200/70 bg-white/70 p-3">
@@ -880,7 +1098,7 @@ export default function Page({ locale }: PageProps) {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold tracking-tight text-slate-900">{copy.workflow.title}</h2>
+              <h2 id="service-workflow" className="scroll-mt-28 text-xl font-semibold tracking-tight text-slate-900">{copy.workflow.title}</h2>
               <ol className="mt-3 list-decimal space-y-1 pl-5 text-slate-600">
                 {copy.workflow.steps.map((step) => (
                   <li key={step}>{step}</li>
@@ -892,10 +1110,9 @@ export default function Page({ locale }: PageProps) {
       </section>
 
       <ReadMoreLinks
+        pageType="services"
         title={copy.readMore.title}
         intro={copy.readMore.intro}
-        primaryLinks={readMorePrimaryLinks}
-        secondaryLinks={readMoreSecondaryLinks}
       />
 
       {/* CTA */}
@@ -908,10 +1125,36 @@ export default function Page({ locale }: PageProps) {
       </div>
 
       {/* FAQ */}
-      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+      <section id="service-faq" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <Faq title={copy.faq.title} items={faqItems} />
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="service-sources" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-xl font-semibold text-slate-900">{isEn ? "Sources and references" : "Bronnen en referenties"}</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                {isEn
+                  ? "We use these references for terminology and material guidance."
+                  : "We gebruiken deze referenties voor terminologie en materiaaladvies."}
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
           </Reveal>
         </div>
       </section>

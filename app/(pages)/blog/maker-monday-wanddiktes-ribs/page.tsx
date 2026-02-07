@@ -1,17 +1,17 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/maker-monday-wanddiktes-ribs"
+const canonical = "https://www.x3dprints.be/blog/maker-monday-wanddiktes-ribs/"
 const publishedDate = "2025-10-13T08:00:00+02:00"
 
 export const metadata: Metadata = {
   title: "Maker Monday #2: Wanddiktes, ribs en verstevigingen voor FDM | X3DPrints",
   description:
-    "How-to gids over wanddikte 3D printen. Leer hoe je PLA, PETG en TPU onderdelen ontwerpt met juiste wall thickness, ribs en oriëntatie zodat functionele FDM prints standhouden.",
+    "How-to gids over wanddikte 3D printen. Leer hoe je PLA, PETG en TPU onderdelen ontwerpt met juiste wall thickness, ribs en oriÃ«ntatie zodat functionele FDM prints standhouden.",
   alternates: { canonical },
   openGraph: {
     title: "Maker Monday #2: Wanddiktes & ribs voor functionele FDM onderdelen",
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
 }
 
 const heroStats = [
-  { label: "Minimum wand", value: "≥ 1.6 mm", detail: "3 perimeterlijnen bij 0.4 mm nozzle" },
-  { label: "Rib dikte", value: "1.2 – 1.6 mm", detail: "Met fillets van 2-4 mm" },
+  { label: "Minimum wand", value: "â‰¥ 1.6 mm", detail: "3 perimeterlijnen bij 0.4 mm nozzle" },
+  { label: "Rib dikte", value: "1.2 â€“ 1.6 mm", detail: "Met fillets van 2-4 mm" },
   { label: "Box design", value: "Shell + rib + shell", detail: "Verdubbelt torsiestijfheid" },
 ]
 
@@ -61,10 +61,10 @@ const wallMatrix = [
 ]
 
 const ribGuidelines = [
-  { title: "Dikte", detail: "1.2–1.6 mm voor standaard 0.4 mm nozzle (3-4 lijnen)." },
+  { title: "Dikte", detail: "1.2â€“1.6 mm voor standaard 0.4 mm nozzle (3-4 lijnen)." },
   { title: "Hoogte", detail: "Minstens 3x de dikte voor merkbare winst." },
-  { title: "Hoek", detail: "45–60° en volg de krachtlijn voor beste resultaat." },
-  { title: "Fillet", detail: "2–4 mm radius waar rib en wand samenkomen." },
+  { title: "Hoek", detail: "45â€“60Â° en volg de krachtlijn voor beste resultaat." },
+  { title: "Fillet", detail: "2â€“4 mm radius waar rib en wand samenkomen." },
 ]
 
 const reinforcementTechniques = [
@@ -78,7 +78,7 @@ const articleJsonLd = {
   "@type": "BlogPosting",
   headline: "Maker Monday #2: Wanddiktes, ribs en verstevigingen voor FDM",
   description:
-    "Ontwerpregels voor wanddikte 3D printen: tabellen per materiaal, rib-richtlijnen, oriëntatie en materiaalkeuze voor functionele PLA, PETG en TPU onderdelen.",
+    "Ontwerpregels voor wanddikte 3D printen: tabellen per materiaal, rib-richtlijnen, oriÃ«ntatie en materiaalkeuze voor functionele PLA, PETG en TPU onderdelen.",
   datePublished: publishedDate,
   dateModified: publishedDate,
   author: {
@@ -145,7 +145,7 @@ export default function MakerMondayWanddiktesRibsPage() {
             <p className="mt-4 text-lg text-slate-700">
               FDM is sterk zolang je het ontwerpt als FDM. Ontwerpen voor gietwerk of freesdelen levert te dunne wanden,
               verkeerde krachtsverdeling en delaminatie op. In deze gids delen we de wanddiktes, rib-richtlijnen en
-              oriëntatie-keuzes die wij toepassen voor PLA, PETG en TPU.
+              oriÃ«ntatie-keuzes die wij toepassen voor PLA, PETG en TPU.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=maker-monday-walls">Vraag ontwerpreview</ShimmerButton>
@@ -163,7 +163,7 @@ export default function MakerMondayWanddiktesRibsPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-slate-500">
-              Gepubliceerd op 13 oktober 2025 • Deel van de Maker Monday knowledge hub voor engineers.
+              Gepubliceerd op 13 oktober 2025 â€¢ Deel van de Maker Monday knowledge hub voor engineers.
             </p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
@@ -276,7 +276,7 @@ export default function MakerMondayWanddiktesRibsPage() {
                 ))}
               </ul>
               <p className="mt-4 text-sm text-slate-600">
-                Ribs zijn essentieel bij covers, clips, behuizingen, brackets en alles wat torsie ziet. Eén brede rib werkt beter
+                Ribs zijn essentieel bij covers, clips, behuizingen, brackets en alles wat torsie ziet. EÃ©n brede rib werkt beter
                 dan vier dunne. Combineer ribs met 2-4 mm fillets zodat spanningen geleidelijk afnemen.
               </p>
             </GlassCard>
@@ -291,7 +291,7 @@ export default function MakerMondayWanddiktesRibsPage() {
 {`[wand 2.4 mm] + [ribs intern] + [wand 2.4 mm]`}
               </pre>
               <p className="mt-4 text-sm text-slate-600">
-                Je creëert zo een gesloten box die zowel druk als torsie aan kan. Vergeet de binnenste ribben niet te verbinden
+                Je creÃ«ert zo een gesloten box die zowel druk als torsie aan kan. Vergeet de binnenste ribben niet te verbinden
                 met fillets of chamfers zodat krachtlijnen logisch doorlopen.
               </p>
             </GlassCard>
@@ -305,12 +305,12 @@ export default function MakerMondayWanddiktesRibsPage() {
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">5. Overgangen en stresszones</h2>
               <p className="mt-2 text-sm text-slate-600">
-                Scherpe binnenhoeken en abrupte dikteveranderingen concentreren spanning. Vermijd 90° binnenhoeken zonder fillet,
+                Scherpe binnenhoeken en abrupte dikteveranderingen concentreren spanning. Vermijd 90Â° binnenhoeken zonder fillet,
                 dun-naar-dik overgangen zonder taper en lange flaps met minimale ondersteuning. Gebruik in de plaats:
               </p>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-600">
                 <li>Fillets van 3-6 mm radius in functionele onderdelen.</li>
-                <li>Chamfers van 45° om krachten te spreiden.</li>
+                <li>Chamfers van 45Â° om krachten te spreiden.</li>
                 <li>Tapers die geleidelijk naar dikkere zones groeien.</li>
               </ul>
               <p className="mt-4 text-sm text-slate-600">
@@ -327,7 +327,7 @@ export default function MakerMondayWanddiktesRibsPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">6. Oriëntatie bepaalt levensduur</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">6. OriÃ«ntatie bepaalt levensduur</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Lagen zijn sterk in compressie en druk over de breedte, maar zwak in Z-trek en torsie dwars op de layer-lines.
                 Daarom:
@@ -346,7 +346,7 @@ export default function MakerMondayWanddiktesRibsPage() {
                 </li>
               </ul>
               <p className="mt-4 text-sm text-slate-600">
-                Warping of layer cracks door verkeerde oriëntatie? We tackelen die in{" "}
+                Warping of layer cracks door verkeerde oriÃ«ntatie? We tackelen die in{" "}
                 <Link
                   href="/blog/maker-monday-warping-layer-cracks"
                   className="font-semibold text-indigo-600 transition hover:text-indigo-500"
@@ -387,7 +387,7 @@ export default function MakerMondayWanddiktesRibsPage() {
                 <li className="rounded-2xl border border-slate-100 bg-white/70 p-3">0.8 mm wanden op hulzen groter dan 150 mm.</li>
                 <li className="rounded-2xl border border-slate-100 bg-white/70 p-3">Clips met scherpe hoeken zonder fillet.</li>
                 <li className="rounded-2xl border border-slate-100 bg-white/70 p-3">Holtes die dunner zijn dan twee lijnen en dus niet printbaar.</li>
-                <li className="rounded-2xl border border-slate-100 bg-white/70 p-3">Overhang &gt;55° zonder steunvlak of rib.</li>
+                <li className="rounded-2xl border border-slate-100 bg-white/70 p-3">Overhang &gt;55Â° zonder steunvlak of rib.</li>
                 <li className="rounded-2xl border border-slate-100 bg-white/70 p-3">Wanddiktes die geen veelvoud zijn van de nozzle-diameter.</li>
               </ul>
               <p className="mt-4 text-sm text-slate-600">
@@ -404,7 +404,7 @@ export default function MakerMondayWanddiktesRibsPage() {
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">9. Materiaalkeuze voor structurele sterkte</h2>
               <p className="mt-2 text-sm text-slate-600">
-                Wanddikte en ribdesign zijn één helft van het verhaal. Kies ook het juiste materiaal:
+                Wanddikte en ribdesign zijn Ã©Ã©n helft van het verhaal. Kies ook het juiste materiaal:
               </p>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-600">
                 <li>
@@ -452,7 +452,7 @@ export default function MakerMondayWanddiktesRibsPage() {
                   </Link>
                   .
                 </li>
-                <li>Oriëntatie en slicing-notes zodat de print meteen klopt.</li>
+                <li>OriÃ«ntatie en slicing-notes zodat de print meteen klopt.</li>
               </ul>
               <div className="mt-6 flex flex-wrap gap-3">
                 <ShimmerButton href="/contact?topic=maker-monday-walls">Plan een review</ShimmerButton>
@@ -477,7 +477,7 @@ export default function MakerMondayWanddiktesRibsPage() {
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900">Ontwerp je een cover, bracket of demper?</h2>
                 <p className="mt-2 text-sm text-slate-600">
                   Deel STL of STEP, vertel waar het onderdeel voor dient en we koppelen wanddikte, ribdesign en materiaaladvies
-                  terug. Zo weet je vóór productie of het stuk PLA, PETG of TPU nodig heeft en wat de{" "}
+                  terug. Zo weet je vÃ³Ã³r productie of het stuk PLA, PETG of TPU nodig heeft en wat de{" "}
                   <Link href="/pricing" className="font-semibold text-indigo-600 transition hover:text-indigo-500">
                     kostimpact
                   </Link>{" "}
@@ -501,6 +501,7 @@ export default function MakerMondayWanddiktesRibsPage() {
     </main>
   )
 }
+
 
 
 

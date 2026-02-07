@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/maker-monday-schroefdraad-inserts"
+const canonical = "https://www.x3dprints.be/blog/maker-monday-schroefdraad-inserts/"
 const publishedDate = "2025-11-03T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -49,28 +49,28 @@ export const metadata: Metadata = {
 }
 
 const heroStats = [
-  { label: "Heat-set dikte", value: "≥ 2 mm", detail: "Materiaal rondom insert" },
-  { label: "Boss diameter", value: "2.5× schroef", detail: "Voor zelftappers" },
+  { label: "Heat-set dikte", value: "â‰¥ 2 mm", detail: "Materiaal rondom insert" },
+  { label: "Boss diameter", value: "2.5Ã— schroef", detail: "Voor zelftappers" },
   { label: "Hole offset", value: "+0.2 mm", detail: "CAD versus print" },
 ]
 
 const holeTable = [
-  { screw: "M2", drill: "1.6 mm", cad: "1.8 – 1.9 mm" },
-  { screw: "M3", drill: "2.5 mm", cad: "2.8 – 3.0 mm" },
-  { screw: "M4", drill: "3.3 mm", cad: "3.6 – 3.8 mm" },
-  { screw: "M5", drill: "4.2 mm", cad: "4.5 – 4.7 mm" },
+  { screw: "M2", drill: "1.6 mm", cad: "1.8 â€“ 1.9 mm" },
+  { screw: "M3", drill: "2.5 mm", cad: "2.8 â€“ 3.0 mm" },
+  { screw: "M4", drill: "3.3 mm", cad: "3.6 â€“ 3.8 mm" },
+  { screw: "M5", drill: "4.2 mm", cad: "4.5 â€“ 4.7 mm" },
 ]
 
 const wallThickness = [
-  { material: "PLA", value: "≥ 2.0 mm" },
-  { material: "PETG", value: "≥ 2.4 mm" },
-  { material: "TPU", value: "≥ 3.0 mm" },
+  { material: "PLA", value: "â‰¥ 2.0 mm" },
+  { material: "PETG", value: "â‰¥ 2.4 mm" },
+  { material: "TPU", value: "â‰¥ 3.0 mm" },
 ]
 
 const insertGuidelines = [
-  "Houd minimaal 1.5 – 2.5 mm materiaal rondom de insert-pocket.",
-  "Voeg bovenaan een chamfer van 0.3 – 0.5 mm toe zodat de insert zichzelf centreert.",
-  "Hou de pocketdiameter dicht bij de datasheet; voeg enkel 0.1 – 0.2 mm toe voor PETG expansie.",
+  "Houd minimaal 1.5 â€“ 2.5 mm materiaal rondom de insert-pocket.",
+  "Voeg bovenaan een chamfer van 0.3 â€“ 0.5 mm toe zodat de insert zichzelf centreert.",
+  "Hou de pocketdiameter dicht bij de datasheet; voeg enkel 0.1 â€“ 0.2 mm toe voor PETG expansie.",
   "Plaats inserts niet dwars op layer-lines zonder extra steun: print een boss of rib erachter.",
 ]
 
@@ -144,7 +144,7 @@ export default function MakerMondaySchroefdraadInsertsPage() {
               De ultieme gids: schroefdraad, inserts en bevestigingen in 3D prints.
             </h1>
             <p className="mt-4 text-lg text-slate-700">
-              Schroeven en inserts lijken triviaal, maar in FDM zijn ze de nummer-één oorzaak van breuken. Te dunne wanden, de
+              Schroeven en inserts lijken triviaal, maar in FDM zijn ze de nummer-Ã©Ã©n oorzaak van breuken. Te dunne wanden, de
               verkeerde draad of geen fillet rond een schroefgat zorgen ervoor dat een onderdeel het begeeft. Deze gids toont hoe
               je bevestigingen ontwerpt die standhouden in PLA, PETG en TPU.
             </p>
@@ -163,7 +163,7 @@ export default function MakerMondaySchroefdraadInsertsPage() {
                 Zie prijsimpact
               </Link>
             </div>
-            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 3 november 2025 • Maker Monday knowledge hub.</p>
+            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 3 november 2025 â€¢ Maker Monday knowledge hub.</p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
             {heroStats.map((stat) => (
@@ -313,17 +313,17 @@ export default function MakerMondaySchroefdraadInsertsPage() {
               <h2 className="text-2xl font-semibold text-slate-900">7. Geprinte schroefdraad wanneer nodig</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Buisverbindingen, potdeksels en caps vanaf M20 kunnen prima geprint worden, bij voorkeur in PETG. Print iets
-                hotter (240-250 °C), beperk koeling, gebruik lage snelheid en verhoog je perimeter count. PLA draad dient vooral
+                hotter (240-250 Â°C), beperk koeling, gebruik lage snelheid en verhoog je perimeter count. PLA draad dient vooral
                 voor visuele toepassingen.
               </p>
             </GlassCard>
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">8. Oriëntatie en bosses</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">8. OriÃ«ntatie en bosses</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Zorg dat de schroefkracht parallel loopt met de layers. Print schroefzones liefst verticaal of voeg bosses toe
-                zodat de schroef haaks op voldoende materiaal staat. Richtlijn: boss diameter ≈ schroefdiameter × 2.5 en hoogte
+                zodat de schroef haaks op voldoende materiaal staat. Richtlijn: boss diameter â‰ˆ schroefdiameter Ã— 2.5 en hoogte
                 van minstens drie lagen. Ribs achter de boss verdelen trekspanning.
               </p>
             </GlassCard>
@@ -340,7 +340,7 @@ export default function MakerMondaySchroefdraadInsertsPage() {
                 <li>Past het materiaal bij de belasting (PLA vs PETG vs TPU)?</li>
                 <li>Voldoen wanddiktes en fillets aan de richtlijnen?</li>
                 <li>Klopt de tolerantie volgens Maker Monday #3?</li>
-                <li>Is de oriëntatie logisch en lopen krachten parallel aan de layers?</li>
+                <li>Is de oriÃ«ntatie logisch en lopen krachten parallel aan de layers?</li>
                 <li>Heb je een insert of boss nodig om de belasting te dragen?</li>
               </ul>
             </GlassCard>
@@ -350,7 +350,7 @@ export default function MakerMondaySchroefdraadInsertsPage() {
               <h2 className="text-2xl font-semibold text-slate-900">10. Wanneer X3DPrints inschakelen?</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Heb je een kritisch bevestigingspunt, moet de draad perfect passen of combineer je inserts met PETG/TPU? Wij
-                helpen met ontwerpoptimalisatie, pocketmaatvoering, schroefdraadstrategieën en materiaaladvies. Check{" "}
+                helpen met ontwerpoptimalisatie, pocketmaatvoering, schroefdraadstrategieÃ«n en materiaaladvies. Check{" "}
                 <Link href="/pricing" className="font-semibold text-indigo-600 transition hover:text-indigo-500">
                   pricing
                 </Link>{" "}
@@ -405,6 +405,7 @@ export default function MakerMondaySchroefdraadInsertsPage() {
     </main>
   )
 }
+
 
 
 

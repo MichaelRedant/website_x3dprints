@@ -62,7 +62,7 @@ export const servicesFaqEn = [
   },
   {
     q: "How much does 3D printing cost?",
-    a: 'Price = material + print time + basic post-processing + quantity. Use the guidelines on <a href="/pricing">/pricing</a>; we confirm after a model check.',
+    a: 'Price = material + print time + basic post-processing + quantity. Use the guidelines on <a href="/en/pricing">/pricing</a>; we confirm after a model check.',
   },
   {
     q: "Do you offer post-processing and assembly?",
@@ -74,7 +74,7 @@ export const servicesFaqEn = [
   },
   {
     q: "How should I submit my 3D model?",
-    a: 'Preferably STL or STEP with notes on strength, finish and quantities. Check your file upfront in the <a href="/viewer">viewer</a>.',
+    a: 'Preferably STL or STEP with notes on strength, finish and quantities. Check your file upfront in the <a href="/en/viewer">viewer</a>.',
   },
   {
     q: "What about privacy and NDAs?",
@@ -82,7 +82,7 @@ export const servicesFaqEn = [
   },
   {
     q: "Which region do you serve?",
-    a: 'Production happens in Herzele/Ghent; we ship within Belgium or you can pick up by arrangement. See local pages under <a href="/locaties">/locaties</a>.',
+    a: 'Production happens in Herzele/Ghent; we ship within Belgium or you can pick up by arrangement. See local pages under <a href="/en/locaties">/locaties</a>.',
   },
 ]
 

@@ -17,7 +17,13 @@ import { renderMarkdown, splitMarkdown } from "@/lib/markdown"
 import { extractHeadings } from "@/lib/headings"
 import { getLocationBySlug, getEnglishLocationSlugs } from "@/lib/locations"
 import { keywordSvgDataUri } from "@/lib/svg"
-import { SITE, clampToWords } from "@/lib/seo"
+import {
+  SITE,
+  buildLocationMetaDescription,
+  buildLocationMetaTitle,
+  clampToWords,
+  normalizeMetaDescription,
+} from "@/lib/seo"
 
 export const revalidate = 86_400 // 24h
 
@@ -31,10 +37,11 @@ function firstParagraph(text: string) {
 }
 
 function buildSeoDescription(markdown: string, city: string) {
+  const fallback = buildLocationMetaDescription(city, "en")
   const normalized = stripLeadingH1(markdown)
   const para = firstParagraph(normalized)
-  if (para) return clampToWords(para, 158)
-  return `3D printing in ${city}: prototypes, small series and quick turnarounds from Herzele.`
+  if (para) return normalizeMetaDescription(clampToWords(para, 158), fallback)
+  return fallback
 }
 
 export function generateStaticParams(): Array<{ slug: string }> {
@@ -56,21 +63,22 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   const description = buildSeoDescription(contentMd, loc.city)
   const keyphrase = `3D printing in ${loc.city}`
+  const seoTitle = buildLocationMetaTitle(loc.city, "en")
 
   return {
-    title: { default: `${keyphrase} | X3DPrints`, template: `%s | X3DPrints` },
+    title: seoTitle,
     description,
     alternates: {
       canonical: url,
       languages: {
       "nl-BE": `https://www.x3dprints.be/${loc.slug}`,
-      en: url,
+      "en-BE": url,
       "x-default": `https://www.x3dprints.be/${loc.slug}`,
       },
     },
     robots: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large" },
     openGraph: {
-      title: keyphrase,
+      title: seoTitle,
       description,
       url,
       siteName: "X3DPrints",
@@ -78,7 +86,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       locale: "en_BE",
       images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: keyphrase }],
     },
-    twitter: { card: "summary_large_image", title: keyphrase, description, images: ["/images/og-home.jpg"] },
+    twitter: { card: "summary_large_image", title: seoTitle, description, images: ["/images/og-home.jpg"] },
   }
 }
 

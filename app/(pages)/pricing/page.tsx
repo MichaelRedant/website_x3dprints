@@ -1,10 +1,12 @@
 // app/(pages)/pricing/page.tsx
 import type { Metadata } from "next"
 import Link from "next/link"
+import { CheckCircle2, Clock3, MapPin, Wallet } from "lucide-react"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import PriceEstimator from "@/components/PriceEstimator"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { GRAMS_PER_TIER, calcUnitPrice, type Quality, type Tier } from "@/lib/pricing"
 import type { MaterialKey } from "@/lib/materials"
 import FaqPromo from "@/components/FaqPromo"
@@ -13,21 +15,21 @@ import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 
 const NL_METADATA: Metadata = {
-  title: "Prijzen 3D printen | X3DPrints",
+  title: "3D print prijs en prijzen 3D printen | X3DPrints",
   description:
-    "Transparante prijzen voor 3D printen in PLA (standaard), met opties voor PLA+ varianten, PETG en TPU. Droogbehandeling voor PETG/TPU inbegrepen. Offerte binnen 24 uur.",
+    "Wat kost 3D printen? Bekijk je 3D print prijs vanaf EUR 5 (small), EUR 20 (medium) en EUR 49 (large), inclusief materiaalkeuze en heldere offerte binnen 24 uur.",
   alternates: {
     canonical: "https://www.x3dprints.be/pricing/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/pricing/",
-      en: "https://www.x3dprints.be/en/pricing/",
+      "en-BE": "https://www.x3dprints.be/en/pricing/",
       "x-default": "https://www.x3dprints.be/pricing/",
     },
   },
   openGraph: {
-    title: "Prijzen 3D printen",
+    title: "3D print prijs: wat kost 3D printen?",
     description:
-      "Indicatieve tarieven voor prototypes en kleine series. Materialen: PLA (standaard), PLA+ varianten, PETG en TPU. Levering in heel Belgie.",
+      "Kosten 3D printen: vanaf EUR 5 (small), EUR 20 (medium) en EUR 49 (large). Materialen: PLA, PETG en TPU. Levering in heel Belgie.",
     url: "https://www.x3dprints.be/pricing/",
     images: [{ url: "/images/portfolio/2d-6-1-1.webp", width: 1200, height: 630, alt: "Prijzen voor 3D printen" }],
     locale: "nl_BE",
@@ -35,9 +37,9 @@ const NL_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prijzen 3D printen",
+    title: "3D print prijs en kosten",
     description:
-      "Indicatieve tarieven voor prototypes en kleine series. Materialen: PLA (standaard), PLA+ varianten, PETG en TPU. Levering in heel Belgie.",
+      "Indicatieve kosten 3D printen voor prototypes en kleine series. Materialen: PLA (standaard), PLA+ varianten, PETG en TPU.",
     images: ["/images/portfolio/2d-6-1-1.webp"],
   },
 }
@@ -45,19 +47,19 @@ const NL_METADATA: Metadata = {
 export const EN_METADATA: Metadata = {
   title: "3D Printing Prices | X3DPrints",
   description:
-    "Transparent pricing for FDM 3D printing in PLA (standard), with PLA+ variants, PETG and TPU options. Drying for PETG/TPU included. Quote within 24 hours.",
+    "3D printing prices from EUR 5 (small), EUR 20 (medium) and EUR 49 (large). PLA, PETG and TPU with a clear quote within 24 hours.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/pricing/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/pricing/",
-      en: "https://www.x3dprints.be/en/pricing/",
+      "en-BE": "https://www.x3dprints.be/en/pricing/",
       "x-default": "https://www.x3dprints.be/pricing/",
     },
   },
   openGraph: {
     title: "3D printing prices",
     description:
-      "Indicative rates for prototypes and small batches. Materials: PLA (standard), PLA+ variants, PETG and TPU. Delivery across Belgium.",
+      "3D printing from EUR 5 (small), EUR 20 (medium) and EUR 49 (large). PLA, PETG and TPU. Delivery across Belgium.",
     url: "https://www.x3dprints.be/en/pricing/",
     images: [{ url: "/images/portfolio/2d-6-1-1.webp", width: 1200, height: 630, alt: "3D printing prices" }],
     locale: "en_BE",
@@ -78,7 +80,7 @@ const PRICING_COPY_NL = {
   hero: {
     title: "Prijzen 3D printen",
     body:
-      "Richtprijzen: kleine prints starten rond EUR 5, medium rond EUR 20 en grotere stukken rond EUR 49. PLA Matte is standaard; PLA+ varianten, PETG en TPU zijn beschikbaar voor extra look of performance. Droogbehandeling voor PETG/TPU is inbegrepen. Klaar om te bestellen? Vraag meteen je offerte.",
+      "Zoek je een snelle 3D print prijs? Richtprijzen: kleine prints starten rond EUR 5, medium rond EUR 20 en grotere stukken rond EUR 49. PLA Matte is standaard; PLA+ varianten, PETG en TPU zijn beschikbaar voor extra look of performance. Droogbehandeling voor PETG/TPU is inbegrepen. Klaar om te bestellen? Vraag meteen je offerte.",
     ctas: {
       quote: "Offerte aanvragen",
       materials: "Materialen & kleuren",
@@ -183,6 +185,7 @@ const PRICING_COPY_NL = {
       { q: "Welke materialen printen jullie?", a: "Standaard PLA Matte, plus PETG en TPU. Op aanvraag ABS/ASA, Nylon, PA-CF." },
       { q: "Wat is de gebruikelijke doorlooptijd?", a: "Doorgaans enkele werkdagen, afhankelijk van complexiteit en oplage." },
       { q: "Hoe vraag ik een offerte aan?", a: "Bezorg je STL/STEP en korte context via het formulier. Je krijgt snel prijs en timing." },
+      { q: "Kan ik al starten zonder exacte materiaalkeuze?", a: "Ja. Start met PLA Matte als basis; wij adviseren daarna of PETG/TPU of specials beter passen." },
     ],
   },
   schema: {
@@ -299,6 +302,7 @@ const PRICING_COPY_EN = {
       { q: "Which materials do you print?", a: "Standard PLA Matte, plus PETG and TPU. ABS/ASA, Nylon, PA-CF on request." },
       { q: "What is the usual lead time?", a: "Typically a few business days, depending on complexity and quantity." },
       { q: "How do I request a quote?", a: "Send your STL/STEP and short context via the form. You get pricing and timing quickly." },
+      { q: "Can I start without choosing a material yet?", a: "Yes. Start from PLA Matte as baseline; we can then advise PETG/TPU or specials." },
     ],
   },
   schema: {
@@ -313,6 +317,37 @@ export default function Page({ locale }: PageProps) {
   const isEn = normalizedLocale === "en"
   const copy = isEn ? PRICING_COPY_EN : PRICING_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
+  const tocItems = isEn
+    ? [
+        { id: "pricing-overview", label: "How are the guideline prices structured?" },
+        { id: "pricing-modifiers", label: "How do materials and quality affect price?" },
+        { id: "pricing-estimator", label: "How can I estimate my project quickly?" },
+        { id: "pricing-shipping", label: "What are delivery and design costs?" },
+        { id: "pricing-faq", label: "FAQ and quote next step" },
+        { id: "pricing-sources", label: "Sources and references" },
+        { id: "pricing-fastpath", label: "What is the fastest quote path?" },
+      ]
+    : [
+        { id: "pricing-overview", label: "Hoe zijn de richtprijzen opgebouwd?" },
+        { id: "pricing-modifiers", label: "Welke impact hebben materiaal en kwaliteit?" },
+        { id: "pricing-estimator", label: "Hoe maak je snel een schatting?" },
+        { id: "pricing-shipping", label: "Wat kosten levering en ontwerpwerk?" },
+        { id: "pricing-faq", label: "FAQ en offerte-stap" },
+        { id: "pricing-sources", label: "Bronnen en referenties" },
+        { id: "pricing-fastpath", label: "Wat is de snelste offerte-route?" },
+      ]
+  const references = isEn
+    ? [
+        { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "All3DP FDM cost factors", url: "https://all3dp.com/2/3d-printing-cost-calculator-great-web-tools/" },
+        { label: "Bambu Lab filament overview", url: "https://wiki.bambulab.com/en/filament-acc/filament/overview" },
+      ]
+    : [
+        { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "All3DP over kostfactoren bij FDM", url: "https://all3dp.com/2/3d-printing-cost-calculator-great-web-tools/" },
+        { label: "Bambu Lab filamentoverzicht", url: "https://wiki.bambulab.com/en/filament-acc/filament/overview" },
+      ]
+  const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"
 
   const baseMaterial: MaterialKey = "PLA_MATTE"
   const baseQuality: Quality = "Standaard"
@@ -328,6 +363,57 @@ export default function Page({ locale }: PageProps) {
       priceLabel: copy.tiers.priceLabel(price),
     }
   })
+
+  const quickPathCopy = isEn
+    ? {
+        title: "Fastest quote path per project size",
+        intro:
+          "Pick your closest tier and jump to contact with a prefilled pricing context. You can still refine material, finish and quantity afterwards.",
+        subtitle: "Final step",
+        cta: "Start this quote path",
+      }
+    : {
+        title: "Snelste offerte-route per projectgrootte",
+        intro:
+          "Kies de dichtstbijzijnde klasse en spring met vooraf ingevulde prijscontext naar contact. Materiaal, afwerking en aantallen verfijnen we daarna samen.",
+        subtitle: "Laatste stap",
+        cta: "Start deze offerte-route",
+      }
+  const heroFacts = isEn
+    ? [
+        { icon: Wallet, label: "Baseline rates", value: "EUR 5, EUR 20, EUR 49" },
+        { icon: Clock3, label: "Quote response", value: "Usually within 24 hours" },
+        { icon: MapPin, label: "Coverage", value: "Herzele, Ghent and all of Belgium" },
+      ]
+    : [
+        { icon: Wallet, label: "Richtprijzen", value: "EUR 5, EUR 20, EUR 49" },
+        { icon: Clock3, label: "Offerteantwoord", value: "Meestal binnen 24 uur" },
+        { icon: MapPin, label: "Dekking", value: "Herzele, Gent en heel Belgie" },
+      ]
+  const heroTrustPoints = isEn
+    ? [
+        "Clear 3D print price model for prototypes and small batches",
+        "Material-linked cost logic for PLA, PETG and TPU",
+        "Fast route from estimate to quote-ready contact",
+      ]
+    : [
+        "Duidelijk 3D print prijsmodel voor prototypes en kleine reeksen",
+        "Materiaalgebonden kostenlogica voor PLA, PETG en TPU",
+        "Snelle route van schatting naar offerteklare aanvraag",
+      ]
+  const tiersLead = isEn
+    ? "These guideline tiers are optimized for quick decisions around 3D printing cost and feasibility."
+    : "Deze richtklassen zijn geoptimaliseerd voor snelle beslissingen rond kosten 3D printen en haalbaarheid."
+  const estimatorLead = isEn
+    ? "Use the estimator first, then open the fastest quote path at the bottom for direct conversion."
+    : "Gebruik eerst de calculator en open onderaan de snelste offerte-route voor directe conversie."
+
+  const buildTierQuoteHref = (tierName: Tier) => {
+    const summary = isEn
+      ? `Pricing path: ${tierName} in PLA Matte baseline`
+      : `Prijsroute: ${tierName} in PLA Matte basis`
+    return localize(`/contact?material=PLA_MATTE&quote=${encodeURIComponent(summary)}`)
+  }
 
   const offerCatalog = {
     "@context": "https://schema.org",
@@ -362,48 +448,101 @@ export default function Page({ locale }: PageProps) {
       {/* HERO */}
       <section className="px-6 pt-14 pb-10 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              {copy.hero.title}
-            </h1>
-            <p className="mt-3 max-w-3xl text-slate-600">{copy.hero.body}</p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton
-                href={localize("/contact")}
-                event={{ action: "cta_click", category: "pricing_hero", label: "quote" }}
-              >
-                {copy.hero.ctas.quote}
-              </ShimmerButton>
-              <Link
-                href={localize("/materials")}
-                className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
-              >
-                {copy.hero.ctas.materials}
-              </Link>
-              <Link
-                href={localize("/blog/hoeveel-kost-3d-printen")}
-                className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
-              >
-                {copy.hero.ctas.blog}
-              </Link>
-              <Link
-                href={localize("/materials#material-suggestion-tool")}
-                className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
-              >
-                {copy.hero.ctas.tool}
-              </Link>
-            </div>
-          </Reveal>
+          <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+            <Reveal>
+              <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+                {copy.hero.title}
+              </h1>
+              <p className="mt-3 max-w-3xl text-slate-600">{copy.hero.body}</p>
+              <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <ShimmerButton
+                  href={localize("/contact")}
+                  event={{ action: "cta_click", category: "pricing_hero", label: "quote" }}
+                >
+                  {copy.hero.ctas.quote}
+                </ShimmerButton>
+                <Link
+                  href="#pricing-estimator"
+                  className="inline-flex items-center rounded-xl border border-slate-200/80 bg-white px-4 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
+                >
+                  {isEn ? "Estimate first" : "Eerst snel schatten"}
+                </Link>
+              </div>
+              <p className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-slate-600">
+                <Link href={localize("/materials")} className="font-medium text-indigo-600 transition hover:text-indigo-500">
+                  {copy.hero.ctas.materials}
+                </Link>
+                <Link href={localize("/blog/hoeveel-kost-3d-printen")} className="font-medium text-indigo-600 transition hover:text-indigo-500">
+                  {copy.hero.ctas.blog}
+                </Link>
+                <Link href={localize("/materials#material-suggestion-tool")} className="font-medium text-indigo-600 transition hover:text-indigo-500">
+                  {copy.hero.ctas.tool}
+                </Link>
+              </p>
+              <ContentTableOfContents
+                title={isEn ? "Contents" : "Inhoud"}
+                items={tocItems}
+                className="mt-6 max-w-2xl"
+              />
+            </Reveal>
+            <Reveal delay={0.05}>
+              <GlassCard className="p-6 sm:p-7">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                  {isEn ? "Pricing snapshot" : "Prijs-snapshot"}
+                </p>
+                <ul className="mt-4 space-y-3">
+                  {heroFacts.map((fact) => (
+                    <li key={fact.label} className="flex gap-3 rounded-2xl border border-slate-200/70 bg-white/75 p-3">
+                      <fact.icon className="mt-0.5 h-5 w-5 text-indigo-600" aria-hidden />
+                      <div>
+                        <p className="text-xs uppercase tracking-wide text-slate-500">{fact.label}</p>
+                        <p className="text-sm font-semibold text-slate-900">{fact.value}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <ul className="mt-5 space-y-2 text-sm text-slate-600">
+                  {heroTrustPoints.map((point) => (
+                    <li key={point} className="flex items-start gap-2">
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 text-emerald-600" aria-hidden />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#pricing-fastpath"
+                  className="mt-5 inline-flex items-center text-sm font-semibold text-indigo-700 transition hover:text-indigo-600"
+                >
+                  {isEn ? "Jump to fastest quote route" : "Ga naar snelste offerte-route"} <span className="ml-1" aria-hidden>-&gt;</span>
+                </Link>
+              </GlassCard>
+            </Reveal>
+          </div>
         </div>
       </section>
 
       {/* TIERS */}
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="pricing-overview" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <Reveal className="mb-6 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+              {isEn ? "Price structure" : "Prijsstructuur"}
+            </p>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              {isEn ? "How are guideline prices built?" : "Hoe zijn de richtprijzen opgebouwd?"}
+            </h2>
+            <p className="mt-2 text-slate-600">
+              {isEn
+                ? "Base rates are linked to size tier, material and quality level. Use this table as a planning baseline."
+                : "Basistarieven hangen samen met grootteklasse, materiaal en kwaliteitsniveau. Gebruik deze tabel als planningsbasis."}
+            </p>
+            <p className="mt-2 text-sm text-slate-600">{tiersLead}</p>
+          </Reveal>
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {tiers.map((t, i) => (
               <Reveal key={t.name} delay={i * 0.06}>
-                <GlassCard className="h-full p-6 transition-transform hover:-translate-y-1">
+                <GlassCard className="h-full border-slate-200/70 bg-white/80 p-6 shadow-[0_10px_30px_rgba(15,23,42,0.08)] transition hover:-translate-y-1">
                   <div className="text-xs uppercase tracking-wide text-slate-500">{t.name}</div>
                   <div className="mt-1 text-lg font-semibold text-slate-900">{t.priceLabel}</div>
                   <div className="mt-1 text-sm text-slate-700">{t.size}</div>
@@ -419,11 +558,36 @@ export default function Page({ locale }: PageProps) {
             <p>{copy.tiers.summary}</p>
             <p>{copy.tiers.note}</p>
           </div>
+          <div className="mt-6 overflow-x-auto rounded-2xl border border-slate-200/70 bg-white/80">
+            <table className="min-w-full text-left text-sm text-slate-700">
+              <caption className="sr-only">
+                {isEn ? "3D printing base price table per size tier" : "Basistabel met 3D-printprijzen per grootteklasse"}
+              </caption>
+              <thead className="bg-slate-50 text-xs uppercase tracking-wide text-slate-500">
+                <tr>
+                  <th className="px-4 py-3">{isEn ? "Tier" : "Klasse"}</th>
+                  <th className="px-4 py-3">{isEn ? "Size" : "Afmeting"}</th>
+                  <th className="px-4 py-3">{isEn ? "Material baseline" : "Materiaalbasis"}</th>
+                  <th className="px-4 py-3">{isEn ? "Guideline price" : "Richtprijs"}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {tiers.map((tier) => (
+                  <tr key={`table-${tier.name}`} className="border-t border-slate-200/60">
+                    <td className="px-4 py-3 font-semibold text-slate-900">{tier.name}</td>
+                    <td className="px-4 py-3">{tier.size}</td>
+                    <td className="px-4 py-3">{tier.base}</td>
+                    <td className="px-4 py-3">{tier.priceLabel}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
       {/* MODIFIERS */}
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="pricing-modifiers" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-6 lg:grid-cols-2">
             <Reveal>
@@ -466,10 +630,14 @@ export default function Page({ locale }: PageProps) {
       </section>
 
       {/* ESTIMATOR */}
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="pricing-estimator" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="p-6">
+              <h2 className="text-xl font-semibold tracking-tight text-slate-900">
+                {isEn ? "Estimate your 3D print cost in 1 minute" : "Schat je 3D print kost in 1 minuut"}
+              </h2>
+              <p className="mt-2 text-sm text-slate-600">{estimatorLead}</p>
               <div className="mt-4">
                 <PriceEstimator locale={normalizedLocale} />
               </div>
@@ -479,7 +647,7 @@ export default function Page({ locale }: PageProps) {
       </section>
 
       {/* SHIPPING & DESIGN */}
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="pricing-shipping" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-6 lg:grid-cols-2">
             <Reveal>
@@ -526,10 +694,9 @@ export default function Page({ locale }: PageProps) {
       </section>
 
       <ReadMoreLinks
+        pageType="pricing"
         title={copy.readMore.title}
         intro={copy.readMore.intro}
-        primaryLinks={copy.readMore.primary.map((link) => ({ ...link, href: localize(link.href) }))}
-        secondaryLinks={copy.readMore.secondary.map((link) => ({ ...link, href: localize(link.href) }))}
       />
 
       {/* CTA */}
@@ -548,7 +715,7 @@ export default function Page({ locale }: PageProps) {
                 </ShimmerButton>
                 <Link
                   href={localize("/services")}
-                  className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+                  className="inline-flex items-center text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
                 >
                   {copy.cta.secondary}
                 </Link>
@@ -559,7 +726,7 @@ export default function Page({ locale }: PageProps) {
       </section>
 
       {/* FAQ */}
-      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+      <section id="pricing-faq" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="overflow-hidden p-8 sm:p-10">
@@ -573,6 +740,63 @@ export default function Page({ locale }: PageProps) {
               />
             </GlassCard>
           </Reveal>
+        </div>
+      </section>
+
+      <section id="pricing-sources" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-xl font-semibold text-slate-900">{isEn ? "Sources and references" : "Bronnen en referenties"}</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                {isEn
+                  ? "These references are used for pricing assumptions and material-related cost behavior."
+                  : "Deze bronnen gebruiken we voor prijsaannames en materiaalgerelateerd kostgedrag."}
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="pricing-fastpath" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-600">{quickPathCopy.subtitle}</p>
+            <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{quickPathCopy.title}</h2>
+            <p className="mt-2 text-slate-600">{quickPathCopy.intro}</p>
+          </Reveal>
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            {tiers.map((tier, index) => (
+              <Reveal key={`quick-${tier.name}`} delay={index * 0.05}>
+                <GlassCard className="h-full border-slate-200/70 bg-white/85 p-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{tier.name}</p>
+                  <p className="mt-2 text-lg font-semibold text-slate-900">{tier.priceLabel}</p>
+                  <p className="mt-1 text-sm text-slate-600">{tier.size}</p>
+                  <p className="mt-3 text-sm text-slate-600">{tier.notes}</p>
+                  <div className="mt-4">
+                    <ShimmerButton
+                      href={buildTierQuoteHref(tier.name)}
+                      event={{ action: "cta_click", category: "pricing_fastpath", label: tier.name.toLowerCase() }}
+                      className="w-full justify-center"
+                    >
+                      {quickPathCopy.cta}
+                    </ShimmerButton>
+                  </div>
+                </GlassCard>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 

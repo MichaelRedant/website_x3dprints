@@ -1,10 +1,10 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 
-const canonical = "https://www.x3dprints.be/blog/finishing-friday-schuren-primen-lakken"
+const canonical = "https://www.x3dprints.be/blog/finishing-friday-schuren-primen-lakken/"
 const publishedDate = "2025-10-03T08:00:00+02:00"
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Finishing Friday: schuren, primen en lakken van 3D prints",
     description:
-      "Overzicht van finishing technieken zoals schuren, primen en lakken. Inclusief nuance: resin/SLA vraagt vaak méér nabewerking dan nette FDM-prints, dus focust X3DPrints op FDM zonder lakwerk.",
+      "Overzicht van finishing technieken zoals schuren, primen en lakken. Inclusief nuance: resin/SLA vraagt vaak mÃ©Ã©r nabewerking dan nette FDM-prints, dus focust X3DPrints op FDM zonder lakwerk.",
     url: canonical,
     type: "article",
     publishedTime: publishedDate,
@@ -66,7 +66,7 @@ const fdmVsSlaRows = [
   {
     property: "Kost finishing",
     fdm: "Beperkt tot wat handwerk als je het wil; meeste onderdelen gaan rechtstreeks in gebruik.",
-    sla: "Altijd extra tijd, IPA/verbruiksmateriaal en beschermingsmiddelen nodig → finishing kost snel meer dan de print.",
+    sla: "Altijd extra tijd, IPA/verbruiksmateriaal en beschermingsmiddelen nodig â†’ finishing kost snel meer dan de print.",
   },
   {
     property: "Typische toepassingen",
@@ -277,7 +277,7 @@ export default function FinishingFridaySchurenPrimenLakkenPage() {
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">FDM vs SLA: welke basis kies je?</h2>
               <p className="mt-2 text-sm text-slate-600">
-                Op foto’s zie je vaak resin miniaturen met een spiegelgladde finish, maar achter de schermen komt daar een hele
+                Op fotoâ€™s zie je vaak resin miniaturen met een spiegelgladde finish, maar achter de schermen komt daar een hele
                 was- en uithardingscyclus bij kijken. FDM toont duidelijker waar de lagen lopen, maar de onderdelen zijn droog,
                 stevig en meteen bruikbaar. Hieronder zie je welke techniek echt de meeste finishing vraagt.
               </p>
@@ -303,7 +303,7 @@ export default function FinishingFridaySchurenPrimenLakkenPage() {
               </div>
               <p className="mt-3 text-sm text-slate-600">
                 Voor brute functionaliteit volstaat FDM meestal en hoef je niet te schuren. SLA is pas toonbaar nadat je chemisch
-                gereinigd, uitgehard en opnieuw geschuurd hebt—precies waarom wij inzetten op nette FDM-basisprints.
+                gereinigd, uitgehard en opnieuw geschuurd hebtâ€”precies waarom wij inzetten op nette FDM-basisprints.
               </p>
             </GlassCard>
           </Reveal>
@@ -510,6 +510,7 @@ export default function FinishingFridaySchurenPrimenLakkenPage() {
     </main>
   )
 }
+
 
 
 

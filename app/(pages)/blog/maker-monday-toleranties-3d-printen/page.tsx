@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/maker-monday-toleranties-3d-printen"
+const canonical = "https://www.x3dprints.be/blog/maker-monday-toleranties-3d-printen/"
 const publishedDate = "2025-10-20T08:00:00+02:00"
 
 export const metadata: Metadata = {
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 }
 
 const heroStats = [
-  { label: "Baseline speling", value: "±0.15 mm", detail: "PLA glijdend" },
+  { label: "Baseline speling", value: "Â±0.15 mm", detail: "PLA glijdend" },
   { label: "PETG klik", value: "+0.30 mm", detail: "Extra ruimte voor zwelling" },
   { label: "TPU snap", value: "+0.60 mm", detail: "Flexibele onderdelen" },
 ]
@@ -59,7 +59,7 @@ const toleranceTable = [
     material: "PLA",
     sliding: "+0.15 mm",
     click: "+0.20 mm",
-    peg: "+0.20 – 0.25 mm",
+    peg: "+0.20 â€“ 0.25 mm",
     hinge: "+0.20 mm",
     snap: "+0.25 mm",
   },
@@ -67,7 +67,7 @@ const toleranceTable = [
     material: "PETG",
     sliding: "+0.25 mm",
     click: "+0.30 mm",
-    peg: "+0.30 – 0.35 mm",
+    peg: "+0.30 â€“ 0.35 mm",
     hinge: "+0.25 mm",
     snap: "+0.35 mm",
   },
@@ -82,7 +82,7 @@ const toleranceTable = [
 ]
 
 const clearanceUseCases = [
-  { use: "Schuifmechanisme", pla: "0.20 mm", petg: "0.30 mm", tpu: "0.40 – 0.50 mm" },
+  { use: "Schuifmechanisme", pla: "0.20 mm", petg: "0.30 mm", tpu: "0.40 â€“ 0.50 mm" },
   { use: "Rotatie / scharnier", pla: "0.20 mm", petg: "0.25 mm", tpu: "0.40 mm" },
   { use: "Sliding cover / rail", pla: "0.20 mm", petg: "0.30 mm", tpu: "0.40 mm" },
 ]
@@ -177,7 +177,7 @@ export default function MakerMondayTolerantiesPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-slate-500">
-              Gepubliceerd op 20 oktober 2025 • Deel van de Maker Monday knowledge hub.
+              Gepubliceerd op 20 oktober 2025 â€¢ Deel van de Maker Monday knowledge hub.
             </p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
@@ -200,8 +200,8 @@ export default function MakerMondayTolerantiesPage() {
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">1. Waarom tolerantie cruciaal is</h2>
               <p className="mt-2 text-sm text-slate-600">
-                FDM-resultaten worden beïnvloed door extrusiebreedte, koeling, krimp, flow en slicer-rounding. Zelfs met een
-                perfecte Bambu X1C, Prusa MK4 of Voron 2.4 zie je variaties van ±0.10 tot 0.20 mm rond elke maat. Daarom moet je
+                FDM-resultaten worden beÃ¯nvloed door extrusiebreedte, koeling, krimp, flow en slicer-rounding. Zelfs met een
+                perfecte Bambu X1C, Prusa MK4 of Voron 2.4 zie je variaties van Â±0.10 tot 0.20 mm rond elke maat. Daarom moet je
                 tolerantie inbouwen, niet hopen dat de slicer het oplost. Onthoud ook: interne maten worden kleiner, externe
                 maten groter.
               </p>
@@ -211,7 +211,7 @@ export default function MakerMondayTolerantiesPage() {
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">2. Basisregel: interne vs externe maten</h2>
               <p className="mt-2 text-sm text-slate-600">
-                Een gat van 10.00 mm print vaak als 9.80–9.90 mm. Een pen van 10.00 mm landt eerder op 10.10–10.20 mm. Daardoor
+                Een gat van 10.00 mm print vaak als 9.80â€“9.90 mm. Een pen van 10.00 mm landt eerder op 10.10â€“10.20 mm. Daardoor
                 is speling essentieel. Ontwerp altijd met een offset die aansluit bij het materiaal. Je kan de pen verkleinen,
                 het gat vergroten of beide. De tabellen hieronder geven onze baseline.
               </p>
@@ -327,7 +327,7 @@ export default function MakerMondayTolerantiesPage() {
               <h2 className="text-2xl font-semibold text-slate-900">5. Slicer-factoren</h2>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-600">
                 <li>
-                  <span className="font-semibold">Line width:</span> een 0.4 mm nozzle print vaak 0.42–0.48 mm breed.
+                  <span className="font-semibold">Line width:</span> een 0.4 mm nozzle print vaak 0.42â€“0.48 mm breed.
                   Houd hier rekening mee bij CAD-maten.
                 </li>
                 <li>
@@ -368,7 +368,7 @@ export default function MakerMondayTolerantiesPage() {
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">7. Test prints zijn geen luxe</h2>
               <p className="mt-2 text-sm text-slate-600">
-                We draaien altijd een tolerance tower (5–10 varianten), fit cubes of pin gauge tests voordat we een kritieke
+                We draaien altijd een tolerance tower (5â€“10 varianten), fit cubes of pin gauge tests voordat we een kritieke
                 assembly printen. Zo ontdek je meteen welke spelingswaarde de sweet spot is voor jouw materiaal, nozzle en
                 slicerinstellingen.
               </p>
@@ -386,7 +386,7 @@ export default function MakerMondayTolerantiesPage() {
                 <li>Behuizing met schroefgaten: PLA +0.20 mm, PETG +0.30 mm.</li>
                 <li>Twee delen die klikken: PLA +0.25 mm, PETG +0.30 mm, TPU +0.50 mm.</li>
                 <li>Draaibare onderdelen: PLA +0.20 mm, PETG +0.25 mm, TPU +0.40 mm.</li>
-                <li>Strakke inserts of moeren: 0.10–0.20 mm negatieve tolerantie en bekijk{" "}
+                <li>Strakke inserts of moeren: 0.10â€“0.20 mm negatieve tolerantie en bekijk{" "}
                   <Link
                     href="/blog/maker-monday-schroefdraad-inserts"
                     className="font-semibold text-indigo-600 transition hover:text-indigo-500"
@@ -403,7 +403,7 @@ export default function MakerMondayTolerantiesPage() {
               <h2 className="text-2xl font-semibold text-slate-900">9. Wanneer X3DPrints inschakelen?</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Laat ons meekijken wanneer je ontwerp beweegt, klikt, scharniert of PETG/TPU combineert. We optimaliseren
-                speling, wanddiktes, oriëntatie en materiaalkeuze zodat je assembly in één keer klopt.
+                speling, wanddiktes, oriÃ«ntatie en materiaalkeuze zodat je assembly in Ã©Ã©n keer klopt.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <ShimmerButton href="/contact?topic=maker-monday-tolerances">Plan een review</ShimmerButton>
@@ -452,6 +452,7 @@ export default function MakerMondayTolerantiesPage() {
     </main>
   )
 }
+
 
 
 

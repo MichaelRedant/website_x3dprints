@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import Faq from "@/components/Faq"
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://www.x3dprints.be/organizers/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/organizers/",
-      en: "https://www.x3dprints.be/en/organizers/",
+      "en-BE": "https://www.x3dprints.be/en/organizers/",
       "x-default": "https://www.x3dprints.be/organizers/",
     },
   },
@@ -74,6 +75,18 @@ const FAQ_ITEMS = [
 
 export default function OrganizersHubPage() {
   const cards = ORDER.map((slug) => ORGANIZER_PAGES[slug])
+  const tocItems = [
+    { id: "systems", label: "Welke organizersystemen bieden we aan?" },
+    { id: "organizers-faq", label: "Veelgestelde vragen over organizers" },
+    { id: "organizers-benefits", label: "Waarom levert dit tijdswinst op?" },
+    { id: "organizers-sources", label: "Bronnen en referenties" },
+  ]
+  const references = [
+    { label: "Milwaukee PACKOUT overview", url: "https://www.milwaukeetool.eu/en-eu/milwaukee/packout/" },
+    { label: "DeWALT TSTAK productinformatie", url: "https://www.dewalt.com/product/dwst17814/tstak%C2%AE-4-compartment-box" },
+    { label: "Gridfinity open-source project", url: "https://gridfinity.xyz/" },
+  ]
+  const lastUpdatedLabel = "Laatst bijgewerkt: 6 februari 2026"
 
   return (
     <main className="relative overflow-hidden px-6 pb-24 pt-24 sm:px-8 lg:px-12">
@@ -98,6 +111,8 @@ export default function OrganizersHubPage() {
               Gridfinity, Packout, TSTAK en custom koffers. Vaste layouts die stil liggen, labelbaar zijn en
               passen bij jouw set-up. Kies je systeem of stuur foto + tool lijst.
             </p>
+            <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-300">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-xl border-white/30 bg-white/85" />
             <div className="flex flex-wrap gap-3">
               <Link
                 href="#systems"
@@ -205,11 +220,14 @@ export default function OrganizersHubPage() {
         </Reveal>
         </section>
 
-        <Reveal className="rounded-3xl border border-white/40 bg-white/80 p-6 shadow-lg ring-1 ring-white/60 backdrop-blur dark:border-[#0F203C] dark:bg-[#0B0F1A]/80 dark:ring-0">
-          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl dark:text-white">Veelgestelde vragen</h2>
-          <Faq items={FAQ_ITEMS} className="mt-4" />
-        </Reveal>
+        <section id="organizers-faq" className="scroll-mt-28">
+          <Reveal className="rounded-3xl border border-white/40 bg-white/80 p-6 shadow-lg ring-1 ring-white/60 backdrop-blur dark:border-[#0F203C] dark:bg-[#0B0F1A]/80 dark:ring-0">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl dark:text-white">Veelgestelde vragen</h2>
+            <Faq items={FAQ_ITEMS} className="mt-4" />
+          </Reveal>
+        </section>
 
+        <section id="organizers-benefits" className="scroll-mt-28">
         <Reveal className="rounded-3xl border border-white/40 bg-white/85 p-6 shadow-xl ring-1 ring-white/60 backdrop-blur dark:border-[#0F203C] dark:bg-[#0B0F1A]/85 dark:ring-0">
           <div className="grid gap-6 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
             <div className="space-y-3">
@@ -250,6 +268,27 @@ export default function OrganizersHubPage() {
             </div>
           </div>
         </Reveal>
+        </section>
+
+        <section id="organizers-sources" className="scroll-mt-28">
+          <Reveal className="rounded-3xl border border-white/40 bg-white/80 p-6 shadow-lg ring-1 ring-white/60 backdrop-blur dark:border-[#0F203C] dark:bg-[#0B0F1A]/80 dark:ring-0">
+            <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">Bronnen en referenties</h2>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-200">
+              Deze bronnen gebruiken we om systeemnamen en compatibiliteit van organizer-platformen correct te benoemen.
+            </p>
+            <ul className="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-100">
+              {references.map((reference) => (
+                <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
+                  <cite className="not-italic">
+                    <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                      {reference.label}
+                    </Link>
+                  </cite>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        </section>
       </div>
 
       <script
@@ -265,7 +304,7 @@ export default function OrganizersHubPage() {
                   "@type": "ListItem",
                   position: i + 1,
                   name: ORGANIZER_PAGES[slug].systemName,
-                  url: `${SITE.url}/organizers${slug === "modugrid" ? "/modugrid" : ""}`,
+                  url: `${SITE.url}/organizers/${slug}`,
                 })),
               },
               {

@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pla"
+const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pla/"
 const publishedDate = "2025-09-05T08:00:00+02:00"
 
 export const metadata: Metadata = {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 
 const heroStats = [
   { label: "Laaghoogte sweet spot", value: "0,16 mm", detail: "Detail zonder extreme printtijd" },
-  { label: "Hittebestendigheid", value: "±55 °C", detail: "Daarboven zachter & riskant" },
+  { label: "Hittebestendigheid", value: "Â±55 Â°C", detail: "Daarboven zachter & riskant" },
   { label: "Typische lead time", value: "2-4 dagen", detail: "Afhankelijk van kleur & afwerking" },
 ]
 
@@ -75,11 +75,11 @@ const plaVariants = [
 ]
 
 const printSettings = [
-  { label: "Nozzle", value: "200–210 °C", note: "Matte of special blends tot 215 °C" },
-  { label: "Bed", value: "55–60 °C", note: "Helpt bij eerste laag en voorkomt lifting" },
-  { label: "Snelheid", value: "50–70 mm/s", note: "Ga trager (40 mm/s) voor wood/marble" },
-  { label: "Koeling", value: "100% vanaf laag 3", note: "Laat fan rond 60–80% bij moeilijke bridges" },
-  { label: "Retraction", value: "0.8–1.2 mm", note: "Direct drive. Bowden meestal +0.3–0.5 mm als baseline" },
+  { label: "Nozzle", value: "200â€“210 Â°C", note: "Matte of special blends tot 215 Â°C" },
+  { label: "Bed", value: "55â€“60 Â°C", note: "Helpt bij eerste laag en voorkomt lifting" },
+  { label: "Snelheid", value: "50â€“70 mm/s", note: "Ga trager (40 mm/s) voor wood/marble" },
+  { label: "Koeling", value: "100% vanaf laag 3", note: "Laat fan rond 60â€“80% bij moeilijke bridges" },
+  { label: "Retraction", value: "0.8â€“1.2 mm", note: "Direct drive. Bowden meestal +0.3â€“0.5 mm als baseline" },
 ]
 
 const whenToUse = [
@@ -92,9 +92,9 @@ const whenToUse = [
 
 const whenToAvoid = [
   "Onderdelen die buiten liggen of direct zonlicht vangen (auto dashboards, etalages).",
-  "Cases die boven 55 °C geraken: productievloeren, machines of serverkasten.",
+  "Cases die boven 55 Â°C geraken: productievloeren, machines of serverkasten.",
   "Onderdelen die klappen of torsie krijgen zoals clips, klemmen en technische scharnieren.",
-  "Objecten in contact met chemicaliën of vettige omgeving (garage, keuken, productie).",
+  "Objecten in contact met chemicaliÃ«n of vettige omgeving (garage, keuken, productie).",
   "Bevestigingen onder continue spanning waar kruip optreedt.",
 ]
 
@@ -107,9 +107,9 @@ const comparisonRows = [
   },
   {
     property: "Temperatuur",
-    pla: "Tot ongeveer 55–60 °C voordat het merkbaar zacht wordt.",
-    petg: "Tot ongeveer 75–80 °C met lichte doorbuiging.",
-    tpu: "Tot ongeveer 70 °C zolang het niet onder druk staat.",
+    pla: "Tot ongeveer 55â€“60 Â°C voordat het merkbaar zacht wordt.",
+    petg: "Tot ongeveer 75â€“80 Â°C met lichte doorbuiging.",
+    tpu: "Tot ongeveer 70 Â°C zolang het niet onder druk staat.",
   },
   {
     property: "Flexibiliteit",
@@ -133,7 +133,7 @@ const comparisonRows = [
     property: "Kost per print",
     pla: "Laagste materiaalprijs en vaak kortere machine-uren.",
     petg: "Ongeveer 20 procent hoger materiaalbudget en iets meer finetuning.",
-    tpu: "Rond 30–40 procent hoger, plus langere printtijd door lagere snelheid.",
+    tpu: "Rond 30â€“40 procent hoger, plus langere printtijd door lagere snelheid.",
   },
 ]
 
@@ -169,14 +169,14 @@ const resourceLinks = [
 
 const externalReferences = [
   {
-    label: "Prusa Knowledge Base – PLA",
+    label: "Prusa Knowledge Base â€“ PLA",
     href: "https://help.prusa3d.com/category/pla_204",
-    description: "Officiële richtlijnen rond temperatuur, drogen en nabewerking.",
+    description: "OfficiÃ«le richtlijnen rond temperatuur, drogen en nabewerking.",
   },
   {
-    label: "Ultimaker Support – PLA handleiding",
+    label: "Ultimaker Support â€“ PLA handleiding",
     href: "https://support.ultimaker.com/hc/en-us/articles/360012015419-About-Ultimaker-PLA",
-    description: "Eigenschappen, opslag en printprofielen vanuit een industriële hoek.",
+    description: "Eigenschappen, opslag en printprofielen vanuit een industriÃ«le hoek.",
   },
   {
     label: "MatterHackers Filament Guide",
@@ -281,7 +281,7 @@ export default function FilamentVrijdagPlaPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-slate-500">
-              Gepubliceerd op 5 september 2025 • Volgende Filament Vrijdag: PETG (12 september 2025).
+              Gepubliceerd op 5 september 2025 â€¢ Volgende Filament Vrijdag: PETG (12 september 2025).
             </p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
@@ -304,7 +304,7 @@ export default function FilamentVrijdagPlaPage() {
             <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">Wat is PLA precies?</h2>
               <p className="mt-3 text-sm text-slate-600">
-                PLA staat voor Polylactic Acid. Het is een biobased thermoplast op basis van maïszetmeel of suikerriet. In de
+                PLA staat voor Polylactic Acid. Het is een biobased thermoplast op basis van maÃ¯szetmeel of suikerriet. In de
                 praktijk gaat het om een semi kristallijn materiaal met een dichtheid rond 1.2 tot 1.3 gram per kubieke
                 centimeter, dat relatief stijf is maar minder taai dan bijvoorbeeld PETG of ABS.
               </p>
@@ -314,7 +314,7 @@ export default function FilamentVrijdagPlaPage() {
                 doorzakken. Dat is exact waarom een PLA onderdeel op een hete zomerdag in de auto zijn vorm kan verliezen.
               </p>
               <p className="mt-3 text-sm text-slate-600">
-                PLA wordt vaak verkocht als bio afbreekbaar. In de praktijk breekt het vooral af in industriële
+                PLA wordt vaak verkocht als bio afbreekbaar. In de praktijk breekt het vooral af in industriÃ«le
                 composteerinstallaties met gecontroleerde temperatuur en vochtigheid. In een gewone tuin of langs de weg blijft
                 PLA veel te lang liggen. Voor 3D printen betekent dat vooral dat je een lagere milieu impact hebt tijdens
                 productie, maar dat end of life nog altijd doordacht moet gebeuren.
@@ -334,7 +334,7 @@ export default function FilamentVrijdagPlaPage() {
                   <svg aria-hidden className="mt-1 h-4 w-4 text-indigo-500" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M2 10a8 8 0 1116 0 8 8 0 01-16 0zm7.3 2.7l4-4a1 1 0 10-1.4-1.4L8 11.17 6.1 9.3a1 1 0 10-1.4 1.4l2.6 2.6a1 1 0 001.4 0z" />
                   </svg>
-                  <span>Lage printtemperatuur (rond 200–210 °C) en nauwelijks warping op een verwarmd bed.</span>
+                  <span>Lage printtemperatuur (rond 200â€“210 Â°C) en nauwelijks warping op een verwarmd bed.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg aria-hidden className="mt-1 h-4 w-4 text-indigo-500" viewBox="0 0 20 20" fill="currentColor">
@@ -374,7 +374,7 @@ export default function FilamentVrijdagPlaPage() {
               <p className="mt-2 text-sm text-slate-600">
                 In trek is PLA verrassend sterk. Testen op goed geprinte proefstukken tonen treksterktes rond 50 tot 60
                 megapascal in de gunstige richting van de lagen. In de dwarsrichting zakt dat snel wanneer de layer bonding niet
-                optimaal is. Dat maakt oriëntatie en infill patroon belangrijker dan veel mensen denken.
+                optimaal is. Dat maakt oriÃ«ntatie en infill patroon belangrijker dan veel mensen denken.
               </p>
               <p className="mt-2 text-sm text-slate-600">
                 Voor functionele onderdelen betekent dit dat een ontwerp in PLA best afgestemd wordt op de richting van de
@@ -398,7 +398,7 @@ export default function FilamentVrijdagPlaPage() {
               </p>
               <p className="mt-2 text-sm text-slate-600">
                 Qua duurzaamheid is PLA vooral interessant omdat het uit hernieuwbare bronnen komt en onder de juiste
-                industriële omstandigheden kan composteren. Voor het dagelijks gebruik van je onderdelen moet je het nog altijd
+                industriÃ«le omstandigheden kan composteren. Voor het dagelijks gebruik van je onderdelen moet je het nog altijd
                 behandelen als kunststof: goed sorteren, niet in de natuur achterlaten en bij twijfel recyclage of hergebruik
                 voorzien.
               </p>
@@ -490,7 +490,7 @@ export default function FilamentVrijdagPlaPage() {
               <h2 className="text-2xl font-semibold text-slate-900">Varianten en look</h2>
               <p className="mt-2 text-sm text-slate-600">
                 PLA bestaat al lang niet meer uit enkel klassiek PLA. Onderstaande varianten zijn wekelijks op voorraad in de
-                studio en worden vaak gecombineerd binnen één project. De actuele kleuren en stock per type vind je in de{" "}
+                studio en worden vaak gecombineerd binnen Ã©Ã©n project. De actuele kleuren en stock per type vind je in de{" "}
                 <Link href="/materials" className="text-indigo-600 underline underline-offset-4">
                   materialenbibliotheek
                 </Link>
@@ -757,6 +757,7 @@ export default function FilamentVrijdagPlaPage() {
     </main>
   )
 }
+
 
 
 

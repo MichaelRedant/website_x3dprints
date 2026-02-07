@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/tool-organizers-3d-printen/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/tool-organizers-3d-printen/",
     },
   },
@@ -42,7 +42,7 @@ export default function ToolOrganizersBlogEn() {
             3D printing tool organizers: Gridfinity, Packout, TSTAK and custom
           </h1>
           <p className="text-lg text-slate-700 dark:text-slate-200">
-            Choose the right system, send a great intake and receive an organizer that doesn’t rattle. Includes tips for labels,
+            Choose the right system, send a great intake and receive an organizer that doesnâ€™t rattle. Includes tips for labels,
             anti-slip and material choice.
           </p>
           <div className="flex flex-wrap gap-3 text-sm text-slate-600">
@@ -105,7 +105,7 @@ export default function ToolOrganizersBlogEn() {
             <div>
               <p className="text-sm font-semibold text-indigo-700">Milwaukee Packout</p>
               <p className="text-sm text-slate-700 dark:text-slate-200">
-                Built for pros and vans. Inserts are snug and anti-slip so batteries/chargers don’t move. Fits Organizer (48-22-8435),
+                Built for pros and vans. Inserts are snug and anti-slip so batteries/chargers donâ€™t move. Fits Organizer (48-22-8435),
                 Low-Profile (8431) and Compact (8436).
               </p>
             </div>
@@ -118,7 +118,7 @@ export default function ToolOrganizersBlogEn() {
             <div>
               <p className="text-sm font-semibold text-indigo-700">Custom / pegboard / Skadis</p>
               <p className="text-sm text-slate-700 dark:text-slate-200">
-                For everything that doesn’t fit standard: photo + dimensions are enough. We also print add-ons for IKEA Skadis (hooks,
+                For everything that doesnâ€™t fit standard: photo + dimensions are enough. We also print add-ons for IKEA Skadis (hooks,
                 bins, cable clips) and magnetic labels for pegboards.
               </p>
             </div>
@@ -133,7 +133,7 @@ export default function ToolOrganizersBlogEn() {
           </p>
           <ul className="list-disc space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-200">
             <li>
-              <Link href="/en/materials/pla" className="font-semibold underline decoration-indigo-400 hover:decoration-indigo-600">
+              <Link href="/en/materials" className="font-semibold underline decoration-indigo-400 hover:decoration-indigo-600">
                 PLA Matte
               </Link>{" "}
               for modular trays and colour codes.
@@ -151,7 +151,7 @@ export default function ToolOrganizersBlogEn() {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-slate-900">Label zones and colour coding</h2>
           <p className="text-slate-700 dark:text-slate-200">
-            Label edges and colour caps speed up putting tools back. For Packout/TSTAK we respect IP65 lids and height so labels don’t
+            Label edges and colour caps speed up putting tools back. For Packout/TSTAK we respect IP65 lids and height so labels donâ€™t
             snag. We can engrave text in-print or create recessed areas for tapes/laser labels.
           </p>
         </section>
@@ -251,3 +251,4 @@ export default function ToolOrganizersBlogEn() {
     </main>
   )
 }
+

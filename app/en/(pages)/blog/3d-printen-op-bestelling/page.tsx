@@ -1,214 +1,333 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import Reveal from "@/components/Reveal"
-import GlassCard from "@/components/GlassCard"
-import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import Faq from "@/components/Faq"
+import GlassCard from "@/components/GlassCard"
+import Reveal from "@/components/Reveal"
+import ShimmerButton from "@/components/ShimmerButton"
+import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-op-bestelling/"
+const nlCanonical = "https://www.x3dprints.be/blog/3d-printen-op-bestelling/"
+const datePublished = "2024-05-20"
+const dateModified = "2026-02-07"
+const pricingHref = "/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=order-on-demand-en"
+const materialsHref = "/en/materials#material-suggestion-tool"
+const viewerHref = "/en/viewer?utm_source=blog&utm_medium=cta&utm_campaign=order-on-demand-en"
+const contactHref =
+  "/en/contact?material=pla-matte&quote=3D%20printing%20on%20demand%20request"
 
 export const metadata: Metadata = {
   title: "3D printing on demand | X3DPrints",
   description:
-    "How ordering 3D prints at X3DPrints works: from intake to delivery, with examples and tips for repeat orders.",
+    "Practical guide to ordering 3D prints on demand with clear intake, production planning and repeat-order workflow.",
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-op-bestelling/",
-      en: canonical,
-      "x-default": "https://www.x3dprints.be/blog/3d-printen-op-bestelling/",
+      "nl-BE": nlCanonical,
+      "en-BE": canonical,
+      "x-default": nlCanonical,
     },
   },
   openGraph: {
-    title: "3D printing on demand: process and tips",
+    title: "3D printing on demand: intake to delivery",
     description:
-      "Learn how to start a 3D print order, what info we need and how we communicate about planning, updates and delivery.",
+      "Learn what to send, how planning works and how to speed up repeat orders.",
     url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printing on demand" }],
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printing on demand" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
   twitter: {
     card: "summary_large_image",
     title: "3D printing on demand",
-    description: "Step-by-step guide to ordering 3D prints from X3DPrints, including pricing, examples and follow-up.",
-    images: ["/images/og-home.jpg"],
+    description: "Order flow with intake, production milestones and delivery options.",
+    images: ["/Logo.webp"],
   },
 }
+
+const tocItems = [
+  { id: "order-process", label: "How does the order flow work?" },
+  { id: "order-briefing", label: "What info speeds up quoting?" },
+  { id: "order-repeat", label: "How do repeat orders stay efficient?" },
+  { id: "order-faq", label: "FAQ about ordering" },
+  { id: "order-sources", label: "Sources and references" },
+]
 
 const steps = [
   {
-    title: "Request & intake",
-    body: "Send STL/STEP, quantities, deadline and any reference photos. Within one business day you get feedback and a price estimate.",
-    link: { label: "Upload via viewer", href: "/en/viewer" },
+    title: "1. Intake with files and context",
+    body: "Send STL or STEP, target quantities, deadline and use case for fast review.",
+    link: { label: "Open 3D viewer", href: viewerHref },
   },
   {
-    title: "Production & updates",
-    body: "After approval we schedule the print slot. You can receive email updates (photo or short video) if you like. Adjustments are possible before we start.",
-    link: { label: "Check materials", href: "/en/materials" },
+    title: "2. Material route and planning",
+    body: "We map material, print strategy and timing based on detail, strength and budget.",
+    link: { label: "Choose material", href: materialsHref },
   },
   {
-    title: "Delivery & aftercare",
-    body: "Pickup in Herzele, Bpost, or personal delivery in Ghent/Aalst. Invoice + repeat number so you can reorder easily later.",
-    link: { label: "Plan delivery", href: "/en/contact" },
+    title: "3. Production and delivery",
+    body: "After approval we schedule production and confirm pickup or delivery timing.",
+    link: { label: "Check pricing", href: pricingHref },
   },
 ]
 
-const reorders = [
-  "We keep slicer profiles and G-code (with approval) so repeat orders stay identical.",
-  "Use the order number or project name in new requests; we immediately know which settings to use.",
-  "Combine several small orders into one batch for better pricing and a shorter queue.",
+const briefingChecklist = [
+  "STL or STEP file with clear version naming",
+  "Preferred material and color, or request guidance",
+  "Target quantity and deadline",
+  "Delivery preference: pickup, shipping or planned drop-off",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
+const repeatTips = [
+  "Keep stable project naming and revision tracking.",
+  "Batch smaller parts to reduce setup overhead.",
+  "Store critical dimensions and tolerance notes per project.",
+  "Use consistent material profiles when output consistency matters.",
+]
 
-    headline: "3D printing on demand",
-  description: "Explanation of the ordering process at X3DPrints: intake, production, delivery and repeat jobs.",
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
+const faqItems = [
+  {
+    q: "How fast do we receive a quote?",
+    a: "In most cases within one business day when files and context are complete.",
   },
-  mainEntityOfPage: canonical,
-  url: canonical,
-  datePublished: "2025-03-27",
-  dateModified: "2026-02-06",
+  {
+    q: "Can we run a test print before full batch production?",
+    a: "Yes. A test part is often the fastest way to validate fit and finish before scaling.",
+  },
+  {
+    q: "How do repeat orders get faster over time?",
+    a: "With stable project naming and version references, planning and setup become much faster.",
+  },
+]
+
+const references = [
+  {
+    label: "Google Search docs: crawlable links",
+    href: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+  },
+  {
+    label: "All3DP FDM process explainer",
+    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+  },
+  {
+    label: "Prusa material guide",
+    href: "https://help.prusa3d.com/article/material-guide_220",
+  },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "3D printing on demand",
+  description:
+    "Practical guide to ordering 3D prints on demand with intake, material choices and repeat-order strategy.",
+  datePublished,
+  dateModified,
+  image: "/Logo.webp",
   inLanguage: "en-BE",
-}
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  mainEntityOfPage: canonical,
+  items: faqItems.map((item) => ({ q: item.q, a: item.a })),
+})
+
+const howToJsonLd = buildHowToSchema({
+  name: "Order 3D printing on demand in 4 steps",
+  description:
+    "Start a 3D print order with complete intake, material alignment and delivery planning.",
+  inLanguage: "en-BE",
+  mainEntityOfPage: canonical,
+  totalTime: "PT3M",
+  steps: [
+    {
+      name: "Share files and context",
+      text: "Send STL or STEP, quantities, timeline and use case.",
+    },
+    {
+      name: "Align material and planning",
+      url: materialsHref,
+    },
+    {
+      name: "Review pricing baseline",
+      url: pricingHref,
+    },
+    {
+      name: "Submit prefilled request",
+      url: contactHref,
+    },
+  ],
+  toolNames: ["Material Suggestion Tool", "X3DPrints 3D viewer"],
+  supplyNames: ["STL or STEP file"],
+})
 
 export default function OrderArticleEnPage() {
   return (
-    <main className="relative">
+    <main className="relative overflow-hidden px-6 pb-24 pt-16 sm:px-8 lg:px-12">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(150%_85%_at_50%_-15%,rgba(190,24,93,0.16),transparent_70%)]"
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(130%_60%_at_50%_0%,rgba(16,185,129,.16),transparent_72%)]"
       />
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.07]" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.08]" />
 
-      <section className="px-6 pb-12 pt-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
-          <Reveal className="stacked-content">
-            <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
-              <ol className="flex flex-wrap gap-2">
-                <li>
-                  <Link
-                    href="/en/blog"
-                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                  >
-                    Blog
+      <article className="mx-auto max-w-5xl space-y-10">
+        <header className="space-y-4">
+          <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
+            <ol className="flex flex-wrap gap-2">
+              <li>
+                <Link href="/en/blog" className="font-medium text-indigo-600 hover:text-indigo-500">
+                  Blog
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li className="font-medium text-slate-700">3D printing on demand</li>
+            </ol>
+          </nav>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600">Ordering guide</p>
+          <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+            3D printing on demand: intake to delivery
+          </h1>
+          <p className="max-w-3xl text-lg text-slate-700">
+            Short version: clean intake data speeds up everything. Send the right context and your project moves faster.
+          </p>
+          <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
+            Last updated: February 7, 2026
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <ShimmerButton
+              href={contactHref}
+              event={{ action: "cta_click", category: "blog_order_en_top", label: "contact_prefill" }}
+            >
+              Start order
+            </ShimmerButton>
+            <ShimmerButton
+              href={materialsHref}
+              className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+              event={{ action: "cta_click", category: "blog_order_en_top", label: "materials" }}
+            >
+              Material Suggestion Tool
+            </ShimmerButton>
+            <Link
+              href={viewerHref}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300 hover:bg-slate-50"
+            >
+              Check model in viewer
+            </Link>
+          </div>
+          <ContentTableOfContents title="Contents" items={tocItems} className="max-w-2xl" />
+        </header>
+
+        <section id="order-process" className="scroll-mt-28">
+          <Reveal>
+            <h2 className="text-2xl font-semibold text-slate-900">How does the order flow work?</h2>
+            <div className="mt-4 grid gap-4 md:grid-cols-3">
+              {steps.map((step) => (
+                <GlassCard key={step.title} className="p-6">
+                  <h3 className="text-lg font-semibold text-slate-900">{step.title}</h3>
+                  <p className="mt-2 text-sm text-slate-700">{step.body}</p>
+                  <Link href={step.link.href} className="mt-3 inline-flex text-sm font-semibold text-indigo-600 hover:text-indigo-500">
+                    {step.link.label}
                   </Link>
-                </li>
-                <li aria-hidden>/</li>
-                <li className="font-medium text-slate-700">3D printing on demand</li>
-              </ol>
-            </nav>
-            <h1 className="mt-6 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              3D printing on demand: from briefing to delivery
-            </h1>
-            <p className="mt-4 text-lg text-slate-700">
-              How to organise an order at X3DPrints: what information we need, what to expect and how we make repeat jobs easier.
-            </p>
-            <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href="/en/contact">Start an order</ShimmerButton>
-              <Link
-                href="/en/pricing"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
-              >
-                View pricing & steps
-              </Link>
+                </GlassCard>
+              ))}
             </div>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
-          {steps.map((step) => (
-            <Reveal key={step.title}>
-              <GlassCard className="h-full border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Step</p>
-                <h2 className="mt-2 text-xl font-semibold text-slate-900">{step.title}</h2>
-                <p className="mt-3 text-sm text-slate-600">{step.body}</p>
-                <Link
-                  href={step.link.href}
-                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 transition hover:text-emerald-700"
-                >
-                  {step.link.label}
-                  <span aria-hidden>-&gt;</span>
-                </Link>
-              </GlassCard>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+        <section id="order-briefing" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">What we need in your briefing</h2>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                <li>Files: STL/STEP plus a reference image or sketch.</li>
-                <li>Material and colour preference, desired finish (raw, sanded, painted).</li>
-                <li>Number of pieces and target deadline (and whether there is flexibility).</li>
-                <li>Delivery option: pickup, Bpost, personal drop-off.</li>
-              </ul>
-            </GlassCard>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
-          <Reveal>
-            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Repeat orders & subscriptions</h2>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                {reorders.map((tip) => (
-                  <li key={tip} className="flex items-start gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
-                    <span>{tip}</span>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">What info speeds up quoting?</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {briefingChecklist.map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-xs text-slate-500">
-                Idea: bundle monthly merchandising or maintenance parts in one batch. You benefit from a shorter queue and sharper pricing.
+              <div className="mt-5 flex flex-wrap gap-3">
+                <ShimmerButton
+                  href={pricingHref}
+                  event={{ action: "cta_click", category: "blog_order_en_mid", label: "pricing" }}
+                >
+                  Review pricing
+                </ShimmerButton>
+                <ShimmerButton
+                  href={contactHref}
+                  className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+                  event={{ action: "cta_click", category: "blog_order_en_mid", label: "contact_prefill" }}
+                >
+                  Request quote
+                </ShimmerButton>
+              </div>
+            </GlassCard>
+          </Reveal>
+        </section>
+
+        <section id="order-repeat" className="scroll-mt-28">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">How do repeat orders stay efficient?</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {repeatTips.map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-500" aria-hidden />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-sm text-slate-600">
+                Check{" "}
+                <Link href="/en/services" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  services
+                </Link>{" "}
+                and{" "}
+                <Link href="/en/locaties" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  locations
+                </Link>{" "}
+                for fulfillment options.
               </p>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
+        <section id="order-faq" className="scroll-mt-28">
+          <Faq title="FAQ about ordering 3D printing" items={faqItems} />
+        </section>
+
+        <section id="order-sources" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="flex flex-col gap-6 border border-white/40 bg-white/85 p-6 text-center shadow-xl backdrop-blur sm:flex-row sm:items-center sm:justify-between sm:text-left">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Next step</p>
-                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Ready to place your order?</h2>
-                <p className="mt-2 text-sm text-slate-600">
-                  Within one business day you get a concrete proposal and we discuss how often you want to repeat.
-                </p>
-              </div>
-              <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href="/en/contact">Start an order</ShimmerButton>
-                <Link href="/en/pricing" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
-                  View pricing
-                </Link>
-              </div>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
+      </article>
+
+      <BlogReadMore />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <BlogReadMore />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
     </main>
   )
 }
-
-

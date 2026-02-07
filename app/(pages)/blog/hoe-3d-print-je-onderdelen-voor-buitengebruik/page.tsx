@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/hoe-3d-print-je-onderdelen-voor-buitengebruik"
+const canonical = "https://www.x3dprints.be/blog/hoe-3d-print-je-onderdelen-voor-buitengebruik/"
 const publishedDate = "2025-11-21T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -105,7 +105,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   headline: "Hoe 3D print je onderdelen voor buitengebruik?",
   description:
     "Praktische gids voor outdoor 3D print projecten met PETG, TPU en hybride constructies. Inclusief bevestigingstips en kostinschatting.",
@@ -433,6 +433,7 @@ export default function OutdoorPrintingGuidePage() {
     </main>
   )
 }
+
 
 
 

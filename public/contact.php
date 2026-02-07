@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/crm-common.php';
+
 header('Content-Type: application/json; charset=utf-8');
 mb_language('uni');
 mb_internal_encoding('UTF-8');
@@ -162,27 +164,13 @@ function sendMultipartMail(string $to, string $subject, string $textBody, string
 }
 
 function saveLog(array $entry): void {
-    $dir = __DIR__ . '/data';
-    if (!is_dir($dir)) {
-        @mkdir($dir, 0755, true);
-    }
-    $file = $dir . '/contact-log.json';
-    $existing = [];
-    if (file_exists($file)) {
-        $json = file_get_contents($file);
-        $existing = json_decode($json, true);
-        if (!is_array($existing)) {
-            $existing = [];
-        }
-    }
+    $file = crmDataPath('contact-log.json');
+    $existing = crmReadJsonFile($file);
     array_unshift($existing, $entry);
     if (count($existing) > 1000) {
         $existing = array_slice($existing, 0, 1000);
     }
-    $payload = json_encode($existing, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-    if ($payload !== false) {
-        @file_put_contents($file, $payload, LOCK_EX);
-    }
+    crmWriteJsonFile($file, $existing);
 }
 
 // Stuur altijd adminmail; bevestiging proberen maar admin heeft prioriteit

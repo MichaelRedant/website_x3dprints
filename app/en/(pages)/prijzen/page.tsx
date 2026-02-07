@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     canonical: `${SITE.url}${TARGET}/`,
     languages: {
       "nl-BE": `${SITE.url}/pricing/`,
-      en: `${SITE.url}${TARGET}/`,
+      "en-BE": `${SITE.url}${TARGET}/`,
       "x-default": `${SITE.url}/pricing/`,
     },
   },

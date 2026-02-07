@@ -6,7 +6,9 @@ import Faq from "@/components/Faq"
 import GlassOrb from "@/components/GlassOrb"
 import ShimmerButton from "@/components/ShimmerButton"
 import GlassCard from "@/components/GlassCard"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { servicesFaqEn } from "@/content/services-faq"
+import { buildFaqPageSchema } from "@/lib/seo"
 
 export const revalidate = 86_400 // 24h cache
 export const metadata: Metadata = {
@@ -16,7 +18,7 @@ export const metadata: Metadata = {
     canonical: "https://www.x3dprints.be/en/faq/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/faq/",
-      en: "https://www.x3dprints.be/en/faq/",
+      "en-BE": "https://www.x3dprints.be/en/faq/",
       "x-default": "https://www.x3dprints.be/faq/",
     },
   },
@@ -114,6 +116,24 @@ export default function Page() {
       a: "Yes, with measurements or a reference part. We model in Fusion 360/Tinkercad and deliver a printable file plus a plan.",
     },
   ]
+  const combinedFaq = [...servicesFaqEn, ...extraFaq]
+  const tocItems = [
+    { id: "faq-core", label: "Core 3D printing FAQ" },
+    { id: "faq-more", label: "Extra questions and answers" },
+    { id: "faq-cta", label: "How to start your request" },
+    { id: "faq-sources", label: "Sources and references" },
+  ]
+  const references = [
+    { label: "ISO/ASTM 52900 additive manufacturing terminology", url: "https://www.astm.org/f2997-13r21.html" },
+    { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+    { label: "Autodesk additive manufacturing overview", url: "https://www.autodesk.com/solutions/additive-manufacturing/what-is-additive-manufacturing" },
+  ]
+  const lastUpdatedLabel = "Last updated: February 6, 2026"
+  const faqJsonLd = buildFaqPageSchema({
+    inLanguage: "en-BE",
+    mainEntityOfPage: "https://www.x3dprints.be/en/faq/",
+    items: combinedFaq,
+  })
 
   return (
     <main className="relative overflow-hidden px-6 py-14 sm:px-8 lg:px-12">
@@ -130,6 +150,7 @@ export default function Page() {
             <p className="text-lg text-slate-700">
               Answers on materials, pricing, lead times, finishing and how we handle your STL/STEP. Based in Herzele (Ghent region) with delivery across Flanders.
             </p>
+            <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact">Request a quote</ShimmerButton>
               <Link
@@ -139,6 +160,7 @@ export default function Page() {
                 Pricing & calculator
               </Link>
             </div>
+            <ContentTableOfContents title="Contents" items={tocItems} className="max-w-xl" />
           </div>
           <div className="flex justify-end">
             <GlassOrb className="h-40 w-40 opacity-70" />
@@ -146,7 +168,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="mx-auto mt-10 max-w-6xl">
+      <section id="faq-core" className="scroll-mt-28 mx-auto mt-10 max-w-6xl">
         <Reveal>
           <GlassCard className="p-6 sm:p-8">
             <Faq title="Core FAQ" items={servicesFaqEn} />
@@ -154,7 +176,7 @@ export default function Page() {
         </Reveal>
       </section>
 
-      <section className="mx-auto mt-10 max-w-6xl">
+      <section id="faq-more" className="scroll-mt-28 mx-auto mt-10 max-w-6xl">
         <Reveal>
           <GlassCard className="p-6 sm:p-8">
             <h2 className="text-xl font-semibold text-slate-900">More questions</h2>
@@ -170,7 +192,7 @@ export default function Page() {
         </Reveal>
       </section>
 
-      <section className="mx-auto mt-12 max-w-6xl">
+      <section id="faq-cta" className="scroll-mt-28 mx-auto mt-12 max-w-6xl">
         <Reveal>
           <GlassCard className="overflow-hidden border-white/40 bg-gradient-to-br from-white/80 to-white/50 p-8 shadow-xl ring-1 ring-white/60">
             <div className="grid gap-6 sm:grid-cols-[1.1fr_.9fr] sm:items-center">
@@ -196,6 +218,30 @@ export default function Page() {
           </GlassCard>
         </Reveal>
       </section>
+
+      <section id="faq-sources" className="scroll-mt-28 mx-auto mt-10 max-w-6xl">
+        <Reveal>
+          <GlassCard className="p-6 sm:p-8">
+            <h2 className="text-xl font-semibold text-slate-900">Sources and references</h2>
+            <p className="mt-2 text-sm text-slate-600">
+              These references guide terminology and material recommendations across this FAQ page.
+            </p>
+            <ul className="mt-4 space-y-2 text-sm text-slate-700">
+              {references.map((reference) => (
+                <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                  <cite className="not-italic">
+                    <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                      {reference.label}
+                    </Link>
+                  </cite>
+                </li>
+              ))}
+            </ul>
+          </GlassCard>
+        </Reveal>
+      </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     </main>
   )
 }

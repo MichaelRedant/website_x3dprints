@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import Faq from "@/components/Faq"
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://www.x3dprints.be/en/organizers/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/organizers/",
-      en: "https://www.x3dprints.be/en/organizers/",
+      "en-BE": "https://www.x3dprints.be/en/organizers/",
       "x-default": "https://www.x3dprints.be/organizers/",
     },
   },
@@ -91,6 +92,17 @@ const FAQ_ITEMS = [
 
 export default function OrganizersHubPageEn() {
   const cards = ORDER.map((slug) => ({ ...ORGANIZER_PAGES[slug], ...CARD_COPY_EN[slug] }))
+  const tocItems = [
+    { id: "systems", label: "Which organizer systems do we offer?" },
+    { id: "organizers-faq", label: "Frequently asked questions" },
+    { id: "organizers-sources", label: "Sources and references" },
+  ]
+  const references = [
+    { label: "Milwaukee PACKOUT overview", url: "https://www.milwaukeetool.eu/en-eu/milwaukee/packout/" },
+    { label: "DeWALT TSTAK product information", url: "https://www.dewalt.com/product/dwst17814/tstak%C2%AE-4-compartment-box" },
+    { label: "Gridfinity open-source project", url: "https://gridfinity.xyz/" },
+  ]
+  const lastUpdatedLabel = "Last updated: February 6, 2026"
 
   return (
     <main className="relative overflow-hidden px-6 pb-24 pt-24 sm:px-8 lg:px-12">
@@ -113,6 +125,8 @@ export default function OrganizersHubPageEn() {
             <p className="max-w-3xl text-lg text-slate-100/90">
               Gridfinity, Packout, TSTAK and custom cases. Quiet, labelable layouts that fit your setup. Pick your system or send photos + tool list.
             </p>
+            <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-300">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Contents" items={tocItems} className="max-w-xl border-white/30 bg-white/85" />
             <div className="flex flex-wrap gap-3">
               <Link
                 href="#systems"
@@ -122,7 +136,7 @@ export default function OrganizersHubPageEn() {
                 <span className="i-lucide-arrow-right" aria-hidden />
               </Link>
               <Link
-                href={buildOrganizerContactHref("organizers" as never)}
+                href={buildOrganizerContactHref("organizers" as never, undefined, "en")}
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/5 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-white/10"
               >
                 Request your layout
@@ -219,10 +233,32 @@ export default function OrganizersHubPageEn() {
         </Reveal>
         </section>
 
-        <Reveal className="rounded-3xl border border-white/40 bg-white/80 p-6 shadow-lg ring-1 ring-white/60 backdrop-blur dark:border-[#0F203C] dark:bg-[#0B0F1A]/80 dark:ring-0">
-          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl dark:text-white">Frequently asked questions</h2>
-          <Faq items={FAQ_ITEMS} className="mt-4" />
-        </Reveal>
+        <section id="organizers-faq" className="scroll-mt-28">
+          <Reveal className="rounded-3xl border border-white/40 bg-white/80 p-6 shadow-lg ring-1 ring-white/60 backdrop-blur dark:border-[#0F203C] dark:bg-[#0B0F1A]/80 dark:ring-0">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl dark:text-white">Frequently asked questions</h2>
+            <Faq items={FAQ_ITEMS} className="mt-4" />
+          </Reveal>
+        </section>
+
+        <section id="organizers-sources" className="scroll-mt-28">
+          <Reveal className="rounded-3xl border border-white/40 bg-white/80 p-6 shadow-lg ring-1 ring-white/60 backdrop-blur dark:border-[#0F203C] dark:bg-[#0B0F1A]/80 dark:ring-0">
+            <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">Sources and references</h2>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-200">
+              These references are used to keep organizer system naming and compatibility terms accurate.
+            </p>
+            <ul className="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-100">
+              {references.map((reference) => (
+                <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
+                  <cite className="not-italic">
+                    <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                      {reference.label}
+                    </Link>
+                  </cite>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        </section>
       </div>
 
       <script

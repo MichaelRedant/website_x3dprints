@@ -1,20 +1,28 @@
 // app/(pages)/3d-printen/page.tsx
 import type { Metadata } from "next"
 import Link from "next/link"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import { buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
+import {
+  buildFaqPageSchema,
+  buildHowToSchema,
+  buildLocalBusinessSchema,
+  buildOfferCatalog,
+  buildServiceSchema,
+  SchemaOfferInput,
+} from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "3D printen in België · Lokaal 3D printen vanuit Herzele | X3DPrints",
+  title: "3D printen op maat in België | 3D print service Gent | X3DPrints",
   description:
-    "3D printen voor marketing, tabletop en particulieren. Lokale 3D printservice (FDM) vanuit Herzele met advies over ontwerp, materiaal, prijs en workflow.",
-  alternates: { canonical: "https://www.x3dprints.be/3d-printen/", languages: { "nl-BE": "https://www.x3dprints.be/3d-printen/", en: "https://www.x3dprints.be/en/3d-printen/", "x-default": "https://www.x3dprints.be/3d-printen/", }, },
+    "3D printen op maat voor bedrijven en particulieren. Lokale 3D print service België vanuit Herzele (tussen Gent en Aalst) met advies over 3D model printen, materiaal, prijs en workflow.",
+  alternates: { canonical: "https://www.x3dprints.be/3d-printen/", languages: { "nl-BE": "https://www.x3dprints.be/3d-printen/", "en-BE": "https://www.x3dprints.be/en/3d-printen/", "x-default": "https://www.x3dprints.be/3d-printen/", }, },
   openGraph: {
-    title: "3D printen in België | X3DPrints",
+    title: "3D print service België | 3D printen op maat | X3DPrints",
     description:
-      "3D printen voor marketingmateriaal, tabletop en consumenten. Lokaal 3D printen vanuit Herzele (tussen Gent en Aalst) met duidelijke workflow en materiaaladvies.",
+      "3D printen in België voor prototypes, marketingprops en onderdelen. Lokale 3D print service in regio Gent met materiaaladvies en snelle offerte.",
     url: "https://www.x3dprints.be/3d-printen/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printen landing" }],
     locale: "nl_BE",
@@ -225,37 +233,58 @@ const faq = [
   {
     q: "Bieden jullie 3D printen aan in mijn regio?",
     a:
-      "X3DPrints print vanuit Herzele, tussen Gent en Aalst. We leveren in heel Vlaanderen via pakketdienst of persoonlijke levering, en afhalen is mogelijk op afspraak.",
+      "Ja. We leveren 3D print service in heel België, met focus op Vlaanderen (onder andere Gent en Aalst). Afhalen in Herzele is mogelijk op afspraak.",
+  },
+  {
+    q: "Kan ik een 3D model laten printen zonder eigen ontwerp?",
+    a:
+      "Ja. Stuur een link naar een bestaand model of je idee. We helpen met schaal, printbaarheid en materiaalkeuze zodat je 3D model veilig geprint kan worden.",
+  },
+  {
+    q: "Hoe snel krijg ik een offerte na mijn aanvraag?",
+    a:
+      "Meestal binnen 24 uur op werkdagen. Deel je STL/STEP, gewenste materiaalkeuze en deadline, dan kunnen we sneller een concrete prijs en planning geven.",
   },
 ]
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
+const tocItems = [
+  { id: "printen-definitie", label: "Wat bedoelen we met 3D printen?" },
+  { id: "printen-pluspunten", label: "Waarom kiezen klanten voor X3DPrints?" },
+  { id: "printen-toepassingen", label: "Welke toepassingen zijn typisch?" },
+  { id: "printen-segmenten", label: "Voor wie printen we het meest?" },
+  { id: "printen-materialen", label: "Welke materialen en richtprijzen zijn mogelijk?" },
+  { id: "printen-workflow", label: "Hoe loopt de workflow van bestand tot levering?" },
+  { id: "printen-faq", label: "FAQ over 3D printen" },
+  { id: "printen-bronnen", label: "Bronnen en referenties" },
+]
 
-  inLanguage: ["nl-BE", "en-BE"],
-  mainEntity: faq.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+const references = [
+  { label: "ISO/ASTM terminologie voor additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
+  { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+  { label: "All3DP uitleg van FDM 3D printen", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
+]
 
-const howToJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-
-  inLanguage: ["nl-BE", "en-BE"],
-  name: "3D printen aanvragen bij X3DPrints",
-  description: "Upload STL/STEP, ontvang materiaaladvies en prijs, wij 3D printen en leveren of jij haalt af.",
-  supply: [{ "@type": "HowToSupply", name: "STL- of STEP-bestand voor 3D printen" }],
-  tool: [{ "@type": "HowToTool", name: "FDM 3D-printer met PLA, PETG of TPU" }],
-  step: workflow.map((w) => ({ "@type": "HowToStep", name: w.title, text: w.detail })),
-}
+const lastUpdatedLabel = "Laatst bijgewerkt: 6 februari 2026"
 
 const pageUrl = String(
   metadata.openGraph?.url ?? metadata.alternates?.canonical ?? "https://www.x3dprints.be/3d-printen",
 )
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  mainEntityOfPage: pageUrl,
+  items: faq.map((item) => ({ q: item.q, a: item.a })),
+})
+
+const howToJsonLd = buildHowToSchema({
+  inLanguage: "nl-BE",
+  mainEntityOfPage: pageUrl,
+  name: "3D printen aanvragen bij X3DPrints",
+  description: "Upload STL/STEP, ontvang materiaaladvies en prijs, wij 3D printen en leveren of jij haalt af.",
+  steps: workflow.map((w) => ({ name: w.title, text: w.detail })),
+  toolNames: ["FDM 3D-printer met PLA, PETG of TPU"],
+  supplyNames: ["STL- of STEP-bestand voor 3D printen"],
+})
 
 const catalogJsonLd = buildOfferCatalog("3D print advies & projecten", consultationOffers)
 
@@ -268,7 +297,11 @@ const localBusinessJsonLd = buildLocalBusinessSchema({
   areaServed: "Gent, Aalst, Herzele & Vlaanderen",
 })
 
-const serviceJsonLd = buildServiceSchema("3D printen & advies", consultationOffers, pageUrl)
+const serviceJsonLd = buildServiceSchema("3D printen & advies", consultationOffers, pageUrl, {
+  description: descriptionText,
+  inLanguage: "nl-BE",
+  mainEntityOfPage: pageUrl,
+})
 
 export default function Page() {
   return (
@@ -285,14 +318,20 @@ export default function Page() {
           <Reveal className="stacked-content">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">3D printen</p>
             <h1 className="mt-4 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              3D printen voor marketing, tabletop en persoonlijke projecten.
+              3D printen op maat in België voor bedrijven en particulieren.
             </h1>
             <p className="mt-3 max-w-3xl text-lg text-slate-700">
-              Lokale 3D printservice vanuit Herzele (tussen Gent en Aalst). Winkels, tabletop gamers en particulieren krijgen advies
-              over ontwerp, materiaal en planning zodat 3D prints voor etalages, props en hobbyprojecten meteen inzetbaar zijn.
+              Lokale 3D print service vanuit Herzele (tussen Gent en Aalst). Heb je een STL/STEP-bestand of wil je een 3D model laten
+              printen? We adviseren over ontwerp, materiaal en planning zodat je 3D prints snel inzetbaar zijn.
             </p>
+            <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact">Offerte voor 3D printen aanvragen</ShimmerButton>
+              <ShimmerButton
+                href="/contact?material=pla-matte"
+                event={{ action: "cta_click", category: "3d-printen_hero", label: "quote" }}
+              >
+                Offerte voor 3D printen aanvragen
+              </ShimmerButton>
               <Link
                 href="/pricing"
                 className="inline-flex items-center gap-2 rounded-xl border border-slate-200/80 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
@@ -306,6 +345,7 @@ export default function Page() {
                 Materialen voor 3D printen
               </Link>
             </div>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="mt-6 max-w-2xl" />
           </Reveal>
         </div>
       </section>
@@ -315,7 +355,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <Reveal className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <GlassCard className="h-full p-6 sm:p-8">
-              <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Wat bedoelen we met 3D printen?</h2>
+              <h2 id="printen-definitie" className="scroll-mt-28 text-2xl font-semibold text-slate-900 sm:text-3xl">Wat bedoelen we met 3D printen?</h2>
               <p className="mt-3 text-sm text-slate-600">
                 X3DPrints is een FDM 3D printservice in Vlaanderen. We printen met PLA, PETG, TPU en specials, allemaal op
                 pro-printers in een gesloten omgeving. Dat betekent: strakke toleranties (+/-0,2 mm), controle over support en
@@ -371,7 +411,7 @@ export default function Page() {
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6 max-w-3xl">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+            <h2 id="printen-pluspunten" className="scroll-mt-28 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
               Waarom 3D printen bij X3DPrints?
             </h2>
             <p className="mt-2 text-slate-600">
@@ -409,7 +449,7 @@ export default function Page() {
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6 max-w-3xl">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Typische 3D print-toepassingen</h2>
+            <h2 id="printen-toepassingen" className="scroll-mt-28 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Typische 3D print-toepassingen</h2>
             <p className="mt-2 text-slate-600">
               Enkele concrete cases waarvoor klanten 3D printen inzetten. Kies je toepassing en we helpen met materiaal, oriëntatie en planning.
             </p>
@@ -437,7 +477,7 @@ export default function Page() {
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6 max-w-3xl">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+            <h2 id="printen-segmenten" className="scroll-mt-28 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
               3D printen voor marketing, tabletop en particulieren
             </h2>
             <p className="mt-2 text-slate-600">
@@ -497,7 +537,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <Reveal className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <GlassCard className="p-6 sm:p-8">
-              <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Materialen voor 3D printen</h2>
+              <h2 id="printen-materialen" className="scroll-mt-28 text-2xl font-semibold text-slate-900 sm:text-3xl">Materialen voor 3D printen</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Kies het filament dat past bij sterkte, look en omgeving. We adviseren bij elke aanvraag en linken door naar de
                 Material Suggestion Tool voor je 3D print.
@@ -513,7 +553,12 @@ export default function Page() {
                 ))}
               </ul>
               <div className="mt-5 flex flex-wrap gap-3">
-                <ShimmerButton href="/materials#material-suggestion-tool">Material Suggestion Tool</ShimmerButton>
+                <ShimmerButton
+                  href="/materials#material-suggestion-tool"
+                  event={{ action: "cta_click", category: "3d-printen_materials", label: "tool" }}
+                >
+                  Material Suggestion Tool
+                </ShimmerButton>
                 <Link href="/materials" className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-600">
                   Naar materialen <span aria-hidden>-&gt;</span>
                 </Link>
@@ -560,7 +605,7 @@ export default function Page() {
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6 max-w-3xl">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Hoe 3D printen werkt bij X3DPrints</h2>
+            <h2 id="printen-workflow" className="scroll-mt-28 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Hoe 3D printen werkt bij X3DPrints</h2>
             <p className="mt-2 text-slate-600">Duidelijke stappen en communicatie. Jij weet op elk moment waar je 3D prints zitten in de workflow.</p>
           </Reveal>
           <div className="grid gap-4 md:grid-cols-2">
@@ -590,7 +635,12 @@ export default function Page() {
                   Deel je STL/STEP, gewenste materiaal en timing. Je ontvangt een voorstel met planning, prijs en eventuele optimalisaties voor je 3D prints.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <ShimmerButton href="/contact">Plan een gesprek</ShimmerButton>
+                  <ShimmerButton
+                    href="/contact?material=pla-matte"
+                    event={{ action: "cta_click", category: "3d-printen_cta", label: "gesprek" }}
+                  >
+                    Plan een gesprek
+                  </ShimmerButton>
                   <Link
                     href="/viewer"
                     className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:-translate-y-0.5 hover:bg-white"
@@ -605,7 +655,7 @@ export default function Page() {
       </section>
 
       {/* FAQ */}
-      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+      <section id="printen-faq" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6 sm:p-8">
@@ -618,6 +668,30 @@ export default function Page() {
                   </div>
                 ))}
               </div>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="printen-bronnen" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Bronnen en referenties</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Deze bronnen gebruiken we voor terminologie, procesuitleg en materiaalgedrag binnen FDM 3D printen.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
         </div>

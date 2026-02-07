@@ -1,7 +1,12 @@
 // next.config.ts
 import type { NextConfig } from "next"
 
+const configuredDistDir = process.env.NEXT_DIST_DIR?.trim()
+
 const nextConfig: NextConfig = {
+  // Splits dev/build caches om chunk-conflicts te vermijden tijdens lokaal werken
+  ...(configuredDistDir ? { distDir: configuredDistDir } : {}),
+
   // Pure statische export (FTP/Apache)
   output: "export",
 

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/hoe-3d-print-je-onderdelen-voor-buitengebruik/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/hoe-3d-print-je-onderdelen-voor-buitengebruik/",
     },
   },

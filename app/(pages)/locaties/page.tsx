@@ -1,21 +1,22 @@
-// app/locaties/page.tsx
+﻿// app/locaties/page.tsx
 import type { Metadata } from "next"
 import Link from "next/link"
 import GlassOrb from "@/components/GlassOrb"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { SITE, buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 import { getAllLocationSlugs, getLocationBySlug } from "@/lib/locations"
 
 export const revalidate = 21600 // 6u heropbouw
 
 export const metadata: Metadata = {
-  title: "3D printen per stad | X3DPrints",
+  title: "3D printen België per stad | X3DPrints",
   description:
-    "Overzicht van lokale landingspaginas: 3D printen per stad. Snel intern linken en meteen naar je regio navigeren.",
-  alternates: { canonical: "https://www.x3dprints.be/locaties" },
+    "Overzicht van lokale landingspaginas voor 3D printen in België, inclusief regio's zoals Gent, Aalst en Herzele. Navigeer snel naar je stad en vraag offerte.",
+  alternates: { canonical: "https://www.x3dprints.be/locaties/" },
   openGraph: {
-    title: "3D printen per stad",
+    title: "3D printen in België per stad",
     description:
-      "Overzicht van lokale landingspaginas: 3D printen per stad. Snel intern linken en meteen naar je regio navigeren.",
+      "Lokale overzichtspagina voor 3D printen in België. Vind meteen je stad en vraag een snelle offerte aan.",
     url: "https://www.x3dprints.be/locaties",
     siteName: "X3DPrints",
     type: "website",
@@ -25,6 +26,18 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
+  const tocItems = [
+    { id: "locations-pillars", label: "Start met de 3D-printen pillar" },
+    { id: "locations-overview", label: "Overzicht per stad" },
+    { id: "locations-sources", label: "Bronnen en referenties" },
+  ]
+  const references = [
+    { label: "Google docs: local SEO basics", url: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide" },
+    { label: "Schema.org ItemList", url: "https://schema.org/ItemList" },
+    { label: "Google docs: crawlable links", url: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable" },
+  ]
+  const lastUpdatedLabel = "Laatst bijgewerkt: 6 februari 2026"
+
   // Lijst bouwen en sorteren
   const slugs = getAllLocationSlugs()
   const locations = slugs
@@ -92,9 +105,10 @@ export default function Page() {
             3D printen per stad
           </h1>
           <p className="mx-auto mt-3 max-w-prose text-slate-600 sm:mx-0">
-            Vind je lokale pagina en vraag snel je offerte aan. Compact overzicht, sterke interne linking, en bots die
-            vrolijk meelezen.
+            Vind je lokale pagina voor 3D printen in België, bijvoorbeeld 3D printen Gent, en vraag snel je offerte
+            aan. Compact overzicht met sterke interne linking voor bezoekers en crawlers.
           </p>
+          <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
 
           {/* Snelle letter-index */}
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2 sm:justify-start">
@@ -108,6 +122,7 @@ export default function Page() {
               </a>
             ))}
           </div>
+          <ContentTableOfContents title="Inhoud" items={tocItems} className="mt-6 max-w-xl" />
         </div>
 
         {/* Visual: GlassOrb met lichte drift-animatie */}
@@ -129,7 +144,7 @@ export default function Page() {
       </header>
 
       {/* CTA naar pillar */}
-      <section className="mx-auto mt-8 max-w-5xl">
+      <section id="locations-pillars" className="scroll-mt-28 mx-auto mt-8 max-w-5xl">
         <div className="rounded-3xl border border-white/30 bg-white/70 px-6 py-5 text-center backdrop-blur shadow-[0_8px_28px_rgba(0,0,0,0.06)] sm:text-left sm:px-8 sm:py-6">
           <h2 className="text-xl font-semibold text-slate-900">Meer weten over 3D printen?</h2>
           <p className="mt-2 text-sm text-slate-700">
@@ -186,7 +201,9 @@ export default function Page() {
 
       {/* OVERZICHT */}
       <section
+        id="locations-overview"
         className="
+          scroll-mt-28
           mx-auto mt-10 max-w-5xl rounded-3xl border border-white/30 bg-white/60 p-6 sm:p-8
           backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.06)]
         "
@@ -244,6 +261,23 @@ export default function Page() {
         </div>
       </section>
 
+      <section id="locations-sources" className="scroll-mt-28 mx-auto mt-10 max-w-5xl">
+        <div className="rounded-3xl border border-white/30 bg-white/70 px-6 py-5 backdrop-blur shadow-[0_8px_28px_rgba(0,0,0,0.06)] sm:px-8 sm:py-6">
+          <h2 className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
+          <ul className="mt-4 space-y-2 text-sm text-slate-700">
+            {references.map((reference) => (
+              <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                <cite className="not-italic">
+                  <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                    {reference.label}
+                  </Link>
+                </cite>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       {/* JSON-LD */}
       <script
         type="application/ld+json"
@@ -280,3 +314,4 @@ export default function Page() {
     </main>
   )
 }
+

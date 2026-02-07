@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://www.x3dprints.be/en/lokaal-belgisch/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/lokaal-belgisch/",
-      en: "https://www.x3dprints.be/en/lokaal-belgisch/",
+      "en-BE": "https://www.x3dprints.be/en/lokaal-belgisch/",
       "x-default": "https://www.x3dprints.be/lokaal-belgisch/",
     },
   },

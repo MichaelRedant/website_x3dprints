@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/filament-vrijdag-petg/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/filament-vrijdag-petg/",
     },
   },
@@ -379,7 +379,7 @@ export default function FilamentFridayPetgEnPage() {
               </div>
               <div className="flex flex-col gap-3 sm:items-end">
                 <ShimmerButton href="/en/contact?material=PETG">Request PETG tuning</ShimmerButton>
-                <Link href="/en/pla-vs-petg" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
+                <Link href="/en/blog/pla-vs-petg" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
                   Compare PLA vs PETG
                 </Link>
               </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     canonical: "https://www.x3dprints.be/en/3d-modelleren/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/3d-modelleren/",
-      en: "https://www.x3dprints.be/en/3d-modelleren/",
+      "en-BE": "https://www.x3dprints.be/en/3d-modelleren/",
       "x-default": "https://www.x3dprints.be/3d-modelleren/",
     },
   },
@@ -29,6 +30,17 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
+  const tocItems = [
+    { id: "modeling-tooling", label: "Which tools do we use for 3D modeling?" },
+    { id: "modeling-workflow", label: "How does the workflow run from idea to print?" },
+    { id: "modeling-sources", label: "Sources and references" },
+  ]
+  const references = [
+    { label: "Autodesk Fusion 360 overview", url: "https://www.autodesk.com/products/fusion-360/overview" },
+    { label: "Tinkercad by Autodesk", url: "https://www.tinkercad.com/" },
+    { label: "Blender Foundation", url: "https://www.blender.org/" },
+  ]
+  const lastUpdatedLabel = "Last updated: February 6, 2026"
   const tooling = [
     {
       title: "Autodesk Fusion 360",
@@ -109,6 +121,7 @@ export default function Page() {
             <p className="mt-3 max-w-3xl text-pretty text-slate-600">
               I create 3D models that are immediately ready for FDM printing. Fusion 360 for technical accuracy, Tinkercad for quick concepts and Blender only when organic shapes are needed. Your file stays printable without surprises in the slicer.
             </p>
+            <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
               <ShimmerButton href="/en/contact">Plan a 3D model</ShimmerButton>
               <Link
@@ -124,12 +137,19 @@ export default function Page() {
                 Material Suggestion Tool
               </Link>
             </div>
+            <ContentTableOfContents title="Contents" items={tocItems} className="mt-6 max-w-2xl" />
           </Reveal>
         </div>
       </section>
 
-      <section className="px-6 pb-14 sm:px-8 lg:px-12">
+      <section id="modeling-tooling" className="scroll-mt-28 px-6 pb-14 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
+          <Reveal className="mb-6">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Tool stack for printable models</h2>
+            <p className="mt-2 max-w-3xl text-slate-600">
+              For each project we choose the fastest path to a printable result: parametric where fit matters, rapid concept tooling where iteration speed matters.
+            </p>
+          </Reveal>
           <Reveal className="grid gap-6 sm:grid-cols-3">
             {tooling.map((tool) => (
               <GlassCard
@@ -152,7 +172,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="modeling-workflow" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
             <GlassCard className="border-white/50 bg-gradient-to-br from-white/85 to-white/60 p-6 shadow-sm ring-1 ring-white/60">
@@ -195,6 +215,30 @@ export default function Page() {
                 </Link>
               </div>
             </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="modeling-sources" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="border-white/50 bg-white/85 p-6 ring-1 ring-white/60">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Sources and references</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                We use these references to keep tooling and terminology up to date.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
           </Reveal>
         </div>
       </section>

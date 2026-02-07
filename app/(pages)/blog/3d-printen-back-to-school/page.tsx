@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -7,12 +7,12 @@ import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/3d-printen-back-to-school"
+const canonical = "https://www.x3dprints.be/blog/3d-printen-back-to-school/"
 
 export const metadata: Metadata = {
   title: "Back to School: 3D printen voor school | X3DPrints Blog",
   description:
-    "Pennenhouders, naamplaatjes, bureau organizers en STEM-modellen. Educatief 3D printen in PLA/PETG met snelle levering voor augustus–september.",
+    "Pennenhouders, naamplaatjes, bureau organizers en STEM-modellen. Educatief 3D printen in PLA/PETG met snelle levering voor augustusâ€“september.",
   alternates: { canonical },
   openGraph: {
     title: "Back to School: 3D printen voor school",
@@ -36,14 +36,14 @@ const tips = [
   "Gebruik afgeronde hoeken en min. 0,6 mm tekstdiepte voor leesbaarheid.",
   "Integreer antislipvoetjes in TPU of maak pockets voor rubber pads.",
   "Layerhoogte 0,16-0,24 mm voor een nette look zonder overdreven printtijd.",
-  "Vraag klas/naam varianten in één keer; we batchen voor consistente kleur en finish.",
+  "Vraag klas/naam varianten in Ã©Ã©n keer; we batchen voor consistente kleur en finish.",
 ]
 
 const checklist = [
   "Toepassing: pennenhouder, naamplaatje, bureau organizer of STEM-model.",
   "Materiaal: PLA Matte (look), PETG (sterk), TPU (grip). Kleur? Geef HEX/RGB of schoolkleur.",
   "Afwerking: raw of licht geschuurd; primer optioneel als je wil schilderen.",
-  "Deadline: augustus–september (back-to-school) + leveroptie (EV-zone of pakketdienst).",
+  "Deadline: augustusâ€“september (back-to-school) + leveroptie (EV-zone of pakketdienst).",
   "Bestand: STL/STEP. Ontwerp nodig? Ontwerpservice EUR 45/uur.",
 ]
 
@@ -53,11 +53,11 @@ const faqItems = [
     a: "PLA Matte voor cleane tekst en zachte feel, PETG voor sterkere organizers. TPU voor antislip pads of clips. Alles zonder scherpe hoeken.",
   },
   {
-    q: "Kunnen we meerdere namen in één batch laten maken?",
+    q: "Kunnen we meerdere namen in Ã©Ã©n batch laten maken?",
     a: "Ja. Lever een lijst of pas STL/STEP per naam aan; wij batchen de prints zodat kleur en finish consistent zijn.",
   },
   {
-    q: "Hoe snel kunnen we leveren rond augustus–september?",
+    q: "Hoe snel kunnen we leveren rond augustusâ€“september?",
     a: "Meestal binnen enkele werkdagen. Meld je deadline; we plannen realistisch zonder vaste beloftes.",
   },
   {
@@ -89,7 +89,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   headline: "Back to School: 3D printen voor school",
   description: metadata.description,
   author: { "@type": "Organization", name: "X3DPrints" },
@@ -126,7 +126,7 @@ export default function BlogBackToSchool() {
               Back to School 3D printen
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Pennenhouders, naamplaatjes, bureau organizers en educatieve STEM-modellen. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice (EUR 45/uur). Snelle planning voor augustus–september.
+              Pennenhouders, naamplaatjes, bureau organizers en educatieve STEM-modellen. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice (EUR 45/uur). Snelle planning voor augustusâ€“september.
             </p>
             <p className="mt-3 max-w-3xl text-pretty text-base text-slate-700">
               Koppel je briefing aan interne resources: bekijk{" "}
@@ -179,7 +179,7 @@ export default function BlogBackToSchool() {
                 PLA Matte is ideaal voor leesbare tekst en veilige randen. Voor robuustere organizers gebruik je PETG. TPU pads zorgen voor grip op bureaus.
               </p>
               <p className="mt-3 text-sm text-slate-700">
-                Levering: EV-zones of pakketdienst. Breekbare delen verpakken we gescheiden; geef aantallen en klasgroepen door zodat we efficiënt kunnen batchen.
+                Levering: EV-zones of pakketdienst. Breekbare delen verpakken we gescheiden; geef aantallen en klasgroepen door zodat we efficiÃ«nt kunnen batchen.
               </p>
             </GlassCard>
           </Reveal>
@@ -310,6 +310,7 @@ export default function BlogBackToSchool() {
     </main>
   )
 }
+
 
 
 

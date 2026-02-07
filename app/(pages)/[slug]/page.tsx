@@ -1,4 +1,4 @@
-// /app/(pages)/[slug]/page.tsx
+﻿// /app/(pages)/[slug]/page.tsx
 import type { Metadata } from "next"
 import Image from "next/image"
 import { notFound } from "next/navigation"
@@ -28,13 +28,7 @@ import {
   EN_LOCATION_SLUGS,
 } from "@/lib/locations"
 import { keywordSvgDataUri } from "@/lib/svg"
-import {
-  buildBreadcrumbSchema,
-  buildCityMetaDescription,
-  clampToWords,
-  makeDescriptionFromMarkdown,
-  SITE,
-} from "@/lib/seo"
+import { buildLocationMetaDescription, buildLocationMetaTitle, buildBreadcrumbSchema, buildCityMetaDescription, clampToWords, makeDescriptionFromMarkdown, normalizeMetaDescription, SITE, buildFaqPageSchema } from "@/lib/seo"
 
 export const revalidate = 86_400 // 24h
 
@@ -129,12 +123,16 @@ function parseLocalPoints(sectionBody: string) {
 }
 
 function buildSeoDescription(markdown: string, city: string, metaDescription?: string) {
-  if (metaDescription && metaDescription.trim()) return metaDescription.trim()
+  const fallback = buildLocationMetaDescription(city, "nl")
+  if (metaDescription && metaDescription.trim()) {
+    return normalizeMetaDescription(metaDescription.trim(), fallback)
+  }
   const focusSection = extractSection(markdown, "Lokale focus")
   const focusPara = focusSection ? firstParagraph(focusSection.body) : ""
-  if (focusPara) return clampToWords(focusPara, 158)
+  if (focusPara) return normalizeMetaDescription(clampToWords(focusPara, 158), fallback)
   const normalized = stripLeadingH1(markdown)
-  return normalized ? makeDescriptionFromMarkdown(normalized, city) : buildCityMetaDescription(city)
+  const candidate = normalized ? makeDescriptionFromMarkdown(normalized, city) : buildCityMetaDescription(city)
+  return normalizeMetaDescription(candidate, fallback)
 }
 
 export function generateStaticParams(): Array<{ slug: string }> {
@@ -166,9 +164,10 @@ export async function generateMetadata(
   } catch {}
 
   const description = buildSeoDescription(contentMd, loc.city, loc.metaDescription)
+  const seoTitle = buildLocationMetaTitle(loc.city, "nl")
 
   return {
-    title: { default: `${keyphrase} | X3DPrints`, template: `%s | X3DPrints` },
+    title: seoTitle,
     description,
     keywords: [keyphrase, ...(phrases || [])].join(", "),
     alternates: {
@@ -177,7 +176,7 @@ export async function generateMetadata(
         ? {
             languages: {
               "nl-BE": url,
-              en: enUrl,
+              "en-BE": enUrl,
               "x-default": url,
             },
           }
@@ -185,7 +184,7 @@ export async function generateMetadata(
     },
     robots: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large" },
     openGraph: {
-      title: keyphrase,
+      title: seoTitle,
       description,
       url,
       siteName: "X3DPrints",
@@ -193,7 +192,7 @@ export async function generateMetadata(
       locale: "nl_BE",
       images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: keyphrase }],
     },
-    twitter: { card: "summary_large_image", title: keyphrase, description, images: ["/images/og-home.jpg"] },
+    twitter: { card: "summary_large_image", title: seoTitle, description, images: ["/images/og-home.jpg"] },
   }
 }
 
@@ -349,12 +348,10 @@ export default async function Page(
       )
     : fallbackFaqItems
 
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
+  const faqJsonLd = buildFaqPageSchema({
     inLanguage: "nl-BE",
-    mainEntity: faqItems.map((i) => ({ "@type": "Question", name: i.q, acceptedAnswer: { "@type": "Answer", text: i.aText } })),
-  }
+    items: faqItems.map((item) => ({ q: item.q, a: item.aText })),
+  })
 
   const breadcrumbJsonLd = buildBreadcrumbSchema({
     id: `https://www.x3dprints.be/${loc.slug}#breadcrumb`,
@@ -630,3 +627,4 @@ export default async function Page(
     </main>
   )
 }
+

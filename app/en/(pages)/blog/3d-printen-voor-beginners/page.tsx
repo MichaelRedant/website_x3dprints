@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/3d-printen-voor-beginners/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/3d-printen-voor-beginners/",
     },
   },

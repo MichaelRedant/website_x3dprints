@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -7,7 +7,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/relatiegeschenken-3d-printen"
+const canonical = "https://www.x3dprints.be/blog/relatiegeschenken-3d-printen/"
 const enCanonical = "https://www.x3dprints.be/en/blog/relatiegeschenken-3d-printen/"
 const publishedDate = "2025-08-20T08:00:00+01:00"
 const dateModified = "2026-02-06T08:00:00+01:00"
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": canonical,
-      en: enCanonical,
+      "en-BE": enCanonical,
       "x-default": canonical,
     },
   },
@@ -128,7 +128,7 @@ export default function BlogRelatiegeschenken() {
       <section className="px-6 pb-12 pt-14 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-700">Use case · B2B</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-700">Use case Â· B2B</p>
             <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
               Relatiegeschenken 3D printen voor B2B teams
             </h1>
@@ -137,7 +137,7 @@ export default function BlogRelatiegeschenken() {
               afgeronde randen en duidelijke tekst. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice (EUR 45/uur).
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact?material=pla-silk-plus">Plan relatiegeschenken</ShimmerButton>
+              <ShimmerButton href="/contact?material=pla-silk">Plan relatiegeschenken</ShimmerButton>
               <Link
                 href="/segments/3d-printing-marketing"
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -306,6 +306,8 @@ export default function BlogRelatiegeschenken() {
     </main>
   )
 }
+
+
 
 
 

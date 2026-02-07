@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
@@ -8,6 +8,7 @@ import Counter from "@/components/Counter"
 import GlassOrb from "@/components/GlassOrb"
 import GlassCard from "@/components/GlassCard"
 import FaqPromo from "@/components/FaqPromo"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 
@@ -19,7 +20,7 @@ const NL_METADATA: Metadata = {
     canonical: "https://www.x3dprints.be/about/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/about/",
-      en: "https://www.x3dprints.be/en/about/",
+      "en-BE": "https://www.x3dprints.be/en/about/",
       "x-default": "https://www.x3dprints.be/about/",
     },
   },
@@ -40,10 +41,10 @@ export const EN_METADATA: Metadata = {
   description:
     "Meet X3DPrints: a compact 3D printing studio in Herzele for prototypes and small batches. Direct contact, honest material advice and clean finishing.",
   alternates: {
-    canonical: "https://www.x3dprints.be/en/about",
+    canonical: "https://www.x3dprints.be/en/about/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/about",
-      en: "https://www.x3dprints.be/en/about",
+      "en-BE": "https://www.x3dprints.be/en/about",
       "x-default": "https://www.x3dprints.be/about",
     },
   },
@@ -240,6 +241,33 @@ export default function Page({ locale }: PageProps) {
   const localize = (href: string) => localizeHref(href, normalizedLocale)
   const pageUrl = isEn ? "https://www.x3dprints.be/en/about" : "https://www.x3dprints.be/about"
   const numberLocale = isEn ? "en-GB" : "nl-BE"
+  const tocItems = isEn
+    ? [
+        { id: "about-usp", label: "Why work with X3DPrints?" },
+        { id: "about-work", label: "What do we do and how do we work?" },
+        { id: "about-materials", label: "Which materials and specs do we support?" },
+        { id: "about-faq", label: "FAQ and support" },
+        { id: "about-sources", label: "Sources and references" },
+      ]
+    : [
+        { id: "about-usp", label: "Waarom kiezen klanten voor X3DPrints?" },
+        { id: "about-work", label: "Wat doen we en hoe werken we?" },
+        { id: "about-materials", label: "Welke materialen en specs ondersteunen we?" },
+        { id: "about-faq", label: "FAQ en ondersteuning" },
+        { id: "about-sources", label: "Bronnen en referenties" },
+      ]
+  const references = isEn
+    ? [
+        { label: "ISO/ASTM terminology for additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
+        { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "All3DP FDM process explainer", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
+      ]
+    : [
+        { label: "ISO/ASTM terminologie voor additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
+        { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "All3DP uitleg over het FDM-proces", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
+      ]
+  const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -260,7 +288,7 @@ export default function Page({ locale }: PageProps) {
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.06]" />
 
       {/* HERO / INTRO */}
-      <section className="relative px-6 pt-14 pb-10 sm:px-8 lg:px-12">
+      <section id="author" className="relative px-6 pt-14 pb-10 sm:px-8 lg:px-12">
         <div className="absolute right-0 top-0 -z-10 hidden sm:block">
           <GlassOrb className="h-64 w-64 opacity-40" />
         </div>
@@ -270,6 +298,7 @@ export default function Page({ locale }: PageProps) {
               <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">{copy.hero.title}</h1>
               <p className="mt-3 text-slate-600">{copy.hero.introOne}</p>
               <p className="mt-3 text-slate-600">{copy.hero.introTwo}</p>
+              <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link
@@ -291,6 +320,11 @@ export default function Page({ locale }: PageProps) {
                   {copy.hero.ctas.contact}
                 </Link>
               </div>
+              <ContentTableOfContents
+                title={isEn ? "Contents" : "Inhoud"}
+                items={tocItems}
+                className="mt-6 max-w-2xl"
+              />
             </div>
 
             {/* Parallax hero visual */}
@@ -345,8 +379,18 @@ export default function Page({ locale }: PageProps) {
 
 
       {/* USP CARDS met 3D tilt */}
-      <section className="px-6 pb-10 sm:px-8 lg:px-12">
+      <section id="about-usp" className="scroll-mt-28 px-6 pb-10 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
+          <Reveal className="mb-6 max-w-3xl">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              {isEn ? "Why teams choose X3DPrints" : "Waarom teams kiezen voor X3DPrints"}
+            </h2>
+            <p className="mt-2 text-slate-600">
+              {isEn
+                ? "Short communication lines, predictable quality and clear finishing options."
+                : "Korte communicatielijnen, voorspelbare kwaliteit en duidelijke afwerkingsopties."}
+            </p>
+          </Reveal>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {copy.usp.map((u, i) => (
               <Reveal key={u.title} delay={0.05 * (i + 1)}>
@@ -363,7 +407,7 @@ export default function Page({ locale }: PageProps) {
       </section>
 
       {/* WAT EN HOE (tilt + reveal) */}
-      <section className="px-6 pb-10 sm:px-8 lg:px-12">
+      <section id="about-work" className="scroll-mt-28 px-6 pb-10 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="grid gap-8 sm:grid-cols-2">
             <TiltCard>
@@ -393,7 +437,7 @@ export default function Page({ locale }: PageProps) {
       </section>
 
       {/* MATERIALEN & SPECIFICS */}
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="about-materials" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -436,7 +480,7 @@ export default function Page({ locale }: PageProps) {
       </section>
 
       {/* CTA */}
-      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+      <section id="about-faq" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="overflow-hidden p-8 sm:p-10">
@@ -488,8 +532,37 @@ export default function Page({ locale }: PageProps) {
         </div>
       </section>
 
+      <section id="about-sources" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                {isEn ? "Sources and references" : "Bronnen en referenties"}
+              </h2>
+              <p className="mt-2 text-sm text-slate-600">
+                {isEn
+                  ? "Reference links used for terminology and baseline FDM material behavior."
+                  : "Referentielinks die we gebruiken voor terminologie en basisgedrag van FDM-materialen."}
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       {/* JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     </main>
   )
 }
+

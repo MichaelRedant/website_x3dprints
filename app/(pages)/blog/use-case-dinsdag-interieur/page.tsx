@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-interieur"
+const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-interieur/"
 const publishedDate = "2026-01-06T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -242,7 +242,7 @@ export default function UseCaseDinsdagInterieurPage() {
               die toolbox in kleine oplage, met steenlook, houttextuur of matte luxe zonder traditionele productiekost.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contactetopic=use-case-interieur">Vraag interieur-advies</ShimmerButton>
+              <ShimmerButton href="/contact?topic=use-case-interieur">Vraag interieur-advies</ShimmerButton>
               <Link
                 href="/segments/3d-printing-marketing"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
@@ -489,6 +489,8 @@ export default function UseCaseDinsdagInterieurPage() {
     </main>
   )
 }
+
+
 
 
 

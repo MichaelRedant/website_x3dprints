@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import { buildArticleJsonLd } from "@/lib/seo"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-zomer/"
 const datePublished = "2024-07-15"
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/3d-printen-zomer/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/3d-printen-zomer/",
     },
   },
@@ -43,7 +43,7 @@ const tips = [
   "Use PETG for outdoor decor: better against sun and moisture. PLA Silk/Marble for luxe table decor indoors.",
   "Layer height 0.2 mm for larger pieces; 0.16 mm for fine details. Wall thickness >1.6 mm for items in the sun.",
   "TPU for anti-slip feet under trays or beach gear. Combine PLA or PETG on top for stiffness.",
-  "Design/model not included: provide STL/STEP or choose design service at €45/hour.",
+  "Design/model not included: provide STL/STEP or choose design service at â‚¬45/hour.",
   "For drinkware holders: add drainage holes and round edges for comfort.",
 ]
 
@@ -61,15 +61,15 @@ const faqItems = [
   },
   {
     q: "Can you make beach or nautical props?",
-    a: "Yes. Anchors, lighthouses, shells or custom holders for drinkware and gadgets. Provide STL/STEP or use design service (€45/hour).",
+    a: "Yes. Anchors, lighthouses, shells or custom holders for drinkware and gadgets. Provide STL/STEP or use design service (â‚¬45/hour).",
   },
   {
     q: "How do you ship fragile pieces safely?",
-    a: "We pack separately with foam and deliver via EV zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) or parcel service. Pickup in Herzele is free.",
+    a: "We pack separately with foam and deliver via EV zones (Zone 1 â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45) or parcel service. Pickup in Herzele is free.",
   },
   {
     q: "Is the 3D model included?",
-    a: "No. Design file is not included; you provide STL/STEP or choose design service at €45/hour. We optimise wall thickness and supports.",
+    a: "No. Design file is not included; you provide STL/STEP or choose design service at â‚¬45/hour. We optimise wall thickness and supports.",
   },
   {
     q: "How do you prevent warping in the sun?",
@@ -88,19 +88,13 @@ const articleJsonLd = buildArticleJsonLd({
   inLanguage: "en-BE",
 })
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-
-    mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  items: faqItems,
+})
 
 const inspirationImages = [
-  { src: "/images/portfolio/Summer1.webp", alt: "3D printed summer decor 1" },
+  { src: "/images/portfolio/summer1.webp", alt: "3D printed summer decor 1" },
   { src: "/images/portfolio/Summer2.webp", alt: "3D printed summer decor 2" },
   { src: "/images/portfolio/Summer3.webp", alt: "3D printed summer decor 3" },
   { src: "/images/portfolio/Summer4.webp", alt: "3D printed summer decor 4" },
@@ -125,7 +119,7 @@ export default function BlogSummerEn() {
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Terrace decor, nautical themes and custom holders for festivals or beach trips. Design file not included; provide STL/STEP or choose design
-              service (€45/hour). EV delivery for fragile pieces or parcel service further away.
+              service (â‚¬45/hour). EV delivery for fragile pieces or parcel service further away.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact">Plan your summer prints</ShimmerButton>
@@ -134,6 +128,12 @@ export default function BlogSummerEn() {
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
                 Go to seasonal segment
+              </Link>
+              <Link
+                href="/en/materials#material-suggestion-tool"
+                className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+              >
+                Material Suggestion Tool
               </Link>
             </div>
           </Reveal>
@@ -230,4 +230,6 @@ export default function BlogSummerEn() {
     </main>
   )
 }
+
+
 

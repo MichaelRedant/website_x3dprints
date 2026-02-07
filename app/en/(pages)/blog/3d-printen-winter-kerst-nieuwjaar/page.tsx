@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import { buildArticleJsonLd } from "@/lib/seo"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-winter-kerst-nieuwjaar/"
 const datePublished = "2024-11-15"
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/3d-printen-winter-kerst-nieuwjaar/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/3d-printen-winter-kerst-nieuwjaar/",
     },
   },
@@ -43,7 +43,7 @@ const tips = [
   "Silk or Marble PLA for shiny ornaments and table pieces; multicolour PLA for playful baubles.",
   "Translucent PLA for light objects; wall thickness 1.6-2 mm for a soft glow.",
   "Layer height 0.16-0.2 mm; ensure sturdy hang loops on ornaments.",
-  "Design/model not included: provide STL/STEP or choose design service at €45/hour.",
+  "Design/model not included: provide STL/STEP or choose design service at â‚¬45/hour.",
 ]
 
 const checklist = [
@@ -56,7 +56,7 @@ const checklist = [
 const faqItems = [
   {
     q: "Can you also design the ornament?",
-    a: "Yes, optionally. Design is not included. Provide STL/STEP or choose design service (€45/hour). We tune wall thickness, loops and text for printability.",
+    a: "Yes, optionally. Design is not included. Provide STL/STEP or choose design service (â‚¬45/hour). We tune wall thickness, loops and text for printability.",
   },
   {
     q: "What materials are best for light objects?",
@@ -64,7 +64,7 @@ const faqItems = [
   },
   {
     q: "How do you pack fragile items?",
-    a: "We pack separately with foam and deliver via EV zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) or parcel service. Pickup in Herzele is free.",
+    a: "We pack separately with foam and deliver via EV zones (Zone 1 â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45) or parcel service. Pickup in Herzele is free.",
   },
   {
     q: "Can you rush before the holidays?",
@@ -73,12 +73,12 @@ const faqItems = [
 ]
 
 const inspirationImages = [
-  { src: "/images/portfolio/winter1.webp", alt: "3D printed winter decor 1" },
-  { src: "/images/portfolio/winter2.webp", alt: "3D printed winter decor 2" },
-  { src: "/images/portfolio/winter3.webp", alt: "3D printed winter decor 3" },
-  { src: "/images/portfolio/winter4.webp", alt: "3D printed winter decor 4" },
-  { src: "/images/portfolio/winter5.webp", alt: "3D printed winter decor 5" },
-  { src: "/images/portfolio/winter6.webp", alt: "3D printed winter decor 6" },
+  { src: "/images/portfolio/XmasBalls.webp", alt: "3D printed winter decor 1" },
+  { src: "/images/portfolio/XmasBalls2.webp", alt: "3D printed winter decor 2" },
+  { src: "/images/portfolio/XmasDoorTrim.webp", alt: "3D printed winter decor 3" },
+  { src: "/images/portfolio/XmasScene.webp", alt: "3D printed winter decor 4" },
+  { src: "/images/portfolio/xmasTree.jpg", alt: "3D printed winter decor 5" },
+  { src: "/images/portfolio/IMG-20241106-WA0000.jpg", alt: "3D printed winter decor 6" },
 ]
 
 const articleJsonLd = buildArticleJsonLd({
@@ -91,16 +91,10 @@ const articleJsonLd = buildArticleJsonLd({
   inLanguage: "en-BE",
 })
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-
-    mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  items: faqItems,
+})
 
 export default function WinterHolidaysBlogEn() {
   return (
@@ -118,7 +112,7 @@ export default function WinterHolidaysBlogEn() {
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Snowflakes, ornaments, place cards and party props with gloss or glow. Design file not included; provide STL/STEP or choose design service
-              (€45/hour). EV delivery in Belgium, parcel elsewhere; Bpost export for EU/UK gifting on request.
+              (â‚¬45/hour). EV delivery in Belgium, parcel elsewhere; Bpost export for EU/UK gifting on request.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact?material=PLA">Plan holiday prints</ShimmerButton>
@@ -242,4 +236,7 @@ export default function WinterHolidaysBlogEn() {
     </main>
   )
 }
+
+
+
 

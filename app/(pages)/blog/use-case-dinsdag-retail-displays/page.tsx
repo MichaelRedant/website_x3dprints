@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-retail-displays"
+const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-retail-displays/"
 const publishedDate = "2025-12-02T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -274,7 +274,7 @@ export default function UseCaseDinsdagRetailDisplaysPage() {
                   voor steenachtige look in juweliers of interior corners.
                 </li>
                 <li>
-                  <Link href="/blog/filament-vrijdag-pla-wood-specials" className="font-semibold text-indigo-600 transition hover:text-indigo-500">
+                  <Link href="/blog/filament-vrijdag-pla-wood" className="font-semibold text-indigo-600 transition hover:text-indigo-500">
                     PLA Wood
                   </Link>{" "}
                   voor warme, natuurlijke merchandising.
@@ -444,6 +444,8 @@ export default function UseCaseDinsdagRetailDisplaysPage() {
     </main>
   )
 }
+
+
 
 
 

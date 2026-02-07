@@ -14,8 +14,18 @@ export default function robots(): MetadataRoute.Robots {
         allow: ["/", "/en/"],
         disallow: ["/api"],
       },
+      {
+        userAgent: "GPTBot",
+        allow: ["/", "/en/"],
+        disallow: ["/api"],
+      },
+      {
+        userAgent: "Google-Extended",
+        allow: ["/", "/en/"],
+        disallow: ["/api"],
+      },
     ],
-    sitemap: [`${BASE_URL}/sitemap.xml`, `${BASE_URL}/llms.txt`],
+    sitemap: [`${BASE_URL}/sitemap.xml`],
     host: BASE_URL,
   }
 }

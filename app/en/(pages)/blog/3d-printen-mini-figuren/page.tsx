@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/3d-printen-mini-figuren/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/3d-printen-mini-figuren/",
     },
   },
@@ -74,10 +74,10 @@ const faqItems = [
 ]
 
 const inspirationImages = [
-  { src: "/images/portfolio/minifiguren1.webp", alt: "3D printed tabletop miniatures set 1" },
-  { src: "/images/portfolio/minifiguren2.webp", alt: "3D printed tabletop miniatures set 2" },
-  { src: "/images/portfolio/dice-tower.webp", alt: "3D printed dice tower" },
-  { src: "/images/portfolio/Ceramics1.webp", alt: "Terrain-inspired print" },
+  { src: "/images/portfolio/dndMini.webp", alt: "3D printed tabletop miniatures set 1" },
+  { src: "/images/portfolio/funko_image.webp", alt: "3D printed tabletop miniatures set 2" },
+  { src: "/images/portfolio/diceTower.webp", alt: "3D printed dice tower" },
+  { src: "/images/portfolio/TweeDee-1.webp", alt: "Terrain-inspired print" },
 ]
 
 const articleJsonLd = {
@@ -128,6 +128,12 @@ export default function MiniFiguresBlogEn() {
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
               >
                 View pricing
+              </Link>
+              <Link
+                href="/en/materials#material-suggestion-tool"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
+              >
+                Material Suggestion Tool
               </Link>
             </div>
           </Reveal>
@@ -216,5 +222,6 @@ export default function MiniFiguresBlogEn() {
     </main>
   )
 }
+
 
 

@@ -1,9 +1,17 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import { buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
+import {
+  buildFaqPageSchema,
+  buildHowToSchema,
+  buildLocalBusinessSchema,
+  buildOfferCatalog,
+  buildServiceSchema,
+  SchemaOfferInput,
+} from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "3D printing in Belgium | Local 3D print service from Herzele",
@@ -13,7 +21,7 @@ export const metadata: Metadata = {
     canonical: "https://www.x3dprints.be/en/3d-printen/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/3d-printen/",
-      en: "https://www.x3dprints.be/en/3d-printen/",
+      "en-BE": "https://www.x3dprints.be/en/3d-printen/",
       "x-default": "https://www.x3dprints.be/3d-printen/",
     },
   },
@@ -233,42 +241,57 @@ const faq = [
     a:
       "X3DPrints prints from Herzele, between Ghent and Aalst. We ship across Flanders via parcel services or personal delivery, and pickup is possible by appointment.",
   },
+  {
+    q: "How fast do I get a quote after sending a request?",
+    a:
+      "Usually within 24 hours on business days. Share STL/STEP, preferred material and deadline so we can return a clear quote and planning faster.",
+  },
 ]
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
+const tocItems = [
+  { id: "print-definition", label: "Where can you learn and prepare files?" },
+  { id: "print-use-cases", label: "Which use cases are most common?" },
+  { id: "print-segments", label: "Who do we print for most?" },
+  { id: "print-materials", label: "Which materials and price ranges are available?" },
+  { id: "print-differentiators", label: "Why do teams work with X3DPrints?" },
+  { id: "print-workflow", label: "How does the workflow run end-to-end?" },
+  { id: "print-faq", label: "FAQ on 3D printing" },
+  { id: "print-sources", label: "Sources and references" },
+]
 
+const references = [
+  { label: "ISO/ASTM terminology for additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
+  { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+  { label: "All3DP FDM process explainer", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
+]
+
+const lastUpdatedLabel = "Last updated: February 6, 2026"
+
+const pageUrl = "https://www.x3dprints.be/en/3d-printen/"
+
+const faqJsonLd = buildFaqPageSchema({
   inLanguage: "en-BE",
-  mainEntity: faq.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+  mainEntityOfPage: pageUrl,
+  items: faq.map((item) => ({ q: item.q, a: item.a })),
+})
 
-const howToJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-
+const howToJsonLd = buildHowToSchema({
   inLanguage: "en-BE",
+  mainEntityOfPage: pageUrl,
   name: "Request 3D printing from X3DPrints",
   description: "Upload STL/STEP, choose material and receive a clear quote with planning.",
-  supply: [
-    { "@type": "HowToSupply", name: "STL or STEP file" },
-    { "@type": "HowToSupply", name: "Use case, critical dimensions, preferred finish" },
+  steps: [
+    { name: "Share your 3D file", text: "Send STL/STEP with context and critical dimensions." },
+    { name: "Get material advice", text: "We propose PLA, PETG or TPU with price impact." },
+    { name: "Approve and plan", text: "We align timing, batch size and delivery method." },
+    { name: "Production & delivery", text: "We print, check and ship or schedule pickup." },
   ],
-  step: [
-    { "@type": "HowToStep", name: "Share your 3D file", text: "Send STL/STEP with context and critical dimensions." },
-    { "@type": "HowToStep", name: "Get material advice", text: "We propose PLA, PETG or TPU with price impact." },
-    { "@type": "HowToStep", name: "Approve and plan", text: "We align timing, batch size and delivery method." },
-    { "@type": "HowToStep", name: "Production & delivery", text: "We print, check and ship or schedule pickup." },
-  ],
-}
+  supplyNames: ["STL or STEP file", "Use case, critical dimensions, preferred finish"],
+})
 
 const catalogJsonLd = buildOfferCatalog("3D printing packages", consultationOffers)
 const localBusinessJsonLd = buildLocalBusinessSchema({
-  pageUrl: "https://www.x3dprints.be/en/3d-printen/",
+  pageUrl,
   description: metadata.description ?? "",
   areaServed: "BE",
 })
@@ -276,7 +299,12 @@ const localBusinessJsonLd = buildLocalBusinessSchema({
 const serviceJsonLd = buildServiceSchema(
   "3D printing services",
   consultationOffers,
-  "https://www.x3dprints.be/en/3d-printen/",
+  pageUrl,
+  {
+    description: metadata.description ?? "",
+    inLanguage: "en-BE",
+    mainEntityOfPage: pageUrl,
+  },
 )
 
 export default function ThreeDPrintingPage() {
@@ -296,8 +324,14 @@ export default function ThreeDPrintingPage() {
             <p className="mt-4 max-w-3xl text-lg text-slate-700">
               FDM 3D printing with direct communication. We check your STL/STEP, suggest PLA/PETG/TPU, give realistic timelines and deliver small batches without fuss. Based in Herzele near Ghent/Aalst.
             </p>
+            <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/en/contact">Request a quote</ShimmerButton>
+              <ShimmerButton
+                href="/en/contact?material=pla-matte"
+                event={{ action: "cta_click", category: "3d-printing_hero", label: "quote" }}
+              >
+                Request a quote
+              </ShimmerButton>
               <Link
                 href="/en/materials#material-suggestion-tool"
                 className="rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
@@ -311,6 +345,7 @@ export default function ThreeDPrintingPage() {
                 View portfolio
               </Link>
             </div>
+            <ContentTableOfContents title="Contents" items={tocItems} className="mt-6 max-w-2xl" />
           </Reveal>
         </div>
       </section>
@@ -319,7 +354,7 @@ export default function ThreeDPrintingPage() {
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6 max-w-3xl">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">What we 3D print most</h2>
+            <h2 id="print-use-cases" className="scroll-mt-28 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">What we 3D print most</h2>
             <p className="mt-2 text-slate-600">
               From prototypes to showpieces. Each case gets the right material mix and a realistic turnaround.
             </p>
@@ -347,7 +382,7 @@ export default function ThreeDPrintingPage() {
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6 max-w-3xl">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Who we print for</h2>
+            <h2 id="print-segments" className="scroll-mt-28 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Who we print for</h2>
             <p className="mt-2 text-slate-600">
               Different needs, different materials. We keep batches small, feedback loops short and planning realistic.
             </p>
@@ -385,7 +420,7 @@ export default function ThreeDPrintingPage() {
           <div className="grid gap-4 lg:grid-cols-2">
             <Reveal>
               <GlassCard className="h-full p-5">
-                <div className="text-sm font-semibold text-slate-900">Materials on hand</div>
+                <h2 id="print-materials" className="scroll-mt-28 text-sm font-semibold text-slate-900">Materials on hand</h2>
                 <p className="mt-2 text-sm text-slate-600">
                   We keep core filaments stocked and order specials per project.
                 </p>
@@ -435,7 +470,7 @@ export default function ThreeDPrintingPage() {
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6 max-w-3xl">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Why teams work with us</h2>
+            <h2 id="print-differentiators" className="scroll-mt-28 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Why teams work with us</h2>
             <p className="mt-2 text-slate-600">
               Direct maker contact, honest planning and support that matches the project instead of a script.
             </p>
@@ -457,7 +492,7 @@ export default function ThreeDPrintingPage() {
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6 max-w-3xl">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">How 3D printing works here</h2>
+            <h2 id="print-workflow" className="scroll-mt-28 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">How 3D printing works here</h2>
             <p className="mt-2 text-slate-600">Clear steps and communication. You always know where your prints are in the process.</p>
           </Reveal>
           <div className="grid gap-4 md:grid-cols-2">
@@ -479,7 +514,7 @@ export default function ThreeDPrintingPage() {
           <div className="grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
             <Reveal>
               <GlassCard className="h-full p-6">
-                <h2 className="text-xl font-semibold text-slate-900">Knowledge base & inspiration</h2>
+                <h2 id="print-definition" className="scroll-mt-28 text-xl font-semibold text-slate-900">Knowledge base & inspiration</h2>
                 <p className="mt-2 text-sm text-slate-600">Articles that help you prep models, budgets and materials.</p>
                 <div className="mt-4 grid gap-3">
                   {knowledgeLinks.map((link) => (
@@ -530,7 +565,12 @@ export default function ThreeDPrintingPage() {
                   Share your STL/STEP, preferred material and timing. You&apos;ll receive a proposal with planning, pricing and any optimisations for your prints.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <ShimmerButton href="/en/contact">Book a call</ShimmerButton>
+                  <ShimmerButton
+                    href="/en/contact?material=pla-matte"
+                    event={{ action: "cta_click", category: "3d-printing_cta", label: "call" }}
+                  >
+                    Book a call
+                  </ShimmerButton>
                   <Link
                     href="/en/viewer"
                     className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:-translate-y-0.5 hover:bg-white"
@@ -545,7 +585,7 @@ export default function ThreeDPrintingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+      <section id="print-faq" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6 sm:p-8">
@@ -558,6 +598,30 @@ export default function ThreeDPrintingPage() {
                   </div>
                 ))}
               </div>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="print-sources" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Sources and references</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                We use these sources for baseline terminology, FDM process context and material behavior guidance.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
         </div>

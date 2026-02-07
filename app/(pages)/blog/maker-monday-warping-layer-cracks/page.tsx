@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/maker-monday-warping-layer-cracks"
+const canonical = "https://www.x3dprints.be/blog/maker-monday-warping-layer-cracks/"
 const publishedDate = "2025-11-10T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
 }
 
 const heroStats = [
-  { label: "Chamfer hoeken", value: "1–3 mm", detail: "Minder warping hefboom" },
-  { label: "Bridge limiet", value: "≤ 25 mm", detail: "Daarboven segmenteren" },
-  { label: "Perimeter advies", value: "≥ 4", detail: "Beter shell-effect" },
+  { label: "Chamfer hoeken", value: "1â€“3 mm", detail: "Minder warping hefboom" },
+  { label: "Bridge limiet", value: "â‰¤ 25 mm", detail: "Daarboven segmenteren" },
+  { label: "Perimeter advies", value: "â‰¥ 4", detail: "Beter shell-effect" },
 ]
 
 const warpingDesignTips = [
@@ -61,11 +61,11 @@ const warpingDesignTips = [
   },
   {
     title: "Chamfer of rond hoeken",
-    detail: "1–3 mm chamfer of afgeronde hoek neemt de hefboom weg die hoeken omhoog trekt.",
+    detail: "1â€“3 mm chamfer of afgeronde hoek neemt de hefboom weg die hoeken omhoog trekt.",
   },
   {
     title: "Splits grote onderdelen",
-    detail: "Modules van <150 mm warpen minder dan één blok van 250 mm. Voeg slimme verbindingen toe.",
+    detail: "Modules van <150 mm warpen minder dan Ã©Ã©n blok van 250 mm. Voeg slimme verbindingen toe.",
   },
   {
     title: "Gebruik logische wanddiktes",
@@ -74,9 +74,9 @@ const warpingDesignTips = [
 ]
 
 const layerCrackTips = [
-  "Oriënteer de part zodat layers parallel lopen aan de hoofdbelasting.",
-  "Gebruik ribs (1–1.2 mm dik, 3–10 mm hoog) en fillets om spanning te spreiden.",
-  "Verhoog perimeters tot 4+ om een sterk shell-effect te creëren.",
+  "OriÃ«nteer de part zodat layers parallel lopen aan de hoofdbelasting.",
+  "Gebruik ribs (1â€“1.2 mm dik, 3â€“10 mm hoog) en fillets om spanning te spreiden.",
+  "Verhoog perimeters tot 4+ om een sterk shell-effect te creÃ«ren.",
   "Vermijd lange, dunne wanden zonder ondersteuning of breek ze op in segmenten.",
   "Kies PETG voor kritieke onderdelen; PLA is bros en TPU is voor flexibele zones.",
 ]
@@ -107,7 +107,7 @@ const checklistItems = [
   {
     title: "Layer adhesion",
     points: [
-      "Oriëntatie afgestemd op belasting?",
+      "OriÃ«ntatie afgestemd op belasting?",
       "Voldoende wanddikte + ribs aanwezig?",
       "Perimeter count verhoogd waar nodig?",
     ],
@@ -212,7 +212,7 @@ export default function MakerMondayWarpingLayerCracksPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-slate-500">
-              Gepubliceerd op 10 november 2025 • Deel van de Maker Monday knowledge hub.
+              Gepubliceerd op 10 november 2025 â€¢ Deel van de Maker Monday knowledge hub.
             </p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
@@ -330,11 +330,11 @@ export default function MakerMondayWarpingLayerCracksPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h3 className="text-xl font-semibold text-slate-900">Oriëntatievoorbeeld</h3>
+              <h3 className="text-xl font-semibold text-slate-900">OriÃ«ntatievoorbeeld</h3>
               <p className="mt-2 text-sm text-slate-600">
                 Een wandbeugel die neerwaartse last draagt, print je zo dat de layers parallel lopen aan de neerwaartse trekkracht.
                 Moet de beugel naar buiten buigen? Draai het onderdeel zodat de buiging in X/Y zit en niet in Z. Denk altijd in
-                functies, niet in “hoe het model eruit ziet”.
+                functies, niet in â€œhoe het model eruit zietâ€.
               </p>
             </GlassCard>
           </Reveal>
@@ -366,7 +366,7 @@ export default function MakerMondayWarpingLayerCracksPage() {
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h3 className="text-xl font-semibold text-slate-900">Bridge ontwerpvoorbeeld</h3>
               <p className="mt-2 text-sm text-slate-600">
-                Een 40 mm vlak dak resulteert in doorzakking. Door het dak in drie segmenten te verdelen (3 × 13 mm) met ribbing
+                Een 40 mm vlak dak resulteert in doorzakking. Door het dak in drie segmenten te verdelen (3 Ã— 13 mm) met ribbing
                 eronder, blijft alles strak. Je verbruikt iets meer materiaal, maar voorkomt support removal en nabehandeling.
               </p>
             </GlassCard>
@@ -403,12 +403,12 @@ export default function MakerMondayWarpingLayerCracksPage() {
               <h2 className="text-2xl font-semibold text-slate-900">5. Wanneer X3DPrints inschakelen?</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Laat ons meekijken als je onderdeel groter is dan 150 mm, bridging zones niet kan vermijden of als vorige prints
-                al scheuren vertoonden. We optimaliseren wandopbouw, ribbing, oriëntatie en materiaalkeuze zodat je project
+                al scheuren vertoonden. We optimaliseren wandopbouw, ribbing, oriÃ«ntatie en materiaalkeuze zodat je project
                 betrouwbaar uit de printer komt.
               </p>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-600">
                 <li>Wandopbouw en ribbing afstemmen op het gebruik.</li>
-                <li>Oriëntatie kiezen zodat krachten parallel lopen aan de layers.</li>
+                <li>OriÃ«ntatie kiezen zodat krachten parallel lopen aan de layers.</li>
                 <li>Materiaaladvies (PLA, PETG, TPU) op basis van je toepassing.</li>
                 <li>Slicerprofielen finetunen voor bridging en cooling.</li>
               </ul>
@@ -466,6 +466,7 @@ export default function MakerMondayWarpingLayerCracksPage() {
     </main>
   )
 }
+
 
 
 

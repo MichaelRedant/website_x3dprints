@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
@@ -6,7 +6,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/blog/hoe-lang-duurt-3d-printen";
+const canonical = "https://www.x3dprints.be/blog/hoe-lang-duurt-3d-printen/";
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=hoe-lang-duurt-3d-printen";
 const datePublished = "2024-09-15";
 const dateModified = "2026-02-04";
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hoe lang duurt 3D printen?",
     description:
-      "Ontdek hoe materiaal, afwerking en logistiek de levertijd beïnvloeden. Inclusief scenario’s en tips om projecten te versnellen.",
+      "Ontdek hoe materiaal, afwerking en logistiek de levertijd beÃ¯nvloeden. Inclusief scenarioâ€™s en tips om projecten te versnellen.",
     url: canonical,
     images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "Hoe lang duurt 3D printen" }],
     locale: "nl_BE",
@@ -60,7 +60,7 @@ const factors = [
 ]
 
 const rushTips = [
-  "Stuur meerdere varianten in één batch zodat we machine-uren efficiënt clusteren.",
+  "Stuur meerdere varianten in Ã©Ã©n batch zodat we machine-uren efficiÃ«nt clusteren.",
   "Kies standaard PLA Matte of PETG kleuren die op voorraad zijn om wachttijd over materiaalleveringen te vermijden.",
   "Laat ons weten welke stukken essentieel zijn. We kunnen kritieke onderdelen prioriteit geven en rest later nasturen.",
 ]
@@ -164,7 +164,7 @@ export default function LeadTimeArticle() {
                 grote batches of speciale materialen vragen meer marge. We overlopen samen je deadline en reserveren machine-uren in functie van complexiteit.
               </p>
               <p className="mt-3 text-xs text-slate-500">
-                Tip: stuur STL/STEP + context in één keer door, dan hoeven we geen extra feedbackronde te plannen en kan het project sneller naar productie.
+                Tip: stuur STL/STEP + context in Ã©Ã©n keer door, dan hoeven we geen extra feedbackronde te plannen en kan het project sneller naar productie.
               </p>
             </GlassCard>
           </Reveal>
@@ -235,6 +235,7 @@ export default function LeadTimeArticle() {
     </main>
   )
 }
+
 
 
 

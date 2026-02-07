@@ -259,7 +259,7 @@ export const ORGANIZER_PAGES: Record<OrganizerSlug, OrganizerPageContent> = {
       description:
         "Stanley/DeWALT TSTAK insert op maat: small parts en allround layouts zonder rammel, met labelzones en antislip. TSTAK organizer op maat in België voor field teams, servicewagens en camionettes.",
       canonical: "https://www.x3dprints.be/organizers/tstak",
-      ogImage: "/images/organizers/tstak/tstak0.webp",
+      ogImage: "/images/organizers/tstak/tstak0.jpg",
     },
   },
   custom: {

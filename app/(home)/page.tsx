@@ -11,31 +11,37 @@ import GlassOrb from "@/components/GlassOrb"
 import GlassCard from "@/components/GlassCard"
 import MaterialSwatches, { type Swatch } from "@/components/MaterialSwatches"
 import { normalizeLocale } from "@/lib/i18n/locales"
-import { localizeHref } from "@/lib/i18n/paths"
+import { localizeHref } from "@/lib/i18n/paths"
+import { buildFaqPageSchema } from "@/lib/seo"
 
 
 const NL_METADATA: Metadata = {
-  title: "3D printen in Belgie | X3DPrints Herzele",
+  title: "3D print & 3D printen op maat in België | X3DPrints",
   description:
-    "Precisie 3D printen in Belgie en Vlaanderen. Snelle oplevering vanuit Herzele met advies over PLA, PETG, ABS/ASA, Nylon en PA-CF voor prototypes, displays en functionele onderdelen.",
+    "3D print service België vanuit Herzele (regio Gent). Laat je 3D model printen in PLA, PETG of TPU voor prototypes, displays en functionele onderdelen.",
   alternates: {
     canonical: "https://www.x3dprints.be/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/",
-      en: "https://www.x3dprints.be/en/",
+      "en-BE": "https://www.x3dprints.be/en/",
       "x-default": "https://www.x3dprints.be/",
     },
   },
   openGraph: {
-    title: "X3DPrints - 3D print service in Belgie",
+    title: "3D print service België | X3DPrints",
     description:
-      "Van STL/STEP naar strakke 3D prints in Belgie. Lokale begeleiding, kortere doorlooptijd en duurzame afwerking voor projecten in Gent, Aalst en de rest van Vlaanderen.",
+      "Van STL/STEP naar strakke 3D prints in België. 3D printen op maat voor projecten in Gent, Aalst en de rest van Vlaanderen.",
     url: "https://www.x3dprints.be/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "3D print service België | X3DPrints",
+    description: "3D printen op maat in België. Upload je model en ontvang snel materiaaladvies en prijs.",
+    images: ["/images/og-home.jpg"],
+  },
 }
 
 export const EN_METADATA: Metadata = {
@@ -46,7 +52,7 @@ export const EN_METADATA: Metadata = {
     canonical: "https://www.x3dprints.be/en/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/",
-      en: "https://www.x3dprints.be/en/",
+      "en-BE": "https://www.x3dprints.be/en/",
       "x-default": "https://www.x3dprints.be/",
     },
   },
@@ -115,11 +121,11 @@ function getSeasonCta(date: Date, isEn: boolean) {
 const HOME_COPY_NL = {
   hero: {
     badge: "Lokale 3D print service in Vlaanderen",
-    catchphrase: "3D printen voor Gent, Aalst en Vlaanderen",
-    title: "Belgische 3D prints op maat vanuit Herzele.",
+    catchphrase: "3D printen op maat voor Gent, Aalst en Vlaanderen",
+    title: "3D printen op maat in België vanuit Herzele.",
     subtitle: "Engineeringkwaliteit, transparante prijzen en korte lijnen",
     intro:
-      "X3DPrints is een Belgische 3D-printstudio uit Herzele, vlak bij Gent. We begeleiden makers, engineers en bedrijven door elke stap van hun 3D printproject in Belgie: van STL/STEP-check en materiaaladvies tot verzending. Als eenpersoonsstudio plannen we in samenspraak, meestal binnen enkele werkdagen afhankelijk van complexiteit en planning.",
+      "X3DPrints is een Belgische 3D-printstudio uit Herzele, vlak bij Gent. Wil je een 3D model laten printen? We begeleiden makers, engineers en bedrijven door elke stap van hun 3D printproject in Belgie: van STL/STEP-check en materiaaladvies tot verzending. Als eenpersoonsstudio plannen we in samenspraak, meestal binnen enkele werkdagen afhankelijk van complexiteit en planning.",
     ctas: {
       quote: "Offerte aanvragen",
       consumerAdvice: "Particulieren advies",
@@ -219,9 +225,9 @@ const HOME_COPY_NL = {
   },
   findModels: {
     kicker: "Nog geen ontwerp?",
-    title: "Vind snel een 3D model om te laten printen.",
+    title: "Vind snel 3D modellen om te printen.",
     body:
-      "Kies een model op Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults of Thangs en stuur de link. Wij checken schaal, materiaal en printbaarheid en printen lokaal in Belgie.",
+      "Kies een model op Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults of Thangs en stuur de link. Wij checken schaal, materiaal en printbaarheid zodat je 3D model veilig en lokaal in Belgie geprint wordt.",
     ctas: {
       browse: "Waar vind je 3D modellen?",
       send: "Stuur je model-link",
@@ -350,7 +356,7 @@ const HOME_COPY_NL = {
   pricing: {
     title: "Prijzen & levering",
     body:
-      "Transparante tarieven op basis van complexiteit, afmetingen, materiaal en afwerking. We communiceren vooraf over planning en oplevering en helpen je kiezen wat het beste werkt voor jouw 3D print in Belgie.",
+      "Benieuwd naar je 3D print prijs? We werken met transparante tarieven op basis van complexiteit, afmetingen, materiaal en afwerking. We communiceren vooraf over planning en oplevering en helpen je kiezen wat het beste werkt voor jouw 3D print in Belgie.",
     cards: [
       {
         title: "Prijsopbouw",
@@ -388,6 +394,10 @@ const HOME_COPY_NL = {
     {
       q: "Welke levertijd mag ik verwachten?",
       a: "Vaak enkele werkdagen, afhankelijk van planning, materiaal en eventuele nabewerking. We stemmen de planning samen af.",
+    },
+    {
+      q: "Wat kost 3D printen en hoe snel krijg ik een prijs?",
+      a: "Richtprijzen starten vanaf kleine prints, maar de exacte 3D print prijs hangt af van model, materiaal en printtijd. Je krijgt meestal binnen 24 uur een duidelijke offerte.",
     },
     {
       q: "Wat is het maximale bouwvolume?",
@@ -709,17 +719,10 @@ export default function HomePage({ locale }: PageProps) {
       </svg>
     )
   }
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-
-    inLanguage: ["nl-BE", "en-BE"],
-    mainEntity: copy.faq.map((item) => ({
-      "@type": "Question",
-      name: item.q,
-      acceptedAnswer: { "@type": "Answer", text: item.a },
-    })),
-  }
+  const faqJsonLd = buildFaqPageSchema({
+  inLanguage: isEn ? "en-BE" : "nl-BE",
+  items: copy.faq,
+})
 
   return (
     <main className="relative">
@@ -980,7 +983,7 @@ export default function HomePage({ locale }: PageProps) {
                       {
                         label: "Gridfinity (open-source)",
                         desc: "Raster van 42 mm, hyper-flexibel en volledig te customizen per tool.",
-                        href: "/organizers/gridinfinity",
+                        href: "/organizers/modugrid",
                         highlight: true,
                       },
                       {
@@ -1003,7 +1006,7 @@ export default function HomePage({ locale }: PageProps) {
                       {
                         label: "Gridfinity (open-source)",
                         desc: "42 mm grid, hyper-flexible and tailored per tool.",
-                        href: "/organizers/gridinfinity",
+                        href: "/organizers/modugrid",
                         highlight: true,
                       },
                       {
@@ -1402,4 +1405,6 @@ export default function HomePage({ locale }: PageProps) {
     </main>
   )
 }
+
+
 

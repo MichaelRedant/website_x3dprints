@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import { buildArticleJsonLd } from "@/lib/seo"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-lente-pasen/"
 const datePublished = "2024-03-15"
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/3d-printen-lente-pasen/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/3d-printen-lente-pasen/",
     },
   },
@@ -43,7 +43,7 @@ const tips = [
   "Use Silk or Matte PLA in pastel colours for eggs, bunnies and ornaments; Translucent for light objects.",
   "Layer height 0.16-0.2 mm; keep wall thickness >1.2 mm for sturdy hangers on branches.",
   "Integrate eyelets or pin-holes for hooks/magnets so ornaments do not break.",
-  "Design/model not included: provide STL/STEP or choose design service at €45/hour.",
+  "Design/model not included: provide STL/STEP or choose design service at â‚¬45/hour.",
   "For outdoor decor: choose PETG for better UV/moisture resistance and avoid dark colours in full sun.",
 ]
 
@@ -57,7 +57,7 @@ const checklist = [
 const faqItems = [
   {
     q: "Can you print hollow eggs for LEDs?",
-    a: "Yes. We keep 2-3 perimeters, tuned infill and openings for LEDs/batteries. Provide STL/STEP or use design service (€45/hour).",
+    a: "Yes. We keep 2-3 perimeters, tuned infill and openings for LEDs/batteries. Provide STL/STEP or use design service (â‚¬45/hour).",
   },
   {
     q: "Best material for Easter ornaments?",
@@ -65,11 +65,11 @@ const faqItems = [
   },
   {
     q: "How do you ship fragile pieces?",
-    a: "Packed separately with foam; EV delivery in zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) or parcel service. Pickup is free.",
+    a: "Packed separately with foam; EV delivery in zones (Zone 1 â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45) or parcel service. Pickup is free.",
   },
   {
     q: "Is design included?",
-    a: "No. Design is not included in the print price. Provide STL/STEP or choose design service at €45/hour; we optimise wall thickness and supports.",
+    a: "No. Design is not included in the print price. Provide STL/STEP or choose design service at â‚¬45/hour; we optimise wall thickness and supports.",
   },
 ]
 
@@ -84,22 +84,16 @@ const articleJsonLd = buildArticleJsonLd({
   inLanguage: "en-BE",
 })
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-
-    mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  items: faqItems,
+})
 
 const inspirationImages = [
-  { src: "/images/portfolio/pasen1.webp", alt: "3D printed Easter decor 1" },
-  { src: "/images/portfolio/pasen2.webp", alt: "3D printed Easter decor 2" },
-  { src: "/images/portfolio/pasen3.webp", alt: "3D printed Easter decor 3" },
-  { src: "/images/portfolio/pasen4.webp", alt: "3D printed Easter decor 4" },
+  { src: "/images/portfolio/easter1.webp", alt: "3D printed Easter decor 1" },
+  { src: "/images/portfolio/Easter2.webp", alt: "3D printed Easter decor 2" },
+  { src: "/images/portfolio/Easter3.webp", alt: "3D printed Easter decor 3" },
+  { src: "/images/portfolio/Easter4.webp", alt: "3D printed Easter decor 4" },
 ]
 
 export default function BlogSpringEasterEn() {
@@ -117,7 +111,7 @@ export default function BlogSpringEasterEn() {
               3D printing for spring and Easter
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Pastel ornaments, bunnies and light decor. Design file not included; provide STL/STEP or choose design service (€45/hour). EV delivery for
+              Pastel ornaments, bunnies and light decor. Design file not included; provide STL/STEP or choose design service (â‚¬45/hour). EV delivery for
               fragile pieces or parcel service.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -242,4 +236,7 @@ export default function BlogSpringEasterEn() {
     </main>
   )
 }
+
+
+
 

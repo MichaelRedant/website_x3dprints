@@ -2,6 +2,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import GlassOrb from "@/components/GlassOrb"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
 import { getLocationBySlug, getEnglishLocationSlugs } from "@/lib/locations"
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/locaties/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/locaties/",
     },
   },
@@ -34,6 +35,18 @@ export const metadata: Metadata = {
 }
 
 export default function LocationsPageEn() {
+  const tocItems = [
+    { id: "locations-pillars", label: "Start with the 3D printing pillar" },
+    { id: "locations-overview", label: "Overview by city" },
+    { id: "locations-sources", label: "Sources and references" },
+  ]
+  const references = [
+    { label: "Google docs: local SEO basics", url: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide" },
+    { label: "Schema.org ItemList", url: "https://schema.org/ItemList" },
+    { label: "Google docs: crawlable links", url: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable" },
+  ]
+  const lastUpdatedLabel = "Last updated: February 6, 2026"
+
   const slugs = getEnglishLocationSlugs()
   const locations = slugs
     .map((slug) => ({ slug, city: getLocationBySlug(slug)?.city ?? slug }))
@@ -56,7 +69,7 @@ export default function LocationsPageEn() {
   const itemList = locations.slice(0, 100).map((loc, i) => ({
     "@type": "ListItem",
     position: i + 1,
-    url: `https://www.x3dprints.be/${loc.slug}`,
+    url: `https://www.x3dprints.be/en/${loc.slug}`,
     name: `3D printing in ${loc.city}`,
   }))
 
@@ -95,6 +108,7 @@ export default function LocationsPageEn() {
           <p className="mx-auto mt-3 max-w-prose text-slate-600 sm:mx-0">
             Find your local page and request a quote fast. Compact overview, strong internal linking, and SEO-ready structure.
           </p>
+          <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2 sm:justify-start">
             {letters.map((l) => (
               <a
@@ -106,6 +120,7 @@ export default function LocationsPageEn() {
               </a>
             ))}
           </div>
+          <ContentTableOfContents title="Contents" items={tocItems} className="mt-6 max-w-xl" />
         </div>
 
         <div
@@ -125,7 +140,7 @@ export default function LocationsPageEn() {
         </div>
       </header>
 
-      <section className="mx-auto mt-8 max-w-5xl">
+      <section id="locations-pillars" className="scroll-mt-28 mx-auto mt-8 max-w-5xl">
         <div className="rounded-3xl border border-white/30 bg-white/70 px-6 py-5 text-center backdrop-blur shadow-[0_8px_28px_rgba(0,0,0,0.06)] sm:text-left sm:px-8 sm:py-6">
           <h2 className="text-xl font-semibold text-slate-900">New to 3D printing?</h2>
           <p className="mt-2 text-sm text-slate-700">
@@ -182,7 +197,9 @@ export default function LocationsPageEn() {
       </section>
 
       <section
+        id="locations-overview"
         className="
+          scroll-mt-28
           mx-auto mt-10 max-w-5xl rounded-3xl border border-white/30 bg-white/60 p-6 sm:p-8
           backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.06)]
         "
@@ -194,7 +211,7 @@ export default function LocationsPageEn() {
               {locations.slice(0, 12).map((loc) => (
                 <li key={loc.slug}>
                   <Link
-                    href={`/${loc.slug}`}
+                    href={`/en/${loc.slug}`}
                     className="rounded-full border border-white/30 bg-white/70 px-3 py-1.5 text-xs text-slate-700 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white hover:text-slate-900"
                   >
                     3D printing in {loc.city}
@@ -225,7 +242,7 @@ export default function LocationsPageEn() {
                 {grouped[l].map((loc) => (
                   <li key={loc.slug} className="animate-[fadeIn_.6s_ease_out_.05s_both]">
                     <Link
-                      href={`/${loc.slug}`}
+                      href={`/en/${loc.slug}`}
                       className="inline-block rounded-full border border-white/30 bg-white/70 px-3 py-1.5 text-xs text-slate-700 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white hover:text-slate-900"
                     >
                       3D printing in {loc.city}
@@ -235,6 +252,23 @@ export default function LocationsPageEn() {
               </ul>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section id="locations-sources" className="scroll-mt-28 mx-auto mt-10 max-w-5xl">
+        <div className="rounded-3xl border border-white/30 bg-white/70 px-6 py-5 backdrop-blur shadow-[0_8px_28px_rgba(0,0,0,0.06)] sm:px-8 sm:py-6">
+          <h2 className="text-xl font-semibold text-slate-900">Sources and references</h2>
+          <ul className="mt-4 space-y-2 text-sm text-slate-700">
+            {references.map((reference) => (
+              <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                <cite className="not-italic">
+                  <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                    {reference.label}
+                  </Link>
+                </cite>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

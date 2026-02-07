@@ -1,380 +1,390 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import Reveal from "@/components/Reveal"
-import GlassCard from "@/components/GlassCard"
-import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import { buildArticleJsonLd } from "@/lib/seo"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import Faq from "@/components/Faq"
+import GlassCard from "@/components/GlassCard"
+import Reveal from "@/components/Reveal"
+import ShimmerButton from "@/components/ShimmerButton"
+import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/blog/hoeveel-kost-3d-printen"
-const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=hoeveel-kost-3d-printen"
+const canonical = "https://www.x3dprints.be/blog/hoeveel-kost-3d-printen/"
 const datePublished = "2024-10-01"
-const dateModified = "2026-02-04"
-const contactHref = `/contact${utm}`
-const toolHref = `/materials${utm}#material-suggestion-tool`
+const dateModified = "2026-02-06"
+const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=hoeveel-kost-3d-printen"
+const materialsHref = "/materials?utm_source=blog&utm_medium=cta&utm_campaign=hoeveel-kost-3d-printen#material-suggestion-tool"
+const contactHref =
+  "/contact?material=pla-matte&quote=Kostprijsanalyse%20voor%20mijn%203D-printproject"
 
 export const metadata: Metadata = {
-  title: "Hoeveel kost 3D printen? | X3DPrints Blog",
+  title: "3D print prijs: hoeveel kost 3D printen in 2026? | X3DPrints",
   description:
-    "Ontdek welke factoren de prijs van 3D printen bepalen: materiaal, machine-uren, afwerking en logistiek. Inclusief voorbeeldberekening en link naar de prijscalculator.",
+    "Wat kost 3D printen in 2026? Deze gids toont de 3D print prijs op basis van materiaal, printtijd, modelcomplexiteit en logistiek, plus directe offertestappen.",
   alternates: { canonical },
   openGraph: {
-    title: "Hoeveel kost 3D printen?",
+    title: "3D print prijs in 2026: wat kost 3D printen?",
     description:
-      "Volledige breakdown van materiaalprijs, machine-uren, afwerking en logistiek. Gebruik onze prijscalculator en vraag een offerte.",
+      "Praktische kostengids met voorbeelden, prijsfactoren en directe links naar pricing, materialen en offerte voor snelle prijsinschatting.",
     url: canonical,
-    images: [{ url: "/images/portfolio/2d-6-1-1.webp", width: 1200, height: 630, alt: "Kostprijs 3D printen" }],
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Hoeveel kost 3D printen?" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hoeveel kost 3D printen?",
-    description: "Strategische gids om de kostprijs van 3D prints in te schatten, inclusief voorbeeldberekening.",
-    images: ["/images/portfolio/2d-6-1-1.webp"],
+    title: "3D print prijs in 2026",
+    description: "Kostengids met concrete kostenfactoren en praktische beslisregels.",
+    images: ["/Logo.webp"],
   },
 }
+
+const tocItems = [
+  { id: "kost-factors", label: "Welke factoren bepalen de prijs?" },
+  { id: "kost-voorbeeld", label: "Wat zijn realistische richtprijzen?" },
+  { id: "kost-optimaliseer", label: "Hoe hou je de kost onder controle?" },
+  { id: "kost-faq", label: "FAQ over prijs en offerte" },
+  { id: "kost-sources", label: "Bronnen en referenties" },
+]
 
 const costFactors = [
   {
     title: "Materiaal",
     description:
-      "PLA Matte is onze baseline en de meest kostenefficiënte keuze voor prototypes en kleine onderdelen. Materialen zoals PETG of TPU variëren in prijs door hun specifieke eigenschappen, zoals extra taaiheid of flexibiliteit.",
-    tip: "Bekijk alle actuele materialen en kleuren in onze materialenlijst.",
-    link: { href: "/materials", label: "Materialen vergelijken" },
+      "PLA Matte is meestal de goedkoopste en snelste route. PETG, TPU of specials verhogen de kost door duurdere spoelen en trager printen.",
+    link: { href: "/materials", label: "Bekijk materialen" },
   },
   {
-    title: "Machine-uren",
+    title: "Printtijd",
     description:
-      "Het grootste deel van de kostprijs komt van de printtijd. Complexere modellen, hogere resolutie of meer infill verhogen het aantal machine-uren en dus de totale prijs.",
-    tip: "Gebruik de prijscalculator om realistische tijds- en kosteninschattingen te krijgen.",
-    link: { href: "/pricing", label: "Ga naar pricing & calculator" },
+      "Meer uren betekent hogere machinekost. Kleine laaghoogte, veel supports en hoge infill maken een print duidelijk duurder.",
+    link: { href: "/pricing", label: "Open pricing calculator" },
   },
   {
     title: "Modelcomplexiteit",
     description:
-      "Sterk overhangende delen of dunne geometrieën kunnen extra ondersteuningsstructuren vereisen. Dit verhoogt printtijd en materiaalverbruik. Voor eenvoudige vormen is de kostprijs meestal lager.",
-    tip: "Laad je model in via de viewer om te controleren of er supports nodig zijn.",
-    link: { href: "/viewer", label: "STL controleren" },
+      "Complexe geometrie vraagt extra voorbereidingswerk en vaak extra supports. Dat zie je terug in zowel tijd als verbruik.",
+    link: { href: "/viewer", label: "Controleer je model in de viewer" },
   },
   {
-    title: "Logistiek",
+    title: "Levering en planning",
     description:
-      "Afhalen in Herzele is gratis. Verzending via Bpost varieert tussen 6 en 25 euro afhankelijk van gewicht en snelheid. Grote prints worden stevig verpakt voor veilig transport.",
-    tip: "Combineer meerdere onderdelen in één verzending om kosten te drukken.",
-    link: { href: "/pricing", label: "Zie verzendopties" },
+      "Afhalen in Herzele is het meest kostefficiente scenario. Verzending of spoedplanning kan de eindprijs verhogen.",
+    link: { href: "/contact", label: "Vraag planning op maat" },
   },
 ]
 
+const exampleRows = [
+  {
+    label: "Small",
+    size: "ongeveer 5x5x5 cm",
+    material: "PLA Matte",
+    printTime: "ongeveer 2 uur",
+    price: "vanaf EUR 5",
+  },
+  {
+    label: "Medium",
+    size: "ongeveer 10x10x10 cm",
+    material: "PLA Matte of PETG",
+    printTime: "ongeveer 6 uur",
+    price: "vanaf EUR 20",
+  },
+  {
+    label: "Large",
+    size: "ongeveer 20x20x20 cm",
+    material: "PLA Matte of PETG",
+    printTime: "ongeveer 15 uur",
+    price: "vanaf EUR 49",
+  },
+]
 
-const faq = [
+const optimizationTips = [
+  "Verminder overhangs zodat minder supports nodig zijn.",
+  "Gebruik enkel hoge resolutie op zichtvlakken die het nodig hebben.",
+  "Bundel meerdere onderdelen in een batch voor betere machineplanning.",
+  "Kies eerst een baseline materiaal (PLA Matte) en schaal later op.",
+]
+
+const faqItems = [
   {
     q: "Hoe snel krijg ik een exacte offerte?",
-    a: "Binnen 1 werkdag na ontvangst van STL/STEP, inclusief materiaalkeuze en levering. We sturen altijd feedback op kritieke vlakken zoals wanddikte of orientatie.",
+    a: "Meestal binnen 1 werkdag na ontvangst van STL of STEP, met advies over materiaal en planning.",
   },
   {
-    q: "Wat als ik meerdere stuks bestel?",
-    a: "We groeperen prints per materiaal en machine. Dat levert volumekorting op zodra de setupkosten verdeeld worden over meerdere onderdelen.",
+    q: "Waarom kan hetzelfde model bij andere partijen anders geprijsd zijn?",
+    a: "Prijs hangt af van machinepark, kwaliteitsinstellingen, supportstrategie en servicegraad rond QA en communicatie.",
   },
   {
-    q: "Kan ik zelf een printtijd inschatten?",
-    a: "Ja. Gebruik de Small/Medium/Large richtprijzen op de pricing pagina. Voor precieze timing hebben we je model nodig zodat we slicer-data kunnen analyseren.",
+    q: "Kan ik eerst een ruwe kost zien zonder perfect model?",
+    a: "Ja. Met afmetingen, toepassing en gewenst materiaal geven we een gerichte voorinschatting.",
   },
   {
-  q: "Waarom verschillen prijzen tussen verschillende 3D printservices?",
-  a: "Elke 3D-printshop werkt met andere machines, materiaalkost, snelheid en kwaliteitsinstellingen. Bij X3DPrints gebruiken we een transparant model gebaseerd op printduur en materiaalverbruik. Dat geeft een eerlijke en voorspelbare prijs."
-},
-{
-  q: "Is 3D printen goedkoper als ik mijn model aanpas?",
-  a: "Ja. Kleinere schaal, minder infill, minder overhang of een andere oriëntatie kunnen de printtijd sterk verminderen. Je ziet de impact meteen in onze prijscalculator."
-},
-{
-  q: "Hoe weet ik of mijn model efficiënt geprint kan worden?",
-  a: "Onze slicer controleert automatisch de printbaarheid. Na je aanvraag krijg je gratis feedback over wanden, supports en eventuele optimalisaties."
-}
+    q: "Wanneer loont PETG of TPU ondanks hogere kost?",
+    a: "Bij outdoor gebruik, hogere temperatuurbelasting of wanneer flexibiliteit een must is.",
+  },
+  {
+    q: "Hoe kan ik mijn prijs het snelst verlagen?",
+    a: "Optimaliseer modelgeometrie, vermijd overmatige supports en combineer onderdelen in een efficiente batch.",
+  },
+]
 
+const references = [
+  {
+    label: "Prusa material guide (PLA, PETG, TPU)",
+    href: "https://help.prusa3d.com/article/material-guide_220",
+  },
+  {
+    label: "All3DP FDM process explainer",
+    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+  },
+  {
+    label: "ISO/ASTM additive manufacturing terminology",
+    href: "https://www.astm.org/f2997-13r21.html",
+  },
 ]
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
-  headline: "Hoeveel kost 3D printen?",
+  headline: "3D print prijs in 2026: hoeveel kost 3D printen?",
   description:
-    "Volledige gids over de kostprijs van 3D printen, inclusief materiaalprijzen, machine-uren, nabewerking en logistiek.",
+    "Praktische kostengids over materiaal, printtijd, complexiteit en logistiek met concrete prijsvoorbeelden.",
   datePublished,
   dateModified,
-  image: "/images/portfolio/2d-6-1-1.webp",
+  image: "/Logo.webp",
+  inLanguage: "nl-BE",
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  mainEntityOfPage: canonical,
+  items: faqItems.map((item) => ({ q: item.q, a: item.a })),
+})
+
+const howToJsonLd = buildHowToSchema({
+  name: "3D print kost berekenen in 4 stappen",
+  description:
+    "Bepaal snel je prijsrange door materiaal, printtijd, complexiteit en leveroptie systematisch te checken.",
+  inLanguage: "nl-BE",
+  mainEntityOfPage: canonical,
+  totalTime: "PT3M",
+  steps: [
+    {
+      name: "Kies basismateriaal",
+      text: "Start met PLA Matte en bepaal of PETG of TPU echt nodig is voor je toepassing.",
+    },
+    {
+      name: "Schat printtijd",
+      text: "Controleer volume, laaghoogte en supportbehoefte via slicer of viewer.",
+    },
+    {
+      name: "Vergelijk prijsankers",
+      url: "/pricing?utm_source=blog&utm_medium=howto&utm_campaign=hoeveel-kost-3d-printen",
+    },
+    {
+      name: "Vraag offerte met context",
+      url: contactHref,
+    },
+  ],
+  toolNames: ["X3DPrints pricing calculator", "Material Suggestion Tool"],
+  supplyNames: ["STL of STEP bestand"],
 })
 
 export default function BlogCostPage() {
   return (
-    <main className="relative">
+    <main className="relative overflow-hidden px-6 pb-24 pt-16 sm:px-8 lg:px-12">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(160%_90%_at_50%_-20%,rgba(56,178,172,0.18),transparent_70%)]"
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(120%_60%_at_50%_0%,rgba(16,185,129,.18),transparent_70%)]"
       />
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.08]" />
 
-      <section className="px-6 pb-12 pt-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
-          <Reveal className="stacked-content">
-            <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
-              <ol className="flex flex-wrap gap-2">
-                <li>
-                  <Link
-                    href="/blog"
-                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                  >
-                    Blog
+      <article className="mx-auto max-w-5xl space-y-10">
+        <header className="space-y-4">
+          <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
+            <ol className="flex flex-wrap gap-2">
+              <li>
+                <Link href="/blog" className="font-medium text-indigo-600 hover:text-indigo-500">
+                  Blog
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li className="font-medium text-slate-700">Hoeveel kost 3D printen?</li>
+            </ol>
+          </nav>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600">Pricing guide</p>
+          <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+            3D print prijs in 2026: hoeveel kost 3D printen?
+          </h1>
+          <p className="max-w-3xl text-lg text-slate-700">
+            Het korte antwoord: kosten 3D printen starten vanaf EUR 5 voor eenvoudige stukken, maar de echte prijs hangt af van materiaal, printtijd, modelcomplexiteit en levering.
+          </p>
+          <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
+            Laatst bijgewerkt: 6 februari 2026
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <ShimmerButton
+              href={pricingHref}
+              event={{ action: "cta_click", category: "blog_cost_top", label: "pricing" }}
+            >
+              Open pricing calculator
+            </ShimmerButton>
+            <ShimmerButton
+              href={materialsHref}
+              className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+              event={{ action: "cta_click", category: "blog_cost_top", label: "materials_tool" }}
+            >
+              Kies materiaal
+            </ShimmerButton>
+            <Link
+              href={contactHref}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300 hover:bg-slate-50"
+            >
+              Vraag offerte met prefill
+            </Link>
+          </div>
+          <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
+        </header>
+
+        <section id="kost-factors" className="scroll-mt-28">
+          <Reveal>
+            <h2 className="text-2xl font-semibold text-slate-900">Welke factoren bepalen de prijs?</h2>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              {costFactors.map((factor) => (
+                <GlassCard key={factor.title} className="p-6">
+                  <h3 className="text-lg font-semibold text-slate-900">{factor.title}</h3>
+                  <p className="mt-2 text-sm text-slate-700">{factor.description}</p>
+                  <Link href={factor.link.href} className="mt-3 inline-flex text-sm font-semibold text-indigo-600 hover:text-indigo-500">
+                    {factor.link.label}
                   </Link>
-                </li>
-                <li aria-hidden>/</li>
-                <li className="font-medium text-slate-700">Hoeveel kost 3D printen?</li>
-              </ol>
-            </nav>
-            <h1 className="mt-6 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              Hoeveel kost 3D printen?
-            </h1>
-            <p className="mt-4 text-lg text-slate-700">
-              De totale kost van een 3D print is een optelsom van materiaal, machine-uren, eventuele nabewerking en logistiek.
-              In dit artikel tonen we hoe wij prijzen berekenen, inclusief voorbeelden en tips om budget te optimaliseren.
-            </p>
-            <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href={`/pricing${utm}`}>Gebruik de prijscalculator</ShimmerButton>
-              <Link
-                href={contactHref}
-                className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
-              >
-                Vraag offerte
-              </Link>
-              <Link
-                href={toolHref}
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm hover:border-slate-300 hover:bg-slate-50"
-              >
-                Materialen kiezen
-              </Link>
+                </GlassCard>
+              ))}
             </div>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl grid gap-6 md:grid-cols-2">
-          {costFactors.map((factor) => (
-            <Reveal key={factor.title}>
-              <GlassCard className="h-full border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Kostenfactor</p>
-                <h2 className="mt-2 text-xl font-semibold text-slate-900">{factor.title}</h2>
-                <p className="mt-2 text-sm text-slate-600">{factor.description}</p>
-                <p className="mt-3 text-xs font-medium text-slate-500">Tip: {factor.tip}</p>
-                <Link
-                  href={factor.link.href}
-                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 transition hover:text-emerald-700"
-                >
-                  {factor.link.label}
-                  <span aria-hidden>-&gt;</span>
-                </Link>
-              </GlassCard>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      {/* Inline CTA block to push conversions earlier */}
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
-          <GlassCard className="flex flex-col gap-4 border border-emerald-100 bg-white/85 p-6 shadow-lg backdrop-blur">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600">Volgende stap</p>
-              <h2 className="mt-2 text-xl font-semibold text-slate-900">Zie direct prijs & materiaalopties</h2>
-              <p className="mt-2 text-sm text-slate-700">
-                Test je model in de prijscalculator en vergelijk meteen de belangrijkste materialen. We vullen je intake vooraf met de gekozen optie.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-3">
-              <ShimmerButton
-                href={`/pricing${utm}`}
-                event={{ action: "cta_click", category: "blog_mid", label: "pricing_hoeveel-kost" }}
-              >
-                Ga naar pricing & calculator
-              </ShimmerButton>
-              <ShimmerButton
-                href={`/materials${utm}#material-suggestion-tool`}
-                event={{ action: "cta_click", category: "blog_mid", label: "materials_tool_hoeveel-kost" }}
-              >
-                Start materiaaladvies
-              </ShimmerButton>
-            </div>
-          </GlassCard>
-        </div>
-      </section>
-
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+        <section id="kost-voorbeeld" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="overflow-hidden border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">
-  Hoeveel kost 3D printen in de praktijk?
-</h2>
-<p className="mt-3 text-sm text-slate-600">
-  Veel bezoekers zoeken een concreet antwoord op de vraag <strong>&quot;hoeveel kost 3D printen&quot;</strong>. 
-  Omdat elk model anders is, werken we met een prijscalculator die automatisch rekening houdt met materiaal, 
-  volume, gewicht en printduur. Zo krijg je geen vaste tabelprijzen die niet bij jouw project passen, maar 
-  een realistische inschatting op maat.
-</p>
-<p className="mt-3 text-sm text-slate-600">
-  Op de <Link href="/pricing" className="font-semibold text-emerald-600 hover:text-emerald-700">
-    pricing-pagina
-  </Link> kun je zelf scenario&apos;s testen. Je ziet meteen hoe de kost evolueert wanneer je het model 
-  schaalt, een ander materiaal kiest of de instellingen aanpast. Dat maakt het veel eenvoudiger om binnen 
-  je budget te blijven en toch de juiste kwaliteit te kiezen.
-</p>
-<div className="mt-4">
-  <Link
-    href="/pricing"
-    className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-sm font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-emerald-700"
-  >
-    Gebruik de prijscalculator
-  </Link>
-</div>
-<p className="mt-3 text-sm text-slate-600">
-  Hieronder zie je drie veelvoorkomende categorieën als sales-ready richtprijs, identiek aan de{" "}
-  <Link href="/pricing" className="font-semibold text-emerald-600 hover:text-emerald-700">prijspagina</Link>. Richtprijzen
-  op basis van PLA Matte, circa 25% infill en 200% marge (x3) op de basiskost. Exacte prijs volgt na STL-analyse in de{" "}
-  <Link href="/pricing" className="font-semibold text-emerald-600 hover:text-emerald-700">prijscalculator</Link>.
-</p>
-
-
-              <div className="mt-5 overflow-x-auto">
-                <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
-                  <tbody className="divide-y divide-slate-100">
-
-  
-  <tr>
-    <td className="py-3 pr-4 font-semibold text-slate-900">Small</td>
-    <td className="py-3 pr-4">ca. 5 x 5 x 5 cm - PLA Matte (standaard) - ~50 g</td>
-    <td className="py-3 pr-4">~50 g</td>
-    <td className="py-3 pr-4">~2 uur</td>
-    <td className="py-3 pr-4 font-medium text-slate-900">EUR 4.93 / stuk</td>
-  </tr>
-
-  <tr>
-    <td className="py-3 pr-4 font-semibold text-slate-900">Medium</td>
-    <td className="py-3 pr-4">ca. 10 x 10 x 10 cm - PLA Matte (standaard) - ~200 g</td>
-    <td className="py-3 pr-4">~200 g</td>
-    <td className="py-3 pr-4">~6.5 uur</td>
-    <td className="py-3 pr-4 font-medium text-slate-900">EUR 19.17 / stuk</td>
-  </tr>
-
-  <tr>
-    <td className="py-3 pr-4 font-semibold text-slate-900">Large</td>
-    <td className="py-3 pr-4">ca. 20 x 20 x 20 cm - PLA Matte (standaard) - ~500 g</td>
-    <td className="py-3 pr-4">~500 g</td>
-    <td className="py-3 pr-4">~15 uur</td>
-    <td className="py-3 pr-4 font-medium text-slate-900">EUR 47.48 / stuk</td>
-  </tr>
-</tbody>
-
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Wat zijn realistische richtprijzen?</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Deze ranges zijn startpunten. Exacte prijs volgt na slicer-analyse van je bestand.
+              </p>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-[640px] text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="border-b border-slate-200/70 text-slate-500">
+                      <th className="py-2 pr-4 font-semibold">Categorie</th>
+                      <th className="py-2 pr-4 font-semibold">Formaat</th>
+                      <th className="py-2 pr-4 font-semibold">Materiaal</th>
+                      <th className="py-2 pr-4 font-semibold">Printtijd</th>
+                      <th className="py-2 pr-4 font-semibold">Prijsrange</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {exampleRows.map((row) => (
+                      <tr key={row.label} className="border-b border-slate-200/70 last:border-0">
+                        <td className="py-2 pr-4 font-medium text-slate-900">{row.label}</td>
+                        <td className="py-2 pr-4">{row.size}</td>
+                        <td className="py-2 pr-4">{row.material}</td>
+                        <td className="py-2 pr-4">{row.printTime}</td>
+                        <td className="py-2 pr-4 font-semibold text-slate-900">{row.price}</td>
+                      </tr>
+                    ))}
+                  </tbody>
                 </table>
               </div>
               <p className="mt-4 text-sm text-slate-600">
-  Deze richtprijzen gelden voor PLA Matte met standaardinstellingen. Grotere of zwaardere modellen gebruiken meer materiaal 
-  en kosten daardoor meer. Voor de meest nauwkeurige berekening gebruik je best de 
-  <Link href="/pricing" className="font-semibold text-emerald-600 hover:text-emerald-700"> prijscalculator</Link>.
-</p>
-
+                Tip: gebruik altijd de <Link href="/pricing" className="font-semibold text-emerald-600 hover:text-emerald-700">pricing calculator</Link> voor actuele simulaties.
+              </p>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+        <section id="kost-optimaliseer" className="scroll-mt-28">
           <Reveal>
-            <div className="grid gap-6 lg:grid-cols-2">
-              <GlassCard className="p-6">
-                <h2 className="text-xl font-semibold text-slate-900">Checklist voor je aanvraag</h2>
-                <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                  <li>Voeg STL/STEP toe en vermeld of prototypes nog aangepast mogen worden.</li>
-                  <li>Geef gewenste materiaal, kleur en afwerking mee (bijvoorbeeld PLA Matte wit, gezandstraald).</li>
-                  <li>Noteer deadline en leveroptie: afhalen, persoonlijke levering (EV, zones) of pakketdienst.</li>
-                  <li>Bij functionele onderdelen: deel belastingsinfo of omgeving (temperatuur, UV, chemie).</li>
-                </ul>
-              </GlassCard>
-              <GlassCard className="p-6">
-                <h2 className="text-xl font-semibold text-slate-900">Direct doorpakken</h2>
-                <p className="mt-2 text-sm text-slate-600">
-                  Gebruik de tool op de pricing-pagina voor een snelle indicatie en upload daarna je bestanden via de viewer of het contactformulier.
-                </p>
-                <div className="mt-4 flex flex-wrap gap-3">
-                  <Link
-                    href="/pricing"
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
-                  >
-                    Naar pricing
-                  </Link>
-                  <Link
-                    href="/viewer"
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
-                  >
-                    STL uploaden
-                  </Link>
-                </div>
-              </GlassCard>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
-          <Reveal>
-            <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900">Veelgestelde vragen</h2>
-              <div className="mt-4 space-y-4 text-sm text-slate-600">
-                {faq.map((item) => (
-                  <div key={item.q}>
-                    <h3 className="text-base font-semibold text-slate-900">{item.q}</h3>
-                    <p className="mt-1">{item.a}</p>
-                  </div>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Hoe hou je de kost onder controle?</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {optimizationTips.map((tip) => (
+                  <li key={tip} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
+                    <span>{tip}</span>
+                  </li>
                 ))}
+              </ul>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <ShimmerButton
+                  href={pricingHref}
+                  event={{ action: "cta_click", category: "blog_cost_mid", label: "pricing" }}
+                >
+                  Simuleer je kost
+                </ShimmerButton>
+                <ShimmerButton
+                  href={contactHref}
+                  className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+                  event={{ action: "cta_click", category: "blog_cost_mid", label: "contact_prefill" }}
+                >
+                  Vraag exacte offerte
+                </ShimmerButton>
               </div>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
+        <section id="kost-faq" className="scroll-mt-28">
+          <Faq title="FAQ over 3D print prijs" items={faqItems} />
+        </section>
+
+        <section id="kost-sources" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="flex flex-col gap-6 border border-white/40 bg-white/85 p-6 shadow-xl backdrop-blur sm:flex-row sm:items-center sm:justify-between">
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </section>
+
+        <section>
+          <Reveal>
+            <GlassCard className="flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Volgende stap</p>
-                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Stuur je bestanden door</h2>
-                <p className="mt-2 text-sm text-slate-600">
-                  Je ontvangt gratis feedback over materiaalkeuze en design tweaks zodat de prijs perfect bij de toepassing past.
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Volgende stap</p>
+                <h2 className="mt-2 text-xl font-semibold text-slate-900">Klaar om je kost exact te weten?</h2>
+                <p className="mt-1 text-sm text-slate-600">
+                  Stuur je bestand met context door en ontvang een prijs op maat met materiaaladvies.
                 </p>
               </div>
-              <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href="/contact">Plan een gesprek</ShimmerButton>
-                <Link
-                  href="/pricing"
-                  className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700"
-                >
-                  Bekijk tarieven
-                </Link>
-              </div>
+              <ShimmerButton
+                href={contactHref}
+                event={{ action: "cta_click", category: "blog_cost_bottom", label: "contact_prefill" }}
+              >
+                Start offerte
+              </ShimmerButton>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
+      </article>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogReadMore />
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
     </main>
   )
 }
-
-
-
 

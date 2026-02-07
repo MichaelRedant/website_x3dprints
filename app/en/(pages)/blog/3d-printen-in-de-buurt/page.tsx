@@ -1,199 +1,353 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import Reveal from "@/components/Reveal"
-import GlassCard from "@/components/GlassCard"
-import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import Faq from "@/components/Faq"
+import GlassCard from "@/components/GlassCard"
+import Reveal from "@/components/Reveal"
+import ShimmerButton from "@/components/ShimmerButton"
+import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-in-de-buurt/"
+const nlCanonical = "https://www.x3dprints.be/blog/3d-printen-in-de-buurt/"
+const datePublished = "2024-07-01"
+const dateModified = "2026-02-07"
+const contactHref =
+  "/en/contact?material=pla-matte&quote=Local%203D%20printing%20project%20request"
+const pricingHref = "/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=local-3d-printing-en"
+const locatiesHref = "/en/locaties?utm_source=blog&utm_medium=cta&utm_campaign=local-3d-printing-en"
 
 export const metadata: Metadata = {
   title: "Local 3D printing near Ghent, Aalst and Dendermonde | X3DPrints",
   description:
-    "Looking for a 3D printing service near Ghent, Aalst or Dendermonde? X3DPrints produces in Herzele with pickup, delivery and local examples.",
+    "Local 3D printing service from Herzele for projects in Ghent, Aalst and Dendermonde with flexible pickup and delivery.",
   alternates: {
     canonical,
     languages: {
-      "nl-BE": "https://www.x3dprints.be/blog/3d-printen-in-de-buurt/",
-      en: canonical,
-      "x-default": "https://www.x3dprints.be/blog/3d-printen-in-de-buurt/",
+      "nl-BE": nlCanonical,
+      "en-BE": canonical,
+      "x-default": nlCanonical,
     },
   },
   openGraph: {
-    title: "Local 3D printing near Ghent, Aalst and Dendermonde",
+    title: "Local 3D printing: Ghent, Aalst and Dendermonde",
     description:
-      "X3DPrints produces in Herzele and delivers in Ghent, Aalst and Dendermonde. See examples, logistics and how to get a fast quote.",
+      "See how local production, pickup and delivery work for fast project execution.",
     url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Local 3D printing" }],
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Local 3D printing" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Local 3D printing",
-    description: "Local 3D printing service for Ghent, Aalst and Dendermonde: examples, logistics and personal follow-up.",
-    images: ["/images/og-home.jpg"],
+    title: "Local 3D printing near you",
+    description: "Short project loops with local production and clear delivery options.",
+    images: ["/Logo.webp"],
   },
 }
+
+const tocItems = [
+  { id: "local-cities", label: "Which regions does this cover?" },
+  { id: "local-workflow", label: "How does local collaboration work?" },
+  { id: "local-logistics", label: "Which delivery options are available?" },
+  { id: "local-faq", label: "FAQ about local 3D printing" },
+  { id: "local-sources", label: "Sources and references" },
+]
 
 const cityCards = [
   {
     city: "Ghent",
-    info: "Pickup is a 20-minute drive. Ideal for agencies, makers and schools. Personal delivery for larger projects is possible.",
-    examples: "Retail displays for Ghent concept stores, parts for UGent student projects.",
+    info: "Useful for agencies, makers and schools that need short feedback loops.",
+    examples: "Retail displays, campaign props and student project parts.",
   },
   {
     city: "Aalst",
-    info: "Herzele sits right next to Aalst. Combine multiple parts and pick them up in one trip.",
-    examples: "Industrial custom work, assembly tools for SMEs in Aalst and Ninove.",
+    info: "Short distance from Herzele with easy part batching and quick pickups.",
+    examples: "Functional components, assembly helpers and custom tooling.",
   },
   {
     city: "Dendermonde",
-    info: "Regular runs towards Dendermonde for agencies and events. Alternative: Bpost with track & trace within 24-48h.",
-    examples: "Branding props, booth materials and prototypes for creative agencies.",
+    info: "Regular route planning plus shipping options when that fits better.",
+    examples: "Campaign assets, prototypes and short-run batches.",
   },
 ]
 
-const process = [
-  "Upload STL/STEP plus short context via the viewer or email.",
-  "Receive feedback on material, timing and price within one business day.",
-  "Pick logistics: pickup in Herzele, Bpost, or personal delivery (Ghent/Aalst/Dendermonde).",
-  "Pay by invoice or bank transfer; repeat orders move even faster.",
+const processSteps = [
+  "Send STL or STEP with context and target deadline.",
+  "Get material, timing and budget guidance within one business day.",
+  "Choose pickup, shipping or scheduled drop-off.",
+  "Reuse setup for repeat work and consistent output.",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
+const logisticsRows = [
+  {
+    option: "Pickup",
+    speed: "Fastest once the batch is ready",
+    note: "Best for local iterations and quick review cycles.",
+  },
+  {
+    option: "Shipping",
+    speed: "Depends on courier lead time",
+    note: "Useful when physical pickup is less practical.",
+  },
+  {
+    option: "Scheduled drop-off",
+    speed: "Aligned with project timing",
+    note: "Good for larger campaign batches and multi-box orders.",
+  },
+]
 
-    headline: "Local 3D printing near Ghent, Aalst and Dendermonde",
+const faqItems = [
+  {
+    q: "Can local rush projects be scheduled quickly?",
+    a: "Yes. With complete intake data and clean files we can usually schedule fast.",
+  },
+  {
+    q: "What is the main benefit of local collaboration?",
+    a: "Faster alignment, shorter communication loops and lower delivery uncertainty.",
+  },
+  {
+    q: "Can recurring deliveries be planned?",
+    a: "Yes. For repeat projects we can align recurring delivery windows with your workflow.",
+  },
+]
+
+const references = [
+  {
+    label: "Google Search docs: crawlable links",
+    href: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+  },
+  {
+    label: "All3DP FDM process explainer",
+    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+  },
+  {
+    label: "Prusa material guide",
+    href: "https://help.prusa3d.com/article/material-guide_220",
+  },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "Local 3D printing near Ghent, Aalst and Dendermonde",
   description:
-    "Local guide for 3D printing in Ghent, Aalst and Dendermonde with logistics options and examples of delivered projects.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-  datePublished: "2025-05-20",
-  dateModified: "2026-02-06",
+    "Local 3D printing guide with practical delivery, pickup and workflow options.",
+  datePublished,
+  dateModified,
+  image: "/Logo.webp",
   inLanguage: "en-BE",
-}
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  mainEntityOfPage: canonical,
+  items: faqItems.map((item) => ({ q: item.q, a: item.a })),
+})
+
+const howToJsonLd = buildHowToSchema({
+  name: "Start a local 3D printing project in 4 steps",
+  description:
+    "Launch a local project with fast intake, material alignment and delivery planning.",
+  inLanguage: "en-BE",
+  mainEntityOfPage: canonical,
+  totalTime: "PT3M",
+  steps: [
+    {
+      name: "Share file and context",
+      text: "Send STL or STEP with a short project brief and deadline.",
+    },
+    {
+      name: "Align material route",
+      url: "/en/materials#material-suggestion-tool",
+    },
+    {
+      name: "Review pricing and delivery",
+      url: pricingHref,
+    },
+    {
+      name: "Submit local request with prefill",
+      url: contactHref,
+    },
+  ],
+  toolNames: ["Material Suggestion Tool", "X3DPrints 3D viewer"],
+  supplyNames: ["STL or STEP file"],
+})
 
 export default function LocalArticleEnPage() {
   return (
-    <main className="relative">
+    <main className="relative overflow-hidden px-6 pb-24 pt-16 sm:px-8 lg:px-12">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(150%_85%_at_50%_-15%,rgba(99,102,241,0.16),transparent_70%)]"
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(120%_60%_at_50%_0%,rgba(99,102,241,.18),transparent_72%)]"
       />
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.07]" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.08]" />
 
-      <section className="px-6 pb-12 pt-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
-          <Reveal className="stacked-content">
-            <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
-              <ol className="flex flex-wrap gap-2">
-                <li>
-                  <Link
-                    href="/en/blog"
-                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li aria-hidden>/</li>
-                <li className="font-medium text-slate-700">Local 3D printing</li>
-              </ol>
-            </nav>
-            <h1 className="mt-6 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              Local 3D printing: Ghent, Aalst and Dendermonde
-            </h1>
-            <p className="mt-4 text-lg text-slate-700">
-              X3DPrints prints in Herzele (between Ghent and Aalst) and also delivers in Dendermonde. No factory floor - just one point of contact that
-              follows your project personally.
-            </p>
-            <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href="/en/contact">Plan pickup or delivery</ShimmerButton>
-              <Link
-                href="/en/portfolio"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
-              >
-                View examples
-              </Link>
+      <article className="mx-auto max-w-5xl space-y-10">
+        <header className="space-y-4">
+          <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
+            <ol className="flex flex-wrap gap-2">
+              <li>
+                <Link href="/en/blog" className="font-medium text-indigo-600 hover:text-indigo-500">
+                  Blog
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li className="font-medium text-slate-700">Local 3D printing</li>
+            </ol>
+          </nav>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600">Local service</p>
+          <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+            Local 3D printing: Ghent, Aalst and Dendermonde
+          </h1>
+          <p className="max-w-3xl text-lg text-slate-700">
+            Local production shortens feedback cycles. Fast alignment from briefing to delivery saves calendar time.
+          </p>
+          <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
+            Last updated: February 7, 2026
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <ShimmerButton
+              href={contactHref}
+              event={{ action: "cta_click", category: "blog_local_en_top", label: "contact_prefill" }}
+            >
+              Start local project
+            </ShimmerButton>
+            <ShimmerButton
+              href="/en/materials#material-suggestion-tool"
+              className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+              event={{ action: "cta_click", category: "blog_local_en_top", label: "materials" }}
+            >
+              Material Suggestion Tool
+            </ShimmerButton>
+            <Link
+              href={locatiesHref}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300 hover:bg-slate-50"
+            >
+              View locations
+            </Link>
+          </div>
+          <ContentTableOfContents title="Contents" items={tocItems} className="max-w-2xl" />
+        </header>
+
+        <section id="local-cities" className="scroll-mt-28">
+          <Reveal>
+            <h2 className="text-2xl font-semibold text-slate-900">Which regions does this cover?</h2>
+            <div className="mt-4 grid gap-4 md:grid-cols-3">
+              {cityCards.map((card) => (
+                <GlassCard key={card.city} className="p-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{card.city}</p>
+                  <p className="mt-2 text-sm text-slate-700">{card.info}</p>
+                  <p className="mt-2 text-xs text-slate-500">Examples: {card.examples}</p>
+                </GlassCard>
+              ))}
             </div>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
-          {cityCards.map((city) => (
-            <Reveal key={city.city}>
-              <GlassCard className="h-full border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
-                <h2 className="text-xl font-semibold text-slate-900">{city.city}</h2>
-                <p className="mt-2 text-sm text-slate-600">{city.info}</p>
-                <p className="mt-3 text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Examples</p>
-                <p className="text-sm text-slate-600">{city.examples}</p>
-              </GlassCard>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+        <section id="local-workflow" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">How we handle local projects</h2>
-              <ol className="mt-4 space-y-3 text-sm text-slate-600">
-                {process.map((step, index) => (
-                  <li key={step} className="flex gap-3">
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">How does local collaboration work?</h2>
+              <ol className="mt-4 space-y-2 text-sm text-slate-700">
+                {processSteps.map((step, index) => (
+                  <li key={step} className="flex items-start gap-2">
                     <span className="font-semibold text-slate-900">{index + 1}.</span>
                     <span>{step}</span>
                   </li>
                 ))}
               </ol>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <ShimmerButton
+                  href={pricingHref}
+                  event={{ action: "cta_click", category: "blog_local_en_mid", label: "pricing" }}
+                >
+                  Review pricing
+                </ShimmerButton>
+                <ShimmerButton
+                  href={contactHref}
+                  className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+                  event={{ action: "cta_click", category: "blog_local_en_mid", label: "contact_prefill" }}
+                >
+                  Request quote
+                </ShimmerButton>
+              </div>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
+        <section id="local-logistics" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="flex flex-col gap-6 border border-white/40 bg-white/85 p-6 shadow-xl backdrop-blur sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Next step</p>
-                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Need a pickup slot?</h2>
-                <p className="mt-2 text-sm text-slate-600">
-                  Share your timeline and we will reserve machine hours plus the pickup or delivery slot that suits you best.
-                </p>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Which delivery options are available?</h2>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-[520px] text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="border-b border-slate-200/70 text-slate-500">
+                      <th className="py-2 pr-4 font-semibold">Option</th>
+                      <th className="py-2 pr-4 font-semibold">Speed</th>
+                      <th className="py-2 pr-4 font-semibold">Guideline</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {logisticsRows.map((row) => (
+                      <tr key={row.option} className="border-b border-slate-200/70 last:border-0">
+                        <td className="py-2 pr-4 font-medium text-slate-900">{row.option}</td>
+                        <td className="py-2 pr-4">{row.speed}</td>
+                        <td className="py-2 pr-4">{row.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
-              <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href="/en/contact">Schedule pickup</ShimmerButton>
-                <Link href="/en/3d-modellen-vinden" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
-                  No model yet? Find one here
-                </Link>
-              </div>
+              <p className="mt-4 text-sm text-slate-600">
+                Also check{" "}
+                <Link href="/en/services" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  services
+                </Link>{" "}
+                and{" "}
+                <Link href="/en/portfolio" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  portfolio
+                </Link>{" "}
+                for local use cases.
+              </p>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
+
+        <section id="local-faq" className="scroll-mt-28">
+          <Faq title="FAQ about local 3D printing" items={faqItems} />
+        </section>
+
+        <section id="local-sources" className="scroll-mt-28">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </section>
+      </article>
+
+      <BlogReadMore />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <BlogReadMore />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
     </main>
   )
 }
-
-

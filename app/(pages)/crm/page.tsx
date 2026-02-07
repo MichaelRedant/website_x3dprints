@@ -38,15 +38,16 @@ type ReplyEntry = {
   sent?: boolean
 }
 
-const PASSWORD = "Heilig26102012!"
-const STORAGE_KEY = "x3dprints-crm-auth"
 const PROCESSED_KEY = "x3dprints-crm-processed"
 const STOCK_KEY = "x3dprints-crm-filament-stock"
+const AUTH_ENDPOINT = "/crm-auth.php"
+const CRM_DATA_ENDPOINT = "/crm-data.php"
 
 export default function CrmGate() {
   const [tab, setTab] = useState<"contact" | "stock">("contact")
   const [input, setInput] = useState("")
   const [isAuthed, setIsAuthed] = useState(false)
+  const [authLoading, setAuthLoading] = useState(true)
   const [error, setError] = useState("")
   const [logs, setLogs] = useState<LogEntry[]>([])
   const [loadingLogs, setLoadingLogs] = useState(false)
@@ -79,8 +80,25 @@ export default function CrmGate() {
   const [replyError, setReplyError] = useState("")
 
   useEffect(() => {
-    const stored = typeof window !== "undefined" ? window.localStorage.getItem(STORAGE_KEY) : null
-    if (stored === PASSWORD) setIsAuthed(true)
+    let cancelled = false
+    async function checkAuth() {
+      try {
+        setAuthLoading(true)
+        const res = await fetch(AUTH_ENDPOINT, { cache: "no-store", credentials: "same-origin" })
+        const json = (await res.json().catch(() => null)) as { authed?: boolean } | null
+        if (!cancelled) {
+          setIsAuthed(Boolean(json?.authed && res.ok))
+        }
+      } catch {
+        if (!cancelled) setIsAuthed(false)
+      } finally {
+        if (!cancelled) setAuthLoading(false)
+      }
+    }
+    checkAuth()
+    return () => {
+      cancelled = true
+    }
   }, [])
 
   useEffect(() => {
@@ -102,7 +120,11 @@ export default function CrmGate() {
       try {
         setLoadingLogs(true)
         setLogError("")
-        const res = await fetch("/data/contact-log.json", { cache: "no-store" })
+        const res = await fetch(`${CRM_DATA_ENDPOINT}?type=logs`, { cache: "no-store", credentials: "same-origin" })
+        if (res.status === 401) {
+          setIsAuthed(false)
+          throw new Error("Unauthorized")
+        }
         if (!res.ok) throw new Error(`Status ${res.status}`)
         const json = (await res.json()) as LogEntry[]
         setLogs(Array.isArray(json) ? json : [])
@@ -144,7 +166,11 @@ export default function CrmGate() {
       try {
         setMaterialLoading(true)
         setMaterialError("")
-        const res = await fetch("/material-stock.php", { cache: "no-store" })
+        const res = await fetch(`${CRM_DATA_ENDPOINT}?type=material-stock`, { cache: "no-store", credentials: "same-origin" })
+        if (res.status === 401) {
+          setIsAuthed(false)
+          throw new Error("Unauthorized")
+        }
         if (!res.ok) throw new Error(`Status ${res.status}`)
         const json = (await res.json()) as Record<string, Record<string, boolean>>
         setMaterialOverrides(json || {})
@@ -163,7 +189,11 @@ export default function CrmGate() {
       try {
         setLoadingReplies(true)
         setRepliesError("")
-        const res = await fetch("/data/contact-replies.json", { cache: "no-store" })
+        const res = await fetch(`${CRM_DATA_ENDPOINT}?type=replies`, { cache: "no-store", credentials: "same-origin" })
+        if (res.status === 401) {
+          setIsAuthed(false)
+          throw new Error("Unauthorized")
+        }
         if (!res.ok) throw new Error(`Status ${res.status}`)
         const json = (await res.json()) as ReplyEntry[]
         setReplies(Array.isArray(json) ? json : [])
@@ -298,6 +328,7 @@ export default function CrmGate() {
       }))
       const res = await fetch("/material-stock.php", {
         method: "POST",
+        credentials: "same-origin",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ key, label, inStock: value }),
       })
@@ -332,11 +363,15 @@ export default function CrmGate() {
         }
         return next
       })
-      await fetch("/material-stock.php", {
+      const res = await fetch("/material-stock.php", {
         method: "POST",
+        credentials: "same-origin",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ key, label, reset: true }),
       })
+      if (!res.ok) {
+        throw new Error("Reset failed")
+      }
     } catch {
       setMaterialError("Kon reset niet opslaan (schrijfrechten?).")
     }
@@ -358,16 +393,16 @@ export default function CrmGate() {
     try {
       setReplyStatus("sending")
       setReplyError("")
-      const textOKersion = replyHtml.replace(/<br\s*\/?>/gi, "\n").replace(/<[^>]+>/g, " ")
+      const textVersion = replyHtml.replace(/<br\s*\/?>/gi, "\n").replace(/<[^>]+>/g, " ")
       const res = await fetch("/contact-reply.php", {
         method: "POST",
+        credentials: "same-origin",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          token: "CHANGE_ME_TOKEN",
           to: replyToEmail,
           subject: replySubject,
           html: replyHtml,
-          text: textOKersion,
+          text: textVersion,
         }),
       })
       const json = await res.json().catch(() => null)
@@ -377,28 +412,40 @@ export default function CrmGate() {
       setReplyStatus("ok")
     } catch {
       setReplyStatus("error")
-      setReplyError("OKersturen mislukt. Controleer token of server.")
+      setReplyError("Versturen mislukt. Controleer login of server.")
     }
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    if (input === PASSWORD) {
-      setIsAuthed(true)
+    try {
       setError("")
-      if (typeof window !== "undefined") {
-        window.localStorage.setItem(STORAGE_KEY, PASSWORD)
+      const res = await fetch(AUTH_ENDPOINT, {
+        method: "POST",
+        credentials: "same-origin",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: input }),
+      })
+      const json = (await res.json().catch(() => null)) as { ok?: boolean; error?: string } | null
+      if (!res.ok || !json?.ok) {
+        throw new Error(json?.error || "Wachtwoord klopt niet.")
       }
-    } else {
-      setError("Wachtwoord klopt niet.")
+      setIsAuthed(true)
+      setInput("")
+    } catch (err) {
+      setIsAuthed(false)
+      setError(err instanceof Error ? err.message : "Wachtwoord klopt niet.")
     }
   }
 
-  function handleLogout() {
-    setIsAuthed(false)
-    setInput("")
-    if (typeof window !== "undefined") {
-      window.localStorage.removeItem(STORAGE_KEY)
+  async function handleLogout() {
+    try {
+      await fetch(AUTH_ENDPOINT, { method: "DELETE", credentials: "same-origin" })
+    } catch {
+      // Ignore network errors and force local logout state.
+    } finally {
+      setIsAuthed(false)
+      setInput("")
     }
   }
 
@@ -414,11 +461,15 @@ export default function CrmGate() {
         <header className="mb-10 text-center sm:text-left">
           <h1 className="text-balance text-4xl font-extrabold text-white sm:text-5xl">CRM toegang</h1>
           <p className="mt-3 text-lg text-slate-300">
-            Beveiligde zone. OKul het wachtwoord in om verder te gaan.
+            Beveiligde zone. Vul het wachtwoord in om verder te gaan.
           </p>
         </header>
 
-        {!isAuthed ? (
+        {authLoading ? (
+          <div className="flex flex-1 items-center justify-center">
+            <p className="rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-300">Authenticatie controleren...</p>
+          </div>
+        ) : !isAuthed ? (
           <div className="flex flex-1 items-center justify-center">
             <section className="relative w-full max-w-xl overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-indigo-900/60 p-[1px] shadow-2xl shadow-indigo-900/40">
               <div className="relative h-full rounded-2xl bg-slate-950/80 p-6 sm:p-8 backdrop-blur">
@@ -435,7 +486,7 @@ export default function CrmGate() {
                   <p className="text-xs uppercase tracking-[0.35em] text-indigo-300">CRM</p>
                   <h2 className="text-2xl font-bold text-white sm:text-3xl">Welkom terug</h2>
                   <p className="text-sm text-slate-300">
-                    Beveiligde zone voor contactlogs en filamentvoorraad. OKul het wachtwoord in om verder te gaan.
+                    Beveiligde zone voor contactlogs en filamentvoorraad. Vul het wachtwoord in om verder te gaan.
                   </p>
                 </div>
                 <form onSubmit={handleSubmit} className="mt-6 space-y-5 relative">
@@ -492,10 +543,10 @@ export default function CrmGate() {
                   onClick={exportCsv}
                   className="rounded-lg border border-white/20 px-3 py-2 text-xs font-semibold text-white transition hover:bg-white/10"
                 >
-                  Exporteer CSOK
+                  Exporteer CSV
                 </button>
                 <a
-                  href="/data/contact-log.json"
+                  href={`${CRM_DATA_ENDPOINT}?type=logs&download=1`}
                   className="rounded-lg border border-white/20 px-3 py-2 text-xs font-semibold text-white transition hover:bg-white/10"
                   target="_blank"
                   rel="noreferrer"
@@ -691,10 +742,10 @@ export default function CrmGate() {
                           disabled={replyStatus === "sending"}
                           className="inline-flex items-center justify-center rounded-xl bg-indigo-500 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20 transition hover:-translate-y-0.5 hover:bg-indigo-400 disabled:opacity-60"
                         >
-                          {replyStatus === "sending" ? "OKersturen..." : "OKerstuur antwoord"}
+                          {replyStatus === "sending" ? "Versturen..." : "Verstuur antwoord"}
                         </button>
                         <p className="text-xs text-slate-400">
-                          OKersturen via contact-reply.php (zorg dat token op server hetzelfde is).
+                          Versturen via beveiligde server-sessie.
                         </p>
                       </div>
                     </div>
@@ -709,7 +760,7 @@ export default function CrmGate() {
                     </div>
                     <div className="flex items-center gap-2">
                       <a
-                        href="/data/contact-replies.json"
+                        href={`${CRM_DATA_ENDPOINT}?type=replies&download=1`}
                         className="rounded-md border border-white/20 px-2 py-1 text-[11px] font-semibold text-white transition hover:bg-white/10"
                         target="_blank"
                         rel="noreferrer"
@@ -762,7 +813,7 @@ export default function CrmGate() {
                     <div>
                       <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Website voorraad</p>
                       <p className="text-sm text-slate-200">
-                        Toggle inStock voor lib/materials.ts (bewaar in /data/material-stock.json via PHP).
+                        Toggle inStock voor lib/materials.ts (bewaard in beveiligde CRM-data via PHP).
                       </p>
                     </div>
                     {materialError ? <p className="text-xs font-semibold text-rose-300">{materialError}</p> : null}
@@ -851,7 +902,7 @@ export default function CrmGate() {
                           </select>
                         </label>
                         <label className="grid gap-1 text-sm font-semibold text-white">
-                          OKoorraad (g)
+                          Voorraad (g)
                           <input
                             type="number"
                             min={0}
@@ -887,7 +938,7 @@ export default function CrmGate() {
                           type="submit"
                           className="inline-flex items-center justify-center rounded-xl bg-indigo-500 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20 transition hover:-translate-y-0.5 hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-300"
                         >
-                          OKoeg toe
+                          Voeg toe
                         </button>
                         <p className="text-xs text-slate-400">Opslag: lokaal in je browser.</p>
                       </div>
@@ -939,7 +990,7 @@ export default function CrmGate() {
                                   onClick={() => removeStock(item.id)}
                                   className="rounded-md border border-white/20 px-2 py-1 text-[11px] font-semibold text-white transition hover:bg-white/10"
                                 >
-                                  OKerwijder
+                                  Verwijder
                                 </button>
                               </div>
                               <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">

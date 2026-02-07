@@ -1,21 +1,17 @@
 <?php
 declare(strict_types=1);
 
-header('Content-Type: application/json; charset=utf-8');
+require_once __DIR__ . '/crm-common.php';
+
 mb_language('uni');
 mb_internal_encoding('UTF-8');
 
-$REPLY_TOKEN = getenv('REPLY_TOKEN') ?: 'CHANGE_ME_TOKEN';
-$dataDir = __DIR__ . '/data';
-$dataFile = $dataDir . '/contact-replies.json';
+crmRequireAuth();
 
-function respond(int $status, array $payload): void {
-    http_response_code($status);
-    echo json_encode($payload, JSON_UNESCAPED_UNICODE);
-    exit;
-}
+$dataFile = crmDataPath('contact-replies.json');
 
-function parseFromAddress(string $from): ?string {
+function parseFromAddress(string $from): ?string
+{
     $plain = trim($from);
     if (strpos($plain, '<') !== false && preg_match('/<([^>]+)>/', $plain, $matches)) {
         $plain = $matches[1];
@@ -24,7 +20,8 @@ function parseFromAddress(string $from): ?string {
     return filter_var($plain, FILTER_VALIDATE_EMAIL) ? $plain : null;
 }
 
-function sendMultipartMail(string $to, string $subject, string $textBody, string $htmlBody, string $replyTo, string $fromHeader): bool {
+function sendMultipartMail(string $to, string $subject, string $textBody, string $htmlBody, string $replyTo, string $fromHeader): bool
+{
     $boundary = 'b' . bin2hex(random_bytes(12));
     $headers = "From: {$fromHeader}\r\n";
     if ($replyTo !== '') {
@@ -55,43 +52,33 @@ function sendMultipartMail(string $to, string $subject, string $textBody, string
     return @mail($to, $subject, $body, $headers);
 }
 
-function saveReply(array $entry, string $file, string $dir): void {
-    if (!is_dir($dir)) {
-        @mkdir($dir, 0755, true);
-    }
-    $existing = [];
-    if (file_exists($file)) {
-        $json = file_get_contents($file);
-        $existing = json_decode($json, true);
-        if (!is_array($existing)) $existing = [];
-    }
+function saveReply(array $entry, string $file): void
+{
+    $existing = crmReadJsonFile($file);
     array_unshift($existing, $entry);
     if (count($existing) > 300) {
         $existing = array_slice($existing, 0, 300);
     }
-    $payload = json_encode($existing, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-    if ($payload !== false) {
-        @file_put_contents($file, $payload, LOCK_EX);
-    }
+    crmWriteJsonFile($file, $existing);
 }
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    respond(405, ['ok' => false, 'error' => 'Method not allowed']);
+if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'POST') {
+    crmRespond(405, ['ok' => false, 'error' => 'Method not allowed']);
 }
 
 $raw = file_get_contents('php://input');
-$data = json_decode($raw, true);
-if (!$data || !isset($data['token']) || $data['token'] !== $REPLY_TOKEN) {
-    respond(401, ['ok' => false, 'error' => 'Unauthorized']);
+$data = json_decode((string) $raw, true);
+if (!is_array($data)) {
+    crmRespond(400, ['ok' => false, 'error' => 'Invalid JSON']);
 }
 
-$to = filter_var(trim((string)($data['to'] ?? '')), FILTER_SANITIZE_EMAIL);
-$subject = trim((string)($data['subject'] ?? ''));
-$html = trim((string)($data['html'] ?? ''));
-$text = trim((string)($data['text'] ?? ''));
+$to = filter_var(trim((string) ($data['to'] ?? '')), FILTER_SANITIZE_EMAIL);
+$subject = trim((string) ($data['subject'] ?? ''));
+$html = trim((string) ($data['html'] ?? ''));
+$text = trim((string) ($data['text'] ?? ''));
 
 if ($to === '' || !filter_var($to, FILTER_VALIDATE_EMAIL) || $subject === '' || ($html === '' && $text === '')) {
-    respond(400, ['ok' => false, 'error' => 'to, subject en body zijn verplicht']);
+    crmRespond(400, ['ok' => false, 'error' => 'to, subject and body are required']);
 }
 
 $fromHeader = getenv('MAIL_FROM') ?: 'X3DPrints <michael@xinudesign.be>';
@@ -107,10 +94,11 @@ $entry = [
     'text' => $text,
     'sent' => $sent,
 ];
-saveReply($entry, $dataFile, $dataDir);
+saveReply($entry, $dataFile);
 
 if ($sent) {
-    respond(200, ['ok' => true]);
+    crmRespond(200, ['ok' => true]);
 }
 
-respond(500, ['ok' => false, 'error' => 'Versturen mislukt']);
+crmRespond(500, ['ok' => false, 'error' => 'Send failed']);
+

@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-events"
+const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-events/"
 const publishedDate = "2025-12-30T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -235,7 +235,7 @@ export default function UseCaseDinsdagEventsPage() {
               Daarom gebruiken eventbureaus en standbouwers steeds vaker FDM-printen voor visuele statements en slimme montages.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contactEtopic=use-case-events">Vraag event-advies</ShimmerButton>
+              <ShimmerButton href="/contact?topic=use-case-events">Vraag event-advies</ShimmerButton>
               <Link
                 href="/segments/3d-printing-marketing"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
@@ -476,7 +476,7 @@ export default function UseCaseDinsdagEventsPage() {
                 </div>
               </div>
               <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href="/contactEtopic=use-case-events">Start intake</ShimmerButton>
+                <ShimmerButton href="/contact?topic=use-case-events">Start intake</ShimmerButton>
                 <Link href="/viewer" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
                   Upload via viewer
                 </Link>
@@ -492,6 +492,8 @@ export default function UseCaseDinsdagEventsPage() {
     </main>
   )
 }
+
+
 
 
 

@@ -1,10 +1,10 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 
-const canonical = "https://www.x3dprints.be/blog/maker-monday-snapfit-parts"
+const canonical = "https://www.x3dprints.be/blog/maker-monday-snapfit-parts/"
 const publishedDate = "2026-01-10T08:00:00+01:00"
 
 export const metadata: Metadata = {
@@ -113,7 +113,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   headline: "Maker Monday #8: Snap-fit parts die blijven klikken",
   description:
     "Ontwerp snap-fit onderdelen voor PLA, PETG en TPU met juiste clearance, fillets, arm-diktes en testprotocol. Bevat interne links naar wanddikte- en tolerantiegidsen.",
@@ -464,6 +464,7 @@ export default function MakerMondaySnapfitPartsPage() {
     </main>
   )
 }
+
 
 
 

@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
@@ -7,7 +7,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/blog/3d-printen-mini-figuren"
+const canonical = "https://www.x3dprints.be/blog/3d-printen-mini-figuren/"
 const datePublished = "2024-06-10"
 const dateModified = "2026-02-04"
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "3D printen van miniaturen voor tabletop gaming",
     description:
-      "Leer hoe je haarscherpe D&D en Warhammer mini’s print: materiaalkeuze, detail, supports, primer, schilderen en veilige levering.",
+      "Leer hoe je haarscherpe D&D en Warhammer miniâ€™s print: materiaalkeuze, detail, supports, primer, schilderen en veilige levering.",
   url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte miniaturen en dice tower" }],
     locale: "nl_BE",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "3D printen van miniaturen voor tabletop gaming",
-    description: "Van STL tot geprinte mini’s: detail, supports, curing en schildertips voor D&D/Warhammer.",
+    description: "Van STL tot geprinte miniâ€™s: detail, supports, curing en schildertips voor D&D/Warhammer.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -38,7 +38,7 @@ type Card = { title: string; body: string }
 const highlights: Card[] = [
   {
     title: "Detail & schaal",
-    body: "Mini’s van 25-35 mm vragen strakke laaghoogtes (0,12-0,16 mm) en fijne nozzles. We plaatsen zichtzijde naar boven voor scherpe gezichten, wapenranden en ornamenten.",
+    body: "Miniâ€™s van 25-35 mm vragen strakke laaghoogtes (0,12-0,16 mm) en fijne nozzles. We plaatsen zichtzijde naar boven voor scherpe gezichten, wapenranden en ornamenten.",
   },
   {
     title: "Podiums & bases",
@@ -66,7 +66,7 @@ const materialTips: Card[] = [
 ]
 
 const prepList = [
-  "Kies schaal (25/28/32/54 mm) en zorg dat het STL bestand geschaald is vóór print.",
+  "Kies schaal (25/28/32/54 mm) en zorg dat het STL bestand geschaald is vÃ³Ã³r print.",
   "Noteer gewenste laaghoogte: 0,12 mm voor premium detail, 0,16 mm als balans tussen detail en kost.",
   "Geef aan welke zijde boven is (gezicht/ornamenten) om support-scars te vermijden.",
   "Voor speer/zwaard: check dikte >0,8 mm om breuk te vermijden; wij verstevigen indien nodig.",
@@ -85,7 +85,7 @@ const faq = [
   },
   {
     q: "Hoe worden supports gezet?",
-    a: "We oriënteren minis zodat gezicht en details supportvrij blijven. Supports staan onder mantels, onderzijde van wapens en bases. Na verwijdering schuren we licht als je dat wil.",
+    a: "We oriÃ«nteren minis zodat gezicht en details supportvrij blijven. Supports staan onder mantels, onderzijde van wapens en bases. Na verwijdering schuren we licht als je dat wil.",
   },
   {
     q: "Kan ik minis laten primen?",
@@ -124,7 +124,7 @@ export default function BlogMiniaturesPage() {
               3D printen van miniaturen voor Dungeons & Dragons en Warhammer
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Haarscherpe details, stevige bases en veilige levering. Zo printen we mini’s, dice towers en scenery die
+              Haarscherpe details, stevige bases en veilige levering. Zo printen we miniâ€™s, dice towers en scenery die
               direct klaar zijn om te primen, schilderen en te spelen aan je tafel.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -177,7 +177,7 @@ export default function BlogMiniaturesPage() {
                 en vangbak glad blijven en dobbelstenen niet stuiteren op support scars.
               </p>
               <p className="mt-3 text-sm text-slate-700">
-                Ontwerp/model is niet inbegrepen in de printkost. Lever een STL/STEP of vraag onze ontwerpservice aan €45/uur;
+                Ontwerp/model is niet inbegrepen in de printkost. Lever een STL/STEP of vraag onze ontwerpservice aan â‚¬45/uur;
                 wij optimaliseren voor printbaarheid en passen wanddiktes aan waar nodig.
               </p>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
@@ -268,9 +268,9 @@ export default function BlogMiniaturesPage() {
                 met dubbele doos en fragile-label.
               </p>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                <li>Zone 1 (tot 25 km): €15</li>
-                <li>Zone 2 (25-50 km): €30</li>
-                <li>Zone 3 (50-75 km): €45</li>
+                <li>Zone 1 (tot 25 km): â‚¬15</li>
+                <li>Zone 2 (25-50 km): â‚¬30</li>
+                <li>Zone 3 (50-75 km): â‚¬45</li>
                 <li>&gt; 75 km: maatwerk of pakketdienst</li>
               </ul>
             </GlassCard>
@@ -309,6 +309,7 @@ export default function BlogMiniaturesPage() {
     </main>
   )
 }
+
 
 
 

@@ -79,9 +79,13 @@ npm run build && npm run start
 
 ```
 npm run dev     # Next dev server
+npm run clean   # Verwijder .next en out
 npm run build   # Productie build
-npm run start   # Serve .next/standalone
+npm run start   # Serve statische export uit /out
 npm run lint    # ESLint (indien geconfigureerd)
+npm run check:security # Security guards (o.a. geen publieke CRM data)
+npm run check:seo      # SEO regressiechecks op source + export
+npm run verify         # lint + security + build + seo checks
 ```
 
 ---
@@ -168,6 +172,7 @@ README.md
 - **Segment CTA’s:** primaire CTA → `/contact?material=<slug>` (prefill), secundaire CTA → `/materials#material-suggestion-tool` (+ relevante blog/portfolio links).
 - **Tone of voice:** benadruk dat X3DPrints een éénmansstudio in bijberoep is (realistische planning, geen harde “2-5 dagen” belofte).
 - **LLM/ai.txt:** `public/llms.txt` wordt geserveerd op `/llms.txt` en staat vermeld in `app/robots.ts` zodat crawlers de merk- en contactrichtlijnen vinden.
+- **Locale html-signalen:** na `npm run build` zet `postbuild` de geëxporteerde `out/**/*.html` op route-correct `lang`/`data-locale` (`/en/*` => `en-BE`, anders `nl-BE`).
 
 ---
 
@@ -234,7 +239,7 @@ README.md
 
 ## Omgeving / .env
 
-Project draait zonder secrets, maar voor mailing zijn deze handig:
+Project draait zonder verplichte secrets voor de publieke site, maar voor mail + CRM zijn deze nodig:
 
 ```
 SMTP_HOST=
@@ -246,6 +251,14 @@ MAIL_FROM=
 DKIM_DOMAIN=
 DKIM_SELECTOR=
 DKIM_PRIVATE_KEY=
+CRM_PASSWORD_HASH=
+CRM_DATA_DIR=
+```
+
+CRM is hash-only: gebruik geen plain `CRM_PASSWORD`.  
+Hash genereren:
+```bash
+php -r "echo password_hash('jouw-sterk-wachtwoord', PASSWORD_DEFAULT), PHP_EOL;"
 ```
 
 ---
@@ -270,8 +283,7 @@ jobs:
           node-version: "20"
           cache: "npm"
       - run: npm ci
-      - run: npm run lint --if-present
-      - run: npm run build
+      - run: npm run verify
 ```
 
 ---
@@ -294,6 +306,7 @@ jobs:
 | **Material Suggestion Tool gooit build error** | Controleer dat alle arrays/steps afgesloten zijn en dat `recommendation` altijd aanwezig is voordat JSX rendert. |
 | **Viewer klaagt over ontbrekende `Link` of `ShimmerButton`** | Importeer deze expliciet in `app/(pages)/viewer/page.tsx`. |
 | **Sitemap mist nieuwe pagina** | Voeg slug toe aan `app/sitemap.ts` (static arrays) of haal uit content bron (`MATERIAL_DETAILS`, blog slugs, segments). |
+| **CRM auth is not configured** | Zet `CRM_PASSWORD_HASH` in je hosting environment en deploy opnieuw. |
 
 ---
 

@@ -1,14 +1,14 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import { SITE } from "@/lib/seo"
+import { SITE, buildFaqPageSchema } from "@/lib/seo"
 
 const slug = "selectieve-val-aziatische-hoornaar-sint-lievens-houtem"
-const canonical = `https://www.x3dprints.be/cases/${slug}`
+const canonical = `https://www.x3dprints.be/cases/${slug}/`
 const enCanonical = `https://www.x3dprints.be/en/cases/${slug}`
 const publishedDate = "2026-02-01T08:00:00+01:00"
 
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": canonical,
-      en: enCanonical,
+      "en-BE": enCanonical,
       "x-default": canonical,
     },
   },
@@ -97,7 +97,7 @@ const faqItems = [
   {
     question: "Wanneer plaats je best een selectieve val?",
     answer:
-      "In het vroege voorjaar, wanneer vooral de koninginnen actief zijn. Een gevangen koningin betekent doorgaans één nest minder later in het seizoen.",
+      "In het vroege voorjaar, wanneer vooral de koninginnen actief zijn. Een gevangen koningin betekent doorgaans Ã©Ã©n nest minder later in het seizoen.",
   },
   {
     question: "Is de Aziatische hoornaar gevaarlijk voor mensen?",
@@ -107,7 +107,7 @@ const faqItems = [
   {
     question: "Hoe controleer ik of ik de juiste soort gevangen heb?",
     answer:
-      "Maak een duidelijke foto en gebruik een herkenningsapp zoals ObsIdentify (via waarnemingen.be) of laat je vangst verifiëren via de contactkanalen van de actie (zoals aangegeven door de organisatoren/gemeente).",
+      "Maak een duidelijke foto en gebruik een herkenningsapp zoals ObsIdentify (via waarnemingen.be) of laat je vangst verifiÃ«ren via de contactkanalen van de actie (zoals aangegeven door de organisatoren/gemeente).",
   },
   {
     question: "Hoe kan ik gevangen hoornaars humaan doden?",
@@ -117,7 +117,7 @@ const faqItems = [
   {
     question: "Welke lokstof gebruik ik en hoeveel?",
     answer:
-      "Een vaak gebruikte mix is 1/3 bier, 1/3 wijn en 1/3 suikerstroop of grenadine. Vul de pot tot ongeveer 2 à 3 cm hoogte en ververs regelmatig, afhankelijk van vervuiling en verdunning.",
+      "Een vaak gebruikte mix is 1/3 bier, 1/3 wijn en 1/3 suikerstroop of grenadine. Vul de pot tot ongeveer 2 Ã  3 cm hoogte en ververs regelmatig, afhankelijk van vervuiling en verdunning.",
   },
   {
     question: "Waarom wordt de glazen pot niet meegeleverd?",
@@ -125,24 +125,16 @@ const faqItems = [
       "De oplossing is ontworpen voor hergebruik van standaard glazen potten met brede opening (bijvoorbeeld een chocopot). Dat maakt het goedkoper, duurzamer en makkelijker te vervangen.",
   },
   {
-    question: "Helpt één val echt?",
+    question: "Helpt Ã©Ã©n val echt?",
     answer:
       "Ja, zeker als veel inwoners meedoen. Het effect wordt groter naarmate de actie breder gedragen wordt: meer vallen in het vroege seizoen betekent minder kans op nieuwe nesten later.",
   },
 ]
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.answer,
-    },
-  })),
-}
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  items: faqItems,
+})
 
 const articleJsonLd = {
   "@context": "https://schema.org",
@@ -183,7 +175,7 @@ const imageObjectJsonLd = {
 const serviceJsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Custom 3D printing — selectieve val tegen Aziatische hoornaar",
+  name: "Custom 3D printing â€” selectieve val tegen Aziatische hoornaar",
   serviceType: "3D printing",
   areaServed: ["Belgium", "Flanders"],
   provider: {
@@ -305,7 +297,7 @@ export default function CaseStudySelectiveTrapPage() {
                 daarom info- en meldkanalen voor nesten en waarnemingen.
               </p>
               <p className="mt-3 text-sm text-slate-600">
-                Lees de achtergrond en officiële aanpak via de gemeente:{" "}
+                Lees de achtergrond en officiÃ«le aanpak via de gemeente:{" "}
                 <Link
                   href="https://www.sint-lievens-houtem.be/wespen-bijen-hommels-en-hoornaars"
                   target="_blank"
@@ -371,7 +363,7 @@ export default function CaseStudySelectiveTrapPage() {
               </div>
             </div>
             <p className="mt-3 text-sm text-slate-600">
-              Foto’s: 3D-geprinte trechter in PETG Matte, klaar voor montage op hergebruikte glazen potten.
+              Fotoâ€™s: 3D-geprinte trechter in PETG Matte, klaar voor montage op hergebruikte glazen potten.
             </p>
           </Reveal>
         </div>
@@ -428,7 +420,7 @@ export default function CaseStudySelectiveTrapPage() {
                 <li className="flex items-start gap-3">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
                   <span>
-                    Lokstof: vul tot ongeveer 2 à 3 cm met een mix (1/3 bier, 1/3 wijn, 1/3 suikerstroop of grenadine). Ververs
+                    Lokstof: vul tot ongeveer 2 Ã  3 cm met een mix (1/3 bier, 1/3 wijn, 1/3 suikerstroop of grenadine). Ververs
                     bij vervuiling of verdunning.
                   </span>
                 </li>
@@ -570,7 +562,7 @@ export default function CaseStudySelectiveTrapPage() {
             <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">Bronnen en partners</h2>
               <p className="mt-2 text-sm text-slate-600">
-                Transparantie helpt. Dit zijn de officiële pagina’s en partners die bij deze actie horen.
+                Transparantie helpt. Dit zijn de officiÃ«le paginaâ€™s en partners die bij deze actie horen.
               </p>
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
                 {externalLinks.map((ref) => (
@@ -632,6 +624,9 @@ export default function CaseStudySelectiveTrapPage() {
     </main>
   )
 }
+
+
+
 
 
 

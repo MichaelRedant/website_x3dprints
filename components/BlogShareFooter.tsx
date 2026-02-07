@@ -23,16 +23,17 @@ export default function BlogShareFooter() {
   }, [pathname])
 
   const isEn = pathname?.startsWith("/en")
+  const authorHref = isEn ? "/en/about#author" : "/about#author"
   const ctaCopy = isEn
     ? {
-        kicker: "Next step",
+        kicker: "Wrap-up",
         title: "Turn this article into an action plan",
         body: "Share your STL/STEP and tell us the context. We pick the material together and plan production.",
-        primary: { label: "Request a quote", href: "/contact" },
-        secondary: { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+        primary: { label: "Request a quote", href: "/en/contact" },
+        secondary: { label: "Material Suggestion Tool", href: "/en/materials#material-suggestion-tool" },
       }
     : {
-        kicker: "Volgende stap",
+        kicker: "Afronden",
         title: "Zet dit artikel om in een actieplan",
         body: "Stuur je STL/STEP en context door. We kiezen samen het materiaal en plannen de productie.",
         primary: { label: "Offerte aanvragen", href: "/contact" },
@@ -40,30 +41,41 @@ export default function BlogShareFooter() {
       }
 
   return (
-    <section className="mx-auto mt-12 max-w-5xl px-4 pb-16 sm:px-6 lg:px-8">
-      <div className="rounded-3xl border border-white/60 bg-white/85 p-6 shadow-lg backdrop-blur">
-        <div className="grid gap-6 lg:grid-cols-[2fr,1.2fr] lg:items-center">
-          <div className="space-y-3">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{ctaCopy.kicker}</p>
-            <h2 className="text-2xl font-semibold text-slate-900">{ctaCopy.title}</h2>
-            <p className="text-sm text-slate-600">{ctaCopy.body}</p>
-            <div className="flex flex-wrap gap-3">
-              <ShimmerButton href={ctaCopy.primary.href}>{ctaCopy.primary.label}</ShimmerButton>
-              <Link
-                href={ctaCopy.secondary.href}
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm hover:border-slate-400 hover:bg-slate-50"
-              >
-                {ctaCopy.secondary.label}
-              </Link>
-            </div>
+    <section className="mx-auto mt-8 max-w-5xl px-4 pb-14 sm:px-6 lg:px-8">
+      <div className="rounded-3xl border border-slate-200/70 bg-slate-50/85 p-6 shadow-sm backdrop-blur-sm">
+        <div className="mx-auto max-w-3xl space-y-4 text-center">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">{ctaCopy.kicker}</p>
+          <h2 className="text-2xl font-semibold text-slate-900">{ctaCopy.title}</h2>
+          <p className="text-sm text-slate-600">{ctaCopy.body}</p>
+          <p className="text-sm text-slate-600">
+            {isEn ? "Author" : "Auteur"}:{" "}
+            <Link href={authorHref} rel="author" className="font-medium text-slate-800 underline underline-offset-4">
+              {SITE.author.name}
+            </Link>
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <ShimmerButton href={ctaCopy.primary.href}>{ctaCopy.primary.label}</ShimmerButton>
+            <Link
+              href={ctaCopy.secondary.href}
+              className="inline-flex items-center text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+            >
+              {ctaCopy.secondary.label}
+            </Link>
           </div>
-          <div className="space-y-2 rounded-2xl border border-slate-200/70 bg-white/75 p-4 shadow-sm">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">
-              {isEn ? "Share this page" : "Deel deze pagina"}
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <ShareActions url={shareUrl} title={title} summary={title} layout="row" />
-            </div>
+        </div>
+
+        <div className="mx-auto mt-6 max-w-3xl space-y-2 rounded-2xl border border-slate-200/70 bg-white/70 p-4">
+          <p className="text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+            {isEn ? "Share this page" : "Deel deze pagina"}
+          </p>
+          <div className="flex justify-center">
+            <ShareActions
+              url={shareUrl}
+              title={title}
+              summary={title}
+              layout="row"
+              locale={isEn ? "en" : "nl"}
+            />
           </div>
         </div>
       </div>

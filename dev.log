@@ -1,0 +1,19 @@
+
+> x3dprints@0.1.0 dev
+> next dev --turbopack --hostname 127.0.0.1 --port 3012
+
+ ⚠ Specified "redirects" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+ ⚠ Specified "redirects" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+   ▲ Next.js 15.5.0 (Turbopack)
+   - Local:        http://127.0.0.1:3012
+   - Network:      http://127.0.0.1:3012
+   - Environments: .env
+
+ ✓ Starting...
+Creating turbopack project {
+  dir: 'C:\\Users\\donmi\\Documents\\website_x3dprints',
+  testMode: true
+}
+ ✓ Ready in 1103ms
+
+C:\Users\donmi\Documents\website_x3dprints>

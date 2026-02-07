@@ -412,7 +412,7 @@ function buildMetadata(meta: MetaInput, canonical: string, locale: "nl_BE" | "en
       canonical,
       languages: {
         "nl-BE": NL_CANONICAL,
-        en: EN_CANONICAL,
+        "en-BE": EN_CANONICAL,
         "x-default": NL_CANONICAL,
       },
     },

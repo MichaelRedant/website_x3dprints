@@ -2,13 +2,14 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import AutoCarousel from "@/components/AutoCarousel"
 import Faq from "@/components/Faq"
 import OrganizerBundles from "@/components/OrganizerBundles"
 import Reveal from "@/components/Reveal"
 import { ORGANIZER_PAGES } from "@/content/organizer-details"
 import { buildOrganizerContactHref, buildOrganizerSchemas, type OrganizerPageContent } from "@/lib/organizers"
-import { SITE } from "@/lib/seo"
+import { SITE, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 const PAGE_EN: OrganizerPageContent = {
   ...ORGANIZER_PAGES.tstak,
@@ -18,7 +19,7 @@ const PAGE_EN: OrganizerPageContent = {
     description:
       "Stanley/DeWALT TSTAK inserts for small parts and all-round kits: no rattle, clear label zones and optional anti-slip. Custom TSTAK insert in Belgium for field teams and vans.",
     canonical: `${SITE.url}/en/organizers/tstak`,
-    ogImage: "/images/organizers/tstak/tstak0.webp",
+    ogImage: "/images/organizers/tstak/tstak0.jpg",
   },
   heroTitle: "TSTAK inserts with fixed layouts",
   heroSubtitle: "Preset sets for small parts and all-round cases, custom possible.",
@@ -82,17 +83,41 @@ const PAGE_EN: OrganizerPageContent = {
 }
 
 const PAGE_URL = PAGE_EN.seo.canonical
-const contactHref = buildOrganizerContactHref("tstak")
+const contactHref = buildOrganizerContactHref("tstak", undefined, "en")
 const schemas = buildOrganizerSchemas(PAGE_EN, PAGE_URL)
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: PAGE_EN.faq.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+const faqSchema = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  mainEntityOfPage: PAGE_URL,
+  items: PAGE_EN.faq,
+})
+const howToSchema = buildHowToSchema({
+  name: "Request a custom TSTAK pocket",
+  description: "Send a photo and dimensions to get a fitted TSTAK insert.",
+  inLanguage: "en-BE",
+  mainEntityOfPage: PAGE_URL,
+  totalTime: "PT10M",
+  toolNames: ["Photo of the open case", "Measuring tape or caliper"],
+  url: PAGE_URL,
+  steps: [
+    { name: "Share model", text: "Model number of your TSTAK or a photo of the open case." },
+    { name: "Add dimensions", text: "Inner length/width/height in millimetres if available." },
+    { name: "List tools", text: "Small parts, hand tools or mix with quantities." },
+    { name: "Upload via form", text: "Use the contact form with TSTAK prefill to send it." },
+  ],
+})
+const tocItems = [
+  { id: "tstak-overview", label: "What does a TSTAK layout solve?" },
+  { id: "bundles", label: "Bundles and presets" },
+  { id: "carousel", label: "TSTAK layout photos" },
+  { id: "faq", label: "TSTAK FAQ" },
+  { id: "tstak-sources", label: "Sources and references" },
+]
+const references = [
+  { label: "DeWALT TSTAK product information", url: "https://www.dewalt.com/product/dwst17814/tstak%C2%AE-4-compartment-box" },
+  { label: "Stanley storage overview", url: "https://www.stanleytools.com/products/storage-and-organization" },
+  { label: "ISO/ASTM 52900 terminology", url: "https://www.astm.org/f2997-13r21.html" },
+]
+const lastUpdatedLabel = "Last updated: February 6, 2026"
 
 export const metadata: Metadata = {
   title: PAGE_EN.seo.title,
@@ -101,7 +126,7 @@ export const metadata: Metadata = {
     canonical: PAGE_URL,
     languages: {
       "nl-BE": `${SITE.url}/organizers/tstak`,
-      en: PAGE_URL,
+      "en-BE": PAGE_URL,
       "x-default": `${SITE.url}/organizers/tstak`,
     },
   },
@@ -131,6 +156,8 @@ export default function TstakPageEn() {
             <p className="max-w-3xl text-sm font-semibold text-slate-600 dark:text-slate-300">
               Built with field teams in mind: electricians, HVAC, installers, van setups.
             </p>
+            <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Contents" items={tocItems} className="max-w-xl" />
             <div className="overflow-hidden rounded-2xl border border-white/60 shadow-lg ring-1 ring-white/60 dark:border-slate-800 dark:ring-0">
               <Image
                 src="/images/organizers/tstak/tstak0.jpg"
@@ -154,6 +181,9 @@ export default function TstakPageEn() {
               <Link href="/en/blog/tool-organizers-3d-printing" className="underline decoration-yellow-400 hover:decoration-yellow-700">
                 Organizers blog
               </Link>
+              <a href="#tstak-sources" className="underline decoration-yellow-400 hover:decoration-yellow-700">
+                Sources
+              </a>
             </div>
           </div>
 
@@ -206,7 +236,7 @@ export default function TstakPageEn() {
           <Reveal className="grid gap-6 rounded-3xl bg-white/70 p-6 ring-1 ring-white/60 backdrop-blur dark:bg-[#0B0F1A]/70 dark:ring-0 md:grid-cols-[1fr_1fr] md:gap-10">
             <div className="space-y-3">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-yellow-700">What you solve</p>
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Order in every tray</h2>
+              <h2 id="tstak-overview" className="scroll-mt-28 text-2xl font-bold text-slate-900 dark:text-white">Order in every tray</h2>
               <p className="text-slate-700 dark:text-slate-200">Fixed pockets that keep parts apart and stay put upright.</p>
             </div>
             <ul className="grid gap-3">
@@ -252,13 +282,13 @@ export default function TstakPageEn() {
             </div>
           </Reveal>
 
-          <section id="bundles">
+          <section id="bundles" className="scroll-mt-28">
           <Reveal>
             <OrganizerBundles systemSlug={PAGE_EN.slug} systemName={PAGE_EN.systemName} bundles={PAGE_EN.bundles} />
           </Reveal>
           </section>
 
-          <section id="carousel">
+          <section id="carousel" className="scroll-mt-28">
           <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
             <div className="mb-4 flex items-center justify-between gap-3">
               <div>
@@ -293,13 +323,13 @@ export default function TstakPageEn() {
           </Reveal>
           </section>
 
-          <section id="faq">
+          <section id="faq" className="scroll-mt-28">
           <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
             <Faq items={PAGE_EN.faq} title="TSTAK organizer FAQ" className="mt-0" />
           </Reveal>
           </section>
 
-          <section id="howto">
+          <section id="howto" className="scroll-mt-28">
           <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
             <div className="space-y-3">
               <h2 className="text-xl font-bold text-slate-900 dark:text-white">Order that travels well</h2>
@@ -311,6 +341,26 @@ export default function TstakPageEn() {
               </p>
             </div>
           </Reveal>
+          </section>
+
+          <section id="tstak-sources" className="scroll-mt-28">
+            <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
+              <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Sources and references</h2>
+              <p className="mt-2 text-sm text-slate-600 dark:text-slate-200">
+                These references support system naming, compatibility and terminology on this TSTAK page.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-100">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
           </section>
         </div>
       </section>
@@ -330,20 +380,7 @@ export default function TstakPageEn() {
               thumbnail: PAGE_EN.seo.ogImage,
               caption: "Custom TSTAK organizer insert with label zones and anti-slip options",
             },
-            {
-              "@context": "https://schema.org",
-              "@type": "HowTo",
-              name: "Request a custom TSTAK pocket",
-              description: "Send a photo and dimensions to get a fitted TSTAK insert.",
-              step: [
-                { "@type": "HowToStep", position: 1, name: "Share model", text: "Model number of your TSTAK or a photo of the open case." },
-                { "@type": "HowToStep", position: 2, name: "Add dimensions", text: "Inner length/width/height in millimetres if available." },
-                { "@type": "HowToStep", position: 3, name: "List tools", text: "Small parts, hand tools or mix with quantities." },
-                { "@type": "HowToStep", position: 4, name: "Upload via form", text: "Use the contact form with TSTAK prefill to send it." },
-              ],
-              tool: ["Photo of the open case", "Measuring tape or caliper"],
-              totalTime: "PT10M",
-            },
+            howToSchema,
           ]),
         }}
       />

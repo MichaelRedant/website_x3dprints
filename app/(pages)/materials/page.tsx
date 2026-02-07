@@ -1,6 +1,7 @@
 // app/(pages)/materials/page.tsx
 import type { Metadata } from "next"
 import Link from "next/link"
+import { CheckCircle2, Clock3, Layers3, MapPin } from "lucide-react"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import { MATERIAL_ORDER, MATERIAL_SLUGS, materialsByLocale } from "@/lib/materials"
@@ -10,27 +11,35 @@ import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
 import { MATERIAL_DETAILS } from "@/content/material-details"
 import MaterialSuggestionToolLoader from "@/components/MaterialSuggestionToolLoader"
-import { buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema, SchemaOfferInput } from "@/lib/seo"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import {
+  buildFaqPageSchema,
+  buildHowToSchema,
+  buildLocalBusinessSchema,
+  buildOfferCatalog,
+  buildServiceSchema,
+  SchemaOfferInput,
+} from "@/lib/seo"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 
 export const metadata: Metadata = {
-  title: "Materialen voor 3D printen (PLA, PETG, TPU) | X3DPrints",
+  title: "3D print materialen en 3D print materiaal kiezen | X3DPrints",
   description:
-    "Materialen voor 3D printen in Vlaanderen: PLA Matte/Silk/Wood, PETG, TPU en specials. Bekijk eigenschappen, voorraad en vraag gratis materiaaladvies.",
+    "Vergelijk 3D print materialen in Vlaanderen: PLA Matte/Silk/Wood, PETG, TPU en specials. Kies het juiste 3D print materiaal op basis van sterkte, look en prijsimpact.",
   alternates: {
     canonical: "https://www.x3dprints.be/materials/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/materials/",
-      en: "https://www.x3dprints.be/en/materials/",
+      "en-BE": "https://www.x3dprints.be/en/materials/",
       "x-default": "https://www.x3dprints.be/materials/",
     },
   },
   openGraph: {
-    title: "Materialen voor 3D printen | X3DPrints",
+    title: "3D print materialen | PLA, PETG en TPU bij X3DPrints",
     description:
-      "Materialen voor 3D printen: PLA-varianten, PETG en TPU met kleuren, specs en voorraadstatus.",
+      "3D print materiaal kiezen: vergelijk PLA-varianten, PETG en TPU met kleuren, specs, voorraadstatus en advies.",
     url: "https://www.x3dprints.be/materials/",
     images: [{ url: "/images/filament/petg_1.webp", width: 1200, height: 630, alt: "Materialen voor 3D printen bij X3DPrints" }],
     siteName: "X3DPrints",
@@ -38,9 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Materialen voor 3D printen | X3DPrints",
+    title: "3D print materialen | X3DPrints",
     description:
-      "Materialen voor 3D printen: PLA-varianten, PETG en TPU met kleuren, specs en voorraadstatus.",
+      "Vergelijk 3D print materiaal: PLA-varianten, PETG en TPU met kleuren, specs en voorraadstatus.",
     images: ["/images/filament/petg_1.webp"],
   },
 }
@@ -51,6 +60,33 @@ export default function MaterialsPage({ locale }: PageProps) {
   const normalizedLocale = normalizeLocale(locale)
   const isEn = normalizedLocale === "en"
   const localize = (href: string) => localizeHref(href, normalizedLocale)
+  const tocItems = isEn
+    ? [
+        { id: "material-suggestion-tool", label: "How does the Material Suggestion Tool work?" },
+        { id: "materials-library", label: "Which 3D printing materials are available?" },
+        { id: "materials-compare", label: "How do key materials compare?" },
+        { id: "materials-faq", label: "FAQ and next steps" },
+        { id: "materials-sources", label: "Sources and references" },
+      ]
+    : [
+        { id: "material-suggestion-tool", label: "Hoe werkt de Material Suggestion Tool?" },
+        { id: "materials-library", label: "Welke 3D-printmaterialen zijn beschikbaar?" },
+        { id: "materials-compare", label: "Hoe vergelijken de kernmaterialen?" },
+        { id: "materials-faq", label: "FAQ en volgende stappen" },
+        { id: "materials-sources", label: "Bronnen en referenties" },
+      ]
+  const references = isEn
+    ? [
+        { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "Bambu Lab filament guide", url: "https://wiki.bambulab.com/en/filament-acc/filament/overview" },
+        { label: "All3DP PLA vs PETG comparison", url: "https://all3dp.com/2/pla-vs-petg-differences-compared/" },
+      ]
+    : [
+        { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "Bambu Lab filamentgids", url: "https://wiki.bambulab.com/en/filament-acc/filament/overview" },
+        { label: "All3DP vergelijking PLA vs PETG", url: "https://all3dp.com/2/pla-vs-petg-differences-compared/" },
+      ]
+  const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"
   const materialsMap = materialsByLocale(normalizedLocale)
   const materials = MATERIAL_ORDER.map((key) => {
     const m = materialsMap[key]
@@ -130,7 +166,7 @@ export default function MaterialsPage({ locale }: PageProps) {
     : {
         heroTitle: "Materialen voor 3D printen",
         heroIntro:
-          "Overzicht van onze meest gebruikte filamenten met eigenschappen, kleuropties en voorraad: PLA (Matte, Tough+, Silk, Marble, Wood, Translucent, enz.), PETG en TPU. Twijfel je? Beantwoord vijf vragen in de Material Suggestion Tool en je krijgt meteen drie opties met prijsimpact.",
+          "Hier vergelijk je het juiste 3D print materiaal voor jouw toepassing: PLA (Matte, Tough+, Silk, Marble, Wood, Translucent, enz.), PETG en TPU, inclusief eigenschappen, kleuropties en voorraad. Twijfel je? Beantwoord vijf vragen in de Material Suggestion Tool en je krijgt meteen drie opties met prijsimpact.",
         materialListName: "Materialen voor 3D printen",
         suggestionLink: "Material Suggestion Tool",
         whyLabel: "Waarom deze tool?",
@@ -180,6 +216,79 @@ export default function MaterialsPage({ locale }: PageProps) {
         catalogName: "Materialen advies en samples",
         serviceName: "Filament materiaaladvies",
       }
+
+  const comparisonCopy = isEn
+    ? {
+        title: "Quick material comparison for real projects",
+        intro:
+          "Use this table for faster material decisions on quote-ready projects. Final choice still depends on your geometry, wall thickness and print direction.",
+        caption: "3D printing material comparison for use case, outdoor use and price impact",
+        headers: {
+          material: "Material",
+          bestFor: "Best for",
+          outdoor: "Outdoor",
+          flexibility: "Flexibility",
+          priceImpact: "Price impact",
+        },
+        ctaPrimary: "Request material advice",
+        ctaSecondary: "View pricing",
+      }
+    : {
+        title: "Snelle materiaalvergelijking voor echte projecten",
+        intro:
+          "Gebruik deze tabel om sneller een materiaalkeuze te maken voor offerteklare projecten. De definitieve keuze hangt nog af van je geometrie, wanddikte en printoriëntatie.",
+        caption: "Vergelijking van 3D-printmaterialen op use-case, outdoor gebruik en prijsimpact",
+        headers: {
+          material: "Materiaal",
+          bestFor: "Beste voor",
+          outdoor: "Outdoor",
+          flexibility: "Flexibiliteit",
+          priceImpact: "Prijsimpact",
+        },
+        ctaPrimary: "Vraag materiaaladvies",
+        ctaSecondary: "Bekijk pricing",
+      }
+
+  const comparisonRows = isEn
+    ? [
+        { material: "PLA Matte", bestFor: "Prototypes, indoor fixtures, visual models", outdoor: "Limited", flexibility: "Rigid", priceImpact: "Base" },
+        { material: "PLA Tough+", bestFor: "Functional parts with higher impact resistance", outdoor: "Moderate", flexibility: "Semi-rigid", priceImpact: "+10-20%" },
+        { material: "PETG", bestFor: "Outdoor parts, brackets, utility parts", outdoor: "Strong", flexibility: "Semi-rigid", priceImpact: "+20%" },
+        { material: "TPU", bestFor: "Grips, bumpers, flexible interfaces", outdoor: "Strong", flexibility: "Flexible", priceImpact: "+30%" },
+        { material: "PLA Silk/Marble", bestFor: "Premium visual props and gifts", outdoor: "Limited", flexibility: "Rigid", priceImpact: "+20%" },
+      ]
+    : [
+        { material: "PLA Matte", bestFor: "Prototypes, indoor onderdelen, visuele modellen", outdoor: "Beperkt", flexibility: "Stijf", priceImpact: "Basis" },
+        { material: "PLA Tough+", bestFor: "Functionele onderdelen met hogere impactweerstand", outdoor: "Matig", flexibility: "Semi-stijf", priceImpact: "+10-20%" },
+        { material: "PETG", bestFor: "Outdoor onderdelen, brackets, utility parts", outdoor: "Sterk", flexibility: "Semi-stijf", priceImpact: "+20%" },
+        { material: "TPU", bestFor: "Grips, bumpers, flexibele interfaces", outdoor: "Sterk", flexibility: "Flexibel", priceImpact: "+30%" },
+        { material: "PLA Silk/Marble", bestFor: "Premium visuele props en gifts", outdoor: "Beperkt", flexibility: "Stijf", priceImpact: "+20%" },
+      ]
+  const heroFacts = isEn
+    ? [
+        { icon: Layers3, label: "Material options", value: `${materials.length}+ active material profiles` },
+        { icon: Clock3, label: "Advice speed", value: "Material route in about 2 minutes" },
+        { icon: MapPin, label: "Production context", value: "Local 3D print service in Belgium" },
+      ]
+    : [
+        { icon: Layers3, label: "Materiaalopties", value: `${materials.length}+ actieve materiaalprofielen` },
+        { icon: Clock3, label: "Advies-snelheid", value: "Materiaalroute in ongeveer 2 minuten" },
+        { icon: MapPin, label: "Productiecontext", value: "Lokale 3D print service in Belgie" },
+      ]
+  const heroTrustPoints = isEn
+    ? [
+        "Built for practical 3D model printing and quote-ready decisions",
+        "Direct links from material advice to pricing and contact",
+        "Keyword-focused around 3D print materials, PETG, TPU and PLA variants",
+      ]
+    : [
+        "Gebouwd voor praktisch 3D model printen en offerteklare beslissingen",
+        "Directe links van materiaaladvies naar pricing en contact",
+        "Keyword-focus op 3D print materiaal, PETG, TPU en PLA-varianten",
+      ]
+  const libraryLead = isEn
+    ? "Compare all major 3D printing material profiles before finalizing your quote route."
+    : "Vergelijk alle belangrijke 3D-printmateriaalprofielen voor je de offerte-route finaliseert."
 
   const faqPromoProps = isEn
     ? {
@@ -254,78 +363,59 @@ export default function MaterialsPage({ locale }: PageProps) {
     })),
   }
 
-  const howToJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
+  const howToJsonLd = buildHowToSchema({
     name: isEn ? "Choose 3D printing material with the Material Suggestion Tool" : "Kies 3D-printmateriaal via de Material Suggestion Tool",
     description: isEn
       ? "Answer five short questions to get three material options (recommended, budget, premium look) with price impact and direct quote links."
       : "Beantwoord vijf korte vragen en krijg drie materiaalopties (aanbevolen, budget, premium look) met prijsimpact en directe offerte-links.",
+    inLanguage: isEn ? "en-BE" : "nl-BE",
+    mainEntityOfPage: pageBase,
     totalTime: "PT2M",
-    step: [
+    url: toolUrl,
+    steps: [
       {
-        "@type": "HowToStep",
-        position: 1,
         name: isEn ? "Open the tool" : "Open de tool",
         url: toolUrl,
-        itemListElement: [
-          { "@type": "HowToDirection", text: isEn ? "Scroll to the Material Suggestion Tool" : "Scroll naar de Material Suggestion Tool" },
-        ],
+        directions: [isEn ? "Scroll to the Material Suggestion Tool" : "Scroll naar de Material Suggestion Tool"],
       },
       {
-        "@type": "HowToStep",
-        position: 2,
         name: isEn ? "Answer 5 questions" : "Beantwoord 5 vragen",
-        itemListElement: [
-          { "@type": "HowToTip", text: isEn ? "Indicate indoor/outdoor use and look preference" : "Geef binnen/buitengebruik en gewenste look aan" },
-          { "@type": "HowToTip", text: isEn ? "Mention tolerance or flexibility needs" : "Vermeld tolerantie of nood aan flexibiliteit" },
+        tips: [
+          isEn ? "Indicate indoor/outdoor use and look preference" : "Geef binnen/buitengebruik en gewenste look aan",
+          isEn ? "Mention tolerance or flexibility needs" : "Vermeld tolerantie of nood aan flexibiliteit",
         ],
       },
       {
-        "@type": "HowToStep",
-        position: 3,
         name: isEn ? "Review 3 options" : "Bekijk 3 opties",
-        itemListElement: [
-          { "@type": "HowToDirection", text: isEn ? "Compare recommended, budget and premium look" : "Vergelijk aanbevolen, budget en premium look" },
-        ],
+        directions: [isEn ? "Compare recommended, budget and premium look" : "Vergelijk aanbevolen, budget en premium look"],
       },
       {
-        "@type": "HowToStep",
-        position: 4,
         name: isEn ? "Request a quote" : "Vraag een offerte",
-        itemListElement: [
-          { "@type": "HowToDirection", text: isEn ? "Click the preferred option to prefill the contact form" : "Klik op je keuze om het contactformulier vooraf te vullen" },
+        directions: [
+          isEn
+            ? "Click the preferred option to prefill the contact form"
+            : "Klik op je keuze om het contactformulier vooraf te vullen",
         ],
       },
     ],
-    tool: [
-      { "@type": "HowToTool", name: isEn ? "STL/STEP/3MF file (optional)" : "STL/STEP/3MF-bestand (optioneel)" },
-      { "@type": "HowToTool", name: isEn ? "Material Suggestion Tool" : "Material Suggestion Tool" },
-    ],
-    url: toolUrl,
-  }
+    toolNames: ["Material Suggestion Tool"],
+    supplyNames: [isEn ? "STL/STEP/3MF file (optional)" : "STL/STEP/3MF-bestand (optioneel)"],
+  })
 
-  const faqEntities = materials.flatMap((material) =>
+  const faqItems = materials.flatMap((material) =>
     material.faq.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
+      question: item.question,
+      answer: item.answer,
     })),
   )
 
-  const faqJsonLd =
-    faqEntities.length > 0
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-
-          inLanguage: ["nl-BE", "en-BE"],
-          mainEntity: faqEntities,
-        }
-      : null
+  const faqJsonLd = faqItems.length
+    ? buildFaqPageSchema({
+        items: faqItems,
+        inLanguage: isEn ? "en-BE" : "nl-BE",
+        mainEntityOfPage: pageBase,
+      })
+    : null
 
   const pageDescription = isEn
     ? "3D printing materials in Flanders: PLA Matte/Silk/Wood, PETG, TPU and specials. See properties, colours and stock, and get free material advice."
@@ -336,7 +426,7 @@ export default function MaterialsPage({ locale }: PageProps) {
     ? metadata.openGraph.url
     : typeof metadata.alternates?.canonical === "string"
     ? metadata.alternates.canonical
-    : "https://www.x3dprints.be/materials"
+    : "https://www.x3dprints.be/materials/"
   const catalogJsonLd = buildOfferCatalog(copy.catalogName, materialOffers)
 
   const localBusinessJsonLd = buildLocalBusinessSchema({
@@ -347,7 +437,11 @@ export default function MaterialsPage({ locale }: PageProps) {
     areaServed: "BE",
   })
 
-  const serviceJsonLd = buildServiceSchema(copy.serviceName, materialOffers, canonicalUrl)
+  const serviceJsonLd = buildServiceSchema(copy.serviceName, materialOffers, canonicalUrl, {
+    description: pageDescription,
+    inLanguage: isEn ? "en-BE" : "nl-BE",
+    mainEntityOfPage: canonicalUrl,
+  })
 
   return (
     <main className="relative">
@@ -360,24 +454,78 @@ export default function MaterialsPage({ locale }: PageProps) {
 
       <section className="px-6 pt-14 pb-8 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              {copy.heroTitle}
-            </h1>
-            <p className="mt-3 max-w-2xl text-slate-600">
-              {copy.heroIntro}{" "}
-              <Link href="#material-suggestion-tool" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                {copy.suggestionLink}
-              </Link>
-            </p>
-          </Reveal>
+          <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+            <Reveal>
+              <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+                {copy.heroTitle}
+              </h1>
+              <p className="mt-3 max-w-2xl text-slate-600">
+                {copy.heroIntro}{" "}
+                <Link href="#material-suggestion-tool" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  {copy.suggestionLink}
+                </Link>
+              </p>
+              <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <ShimmerButton
+                  href="#material-suggestion-tool"
+                  event={{ action: "cta_click", category: "materials_hero", label: "tool" }}
+                >
+                  {copy.suggestionLink}
+                </ShimmerButton>
+                <Link
+                  href={localize("/pricing")}
+                  className="inline-flex items-center justify-center rounded-xl border border-slate-200/80 bg-white/80 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white"
+                >
+                  {isEn ? "View pricing first" : "Eerst pricing bekijken"}
+                </Link>
+                <Link
+                  href={localize("/contact")}
+                  className="inline-flex items-center justify-center text-sm font-semibold text-indigo-700 transition hover:text-indigo-600"
+                >
+                  {isEn ? "Request material quote" : "Vraag materiaalofferte"} <span aria-hidden className="ml-1">-&gt;</span>
+                </Link>
+              </div>
+              <ContentTableOfContents
+                title={isEn ? "Contents" : "Inhoud"}
+                items={tocItems}
+                className="mt-6 max-w-2xl"
+              />
+            </Reveal>
+            <Reveal delay={0.05}>
+              <GlassCard className="p-6 sm:p-7">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                  {isEn ? "Material snapshot" : "Materiaal-snapshot"}
+                </p>
+                <ul className="mt-4 space-y-3">
+                  {heroFacts.map((fact) => (
+                    <li key={fact.label} className="flex gap-3 rounded-2xl border border-slate-200/70 bg-white/75 p-3">
+                      <fact.icon className="mt-0.5 h-5 w-5 text-indigo-600" aria-hidden />
+                      <div>
+                        <p className="text-xs uppercase tracking-wide text-slate-500">{fact.label}</p>
+                        <p className="text-sm font-semibold text-slate-900">{fact.value}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <ul className="mt-5 space-y-2 text-sm text-slate-600">
+                  {heroTrustPoints.map((point) => (
+                    <li key={point} className="flex items-start gap-2">
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 text-emerald-600" aria-hidden />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </GlassCard>
+            </Reveal>
+          </div>
         </div>
       </section>
 
 
       <section
         id="material-suggestion-tool"
-        className="px-6 pb-16 sm:px-8 lg:px-12"
+        className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12"
         aria-label="Material Suggestion Tool"
       >
         <div className="mx-auto max-w-6xl space-y-8">
@@ -432,8 +580,68 @@ export default function MaterialsPage({ locale }: PageProps) {
       </section>
 
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="materials-library" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+        <div className="mx-auto mb-6 max-w-6xl">
+          <Reveal className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+              {isEn ? "Material library" : "Materiaalbibliotheek"}
+            </p>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              {isEn ? "Which materials can you choose for 3D printing?" : "Welke materialen kies je voor 3D printen?"}
+            </h2>
+            <p className="mt-2 text-slate-600">
+              {isEn
+                ? "Compare filament properties, stock and visual finish before requesting your quote."
+                : "Vergelijk filament-eigenschappen, voorraad en visuele afwerking voor je offerte-aanvraag."}
+            </p>
+            <p className="mt-2 text-sm text-slate-600">{libraryLead}</p>
+          </Reveal>
+        </div>
         <MaterialGrid materials={materials} />
+
+        <div id="materials-compare" className="scroll-mt-28 mx-auto mt-10 max-w-6xl rounded-2xl border border-slate-200/70 bg-white/80 p-5">
+          <h2 className="text-xl font-semibold text-slate-900">{comparisonCopy.title}</h2>
+          <p className="mt-2 text-sm text-slate-600">{comparisonCopy.intro}</p>
+          <div className="mt-4 overflow-x-auto rounded-xl border border-slate-200/70 bg-white/90">
+            <table className="min-w-full text-left text-sm text-slate-700">
+              <caption className="sr-only">{comparisonCopy.caption}</caption>
+              <thead className="bg-slate-50 text-xs uppercase tracking-wide text-slate-500">
+                <tr>
+                  <th className="px-4 py-3">{comparisonCopy.headers.material}</th>
+                  <th className="px-4 py-3">{comparisonCopy.headers.bestFor}</th>
+                  <th className="px-4 py-3">{comparisonCopy.headers.outdoor}</th>
+                  <th className="px-4 py-3">{comparisonCopy.headers.flexibility}</th>
+                  <th className="px-4 py-3">{comparisonCopy.headers.priceImpact}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisonRows.map((row) => (
+                  <tr key={row.material} className="border-t border-slate-200/70">
+                    <td className="px-4 py-3 font-semibold text-slate-900">{row.material}</td>
+                    <td className="px-4 py-3">{row.bestFor}</td>
+                    <td className="px-4 py-3">{row.outdoor}</td>
+                    <td className="px-4 py-3">{row.flexibility}</td>
+                    <td className="px-4 py-3">{row.priceImpact}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <ShimmerButton
+              href={localize("/contact?material=PETG")}
+              event={{ action: "cta_click", category: "materials_compare", label: "advice" }}
+            >
+              {comparisonCopy.ctaPrimary}
+            </ShimmerButton>
+            <Link
+              href={localize("/pricing")}
+              className="inline-flex items-center rounded-xl border border-slate-200/80 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
+            >
+              {comparisonCopy.ctaSecondary}
+            </Link>
+          </div>
+        </div>
 
         {/* Legenda + CTA */}
         <div className="mx-auto mt-10 max-w-6xl rounded-2xl border border-slate-200/70 bg-white/70 p-5 text-sm text-slate-600 backdrop-blur">
@@ -443,22 +651,11 @@ export default function MaterialsPage({ locale }: PageProps) {
               <span className="h-4 w-4 rounded-full bg-black" /> <span>{copy.legendInStock}</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="relative h-4 w-4 rounded-full bg-slate-400">
-                <span
-                  className="absolute inset-0 rounded-full"
-                  style={{
-                    backgroundImage:
-                      "repeating-linear-gradient(135deg, rgba(0,0,0,.08) 0 4px, rgba(0,0,0,0) 4px 8px)",
-                  }}
-                />
-              </span>
+              <span className="h-4 w-4 rounded-full bg-[repeating-linear-gradient(135deg,rgba(15,23,42,0.32)_0_3px,rgba(148,163,184,0.72)_3px_6px)]" />
               <span>{copy.legendBackorder}</span>
             </div>
             <div className="flex items-center gap-2">
-              <span
-                className="h-4 w-4 rounded-full"
-                style={{ background: "linear-gradient(180deg,#7ae5ffc0,#7ae5ff50)" }}
-              />
+              <span className="h-4 w-4 rounded-full bg-[linear-gradient(180deg,rgba(122,229,255,0.75),rgba(122,229,255,0.35))]" />
               <span>{copy.legendTranslucent}</span>
             </div>
           </div>
@@ -490,7 +687,7 @@ export default function MaterialsPage({ locale }: PageProps) {
       </div>
 
       {/* FAQ / Promo */}
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="materials-faq" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <GlassCard className="overflow-hidden p-8 sm:p-10">
@@ -501,22 +698,38 @@ export default function MaterialsPage({ locale }: PageProps) {
       </section>
 
       <ReadMoreLinks
+        pageType="materials"
         title={copy.readMoreTitle}
         intro={copy.readMoreIntro}
-        primaryLinks={[
-          { label: copy.readMorePrimary.services, href: localize("/services") },
-          { label: copy.readMorePrimary.pricing, href: localize("/pricing") },
-          { label: copy.readMorePrimary.quote, href: localize("/contact") },
-        ]}
-        secondaryLinks={[
-          { label: copy.readMoreSecondary.portfolio, href: localize("/portfolio") },
-          { label: copy.readMoreSecondary.segments, href: localize("/segments") },
-          { label: copy.readMoreSecondary.tool, href: localize("/materials#material-suggestion-tool") },
-          { label: copy.readMoreSecondary.findModels, href: localize("/3d-modellen-vinden") },
-        ]}
       />
 
 
+
+      <section id="materials-sources" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-xl font-semibold text-slate-900">{isEn ? "Sources and references" : "Bronnen en referenties"}</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                {isEn
+                  ? "We use these references for baseline material behavior and comparison data."
+                  : "We gebruiken deze bronnen als basis voor materiaaleigenschappen en vergelijkingen."}
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
 
       {/* JSON-LD */}
       <script
@@ -548,3 +761,4 @@ export default function MaterialsPage({ locale }: PageProps) {
     </main>
   )
 }
+

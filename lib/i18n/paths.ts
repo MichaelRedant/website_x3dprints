@@ -63,6 +63,8 @@ const EN_BLOG_SLUGS = new Set<string>([
   "maker-monday-schroefdraad-inserts",
   "maker-monday-schroefdraad-bevestigingen",
   "maker-monday-warping-layer-cracks",
+  "beste-instellingen-bambu-printer",
+  "filament-vrijdag-pc-fr",
   "3d-printen-valentijn",
   "3d-printen-back-to-school",
   "3d-printen-zomer",
@@ -113,6 +115,7 @@ function hasEnglishRoute(path: string) {
   const normalized = normalizePath(path)
   if (EN_PATHS.has(normalized)) return true
   if (normalized === "/cases" || normalized.startsWith("/cases/")) return true
+  if (normalized === "/segments" || normalized.startsWith("/segments/")) return true
   if (normalized.startsWith("/blog/")) {
     const slug = normalized.slice("/blog/".length).split("/")[0]
     return EN_BLOG_SLUGS.has(slug)

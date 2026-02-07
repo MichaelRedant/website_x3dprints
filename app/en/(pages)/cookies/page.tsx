@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/cookies/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/cookies/",
     },
   },

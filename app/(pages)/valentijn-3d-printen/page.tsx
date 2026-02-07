@@ -1,15 +1,16 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import Faq from "@/components/Faq"
+import Faq from "@/components/Faq"
+import { buildFaqPageSchema } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "Valentijn 3D prints op maat | X3DPrints",
   description:
     "Hartdecor, naamplaatjes en gepersonaliseerde cadeaus in Silk, Matte en Translucent PLA. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice.",
-  alternates: { canonical: "https://www.x3dprints.be/valentijn-3d-printen/", languages: { "nl-BE": "https://www.x3dprints.be/valentijn-3d-printen/", en: "https://www.x3dprints.be/en/valentijn-3d-printen/", "x-default": "https://www.x3dprints.be/valentijn-3d-printen/", }, },
+  alternates: { canonical: "https://www.x3dprints.be/valentijn-3d-printen/", languages: { "nl-BE": "https://www.x3dprints.be/valentijn-3d-printen/", "en-BE": "https://www.x3dprints.be/en/valentijn-3d-printen/", "x-default": "https://www.x3dprints.be/valentijn-3d-printen/", }, },
   openGraph: {
     title: "Valentijn 3D prints op maat",
     description:
@@ -51,17 +52,10 @@ const faqItems = [
   },
 ]
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-
-  inLanguage: ["nl-BE", "en-BE"],
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  items: faqItems,
+})
 
 export default function ValentijnLandingPage() {
   return (
@@ -80,7 +74,7 @@ export default function ValentijnLandingPage() {
             Hartdecor, naamplaatjes en gepersonaliseerde cadeaus in Silk, Matte en Translucent PLA. Ontwerp niet inbegrepen; lever STL/STEP of kies ontwerpservice aan EUR 45/uur. Levering via EV-zones of pakketdienst.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <ShimmerButton href="/contact?material=pla-silk-plus">Plan je Valentijnprint</ShimmerButton>
+            <ShimmerButton href="/contact?material=pla-silk">Plan je Valentijnprint</ShimmerButton>
             <Link
               href="/segments/3d-printing-valentijn"
               className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -106,7 +100,7 @@ export default function ValentijnLandingPage() {
       <section className="px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <GlassCard className="p-6">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900">Ideeën voor Valentijn</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900">IdeeÃ«n voor Valentijn</h2>
             <ul className="mt-3 space-y-2 text-sm text-slate-700">
               {ideas.map((idea) => (
                 <li key={idea} className="flex gap-2">
@@ -209,3 +203,5 @@ export default function ValentijnLandingPage() {
     </main>
   )
 }
+
+

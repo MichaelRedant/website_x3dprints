@@ -1,12 +1,13 @@
 // app/(pages)/organizers/custom/page.tsx
 import type { Metadata } from "next"
 import Link from "next/link"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Faq from "@/components/Faq"
 import OrganizerBundles from "@/components/OrganizerBundles"
 import Reveal from "@/components/Reveal"
 import { ORGANIZER_PAGES } from "@/content/organizer-details"
 import { buildOrganizerContactHref, buildOrganizerSchemas } from "@/lib/organizers"
-import { SITE } from "@/lib/seo"
+import { SITE, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 const PAGE = ORGANIZER_PAGES.custom
 const PAGE_URL = `${SITE.url}/organizers/${PAGE.slug}`
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     canonical: PAGE.seo.canonical,
     languages: {
       "nl-BE": PAGE.seo.canonical,
-      en: `${SITE.url}/en/organizers/${PAGE.slug}`,
+      "en-BE": `${SITE.url}/en/organizers/${PAGE.slug}`,
       "x-default": PAGE.seo.canonical,
     },
   },
@@ -38,15 +39,38 @@ export const metadata: Metadata = {
 export default function CustomOrganizerPage() {
   const contactHref = buildOrganizerContactHref(PAGE.slug)
   const schemas = buildOrganizerSchemas(PAGE, PAGE_URL)
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: PAGE.faq.map((item) => ({
-      "@type": "Question",
-      name: item.q,
-      acceptedAnswer: { "@type": "Answer", text: item.a },
-    })),
-  }
+  const faqSchema = buildFaqPageSchema({
+    inLanguage: "nl-BE",
+    mainEntityOfPage: PAGE_URL,
+    items: PAGE.faq,
+  })
+  const howToSchema = buildHowToSchema({
+    name: "Custom toolbox insert aanvragen",
+    description: "Stuur een foto, binnenmaten en tool lijst voor een insert op maat.",
+    inLanguage: "nl-BE",
+    mainEntityOfPage: PAGE_URL,
+    totalTime: "PT12M",
+    toolNames: ["Foto", "Meetlat of schuifmaat"],
+    url: PAGE_URL,
+    steps: [
+      { name: "Foto maken", text: "Foto van de open koffer, schuim verwijderd." },
+      { name: "Maten noteren", text: "Binnenlengte, -breedte, -hoogte (of diameter x hoogte) in mm." },
+      { name: "Tools oplijsten", text: "Naam + aantal per tool en gewenste ligging (plat/rechtop)." },
+      { name: "Uploaden", text: "Gebruik het contactformulier (custom prefill) om alles te sturen." },
+    ],
+  })
+  const tocItems = [
+    { id: "howto", label: "Hoe werkt de custom intake?" },
+    { id: "bundles", label: "Welke opties en bundels zijn er?" },
+    { id: "faq", label: "FAQ custom inserts" },
+    { id: "custom-sources", label: "Bronnen en referenties" },
+  ]
+  const references = [
+    { label: "IKEA Skadis productlijn", url: "https://www.ikea.com/be/nl/search/?q=skadis" },
+    { label: "ISO/ASTM 52900 terminologie", url: "https://www.astm.org/f2997-13r21.html" },
+    { label: "Prusa materialenoverzicht", url: "https://help.prusa3d.com/article/material-guide_220" },
+  ]
+  const lastUpdatedLabel = "Laatst bijgewerkt: 6 februari 2026"
 
   return (
     <>
@@ -59,6 +83,8 @@ export default function CustomOrganizerPage() {
             <h1 className="text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">{PAGE.heroTitle}</h1>
             <p className="max-w-3xl text-lg text-slate-700 dark:text-slate-200">{PAGE.heroSubtitle}</p>
             <p className="max-w-3xl text-slate-700 dark:text-slate-200">{PAGE.intro}</p>
+            <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-xl" />
             <p className="max-w-3xl text-sm font-semibold text-slate-600 dark:text-slate-300">
               Voor hobbyisten én professionals met unieke koffers, pegboards of cases.
             </p>
@@ -120,6 +146,9 @@ export default function CustomOrganizerPage() {
               <a href="#faq" className="underline decoration-cyan-400 hover:decoration-cyan-700">
                 FAQ
               </a>
+              <a href="#custom-sources" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+                Bronnen
+              </a>
             </div>
           </div>
 
@@ -160,7 +189,7 @@ export default function CustomOrganizerPage() {
             </ul>
           </Reveal>
 
-          <section id="howto">
+          <section id="howto" className="scroll-mt-28">
             <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 shadow-lg shadow-slate-900/5 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
               <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div>
@@ -192,13 +221,13 @@ export default function CustomOrganizerPage() {
             </Reveal>
           </section>
 
-          <section id="bundles">
+          <section id="bundles" className="scroll-mt-28">
             <Reveal>
               <OrganizerBundles systemSlug={PAGE.slug} systemName={PAGE.systemName} bundles={PAGE.bundles} />
             </Reveal>
           </section>
 
-          <section id="faq">
+          <section id="faq" className="scroll-mt-28">
             <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
               <Faq items={PAGE.faq} title="Veelgestelde vragen over custom inserts" className="mt-0" />
             </Reveal>
@@ -215,6 +244,26 @@ export default function CustomOrganizerPage() {
               </p>
             </div>
           </Reveal>
+
+          <section id="custom-sources" className="scroll-mt-28">
+            <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
+              <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Bronnen en referenties</h2>
+              <p className="mt-2 text-sm text-slate-600 dark:text-slate-200">
+                Deze referenties gebruiken we om terminologie en systeemkoppelingen op deze pagina actueel te houden.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-100">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </section>
         </div>
       </section>
 
@@ -233,20 +282,7 @@ export default function CustomOrganizerPage() {
               thumbnail: `${SITE.url}${PAGE.seo.ogImage}`,
               caption: "Custom toolbox insert met labels en antislip, gemaakt in België",
             },
-            {
-              "@context": "https://schema.org",
-              "@type": "HowTo",
-              name: "Custom toolbox insert aanvragen",
-              description: "Stuur een foto, binnenmaten en tool lijst voor een insert op maat.",
-              step: [
-                { "@type": "HowToStep", position: 1, name: "Foto maken", text: "Foto van de open koffer, schuim verwijderd." },
-                { "@type": "HowToStep", position: 2, name: "Maten noteren", text: "Binnenlengte, -breedte, -hoogte (of diameter x hoogte) in mm." },
-                { "@type": "HowToStep", position: 3, name: "Tools oplijsten", text: "Naam + aantal per tool en gewenste ligging (plat/rechtop)." },
-                { "@type": "HowToStep", position: 4, name: "Uploaden", text: "Gebruik het contactformulier (custom prefill) om alles te sturen." },
-              ],
-              tool: ["Foto", "Meetlat of schuifmaat"],
-              totalTime: "PT12M",
-            },
+            howToSchema,
           ]) }}
       />
     </>

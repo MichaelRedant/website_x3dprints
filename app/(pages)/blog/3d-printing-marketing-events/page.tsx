@@ -1,16 +1,16 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/3d-printing-marketing-events"
+const canonical = "https://www.x3dprints.be/blog/3d-printing-marketing-events/"
 
 export const metadata: Metadata = {
   title: "3D printing voor marketing & events | X3DPrints Blog",
   description:
-    "Ontdek hoe 3D printing campagnes versterkt: props, awards en merch met korte lijnen. Inclusief planningstips, materiaaladvies en KPI-ideeën.",
+    "Ontdek hoe 3D printing campagnes versterkt: props, awards en merch met korte lijnen. Inclusief planningstips, materiaaladvies en KPI-ideeÃ«n.",
   alternates: { canonical },
   openGraph: {
     title: "3D printing voor marketing & events",
@@ -52,12 +52,12 @@ const planningSteps = [
   {
     title: "Briefing & doel",
     detail:
-      "Formuleer het campagnedoel, de context (event, roadshow, retailactie) en de KPI’s: awareness, engagement, leads, traffic naar landingpage, enzovoort. Voeg brand guidelines, referentiebeelden of moodboards toe zodat we meteen in de juiste merktaal zitten.",
+      "Formuleer het campagnedoel, de context (event, roadshow, retailactie) en de KPIâ€™s: awareness, engagement, leads, traffic naar landingpage, enzovoort. Voeg brand guidelines, referentiebeelden of moodboards toe zodat we meteen in de juiste merktaal zitten.",
   },
   {
     title: "Materialen & prototypes",
     detail:
-      "Kies eerst het effect: hoogglans, stone-look of lichtdoorlatend. PLA Silk+ werkt sterk voor premium awards, PLA Marble voor ‘stone’ en PLA Translucent voor props met LED of lichtaccenten. Indien nodig starten we met een kleine proefprint om look & formaat te valideren.",
+      "Kies eerst het effect: hoogglans, stone-look of lichtdoorlatend. PLA Silk+ werkt sterk voor premium awards, PLA Marble voor â€˜stoneâ€™ en PLA Translucent voor props met LED of lichtaccenten. Indien nodig starten we met een kleine proefprint om look & formaat te valideren.",
   },
   {
     title: "Productie & logistiek",
@@ -100,7 +100,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   headline: "3D printing voor marketing & events",
   description:
     "Strategische gids voor marketeers en event teams die 3D printing willen inzetten voor props, awards en merchandising.",
@@ -136,9 +136,9 @@ export default function MarketingArticlePage() {
           3D printing voor marketing & events
         </h1>
         <p className="mt-4 text-base text-slate-600">
-  Eye-catching props, awards en slimme merch maken het verschil tussen een campagne die vergeten wordt en één die blijft hangen.
+  Eye-catching props, awards en slimme merch maken het verschil tussen een campagne die vergeten wordt en Ã©Ã©n die blijft hangen.
   In dit artikel tonen we hoe je 3D printing strategisch inzet voor marketing & events: van briefing en materiaalkeuze tot timing,
-  logistiek en KPI’s die je echt kunt meten.
+  logistiek en KPIâ€™s die je echt kunt meten.
 </p>
 
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
@@ -158,7 +158,7 @@ export default function MarketingArticlePage() {
           <p className="mt-3 text-sm text-slate-600">
   Campagnes en events hebben formaat-, kleur- en deadline-eisen waar traditionele productie vaak op achterloopt. 
   Met 3D printing kun je snel activeren: kleine runs, last-minute iteraties en hyperrelevante props per locatie of doelgroep.
-  Je krijgt iets tastbaars in handen dat perfect aansluit bij je merk én binnen het mediabudget past.
+  Je krijgt iets tastbaars in handen dat perfect aansluit bij je merk Ã©n binnen het mediabudget past.
 </p>
 
           <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -210,7 +210,7 @@ export default function MarketingArticlePage() {
   <h2 className="text-xl font-semibold text-slate-900">Typische marketing use cases</h2>
   <p className="mt-3 text-sm text-slate-600">
     3D printing speelt steeds vaker een rol in marketingcampagnes omdat het zowel visueel sterk is
-    als extreem flexibel in formaat, kleur en timing. Hieronder vijf scenario’s waarin 3D objecten
+    als extreem flexibel in formaat, kleur en timing. Hieronder vijf scenarioâ€™s waarin 3D objecten
     de merkbeleving aantoonbaar versterken.
   </p>
 
@@ -250,7 +250,7 @@ export default function MarketingArticlePage() {
     <div className="rounded-3xl border border-white/40 bg-white/70 p-4 text-sm text-slate-600 lg:col-span-2">
       <p className="font-semibold text-slate-900">5. Internal branding & HR</p>
       <p className="mt-1">
-        Bedrijfstrofeeën, teambuilding props, onboarding kits of desk-objects die intern cultuur,
+        BedrijfstrofeeÃ«n, teambuilding props, onboarding kits of desk-objects die intern cultuur,
         waarden en groei visualiseren. Klein oplage, hoge personaliseerbaarheid, sterke emotionele impact.
       </p>
     </div>
@@ -319,6 +319,7 @@ export default function MarketingArticlePage() {
     </article>
   )
 }
+
 
 
 

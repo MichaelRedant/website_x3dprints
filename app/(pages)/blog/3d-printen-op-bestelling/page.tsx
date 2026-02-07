@@ -1,204 +1,332 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import Reveal from "@/components/Reveal"
-import GlassCard from "@/components/GlassCard"
-import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import { buildArticleJsonLd } from "@/lib/seo"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import Faq from "@/components/Faq"
+import GlassCard from "@/components/GlassCard"
+import Reveal from "@/components/Reveal"
+import ShimmerButton from "@/components/ShimmerButton"
+import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/blog/3d-printen-op-bestelling"
+const canonical = "https://www.x3dprints.be/blog/3d-printen-op-bestelling/"
+const enCanonical = "https://www.x3dprints.be/en/blog/3d-printen-op-bestelling/"
 const datePublished = "2024-05-20"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-07"
+const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=op-bestelling"
+const materialsHref = "/materials#material-suggestion-tool"
+const viewerHref = "/viewer?utm_source=blog&utm_medium=cta&utm_campaign=op-bestelling"
+const contactHref = "/contact?material=pla-matte&quote=3D%20printen%20op%20bestelling%20aanvraag"
 
 export const metadata: Metadata = {
-  title: "3D printen op bestelling | X3DPrints",
+  title: "3D printen op bestelling in België | X3DPrints",
   description:
-    "Zo werkt 3D printen op bestelling bij X3DPrints: van aanvraag tot levering, met voorbeelden en tips voor herhaalorders.",
-  alternates: { canonical },
+    "Praktische gids voor 3D printen op bestelling in België: intake, productie, levering en herhaalorders met duidelijke planning.",
+  alternates: {
+    canonical,
+    languages: {
+      "nl-BE": canonical,
+      "en-BE": enCanonical,
+      "x-default": canonical,
+    },
+  },
   openGraph: {
-    title: "3D printen op bestelling: proces & tips",
+    title: "3D printen op bestelling in België: van intake tot levering",
     description:
-      "Leer hoe je een 3D print bestelling start, welke info we nodig hebben en hoe we communiceren over planning, updates en levering.",
-  url: canonical,
-    images: [{ url: "/images/portfolio/20230916_085011.webp", width: 1200, height: 630, alt: "3D printen op bestelling" }],
+      "Lees hoe je snel bestelt, welke info nodig is en hoe herhaalorders efficiënter worden.",
+    url: canonical,
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printen op bestelling" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printen op bestelling",
-    description:
-      "Stap-voor-stap gids voor het bestellen van 3D prints bij X3DPrints, inclusief prijsinschatting, voorbeelden en follow-up.",
-    images: ["/images/portfolio/20230916_085011.webp"],
+    title: "3D printen op bestelling in België",
+    description: "Gids met intake, productieflow, levering en repeat-order tips voor snelle offertes.",
+    images: ["/Logo.webp"],
   },
 }
 
+const tocItems = [
+  { id: "order-process", label: "Hoe verloopt een bestelling?" },
+  { id: "order-briefing", label: "Welke info versnelt je offerte?" },
+  { id: "order-repeat", label: "Hoe maak je herhaalorders efficient?" },
+  { id: "order-faq", label: "FAQ over bestellen" },
+  { id: "order-sources", label: "Bronnen en referenties" },
+]
+
 const steps = [
   {
-    title: "Aanvraag & intake",
-    body: "Stuur STL/STEP, gewenste aantallen, deadline en eventuele referentiefoto's. Binnen één werkdag krijg je feedback en een prijsinschatting.",
-    link: { label: "Upload via viewer", href: "/viewer" },
+    title: "1. Intake met bestanden en context",
+    body: "Stuur STL of STEP, gewenste aantallen, deadline en gebruikscontext voor snelle beoordeling.",
+    link: { label: "Open de 3D viewer", href: viewerHref },
   },
   {
-    title: "Productie & updates",
-    body: "Na akkoord plannen we de printslot. Je ontvangt updates per mail (foto of korte video) als je dat wenst. Correcties zijn mogelijk vóór start.",
-    link: { label: "Check materialen", href: "/materials" },
+    title: "2. Materiaalroute en planning",
+    body: "We adviseren materiaal, printstrategie en timing op basis van detail, sterkte en budget.",
+    link: { label: "Kies materiaal", href: materialsHref },
   },
   {
-    title: "Levering & nazorg",
-    body: "Afhalen in Herzele, Bpost of persoonlijke levering in Gent/Aalst. Factuur + herhaalnummer zodat je later makkelijk opnieuw bestelt.",
-    link: { label: "Plan levering", href: "/contact" },
+    title: "3. Productie en levering",
+    body: "Na akkoord plannen we productie en spreken we levering of afhaling af met duidelijke updates.",
+    link: { label: "Bekijk prijzen", href: pricingHref },
   },
 ]
 
-const reorders = [
-  "We bewaren slicer-profielen en G-code (na akkoord) zodat herhaalorders identiek zijn.",
-  "Gebruik het bestelnr. of projectnaam bij nieuwe aanvragen; we weten meteen welke instellingen horen.",
-  "Combineer meerdere kleine bestellingen tot één batch voor betere prijzen en kortere queue.",
+const briefingChecklist = [
+  "STL of STEP bestand met duidelijke bestandsnaam en versie",
+  "Gewenst materiaal en kleur (of vraag advies via de material tool)",
+  "Aantal stuks en targetdatum",
+  "Leverkeuze: afhalen, verzending of levering op maat",
+]
+
+const repeatTips = [
+  "Werk met vaste projectnamen en versiebeheer zodat feedbackrondes kort blijven.",
+  "Bundel kleine onderdelen in 1 batch om setup-kosten te beperken.",
+  "Hou kritieke maten en toleranties bij per herhaalproject.",
+  "Gebruik hetzelfde materiaalprofiel wanneer consistentie primeert.",
+]
+
+const faqItems = [
+  {
+    q: "Hoe snel krijg ik een offerte voor een bestelling?",
+    a: "Meestal binnen 1 werkdag als STL of STEP plus context volledig zijn aangeleverd.",
+  },
+  {
+    q: "Kan ik eerst 1 teststuk laten maken voor ik een batch plaats?",
+    a: "Ja, een testprint is vaak de snelste manier om pasvorm en afwerking te valideren.",
+  },
+  {
+    q: "Hoe werken herhaalorders bij hetzelfde model?",
+    a: "Met projectnaam en versie kunnen we sneller herplannen en consistente kwaliteit aanhouden.",
+  },
+]
+
+const references = [
+  {
+    label: "Google Search docs: crawlable links",
+    href: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+  },
+  {
+    label: "All3DP FDM process explainer",
+    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+  },
+  {
+    label: "Prusa material guide",
+    href: "https://help.prusa3d.com/article/material-guide_220",
+  },
 ]
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
-  headline: "3D printen op bestelling",
+  headline: "3D printen op bestelling in België",
   description:
-    "Zo werkt 3D printen op bestelling bij X3DPrints: van aanvraag tot levering, met voorbeelden en tips voor herhaalorders.",
+    "Praktische gids voor 3D printen op bestelling met intake, materiaaladvies, levering en repeat-order aanpak.",
   datePublished,
   dateModified,
+  image: "/Logo.webp",
+  inLanguage: "nl-BE",
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  mainEntityOfPage: canonical,
+  items: faqItems.map((item) => ({ q: item.q, a: item.a })),
+})
+
+const howToJsonLd = buildHowToSchema({
+  name: "3D printen op bestelling in 4 stappen",
+  description:
+    "Start een bestelling met de juiste intake, materiaalkeuze en planning voor snelle productie.",
+  inLanguage: "nl-BE",
+  mainEntityOfPage: canonical,
+  totalTime: "PT3M",
+  steps: [
+    {
+      name: "Bestand en context delen",
+      text: "Stuur STL of STEP met aantallen, deadline en toepassing.",
+    },
+    {
+      name: "Materiaal en timing bepalen",
+      url: materialsHref,
+    },
+    {
+      name: "Prijscheck doen",
+      url: pricingHref,
+    },
+    {
+      name: "Bestelling met prefill versturen",
+      url: contactHref,
+    },
+  ],
+  toolNames: ["Material Suggestion Tool", "X3DPrints 3D viewer"],
+  supplyNames: ["STL of STEP bestand"],
 })
 
 export default function OrderArticlePage() {
   return (
-    <main className="relative">
+    <main className="relative overflow-hidden px-6 pb-24 pt-16 sm:px-8 lg:px-12">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(150%_85%_at_50%_-15%,rgba(190,24,93,0.16),transparent_70%)]"
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(130%_60%_at_50%_0%,rgba(16,185,129,.16),transparent_72%)]"
       />
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.07]" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.08]" />
 
-      <section className="px-6 pb-12 pt-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
-          <Reveal className="stacked-content">
-            <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
-              <ol className="flex flex-wrap gap-2">
-                <li>
-                  <Link
-                    href="/blog"
-                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                  >
-                    Blog
+      <article className="mx-auto max-w-5xl space-y-10">
+        <header className="space-y-4">
+          <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
+            <ol className="flex flex-wrap gap-2">
+              <li>
+                <Link href="/blog" className="font-medium text-indigo-600 hover:text-indigo-500">
+                  Blog
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li className="font-medium text-slate-700">3D printen op bestelling</li>
+            </ol>
+          </nav>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600">Ordering guide</p>
+          <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+            3D printen op bestelling in België: van intake tot levering
+          </h1>
+          <p className="max-w-3xl text-lg text-slate-700">
+            Het korte antwoord: een goede intake versnelt alles. Met de juiste bestanden en context krijg je snel een duidelijke route voor 3D printen op bestelling.
+          </p>
+          <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
+            Laatst bijgewerkt: 7 februari 2026
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <ShimmerButton
+              href={contactHref}
+              event={{ action: "cta_click", category: "blog_order_top", label: "contact_prefill" }}
+            >
+              Start bestelling
+            </ShimmerButton>
+            <ShimmerButton
+              href={materialsHref}
+              className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+              event={{ action: "cta_click", category: "blog_order_top", label: "materials" }}
+            >
+              Material Suggestion Tool
+            </ShimmerButton>
+            <Link
+              href={viewerHref}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300 hover:bg-slate-50"
+            >
+              Check je model in viewer
+            </Link>
+          </div>
+          <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
+        </header>
+
+        <section id="order-process" className="scroll-mt-28">
+          <Reveal>
+            <h2 className="text-2xl font-semibold text-slate-900">Hoe verloopt een bestelling?</h2>
+            <div className="mt-4 grid gap-4 md:grid-cols-3">
+              {steps.map((step) => (
+                <GlassCard key={step.title} className="p-6">
+                  <h3 className="text-lg font-semibold text-slate-900">{step.title}</h3>
+                  <p className="mt-2 text-sm text-slate-700">{step.body}</p>
+                  <Link href={step.link.href} className="mt-3 inline-flex text-sm font-semibold text-indigo-600 hover:text-indigo-500">
+                    {step.link.label}
                   </Link>
-                </li>
-                <li aria-hidden>/</li>
-                <li className="font-medium text-slate-700">3D printen op bestelling</li>
-              </ol>
-            </nav>
-            <h1 className="mt-6 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              3D printen op bestelling: van briefing tot levering
-            </h1>
-            <p className="mt-4 text-lg text-slate-700">
-              Zo organiseer je een bestelling bij X3DPrints: welke informatie we nodig hebben, wat je mag verwachten en hoe we herhaaljobs eenvoudiger maken.
-            </p>
-            <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href="/contact">Bestelling starten</ShimmerButton>
-              <Link
-                href="/pricing"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
-              >
-                Bekijk pricing & stappen
-              </Link>
+                </GlassCard>
+              ))}
             </div>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
-          {steps.map((step) => (
-            <Reveal key={step.title}>
-              <GlassCard className="h-full border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Stap</p>
-                <h2 className="mt-2 text-xl font-semibold text-slate-900">{step.title}</h2>
-                <p className="mt-3 text-sm text-slate-600">{step.body}</p>
-                <Link
-                  href={step.link.href}
-                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 transition hover:text-emerald-700"
-                >
-                  {step.link.label}
-                  <span aria-hidden>-&gt;</span>
-                </Link>
-              </GlassCard>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+        <section id="order-briefing" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Wat we nodig hebben in je briefing</h2>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                <li>Bestanden: STL/STEP + referentieafbeelding of schets.</li>
-                <li>Materiaal- en kleurvoorkeur, gewenste afwerking (ruw, geschuurd, gelakt).</li>
-                <li>Aantal stuks en richtdeadline (met vermelding of er flexibiliteit is).</li>
-                <li>Leveroptie: afhalen, Bpost, persoonlijke drop-off.</li>
-              </ul>
-            </GlassCard>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
-          <Reveal>
-            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Herhaalorders & abonnementen</h2>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                {reorders.map((tip) => (
-                  <li key={tip} className="flex items-start gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
-                    <span>{tip}</span>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Welke info versnelt je offerte?</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {briefingChecklist.map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-xs text-slate-500">
-                Idee: combineer je maandelijkse merchandising of onderhoudsonderdelen in één batch. Zo profiteer je van kortere queue en scherpe prijzen.
+              <div className="mt-5 flex flex-wrap gap-3">
+                <ShimmerButton
+                  href={pricingHref}
+                  event={{ action: "cta_click", category: "blog_order_mid", label: "pricing" }}
+                >
+                  Bekijk prijsankers
+                </ShimmerButton>
+                <ShimmerButton
+                  href={contactHref}
+                  className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+                  event={{ action: "cta_click", category: "blog_order_mid", label: "contact_prefill" }}
+                >
+                  Vraag offerte
+                </ShimmerButton>
+              </div>
+            </GlassCard>
+          </Reveal>
+        </section>
+
+        <section id="order-repeat" className="scroll-mt-28">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Hoe maak je herhaalorders efficient?</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {repeatTips.map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-500" aria-hidden />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-sm text-slate-600">
+                Zie ook de{" "}
+                <Link href="/services" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  servicepagina
+                </Link>{" "}
+                en{" "}
+                <Link href="/locaties" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  locaties
+                </Link>{" "}
+                voor levering en workflow.
               </p>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
+        <section id="order-faq" className="scroll-mt-28">
+          <Faq title="FAQ over 3D printen op bestelling" items={faqItems} />
+        </section>
+
+        <section id="order-sources" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="flex flex-col gap-6 border border-white/40 bg-white/85 p-6 text-center shadow-xl backdrop-blur sm:flex-row sm:items-center sm:justify-between sm:text-left">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Volgende stap</p>
-                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Bestelling klaarzetten?</h2>
-                <p className="mt-2 text-sm text-slate-600">
-                  We sturen binnen één werkdag een concreet voorstel en bespreken hoe vaak je wil herhalen.
-                </p>
-              </div>
-              <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href="/contact">Start bestelling</ShimmerButton>
-                <Link href="/pricing" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
-                  Bekijk prijzen
-                </Link>
-              </div>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
+      </article>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogReadMore />
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
     </main>
   )
 }
-
-
-
-
-

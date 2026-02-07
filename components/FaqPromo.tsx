@@ -51,7 +51,7 @@ export default function FaqPromo({
     "@context": "https://schema.org",
     "@type": "FAQPage",
 
-    inLanguage: ["nl-BE", "en-BE"],
+    inLanguage: locale === "en" ? "en-BE" : "nl-BE",
     mainEntity: qaItems.slice(0, 3).map((i) => ({
       "@type": "Question",
       name: clampText(i.q, 110),

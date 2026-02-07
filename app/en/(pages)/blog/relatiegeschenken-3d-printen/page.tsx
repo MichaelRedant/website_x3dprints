@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/relatiegeschenken-3d-printen/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/relatiegeschenken-3d-printen/",
     },
   },
@@ -45,7 +45,7 @@ const tips = [
   "Silk PLA for a luxe gloss; Matte PLA for a soft feel and legible text. PETG for stronger keychains or desk items.",
   "Text depth min. 0.6 mm; round edges for a pleasant feel. Add pockets for magnets or TPU pads.",
   "Layer height 0.16-0.24 mm: clean lines without long print time. Batch names/initials per colour.",
-  "Provide STL/STEP or use design service (€45/hour). Add logo as vector or STL in the brief.",
+  "Provide STL/STEP or use design service (â‚¬45/hour). Add logo as vector or STL in the brief.",
   "Plan lead time: usually a few business days; share event date and delivery method (EV zones or parcel).",
 ]
 
@@ -60,7 +60,7 @@ const checklist = [
 const faqItems = [
   {
     q: "Can you integrate names, initials or logos?",
-    a: "Yes. Provide STL/STEP or use design service (€45/hour). We keep at least 0.6 mm text depth and rounded edges.",
+    a: "Yes. Provide STL/STEP or use design service (â‚¬45/hour). We keep at least 0.6 mm text depth and rounded edges.",
   },
   {
     q: "Which materials fit corporate gifts?",
@@ -72,15 +72,15 @@ const faqItems = [
   },
   {
     q: "Is the 3D model included?",
-    a: "No. The design file is not included. Provide STL/STEP or choose design service at €45/hour; we optimise for readability and comfort.",
+    a: "No. The design file is not included. Provide STL/STEP or choose design service at â‚¬45/hour; we optimise for readability and comfort.",
   },
 ]
 
 const inspirationImages = [
-  { src: "/images/portfolio/Bamboe holder.webp", alt: "3D printed desk gift" },
-  { src: "/images/portfolio/Giveaway.webp", alt: "3D printed giveaway keychain" },
-  { src: "/images/portfolio/bamboo poops.webp", alt: "Custom small gifts" },
-  { src: "/images/portfolio/Logo.webp", alt: "3D printed logo decor" },
+  { src: "/images/portfolio/vaderdag.webp", alt: "3D printed desk gift" },
+  { src: "/images/portfolio/vaderdag2.webp", alt: "3D printed giveaway keychain" },
+  { src: "/images/portfolio/back2school%20(2).webp", alt: "Custom small gifts" },
+  { src: "/Logo.webp", alt: "3D printed logo decor" },
 ]
 
 const videos = [
@@ -267,5 +267,6 @@ export default function CorporateGiftsBlogEn() {
     </main>
   )
 }
+
 
 

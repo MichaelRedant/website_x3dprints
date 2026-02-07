@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pla-silk-plus"
+const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pla-silk-plus/"
 const publishedDate = "2025-10-31T08:00:00+02:00"
 
 export const metadata: Metadata = {
@@ -62,32 +62,32 @@ const heroStats = [
 const printSettings = [
   {
     label: "Nozzle",
-    value: "205–225 °C",
+    value: "205â€“225 Â°C",
     note: "Start rond je PLA-profiel; ga hoger voor extra glans en dikkere lagen",
   },
   {
     label: "Bed",
-    value: "55–60 °C",
+    value: "55â€“60 Â°C",
     note: "Standaard PLA-instellingen op PEI werken meestal prima",
   },
   {
     label: "Snelheid",
-    value: "40–60 mm/s",
+    value: "40â€“60 mm/s",
     note: "Iets trager dan PLA voor stabiele glans en betere laaghechting",
   },
   {
     label: "Koeling",
-    value: "60–100 %",
+    value: "60â€“100 %",
     note: "Meer koeling voor detail en scherpte, minder voor extra laaghechting",
   },
   {
     label: "Layerhoogte",
-    value: "0,16–0,24 mm",
+    value: "0,16â€“0,24 mm",
     note: "Dunnere lagen geven een vloeiender reflectie op zichtvlakken",
   },
   {
     label: "Retraction",
-    value: "0,8–1,2 mm",
+    value: "0,8â€“1,2 mm",
     note: "Hou retraction iets lager dan bij standaard PLA om stringing te beperken",
   },
 ]
@@ -108,7 +108,7 @@ const silkPlusVariants = [
   {
     name: "Silk multi color en gradient",
     description:
-      "Meerkleurige silk blends met kleurverloop in de draad. Vraagt aandacht bij oriëntatie maar levert unieke prints op.",
+      "Meerkleurige silk blends met kleurverloop in de draad. Vraagt aandacht bij oriÃ«ntatie maar levert unieke prints op.",
     bestFor: ["Eyecatchers", "Limited edition props", "Decoratieve sculpturen"],
   },
 ]
@@ -150,7 +150,7 @@ const comparisonRows = [
   {
     property: "Aanbevolen snelheid",
     pla: "Tot vrij hoge snelheden haalbaar.",
-    silk: "Eerder 40–60 mm/s voor consistente resultaten.",
+    silk: "Eerder 40â€“60 mm/s voor consistente resultaten.",
     silkPlus: "Gelijkaardige zone, met iets meer marge bij goed gedroogd filament.",
   },
   {
@@ -170,7 +170,7 @@ const mitigationTips = [
   {
     title: "Laaglijnen minder zichtbaar maken",
     insight:
-      "Gebruik iets dunnere lagen en oriënteer zichtvlakken zo dat de reflectie mooi loopt. Als de camera belangrijk is, test dan eerst een kleine versie van het model met verschillende oriëntaties.",
+      "Gebruik iets dunnere lagen en oriÃ«nteer zichtvlakken zo dat de reflectie mooi loopt. Als de camera belangrijk is, test dan eerst een kleine versie van het model met verschillende oriÃ«ntaties.",
   },
   {
     title: "Glans versus leesbaarheid",
@@ -215,7 +215,7 @@ const externalReferences = [
     description: "Overzicht van nozzle- en plaatcompatibiliteit en parameters voor verschillende materialen.",
   },
   {
-    label: "Bambu Lab – printing with silk filaments",
+    label: "Bambu Lab â€“ printing with silk filaments",
     href: "https://wiki.bambulab.com/en/x1/manual/printing-with-silk-filaments",
     description: "Specifieke tips voor silk filament, inclusief snelheidsaanbevelingen.",
   },
@@ -315,7 +315,7 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-slate-500">
-              Gepubliceerd op 31 oktober 2025 • Onderdeel van de Filament Vrijdag reeks rond PLA-varianten en esthetische
+              Gepubliceerd op 31 oktober 2025 â€¢ Onderdeel van de Filament Vrijdag reeks rond PLA-varianten en esthetische
               materialen.
             </p>
           </Reveal>
@@ -418,7 +418,7 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
                 <div>
                   <h2 className="text-2xl font-semibold text-slate-900">Printinstellingen uit de studio</h2>
                   <p className="mt-2 text-sm text-slate-600">
-                    Deze bandbreedtes gebruiken we als vertrekpunt. De exacte waarden hangen af van model, oriëntatie en
+                    Deze bandbreedtes gebruiken we als vertrekpunt. De exacte waarden hangen af van model, oriÃ«ntatie en
                     gewenste glans. Voor ruwe concepten kan het sneller, voor photography-ready werk houden we de snelheid bewust
                     laag.
                   </p>
@@ -440,7 +440,7 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
                 ))}
               </dl>
               <p className="mt-4 text-xs text-slate-500">
-                Werk je zelf met Bambu-printers, dan zijn de officiële PLA- en silk-gerelateerde guides een goede basis. Test
+                Werk je zelf met Bambu-printers, dan zijn de officiÃ«le PLA- en silk-gerelateerde guides een goede basis. Test
                 altijd met een kleine temperatuur- en snelheidsreeks voor je een grote brandingrun start.
               </p>
             </GlassCard>
@@ -550,7 +550,7 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
               <p className="mt-2 text-sm text-slate-600">
                 De meerwaarde van Silk+ zit niet alleen in de glans, maar in hoe het object in zijn context verschijnt. Op video
                 of onder spots gedraagt het zich anders dan onder diffuus daglicht. Daar houden we rekening mee in materiaal- en
-                oriëntatiekeuze.
+                oriÃ«ntatiekeuze.
               </p>
               <ul className="mt-4 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
                 <li className="rounded-2xl border border-slate-100 bg-white/60 p-4">
@@ -764,6 +764,7 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
     </main>
   )
 }
+
 
 
 

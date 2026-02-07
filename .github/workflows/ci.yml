@@ -23,11 +23,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint
-        run: npm run lint
-
-      - name: Build
-        run: npm run build
-
-      - name: SEO smoke checks
-        run: npm run check:seo
+      - name: Verify (lint + security + build + SEO)
+        run: npm run verify

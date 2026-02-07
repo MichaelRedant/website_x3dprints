@@ -1,13 +1,13 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import { buildArticleJsonLd } from "@/lib/seo"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/blog/3d-printen-lente-pasen"
+const canonical = "https://www.x3dprints.be/blog/3d-printen-lente-pasen/"
 const datePublished = "2024-03-15"
 const dateModified = "2026-02-04"
 
@@ -38,7 +38,7 @@ const tips = [
   "Gebruik Silk of Matte PLA in pastelkleuren voor eieren, konijnen en ornamenten; Translucent voor lichtobjecten.",
   "Layerhoogte 0,16-0,2 mm; houd wanddikte >1,2 mm voor stevige hangers aan takken.",
   "Integreer oogjes of pin-holes voor haakjes/magneten zodat ornamenten niet breken.",
-  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan €45/uur.",
+  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan â‚¬45/uur.",
   "Voor buiten decor: kies PETG voor betere UV/vocht bestendigheid en vermijd donkere kleuren in volle zon.",
 ]
 
@@ -52,7 +52,7 @@ const checklist = [
 const faqItems = [
   {
     q: "Kunnen jullie gepersonaliseerde paaseieren of naamhangers printen?",
-    a: "Ja. Lever een STL/STEP met naam of logo, of laat ons ontwerpen aan €45/uur. We printen in Silk of Matte pastel PLA voor een nette afwerking.",
+    a: "Ja. Lever een STL/STEP met naam of logo, of laat ons ontwerpen aan â‚¬45/uur. We printen in Silk of Matte pastel PLA voor een nette afwerking.",
   },
   {
     q: "Wat is het beste materiaal voor lichtgevende paasdecor?",
@@ -60,11 +60,11 @@ const faqItems = [
   },
   {
     q: "Hoe worden breekbare decorstukken geleverd?",
-    a: "We verpakken gescheiden met schuim en leveren via EV-zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) of pakketdienst. Afhalen in Herzele kan gratis.",
+    a: "We verpakken gescheiden met schuim en leveren via EV-zones (Zone 1 â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45) of pakketdienst. Afhalen in Herzele kan gratis.",
   },
   {
     q: "Is het 3D model inbegrepen?",
-    a: "Nee. Het ontwerpbestand is niet inbegrepen in de printprijs. Lever STL/STEP of kies onze ontwerpservice aan €45/uur; we optimaliseren wanddiktes en supports.",
+    a: "Nee. Het ontwerpbestand is niet inbegrepen in de printprijs. Lever STL/STEP of kies onze ontwerpservice aan â‚¬45/uur; we optimaliseren wanddiktes en supports.",
   },
   {
     q: "Welke afwerking raden jullie aan?",
@@ -81,20 +81,13 @@ const articleJsonLd = buildArticleJsonLd({
   dateModified,
 })
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-
-  inLanguage: ["nl-BE", "en-BE"],
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  items: faqItems,
+})
 
 const inspirationImages = [
-  { src: "/images/portfolio/Easter1.webp", alt: "3D geprinte paasdecor set 1" },
+  { src: "/images/portfolio/easter1.webp", alt: "3D geprinte paasdecor set 1" },
   { src: "/images/portfolio/Easter2.webp", alt: "3D geprinte paasdecor set 2" },
   { src: "/images/portfolio/Easter3.webp", alt: "3D geprinte paasdecor set 3" },
   { src: "/images/portfolio/Easter4.webp", alt: "3D geprinte paasdecor set 4" },
@@ -117,7 +110,7 @@ export default function BlogSpringEaster() {
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Paashangers, eieren, konijnen en bloemdecor in pastel PLA of Translucent. Ontwerpbestand niet inbegrepen; lever
-              STL/STEP of kies ontwerpservice (€45/uur). EV-levering voor breekbare ornamenten of pakketdienst als je verder zit.
+              STL/STEP of kies ontwerpservice (â‚¬45/uur). EV-levering voor breekbare ornamenten of pakketdienst als je verder zit.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact">Plan je paasprints</ShimmerButton>
@@ -126,6 +119,12 @@ export default function BlogSpringEaster() {
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
                 Naar seasonal segment
+              </Link>
+              <Link
+                href="/materials#material-suggestion-tool"
+                className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+              >
+                Material Suggestion Tool
               </Link>
             </div>
           </Reveal>
@@ -222,7 +221,7 @@ export default function BlogSpringEaster() {
                 <li>Optioneel primer/schuren zodat je direct kan schilderen.</li>
               </ul>
               <p className="mt-3 text-sm text-slate-700">
-                Herinnering: het 3D model is niet inbegrepen in de printprijs. Lever STL/STEP of laat ons ontwerpen aan €45/uur.
+                Herinnering: het 3D model is niet inbegrepen in de printprijs. Lever STL/STEP of laat ons ontwerpen aan â‚¬45/uur.
                 Vermeld je eventdatum en leveroptie bij de aanvraag.
               </p>
             </GlassCard>
@@ -232,8 +231,8 @@ export default function BlogSpringEaster() {
             <GlassCard className="p-6">
               <h3 className="text-xl font-semibold tracking-tight text-slate-900">SEO inspiratiehoek</h3>
               <p className="mt-2 text-sm text-slate-700">
-                Zoek je “3D geprinte paasdecor”, “3D print paas eieren”, “Translucent paas lantaarn”, “pastel PLA konijn” of
-                “custom paas hangers”? Dit artikel bundelt materiaalkeuze (Silk/Matte pastel, Translucent, PETG, TPU) en
+                Zoek je â€œ3D geprinte paasdecorâ€, â€œ3D print paas eierenâ€, â€œTranslucent paas lantaarnâ€, â€œpastel PLA konijnâ€ of
+                â€œcustom paas hangersâ€? Dit artikel bundelt materiaalkeuze (Silk/Matte pastel, Translucent, PETG, TPU) en
                 support-tips zodat je snel beslist.
               </p>
               <p className="mt-3 text-sm text-slate-700">
@@ -286,6 +285,9 @@ export default function BlogSpringEaster() {
     </main>
   )
 }
+
+
+
 
 
 

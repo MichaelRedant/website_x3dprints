@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.x3dprints.be/en/materials/",
     languages: {
-      en: "https://www.x3dprints.be/en/materials/",
+      "en-BE": "https://www.x3dprints.be/en/materials/",
       "nl-BE": "https://www.x3dprints.be/materials/",
       "x-default": "https://www.x3dprints.be/materials/",
     },

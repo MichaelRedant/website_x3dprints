@@ -43,9 +43,14 @@ export function organizerSlug(input: string): string {
   return input.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
 }
 
-export function buildOrganizerContactHref(slug: OrganizerSlug, bundleSlug?: string) {
+export function buildOrganizerContactHref(
+  slug: OrganizerSlug,
+  bundleSlug?: string,
+  locale: "nl" | "en" = "nl",
+) {
+  const basePath = locale === "en" ? "/en/contact" : "/contact"
   const bundlePart = bundleSlug ? `&bundle=${encodeURIComponent(bundleSlug)}` : ""
-  return `/contact?material=${encodeURIComponent(slug)}${bundlePart}`
+  return `${basePath}?material=${encodeURIComponent(slug)}${bundlePart}`
 }
 
 export function buildOrganizerSchemas(

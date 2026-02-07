@@ -6,6 +6,9 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ModelViewerClient from "@/components/ModelViewerClient"
 import OrganizerCta from "@/components/OrganizerCta"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import ShimmerButton from "@/components/ShimmerButton"
+import { buildHowToSchema } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "Realtime 3D Model Viewer voor STL's | X3DPrints",
@@ -15,7 +18,7 @@ export const metadata: Metadata = {
     canonical: "https://www.x3dprints.be/viewer/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/viewer/",
-      en: "https://www.x3dprints.be/en/viewer/",
+      "en-BE": "https://www.x3dprints.be/en/viewer/",
       "x-default": "https://www.x3dprints.be/viewer/",
     },
   },
@@ -32,6 +35,20 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
+  const tocItems = [
+    { id: "viewer-canvas", label: "Hoe werkt de 3D preview?" },
+    { id: "viewer-highlights", label: "Welke technische highlights zijn ingebouwd?" },
+    { id: "viewer-workflow", label: "Hoe ga je van preview naar offerte?" },
+    { id: "viewer-next", label: "Wat is je snelste volgende stap?" },
+    { id: "viewer-sources", label: "Bronnen en referenties" },
+  ]
+  const references = [
+    { label: "Three.js documentatie", url: "https://threejs.org/docs/" },
+    { label: "Google WebGL performance fundamentals", url: "https://developers.google.com/web/fundamentals/performance/rendering" },
+    { label: "Schema.org HowTo", url: "https://schema.org/HowTo" },
+  ]
+  const lastUpdatedLabel = "Laatst bijgewerkt: 6 februari 2026"
+
   const bullets = [
     "WebGL-viewer met orbit controls en auto-rotate (uitschakelbaar)",
     "On-device parsing met STL/OBJ/GLB-ondersteuning tot 15 MB",
@@ -71,17 +88,16 @@ export default function Page() {
     },
   ]
 
-  const howToJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-
-    inLanguage: ["nl-BE", "en-BE"],
+  const pageUrl = "https://www.x3dprints.be/viewer/"
+  const howToJsonLd = buildHowToSchema({
+    inLanguage: "nl-BE",
+    mainEntityOfPage: pageUrl,
     name: "STL/OBJ bekijken in de X3DPrints 3D Viewer",
     description: "Snelle in-browser preview zonder uploads naar servers, inclusief mesh stats.",
-    supply: [{ "@type": "HowToSupply", name: "STL, OBJ of GLB bestand (max ~15 MB)" }],
-    step: workflow.map((item) => ({ "@type": "HowToStep", name: item.step, text: item.copy })),
-    tool: [{ "@type": "HowToTool", name: "X3DPrints WebGL viewer" }],
-  }
+    steps: workflow.map((item) => ({ name: item.step, text: item.copy })),
+    supplyNames: ["STL, OBJ of GLB bestand (max ~15 MB)"],
+    toolNames: ["X3DPrints WebGL viewer"],
+  })
 
   return (
     <main className="relative overflow-hidden">
@@ -99,8 +115,9 @@ export default function Page() {
             </h1>
             <p className="mt-6 text-lg text-slate-600">
               Upload je 3D-model en ontdek hoe de print eruitziet in een glanzende WebGL-viewer. Geen wachttijd, geen upload naar
-                            servers - wel inzicht in meshkwaliteit en een ervaring in X3DPrints-stijl. in meshkwaliteit en een ervaring in X3DPrints-stijl.
+              servers - wel inzicht in meshkwaliteit en een ervaring in X3DPrints-stijl.
             </p>
+            <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <ul className="mt-8 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
               {bullets.map((item) => (
                 <li
@@ -113,11 +130,23 @@ export default function Page() {
               ))}
             </ul>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
+              <ShimmerButton
+                href="/contact?quote=Viewer%20check%20gedaan%2C%20graag%20offerte"
+                event={{ action: "cta_click", category: "viewer_hero", label: "contact_prefill" }}
+              >
+                Vraag offerte na preview
+              </ShimmerButton>
               <Link
                 href="/materials#material-suggestion-tool"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
                 Material Suggestion Tool
+              </Link>
+              <Link
+                href="/services"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+              >
+                Bekijk services
               </Link>
               <Link
                 href="/blog"
@@ -126,11 +155,12 @@ export default function Page() {
                 Lees de blog
               </Link>
             </div>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="mt-6 max-w-2xl" />
           </Reveal>
         </Container>
       </section>
 
-      <section className="pb-20">
+      <section id="viewer-canvas" className="scroll-mt-28 pb-20">
         <Container>
           <Reveal>
             <div className="rounded-[2rem] border border-white/30 bg-white/60 p-4 shadow-2xl backdrop-blur">
@@ -140,7 +170,7 @@ export default function Page() {
         </Container>
       </section>
 
-      <section className="pb-20">
+      <section id="viewer-highlights" className="scroll-mt-28 pb-20">
         <Container>
           <Reveal className="grid gap-6 lg:grid-cols-3">
             {highlights.map((item) => (
@@ -153,7 +183,7 @@ export default function Page() {
         </Container>
       </section>
 
-      <section className="pb-24">
+      <section id="viewer-workflow" className="scroll-mt-28 pb-24">
         <Container>
           <Reveal className="rounded-3xl border border-slate-200/70 bg-white/80 p-8 shadow-lg">
             <h2 className="text-2xl font-semibold text-slate-900">Van preview naar print</h2>
@@ -175,6 +205,55 @@ export default function Page() {
             <p className="mt-6 text-xs text-slate-500">
               Tip: Deel de face/vertex-count bij je aanvraag. Zo kunnen we meteen inschatten welke printinstellingen geschikt zijn.
             </p>
+          </Reveal>
+        </Container>
+      </section>
+
+      <section id="viewer-next" className="scroll-mt-28 pb-20">
+        <Container>
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Wat is je snelste volgende stap?</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Gebruik je preview direct als intake-context. Zo kunnen we materiaal en pricing sneller scherpstellen.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <ShimmerButton
+                  href="/contact?quote=Viewer%20analyse%20voltooid%2C%20ik%20wil%20prijsvoorstel"
+                  event={{ action: "cta_click", category: "viewer_next", label: "contact_prefill" }}
+                >
+                  Start offerteflow
+                </ShimmerButton>
+                <ShimmerButton
+                  href="/pricing?utm_source=viewer&utm_medium=cta&utm_campaign=viewer-next"
+                  className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+                  event={{ action: "cta_click", category: "viewer_next", label: "pricing" }}
+                >
+                  Open pricing calculator
+                </ShimmerButton>
+              </div>
+            </GlassCard>
+          </Reveal>
+        </Container>
+      </section>
+
+      <section id="viewer-sources" className="scroll-mt-28 pb-20">
+        <Container>
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
           </Reveal>
         </Container>
       </section>

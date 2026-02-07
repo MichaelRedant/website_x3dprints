@@ -1,9 +1,9 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
 
-const canonical = "https://www.x3dprints.be/blog/tool-organizers-3d-printen";
+const canonical = "https://www.x3dprints.be/blog/tool-organizers-3d-printen/";
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=tool-organizers-3d-printen";
 const contactHref = `/contact${utm}`;
 const toolHref = `/materials${utm}#material-suggestion-tool`;
@@ -12,12 +12,12 @@ const publishedDate = "2026-01-29T08:00:00+01:00"
 export const metadata: Metadata = {
   title: "Tool organizers 3D printen: Gridfinity, Packout, TSTAK & custom | X3DPrints",
   description:
-    "Uitgebreide gids over 3D-geprinte tool organizers: intake, materiaalkeuze, labelzones, antislip en wanneer je kiest voor Gridfinity, Packout, TSTAK of custom (Skådis/pegboard).",
+    "Uitgebreide gids over 3D-geprinte tool organizers: intake, materiaalkeuze, labelzones, antislip en wanneer je kiest voor Gridfinity, Packout, TSTAK of custom (SkÃ¥dis/pegboard).",
   alternates: {
     canonical,
     languages: {
       "nl-BE": canonical,
-      en: "https://www.x3dprints.be/en/blog/tool-organizers-3d-printing",
+      "en-BE": "https://www.x3dprints.be/en/blog/tool-organizers-3d-printing",
       "x-default": canonical,
     },
   },
@@ -40,7 +40,7 @@ export default function ToolOrganizersBlog() {
     <main className="px-6 pb-16 sm:px-8 lg:px-12">
       <article className="mx-auto max-w-4xl space-y-12">
         <header className="space-y-4 pt-10 sm:pt-14">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-700">Organizers · gids</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-700">Organizers Â· gids</p>
           <h1 className="text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
             Tool organizers 3D printen: Gridfinity, Packout, TSTAK en custom
           </h1>
@@ -88,7 +88,7 @@ export default function ToolOrganizersBlog() {
             </li>
             <li className="flex gap-2 rounded-xl border border-slate-200 bg-white/80 p-3 shadow-sm dark:border-slate-700 dark:bg-[#0B0F1A]/80">
               <span className="i-lucide-ruler text-cyan-600" aria-hidden />
-              Binnenmaten L×B×H in mm; bij Gridfinity: raster + vakhoogte.
+              Binnenmaten LÃ—BÃ—H in mm; bij Gridfinity: raster + vakhoogte.
             </li>
             <li className="flex gap-2 rounded-xl border border-slate-200 bg-white/80 p-3 shadow-sm dark:border-slate-700 dark:bg-[#0B0F1A]/80">
               <span className="i-lucide-wrench text-cyan-600" aria-hidden />
@@ -125,7 +125,7 @@ export default function ToolOrganizersBlog() {
             <div>
               <p className="text-sm font-semibold text-cyan-700">Milwaukee Packout</p>
               <p className="text-sm text-slate-700 dark:text-slate-200">
-                Voor professionals en camionettes. Trays worden klemvast en antislip gemaakt zodat accu’s/chargers niet schuiven. Past
+                Voor professionals en camionettes. Trays worden klemvast en antislip gemaakt zodat accuâ€™s/chargers niet schuiven. Past
                 in Organizer (48-22-8435), Low-Profile (8431) en Compact (8436).
               </p>
             </div>
@@ -136,9 +136,9 @@ export default function ToolOrganizersBlog() {
               </p>
             </div>
             <div>
-              <p className="text-sm font-semibold text-cyan-700">Custom / pegboard / Skådis</p>
+              <p className="text-sm font-semibold text-cyan-700">Custom / pegboard / SkÃ¥dis</p>
               <p className="text-sm text-slate-700 dark:text-slate-200">
-                Voor alles wat nergens standaard past: foto + maten volstaan. We printen ook add-ons voor IKEA Skådis (hooks, bins,
+                Voor alles wat nergens standaard past: foto + maten volstaan. We printen ook add-ons voor IKEA SkÃ¥dis (hooks, bins,
                 kabelclips) en magnetische labels voor pegboards.
               </p>
             </div>
@@ -153,7 +153,7 @@ export default function ToolOrganizersBlog() {
           </p>
           <ul className="list-disc space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-200">
             <li>
-              <Link href="/materials/pla" className="font-semibold underline decoration-cyan-400 hover:decoration-cyan-600">
+              <Link href="/materials" className="font-semibold underline decoration-cyan-400 hover:decoration-cyan-600">
                 PLA Matte
               </Link>{" "}
               voor modulaire trays en kleurcodes.
@@ -165,7 +165,7 @@ export default function ToolOrganizersBlog() {
               voor Packout/TSTAK of eender welke koffer die rechtop of in de camionette staat.
             </li>
             <li>
-              Antislip laag kan als aparte insert of geïntegreerd patroon.
+              Antislip laag kan als aparte insert of geÃ¯ntegreerd patroon.
             </li>
           </ul>
         </section>
@@ -182,15 +182,15 @@ export default function ToolOrganizersBlog() {
           <h2 className="text-2xl font-bold text-slate-900">Custom opties die vaak vergeten worden</h2>
           <ul className="list-disc space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-200">
             <li>
-              <strong>Magnetische labels & Skådis add-ons.</strong> We print hooks, bakjes en kabelclips die in het IKEA Skådis
+              <strong>Magnetische labels & SkÃ¥dis add-ons.</strong> We print hooks, bakjes en kabelclips die in het IKEA SkÃ¥dis
               pegboard klikken, plus magnetische labelframes voor metalen borden.
             </li>
             <li>
-              <strong>Parametric bins.</strong> Wissel je inhoud? We houden één parametrisch model bij en kunnen snel varianten
+              <strong>Parametric bins.</strong> Wissel je inhoud? We houden Ã©Ã©n parametrisch model bij en kunnen snel varianten
               bijprinten (andere hoogte/vakindeling) met dezelfde pasvorm.
             </li>
             <li>
-              <strong>Hybride materialen.</strong> PLA Matte voor strakke looks + PETG bodem voor impact geeft een premium én
+              <strong>Hybride materialen.</strong> PLA Matte voor strakke looks + PETG bodem voor impact geeft een premium Ã©n
               robuust resultaat.
             </li>
           </ul>
@@ -202,14 +202,14 @@ export default function ToolOrganizersBlog() {
             <GlassCard className="border border-white/50 bg-white/85 p-4 text-sm dark:border-slate-800 dark:bg-[#0B0F1A]/80">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">Servicewagen</p>
               <p className="mt-2 text-slate-700 dark:text-slate-200">
-                Packout low-profile trays met antislip voor M12/M18 accu’s, lader en bits. Labelzones zodat een collega dezelfde
+                Packout low-profile trays met antislip voor M12/M18 accuâ€™s, lader en bits. Labelzones zodat een collega dezelfde
                 indeling zonder uitleg begrijpt.
               </p>
             </GlassCard>
             <GlassCard className="border border-white/50 bg-white/85 p-4 text-sm dark:border-slate-800 dark:bg-[#0B0F1A]/80">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">Hobby/desk</p>
               <p className="mt-2 text-slate-700 dark:text-slate-200">
-                Gridfinity (gridfinity-stijl) voor bits, EDC en soldeer-accessoires. Kleurcodes per categorie, labelbare rand, één
+                Gridfinity (gridfinity-stijl) voor bits, EDC en soldeer-accessoires. Kleurcodes per categorie, labelbare rand, Ã©Ã©n
                 custom vak voor je multimeter.
               </p>
             </GlassCard>
@@ -221,9 +221,9 @@ export default function ToolOrganizersBlog() {
               </p>
             </GlassCard>
             <GlassCard className="border border-white/50 bg-white/85 p-4 text-sm dark:border-slate-800 dark:bg-[#0B0F1A]/80">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">Pegboard / Skådis</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">Pegboard / SkÃ¥dis</p>
               <p className="mt-2 text-slate-700 dark:text-slate-200">
-                Custom Skådis haken, bakjes en kabelmanagement. Magnetische labelframes zodat elke haak herkenbaar blijft.
+                Custom SkÃ¥dis haken, bakjes en kabelmanagement. Magnetische labelframes zodat elke haak herkenbaar blijft.
               </p>
             </GlassCard>
           </div>
@@ -252,15 +252,15 @@ export default function ToolOrganizersBlog() {
               <Link href="/organizers">Organizers hub</Link>
             </li>
             <li>
-              <Link href="/organizers/modugrid">Gridfinity (gridfinity-stijl)</Link> ·{" "}
-              <Link href="/organizers/packout">Packout</Link> · <Link href="/organizers/tstak">TSTAK</Link> ·{" "}
+              <Link href="/organizers/modugrid">Gridfinity (gridfinity-stijl)</Link> Â·{" "}
+              <Link href="/organizers/packout">Packout</Link> Â· <Link href="/organizers/tstak">TSTAK</Link> Â·{" "}
               <Link href="/organizers/custom">Custom</Link>
             </li>
             <li>
               <Link href="/viewer">3D Viewer</Link> om je modellen mee te sturen
             </li>
             <li>
-              <Link href="/materials">Materialen</Link> · <Link href="/pricing">Prijzen</Link> ·{" "}
+              <Link href="/materials">Materialen</Link> Â· <Link href="/pricing">Prijzen</Link> Â·{" "}
               <Link href="/contact?material=organizers">Plan een indeling</Link>
             </li>
           </ul>
@@ -271,5 +271,7 @@ export default function ToolOrganizersBlog() {
     </main>
   )
 }
+
+
 
 

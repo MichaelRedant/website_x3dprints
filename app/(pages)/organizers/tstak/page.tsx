@@ -2,13 +2,14 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import AutoCarousel from "@/components/AutoCarousel"
 import Faq from "@/components/Faq"
 import OrganizerBundles from "@/components/OrganizerBundles"
 import Reveal from "@/components/Reveal"
 import { ORGANIZER_PAGES } from "@/content/organizer-details"
 import { buildOrganizerContactHref, buildOrganizerSchemas } from "@/lib/organizers"
-import { SITE } from "@/lib/seo"
+import { SITE, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 const PAGE = ORGANIZER_PAGES.tstak
 const PAGE_URL = `${SITE.url}/organizers/${PAGE.slug}`
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     canonical: PAGE.seo.canonical,
     languages: {
       "nl-BE": PAGE.seo.canonical,
-      en: `${SITE.url}/en/organizers/${PAGE.slug}`,
+      "en-BE": `${SITE.url}/en/organizers/${PAGE.slug}`,
       "x-default": PAGE.seo.canonical,
     },
   },
@@ -40,15 +41,39 @@ export const metadata: Metadata = {
 export default function TstakPage() {
   const contactHref = buildOrganizerContactHref(PAGE.slug)
   const schemas = buildOrganizerSchemas(PAGE, PAGE_URL)
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: PAGE.faq.map((item) => ({
-      "@type": "Question",
-      name: item.q,
-      acceptedAnswer: { "@type": "Answer", text: item.a },
-    })),
-  }
+  const faqSchema = buildFaqPageSchema({
+    inLanguage: "nl-BE",
+    mainEntityOfPage: PAGE_URL,
+    items: PAGE.faq,
+  })
+  const howToSchema = buildHowToSchema({
+    name: "Custom TSTAK vak aanvragen",
+    description: "Vraag een TSTAK insert op maat aan met foto en modelnummer.",
+    inLanguage: "nl-BE",
+    mainEntityOfPage: PAGE_URL,
+    totalTime: "PT10M",
+    toolNames: ["Foto van de koffer", "Meetlat of schuifmaat"],
+    url: PAGE_URL,
+    steps: [
+      { name: "Model delen", text: "Geef het TSTAK modelnummer of foto van de open koffer." },
+      { name: "Maten doorgeven", text: "Binnenmaten in mm indien gekend." },
+      { name: "Tools oplijsten", text: "Small parts, handtools of mix met aantallen." },
+      { name: "Uploaden", text: "Gebruik het contactformulier (TSTAK prefill) om alles te sturen." },
+    ],
+  })
+  const tocItems = [
+    { id: "tstak-overview", label: "Wat lost een TSTAK indeling op?" },
+    { id: "bundles", label: "Bundels en presets" },
+    { id: "carousel", label: "Foto's van TSTAK layouts" },
+    { id: "faq", label: "FAQ TSTAK organizers" },
+    { id: "tstak-sources", label: "Bronnen en referenties" },
+  ]
+  const references = [
+    { label: "DeWALT TSTAK productinformatie", url: "https://www.dewalt.com/product/dwst17814/tstak%C2%AE-4-compartment-box" },
+    { label: "Stanley tool storage overzicht", url: "https://www.stanleytools.com/products/storage-and-organization" },
+    { label: "ISO/ASTM 52900 terminologie", url: "https://www.astm.org/f2997-13r21.html" },
+  ]
+  const lastUpdatedLabel = "Laatst bijgewerkt: 6 februari 2026"
 
   return (
     <>
@@ -64,6 +89,8 @@ export default function TstakPage() {
             <p className="max-w-3xl text-sm font-semibold text-slate-600 dark:text-slate-300">
               Gericht op professionele teams op locatie en in de camionette: elektro, HVAC, installateurs.
             </p>
+            <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-xl" />
             <div className="overflow-hidden rounded-2xl border border-white/60 shadow-lg ring-1 ring-white/60 dark:border-slate-800 dark:ring-0">
               <Image
                 src="/images/organizers/tstak/tstak0.jpg"
@@ -88,6 +115,9 @@ export default function TstakPage() {
               <Link href="/blog/tool-organizers-3d-printen" className="underline decoration-cyan-400 hover:decoration-cyan-700">
                 Organizers blog
               </Link>
+              <a href="#tstak-sources" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+                Bronnen
+              </a>
             </div>
           </div>
 
@@ -147,7 +177,7 @@ export default function TstakPage() {
           <Reveal className="grid gap-6 rounded-3xl bg-white/70 p-6 ring-1 ring-white/60 backdrop-blur dark:bg-[#0B0F1A]/70 dark:ring-0 md:grid-cols-[1fr_1fr] md:gap-10">
             <div className="space-y-3">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-700">Wat los je op</p>
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Geen rammel in je TSTAK</h2>
+              <h2 id="tstak-overview" className="scroll-mt-28 text-2xl font-bold text-slate-900 dark:text-white">Geen rammel in je TSTAK</h2>
               <p className="text-slate-700 dark:text-slate-200">
                 Stabiele trays per hoogte, zodat je small parts en handtools gescheiden blijven zonder foam-gedoe.
               </p>
@@ -195,13 +225,13 @@ export default function TstakPage() {
             </div>
           </Reveal>
 
-          <section id="bundles">
+          <section id="bundles" className="scroll-mt-28">
           <Reveal>
             <OrganizerBundles systemSlug={PAGE.slug} systemName={PAGE.systemName} bundles={PAGE.bundles} />
           </Reveal>
           </section>
 
-          <section id="carousel">
+          <section id="carousel" className="scroll-mt-28">
           <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
             <div className="mb-4 flex items-center justify-between gap-3">
               <div>
@@ -236,7 +266,7 @@ export default function TstakPage() {
           </Reveal>
           </section>
 
-          <section id="faq">
+          <section id="faq" className="scroll-mt-28">
           <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
             <Faq items={PAGE.faq} title="Veelgestelde vragen over TSTAK organizers" className="mt-0" />
           </Reveal>
@@ -254,6 +284,26 @@ export default function TstakPage() {
               </p>
             </div>
           </Reveal>
+
+          <section id="tstak-sources" className="scroll-mt-28">
+            <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
+              <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Bronnen en referenties</h2>
+              <p className="mt-2 text-sm text-slate-600 dark:text-slate-200">
+                Deze referenties gebruiken we om TSTAK-systeemnamen, compatibiliteit en terminologie correct te houden.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-100">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </section>
         </div>
       </section>
 
@@ -272,20 +322,7 @@ export default function TstakPage() {
               thumbnail: `${SITE.url}${PAGE.seo.ogImage}`,
               caption: "TSTAK insert op maat met labelzones en antislip-optie",
             },
-            {
-              "@context": "https://schema.org",
-              "@type": "HowTo",
-              name: "Custom TSTAK vak aanvragen",
-              description: "Vraag een TSTAK insert op maat aan met foto en modelnummer.",
-              step: [
-                { "@type": "HowToStep", position: 1, name: "Model delen", text: "Geef het TSTAK modelnummer of foto van de open koffer." },
-                { "@type": "HowToStep", position: 2, name: "Maten doorgeven", text: "Binnenmaten in mm indien gekend." },
-                { "@type": "HowToStep", position: 3, name: "Tools oplijsten", text: "Small parts, handtools of mix met aantallen." },
-                { "@type": "HowToStep", position: 4, name: "Uploaden", text: "Gebruik het contactformulier (TSTAK prefill) om alles te sturen." },
-              ],
-              tool: ["Foto van de koffer", "Meetlat of schuifmaat"],
-              totalTime: "PT10M",
-            },
+            howToSchema,
           ]) }}
       />
     </>

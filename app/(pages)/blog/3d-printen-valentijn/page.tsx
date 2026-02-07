@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -7,7 +7,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
 
-const canonical = "https://www.x3dprints.be/blog/3d-printen-valentijn"
+const canonical = "https://www.x3dprints.be/blog/3d-printen-valentijn/"
 const ogImage = "https://www.x3dprints.be/images/og-home.jpg"
 
 export const metadata: Metadata = {
@@ -87,7 +87,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  inLanguage: ["nl-BE", "en-BE"],
+  inLanguage: "nl-BE",
   headline: "3D printen voor Valentijn cadeaus",
   description: metadata.description,
   author: { "@type": "Organization", name: "X3DPrints" },
@@ -120,7 +120,7 @@ export default function BlogValentijn() {
               Gepersonaliseerde gifts, tafeldecor en lichtobjecten in Silk, Matte of Translucent PLA. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice (EUR 45/uur). Levering via EV-zones of pakketdienst.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact?material=pla-silk-plus">Plan je Valentijnprint</ShimmerButton>
+              <ShimmerButton href="/contact?material=pla-silk">Plan je Valentijnprint</ShimmerButton>
               <Link
                 href="/segments/3d-printing-valentijn"
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -272,7 +272,7 @@ export default function BlogValentijn() {
                 Populaire opdrachten: naamplaatjes, ring trays, sleutelhangers, tafeldecor met led, QR-ornamenten naar een playlist en giftbox inserts. Wanddikte &gt;1.2 mm voor hangers, 1.6-2 mm voor lichtobjecten.
               </p>
               <div className="mt-4 flex flex-wrap gap-3 text-sm">
-                <ShimmerButton href="/contact?material=pla-silk-plus">Start je Valentijn aanvraag</ShimmerButton>
+                <ShimmerButton href="/contact?material=pla-silk">Start je Valentijn aanvraag</ShimmerButton>
                 <Link
                   href="/segments/3d-printing-valentijn"
                   className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
@@ -322,6 +322,8 @@ export default function BlogValentijn() {
     </main>
   )
 }
+
+
 
 
 

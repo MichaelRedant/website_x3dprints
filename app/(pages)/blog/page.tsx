@@ -1,9 +1,10 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogSearch from "@/components/BlogSearch"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import OrganizerCta from "@/components/OrganizerCta"
@@ -16,7 +17,7 @@ const NL_METADATA: Metadata = {
     canonical: "https://www.x3dprints.be/blog/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/",
-      en: "https://www.x3dprints.be/en/blog/",
+      "en-BE": "https://www.x3dprints.be/en/blog/",
       "x-default": "https://www.x3dprints.be/blog/",
     },
   },
@@ -24,8 +25,8 @@ const NL_METADATA: Metadata = {
     title: "3D print blog & kennisbank | X3DPrints",
     description:
       "Leer hoe je 3D print projecten plant: kostenraming, PLA vs PETG, Bambu X1C instellingen en designrichtlijnen. Rechtstreekse links naar prijscalculator en materialen.",
-    url: "https://www.x3dprints.be/blog",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D print blog X3DPrints" }],
+    url: "https://www.x3dprints.be/blog/",
+    images: [{ url: "/images/og-blog.jpg", width: 1200, height: 630, alt: "3D print blog X3DPrints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -33,7 +34,7 @@ const NL_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D print blog & kennisbank | X3DPrints",
     description: "Strategische content over 3D print kosten, materiaalkeuze, Bambu X1C instellingen en ontwerpaanpak.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-blog.jpg"],
   },
 }
 
@@ -45,7 +46,7 @@ export const EN_METADATA: Metadata = {
     canonical: "https://www.x3dprints.be/en/blog/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/",
-      en: "https://www.x3dprints.be/en/blog/",
+      "en-BE": "https://www.x3dprints.be/en/blog/",
       "x-default": "https://www.x3dprints.be/blog/",
     },
   },
@@ -54,7 +55,7 @@ export const EN_METADATA: Metadata = {
     description:
       "Learn how to plan 3D printing projects: cost estimates, PLA vs PETG, Bambu X1C settings and design guidelines. Direct links to the pricing calculator and materials.",
     url: "https://www.x3dprints.be/en/blog/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printing blog X3DPrints" }],
+    images: [{ url: "/images/og-blog.jpg", width: 1200, height: 630, alt: "3D printing blog X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -62,7 +63,7 @@ export const EN_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D printing blog & knowledge base | X3DPrints",
     description: "Strategic content on 3D printing costs, material choice, Bambu X1C settings and design approach.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-blog.jpg"],
   },
 }
 
@@ -139,7 +140,7 @@ const TOPICS_NL: Topic[] = [
       "Alles wat je moet weten om organizers te laten printen: intake, materiaalkeuze, labelzones, anti-slip en wanneer je kiest voor Gridfinity, Packout, TSTAK of een custom insert.",
     highlights: [
       "Bevat interne links naar de organizers hub, materialen en pricing zodat je meteen kunt plannen.",
-      "Uitleg per systeem (Gridfinity, Packout, TSTAK, custom/Skådis) met intakechecklist.",
+      "Uitleg per systeem (Gridfinity, Packout, TSTAK, custom/SkÃ¥dis) met intakechecklist.",
       "Externe context over pegboards en Packout ecosystemen om EEAT te versterken.",
     ],
     links: [
@@ -155,7 +156,7 @@ const TOPICS_NL: Topic[] = [
     title: "Gridfinity: modulair opslagsysteem met maatwerk door X3DPrints",
     date: "2026-01-30",
     summary:
-      "Uitleg van het 42×42×7 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
+      "Uitleg van het 42Ã—42Ã—7 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
     highlights: [
       "Technische kern: raster, magneten, labels, materialen en generators.",
       "Toepassingen van werkplaats tot keuken en Packout-koffers.",
@@ -597,7 +598,7 @@ const TOPICS_NL: Topic[] = [
     ],
     links: [
       { label: "Lees Use Case Dinsdag #8", href: "/blog/use-case-dinsdag-stem" },
-      { label: "Segment scholen & STEM", href: "/segments/3d-printing-schools" },
+      { label: "Segment scholen & STEM", href: "/segments/3d-printing-scholen" },
       { label: "Vraag STEM-advies", href: "/contact?topic=use-case-stem" },
     ],
     intent: "how-to",
@@ -633,7 +634,7 @@ const TOPICS_NL: Topic[] = [
     ],
     links: [
       { label: "Lees Filament Vrijdag #5", href: "/blog/filament-vrijdag-pla-marble" },
-      { label: "PLA materialenoverzicht", href: "/materials/pla" },
+      { label: "PLA materialenoverzicht", href: "/materials" },
       { label: "Vraag PLA Marble advies", href: "/contact?material=PLA%20Marble" },
     ],
     intent: "informational",
@@ -687,7 +688,7 @@ const TOPICS_NL: Topic[] = [
     ],
     links: [
       { label: "Lees Filament Vrijdag #8", href: "/blog/filament-vrijdag-pla-silk-plus" },
-      { label: "PLA Silk+ materiaalfiche", href: "/materials/pla-silk-plus" },
+      { label: "PLA Silk+ materiaalfiche", href: "/materials/pla-silk" },
       { label: "Vraag Silk+ advies", href: "/contact?material=PLA%20Silk%2B" },
     ],
     intent: "informational",
@@ -868,7 +869,7 @@ const TOPICS_NL: Topic[] = [
     links: [
       { label: "Lees volledig artikel", href: "/blog/3d-printen-valentijn" },
       { label: "Valentijn segment", href: "/segments/3d-printing-valentijn" },
-      { label: "Plan Valentijnprints", href: "/contact?material=pla-silk-plus" },
+      { label: "Plan Valentijnprints", href: "/contact?material=pla-silk" },
     ],
     intent: "informational",
     category: "segments-cases",
@@ -886,7 +887,7 @@ const TOPICS_NL: Topic[] = [
     links: [
       { label: "Lees volledig artikel", href: "/blog/3d-printen-vaderdag-moederdag" },
       { label: "Vaderdag/Moederdag segment", href: "/segments/3d-printing-vaderdag-moederdag" },
-      { label: "Plan je gifts", href: "/contact?material=pla-silk-plus" },
+      { label: "Plan je gifts", href: "/contact?material=pla-silk" },
     ],
     intent: "informational",
     category: "segments-cases",
@@ -904,7 +905,7 @@ const TOPICS_NL: Topic[] = [
     links: [
       { label: "Lees volledig artikel", href: "/blog/relatiegeschenken-3d-printen" },
       { label: "Marketing & events segment", href: "/segments/3d-printing-marketing" },
-      { label: "Plan relatiegeschenken", href: "/contact?material=pla-silk-plus" },
+      { label: "Plan relatiegeschenken", href: "/contact?material=pla-silk" },
     ],
     intent: "transactional",
     category: "segments-cases",
@@ -1118,7 +1119,7 @@ const TOPICS_EN: Topic[] = [
       "Complete guide to printed organizers: intake checklist, materials, label zones, anti-slip and when to choose Gridfinity, Packout, TSTAK or fully custom inserts.",
     highlights: [
       "Internal links to the organizers hub, materials and pricing so you can plan fast.",
-      "System-by-system guidance (Gridfinity/gridfinity-style, Packout, TSTAK, custom/Skådis) plus what to send during intake.",
+      "System-by-system guidance (Gridfinity/gridfinity-style, Packout, TSTAK, custom/SkÃ¥dis) plus what to send during intake.",
       "External context on pegboards and Packout ecosystems to strengthen EEAT.",
     ],
     links: [
@@ -1134,7 +1135,7 @@ const TOPICS_EN: Topic[] = [
     title: "Gridfinity: modular storage system, custom-fit by X3DPrints",
     date: "2026-01-30",
     summary:
-      "Explains the 42×42×7 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
+      "Explains the 42Ã—42Ã—7 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
     highlights: [
       "Technical core: grid, magnets, labels, materials and generators.",
       "Use cases from workshops to kitchens and Packout cases.",
@@ -1594,7 +1595,7 @@ const TOPICS_EN: Topic[] = [
     ],
     links: [
       { label: "Read Use Case Tuesday #8", href: "/blog/use-case-dinsdag-stem" },
-      { label: "Schools and STEM segment", href: "/segments/3d-printing-schools" },
+      { label: "Schools and STEM segment", href: "/segments/3d-printing-scholen" },
       { label: "Request STEM advice", href: "/contact?topic=use-case-stem" },
     ],
     intent: "how-to",
@@ -1630,7 +1631,7 @@ const TOPICS_EN: Topic[] = [
     ],
     links: [
       { label: "Read Filament Friday #5", href: "/blog/filament-vrijdag-pla-marble" },
-      { label: "PLA materials overview", href: "/materials/pla" },
+      { label: "PLA materials overview", href: "/materials" },
       { label: "Request PLA Marble advice", href: "/contact?material=PLA%20Marble" },
     ],
     intent: "informational",
@@ -1684,7 +1685,7 @@ const TOPICS_EN: Topic[] = [
     ],
     links: [
       { label: "Read Filament Friday #8", href: "/blog/filament-vrijdag-pla-silk-plus" },
-      { label: "PLA Silk+ material sheet", href: "/materials/pla-silk-plus" },
+      { label: "PLA Silk+ material sheet", href: "/materials/pla-silk" },
       { label: "Request Silk+ advice", href: "/contact?material=PLA%20Silk%2B" },
     ],
     intent: "informational",
@@ -1865,7 +1866,7 @@ const TOPICS_EN: Topic[] = [
     links: [
       { label: "Read full article", href: "/blog/3d-printen-valentijn" },
       { label: "Valentine segment", href: "/segments/3d-printing-valentijn" },
-      { label: "Plan Valentine prints", href: "/contact?material=pla-silk-plus" },
+      { label: "Plan Valentine prints", href: "/contact?material=pla-silk" },
     ],
     intent: "informational",
     category: "segments-cases",
@@ -1883,7 +1884,7 @@ const TOPICS_EN: Topic[] = [
     links: [
       { label: "Read full article", href: "/blog/3d-printen-vaderdag-moederdag" },
       { label: "Fathers Day/Mothers Day segment", href: "/segments/3d-printing-vaderdag-moederdag" },
-      { label: "Plan your gifts", href: "/contact?material=pla-silk-plus" },
+      { label: "Plan your gifts", href: "/contact?material=pla-silk" },
     ],
     intent: "informational",
     category: "segments-cases",
@@ -1901,7 +1902,7 @@ const TOPICS_EN: Topic[] = [
     links: [
       { label: "Read full article", href: "/blog/relatiegeschenken-3d-printen" },
       { label: "Marketing and events segment", href: "/segments/3d-printing-marketing" },
-      { label: "Plan corporate gifts", href: "/contact?material=pla-silk-plus" },
+      { label: "Plan corporate gifts", href: "/contact?material=pla-silk" },
     ],
     intent: "transactional",
     category: "segments-cases",
@@ -2058,7 +2059,7 @@ const TOPICS_EN: Topic[] = [
       "Alles wat je moet weten om organizers te laten printen: intake, materiaalkeuze, labelzones, anti-slip en wanneer je kiest voor Gridfinity, Packout, TSTAK of een custom insert.",
     highlights: [
       "Bevat interne links naar de organizers hub, materialen en pricing zodat je meteen kunt plannen.",
-      "Uitleg per systeem (Gridfinity/gridfinity-stijl, Packout, TSTAK, custom/Skådis) met intakechecklist.",
+      "Uitleg per systeem (Gridfinity/gridfinity-stijl, Packout, TSTAK, custom/SkÃ¥dis) met intakechecklist.",
       "Externe context over pegboards en Packout ecosystemen om EEAT te versterken.",
     ],
     links: [
@@ -2074,7 +2075,7 @@ const TOPICS_EN: Topic[] = [
     title: "Gridfinity: modular storage system, custom-fit by X3DPrints",
     date: "2026-01-30",
     summary:
-      "Explains the 42×42×7 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
+      "Explains the 42Ã—42Ã—7 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
     highlights: [
       "Technical core: grid, magnets, labels, materials and generators.",
       "Use cases from workshops to kitchens and Packout cases.",
@@ -2093,7 +2094,7 @@ const TOPICS_EN: Topic[] = [
     title: "Gridfinity: modulair opslagsysteem met maatwerk door X3DPrints",
     date: "2026-12-30",
     summary:
-      "Uitleg van het 42×42×7 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
+      "Uitleg van het 42Ã—42Ã—7 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
     highlights: [
       "Technische kern: raster, magneten, labels, materialen en generators.",
       "Toepassingen van werkplaats tot keuken en Packout-koffers.",
@@ -2407,6 +2408,42 @@ export default function BlogPage({ locale }: PageProps) {
   const quickLinks = isEn ? QUICK_LINKS_EN : QUICK_LINKS_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
   const toAbsolute = (href: string) => `https://www.x3dprints.be${localize(href)}`
+  const tocItems = isEn
+    ? [
+        { id: "blog-search", label: "Find the right article quickly" },
+        { id: "filament-vrijdag", label: "Filament Friday series" },
+        { id: "maker-monday", label: "Maker Monday series" },
+        { id: "use-case-dinsdag", label: "Use Case Tuesday series" },
+        { id: "materials-pricing", label: "Materials and pricing topics" },
+        { id: "segments-cases", label: "Segments and case studies" },
+        { id: "how-to", label: "How-to workflows" },
+        { id: "blog-extra-resources", label: "Extra resources" },
+        { id: "blog-sources", label: "Sources and references" },
+      ]
+    : [
+        { id: "blog-search", label: "Vind snel het juiste artikel" },
+        { id: "filament-vrijdag", label: "Filament Vrijdag reeks" },
+        { id: "maker-monday", label: "Maker Monday reeks" },
+        { id: "use-case-dinsdag", label: "Use Case Dinsdag reeks" },
+        { id: "materials-pricing", label: "Materialen en pricing topics" },
+        { id: "segments-cases", label: "Segmenten en case studies" },
+        { id: "how-to", label: "How-to workflows" },
+        { id: "blog-extra-resources", label: "Extra resources" },
+        { id: "blog-sources", label: "Bronnen en referenties" },
+      ]
+  const references = isEn
+    ? [
+        { label: "Google Search Central blog guidance", url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" },
+        { label: "Schema.org BlogPosting", url: "https://schema.org/BlogPosting" },
+        { label: "Google structured data docs", url: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" },
+      ]
+    : [
+        { label: "Google Search Central richtlijnen voor content", url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" },
+        { label: "Schema.org BlogPosting", url: "https://schema.org/BlogPosting" },
+        { label: "Google docs over structured data", url: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" },
+      ]
+  const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"
+  const topicsWithDate = topics.filter((topic): topic is Topic & { date: string } => Boolean(topic.date))
 
   const SORT_PREFERENCE: Record<TopicCategory, "featured" | "az"> = {
     "filament-friday": "featured",
@@ -2449,7 +2486,7 @@ export default function BlogPage({ locale }: PageProps) {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: copy.schema.articleListName,
-    itemListElement: topics.map((topic, index) => ({
+    itemListElement: topicsWithDate.map((topic, index) => ({
       "@type": "ListItem",
       position: index + 1,
       item: {
@@ -2471,7 +2508,7 @@ export default function BlogPage({ locale }: PageProps) {
     name: copy.schema.blogName,
     url: toAbsolute("/blog"),
     inLanguage: copy.schema.language,
-    blogPost: topics.map((topic) => ({
+    blogPost: topicsWithDate.map((topic) => ({
       "@type": "BlogPosting",
       headline: topic.title,
       description: topic.summary,
@@ -2503,6 +2540,7 @@ export default function BlogPage({ locale }: PageProps) {
               {copy.hero.title}
             </h1>
             <p className="text-lg text-slate-700">{copy.hero.body}</p>
+            <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="flex flex-wrap gap-3">
               <ShimmerButton href={localize("/pricing")}>{copy.hero.ctas.pricing}</ShimmerButton>
               <Link
@@ -2518,6 +2556,11 @@ export default function BlogPage({ locale }: PageProps) {
                 {copy.hero.ctas.finishing}
               </Link>
             </div>
+            <ContentTableOfContents
+              title={isEn ? "Contents" : "Inhoud"}
+              items={tocItems}
+              className="max-w-2xl"
+            />
           </Reveal>
           <div className="grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(240px,1fr)]">
             <div id="blog-search">
@@ -2712,7 +2755,7 @@ export default function BlogPage({ locale }: PageProps) {
         )
       })}
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="blog-extra-resources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="grid gap-6 md:grid-cols-3">
@@ -2740,7 +2783,7 @@ export default function BlogPage({ locale }: PageProps) {
         </div>
       </section>
 
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+      <section id="blog-final-cta" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="flex flex-col gap-6 border border-white/40 bg-white/80 p-8 text-center shadow-xl backdrop-blur sm:flex-row sm:items-center sm:justify-between sm:text-left">
@@ -2760,8 +2803,31 @@ export default function BlogPage({ locale }: PageProps) {
         </div>
       </section>
 
+      <section id="blog-sources" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/80 p-8 shadow-xl backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">{isEn ? "Sources and references" : "Bronnen en referenties"}</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleListJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }} />
     </main>
   )
 }
+
+

@@ -1,6 +1,13 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { SITE, buildBreadcrumbSchema, buildOfferCatalog, type SchemaOfferInput } from "@/lib/seo"
+import {
+  SITE,
+  buildBreadcrumbSchema,
+  buildOfferCatalog,
+  buildOrganizationSchema,
+  buildWebsiteSchema,
+  type SchemaOfferInput,
+} from "@/lib/seo"
 import { Orbitron, JetBrains_Mono } from "next/font/google"
 import { cn } from "@/lib/utils"
 
@@ -12,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
     default: SITE.title,
-    template: "%s | X3DPrints",
+    template: "%s",
   },
   description: SITE.description,
   alternates: {
@@ -42,6 +49,15 @@ export const metadata: Metadata = {
 }
 
 function buildSchema() {
+  const organizationSchema = buildOrganizationSchema({
+    url: SITE.url,
+    inLanguage: ["nl-BE", "en-BE"],
+  })
+  const websiteSchema = buildWebsiteSchema({
+    url: SITE.url,
+    inLanguage: ["nl-BE", "en-BE"],
+  })
+
   const offerItems: SchemaOfferInput[] = [
     { serviceName: "Prototype prints", price: "EUR 0", description: "Quote + planning", url: `${SITE.url}/services` },
     { serviceName: "Small batches", price: "EUR 0", description: "Batch advice and unit pricing", url: `${SITE.url}/services` },
@@ -141,7 +157,7 @@ function buildSchema() {
 
   return {
     "@context": "https://schema.org",
-    "@graph": [baseLocalBusiness, ...clusterLocalBusinesses],
+    "@graph": [organizationSchema, websiteSchema, baseLocalBusiness, ...clusterLocalBusinesses],
   }
 }
 
@@ -175,10 +191,21 @@ const breadcrumbEn = buildBreadcrumbSchema({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const schema = buildSchema()
+  const localeBootstrapScript = `(() => {
+    try {
+      const pathname = window.location.pathname || "/";
+      const isEn = pathname === "/en" || pathname.startsWith("/en/");
+      const lang = isEn ? "en-BE" : "nl-BE";
+      const root = document.documentElement;
+      if (root.lang !== lang) root.lang = lang;
+      root.setAttribute("data-locale", isEn ? "en" : "nl");
+    } catch (_) {}
+  })();`
 
   return (
-    <html lang="nl" data-theme="light" suppressHydrationWarning>
+    <html lang="nl-BE" data-theme="light" suppressHydrationWarning>
       <body className={cn("min-h-screen flex flex-col antialiased", orbitron.variable, mono.variable)}>
+        <script dangerouslySetInnerHTML={{ __html: localeBootstrapScript }} />
         {children}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbNl) }} />

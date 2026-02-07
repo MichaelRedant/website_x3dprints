@@ -7,27 +7,28 @@ import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import { readdirSync, statSync } from "node:fs"
 import path from "node:path"
 
 const NL_METADATA: Metadata = {
-  title: "3D print portfolio & case studies | X3DPrints",
+  title: "3D print portfolio België | 3D print projecten | X3DPrints",
   description:
-    "Bekijk real-life 3D print projecten: functionele onderdelen, merchandising en gifts geproduceerd in Herzele (Gent).",
+    "Bekijk 3D print projecten op maat in België: functionele onderdelen, merchandising en gifts geproduceerd in Herzele (regio Gent).",
   alternates: {
     canonical: "https://www.x3dprints.be/portfolio/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/portfolio/",
-      en: "https://www.x3dprints.be/en/portfolio/",
+      "en-BE": "https://www.x3dprints.be/en/portfolio/",
       "x-default": "https://www.x3dprints.be/portfolio/",
     },
   },
   openGraph: {
-    title: "3D print portfolio & case studies | X3DPrints",
+    title: "3D print portfolio België | X3DPrints",
     description:
-      "Fotoreeksen en timelapses van maatwerk 3D prints: prototypes, merchandising en gepersonaliseerde cadeaus uit het atelier in Herzele.",
+      "Fotoreeksen en timelapses van 3D printen op maat: prototypes, merchandising en gepersonaliseerde cadeaus uit het atelier in Herzele.",
     url: "https://www.x3dprints.be/portfolio/",
     images: [{ url: "/images/portfolio/2d-5-3.webp", width: 1200, height: 630, alt: "Portfolio van 3D print projecten" }],
     locale: "nl_BE",
@@ -35,9 +36,9 @@ const NL_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D print portfolio & case studies | X3DPrints",
+    title: "3D print projecten in België | X3DPrints",
     description:
-      "Functionele prototypes, merchandising en gifts: ontdek hoe X3DPrints projecten oplevert voor mkb, events en designers.",
+      "Functionele prototypes, merchandising en gifts: ontdek hoe X3DPrints 3D print projecten op maat oplevert.",
     images: ["/images/portfolio/2d-5-3.webp"],
   },
 }
@@ -50,7 +51,7 @@ export const EN_METADATA: Metadata = {
     canonical: "https://www.x3dprints.be/en/portfolio/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/portfolio/",
-      en: "https://www.x3dprints.be/en/portfolio/",
+      "en-BE": "https://www.x3dprints.be/en/portfolio/",
       "x-default": "https://www.x3dprints.be/portfolio/",
     },
   },
@@ -110,8 +111,8 @@ const photoEntries = readdirSync(portfolioDir)
 const PORTFOLIO_COPY_NL = {
   hero: {
     badge: "Portfolio & reviews",
-    title: "3D print portfolio met functionele onderdelen en branded gifts.",
-    body: "Van articulated octopus tot custom winkelmateriaal: elk project combineert functionele eisen met een strakke afwerking. Bekijk hoe we prototypes, seriewerk en gepersonaliseerde cadeaus afleveren vanuit het atelier in Herzele (regio Gent).",
+    title: "3D print portfolio met projecten op maat in België.",
+    body: "Van articulated octopus tot custom winkelmateriaal: elk project combineert functionele eisen met een strakke afwerking. Bekijk hoe we 3D modellen printen voor prototypes, seriewerk en gepersonaliseerde cadeaus vanuit het atelier in Herzele (regio Gent).",
     ctas: {
       quote: "Offerte aanvragen",
       services: "Bekijk diensten",
@@ -480,6 +481,34 @@ export default function Page({ locale }: PageProps) {
   const normalizedLocale = normalizeLocale(locale)
   const copy = normalizedLocale === "en" ? PORTFOLIO_COPY_EN : PORTFOLIO_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
+  const isEn = normalizedLocale === "en"
+  const tocItems = isEn
+    ? [
+        { id: "portfolio-stats", label: "What project metrics and capacity do we show?" },
+        { id: "portfolio-projects", label: "Which project types are included?" },
+        { id: "portfolio-gallery", label: "Photo gallery" },
+        { id: "portfolio-videos", label: "Timelapse video gallery" },
+        { id: "portfolio-sources", label: "Sources and references" },
+      ]
+    : [
+        { id: "portfolio-stats", label: "Welke projectcijfers en capaciteit tonen we?" },
+        { id: "portfolio-projects", label: "Welke projecttypes zitten in de portfolio?" },
+        { id: "portfolio-gallery", label: "Fotogalerij" },
+        { id: "portfolio-videos", label: "Timelapse videogalerij" },
+        { id: "portfolio-sources", label: "Bronnen en referenties" },
+      ]
+  const references = isEn
+    ? [
+        { label: "Google image SEO best practices", url: "https://developers.google.com/search/docs/appearance/google-images" },
+        { label: "Google video structured data guidelines", url: "https://developers.google.com/search/docs/appearance/structured-data/video" },
+        { label: "Schema.org ImageObject", url: "https://schema.org/ImageObject" },
+      ]
+    : [
+        { label: "Google best practices voor afbeeldingen", url: "https://developers.google.com/search/docs/appearance/google-images" },
+        { label: "Google richtlijnen voor video structured data", url: "https://developers.google.com/search/docs/appearance/structured-data/video" },
+        { label: "Schema.org ImageObject", url: "https://schema.org/ImageObject" },
+      ]
+  const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"
   const portfolioPath = localizeHref("/portfolio", normalizedLocale)
   const portfolioUrl = `${siteUrl}${portfolioPath}`
 
@@ -585,6 +614,7 @@ export default function Page({ locale }: PageProps) {
                 {copy.hero.title}
               </h1>
               <p className="mt-4 text-pretty text-lg text-slate-700">{copy.hero.body}</p>
+              <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 <ShimmerButton
                   href={localize("/contact")}
@@ -625,6 +655,11 @@ export default function Page({ locale }: PageProps) {
                   {copy.hero.chips.tabletop}
                 </Link>
               </div>
+              <ContentTableOfContents
+                title={isEn ? "Contents" : "Inhoud"}
+                items={tocItems}
+                className="mt-6 max-w-2xl"
+              />
             </Reveal>
 
             <Reveal delay={0.15} className="grid gap-4">
@@ -656,7 +691,7 @@ export default function Page({ locale }: PageProps) {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="portfolio-stats" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
@@ -672,7 +707,7 @@ export default function Page({ locale }: PageProps) {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="portfolio-projects" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal className="space-y-4">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{copy.projects.title}</h2>
@@ -701,7 +736,7 @@ export default function Page({ locale }: PageProps) {
         </div>
       </section>
 
-      <section className="px-6 py-20 sm:px-8 lg:px-12">
+      <section id="portfolio-gallery" className="scroll-mt-28 px-6 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="max-w-3xl">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{copy.gallery.title}</h2>
@@ -719,7 +754,7 @@ export default function Page({ locale }: PageProps) {
         </div>
       </section>
 
-      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+      <section id="portfolio-videos" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <Reveal className="max-w-3xl">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{copy.videos.title}</h2>
@@ -732,10 +767,9 @@ export default function Page({ locale }: PageProps) {
       </section>
 
       <ReadMoreLinks
+        pageType="portfolio"
         title={copy.readMore.title}
         intro={copy.readMore.intro}
-        primaryLinks={copy.readMore.primaryLinks}
-        secondaryLinks={copy.readMore.secondaryLinks}
       />
 
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
@@ -763,6 +797,34 @@ export default function Page({ locale }: PageProps) {
                 </div>
               </div>
             </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="portfolio-sources" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                {isEn ? "Sources and references" : "Bronnen en referenties"}
+              </h2>
+              <p className="mt-2 text-sm text-slate-600">
+                {isEn
+                  ? "Reference sources used for image and video discoverability standards."
+                  : "Referentiebronnen die we gebruiken voor standaarden rond image en video vindbaarheid."}
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {reference.label}
+                      </Link>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
           </Reveal>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical,
     languages: {
       "nl-BE": "https://www.x3dprints.be/blog/3d-printen-vaderdag-moederdag/",
-      en: canonical,
+      "en-BE": canonical,
       "x-default": "https://www.x3dprints.be/blog/3d-printen-vaderdag-moederdag/",
     },
   },
@@ -71,10 +71,10 @@ const faqItems = [
 ]
 
 const inspirationImages = [
-  { src: "/images/portfolio/vaas-stained.webp", alt: "Personalised vase gift" },
-  { src: "/images/portfolio/bamboe-eraser.webp", alt: "Desk gift for Father's Day" },
-  { src: "/images/portfolio/Man-vase.webp", alt: "Silk PLA decorative gift" },
-  { src: "/images/portfolio/Ceramics2.webp", alt: "Small decor gift idea" },
+  { src: "/images/portfolio/vaas-tetrahex-ripple-2-scaled.webp", alt: "Personalised vase gift" },
+  { src: "/images/portfolio/moederdag.webp", alt: "Desk gift for Father's Day" },
+  { src: "/images/portfolio/vaas-spiral-2-3-scaled.webp", alt: "Silk PLA decorative gift" },
+  { src: "/images/portfolio/vaas-capsule-planter-scaled.webp", alt: "Small decor gift idea" },
 ]
 
 const articleJsonLd = {
@@ -241,5 +241,6 @@ export default function FathersMothersDayBlogEn() {
     </main>
   )
 }
+
 
 

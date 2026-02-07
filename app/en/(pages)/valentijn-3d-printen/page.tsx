@@ -1,9 +1,10 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import Faq from "@/components/Faq"
+import Faq from "@/components/Faq"
+import { buildFaqPageSchema } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "Valentine 3D prints on demand | X3DPrints",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     canonical: "https://www.x3dprints.be/en/valentijn-3d-printen/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/valentijn-3d-printen/",
-      en: "https://www.x3dprints.be/en/valentijn-3d-printen/",
+      "en-BE": "https://www.x3dprints.be/en/valentijn-3d-printen/",
       "x-default": "https://www.x3dprints.be/valentijn-3d-printen/",
     },
   },
@@ -58,17 +59,10 @@ const faqItems = [
   },
 ]
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-
+const faqJsonLd = buildFaqPageSchema({
   inLanguage: "en-BE",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-}
+  items: faqItems,
+})
 
 export default function ValentinesLandingPage() {
   return (
@@ -87,7 +81,7 @@ export default function ValentinesLandingPage() {
             Heart decor, nameplates and personalised gifts in Silk, Matte and Translucent PLA. Design not included; send STL/STEP or choose design service at EUR 45/hour. Delivery via EV zones or parcel service.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <ShimmerButton href="/en/contact?material=pla-silk-plus">Plan your Valentine print</ShimmerButton>
+            <ShimmerButton href="/en/contact?material=pla-silk">Plan your Valentine print</ShimmerButton>
             <Link
               href="/en/segments/3d-printing-valentijn"
               className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -181,7 +175,7 @@ export default function ValentinesLandingPage() {
                     Portfolio (Valentine & decor) <span aria-hidden>-&gt;</span>
                   </Link>
                   <Link
-                    href="/en/materials/pla-silk-plus"
+                    href="/en/materials/pla-silk"
                     className="inline-flex items-center gap-2 text-rose-700 underline underline-offset-4 hover:text-rose-600"
                   >
                     PLA Silk+ material page <span aria-hidden>-&gt;</span>
@@ -196,7 +190,7 @@ export default function ValentinesLandingPage() {
               </div>
               <div className="relative min-h-[280px]">
                 <Image
-                  src="/images/portfolio/valentijn-articulated-1.webp"
+                  src="/images/portfolio/big%20valentijn%20boy%20articulated.webp"
                   alt="Valentine articulated figure in Silk PLA"
                   fill
                   className="object-cover"
@@ -229,7 +223,7 @@ export default function ValentinesLandingPage() {
                 Send your STL/STEP, preferred finish and deadline. We share options in Silk, Marble, Matte or Translucent PLA with realistic delivery.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <ShimmerButton href="/en/contact?material=pla-silk-plus">Request a quote</ShimmerButton>
+                <ShimmerButton href="/en/contact?material=pla-silk">Request a quote</ShimmerButton>
                 <Link
                   href="/en/blog/3d-printen-valentijn"
                   className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:-translate-y-0.5 hover:bg-white"
@@ -246,4 +240,7 @@ export default function ValentinesLandingPage() {
     </main>
   )
 }
+
+
+
 

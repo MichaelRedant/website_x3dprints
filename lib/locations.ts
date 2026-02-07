@@ -5616,6 +5616,18 @@ export const locations: Location[] = [
     metaDescription: "Professionele 3D prints in Sint-Gillis-Dendermonde voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
   },
   {
+    slug: "3d-printen-in-afsnee",
+    city: "Afsnee",
+    relatedPhrases: [
+      "3D print service afsnee",
+      "rapid prototyping afsnee",
+      "3D printing bedrijf afsnee",
+      "3D printen nabij afsnee",
+      "3D model laten printen afsnee",
+    ],
+    metaDescription: "Professionele 3D prints in Afsnee voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
+  },
+  {
     slug: "3d-printen-in-desteldonk",
     city: "Desteldonk",
     relatedPhrases: [

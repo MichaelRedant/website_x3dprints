@@ -87,6 +87,8 @@ Deze gids definieert rollen, eigenaarschap, kwaliteitsafspraken, checklists en r
 - **Material Suggestion Tool.** Houd multi-step logica in component, synchroniseer CTA’s naar `/contact?material=<slug>`.
 - **Contactformulier.** Query `material` moet select prefillen; houd fallback-copy voor 1-persoons planning (geen harde 2-5 dagen belofte) en zorg dat tekst/caret in dark mode altijd leesbaar blijft.
 - **Segment detailpagina's.** Gebruik het `Faq`-component (min. 3 Q/A) + FAQ JSON-LD, toon CTA’s naar `/materials#material-suggestion-tool` en `/contact?material=<slug>`, en herhaal interne links naar relevante blogposts/diensten.
+- **Schema consistency (verplicht).** Gebruik JSON-LD helper-fabrieken uit `lib/seo.ts` i.p.v. inline objecten: `buildFaqPageSchema`, `buildHowToSchema`, `buildServiceSchema`, `buildOfferCatalog`, `buildLocalBusinessSchema`.
+- **Interne link architectuur.** Gebruik `ReadMoreLinks` met `pageType` en beheer centrale mappings in `lib/seo-related-links.ts`; vermijd losse hardcoded "Verder lezen"-sets per pagina.
 - **Animaties.** Framer Motion met `useReducedMotion`, geen blocking JS.
 - **Images.** `next/image`, juiste `alt`, vermijd CLS.
 - **Security.** Escape output, valideer API input, geen secrets client-side.
@@ -140,7 +142,15 @@ Deze gids definieert rollen, eigenaarschap, kwaliteitsafspraken, checklists en r
   - Portfolio: ImageObject entries voor hero cases.
   - Blog: Article schema per post (inclusief `datePublished`).
   - Segments: ItemList + detailpages met relevante schema (FAQ/HowTo/Service).
+- JSON-LD helpers: nieuwe of aangepaste FAQ/HowTo/Service schema's moeten via `lib/seo.ts` helper-fabrieken lopen voor consistente `inLanguage`, `mainEntityOfPage` en structuur.
+- GEO content-structuur (verplicht voor lange gidsen/blogs):
+  - Eerste alinea volgt "inverted pyramid": kernantwoord binnen ~150-200 tekens.
+  - Gebruik een inhoudsopgave met ankers (`id` op hoofd-`<h2>`), zodat deep links mogelijk zijn.
+  - Voeg minimaal 1 gestructureerde `<table>` toe waar vergelijkingen of keuzes uitgelegd worden.
+  - Sluit af met een bronsectie met `<cite>` links naar primaire bronnen.
+  - Toon "laatst bijgewerkt" zichtbaar op de pagina én houd sitemap `lastModified` up-to-date.
 - Robots & sitemap aanwezig (`app/robots.ts`, `app/sitemap.ts`).
+- Robots moeten AI-crawlers expliciet toelaten: `GPTBot` en `Google-Extended` mogen content crawlen (behalve expliciet private routes).
 
 ---
 
@@ -170,7 +180,7 @@ Deze gids definieert rollen, eigenaarschap, kwaliteitsafspraken, checklists en r
 1. Maak `app/(pages)/<slug>/page.tsx` (server component).
 2. Voeg `export const metadata` toe (title 50-60 chars, description 140-160 chars, canonical).
 3. Houd hero-styling consistent + CTA’s naar materials, blog, segments, contact.
-4. Voeg JSON-LD (FAQ/Article/HowTo) indien van toepassing.
+4. Voeg JSON-LD (FAQ/Article/HowTo) via `lib/seo.ts` helpers toe indien van toepassing.
 5. Link vanuit relevante pagina’s (home, footer, blog hub).
 6. Lokale `[slug]`-pagina’s moeten in de “Verder lezen”-nav naar `/locaties` linken (naast services/materials/pricing/contact).
 7. Test Lighthouse, a11y, responsive.
@@ -202,7 +212,7 @@ Deze gids definieert rollen, eigenaarschap, kwaliteitsafspraken, checklists en r
 1. Plaats onder `app/segments/<slug>/page.tsx`.
 2. Hero consistent; primaire CTA linkt naar `/contact?material=<slug>` (prefill) en secundaire CTA naar `/materials#material-suggestion-tool` + relevante blog/portfolio items.
 3. Voeg highlights/stappenplan en het `Faq`-component (min. 3 Q/A) toe; hergebruik copy in FAQ JSON-LD.
-4. Voeg Service/FAQ schema toe en plak `<script>` JSON-LD onderaan de pagina.
+4. Voeg Service/FAQ schema toe via `lib/seo.ts` helpers en plak `<script>` JSON-LD onderaan de pagina.
 5. Update `/app/(pages)/segments/page.tsx` ItemList en sitemap.
 
 ### 8.6 Viewer verbeteringen
@@ -248,6 +258,9 @@ Rol: UI Engineer. Voeg subtiele in-view animatie toe met Framer Motion. Respecte
 
 **SEO**  
 Rol: SEO Specialist. Schrijf metadata (title 50-60 chars, description 140-160 chars, OG) voor pagina `<slug>`. NL value proposition.
+
+**SEO + Schema (AI updates)**  
+Rol: SEO Specialist + Lead Engineer. Bij elke nieuwe/gewijzigde pagina: gebruik `lib/seo.ts` helper-fabrieken voor FAQ/HowTo/Service JSON-LD, gebruik `ReadMoreLinks pageType` met centrale mapping in `lib/seo-related-links.ts`, update sitemap waar nodig, en run `npm run verify`.
 
 **API Validatie**  
 Rol: Lead Engineer. Schrijf POST route validator voor `{ name, email, message }`: e-mail validatie, rate limiting hook (pseudocode), veilige responses.

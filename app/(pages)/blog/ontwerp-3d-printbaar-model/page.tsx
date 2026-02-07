@@ -1,257 +1,338 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import Reveal from "@/components/Reveal"
-import GlassCard from "@/components/GlassCard"
-import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import { buildArticleJsonLd } from "@/lib/seo"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import Faq from "@/components/Faq"
+import GlassCard from "@/components/GlassCard"
+import Reveal from "@/components/Reveal"
+import ShimmerButton from "@/components/ShimmerButton"
+import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/blog/ontwerp-3d-printbaar-model"
+const canonical = "https://www.x3dprints.be/blog/ontwerp-3d-printbaar-model/"
+const enCanonical = "https://www.x3dprints.be/en/blog/ontwerp-3d-printbaar-model/"
 const datePublished = "2024-05-01"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-07"
+const viewerHref = "/viewer?utm_source=blog&utm_medium=cta&utm_campaign=ontwerp-printbaar"
+const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=ontwerp-printbaar"
+const contactHref = "/contact?material=pla-matte&quote=Design%20review%20voor%20printbaar%20model"
 
 export const metadata: Metadata = {
-  title: "Hoe ontwerp je een 3D printbaar model? | X3DPrints Blog",
+  title: "Hoe ontwerp je een 3D printbaar model? | X3DPrints",
   description:
-    "Checklist voor printbare ontwerpen: wanddiktes, tolerantie, oriëntatie, support en bestandsformaten. Inclusief tips voor PLA, PETG en TPU.",
-  alternates: { canonical },
+    "Checklist voor printbare modellen met wanddikte, tolerantie, orientatie en export zodat je sneller van CAD naar print gaat.",
+  alternates: {
+    canonical,
+    languages: {
+      "nl-BE": canonical,
+      "en-BE": enCanonical,
+      "x-default": canonical,
+    },
+  },
   openGraph: {
     title: "Hoe ontwerp je een 3D printbaar model?",
     description:
-      "Volledige gids met ontwerpprincipes voor 3D prints: wanddiktes, overhangen, snap-fit, tolerantie en exporttips.",
-  url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Ontwerp 3D printbaar model" }],
+      "Praktische ontwerpgids met richtlijnen voor wanddikte, snap-fits, tolerantie en bestandsaanlevering.",
+    url: canonical,
+    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Ontwerp een 3D printbaar model" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
   twitter: {
     card: "summary_large_image",
     title: "Hoe ontwerp je een 3D printbaar model?",
-    description:
-      "Leer hoe je een design printklaar maakt: consistent materiaalgebruik, juiste oriëntatie, support en bestandsformaten.",
-    images: ["/images/og-home.jpg"],
+    description: "Van CAD naar print met designregels die productie versnellen.",
+    images: ["/Logo.webp"],
   },
 }
 
+const tocItems = [
+  { id: "design-basics", label: "Welke ontwerpregels moet je eerst checken?" },
+  { id: "design-export", label: "Hoe maak je je model printklaar?" },
+  { id: "design-material", label: "Welke ontwerpkeuzes verschillen per materiaal?" },
+  { id: "design-faq", label: "FAQ over printbaar ontwerpen" },
+  { id: "design-sources", label: "Bronnen en referenties" },
+]
+
 const fundamentals = [
   {
-    title: "Wanddiktes & ribben",
+    title: "Wanddikte en structurele sterkte",
     description:
-      "Hanteer 1.2 mm minimum voor PLA/PETG (3 perimeterlijnen) en 2 mm voor TPU. Gebruik ribben of fillets om spanningen te verspreiden.",
+      "Voor veel FDM toepassingen werkt 1.2 mm als startpunt. Voor zwaarder gebruik kan extra wanddikte nodig zijn.",
   },
   {
-    title: "Toleranties",
+    title: "Tolerantie en passing",
     description:
-      "Voor passtukken nemen we standaard ±0.2 mm. Voor press-fit of scharnieren stemmen we de clearance af op materiaal en laaghoogte.",
+      "Bepaal vroeg welke passing nodig is: los, vast of snap-fit. Zo voorkom je iteraties na de eerste print.",
   },
   {
-    title: "Oriëntatie",
+    title: "Orientatie en krachten",
     description:
-      "Plaats kritieke oppervlakken verticaal voor een strakke afwerking, en leg mechanische krachten parallel aan de perimeters.",
+      "Leg kritieke oppervlakken slim in de printorientatie zodat zichtkwaliteit en sterkte in balans blijven.",
   },
   {
-    title: "Overhang & support",
+    title: "Overhang en support",
     description:
-      "Beperk overhang tot 55 graden. Voor zichtbare vlakken is een chamfer onder 45 graden mooier dan een recht vlak met support.",
+      "Beperk agressieve overhangs en ontwerp waar mogelijk met chamfers om supportvolume te verlagen.",
   },
 ]
 
 const exportChecklist = [
-  "Ontwerp parametrisch in CAD zodat aanpassingen later snel kunnen.",
-  "Export STL met 0.01 mm resolutie voor organische vormen; STEP meeleveren als de onderdelen nog geüpdatet kunnen worden.",
-  "Verwijder dubbele oppervlakken en controleer de mesh op non-manifold edges. Tools als Netfabb of Meshmixer helpen hierbij.",
-  "Voeg een korte PDF of atomaire schets toe met kritieke maten en functiebeschrijving.",
+  "Controleer mesh-integriteit en vermijd open surfaces.",
+  "Gebruik consistente units en benoem versies duidelijk.",
+  "Lever STL voor productie en STEP als revisies mogelijk zijn.",
+  "Voeg kritieke maten of montagepunten toe in een korte notitie.",
 ]
 
 const materialGuidance = [
   {
     material: "PLA",
-    guidance: "Focus op esthetiek: gebruik chamfers, sluit scherpe hoeken af met kleine fillets en zet logo's in reliëf.",
+    guidance: "Sterk voor visuele kwaliteit en scherpe details in indoor toepassingen.",
   },
   {
     material: "PETG",
-    guidance: "Gebruik dikkere wanden en rond hoeken af. Voeg extra support-pads toe waar de nozzle anders te lang in de lucht hangt.",
+    guidance: "Beter wanneer het onderdeel meer impact, warmte of vocht moet aankunnen.",
   },
   {
     material: "TPU",
-    guidance: "Zorg voor gelijkmatige wanddiktes zodat flex consistent blijft. Vermijd scherpe binnenhoeken die scheuren starten.",
+    guidance: "Geschikt voor flexibele delen, maar vraagt egale wanddikte en aangepaste geometrie.",
   },
 ]
 
-const snapFitTips = [
-  "Gebruik taps toelopende clips met 0.2-0.3 mm clearance per zijde voor PLA, 0.4 mm voor PETG.",
-  "Voeg stopblokken toe zodat clips niet verder buigen dan nodig. Zo gaat de clip langer mee.",
-  "Plaats de snap-fit langs de printlaagrichting voor maximale sterkte. Bij horizontale clips voeg je ribs toe.",
+const faqItems = [
+  {
+    q: "Hoe vroeg moet ik aan printbaarheid denken in mijn ontwerp?",
+    a: "Idealiter vanaf de eerste CAD-versie, zodat je minder correctierondes nodig hebt.",
+  },
+  {
+    q: "Wat veroorzaakt meestal een herprint?",
+    a: "Onvoldoende toleranties, zwakke wandzones of onduidelijke orientatiekeuze veroorzaken vaak extra iteraties.",
+  },
+  {
+    q: "Kan ik een design review vragen voor productie start?",
+    a: "Ja, met een korte review kunnen we printrisico's vroeg detecteren en oplossen.",
+  },
+]
+
+const references = [
+  {
+    label: "All3DP FDM process explainer",
+    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+  },
+  {
+    label: "Prusa material guide",
+    href: "https://help.prusa3d.com/article/material-guide_220",
+  },
+  {
+    label: "Google Search docs: crawlable links",
+    href: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+  },
 ]
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "Hoe ontwerp je een 3D printbaar model?",
   description:
-    "Checklist voor printbare ontwerpen: wanddiktes, tolerantie, oriëntatie, support en bestandsformaten. Inclusief tips voor PLA, PETG en TPU.",
+    "Praktische designgids voor wanddikte, tolerantie, orientatie en export voor 3D print.",
   datePublished,
   dateModified,
+  image: "/Logo.webp",
+  inLanguage: "nl-BE",
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  mainEntityOfPage: canonical,
+  items: faqItems.map((item) => ({ q: item.q, a: item.a })),
+})
+
+const howToJsonLd = buildHowToSchema({
+  name: "Printbaar model voorbereiden in 4 stappen",
+  description:
+    "Controleer designregels, exporteer correct en vraag een snelle review voor productie.",
+  inLanguage: "nl-BE",
+  mainEntityOfPage: canonical,
+  totalTime: "PT4M",
+  steps: [
+    {
+      name: "Designregels controleren",
+      text: "Check wanddikte, toleranties en orientatie voor je toepassing.",
+    },
+    {
+      name: "Correct exporteren",
+      text: "Lever STL of STEP plus korte context en kritieke maten.",
+    },
+    {
+      name: "Model valideren in viewer",
+      url: viewerHref,
+    },
+    {
+      name: "Design review aanvragen",
+      url: contactHref,
+    },
+  ],
+  toolNames: ["X3DPrints 3D viewer", "Material Suggestion Tool"],
+  supplyNames: ["STL of STEP bestand", "Design notes"],
 })
 
 export default function DesignArticlePage() {
   return (
-    <main className="relative">
+    <main className="relative overflow-hidden px-6 pb-24 pt-16 sm:px-8 lg:px-12">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(150%_85%_at_50%_-15%,rgba(45,212,191,0.18),transparent_70%)]"
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(130%_60%_at_50%_0%,rgba(45,212,191,.16),transparent_72%)]"
       />
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.07]" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.08]" />
 
-      <section className="px-6 pb-12 pt-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
-          <Reveal className="stacked-content">
-            <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
-              <ol className="flex flex-wrap gap-2">
-                <li>
-                  <Link
-                    href="/blog"
-                    className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li aria-hidden>/</li>
-                <li className="font-medium text-slate-700">Ontwerp een 3D printbaar model</li>
-              </ol>
-            </nav>
-            <h1 className="mt-6 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              Hoe ontwerp je een 3D printbaar model?
-            </h1>
-            <p className="mt-4 text-lg text-slate-700">
-              Printbare ontwerpen combineer je in vijf stappen: juiste wanddikte, passende tolerantie, slimme oriëntatie, beperkte support en correcte bestandsformaten. Hier vind je onze studio-richtlijnen.
-            </p>
-            <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href="/viewer">Upload je model</ShimmerButton>
-              <Link
-                href="/services"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
-              >
-                Ontwerpservice
-              </Link>
+      <article className="mx-auto max-w-5xl space-y-10">
+        <header className="space-y-4">
+          <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
+            <ol className="flex flex-wrap gap-2">
+              <li>
+                <Link href="/blog" className="font-medium text-indigo-600 hover:text-indigo-500">
+                  Blog
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li className="font-medium text-slate-700">Ontwerp een 3D printbaar model</li>
+            </ol>
+          </nav>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-teal-600">Design guide</p>
+          <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+            Hoe ontwerp je een 3D printbaar model?
+          </h1>
+          <p className="max-w-3xl text-lg text-slate-700">
+            Goede printbaarheid start in je CAD-model. Met enkele kernregels vermijd je mislukte prints en onnodige iteraties.
+          </p>
+          <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
+            Laatst bijgewerkt: 7 februari 2026
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <ShimmerButton
+              href={viewerHref}
+              event={{ action: "cta_click", category: "blog_design_top", label: "viewer" }}
+            >
+              Check je model
+            </ShimmerButton>
+            <ShimmerButton
+              href={contactHref}
+              className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+              event={{ action: "cta_click", category: "blog_design_top", label: "contact_prefill" }}
+            >
+              Vraag design review
+            </ShimmerButton>
+            <Link
+              href={pricingHref}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300 hover:bg-slate-50"
+            >
+              Bekijk prijsankers
+            </Link>
+          </div>
+          <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
+        </header>
+
+        <section id="design-basics" className="scroll-mt-28">
+          <Reveal>
+            <h2 className="text-2xl font-semibold text-slate-900">Welke ontwerpregels moet je eerst checken?</h2>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              {fundamentals.map((item) => (
+                <GlassCard key={item.title} className="p-6">
+                  <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
+                  <p className="mt-2 text-sm text-slate-700">{item.description}</p>
+                </GlassCard>
+              ))}
             </div>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
-          {fundamentals.map((item) => (
-            <Reveal key={item.title}>
-              <GlassCard className="h-full border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
-                <h2 className="text-xl font-semibold text-slate-900">{item.title}</h2>
-                <p className="mt-3 text-sm text-slate-600">{item.description}</p>
-              </GlassCard>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+        <section id="design-export" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Export checklist</h2>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Hoe maak je je model printklaar?</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {exportChecklist.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-500" aria-hidden />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <ShimmerButton
+                  href={viewerHref}
+                  event={{ action: "cta_click", category: "blog_design_mid", label: "viewer" }}
+                >
+                  Open viewer
+                </ShimmerButton>
+                <ShimmerButton
+                  href={contactHref}
+                  className="bg-slate-900 shadow-[0_10px_30px_rgba(15,23,42,.28)]"
+                  event={{ action: "cta_click", category: "blog_design_mid", label: "contact_prefill" }}
+                >
+                  Start review
+                </ShimmerButton>
+              </div>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
-          {materialGuidance.map(({ material, guidance }) => (
-            <Reveal key={material}>
-              <GlassCard className="h-full border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Materiaal</p>
-                <h3 className="mt-2 text-lg font-semibold text-slate-900">{material}</h3>
-                <p className="mt-2 text-sm text-slate-600">{guidance}</p>
-              </GlassCard>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+        <section id="design-material" className="scroll-mt-28">
           <Reveal>
-            <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900">Snap-fit en assemblage tips</h2>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                {snapFitTips.map((tip) => (
-                  <li key={tip} className="flex items-start gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
-                    <span>{tip}</span>
+            <div className="grid gap-4 md:grid-cols-3">
+              {materialGuidance.map((item) => (
+                <GlassCard key={item.material} className="p-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{item.material}</p>
+                  <p className="mt-2 text-sm text-slate-700">{item.guidance}</p>
+                </GlassCard>
+              ))}
+            </div>
+            <p className="mt-4 text-sm text-slate-600">
+              Combineer dit met{" "}
+              <Link href="/materials#material-suggestion-tool" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                materiaaladvies
+              </Link>{" "}
+              en{" "}
+              <Link href="/services" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                services
+              </Link>{" "}
+              voor een productieklare intake.
+            </p>
+          </Reveal>
+        </section>
+
+        <section id="design-faq" className="scroll-mt-28">
+          <Faq title="FAQ over printbaar ontwerpen" items={faqItems} />
+        </section>
+
+        <section id="design-sources" className="scroll-mt-28">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-xs text-slate-500">
-                Combineer eventueel PLA behuizing met PETG clips voor extra taaiheid. We simuleren graag samen welke delen welk materiaal nodig hebben.
-              </p>
             </GlassCard>
           </Reveal>
-        </div>
-      </section>
+        </section>
+      </article>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
-          <Reveal>
-            <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900">Aanvraag checklist</h2>
-              <ol className="mt-4 space-y-3 text-sm text-slate-600">
-                <li>1. Voeg STL/STEP + referentieafbeelding toe.</li>
-                <li>2. Vermeld gewenste materiaal, kleur en afwerking (schuren, primen, lakken).</li>
-                <li>3. Geef tolerantie en montage-info mee (bv. past op M4 schroef of PCB van X mm).</li>
-                <li>4. Noteer deadline en leveroptie: afhalen Herzele, Bpost of persoonlijke levering.</li>
-              </ol>
-            </GlassCard>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-4xl">
-          <Reveal>
-            <GlassCard className="flex flex-col gap-6 border border-white/40 bg-white/85 p-6 shadow-xl backdrop-blur sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Volgende stap</p>
-                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Laat ons je ontwerp checken</h2>
-                <p className="mt-2 text-sm text-slate-600">
-                  We sturen binnen een werkdag feedback over materiaalkeuze en eventuele design tweaks voor printbaarheid.
-                </p>
-              </div>
-              <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href="/contact">Vraag review aan</ShimmerButton>
-                <Link
-                  href="/pricing"
-                  className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700"
-                >
-                  Bekijk prijzen
-                </Link>
-              </div>
-            </GlassCard>
-          </Reveal>
-        </div>
-      </section>
-
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogReadMore />
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
     </main>
   )
 }
-
-
-
-

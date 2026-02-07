@@ -2,9 +2,11 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import OrganizerCta from "@/components/OrganizerCta"
+import { buildFaqPageSchema } from "@/lib/seo"
 
 type SegmentCard = {
   slug: string
@@ -71,7 +73,7 @@ const NL_METADATA: Metadata = {
     canonical: "https://www.x3dprints.be/segments/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/segments/",
-      en: "https://www.x3dprints.be/en/segments/",
+      "en-BE": "https://www.x3dprints.be/en/segments/",
       "x-default": "https://www.x3dprints.be/segments/",
     },
   },
@@ -79,7 +81,7 @@ const NL_METADATA: Metadata = {
     title: "3D printing per segment",
     description: "Vind de juiste 3D print informatie voor prototypes, onderwijs, modelbouwers en engineers.",
     url: "https://www.x3dprints.be/segments/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints logo" }],
+    images: [{ url: "/images/og-segments.jpg", width: 1200, height: 630, alt: "3D printing segmenten van X3DPrints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -93,7 +95,7 @@ export const EN_METADATA: Metadata = {
     canonical: "https://www.x3dprints.be/en/segments/",
     languages: {
       "nl-BE": "https://www.x3dprints.be/segments/",
-      en: "https://www.x3dprints.be/en/segments/",
+      "en-BE": "https://www.x3dprints.be/en/segments/",
       "x-default": "https://www.x3dprints.be/segments/",
     },
   },
@@ -101,7 +103,7 @@ export const EN_METADATA: Metadata = {
     title: "3D printing by segment",
     description: "Find the right 3D printing guidance for prototypes, education, model builders and engineers.",
     url: "https://www.x3dprints.be/en/segments/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints logo" }],
+    images: [{ url: "/images/og-segments.jpg", width: 1200, height: 630, alt: "3D printing segments by X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -294,12 +296,12 @@ const SEGMENTS_COPY_NL: SegmentCopy = {
     "segments/3d-printing-vaderdag-moederdag": [
       { label: "Seasonal segment", href: "/segments/3d-printing-seasonal" },
       { label: "Vaderdag/Moederdag blog", href: "/blog/3d-printen-vaderdag-moederdag" },
-      { label: "Contact", href: "/contact?material=pla-silk-plus" },
+      { label: "Contact", href: "/contact?material=pla-silk" },
     ],
     "segments/3d-printing-valentijn": [
       { label: "Seasonal segment", href: "/segments/3d-printing-seasonal" },
       { label: "Valentijn landing", href: "/valentijn-3d-printen" },
-      { label: "Contact", href: "/contact?material=pla-silk-plus" },
+      { label: "Contact", href: "/contact?material=pla-silk" },
     ],
     "segments/3d-printing-seasonal": [
       { label: "Marketing & events", href: "/segments/3d-printing-marketing" },
@@ -558,12 +560,12 @@ const SEGMENTS_COPY_EN: SegmentCopy = {
     "segments/3d-printing-vaderdag-moederdag": [
       { label: "Seasonal segment", href: "/segments/3d-printing-seasonal" },
       { label: "Father's/Mother's Day blog", href: "/blog/3d-printen-vaderdag-moederdag" },
-      { label: "Contact", href: "/contact?material=pla-silk-plus" },
+      { label: "Contact", href: "/contact?material=pla-silk" },
     ],
     "segments/3d-printing-valentijn": [
       { label: "Seasonal segment", href: "/segments/3d-printing-seasonal" },
       { label: "Valentine landing", href: "/valentijn-3d-printen" },
-      { label: "Contact", href: "/contact?material=pla-silk-plus" },
+      { label: "Contact", href: "/contact?material=pla-silk" },
     ],
     "segments/3d-printing-seasonal": [
       { label: "Marketing & events", href: "/segments/3d-printing-marketing" },
@@ -642,9 +644,37 @@ type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale
 
 export default function SegmentsPage({ locale }: PageProps) {
   const normalizedLocale = normalizeLocale(locale)
+  const isEn = normalizedLocale === "en"
   const copy = normalizedLocale === "en" ? SEGMENTS_COPY_EN : SEGMENTS_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
   const toAbsolute = (href: string) => `https://www.x3dprints.be${localize(href)}`
+  const tocItems = isEn
+    ? [
+        { id: "segments-core", label: "Core 3D printing segments" },
+        { id: "segments-seasonal", label: "Seasonal and campaign segments" },
+        { id: "segments-interlinks", label: "How are segments linked?" },
+        { id: "segments-faq", label: "Segment FAQ" },
+        { id: "segments-sources", label: "Sources and references" },
+      ]
+    : [
+        { id: "segments-core", label: "Kernsegmenten voor 3D printen" },
+        { id: "segments-seasonal", label: "Seasonal en campagne-segmenten" },
+        { id: "segments-interlinks", label: "Hoe linken segmenten onderling?" },
+        { id: "segments-faq", label: "Segment FAQ" },
+        { id: "segments-sources", label: "Bronnen en referenties" },
+      ]
+  const references = isEn
+    ? [
+        { label: "Google Search docs: internal linking", url: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable" },
+        { label: "Schema.org ItemList", url: "https://schema.org/ItemList" },
+        { label: "Google docs: structured data overview", url: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" },
+      ]
+    : [
+        { label: "Google Search docs: interne links", url: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable" },
+        { label: "Schema.org ItemList", url: "https://schema.org/ItemList" },
+        { label: "Google docs: overzicht structured data", url: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" },
+      ]
+  const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"
 
   const coreSegments = copy.coreSegments
   const seasonalSegments = copy.seasonalSegments
@@ -663,18 +693,13 @@ export default function SegmentsPage({ locale }: PageProps) {
     name: copy.schema.itemListName,
     itemListElement: itemList,
   }
+  const pageUrl = normalizedLocale === "en" ? "https://www.x3dprints.be/en/segments" : "https://www.x3dprints.be/segments"
 
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-
-    inLanguage: ["nl-BE", "en-BE"],
-    mainEntity: copy.faq.items.map((item) => ({
-      "@type": "Question",
-      name: item.q,
-      acceptedAnswer: { "@type": "Answer", text: item.a },
-    })),
-  }
+  const faqJsonLd = buildFaqPageSchema({
+    inLanguage: copy.schema.language,
+    mainEntityOfPage: pageUrl,
+    items: copy.faq.items.map((item) => ({ q: item.q, a: item.a })),
+  })
 
   return (
     <main className="relative overflow-clip px-4 pb-24 pt-12 sm:px-6 lg:px-8">
@@ -690,6 +715,7 @@ export default function SegmentsPage({ locale }: PageProps) {
           {copy.hero.title}
         </h1>
         <p className="mt-4 text-base text-slate-600">{copy.hero.body}</p>
+        <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
         <div className="mt-6 flex flex-wrap justify-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-slate-600">
           {copy.hero.quickLinks.map((link) => (
             <Link
@@ -712,9 +738,14 @@ export default function SegmentsPage({ locale }: PageProps) {
             </Link>
           ))}
         </div>
+        <ContentTableOfContents
+          title={isEn ? "Contents" : "Inhoud"}
+          items={tocItems}
+          className="mx-auto mt-6 max-w-2xl text-left"
+        />
       </header>
 
-      <section className="mx-auto mt-12 max-w-5xl space-y-6">
+      <section id="segments-core" className="scroll-mt-28 mx-auto mt-12 max-w-5xl space-y-6">
         <div className="flex items-baseline justify-between px-1">
           <h2 className="text-xl font-semibold text-slate-900">{copy.sections.core.title}</h2>
           <span className="text-xs uppercase tracking-[0.2em] text-slate-500">{copy.sections.core.subtitle}</span>
@@ -746,7 +777,7 @@ export default function SegmentsPage({ locale }: PageProps) {
         ))}
       </section>
 
-      <section className="mx-auto mt-12 max-w-5xl space-y-6">
+      <section id="segments-seasonal" className="scroll-mt-28 mx-auto mt-12 max-w-5xl space-y-6">
         <div className="flex items-baseline justify-between px-1">
           <h2 className="text-xl font-semibold text-slate-900">{copy.sections.seasonal.title}</h2>
           <span className="text-xs uppercase tracking-[0.2em] text-slate-500">{copy.sections.seasonal.subtitle}</span>
@@ -791,7 +822,7 @@ export default function SegmentsPage({ locale }: PageProps) {
         ))}
       </section>
 
-      <section className="mx-auto mt-10 max-w-5xl space-y-4 px-2">
+      <section id="segments-interlinks" className="scroll-mt-28 mx-auto mt-10 max-w-5xl space-y-4 px-2">
         <GlassCard className="p-6 sm:p-8">
           <h2 className="text-2xl font-semibold text-slate-900">{copy.interlinks.title}</h2>
           <p className="mt-2 text-sm text-slate-700">{copy.interlinks.body}</p>
@@ -818,7 +849,7 @@ export default function SegmentsPage({ locale }: PageProps) {
         <OrganizerCta locale={normalizedLocale === "en" ? "en" : "nl"} />
       </section>
 
-      <section className="mx-auto mt-12 max-w-4xl px-2">
+      <section id="segments-faq" className="scroll-mt-28 mx-auto mt-12 max-w-4xl px-2">
         <GlassCard className="p-6 sm:p-8">
           <h2 className="text-2xl font-semibold text-slate-900">{copy.faq.title}</h2>
           <div className="mt-4 space-y-3 text-sm text-slate-700">
@@ -833,14 +864,31 @@ export default function SegmentsPage({ locale }: PageProps) {
       </section>
 
       <ReadMoreLinks
+        pageType="segments"
         title={copy.readMore.title}
         intro={copy.readMore.intro}
-        primaryLinks={copy.readMore.primaryLinks}
-        secondaryLinks={copy.readMore.secondaryLinks}
       />
+
+      <section id="segments-sources" className="scroll-mt-28 mx-auto mt-12 max-w-4xl px-2">
+        <GlassCard className="p-6 sm:p-8">
+          <h2 className="text-2xl font-semibold text-slate-900">{isEn ? "Sources and references" : "Bronnen en referenties"}</h2>
+          <ul className="mt-4 space-y-2 text-sm text-slate-700">
+            {references.map((reference) => (
+              <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                <cite className="not-italic">
+                  <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                    {reference.label}
+                  </Link>
+                </cite>
+              </li>
+            ))}
+          </ul>
+        </GlassCard>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     </main>
   )
 }
+

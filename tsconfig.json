@@ -38,17 +38,18 @@
     // NIET onder "paths" zetten. Als je 'typeRoots' wil gebruiken, doe je ’t hier:
     // "typeRoots": ["./types", "./node_modules/@types"],
     "types": [
-      "node",
-    // Vitest types staan niet in de Next build nodig; uitgesloten om build errors te vermijden.
-  ],
+      "node"
+      // Vitest types staan niet in de Next build nodig; uitgesloten om build errors te vermijden.
+    ],
     "incremental": true
   },
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "types/**/*.d.ts"
+    "next-env.d.ts",
+    "types/**/*.d.ts",
+    ".next-dev/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",
