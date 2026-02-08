@@ -1,7 +1,8 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 import Script from "next/script"
+import { usePathname, useSearchParams } from "next/navigation"
 import { CookieConsentValue, onConsentChange, readStoredConsent } from "@/lib/cookie-consent"
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID
@@ -10,6 +11,14 @@ export default function AnalyticsConsent() {
   const [consent, setConsent] = useState<CookieConsentValue | null>(null)
   const hasTrackingId = Boolean(GA_TRACKING_ID)
   const canLoadAnalytics = consent === "granted" && hasTrackingId
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+  const lastPagePath = useRef<string | null>(null)
+
+  const pagePath = useMemo(() => {
+    const query = searchParams?.toString()
+    return query ? `${pathname}?${query}` : pathname
+  }, [pathname, searchParams])
 
   useEffect(() => {
     const initial = readStoredConsent()
@@ -44,6 +53,25 @@ export default function AnalyticsConsent() {
       analytics_storage: status,
     })
   }, [consent, hasTrackingId])
+
+  useEffect(() => {
+    if (!canLoadAnalytics) {
+      lastPagePath.current = null
+      return
+    }
+    const gtag = (window as typeof window & { gtag?: (...args: unknown[]) => void }).gtag
+    if (!gtag) return
+    if (!lastPagePath.current) {
+      lastPagePath.current = pagePath
+      return
+    }
+    if (lastPagePath.current === pagePath) return
+    lastPagePath.current = pagePath
+    gtag("event", "page_view", {
+      page_path: pagePath,
+      page_title: document.title,
+    })
+  }, [canLoadAnalytics, pagePath])
 
   if (!hasTrackingId) return null
 

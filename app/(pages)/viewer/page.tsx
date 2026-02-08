@@ -174,9 +174,14 @@ export default function Page() {
         <Container>
           <Reveal className="grid gap-6 lg:grid-cols-3">
             {highlights.map((item) => (
-              <GlassCard key={item.title} className="bg-white/50">
-                <h2 className="text-lg font-semibold text-slate-900">{item.title}</h2>
-                <p className="mt-3 text-sm text-slate-600">{item.description}</p>
+              <GlassCard
+                key={item.title}
+                className="bg-white/90 shadow-xl ring-1 ring-slate-200/70 dark:bg-slate-900/70 dark:ring-white/10"
+              >
+                <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">{item.title}</h2>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                  {item.description}
+                </p>
               </GlassCard>
             ))}
           </Reveal>

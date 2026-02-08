@@ -2,7 +2,7 @@
 
 import type { DragEvent } from "react"
 import { useCallback, useEffect, useMemo, useRef, useState } from "react"
-import { Canvas } from "@react-three/fiber"
+import { Canvas, useThree } from "@react-three/fiber"
 import { Center, ContactShadows, Environment, Html, OrbitControls } from "@react-three/drei"
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion"
 import {
@@ -19,6 +19,7 @@ import * as THREE from "three"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js"
 import { STLLoader } from "three/examples/jsm/loaders/STLLoader.js"
+import type { OrbitControls as OrbitControlsImpl } from "three-stdlib"
 
 import { cn } from "@/lib/utils"
 
@@ -54,6 +55,29 @@ function disposeModel(object: THREE.Object3D | null) {
       mesh.geometry.dispose()
       if (mesh.material) {
         disposeMaterial(mesh.material)
+      }
+    }
+  })
+}
+
+function setWireframe(material: THREE.Material | THREE.Material[], enabled: boolean) {
+  if (Array.isArray(material)) {
+    material.forEach((entry) => setWireframe(entry, enabled))
+    return
+  }
+  if ("wireframe" in material) {
+    ;(material as THREE.MeshStandardMaterial).wireframe = enabled
+    material.needsUpdate = true
+  }
+}
+
+function applyWireframe(object: THREE.Object3D | null, enabled: boolean) {
+  if (!object) return
+  object.traverse((child) => {
+    if ((child as THREE.Mesh).isMesh) {
+      const mesh = child as THREE.Mesh
+      if (mesh.material) {
+        setWireframe(mesh.material, enabled)
       }
     }
   })
@@ -124,10 +148,13 @@ function extractStats(object: THREE.Object3D, ext: string, fileName: string): Mo
   object.traverse((child) => {
     if ((child as THREE.Mesh).isMesh) {
       const mesh = child as THREE.Mesh
-      const position = mesh.geometry.getAttribute("position")
+      const geometry = mesh.geometry
+      const position = geometry.getAttribute("position")
+      const index = geometry.getIndex()
       if (position) {
         vertices += position.count
-        faces += Math.round(position.count / 3)
+        const faceCount = index ? index.count / 3 : position.count / 3
+        faces += Math.round(faceCount)
       }
     }
   })
@@ -143,6 +170,53 @@ function formatNumber(value: number) {
   return new Intl.NumberFormat("nl-BE").format(value)
 }
 
+function FitCamera({ object, trigger }: { object: THREE.Object3D | null; trigger: number }) {
+  const { camera, controls } = useThree()
+  const cameraRef = useRef(camera)
+  const controlsRef = useRef(controls)
+
+  useEffect(() => {
+    cameraRef.current = camera
+    controlsRef.current = controls
+  }, [camera, controls])
+
+  useEffect(() => {
+    if (!object) return
+    const activeCamera = cameraRef.current
+    if (!(activeCamera instanceof THREE.PerspectiveCamera)) return
+
+    const box = new THREE.Box3().setFromObject(object)
+    if (box.isEmpty()) return
+
+    const size = box.getSize(new THREE.Vector3())
+    const center = box.getCenter(new THREE.Vector3())
+    const maxDim = Math.max(size.x, size.y, size.z, 0.001)
+    const fov = (activeCamera.fov * Math.PI) / 180
+    const distance = (maxDim / (2 * Math.tan(fov / 2))) * 1.6
+    const direction = activeCamera.position.clone().sub(center)
+
+    if (direction.lengthSq() === 0) {
+      direction.set(1, 0.8, 1)
+    }
+
+    direction.normalize()
+    activeCamera.position.copy(center.clone().add(direction.multiplyScalar(distance)))
+    activeCamera.near = Math.max(distance / 100, 0.01)
+    activeCamera.far = Math.max(distance * 100, 100)
+    activeCamera.updateProjectionMatrix()
+
+    const orbitControls = controlsRef.current as OrbitControlsImpl | undefined
+    if (orbitControls) {
+      orbitControls.target.copy(center)
+      orbitControls.minDistance = Math.max(distance / 6, 0.1)
+      orbitControls.maxDistance = distance * 6
+      orbitControls.update()
+    }
+  }, [object, trigger])
+
+  return null
+}
+
 export default function ModelViewer({ className }: ModelViewerProps) {
   const inputRef = useRef<HTMLInputElement | null>(null)
   const containerRef = useRef<HTMLDivElement | null>(null)
@@ -155,6 +229,9 @@ export default function ModelViewer({ className }: ModelViewerProps) {
   const [stats, setStats] = useState<ModelStats | null>(null)
   const [dragActive, setDragActive] = useState(false)
   const [autoRotate, setAutoRotate] = useState(() => !prefersReducedMotion)
+  const [wireframe, setWireframeEnabled] = useState(false)
+  const [showGrid, setShowGrid] = useState(false)
+  const [fitToken, setFitToken] = useState(0)
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -167,6 +244,10 @@ export default function ModelViewer({ className }: ModelViewerProps) {
       disposeModel(model)
     }
   }, [model])
+
+  useEffect(() => {
+    applyWireframe(model, wireframe)
+  }, [model, wireframe])
 
   const reset = useCallback(() => {
     setState("idle")
@@ -181,6 +262,11 @@ export default function ModelViewer({ className }: ModelViewerProps) {
     if (inputRef.current) {
       inputRef.current.value = ""
     }
+  }, [prefersReducedMotion])
+
+  const resetView = useCallback(() => {
+    setAutoRotate(!prefersReducedMotion)
+    setFitToken((value) => value + 1)
   }, [prefersReducedMotion])
 
   const handleFiles = useCallback(
@@ -291,6 +377,10 @@ export default function ModelViewer({ className }: ModelViewerProps) {
           <Center>
             {model ? <primitive object={model} dispose={undefined} /> : null}
           </Center>
+          <FitCamera object={model} trigger={fitToken} />
+
+          {showGrid ? <gridHelper args={[8, 16, "#334155", "#1f2937"]} /> : null}
+          {showGrid ? <axesHelper args={[2]} /> : null}
 
           <ContactShadows opacity={0.4} scale={10} blur={1.4} far={4.5} />
           <Environment preset="city" environmentIntensity={0.65} />
@@ -302,6 +392,7 @@ export default function ModelViewer({ className }: ModelViewerProps) {
             enableDamping
             dampingFactor={0.08}
             makeDefault
+            onStart={() => setAutoRotate(false)}
           />
 
           {state === "loading" ? (
@@ -420,14 +511,40 @@ export default function ModelViewer({ className }: ModelViewerProps) {
                   </button>
                 </div>
               </div>
-              <button
-                type="button"
-                onClick={reset}
-                className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/80 px-3 py-1.5 text-xs font-semibold text-emerald-800 transition hover:bg-white"
-              >
-                <XCircle className="h-4 w-4" aria-hidden />
-                Verwijder model
-              </button>
+              <div className="flex flex-wrap gap-2">
+                <button
+                  type="button"
+                  onClick={resetView}
+                  className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/80 px-3 py-1.5 text-xs font-semibold text-emerald-800 transition hover:bg-white"
+                >
+                  <RotateCw className="h-4 w-4" aria-hidden />
+                  Reset weergave
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setWireframeEnabled((value) => !value)}
+                  aria-pressed={wireframe}
+                  className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/80 px-3 py-1.5 text-xs font-semibold text-emerald-800 transition hover:bg-white"
+                >
+                  {wireframe ? "Wireframe aan" : "Wireframe uit"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setShowGrid((value) => !value)}
+                  aria-pressed={showGrid}
+                  className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/80 px-3 py-1.5 text-xs font-semibold text-emerald-800 transition hover:bg-white"
+                >
+                  {showGrid ? "Grid aan" : "Grid uit"}
+                </button>
+                <button
+                  type="button"
+                  onClick={reset}
+                  className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/80 px-3 py-1.5 text-xs font-semibold text-emerald-800 transition hover:bg-white"
+                >
+                  <XCircle className="h-4 w-4" aria-hidden />
+                  Verwijder model
+                </button>
+              </div>
             </motion.div>
           ) : null}
 
