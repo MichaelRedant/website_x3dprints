@@ -1,6 +1,6 @@
 # 3D printen in Lievegem: lokaal maatwerk met snelle levering
 
-**3D printen in Lievegem** is ideaal voor prototypes, maatwerk en kleine series in het Meetjesland. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Lievegem** is ideaal voor prototypes, maatwerk en zowel kleine als grotere series in het Meetjesland. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Lokale focus in Lievegem
 
-Werk je in Lievegem? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Lovendegem.
+Werk je in Lievegem? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Lovendegem.
 
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Kleine series en onderdelen op maat met korte lead time.
+Kleine en grotere series en onderdelen op maat met korte lead time.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en betrouwbare planning.
@@ -82,14 +82,14 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Lievegem
 
-**Kunnen jullie kleine series leveren in Lievegem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Lievegem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Lievegem?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Zomergem](/3d-printen-in-zomergem)
 - [Buurpagina: 3D printen in Oostwinkel](/3d-printen-in-oostwinkel)
 
+
+
 ## Spotlight rond Lievegem
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Lievegem centrum.
 - Terugkerende order: 3D print service Lievegem; we bewaren je instellingen.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Lievegem
 - Lokale makers en ontwerpers (Lievegem)
-- Kleine series en maatwerk (Lievegem)
+- Kleine en grotere series en maatwerk (Lievegem)
 - Verenigingen en onderwijs (Lievegem)
 
 ## Wat vaak wordt gevraagd in Lievegem

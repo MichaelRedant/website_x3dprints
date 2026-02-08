@@ -1,6 +1,6 @@
 # 3D printen in Antwerpen: van haven tot binnenstad
 
-Zoek je een betrouwbare partner voor **3D printen in Antwerpen**? X3DPrints staat klaar voor teams in de haven, bureaus aan het Eilandje, makers in Borgerhout en studenten rond de Universiteit Antwerpen. Vanuit onze studio in Herzele leveren we prototypes, kleine series en maatwerk onderdelen die klaar zijn voor de Scheldestad.
+Zoek je een betrouwbare partner voor **3D printen in Antwerpen**? X3DPrints staat klaar voor teams in de haven, bureaus aan het Eilandje, makers in Borgerhout en studenten rond de Universiteit Antwerpen. Vanuit onze studio in Herzele leveren we prototypes, kleine en grotere series en maatwerk onderdelen die klaar zijn voor de Scheldestad.
 
 Met onze **3D print service Antwerpen** krijg je snelle offertes, scherpe prijzen en duidelijke materiaalkeuzes. We denken mee over passing, orientatie en afwerking zodat je model meteen inzetbaar is, of je nu een maquette wilt voor een pitch aan de Meir, een functioneel onderdeel in de diamantwijk of een display voor een expo in het MAS of KMSKA.
 
@@ -113,7 +113,7 @@ Ja. We leveren regelmatig functionele onderdelen aan engineers en makers. Zie oo
 - [Materialen en richtlijnen](/materials) - kies het juiste filament en zie afmetingen.
 - [Prijzen](/pricing) - transparant over formaat, materiaal en nabewerking.
 - [3D viewer](/viewer) - snel STL of STEP checken op orientatie en oppervlakte.
-- [Portfolio](/portfolio) - voorbeelden van prototypes en kleine series.
+- [Portfolio](/portfolio) - voorbeelden van prototypes en zowel kleine als grotere series.
 - [Segmenten](/segments/3d-printing-engineers) - doorsturen naar engineering-teams.
 
 ---
@@ -133,6 +133,12 @@ Klaar om te starten met je project in Antwerpen of een van de districten? Upload
 ## Gerelateerde buurtpagina's
 - [Buurpagina: 3D printen in Berchem](/3d-printen-in-berchem)
 - [Buurpagina: 3D printen in Borgerhout](/3d-printen-in-borgerhout)
+
+## Lokale punten in Antwerpen
+- Centrum van Antwerpen
+- Lokale bedrijvenzone in Antwerpen
+- Sporthal in Antwerpen
+
 
 ## Klantenspotlight
 - Haven/logistiek tools: kleine reeksen met vaste settings rond Antwerpen centrum.

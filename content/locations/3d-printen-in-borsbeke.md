@@ -18,13 +18,13 @@ Je profiteert van:
 - **Transparante prijzen** en duidelijke communicatie.  
 - **Lokale verankering**: rechtstreeks contact, geen verre servicebureaus.  
 - **Duurzame materialen** zoals PLA, PETG en TPU.  
-- **Flexibiliteit**: van eenmalige prototypes tot kleine series.  
+- **Flexibiliteit**: van eenmalige prototypes tot kleine en grotere series.  
 
 ---
 
 ## Lokale focus in Borsbeke
 
-Werk je in Borsbeke? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Borsbeke.
+Werk je in Borsbeke? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Borsbeke.
 
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
@@ -47,7 +47,7 @@ en TPU zorgt voor **flexibiliteit** in sport- of fietsaccessoires.
 
 ### Lokale ondernemers
 3D printen in Borsbeke helpt kmo’s en zelfstandigen met **maatwerk**, 
-zoals productonderdelen, houders en unieke merchandising. Kleine series worden 
+zoals productonderdelen, houders en unieke merchandising. Kleine en grotere series worden 
 rendabel zonder grote investeringen.
 
 ### Hobbyisten en makers
@@ -128,8 +128,8 @@ als grotere projecten.
 
 ## Veelgestelde vragen over 3D printen in Borsbeke
 
-**Kunnen jullie kleine series leveren in Borsbeke?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Borsbeke?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Borsbeke?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -162,7 +162,13 @@ Vraag vandaag nog een offerte aan en ontdek hoe we jouw project snel en betaalba
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Borsbeke
+- Centrum van Borsbeke
+- Lokale bedrijvenzone in Borsbeke
+- Sporthal in Borsbeke
+
 
 ## Klantenspotlight
 - Lokale teams in Borsbeke: kleine reeksen met vaste settings rond Borsbeke.

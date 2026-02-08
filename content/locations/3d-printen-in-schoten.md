@@ -32,7 +32,7 @@ Voor **3D printen in Schoten** leveren we snelle en nauwkeurige onderdelen richt
 
 - **Events en cultuur rond Vordenstein**: maquettes, props en signage met een cleane afwerking.
 
-- **Retail in Deuzeld en dorpskern**: displays, kassahulpmiddelen en kleine series producthouders.
+- **Retail in Deuzeld en dorpskern**: displays, kassahulpmiddelen en zowel kleine als grotere series producthouders.
 
 
 
@@ -106,7 +106,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Schoten
+- Centrum van Schoten
+- Lokale bedrijvenzone in Schoten
+- Sporthal in Schoten
+
 
 ## Lokale spotlight
 - Lokale teams in Schoten: PLA/PETG onderdelen afgestemd op projecten rond Schoten.

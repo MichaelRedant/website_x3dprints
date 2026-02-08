@@ -1,6 +1,6 @@
 # 3D printen in Ophasselt: tussen Ophasseltbos en N42
 
-Voor **3D printen in Ophasselt** levert X3DPrints prototypes en kleine series richting N42, bedrijventerreinen en het groen van Ophasseltbos. Je krijgt stevige prints met heldere prijzen.
+Voor **3D printen in Ophasselt** levert X3DPrints prototypes en zowel kleine als grotere series richting N42, bedrijventerreinen en het groen van Ophasseltbos. Je krijgt stevige prints met heldere prijzen.
 
 ---
 
@@ -19,7 +19,7 @@ Voor **3D printen in Ophasselt** levert X3DPrints prototypes en kleine series ri
 
 ## Lokale focus in Ophasselt
 
-Werk je in Ophasselt? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Ophasselt? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 - Behuizingen en covers voor elektronica, sensoren of prototypes.
@@ -39,7 +39,7 @@ Werk je in Ophasselt? We leveren snelle prototypes en kleine series op maat, met
 
 - Klemmen en behuizingen voor techniekprojecten langs N42.
 - Outdoor props of sensorhouders rond Ophasseltbos.
-- Displays en kleine series voor lokale winkels.
+- Displays en zowel kleine als grotere series voor lokale winkels.
 
 ---
 
@@ -77,7 +77,13 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Ophasselt
+- Centrum van Ophasselt
+- Lokale bedrijvenzone in Ophasselt
+- Sporthal in Ophasselt
+
 
 ## Spotlight rond Ophasselt
 - Lokale teams in Ophasselt: behuizingen en pasmallen voor teams in Ophasselt.

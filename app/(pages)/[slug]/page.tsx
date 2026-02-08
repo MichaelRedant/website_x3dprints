@@ -122,6 +122,71 @@ function parseLocalPoints(sectionBody: string) {
   return items
 }
 
+function extractSectionByPrefixes(markdown: string, headingPrefixes: string[]) {
+  for (const headingPrefix of headingPrefixes) {
+    const section = extractSection(markdown, headingPrefix)
+    if (section) return section
+  }
+  return null
+}
+
+function slugifyValue(value: string) {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+}
+
+function sanitizeServicedArea(value: string) {
+  const raw = value.trim()
+  if (!raw) return null
+  if (/^afhalen\b/i.test(raw)) return null
+  if (/^levering\b/i.test(raw)) return null
+  if (/provincieweg/i.test(raw)) return null
+  if (/vlaanderen/i.test(raw)) return null
+
+  const cleaned = raw
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/\bcentrum\b/gi, " ")
+    .replace(/\bdorpskern\b/gi, " ")
+    .replace(/\bindustriezone\b/gi, " ")
+    .replace(/\bomliggende\b/gi, " ")
+    .replace(/\bdeelgemeenten\b/gi, " ")
+    .replace(/\ben omgeving\b/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+
+  return cleaned || null
+}
+
+function uniqueValues(values: string[]) {
+  return Array.from(new Set(values.map((value) => value.trim()).filter(Boolean)))
+}
+
+function buildNearbyLocationSlugs(
+  servicedAreas: string[],
+  currentSlug: string,
+  allSlugs: Set<string>,
+) {
+  const links: string[] = []
+  const seen = new Set<string>()
+
+  for (const area of servicedAreas) {
+    const cleaned = sanitizeServicedArea(area)
+    if (!cleaned) continue
+    const slug = `3d-printen-in-${slugifyValue(cleaned)}`
+    if (slug === currentSlug) continue
+    if (!allSlugs.has(slug)) continue
+    if (seen.has(slug)) continue
+    seen.add(slug)
+    links.push(slug)
+  }
+
+  return links
+}
+
 function buildSeoDescription(markdown: string, city: string, metaDescription?: string) {
   const fallback = buildLocationMetaDescription(city, "nl")
   if (metaDescription && metaDescription.trim()) {
@@ -149,7 +214,7 @@ export async function generateMetadata(
   const keyphrase = `3D printen in ${loc.city}`
   const phrases = loc.relatedPhrases?.length
     ? loc.relatedPhrases
-    : buildDefaultRelatedPhrases(loc.city)
+    : buildDefaultRelatedPhrases(loc.city, loc.province)
   const url = `https://www.x3dprints.be/${loc.slug}`
   const enUrl = `https://www.x3dprints.be/en/${loc.slug}`
   const hasEnglish = EN_LOCATION_SLUGS.has(loc.slug)
@@ -207,7 +272,7 @@ export default async function Page(
   const keyphrase = `3D printen in ${loc.city}`
   const phrases = loc.relatedPhrases?.length
     ? loc.relatedPhrases
-    : buildDefaultRelatedPhrases(loc.city)
+    : buildDefaultRelatedPhrases(loc.city, loc.province)
   const svgSrc = keywordSvgDataUri(keyphrase)
 
   // Load markdown content for the page body
@@ -222,7 +287,12 @@ export default async function Page(
   }
 
   const faqSection = extractSection(contentMd, "Veelgestelde vragen")
-  const localPointsSection = extractSection(contentMd, "Lokale punten")
+  const localPointsSection = extractSectionByPrefixes(contentMd, [
+    "Lokale punten",
+    "Plaatsen waar we vaak leveren",
+    "Landmarks in de buurt van",
+    "Locaties die we bedienen nabij",
+  ])
   const localPoints = localPointsSection ? parseLocalPoints(localPointsSection.body) : []
   const contentMdStripped = faqSection ? stripSection(contentMd, "Veelgestelde vragen") : contentMd
   const contentMdNormalized = stripLeadingH1(contentMdStripped)
@@ -255,6 +325,29 @@ export default async function Page(
         `Displays/props voor marketing en events in ${loc.city}`,
         `Onderwijs en makers in ${loc.city}`,
       ]
+  const cleanedServicedAreas = uniqueValues(
+    servicedAreas
+      .map((area) => sanitizeServicedArea(area))
+      .filter((area): area is string => Boolean(area)),
+  )
+  const serviceAreaSummary = uniqueValues([loc.city, ...cleanedServicedAreas]).slice(0, 6)
+
+  const allLocationSlugs = new Set(getAllLocationSlugs().map((value) => value.toLowerCase()))
+  const nearbyLocationSlugs = buildNearbyLocationSlugs(servicedAreas, slug, allLocationSlugs).slice(0, 8)
+  const nearbyLocations = nearbyLocationSlugs
+    .map((relatedSlug) => {
+      const related = getLocationBySlug(relatedSlug)
+      if (!related) return null
+      return { slug: relatedSlug, city: related.city }
+    })
+    .filter((value): value is { slug: string; city: string } => Boolean(value))
+
+  const visibleKeywordPhrases = uniqueValues([keyphrase, ...phrases]).slice(0, 8)
+  const structuredAreaServed = uniqueValues([
+    loc.city,
+    ...(loc.province ? [loc.province] : []),
+    ...cleanedServicedAreas.slice(0, 4),
+  ])
 
   // Hero variant selection per city for unique wording
   const heroVariants = [
@@ -264,7 +357,7 @@ export default async function Page(
     }),
     (city: string) => ({
       title: `3D prints op maat in ${city} voor makers en bedrijven.`,
-      subtitle: `Van rapid prototyping tot kleine series in ${city} en omgeving, met persoonlijk advies.`,
+      subtitle: `Van rapid prototyping tot kleine en grotere series in ${city} en omgeving, met persoonlijk advies.`,
     }),
     (city: string) => ({
       title: `${city}: 3D print service voor functionele onderdelen en designwerk.`,
@@ -289,10 +382,7 @@ export default async function Page(
     name: keyphrase,
     description: seoDescription,
     inLanguage: "nl-BE",
-    areaServed: [
-      { "@type": "City", name: loc.city },
-      { "@type": "State", name: loc.province ?? SITE.address.region },
-    ],
+    areaServed: structuredAreaServed.map((area) => ({ "@type": "Place", name: area })),
     provider: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
     url: `https://www.x3dprints.be/${loc.slug}`,
     serviceType: "3D printing",
@@ -323,7 +413,7 @@ export default async function Page(
       postalCode: SITE.address.postalCode,
       addressCountry: SITE.address.country,
     },
-    areaServed: loc.province ? [loc.city, loc.province] : loc.city,
+    areaServed: structuredAreaServed,
     sameAs: SITE.sameAs,
   }
 
@@ -363,6 +453,34 @@ export default async function Page(
     ],
   })
 
+  const pageMentions = [
+    ...localPoints.map((point) => ({
+      "@type": "Place" as const,
+      name: point.name,
+      ...(point.url ? { sameAs: point.url } : {}),
+    })),
+    ...nearbyLocations.map((related) => ({
+      "@type": "Place" as const,
+      name: related.city,
+      sameAs: `https://www.x3dprints.be/${related.slug}`,
+    })),
+  ]
+
+  const nearbyItemListJsonLd =
+    nearbyLocations.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: `Nabijgelegen 3D print locaties rond ${loc.city}`,
+          itemListElement: nearbyLocations.map((related, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: `3D printen in ${related.city}`,
+            url: `https://www.x3dprints.be/${related.slug}`,
+          })),
+        }
+      : null
+
   const pageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -371,13 +489,9 @@ export default async function Page(
     url: `https://www.x3dprints.be/${loc.slug}`,
     inLanguage: "nl-BE",
     about: [{ "@type": "Place", name: loc.city }],
-    ...(localPoints.length
+    ...(pageMentions.length
       ? {
-          mentions: localPoints.map((point) => ({
-            "@type": "Place",
-            name: point.name,
-            ...(point.url ? { sameAs: point.url } : {}),
-          })),
+          mentions: pageMentions,
         }
       : {}),
   }
@@ -500,7 +614,9 @@ export default async function Page(
                   </p>
                   <p className="flex items-start gap-2">
                     <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
-                    <span>Serviced areas: {loc.city}, Gent, Aalst en Vlaanderen (afhalen in Herzele, levering op aanvraag).</span>
+                    <span>
+                      Serviced areas: {serviceAreaSummary.join(", ")} (afhalen in Herzele, levering op aanvraag).
+                    </span>
                   </p>
                 </div>
                 <div className="mt-4 flex flex-wrap gap-3">
@@ -550,7 +666,7 @@ export default async function Page(
         <div className="mx-auto max-w-screen-md lg:max-w-screen-lg">
           <header className="relative mx-auto rounded-3xl border border-white/30 bg-white/40 p-6 sm:p-8 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] animate-[fadeInUp_.6s_ease_out_0s_both] text-center">
             <h2 className="font-extrabold tracking-tight text-[clamp(1.75rem,4vw,2.5rem)] text-slate-900">{keyphrase}</h2>
-            <p className="mx-auto mt-3 max-w-prose text-pretty text-slate-600">Snelle, nauwkeurige 3D print service in {loc.city}. Perfect voor <strong>prototypes</strong> en <strong>kleine series</strong>. Persoonlijk advies, korte doorlooptijden.</p>
+            <p className="mx-auto mt-3 max-w-prose text-pretty text-slate-600">Snelle, nauwkeurige 3D print service in {loc.city}. Perfect voor <strong>prototypes</strong> en <strong>kleine en grotere series</strong>. Persoonlijk advies, korte doorlooptijden.</p>
             <ul className="mx-auto mt-5 grid max-w-2xl gap-2 text-slate-700 sm:grid-cols-2">
               <li className="flex items-start justify-center gap-2 sm:justify-start"><span className="mt-1 inline-block h-2 w-2 rounded-full bg-cyan-400" />Materialen: PLA, PETG, ABS/ASA, TPU</li>
               <li className="flex items-start justify-center gap-2 sm:justify-start"><span className="mt-1 inline-block h-2 w-2 rounded-full bg-teal-400" />Maximale bouwvolumes & hoge resolutie</li>
@@ -567,6 +683,22 @@ export default async function Page(
             </div>
             <div className="pointer-events-none absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
           </header>
+
+          {visibleKeywordPhrases.length > 0 && (
+            <section className="mx-auto mt-6 max-w-3xl rounded-2xl border border-white/30 bg-white/50 p-4 backdrop-blur-xl shadow-[0_8px_26px_rgba(0,0,0,0.05)]">
+              <h2 className="text-sm font-semibold text-slate-900">Veel gezochte termen in {loc.city}</h2>
+              <ul className="mt-3 flex flex-wrap gap-2">
+                {visibleKeywordPhrases.map((phrase) => (
+                  <li
+                    key={phrase}
+                    className="rounded-full border border-slate-200/70 bg-white/80 px-3 py-1 text-xs text-slate-700"
+                  >
+                    {phrase}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           <MiniToc items={tocItems} className="mt-8" defaultCollapsed dismissible storageKey={`mini-toc:${loc.slug}`} />
 
@@ -594,8 +726,29 @@ export default async function Page(
 
           {/* keyword visual */}
           <div className="mx-auto mt-8 max-w-3xl overflow-hidden rounded-3xl border border-white/30 bg-white/40 p-2 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.06)] transition-shadow hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)] animate-[fadeInUp_.6s_ease_out_.1s_both]">
-            <Image src={svgSrc} alt={keyphrase} width={1200} height={630} priority className="h-auto w-full rounded-2xl" />
+            <Image src={svgSrc} alt={keyphrase} width={1200} height={630} className="h-auto w-full rounded-2xl" />
           </div>
+
+          {nearbyLocations.length > 0 && (
+            <section className="mx-auto mt-8 max-w-3xl rounded-3xl border border-white/30 bg-white/50 p-6 backdrop-blur-xl shadow-[0_8px_28px_rgba(0,0,0,0.06)]">
+              <h2 className="text-xl font-semibold text-slate-900">Nabijgelegen 3D-print pagina&apos;s rond {loc.city}</h2>
+              <p className="mt-2 text-sm text-slate-700">
+                Bekijk ook deze lokale pagina&apos;s voor extra context over levering, materialen en toepassingen in de buurt.
+              </p>
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {nearbyLocations.map((related) => (
+                  <li key={related.slug}>
+                    <Link
+                      href={`/${related.slug}`}
+                      className="rounded-full border border-slate-200/70 bg-white/80 px-3 py-1.5 text-xs text-slate-700 transition hover:-translate-y-0.5 hover:bg-white hover:text-slate-900"
+                    >
+                      3D printen in {related.city}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           {/* internal links */}
           <nav className="mx-auto mt-10 flex max-w-3xl flex-wrap items-center justify-center gap-3 text-sm animate-[fadeIn_.6s_ease_out_.15s_both]" aria-label="Verder lezen">
@@ -615,6 +768,12 @@ export default async function Page(
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
+          {nearbyItemListJsonLd && (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(nearbyItemListJsonLd) }}
+            />
+          )}
         </div>
       </section>
 

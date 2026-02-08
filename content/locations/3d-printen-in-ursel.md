@@ -22,11 +22,11 @@
 
 ## Lokale focus in Ursel
 
-Werk je in Ursel? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Drongengoedhoeve.
+Werk je in Ursel? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Drongengoedhoeve.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Ursel
 
@@ -93,8 +93,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Ursel?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Ursel?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Ursel?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Aalter
 - [3D printen in Aalter](/3d-printen-in-aalter)
@@ -127,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Bellem](/3d-printen-in-bellem)
 - [Buurpagina: 3D printen in Knesselare](/3d-printen-in-knesselare)
 - [Buurpagina: 3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
+
+
 
 ## Spotlight rond Ursel
 - Bos- en natuurprojecten: behuizingen en pasmallen voor teams in Ursel centrum.

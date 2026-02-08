@@ -2,7 +2,7 @@
 
 
 
-Voor **3D printen in Affligem** leveren we prototypes en kleine series richting de abdijsite, dorpskernen Essene/Hekelgem/Teralfene en bedrijven langs de E40. Je krijgt strakke toleranties, snelle levering en materiaaladvies op maat.
+Voor **3D printen in Affligem** leveren we prototypes en zowel kleine als grotere series richting de abdijsite, dorpskernen Essene/Hekelgem/Teralfene en bedrijven langs de E40. Je krijgt strakke toleranties, snelle levering en materiaaladvies op maat.
 
 
 
@@ -36,7 +36,7 @@ Voor **3D printen in Affligem** leveren we prototypes en kleine series richting 
 
 ## Lokale focus in Affligem
 
-Werk je in Affligem? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Affligem? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 - Behuizingen en covers voor elektronica, sensoren of prototypes.
@@ -105,7 +105,7 @@ Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D
 
 ## Veelgestelde vragen over 3D printen in Affligem
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -126,7 +126,13 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Affligem
+- Centrum van Affligem
+- Lokale bedrijvenzone in Affligem
+- Sporthal in Affligem
+
 
 ## Klantenspotlight
 - Lokale teams in Affligem: kleine reeksen met vaste settings rond Affligem.

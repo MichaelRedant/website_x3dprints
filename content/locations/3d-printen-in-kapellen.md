@@ -2,7 +2,7 @@
 
 
 
-Voor **3D printen in Kapellen** leveren we prototypes en kleine series naar Hoogboom, Putte-Kapellen en bedrijven langs de Kapelsestraat of aan het station. We combineren precisie met materiaalkeuze zodat je onderdelen meteen passen en lang meegaan.
+Voor **3D printen in Kapellen** leveren we prototypes en zowel kleine als grotere series naar Hoogboom, Putte-Kapellen en bedrijven langs de Kapelsestraat of aan het station. We combineren precisie met materiaalkeuze zodat je onderdelen meteen passen en lang meegaan.
 
 
 
@@ -28,7 +28,7 @@ Voor **3D printen in Kapellen** leveren we prototypes en kleine series naar Hoog
 
 ## Projecten uit Kapellen
 
-- **Retail en hospitality op de Kapelsestraat**: displays, producthouders of gepersonaliseerde signage in kleine oplages.
+- **Retail en hospitality op de Kapelsestraat**: displays, producthouders of gepersonaliseerde signage in kleine en grotere oplages.
 
 - **Industrie rond Hoogboom en industriepark Bosduin**: maatwerkbeugels, sensorhouders en tijdelijke vervangstukken.
 
@@ -89,7 +89,7 @@ In Kapellen helpen we makers en bedrijven met 3D prints die vlot passen en lang 
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -106,7 +106,13 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Glabbeek](/3d-printen-in-glabbeek)
+
+## Lokale punten in Kapellen
+- Centrum van Kapellen
+- Lokale bedrijvenzone in Kapellen
+- Sporthal in Kapellen
+
 
 ## Spotlight rond Kapellen
 - Lokale teams in Kapellen: behuizingen en pasmallen voor teams in Kapellen.

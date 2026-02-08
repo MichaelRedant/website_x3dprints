@@ -26,7 +26,7 @@
 Voor Heusden leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Heilig Kruiskerk (Heusden) en Spaans Hof.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Heusden
@@ -50,7 +50,7 @@ Onderdelen die snel passen en direct inzetbaar zijn.
 Sterke, duurzame prints voor outdoor en onderhoud.
 
 ### KMO's en verenigingen
-Kleine series met korte lead time en duidelijke afstemming.
+Kleine en grotere series met korte lead time en duidelijke afstemming.
 
 ---
 
@@ -82,7 +82,7 @@ Laat uw ontwerp snel testen en optimaliseer met korte feedback.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -99,7 +99,6 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Interne links rond 3D printen in Heusden
 - [3D printen in Destelbergen](/3d-printen-in-destelbergen)
-- [3D printen in Gent](/3d-printen-in-gent)
 - [3D printen in Wetteren](/3d-printen-in-wetteren)
 - [3D printen in Oosterzele](/3d-printen-in-oosterzele)
 ---
@@ -126,6 +125,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Nabijgelegen pagina's
 - [Buurpagina: 3D printen in Destelbergen](/3d-printen-in-destelbergen)
+
+
 
 ## Lokale spotlight
 - Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Heusden centrum.

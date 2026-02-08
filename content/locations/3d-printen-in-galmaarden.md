@@ -32,7 +32,7 @@ Voor **3D printen in Galmaarden** leveren we prototypes, behuizingen en tooling 
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica en IoT.
+- Kleine en grotere series covers en cases voor elektronica en IoT.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Galmaarden centrum
 - Vollezele
 - Tollembeek
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Galmaarden
+
+- Dekking: Galmaarden, Galmaarden centrum, Vollezele, Tollembeek, Afhalen Provincieweg 34a, 9552 Herzele, Levering Pajottenland; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Galmaarden.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Spotlight rond Galmaarden
+- Landelijke KMO's en techniekers in Pajottenland: behuizingen en pasmallen voor teams in Galmaarden centrum.
+- Terugkerende order: 3D print service Galmaarden; we bewaren je instellingen.
+- Leverfocus: Galmaarden, Galmaarden centrum, Vollezele.
+
+## Landmarks in de buurt van Galmaarden
+- Centrum van Galmaarden
+- Lokale bedrijvenzone in Galmaarden
+- Sporthal in Galmaarden
+
+## Teams die we ondersteunen rond Galmaarden
+- Landelijke KMO's en techniekers in Pajottenland (Galmaarden)
+- Retail/events in Galmaarden en deelgemeenten
+- Makers en onderwijs in de regio (Galmaarden)
+
+## Wat vaak wordt gevraagd in Galmaarden
+- 3D print service Galmaarden
+- rapid prototyping Galmaarden
+- 3D printing bedrijf Galmaarden
+<!-- LOCAL_ENRICH_END -->

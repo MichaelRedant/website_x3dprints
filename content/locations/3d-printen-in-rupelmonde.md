@@ -25,7 +25,7 @@
 In Rupelmonde combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Rupelmonde
@@ -43,7 +43,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Rupelmonde interessant?
 
 ### Lokale ondernemers
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Scheldeprojecten
 Onderdelen die snel moeten passen en getest worden.
@@ -81,7 +81,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -124,6 +124,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Bazel](/3d-printen-in-bazel)
 - [Buurpagina: 3D printen in Burcht](/3d-printen-in-burcht)
 - [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
+
 
 ## Lokale spotlight
 - Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Rupelmonde centrum.

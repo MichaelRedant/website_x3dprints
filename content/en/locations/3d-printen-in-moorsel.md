@@ -15,7 +15,7 @@ Need **3D printing in Moorsel**? X3DPrints prints in Herzele and ships quickly t
 
 ## Delivery focus for Moorsel
 
-We frequently deliver to: Moorsel.
+We frequently deliver to: Moorsel, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Moorsel.
 
 ## What stands out in Moorsel
 
-- Local SMEs in Moorsel: tailored PETG/PLA parts for teams around Moorsel.
-- Common ask: 3D print service moorsel; we advise material and finishing for Moorsel.
-- Delivery focus: Moorsel.
+- Manufacturing and SMEs around Moorsel: prototypes, fixtures and housings.
+- Common ask in Moorsel: custom 3D printing with practical PLA/PETG/TPU advice for Moorsel.
+- Delivery focus: Moorsel, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Moorsel.
 
 ## Recent requests around Moorsel
 
-- Paint-ready show models for presentations in Moorsel and Moorsel.
+- Paint-ready show models for presentations in Moorsel and the surrounding area.
 - PLA or PETG functional parts for teams in Moorsel.
-- TPU grips and pads for bikes, tools or fixtures around Moorsel.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Moorsel.
 
 ## Useful links near Moorsel
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,17 +109,17 @@ Send your files today and get a clear, fast proposal for **3D printing in Moorse
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Moorsel
 
-- Coverage: Moorsel; delivery from Herzele, pickup available.
+- Coverage: Moorsel, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Moorsel.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Parent page: 3D printing in Tervuren](/en/3d-printen-in-tervuren)
 
 ## Customer spotlight
-- Local teams in Moorsel: small batches with consistent settings near Moorsel.
-- Common request: 3D print service moorsel; we pick material and finish for the use case.
+- SMEs and makers in Moorsel: fixtures and enclosures.
+- Common request: 3D printing service in Moorsel; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Moorsel and Moorsel.
 
 ## Where we drop off near Moorsel
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Moorse
 - Education/labs around Moorsel: lesson-ready prints.
 
 ## Common requests around Moorsel
-- 3D print service moorsel
-- rapid prototyping moorsel
-- 3D printing bedrijf moorsel
+- 3D printing service in Moorsel
+- Custom 3D printing in Moorsel
+- 3D model printing in Moorsel
 <!-- LOCAL_ENRICH_END -->

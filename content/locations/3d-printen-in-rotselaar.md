@@ -32,7 +32,7 @@ Met **3D printen in Rotselaar** leveren we prototypes, displays en tooling richt
 
 - Props en stands voor events rond Werchter.
 - Fixtures en serviceparts voor productie en onderhoud.
-- Kleine series covers voor elektronica en sensoren.
+- Kleine en grotere series covers voor elektronica en sensoren.
 
 ---
 
@@ -61,3 +61,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Wezemaal
 - Werchter
 - E314-corridor
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Rotselaar
+
+- Dekking: Rotselaar, Rotselaar centrum, Wezemaal, Werchter, E314-corridor, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Rotselaar.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Events en retail rond Werchter/Rotselaar: PLA/PETG onderdelen afgestemd op projecten rond Rotselaar centrum.
+- Vaak gevraagd: 3D print service Rotselaar; we adviseren materiaal en afwerking.
+- Leverfocus: Rotselaar, Rotselaar centrum, Wezemaal.
+
+## Plaatsen waar we vaak leveren rond Rotselaar
+- Centrum van Rotselaar
+- Lokale bedrijvenzone in Rotselaar
+- Sporthal in Rotselaar
+
+## Sectoren die we vaak helpen in Rotselaar
+- Events en retail rond Werchter/Rotselaar
+- KMO's en productie langs E314 (Rotselaar)
+- Makers en onderwijs in het Hageland (Rotselaar)
+
+## Veelgevraagde zoekopdrachten in Rotselaar
+- 3D print service Rotselaar
+- rapid prototyping Rotselaar
+- 3D printing bedrijf Rotselaar
+<!-- LOCAL_ENRICH_END -->

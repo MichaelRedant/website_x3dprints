@@ -15,7 +15,7 @@ Need **3D printing in Strijpen**? X3DPrints prints in Herzele and ships quickly 
 
 ## Areas we serve near Strijpen
 
-We frequently deliver to: Strijpen.
+We frequently deliver to: Strijpen, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Strijpen.
 
 ## Local spotlight for Strijpen
 
-- Local SMEs in Strijpen: tailored PETG/PLA parts for teams around Strijpen.
-- Common ask: 3D print service strijpen; we advise material and finishing for Strijpen.
-- Delivery focus: Strijpen.
+- Manufacturing and SMEs around Strijpen: prototypes, fixtures and housings.
+- Common ask in Strijpen: custom 3D printing with practical PLA/PETG/TPU advice for Strijpen.
+- Delivery focus: Strijpen, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Strijpen.
 
 ## What clients near Strijpen often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Strijpen.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 - PLA or PETG functional parts for teams in Strijpen.
-- Paint-ready show models for presentations in Strijpen and Strijpen.
+- Paint-ready show models for presentations in Strijpen and the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Strijpen.
 
 ## Related pages for Strijpen
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Strijp
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Strijpen
 
-- Coverage: Strijpen; delivery from Herzele, pickup available.
+- Coverage: Strijpen, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Strijpen.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Spotlight near Strijpen
-- Local teams in Strijpen: fixtures and housings for teams around Strijpen.
-- Frequent order: 3D print service strijpen; we keep settings for reorders.
-- Delivery focus: Strijpen.
+- SMEs and makers in Strijpen: fixtures and enclosures.
+- Frequent order: 3D printing service in Strijpen; we keep settings for reorders.
+- Delivery focus: Strijpen, Pickup in Herzele.
 
 ## Landmarks around Strijpen
 - Strijpen town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Strijp
 - Education/labs around Strijpen: lesson-ready prints.
 
 ## Frequently asked in Strijpen
-- 3D print service strijpen
-- rapid prototyping strijpen
-- 3D printing bedrijf strijpen
+- 3D printing service in Strijpen
+- Custom 3D printing in Strijpen
+- 3D model printing in Strijpen
 <!-- LOCAL_ENRICH_END -->

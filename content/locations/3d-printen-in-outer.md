@@ -21,7 +21,7 @@ In Outer helpen we projecten rond Outer sneller vooruit met prints die direct pa
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Outer
 
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Outer** ook ABS, ASA, Nylon of PA-CF voor tec
 ## Voor wie is 3D printen in Outer interessant?
 
 ### Lokale ondernemers
-Bedrijven gebruiken **3D printen in Outer** om prototypes te testen en kleine series te produceren.
+Bedrijven gebruiken **3D printen in Outer** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Hobbyisten en makers
 Creatieve inwoners realiseren persoonlijke projecten via **3D printen in Outer**.
@@ -102,8 +102,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Outer?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Outer?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Outer?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond Outer
 - [3D printen in Ninove](/3d-printen-in-ninove)
@@ -132,7 +132,13 @@ Wil je ervaren hoe **3D printen in Outer** jouw project vooruithelpt? Vraag vand
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Outer
+- Centrum van Outer
+- Lokale bedrijvenzone in Outer
+- Sporthal in Outer
+
 
 ## Klantenspotlight
 - Lokale teams in Outer: kleine reeksen met vaste settings rond Outer.

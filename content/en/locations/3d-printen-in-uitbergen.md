@@ -1,12 +1,12 @@
 # 3D printing in Uitbergen: local, fast and tailored
 
-Need **3D printing in Uitbergen**? X3DPrints prints in Herzele and ships quickly to Uitbergen and nearby Uitbergen centrum. Local 3D printing for Uitbergen, Uitbergen centrum and Berlare, Overmere, Donk: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Uitbergen**? X3DPrints prints in Herzele and ships quickly to Uitbergen and nearby Berlare. Local 3D printing for Uitbergen, Berlare and Overmere, Donk: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Uitbergen teams choose us
 
-- Local delivery to Uitbergen, Uitbergen centrum and Berlare, Overmere, Donk; pickup in Herzele.
+- Local delivery to Uitbergen, Berlare and Overmere, Donk; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Uitbergen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Uitbergen**? X3DPrints prints in Herzele and ships quickly
 
 ## Delivery focus for Uitbergen
 
-We frequently deliver to: Uitbergen, Uitbergen centrum, Berlare, Overmere, Donk, Afhalen Herzele.
+We frequently deliver to: Uitbergen, Uitbergen city center, Berlare, Overmere, Donk, Pickup in Herzele.
 
 ---
 
 ## What teams near Uitbergen ask us to make
 
 - Pilot runs for SMEs around Uitbergen, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Uitbergen centrum.
-- TPU dampers and grips for gear used in Berlare.
+- Functional PETG parts for maintenance teams near Berlare.
+- TPU dampers and grips for gear used in Overmere.
 - Presentation models and mockups for pitches around Uitbergen.
 - Brackets, guards and fixtures tuned for teams in Uitbergen.
 - Demo pieces and props for events near Uitbergen.
@@ -32,9 +32,9 @@ We frequently deliver to: Uitbergen, Uitbergen centrum, Berlare, Overmere, Donk,
 
 ## What stands out in Uitbergen
 
-- Lokale KMO's en zelfstandigen: tailored PETG/PLA parts for teams around Uitbergen centrum.
-- Common ask: 3D print service Uitbergen; we advise material and finishing for Berlare.
-- Delivery focus: Uitbergen, Uitbergen centrum, Berlare.
+- SMEs and industry near Uitbergen: fixtures, enclosures and small to large batches.
+- Common ask in Uitbergen: custom 3D printing with practical PLA/PETG/TPU advice for Overmere.
+- Delivery focus: Uitbergen, Uitbergen city center, Berlare.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Uitbergen, Uitbergen centrum, Berlare, Overmere, Donk,
 
 ## Sectors we back near Uitbergen
 
-- SMEs and industry near Uitbergen: fixtures, enclosures and small batches.
+- SMEs and industry near Uitbergen: fixtures, enclosures and small to large batches.
 - Education and labs around Uitbergen: lesson-ready prints in PLA/PETG.
-- Local projects in Uitbergen: Makers en hobbyisten
+- Makers and product teams in Uitbergen: iterative prototyping and short-run production.
 
 ---
 
 ## Recent requests around Uitbergen
 
-- Paint-ready show models for presentations in Uitbergen and Uitbergen centrum.
+- Paint-ready show models for presentations in Uitbergen and Berlare.
 - PLA or PETG functional parts for teams in Uitbergen.
-- TPU grips and pads for bikes, tools or fixtures around Uitbergen centrum.
+- TPU grips and pads for bikes, tools or fixtures around Berlare.
 
 ---
 
@@ -96,8 +96,6 @@ We frequently deliver to: Uitbergen, Uitbergen centrum, Berlare, Overmere, Donk,
 
 - [3D printing in Berlare](/en/3d-printen-in-berlare)
 - [3D printing in Overmere](/en/3d-printen-in-overmere)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Uitber
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Uitbergen
 
-- Coverage: Uitbergen, Uitbergen centrum, Berlare, Overmere, Donk, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Uitbergen, Uitbergen city center, Berlare, Overmere, Donk, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Uitbergen.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -122,9 +120,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Uitber
 - [Nearby: 3D printing in Overmere](/en/3d-printen-in-overmere)
 
 ## Customer spotlight
-- Lokale KMO's en zelfstandigen: small batches with consistent settings near Uitbergen centrum.
-- Common request: 3D print service Uitbergen; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Uitbergen and Uitbergen centrum.
+- SMEs/industry near Uitbergen: prototypes, fixtures, housings.
+- Common request: 3D printing service in Uitbergen; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Berlare and Overmere.
 
 ## Where we drop off near Uitbergen
 - Uitbergen town center
@@ -134,10 +132,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Uitber
 ## Sectors we back near Uitbergen
 - SMEs/industry near Uitbergen: prototypes, fixtures, housings.
 - Education/labs around Uitbergen: reliable PLA/PETG parts.
-- Local focus: Makers en hobbyisten
+- Makers and product teams in Uitbergen: iterative prototyping and short-run production.
 
 ## Common requests around Uitbergen
-- 3D print service Uitbergen
-- rapid prototyping Uitbergen
-- 3D printing bedrijf Uitbergen
+- 3D printing service in Uitbergen
+- Custom 3D printing in Uitbergen
+- 3D model printing in Uitbergen
 <!-- LOCAL_ENRICH_END -->

@@ -15,7 +15,7 @@ Need **3D printing in Oostakker**? X3DPrints prints in Herzele and ships quickly
 
 ## Delivery focus for Oostakker
 
-We frequently deliver to: Oostakker.
+We frequently deliver to: Oostakker, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Oostakker.
 
 ## What stands out in Oostakker
 
-- Local SMEs in Oostakker: tailored PETG/PLA parts for teams around Oostakker.
-- Common ask: 3D print service oostakker; we advise material and finishing for Oostakker.
-- Delivery focus: Oostakker.
+- Manufacturing and SMEs around Oostakker: prototypes, fixtures and housings.
+- Common ask in Oostakker: custom 3D printing with practical PLA/PETG/TPU advice for Oostakker.
+- Delivery focus: Oostakker, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Oostakker.
 
 ## Recent requests around Oostakker
 
-- Paint-ready show models for presentations in Oostakker and Oostakker.
+- Paint-ready show models for presentations in Oostakker and the surrounding area.
 - PLA or PETG functional parts for teams in Oostakker.
-- TPU grips and pads for bikes, tools or fixtures around Oostakker.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Oostakker.
 
 ## Useful links near Oostakker
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,17 +109,17 @@ Send your files today and get a clear, fast proposal for **3D printing in Oostak
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Oostakker
 
-- Coverage: Oostakker; delivery from Herzele, pickup available.
+- Coverage: Oostakker, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Oostakker.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Customer spotlight
-- Local teams in Oostakker: small batches with consistent settings near Oostakker.
-- Common request: 3D print service oostakker; we pick material and finish for the use case.
+- SMEs and makers in Oostakker: fixtures and enclosures.
+- Common request: 3D printing service in Oostakker; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Oostakker and Oostakker.
 
 ## Where we drop off near Oostakker
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Oostak
 - Education/labs around Oostakker: lesson-ready prints.
 
 ## Common requests around Oostakker
-- 3D print service oostakker
-- rapid prototyping oostakker
-- 3D printing bedrijf oostakker
+- 3D printing service in Oostakker
+- Custom 3D printing in Oostakker
+- 3D model printing in Oostakker
 <!-- LOCAL_ENRICH_END -->

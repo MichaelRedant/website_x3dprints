@@ -1,6 +1,6 @@
 # 3D printen in Borsbeek: dichtbij luchthaven en Fort 3
 
-Op zoek naar **3D printen in Borsbeek** voor prototypes of kleine series? X3DPrints levert nauwkeurige onderdelen voor teams rond Fort 3, bedrijven nabij de luchthaven en makers in het centrum. We denken mee over materiaal, afwerking en levertijd zodat je snel verder kan.
+Op zoek naar **3D printen in Borsbeek** voor prototypes of kleine en grotere series? X3DPrints levert nauwkeurige onderdelen voor teams rond Fort 3, bedrijven nabij de luchthaven en makers in het centrum. We denken mee over materiaal, afwerking en levertijd zodat je snel verder kan.
 
 ---
 
@@ -47,8 +47,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Borsbeek?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Borsbeek?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Borsbeek?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 
 
@@ -78,6 +78,12 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld aantallen en mat
 
 ## Gerelateerde buurtpagina's
 - [Buurpagina: 3D printen in Deurne](/3d-printen-in-deurne)
+
+## Lokale punten in Borsbeek
+- Centrum van Borsbeek
+- Lokale bedrijvenzone in Borsbeek
+- Sporthal in Borsbeek
+
 
 ## Klantenspotlight
 - Luchtvaart/lucht-hubs: kleine reeksen met vaste settings rond Borsbeek centrum.

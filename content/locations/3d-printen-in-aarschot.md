@@ -1,6 +1,6 @@
 # 3D printen in Aarschot: Hageland en E314-corridor
 
-Met **3D printen in Aarschot** leveren we prototypes en kleine series richting het centrum, industrieterrein Nieuwland en de dorpen in het Hageland. Snelle offertes, nauwkeurige passing en leveringen via de E314.
+Met **3D printen in Aarschot** leveren we prototypes en zowel kleine als grotere series richting het centrum, industrieterrein Nieuwland en de dorpen in het Hageland. Snelle offertes, nauwkeurige passing en leveringen via de E314.
 
 ---
 
@@ -35,7 +35,7 @@ We kennen de combinatie van productie, retail en onderwijs rond Aarschot. Daardo
 
 - Jigs en beugels voor maakbedrijven en onderhoudsdiensten.
 - Retailprops en custom signage voor winkels in Aarschot.
-- Kleine series behuizingen voor elektronica- en IoT-projecten.
+- Kleine en grotere series behuizingen voor elektronica- en IoT-projecten.
 
 ---
 
@@ -67,3 +67,37 @@ Ja. We tekenen nette passtukken en nemen dit mee in de offerte.
 - Industrieterrein Nieuwland
 - Gelrode en Langdorp
 - Aarschot centrum
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Aarschot
+
+- Dekking: Aarschot, Aarschot centrum, Industrieterrein Nieuwland, Gelrode, Langdorp, E314-corridor richting Leuven; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Aarschot.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Klantenspotlight
+- Productteams en KMO's langs de E314: kleine reeksen met vaste settings rond Aarschot centrum.
+- Vaak gevraagd: 3D print service Aarschot; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Aarschot en Aarschot centrum.
+
+## Locaties die we bedienen nabij Aarschot
+- Centrum van Aarschot
+- Lokale bedrijvenzone in Aarschot
+- Sporthal in Aarschot
+
+## Sectorfocus nabij Aarschot
+- Productteams en KMO's langs de E314 (Aarschot)
+- Retail en events in Aarschot centrum
+- Onderwijs en makers in het Hageland (Aarschot)
+
+## Typische aanvragen rond Aarschot
+- 3D print service Aarschot
+- rapid prototyping Aarschot
+- 3D printing bedrijf Aarschot
+<!-- LOCAL_ENRICH_END -->

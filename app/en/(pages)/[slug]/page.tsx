@@ -21,6 +21,9 @@ import {
   SITE,
   buildLocationMetaDescription,
   buildLocationMetaTitle,
+  buildFaqPageSchema,
+  buildBreadcrumbSchema,
+  buildLocalBusinessSchema,
   clampToWords,
   normalizeMetaDescription,
 } from "@/lib/seo"
@@ -63,11 +66,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   const description = buildSeoDescription(contentMd, loc.city)
   const keyphrase = `3D printing in ${loc.city}`
+  const keywordPhrases = [
+    keyphrase,
+    `3D print service ${loc.city}`,
+    `3D model print ${loc.city}`,
+    `Rapid prototyping ${loc.city}`,
+  ]
   const seoTitle = buildLocationMetaTitle(loc.city, "en")
 
   return {
     title: seoTitle,
     description,
+    keywords: keywordPhrases.join(", "),
     alternates: {
       canonical: url,
       languages: {
@@ -103,6 +113,14 @@ export default async function LocationEnPage({ params }: { params: Promise<{ slu
   }
 
   const keyphrase = `3D printing in ${loc.city}`
+  const pageUrl = `https://www.x3dprints.be/en/${loc.slug}`
+  const pageDescription = buildSeoDescription(contentMd, loc.city)
+  const keywordPhrases = [
+    keyphrase,
+    `3D print service ${loc.city}`,
+    `3D model print ${loc.city}`,
+    `Rapid prototyping ${loc.city}`,
+  ]
   const contentMdNormalized = stripLeadingH1(contentMd)
   const mdSections = splitMarkdown(contentMdNormalized)
   const contentHtml = await renderMarkdown(contentMdNormalized)
@@ -127,6 +145,53 @@ export default async function LocationEnPage({ params }: { params: Promise<{ slu
     { label: "Lead time", value: "Usually a few working days" },
     { label: "Build volume", value: "Up to 35 x 32 x 35 cm" },
   ]
+
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: keyphrase,
+    description: pageDescription,
+    inLanguage: "en-BE",
+    areaServed: [{ "@type": "Place", name: loc.city }, { "@type": "Place", name: "Belgium" }],
+    provider: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
+    url: pageUrl,
+    serviceType: "3D printing",
+    keywords: keywordPhrases,
+  }
+
+  const localBusinessJsonLd = buildLocalBusinessSchema({
+    pageUrl,
+    description: pageDescription,
+    image: "/Logo.webp",
+    inLanguage: "en-BE",
+    areaServed: `${loc.city}, Belgium`,
+  })
+
+  const faqJsonLd = buildFaqPageSchema({
+    inLanguage: "en-BE",
+    mainEntityOfPage: pageUrl,
+    items: faqItems.map((item) => ({ q: item.q, a: item.a })),
+  })
+
+  const breadcrumbJsonLd = buildBreadcrumbSchema({
+    id: `${pageUrl}#breadcrumb`,
+    inLanguage: "en-BE",
+    items: [
+      { name: "Home", url: "https://www.x3dprints.be/en/" },
+      { name: "Locations", url: "https://www.x3dprints.be/en/locaties/" },
+      { name: loc.city, url: pageUrl },
+    ],
+  })
+
+  const pageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: keyphrase,
+    description: pageDescription,
+    url: pageUrl,
+    inLanguage: "en-BE",
+    about: [{ "@type": "Place", name: loc.city }],
+  }
 
   return (
     <main className="relative overflow-clip px-4 pb-20 pt-12 sm:px-6 lg:px-8">
@@ -160,6 +225,7 @@ export default async function LocationEnPage({ params }: { params: Promise<{ slu
                 Materials & colours
               </Link>
             </div>
+            <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">Last updated: February 7, 2026</p>
           </Reveal>
 
           <Reveal delay={0.1} className="mt-8 grid gap-4 rounded-3xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
@@ -199,7 +265,7 @@ export default async function LocationEnPage({ params }: { params: Promise<{ slu
               <h2 className="text-xl font-semibold text-slate-900">Use cases</h2>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
                 <li>Functional parts, fixtures and housings.</li>
-                <li>Prototypes and small series for product teams.</li>
+                <li>Prototypes and small to large series for product teams.</li>
                 <li>Displays, props and marketing assets.</li>
                 <li>Education and labs needing fast prototypes.</li>
               </ul>
@@ -250,6 +316,12 @@ export default async function LocationEnPage({ params }: { params: Promise<{ slu
               Contact
             </Link>
           </nav>
+
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
         </div>
       </section>
     </main>

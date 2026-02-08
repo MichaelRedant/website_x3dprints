@@ -1,61 +1,139 @@
-# 3D printing in Bierbeek: E40 and Leuven fringe
+# 3D printing in Bierbeek: local, fast and tailored
 
-For **3D printing in Bierbeek** we deliver prototypes, housings and tooling toward Lovenjoel, Opvelp and Korbeek-Lo. Fast quotes and deliveries matched to your schedule.
-
----
-
-## Why X3DPrints for Bierbeek?
-
-- Quote within one working day with realistic lead time.
-- PLA Matte, PETG and TPU for visuals, strong parts and flexible clips.
-- EV delivery toward Bierbeek/E40; pickup in Herzele available.
+Need **3D printing in Bierbeek**? X3DPrints prints in Herzele and ships quickly to Bierbeek and nearby Lovenjoel. Local 3D printing for Bierbeek, Lovenjoel and Opvelp: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
-## Local focus in Bierbeek
+## Why Bierbeek teams choose us
 
-- Housings and mounts for offices and labs.
-- Jigs, clamps and fit parts for SMEs along the E40.
-- Props and displays for retail/events in the region.
-
-## Materials
-
-| Material      | Benefit                        | Ideal for |
-| :------------ | :----------------------------- | :-------- |
-| **PLA Matte** | Clean detail, many colours     | Showpieces and badges |
-| **PETG**      | Strong and heat-resistant      | Functional parts and tooling |
-| **TPU**       | Flexible and shock absorbing   | Cable management, bumpers and pads |
+- Local delivery to Bierbeek, Lovenjoel and Opvelp; pickup in Herzele.
+- Fast quotes: response in one business day with clear pricing.
+- Accurate fits for enclosures, jigs and assemblies used in Bierbeek.
+- Optional finishing (sanding/priming/paint) for customer-facing parts.
 
 ---
 
-## Use cases in Bierbeek
+## Delivery focus for Bierbeek
 
-- Brackets and covers for installations.
-- Service parts and fixtures for production/maintenance.
-- Small series of covers for sensors and electronics.
+We frequently deliver to: Bierbeek, Bierbeek city center, Lovenjoel, Opvelp, Korbeek-Lo area, Pickup in Herzele.
 
 ---
 
-## Practical
+## What teams near Bierbeek ask us to make
 
-- Upload STL/STEP via [contact](/en/contact) with quantities and finish.
-- Delivery via E40; pickup in Herzele possible.
-- Optional sanding/priming for smooth visuals.
+- Pilot runs for SMEs around Bierbeek, tuned per fit/finish.
+- Functional PETG parts for maintenance teams near Lovenjoel.
+- TPU dampers and grips for gear used in Opvelp.
+- Presentation models and mockups for pitches around Bierbeek.
+- Brackets, guards and fixtures tuned for teams in Bierbeek.
+- Demo pieces and props for events near Bierbeek.
 
 ---
 
-## Request a quote
+## What stands out in Bierbeek
 
-Send your files via [contact](/en/contact). You’ll quickly get a proposal for **3D printing in Bierbeek**.
+- SMEs and industry near Bierbeek: fixtures, enclosures and small to large batches.
+- Common ask in Bierbeek: custom 3D printing with practical PLA/PETG/TPU advice for Opvelp.
+- Delivery focus: Bierbeek, Bierbeek city center, Lovenjoel.
+
+---
+
+## Places we serve near Bierbeek
+
+- Bierbeek town center
+- local business park in Bierbeek
+- sports hall in Bierbeek
+
+---
+
+## Sectors we back near Bierbeek
+
+- SMEs and industry near Bierbeek: fixtures, enclosures and small to large batches.
+- Education and labs around Bierbeek: lesson-ready prints in PLA/PETG.
+- Retail/marketing/events in Bierbeek: displays, props and branded pieces.
+
+---
+
+## Recent requests around Bierbeek
+
+- Paint-ready show models for presentations in Bierbeek and Lovenjoel.
+- PLA or PETG functional parts for teams in Bierbeek.
+- TPU grips and pads for bikes, tools or fixtures around Lovenjoel.
+
+---
+
+## Material picks for Bierbeek work
+
+| Material       | Key trait                 | Ideal for                                             |
+| :------------- | :------------------------ | :---------------------------------------------------- |
+| **PLA Matte**  | Clean, detailed finish    | Models, decor, mockups for Bierbeek presentations       |
+| **PETG**       | Tough, heat resistant     | Functional parts, brackets, light outdoor use near Bierbeek |
+| **TPU**        | Flexible, shock absorbing | Grips, pads, bumpers for bikes or tools in Bierbeek     |
+
+---
+
+## Plan your order
+
+1. Upload STL/STEP via [contact](/en/contact).
+2. Note material (PLA/PETG/TPU), colour and quantity.
+3. Receive quote + timing within one business day.
+
+**Lead time:** usually a few working days; rush possible. Shipping to Bierbeek or pickup in Herzele.
+
+---
 
 ## FAQ about 3D printing in Bierbeek
 
-**How fast?** A few working days; rush possible.  
-**Material for tools?** PETG for strength, TPU for grip/damping, PLA for visuals.  
-**Repeat batches?** Yes, with fixed slicer profiles.
+**Do you print functional brackets?** Yes. PETG for tough brackets; TPU for vibration-damping pads; PLA Matte for visuals.  
+**What build volume?** Up to ~35 x 32 x 35 cm. Larger parts get split with hidden joints.  
+**How fast is shipping?** Most jobs leave within a few working days. We ship or you pick up in Herzele.  
+**Do you review my files?** We check wall thickness and fit. If critical, mention tolerances or mating parts.  
+**Can you add inserts?** Yes. We can design for heat-set inserts or self-tapping screws if you note the thread size.
 
-## Local points
+---
 
-- Bierbeek center
-- Lovenjoel
-- Opvelp and Korbeek-Lo fringe
+## Useful links near Bierbeek
+
+- [Local 3D printing overview](/en/locaties)
+- [3D printing pillar](/en/3d-printen)
+- [Materials and advice](/en/materials#material-suggestion-tool)
+- [Pricing examples](/en/pricing)
+- [Request a quote](/en/contact)
+
+---
+
+## Start your Bierbeek print request
+
+Send your files today and get a clear, fast proposal for **3D printing in Bierbeek**. Nearby production, personal support and reliable quality.
+
+<!-- LOCAL_ENRICH_START -->
+## Delivery details around Bierbeek
+
+- Coverage: Bierbeek, Bierbeek city center, Lovenjoel, Opvelp, Korbeek-Lo area, Pickup in Herzele; delivery from Herzele, pickup available.
+- Frequent jobs: prototypes, housings and brackets tailored for teams in Bierbeek.
+- File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
+- Turnaround: usually a few working days; rush possible on request.
+
+## Related nearby pages
+- [Local 3D printing overview](/en/locaties)
+
+## Customer spotlight
+- SMEs/industry near Bierbeek: prototypes, fixtures, housings.
+- Common request: 3D printing service in Bierbeek; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Lovenjoel and Opvelp.
+
+## Where we drop off near Bierbeek
+- Bierbeek town center
+- local business park in Bierbeek
+- sports hall in Bierbeek
+
+## Sectors we back near Bierbeek
+- SMEs/industry near Bierbeek: prototypes, fixtures, housings.
+- Education/labs around Bierbeek: reliable PLA/PETG parts.
+- Retail/marketing/events in Bierbeek: displays, signage, props.
+
+## Common requests around Bierbeek
+- 3D printing service in Bierbeek
+- Custom 3D printing in Bierbeek
+- 3D model printing in Bierbeek
+<!-- LOCAL_ENRICH_END -->

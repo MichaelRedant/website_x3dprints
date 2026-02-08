@@ -1,6 +1,6 @@
 # 3D printen in Huise (Kruisem): tussen kouter en kerkplein
 
-X3DPrints verzorgt 3D prints voor Huise, met levering langs kouterwegen en richting Sint-Petruskerk. Ideaal voor prototypes, tools en kleine series.
+X3DPrints verzorgt 3D prints voor Huise, met levering langs kouterwegen en richting Sint-Petruskerk. Ideaal voor prototypes, tools en zowel kleine als grotere series.
 
 ---
 
@@ -65,7 +65,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Huise
+- Centrum van Huise
+- Lokale bedrijvenzone in Huise
+- Sporthal in Huise
+
 
 ## Lokale spotlight
 - Lokale teams in Huise: PLA/PETG onderdelen afgestemd op projecten rond Huise.

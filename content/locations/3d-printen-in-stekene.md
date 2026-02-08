@@ -1,6 +1,6 @@
 # 3D printen in Stekene: maatwerk voor het Waasland
 
-**3D printen in Stekene** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten in het Waasland.
+**3D printen in Stekene** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten in het Waasland.
 
 ---
 
@@ -26,7 +26,7 @@
 In Stekene helpen we projecten rond Stekene sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 
 ## Materialen voor 3D printen in Stekene
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Kemzeke](/3d-printen-in-kemzeke)
 - [Buurpagina: 3D printen in Klein-Sinaai](/3d-printen-in-klein-sinaai)
 - [Buurpagina: 3D printen in Houtem (Stekene)](/3d-printen-in-houtem-stekene)
+
+
 
 ## Spotlight rond Stekene
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Stekene centrum.

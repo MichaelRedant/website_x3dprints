@@ -15,7 +15,7 @@ import { localizeHref } from "@/lib/i18n/paths"
 const NL_METADATA: Metadata = {
   title: "Over X3DPrints | 3D-printstudio in Herzele",
   description:
-    "Maak kennis met X3DPrints: compacte 3D-printstudio in Herzele voor prototypes en kleine series. Rechtstreeks contact, eerlijk materiaaladvies en nette afwerking.",
+    "Maak kennis met X3DPrints: compacte 3D-printstudio in Herzele voor prototypes en zowel kleine als grotere series. Rechtstreeks contact, eerlijk materiaaladvies en nette afwerking.",
   alternates: {
     canonical: "https://www.x3dprints.be/about/",
     languages: {
@@ -36,10 +36,10 @@ const NL_METADATA: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
-export const EN_METADATA: Metadata = {
+const EN_METADATA: Metadata = {
   title: "About X3DPrints | 3D print studio in Herzele",
   description:
-    "Meet X3DPrints: a compact 3D printing studio in Herzele for prototypes and small batches. Direct contact, honest material advice and clean finishing.",
+    "Meet X3DPrints: a compact 3D printing studio in Herzele for prototypes and small to large batches. Direct contact, honest material advice and clean finishing.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/about/",
     languages: {
@@ -60,6 +60,8 @@ export const EN_METADATA: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
+void EN_METADATA
+
 export const metadata: Metadata = NL_METADATA
 
 const ABOUT_COPY_NL = {
@@ -68,7 +70,7 @@ const ABOUT_COPY_NL = {
     introOne:
       "X3DPrints is een eenpersoons 3D-printstudio in bijberoep, gevestigd in Herzele en onderdeel van Xinudesign. Je spreekt rechtstreeks met de maker die ook produceert, test en afwerkt. Geen tickets, wel korte lijnen en onderdelen die gewoon passen.",
     introTwo:
-      "Ideaal voor prototypes en kleine series. PLA is onze standaard voor strak detail, en waar nodig schakelen we over naar PETG, ABS/ASA, Nylon (PA) of PA-CF. We leveren vooral in de regio Gent, Aalst, Geraardsbergen en Oudenaarde.",
+      "Ideaal voor prototypes en zowel kleine als grotere series. PLA is onze standaard voor strak detail, en waar nodig schakelen we over naar PETG, ABS/ASA, Nylon (PA) of PA-CF. We leveren vooral in de regio Gent, Aalst, Geraardsbergen en Oudenaarde.",
     ctas: {
       materials: "Materialen",
       services: "Diensten",
@@ -91,7 +93,7 @@ const ABOUT_COPY_NL = {
   work: {
     whatTitle: "Wat we doen",
     whatItems: [
-      "Prototyping en kleine series",
+      "Prototyping en zowel kleine als grotere series",
       "Winkelmateriaal: displays, houders en POS-oplossingen",
       "Gepersonaliseerde items en cadeaus",
       "Herstel en maatwerkonderdelen",
@@ -151,7 +153,7 @@ const ABOUT_COPY_EN = {
     introOne:
       "X3DPrints is a one-person 3D printing studio, run part-time in Herzele and part of Xinudesign. You speak directly with the maker who also prints, tests and finishes each part. No ticketing, just direct communication and parts that fit.",
     introTwo:
-      "Ideal for prototypes and small batches. PLA is our standard for crisp detail; when needed we switch to PETG, ABS/ASA, Nylon (PA) or PA-CF. We mainly serve the Ghent, Aalst, Geraardsbergen and Oudenaarde region.",
+      "Ideal for prototypes and small to large batches. PLA is our standard for crisp detail; when needed we switch to PETG, ABS/ASA, Nylon (PA) or PA-CF. We mainly serve the Ghent, Aalst, Geraardsbergen and Oudenaarde region.",
     ctas: {
       materials: "Materials",
       services: "Services",
@@ -174,7 +176,7 @@ const ABOUT_COPY_EN = {
   work: {
     whatTitle: "What we do",
     whatItems: [
-      "Prototyping and small batches",
+      "Prototyping and small to large batches",
       "Retail materials: displays, holders and POS solutions",
       "Personalized items and gifts",
       "Repairs and custom parts",

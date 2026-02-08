@@ -1,6 +1,6 @@
 # 3D printen in Nazareth: snelle service voor maatwerk
 
-**3D printen in Nazareth** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een nette afwerking.
+**3D printen in Nazareth** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een nette afwerking.
 
 ---
 
@@ -25,7 +25,7 @@
 
 In Nazareth combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Scholen en verenigingen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,14 +82,14 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Nazareth
 
-**Kunnen jullie kleine series leveren in Nazareth?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Nazareth?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Nazareth?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [Hoofdpagina: 3D printen in Nazareth-De Pinte](/3d-printen-in-nazareth-de-pinte)
 
+
+
 ## Spotlight rond Nazareth
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Nazareth centrum.
 - Terugkerende order: 3D print service Nazareth; we bewaren je instellingen.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Nazareth
 - Lokale makers en ontwerpers (Nazareth)
-- Kleine series en maatwerk (Nazareth)
+- Kleine en grotere series en maatwerk (Nazareth)
 - Verenigingen en onderwijs (Nazareth)
 
 ## Wat vaak wordt gevraagd in Nazareth

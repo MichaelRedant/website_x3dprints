@@ -1,6 +1,6 @@
 # 3D printen in Lochristi: snel maatwerk rond Gent
 
-**3D printen in Lochristi** is ideaal voor prototypes, maatwerk en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Lochristi** is ideaal voor prototypes, maatwerk en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -27,7 +27,7 @@ Voor Lochristi leveren we snel en denken we mee over sterkte en afwerking, ideaa
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Lochristi
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Kleine series en onderdelen op maat met korte lead time.
+Kleine en grotere series en onderdelen op maat met korte lead time.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en betrouwbare planning.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 **Welke bestanden kan ik aanleveren voor Lochristi?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Lochristi?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Lochristi?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Lochristi?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Zeveneken](/3d-printen-in-zeveneken)
 - [Buurpagina: 3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
 
+
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Lochristi centrum.
 - Vaak gevraagd: 3D print service Lochristi; we adviseren materiaal en afwerking.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectorfocus nabij Lochristi
 - Lokale makers en ontwerpers (Lochristi)
-- Kleine series en maatwerk (Lochristi)
+- Kleine en grotere series en maatwerk (Lochristi)
 - Verenigingen en onderwijs (Lochristi)
 
 ## Typische aanvragen rond Lochristi

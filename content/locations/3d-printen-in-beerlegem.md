@@ -1,6 +1,6 @@
 # 3D printen in Beerlegem: maatwerk met snelle levering
 
-**3D printen in Beerlegem** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Beerlegem** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -25,7 +25,7 @@
 
 Voor Beerlegem leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Beerlegem en Zwalm.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
 - [Buurpagina: 3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
 
+
+
 ## Spotlight rond Beerlegem
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Beerlegem centrum.
 - Terugkerende order: 3D print service Beerlegem; we bewaren je instellingen.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Beerlegem
 - Lokale makers en ontwerpers (Beerlegem)
-- Kleine series en maatwerk (Beerlegem)
+- Kleine en grotere series en maatwerk (Beerlegem)
 - Verenigingen en onderwijs (Beerlegem)
 
 ## Wat vaak wordt gevraagd in Beerlegem

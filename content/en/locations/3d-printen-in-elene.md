@@ -15,14 +15,14 @@ Need **3D printing in Elene**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Where we deliver around Elene
 
-We frequently deliver to: Elene.
+We frequently deliver to: Elene, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Elene
 
 - Prototypes and housings supporting teams in Elene.
-- Small series with consistent settings for businesses near your region.
+- Small to large series with consistent settings for businesses near your region.
 - Replacement parts and brackets for workshops around Flanders.
 - Promo models, signage and props for events in and around Elene.
 - Brackets, guards and fixtures tuned for teams in Elene.
@@ -32,9 +32,9 @@ We frequently deliver to: Elene.
 
 ## Spotlight: Elene projects
 
-- Local SMEs in Elene: tailored PETG/PLA parts for teams around Elene.
-- Common ask: 3D print service elene; we advise material and finishing for Elene.
-- Delivery focus: Elene.
+- Manufacturing and SMEs around Elene: prototypes, fixtures and housings.
+- Common ask in Elene: custom 3D printing with practical PLA/PETG/TPU advice for Elene.
+- Delivery focus: Elene, Pickup in Herzele.
 
 ---
 
@@ -57,8 +57,8 @@ We frequently deliver to: Elene.
 ## Popular requests from Elene
 
 - PLA or PETG functional parts for teams in Elene.
-- TPU grips and pads for bikes, tools or fixtures around Elene.
-- Paint-ready show models for presentations in Elene and Elene.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
+- Paint-ready show models for presentations in Elene and the surrounding area.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Elene.
 
 ## FAQ about 3D printing in Elene
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -94,10 +94,7 @@ We frequently deliver to: Elene.
 
 ## Quick links for Elene teams
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Elene*
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Elene
 
-- Coverage: Elene; delivery from Herzele, pickup available.
+- Coverage: Elene, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Elene.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Local spotlight
-- Local teams in Elene: PLA/PETG parts tuned for projects near Elene.
-- Common request: 3D print service elene; we pick material and finish for the use case.
-- Delivery focus: Elene.
+- SMEs and makers in Elene: fixtures and enclosures.
+- Common request: 3D printing service in Elene; we pick material and finish for the use case.
+- Delivery focus: Elene, Pickup in Herzele.
 
 ## Places we often deliver near Elene
 - Elene town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Elene*
 - Education/labs around Elene: lesson-ready prints.
 
 ## Popular searches from Elene
-- 3D print service elene
-- rapid prototyping elene
-- 3D printing bedrijf elene
+- 3D printing service in Elene
+- Custom 3D printing in Elene
+- 3D model printing in Elene
 <!-- LOCAL_ENRICH_END -->

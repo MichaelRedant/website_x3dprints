@@ -1,6 +1,6 @@
 # 3D printen in Kluisbergen: snelle prototypes in de Vlaamse Ardennen
 
-**3D printen in Kluisbergen** is ideaal voor prototypes, maatwerk en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Kluisbergen** is ideaal voor prototypes, maatwerk en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -27,7 +27,7 @@ In Kluisbergen combineren we detailwerk met functionele onderdelen; je krijgt sn
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Kluisbergen
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Kleine series en onderdelen op maat met korte lead time.
+Kleine en grotere series en onderdelen op maat met korte lead time.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en betrouwbare planning.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Ruien](/3d-printen-in-ruien)
 - [Buurpagina: 3D printen in Zulzeke](/3d-printen-in-zulzeke)
 
+
+
 ## Lokale spotlight
 - Makers en ontwerpers in de Vlaamse Ardennen: PLA/PETG onderdelen afgestemd op projecten rond Kluisbergen centrum.
 - Vaak gevraagd: 3D print service Kluisbergen; we adviseren materiaal en afwerking.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in Kluisbergen
 - Makers en ontwerpers in de Vlaamse Ardennen (Kluisbergen)
-- Kleine series en maatwerk (Kluisbergen)
+- Kleine en grotere series en maatwerk (Kluisbergen)
 - Verenigingen en onderwijs (Kluisbergen)
 
 ## Veelgevraagde zoekopdrachten in Kluisbergen

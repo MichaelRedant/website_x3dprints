@@ -20,7 +20,7 @@ const contactHref = "/en/contact?material=pla-matte&quote=Design%20review%20for%
 export const metadata: Metadata = {
   title: "How do you design a 3D printable model? | X3DPrints",
   description:
-    "Use this practical checklist for wall thickness, tolerance, orientation and export settings so your 3D model is print-ready faster.",
+    "Use this practical checklist for wall thickness, tolerance, orientation and export settings so your 3D model print workflow is ready faster for 3D printing Gent and Belgium projects.",
   alternates: {
     canonical,
     languages: {
@@ -209,7 +209,7 @@ export default function DesignArticleEnPage() {
             How do you design a 3D printable model?
           </h1>
           <p className="max-w-3xl text-lg text-slate-700">
-            Short answer: printability starts in CAD. A few core rules can prevent failed prints and extra iterations.
+            Short answer: printability starts in CAD. A few core rules can prevent failed prints and extra iterations in every 3D model print pipeline, including 3D printing Gent projects.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
             Last updated: February 7, 2026

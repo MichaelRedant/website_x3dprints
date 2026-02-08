@@ -1,61 +1,137 @@
-# 3D printing in Leuven: campus and Vaartkom
+# 3D printing in Leuven: local, fast and tailored
 
-For **3D printing in Leuven** we deliver prototypes and small series toward the university campuses, Vaartkom and Haasrode. Quick quotes, clear pricing and material advice for labs, medtech and start-ups.
-
----
-
-## Why X3DPrints for Leuven?
-
-- Quote within one working day with realistic lead time.
-- PLA Matte, PETG and TPU for visuals, functional parts and flexible pieces.
-- EV delivery toward Leuven, Gasthuisberg and Haasrode; pickup in Herzele.
+Need **3D printing in Leuven**? X3DPrints prints in Herzele and ships quickly to Leuven and nearby Heverlee and Arenbergcampus. Local 3D printing for Leuven, Heverlee and Arenbergcampus and UZ Leuven Gasthuisberg, Haasrode Research-Park: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
-## Local focus in Leuven
+## Why Leuven teams choose us
 
-- Prototypes and housings for labs around Gasthuisberg/Arenberg.
-- Fixtures and tooling for product teams in Haasrode Research Park.
-- Displays and demo parts for events in the city and Vaartkom.
-
-## Materials
-
-| Material      | Benefit                        | Ideal for |
-| :------------ | :----------------------------- | :-------- |
-| **PLA Matte** | Clean detail, many colours     | Showpieces and maquettes |
-| **PETG**      | Strong and heat-resistant      | Functional parts and tooling |
-| **TPU**       | Flexible and shock absorbing   | Dampers, clips and protectors |
+- Local delivery to Leuven, Heverlee and Arenbergcampus and UZ Leuven Gasthuisberg, Haasrode Research-Park; pickup in Herzele.
+- Fast quotes: response in one business day with clear pricing.
+- Accurate fits for enclosures, jigs and assemblies used in Leuven.
+- Optional finishing (sanding/priming/paint) for customer-facing parts.
 
 ---
 
-## Use cases in Leuven
+## Delivery focus for Leuven
 
-- Brackets, housings and covers for medtech/labs.
-- Jigs and clamps for teams in Haasrode and Vaartkom.
-- Props and signage for events and student projects.
+We frequently deliver to: Leuven, Leuven city center, Heverlee and Arenbergcampus, UZ Leuven Gasthuisberg, Haasrode Research-Park, Vaartkom, Pickup in Herzele.
 
 ---
 
-## Practical
+## What teams near Leuven ask us to make
 
-- Upload STL/STEP via [contact](/en/contact) with quantities, deadline and finish.
-- Delivery via E40/E314; pickup in Herzele possible.
-- Optional sanding/priming for smooth visuals.
+- Pilot runs for SMEs around Leuven, tuned per fit/finish.
+- Functional PETG parts for maintenance teams near Heverlee and Arenbergcampus.
+- TPU dampers and grips for gear used in UZ Leuven Gasthuisberg.
+- Presentation models and mockups for pitches around Leuven.
+- Brackets, guards and fixtures tuned for teams in Leuven.
+- Demo pieces and props for events near Leuven.
 
 ---
 
-## Request a quote
+## What stands out in Leuven
 
-Send your files via [contact](/en/contact). You’ll quickly get a plan for **3D printing in Leuven**.
+- Education and labs around Leuven: lesson-ready prints in PLA/PETG.
+- Common ask in Leuven: custom 3D printing with practical PLA/PETG/TPU advice for UZ Leuven Gasthuisberg.
+- Delivery focus: Leuven, Leuven city center, Heverlee and Arenbergcampus.
+
+---
+
+## Places we serve near Leuven
+
+- Leuven town center
+- local business park in Leuven
+- sports hall in Leuven
+
+---
+
+## Sectors we back near Leuven
+
+- Education and labs around Leuven: lesson-ready prints in PLA/PETG.
+- Local teams in Leuven: custom 3D printing for prototypes and functional parts.
+
+---
+
+## Recent requests around Leuven
+
+- Paint-ready show models for presentations in Leuven and Heverlee and Arenbergcampus.
+- PLA or PETG functional parts for teams in Leuven.
+- TPU grips and pads for bikes, tools or fixtures around Heverlee and Arenbergcampus.
+
+---
+
+## Material picks for Leuven work
+
+| Material       | Key trait                 | Ideal for                                             |
+| :------------- | :------------------------ | :---------------------------------------------------- |
+| **PLA Matte**  | Clean, detailed finish    | Models, decor, mockups for Leuven presentations       |
+| **PETG**       | Tough, heat resistant     | Functional parts, brackets, light outdoor use near Leuven |
+| **TPU**        | Flexible, shock absorbing | Grips, pads, bumpers for bikes or tools in Leuven     |
+
+---
+
+## Plan your order
+
+1. Upload STL/STEP via [contact](/en/contact).
+2. Note material (PLA/PETG/TPU), colour and quantity.
+3. Receive quote + timing within one business day.
+
+**Lead time:** usually a few working days; rush possible. Shipping to Leuven or pickup in Herzele.
+
+---
 
 ## FAQ about 3D printing in Leuven
 
-**Lead time?** Usually a few working days; rush on request.  
-**Best material for lab housings?** PETG for strength/heat, PLA for visuals, TPU for damping.  
-**NDA?** Yes, available on request.
+**Do you print functional brackets?** Yes. PETG for tough brackets; TPU for vibration-damping pads; PLA Matte for visuals.  
+**What build volume?** Up to ~35 x 32 x 35 cm. Larger parts get split with hidden joints.  
+**How fast is shipping?** Most jobs leave within a few working days. We ship or you pick up in Herzele.  
+**Do you review my files?** We check wall thickness and fit. If critical, mention tolerances or mating parts.  
+**Can you add inserts?** Yes. We can design for heat-set inserts or self-tapping screws if you note the thread size.
 
-## Local points
+---
 
-- Leuven center and Vaartkom
-- Gasthuisberg and Arenberg campus
-- Haasrode Research Park
+## Useful links near Leuven
+
+- [Local 3D printing overview](/en/locaties)
+- [3D printing pillar](/en/3d-printen)
+- [Materials and advice](/en/materials#material-suggestion-tool)
+- [Pricing examples](/en/pricing)
+- [Request a quote](/en/contact)
+
+---
+
+## Start your Leuven print request
+
+Send your files today and get a clear, fast proposal for **3D printing in Leuven**. Nearby production, personal support and reliable quality.
+
+<!-- LOCAL_ENRICH_START -->
+## Delivery details around Leuven
+
+- Coverage: Leuven, Leuven city center, Heverlee and Arenbergcampus, UZ Leuven Gasthuisberg, Haasrode Research-Park, Vaartkom; delivery from Herzele, pickup available.
+- Frequent jobs: prototypes, housings and brackets tailored for teams in Leuven.
+- File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
+- Turnaround: usually a few working days; rush possible on request.
+
+## Related nearby pages
+- [Local 3D printing overview](/en/locaties)
+
+## Customer spotlight
+- Education/labs around Leuven: reliable PLA/PETG parts.
+- Common request: 3D printing service in Leuven; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Heverlee and Arenbergcampus and UZ Leuven Gasthuisberg.
+
+## Where we drop off near Leuven
+- Leuven town center
+- local business park in Leuven
+- sports hall in Leuven
+
+## Sectors we back near Leuven
+- Education/labs around Leuven: reliable PLA/PETG parts.
+- Local teams in Leuven: custom 3D printing for prototypes and functional parts.
+
+## Common requests around Leuven
+- 3D printing service in Leuven
+- Custom 3D printing in Leuven
+- 3D model printing in Leuven
+<!-- LOCAL_ENRICH_END -->

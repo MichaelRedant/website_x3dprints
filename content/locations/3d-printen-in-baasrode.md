@@ -17,7 +17,7 @@
 
 ## Lokale focus in Baasrode
 
-Werk je in Baasrode? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Baasrode.
+Werk je in Baasrode? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Baasrode.
 
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Baasrode** ook ABS, ASA, Nylon of PA-CF voor 
 ## Voor wie is 3D printen in Baasrode interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven nabij de oude werven gebruiken **3D printen in Baasrode** om prototypes te testen en kleine series te produceren.
+Lokale bedrijven nabij de oude werven gebruiken **3D printen in Baasrode** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve inwoners maken unieke gadgets of miniaturen van de Sint-Ursmaruskerk met **3D printen in Baasrode**.
@@ -93,8 +93,8 @@ Baasrode ligt langs de Schelde en staat bekend om zijn scheepsbouwverleden en he
 
 ## Veelgestelde vragen over 3D printen in Baasrode
 
-**Kunnen jullie kleine series leveren in Baasrode?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Baasrode?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Baasrode?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -132,6 +132,12 @@ Benieuwd hoe **3D printen in Baasrode** jouw idee versterkt? Vraag een **gratis 
 
 ## Gerelateerde buurtpagina's
 - [Hoofdpagina: 3D printen in Dendermonde](/3d-printen-in-dendermonde)
+
+## Lokale punten in Baasrode
+- Centrum van Baasrode
+- Lokale bedrijvenzone in Baasrode
+- Sporthal in Baasrode
+
 
 ## Klantenspotlight
 - Lokale teams in Baasrode: kleine reeksen met vaste settings rond Baasrode.

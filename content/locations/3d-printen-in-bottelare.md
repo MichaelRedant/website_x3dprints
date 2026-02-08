@@ -1,6 +1,6 @@
 # 3D printen in Bottelare: betrouwbaar maatwerk dichtbij
 
-**3D printen in Bottelare** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Bottelare** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare timing.
+Maatwerk en zowel kleine als grotere series met betrouwbare timing.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test onderdelen snel en stuur bij waar nodig.
 **Welke bestanden kan ik aanleveren voor Bottelare?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Bottelare?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Bottelare?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Bottelare?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Lemberge](/3d-printen-in-lemberge)
 - [Hoofdpagina: 3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
 
+
+
 ## Spotlight rond Bottelare
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Bottelare centrum.
 - Terugkerende order: 3D print service Bottelare; we bewaren je instellingen.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Bottelare
 - Lokale makers en ontwerpers (Bottelare)
-- Kleine series en maatwerk (Bottelare)
+- Kleine en grotere series en maatwerk (Bottelare)
 - Verenigingen en onderwijs (Bottelare)
 
 ## Wat vaak wordt gevraagd in Bottelare

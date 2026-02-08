@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
-import PortfolioPage, { EN_METADATA } from "@/app/(pages)/portfolio/page"
+import PortfolioPage from "@/app/(pages)/portfolio/page"
+import { EN_METADATA } from "@/app/(pages)/portfolio/metadata.en"
 
 export const metadata: Metadata = EN_METADATA
 

@@ -1,12 +1,12 @@
 # 3D printing in Kieldrecht: local, fast and tailored
 
-Need **3D printing in Kieldrecht**? X3DPrints prints in Herzele and ships quickly to Kieldrecht and nearby Kieldrecht centrum. Local 3D printing for Kieldrecht, Kieldrecht centrum and Doel, Verrebroek, Kallo: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Kieldrecht**? X3DPrints prints in Herzele and ships quickly to Kieldrecht and nearby Doel. Local 3D printing for Kieldrecht, Doel and Verrebroek, Kallo: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Kieldrecht teams choose us
 
-- Local delivery to Kieldrecht, Kieldrecht centrum and Doel, Verrebroek, Kallo; pickup in Herzele.
+- Local delivery to Kieldrecht, Doel and Verrebroek, Kallo; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Kieldrecht.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Kieldrecht**? X3DPrints prints in Herzele and ships quickl
 
 ## Where we deliver around Kieldrecht
 
-We frequently deliver to: Kieldrecht, Kieldrecht centrum, Doel, Verrebroek, Kallo, Afhalen Herzele.
+We frequently deliver to: Kieldrecht, Kieldrecht city center, Doel, Verrebroek, Kallo, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Kieldrecht
 
 - Prototypes and housings supporting teams in Kieldrecht.
-- Small series with consistent settings for businesses near Kieldrecht centrum.
-- Replacement parts and brackets for workshops around Doel.
+- Small to large series with consistent settings for businesses near Doel.
+- Replacement parts and brackets for workshops around Verrebroek.
 - Promo models, signage and props for events in and around Kieldrecht.
 - Brackets, guards and fixtures tuned for teams in Kieldrecht.
 - Demo pieces and props for events near Kieldrecht.
@@ -32,9 +32,9 @@ We frequently deliver to: Kieldrecht, Kieldrecht centrum, Doel, Verrebroek, Kall
 
 ## Spotlight: Kieldrecht projects
 
-- Lokale KMO's en techniekers: tailored PETG/PLA parts for teams around Kieldrecht centrum.
-- Common ask: 3D print service Kieldrecht; we advise material and finishing for Doel.
-- Delivery focus: Kieldrecht, Kieldrecht centrum, Doel.
+- SMEs and industry near Kieldrecht: fixtures, enclosures and small to large batches.
+- Common ask in Kieldrecht: custom 3D printing with practical PLA/PETG/TPU advice for Verrebroek.
+- Delivery focus: Kieldrecht, Kieldrecht city center, Doel.
 
 ---
 
@@ -48,16 +48,16 @@ We frequently deliver to: Kieldrecht, Kieldrecht centrum, Doel, Verrebroek, Kall
 
 ## Teams we often help near Kieldrecht
 
-- SMEs and industry near Kieldrecht: fixtures, enclosures and small batches.
-- Local projects in Kieldrecht: Makers en hobbyisten
+- SMEs and industry near Kieldrecht: fixtures, enclosures and small to large batches.
+- Makers and product teams in Kieldrecht: iterative prototyping and short-run production.
 
 ---
 
 ## Popular requests from Kieldrecht
 
 - PLA or PETG functional parts for teams in Kieldrecht.
-- TPU grips and pads for bikes, tools or fixtures around Kieldrecht centrum.
-- Paint-ready show models for presentations in Kieldrecht and Kieldrecht centrum.
+- TPU grips and pads for bikes, tools or fixtures around Doel.
+- Paint-ready show models for presentations in Kieldrecht and Doel.
 
 ---
 
@@ -83,7 +83,7 @@ We frequently deliver to: Kieldrecht, Kieldrecht centrum, Doel, Verrebroek, Kall
 
 ## FAQ about 3D printing in Kieldrecht
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -96,7 +96,6 @@ We frequently deliver to: Kieldrecht, Kieldrecht centrum, Doel, Verrebroek, Kall
 - [3D printing in Doel](/en/3d-printen-in-doel)
 - [3D printing in Verrebroek](/en/3d-printen-in-verrebroek)
 - [3D printing in Kallo](/en/3d-printen-in-kallo)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -111,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Kieldr
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Kieldrecht
 
-- Coverage: Kieldrecht, Kieldrecht centrum, Doel, Verrebroek, Kallo, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Kieldrecht, Kieldrecht city center, Doel, Verrebroek, Kallo, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Kieldrecht.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +122,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Kieldr
 - [Parent page: 3D printing in Beveren-Kruibeke-Zwijndrecht](/en/3d-printen-in-beveren-kruibeke-zwijndrecht)
 
 ## Local spotlight
-- Lokale KMO's en techniekers: PLA/PETG parts tuned for projects near Kieldrecht centrum.
-- Common request: 3D print service Kieldrecht; we pick material and finish for the use case.
-- Delivery focus: Kieldrecht, Kieldrecht centrum, Doel.
+- SMEs/industry near Kieldrecht: prototypes, fixtures, housings.
+- Common request: 3D printing service in Kieldrecht; we pick material and finish for the use case.
+- Delivery focus: Kieldrecht, Kieldrecht city center, Doel.
 
 ## Places we often deliver near Kieldrecht
 - Kieldrecht town center
@@ -134,10 +133,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Kieldr
 
 ## Industries we serve near Kieldrecht
 - SMEs/industry near Kieldrecht: prototypes, fixtures, housings.
-- Local focus: Makers en hobbyisten
+- Makers and product teams in Kieldrecht: iterative prototyping and short-run production.
 
 ## Popular searches from Kieldrecht
-- 3D print service Kieldrecht
-- rapid prototyping Kieldrecht
-- 3D printing bedrijf Kieldrecht
+- 3D printing service in Kieldrecht
+- Custom 3D printing in Kieldrecht
+- 3D model printing in Kieldrecht
 <!-- LOCAL_ENRICH_END -->

@@ -94,7 +94,7 @@ const useCaseRows = [
 
 const quickWins = [
   "Direct contact met dezelfde maker die print en opvolgt",
-  "Snelle iteraties in kleine oplages zonder overbodige complexiteit",
+  "Snelle iteraties in kleine en grotere oplages zonder overbodige complexiteit",
   "Praktisch materiaaladvies zonder overbodige vaktaal",
 ]
 

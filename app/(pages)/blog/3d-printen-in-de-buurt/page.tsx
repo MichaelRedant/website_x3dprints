@@ -19,7 +19,7 @@ const locatiesHref = "/locaties?utm_source=blog&utm_medium=cta&utm_campaign=in-d
 export const metadata: Metadata = {
   title: "3D printen in de buurt | Gent, Aalst en Dendermonde | X3DPrints",
   description:
-    "Lokale 3D printservice vanuit Herzele voor projecten in Gent, Aalst en Dendermonde met flexibele levering en afhaling.",
+    "Lokale 3D print service Belgie vanuit Herzele voor projecten in Gent, Aalst en Dendermonde, inclusief 3D model printen, levering en afhaling.",
   alternates: {
     canonical,
     languages: {
@@ -56,12 +56,12 @@ const tocItems = [
 const cityCards = [
   {
     city: "Gent",
-    info: "Voor agencies, makers en scholen met snelle afhaling of levering op afspraak.",
+    info: "Voor agencies, makers en scholen met snelle afhaling of levering op afspraak en vlot 3D model printen.",
     examples: "Retail displays, eventprops en studentenprojecten.",
   },
   {
     city: "Aalst",
-    info: "Korte afstand vanuit Herzele met vlotte batching van meerdere onderdelen.",
+    info: "Korte afstand vanuit Herzele met vlotte batching van meerdere 3D print onderdelen.",
     examples: "Functionele onderdelen, montagehulpen en custom tooling.",
   },
   {
@@ -199,7 +199,8 @@ export default function LocalArticlePage() {
             3D printen in de buurt: Gent, Aalst en Dendermonde
           </h1>
           <p className="max-w-3xl text-lg text-slate-700">
-            Lokaal werken verkort je feedbackloop. Met korte lijnen tussen briefing en levering win je tijd op je hele project.
+            Lokaal werken verkort je feedbackloop. Met korte lijnen tussen briefing en levering win je tijd op je hele project,
+            van 3D model printen tot het snel uitleveren van 3D print onderdelen.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
             Laatst bijgewerkt: 7 februari 2026

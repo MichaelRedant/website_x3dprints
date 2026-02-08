@@ -1,6 +1,6 @@
 # 3D printen in De Pinte: maatwerk met korte doorlooptijd
 
-**3D printen in De Pinte** is ideaal voor prototypes, herstellingen en kleine series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies en een strakke afwerking.
+**3D printen in De Pinte** is ideaal voor prototypes, herstellingen en zowel kleine als grotere series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies en een strakke afwerking.
 
 ---
 
@@ -23,10 +23,10 @@
 
 ## Lokale focus in De Pinte
 
-Werk je in De Pinte? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting De Pinte.
+Werk je in De Pinte? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting De Pinte.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 
 ## Materialen voor 3D printen in De Pinte
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en pasvormtests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,8 +94,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor De Pinte?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in De Pinte?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in De Pinte?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in De Pinte
 - [3D printen in Nazareth-De Pinte](/3d-printen-in-nazareth-de-pinte)
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [Hoofdpagina: 3D printen in Nazareth-De Pinte](/3d-printen-in-nazareth-de-pinte)
 
+
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond De Pinte centrum.
 - Vaak gevraagd: 3D print service De Pinte; we adviseren materiaal en afwerking.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in De Pinte
 - Lokale makers en ontwerpers (De Pinte)
-- Kleine series en maatwerk (De Pinte)
+- Kleine en grotere series en maatwerk (De Pinte)
 - Verenigingen en onderwijs (De Pinte)
 
 ## Veelgevraagde zoekopdrachten in De Pinte

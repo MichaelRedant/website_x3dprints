@@ -60,7 +60,7 @@ Onze **rapid prototyping service in Erpe-Mere** stelt u in staat om uw ontwerpen
 Erpe-Mere combineert de rust van het platteland met de dynamiek van een actieve gemeente. Denk aan de bedrijvigheid rondom de Denderstreek en de sterke gemeenschapszin. Met **3D printen in Erpe-Mere** kunt u:
 
 -   Unieke, gepersonaliseerde items creëren voor uzelf of als geschenk.
--   Snel prototypes en kleine series produceren voor productontwikkeling.
+-   Snel prototypes en zowel kleine als grotere series produceren voor productontwikkeling.
 -   Specifieke onderdelen laten maken die direct beschikbaar moeten zijn.
 -   Educatieve projecten en hobby's ondersteunen met tastbare modellen.
 
@@ -112,7 +112,13 @@ Benieuwd hoe **3D printen in Erpe-Mere** uw project kan versnellen of uw idee ka
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Erpe-mere
+- Centrum van Erpe-mere
+- Lokale bedrijvenzone in Erpe-mere
+- Sporthal in Erpe-mere
+
 
 ## Spotlight rond Erpe-mere
 - Lokale teams in Erpe-mere: behuizingen en pasmallen voor teams in Erpe-mere.

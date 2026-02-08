@@ -1,6 +1,6 @@
 # 3D printen in Sint-Pauwels: precieze prints met snelle levering
 
-**3D printen in Sint-Pauwels** is ideaal voor prototypes, herstellingen en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Sint-Pauwels** is ideaal voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Lokale focus in Sint-Pauwels
 
-Werk je in Sint-Pauwels? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Sint-Pauwels.
+Werk je in Sint-Pauwels? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Pauwels.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Pasmallen en sjablonen voor montage en assemblage.
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test onderdelen snel en stuur bij waar nodig.
 **Welke bestanden kan ik aanleveren voor Sint-Pauwels?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Sint-Pauwels?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Sint-Pauwels?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Sint-Pauwels?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in De Klinge](/3d-printen-in-de-klinge)
 - [Buurpagina: 3D printen in Meerdonk](/3d-printen-in-meerdonk)
 
+
+
 ## Spotlight rond Sint-Pauwels
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Sint-Pauwels centrum.
 - Terugkerende order: 3D print service Sint-Pauwels; we bewaren je instellingen.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Sint-Pauwels
 - Lokale makers en ontwerpers (Sint-Pauwels)
-- Kleine series en maatwerk (Sint-Pauwels)
+- Kleine en grotere series en maatwerk (Sint-Pauwels)
 - Verenigingen en onderwijs (Sint-Pauwels)
 
 ## Wat vaak wordt gevraagd in Sint-Pauwels

@@ -1,12 +1,12 @@
 # 3D printing in Verrebroek: local, fast and tailored
 
-Need **3D printing in Verrebroek**? X3DPrints prints in Herzele and ships quickly to Verrebroek and nearby Verrebroek centrum. Local 3D printing for Verrebroek, Verrebroek centrum and Kieldrecht, Doel, Kallo: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Verrebroek**? X3DPrints prints in Herzele and ships quickly to Verrebroek and nearby Kieldrecht. Local 3D printing for Verrebroek, Kieldrecht and Doel, Kallo: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Verrebroek teams choose us
 
-- Local delivery to Verrebroek, Verrebroek centrum and Kieldrecht, Doel, Kallo; pickup in Herzele.
+- Local delivery to Verrebroek, Kieldrecht and Doel, Kallo; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Verrebroek.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Verrebroek**? X3DPrints prints in Herzele and ships quickl
 
 ## Delivery focus for Verrebroek
 
-We frequently deliver to: Verrebroek, Verrebroek centrum, Kieldrecht, Doel, Kallo, Afhalen Herzele.
+We frequently deliver to: Verrebroek, Verrebroek city center, Kieldrecht, Doel, Kallo, Pickup in Herzele.
 
 ---
 
 ## What teams near Verrebroek ask us to make
 
 - Pilot runs for SMEs around Verrebroek, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Verrebroek centrum.
-- TPU dampers and grips for gear used in Kieldrecht.
+- Functional PETG parts for maintenance teams near Kieldrecht.
+- TPU dampers and grips for gear used in Doel.
 - Presentation models and mockups for pitches around Verrebroek.
 - Brackets, guards and fixtures tuned for teams in Verrebroek.
 - Demo pieces and props for events near Verrebroek.
@@ -32,9 +32,9 @@ We frequently deliver to: Verrebroek, Verrebroek centrum, Kieldrecht, Doel, Kall
 
 ## What stands out in Verrebroek
 
-- Haven en logistiek: tailored PETG/PLA parts for teams around Verrebroek centrum.
-- Common ask: 3D print service Verrebroek; we advise material and finishing for Kieldrecht.
-- Delivery focus: Verrebroek, Verrebroek centrum, Kieldrecht.
+- Local teams in Verrebroek: custom 3D printing for prototypes and functional parts.
+- Common ask in Verrebroek: custom 3D printing with practical PLA/PETG/TPU advice for Doel.
+- Delivery focus: Verrebroek, Verrebroek city center, Kieldrecht.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Verrebroek, Verrebroek centrum, Kieldrecht, Doel, Kall
 
 ## Sectors we back near Verrebroek
 
-- Local projects in Verrebroek: Haven en logistiek
-- SMEs and industry near Verrebroek: fixtures, enclosures and small batches.
+- Local teams in Verrebroek: custom 3D printing for prototypes and functional parts.
+- SMEs and industry near Verrebroek: fixtures, enclosures and small to large batches.
 - Retail/marketing/events in Verrebroek: displays, props and branded pieces.
 
 ---
 
 ## Recent requests around Verrebroek
 
-- Paint-ready show models for presentations in Verrebroek and Verrebroek centrum.
+- Paint-ready show models for presentations in Verrebroek and Kieldrecht.
 - PLA or PETG functional parts for teams in Verrebroek.
-- TPU grips and pads for bikes, tools or fixtures around Verrebroek centrum.
+- TPU grips and pads for bikes, tools or fixtures around Kieldrecht.
 
 ---
 
@@ -97,7 +97,6 @@ We frequently deliver to: Verrebroek, Verrebroek centrum, Kieldrecht, Doel, Kall
 - [3D printing in Kieldrecht](/en/3d-printen-in-kieldrecht)
 - [3D printing in Doel](/en/3d-printen-in-doel)
 - [3D printing in Kallo](/en/3d-printen-in-kallo)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Verreb
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Verrebroek
 
-- Coverage: Verrebroek, Verrebroek centrum, Kieldrecht, Doel, Kallo, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Verrebroek, Verrebroek city center, Kieldrecht, Doel, Kallo, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Verrebroek.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +123,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Verreb
 - [Parent page: 3D printing in Beveren-Kruibeke-Zwijndrecht](/en/3d-printen-in-beveren-kruibeke-zwijndrecht)
 
 ## Customer spotlight
-- Haven en logistiek: small batches with consistent settings near Verrebroek centrum.
-- Common request: 3D print service Verrebroek; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Verrebroek and Verrebroek centrum.
+- Local teams in Verrebroek: custom 3D printing for prototypes and functional parts.
+- Common request: 3D printing service in Verrebroek; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Kieldrecht and Doel.
 
 ## Where we drop off near Verrebroek
 - Verrebroek town center
@@ -134,12 +133,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Verreb
 - sports hall in Verrebroek
 
 ## Sectors we back near Verrebroek
-- Local focus: Haven en logistiek
+- Local teams in Verrebroek: custom 3D printing for prototypes and functional parts.
 - SMEs/industry near Verrebroek: prototypes, fixtures, housings.
 - Retail/marketing/events in Verrebroek: displays, signage, props.
 
 ## Common requests around Verrebroek
-- 3D print service Verrebroek
-- rapid prototyping Verrebroek
-- 3D printing bedrijf Verrebroek
+- 3D printing service in Verrebroek
+- Custom 3D printing in Verrebroek
+- 3D model printing in Verrebroek
 <!-- LOCAL_ENRICH_END -->

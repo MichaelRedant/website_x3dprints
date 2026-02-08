@@ -27,7 +27,7 @@ In Zulzeke helpen we projecten rond Sint-Jan-in-de-Oliekerk (Zulzeke) sneller vo
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Zulzeke
 
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Zulzeke interessant?
 
 ### Lokale ondernemers
-Kleine series en onderdelen op maat met snelle levering.
+Kleine en grotere series en onderdelen op maat met snelle levering.
 
 ### Onderhoud en herstellingen
 Sterke prints die tegen een stootje kunnen.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,14 +94,13 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Zulzeke?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Zulzeke?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Zulzeke?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Zulzeke
 - [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
 - [3D printen in Kwaremont](/3d-printen-in-kwaremont)
 - [3D printen in Ruien](/3d-printen-in-ruien)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 ---
 
 ## Externe links
@@ -128,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
 - [Buurpagina: 3D printen in Kwaremont](/3d-printen-in-kwaremont)
 - [Buurpagina: 3D printen in Ruien](/3d-printen-in-ruien)
+
+
 
 ## Klantenspotlight
 - Lokale ondernemers en techniekers: kleine reeksen met vaste settings rond Zulzeke centrum.

@@ -15,7 +15,7 @@ Need **3D printing in Outer**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Delivery focus for Outer
 
-We frequently deliver to: Outer.
+We frequently deliver to: Outer, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Outer.
 
 ## What stands out in Outer
 
-- Local SMEs in Outer: tailored PETG/PLA parts for teams around Outer.
-- Common ask: 3D print service Outer; we advise material and finishing for Outer.
-- Delivery focus: Outer.
+- Manufacturing and SMEs around Outer: prototypes, fixtures and housings.
+- Common ask in Outer: custom 3D printing with practical PLA/PETG/TPU advice for Outer.
+- Delivery focus: Outer, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Outer.
 
 ## Recent requests around Outer
 
-- Paint-ready show models for presentations in Outer and Outer.
+- Paint-ready show models for presentations in Outer and the surrounding area.
 - PLA or PETG functional parts for teams in Outer.
-- TPU grips and pads for bikes, tools or fixtures around Outer.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Outer.
 
 ## Useful links near Outer
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,17 +109,17 @@ Send your files today and get a clear, fast proposal for **3D printing in Outer*
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Outer
 
-- Coverage: Outer; delivery from Herzele, pickup available.
+- Coverage: Outer, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Outer.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Customer spotlight
-- Local teams in Outer: small batches with consistent settings near Outer.
-- Common request: 3D print service Outer; we pick material and finish for the use case.
+- SMEs and makers in Outer: fixtures and enclosures.
+- Common request: 3D printing service in Outer; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Outer and Outer.
 
 ## Where we drop off near Outer
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Outer*
 - Education/labs around Outer: lesson-ready prints.
 
 ## Common requests around Outer
-- 3D print service Outer
-- rapid prototyping Outer
-- 3D printing bedrijf Outer
+- 3D printing service in Outer
+- Custom 3D printing in Outer
+- 3D model printing in Outer
 <!-- LOCAL_ENRICH_END -->

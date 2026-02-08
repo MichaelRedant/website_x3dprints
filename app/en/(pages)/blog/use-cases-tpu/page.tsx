@@ -343,7 +343,7 @@ export default function UseCasesTpuEnPage() {
                   and add extra context in the form. We immediately check if TPU is the right choice.
                 </li>
                 <li>
-                  <span className="font-semibold text-slate-900">2. Mini prototype</span> - We print a small batch (1-3 pieces) so you can test fit and
+                  <span className="font-semibold text-slate-900">2. Mini prototype</span> - We print a small to large batch (1-3 pieces) so you can test fit and
                   ergonomics. Feedback follows within 48 hours.
                 </li>
                 <li>

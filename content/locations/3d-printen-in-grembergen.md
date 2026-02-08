@@ -21,7 +21,7 @@ In Grembergen helpen we projecten rond Grembergen sneller vooruit met prints die
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Grembergen
 
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Grembergen** ook ABS, ASA, Nylon of PA-CF voo
 ## Voor wie is 3D printen in Grembergen interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven langs de Dender gebruiken **3D printen in Grembergen** om prototypes te testen en kleine series te produceren.
+Lokale bedrijven langs de Dender gebruiken **3D printen in Grembergen** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve inwoners maken unieke gadgets of miniaturen van het Sas van Grembergen met **3D printen in Grembergen**.
@@ -99,8 +99,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Grembergen?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Grembergen?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Grembergen?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Dendermonde
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
@@ -132,6 +132,12 @@ Benieuwd hoe **3D printen in Grembergen** jouw idee versterkt? Vraag een **grati
 
 ## Nabijgelegen pagina's
 - [Hoofdpagina: 3D printen in Dendermonde](/3d-printen-in-dendermonde)
+
+## Lokale punten in Grembergen
+- Centrum van Grembergen
+- Lokale bedrijvenzone in Grembergen
+- Sporthal in Grembergen
+
 
 ## Lokale spotlight
 - Lokale teams in Grembergen: PLA/PETG onderdelen afgestemd op projecten rond Grembergen.

@@ -1,12 +1,12 @@
 # 3D printing in Wilrijk: local, fast and tailored
 
-Need **3D printing in Wilrijk**? X3DPrints prints in Herzele and ships quickly to Wilrijk and nearby Wilrijk centrum. Local 3D printing for Wilrijk, Wilrijk centrum and Campus Drie Eiken, A12-corridor, Hoboken/Wilrijk grens: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Wilrijk**? X3DPrints prints in Herzele and ships quickly to Wilrijk and nearby Campus Drie Eiken. Local 3D printing for Wilrijk, Campus Drie Eiken and A12-corridor: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Wilrijk teams choose us
 
-- Local delivery to Wilrijk, Wilrijk centrum and Campus Drie Eiken, A12-corridor, Hoboken/Wilrijk grens; pickup in Herzele.
+- Local delivery to Wilrijk, Campus Drie Eiken and A12-corridor; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Wilrijk.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Wilrijk**? X3DPrints prints in Herzele and ships quickly t
 
 ## Areas we serve near Wilrijk
 
-We frequently deliver to: Wilrijk, Wilrijk centrum, Campus Drie Eiken, A12-corridor, Hoboken/Wilrijk grens, Afhalen Herzele.
+We frequently deliver to: Wilrijk, Wilrijk city center, Campus Drie Eiken, A12-corridor, Hoboken/Wilrijk border area, Pickup in Herzele.
 
 ---
 
 ## Projects we help deliver near Wilrijk
 
 - Prototype housings and fixtures used by teams in Wilrijk.
-- Short-run batches that stay consistent for companies near Wilrijk centrum.
-- Replacement brackets and guards for workshops around Campus Drie Eiken.
+- Short-run batches that stay consistent for companies near Campus Drie Eiken.
+- Replacement brackets and guards for workshops around A12-corridor.
 - Display pieces and branded props for events near Wilrijk.
 - Brackets, guards and fixtures tuned for teams in Wilrijk.
 - Demo pieces and props for events near Wilrijk.
@@ -32,9 +32,9 @@ We frequently deliver to: Wilrijk, Wilrijk centrum, Campus Drie Eiken, A12-corri
 
 ## Local spotlight for Wilrijk
 
-- Onderwijs/UAntwerpen Drie Eiken: tailored PETG/PLA parts for teams around Wilrijk centrum.
-- Common ask: 3D print service Wilrijk; we advise material and finishing for Campus Drie Eiken.
-- Delivery focus: Wilrijk, Wilrijk centrum, Campus Drie Eiken.
+- Education and labs around Wilrijk: lesson-ready prints in PLA/PETG.
+- Common ask in Wilrijk: custom 3D printing with practical PLA/PETG/TPU advice for A12-corridor.
+- Delivery focus: Wilrijk, Wilrijk city center, Campus Drie Eiken.
 
 ---
 
@@ -49,16 +49,16 @@ We frequently deliver to: Wilrijk, Wilrijk centrum, Campus Drie Eiken, A12-corri
 ## Who we support around Wilrijk
 
 - Education and labs around Wilrijk: lesson-ready prints in PLA/PETG.
-- SMEs and industry near Wilrijk: fixtures, enclosures and small batches.
+- SMEs and industry near Wilrijk: fixtures, enclosures and small to large batches.
 - Retail/marketing/events in Wilrijk: displays, props and branded pieces.
 
 ---
 
 ## What clients near Wilrijk often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Wilrijk centrum.
+- TPU grips and pads for bikes, tools or fixtures around Campus Drie Eiken.
 - PLA or PETG functional parts for teams in Wilrijk.
-- Paint-ready show models for presentations in Wilrijk and Wilrijk centrum.
+- Paint-ready show models for presentations in Wilrijk and Campus Drie Eiken.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Wilrijk, Wilrijk centrum, Campus Drie Eiken, A12-corri
 
 ## Related pages for Wilrijk
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Wilrij
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Wilrijk
 
-- Coverage: Wilrijk, Wilrijk centrum, Campus Drie Eiken, A12-corridor, Hoboken/Wilrijk grens, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Wilrijk, Wilrijk city center, Campus Drie Eiken, A12-corridor, Hoboken/Wilrijk border area, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Wilrijk.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Spotlight near Wilrijk
-- Onderwijs/UAntwerpen Drie Eiken: fixtures and housings for teams around Wilrijk centrum.
-- Frequent order: 3D print service Wilrijk; we keep settings for reorders.
-- Delivery focus: Wilrijk, Wilrijk centrum, Campus Drie Eiken.
+- Education/labs around Wilrijk: reliable PLA/PETG parts.
+- Frequent order: 3D printing service in Wilrijk; we keep settings for reorders.
+- Delivery focus: Wilrijk, Wilrijk city center, Campus Drie Eiken.
 
 ## Landmarks around Wilrijk
 - Wilrijk town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Wilrij
 - Retail/marketing/events in Wilrijk: displays, signage, props.
 
 ## Frequently asked in Wilrijk
-- 3D print service Wilrijk
-- rapid prototyping Wilrijk
-- 3D printing bedrijf Wilrijk
+- 3D printing service in Wilrijk
+- Custom 3D printing in Wilrijk
+- 3D model printing in Wilrijk
 <!-- LOCAL_ENRICH_END -->

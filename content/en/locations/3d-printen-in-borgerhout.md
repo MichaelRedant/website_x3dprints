@@ -1,12 +1,12 @@
 # 3D printing in Borgerhout: local, fast and tailored
 
-Need **3D printing in Borgerhout**? X3DPrints prints in Herzele and ships quickly to Borgerhout and nearby Turnhoutsebaan. Local 3D printing for Borgerhout, Turnhoutsebaan and Spoor Oost, De Roma, Borgerhout centrum: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Borgerhout**? X3DPrints prints in Herzele and ships quickly to Borgerhout and nearby Turnhoutsebaan. Local 3D printing for Borgerhout, Turnhoutsebaan and Spoor Oost, De Roma: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Borgerhout teams choose us
 
-- Local delivery to Borgerhout, Turnhoutsebaan and Spoor Oost, De Roma, Borgerhout centrum; pickup in Herzele.
+- Local delivery to Borgerhout, Turnhoutsebaan and Spoor Oost, De Roma; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Borgerhout.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,7 +15,7 @@ Need **3D printing in Borgerhout**? X3DPrints prints in Herzele and ships quickl
 
 ## Delivery focus for Borgerhout
 
-We frequently deliver to: Borgerhout, Turnhoutsebaan, Spoor Oost, De Roma, Borgerhout centrum, Afhalen Herzele.
+We frequently deliver to: Borgerhout, Turnhoutsebaan, Spoor Oost, De Roma, Borgerhout city center, Pickup in Herzele.
 
 ---
 
@@ -32,8 +32,8 @@ We frequently deliver to: Borgerhout, Turnhoutsebaan, Spoor Oost, De Roma, Borge
 
 ## What stands out in Borgerhout
 
-- Culturele events en props: tailored PETG/PLA parts for teams around Turnhoutsebaan.
-- Common ask: 3D print service Borgerhout; we advise material and finishing for Spoor Oost.
+- Retail/marketing/events in Borgerhout: displays, props and branded pieces.
+- Common ask in Borgerhout: custom 3D printing with practical PLA/PETG/TPU advice for Spoor Oost.
 - Delivery focus: Borgerhout, Turnhoutsebaan, Spoor Oost.
 
 ---
@@ -49,7 +49,7 @@ We frequently deliver to: Borgerhout, Turnhoutsebaan, Spoor Oost, De Roma, Borge
 ## Sectors we back near Borgerhout
 
 - Retail/marketing/events in Borgerhout: displays, props and branded pieces.
-- Local projects in Borgerhout: Prototypes voor creatieve bureaus
+- Local teams in Borgerhout: custom 3D printing for prototypes and functional parts.
 
 ---
 
@@ -93,10 +93,7 @@ We frequently deliver to: Borgerhout, Turnhoutsebaan, Spoor Oost, De Roma, Borge
 
 ## Useful links near Borgerhout
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -111,7 +108,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Borger
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Borgerhout
 
-- Coverage: Borgerhout, Turnhoutsebaan, Spoor Oost, De Roma, Borgerhout centrum, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Borgerhout, Turnhoutsebaan, Spoor Oost, De Roma, Borgerhout city center, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Borgerhout.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -120,9 +117,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Borger
 - [Parent page: 3D printing in Antwerpen](/en/3d-printen-in-antwerpen)
 
 ## Customer spotlight
-- Culturele events en props: small batches with consistent settings near Turnhoutsebaan.
-- Common request: 3D print service Borgerhout; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Borgerhout and Turnhoutsebaan.
+- Retail/marketing/events in Borgerhout: displays, signage, props.
+- Common request: 3D printing service in Borgerhout; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Turnhoutsebaan and Spoor Oost.
 
 ## Where we drop off near Borgerhout
 - Borgerhout town center
@@ -131,10 +128,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Borger
 
 ## Sectors we back near Borgerhout
 - Retail/marketing/events in Borgerhout: displays, signage, props.
-- Local focus: Prototypes voor creatieve bureaus
+- Local teams in Borgerhout: custom 3D printing for prototypes and functional parts.
 
 ## Common requests around Borgerhout
-- 3D print service Borgerhout
-- rapid prototyping Borgerhout
-- 3D printing bedrijf Borgerhout
+- 3D printing service in Borgerhout
+- Custom 3D printing in Borgerhout
+- 3D model printing in Borgerhout
 <!-- LOCAL_ENRICH_END -->

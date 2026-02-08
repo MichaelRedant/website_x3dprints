@@ -17,7 +17,7 @@
 
 ## Lokale focus in Ledeberg
 
-Werk je in Ledeberg? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Ledeberg.
+Werk je in Ledeberg? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Ledeberg.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Pasmallen en sjablonen voor montage en assemblage.
@@ -38,7 +38,7 @@ Op aanvraag zijn ook ABS, ASA of Nylon mogelijk voor technische projecten.
 ## Voor wie is 3D printen in Ledeberg interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven gebruiken **3D printen in Ledeberg** om productideeën te testen en kleine series te produceren.
+Lokale bedrijven gebruiken **3D printen in Ledeberg** om productideeën te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve bewoners zetten hun ideeën om in tastbare objecten met **3D printen in Ledeberg**.
@@ -95,14 +95,13 @@ Met **rapid prototyping** via **3D printen in Ledeberg** doorloop je sneller de 
 **Welke bestanden kan ik aanleveren voor Ledeberg?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Ledeberg?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Ledeberg?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Ledeberg?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Gent
-- [3D printen in Gent](/3d-printen-in-gent)
 - [3D printen in Desteldonk](/3d-printen-in-desteldonk)
 - [3D printen in Drongen](/3d-printen-in-drongen)
 - [3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
@@ -137,6 +136,12 @@ Benieuwd hoe **3D printen in Ledeberg** jouw idee versterkt? Vraag een **gratis 
 
 ## Gerelateerde buurtpagina's
 - [Hoofdpagina: 3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
+
+## Lokale punten in Ledeberg
+- Centrum van Ledeberg
+- Lokale bedrijvenzone in Ledeberg
+- Sporthal in Ledeberg
+
 
 ## Klantenspotlight
 - Lokale teams in Ledeberg: kleine reeksen met vaste settings rond Ledeberg.

@@ -32,7 +32,7 @@ Met **3D printen in Linkebeek** leveren we prototypes, behuizingen en tooling vo
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor installateurs en kantoren.
-- Kleine series covers en cases voor elektronica en IoT.
+- Kleine en grotere series covers en cases voor elektronica en IoT.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je bestanden via [contact](/contact). Je krijgt snel een voorstel voor **3
 - Linkebeek centrum
 - Holleken
 - R0 zuidrand
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Linkebeek
+
+- Dekking: Linkebeek, Linkebeek centrum, Holleken, Ukkel grens, R0 zuid, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Linkebeek.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Klantenspotlight
+- Retail/events in Linkebeek/Holleken: kleine reeksen met vaste settings rond Linkebeek centrum.
+- Vaak gevraagd: 3D print service Linkebeek; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Linkebeek en Linkebeek centrum.
+
+## Locaties die we bedienen nabij Linkebeek
+- Centrum van Linkebeek
+- Lokale bedrijvenzone in Linkebeek
+- Sporthal in Linkebeek
+
+## Sectorfocus nabij Linkebeek
+- Retail/events in Linkebeek/Holleken
+- Kantoren en installaties in de zuidrand (Linkebeek)
+- Makers en onderwijs in de regio (Linkebeek)
+
+## Typische aanvragen rond Linkebeek
+- 3D print service Linkebeek
+- rapid prototyping Linkebeek
+- 3D printing bedrijf Linkebeek
+<!-- LOCAL_ENRICH_END -->

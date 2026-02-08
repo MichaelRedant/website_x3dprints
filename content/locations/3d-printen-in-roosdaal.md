@@ -32,7 +32,7 @@ Voor **3D printen in Roosdaal** leveren we prototypes, behuizingen en tooling ri
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica.
+- Kleine en grotere series covers en cases voor elektronica.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je bestanden via [contact](/contact). Je krijgt snel een voorstel voor **3
 - Roosdaal centrum
 - Pamel
 - Borchtlombeek
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Roosdaal
+
+- Dekking: Roosdaal, Roosdaal centrum, Pamel, Borchtlombeek, Ninoofsesteenweg-corridor, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Roosdaal.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Spotlight rond Roosdaal
+- Retail/events in Roosdaal en Denderstreek: behuizingen en pasmallen voor teams in Roosdaal centrum.
+- Terugkerende order: 3D print service Roosdaal; we bewaren je instellingen.
+- Leverfocus: Roosdaal, Roosdaal centrum, Pamel.
+
+## Landmarks in de buurt van Roosdaal
+- Centrum van Roosdaal
+- Lokale bedrijvenzone in Roosdaal
+- Sporthal in Roosdaal
+
+## Teams die we ondersteunen rond Roosdaal
+- Retail/events in Roosdaal en Denderstreek
+- KMO's en installateurs langs Ninoofsesteenweg (Roosdaal)
+- Makers en onderwijs in de regio (Roosdaal)
+
+## Wat vaak wordt gevraagd in Roosdaal
+- 3D print service Roosdaal
+- rapid prototyping Roosdaal
+- 3D printing bedrijf Roosdaal
+<!-- LOCAL_ENRICH_END -->

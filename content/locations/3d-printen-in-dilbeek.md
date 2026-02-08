@@ -1,6 +1,6 @@
 # 3D printen in Dilbeek: Vlaamse Rand en R0-corridor
 
-Voor **3D printen in Dilbeek** leveren we prototypes en kleine series richting Groot-Bijgaarden, Schepdaal en Itterbeek. Transparante prijzen, snelle feedback en leveringen langs de Ring.
+Voor **3D printen in Dilbeek** leveren we prototypes en zowel kleine als grotere series richting Groot-Bijgaarden, Schepdaal en Itterbeek. Transparante prijzen, snelle feedback en leveringen langs de Ring.
 
 ---
 
@@ -67,3 +67,37 @@ In overleg mogelijk. Geef het gewenste venster mee in je aanvraag.
 - Groot-Bijgaarden
 - Schepdaal
 - Itterbeek
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Dilbeek
+
+- Dekking: Dilbeek, Dilbeek centrum, Groot-Bijgaarden, Schepdaal, Itterbeek, R0-corridor richting Brussel; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Dilbeek.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Marketing en events in de Vlaamse Rand: PLA/PETG onderdelen afgestemd op projecten rond Dilbeek centrum.
+- Vaak gevraagd: 3D print service Dilbeek; we adviseren materiaal en afwerking.
+- Leverfocus: Dilbeek, Dilbeek centrum, Groot-Bijgaarden.
+
+## Plaatsen waar we vaak leveren rond Dilbeek
+- Centrum van Dilbeek
+- Lokale bedrijvenzone in Dilbeek
+- Sporthal in Dilbeek
+
+## Sectoren die we vaak helpen in Dilbeek
+- Marketing en events in de Vlaamse Rand (Dilbeek)
+- KMO's en logistiek langs de R0 (Dilbeek)
+- Retail en makers in Dilbeek, Schepdaal en Itterbeek
+
+## Veelgevraagde zoekopdrachten in Dilbeek
+- 3D print service Dilbeek
+- rapid prototyping Dilbeek
+- 3D printing bedrijf Dilbeek
+<!-- LOCAL_ENRICH_END -->

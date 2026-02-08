@@ -16,7 +16,7 @@ const materialsHref = `/en/materials${utm}#material-suggestion-tool`
 export const metadata: Metadata = {
   title: "How much does 3D printing cost? | X3DPrints Blog",
   description:
-    "See what drives 3D printing cost: material, machine hours, finishing and logistics. Includes example calculation and link to the pricing calculator.",
+    "See what drives 3D printing cost for each 3d model print: material, machine hours, finishing and logistics. Includes example calculation and link to the pricing calculator.",
   alternates: {
     canonical,
     languages: {
@@ -114,7 +114,7 @@ export default function CostArticleEn() {
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600">Pricing guide</p>
           <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">How much does 3D printing cost?</h1>
           <p className="text-lg text-slate-700">
-            A clear breakdown of what drives price: material choice, machine hours, complexity, finishing and logistics. Use it to budget realistically before you request a quote.
+            A clear breakdown of what drives price for every 3d model print: material choice, machine hours, complexity, finishing and logistics. Use it to budget realistically before you request a quote.
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton href={pricingHref} event={{ action: "cta_click", category: "blog_top", label: "pricing_cost_en" }}>

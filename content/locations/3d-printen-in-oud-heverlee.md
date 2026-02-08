@@ -32,7 +32,7 @@ Met **3D printen in Oud-Heverlee** leveren we prototypes, behuizingen en tooling
 
 - Fixtures en behuizingen voor labs en makers.
 - Signage en props voor events in de regio.
-- Kleine series covers en cases voor elektronica.
+- Kleine en grotere series covers en cases voor elektronica.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Oud-Heverlee centrum
 - Blanden en Sint-Joris-Weert
 - Haasrode rand en Meerdaalwoud
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Oud-Heverlee
+
+- Dekking: Oud-Heverlee, Oud-Heverlee centrum, Blanden, Sint-Joris-Weert, Haasrode rand, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Oud-Heverlee.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Klantenspotlight
+- Onderwijs en labs rond Leuven/Oud-Heverlee: kleine reeksen met vaste settings rond Oud-Heverlee centrum.
+- Vaak gevraagd: 3D print service Oud-Heverlee; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Oud-Heverlee en Oud-Heverlee centrum.
+
+## Locaties die we bedienen nabij Oud-Heverlee
+- Centrum van Oud-Heverlee
+- Lokale bedrijvenzone in Oud-Heverlee
+- Sporthal in Oud-Heverlee
+
+## Sectorfocus nabij Oud-Heverlee
+- Onderwijs en labs rond Leuven/Oud-Heverlee
+- Outdoor/events rond Meerdaalwoud (Oud-Heverlee)
+- KMO's en makers in de regio (Oud-Heverlee)
+
+## Typische aanvragen rond Oud-Heverlee
+- 3D print service Oud-Heverlee
+- rapid prototyping Oud-Heverlee
+- 3D printing bedrijf Oud-Heverlee
+<!-- LOCAL_ENRICH_END -->

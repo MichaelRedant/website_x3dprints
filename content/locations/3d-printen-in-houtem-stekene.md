@@ -1,6 +1,6 @@
 # 3D printen in Houtem (Stekene): maatwerk met korte doorlooptijd
 
-**3D printen in Houtem (Stekene)** is ideaal voor prototypes, herstellingen en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Houtem (Stekene)** is ideaal voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -25,7 +25,7 @@
 
 In Houtem (Stekene) combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Kemzeke](/3d-printen-in-kemzeke)
 - [Buurpagina: 3D printen in Klein-Sinaai](/3d-printen-in-klein-sinaai)
 
+
+
 ## Spotlight rond Houtem (Stekene)
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Houtem (Stekene) centrum.
 - Terugkerende order: 3D print service Houtem Stekene; we bewaren je instellingen.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Houtem (Stekene)
 - Lokale makers en ontwerpers (Houtem (Stekene))
-- Kleine series en maatwerk (Houtem (Stekene))
+- Kleine en grotere series en maatwerk (Houtem (Stekene))
 - Verenigingen en onderwijs (Houtem (Stekene))
 
 ## Wat vaak wordt gevraagd in Houtem (Stekene)

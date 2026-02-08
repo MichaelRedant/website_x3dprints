@@ -19,10 +19,6 @@ const nextConfig: NextConfig = {
   // <Image> zonder server optimizer (geen Node runtime)
   images: { unoptimized: true },
 
-  // Redirects doe je via .htaccess op de server
-  async redirects() {
-    return []
-  },
 }
 
 export default nextConfig

@@ -15,7 +15,7 @@ Need **3D printing in Teralfene**? X3DPrints prints in Herzele and ships quickly
 
 ## Delivery focus for Teralfene
 
-We frequently deliver to: Teralfene.
+We frequently deliver to: Teralfene, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Teralfene.
 
 ## What stands out in Teralfene
 
-- Local SMEs in Teralfene: tailored PETG/PLA parts for teams around Teralfene.
-- Common ask: 3D print service Teralfene; we advise material and finishing for Teralfene.
-- Delivery focus: Teralfene.
+- Manufacturing and SMEs around Teralfene: prototypes, fixtures and housings.
+- Common ask in Teralfene: custom 3D printing with practical PLA/PETG/TPU advice for Teralfene.
+- Delivery focus: Teralfene, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Teralfene.
 
 ## Recent requests around Teralfene
 
-- Paint-ready show models for presentations in Teralfene and Teralfene.
+- Paint-ready show models for presentations in Teralfene and the surrounding area.
 - PLA or PETG functional parts for teams in Teralfene.
-- TPU grips and pads for bikes, tools or fixtures around Teralfene.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Teralfene.
 
 ## Useful links near Teralfene
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,17 +109,17 @@ Send your files today and get a clear, fast proposal for **3D printing in Teralf
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Teralfene
 
-- Coverage: Teralfene; delivery from Herzele, pickup available.
+- Coverage: Teralfene, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Teralfene.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Customer spotlight
-- Local teams in Teralfene: small batches with consistent settings near Teralfene.
-- Common request: 3D print service Teralfene; we pick material and finish for the use case.
+- SMEs and makers in Teralfene: fixtures and enclosures.
+- Common request: 3D printing service in Teralfene; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Teralfene and Teralfene.
 
 ## Where we drop off near Teralfene
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Teralf
 - Education/labs around Teralfene: lesson-ready prints.
 
 ## Common requests around Teralfene
-- 3D print service Teralfene
-- rapid prototyping Teralfene
-- 3D printing bedrijf Teralfene
+- 3D printing service in Teralfene
+- Custom 3D printing in Teralfene
+- 3D model printing in Teralfene
 <!-- LOCAL_ENRICH_END -->

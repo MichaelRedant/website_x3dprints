@@ -19,11 +19,11 @@ Voor **3D printen in Smeerebbe-Vloerzegem** levert X3DPrints prototypes en funct
 
 ## Lokale focus in Smeerebbe
 
-Werk je in Smeerebbe? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Smeerebbe? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Ergonomische grips en handgrepen op maat.
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 
 ## Materialen
 
@@ -77,7 +77,13 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Smeerebbe-Vloerzegem
+- Centrum van Smeerebbe-Vloerzegem
+- Lokale bedrijvenzone in Smeerebbe-Vloerzegem
+- Sporthal in Smeerebbe-Vloerzegem
+
 
 ## Spotlight rond Smeerebbe-Vloerzegem
 - Lokale teams in Smeerebbe-Vloerzegem: behuizingen en pasmallen voor teams in Smeerebbe-Vloerzegem.

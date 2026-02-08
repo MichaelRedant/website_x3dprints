@@ -32,7 +32,7 @@ Voor **3D printen in Lubbeek** leveren we prototypes, behuizingen en tooling ric
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica en IoT.
+- Kleine en grotere series covers en cases voor elektronica en IoT.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je bestanden via [contact](/contact). Je krijgt snel een voorstel voor **3
 - Lubbeek centrum
 - Binkom en Pellenberg
 - Korbeek-Lo rand
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Lubbeek
+
+- Dekking: Lubbeek, Lubbeek centrum, Binkom, Pellenberg, Korbeek-Lo rand, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Lubbeek.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Klantenspotlight
+- KMO's en onderwijs in Leuven/Lubbeek: kleine reeksen met vaste settings rond Lubbeek centrum.
+- Vaak gevraagd: 3D print service Lubbeek; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Lubbeek en Lubbeek centrum.
+
+## Locaties die we bedienen nabij Lubbeek
+- Centrum van Lubbeek
+- Lokale bedrijvenzone in Lubbeek
+- Sporthal in Lubbeek
+
+## Sectorfocus nabij Lubbeek
+- KMO's en onderwijs in Leuven/Lubbeek
+- Retail/events in Lubbeek
+- Makers en labs in Hageland (Lubbeek)
+
+## Typische aanvragen rond Lubbeek
+- 3D print service Lubbeek
+- rapid prototyping Lubbeek
+- 3D printing bedrijf Lubbeek
+<!-- LOCAL_ENRICH_END -->

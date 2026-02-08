@@ -32,7 +32,7 @@ Voor **3D printen in Bierbeek** leveren we prototypes, behuizingen en tooling ri
 
 - Brackets en covers voor installaties.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers voor sensoren en elektronica.
+- Kleine en grotere series covers voor sensoren en elektronica.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je bestanden via [contact](/contact). Je krijgt snel een voorstel voor **3
 - Bierbeek centrum
 - Lovenjoel
 - Opvelp en Korbeek-Lo rand
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Bierbeek
+
+- Dekking: Bierbeek, Bierbeek centrum, Lovenjoel, Opvelp, Korbeek-Lo rand, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Bierbeek.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Klantenspotlight
+- Kantoren en KMO's langs E40: kleine reeksen met vaste settings rond Bierbeek centrum.
+- Vaak gevraagd: 3D print service Bierbeek; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Bierbeek en Bierbeek centrum.
+
+## Locaties die we bedienen nabij Bierbeek
+- Centrum van Bierbeek
+- Lokale bedrijvenzone in Bierbeek
+- Sporthal in Bierbeek
+
+## Sectorfocus nabij Bierbeek
+- Kantoren en KMO's langs E40 (Bierbeek)
+- Onderwijs en labs rond Leuven/Bierbeek
+- Makers en retail in Bierbeek
+
+## Typische aanvragen rond Bierbeek
+- 3D print service Bierbeek
+- rapid prototyping Bierbeek
+- 3D printing bedrijf Bierbeek
+<!-- LOCAL_ENRICH_END -->

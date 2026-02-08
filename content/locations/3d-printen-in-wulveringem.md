@@ -53,7 +53,7 @@ Vertel ons waarvoor je print bedoeld is en welk verhaal je wil vertellen. We zor
 
 ## Veelgestelde vragen over 3D printen in Wulveringem
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -74,7 +74,13 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Wulveringem
+- Centrum van Wulveringem
+- Lokale bedrijvenzone in Wulveringem
+- Sporthal in Wulveringem
+
 
 ## Spotlight rond Wulveringem
 - Cultureel erfgoed en musea rond Beauvoorde: behuizingen en pasmallen voor teams in Wulveringem dorpskern.

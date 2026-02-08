@@ -16,7 +16,7 @@ Welkom in Kortrijk Weide en omgeving. We printen prototypes, fixtures en zichtwe
 In Kortrijk helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
 
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 
 ## Materialen en afwerking
@@ -57,7 +57,7 @@ Stuur je STL/STEP via het contactformulier. Vermeld materiaal (PLA/PETG/TPU), ge
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -74,7 +74,13 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Kortrijk
+- Centrum van Kortrijk
+- Lokale bedrijvenzone in Kortrijk
+- Sporthal in Kortrijk
+
 
 ## Spotlight rond Kortrijk
 - Prototyping voor maakbedrijven in Kortrijk/Kuurne: behuizingen en pasmallen voor teams in Kortrijk centrum.

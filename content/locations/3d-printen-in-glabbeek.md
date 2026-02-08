@@ -32,7 +32,7 @@ Met **3D printen in Glabbeek** leveren we prototypes, behuizingen en tooling ric
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica.
+- Kleine en grotere series covers en cases voor elektronica.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Glabbeek centrum
 - Kapellen en Attenrode-Wever
 - Bunsbeek
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Glabbeek
+
+- Dekking: Glabbeek, Glabbeek centrum, Kapellen, Attenrode-Wever, Bunsbeek, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Glabbeek.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Buurpagina: 3D printen in Kapellen](/3d-printen-in-kapellen)
+
+
+
+## Klantenspotlight
+- KMO's en techniekers in Glabbeek: kleine reeksen met vaste settings rond Glabbeek centrum.
+- Vaak gevraagd: 3D print service Glabbeek; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Glabbeek en Glabbeek centrum.
+
+## Locaties die we bedienen nabij Glabbeek
+- Centrum van Glabbeek
+- Lokale bedrijvenzone in Glabbeek
+- Sporthal in Glabbeek
+
+## Sectorfocus nabij Glabbeek
+- KMO's en techniekers in Glabbeek
+- Retail/events in Hageland (Glabbeek)
+- Makers en onderwijs in de regio (Glabbeek)
+
+## Typische aanvragen rond Glabbeek
+- 3D print service Glabbeek
+- rapid prototyping Glabbeek
+- 3D printing bedrijf Glabbeek
+<!-- LOCAL_ENRICH_END -->

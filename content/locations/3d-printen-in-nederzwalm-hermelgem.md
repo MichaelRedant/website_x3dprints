@@ -1,6 +1,6 @@
 # 3D printen in Nederzwalm-Hermelgem: snel maatwerk met lokale service
 
-**3D printen in Nederzwalm-Hermelgem** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Nederzwalm-Hermelgem** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,14 +82,14 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Nederzwalm-Hermelgem
 
-**Kunnen jullie kleine series leveren in Nederzwalm-Hermelgem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Nederzwalm-Hermelgem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Nederzwalm-Hermelgem?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Roborst](/3d-printen-in-roborst)
 - [Hoofdpagina: 3D printen in Rozebeke (Zwalm)](/3d-printen-in-rozebeke-zwalm)
 
+
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Nederzwalm-Hermelgem centrum.
 - Vaak gevraagd: 3D print service Nederzwalm-Hermelgem; we adviseren materiaal en afwerking.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectorfocus nabij Nederzwalm-Hermelgem
 - Lokale makers en ontwerpers (Nederzwalm-Hermelgem)
-- Kleine series en maatwerk (Nederzwalm-Hermelgem)
+- Kleine en grotere series en maatwerk (Nederzwalm-Hermelgem)
 - Verenigingen en onderwijs (Nederzwalm-Hermelgem)
 
 ## Typische aanvragen rond Nederzwalm-Hermelgem

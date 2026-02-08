@@ -15,7 +15,7 @@ X3DPrints ondersteunt Wannegem-Lede met snelle 3D prints voor landbouw, cycling-
 
 - **Landbouw en werkplaats**: PETG kappen, houders en sensorbehuizingen.  
 - **Kassei- en fietsprojecten**: PLA/PETG voor custom signage en props.  
-- **Hobby/educatie**: PLA Matte/Silk voor modellen en kleine series.
+- **Hobby/educatie**: PLA Matte/Silk voor modellen en zowel kleine als grotere series.
 
 
 
@@ -23,7 +23,7 @@ X3DPrints ondersteunt Wannegem-Lede met snelle 3D prints voor landbouw, cycling-
 
 Voor projecten in Wannegem combineren we korte doorlooptijd met strakke afwerking.
 
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 
@@ -52,7 +52,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -65,7 +65,13 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Wannegem-Lede
+- Centrum van Wannegem-Lede
+- Lokale bedrijvenzone in Wannegem-Lede
+- Sporthal in Wannegem-Lede
+
 
 ## Klantenspotlight
 - Lokale teams in Wannegem-Lede: kleine reeksen met vaste settings rond Wannegem-Lede.

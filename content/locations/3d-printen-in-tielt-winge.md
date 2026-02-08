@@ -32,7 +32,7 @@ Met **3D printen in Tielt-Winge** leveren we prototypes, behuizingen en tooling 
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie en onderhoud.
-- Kleine series covers en cases voor elektronica.
+- Kleine en grotere series covers en cases voor elektronica.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Tielt-Winge centrum
 - Houwaart
 - Sint-Joris-Winge en Tielt
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Tielt-Winge
+
+- Dekking: Tielt-Winge, Tielt-Winge centrum, Houwaart, Sint-Joris-Winge, Tielt, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Tielt-Winge.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- KMO's en productie in Hageland: PLA/PETG onderdelen afgestemd op projecten rond Tielt-Winge centrum.
+- Vaak gevraagd: 3D print service Tielt-Winge; we adviseren materiaal en afwerking.
+- Leverfocus: Tielt-Winge, Tielt-Winge centrum, Houwaart.
+
+## Plaatsen waar we vaak leveren rond Tielt-Winge
+- Centrum van Tielt-Winge
+- Lokale bedrijvenzone in Tielt-Winge
+- Sporthal in Tielt-Winge
+
+## Sectoren die we vaak helpen in Tielt-Winge
+- KMO's en productie in Hageland (Tielt-Winge)
+- Retail/events in Tielt-Winge
+- Makers en onderwijs in de regio (Tielt-Winge)
+
+## Veelgevraagde zoekopdrachten in Tielt-Winge
+- 3D print service Tielt-Winge
+- rapid prototyping Tielt-Winge
+- 3D printing bedrijf Tielt-Winge
+<!-- LOCAL_ENRICH_END -->

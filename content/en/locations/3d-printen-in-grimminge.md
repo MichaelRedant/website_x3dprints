@@ -15,14 +15,14 @@ Need **3D printing in Grimminge**? X3DPrints prints in Herzele and ships quickly
 
 ## Where we deliver around Grimminge
 
-We frequently deliver to: Grimminge.
+We frequently deliver to: Grimminge, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Grimminge
 
 - Prototypes and housings supporting teams in Grimminge.
-- Small series with consistent settings for businesses near your region.
+- Small to large series with consistent settings for businesses near your region.
 - Replacement parts and brackets for workshops around Flanders.
 - Promo models, signage and props for events in and around Grimminge.
 - Brackets, guards and fixtures tuned for teams in Grimminge.
@@ -32,9 +32,9 @@ We frequently deliver to: Grimminge.
 
 ## Spotlight: Grimminge projects
 
-- Local SMEs in Grimminge: tailored PETG/PLA parts for teams around Grimminge.
-- Common ask: 3D print service Grimminge; we advise material and finishing for Grimminge.
-- Delivery focus: Grimminge.
+- Manufacturing and SMEs around Grimminge: prototypes, fixtures and housings.
+- Common ask in Grimminge: custom 3D printing with practical PLA/PETG/TPU advice for Grimminge.
+- Delivery focus: Grimminge, Pickup in Herzele.
 
 ---
 
@@ -57,8 +57,8 @@ We frequently deliver to: Grimminge.
 ## Popular requests from Grimminge
 
 - PLA or PETG functional parts for teams in Grimminge.
-- TPU grips and pads for bikes, tools or fixtures around Grimminge.
-- Paint-ready show models for presentations in Grimminge and Grimminge.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
+- Paint-ready show models for presentations in Grimminge and the surrounding area.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Grimminge.
 
 ## FAQ about 3D printing in Grimminge
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -94,10 +94,7 @@ We frequently deliver to: Grimminge.
 
 ## Quick links for Grimminge teams
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Grimmi
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Grimminge
 
-- Coverage: Grimminge; delivery from Herzele, pickup available.
+- Coverage: Grimminge, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Grimminge.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Local spotlight
-- Local teams in Grimminge: PLA/PETG parts tuned for projects near Grimminge.
-- Common request: 3D print service Grimminge; we pick material and finish for the use case.
-- Delivery focus: Grimminge.
+- SMEs and makers in Grimminge: fixtures and enclosures.
+- Common request: 3D printing service in Grimminge; we pick material and finish for the use case.
+- Delivery focus: Grimminge, Pickup in Herzele.
 
 ## Places we often deliver near Grimminge
 - Grimminge town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Grimmi
 - Education/labs around Grimminge: lesson-ready prints.
 
 ## Popular searches from Grimminge
-- 3D print service Grimminge
-- rapid prototyping Grimminge
-- 3D printing bedrijf Grimminge
+- 3D printing service in Grimminge
+- Custom 3D printing in Grimminge
+- 3D model printing in Grimminge
 <!-- LOCAL_ENRICH_END -->

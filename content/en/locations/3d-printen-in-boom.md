@@ -15,7 +15,7 @@ Need **3D printing in Boom**? X3DPrints prints in Herzele and ships quickly to B
 
 ## Areas we serve near Boom
 
-We frequently deliver to: Boom.
+We frequently deliver to: Boom, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Boom.
 
 ## Local spotlight for Boom
 
-- Local SMEs in Boom: tailored PETG/PLA parts for teams around Boom.
-- Common ask: 3D print service Boom; we advise material and finishing for Boom.
-- Delivery focus: Boom.
+- Manufacturing and SMEs around Boom: prototypes, fixtures and housings.
+- Common ask in Boom: custom 3D printing with practical PLA/PETG/TPU advice for Boom.
+- Delivery focus: Boom, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Boom.
 
 ## What clients near Boom often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Boom.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 - PLA or PETG functional parts for teams in Boom.
-- Paint-ready show models for presentations in Boom and Boom.
+- Paint-ready show models for presentations in Boom and the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Boom.
 
 ## Related pages for Boom
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Boom**
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Boom
 
-- Coverage: Boom; delivery from Herzele, pickup available.
+- Coverage: Boom, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Boom.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Spotlight near Boom
-- Local teams in Boom: fixtures and housings for teams around Boom.
-- Frequent order: 3D print service Boom; we keep settings for reorders.
-- Delivery focus: Boom.
+- SMEs and makers in Boom: fixtures and enclosures.
+- Frequent order: 3D printing service in Boom; we keep settings for reorders.
+- Delivery focus: Boom, Pickup in Herzele.
 
 ## Landmarks around Boom
 - Boom town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Boom**
 - Education/labs around Boom: lesson-ready prints.
 
 ## Frequently asked in Boom
-- 3D print service Boom
-- rapid prototyping Boom
-- 3D printing bedrijf Boom
+- 3D printing service in Boom
+- Custom 3D printing in Boom
+- 3D model printing in Boom
 <!-- LOCAL_ENRICH_END -->

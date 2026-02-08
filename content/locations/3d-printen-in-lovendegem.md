@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Zomergem](/3d-printen-in-zomergem)
 - [Hoofdpagina: 3D printen in Ronsele](/3d-printen-in-ronsele)
 
+
+
 ## Spotlight rond Lovendegem
 - Lokale makers en techniekers: behuizingen en pasmallen voor teams in Lovendegem centrum.
 - Terugkerende order: 3D print service Lovendegem; we bewaren je instellingen.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Lovendegem
 - Lokale makers en techniekers (Lovendegem)
-- Kleine series en maatwerk (Lovendegem)
+- Kleine en grotere series en maatwerk (Lovendegem)
 - Verenigingen en scholen (Lovendegem)
 
 ## Wat vaak wordt gevraagd in Lovendegem

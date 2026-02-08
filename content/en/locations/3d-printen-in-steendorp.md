@@ -1,12 +1,12 @@
 # 3D printing in Steendorp: local, fast and tailored
 
-Need **3D printing in Steendorp**? X3DPrints prints in Herzele and ships quickly to Steendorp and nearby Steendorp centrum. Local 3D printing for Steendorp, Steendorp centrum and Temse, Tielrode, Elversele: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Steendorp**? X3DPrints prints in Herzele and ships quickly to Steendorp and nearby Temse. Local 3D printing for Steendorp, Temse and Tielrode, Elversele: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Steendorp teams choose us
 
-- Local delivery to Steendorp, Steendorp centrum and Temse, Tielrode, Elversele; pickup in Herzele.
+- Local delivery to Steendorp, Temse and Tielrode, Elversele; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Steendorp.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Steendorp**? X3DPrints prints in Herzele and ships quickly
 
 ## Delivery focus for Steendorp
 
-We frequently deliver to: Steendorp, Steendorp centrum, Temse, Tielrode, Elversele, Afhalen Herzele.
+We frequently deliver to: Steendorp, Steendorp city center, Temse, Tielrode, Elversele, Pickup in Herzele.
 
 ---
 
 ## What teams near Steendorp ask us to make
 
 - Pilot runs for SMEs around Steendorp, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Steendorp centrum.
-- TPU dampers and grips for gear used in Temse.
+- Functional PETG parts for maintenance teams near Temse.
+- TPU dampers and grips for gear used in Tielrode.
 - Presentation models and mockups for pitches around Steendorp.
 - Brackets, guards and fixtures tuned for teams in Steendorp.
 - Demo pieces and props for events near Steendorp.
@@ -32,9 +32,9 @@ We frequently deliver to: Steendorp, Steendorp centrum, Temse, Tielrode, Elverse
 
 ## What stands out in Steendorp
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Steendorp centrum.
-- Common ask: 3D print service Steendorp; we advise material and finishing for Temse.
-- Delivery focus: Steendorp, Steendorp centrum, Temse.
+- Makers and product teams in Steendorp: iterative prototyping and short-run production.
+- Common ask in Steendorp: custom 3D printing with practical PLA/PETG/TPU advice for Tielrode.
+- Delivery focus: Steendorp, Steendorp city center, Temse.
 
 ---
 
@@ -48,17 +48,16 @@ We frequently deliver to: Steendorp, Steendorp centrum, Temse, Tielrode, Elverse
 
 ## Sectors we back near Steendorp
 
-- Local projects in Steendorp: Lokale makers en ontwerpers
-- Local projects in Steendorp: Kleine series en maatwerk
+- Makers and product teams in Steendorp: iterative prototyping and short-run production.
 - Education and labs around Steendorp: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Steendorp
 
-- Paint-ready show models for presentations in Steendorp and Steendorp centrum.
+- Paint-ready show models for presentations in Steendorp and Temse.
 - PLA or PETG functional parts for teams in Steendorp.
-- TPU grips and pads for bikes, tools or fixtures around Steendorp centrum.
+- TPU grips and pads for bikes, tools or fixtures around Temse.
 
 ---
 
@@ -97,7 +96,6 @@ We frequently deliver to: Steendorp, Steendorp centrum, Temse, Tielrode, Elverse
 - [3D printing in Temse](/en/3d-printen-in-temse)
 - [3D printing in Tielrode](/en/3d-printen-in-tielrode)
 - [3D printing in Elversele](/en/3d-printen-in-elversele)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Steend
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Steendorp
 
-- Coverage: Steendorp, Steendorp centrum, Temse, Tielrode, Elversele, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Steendorp, Steendorp city center, Temse, Tielrode, Elversele, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Steendorp.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +121,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Steend
 - [Nearby: 3D printing in Elversele](/en/3d-printen-in-elversele)
 
 ## Customer spotlight
-- Lokale makers en ontwerpers: small batches with consistent settings near Steendorp centrum.
-- Common request: 3D print service Steendorp; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Steendorp and Steendorp centrum.
+- Makers and product teams in Steendorp: iterative prototyping and short-run production.
+- Common request: 3D printing service in Steendorp; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Temse and Tielrode.
 
 ## Where we drop off near Steendorp
 - Steendorp town center
@@ -133,12 +131,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Steend
 - sports hall in Steendorp
 
 ## Sectors we back near Steendorp
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in Steendorp: iterative prototyping and short-run production.
 - Education/labs around Steendorp: reliable PLA/PETG parts.
 
 ## Common requests around Steendorp
-- 3D print service Steendorp
-- rapid prototyping Steendorp
-- 3D printing bedrijf Steendorp
+- 3D printing service in Steendorp
+- Custom 3D printing in Steendorp
+- 3D model printing in Steendorp
 <!-- LOCAL_ENRICH_END -->

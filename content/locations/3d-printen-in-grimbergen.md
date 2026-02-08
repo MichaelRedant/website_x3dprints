@@ -35,7 +35,7 @@ We kennen de mix van events, retail en industrie in de Noordrand. Daardoor stemm
 
 - Props en signage voor events in Strombeek-Bever.
 - Technische passtukken voor kanaalzone en Ring Noord.
-- Kleine series behuizingen voor kantoren en IoT-projecten.
+- Kleine en grotere series behuizingen voor kantoren en IoT-projecten.
 
 ---
 
@@ -67,3 +67,37 @@ Ja. We bewaren instellingen en leveren batches met dezelfde kwaliteit.
 - Strombeek-Bever
 - Kanaalzone en Ring Noord
 - Westrode en Humbeek
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Grimbergen
+
+- Dekking: Grimbergen, Grimbergen centrum, Strombeek-Bever, Westrode, Humbeek, Kanaalzone en Ring Noord; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Grimbergen.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Klantenspotlight
+- Events en retail in de Noordrand: kleine reeksen met vaste settings rond Grimbergen centrum.
+- Vaak gevraagd: 3D print service Grimbergen; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Grimbergen en Grimbergen centrum.
+
+## Locaties die we bedienen nabij Grimbergen
+- Centrum van Grimbergen
+- Lokale bedrijvenzone in Grimbergen
+- Sporthal in Grimbergen
+
+## Sectorfocus nabij Grimbergen
+- Events en retail in de Noordrand (Grimbergen)
+- Industrie en logistiek langs kanaal en Ring (Grimbergen)
+- Onderwijs en makers in Grimbergen
+
+## Typische aanvragen rond Grimbergen
+- 3D print service Grimbergen
+- rapid prototyping Grimbergen
+- 3D printing bedrijf Grimbergen
+<!-- LOCAL_ENRICH_END -->

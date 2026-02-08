@@ -1,12 +1,12 @@
 # 3D printing in Moregem: local, fast and tailored
 
-Need **3D printing in Moregem**? X3DPrints prints in Herzele and ships quickly to Moregem and nearby Moregem centrum. Local 3D printing for Moregem, Moregem centrum and Wortegem-Petegem, Wortegem, Petegem-aan-de-Schelde: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Moregem**? X3DPrints prints in Herzele and ships quickly to Moregem and nearby Wortegem-Petegem. Local 3D printing for Moregem, Wortegem-Petegem and Wortegem, Petegem-aan-de-Schelde: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Moregem teams choose us
 
-- Local delivery to Moregem, Moregem centrum and Wortegem-Petegem, Wortegem, Petegem-aan-de-Schelde; pickup in Herzele.
+- Local delivery to Moregem, Wortegem-Petegem and Wortegem, Petegem-aan-de-Schelde; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Moregem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Moregem**? X3DPrints prints in Herzele and ships quickly t
 
 ## Delivery focus for Moregem
 
-We frequently deliver to: Moregem, Moregem centrum, Wortegem-Petegem, Wortegem, Petegem-aan-de-Schelde, Elsegem, Afhalen Herzele.
+We frequently deliver to: Moregem, Moregem city center, Wortegem-Petegem, Wortegem, Petegem-aan-de-Schelde, Elsegem, Pickup in Herzele.
 
 ---
 
 ## What teams near Moregem ask us to make
 
 - Pilot runs for SMEs around Moregem, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Moregem centrum.
-- TPU dampers and grips for gear used in Wortegem-Petegem.
+- Functional PETG parts for maintenance teams near Wortegem-Petegem.
+- TPU dampers and grips for gear used in Wortegem.
 - Presentation models and mockups for pitches around Moregem.
 - Brackets, guards and fixtures tuned for teams in Moregem.
 - Demo pieces and props for events near Moregem.
@@ -32,9 +32,9 @@ We frequently deliver to: Moregem, Moregem centrum, Wortegem-Petegem, Wortegem, 
 
 ## What stands out in Moregem
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Moregem centrum.
-- Common ask: 3D print service Moregem; we advise material and finishing for Wortegem-Petegem.
-- Delivery focus: Moregem, Moregem centrum, Wortegem-Petegem.
+- Makers and product teams in Moregem: iterative prototyping and short-run production.
+- Common ask in Moregem: custom 3D printing with practical PLA/PETG/TPU advice for Wortegem.
+- Delivery focus: Moregem, Moregem city center, Wortegem-Petegem.
 
 ---
 
@@ -48,17 +48,16 @@ We frequently deliver to: Moregem, Moregem centrum, Wortegem-Petegem, Wortegem, 
 
 ## Sectors we back near Moregem
 
-- Local projects in Moregem: Lokale makers en ontwerpers
-- Local projects in Moregem: Kleine series en maatwerk
+- Makers and product teams in Moregem: iterative prototyping and short-run production.
 - Education and labs around Moregem: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Moregem
 
-- Paint-ready show models for presentations in Moregem and Moregem centrum.
+- Paint-ready show models for presentations in Moregem and Wortegem-Petegem.
 - PLA or PETG functional parts for teams in Moregem.
-- TPU grips and pads for bikes, tools or fixtures around Moregem centrum.
+- TPU grips and pads for bikes, tools or fixtures around Wortegem-Petegem.
 
 ---
 
@@ -97,7 +96,7 @@ We frequently deliver to: Moregem, Moregem centrum, Wortegem-Petegem, Wortegem, 
 - [3D printing in Wortegem-Petegem](/en/3d-printen-in-wortegem-petegem)
 - [3D printing in Wortegem](/en/3d-printen-in-wortegem)
 - [3D printing in Petegem-aan-de-Schelde](/en/3d-printen-in-petegem-aan-de-schelde)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [3D printing in Elsegem](/en/3d-printen-in-elsegem)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Morege
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Moregem
 
-- Coverage: Moregem, Moregem centrum, Wortegem-Petegem, Wortegem, Petegem-aan-de-Schelde, Elsegem; delivery from Herzele, pickup available.
+- Coverage: Moregem, Moregem city center, Wortegem-Petegem, Wortegem, Petegem-aan-de-Schelde, Elsegem; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Moregem.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +123,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Morege
 - [Nearby: 3D printing in Elsegem](/en/3d-printen-in-elsegem)
 
 ## Customer spotlight
-- Lokale makers en ontwerpers: small batches with consistent settings near Moregem centrum.
-- Common request: 3D print service Moregem; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Moregem and Moregem centrum.
+- Makers and product teams in Moregem: iterative prototyping and short-run production.
+- Common request: 3D printing service in Moregem; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Wortegem-Petegem and Wortegem.
 
 ## Where we drop off near Moregem
 - Moregem town center
@@ -134,12 +133,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Morege
 - sports hall in Moregem
 
 ## Sectors we back near Moregem
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in Moregem: iterative prototyping and short-run production.
 - Education/labs around Moregem: reliable PLA/PETG parts.
 
 ## Common requests around Moregem
-- 3D print service Moregem
-- rapid prototyping Moregem
-- 3D printing bedrijf Moregem
+- 3D printing service in Moregem
+- Custom 3D printing in Moregem
+- 3D model printing in Moregem
 <!-- LOCAL_ENRICH_END -->

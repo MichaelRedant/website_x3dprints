@@ -25,7 +25,7 @@ const COPY = {
     },
     brand: {
       description:
-        "3D-printstudio uit Herzele (regio Gent). Prototypes en kleine series met nette afwerking. Onderdeel van Xinudesign.",
+        "3D-printstudio uit Herzele (regio Gent). Prototypes en zowel kleine als grotere series met nette afwerking. Onderdeel van Xinudesign.",
     },
     contact: {
       title: "Contact",
@@ -72,7 +72,7 @@ const COPY = {
     },
     brand: {
       description:
-        "3D printing studio in Herzele (Ghent region). Prototypes and small batches with clean finish. Part of Xinudesign.",
+        "3D printing studio in Herzele (Ghent region). Prototypes and small to large batches with clean finish. Part of Xinudesign.",
     },
     contact: {
       title: "Contact",

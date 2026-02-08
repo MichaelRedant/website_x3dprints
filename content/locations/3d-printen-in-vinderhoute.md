@@ -1,6 +1,6 @@
 # 3D printen in Vinderhoute: maatwerk met snelle levering
 
-**3D printen in Vinderhoute** (Lievegem) is ideaal voor prototypes en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Vinderhoute** (Lievegem) is ideaal voor prototypes en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Vinderhoute interessant?
 
 ### Lokale ondernemers
-Kleine series en onderdelen op maat met snelle levering.
+Kleine en grotere series en onderdelen op maat met snelle levering.
 
 ### Onderhoud en herstellingen
 Sterke onderdelen die tegen een stootje kunnen.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 **Welke bestanden kan ik aanleveren voor Vinderhoute?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Vinderhoute?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Vinderhoute?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Vinderhoute?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -101,7 +101,6 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 - [3D printen in Lievegem](/3d-printen-in-lievegem)
 - [3D printen in Lovendegem](/3d-printen-in-lovendegem)
 - [3D printen in Zomergem](/3d-printen-in-zomergem)
-- [3D printen in Gent](/3d-printen-in-gent)
 ---
 
 ## Externe links
@@ -128,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Lievegem](/3d-printen-in-lievegem)
 - [Buurpagina: 3D printen in Lovendegem](/3d-printen-in-lovendegem)
 - [Buurpagina: 3D printen in Zomergem](/3d-printen-in-zomergem)
+
+
 
 ## Lokale spotlight
 - Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Vinderhoute centrum.

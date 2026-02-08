@@ -13,7 +13,7 @@ import { buildHowToSchema } from "@/lib/seo"
 export const metadata: Metadata = {
   title: "Realtime 3D Model Viewer voor STL's | X3DPrints",
   description:
-    "Upload een STL, OBJ of GLB en bekijk meteen hoe je 3D print oogt. Alles gebeurt lokaal in je browser met validatie, privacy en snelle interactie.",
+    "Upload een STL, OBJ of GLB en check direct je 3D model printen workflow. Valideer 3D print onderdelen lokaal in de browser met privacy en snelle interactie.",
   alternates: {
     canonical: "https://www.x3dprints.be/viewer/",
     languages: {
@@ -111,11 +111,11 @@ export default function Page() {
               <span className="h-2 w-2 rounded-full bg-emerald-400" aria-hidden /> Nieuw: 3D preview
             </p>
             <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              Bekijk je 3D print realtime in de browser
+              Bekijk je 3D model en 3D print realtime in de browser
             </h1>
             <p className="mt-6 text-lg text-slate-600">
-              Upload je 3D-model en ontdek hoe de print eruitziet in een glanzende WebGL-viewer. Geen wachttijd, geen upload naar
-              servers - wel inzicht in meshkwaliteit en een ervaring in X3DPrints-stijl.
+              Upload je 3D-model en ontdek hoe de print eruitziet in een glanzende WebGL-viewer. Ideaal om 3D model printen
+              vooraf te controleren en 3D print onderdelen te valideren. Geen wachttijd, geen upload naar servers.
             </p>
             <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <ul className="mt-8 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
@@ -189,7 +189,7 @@ export default function Page() {
             <h2 className="text-2xl font-semibold text-slate-900">Van preview naar print</h2>
             <p className="mt-4 max-w-2xl text-base text-slate-600">
               Gebruik de viewer als snelle sanity-check. Zo kunnen we samen efficienter schakelen wanneer je een offerte
-              of maatwerktraject aanvraagt.
+              of maatwerktraject aanvraagt bij een 3D print service Belgie.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {workflow.map((item) => (

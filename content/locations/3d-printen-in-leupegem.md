@@ -65,7 +65,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Leupegem (Oudenaarde)
+- Centrum van Leupegem (Oudenaarde)
+- Lokale bedrijvenzone in Leupegem (Oudenaarde)
+- Sporthal in Leupegem (Oudenaarde)
+
 
 ## Spotlight rond Leupegem (Oudenaarde)
 - Lokale teams in Leupegem (Oudenaarde): behuizingen en pasmallen voor teams in Leupegem (Oudenaarde).

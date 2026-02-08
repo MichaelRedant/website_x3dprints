@@ -1,6 +1,6 @@
 # 3D printen in Berchem (Kluisbergen): maatwerk met korte doorlooptijd
 
-**3D printen in Berchem (Kluisbergen)** is ideaal voor prototypes en kleine series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Berchem (Kluisbergen)** is ideaal voor prototypes en zowel kleine als grotere series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 **Welke bestanden kan ik aanleveren voor Berchem (Kluisbergen)?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Berchem (Kluisbergen)?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Berchem (Kluisbergen)?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Berchem (Kluisbergen)?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -101,7 +101,6 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 - [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
 - [3D printen in Kwaremont](/3d-printen-in-kwaremont)
 - [3D printen in Ruien](/3d-printen-in-ruien)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 ---
 
 ## Externe links
@@ -128,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
 - [Buurpagina: 3D printen in Kwaremont](/3d-printen-in-kwaremont)
 - [Buurpagina: 3D printen in Ruien](/3d-printen-in-ruien)
+
+
 
 ## Klantenspotlight
 - Lokale makers en techniekers: kleine reeksen met vaste settings rond Berchem centrum.

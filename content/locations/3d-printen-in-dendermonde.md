@@ -70,7 +70,7 @@ Onze **rapid prototyping service in Dendermonde** stelt u in staat om uw ontwerp
 De stad [Dendermonde](https://www.dendermonde.be), met haar unieke ligging aan Dender en Schelde, haar rijke geschiedenis en de legende van het Ros Beiaard, is een broedplaats voor creativiteit en ondernemerschap. Met **3D printen in Dendermonde** kunt u:
 
 -   Unieke, gepersonaliseerde items creëren die de ziel van Dendermonde vangen.
--   Snel prototypes en kleine series produceren voor lokale bedrijven en start-ups.
+-   Snel prototypes en zowel kleine als grotere series produceren voor lokale bedrijven en start-ups.
 -   Specifieke onderdelen laten maken die snel beschikbaar moeten zijn voor reparaties of projecten.
 -   Educatieve projecten ondersteunen met tastbare leermiddelen die inspireren en de jeugd betrekken bij technologie.
 
@@ -108,8 +108,8 @@ De stad [Dendermonde](https://www.dendermonde.be), met haar unieke ligging aan D
 **Welke bestanden kan ik aanleveren voor dendermonde?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in dendermonde?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in dendermonde?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in dendermonde?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -141,6 +141,12 @@ Benieuwd hoe **3D printen in Dendermonde** uw project kan versnellen of uw idee 
 - [Buurpagina: 3D printen in Baasrode](/3d-printen-in-baasrode)
 - [Buurpagina: 3D printen in Hamme](/3d-printen-in-hamme)
 - [Hoofdpagina: 3D printen in Denderbelle](/3d-printen-in-denderbelle)
+
+## Lokale punten in Dendermonde
+- Centrum van Dendermonde
+- Lokale bedrijvenzone in Dendermonde
+- Sporthal in Dendermonde
+
 
 ## Lokale spotlight
 - Prototyping voor KMO's in Dendermonde/Hamme: PLA/PETG onderdelen afgestemd op projecten rond Dendermonde centrum.

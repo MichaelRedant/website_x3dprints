@@ -14,7 +14,7 @@ Voor **3D printen in Wijnegem** leveren we prototypes en functionele onderdelen 
 
 - ⚡ **Tempo afgestemd op retail en logistiek**: offerte meestal binnen één werkdag, levering in enkele werkdagen.
 
-- 🎯 **Precisie**: strakke toleranties voor mounts, behuizingen en kleine series die meteen moeten passen.
+- 🎯 **Precisie**: strakke toleranties voor mounts, behuizingen en zowel kleine als grotere series die meteen moeten passen.
 
 - 🧱 **Materiaalkeuze per toepassing**: PLA Matte voor zichtwerk, PETG voor robuuste tools, TPU voor flexibele buffers of grips.
 
@@ -28,7 +28,7 @@ Voor **3D printen in Wijnegem** leveren we prototypes en functionele onderdelen 
 
 ## Toepassingen in Wijnegem
 
-- **Retail in Wijnegem Shopping**: display-onderdelen, kassahulpmiddelen en custom producthouders in kleine oplage.
+- **Retail in Wijnegem Shopping**: display-onderdelen, kassahulpmiddelen en custom producthouders in kleine en grotere oplage.
 
 - **Logistiek langs het Albertkanaal**: klemmen, sensorbehuizingen en fixtures die tegen dagelijks gebruik kunnen.
 
@@ -106,7 +106,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Wijnegem
+- Centrum van Wijnegem
+- Lokale bedrijvenzone in Wijnegem
+- Sporthal in Wijnegem
+
 
 ## Spotlight rond Wijnegem
 - Lokale teams in Wijnegem: behuizingen en pasmallen voor teams in Wijnegem.

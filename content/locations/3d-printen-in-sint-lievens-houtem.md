@@ -24,7 +24,7 @@ Wij bieden een complete **3D print service in Sint-Lievens-Houtem**, gericht op 
 In Sint helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
 
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 
 ## Materialen voor elk specifiek project in Sint-Lievens-Houtem
@@ -70,7 +70,7 @@ Onze **rapid prototyping service in Sint-Lievens-Houtem** stelt u in staat om uw
 De gemeente Sint-Lievens-Houtem, met haar rijke tradities, groene landschappen en sterke gemeenschapszin, is een vruchtbare bodem voor nieuwe ideeën en lokale initiatieven. Met **3D printen in Sint-Lievens-Houtem** kunt u:
 
 -   unieke, gepersonaliseerde items creëren die de identiteit van Sint-Lievens-Houtem vangen.
--   snel prototypes en kleine series produceren voor lokale bedrijven en start-ups.
+-   snel prototypes en zowel kleine als grotere series produceren voor lokale bedrijven en start-ups.
 -   specifieke onderdelen laten maken die snel beschikbaar moeten zijn voor reparaties of projecten.
 -   educatieve projecten ondersteunen met tastbare leermiddelen die inspireren en de jeugd betrekken bij technologie.
 
@@ -130,7 +130,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Sint-Lievens-Houtem
+- Centrum van Sint-Lievens-Houtem
+- Lokale bedrijvenzone in Sint-Lievens-Houtem
+- Sporthal in Sint-Lievens-Houtem
+
 
 ## Klantenspotlight
 - Lokale teams in Sint-Lievens-Houtem: kleine reeksen met vaste settings rond Sint-Lievens-Houtem.

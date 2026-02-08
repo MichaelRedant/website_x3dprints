@@ -20,7 +20,7 @@
 In Baardegem helpen we projecten rond Baardegem sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Baardegem
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Baardegem** ook ABS, ASA, Nylon of PA-CF voor
 ## Voor wie is 3D printen in Baardegem interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven rond de Dorpsstraat gebruiken **3D printen in Baardegem** om prototypes te testen en kleine series te produceren.
+Lokale bedrijven rond de Dorpsstraat gebruiken **3D printen in Baardegem** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve inwoners maken unieke gadgets of maquettes van de Molenbeekvallei met **3D printen in Baardegem**.
@@ -103,7 +103,6 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Aalst
-- [3D printen in Aalst](/3d-printen-in-aalst)
 - [3D printen in Erembodegem](/3d-printen-in-erembodegem)
 - [3D printen in Gijzegem](/3d-printen-in-gijzegem)
 - [3D printen in Herdersem](/3d-printen-in-herdersem)
@@ -132,7 +131,13 @@ Benieuwd hoe **3D printen in Baardegem** jouw idee versterkt? Vraag een **gratis
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Baardegem
+- Centrum van Baardegem
+- Lokale bedrijvenzone in Baardegem
+- Sporthal in Baardegem
+
 
 ## Klantenspotlight
 - Lokale teams in Baardegem: kleine reeksen met vaste settings rond Baardegem.

@@ -80,11 +80,66 @@ function unique(list) {
   return out
 }
 
+function containsAny(text, patterns) {
+  return patterns.some((pattern) => text.includes(pattern))
+}
+
+function normalizeAreaForEn(area) {
+  const raw = `${area}`.trim()
+  if (!raw) return ""
+  if (/^afhalen\b/i.test(raw)) return "Pickup in Herzele"
+
+  return raw
+    .replace(/\bindustriezone\b/gi, "industrial zone")
+    .replace(/\bdeelgemeenten\b/gi, "sub-municipal areas")
+    .replace(/\bbuitengebied\b/gi, "outer area")
+    .replace(/\bhoeves\b/gi, "farms")
+    .replace(/\bbedrijventerrein\b/gi, "business park")
+    .replace(/\bbedrijvenpark\b/gi, "business park")
+    .replace(/\bbedrijvenzone\b/gi, "business zone")
+    .replace(/\bcentrum\b/gi, "city center")
+    .replace(/\bdorpskern\b/gi, "village center")
+    .replace(/\bkern\b/gi, "center")
+    .replace(/\s+en\s+/gi, " and ")
+    .replace(/\bomliggende\b/gi, "surrounding")
+    .replace(/\brand\b/gi, "area")
+    .replace(/\bgrens\b/gi, "border area")
+    .replace(/\brichting\b/gi, "towards")
+    .replace(/\s{2,}/g, " ")
+    .trim()
+}
+
+function isGenericCoverageLabel(area, city) {
+  const text = `${area}`.trim().toLowerCase()
+  if (!text) return true
+  if (text === city.toLowerCase()) return true
+  if (text === "pickup in herzele") return true
+  if (text.includes("city center") || text.includes("village center")) return true
+  if (text.includes("industrial zone") || text.includes("business zone")) return true
+  if (text.includes("sub-municipal") || text.includes("outer area")) return true
+  if (text.includes("region") || text.includes("area")) return true
+  return false
+}
+
+function buildCoverageAreasEn(servicedAreas, city) {
+  const translated = unique(
+    [city, ...(servicedAreas || [])]
+      .map((area) => normalizeAreaForEn(area))
+      .filter(Boolean),
+  )
+
+  if (!translated.some((area) => area.toLowerCase() === "pickup in herzele")) {
+    translated.push("Pickup in Herzele")
+  }
+
+  return translated
+}
+
 function pickNeighbours(servicedAreas, city) {
   const neighbours = (servicedAreas || [])
-    .map((a) => a.trim())
+    .map((a) => normalizeAreaForEn(a))
     .filter(Boolean)
-    .filter((a) => a.toLowerCase() !== city.toLowerCase())
+    .filter((a) => !isGenericCoverageLabel(a, city))
   return unique(neighbours).slice(0, 4)
 }
 
@@ -97,25 +152,23 @@ function buildInternalLinks(neighbours, slugSet) {
     }
   }
 
-  const fallbacks = [
-    { href: "/en/3d-printen-in-gent", label: "3D printing in Ghent" },
-    { href: "/en/3d-printen-in-aalst", label: "3D printing in Aalst" },
-    { href: "/en/3d-printen-in-antwerpen", label: "3D printing in Antwerp" },
-    { href: "/en/3d-printen-in-oudenaarde", label: "3D printing in Oudenaarde" },
-  ]
-
-  for (const fb of fallbacks) {
-    if (!links.find((l) => l.href === fb.href)) links.push(fb)
+  if (links.length === 0) {
+    links.push({ href: "/en/locaties", label: "Local 3D printing overview" })
   }
 
   return links.slice(0, 4)
 }
 
 function buildCoverageText(servicedAreas, city) {
-  const clean = unique([city, ...(servicedAreas || []).map((a) => a.trim()).filter(Boolean)])
-  if (clean.length === 1) return city
-  if (clean.length === 2) return `${clean[0]} and ${clean[1]}`
-  return `${clean[0]}, ${clean[1]} and ${clean.slice(2, 5).join(", ")}`
+  const normalized = unique(
+    [city, ...(servicedAreas || [])]
+      .map((a) => normalizeAreaForEn(a))
+      .filter(Boolean),
+  )
+  const specific = normalized.filter((a) => !isGenericCoverageLabel(a, city)).slice(0, 3)
+  if (specific.length === 0) return city
+  if (specific.length === 1) return `${city} and ${specific[0]}`
+  return `${city}, ${specific[0]} and ${specific.slice(1).join(", ")}`
 }
 
 function buildUseCases(city, neighbours, variant) {
@@ -160,16 +213,20 @@ function mapSectorsToEn(sectors, city) {
   const mapped = []
   for (const raw of sectors) {
     const s = `${raw}`.toLowerCase()
-    if (s.includes("kmo") || s.includes("industrie") || s.includes("maak")) {
+    if (containsAny(s, ["kmo", "industrie", "maakbedrijf", "ondernem", "zelfstandig", "techniek", "installateur"])) {
       mapped.push(`SMEs and industry near ${city}: fixtures, enclosures and small batches.`)
-    } else if (s.includes("marketing") || s.includes("retail") || s.includes("events") || s.includes("evenement")) {
+    } else if (containsAny(s, ["marketing", "retail", "events", "event", "evenement", "horeca", "cultuur"])) {
       mapped.push(`Retail/marketing/events in ${city}: displays, props and branded pieces.`)
-    } else if (s.includes("school") || s.includes("onderwijs") || s.includes("lab") || s.includes("stem")) {
+    } else if (containsAny(s, ["school", "onderwijs", "lab", "stem", "vereniging"])) {
       mapped.push(`Education and labs around ${city}: lesson-ready prints in PLA/PETG.`)
-    } else if (s.includes("landbouw") || s.includes("agro")) {
+    } else if (containsAny(s, ["landbouw", "agro", "bosbeheer", "polder"])) {
       mapped.push(`Agri/landscape projects near ${city}: functional PETG parts and guards.`)
+    } else if (containsAny(s, ["maker", "ontwerp", "creatief", "maatwerk", "kleine series", "hobby"])) {
+      mapped.push(`Makers and product teams in ${city}: iterative prototyping and short-run production.`)
+    } else if (containsAny(s, ["herstelling", "repar", "onderhoud"])) {
+      mapped.push(`Maintenance and repair teams in ${city}: durable replacement parts and brackets.`)
     } else {
-      mapped.push(`Local projects in ${city}: ${raw}`)
+      mapped.push(`Local teams in ${city}: custom 3D printing for prototypes and functional parts.`)
     }
   }
   return unique(mapped).slice(0, 4)
@@ -217,13 +274,12 @@ const FAQ_VARIANTS = [
 
 function buildSpotlight(loc, coverageList) {
   const city = loc.city
-  const sector = Array.isArray(loc.sectors) && loc.sectors.length > 0 ? loc.sectors[0] : `Local SMEs in ${city}`
-  const phrase = Array.isArray(loc.relatedPhrases) && loc.relatedPhrases.length > 0 ? loc.relatedPhrases[0] : `3D printing in ${city}`
-  const area = coverageList[1] || coverageList[0] || city
-  const secondary = coverageList[2] || city
+  const sector = mapSectorsToEn(loc.sectors, city)[0] ?? `SMEs and makers in ${city}: prototypes and short runs.`
+  const focused = coverageList.filter((a) => !isGenericCoverageLabel(a, city))
+  const secondary = focused[1] || focused[0] || city
   return [
-    `- ${sector}: tailored PETG/PLA parts for teams around ${area}.`,
-    `- Common ask: ${phrase}; we advise material and finishing for ${secondary}.`,
+    `- ${sector}`,
+    `- Common ask in ${city}: custom 3D printing with practical PLA/PETG/TPU advice for ${secondary}.`,
     `- Delivery focus: ${coverageList.slice(0, 3).join(", ") || city}.`,
   ]
 }
@@ -231,22 +287,22 @@ function buildSpotlight(loc, coverageList) {
 function renderLocation(loc, slugSet) {
   const city = loc.city || deriveCityFromSlug(loc.slug)
   const neighbours = pickNeighbours(loc.servicedAreas, city)
-  const coverage = buildCoverageText(loc.servicedAreas, city)
+  const coverageList = buildCoverageAreasEn(loc.servicedAreas, city).slice(0, 8)
+  const coverage = buildCoverageText(coverageList.slice(1), city)
   const variant = hashSlug(loc.slug) % 3
   const useCases = buildUseCases(city, neighbours, variant)
   const neighbourText = neighbours.length > 0 ? ` and nearby ${neighbours[0]}` : ""
   const internalLinks = buildInternalLinks(neighbours, slugSet)
-  const coverageList = unique([city, ...(loc.servicedAreas || [])].map((v) => v.trim()).filter(Boolean)).slice(0, 8)
 
-  const primaryArea = coverageList[0] || city
-  const secondaryArea = coverageList[1] || city
+  const focusedAreas = coverageList.filter((a) => !isGenericCoverageLabel(a, city))
+  const secondaryArea = focusedAreas[0] || "the surrounding area"
 
   const sectorLines = mapSectorsToEn(loc.sectors, city)
 
   const requestBase = [
-    `PLA or PETG functional parts for teams in ${primaryArea}.`,
+    `PLA or PETG functional parts for teams in ${city}.`,
     `TPU grips and pads for bikes, tools or fixtures around ${secondaryArea}.`,
-    `Paint-ready show models for presentations in ${primaryArea} and ${secondaryArea}.`,
+    `Paint-ready show models for presentations in ${city} and ${secondaryArea}.`,
   ]
   const requestLines =
     variant === 1

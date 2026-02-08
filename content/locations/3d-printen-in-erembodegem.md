@@ -17,10 +17,10 @@
 
 ## Lokale focus in Erembodegem
 
-Werk je in Erembodegem? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Erembodegem.
+Werk je in Erembodegem? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Erembodegem.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Erembodegem
@@ -38,7 +38,7 @@ Andere materialen zoals ABS, ASA, Nylon en PA-CF zijn op aanvraag mogelijk voor 
 ## Voor wie is 3D printen in Erembodegem interessant?
 
 ### Ondernemers en zelfstandigen
-Bedrijven rond de Essestraat en de Denderlaan gebruiken **3D printen in Erembodegem** om prototypes te testen en kleine series te produceren.
+Bedrijven rond de Essestraat en de Denderlaan gebruiken **3D printen in Erembodegem** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve inwoners realiseren unieke gadgets of vervangonderdelen voor historische woningen dankzij **3D printen in Erembodegem**.
@@ -133,6 +133,12 @@ Benieuwd hoe **3D printen in Erembodegem** jouw idee versterkt? Vraag een **grat
 
 ## Dichtbij gelegen locaties
 - [Hoofdpagina: 3D printen in Aalst](/3d-printen-in-aalst)
+
+## Lokale punten in Erembodegem
+- Centrum van Erembodegem
+- Lokale bedrijvenzone in Erembodegem
+- Sporthal in Erembodegem
+
 
 ## Spotlight rond Erembodegem
 - Lokale teams in Erembodegem: behuizingen en pasmallen voor teams in Erembodegem.

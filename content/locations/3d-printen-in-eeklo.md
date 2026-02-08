@@ -1,6 +1,6 @@
 # 3D printen in Eeklo: snel van idee naar resultaat
 
-**3D printen in Eeklo** is ideaal voor prototypes, maatwerk en kleine series in het Meetjesland. X3DPrints levert vanuit Herzele met persoonlijk advies, korte doorlooptijd en strakke afwerking.
+**3D printen in Eeklo** is ideaal voor prototypes, maatwerk en zowel kleine als grotere series in het Meetjesland. X3DPrints levert vanuit Herzele met persoonlijk advies, korte doorlooptijd en strakke afwerking.
 
 ---
 
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Eeklo interessant?
 
 ### Lokale bedrijven en zelfstandigen
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Retail en horeca
 Displays, verpakkingen en presentatiemodellen op maat.
@@ -82,7 +82,7 @@ Test uw ontwerp snel, optimaliseer en bespaar tijd op elke iteratie.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test uw ontwerp snel, optimaliseer en bespaar tijd op elke iteratie.
 **Welke bestanden kan ik aanleveren voor Eeklo?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Eeklo?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Eeklo?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Eeklo?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -100,7 +100,6 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 ## Interne links rond 3D printen in Eeklo
 - [3D printen in Maldegem](/3d-printen-in-maldegem)
 - [3D printen in Assenede](/3d-printen-in-assenede)
-- [3D printen in Gent](/3d-printen-in-gent)
 ---
 
 ## Externe links
@@ -126,6 +125,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 ## Dichtbij gelegen locaties
 - [Buurpagina: 3D printen in Maldegem](/3d-printen-in-maldegem)
 - [Buurpagina: 3D printen in Assenede](/3d-printen-in-assenede)
+
+
 
 ## Spotlight rond Eeklo
 - KMO's en zelfstandigen in het Meetjesland: behuizingen en pasmallen voor teams in Eeklo centrum.

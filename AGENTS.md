@@ -151,6 +151,9 @@ Deze gids definieert rollen, eigenaarschap, kwaliteitsafspraken, checklists en r
   - Toon "laatst bijgewerkt" zichtbaar op de pagina én houd sitemap `lastModified` up-to-date.
 - Robots & sitemap aanwezig (`app/robots.ts`, `app/sitemap.ts`).
 - Robots moeten AI-crawlers expliciet toelaten: `GPTBot` en `Google-Extended` mogen content crawlen (behalve expliciet private routes).
+- Keyword governance: houd de actuele keyword export in `lib/Keyword Stats *.csv` en laat `npm run check:seo:keywords` meedraaien om regressies op money pages vroeg te detecteren.
+- Local keyword governance: laat `npm run check:seo:location-keywords` meedraaien zodat elke locatiepagina minimaal lokale intent (`3d printen in <stad>`/`3d printing in <city>`) behoudt en CSV-city keywords bewaakt worden.
+- Auto-fix bij regressie: gebruik `npm run fix:seo:location-keywords` om ontbrekende lokale keywordsignalen op locatiepagina's veilig terug te plaatsen, daarna altijd `npm run check:seo:location-keywords`.
 
 ---
 
@@ -242,6 +245,9 @@ npm run dev     # lokale ontwikkeling
 npm run build   # productie build
 npm run start   # serve build (lokale test)
 npm run lint    # eslint (als geconfigureerd)
+npm run check:seo # volledige SEO regressiecheck (incl. keywords)
+npm run check:seo:location-keywords # lokale keyworddekking op locatiepagina's
+npm run fix:seo:location-keywords # herstel ontbrekende lokale keywordsignalen op locatiepagina's
 ```
 
 Node 20 aanhouden in CI en hosting.

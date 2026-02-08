@@ -21,7 +21,7 @@ Voor Drongen leveren we snel en denken we mee over sterkte en afwerking, ideaal 
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Drongen
 
@@ -38,7 +38,7 @@ Op aanvraag zijn ook ABS, ASA of Nylon mogelijk voor technische projecten.
 ## Voor wie is 3D printen in Drongen interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven gebruiken **3D printen in Drongen** om productideeën te testen en kleine series te produceren.
+Lokale bedrijven gebruiken **3D printen in Drongen** om productideeën te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve bewoners zetten hun ideeën om in tastbare objecten met **3D printen in Drongen**.
@@ -98,8 +98,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Drongen?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Drongen?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Drongen?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Gent
 - [3D printen in Gent](/3d-printen-in-gent)
@@ -137,6 +137,12 @@ Benieuwd hoe **3D printen in Drongen** jouw idee versterkt? Vraag een **gratis o
 
 ## Gerelateerde buurtpagina's
 - [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+
+## Lokale punten in Drongen
+- Centrum van Drongen
+- Lokale bedrijvenzone in Drongen
+- Sporthal in Drongen
+
 
 ## Klantenspotlight
 - Lokale teams in Drongen: kleine reeksen met vaste settings rond Drongen.

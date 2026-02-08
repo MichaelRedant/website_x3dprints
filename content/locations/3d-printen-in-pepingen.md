@@ -32,7 +32,7 @@ Met **3D printen in Pepingen** leveren we prototypes, behuizingen en tooling ric
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica.
+- Kleine en grotere series covers en cases voor elektronica.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je bestanden via [contact](/contact). Je krijgt snel een voorstel voor **3
 - Pepingen centrum
 - Bogaarden
 - Beert en Elingen
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Pepingen
+
+- Dekking: Pepingen, Pepingen centrum, Bogaarden, Beert, Elingen, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Pepingen.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Klantenspotlight
+- Retail/events in Pepingen en deelgemeenten: kleine reeksen met vaste settings rond Pepingen centrum.
+- Vaak gevraagd: 3D print service Pepingen; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Pepingen en Pepingen centrum.
+
+## Locaties die we bedienen nabij Pepingen
+- Centrum van Pepingen
+- Lokale bedrijvenzone in Pepingen
+- Sporthal in Pepingen
+
+## Sectorfocus nabij Pepingen
+- Retail/events in Pepingen en deelgemeenten
+- KMO's en installateurs in Pajottenland (Pepingen)
+- Makers en onderwijs in de regio (Pepingen)
+
+## Typische aanvragen rond Pepingen
+- 3D print service Pepingen
+- rapid prototyping Pepingen
+- 3D printing bedrijf Pepingen
+<!-- LOCAL_ENRICH_END -->

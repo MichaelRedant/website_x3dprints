@@ -1,6 +1,6 @@
 # 3D printen in Mullem (Oudenaarde): kasteel en Scheldeboorden in de buurt
 
-X3DPrints ondersteunt Mullem met vlotte 3D prints voor kmo's en makers rond Kasteel van Mullem en de Scheldevlakte. Ideaal voor prototypes, kleine series en vervangstukken.
+X3DPrints ondersteunt Mullem met vlotte 3D prints voor kmo's en makers rond Kasteel van Mullem en de Scheldevlakte. Ideaal voor prototypes, kleine en grotere series en vervangstukken.
 
 ---
 
@@ -48,7 +48,7 @@ Bekijk [materials](/materials) voor kleuren, de [viewer](/viewer) voor controle,
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -65,7 +65,13 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Mullem (Oudenaarde)
+- Centrum van Mullem (Oudenaarde)
+- Lokale bedrijvenzone in Mullem (Oudenaarde)
+- Sporthal in Mullem (Oudenaarde)
+
 
 ## Klantenspotlight
 - Lokale teams in Mullem (Oudenaarde): kleine reeksen met vaste settings rond Mullem (Oudenaarde).

@@ -1,61 +1,139 @@
-# 3D printing in Kraainem: Leuvensesteenweg and R0
+# 3D printing in Kraainem: local, fast and tailored
 
-For **3D printing in Kraainem** we deliver prototypes, housings and tooling for offices and installs along the Leuvensesteenweg. Fast quotes, transparent pricing and deliveries aligned with your window.
-
----
-
-## Why X3DPrints for Kraainem?
-
-- Quote within one working day with realistic lead time.
-- PLA Matte, PETG and TPU for visuals, strong parts and flexible clips.
-- EV delivery toward Kraainem/R0; pickup in Herzele available.
+Need **3D printing in Kraainem**? X3DPrints prints in Herzele and ships quickly to Kraainem and nearby Leuvensesteenweg. Local 3D printing for Kraainem, Leuvensesteenweg and Ring/R0 aansluiting, Tram/bus-corridor Kraainem: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
-## Local focus in Kraainem
+## Why Kraainem teams choose us
 
-- Housings and mounts for AV/IoT in offices.
-- Jigs, clamps and fit parts for installers along Leuvensesteenweg.
-- Props and displays for retail and events in the Flemish periphery.
-
-## Materials
-
-| Material      | Benefit                        | Ideal for |
-| :------------ | :----------------------------- | :-------- |
-| **PLA Matte** | Clean detail, many colours     | Showpieces and badges |
-| **PETG**      | Strong and heat-resistant      | Functional parts and tooling |
-| **TPU**       | Flexible and shock absorbing   | Cable management, bumpers and grips |
+- Local delivery to Kraainem, Leuvensesteenweg and Ring/R0 aansluiting, Tram/bus-corridor Kraainem; pickup in Herzele.
+- Fast quotes: response in one business day with clear pricing.
+- Accurate fits for enclosures, jigs and assemblies used in Kraainem.
+- Optional finishing (sanding/priming/paint) for customer-facing parts.
 
 ---
 
-## Use cases in Kraainem
+## Delivery focus for Kraainem
 
-- Brackets and covers for office installs.
-- Signage and props for local campaigns.
-- Small housing series for sensors and electronics.
+We frequently deliver to: Kraainem, Kraainem city center, Leuvensesteenweg, Ring/R0 aansluiting, Tram/bus-corridor Kraainem, Pickup in Herzele.
 
 ---
 
-## Practical
+## What teams near Kraainem ask us to make
 
-- Upload STL/STEP via [contact](/en/contact) with quantities and finish.
-- Delivery via Leuvensesteenweg/R0; pickup in Herzele possible.
-- Optional sanding/priming for smooth visuals.
+- Pilot runs for SMEs around Kraainem, tuned per fit/finish.
+- Functional PETG parts for maintenance teams near Leuvensesteenweg.
+- TPU dampers and grips for gear used in Ring/R0 aansluiting.
+- Presentation models and mockups for pitches around Kraainem.
+- Brackets, guards and fixtures tuned for teams in Kraainem.
+- Demo pieces and props for events near Kraainem.
 
 ---
 
-## Request a quote
+## What stands out in Kraainem
 
-Share your files via [contact](/en/contact). You’ll quickly get a proposal for **3D printing in Kraainem**.
+- Local teams in Kraainem: custom 3D printing for prototypes and functional parts.
+- Common ask in Kraainem: custom 3D printing with practical PLA/PETG/TPU advice for Ring/R0 aansluiting.
+- Delivery focus: Kraainem, Kraainem city center, Leuvensesteenweg.
+
+---
+
+## Places we serve near Kraainem
+
+- Kraainem town center
+- local business park in Kraainem
+- sports hall in Kraainem
+
+---
+
+## Sectors we back near Kraainem
+
+- Local teams in Kraainem: custom 3D printing for prototypes and functional parts.
+- Retail/marketing/events in Kraainem: displays, props and branded pieces.
+- SMEs and industry near Kraainem: fixtures, enclosures and small to large batches.
+
+---
+
+## Recent requests around Kraainem
+
+- Paint-ready show models for presentations in Kraainem and Leuvensesteenweg.
+- PLA or PETG functional parts for teams in Kraainem.
+- TPU grips and pads for bikes, tools or fixtures around Leuvensesteenweg.
+
+---
+
+## Material picks for Kraainem work
+
+| Material       | Key trait                 | Ideal for                                             |
+| :------------- | :------------------------ | :---------------------------------------------------- |
+| **PLA Matte**  | Clean, detailed finish    | Models, decor, mockups for Kraainem presentations       |
+| **PETG**       | Tough, heat resistant     | Functional parts, brackets, light outdoor use near Kraainem |
+| **TPU**        | Flexible, shock absorbing | Grips, pads, bumpers for bikes or tools in Kraainem     |
+
+---
+
+## Plan your order
+
+1. Upload STL/STEP via [contact](/en/contact).
+2. Note material (PLA/PETG/TPU), colour and quantity.
+3. Receive quote + timing within one business day.
+
+**Lead time:** usually a few working days; rush possible. Shipping to Kraainem or pickup in Herzele.
+
+---
 
 ## FAQ about 3D printing in Kraainem
 
-**How fast?** A few working days; rush possible.  
-**Material for office props?** PLA for visuals, PETG for robust use, TPU for flexible parts.  
-**NDA?** Yes, on request.
+**Do you print functional brackets?** Yes. PETG for tough brackets; TPU for vibration-damping pads; PLA Matte for visuals.  
+**What build volume?** Up to ~35 x 32 x 35 cm. Larger parts get split with hidden joints.  
+**How fast is shipping?** Most jobs leave within a few working days. We ship or you pick up in Herzele.  
+**Do you review my files?** We check wall thickness and fit. If critical, mention tolerances or mating parts.  
+**Can you add inserts?** Yes. We can design for heat-set inserts or self-tapping screws if you note the thread size.
 
-## Local points
+---
 
-- Kraainem center
-- Leuvensesteenweg
-- R0 junction
+## Useful links near Kraainem
+
+- [Local 3D printing overview](/en/locaties)
+- [3D printing pillar](/en/3d-printen)
+- [Materials and advice](/en/materials#material-suggestion-tool)
+- [Pricing examples](/en/pricing)
+- [Request a quote](/en/contact)
+
+---
+
+## Start your Kraainem print request
+
+Send your files today and get a clear, fast proposal for **3D printing in Kraainem**. Nearby production, personal support and reliable quality.
+
+<!-- LOCAL_ENRICH_START -->
+## Delivery details around Kraainem
+
+- Coverage: Kraainem, Kraainem city center, Leuvensesteenweg, Ring/R0 aansluiting, Tram/bus-corridor Kraainem, Pickup in Herzele; delivery from Herzele, pickup available.
+- Frequent jobs: prototypes, housings and brackets tailored for teams in Kraainem.
+- File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
+- Turnaround: usually a few working days; rush possible on request.
+
+## Related nearby pages
+- [Local 3D printing overview](/en/locaties)
+
+## Customer spotlight
+- Local teams in Kraainem: custom 3D printing for prototypes and functional parts.
+- Common request: 3D printing service in Kraainem; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Leuvensesteenweg and Ring/R0 aansluiting.
+
+## Where we drop off near Kraainem
+- Kraainem town center
+- local business park in Kraainem
+- sports hall in Kraainem
+
+## Sectors we back near Kraainem
+- Local teams in Kraainem: custom 3D printing for prototypes and functional parts.
+- Retail/marketing/events in Kraainem: displays, signage, props.
+- SMEs/industry near Kraainem: prototypes, fixtures, housings.
+
+## Common requests around Kraainem
+- 3D printing service in Kraainem
+- Custom 3D printing in Kraainem
+- 3D model printing in Kraainem
+<!-- LOCAL_ENRICH_END -->

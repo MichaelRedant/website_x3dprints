@@ -1,4 +1,4 @@
-# 3D printen in Smetlede: snelle prototypes en kleine series
+# 3D printen in Smetlede: snelle prototypes en zowel kleine als grotere series
 
 **3D printen in Smetlede** (Lede) is ideaal voor prototypes en maatwerk met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 **Welke bestanden kan ik aanleveren voor Smetlede?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Smetlede?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Smetlede?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Smetlede?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Lede](/3d-printen-in-lede)
 - [Buurpagina: 3D printen in Oordegem](/3d-printen-in-oordegem)
 - [Buurpagina: 3D printen in Impe](/3d-printen-in-impe)
+
+
 
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Smetlede centrum.

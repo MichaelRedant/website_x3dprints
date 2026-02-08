@@ -1,6 +1,6 @@
 # 3D printen in De Klinge: snel maatwerk dicht bij de grens
 
-**3D printen in De Klinge** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een nette afwerking.
+**3D printen in De Klinge** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een nette afwerking.
 
 ---
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare timing.
+Maatwerk en zowel kleine als grotere series met betrouwbare timing.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test onderdelen snel en stuur bij waar nodig.
 **Welke bestanden kan ik aanleveren voor De Klinge?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in De Klinge?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in De Klinge?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in De Klinge?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Meerdonk](/3d-printen-in-meerdonk)
 - [Buurpagina: 3D printen in Sint-Pauwels](/3d-printen-in-sint-pauwels)
 
+
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond De Klinge centrum.
 - Vaak gevraagd: 3D print service De Klinge; we adviseren materiaal en afwerking.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in De Klinge
 - Lokale makers en ontwerpers (De Klinge)
-- Kleine series en maatwerk (De Klinge)
+- Kleine en grotere series en maatwerk (De Klinge)
 - Verenigingen en onderwijs (De Klinge)
 
 ## Veelgevraagde zoekopdrachten in De Klinge

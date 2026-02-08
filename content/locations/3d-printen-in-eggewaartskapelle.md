@@ -16,7 +16,7 @@ Eggewaartskapelle ligt net buiten Veurne, tussen de Vaubanlinies en de open pold
 In Eggewaartskapelle helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
 
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 
 ## Materialen en afwerking
@@ -73,7 +73,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Eggewaartskapelle
+- Centrum van Eggewaartskapelle
+- Lokale bedrijvenzone in Eggewaartskapelle
+- Sporthal in Eggewaartskapelle
+
 
 ## Lokale spotlight
 - Erfgoed- en kerkprojecten rond de dorpskern: PLA/PETG onderdelen afgestemd op projecten rond Eggewaartskapelle dorpskom.

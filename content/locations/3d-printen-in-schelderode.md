@@ -1,6 +1,6 @@
 # 3D printen in Schelderode: maatwerk met snelle service
 
-**3D printen in Schelderode** is ideaal voor prototypes, herstellingen en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een nette afwerking.
+**3D printen in Schelderode** is ideaal voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een nette afwerking.
 
 ---
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Munte](/3d-printen-in-munte)
 - [Hoofdpagina: 3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
 
+
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Schelderode centrum.
 - Vaak gevraagd: 3D print service Schelderode; we adviseren materiaal en afwerking.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectorfocus nabij Schelderode
 - Lokale makers en ontwerpers (Schelderode)
-- Kleine series en maatwerk (Schelderode)
+- Kleine en grotere series en maatwerk (Schelderode)
 - Verenigingen en onderwijs (Schelderode)
 
 ## Typische aanvragen rond Schelderode

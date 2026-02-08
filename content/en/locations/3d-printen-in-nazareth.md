@@ -1,12 +1,12 @@
 # 3D printing in Nazareth: local, fast and tailored
 
-Need **3D printing in Nazareth**? X3DPrints prints in Herzele and ships quickly to Nazareth and nearby Nazareth centrum. Local 3D printing for Nazareth, Nazareth centrum and Eke, De Pinte, Merelbeke: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Nazareth**? X3DPrints prints in Herzele and ships quickly to Nazareth and nearby Eke. Local 3D printing for Nazareth, Eke and De Pinte, Merelbeke: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Nazareth teams choose us
 
-- Local delivery to Nazareth, Nazareth centrum and Eke, De Pinte, Merelbeke; pickup in Herzele.
+- Local delivery to Nazareth, Eke and De Pinte, Merelbeke; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Nazareth.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Nazareth**? X3DPrints prints in Herzele and ships quickly 
 
 ## Areas we serve near Nazareth
 
-We frequently deliver to: Nazareth, Nazareth centrum, Eke, De Pinte, Merelbeke, Afhalen Herzele.
+We frequently deliver to: Nazareth, Nazareth city center, Eke, De Pinte, Merelbeke, Pickup in Herzele.
 
 ---
 
 ## Projects we help deliver near Nazareth
 
 - Prototype housings and fixtures used by teams in Nazareth.
-- Short-run batches that stay consistent for companies near Nazareth centrum.
-- Replacement brackets and guards for workshops around Eke.
+- Short-run batches that stay consistent for companies near Eke.
+- Replacement brackets and guards for workshops around De Pinte.
 - Display pieces and branded props for events near Nazareth.
 - Brackets, guards and fixtures tuned for teams in Nazareth.
 - Demo pieces and props for events near Nazareth.
@@ -32,9 +32,9 @@ We frequently deliver to: Nazareth, Nazareth centrum, Eke, De Pinte, Merelbeke, 
 
 ## Local spotlight for Nazareth
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Nazareth centrum.
-- Common ask: 3D print service Nazareth; we advise material and finishing for Eke.
-- Delivery focus: Nazareth, Nazareth centrum, Eke.
+- Makers and product teams in Nazareth: iterative prototyping and short-run production.
+- Common ask in Nazareth: custom 3D printing with practical PLA/PETG/TPU advice for De Pinte.
+- Delivery focus: Nazareth, Nazareth city center, Eke.
 
 ---
 
@@ -48,17 +48,16 @@ We frequently deliver to: Nazareth, Nazareth centrum, Eke, De Pinte, Merelbeke, 
 
 ## Who we support around Nazareth
 
-- Local projects in Nazareth: Lokale makers en ontwerpers
-- Local projects in Nazareth: Kleine series en maatwerk
+- Makers and product teams in Nazareth: iterative prototyping and short-run production.
 - Education and labs around Nazareth: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## What clients near Nazareth often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Nazareth centrum.
+- TPU grips and pads for bikes, tools or fixtures around Eke.
 - PLA or PETG functional parts for teams in Nazareth.
-- Paint-ready show models for presentations in Nazareth and Nazareth centrum.
+- Paint-ready show models for presentations in Nazareth and Eke.
 
 ---
 
@@ -97,7 +96,6 @@ We frequently deliver to: Nazareth, Nazareth centrum, Eke, De Pinte, Merelbeke, 
 - [3D printing in Eke](/en/3d-printen-in-eke)
 - [3D printing in De Pinte](/en/3d-printen-in-de-pinte)
 - [3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Nazare
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Nazareth
 
-- Coverage: Nazareth, Nazareth centrum, Eke, De Pinte, Merelbeke, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Nazareth, Nazareth city center, Eke, De Pinte, Merelbeke, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Nazareth.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +122,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Nazare
 - [Parent page: 3D printing in Nazareth-De Pinte](/en/3d-printen-in-nazareth-de-pinte)
 
 ## Spotlight near Nazareth
-- Lokale makers en ontwerpers: fixtures and housings for teams around Nazareth centrum.
-- Frequent order: 3D print service Nazareth; we keep settings for reorders.
-- Delivery focus: Nazareth, Nazareth centrum, Eke.
+- Makers and product teams in Nazareth: iterative prototyping and short-run production.
+- Frequent order: 3D printing service in Nazareth; we keep settings for reorders.
+- Delivery focus: Nazareth, Nazareth city center, Eke.
 
 ## Landmarks around Nazareth
 - Nazareth town center
@@ -134,12 +132,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Nazare
 - sports hall in Nazareth
 
 ## Teams we support around Nazareth
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in Nazareth: iterative prototyping and short-run production.
 - Education/labs around Nazareth: reliable PLA/PETG parts.
 
 ## Frequently asked in Nazareth
-- 3D print service Nazareth
-- rapid prototyping Nazareth
-- 3D printing bedrijf Nazareth
+- 3D printing service in Nazareth
+- Custom 3D printing in Nazareth
+- 3D model printing in Nazareth
 <!-- LOCAL_ENRICH_END -->

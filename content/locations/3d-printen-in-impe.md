@@ -27,7 +27,7 @@ In Impe helpen we projecten rond Sint-Dionysiuskerk (Impe) sneller vooruit met p
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Impe
 
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,8 +94,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Impe?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Impe?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Impe?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Impe
 - [3D printen in Lede](/3d-printen-in-lede)
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Smetlede](/3d-printen-in-smetlede)
 - [Buurpagina: 3D printen in Wanzele](/3d-printen-in-wanzele)
 
+
+
 ## Klantenspotlight
 - Lokale makers en techniekers: kleine reeksen met vaste settings rond Impe centrum.
 - Vaak gevraagd: 3D print service Impe; we adviseren materiaal en afwerking.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectorfocus nabij Impe
 - Lokale makers en techniekers (Impe)
-- Kleine series en maatwerk (Impe)
+- Kleine en grotere series en maatwerk (Impe)
 - Verenigingen en scholen (Impe)
 
 ## Typische aanvragen rond Impe

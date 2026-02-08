@@ -1,13 +1,13 @@
 # 3D printen in Avekapelle: maatwerk voor Viconia en Veurnepolder
 
-Avekapelle ligt pal tussen Veurne en de natuur van de Viconia Kleiputten. Lokale landbouwbedrijven, natuurgidsen en creatieve zelfstandigen zoeken vaak een partner die kleine series of prototypes kan leveren zonder gedoe op de E40. Vanuit Herzele sturen we prints die klaar zijn voor de vochtige polderlucht en de expozalen aan de Sint-Theresiakerk.
+Avekapelle ligt pal tussen Veurne en de natuur van de Viconia Kleiputten. Lokale landbouwbedrijven, natuurgidsen en creatieve zelfstandigen zoeken vaak een partner die kleine en grotere series of prototypes kan leveren zonder gedoe op de E40. Vanuit Herzele sturen we prints die klaar zijn voor de vochtige polderlucht en de expozalen aan de Sint-Theresiakerk.
 
 ## Waar we vaak voor printen in Avekapelle
 
 - Educatieve modellen voor gidsen in de Viconia Kleiputten
 - Onderdeelhouders en custom klemmen voor landbouwmachines in de Avekapelse velden
 - Interieurprops en retail displays voor makers tussen Veurne en Alveringem
-- Kleine series gadgets of geschenken voor lokale verenigingen
+- Kleine en grotere series gadgets of geschenken voor lokale verenigingen
 
 
 
@@ -73,7 +73,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Avekapelle
+- Centrum van Avekapelle
+- Lokale bedrijvenzone in Avekapelle
+- Sporthal in Avekapelle
+
 
 ## Klantenspotlight
 - Natuur- en educatieprojecten rond Viconia: kleine reeksen met vaste settings rond Avekapelle dorpskern.

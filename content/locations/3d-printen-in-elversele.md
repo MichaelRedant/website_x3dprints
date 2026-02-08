@@ -1,6 +1,6 @@
 # 3D printen in Elversele: snelle service voor maatwerk
 
-**3D printen in Elversele** is ideaal voor prototypes, herstellingen en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Elversele** is ideaal voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,8 +94,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Elversele?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Elversele?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Elversele?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Elversele
 - [3D printen in Temse](/3d-printen-in-temse)
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Tielrode](/3d-printen-in-tielrode)
 - [Buurpagina: 3D printen in Steendorp](/3d-printen-in-steendorp)
 
+
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Elversele centrum.
 - Vaak gevraagd: 3D print service Elversele; we adviseren materiaal en afwerking.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in Elversele
 - Lokale makers en ontwerpers (Elversele)
-- Kleine series en maatwerk (Elversele)
+- Kleine en grotere series en maatwerk (Elversele)
 - Verenigingen en onderwijs (Elversele)
 
 ## Veelgevraagde zoekopdrachten in Elversele

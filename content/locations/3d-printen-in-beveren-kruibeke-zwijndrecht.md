@@ -46,7 +46,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Tooling, hulpstukken en prototypes voor snelle tests en herstellingen.
 
 ### KMO's en zelfstandigen
-Maatwerk onderdelen en kleine series met duidelijke planning.
+Maatwerk onderdelen en zowel kleine als grotere series met duidelijke planning.
 
 ### Makers en verenigingen
 Creatieve projecten, displays en eventmateriaal op maat.
@@ -81,7 +81,7 @@ Met rapid prototyping test u vorm en pasvorm snel, zodat u sneller kan beslissen
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -90,8 +90,8 @@ Met rapid prototyping test u vorm en pasvorm snel, zodat u sneller kan beslissen
 **Welke bestanden kan ik aanleveren voor Beveren-Kruibeke-Zwijndrecht?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Beveren-Kruibeke-Zwijndrecht?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Beveren-Kruibeke-Zwijndrecht?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Beveren-Kruibeke-Zwijndrecht?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -125,6 +125,8 @@ Wilt u snel starten? Vraag een vrijblijvende offerte aan via [contact](/contact)
 - [Buurpagina: 3D printen in Kruibeke](/3d-printen-in-kruibeke)
 - [Buurpagina: 3D printen in Zwijndrecht](/3d-printen-in-zwijndrecht)
 - [Buurpagina: 3D printen in Bazel](/3d-printen-in-bazel)
+
+
 
 ## Spotlight rond Beveren-Kruibeke-Zwijndrecht
 - Waaslandhaven en industrie: behuizingen en pasmallen voor teams in Beveren.

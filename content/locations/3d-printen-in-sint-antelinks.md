@@ -1,6 +1,6 @@
 # 3D printen in Sint-Antelinks: moderne maakindustrie in een landelijk dorp
 
-3D printen in Sint-Antelinks brengt de nieuwste productietechnologie naar een rustige, groene omgeving. Bedrijven, scholen en hobbyisten hoeven zich niet langer te verplaatsen naar grote steden: 3D printen in Sint-Antelinks maakt lokale productie van prototypes, onderdelen en kleine series betaalbaar en betrouwbaar.
+3D printen in Sint-Antelinks brengt de nieuwste productietechnologie naar een rustige, groene omgeving. Bedrijven, scholen en hobbyisten hoeven zich niet langer te verplaatsen naar grote steden: 3D printen in Sint-Antelinks maakt lokale productie van prototypes, onderdelen en zowel kleine als grotere series betaalbaar en betrouwbaar.
 
 X3DPrints is een **Herzeelse handelaar** en **100% Belgische 3D printstudio**. We leveren vanuit Herzele in een korte keten en zijn een **trots lid van de Werkgroep Ondernemend Herzele**. Geen outsourcing of dropshipping - je schakelt rechtstreeks met de maker in het atelier. Lees meer over onze aanpak op [de lokale & Belgische pagina](/lokaal-belgisch) en je kan ook betalen met de Herzeelse Euro (Heuro).
 
@@ -22,7 +22,7 @@ Met 3D printen in Sint-Antelinks haal je flexibiliteit en innovatie letterlijk i
 In Sint-Antelinks helpen we projecten rond Sint-Antelinks sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Sint-Antelinks
@@ -40,7 +40,7 @@ PLA levert strakke details, PETG zorgt voor robuuste onderdelen en TPU maakt fle
 ## Voor wie is 3D printen in Sint-Antelinks?
 
 ### Lokale ondernemers
-3D printen in Sint-Antelinks versnelt productontwikkeling en maakt kleine series betaalbaar.
+3D printen in Sint-Antelinks versnelt productontwikkeling en maakt kleine en grotere series betaalbaar.
 
 ### Makers en hobbyisten
 Perfect voor persoonlijke gadgets, experimenten en herstellingen met professionele kwaliteit.
@@ -130,7 +130,13 @@ Wil je een prototype, maquette of serie onderdelen laten maken? Vraag vandaag no
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Sint-Antelinks
+- Centrum van Sint-Antelinks
+- Lokale bedrijvenzone in Sint-Antelinks
+- Sporthal in Sint-Antelinks
+
 
 ## Klantenspotlight
 - Lokale teams in Sint-Antelinks: kleine reeksen met vaste settings rond Sint-Antelinks.

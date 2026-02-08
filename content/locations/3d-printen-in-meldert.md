@@ -19,7 +19,7 @@
 
 Voor Meldert leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Meldert en Meldert.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Meldert** ook ABS, ASA, Nylon of PA-CF voor t
 ## Voor wie is 3D printen in Meldert interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven rond het Kravaalbos gebruiken **3D printen in Meldert** om prototypes en kleine series te realiseren.
+Lokale bedrijven rond het Kravaalbos gebruiken **3D printen in Meldert** om prototypes en zowel kleine als grotere series te realiseren.
 
 ### Makers en hobbyisten
 Creatieve inwoners maken unieke gadgets of maquettes van de Sint-Willibrorduskerk met **3D printen in Meldert**.
@@ -103,7 +103,6 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Meldert of afh
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Aalst
-- [3D printen in Aalst](/3d-printen-in-aalst)
 - [3D printen in Baardegem](/3d-printen-in-baardegem)
 - [3D printen in Erembodegem](/3d-printen-in-erembodegem)
 - [3D printen in Gijzegem](/3d-printen-in-gijzegem)
@@ -132,7 +131,13 @@ Benieuwd hoe **3D printen in Meldert** jouw idee versterkt? Vraag een **gratis o
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Meldert
+- Centrum van Meldert
+- Lokale bedrijvenzone in Meldert
+- Sporthal in Meldert
+
 
 ## Lokale spotlight
 - Lokale teams in Meldert: PLA/PETG onderdelen afgestemd op projecten rond Meldert.

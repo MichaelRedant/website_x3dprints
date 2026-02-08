@@ -113,7 +113,7 @@ const faqItems = [
     a: "Binnen kiezen we vaak PLA Silk of PLA Matte. Voor robuust of buitengebruik schakelen we sneller naar PETG.",
   },
   {
-    q: "Kunnen jullie ook kleine oplages met variaties leveren?",
+    q: "Kunnen jullie ook kleine en grotere oplages met variaties leveren?",
     a: "Ja. We kunnen variaties op tekst, kleur of formaat in dezelfde batch verwerken.",
   },
 ]

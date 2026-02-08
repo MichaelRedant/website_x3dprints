@@ -24,7 +24,7 @@
 
 In Knesselare helpen we projecten rond Sint-Willibrorduskerk sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -127,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact) en ontdek wat mogeli
 - [Buurpagina: 3D printen in Bellem](/3d-printen-in-bellem)
 - [Buurpagina: 3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
 - [Buurpagina: 3D printen in Poeke](/3d-printen-in-poeke)
+
+
 
 ## Spotlight rond Knesselare
 - KMO's en techniekers in de regio: behuizingen en pasmallen voor teams in Knesselare centrum.

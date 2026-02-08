@@ -21,7 +21,7 @@ In Schoonaarde helpen we projecten rond Schoonaarde sneller vooruit met prints d
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Schoonaarde
 
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Schoonaarde** ook ABS, ASA, Nylon of PA-CF vo
 ## Voor wie is 3D printen in Schoonaarde interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven nabij de brug gebruiken **3D printen in Schoonaarde** om prototypes te testen en kleine series te produceren.
+Lokale bedrijven nabij de brug gebruiken **3D printen in Schoonaarde** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve inwoners maken unieke gadgets of miniaturen van de Sint-Laurentiuskerk met **3D printen in Schoonaarde**.
@@ -99,8 +99,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Schoonaarde?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Schoonaarde?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Schoonaarde?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Dendermonde
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
@@ -131,7 +131,13 @@ Benieuwd hoe **3D printen in Schoonaarde** jouw idee versterkt? Vraag een **grat
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Schoonaarde
+- Centrum van Schoonaarde
+- Lokale bedrijvenzone in Schoonaarde
+- Sporthal in Schoonaarde
+
 
 ## Klantenspotlight
 - Lokale teams in Schoonaarde: kleine reeksen met vaste settings rond Schoonaarde.

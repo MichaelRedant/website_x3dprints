@@ -15,7 +15,7 @@ Need **3D printing in Ninove**? X3DPrints prints in Herzele and ships quickly to
 
 ## Delivery focus for Ninove
 
-We frequently deliver to: Ninove.
+We frequently deliver to: Ninove, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Ninove.
 
 ## What stands out in Ninove
 
-- Local SMEs in Ninove: tailored PETG/PLA parts for teams around Ninove.
-- Common ask: 3D print service Ninove; we advise material and finishing for Ninove.
-- Delivery focus: Ninove.
+- Manufacturing and SMEs around Ninove: prototypes, fixtures and housings.
+- Common ask in Ninove: custom 3D printing with practical PLA/PETG/TPU advice for Ninove.
+- Delivery focus: Ninove, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Ninove.
 
 ## Recent requests around Ninove
 
-- Paint-ready show models for presentations in Ninove and Ninove.
+- Paint-ready show models for presentations in Ninove and the surrounding area.
 - PLA or PETG functional parts for teams in Ninove.
-- TPU grips and pads for bikes, tools or fixtures around Ninove.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Ninove.
 
 ## Useful links near Ninove
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +109,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Ninove
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Ninove
 
-- Coverage: Ninove; delivery from Herzele, pickup available.
+- Coverage: Ninove, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Ninove.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -121,8 +118,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Ninove
 - [Parent page: 3D printing in Aalst](/en/3d-printen-in-aalst)
 
 ## Customer spotlight
-- Local teams in Ninove: small batches with consistent settings near Ninove.
-- Common request: 3D print service Ninove; we pick material and finish for the use case.
+- SMEs and makers in Ninove: fixtures and enclosures.
+- Common request: 3D printing service in Ninove; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Ninove and Ninove.
 
 ## Where we drop off near Ninove
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Ninove
 - Education/labs around Ninove: lesson-ready prints.
 
 ## Common requests around Ninove
-- 3D print service Ninove
-- rapid prototyping Ninove
-- 3D printing bedrijf Ninove
+- 3D printing service in Ninove
+- Custom 3D printing in Ninove
+- 3D model printing in Ninove
 <!-- LOCAL_ENRICH_END -->

@@ -1,12 +1,12 @@
 # 3D printing in Sint-Laureins: local, fast and tailored
 
-Need **3D printing in Sint-Laureins**? X3DPrints prints in Herzele and ships quickly to Sint-Laureins and nearby Sint-Laureins centrum. Local 3D printing for Sint-Laureins, Sint-Laureins centrum and Sint-Jan-in-Eremo, Sint-Margriete, Watervliet: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Sint-Laureins**? X3DPrints prints in Herzele and ships quickly to Sint-Laureins and nearby Sint-Jan-in-Eremo. Local 3D printing for Sint-Laureins, Sint-Jan-in-Eremo and Sint-Margriete, Watervliet: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Sint-Laureins teams choose us
 
-- Local delivery to Sint-Laureins, Sint-Laureins centrum and Sint-Jan-in-Eremo, Sint-Margriete, Watervliet; pickup in Herzele.
+- Local delivery to Sint-Laureins, Sint-Jan-in-Eremo and Sint-Margriete, Watervliet; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Laureins.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Sint-Laureins**? X3DPrints prints in Herzele and ships qui
 
 ## Delivery focus for Sint-Laureins
 
-We frequently deliver to: Sint-Laureins, Sint-Laureins centrum, Sint-Jan-in-Eremo, Sint-Margriete, Watervliet, Waterland-Oudeman, Afhalen Herzele.
+We frequently deliver to: Sint-Laureins, Sint-Laureins city center, Sint-Jan-in-Eremo, Sint-Margriete, Watervliet, Waterland-Oudeman, Pickup in Herzele.
 
 ---
 
 ## What teams near Sint-Laureins ask us to make
 
 - Pilot runs for SMEs around Sint-Laureins, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Sint-Laureins centrum.
-- TPU dampers and grips for gear used in Sint-Jan-in-Eremo.
+- Functional PETG parts for maintenance teams near Sint-Jan-in-Eremo.
+- TPU dampers and grips for gear used in Sint-Margriete.
 - Presentation models and mockups for pitches around Sint-Laureins.
 - Brackets, guards and fixtures tuned for teams in Sint-Laureins.
 - Demo pieces and props for events near Sint-Laureins.
@@ -32,9 +32,9 @@ We frequently deliver to: Sint-Laureins, Sint-Laureins centrum, Sint-Jan-in-Erem
 
 ## What stands out in Sint-Laureins
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Sint-Laureins centrum.
-- Common ask: 3D print service Sint-Laureins; we advise material and finishing for Sint-Jan-in-Eremo.
-- Delivery focus: Sint-Laureins, Sint-Laureins centrum, Sint-Jan-in-Eremo.
+- Makers and product teams in Sint-Laureins: iterative prototyping and short-run production.
+- Common ask in Sint-Laureins: custom 3D printing with practical PLA/PETG/TPU advice for Sint-Margriete.
+- Delivery focus: Sint-Laureins, Sint-Laureins city center, Sint-Jan-in-Eremo.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Sint-Laureins, Sint-Laureins centrum, Sint-Jan-in-Erem
 
 ## Sectors we back near Sint-Laureins
 
-- Local projects in Sint-Laureins: Lokale makers en ontwerpers
-- SMEs and industry near Sint-Laureins: fixtures, enclosures and small batches.
+- Makers and product teams in Sint-Laureins: iterative prototyping and short-run production.
+- SMEs and industry near Sint-Laureins: fixtures, enclosures and small to large batches.
 - Education and labs around Sint-Laureins: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Sint-Laureins
 
-- Paint-ready show models for presentations in Sint-Laureins and Sint-Laureins centrum.
+- Paint-ready show models for presentations in Sint-Laureins and Sint-Jan-in-Eremo.
 - PLA or PETG functional parts for teams in Sint-Laureins.
-- TPU grips and pads for bikes, tools or fixtures around Sint-Laureins centrum.
+- TPU grips and pads for bikes, tools or fixtures around Sint-Jan-in-Eremo.
 
 ---
 
@@ -97,7 +97,7 @@ We frequently deliver to: Sint-Laureins, Sint-Laureins centrum, Sint-Jan-in-Erem
 - [3D printing in Sint-Jan-in-Eremo](/en/3d-printen-in-sint-jan-in-eremo)
 - [3D printing in Sint-Margriete](/en/3d-printen-in-sint-margriete)
 - [3D printing in Watervliet](/en/3d-printen-in-watervliet)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [3D printing in Waterland-Oudeman](/en/3d-printen-in-waterland-oudeman)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +112,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-L
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Sint-Laureins
 
-- Coverage: Sint-Laureins, Sint-Laureins centrum, Sint-Jan-in-Eremo, Sint-Margriete, Watervliet, Waterland-Oudeman; delivery from Herzele, pickup available.
+- Coverage: Sint-Laureins, Sint-Laureins city center, Sint-Jan-in-Eremo, Sint-Margriete, Watervliet, Waterland-Oudeman; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Sint-Laureins.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +124,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-L
 - [Nearby: 3D printing in Waterland-Oudeman](/en/3d-printen-in-waterland-oudeman)
 
 ## Customer spotlight
-- Lokale makers en ontwerpers: small batches with consistent settings near Sint-Laureins centrum.
-- Common request: 3D print service Sint-Laureins; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Sint-Laureins and Sint-Laureins centrum.
+- Makers and product teams in Sint-Laureins: iterative prototyping and short-run production.
+- Common request: 3D printing service in Sint-Laureins; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Sint-Jan-in-Eremo and Sint-Margriete.
 
 ## Where we drop off near Sint-Laureins
 - Sint-Laureins town center
@@ -134,12 +134,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-L
 - sports hall in Sint-Laureins
 
 ## Sectors we back near Sint-Laureins
-- Local focus: Lokale makers en ontwerpers
+- Makers and product teams in Sint-Laureins: iterative prototyping and short-run production.
 - SMEs/industry near Sint-Laureins: prototypes, fixtures, housings.
 - Education/labs around Sint-Laureins: reliable PLA/PETG parts.
 
 ## Common requests around Sint-Laureins
-- 3D print service Sint-Laureins
-- rapid prototyping Sint-Laureins
-- 3D printing bedrijf Sint-Laureins
+- 3D printing service in Sint-Laureins
+- Custom 3D printing in Sint-Laureins
+- 3D model printing in Sint-Laureins
 <!-- LOCAL_ENRICH_END -->

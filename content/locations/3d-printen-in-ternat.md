@@ -2,7 +2,7 @@
 
 
 
-Voor **3D printen in Ternat** leveren we prototypes en kleine series richting station Ternat, de industriezone aan de E40 en projecten rond Kasteel Kruikenburg. Je krijgt strakke toleranties, snelle levering en materiaaladvies op maat.
+Voor **3D printen in Ternat** leveren we prototypes en zowel kleine als grotere series richting station Ternat, de industriezone aan de E40 en projecten rond Kasteel Kruikenburg. Je krijgt strakke toleranties, snelle levering en materiaaladvies op maat.
 
 
 
@@ -68,7 +68,7 @@ Zoek je 3D printen in Ternat? We denken mee over passing, sterkte en look zodat 
 
 - KMO's en logistiek: klemmen, behuizingen, sensorhouders.
 
-- Retail en horeca: displays, badgeclips en kleine series gadgets.
+- Retail en horeca: displays, badgeclips en zowel kleine als grotere series gadgets.
 
 - Cultureel en evenementen: props of decor voor sites rond Kruikenburg.
 
@@ -126,7 +126,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Ternat
+- Centrum van Ternat
+- Lokale bedrijvenzone in Ternat
+- Sporthal in Ternat
+
 
 ## Spotlight rond Ternat
 - Lokale teams in Ternat: behuizingen en pasmallen voor teams in Ternat.

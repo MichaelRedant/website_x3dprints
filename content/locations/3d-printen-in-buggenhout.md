@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Buggenhout interessant?
 
 ### Lokale ondernemers
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Landbouw en herstellingen
 Praktische onderdelen die snel moeten passen.
@@ -82,14 +82,14 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Buggenhout
 
-**Kunnen jullie kleine series leveren in Buggenhout?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Buggenhout?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Buggenhout?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -125,6 +125,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Opdorp](/3d-printen-in-opdorp)
 - [Hoofdpagina: 3D printen in Lebbeke](/3d-printen-in-lebbeke)
 - [Hoofdpagina: 3D printen in Wieze](/3d-printen-in-wieze)
+
+
 
 ## Lokale spotlight
 - Lokale KMO's en zelfstandigen: PLA/PETG onderdelen afgestemd op projecten rond Buggenhout centrum.

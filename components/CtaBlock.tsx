@@ -22,7 +22,7 @@ export default function CtaBlock({
     ? {
         kicker: "Fast & clear",
         title: `Quote for 3D printing in ${city}`,
-        body: "Pick a material (PLA, PETG, TPU) and receive a clear price and planning within 24 hours. Ideal for prototypes and small batches.",
+        body: "Pick a material (PLA, PETG, TPU) and receive a clear price and planning within 24 hours. Ideal for prototypes and small to large batches.",
         benefits: [
           "Short lead time (we plan together, typically a few business days)",
           "Transparent pricing - no surprises",
@@ -37,7 +37,7 @@ export default function CtaBlock({
     : {
         kicker: "Snel & duidelijk",
         title: `Offerte voor 3D printen in ${city}`,
-        body: "Kies materiaal (PLA, PETG, TPU) en ontvang binnen 24 uur een heldere prijs en planning. Perfect voor prototypes en kleine series.",
+        body: "Kies materiaal (PLA, PETG, TPU) en ontvang binnen 24 uur een heldere prijs en planning. Perfect voor prototypes en zowel kleine als grotere series.",
         benefits: [
           "Korte doorlooptijd (we plannen samen, doorgaans enkele werkdagen)",
           "Transparante prijzen - geen verrassingen",

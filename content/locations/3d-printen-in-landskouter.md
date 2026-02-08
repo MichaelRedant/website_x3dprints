@@ -1,6 +1,6 @@
 # 3D printen in Landskouter: Stuivenbergmolen en Grotenbergestraat
 
-Voor **3D printen in Landskouter** levert X3DPrints prototypes en kleine series richting Stuivenbergmolen, Grotenbergestraat en de Gondebeekvallei. Je krijgt strakke prints, snelle doorlooptijden en helder materiaaladvies.
+Voor **3D printen in Landskouter** levert X3DPrints prototypes en zowel kleine als grotere series richting Stuivenbergmolen, Grotenbergestraat en de Gondebeekvallei. Je krijgt strakke prints, snelle doorlooptijden en helder materiaaladvies.
 
 ---
 
@@ -77,7 +77,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Landskouter
+- Centrum van Landskouter
+- Lokale bedrijvenzone in Landskouter
+- Sporthal in Landskouter
+
 
 ## Lokale spotlight
 - Lokale teams in Landskouter: PLA/PETG onderdelen afgestemd op projecten rond Landskouter.

@@ -1,6 +1,6 @@
 # 3D printen in Sint-Margriete: betrouwbaar maatwerk lokaal
 
-**3D printen in Sint-Margriete** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Sint-Margriete** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -25,7 +25,7 @@
 
 In Sint-Margriete combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Sint-Jan-in-Eremo](/3d-printen-in-sint-jan-in-eremo)
 - [Buurpagina: 3D printen in Watervliet](/3d-printen-in-watervliet)
 - [Buurpagina: 3D printen in Waterland-Oudeman](/3d-printen-in-waterland-oudeman)
+
+
 
 ## Spotlight rond Sint-Margriete
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Sint-Margriete centrum.

@@ -14,7 +14,7 @@ import { buildFaqPageSchema } from "@/lib/seo"
 const NL_METADATA: Metadata = {
   title: "3D print service België | Contact X3DPrints",
   description:
-    "Vraag een offerte aan voor 3D printen in België: prototypes of kleine series. Snelle reactie, duidelijk over prijs en timing, regio Gent/Herzele.",
+    "Vraag een offerte aan voor 3D printen in België: prototypes of kleine en grotere series. Snelle reactie, duidelijk over prijs en timing, regio Gent/Herzele.",
   alternates: {
     canonical: "https://www.x3dprints.be/contact/",
     languages: {
@@ -35,10 +35,10 @@ const NL_METADATA: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
-export const EN_METADATA: Metadata = {
+const EN_METADATA: Metadata = {
   title: "Contact | X3DPrints Belgium",
   description:
-    "Request a 3D printing quote: prototypes or small batches. Fast, clear and no fluff. Based in Herzele/Ghent region.",
+    "Request a 3D printing quote: prototypes or small to large batches. Fast, clear and no fluff. Based in Herzele/Ghent region.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/contact/",
     languages: {
@@ -221,7 +221,7 @@ export default function ContactPage({ locale }: PageProps) {
         },
         {
           title: "Marketing prop",
-          description: "Kleine oplage visuele props met Silk/Marble afwerking.",
+          description: "Kleine en grotere oplage visuele props met Silk/Marble afwerking.",
           href: localize(`/contact?material=pla-silk&quote=${encodeURIComponent("Marketing prop aanvraag met focus op visuele afwerking")}`),
         },
         {

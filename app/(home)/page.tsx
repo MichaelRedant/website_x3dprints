@@ -44,7 +44,7 @@ const NL_METADATA: Metadata = {
   },
 }
 
-export const EN_METADATA: Metadata = {
+const EN_METADATA: Metadata = {
   title: "3D printing in Belgium | X3DPrints Herzele",
   description:
     "Precision 3D printing in Belgium and Flanders. Fast turnaround from Herzele with advice on PLA, PETG, ABS/ASA, Nylon and PA-CF for prototypes, displays and functional parts.",
@@ -67,6 +67,8 @@ export const EN_METADATA: Metadata = {
   },
   twitter: { card: "summary_large_image" },
 }
+
+void EN_METADATA
 
 export const metadata: Metadata = NL_METADATA
 
@@ -157,7 +159,7 @@ const HOME_COPY_NL = {
     body1:
       "Eenpersoonsstudio in bijberoep. Je schakelt een Belgische 3D print service in met rechtstreeks contact met de maker die ook produceert, test en afwerkt. Geen tickets of callcenters, wel korte lijnen, duidelijke afspraken en onderdelen die passen.",
     body2:
-      "Actief in regio Gent, Aalst, Geraardsbergen en Oudenaarde. Van functionele prototypes en kleine series tot winkelmateriaal, gepersonaliseerde cadeaus en maatwerk. Zo leveren we 3D prints voor Vlaanderen die perfect aansluiten bij jouw toepassing.",
+      "Actief in regio Gent, Aalst, Geraardsbergen en Oudenaarde. Van functionele prototypes en zowel kleine als grotere series tot winkelmateriaal, gepersonaliseerde cadeaus en maatwerk. Zo leveren we 3D prints voor Vlaanderen die perfect aansluiten bij jouw toepassing.",
     ctas: {
       services: "Diensten",
       materials: "Materialen",
@@ -194,7 +196,7 @@ const HOME_COPY_NL = {
         items: [
           "Etalage- en winkelmateriaal, displays en houders",
           "Bedrijfscadeaus en promotieartikelen",
-          "Prototyping, jigs, fixtures en kleine series",
+          "Prototyping, jigs, fixtures en zowel kleine als grotere series",
         ],
       },
     ],
@@ -449,7 +451,7 @@ const HOME_COPY_EN = {
     body1:
       "One-person studio (part-time). You work directly with the maker who prints, tests and finishes every part. No tickets or call centers, just direct communication, clear commitments and parts that fit.",
     body2:
-      "Active in the Ghent, Aalst, Geraardsbergen and Oudenaarde region. From functional prototypes and small series to retail props, personalized gifts and custom parts. We deliver 3D prints for Flanders that fit your use case.",
+      "Active in the Ghent, Aalst, Geraardsbergen and Oudenaarde region. From functional prototypes and small to large series to retail props, personalized gifts and custom parts. We deliver 3D prints for Flanders that fit your use case.",
     ctas: {
       services: "Services",
       materials: "Materials",
@@ -486,7 +488,7 @@ const HOME_COPY_EN = {
         items: [
           "Retail and window displays, holders and fixtures",
           "Corporate gifts and promo items",
-          "Prototyping, jigs, fixtures and small series",
+          "Prototyping, jigs, fixtures and small to large series",
         ],
       },
     ],
@@ -697,10 +699,11 @@ const HOME_COPY_EN = {
   ],
 }
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
 
-export default function HomePage({ locale }: PageProps) {
-  const normalizedLocale = normalizeLocale(locale)
+export default async function HomePage({ searchParams }: PageProps) {
+  const params = await searchParams
+  const normalizedLocale = normalizeLocale(params?.lang)
   const isEn = normalizedLocale === "en"
   const localize = (href: string) => localizeHref(href, normalizedLocale)
   const copy = isEn ? HOME_COPY_EN : HOME_COPY_NL
@@ -978,7 +981,7 @@ export default function HomePage({ locale }: PageProps) {
                 ))}
               </div>
               <div className="grid gap-3 pt-2 sm:grid-cols-2">
-                {(locale === "nl"
+                {(normalizedLocale === "nl"
                   ? [
                       {
                         label: "Gridfinity (open-source)",

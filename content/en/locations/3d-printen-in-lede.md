@@ -15,14 +15,14 @@ Need **3D printing in Lede**? X3DPrints prints in Herzele and ships quickly to L
 
 ## Where we deliver around Lede
 
-We frequently deliver to: Lede.
+We frequently deliver to: Lede, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Lede
 
 - Prototypes and housings supporting teams in Lede.
-- Small series with consistent settings for businesses near your region.
+- Small to large series with consistent settings for businesses near your region.
 - Replacement parts and brackets for workshops around Flanders.
 - Promo models, signage and props for events in and around Lede.
 - Brackets, guards and fixtures tuned for teams in Lede.
@@ -32,9 +32,9 @@ We frequently deliver to: Lede.
 
 ## Spotlight: Lede projects
 
-- Local SMEs in Lede: tailored PETG/PLA parts for teams around Lede.
-- Common ask: 3D print service lede; we advise material and finishing for Lede.
-- Delivery focus: Lede.
+- Manufacturing and SMEs around Lede: prototypes, fixtures and housings.
+- Common ask in Lede: custom 3D printing with practical PLA/PETG/TPU advice for Lede.
+- Delivery focus: Lede, Pickup in Herzele.
 
 ---
 
@@ -57,8 +57,8 @@ We frequently deliver to: Lede.
 ## Popular requests from Lede
 
 - PLA or PETG functional parts for teams in Lede.
-- TPU grips and pads for bikes, tools or fixtures around Lede.
-- Paint-ready show models for presentations in Lede and Lede.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
+- Paint-ready show models for presentations in Lede and the surrounding area.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Lede.
 
 ## FAQ about 3D printing in Lede
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -94,10 +94,7 @@ We frequently deliver to: Lede.
 
 ## Quick links for Lede teams
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +109,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Lede**
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Lede
 
-- Coverage: Lede; delivery from Herzele, pickup available.
+- Coverage: Lede, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Lede.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +121,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Lede**
 - [Parent page: 3D printing in Wanzele](/en/3d-printen-in-wanzele)
 
 ## Local spotlight
-- Local teams in Lede: PLA/PETG parts tuned for projects near Lede.
-- Common request: 3D print service lede; we pick material and finish for the use case.
-- Delivery focus: Lede.
+- SMEs and makers in Lede: fixtures and enclosures.
+- Common request: 3D printing service in Lede; we pick material and finish for the use case.
+- Delivery focus: Lede, Pickup in Herzele.
 
 ## Places we often deliver near Lede
 - Lede town center
@@ -139,7 +136,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Lede**
 - Education/labs around Lede: lesson-ready prints.
 
 ## Popular searches from Lede
-- 3D print service lede
-- rapid prototyping lede
-- 3D printing bedrijf lede
+- 3D printing service in Lede
+- Custom 3D printing in Lede
+- 3D model printing in Lede
 <!-- LOCAL_ENRICH_END -->

@@ -1,6 +1,6 @@
 # 3D printen in Iddergem: maatwerk met snelle levering
 
-**3D printen in Iddergem** is perfect voor functionele onderdelen, prototypes en kleine series. X3DPrints levert vanuit Herzele met korte doorlooptijd en helder materiaaladvies.
+**3D printen in Iddergem** is perfect voor functionele onderdelen, prototypes en zowel kleine als grotere series. X3DPrints levert vanuit Herzele met korte doorlooptijd en helder materiaaladvies.
 
 ---
 
@@ -82,7 +82,7 @@ Test snel en optimaliseer uw ontwerp zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,13 +94,12 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Iddergem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Iddergem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Iddergem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Iddergem
 - [3D printen in Denderleeuw](/3d-printen-in-denderleeuw)
 - [3D printen in Welle](/3d-printen-in-welle)
-- [3D printen in Aalst](/3d-printen-in-aalst)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
 ---
 
@@ -126,6 +125,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 ## Gerelateerde buurtpagina's
 - [Buurpagina: 3D printen in Denderleeuw](/3d-printen-in-denderleeuw)
 - [Buurpagina: 3D printen in Welle](/3d-printen-in-welle)
+
+
 
 ## Klantenspotlight
 - Lokale makers en techniekers: kleine reeksen met vaste settings rond Iddergem centrum.

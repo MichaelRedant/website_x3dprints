@@ -1,12 +1,12 @@
 # 3D printing in Oordegem: local, fast and tailored
 
-Need **3D printing in Oordegem**? X3DPrints prints in Herzele and ships quickly to Oordegem and nearby Oordegem centrum. Local 3D printing for Oordegem, Oordegem centrum and Lede, Smetlede, Wanzele: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Oordegem**? X3DPrints prints in Herzele and ships quickly to Oordegem and nearby Lede. Local 3D printing for Oordegem, Lede and Smetlede, Wanzele: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Oordegem teams choose us
 
-- Local delivery to Oordegem, Oordegem centrum and Lede, Smetlede, Wanzele; pickup in Herzele.
+- Local delivery to Oordegem, Lede and Smetlede, Wanzele; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Oordegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Oordegem**? X3DPrints prints in Herzele and ships quickly 
 
 ## Delivery focus for Oordegem
 
-We frequently deliver to: Oordegem, Oordegem centrum, Lede, Smetlede, Wanzele, Afhalen Herzele.
+We frequently deliver to: Oordegem, Oordegem city center, Lede, Smetlede, Wanzele, Pickup in Herzele.
 
 ---
 
 ## What teams near Oordegem ask us to make
 
 - Pilot runs for SMEs around Oordegem, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Oordegem centrum.
-- TPU dampers and grips for gear used in Lede.
+- Functional PETG parts for maintenance teams near Lede.
+- TPU dampers and grips for gear used in Smetlede.
 - Presentation models and mockups for pitches around Oordegem.
 - Brackets, guards and fixtures tuned for teams in Oordegem.
 - Demo pieces and props for events near Oordegem.
@@ -32,9 +32,9 @@ We frequently deliver to: Oordegem, Oordegem centrum, Lede, Smetlede, Wanzele, A
 
 ## What stands out in Oordegem
 
-- Lokale makers en techniekers: tailored PETG/PLA parts for teams around Oordegem centrum.
-- Common ask: 3D print service Oordegem; we advise material and finishing for Lede.
-- Delivery focus: Oordegem, Oordegem centrum, Lede.
+- SMEs and industry near Oordegem: fixtures, enclosures and small to large batches.
+- Common ask in Oordegem: custom 3D printing with practical PLA/PETG/TPU advice for Smetlede.
+- Delivery focus: Oordegem, Oordegem city center, Lede.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Oordegem, Oordegem centrum, Lede, Smetlede, Wanzele, A
 
 ## Sectors we back near Oordegem
 
-- Local projects in Oordegem: Lokale makers en techniekers
-- Local projects in Oordegem: Kleine series en maatwerk
-- Local projects in Oordegem: Verenigingen en scholen
+- SMEs and industry near Oordegem: fixtures, enclosures and small to large batches.
+- Makers and product teams in Oordegem: iterative prototyping and short-run production.
+- Education and labs around Oordegem: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Oordegem
 
-- Paint-ready show models for presentations in Oordegem and Oordegem centrum.
+- Paint-ready show models for presentations in Oordegem and Lede.
 - PLA or PETG functional parts for teams in Oordegem.
-- TPU grips and pads for bikes, tools or fixtures around Oordegem centrum.
+- TPU grips and pads for bikes, tools or fixtures around Lede.
 
 ---
 
@@ -97,7 +97,6 @@ We frequently deliver to: Oordegem, Oordegem centrum, Lede, Smetlede, Wanzele, A
 - [3D printing in Lede](/en/3d-printen-in-lede)
 - [3D printing in Smetlede](/en/3d-printen-in-smetlede)
 - [3D printing in Wanzele](/en/3d-printen-in-wanzele)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Oordeg
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Oordegem
 
-- Coverage: Oordegem, Oordegem centrum, Lede, Smetlede, Wanzele, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Oordegem, Oordegem city center, Lede, Smetlede, Wanzele, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Oordegem.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +122,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Oordeg
 - [Nearby: 3D printing in Wanzele](/en/3d-printen-in-wanzele)
 
 ## Customer spotlight
-- Lokale makers en techniekers: small batches with consistent settings near Oordegem centrum.
-- Common request: 3D print service Oordegem; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Oordegem and Oordegem centrum.
+- SMEs/industry near Oordegem: prototypes, fixtures, housings.
+- Common request: 3D printing service in Oordegem; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Lede and Smetlede.
 
 ## Where we drop off near Oordegem
 - Oordegem town center
@@ -133,12 +132,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Oordeg
 - sports hall in Oordegem
 
 ## Sectors we back near Oordegem
-- Local focus: Lokale makers en techniekers
-- Local focus: Kleine series en maatwerk
-- Local focus: Verenigingen en scholen
+- SMEs/industry near Oordegem: prototypes, fixtures, housings.
+- Makers and product teams in Oordegem: iterative prototyping and short-run production.
+- Education/labs around Oordegem: reliable PLA/PETG parts.
 
 ## Common requests around Oordegem
-- 3D print service Oordegem
-- rapid prototyping Oordegem
-- 3D printing bedrijf Oordegem
+- 3D printing service in Oordegem
+- Custom 3D printing in Oordegem
+- 3D model printing in Oordegem
 <!-- LOCAL_ENRICH_END -->

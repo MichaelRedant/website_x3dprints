@@ -2,7 +2,7 @@
 
 
 
-Voor **3D printen in Nederbrakel** leveren we prototypes en kleine series richting de Markt, sportclubs en ateliers in het centrum van Brakel. Je krijgt strakke prints, snelle levering en materiaaladvies op maat.
+Voor **3D printen in Nederbrakel** leveren we prototypes en zowel kleine als grotere series richting de Markt, sportclubs en ateliers in het centrum van Brakel. Je krijgt strakke prints, snelle levering en materiaaladvies op maat.
 
 
 
@@ -36,11 +36,11 @@ Voor **3D printen in Nederbrakel** leveren we prototypes en kleine series richti
 
 ## Lokale focus in Nederbrakel
 
-Werk je in Nederbrakel? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Nederbrakel? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Ergonomische grips en handgrepen op maat.
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 
 ## Materialen
 
@@ -105,7 +105,7 @@ Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D
 
 ## Veelgestelde vragen over 3D printen in Nederbrakel
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -126,7 +126,13 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Nederbrakel
+- Centrum van Nederbrakel
+- Lokale bedrijvenzone in Nederbrakel
+- Sporthal in Nederbrakel
+
 
 ## Klantenspotlight
 - Lokale teams in Nederbrakel: kleine reeksen met vaste settings rond Nederbrakel.

@@ -1,6 +1,6 @@
 # 3D printen in Tervuren: musea, expats en Druivenstreek
 
-Voor **3D printen in Tervuren** leveren we prototypes, maquettes en kleine series richting centrum, Duisburg, Moorsel en Vossem. Snelle offertes en leveringen langs de Leuvensesteenweg.
+Voor **3D printen in Tervuren** leveren we prototypes, maquettes en zowel kleine als grotere series richting centrum, Duisburg, Moorsel en Vossem. Snelle offertes en leveringen langs de Leuvensesteenweg.
 
 ---
 
@@ -67,3 +67,37 @@ Ja, geef het even mee bij de aanvraag.
 - Museum en Warandepark Tervuren
 - Duisburg en Moorsel
 - Vossem en Leuvensesteenweg-corridor
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Tervuren
+
+- Dekking: Tervuren, Tervuren centrum, Duisburg, Moorsel, Vossem, Leuvensesteenweg-corridor; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Tervuren.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [Buurpagina: 3D printen in Moorsel](/3d-printen-in-moorsel)
+
+
+
+## Spotlight rond Tervuren
+- Musea, events en expat-projecten in Tervuren: behuizingen en pasmallen voor teams in Tervuren centrum.
+- Terugkerende order: 3D print service Tervuren; we bewaren je instellingen.
+- Leverfocus: Tervuren, Tervuren centrum, Duisburg.
+
+## Landmarks in de buurt van Tervuren
+- Centrum van Tervuren
+- Lokale bedrijvenzone in Tervuren
+- Sporthal in Tervuren
+
+## Teams die we ondersteunen rond Tervuren
+- Musea, events en expat-projecten in Tervuren
+- KMO's en kantoren langs de Leuvensesteenweg (Tervuren)
+- Makers en onderwijs in Druivenstreek (Tervuren)
+
+## Wat vaak wordt gevraagd in Tervuren
+- 3D print service Tervuren
+- rapid prototyping Tervuren
+- 3D printing bedrijf Tervuren
+<!-- LOCAL_ENRICH_END -->

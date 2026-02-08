@@ -19,7 +19,7 @@ const contactHref = "/contact?material=pla-matte&quote=Design%20review%20voor%20
 export const metadata: Metadata = {
   title: "Hoe ontwerp je een 3D printbaar model? | X3DPrints",
   description:
-    "Checklist voor printbare modellen met wanddikte, tolerantie, orientatie en export zodat je sneller van CAD naar print gaat.",
+    "Checklist voor printbare modellen met wanddikte, tolerantie, orientatie en export zodat je sneller van 3d ontwerp printen naar 3d model printen gaat.",
   alternates: {
     canonical,
     languages: {
@@ -132,7 +132,7 @@ const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "Hoe ontwerp je een 3D printbaar model?",
   description:
-    "Praktische designgids voor wanddikte, tolerantie, orientatie en export voor 3D print.",
+    "Praktische designgids om 3d ontwerp printen en 3d modellen printen sneller productie-klaar te maken.",
   datePublished,
   dateModified,
   image: "/Logo.webp",
@@ -201,7 +201,7 @@ export default function DesignArticlePage() {
             Hoe ontwerp je een 3D printbaar model?
           </h1>
           <p className="max-w-3xl text-lg text-slate-700">
-            Goede printbaarheid start in je CAD-model. Met enkele kernregels vermijd je mislukte prints en onnodige iteraties.
+            Goede printbaarheid start in je CAD-model. Met enkele kernregels vermijd je mislukte prints en onnodige iteraties in je 3d ontwerp printen traject.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
             Laatst bijgewerkt: 7 februari 2026

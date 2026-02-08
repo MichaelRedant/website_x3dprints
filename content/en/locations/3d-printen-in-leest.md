@@ -15,7 +15,7 @@ Need **3D printing in Leest**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Delivery focus for Leest
 
-We frequently deliver to: Leest.
+We frequently deliver to: Leest, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Leest.
 
 ## What stands out in Leest
 
-- Local SMEs in Leest: tailored PETG/PLA parts for teams around Leest.
-- Common ask: 3D print service Leest; we advise material and finishing for Leest.
-- Delivery focus: Leest.
+- Manufacturing and SMEs around Leest: prototypes, fixtures and housings.
+- Common ask in Leest: custom 3D printing with practical PLA/PETG/TPU advice for Leest.
+- Delivery focus: Leest, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Leest.
 
 ## Recent requests around Leest
 
-- Paint-ready show models for presentations in Leest and Leest.
+- Paint-ready show models for presentations in Leest and the surrounding area.
 - PLA or PETG functional parts for teams in Leest.
-- TPU grips and pads for bikes, tools or fixtures around Leest.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Leest.
 
 ## Useful links near Leest
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +109,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Leest*
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Leest
 
-- Coverage: Leest; delivery from Herzele, pickup available.
+- Coverage: Leest, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Leest.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -121,8 +118,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Leest*
 - [Parent page: 3D printing in Mechelen](/en/3d-printen-in-mechelen)
 
 ## Customer spotlight
-- Local teams in Leest: small batches with consistent settings near Leest.
-- Common request: 3D print service Leest; we pick material and finish for the use case.
+- SMEs and makers in Leest: fixtures and enclosures.
+- Common request: 3D printing service in Leest; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Leest and Leest.
 
 ## Where we drop off near Leest
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Leest*
 - Education/labs around Leest: lesson-ready prints.
 
 ## Common requests around Leest
-- 3D print service Leest
-- rapid prototyping Leest
-- 3D printing bedrijf Leest
+- 3D printing service in Leest
+- Custom 3D printing in Leest
+- 3D model printing in Leest
 <!-- LOCAL_ENRICH_END -->

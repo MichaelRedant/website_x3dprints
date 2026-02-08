@@ -60,7 +60,7 @@ function buildSchema() {
 
   const offerItems: SchemaOfferInput[] = [
     { serviceName: "Prototype prints", price: "EUR 0", description: "Quote + planning", url: `${SITE.url}/services` },
-    { serviceName: "Small batches", price: "EUR 0", description: "Batch advice and unit pricing", url: `${SITE.url}/services` },
+    { serviceName: "Small to large batches", price: "EUR 0", description: "Batch advice and unit pricing", url: `${SITE.url}/services` },
     { serviceName: "Tool organizers", price: "EUR 0", description: "Custom inserts and organizers", url: `${SITE.url}/organizers` },
   ]
 

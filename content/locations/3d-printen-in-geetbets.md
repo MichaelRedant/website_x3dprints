@@ -32,7 +32,7 @@ Voor **3D printen in Geetbets** leveren we prototypes, behuizingen en tooling ri
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica.
+- Kleine en grotere series covers en cases voor elektronica.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Geetbets centrum
 - Grazen
 - Rummen
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Geetbets
+
+- Dekking: Geetbets, Geetbets centrum, Grazen, Rummen, Demerzone, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Geetbets.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Klantenspotlight
+- KMO's en techniekers in Demerstreek: kleine reeksen met vaste settings rond Geetbets centrum.
+- Vaak gevraagd: 3D print service Geetbets; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Geetbets en Geetbets centrum.
+
+## Locaties die we bedienen nabij Geetbets
+- Centrum van Geetbets
+- Lokale bedrijvenzone in Geetbets
+- Sporthal in Geetbets
+
+## Sectorfocus nabij Geetbets
+- KMO's en techniekers in Demerstreek (Geetbets)
+- Retail/events in Geetbets/Rummen
+- Makers en onderwijs in Hageland (Geetbets)
+
+## Typische aanvragen rond Geetbets
+- 3D print service Geetbets
+- rapid prototyping Geetbets
+- 3D printing bedrijf Geetbets
+<!-- LOCAL_ENRICH_END -->

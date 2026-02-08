@@ -30,7 +30,7 @@ Voor **3D printen in Brasschaat** leveren we snelle, nauwkeurige onderdelen rich
 
 - **Outdoor & defensie rond de kazerne**: beschermkappen, custom mounts of hulpstukken die tegen ruw gebruik kunnen.
 
-- **Retail en hospitality aan de Bredabaan**: nette displayhouders, signage-onderdelen of kleine series voor shopinrichting.
+- **Retail en hospitality aan de Bredabaan**: nette displayhouders, signage-onderdelen of kleine en grotere series voor shopinrichting.
 
 - **Vastgoed en events in Park van Brasschaat**: schaalmodellen, maquette-elementen en props met een cleane afwerking.
 
@@ -106,7 +106,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Brasschaat
+- Centrum van Brasschaat
+- Lokale bedrijvenzone in Brasschaat
+- Sporthal in Brasschaat
+
 
 ## Spotlight rond Brasschaat
 - Lokale teams in Brasschaat: behuizingen en pasmallen voor teams in Brasschaat.

@@ -20,7 +20,7 @@ const contactHref = "/contact?material=pla-matte&quote=3D%20printen%20op%20beste
 export const metadata: Metadata = {
   title: "3D printen op bestelling in België | X3DPrints",
   description:
-    "Praktische gids voor 3D printen op bestelling in België: intake, productie, levering en herhaalorders met duidelijke planning.",
+    "Praktische gids voor 3d printen op bestelling in België: intake, 3d model printen, levering en herhaalorders met een duidelijke 3d print service belgie workflow.",
   alternates: {
     canonical,
     languages: {
@@ -120,7 +120,7 @@ const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "3D printen op bestelling in België",
   description:
-    "Praktische gids voor 3D printen op bestelling met intake, materiaaladvies, levering en repeat-order aanpak.",
+    "Praktische gids voor 3d printen op bestelling met intake, 3d model printen, materiaaladvies, levering en repeat-order aanpak.",
   datePublished,
   dateModified,
   image: "/Logo.webp",
@@ -189,7 +189,7 @@ export default function OrderArticlePage() {
             3D printen op bestelling in België: van intake tot levering
           </h1>
           <p className="max-w-3xl text-lg text-slate-700">
-            Het korte antwoord: een goede intake versnelt alles. Met de juiste bestanden en context krijg je snel een duidelijke route voor 3D printen op bestelling.
+            Het korte antwoord: een goede intake versnelt alles. Met de juiste bestanden en context krijg je snel een duidelijke route voor 3d printen op bestelling, 3d model printen en een betrouwbare 3d print service belgie.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
             Laatst bijgewerkt: 7 februari 2026

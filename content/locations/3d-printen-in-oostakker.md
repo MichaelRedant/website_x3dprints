@@ -38,7 +38,7 @@ Op aanvraag zijn ook ABS, ASA of Nylon mogelijk voor technische projecten.
 ## Voor wie is 3D printen in Oostakker interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven gebruiken **3D printen in Oostakker** om productideeën te testen en kleine series te produceren.
+Lokale bedrijven gebruiken **3D printen in Oostakker** om productideeën te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve bewoners zetten hun ideeën om in tastbare objecten met **3D printen in Oostakker**.
@@ -92,8 +92,8 @@ Met **rapid prototyping** via **3D printen in Oostakker** doorloop je sneller de
 
 ## Veelgestelde vragen over 3D printen in Oostakker
 
-**Kunnen jullie kleine series leveren in Oostakker?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Oostakker?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Oostakker?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -102,7 +102,6 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Oostakker of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Gent
-- [3D printen in Gent](/3d-printen-in-gent)
 - [3D printen in Desteldonk](/3d-printen-in-desteldonk)
 - [3D printen in Drongen](/3d-printen-in-drongen)
 - [3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
@@ -136,7 +135,13 @@ Benieuwd hoe **3D printen in Oostakker** jouw idee versterkt? Vraag een **gratis
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Oostakker
+- Centrum van Oostakker
+- Lokale bedrijvenzone in Oostakker
+- Sporthal in Oostakker
+
 
 ## Klantenspotlight
 - Lokale teams in Oostakker: kleine reeksen met vaste settings rond Oostakker.

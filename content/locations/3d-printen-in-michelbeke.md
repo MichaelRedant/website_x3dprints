@@ -38,7 +38,7 @@ Voor **3D printen in Michelbeke** leveren we prototypes en functionele onderdele
 
 Voor projecten in Michelbeke combineren we korte doorlooptijd met strakke afwerking.
 
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 
@@ -126,7 +126,13 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Michelbeke
+- Centrum van Michelbeke
+- Lokale bedrijvenzone in Michelbeke
+- Sporthal in Michelbeke
+
 
 ## Spotlight rond Michelbeke
 - Lokale teams in Michelbeke: behuizingen en pasmallen voor teams in Michelbeke.

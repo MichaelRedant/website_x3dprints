@@ -24,7 +24,7 @@
 
 Voor Doel leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Hooghuis en Scheldemolen.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
 
@@ -46,7 +46,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Tooling en onderdelen die snel moeten passen.
 
 ### Lokale ondernemers
-Prototypes en kleine series met snelle levering.
+Prototypes en zowel kleine als grotere series met snelle levering.
 
 ### Makers en hobbyisten
 Creatieve projecten en snelle iteraties.
@@ -81,7 +81,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -126,6 +126,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Verrebroek](/3d-printen-in-verrebroek)
 - [Buurpagina: 3D printen in Kallo](/3d-printen-in-kallo)
 - [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
+
 
 ## Spotlight rond Doel
 - Lokale ondernemers en makers: behuizingen en pasmallen voor teams in Kieldrecht.

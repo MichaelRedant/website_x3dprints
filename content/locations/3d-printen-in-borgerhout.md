@@ -1,6 +1,6 @@
 # 3D printen in Borgerhout: creatief langs de Turnhoutsebaan
 
-Wil je snel en scherp **3D printen in Borgerhout**? X3DPrints helpt bureaus, makers en organisaties rond de Turnhoutsebaan, De Roma en Park Spoor Oost met prototypes en kleine series. Van custom displays tot functionele onderdelen: we leveren snel, met advies op maat.
+Wil je snel en scherp **3D printen in Borgerhout**? X3DPrints helpt bureaus, makers en organisaties rond de Turnhoutsebaan, De Roma en Park Spoor Oost met prototypes en zowel kleine als grotere series. Van custom displays tot functionele onderdelen: we leveren snel, met advies op maat.
 
 ---
 
@@ -21,7 +21,7 @@ Wil je snel en scherp **3D printen in Borgerhout**? X3DPrints helpt bureaus, mak
 
 Voor projecten in Borgerhout combineren we korte doorlooptijd met strakke afwerking.
 
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 
@@ -81,6 +81,12 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur
 
 ## Gerelateerde buurtpagina's
 - [Hoofdpagina: 3D printen in Antwerpen](/3d-printen-in-antwerpen)
+
+## Lokale punten in Borgerhout
+- Centrum van Borgerhout
+- Lokale bedrijvenzone in Borgerhout
+- Sporthal in Borgerhout
+
 
 ## Klantenspotlight
 - Culturele events en props: kleine reeksen met vaste settings rond Turnhoutsebaan.

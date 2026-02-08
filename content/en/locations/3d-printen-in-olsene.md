@@ -1,12 +1,12 @@
 # 3D printing in Olsene: local, fast and tailored
 
-Need **3D printing in Olsene**? X3DPrints prints in Herzele and ships quickly to Olsene and nearby Olsene centrum. Local 3D printing for Olsene, Olsene centrum and Zulte, Machelen (Zulte), Astene: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Olsene**? X3DPrints prints in Herzele and ships quickly to Olsene and nearby Zulte. Local 3D printing for Olsene, Zulte and Machelen (Zulte), Astene: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Olsene teams choose us
 
-- Local delivery to Olsene, Olsene centrum and Zulte, Machelen (Zulte), Astene; pickup in Herzele.
+- Local delivery to Olsene, Zulte and Machelen (Zulte), Astene; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Olsene.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Olsene**? X3DPrints prints in Herzele and ships quickly to
 
 ## Delivery focus for Olsene
 
-We frequently deliver to: Olsene, Olsene centrum, Zulte, Machelen (Zulte), Astene, Afhalen Herzele.
+We frequently deliver to: Olsene, Olsene city center, Zulte, Machelen (Zulte), Astene, Pickup in Herzele.
 
 ---
 
 ## What teams near Olsene ask us to make
 
 - Pilot runs for SMEs around Olsene, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Olsene centrum.
-- TPU dampers and grips for gear used in Zulte.
+- Functional PETG parts for maintenance teams near Zulte.
+- TPU dampers and grips for gear used in Machelen (Zulte).
 - Presentation models and mockups for pitches around Olsene.
 - Brackets, guards and fixtures tuned for teams in Olsene.
 - Demo pieces and props for events near Olsene.
@@ -32,9 +32,9 @@ We frequently deliver to: Olsene, Olsene centrum, Zulte, Machelen (Zulte), Asten
 
 ## What stands out in Olsene
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Olsene centrum.
-- Common ask: 3D print service Olsene; we advise material and finishing for Zulte.
-- Delivery focus: Olsene, Olsene centrum, Zulte.
+- Makers and product teams in Olsene: iterative prototyping and short-run production.
+- Common ask in Olsene: custom 3D printing with practical PLA/PETG/TPU advice for Machelen (Zulte).
+- Delivery focus: Olsene, Olsene city center, Zulte.
 
 ---
 
@@ -48,17 +48,16 @@ We frequently deliver to: Olsene, Olsene centrum, Zulte, Machelen (Zulte), Asten
 
 ## Sectors we back near Olsene
 
-- Local projects in Olsene: Lokale makers en ontwerpers
-- Local projects in Olsene: Kleine series en maatwerk
+- Makers and product teams in Olsene: iterative prototyping and short-run production.
 - Education and labs around Olsene: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Olsene
 
-- Paint-ready show models for presentations in Olsene and Olsene centrum.
+- Paint-ready show models for presentations in Olsene and Zulte.
 - PLA or PETG functional parts for teams in Olsene.
-- TPU grips and pads for bikes, tools or fixtures around Olsene centrum.
+- TPU grips and pads for bikes, tools or fixtures around Zulte.
 
 ---
 
@@ -97,7 +96,6 @@ We frequently deliver to: Olsene, Olsene centrum, Zulte, Machelen (Zulte), Asten
 - [3D printing in Zulte](/en/3d-printen-in-zulte)
 - [3D printing in Machelen (Zulte)](/en/3d-printen-in-machelen-zulte)
 - [3D printing in Astene](/en/3d-printen-in-astene)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Olsene
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Olsene
 
-- Coverage: Olsene, Olsene centrum, Zulte, Machelen (Zulte), Astene, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Olsene, Olsene city center, Zulte, Machelen (Zulte), Astene, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Olsene.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +121,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Olsene
 - [Nearby: 3D printing in Astene](/en/3d-printen-in-astene)
 
 ## Customer spotlight
-- Lokale makers en ontwerpers: small batches with consistent settings near Olsene centrum.
-- Common request: 3D print service Olsene; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Olsene and Olsene centrum.
+- Makers and product teams in Olsene: iterative prototyping and short-run production.
+- Common request: 3D printing service in Olsene; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Zulte and Machelen (Zulte).
 
 ## Where we drop off near Olsene
 - Olsene town center
@@ -133,12 +131,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Olsene
 - sports hall in Olsene
 
 ## Sectors we back near Olsene
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in Olsene: iterative prototyping and short-run production.
 - Education/labs around Olsene: reliable PLA/PETG parts.
 
 ## Common requests around Olsene
-- 3D print service Olsene
-- rapid prototyping Olsene
-- 3D printing bedrijf Olsene
+- 3D printing service in Olsene
+- Custom 3D printing in Olsene
+- 3D model printing in Olsene
 <!-- LOCAL_ENRICH_END -->

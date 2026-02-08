@@ -1,4 +1,4 @@
-# 3D printen in Welle: functionele onderdelen en kleine series
+# 3D printen in Welle: functionele onderdelen en zowel kleine als grotere series
 
 **3D printen in Welle** is ideaal voor wie betrouwbare kwaliteit en korte doorlooptijd zoekt. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
@@ -42,7 +42,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Welle interessant?
 
 ### KMO's en zelfstandigen
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Onderwijs en makers
 Proefstukken en presentatiemodellen met correcte afwerking.
@@ -80,14 +80,14 @@ Laat uw ontwerp snel testen en optimaliseer met korte feedbackloops.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Welle
 
-**Kunnen jullie kleine series leveren in Welle?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Welle?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Welle?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -98,7 +98,6 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Pietersba
 ## Interne links rond 3D printen in Welle
 - [3D printen in Denderleeuw](/3d-printen-in-denderleeuw)
 - [3D printen in Iddergem](/3d-printen-in-iddergem)
-- [3D printen in Aalst](/3d-printen-in-aalst)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
 ---
 
@@ -124,6 +123,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 ## Dichtbij gelegen locaties
 - [Buurpagina: 3D printen in Denderleeuw](/3d-printen-in-denderleeuw)
 - [Buurpagina: 3D printen in Iddergem](/3d-printen-in-iddergem)
+
+
 
 ## Spotlight rond Welle
 - KMO's en zelfstandigen: behuizingen en pasmallen voor teams in Welle centrum.

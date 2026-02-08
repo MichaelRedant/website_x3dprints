@@ -1,6 +1,6 @@
 # 3D printen in Heikant (Zele): lokaal maatwerk met snelle service
 
-**3D printen in Heikant (Zele)** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Heikant (Zele)** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -25,7 +25,7 @@
 
 In Heikant (Zele) combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test onderdelen snel en stuur bij waar nodig.
 **Welke bestanden kan ik aanleveren voor Heikant (Zele)?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Heikant (Zele)?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Heikant (Zele)?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Heikant (Zele)?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Hamme](/3d-printen-in-hamme)
 - [Buurpagina: 3D printen in Dendermonde](/3d-printen-in-dendermonde)
 
+
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Heikant (Zele) centrum.
 - Vaak gevraagd: 3D print service Heikant Zele; we adviseren materiaal en afwerking.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectorfocus nabij Heikant (Zele)
 - Lokale makers en ontwerpers (Heikant (Zele))
-- Kleine series en maatwerk (Heikant (Zele))
+- Kleine en grotere series en maatwerk (Heikant (Zele))
 - Verenigingen en onderwijs (Heikant (Zele))
 
 ## Typische aanvragen rond Heikant (Zele)

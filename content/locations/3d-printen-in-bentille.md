@@ -1,6 +1,6 @@
 # 3D printen in Bentille: maatwerk dicht bij huis
 
-**3D printen in Bentille** (Kaprijke) is ideaal voor prototypes en kleine series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies, korte doorlooptijd en strakke afwerking.
+**3D printen in Bentille** (Kaprijke) is ideaal voor prototypes en zowel kleine als grotere series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies, korte doorlooptijd en strakke afwerking.
 
 ---
 
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 **Welke bestanden kan ik aanleveren voor Bentille?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Bentille?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Bentille?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Bentille?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -127,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 ## Nabijgelegen pagina's
 - [Buurpagina: 3D printen in Kaprijke](/3d-printen-in-kaprijke)
 - [Buurpagina: 3D printen in Lembeke](/3d-printen-in-lembeke)
+
+
 
 ## Lokale spotlight
 - KMO's en zelfstandigen: PLA/PETG onderdelen afgestemd op projecten rond Bentille kern.

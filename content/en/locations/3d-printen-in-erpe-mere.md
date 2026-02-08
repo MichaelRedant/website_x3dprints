@@ -15,7 +15,7 @@ Need **3D printing in Erpe-mere**? X3DPrints prints in Herzele and ships quickly
 
 ## Areas we serve near Erpe-mere
 
-We frequently deliver to: Erpe-mere.
+We frequently deliver to: Erpe-mere, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Erpe-mere.
 
 ## Local spotlight for Erpe-mere
 
-- Local SMEs in Erpe-mere: tailored PETG/PLA parts for teams around Erpe-mere.
-- Common ask: 3D print service erpe-mere; we advise material and finishing for Erpe-mere.
-- Delivery focus: Erpe-mere.
+- Manufacturing and SMEs around Erpe-mere: prototypes, fixtures and housings.
+- Common ask in Erpe-mere: custom 3D printing with practical PLA/PETG/TPU advice for Erpe-mere.
+- Delivery focus: Erpe-mere, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Erpe-mere.
 
 ## What clients near Erpe-mere often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Erpe-mere.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 - PLA or PETG functional parts for teams in Erpe-mere.
-- Paint-ready show models for presentations in Erpe-mere and Erpe-mere.
+- Paint-ready show models for presentations in Erpe-mere and the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Erpe-mere.
 
 ## Related pages for Erpe-mere
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Erpe-m
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Erpe-mere
 
-- Coverage: Erpe-mere; delivery from Herzele, pickup available.
+- Coverage: Erpe-mere, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Erpe-mere.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Spotlight near Erpe-mere
-- Local teams in Erpe-mere: fixtures and housings for teams around Erpe-mere.
-- Frequent order: 3D print service erpe-mere; we keep settings for reorders.
-- Delivery focus: Erpe-mere.
+- SMEs and makers in Erpe-mere: fixtures and enclosures.
+- Frequent order: 3D printing service in Erpe-mere; we keep settings for reorders.
+- Delivery focus: Erpe-mere, Pickup in Herzele.
 
 ## Landmarks around Erpe-mere
 - Erpe-mere town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Erpe-m
 - Education/labs around Erpe-mere: lesson-ready prints.
 
 ## Frequently asked in Erpe-mere
-- 3D print service erpe-mere
-- rapid prototyping erpe-mere
-- 3D printing bedrijf erpe-mere
+- 3D printing service in Erpe-mere
+- Custom 3D printing in Erpe-mere
+- 3D model printing in Erpe-mere
 <!-- LOCAL_ENRICH_END -->

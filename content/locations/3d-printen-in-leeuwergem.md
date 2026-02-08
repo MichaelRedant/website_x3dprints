@@ -19,7 +19,7 @@
 
 Voor Leeuwergem leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Leeuwergem en Leeuwergem.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -134,7 +134,13 @@ Start vandaag met **3D printen in Leeuwergem** en vraag een **gratis offerte** a
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Leeuwergem
+- Centrum van Leeuwergem
+- Lokale bedrijvenzone in Leeuwergem
+- Sporthal in Leeuwergem
+
 
 ## Spotlight rond Leeuwergem
 - Lokale teams in Leeuwergem: behuizingen en pasmallen voor teams in Leeuwergem.

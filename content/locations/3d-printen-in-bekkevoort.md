@@ -32,7 +32,7 @@ Voor **3D printen in Bekkevoort** leveren we prototypes, behuizingen en tooling 
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica.
+- Kleine en grotere series covers en cases voor elektronica.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Bekkevoort centrum
 - Assent
 - Molenbeek-Wersbeek
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Bekkevoort
+
+- Dekking: Bekkevoort, Bekkevoort centrum, Assent, Molenbeek-Wersbeek, N2/N29-corridor, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Bekkevoort.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Klantenspotlight
+- KMO's en productie langs N2/N29: kleine reeksen met vaste settings rond Bekkevoort centrum.
+- Vaak gevraagd: 3D print service Bekkevoort; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Bekkevoort en Bekkevoort centrum.
+
+## Locaties die we bedienen nabij Bekkevoort
+- Centrum van Bekkevoort
+- Lokale bedrijvenzone in Bekkevoort
+- Sporthal in Bekkevoort
+
+## Sectorfocus nabij Bekkevoort
+- KMO's en productie langs N2/N29 (Bekkevoort)
+- Retail/events in Bekkevoort
+- Makers en onderwijs in Hageland (Bekkevoort)
+
+## Typische aanvragen rond Bekkevoort
+- 3D print service Bekkevoort
+- rapid prototyping Bekkevoort
+- 3D printing bedrijf Bekkevoort
+<!-- LOCAL_ENRICH_END -->

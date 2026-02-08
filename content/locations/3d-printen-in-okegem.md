@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Okegem** ook ABS, ASA, Nylon of PA-CF voor te
 ## Voor wie is 3D printen in Okegem interessant?
 
 ### Lokale ondernemers
-Bedrijven gebruiken **3D printen in Okegem** om prototypes te testen en kleine series te produceren.
+Bedrijven gebruiken **3D printen in Okegem** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Hobbyisten en makers
 Creatieve inwoners realiseren persoonlijke projecten via **3D printen in Okegem**.
@@ -96,8 +96,8 @@ Okegem ligt langs de Dender en heeft een eigen station dat Ninove met Aalst verb
 
 ## Veelgestelde vragen over 3D printen in Okegem
 
-**Kunnen jullie kleine series leveren in Okegem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Okegem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Okegem?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -132,7 +132,13 @@ Wil je ervaren hoe **3D printen in Okegem** jouw project vooruithelpt? Vraag van
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Okegem
+- Centrum van Okegem
+- Lokale bedrijvenzone in Okegem
+- Sporthal in Okegem
+
 
 ## Lokale spotlight
 - Lokale teams in Okegem: PLA/PETG onderdelen afgestemd op projecten rond Okegem.

@@ -1,6 +1,6 @@
 # 3D printen in Vurste: sterke onderdelen met snelle service
 
-**3D printen in Vurste** (Gavere) is ideaal voor prototypes en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Vurste** (Gavere) is ideaal voor prototypes en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -42,7 +42,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Vurste interessant?
 
 ### Lokale ondernemers
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Projecten langs de Schelde
 Robuuste prints die tegen een stootje kunnen.
@@ -80,7 +80,7 @@ Test uw ontwerp snel en optimaliseer zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -89,8 +89,8 @@ Test uw ontwerp snel en optimaliseer zonder tijdverlies.
 **Welke bestanden kan ik aanleveren voor Vurste?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Vurste?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Vurste?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Vurste?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -127,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Semmerzake](/3d-printen-in-semmerzake)
 - [Buurpagina: 3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
 - [Hoofdpagina: 3D printen in Baaigem](/3d-printen-in-baaigem)
+
+
 
 ## Spotlight rond Vurste
 - Lokale ondernemers en makers: behuizingen en pasmallen voor teams in Vurste centrum.

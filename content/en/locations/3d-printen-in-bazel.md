@@ -1,12 +1,12 @@
 # 3D printing in Bazel: local, fast and tailored
 
-Need **3D printing in Bazel**? X3DPrints prints in Herzele and ships quickly to Bazel and nearby Bazel centrum. Local 3D printing for Bazel, Bazel centrum and Kruibeke, Rupelmonde, Burcht: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Bazel**? X3DPrints prints in Herzele and ships quickly to Bazel and nearby Kruibeke. Local 3D printing for Bazel, Kruibeke and Rupelmonde, Burcht: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Bazel teams choose us
 
-- Local delivery to Bazel, Bazel centrum and Kruibeke, Rupelmonde, Burcht; pickup in Herzele.
+- Local delivery to Bazel, Kruibeke and Rupelmonde, Burcht; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Bazel.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Bazel**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Delivery focus for Bazel
 
-We frequently deliver to: Bazel, Bazel centrum, Kruibeke, Rupelmonde, Burcht, Afhalen Herzele.
+We frequently deliver to: Bazel, Bazel city center, Kruibeke, Rupelmonde, Burcht, Pickup in Herzele.
 
 ---
 
 ## What teams near Bazel ask us to make
 
 - Pilot runs for SMEs around Bazel, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Bazel centrum.
-- TPU dampers and grips for gear used in Kruibeke.
+- Functional PETG parts for maintenance teams near Kruibeke.
+- TPU dampers and grips for gear used in Rupelmonde.
 - Presentation models and mockups for pitches around Bazel.
 - Brackets, guards and fixtures tuned for teams in Bazel.
 - Demo pieces and props for events near Bazel.
@@ -32,9 +32,9 @@ We frequently deliver to: Bazel, Bazel centrum, Kruibeke, Rupelmonde, Burcht, Af
 
 ## What stands out in Bazel
 
-- Lokale ondernemers en techniekers: tailored PETG/PLA parts for teams around Bazel centrum.
-- Common ask: 3D print service Bazel; we advise material and finishing for Kruibeke.
-- Delivery focus: Bazel, Bazel centrum, Kruibeke.
+- SMEs and industry near Bazel: fixtures, enclosures and small to large batches.
+- Common ask in Bazel: custom 3D printing with practical PLA/PETG/TPU advice for Rupelmonde.
+- Delivery focus: Bazel, Bazel city center, Kruibeke.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Bazel, Bazel centrum, Kruibeke, Rupelmonde, Burcht, Af
 
 ## Sectors we back near Bazel
 
-- Local projects in Bazel: Lokale ondernemers en techniekers
-- Local projects in Bazel: Makers en hobbyisten
+- SMEs and industry near Bazel: fixtures, enclosures and small to large batches.
+- Makers and product teams in Bazel: iterative prototyping and short-run production.
 - Retail/marketing/events in Bazel: displays, props and branded pieces.
 
 ---
 
 ## Recent requests around Bazel
 
-- Paint-ready show models for presentations in Bazel and Bazel centrum.
+- Paint-ready show models for presentations in Bazel and Kruibeke.
 - PLA or PETG functional parts for teams in Bazel.
-- TPU grips and pads for bikes, tools or fixtures around Bazel centrum.
+- TPU grips and pads for bikes, tools or fixtures around Kruibeke.
 
 ---
 
@@ -97,7 +97,6 @@ We frequently deliver to: Bazel, Bazel centrum, Kruibeke, Rupelmonde, Burcht, Af
 - [3D printing in Kruibeke](/en/3d-printen-in-kruibeke)
 - [3D printing in Rupelmonde](/en/3d-printen-in-rupelmonde)
 - [3D printing in Burcht](/en/3d-printen-in-burcht)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Bazel*
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Bazel
 
-- Coverage: Bazel, Bazel centrum, Kruibeke, Rupelmonde, Burcht, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Bazel, Bazel city center, Kruibeke, Rupelmonde, Burcht, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Bazel.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +123,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Bazel*
 - [Parent page: 3D printing in Beveren-Kruibeke-Zwijndrecht](/en/3d-printen-in-beveren-kruibeke-zwijndrecht)
 
 ## Customer spotlight
-- Lokale ondernemers en techniekers: small batches with consistent settings near Bazel centrum.
-- Common request: 3D print service Bazel; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Bazel and Bazel centrum.
+- SMEs/industry near Bazel: prototypes, fixtures, housings.
+- Common request: 3D printing service in Bazel; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Kruibeke and Rupelmonde.
 
 ## Where we drop off near Bazel
 - Bazel town center
@@ -134,12 +133,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Bazel*
 - sports hall in Bazel
 
 ## Sectors we back near Bazel
-- Local focus: Lokale ondernemers en techniekers
-- Local focus: Makers en hobbyisten
+- SMEs/industry near Bazel: prototypes, fixtures, housings.
+- Makers and product teams in Bazel: iterative prototyping and short-run production.
 - Retail/marketing/events in Bazel: displays, signage, props.
 
 ## Common requests around Bazel
-- 3D print service Bazel
-- rapid prototyping Bazel
-- 3D printing bedrijf Bazel
+- 3D printing service in Bazel
+- Custom 3D printing in Bazel
+- 3D model printing in Bazel
 <!-- LOCAL_ENRICH_END -->

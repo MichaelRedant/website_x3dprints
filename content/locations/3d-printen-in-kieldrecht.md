@@ -22,7 +22,7 @@
 
 ## Lokale focus in Kieldrecht
 
-Werk je in Kieldrecht? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Sint-Michielskerk.
+Werk je in Kieldrecht? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Michielskerk.
 
 - Displays en presentatiemodellen voor expo's en musea.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -46,7 +46,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Tooling en onderdelen die snel moeten passen.
 
 ### Lokale ondernemers
-Prototypes en kleine series met snelle levering.
+Prototypes en zowel kleine als grotere series met snelle levering.
 
 ### Makers en hobbyisten
 Creatieve projecten en snelle iteraties.
@@ -81,14 +81,14 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Kieldrecht
 
-**Kunnen jullie kleine series leveren in Kieldrecht?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Kieldrecht?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Kieldrecht?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -126,6 +126,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Verrebroek](/3d-printen-in-verrebroek)
 - [Buurpagina: 3D printen in Kallo](/3d-printen-in-kallo)
 - [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
+
 
 ## Lokale spotlight
 - Lokale KMO's en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Kieldrecht centrum.

@@ -1,6 +1,6 @@
 # 3D printen in Sint-Maria-Horebeke: lokaal maatwerk met korte lead time
 
-**3D printen in Sint-Maria-Horebeke** (Horebeke) is ideaal voor prototypes en kleine series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Sint-Maria-Horebeke** (Horebeke) is ideaal voor prototypes en zowel kleine als grotere series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -26,7 +26,7 @@
 In Sint-Maria-Horebeke combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Sint-Maria-Horebeke
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Maquettes en presentatiemodellen met strakke details.
 
 ### Lokale ondernemers
-Kleine series en onderdelen op maat met snelle levering.
+Kleine en grotere series en onderdelen op maat met snelle levering.
 
 ### Verenigingen en scholen
 Projecten met duidelijke planning en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -101,7 +101,6 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 - [3D printen in Horebeke](/3d-printen-in-horebeke)
 - [3D printen in Sint-Kornelis-Horebeke](/3d-printen-in-sint-kornelis-horebeke)
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 ---
 
 ## Externe links
@@ -127,6 +126,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 ## Gerelateerde buurtpagina's
 - [Buurpagina: 3D printen in Horebeke](/3d-printen-in-horebeke)
 - [Buurpagina: 3D printen in Sint-Kornelis-Horebeke](/3d-printen-in-sint-kornelis-horebeke)
+
+
 
 ## Klantenspotlight
 - Lokale makers en techniekers: kleine reeksen met vaste settings rond Sint-Maria-Horebeke centrum.

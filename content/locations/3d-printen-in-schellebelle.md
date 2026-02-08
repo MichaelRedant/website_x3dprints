@@ -1,6 +1,6 @@
 # 3D printen in Schellebelle: lokaal maatwerk met snelle service
 
-**3D printen in Schellebelle** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Schellebelle** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -26,7 +26,7 @@
 In Schellebelle helpen we projecten rond Schellebelle sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 
 ## Materialen voor 3D printen in Schellebelle
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Serskamp](/3d-printen-in-serskamp)
 - [Buurpagina: 3D printen in Wetteren](/3d-printen-in-wetteren)
 
+
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Schellebelle centrum.
 - Vaak gevraagd: 3D print service Schellebelle; we adviseren materiaal en afwerking.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectorfocus nabij Schellebelle
 - Lokale makers en ontwerpers (Schellebelle)
-- Kleine series en maatwerk (Schellebelle)
+- Kleine en grotere series en maatwerk (Schellebelle)
 - Verenigingen en onderwijs (Schellebelle)
 
 ## Typische aanvragen rond Schellebelle

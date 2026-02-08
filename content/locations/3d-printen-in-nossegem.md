@@ -1,6 +1,6 @@
 # 3D printen in Nossegem: tussen Zaventem en Leuven
 
-Voor **3D printen in Nossegem** leveren we prototypes, behuizingen en kleine series richting Leuvensesteenweg en station. Snelle offertes en leveringen afgestemd op kantoor- en retailvensters.
+Voor **3D printen in Nossegem** leveren we prototypes, behuizingen en zowel kleine als grotere series richting Leuvensesteenweg en station. Snelle offertes en leveringen afgestemd op kantoor- en retailvensters.
 
 ---
 
@@ -32,7 +32,7 @@ Voor **3D printen in Nossegem** leveren we prototypes, behuizingen en kleine ser
 
 - Brackets en passtukken voor kantoren en installs.
 - Signage en props voor campagnes in centrum.
-- Kleine series covers voor sensoren en elektronica.
+- Kleine en grotere series covers voor sensoren en elektronica.
 
 ---
 
@@ -61,3 +61,37 @@ Stuur je bestanden via [contact](/contact). Je krijgt snel een voorstel voor **3
 - Nossegem centrum
 - Station Nossegem
 - Leuvensesteenweg
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Nossegem
+
+- Dekking: Nossegem, Nossegem centrum, Leuvensesteenweg, Zaventem rand, Station Nossegem, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Nossegem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Hoofdpagina: 3D printen in Zaventem](/3d-printen-in-zaventem)
+
+
+
+## Klantenspotlight
+- Kantoren en tech langs Leuvensesteenweg: kleine reeksen met vaste settings rond Nossegem centrum.
+- Vaak gevraagd: 3D print service Nossegem; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Nossegem en Nossegem centrum.
+
+## Locaties die we bedienen nabij Nossegem
+- Centrum van Nossegem
+- Lokale bedrijvenzone in Nossegem
+- Sporthal in Nossegem
+
+## Sectorfocus nabij Nossegem
+- Kantoren en tech langs Leuvensesteenweg (Nossegem)
+- Retail en events in Nossegem/Zaventem
+- Makers en onderwijs in de rand (Nossegem)
+
+## Typische aanvragen rond Nossegem
+- 3D print service Nossegem
+- rapid prototyping Nossegem
+- 3D printing bedrijf Nossegem
+<!-- LOCAL_ENRICH_END -->

@@ -21,7 +21,7 @@ const contactHref =
 export const metadata: Metadata = {
   title: "3D printing on demand | X3DPrints",
   description:
-    "Practical guide to ordering 3D prints on demand with clear intake, production planning and repeat-order workflow.",
+    "Practical guide to ordering 3D prints on demand with clear intake, 3D model print planning and repeat-order workflow for 3D printing Gent and Belgium projects.",
   alternates: {
     canonical,
     languages: {
@@ -190,7 +190,7 @@ export default function OrderArticleEnPage() {
             3D printing on demand: intake to delivery
           </h1>
           <p className="max-w-3xl text-lg text-slate-700">
-            Short version: clean intake data speeds up everything. Send the right context and your project moves faster.
+            Short version: clean intake data speeds up everything. Send the right context and your 3D model print project moves faster, especially for 3D printing Gent and nearby deliveries.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
             Last updated: February 7, 2026

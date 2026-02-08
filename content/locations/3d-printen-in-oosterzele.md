@@ -1,6 +1,6 @@
 # 3D printen in Oosterzele: De Kluize, Gondebeekvallei en streekprojecten
 
-Voor **3D printen in Oosterzele** levert X3DPrints prototypes en kleine series richting GC De Kluize, de Gondebeekvallei en ondernemingen rond de N42. Je krijgt heldere prijzen, strakke toleranties en materiaaladvies op maat.
+Voor **3D printen in Oosterzele** levert X3DPrints prototypes en zowel kleine als grotere series richting GC De Kluize, de Gondebeekvallei en ondernemingen rond de N42. Je krijgt heldere prijzen, strakke toleranties en materiaaladvies op maat.
 
 ---
 
@@ -39,7 +39,7 @@ In Oosterzele helpen we makers en bedrijven met 3D prints die vlot passen en lan
 
 - Props en signage voor events in De Kluize of lokale verenigingen.
 - Behuizingen en klemmen voor installaties langs N42 of fietssnelweg.
-- Displays en kleine series voor winkels in de dorpskern.
+- Displays en zowel kleine als grotere series voor winkels in de dorpskern.
 
 ---
 
@@ -79,7 +79,13 @@ Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Oosterzele
+- Centrum van Oosterzele
+- Lokale bedrijvenzone in Oosterzele
+- Sporthal in Oosterzele
+
 
 ## Spotlight rond Oosterzele
 - Lokale teams in Oosterzele: behuizingen en pasmallen voor teams in Oosterzele.

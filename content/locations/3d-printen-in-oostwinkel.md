@@ -1,4 +1,4 @@
-# 3D printen in Oostwinkel: snelle prototypes en kleine series
+# 3D printen in Oostwinkel: snelle prototypes en zowel kleine als grotere series
 
 **3D printen in Oostwinkel** (Lievegem) is ideaal voor prototypes en maatwerk met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
@@ -27,7 +27,7 @@ In Oostwinkel combineren we detailwerk met functionele onderdelen; je krijgt sne
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Oostwinkel
 
@@ -82,14 +82,14 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Oostwinkel
 
-**Kunnen jullie kleine series leveren in Oostwinkel?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Oostwinkel?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Oostwinkel?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Lievegem](/3d-printen-in-lievegem)
 - [Buurpagina: 3D printen in Waarschoot](/3d-printen-in-waarschoot)
 - [Buurpagina: 3D printen in Zomergem](/3d-printen-in-zomergem)
+
+
 
 ## Spotlight rond Oostwinkel
 - Lokale makers en techniekers: behuizingen en pasmallen voor teams in Oostwinkel centrum.

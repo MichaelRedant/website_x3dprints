@@ -1,12 +1,12 @@
 # 3D printing in Petegem-aan-de-Schelde: local, fast and tailored
 
-Need **3D printing in Petegem-aan-de-Schelde**? X3DPrints prints in Herzele and ships quickly to Petegem-aan-de-Schelde and nearby Petegem-aan-de-Schelde centrum. Local 3D printing for Petegem-aan-de-Schelde, Petegem-aan-de-Schelde centrum and Wortegem-Petegem, Wortegem, Moregem: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Petegem-aan-de-Schelde**? X3DPrints prints in Herzele and ships quickly to Petegem-aan-de-Schelde and nearby Wortegem-Petegem. Local 3D printing for Petegem-aan-de-Schelde, Wortegem-Petegem and Wortegem, Moregem: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Petegem-aan-de-Schelde teams choose us
 
-- Local delivery to Petegem-aan-de-Schelde, Petegem-aan-de-Schelde centrum and Wortegem-Petegem, Wortegem, Moregem; pickup in Herzele.
+- Local delivery to Petegem-aan-de-Schelde, Wortegem-Petegem and Wortegem, Moregem; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Petegem-aan-de-Schelde.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Petegem-aan-de-Schelde**? X3DPrints prints in Herzele and 
 
 ## Delivery focus for Petegem-aan-de-Schelde
 
-We frequently deliver to: Petegem-aan-de-Schelde, Petegem-aan-de-Schelde centrum, Wortegem-Petegem, Wortegem, Moregem, Elsegem, Afhalen Herzele.
+We frequently deliver to: Petegem-aan-de-Schelde, Petegem-aan-de-Schelde city center, Wortegem-Petegem, Wortegem, Moregem, Elsegem, Pickup in Herzele.
 
 ---
 
 ## What teams near Petegem-aan-de-Schelde ask us to make
 
 - Pilot runs for SMEs around Petegem-aan-de-Schelde, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Petegem-aan-de-Schelde centrum.
-- TPU dampers and grips for gear used in Wortegem-Petegem.
+- Functional PETG parts for maintenance teams near Wortegem-Petegem.
+- TPU dampers and grips for gear used in Wortegem.
 - Presentation models and mockups for pitches around Petegem-aan-de-Schelde.
 - Brackets, guards and fixtures tuned for teams in Petegem-aan-de-Schelde.
 - Demo pieces and props for events near Petegem-aan-de-Schelde.
@@ -32,9 +32,9 @@ We frequently deliver to: Petegem-aan-de-Schelde, Petegem-aan-de-Schelde centrum
 
 ## What stands out in Petegem-aan-de-Schelde
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Petegem-aan-de-Schelde centrum.
-- Common ask: 3D print service Petegem-aan-de-Schelde; we advise material and finishing for Wortegem-Petegem.
-- Delivery focus: Petegem-aan-de-Schelde, Petegem-aan-de-Schelde centrum, Wortegem-Petegem.
+- Makers and product teams in Petegem-aan-de-Schelde: iterative prototyping and short-run production.
+- Common ask in Petegem-aan-de-Schelde: custom 3D printing with practical PLA/PETG/TPU advice for Wortegem.
+- Delivery focus: Petegem-aan-de-Schelde, Petegem-aan-de-Schelde city center, Wortegem-Petegem.
 
 ---
 
@@ -48,17 +48,16 @@ We frequently deliver to: Petegem-aan-de-Schelde, Petegem-aan-de-Schelde centrum
 
 ## Sectors we back near Petegem-aan-de-Schelde
 
-- Local projects in Petegem-aan-de-Schelde: Lokale makers en ontwerpers
-- Local projects in Petegem-aan-de-Schelde: Kleine series en maatwerk
+- Makers and product teams in Petegem-aan-de-Schelde: iterative prototyping and short-run production.
 - Education and labs around Petegem-aan-de-Schelde: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Petegem-aan-de-Schelde
 
-- Paint-ready show models for presentations in Petegem-aan-de-Schelde and Petegem-aan-de-Schelde centrum.
+- Paint-ready show models for presentations in Petegem-aan-de-Schelde and Wortegem-Petegem.
 - PLA or PETG functional parts for teams in Petegem-aan-de-Schelde.
-- TPU grips and pads for bikes, tools or fixtures around Petegem-aan-de-Schelde centrum.
+- TPU grips and pads for bikes, tools or fixtures around Wortegem-Petegem.
 
 ---
 
@@ -97,7 +96,7 @@ We frequently deliver to: Petegem-aan-de-Schelde, Petegem-aan-de-Schelde centrum
 - [3D printing in Wortegem-Petegem](/en/3d-printen-in-wortegem-petegem)
 - [3D printing in Wortegem](/en/3d-printen-in-wortegem)
 - [3D printing in Moregem](/en/3d-printen-in-moregem)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [3D printing in Elsegem](/en/3d-printen-in-elsegem)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Petege
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Petegem-aan-de-Schelde
 
-- Coverage: Petegem-aan-de-Schelde, Petegem-aan-de-Schelde centrum, Wortegem-Petegem, Wortegem, Moregem, Elsegem; delivery from Herzele, pickup available.
+- Coverage: Petegem-aan-de-Schelde, Petegem-aan-de-Schelde city center, Wortegem-Petegem, Wortegem, Moregem, Elsegem; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Petegem-aan-de-Schelde.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +123,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Petege
 - [Nearby: 3D printing in Elsegem](/en/3d-printen-in-elsegem)
 
 ## Customer spotlight
-- Lokale makers en ontwerpers: small batches with consistent settings near Petegem-aan-de-Schelde centrum.
-- Common request: 3D print service Petegem-aan-de-Schelde; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Petegem-aan-de-Schelde and Petegem-aan-de-Schelde centrum.
+- Makers and product teams in Petegem-aan-de-Schelde: iterative prototyping and short-run production.
+- Common request: 3D printing service in Petegem-aan-de-Schelde; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Wortegem-Petegem and Wortegem.
 
 ## Where we drop off near Petegem-aan-de-Schelde
 - Petegem-aan-de-Schelde town center
@@ -134,12 +133,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Petege
 - sports hall in Petegem-aan-de-Schelde
 
 ## Sectors we back near Petegem-aan-de-Schelde
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in Petegem-aan-de-Schelde: iterative prototyping and short-run production.
 - Education/labs around Petegem-aan-de-Schelde: reliable PLA/PETG parts.
 
 ## Common requests around Petegem-aan-de-Schelde
-- 3D print service Petegem-aan-de-Schelde
-- rapid prototyping Petegem-aan-de-Schelde
-- 3D printing bedrijf Petegem-aan-de-Schelde
+- 3D printing service in Petegem-aan-de-Schelde
+- Custom 3D printing in Petegem-aan-de-Schelde
+- 3D model printing in Petegem-aan-de-Schelde
 <!-- LOCAL_ENRICH_END -->

@@ -27,7 +27,7 @@ In Zomergem combineren we detailwerk met functionele onderdelen; je krijgt snell
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Zomergem
 
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,8 +94,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Zomergem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Zomergem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Zomergem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Zomergem
 - [3D printen in Lievegem](/3d-printen-in-lievegem)
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Ronsele](/3d-printen-in-ronsele)
 - [Hoofdpagina: 3D printen in Lovendegem](/3d-printen-in-lovendegem)
 
+
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Zomergem centrum.
 - Vaak gevraagd: 3D print service Zomergem; we adviseren materiaal en afwerking.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in Zomergem
 - Lokale makers en ontwerpers (Zomergem)
-- Kleine series en maatwerk (Zomergem)
+- Kleine en grotere series en maatwerk (Zomergem)
 - Verenigingen en scholen (Zomergem)
 
 ## Veelgevraagde zoekopdrachten in Zomergem

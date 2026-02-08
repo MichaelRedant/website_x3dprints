@@ -19,7 +19,7 @@ Voor **3D printen in Viane** levert X3DPrints prototypes en functionele onderdel
 
 ## Lokale focus in Viane
 
-Werk je in Viane? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Viane? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 - Behuizingen en covers voor elektronica, sensoren of prototypes.
@@ -39,7 +39,7 @@ Werk je in Viane? We leveren snelle prototypes en kleine series op maat, met mat
 
 - Props en schaalmodellen voor kasteel- of toeristische projecten.
 - Hulponderdelen voor pendel- en mobiliteitsoplossingen rond station Viane-Moerbeke.
-- Kleine series displays voor lokale retail of diensten.
+- Kleine en grotere series displays voor lokale retail of diensten.
 
 ---
 
@@ -64,7 +64,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -77,7 +77,13 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Viane
+- Centrum van Viane
+- Lokale bedrijvenzone in Viane
+- Sporthal in Viane
+
 
 ## Spotlight rond Viane
 - Lokale teams in Viane: behuizingen en pasmallen voor teams in Viane.

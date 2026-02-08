@@ -67,3 +67,38 @@ Ja. Geef het even mee bij je aanvraag; we sturen een NDA terug voordat we files 
 - Brussels Airport en Brucargo
 - Sterrebeek en Nossegem
 - Leuvensesteenweg-corridor
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Zaventem
+
+- Dekking: Zaventem, Zaventem centrum, Brussels Airport en Brucargo, Nossegem, Sterrebeek, Leuvensesteenweg-corridor; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Zaventem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Buurpagina: 3D printen in Nossegem](/3d-printen-in-nossegem)
+- [Buurpagina: 3D printen in Sterrebeek](/3d-printen-in-sterrebeek)
+
+
+
+## Lokale spotlight
+- Aviation en logistiek rond de luchthaven: PLA/PETG onderdelen afgestemd op projecten rond Zaventem centrum.
+- Vaak gevraagd: 3D print service Zaventem; we adviseren materiaal en afwerking.
+- Leverfocus: Zaventem, Zaventem centrum, Brussels Airport en Brucargo.
+
+## Plaatsen waar we vaak leveren rond Zaventem
+- Centrum van Zaventem
+- Lokale bedrijvenzone in Zaventem
+- Sporthal in Zaventem
+
+## Sectoren die we vaak helpen in Zaventem
+- Aviation en logistiek rond de luchthaven (Zaventem)
+- Kantoren en tech in Zaventem en Sterrebeek
+- Events en retail in de Vlaamse Rand (Zaventem)
+
+## Veelgevraagde zoekopdrachten in Zaventem
+- 3D print service Zaventem
+- rapid prototyping Zaventem
+- 3D printing bedrijf Zaventem
+<!-- LOCAL_ENRICH_END -->

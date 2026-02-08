@@ -1,6 +1,6 @@
 # 3D printen in Maldegem: lokaal, snel en met oog voor detail
 
-X3DPrints levert nauwkeurige 3D prints in Maldegem en deelgemeenten. We helpen makers, kmo’s en scholen met prototypes, kleine series en vervangstukken, met korte lijnen richting Stoomcentrum Maldegem en Drongengoedbos.
+X3DPrints levert nauwkeurige 3D prints in Maldegem en deelgemeenten. We helpen makers, kmo’s en scholen met prototypes, kleine en grotere series en vervangstukken, met korte lijnen richting Stoomcentrum Maldegem en Drongengoedbos.
 
 ---
 
@@ -74,6 +74,12 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 
 ## Gerelateerde buurtpagina's
 - [Hoofdpagina: 3D printen in Eeklo](/3d-printen-in-eeklo)
+
+## Lokale punten in Maldegem
+- Centrum van Maldegem
+- Lokale bedrijvenzone in Maldegem
+- Sporthal in Maldegem
+
 
 ## Klantenspotlight
 - Lokale teams in Maldegem: kleine reeksen met vaste settings rond Maldegem.

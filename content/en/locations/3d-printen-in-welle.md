@@ -1,12 +1,12 @@
 # 3D printing in Welle: local, fast and tailored
 
-Need **3D printing in Welle**? X3DPrints prints in Herzele and ships quickly to Welle and nearby Welle centrum. Local 3D printing for Welle, Welle centrum and Denderleeuw, Iddergem, Afhalen Herzele: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Welle**? X3DPrints prints in Herzele and ships quickly to Welle and nearby Denderleeuw. Local 3D printing for Welle, Denderleeuw and Iddergem: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Welle teams choose us
 
-- Local delivery to Welle, Welle centrum and Denderleeuw, Iddergem, Afhalen Herzele; pickup in Herzele.
+- Local delivery to Welle, Denderleeuw and Iddergem; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Welle.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Welle**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Areas we serve near Welle
 
-We frequently deliver to: Welle, Welle centrum, Denderleeuw, Iddergem, Afhalen Herzele.
+We frequently deliver to: Welle, Welle city center, Denderleeuw, Iddergem, Pickup in Herzele.
 
 ---
 
 ## Projects we help deliver near Welle
 
 - Prototype housings and fixtures used by teams in Welle.
-- Short-run batches that stay consistent for companies near Welle centrum.
-- Replacement brackets and guards for workshops around Denderleeuw.
+- Short-run batches that stay consistent for companies near Denderleeuw.
+- Replacement brackets and guards for workshops around Iddergem.
 - Display pieces and branded props for events near Welle.
 - Brackets, guards and fixtures tuned for teams in Welle.
 - Demo pieces and props for events near Welle.
@@ -32,9 +32,9 @@ We frequently deliver to: Welle, Welle centrum, Denderleeuw, Iddergem, Afhalen H
 
 ## Local spotlight for Welle
 
-- KMO's en zelfstandigen: tailored PETG/PLA parts for teams around Welle centrum.
-- Common ask: 3D print service Welle; we advise material and finishing for Denderleeuw.
-- Delivery focus: Welle, Welle centrum, Denderleeuw.
+- SMEs and industry near Welle: fixtures, enclosures and small to large batches.
+- Common ask in Welle: custom 3D printing with practical PLA/PETG/TPU advice for Iddergem.
+- Delivery focus: Welle, Welle city center, Denderleeuw.
 
 ---
 
@@ -48,7 +48,7 @@ We frequently deliver to: Welle, Welle centrum, Denderleeuw, Iddergem, Afhalen H
 
 ## Who we support around Welle
 
-- SMEs and industry near Welle: fixtures, enclosures and small batches.
+- SMEs and industry near Welle: fixtures, enclosures and small to large batches.
 - Education and labs around Welle: lesson-ready prints in PLA/PETG.
 - Retail/marketing/events in Welle: displays, props and branded pieces.
 
@@ -56,9 +56,9 @@ We frequently deliver to: Welle, Welle centrum, Denderleeuw, Iddergem, Afhalen H
 
 ## What clients near Welle often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Welle centrum.
+- TPU grips and pads for bikes, tools or fixtures around Denderleeuw.
 - PLA or PETG functional parts for teams in Welle.
-- Paint-ready show models for presentations in Welle and Welle centrum.
+- Paint-ready show models for presentations in Welle and Denderleeuw.
 
 ---
 
@@ -96,8 +96,6 @@ We frequently deliver to: Welle, Welle centrum, Denderleeuw, Iddergem, Afhalen H
 
 - [3D printing in Denderleeuw](/en/3d-printen-in-denderleeuw)
 - [3D printing in Iddergem](/en/3d-printen-in-iddergem)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Welle*
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Welle
 
-- Coverage: Welle, Welle centrum, Denderleeuw, Iddergem, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Welle, Welle city center, Denderleeuw, Iddergem, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Welle.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -122,9 +120,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Welle*
 - [Nearby: 3D printing in Iddergem](/en/3d-printen-in-iddergem)
 
 ## Spotlight near Welle
-- KMO's en zelfstandigen: fixtures and housings for teams around Welle centrum.
-- Frequent order: 3D print service Welle; we keep settings for reorders.
-- Delivery focus: Welle, Welle centrum, Denderleeuw.
+- SMEs/industry near Welle: prototypes, fixtures, housings.
+- Frequent order: 3D printing service in Welle; we keep settings for reorders.
+- Delivery focus: Welle, Welle city center, Denderleeuw.
 
 ## Landmarks around Welle
 - Welle town center
@@ -137,7 +135,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Welle*
 - Retail/marketing/events in Welle: displays, signage, props.
 
 ## Frequently asked in Welle
-- 3D print service Welle
-- rapid prototyping Welle
-- 3D printing bedrijf Welle
+- 3D printing service in Welle
+- Custom 3D printing in Welle
+- 3D model printing in Welle
 <!-- LOCAL_ENRICH_END -->

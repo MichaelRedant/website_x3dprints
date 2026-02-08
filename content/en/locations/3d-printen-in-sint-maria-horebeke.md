@@ -1,12 +1,12 @@
 # 3D printing in Sint-Maria-Horebeke: local, fast and tailored
 
-Need **3D printing in Sint-Maria-Horebeke**? X3DPrints prints in Herzele and ships quickly to Sint-Maria-Horebeke and nearby Sint-Maria-Horebeke centrum. Local 3D printing for Sint-Maria-Horebeke, Sint-Maria-Horebeke centrum and Horebeke, Sint-Kornelis-Horebeke, Afhalen Herzele: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Sint-Maria-Horebeke**? X3DPrints prints in Herzele and ships quickly to Sint-Maria-Horebeke and nearby Horebeke. Local 3D printing for Sint-Maria-Horebeke, Horebeke and Sint-Kornelis-Horebeke: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Sint-Maria-Horebeke teams choose us
 
-- Local delivery to Sint-Maria-Horebeke, Sint-Maria-Horebeke centrum and Horebeke, Sint-Kornelis-Horebeke, Afhalen Herzele; pickup in Herzele.
+- Local delivery to Sint-Maria-Horebeke, Horebeke and Sint-Kornelis-Horebeke; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Maria-Horebeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Sint-Maria-Horebeke**? X3DPrints prints in Herzele and shi
 
 ## Delivery focus for Sint-Maria-Horebeke
 
-We frequently deliver to: Sint-Maria-Horebeke, Sint-Maria-Horebeke centrum, Horebeke, Sint-Kornelis-Horebeke, Afhalen Herzele.
+We frequently deliver to: Sint-Maria-Horebeke, Sint-Maria-Horebeke city center, Horebeke, Sint-Kornelis-Horebeke, Pickup in Herzele.
 
 ---
 
 ## What teams near Sint-Maria-Horebeke ask us to make
 
 - Pilot runs for SMEs around Sint-Maria-Horebeke, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Sint-Maria-Horebeke centrum.
-- TPU dampers and grips for gear used in Horebeke.
+- Functional PETG parts for maintenance teams near Horebeke.
+- TPU dampers and grips for gear used in Sint-Kornelis-Horebeke.
 - Presentation models and mockups for pitches around Sint-Maria-Horebeke.
 - Brackets, guards and fixtures tuned for teams in Sint-Maria-Horebeke.
 - Demo pieces and props for events near Sint-Maria-Horebeke.
@@ -32,9 +32,9 @@ We frequently deliver to: Sint-Maria-Horebeke, Sint-Maria-Horebeke centrum, Hore
 
 ## What stands out in Sint-Maria-Horebeke
 
-- Lokale makers en techniekers: tailored PETG/PLA parts for teams around Sint-Maria-Horebeke centrum.
-- Common ask: 3D print service Sint-Maria-Horebeke; we advise material and finishing for Horebeke.
-- Delivery focus: Sint-Maria-Horebeke, Sint-Maria-Horebeke centrum, Horebeke.
+- SMEs and industry near Sint-Maria-Horebeke: fixtures, enclosures and small to large batches.
+- Common ask in Sint-Maria-Horebeke: custom 3D printing with practical PLA/PETG/TPU advice for Sint-Kornelis-Horebeke.
+- Delivery focus: Sint-Maria-Horebeke, Sint-Maria-Horebeke city center, Horebeke.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Sint-Maria-Horebeke, Sint-Maria-Horebeke centrum, Hore
 
 ## Sectors we back near Sint-Maria-Horebeke
 
-- Local projects in Sint-Maria-Horebeke: Lokale makers en techniekers
-- Local projects in Sint-Maria-Horebeke: Creatieve projecten en maquettes
-- Local projects in Sint-Maria-Horebeke: Verenigingen en scholen
+- SMEs and industry near Sint-Maria-Horebeke: fixtures, enclosures and small to large batches.
+- Local teams in Sint-Maria-Horebeke: custom 3D printing for prototypes and functional parts.
+- Education and labs around Sint-Maria-Horebeke: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Sint-Maria-Horebeke
 
-- Paint-ready show models for presentations in Sint-Maria-Horebeke and Sint-Maria-Horebeke centrum.
+- Paint-ready show models for presentations in Sint-Maria-Horebeke and Horebeke.
 - PLA or PETG functional parts for teams in Sint-Maria-Horebeke.
-- TPU grips and pads for bikes, tools or fixtures around Sint-Maria-Horebeke centrum.
+- TPU grips and pads for bikes, tools or fixtures around Horebeke.
 
 ---
 
@@ -96,8 +96,6 @@ We frequently deliver to: Sint-Maria-Horebeke, Sint-Maria-Horebeke centrum, Hore
 
 - [3D printing in Horebeke](/en/3d-printen-in-horebeke)
 - [3D printing in Sint-Kornelis-Horebeke](/en/3d-printen-in-sint-kornelis-horebeke)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-M
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Sint-Maria-Horebeke
 
-- Coverage: Sint-Maria-Horebeke, Sint-Maria-Horebeke centrum, Horebeke, Sint-Kornelis-Horebeke, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Sint-Maria-Horebeke, Sint-Maria-Horebeke city center, Horebeke, Sint-Kornelis-Horebeke, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Sint-Maria-Horebeke.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -122,9 +120,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-M
 - [Nearby: 3D printing in Sint-Kornelis-Horebeke](/en/3d-printen-in-sint-kornelis-horebeke)
 
 ## Customer spotlight
-- Lokale makers en techniekers: small batches with consistent settings near Sint-Maria-Horebeke centrum.
-- Common request: 3D print service Sint-Maria-Horebeke; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Sint-Maria-Horebeke and Sint-Maria-Horebeke centrum.
+- SMEs/industry near Sint-Maria-Horebeke: prototypes, fixtures, housings.
+- Common request: 3D printing service in Sint-Maria-Horebeke; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Horebeke and Sint-Kornelis-Horebeke.
 
 ## Where we drop off near Sint-Maria-Horebeke
 - Sint-Maria-Horebeke town center
@@ -132,12 +130,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-M
 - sports hall in Sint-Maria-Horebeke
 
 ## Sectors we back near Sint-Maria-Horebeke
-- Local focus: Lokale makers en techniekers
-- Local focus: Creatieve projecten en maquettes
-- Local focus: Verenigingen en scholen
+- SMEs/industry near Sint-Maria-Horebeke: prototypes, fixtures, housings.
+- Local teams in Sint-Maria-Horebeke: custom 3D printing for prototypes and functional parts.
+- Education/labs around Sint-Maria-Horebeke: reliable PLA/PETG parts.
 
 ## Common requests around Sint-Maria-Horebeke
-- 3D print service Sint-Maria-Horebeke
-- rapid prototyping Sint-Maria-Horebeke
-- 3D printing bedrijf Sint-Maria-Horebeke
+- 3D printing service in Sint-Maria-Horebeke
+- Custom 3D printing in Sint-Maria-Horebeke
+- 3D model printing in Sint-Maria-Horebeke
 <!-- LOCAL_ENRICH_END -->

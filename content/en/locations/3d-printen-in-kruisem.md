@@ -15,7 +15,7 @@ Need **3D printing in Kruisem**? X3DPrints prints in Herzele and ships quickly t
 
 ## Areas we serve near Kruisem
 
-We frequently deliver to: Kruisem.
+We frequently deliver to: Kruisem, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Kruisem.
 
 ## Local spotlight for Kruisem
 
-- Local SMEs in Kruisem: tailored PETG/PLA parts for teams around Kruisem.
-- Common ask: 3D print service Kruisem; we advise material and finishing for Kruisem.
-- Delivery focus: Kruisem.
+- Manufacturing and SMEs around Kruisem: prototypes, fixtures and housings.
+- Common ask in Kruisem: custom 3D printing with practical PLA/PETG/TPU advice for Kruisem.
+- Delivery focus: Kruisem, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Kruisem.
 
 ## What clients near Kruisem often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Kruisem.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 - PLA or PETG functional parts for teams in Kruisem.
-- Paint-ready show models for presentations in Kruisem and Kruisem.
+- Paint-ready show models for presentations in Kruisem and the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Kruisem.
 
 ## Related pages for Kruisem
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Kruise
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Kruisem
 
-- Coverage: Kruisem; delivery from Herzele, pickup available.
+- Coverage: Kruisem, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Kruisem.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Spotlight near Kruisem
-- Local teams in Kruisem: fixtures and housings for teams around Kruisem.
-- Frequent order: 3D print service Kruisem; we keep settings for reorders.
-- Delivery focus: Kruisem.
+- SMEs and makers in Kruisem: fixtures and enclosures.
+- Frequent order: 3D printing service in Kruisem; we keep settings for reorders.
+- Delivery focus: Kruisem, Pickup in Herzele.
 
 ## Landmarks around Kruisem
 - Kruisem town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Kruise
 - Education/labs around Kruisem: lesson-ready prints.
 
 ## Frequently asked in Kruisem
-- 3D print service Kruisem
-- rapid prototyping Kruisem
-- 3D printing bedrijf Kruisem
+- 3D printing service in Kruisem
+- Custom 3D printing in Kruisem
+- 3D model printing in Kruisem
 <!-- LOCAL_ENRICH_END -->

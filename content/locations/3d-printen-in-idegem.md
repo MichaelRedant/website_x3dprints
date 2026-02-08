@@ -19,7 +19,7 @@ Voor **3D printen in Idegem** levert X3DPrints prototypes en functionele onderde
 
 ## Lokale focus in Idegem
 
-Werk je in Idegem? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Idegem? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 - Behuizingen en covers voor elektronica, sensoren of prototypes.
@@ -77,7 +77,13 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Idegem
+- Centrum van Idegem
+- Lokale bedrijvenzone in Idegem
+- Sporthal in Idegem
+
 
 ## Klantenspotlight
 - Lokale teams in Idegem: kleine reeksen met vaste settings rond Idegem.

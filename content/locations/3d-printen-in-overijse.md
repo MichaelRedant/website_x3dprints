@@ -1,6 +1,6 @@
 # 3D printen in Overijse: druivenstreek en E411
 
-Met **3D printen in Overijse** leveren we prototypes en kleine series richting centrum, Jezus-Eik en de E411-corridor. Snelle offertes, duidelijke prijzen en leveringen zonder gedoe.
+Met **3D printen in Overijse** leveren we prototypes en zowel kleine als grotere series richting centrum, Jezus-Eik en de E411-corridor. Snelle offertes, duidelijke prijzen en leveringen zonder gedoe.
 
 ---
 
@@ -35,7 +35,7 @@ We kennen events, retail en KMO's in de Druivenstreek. Daardoor stemmen we mater
 
 - Retailprops en signage in centrum en Jezus-Eik.
 - Technische passtukken voor bedrijven langs de E411.
-- Kleine series behuizingen en brackets voor installaties.
+- Kleine en grotere series behuizingen en brackets voor installaties.
 
 ---
 
@@ -67,3 +67,37 @@ Ja. We bewaren slicerinstellingen en plannen levermomenten per batch.
 - Overijse centrum
 - Jezus-Eik
 - E411-corridor
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Overijse
+
+- Dekking: Overijse, Overijse centrum, Jezus-Eik, E411-corridor, Maleizen en Terlanen, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Overijse.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Spotlight rond Overijse
+- Events en retail in de Druivenstreek: behuizingen en pasmallen voor teams in Overijse centrum.
+- Terugkerende order: 3D print service Overijse; we bewaren je instellingen.
+- Leverfocus: Overijse, Overijse centrum, Jezus-Eik.
+
+## Landmarks in de buurt van Overijse
+- Centrum van Overijse
+- Lokale bedrijvenzone in Overijse
+- Sporthal in Overijse
+
+## Teams die we ondersteunen rond Overijse
+- Events en retail in de Druivenstreek (Overijse)
+- KMO's en techniekers langs de E411 (Overijse)
+- Makers en onderwijs in Overijse
+
+## Wat vaak wordt gevraagd in Overijse
+- 3D print service Overijse
+- rapid prototyping Overijse
+- 3D printing bedrijf Overijse
+<!-- LOCAL_ENRICH_END -->

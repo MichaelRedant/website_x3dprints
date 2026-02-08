@@ -1,6 +1,6 @@
 # 3D printen in Goeferdinge: tussen Raspaillebos en Dender
 
-Voor **3D printen in Goeferdinge** levert X3DPrints prototypes en kleine series richting Raspaillebos, Dender en dorpskern. Je krijgt strakke prints met duidelijke prijzen.
+Voor **3D printen in Goeferdinge** levert X3DPrints prototypes en zowel kleine als grotere series richting Raspaillebos, Dender en dorpskern. Je krijgt strakke prints met duidelijke prijzen.
 
 ---
 
@@ -19,11 +19,11 @@ Voor **3D printen in Goeferdinge** levert X3DPrints prototypes en kleine series 
 
 ## Lokale focus in Goeferdinge
 
-Werk je in Goeferdinge? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Goeferdinge? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Ergonomische grips en handgrepen op maat.
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 
 ## Materialen
 
@@ -56,7 +56,7 @@ Upload je bestand en ontvang snel een voorstel voor **3D printen in Goeferdinge*
 
 ## Veelgestelde vragen over 3D printen in Goeferdinge
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -77,7 +77,13 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Goeferdinge
+- Centrum van Goeferdinge
+- Lokale bedrijvenzone in Goeferdinge
+- Sporthal in Goeferdinge
+
 
 ## Lokale spotlight
 - Lokale teams in Goeferdinge: PLA/PETG onderdelen afgestemd op projecten rond Goeferdinge.

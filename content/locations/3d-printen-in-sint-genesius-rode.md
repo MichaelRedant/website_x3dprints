@@ -32,7 +32,7 @@ Met **3D printen in Sint-Genesius-Rode** leveren we prototypes, behuizingen en t
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor installateurs en kantoren.
-- Kleine series covers en cases voor elektronica en IoT.
+- Kleine en grotere series covers en cases voor elektronica en IoT.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je bestanden via [contact](/contact). Je krijgt snel een voorstel voor **3
 - Sint-Genesius-Rode centrum
 - Alsemberg rand
 - R0 zuidrand
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Sint-Genesius-Rode
+
+- Dekking: Sint-Genesius-Rode, Sint-Genesius-Rode centrum, Alsemberg rand, Ukkel/Zoniënbos grens, R0 zuid, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Genesius-Rode.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Retail/events in de zuidrand: PLA/PETG onderdelen afgestemd op projecten rond Sint-Genesius-Rode centrum.
+- Vaak gevraagd: 3D print service Sint-Genesius-Rode; we adviseren materiaal en afwerking.
+- Leverfocus: Sint-Genesius-Rode, Sint-Genesius-Rode centrum, Alsemberg rand.
+
+## Plaatsen waar we vaak leveren rond Sint-Genesius-Rode
+- Centrum van Sint-Genesius-Rode
+- Lokale bedrijvenzone in Sint-Genesius-Rode
+- Sporthal in Sint-Genesius-Rode
+
+## Sectoren die we vaak helpen in Sint-Genesius-Rode
+- Retail/events in de zuidrand (Sint-Genesius-Rode)
+- Kantoren/tech in Sint-Genesius-Rode
+- Makers en onderwijs in de regio (Sint-Genesius-Rode)
+
+## Veelgevraagde zoekopdrachten in Sint-Genesius-Rode
+- 3D print service Sint-Genesius-Rode
+- rapid prototyping Sint-Genesius-Rode
+- 3D printing bedrijf Sint-Genesius-Rode
+<!-- LOCAL_ENRICH_END -->

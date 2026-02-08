@@ -65,7 +65,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Nokere
+- Centrum van Nokere
+- Lokale bedrijvenzone in Nokere
+- Sporthal in Nokere
+
 
 ## Lokale spotlight
 - Lokale teams in Nokere: PLA/PETG onderdelen afgestemd op projecten rond Nokere.

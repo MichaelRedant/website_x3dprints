@@ -1,12 +1,12 @@
 # 3D printing in Borsbeek: local, fast and tailored
 
-Need **3D printing in Borsbeek**? X3DPrints prints in Herzele and ships quickly to Borsbeek and nearby Borsbeek centrum. Local 3D printing for Borsbeek, Borsbeek centrum and Fort 3, Luchthavenzone, Deurne: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Borsbeek**? X3DPrints prints in Herzele and ships quickly to Borsbeek and nearby Fort 3. Local 3D printing for Borsbeek, Fort 3 and Luchthavenzone, Deurne: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Borsbeek teams choose us
 
-- Local delivery to Borsbeek, Borsbeek centrum and Fort 3, Luchthavenzone, Deurne; pickup in Herzele.
+- Local delivery to Borsbeek, Fort 3 and Luchthavenzone, Deurne; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Borsbeek.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Borsbeek**? X3DPrints prints in Herzele and ships quickly 
 
 ## Delivery focus for Borsbeek
 
-We frequently deliver to: Borsbeek, Borsbeek centrum, Fort 3, Luchthavenzone, Deurne, Afhalen Herzele.
+We frequently deliver to: Borsbeek, Borsbeek city center, Fort 3, Luchthavenzone, Deurne, Pickup in Herzele.
 
 ---
 
 ## What teams near Borsbeek ask us to make
 
 - Pilot runs for SMEs around Borsbeek, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Borsbeek centrum.
-- TPU dampers and grips for gear used in Fort 3.
+- Functional PETG parts for maintenance teams near Fort 3.
+- TPU dampers and grips for gear used in Luchthavenzone.
 - Presentation models and mockups for pitches around Borsbeek.
 - Brackets, guards and fixtures tuned for teams in Borsbeek.
 - Demo pieces and props for events near Borsbeek.
@@ -32,9 +32,9 @@ We frequently deliver to: Borsbeek, Borsbeek centrum, Fort 3, Luchthavenzone, De
 
 ## What stands out in Borsbeek
 
-- Luchtvaart/lucht-hubs: tailored PETG/PLA parts for teams around Borsbeek centrum.
-- Common ask: 3D print service Borsbeek; we advise material and finishing for Fort 3.
-- Delivery focus: Borsbeek, Borsbeek centrum, Fort 3.
+- Local teams in Borsbeek: custom 3D printing for prototypes and functional parts.
+- Common ask in Borsbeek: custom 3D printing with practical PLA/PETG/TPU advice for Luchthavenzone.
+- Delivery focus: Borsbeek, Borsbeek city center, Fort 3.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Borsbeek, Borsbeek centrum, Fort 3, Luchthavenzone, De
 
 ## Sectors we back near Borsbeek
 
-- Local projects in Borsbeek: Luchtvaart/lucht-hubs
-- SMEs and industry near Borsbeek: fixtures, enclosures and small batches.
+- Local teams in Borsbeek: custom 3D printing for prototypes and functional parts.
+- SMEs and industry near Borsbeek: fixtures, enclosures and small to large batches.
 - Retail/marketing/events in Borsbeek: displays, props and branded pieces.
 
 ---
 
 ## Recent requests around Borsbeek
 
-- Paint-ready show models for presentations in Borsbeek and Borsbeek centrum.
+- Paint-ready show models for presentations in Borsbeek and Fort 3.
 - PLA or PETG functional parts for teams in Borsbeek.
-- TPU grips and pads for bikes, tools or fixtures around Borsbeek centrum.
+- TPU grips and pads for bikes, tools or fixtures around Fort 3.
 
 ---
 
@@ -95,9 +95,6 @@ We frequently deliver to: Borsbeek, Borsbeek centrum, Fort 3, Luchthavenzone, De
 ## Useful links near Borsbeek
 
 - [3D printing in Deurne](/en/3d-printen-in-deurne)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +109,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Borsbe
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Borsbeek
 
-- Coverage: Borsbeek, Borsbeek centrum, Fort 3, Luchthavenzone, Deurne, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Borsbeek, Borsbeek city center, Fort 3, Luchthavenzone, Deurne, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Borsbeek.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -121,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Borsbe
 - [Nearby: 3D printing in Deurne](/en/3d-printen-in-deurne)
 
 ## Customer spotlight
-- Luchtvaart/lucht-hubs: small batches with consistent settings near Borsbeek centrum.
-- Common request: 3D print service Borsbeek; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Borsbeek and Borsbeek centrum.
+- Local teams in Borsbeek: custom 3D printing for prototypes and functional parts.
+- Common request: 3D printing service in Borsbeek; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Fort 3 and Luchthavenzone.
 
 ## Where we drop off near Borsbeek
 - Borsbeek town center
@@ -131,12 +128,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Borsbe
 - sports hall in Borsbeek
 
 ## Sectors we back near Borsbeek
-- Local focus: Luchtvaart/lucht-hubs
+- Local teams in Borsbeek: custom 3D printing for prototypes and functional parts.
 - SMEs/industry near Borsbeek: prototypes, fixtures, housings.
 - Retail/marketing/events in Borsbeek: displays, signage, props.
 
 ## Common requests around Borsbeek
-- 3D print service Borsbeek
-- rapid prototyping Borsbeek
-- 3D printing bedrijf Borsbeek
+- 3D printing service in Borsbeek
+- Custom 3D printing in Borsbeek
+- 3D model printing in Borsbeek
 <!-- LOCAL_ENRICH_END -->

@@ -1,12 +1,12 @@
 # 3D printing in Deurne: local, fast and tailored
 
-Need **3D printing in Deurne**? X3DPrints prints in Herzele and ships quickly to Deurne and nearby Deurne centrum. Local 3D printing for Deurne, Deurne centrum and Rivierenhof, Sportpaleis omgeving, Haven-Zuid: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Deurne**? X3DPrints prints in Herzele and ships quickly to Deurne and nearby Rivierenhof. Local 3D printing for Deurne, Rivierenhof and Sportpaleis omgeving, Haven-Zuid: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Deurne teams choose us
 
-- Local delivery to Deurne, Deurne centrum and Rivierenhof, Sportpaleis omgeving, Haven-Zuid; pickup in Herzele.
+- Local delivery to Deurne, Rivierenhof and Sportpaleis omgeving, Haven-Zuid; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Deurne.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Deurne**? X3DPrints prints in Herzele and ships quickly to
 
 ## Delivery focus for Deurne
 
-We frequently deliver to: Deurne, Deurne centrum, Rivierenhof, Sportpaleis omgeving, Haven-Zuid, Borgerhout/Antwerpen oost, Afhalen Herzele.
+We frequently deliver to: Deurne, Deurne city center, Rivierenhof, Sportpaleis omgeving, Haven-Zuid, Borgerhout/Antwerpen oost, Pickup in Herzele.
 
 ---
 
 ## What teams near Deurne ask us to make
 
 - Pilot runs for SMEs around Deurne, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Deurne centrum.
-- TPU dampers and grips for gear used in Rivierenhof.
+- Functional PETG parts for maintenance teams near Rivierenhof.
+- TPU dampers and grips for gear used in Sportpaleis omgeving.
 - Presentation models and mockups for pitches around Deurne.
 - Brackets, guards and fixtures tuned for teams in Deurne.
 - Demo pieces and props for events near Deurne.
@@ -32,9 +32,9 @@ We frequently deliver to: Deurne, Deurne centrum, Rivierenhof, Sportpaleis omgev
 
 ## What stands out in Deurne
 
-- Events/props rond Sportpaleis: tailored PETG/PLA parts for teams around Deurne centrum.
-- Common ask: 3D print service Deurne; we advise material and finishing for Rivierenhof.
-- Delivery focus: Deurne, Deurne centrum, Rivierenhof.
+- Retail/marketing/events in Deurne: displays, props and branded pieces.
+- Common ask in Deurne: custom 3D printing with practical PLA/PETG/TPU advice for Sportpaleis omgeving.
+- Delivery focus: Deurne, Deurne city center, Rivierenhof.
 
 ---
 
@@ -49,16 +49,16 @@ We frequently deliver to: Deurne, Deurne centrum, Rivierenhof, Sportpaleis omgev
 ## Sectors we back near Deurne
 
 - Retail/marketing/events in Deurne: displays, props and branded pieces.
-- SMEs and industry near Deurne: fixtures, enclosures and small batches.
-- Education and labs around Deurne: lesson-ready prints in PLA/PETG.
+- Local teams in Deurne: custom 3D printing for prototypes and functional parts.
+- SMEs and industry near Deurne: fixtures, enclosures and small to large batches.
 
 ---
 
 ## Recent requests around Deurne
 
-- Paint-ready show models for presentations in Deurne and Deurne centrum.
+- Paint-ready show models for presentations in Deurne and Rivierenhof.
 - PLA or PETG functional parts for teams in Deurne.
-- TPU grips and pads for bikes, tools or fixtures around Deurne centrum.
+- TPU grips and pads for bikes, tools or fixtures around Rivierenhof.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Deurne, Deurne centrum, Rivierenhof, Sportpaleis omgev
 
 ## Useful links near Deurne
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +109,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Deurne
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Deurne
 
-- Coverage: Deurne, Deurne centrum, Rivierenhof, Sportpaleis omgeving, Haven-Zuid, Borgerhout/Antwerpen oost; delivery from Herzele, pickup available.
+- Coverage: Deurne, Deurne city center, Rivierenhof, Sportpaleis omgeving, Haven-Zuid, Borgerhout/Antwerpen oost; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Deurne.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -121,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Deurne
 - [Parent page: 3D printing in Borsbeek](/en/3d-printen-in-borsbeek)
 
 ## Customer spotlight
-- Events/props rond Sportpaleis: small batches with consistent settings near Deurne centrum.
-- Common request: 3D print service Deurne; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Deurne and Deurne centrum.
+- Retail/marketing/events in Deurne: displays, signage, props.
+- Common request: 3D printing service in Deurne; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Rivierenhof and Sportpaleis omgeving.
 
 ## Where we drop off near Deurne
 - Deurne town center
@@ -132,11 +129,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Deurne
 
 ## Sectors we back near Deurne
 - Retail/marketing/events in Deurne: displays, signage, props.
+- Local teams in Deurne: custom 3D printing for prototypes and functional parts.
 - SMEs/industry near Deurne: prototypes, fixtures, housings.
-- Education/labs around Deurne: reliable PLA/PETG parts.
 
 ## Common requests around Deurne
-- 3D print service Deurne
-- rapid prototyping Deurne
-- 3D printing bedrijf Deurne
+- 3D printing service in Deurne
+- Custom 3D printing in Deurne
+- 3D model printing in Deurne
 <!-- LOCAL_ENRICH_END -->

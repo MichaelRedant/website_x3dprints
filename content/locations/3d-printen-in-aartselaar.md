@@ -2,7 +2,7 @@
 
 
 
-Wie **3D printen in Aartselaar** zoekt, wil snelheid én precisie. Vanuit Herzele leveren we prototypes en kleine series richting Cleydael Golf, de bedrijvenzones langs de Boomsesteenweg (A12) en ateliers in het dorpscentrum. We stemmen materiaal, tolerantie en afwerking af op je toepassing zodat je onderdelen meteen inzetbaar zijn.
+Wie **3D printen in Aartselaar** zoekt, wil snelheid én precisie. Vanuit Herzele leveren we prototypes en zowel kleine als grotere series richting Cleydael Golf, de bedrijvenzones langs de Boomsesteenweg (A12) en ateliers in het dorpscentrum. We stemmen materiaal, tolerantie en afwerking af op je toepassing zodat je onderdelen meteen inzetbaar zijn.
 
 
 
@@ -81,7 +81,7 @@ Wie **3D printen in Aartselaar** zoekt, wil snelheid én precisie. Vanuit Herzel
 In Aartselaar helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
 
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 
 
@@ -108,7 +108,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Aartselaar
+- Centrum van Aartselaar
+- Lokale bedrijvenzone in Aartselaar
+- Sporthal in Aartselaar
+
 
 ## Spotlight rond Aartselaar
 - Lokale teams in Aartselaar: behuizingen en pasmallen voor teams in Aartselaar.

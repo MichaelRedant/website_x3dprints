@@ -15,7 +15,7 @@ Need **3D printing in Lint**? X3DPrints prints in Herzele and ships quickly to L
 
 ## Delivery focus for Lint
 
-We frequently deliver to: Lint.
+We frequently deliver to: Lint, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Lint.
 
 ## What stands out in Lint
 
-- Local SMEs in Lint: tailored PETG/PLA parts for teams around Lint.
-- Common ask: 3D print service Lint; we advise material and finishing for Lint.
-- Delivery focus: Lint.
+- Manufacturing and SMEs around Lint: prototypes, fixtures and housings.
+- Common ask in Lint: custom 3D printing with practical PLA/PETG/TPU advice for Lint.
+- Delivery focus: Lint, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Lint.
 
 ## Recent requests around Lint
 
-- Paint-ready show models for presentations in Lint and Lint.
+- Paint-ready show models for presentations in Lint and the surrounding area.
 - PLA or PETG functional parts for teams in Lint.
-- TPU grips and pads for bikes, tools or fixtures around Lint.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Lint.
 
 ## Useful links near Lint
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,17 +109,17 @@ Send your files today and get a clear, fast proposal for **3D printing in Lint**
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Lint
 
-- Coverage: Lint; delivery from Herzele, pickup available.
+- Coverage: Lint, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Lint.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Customer spotlight
-- Local teams in Lint: small batches with consistent settings near Lint.
-- Common request: 3D print service Lint; we pick material and finish for the use case.
+- SMEs and makers in Lint: fixtures and enclosures.
+- Common request: 3D printing service in Lint; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Lint and Lint.
 
 ## Where we drop off near Lint
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Lint**
 - Education/labs around Lint: lesson-ready prints.
 
 ## Common requests around Lint
-- 3D print service Lint
-- rapid prototyping Lint
-- 3D printing bedrijf Lint
+- 3D printing service in Lint
+- Custom 3D printing in Lint
+- 3D model printing in Lint
 <!-- LOCAL_ENRICH_END -->

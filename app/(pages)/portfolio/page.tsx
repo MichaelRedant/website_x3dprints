@@ -43,7 +43,7 @@ const NL_METADATA: Metadata = {
   },
 }
 
-export const EN_METADATA: Metadata = {
+const EN_METADATA: Metadata = {
   title: "3D printing portfolio & case studies | X3DPrints",
   description:
     "See real-world 3D printing projects: functional parts, merchandising and gifts produced in Herzele (Ghent).",
@@ -72,6 +72,9 @@ export const EN_METADATA: Metadata = {
     images: ["/images/portfolio/2d-5-3.webp"],
   },
 }
+
+
+void EN_METADATA
 
 export const metadata: Metadata = NL_METADATA
 

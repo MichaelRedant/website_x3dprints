@@ -80,7 +80,13 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en aan
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Merksem
+- Centrum van Merksem
+- Lokale bedrijvenzone in Merksem
+- Sporthal in Merksem
+
 
 ## Spotlight rond Merksem
 - Retail/props Bredabaan: behuizingen en pasmallen voor teams in Merksem centrum.

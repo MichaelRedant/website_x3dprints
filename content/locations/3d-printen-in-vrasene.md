@@ -22,9 +22,9 @@
 
 ## Lokale focus in Vrasene
 
-Werk je in Vrasene? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Heilig Kruiskerk.
+Werk je in Vrasene? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Heilig Kruiskerk.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -43,7 +43,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Vrasene interessant?
 
 ### Lokale ondernemers
-Onderdelen en kleine series met snelle levering.
+Onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Technische herstellingen
 Maatwerk onderdelen die snel moeten passen.
@@ -81,7 +81,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -125,6 +125,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Haasdonk](/3d-printen-in-haasdonk)
 - [Buurpagina: 3D printen in Melsele](/3d-printen-in-melsele)
 - [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
+
 
 ## Klantenspotlight
 - Lokale ondernemers en makers: kleine reeksen met vaste settings rond Vrasene centrum.

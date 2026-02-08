@@ -32,7 +32,7 @@ Voor **3D printen in Kraainem** leveren we prototypes, behuizingen en tooling ri
 
 - Brackets en covers voor kantoorinstallaties.
 - Signage en props voor lokale campagnes.
-- Kleine series behuizingen voor sensoren en elektronica.
+- Kleine en grotere series behuizingen voor sensoren en elektronica.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je ontvangt snel een voorstel voor **3D 
 - Kraainem centrum
 - Leuvensesteenweg
 - R0 aansluiting
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Kraainem
+
+- Dekking: Kraainem, Kraainem centrum, Leuvensesteenweg, Ring/R0 aansluiting, Tram/bus-corridor Kraainem, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kraainem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Klantenspotlight
+- Kantoren en tech in Kraainem: kleine reeksen met vaste settings rond Kraainem centrum.
+- Vaak gevraagd: 3D print service Kraainem; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Kraainem en Kraainem centrum.
+
+## Locaties die we bedienen nabij Kraainem
+- Centrum van Kraainem
+- Lokale bedrijvenzone in Kraainem
+- Sporthal in Kraainem
+
+## Sectorfocus nabij Kraainem
+- Kantoren en tech in Kraainem
+- Retail en events in de Vlaamse Rand (Kraainem)
+- Installateurs en makers langs de Leuvensesteenweg (Kraainem)
+
+## Typische aanvragen rond Kraainem
+- 3D print service Kraainem
+- rapid prototyping Kraainem
+- 3D printing bedrijf Kraainem
+<!-- LOCAL_ENRICH_END -->

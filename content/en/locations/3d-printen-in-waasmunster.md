@@ -1,12 +1,12 @@
 # 3D printing in Waasmunster: local, fast and tailored
 
-Need **3D printing in Waasmunster**? X3DPrints prints in Herzele and ships quickly to Waasmunster and nearby Waasmunster centrum. Local 3D printing for Waasmunster, Waasmunster centrum and Sombeke, Hamme, Lokeren: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Waasmunster**? X3DPrints prints in Herzele and ships quickly to Waasmunster and nearby Sombeke. Local 3D printing for Waasmunster, Sombeke and Hamme, Lokeren: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Waasmunster teams choose us
 
-- Local delivery to Waasmunster, Waasmunster centrum and Sombeke, Hamme, Lokeren; pickup in Herzele.
+- Local delivery to Waasmunster, Sombeke and Hamme, Lokeren; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Waasmunster.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Waasmunster**? X3DPrints prints in Herzele and ships quick
 
 ## Delivery focus for Waasmunster
 
-We frequently deliver to: Waasmunster, Waasmunster centrum, Sombeke, Hamme, Lokeren, Afhalen Herzele.
+We frequently deliver to: Waasmunster, Waasmunster city center, Sombeke, Hamme, Lokeren, Pickup in Herzele.
 
 ---
 
 ## What teams near Waasmunster ask us to make
 
 - Pilot runs for SMEs around Waasmunster, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Waasmunster centrum.
-- TPU dampers and grips for gear used in Sombeke.
+- Functional PETG parts for maintenance teams near Sombeke.
+- TPU dampers and grips for gear used in Hamme.
 - Presentation models and mockups for pitches around Waasmunster.
 - Brackets, guards and fixtures tuned for teams in Waasmunster.
 - Demo pieces and props for events near Waasmunster.
@@ -32,9 +32,9 @@ We frequently deliver to: Waasmunster, Waasmunster centrum, Sombeke, Hamme, Loke
 
 ## What stands out in Waasmunster
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Waasmunster centrum.
-- Common ask: 3D print service Waasmunster; we advise material and finishing for Sombeke.
-- Delivery focus: Waasmunster, Waasmunster centrum, Sombeke.
+- Makers and product teams in Waasmunster: iterative prototyping and short-run production.
+- Common ask in Waasmunster: custom 3D printing with practical PLA/PETG/TPU advice for Hamme.
+- Delivery focus: Waasmunster, Waasmunster city center, Sombeke.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Waasmunster, Waasmunster centrum, Sombeke, Hamme, Loke
 
 ## Sectors we back near Waasmunster
 
-- Local projects in Waasmunster: Lokale makers en ontwerpers
-- SMEs and industry near Waasmunster: fixtures, enclosures and small batches.
+- Makers and product teams in Waasmunster: iterative prototyping and short-run production.
+- SMEs and industry near Waasmunster: fixtures, enclosures and small to large batches.
 - Education and labs around Waasmunster: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Waasmunster
 
-- Paint-ready show models for presentations in Waasmunster and Waasmunster centrum.
+- Paint-ready show models for presentations in Waasmunster and Sombeke.
 - PLA or PETG functional parts for teams in Waasmunster.
-- TPU grips and pads for bikes, tools or fixtures around Waasmunster centrum.
+- TPU grips and pads for bikes, tools or fixtures around Sombeke.
 
 ---
 
@@ -97,7 +97,6 @@ We frequently deliver to: Waasmunster, Waasmunster centrum, Sombeke, Hamme, Loke
 - [3D printing in Sombeke](/en/3d-printen-in-sombeke)
 - [3D printing in Hamme](/en/3d-printen-in-hamme)
 - [3D printing in Lokeren](/en/3d-printen-in-lokeren)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Waasmu
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Waasmunster
 
-- Coverage: Waasmunster, Waasmunster centrum, Sombeke, Hamme, Lokeren, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Waasmunster, Waasmunster city center, Sombeke, Hamme, Lokeren, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Waasmunster.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +122,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Waasmu
 - [Nearby: 3D printing in Lokeren](/en/3d-printen-in-lokeren)
 
 ## Customer spotlight
-- Lokale makers en ontwerpers: small batches with consistent settings near Waasmunster centrum.
-- Common request: 3D print service Waasmunster; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Waasmunster and Waasmunster centrum.
+- Makers and product teams in Waasmunster: iterative prototyping and short-run production.
+- Common request: 3D printing service in Waasmunster; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Sombeke and Hamme.
 
 ## Where we drop off near Waasmunster
 - Waasmunster town center
@@ -133,12 +132,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Waasmu
 - sports hall in Waasmunster
 
 ## Sectors we back near Waasmunster
-- Local focus: Lokale makers en ontwerpers
+- Makers and product teams in Waasmunster: iterative prototyping and short-run production.
 - SMEs/industry near Waasmunster: prototypes, fixtures, housings.
 - Education/labs around Waasmunster: reliable PLA/PETG parts.
 
 ## Common requests around Waasmunster
-- 3D print service Waasmunster
-- rapid prototyping Waasmunster
-- 3D printing bedrijf Waasmunster
+- 3D printing service in Waasmunster
+- Custom 3D printing in Waasmunster
+- 3D model printing in Waasmunster
 <!-- LOCAL_ENRICH_END -->

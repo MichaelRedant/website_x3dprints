@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Appelterre-Eichem** ook ABS, ASA, Nylon of PA
 ## Voor wie is 3D printen in Appelterre-Eichem interessant?
 
 ### Lokale ondernemers
-Kmo’s gebruiken **3D printen in Appelterre-Eichem** om prototypes te testen en kleine series te produceren.
+Kmo’s gebruiken **3D printen in Appelterre-Eichem** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Hobbyisten en makers
 Creatieve inwoners realiseren persoonlijke projecten met **3D printen in Appelterre-Eichem**.
@@ -99,8 +99,8 @@ Appelterre-Eichem grenst aan de Dender en sluit naadloos aan bij de stad Ninove.
 **Welke bestanden kan ik aanleveren voor Appelterre-Eichem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Appelterre-Eichem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Appelterre-Eichem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Appelterre-Eichem?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -132,7 +132,13 @@ Wil je ervaren hoe **3D printen in Appelterre-Eichem** jouw idee versterkt? Vraa
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Appelterre-Eichem
+- Centrum van Appelterre-Eichem
+- Lokale bedrijvenzone in Appelterre-Eichem
+- Sporthal in Appelterre-Eichem
+
 
 ## Lokale spotlight
 - Lokale teams in Appelterre-Eichem: PLA/PETG onderdelen afgestemd op projecten rond Appelterre-Eichem.

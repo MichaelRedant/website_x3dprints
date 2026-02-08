@@ -1,6 +1,6 @@
 # 3D printen in Hombeek: tussen kanaal en Mechelen-Noord
 
-Voor **3D printen in Hombeek** leveren we prototypes en kleine series naar bedrijven rond Mechelen-Noord, ateliers langs het Leuven-Dijle kanaal en makers in het dorpscentrum. We stemmen materiaal en afwerking af op jouw toepassing.
+Voor **3D printen in Hombeek** leveren we prototypes en zowel kleine als grotere series naar bedrijven rond Mechelen-Noord, ateliers langs het Leuven-Dijle kanaal en makers in het dorpscentrum. We stemmen materiaal en afwerking af op jouw toepassing.
 
 ---
 
@@ -19,7 +19,7 @@ Voor **3D printen in Hombeek** leveren we prototypes en kleine series naar bedri
 
 ## Lokale focus in Hombeek
 
-Werk je in Hombeek? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Hombeek? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 - Behuizingen en covers voor elektronica, sensoren of prototypes.
@@ -51,8 +51,8 @@ Stuur STL of STEP via [contact](/contact) met aantallen, materiaal en leverdatum
 
 ## Veelgestelde vragen over 3D printen in Hombeek
 
-**Kunnen jullie kleine series leveren in Hombeek?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Hombeek?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Hombeek?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -80,6 +80,12 @@ Upload je bestand via [contact](/contact). Je krijgt snel een voorstel zodat je 
 
 ## Dichtbij gelegen locaties
 - [Hoofdpagina: 3D printen in Mechelen](/3d-printen-in-mechelen)
+
+## Lokale punten in Hombeek
+- Centrum van Hombeek
+- Lokale bedrijvenzone in Hombeek
+- Sporthal in Hombeek
+
 
 ## Spotlight rond Hombeek
 - Lokale teams in Hombeek: behuizingen en pasmallen voor teams in Hombeek.

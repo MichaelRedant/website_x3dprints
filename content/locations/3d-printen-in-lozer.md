@@ -48,7 +48,7 @@ Bekijk kleuren op [materials](/materials), controleer je model in de [viewer](/v
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -65,7 +65,13 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Lozer
+- Centrum van Lozer
+- Lokale bedrijvenzone in Lozer
+- Sporthal in Lozer
+
 
 ## Klantenspotlight
 - Lokale teams in Lozer: kleine reeksen met vaste settings rond Lozer.

@@ -70,7 +70,7 @@ Onze **rapid prototyping service in Merelbeke** stelt u in staat om uw ontwerpen
 De gemeente Merelbeke, met haar groene longen, belangrijke onderzoeksinstituten en een bloeiende KMO-sector, is een vruchtbare bodem voor nieuwe ideeën en technologische ontwikkelingen. Met **3D printen in Merelbeke** kunt u:
 
 -   unieke, gepersonaliseerde items creëren die de identiteit van Merelbeke vangen.
--   snel prototypes en kleine series produceren voor lokale bedrijven en start-ups.
+-   snel prototypes en zowel kleine als grotere series produceren voor lokale bedrijven en start-ups.
 -   specifieke onderdelen laten maken die snel beschikbaar moeten zijn voor reparaties of projecten.
 -   educatieve projecten ondersteunen met tastbare leermiddelen die inspireren en de jeugd betrekken bij technologie.
 
@@ -113,7 +113,7 @@ Benieuwd hoe **3D printen in Merelbeke** uw project kan versnellen of uw idee ka
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -134,6 +134,12 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 - [Hoofdpagina: 3D printen in Nazareth](/3d-printen-in-nazareth)
 - [Hoofdpagina: 3D printen in De Pinte](/3d-printen-in-de-pinte)
 - [Hoofdpagina: 3D printen in Eke](/3d-printen-in-eke)
+
+## Lokale punten in Merelbeke
+- Centrum van Merelbeke
+- Lokale bedrijvenzone in Merelbeke
+- Sporthal in Merelbeke
+
 
 ## Klantenspotlight
 - Lokale teams in Merelbeke: kleine reeksen met vaste settings rond Merelbeke.

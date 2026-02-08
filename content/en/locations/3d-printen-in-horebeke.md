@@ -1,12 +1,12 @@
 # 3D printing in Horebeke: local, fast and tailored
 
-Need **3D printing in Horebeke**? X3DPrints prints in Herzele and ships quickly to Horebeke and nearby Horebeke centrum. Local 3D printing for Horebeke, Horebeke centrum and Sint-Maria-Horebeke, Sint-Kornelis-Horebeke, Afhalen Herzele: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Horebeke**? X3DPrints prints in Herzele and ships quickly to Horebeke and nearby Sint-Maria-Horebeke. Local 3D printing for Horebeke, Sint-Maria-Horebeke and Sint-Kornelis-Horebeke: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Horebeke teams choose us
 
-- Local delivery to Horebeke, Horebeke centrum and Sint-Maria-Horebeke, Sint-Kornelis-Horebeke, Afhalen Herzele; pickup in Herzele.
+- Local delivery to Horebeke, Sint-Maria-Horebeke and Sint-Kornelis-Horebeke; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Horebeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Horebeke**? X3DPrints prints in Herzele and ships quickly 
 
 ## Areas we serve near Horebeke
 
-We frequently deliver to: Horebeke, Horebeke centrum, Sint-Maria-Horebeke, Sint-Kornelis-Horebeke, Afhalen Herzele.
+We frequently deliver to: Horebeke, Horebeke city center, Sint-Maria-Horebeke, Sint-Kornelis-Horebeke, Pickup in Herzele.
 
 ---
 
 ## Projects we help deliver near Horebeke
 
 - Prototype housings and fixtures used by teams in Horebeke.
-- Short-run batches that stay consistent for companies near Horebeke centrum.
-- Replacement brackets and guards for workshops around Sint-Maria-Horebeke.
+- Short-run batches that stay consistent for companies near Sint-Maria-Horebeke.
+- Replacement brackets and guards for workshops around Sint-Kornelis-Horebeke.
 - Display pieces and branded props for events near Horebeke.
 - Brackets, guards and fixtures tuned for teams in Horebeke.
 - Demo pieces and props for events near Horebeke.
@@ -32,9 +32,9 @@ We frequently deliver to: Horebeke, Horebeke centrum, Sint-Maria-Horebeke, Sint-
 
 ## Local spotlight for Horebeke
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Horebeke centrum.
-- Common ask: 3D print service Horebeke; we advise material and finishing for Sint-Maria-Horebeke.
-- Delivery focus: Horebeke, Horebeke centrum, Sint-Maria-Horebeke.
+- Makers and product teams in Horebeke: iterative prototyping and short-run production.
+- Common ask in Horebeke: custom 3D printing with practical PLA/PETG/TPU advice for Sint-Kornelis-Horebeke.
+- Delivery focus: Horebeke, Horebeke city center, Sint-Maria-Horebeke.
 
 ---
 
@@ -48,17 +48,16 @@ We frequently deliver to: Horebeke, Horebeke centrum, Sint-Maria-Horebeke, Sint-
 
 ## Who we support around Horebeke
 
-- Local projects in Horebeke: Lokale makers en ontwerpers
-- Local projects in Horebeke: Kleine series en maatwerk
+- Makers and product teams in Horebeke: iterative prototyping and short-run production.
 - Education and labs around Horebeke: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## What clients near Horebeke often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Horebeke centrum.
+- TPU grips and pads for bikes, tools or fixtures around Sint-Maria-Horebeke.
 - PLA or PETG functional parts for teams in Horebeke.
-- Paint-ready show models for presentations in Horebeke and Horebeke centrum.
+- Paint-ready show models for presentations in Horebeke and Sint-Maria-Horebeke.
 
 ---
 
@@ -96,8 +95,6 @@ We frequently deliver to: Horebeke, Horebeke centrum, Sint-Maria-Horebeke, Sint-
 
 - [3D printing in Sint-Maria-Horebeke](/en/3d-printen-in-sint-maria-horebeke)
 - [3D printing in Sint-Kornelis-Horebeke](/en/3d-printen-in-sint-kornelis-horebeke)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +109,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Horebe
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Horebeke
 
-- Coverage: Horebeke, Horebeke centrum, Sint-Maria-Horebeke, Sint-Kornelis-Horebeke, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Horebeke, Horebeke city center, Sint-Maria-Horebeke, Sint-Kornelis-Horebeke, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Horebeke.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -122,9 +119,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Horebe
 - [Nearby: 3D printing in Sint-Kornelis-Horebeke](/en/3d-printen-in-sint-kornelis-horebeke)
 
 ## Spotlight near Horebeke
-- Lokale makers en ontwerpers: fixtures and housings for teams around Horebeke centrum.
-- Frequent order: 3D print service Horebeke; we keep settings for reorders.
-- Delivery focus: Horebeke, Horebeke centrum, Sint-Maria-Horebeke.
+- Makers and product teams in Horebeke: iterative prototyping and short-run production.
+- Frequent order: 3D printing service in Horebeke; we keep settings for reorders.
+- Delivery focus: Horebeke, Horebeke city center, Sint-Maria-Horebeke.
 
 ## Landmarks around Horebeke
 - Horebeke town center
@@ -132,12 +129,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Horebe
 - sports hall in Horebeke
 
 ## Teams we support around Horebeke
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in Horebeke: iterative prototyping and short-run production.
 - Education/labs around Horebeke: reliable PLA/PETG parts.
 
 ## Frequently asked in Horebeke
-- 3D print service Horebeke
-- rapid prototyping Horebeke
-- 3D printing bedrijf Horebeke
+- 3D printing service in Horebeke
+- Custom 3D printing in Horebeke
+- 3D model printing in Horebeke
 <!-- LOCAL_ENRICH_END -->

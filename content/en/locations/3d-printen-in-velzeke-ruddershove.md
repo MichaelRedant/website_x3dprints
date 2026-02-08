@@ -15,14 +15,14 @@ Need **3D printing in Velzeke-Ruddershove**? X3DPrints prints in Herzele and shi
 
 ## Where we deliver around Velzeke-Ruddershove
 
-We frequently deliver to: Velzeke-Ruddershove.
+We frequently deliver to: Velzeke-Ruddershove, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Velzeke-Ruddershove
 
 - Prototypes and housings supporting teams in Velzeke-Ruddershove.
-- Small series with consistent settings for businesses near your region.
+- Small to large series with consistent settings for businesses near your region.
 - Replacement parts and brackets for workshops around Flanders.
 - Promo models, signage and props for events in and around Velzeke-Ruddershove.
 - Brackets, guards and fixtures tuned for teams in Velzeke-Ruddershove.
@@ -32,9 +32,9 @@ We frequently deliver to: Velzeke-Ruddershove.
 
 ## Spotlight: Velzeke-Ruddershove projects
 
-- Local SMEs in Velzeke-Ruddershove: tailored PETG/PLA parts for teams around Velzeke-Ruddershove.
-- Common ask: 3D print service velzeke-ruddershove; we advise material and finishing for Velzeke-Ruddershove.
-- Delivery focus: Velzeke-Ruddershove.
+- Manufacturing and SMEs around Velzeke-Ruddershove: prototypes, fixtures and housings.
+- Common ask in Velzeke-Ruddershove: custom 3D printing with practical PLA/PETG/TPU advice for Velzeke-Ruddershove.
+- Delivery focus: Velzeke-Ruddershove, Pickup in Herzele.
 
 ---
 
@@ -57,8 +57,8 @@ We frequently deliver to: Velzeke-Ruddershove.
 ## Popular requests from Velzeke-Ruddershove
 
 - PLA or PETG functional parts for teams in Velzeke-Ruddershove.
-- TPU grips and pads for bikes, tools or fixtures around Velzeke-Ruddershove.
-- Paint-ready show models for presentations in Velzeke-Ruddershove and Velzeke-Ruddershove.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
+- Paint-ready show models for presentations in Velzeke-Ruddershove and the surrounding area.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Velzeke-Ruddershove.
 
 ## FAQ about 3D printing in Velzeke-Ruddershove
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -94,10 +94,7 @@ We frequently deliver to: Velzeke-Ruddershove.
 
 ## Quick links for Velzeke-Ruddershove teams
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Velzek
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Velzeke-Ruddershove
 
-- Coverage: Velzeke-Ruddershove; delivery from Herzele, pickup available.
+- Coverage: Velzeke-Ruddershove, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Velzeke-Ruddershove.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Local spotlight
-- Local teams in Velzeke-Ruddershove: PLA/PETG parts tuned for projects near Velzeke-Ruddershove.
-- Common request: 3D print service velzeke-ruddershove; we pick material and finish for the use case.
-- Delivery focus: Velzeke-Ruddershove.
+- SMEs and makers in Velzeke-Ruddershove: fixtures and enclosures.
+- Common request: 3D printing service in Velzeke-Ruddershove; we pick material and finish for the use case.
+- Delivery focus: Velzeke-Ruddershove, Pickup in Herzele.
 
 ## Places we often deliver near Velzeke-Ruddershove
 - Velzeke-Ruddershove town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Velzek
 - Education/labs around Velzeke-Ruddershove: lesson-ready prints.
 
 ## Popular searches from Velzeke-Ruddershove
-- 3D print service velzeke-ruddershove
-- rapid prototyping velzeke-ruddershove
-- 3D printing bedrijf velzeke-ruddershove
+- 3D printing service in Velzeke-Ruddershove
+- Custom 3D printing in Velzeke-Ruddershove
+- 3D model printing in Velzeke-Ruddershove
 <!-- LOCAL_ENRICH_END -->

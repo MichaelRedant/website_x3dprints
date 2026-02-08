@@ -126,7 +126,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Kobbegem
+- Centrum van Kobbegem
+- Lokale bedrijvenzone in Kobbegem
+- Sporthal in Kobbegem
+
 
 ## Lokale spotlight
 - Lokale teams in Kobbegem: PLA/PETG onderdelen afgestemd op projecten rond Kobbegem.

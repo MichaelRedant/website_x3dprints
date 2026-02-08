@@ -32,7 +32,7 @@ Zoek je 3D printen in Gentbrugge? We denken mee over passing, sterkte en look zo
 | Materiaal | Belangrijkste Eigenschap     | Perfect voor                                             |
 | :---------- | :-------------------------- | :------------------------------------------------------- |
 | **PLA Matte** | Stijf, zeer gedetailleerd     | Visuele prototypes, maquettes, decoratieve objecten      |
-| **PETG**    | Sterk, chemisch bestendig   | Functionele onderdelen, mechanische stukken, kleine series |
+| **PETG**    | Sterk, chemisch bestendig   | Functionele onderdelen, mechanische stukken, kleine en grotere series |
 | **TPU**     | Flexibel en schokabsorberend | Beschermhoezen, grips, afdichtingen, draagbare items     |
 
 **Tip:** Voor een architecturale maquette of een presentatiemodel volstaat **PLA**. Heeft u een robuust onderdeel nodig dat tegen een stootje kan? Kies dan voor **PETG**. Voor flexibele toepassingen, zoals een demper of een gepersonaliseerde grip, is **TPU** de ideale oplossing.
@@ -98,8 +98,8 @@ Met onze **rapid prototyping service** in de regio Gentbrugge kunt u uw ontwerpp
 ---
 ## Veelgestelde vragen over 3D printen in gentbrugge
 
-**Kunnen jullie kleine series leveren in gentbrugge?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in gentbrugge?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in gentbrugge?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -108,7 +108,6 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting gentbrugge of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Gent
-- [3D printen in Gent](/3d-printen-in-gent)
 - [3D printen in Afsnee](/3d-printen-in-afsnee)
 - [3D printen in Desteldonk](/3d-printen-in-desteldonk)
 - [3D printen in Drongen](/3d-printen-in-drongen)
@@ -137,6 +136,12 @@ Klaar om uw project te lanceren? Ontdek zelf de voordelen van lokaal **3D printe
 
 ## Gerelateerde buurtpagina's
 - [Buurpagina: 3D printen in Ledeberg](/3d-printen-in-ledeberg)
+
+## Lokale punten in Gentbrugge
+- Centrum van Gentbrugge
+- Lokale bedrijvenzone in Gentbrugge
+- Sporthal in Gentbrugge
+
 
 ## Klantenspotlight
 - Prototyping voor KMO's in Gentbrugge/Ledeberg: kleine reeksen met vaste settings rond Gentbrugge centrum.

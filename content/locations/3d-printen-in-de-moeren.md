@@ -98,7 +98,7 @@ Geef door welke onderdelen je nodig hebt en hoe ze gemonteerd worden. We zorgen 
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -115,7 +115,13 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in De Moeren
+- Centrum van De Moeren
+- Lokale bedrijvenzone in De Moeren
+- Sporthal in De Moeren
+
 
 ## Lokale spotlight
 - Waterbeheer en sensing in de polders: PLA/PETG onderdelen afgestemd op projecten rond De Moeren laagte.

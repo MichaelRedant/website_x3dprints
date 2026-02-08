@@ -23,7 +23,7 @@
 
 ## Lokale focus in Kalken
 
-Werk je in Kalken? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Kasteel Ter Weiden.
+Werk je in Kalken? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Kasteel Ter Weiden.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Kalken interessant?
 
 ### Lokale ondernemers
-Kleine series en onderdelen op maat met snelle levering.
+Kleine en grotere series en onderdelen op maat met snelle levering.
 
 ### Onderhoud en herstellingen
 Sterke prints die tegen een stootje kunnen.
@@ -82,14 +82,14 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Kalken
 
-**Kunnen jullie kleine series leveren in Kalken?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Kalken?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Kalken?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Wetteren](/3d-printen-in-wetteren)
 - [Buurpagina: 3D printen in Destelbergen](/3d-printen-in-destelbergen)
 
+
+
 ## Spotlight rond Kalken
 - Lokale makers en techniekers: behuizingen en pasmallen voor teams in Kalken centrum.
 - Terugkerende order: 3D print service Kalken; we bewaren je instellingen.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Kalken
 - Lokale makers en techniekers (Kalken)
-- Kleine series en maatwerk (Kalken)
+- Kleine en grotere series en maatwerk (Kalken)
 - Verenigingen en scholen (Kalken)
 
 ## Wat vaak wordt gevraagd in Kalken

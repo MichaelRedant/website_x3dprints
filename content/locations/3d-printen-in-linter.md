@@ -32,7 +32,7 @@ Met **3D printen in Linter** leveren we prototypes, behuizingen en tooling richt
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica en IoT.
+- Kleine en grotere series covers en cases voor elektronica en IoT.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Linter centrum
 - Drieslinter en Neerlinter
 - Orsmaal-Gussenhoven
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Linter
+
+- Dekking: Linter, Linter centrum, Drieslinter, Neerlinter, Orsmaal-Gussenhoven, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Linter.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Spotlight rond Linter
+- Landbouw/techniek in Linter: behuizingen en pasmallen voor teams in Linter centrum.
+- Terugkerende order: 3D print service Linter; we bewaren je instellingen.
+- Leverfocus: Linter, Linter centrum, Drieslinter.
+
+## Landmarks in de buurt van Linter
+- Centrum van Linter
+- Lokale bedrijvenzone in Linter
+- Sporthal in Linter
+
+## Teams die we ondersteunen rond Linter
+- Landbouw/techniek in Linter
+- Retail/events in Hageland (Linter)
+- Makers en onderwijs in de regio (Linter)
+
+## Wat vaak wordt gevraagd in Linter
+- 3D print service Linter
+- rapid prototyping Linter
+- 3D printing bedrijf Linter
+<!-- LOCAL_ENRICH_END -->

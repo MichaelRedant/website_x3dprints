@@ -19,7 +19,7 @@
 
 Voor Desteldonk leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Desteldonk en Desteldonk.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -38,7 +38,7 @@ Op aanvraag zijn ook ABS, ASA of Nylon mogelijk voor technische projecten.
 ## Voor wie is 3D printen in Desteldonk interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven gebruiken **3D printen in Desteldonk** om productideeën te testen en kleine series te produceren.
+Lokale bedrijven gebruiken **3D printen in Desteldonk** om productideeën te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve bewoners zetten hun ideeën om in tastbare objecten met **3D printen in Desteldonk**.
@@ -102,7 +102,6 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Desteldonk of 
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
 
 ## Interne links rond 3D printen in Gent
-- [3D printen in Gent](/3d-printen-in-gent)
 - [3D printen in Afsnee](/3d-printen-in-afsnee)
 - [3D printen in Drongen](/3d-printen-in-drongen)
 - [3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
@@ -136,7 +135,13 @@ Benieuwd hoe **3D printen in Desteldonk** jouw idee versterkt? Vraag een **grati
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Desteldonk
+- Centrum van Desteldonk
+- Lokale bedrijvenzone in Desteldonk
+- Sporthal in Desteldonk
+
 
 ## Lokale spotlight
 - Lokale teams in Desteldonk: PLA/PETG onderdelen afgestemd op projecten rond Desteldonk.

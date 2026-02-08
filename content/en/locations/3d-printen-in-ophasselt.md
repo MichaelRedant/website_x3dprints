@@ -15,7 +15,7 @@ Need **3D printing in Ophasselt**? X3DPrints prints in Herzele and ships quickly
 
 ## Areas we serve near Ophasselt
 
-We frequently deliver to: Ophasselt.
+We frequently deliver to: Ophasselt, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Ophasselt.
 
 ## Local spotlight for Ophasselt
 
-- Local SMEs in Ophasselt: tailored PETG/PLA parts for teams around Ophasselt.
-- Common ask: 3D print service Ophasselt; we advise material and finishing for Ophasselt.
-- Delivery focus: Ophasselt.
+- Manufacturing and SMEs around Ophasselt: prototypes, fixtures and housings.
+- Common ask in Ophasselt: custom 3D printing with practical PLA/PETG/TPU advice for Ophasselt.
+- Delivery focus: Ophasselt, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Ophasselt.
 
 ## What clients near Ophasselt often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Ophasselt.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 - PLA or PETG functional parts for teams in Ophasselt.
-- Paint-ready show models for presentations in Ophasselt and Ophasselt.
+- Paint-ready show models for presentations in Ophasselt and the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Ophasselt.
 
 ## Related pages for Ophasselt
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Ophass
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Ophasselt
 
-- Coverage: Ophasselt; delivery from Herzele, pickup available.
+- Coverage: Ophasselt, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Ophasselt.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Spotlight near Ophasselt
-- Local teams in Ophasselt: fixtures and housings for teams around Ophasselt.
-- Frequent order: 3D print service Ophasselt; we keep settings for reorders.
-- Delivery focus: Ophasselt.
+- SMEs and makers in Ophasselt: fixtures and enclosures.
+- Frequent order: 3D printing service in Ophasselt; we keep settings for reorders.
+- Delivery focus: Ophasselt, Pickup in Herzele.
 
 ## Landmarks around Ophasselt
 - Ophasselt town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Ophass
 - Education/labs around Ophasselt: lesson-ready prints.
 
 ## Frequently asked in Ophasselt
-- 3D print service Ophasselt
-- rapid prototyping Ophasselt
-- 3D printing bedrijf Ophasselt
+- 3D printing service in Ophasselt
+- Custom 3D printing in Ophasselt
+- 3D model printing in Ophasselt
 <!-- LOCAL_ENRICH_END -->

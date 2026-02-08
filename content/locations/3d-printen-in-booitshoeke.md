@@ -57,7 +57,7 @@ Laat weten of het om interieur, landbouw of toeristisch zichtwerk gaat. We zorge
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -74,7 +74,13 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Booitshoeke
+- Centrum van Booitshoeke
+- Lokale bedrijvenzone in Booitshoeke
+- Sporthal in Booitshoeke
+
 
 ## Lokale spotlight
 - Landbouwmechanisatie en irrigatie: PLA/PETG onderdelen afgestemd op projecten rond Booitshoeke dorpskern.

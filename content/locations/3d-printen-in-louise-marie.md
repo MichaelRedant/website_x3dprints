@@ -1,6 +1,6 @@
 # 3D printen in Louise-Marie: detailwerk met snelle levering
 
-**3D printen in Louise-Marie** is ideaal voor prototypes, herstellingen en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten rond Ronse.
+**3D printen in Louise-Marie** is ideaal voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten rond Ronse.
 
 ---
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in De Klijpe](/3d-printen-in-de-klijpe)
 - [Buurpagina: 3D printen in Maarkedal](/3d-printen-in-maarkedal)
 
+
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Louise-Marie centrum.
 - Vaak gevraagd: 3D print service Louise-Marie; we adviseren materiaal en afwerking.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectorfocus nabij Louise-Marie
 - Lokale makers en ontwerpers (Louise-Marie)
-- Kleine series en maatwerk (Louise-Marie)
+- Kleine en grotere series en maatwerk (Louise-Marie)
 - Verenigingen en onderwijs (Louise-Marie)
 
 ## Typische aanvragen rond Louise-Marie

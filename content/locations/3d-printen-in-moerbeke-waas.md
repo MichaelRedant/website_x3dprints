@@ -25,7 +25,7 @@
 
 In Moerbeke-Waas combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
 
@@ -82,14 +82,14 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Moerbeke-Waas
 
-**Kunnen jullie kleine series leveren in Moerbeke-Waas?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Moerbeke-Waas?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Moerbeke-Waas?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Lokeren](/3d-printen-in-lokeren)
 - [Buurpagina: 3D printen in Eksaarde](/3d-printen-in-eksaarde)
 - [Buurpagina: 3D printen in Daknam](/3d-printen-in-daknam)
+
+
 
 ## Lokale spotlight
 - Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Moerbeke-Waas centrum.

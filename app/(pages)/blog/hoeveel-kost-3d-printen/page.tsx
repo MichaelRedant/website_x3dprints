@@ -19,7 +19,7 @@ const contactHref =
 export const metadata: Metadata = {
   title: "3D print prijs: hoeveel kost 3D printen in 2026? | X3DPrints",
   description:
-    "Wat kost 3D printen in 2026? Deze gids toont de 3D print prijs op basis van materiaal, printtijd, modelcomplexiteit en logistiek, plus directe offertestappen.",
+    "Wat kost 3D printen in 2026? Deze gids vertaalt kosten 3d printen naar een realistische 3d printen prijs en prijs 3d printen per projecttype, met directe offertestappen.",
   alternates: { canonical },
   openGraph: {
     title: "3D print prijs in 2026: wat kost 3D printen?",
@@ -216,6 +216,7 @@ export default function BlogCostPage() {
           </h1>
           <p className="max-w-3xl text-lg text-slate-700">
             Het korte antwoord: kosten 3D printen starten vanaf EUR 5 voor eenvoudige stukken, maar de echte prijs hangt af van materiaal, printtijd, modelcomplexiteit en levering.
+            Gebruik deze gids als referentie voor je 3d printen prijs en vergelijk prijs 3d printen per formaat.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
             Laatst bijgewerkt: 6 februari 2026

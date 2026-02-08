@@ -15,14 +15,14 @@ Need **3D printing in Afsnee**? X3DPrints prints in Herzele and ships quickly to
 
 ## Where we deliver around Afsnee
 
-We frequently deliver to: Afsnee.
+We frequently deliver to: Afsnee, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Afsnee
 
 - Prototypes and housings supporting teams in Afsnee.
-- Small series with consistent settings for businesses near your region.
+- Small to large series with consistent settings for businesses near your region.
 - Replacement parts and brackets for workshops around Flanders.
 - Promo models, signage and props for events in and around Afsnee.
 - Brackets, guards and fixtures tuned for teams in Afsnee.
@@ -32,9 +32,9 @@ We frequently deliver to: Afsnee.
 
 ## Spotlight: Afsnee projects
 
-- Local SMEs in Afsnee: tailored PETG/PLA parts for teams around Afsnee.
-- Common ask: 3D printing in Afsnee; we advise material and finishing for Afsnee.
-- Delivery focus: Afsnee.
+- Manufacturing and SMEs around Afsnee: prototypes, fixtures and housings.
+- Common ask in Afsnee: custom 3D printing with practical PLA/PETG/TPU advice for Afsnee.
+- Delivery focus: Afsnee, Pickup in Herzele.
 
 ---
 
@@ -57,8 +57,8 @@ We frequently deliver to: Afsnee.
 ## Popular requests from Afsnee
 
 - PLA or PETG functional parts for teams in Afsnee.
-- TPU grips and pads for bikes, tools or fixtures around Afsnee.
-- Paint-ready show models for presentations in Afsnee and Afsnee.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
+- Paint-ready show models for presentations in Afsnee and the surrounding area.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Afsnee.
 
 ## FAQ about 3D printing in Afsnee
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -94,10 +94,7 @@ We frequently deliver to: Afsnee.
 
 ## Quick links for Afsnee teams
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -107,4 +104,36 @@ We frequently deliver to: Afsnee.
 
 ## Request your quote for Afsnee
 
-Send your files today and get a clear, fast proposal for **3D printing in Afsnee**. Nearby production, personal support and reliable quality. 
+Send your files today and get a clear, fast proposal for **3D printing in Afsnee**. Nearby production, personal support and reliable quality.
+
+<!-- LOCAL_ENRICH_START -->
+## Local highlights for Afsnee
+
+- Coverage: Afsnee, Pickup in Herzele; delivery from Herzele, pickup available.
+- Frequent jobs: prototypes, housings and brackets tailored for teams in Afsnee.
+- File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
+- Turnaround: usually a few working days; rush possible on request.
+
+## Neighbouring pages
+- [Local 3D printing overview](/en/locaties)
+
+## Local spotlight
+- SMEs and makers in Afsnee: fixtures and enclosures.
+- Common request: 3D printing service in Afsnee; we pick material and finish for the use case.
+- Delivery focus: Afsnee, Pickup in Herzele.
+
+## Places we often deliver near Afsnee
+- Afsnee town center
+- local business park in Afsnee
+- sports hall in Afsnee
+
+## Industries we serve near Afsnee
+- SMEs and makers in Afsnee: fixtures and enclosures.
+- Retail/events near Afsnee: displays and props.
+- Education/labs around Afsnee: lesson-ready prints.
+
+## Popular searches from Afsnee
+- 3D printing service in Afsnee
+- Custom 3D printing in Afsnee
+- 3D model printing in Afsnee
+<!-- LOCAL_ENRICH_END -->

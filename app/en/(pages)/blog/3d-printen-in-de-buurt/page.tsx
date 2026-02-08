@@ -20,7 +20,7 @@ const locatiesHref = "/en/locaties?utm_source=blog&utm_medium=cta&utm_campaign=l
 export const metadata: Metadata = {
   title: "Local 3D printing near Ghent, Aalst and Dendermonde | X3DPrints",
   description:
-    "Local 3D printing service from Herzele for projects in Ghent, Aalst and Dendermonde with flexible pickup and delivery.",
+    "Local 3D printing service from Herzele for 3D printing Gent, Aalst and Dendermonde projects, including 3D model print checks, pickup and delivery.",
   alternates: {
     canonical,
     languages: {
@@ -57,7 +57,7 @@ const tocItems = [
 const cityCards = [
   {
     city: "Ghent",
-    info: "Useful for agencies, makers and schools that need short feedback loops.",
+    info: "Useful for agencies, makers and schools where 3D printing Gent projects need short feedback loops.",
     examples: "Retail displays, campaign props and student project parts.",
   },
   {
@@ -200,7 +200,7 @@ export default function LocalArticleEnPage() {
             Local 3D printing: Ghent, Aalst and Dendermonde
           </h1>
           <p className="max-w-3xl text-lg text-slate-700">
-            Local production shortens feedback cycles. Fast alignment from briefing to delivery saves calendar time.
+            Local production shortens feedback cycles. Fast alignment from briefing to delivery saves calendar time, from 3D model print validation to shipping 3D print parts.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
             Last updated: February 7, 2026

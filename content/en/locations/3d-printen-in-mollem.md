@@ -15,7 +15,7 @@ Need **3D printing in Mollem**? X3DPrints prints in Herzele and ships quickly to
 
 ## Delivery focus for Mollem
 
-We frequently deliver to: Mollem.
+We frequently deliver to: Mollem, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Mollem.
 
 ## What stands out in Mollem
 
-- Local SMEs in Mollem: tailored PETG/PLA parts for teams around Mollem.
-- Common ask: 3D print service Mollem; we advise material and finishing for Mollem.
-- Delivery focus: Mollem.
+- Manufacturing and SMEs around Mollem: prototypes, fixtures and housings.
+- Common ask in Mollem: custom 3D printing with practical PLA/PETG/TPU advice for Mollem.
+- Delivery focus: Mollem, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Mollem.
 
 ## Recent requests around Mollem
 
-- Paint-ready show models for presentations in Mollem and Mollem.
+- Paint-ready show models for presentations in Mollem and the surrounding area.
 - PLA or PETG functional parts for teams in Mollem.
-- TPU grips and pads for bikes, tools or fixtures around Mollem.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Mollem.
 
 ## Useful links near Mollem
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,17 +109,17 @@ Send your files today and get a clear, fast proposal for **3D printing in Mollem
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Mollem
 
-- Coverage: Mollem; delivery from Herzele, pickup available.
+- Coverage: Mollem, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Mollem.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Parent page: 3D printing in Merchtem](/en/3d-printen-in-merchtem)
 
 ## Customer spotlight
-- Local teams in Mollem: small batches with consistent settings near Mollem.
-- Common request: 3D print service Mollem; we pick material and finish for the use case.
+- SMEs and makers in Mollem: fixtures and enclosures.
+- Common request: 3D printing service in Mollem; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Mollem and Mollem.
 
 ## Where we drop off near Mollem
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Mollem
 - Education/labs around Mollem: lesson-ready prints.
 
 ## Common requests around Mollem
-- 3D print service Mollem
-- rapid prototyping Mollem
-- 3D printing bedrijf Mollem
+- 3D printing service in Mollem
+- Custom 3D printing in Mollem
+- 3D model printing in Mollem
 <!-- LOCAL_ENRICH_END -->

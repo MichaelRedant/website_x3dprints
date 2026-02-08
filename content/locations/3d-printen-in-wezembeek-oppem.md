@@ -32,7 +32,7 @@ Met **3D printen in Wezembeek-Oppem** leveren we prototypes, behuizingen en tool
 
 - Brackets en covers voor kantoorinstallaties.
 - Signage en props voor campagnes.
-- Kleine series behuizingen voor elektronica en sensoren.
+- Kleine en grotere series behuizingen voor elektronica en sensoren.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Wezembeek centrum
 - Oppem
 - N3/Leuvensesteenweg
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Wezembeek-Oppem
+
+- Dekking: Wezembeek-Oppem, Wezembeek centrum, Oppem, N3/Leuvensesteenweg, R0-kruising, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Wezembeek-Oppem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Spotlight rond Wezembeek-Oppem
+- Kantoren en retail in Wezembeek-Oppem: behuizingen en pasmallen voor teams in Wezembeek centrum.
+- Terugkerende order: 3D print service Wezembeek-Oppem; we bewaren je instellingen.
+- Leverfocus: Wezembeek-Oppem, Wezembeek centrum, Oppem.
+
+## Landmarks in de buurt van Wezembeek-Oppem
+- Centrum van Wezembeek-Oppem
+- Lokale bedrijvenzone in Wezembeek-Oppem
+- Sporthal in Wezembeek-Oppem
+
+## Teams die we ondersteunen rond Wezembeek-Oppem
+- Kantoren en retail in Wezembeek-Oppem
+- Tech en installaties langs N3/R0 (Wezembeek-Oppem)
+- Makers en onderwijs in de rand (Wezembeek-Oppem)
+
+## Wat vaak wordt gevraagd in Wezembeek-Oppem
+- 3D print service Wezembeek-Oppem
+- rapid prototyping Wezembeek-Oppem
+- 3D printing bedrijf Wezembeek-Oppem
+<!-- LOCAL_ENRICH_END -->

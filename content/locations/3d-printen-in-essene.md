@@ -24,7 +24,7 @@ Voor **3D printen in Essene** leveren we prototypes en functionele onderdelen ri
 
 
 
-**Lokale touch:** afgestemd op hoptraditie, landbouwbedrijven en winkels in het centrum. Ideaal voor props, tooling en kleine series.
+**Lokale touch:** afgestemd op hoptraditie, landbouwbedrijven en winkels in het centrum. Ideaal voor props, tooling en zowel kleine als grotere series.
 
 
 
@@ -36,7 +36,7 @@ Voor **3D printen in Essene** leveren we prototypes en functionele onderdelen ri
 
 ## Lokale focus in Essene
 
-Werk je in Essene? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Essene? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 - Behuizingen en covers voor elektronica, sensoren of prototypes.
@@ -70,7 +70,7 @@ Werk je in Essene? We leveren snelle prototypes en kleine series op maat, met ma
 
 - Klemmen, behuizingen en vervangstukken voor lokale bedrijven.
 
-- Retail: kleine series badges of houders.
+- Retail: kleine en grotere series badges of houders.
 
 
 
@@ -126,7 +126,13 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Essene
+- Centrum van Essene
+- Lokale bedrijvenzone in Essene
+- Sporthal in Essene
+
 
 ## Klantenspotlight
 - Lokale teams in Essene: kleine reeksen met vaste settings rond Essene.

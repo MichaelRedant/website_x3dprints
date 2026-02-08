@@ -2,7 +2,7 @@
 
 
 
-Voor **3D printen in Teralfene** leveren we prototypes en kleine series richting dorpskern, kermis en lokale kmo's. Je krijgt strakke prints, snelle levering en materiaaladvies op maat.
+Voor **3D printen in Teralfene** leveren we prototypes en zowel kleine als grotere series richting dorpskern, kermis en lokale kmo's. Je krijgt strakke prints, snelle levering en materiaaladvies op maat.
 
 
 
@@ -126,7 +126,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Teralfene
+- Centrum van Teralfene
+- Lokale bedrijvenzone in Teralfene
+- Sporthal in Teralfene
+
 
 ## Klantenspotlight
 - Lokale teams in Teralfene: kleine reeksen met vaste settings rond Teralfene.

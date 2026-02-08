@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 **Welke bestanden kan ik aanleveren voor Sint-Kornelis-Horebeke?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Sint-Kornelis-Horebeke?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Sint-Kornelis-Horebeke?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Sint-Kornelis-Horebeke?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -127,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 ## Nabijgelegen pagina's
 - [Buurpagina: 3D printen in Horebeke](/3d-printen-in-horebeke)
 - [Buurpagina: 3D printen in Sint-Maria-Horebeke](/3d-printen-in-sint-maria-horebeke)
+
+
 
 ## Lokale spotlight
 - KMO's en zelfstandigen: PLA/PETG onderdelen afgestemd op projecten rond Sint-Kornelis-Horebeke centrum.

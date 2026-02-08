@@ -17,10 +17,10 @@
 
 ## Lokale focus in Lieferinge
 
-Werk je in Lieferinge? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Lieferinge.
+Werk je in Lieferinge? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Lieferinge.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Lieferinge
@@ -132,7 +132,13 @@ Wil je ervaren hoe **3D printen in Lieferinge** jouw project vooruithelpt? Vraag
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Lieferinge
+- Centrum van Lieferinge
+- Lokale bedrijvenzone in Lieferinge
+- Sporthal in Lieferinge
+
 
 ## Klantenspotlight
 - Lokale teams in Lieferinge: kleine reeksen met vaste settings rond Lieferinge.

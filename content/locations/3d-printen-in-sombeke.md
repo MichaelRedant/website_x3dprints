@@ -1,6 +1,6 @@
 # 3D printen in Sombeke: snel maatwerk voor lokale projecten
 
-**3D printen in Sombeke** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Sombeke** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Hamme](/3d-printen-in-hamme)
 - [Buurpagina: 3D printen in Lokeren](/3d-printen-in-lokeren)
 
+
+
 ## Spotlight rond Sombeke
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Sombeke centrum.
 - Terugkerende order: 3D print service Sombeke; we bewaren je instellingen.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Sombeke
 - Lokale makers en ontwerpers (Sombeke)
-- Kleine series en maatwerk (Sombeke)
+- Kleine en grotere series en maatwerk (Sombeke)
 - Verenigingen en onderwijs (Sombeke)
 
 ## Wat vaak wordt gevraagd in Sombeke

@@ -1,6 +1,6 @@
 # 3D printen in Moerbeke (Geraardsbergen): Dender en trage wegen
 
-Voor **3D printen in Moerbeke-Geraardsbergen** levert X3DPrints prototypes en kleine series voor projecten langs de Dender, trage wegen en dorpskern. Je krijgt strakke prints met duidelijke prijzen.
+Voor **3D printen in Moerbeke-Geraardsbergen** levert X3DPrints prototypes en zowel kleine als grotere series voor projecten langs de Dender, trage wegen en dorpskern. Je krijgt strakke prints met duidelijke prijzen.
 
 ---
 
@@ -19,7 +19,7 @@ Voor **3D printen in Moerbeke-Geraardsbergen** levert X3DPrints prototypes en kl
 
 ## Lokale focus in Moerbeke (Geraardsbergen)
 
-Werk je in Moerbeke (Geraardsbergen)? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Moerbeke (Geraardsbergen)? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 - Behuizingen en covers voor elektronica, sensoren of prototypes.
@@ -39,7 +39,7 @@ Werk je in Moerbeke (Geraardsbergen)? We leveren snelle prototypes en kleine ser
 
 - Behuizingen en klemmen voor Dendergerelateerde installaties.
 - Hulpstukken voor landelijk gebruik langs trage wegen.
-- Props en kleine series voor lokale verenigingen en retail.
+- Props en zowel kleine als grotere series voor lokale verenigingen en retail.
 
 ---
 
@@ -64,7 +64,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -77,7 +77,13 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Moerbeke (Geraardsbergen)
+- Centrum van Moerbeke (Geraardsbergen)
+- Lokale bedrijvenzone in Moerbeke (Geraardsbergen)
+- Sporthal in Moerbeke (Geraardsbergen)
+
 
 ## Spotlight rond Moerbeke (Geraardsbergen)
 - Lokale teams in Moerbeke (Geraardsbergen): behuizingen en pasmallen voor teams in Moerbeke (Geraardsbergen).

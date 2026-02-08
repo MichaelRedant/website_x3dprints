@@ -2,7 +2,7 @@
 
 **3D printen in Ressegem** brengt moderne maaktechnologie naar een dorp waar samenwerking centraal staat.  
 Lokale ondernemers, studenten en makers kunnen hun ideeën sneller en betaalbaarder omzetten in tastbare objecten.  
-Met **persoonlijke begeleiding** en **geavanceerde 3D-printers** staat X3DPrints klaar om Ressegem te ondersteunen – van prototypes tot kleine series.
+Met **persoonlijke begeleiding** en **geavanceerde 3D-printers** staat X3DPrints klaar om Ressegem te ondersteunen – van prototypes tot kleine en grotere series.
 
 X3DPrints is een **Herzeelse handelaar** en **100% Belgische 3D printstudio**. We leveren vanuit Herzele in een korte keten en zijn een **trots lid van de Werkgroep Ondernemend Herzele**. Geen outsourcing of dropshipping - je schakelt rechtstreeks met de maker in het atelier. Lees meer over onze aanpak op [de lokale & Belgische pagina](/lokaal-belgisch) en je kan ook betalen met de Herzeelse Euro (Heuro).
 
@@ -37,7 +37,7 @@ X3DPrints is een **Herzeelse handelaar** en **100% Belgische 3D printstudio**. W
 
 ### 👔 Ondernemers en zelfstandigen
 - Sneller testen van productideeën  
-- Kleine series op maat  
+- Kleine en grotere series op maat  
 - Lokale productie zonder hoge logistieke kosten  
 
 ### 🛠 Makers en hobbyisten
@@ -128,7 +128,7 @@ Vraag vandaag nog een **gratis offerte** voor *3D printen in Ressegem*.
 
 ## Lokale focus in Ressegem
 
-Werk je in Ressegem? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Ressegem? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 - Behuizingen en covers voor elektronica, sensoren of prototypes.
@@ -158,7 +158,13 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Ressegem
+- Centrum van Ressegem
+- Lokale bedrijvenzone in Ressegem
+- Sporthal in Ressegem
+
 
 ## Lokale spotlight
 - Lokale teams in Ressegem: PLA/PETG onderdelen afgestemd op projecten rond Ressegem.

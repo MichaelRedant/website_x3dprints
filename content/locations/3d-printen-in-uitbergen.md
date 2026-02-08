@@ -26,7 +26,7 @@ In Uitbergen combineren we detailwerk met functionele onderdelen; je krijgt snel
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Uitbergen
 
@@ -43,7 +43,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Uitbergen interessant?
 
 ### Lokale ondernemers
-Onderdelen, hulpstukken en kleine series met korte doorlooptijd.
+Onderdelen, hulpstukken en zowel kleine als grotere series met korte doorlooptijd.
 
 ### Verenigingen en scholen
 Educatieve modellen en kleine projecten.
@@ -81,7 +81,7 @@ Een testprint bespaart tijd en geeft snelle feedback.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -122,6 +122,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 ## Gerelateerde buurtpagina's
 - [Buurpagina: 3D printen in Berlare](/3d-printen-in-berlare)
 - [Buurpagina: 3D printen in Overmere](/3d-printen-in-overmere)
+
+
 
 ## Klantenspotlight
 - Lokale KMO's en zelfstandigen: kleine reeksen met vaste settings rond Uitbergen centrum.

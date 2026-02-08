@@ -1,6 +1,6 @@
 # 3D printen in Eine (Oudenaarde): aan de Schelde en het station
 
-X3DPrints ondersteunt Eine met snelle 3D prints voor makers, scholen en kmo's rond het station en de Scheldekaaien. Ideaal voor prototypes, kleine series en vervangstukken.
+X3DPrints ondersteunt Eine met snelle 3D prints voor makers, scholen en kmo's rond het station en de Scheldekaaien. Ideaal voor prototypes, kleine en grotere series en vervangstukken.
 
 ---
 
@@ -23,7 +23,7 @@ X3DPrints ondersteunt Eine met snelle 3D prints voor makers, scholen en kmo's ro
 
 Voor projecten in Eine (Oudenaarde) combineren we korte doorlooptijd met strakke afwerking.
 
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 
@@ -52,7 +52,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -65,7 +65,13 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Eine (Oudenaarde)
+- Centrum van Eine (Oudenaarde)
+- Lokale bedrijvenzone in Eine (Oudenaarde)
+- Sporthal in Eine (Oudenaarde)
+
 
 ## Spotlight rond Eine (Oudenaarde)
 - Lokale teams in Eine (Oudenaarde): behuizingen en pasmallen voor teams in Eine (Oudenaarde).

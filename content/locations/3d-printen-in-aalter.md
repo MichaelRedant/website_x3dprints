@@ -23,7 +23,7 @@
 
 ## Lokale focus in Aalter
 
-Werk je in Aalter? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Sint-Corneliuskerk.
+Werk je in Aalter? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Corneliuskerk.
 
 - Maquettes en detailmodellen voor erfgoed en presentaties.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -44,13 +44,13 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Aalter interessant?
 
 ### KMO's en techniekers
-Snelle prototypes, hulpstukken en kleine series voor lokale bedrijven.
+Snelle prototypes, hulpstukken en zowel kleine als grotere series voor lokale bedrijven.
 
 ### Makers en hobbyisten
 Van reserveonderdeel tot uniek object, zonder lange wachttijden.
 
 ### Scholen en verenigingen
-Educatieve modellen, prijzen of kleine series voor lokale initiatieven.
+Educatieve modellen, prijzen of kleine en grotere series voor lokale initiatieven.
 
 ---
 
@@ -95,8 +95,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Aalter?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Aalter?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Aalter?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Aalter
 - [3D printen in Knesselare](/3d-printen-in-knesselare)
@@ -129,6 +129,8 @@ Wil u een prototype of maatwerk laten printen in Aalter? Vraag een vrijblijvende
 - [Buurpagina: 3D printen in Knesselare](/3d-printen-in-knesselare)
 - [Buurpagina: 3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
 - [Buurpagina: 3D printen in Poeke](/3d-printen-in-poeke)
+
+
 
 ## Spotlight rond Aalter
 - KMO's langs E40 en N44: behuizingen en pasmallen voor teams in Aalter centrum.

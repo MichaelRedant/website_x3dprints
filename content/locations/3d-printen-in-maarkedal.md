@@ -1,6 +1,6 @@
 # 3D printen in Maarkedal: maatwerk in de Vlaamse Ardennen
 
-**3D printen in Maarkedal** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een strakke afwerking voor projecten in de Vlaamse Ardennen.
+**3D printen in Maarkedal** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een strakke afwerking voor projecten in de Vlaamse Ardennen.
 
 ---
 
@@ -25,7 +25,7 @@
 
 In Maarkedal combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Kleine series en onderdelen op maat met korte lead time.
+Kleine en grotere series en onderdelen op maat met korte lead time.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en betrouwbare planning.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Maarke-Kerkem](/3d-printen-in-maarke-kerkem)
 - [Buurpagina: 3D printen in Nukerke](/3d-printen-in-nukerke)
 - [Buurpagina: 3D printen in Schorisse](/3d-printen-in-schorisse)
+
+
 
 ## Lokale spotlight
 - Makers en ontwerpers in de Vlaamse Ardennen: PLA/PETG onderdelen afgestemd op projecten rond Maarkedal centrum.

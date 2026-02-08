@@ -1,6 +1,6 @@
 # 3D printen in Hillegem: lokale productie met grote mogelijkheden
 
-3D printen in Hillegem brengt innovatieve technologie naar een groene deelgemeente van Herzele. Dankzij een **lokale 3D print service** hoeven ondernemers, makers en scholen niet langer uit te wijken naar verre steden. Je krijgt directe toegang tot **betaalbare prototyping, kleine series en maatwerk**, met korte lijnen en persoonlijke begeleiding. 3D printen in Hillegem combineert landelijke charme met moderne maakindustrie en stimuleert creativiteit dicht bij huis.
+3D printen in Hillegem brengt innovatieve technologie naar een groene deelgemeente van Herzele. Dankzij een **lokale 3D print service** hoeven ondernemers, makers en scholen niet langer uit te wijken naar verre steden. Je krijgt directe toegang tot **betaalbare prototyping, kleine en grotere series en maatwerk**, met korte lijnen en persoonlijke begeleiding. 3D printen in Hillegem combineert landelijke charme met moderne maakindustrie en stimuleert creativiteit dicht bij huis.
 
 X3DPrints is een **Herzeelse handelaar** en **100% Belgische 3D printstudio**. We leveren vanuit Herzele in een korte keten en zijn een **trots lid van de Werkgroep Ondernemend Herzele**. Geen outsourcing of dropshipping - je schakelt rechtstreeks met de maker in het atelier. Lees meer over onze aanpak op [de lokale & Belgische pagina](/lokaal-belgisch) en je kan ook betalen met de Herzeelse Euro (Heuro).
 
@@ -22,11 +22,11 @@ Met 3D printen in Hillegem maak je innovatie toegankelijk voor iedereen.
 
 ## Lokale focus in Hillegem
 
-Werk je in Hillegem? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Hillegem? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Ergonomische grips en handgrepen op maat.
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 
 ## Materialen en toepassingen
 
@@ -43,7 +43,7 @@ PLA is ideaal voor etalage-items en schaalmodellen, PETG levert sterke onderdele
 ## Voor wie is 3D printen in Hillegem interessant?
 
 ### Zelfstandigen en kmo’s
-Snelle validatie van nieuwe producten, kleine series rendabel produceren en maatwerkoplossingen voor klanten.
+Snelle validatie van nieuwe producten, kleine en grotere series rendabel produceren en maatwerkoplossingen voor klanten.
 
 ### Hobbyisten en makers
 Experimenteer met persoonlijke projecten en gadgets die normaal moeilijk te realiseren zijn.
@@ -131,7 +131,7 @@ Snel, betrouwbaar en volledig op maat van jouw project.
 
 ## Veelgestelde vragen over 3D printen in Hillegem
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -152,7 +152,13 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Hillegem
+- Centrum van Hillegem
+- Lokale bedrijvenzone in Hillegem
+- Sporthal in Hillegem
+
 
 ## Spotlight rond Hillegem
 - Lokale teams in Hillegem: behuizingen en pasmallen voor teams in Hillegem.

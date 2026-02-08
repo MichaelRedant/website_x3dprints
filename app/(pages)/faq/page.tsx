@@ -64,7 +64,7 @@ export default function Page() {
   const extraFaq = [
     {
       q: "Werken jullie met particulieren?",
-      a: "Ja. Particulieren, verenigingen, scholen en bedrijven kunnen terecht voor een stuk of kleine series. Start met een aanvraag via <a href=\"/contact\">/contact</a>.",
+      a: "Ja. Particulieren, verenigingen, scholen en bedrijven kunnen terecht voor een stuk of kleine en grotere series. Start met een aanvraag via <a href=\"/contact\">/contact</a>.",
     },
     {
       q: "Waarom moet ik het aanvraagformulier invullen?",
@@ -147,7 +147,7 @@ export default function Page() {
     },
     {
       q: "Kan ik meerdere stuks laten printen?",
-      a: "Zeker. Vanaf een stuk tot kleine series. Grotere volumes krijgen staffelprijzen; vraag dit aan via <a href=\"/pricing\">/pricing</a> of <a href=\"/contact\">/contact</a>.",
+      a: "Zeker. Vanaf een stuk tot kleine en grotere series. Grotere volumes krijgen staffelprijzen; vraag dit aan via <a href=\"/pricing\">/pricing</a> of <a href=\"/contact\">/contact</a>.",
     },
     {
       q: "Is 3D printen geschikt voor functionele onderdelen?",
@@ -183,7 +183,7 @@ export default function Page() {
     },
     {
       q: "Printen jullie ook een enkel stuk?",
-      a: "Ja, vanaf een stuk. We focussen zowel op proefprints als kleine series. Check prijzen op <a href=\"/pricing\">/pricing</a>.",
+      a: "Ja, vanaf een stuk. We focussen zowel op proefprints als kleine en grotere series. Check prijzen op <a href=\"/pricing\">/pricing</a>.",
     },
     {
       q: "Hoe sterk zijn FDM prints?",

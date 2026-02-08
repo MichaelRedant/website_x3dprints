@@ -1,6 +1,6 @@
 # 3D printen in Waarbeke: trage wegen en Waarbekeveld
 
-Voor **3D printen in Waarbeke** levert X3DPrints prototypes en kleine series richting Waarbekeveld, trage wegen en ateliers in de dorpskern. Je krijgt strakke prints met heldere prijzen.
+Voor **3D printen in Waarbeke** levert X3DPrints prototypes en zowel kleine als grotere series richting Waarbekeveld, trage wegen en ateliers in de dorpskern. Je krijgt strakke prints met heldere prijzen.
 
 ---
 
@@ -77,7 +77,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Waarbeke
+- Centrum van Waarbeke
+- Lokale bedrijvenzone in Waarbeke
+- Sporthal in Waarbeke
+
 
 ## Spotlight rond Waarbeke
 - Lokale teams in Waarbeke: behuizingen en pasmallen voor teams in Waarbeke.

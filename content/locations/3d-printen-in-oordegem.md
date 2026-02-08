@@ -26,7 +26,7 @@
 In Oordegem combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Oordegem
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Kleine series en onderdelen op maat met korte lead time.
+Kleine en grotere series en onderdelen op maat met korte lead time.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en betrouwbare planning.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Smetlede](/3d-printen-in-smetlede)
 - [Buurpagina: 3D printen in Wanzele](/3d-printen-in-wanzele)
 
+
+
 ## Klantenspotlight
 - Lokale makers en techniekers: kleine reeksen met vaste settings rond Oordegem centrum.
 - Vaak gevraagd: 3D print service Oordegem; we adviseren materiaal en afwerking.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectorfocus nabij Oordegem
 - Lokale makers en techniekers (Oordegem)
-- Kleine series en maatwerk (Oordegem)
+- Kleine en grotere series en maatwerk (Oordegem)
 - Verenigingen en scholen (Oordegem)
 
 ## Typische aanvragen rond Oordegem

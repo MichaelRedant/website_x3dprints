@@ -1,6 +1,6 @@
 # 3D printen in Ertvelde: sterke onderdelen met snelle doorlooptijd
 
-**3D printen in Ertvelde** (Evergem) is ideaal voor functionele onderdelen, prototypes en kleine series. X3DPrints levert vanuit Herzele met persoonlijk advies, korte planning en consistente kwaliteit.
+**3D printen in Ertvelde** (Evergem) is ideaal voor functionele onderdelen, prototypes en zowel kleine als grotere series. X3DPrints levert vanuit Herzele met persoonlijk advies, korte planning en consistente kwaliteit.
 
 ---
 
@@ -25,7 +25,7 @@
 
 In Ertvelde combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
 
@@ -82,7 +82,7 @@ Test snel, verbeter sneller en hou controle over uw planning.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -127,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 ## Gerelateerde buurtpagina's
 - [Buurpagina: 3D printen in Evergem](/3d-printen-in-evergem)
 - [Buurpagina: 3D printen in Kluizen](/3d-printen-in-kluizen)
+
+
 
 ## Klantenspotlight
 - Industrie en logistiek rond de kanaalzone: kleine reeksen met vaste settings rond Ertvelde centrum.

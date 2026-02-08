@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Use Case Dinsdag #7: Interieurdesign 3D prints",
     description:
-      "Voor interieurarchitecten en makers: hoe je sculpturen, wandpanelen en decor in kleine oplage produceert met PLA en PETG.",
+      "Voor interieurarchitecten en makers: hoe je sculpturen, wandpanelen en decor in kleine en grotere oplage produceert met PLA en PETG.",
     url: canonical,
     type: "article",
     publishedTime: publishedDate,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Use Case Dinsdag: Interieurdesign & decor",
     description:
-      "Alles over PLA Matte, Marble, Wood en PETG voor sculpturen, wandpanelen en retail props in kleine oplage.",
+      "Alles over PLA Matte, Marble, Wood en PETG voor sculpturen, wandpanelen en retail props in kleine en grotere oplage.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -48,7 +48,7 @@ const heroStats = [
 
 const differencePoints = [
   {
-    title: "Custom decor in kleine oplage",
+    title: "Custom decor in kleine en grotere oplage",
     detail: "Vazen, sculpturen, wandpanelen of centerpieces. FDM levert 1 tot 50 stuks zonder mallen of dure tooling.",
   },
   {
@@ -239,7 +239,7 @@ export default function UseCaseDinsdagInterieurPage() {
             </h1>
             <p className="mt-4 text-lg text-slate-700">
               Interieurdesigners willen flexibiliteit, custom shapes, lichtgewicht materialen en snelle iteraties. FDM geeft hen
-              die toolbox in kleine oplage, met steenlook, houttextuur of matte luxe zonder traditionele productiekost.
+              die toolbox in kleine en grotere oplage, met steenlook, houttextuur of matte luxe zonder traditionele productiekost.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=use-case-interieur">Vraag interieur-advies</ShimmerButton>

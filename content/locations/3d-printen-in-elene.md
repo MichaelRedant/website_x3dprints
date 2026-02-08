@@ -20,7 +20,7 @@
 Voor Elene leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Elene en Elene.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Elene
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Elene** ook ABS, ASA, Nylon of PA-CF voor tec
 ## Voor wie is 3D printen in Elene interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven gebruiken **3D printen in Elene** om prototypes te testen en kleine series te produceren.
+Lokale bedrijven gebruiken **3D printen in Elene** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve bewoners zetten hun ideeën om in tastbare objecten met **3D printen in Elene**.
@@ -134,7 +134,13 @@ Benieuwd hoe **3D printen in Elene** jouw idee versterkt? Vraag een **gratis off
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Elene
+- Centrum van Elene
+- Lokale bedrijvenzone in Elene
+- Sporthal in Elene
+
 
 ## Lokale spotlight
 - Lokale teams in Elene: PLA/PETG onderdelen afgestemd op projecten rond Elene.

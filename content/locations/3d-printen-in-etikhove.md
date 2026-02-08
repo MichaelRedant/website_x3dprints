@@ -1,6 +1,6 @@
 # 3D printen in Etikhove: precisie voor lokale makers
 
-**3D printen in Etikhove** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en betrouwbare afwerking voor projecten in Maarkedal.
+**3D printen in Etikhove** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en betrouwbare afwerking voor projecten in Maarkedal.
 
 ---
 
@@ -25,7 +25,7 @@
 
 In Etikhove combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met een heldere planning.
+Maatwerk en zowel kleine als grotere series met een heldere planning.
 
 ### Verenigingen en scholen
 Projecten met betrouwbare communicatie en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur uw ontwerp bij.
 - Prototypes en maatcontrole
 - Vervangstukken en herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -100,7 +100,6 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 ## Interne links rond 3D printen in Etikhove
 - [3D printen in Maarkedal](/3d-printen-in-maarkedal)
 - [3D printen in Maarke-Kerkem](/3d-printen-in-maarke-kerkem)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 - [3D printen in Gavere](/3d-printen-in-gavere)
 ---
 
@@ -129,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Maarke-Kerkem](/3d-printen-in-maarke-kerkem)
 - [Buurpagina: 3D printen in Nukerke](/3d-printen-in-nukerke)
 - [Buurpagina: 3D printen in Schorisse](/3d-printen-in-schorisse)
+
+
 
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Etikhove centrum.

@@ -93,8 +93,8 @@ Grotenberge ligt langs de N46 en herbergt de Sint-Pieters-Banden en Sint-Berlind
 
 ## Veelgestelde vragen over 3D printen in Grotenberge
 
-**Kunnen jullie kleine series leveren in Grotenberge?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Grotenberge?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Grotenberge?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -134,7 +134,13 @@ Wil je aan de slag met **3D printen in Grotenberge**? Vraag een **gratis offerte
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Grotenberge
+- Centrum van Grotenberge
+- Lokale bedrijvenzone in Grotenberge
+- Sporthal in Grotenberge
+
 
 ## Spotlight rond Grotenberge
 - Lokale teams in Grotenberge: behuizingen en pasmallen voor teams in Grotenberge.

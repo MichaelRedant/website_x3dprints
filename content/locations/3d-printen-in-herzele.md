@@ -28,7 +28,7 @@ X3DPrints is een **Herzeelse handelaar** en **100% Belgische 3D printstudio**. W
 
 - **Transparante prijzen**: duidelijk per formaat, materiaal en nabehandeling.
 
-- **Kleine series rendabel**: geen dure matrijzen of lange opstart.
+- **Kleine en grotere series rendabel**: geen dure matrijzen of lange opstart.
 
 - **Maatwerk**: we denken mee over sterkte, oriëntatie en passing.
 
@@ -44,11 +44,11 @@ X3DPrints is een **Herzeelse handelaar** en **100% Belgische 3D printstudio**. W
 
 ## Lokale focus in Herzele
 
-Werk je in Herzele? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Herzele? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Ergonomische grips en handgrepen op maat.
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 
 ## Materialen & specificaties
 
@@ -90,7 +90,7 @@ Werk je in Herzele? We leveren snelle prototypes en kleine series op maat, met m
 
 - Snel **prototype** voor pasvorm- of functietest.  
 
-- **Kleine series** zonder matrijskosten.  
+- **Kleine en grotere series** zonder matrijskosten.  
 
 - **Reserve- of vervangonderdelen** op maat.
 
@@ -210,8 +210,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Herzele?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Herzele?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Herzele?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links
 - [3D printen in Borsbeke](/3d-printen-in-borsbeke)
@@ -240,7 +240,13 @@ Klaar om te starten in Herzele? Stuur je **STL/STEP** via de [contactpagina](/co
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Herzele
+- Centrum van Herzele
+- Lokale bedrijvenzone in Herzele
+- Sporthal in Herzele
+
 
 ## Lokale spotlight
 - Lokale teams in Herzele: PLA/PETG onderdelen afgestemd op projecten rond Herzele.

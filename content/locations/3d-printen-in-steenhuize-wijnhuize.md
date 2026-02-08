@@ -2,7 +2,7 @@
 
 3D printen in Steenhuize-Wijnhuize brengt innovatieve technologie naar een omgeving met een rijke geschiedenis. Het maakt lokale productie toegankelijk voor inwoners, ondernemers en verenigingen. Dankzij deze service hoeven ideeën niet naar een stad gestuurd te worden, maar kunnen ze dichtbij huis werkelijkheid worden.  
 
-Lokale betrokkenheid, snelle communicatie en persoonlijke begeleiding staan centraal. Van eenmalige prototypes tot kleine series: 3D printen in Steenhuize-Wijnhuize combineert erfgoed met vooruitgang.
+Lokale betrokkenheid, snelle communicatie en persoonlijke begeleiding staan centraal. Van eenmalige prototypes tot kleine en grotere series: 3D printen in Steenhuize-Wijnhuize combineert erfgoed met vooruitgang.
 
 X3DPrints is een **Herzeelse handelaar** en **100% Belgische 3D printstudio**. We leveren vanuit Herzele in een korte keten en zijn een **trots lid van de Werkgroep Ondernemend Herzele**. Geen outsourcing of dropshipping - je schakelt rechtstreeks met de maker in het atelier. Lees meer over onze aanpak op [de lokale & Belgische pagina](/lokaal-belgisch) en je kan ook betalen met de Herzeelse Euro (Heuro).
 
@@ -48,7 +48,7 @@ PLA is ideaal voor prototypes en maquettes, PETG voor stevige technische toepass
 
 ### Ondernemers en zelfstandigen
 - Versnel productontwikkeling  
-- Maak kleine series betaalbaar  
+- Maak kleine en grotere series betaalbaar  
 - Creëer unieke merchandising of maatwerkoplossingen  
 
 ### Makers en hobbyisten
@@ -165,7 +165,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Steenhuize-Wijnhuize
+- Centrum van Steenhuize-Wijnhuize
+- Lokale bedrijvenzone in Steenhuize-Wijnhuize
+- Sporthal in Steenhuize-Wijnhuize
+
 
 ## Klantenspotlight
 - Lokale teams in Steenhuize-Wijnhuize: kleine reeksen met vaste settings rond Steenhuize-Wijnhuize.

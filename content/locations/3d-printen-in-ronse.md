@@ -1,6 +1,6 @@
 # 3D printen in Ronse: maatwerk in de Vlaamse Ardennen
 
-**3D printen in Ronse** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking. Ronse heeft geen officiele deelgemeenten, maar wel kernen zoals De Klijpe en Louise-Marie.
+**3D printen in Ronse** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking. Ronse heeft geen officiele deelgemeenten, maar wel kernen zoals De Klijpe en Louise-Marie.
 
 ---
 
@@ -27,7 +27,7 @@ Voor Ronse leveren we snel en denken we mee over sterkte en afwerking, ideaal vo
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Ronse
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,14 +94,13 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Ronse?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Ronse?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Ronse?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Ronse
 - [3D printen in De Klijpe](/3d-printen-in-de-klijpe)
 - [3D printen in Louise-Marie](/3d-printen-in-louise-marie)
 - [3D printen in Maarkedal](/3d-printen-in-maarkedal)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 ---
 
 ## Externe links
@@ -129,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Louise-Marie](/3d-printen-in-louise-marie)
 - [Buurpagina: 3D printen in Maarkedal](/3d-printen-in-maarkedal)
 
+
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Ronse centrum.
 - Vaak gevraagd: 3D print service Ronse; we adviseren materiaal en afwerking.
@@ -141,7 +142,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in Ronse
 - Lokale makers en ontwerpers (Ronse)
-- Kleine series en maatwerk (Ronse)
+- Kleine en grotere series en maatwerk (Ronse)
 - Verenigingen en onderwijs (Ronse)
 
 ## Veelgevraagde zoekopdrachten in Ronse

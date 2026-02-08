@@ -67,3 +67,37 @@ Ja. We bewaren slicerprofielen en leveren batches met dezelfde kwaliteit.
 - Machelen centrum
 - Diegem
 - Airport- en Brucargo-corridor
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Machelen
+
+- Dekking: Machelen, Machelen centrum, Diegem, Industryzone aan de R0, Luchthaven- en Brucargo-corridor, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Machelen.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Airport- en logistieke teams nabij Diegem/Brucargo: PLA/PETG onderdelen afgestemd op projecten rond Machelen centrum.
+- Vaak gevraagd: 3D print service Machelen; we adviseren materiaal en afwerking.
+- Leverfocus: Machelen, Machelen centrum, Diegem.
+
+## Plaatsen waar we vaak leveren rond Machelen
+- Centrum van Machelen
+- Lokale bedrijvenzone in Machelen
+- Sporthal in Machelen
+
+## Sectoren die we vaak helpen in Machelen
+- Airport- en logistieke teams nabij Diegem/Brucargo (Machelen)
+- Kantoren en tech in Machelen en R0-zone
+- Events en retail in de Vlaamse Rand (Machelen)
+
+## Veelgevraagde zoekopdrachten in Machelen
+- 3D print service Machelen
+- rapid prototyping Machelen
+- 3D printing bedrijf Machelen
+<!-- LOCAL_ENRICH_END -->

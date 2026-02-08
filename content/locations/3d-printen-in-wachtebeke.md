@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Wachtebeke interessant?
 
 ### Lokale ondernemers
-Kleine series en onderdelen op maat met snelle levering.
+Kleine en grotere series en onderdelen op maat met snelle levering.
 
 ### Onderhoud en herstellingen
 Sterke onderdelen die tegen een stootje kunnen.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Zeveneken](/3d-printen-in-zeveneken)
 - [Buurpagina: 3D printen in Zaffelare](/3d-printen-in-zaffelare)
 - [Hoofdpagina: 3D printen in Zelzate](/3d-printen-in-zelzate)
+
+
 
 ## Spotlight rond Wachtebeke
 - Lokale makers en techniekers: behuizingen en pasmallen voor teams in Wachtebeke centrum.

@@ -1,6 +1,6 @@
 # 3D printen in Sint-Niklaas: snelle prototypes in het Waasland
 
-**3D printen in Sint-Niklaas** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten in het Waasland.
+**3D printen in Sint-Niklaas** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten in het Waasland.
 
 ---
 
@@ -23,10 +23,10 @@
 
 ## Lokale focus in Sint-Niklaas
 
-Werk je in Sint-Niklaas? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Grote Markt (Sint-Niklaas).
+Werk je in Sint-Niklaas? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Grote Markt (Sint-Niklaas).
 
 - Pasmallen en sjablonen voor montage en assemblage.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
 ## Materialen voor 3D printen in Sint-Niklaas
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test onderdelen snel en stuur bij waar nodig.
 **Welke bestanden kan ik aanleveren voor Sint-Niklaas?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Sint-Niklaas?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Sint-Niklaas?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Sint-Niklaas?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Belsele](/3d-printen-in-belsele)
 - [Buurpagina: 3D printen in Nieuwkerken-Waas](/3d-printen-in-nieuwkerken-waas)
 - [Buurpagina: 3D printen in Sinaai](/3d-printen-in-sinaai)
+
+
 
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Sint-Niklaas centrum.

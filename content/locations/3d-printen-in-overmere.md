@@ -24,7 +24,7 @@
 
 In Overmere helpen we projecten rond Donkmeer sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -43,7 +43,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Overmere interessant?
 
 ### Lokale ondernemers
-Prototypes, onderdelen en kleine series voor dagelijks gebruik.
+Prototypes, onderdelen en zowel kleine als grotere series voor dagelijks gebruik.
 
 ### Horeca en toerisme
 Maatwerk voor displays, signalisatie en decor.
@@ -81,7 +81,7 @@ Een eerste testprint maakt uw beslissingen sneller en zekerder.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -123,6 +123,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 ## Gerelateerde buurtpagina's
 - [Buurpagina: 3D printen in Berlare](/3d-printen-in-berlare)
 - [Buurpagina: 3D printen in Uitbergen](/3d-printen-in-uitbergen)
+
+
 
 ## Klantenspotlight
 - Lokale ondernemers en techniekers: kleine reeksen met vaste settings rond Overmere centrum.

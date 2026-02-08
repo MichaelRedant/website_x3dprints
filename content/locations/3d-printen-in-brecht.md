@@ -22,7 +22,7 @@ Voor **3D printen in Brecht** leveren we prototypes en functionele onderdelen na
 In Brecht helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
 
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 
 ## Materialen
@@ -38,7 +38,7 @@ In Brecht helpen we makers en bedrijven met 3D prints die vlot passen en lang me
 ## Toepassingen in Brecht
 
 - Logistiek en productie: klemmen, houders en hulpstukken voor bedrijven langs de E19 en in bedrijventerreinen.
-- Retail en diensten in Sint-Job-in-'t-Goor: displays, badgehouders en kleine series gepersonaliseerde onderdelen.
+- Retail en diensten in Sint-Job-in-'t-Goor: displays, badgehouders en zowel kleine als grotere series gepersonaliseerde onderdelen.
 - Educatie en publiek: schaalmodellen of props voor projecten rond de abdij of lokale verenigingen.
 
 ---
@@ -89,7 +89,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Brecht
+- Centrum van Brecht
+- Lokale bedrijvenzone in Brecht
+- Sporthal in Brecht
+
 
 ## Lokale spotlight
 - Lokale teams in Brecht: PLA/PETG onderdelen afgestemd op projecten rond Brecht.

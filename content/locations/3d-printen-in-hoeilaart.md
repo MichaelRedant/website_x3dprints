@@ -35,7 +35,7 @@ We kennen de combinatie van events, retail en KMO's in de Druivenstreek. Daardoo
 
 - Retailprops en signage voor lokale acties.
 - Technische passtukken voor installaties in en rond Groenendaal.
-- Kleine series behuizingen voor kantoren en makers.
+- Kleine en grotere series behuizingen voor kantoren en makers.
 
 ---
 
@@ -67,3 +67,37 @@ Ja, geef het mee bij je aanvraag.
 - Hoeilaart centrum
 - Groenendaal
 - E411/R0-corridor
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Hoeilaart
+
+- Dekking: Hoeilaart, Hoeilaart centrum, Groenendaal, E411 en ring rond Brussel, Bos- en parkzones richting Tervuren/Overijse, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Hoeilaart.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Spotlight rond Hoeilaart
+- Retail en events in Hoeilaart en Groenendaal: behuizingen en pasmallen voor teams in Hoeilaart centrum.
+- Terugkerende order: 3D print service Hoeilaart; we bewaren je instellingen.
+- Leverfocus: Hoeilaart, Hoeilaart centrum, Groenendaal.
+
+## Landmarks in de buurt van Hoeilaart
+- Centrum van Hoeilaart
+- Lokale bedrijvenzone in Hoeilaart
+- Sporthal in Hoeilaart
+
+## Teams die we ondersteunen rond Hoeilaart
+- Retail en events in Hoeilaart en Groenendaal
+- KMO's en installaties langs E411 (Hoeilaart)
+- Makers en onderwijs in Druivenstreek (Hoeilaart)
+
+## Wat vaak wordt gevraagd in Hoeilaart
+- 3D print service Hoeilaart
+- rapid prototyping Hoeilaart
+- 3D printing bedrijf Hoeilaart
+<!-- LOCAL_ENRICH_END -->

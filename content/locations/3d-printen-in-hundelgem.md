@@ -1,6 +1,6 @@
 # 3D printen in Hundelgem: lokaal maatwerk met snelle service
 
-**3D printen in Hundelgem** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Hundelgem** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,14 +82,14 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Hundelgem
 
-**Kunnen jullie kleine series leveren in Hundelgem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Hundelgem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Hundelgem?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -101,7 +101,6 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Hundelgem of a
 - [3D printen in Zwalm](/3d-printen-in-zwalm)
 - [3D printen in Dikkele](/3d-printen-in-dikkele)
 - [3D printen in Meilegem](/3d-printen-in-meilegem)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 ---
 
 ## Externe links
@@ -129,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
 - [Buurpagina: 3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
 
+
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Hundelgem centrum.
 - Vaak gevraagd: 3D print service Hundelgem; we adviseren materiaal en afwerking.
@@ -141,7 +142,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in Hundelgem
 - Lokale makers en ontwerpers (Hundelgem)
-- Kleine series en maatwerk (Hundelgem)
+- Kleine en grotere series en maatwerk (Hundelgem)
 - Verenigingen en onderwijs (Hundelgem)
 
 ## Veelgevraagde zoekopdrachten in Hundelgem

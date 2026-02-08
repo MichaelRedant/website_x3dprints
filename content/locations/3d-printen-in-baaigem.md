@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test uw ontwerp snel en verbeter zonder lange wachttijden.
 **Welke bestanden kan ik aanleveren voor Baaigem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Baaigem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Baaigem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Baaigem?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -101,7 +101,6 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 - [3D printen in Gavere](/3d-printen-in-gavere)
 - [3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
 - [3D printen in Vurste](/3d-printen-in-vurste)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 ---
 
 ## Externe links
@@ -128,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Gavere](/3d-printen-in-gavere)
 - [Buurpagina: 3D printen in Vurste](/3d-printen-in-vurste)
 - [Buurpagina: 3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+
+
 
 ## Klantenspotlight
 - Creatieve projecten en maquettes: kleine reeksen met vaste settings rond Baaigem centrum.

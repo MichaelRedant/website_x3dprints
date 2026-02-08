@@ -322,7 +322,7 @@ export default function ThreeDPrintingPage() {
               Local 3D printing from Herzele, ready for marketing, tabletop and prototypes.
             </h1>
             <p className="mt-4 max-w-3xl text-lg text-slate-700">
-              FDM 3D printing with direct communication. We check your STL/STEP, suggest PLA/PETG/TPU, give realistic timelines and deliver small batches without fuss. Based in Herzele near Ghent/Aalst.
+              FDM 3D printing with direct communication. We check your STL/STEP, suggest PLA/PETG/TPU, give realistic timelines and deliver small to large batches without fuss. Based in Herzele near Ghent/Aalst.
             </p>
             <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">

@@ -386,14 +386,14 @@ export function buildLocationMetaDescription(city: string, locale: "nl" | "en" =
     )
   }
   return clampToWords(
-    `3D printen in ${city} via X3DPrints: prototypes en kleine series in PLA, PETG of TPU. Snelle offerte, duidelijke planning en levering in Vlaanderen.`,
+    `3D printen in ${city} via X3DPrints: prototypes en zowel kleine als grotere series in PLA, PETG of TPU. Snelle offerte, duidelijke planning en levering in Vlaanderen.`,
     165,
   )
 }
 
 /** City fallback when there is no custom metaDescription and md isn't helpful. */
 export function buildCityMetaDescription(city: string): string {
-  const msg = `3D printen in ${city} door X3DPrints: prototypes en kleine series, strakke afwerking. Levertijd 2-5 werkdagen. Materialen: PLA, PETG, TPU. Vraag je offerte.`
+  const msg = `3D printen in ${city} door X3DPrints: prototypes en zowel kleine als grotere series, strakke afwerking. Levertijd 2-5 werkdagen. Materialen: PLA, PETG, TPU. Vraag je offerte.`
   return clampToWords(msg, 158)
 }
 

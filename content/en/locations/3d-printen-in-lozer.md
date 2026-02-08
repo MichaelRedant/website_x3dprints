@@ -15,7 +15,7 @@ Need **3D printing in Lozer**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Delivery focus for Lozer
 
-We frequently deliver to: Lozer.
+We frequently deliver to: Lozer, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Lozer.
 
 ## What stands out in Lozer
 
-- Local SMEs in Lozer: tailored PETG/PLA parts for teams around Lozer.
-- Common ask: 3D print service Lozer; we advise material and finishing for Lozer.
-- Delivery focus: Lozer.
+- Manufacturing and SMEs around Lozer: prototypes, fixtures and housings.
+- Common ask in Lozer: custom 3D printing with practical PLA/PETG/TPU advice for Lozer.
+- Delivery focus: Lozer, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Lozer.
 
 ## Recent requests around Lozer
 
-- Paint-ready show models for presentations in Lozer and Lozer.
+- Paint-ready show models for presentations in Lozer and the surrounding area.
 - PLA or PETG functional parts for teams in Lozer.
-- TPU grips and pads for bikes, tools or fixtures around Lozer.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Lozer.
 
 ## Useful links near Lozer
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,17 +109,17 @@ Send your files today and get a clear, fast proposal for **3D printing in Lozer*
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Lozer
 
-- Coverage: Lozer; delivery from Herzele, pickup available.
+- Coverage: Lozer, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Lozer.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Customer spotlight
-- Local teams in Lozer: small batches with consistent settings near Lozer.
-- Common request: 3D print service Lozer; we pick material and finish for the use case.
+- SMEs and makers in Lozer: fixtures and enclosures.
+- Common request: 3D printing service in Lozer; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Lozer and Lozer.
 
 ## Where we drop off near Lozer
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Lozer*
 - Education/labs around Lozer: lesson-ready prints.
 
 ## Common requests around Lozer
-- 3D print service Lozer
-- rapid prototyping Lozer
-- 3D printing bedrijf Lozer
+- 3D printing service in Lozer
+- Custom 3D printing in Lozer
+- 3D model printing in Lozer
 <!-- LOCAL_ENRICH_END -->

@@ -22,9 +22,9 @@
 
 ## Lokale focus in Kallo
 
-Werk je in Kallo? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Fort Liefkenshoek.
+Werk je in Kallo? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Fort Liefkenshoek.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -46,7 +46,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Tooling, hulpstukken en onderdelen die snel moeten passen.
 
 ### Lokale ondernemers
-Kleine series en prototypes met snelle levering.
+Kleine en grotere series en prototypes met snelle levering.
 
 ### Makers en hobbyisten
 Creatieve projecten en snelle iteraties.
@@ -81,7 +81,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -125,6 +125,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Doel](/3d-printen-in-doel)
 - [Buurpagina: 3D printen in Kieldrecht](/3d-printen-in-kieldrecht)
 - [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
+
 
 ## Spotlight rond Kallo
 - Haven en logistiek: behuizingen en pasmallen voor teams in Kallo centrum.

@@ -81,6 +81,12 @@ Upload je bestand via [contact](/contact) en vermeld materiaal en deadline. We b
 ## Gerelateerde buurtpagina's
 - [Hoofdpagina: 3D printen in Mechelen](/3d-printen-in-mechelen)
 
+## Lokale punten in Leest
+- Centrum van Leest
+- Lokale bedrijvenzone in Leest
+- Sporthal in Leest
+
+
 ## Klantenspotlight
 - Lokale teams in Leest: kleine reeksen met vaste settings rond Leest.
 - Vaak gevraagd: 3D print service Leest; we adviseren materiaal en afwerking.

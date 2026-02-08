@@ -1,6 +1,6 @@
 # 3D printen in Melsele: snel van idee naar prototype
 
-**3D printen in Melsele** is perfect voor prototypes, onderdelen en kleine series. X3DPrints levert vanuit Herzele met persoonlijke service en duidelijke planning.
+**3D printen in Melsele** is perfect voor prototypes, onderdelen en zowel kleine als grotere series. X3DPrints levert vanuit Herzele met persoonlijke service en duidelijke planning.
 
 ---
 
@@ -26,7 +26,7 @@ In Melsele combineren we detailwerk met functionele onderdelen; je krijgt snelle
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Melsele
 
@@ -43,7 +43,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Melsele interessant?
 
 ### Lokale ondernemers
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Verenigingen en scholen
 Educatieve modellen en kleine projecten.
@@ -81,7 +81,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -93,8 +93,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Melsele?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Melsele?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Melsele?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Beveren
 - [3D printen in Haasdonk](/3d-printen-in-haasdonk)
@@ -125,6 +125,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Haasdonk](/3d-printen-in-haasdonk)
 - [Buurpagina: 3D printen in Kallo](/3d-printen-in-kallo)
 - [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
+
 
 ## Lokale spotlight
 - Lokale ondernemers en makers: PLA/PETG onderdelen afgestemd op projecten rond Melsele centrum.

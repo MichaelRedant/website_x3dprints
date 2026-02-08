@@ -1,4 +1,4 @@
-// app/(pages)/services/page.tsx
+﻿// app/(pages)/services/page.tsx
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -31,9 +31,9 @@ import { localizeHref } from "@/lib/i18n/paths"
 import { servicesFaqByLocale } from "@/content/services-faq"
 
 const NL_METADATA: Metadata = {
-  title: "3D print service België | 3D printen op maat | X3DPrints",
+  title: "3D print service BelgiÃ« | 3D printen op maat | X3DPrints",
   description:
-    "Lokale FDM 3D print service België vanuit Herzele (regio Gent). 3D printen op maat in PLA, PETG of TPU voor prototypes en kleine reeksen.",
+    "Lokale FDM 3D print service BelgiÃ« vanuit Herzele (regio Gent). 3D printen op maat in PLA, PETG of TPU voor prototypes en kleine reeksen.",
   alternates: {
     canonical: "https://www.x3dprints.be/services/",
     languages: {
@@ -43,9 +43,9 @@ const NL_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "3D print service België vanuit Herzele",
+    title: "3D print service BelgiÃ« vanuit Herzele",
     description:
-      "3D printen op maat voor klanten in Gent, Aalst en Vlaanderen. Kleine oplages, snelle opvolging en realistisch materiaaladvies.",
+      "3D printen op maat voor klanten in Gent, Aalst en Vlaanderen. Kleine en grotere oplages, snelle opvolging en realistisch materiaaladvies.",
     url: "https://www.x3dprints.be/services/",
     images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "3D print service in Herzele" }],
     locale: "nl_BE",
@@ -53,17 +53,17 @@ const NL_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D print service België",
+    title: "3D print service BelgiÃ«",
     description:
-      "3D printen op maat vanuit Herzele. Kleine oplages met snelle opvolging en transparante communicatie.",
+      "3D printen op maat vanuit Herzele. Kleine en grotere oplages met snelle opvolging en transparante communicatie.",
     images: ["/images/portfolio/20241030_080710-1.jpg"],
   },
 }
 
-export const EN_METADATA: Metadata = {
+const EN_METADATA: Metadata = {
   title: "3D Print Service in Belgium | X3DPrints",
   description:
-    "Local FDM 3D printing from Herzele (part-time studio). Prototypes and small batches in PLA, PETG or TPU with honest advice and direct communication.",
+    "Local FDM 3D printing from Herzele (part-time studio). Prototypes and small to large batches in PLA, PETG or TPU with honest advice and direct communication.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/services/",
     languages: {
@@ -75,7 +75,7 @@ export const EN_METADATA: Metadata = {
   openGraph: {
     title: "3D print service in Belgium",
     description:
-      "Small batches, fast follow-up and pragmatic advice on material and design. Part-time studio in Herzele/Ghent.",
+      "Small to large batches, fast follow-up and pragmatic advice on material and design. Part-time studio in Herzele/Ghent.",
     url: "https://www.x3dprints.be/en/services/",
     images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "3D printing service in Belgium" }],
     locale: "en_BE",
@@ -85,22 +85,25 @@ export const EN_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D print service in Belgium",
     description:
-      "Small batches, fast follow-up and pragmatic advice on material and design. Part-time studio in Herzele/Ghent.",
+      "Small to large batches, fast follow-up and pragmatic advice on material and design. Part-time studio in Herzele/Ghent.",
     images: ["/images/portfolio/20241030_080710-1.jpg"],
   },
 }
+
+
+void EN_METADATA
 
 export const metadata: Metadata = NL_METADATA
 
 const SERVICES_COPY_NL = {
   meta: {
     description:
-      "Lokale FDM 3D print service België vanuit Herzele (regio Gent). 3D printen op maat in PLA, PETG of TPU voor prototypes en kleine reeksen.",
+      "Lokale FDM 3D print service BelgiÃ« vanuit Herzele (regio Gent). 3D printen op maat in PLA, PETG of TPU voor prototypes en kleine reeksen.",
   },
   hero: {
-    title: "3D print service in België vanuit Herzele",
+    title: "3D print service in BelgiÃ« vanuit Herzele",
     intro:
-      "X3DPrints is een eenmansstudio in bijberoep. Wil je een 3D model laten printen? Je spreekt rechtstreeks met de maker, krijgt eerlijke planning (meestal enkele werkdagen) en materiaaladvies dat past bij jouw project en budget in regio Gent en de rest van Vlaanderen.",
+      "X3DPrints is een eenmansstudio in bijberoep. Wil je een 3D model laten printen? Je spreekt rechtstreeks met de maker, krijgt eerlijke planning (meestal enkele werkdagen) en materiaaladvies dat past bij jouw project en budget in regio Gent en de rest van Vlaanderen. Ook voor 3D print bedrijven die tijdelijk capaciteit zoeken zijn we een flexibel 3D printen bedrijf voor pieken en kleine reeksen.",
     ctas: {
       quote: "Offerte aanvragen",
       tool: "Material Suggestion Tool",
@@ -142,7 +145,7 @@ const SERVICES_COPY_NL = {
     {
       icon: Printer,
       title: "FDM 3D-printen",
-      description: "Functionele onderdelen en prototypes in PLA, PETG of TPU. Tot ~35 x 32 x 35 cm per stuk, opsplitsen mogelijk.",
+      description: "Functionele 3D print onderdelen en prototypes in PLA, PETG of TPU. Tot ~35 x 32 x 35 cm per stuk, opsplitsen mogelijk.",
     },
     {
       icon: Palette,
@@ -177,7 +180,7 @@ const SERVICES_COPY_NL = {
     {
       icon: Box,
       title: "Afhalen of verzending",
-      description: "Afhalen in Herzele of verzending binnen Belgie. Verpakking afgestemd op kleine oplages.",
+      description: "Afhalen in Herzele of verzending binnen Belgie. Verpakking afgestemd op kleine en grotere oplages.",
     },
   ],
   knowledge: {
@@ -218,7 +221,7 @@ const SERVICES_COPY_NL = {
   useCases: {
     title: "Waarvoor je 3D-printen inzet",
     intro:
-      "Van engineering tot retail: 3D-printen versnelt ontwikkeling, verlaagt kosten en geeft vrijheid in vorm en kleur, ook voor kleine oplages.",
+      "Van engineering tot retail: 3D-printen versnelt ontwikkeling, verlaagt kosten en geeft vrijheid in vorm en kleur, ook voor kleine en grotere oplages.",
     items: [
       {
         icon: Sparkles,
@@ -386,7 +389,7 @@ const SERVICES_COPY_NL = {
 const SERVICES_COPY_EN = {
   meta: {
     description:
-      "Local FDM 3D printing from Herzele (part-time studio). Prototypes and small batches in PLA, PETG or TPU with honest advice and direct communication.",
+      "Local FDM 3D printing from Herzele (part-time studio). Prototypes and small to large batches in PLA, PETG or TPU with honest advice and direct communication.",
   },
   hero: {
     title: "3D print service from Herzele (part-time studio)",
@@ -452,7 +455,7 @@ const SERVICES_COPY_EN = {
     },
     {
       icon: Package,
-      title: "Prototypes and small batches",
+      title: "Prototypes and small to large batches",
       description: "Ideal for one-offs to short runs. Clear planning and transparent batch pricing.",
     },
     {
@@ -468,7 +471,7 @@ const SERVICES_COPY_EN = {
     {
       icon: Box,
       title: "Pickup or shipping",
-      description: "Pickup in Herzele or shipping within Belgium. Packaging tuned for small batches.",
+      description: "Pickup in Herzele or shipping within Belgium. Packaging tuned for small to large batches.",
     },
   ],
   knowledge: {
@@ -503,7 +506,7 @@ const SERVICES_COPY_EN = {
   useCases: {
     title: "Where 3D printing helps",
     intro:
-      "From engineering to retail: 3D printing speeds development, reduces cost and gives freedom in form and color, even for small batches.",
+      "From engineering to retail: 3D printing speeds development, reduces cost and gives freedom in form and color, even for small to large batches.",
     items: [
       {
         icon: Sparkles,
@@ -723,7 +726,7 @@ export default function Page({ locale }: PageProps) {
   const heroTrustPoints = isEn
     ? [
         "Local FDM 3D print service in Belgium",
-        "Clear quote route for prototypes and small batches",
+        "Clear quote route for prototypes and small to large batches",
         "Material advice for PLA, PETG and TPU",
       ]
     : [
@@ -732,7 +735,7 @@ export default function Page({ locale }: PageProps) {
         "Materiaaladvies voor PLA, PETG en TPU",
       ]
   const servicesSectionLead = isEn
-    ? "From 3D model printing to small batch production: this is the complete service stack for practical, measurable results."
+    ? "From 3D model printing to small to large batch production: this is the complete service stack for practical, measurable results."
     : "Van 3D model printen tot kleine reeksen: dit is de volledige service-stack voor praktische en meetbare resultaten."
   const knowledgeSectionIntro = isEn
     ? "These pages support faster decisions around pricing, materials and local production planning."
@@ -1170,3 +1173,4 @@ export default function Page({ locale }: PageProps) {
     </main>
   )
 }
+

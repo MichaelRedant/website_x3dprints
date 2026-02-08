@@ -384,7 +384,7 @@ export default function FindModelsPage() {
                   <li>- Existing STL has tolerance issues or excessive supports.</li>
                   <li>- You need brand details or geometry not available online.</li>
                   <li>- Threads, inserts or mating points must fit exactly.</li>
-                  <li>- You want test-print iteration before a small batch.</li>
+                  <li>- You want test-print iteration before a small to large batch.</li>
                 </ul>
               </GlassCard>
             </Reveal>

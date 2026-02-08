@@ -189,7 +189,7 @@ const serviceJsonLd = {
     name: "3D Print Services",
     itemListElement: [
       { "@type": "Offer", name: "Prototype prints", url: `${SITE.url}/services` },
-      { "@type": "Offer", name: "Small batches", url: `${SITE.url}/services` },
+      { "@type": "Offer", name: "Small to large batches", url: `${SITE.url}/services` },
       { "@type": "Offer", name: "Custom organizers", url: `${SITE.url}/organizers` },
     ],
   },

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "FuturePrint Lab | Sustainability & circularity",
-    description: "How X3DPrints builds practical, conscious 3D printing for small batches and prototypes.",
+    description: "How X3DPrints builds practical, conscious 3D printing for small to large batches and prototypes.",
   },
 }
 
@@ -157,7 +157,7 @@ const articleJsonLd = {
 
     headline: "FuturePrint Lab: sustainability at X3DPrints",
   description:
-  "Overview of X3DPrints' practical sustainability principles: smart design, efficient material choices, local production and tailored small batches.",
+  "Overview of X3DPrints' practical sustainability principles: smart design, efficient material choices, local production and tailored small to large batches.",
   author: { "@type": "Organization", name: "X3DPrints", url: SITE.url },
   publisher: {
     "@type": "Organization",
@@ -362,13 +362,13 @@ export default function SustainabilityPage() {
         <div className="grid gap-6 lg:grid-cols-2">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-300">Example case</p>
-            <h2 className="mt-3 text-2xl font-semibold">Small batch for a local event</h2>
+            <h2 className="mt-3 text-2xl font-semibold">Small to large batch for a local event</h2>
             <p className="mt-3 text-sm text-slate-200">
               Think badges for an association, small props for a booth or a series of test parts for a school project. Getting everything ready on time matters more than pumping out thousands of units.
             </p>
             <ul className="mt-4 space-y-2 text-sm text-slate-200">
               <li>- First a single test print to check shape, legibility and size.</li>
-              <li>- Then a small batch tuned to the event or project (e.g. 8, 20 or 50 pieces).</li>
+              <li>- Then a small to large batch tuned to the event or project (e.g. 8, 20 or 50 pieces).</li>
               <li>- Material and colour chosen together so it fits the branding or theme.</li>
             </ul>
           </div>

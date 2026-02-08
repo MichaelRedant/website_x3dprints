@@ -1,6 +1,6 @@
 # 3D printen in Ouwegem: kouter, molen en Scheldevallei dichtbij
 
-X3DPrints levert 3D prints voor Ouwegem met snelle routes richting kerk, Ouwegemse molen en Scheldevallei. Ideaal voor prototypes, vervangstukken en kleine series.
+X3DPrints levert 3D prints voor Ouwegem met snelle routes richting kerk, Ouwegemse molen en Scheldevallei. Ideaal voor prototypes, vervangstukken en zowel kleine als grotere series.
 
 ---
 
@@ -23,7 +23,7 @@ X3DPrints levert 3D prints voor Ouwegem met snelle routes richting kerk, Ouwegem
 
 Voor projecten in Ouwegem combineren we korte doorlooptijd met strakke afwerking.
 
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 
@@ -44,7 +44,7 @@ Handig: check kleuren op [materials](/materials), controleer je model in de [vie
 
 ## Veelgestelde vragen over 3D printen in Ouwegem
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -65,7 +65,13 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Ouwegem
+- Centrum van Ouwegem
+- Lokale bedrijvenzone in Ouwegem
+- Sporthal in Ouwegem
+
 
 ## Klantenspotlight
 - Lokale teams in Ouwegem: kleine reeksen met vaste settings rond Ouwegem.

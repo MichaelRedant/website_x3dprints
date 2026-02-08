@@ -32,7 +32,7 @@ Voor **3D printen in Landen** leveren we prototypes, behuizingen en tooling rich
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica en IoT.
+- Kleine en grotere series covers en cases voor elektronica en IoT.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Landen centrum
 - Walsbets en Waasmont
 - Neerwinden en E40-corridor
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Landen
+
+- Dekking: Landen, Landen centrum, Walsbets, Waasmont, Neerwinden, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Landen.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Logistiek en techniek in Landen/Haspengouw: PLA/PETG onderdelen afgestemd op projecten rond Landen centrum.
+- Vaak gevraagd: 3D print service Landen; we adviseren materiaal en afwerking.
+- Leverfocus: Landen, Landen centrum, Walsbets.
+
+## Plaatsen waar we vaak leveren rond Landen
+- Centrum van Landen
+- Lokale bedrijvenzone in Landen
+- Sporthal in Landen
+
+## Sectoren die we vaak helpen in Landen
+- Logistiek en techniek in Landen/Haspengouw
+- Retail/events in Landen
+- Makers en onderwijs in de regio (Landen)
+
+## Veelgevraagde zoekopdrachten in Landen
+- 3D print service Landen
+- rapid prototyping Landen
+- 3D printing bedrijf Landen
+<!-- LOCAL_ENRICH_END -->

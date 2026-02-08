@@ -17,11 +17,11 @@
 
 ## Lokale focus in Nieuwerkerken
 
-Werk je in Nieuwerkerken? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Nieuwerkerken.
+Werk je in Nieuwerkerken? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Nieuwerkerken.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Nieuwerkerken
 
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Nieuwerkerken** ook ABS, ASA, Nylon of PA-CF 
 ## Voor wie is 3D printen in Nieuwerkerken interessant?
 
 ### Ondernemers en zelfstandigen
-Bedrijven langs de Pastorijstraat en de Nieuwerkerkenveldweg gebruiken **3D printen in Nieuwerkerken** om prototypes en kleine series te realiseren.
+Bedrijven langs de Pastorijstraat en de Nieuwerkerkenveldweg gebruiken **3D printen in Nieuwerkerken** om prototypes en zowel kleine als grotere series te realiseren.
 
 ### Makers en hobbyisten
 Creatieve inwoners maken unieke gadgets of maquettes van de Dendervallei met **3D printen in Nieuwerkerken**.
@@ -99,11 +99,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Nieuwerkerken?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Nieuwerkerken?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Nieuwerkerken?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Aalst
-- [3D printen in Aalst](/3d-printen-in-aalst)
 - [3D printen in Baardegem](/3d-printen-in-baardegem)
 - [3D printen in Erembodegem](/3d-printen-in-erembodegem)
 - [3D printen in Gijzegem](/3d-printen-in-gijzegem)
@@ -132,7 +131,13 @@ Benieuwd hoe **3D printen in Nieuwerkerken** jouw idee versterkt? Vraag een **gr
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Nieuwerkerken
+- Centrum van Nieuwerkerken
+- Lokale bedrijvenzone in Nieuwerkerken
+- Sporthal in Nieuwerkerken
+
 
 ## Spotlight rond Nieuwerkerken
 - Lokale teams in Nieuwerkerken: behuizingen en pasmallen voor teams in Nieuwerkerken.

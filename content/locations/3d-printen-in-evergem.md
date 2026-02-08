@@ -1,6 +1,6 @@
 # 3D printen in Evergem: lokale service met snelle levering
 
-**3D printen in Evergem** is de slimme keuze voor prototypes, maatwerk en kleine series in het Meetjesland. X3DPrints levert vanuit Herzele met korte doorlooptijd, duidelijke planning en strak materiaaladvies.
+**3D printen in Evergem** is de slimme keuze voor prototypes, maatwerk en zowel kleine als grotere series in het Meetjesland. X3DPrints levert vanuit Herzele met korte doorlooptijd, duidelijke planning en strak materiaaladvies.
 
 ---
 
@@ -25,7 +25,7 @@
 
 Voor Evergem leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Ertvelde en Sleidinge.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Sterke onderdelen voor tests, tooling en onderhoud.
 
 ### Retail en lokale handel
-Displays, verpakkingen en POS materiaal in kleine oplages.
+Displays, verpakkingen en POS materiaal in kleine en grotere oplages.
 
 ### Onderwijs en makers
 Snelle iteraties met duidelijke feedback en nette afwerking.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Sleidinge](/3d-printen-in-sleidinge)
 - [Buurpagina: 3D printen in Kluizen](/3d-printen-in-kluizen)
 - [Hoofdpagina: 3D printen in Zelzate](/3d-printen-in-zelzate)
+
+
 
 ## Lokale spotlight
 - KMO's en techniekers rond de kanaalzone: PLA/PETG onderdelen afgestemd op projecten rond Evergem centrum.

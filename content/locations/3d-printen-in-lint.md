@@ -14,7 +14,7 @@ Met **3D printen in Lint** lever je snel onderdelen voor ateliers rond de Lierse
 
 - ⚡ **Snelle reacties**: offertes doorgaans binnen een werkdag, levering in enkele werkdagen richting Lint en omgeving.
 
-- 🎯 **Nauwkeurigheid**: strakke tolerantie voor behuizingen, klemmen en kleine series die perfect moeten passen.
+- 🎯 **Nauwkeurigheid**: strakke tolerantie voor behuizingen, klemmen en zowel kleine als grotere series die perfect moeten passen.
 
 - 🧱 **Materiaalkeuze per toepassing**: PLA Matte voor zichtwerk, PETG voor robuuste hulpmiddelen, TPU voor flexibele of dempende delen.
 
@@ -76,11 +76,11 @@ Met **3D printen in Lint** lever je snel onderdelen voor ateliers rond de Lierse
 
 ## Lokale focus in Lint
 
-Werk je in Lint? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Lint? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Ergonomische grips en handgrepen op maat.
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 
 
 ## Veelgestelde vragen over 3D printen in Lint
@@ -106,7 +106,13 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Lint
+- Centrum van Lint
+- Lokale bedrijvenzone in Lint
+- Sporthal in Lint
+
 
 ## Klantenspotlight
 - Lokale teams in Lint: kleine reeksen met vaste settings rond Lint.

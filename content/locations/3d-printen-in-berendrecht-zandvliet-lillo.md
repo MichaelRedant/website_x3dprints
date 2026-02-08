@@ -51,8 +51,8 @@ We versturen dagelijks richting de noordelijke districten. Spoed nodig? Vermeld 
 
 ## Veelgestelde vragen over 3D printen in Berendrecht, Zandvliet en Lillo
 
-**Kunnen jullie kleine series leveren in Berendrecht, Zandvliet en Lillo?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Berendrecht, Zandvliet en Lillo?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Berendrecht, Zandvliet en Lillo?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -78,6 +78,12 @@ Upload je STL- of STEP-bestand via [contact](/contact). Voeg aantallen en materi
 
 ## Nabijgelegen pagina's
 - [Buurpagina: 3D printen in Ekeren](/3d-printen-in-ekeren)
+
+## Lokale punten in Berendrecht-Zandvliet-Lillo
+- Centrum van Berendrecht-Zandvliet-Lillo
+- Lokale bedrijvenzone in Berendrecht-Zandvliet-Lillo
+- Sporthal in Berendrecht-Zandvliet-Lillo
+
 
 ## Lokale spotlight
 - Havenprojecten en tooling: PLA/PETG onderdelen afgestemd op projecten rond Berendrecht.

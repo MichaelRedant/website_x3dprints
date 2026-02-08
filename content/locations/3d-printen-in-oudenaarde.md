@@ -2,7 +2,7 @@
 
 Zoek je naar **3D printen in Oudenaarde** voor jouw idee, prototype of project? X3DPrints, gevestigd in het nabijgelegen Borsbeke, biedt een complete **3D print service in Oudenaarde**, gericht op ondernemers, kmo’s, scholen en verenigingen die snelheid en kwaliteit nodig hebben.
 
-Met onze expertise in **rapid prototyping** en kleine series helpen we je ontwerp om te zetten naar een tastbaar resultaat – duidelijk geprijsd, snel geleverd en met persoonlijk advies. Zoek je een betrouwbaar **3D printing bedrijf in Oudenaarde**? Dan ben je hier aan het juiste adres.
+Met onze expertise in **rapid prototyping** en zowel kleine als grotere series helpen we je ontwerp om te zetten naar een tastbaar resultaat – duidelijk geprijsd, snel geleverd en met persoonlijk advies. Zoek je een betrouwbaar **3D printing bedrijf in Oudenaarde**? Dan ben je hier aan het juiste adres.
 
 ---
 
@@ -24,7 +24,7 @@ Met onze expertise in **rapid prototyping** en kleine series helpen we je ontwer
 In Oudenaarde helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
 
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 
 ## Materialen en toepassingen
@@ -32,7 +32,7 @@ In Oudenaarde helpen we makers en bedrijven met 3D prints die vlot passen en lan
 | Materiaal     | eigenschap                      | ideaal voor                                             |
 | :------------ | :------------------------------- | :------------------------------------------------------- |
 | **PLA Matte** | stijf, detailrijk, diverse kleuren | prototypes, decorstukken, etalageobjecten, maquettes van historische gebouwen |
-| **PETG**      | taai, temperatuurbestendig       | functionele onderdelen, kleine series, componenten voor fietsen |
+| **PETG**      | taai, temperatuurbestendig       | functionele onderdelen, kleine en grotere series, componenten voor fietsen |
 | **TPU**       | flexibel                         | beschermstukken, grips, schokabsorberende delen, accessoires voor sport |
 
 **tip:** Voor decoratieve toepassingen of showmodellen, zoals een miniatuur van het stadhuis of een replica van het Centrum Ronde van Vlaanderen, volstaat **PLA** vaak. Voor technische onderdelen die steviger en duurzamer moeten zijn, bijvoorbeeld onderdelen voor industriële machines of robuuste prototypes, kies je **PETG**. Voor flexibele toepassingen zoals demping, grips voor sportuitrusting of gepersonaliseerde accessoires, is **TPU** ideaal. Dit is doeltreffend **3D printen in Oudenaarde**.
@@ -51,7 +51,7 @@ Creëer unieke etalageobjecten, promotiemateriaal en gepersonaliseerde items die
 
 ### 🛠 kmo’s en zelfstandigen
 
-Met **rapid prototyping in Oudenaarde** kunnen kmo’s sneller schakelen en kleine series of prototypes produceren zonder grote opstartkosten. Dit versnelt productontwikkeling en innovatie in de regio.
+Met **rapid prototyping in Oudenaarde** kunnen kmo’s sneller schakelen en zowel kleine als grotere series of prototypes produceren zonder grote opstartkosten. Dit versnelt productontwikkeling en innovatie in de regio.
 
 ### 🎓 scholen en onderwijs
 
@@ -74,7 +74,7 @@ Oudenaarde staat internationaal bekend dankzij de **Ronde van Vlaanderen**, maar
 Met **3D printen in Oudenaarde** kun je:
 
 -   gepersonaliseerd promotiemateriaal ontwikkelen dat de lokale identiteit draagt.
--   prototypes en kleine series produceren voor productontwikkeling van lokale bedrijven.
+-   prototypes en zowel kleine als grotere series produceren voor productontwikkeling van lokale bedrijven.
 -   educatieve projecten ondersteunen met tastbare modellen voor scholen in Oudenaarde.
 -   onderdelen laten maken die snel beschikbaar moeten zijn voor reparaties of maatwerk.
 
@@ -117,7 +117,7 @@ Benieuwd hoe **3D printen in Oudenaarde** jouw project kan versterken? Vraag van
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -134,7 +134,13 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Oudenaarde
+- Centrum van Oudenaarde
+- Lokale bedrijvenzone in Oudenaarde
+- Sporthal in Oudenaarde
+
 
 ## Lokale spotlight
 - Lokale teams in Oudenaarde: PLA/PETG onderdelen afgestemd op projecten rond Oudenaarde.

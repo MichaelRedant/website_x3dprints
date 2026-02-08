@@ -70,7 +70,7 @@ Onze **rapid prototyping service in Aalst** stelt u in staat om uw ontwerpen raz
 De stad Aalst, met haar levendige Grote Markt, historische bezienswaardigheden en onmiskenbare carnavalsgeest, is een broedplaats voor creativiteit en eigenzinnigheid. Met **3D printen in Aalst** kunt u:
 
 -   Unieke, gepersonaliseerde items creëren die de Aalsterse geest vangen.
--   Snel prototypes en kleine series produceren voor lokale bedrijven en start-ups.
+-   Snel prototypes en zowel kleine als grotere series produceren voor lokale bedrijven en start-ups.
 -   Specifieke onderdelen laten maken die snel beschikbaar moeten zijn voor reparaties of projecten.
 -   Educatieve projecten ondersteunen met tastbare leermiddelen die inspireren.
 Meer informatie over de stad vind je op [Aalst](https://www.aalst.be).
@@ -109,8 +109,8 @@ Meer informatie over de stad vind je op [Aalst](https://www.aalst.be).
 **Welke bestanden kan ik aanleveren voor aalst?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in aalst?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in aalst?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in aalst?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -143,6 +143,12 @@ Benieuwd hoe **3D printen in Aalst** uw project kan versnellen of uw idee kan ve
 - [Buurpagina: 3D printen in Hofstade](/3d-printen-in-hofstade)
 - [Buurpagina: 3D printen in Ninove](/3d-printen-in-ninove)
 - [Buurpagina: 3D printen in Denderleeuw](/3d-printen-in-denderleeuw)
+
+## Lokale punten in Aalst
+- Centrum van Aalst
+- Lokale bedrijvenzone in Aalst
+- Sporthal in Aalst
+
 
 ## Lokale spotlight
 - Prototyping voor maakbedrijven in Aalst: PLA/PETG onderdelen afgestemd op projecten rond Aalst centrum.

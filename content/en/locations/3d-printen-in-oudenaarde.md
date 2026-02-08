@@ -15,14 +15,14 @@ Need **3D printing in Oudenaarde**? X3DPrints prints in Herzele and ships quickl
 
 ## Where we deliver around Oudenaarde
 
-We frequently deliver to: Oudenaarde.
+We frequently deliver to: Oudenaarde, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Oudenaarde
 
 - Prototypes and housings supporting teams in Oudenaarde.
-- Small series with consistent settings for businesses near your region.
+- Small to large series with consistent settings for businesses near your region.
 - Replacement parts and brackets for workshops around Flanders.
 - Promo models, signage and props for events in and around Oudenaarde.
 - Brackets, guards and fixtures tuned for teams in Oudenaarde.
@@ -32,9 +32,9 @@ We frequently deliver to: Oudenaarde.
 
 ## Spotlight: Oudenaarde projects
 
-- Local SMEs in Oudenaarde: tailored PETG/PLA parts for teams around Oudenaarde.
-- Common ask: 3D print service Oudenaarde; we advise material and finishing for Oudenaarde.
-- Delivery focus: Oudenaarde.
+- Manufacturing and SMEs around Oudenaarde: prototypes, fixtures and housings.
+- Common ask in Oudenaarde: custom 3D printing with practical PLA/PETG/TPU advice for Oudenaarde.
+- Delivery focus: Oudenaarde, Pickup in Herzele.
 
 ---
 
@@ -57,8 +57,8 @@ We frequently deliver to: Oudenaarde.
 ## Popular requests from Oudenaarde
 
 - PLA or PETG functional parts for teams in Oudenaarde.
-- TPU grips and pads for bikes, tools or fixtures around Oudenaarde.
-- Paint-ready show models for presentations in Oudenaarde and Oudenaarde.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
+- Paint-ready show models for presentations in Oudenaarde and the surrounding area.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Oudenaarde.
 
 ## FAQ about 3D printing in Oudenaarde
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -94,10 +94,7 @@ We frequently deliver to: Oudenaarde.
 
 ## Quick links for Oudenaarde teams
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Oudena
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Oudenaarde
 
-- Coverage: Oudenaarde; delivery from Herzele, pickup available.
+- Coverage: Oudenaarde, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Oudenaarde.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Local spotlight
-- Local teams in Oudenaarde: PLA/PETG parts tuned for projects near Oudenaarde.
-- Common request: 3D print service Oudenaarde; we pick material and finish for the use case.
-- Delivery focus: Oudenaarde.
+- SMEs and makers in Oudenaarde: fixtures and enclosures.
+- Common request: 3D printing service in Oudenaarde; we pick material and finish for the use case.
+- Delivery focus: Oudenaarde, Pickup in Herzele.
 
 ## Places we often deliver near Oudenaarde
 - Oudenaarde town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Oudena
 - Education/labs around Oudenaarde: lesson-ready prints.
 
 ## Popular searches from Oudenaarde
-- 3D print service Oudenaarde
-- rapid prototyping Oudenaarde
-- 3D printing bedrijf Oudenaarde
+- 3D printing service in Oudenaarde
+- Custom 3D printing in Oudenaarde
+- 3D model printing in Oudenaarde
 <!-- LOCAL_ENRICH_END -->

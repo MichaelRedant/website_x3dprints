@@ -23,7 +23,7 @@ Mater ligt tussen kasseihellingen en open velden. X3DPrints levert snelle 3D pri
 
 Voor projecten in Mater (Oudenaarde) combineren we korte doorlooptijd met strakke afwerking.
 
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 
@@ -52,7 +52,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -65,7 +65,13 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Mater (Oudenaarde)
+- Centrum van Mater (Oudenaarde)
+- Lokale bedrijvenzone in Mater (Oudenaarde)
+- Sporthal in Mater (Oudenaarde)
+
 
 ## Spotlight rond Mater (Oudenaarde)
 - Lokale teams in Mater (Oudenaarde): behuizingen en pasmallen voor teams in Mater (Oudenaarde).

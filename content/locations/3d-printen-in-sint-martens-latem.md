@@ -44,7 +44,7 @@ Bekijk [materials](/materials) voor kleuren, controleer je model in de [viewer](
 
 ## Veelgestelde vragen over 3D printen in Sint
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -65,7 +65,13 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Sint-Martens-Latem
+- Centrum van Sint-Martens-Latem
+- Lokale bedrijvenzone in Sint-Martens-Latem
+- Sporthal in Sint-Martens-Latem
+
 
 ## Klantenspotlight
 - Lokale teams in Sint-Martens-Latem: kleine reeksen met vaste settings rond Sint-Martens-Latem.

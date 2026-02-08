@@ -1,12 +1,12 @@
 # 3D printing in Lokeren: local, fast and tailored
 
-Need **3D printing in Lokeren**? X3DPrints prints in Herzele and ships quickly to Lokeren and nearby Lokeren centrum. Local 3D printing for Lokeren, Lokeren centrum and Eksaarde, Daknam, Moerbeke-Waas: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Lokeren**? X3DPrints prints in Herzele and ships quickly to Lokeren and nearby Eksaarde. Local 3D printing for Lokeren, Eksaarde and Daknam, Moerbeke-Waas: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Lokeren teams choose us
 
-- Local delivery to Lokeren, Lokeren centrum and Eksaarde, Daknam, Moerbeke-Waas; pickup in Herzele.
+- Local delivery to Lokeren, Eksaarde and Daknam, Moerbeke-Waas; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Lokeren.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Lokeren**? X3DPrints prints in Herzele and ships quickly t
 
 ## Where we deliver around Lokeren
 
-We frequently deliver to: Lokeren, Lokeren centrum, Eksaarde, Daknam, Moerbeke-Waas, Afhalen Herzele.
+We frequently deliver to: Lokeren, Lokeren city center, Eksaarde, Daknam, Moerbeke-Waas, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Lokeren
 
 - Prototypes and housings supporting teams in Lokeren.
-- Small series with consistent settings for businesses near Lokeren centrum.
-- Replacement parts and brackets for workshops around Eksaarde.
+- Small to large series with consistent settings for businesses near Eksaarde.
+- Replacement parts and brackets for workshops around Daknam.
 - Promo models, signage and props for events in and around Lokeren.
 - Brackets, guards and fixtures tuned for teams in Lokeren.
 - Demo pieces and props for events near Lokeren.
@@ -32,9 +32,9 @@ We frequently deliver to: Lokeren, Lokeren centrum, Eksaarde, Daknam, Moerbeke-W
 
 ## Spotlight: Lokeren projects
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Lokeren centrum.
-- Common ask: 3D print service Lokeren; we advise material and finishing for Eksaarde.
-- Delivery focus: Lokeren, Lokeren centrum, Eksaarde.
+- Makers and product teams in Lokeren: iterative prototyping and short-run production.
+- Common ask in Lokeren: custom 3D printing with practical PLA/PETG/TPU advice for Daknam.
+- Delivery focus: Lokeren, Lokeren city center, Eksaarde.
 
 ---
 
@@ -48,8 +48,7 @@ We frequently deliver to: Lokeren, Lokeren centrum, Eksaarde, Daknam, Moerbeke-W
 
 ## Teams we often help near Lokeren
 
-- Local projects in Lokeren: Lokale makers en ontwerpers
-- Local projects in Lokeren: Kleine series en maatwerk
+- Makers and product teams in Lokeren: iterative prototyping and short-run production.
 - Education and labs around Lokeren: lesson-ready prints in PLA/PETG.
 
 ---
@@ -57,8 +56,8 @@ We frequently deliver to: Lokeren, Lokeren centrum, Eksaarde, Daknam, Moerbeke-W
 ## Popular requests from Lokeren
 
 - PLA or PETG functional parts for teams in Lokeren.
-- TPU grips and pads for bikes, tools or fixtures around Lokeren centrum.
-- Paint-ready show models for presentations in Lokeren and Lokeren centrum.
+- TPU grips and pads for bikes, tools or fixtures around Eksaarde.
+- Paint-ready show models for presentations in Lokeren and Eksaarde.
 
 ---
 
@@ -84,7 +83,7 @@ We frequently deliver to: Lokeren, Lokeren centrum, Eksaarde, Daknam, Moerbeke-W
 
 ## FAQ about 3D printing in Lokeren
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -97,7 +96,6 @@ We frequently deliver to: Lokeren, Lokeren centrum, Eksaarde, Daknam, Moerbeke-W
 - [3D printing in Eksaarde](/en/3d-printen-in-eksaarde)
 - [3D printing in Daknam](/en/3d-printen-in-daknam)
 - [3D printing in Moerbeke-Waas](/en/3d-printen-in-moerbeke-waas)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Lokere
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Lokeren
 
-- Coverage: Lokeren, Lokeren centrum, Eksaarde, Daknam, Moerbeke-Waas, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Lokeren, Lokeren city center, Eksaarde, Daknam, Moerbeke-Waas, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Lokeren.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +122,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Lokere
 - [Parent page: 3D printing in Sinaai](/en/3d-printen-in-sinaai)
 
 ## Local spotlight
-- Lokale makers en ontwerpers: PLA/PETG parts tuned for projects near Lokeren centrum.
-- Common request: 3D print service Lokeren; we pick material and finish for the use case.
-- Delivery focus: Lokeren, Lokeren centrum, Eksaarde.
+- Makers and product teams in Lokeren: iterative prototyping and short-run production.
+- Common request: 3D printing service in Lokeren; we pick material and finish for the use case.
+- Delivery focus: Lokeren, Lokeren city center, Eksaarde.
 
 ## Places we often deliver near Lokeren
 - Lokeren town center
@@ -134,12 +132,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Lokere
 - sports hall in Lokeren
 
 ## Industries we serve near Lokeren
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in Lokeren: iterative prototyping and short-run production.
 - Education/labs around Lokeren: reliable PLA/PETG parts.
 
 ## Popular searches from Lokeren
-- 3D print service Lokeren
-- rapid prototyping Lokeren
-- 3D printing bedrijf Lokeren
+- 3D printing service in Lokeren
+- Custom 3D printing in Lokeren
+- 3D model printing in Lokeren
 <!-- LOCAL_ENRICH_END -->

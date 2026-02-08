@@ -1,6 +1,6 @@
 # 3D printen in Assenede: snelle prototypes in het Meetjesland
 
-**3D printen in Assenede** is de snelle weg naar prototypes, maatwerk en kleine series. X3DPrints print in Herzele en levert vlot in Assenede, Bassevelde, Boekhoute en Oosteeklo. U krijgt persoonlijk advies, een duidelijke offerte en prints die meteen passen.
+**3D printen in Assenede** is de snelle weg naar prototypes, maatwerk en zowel kleine als grotere series. X3DPrints print in Herzele en levert vlot in Assenede, Bassevelde, Boekhoute en Oosteeklo. U krijgt persoonlijk advies, een duidelijke offerte en prints die meteen passen.
 
 ---
 
@@ -25,7 +25,7 @@
 
 In Assenede helpen we projecten rond De dorpskern met de Sint-Petrus en Martinuskerk. sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Assenede interessant?
 
 ### KMO's en zelfstandigen
-Voor prototypes, kleine series en hulpmiddelen die snel nodig zijn.
+Voor prototypes, kleine en grotere series en hulpmiddelen die snel nodig zijn.
 
 ### Landbouw en logistiek
 Praktische onderdelen en klemmen op maat voor dagelijks gebruik.
@@ -82,7 +82,7 @@ Met rapid prototyping test u vorm en pasvorm snel, zodat u sneller kan bijsturen
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -126,6 +126,8 @@ Wilt u snel starten? Vraag een vrijblijvende offerte aan via [contact](/contact)
 - [Buurpagina: 3D printen in Boekhoute](/3d-printen-in-boekhoute)
 - [Buurpagina: 3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
 - [Hoofdpagina: 3D printen in Eeklo](/3d-printen-in-eeklo)
+
+
 
 ## Lokale spotlight
 - KMO's en zelfstandigen in het Meetjesland: PLA/PETG onderdelen afgestemd op projecten rond Assenede centrum.

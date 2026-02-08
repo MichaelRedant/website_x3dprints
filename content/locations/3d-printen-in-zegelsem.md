@@ -2,7 +2,7 @@
 
 
 
-Voor **3D printen in Zegelsem** leveren we prototypes en kleine series richting de kasseistroken en stiltegebieden. Je krijgt strakke prints, snelle levering en materiaaladvies op maat.
+Voor **3D printen in Zegelsem** leveren we prototypes en zowel kleine als grotere series richting de kasseistroken en stiltegebieden. Je krijgt strakke prints, snelle levering en materiaaladvies op maat.
 
 
 
@@ -24,7 +24,7 @@ Voor **3D printen in Zegelsem** leveren we prototypes en kleine series richting 
 
 
 
-**Lokale touch:** Zegelsem staat bekend als stilste dorp en als decor voor kasseienroutes. We stemmen prints af op toerisme, erfgoed en kleine series voor lokale makers.
+**Lokale touch:** Zegelsem staat bekend als stilste dorp en als decor voor kasseienroutes. We stemmen prints af op toerisme, erfgoed en zowel kleine als grotere series voor lokale makers.
 
 
 
@@ -126,7 +126,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Zegelsem
+- Centrum van Zegelsem
+- Lokale bedrijvenzone in Zegelsem
+- Sporthal in Zegelsem
+
 
 ## Spotlight rond Zegelsem
 - Lokale teams in Zegelsem: behuizingen en pasmallen voor teams in Zegelsem.

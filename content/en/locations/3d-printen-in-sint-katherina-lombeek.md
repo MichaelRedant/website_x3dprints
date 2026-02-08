@@ -15,14 +15,14 @@ Need **3D printing in Sint-Katherina-Lombeek**? X3DPrints prints in Herzele and 
 
 ## Where we deliver around Sint-Katherina-Lombeek
 
-We frequently deliver to: Sint-Katherina-Lombeek.
+We frequently deliver to: Sint-Katherina-Lombeek, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Sint-Katherina-Lombeek
 
 - Prototypes and housings supporting teams in Sint-Katherina-Lombeek.
-- Small series with consistent settings for businesses near your region.
+- Small to large series with consistent settings for businesses near your region.
 - Replacement parts and brackets for workshops around Flanders.
 - Promo models, signage and props for events in and around Sint-Katherina-Lombeek.
 - Brackets, guards and fixtures tuned for teams in Sint-Katherina-Lombeek.
@@ -32,9 +32,9 @@ We frequently deliver to: Sint-Katherina-Lombeek.
 
 ## Spotlight: Sint-Katherina-Lombeek projects
 
-- Local SMEs in Sint-Katherina-Lombeek: tailored PETG/PLA parts for teams around Sint-Katherina-Lombeek.
-- Common ask: 3D print service Sint-Katherina-Lombeek; we advise material and finishing for Sint-Katherina-Lombeek.
-- Delivery focus: Sint-Katherina-Lombeek.
+- Manufacturing and SMEs around Sint-Katherina-Lombeek: prototypes, fixtures and housings.
+- Common ask in Sint-Katherina-Lombeek: custom 3D printing with practical PLA/PETG/TPU advice for Sint-Katherina-Lombeek.
+- Delivery focus: Sint-Katherina-Lombeek, Pickup in Herzele.
 
 ---
 
@@ -57,8 +57,8 @@ We frequently deliver to: Sint-Katherina-Lombeek.
 ## Popular requests from Sint-Katherina-Lombeek
 
 - PLA or PETG functional parts for teams in Sint-Katherina-Lombeek.
-- TPU grips and pads for bikes, tools or fixtures around Sint-Katherina-Lombeek.
-- Paint-ready show models for presentations in Sint-Katherina-Lombeek and Sint-Katherina-Lombeek.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
+- Paint-ready show models for presentations in Sint-Katherina-Lombeek and the surrounding area.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Sint-Katherina-Lombeek.
 
 ## FAQ about 3D printing in Sint-Katherina-Lombeek
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -94,10 +94,7 @@ We frequently deliver to: Sint-Katherina-Lombeek.
 
 ## Quick links for Sint-Katherina-Lombeek teams
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-K
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Sint-Katherina-Lombeek
 
-- Coverage: Sint-Katherina-Lombeek; delivery from Herzele, pickup available.
+- Coverage: Sint-Katherina-Lombeek, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Sint-Katherina-Lombeek.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Local spotlight
-- Local teams in Sint-Katherina-Lombeek: PLA/PETG parts tuned for projects near Sint-Katherina-Lombeek.
-- Common request: 3D print service Sint-Katherina-Lombeek; we pick material and finish for the use case.
-- Delivery focus: Sint-Katherina-Lombeek.
+- SMEs and makers in Sint-Katherina-Lombeek: fixtures and enclosures.
+- Common request: 3D printing service in Sint-Katherina-Lombeek; we pick material and finish for the use case.
+- Delivery focus: Sint-Katherina-Lombeek, Pickup in Herzele.
 
 ## Places we often deliver near Sint-Katherina-Lombeek
 - Sint-Katherina-Lombeek town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-K
 - Education/labs around Sint-Katherina-Lombeek: lesson-ready prints.
 
 ## Popular searches from Sint-Katherina-Lombeek
-- 3D print service Sint-Katherina-Lombeek
-- rapid prototyping Sint-Katherina-Lombeek
-- 3D printing bedrijf Sint-Katherina-Lombeek
+- 3D printing service in Sint-Katherina-Lombeek
+- Custom 3D printing in Sint-Katherina-Lombeek
+- 3D model printing in Sint-Katherina-Lombeek
 <!-- LOCAL_ENRICH_END -->

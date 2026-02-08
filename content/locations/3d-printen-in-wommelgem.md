@@ -32,7 +32,7 @@ Voor **3D printen in Wommelgem** leveren we prototypes en functionele onderdelen
 
 - **Events en sport rond Fort 2**: props, badgehouders en lichte display-elementen.
 
-- **Retail op de Herentalsebaan**: op maat gemaakte houders, signage-onderdelen en kleine series accessoires.
+- **Retail op de Herentalsebaan**: op maat gemaakte houders, signage-onderdelen en zowel kleine als grotere series accessoires.
 
 
 
@@ -89,7 +89,7 @@ Zoek je 3D printen in Wommelgem? We denken mee over passing, sterkte en look zod
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -106,7 +106,13 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Wommelgem
+- Centrum van Wommelgem
+- Lokale bedrijvenzone in Wommelgem
+- Sporthal in Wommelgem
+
 
 ## Klantenspotlight
 - Lokale teams in Wommelgem: kleine reeksen met vaste settings rond Wommelgem.

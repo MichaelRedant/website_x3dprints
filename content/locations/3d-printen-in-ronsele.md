@@ -27,7 +27,7 @@ In Ronsele combineren we detailwerk met functionele onderdelen; je krijgt snelle
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Ronsele
 
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,8 +94,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Ronsele?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Ronsele?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Ronsele?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Ronsele
 - [3D printen in Lievegem](/3d-printen-in-lievegem)
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Zomergem](/3d-printen-in-zomergem)
 - [Buurpagina: 3D printen in Lovendegem](/3d-printen-in-lovendegem)
 
+
+
 ## Spotlight rond Ronsele
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Ronsele centrum.
 - Terugkerende order: 3D print service Ronsele; we bewaren je instellingen.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Ronsele
 - Lokale makers en ontwerpers (Ronsele)
-- Kleine series en maatwerk (Ronsele)
+- Kleine en grotere series en maatwerk (Ronsele)
 - Verenigingen en scholen (Ronsele)
 
 ## Wat vaak wordt gevraagd in Ronsele

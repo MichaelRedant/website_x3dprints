@@ -38,7 +38,7 @@ Op aanvraag zijn ook ABS, ASA of Nylon mogelijk voor technische projecten.
 ## Voor wie is 3D printen in Wondelgem interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven gebruiken **3D printen in Wondelgem** om productideeën te testen en kleine series te produceren.
+Lokale bedrijven gebruiken **3D printen in Wondelgem** om productideeën te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve bewoners zetten hun ideeën om in tastbare objecten met **3D printen in Wondelgem**.
@@ -95,14 +95,13 @@ Met **rapid prototyping** via **3D printen in Wondelgem** doorloop je sneller de
 **Welke bestanden kan ik aanleveren voor Wondelgem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Wondelgem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Wondelgem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Wondelgem?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Gent
-- [3D printen in Gent](/3d-printen-in-gent)
 - [3D printen in Desteldonk](/3d-printen-in-desteldonk)
 - [3D printen in Drongen](/3d-printen-in-drongen)
 - [3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
@@ -136,7 +135,13 @@ Benieuwd hoe **3D printen in Wondelgem** jouw idee versterkt? Vraag een **gratis
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Wondelgem
+- Centrum van Wondelgem
+- Lokale bedrijvenzone in Wondelgem
+- Sporthal in Wondelgem
+
 
 ## Lokale spotlight
 - Lokale teams in Wondelgem: PLA/PETG onderdelen afgestemd op projecten rond Wondelgem.

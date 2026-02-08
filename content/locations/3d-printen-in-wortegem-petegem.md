@@ -1,6 +1,6 @@
 # 3D printen in Wortegem-Petegem: maatwerk langs de Schelde
 
-**3D printen in Wortegem-Petegem** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten langs de Schelde.
+**3D printen in Wortegem-Petegem** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten langs de Schelde.
 
 ---
 
@@ -45,7 +45,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -80,7 +80,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -92,8 +92,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Wortegem-Petegem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Wortegem-Petegem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Wortegem-Petegem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Wortegem-Petegem
 - [3D printen in Wortegem](/3d-printen-in-wortegem)
@@ -127,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
 - [Buurpagina: 3D printen in Moregem](/3d-printen-in-moregem)
 - [Buurpagina: 3D printen in Elsegem](/3d-printen-in-elsegem)
+
+
 
 ## Spotlight rond Wortegem-Petegem
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Wortegem-Petegem centrum.

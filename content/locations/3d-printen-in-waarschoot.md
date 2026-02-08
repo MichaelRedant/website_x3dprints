@@ -1,6 +1,6 @@
 # 3D printen in Waarschoot: snelle prototypes en maatwerk
 
-**3D printen in Waarschoot** (Lievegem) is ideaal voor prototypes en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Waarschoot** (Lievegem) is ideaal voor prototypes en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Lokale focus in Waarschoot
 
-Werk je in Waarschoot? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Sint-Ghislenuskerk (Waarschoot).
+Werk je in Waarschoot? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Ghislenuskerk (Waarschoot).
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Waarschoot interessant?
 
 ### Lokale ondernemers
-Kleine series en onderdelen op maat met snelle levering.
+Kleine en grotere series en onderdelen op maat met snelle levering.
 
 ### Onderhoud en herstellingen
 Sterke onderdelen die tegen een stootje kunnen.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Lievegem](/3d-printen-in-lievegem)
 - [Buurpagina: 3D printen in Zomergem](/3d-printen-in-zomergem)
 - [Buurpagina: 3D printen in Oostwinkel](/3d-printen-in-oostwinkel)
+
+
 
 ## Spotlight rond Waarschoot
 - Lokale ondernemers en techniekers: behuizingen en pasmallen voor teams in Waarschoot centrum.

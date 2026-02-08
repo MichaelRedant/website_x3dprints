@@ -26,7 +26,7 @@
 In Zeveneken combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Zeveneken
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
 - [Hoofdpagina: 3D printen in Beervelde](/3d-printen-in-beervelde)
 
+
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Zeveneken centrum.
 - Vaak gevraagd: 3D print service Zeveneken; we adviseren materiaal en afwerking.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in Zeveneken
 - Lokale makers en ontwerpers (Zeveneken)
-- Kleine series en maatwerk (Zeveneken)
+- Kleine en grotere series en maatwerk (Zeveneken)
 - Verenigingen en onderwijs (Zeveneken)
 
 ## Veelgevraagde zoekopdrachten in Zeveneken

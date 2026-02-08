@@ -232,7 +232,7 @@ const COPY = {
       tags: ["Octopus case", "3D printing marketing", "event goodies", "badges", "mascot", "SaaS merchandising"],
       jsonLdHeadline: "Case: Octopus x X3DPrints - 3D-printed mascots, badges and event goodies",
       jsonLdDescription:
-        "How X3DPrints produced mascots, badges and QR goodies for office, trade shows and events, with a focus on fast iteration, material choice and reusable small batches.",
+        "How X3DPrints produced mascots, badges and QR goodies for office, trade shows and events, with a focus on fast iteration, material choice and reusable small to large batches.",
     },
     hero: {
       kicker: "Case study",
@@ -274,7 +274,7 @@ const COPY = {
           "Small goodies with a QR code that takes people straight to the right info (landing page, demo, onboarding, contact or campaign). Handy as a giveaway and for internal use.",
       },
       {
-        title: "Small batches, fast iteration",
+        title: "Small to large batches, fast iteration",
         detail: "Not mass production, but batches you can tweak. Ideal for testing before you roll out larger quantities.",
       },
     ],
@@ -380,7 +380,7 @@ const COPY = {
       title: "FAQ",
       items: [
         {
-          q: "Can you produce small batches (e.g., 10-30 units)?",
+          q: "Can you produce small to large batches (e.g., 10-30 units)?",
           a: "Yes. That is one of the biggest advantages of 3D printing. You can start small, collect feedback and scale later.",
         },
         {
@@ -438,7 +438,8 @@ function buildMetadata(meta: MetaInput, canonical: string, locale: "nl_BE" | "en
 }
 
 export const metadata: Metadata = buildMetadata(COPY.nl.meta, NL_CANONICAL, "nl_BE")
-export const EN_METADATA: Metadata = buildMetadata(COPY.en.meta, EN_CANONICAL, "en_BE")
+const EN_METADATA: Metadata = buildMetadata(COPY.en.meta, EN_CANONICAL, "en_BE")
+void EN_METADATA
 
 type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
 

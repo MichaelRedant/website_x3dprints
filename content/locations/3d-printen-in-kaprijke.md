@@ -1,6 +1,6 @@
 # 3D printen in Kaprijke: lokaal maatwerk met snelle levering
 
-**3D printen in Kaprijke** is ideaal voor prototypes, maatwerk en kleine series in het Meetjesland. X3DPrints levert vanuit Herzele met persoonlijk advies, korte doorlooptijd en strakke afwerking.
+**3D printen in Kaprijke** is ideaal voor prototypes, maatwerk en zowel kleine als grotere series in het Meetjesland. X3DPrints levert vanuit Herzele met persoonlijk advies, korte doorlooptijd en strakke afwerking.
 
 ---
 
@@ -25,7 +25,7 @@
 
 In Kaprijke helpen we projecten rond Onze-Lieve-Vrouw-Hemelvaartkerk (Kaprijke) sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snel itereren met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Kleine series en onderdelen op maat met korte lead time.
+Kleine en grotere series en onderdelen op maat met korte lead time.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en betrouwbare planning.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Lembeke](/3d-printen-in-lembeke)
 - [Buurpagina: 3D printen in Bentille](/3d-printen-in-bentille)
 
+
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Kaprijke centrum.
 - Vaak gevraagd: 3D print service Kaprijke; we adviseren materiaal en afwerking.
@@ -140,7 +142,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in Kaprijke
 - Lokale makers en ontwerpers (Kaprijke)
-- Kleine series en maatwerk (Kaprijke)
+- Kleine en grotere series en maatwerk (Kaprijke)
 - Verenigingen en onderwijs (Kaprijke)
 
 ## Veelgevraagde zoekopdrachten in Kaprijke

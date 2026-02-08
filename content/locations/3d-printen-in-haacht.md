@@ -1,6 +1,6 @@
 # 3D printen in Haacht: brouwerijsite en N19
 
-Voor **3D printen in Haacht** leveren we prototypes en kleine series richting Tildonk, Wakkerzeel en Haacht-Station. Snelle offertes, heldere prijzen en leveringen op maat.
+Voor **3D printen in Haacht** leveren we prototypes en zowel kleine als grotere series richting Tildonk, Wakkerzeel en Haacht-Station. Snelle offertes, heldere prijzen en leveringen op maat.
 
 ---
 
@@ -32,7 +32,7 @@ Voor **3D printen in Haacht** leveren we prototypes en kleine series richting Ti
 
 - Fixtures en klemmen voor productie en onderhoud.
 - Signage en props voor lokale campagnes.
-- Kleine series covers en cases voor elektronica.
+- Kleine en grotere series covers en cases voor elektronica.
 
 ---
 
@@ -61,3 +61,37 @@ Stuur je bestanden via [contact](/contact). Je krijgt snel een voorstel voor **3
 - Haacht centrum
 - Tildonk
 - Wakkerzeel
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Haacht
+
+- Dekking: Haacht, Haacht centrum, Tildonk, Wakkerzeel, Haacht-Station, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Haacht.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Brouwerij- en industrieprojecten rond Haacht: PLA/PETG onderdelen afgestemd op projecten rond Haacht centrum.
+- Vaak gevraagd: 3D print service Haacht; we adviseren materiaal en afwerking.
+- Leverfocus: Haacht, Haacht centrum, Tildonk.
+
+## Plaatsen waar we vaak leveren rond Haacht
+- Centrum van Haacht
+- Lokale bedrijvenzone in Haacht
+- Sporthal in Haacht
+
+## Sectoren die we vaak helpen in Haacht
+- Brouwerij- en industrieprojecten rond Haacht
+- Retail/events in Haacht en Tildonk
+- Makers en onderwijs in het Hageland (Haacht)
+
+## Veelgevraagde zoekopdrachten in Haacht
+- 3D print service Haacht
+- rapid prototyping Haacht
+- 3D printing bedrijf Haacht
+<!-- LOCAL_ENRICH_END -->

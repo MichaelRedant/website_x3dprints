@@ -20,7 +20,7 @@ const pricingHref = "/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=pla
 export const metadata: Metadata = {
   title: "PLA vs PETG: which material should you choose? | X3DPrints",
   description:
-    "Compare PLA and PETG on finish, strength, heat resistance and cost to choose the right material faster.",
+    "Compare PLA and PETG on finish, strength, heat resistance and cost to choose the right material faster for 3D model print projects in 3D printing Gent and Belgium workflows.",
   alternates: {
     canonical,
     languages: {
@@ -197,7 +197,7 @@ export default function BlogPlaVsPetgEnPage() {
             PLA vs PETG: which material should you choose?
           </h1>
           <p className="max-w-3xl text-lg text-slate-700">
-            Short answer: PLA is usually strongest for visual quality, PETG is usually stronger for functional stress.
+            Short answer: PLA is usually strongest for visual quality, PETG is usually stronger for functional stress in a 3D model print setup, including 3D printing Gent use cases.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
             Last updated: February 7, 2026

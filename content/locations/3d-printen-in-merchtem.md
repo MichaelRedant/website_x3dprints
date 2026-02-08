@@ -32,7 +32,7 @@ Met **3D printen in Merchtem** leveren we prototypes, behuizingen en tooling ric
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica en IoT.
+- Kleine en grotere series covers en cases voor elektronica en IoT.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Merchtem centrum
 - Brussegem
 - Mollem en Hammet
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Merchtem
+
+- Dekking: Merchtem, Merchtem centrum, Brussegem, Mollem, Hammet, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Merchtem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Buurpagina: 3D printen in Mollem](/3d-printen-in-mollem)
+
+
+
+## Klantenspotlight
+- Logistiek en productie in Merchtem/Brussegem: kleine reeksen met vaste settings rond Merchtem centrum.
+- Vaak gevraagd: 3D print service Merchtem; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Merchtem en Merchtem centrum.
+
+## Locaties die we bedienen nabij Merchtem
+- Centrum van Merchtem
+- Lokale bedrijvenzone in Merchtem
+- Sporthal in Merchtem
+
+## Sectorfocus nabij Merchtem
+- Logistiek en productie in Merchtem/Brussegem
+- Retail/events in de regio (Merchtem)
+- Makers en onderwijs in Noordrand (Merchtem)
+
+## Typische aanvragen rond Merchtem
+- 3D print service Merchtem
+- rapid prototyping Merchtem
+- 3D printing bedrijf Merchtem
+<!-- LOCAL_ENRICH_END -->

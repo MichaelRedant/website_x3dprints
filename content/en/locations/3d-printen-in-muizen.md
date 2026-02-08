@@ -15,7 +15,7 @@ Need **3D printing in Muizen**? X3DPrints prints in Herzele and ships quickly to
 
 ## Delivery focus for Muizen
 
-We frequently deliver to: Muizen.
+We frequently deliver to: Muizen, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Muizen.
 
 ## What stands out in Muizen
 
-- Local SMEs in Muizen: tailored PETG/PLA parts for teams around Muizen.
-- Common ask: 3D print service Muizen; we advise material and finishing for Muizen.
-- Delivery focus: Muizen.
+- Manufacturing and SMEs around Muizen: prototypes, fixtures and housings.
+- Common ask in Muizen: custom 3D printing with practical PLA/PETG/TPU advice for Muizen.
+- Delivery focus: Muizen, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Muizen.
 
 ## Recent requests around Muizen
 
-- Paint-ready show models for presentations in Muizen and Muizen.
+- Paint-ready show models for presentations in Muizen and the surrounding area.
 - PLA or PETG functional parts for teams in Muizen.
-- TPU grips and pads for bikes, tools or fixtures around Muizen.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Muizen.
 
 ## Useful links near Muizen
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +109,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Muizen
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Muizen
 
-- Coverage: Muizen; delivery from Herzele, pickup available.
+- Coverage: Muizen, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Muizen.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -121,8 +118,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Muizen
 - [Parent page: 3D printing in Mechelen](/en/3d-printen-in-mechelen)
 
 ## Customer spotlight
-- Local teams in Muizen: small batches with consistent settings near Muizen.
-- Common request: 3D print service Muizen; we pick material and finish for the use case.
+- SMEs and makers in Muizen: fixtures and enclosures.
+- Common request: 3D printing service in Muizen; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Muizen and Muizen.
 
 ## Where we drop off near Muizen
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Muizen
 - Education/labs around Muizen: lesson-ready prints.
 
 ## Common requests around Muizen
-- 3D print service Muizen
-- rapid prototyping Muizen
-- 3D printing bedrijf Muizen
+- 3D printing service in Muizen
+- Custom 3D printing in Muizen
+- 3D model printing in Muizen
 <!-- LOCAL_ENRICH_END -->

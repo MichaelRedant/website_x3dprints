@@ -1,63 +1,139 @@
-# 3D printing in Herent: Leuven fringe and E314
+# 3D printing in Herent: local, fast and tailored
 
-For **3D printing in Herent** we deliver prototypes, housings and tooling toward Winksele, Veltem-Beisem and Wakkerzeel. Fast quotes and deliveries along E314/E40.
-
----
-
-## Why X3DPrints for Herent?
-
-- Quote within one working day, transparent pricing.
-- PLA Matte, PETG and TPU for showpieces and strong functional parts.
-- EV delivery toward Herent/Veltem; pickup in Herzele available.
+Need **3D printing in Herent**? X3DPrints prints in Herzele and ships quickly to Herent and nearby Winksele. Local 3D printing for Herent, Winksele and Veltem-Beisem, Wakkerzeel: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
-## Local focus in Herent
+## Why Herent teams choose us
 
-- Housings and brackets for labs and education in the Leuven fringe.
-- Jigs and fit parts for SMEs along E314/E40.
-- Displays and props for events in Herent and villages.
-
-## Materials
-
-| Material      | Benefit                        | Ideal for |
-| :------------ | :----------------------------- | :-------- |
-| **PLA Matte** | Clean detail, many colours     | Models and visuals |
-| **PETG**      | Strong and heat-resistant      | Functional parts and tooling |
-| **TPU**       | Flexible and shock absorbing   | Cable management, bumpers and grips |
+- Local delivery to Herent, Winksele and Veltem-Beisem, Wakkerzeel; pickup in Herzele.
+- Fast quotes: response in one business day with clear pricing.
+- Accurate fits for enclosures, jigs and assemblies used in Herent.
+- Optional finishing (sanding/priming/paint) for customer-facing parts.
 
 ---
 
-## Use cases in Herent
+## Delivery focus for Herent
 
-- Fixtures and clamps for production and maintenance.
-- Showpieces and signage for local campaigns.
-- Small series of housings for electronics and IoT.
+We frequently deliver to: Herent, Herent city center, Winksele, Veltem-Beisem, Wakkerzeel, E314/E40-corridor, Pickup in Herzele.
 
 ---
 
-## Practical
+## What teams near Herent ask us to make
 
-- Upload STL/STEP via [contact](/en/contact) with quantities and finish.
-- Delivery via E314/E40; pickup in Herzele possible.
-- Optional sanding/priming for smooth visuals.
+- Pilot runs for SMEs around Herent, tuned per fit/finish.
+- Functional PETG parts for maintenance teams near Winksele.
+- TPU dampers and grips for gear used in Veltem-Beisem.
+- Presentation models and mockups for pitches around Herent.
+- Brackets, guards and fixtures tuned for teams in Herent.
+- Demo pieces and props for events near Herent.
 
 ---
 
-## Request a quote
+## What stands out in Herent
 
-Share your files via [contact](/en/contact). You’ll quickly get a proposal for **3D printing in Herent**.
+- Education and labs around Herent: lesson-ready prints in PLA/PETG.
+- Common ask in Herent: custom 3D printing with practical PLA/PETG/TPU advice for Veltem-Beisem.
+- Delivery focus: Herent, Herent city center, Winksele.
+
+---
+
+## Places we serve near Herent
+
+- Herent town center
+- local business park in Herent
+- sports hall in Herent
+
+---
+
+## Sectors we back near Herent
+
+- Education and labs around Herent: lesson-ready prints in PLA/PETG.
+- SMEs and industry near Herent: fixtures, enclosures and small to large batches.
+- Retail/marketing/events in Herent: displays, props and branded pieces.
+
+---
+
+## Recent requests around Herent
+
+- Paint-ready show models for presentations in Herent and Winksele.
+- PLA or PETG functional parts for teams in Herent.
+- TPU grips and pads for bikes, tools or fixtures around Winksele.
+
+---
+
+## Material picks for Herent work
+
+| Material       | Key trait                 | Ideal for                                             |
+| :------------- | :------------------------ | :---------------------------------------------------- |
+| **PLA Matte**  | Clean, detailed finish    | Models, decor, mockups for Herent presentations       |
+| **PETG**       | Tough, heat resistant     | Functional parts, brackets, light outdoor use near Herent |
+| **TPU**        | Flexible, shock absorbing | Grips, pads, bumpers for bikes or tools in Herent     |
+
+---
+
+## Plan your order
+
+1. Upload STL/STEP via [contact](/en/contact).
+2. Note material (PLA/PETG/TPU), colour and quantity.
+3. Receive quote + timing within one business day.
+
+**Lead time:** usually a few working days; rush possible. Shipping to Herent or pickup in Herzele.
+
+---
 
 ## FAQ about 3D printing in Herent
 
-**Lead time?** A few working days; rush possible.
+**Do you print functional brackets?** Yes. PETG for tough brackets; TPU for vibration-damping pads; PLA Matte for visuals.  
+**What build volume?** Up to ~35 x 32 x 35 cm. Larger parts get split with hidden joints.  
+**How fast is shipping?** Most jobs leave within a few working days. We ship or you pick up in Herzele.  
+**Do you review my files?** We check wall thickness and fit. If critical, mention tolerances or mating parts.  
+**Can you add inserts?** Yes. We can design for heat-set inserts or self-tapping screws if you note the thread size.
 
-**Best material for labs?** PETG for strength/heat, PLA for visuals, TPU for flexible parts.
+---
 
-**Repeat batches?** Yes, we keep slicer profiles.
+## Useful links near Herent
 
-## Local points
+- [Local 3D printing overview](/en/locaties)
+- [3D printing pillar](/en/3d-printen)
+- [Materials and advice](/en/materials#material-suggestion-tool)
+- [Pricing examples](/en/pricing)
+- [Request a quote](/en/contact)
 
-- Winksele
-- Veltem-Beisem
-- Wakkerzeel
+---
+
+## Start your Herent print request
+
+Send your files today and get a clear, fast proposal for **3D printing in Herent**. Nearby production, personal support and reliable quality.
+
+<!-- LOCAL_ENRICH_START -->
+## Delivery details around Herent
+
+- Coverage: Herent, Herent city center, Winksele, Veltem-Beisem, Wakkerzeel, E314/E40-corridor; delivery from Herzele, pickup available.
+- Frequent jobs: prototypes, housings and brackets tailored for teams in Herent.
+- File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
+- Turnaround: usually a few working days; rush possible on request.
+
+## Related nearby pages
+- [Local 3D printing overview](/en/locaties)
+
+## Customer spotlight
+- Education/labs around Herent: reliable PLA/PETG parts.
+- Common request: 3D printing service in Herent; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Winksele and Veltem-Beisem.
+
+## Where we drop off near Herent
+- Herent town center
+- local business park in Herent
+- sports hall in Herent
+
+## Sectors we back near Herent
+- Education/labs around Herent: reliable PLA/PETG parts.
+- SMEs/industry near Herent: prototypes, fixtures, housings.
+- Retail/marketing/events in Herent: displays, signage, props.
+
+## Common requests around Herent
+- 3D printing service in Herent
+- Custom 3D printing in Herent
+- 3D model printing in Herent
+<!-- LOCAL_ENRICH_END -->

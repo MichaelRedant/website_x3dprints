@@ -32,7 +32,7 @@ Voor **3D printen in Wemmel** leveren we prototypes, props en tooling richting d
 
 - Eventprops en stands voor lokale campagnes.
 - Serviceparts en passtukken voor logistiek langs R0.
-- Kleine series behuizingen voor sensoren en IoT-projecten.
+- Kleine en grotere series behuizingen voor sensoren en IoT-projecten.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je bestanden via [contact](/contact). Je krijgt snel een voorstel voor **3
 - Wemmel centrum
 - Romeinsesteenweg
 - R0 noordrand
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Wemmel
+
+- Dekking: Wemmel, Wemmel centrum, Romeinsesteenweg, R0 noordrand, Koning Boudewijnpark rand, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Wemmel.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Events en retail in Wemmel/noordrand: PLA/PETG onderdelen afgestemd op projecten rond Wemmel centrum.
+- Vaak gevraagd: 3D print service Wemmel; we adviseren materiaal en afwerking.
+- Leverfocus: Wemmel, Wemmel centrum, Romeinsesteenweg.
+
+## Plaatsen waar we vaak leveren rond Wemmel
+- Centrum van Wemmel
+- Lokale bedrijvenzone in Wemmel
+- Sporthal in Wemmel
+
+## Sectoren die we vaak helpen in Wemmel
+- Events en retail in Wemmel/noordrand
+- KMO's en logistiek langs R0 (Wemmel)
+- Makers en onderwijs in Wemmel
+
+## Veelgevraagde zoekopdrachten in Wemmel
+- 3D print service Wemmel
+- rapid prototyping Wemmel
+- 3D printing bedrijf Wemmel
+<!-- LOCAL_ENRICH_END -->

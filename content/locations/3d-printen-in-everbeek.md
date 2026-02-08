@@ -38,7 +38,7 @@ Voor **3D printen in Everbeek** (Beneden en Boven) leveren we prototypes en func
 
 Voor projecten in Everbeek combineren we korte doorlooptijd met strakke afwerking.
 
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 
@@ -126,7 +126,13 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Everbeek
+- Centrum van Everbeek
+- Lokale bedrijvenzone in Everbeek
+- Sporthal in Everbeek
+
 
 ## Klantenspotlight
 - Lokale teams in Everbeek: kleine reeksen met vaste settings rond Everbeek.

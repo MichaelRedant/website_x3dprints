@@ -32,7 +32,7 @@ Voor **3D printen in Meise** leveren we prototypes, props en tooling richting de
 
 - Signage en props voor toerisme en retail.
 - Fixtures en serviceparts voor productie/logistiek langs A12.
-- Kleine series covers voor elektronica en sensoren.
+- Kleine en grotere series covers voor elektronica en sensoren.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je bestanden via [contact](/contact). Je krijgt snel een voorstel voor **3
 - Plantentuin Meise
 - Wolvertem
 - A12-corridor
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Meise
+
+- Dekking: Meise, Meise centrum, Botanic Garden Meise, A12-corridor, Wolvertem, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Meise.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Spotlight rond Meise
+- Events/retail rond Plantentuin en centrum: behuizingen en pasmallen voor teams in Meise centrum.
+- Terugkerende order: 3D print service Meise; we bewaren je instellingen.
+- Leverfocus: Meise, Meise centrum, Botanic Garden Meise.
+
+## Landmarks in de buurt van Meise
+- Centrum van Meise
+- Lokale bedrijvenzone in Meise
+- Sporthal in Meise
+
+## Teams die we ondersteunen rond Meise
+- Events/retail rond Plantentuin en centrum (Meise)
+- KMO's en logistiek langs A12 (Meise)
+- Makers en onderwijs in Meise/Wolvertem
+
+## Wat vaak wordt gevraagd in Meise
+- 3D print service Meise
+- rapid prototyping Meise
+- 3D printing bedrijf Meise
+<!-- LOCAL_ENRICH_END -->

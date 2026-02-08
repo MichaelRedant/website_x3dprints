@@ -81,6 +81,12 @@ Upload je bestand via [contact](/contact). Je krijgt snel een helder voorstel vo
 ## Dichtbij gelegen locaties
 - [Hoofdpagina: 3D printen in Mechelen](/3d-printen-in-mechelen)
 
+## Lokale punten in Walem
+- Centrum van Walem
+- Lokale bedrijvenzone in Walem
+- Sporthal in Walem
+
+
 ## Spotlight rond Walem
 - Lokale teams in Walem: behuizingen en pasmallen voor teams in Walem.
 - Terugkerende order: 3D print service Walem; we bewaren je instellingen.

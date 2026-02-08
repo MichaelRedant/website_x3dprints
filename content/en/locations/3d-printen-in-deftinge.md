@@ -1,12 +1,12 @@
 # 3D printing in Deftinge: local, fast and tailored
 
-Need **3D printing in Deftinge**? X3DPrints prints in Herzele and ships quickly to Deftinge and nearby Deftinge centrum. Local 3D printing for Deftinge, Deftinge centrum and Lierde, Hemelveerdegem, Sint-Maria-Lierde: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Deftinge**? X3DPrints prints in Herzele and ships quickly to Deftinge and nearby Lierde. Local 3D printing for Deftinge, Lierde and Hemelveerdegem, Sint-Maria-Lierde: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Deftinge teams choose us
 
-- Local delivery to Deftinge, Deftinge centrum and Lierde, Hemelveerdegem, Sint-Maria-Lierde; pickup in Herzele.
+- Local delivery to Deftinge, Lierde and Hemelveerdegem, Sint-Maria-Lierde; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Deftinge.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Deftinge**? X3DPrints prints in Herzele and ships quickly 
 
 ## Where we deliver around Deftinge
 
-We frequently deliver to: Deftinge, Deftinge centrum, Lierde, Hemelveerdegem, Sint-Maria-Lierde, Afhalen Herzele.
+We frequently deliver to: Deftinge, Deftinge city center, Lierde, Hemelveerdegem, Sint-Maria-Lierde, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Deftinge
 
 - Prototypes and housings supporting teams in Deftinge.
-- Small series with consistent settings for businesses near Deftinge centrum.
-- Replacement parts and brackets for workshops around Lierde.
+- Small to large series with consistent settings for businesses near Lierde.
+- Replacement parts and brackets for workshops around Hemelveerdegem.
 - Promo models, signage and props for events in and around Deftinge.
 - Brackets, guards and fixtures tuned for teams in Deftinge.
 - Demo pieces and props for events near Deftinge.
@@ -32,9 +32,9 @@ We frequently deliver to: Deftinge, Deftinge centrum, Lierde, Hemelveerdegem, Si
 
 ## Spotlight: Deftinge projects
 
-- Lokale makers en techniekers: tailored PETG/PLA parts for teams around Deftinge centrum.
-- Common ask: 3D print service Deftinge; we advise material and finishing for Lierde.
-- Delivery focus: Deftinge, Deftinge centrum, Lierde.
+- SMEs and industry near Deftinge: fixtures, enclosures and small to large batches.
+- Common ask in Deftinge: custom 3D printing with practical PLA/PETG/TPU advice for Hemelveerdegem.
+- Delivery focus: Deftinge, Deftinge city center, Lierde.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Deftinge, Deftinge centrum, Lierde, Hemelveerdegem, Si
 
 ## Teams we often help near Deftinge
 
-- Local projects in Deftinge: Lokale makers en techniekers
-- Local projects in Deftinge: Kleine series en maatwerk
-- Local projects in Deftinge: Verenigingen en scholen
+- SMEs and industry near Deftinge: fixtures, enclosures and small to large batches.
+- Makers and product teams in Deftinge: iterative prototyping and short-run production.
+- Education and labs around Deftinge: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Popular requests from Deftinge
 
 - PLA or PETG functional parts for teams in Deftinge.
-- TPU grips and pads for bikes, tools or fixtures around Deftinge centrum.
-- Paint-ready show models for presentations in Deftinge and Deftinge centrum.
+- TPU grips and pads for bikes, tools or fixtures around Lierde.
+- Paint-ready show models for presentations in Deftinge and Lierde.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Deftinge, Deftinge centrum, Lierde, Hemelveerdegem, Si
 
 ## FAQ about 3D printing in Deftinge
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -97,7 +97,6 @@ We frequently deliver to: Deftinge, Deftinge centrum, Lierde, Hemelveerdegem, Si
 - [3D printing in Lierde](/en/3d-printen-in-lierde)
 - [3D printing in Hemelveerdegem](/en/3d-printen-in-hemelveerdegem)
 - [3D printing in Sint-Maria-Lierde](/en/3d-printen-in-sint-maria-lierde)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Deftin
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Deftinge
 
-- Coverage: Deftinge, Deftinge centrum, Lierde, Hemelveerdegem, Sint-Maria-Lierde, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Deftinge, Deftinge city center, Lierde, Hemelveerdegem, Sint-Maria-Lierde, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Deftinge.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +122,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Deftin
 - [Nearby: 3D printing in Sint-Maria-Lierde](/en/3d-printen-in-sint-maria-lierde)
 
 ## Local spotlight
-- Lokale makers en techniekers: PLA/PETG parts tuned for projects near Deftinge centrum.
-- Common request: 3D print service Deftinge; we pick material and finish for the use case.
-- Delivery focus: Deftinge, Deftinge centrum, Lierde.
+- SMEs/industry near Deftinge: prototypes, fixtures, housings.
+- Common request: 3D printing service in Deftinge; we pick material and finish for the use case.
+- Delivery focus: Deftinge, Deftinge city center, Lierde.
 
 ## Places we often deliver near Deftinge
 - Deftinge town center
@@ -133,12 +132,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Deftin
 - sports hall in Deftinge
 
 ## Industries we serve near Deftinge
-- Local focus: Lokale makers en techniekers
-- Local focus: Kleine series en maatwerk
-- Local focus: Verenigingen en scholen
+- SMEs/industry near Deftinge: prototypes, fixtures, housings.
+- Makers and product teams in Deftinge: iterative prototyping and short-run production.
+- Education/labs around Deftinge: reliable PLA/PETG parts.
 
 ## Popular searches from Deftinge
-- 3D print service Deftinge
-- rapid prototyping Deftinge
-- 3D printing bedrijf Deftinge
+- 3D printing service in Deftinge
+- Custom 3D printing in Deftinge
+- 3D model printing in Deftinge
 <!-- LOCAL_ENRICH_END -->

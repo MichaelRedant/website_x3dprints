@@ -22,7 +22,7 @@
 
 ## Lokale focus in Lotenhulle
 
-Werk je in Lotenhulle? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Heilig-Kruiskerk.
+Werk je in Lotenhulle? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Heilig-Kruiskerk.
 
 - Maquettes en detailmodellen voor erfgoed en presentaties.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -49,7 +49,7 @@ Onderdelen, hulpstukken en prototypes voor dagelijkse werking.
 Creatieve projecten en snelle iteraties.
 
 ### Scholen en verenigingen
-Educatieve modellen en kleine series.
+Educatieve modellen en zowel kleine als grotere series.
 
 ---
 
@@ -81,7 +81,7 @@ Test vorm, pasvorm en functie snel met een eerste print.
 - Prototypes en producttests
 - Maatwerk voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -127,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Bellem](/3d-printen-in-bellem)
 - [Buurpagina: 3D printen in Knesselare](/3d-printen-in-knesselare)
 - [Buurpagina: 3D printen in Poeke](/3d-printen-in-poeke)
+
+
 
 ## Lokale spotlight
 - Makers en hobbyisten: PLA/PETG onderdelen afgestemd op projecten rond Lotenhulle centrum.

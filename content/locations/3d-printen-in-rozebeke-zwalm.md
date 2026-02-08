@@ -1,6 +1,6 @@
 # 3D printen in Rozebeke (Zwalm): maatwerk met snelle levering
 
-**3D printen in Rozebeke (Zwalm)** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Rozebeke (Zwalm)** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test onderdelen snel en stuur bij waar nodig.
 **Welke bestanden kan ik aanleveren voor Rozebeke (Zwalm)?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Rozebeke (Zwalm)?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Rozebeke (Zwalm)?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Rozebeke (Zwalm)?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
 - [Buurpagina: 3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
 
+
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Rozebeke (Zwalm) centrum.
 - Vaak gevraagd: 3D print service Rozebeke Zwalm; we adviseren materiaal en afwerking.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectorfocus nabij Rozebeke (Zwalm)
 - Lokale makers en ontwerpers (Rozebeke (Zwalm))
-- Kleine series en maatwerk (Rozebeke (Zwalm))
+- Kleine en grotere series en maatwerk (Rozebeke (Zwalm))
 - Verenigingen en onderwijs (Rozebeke (Zwalm))
 
 ## Typische aanvragen rond Rozebeke (Zwalm)

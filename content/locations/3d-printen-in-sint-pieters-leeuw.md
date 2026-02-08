@@ -1,6 +1,6 @@
 # 3D printen in Sint-Pieters-Leeuw: Zennevallei en R0
 
-Met **3D printen in Sint-Pieters-Leeuw** leveren we prototypes en kleine series voor retail, logistiek en events. Snelle offertes, duidelijke prijzen en leveringen langs N6 en de Ring.
+Met **3D printen in Sint-Pieters-Leeuw** leveren we prototypes en zowel kleine als grotere series voor retail, logistiek en events. Snelle offertes, duidelijke prijzen en leveringen langs N6 en de Ring.
 
 ---
 
@@ -35,7 +35,7 @@ We kennen de mix van logistiek, retail en events in de Zennevallei. Daardoor ste
 
 - Retailprops en signage voor lokale campagnes.
 - Technische passtukken voor productie en logistiek.
-- Kleine series behuizingen voor sensoren en elektronica.
+- Kleine en grotere series behuizingen voor sensoren en elektronica.
 
 ---
 
@@ -67,3 +67,37 @@ Ja. We bewaren settings en plannen levermomenten per batch.
 - Sint-Pieters-Leeuw centrum
 - Ruisbroek
 - Vlezenbeek
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Sint-Pieters-Leeuw
+
+- Dekking: Sint-Pieters-Leeuw, Sint-Pieters-Leeuw centrum, Ruisbroek, Negenmanneke, Vlezenbeek, R0 en N6-corridor; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Pieters-Leeuw.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Retail en events in de Zennevallei: PLA/PETG onderdelen afgestemd op projecten rond Sint-Pieters-Leeuw centrum.
+- Vaak gevraagd: 3D print service Sint-Pieters-Leeuw; we adviseren materiaal en afwerking.
+- Leverfocus: Sint-Pieters-Leeuw, Sint-Pieters-Leeuw centrum, Ruisbroek.
+
+## Plaatsen waar we vaak leveren rond Sint-Pieters-Leeuw
+- Centrum van Sint-Pieters-Leeuw
+- Lokale bedrijvenzone in Sint-Pieters-Leeuw
+- Sporthal in Sint-Pieters-Leeuw
+
+## Sectoren die we vaak helpen in Sint-Pieters-Leeuw
+- Retail en events in de Zennevallei (Sint-Pieters-Leeuw)
+- Logistiek en productie langs de R0/N6 (Sint-Pieters-Leeuw)
+- Makers en onderwijs in Sint-Pieters-Leeuw
+
+## Veelgevraagde zoekopdrachten in Sint-Pieters-Leeuw
+- 3D print service Sint-Pieters-Leeuw
+- rapid prototyping Sint-Pieters-Leeuw
+- 3D printing bedrijf Sint-Pieters-Leeuw
+<!-- LOCAL_ENRICH_END -->

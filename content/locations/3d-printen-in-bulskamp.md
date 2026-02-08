@@ -1,6 +1,6 @@
 # 3D printen in Bulskamp: maatwerk tussen Veurne en Lo
 
-Bulskamp ligt op de as Veurne - Lo-Reninge en grenst aan het kanaal Nieuwpoort-Duinkerke. De open polders, windprojecten en landbouwbedrijven vragen onderdelen die zowel esthetisch als functioneel kloppen. Wij leveren prototypes, kleine series en vervangstukken zonder dat je zelf een printerpark moet beheren.
+Bulskamp ligt op de as Veurne - Lo-Reninge en grenst aan het kanaal Nieuwpoort-Duinkerke. De open polders, windprojecten en landbouwbedrijven vragen onderdelen die zowel esthetisch als functioneel kloppen. Wij leveren prototypes, kleine en grotere series en vervangstukken zonder dat je zelf een printerpark moet beheren.
 
 ## Waar we vaak voor printen in Bulskamp
 
@@ -13,11 +13,11 @@ Bulskamp ligt op de as Veurne - Lo-Reninge en grenst aan het kanaal Nieuwpoort-D
 
 ## Lokale focus in Bulskamp
 
-Werk je in Bulskamp? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Bulskamp? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Ergonomische grips en handgrepen op maat.
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 
 ## Materialen en afwerking
 
@@ -54,7 +54,7 @@ Stuur je bestanden en context door en we plannen productie zodat je snel verder 
 
 ## Veelgestelde vragen over 3D printen in Bulskamp
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -75,7 +75,13 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Bulskamp
+- Centrum van Bulskamp
+- Lokale bedrijvenzone in Bulskamp
+- Sporthal in Bulskamp
+
 
 ## Spotlight rond Bulskamp
 - Landbouw en irrigatieprojecten in de polders: behuizingen en pasmallen voor teams in Bulskamp dorpskern.

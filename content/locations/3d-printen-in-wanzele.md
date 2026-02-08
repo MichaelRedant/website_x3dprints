@@ -26,7 +26,7 @@
 Voor Wanzele leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Sint-Bavokerk (Wanzele) en Wanzele.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Wanzele
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Wanzele interessant?
 
 ### Lokale ondernemers
-Kleine series en onderdelen op maat met snelle levering.
+Kleine en grotere series en onderdelen op maat met snelle levering.
 
 ### Onderhoud en herstellingen
 Sterke onderdelen die tegen een stootje kunnen.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Lede](/3d-printen-in-lede)
 - [Buurpagina: 3D printen in Oordegem](/3d-printen-in-oordegem)
 - [Buurpagina: 3D printen in Impe](/3d-printen-in-impe)
+
+
 
 ## Spotlight rond Wanzele
 - Lokale ondernemers en techniekers: behuizingen en pasmallen voor teams in Wanzele centrum.

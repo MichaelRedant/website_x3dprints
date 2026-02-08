@@ -1,6 +1,6 @@
 # 3D printen in Hemelveerdegem: snelle prototypes met lokale service
 
-**3D printen in Hemelveerdegem** (Lierde) is ideaal voor prototypes en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Hemelveerdegem** (Lierde) is ideaal voor prototypes en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -27,7 +27,7 @@ Voor Hemelveerdegem leveren we snel en denken we mee over sterkte en afwerking, 
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Hemelveerdegem
 
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,8 +94,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Hemelveerdegem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Hemelveerdegem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Hemelveerdegem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Hemelveerdegem
 - [3D printen in Lierde](/3d-printen-in-lierde)
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Lierde](/3d-printen-in-lierde)
 - [Buurpagina: 3D printen in Deftinge](/3d-printen-in-deftinge)
 - [Buurpagina: 3D printen in Sint-Maria-Lierde](/3d-printen-in-sint-maria-lierde)
+
+
 
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Hemelveerdegem centrum.

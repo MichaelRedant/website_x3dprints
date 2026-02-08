@@ -1,6 +1,6 @@
 # 3D printen in Merelbeke-Melle: snelle prototypes in de Gentse rand
 
-**3D printen in Merelbeke-Melle** is ideaal voor prototypes, herstellingen en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten rond Gent.
+**3D printen in Merelbeke-Melle** is ideaal voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten rond Gent.
 
 ---
 
@@ -26,7 +26,7 @@
 In Merelbeke-Melle combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Merelbeke-Melle
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en installateurs
-Maatwerk en kleine series met betrouwbare timing.
+Maatwerk en zowel kleine als grotere series met betrouwbare timing.
 
 ### Scholen en verenigingen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en testopstellingen
 - Montagehulpen en tooling
 - Behuizingen en componenten
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Melle](/3d-printen-in-melle)
 - [Buurpagina: 3D printen in Bottelare](/3d-printen-in-bottelare)
 - [Buurpagina: 3D printen in Lemberge](/3d-printen-in-lemberge)
+
+
 
 ## Spotlight rond Merelbeke-Melle
 - KMO's en maakbedrijven in de Gentse rand: behuizingen en pasmallen voor teams in Merelbeke.

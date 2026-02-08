@@ -38,7 +38,7 @@ In Geraardsbergen helpen we makers en bedrijven met 3D prints die vlot passen en
 ## Toepassingen in Geraardsbergen
 
 - Events en expo: props, houders en signage voor happenings op de Vesten of De Gavers.
-- Retail en horeca: displays en kleine series voor zaken aan de Markt of Oudenaardsestraat.
+- Retail en horeca: displays en zowel kleine als grotere series voor zaken aan de Markt of Oudenaardsestraat.
 - Engineering en maak: klemmen en behuizingen voor ateliers rond Industrielaan en Denderzone.
 - Onderwijs: modellen en prototypes voor scholen in en rond het centrum.
 
@@ -83,7 +83,13 @@ Upload je bestand via [contact](/contact). Je ontvangt snel een voorstel zodat j
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Geraardsbergen
+- Centrum van Geraardsbergen
+- Lokale bedrijvenzone in Geraardsbergen
+- Sporthal in Geraardsbergen
+
 
 ## Lokale spotlight
 - Lokale teams in Geraardsbergen: PLA/PETG onderdelen afgestemd op projecten rond Geraardsbergen.

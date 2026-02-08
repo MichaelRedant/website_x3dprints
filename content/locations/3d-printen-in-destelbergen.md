@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Destelbergen interessant?
 
 ### Lokale bedrijven en zelfstandigen
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Onderwijs en makers
 Test en verbeter ontwerpen met korte feedbackloops.
@@ -82,7 +82,7 @@ Ontwerp snel, test sneller en verbeter zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,8 +94,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Destelbergen?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Destelbergen?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Destelbergen?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Destelbergen
 - [3D printen in Heusden](/3d-printen-in-heusden)
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Hoofdpagina: 3D printen in Laarne](/3d-printen-in-laarne)
 - [Hoofdpagina: 3D printen in Kalken](/3d-printen-in-kalken)
 - [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+
+
 
 ## Spotlight rond Destelbergen
 - Lokale KMO's en zelfstandigen: behuizingen en pasmallen voor teams in Destelbergen centrum.

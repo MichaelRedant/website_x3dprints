@@ -15,14 +15,14 @@ Need **3D printing in Mariakerke**? X3DPrints prints in Herzele and ships quickl
 
 ## Where we deliver around Mariakerke
 
-We frequently deliver to: Mariakerke.
+We frequently deliver to: Mariakerke, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Mariakerke
 
 - Prototypes and housings supporting teams in Mariakerke.
-- Small series with consistent settings for businesses near your region.
+- Small to large series with consistent settings for businesses near your region.
 - Replacement parts and brackets for workshops around Flanders.
 - Promo models, signage and props for events in and around Mariakerke.
 - Brackets, guards and fixtures tuned for teams in Mariakerke.
@@ -32,9 +32,9 @@ We frequently deliver to: Mariakerke.
 
 ## Spotlight: Mariakerke projects
 
-- Local SMEs in Mariakerke: tailored PETG/PLA parts for teams around Mariakerke.
-- Common ask: 3D print service mariakerke; we advise material and finishing for Mariakerke.
-- Delivery focus: Mariakerke.
+- Manufacturing and SMEs around Mariakerke: prototypes, fixtures and housings.
+- Common ask in Mariakerke: custom 3D printing with practical PLA/PETG/TPU advice for Mariakerke.
+- Delivery focus: Mariakerke, Pickup in Herzele.
 
 ---
 
@@ -57,8 +57,8 @@ We frequently deliver to: Mariakerke.
 ## Popular requests from Mariakerke
 
 - PLA or PETG functional parts for teams in Mariakerke.
-- TPU grips and pads for bikes, tools or fixtures around Mariakerke.
-- Paint-ready show models for presentations in Mariakerke and Mariakerke.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
+- Paint-ready show models for presentations in Mariakerke and the surrounding area.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Mariakerke.
 
 ## FAQ about 3D printing in Mariakerke
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -94,10 +94,7 @@ We frequently deliver to: Mariakerke.
 
 ## Quick links for Mariakerke teams
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Mariak
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Mariakerke
 
-- Coverage: Mariakerke; delivery from Herzele, pickup available.
+- Coverage: Mariakerke, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Mariakerke.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Local spotlight
-- Local teams in Mariakerke: PLA/PETG parts tuned for projects near Mariakerke.
-- Common request: 3D print service mariakerke; we pick material and finish for the use case.
-- Delivery focus: Mariakerke.
+- SMEs and makers in Mariakerke: fixtures and enclosures.
+- Common request: 3D printing service in Mariakerke; we pick material and finish for the use case.
+- Delivery focus: Mariakerke, Pickup in Herzele.
 
 ## Places we often deliver near Mariakerke
 - Mariakerke town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Mariak
 - Education/labs around Mariakerke: lesson-ready prints.
 
 ## Popular searches from Mariakerke
-- 3D print service mariakerke
-- rapid prototyping mariakerke
-- 3D printing bedrijf mariakerke
+- 3D printing service in Mariakerke
+- Custom 3D printing in Mariakerke
+- 3D model printing in Mariakerke
 <!-- LOCAL_ENRICH_END -->

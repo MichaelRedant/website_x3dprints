@@ -1,12 +1,12 @@
 # 3D printing in Smetlede: local, fast and tailored
 
-Need **3D printing in Smetlede**? X3DPrints prints in Herzele and ships quickly to Smetlede and nearby Smetlede centrum. Local 3D printing for Smetlede, Smetlede centrum and Lede, Oordegem, Impe: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Smetlede**? X3DPrints prints in Herzele and ships quickly to Smetlede and nearby Lede. Local 3D printing for Smetlede, Lede and Oordegem, Impe: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Smetlede teams choose us
 
-- Local delivery to Smetlede, Smetlede centrum and Lede, Oordegem, Impe; pickup in Herzele.
+- Local delivery to Smetlede, Lede and Oordegem, Impe; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Smetlede.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Smetlede**? X3DPrints prints in Herzele and ships quickly 
 
 ## Delivery focus for Smetlede
 
-We frequently deliver to: Smetlede, Smetlede centrum, Lede, Oordegem, Impe, Afhalen Herzele.
+We frequently deliver to: Smetlede, Smetlede city center, Lede, Oordegem, Impe, Pickup in Herzele.
 
 ---
 
 ## What teams near Smetlede ask us to make
 
 - Pilot runs for SMEs around Smetlede, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Smetlede centrum.
-- TPU dampers and grips for gear used in Lede.
+- Functional PETG parts for maintenance teams near Lede.
+- TPU dampers and grips for gear used in Oordegem.
 - Presentation models and mockups for pitches around Smetlede.
 - Brackets, guards and fixtures tuned for teams in Smetlede.
 - Demo pieces and props for events near Smetlede.
@@ -32,9 +32,9 @@ We frequently deliver to: Smetlede, Smetlede centrum, Lede, Oordegem, Impe, Afha
 
 ## What stands out in Smetlede
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Smetlede centrum.
-- Common ask: 3D print service Smetlede; we advise material and finishing for Lede.
-- Delivery focus: Smetlede, Smetlede centrum, Lede.
+- Makers and product teams in Smetlede: iterative prototyping and short-run production.
+- Common ask in Smetlede: custom 3D printing with practical PLA/PETG/TPU advice for Oordegem.
+- Delivery focus: Smetlede, Smetlede city center, Lede.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Smetlede, Smetlede centrum, Lede, Oordegem, Impe, Afha
 
 ## Sectors we back near Smetlede
 
-- Local projects in Smetlede: Lokale makers en ontwerpers
-- Local projects in Smetlede: Onderhoud en herstellingen
+- Makers and product teams in Smetlede: iterative prototyping and short-run production.
+- Maintenance and repair teams in Smetlede: durable replacement parts and brackets.
 - Education and labs around Smetlede: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Smetlede
 
-- Paint-ready show models for presentations in Smetlede and Smetlede centrum.
+- Paint-ready show models for presentations in Smetlede and Lede.
 - PLA or PETG functional parts for teams in Smetlede.
-- TPU grips and pads for bikes, tools or fixtures around Smetlede centrum.
+- TPU grips and pads for bikes, tools or fixtures around Lede.
 
 ---
 
@@ -97,7 +97,6 @@ We frequently deliver to: Smetlede, Smetlede centrum, Lede, Oordegem, Impe, Afha
 - [3D printing in Lede](/en/3d-printen-in-lede)
 - [3D printing in Oordegem](/en/3d-printen-in-oordegem)
 - [3D printing in Impe](/en/3d-printen-in-impe)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Smetle
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Smetlede
 
-- Coverage: Smetlede, Smetlede centrum, Lede, Oordegem, Impe, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Smetlede, Smetlede city center, Lede, Oordegem, Impe, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Smetlede.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +122,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Smetle
 - [Nearby: 3D printing in Impe](/en/3d-printen-in-impe)
 
 ## Customer spotlight
-- Lokale makers en ontwerpers: small batches with consistent settings near Smetlede centrum.
-- Common request: 3D print service Smetlede; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Smetlede and Smetlede centrum.
+- Makers and product teams in Smetlede: iterative prototyping and short-run production.
+- Common request: 3D printing service in Smetlede; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Lede and Oordegem.
 
 ## Where we drop off near Smetlede
 - Smetlede town center
@@ -133,12 +132,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Smetle
 - sports hall in Smetlede
 
 ## Sectors we back near Smetlede
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Onderhoud en herstellingen
+- Makers and product teams in Smetlede: iterative prototyping and short-run production.
+- Maintenance and repair teams in Smetlede: durable replacement parts and brackets.
 - Education/labs around Smetlede: reliable PLA/PETG parts.
 
 ## Common requests around Smetlede
-- 3D print service Smetlede
-- rapid prototyping Smetlede
-- 3D printing bedrijf Smetlede
+- 3D printing service in Smetlede
+- Custom 3D printing in Smetlede
+- 3D model printing in Smetlede
 <!-- LOCAL_ENRICH_END -->

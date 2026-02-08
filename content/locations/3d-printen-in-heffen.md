@@ -79,7 +79,13 @@ Upload je bestand via [contact](/contact) en noteer materiaal en deadline. We be
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Heffen
+- Centrum van Heffen
+- Lokale bedrijvenzone in Heffen
+- Sporthal in Heffen
+
 
 ## Lokale spotlight
 - Lokale teams in Heffen: PLA/PETG onderdelen afgestemd op projecten rond Heffen.

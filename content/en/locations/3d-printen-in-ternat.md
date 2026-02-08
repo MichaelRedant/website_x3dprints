@@ -15,7 +15,7 @@ Need **3D printing in Ternat**? X3DPrints prints in Herzele and ships quickly to
 
 ## Areas we serve near Ternat
 
-We frequently deliver to: Ternat.
+We frequently deliver to: Ternat, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Ternat.
 
 ## Local spotlight for Ternat
 
-- Local SMEs in Ternat: tailored PETG/PLA parts for teams around Ternat.
-- Common ask: 3D print service Ternat; we advise material and finishing for Ternat.
-- Delivery focus: Ternat.
+- Manufacturing and SMEs around Ternat: prototypes, fixtures and housings.
+- Common ask in Ternat: custom 3D printing with practical PLA/PETG/TPU advice for Ternat.
+- Delivery focus: Ternat, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Ternat.
 
 ## What clients near Ternat often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Ternat.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 - PLA or PETG functional parts for teams in Ternat.
-- Paint-ready show models for presentations in Ternat and Ternat.
+- Paint-ready show models for presentations in Ternat and the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Ternat.
 
 ## Related pages for Ternat
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Ternat
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Ternat
 
-- Coverage: Ternat; delivery from Herzele, pickup available.
+- Coverage: Ternat, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Ternat.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Spotlight near Ternat
-- Local teams in Ternat: fixtures and housings for teams around Ternat.
-- Frequent order: 3D print service Ternat; we keep settings for reorders.
-- Delivery focus: Ternat.
+- SMEs and makers in Ternat: fixtures and enclosures.
+- Frequent order: 3D printing service in Ternat; we keep settings for reorders.
+- Delivery focus: Ternat, Pickup in Herzele.
 
 ## Landmarks around Ternat
 - Ternat town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Ternat
 - Education/labs around Ternat: lesson-ready prints.
 
 ## Frequently asked in Ternat
-- 3D print service Ternat
-- rapid prototyping Ternat
-- 3D printing bedrijf Ternat
+- 3D printing service in Ternat
+- Custom 3D printing in Ternat
+- 3D model printing in Ternat
 <!-- LOCAL_ENRICH_END -->

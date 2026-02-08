@@ -61,7 +61,7 @@ export default function LocationsPageEn() {
   const letters = Object.keys(grouped).sort()
 
   const localOffers: SchemaOfferInput[] = [
-    { serviceName: "3D printing in Herzele", price: "EUR 5", description: "Fast prototyping and small batches." },
+    { serviceName: "3D printing in Herzele", price: "EUR 5", description: "Fast prototyping and small to large batches." },
     { serviceName: "3D printing in Ghent", price: "EUR 5", description: "PLA, PETG and TPU for creative teams." },
     { serviceName: "3D printing in Aalst", price: "EUR 0", description: "Free intake plus material suggestion call." },
   ]

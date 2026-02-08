@@ -67,3 +67,37 @@ Richtwaarde is +/-0,2 mm. Voeg kritieke maten toe; we stemmen oriëntatie en nab
 - Citadel en Provinciedomein Halve Maan
 - Schaffen en Webbekom
 - Kaggevinne en Demerzone
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Diest
+
+- Dekking: Diest, Diest centrum, Schaffen, Webbekom, Kaggevinne, Industriezones langs N29/E314; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Diest.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Spotlight rond Diest
+- KMO's en techniekers rond vliegbasis Schaffen: behuizingen en pasmallen voor teams in Diest centrum.
+- Terugkerende order: 3D print service Diest; we bewaren je instellingen.
+- Leverfocus: Diest, Diest centrum, Schaffen.
+
+## Landmarks in de buurt van Diest
+- Centrum van Diest
+- Lokale bedrijvenzone in Diest
+- Sporthal in Diest
+
+## Teams die we ondersteunen rond Diest
+- KMO's en techniekers rond vliegbasis Schaffen (Diest)
+- Events en toerisme bij citadel en Halve Maan (Diest)
+- Onderwijs en makers in de Demervallei (Diest)
+
+## Wat vaak wordt gevraagd in Diest
+- 3D print service Diest
+- rapid prototyping Diest
+- 3D printing bedrijf Diest
+<!-- LOCAL_ENRICH_END -->

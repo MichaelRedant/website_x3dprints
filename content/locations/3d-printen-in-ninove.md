@@ -19,7 +19,7 @@
 
 In Ninove combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -178,6 +178,12 @@ Wil je ervaren hoe **3D printen in Ninove** jouw project vooruithelpt? Vraag van
 
 ## Gerelateerde buurtpagina's
 - [Hoofdpagina: 3D printen in Aalst](/3d-printen-in-aalst)
+
+## Lokale punten in Ninove
+- Centrum van Ninove
+- Lokale bedrijvenzone in Ninove
+- Sporthal in Ninove
+
 
 ## Klantenspotlight
 - Lokale teams in Ninove: kleine reeksen met vaste settings rond Ninove.

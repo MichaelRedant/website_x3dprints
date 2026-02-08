@@ -1,12 +1,12 @@
 # 3D printing in Opdorp: local, fast and tailored
 
-Need **3D printing in Opdorp**? X3DPrints prints in Herzele and ships quickly to Opdorp and nearby Opdorp centrum. Local 3D printing for Opdorp, Opdorp centrum and Buggenhout, Afhalen Herzele: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Opdorp**? X3DPrints prints in Herzele and ships quickly to Opdorp and nearby Buggenhout. Local 3D printing for Opdorp and Buggenhout: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Opdorp teams choose us
 
-- Local delivery to Opdorp, Opdorp centrum and Buggenhout, Afhalen Herzele; pickup in Herzele.
+- Local delivery to Opdorp and Buggenhout; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Opdorp.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Opdorp**? X3DPrints prints in Herzele and ships quickly to
 
 ## Areas we serve near Opdorp
 
-We frequently deliver to: Opdorp, Opdorp centrum, Buggenhout, Afhalen Herzele.
+We frequently deliver to: Opdorp, Opdorp city center, Buggenhout, Pickup in Herzele.
 
 ---
 
 ## Projects we help deliver near Opdorp
 
 - Prototype housings and fixtures used by teams in Opdorp.
-- Short-run batches that stay consistent for companies near Opdorp centrum.
-- Replacement brackets and guards for workshops around Buggenhout.
+- Short-run batches that stay consistent for companies near Buggenhout.
+- Replacement brackets and guards for workshops around Flanders.
 - Display pieces and branded props for events near Opdorp.
 - Brackets, guards and fixtures tuned for teams in Opdorp.
 - Demo pieces and props for events near Opdorp.
@@ -32,9 +32,9 @@ We frequently deliver to: Opdorp, Opdorp centrum, Buggenhout, Afhalen Herzele.
 
 ## Local spotlight for Opdorp
 
-- Lokale ondernemers en makers: tailored PETG/PLA parts for teams around Opdorp centrum.
-- Common ask: 3D print service Opdorp; we advise material and finishing for Buggenhout.
-- Delivery focus: Opdorp, Opdorp centrum, Buggenhout.
+- SMEs and industry near Opdorp: fixtures, enclosures and small to large batches.
+- Common ask in Opdorp: custom 3D printing with practical PLA/PETG/TPU advice for Buggenhout.
+- Delivery focus: Opdorp, Opdorp city center, Buggenhout.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Opdorp, Opdorp centrum, Buggenhout, Afhalen Herzele.
 
 ## Who we support around Opdorp
 
-- Local projects in Opdorp: Lokale ondernemers en makers
-- Local projects in Opdorp: Onderhoud en herstellingen
-- Local projects in Opdorp: Verenigingen en scholen
+- SMEs and industry near Opdorp: fixtures, enclosures and small to large batches.
+- Maintenance and repair teams in Opdorp: durable replacement parts and brackets.
+- Education and labs around Opdorp: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## What clients near Opdorp often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Opdorp centrum.
+- TPU grips and pads for bikes, tools or fixtures around Buggenhout.
 - PLA or PETG functional parts for teams in Opdorp.
-- Paint-ready show models for presentations in Opdorp and Opdorp centrum.
+- Paint-ready show models for presentations in Opdorp and Buggenhout.
 
 ---
 
@@ -95,9 +95,6 @@ We frequently deliver to: Opdorp, Opdorp centrum, Buggenhout, Afhalen Herzele.
 ## Related pages for Opdorp
 
 - [3D printing in Buggenhout](/en/3d-printen-in-buggenhout)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +109,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Opdorp
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Opdorp
 
-- Coverage: Opdorp, Opdorp centrum, Buggenhout, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Opdorp, Opdorp city center, Buggenhout, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Opdorp.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -121,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Opdorp
 - [Nearby: 3D printing in Buggenhout](/en/3d-printen-in-buggenhout)
 
 ## Spotlight near Opdorp
-- Lokale ondernemers en makers: fixtures and housings for teams around Opdorp centrum.
-- Frequent order: 3D print service Opdorp; we keep settings for reorders.
-- Delivery focus: Opdorp, Opdorp centrum, Buggenhout.
+- SMEs/industry near Opdorp: prototypes, fixtures, housings.
+- Frequent order: 3D printing service in Opdorp; we keep settings for reorders.
+- Delivery focus: Opdorp, Opdorp city center, Buggenhout.
 
 ## Landmarks around Opdorp
 - Opdorp town center
@@ -131,12 +128,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Opdorp
 - sports hall in Opdorp
 
 ## Teams we support around Opdorp
-- Local focus: Lokale ondernemers en makers
-- Local focus: Onderhoud en herstellingen
-- Local focus: Verenigingen en scholen
+- SMEs/industry near Opdorp: prototypes, fixtures, housings.
+- Maintenance and repair teams in Opdorp: durable replacement parts and brackets.
+- Education/labs around Opdorp: reliable PLA/PETG parts.
 
 ## Frequently asked in Opdorp
-- 3D print service Opdorp
-- rapid prototyping Opdorp
-- 3D printing bedrijf Opdorp
+- 3D printing service in Opdorp
+- Custom 3D printing in Opdorp
+- 3D model printing in Opdorp
 <!-- LOCAL_ENRICH_END -->

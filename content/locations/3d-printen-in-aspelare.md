@@ -20,7 +20,7 @@
 In Aspelare helpen we projecten rond Aspelare sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Aspelare
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Aspelare** ook ABS, ASA, Nylon of PA-CF voor 
 ## Voor wie is 3D printen in Aspelare interessant?
 
 ### Lokale ondernemers
-Kleine bedrijven gebruiken **3D printen in Aspelare** om prototypes te maken en kleine series te produceren.
+Kleine bedrijven gebruiken **3D printen in Aspelare** om prototypes te maken en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve bewoners realiseren persoonlijke projecten via **3D printen in Aspelare**.
@@ -132,7 +132,13 @@ Benieuwd hoe **3D printen in Aspelare** jouw idee kan versterken? Vraag vandaag 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Aspelare
+- Centrum van Aspelare
+- Lokale bedrijvenzone in Aspelare
+- Sporthal in Aspelare
+
 
 ## Klantenspotlight
 - Lokale teams in Aspelare: kleine reeksen met vaste settings rond Aspelare.

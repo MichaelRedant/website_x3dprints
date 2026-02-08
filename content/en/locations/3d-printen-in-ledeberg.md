@@ -15,7 +15,7 @@ Need **3D printing in Ledeberg**? X3DPrints prints in Herzele and ships quickly 
 
 ## Delivery focus for Ledeberg
 
-We frequently deliver to: Ledeberg.
+We frequently deliver to: Ledeberg, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Ledeberg.
 
 ## What stands out in Ledeberg
 
-- Local SMEs in Ledeberg: tailored PETG/PLA parts for teams around Ledeberg.
-- Common ask: 3D print service ledeberg; we advise material and finishing for Ledeberg.
-- Delivery focus: Ledeberg.
+- Manufacturing and SMEs around Ledeberg: prototypes, fixtures and housings.
+- Common ask in Ledeberg: custom 3D printing with practical PLA/PETG/TPU advice for Ledeberg.
+- Delivery focus: Ledeberg, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Ledeberg.
 
 ## Recent requests around Ledeberg
 
-- Paint-ready show models for presentations in Ledeberg and Ledeberg.
+- Paint-ready show models for presentations in Ledeberg and the surrounding area.
 - PLA or PETG functional parts for teams in Ledeberg.
-- TPU grips and pads for bikes, tools or fixtures around Ledeberg.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Ledeberg.
 
 ## Useful links near Ledeberg
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +109,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Ledebe
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Ledeberg
 
-- Coverage: Ledeberg; delivery from Herzele, pickup available.
+- Coverage: Ledeberg, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Ledeberg.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -121,8 +118,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Ledebe
 - [Parent page: 3D printing in Gentbrugge](/en/3d-printen-in-gentbrugge)
 
 ## Customer spotlight
-- Local teams in Ledeberg: small batches with consistent settings near Ledeberg.
-- Common request: 3D print service ledeberg; we pick material and finish for the use case.
+- SMEs and makers in Ledeberg: fixtures and enclosures.
+- Common request: 3D printing service in Ledeberg; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Ledeberg and Ledeberg.
 
 ## Where we drop off near Ledeberg
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Ledebe
 - Education/labs around Ledeberg: lesson-ready prints.
 
 ## Common requests around Ledeberg
-- 3D print service ledeberg
-- rapid prototyping ledeberg
-- 3D printing bedrijf ledeberg
+- 3D printing service in Ledeberg
+- Custom 3D printing in Ledeberg
+- 3D model printing in Ledeberg
 <!-- LOCAL_ENRICH_END -->

@@ -17,9 +17,9 @@
 
 ## Lokale focus in Meerbeke
 
-Werk je in Meerbeke? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Meerbeke.
+Werk je in Meerbeke? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Meerbeke.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Meerbeke** ook ABS, ASA, Nylon of PA-CF voor 
 ## Voor wie is 3D printen in Meerbeke interessant?
 
 ### Lokale ondernemers
-Bedrijven gebruiken **3D printen in Meerbeke** om prototypes te testen en kleine series te produceren.
+Bedrijven gebruiken **3D printen in Meerbeke** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Hobbyisten en makers
 Creatieve inwoners realiseren persoonlijke projecten via **3D printen in Meerbeke**.
@@ -132,7 +132,13 @@ Wil je ervaren hoe **3D printen in Meerbeke** jouw project vooruithelpt? Vraag v
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Meerbeke
+- Centrum van Meerbeke
+- Lokale bedrijvenzone in Meerbeke
+- Sporthal in Meerbeke
+
 
 ## Klantenspotlight
 - Lokale teams in Meerbeke: kleine reeksen met vaste settings rond Meerbeke.

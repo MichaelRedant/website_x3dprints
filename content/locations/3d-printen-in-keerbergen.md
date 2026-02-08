@@ -32,7 +32,7 @@ Voor **3D printen in Keerbergen** leveren we prototypes, displays en tooling ric
 
 - Displays en props voor winkels en campagnes.
 - Fixtures en serviceparts voor installateurs.
-- Kleine series covers en cases voor IoT en elektronica.
+- Kleine en grotere series covers en cases voor IoT en elektronica.
 
 ---
 
@@ -61,3 +61,37 @@ Stuur je bestanden via [contact](/contact). Je krijgt snel een voorstel voor **3
 - Keerbergen centrum
 - Grootbroek
 - Haachtsesteenweg
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Keerbergen
+
+- Dekking: Keerbergen, Keerbergen centrum, Grootbroek, Golfzone Keerbergen, Haachtsesteenweg, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Keerbergen.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Klantenspotlight
+- Retail en events in Keerbergen: kleine reeksen met vaste settings rond Keerbergen centrum.
+- Vaak gevraagd: 3D print service Keerbergen; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Keerbergen en Keerbergen centrum.
+
+## Locaties die we bedienen nabij Keerbergen
+- Centrum van Keerbergen
+- Lokale bedrijvenzone in Keerbergen
+- Sporthal in Keerbergen
+
+## Sectorfocus nabij Keerbergen
+- Retail en events in Keerbergen
+- KMO's en installaties langs Haachtsesteenweg (Keerbergen)
+- Makers en onderwijs in de regio (Keerbergen)
+
+## Typische aanvragen rond Keerbergen
+- 3D print service Keerbergen
+- rapid prototyping Keerbergen
+- 3D printing bedrijf Keerbergen
+<!-- LOCAL_ENRICH_END -->

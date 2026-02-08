@@ -1,12 +1,12 @@
 # 3D printing in Gentbrugge: local, fast and tailored
 
-Need **3D printing in Gentbrugge**? X3DPrints prints in Herzele and ships quickly to Gentbrugge and nearby Gentbrugge centrum. Local 3D printing for Gentbrugge, Gentbrugge centrum and Ledeberg, Oostakker/Gentbrugge grens, Scheldekaai: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Gentbrugge**? X3DPrints prints in Herzele and ships quickly to Gentbrugge and nearby Ledeberg. Local 3D printing for Gentbrugge, Ledeberg and Scheldekaai: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Gentbrugge teams choose us
 
-- Local delivery to Gentbrugge, Gentbrugge centrum and Ledeberg, Oostakker/Gentbrugge grens, Scheldekaai; pickup in Herzele.
+- Local delivery to Gentbrugge, Ledeberg and Scheldekaai; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Gentbrugge.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Gentbrugge**? X3DPrints prints in Herzele and ships quickl
 
 ## Delivery focus for Gentbrugge
 
-We frequently deliver to: Gentbrugge, Gentbrugge centrum, Ledeberg, Oostakker/Gentbrugge grens, Scheldekaai, Afhalen Herzele.
+We frequently deliver to: Gentbrugge, Gentbrugge city center, Ledeberg, Oostakker/Gentbrugge border area, Scheldekaai, Pickup in Herzele.
 
 ---
 
 ## What teams near Gentbrugge ask us to make
 
 - Pilot runs for SMEs around Gentbrugge, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Gentbrugge centrum.
-- TPU dampers and grips for gear used in Ledeberg.
+- Functional PETG parts for maintenance teams near Ledeberg.
+- TPU dampers and grips for gear used in Scheldekaai.
 - Presentation models and mockups for pitches around Gentbrugge.
 - Brackets, guards and fixtures tuned for teams in Gentbrugge.
 - Demo pieces and props for events near Gentbrugge.
@@ -32,9 +32,9 @@ We frequently deliver to: Gentbrugge, Gentbrugge centrum, Ledeberg, Oostakker/Ge
 
 ## What stands out in Gentbrugge
 
-- Prototyping voor KMO's in Gentbrugge/Ledeberg: tailored PETG/PLA parts for teams around Gentbrugge centrum.
-- Common ask: 3D print service gentbrugge; we advise material and finishing for Ledeberg.
-- Delivery focus: Gentbrugge, Gentbrugge centrum, Ledeberg.
+- SMEs and industry near Gentbrugge: fixtures, enclosures and small to large batches.
+- Common ask in Gentbrugge: custom 3D printing with practical PLA/PETG/TPU advice for Scheldekaai.
+- Delivery focus: Gentbrugge, Gentbrugge city center, Ledeberg.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Gentbrugge, Gentbrugge centrum, Ledeberg, Oostakker/Ge
 
 ## Sectors we back near Gentbrugge
 
-- SMEs and industry near Gentbrugge: fixtures, enclosures and small batches.
+- SMEs and industry near Gentbrugge: fixtures, enclosures and small to large batches.
 - Retail/marketing/events in Gentbrugge: displays, props and branded pieces.
-- Local projects in Gentbrugge: Tooling voor bedrijven langs R4/Schelde
+- Local teams in Gentbrugge: custom 3D printing for prototypes and functional parts.
 
 ---
 
 ## Recent requests around Gentbrugge
 
-- Paint-ready show models for presentations in Gentbrugge and Gentbrugge centrum.
+- Paint-ready show models for presentations in Gentbrugge and Ledeberg.
 - PLA or PETG functional parts for teams in Gentbrugge.
-- TPU grips and pads for bikes, tools or fixtures around Gentbrugge centrum.
+- TPU grips and pads for bikes, tools or fixtures around Ledeberg.
 
 ---
 
@@ -95,9 +95,6 @@ We frequently deliver to: Gentbrugge, Gentbrugge centrum, Ledeberg, Oostakker/Ge
 ## Useful links near Gentbrugge
 
 - [3D printing in Ledeberg](/en/3d-printen-in-ledeberg)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +109,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Gentbr
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Gentbrugge
 
-- Coverage: Gentbrugge, Gentbrugge centrum, Ledeberg, Oostakker/Gentbrugge grens, Scheldekaai, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Gentbrugge, Gentbrugge city center, Ledeberg, Oostakker/Gentbrugge border area, Scheldekaai, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Gentbrugge.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -121,9 +118,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Gentbr
 - [Nearby: 3D printing in Ledeberg](/en/3d-printen-in-ledeberg)
 
 ## Customer spotlight
-- Prototyping voor KMO's in Gentbrugge/Ledeberg: small batches with consistent settings near Gentbrugge centrum.
-- Common request: 3D print service gentbrugge; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Gentbrugge and Gentbrugge centrum.
+- SMEs/industry near Gentbrugge: prototypes, fixtures, housings.
+- Common request: 3D printing service in Gentbrugge; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Ledeberg and Scheldekaai.
 
 ## Where we drop off near Gentbrugge
 - Gentbrugge town center
@@ -133,10 +130,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Gentbr
 ## Sectors we back near Gentbrugge
 - SMEs/industry near Gentbrugge: prototypes, fixtures, housings.
 - Retail/marketing/events in Gentbrugge: displays, signage, props.
-- Local focus: Tooling voor bedrijven langs R4/Schelde
+- Local teams in Gentbrugge: custom 3D printing for prototypes and functional parts.
 
 ## Common requests around Gentbrugge
-- 3D print service gentbrugge
-- rapid prototyping gentbrugge
-- 3D printing bedrijf gentbrugge
+- 3D printing service in Gentbrugge
+- Custom 3D printing in Gentbrugge
+- 3D model printing in Gentbrugge
 <!-- LOCAL_ENRICH_END -->

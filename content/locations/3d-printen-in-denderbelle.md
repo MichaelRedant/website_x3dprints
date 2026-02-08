@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Kleine series en onderdelen op maat met korte lead time.
+Kleine en grotere series en onderdelen op maat met korte lead time.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en betrouwbare planning.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 **Welke bestanden kan ik aanleveren voor Denderbelle?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Denderbelle?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Denderbelle?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Denderbelle?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -101,7 +101,6 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 - [3D printen in Lebbeke](/3d-printen-in-lebbeke)
 - [3D printen in Wieze](/3d-printen-in-wieze)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
-- [3D printen in Aalst](/3d-printen-in-aalst)
 ---
 
 ## Externe links
@@ -129,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Wieze](/3d-printen-in-wieze)
 - [Buurpagina: 3D printen in Dendermonde](/3d-printen-in-dendermonde)
 
+
+
 ## Lokale spotlight
 - Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Denderbelle centrum.
 - Vaak gevraagd: 3D print service Denderbelle; we adviseren materiaal en afwerking.
@@ -141,7 +142,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in Denderbelle
 - Lokale makers en techniekers (Denderbelle)
-- Kleine series en maatwerk (Denderbelle)
+- Kleine en grotere series en maatwerk (Denderbelle)
 - Verenigingen en scholen (Denderbelle)
 
 ## Veelgevraagde zoekopdrachten in Denderbelle

@@ -88,7 +88,7 @@ const NL_METADATA: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
-export const EN_METADATA: Metadata = {
+const EN_METADATA: Metadata = {
   title: "3D printing by segment | X3DPrints",
   description: "Landing pages for common 3D printing segments: prototypes, schools, model builders and engineers.",
   alternates: {
@@ -109,6 +109,9 @@ export const EN_METADATA: Metadata = {
   },
   twitter: { card: "summary_large_image" },
 }
+
+
+void EN_METADATA
 
 export const metadata: Metadata = NL_METADATA
 

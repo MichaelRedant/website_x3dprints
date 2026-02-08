@@ -1,6 +1,6 @@
 # 3D printen in Melle: maatwerk met snelle levering
 
-**3D printen in Melle** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en betrouwbare afwerking.
+**3D printen in Melle** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en betrouwbare afwerking.
 
 ---
 
@@ -23,11 +23,11 @@
 
 ## Lokale focus in Melle
 
-Werk je in Melle? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Melle.
+Werk je in Melle? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Melle.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Melle
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Scholen en verenigingen
 Projecten met heldere communicatie en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en verbeter zonder tijdverlies.
 - Prototypes en maatcontrole
 - Vervangstukken en herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,8 +94,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Melle?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Melle?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Melle?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Melle
 - [3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [Buurpagina: 3D printen in Wetteren](/3d-printen-in-wetteren)
 - [Hoofdpagina: 3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)
+
+
 
 ## Lokale spotlight
 - Lokale ondernemers en makers: PLA/PETG onderdelen afgestemd op projecten rond Melle centrum.

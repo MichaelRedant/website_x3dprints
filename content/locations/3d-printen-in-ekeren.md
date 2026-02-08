@@ -44,8 +44,8 @@ Dagelijkse verzending naar Ekeren. Spoedproject? Geef je deadline mee; we planne
 **Welke bestanden kan ik aanleveren voor Ekeren?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Ekeren?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Ekeren?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Ekeren?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -81,6 +81,12 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur
 
 ## Gerelateerde buurtpagina's
 - [Hoofdpagina: 3D printen in Berendrecht-Zandvliet-Lillo](/3d-printen-in-berendrecht-zandvliet-lillo)
+
+## Lokale punten in Ekeren
+- Centrum van Ekeren
+- Lokale bedrijvenzone in Ekeren
+- Sporthal in Ekeren
+
 
 ## Klantenspotlight
 - Haven/industrie tooling Ekeren: kleine reeksen met vaste settings rond Ekeren centrum.

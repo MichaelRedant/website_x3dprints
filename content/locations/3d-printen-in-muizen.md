@@ -1,6 +1,6 @@
 # 3D printen in Muizen: Planckendael en Dijlevallei
 
-Voor **3D printen in Muizen** leveren we prototypes en kleine series naar projecten rond ZOO Planckendael, de Dijlevallei en het dorpscentrum. Je krijgt nette prints met materiaaladvies dat past bij veldwerk, expo of maquette.
+Voor **3D printen in Muizen** leveren we prototypes en zowel kleine als grotere series naar projecten rond ZOO Planckendael, de Dijlevallei en het dorpscentrum. Je krijgt nette prints met materiaaladvies dat past bij veldwerk, expo of maquette.
 
 ---
 
@@ -22,7 +22,7 @@ Voor **3D printen in Muizen** leveren we prototypes en kleine series naar projec
 In Muizen helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
 
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 
 ## Materialen
@@ -80,6 +80,12 @@ Upload je bestand via [contact](/contact) en vermeld materiaal en deadline. Je k
 
 ## Gerelateerde buurtpagina's
 - [Hoofdpagina: 3D printen in Mechelen](/3d-printen-in-mechelen)
+
+## Lokale punten in Muizen
+- Centrum van Muizen
+- Lokale bedrijvenzone in Muizen
+- Sporthal in Muizen
+
 
 ## Klantenspotlight
 - Lokale teams in Muizen: kleine reeksen met vaste settings rond Muizen.

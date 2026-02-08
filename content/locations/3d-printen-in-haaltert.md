@@ -70,7 +70,7 @@ Onze **rapid prototyping service in Haaltert** stelt u in staat om uw ontwerpen 
 De gemeente Haaltert, met haar idyllische landschappen, sterke gemeenschapszin en strategische ligging nabij belangrijke invalswegen, is een vruchtbare bodem voor nieuwe ideeën. Met **3D printen in Haaltert** kunt u:
 
 -   Unieke, gepersonaliseerde items creëren die de identiteit van Haaltert vangen.
--   Snel prototypes en kleine series produceren voor lokale bedrijven en start-ups.
+-   Snel prototypes en zowel kleine als grotere series produceren voor lokale bedrijven en start-ups.
 -   Specifieke onderdelen laten maken die snel beschikbaar moeten zijn voor reparaties of projecten.
 -   Educatieve projecten ondersteunen met tastbare leermiddelen die inspireren en de jeugd betrekken bij technologie.
 
@@ -130,7 +130,13 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Haaltert
+- Centrum van Haaltert
+- Lokale bedrijvenzone in Haaltert
+- Sporthal in Haaltert
+
 
 ## Klantenspotlight
 - Lokale teams in Haaltert: kleine reeksen met vaste settings rond Haaltert.

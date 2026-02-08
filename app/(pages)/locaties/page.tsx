@@ -54,7 +54,7 @@ export default function Page() {
   const letters = Object.keys(grouped).sort()
 
   const localOffers: SchemaOfferInput[] = [
-    { serviceName: "3D printen in Herzele", price: "EUR 5", description: "Snel prototyping en kleine batches." },
+    { serviceName: "3D printen in Herzele", price: "EUR 5", description: "Snel prototyping en zowel kleine als grotere batches." },
     { serviceName: "3D printen in Gent", price: "EUR 5", description: "PLA, PETG en TPU voor creatieve teams." },
     { serviceName: "3D printen in Aalst", price: "EUR 0", description: "Gratis intake + material suggestion call." },
   ]

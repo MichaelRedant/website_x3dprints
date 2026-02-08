@@ -1,6 +1,6 @@
 # 3D printen in Lokeren: snelle prototypes met lokale service
 
-**3D printen in Lokeren** is ideaal voor prototypes, maatwerk en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Lokeren** is ideaal voor prototypes, maatwerk en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -26,7 +26,7 @@
 Voor Lokeren leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Sint-Laurentiuskerk (Lokeren) en Oud Postgebouw (Lokeren).
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Lokeren
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Kleine series en onderdelen op maat met korte lead time.
+Kleine en grotere series en onderdelen op maat met korte lead time.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en betrouwbare planning.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
 - [Hoofdpagina: 3D printen in Sinaai](/3d-printen-in-sinaai)
 
+
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Lokeren centrum.
 - Vaak gevraagd: 3D print service Lokeren; we adviseren materiaal en afwerking.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in Lokeren
 - Lokale makers en ontwerpers (Lokeren)
-- Kleine series en maatwerk (Lokeren)
+- Kleine en grotere series en maatwerk (Lokeren)
 - Verenigingen en onderwijs (Lokeren)
 
 ## Veelgevraagde zoekopdrachten in Lokeren

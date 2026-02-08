@@ -35,7 +35,7 @@ We kennen de mix van voeding, logistiek en maakbedrijven rond Tiense Suiker. Daa
 
 - Spares en passtukken voor voedings- en verpakkingslijnen.
 - Displays en signage voor retail in Tienen centrum.
-- Engineering-mockups en kleine series voor makers in het Hageland.
+- Engineering-mockups en zowel kleine als grotere series voor makers in het Hageland.
 
 ---
 
@@ -67,3 +67,37 @@ Ja. Voeg kritieke maten en belasting toe, dan stemmen we materiaal en infill dir
 - Grijpen industriezone
 - Suikerfabrieksite Tienen
 - Tienen centrum en N3-corridor
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Tienen
+
+- Dekking: Tienen, Tienen centrum, Grijpen industriezone, Oplinter, Hakendover, Suikerfabrieksite en N3-corridor; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Tienen.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Klantenspotlight
+- Voedings- en procesindustrie rond Tiense Suiker: kleine reeksen met vaste settings rond Tienen centrum.
+- Vaak gevraagd: 3D print service Tienen; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Tienen en Tienen centrum.
+
+## Locaties die we bedienen nabij Tienen
+- Centrum van Tienen
+- Lokale bedrijvenzone in Tienen
+- Sporthal in Tienen
+
+## Sectorfocus nabij Tienen
+- Voedings- en procesindustrie rond Tiense Suiker (Tienen)
+- Makers en KMO's in het Hageland (Tienen)
+- Events en retail in Tienen centrum
+
+## Typische aanvragen rond Tienen
+- 3D print service Tienen
+- rapid prototyping Tienen
+- 3D printing bedrijf Tienen
+<!-- LOCAL_ENRICH_END -->

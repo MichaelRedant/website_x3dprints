@@ -17,7 +17,7 @@
 
 ## Lokale focus in Sint-Maria-Oudenhove
 
-Werk je in Sint-Maria-Oudenhove? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Sint-Maria-Oudenhove.
+Werk je in Sint-Maria-Oudenhove? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Maria-Oudenhove.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Pasmallen en sjablonen voor montage en assemblage.
@@ -96,8 +96,8 @@ Het dorp ligt rond het Sint-Hubertusplein en het recente Wantenplein, een verwij
 **Welke bestanden kan ik aanleveren voor Sint-Maria-Oudenhove?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Sint-Maria-Oudenhove?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Sint-Maria-Oudenhove?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Sint-Maria-Oudenhove?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -134,7 +134,13 @@ Start met **3D printen in Sint-Maria-Oudenhove** en vraag een **gratis offerte**
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Sint-Maria-Oudenhove
+- Centrum van Sint-Maria-Oudenhove
+- Lokale bedrijvenzone in Sint-Maria-Oudenhove
+- Sporthal in Sint-Maria-Oudenhove
+
 
 ## Spotlight rond Sint-Maria-Oudenhove
 - Lokale teams in Sint-Maria-Oudenhove: behuizingen en pasmallen voor teams in Sint-Maria-Oudenhove.

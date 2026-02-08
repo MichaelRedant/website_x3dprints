@@ -1,12 +1,12 @@
 # 3D printing in Lochristi: local, fast and tailored
 
-Need **3D printing in Lochristi**? X3DPrints prints in Herzele and ships quickly to Lochristi and nearby Lochristi centrum. Local 3D printing for Lochristi, Lochristi centrum and Beervelde, Zaffelare, Zeveneken: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Lochristi**? X3DPrints prints in Herzele and ships quickly to Lochristi and nearby Beervelde. Local 3D printing for Lochristi, Beervelde and Zaffelare, Zeveneken: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Lochristi teams choose us
 
-- Local delivery to Lochristi, Lochristi centrum and Beervelde, Zaffelare, Zeveneken; pickup in Herzele.
+- Local delivery to Lochristi, Beervelde and Zaffelare, Zeveneken; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Lochristi.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Lochristi**? X3DPrints prints in Herzele and ships quickly
 
 ## Delivery focus for Lochristi
 
-We frequently deliver to: Lochristi, Lochristi centrum, Beervelde, Zaffelare, Zeveneken, Wachtebeke, Afhalen Herzele.
+We frequently deliver to: Lochristi, Lochristi city center, Beervelde, Zaffelare, Zeveneken, Wachtebeke, Pickup in Herzele.
 
 ---
 
 ## What teams near Lochristi ask us to make
 
 - Pilot runs for SMEs around Lochristi, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Lochristi centrum.
-- TPU dampers and grips for gear used in Beervelde.
+- Functional PETG parts for maintenance teams near Beervelde.
+- TPU dampers and grips for gear used in Zaffelare.
 - Presentation models and mockups for pitches around Lochristi.
 - Brackets, guards and fixtures tuned for teams in Lochristi.
 - Demo pieces and props for events near Lochristi.
@@ -32,9 +32,9 @@ We frequently deliver to: Lochristi, Lochristi centrum, Beervelde, Zaffelare, Ze
 
 ## What stands out in Lochristi
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Lochristi centrum.
-- Common ask: 3D print service Lochristi; we advise material and finishing for Beervelde.
-- Delivery focus: Lochristi, Lochristi centrum, Beervelde.
+- Makers and product teams in Lochristi: iterative prototyping and short-run production.
+- Common ask in Lochristi: custom 3D printing with practical PLA/PETG/TPU advice for Zaffelare.
+- Delivery focus: Lochristi, Lochristi city center, Beervelde.
 
 ---
 
@@ -48,17 +48,16 @@ We frequently deliver to: Lochristi, Lochristi centrum, Beervelde, Zaffelare, Ze
 
 ## Sectors we back near Lochristi
 
-- Local projects in Lochristi: Lokale makers en ontwerpers
-- Local projects in Lochristi: Kleine series en maatwerk
+- Makers and product teams in Lochristi: iterative prototyping and short-run production.
 - Education and labs around Lochristi: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Lochristi
 
-- Paint-ready show models for presentations in Lochristi and Lochristi centrum.
+- Paint-ready show models for presentations in Lochristi and Beervelde.
 - PLA or PETG functional parts for teams in Lochristi.
-- TPU grips and pads for bikes, tools or fixtures around Lochristi centrum.
+- TPU grips and pads for bikes, tools or fixtures around Beervelde.
 
 ---
 
@@ -97,7 +96,7 @@ We frequently deliver to: Lochristi, Lochristi centrum, Beervelde, Zaffelare, Ze
 - [3D printing in Beervelde](/en/3d-printen-in-beervelde)
 - [3D printing in Zaffelare](/en/3d-printen-in-zaffelare)
 - [3D printing in Zeveneken](/en/3d-printen-in-zeveneken)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [3D printing in Wachtebeke](/en/3d-printen-in-wachtebeke)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Lochri
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Lochristi
 
-- Coverage: Lochristi, Lochristi centrum, Beervelde, Zaffelare, Zeveneken, Wachtebeke; delivery from Herzele, pickup available.
+- Coverage: Lochristi, Lochristi city center, Beervelde, Zaffelare, Zeveneken, Wachtebeke; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Lochristi.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +123,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Lochri
 - [Nearby: 3D printing in Wachtebeke](/en/3d-printen-in-wachtebeke)
 
 ## Customer spotlight
-- Lokale makers en ontwerpers: small batches with consistent settings near Lochristi centrum.
-- Common request: 3D print service Lochristi; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Lochristi and Lochristi centrum.
+- Makers and product teams in Lochristi: iterative prototyping and short-run production.
+- Common request: 3D printing service in Lochristi; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Beervelde and Zaffelare.
 
 ## Where we drop off near Lochristi
 - Lochristi town center
@@ -134,12 +133,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Lochri
 - sports hall in Lochristi
 
 ## Sectors we back near Lochristi
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in Lochristi: iterative prototyping and short-run production.
 - Education/labs around Lochristi: reliable PLA/PETG parts.
 
 ## Common requests around Lochristi
-- 3D print service Lochristi
-- rapid prototyping Lochristi
-- 3D printing bedrijf Lochristi
+- 3D printing service in Lochristi
+- Custom 3D printing in Lochristi
+- 3D model printing in Lochristi
 <!-- LOCAL_ENRICH_END -->

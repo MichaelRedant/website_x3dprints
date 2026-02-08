@@ -25,7 +25,7 @@
 In Oosteeklo combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Oosteeklo
@@ -49,7 +49,7 @@ Maatwerk onderdelen, hulpstukken en prototypes.
 Snelle iteraties en creatieve toepassingen.
 
 ### Scholen en verenigingen
-Educatieve modellen en kleine series.
+Educatieve modellen en zowel kleine als grotere series.
 
 ---
 
@@ -81,7 +81,7 @@ Snel een testmodel betekent sneller beslissen en minder risico.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -124,6 +124,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Assenede](/3d-printen-in-assenede)
 - [Buurpagina: 3D printen in Bassevelde](/3d-printen-in-bassevelde)
 - [Buurpagina: 3D printen in Boekhoute](/3d-printen-in-boekhoute)
+
+
 
 ## Spotlight rond Oosteeklo
 - Lokale ondernemers en techniekers: behuizingen en pasmallen voor teams in Oosteeklo centrum.

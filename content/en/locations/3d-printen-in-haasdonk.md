@@ -1,12 +1,12 @@
 # 3D printing in Haasdonk: local, fast and tailored
 
-Need **3D printing in Haasdonk**? X3DPrints prints in Herzele and ships quickly to Haasdonk and nearby Haasdonk centrum. Local 3D printing for Haasdonk, Haasdonk centrum and Beveren, Melsele, Kallo: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Haasdonk**? X3DPrints prints in Herzele and ships quickly to Haasdonk and nearby Beveren. Local 3D printing for Haasdonk, Beveren and Melsele, Kallo: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Haasdonk teams choose us
 
-- Local delivery to Haasdonk, Haasdonk centrum and Beveren, Melsele, Kallo; pickup in Herzele.
+- Local delivery to Haasdonk, Beveren and Melsele, Kallo; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Haasdonk.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Haasdonk**? X3DPrints prints in Herzele and ships quickly 
 
 ## Delivery focus for Haasdonk
 
-We frequently deliver to: Haasdonk, Haasdonk centrum, Beveren, Melsele, Kallo, Afhalen Herzele.
+We frequently deliver to: Haasdonk, Haasdonk city center, Beveren, Melsele, Kallo, Pickup in Herzele.
 
 ---
 
 ## What teams near Haasdonk ask us to make
 
 - Pilot runs for SMEs around Haasdonk, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Haasdonk centrum.
-- TPU dampers and grips for gear used in Beveren.
+- Functional PETG parts for maintenance teams near Beveren.
+- TPU dampers and grips for gear used in Melsele.
 - Presentation models and mockups for pitches around Haasdonk.
 - Brackets, guards and fixtures tuned for teams in Haasdonk.
 - Demo pieces and props for events near Haasdonk.
@@ -32,9 +32,9 @@ We frequently deliver to: Haasdonk, Haasdonk centrum, Beveren, Melsele, Kallo, A
 
 ## What stands out in Haasdonk
 
-- Lokale KMO's en techniekers: tailored PETG/PLA parts for teams around Haasdonk centrum.
-- Common ask: 3D print service Haasdonk; we advise material and finishing for Beveren.
-- Delivery focus: Haasdonk, Haasdonk centrum, Beveren.
+- SMEs and industry near Haasdonk: fixtures, enclosures and small to large batches.
+- Common ask in Haasdonk: custom 3D printing with practical PLA/PETG/TPU advice for Melsele.
+- Delivery focus: Haasdonk, Haasdonk city center, Beveren.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Haasdonk, Haasdonk centrum, Beveren, Melsele, Kallo, A
 
 ## Sectors we back near Haasdonk
 
-- SMEs and industry near Haasdonk: fixtures, enclosures and small batches.
-- Local projects in Haasdonk: Onderhoud en herstellingen
+- SMEs and industry near Haasdonk: fixtures, enclosures and small to large batches.
+- Maintenance and repair teams in Haasdonk: durable replacement parts and brackets.
 - Retail/marketing/events in Haasdonk: displays, props and branded pieces.
 
 ---
 
 ## Recent requests around Haasdonk
 
-- Paint-ready show models for presentations in Haasdonk and Haasdonk centrum.
+- Paint-ready show models for presentations in Haasdonk and Beveren.
 - PLA or PETG functional parts for teams in Haasdonk.
-- TPU grips and pads for bikes, tools or fixtures around Haasdonk centrum.
+- TPU grips and pads for bikes, tools or fixtures around Beveren.
 
 ---
 
@@ -97,7 +97,6 @@ We frequently deliver to: Haasdonk, Haasdonk centrum, Beveren, Melsele, Kallo, A
 - [3D printing in Beveren](/en/3d-printen-in-beveren)
 - [3D printing in Melsele](/en/3d-printen-in-melsele)
 - [3D printing in Kallo](/en/3d-printen-in-kallo)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Haasdo
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Haasdonk
 
-- Coverage: Haasdonk, Haasdonk centrum, Beveren, Melsele, Kallo, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Haasdonk, Haasdonk city center, Beveren, Melsele, Kallo, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Haasdonk.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +123,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Haasdo
 - [Parent page: 3D printing in Beveren-Kruibeke-Zwijndrecht](/en/3d-printen-in-beveren-kruibeke-zwijndrecht)
 
 ## Customer spotlight
-- Lokale KMO's en techniekers: small batches with consistent settings near Haasdonk centrum.
-- Common request: 3D print service Haasdonk; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Haasdonk and Haasdonk centrum.
+- SMEs/industry near Haasdonk: prototypes, fixtures, housings.
+- Common request: 3D printing service in Haasdonk; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Beveren and Melsele.
 
 ## Where we drop off near Haasdonk
 - Haasdonk town center
@@ -135,11 +134,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Haasdo
 
 ## Sectors we back near Haasdonk
 - SMEs/industry near Haasdonk: prototypes, fixtures, housings.
-- Local focus: Onderhoud en herstellingen
+- Maintenance and repair teams in Haasdonk: durable replacement parts and brackets.
 - Retail/marketing/events in Haasdonk: displays, signage, props.
 
 ## Common requests around Haasdonk
-- 3D print service Haasdonk
-- rapid prototyping Haasdonk
-- 3D printing bedrijf Haasdonk
+- 3D printing service in Haasdonk
+- Custom 3D printing in Haasdonk
+- 3D model printing in Haasdonk
 <!-- LOCAL_ENRICH_END -->

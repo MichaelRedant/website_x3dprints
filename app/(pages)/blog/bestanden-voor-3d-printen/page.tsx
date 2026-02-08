@@ -19,7 +19,7 @@ const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=bestan
 export const metadata: Metadata = {
   title: "Welke bestanden heb je nodig voor 3D printen? | X3DPrints",
   description:
-    "STL, STEP of native CAD? Deze gids toont welke bestandsformaten en checks nodig zijn voor snelle verwerking en offerte.",
+    "STL, STEP of native CAD? Deze gids toont hoe 3d stl, 3d modellen om te printen en 3d model printen workflows sneller verwerkbaar worden.",
   alternates: {
     canonical,
     languages: {
@@ -119,7 +119,7 @@ const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "Welke bestanden heb je nodig voor 3D printen?",
   description:
-    "Gids voor STL, STEP en bestandscheck zodat je aanvraag sneller naar productie gaat.",
+    "Gids voor 3d stl, STEP en bestandscheck zodat je aanvraag sneller naar productie en 3d model printen gaat.",
   datePublished,
   dateModified,
   image: "/Logo.webp",
@@ -188,7 +188,7 @@ export default function FilesArticlePage() {
             Welke bestanden heb je nodig voor 3D printen?
           </h1>
           <p className="max-w-3xl text-lg text-slate-700">
-            Een goede bestandsaanlevering voorkomt vertraging. Met de juiste export en context start je project veel sneller.
+            Een goede bestandsaanlevering voorkomt vertraging. Met de juiste export en context start je project veel sneller, zeker wanneer je met 3d stl of andere 3d modellen om te printen werkt.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
             Laatst bijgewerkt: 7 februari 2026

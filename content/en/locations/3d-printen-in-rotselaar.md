@@ -1,63 +1,139 @@
-# 3D printing in Rotselaar: Hageland and E314
+# 3D printing in Rotselaar: local, fast and tailored
 
-For **3D printing in Rotselaar** we deliver prototypes, displays and tooling toward Wezemaal, Werchter and the E314 corridor. Fast quotes, transparent pricing and hassle-free deliveries.
-
----
-
-## Why X3DPrints for Rotselaar?
-
-- Quote within one working day with realistic lead time.
-- PLA Matte, PETG and TPU for visuals and strong parts.
-- EV delivery toward Rotselaar/Wezemaal; pickup in Herzele available.
+Need **3D printing in Rotselaar**? X3DPrints prints in Herzele and ships quickly to Rotselaar and nearby Wezemaal. Local 3D printing for Rotselaar, Wezemaal and Werchter, E314-corridor: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
-## Local focus in Rotselaar
+## Why Rotselaar teams choose us
 
-- Event props and signage for Werchter and the town center.
-- Jigs, clamps and fit parts for SMEs along the E314.
-- Housings and mounts for makers and education in the Hageland.
-
-## Materials
-
-| Material      | Benefit                        | Ideal for |
-| :------------ | :----------------------------- | :-------- |
-| **PLA Matte** | Clean detail, many colours     | Showpieces and models |
-| **PETG**      | Strong and heat-resistant      | Functional parts and tooling |
-| **TPU**       | Flexible and shock absorbing   | Cable management, bumpers and grips |
+- Local delivery to Rotselaar, Wezemaal and Werchter, E314-corridor; pickup in Herzele.
+- Fast quotes: response in one business day with clear pricing.
+- Accurate fits for enclosures, jigs and assemblies used in Rotselaar.
+- Optional finishing (sanding/priming/paint) for customer-facing parts.
 
 ---
 
-## Use cases in Rotselaar
+## Where we deliver around Rotselaar
 
-- Props and stands for events around Werchter.
-- Fixtures and service parts for production and maintenance.
-- Small cover series for electronics and sensors.
+We frequently deliver to: Rotselaar, Rotselaar city center, Wezemaal, Werchter, E314-corridor, Pickup in Herzele.
 
 ---
 
-## Practical
+## Where our 3D prints are used around Rotselaar
 
-- Upload STL/STEP via [contact](/en/contact) with quantities and finish.
-- Delivery via E314; pickup in Herzele possible.
-- Optional sanding/priming for smooth visuals.
+- Prototypes and housings supporting teams in Rotselaar.
+- Small to large series with consistent settings for businesses near Wezemaal.
+- Replacement parts and brackets for workshops around Werchter.
+- Promo models, signage and props for events in and around Rotselaar.
+- Brackets, guards and fixtures tuned for teams in Rotselaar.
+- Demo pieces and props for events near Rotselaar.
 
 ---
 
-## Request a quote
+## Spotlight: Rotselaar projects
 
-Send your files via [contact](/en/contact). You’ll get a quick plan for **3D printing in Rotselaar**.
+- Retail/marketing/events in Rotselaar: displays, props and branded pieces.
+- Common ask in Rotselaar: custom 3D printing with practical PLA/PETG/TPU advice for Werchter.
+- Delivery focus: Rotselaar, Rotselaar city center, Wezemaal.
+
+---
+
+## Typical drop-off points near Rotselaar
+
+- Rotselaar town center
+- local business park in Rotselaar
+- sports hall in Rotselaar
+
+---
+
+## Teams we often help near Rotselaar
+
+- Retail/marketing/events in Rotselaar: displays, props and branded pieces.
+- SMEs and industry near Rotselaar: fixtures, enclosures and small to large batches.
+- Education and labs around Rotselaar: lesson-ready prints in PLA/PETG.
+
+---
+
+## Popular requests from Rotselaar
+
+- PLA or PETG functional parts for teams in Rotselaar.
+- TPU grips and pads for bikes, tools or fixtures around Wezemaal.
+- Paint-ready show models for presentations in Rotselaar and Wezemaal.
+
+---
+
+## Recommended materials for Rotselaar
+
+| Material       | Key trait                 | Ideal for                                             |
+| :------------- | :------------------------ | :---------------------------------------------------- |
+| **PLA Matte**  | Clean, detailed finish    | Models, decor, mockups for Rotselaar presentations       |
+| **PETG**       | Tough, heat resistant     | Functional parts, brackets, light outdoor use near Rotselaar |
+| **TPU**        | Flexible, shock absorbing | Grips, pads, bumpers for bikes or tools in Rotselaar     |
+
+---
+
+## How to order
+
+1. Upload STL/STEP via [contact](/en/contact).
+2. Note material (PLA/PETG/TPU), colour and quantity.
+3. Receive quote + timing within one business day.
+
+**Lead time:** usually a few working days; rush possible. Shipping to Rotselaar or pickup in Herzele.
+
+---
 
 ## FAQ about 3D printing in Rotselaar
 
-**Lead time?** A few working days; rush possible.
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
+**Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
+**File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
+**Materials?** PLA Matte for visuals, PETG for strength and temp resistance, TPU for flex. ABS/ASA/nylon on request.
 
-**Material for outdoor props?** PETG for robust use; PLA for indoor visuals; TPU for flexible parts.
+---
 
-**Repeat batches?** Yes, using the same slicer settings.
+## Quick links for Rotselaar teams
 
-## Local points
+- [Local 3D printing overview](/en/locaties)
+- [3D printing pillar](/en/3d-printen)
+- [Materials and advice](/en/materials#material-suggestion-tool)
+- [Pricing examples](/en/pricing)
+- [Request a quote](/en/contact)
 
-- Wezemaal
-- Werchter
-- E314 corridor
+---
+
+## Request your quote for Rotselaar
+
+Send your files today and get a clear, fast proposal for **3D printing in Rotselaar**. Nearby production, personal support and reliable quality.
+
+<!-- LOCAL_ENRICH_START -->
+## Local highlights for Rotselaar
+
+- Coverage: Rotselaar, Rotselaar city center, Wezemaal, Werchter, E314-corridor, Pickup in Herzele; delivery from Herzele, pickup available.
+- Frequent jobs: prototypes, housings and brackets tailored for teams in Rotselaar.
+- File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
+- Turnaround: usually a few working days; rush possible on request.
+
+## Neighbouring pages
+- [Local 3D printing overview](/en/locaties)
+
+## Local spotlight
+- Retail/marketing/events in Rotselaar: displays, signage, props.
+- Common request: 3D printing service in Rotselaar; we pick material and finish for the use case.
+- Delivery focus: Rotselaar, Rotselaar city center, Wezemaal.
+
+## Places we often deliver near Rotselaar
+- Rotselaar town center
+- local business park in Rotselaar
+- sports hall in Rotselaar
+
+## Industries we serve near Rotselaar
+- Retail/marketing/events in Rotselaar: displays, signage, props.
+- SMEs/industry near Rotselaar: prototypes, fixtures, housings.
+- Education/labs around Rotselaar: reliable PLA/PETG parts.
+
+## Popular searches from Rotselaar
+- 3D printing service in Rotselaar
+- Custom 3D printing in Rotselaar
+- 3D model printing in Rotselaar
+<!-- LOCAL_ENRICH_END -->

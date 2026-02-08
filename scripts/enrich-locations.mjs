@@ -47,6 +47,62 @@ function unique(list) {
   return out
 }
 
+function containsAny(text, patterns) {
+  return patterns.some((pattern) => text.includes(pattern))
+}
+
+function normalizeAreaForEn(area) {
+  const raw = `${area}`.trim()
+  if (!raw) return ""
+  if (/^afhalen\b/i.test(raw)) return "Pickup in Herzele"
+
+  return raw
+    .replace(/\bindustriezone\b/gi, "industrial zone")
+    .replace(/\bdeelgemeenten\b/gi, "sub-municipal areas")
+    .replace(/\bbuitengebied\b/gi, "outer area")
+    .replace(/\bhoeves\b/gi, "farms")
+    .replace(/\bbedrijventerrein\b/gi, "business park")
+    .replace(/\bbedrijvenpark\b/gi, "business park")
+    .replace(/\bbedrijvenzone\b/gi, "business zone")
+    .replace(/\bcentrum\b/gi, "city center")
+    .replace(/\bdorpskern\b/gi, "village center")
+    .replace(/\bkern\b/gi, "center")
+    .replace(/\s+en\s+/gi, " and ")
+    .replace(/\bomliggende\b/gi, "surrounding")
+    .replace(/\brand\b/gi, "area")
+    .replace(/\bgrens\b/gi, "border area")
+    .replace(/\brichting\b/gi, "towards")
+    .replace(/\s{2,}/g, " ")
+    .trim()
+}
+
+function isGenericCoverageLabel(area, city) {
+  const text = `${area}`.trim().toLowerCase()
+  if (!text) return true
+  if (text === city.toLowerCase()) return true
+  if (text === "pickup in herzele") return true
+  if (text.includes("city center") || text.includes("village center")) return true
+  if (text.includes("industrial zone") || text.includes("business zone")) return true
+  if (text.includes("sub-municipal") || text.includes("outer area")) return true
+  if (text.includes("region") || text.includes("area")) return true
+  return false
+}
+
+function buildCoverageAreasEn(loc) {
+  const areas = coverageList(loc).map((area) => normalizeAreaForEn(area)).filter(Boolean)
+  const uniqueAreas = unique(areas)
+  if (!uniqueAreas.some((a) => a.toLowerCase() === "pickup in herzele")) uniqueAreas.push("Pickup in Herzele")
+  return uniqueAreas
+}
+
+function buildSearchPhrasesEn(city) {
+  return [
+    `3D printing service in ${city}`,
+    `Custom 3D printing in ${city}`,
+    `3D model printing in ${city}`,
+  ]
+}
+
 function coverageList(loc) {
   const city = loc.city || ""
   const areas = Array.isArray(loc.servicedAreas) ? loc.servicedAreas : []
@@ -112,16 +168,20 @@ function mapSectorsEn(sectors, city) {
   const mapped = []
   for (const sRaw of sectors) {
     const s = `${sRaw}`.toLowerCase()
-    if (s.includes("kmo") || s.includes("industrie") || s.includes("maak")) {
+    if (containsAny(s, ["kmo", "industrie", "maakbedrijf", "ondernem", "zelfstandig", "techniek", "installateur"])) {
       mapped.push(`SMEs/industry near ${city}: prototypes, fixtures, housings.`)
-    } else if (s.includes("marketing") || s.includes("retail") || s.includes("event") || s.includes("evenement")) {
+    } else if (containsAny(s, ["marketing", "retail", "event", "evenement", "horeca", "cultuur"])) {
       mapped.push(`Retail/marketing/events in ${city}: displays, signage, props.`)
-    } else if (s.includes("school") || s.includes("onderwijs") || s.includes("lab") || s.includes("stem")) {
+    } else if (containsAny(s, ["school", "onderwijs", "lab", "stem", "vereniging"])) {
       mapped.push(`Education/labs around ${city}: reliable PLA/PETG parts.`)
-    } else if (s.includes("landbouw") || s.includes("agro")) {
+    } else if (containsAny(s, ["landbouw", "agro", "bosbeheer", "polder"])) {
       mapped.push(`Agri/landscape projects near ${city}: PETG guards and brackets.`)
+    } else if (containsAny(s, ["maker", "ontwerp", "creatief", "maatwerk", "kleine series", "hobby"])) {
+      mapped.push(`Makers and product teams in ${city}: iterative prototyping and short-run production.`)
+    } else if (containsAny(s, ["herstelling", "repar", "onderhoud"])) {
+      mapped.push(`Maintenance and repair teams in ${city}: durable replacement parts and brackets.`)
     } else {
-      mapped.push(`Local focus: ${sRaw}`)
+      mapped.push(`Local teams in ${city}: custom 3D printing for prototypes and functional parts.`)
     }
   }
   return unique(mapped).slice(0, 4)
@@ -167,20 +227,19 @@ function hashSlug(slug) {
 
 function buildSpotlightEn(loc, areas) {
   const city = loc.city
-  const area = areas[1] || areas[0] || city
-  const sector = Array.isArray(loc.sectors) && loc.sectors.length > 0 ? loc.sectors[0] : `Local teams in ${city}`
-  const phrase = Array.isArray(loc.relatedPhrases) && loc.relatedPhrases.length > 0 ? loc.relatedPhrases[0] : `3D printing in ${city}`
+  const sector = mapSectorsEn(loc.sectors, city)[0] ?? `SMEs and makers in ${city}: prototypes and short runs.`
+  const phrase = `3D printing service in ${city}`
   const variant = hashSlug(loc.slug) % 3
   const lines = [
-    `- ${sector}: PLA/PETG parts tuned for projects near ${area}.`,
+    `- ${sector}`,
     `- Common request: ${phrase}; we pick material and finish for the use case.`,
     `- Delivery focus: ${areas.slice(0, 3).join(", ") || city}.`,
   ]
   if (variant === 1) {
-    lines[0] = `- ${sector}: fixtures and housings for teams around ${area}.`
+    lines[0] = `- ${sector}`
     lines[1] = `- Frequent order: ${phrase}; we keep settings for reorders.`
   } else if (variant === 2) {
-    lines[0] = `- ${sector}: small batches with consistent settings near ${area}.`
+    lines[0] = `- ${sector}`
     lines[2] = `- Pickup in Herzele; shipping to ${areas[0] || city} and ${areas[1] || city}.`
   }
   return lines
@@ -222,9 +281,22 @@ function insertBlock(filePath, block) {
   fs.writeFileSync(filePath, content, "utf8")
 }
 
+function stripManagedBlock(content) {
+  if (!content.includes(START) || !content.includes(END)) return content
+  const regex = new RegExp(`${START}[\\s\\S]*?${END}`, "g")
+  return content.replace(regex, "").trim()
+}
+
+function hasExplicitNlLocalPointsHeading(content) {
+  return /^##\s+Lokale punten\b/im.test(content)
+}
+
 function buildEnBlock(loc, slugMap) {
   const city = loc.city
-  const areas = coverageList(loc)
+  const areas = buildCoverageAreasEn(loc)
+  const primaryAreas = areas.filter((area) => !isGenericCoverageLabel(area, city))
+  const shipmentA = primaryAreas[0] || city
+  const shipmentB = primaryAreas[1] || city
   const variant = hashSlug(loc.slug) % 3
   const areaText = areas.slice(0, 6).join(", ")
   const neighbours = neighbourSlugs(loc, slugMap)
@@ -236,12 +308,8 @@ function buildEnBlock(loc, slugMap) {
             return `- [${label}](/en/${n.slug})`
           })
           .join("\n")
-      : "- [3D printing in Ghent](/en/3d-printen-in-gent)"
-  const phrases = pickPhrases(loc)
-  const phraseLines =
-    phrases.length > 0
-      ? phrases.map((p) => `- ${p}`).join("\n")
-      : `- 3D printing in ${city} for prototypes and fixtures\n- PLA/PETG functional parts near ${city}`
+      : "- [Local 3D printing overview](/en/locaties)"
+  const phraseLines = buildSearchPhrasesEn(city).map((p) => `- ${p}`).join("\n")
   const sectors = mapSectorsEn(loc.sectors, city)
   const landmarks = getLandmarksEn(loc, city)
   const spotlight = buildSpotlightEn(loc, areas)
@@ -288,7 +356,14 @@ function buildEnBlock(loc, slugMap) {
 ${neighbourLinks}
 
 ## ${spotlightHeading}
-${spotlight.join("\n")}
+${spotlight
+    .map((line) =>
+      line.replace(
+        /shipping to .*$/i,
+        `shipping to ${shipmentA} and ${shipmentB}.`,
+      ),
+    )
+    .join("\n")}
 
 ## ${landmarksHeading}
 ${landmarks.map((l) => `- ${l}`).join("\n")}
@@ -300,7 +375,7 @@ ${sectors.map((s) => `- ${s}`).join("\n")}
 ${phraseLines}`
 }
 
-function buildNlBlock(loc, slugMap) {
+function buildNlBlock(loc, slugMap, includeLocalPointsSection) {
   const city = loc.city
   const areas = coverageList(loc)
   const variant = hashSlug(loc.slug) % 3
@@ -317,7 +392,7 @@ function buildNlBlock(loc, slugMap) {
             return `- [${label}](/${n.slug})`
           })
           .join("\n")
-      : "- [3D printen in Gent](/3d-printen-in-gent)"
+      : "- [Overzicht lokale 3D print pagina's](/locaties)"
   const phrases = pickPhrases(loc)
   const phraseLines =
     phrases.length > 0
@@ -326,6 +401,8 @@ function buildNlBlock(loc, slugMap) {
   const sectors = mapSectorsNl(loc.sectors, city)
   const landmarks = getLandmarksNl(loc, city)
   const spotlight = buildSpotlightNl(loc, areas)
+  const localPointsHeading = `Lokale punten in ${city}`
+  const localPointsLines = landmarks.slice(0, 3).map((l) => `- ${l}`).join("\n")
 
   const highlightsHeading = [
     `Lokale accenten voor ${city}`,
@@ -368,6 +445,8 @@ function buildNlBlock(loc, slugMap) {
 ## ${neighboursHeading}
 ${neighbourLinks}
 
+${includeLocalPointsSection ? `## ${localPointsHeading}\n${localPointsLines}\n` : ""}
+
 ## ${spotlightHeading}
 ${spotlight.join("\n")}
 
@@ -390,7 +469,12 @@ function enrichAll() {
     const enPath = path.join(enDir, `${loc.slug}.md`)
     const nlPath = path.join(nlDir, `${loc.slug}.md`)
     if (fs.existsSync(enPath)) insertBlock(enPath, buildEnBlock(loc, slugMap))
-    if (fs.existsSync(nlPath)) insertBlock(nlPath, buildNlBlock(loc, slugMap))
+    if (fs.existsSync(nlPath)) {
+      const nlContent = fs.readFileSync(nlPath, "utf8")
+      const nlBaseContent = stripManagedBlock(nlContent)
+      const includeLocalPointsSection = !hasExplicitNlLocalPointsHeading(nlBaseContent)
+      insertBlock(nlPath, buildNlBlock(loc, slugMap, includeLocalPointsSection))
+    }
   }
   console.log(`Enriched ${locations.length} EN/NL location pages with local highlights.`)
 }

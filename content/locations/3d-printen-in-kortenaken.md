@@ -32,7 +32,7 @@ Met **3D printen in Kortenaken** leveren we prototypes, behuizingen en tooling r
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica en IoT.
+- Kleine en grotere series covers en cases voor elektronica en IoT.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Kortenaken centrum
 - Hoeleden en Ransberg
 - Kersbeek-Miskom
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Kortenaken
+
+- Dekking: Kortenaken, Kortenaken centrum, Hoeleden, Ransberg, Kersbeek-Miskom, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kortenaken.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Landbouw en techniek in Kortenaken: PLA/PETG onderdelen afgestemd op projecten rond Kortenaken centrum.
+- Vaak gevraagd: 3D print service Kortenaken; we adviseren materiaal en afwerking.
+- Leverfocus: Kortenaken, Kortenaken centrum, Hoeleden.
+
+## Plaatsen waar we vaak leveren rond Kortenaken
+- Centrum van Kortenaken
+- Lokale bedrijvenzone in Kortenaken
+- Sporthal in Kortenaken
+
+## Sectoren die we vaak helpen in Kortenaken
+- Landbouw en techniek in Kortenaken
+- Retail/events in Hageland (Kortenaken)
+- Makers en onderwijs in de regio (Kortenaken)
+
+## Veelgevraagde zoekopdrachten in Kortenaken
+- 3D print service Kortenaken
+- rapid prototyping Kortenaken
+- 3D printing bedrijf Kortenaken
+<!-- LOCAL_ENRICH_END -->

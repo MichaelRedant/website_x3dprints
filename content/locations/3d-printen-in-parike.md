@@ -2,7 +2,7 @@
 
 
 
-Voor **3D printen in Parike** leveren we prototypes en kleine series richting Parikevijver, de Parikemolen en de dorpskern. Je krijgt strakke prints, snelle levering en advies op maat.
+Voor **3D printen in Parike** leveren we prototypes en zowel kleine als grotere series richting Parikevijver, de Parikemolen en de dorpskern. Je krijgt strakke prints, snelle levering en advies op maat.
 
 
 
@@ -126,7 +126,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Parike
+- Centrum van Parike
+- Lokale bedrijvenzone in Parike
+- Sporthal in Parike
+
 
 ## Spotlight rond Parike
 - Lokale teams in Parike: behuizingen en pasmallen voor teams in Parike.

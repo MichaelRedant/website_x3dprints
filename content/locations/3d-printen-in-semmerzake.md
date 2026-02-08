@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Onderdelen die snel passen en direct inzetbaar zijn.
 
 ### KMO's en zelfstandigen
-Kleine series met strakke afwerking en korte doorlooptijd.
+Kleine en grotere series met strakke afwerking en korte doorlooptijd.
 
 ### Verenigingen en scholen
 Projecten met heldere planning en vaste afspraken.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Vurste](/3d-printen-in-vurste)
 - [Buurpagina: 3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
 - [Hoofdpagina: 3D printen in Asper](/3d-printen-in-asper)
+
+
 
 ## Klantenspotlight
 - Lokale makers en techniekers: kleine reeksen met vaste settings rond Semmerzake centrum.

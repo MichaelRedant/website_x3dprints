@@ -17,7 +17,7 @@
 
 ## Lokale focus in Sint-Gillis-Dendermonde
 
-Werk je in Sint-Gillis-Dendermonde? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Sint-Gillis-Dendermonde.
+Werk je in Sint-Gillis-Dendermonde? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Gillis-Dendermonde.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Pasmallen en sjablonen voor montage en assemblage.
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Sint-Gillis-Dendermonde** ook ABS, ASA, Nylon
 ## Voor wie is 3D printen in Sint-Gillis-Dendermonde interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale winkels en bedrijven rond het station gebruiken **3D printen in Sint-Gillis-Dendermonde** om prototypes te testen en kleine series te produceren.
+Lokale winkels en bedrijven rond het station gebruiken **3D printen in Sint-Gillis-Dendermonde** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve inwoners maken unieke gadgets of miniaturen van het Bogemanspark met **3D printen in Sint-Gillis-Dendermonde**.
@@ -96,8 +96,8 @@ Sint-Gillis grenst aan het centrum van Dendermonde en heeft een eigen dynamiek r
 **Welke bestanden kan ik aanleveren voor Sint-Gillis-Dendermonde?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Sint-Gillis-Dendermonde?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Sint-Gillis-Dendermonde?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Sint-Gillis-Dendermonde?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -131,7 +131,13 @@ Benieuwd hoe **3D printen in Sint-Gillis-Dendermonde** jouw idee versterkt? Vraa
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Sint-Gillis-Dendermonde
+- Centrum van Sint-Gillis-Dendermonde
+- Lokale bedrijvenzone in Sint-Gillis-Dendermonde
+- Sporthal in Sint-Gillis-Dendermonde
+
 
 ## Klantenspotlight
 - Lokale teams in Sint-Gillis-Dendermonde: kleine reeksen met vaste settings rond Sint-Gillis-Dendermonde.

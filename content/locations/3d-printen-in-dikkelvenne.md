@@ -1,6 +1,6 @@
 # 3D printen in Dikkelvenne: betrouwbare kwaliteit en snelle levering
 
-**3D printen in Dikkelvenne** (Gavere) is ideaal voor prototypes, maatwerk en kleine series. X3DPrints levert vanuit Herzele met heldere planning en strakke afwerking.
+**3D printen in Dikkelvenne** (Gavere) is ideaal voor prototypes, maatwerk en zowel kleine als grotere series. X3DPrints levert vanuit Herzele met heldere planning en strakke afwerking.
 
 ---
 
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Dikkelvenne interessant?
 
 ### KMO's en zelfstandigen
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Onderhoud en herstellingen
 Sterke prints die tegen een stootje kunnen.
@@ -82,14 +82,14 @@ Test uw ontwerp snel en optimaliseer zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Dikkelvenne
 
-**Kunnen jullie kleine series leveren in Dikkelvenne?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Dikkelvenne?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Dikkelvenne?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Baaigem](/3d-printen-in-baaigem)
 - [Buurpagina: 3D printen in Vurste](/3d-printen-in-vurste)
 - [Hoofdpagina: 3D printen in Semmerzake](/3d-printen-in-semmerzake)
+
+
 
 ## Spotlight rond Dikkelvenne
 - KMO's en zelfstandigen: behuizingen en pasmallen voor teams in Dikkelvenne centrum.

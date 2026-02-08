@@ -1,6 +1,6 @@
 # 3D printen in Halle: Zennevallei, E429 en events
 
-Met **3D printen in Halle** leveren we prototypes en kleine series voor food, logistiek en events in de Zennevallei. We plannen leveringen langs de E429 en R0 en zorgen dat onderdelen meteen klaar zijn voor montage.
+Met **3D printen in Halle** leveren we prototypes en zowel kleine als grotere series voor food, logistiek en events in de Zennevallei. We plannen leveringen langs de E429 en R0 en zorgen dat onderdelen meteen klaar zijn voor montage.
 
 ---
 
@@ -67,3 +67,37 @@ Afhankelijk van de planning. Geef je venster mee; we kunnen vaak na kantooruren 
 - Centrum Halle en Nederhem
 - E429 en R0-corridor
 - Lembeek en Buizingen
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Halle
+
+- Dekking: Halle, Halle centrum, Sint-Rochus en Essenbeek, Lembeek, Buizingen, Bedrijventerrein Nederhem en R0-corridor; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Halle.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Food en logistiek rond Colruyt Group: PLA/PETG onderdelen afgestemd op projecten rond Halle centrum.
+- Vaak gevraagd: 3D print service Halle; we adviseren materiaal en afwerking.
+- Leverfocus: Halle, Halle centrum, Sint-Rochus en Essenbeek.
+
+## Plaatsen waar we vaak leveren rond Halle
+- Centrum van Halle
+- Lokale bedrijvenzone in Halle
+- Sporthal in Halle
+
+## Sectoren die we vaak helpen in Halle
+- Food en logistiek rond Colruyt Group (Halle)
+- Events en retail in de Zennevallei (Halle)
+- Makers en onderwijs in het Pajottenland (Halle)
+
+## Veelgevraagde zoekopdrachten in Halle
+- 3D print service Halle
+- rapid prototyping Halle
+- 3D printing bedrijf Halle
+<!-- LOCAL_ENRICH_END -->

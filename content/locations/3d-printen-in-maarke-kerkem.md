@@ -1,6 +1,6 @@
 # 3D printen in Maarke-Kerkem: maatwerk met korte doorlooptijd
 
-**3D printen in Maarke-Kerkem** is ideaal voor prototypes, functionele onderdelen en kleine series. X3DPrints levert vanuit Herzele met snelle afstemming en een strakke afwerking voor projecten in Maarkedal.
+**3D printen in Maarke-Kerkem** is ideaal voor prototypes, functionele onderdelen en zowel kleine als grotere series. X3DPrints levert vanuit Herzele met snelle afstemming en een strakke afwerking voor projecten in Maarkedal.
 
 ---
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare timing.
+Maatwerk en zowel kleine als grotere series met betrouwbare timing.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en pasvormtests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test onderdelen snel en stuur bij waar nodig.
 **Welke bestanden kan ik aanleveren voor Maarke-Kerkem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Maarke-Kerkem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Maarke-Kerkem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Maarke-Kerkem?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Etikhove](/3d-printen-in-etikhove)
 - [Buurpagina: 3D printen in Nukerke](/3d-printen-in-nukerke)
 - [Buurpagina: 3D printen in Schorisse](/3d-printen-in-schorisse)
+
+
 
 ## Spotlight rond Maarke-Kerkem
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Maarke-Kerkem centrum.

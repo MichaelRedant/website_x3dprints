@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
@@ -38,7 +38,7 @@ const NL_METADATA: Metadata = {
   },
 }
 
-export const EN_METADATA: Metadata = {
+const EN_METADATA: Metadata = {
   title: "3D printing blog & knowledge base | X3DPrints",
   description:
     "Strategic 3D printing articles on cost, material choice, Bambu X1C settings and design best practices. Includes links to the calculator and materials library.",
@@ -66,6 +66,9 @@ export const EN_METADATA: Metadata = {
     images: ["/images/og-blog.jpg"],
   },
 }
+
+
+void EN_METADATA
 
 export const metadata: Metadata = NL_METADATA
 
@@ -140,7 +143,7 @@ const TOPICS_NL: Topic[] = [
       "Alles wat je moet weten om organizers te laten printen: intake, materiaalkeuze, labelzones, anti-slip en wanneer je kiest voor Gridfinity, Packout, TSTAK of een custom insert.",
     highlights: [
       "Bevat interne links naar de organizers hub, materialen en pricing zodat je meteen kunt plannen.",
-      "Uitleg per systeem (Gridfinity, Packout, TSTAK, custom/SkÃ¥dis) met intakechecklist.",
+      "Uitleg per systeem (Gridfinity, Packout, TSTAK, custom/Skådis) met intakechecklist.",
       "Externe context over pegboards en Packout ecosystemen om EEAT te versterken.",
     ],
     links: [
@@ -156,7 +159,7 @@ const TOPICS_NL: Topic[] = [
     title: "Gridfinity: modulair opslagsysteem met maatwerk door X3DPrints",
     date: "2026-01-30",
     summary:
-      "Uitleg van het 42Ã—42Ã—7 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
+      "Uitleg van het 42×42×7 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
     highlights: [
       "Technische kern: raster, magneten, labels, materialen en generators.",
       "Toepassingen van werkplaats tot keuken en Packout-koffers.",
@@ -574,7 +577,7 @@ const TOPICS_NL: Topic[] = [
     summary:
       "Interieurarchitecten en makers gebruiken PLA Matte, Marble, Wood en Metal voor sculpturen, wandpanelen en retailprops. Deze gids toont materiaalkeuzes, warmtegedrag en workflow.",
     highlights: [
-      "Detailsecties over custom decor, organische vormen en lichtgewicht props in kleine oplage.",
+      "Detailsecties over custom decor, organische vormen en lichtgewicht props in kleine en grotere oplage.",
       "Materiaaloverzicht (PLA Matte/Marble/Wood/Metal, PETG) plus warmteadvies met links naar materiaalblogs.",
       "Designworkflow, projectvoorbeelden, kostdrivers en wanneer 3D printen beter is dan hout/CNC.",
     ],
@@ -1119,7 +1122,7 @@ const TOPICS_EN: Topic[] = [
       "Complete guide to printed organizers: intake checklist, materials, label zones, anti-slip and when to choose Gridfinity, Packout, TSTAK or fully custom inserts.",
     highlights: [
       "Internal links to the organizers hub, materials and pricing so you can plan fast.",
-      "System-by-system guidance (Gridfinity/gridfinity-style, Packout, TSTAK, custom/SkÃ¥dis) plus what to send during intake.",
+      "System-by-system guidance (Gridfinity/gridfinity-style, Packout, TSTAK, custom/Skådis) plus what to send during intake.",
       "External context on pegboards and Packout ecosystems to strengthen EEAT.",
     ],
     links: [
@@ -1135,7 +1138,7 @@ const TOPICS_EN: Topic[] = [
     title: "Gridfinity: modular storage system, custom-fit by X3DPrints",
     date: "2026-01-30",
     summary:
-      "Explains the 42Ã—42Ã—7 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
+      "Explains the 42×42×7 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
     highlights: [
       "Technical core: grid, magnets, labels, materials and generators.",
       "Use cases from workshops to kitchens and Packout cases.",
@@ -2059,7 +2062,7 @@ const TOPICS_EN: Topic[] = [
       "Alles wat je moet weten om organizers te laten printen: intake, materiaalkeuze, labelzones, anti-slip en wanneer je kiest voor Gridfinity, Packout, TSTAK of een custom insert.",
     highlights: [
       "Bevat interne links naar de organizers hub, materialen en pricing zodat je meteen kunt plannen.",
-      "Uitleg per systeem (Gridfinity/gridfinity-stijl, Packout, TSTAK, custom/SkÃ¥dis) met intakechecklist.",
+      "Uitleg per systeem (Gridfinity/gridfinity-stijl, Packout, TSTAK, custom/Skådis) met intakechecklist.",
       "Externe context over pegboards en Packout ecosystemen om EEAT te versterken.",
     ],
     links: [
@@ -2075,7 +2078,7 @@ const TOPICS_EN: Topic[] = [
     title: "Gridfinity: modular storage system, custom-fit by X3DPrints",
     date: "2026-01-30",
     summary:
-      "Explains the 42Ã—42Ã—7 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
+      "Explains the 42×42×7 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
     highlights: [
       "Technical core: grid, magnets, labels, materials and generators.",
       "Use cases from workshops to kitchens and Packout cases.",
@@ -2094,7 +2097,7 @@ const TOPICS_EN: Topic[] = [
     title: "Gridfinity: modulair opslagsysteem met maatwerk door X3DPrints",
     date: "2026-12-30",
     summary:
-      "Uitleg van het 42Ã—42Ã—7 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
+      "Uitleg van het 42×42×7 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
     highlights: [
       "Technische kern: raster, magneten, labels, materialen en generators.",
       "Toepassingen van werkplaats tot keuken en Packout-koffers.",

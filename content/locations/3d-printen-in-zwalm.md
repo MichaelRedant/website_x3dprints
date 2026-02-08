@@ -1,6 +1,6 @@
 # 3D printen in Zwalm: maatwerk in de Vlaamse Ardennen
 
-**3D printen in Zwalm** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een strakke afwerking voor projecten in de Vlaamse Ardennen.
+**3D printen in Zwalm** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een strakke afwerking voor projecten in de Vlaamse Ardennen.
 
 ---
 
@@ -23,10 +23,10 @@
 
 ## Lokale focus in Zwalm
 
-Werk je in Zwalm? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Zwalm.
+Werk je in Zwalm? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Zwalm.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Zwalm
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Munkzwalm](/3d-printen-in-munkzwalm)
 - [Buurpagina: 3D printen in Roborst](/3d-printen-in-roborst)
 - [Hoofdpagina: 3D printen in Sint-Blasius-Boekel](/3d-printen-in-sint-blasius-boekel)
+
+
 
 ## Spotlight rond Zwalm
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Zwalm centrum.

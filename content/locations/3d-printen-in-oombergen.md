@@ -17,11 +17,11 @@
 
 ## Lokale focus in Oombergen
 
-Werk je in Oombergen? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Oombergen.
+Werk je in Oombergen? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Oombergen.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Oombergen
 
@@ -99,8 +99,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Oombergen?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Oombergen?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Oombergen?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Zottegem
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
@@ -134,7 +134,13 @@ Interesse in **3D printen in Oombergen**? Vraag een **gratis offerte** aan.
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Oombergen
+- Centrum van Oombergen
+- Lokale bedrijvenzone in Oombergen
+- Sporthal in Oombergen
+
 
 ## Spotlight rond Oombergen
 - Lokale teams in Oombergen: behuizingen en pasmallen voor teams in Oombergen.

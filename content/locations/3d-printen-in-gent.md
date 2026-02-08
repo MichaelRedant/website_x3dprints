@@ -70,7 +70,7 @@ Onze **rapid prototyping service in Gent** stelt u in staat om uw ontwerpen raze
 De stad Gent, met haar rijke historische erfgoed, haar status als studentenstad en haar reputatie als internationaal innovatiecentrum, is een vruchtbare bodem voor nieuwe ideeën. Met **3D printen in Gent** kunt u:
 
 -   unieke, gepersonaliseerde items creëren die de identiteit van Gent vangen.
--   snel prototypes en kleine series produceren voor lokale bedrijven en start-ups in de tech-sector.
+-   snel prototypes en zowel kleine als grotere series produceren voor lokale bedrijven en start-ups in de tech-sector.
 -   specifieke onderdelen laten maken die snel beschikbaar moeten zijn voor reparaties of projecten.
 -   educatieve projecten ondersteunen met tastbare leermiddelen die inspireren en de jeugd betrekken bij technologie en design.
 
@@ -109,8 +109,8 @@ De stad Gent, met haar rijke historische erfgoed, haar status als studentenstad 
 ---
 ## Veelgestelde vragen over 3D printen in Gent
 
-**Kunnen jullie kleine series leveren in Gent?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Gent?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Gent?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -151,6 +151,12 @@ Benieuwd hoe **3D printen in Gent** uw project kan versnellen of uw idee kan ver
 - [Buurpagina: 3D printen in Destelbergen](/3d-printen-in-destelbergen)
 - [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [Buurpagina: 3D printen in Drongen](/3d-printen-in-drongen)
+
+## Lokale punten in Gent
+- Centrum van Gent
+- Lokale bedrijvenzone in Gent
+- Sporthal in Gent
+
 
 ## Klantenspotlight
 - Prototyping voor start-ups (Tech Lane Zwijnaarde): kleine reeksen met vaste settings rond Gent centrum.

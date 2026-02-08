@@ -21,7 +21,7 @@ const contactHref = "/en/contact?material=pla-matte&quote=File%20check%20for%203
 export const metadata: Metadata = {
   title: "Which files do you need for 3D printing? | X3DPrints",
   description:
-    "STL, STEP or native CAD? This practical guide explains file formats, export checks and context that speeds up your 3D print quote.",
+    "STL, STEP or native CAD? This practical guide explains file formats, export checks and context that speeds up your 3D model print quote for 3D printing Gent and Belgium projects.",
   alternates: {
     canonical,
     languages: {
@@ -190,7 +190,7 @@ export default function FilesArticleEnPage() {
             Which files do you need for 3D printing?
           </h1>
           <p className="max-w-3xl text-lg text-slate-700">
-            Quick answer: STL for fixed geometry, STEP for iterative work. A clean handoff with context reduces delays.
+            Quick answer: STL for fixed geometry, STEP for iterative work. A clean 3D model print handoff with context reduces delays, especially in 3D printing Gent project flows.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
             Last updated: February 7, 2026

@@ -26,7 +26,7 @@ Voor Beveren leveren we snel en denken we mee over sterkte en afwerking, ideaal 
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Beveren
 
@@ -43,7 +43,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Beveren interessant?
 
 ### KMO's en zelfstandigen
-Hulpstukken, prototypes en kleine series met snelle feedback.
+Hulpstukken, prototypes en zowel kleine als grotere series met snelle feedback.
 
 ### Industrie en logistiek
 Tooling en onderdelen die snel moeten passen.
@@ -81,7 +81,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -90,8 +90,8 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 **Welke bestanden kan ik aanleveren voor Beveren?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Beveren?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Beveren?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Beveren?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Melsele](/3d-printen-in-melsele)
 - [Buurpagina: 3D printen in Haasdonk](/3d-printen-in-haasdonk)
 - [Buurpagina: 3D printen in Vrasene](/3d-printen-in-vrasene)
+
+
 
 ## Klantenspotlight
 - KMO's en zelfstandigen: kleine reeksen met vaste settings rond Beveren centrum.

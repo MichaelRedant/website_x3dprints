@@ -1,6 +1,6 @@
 # 3D printen in Watervliet: snelle service voor lokale projecten
 
-**3D printen in Watervliet** is ideaal voor prototypes, herstellingen en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Watervliet** is ideaal voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -23,10 +23,10 @@
 
 ## Lokale focus in Watervliet
 
-Werk je in Watervliet? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Watervliet.
+Werk je in Watervliet? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Watervliet.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Watervliet
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Sint-Margriete](/3d-printen-in-sint-margriete)
 - [Buurpagina: 3D printen in Waterland-Oudeman](/3d-printen-in-waterland-oudeman)
 - [Buurpagina: 3D printen in Sint-Jan-in-Eremo](/3d-printen-in-sint-jan-in-eremo)
+
+
 
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Watervliet centrum.

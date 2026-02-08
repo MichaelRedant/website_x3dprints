@@ -1,6 +1,6 @@
 # 3D printen in Klein-Sinaai: betrouwbare prints op maat
 
-**3D printen in Klein-Sinaai** is ideaal voor prototypes, herstellingen en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Klein-Sinaai** is ideaal voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -23,9 +23,9 @@
 
 ## Lokale focus in Klein-Sinaai
 
-Werk je in Klein-Sinaai? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Klein-Sinaai.
+Werk je in Klein-Sinaai? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Klein-Sinaai.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Kemzeke](/3d-printen-in-kemzeke)
 - [Buurpagina: 3D printen in Houtem (Stekene)](/3d-printen-in-houtem-stekene)
 
+
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Klein-Sinaai centrum.
 - Vaak gevraagd: 3D print service Klein-Sinaai; we adviseren materiaal en afwerking.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in Klein-Sinaai
 - Lokale makers en ontwerpers (Klein-Sinaai)
-- Kleine series en maatwerk (Klein-Sinaai)
+- Kleine en grotere series en maatwerk (Klein-Sinaai)
 - Verenigingen en onderwijs (Klein-Sinaai)
 
 ## Veelgevraagde zoekopdrachten in Klein-Sinaai

@@ -1,6 +1,6 @@
 # 3D printen in Nukerke: sterke prints voor maatwerk
 
-**3D printen in Nukerke** is ideaal voor prototypes, functionele onderdelen en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en duidelijke afspraken.
+**3D printen in Nukerke** is ideaal voor prototypes, functionele onderdelen en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en duidelijke afspraken.
 
 ---
 
@@ -25,7 +25,7 @@
 
 In Nukerke helpen we projecten rond Nukerke sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere communicatie en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -100,7 +100,6 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 ## Interne links rond 3D printen in Nukerke
 - [3D printen in Maarkedal](/3d-printen-in-maarkedal)
 - [3D printen in Schorisse](/3d-printen-in-schorisse)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 - [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
 ---
 
@@ -129,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Etikhove](/3d-printen-in-etikhove)
 - [Buurpagina: 3D printen in Maarke-Kerkem](/3d-printen-in-maarke-kerkem)
 - [Buurpagina: 3D printen in Schorisse](/3d-printen-in-schorisse)
+
+
 
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Nukerke centrum.

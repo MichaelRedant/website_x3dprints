@@ -1,6 +1,6 @@
 # 3D printen in De Klijpe: snel maatwerk nabij Ronse
 
-**3D printen in De Klijpe** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een nette afwerking voor projecten rond Ronse.
+**3D printen in De Klijpe** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een nette afwerking voor projecten rond Ronse.
 
 ---
 
@@ -27,7 +27,7 @@ In De Klijpe combineren we detailwerk met functionele onderdelen; je krijgt snel
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in De Klijpe
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,8 +94,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor De Klijpe?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in De Klijpe?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in De Klijpe?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in De Klijpe
 - [3D printen in Ronse](/3d-printen-in-ronse)
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Louise-Marie](/3d-printen-in-louise-marie)
 - [Buurpagina: 3D printen in Maarkedal](/3d-printen-in-maarkedal)
 
+
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond De Klijpe centrum.
 - Vaak gevraagd: 3D print service De Klijpe; we adviseren materiaal en afwerking.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectorfocus nabij De Klijpe
 - Lokale makers en ontwerpers (De Klijpe)
-- Kleine series en maatwerk (De Klijpe)
+- Kleine en grotere series en maatwerk (De Klijpe)
 - Verenigingen en onderwijs (De Klijpe)
 
 ## Typische aanvragen rond De Klijpe

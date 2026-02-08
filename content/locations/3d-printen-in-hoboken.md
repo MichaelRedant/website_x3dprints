@@ -54,8 +54,8 @@ Dagelijkse verzending naar Hoboken. Deadline voor een demo? Vermeld het in je aa
 **Welke bestanden kan ik aanleveren voor Hoboken?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Hoboken?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Hoboken?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Hoboken?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -80,7 +80,13 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en dea
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Hoboken
+- Centrum van Hoboken
+- Lokale bedrijvenzone in Hoboken
+- Sporthal in Hoboken
+
 
 ## Lokale spotlight
 - Schelde/industrie projecten: PLA/PETG onderdelen afgestemd op projecten rond Hoboken centrum.

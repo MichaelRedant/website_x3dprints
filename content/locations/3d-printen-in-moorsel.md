@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Moorsel** ook ABS, ASA, Nylon of PA-CF voor t
 ## Voor wie is 3D printen in Moorsel interessant?
 
 ### Ondernemers en zelfstandigen
-Bedrijven rond het dorpsplein en de Aalstersestraat gebruiken **3D printen in Moorsel** om prototypes en kleine series te realiseren.
+Bedrijven rond het dorpsplein en de Aalstersestraat gebruiken **3D printen in Moorsel** om prototypes en zowel kleine als grotere series te realiseren.
 
 ### Makers en hobbyisten
 Creatieve inwoners maken unieke gadgets of maquettes van het Moorselbos met **3D printen in Moorsel**.
@@ -93,8 +93,8 @@ Moorsel ligt aan de rand van de Dendervallei en staat bekend om de Sint-Martinus
 
 ## Veelgestelde vragen over 3D printen in Moorsel
 
-**Kunnen jullie kleine series leveren in Moorsel?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Moorsel?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Moorsel?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -103,7 +103,6 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Moorsel of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Aalst
-- [3D printen in Aalst](/3d-printen-in-aalst)
 - [3D printen in Baardegem](/3d-printen-in-baardegem)
 - [3D printen in Erembodegem](/3d-printen-in-erembodegem)
 - [3D printen in Gijzegem](/3d-printen-in-gijzegem)
@@ -132,7 +131,13 @@ Benieuwd hoe **3D printen in Moorsel** jouw idee versterkt? Vraag een **gratis o
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Hoofdpagina: 3D printen in Tervuren](/3d-printen-in-tervuren)
+
+## Lokale punten in Moorsel
+- Centrum van Moorsel
+- Lokale bedrijvenzone in Moorsel
+- Sporthal in Moorsel
+
 
 ## Klantenspotlight
 - Lokale teams in Moorsel: kleine reeksen met vaste settings rond Moorsel.

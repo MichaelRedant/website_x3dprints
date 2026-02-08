@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Pollare** ook ABS, ASA, Nylon of PA-CF voor t
 ## Voor wie is 3D printen in Pollare interessant?
 
 ### Lokale ondernemers
-Bedrijven gebruiken **3D printen in Pollare** om prototypes te testen en kleine series te produceren.
+Bedrijven gebruiken **3D printen in Pollare** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Hobbyisten en makers
 Creatieve inwoners realiseren persoonlijke projecten via **3D printen in Pollare**.
@@ -99,8 +99,8 @@ Pollare ligt langs de Dender en staat bekend om het Pollareveld en de brug over 
 **Welke bestanden kan ik aanleveren voor Pollare?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Pollare?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Pollare?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Pollare?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -132,7 +132,13 @@ Wil je ervaren hoe **3D printen in Pollare** jouw project vooruithelpt? Vraag va
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Pollare
+- Centrum van Pollare
+- Lokale bedrijvenzone in Pollare
+- Sporthal in Pollare
+
 
 ## Spotlight rond Pollare
 - Lokale teams in Pollare: behuizingen en pasmallen voor teams in Pollare.

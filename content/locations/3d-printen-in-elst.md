@@ -39,7 +39,7 @@ Voor **3D printen in Elst** leveren we prototypes en functionele onderdelen rich
 In Elst helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
 
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 
 ## Materialen
@@ -126,7 +126,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Elst
+- Centrum van Elst
+- Lokale bedrijvenzone in Elst
+- Sporthal in Elst
+
 
 ## Lokale spotlight
 - Lokale teams in Elst: PLA/PETG onderdelen afgestemd op projecten rond Elst.

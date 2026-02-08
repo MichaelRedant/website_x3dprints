@@ -1,6 +1,6 @@
 # 3D printen in Moerzeke: maatwerk met korte doorlooptijd
 
-**3D printen in Moerzeke** (Hamme) is ideaal voor prototypes, maatwerk en kleine series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Moerzeke** (Hamme) is ideaal voor prototypes, maatwerk en zowel kleine als grotere series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Moerzeke interessant?
 
 ### Lokale ondernemers
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Onderhoud en herstellingen
 Sterke prints die tegen een stootje kunnen.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 **Welke bestanden kan ik aanleveren voor Moerzeke?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Moerzeke?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Moerzeke?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Moerzeke?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -126,6 +126,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 ## Dichtbij gelegen locaties
 - [Buurpagina: 3D printen in Hamme](/3d-printen-in-hamme)
 
+
+
 ## Spotlight rond Moerzeke
 - Lokale makers en techniekers: behuizingen en pasmallen voor teams in Moerzeke centrum.
 - Terugkerende order: 3D print service Moerzeke; we bewaren je instellingen.
@@ -138,7 +140,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Moerzeke
 - Lokale makers en techniekers (Moerzeke)
-- Kleine series en maatwerk (Moerzeke)
+- Kleine en grotere series en maatwerk (Moerzeke)
 - Verenigingen en scholen (Moerzeke)
 
 ## Wat vaak wordt gevraagd in Moerzeke

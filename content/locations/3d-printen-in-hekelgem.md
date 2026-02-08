@@ -24,7 +24,7 @@ Voor **3D printen in Hekelgem** leveren we prototypes en onderdelen richting Mol
 
 
 
-**Lokale touch:** afgestemd op ondernemers rond Molenbeekvallei en verbindingen richting E40. Geschikt voor props, tooling en kleine series.
+**Lokale touch:** afgestemd op ondernemers rond Molenbeekvallei en verbindingen richting E40. Geschikt voor props, tooling en zowel kleine als grotere series.
 
 
 
@@ -126,7 +126,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Hekelgem
+- Centrum van Hekelgem
+- Lokale bedrijvenzone in Hekelgem
+- Sporthal in Hekelgem
+
 
 ## Lokale spotlight
 - Lokale teams in Hekelgem: PLA/PETG onderdelen afgestemd op projecten rond Hekelgem.

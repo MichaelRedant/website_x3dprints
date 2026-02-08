@@ -65,7 +65,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Zingem
+- Centrum van Zingem
+- Lokale bedrijvenzone in Zingem
+- Sporthal in Zingem
+
 
 ## Lokale spotlight
 - Lokale teams in Zingem: PLA/PETG onderdelen afgestemd op projecten rond Zingem.

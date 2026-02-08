@@ -1,61 +1,139 @@
-# 3D printing in Herne: Pajotse custom work
+# 3D printing in Herne: local, fast and tailored
 
-With **3D printing in Herne** we deliver housings, props and tooling toward Herfelingen and Sint-Pieters-Kapelle. Fast quotes, transparent pricing and deliveries on appointment.
-
----
-
-## Why X3DPrints for Herne?
-
-- Quote within one working day with realistic lead time.
-- PLA Matte, PETG and TPU for visuals, strong parts and flexible clips.
-- EV delivery toward Herne/Pajottenland; pickup in Herzele available.
+Need **3D printing in Herne**? X3DPrints prints in Herzele and ships quickly to Herne and nearby Herfelingen. Local 3D printing for Herne, Herfelingen and Sint-Pieters-Kapelle: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
-## Local focus in Herne
+## Why Herne teams choose us
 
-- Props and signage for events in Herne and nearby towns.
-- Jigs, clamps and fit parts for local SMEs and agri/tech.
-- Housings and mounts for installs and sensors.
-
-## Materials
-
-| Material      | Benefit                        | Ideal for |
-| :------------ | :----------------------------- | :-------- |
-| **PLA Matte** | Clean detail, many colours     | Showpieces and badges |
-| **PETG**      | Strong and heat-resistant      | Functional parts and tooling |
-| **TPU**       | Flexible and shock absorbing   | Cable clips, bumpers and pads |
+- Local delivery to Herne, Herfelingen and Sint-Pieters-Kapelle; pickup in Herzele.
+- Fast quotes: response in one business day with clear pricing.
+- Accurate fits for enclosures, jigs and assemblies used in Herne.
+- Optional finishing (sanding/priming/paint) for customer-facing parts.
 
 ---
 
-## Use cases in Herne
+## Where we deliver around Herne
 
-- Signage and props for local campaigns.
-- Service parts and fixtures for production/maintenance.
-- Small cover series for electronics and IoT.
+We frequently deliver to: Herne, Herne city center, Herfelingen, Sint-Pieters-Kapelle, Pickup in Herzele.
 
 ---
 
-## Practical
+## Where our 3D prints are used around Herne
 
-- Upload STL/STEP via [contact](/en/contact) with quantities and finish.
-- Delivery on appointment; pickup in Herzele possible.
-- Optional sanding/priming for smooth visuals.
+- Prototypes and housings supporting teams in Herne.
+- Small to large series with consistent settings for businesses near Herfelingen.
+- Replacement parts and brackets for workshops around Sint-Pieters-Kapelle.
+- Promo models, signage and props for events in and around Herne.
+- Brackets, guards and fixtures tuned for teams in Herne.
+- Demo pieces and props for events near Herne.
 
 ---
 
-## Request a quote
+## Spotlight: Herne projects
 
-Send your files via [contact](/en/contact). You’ll quickly get a proposal for **3D printing in Herne**.
+- Makers and product teams in Herne: iterative prototyping and short-run production.
+- Common ask in Herne: custom 3D printing with practical PLA/PETG/TPU advice for Sint-Pieters-Kapelle.
+- Delivery focus: Herne, Herne city center, Herfelingen.
+
+---
+
+## Typical drop-off points near Herne
+
+- Herne town center
+- local business park in Herne
+- sports hall in Herne
+
+---
+
+## Teams we often help near Herne
+
+- Makers and product teams in Herne: iterative prototyping and short-run production.
+- Retail/marketing/events in Herne: displays, props and branded pieces.
+- Education and labs around Herne: lesson-ready prints in PLA/PETG.
+
+---
+
+## Popular requests from Herne
+
+- PLA or PETG functional parts for teams in Herne.
+- TPU grips and pads for bikes, tools or fixtures around Herfelingen.
+- Paint-ready show models for presentations in Herne and Herfelingen.
+
+---
+
+## Recommended materials for Herne
+
+| Material       | Key trait                 | Ideal for                                             |
+| :------------- | :------------------------ | :---------------------------------------------------- |
+| **PLA Matte**  | Clean, detailed finish    | Models, decor, mockups for Herne presentations       |
+| **PETG**       | Tough, heat resistant     | Functional parts, brackets, light outdoor use near Herne |
+| **TPU**        | Flexible, shock absorbing | Grips, pads, bumpers for bikes or tools in Herne     |
+
+---
+
+## How to order
+
+1. Upload STL/STEP via [contact](/en/contact).
+2. Note material (PLA/PETG/TPU), colour and quantity.
+3. Receive quote + timing within one business day.
+
+**Lead time:** usually a few working days; rush possible. Shipping to Herne or pickup in Herzele.
+
+---
 
 ## FAQ about 3D printing in Herne
 
-**How fast?** A few working days; rush possible.  
-**Material for tooling?** PETG for strength, TPU for grip/damping.  
-**Repeat batches?** Yes, with saved slicer profiles.
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
+**Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
+**File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
+**Materials?** PLA Matte for visuals, PETG for strength and temp resistance, TPU for flex. ABS/ASA/nylon on request.
 
-## Local points
+---
 
-- Herne center
-- Herfelingen
-- Sint-Pieters-Kapelle
+## Quick links for Herne teams
+
+- [Local 3D printing overview](/en/locaties)
+- [3D printing pillar](/en/3d-printen)
+- [Materials and advice](/en/materials#material-suggestion-tool)
+- [Pricing examples](/en/pricing)
+- [Request a quote](/en/contact)
+
+---
+
+## Request your quote for Herne
+
+Send your files today and get a clear, fast proposal for **3D printing in Herne**. Nearby production, personal support and reliable quality.
+
+<!-- LOCAL_ENRICH_START -->
+## Local highlights for Herne
+
+- Coverage: Herne, Herne city center, Herfelingen, Sint-Pieters-Kapelle, Pickup in Herzele; delivery from Herzele, pickup available.
+- Frequent jobs: prototypes, housings and brackets tailored for teams in Herne.
+- File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
+- Turnaround: usually a few working days; rush possible on request.
+
+## Neighbouring pages
+- [Local 3D printing overview](/en/locaties)
+
+## Local spotlight
+- Makers and product teams in Herne: iterative prototyping and short-run production.
+- Common request: 3D printing service in Herne; we pick material and finish for the use case.
+- Delivery focus: Herne, Herne city center, Herfelingen.
+
+## Places we often deliver near Herne
+- Herne town center
+- local business park in Herne
+- sports hall in Herne
+
+## Industries we serve near Herne
+- Makers and product teams in Herne: iterative prototyping and short-run production.
+- Retail/marketing/events in Herne: displays, signage, props.
+- Education/labs around Herne: reliable PLA/PETG parts.
+
+## Popular searches from Herne
+- 3D printing service in Herne
+- Custom 3D printing in Herne
+- 3D model printing in Herne
+<!-- LOCAL_ENRICH_END -->

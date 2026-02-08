@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Hofstade** ook ABS, ASA, Nylon of PA-CF voor 
 ## Voor wie is 3D printen in Hofstade interessant?
 
 ### Ondernemers en zelfstandigen
-Bedrijven rond het sportcomplex Schotte gebruiken **3D printen in Hofstade** om prototypes en kleine series te produceren.
+Bedrijven rond het sportcomplex Schotte gebruiken **3D printen in Hofstade** om prototypes en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve inwoners maken unieke gadgets of maquettes van het Denderlandschap met **3D printen in Hofstade**.
@@ -96,8 +96,8 @@ Hofstade ligt aan de Dender en staat bekend om het Schotte-park. Bewoners profit
 **Welke bestanden kan ik aanleveren voor Hofstade?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Hofstade?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Hofstade?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Hofstade?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -133,6 +133,12 @@ Benieuwd hoe **3D printen in Hofstade** jouw idee versterkt? Vraag een **gratis 
 
 ## Dichtbij gelegen locaties
 - [Hoofdpagina: 3D printen in Aalst](/3d-printen-in-aalst)
+
+## Lokale punten in Hofstade
+- Centrum van Hofstade
+- Lokale bedrijvenzone in Hofstade
+- Sporthal in Hofstade
+
 
 ## Spotlight rond Hofstade
 - Lokale teams in Hofstade: behuizingen en pasmallen voor teams in Hofstade.

@@ -1,6 +1,6 @@
 # 3D printen in Berchem: van Zurenborg tot Groenenhoek
 
-Zoek je een partner voor **3D printen in Berchem** die meedenkt met je ontwerp en snel levert? X3DPrints ondersteunt creatieven in Zurenborg, productteams rond station Antwerpen-Berchem en makers in Groenenhoek. Met lokale kennis en een studio in Herzele leveren we prototypes en kleine series die klaar zijn voor pitch, expo of testopstelling.
+Zoek je een partner voor **3D printen in Berchem** die meedenkt met je ontwerp en snel levert? X3DPrints ondersteunt creatieven in Zurenborg, productteams rond station Antwerpen-Berchem en makers in Groenenhoek. Met lokale kennis en een studio in Herzele leveren we prototypes en zowel kleine als grotere series die klaar zijn voor pitch, expo of testopstelling.
 
 ---
 
@@ -84,6 +84,12 @@ Stuur je STL- of STEP-bestand via [contact](/contact) en vermeld kleur, aantal e
 - [Hoofdpagina: 3D printen in Kwaremont](/3d-printen-in-kwaremont)
 - [Hoofdpagina: 3D printen in Ruien](/3d-printen-in-ruien)
 - [Hoofdpagina: 3D printen in Antwerpen](/3d-printen-in-antwerpen)
+
+## Lokale punten in Berchem
+- Centrum van Berchem
+- Lokale bedrijvenzone in Berchem
+- Sporthal in Berchem
+
 
 ## Lokale spotlight
 - Interieur/props voor Zurenborg boutiques: PLA/PETG onderdelen afgestemd op projecten rond Berchem centrum.

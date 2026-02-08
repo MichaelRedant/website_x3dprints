@@ -15,7 +15,7 @@ Need **3D printing in Voorde**? X3DPrints prints in Herzele and ships quickly to
 
 ## Delivery focus for Voorde
 
-We frequently deliver to: Voorde.
+We frequently deliver to: Voorde, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Voorde.
 
 ## What stands out in Voorde
 
-- Local SMEs in Voorde: tailored PETG/PLA parts for teams around Voorde.
-- Common ask: 3D print service Voorde; we advise material and finishing for Voorde.
-- Delivery focus: Voorde.
+- Manufacturing and SMEs around Voorde: prototypes, fixtures and housings.
+- Common ask in Voorde: custom 3D printing with practical PLA/PETG/TPU advice for Voorde.
+- Delivery focus: Voorde, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Voorde.
 
 ## Recent requests around Voorde
 
-- Paint-ready show models for presentations in Voorde and Voorde.
+- Paint-ready show models for presentations in Voorde and the surrounding area.
 - PLA or PETG functional parts for teams in Voorde.
-- TPU grips and pads for bikes, tools or fixtures around Voorde.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Voorde.
 
 ## Useful links near Voorde
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,17 +109,17 @@ Send your files today and get a clear, fast proposal for **3D printing in Voorde
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Voorde
 
-- Coverage: Voorde; delivery from Herzele, pickup available.
+- Coverage: Voorde, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Voorde.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Customer spotlight
-- Local teams in Voorde: small batches with consistent settings near Voorde.
-- Common request: 3D print service Voorde; we pick material and finish for the use case.
+- SMEs and makers in Voorde: fixtures and enclosures.
+- Common request: 3D printing service in Voorde; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Voorde and Voorde.
 
 ## Where we drop off near Voorde
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Voorde
 - Education/labs around Voorde: lesson-ready prints.
 
 ## Common requests around Voorde
-- 3D print service Voorde
-- rapid prototyping Voorde
-- 3D printing bedrijf Voorde
+- 3D printing service in Voorde
+- Custom 3D printing in Voorde
+- 3D model printing in Voorde
 <!-- LOCAL_ENRICH_END -->

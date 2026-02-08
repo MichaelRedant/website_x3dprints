@@ -15,14 +15,14 @@ Need **3D printing in Hove**? X3DPrints prints in Herzele and ships quickly to H
 
 ## Where we deliver around Hove
 
-We frequently deliver to: Hove.
+We frequently deliver to: Hove, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Hove
 
 - Prototypes and housings supporting teams in Hove.
-- Small series with consistent settings for businesses near your region.
+- Small to large series with consistent settings for businesses near your region.
 - Replacement parts and brackets for workshops around Flanders.
 - Promo models, signage and props for events in and around Hove.
 - Brackets, guards and fixtures tuned for teams in Hove.
@@ -32,9 +32,9 @@ We frequently deliver to: Hove.
 
 ## Spotlight: Hove projects
 
-- Local SMEs in Hove: tailored PETG/PLA parts for teams around Hove.
-- Common ask: 3D print service Hove; we advise material and finishing for Hove.
-- Delivery focus: Hove.
+- Manufacturing and SMEs around Hove: prototypes, fixtures and housings.
+- Common ask in Hove: custom 3D printing with practical PLA/PETG/TPU advice for Hove.
+- Delivery focus: Hove, Pickup in Herzele.
 
 ---
 
@@ -57,8 +57,8 @@ We frequently deliver to: Hove.
 ## Popular requests from Hove
 
 - PLA or PETG functional parts for teams in Hove.
-- TPU grips and pads for bikes, tools or fixtures around Hove.
-- Paint-ready show models for presentations in Hove and Hove.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
+- Paint-ready show models for presentations in Hove and the surrounding area.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Hove.
 
 ## FAQ about 3D printing in Hove
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -94,10 +94,7 @@ We frequently deliver to: Hove.
 
 ## Quick links for Hove teams
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Hove**
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Hove
 
-- Coverage: Hove; delivery from Herzele, pickup available.
+- Coverage: Hove, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Hove.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Local spotlight
-- Local teams in Hove: PLA/PETG parts tuned for projects near Hove.
-- Common request: 3D print service Hove; we pick material and finish for the use case.
-- Delivery focus: Hove.
+- SMEs and makers in Hove: fixtures and enclosures.
+- Common request: 3D printing service in Hove; we pick material and finish for the use case.
+- Delivery focus: Hove, Pickup in Herzele.
 
 ## Places we often deliver near Hove
 - Hove town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Hove**
 - Education/labs around Hove: lesson-ready prints.
 
 ## Popular searches from Hove
-- 3D print service Hove
-- rapid prototyping Hove
-- 3D printing bedrijf Hove
+- 3D printing service in Hove
+- Custom 3D printing in Hove
+- 3D model printing in Hove
 <!-- LOCAL_ENRICH_END -->

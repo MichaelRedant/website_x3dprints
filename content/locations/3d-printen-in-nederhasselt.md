@@ -17,10 +17,10 @@
 
 ## Lokale focus in Nederhasselt
 
-Werk je in Nederhasselt? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Nederhasselt.
+Werk je in Nederhasselt? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Nederhasselt.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Nederhasselt
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Nederhasselt** ook ABS, ASA, Nylon of PA-CF v
 ## Voor wie is 3D printen in Nederhasselt interessant?
 
 ### Lokale ondernemers
-Bedrijven gebruiken **3D printen in Nederhasselt** om prototypes te testen en kleine series te produceren.
+Bedrijven gebruiken **3D printen in Nederhasselt** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Hobbyisten en makers
 Creatieve inwoners realiseren persoonlijke projecten via **3D printen in Nederhasselt**.
@@ -132,7 +132,13 @@ Wil je ervaren hoe **3D printen in Nederhasselt** jouw project vooruithelpt? Vra
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Nederhasselt
+- Centrum van Nederhasselt
+- Lokale bedrijvenzone in Nederhasselt
+- Sporthal in Nederhasselt
+
 
 ## Klantenspotlight
 - Lokale teams in Nederhasselt: kleine reeksen met vaste settings rond Nederhasselt.

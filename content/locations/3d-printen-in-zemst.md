@@ -32,7 +32,7 @@ Voor **3D printen in Zemst** leveren we prototypes, behuizingen en tooling richt
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica en IoT.
+- Kleine en grotere series covers en cases voor elektronica en IoT.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Zemst centrum
 - Weerde en Hofstade (Vl.Br.)
 - Eppegem
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Zemst
+
+- Dekking: Zemst, Zemst centrum, Weerde, Hofstade (Vl.Br.), Eppegem, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Zemst.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Logistiek en KMO's langs A12/E19: PLA/PETG onderdelen afgestemd op projecten rond Zemst centrum.
+- Vaak gevraagd: 3D print service Zemst; we adviseren materiaal en afwerking.
+- Leverfocus: Zemst, Zemst centrum, Weerde.
+
+## Plaatsen waar we vaak leveren rond Zemst
+- Centrum van Zemst
+- Lokale bedrijvenzone in Zemst
+- Sporthal in Zemst
+
+## Sectoren die we vaak helpen in Zemst
+- Logistiek en KMO's langs A12/E19 (Zemst)
+- Retail/events in Zemst/Hofstade
+- Makers en onderwijs in de regio (Zemst)
+
+## Veelgevraagde zoekopdrachten in Zemst
+- 3D print service Zemst
+- rapid prototyping Zemst
+- 3D printing bedrijf Zemst
+<!-- LOCAL_ENRICH_END -->

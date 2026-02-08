@@ -70,7 +70,7 @@ Onze **rapid prototyping service in Lede** stelt u in staat om uw ontwerpen raze
 De gemeente Lede, met haar idyllische landschappen langs de Dender, haar sterke gemeenschapszin en de viering van '1000 jaar Lede', is een vruchtbare bodem voor nieuwe ideeën. Met **3D printen in Lede** kunt u:
 
 -   unieke, gepersonaliseerde items creëren die de identiteit van Lede vangen.
--   snel prototypes en kleine series produceren voor lokale bedrijven en start-ups.
+-   snel prototypes en zowel kleine als grotere series produceren voor lokale bedrijven en start-ups.
 -   specifieke onderdelen laten maken die snel beschikbaar moeten zijn voor reparaties of projecten.
 -   educatieve projecten ondersteunen met tastbare leermiddelen die inspireren en de jeugd betrekken bij technologie.
 
@@ -135,6 +135,12 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - [Hoofdpagina: 3D printen in Smetlede](/3d-printen-in-smetlede)
 - [Hoofdpagina: 3D printen in Impe](/3d-printen-in-impe)
 - [Hoofdpagina: 3D printen in Wanzele](/3d-printen-in-wanzele)
+
+## Lokale punten in Lede
+- Centrum van Lede
+- Lokale bedrijvenzone in Lede
+- Sporthal in Lede
+
 
 ## Lokale spotlight
 - Lokale teams in Lede: PLA/PETG onderdelen afgestemd op projecten rond Lede.

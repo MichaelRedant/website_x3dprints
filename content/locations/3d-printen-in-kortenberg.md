@@ -32,7 +32,7 @@ Voor **3D printen in Kortenberg** leveren we prototypes, behuizingen en tooling 
 
 - Brackets, klemmen en fixtures voor productieteams.
 - Displays en signage voor lokale campagnes.
-- Kleine series behuizingen voor elektronica en IoT.
+- Kleine en grotere series behuizingen voor elektronica en IoT.
 
 ---
 
@@ -61,3 +61,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Everberg
 - Erps-Kwerps
 - Meerbeek
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Kortenberg
+
+- Dekking: Kortenberg, Kortenberg centrum, Everberg, Erps-Kwerps, Meerbeek, E40/N2-corridor; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kortenberg.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Spotlight rond Kortenberg
+- Kantoren en tech tussen Brussel-Leuven: behuizingen en pasmallen voor teams in Kortenberg centrum.
+- Terugkerende order: 3D print service Kortenberg; we bewaren je instellingen.
+- Leverfocus: Kortenberg, Kortenberg centrum, Everberg.
+
+## Landmarks in de buurt van Kortenberg
+- Centrum van Kortenberg
+- Lokale bedrijvenzone in Kortenberg
+- Sporthal in Kortenberg
+
+## Teams die we ondersteunen rond Kortenberg
+- Kantoren en tech tussen Brussel-Leuven (Kortenberg)
+- KMO's langs E40/N2 (Kortenberg)
+- Retail en events in Kortenberg en deelgemeenten
+
+## Wat vaak wordt gevraagd in Kortenberg
+- 3D print service Kortenberg
+- rapid prototyping Kortenberg
+- 3D printing bedrijf Kortenberg
+<!-- LOCAL_ENRICH_END -->

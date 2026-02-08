@@ -90,7 +90,13 @@ Zoek je 3D printen in Mortsel? We denken mee over passing, sterkte en look zodat
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Mortsel
+- Centrum van Mortsel
+- Lokale bedrijvenzone in Mortsel
+- Sporthal in Mortsel
+
 
 ## Spotlight rond Mortsel
 - Lokale teams in Mortsel: behuizingen en pasmallen voor teams in Mortsel.

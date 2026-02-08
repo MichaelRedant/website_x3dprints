@@ -39,12 +39,12 @@ const NL_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D print prijs en kosten",
     description:
-      "Indicatieve kosten 3D printen voor prototypes en kleine series. Materialen: PLA (standaard), PLA+ varianten, PETG en TPU.",
+      "Indicatieve kosten 3D printen voor prototypes en zowel kleine als grotere series. Materialen: PLA (standaard), PLA+ varianten, PETG en TPU.",
     images: ["/images/portfolio/2d-6-1-1.webp"],
   },
 }
 
-export const EN_METADATA: Metadata = {
+const EN_METADATA: Metadata = {
   title: "3D Printing Prices | X3DPrints",
   description:
     "3D printing prices from EUR 5 (small), EUR 20 (medium) and EUR 49 (large). PLA, PETG and TPU with a clear quote within 24 hours.",
@@ -69,10 +69,13 @@ export const EN_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D printing prices",
     description:
-      "Indicative rates for prototypes and small batches. Materials: PLA (standard), PLA+ variants, PETG and TPU. Delivery across Belgium.",
+      "Indicative rates for prototypes and small to large batches. Materials: PLA (standard), PLA+ variants, PETG and TPU. Delivery across Belgium.",
     images: ["/images/portfolio/2d-6-1-1.webp"],
   },
 }
+
+
+void EN_METADATA
 
 export const metadata: Metadata = NL_METADATA
 
@@ -392,7 +395,7 @@ export default function Page({ locale }: PageProps) {
       ]
   const heroTrustPoints = isEn
     ? [
-        "Clear 3D print price model for prototypes and small batches",
+        "Clear 3D print price model for prototypes and small to large batches",
         "Material-linked cost logic for PLA, PETG and TPU",
         "Fast route from estimate to quote-ready contact",
       ]

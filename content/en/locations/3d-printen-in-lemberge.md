@@ -1,12 +1,12 @@
 # 3D printing in Lemberge: local, fast and tailored
 
-Need **3D printing in Lemberge**? X3DPrints prints in Herzele and ships quickly to Lemberge and nearby Lemberge centrum. Local 3D printing for Lemberge, Lemberge centrum and Merelbeke, Bottelare, Munte: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Lemberge**? X3DPrints prints in Herzele and ships quickly to Lemberge and nearby Merelbeke. Local 3D printing for Lemberge, Merelbeke and Bottelare, Munte: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Lemberge teams choose us
 
-- Local delivery to Lemberge, Lemberge centrum and Merelbeke, Bottelare, Munte; pickup in Herzele.
+- Local delivery to Lemberge, Merelbeke and Bottelare, Munte; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Lemberge.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Lemberge**? X3DPrints prints in Herzele and ships quickly 
 
 ## Delivery focus for Lemberge
 
-We frequently deliver to: Lemberge, Lemberge centrum, Merelbeke, Bottelare, Munte, Afhalen Herzele.
+We frequently deliver to: Lemberge, Lemberge city center, Merelbeke, Bottelare, Munte, Pickup in Herzele.
 
 ---
 
 ## What teams near Lemberge ask us to make
 
 - Pilot runs for SMEs around Lemberge, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Lemberge centrum.
-- TPU dampers and grips for gear used in Merelbeke.
+- Functional PETG parts for maintenance teams near Merelbeke.
+- TPU dampers and grips for gear used in Bottelare.
 - Presentation models and mockups for pitches around Lemberge.
 - Brackets, guards and fixtures tuned for teams in Lemberge.
 - Demo pieces and props for events near Lemberge.
@@ -32,9 +32,9 @@ We frequently deliver to: Lemberge, Lemberge centrum, Merelbeke, Bottelare, Munt
 
 ## What stands out in Lemberge
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Lemberge centrum.
-- Common ask: 3D print service Lemberge; we advise material and finishing for Merelbeke.
-- Delivery focus: Lemberge, Lemberge centrum, Merelbeke.
+- Makers and product teams in Lemberge: iterative prototyping and short-run production.
+- Common ask in Lemberge: custom 3D printing with practical PLA/PETG/TPU advice for Bottelare.
+- Delivery focus: Lemberge, Lemberge city center, Merelbeke.
 
 ---
 
@@ -48,17 +48,16 @@ We frequently deliver to: Lemberge, Lemberge centrum, Merelbeke, Bottelare, Munt
 
 ## Sectors we back near Lemberge
 
-- Local projects in Lemberge: Lokale makers en ontwerpers
-- Local projects in Lemberge: Kleine series en maatwerk
+- Makers and product teams in Lemberge: iterative prototyping and short-run production.
 - Education and labs around Lemberge: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Lemberge
 
-- Paint-ready show models for presentations in Lemberge and Lemberge centrum.
+- Paint-ready show models for presentations in Lemberge and Merelbeke.
 - PLA or PETG functional parts for teams in Lemberge.
-- TPU grips and pads for bikes, tools or fixtures around Lemberge centrum.
+- TPU grips and pads for bikes, tools or fixtures around Merelbeke.
 
 ---
 
@@ -97,7 +96,6 @@ We frequently deliver to: Lemberge, Lemberge centrum, Merelbeke, Bottelare, Munt
 - [3D printing in Merelbeke](/en/3d-printen-in-merelbeke)
 - [3D printing in Bottelare](/en/3d-printen-in-bottelare)
 - [3D printing in Munte](/en/3d-printen-in-munte)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Lember
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Lemberge
 
-- Coverage: Lemberge, Lemberge centrum, Merelbeke, Bottelare, Munte, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Lemberge, Lemberge city center, Merelbeke, Bottelare, Munte, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Lemberge.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +122,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Lember
 - [Parent page: 3D printing in Merelbeke-Melle](/en/3d-printen-in-merelbeke-melle)
 
 ## Customer spotlight
-- Lokale makers en ontwerpers: small batches with consistent settings near Lemberge centrum.
-- Common request: 3D print service Lemberge; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Lemberge and Lemberge centrum.
+- Makers and product teams in Lemberge: iterative prototyping and short-run production.
+- Common request: 3D printing service in Lemberge; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Merelbeke and Bottelare.
 
 ## Where we drop off near Lemberge
 - Lemberge town center
@@ -134,12 +132,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Lember
 - sports hall in Lemberge
 
 ## Sectors we back near Lemberge
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in Lemberge: iterative prototyping and short-run production.
 - Education/labs around Lemberge: reliable PLA/PETG parts.
 
 ## Common requests around Lemberge
-- 3D print service Lemberge
-- rapid prototyping Lemberge
-- 3D printing bedrijf Lemberge
+- 3D printing service in Lemberge
+- Custom 3D printing in Lemberge
+- 3D model printing in Lemberge
 <!-- LOCAL_ENRICH_END -->

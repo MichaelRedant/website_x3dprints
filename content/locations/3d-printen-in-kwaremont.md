@@ -1,6 +1,6 @@
 # 3D printen in Kwaremont: precieze prints met snelle service
 
-**3D printen in Kwaremont** (Kluisbergen) is ideaal voor prototypes, props en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Kwaremont** (Kluisbergen) is ideaal voor prototypes, props en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -23,10 +23,10 @@
 
 ## Lokale focus in Kwaremont
 
-Werk je in Kwaremont? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Oude Kwaremont.
+Werk je in Kwaremont? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Oude Kwaremont.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 
 ## Materialen voor 3D printen in Kwaremont
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Props en presentatiemodellen met strakke details.
 
 ### Events en clubs
-Kleine series en onderdelen met korte lead time.
+Kleine en grotere series en onderdelen met korte lead time.
 
 ### Makers en onderwijs
 Snelle iteraties met duidelijke planning.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -101,7 +101,6 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 - [3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
 - [3D printen in Berchem (Kluisbergen)](/3d-printen-in-berchem-kluisbergen)
 - [3D printen in Zulzeke](/3d-printen-in-zulzeke)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 ---
 
 ## Externe links
@@ -129,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Berchem](/3d-printen-in-berchem)
 - [Buurpagina: 3D printen in Zulzeke](/3d-printen-in-zulzeke)
 - [Hoofdpagina: 3D printen in Berchem (Kluisbergen)](/3d-printen-in-berchem-kluisbergen)
+
+
 
 ## Spotlight rond Kwaremont
 - Creatieve bureaus en makers: behuizingen en pasmallen voor teams in Kwaremont centrum.

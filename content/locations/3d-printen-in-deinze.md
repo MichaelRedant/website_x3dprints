@@ -1,6 +1,6 @@
 # 3D printen in Deinze: tussen Leie, Brielmeersen en De Prijkels
 
-Voor **3D printen in Deinze** levert X3DPrints snelle prototypes en kleine series naar teams langs de Leie, bedrijven in De Prijkels en ateliers rond het stadscentrum. Je krijgt helder materiaaladvies en een afwerking die past bij je project.
+Voor **3D printen in Deinze** levert X3DPrints snelle prototypes en zowel kleine als grotere series naar teams langs de Leie, bedrijven in De Prijkels en ateliers rond het stadscentrum. Je krijgt helder materiaaladvies en een afwerking die past bij je project.
 
 ---
 
@@ -19,11 +19,11 @@ Voor **3D printen in Deinze** levert X3DPrints snelle prototypes en kleine serie
 
 ## Lokale focus in Deinze
 
-Werk je in Deinze? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Deinze? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Ergonomische grips en handgrepen op maat.
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 
 ## Materialen
 
@@ -75,7 +75,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -88,7 +88,13 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Deinze
+- Centrum van Deinze
+- Lokale bedrijvenzone in Deinze
+- Sporthal in Deinze
+
 
 ## Spotlight rond Deinze
 - Lokale teams in Deinze: behuizingen en pasmallen voor teams in Deinze.

@@ -1,12 +1,12 @@
 # 3D printing in Schellebelle: local, fast and tailored
 
-Need **3D printing in Schellebelle**? X3DPrints prints in Herzele and ships quickly to Schellebelle and nearby Schellebelle centrum. Local 3D printing for Schellebelle, Schellebelle centrum and Wichelen, Serskamp, Wetteren: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Schellebelle**? X3DPrints prints in Herzele and ships quickly to Schellebelle and nearby Wichelen. Local 3D printing for Schellebelle, Wichelen and Serskamp, Wetteren: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Schellebelle teams choose us
 
-- Local delivery to Schellebelle, Schellebelle centrum and Wichelen, Serskamp, Wetteren; pickup in Herzele.
+- Local delivery to Schellebelle, Wichelen and Serskamp, Wetteren; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Schellebelle.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Schellebelle**? X3DPrints prints in Herzele and ships quic
 
 ## Delivery focus for Schellebelle
 
-We frequently deliver to: Schellebelle, Schellebelle centrum, Wichelen, Serskamp, Wetteren, Afhalen Herzele.
+We frequently deliver to: Schellebelle, Schellebelle city center, Wichelen, Serskamp, Wetteren, Pickup in Herzele.
 
 ---
 
 ## What teams near Schellebelle ask us to make
 
 - Pilot runs for SMEs around Schellebelle, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Schellebelle centrum.
-- TPU dampers and grips for gear used in Wichelen.
+- Functional PETG parts for maintenance teams near Wichelen.
+- TPU dampers and grips for gear used in Serskamp.
 - Presentation models and mockups for pitches around Schellebelle.
 - Brackets, guards and fixtures tuned for teams in Schellebelle.
 - Demo pieces and props for events near Schellebelle.
@@ -32,9 +32,9 @@ We frequently deliver to: Schellebelle, Schellebelle centrum, Wichelen, Serskamp
 
 ## What stands out in Schellebelle
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Schellebelle centrum.
-- Common ask: 3D print service Schellebelle; we advise material and finishing for Wichelen.
-- Delivery focus: Schellebelle, Schellebelle centrum, Wichelen.
+- Makers and product teams in Schellebelle: iterative prototyping and short-run production.
+- Common ask in Schellebelle: custom 3D printing with practical PLA/PETG/TPU advice for Serskamp.
+- Delivery focus: Schellebelle, Schellebelle city center, Wichelen.
 
 ---
 
@@ -48,17 +48,16 @@ We frequently deliver to: Schellebelle, Schellebelle centrum, Wichelen, Serskamp
 
 ## Sectors we back near Schellebelle
 
-- Local projects in Schellebelle: Lokale makers en ontwerpers
-- Local projects in Schellebelle: Kleine series en maatwerk
+- Makers and product teams in Schellebelle: iterative prototyping and short-run production.
 - Education and labs around Schellebelle: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Schellebelle
 
-- Paint-ready show models for presentations in Schellebelle and Schellebelle centrum.
+- Paint-ready show models for presentations in Schellebelle and Wichelen.
 - PLA or PETG functional parts for teams in Schellebelle.
-- TPU grips and pads for bikes, tools or fixtures around Schellebelle centrum.
+- TPU grips and pads for bikes, tools or fixtures around Wichelen.
 
 ---
 
@@ -97,7 +96,6 @@ We frequently deliver to: Schellebelle, Schellebelle centrum, Wichelen, Serskamp
 - [3D printing in Wichelen](/en/3d-printen-in-wichelen)
 - [3D printing in Serskamp](/en/3d-printen-in-serskamp)
 - [3D printing in Wetteren](/en/3d-printen-in-wetteren)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Schell
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Schellebelle
 
-- Coverage: Schellebelle, Schellebelle centrum, Wichelen, Serskamp, Wetteren, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Schellebelle, Schellebelle city center, Wichelen, Serskamp, Wetteren, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Schellebelle.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +121,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Schell
 - [Nearby: 3D printing in Wetteren](/en/3d-printen-in-wetteren)
 
 ## Customer spotlight
-- Lokale makers en ontwerpers: small batches with consistent settings near Schellebelle centrum.
-- Common request: 3D print service Schellebelle; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Schellebelle and Schellebelle centrum.
+- Makers and product teams in Schellebelle: iterative prototyping and short-run production.
+- Common request: 3D printing service in Schellebelle; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Wichelen and Serskamp.
 
 ## Where we drop off near Schellebelle
 - Schellebelle town center
@@ -133,12 +131,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Schell
 - sports hall in Schellebelle
 
 ## Sectors we back near Schellebelle
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in Schellebelle: iterative prototyping and short-run production.
 - Education/labs around Schellebelle: reliable PLA/PETG parts.
 
 ## Common requests around Schellebelle
-- 3D print service Schellebelle
-- rapid prototyping Schellebelle
-- 3D printing bedrijf Schellebelle
+- 3D printing service in Schellebelle
+- Custom 3D printing in Schellebelle
+- 3D model printing in Schellebelle
 <!-- LOCAL_ENRICH_END -->

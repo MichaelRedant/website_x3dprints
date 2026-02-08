@@ -76,7 +76,7 @@ const workflowSteps = [
 
 const highlights = [
   "Typische FDM-richtlijn rond +/-0,2 mm, afhankelijk van geometrie en orientatie",
-  "Snel itereren in kleine batches zonder overproductie",
+  "Snel itereren in kleine en grotere batches zonder overproductie",
   "Duidelijke communicatie door directe lijn met dezelfde operator",
 ]
 

@@ -1,6 +1,6 @@
 # 3D printen in Sint-Gillis-Waas: maatwerk in het Waasland
 
-**3D printen in Sint-Gillis-Waas** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Sint-Gillis-Waas** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,14 +82,14 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Sint-Gillis-Waas
 
-**Kunnen jullie kleine series leveren in Sint-Gillis-Waas?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Sint-Gillis-Waas?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Sint-Gillis-Waas?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Meerdonk](/3d-printen-in-meerdonk)
 - [Buurpagina: 3D printen in Sint-Pauwels](/3d-printen-in-sint-pauwels)
 - [Hoofdpagina: 3D printen in Nieuwkerken-Waas](/3d-printen-in-nieuwkerken-waas)
+
+
 
 ## Spotlight rond Sint-Gillis-Waas
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Sint-Gillis-Waas centrum.

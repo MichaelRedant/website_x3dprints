@@ -1,6 +1,6 @@
 # 3D printen in Wieze: prototypes met korte doorlooptijd
 
-**3D printen in Wieze** (Lebbeke) is ideaal voor prototypes en kleine series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Wieze** (Lebbeke) is ideaal voor prototypes en zowel kleine als grotere series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Lokale focus in Wieze
 
-Werk je in Wieze? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Sint-Salvatorkerk (Wieze).
+Werk je in Wieze? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Salvatorkerk (Wieze).
 
 - Maquettes en detailmodellen voor erfgoed en presentaties.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Wieze interessant?
 
 ### Lokale ondernemers
-Kleine series en onderdelen op maat met snelle levering.
+Kleine en grotere series en onderdelen op maat met snelle levering.
 
 ### Onderhoud en herstellingen
 Sterke prints die tegen een stootje kunnen.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 **Welke bestanden kan ik aanleveren voor Wieze?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Wieze?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Wieze?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Wieze?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -101,7 +101,6 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 - [3D printen in Lebbeke](/3d-printen-in-lebbeke)
 - [3D printen in Denderbelle](/3d-printen-in-denderbelle)
 - [3D printen in Dendermonde](/3d-printen-in-dendermonde)
-- [3D printen in Aalst](/3d-printen-in-aalst)
 ---
 
 ## Externe links
@@ -128,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Lebbeke](/3d-printen-in-lebbeke)
 - [Buurpagina: 3D printen in Denderbelle](/3d-printen-in-denderbelle)
 - [Buurpagina: 3D printen in Buggenhout](/3d-printen-in-buggenhout)
+
+
 
 ## Lokale spotlight
 - Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Wieze centrum.

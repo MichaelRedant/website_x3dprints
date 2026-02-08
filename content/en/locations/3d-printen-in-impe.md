@@ -1,12 +1,12 @@
 # 3D printing in Impe: local, fast and tailored
 
-Need **3D printing in Impe**? X3DPrints prints in Herzele and ships quickly to Impe and nearby Impe centrum. Local 3D printing for Impe, Impe centrum and Lede, Smetlede, Wanzele: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Impe**? X3DPrints prints in Herzele and ships quickly to Impe and nearby Lede. Local 3D printing for Impe, Lede and Smetlede, Wanzele: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Impe teams choose us
 
-- Local delivery to Impe, Impe centrum and Lede, Smetlede, Wanzele; pickup in Herzele.
+- Local delivery to Impe, Lede and Smetlede, Wanzele; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Impe.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Impe**? X3DPrints prints in Herzele and ships quickly to I
 
 ## Delivery focus for Impe
 
-We frequently deliver to: Impe, Impe centrum, Lede, Smetlede, Wanzele, Afhalen Herzele.
+We frequently deliver to: Impe, Impe city center, Lede, Smetlede, Wanzele, Pickup in Herzele.
 
 ---
 
 ## What teams near Impe ask us to make
 
 - Pilot runs for SMEs around Impe, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Impe centrum.
-- TPU dampers and grips for gear used in Lede.
+- Functional PETG parts for maintenance teams near Lede.
+- TPU dampers and grips for gear used in Smetlede.
 - Presentation models and mockups for pitches around Impe.
 - Brackets, guards and fixtures tuned for teams in Impe.
 - Demo pieces and props for events near Impe.
@@ -32,9 +32,9 @@ We frequently deliver to: Impe, Impe centrum, Lede, Smetlede, Wanzele, Afhalen H
 
 ## What stands out in Impe
 
-- Lokale makers en techniekers: tailored PETG/PLA parts for teams around Impe centrum.
-- Common ask: 3D print service Impe; we advise material and finishing for Lede.
-- Delivery focus: Impe, Impe centrum, Lede.
+- SMEs and industry near Impe: fixtures, enclosures and small to large batches.
+- Common ask in Impe: custom 3D printing with practical PLA/PETG/TPU advice for Smetlede.
+- Delivery focus: Impe, Impe city center, Lede.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Impe, Impe centrum, Lede, Smetlede, Wanzele, Afhalen H
 
 ## Sectors we back near Impe
 
-- Local projects in Impe: Lokale makers en techniekers
-- Local projects in Impe: Kleine series en maatwerk
-- Local projects in Impe: Verenigingen en scholen
+- SMEs and industry near Impe: fixtures, enclosures and small to large batches.
+- Makers and product teams in Impe: iterative prototyping and short-run production.
+- Education and labs around Impe: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Impe
 
-- Paint-ready show models for presentations in Impe and Impe centrum.
+- Paint-ready show models for presentations in Impe and Lede.
 - PLA or PETG functional parts for teams in Impe.
-- TPU grips and pads for bikes, tools or fixtures around Impe centrum.
+- TPU grips and pads for bikes, tools or fixtures around Lede.
 
 ---
 
@@ -97,7 +97,6 @@ We frequently deliver to: Impe, Impe centrum, Lede, Smetlede, Wanzele, Afhalen H
 - [3D printing in Lede](/en/3d-printen-in-lede)
 - [3D printing in Smetlede](/en/3d-printen-in-smetlede)
 - [3D printing in Wanzele](/en/3d-printen-in-wanzele)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Impe**
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Impe
 
-- Coverage: Impe, Impe centrum, Lede, Smetlede, Wanzele, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Impe, Impe city center, Lede, Smetlede, Wanzele, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Impe.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +122,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Impe**
 - [Nearby: 3D printing in Wanzele](/en/3d-printen-in-wanzele)
 
 ## Customer spotlight
-- Lokale makers en techniekers: small batches with consistent settings near Impe centrum.
-- Common request: 3D print service Impe; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Impe and Impe centrum.
+- SMEs/industry near Impe: prototypes, fixtures, housings.
+- Common request: 3D printing service in Impe; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Lede and Smetlede.
 
 ## Where we drop off near Impe
 - Impe town center
@@ -133,12 +132,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Impe**
 - sports hall in Impe
 
 ## Sectors we back near Impe
-- Local focus: Lokale makers en techniekers
-- Local focus: Kleine series en maatwerk
-- Local focus: Verenigingen en scholen
+- SMEs/industry near Impe: prototypes, fixtures, housings.
+- Makers and product teams in Impe: iterative prototyping and short-run production.
+- Education/labs around Impe: reliable PLA/PETG parts.
 
 ## Common requests around Impe
-- 3D print service Impe
-- rapid prototyping Impe
-- 3D printing bedrijf Impe
+- 3D printing service in Impe
+- Custom 3D printing in Impe
+- 3D model printing in Impe
 <!-- LOCAL_ENRICH_END -->

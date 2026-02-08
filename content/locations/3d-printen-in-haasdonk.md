@@ -22,11 +22,11 @@
 
 ## Lokale focus in Haasdonk
 
-Werk je in Haasdonk? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Fort van Haasdonk.
+Werk je in Haasdonk? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Fort van Haasdonk.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Haasdonk
 
@@ -43,7 +43,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Haasdonk interessant?
 
 ### Lokale ondernemers
-Onderdelen en kleine series met snelle levering.
+Onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Technische herstellingen
 Maatwerk onderdelen die snel moeten passen.
@@ -81,7 +81,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -93,8 +93,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Haasdonk?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Haasdonk?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Haasdonk?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Beveren
 - [3D printen in Kallo](/3d-printen-in-kallo)
@@ -125,6 +125,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Melsele](/3d-printen-in-melsele)
 - [Buurpagina: 3D printen in Kallo](/3d-printen-in-kallo)
 - [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
+
 
 ## Klantenspotlight
 - Lokale KMO's en techniekers: kleine reeksen met vaste settings rond Haasdonk centrum.

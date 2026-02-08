@@ -1,6 +1,6 @@
 # 3D printen in Boekhoute: maatwerk voor makers en kmo's
 
-**3D printen in Boekhoute** is perfect voor prototypes, onderdelen en kleine series. Boekhoute is een deelgemeente van Assenede en ligt in het Meetjesland. X3DPrints levert snel vanuit Herzele met persoonlijk advies.
+**3D printen in Boekhoute** is perfect voor prototypes, onderdelen en zowel kleine als grotere series. Boekhoute is een deelgemeente van Assenede en ligt in het Meetjesland. X3DPrints levert snel vanuit Herzele met persoonlijk advies.
 
 ---
 
@@ -43,13 +43,13 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Boekhoute interessant?
 
 ### Lokale ondernemers
-Prototypes en kleine series voor producttests of presentaties.
+Prototypes en zowel kleine als grotere series voor producttests of presentaties.
 
 ### Makers en hobbyisten
 Snelle realisatie van unieke onderdelen.
 
 ### Verenigingen en events
-Kleine series en maatwerk voor lokale activiteiten.
+Kleine en grotere series en maatwerk voor lokale activiteiten.
 
 ---
 
@@ -81,14 +81,14 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Boekhoute
 
-**Kunnen jullie kleine series leveren in Boekhoute?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Boekhoute?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Boekhoute?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -124,6 +124,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Assenede](/3d-printen-in-assenede)
 - [Buurpagina: 3D printen in Bassevelde](/3d-printen-in-bassevelde)
 - [Buurpagina: 3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
+
+
 
 ## Lokale spotlight
 - Creatieve projecten en retail: PLA/PETG onderdelen afgestemd op projecten rond Boekhoute centrum.

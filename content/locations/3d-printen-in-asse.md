@@ -2,7 +2,7 @@
 
 
 
-Voor **3D printen in Asse** leveren we prototypes en kleine series richting de Markt, station Asse en de industriezone richting Mollem/Zellik. Je krijgt strakke toleranties, snelle levering en materiaaladvies op maat.
+Voor **3D printen in Asse** leveren we prototypes en zowel kleine als grotere series richting de Markt, station Asse en de industriezone richting Mollem/Zellik. Je krijgt strakke toleranties, snelle levering en materiaaladvies op maat.
 
 
 
@@ -66,7 +66,7 @@ In Asse helpen we makers en bedrijven met 3D prints die vlot passen en lang meeg
 
 
 
-- Retail en horeca: displays, houders en kleine series badges.
+- Retail en horeca: displays, houders en zowel kleine als grotere series badges.
 
 - KMO's en techniek: klemmen, behuizingen en hulponderdelen voor machines.
 
@@ -142,7 +142,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Asse
+- Centrum van Asse
+- Lokale bedrijvenzone in Asse
+- Sporthal in Asse
+
 
 ## Lokale spotlight
 - Lokale teams in Asse: PLA/PETG onderdelen afgestemd op projecten rond Asse.

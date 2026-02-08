@@ -74,7 +74,7 @@ Voor **3D printen in Rumst** leveren we onderdelen die klaar zijn voor de werven
 
 ## Lokale focus in Rumst
 
-Werk je in Rumst? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Rumst? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 - Behuizingen en covers voor elektronica, sensoren of prototypes.
@@ -104,7 +104,13 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Rumst
+- Centrum van Rumst
+- Lokale bedrijvenzone in Rumst
+- Sporthal in Rumst
+
 
 ## Klantenspotlight
 - Lokale teams in Rumst: kleine reeksen met vaste settings rond Rumst.

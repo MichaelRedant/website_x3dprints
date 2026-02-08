@@ -1,12 +1,12 @@
 # 3D printing in Burcht: local, fast and tailored
 
-Need **3D printing in Burcht**? X3DPrints prints in Herzele and ships quickly to Burcht and nearby Burcht centrum. Local 3D printing for Burcht, Burcht centrum and Zwijndrecht, Kruibeke, Bazel: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Burcht**? X3DPrints prints in Herzele and ships quickly to Burcht and nearby Zwijndrecht. Local 3D printing for Burcht, Zwijndrecht and Kruibeke, Bazel: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Burcht teams choose us
 
-- Local delivery to Burcht, Burcht centrum and Zwijndrecht, Kruibeke, Bazel; pickup in Herzele.
+- Local delivery to Burcht, Zwijndrecht and Kruibeke, Bazel; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Burcht.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Burcht**? X3DPrints prints in Herzele and ships quickly to
 
 ## Areas we serve near Burcht
 
-We frequently deliver to: Burcht, Burcht centrum, Zwijndrecht, Kruibeke, Bazel, Afhalen Herzele.
+We frequently deliver to: Burcht, Burcht city center, Zwijndrecht, Kruibeke, Bazel, Pickup in Herzele.
 
 ---
 
 ## Projects we help deliver near Burcht
 
 - Prototype housings and fixtures used by teams in Burcht.
-- Short-run batches that stay consistent for companies near Burcht centrum.
-- Replacement brackets and guards for workshops around Zwijndrecht.
+- Short-run batches that stay consistent for companies near Zwijndrecht.
+- Replacement brackets and guards for workshops around Kruibeke.
 - Display pieces and branded props for events near Burcht.
 - Brackets, guards and fixtures tuned for teams in Burcht.
 - Demo pieces and props for events near Burcht.
@@ -32,9 +32,9 @@ We frequently deliver to: Burcht, Burcht centrum, Zwijndrecht, Kruibeke, Bazel, 
 
 ## Local spotlight for Burcht
 
-- Lokale KMO's en zelfstandigen: tailored PETG/PLA parts for teams around Burcht centrum.
-- Common ask: 3D print service Burcht; we advise material and finishing for Zwijndrecht.
-- Delivery focus: Burcht, Burcht centrum, Zwijndrecht.
+- SMEs and industry near Burcht: fixtures, enclosures and small to large batches.
+- Common ask in Burcht: custom 3D printing with practical PLA/PETG/TPU advice for Kruibeke.
+- Delivery focus: Burcht, Burcht city center, Zwijndrecht.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Burcht, Burcht centrum, Zwijndrecht, Kruibeke, Bazel, 
 
 ## Who we support around Burcht
 
-- SMEs and industry near Burcht: fixtures, enclosures and small batches.
+- SMEs and industry near Burcht: fixtures, enclosures and small to large batches.
 - Education and labs around Burcht: lesson-ready prints in PLA/PETG.
-- Local projects in Burcht: Makers en hobbyisten
+- Makers and product teams in Burcht: iterative prototyping and short-run production.
 
 ---
 
 ## What clients near Burcht often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Burcht centrum.
+- TPU grips and pads for bikes, tools or fixtures around Zwijndrecht.
 - PLA or PETG functional parts for teams in Burcht.
-- Paint-ready show models for presentations in Burcht and Burcht centrum.
+- Paint-ready show models for presentations in Burcht and Zwijndrecht.
 
 ---
 
@@ -97,7 +97,6 @@ We frequently deliver to: Burcht, Burcht centrum, Zwijndrecht, Kruibeke, Bazel, 
 - [3D printing in Zwijndrecht](/en/3d-printen-in-zwijndrecht)
 - [3D printing in Kruibeke](/en/3d-printen-in-kruibeke)
 - [3D printing in Bazel](/en/3d-printen-in-bazel)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Burcht
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Burcht
 
-- Coverage: Burcht, Burcht centrum, Zwijndrecht, Kruibeke, Bazel, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Burcht, Burcht city center, Zwijndrecht, Kruibeke, Bazel, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Burcht.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +123,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Burcht
 - [Parent page: 3D printing in Beveren-Kruibeke-Zwijndrecht](/en/3d-printen-in-beveren-kruibeke-zwijndrecht)
 
 ## Spotlight near Burcht
-- Lokale KMO's en zelfstandigen: fixtures and housings for teams around Burcht centrum.
-- Frequent order: 3D print service Burcht; we keep settings for reorders.
-- Delivery focus: Burcht, Burcht centrum, Zwijndrecht.
+- SMEs/industry near Burcht: prototypes, fixtures, housings.
+- Frequent order: 3D printing service in Burcht; we keep settings for reorders.
+- Delivery focus: Burcht, Burcht city center, Zwijndrecht.
 
 ## Landmarks around Burcht
 - Burcht town center
@@ -136,10 +135,10 @@ Send your files today and get a clear, fast proposal for **3D printing in Burcht
 ## Teams we support around Burcht
 - SMEs/industry near Burcht: prototypes, fixtures, housings.
 - Education/labs around Burcht: reliable PLA/PETG parts.
-- Local focus: Makers en hobbyisten
+- Makers and product teams in Burcht: iterative prototyping and short-run production.
 
 ## Frequently asked in Burcht
-- 3D print service Burcht
-- rapid prototyping Burcht
-- 3D printing bedrijf Burcht
+- 3D printing service in Burcht
+- Custom 3D printing in Burcht
+- 3D model printing in Burcht
 <!-- LOCAL_ENRICH_END -->

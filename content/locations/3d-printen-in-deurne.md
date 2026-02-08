@@ -19,7 +19,7 @@ Zoek je een vlotte partner voor **3D printen in Deurne**? X3DPrints ondersteunt 
 
 ## Lokale focus in Deurne
 
-Werk je in Deurne? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Deurne? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 - Behuizingen en covers voor elektronica, sensoren of prototypes.
@@ -82,6 +82,12 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur
 
 ## Gerelateerde buurtpagina's
 - [Hoofdpagina: 3D printen in Borsbeek](/3d-printen-in-borsbeek)
+
+## Lokale punten in Deurne
+- Centrum van Deurne
+- Lokale bedrijvenzone in Deurne
+- Sporthal in Deurne
+
 
 ## Klantenspotlight
 - Events/props rond Sportpaleis: kleine reeksen met vaste settings rond Deurne centrum.

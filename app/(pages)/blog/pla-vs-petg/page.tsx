@@ -19,7 +19,7 @@ const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=pla-vs
 export const metadata: Metadata = {
   title: "PLA vs PETG: welk materiaal kies je? | X3DPrints",
   description:
-    "Vergelijk PLA en PETG op afwerking, sterkte, hittebestendigheid en kost zodat je sneller het juiste materiaal kiest.",
+    "Vergelijk PLA en PETG als 3d print materiaal: deze gids helpt je 3d print materialen beoordelen en het juiste materiaal 3d printen per use-case kiezen.",
   alternates: {
     canonical,
     languages: {
@@ -196,7 +196,8 @@ export default function BlogPlaVsPetgPage() {
             PLA vs PETG: welk materiaal kies je?
           </h1>
           <p className="max-w-3xl text-lg text-slate-700">
-            Kort samengevat: PLA wint op snelle visuele output, PETG op functionele robuustheid. De juiste keuze hangt af van je use-case.
+            Kort samengevat: PLA wint op snelle visuele output, PETG op functionele robuustheid. De juiste keuze hangt af van je use-case en van welk 3d print materiaal je prioriteit geeft.
+            Gebruik deze vergelijking om verschillende 3d print materialen gericht te beoordelen.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
             Laatst bijgewerkt: 7 februari 2026

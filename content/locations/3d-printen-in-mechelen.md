@@ -15,7 +15,7 @@ Mechelen ligt centraal tussen Antwerpen en Brussel. We printen voor teams rond M
 
 Voor projecten in Mechelen combineren we korte doorlooptijd met strakke afwerking.
 
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 
@@ -53,7 +53,7 @@ Stuur je STL/STEP via het contactformulier. Vermeld materiaal (PLA/PETG/TPU), ge
 
 ## Veelgestelde vragen over 3D printen in Mechelen
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -78,6 +78,12 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - [Buurpagina: 3D printen in Walem](/3d-printen-in-walem)
 - [Buurpagina: 3D printen in Leest](/3d-printen-in-leest)
 - [Buurpagina: 3D printen in Hombeek](/3d-printen-in-hombeek)
+
+## Lokale punten in Mechelen
+- Centrum van Mechelen
+- Lokale bedrijvenzone in Mechelen
+- Sporthal in Mechelen
+
 
 ## Lokale spotlight
 - Prototyping voor KMO's in Mechelen: PLA/PETG onderdelen afgestemd op projecten rond Mechelen centrum.

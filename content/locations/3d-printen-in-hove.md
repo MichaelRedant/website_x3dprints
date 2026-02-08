@@ -14,7 +14,7 @@ Voor **3D printen in Hove** leveren we snel richting het centrum, de Lintsesteen
 
 - ⚡ **Snelle opvolging**: offerte meestal binnen één werkdag, levering in enkele werkdagen.
 
-- 🎯 **Strakke details**: nauwkeurige prints voor montage, zichtwerk of kleine series.
+- 🎯 **Strakke details**: nauwkeurige prints voor montage, zichtwerk of kleine en grotere series.
 
 - 🧱 **Materiaalkeuze per toepassing**: PLA Matte voor esthetiek, PETG voor robuust gebruik, TPU voor flexibele klemmen.
 
@@ -32,7 +32,7 @@ Voor **3D printen in Hove** leveren we snel richting het centrum, de Lintsesteen
 
 - **Makers nabij het station**: behuizingen voor sensoren, brackets voor domotica of slimme houders voor fietsenstallingen.
 
-- **Retail langs de Lintsesteenweg**: displays, kassahulpmiddelen en badgehouders in kleine oplages.
+- **Retail langs de Lintsesteenweg**: displays, kassahulpmiddelen en badgehouders in kleine en grotere oplages.
 
 
 
@@ -106,7 +106,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Hove
+- Centrum van Hove
+- Lokale bedrijvenzone in Hove
+- Sporthal in Hove
+
 
 ## Lokale spotlight
 - Lokale teams in Hove: PLA/PETG onderdelen afgestemd op projecten rond Hove.

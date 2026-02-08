@@ -1,12 +1,12 @@
 # 3D printing in Sleidinge: local, fast and tailored
 
-Need **3D printing in Sleidinge**? X3DPrints prints in Herzele and ships quickly to Sleidinge and nearby Sleidinge centrum. Local 3D printing for Sleidinge, Sleidinge centrum and Evergem, Kluizen, Afhalen Herzele: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Sleidinge**? X3DPrints prints in Herzele and ships quickly to Sleidinge and nearby Evergem. Local 3D printing for Sleidinge, Evergem and Kluizen: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Sleidinge teams choose us
 
-- Local delivery to Sleidinge, Sleidinge centrum and Evergem, Kluizen, Afhalen Herzele; pickup in Herzele.
+- Local delivery to Sleidinge, Evergem and Kluizen; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sleidinge.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Sleidinge**? X3DPrints prints in Herzele and ships quickly
 
 ## Where we deliver around Sleidinge
 
-We frequently deliver to: Sleidinge, Sleidinge centrum, Evergem, Kluizen, Afhalen Herzele.
+We frequently deliver to: Sleidinge, Sleidinge city center, Evergem, Kluizen, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Sleidinge
 
 - Prototypes and housings supporting teams in Sleidinge.
-- Small series with consistent settings for businesses near Sleidinge centrum.
-- Replacement parts and brackets for workshops around Evergem.
+- Small to large series with consistent settings for businesses near Evergem.
+- Replacement parts and brackets for workshops around Kluizen.
 - Promo models, signage and props for events in and around Sleidinge.
 - Brackets, guards and fixtures tuned for teams in Sleidinge.
 - Demo pieces and props for events near Sleidinge.
@@ -32,9 +32,9 @@ We frequently deliver to: Sleidinge, Sleidinge centrum, Evergem, Kluizen, Afhale
 
 ## Spotlight: Sleidinge projects
 
-- KMO's en zelfstandigen: tailored PETG/PLA parts for teams around Sleidinge centrum.
-- Common ask: 3D print service Sleidinge; we advise material and finishing for Evergem.
-- Delivery focus: Sleidinge, Sleidinge centrum, Evergem.
+- SMEs and industry near Sleidinge: fixtures, enclosures and small to large batches.
+- Common ask in Sleidinge: custom 3D printing with practical PLA/PETG/TPU advice for Kluizen.
+- Delivery focus: Sleidinge, Sleidinge city center, Evergem.
 
 ---
 
@@ -48,7 +48,7 @@ We frequently deliver to: Sleidinge, Sleidinge centrum, Evergem, Kluizen, Afhale
 
 ## Teams we often help near Sleidinge
 
-- SMEs and industry near Sleidinge: fixtures, enclosures and small batches.
+- SMEs and industry near Sleidinge: fixtures, enclosures and small to large batches.
 - Education and labs around Sleidinge: lesson-ready prints in PLA/PETG.
 - Retail/marketing/events in Sleidinge: displays, props and branded pieces.
 
@@ -57,8 +57,8 @@ We frequently deliver to: Sleidinge, Sleidinge centrum, Evergem, Kluizen, Afhale
 ## Popular requests from Sleidinge
 
 - PLA or PETG functional parts for teams in Sleidinge.
-- TPU grips and pads for bikes, tools or fixtures around Sleidinge centrum.
-- Paint-ready show models for presentations in Sleidinge and Sleidinge centrum.
+- TPU grips and pads for bikes, tools or fixtures around Evergem.
+- Paint-ready show models for presentations in Sleidinge and Evergem.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Sleidinge, Sleidinge centrum, Evergem, Kluizen, Afhale
 
 ## FAQ about 3D printing in Sleidinge
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -96,8 +96,6 @@ We frequently deliver to: Sleidinge, Sleidinge centrum, Evergem, Kluizen, Afhale
 
 - [3D printing in Evergem](/en/3d-printen-in-evergem)
 - [3D printing in Kluizen](/en/3d-printen-in-kluizen)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Sleidi
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Sleidinge
 
-- Coverage: Sleidinge, Sleidinge centrum, Evergem, Kluizen, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Sleidinge, Sleidinge city center, Evergem, Kluizen, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Sleidinge.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -122,9 +120,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Sleidi
 - [Nearby: 3D printing in Kluizen](/en/3d-printen-in-kluizen)
 
 ## Local spotlight
-- KMO's en zelfstandigen: PLA/PETG parts tuned for projects near Sleidinge centrum.
-- Common request: 3D print service Sleidinge; we pick material and finish for the use case.
-- Delivery focus: Sleidinge, Sleidinge centrum, Evergem.
+- SMEs/industry near Sleidinge: prototypes, fixtures, housings.
+- Common request: 3D printing service in Sleidinge; we pick material and finish for the use case.
+- Delivery focus: Sleidinge, Sleidinge city center, Evergem.
 
 ## Places we often deliver near Sleidinge
 - Sleidinge town center
@@ -137,7 +135,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Sleidi
 - Retail/marketing/events in Sleidinge: displays, signage, props.
 
 ## Popular searches from Sleidinge
-- 3D print service Sleidinge
-- rapid prototyping Sleidinge
-- 3D printing bedrijf Sleidinge
+- 3D printing service in Sleidinge
+- Custom 3D printing in Sleidinge
+- 3D model printing in Sleidinge
 <!-- LOCAL_ENRICH_END -->

@@ -15,7 +15,7 @@ Need **3D printing in Mortsel**? X3DPrints prints in Herzele and ships quickly t
 
 ## Areas we serve near Mortsel
 
-We frequently deliver to: Mortsel.
+We frequently deliver to: Mortsel, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Mortsel.
 
 ## Local spotlight for Mortsel
 
-- Local SMEs in Mortsel: tailored PETG/PLA parts for teams around Mortsel.
-- Common ask: 3D print service Mortsel; we advise material and finishing for Mortsel.
-- Delivery focus: Mortsel.
+- Manufacturing and SMEs around Mortsel: prototypes, fixtures and housings.
+- Common ask in Mortsel: custom 3D printing with practical PLA/PETG/TPU advice for Mortsel.
+- Delivery focus: Mortsel, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Mortsel.
 
 ## What clients near Mortsel often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Mortsel.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 - PLA or PETG functional parts for teams in Mortsel.
-- Paint-ready show models for presentations in Mortsel and Mortsel.
+- Paint-ready show models for presentations in Mortsel and the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Mortsel.
 
 ## Related pages for Mortsel
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Mortse
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Mortsel
 
-- Coverage: Mortsel; delivery from Herzele, pickup available.
+- Coverage: Mortsel, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Mortsel.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Spotlight near Mortsel
-- Local teams in Mortsel: fixtures and housings for teams around Mortsel.
-- Frequent order: 3D print service Mortsel; we keep settings for reorders.
-- Delivery focus: Mortsel.
+- SMEs and makers in Mortsel: fixtures and enclosures.
+- Frequent order: 3D printing service in Mortsel; we keep settings for reorders.
+- Delivery focus: Mortsel, Pickup in Herzele.
 
 ## Landmarks around Mortsel
 - Mortsel town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Mortse
 - Education/labs around Mortsel: lesson-ready prints.
 
 ## Frequently asked in Mortsel
-- 3D print service Mortsel
-- rapid prototyping Mortsel
-- 3D printing bedrijf Mortsel
+- 3D printing service in Mortsel
+- Custom 3D printing in Mortsel
+- 3D model printing in Mortsel
 <!-- LOCAL_ENRICH_END -->

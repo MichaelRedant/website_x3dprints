@@ -32,7 +32,7 @@ Met **3D printen in Tremelo** leveren we prototypes, behuizingen en tooling rich
 
 - Fixtures en serviceparts voor productie en onderhoud.
 - Signage en props voor lokale campagnes.
-- Kleine series covers en cases voor IoT en elektronica.
+- Kleine en grotere series covers en cases voor IoT en elektronica.
 
 ---
 
@@ -61,3 +61,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Baal
 - Ninde
 - N19-corridor
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Tremelo
+
+- Dekking: Tremelo, Tremelo centrum, Baal, Ninde, Langs Dijle en N19, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Tremelo.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Events en retail rond Damiaan/Baal: PLA/PETG onderdelen afgestemd op projecten rond Tremelo centrum.
+- Vaak gevraagd: 3D print service Tremelo; we adviseren materiaal en afwerking.
+- Leverfocus: Tremelo, Tremelo centrum, Baal.
+
+## Plaatsen waar we vaak leveren rond Tremelo
+- Centrum van Tremelo
+- Lokale bedrijvenzone in Tremelo
+- Sporthal in Tremelo
+
+## Sectoren die we vaak helpen in Tremelo
+- Events en retail rond Damiaan/Baal (Tremelo)
+- KMO's in Tremelo en N19-corridor
+- Makers en onderwijs in het Hageland (Tremelo)
+
+## Veelgevraagde zoekopdrachten in Tremelo
+- 3D print service Tremelo
+- rapid prototyping Tremelo
+- 3D printing bedrijf Tremelo
+<!-- LOCAL_ENRICH_END -->

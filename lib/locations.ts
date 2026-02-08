@@ -20,7 +20,7 @@ export const locations: Location[] = [
       "3D printen nabij Aalst",
       "3D model laten printen Aalst",
     ],
-    metaDescription: "Laat je 3D-idee werkelijkheid worden in Aalst van prototypes tot kleine series, PLA, PETG en TPU beschikbaar. Vraag een offerte bij X3DPrints.",
+    metaDescription: "Laat je 3D-idee werkelijkheid worden in Aalst van prototypes tot kleine en grotere series, PLA, PETG en TPU beschikbaar. Vraag een offerte bij X3DPrints.",
     servicedAreas: ["Aalst centrum", "Erembodegem", "Hofstade", "Ninove", "Denderleeuw", "Afhalen Herzele"],
     sectors: ["Prototyping voor maakbedrijven in Aalst", "Marketing/events in Denderstreek", "Onderwijs en labs in Aalst-Ninove"],
   },
@@ -64,7 +64,7 @@ export const locations: Location[] = [
       "3D model laten printen Bellem",
     ],
     metaDescription:
-      "3D printen in Bellem (Aalter) voor prototypes en kleine series, met snelle afstemming en levering vanuit Herzele.",
+      "3D printen in Bellem (Aalter) voor prototypes en zowel kleine als grotere series, met snelle afstemming en levering vanuit Herzele.",
     servicedAreas: ["Bellem centrum", "Aalter", "Knesselare", "Lotenhulle", "Poeke", "Ursel", "Afhalen Herzele"],
     sectors: [
       "Lokale makers en zelfstandigen",
@@ -102,7 +102,7 @@ export const locations: Location[] = [
       "3D model laten printen Lotenhulle",
     ],
     metaDescription:
-      "3D printen in Lotenhulle (Aalter) voor kleine series, maquettes en onderdelen op maat met snelle levering.",
+      "3D printen in Lotenhulle (Aalter) voor kleine en grotere series, maquettes en onderdelen op maat met snelle levering.",
     servicedAreas: ["Lotenhulle centrum", "Aalter", "Bellem", "Knesselare", "Poeke", "Ursel", "Afhalen Herzele"],
     sectors: [
       "Makers en hobbyisten",
@@ -159,7 +159,7 @@ export const locations: Location[] = [
       "3D model laten printen Assenede",
     ],
     metaDescription:
-      "3D printen in Assenede voor prototypes, maatwerk en kleine series in het Meetjesland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+      "3D printen in Assenede voor prototypes, maatwerk en zowel kleine als grotere series in het Meetjesland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
     servicedAreas: [
       "Assenede centrum",
       "Bassevelde",
@@ -203,7 +203,7 @@ export const locations: Location[] = [
       "3D model laten printen Boekhoute",
     ],
     metaDescription:
-      "3D printen in Boekhoute (Assenede) voor prototypes, onderdelen en kleine series, met snelle levering in PLA, PETG en TPU.",
+      "3D printen in Boekhoute (Assenede) voor prototypes, onderdelen en zowel kleine als grotere series, met snelle levering in PLA, PETG en TPU.",
     servicedAreas: ["Boekhoute centrum", "Assenede", "Bassevelde", "Oosteeklo", "Afhalen Herzele"],
     sectors: [
       "Creatieve projecten en retail",
@@ -456,7 +456,7 @@ export const locations: Location[] = [
       "3D model laten printen Doel",
     ],
     metaDescription:
-      "3D printen in Doel voor prototypes en kleine series, met levering vanuit Herzele en advies op maat.",
+      "3D printen in Doel voor prototypes en zowel kleine als grotere series, met levering vanuit Herzele en advies op maat.",
     servicedAreas: ["Doel", "Kieldrecht", "Verrebroek", "Kallo", "Afhalen Herzele"],
     sectors: [
       "Lokale ondernemers en makers",
@@ -532,7 +532,7 @@ export const locations: Location[] = [
       "3D model laten printen Melsele",
     ],
     metaDescription:
-      "3D printen in Melsele voor prototypes, maatwerk en kleine series met snelle levering vanuit Herzele.",
+      "3D printen in Melsele voor prototypes, maatwerk en zowel kleine als grotere series met snelle levering vanuit Herzele.",
     servicedAreas: ["Melsele centrum", "Beveren", "Haasdonk", "Kallo", "Afhalen Herzele"],
     sectors: [
       "Lokale ondernemers en makers",
@@ -678,7 +678,7 @@ export const locations: Location[] = [
       "3D model laten printen Iddergem",
     ],
     metaDescription:
-      "3D printen in Iddergem (Denderleeuw) voor functionele onderdelen en kleine series met snelle levering vanuit Herzele.",
+      "3D printen in Iddergem (Denderleeuw) voor functionele onderdelen en zowel kleine als grotere series met snelle levering vanuit Herzele.",
     servicedAreas: [
       "Iddergem centrum",
       "Denderleeuw",
@@ -774,7 +774,7 @@ export const locations: Location[] = [
       "3D model laten printen Eeklo",
     ],
     metaDescription:
-      "3D printen in Eeklo voor prototypes en kleine series in het Meetjesland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+      "3D printen in Eeklo voor prototypes en zowel kleine als grotere series in het Meetjesland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
     servicedAreas: [
       "Eeklo centrum",
       "Meetjesland",
@@ -799,7 +799,7 @@ export const locations: Location[] = [
       "3D model laten printen Evergem",
     ],
     metaDescription:
-      "3D printen in Evergem voor prototypes en kleine series in het Meetjesland en rond de kanaalzone. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+      "3D printen in Evergem voor prototypes en zowel kleine als grotere series in het Meetjesland en rond de kanaalzone. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
     servicedAreas: [
       "Evergem centrum",
       "Ertvelde",
@@ -849,7 +849,7 @@ export const locations: Location[] = [
       "3D model laten printen Sleidinge",
     ],
     metaDescription:
-      "3D printen in Sleidinge (Evergem) voor maatwerk, prototypes en kleine series. PLA, PETG en TPU met snelle levering vanuit Herzele.",
+      "3D printen in Sleidinge (Evergem) voor maatwerk, prototypes en zowel kleine als grotere series. PLA, PETG en TPU met snelle levering vanuit Herzele.",
     servicedAreas: [
       "Sleidinge centrum",
       "Evergem",
@@ -898,7 +898,7 @@ export const locations: Location[] = [
       "3D model laten printen Gavere",
     ],
     metaDescription:
-      "3D printen in Gavere voor prototypes en kleine series langs de Schelde. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+      "3D printen in Gavere voor prototypes en zowel kleine als grotere series langs de Schelde. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
     servicedAreas: [
       "Gavere centrum",
       "Semmerzake",
@@ -950,7 +950,7 @@ export const locations: Location[] = [
       "3D model laten printen Vurste",
     ],
     metaDescription:
-      "3D printen in Vurste (Gavere) voor prototypes en kleine series met korte doorlooptijd en betrouwbare kwaliteit.",
+      "3D printen in Vurste (Gavere) voor prototypes en zowel kleine als grotere series met korte doorlooptijd en betrouwbare kwaliteit.",
     servicedAreas: [
       "Vurste centrum",
       "Gavere",
@@ -1000,7 +1000,7 @@ export const locations: Location[] = [
       "3D model laten printen Dikkelvenne",
     ],
     metaDescription:
-      "3D printen in Dikkelvenne (Gavere) voor functionele onderdelen en kleine series met snelle levering en duidelijke planning.",
+      "3D printen in Dikkelvenne (Gavere) voor functionele onderdelen en zowel kleine als grotere series met snelle levering en duidelijke planning.",
     servicedAreas: [
       "Dikkelvenne centrum",
       "Gavere",
@@ -1050,7 +1050,7 @@ export const locations: Location[] = [
       "3D model laten printen Hamme",
     ],
     metaDescription:
-      "3D printen in Hamme voor prototypes en kleine series aan de Durme. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+      "3D printen in Hamme voor prototypes en zowel kleine als grotere series aan de Durme. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
     servicedAreas: [
       "Hamme centrum",
       "Moerzeke",
@@ -1084,7 +1084,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en techniekers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en scholen",
     ],
   },
@@ -1099,7 +1099,7 @@ export const locations: Location[] = [
       "3D model laten printen Horebeke",
     ],
     metaDescription:
-      "3D printen in Horebeke voor prototypes en kleine series in de Vlaamse Ardennen. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+      "3D printen in Horebeke voor prototypes en zowel kleine als grotere series in de Vlaamse Ardennen. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
     servicedAreas: [
       "Horebeke centrum",
       "Sint-Maria-Horebeke",
@@ -1108,7 +1108,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -1147,7 +1147,7 @@ export const locations: Location[] = [
       "3D model laten printen Sint-Kornelis-Horebeke",
     ],
     metaDescription:
-      "3D printen in Sint-Kornelis-Horebeke (Horebeke) voor maatwerk en kleine series met snelle levering.",
+      "3D printen in Sint-Kornelis-Horebeke (Horebeke) voor maatwerk en zowel kleine als grotere series met snelle levering.",
     servicedAreas: [
       "Sint-Kornelis-Horebeke centrum",
       "Horebeke",
@@ -1171,7 +1171,7 @@ export const locations: Location[] = [
       "3D model laten printen Kaprijke",
     ],
     metaDescription:
-      "3D printen in Kaprijke voor prototypes en kleine series in het Meetjesland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+      "3D printen in Kaprijke voor prototypes en zowel kleine als grotere series in het Meetjesland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
     servicedAreas: [
       "Kaprijke centrum",
       "Lembeke",
@@ -1180,7 +1180,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -1219,7 +1219,7 @@ export const locations: Location[] = [
       "3D model laten printen Bentille",
     ],
     metaDescription:
-      "3D printen in Bentille (Kaprijke) voor maatwerk en kleine series met snelle levering vanuit Herzele.",
+      "3D printen in Bentille (Kaprijke) voor maatwerk en zowel kleine als grotere series met snelle levering vanuit Herzele.",
     servicedAreas: [
       "Bentille kern",
       "Kaprijke",
@@ -1243,7 +1243,7 @@ export const locations: Location[] = [
       "3D model laten printen Laarne",
     ],
     metaDescription:
-      "3D printen in Laarne voor prototypes en kleine series met snelle levering vanuit Herzele. PLA, PETG en TPU met persoonlijk advies.",
+      "3D printen in Laarne voor prototypes en zowel kleine als grotere series met snelle levering vanuit Herzele. PLA, PETG en TPU met persoonlijk advies.",
     servicedAreas: [
       "Laarne centrum",
       "Kalken",
@@ -1278,7 +1278,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en techniekers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en scholen",
     ],
   },
@@ -1293,7 +1293,7 @@ export const locations: Location[] = [
       "3D model laten printen Lebbeke",
     ],
     metaDescription:
-      "3D printen in Lebbeke voor prototypes en kleine series met snelle levering vanuit Herzele. PLA, PETG en TPU met persoonlijk advies.",
+      "3D printen in Lebbeke voor prototypes en zowel kleine als grotere series met snelle levering vanuit Herzele. PLA, PETG en TPU met persoonlijk advies.",
     servicedAreas: [
       "Lebbeke centrum",
       "Denderbelle",
@@ -1328,7 +1328,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en techniekers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en scholen",
     ],
   },
@@ -1343,7 +1343,7 @@ export const locations: Location[] = [
       "3D model laten printen Wieze",
     ],
     metaDescription:
-      "3D printen in Wieze (Lebbeke) voor prototypes en kleine series met snelle levering en duidelijke planning.",
+      "3D printen in Wieze (Lebbeke) voor prototypes en zowel kleine als grotere series met snelle levering en duidelijke planning.",
     servicedAreas: [
       "Wieze centrum",
       "Lebbeke",
@@ -1378,7 +1378,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en techniekers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en scholen",
     ],
   },
@@ -1393,7 +1393,7 @@ export const locations: Location[] = [
       "3D model laten printen Smetlede",
     ],
     metaDescription:
-      "3D printen in Smetlede (Lede) voor prototypes en kleine series met snelle levering vanuit Herzele.",
+      "3D printen in Smetlede (Lede) voor prototypes en zowel kleine als grotere series met snelle levering vanuit Herzele.",
     servicedAreas: [
       "Smetlede centrum",
       "Lede",
@@ -1428,7 +1428,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en techniekers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en scholen",
     ],
   },
@@ -1443,7 +1443,7 @@ export const locations: Location[] = [
       "3D model laten printen Wanzele",
     ],
     metaDescription:
-      "3D printen in Wanzele (Lede) voor prototypes en kleine series met snelle levering en duidelijke planning.",
+      "3D printen in Wanzele (Lede) voor prototypes en zowel kleine als grotere series met snelle levering en duidelijke planning.",
     servicedAreas: [
       "Wanzele centrum",
       "Lede",
@@ -1478,7 +1478,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en techniekers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en scholen",
     ],
   },
@@ -1493,7 +1493,7 @@ export const locations: Location[] = [
       "3D model laten printen Hemelveerdegem",
     ],
     metaDescription:
-      "3D printen in Hemelveerdegem (Lierde) voor prototypes en kleine series met snelle levering vanuit Herzele.",
+      "3D printen in Hemelveerdegem (Lierde) voor prototypes en zowel kleine als grotere series met snelle levering vanuit Herzele.",
     servicedAreas: [
       "Hemelveerdegem centrum",
       "Lierde",
@@ -1528,7 +1528,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en techniekers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en scholen",
     ],
   },
@@ -1543,7 +1543,7 @@ export const locations: Location[] = [
       "3D model laten printen Lievegem",
     ],
     metaDescription:
-      "3D printen in Lievegem voor prototypes en kleine series in het Meetjesland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+      "3D printen in Lievegem voor prototypes en zowel kleine als grotere series in het Meetjesland. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
     servicedAreas: [
       "Lievegem centrum",
       "Lovendegem",
@@ -1556,7 +1556,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -1581,7 +1581,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en techniekers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en scholen",
     ],
   },
@@ -1596,7 +1596,7 @@ export const locations: Location[] = [
       "3D model laten printen Waarschoot",
     ],
     metaDescription:
-      "3D printen in Waarschoot (Lievegem) voor prototypes en kleine series met snelle levering en duidelijke planning.",
+      "3D printen in Waarschoot (Lievegem) voor prototypes en zowel kleine als grotere series met snelle levering en duidelijke planning.",
     servicedAreas: [
       "Waarschoot centrum",
       "Lievegem",
@@ -1631,7 +1631,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en scholen",
     ],
   },
@@ -1646,7 +1646,7 @@ export const locations: Location[] = [
       "3D model laten printen Oostwinkel",
     ],
     metaDescription:
-      "3D printen in Oostwinkel (Lievegem) voor prototypes en kleine series met snelle levering vanuit Herzele.",
+      "3D printen in Oostwinkel (Lievegem) voor prototypes en zowel kleine als grotere series met snelle levering vanuit Herzele.",
     servicedAreas: [
       "Oostwinkel centrum",
       "Lievegem",
@@ -1681,7 +1681,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en scholen",
     ],
   },
@@ -1706,7 +1706,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -1731,7 +1731,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -1746,7 +1746,7 @@ export const locations: Location[] = [
       "3D model laten printen Louise-Marie",
     ],
     metaDescription:
-      "3D printen in Louise-Marie (Ronse) voor prototypes en kleine series met snelle levering.",
+      "3D printen in Louise-Marie (Ronse) voor prototypes en zowel kleine als grotere series met snelle levering.",
     servicedAreas: [
       "Louise-Marie centrum",
       "Ronse",
@@ -1756,7 +1756,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -1771,7 +1771,7 @@ export const locations: Location[] = [
       "3D model laten printen Vinderhoute",
     ],
     metaDescription:
-      "3D printen in Vinderhoute (Lievegem) voor prototypes en kleine series met snelle levering en duidelijke planning.",
+      "3D printen in Vinderhoute (Lievegem) voor prototypes en zowel kleine als grotere series met snelle levering en duidelijke planning.",
     servicedAreas: [
       "Vinderhoute centrum",
       "Lievegem",
@@ -1796,7 +1796,7 @@ export const locations: Location[] = [
       "3D model laten printen Lochristi",
     ],
     metaDescription:
-      "3D printen in Lochristi voor prototypes en kleine series rond Gent, met snelle levering vanuit Herzele.",
+      "3D printen in Lochristi voor prototypes en zowel kleine als grotere series rond Gent, met snelle levering vanuit Herzele.",
     servicedAreas: [
       "Lochristi centrum",
       "Beervelde",
@@ -1807,7 +1807,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -1847,7 +1847,7 @@ export const locations: Location[] = [
       "3D model laten printen Zaffelare",
     ],
     metaDescription:
-      "3D printen in Zaffelare (Lochristi) voor prototypes en kleine series met snelle levering en duidelijke planning.",
+      "3D printen in Zaffelare (Lochristi) voor prototypes en zowel kleine als grotere series met snelle levering en duidelijke planning.",
     servicedAreas: [
       "Zaffelare centrum",
       "Lochristi",
@@ -1882,7 +1882,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -1897,7 +1897,7 @@ export const locations: Location[] = [
       "3D model laten printen Wachtebeke",
     ],
     metaDescription:
-      "3D printen in Wachtebeke (Lochristi) voor prototypes en kleine series met snelle levering vanuit Herzele.",
+      "3D printen in Wachtebeke (Lochristi) voor prototypes en zowel kleine als grotere series met snelle levering vanuit Herzele.",
     servicedAreas: [
       "Wachtebeke centrum",
       "Lochristi",
@@ -1922,7 +1922,7 @@ export const locations: Location[] = [
       "3D model laten printen Lokeren",
     ],
     metaDescription:
-      "3D printen in Lokeren voor prototypes en kleine series met snelle levering vanuit Herzele. PLA, PETG en TPU met persoonlijk advies.",
+      "3D printen in Lokeren voor prototypes en zowel kleine als grotere series met snelle levering vanuit Herzele. PLA, PETG en TPU met persoonlijk advies.",
     servicedAreas: [
       "Lokeren centrum",
       "Eksaarde",
@@ -1932,7 +1932,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -1972,7 +1972,7 @@ export const locations: Location[] = [
       "3D model laten printen Eksaarde",
     ],
     metaDescription:
-      "3D printen in Eksaarde (Lokeren) voor prototypes en kleine series met snelle levering en duidelijke planning.",
+      "3D printen in Eksaarde (Lokeren) voor prototypes en zowel kleine als grotere series met snelle levering en duidelijke planning.",
     servicedAreas: [
       "Eksaarde centrum",
       "Lokeren",
@@ -1982,7 +1982,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -2048,7 +2048,7 @@ export const locations: Location[] = [
       "3D model laten printen Etikhove",
     ],
     metaDescription:
-      "3D printen in Etikhove (Maarkedal) voor prototypes, herstellingen en kleine series met snelle levering vanuit Herzele.",
+      "3D printen in Etikhove (Maarkedal) voor prototypes, herstellingen en zowel kleine als grotere series met snelle levering vanuit Herzele.",
     servicedAreas: [
       "Etikhove centrum",
       "Maarkedal",
@@ -2100,7 +2100,7 @@ export const locations: Location[] = [
       "3D model laten printen Nukerke",
     ],
     metaDescription:
-      "3D printen in Nukerke (Maarkedal) voor maatwerk, vervangstukken en kleine series met korte doorlooptijd.",
+      "3D printen in Nukerke (Maarkedal) voor maatwerk, vervangstukken en zowel kleine als grotere series met korte doorlooptijd.",
     servicedAreas: [
       "Nukerke centrum",
       "Maarkedal",
@@ -2126,7 +2126,7 @@ export const locations: Location[] = [
       "3D model laten printen Schorisse",
     ],
     metaDescription:
-      "3D printen in Schorisse (Maarkedal) voor prototypes, onderdelen en kleine series met snelle levering.",
+      "3D printen in Schorisse (Maarkedal) voor prototypes, onderdelen en zowel kleine als grotere series met snelle levering.",
     servicedAreas: [
       "Schorisse centrum",
       "Maarkedal",
@@ -2152,7 +2152,7 @@ export const locations: Location[] = [
       "3D model laten printen Kluisbergen",
     ],
     metaDescription:
-      "3D printen in Kluisbergen voor prototypes en kleine series in de Vlaamse Ardennen. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+      "3D printen in Kluisbergen voor prototypes en zowel kleine als grotere series in de Vlaamse Ardennen. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
     servicedAreas: [
       "Kluisbergen centrum",
       "Berchem",
@@ -2163,7 +2163,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Makers en ontwerpers in de Vlaamse Ardennen",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -2203,7 +2203,7 @@ export const locations: Location[] = [
       "3D model laten printen Kwaremont",
     ],
     metaDescription:
-      "3D printen in Kwaremont (Kluisbergen) voor prototypes, props en kleine series met snelle levering vanuit Herzele.",
+      "3D printen in Kwaremont (Kluisbergen) voor prototypes, props en zowel kleine als grotere series met snelle levering vanuit Herzele.",
     servicedAreas: [
       "Kwaremont centrum",
       "Kluisbergen",
@@ -2238,7 +2238,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Onderhoud en herstellingen",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en scholen",
     ],
   },
@@ -2579,7 +2579,7 @@ export const locations: Location[] = [
       "3D model laten printen Hombeek",
     ],
     metaDescription:
-      "3D printing in Hombeek vlak bij Leuven-Dijle kanaal en Mechelen-Noord. Snelle prototypes en kleine series in PLA, PETG of TPU.",
+      "3D printing in Hombeek vlak bij Leuven-Dijle kanaal en Mechelen-Noord. Snelle prototypes en zowel kleine als grotere series in PLA, PETG of TPU.",
   },
   {
     slug: "3d-printen-in-leest",
@@ -2618,7 +2618,7 @@ export const locations: Location[] = [
       "3D model laten printen Walem",
     ],
     metaDescription:
-      "3D print service in Walem nabij Fort van Walem en E19. Prototypes en kleine series op maat in PLA, PETG of TPU.",
+      "3D print service in Walem nabij Fort van Walem en E19. Prototypes en zowel kleine als grotere series op maat in PLA, PETG of TPU.",
   },
   {
     slug: "3d-printen-in-brecht",
@@ -2631,7 +2631,7 @@ export const locations: Location[] = [
       "3D model laten printen Brecht",
     ],
     metaDescription:
-      "3D print service in Brecht nabij E19 en station Noorderkempen. Prototypes en kleine series in PLA, PETG of TPU, snel geleverd in de Kempen.",
+      "3D print service in Brecht nabij E19 en station Noorderkempen. Prototypes en zowel kleine als grotere series in PLA, PETG of TPU, snel geleverd in de Kempen.",
   },
   {
     slug: "3d-printen-in-schilde",
@@ -2761,7 +2761,7 @@ export const locations: Location[] = [
       "3D model laten printen Herzele",
     ],
     metaDescription:
-      "Herzeelse handelaar en 100% Belgische 3D printstudio voor Herzele en deelgemeenten. Lid van Werkgroep Ondernemend Herzele, PLA/PETG/TPU voor prototypes en kleine series.",
+      "Herzeelse handelaar en 100% Belgische 3D printstudio voor Herzele en deelgemeenten. Lid van Werkgroep Ondernemend Herzele, PLA/PETG/TPU voor prototypes en zowel kleine als grotere series.",
   },
   {
     slug: "3d-printen-in-borsbeke",
@@ -2774,7 +2774,7 @@ export const locations: Location[] = [
       "3D model laten printen Borsbeke",
     ],
     metaDescription:
-      "Herzeelse handelaar en 100% Belgische 3D printservice voor Borsbeke. Lid van Werkgroep Ondernemend Herzele, snelle offertes voor prototypes en kleine series in PLA, PETG en TPU.",
+      "Herzeelse handelaar en 100% Belgische 3D printservice voor Borsbeke. Lid van Werkgroep Ondernemend Herzele, snelle offertes voor prototypes en zowel kleine als grotere series in PLA, PETG en TPU.",
   },
   {
     slug: "3d-printen-in-hillegem",
@@ -2787,7 +2787,7 @@ export const locations: Location[] = [
       "3D model laten printen Hillegem",
     ],
     metaDescription:
-      "Herzeelse handelaar, 100% Belgische 3D printstudio voor Hillegem. Lid van Werkgroep Ondernemend Herzele met PLA, PETG en TPU voor prototypes en kleine series.",
+      "Herzeelse handelaar, 100% Belgische 3D printstudio voor Hillegem. Lid van Werkgroep Ondernemend Herzele met PLA, PETG en TPU voor prototypes en zowel kleine als grotere series.",
   },
   {
     slug: "3d-printen-in-ressegem",
@@ -2800,7 +2800,7 @@ export const locations: Location[] = [
       "3D model laten printen Ressegem",
     ],
     metaDescription:
-      "Herzeelse handelaar en 100% Belgische 3D printservice voor Ressegem. Lid van Werkgroep Ondernemend Herzele met snelle levering van PLA, PETG en TPU prototypes en kleine series.",
+      "Herzeelse handelaar en 100% Belgische 3D printservice voor Ressegem. Lid van Werkgroep Ondernemend Herzele met snelle levering van PLA, PETG en TPU prototypes en zowel kleine als grotere series.",
   },
   {
     slug: "3d-printen-in-sint-antelinks",
@@ -2916,7 +2916,7 @@ export const locations: Location[] = [
       "3D model laten printen Landskouter",
     ],
     metaDescription:
-      "3D printen in Landskouter tussen Lemberge en Moortsele. Prototypes en kleine series in PLA, PETG of TPU met snelle doorlooptijd.",
+      "3D printen in Landskouter tussen Lemberge en Moortsele. Prototypes en zowel kleine als grotere series in PLA, PETG of TPU met snelle doorlooptijd.",
   },
   {
     slug: "3d-printen-in-moortsele",
@@ -2955,7 +2955,7 @@ export const locations: Location[] = [
       "3D model laten printen Onkerzele",
     ],
     metaDescription:
-      "3D prints in Onkerzele nabij de Bosberg en Provinciaal Domein De Gavers. Snelle prototypes en kleine series in PLA, PETG of TPU.",
+      "3D prints in Onkerzele nabij de Bosberg en Provinciaal Domein De Gavers. Snelle prototypes en zowel kleine als grotere series in PLA, PETG of TPU.",
   },
   {
     slug: "3d-printen-in-overboelare",
@@ -3007,7 +3007,7 @@ export const locations: Location[] = [
       "3D model laten printen Schendelbeke",
     ],
     metaDescription:
-      "3D prints in Schendelbeke vlak bij station en Dendervallei. Prototypes en kleine series in PLA, PETG of TPU.",
+      "3D prints in Schendelbeke vlak bij station en Dendervallei. Prototypes en zowel kleine als grotere series in PLA, PETG of TPU.",
   },
   {
     slug: "3d-printen-in-zandbergen",
@@ -3085,7 +3085,7 @@ export const locations: Location[] = [
       "3D model laten printen Viane",
     ],
     metaDescription:
-      "3D printen in Viane rond kasteeldomein en Pajotse grens. Prototypes en kleine series in PLA, PETG of TPU.",
+      "3D printen in Viane rond kasteeldomein en Pajotse grens. Prototypes en zowel kleine als grotere series in PLA, PETG of TPU.",
   },
   {
     slug: "3d-printen-in-moerbeke-geraardsbergen",
@@ -3199,7 +3199,7 @@ export const locations: Location[] = [
       "3D model laten printen Leupegem",
     ],
     metaDescription:
-      "3D printing in Leupegem aan de Schelde en Koppenberg-route. Prototypes en kleine series in PLA, PETG en TPU.",
+      "3D printing in Leupegem aan de Schelde en Koppenberg-route. Prototypes en zowel kleine als grotere series in PLA, PETG en TPU.",
   },
   {
     slug: "3d-printen-in-mater",
@@ -3251,7 +3251,7 @@ export const locations: Location[] = [
       "3D model laten printen Volkegem",
     ],
     metaDescription:
-      "3D printing in Volkegem nabij Koppenberg en Vlaamse Ardennen. Prototypes en kleine series met snelle doorlooptijd.",
+      "3D printing in Volkegem nabij Koppenberg en Vlaamse Ardennen. Prototypes en zowel kleine als grotere series met snelle doorlooptijd.",
   },
   {
     slug: "3d-printen-in-welden",
@@ -3430,7 +3430,7 @@ export const locations: Location[] = [
       "3D model laten printen Nazareth",
     ],
     metaDescription:
-      "3D printen in Nazareth voor prototypes, herstellingen en kleine series met snelle levering vanuit Herzele.",
+      "3D printen in Nazareth voor prototypes, herstellingen en zowel kleine als grotere series met snelle levering vanuit Herzele.",
     servicedAreas: [
       "Nazareth centrum",
       "Eke",
@@ -3440,7 +3440,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -3465,7 +3465,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -3480,7 +3480,7 @@ export const locations: Location[] = [
       "3D model laten printen Eke",
     ],
     metaDescription:
-      "3D printen in Eke voor prototypes, herstellingen en kleine series met duidelijke planning.",
+      "3D printen in Eke voor prototypes, herstellingen en zowel kleine als grotere series met duidelijke planning.",
     servicedAreas: [
       "Eke centrum",
       "Nazareth",
@@ -3490,7 +3490,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -3515,7 +3515,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -3559,7 +3559,7 @@ export const locations: Location[] = [
       "3D model laten printen Melle",
     ],
     metaDescription:
-      "3D printen in Melle voor prototypes, herstellingen en kleine series met snelle levering vanuit Herzele.",
+      "3D printen in Melle voor prototypes, herstellingen en zowel kleine als grotere series met snelle levering vanuit Herzele.",
     servicedAreas: [
       "Melle centrum",
       "Gontrode",
@@ -3594,7 +3594,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -3609,7 +3609,7 @@ export const locations: Location[] = [
       "3D model laten printen Sint-Gillis-Waas",
     ],
     metaDescription:
-      "3D printen in Sint-Gillis-Waas voor prototypes, maatwerk en kleine series. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
+      "3D printen in Sint-Gillis-Waas voor prototypes, maatwerk en zowel kleine als grotere series. Snelle levering in PLA, PETG en TPU vanuit Herzele.",
     servicedAreas: [
       "Sint-Gillis-Waas centrum",
       "De Klinge",
@@ -3644,7 +3644,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -3659,7 +3659,7 @@ export const locations: Location[] = [
       "3D model laten printen Meerdonk",
     ],
     metaDescription:
-      "3D printen in Meerdonk (Sint-Gillis-Waas) voor prototypes, herstellingen en kleine series met snelle levering.",
+      "3D printen in Meerdonk (Sint-Gillis-Waas) voor prototypes, herstellingen en zowel kleine als grotere series met snelle levering.",
     servicedAreas: [
       "Meerdonk centrum",
       "Sint-Gillis-Waas",
@@ -3694,7 +3694,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -3761,7 +3761,7 @@ export const locations: Location[] = [
       "3D model laten printen Sint-Margriete",
     ],
     metaDescription:
-      "3D printen in Sint-Margriete (Sint-Laureins) voor prototypes, herstellingen en kleine series met snelle levering.",
+      "3D printen in Sint-Margriete (Sint-Laureins) voor prototypes, herstellingen en zowel kleine als grotere series met snelle levering.",
     servicedAreas: [
       "Sint-Margriete centrum",
       "Sint-Laureins",
@@ -3874,7 +3874,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -3900,7 +3900,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -3915,7 +3915,7 @@ export const locations: Location[] = [
       "3D model laten printen Sinaai",
     ],
     metaDescription:
-      "3D printen in Sinaai (Sint-Niklaas) voor prototypes, herstellingen en kleine series met korte doorlooptijd.",
+      "3D printen in Sinaai (Sint-Niklaas) voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd.",
     servicedAreas: [
       "Sinaai centrum",
       "Sint-Niklaas",
@@ -3926,7 +3926,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -3976,7 +3976,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -3991,7 +3991,7 @@ export const locations: Location[] = [
       "3D model laten printen Klein-Sinaai",
     ],
     metaDescription:
-      "3D printen in Klein-Sinaai (Stekene) voor prototypes, herstellingen en kleine series met snelle levering.",
+      "3D printen in Klein-Sinaai (Stekene) voor prototypes, herstellingen en zowel kleine als grotere series met snelle levering.",
     servicedAreas: [
       "Klein-Sinaai centrum",
       "Stekene",
@@ -4001,7 +4001,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4026,7 +4026,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4076,7 +4076,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4101,7 +4101,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4116,7 +4116,7 @@ export const locations: Location[] = [
       "3D model laten printen Steendorp",
     ],
     metaDescription:
-      "3D printen in Steendorp (Temse) voor prototypes, herstellingen en kleine series met korte doorlooptijd.",
+      "3D printen in Steendorp (Temse) voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd.",
     servicedAreas: [
       "Steendorp centrum",
       "Temse",
@@ -4126,7 +4126,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4176,7 +4176,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4226,7 +4226,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4241,7 +4241,7 @@ export const locations: Location[] = [
       "3D model laten printen Serskamp",
     ],
     metaDescription:
-      "3D printen in Serskamp (Wichelen) voor prototypes, herstellingen en kleine series met snelle levering.",
+      "3D printen in Serskamp (Wichelen) voor prototypes, herstellingen en zowel kleine als grotere series met snelle levering.",
     servicedAreas: [
       "Serskamp centrum",
       "Wichelen",
@@ -4251,7 +4251,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4303,7 +4303,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4329,7 +4329,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4344,7 +4344,7 @@ export const locations: Location[] = [
       "3D model laten printen Moregem",
     ],
     metaDescription:
-      "3D printen in Moregem (Wortegem-Petegem) voor prototypes, herstellingen en kleine series met snelle levering.",
+      "3D printen in Moregem (Wortegem-Petegem) voor prototypes, herstellingen en zowel kleine als grotere series met snelle levering.",
     servicedAreas: [
       "Moregem centrum",
       "Wortegem-Petegem",
@@ -4355,7 +4355,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4381,7 +4381,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4431,7 +4431,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4506,7 +4506,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4521,7 +4521,7 @@ export const locations: Location[] = [
       "3D model laten printen Olsene",
     ],
     metaDescription:
-      "3D printen in Olsene (Zulte) voor prototypes, herstellingen en kleine series met snelle levering.",
+      "3D printen in Olsene (Zulte) voor prototypes, herstellingen en zowel kleine als grotere series met snelle levering.",
     servicedAreas: [
       "Olsene centrum",
       "Zulte",
@@ -4531,7 +4531,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4556,7 +4556,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4606,7 +4606,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4631,7 +4631,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4646,7 +4646,7 @@ export const locations: Location[] = [
       "3D model laten printen Roborst",
     ],
     metaDescription:
-      "3D printen in Roborst (Zwalm) voor prototypes, herstellingen en kleine series met korte doorlooptijd.",
+      "3D printen in Roborst (Zwalm) voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd.",
     servicedAreas: [
       "Roborst centrum",
       "Zwalm",
@@ -4656,7 +4656,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4681,7 +4681,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4706,7 +4706,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4731,7 +4731,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4756,7 +4756,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4781,7 +4781,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4796,7 +4796,7 @@ export const locations: Location[] = [
       "3D model laten printen Dikkele",
     ],
     metaDescription:
-      "3D printen in Dikkele (Zwalm) voor prototypes, herstellingen en kleine series met snelle levering.",
+      "3D printen in Dikkele (Zwalm) voor prototypes, herstellingen en zowel kleine als grotere series met snelle levering.",
     servicedAreas: [
       "Dikkele centrum",
       "Zwalm",
@@ -4806,7 +4806,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4831,7 +4831,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4856,7 +4856,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4881,7 +4881,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4906,7 +4906,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4921,7 +4921,7 @@ export const locations: Location[] = [
       "3D model laten printen Lemberge",
     ],
     metaDescription:
-      "3D printen in Lemberge voor prototypes, herstellingen en kleine series met duidelijke planning.",
+      "3D printen in Lemberge voor prototypes, herstellingen en zowel kleine als grotere series met duidelijke planning.",
     servicedAreas: [
       "Lemberge centrum",
       "Merelbeke",
@@ -4931,7 +4931,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4956,7 +4956,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4981,7 +4981,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -4996,7 +4996,7 @@ export const locations: Location[] = [
       "3D model laten printen Schelderode",
     ],
     metaDescription:
-      "3D printen in Schelderode voor prototypes en kleine series met snelle afstemming.",
+      "3D printen in Schelderode voor prototypes en zowel kleine als grotere series met snelle afstemming.",
     servicedAreas: [
       "Schelderode centrum",
       "Merelbeke",
@@ -5006,7 +5006,7 @@ export const locations: Location[] = [
     ],
     sectors: [
       "Lokale makers en ontwerpers",
-      "Kleine series en maatwerk",
+      "Kleine en grotere series en maatwerk",
       "Verenigingen en onderwijs",
     ],
   },
@@ -5098,7 +5098,7 @@ export const locations: Location[] = [
       "3D model laten printen Zegelsem",
     ],
     metaDescription:
-      "3D print service in Zegelsem, bekend als stilste dorp. Snelle prototypes en kleine series in PLA, PETG of TPU.",
+      "3D print service in Zegelsem, bekend als stilste dorp. Snelle prototypes en zowel kleine als grotere series in PLA, PETG of TPU.",
   },
   {
     slug: "3d-printen-in-elst",
@@ -5169,7 +5169,7 @@ export const locations: Location[] = [
       "3D model laten printen Deinze",
     ],
     metaDescription:
-      "Professionele 3D prints in Deinze langs de Leie en De Prijkels. Snelle levering van prototypes en kleine series in PLA, PETG of TPU.",
+      "Professionele 3D prints in Deinze langs de Leie en De Prijkels. Snelle levering van prototypes en zowel kleine als grotere series in PLA, PETG of TPU.",
   },
   {
     slug: "3d-printen-in-erwetegem",
@@ -5939,7 +5939,7 @@ export const locations: Location[] = [
       "3D model laten printen Kruishoutem",
     ],
     metaDescription:
-      "3D prints in Kruishoutem richting Lozerkasteel en E17. Prototypes en kleine series in PLA, PETG of TPU met snelle offertes.",
+      "3D prints in Kruishoutem richting Lozerkasteel en E17. Prototypes en zowel kleine als grotere series in PLA, PETG of TPU met snelle offertes.",
   },
   {
     slug: "3d-printen-in-nokere",
@@ -6004,7 +6004,7 @@ export const locations: Location[] = [
       "3D model laten printen Huise",
     ],
     metaDescription:
-      "3D prints in Huise met focus op landelijke projecten en ambacht. Prototypes en kleine series in PLA, PETG en TPU.",
+      "3D prints in Huise met focus op landelijke projecten en ambacht. Prototypes en zowel kleine als grotere series in PLA, PETG en TPU.",
   },
   {
     slug: "3d-printen-in-lozer",
@@ -6056,7 +6056,7 @@ export const locations: Location[] = [
       "3D model laten printen Middelburg Maldegem",
     ],
     metaDescription:
-      "3D prints in Middelburg (Maldegem) vlak bij Krommewege en industriezone. Prototypes en kleine series in PLA, PETG en TPU.",
+      "3D prints in Middelburg (Maldegem) vlak bij Krommewege en industriezone. Prototypes en zowel kleine als grotere series in PLA, PETG en TPU.",
   },
   {
     slug: "3d-printen-in-avekapelle",
@@ -6345,7 +6345,7 @@ export const locations: Location[] = [
       "3D model laten printen Leuven",
     ],
     metaDescription:
-      "3D printen in Leuven voor research, medtech en start-ups. Prototypes en kleine series voor campussen en Vaartkom, snelle levering vanuit Herzele.",
+      "3D printen in Leuven voor research, medtech en start-ups. Prototypes en zowel kleine als grotere series voor campussen en Vaartkom, snelle levering vanuit Herzele.",
     servicedAreas: [
       "Leuven centrum",
       "Heverlee en Arenbergcampus",
@@ -6479,7 +6479,7 @@ export const locations: Location[] = [
       "3D model laten printen Aarschot",
     ],
     metaDescription:
-      "3D printen in Aarschot en het Hageland voor prototypes en kleine series. Snelle levering via de E314 met PLA, PETG en TPU.",
+      "3D printen in Aarschot en het Hageland voor prototypes en zowel kleine als grotere series. Snelle levering via de E314 met PLA, PETG en TPU.",
     servicedAreas: [
       "Aarschot centrum",
       "Industrieterrein Nieuwland",
@@ -6641,7 +6641,7 @@ export const locations: Location[] = [
       "3D model laten printen Tervuren",
     ],
     metaDescription:
-      "3D printen in Tervuren voor musea, expats en lokale ondernemers. Prototypes en kleine series met snelle levering.",
+      "3D printen in Tervuren voor musea, expats en lokale ondernemers. Prototypes en zowel kleine als grotere series met snelle levering.",
     servicedAreas: [
       "Tervuren centrum",
       "Duisburg",
@@ -6799,7 +6799,7 @@ export const locations: Location[] = [
       "3D model laten printen Herent",
     ],
     metaDescription:
-      "3D printen in Herent voor Leuvense rand: prototypes en kleine series met levering richting Wakkerzeel en Veltem.",
+      "3D printen in Herent voor Leuvense rand: prototypes en zowel kleine als grotere series met levering richting Wakkerzeel en Veltem.",
     servicedAreas: [
       "Herent centrum",
       "Winksele",
@@ -6878,7 +6878,7 @@ export const locations: Location[] = [
       "3D model laten printen Nossegem",
     ],
     metaDescription:
-      "3D printen in Nossegem tussen Zaventem en Leuven. Prototypes, behuizingen en kleine series met snelle levering.",
+      "3D printen in Nossegem tussen Zaventem en Leuven. Prototypes, behuizingen en zowel kleine als grotere series met snelle levering.",
     servicedAreas: [
       "Nossegem centrum",
       "Leuvensesteenweg",
@@ -6930,7 +6930,7 @@ export const locations: Location[] = [
       "3D model laten printen Haacht",
     ],
     metaDescription:
-      "3D printen in Haacht voor brouwerijsite en industrie. Prototypes en kleine series met levering richting Tildonk en Wakkerzeel.",
+      "3D printen in Haacht voor brouwerijsite en industrie. Prototypes en zowel kleine als grotere series met levering richting Tildonk en Wakkerzeel.",
     servicedAreas: [
       "Haacht centrum",
       "Tildonk",
@@ -7242,7 +7242,7 @@ export const locations: Location[] = [
       "3D model laten printen Hoegaarden",
     ],
     metaDescription:
-      "3D printen in Hoegaarden voor brouwerij, events en KMO's. Prototypes en kleine series met levering richting N29/E40.",
+      "3D printen in Hoegaarden voor brouwerij, events en KMO's. Prototypes en zowel kleine als grotere series met levering richting N29/E40.",
     servicedAreas: [
       "Hoegaarden centrum",
       "Meldert (Vlaams-Brabant)",
@@ -7372,7 +7372,7 @@ export const locations: Location[] = [
       "3D model laten printen Linter",
     ],
     metaDescription:
-      "3D printen in Linter voor landelijk Hageland: prototypes, tooling en kleine series met levering op afspraak.",
+      "3D printen in Linter voor landelijk Hageland: prototypes, tooling en zowel kleine als grotere series met levering op afspraak.",
     servicedAreas: [
       "Linter centrum",
       "Drieslinter",
@@ -7502,7 +7502,7 @@ export const locations: Location[] = [
       "3D model laten printen Opwijk",
     ],
     metaDescription:
-      "3D printen in Opwijk voor KMO's en events tussen Aalst en Brussel. Prototypes en kleine series met snelle levering.",
+      "3D printen in Opwijk voor KMO's en events tussen Aalst en Brussel. Prototypes en zowel kleine als grotere series met snelle levering.",
     servicedAreas: [
       "Opwijk centrum",
       "Mazenzele",
@@ -7838,7 +7838,7 @@ export const locations: Location[] = [
       "3D model laten printen Galmaarden",
     ],
     metaDescription:
-      "3D printen in Galmaarden (Pajottenland) voor prototypes, tooling en kleine series. Snelle levering via Ninoofsesteenweg.",
+      "3D printen in Galmaarden (Pajottenland) voor prototypes, tooling en zowel kleine als grotere series. Snelle levering via Ninoofsesteenweg.",
     servicedAreas: [
       "Galmaarden centrum",
       "Vollezele",
@@ -7936,15 +7936,52 @@ function normSlug(s: string): string {
   return s.trim().toLowerCase().replace(/^\/|\/$/g, "")
 }
 
-export function buildDefaultRelatedPhrases(city: string): string[] {
+function uniquePhrases(phrases: string[]): string[] {
+  return Array.from(
+    new Set(phrases.map((phrase) => phrase.trim()).filter(Boolean)),
+  )
+}
+
+function provinceRegionTerms(province?: string): string[] {
+  const normalized = province?.trim().toLowerCase()
+  if (!normalized) return []
+
+  if (normalized === "oost-vlaanderen") {
+    return ["Oost-Vlaanderen", "Vlaamse Ardennen", "Denderstreek", "Waasland", "Meetjesland"]
+  }
+
+  if (normalized === "vlaams-brabant") {
+    return ["Vlaams-Brabant", "Pajottenland", "Dijleland", "Hageland", "Zennevallei"]
+  }
+
+  if (normalized === "antwerpen") {
+    return ["Antwerpen", "Rupelstreek", "Voorkempen", "Antwerpse rand"]
+  }
+
+  if (normalized === "west-vlaanderen") {
+    return ["West-Vlaanderen", "Kustregio", "Westhoek", "Middenkust"]
+  }
+
+  return [province!.trim()]
+}
+
+export function buildDefaultRelatedPhrases(city: string, province?: string): string[] {
   const c = city.trim()
-  return [
+  const provinceTerms = provinceRegionTerms(province).slice(0, 2)
+  const provincePhrases = provinceTerms.flatMap((term) => [
+    `3D print service ${c} ${term}`,
+    `prototypes 3D print ${c} ${term}`,
+  ])
+
+  return uniquePhrases([
     `3D printen in ${c}`,
     `3D print service ${c}`,
     `prototypes 3D print ${c}`,
     `FDM 3D print ${c}`,
     `PLA PETG TPU ${c}`,
-  ]
+    `3D model laten printen ${c}`,
+    ...provincePhrases,
+  ])
 }
 
 function buildDefaultServicedAreas(city: string): string[] {
@@ -7968,6 +8005,12 @@ function buildDefaultSectors(city: string): string[] {
   ]
 }
 
+function buildRelatedPhrases(location: Location): string[] {
+  const defaults = buildDefaultRelatedPhrases(location.city, location.province)
+  const existing = location.relatedPhrases ?? []
+  return uniquePhrases([...existing, ...defaults]).slice(0, 12)
+}
+
 export function getAllLocationSlugs(): string[] {
   return locations.map((l) => l.slug)
 }
@@ -7978,6 +8021,7 @@ export function getLocationBySlug(slug: string): Location | undefined {
   if (!loc) return undefined
   return {
     ...loc,
+    relatedPhrases: buildRelatedPhrases(loc),
     servicedAreas: loc.servicedAreas ?? buildDefaultServicedAreas(loc.city),
     sectors: loc.sectors ?? buildDefaultSectors(loc.city),
   }
@@ -7986,6 +8030,7 @@ export function getLocationBySlug(slug: string): Location | undefined {
 export function listLocations(): Location[] {
   return locations.map((loc) => ({
     ...loc,
+    relatedPhrases: buildRelatedPhrases(loc),
     servicedAreas: loc.servicedAreas ?? buildDefaultServicedAreas(loc.city),
     sectors: loc.sectors ?? buildDefaultSectors(loc.city),
   }))

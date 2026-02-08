@@ -1,6 +1,6 @@
 # 3D printen in Vilvoorde: ring, kanaalzone en mediahub
 
-Voor **3D printen in Vilvoorde** leveren we prototypes en kleine series richting de media-as rond Medialaan, de kanaalzone en bedrijventerreinen aan de R0. Transparante prijzen, snelle feedback en leveringen zonder gedoe.
+Voor **3D printen in Vilvoorde** leveren we prototypes en zowel kleine als grotere series richting de media-as rond Medialaan, de kanaalzone en bedrijventerreinen aan de R0. Transparante prijzen, snelle feedback en leveringen zonder gedoe.
 
 ---
 
@@ -35,7 +35,7 @@ We kennen de mix van media, logistiek en KMO's rond Vilvoorde. Daardoor stemmen 
 
 - Props en displays voor content en events.
 - Jigs, passtukken en vervangonderdelen voor magazijnen en productie.
-- Kleine series behuizingen voor kantoor- en IoT-projecten.
+- Kleine en grotere series behuizingen voor kantoor- en IoT-projecten.
 
 ---
 
@@ -67,3 +67,37 @@ Ja. PETG is sterk, temperatuurbestendig en goed voor jigs, beugels en klemmen in
 - Medialaan en businesspark Vilvoorde
 - Kanaalzone Vilvoorde-Brussel
 - Houtem en Peutie
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Vilvoorde
+
+- Dekking: Vilvoorde, Vilvoorde centrum, Medialaan en businesspark, Kanaalzone Vilvoorde-Brussel, Houtem en Peutie, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Vilvoorde.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Media en marketingteams rond Medialaan: PLA/PETG onderdelen afgestemd op projecten rond Vilvoorde centrum.
+- Vaak gevraagd: 3D print service Vilvoorde; we adviseren materiaal en afwerking.
+- Leverfocus: Vilvoorde, Vilvoorde centrum, Medialaan en businesspark.
+
+## Plaatsen waar we vaak leveren rond Vilvoorde
+- Centrum van Vilvoorde
+- Lokale bedrijvenzone in Vilvoorde
+- Sporthal in Vilvoorde
+
+## Sectoren die we vaak helpen in Vilvoorde
+- Media en marketingteams rond Medialaan (Vilvoorde)
+- Logistiek en productie in de kanaalzone (Vilvoorde)
+- Events en retail in centrum Vilvoorde
+
+## Veelgevraagde zoekopdrachten in Vilvoorde
+- 3D print service Vilvoorde
+- rapid prototyping Vilvoorde
+- 3D printing bedrijf Vilvoorde
+<!-- LOCAL_ENRICH_END -->

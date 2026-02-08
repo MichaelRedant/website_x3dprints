@@ -24,7 +24,7 @@ X3DPrints levert 3D prints in Kruishoutem met snelle routes langs E17 en de Vlaa
 In Kruishoutem helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
 
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 
 ## Materialen
@@ -48,7 +48,7 @@ Meer weten? Bekijk [materials](/materials), de [viewer](/viewer), sectorcases op
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -65,7 +65,13 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Kruishoutem
+- Centrum van Kruishoutem
+- Lokale bedrijvenzone in Kruishoutem
+- Sporthal in Kruishoutem
+
 
 ## Spotlight rond Kruishoutem
 - Lokale teams in Kruishoutem: behuizingen en pasmallen voor teams in Kruishoutem.

@@ -1,6 +1,6 @@
 # 3D printen in Woubrechtegem: lokale innovatie dichtbij huis
 
-**3D printen in Woubrechtegem** brengt moderne maaktechnologie naar een landelijke en rustige deelgemeente van Herzele. Dankzij deze service hoeven bewoners, ondernemers en verenigingen niet langer naar verre steden om hun ideeën werkelijkheid te maken. Van eenmalige prototypes tot kleine series: 3D printen in Woubrechtegem staat voor **persoonlijke service, korte lijnen en duidelijke communicatie**.
+**3D printen in Woubrechtegem** brengt moderne maaktechnologie naar een landelijke en rustige deelgemeente van Herzele. Dankzij deze service hoeven bewoners, ondernemers en verenigingen niet langer naar verre steden om hun ideeën werkelijkheid te maken. Van eenmalige prototypes tot kleine en grotere series: 3D printen in Woubrechtegem staat voor **persoonlijke service, korte lijnen en duidelijke communicatie**.
 
 X3DPrints is een **Herzeelse handelaar** en **100% Belgische 3D printstudio**. We leveren vanuit Herzele in een korte keten en zijn een **trots lid van de Werkgroep Ondernemend Herzele**. Geen outsourcing of dropshipping - je schakelt rechtstreeks met de maker in het atelier. Lees meer over onze aanpak op [de lokale & Belgische pagina](/lokaal-belgisch) en je kan ook betalen met de Herzeelse Euro (Heuro).
 
@@ -25,7 +25,7 @@ Voor Woubrechtegem leveren we snel en denken we mee over sterkte en afwerking, i
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Woubrechtegem
 
@@ -42,7 +42,7 @@ Daarnaast zijn op aanvraag ook **ABS/ASA, Nylon of PA-CF** mogelijk voor meer te
 ## Voor wie is 3D printen in Woubrechtegem interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven gebruiken 3D printen in Woubrechtegem om productideeën te testen, reserveonderdelen te maken en kleine series rendabel te produceren.  
+Lokale bedrijven gebruiken 3D printen in Woubrechtegem om productideeën te testen, reserveonderdelen te maken en zowel kleine als grotere series rendabel te produceren.  
 
 ### Makers en hobbyisten
 Creatieve geesten krijgen toegang tot professionele printtechnologie om persoonlijke projecten, gadgets of reparaties uit te voeren.  
@@ -118,8 +118,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Woubrechtegem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Woubrechtegem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Woubrechtegem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Herzele
 - [3D printen in Herzele](/3d-printen-in-herzele)
@@ -149,7 +149,13 @@ Benieuwd hoe 3D printen in Woubrechtegem jouw idee kan versterken? Vraag vandaag
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Woubrechtegem
+- Centrum van Woubrechtegem
+- Lokale bedrijvenzone in Woubrechtegem
+- Sporthal in Woubrechtegem
+
 
 ## Spotlight rond Woubrechtegem
 - Lokale teams in Woubrechtegem: behuizingen en pasmallen voor teams in Woubrechtegem.

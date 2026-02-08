@@ -1,6 +1,6 @@
 # 3D printen in Beervelde: lokaal maatwerk met korte doorlooptijd
 
-**3D printen in Beervelde** (Lochristi) is ideaal voor prototypes, maatwerk en kleine series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Beervelde** (Lochristi) is ideaal voor prototypes, maatwerk en zowel kleine als grotere series met snelle levering. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -80,7 +80,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -100,7 +100,6 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 - [3D printen in Zaffelare](/3d-printen-in-zaffelare)
 - [3D printen in Zeveneken](/3d-printen-in-zeveneken)
 - [3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
-- [3D printen in Gent](/3d-printen-in-gent)
 ---
 
 ## Externe links
@@ -127,6 +126,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Lochristi](/3d-printen-in-lochristi)
 - [Buurpagina: 3D printen in Zaffelare](/3d-printen-in-zaffelare)
 - [Buurpagina: 3D printen in Zeveneken](/3d-printen-in-zeveneken)
+
+
 
 ## Spotlight rond Beervelde
 - Lokale makers en techniekers: behuizingen en pasmallen voor teams in Beervelde centrum.

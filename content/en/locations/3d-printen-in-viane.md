@@ -15,7 +15,7 @@ Need **3D printing in Viane**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Areas we serve near Viane
 
-We frequently deliver to: Viane.
+We frequently deliver to: Viane, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Viane.
 
 ## Local spotlight for Viane
 
-- Local SMEs in Viane: tailored PETG/PLA parts for teams around Viane.
-- Common ask: 3D print service Viane; we advise material and finishing for Viane.
-- Delivery focus: Viane.
+- Manufacturing and SMEs around Viane: prototypes, fixtures and housings.
+- Common ask in Viane: custom 3D printing with practical PLA/PETG/TPU advice for Viane.
+- Delivery focus: Viane, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Viane.
 
 ## What clients near Viane often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Viane.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 - PLA or PETG functional parts for teams in Viane.
-- Paint-ready show models for presentations in Viane and Viane.
+- Paint-ready show models for presentations in Viane and the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Viane.
 
 ## Related pages for Viane
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Viane*
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Viane
 
-- Coverage: Viane; delivery from Herzele, pickup available.
+- Coverage: Viane, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Viane.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Spotlight near Viane
-- Local teams in Viane: fixtures and housings for teams around Viane.
-- Frequent order: 3D print service Viane; we keep settings for reorders.
-- Delivery focus: Viane.
+- SMEs and makers in Viane: fixtures and enclosures.
+- Frequent order: 3D printing service in Viane; we keep settings for reorders.
+- Delivery focus: Viane, Pickup in Herzele.
 
 ## Landmarks around Viane
 - Viane town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Viane*
 - Education/labs around Viane: lesson-ready prints.
 
 ## Frequently asked in Viane
-- 3D print service Viane
-- rapid prototyping Viane
-- 3D printing bedrijf Viane
+- 3D printing service in Viane
+- Custom 3D printing in Viane
+- 3D model printing in Viane
 <!-- LOCAL_ENRICH_END -->

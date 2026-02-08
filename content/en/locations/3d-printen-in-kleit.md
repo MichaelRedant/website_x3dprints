@@ -15,7 +15,7 @@ Need **3D printing in Kleit**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Areas we serve near Kleit
 
-We frequently deliver to: Kleit.
+We frequently deliver to: Kleit, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Kleit.
 
 ## Local spotlight for Kleit
 
-- Local SMEs in Kleit: tailored PETG/PLA parts for teams around Kleit.
-- Common ask: 3D print service Kleit; we advise material and finishing for Kleit.
-- Delivery focus: Kleit.
+- Manufacturing and SMEs around Kleit: prototypes, fixtures and housings.
+- Common ask in Kleit: custom 3D printing with practical PLA/PETG/TPU advice for Kleit.
+- Delivery focus: Kleit, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Kleit.
 
 ## What clients near Kleit often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Kleit.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 - PLA or PETG functional parts for teams in Kleit.
-- Paint-ready show models for presentations in Kleit and Kleit.
+- Paint-ready show models for presentations in Kleit and the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Kleit.
 
 ## Related pages for Kleit
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Kleit*
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Kleit
 
-- Coverage: Kleit; delivery from Herzele, pickup available.
+- Coverage: Kleit, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Kleit.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Nearby locations
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Spotlight near Kleit
-- Local teams in Kleit: fixtures and housings for teams around Kleit.
-- Frequent order: 3D print service Kleit; we keep settings for reorders.
-- Delivery focus: Kleit.
+- SMEs and makers in Kleit: fixtures and enclosures.
+- Frequent order: 3D printing service in Kleit; we keep settings for reorders.
+- Delivery focus: Kleit, Pickup in Herzele.
 
 ## Landmarks around Kleit
 - Kleit town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Kleit*
 - Education/labs around Kleit: lesson-ready prints.
 
 ## Frequently asked in Kleit
-- 3D print service Kleit
-- rapid prototyping Kleit
-- 3D printing bedrijf Kleit
+- 3D printing service in Kleit
+- Custom 3D printing in Kleit
+- 3D model printing in Kleit
 <!-- LOCAL_ENRICH_END -->

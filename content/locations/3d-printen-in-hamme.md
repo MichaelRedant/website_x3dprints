@@ -1,6 +1,6 @@
 # 3D printen in Hamme: snelle service aan de Durme
 
-**3D printen in Hamme** is ideaal voor prototypes, maatwerk en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Hamme** is ideaal voor prototypes, maatwerk en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Lokale focus in Hamme
 
-Werk je in Hamme? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Sint-Pieters-Bandenkerk (Hamme).
+Werk je in Hamme? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Pieters-Bandenkerk (Hamme).
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Hamme interessant?
 
 ### Lokale bedrijven en zelfstandigen
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Onderhoud en herstellingen
 Sterke onderdelen die tegen een stootje kunnen.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Hoofdpagina: 3D printen in Dendermonde](/3d-printen-in-dendermonde)
 - [Hoofdpagina: 3D printen in Waasmunster](/3d-printen-in-waasmunster)
 - [Hoofdpagina: 3D printen in Sombeke](/3d-printen-in-sombeke)
+
+
 
 ## Klantenspotlight
 - Lokale KMO's en zelfstandigen: kleine reeksen met vaste settings rond Hamme centrum.

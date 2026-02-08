@@ -1,12 +1,12 @@
 # 3D printing in Beerlegem: local, fast and tailored
 
-Need **3D printing in Beerlegem**? X3DPrints prints in Herzele and ships quickly to Beerlegem and nearby Beerlegem centrum. Local 3D printing for Beerlegem, Beerlegem centrum and Zwalm, Nederzwalm-Hermelgem, Munkzwalm: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Beerlegem**? X3DPrints prints in Herzele and ships quickly to Beerlegem and nearby Zwalm. Local 3D printing for Beerlegem, Zwalm and Nederzwalm-Hermelgem, Munkzwalm: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Beerlegem teams choose us
 
-- Local delivery to Beerlegem, Beerlegem centrum and Zwalm, Nederzwalm-Hermelgem, Munkzwalm; pickup in Herzele.
+- Local delivery to Beerlegem, Zwalm and Nederzwalm-Hermelgem, Munkzwalm; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Beerlegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Beerlegem**? X3DPrints prints in Herzele and ships quickly
 
 ## Areas we serve near Beerlegem
 
-We frequently deliver to: Beerlegem, Beerlegem centrum, Zwalm, Nederzwalm-Hermelgem, Munkzwalm, Afhalen Herzele.
+We frequently deliver to: Beerlegem, Beerlegem city center, Zwalm, Nederzwalm-Hermelgem, Munkzwalm, Pickup in Herzele.
 
 ---
 
 ## Projects we help deliver near Beerlegem
 
 - Prototype housings and fixtures used by teams in Beerlegem.
-- Short-run batches that stay consistent for companies near Beerlegem centrum.
-- Replacement brackets and guards for workshops around Zwalm.
+- Short-run batches that stay consistent for companies near Zwalm.
+- Replacement brackets and guards for workshops around Nederzwalm-Hermelgem.
 - Display pieces and branded props for events near Beerlegem.
 - Brackets, guards and fixtures tuned for teams in Beerlegem.
 - Demo pieces and props for events near Beerlegem.
@@ -32,9 +32,9 @@ We frequently deliver to: Beerlegem, Beerlegem centrum, Zwalm, Nederzwalm-Hermel
 
 ## Local spotlight for Beerlegem
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Beerlegem centrum.
-- Common ask: 3D print service Beerlegem; we advise material and finishing for Zwalm.
-- Delivery focus: Beerlegem, Beerlegem centrum, Zwalm.
+- Makers and product teams in Beerlegem: iterative prototyping and short-run production.
+- Common ask in Beerlegem: custom 3D printing with practical PLA/PETG/TPU advice for Nederzwalm-Hermelgem.
+- Delivery focus: Beerlegem, Beerlegem city center, Zwalm.
 
 ---
 
@@ -48,17 +48,16 @@ We frequently deliver to: Beerlegem, Beerlegem centrum, Zwalm, Nederzwalm-Hermel
 
 ## Who we support around Beerlegem
 
-- Local projects in Beerlegem: Lokale makers en ontwerpers
-- Local projects in Beerlegem: Kleine series en maatwerk
+- Makers and product teams in Beerlegem: iterative prototyping and short-run production.
 - Education and labs around Beerlegem: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## What clients near Beerlegem often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Beerlegem centrum.
+- TPU grips and pads for bikes, tools or fixtures around Zwalm.
 - PLA or PETG functional parts for teams in Beerlegem.
-- Paint-ready show models for presentations in Beerlegem and Beerlegem centrum.
+- Paint-ready show models for presentations in Beerlegem and Zwalm.
 
 ---
 
@@ -97,7 +96,6 @@ We frequently deliver to: Beerlegem, Beerlegem centrum, Zwalm, Nederzwalm-Hermel
 - [3D printing in Zwalm](/en/3d-printen-in-zwalm)
 - [3D printing in Nederzwalm-Hermelgem](/en/3d-printen-in-nederzwalm-hermelgem)
 - [3D printing in Munkzwalm](/en/3d-printen-in-munkzwalm)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Beerle
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Beerlegem
 
-- Coverage: Beerlegem, Beerlegem centrum, Zwalm, Nederzwalm-Hermelgem, Munkzwalm, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Beerlegem, Beerlegem city center, Zwalm, Nederzwalm-Hermelgem, Munkzwalm, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Beerlegem.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +121,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Beerle
 - [Nearby: 3D printing in Munkzwalm](/en/3d-printen-in-munkzwalm)
 
 ## Spotlight near Beerlegem
-- Lokale makers en ontwerpers: fixtures and housings for teams around Beerlegem centrum.
-- Frequent order: 3D print service Beerlegem; we keep settings for reorders.
-- Delivery focus: Beerlegem, Beerlegem centrum, Zwalm.
+- Makers and product teams in Beerlegem: iterative prototyping and short-run production.
+- Frequent order: 3D printing service in Beerlegem; we keep settings for reorders.
+- Delivery focus: Beerlegem, Beerlegem city center, Zwalm.
 
 ## Landmarks around Beerlegem
 - Beerlegem town center
@@ -133,12 +131,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Beerle
 - sports hall in Beerlegem
 
 ## Teams we support around Beerlegem
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in Beerlegem: iterative prototyping and short-run production.
 - Education/labs around Beerlegem: reliable PLA/PETG parts.
 
 ## Frequently asked in Beerlegem
-- 3D print service Beerlegem
-- rapid prototyping Beerlegem
-- 3D printing bedrijf Beerlegem
+- 3D printing service in Beerlegem
+- Custom 3D printing in Beerlegem
+- 3D model printing in Beerlegem
 <!-- LOCAL_ENRICH_END -->

@@ -15,7 +15,7 @@ Deurle ligt langs de Leie met musea zoals Dhondt-Dhaenens en pittoreske natuur. 
 
 - **Musea & galerijen**: PLA maquettes, sokkels en displayonderdelen.  
 - **Leie-omgeving**: PETG signage en houders die vocht aankunnen.  
-- **KMO's en makers**: jigs, behuizingen en kleine series met snelle levering.
+- **KMO's en makers**: jigs, behuizingen en zowel kleine als grotere series met snelle levering.
 
 
 
@@ -23,7 +23,7 @@ Deurle ligt langs de Leie met musea zoals Dhondt-Dhaenens en pittoreske natuur. 
 
 Voor projecten in Deurle combineren we korte doorlooptijd met strakke afwerking.
 
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 
@@ -44,7 +44,7 @@ Bekijk ook [materials](/materials), de [viewer](/viewer), sectorcases op [segmen
 
 ## Veelgestelde vragen over 3D printen in Deurle
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -65,7 +65,13 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Deurle (Sint-Martens-Latem)
+- Centrum van Deurle (Sint-Martens-Latem)
+- Lokale bedrijvenzone in Deurle (Sint-Martens-Latem)
+- Sporthal in Deurle (Sint-Martens-Latem)
+
 
 ## Lokale spotlight
 - Lokale teams in Deurle (Sint-Martens-Latem): PLA/PETG onderdelen afgestemd op projecten rond Deurle (Sint-Martens-Latem).

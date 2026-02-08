@@ -23,7 +23,7 @@ Voor Erwetegem leveren we snel en denken we mee over sterkte en afwerking, ideaa
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Erwetegem
 
@@ -168,7 +168,7 @@ Wil je zelf de mogelijkheden van **3D printen in Erwetegem** verkennen? Neem con
 
 ## Extra toepassingen van 3D printen in Erwetegem
 
-Naast de klassieke toepassingen zijn er nog talrijke scenario’s waarbij **3D printen in Erwetegem** het verschil maakt. Denk aan gepersonaliseerde hulpmiddelen voor zorginstellingen of unieke onderdelen voor vintage voertuigen. Lokale ontwerpers gebruiken **3D printen in Erwetegem** om kunstwerken te realiseren die anders onmogelijk zouden zijn. Zelfs kleine series promotiemateriaal worden dankzij **3D printen in Erwetegem** binnen enkele dagen geproduceerd.
+Naast de klassieke toepassingen zijn er nog talrijke scenario’s waarbij **3D printen in Erwetegem** het verschil maakt. Denk aan gepersonaliseerde hulpmiddelen voor zorginstellingen of unieke onderdelen voor vintage voertuigen. Lokale ontwerpers gebruiken **3D printen in Erwetegem** om kunstwerken te realiseren die anders onmogelijk zouden zijn. Zelfs kleine en grotere series promotiemateriaal worden dankzij **3D printen in Erwetegem** binnen enkele dagen geproduceerd.
 
 ## Vooruitzichten voor 3D printen in Erwetegem
 
@@ -191,7 +191,13 @@ Of je nu een student, ondernemer of hobbyist bent, **3D printen in Erwetegem** b
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Erwetegem
+- Centrum van Erwetegem
+- Lokale bedrijvenzone in Erwetegem
+- Sporthal in Erwetegem
+
 
 ## Spotlight rond Erwetegem
 - Lokale teams in Erwetegem: behuizingen en pasmallen voor teams in Erwetegem.

@@ -1,12 +1,12 @@
 # 3D printing in De Klijpe: local, fast and tailored
 
-Need **3D printing in De Klijpe**? X3DPrints prints in Herzele and ships quickly to De Klijpe and nearby De Klijpe centrum. Local 3D printing for De Klijpe, De Klijpe centrum and Ronse, Louise-Marie, Maarkedal: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in De Klijpe**? X3DPrints prints in Herzele and ships quickly to De Klijpe and nearby Ronse. Local 3D printing for De Klijpe, Ronse and Louise-Marie, Maarkedal: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why De Klijpe teams choose us
 
-- Local delivery to De Klijpe, De Klijpe centrum and Ronse, Louise-Marie, Maarkedal; pickup in Herzele.
+- Local delivery to De Klijpe, Ronse and Louise-Marie, Maarkedal; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in De Klijpe.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in De Klijpe**? X3DPrints prints in Herzele and ships quickly
 
 ## Delivery focus for De Klijpe
 
-We frequently deliver to: De Klijpe, De Klijpe centrum, Ronse, Louise-Marie, Maarkedal, Afhalen Herzele.
+We frequently deliver to: De Klijpe, De Klijpe city center, Ronse, Louise-Marie, Maarkedal, Pickup in Herzele.
 
 ---
 
 ## What teams near De Klijpe ask us to make
 
 - Pilot runs for SMEs around De Klijpe, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near De Klijpe centrum.
-- TPU dampers and grips for gear used in Ronse.
+- Functional PETG parts for maintenance teams near Ronse.
+- TPU dampers and grips for gear used in Louise-Marie.
 - Presentation models and mockups for pitches around De Klijpe.
 - Brackets, guards and fixtures tuned for teams in De Klijpe.
 - Demo pieces and props for events near De Klijpe.
@@ -32,9 +32,9 @@ We frequently deliver to: De Klijpe, De Klijpe centrum, Ronse, Louise-Marie, Maa
 
 ## What stands out in De Klijpe
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around De Klijpe centrum.
-- Common ask: 3D print service De Klijpe; we advise material and finishing for Ronse.
-- Delivery focus: De Klijpe, De Klijpe centrum, Ronse.
+- Makers and product teams in De Klijpe: iterative prototyping and short-run production.
+- Common ask in De Klijpe: custom 3D printing with practical PLA/PETG/TPU advice for Louise-Marie.
+- Delivery focus: De Klijpe, De Klijpe city center, Ronse.
 
 ---
 
@@ -48,17 +48,16 @@ We frequently deliver to: De Klijpe, De Klijpe centrum, Ronse, Louise-Marie, Maa
 
 ## Sectors we back near De Klijpe
 
-- Local projects in De Klijpe: Lokale makers en ontwerpers
-- Local projects in De Klijpe: Kleine series en maatwerk
+- Makers and product teams in De Klijpe: iterative prototyping and short-run production.
 - Education and labs around De Klijpe: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around De Klijpe
 
-- Paint-ready show models for presentations in De Klijpe and De Klijpe centrum.
+- Paint-ready show models for presentations in De Klijpe and Ronse.
 - PLA or PETG functional parts for teams in De Klijpe.
-- TPU grips and pads for bikes, tools or fixtures around De Klijpe centrum.
+- TPU grips and pads for bikes, tools or fixtures around Ronse.
 
 ---
 
@@ -97,7 +96,6 @@ We frequently deliver to: De Klijpe, De Klijpe centrum, Ronse, Louise-Marie, Maa
 - [3D printing in Ronse](/en/3d-printen-in-ronse)
 - [3D printing in Louise-Marie](/en/3d-printen-in-louise-marie)
 - [3D printing in Maarkedal](/en/3d-printen-in-maarkedal)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in De Kli
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around De Klijpe
 
-- Coverage: De Klijpe, De Klijpe centrum, Ronse, Louise-Marie, Maarkedal, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: De Klijpe, De Klijpe city center, Ronse, Louise-Marie, Maarkedal, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in De Klijpe.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +121,9 @@ Send your files today and get a clear, fast proposal for **3D printing in De Kli
 - [Nearby: 3D printing in Maarkedal](/en/3d-printen-in-maarkedal)
 
 ## Customer spotlight
-- Lokale makers en ontwerpers: small batches with consistent settings near De Klijpe centrum.
-- Common request: 3D print service De Klijpe; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to De Klijpe and De Klijpe centrum.
+- Makers and product teams in De Klijpe: iterative prototyping and short-run production.
+- Common request: 3D printing service in De Klijpe; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Ronse and Louise-Marie.
 
 ## Where we drop off near De Klijpe
 - De Klijpe town center
@@ -133,12 +131,11 @@ Send your files today and get a clear, fast proposal for **3D printing in De Kli
 - sports hall in De Klijpe
 
 ## Sectors we back near De Klijpe
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in De Klijpe: iterative prototyping and short-run production.
 - Education/labs around De Klijpe: reliable PLA/PETG parts.
 
 ## Common requests around De Klijpe
-- 3D print service De Klijpe
-- rapid prototyping De Klijpe
-- 3D printing bedrijf De Klijpe
+- 3D printing service in De Klijpe
+- Custom 3D printing in De Klijpe
+- 3D model printing in De Klijpe
 <!-- LOCAL_ENRICH_END -->

@@ -17,7 +17,7 @@
 
 ## Lokale focus in Gijzegem
 
-Werk je in Gijzegem? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Gijzegem.
+Werk je in Gijzegem? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Gijzegem.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Pasmallen en sjablonen voor montage en assemblage.
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Gijzegem** ook ABS, ASA, Nylon of PA-CF voor 
 ## Voor wie is 3D printen in Gijzegem interessant?
 
 ### Ondernemers en zelfstandigen
-Bedrijven rond de Dender en de Gijzegemstraat gebruiken **3D printen in Gijzegem** om prototypes en kleine series te realiseren.
+Bedrijven rond de Dender en de Gijzegemstraat gebruiken **3D printen in Gijzegem** om prototypes en zowel kleine als grotere series te realiseren.
 
 ### Makers en hobbyisten
 Creatieve inwoners maken unieke gadgets of maquettes van de Gijzegemkouter met **3D printen in Gijzegem**.
@@ -96,14 +96,13 @@ Gijzegem ligt langs de Dender en grenst aan de Gijzegemkouter. Bewoners genieten
 **Welke bestanden kan ik aanleveren voor Gijzegem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Gijzegem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Gijzegem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Gijzegem?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Aalst
-- [3D printen in Aalst](/3d-printen-in-aalst)
 - [3D printen in Baardegem](/3d-printen-in-baardegem)
 - [3D printen in Erembodegem](/3d-printen-in-erembodegem)
 - [3D printen in Herdersem](/3d-printen-in-herdersem)
@@ -132,7 +131,13 @@ Benieuwd hoe **3D printen in Gijzegem** jouw idee versterkt? Vraag een **gratis 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Gijzegem
+- Centrum van Gijzegem
+- Lokale bedrijvenzone in Gijzegem
+- Sporthal in Gijzegem
+
 
 ## Spotlight rond Gijzegem
 - Lokale teams in Gijzegem: behuizingen en pasmallen voor teams in Gijzegem.

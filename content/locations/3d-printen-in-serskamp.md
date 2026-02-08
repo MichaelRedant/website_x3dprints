@@ -1,6 +1,6 @@
-# 3D printen in Serskamp: snelle prototypes en kleine series
+# 3D printen in Serskamp: snelle prototypes en zowel kleine als grotere series
 
-**3D printen in Serskamp** is ideaal voor prototypes, herstellingen en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Serskamp** is ideaal voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -23,10 +23,10 @@
 
 ## Lokale focus in Serskamp
 
-Werk je in Serskamp? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Serskamp.
+Werk je in Serskamp? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Serskamp.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 
 ## Materialen voor 3D printen in Serskamp
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Schellebelle](/3d-printen-in-schellebelle)
 - [Buurpagina: 3D printen in Wetteren](/3d-printen-in-wetteren)
 
+
+
 ## Spotlight rond Serskamp
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Serskamp centrum.
 - Terugkerende order: 3D print service Serskamp; we bewaren je instellingen.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Serskamp
 - Lokale makers en ontwerpers (Serskamp)
-- Kleine series en maatwerk (Serskamp)
+- Kleine en grotere series en maatwerk (Serskamp)
 - Verenigingen en onderwijs (Serskamp)
 
 ## Wat vaak wordt gevraagd in Serskamp

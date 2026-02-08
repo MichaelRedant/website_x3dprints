@@ -1,12 +1,12 @@
 # 3D printing in Ekeren: local, fast and tailored
 
-Need **3D printing in Ekeren**? X3DPrints prints in Herzele and ships quickly to Ekeren and nearby Ekeren centrum. Local 3D printing for Ekeren, Ekeren centrum and Rozemaai, Leugenberg, Ekeren-Donk: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Ekeren**? X3DPrints prints in Herzele and ships quickly to Ekeren and nearby Rozemaai. Local 3D printing for Ekeren, Rozemaai and Leugenberg, Ekeren-Donk: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Ekeren teams choose us
 
-- Local delivery to Ekeren, Ekeren centrum and Rozemaai, Leugenberg, Ekeren-Donk; pickup in Herzele.
+- Local delivery to Ekeren, Rozemaai and Leugenberg, Ekeren-Donk; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Ekeren.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Ekeren**? X3DPrints prints in Herzele and ships quickly to
 
 ## Delivery focus for Ekeren
 
-We frequently deliver to: Ekeren, Ekeren centrum, Rozemaai, Leugenberg, Ekeren-Donk, Kapellen grens, Afhalen Herzele.
+We frequently deliver to: Ekeren, Ekeren city center, Rozemaai, Leugenberg, Ekeren-Donk, Kapellen border area, Pickup in Herzele.
 
 ---
 
 ## What teams near Ekeren ask us to make
 
 - Pilot runs for SMEs around Ekeren, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Ekeren centrum.
-- TPU dampers and grips for gear used in Rozemaai.
+- Functional PETG parts for maintenance teams near Rozemaai.
+- TPU dampers and grips for gear used in Leugenberg.
 - Presentation models and mockups for pitches around Ekeren.
 - Brackets, guards and fixtures tuned for teams in Ekeren.
 - Demo pieces and props for events near Ekeren.
@@ -32,9 +32,9 @@ We frequently deliver to: Ekeren, Ekeren centrum, Rozemaai, Leugenberg, Ekeren-D
 
 ## What stands out in Ekeren
 
-- Haven/industrie tooling Ekeren: tailored PETG/PLA parts for teams around Ekeren centrum.
-- Common ask: 3D print service Ekeren; we advise material and finishing for Rozemaai.
-- Delivery focus: Ekeren, Ekeren centrum, Rozemaai.
+- SMEs and industry near Ekeren: fixtures, enclosures and small to large batches.
+- Common ask in Ekeren: custom 3D printing with practical PLA/PETG/TPU advice for Leugenberg.
+- Delivery focus: Ekeren, Ekeren city center, Rozemaai.
 
 ---
 
@@ -48,16 +48,16 @@ We frequently deliver to: Ekeren, Ekeren centrum, Rozemaai, Leugenberg, Ekeren-D
 
 ## Sectors we back near Ekeren
 
-- SMEs and industry near Ekeren: fixtures, enclosures and small batches.
+- SMEs and industry near Ekeren: fixtures, enclosures and small to large batches.
 - Retail/marketing/events in Ekeren: displays, props and branded pieces.
 
 ---
 
 ## Recent requests around Ekeren
 
-- Paint-ready show models for presentations in Ekeren and Ekeren centrum.
+- Paint-ready show models for presentations in Ekeren and Rozemaai.
 - PLA or PETG functional parts for teams in Ekeren.
-- TPU grips and pads for bikes, tools or fixtures around Ekeren centrum.
+- TPU grips and pads for bikes, tools or fixtures around Rozemaai.
 
 ---
 
@@ -93,10 +93,7 @@ We frequently deliver to: Ekeren, Ekeren centrum, Rozemaai, Leugenberg, Ekeren-D
 
 ## Useful links near Ekeren
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -111,7 +108,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Ekeren
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Ekeren
 
-- Coverage: Ekeren, Ekeren centrum, Rozemaai, Leugenberg, Ekeren-Donk, Kapellen grens; delivery from Herzele, pickup available.
+- Coverage: Ekeren, Ekeren city center, Rozemaai, Leugenberg, Ekeren-Donk, Kapellen border area; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Ekeren.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -120,9 +117,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Ekeren
 - [Parent page: 3D printing in Berendrecht-Zandvliet-Lillo](/en/3d-printen-in-berendrecht-zandvliet-lillo)
 
 ## Customer spotlight
-- Haven/industrie tooling Ekeren: small batches with consistent settings near Ekeren centrum.
-- Common request: 3D print service Ekeren; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Ekeren and Ekeren centrum.
+- SMEs/industry near Ekeren: prototypes, fixtures, housings.
+- Common request: 3D printing service in Ekeren; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Rozemaai and Leugenberg.
 
 ## Where we drop off near Ekeren
 - Ekeren town center
@@ -134,7 +131,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Ekeren
 - Retail/marketing/events in Ekeren: displays, signage, props.
 
 ## Common requests around Ekeren
-- 3D print service Ekeren
-- rapid prototyping Ekeren
-- 3D printing bedrijf Ekeren
+- 3D printing service in Ekeren
+- Custom 3D printing in Ekeren
+- 3D model printing in Ekeren
 <!-- LOCAL_ENRICH_END -->

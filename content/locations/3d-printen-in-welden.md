@@ -21,11 +21,11 @@ X3DPrints ondersteunt Welden met snelle 3D prints voor projecten langs de Scheld
 
 ## Lokale focus in Welden (Oudenaarde)
 
-Werk je in Welden (Oudenaarde)? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Welden (Oudenaarde)? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Ergonomische grips en handgrepen op maat.
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 
 ## Materialen
 
@@ -52,7 +52,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -65,7 +65,13 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Welden (Oudenaarde)
+- Centrum van Welden (Oudenaarde)
+- Lokale bedrijvenzone in Welden (Oudenaarde)
+- Sporthal in Welden (Oudenaarde)
+
 
 ## Spotlight rond Welden (Oudenaarde)
 - Lokale teams in Welden (Oudenaarde): behuizingen en pasmallen voor teams in Welden (Oudenaarde).

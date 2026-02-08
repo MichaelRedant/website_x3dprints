@@ -15,7 +15,7 @@ Need **3D printing in Rumst**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Delivery focus for Rumst
 
-We frequently deliver to: Rumst.
+We frequently deliver to: Rumst, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Rumst.
 
 ## What stands out in Rumst
 
-- Local SMEs in Rumst: tailored PETG/PLA parts for teams around Rumst.
-- Common ask: 3D print service Rumst; we advise material and finishing for Rumst.
-- Delivery focus: Rumst.
+- Manufacturing and SMEs around Rumst: prototypes, fixtures and housings.
+- Common ask in Rumst: custom 3D printing with practical PLA/PETG/TPU advice for Rumst.
+- Delivery focus: Rumst, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Rumst.
 
 ## Recent requests around Rumst
 
-- Paint-ready show models for presentations in Rumst and Rumst.
+- Paint-ready show models for presentations in Rumst and the surrounding area.
 - PLA or PETG functional parts for teams in Rumst.
-- TPU grips and pads for bikes, tools or fixtures around Rumst.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Rumst.
 
 ## Useful links near Rumst
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,17 +109,17 @@ Send your files today and get a clear, fast proposal for **3D printing in Rumst*
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Rumst
 
-- Coverage: Rumst; delivery from Herzele, pickup available.
+- Coverage: Rumst, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Rumst.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Related nearby pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Customer spotlight
-- Local teams in Rumst: small batches with consistent settings near Rumst.
-- Common request: 3D print service Rumst; we pick material and finish for the use case.
+- SMEs and makers in Rumst: fixtures and enclosures.
+- Common request: 3D printing service in Rumst; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Rumst and Rumst.
 
 ## Where we drop off near Rumst
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Rumst*
 - Education/labs around Rumst: lesson-ready prints.
 
 ## Common requests around Rumst
-- 3D print service Rumst
-- rapid prototyping Rumst
-- 3D printing bedrijf Rumst
+- 3D printing service in Rumst
+- Custom 3D printing in Rumst
+- 3D model printing in Rumst
 <!-- LOCAL_ENRICH_END -->

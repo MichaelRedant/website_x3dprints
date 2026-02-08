@@ -32,7 +32,7 @@ Voor **3D printen in Kampenhout** leveren we prototypes, tooling en behuizingen 
 
 - Serviceparts en fixtures voor productie en onderhoud.
 - Retailprops en signage voor lokale campagnes.
-- Kleine series behuizingen voor elektronica en sensoren.
+- Kleine en grotere series behuizingen voor elektronica en sensoren.
 
 ---
 
@@ -61,3 +61,37 @@ Deel je files via [contact](/contact). We sturen snel een voorstel voor **3D pri
 - Kampenhout-Sas
 - Berg
 - Nederokkerzeel
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Kampenhout
+
+- Dekking: Kampenhout, Kampenhout centrum, Berg, Nederokkerzeel, Haachtsesteenweg-corridor, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Kampenhout.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Industrie en logistiek rond Kampenhout-Sas: PLA/PETG onderdelen afgestemd op projecten rond Kampenhout centrum.
+- Vaak gevraagd: 3D print service Kampenhout; we adviseren materiaal en afwerking.
+- Leverfocus: Kampenhout, Kampenhout centrum, Berg.
+
+## Plaatsen waar we vaak leveren rond Kampenhout
+- Centrum van Kampenhout
+- Lokale bedrijvenzone in Kampenhout
+- Sporthal in Kampenhout
+
+## Sectoren die we vaak helpen in Kampenhout
+- Industrie en logistiek rond Kampenhout-Sas
+- Retail en events in Kampenhout en deelgemeenten
+- Makers en onderwijs in de regio (Kampenhout)
+
+## Veelgevraagde zoekopdrachten in Kampenhout
+- 3D print service Kampenhout
+- rapid prototyping Kampenhout
+- 3D printing bedrijf Kampenhout
+<!-- LOCAL_ENRICH_END -->

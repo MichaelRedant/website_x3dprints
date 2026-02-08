@@ -1,12 +1,12 @@
 # 3D printing in Meerdonk: local, fast and tailored
 
-Need **3D printing in Meerdonk**? X3DPrints prints in Herzele and ships quickly to Meerdonk and nearby Meerdonk centrum. Local 3D printing for Meerdonk, Meerdonk centrum and Sint-Gillis-Waas, De Klinge, Sint-Pauwels: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Meerdonk**? X3DPrints prints in Herzele and ships quickly to Meerdonk and nearby Sint-Gillis-Waas. Local 3D printing for Meerdonk, Sint-Gillis-Waas and De Klinge, Sint-Pauwels: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Meerdonk teams choose us
 
-- Local delivery to Meerdonk, Meerdonk centrum and Sint-Gillis-Waas, De Klinge, Sint-Pauwels; pickup in Herzele.
+- Local delivery to Meerdonk, Sint-Gillis-Waas and De Klinge, Sint-Pauwels; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Meerdonk.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Meerdonk**? X3DPrints prints in Herzele and ships quickly 
 
 ## Delivery focus for Meerdonk
 
-We frequently deliver to: Meerdonk, Meerdonk centrum, Sint-Gillis-Waas, De Klinge, Sint-Pauwels, Afhalen Herzele.
+We frequently deliver to: Meerdonk, Meerdonk city center, Sint-Gillis-Waas, De Klinge, Sint-Pauwels, Pickup in Herzele.
 
 ---
 
 ## What teams near Meerdonk ask us to make
 
 - Pilot runs for SMEs around Meerdonk, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Meerdonk centrum.
-- TPU dampers and grips for gear used in Sint-Gillis-Waas.
+- Functional PETG parts for maintenance teams near Sint-Gillis-Waas.
+- TPU dampers and grips for gear used in De Klinge.
 - Presentation models and mockups for pitches around Meerdonk.
 - Brackets, guards and fixtures tuned for teams in Meerdonk.
 - Demo pieces and props for events near Meerdonk.
@@ -32,9 +32,9 @@ We frequently deliver to: Meerdonk, Meerdonk centrum, Sint-Gillis-Waas, De Kling
 
 ## What stands out in Meerdonk
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Meerdonk centrum.
-- Common ask: 3D print service Meerdonk; we advise material and finishing for Sint-Gillis-Waas.
-- Delivery focus: Meerdonk, Meerdonk centrum, Sint-Gillis-Waas.
+- Makers and product teams in Meerdonk: iterative prototyping and short-run production.
+- Common ask in Meerdonk: custom 3D printing with practical PLA/PETG/TPU advice for De Klinge.
+- Delivery focus: Meerdonk, Meerdonk city center, Sint-Gillis-Waas.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Meerdonk, Meerdonk centrum, Sint-Gillis-Waas, De Kling
 
 ## Sectors we back near Meerdonk
 
-- Local projects in Meerdonk: Lokale makers en ontwerpers
-- SMEs and industry near Meerdonk: fixtures, enclosures and small batches.
+- Makers and product teams in Meerdonk: iterative prototyping and short-run production.
+- SMEs and industry near Meerdonk: fixtures, enclosures and small to large batches.
 - Education and labs around Meerdonk: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Meerdonk
 
-- Paint-ready show models for presentations in Meerdonk and Meerdonk centrum.
+- Paint-ready show models for presentations in Meerdonk and Sint-Gillis-Waas.
 - PLA or PETG functional parts for teams in Meerdonk.
-- TPU grips and pads for bikes, tools or fixtures around Meerdonk centrum.
+- TPU grips and pads for bikes, tools or fixtures around Sint-Gillis-Waas.
 
 ---
 
@@ -97,7 +97,6 @@ We frequently deliver to: Meerdonk, Meerdonk centrum, Sint-Gillis-Waas, De Kling
 - [3D printing in Sint-Gillis-Waas](/en/3d-printen-in-sint-gillis-waas)
 - [3D printing in De Klinge](/en/3d-printen-in-de-klinge)
 - [3D printing in Sint-Pauwels](/en/3d-printen-in-sint-pauwels)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Meerdo
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Meerdonk
 
-- Coverage: Meerdonk, Meerdonk centrum, Sint-Gillis-Waas, De Klinge, Sint-Pauwels, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Meerdonk, Meerdonk city center, Sint-Gillis-Waas, De Klinge, Sint-Pauwels, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Meerdonk.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +122,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Meerdo
 - [Nearby: 3D printing in Sint-Pauwels](/en/3d-printen-in-sint-pauwels)
 
 ## Customer spotlight
-- Lokale makers en ontwerpers: small batches with consistent settings near Meerdonk centrum.
-- Common request: 3D print service Meerdonk; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Meerdonk and Meerdonk centrum.
+- Makers and product teams in Meerdonk: iterative prototyping and short-run production.
+- Common request: 3D printing service in Meerdonk; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Sint-Gillis-Waas and De Klinge.
 
 ## Where we drop off near Meerdonk
 - Meerdonk town center
@@ -133,12 +132,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Meerdo
 - sports hall in Meerdonk
 
 ## Sectors we back near Meerdonk
-- Local focus: Lokale makers en ontwerpers
+- Makers and product teams in Meerdonk: iterative prototyping and short-run production.
 - SMEs/industry near Meerdonk: prototypes, fixtures, housings.
 - Education/labs around Meerdonk: reliable PLA/PETG parts.
 
 ## Common requests around Meerdonk
-- 3D print service Meerdonk
-- rapid prototyping Meerdonk
-- 3D printing bedrijf Meerdonk
+- 3D printing service in Meerdonk
+- Custom 3D printing in Meerdonk
+- 3D model printing in Meerdonk
 <!-- LOCAL_ENRICH_END -->

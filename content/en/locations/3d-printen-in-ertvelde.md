@@ -1,12 +1,12 @@
 # 3D printing in Ertvelde: local, fast and tailored
 
-Need **3D printing in Ertvelde**? X3DPrints prints in Herzele and ships quickly to Ertvelde and nearby Ertvelde centrum. Local 3D printing for Ertvelde, Ertvelde centrum and Rieme, Evergem, Kluizen: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Ertvelde**? X3DPrints prints in Herzele and ships quickly to Ertvelde and nearby Rieme. Local 3D printing for Ertvelde, Rieme and Evergem, Kluizen: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Ertvelde teams choose us
 
-- Local delivery to Ertvelde, Ertvelde centrum and Rieme, Evergem, Kluizen; pickup in Herzele.
+- Local delivery to Ertvelde, Rieme and Evergem, Kluizen; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Ertvelde.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Ertvelde**? X3DPrints prints in Herzele and ships quickly 
 
 ## Delivery focus for Ertvelde
 
-We frequently deliver to: Ertvelde, Ertvelde centrum, Rieme, Evergem, Kluizen, Afhalen Herzele.
+We frequently deliver to: Ertvelde, Ertvelde city center, Rieme, Evergem, Kluizen, Pickup in Herzele.
 
 ---
 
 ## What teams near Ertvelde ask us to make
 
 - Pilot runs for SMEs around Ertvelde, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Ertvelde centrum.
-- TPU dampers and grips for gear used in Rieme.
+- Functional PETG parts for maintenance teams near Rieme.
+- TPU dampers and grips for gear used in Evergem.
 - Presentation models and mockups for pitches around Ertvelde.
 - Brackets, guards and fixtures tuned for teams in Ertvelde.
 - Demo pieces and props for events near Ertvelde.
@@ -32,9 +32,9 @@ We frequently deliver to: Ertvelde, Ertvelde centrum, Rieme, Evergem, Kluizen, A
 
 ## What stands out in Ertvelde
 
-- Industrie en logistiek rond de kanaalzone: tailored PETG/PLA parts for teams around Ertvelde centrum.
-- Common ask: 3D print service Ertvelde; we advise material and finishing for Rieme.
-- Delivery focus: Ertvelde, Ertvelde centrum, Rieme.
+- SMEs and industry near Ertvelde: fixtures, enclosures and small to large batches.
+- Common ask in Ertvelde: custom 3D printing with practical PLA/PETG/TPU advice for Evergem.
+- Delivery focus: Ertvelde, Ertvelde city center, Rieme.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Ertvelde, Ertvelde centrum, Rieme, Evergem, Kluizen, A
 
 ## Sectors we back near Ertvelde
 
-- SMEs and industry near Ertvelde: fixtures, enclosures and small batches.
-- Local projects in Ertvelde: Lokale makers en onderhoud
-- Local projects in Ertvelde: Verenigingen en scholen
+- SMEs and industry near Ertvelde: fixtures, enclosures and small to large batches.
+- Makers and product teams in Ertvelde: iterative prototyping and short-run production.
+- Education and labs around Ertvelde: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Ertvelde
 
-- Paint-ready show models for presentations in Ertvelde and Ertvelde centrum.
+- Paint-ready show models for presentations in Ertvelde and Rieme.
 - PLA or PETG functional parts for teams in Ertvelde.
-- TPU grips and pads for bikes, tools or fixtures around Ertvelde centrum.
+- TPU grips and pads for bikes, tools or fixtures around Rieme.
 
 ---
 
@@ -96,8 +96,6 @@ We frequently deliver to: Ertvelde, Ertvelde centrum, Rieme, Evergem, Kluizen, A
 
 - [3D printing in Evergem](/en/3d-printen-in-evergem)
 - [3D printing in Kluizen](/en/3d-printen-in-kluizen)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Ertvel
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Ertvelde
 
-- Coverage: Ertvelde, Ertvelde centrum, Rieme, Evergem, Kluizen, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Ertvelde, Ertvelde city center, Rieme, Evergem, Kluizen, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Ertvelde.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -122,9 +120,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Ertvel
 - [Nearby: 3D printing in Kluizen](/en/3d-printen-in-kluizen)
 
 ## Customer spotlight
-- Industrie en logistiek rond de kanaalzone: small batches with consistent settings near Ertvelde centrum.
-- Common request: 3D print service Ertvelde; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Ertvelde and Ertvelde centrum.
+- SMEs/industry near Ertvelde: prototypes, fixtures, housings.
+- Common request: 3D printing service in Ertvelde; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Rieme and Evergem.
 
 ## Where we drop off near Ertvelde
 - Ertvelde town center
@@ -133,11 +131,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Ertvel
 
 ## Sectors we back near Ertvelde
 - SMEs/industry near Ertvelde: prototypes, fixtures, housings.
-- Local focus: Lokale makers en onderhoud
-- Local focus: Verenigingen en scholen
+- Makers and product teams in Ertvelde: iterative prototyping and short-run production.
+- Education/labs around Ertvelde: reliable PLA/PETG parts.
 
 ## Common requests around Ertvelde
-- 3D print service Ertvelde
-- rapid prototyping Ertvelde
-- 3D printing bedrijf Ertvelde
+- 3D printing service in Ertvelde
+- Custom 3D printing in Ertvelde
+- 3D model printing in Ertvelde
 <!-- LOCAL_ENRICH_END -->

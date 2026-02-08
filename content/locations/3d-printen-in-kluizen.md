@@ -1,6 +1,6 @@
 # 3D printen in Kluizen: betrouwbare prints met korte lead time
 
-**3D printen in Kluizen** (Evergem) is ideaal voor prototypes, onderhoudsonderdelen en kleine series. X3DPrints levert vanuit Herzele met duidelijke planning en strakke afwerking.
+**3D printen in Kluizen** (Evergem) is ideaal voor prototypes, onderhoudsonderdelen en zowel kleine als grotere series. X3DPrints levert vanuit Herzele met duidelijke planning en strakke afwerking.
 
 ---
 
@@ -82,14 +82,14 @@ Test uw ontwerp snel en verbeter zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Kluizen
 
-**Kunnen jullie kleine series leveren in Kluizen?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Kluizen?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Kluizen?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Sleidinge](/3d-printen-in-sleidinge)
 - [Buurpagina: 3D printen in Ertvelde](/3d-printen-in-ertvelde)
 - [Buurpagina: 3D printen in Evergem](/3d-printen-in-evergem)
+
+
 
 ## Lokale spotlight
 - Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Kluizen centrum.

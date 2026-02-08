@@ -1,6 +1,6 @@
-# 3D printen in Lembeke: snelle prototypes en kleine series
+# 3D printen in Lembeke: snelle prototypes en zowel kleine als grotere series
 
-**3D printen in Lembeke** (Kaprijke) is ideaal voor prototypes, maatwerk en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Lembeke** (Kaprijke) is ideaal voor prototypes, maatwerk en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Lembeke interessant?
 
 ### Lokale ondernemers
-Kleine series en onderdelen op maat met snelle levering.
+Kleine en grotere series en onderdelen op maat met snelle levering.
 
 ### Creatieve projecten
 Maquettes en presentatiemodellen met strakke details.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,8 +94,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Lembeke?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Lembeke?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Lembeke?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Lembeke
 - [3D printen in Kaprijke](/3d-printen-in-kaprijke)
@@ -127,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 ## Nabijgelegen pagina's
 - [Buurpagina: 3D printen in Kaprijke](/3d-printen-in-kaprijke)
 - [Buurpagina: 3D printen in Bentille](/3d-printen-in-bentille)
+
+
 
 ## Lokale spotlight
 - Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Lembeke centrum.

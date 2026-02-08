@@ -21,7 +21,7 @@ In Voorde helpen we projecten rond Voorde sneller vooruit met prints die direct 
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Voorde
 
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Voorde** ook ABS, ASA, Nylon of PA-CF voor te
 ## Voor wie is 3D printen in Voorde interessant?
 
 ### Lokale ondernemers
-Bedrijven gebruiken **3D printen in Voorde** om prototypes te testen en kleine series te produceren.
+Bedrijven gebruiken **3D printen in Voorde** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Hobbyisten en makers
 Creatieve inwoners realiseren persoonlijke projecten via **3D printen in Voorde**.
@@ -102,8 +102,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Voorde?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Voorde?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Voorde?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond Voorde
 - [3D printen in Ninove](/3d-printen-in-ninove)
@@ -132,7 +132,13 @@ Wil je ervaren hoe **3D printen in Voorde** jouw project vooruithelpt? Vraag van
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Voorde
+- Centrum van Voorde
+- Lokale bedrijvenzone in Voorde
+- Sporthal in Voorde
+
 
 ## Klantenspotlight
 - Lokale teams in Voorde: kleine reeksen met vaste settings rond Voorde.

@@ -20,7 +20,7 @@
 In Denderwindeke helpen we projecten rond Denderwindeke sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Denderwindeke
@@ -132,7 +132,13 @@ Benieuwd hoe **3D printen in Denderwindeke** jouw project kan versterken? Vraag 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Denderwindeke
+- Centrum van Denderwindeke
+- Lokale bedrijvenzone in Denderwindeke
+- Sporthal in Denderwindeke
+
 
 ## Lokale spotlight
 - Lokale teams in Denderwindeke: PLA/PETG onderdelen afgestemd op projecten rond Denderwindeke.

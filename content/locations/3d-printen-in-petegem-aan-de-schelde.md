@@ -1,6 +1,6 @@
 # 3D printen in Petegem-aan-de-Schelde: maatwerk met snelle levering
 
-**3D printen in Petegem-aan-de-Schelde** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Petegem-aan-de-Schelde** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -23,10 +23,10 @@
 
 ## Lokale focus in Petegem-aan-de-Schelde
 
-Werk je in Petegem-aan-de-Schelde? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Petegem-aan-de-Schelde.
+Werk je in Petegem-aan-de-Schelde? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Petegem-aan-de-Schelde.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 
 ## Materialen voor 3D printen in Petegem-aan-de-Schelde
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -101,7 +101,6 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 - [3D printen in Wortegem-Petegem](/3d-printen-in-wortegem-petegem)
 - [3D printen in Wortegem](/3d-printen-in-wortegem)
 - [3D printen in Moregem](/3d-printen-in-moregem)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 ---
 
 ## Externe links
@@ -130,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Moregem](/3d-printen-in-moregem)
 - [Buurpagina: 3D printen in Elsegem](/3d-printen-in-elsegem)
 
+
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Petegem-aan-de-Schelde centrum.
 - Vaak gevraagd: 3D print service Petegem-aan-de-Schelde; we adviseren materiaal en afwerking.
@@ -142,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectorfocus nabij Petegem-aan-de-Schelde
 - Lokale makers en ontwerpers (Petegem-aan-de-Schelde)
-- Kleine series en maatwerk (Petegem-aan-de-Schelde)
+- Kleine en grotere series en maatwerk (Petegem-aan-de-Schelde)
 - Verenigingen en onderwijs (Petegem-aan-de-Schelde)
 
 ## Typische aanvragen rond Petegem-aan-de-Schelde

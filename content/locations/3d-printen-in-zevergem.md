@@ -1,6 +1,6 @@
 # 3D printen in Zevergem: betrouwbare prints op maat
 
-**3D printen in Zevergem** is ideaal voor prototypes, herstellingen en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een strakke afwerking.
+**3D printen in Zevergem** is ideaal voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een strakke afwerking.
 
 ---
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en pasvormtests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Merelbeke](/3d-printen-in-merelbeke)
 - [Hoofdpagina: 3D printen in Nazareth-De Pinte](/3d-printen-in-nazareth-de-pinte)
 
+
+
 ## Spotlight rond Zevergem
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Zevergem centrum.
 - Terugkerende order: 3D print service Zevergem; we bewaren je instellingen.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Zevergem
 - Lokale makers en ontwerpers (Zevergem)
-- Kleine series en maatwerk (Zevergem)
+- Kleine en grotere series en maatwerk (Zevergem)
 - Verenigingen en onderwijs (Zevergem)
 
 ## Wat vaak wordt gevraagd in Zevergem

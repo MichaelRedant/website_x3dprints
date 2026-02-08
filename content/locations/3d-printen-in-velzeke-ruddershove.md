@@ -96,8 +96,8 @@ Velzeke-Ruddershove is bekend om zijn Romeinse verleden en het archeologisch mus
 **Welke bestanden kan ik aanleveren voor Velzeke-Ruddershove?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Velzeke-Ruddershove?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Velzeke-Ruddershove?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Velzeke-Ruddershove?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -134,7 +134,13 @@ Wil je starten met **3D printen in Velzeke-Ruddershove**? Vraag een **gratis off
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Velzeke-Ruddershove
+- Centrum van Velzeke-Ruddershove
+- Lokale bedrijvenzone in Velzeke-Ruddershove
+- Sporthal in Velzeke-Ruddershove
+
 
 ## Lokale spotlight
 - Lokale teams in Velzeke-Ruddershove: PLA/PETG onderdelen afgestemd op projecten rond Velzeke-Ruddershove.

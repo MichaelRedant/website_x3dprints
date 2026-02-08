@@ -1,12 +1,12 @@
 # 3D printing in Doel: local, fast and tailored
 
-Need **3D printing in Doel**? X3DPrints prints in Herzele and ships quickly to Doel and nearby Kieldrecht. Local 3D printing for Doel, Kieldrecht and Verrebroek, Kallo, Afhalen Herzele: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Doel**? X3DPrints prints in Herzele and ships quickly to Doel and nearby Kieldrecht. Local 3D printing for Doel, Kieldrecht and Verrebroek, Kallo: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Doel teams choose us
 
-- Local delivery to Doel, Kieldrecht and Verrebroek, Kallo, Afhalen Herzele; pickup in Herzele.
+- Local delivery to Doel, Kieldrecht and Verrebroek, Kallo; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Doel.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,7 +15,7 @@ Need **3D printing in Doel**? X3DPrints prints in Herzele and ships quickly to D
 
 ## Areas we serve near Doel
 
-We frequently deliver to: Doel, Kieldrecht, Verrebroek, Kallo, Afhalen Herzele.
+We frequently deliver to: Doel, Kieldrecht, Verrebroek, Kallo, Pickup in Herzele.
 
 ---
 
@@ -32,8 +32,8 @@ We frequently deliver to: Doel, Kieldrecht, Verrebroek, Kallo, Afhalen Herzele.
 
 ## Local spotlight for Doel
 
-- Lokale ondernemers en makers: tailored PETG/PLA parts for teams around Kieldrecht.
-- Common ask: 3D print service Doel; we advise material and finishing for Verrebroek.
+- SMEs and industry near Doel: fixtures, enclosures and small to large batches.
+- Common ask in Doel: custom 3D printing with practical PLA/PETG/TPU advice for Verrebroek.
 - Delivery focus: Doel, Kieldrecht, Verrebroek.
 
 ---
@@ -48,8 +48,7 @@ We frequently deliver to: Doel, Kieldrecht, Verrebroek, Kallo, Afhalen Herzele.
 
 ## Who we support around Doel
 
-- Local projects in Doel: Lokale ondernemers en makers
-- SMEs and industry near Doel: fixtures, enclosures and small batches.
+- SMEs and industry near Doel: fixtures, enclosures and small to large batches.
 - Retail/marketing/events in Doel: displays, props and branded pieces.
 
 ---
@@ -97,7 +96,6 @@ We frequently deliver to: Doel, Kieldrecht, Verrebroek, Kallo, Afhalen Herzele.
 - [3D printing in Kieldrecht](/en/3d-printen-in-kieldrecht)
 - [3D printing in Verrebroek](/en/3d-printen-in-verrebroek)
 - [3D printing in Kallo](/en/3d-printen-in-kallo)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Doel**
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Doel
 
-- Coverage: Doel, Kieldrecht, Verrebroek, Kallo, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Doel, Kieldrecht, Verrebroek, Kallo, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Doel.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,8 +122,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Doel**
 - [Parent page: 3D printing in Beveren-Kruibeke-Zwijndrecht](/en/3d-printen-in-beveren-kruibeke-zwijndrecht)
 
 ## Spotlight near Doel
-- Lokale ondernemers en makers: fixtures and housings for teams around Kieldrecht.
-- Frequent order: 3D print service Doel; we keep settings for reorders.
+- SMEs/industry near Doel: prototypes, fixtures, housings.
+- Frequent order: 3D printing service in Doel; we keep settings for reorders.
 - Delivery focus: Doel, Kieldrecht, Verrebroek.
 
 ## Landmarks around Doel
@@ -134,12 +132,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Doel**
 - sports hall in Doel
 
 ## Teams we support around Doel
-- Local focus: Lokale ondernemers en makers
 - SMEs/industry near Doel: prototypes, fixtures, housings.
 - Retail/marketing/events in Doel: displays, signage, props.
 
 ## Frequently asked in Doel
-- 3D print service Doel
-- rapid prototyping Doel
-- 3D printing bedrijf Doel
+- 3D printing service in Doel
+- Custom 3D printing in Doel
+- 3D model printing in Doel
 <!-- LOCAL_ENRICH_END -->

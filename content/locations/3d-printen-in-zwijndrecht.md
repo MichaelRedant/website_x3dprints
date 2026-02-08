@@ -46,7 +46,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Tooling en onderdelen die snel moeten passen.
 
 ### Lokale ondernemers
-Prototypes en kleine series met korte doorlooptijd.
+Prototypes en zowel kleine als grotere series met korte doorlooptijd.
 
 ### Makers en hobbyisten
 Creatieve projecten en snelle iteraties.
@@ -81,7 +81,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -90,8 +90,8 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 **Welke bestanden kan ik aanleveren voor Zwijndrecht?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Zwijndrecht?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Zwijndrecht?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Zwijndrecht?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -127,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Kruibeke](/3d-printen-in-kruibeke)
 - [Buurpagina: 3D printen in Bazel](/3d-printen-in-bazel)
 - [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
+
 
 ## Spotlight rond Zwijndrecht
 - Logistiek en industrie: behuizingen en pasmallen voor teams in Zwijndrecht centrum.

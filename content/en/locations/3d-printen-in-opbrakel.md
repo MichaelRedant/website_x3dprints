@@ -15,14 +15,14 @@ Need **3D printing in Opbrakel**? X3DPrints prints in Herzele and ships quickly 
 
 ## Where we deliver around Opbrakel
 
-We frequently deliver to: Opbrakel.
+We frequently deliver to: Opbrakel, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Opbrakel
 
 - Prototypes and housings supporting teams in Opbrakel.
-- Small series with consistent settings for businesses near your region.
+- Small to large series with consistent settings for businesses near your region.
 - Replacement parts and brackets for workshops around Flanders.
 - Promo models, signage and props for events in and around Opbrakel.
 - Brackets, guards and fixtures tuned for teams in Opbrakel.
@@ -32,9 +32,9 @@ We frequently deliver to: Opbrakel.
 
 ## Spotlight: Opbrakel projects
 
-- Local SMEs in Opbrakel: tailored PETG/PLA parts for teams around Opbrakel.
-- Common ask: 3D print service Opbrakel; we advise material and finishing for Opbrakel.
-- Delivery focus: Opbrakel.
+- Manufacturing and SMEs around Opbrakel: prototypes, fixtures and housings.
+- Common ask in Opbrakel: custom 3D printing with practical PLA/PETG/TPU advice for Opbrakel.
+- Delivery focus: Opbrakel, Pickup in Herzele.
 
 ---
 
@@ -57,8 +57,8 @@ We frequently deliver to: Opbrakel.
 ## Popular requests from Opbrakel
 
 - PLA or PETG functional parts for teams in Opbrakel.
-- TPU grips and pads for bikes, tools or fixtures around Opbrakel.
-- Paint-ready show models for presentations in Opbrakel and Opbrakel.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
+- Paint-ready show models for presentations in Opbrakel and the surrounding area.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Opbrakel.
 
 ## FAQ about 3D printing in Opbrakel
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -94,10 +94,7 @@ We frequently deliver to: Opbrakel.
 
 ## Quick links for Opbrakel teams
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Opbrak
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Opbrakel
 
-- Coverage: Opbrakel; delivery from Herzele, pickup available.
+- Coverage: Opbrakel, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Opbrakel.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Local spotlight
-- Local teams in Opbrakel: PLA/PETG parts tuned for projects near Opbrakel.
-- Common request: 3D print service Opbrakel; we pick material and finish for the use case.
-- Delivery focus: Opbrakel.
+- SMEs and makers in Opbrakel: fixtures and enclosures.
+- Common request: 3D printing service in Opbrakel; we pick material and finish for the use case.
+- Delivery focus: Opbrakel, Pickup in Herzele.
 
 ## Places we often deliver near Opbrakel
 - Opbrakel town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Opbrak
 - Education/labs around Opbrakel: lesson-ready prints.
 
 ## Popular searches from Opbrakel
-- 3D print service Opbrakel
-- rapid prototyping Opbrakel
-- 3D printing bedrijf Opbrakel
+- 3D printing service in Opbrakel
+- Custom 3D printing in Opbrakel
+- 3D model printing in Opbrakel
 <!-- LOCAL_ENRICH_END -->

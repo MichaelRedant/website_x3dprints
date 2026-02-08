@@ -70,7 +70,7 @@ Onze **rapid prototyping service in Wetteren** stelt u in staat om uw ontwerpen 
 De gemeente Wetteren, met haar schilderachtige Scheldeboorden, haar bloeiende sierteeltsector en een actieve ondernemersgeest, is een vruchtbare bodem voor nieuwe ideeën en technologische ontwikkelingen. Met **3D printen in Wetteren** kunt u:
 
 -   unieke, gepersonaliseerde items creëren die de identiteit van Wetteren vangen.
--   snel prototypes en kleine series produceren voor lokale bedrijven en start-ups.
+-   snel prototypes en zowel kleine als grotere series produceren voor lokale bedrijven en start-ups.
 -   specifieke onderdelen laten maken die snel beschikbaar moeten zijn voor reparaties of projecten.
 -   educatieve projecten ondersteunen met tastbare leermiddelen die inspireren en de jeugd betrekken bij technologie.
 
@@ -134,6 +134,12 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - [Hoofdpagina: 3D printen in Laarne](/3d-printen-in-laarne)
 - [Hoofdpagina: 3D printen in Kalken](/3d-printen-in-kalken)
 - [Hoofdpagina: 3D printen in Melle](/3d-printen-in-melle)
+
+## Lokale punten in Wetteren
+- Centrum van Wetteren
+- Lokale bedrijvenzone in Wetteren
+- Sporthal in Wetteren
+
 
 ## Klantenspotlight
 - Chemie/lab tooling in Wetteren: kleine reeksen met vaste settings rond Wetteren centrum.

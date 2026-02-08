@@ -32,7 +32,7 @@ Met **3D printen in Bertem** leveren we prototypes, behuizingen en tooling richt
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica en IoT.
+- Kleine en grotere series covers en cases voor elektronica en IoT.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Bertem centrum
 - Korbeek-Dijle
 - Leefdaal en E40/N3
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Bertem
+
+- Dekking: Bertem, Bertem centrum, Korbeek-Dijle, Leefdaal, E40/N3-corridor, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Bertem.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Spotlight rond Bertem
+- Kantoren/onderwijs in Leuvense rand: behuizingen en pasmallen voor teams in Bertem centrum.
+- Terugkerende order: 3D print service Bertem; we bewaren je instellingen.
+- Leverfocus: Bertem, Bertem centrum, Korbeek-Dijle.
+
+## Landmarks in de buurt van Bertem
+- Centrum van Bertem
+- Lokale bedrijvenzone in Bertem
+- Sporthal in Bertem
+
+## Teams die we ondersteunen rond Bertem
+- Kantoren/onderwijs in Leuvense rand (Bertem)
+- KMO's en installateurs langs N3/E40 (Bertem)
+- Makers en labs in Bertem
+
+## Wat vaak wordt gevraagd in Bertem
+- 3D print service Bertem
+- rapid prototyping Bertem
+- 3D printing bedrijf Bertem
+<!-- LOCAL_ENRICH_END -->

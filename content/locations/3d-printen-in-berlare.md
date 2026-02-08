@@ -25,7 +25,7 @@
 
 In Berlare combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -82,7 +82,7 @@ Test en verbeter uw ontwerp in dagen in plaats van weken.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -123,6 +123,8 @@ Wilt u snel starten? Vraag een vrijblijvende offerte aan via [contact](/contact)
 ## Dichtbij gelegen locaties
 - [Buurpagina: 3D printen in Overmere](/3d-printen-in-overmere)
 - [Buurpagina: 3D printen in Uitbergen](/3d-printen-in-uitbergen)
+
+
 
 ## Spotlight rond Berlare
 - Lokale KMO's en zelfstandigen: behuizingen en pasmallen voor teams in Berlare centrum.

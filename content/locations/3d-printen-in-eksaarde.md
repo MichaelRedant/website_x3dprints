@@ -1,6 +1,6 @@
 # 3D printen in Eksaarde: snelle prototypes met lokale service
 
-**3D printen in Eksaarde** (Lokeren) is ideaal voor prototypes en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Eksaarde** (Lokeren) is ideaal voor prototypes en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -27,7 +27,7 @@ Voor Eksaarde leveren we snel en denken we mee over sterkte en afwerking, ideaal
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Eksaarde
 
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,8 +94,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Eksaarde?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Eksaarde?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Eksaarde?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Eksaarde
 - [3D printen in Lokeren](/3d-printen-in-lokeren)
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Daknam](/3d-printen-in-daknam)
 - [Buurpagina: 3D printen in Moerbeke-Waas](/3d-printen-in-moerbeke-waas)
 
+
+
 ## Spotlight rond Eksaarde
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Eksaarde centrum.
 - Terugkerende order: 3D print service Eksaarde; we bewaren je instellingen.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Teams die we ondersteunen rond Eksaarde
 - Lokale makers en ontwerpers (Eksaarde)
-- Kleine series en maatwerk (Eksaarde)
+- Kleine en grotere series en maatwerk (Eksaarde)
 - Verenigingen en onderwijs (Eksaarde)
 
 ## Wat vaak wordt gevraagd in Eksaarde

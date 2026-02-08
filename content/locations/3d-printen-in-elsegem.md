@@ -1,6 +1,6 @@
 # 3D printen in Elsegem: maatwerk met korte doorlooptijd
 
-**3D printen in Elsegem** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Elsegem** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -101,7 +101,6 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 - [3D printen in Wortegem-Petegem](/3d-printen-in-wortegem-petegem)
 - [3D printen in Wortegem](/3d-printen-in-wortegem)
 - [3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 ---
 
 ## Externe links
@@ -130,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
 - [Buurpagina: 3D printen in Moregem](/3d-printen-in-moregem)
 
+
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Elsegem centrum.
 - Vaak gevraagd: 3D print service Elsegem; we adviseren materiaal en afwerking.
@@ -142,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in Elsegem
 - Lokale makers en ontwerpers (Elsegem)
-- Kleine series en maatwerk (Elsegem)
+- Kleine en grotere series en maatwerk (Elsegem)
 - Verenigingen en onderwijs (Elsegem)
 
 ## Veelgevraagde zoekopdrachten in Elsegem

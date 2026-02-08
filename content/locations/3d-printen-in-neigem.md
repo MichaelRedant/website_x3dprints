@@ -19,7 +19,7 @@
 
 Voor Neigem leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Neigem en Neigem.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Neigem** ook ABS, ASA, Nylon of PA-CF voor te
 ## Voor wie is 3D printen in Neigem interessant?
 
 ### Lokale ondernemers
-Kleine bedrijven gebruiken **3D printen in Neigem** om prototypes te testen en kleine series te produceren.
+Kleine bedrijven gebruiken **3D printen in Neigem** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Hobbyisten en makers
 Creatieve inwoners realiseren persoonlijke projecten via **3D printen in Neigem**.
@@ -132,7 +132,13 @@ Wil je ervaren hoe **3D printen in Neigem** jouw project vooruithelpt? Vraag van
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Neigem
+- Centrum van Neigem
+- Lokale bedrijvenzone in Neigem
+- Sporthal in Neigem
+
 
 ## Lokale spotlight
 - Lokale teams in Neigem: PLA/PETG onderdelen afgestemd op projecten rond Neigem.

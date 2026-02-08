@@ -43,7 +43,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Poeke interessant?
 
 ### Creatieve projecten
-Decorstukken, presentatiemodellen en kleine series.
+Decorstukken, presentatiemodellen en zowel kleine als grotere series.
 
 ### Lokale ondernemers
 Maatwerk onderdelen voor herstellingen of producttests.
@@ -90,8 +90,8 @@ Test uw ontwerp snel en pas bij waar nodig, zonder lange doorlooptijden.
 **Welke bestanden kan ik aanleveren voor Poeke?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Poeke?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Poeke?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Poeke?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -127,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact) en ontdek de mogelij
 - [Buurpagina: 3D printen in Bellem](/3d-printen-in-bellem)
 - [Buurpagina: 3D printen in Knesselare](/3d-printen-in-knesselare)
 - [Buurpagina: 3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
+
+
 
 ## Klantenspotlight
 - Creatieve projecten en decor: kleine reeksen met vaste settings rond Poeke centrum.

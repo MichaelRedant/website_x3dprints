@@ -1,6 +1,6 @@
 # 3D printen in Adegem: nauwkeurig en snel geleverd
 
-Van Canada War Cemetery tot N49-corridor: X3DPrints verzorgt 3D prints voor Adegem met korte doorlooptijd en duidelijk advies. Ideaal voor prototypes, replacement parts en kleine series.
+Van Canada War Cemetery tot N49-corridor: X3DPrints verzorgt 3D prints voor Adegem met korte doorlooptijd en duidelijk advies. Ideaal voor prototypes, replacement parts en zowel kleine als grotere series.
 
 ---
 
@@ -34,7 +34,7 @@ Meer weten? Bekijk ook onze sectorpagina’s op [segments](/segments) of vraag d
 
 ## Lokale focus in Adegem
 
-Werk je in Adegem? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Adegem? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 - Behuizingen en covers voor elektronica, sensoren of prototypes.
@@ -43,7 +43,7 @@ Werk je in Adegem? We leveren snelle prototypes en kleine series op maat, met ma
 
 ## Veelgestelde vragen over 3D printen in Adegem
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -64,7 +64,13 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Adegem
+- Centrum van Adegem
+- Lokale bedrijvenzone in Adegem
+- Sporthal in Adegem
+
 
 ## Lokale spotlight
 - Lokale teams in Adegem: PLA/PETG onderdelen afgestemd op projecten rond Adegem.

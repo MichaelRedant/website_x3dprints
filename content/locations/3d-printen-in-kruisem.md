@@ -24,7 +24,7 @@ Kruisem bundelt Kruishoutem, Nokere, Wannegem-Lede en Zingem. X3DPrints levert h
 In Kruisem helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
 
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 
 ## Materialen
@@ -65,7 +65,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Kruisem
+- Centrum van Kruisem
+- Lokale bedrijvenzone in Kruisem
+- Sporthal in Kruisem
+
 
 ## Spotlight rond Kruisem
 - Lokale teams in Kruisem: behuizingen en pasmallen voor teams in Kruisem.

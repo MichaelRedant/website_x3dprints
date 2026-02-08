@@ -11,7 +11,7 @@ const dateModified = "2026-02-06"
 export const metadata: Metadata = {
   title: "3D modelleren voor print | Fusion 360, Tinkercad, Blender",
   description:
-    "3D modelleren op maat van 3D-printen. Fusion 360 voor technische onderdelen, Tinkercad voor snelle concepten en Blender voor organische vormen.",
+    "3D modelleren op maat van 3D-printen. Ideaal voor 3d ontwerp printen, 3d model printen en sterke 3d print onderdelen met Fusion 360, Tinkercad of Blender.",
   alternates: { canonical: "https://www.x3dprints.be/3d-modelleren/", languages: { "nl-BE": "https://www.x3dprints.be/3d-modelleren/", "en-BE": "https://www.x3dprints.be/en/3d-modelleren/", "x-default": "https://www.x3dprints.be/3d-modelleren/", }, },
   openGraph: {
     title: "3D modelleren voor 3D prints | X3DPrints",
@@ -117,7 +117,8 @@ export default function Page() {
             <p className="mt-3 max-w-3xl text-pretty text-slate-600">
               Ik maak 3D-modellen die meteen klaar zijn voor FDM-printen. Fusion 360 gebruik ik voor technische nauwkeurigheid,
               Tinkercad voor snelle concepten en Blender slechts occasioneel voor organische vormen. Zo blijft je bestand geschikt
-              voor slicing zonder verrassingen.
+              voor slicing zonder verrassingen. Handig als je 3d ontwerp printen wil versnellen of een 3d model printen voor
+              functionele onderdelen.
             </p>
             <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">

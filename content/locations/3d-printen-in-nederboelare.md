@@ -22,7 +22,7 @@ Voor **3D printen in Nederboelare** levert X3DPrints prototypes en functionele o
 In Nederboelare helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
 
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 
 ## Materialen
@@ -77,7 +77,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Nederboelare
+- Centrum van Nederboelare
+- Lokale bedrijvenzone in Nederboelare
+- Sporthal in Nederboelare
+
 
 ## Spotlight rond Nederboelare
 - Lokale teams in Nederboelare: behuizingen en pasmallen voor teams in Nederboelare.

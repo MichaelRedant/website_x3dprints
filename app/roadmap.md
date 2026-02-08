@@ -12,12 +12,14 @@ Statusmodel:
 - P1 = daarna uitvoeren (sterke verbetering)
 - P2 = optimalisatie (nice-to-have, maar waardevol)
 
-Laatste audit (2026-02-06):
+Laatste audit (2026-02-07):
 - `npm run lint` [done]
 - `npm run build` [done]
 - `npm run check:seo:quality` [done] (0 warnings op export-HTML)
 - `npm run check:seo:templates` [done] (template-contract actief; segmentregels strict, momenteel 0 template warnings)
-- `npm run check:seo` [done] (`metadata`, `locale-diff`, `locale-links`, `templates`, `quality`, `html-lang`, `schema`, `schema:locale`, `og`, `sitemap`, `links` groen)
+- `npm run check:seo:locations` [done] (796 locatie-markdownbestanden gevalideerd op niet-lokale fallback city-links in linksecties)
+- `npm run fix:seo:locations` [done] (510 locatiebestanden opgeschoond: 1214 niet-lokale fallback city-links verwijderd, met overview-fallback waar nodig)
+- `npm run check:seo` [done] (`metadata`, `locale-diff`, `locale-links`, `templates`, `quality`, `html-lang`, `schema`, `schema:locale`, `og`, `sitemap`, `links`, `locations` groen)
 - `npm run verify` [done] (lint + security + build + seo checks in 1 run)
 
 Roadmap status nu:
@@ -58,6 +60,18 @@ GEO uitbreiding (VSCode-only):
 - P5.6 Segment rollout Batch F: [done] `/segments/3d-printing-vaderdag-moederdag` en `/segments/3d-printing-valentijn` kregen dezelfde GEO-conversieopzet (ToC/anchors, zichtbaar "laatst bijgewerkt", FAQ + HowTo + Service + LocalBusiness JSON-LD, bronsectie met `<cite>`, CTA-flow naar `/materials#material-suggestion-tool`, `/contact?material=<slug>`, en extra interne links naar `/locaties`, blog en pricing).
 - P5.7 Commercial blog rollout Batch G: [done] 5 high-intent NL blogposts kregen GEO-conversie upgrades: `/blog/3d-printen-op-bestelling`, `/blog/3d-printen-in-de-buurt`, `/blog/pla-vs-petg`, `/blog/bestanden-voor-3d-printen`, `/blog/ontwerp-3d-printbaar-model` met ToC/deep links, zichtbaar last-updated, FAQ + HowTo + Article JSON-LD, bronnen met `<cite>`, sterkere interne linkflow en CTA-prefills naar `/contact?material=<slug>`.
 - P5.8 Commercial blog rollout Batch H (EN mirror): [done] EN varianten `/en/blog/3d-printen-op-bestelling`, `/en/blog/3d-printen-in-de-buurt`, `/en/blog/pla-vs-petg`, `/en/blog/bestanden-voor-3d-printen` en `/en/blog/ontwerp-3d-printbaar-model` kregen dezelfde GEO-conversiestructuur met ToC/deep links, zichtbaar last-updated, FAQ + HowTo + Article JSON-LD, bronsecties met `<cite>`, `/Logo.webp` OG/Twitter en EN-locale CTA-prefills.
+- P5.9 Locatie-keyword locality hardening: [done] locatie-linkblokken opgeschoond van generieke fallback-steden (`Gent/Ghent`, `Aalst`, `Antwerpen`, `Oudenaarde`) wanneer niet lokaal relevant; nieuwe regressiecheck `check:seo:locations` bewaakt dit bij toekomstige updates.
+- P5.10 Keyword governance automation: [done] keyword dataset verplaatst naar `lib/Keyword Stats *.csv` en nieuwe build-safe regressiecheck `check:seo:keywords` toegevoegd (meedraaiend in `check:seo`) voor money-page keyword coverage op basis van actuele CSV-data.
+- P5.11 Local keyword governance automation: [done] nieuwe check `check:seo:location-keywords` toegevoegd (meedraaiend in `check:seo`) die op alle NL/EN locatiepagina's primaire lokale intent bewaakt (`3d printen in <stad>` / `3d printing in <city>`) en city-keywords uit de actuele CSV als optimalisatiewarnings signaleert.
+- P5.12 Local keyword auto-fix: [done] script `fix:seo:location-keywords` toegevoegd dat ontbrekende primaire/secundaire lokale keywordsignalen (en optionele CSV-signalering) automatisch terugplaatst in locatie-markdown, gevolgd door check via `check:seo:location-keywords`.
+- P5.13 Money-page keyword expansion: [done] keyword-governance uitgebreid naar extra commerciële routes (`/services`, `/viewer`, `/blog/3d-printen-in-de-buurt`) en copy subtiel aangescherpt op high-intent termen uit de actuele CSV (o.a. `3d model printen`, `3d print onderdelen`, `3d print service belgie`) zonder build-regressie.
+- P5.14 EN parity keyword expansion: [done] EN money-routes (`/en/services`, `/en/viewer`, `/en/blog/3d-printen-in-de-buurt`) inhoudelijk aangescherpt met EN-intent termen (o.a. `3d model print`, `3d printing gent`) en opgenomen in `check:seo:keywords` zodat NL/EN keyword-governance parity krijgt.
+- P5.15 EN local landing schema parity: [done] dynamische EN locatiepagina-template (`/en/[slug]`) uitgebreid met `Service`, `LocalBusiness`, `FAQPage`, `BreadcrumbList` en `WebPage` JSON-LD + EN keyword metadata en zichtbaar `Last updated`, zodat EN lokale landingspagina's dezelfde E-E-A-T/GEO signalen dragen als NL zonder 796 individuele files te bewerken.
+- P5.16 Keyword governance batch I: [done] `check:seo:keywords` uitgebreid van 15 naar 19 targets met extra bewaking voor `/3d-modelleren`, `/en/3d-modelleren`, `/blog/hoeveel-kost-3d-printen` en `/en/blog/hoeveel-kost-3d-printen`; copy/metadata op deze routes aangescherpt op actuele CSV-termen (o.a. `3d model printen`, `3d ontwerp printen`, `kosten 3d printen`, `3d printen prijs`) zonder build-regressie.
+- P5.17 Keyword governance batch J: [done] materiaalgids-routes toegevoegd aan keyword-regressie (`/blog/juiste-3d-print-materiaal` en `/en/blog/juiste-3d-print-materiaal`), met content/metadata-updates op actuele termen (NL: `3d print materiaal`, `3d print materialen`; EN: `3d model print`) en behoud van build-veiligheid.
+- P5.18 Keyword governance batch K: [done] commerciële bestelroute `/blog/3d-printen-op-bestelling` toegevoegd aan keyword-regressie met CSV-termen (`3d printen op bestelling`, `3d model printen`, `3d print service belgie`) en NL metadata/introcopy aangescherpt; EN mirror bleef al gedekt in governance.
+- P5.19 Keyword governance batch L: [done] NL vergelijkingsroute `/blog/pla-vs-petg` toegevoegd aan keyword-regressie met materiaaltermen uit CSV (`3d print materiaal`, `3d print materialen`, `materiaal 3d printen`) en metadata/introcopy aangescherpt voor betere match op materiaal-intentie.
+- P5.20 Keyword governance batch M (resterende NL commercial blogs): [done] `/blog/bestanden-voor-3d-printen` en `/blog/ontwerp-3d-printbaar-model` toegevoegd aan keyword-regressie met CSV-termen (o.a. `3d stl`, `3d modellen om te printen`, `3d model printen`, `3d ontwerp printen`, `3d modellen printen`) en metadata/introcopy aangescherpt; daarmee zijn de resterende NL routes uit de eerdere commercial blogbatch afgedekt.
 
 Money pages prioritering (Impact x Effort x Conversie)
 

@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Sterke onderdelen die tegen een stootje kunnen.
 
 ### Lokale ondernemers
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Verenigingen en scholen
 Projecten met duidelijke planning en korte lead time.
@@ -82,14 +82,14 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Ruien
 
-**Kunnen jullie kleine series leveren in Ruien?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Ruien?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Ruien?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -130,6 +130,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Zulzeke](/3d-printen-in-zulzeke)
 - [Hoofdpagina: 3D printen in Berchem (Kluisbergen)](/3d-printen-in-berchem-kluisbergen)
 
+
+
 ## Klantenspotlight
 - Onderhoud en herstellingen: kleine reeksen met vaste settings rond Ruien centrum.
 - Vaak gevraagd: 3D print service Ruien; we adviseren materiaal en afwerking.
@@ -142,7 +144,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectorfocus nabij Ruien
 - Onderhoud en herstellingen (Ruien)
-- Kleine series en maatwerk (Ruien)
+- Kleine en grotere series en maatwerk (Ruien)
 - Verenigingen en scholen (Ruien)
 
 ## Typische aanvragen rond Ruien

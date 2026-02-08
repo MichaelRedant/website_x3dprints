@@ -17,7 +17,7 @@
 
 ## Lokale focus in Oudegem
 
-Werk je in Oudegem? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Oudegem.
+Werk je in Oudegem? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Oudegem.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Pasmallen en sjablonen voor montage en assemblage.
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Oudegem** ook ABS, ASA, Nylon of PA-CF voor t
 ## Voor wie is 3D printen in Oudegem interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven langs de Scheldedijk gebruiken **3D printen in Oudegem** om prototypes te testen en kleine series te produceren.
+Lokale bedrijven langs de Scheldedijk gebruiken **3D printen in Oudegem** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve inwoners maken unieke gadgets of miniaturen van de Oudegemse Beemden met **3D printen in Oudegem**.
@@ -96,8 +96,8 @@ Oudegem ligt aan de Schelde en grenst aan het natuurgebied de Oudegemse Beemden.
 **Welke bestanden kan ik aanleveren voor Oudegem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Oudegem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Oudegem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Oudegem?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -131,7 +131,13 @@ Benieuwd hoe **3D printen in Oudegem** jouw idee versterkt? Vraag een **gratis o
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Oudegem
+- Centrum van Oudegem
+- Lokale bedrijvenzone in Oudegem
+- Sporthal in Oudegem
+
 
 ## Spotlight rond Oudegem
 - Lokale teams in Oudegem: behuizingen en pasmallen voor teams in Oudegem.

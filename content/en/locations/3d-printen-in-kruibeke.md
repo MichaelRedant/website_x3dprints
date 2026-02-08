@@ -1,12 +1,12 @@
 # 3D printing in Kruibeke: local, fast and tailored
 
-Need **3D printing in Kruibeke**? X3DPrints prints in Herzele and ships quickly to Kruibeke and nearby Kruibeke centrum. Local 3D printing for Kruibeke, Kruibeke centrum and Bazel, Rupelmonde, Burcht: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Kruibeke**? X3DPrints prints in Herzele and ships quickly to Kruibeke and nearby Bazel. Local 3D printing for Kruibeke, Bazel and Rupelmonde, Burcht: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Kruibeke teams choose us
 
-- Local delivery to Kruibeke, Kruibeke centrum and Bazel, Rupelmonde, Burcht; pickup in Herzele.
+- Local delivery to Kruibeke, Bazel and Rupelmonde, Burcht; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Kruibeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Kruibeke**? X3DPrints prints in Herzele and ships quickly 
 
 ## Where we deliver around Kruibeke
 
-We frequently deliver to: Kruibeke, Kruibeke centrum, Bazel, Rupelmonde, Burcht, Zwijndrecht, Afhalen Herzele.
+We frequently deliver to: Kruibeke, Kruibeke city center, Bazel, Rupelmonde, Burcht, Zwijndrecht, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Kruibeke
 
 - Prototypes and housings supporting teams in Kruibeke.
-- Small series with consistent settings for businesses near Kruibeke centrum.
-- Replacement parts and brackets for workshops around Bazel.
+- Small to large series with consistent settings for businesses near Bazel.
+- Replacement parts and brackets for workshops around Rupelmonde.
 - Promo models, signage and props for events in and around Kruibeke.
 - Brackets, guards and fixtures tuned for teams in Kruibeke.
 - Demo pieces and props for events near Kruibeke.
@@ -32,9 +32,9 @@ We frequently deliver to: Kruibeke, Kruibeke centrum, Bazel, Rupelmonde, Burcht,
 
 ## Spotlight: Kruibeke projects
 
-- Lokale ondernemers en techniekers: tailored PETG/PLA parts for teams around Kruibeke centrum.
-- Common ask: 3D print service Kruibeke; we advise material and finishing for Bazel.
-- Delivery focus: Kruibeke, Kruibeke centrum, Bazel.
+- SMEs and industry near Kruibeke: fixtures, enclosures and small to large batches.
+- Common ask in Kruibeke: custom 3D printing with practical PLA/PETG/TPU advice for Rupelmonde.
+- Delivery focus: Kruibeke, Kruibeke city center, Bazel.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Kruibeke, Kruibeke centrum, Bazel, Rupelmonde, Burcht,
 
 ## Teams we often help near Kruibeke
 
-- Local projects in Kruibeke: Lokale ondernemers en techniekers
-- Local projects in Kruibeke: Scheldeprojecten en herstellingen
-- Local projects in Kruibeke: Makers en hobbyisten
+- SMEs and industry near Kruibeke: fixtures, enclosures and small to large batches.
+- Maintenance and repair teams in Kruibeke: durable replacement parts and brackets.
+- Makers and product teams in Kruibeke: iterative prototyping and short-run production.
 
 ---
 
 ## Popular requests from Kruibeke
 
 - PLA or PETG functional parts for teams in Kruibeke.
-- TPU grips and pads for bikes, tools or fixtures around Kruibeke centrum.
-- Paint-ready show models for presentations in Kruibeke and Kruibeke centrum.
+- TPU grips and pads for bikes, tools or fixtures around Bazel.
+- Paint-ready show models for presentations in Kruibeke and Bazel.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Kruibeke, Kruibeke centrum, Bazel, Rupelmonde, Burcht,
 
 ## FAQ about 3D printing in Kruibeke
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -97,7 +97,7 @@ We frequently deliver to: Kruibeke, Kruibeke centrum, Bazel, Rupelmonde, Burcht,
 - [3D printing in Bazel](/en/3d-printen-in-bazel)
 - [3D printing in Rupelmonde](/en/3d-printen-in-rupelmonde)
 - [3D printing in Burcht](/en/3d-printen-in-burcht)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [3D printing in Zwijndrecht](/en/3d-printen-in-zwijndrecht)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +112,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Kruibe
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Kruibeke
 
-- Coverage: Kruibeke, Kruibeke centrum, Bazel, Rupelmonde, Burcht, Zwijndrecht; delivery from Herzele, pickup available.
+- Coverage: Kruibeke, Kruibeke city center, Bazel, Rupelmonde, Burcht, Zwijndrecht; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Kruibeke.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +124,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Kruibe
 - [Nearby: 3D printing in Zwijndrecht](/en/3d-printen-in-zwijndrecht)
 
 ## Local spotlight
-- Lokale ondernemers en techniekers: PLA/PETG parts tuned for projects near Kruibeke centrum.
-- Common request: 3D print service Kruibeke; we pick material and finish for the use case.
-- Delivery focus: Kruibeke, Kruibeke centrum, Bazel.
+- SMEs/industry near Kruibeke: prototypes, fixtures, housings.
+- Common request: 3D printing service in Kruibeke; we pick material and finish for the use case.
+- Delivery focus: Kruibeke, Kruibeke city center, Bazel.
 
 ## Places we often deliver near Kruibeke
 - Kruibeke town center
@@ -134,12 +134,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Kruibe
 - sports hall in Kruibeke
 
 ## Industries we serve near Kruibeke
-- Local focus: Lokale ondernemers en techniekers
-- Local focus: Scheldeprojecten en herstellingen
-- Local focus: Makers en hobbyisten
+- SMEs/industry near Kruibeke: prototypes, fixtures, housings.
+- Maintenance and repair teams in Kruibeke: durable replacement parts and brackets.
+- Makers and product teams in Kruibeke: iterative prototyping and short-run production.
 
 ## Popular searches from Kruibeke
-- 3D print service Kruibeke
-- rapid prototyping Kruibeke
-- 3D printing bedrijf Kruibeke
+- 3D printing service in Kruibeke
+- Custom 3D printing in Kruibeke
+- 3D model printing in Kruibeke
 <!-- LOCAL_ENRICH_END -->

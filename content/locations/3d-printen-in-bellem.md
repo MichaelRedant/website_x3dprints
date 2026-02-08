@@ -9,7 +9,7 @@
 - **Lokale service**: advies en productie zonder lange doorlooptijden.
 - **Flexibel in materiaal**: PLA, PETG en TPU voor uiteenlopende projecten.
 - **Duidelijke offertes**: transparant en afgestemd op uw vraag.
-- **Geschikt voor kleine series**: ideaal voor prototypes en maatwerk.
+- **Geschikt voor kleine en grotere series**: ideaal voor prototypes en maatwerk.
 
 ---
 
@@ -24,7 +24,7 @@
 
 In Bellem helpen we projecten rond Onze-Lieve-Vrouw-Geboortekerk sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -49,7 +49,7 @@ Prototypes, hulpmiddelen of onderdelen op maat voor kleine bedrijven.
 Snelle realisatie van onderdelen, accessoires en creatieve objecten.
 
 ### Scholen en verenigingen
-Educatieve modellen en kleine series voor activiteiten of events.
+Educatieve modellen en zowel kleine als grotere series voor activiteiten of events.
 
 ---
 
@@ -80,7 +80,7 @@ Met rapid prototyping test u ontwerpen snel, zonder grote investeringen.
 
 - Prototypes en producttests
 - Onderdelen voor herstellingen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 - Presentatiemodellen
 
 ---
@@ -128,6 +128,8 @@ Wilt u starten met 3D printen in Bellem? Vraag een vrijblijvende offerte aan via
 - [Buurpagina: 3D printen in Knesselare](/3d-printen-in-knesselare)
 - [Buurpagina: 3D printen in Lotenhulle](/3d-printen-in-lotenhulle)
 - [Buurpagina: 3D printen in Poeke](/3d-printen-in-poeke)
+
+
 
 ## Klantenspotlight
 - Lokale makers en zelfstandigen: kleine reeksen met vaste settings rond Bellem centrum.

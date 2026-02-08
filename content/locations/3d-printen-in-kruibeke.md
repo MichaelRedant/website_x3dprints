@@ -1,6 +1,6 @@
 # 3D printen in Kruibeke: snelle prototypes aan de Schelde
 
-**3D printen in Kruibeke** helpt u snel vooruit met prototypes, onderdelen en kleine series. X3DPrints levert vanuit Herzele met persoonlijke service en duidelijke timing.
+**3D printen in Kruibeke** helpt u snel vooruit met prototypes, onderdelen en zowel kleine als grotere series. X3DPrints levert vanuit Herzele met persoonlijke service en duidelijke timing.
 
 ---
 
@@ -22,11 +22,11 @@
 
 ## Lokale focus in Kruibeke
 
-Werk je in Kruibeke? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Fort van Kruibeke.
+Werk je in Kruibeke? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Fort van Kruibeke.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Kruibeke
 
@@ -81,7 +81,7 @@ Een testprint maakt uw beslissingen sneller en zekerder.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -93,8 +93,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Kruibeke?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Kruibeke?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Kruibeke?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Kruibeke
 - [3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
@@ -127,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Rupelmonde](/3d-printen-in-rupelmonde)
 - [Buurpagina: 3D printen in Burcht](/3d-printen-in-burcht)
 - [Buurpagina: 3D printen in Zwijndrecht](/3d-printen-in-zwijndrecht)
+
+
 
 ## Lokale spotlight
 - Lokale ondernemers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Kruibeke centrum.

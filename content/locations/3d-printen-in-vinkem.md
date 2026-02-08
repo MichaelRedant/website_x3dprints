@@ -7,7 +7,7 @@ Vinkem ligt op een steenworp van de Franse grens en de Cabourduinen. De mix van 
 - Sensor- en montagebehuizingen voor agritech in de polders
 - Maquettes en storytelling props voor wandelingen rond Cabour en Beauvoorde
 - Beschermhoezen en inserts voor fietsen en trailers die veel kilometers doen
-- Kleine series gepersonaliseerde items voor B&B's en streekproducten
+- Kleine en grotere series gepersonaliseerde items voor B&B's en streekproducten
 
 
 
@@ -74,7 +74,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Vinkem
+- Centrum van Vinkem
+- Lokale bedrijvenzone in Vinkem
+- Sporthal in Vinkem
+
 
 ## Lokale spotlight
 - Landbouw in de grenspolders: PLA/PETG onderdelen afgestemd op projecten rond Vinkem dorpskern.

@@ -1,12 +1,12 @@
 # 3D printing in Sint-Gillis-Waas: local, fast and tailored
 
-Need **3D printing in Sint-Gillis-Waas**? X3DPrints prints in Herzele and ships quickly to Sint-Gillis-Waas and nearby Sint-Gillis-Waas centrum. Local 3D printing for Sint-Gillis-Waas, Sint-Gillis-Waas centrum and De Klinge, Meerdonk, Sint-Pauwels: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Sint-Gillis-Waas**? X3DPrints prints in Herzele and ships quickly to Sint-Gillis-Waas and nearby De Klinge. Local 3D printing for Sint-Gillis-Waas, De Klinge and Meerdonk, Sint-Pauwels: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Sint-Gillis-Waas teams choose us
 
-- Local delivery to Sint-Gillis-Waas, Sint-Gillis-Waas centrum and De Klinge, Meerdonk, Sint-Pauwels; pickup in Herzele.
+- Local delivery to Sint-Gillis-Waas, De Klinge and Meerdonk, Sint-Pauwels; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Gillis-Waas.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Sint-Gillis-Waas**? X3DPrints prints in Herzele and ships 
 
 ## Areas we serve near Sint-Gillis-Waas
 
-We frequently deliver to: Sint-Gillis-Waas, Sint-Gillis-Waas centrum, De Klinge, Meerdonk, Sint-Pauwels, Afhalen Herzele.
+We frequently deliver to: Sint-Gillis-Waas, Sint-Gillis-Waas city center, De Klinge, Meerdonk, Sint-Pauwels, Pickup in Herzele.
 
 ---
 
 ## Projects we help deliver near Sint-Gillis-Waas
 
 - Prototype housings and fixtures used by teams in Sint-Gillis-Waas.
-- Short-run batches that stay consistent for companies near Sint-Gillis-Waas centrum.
-- Replacement brackets and guards for workshops around De Klinge.
+- Short-run batches that stay consistent for companies near De Klinge.
+- Replacement brackets and guards for workshops around Meerdonk.
 - Display pieces and branded props for events near Sint-Gillis-Waas.
 - Brackets, guards and fixtures tuned for teams in Sint-Gillis-Waas.
 - Demo pieces and props for events near Sint-Gillis-Waas.
@@ -32,9 +32,9 @@ We frequently deliver to: Sint-Gillis-Waas, Sint-Gillis-Waas centrum, De Klinge,
 
 ## Local spotlight for Sint-Gillis-Waas
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Sint-Gillis-Waas centrum.
-- Common ask: 3D print service Sint-Gillis-Waas; we advise material and finishing for De Klinge.
-- Delivery focus: Sint-Gillis-Waas, Sint-Gillis-Waas centrum, De Klinge.
+- Makers and product teams in Sint-Gillis-Waas: iterative prototyping and short-run production.
+- Common ask in Sint-Gillis-Waas: custom 3D printing with practical PLA/PETG/TPU advice for Meerdonk.
+- Delivery focus: Sint-Gillis-Waas, Sint-Gillis-Waas city center, De Klinge.
 
 ---
 
@@ -48,17 +48,17 @@ We frequently deliver to: Sint-Gillis-Waas, Sint-Gillis-Waas centrum, De Klinge,
 
 ## Who we support around Sint-Gillis-Waas
 
-- Local projects in Sint-Gillis-Waas: Lokale makers en ontwerpers
-- SMEs and industry near Sint-Gillis-Waas: fixtures, enclosures and small batches.
+- Makers and product teams in Sint-Gillis-Waas: iterative prototyping and short-run production.
+- SMEs and industry near Sint-Gillis-Waas: fixtures, enclosures and small to large batches.
 - Education and labs around Sint-Gillis-Waas: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## What clients near Sint-Gillis-Waas often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Sint-Gillis-Waas centrum.
+- TPU grips and pads for bikes, tools or fixtures around De Klinge.
 - PLA or PETG functional parts for teams in Sint-Gillis-Waas.
-- Paint-ready show models for presentations in Sint-Gillis-Waas and Sint-Gillis-Waas centrum.
+- Paint-ready show models for presentations in Sint-Gillis-Waas and De Klinge.
 
 ---
 
@@ -97,7 +97,6 @@ We frequently deliver to: Sint-Gillis-Waas, Sint-Gillis-Waas centrum, De Klinge,
 - [3D printing in De Klinge](/en/3d-printen-in-de-klinge)
 - [3D printing in Meerdonk](/en/3d-printen-in-meerdonk)
 - [3D printing in Sint-Pauwels](/en/3d-printen-in-sint-pauwels)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-G
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Sint-Gillis-Waas
 
-- Coverage: Sint-Gillis-Waas, Sint-Gillis-Waas centrum, De Klinge, Meerdonk, Sint-Pauwels, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Sint-Gillis-Waas, Sint-Gillis-Waas city center, De Klinge, Meerdonk, Sint-Pauwels, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Sint-Gillis-Waas.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +123,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-G
 - [Parent page: 3D printing in Nieuwkerken-Waas](/en/3d-printen-in-nieuwkerken-waas)
 
 ## Spotlight near Sint-Gillis-Waas
-- Lokale makers en ontwerpers: fixtures and housings for teams around Sint-Gillis-Waas centrum.
-- Frequent order: 3D print service Sint-Gillis-Waas; we keep settings for reorders.
-- Delivery focus: Sint-Gillis-Waas, Sint-Gillis-Waas centrum, De Klinge.
+- Makers and product teams in Sint-Gillis-Waas: iterative prototyping and short-run production.
+- Frequent order: 3D printing service in Sint-Gillis-Waas; we keep settings for reorders.
+- Delivery focus: Sint-Gillis-Waas, Sint-Gillis-Waas city center, De Klinge.
 
 ## Landmarks around Sint-Gillis-Waas
 - Sint-Gillis-Waas town center
@@ -134,12 +133,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Sint-G
 - sports hall in Sint-Gillis-Waas
 
 ## Teams we support around Sint-Gillis-Waas
-- Local focus: Lokale makers en ontwerpers
+- Makers and product teams in Sint-Gillis-Waas: iterative prototyping and short-run production.
 - SMEs/industry near Sint-Gillis-Waas: prototypes, fixtures, housings.
 - Education/labs around Sint-Gillis-Waas: reliable PLA/PETG parts.
 
 ## Frequently asked in Sint-Gillis-Waas
-- 3D print service Sint-Gillis-Waas
-- rapid prototyping Sint-Gillis-Waas
-- 3D printing bedrijf Sint-Gillis-Waas
+- 3D printing service in Sint-Gillis-Waas
+- Custom 3D printing in Sint-Gillis-Waas
+- 3D model printing in Sint-Gillis-Waas
 <!-- LOCAL_ENRICH_END -->

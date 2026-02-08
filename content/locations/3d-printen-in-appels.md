@@ -17,9 +17,9 @@
 
 ## Lokale focus in Appels
 
-Werk je in Appels? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Appels.
+Werk je in Appels? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Appels.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -38,7 +38,7 @@ Op aanvraag levert **3D printen in Appels** ook ABS, ASA, Nylon of PA-CF voor te
 ## Voor wie is 3D printen in Appels interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven rond het veer gebruiken **3D printen in Appels** om prototypes te testen en kleine series te produceren.
+Lokale bedrijven rond het veer gebruiken **3D printen in Appels** om prototypes te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve inwoners maken unieke gadgets of maquettes van het natuurgebied Appels Broek met **3D printen in Appels**.
@@ -131,7 +131,13 @@ Benieuwd hoe **3D printen in Appels** jouw idee versterkt? Vraag een **gratis of
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Appels
+- Centrum van Appels
+- Lokale bedrijvenzone in Appels
+- Sporthal in Appels
+
 
 ## Spotlight rond Appels
 - Lokale teams in Appels: behuizingen en pasmallen voor teams in Appels.

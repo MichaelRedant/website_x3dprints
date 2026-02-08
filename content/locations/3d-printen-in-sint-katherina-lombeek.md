@@ -126,7 +126,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Sint-Katherina-Lombeek
+- Centrum van Sint-Katherina-Lombeek
+- Lokale bedrijvenzone in Sint-Katherina-Lombeek
+- Sporthal in Sint-Katherina-Lombeek
+
 
 ## Lokale spotlight
 - Lokale teams in Sint-Katherina-Lombeek: PLA/PETG onderdelen afgestemd op projecten rond Sint-Katherina-Lombeek.

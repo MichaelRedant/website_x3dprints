@@ -43,7 +43,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Bassevelde interessant?
 
 ### Lokale ondernemers
-Voor hulpmiddelen, prototypes en kleine series.
+Voor hulpmiddelen, prototypes en zowel kleine als grotere series.
 
 ### Makers en hobbyisten
 Unieke onderdelen en snelle iteraties.
@@ -81,14 +81,14 @@ Een eerste prototype helpt u sneller beslissen en verbeteren.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Bassevelde
 
-**Kunnen jullie kleine series leveren in Bassevelde?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Bassevelde?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Bassevelde?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -125,6 +125,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Assenede](/3d-printen-in-assenede)
 - [Buurpagina: 3D printen in Boekhoute](/3d-printen-in-boekhoute)
 - [Buurpagina: 3D printen in Oosteeklo](/3d-printen-in-oosteeklo)
+
+
 
 ## Klantenspotlight
 - Lokale makers en ondernemers: kleine reeksen met vaste settings rond Bassevelde centrum.

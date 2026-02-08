@@ -1,6 +1,6 @@
 # 3D printen in Scheldewindeke: station, Driesplein en Molenhoek
 
-Voor **3D printen in Scheldewindeke** levert X3DPrints prototypes en kleine series richting station Scheldewindeke, Driesplein en Molenhoek. Je krijgt strakke prints, snelle doorlooptijden en duidelijke prijzen.
+Voor **3D printen in Scheldewindeke** levert X3DPrints prototypes en zowel kleine als grotere series richting station Scheldewindeke, Driesplein en Molenhoek. Je krijgt strakke prints, snelle doorlooptijden en duidelijke prijzen.
 
 ---
 
@@ -19,11 +19,11 @@ Voor **3D printen in Scheldewindeke** levert X3DPrints prototypes en kleine seri
 
 ## Lokale focus in Scheldewindeke
 
-Werk je in Scheldewindeke? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Scheldewindeke? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Ergonomische grips en handgrepen op maat.
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 
 ## Materialen
 
@@ -77,7 +77,13 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Scheldewindeke
+- Centrum van Scheldewindeke
+- Lokale bedrijvenzone in Scheldewindeke
+- Sporthal in Scheldewindeke
+
 
 ## Klantenspotlight
 - Lokale teams in Scheldewindeke: kleine reeksen met vaste settings rond Scheldewindeke.

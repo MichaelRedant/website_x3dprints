@@ -22,7 +22,7 @@
 
 ## Lokale focus in Verrebroek
 
-Werk je in Verrebroek? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Verrebroekdok.
+Werk je in Verrebroek? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Verrebroekdok.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Pasmallen en sjablonen voor montage en assemblage.
@@ -46,7 +46,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Tooling en onderdelen die snel moeten passen.
 
 ### Lokale ondernemers
-Prototypes en kleine series met snelle levering.
+Prototypes en zowel kleine als grotere series met snelle levering.
 
 ### Makers en hobbyisten
 Creatieve projecten en snelle iteraties.
@@ -81,7 +81,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -90,8 +90,8 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 **Welke bestanden kan ik aanleveren voor Verrebroek?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Verrebroek?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Verrebroek?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Verrebroek?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -126,6 +126,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Doel](/3d-printen-in-doel)
 - [Buurpagina: 3D printen in Kallo](/3d-printen-in-kallo)
 - [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
+
 
 ## Klantenspotlight
 - Haven en logistiek: kleine reeksen met vaste settings rond Verrebroek centrum.

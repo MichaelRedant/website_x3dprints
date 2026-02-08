@@ -1,6 +1,6 @@
 # 3D printen in Gijzenzele: museum, dorpskern en groene as
 
-Voor **3D printen in Gijzenzele** levert X3DPrints prototypes en kleine series richting het oorlogsmuseum, de Sint-Bavokerk en de landelijke as tussen Wetteren en Zottegem. Je krijgt heldere prijzen en nette afwerking.
+Voor **3D printen in Gijzenzele** levert X3DPrints prototypes en zowel kleine als grotere series richting het oorlogsmuseum, de Sint-Bavokerk en de landelijke as tussen Wetteren en Zottegem. Je krijgt heldere prijzen en nette afwerking.
 
 ---
 
@@ -19,11 +19,11 @@ Voor **3D printen in Gijzenzele** levert X3DPrints prototypes en kleine series r
 
 ## Lokale focus in Gijzenzele
 
-Werk je in Gijzenzele? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Gijzenzele? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Ergonomische grips en handgrepen op maat.
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 
 ## Materialen
 
@@ -56,7 +56,7 @@ Upload je bestand en ontvang snel een voorstel voor **3D printen in Gijzenzele**
 
 ## Veelgestelde vragen over 3D printen in Gijzenzele
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -77,7 +77,13 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Gijzenzele
+- Centrum van Gijzenzele
+- Lokale bedrijvenzone in Gijzenzele
+- Sporthal in Gijzenzele
+
 
 ## Spotlight rond Gijzenzele
 - Lokale teams in Gijzenzele: behuizingen en pasmallen voor teams in Gijzenzele.

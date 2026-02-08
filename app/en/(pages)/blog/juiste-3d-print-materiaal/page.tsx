@@ -17,7 +17,7 @@ const dateModified = "2026-02-04"
 export const metadata: Metadata = {
   title: "How do you choose the right 3D print material? | X3DPrints",
   description:
-    "Step-by-step guide to pick the right 3D print material based on environment, use and budget. Includes scenarios for PLA, PETG and TPU.",
+    "Step-by-step guide to pick the right 3D print material for every 3d model print based on environment, use and budget.",
   alternates: {
     canonical,
     languages: {
@@ -176,7 +176,7 @@ export default function RightMaterialGuideEnPage() {
             </h1>
             <p className="text-lg text-slate-700">
               This guide walks you through four decisions: environment, temperature, function and flexibility. We link directly to our material pages,
-              pricing and contact so you can decide faster without extra review rounds.
+              pricing and contact so you can decide faster without extra review rounds for any 3d model print workflow.
             </p>
             <div className="flex flex-wrap gap-3">
               <ShimmerButton

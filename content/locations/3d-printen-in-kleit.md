@@ -1,6 +1,6 @@
 # 3D printen in Kleit: maatwerk voor polder en projecten
 
-Kleit krijgt vlotte 3D print support vanuit X3DPrints. We leveren prototypes, vervangstukken en kleine series met aandacht voor landbouw, polderwerken en lokale makers.
+Kleit krijgt vlotte 3D print support vanuit X3DPrints. We leveren prototypes, vervangstukken en zowel kleine als grotere series met aandacht voor landbouw, polderwerken en lokale makers.
 
 ---
 
@@ -23,7 +23,7 @@ Kleit krijgt vlotte 3D print support vanuit X3DPrints. We leveren prototypes, ve
 
 Voor projecten in Kleit combineren we korte doorlooptijd met strakke afwerking.
 
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 
@@ -52,7 +52,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -65,7 +65,13 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Kleit
+- Centrum van Kleit
+- Lokale bedrijvenzone in Kleit
+- Sporthal in Kleit
+
 
 ## Spotlight rond Kleit
 - Lokale teams in Kleit: behuizingen en pasmallen voor teams in Kleit.

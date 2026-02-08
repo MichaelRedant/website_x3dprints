@@ -32,7 +32,7 @@ Voor **3D printen in Drogenbos** leveren we prototypes, behuizingen en tooling r
 
 - Signage en props voor lokale campagnes.
 - Serviceparts en fixtures voor productie/onderhoud.
-- Kleine series covers en cases voor elektronica en IoT.
+- Kleine en grotere series covers en cases voor elektronica en IoT.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je bestanden via [contact](/contact). Je krijgt snel een voorstel voor **3
 - Drogenbos centrum
 - Kanaalzone
 - R0 zuidrand
+
+<!-- LOCAL_ENRICH_START -->
+## Wat je moet weten in Drogenbos
+
+- Dekking: Drogenbos, Drogenbos centrum, Industrieterrein Kanaalzone, R0 zuidrand, Sint-Pieters-Leeuw grens, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Drogenbos.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Dichtbij gelegen locaties
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Spotlight rond Drogenbos
+- Industrie/logistiek in Drogenbos: behuizingen en pasmallen voor teams in Drogenbos centrum.
+- Terugkerende order: 3D print service Drogenbos; we bewaren je instellingen.
+- Leverfocus: Drogenbos, Drogenbos centrum, Industrieterrein Kanaalzone.
+
+## Landmarks in de buurt van Drogenbos
+- Centrum van Drogenbos
+- Lokale bedrijvenzone in Drogenbos
+- Sporthal in Drogenbos
+
+## Teams die we ondersteunen rond Drogenbos
+- Industrie/logistiek in Drogenbos
+- Retail/events in de zuidrand (Drogenbos)
+- Makers en onderwijs in de regio (Drogenbos)
+
+## Wat vaak wordt gevraagd in Drogenbos
+- 3D print service Drogenbos
+- rapid prototyping Drogenbos
+- 3D printing bedrijf Drogenbos
+<!-- LOCAL_ENRICH_END -->

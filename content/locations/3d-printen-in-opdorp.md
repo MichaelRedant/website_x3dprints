@@ -26,7 +26,7 @@
 In Opdorp combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Opdorp
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Opdorp interessant?
 
 ### Lokale ondernemers
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Verenigingen en scholen
 Educatieve modellen en kleine projecten.
@@ -82,7 +82,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -123,6 +123,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Dichtbij gelegen locaties
 - [Buurpagina: 3D printen in Buggenhout](/3d-printen-in-buggenhout)
+
+
 
 ## Spotlight rond Opdorp
 - Lokale ondernemers en makers: behuizingen en pasmallen voor teams in Opdorp centrum.

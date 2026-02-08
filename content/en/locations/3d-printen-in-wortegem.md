@@ -1,12 +1,12 @@
 # 3D printing in Wortegem: local, fast and tailored
 
-Need **3D printing in Wortegem**? X3DPrints prints in Herzele and ships quickly to Wortegem and nearby Wortegem centrum. Local 3D printing for Wortegem, Wortegem centrum and Wortegem-Petegem, Petegem-aan-de-Schelde, Moregem: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Wortegem**? X3DPrints prints in Herzele and ships quickly to Wortegem and nearby Wortegem-Petegem. Local 3D printing for Wortegem, Wortegem-Petegem and Petegem-aan-de-Schelde, Moregem: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Wortegem teams choose us
 
-- Local delivery to Wortegem, Wortegem centrum and Wortegem-Petegem, Petegem-aan-de-Schelde, Moregem; pickup in Herzele.
+- Local delivery to Wortegem, Wortegem-Petegem and Petegem-aan-de-Schelde, Moregem; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Wortegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Wortegem**? X3DPrints prints in Herzele and ships quickly 
 
 ## Delivery focus for Wortegem
 
-We frequently deliver to: Wortegem, Wortegem centrum, Wortegem-Petegem, Petegem-aan-de-Schelde, Moregem, Elsegem, Afhalen Herzele.
+We frequently deliver to: Wortegem, Wortegem city center, Wortegem-Petegem, Petegem-aan-de-Schelde, Moregem, Elsegem, Pickup in Herzele.
 
 ---
 
 ## What teams near Wortegem ask us to make
 
 - Pilot runs for SMEs around Wortegem, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Wortegem centrum.
-- TPU dampers and grips for gear used in Wortegem-Petegem.
+- Functional PETG parts for maintenance teams near Wortegem-Petegem.
+- TPU dampers and grips for gear used in Petegem-aan-de-Schelde.
 - Presentation models and mockups for pitches around Wortegem.
 - Brackets, guards and fixtures tuned for teams in Wortegem.
 - Demo pieces and props for events near Wortegem.
@@ -32,9 +32,9 @@ We frequently deliver to: Wortegem, Wortegem centrum, Wortegem-Petegem, Petegem-
 
 ## What stands out in Wortegem
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Wortegem centrum.
-- Common ask: 3D print service Wortegem; we advise material and finishing for Wortegem-Petegem.
-- Delivery focus: Wortegem, Wortegem centrum, Wortegem-Petegem.
+- Makers and product teams in Wortegem: iterative prototyping and short-run production.
+- Common ask in Wortegem: custom 3D printing with practical PLA/PETG/TPU advice for Petegem-aan-de-Schelde.
+- Delivery focus: Wortegem, Wortegem city center, Wortegem-Petegem.
 
 ---
 
@@ -48,17 +48,16 @@ We frequently deliver to: Wortegem, Wortegem centrum, Wortegem-Petegem, Petegem-
 
 ## Sectors we back near Wortegem
 
-- Local projects in Wortegem: Lokale makers en ontwerpers
-- Local projects in Wortegem: Kleine series en maatwerk
+- Makers and product teams in Wortegem: iterative prototyping and short-run production.
 - Education and labs around Wortegem: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## Recent requests around Wortegem
 
-- Paint-ready show models for presentations in Wortegem and Wortegem centrum.
+- Paint-ready show models for presentations in Wortegem and Wortegem-Petegem.
 - PLA or PETG functional parts for teams in Wortegem.
-- TPU grips and pads for bikes, tools or fixtures around Wortegem centrum.
+- TPU grips and pads for bikes, tools or fixtures around Wortegem-Petegem.
 
 ---
 
@@ -97,7 +96,7 @@ We frequently deliver to: Wortegem, Wortegem centrum, Wortegem-Petegem, Petegem-
 - [3D printing in Wortegem-Petegem](/en/3d-printen-in-wortegem-petegem)
 - [3D printing in Petegem-aan-de-Schelde](/en/3d-printen-in-petegem-aan-de-schelde)
 - [3D printing in Moregem](/en/3d-printen-in-moregem)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [3D printing in Elsegem](/en/3d-printen-in-elsegem)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Worteg
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Wortegem
 
-- Coverage: Wortegem, Wortegem centrum, Wortegem-Petegem, Petegem-aan-de-Schelde, Moregem, Elsegem; delivery from Herzele, pickup available.
+- Coverage: Wortegem, Wortegem city center, Wortegem-Petegem, Petegem-aan-de-Schelde, Moregem, Elsegem; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Wortegem.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,9 +123,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Worteg
 - [Nearby: 3D printing in Elsegem](/en/3d-printen-in-elsegem)
 
 ## Customer spotlight
-- Lokale makers en ontwerpers: small batches with consistent settings near Wortegem centrum.
-- Common request: 3D print service Wortegem; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Wortegem and Wortegem centrum.
+- Makers and product teams in Wortegem: iterative prototyping and short-run production.
+- Common request: 3D printing service in Wortegem; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Wortegem-Petegem and Petegem-aan-de-Schelde.
 
 ## Where we drop off near Wortegem
 - Wortegem town center
@@ -134,12 +133,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Worteg
 - sports hall in Wortegem
 
 ## Sectors we back near Wortegem
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in Wortegem: iterative prototyping and short-run production.
 - Education/labs around Wortegem: reliable PLA/PETG parts.
 
 ## Common requests around Wortegem
-- 3D print service Wortegem
-- rapid prototyping Wortegem
-- 3D printing bedrijf Wortegem
+- 3D printing service in Wortegem
+- Custom 3D printing in Wortegem
+- 3D model printing in Wortegem
 <!-- LOCAL_ENRICH_END -->

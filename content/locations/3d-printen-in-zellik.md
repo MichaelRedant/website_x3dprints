@@ -36,7 +36,7 @@ Voor **3D printen in Zellik** leveren we prototypes en functionele onderdelen ri
 
 ## Lokale focus in Zellik
 
-Werk je in Zellik? We leveren snelle prototypes en kleine series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
+Werk je in Zellik? We leveren snelle prototypes en zowel kleine als grotere series op maat, met materiaaladvies zodat elk onderdeel meteen inzetbaar is.
 
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 - Behuizingen en covers voor elektronica, sensoren of prototypes.
@@ -70,7 +70,7 @@ Werk je in Zellik? We leveren snelle prototypes en kleine series op maat, met ma
 
 - Kantoren en agencies in Researchpark: props, displays, prototypes.
 
-- Retail in de dorpskern: houders, badgeclips en kleine series gadgets.
+- Retail in de dorpskern: houders, badgeclips en zowel kleine als grotere series gadgets.
 
 
 
@@ -113,7 +113,7 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 
 Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van complexiteit en planning.
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -126,7 +126,13 @@ Ja, we printen zowel single parts als korte reeksen met consistente instellingen
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Zellik
+- Centrum van Zellik
+- Lokale bedrijvenzone in Zellik
+- Sporthal in Zellik
+
 
 ## Spotlight rond Zellik
 - Lokale teams in Zellik: behuizingen en pasmallen voor teams in Zellik.

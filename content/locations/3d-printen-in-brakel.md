@@ -2,7 +2,7 @@
 
 
 
-Voor **3D printen in Brakel** leveren we prototypes en kleine series richting Valkenberg, Brakelbos en de dorpskernen van Nederbrakel en Opbrakel. Je krijgt strakke toleranties, snelle levering en materiaaladvies op maat.
+Voor **3D printen in Brakel** leveren we prototypes en zowel kleine als grotere series richting Valkenberg, Brakelbos en de dorpskernen van Nederbrakel en Opbrakel. Je krijgt strakke toleranties, snelle levering en materiaaladvies op maat.
 
 
 
@@ -38,7 +38,7 @@ Voor **3D printen in Brakel** leveren we prototypes en kleine series richting Va
 
 Voor projecten in Brakel combineren we korte doorlooptijd met strakke afwerking.
 
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 
@@ -146,7 +146,13 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Brakel
+- Centrum van Brakel
+- Lokale bedrijvenzone in Brakel
+- Sporthal in Brakel
+
 
 ## Klantenspotlight
 - Lokale teams in Brakel: kleine reeksen met vaste settings rond Brakel.

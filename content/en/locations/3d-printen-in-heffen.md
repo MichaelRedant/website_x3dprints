@@ -15,14 +15,14 @@ Need **3D printing in Heffen**? X3DPrints prints in Herzele and ships quickly to
 
 ## Where we deliver around Heffen
 
-We frequently deliver to: Heffen.
+We frequently deliver to: Heffen, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Heffen
 
 - Prototypes and housings supporting teams in Heffen.
-- Small series with consistent settings for businesses near your region.
+- Small to large series with consistent settings for businesses near your region.
 - Replacement parts and brackets for workshops around Flanders.
 - Promo models, signage and props for events in and around Heffen.
 - Brackets, guards and fixtures tuned for teams in Heffen.
@@ -32,9 +32,9 @@ We frequently deliver to: Heffen.
 
 ## Spotlight: Heffen projects
 
-- Local SMEs in Heffen: tailored PETG/PLA parts for teams around Heffen.
-- Common ask: 3D print service Heffen; we advise material and finishing for Heffen.
-- Delivery focus: Heffen.
+- Manufacturing and SMEs around Heffen: prototypes, fixtures and housings.
+- Common ask in Heffen: custom 3D printing with practical PLA/PETG/TPU advice for Heffen.
+- Delivery focus: Heffen, Pickup in Herzele.
 
 ---
 
@@ -57,8 +57,8 @@ We frequently deliver to: Heffen.
 ## Popular requests from Heffen
 
 - PLA or PETG functional parts for teams in Heffen.
-- TPU grips and pads for bikes, tools or fixtures around Heffen.
-- Paint-ready show models for presentations in Heffen and Heffen.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
+- Paint-ready show models for presentations in Heffen and the surrounding area.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Heffen.
 
 ## FAQ about 3D printing in Heffen
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -94,10 +94,7 @@ We frequently deliver to: Heffen.
 
 ## Quick links for Heffen teams
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,18 +109,18 @@ Send your files today and get a clear, fast proposal for **3D printing in Heffen
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Heffen
 
-- Coverage: Heffen; delivery from Herzele, pickup available.
+- Coverage: Heffen, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Heffen.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
 
 ## Neighbouring pages
-- [3D printing in Ghent](/en/3d-printen-in-gent)
+- [Local 3D printing overview](/en/locaties)
 
 ## Local spotlight
-- Local teams in Heffen: PLA/PETG parts tuned for projects near Heffen.
-- Common request: 3D print service Heffen; we pick material and finish for the use case.
-- Delivery focus: Heffen.
+- SMEs and makers in Heffen: fixtures and enclosures.
+- Common request: 3D printing service in Heffen; we pick material and finish for the use case.
+- Delivery focus: Heffen, Pickup in Herzele.
 
 ## Places we often deliver near Heffen
 - Heffen town center
@@ -136,7 +133,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Heffen
 - Education/labs around Heffen: lesson-ready prints.
 
 ## Popular searches from Heffen
-- 3D print service Heffen
-- rapid prototyping Heffen
-- 3D printing bedrijf Heffen
+- 3D printing service in Heffen
+- Custom 3D printing in Heffen
+- 3D model printing in Heffen
 <!-- LOCAL_ENRICH_END -->

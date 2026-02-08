@@ -1,12 +1,12 @@
 # 3D printing in Sombeke: local, fast and tailored
 
-Need **3D printing in Sombeke**? X3DPrints prints in Herzele and ships quickly to Sombeke and nearby Sombeke centrum. Local 3D printing for Sombeke, Sombeke centrum and Waasmunster, Hamme, Lokeren: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Sombeke**? X3DPrints prints in Herzele and ships quickly to Sombeke and nearby Waasmunster. Local 3D printing for Sombeke, Waasmunster and Hamme, Lokeren: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Sombeke teams choose us
 
-- Local delivery to Sombeke, Sombeke centrum and Waasmunster, Hamme, Lokeren; pickup in Herzele.
+- Local delivery to Sombeke, Waasmunster and Hamme, Lokeren; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sombeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Sombeke**? X3DPrints prints in Herzele and ships quickly t
 
 ## Areas we serve near Sombeke
 
-We frequently deliver to: Sombeke, Sombeke centrum, Waasmunster, Hamme, Lokeren, Afhalen Herzele.
+We frequently deliver to: Sombeke, Sombeke city center, Waasmunster, Hamme, Lokeren, Pickup in Herzele.
 
 ---
 
 ## Projects we help deliver near Sombeke
 
 - Prototype housings and fixtures used by teams in Sombeke.
-- Short-run batches that stay consistent for companies near Sombeke centrum.
-- Replacement brackets and guards for workshops around Waasmunster.
+- Short-run batches that stay consistent for companies near Waasmunster.
+- Replacement brackets and guards for workshops around Hamme.
 - Display pieces and branded props for events near Sombeke.
 - Brackets, guards and fixtures tuned for teams in Sombeke.
 - Demo pieces and props for events near Sombeke.
@@ -32,9 +32,9 @@ We frequently deliver to: Sombeke, Sombeke centrum, Waasmunster, Hamme, Lokeren,
 
 ## Local spotlight for Sombeke
 
-- Lokale makers en ontwerpers: tailored PETG/PLA parts for teams around Sombeke centrum.
-- Common ask: 3D print service Sombeke; we advise material and finishing for Waasmunster.
-- Delivery focus: Sombeke, Sombeke centrum, Waasmunster.
+- Makers and product teams in Sombeke: iterative prototyping and short-run production.
+- Common ask in Sombeke: custom 3D printing with practical PLA/PETG/TPU advice for Hamme.
+- Delivery focus: Sombeke, Sombeke city center, Waasmunster.
 
 ---
 
@@ -48,17 +48,16 @@ We frequently deliver to: Sombeke, Sombeke centrum, Waasmunster, Hamme, Lokeren,
 
 ## Who we support around Sombeke
 
-- Local projects in Sombeke: Lokale makers en ontwerpers
-- Local projects in Sombeke: Kleine series en maatwerk
+- Makers and product teams in Sombeke: iterative prototyping and short-run production.
 - Education and labs around Sombeke: lesson-ready prints in PLA/PETG.
 
 ---
 
 ## What clients near Sombeke often ask
 
-- TPU grips and pads for bikes, tools or fixtures around Sombeke centrum.
+- TPU grips and pads for bikes, tools or fixtures around Waasmunster.
 - PLA or PETG functional parts for teams in Sombeke.
-- Paint-ready show models for presentations in Sombeke and Sombeke centrum.
+- Paint-ready show models for presentations in Sombeke and Waasmunster.
 
 ---
 
@@ -97,7 +96,6 @@ We frequently deliver to: Sombeke, Sombeke centrum, Waasmunster, Hamme, Lokeren,
 - [3D printing in Waasmunster](/en/3d-printen-in-waasmunster)
 - [3D printing in Hamme](/en/3d-printen-in-hamme)
 - [3D printing in Lokeren](/en/3d-printen-in-lokeren)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Sombek
 <!-- LOCAL_ENRICH_START -->
 ## What matters locally in Sombeke
 
-- Coverage: Sombeke, Sombeke centrum, Waasmunster, Hamme, Lokeren, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Sombeke, Sombeke city center, Waasmunster, Hamme, Lokeren, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Sombeke.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +121,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Sombek
 - [Nearby: 3D printing in Lokeren](/en/3d-printen-in-lokeren)
 
 ## Spotlight near Sombeke
-- Lokale makers en ontwerpers: fixtures and housings for teams around Sombeke centrum.
-- Frequent order: 3D print service Sombeke; we keep settings for reorders.
-- Delivery focus: Sombeke, Sombeke centrum, Waasmunster.
+- Makers and product teams in Sombeke: iterative prototyping and short-run production.
+- Frequent order: 3D printing service in Sombeke; we keep settings for reorders.
+- Delivery focus: Sombeke, Sombeke city center, Waasmunster.
 
 ## Landmarks around Sombeke
 - Sombeke town center
@@ -133,12 +131,11 @@ Send your files today and get a clear, fast proposal for **3D printing in Sombek
 - sports hall in Sombeke
 
 ## Teams we support around Sombeke
-- Local focus: Lokale makers en ontwerpers
-- Local focus: Kleine series en maatwerk
+- Makers and product teams in Sombeke: iterative prototyping and short-run production.
 - Education/labs around Sombeke: reliable PLA/PETG parts.
 
 ## Frequently asked in Sombeke
-- 3D print service Sombeke
-- rapid prototyping Sombeke
-- 3D printing bedrijf Sombeke
+- 3D printing service in Sombeke
+- Custom 3D printing in Sombeke
+- 3D model printing in Sombeke
 <!-- LOCAL_ENRICH_END -->

@@ -1,12 +1,12 @@
 # 3D printing in Asper: local, fast and tailored
 
-Need **3D printing in Asper**? X3DPrints prints in Herzele and ships quickly to Asper and nearby Asper centrum. Local 3D printing for Asper, Asper centrum and Gavere, Semmerzake, Dikkelvenne: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Asper**? X3DPrints prints in Herzele and ships quickly to Asper and nearby Gavere. Local 3D printing for Asper, Gavere and Semmerzake, Dikkelvenne: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Asper teams choose us
 
-- Local delivery to Asper, Asper centrum and Gavere, Semmerzake, Dikkelvenne; pickup in Herzele.
+- Local delivery to Asper, Gavere and Semmerzake, Dikkelvenne; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Asper.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Asper**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Where we deliver around Asper
 
-We frequently deliver to: Asper, Asper centrum, Gavere, Semmerzake, Dikkelvenne, Afhalen Herzele.
+We frequently deliver to: Asper, Asper city center, Gavere, Semmerzake, Dikkelvenne, Pickup in Herzele.
 
 ---
 
 ## Where our 3D prints are used around Asper
 
 - Prototypes and housings supporting teams in Asper.
-- Small series with consistent settings for businesses near Asper centrum.
-- Replacement parts and brackets for workshops around Gavere.
+- Small to large series with consistent settings for businesses near Gavere.
+- Replacement parts and brackets for workshops around Semmerzake.
 - Promo models, signage and props for events in and around Asper.
 - Brackets, guards and fixtures tuned for teams in Asper.
 - Demo pieces and props for events near Asper.
@@ -32,9 +32,9 @@ We frequently deliver to: Asper, Asper centrum, Gavere, Semmerzake, Dikkelvenne,
 
 ## Spotlight: Asper projects
 
-- Lokale makers en techniekers: tailored PETG/PLA parts for teams around Asper centrum.
-- Common ask: 3D print service Asper; we advise material and finishing for Gavere.
-- Delivery focus: Asper, Asper centrum, Gavere.
+- SMEs and industry near Asper: fixtures, enclosures and small to large batches.
+- Common ask in Asper: custom 3D printing with practical PLA/PETG/TPU advice for Semmerzake.
+- Delivery focus: Asper, Asper city center, Gavere.
 
 ---
 
@@ -48,7 +48,7 @@ We frequently deliver to: Asper, Asper centrum, Gavere, Semmerzake, Dikkelvenne,
 
 ## Teams we often help near Asper
 
-- Local projects in Asper: Lokale makers en techniekers
+- SMEs and industry near Asper: fixtures, enclosures and small to large batches.
 - Retail/marketing/events in Asper: displays, props and branded pieces.
 - Education and labs around Asper: lesson-ready prints in PLA/PETG.
 
@@ -57,8 +57,8 @@ We frequently deliver to: Asper, Asper centrum, Gavere, Semmerzake, Dikkelvenne,
 ## Popular requests from Asper
 
 - PLA or PETG functional parts for teams in Asper.
-- TPU grips and pads for bikes, tools or fixtures around Asper centrum.
-- Paint-ready show models for presentations in Asper and Asper centrum.
+- TPU grips and pads for bikes, tools or fixtures around Gavere.
+- Paint-ready show models for presentations in Asper and Gavere.
 
 ---
 
@@ -84,7 +84,7 @@ We frequently deliver to: Asper, Asper centrum, Gavere, Semmerzake, Dikkelvenne,
 
 ## FAQ about 3D printing in Asper
 
-**Do you handle small batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
 **Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
 **Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
 **File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
@@ -97,7 +97,6 @@ We frequently deliver to: Asper, Asper centrum, Gavere, Semmerzake, Dikkelvenne,
 - [3D printing in Gavere](/en/3d-printen-in-gavere)
 - [3D printing in Semmerzake](/en/3d-printen-in-semmerzake)
 - [3D printing in Dikkelvenne](/en/3d-printen-in-dikkelvenne)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +111,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Asper*
 <!-- LOCAL_ENRICH_START -->
 ## Local highlights for Asper
 
-- Coverage: Asper, Asper centrum, Gavere, Semmerzake, Dikkelvenne, Afhalen Herzele; delivery from Herzele, pickup available.
+- Coverage: Asper, Asper city center, Gavere, Semmerzake, Dikkelvenne, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Asper.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -123,9 +122,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Asper*
 - [Nearby: 3D printing in Dikkelvenne](/en/3d-printen-in-dikkelvenne)
 
 ## Local spotlight
-- Lokale makers en techniekers: PLA/PETG parts tuned for projects near Asper centrum.
-- Common request: 3D print service Asper; we pick material and finish for the use case.
-- Delivery focus: Asper, Asper centrum, Gavere.
+- SMEs/industry near Asper: prototypes, fixtures, housings.
+- Common request: 3D printing service in Asper; we pick material and finish for the use case.
+- Delivery focus: Asper, Asper city center, Gavere.
 
 ## Places we often deliver near Asper
 - Asper town center
@@ -133,12 +132,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Asper*
 - sports hall in Asper
 
 ## Industries we serve near Asper
-- Local focus: Lokale makers en techniekers
+- SMEs/industry near Asper: prototypes, fixtures, housings.
 - Retail/marketing/events in Asper: displays, signage, props.
 - Education/labs around Asper: reliable PLA/PETG parts.
 
 ## Popular searches from Asper
-- 3D print service Asper
-- rapid prototyping Asper
-- 3D printing bedrijf Asper
+- 3D printing service in Asper
+- Custom 3D printing in Asper
+- 3D model printing in Asper
 <!-- LOCAL_ENRICH_END -->

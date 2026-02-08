@@ -51,7 +51,7 @@ export default function Page() {
   const extraFaq = [
     {
       q: "Do you work with consumers?",
-      a: "Yes. Consumers, associations, schools and businesses can order single parts or small batches. Start via <a href=\"/en/contact\">/contact</a>.",
+      a: "Yes. Consumers, associations, schools and businesses can order single parts or small to large batches. Start via <a href=\"/en/contact\">/contact</a>.",
     },
     {
       q: "Why do I need to fill the request form?",

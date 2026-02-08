@@ -20,7 +20,7 @@
 In Sint-Amandsberg helpen we projecten rond Sint-Amandsberg sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Sint-Amandsberg
@@ -38,7 +38,7 @@ Op aanvraag zijn ook ABS, ASA of Nylon mogelijk voor technische projecten.
 ## Voor wie is 3D printen in Sint-Amandsberg interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven gebruiken **3D printen in Sint-Amandsberg** om productideeën te testen en kleine series te produceren.
+Lokale bedrijven gebruiken **3D printen in Sint-Amandsberg** om productideeën te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve bewoners zetten hun ideeën om in tastbare objecten met **3D printen in Sint-Amandsberg**.
@@ -102,7 +102,6 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
 ## Interne links rond 3D printen in Gent
-- [3D printen in Gent](/3d-printen-in-gent)
 - [3D printen in Desteldonk](/3d-printen-in-desteldonk)
 - [3D printen in Drongen](/3d-printen-in-drongen)
 - [3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
@@ -136,7 +135,13 @@ Benieuwd hoe **3D printen in Sint-Amandsberg** jouw idee versterkt? Vraag een **
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Sint-Amandsberg
+- Centrum van Sint-Amandsberg
+- Lokale bedrijvenzone in Sint-Amandsberg
+- Sporthal in Sint-Amandsberg
+
 
 ## Lokale spotlight
 - Lokale teams in Sint-Amandsberg: PLA/PETG onderdelen afgestemd op projecten rond Sint-Amandsberg.

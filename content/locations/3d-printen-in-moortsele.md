@@ -39,7 +39,7 @@ Zoek je 3D printen in Moortsele? We denken mee over passing, sterkte en look zod
 
 - Klemmen en hulponderdelen voor rail- en mobiliteitsopstellingen rond het station.
 - Behuizingen voor sensoren of buitenprojecten in de Gondebeekvallei.
-- Displays en kleine series voor lokale winkels.
+- Displays en zowel kleine als grotere series voor lokale winkels.
 
 ---
 
@@ -77,7 +77,13 @@ Vaak leveren we binnen enkele werkdagen. Spoed kan in overleg, afhankelijk van c
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Moortsele
+- Centrum van Moortsele
+- Lokale bedrijvenzone in Moortsele
+- Sporthal in Moortsele
+
 
 ## Klantenspotlight
 - Lokale teams in Moortsele: kleine reeksen met vaste settings rond Moortsele.

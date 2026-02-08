@@ -1,6 +1,6 @@
 # 3D printen in Munkzwalm: betrouwbare prints op maat
 
-**3D printen in Munkzwalm** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Munkzwalm** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -23,9 +23,9 @@
 
 ## Lokale focus in Munkzwalm
 
-Werk je in Munkzwalm? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Munkzwalm.
+Werk je in Munkzwalm? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Munkzwalm.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -101,7 +101,6 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 - [3D printen in Zwalm](/3d-printen-in-zwalm)
 - [3D printen in Nederzwalm-Hermelgem](/3d-printen-in-nederzwalm-hermelgem)
 - [3D printen in Beerlegem](/3d-printen-in-beerlegem)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 ---
 
 ## Externe links
@@ -130,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Roborst](/3d-printen-in-roborst)
 - [Hoofdpagina: 3D printen in Sint-Blasius-Boekel](/3d-printen-in-sint-blasius-boekel)
 
+
+
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Munkzwalm centrum.
 - Vaak gevraagd: 3D print service Munkzwalm; we adviseren materiaal en afwerking.
@@ -142,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in Munkzwalm
 - Lokale makers en ontwerpers (Munkzwalm)
-- Kleine series en maatwerk (Munkzwalm)
+- Kleine en grotere series en maatwerk (Munkzwalm)
 - Verenigingen en onderwijs (Munkzwalm)
 
 ## Veelgevraagde zoekopdrachten in Munkzwalm

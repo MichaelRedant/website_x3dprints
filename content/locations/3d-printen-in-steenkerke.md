@@ -15,7 +15,7 @@ Steenkerke kijkt uit over de vlakke polders tussen Veurne en de IJzervlakte. De 
 
 Voor projecten in Steenkerke combineren we korte doorlooptijd met strakke afwerking.
 
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 - Jigs, montagehulpen en boormallen voor snelle assemblage.
 
@@ -54,7 +54,7 @@ Geef aan waarvoor het stuk dient en welk materiaal je voor ogen hebt. We zorgen 
 
 ## Veelgestelde vragen over 3D printen in Steenkerke
 
-**Kunnen jullie ook kleine series printen?**
+**Kunnen jullie ook kleine en grotere series printen?**
 
 Ja, we printen zowel single parts als korte reeksen met consistente instellingen en kwaliteitscontrole.
 
@@ -75,7 +75,13 @@ Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Steenkerke
+- Centrum van Steenkerke
+- Lokale bedrijvenzone in Steenkerke
+- Sporthal in Steenkerke
+
 
 ## Spotlight rond Steenkerke
 - Erfgoed- en WOI-projecten: behuizingen en pasmallen voor teams in Steenkerke dorpskern.

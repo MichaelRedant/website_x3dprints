@@ -1,61 +1,139 @@
-# 3D printing in Kortenaken: rural Hageland
+# 3D printing in Kortenaken: local, fast and tailored
 
-With **3D printing in Kortenaken** we deliver prototypes, housings and tooling toward Hoeleden, Ransberg and Kersbeek-Miskom. Fast quotes, clear pricing and deliveries on appointment.
-
----
-
-## Why X3DPrints for Kortenaken?
-
-- Quote within one working day with realistic lead time.
-- PLA Matte, PETG and TPU for visuals, strong parts and flexible clips.
-- EV delivery toward Kortenaken/Hageland; pickup in Herzele available.
+Need **3D printing in Kortenaken**? X3DPrints prints in Herzele and ships quickly to Kortenaken and nearby Hoeleden. Local 3D printing for Kortenaken, Hoeleden and Ransberg, Kersbeek-Miskom: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
-## Local focus in Kortenaken
+## Why Kortenaken teams choose us
 
-- Props and signage for retail and events.
-- Jigs, clamps and fit parts for SMEs and agri/tech.
-- Housings and mounts for installs and sensors.
-
-## Materials
-
-| Material      | Benefit                        | Ideal for |
-| :------------ | :----------------------------- | :-------- |
-| **PLA Matte** | Clean detail, many colours     | Showpieces and badges |
-| **PETG**      | Strong and heat-resistant      | Functional parts and tooling |
-| **TPU**       | Flexible and shock absorbing   | Cable clips, bumpers and pads |
+- Local delivery to Kortenaken, Hoeleden and Ransberg, Kersbeek-Miskom; pickup in Herzele.
+- Fast quotes: response in one business day with clear pricing.
+- Accurate fits for enclosures, jigs and assemblies used in Kortenaken.
+- Optional finishing (sanding/priming/paint) for customer-facing parts.
 
 ---
 
-## Use cases in Kortenaken
+## Where we deliver around Kortenaken
 
-- Signage and props for local campaigns.
-- Service parts and fixtures for production/maintenance.
-- Small cover series for electronics and IoT.
+We frequently deliver to: Kortenaken, Kortenaken city center, Hoeleden, Ransberg, Kersbeek-Miskom, Pickup in Herzele.
 
 ---
 
-## Practical
+## Where our 3D prints are used around Kortenaken
 
-- Upload STL/STEP via [contact](/en/contact) with quantities and finish.
-- Delivery on appointment; pickup in Herzele possible.
-- Optional sanding/priming for smooth visuals.
+- Prototypes and housings supporting teams in Kortenaken.
+- Small to large series with consistent settings for businesses near Hoeleden.
+- Replacement parts and brackets for workshops around Ransberg.
+- Promo models, signage and props for events in and around Kortenaken.
+- Brackets, guards and fixtures tuned for teams in Kortenaken.
+- Demo pieces and props for events near Kortenaken.
 
 ---
 
-## Request a quote
+## Spotlight: Kortenaken projects
 
-Send your files via [contact](/en/contact). You’ll quickly get a plan for **3D printing in Kortenaken**.
+- SMEs and industry near Kortenaken: fixtures, enclosures and small to large batches.
+- Common ask in Kortenaken: custom 3D printing with practical PLA/PETG/TPU advice for Ransberg.
+- Delivery focus: Kortenaken, Kortenaken city center, Hoeleden.
+
+---
+
+## Typical drop-off points near Kortenaken
+
+- Kortenaken town center
+- local business park in Kortenaken
+- sports hall in Kortenaken
+
+---
+
+## Teams we often help near Kortenaken
+
+- SMEs and industry near Kortenaken: fixtures, enclosures and small to large batches.
+- Retail/marketing/events in Kortenaken: displays, props and branded pieces.
+- Education and labs around Kortenaken: lesson-ready prints in PLA/PETG.
+
+---
+
+## Popular requests from Kortenaken
+
+- PLA or PETG functional parts for teams in Kortenaken.
+- TPU grips and pads for bikes, tools or fixtures around Hoeleden.
+- Paint-ready show models for presentations in Kortenaken and Hoeleden.
+
+---
+
+## Recommended materials for Kortenaken
+
+| Material       | Key trait                 | Ideal for                                             |
+| :------------- | :------------------------ | :---------------------------------------------------- |
+| **PLA Matte**  | Clean, detailed finish    | Models, decor, mockups for Kortenaken presentations       |
+| **PETG**       | Tough, heat resistant     | Functional parts, brackets, light outdoor use near Kortenaken |
+| **TPU**        | Flexible, shock absorbing | Grips, pads, bumpers for bikes or tools in Kortenaken     |
+
+---
+
+## How to order
+
+1. Upload STL/STEP via [contact](/en/contact).
+2. Note material (PLA/PETG/TPU), colour and quantity.
+3. Receive quote + timing within one business day.
+
+**Lead time:** usually a few working days; rush possible. Shipping to Kortenaken or pickup in Herzele.
+
+---
 
 ## FAQ about 3D printing in Kortenaken
 
-**Lead time?** A few working days; rush possible.  
-**Material for tooling?** PETG for strength, TPU for grip/damping.  
-**Repeat batches?** Yes, with saved slicer profiles.
+**Do you handle small to large batches?** Yes. We reuse calibrated profiles so repeat jobs stay consistent. Tell us the quantities you need.  
+**Typical tolerances?** Around +/-0.2 mm for most parts. Flag press-fits or sliding fits so we can tune clearance.  
+**Lead times?** Usually a few working days after approval; rush is possible. Shipping or pickup in Herzele.  
+**File formats?** STL or STEP. Add notes about function, visible faces and strength so we slice it correctly.  
+**Materials?** PLA Matte for visuals, PETG for strength and temp resistance, TPU for flex. ABS/ASA/nylon on request.
 
-## Local points
+---
 
-- Kortenaken center
-- Hoeleden and Ransberg
-- Kersbeek-Miskom
+## Quick links for Kortenaken teams
+
+- [Local 3D printing overview](/en/locaties)
+- [3D printing pillar](/en/3d-printen)
+- [Materials and advice](/en/materials#material-suggestion-tool)
+- [Pricing examples](/en/pricing)
+- [Request a quote](/en/contact)
+
+---
+
+## Request your quote for Kortenaken
+
+Send your files today and get a clear, fast proposal for **3D printing in Kortenaken**. Nearby production, personal support and reliable quality.
+
+<!-- LOCAL_ENRICH_START -->
+## Local highlights for Kortenaken
+
+- Coverage: Kortenaken, Kortenaken city center, Hoeleden, Ransberg, Kersbeek-Miskom, Pickup in Herzele; delivery from Herzele, pickup available.
+- Frequent jobs: prototypes, housings and brackets tailored for teams in Kortenaken.
+- File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
+- Turnaround: usually a few working days; rush possible on request.
+
+## Neighbouring pages
+- [Local 3D printing overview](/en/locaties)
+
+## Local spotlight
+- SMEs/industry near Kortenaken: prototypes, fixtures, housings.
+- Common request: 3D printing service in Kortenaken; we pick material and finish for the use case.
+- Delivery focus: Kortenaken, Kortenaken city center, Hoeleden.
+
+## Places we often deliver near Kortenaken
+- Kortenaken town center
+- local business park in Kortenaken
+- sports hall in Kortenaken
+
+## Industries we serve near Kortenaken
+- SMEs/industry near Kortenaken: prototypes, fixtures, housings.
+- Retail/marketing/events in Kortenaken: displays, signage, props.
+- Education/labs around Kortenaken: reliable PLA/PETG parts.
+
+## Popular searches from Kortenaken
+- 3D printing service in Kortenaken
+- Custom 3D printing in Kortenaken
+- 3D model printing in Kortenaken
+<!-- LOCAL_ENRICH_END -->

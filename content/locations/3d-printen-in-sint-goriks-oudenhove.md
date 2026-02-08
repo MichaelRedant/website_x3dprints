@@ -21,7 +21,7 @@ Voor Sint-Goriks-Oudenhove leveren we snel en denken we mee over sterkte en afwe
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Sint-Goriks-Oudenhove
 
@@ -99,8 +99,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Sint-Goriks-Oudenhove?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Sint-Goriks-Oudenhove?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Sint-Goriks-Oudenhove?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Zottegem
 - [3D printen in Zottegem](/3d-printen-in-zottegem)
@@ -134,7 +134,13 @@ Klaar om **3D printen in Sint-Goriks-Oudenhove** te proberen? Vraag een **gratis
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Sint-Goriks-Oudenhove
+- Centrum van Sint-Goriks-Oudenhove
+- Lokale bedrijvenzone in Sint-Goriks-Oudenhove
+- Sporthal in Sint-Goriks-Oudenhove
+
 
 ## Klantenspotlight
 - Lokale teams in Sint-Goriks-Oudenhove: kleine reeksen met vaste settings rond Sint-Goriks-Oudenhove.

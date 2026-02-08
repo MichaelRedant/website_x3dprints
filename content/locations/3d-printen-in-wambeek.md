@@ -24,7 +24,7 @@ Voor **3D printen in Wambeek** leveren we prototypes en functionele onderdelen r
 
 
 
-**Lokale touch:** afgestemd op landbouwers, lokale kmo's en pendel richting E40/Brusselse ring. Geschikt voor props, toolings en kleine series.
+**Lokale touch:** afgestemd op landbouwers, lokale kmo's en pendel richting E40/Brusselse ring. Geschikt voor props, toolings en zowel kleine als grotere series.
 
 
 
@@ -126,7 +126,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Wambeek
+- Centrum van Wambeek
+- Lokale bedrijvenzone in Wambeek
+- Sporthal in Wambeek
+
 
 ## Klantenspotlight
 - Lokale teams in Wambeek: kleine reeksen met vaste settings rond Wambeek.

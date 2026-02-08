@@ -32,7 +32,7 @@ Met **3D printen in Lennik** leveren we prototypes, behuizingen en tooling richt
 
 **Signage en props** voor lokale campagnes.  
 **Serviceparts en fixtures** voor productie/onderhoud.  
-**Kleine series covers** voor elektronica en IoT.
+**Kleine en grotere series covers** voor elektronica en IoT.
 
 ---
 
@@ -59,3 +59,37 @@ Stuur je bestanden via [contact](/contact). Je krijgt snel een voorstel voor **3
 - Lennik centrum
 - Sint-Kwintens-Lennik en Sint-Martens-Lennik
 - Eizeringen
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Lennik
+
+- Dekking: Lennik, Lennik centrum, Sint-Kwintens-Lennik, Sint-Martens-Lennik, Eizeringen, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Lennik.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Retail/events in Lennik en Pajottenland: PLA/PETG onderdelen afgestemd op projecten rond Lennik centrum.
+- Vaak gevraagd: 3D print service Lennik; we adviseren materiaal en afwerking.
+- Leverfocus: Lennik, Lennik centrum, Sint-Kwintens-Lennik.
+
+## Plaatsen waar we vaak leveren rond Lennik
+- Centrum van Lennik
+- Lokale bedrijvenzone in Lennik
+- Sporthal in Lennik
+
+## Sectoren die we vaak helpen in Lennik
+- Retail/events in Lennik en Pajottenland
+- KMO's en installateurs in de regio (Lennik)
+- Makers en onderwijs in Lennik
+
+## Veelgevraagde zoekopdrachten in Lennik
+- 3D print service Lennik
+- rapid prototyping Lennik
+- 3D printing bedrijf Lennik
+<!-- LOCAL_ENRICH_END -->

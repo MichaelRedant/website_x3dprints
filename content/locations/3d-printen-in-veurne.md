@@ -117,7 +117,13 @@ STL of STEP is ideaal. Als je enkel een schets of idee hebt, kunnen we helpen me
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Veurne
+- Centrum van Veurne
+- Lokale bedrijvenzone in Veurne
+- Sporthal in Veurne
+
 
 ## Klantenspotlight
 - Toerisme en musea rond Grote Markt en Vauban: kleine reeksen met vaste settings rond Grote Markt en Vaubanvesten.

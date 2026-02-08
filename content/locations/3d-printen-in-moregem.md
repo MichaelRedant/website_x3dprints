@@ -1,6 +1,6 @@
 # 3D printen in Moregem: lokale service met snelle levering
 
-**3D printen in Moregem** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Moregem** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Lokale focus in Moregem
 
-Werk je in Moregem? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Moregem.
+Werk je in Moregem? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Moregem.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -101,7 +101,6 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 - [3D printen in Wortegem-Petegem](/3d-printen-in-wortegem-petegem)
 - [3D printen in Wortegem](/3d-printen-in-wortegem)
 - [3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 ---
 
 ## Externe links
@@ -130,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Petegem-aan-de-Schelde](/3d-printen-in-petegem-aan-de-schelde)
 - [Buurpagina: 3D printen in Elsegem](/3d-printen-in-elsegem)
 
+
+
 ## Klantenspotlight
 - Lokale makers en ontwerpers: kleine reeksen met vaste settings rond Moregem centrum.
 - Vaak gevraagd: 3D print service Moregem; we adviseren materiaal en afwerking.
@@ -142,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectorfocus nabij Moregem
 - Lokale makers en ontwerpers (Moregem)
-- Kleine series en maatwerk (Moregem)
+- Kleine en grotere series en maatwerk (Moregem)
 - Verenigingen en onderwijs (Moregem)
 
 ## Typische aanvragen rond Moregem

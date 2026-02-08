@@ -32,7 +32,7 @@ Met **3D printen in Sterrebeek** leveren we prototypes, behuizingen en tooling v
 
 - Brackets en passtukken voor kantoren en installaties.
 - Signage en props voor lokale campagnes.
-- Kleine series covers en cases voor sensoren.
+- Kleine en grotere series covers en cases voor sensoren.
 
 ---
 
@@ -61,3 +61,37 @@ Stuur je files via [contact](/contact). Je krijgt snel een voorstel voor **3D pr
 - Leuvensesteenweg
 - Sterrebeeksebaan
 - Sterrebeek centrum
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Sterrebeek
+
+- Dekking: Sterrebeek, Sterrebeek centrum, N2/Leuvensesteenweg, Golf Tervuren rand, Sterrebeeksebaan, Afhalen Provincieweg 34a, 9552 Herzele; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sterrebeek.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Hoofdpagina: 3D printen in Zaventem](/3d-printen-in-zaventem)
+
+
+
+## Lokale spotlight
+- Kantoren en tech in Sterrebeek/Leuvensesteenweg: PLA/PETG onderdelen afgestemd op projecten rond Sterrebeek centrum.
+- Vaak gevraagd: 3D print service Sterrebeek; we adviseren materiaal en afwerking.
+- Leverfocus: Sterrebeek, Sterrebeek centrum, N2/Leuvensesteenweg.
+
+## Plaatsen waar we vaak leveren rond Sterrebeek
+- Centrum van Sterrebeek
+- Lokale bedrijvenzone in Sterrebeek
+- Sporthal in Sterrebeek
+
+## Sectoren die we vaak helpen in Sterrebeek
+- Kantoren en tech in Sterrebeek/Leuvensesteenweg
+- Retail en events in de Vlaamse Rand (Sterrebeek)
+- Installateurs en makers in Sterrebeek
+
+## Veelgevraagde zoekopdrachten in Sterrebeek
+- 3D print service Sterrebeek
+- rapid prototyping Sterrebeek
+- 3D printing bedrijf Sterrebeek
+<!-- LOCAL_ENRICH_END -->

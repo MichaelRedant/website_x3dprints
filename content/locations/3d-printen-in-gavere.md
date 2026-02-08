@@ -1,4 +1,4 @@
-# 3D printen in Gavere: precisie voor prototypes en kleine series
+# 3D printen in Gavere: precisie voor prototypes en zowel kleine als grotere series
 
 **3D printen in Gavere** is ideaal voor wie snel wil schakelen tussen ontwerp en test. X3DPrints levert vanuit Herzele met persoonlijke begeleiding, korte doorlooptijd en sterke materialen.
 
@@ -44,7 +44,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Gavere interessant?
 
 ### KMO's en zelfstandigen
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Creatieve bureaus
 Props, maquettes en presentatiemodellen met strakke details.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Vurste](/3d-printen-in-vurste)
 - [Buurpagina: 3D printen in Baaigem](/3d-printen-in-baaigem)
 - [Buurpagina: 3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+
+
 
 ## Klantenspotlight
 - KMO's en zelfstandigen in de Scheldevallei: kleine reeksen met vaste settings rond Gavere centrum.

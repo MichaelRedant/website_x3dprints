@@ -8,7 +8,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 export const metadata: Metadata = {
   title: "3D modeling for print | Fusion 360, Tinkercad, Blender",
   description:
-    "Print-ready 3D modeling. Fusion 360 for precise parts, Tinkercad for quick concepts and Blender for the occasional organic shape.",
+    "Print-ready 3D modeling for every 3d model print workflow. Fusion 360 for precise parts, Tinkercad for quick concepts and Blender for the occasional organic shape.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/3d-modelleren/",
     languages: {
@@ -120,6 +120,7 @@ export default function Page() {
             </h1>
             <p className="mt-3 max-w-3xl text-pretty text-slate-600">
               I create 3D models that are immediately ready for FDM printing. Fusion 360 for technical accuracy, Tinkercad for quick concepts and Blender only when organic shapes are needed. Your file stays printable without surprises in the slicer.
+              This is ideal when you need a 3d model print for functional parts or rapid iteration.
             </p>
             <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">

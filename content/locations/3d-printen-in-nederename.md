@@ -1,6 +1,6 @@
 # 3D printen in Nederename (Oudenaarde): vlot naar N60 en Schelde
 
-X3DPrints levert snelle 3D prints voor Nederename, ideaal voor kmo's en makers tussen Schelde en N60. Perfect voor prototypes, vervangstukken en kleine series.
+X3DPrints levert snelle 3D prints voor Nederename, ideaal voor kmo's en makers tussen Schelde en N60. Perfect voor prototypes, vervangstukken en zowel kleine als grotere series.
 
 ---
 
@@ -65,7 +65,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Nederename (Oudenaarde)
+- Centrum van Nederename (Oudenaarde)
+- Lokale bedrijvenzone in Nederename (Oudenaarde)
+- Sporthal in Nederename (Oudenaarde)
+
 
 ## Klantenspotlight
 - Lokale teams in Nederename (Oudenaarde): kleine reeksen met vaste settings rond Nederename (Oudenaarde).

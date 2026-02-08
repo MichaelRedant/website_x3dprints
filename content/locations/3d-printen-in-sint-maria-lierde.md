@@ -25,7 +25,7 @@
 
 Voor Sint-Maria-Lierde leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Sint-Maria-Magdalenakerk (Sint-Maria-Lierde) en Broeckemolen.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
 
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Deftinge](/3d-printen-in-deftinge)
 - [Buurpagina: 3D printen in Hemelveerdegem](/3d-printen-in-hemelveerdegem)
 
+
+
 ## Lokale spotlight
 - Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Sint-Maria-Lierde centrum.
 - Vaak gevraagd: 3D print service Sint-Maria-Lierde; we adviseren materiaal en afwerking.
@@ -141,7 +143,7 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 
 ## Sectoren die we vaak helpen in Sint-Maria-Lierde
 - Lokale makers en techniekers (Sint-Maria-Lierde)
-- Kleine series en maatwerk (Sint-Maria-Lierde)
+- Kleine en grotere series en maatwerk (Sint-Maria-Lierde)
 - Verenigingen en scholen (Sint-Maria-Lierde)
 
 ## Veelgevraagde zoekopdrachten in Sint-Maria-Lierde

@@ -93,8 +93,8 @@ Godveerdegem sluit direct aan op het stadscentrum en herbergt de Sint-Paulus-Bek
 
 ## Veelgestelde vragen over 3D printen in Godveerdegem
 
-**Kunnen jullie kleine series leveren in Godveerdegem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Godveerdegem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Godveerdegem?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -134,7 +134,13 @@ Wil je starten met **3D printen in Godveerdegem**? Vraag een **gratis offerte** 
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Godveerdegem
+- Centrum van Godveerdegem
+- Lokale bedrijvenzone in Godveerdegem
+- Sporthal in Godveerdegem
+
 
 ## Klantenspotlight
 - Lokale teams in Godveerdegem: kleine reeksen met vaste settings rond Godveerdegem.

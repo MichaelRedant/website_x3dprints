@@ -1,6 +1,6 @@
 # 3D printen in Nazareth-De Pinte: maatwerk in de Gentse rand
 
-**3D printen in Nazareth-De Pinte** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een strakke afwerking.
+**3D printen in Nazareth-De Pinte** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een strakke afwerking.
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Lokale focus in Nazareth-De Pinte
 
-Werk je in Nazareth-De Pinte? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Nazareth-De Pinte.
+Werk je in Nazareth-De Pinte? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Nazareth-De Pinte.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare timing.
+Maatwerk en zowel kleine als grotere series met betrouwbare timing.
 
 ### Scholen en verenigingen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -94,8 +94,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Nazareth-De Pinte?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Nazareth-De Pinte?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Nazareth-De Pinte?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Nazareth-De Pinte
 - [3D printen in Nazareth](/3d-printen-in-nazareth)
@@ -129,6 +129,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in De Pinte](/3d-printen-in-de-pinte)
 - [Buurpagina: 3D printen in Eke](/3d-printen-in-eke)
 - [Buurpagina: 3D printen in Zevergem](/3d-printen-in-zevergem)
+
+
 
 ## Spotlight rond Nazareth-De Pinte
 - KMO's en maakbedrijven in de Gentse rand: behuizingen en pasmallen voor teams in Nazareth.

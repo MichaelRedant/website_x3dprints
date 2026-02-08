@@ -18,7 +18,7 @@ const contactHref = "/contact?material=petg&quote=Materiaaladvies%20voor%20mijn%
 export const metadata: Metadata = {
   title: "Hoe kies je het juiste 3D print materiaal? | X3DPrints",
   description:
-    "Praktische beslisgids voor PLA, PETG en TPU op basis van gebruik, temperatuur en budget. Inclusief matrix, scenario's en snelle CTA route.",
+    "Praktische beslisgids voor 3d print materiaal: vergelijk 3d print materialen zoals PLA, PETG en TPU op basis van gebruik, temperatuur en budget.",
   alternates: { canonical },
   openGraph: {
     title: "Juiste 3D print materiaal kiezen",
@@ -229,6 +229,7 @@ export default function RightMaterialGuidePage() {
           </h1>
           <p className="max-w-3xl text-lg text-slate-700">
             Begin met de toepassing, niet met de kleur: zo kies je sneller tussen PLA, PETG en TPU zonder dure herprints.
+            Deze gids helpt je 3d print materialen vergelijken en het juiste materiaal voor 3d printen kiezen per use-case.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
             Laatst bijgewerkt: 6 februari 2026

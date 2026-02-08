@@ -35,7 +35,7 @@ We kennen de combinatie van events, toerisme en KMO's rond Beersel. Daardoor ste
 
 - Displays, badges en stands voor toerisme/events.
 - Montagehulpen en serviceparts voor KMO's langs E19.
-- Kleine series behuizingen en brackets voor installaties.
+- Kleine en grotere series behuizingen en brackets voor installaties.
 
 ---
 
@@ -67,3 +67,37 @@ Ja. We houden slicerprofielen bij zodat elke batch identiek blijft.
 - Kasteel van Beersel en centrum
 - Alsemberg en Huizingen
 - Lot en E19-corridor
+
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Beersel
+
+- Dekking: Beersel, Beersel centrum, Alsemberg, Huizingen, Lot, E19-corridor richting Brussel; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Beersel.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Lokale spotlight
+- Events en toerisme rond Kasteel van Beersel: PLA/PETG onderdelen afgestemd op projecten rond Beersel centrum.
+- Vaak gevraagd: 3D print service Beersel; we adviseren materiaal en afwerking.
+- Leverfocus: Beersel, Beersel centrum, Alsemberg.
+
+## Plaatsen waar we vaak leveren rond Beersel
+- Centrum van Beersel
+- Lokale bedrijvenzone in Beersel
+- Sporthal in Beersel
+
+## Sectoren die we vaak helpen in Beersel
+- Events en toerisme rond Kasteel van Beersel
+- KMO's en logistiek langs de E19 (Beersel)
+- Retail en makers in Beersel, Alsemberg en Huizingen
+
+## Veelgevraagde zoekopdrachten in Beersel
+- 3D print service Beersel
+- rapid prototyping Beersel
+- 3D printing bedrijf Beersel
+<!-- LOCAL_ENRICH_END -->

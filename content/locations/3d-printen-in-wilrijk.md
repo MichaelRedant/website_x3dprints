@@ -47,8 +47,8 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Wilrijk?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Wilrijk?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Wilrijk?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 
 
@@ -80,7 +80,13 @@ Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en aan
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Wilrijk
+- Centrum van Wilrijk
+- Lokale bedrijvenzone in Wilrijk
+- Sporthal in Wilrijk
+
 
 ## Spotlight rond Wilrijk
 - Onderwijs/UAntwerpen Drie Eiken: behuizingen en pasmallen voor teams in Wilrijk centrum.

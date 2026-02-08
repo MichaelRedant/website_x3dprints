@@ -1,6 +1,6 @@
 # 3D printen in Asper: maatwerk met duidelijke planning
 
-**3D printen in Asper** (Gavere) is ideaal voor prototypes, vervangstukken en kleine series. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
+**3D printen in Asper** (Gavere) is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking.
 
 ---
 
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -91,8 +91,8 @@ Test uw ontwerp snel en verbeter zonder lange wachttijden.
 **Welke bestanden kan ik aanleveren voor Asper?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Asper?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Asper?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Asper?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Gavere](/3d-printen-in-gavere)
 - [Buurpagina: 3D printen in Semmerzake](/3d-printen-in-semmerzake)
 - [Buurpagina: 3D printen in Dikkelvenne](/3d-printen-in-dikkelvenne)
+
+
 
 ## Lokale spotlight
 - Lokale makers en techniekers: PLA/PETG onderdelen afgestemd op projecten rond Asper centrum.

@@ -1,6 +1,6 @@
 # 3D printen in Leuven: campus, Vaartkom en maakplekken
 
-Voor **3D printen in Leuven** leveren we prototypes en kleine series richting de universiteitscampussen, Vaartkom en de bedrijvenparken langs de ring. Je krijgt strakke toleranties, snelle levering en materiaaladvies op maat.
+Voor **3D printen in Leuven** leveren we prototypes en zowel kleine als grotere series richting de universiteitscampussen, Vaartkom en de bedrijvenparken langs de ring. Je krijgt strakke toleranties, snelle levering en materiaaladvies op maat.
 
 ---
 
@@ -69,3 +69,37 @@ Ja. STL/STEP met eisen voor passing/afwerking volstaan. NDA op aanvraag.
 - KU Leuven en Arenbergcampus
 - imec Leuven
 - Vaartkom en Hal 5
+
+<!-- LOCAL_ENRICH_START -->
+## Leverdetails rond Leuven
+
+- Dekking: Leuven, Leuven centrum, Heverlee en Arenbergcampus, UZ Leuven Gasthuisberg, Haasrode Research-Park, Vaartkom; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Leuven.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Gerelateerde buurtpagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+
+
+## Klantenspotlight
+- Medtech en labs rond UZ Leuven en imec: kleine reeksen met vaste settings rond Leuven centrum.
+- Vaak gevraagd: 3D print service Leuven; we adviseren materiaal en afwerking.
+- Afhalen in Herzele; verzending naar Leuven en Leuven centrum.
+
+## Locaties die we bedienen nabij Leuven
+- Centrum van Leuven
+- Lokale bedrijvenzone in Leuven
+- Sporthal in Leuven
+
+## Sectorfocus nabij Leuven
+- Medtech en labs rond UZ Leuven en imec
+- Start-ups en productteams in Vaartkom en centrum (Leuven)
+- Onderwijs en studentenprojecten aan KU Leuven
+
+## Typische aanvragen rond Leuven
+- 3D print service Leuven
+- rapid prototyping Leuven
+- 3D printing bedrijf Leuven
+<!-- LOCAL_ENRICH_END -->

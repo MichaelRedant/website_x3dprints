@@ -42,7 +42,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Denderleeuw interessant?
 
 ### Lokale bedrijven en KMO's
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Techniek en onderhoud
 Vervangstukken die direct moeten passen en lang meegaan.
@@ -80,7 +80,7 @@ Test uw ontwerp snel en verbeter zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -89,8 +89,8 @@ Test uw ontwerp snel en verbeter zonder lange wachttijden.
 **Welke bestanden kan ik aanleveren voor Denderleeuw?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Denderleeuw?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Denderleeuw?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Denderleeuw?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -125,6 +125,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Iddergem](/3d-printen-in-iddergem)
 - [Buurpagina: 3D printen in Welle](/3d-printen-in-welle)
 - [Hoofdpagina: 3D printen in Aalst](/3d-printen-in-aalst)
+
+
 
 ## Lokale spotlight
 - Lokale KMO's en zelfstandigen: PLA/PETG onderdelen afgestemd op projecten rond Denderleeuw centrum.

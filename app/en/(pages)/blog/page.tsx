@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
-import BlogPage, { EN_METADATA } from "@/app/(pages)/blog/page"
+import BlogPage from "@/app/(pages)/blog/page"
+import { EN_METADATA } from "@/app/(pages)/blog/metadata.en"
 
 export const metadata: Metadata = EN_METADATA
 

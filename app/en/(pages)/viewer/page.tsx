@@ -12,7 +12,7 @@ import { buildHowToSchema } from "@/lib/seo"
 export const metadata: Metadata = {
   title: "Realtime 3D Model Viewer for STLs | X3DPrints",
   description:
-    "Upload an STL, OBJ or GLB and instantly preview your 3D print. Everything stays in your browser with validation, privacy and smooth interaction.",
+    "Upload an STL, OBJ or GLB and run fast 3D model print checks before quoting 3D print parts. Everything stays in-browser with validation, privacy and smooth interaction.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/viewer/",
     languages: {
@@ -110,10 +110,10 @@ export default function Page() {
               <span className="h-2 w-2 rounded-full bg-emerald-400" aria-hidden /> New: 3D preview
             </p>
             <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              See your 3D print in realtime, in the browser
+              See your 3D model and 3D print in realtime
             </h1>
             <p className="mt-6 text-lg text-slate-600">
-              Upload your 3D model and explore it in a polished WebGL viewer. No wait times, no server upload - just instant mesh insights and an experience in X3DPrints style.
+              Upload your 3D model and explore it in a polished WebGL viewer. Ideal for 3D model print checks and 3D print parts validation before local production. No wait times, no server upload.
             </p>
             <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <ul className="mt-8 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
@@ -186,7 +186,7 @@ export default function Page() {
           <Reveal className="rounded-3xl border border-slate-200/70 bg-white/80 p-8 shadow-lg">
             <h2 className="text-2xl font-semibold text-slate-900">From preview to print</h2>
             <p className="mt-4 max-w-2xl text-base text-slate-600">
-              Use the viewer as a quick sanity check. That way we can move faster together when you request a quote or custom project.
+              Use the viewer as a quick sanity check. That way we can move faster together when you request a quote or custom project with a 3D printing Gent production flow.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {workflow.map((item) => (

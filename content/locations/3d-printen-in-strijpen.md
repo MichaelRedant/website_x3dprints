@@ -19,7 +19,7 @@
 
 Voor Strijpen leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Strijpen en Strijpen.
 
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -134,7 +134,13 @@ Wil je zelf **3D printen in Strijpen** ervaren? Vraag een **gratis offerte** aan
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Strijpen
+- Centrum van Strijpen
+- Lokale bedrijvenzone in Strijpen
+- Sporthal in Strijpen
+
 
 ## Spotlight rond Strijpen
 - Lokale teams in Strijpen: behuizingen en pasmallen voor teams in Strijpen.

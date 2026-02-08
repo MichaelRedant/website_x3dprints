@@ -1,6 +1,6 @@
 # 3D printen in Zandbergen: Denderbrug en station
 
-Voor **3D printen in Zandbergen** levert X3DPrints prototypes en kleine series richting station Zandbergen, Denderbrug en bedrijven langs de N42. Je krijgt snelle levering en duidelijke prijzen.
+Voor **3D printen in Zandbergen** levert X3DPrints prototypes en zowel kleine als grotere series richting station Zandbergen, Denderbrug en bedrijven langs de N42. Je krijgt snelle levering en duidelijke prijzen.
 
 ---
 
@@ -22,7 +22,7 @@ Voor **3D printen in Zandbergen** levert X3DPrints prototypes en kleine series r
 In Zandbergen helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
 
 - Fixtures en passtukken voor controle en kalibratie.
-- Kleine series accessoires voor verkoop of promotie.
+- Kleine en grotere series accessoires voor verkoop of promotie.
 - Functionele beugels, houders en kabelgeleiders voor installaties.
 
 ## Materialen
@@ -39,7 +39,7 @@ In Zandbergen helpen we makers en bedrijven met 3D prints die vlot passen en lan
 
 - Sensor- of camerabehuizingen voor Denderprojecten.
 - Klemmen en hulpstukken voor rail- en overstappunten rond het station.
-- Displays en kleine series voor lokale winkels.
+- Displays en zowel kleine als grotere series voor lokale winkels.
 
 ---
 
@@ -77,7 +77,13 @@ De prijs hangt af van formaat, materiaal, laaghoogte en nabewerking. Bezorg je m
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Zandbergen
+- Centrum van Zandbergen
+- Lokale bedrijvenzone in Zandbergen
+- Sporthal in Zandbergen
+
 
 ## Spotlight rond Zandbergen
 - Lokale teams in Zandbergen: behuizingen en pasmallen voor teams in Zandbergen.

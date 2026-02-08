@@ -1,6 +1,6 @@
 # 3D printen in Schorisse: detailrijke prints op maat
 
-**3D printen in Schorisse** is ideaal voor prototypes, herstellingen en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een nette afwerking.
+**3D printen in Schorisse** is ideaal voor prototypes, herstellingen en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en een nette afwerking.
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Lokale focus in Schorisse
 
-Werk je in Schorisse? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Schorisse.
+Werk je in Schorisse? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Schorisse.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -101,7 +101,6 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 - [3D printen in Maarkedal](/3d-printen-in-maarkedal)
 - [3D printen in Nukerke](/3d-printen-in-nukerke)
 - [3D printen in Horebeke](/3d-printen-in-horebeke)
-- [3D printen in Oudenaarde](/3d-printen-in-oudenaarde)
 ---
 
 ## Externe links
@@ -129,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Nukerke](/3d-printen-in-nukerke)
 - [Buurpagina: 3D printen in Etikhove](/3d-printen-in-etikhove)
 - [Buurpagina: 3D printen in Maarke-Kerkem](/3d-printen-in-maarke-kerkem)
+
+
 
 ## Spotlight rond Schorisse
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Schorisse centrum.

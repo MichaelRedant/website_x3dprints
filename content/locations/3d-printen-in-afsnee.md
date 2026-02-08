@@ -38,7 +38,7 @@ Op aanvraag zijn ook ABS, ASA of Nylon mogelijk voor technische projecten.
 ## Voor wie is 3D printen in Afsnee interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven gebruiken **3D printen in Afsnee** om productideeën te testen en kleine series te produceren.
+Lokale bedrijven gebruiken **3D printen in Afsnee** om productideeën te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve bewoners zetten hun ideeën om in tastbare objecten met **3D printen in Afsnee**.
@@ -92,8 +92,8 @@ Met **rapid prototyping** via **3D printen in Afsnee** doorloop je sneller de on
 
 ## Veelgestelde vragen over 3D printen in Afsnee
 
-**Kunnen jullie kleine series leveren in Afsnee?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Afsnee?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Afsnee?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
@@ -102,7 +102,6 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Afsnee of afhalen in Herzele.
 
 ## Interne links rond 3D printen in Gent
-- [3D printen in Gent](/3d-printen-in-gent)
 - [3D printen in Desteldonk](/3d-printen-in-desteldonk)
 - [3D printen in Drongen](/3d-printen-in-drongen)
 - [3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
@@ -127,3 +126,40 @@ Benieuwd hoe **3D printen in Afsnee** jouw idee versterkt? Vraag een **gratis of
 
 ➡️ [Vraag een offerte aan](/contact) en ontdek de mogelijkheden van **3D printen in Afsnee**.
 
+<!-- LOCAL_ENRICH_START -->
+## Lokale accenten voor Afsnee
+
+- Dekking: Afsnee; levering vanuit Herzele, afhalen kan.
+- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Afsnee.
+- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
+- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+
+## Nabijgelegen pagina's
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Afsnee
+- Centrum van Afsnee
+- Lokale bedrijvenzone in Afsnee
+- Sporthal in Afsnee
+
+
+## Lokale spotlight
+- Lokale teams in Afsnee: PLA/PETG onderdelen afgestemd op projecten rond Afsnee.
+- Vaak gevraagd: 3D print service afsnee; we adviseren materiaal en afwerking.
+- Leverfocus: Afsnee.
+
+## Plaatsen waar we vaak leveren rond Afsnee
+- Centrum van Afsnee
+- Lokale bedrijvenzone in Afsnee
+- Sporthal in Afsnee
+
+## Sectoren die we vaak helpen in Afsnee
+- KMO's en makers in Afsnee: pasmallen en behuizingen.
+- Retail/events rond Afsnee: displays en props.
+- Onderwijs/labs in Afsnee: lesklare prints.
+
+## Veelgevraagde zoekopdrachten in Afsnee
+- 3D print service afsnee
+- rapid prototyping afsnee
+- 3D printing bedrijf afsnee
+<!-- LOCAL_ENRICH_END -->

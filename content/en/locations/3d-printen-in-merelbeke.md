@@ -15,7 +15,7 @@ Need **3D printing in Merelbeke**? X3DPrints prints in Herzele and ships quickly
 
 ## Delivery focus for Merelbeke
 
-We frequently deliver to: Merelbeke.
+We frequently deliver to: Merelbeke, Pickup in Herzele.
 
 ---
 
@@ -32,9 +32,9 @@ We frequently deliver to: Merelbeke.
 
 ## What stands out in Merelbeke
 
-- Local SMEs in Merelbeke: tailored PETG/PLA parts for teams around Merelbeke.
-- Common ask: 3D print service merelbeke; we advise material and finishing for Merelbeke.
-- Delivery focus: Merelbeke.
+- Manufacturing and SMEs around Merelbeke: prototypes, fixtures and housings.
+- Common ask in Merelbeke: custom 3D printing with practical PLA/PETG/TPU advice for Merelbeke.
+- Delivery focus: Merelbeke, Pickup in Herzele.
 
 ---
 
@@ -56,9 +56,9 @@ We frequently deliver to: Merelbeke.
 
 ## Recent requests around Merelbeke
 
-- Paint-ready show models for presentations in Merelbeke and Merelbeke.
+- Paint-ready show models for presentations in Merelbeke and the surrounding area.
 - PLA or PETG functional parts for teams in Merelbeke.
-- TPU grips and pads for bikes, tools or fixtures around Merelbeke.
+- TPU grips and pads for bikes, tools or fixtures around the surrounding area.
 
 ---
 
@@ -94,10 +94,7 @@ We frequently deliver to: Merelbeke.
 
 ## Useful links near Merelbeke
 
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
-- [3D printing in Antwerp](/en/3d-printen-in-antwerpen)
-- [3D printing in Oudenaarde](/en/3d-printen-in-oudenaarde)
+- [Local 3D printing overview](/en/locaties)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +109,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Merelb
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Merelbeke
 
-- Coverage: Merelbeke; delivery from Herzele, pickup available.
+- Coverage: Merelbeke, Pickup in Herzele; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Merelbeke.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -124,8 +121,8 @@ Send your files today and get a clear, fast proposal for **3D printing in Merelb
 - [Parent page: 3D printing in Eke](/en/3d-printen-in-eke)
 
 ## Customer spotlight
-- Local teams in Merelbeke: small batches with consistent settings near Merelbeke.
-- Common request: 3D print service merelbeke; we pick material and finish for the use case.
+- SMEs and makers in Merelbeke: fixtures and enclosures.
+- Common request: 3D printing service in Merelbeke; we pick material and finish for the use case.
 - Pickup in Herzele; shipping to Merelbeke and Merelbeke.
 
 ## Where we drop off near Merelbeke
@@ -139,7 +136,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Merelb
 - Education/labs around Merelbeke: lesson-ready prints.
 
 ## Common requests around Merelbeke
-- 3D print service merelbeke
-- rapid prototyping merelbeke
-- 3D printing bedrijf merelbeke
+- 3D printing service in Merelbeke
+- Custom 3D printing in Merelbeke
+- 3D model printing in Merelbeke
 <!-- LOCAL_ENRICH_END -->

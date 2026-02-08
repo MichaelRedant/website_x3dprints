@@ -22,7 +22,7 @@
 
 ## Lokale focus in Bazel
 
-Werk je in Bazel? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Kasteel Wissekerke.
+Werk je in Bazel? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Kasteel Wissekerke.
 
 - Maquettes en detailmodellen voor erfgoed en presentaties.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -43,13 +43,13 @@ Meer info over materialen vindt u op [materialen](/materials).
 ## Voor wie is 3D printen in Bazel interessant?
 
 ### Lokale ondernemers
-Maatwerk onderdelen en kleine series met snelle levering.
+Maatwerk onderdelen en zowel kleine als grotere series met snelle levering.
 
 ### Makers en hobbyisten
 Creatieve projecten en snelle iteraties.
 
 ### Verenigingen
-Kleine series, displays en hulpmiddelen op maat.
+Kleine en grotere series, displays en hulpmiddelen op maat.
 
 ---
 
@@ -81,7 +81,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -127,6 +127,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Rupelmonde](/3d-printen-in-rupelmonde)
 - [Buurpagina: 3D printen in Burcht](/3d-printen-in-burcht)
 - [Hoofdpagina: 3D printen in Beveren-Kruibeke-Zwijndrecht](/3d-printen-in-beveren-kruibeke-zwijndrecht)
+
+
 
 ## Klantenspotlight
 - Lokale ondernemers en techniekers: kleine reeksen met vaste settings rond Bazel centrum.

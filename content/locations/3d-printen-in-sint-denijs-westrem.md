@@ -17,11 +17,11 @@
 
 ## Lokale focus in Sint-Denijs-Westrem
 
-Werk je in Sint-Denijs-Westrem? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Sint-Denijs-Westrem.
+Werk je in Sint-Denijs-Westrem? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Denijs-Westrem.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Sint-Denijs-Westrem
 
@@ -38,7 +38,7 @@ Op aanvraag zijn ook ABS, ASA of Nylon mogelijk voor technische projecten.
 ## Voor wie is 3D printen in Sint-Denijs-Westrem interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven gebruiken **3D printen in Sint-Denijs-Westrem** om productideeën te testen en kleine series te produceren.
+Lokale bedrijven gebruiken **3D printen in Sint-Denijs-Westrem** om productideeën te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve bewoners zetten hun ideeën om in tastbare objecten met **3D printen in Sint-Denijs-Westrem**.
@@ -98,11 +98,10 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 **Welke bestanden kan ik aanleveren voor Sint-Denijs-Westrem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Sint-Denijs-Westrem?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Sint-Denijs-Westrem?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 ## Interne links rond 3D printen in Gent
-- [3D printen in Gent](/3d-printen-in-gent)
 - [3D printen in Desteldonk](/3d-printen-in-desteldonk)
 - [3D printen in Drongen](/3d-printen-in-drongen)
 - [3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
@@ -136,7 +135,13 @@ Benieuwd hoe **3D printen in Sint-Denijs-Westrem** jouw idee versterkt? Vraag ee
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Sint-Denijs-Westrem
+- Centrum van Sint-Denijs-Westrem
+- Lokale bedrijvenzone in Sint-Denijs-Westrem
+- Sporthal in Sint-Denijs-Westrem
+
 
 ## Klantenspotlight
 - Lokale teams in Sint-Denijs-Westrem: kleine reeksen met vaste settings rond Sint-Denijs-Westrem.

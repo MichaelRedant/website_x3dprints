@@ -17,7 +17,7 @@
 
 ## Lokale focus in Mendonk
 
-Werk je in Mendonk? We maken prototypes en kleine series die meteen inzetbaar zijn, met levering richting Mendonk.
+Werk je in Mendonk? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Mendonk.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Pasmallen en sjablonen voor montage en assemblage.
@@ -38,7 +38,7 @@ Op aanvraag zijn ook ABS, ASA of Nylon mogelijk voor technische projecten.
 ## Voor wie is 3D printen in Mendonk interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven gebruiken **3D printen in Mendonk** om productideeën te testen en kleine series te produceren.
+Lokale bedrijven gebruiken **3D printen in Mendonk** om productideeën te testen en zowel kleine als grotere series te produceren.
 
 ### Makers en hobbyisten
 Creatieve bewoners zetten hun ideeën om in tastbare objecten met **3D printen in Mendonk**.
@@ -95,14 +95,13 @@ Met **rapid prototyping** via **3D printen in Mendonk** doorloop je sneller de o
 **Welke bestanden kan ik aanleveren voor Mendonk?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
 
-**Kunnen jullie kleine series leveren in Mendonk?**
-Ja. We maken kleine series met consistente passing en duidelijke kwaliteitsspecificaties.
+**Kunnen jullie kleine en grotere series leveren in Mendonk?**
+Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
 
 **Welk materiaal past het best bij een project in Mendonk?**
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 ## Interne links rond 3D printen in Gent
-- [3D printen in Gent](/3d-printen-in-gent)
 - [3D printen in Desteldonk](/3d-printen-in-desteldonk)
 - [3D printen in Drongen](/3d-printen-in-drongen)
 - [3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
@@ -136,7 +135,13 @@ Benieuwd hoe **3D printen in Mendonk** jouw idee versterkt? Vraag een **gratis o
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Gerelateerde buurtpagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Mendonk
+- Centrum van Mendonk
+- Lokale bedrijvenzone in Mendonk
+- Sporthal in Mendonk
+
 
 ## Klantenspotlight
 - Lokale teams in Mendonk: kleine reeksen met vaste settings rond Mendonk.

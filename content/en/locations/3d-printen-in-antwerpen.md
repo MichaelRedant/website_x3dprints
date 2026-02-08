@@ -1,12 +1,12 @@
 # 3D printing in Antwerpen: local, fast and tailored
 
-Need **3D printing in Antwerpen**? X3DPrints prints in Herzele and ships quickly to Antwerpen and nearby Antwerpen centrum. Local 3D printing for Antwerpen, Antwerpen centrum and Linkeroever, Berchem, Borgerhout: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Antwerpen**? X3DPrints prints in Herzele and ships quickly to Antwerpen and nearby Linkeroever. Local 3D printing for Antwerpen, Linkeroever and Berchem, Borgerhout: PLA, PETG and TPU with optional finishing and quick delivery.
 
 ---
 
 ## Why Antwerpen teams choose us
 
-- Local delivery to Antwerpen, Antwerpen centrum and Linkeroever, Berchem, Borgerhout; pickup in Herzele.
+- Local delivery to Antwerpen, Linkeroever and Berchem, Borgerhout; pickup in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Antwerpen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -15,15 +15,15 @@ Need **3D printing in Antwerpen**? X3DPrints prints in Herzele and ships quickly
 
 ## Delivery focus for Antwerpen
 
-We frequently deliver to: Antwerpen, Antwerpen centrum, Linkeroever, Berchem, Borgerhout, Haven, Afhalen Herzele.
+We frequently deliver to: Antwerpen, Antwerpen city center, Linkeroever, Berchem, Borgerhout, Haven, Pickup in Herzele.
 
 ---
 
 ## What teams near Antwerpen ask us to make
 
 - Pilot runs for SMEs around Antwerpen, tuned per fit/finish.
-- Functional PETG parts for maintenance teams near Antwerpen centrum.
-- TPU dampers and grips for gear used in Linkeroever.
+- Functional PETG parts for maintenance teams near Linkeroever.
+- TPU dampers and grips for gear used in Berchem.
 - Presentation models and mockups for pitches around Antwerpen.
 - Brackets, guards and fixtures tuned for teams in Antwerpen.
 - Demo pieces and props for events near Antwerpen.
@@ -32,9 +32,9 @@ We frequently deliver to: Antwerpen, Antwerpen centrum, Linkeroever, Berchem, Bo
 
 ## What stands out in Antwerpen
 
-- Haven/logistiek tools: tailored PETG/PLA parts for teams around Antwerpen centrum.
-- Common ask: 3D print service Antwerpen; we advise material and finishing for Linkeroever.
-- Delivery focus: Antwerpen, Antwerpen centrum, Linkeroever.
+- Local teams in Antwerpen: custom 3D printing for prototypes and functional parts.
+- Common ask in Antwerpen: custom 3D printing with practical PLA/PETG/TPU advice for Berchem.
+- Delivery focus: Antwerpen, Antwerpen city center, Linkeroever.
 
 ---
 
@@ -48,7 +48,7 @@ We frequently deliver to: Antwerpen, Antwerpen centrum, Linkeroever, Berchem, Bo
 
 ## Sectors we back near Antwerpen
 
-- Local projects in Antwerpen: Haven/logistiek tools
+- Local teams in Antwerpen: custom 3D printing for prototypes and functional parts.
 - Retail/marketing/events in Antwerpen: displays, props and branded pieces.
 - Education and labs around Antwerpen: lesson-ready prints in PLA/PETG.
 
@@ -56,9 +56,9 @@ We frequently deliver to: Antwerpen, Antwerpen centrum, Linkeroever, Berchem, Bo
 
 ## Recent requests around Antwerpen
 
-- Paint-ready show models for presentations in Antwerpen and Antwerpen centrum.
+- Paint-ready show models for presentations in Antwerpen and Linkeroever.
 - PLA or PETG functional parts for teams in Antwerpen.
-- TPU grips and pads for bikes, tools or fixtures around Antwerpen centrum.
+- TPU grips and pads for bikes, tools or fixtures around Linkeroever.
 
 ---
 
@@ -96,8 +96,6 @@ We frequently deliver to: Antwerpen, Antwerpen centrum, Linkeroever, Berchem, Bo
 
 - [3D printing in Berchem](/en/3d-printen-in-berchem)
 - [3D printing in Borgerhout](/en/3d-printen-in-borgerhout)
-- [3D printing in Ghent](/en/3d-printen-in-gent)
-- [3D printing in Aalst](/en/3d-printen-in-aalst)
 - [3D printing pillar](/en/3d-printen)
 - [Materials and advice](/en/materials#material-suggestion-tool)
 - [Pricing examples](/en/pricing)
@@ -112,7 +110,7 @@ Send your files today and get a clear, fast proposal for **3D printing in Antwer
 <!-- LOCAL_ENRICH_START -->
 ## Delivery details around Antwerpen
 
-- Coverage: Antwerpen, Antwerpen centrum, Linkeroever, Berchem, Borgerhout, Haven; delivery from Herzele, pickup available.
+- Coverage: Antwerpen, Antwerpen city center, Linkeroever, Berchem, Borgerhout, Haven; delivery from Herzele, pickup available.
 - Frequent jobs: prototypes, housings and brackets tailored for teams in Antwerpen.
 - File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
 - Turnaround: usually a few working days; rush possible on request.
@@ -122,9 +120,9 @@ Send your files today and get a clear, fast proposal for **3D printing in Antwer
 - [Nearby: 3D printing in Borgerhout](/en/3d-printen-in-borgerhout)
 
 ## Customer spotlight
-- Haven/logistiek tools: small batches with consistent settings near Antwerpen centrum.
-- Common request: 3D print service Antwerpen; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Antwerpen and Antwerpen centrum.
+- Local teams in Antwerpen: custom 3D printing for prototypes and functional parts.
+- Common request: 3D printing service in Antwerpen; we pick material and finish for the use case.
+- Pickup in Herzele; shipping to Linkeroever and Berchem.
 
 ## Where we drop off near Antwerpen
 - Antwerpen town center
@@ -132,12 +130,12 @@ Send your files today and get a clear, fast proposal for **3D printing in Antwer
 - sports hall in Antwerpen
 
 ## Sectors we back near Antwerpen
-- Local focus: Haven/logistiek tools
+- Local teams in Antwerpen: custom 3D printing for prototypes and functional parts.
 - Retail/marketing/events in Antwerpen: displays, signage, props.
 - Education/labs around Antwerpen: reliable PLA/PETG parts.
 
 ## Common requests around Antwerpen
-- 3D print service Antwerpen
-- rapid prototyping Antwerpen
-- 3D printing bedrijf Antwerpen
+- 3D printing service in Antwerpen
+- Custom 3D printing in Antwerpen
+- 3D model printing in Antwerpen
 <!-- LOCAL_ENRICH_END -->

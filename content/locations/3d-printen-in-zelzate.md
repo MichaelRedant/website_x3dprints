@@ -1,6 +1,6 @@
 # 3D printen in Zelzate: maatwerk aan het kanaal Gent-Terneuzen
 
-**3D printen in Zelzate** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten langs het kanaal.
+**3D printen in Zelzate** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten langs het kanaal.
 
 ---
 
@@ -45,7 +45,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -80,7 +80,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -126,6 +126,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Evergem](/3d-printen-in-evergem)
 - [Buurpagina: 3D printen in Wachtebeke](/3d-printen-in-wachtebeke)
 - [Buurpagina: 3D printen in Assenede](/3d-printen-in-assenede)
+
+
 
 ## Lokale spotlight
 - Lokale makers en ontwerpers: PLA/PETG onderdelen afgestemd op projecten rond Zelzate centrum.

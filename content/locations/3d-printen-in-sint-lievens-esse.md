@@ -17,7 +17,7 @@ X3DPrints is een **Herzeelse handelaar** en **100% Belgische 3D printstudio**. W
 In Sint-Lievens-Esse combineren we detailwerk met functionele onderdelen; je krijgt snelle iteraties en een duidelijke offerte.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine series onderdelen met consistente passing.
+- Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Sint-Lievens-Esse
@@ -36,7 +36,7 @@ Met PLA printen in Sint-Lievens-Esse levert perfecte maquettes of prototypes. PE
 
 ### Ondernemers en zelfstandigen
 - Productontwikkeling versnellen met prototypes  
-- Kleine series rendabel produceren  
+- Kleine en grotere series rendabel produceren  
 - Maatwerkonderdelen op aanvraag  
 
 ### Makers en hobbyisten
@@ -134,7 +134,13 @@ Wil je je idee tastbaar maken? Vraag vandaag nog een **offerte voor 3D printen i
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Dichtbij gelegen locaties
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Sint-Lievens-Esse
+- Centrum van Sint-Lievens-Esse
+- Lokale bedrijvenzone in Sint-Lievens-Esse
+- Sporthal in Sint-Lievens-Esse
+
 
 ## Spotlight rond Sint-Lievens-Esse
 - Lokale teams in Sint-Lievens-Esse: behuizingen en pasmallen voor teams in Sint-Lievens-Esse.

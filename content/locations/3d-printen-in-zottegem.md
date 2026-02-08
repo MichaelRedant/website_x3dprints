@@ -40,7 +40,7 @@ Op aanvraag leveren we ook ABS, ASA, Nylon of PA-CF voor technische projecten. W
 ## Voor wie is 3D printen in Zottegem interessant?
 
 ### Ondernemers en zelfstandigen
-Lokale bedrijven gebruiken **3D printen in Zottegem** om prototypes te testen, kleine series te produceren en maatwerk te leveren aan klanten.
+Lokale bedrijven gebruiken **3D printen in Zottegem** om prototypes te testen, kleine en grotere series te produceren en maatwerk te leveren aan klanten.
 
 ### Makers en hobbyisten
 Creatieve bewoners kiezen voor **3D printen in Zottegem** om unieke gadgets, reparaties en personalisaties uit te voeren zonder de stad te verlaten.
@@ -193,7 +193,13 @@ Met deze FAQ wordt duidelijk hoe toegankelijk, flexibel en voordelig **3D printe
 - Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
 
 ## Nabijgelegen pagina's
-- [3D printen in Gent](/3d-printen-in-gent)
+- [Overzicht lokale 3D print pagina's](/locaties)
+
+## Lokale punten in Zottegem
+- Centrum van Zottegem
+- Lokale bedrijvenzone in Zottegem
+- Sporthal in Zottegem
+
 
 ## Lokale spotlight
 - Lokale teams in Zottegem: PLA/PETG onderdelen afgestemd op projecten rond Zottegem.

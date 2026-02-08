@@ -1,6 +1,6 @@
 # 3D printen in Zulte: maatwerk langs de Leie
 
-**3D printen in Zulte** is ideaal voor prototypes, vervangstukken en kleine series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten langs de Leie.
+**3D printen in Zulte** is ideaal voor prototypes, vervangstukken en zowel kleine als grotere series met korte doorlooptijd. X3DPrints levert vanuit Herzele met persoonlijk advies en strakke afwerking voor projecten langs de Leie.
 
 ---
 
@@ -25,7 +25,7 @@
 
 In Zulte helpen we projecten rond Zulte sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
 
-- Kleine series onderdelen voor projecten langs de Leie.
+- Kleine en grotere series onderdelen voor projecten langs de Leie.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 
@@ -47,7 +47,7 @@ Meer info over materialen vindt u op [materialen](/materials).
 Snelle iteraties met duidelijke feedback en strakke prints.
 
 ### KMO's en zelfstandigen
-Maatwerk en kleine series met betrouwbare planning.
+Maatwerk en zowel kleine als grotere series met betrouwbare planning.
 
 ### Verenigingen en scholen
 Projecten met heldere afspraken en korte doorlooptijd.
@@ -82,7 +82,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - Prototypes en producttests
 - Onderdelen voor herstellingen
 - Presentatiemodellen
-- Kleine series voor lokale handel
+- Kleine en grotere series voor lokale handel
 
 ---
 
@@ -128,6 +128,8 @@ Vraag een vrijblijvende offerte aan via [contact](/contact).
 - [Buurpagina: 3D printen in Machelen (Zulte)](/3d-printen-in-machelen-zulte)
 - [Buurpagina: 3D printen in Olsene](/3d-printen-in-olsene)
 - [Buurpagina: 3D printen in Astene](/3d-printen-in-astene)
+
+
 
 ## Spotlight rond Zulte
 - Lokale makers en ontwerpers: behuizingen en pasmallen voor teams in Zulte centrum.
