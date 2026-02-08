@@ -1,10 +1,31 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/tool-organizers-3d-printing/"
 const publishedDate = "2026-01-29T08:00:00+01:00"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
+
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
+  },
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
 
 export const metadata: Metadata = {
   title: "3D printing tool organizers: Gridfinity, Packout, TSTAK & custom | X3DPrints",
@@ -32,6 +53,16 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "3D printing tool organizers: Gridfinity, Packout, TSTAK & custom",
+  description: metadata.description ?? "",
+  datePublished: publishedDate,
+  dateModified,
+  image: "/images/og-home.jpg",
+  inLanguage: "en-BE",
+})
+
 export default function ToolOrganizersBlogEn() {
   return (
     <main className="px-6 pb-16 sm:px-8 lg:px-12">
@@ -42,11 +73,11 @@ export default function ToolOrganizersBlogEn() {
             3D printing tool organizers: Gridfinity, Packout, TSTAK and custom
           </h1>
           <p className="text-lg text-slate-700 dark:text-slate-200">
-            Choose the right system, send a great intake and receive an organizer that doesnâ€™t rattle. Includes tips for labels,
+            Choose the right system, send a great intake and receive an organizer that doesn’t rattle. Includes tips for labels,
             anti-slip and material choice.
           </p>
           <div className="flex flex-wrap gap-3 text-sm text-slate-600">
-            <span>Last update: 29 January 2026</span>
+            <span>{lastUpdatedLabel}</span>
             <span className="inline-flex items-center gap-1 rounded-full bg-indigo-50 px-2 py-1 text-xs font-semibold text-indigo-700 ring-1 ring-indigo-100">
               Gridfinity alternative
             </span>
@@ -105,7 +136,7 @@ export default function ToolOrganizersBlogEn() {
             <div>
               <p className="text-sm font-semibold text-indigo-700">Milwaukee Packout</p>
               <p className="text-sm text-slate-700 dark:text-slate-200">
-                Built for pros and vans. Inserts are snug and anti-slip so batteries/chargers donâ€™t move. Fits Organizer (48-22-8435),
+                Built for pros and vans. Inserts are snug and anti-slip so batteries/chargers don’t move. Fits Organizer (48-22-8435),
                 Low-Profile (8431) and Compact (8436).
               </p>
             </div>
@@ -118,7 +149,7 @@ export default function ToolOrganizersBlogEn() {
             <div>
               <p className="text-sm font-semibold text-indigo-700">Custom / pegboard / Skadis</p>
               <p className="text-sm text-slate-700 dark:text-slate-200">
-                For everything that doesnâ€™t fit standard: photo + dimensions are enough. We also print add-ons for IKEA Skadis (hooks,
+                For everything that doesn’t fit standard: photo + dimensions are enough. We also print add-ons for IKEA Skadis (hooks,
                 bins, cable clips) and magnetic labels for pegboards.
               </p>
             </div>
@@ -151,7 +182,7 @@ export default function ToolOrganizersBlogEn() {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-slate-900">Label zones and colour coding</h2>
           <p className="text-slate-700 dark:text-slate-200">
-            Label edges and colour caps speed up putting tools back. For Packout/TSTAK we respect IP65 lids and height so labels donâ€™t
+            Label edges and colour caps speed up putting tools back. For Packout/TSTAK we respect IP65 lids and height so labels don’t
             snag. We can engrave text in-print or create recessed areas for tapes/laser labels.
           </p>
         </section>
@@ -248,7 +279,27 @@ export default function ToolOrganizersBlogEn() {
 
         <OrganizerCta locale="en" />
       </article>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
     </main>
   )
 }
+
+
 

@@ -1,4 +1,4 @@
-﻿// app/(pages)/services/page.tsx
+// app/(pages)/services/page.tsx
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -31,9 +31,9 @@ import { localizeHref } from "@/lib/i18n/paths"
 import { servicesFaqByLocale } from "@/content/services-faq"
 
 const NL_METADATA: Metadata = {
-  title: "3D print service BelgiÃ« | 3D printen op maat | X3DPrints",
+  title: "3D print service België | 3D printen op maat | X3DPrints",
   description:
-    "Lokale FDM 3D print service BelgiÃ« vanuit Herzele (regio Gent). 3D printen op maat in PLA, PETG of TPU voor prototypes en kleine reeksen.",
+    "Lokale FDM 3D print service België vanuit Herzele (regio Gent). 3D printen op maat in PLA, PETG of TPU voor prototypes en kleine reeksen.",
   alternates: {
     canonical: "https://www.x3dprints.be/services/",
     languages: {
@@ -43,7 +43,7 @@ const NL_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "3D print service BelgiÃ« vanuit Herzele",
+    title: "3D print service België vanuit Herzele",
     description:
       "3D printen op maat voor klanten in Gent, Aalst en Vlaanderen. Kleine en grotere oplages, snelle opvolging en realistisch materiaaladvies.",
     url: "https://www.x3dprints.be/services/",
@@ -53,7 +53,7 @@ const NL_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D print service BelgiÃ«",
+    title: "3D print service België",
     description:
       "3D printen op maat vanuit Herzele. Kleine en grotere oplages met snelle opvolging en transparante communicatie.",
     images: ["/images/portfolio/20241030_080710-1.jpg"],
@@ -98,10 +98,10 @@ export const metadata: Metadata = NL_METADATA
 const SERVICES_COPY_NL = {
   meta: {
     description:
-      "Lokale FDM 3D print service BelgiÃ« vanuit Herzele (regio Gent). 3D printen op maat in PLA, PETG of TPU voor prototypes en kleine reeksen.",
+      "Lokale FDM 3D print service België vanuit Herzele (regio Gent). 3D printen op maat in PLA, PETG of TPU voor prototypes en kleine reeksen.",
   },
   hero: {
-    title: "3D print service in BelgiÃ« vanuit Herzele",
+    title: "3D print service in België vanuit Herzele",
     intro:
       "X3DPrints is een eenmansstudio in bijberoep. Wil je een 3D model laten printen? Je spreekt rechtstreeks met de maker, krijgt eerlijke planning (meestal enkele werkdagen) en materiaaladvies dat past bij jouw project en budget in regio Gent en de rest van Vlaanderen. Ook voor 3D print bedrijven die tijdelijk capaciteit zoeken zijn we een flexibel 3D printen bedrijf voor pieken en kleine reeksen.",
     ctas: {
@@ -703,12 +703,12 @@ export default function Page({ locale }: PageProps) {
   const references = isEn
     ? [
         { label: "ISO/ASTM 52900 terminology for additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
-        { label: "Prusa materials overview (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "Prusa materials overview (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
         { label: "All3DP FDM process explainer", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
       ]
     : [
         { label: "ISO/ASTM 52900 terminologie voor additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
-        { label: "Prusa materialenoverzicht (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "Prusa materialenoverzicht (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
         { label: "All3DP uitleg van het FDM-proces", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
       ]
   const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"

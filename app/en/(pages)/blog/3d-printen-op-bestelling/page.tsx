@@ -11,7 +11,8 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-op-bestelling/"
 const nlCanonical = "https://www.x3dprints.be/blog/3d-printen-op-bestelling/"
 const datePublished = "2024-05-20"
-const dateModified = "2026-02-07"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 const pricingHref = "/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=order-on-demand-en"
 const materialsHref = "/en/materials#material-suggestion-tool"
 const viewerHref = "/en/viewer?utm_source=blog&utm_medium=cta&utm_campaign=order-on-demand-en"
@@ -113,15 +114,14 @@ const references = [
   },
   {
     label: "Prusa material guide",
-    href: "https://help.prusa3d.com/article/material-guide_220",
+    href: "https://help.prusa3d.com/filament-material-guide",
   },
 ]
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "3D printing on demand",
-  description:
-    "Practical guide to ordering 3D prints on demand with intake, material choices and repeat-order strategy.",
+  description: metadata.description ?? "",
   datePublished,
   dateModified,
   image: "/Logo.webp",
@@ -248,7 +248,8 @@ export default function OrderArticleEnPage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-5 flex flex-wrap gap-3">
+                          <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <div className="mt-5 flex flex-wrap gap-3">
                 <ShimmerButton
                   href={pricingHref}
                   event={{ action: "cta_click", category: "blog_order_en_mid", label: "pricing" }}
@@ -331,3 +332,5 @@ export default function OrderArticleEnPage() {
     </main>
   )
 }
+
+

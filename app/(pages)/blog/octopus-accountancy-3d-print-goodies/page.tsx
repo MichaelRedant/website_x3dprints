@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import GlassCard from "@/components/GlassCard"
@@ -7,11 +7,13 @@ import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
 import { normalizeLocale } from "@/lib/i18n/locales"
-import { localizeHref } from "@/lib/i18n/paths"
+import { localizeHref } from "@/lib/i18n/paths"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const NL_CANONICAL = "https://www.x3dprints.be/blog/octopus-accountancy-3d-print-goodies"
 const EN_CANONICAL = "https://www.x3dprints.be/en/blog/octopus-accountancy-3d-print-goodies"
 const PUBLISHED_DATE = "2025-12-16T08:00:00+01:00"
+const DATE_MODIFIED = "2026-02-08"
 
 const OG_IMAGE = {
   url: "/images/portfolio/Octopus25-50.webp",
@@ -209,6 +211,32 @@ const COPY = {
         },
       ],
     },
+    sources: {
+      title: "Bronnen en referenties",
+      intro: "Referenties bij de gebruikte materialen en QR-praktijk in deze case.",
+      items: [
+        {
+          label: "Octopus - officiële site",
+          href: "https://www.octopus.be",
+          description: "Achtergrond bij het Octopus platform en merk.",
+        },
+        {
+          label: "DENSO WAVE - QR Code basics",
+          href: "https://www.qrcode.com/en/howto/cell.html",
+          description: "Uitleg over module size en leesbaarheid van QR codes.",
+        },
+        {
+          label: "UltiMaker PLA material properties",
+          href: "https://ultimaker.com/materials/pla/",
+          description: "Materiaalinformatie over PLA.",
+        },
+        {
+          label: "Prusament PETG material",
+          href: "https://prusament.com/materials/petg/",
+          description: "PETG materiaalfiche en printadvies.",
+        },
+      ],
+    },
     cta: {
       kicker: "Ook zoiets nodig?",
       title: "Merch of event-kits die mensen echt gebruiken",
@@ -393,6 +421,32 @@ const COPY = {
         },
       ],
     },
+    sources: {
+      title: "Sources and references",
+      intro: "References for the materials and QR usage mentioned in this case.",
+      items: [
+        {
+          label: "Octopus - official site",
+          href: "https://www.octopus.be",
+          description: "Background on the Octopus platform and brand.",
+        },
+        {
+          label: "DENSO WAVE - QR Code basics",
+          href: "https://www.qrcode.com/en/howto/cell.html",
+          description: "Module size and readability guidance for QR codes.",
+        },
+        {
+          label: "UltiMaker PLA material properties",
+          href: "https://ultimaker.com/materials/pla/",
+          description: "PLA material overview and properties.",
+        },
+        {
+          label: "Prusament PETG material",
+          href: "https://prusament.com/materials/petg/",
+          description: "PETG material information and print guidance.",
+        },
+      ],
+    },
     cta: {
       kicker: "Need something similar?",
       title: "Merch or event kits people actually use",
@@ -450,24 +504,23 @@ export default function OctopusCasePage({ locale }: PageProps) {
   const localize = (href: string) => localizeHref(href, normalizedLocale)
   const canonical = isEn ? EN_CANONICAL : NL_CANONICAL
 
-  const articleJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-
-    inLanguage: isEn ? "en-BE" : "nl-BE",
+  const articleJsonLd = buildArticleJsonLd({
+    canonical,
     headline: copy.meta.jsonLdHeadline,
     description: copy.meta.jsonLdDescription,
-    author: { "@type": "Organization", name: "X3DPrints" },
-    publisher: {
-      "@type": "Organization",
-      name: "X3DPrints",
-      logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/images/brand-logo.png" },
-    },
-    mainEntityOfPage: canonical,
+    authorType: "Organization",
+    authorName: "X3DPrints",
     datePublished: PUBLISHED_DATE,
-    dateModified: PUBLISHED_DATE,
+    dateModified: DATE_MODIFIED,
     image: [`https://www.x3dprints.be${OG_IMAGE.url}`],
-  }
+  })
+
+  const lastUpdatedLabel = isEn ? "Last updated: 8 February 2026" : "Laatst bijgewerkt: 8 februari 2026"
+  const faqJsonLd = buildFaqPageSchema({
+    inLanguage: isEn ? "en-BE" : "nl-BE",
+    mainEntityOfPage: canonical,
+    items: copy.faq.items,
+  })
 
   return (
     <article className="relative overflow-hidden px-4 pb-24 pt-12 sm:px-6 lg:px-8">
@@ -482,6 +535,7 @@ export default function OctopusCasePage({ locale }: PageProps) {
         <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">{copy.hero.kicker}</p>
         <h1 className="mt-3 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">{copy.hero.title}</h1>
         <p className="mt-4 text-lg text-slate-600">{copy.hero.intro}</p>
+        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
 
         <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <ShimmerButton href={localize("/contact?topic=octopus-case")}>{copy.hero.primaryCta}</ShimmerButton>
@@ -692,6 +746,31 @@ export default function OctopusCasePage({ locale }: PageProps) {
         </Reveal>
       </section>
 
+      {/* SOURCES */}
+      <section className="mx-auto mt-12 max-w-5xl">
+        <Reveal>
+          <GlassCard className="border border-white/50 bg-white/85 p-6 shadow-lg backdrop-blur">
+            <h2 className="text-2xl font-semibold text-slate-900">{copy.sources.title}</h2>
+            <p className="mt-2 text-sm text-slate-600">{copy.sources.intro}</p>
+            <ul className="mt-4 space-y-3 text-sm text-slate-600">
+              {copy.sources.items.map((ref) => (
+                <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/80 p-3">
+                  <Link
+                    href={ref.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-base font-semibold text-indigo-600 transition hover:text-indigo-500"
+                  >
+                    {ref.label}
+                  </Link>
+                  <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+                </li>
+              ))}
+            </ul>
+          </GlassCard>
+        </Reveal>
+      </section>
+
       {/* CTA */}
       <section className="mx-auto mt-14 max-w-5xl">
         <Reveal>
@@ -715,10 +794,12 @@ export default function OctopusCasePage({ locale }: PageProps) {
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
     </article>
   )
 }
+
 
 
 

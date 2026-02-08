@@ -1,12 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-events/"
 const publishedDate = "2025-12-30T08:00:00+01:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Use Case Dinsdag #6: 3D printen voor evenementen, expo & beurzen",
@@ -35,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Use Case Dinsdag: 3D printen voor evenementen",
     description:
-      "Wanneer gebruik je PLA Matte, Marble of PETG voor branding, props en standbouwE Deze gids geeft antwoorden.",
+      "Wanneer gebruik je PLA Matte, Marble of PETG voor branding, props en standbouwers? Deze gids geeft antwoorden.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -55,7 +58,7 @@ const eventUseCases = [
   {
     title: "Props & demo objecten",
     detail:
-      "PLA Marble voor steenachtige trofeeAn, PLA Silk+ of PLA Metal voor metallic highlights. Perfect voor fotobooths en productdemo's.",
+      "PLA Marble voor steenachtige trofeeën, PLA Silk+ of PLA Metal voor metallic highlights. Perfect voor fotobooths en productdemo's.",
   },
   {
     title: "Houders en clips",
@@ -73,12 +76,12 @@ const materialMatrix = [
   {
     name: "PLA Matte",
     use: "Zichtwerk, logo's, props",
-    note: "Beste afwerking, let op hotspots >55 AC.",
+    note: "Beste afwerking, let op hotspots >55 °C.",
     link: { label: "PLA Matte gids", href: "/blog/filament-vrijdag-pla" },
   },
   {
     name: "PLA Marble / Silk+ / Metal",
-    use: "Eyecatchers, sculpturen, trofeeAn",
+    use: "Eyecatchers, sculpturen, trofeeën",
     note: "Textuur en glans zonder extra lakwerk.",
     link: { label: "PLA Marble", href: "/blog/filament-vrijdag-pla-marble" },
     extra: [
@@ -89,7 +92,7 @@ const materialMatrix = [
   {
     name: "PETG",
     use: "Mounts, houders, structurele stukken",
-    note: "Tot ~80 AC stabiel, geschikt voor inserts.",
+    note: "Tot ~80 °C stabiel, geschikt voor inserts.",
     link: { label: "PETG gids", href: "/blog/filament-vrijdag-petg" },
   },
   {
@@ -110,7 +113,7 @@ const designPrinciples = [
 const popularPrints = [
   { title: "3D logo's voor achterwanden", detail: "PLA Matte of Silk+, 3-6 mm dik, zelfklevend of met pinnen." },
   { title: "Display stands", detail: "PETG voor draagkracht, combineer met PLA covers voor branding." },
-  { title: "Vrijstaande props", detail: "PLA Marble voor steenlook, PLA Metal voor industriAle feel." },
+  { title: "Vrijstaande props", detail: "PLA Marble voor steenlook, PLA Metal voor industriële feel." },
   { title: "Sensor- en tablet mounts", detail: "PETG + inserts zodat schroeven veilig klemmen." },
   { title: "Kabelmanagement", detail: "TPU clips en PETG kabeldragende stukken voor nette booths." },
 ]
@@ -148,7 +151,7 @@ const choose3dPrinting = [
     bullets: [
       "Massieve vlakke panelen nodig zijn (kies dan hout of foam).",
       "Load-bearing onderdelen jaren buiten moeten overleven.",
-      "UV-buitenprops meer dan AAn seizoen moeten doorstaan.",
+      "UV-buitenprops meer dan één seizoen moeten doorstaan.",
     ],
   },
 ]
@@ -161,32 +164,34 @@ const ctaLinks = [
   { label: "Prijsinschatting", href: "/pricing" },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "events-use-cases", label: "Use-cases" },
+  { id: "events-materials", label: "Materialenmatrix" },
+  { id: "events-heat", label: "Warmte en vervorming" },
+  { id: "events-design", label: "Designprincipes" },
+  { id: "events-popular", label: "Populaire prints" },
+  { id: "events-avoid", label: "Wat we niet doen" },
+  { id: "events-cost", label: "Kost en timing" },
+  { id: "events-when", label: "Wanneer 3D printen" },
+  { id: "events-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
+  { label: "Prusa: Material guide (PLA, PETG, TPU)", href: "https://help.prusa3d.com/filament-material-guide" },
+  { label: "Bambu Lab: PETG filament guide", href: "https://wiki.bambulab.com/en/filament/petg" },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Use Case Dinsdag #6: 3D printen voor evenementen, expo en beurzen",
-  description:
-    "Snel en schaalbaar 3D printwerk voor event- en standbouw: materiaalkeuze, warmtebeheer, designprincipes en kost/timing.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
 
 function SectionDivider() {
   return (
@@ -234,6 +239,8 @@ export default function UseCaseDinsdagEventsPage() {
               Deadlines verschuiven niet, maar props, branding en demo-objecten moeten licht, stevig en reproduceerbaar zijn.
               Daarom gebruiken eventbureaus en standbouwers steeds vaker FDM-printen voor visuele statements en slimme montages.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=use-case-events">Vraag event-advies</ShimmerButton>
               <Link
@@ -265,7 +272,7 @@ export default function UseCaseDinsdagEventsPage() {
 
       <SectionDivider />
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="events-use-cases" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           {eventUseCases.map((item) => (
             <Reveal key={item.title}>
@@ -278,7 +285,7 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="events-materials" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -312,18 +319,38 @@ export default function UseCaseDinsdagEventsPage() {
                   </div>
                 ))}
               </div>
+              <div className="mt-6 overflow-x-auto">
+                <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="text-xs uppercase tracking-wide text-slate-500">
+                      <th className="py-2 pr-4">Materiaal</th>
+                      <th className="py-2 pr-4">Gebruik</th>
+                      <th className="py-2 pr-4">Let op</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {materialMatrix.map((material) => (
+                      <tr key={material.name}>
+                        <td className="py-3 pr-4 font-semibold text-slate-900">{material.name}</td>
+                        <td className="py-3 pr-4">{material.use}</td>
+                        <td className="py-3 pr-4">{material.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </GlassCard>
           </Reveal>
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="events-heat" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">3. Spotlight realiteit: warmte en vervorming</h2>
               <p className="text-sm text-slate-600">
-                LED spots van 3500-6000 lumen warmen objecten snel op tot 45-60 degC. Vermijd PLA vlak onder spots, gebruik PETG
+                LED spots van 3500-6000 lumen warmen objecten snel op tot 45-60 °C. Vermijd PLA vlak onder spots, gebruik PETG
                 voor houders dichtbij warmtebronnen en combineer materialen: PLA Matte cover plus PETG kern voor ribben en
                 hittebestendigheid.
               </p>
@@ -342,7 +369,7 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="events-design" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -359,7 +386,7 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="events-popular" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           {popularPrints.map((item) => (
             <Reveal key={item.title}>
@@ -372,7 +399,7 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="events-avoid" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -397,7 +424,7 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="events-cost" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -421,7 +448,7 @@ export default function UseCaseDinsdagEventsPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">7. Wanneer kies je 3D printenE</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">7. Wanneer kies je 3D printen?</h2>
               <div className="mt-4 space-y-4 text-sm text-slate-600">
                 {choose3dPrinting.map((block) => (
                   <div key={block.title} className="rounded-2xl border border-slate-100 bg-white/70 p-3">
@@ -439,7 +466,7 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="events-when" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -454,6 +481,32 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
+      <section id="events-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
           <Reveal>
@@ -461,7 +514,7 @@ export default function UseCaseDinsdagEventsPage() {
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Volgende stap</p>
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900">
-                  Props, branding elementen of boothonderdelen nodigE
+                  Props, branding elementen of boothonderdelen nodig?
                 </h2>
                 <p className="mt-2 text-sm text-slate-600">
                   Deel STL/STEP, vermeld aantallen en leverdata. We plannen parallelle prints, adviseren materialen en leveren
@@ -492,6 +545,7 @@ export default function UseCaseDinsdagEventsPage() {
     </main>
   )
 }
+
 
 
 

@@ -11,7 +11,7 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 const canonical = "https://www.x3dprints.be/blog/ontwerp-3d-printbaar-model/"
 const enCanonical = "https://www.x3dprints.be/en/blog/ontwerp-3d-printbaar-model/"
 const datePublished = "2024-05-01"
-const dateModified = "2026-02-07"
+const dateModified = "2026-02-08"
 const viewerHref = "/viewer?utm_source=blog&utm_medium=cta&utm_campaign=ontwerp-printbaar"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=ontwerp-printbaar"
 const contactHref = "/contact?material=pla-matte&quote=Design%20review%20voor%20printbaar%20model"
@@ -115,16 +115,16 @@ const faqItems = [
 
 const references = [
   {
-    label: "All3DP FDM process explainer",
-    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+    label: "Ultimaker: Design for FFF 3D printing",
+    href: "https://ultimaker.com/learn/design-for-fff-3d-printing/",
   },
   {
-    label: "Prusa material guide",
-    href: "https://help.prusa3d.com/article/material-guide_220",
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
   },
   {
-    label: "Google Search docs: crawlable links",
-    href: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+    label: "Autodesk: What is a STEP file?",
+    href: "https://www.autodesk.com/solutions/what-is-a-step-file",
   },
 ]
 
@@ -204,7 +204,7 @@ export default function DesignArticlePage() {
             Goede printbaarheid start in je CAD-model. Met enkele kernregels vermijd je mislukte prints en onnodige iteraties in je 3d ontwerp printen traject.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 7 februari 2026
+            Laatst bijgewerkt: 8 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton

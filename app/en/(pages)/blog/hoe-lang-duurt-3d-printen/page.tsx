@@ -8,7 +8,8 @@ import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/hoe-lang-duurt-3d-printen/"
 const datePublished = "2024-09-15"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
   title: "How long does 3D printing take? | X3DPrints",
@@ -83,11 +84,28 @@ const faq = [
   },
 ]
 
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
+  },
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
+
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "How long does 3D printing take?",
-  description:
-    "Lead time guide for 3D printing: what impacts turnaround, indicative timelines and how to secure rush capacity.",
+  description: metadata.description ?? "",
   datePublished,
   dateModified,
   image: "/images/portfolio/20241030_080710-1.jpg",
@@ -125,8 +143,9 @@ export default function BlogLeadTimesEnPage() {
             </h1>
             <p className="mt-4 text-lg text-slate-700">
               Turnaround ranges from express (raw prints within 24 hours) to several weeks (large batches with finishing). Below you will see what
-              influences lead time and how to get your project into the queue faster. We print from Herzele (Ghent area) and ship across Belgium—Bpost export to EU/UK on request.
+              influences lead time and how to get your project into the queue faster. We print from Herzele (Ghent area) and ship across Belgiumâ€”Bpost export to EU/UK on request.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
               <ShimmerButton href="/en/pricing">View guide prices & timing</ShimmerButton>
               <Link
@@ -226,10 +245,28 @@ export default function BlogLeadTimesEnPage() {
           </Reveal>
         </div>
       </section>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogReadMore />
     </main>
   )
 }
+
+
 

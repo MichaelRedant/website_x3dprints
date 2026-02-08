@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -9,7 +9,8 @@ import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-lente-pasen/"
 const datePublished = "2024-03-15"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
   title: "3D printing for spring and Easter | X3DPrints Blog",
@@ -43,7 +44,7 @@ const tips = [
   "Use Silk or Matte PLA in pastel colours for eggs, bunnies and ornaments; Translucent for light objects.",
   "Layer height 0.16-0.2 mm; keep wall thickness >1.2 mm for sturdy hangers on branches.",
   "Integrate eyelets or pin-holes for hooks/magnets so ornaments do not break.",
-  "Design/model not included: provide STL/STEP or choose design service at â‚¬45/hour.",
+  "Design/model not included: provide STL/STEP or choose design service at €45/hour.",
   "For outdoor decor: choose PETG for better UV/moisture resistance and avoid dark colours in full sun.",
 ]
 
@@ -57,7 +58,7 @@ const checklist = [
 const faqItems = [
   {
     q: "Can you print hollow eggs for LEDs?",
-    a: "Yes. We keep 2-3 perimeters, tuned infill and openings for LEDs/batteries. Provide STL/STEP or use design service (â‚¬45/hour).",
+    a: "Yes. We keep 2-3 perimeters, tuned infill and openings for LEDs/batteries. Provide STL/STEP or use design service (€45/hour).",
   },
   {
     q: "Best material for Easter ornaments?",
@@ -65,19 +66,36 @@ const faqItems = [
   },
   {
     q: "How do you ship fragile pieces?",
-    a: "Packed separately with foam; EV delivery in zones (Zone 1 â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45) or parcel service. Pickup is free.",
+    a: "Packed separately with foam; EV delivery in zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) or parcel service. Pickup is free.",
   },
   {
     q: "Is design included?",
-    a: "No. Design is not included in the print price. Provide STL/STEP or choose design service at â‚¬45/hour; we optimise wall thickness and supports.",
+    a: "No. Design is not included in the print price. Provide STL/STEP or choose design service at €45/hour; we optimise wall thickness and supports.",
+  },
+]
+
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
+  },
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
   },
 ]
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "3D printing for spring & Easter",
-  description:
-    "Pastel decor, Easter ornaments and light objects in Silk, Matte and Translucent PLA. Tips for supports, magnets, delivery and design service (model not included). Shipping across Belgium; Bpost export for expat gifts or EU events on request.",
+  description: metadata.description ?? "",
   datePublished,
   dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
@@ -111,9 +129,10 @@ export default function BlogSpringEasterEn() {
               3D printing for spring and Easter
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Pastel ornaments, bunnies and light decor. Design file not included; provide STL/STEP or choose design service (â‚¬45/hour). EV delivery for
+              Pastel ornaments, bunnies and light decor. Design file not included; provide STL/STEP or choose design service (€45/hour). EV delivery for
               fragile pieces or parcel service.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact?material=PLA">Plan Easter prints</ShimmerButton>
               <Link
@@ -229,6 +248,22 @@ export default function BlogSpringEasterEn() {
           </Reveal>
         </div>
       </section>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -236,6 +271,9 @@ export default function BlogSpringEasterEn() {
     </main>
   )
 }
+
+
+
 
 
 

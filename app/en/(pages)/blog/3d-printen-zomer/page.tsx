@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -9,7 +9,8 @@ import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-zomer/"
 const datePublished = "2024-07-15"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
   title: "3D printing for summer | X3DPrints Blog",
@@ -43,7 +44,7 @@ const tips = [
   "Use PETG for outdoor decor: better against sun and moisture. PLA Silk/Marble for luxe table decor indoors.",
   "Layer height 0.2 mm for larger pieces; 0.16 mm for fine details. Wall thickness >1.6 mm for items in the sun.",
   "TPU for anti-slip feet under trays or beach gear. Combine PLA or PETG on top for stiffness.",
-  "Design/model not included: provide STL/STEP or choose design service at â‚¬45/hour.",
+  "Design/model not included: provide STL/STEP or choose design service at €45/hour.",
   "For drinkware holders: add drainage holes and round edges for comfort.",
 ]
 
@@ -61,15 +62,15 @@ const faqItems = [
   },
   {
     q: "Can you make beach or nautical props?",
-    a: "Yes. Anchors, lighthouses, shells or custom holders for drinkware and gadgets. Provide STL/STEP or use design service (â‚¬45/hour).",
+    a: "Yes. Anchors, lighthouses, shells or custom holders for drinkware and gadgets. Provide STL/STEP or use design service (€45/hour).",
   },
   {
     q: "How do you ship fragile pieces safely?",
-    a: "We pack separately with foam and deliver via EV zones (Zone 1 â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45) or parcel service. Pickup in Herzele is free.",
+    a: "We pack separately with foam and deliver via EV zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) or parcel service. Pickup in Herzele is free.",
   },
   {
     q: "Is the 3D model included?",
-    a: "No. Design file is not included; you provide STL/STEP or choose design service at â‚¬45/hour. We optimise wall thickness and supports.",
+    a: "No. Design file is not included; you provide STL/STEP or choose design service at €45/hour. We optimise wall thickness and supports.",
   },
   {
     q: "How do you prevent warping in the sun?",
@@ -77,11 +78,28 @@ const faqItems = [
   },
 ]
 
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
+  },
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
+
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "3D printing for summer",
-  description:
-    "Outdoor decor, nautical props and terrace accessories. PETG for sun/moisture, PLA Silk/Marble for luxe table decor, TPU for grip. Design file not included; design service available.",
+  description: metadata.description ?? "",
   datePublished,
   dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
@@ -119,8 +137,9 @@ export default function BlogSummerEn() {
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Terrace decor, nautical themes and custom holders for festivals or beach trips. Design file not included; provide STL/STEP or choose design
-              service (â‚¬45/hour). EV delivery for fragile pieces or parcel service further away.
+              service (€45/hour). EV delivery for fragile pieces or parcel service further away.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact">Plan your summer prints</ShimmerButton>
               <Link
@@ -223,6 +242,22 @@ export default function BlogSummerEn() {
           </Reveal>
         </div>
       </section>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -230,6 +265,9 @@ export default function BlogSummerEn() {
     </main>
   )
 }
+
+
+
 
 
 

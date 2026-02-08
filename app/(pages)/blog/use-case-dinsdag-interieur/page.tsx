@@ -1,12 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-interieur/"
 const publishedDate = "2026-01-06T08:00:00+01:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Use Case Dinsdag #7: 3D printen voor interieurdesign & decor",
@@ -94,11 +97,11 @@ const materials = [
 ]
 
 const warmthPoints = [
-  { location: "Spotlights", temp: "45-55 degC", advice: "Gebruik PLA op afstand, PETG vlakbij spots of als kern." },
-  { location: "Radiatoren / convectors", temp: "40-50 degC", advice: "PETG voor montages, PLA voor covers op afstand." },
+  { location: "Spotlights", temp: "45-55 °C", advice: "Gebruik PLA op afstand, PETG vlakbij spots of als kern." },
+  { location: "Radiatoren / convectors", temp: "40-50 °C", advice: "PETG voor montages, PLA voor covers op afstand." },
   {
     location: "Vitrines met LED strips",
-    temp: "Tot 60 degC",
+    temp: "Tot 60 °C",
     advice: "PLA Marble blijft mooi maar gebruik PETG voor houders binnen de vitrine.",
   },
   {
@@ -109,7 +112,7 @@ const warmthPoints = [
 ]
 
 const designWorkflow = [
-  "Seam placement: we oriAnteren sculpturen zodat naden op onzichtbare achterzijdes vallen.",
+  "Seam placement: we oriënteren sculpturen zodat naden op onzichtbare achterzijdes vallen.",
   "Holle structuren: 2.0-2.4 mm wanden met 5-10 procent infill houden objecten licht en stabiel.",
   "Segmentatie: XL vazen en panelen worden gesplitst met dovetails en alignment pins voor onzichtbare assemblage.",
   "Wanddiktes: PLA Matte 1.6-2 mm, PLA Marble/Wood 2.0-2.4 mm voor transportbestendigheid.",
@@ -120,7 +123,7 @@ const interiorExamples = [
   { title: "Wanddecor en 3D panel accents", detail: "Parametrische patronen, signature walls, modulaire panel sets." },
   { title: "Centerpieces en sculpturale objecten", detail: "PLA Marble voor galerie-look, PLA Silk+ voor glossy luxe." },
   { title: "Lampenkappen en diffusers", detail: "PLA voor diffusers, PETG voor onderdelen dichtbij lampwarmte." },
-  { title: "Schaalmodellen voor architecten", detail: "Vlotte iteraties voor residentiAle of retailpresentaties." },
+  { title: "Schaalmodellen voor architecten", detail: "Vlotte iteraties voor residentiële of retailpresentaties." },
   { title: "Retail props voor seizoenscampagnes", detail: "Visueel sterke decorstukken zonder massaproductiebudget." },
 ]
 
@@ -152,7 +155,7 @@ const whenToUse = [
   {
     title: "Laat 3D printen links liggen wanneer je",
     bullets: [
-      "IndustriAle sterkte of massieve panelen nodig hebt.",
+      "Industriële sterkte of massieve panelen nodig hebt.",
       "Objecten direct onder hittebronnen wilt plaatsen.",
       "Automotive paint verwacht zonder finishing budget.",
     ],
@@ -168,32 +171,42 @@ const ctaLinks = [
   { label: "Pricing & offerte", href: "/pricing" },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Use Case Dinsdag #7: 3D printen voor interieurdesign en decor",
-  description:
-    "Gids voor PLA Matte, Marble, Wood, Metal en PETG in interieurprojecten. Inclusief warmtegedrag, designprincipes en kosten.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "interieur-why", label: "Waarom 3D printen" },
+  { id: "interieur-materials", label: "Materialen" },
+  { id: "interieur-heat", label: "Warmtegedrag" },
+  { id: "interieur-workflow", label: "Studio workflow" },
+  { id: "interieur-examples", label: "Voorbeelden" },
+  { id: "interieur-limitations", label: "Beperkingen" },
+  { id: "interieur-cost", label: "Kosten & doorlooptijd" },
+  { id: "interieur-when", label: "Wanneer wel/niet" },
+  { id: "interieur-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
+  { label: "UltiMaker PETG material properties", href: "https://ultimaker.com/materials/s-series-petg/" },
+  { label: "Prusament PLA materiaaloverzicht", href: "https://prusament.com/materials/pla/" },
+  { label: "ISO/ASTM 52900: Additive manufacturing terminology", href: "https://www.iso.org/standard/74514.html" },
+]
+
+const warmthTable = [
+  { zone: "Spotlights", temp: "45-55 °C", advice: "PLA op afstand, PETG vlakbij spots of als kern." },
+  { zone: "Radiatoren / convectors", temp: "40-50 °C", advice: "PETG voor montages, PLA voor covers op afstand." },
+  { zone: "Vitrines met LED strips", temp: "Tot 60 °C", advice: "PLA Marble zichtbaar, PETG voor houders." },
+  { zone: "Zuidgerichte kamers", temp: "Schommelingen + UV", advice: "PLA uit zon, PETG voor raamkader-gebonden decor." },
+]
 
 function SectionDivider() {
   return (
@@ -241,6 +254,8 @@ export default function UseCaseDinsdagInterieurPage() {
               Interieurdesigners willen flexibiliteit, custom shapes, lichtgewicht materialen en snelle iteraties. FDM geeft hen
               die toolbox in kleine en grotere oplage, met steenlook, houttextuur of matte luxe zonder traditionele productiekost.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=use-case-interieur">Vraag interieur-advies</ShimmerButton>
               <Link
@@ -272,7 +287,7 @@ export default function UseCaseDinsdagInterieurPage() {
 
       <SectionDivider />
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="interieur-why" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           {differencePoints.map((point) => (
             <Reveal key={point.title}>
@@ -285,7 +300,7 @@ export default function UseCaseDinsdagInterieurPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="interieur-materials" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -310,11 +325,31 @@ export default function UseCaseDinsdagInterieurPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="interieur-heat" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">3. Warmtegedrag in interieurs</h2>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="text-xs uppercase tracking-wide text-slate-500">
+                      <th className="py-2 pr-4">Zone</th>
+                      <th className="py-2 pr-4">Temperatuur</th>
+                      <th className="py-2 pr-4">Advies</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {warmthTable.map((row) => (
+                      <tr key={row.zone}>
+                        <td className="py-3 pr-4 font-semibold text-slate-900">{row.zone}</td>
+                        <td className="py-3 pr-4">{row.temp}</td>
+                        <td className="py-3 pr-4">{row.advice}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 {warmthPoints.map((point) => (
                   <div key={point.location} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
@@ -329,10 +364,10 @@ export default function UseCaseDinsdagInterieurPage() {
               <p className="mt-4 text-sm text-slate-600">
                 Zie{" "}
                 <Link
-                  href="https://wiki.bambulab.com/en/materials"
+                  href="https://ultimaker.com/materials/pla/"
                   className="font-semibold text-indigo-600 transition hover:text-indigo-500"
                 >
-                  Bambu Lab materiaalgedrag
+                  UltiMaker materiaaldata
                 </Link>{" "}
                 voor temperatuurreferenties.
               </p>
@@ -341,7 +376,7 @@ export default function UseCaseDinsdagInterieurPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="interieur-workflow" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -358,7 +393,7 @@ export default function UseCaseDinsdagInterieurPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="interieur-examples" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           {interiorExamples.map((example) => (
             <Reveal key={example.title}>
@@ -371,7 +406,7 @@ export default function UseCaseDinsdagInterieurPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="interieur-limitations" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -396,7 +431,7 @@ export default function UseCaseDinsdagInterieurPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="interieur-cost" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -421,7 +456,7 @@ export default function UseCaseDinsdagInterieurPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="interieur-when" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           {whenToUse.map((block) => (
             <Reveal key={block.title}>
@@ -447,6 +482,32 @@ export default function UseCaseDinsdagInterieurPage() {
                 PLA Matte, Marble, Wood en Metal vormen een materiaalbibliotheek die klassieke interieurbouw aanvult. Combineer ze
                 met PETG voor warme zones en gebruik prototypes als overlegtool met klanten en leveranciers.
               </p>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="interieur-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
         </div>
@@ -489,6 +550,7 @@ export default function UseCaseDinsdagInterieurPage() {
     </main>
   )
 }
+
 
 
 

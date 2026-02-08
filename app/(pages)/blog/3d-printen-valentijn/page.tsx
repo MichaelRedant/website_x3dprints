@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -6,9 +6,13 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-valentijn/"
 const ogImage = "https://www.x3dprints.be/images/og-home.jpg"
+const datePublished = "2025-01-05"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "3D printen voor Valentijn cadeaus | X3DPrints Blog",
@@ -38,6 +42,13 @@ const tips = [
   "Integreer oogjes of pin-holes voor magneten en maak tekst minstens 0.6 mm dik voor leesbaarheid.",
   "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan EUR 45/uur.",
   "Leveropties: EV-zones of pakketdienst. Breekbare stukken verpakken we gescheiden; afhalen in Herzele kan gratis.",
+]
+
+const materialRows = [
+  { material: "PLA Silk / Marble", use: "Hartdecor, naamplaatjes, gifts", note: "Luxe look, indoor" },
+  { material: "PLA Matte", use: "Zachte pastels en tafeldecor", note: "Strakke finish, snel te printen" },
+  { material: "Translucent PLA", use: "Lichtobjecten en lantaarns", note: "Wand 1.6-2 mm, ventilatie voorzien" },
+  { material: "PETG", use: "Outdoor of warmere omgeving", note: "Hittebestendiger dan PLA" },
 ]
 
 const checklist = [
@@ -83,24 +94,37 @@ const valentijnVideos = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
-  inLanguage: "nl-BE",
+const tocItems = [
+  { id: "valentine-materials", label: "Materialen & settings" },
+  { id: "valentine-checklist", label: "Checklist" },
+  { id: "valentine-examples", label: "Voorbeelden" },
+  { id: "valentine-video", label: "Video" },
+  { id: "valentine-planning", label: "Waarom nu plannen?" },
+  { id: "valentine-faq", label: "FAQ Valentijn" },
+  { id: "valentine-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
+  { label: "Prusa: Material guide (PLA, PETG, TPU)", href: "https://help.prusa3d.com/filament-material-guide" },
+  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm" },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "3D printen voor Valentijn cadeaus",
-  description: metadata.description,
-  author: { "@type": "Organization", name: "X3DPrints" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    logo: { "@type": "ImageObject", url: ogImage },
-  },
-  datePublished: "2025-01-05",
-  dateModified: "2025-01-05",
+  description: metadata.description ?? "",
+  datePublished: datePublished,
+  dateModified,
   image: ogImage,
-  mainEntityOfPage: canonical,
-}
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  items: faqItems,
+})
 
 export default function BlogValentijn() {
   return (
@@ -119,6 +143,8 @@ export default function BlogValentijn() {
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Gepersonaliseerde gifts, tafeldecor en lichtobjecten in Silk, Matte of Translucent PLA. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice (EUR 45/uur). Levering via EV-zones of pakketdienst.
             </p>
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?material=pla-silk">Plan je Valentijnprint</ShimmerButton>
               <Link
@@ -132,11 +158,31 @@ export default function BlogValentijn() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="valentine-materials" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
               <h2 className="text-2xl font-bold tracking-tight text-slate-900">Materialen & settings</h2>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="text-xs uppercase tracking-wide text-slate-500">
+                      <th className="py-2 pr-4">Materiaal</th>
+                      <th className="py-2 pr-4">Gebruik</th>
+                      <th className="py-2 pr-4">Notities</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {materialRows.map((row) => (
+                      <tr key={row.material}>
+                        <td className="py-3 pr-4 font-semibold text-slate-900">{row.material}</td>
+                        <td className="py-3 pr-4">{row.use}</td>
+                        <td className="py-3 pr-4">{row.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {tips.map((tip) => (
                   <li key={tip} className="flex gap-2">
@@ -156,7 +202,9 @@ export default function BlogValentijn() {
 
           <Reveal delay={0.06}>
             <GlassCard className="p-6">
-              <h3 className="text-xl font-semibold tracking-tight text-slate-900">Checklist</h3>
+              <h3 id="valentine-checklist" className="scroll-mt-28 text-xl font-semibold tracking-tight text-slate-900">
+                Checklist
+              </h3>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
                 {checklist.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -182,7 +230,7 @@ export default function BlogValentijn() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="valentine-examples" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -213,7 +261,7 @@ export default function BlogValentijn() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="valentine-video" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -239,7 +287,7 @@ export default function BlogValentijn() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="valentine-planning" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
@@ -291,7 +339,7 @@ export default function BlogValentijn() {
         </div>
       </section>
 
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+      <section id="valentine-faq" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -316,12 +364,40 @@ export default function BlogValentijn() {
         </div>
       </section>
 
+      <section id="valentine-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-rose-700 hover:text-rose-600"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
 
     </main>
   )
 }
+
 
 
 

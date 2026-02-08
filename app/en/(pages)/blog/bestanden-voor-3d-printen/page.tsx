@@ -11,7 +11,8 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 const canonical = "https://www.x3dprints.be/en/blog/bestanden-voor-3d-printen/"
 const nlCanonical = "https://www.x3dprints.be/blog/bestanden-voor-3d-printen/"
 const datePublished = "2024-08-01"
-const dateModified = "2026-02-07"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 const viewerHref = "/en/viewer?utm_source=blog&utm_medium=cta&utm_campaign=files-en"
 const pricingHref = "/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=files-en"
 const materialsHref = "/en/materials#material-suggestion-tool"
@@ -113,15 +114,14 @@ const references = [
   },
   {
     label: "Prusa material guide",
-    href: "https://help.prusa3d.com/article/material-guide_220",
+    href: "https://help.prusa3d.com/filament-material-guide",
   },
 ]
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "Which files do you need for 3D printing?",
-  description:
-    "File preparation guide for STL and STEP with practical export checks and faster quote handoff.",
+  description: metadata.description ?? "",
   datePublished,
   dateModified,
   image: "/Logo.webp",
@@ -250,7 +250,8 @@ export default function FilesArticleEnPage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-5 flex flex-wrap gap-3">
+                          <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <div className="mt-5 flex flex-wrap gap-3">
                 <ShimmerButton href={viewerHref} event={{ action: "cta_click", category: "blog_files_en_mid", label: "viewer" }}>
                   Open viewer
                 </ShimmerButton>
@@ -334,3 +335,5 @@ export default function FilesArticleEnPage() {
     </main>
   )
 }
+
+

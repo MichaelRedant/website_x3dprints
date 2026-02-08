@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 
 const canonical = "https://www.x3dprints.be/algemene-voorwaarden/"
 
@@ -20,7 +20,7 @@ const pageJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Algemene Voorwaarden",
-  description: metadata.description,
+  description: metadata.description ?? "",
   url: canonical,
   inLanguage: "nl-BE",
   isPartOf: {
@@ -39,7 +39,7 @@ export default function TermsPage() {
           <li>
             <h2 className="text-xl font-semibold text-slate-900">Identiteit van de verkoper</h2>
             <p className="mt-2 text-slate-600">
-              X3DPrints (Redant, Michael), Provincieweg 34A, 9552 Herzele, BelgiÃ«, btw-nummer BE1032.408.513
+              X3DPrints (Redant, Michael), Provincieweg 34A, 9552 Herzele, België, btw-nummer BE1032.408.513
               (vrijgesteld van btw; geen btw-aanrekening).
               Contact:{" "}
               <a href="mailto:michael@xinudesign.be" className="underline-offset-2 hover:underline">
@@ -91,7 +91,7 @@ export default function TermsPage() {
             <h2 className="text-xl font-semibold text-slate-900">Herroepingsrecht</h2>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
               <li>
-                Aangezien 3D-prints maatwerk zijn, geldt het wettelijke herroepingsrecht van 14 dagen niet (art. VI.53, 3Â° WER).
+                Aangezien 3D-prints maatwerk zijn, geldt het wettelijke herroepingsrecht van 14 dagen niet (art. VI.53, 3° WER).
               </li>
               <li>Herroepingsrecht geldt wel voor standaardproducten/accessoires.</li>
             </ul>

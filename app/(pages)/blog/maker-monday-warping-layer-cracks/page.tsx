@@ -1,12 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/maker-monday-warping-layer-cracks/"
 const publishedDate = "2025-11-10T08:00:00+01:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Maker Monday #6: Warping, layer cracks en bridging voorkomen | X3DPrints",
@@ -49,9 +52,9 @@ export const metadata: Metadata = {
 }
 
 const heroStats = [
-  { label: "Chamfer hoeken", value: "1â€“3 mm", detail: "Minder warping hefboom" },
-  { label: "Bridge limiet", value: "â‰¤ 25 mm", detail: "Daarboven segmenteren" },
-  { label: "Perimeter advies", value: "â‰¥ 4", detail: "Beter shell-effect" },
+  { label: "Chamfer hoeken", value: "1–3 mm", detail: "Minder warping hefboom" },
+  { label: "Bridge limiet", value: "≤ 25 mm", detail: "Daarboven segmenteren" },
+  { label: "Perimeter advies", value: "≥ 4", detail: "Beter shell-effect" },
 ]
 
 const warpingDesignTips = [
@@ -61,11 +64,11 @@ const warpingDesignTips = [
   },
   {
     title: "Chamfer of rond hoeken",
-    detail: "1â€“3 mm chamfer of afgeronde hoek neemt de hefboom weg die hoeken omhoog trekt.",
+    detail: "1–3 mm chamfer of afgeronde hoek neemt de hefboom weg die hoeken omhoog trekt.",
   },
   {
     title: "Splits grote onderdelen",
-    detail: "Modules van <150 mm warpen minder dan Ã©Ã©n blok van 250 mm. Voeg slimme verbindingen toe.",
+    detail: "Modules van <150 mm warpen minder dan één blok van 250 mm. Voeg slimme verbindingen toe.",
   },
   {
     title: "Gebruik logische wanddiktes",
@@ -74,9 +77,9 @@ const warpingDesignTips = [
 ]
 
 const layerCrackTips = [
-  "OriÃ«nteer de part zodat layers parallel lopen aan de hoofdbelasting.",
-  "Gebruik ribs (1â€“1.2 mm dik, 3â€“10 mm hoog) en fillets om spanning te spreiden.",
-  "Verhoog perimeters tot 4+ om een sterk shell-effect te creÃ«ren.",
+  "Oriënteer de part zodat layers parallel lopen aan de hoofdbelasting.",
+  "Gebruik ribs (1–1.2 mm dik, 3–10 mm hoog) en fillets om spanning te spreiden.",
+  "Verhoog perimeters tot 4+ om een sterk shell-effect te creëren.",
   "Vermijd lange, dunne wanden zonder ondersteuning of breek ze op in segmenten.",
   "Kies PETG voor kritieke onderdelen; PLA is bros en TPU is voor flexibele zones.",
 ]
@@ -107,7 +110,7 @@ const checklistItems = [
   {
     title: "Layer adhesion",
     points: [
-      "OriÃ«ntatie afgestemd op belasting?",
+      "Oriëntatie afgestemd op belasting?",
       "Voldoende wanddikte + ribs aanwezig?",
       "Perimeter count verhoogd waar nodig?",
     ],
@@ -122,32 +125,41 @@ const checklistItems = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "warping-cad", label: "Warping begint in CAD" },
+  { id: "warping-material", label: "Materiaalgedrag" },
+  { id: "warping-layer-cracks", label: "Layer cracks voorkomen" },
+  { id: "warping-bridge", label: "Bridging verbeteren" },
+  { id: "warping-checklist", label: "Ontwerp-checklist" },
+  { id: "warping-when", label: "Wanneer X3DPrints helpt" },
+  { id: "warping-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  {
+    label: "Prusa: Warping in FFF/FDM prints",
+    href: "https://help.prusa3d.com/article/warping_1775",
+  },
+  {
+    label: "Ultimaker: Design for FFF 3D printing",
+    href: "https://ultimaker.com/learn/design-for-fff-3d-printing/",
+  },
+  {
+    label: "Prusa: Material guide (PLA, PETG, TPU)",
+    href: "https://help.prusa3d.com/filament-material-guide",
+  },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Maker Monday #6: Hoe voorkom je warping, layer cracks en slechte bridging door ontwerpkeuzes?",
-  description:
-    "FDM printproblemen oplossen via CAD: tips voor hoeken, wanden, ribs en bridging zodat PLA, PETG en TPU niet warpen of scheuren.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
 
 function SectionDivider() {
   return (
@@ -196,6 +208,8 @@ export default function MakerMondayWarpingLayerCracksPage() {
               doorzakken zijn meestal het gevolg van foute geometrie. Deze gids leert je hoe je via ontwerpkeuzes warping, layer
               cracks en slechte bridging voorkomt.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=maker-monday-warping">Vraag ontwerp-review</ShimmerButton>
               <Link
@@ -212,7 +226,7 @@ export default function MakerMondayWarpingLayerCracksPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-slate-500">
-              Gepubliceerd op 10 november 2025 â€¢ Deel van de Maker Monday knowledge hub.
+              Gepubliceerd op 10 november 2025 • Deel van de Maker Monday knowledge hub.
             </p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
@@ -233,7 +247,9 @@ export default function MakerMondayWarpingLayerCracksPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[3fr_2fr]">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">1. Warping begint in de CAD</h2>
+              <h2 id="warping-cad" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                1. Warping begint in de CAD
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Warping ontstaat doordat buitenlagen sneller afkoelen dan de kern. PLA warpt het minst, PETG wat meer, TPU bijna
                 niet. Pas je geometrie hierop aan:
@@ -261,7 +277,9 @@ export default function MakerMondayWarpingLayerCracksPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h3 className="text-xl font-semibold text-slate-900">Materiaalgedrag</h3>
+              <h3 id="warping-material" className="scroll-mt-28 text-xl font-semibold text-slate-900">
+                Materiaalgedrag
+              </h3>
               <div className="mt-4 overflow-x-auto">
                 <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
                   <thead>
@@ -298,7 +316,9 @@ export default function MakerMondayWarpingLayerCracksPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">2. Layer cracks voorkomen</h2>
+              <h2 id="warping-layer-cracks" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                2. Layer cracks voorkomen
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Layer cracks ontstaan door trek dwars op de layers, te dunne wanden of overshooting cooling. Volg deze regels:
               </p>
@@ -330,11 +350,11 @@ export default function MakerMondayWarpingLayerCracksPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h3 className="text-xl font-semibold text-slate-900">OriÃ«ntatievoorbeeld</h3>
+              <h3 className="text-xl font-semibold text-slate-900">Oriëntatievoorbeeld</h3>
               <p className="mt-2 text-sm text-slate-600">
                 Een wandbeugel die neerwaartse last draagt, print je zo dat de layers parallel lopen aan de neerwaartse trekkracht.
                 Moet de beugel naar buiten buigen? Draai het onderdeel zodat de buiging in X/Y zit en niet in Z. Denk altijd in
-                functies, niet in â€œhoe het model eruit zietâ€.
+                functies, niet in “hoe het model eruit ziet”.
               </p>
             </GlassCard>
           </Reveal>
@@ -345,7 +365,9 @@ export default function MakerMondayWarpingLayerCracksPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">3. Bridging verbeteren</h2>
+              <h2 id="warping-bridge" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                3. Bridging verbeteren
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Slechte bridging is geen slicerfout maar een ontwerpkeuze. Gebruik deze richtlijnen:
               </p>
@@ -366,7 +388,7 @@ export default function MakerMondayWarpingLayerCracksPage() {
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h3 className="text-xl font-semibold text-slate-900">Bridge ontwerpvoorbeeld</h3>
               <p className="mt-2 text-sm text-slate-600">
-                Een 40 mm vlak dak resulteert in doorzakking. Door het dak in drie segmenten te verdelen (3 Ã— 13 mm) met ribbing
+                Een 40 mm vlak dak resulteert in doorzakking. Door het dak in drie segmenten te verdelen (3 × 13 mm) met ribbing
                 eronder, blijft alles strak. Je verbruikt iets meer materiaal, maar voorkomt support removal en nabehandeling.
               </p>
             </GlassCard>
@@ -378,7 +400,9 @@ export default function MakerMondayWarpingLayerCracksPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">4. Ontwerp-checklist</h2>
+              <h2 id="warping-checklist" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                4. Ontwerp-checklist
+              </h2>
               <div className="mt-4 space-y-4">
                 {checklistItems.map((item) => (
                   <div key={item.title} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
@@ -400,15 +424,17 @@ export default function MakerMondayWarpingLayerCracksPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">5. Wanneer X3DPrints inschakelen?</h2>
+              <h2 id="warping-when" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                5. Wanneer X3DPrints inschakelen?
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Laat ons meekijken als je onderdeel groter is dan 150 mm, bridging zones niet kan vermijden of als vorige prints
-                al scheuren vertoonden. We optimaliseren wandopbouw, ribbing, oriÃ«ntatie en materiaalkeuze zodat je project
+                al scheuren vertoonden. We optimaliseren wandopbouw, ribbing, oriëntatie en materiaalkeuze zodat je project
                 betrouwbaar uit de printer komt.
               </p>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-600">
                 <li>Wandopbouw en ribbing afstemmen op het gebruik.</li>
-                <li>OriÃ«ntatie kiezen zodat krachten parallel lopen aan de layers.</li>
+                <li>Oriëntatie kiezen zodat krachten parallel lopen aan de layers.</li>
                 <li>Materiaaladvies (PLA, PETG, TPU) op basis van je toepassing.</li>
                 <li>Slicerprofielen finetunen voor bridging en cooling.</li>
               </ul>
@@ -432,6 +458,32 @@ export default function MakerMondayWarpingLayerCracksPage() {
                   Zie pricing
                 </Link>
               </div>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="warping-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
         </div>
@@ -466,6 +518,7 @@ export default function MakerMondayWarpingLayerCracksPage() {
     </main>
   )
 }
+
 
 
 

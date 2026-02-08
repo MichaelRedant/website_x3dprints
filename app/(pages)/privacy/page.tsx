@@ -1,15 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 
 const canonical = "https://www.x3dprints.be/privacy/"
 
 export const metadata: Metadata = {
-  title: "Privacybeleid â€“ X3DPrints",
+  title: "Privacybeleid – X3DPrints",
   description:
     "Ontdek hoe X3DPrints persoonsgegevens verzamelt, gebruikt en beschermt volgens de AVG.",
   alternates: { canonical },
   openGraph: {
-    title: "Privacybeleid â€“ X3DPrints",
+    title: "Privacybeleid – X3DPrints",
     description:
       "Ontdek hoe X3DPrints persoonsgegevens verzamelt, gebruikt en beschermt volgens de AVG.",
     url: canonical,
@@ -23,7 +23,7 @@ const pageJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Privacybeleid",
-  description: metadata.description,
+  description: metadata.description ?? "",
   url: canonical,
   inLanguage: "nl-BE",
   isPartOf: {
@@ -42,7 +42,7 @@ export default function PrivacyPage() {
           <li>
             <h2 className="text-xl font-semibold text-slate-900">Verantwoordelijke voor verwerking</h2>
             <p className="mt-2 text-slate-600">
-              X3DPrints (Redant, Michael), Provincieweg 34A, 9552 Herzele, BelgiÃ«, btw-nummer BE1032.408.513
+              X3DPrints (Redant, Michael), Provincieweg 34A, 9552 Herzele, België, btw-nummer BE1032.408.513
               (vrijgesteld van btw; geen btw-aanrekening), is de verantwoordelijke voor de verwerking van persoonsgegevens
               in de zin van de Algemene Verordening Gegevensbescherming (AVG/GDPR). Contact:{" "}
               <a href="mailto:michael@xinudesign.be" className="underline-offset-2 hover:underline">

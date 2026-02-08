@@ -4,11 +4,12 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/beste-instellingen-bambu-printer/"
 const datePublished = "2024-09-01"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Beste instellingen voor jouw Bambu printer | X3DPrints Blog",
@@ -71,6 +72,22 @@ const settingTable = [
   { param: "Volumetric flow", pla: "20 mm^3/s", petg: "14 mm^3/s", tpu: "8 mm^3/s" },
   { param: "Retract", pla: "0.8 mm @ 40 mm/s", petg: "0.6 mm @ 30 mm/s", tpu: "0.4 mm @ 20 mm/s" },
   { param: "Pressure advance", pla: "0.032-0.035", petg: "0.028", tpu: "0.015" },
+]
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "bambu-presets", label: "Presets per materiaal" },
+  { id: "bambu-overview", label: "Kerninstellingen in tabel" },
+  { id: "bambu-calibration", label: "Kalibratiestappen" },
+  { id: "bambu-troubleshooting", label: "Troubleshooting" },
+  { id: "bambu-faq", label: "Veelgestelde vragen" },
+  { id: "bambu-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
+  { label: "Prusa: Materials overview", href: "https://help.prusa3d.com/es/materials" },
 ]
 
 const calibrationSteps = [
@@ -152,6 +169,8 @@ export default function BambuSettingsPage() {
             <p className="mt-4 text-lg text-slate-700">
               Gebruik deze presets voor PLA, PETG en TPU om het meeste uit je Bambu te halen. De instellingen zijn getest op productieprinters en sluiten aan bij de materialen die we dagelijks inzetten.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
               <ShimmerButton href="/materials">Materialen vergelijken</ShimmerButton>
               <Link
@@ -165,23 +184,33 @@ export default function BambuSettingsPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
-          {materialPresets.map((preset) => (
-            <Reveal key={preset.title}>
-              <GlassCard className="h-full border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
-                <h2 className="text-xl font-semibold text-slate-900">{preset.title}</h2>
-                <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                  {preset.bullets.map((bullet) => (
-                    <li key={bullet} className="flex items-start gap-2">
-                      <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
-                      <span>{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
-              </GlassCard>
-            </Reveal>
-          ))}
+      <section id="bambu-presets" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl space-y-6">
+          <Reveal>
+            <div>
+              <h2 className="text-2xl font-semibold text-slate-900">Presets per materiaal</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Baselines om snel te starten. We finetunen per model, nozzle en toepassing.
+              </p>
+            </div>
+          </Reveal>
+          <div className="grid gap-6 md:grid-cols-3">
+            {materialPresets.map((preset) => (
+              <Reveal key={preset.title}>
+                <GlassCard className="h-full border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
+                  <h3 className="text-xl font-semibold text-slate-900">{preset.title}</h3>
+                  <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                    {preset.bullets.map((bullet) => (
+                      <li key={bullet} className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </GlassCard>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -189,7 +218,9 @@ export default function BambuSettingsPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="overflow-x-auto border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Snel overzicht van kerninstellingen</h2>
+              <h2 id="bambu-overview" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                Snel overzicht van kerninstellingen
+              </h2>
               <table className="mt-5 min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
                 <thead>
                   <tr className="text-xs uppercase tracking-wide text-slate-500">
@@ -219,7 +250,9 @@ export default function BambuSettingsPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900">Kalibratiestappen</h2>
+              <h2 id="bambu-calibration" className="scroll-mt-28 text-xl font-semibold text-slate-900">
+                Kalibratiestappen
+              </h2>
               <ol className="mt-4 space-y-3 text-sm text-slate-600">
                 {calibrationSteps.map((step, index) => (
                   <li key={step} className="flex gap-3">
@@ -236,13 +269,18 @@ export default function BambuSettingsPage() {
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
-            <GlassCard className="grid gap-6 border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur md:grid-cols-3">
-              {troubleshooting.map((tip) => (
-                <div key={tip.title}>
-                  <h3 className="text-base font-semibold text-slate-900">{tip.title}</h3>
-                  <p className="mt-2 text-sm text-slate-600">{tip.body}</p>
-                </div>
-              ))}
+            <GlassCard className="border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
+              <h2 id="bambu-troubleshooting" className="scroll-mt-28 text-xl font-semibold text-slate-900">
+                Troubleshooting
+              </h2>
+              <div className="mt-4 grid gap-6 md:grid-cols-3">
+                {troubleshooting.map((tip) => (
+                  <div key={tip.title}>
+                    <h3 className="text-base font-semibold text-slate-900">{tip.title}</h3>
+                    <p className="mt-2 text-sm text-slate-600">{tip.body}</p>
+                  </div>
+                ))}
+              </div>
             </GlassCard>
           </Reveal>
         </div>
@@ -252,7 +290,9 @@ export default function BambuSettingsPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900">Veelgestelde vragen</h2>
+              <h2 id="bambu-faq" className="scroll-mt-28 text-xl font-semibold text-slate-900">
+                Veelgestelde vragen
+              </h2>
               <div className="mt-4 space-y-4 text-sm text-slate-600">
                 {faq.map((item) => (
                   <div key={item.q}>
@@ -261,6 +301,32 @@ export default function BambuSettingsPage() {
                   </div>
                 ))}
               </div>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="bambu-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
         </div>

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -6,12 +6,13 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
-import { buildArticleJsonLd } from "@/lib/seo"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-valentijn/"
 const ogImage = "https://www.x3dprints.be/images/og-home.jpg"
 const publishedDate = "2024-01-25"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
   title: "3D printing Valentine gifts | X3DPrints Blog",
@@ -45,7 +46,7 @@ const tips = [
   "PLA Silk or Marble for shiny hearts and nameplates; Matte PLA for soft pastels.",
   "Translucent PLA (1.6-2 mm walls) for light objects with fairy lights; keep ventilation for LEDs.",
   "Integrate eyelets or pin-holes for magnets and make text at least 0.6 mm thick for legibility.",
-  "Design/model not included: provide STL/STEP or choose design service at â‚¬45/hour.",
+  "Design/model not included: provide STL/STEP or choose design service at €45/hour.",
   "Delivery options: EV zones or parcel service. Fragile pieces are packed separately; pickup in Herzele is free. Bpost export possible for expat gifting or UK/EU partners.",
 ]
 
@@ -60,7 +61,7 @@ const checklist = [
 const faqItems = [
   {
     q: "Do you also make the design?",
-    a: "Optionally, yes. The 3D model is not included. Provide STL/STEP or choose design service at â‚¬45/hour; we tune wall thickness, text and supports.",
+    a: "Optionally, yes. The 3D model is not included. Provide STL/STEP or choose design service at €45/hour; we tune wall thickness, text and supports.",
   },
   {
     q: "Which filament colours do you recommend?",
@@ -92,15 +93,38 @@ const valentijnVideos = [
   },
 ]
 
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
+  },
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
+
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "3D printing Valentine gifts",
-  description:
-    "Heart decor, personalised gifts and light objects in Silk, Matte and Translucent PLA. Checklist for material, LEDs and delivery options. Design file not included.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
   image: ogImage,
   inLanguage: "en-BE",
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  mainEntityOfPage: canonical,
+  items: faqItems,
 })
 
 export default function ValentinesBlogEnPage() {
@@ -136,6 +160,7 @@ export default function ValentinesBlogEnPage() {
               Hearts, nameplates or glowing decor? Choose Silk/Marble/Matte for the right look, keep LEDs ventilated and add mounting holes for magnets or
               ribbons. Design files are not included by default.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
               <ShimmerButton href="/en/contact?material=PLA">Request Valentine prints</ShimmerButton>
               <Link
@@ -276,10 +301,30 @@ export default function ValentinesBlogEnPage() {
           </Reveal>
         </div>
       </section>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
     </main>
   )
 }
+
+
+
 

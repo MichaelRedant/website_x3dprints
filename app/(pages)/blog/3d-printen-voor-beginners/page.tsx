@@ -1,9 +1,11 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-voor-beginners/"
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=3d-printen-voor-beginners"
@@ -12,7 +14,7 @@ const toolHref = `/materials${utm}#material-suggestion-tool`
 const pricingHref = `/pricing${utm}`
 const viewerHref = `/viewer${utm}`
 const datePublished = "2024-08-20"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "3D printen voor beginners | X3DPrints",
@@ -40,7 +42,7 @@ export const metadata: Metadata = {
 const beginnerSteps = [
   "Bepaal het doel: prototype, decoratie, functioneel onderdeel of merchandising. Doel dicteert materiaal en afwerking.",
   "Kies materiaal: PLA voor design, PETG voor functionaliteit, TPU voor flexibiliteit. Bekijk de materialenpagina voor alle opties.",
-  "Verzamel bestanden: STL voor productie, STEP als je nog wijzigingen verwacht. Voeg referentiefotoâ€™s of schetsen toe.",
+  "Verzamel bestanden: STL voor productie, STEP als je nog wijzigingen verwacht. Voeg referentiefoto’s of schetsen toe.",
   "Vraag een offerte met context (aantal stuks, deadline, afwerking) en we begeleiden je door elke stap.",
 ]
 
@@ -48,36 +50,42 @@ const pitfalls = [
   "Te dunne wanden (minder dan 1.2 mm) breken makkelijk. Voeg ribs of fillets toe.",
   "Te strakke passtukken. Voorzie 0.2-0.3 mm speling voor PLA/PETG.",
   "Geen orientatie-opmerking. Laat weten welke zijde zichtbaar is zodat we support slim plaatsen.",
-  "Vergeten afwerking. Geef aan of je ruw, geschuurd of gelakt wil; dat beÃ¯nvloedt de prijs en planning.",
+  "Vergeten afwerking. Geef aan of je ruw, geschuurd of gelakt wil; dat beïnvloedt de prijs en planning.",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
-  inLanguage: "nl-BE",
+const tocItems = [
+  { id: "beginners-steps", label: "Stappenplan" },
+  { id: "beginners-checklist", label: "Checklist per stap" },
+  { id: "beginners-blocks", label: "Materialen, bestanden en coaching" },
+  { id: "beginners-pitfalls", label: "Veelgemaakte fouten" },
+  { id: "beginners-sources", label: "Bronnen en referenties" },
+]
+
+const checklistRows = [
+  { step: "Doel bepalen", focus: "Prototype, decor of functioneel bepaalt materiaal en afwerking." },
+  { step: "Materiaal kiezen", focus: "PLA voor design, PETG voor functionaliteit, TPU voor flexibiliteit." },
+  { step: "Bestanden verzamelen", focus: "STL voor productie, STEP als je nog wijzigingen verwacht." },
+  { step: "Offerte aanvragen", focus: "Aantal, deadline en afwerking versnellen de planning." },
+]
+
+const references = [
+  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm" },
+  { label: "Autodesk: What is a STEP file?", href: "https://www.autodesk.com/solutions/what-is-a-step-file" },
+  { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "3D printen voor beginners",
   description:
     "Gids voor beginners met stappenplan, materiaalkeuze en veelgemaakte fouten. Inclusief tips voor begeleiding en opleiding.",
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/Logo.webp",
-    },
-  },
-  mainEntityOfPage: canonical,
   datePublished,
   dateModified,
-  url: canonical,
-}
+  image: "/images/portfolio/20241024_081839-1.jpg",
+  inLanguage: "nl-BE",
+})
 
 export default function BeginnersArticlePage() {
   return (
@@ -111,6 +119,8 @@ export default function BeginnersArticlePage() {
             <p className="mt-4 text-lg text-slate-700">
               Of je nu student, marketeer of maker bent: met een goed bestand en duidelijke context krijg je snel een professioneel resultaat.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
               <ShimmerButton href={viewerHref} event={{ action: "cta_click", category: "blog_top", label: "viewer_beginners" }}>
                 Upload je eerste model
@@ -132,7 +142,7 @@ export default function BeginnersArticlePage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="beginners-steps" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -150,7 +160,33 @@ export default function BeginnersArticlePage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="beginners-checklist" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="overflow-x-auto border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Checklist per stap</h2>
+              <table className="mt-5 min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                <thead>
+                  <tr className="text-xs uppercase tracking-wide text-slate-500">
+                    <th className="py-2 pr-4">Stap</th>
+                    <th className="py-2 pr-4">Wat je nodig hebt</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {checklistRows.map((row) => (
+                    <tr key={row.step}>
+                      <td className="py-3 pr-4 font-medium text-slate-900">{row.step}</td>
+                      <td className="py-3 pr-4">{row.focus}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="beginners-blocks" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
           {[
             {
@@ -186,7 +222,7 @@ export default function BeginnersArticlePage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="beginners-pitfalls" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -196,6 +232,32 @@ export default function BeginnersArticlePage() {
                   <li key={pitfall} className="flex items-start gap-2">
                     <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-rose-500" aria-hidden />
                     <span>{pitfall}</span>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="beginners-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
                   </li>
                 ))}
               </ul>

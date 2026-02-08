@@ -10,7 +10,7 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 
 const canonical = "https://www.x3dprints.be/blog/hoeveel-kost-3d-printen/"
 const datePublished = "2024-10-01"
-const dateModified = "2026-02-06"
+const dateModified = "2026-02-08"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=hoeveel-kost-3d-printen"
 const materialsHref = "/materials?utm_source=blog&utm_medium=cta&utm_campaign=hoeveel-kost-3d-printen#material-suggestion-tool"
 const contactHref =
@@ -130,15 +130,15 @@ const faqItems = [
 const references = [
   {
     label: "Prusa material guide (PLA, PETG, TPU)",
-    href: "https://help.prusa3d.com/article/material-guide_220",
+    href: "https://help.prusa3d.com/filament-material-guide",
   },
   {
-    label: "All3DP FDM process explainer",
-    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+    label: "PrusaSlicer: G-code viewer (print time)",
+    href: "https://help.prusa3d.com/article/g-code-viewer_78984",
   },
   {
-    label: "ISO/ASTM additive manufacturing terminology",
-    href: "https://www.astm.org/f2997-13r21.html",
+    label: "Ultimaker: Design for FFF 3D printing",
+    href: "https://ultimaker.com/learn/design-for-fff-3d-printing/",
   },
 ]
 
@@ -219,7 +219,7 @@ export default function BlogCostPage() {
             Gebruik deze gids als referentie voor je 3d printen prijs en vergelijk prijs 3d printen per formaat.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 6 februari 2026
+            Laatst bijgewerkt: 8 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton

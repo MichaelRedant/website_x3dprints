@@ -1,12 +1,32 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
 import Faq from "@/components/Faq"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 
 const canonical = "https://www.x3dprints.be/blog/gridfinity-modulair-opslagsysteem/"
 const publishedDate = "2026-01-30T08:00:00+01:00"
+const dateModified = "2026-02-08T08:00:00+01:00"
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "grid-what", label: "Wat is Gridfinity?" },
+  { id: "grid-why", label: "Waarom zo populair?" },
+  { id: "grid-specs", label: "Gridfinity in cijfers" },
+  { id: "grid-core", label: "Technische kern" },
+  { id: "grid-use", label: "Toepassingen" },
+  { id: "grid-challenges", label: "Uitdagingen & oplossingen" },
+  { id: "grid-why-us", label: "Waarom X3DPrints?" },
+  { id: "grid-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "Gridfinity specification (GitHub)", href: "https://github.com/gridfinity-unofficial/specification" },
+  { label: "Prusa: Materials overview", href: "https://help.prusa3d.com/filament-material-guide" },
+]
 
 const GRID_IMAGES = [
   { src: "/images/organizers/modugrid/ModuGrid1.jpg", alt: "Gridfinity lade overzicht (bovenaan)", width: 1600, height: 900 },
@@ -26,15 +46,15 @@ const FAQ_ITEMS = [
   },
   {
     q: "Welke magneten passen in Gridfinity?",
-    a: "Standaard 6Ã—2 mm magneten in elke hoek. Voor zwaar gebruik kunnen we M3-schroeven voorzien om de baseplate of bins te fixeren.",
+    a: "Standaard 6×2 mm magneten in elke hoek. Voor zwaar gebruik kunnen we M3-schroeven voorzien om de baseplate of bins te fixeren.",
   },
   {
     q: "Welk materiaal kies ik voor Gridfinity bins?",
     a: "PLA Matte voor bureaulades en zichtwerk; PETG voor transport/warme omgevingen. Optioneel antislip-bodem en in-print labels.",
   },
   {
-    q: "Kun je een custom bin voor Ã©Ã©n specifieke tool maken?",
-    a: "Ja. Stuur een top-down foto, LÃ—BÃ—H (of diameter Ã— hoogte), gewenste oriÃ«ntatie en aantal. We tekenen een pocket, delen een preview en passen aan tot het klopt.",
+    q: "Kun je een custom bin voor één specifieke tool maken?",
+    a: "Ja. Stuur een top-down foto, L×B×H (of diameter × hoogte), gewenste oriëntatie en aantal. We tekenen een pocket, delen een preview en passen aan tot het klopt.",
   },
   {
     q: "Werkt Gridfinity in koffers zoals Milwaukee Packout?",
@@ -49,7 +69,7 @@ const FAQ_ITEMS = [
 export const metadata: Metadata = {
   title: "Gridfinity: modulair opslagsysteem + maatwerk door X3DPrints",
   description:
-    "Gridfinity uitgelegd: 42Ã—42-raster, 7 mm hoogtes, magneten, labels, toepassingen en hoe X3DPrints custom bins en Packout-inlays levert.",
+    "Gridfinity uitgelegd: 42×42-raster, 7 mm hoogtes, magneten, labels, toepassingen en hoe X3DPrints custom bins en Packout-inlays levert.",
   alternates: {
     canonical,
     languages: {
@@ -77,41 +97,42 @@ export default function GridfinityBlogNl() {
     <main className="px-6 pb-16 sm:px-8 lg:px-12">
       <article className="mx-auto max-w-4xl space-y-12">
         <header className="space-y-4 pt-10 sm:pt-14">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-700">Gridfinity Â· gids</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-700">Gridfinity · gids</p>
           <h1 className="text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
             Gridfinity: het modulaire opslagsysteem dat werkplaatsen, hobbyruimtes en bedrijven transformeert
           </h1>
           <p className="text-lg text-slate-700 dark:text-slate-200">
-            Waarom het 42Ã—42Ã—7â€‘mm raster zoveel fans heeft en hoe X3DPrints custom bins, starterkits en Packout-inlays ontwerpt zodat jij orde en
-            tijdswinst koopt â€“ niet plastic.
+            Waarom het 42×42×7‑mm raster zoveel fans heeft en hoe X3DPrints custom bins, starterkits en Packout-inlays ontwerpt zodat jij orde en
+            tijdswinst koopt – niet plastic.
           </p>
+          <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
           <div className="flex flex-wrap gap-3 text-sm text-slate-600">
-            <span>Laatste update: 30 januari 2026</span>
+            <span>{lastUpdatedLabel}</span>
             <span className="inline-flex items-center gap-1 rounded-full bg-cyan-50 px-2 py-1 text-xs font-semibold text-cyan-700 ring-1 ring-cyan-100">
               Gridfinity explained
             </span>
           </div>
         </header>
 
-        <section className="space-y-3 text-slate-700 dark:text-slate-200">
+        <section id="grid-what" className="scroll-mt-28 space-y-3 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Wat is Gridfinity?</h2>
           <p>
-            Gridfinity gebruikt een gestandaardiseerd raster van 42 Ã— 42 mm en hoogte-eenheden van 7 mm. Bins passen per gridcel en stapelen per
-            Uâ€‘unit. Magnet pockets voor 6Ã—2â€‘mm magneten zorgen dat trays vastliggen; M3-schroeven kunnen voor extra fixatie. Labelranden (bv. 9â€‘mm
+            Gridfinity gebruikt een gestandaardiseerd raster van 42 × 42 mm en hoogte-eenheden van 7 mm. Bins passen per gridcel en stapelen per
+            U‑unit. Magnet pockets voor 6×2‑mm magneten zorgen dat trays vastliggen; M3-schroeven kunnen voor extra fixatie. Labelranden (bv. 9‑mm
             tape) houden alles visueel helder. PLA of PETG zijn ideaal: strak, stevig en snel te printen.
           </p>
           <ul className="list-disc space-y-2 pl-5">
-            <li>Compatibel tussen ontwerpers en printers â€“ alles blijft uitwisselbaar.</li>
+            <li>Compatibel tussen ontwerpers en printers – alles blijft uitwisselbaar.</li>
             <li>Customiseerbaar tot op de millimeter: elke tool krijgt een eigen pocket.</li>
-            <li>Schaalbaar van Ã©Ã©n lade tot een volledige muur of Packout-koffer.</li>
+            <li>Schaalbaar van één lade tot een volledige muur of Packout-koffer.</li>
           </ul>
         </section>
 
-        <section className="space-y-3 text-slate-700 dark:text-slate-200">
+        <section id="grid-why" className="scroll-mt-28 space-y-3 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Waarom zo populair?</h2>
           <ol className="list-decimal space-y-2 pl-5">
             <li>
-              <strong>Modulaire perfectie:</strong> het 42â€‘mm raster houdt baseplates en bins compatibel.
+              <strong>Modulaire perfectie:</strong> het 42‑mm raster houdt baseplates en bins compatibel.
             </li>
             <li>
               <strong>Personaliseerbaar:</strong> elke tool kan een exact passende bin krijgen.
@@ -120,7 +141,7 @@ export default function GridfinityBlogNl() {
               <strong>Schaalbaar:</strong> start klein, breid uit zonder standaarden te breken.
             </li>
           </ol>
-          <p>Geschikt voor hobbyisten, elektriciens, houtbewerkers, modelbouwers Ã©n industriÃ«le flows.</p>
+          <p>Geschikt voor hobbyisten, elektriciens, houtbewerkers, modelbouwers én industriële flows.</p>
         </section>
 
         <section className="mt-10 space-y-4">
@@ -143,17 +164,57 @@ export default function GridfinityBlogNl() {
           </p>
         </section>
 
-        <section className="space-y-4 text-slate-700 dark:text-slate-200">
+        <section id="grid-specs" className="scroll-mt-28 space-y-4 text-slate-700 dark:text-slate-200">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Gridfinity in cijfers</h2>
+          <GlassCard className="overflow-x-auto">
+            <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+              <thead>
+                <tr className="text-xs uppercase tracking-wide text-slate-500">
+                  <th className="py-2 pr-4">Spec</th>
+                  <th className="py-2 pr-4">Waarde</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                <tr>
+                  <td className="py-3 pr-4 font-medium text-slate-900">Grid raster</td>
+                  <td className="py-3 pr-4">42 × 42 mm</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-4 font-medium text-slate-900">Hoogte-unit</td>
+                  <td className="py-3 pr-4">7 mm (U‑unit)</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-4 font-medium text-slate-900">Magnet pockets</td>
+                  <td className="py-3 pr-4">6 × 2 mm</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-4 font-medium text-slate-900">Nominale binbreedte</td>
+                  <td className="py-3 pr-4">41,5 mm</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-4 font-medium text-slate-900">Labelrand</td>
+                  <td className="py-3 pr-4">9‑mm tape</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-4 font-medium text-slate-900">Materialen</td>
+                  <td className="py-3 pr-4">PLA of PETG</td>
+                </tr>
+              </tbody>
+            </table>
+          </GlassCard>
+        </section>
+
+        <section id="grid-core" className="scroll-mt-28 space-y-4 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Technische kern</h2>
           <GlassCard className="space-y-2">
             <p>
-              <strong>Raster & maten:</strong> 42Ã—42 mm, 7â€‘mm Uâ€™s; nominale binbreedte 41,5 mm voor soepele fit.
+              <strong>Raster & maten:</strong> 42×42 mm, 7‑mm U’s; nominale binbreedte 41,5 mm voor soepele fit.
             </p>
             <p>
-              <strong>Magneten:</strong> 6Ã—2â€‘mm magnet pockets in hoeken; optioneel M3-schroeven voor transport.
+              <strong>Magneten:</strong> 6×2‑mm magnet pockets in hoeken; optioneel M3-schroeven voor transport.
             </p>
             <p>
-              <strong>Labels:</strong> labelrand compatibel met 9â€‘mm tape voor snelle herkenning.
+              <strong>Labels:</strong> labelrand compatibel met 9‑mm tape voor snelle herkenning.
             </p>
             <p>
               <strong>Materialen:</strong> PLA Matte voor bureaulades; PETG voor transport of warmere omgevingen.
@@ -165,30 +226,30 @@ export default function GridfinityBlogNl() {
           </GlassCard>
         </section>
 
-        <section className="space-y-3 text-slate-700 dark:text-slate-200">
+        <section id="grid-use" className="scroll-mt-28 space-y-3 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Toepassingen</h2>
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              <strong>Hobby & makerspaces:</strong> 3Dâ€‘printer accessoires, bits, elektronica, miniaturen.
+              <strong>Hobby & makerspaces:</strong> 3D‑printer accessoires, bits, elektronica, miniaturen.
             </li>
             <li>
               <strong>Professioneel:</strong> magazijn, servicewagens, productie, elektrische componenten.
             </li>
             <li>
-              <strong>Thuis:</strong> makeâ€‘up, kantoor, naaigerief, keukenlades.
+              <strong>Thuis:</strong> make‑up, kantoor, naaigerief, keukenlades.
             </li>
           </ul>
           <p>
             Integraties met koffersystemen (Milwaukee Packout, DeWALT ToughSystem, Stanley TSTAK) zijn booming: print baseplates die exact in een
-            koffer passen en behoud het 42â€‘mm raster. Wij maken Packoutâ€‘compatibele Gridfinity inlays die de hoogteâ€‘units van je koffer respecteren.
+            koffer passen en behoud het 42‑mm raster. Wij maken Packout‑compatibele Gridfinity inlays die de hoogte‑units van je koffer respecteren.
           </p>
         </section>
 
-        <section className="space-y-3 text-slate-700 dark:text-slate-200">
+        <section id="grid-challenges" className="scroll-mt-28 space-y-3 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Uitdagingen & oplossingen</h2>
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              <strong>HygiÃ«ne:</strong> voor food-toepassingen minder geschikt; voor tools en parts ideaal.
+              <strong>Hygiëne:</strong> voor food-toepassingen minder geschikt; voor tools en parts ideaal.
             </li>
             <li>
               <strong>Dode ruimte:</strong> gebruik half-pitch bins of custom baseplates op je lade-afmeting.
@@ -212,14 +273,14 @@ export default function GridfinityBlogNl() {
           </p>
         </section>
 
-        <section className="space-y-3 text-slate-700 dark:text-slate-200">
+        <section id="grid-why-us" className="scroll-mt-28 space-y-3 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Waarom X3DPrints?</h2>
           <ul className="list-disc space-y-2 pl-5">
             <li>Starter kits om meteen te beginnen zonder zelf te printen.</li>
             <li>Sector-specifieke sets (elektriciens, makers, industrie).</li>
             <li>Packout-compatibele inlays op maat.</li>
-            <li>Custom bins op basis van jouw toolfoto + maten + gewenste oriÃ«ntatie.</li>
-            <li>Volledig ingerichte lades voor rust en efficiÃ«ntie.</li>
+            <li>Custom bins op basis van jouw toolfoto + maten + gewenste oriëntatie.</li>
+            <li>Volledig ingerichte lades voor rust en efficiëntie.</li>
           </ul>
           <p>
             Wij printen en ontwerpen vanuit Herzele (
@@ -234,7 +295,7 @@ export default function GridfinityBlogNl() {
           <GlassCard className="space-y-3 text-center">
             <h3 className="text-xl font-bold text-slate-900 dark:text-white">Klaar voor een rustige lade of koffer?</h3>
             <p className="text-sm text-slate-700 dark:text-slate-200">
-              Kies een starterkit of laat een custom Gridfinity pocket modelleren. EÃ©n intake, Ã©Ã©n vaste indeling.
+              Kies een starterkit of laat een custom Gridfinity pocket modelleren. Eén intake, één vaste indeling.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Link
@@ -283,6 +344,28 @@ export default function GridfinityBlogNl() {
           </div>
           <OrganizerCta locale="nl" />
 
+          <div id="grid-sources" className="scroll-mt-28 mt-8">
+            <GlassCard className="space-y-4 p-6">
+              <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Bronnen en referenties</h2>
+              <ul className="space-y-2 text-sm text-slate-700 dark:text-slate-200">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0B0F1A]/80">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-cyan-700 hover:text-cyan-900 dark:text-cyan-200"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </div>
+
           <div className="mt-8">
             <Faq items={FAQ_ITEMS} title="Veelgestelde vragen over Gridfinity" />
           </div>
@@ -299,7 +382,7 @@ export default function GridfinityBlogNl() {
             description:
               "Gridfinity uitgelegd: raster, magneten, labels, toepassingen en hoe X3DPrints maatwerk bins, starterkits en Packout-inlays levert.",
             datePublished: publishedDate,
-            dateModified: publishedDate,
+            dateModified,
             author: { "@type": "Person", name: "X3DPrints" },
             publisher: {
               "@type": "Organization",

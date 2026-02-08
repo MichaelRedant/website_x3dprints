@@ -3,10 +3,12 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
+import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pla-wood/"
 const publishedDate = "2025-09-26T08:00:00+02:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Wood filament 3D printen: PLA Wood en specials | X3DPrints",
@@ -171,7 +173,7 @@ const resourceLinks = [
   { label: "Prijzen & calculator", href: "/pricing", description: "Zie impact van langere runtimes en speciale filamenten." },
 ]
 
-const externalReferences = [
+const references = [
 
   {
     label: "Bambu Lab PLA Wood TDS",
@@ -201,32 +203,18 @@ const upcomingPosts = [
   { label: "Finishing Friday: schuren, primen, lakken", href: "/blog/finishing-friday-schuren-primen-lakken" },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Wood filament 3D printen: PLA Wood en specials",
-  description:
-    "Filament Vrijdag #4 van X3DPrints. Leer wanneer PLA Wood en speciale PLA filamenten zinvol zijn, welke instellingen werken en hoe je ze inzet voor esthetische 3D prints.",
+  description: "Filament Vrijdag #4 van X3DPrints. Leer wanneer PLA Wood en speciale PLA filamenten zinvol zijn, welke instellingen werken en hoe je ze inzet voor esthetische 3D prints.",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/og-x3dprints.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
+
+
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
 function SectionDivider() {
   return (
@@ -275,6 +263,7 @@ export default function FilamentVrijdagPlaWoodPage() {
               wel stukken die in een etalage, foto of interieur moeten scoren. Deze editie bundelt studio-instellingen, besliscriteria en nabewerkingstips,
               gebaseerd op de Bambu PLA Wood technical data sheet en eigen projecten.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/contact?material=PLA%20Wood">Plan een PLA Wood print</ShimmerButton>
               <Link
@@ -618,13 +607,13 @@ export default function FilamentVrijdagPlaWoodPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en verder lezen</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Wil je zelf verder experimenteren, dan zijn dit goede vertrekpunten. We verwijzen er ook naar in onze interne documentatie rond wood filament 3D
                 printen.
               </p>
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
-                {externalReferences.map((ref) => (
+                {references.map((ref) => (
                   <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/60 p-4">
                     <Link
                       href={ref.href}
@@ -671,6 +660,10 @@ export default function FilamentVrijdagPlaWoodPage() {
     </main>
   )
 }
+
+
+
+
 
 
 

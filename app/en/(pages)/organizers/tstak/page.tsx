@@ -18,7 +18,7 @@ const PAGE_EN: OrganizerPageContent = {
     title: "TSTAK inserts made to fit | X3DPrints",
     description:
       "Stanley/DeWALT TSTAK inserts for small parts and all-round kits: no rattle, clear label zones and optional anti-slip. Custom TSTAK insert in Belgium for field teams and vans.",
-    canonical: `${SITE.url}/en/organizers/tstak`,
+    canonical: `${SITE.url}/en/organizers/tstak/`,
     ogImage: "/images/organizers/tstak/tstak0.jpg",
   },
   heroTitle: "TSTAK inserts with fixed layouts",
@@ -125,9 +125,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: PAGE_URL,
     languages: {
-      "nl-BE": `${SITE.url}/organizers/tstak`,
+      "nl-BE": `${SITE.url}/organizers/tstak/`,
       "en-BE": PAGE_URL,
-      "x-default": `${SITE.url}/organizers/tstak`,
+      "x-default": `${SITE.url}/organizers/tstak/`,
     },
   },
   openGraph: {

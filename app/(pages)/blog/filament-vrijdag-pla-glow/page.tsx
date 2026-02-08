@@ -3,10 +3,12 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
+import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pla-glow/"
 const publishedDate = "2025-10-17T08:00:00+02:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "PLA Glow 3D printen: lichtgevende prints zonder batterij | X3DPrints",
@@ -54,7 +56,7 @@ const heroStats = [
   },
   {
     label: "Typische toepassingen",
-    value: "Signage Â· props Â· veiligheid",
+    value: "Signage · props · veiligheid",
     detail: "Glow moet waarde toevoegen",
   },
 ]
@@ -63,7 +65,7 @@ const printSettings = [
   { label: "Nozzle", value: "205-220 degC", note: "Start rond je PLA-profiel, hoger voor grotere nozzles" },
   { label: "Bed", value: "55-60 degC", note: "PEI of glas met lijm, net als standaard PLA" },
   { label: "Snelheid", value: "40-70 mm/s", note: "Iets trager voor consistente glow en minder slijtage" },
-  { label: "Koeling", value: "80-100%", note: "Hou tekst/logoâ€™s strak" },
+  { label: "Koeling", value: "80-100%", note: "Hou tekst/logo’s strak" },
   { label: "Layerhoogte", value: "0.16-0.28 mm", note: "Grotere lagen = sterkere glow en zachtere look" },
   { label: "Retraction", value: "0.8-1.2 mm", note: "Conservatief houden om stringing te beperken" },
 ]
@@ -73,12 +75,12 @@ const whenToUse = [
   "Interieuraccenten zoals nachtlichtjes, subtiele glow-details of signalisatie.",
   "Marketing- en eventprops waar glow een duidelijk wow-effect geeft.",
   "Veiligheids- of aanduidingselementen (nooduitgangpijlen, markers, keycaps).",
-  "Logoâ€™s en belettering die in schemer of avondlicht extra karakter krijgen.",
+  "Logo’s en belettering die in schemer of avondlicht extra karakter krijgen.",
 ]
 
 const whenToAvoid = [
   "Functionele brackets of machineonderdelen waar glow geen waarde toevoegt.",
-  "Projecten met hoge mechanische belasting â€“ gebruik PETG of TPU.",
+  "Projecten met hoge mechanische belasting – gebruik PETG of TPU.",
   "Extreem kleine details: pigment kan microdetail maskeren.",
   "Cases die langdurig in direct zonlicht liggen (glow degradeert sneller bij UV).",
 ]
@@ -139,7 +141,7 @@ const mitigationTips = [
       "Hou filament droog, pas retraction in kleine stappen aan en verlaag indien nodig de nozzletemperatuur met 5 degC.",
   },
   {
-    title: "Leesbaarheid van tekst en logoâ€™s",
+    title: "Leesbaarheid van tekst en logo’s",
     insight:
       "Vermijd superkleine letterhoogtes; pigmenten maken microdetail minder scherp dan effen PLA. Werk met duidelijke contrasten.",
   },
@@ -147,14 +149,14 @@ const mitigationTips = [
 
 const resourceLinks = [
   { label: "3D printen pillar", href: "/3d-printen", description: "Workflow, materialen en typische projecten." },
-  { label: "Materialenbibliotheek", href: "/materials", description: "PLA Glow, Marble, Matte en andere visuals in Ã©Ã©n overzicht." },
+  { label: "Materialenbibliotheek", href: "/materials", description: "PLA Glow, Marble, Matte en andere visuals in één overzicht." },
   { label: "Prijzen en calculator", href: "/pricing", description: "Zie de impact van materiaalkeuze op je offerte." },
   { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool", description: "Laat de wizard een voorstel doen." },
 ]
 
-const externalReferences = [
+const references = [
   {
-    label: "Bambu Lab â€“ PLA gids",
+    label: "Bambu Lab – PLA gids",
     href: "https://wiki.bambulab.com/en/filament/pla",
     description: "Baseline instellingen voor PLA (incl. glow-opmerkingen) op X1/P1 printers.",
   },
@@ -169,38 +171,24 @@ const externalReferences = [
     description: "Praktische nozzle-, snelheid- en opslagadviezen.",
   },
   {
-    label: "Prusa â€“ Different nozzle types",
+    label: "Prusa – Different nozzle types",
     href: "https://help.prusa3d.com/article/different-nozzle-types_2193",
     description: "Waarom abrasieve filamenten (zoals PLA Glow) een geharde nozzle vragen.",
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "PLA Glow 3D printen: lichtgevende prints zonder batterij",
-  description:
-    "Filament Vrijdag #6. Leer hoe PLA Glow werkt, welke instellingen je gebruikt en wanneer glow-in-the-dark PLA echt waarde toevoegt.",
+  description: "Filament Vrijdag #6. Leer hoe PLA Glow werkt, welke instellingen je gebruikt en wanneer glow-in-the-dark PLA echt waarde toevoegt.",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/og-x3dprints.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
+
+
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
 function SectionDivider() {
   return (
@@ -248,6 +236,7 @@ export default function FilamentVrijdagPlaGlowPage() {
               PLA Glow is de eenvoudigste manier om een lichtgevend effect toe te voegen zonder elektronica. De pigmenten slaan licht op en geven dit langzaam terug. Ideaal voor props, signage en veiligheidstoepassingen, zolang glow echt waarde
               toevoegt. In deze editie delen we de instellingen, hardwaretips en use cases die wekelijks in de studio passeren.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/contact?material=PLA%20Glow">Vraag PLA Glow advies</ShimmerButton>
               <Link
@@ -263,7 +252,7 @@ export default function FilamentVrijdagPlaGlowPage() {
                 Terug naar pillar
               </Link>
             </div>
-            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 17 oktober 2025 â€“ na PLA Marble & specials.</p>
+            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 17 oktober 2025 – na PLA Marble & specials.</p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
             {heroStats.map((stat) => (
@@ -438,7 +427,7 @@ export default function FilamentVrijdagPlaGlowPage() {
                 </li>
                 <li className="rounded-2xl border border-slate-100 bg-white/60 p-4">
                   <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Marketing & events</p>
-                  <p className="mt-2">Giveaways en displays met een echt â€œlichtmomentâ€ zonder extra elektronica.</p>
+                  <p className="mt-2">Giveaways en displays met een echt “lichtmoment” zonder extra elektronica.</p>
                 </li>
               </ul>
             </GlassCard>
@@ -459,7 +448,7 @@ export default function FilamentVrijdagPlaGlowPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
-                  <span>Interieurprops (nachtlichtjes, signage) die overdag subtiel en â€™s avonds zichtbaar moeten zijn.</span>
+                  <span>Interieurprops (nachtlichtjes, signage) die overdag subtiel en ’s avonds zichtbaar moeten zijn.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
@@ -559,12 +548,12 @@ export default function FilamentVrijdagPlaGlowPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en verder lezen</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Wil je zelf experimenteren met glow filament, dan zijn dit betrouwbare startpunten met concrete instellingen en hardwaretips.
               </p>
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
-                {externalReferences.map((ref) => (
+                {references.map((ref) => (
                   <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/60 p-4">
                     <Link
                       href={ref.href}
@@ -611,6 +600,10 @@ export default function FilamentVrijdagPlaGlowPage() {
     </main>
   )
 }
+
+
+
+
 
 
 

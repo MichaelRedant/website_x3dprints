@@ -26,10 +26,55 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/layout.js"
     ],
-    "/(pages)/viewer/page": [
+    "/(pages)/blog/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/viewer/page.js"
+      "static/chunks/app/(pages)/blog/layout.js"
+    ],
+    "/(pages)/blog/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/page.js"
+    ],
+    "/(pages)/blog/gridfinity-modulair-opslagsysteem/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/gridfinity-modulair-opslagsysteem/page.js"
+    ],
+    "/(pages)/blog/maker-monday-toleranties-3d-printen/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/maker-monday-toleranties-3d-printen/page.js"
+    ],
+    "/(pages)/blog/3d-printen-voor-beginners/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/3d-printen-voor-beginners/page.js"
+    ],
+    "/en/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/layout.js"
+    ],
+    "/en/(pages)/blog/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/(pages)/blog/layout.js"
+    ],
+    "/en/(pages)/blog/3d-printen-voor-beginners/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/(pages)/blog/3d-printen-voor-beginners/page.js"
+    ],
+    "/(pages)/blog/maker-monday-wanddiktes-ribs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/maker-monday-wanddiktes-ribs/page.js"
+    ],
+    "/(pages)/blog/use-case-dinsdag-auto-fiets/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/use-case-dinsdag-auto-fiets/page.js"
     ]
   }
 }

@@ -1,12 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/maker-monday-toleranties-3d-printen/"
 const publishedDate = "2025-10-20T08:00:00+02:00"
+const dateModified = "2026-02-08T08:00:00+02:00"
 
 export const metadata: Metadata = {
   title: "Maker Monday #3: Toleranties voor 3D printen | X3DPrints",
@@ -49,7 +52,7 @@ export const metadata: Metadata = {
 }
 
 const heroStats = [
-  { label: "Baseline speling", value: "Â±0.15 mm", detail: "PLA glijdend" },
+  { label: "Baseline speling", value: "±0.15 mm", detail: "PLA glijdend" },
   { label: "PETG klik", value: "+0.30 mm", detail: "Extra ruimte voor zwelling" },
   { label: "TPU snap", value: "+0.60 mm", detail: "Flexibele onderdelen" },
 ]
@@ -59,7 +62,7 @@ const toleranceTable = [
     material: "PLA",
     sliding: "+0.15 mm",
     click: "+0.20 mm",
-    peg: "+0.20 â€“ 0.25 mm",
+    peg: "+0.20 – 0.25 mm",
     hinge: "+0.20 mm",
     snap: "+0.25 mm",
   },
@@ -67,7 +70,7 @@ const toleranceTable = [
     material: "PETG",
     sliding: "+0.25 mm",
     click: "+0.30 mm",
-    peg: "+0.30 â€“ 0.35 mm",
+    peg: "+0.30 – 0.35 mm",
     hinge: "+0.25 mm",
     snap: "+0.35 mm",
   },
@@ -82,37 +85,39 @@ const toleranceTable = [
 ]
 
 const clearanceUseCases = [
-  { use: "Schuifmechanisme", pla: "0.20 mm", petg: "0.30 mm", tpu: "0.40 â€“ 0.50 mm" },
+  { use: "Schuifmechanisme", pla: "0.20 mm", petg: "0.30 mm", tpu: "0.40 – 0.50 mm" },
   { use: "Rotatie / scharnier", pla: "0.20 mm", petg: "0.25 mm", tpu: "0.40 mm" },
   { use: "Sliding cover / rail", pla: "0.20 mm", petg: "0.30 mm", tpu: "0.40 mm" },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "tolerance-why", label: "Waarom tolerantie cruciaal is" },
+  { id: "tolerance-basis", label: "Interne vs externe maten" },
+  { id: "tolerance-materials", label: "Toleranties per materiaal" },
+  { id: "tolerance-clearance", label: "Clearance voor bewegende delen" },
+  { id: "tolerance-slicer", label: "Slicer-factoren" },
+  { id: "tolerance-fouten", label: "Vermijd deze fouten" },
+  { id: "tolerance-tests", label: "Test prints zijn geen luxe" },
+  { id: "tolerance-scenarios", label: "Praktische scenario's" },
+  { id: "tolerance-when", label: "Wanneer X3DPrints inschakelen?" },
+  { id: "tolerance-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
+  { label: "Prusa: Materials overview", href: "https://help.prusa3d.com/es/materials" },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Maker Monday #3: Toleranties voor 3D printen",
-  description:
-    "Hoeveel speling heb je nodig bij FDM? Bekijk de studio-toleranties voor PLA, PETG en TPU inclusief pen-gat, klikverbindingen en slicerfactoren.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
 
 function SectionDivider() {
   return (
@@ -161,6 +166,8 @@ export default function MakerMondayTolerantiesPage() {
               Hier vind je de studio-geteste toleranties voor PLA, PETG en TPU, plus tips om slicer invloeden onder controle te
               houden.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=maker-monday-tolerances">Vraag tolerantie-review</ShimmerButton>
               <Link
@@ -177,7 +184,7 @@ export default function MakerMondayTolerantiesPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-slate-500">
-              Gepubliceerd op 20 oktober 2025 â€¢ Deel van de Maker Monday knowledge hub.
+              Gepubliceerd op 20 oktober 2025 • Deel van de Maker Monday knowledge hub.
             </p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
@@ -198,10 +205,12 @@ export default function MakerMondayTolerantiesPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">1. Waarom tolerantie cruciaal is</h2>
+              <h2 id="tolerance-why" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                1. Waarom tolerantie cruciaal is
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
-                FDM-resultaten worden beÃ¯nvloed door extrusiebreedte, koeling, krimp, flow en slicer-rounding. Zelfs met een
-                perfecte Bambu X1C, Prusa MK4 of Voron 2.4 zie je variaties van Â±0.10 tot 0.20 mm rond elke maat. Daarom moet je
+                FDM-resultaten worden beïnvloed door extrusiebreedte, koeling, krimp, flow en slicer-rounding. Zelfs met een
+                perfecte Bambu X1C, Prusa MK4 of Voron 2.4 zie je variaties van ±0.10 tot 0.20 mm rond elke maat. Daarom moet je
                 tolerantie inbouwen, niet hopen dat de slicer het oplost. Onthoud ook: interne maten worden kleiner, externe
                 maten groter.
               </p>
@@ -209,9 +218,11 @@ export default function MakerMondayTolerantiesPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">2. Basisregel: interne vs externe maten</h2>
+              <h2 id="tolerance-basis" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                2. Basisregel: interne vs externe maten
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
-                Een gat van 10.00 mm print vaak als 9.80â€“9.90 mm. Een pen van 10.00 mm landt eerder op 10.10â€“10.20 mm. Daardoor
+                Een gat van 10.00 mm print vaak als 9.80–9.90 mm. Een pen van 10.00 mm landt eerder op 10.10–10.20 mm. Daardoor
                 is speling essentieel. Ontwerp altijd met een offset die aansluit bij het materiaal. Je kan de pen verkleinen,
                 het gat vergroten of beide. De tabellen hieronder geven onze baseline.
               </p>
@@ -224,7 +235,9 @@ export default function MakerMondayTolerantiesPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">3. Toleranties per materiaal</h2>
+              <h2 id="tolerance-materials" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                3. Toleranties per materiaal
+              </h2>
               <div className="mt-4 overflow-x-auto">
                 <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
                   <thead>
@@ -280,7 +293,9 @@ export default function MakerMondayTolerantiesPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">4. Clearance voor bewegende delen</h2>
+              <h2 id="tolerance-clearance" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                4. Clearance voor bewegende delen
+              </h2>
               <div className="mt-4 overflow-x-auto">
                 <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
                   <thead>
@@ -324,10 +339,12 @@ export default function MakerMondayTolerantiesPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">5. Slicer-factoren</h2>
+              <h2 id="tolerance-slicer" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                5. Slicer-factoren
+              </h2>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-600">
                 <li>
-                  <span className="font-semibold">Line width:</span> een 0.4 mm nozzle print vaak 0.42â€“0.48 mm breed.
+                  <span className="font-semibold">Line width:</span> een 0.4 mm nozzle print vaak 0.42–0.48 mm breed.
                   Houd hier rekening mee bij CAD-maten.
                 </li>
                 <li>
@@ -351,7 +368,9 @@ export default function MakerMondayTolerantiesPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">6. Vermijd deze fouten</h2>
+              <h2 id="tolerance-fouten" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                6. Vermijd deze fouten
+              </h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-600">
                 <li className="rounded-2xl border border-slate-100 bg-white/70 p-3">Gaten tekenen op 3.00 mm zonder speling.</li>
                 <li className="rounded-2xl border border-slate-100 bg-white/70 p-3">Snapfits zonder fillets of rib-ondersteuning.</li>
@@ -366,9 +385,11 @@ export default function MakerMondayTolerantiesPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">7. Test prints zijn geen luxe</h2>
+              <h2 id="tolerance-tests" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                7. Test prints zijn geen luxe
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
-                We draaien altijd een tolerance tower (5â€“10 varianten), fit cubes of pin gauge tests voordat we een kritieke
+                We draaien altijd een tolerance tower (5–10 varianten), fit cubes of pin gauge tests voordat we een kritieke
                 assembly printen. Zo ontdek je meteen welke spelingswaarde de sweet spot is voor jouw materiaal, nozzle en
                 slicerinstellingen.
               </p>
@@ -381,12 +402,14 @@ export default function MakerMondayTolerantiesPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">8. Praktische scenario&apos;s</h2>
+              <h2 id="tolerance-scenarios" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                8. Praktische scenario&apos;s
+              </h2>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-600">
                 <li>Behuizing met schroefgaten: PLA +0.20 mm, PETG +0.30 mm.</li>
                 <li>Twee delen die klikken: PLA +0.25 mm, PETG +0.30 mm, TPU +0.50 mm.</li>
                 <li>Draaibare onderdelen: PLA +0.20 mm, PETG +0.25 mm, TPU +0.40 mm.</li>
-                <li>Strakke inserts of moeren: 0.10â€“0.20 mm negatieve tolerantie en bekijk{" "}
+                <li>Strakke inserts of moeren: 0.10–0.20 mm negatieve tolerantie en bekijk{" "}
                   <Link
                     href="/blog/maker-monday-schroefdraad-inserts"
                     className="font-semibold text-indigo-600 transition hover:text-indigo-500"
@@ -400,10 +423,12 @@ export default function MakerMondayTolerantiesPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">9. Wanneer X3DPrints inschakelen?</h2>
+              <h2 id="tolerance-when" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                9. Wanneer X3DPrints inschakelen?
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Laat ons meekijken wanneer je ontwerp beweegt, klikt, scharniert of PETG/TPU combineert. We optimaliseren
-                speling, wanddiktes, oriÃ«ntatie en materiaalkeuze zodat je assembly in Ã©Ã©n keer klopt.
+                speling, wanddiktes, oriëntatie en materiaalkeuze zodat je assembly in één keer klopt.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <ShimmerButton href="/contact?topic=maker-monday-tolerances">Plan een review</ShimmerButton>
@@ -414,6 +439,32 @@ export default function MakerMondayTolerantiesPage() {
                   Bekijk pricing & workflow
                 </Link>
               </div>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="tolerance-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
         </div>
@@ -452,6 +503,7 @@ export default function MakerMondayTolerantiesPage() {
     </main>
   )
 }
+
 
 
 

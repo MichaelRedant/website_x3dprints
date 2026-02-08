@@ -99,20 +99,20 @@ const faqItems = [
   {
     question: "How do I check if I caught the right species?",
     answer:
-      "Take a clear photo and use an ID app such as ObsIdentify (waarnemingen.be) or get confirmation via the actionâ€™s contact channels as shared by the organizers/municipality.",
+      "Take a clear photo and use an ID app such as ObsIdentify (waarnemingen.be) or get confirmation via the action’s contact channels as shared by the organizers/municipality.",
   },
   {
     question: "How do I humanely dispatch trapped hornets?",
     answer:
-      "Follow the actionâ€™s instructions: submerge the jar for a few minutes or place it in the freezer. Always verify the latest guidance on the municipal page.",
+      "Follow the action’s instructions: submerge the jar for a few minutes or place it in the freezer. Always verify the latest guidance on the municipal page.",
   },
   {
     question: "Which attractant and how much?",
     answer:
-      "A common mix is 1/3 beer, 1/3 wine and 1/3 sugar syrup or grenadine. Fill to roughly 2â€“3 cm and refresh when diluted or dirty.",
+      "A common mix is 1/3 beer, 1/3 wine and 1/3 sugar syrup or grenadine. Fill to roughly 2–3 cm and refresh when diluted or dirty.",
   },
   {
-    question: "Why isnâ€™t the glass jar included?",
+    question: "Why isn’t the glass jar included?",
     answer:
       "The trap is designed for reusing standard wide-mouth jars (e.g. chocolate spread jars). That keeps cost low, sustainable and easy to replace.",
   },
@@ -380,7 +380,7 @@ export default function CaseStudySelectiveTrapEnPage() {
                 <li className="flex items-start gap-3">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
                   <span>
-                    Bait: fill ~2â€“3 cm with a mix (1/3 beer, 1/3 wine, 1/3 sugar syrup or grenadine). Refresh when diluted or
+                    Bait: fill ~2–3 cm with a mix (1/3 beer, 1/3 wine, 1/3 sugar syrup or grenadine). Refresh when diluted or
                     dirty.
                   </span>
                 </li>

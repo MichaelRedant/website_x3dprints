@@ -1,16 +1,18 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
-import BlogReadMore from "@/components/BlogReadMore"
+import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/relatiegeschenken-3d-printen/"
 const enCanonical = "https://www.x3dprints.be/en/blog/relatiegeschenken-3d-printen/"
 const publishedDate = "2025-08-20T08:00:00+01:00"
-const dateModified = "2026-02-06T08:00:00+01:00"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
 export const metadata: Metadata = {
   title: "Relatiegeschenken 3D printen voor B2B | X3DPrints Blog",
@@ -92,31 +94,42 @@ const videos = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: "nl-BE",
-  headline: "Relatiegeschenken 3D printen voor B2B",
-  description: metadata.description,
-  author: { "@type": "Organization", name: "X3DPrints" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/images/og-home.jpg" },
+const references = [
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA eigenschappen en materiaalinfo voor visuele gifts.",
   },
+  {
+    label: "Prusament PETG material",
+    href: "https://prusament.com/materials/petg/",
+    description: "PETG materiaalfiche en printadvies voor stevigere gifts.",
+  },
+  {
+    label: "Autodesk Fusion 360 export formats",
+    href: "https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-37889E7F-4E16-449F-83E0-3F0D7E16AD62",
+    description: "Overzicht van STL/STEP exportopties voor 3D printfiles.",
+  },
+  {
+    label: "DENSO WAVE - QR Code basics",
+    href: "https://www.qrcode.com/en/howto/cell.html",
+    description: "Module size en leesbaarheid van QR codes.",
+  },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "Relatiegeschenken 3D printen voor B2B",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-  mainEntityOfPage: canonical,
-  keywords: [
-    "relatiegeschenken 3D printen",
-    "B2B gifts 3D print",
-    "gepersonaliseerde sleutelhanger",
-    "desk organizer 3D print",
-    "team gifts",
-  ],
-}
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  items: faqItems,
+})
 
 export default function BlogRelatiegeschenken() {
   return (
@@ -128,7 +141,7 @@ export default function BlogRelatiegeschenken() {
       <section className="px-6 pb-12 pt-14 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-700">Use case Â· B2B</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-700">Use case · B2B</p>
             <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
               Relatiegeschenken 3D printen voor B2B teams
             </h1>
@@ -136,6 +149,7 @@ export default function BlogRelatiegeschenken() {
               Relatiegeschenken, bedankjes en team gifts op maat. Sleutelhangers, desk organizers en awards in Silk/Matte/PETG met
               afgeronde randen en duidelijke tekst. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice (EUR 45/uur).
             </p>
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?material=pla-silk">Plan relatiegeschenken</ShimmerButton>
               <Link
@@ -300,12 +314,42 @@ export default function BlogRelatiegeschenken() {
         </div>
       </section>
 
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <p className="mt-2 text-sm text-slate-700">
+                Materiaal- en file-format referenties die passen bij relatiegeschenken en gepersonaliseerde batches.
+              </p>
+              <ul className="mt-4 space-y-3 text-sm text-slate-700">
+                {references.map((ref) => (
+                  <li key={ref.href} className="rounded-xl border border-slate-200/70 bg-white/70 p-3">
+                    <Link
+                      href={ref.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-semibold text-indigo-700 underline underline-offset-2"
+                    >
+                      {ref.label}
+                    </Link>
+                    <p className="mt-1">{ref.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
 
     </main>
   )
 }
+
 
 
 

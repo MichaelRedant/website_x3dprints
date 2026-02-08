@@ -4,9 +4,12 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/maker-monday-schroefdraad-bevestigingen/"
 const publishedDate = "2025-12-15T08:00:00+01:00"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
   title: "Maker Monday #7: threaded fasteners in FDM prints | X3DPrints",
@@ -54,26 +57,34 @@ const tips = [
   "If a boss keeps cracking, switch to a metal bracket or split the part to orient layers better.",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  headline: "Maker Monday #7: threaded fasteners in FDM prints",
-  description:
-    "Pilot holes, wall thickness and material guidance for self-tapping screws, printed threads and inserts in FDM parts.",
-  datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/og-x3dprints.jpg" },
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
   },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "Maker Monday #7: threaded fasteners in FDM prints",
+  description: metadata.description ?? "",
+  datePublished: publishedDate,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
   inLanguage: "en-BE",
-}
+})
+
 
 export default function MakerMondayFastenersEnPage() {
   return (
@@ -111,6 +122,7 @@ export default function MakerMondayFastenersEnPage() {
               Use these pilot holes, wall guidelines and material picks to keep fasteners reliable. If inserts or threads are not
               the right answer, we will say so.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/en/contact?topic=maker-monday-fasteners">Ask fastener review</ShimmerButton>
               <Link
@@ -171,7 +183,7 @@ export default function MakerMondayFastenersEnPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Next step</p>
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900">Need help with a fastening strategy?</h2>
                 <p className="mt-2 text-sm text-slate-600">
-                  Send the load case and environment. We will pick the right screw, pilot hole and reinforcement—or suggest a
+                  Send the load case and environment. We will pick the right screw, pilot hole and reinforcementâ€”or suggest a
                   partner process if that is safer.
                 </p>
               </div>
@@ -185,10 +197,28 @@ export default function MakerMondayFastenersEnPage() {
           </Reveal>
         </div>
       </section>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogReadMore />
     </main>
   )
 }
+
+
 

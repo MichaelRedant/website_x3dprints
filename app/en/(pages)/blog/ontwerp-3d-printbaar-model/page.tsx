@@ -11,7 +11,8 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 const canonical = "https://www.x3dprints.be/en/blog/ontwerp-3d-printbaar-model/"
 const nlCanonical = "https://www.x3dprints.be/blog/ontwerp-3d-printbaar-model/"
 const datePublished = "2024-05-01"
-const dateModified = "2026-02-07"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 const viewerHref = "/en/viewer?utm_source=blog&utm_medium=cta&utm_campaign=design-printable-en"
 const pricingHref = "/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=design-printable-en"
 const materialsHref = "/en/materials#material-suggestion-tool"
@@ -128,7 +129,7 @@ const references = [
   },
   {
     label: "Prusa material guide",
-    href: "https://help.prusa3d.com/article/material-guide_220",
+    href: "https://help.prusa3d.com/filament-material-guide",
   },
   {
     label: "Google Search docs: crawlable links",
@@ -139,8 +140,7 @@ const references = [
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "How do you design a 3D printable model?",
-  description:
-    "Practical design guide for wall thickness, tolerance, orientation and export quality in 3D printing.",
+  description: metadata.description ?? "",
   datePublished,
   dateModified,
   image: "/Logo.webp",
@@ -261,7 +261,8 @@ export default function DesignArticleEnPage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-5 flex flex-wrap gap-3">
+                          <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <div className="mt-5 flex flex-wrap gap-3">
                 <ShimmerButton href={viewerHref} event={{ action: "cta_click", category: "blog_design_en_mid", label: "viewer" }}>
                   Open viewer
                 </ShimmerButton>
@@ -362,3 +363,5 @@ export default function DesignArticleEnPage() {
     </main>
   )
 }
+
+

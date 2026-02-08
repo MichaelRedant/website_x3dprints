@@ -18,7 +18,7 @@ const PAGE_EN: OrganizerPageContent = {
     title: "Packout organizer inserts made in Belgium | X3DPrints",
     description:
       "Milwaukee Packout inlay made to fit: snug pockets for batteries, chargers and bits. Labelable, anti-slip, no rattle. Custom toolbox organizer in Belgium.",
-    canonical: `${SITE.url}/en/organizers/packout`,
+    canonical: `${SITE.url}/en/organizers/packout/`,
     ogImage: `${SITE.url}/images/organizers/milwaukee/milwaukee1.webp`,
   },
   heroTitle: "Packout organizers that stay quiet",
@@ -148,9 +148,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: PAGE_URL,
     languages: {
-      "nl-BE": `${SITE.url}/organizers/packout`,
+      "nl-BE": `${SITE.url}/organizers/packout/`,
       "en-BE": PAGE_URL,
-      "x-default": `${SITE.url}/organizers/packout`,
+      "x-default": `${SITE.url}/organizers/packout/`,
     },
   },
   openGraph: {

@@ -10,7 +10,7 @@ import { buildOrganizerContactHref, buildOrganizerSchemas } from "@/lib/organize
 import { SITE, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 const PAGE = ORGANIZER_PAGES.custom
-const PAGE_URL = `${SITE.url}/organizers/${PAGE.slug}`
+const PAGE_URL = PAGE.seo.canonical
 
 export const metadata: Metadata = {
   title: PAGE.seo.title,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: PAGE.seo.canonical,
     languages: {
       "nl-BE": PAGE.seo.canonical,
-      "en-BE": `${SITE.url}/en/organizers/${PAGE.slug}`,
+      "en-BE": `${SITE.url}/en/organizers/${PAGE.slug}/`,
       "x-default": PAGE.seo.canonical,
     },
   },
@@ -68,7 +68,7 @@ export default function CustomOrganizerPage() {
   const references = [
     { label: "IKEA Skadis productlijn", url: "https://www.ikea.com/be/nl/search/?q=skadis" },
     { label: "ISO/ASTM 52900 terminologie", url: "https://www.astm.org/f2997-13r21.html" },
-    { label: "Prusa materialenoverzicht", url: "https://help.prusa3d.com/article/material-guide_220" },
+    { label: "Prusa materialenoverzicht", url: "https://help.prusa3d.com/filament-material-guide" },
   ]
   const lastUpdatedLabel = "Laatst bijgewerkt: 6 februari 2026"
 

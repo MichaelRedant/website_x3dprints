@@ -11,7 +11,7 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 const canonical = "https://www.x3dprints.be/blog/3d-printen-op-bestelling/"
 const enCanonical = "https://www.x3dprints.be/en/blog/3d-printen-op-bestelling/"
 const datePublished = "2024-05-20"
-const dateModified = "2026-02-07"
+const dateModified = "2026-02-08"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=op-bestelling"
 const materialsHref = "/materials#material-suggestion-tool"
 const viewerHref = "/viewer?utm_source=blog&utm_medium=cta&utm_campaign=op-bestelling"
@@ -103,16 +103,16 @@ const faqItems = [
 
 const references = [
   {
-    label: "Google Search docs: crawlable links",
-    href: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
   },
   {
-    label: "All3DP FDM process explainer",
-    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+    label: "Autodesk: What is a STEP file?",
+    href: "https://www.autodesk.com/solutions/what-is-a-step-file",
   },
   {
-    label: "Prusa material guide",
-    href: "https://help.prusa3d.com/article/material-guide_220",
+    label: "ISO/ASTM 52900: Additive manufacturing terminology",
+    href: "https://www.astm.org/standards/isoastm52900",
   },
 ]
 
@@ -192,7 +192,7 @@ export default function OrderArticlePage() {
             Het korte antwoord: een goede intake versnelt alles. Met de juiste bestanden en context krijg je snel een duidelijke route voor 3d printen op bestelling, 3d model printen en een betrouwbare 3d print service belgie.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 7 februari 2026
+            Laatst bijgewerkt: 8 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton

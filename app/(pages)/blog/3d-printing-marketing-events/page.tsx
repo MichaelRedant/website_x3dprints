@@ -4,13 +4,16 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printing-marketing-events/"
+const datePublished = "2025-11-18"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "3D printing voor marketing & events | X3DPrints Blog",
   description:
-    "Ontdek hoe 3D printing campagnes versterkt: props, awards en merch met korte lijnen. Inclusief planningstips, materiaaladvies en KPI-ideeÃ«n.",
+    "Ontdek hoe 3D printing campagnes versterkt: props, awards en merch met korte lijnen. Inclusief planningstips, materiaaladvies en KPI-ideeën.",
   alternates: { canonical },
   openGraph: {
     title: "3D printing voor marketing & events",
@@ -52,12 +55,12 @@ const planningSteps = [
   {
     title: "Briefing & doel",
     detail:
-      "Formuleer het campagnedoel, de context (event, roadshow, retailactie) en de KPIâ€™s: awareness, engagement, leads, traffic naar landingpage, enzovoort. Voeg brand guidelines, referentiebeelden of moodboards toe zodat we meteen in de juiste merktaal zitten.",
+      "Formuleer het campagnedoel, de context (event, roadshow, retailactie) en de KPI’s: awareness, engagement, leads, traffic naar landingpage, enzovoort. Voeg brand guidelines, referentiebeelden of moodboards toe zodat we meteen in de juiste merktaal zitten.",
   },
   {
     title: "Materialen & prototypes",
     detail:
-      "Kies eerst het effect: hoogglans, stone-look of lichtdoorlatend. PLA Silk+ werkt sterk voor premium awards, PLA Marble voor â€˜stoneâ€™ en PLA Translucent voor props met LED of lichtaccenten. Indien nodig starten we met een kleine proefprint om look & formaat te valideren.",
+      "Kies eerst het effect: hoogglans, stone-look of lichtdoorlatend. PLA Silk+ werkt sterk voor premium awards, PLA Marble voor ‘stone’ en PLA Translucent voor props met LED of lichtaccenten. Indien nodig starten we met een kleine proefprint om look & formaat te valideren.",
   },
   {
     title: "Productie & logistiek",
@@ -95,31 +98,30 @@ const faq = [
   },
 ]
 
-
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: "nl-BE",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "3D printing voor marketing & events",
   description:
     "Strategische gids voor marketeers en event teams die 3D printing willen inzetten voor props, awards en merchandising.",
-  author: {
-    "@type": "Person",
-    name: "X3DPrints",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/brand-logo.png",
-    },
-  },
+  datePublished,
+  dateModified,
+  image: "/images/og-home.jpg",
+  inLanguage: "nl-BE",
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
   mainEntityOfPage: canonical,
-  datePublished: "2025-11-18",
-  dateModified: "2025-11-18",
-}
+  items: faq,
+})
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const references = [
+  { label: "ISO/ASTM 52900: Additive manufacturing terminology", href: "https://www.iso.org/standard/74514.html" },
+  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-1B6AA02D-B8E5-4F54-ADC7-11C5B900E05F" },
+  { label: "NIST: STEP (ISO 10303) resources", href: "https://www.nist.gov/services-resources/software/step" },
+]
 
 export default function MarketingArticlePage() {
   return (
@@ -136,10 +138,11 @@ export default function MarketingArticlePage() {
           3D printing voor marketing & events
         </h1>
         <p className="mt-4 text-base text-slate-600">
-  Eye-catching props, awards en slimme merch maken het verschil tussen een campagne die vergeten wordt en Ã©Ã©n die blijft hangen.
+  Eye-catching props, awards en slimme merch maken het verschil tussen een campagne die vergeten wordt en één die blijft hangen.
   In dit artikel tonen we hoe je 3D printing strategisch inzet voor marketing & events: van briefing en materiaalkeuze tot timing,
-  logistiek en KPIâ€™s die je echt kunt meten.
+  logistiek en KPI’s die je echt kunt meten.
 </p>
+        <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
 
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
           <ShimmerButton href="/contact?material=PLA%20Silk%2B">Vraag offerte of advies</ShimmerButton>
@@ -158,7 +161,7 @@ export default function MarketingArticlePage() {
           <p className="mt-3 text-sm text-slate-600">
   Campagnes en events hebben formaat-, kleur- en deadline-eisen waar traditionele productie vaak op achterloopt. 
   Met 3D printing kun je snel activeren: kleine runs, last-minute iteraties en hyperrelevante props per locatie of doelgroep.
-  Je krijgt iets tastbaars in handen dat perfect aansluit bij je merk Ã©n binnen het mediabudget past.
+  Je krijgt iets tastbaars in handen dat perfect aansluit bij je merk én binnen het mediabudget past.
 </p>
 
           <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -210,7 +213,7 @@ export default function MarketingArticlePage() {
   <h2 className="text-xl font-semibold text-slate-900">Typische marketing use cases</h2>
   <p className="mt-3 text-sm text-slate-600">
     3D printing speelt steeds vaker een rol in marketingcampagnes omdat het zowel visueel sterk is
-    als extreem flexibel in formaat, kleur en timing. Hieronder vijf scenarioâ€™s waarin 3D objecten
+    als extreem flexibel in formaat, kleur en timing. Hieronder vijf scenario’s waarin 3D objecten
     de merkbeleving aantoonbaar versterken.
   </p>
 
@@ -250,7 +253,7 @@ export default function MarketingArticlePage() {
     <div className="rounded-3xl border border-white/40 bg-white/70 p-4 text-sm text-slate-600 lg:col-span-2">
       <p className="font-semibold text-slate-900">5. Internal branding & HR</p>
       <p className="mt-1">
-        BedrijfstrofeeÃ«n, teambuilding props, onboarding kits of desk-objects die intern cultuur,
+        Bedrijfstrofeeën, teambuilding props, onboarding kits of desk-objects die intern cultuur,
         waarden en groei visualiseren. Klein oplage, hoge personaliseerbaarheid, sterke emotionele impact.
       </p>
     </div>
@@ -273,6 +276,26 @@ export default function MarketingArticlePage() {
               </div>
             ))}
           </div>
+        </GlassCard>
+
+        <GlassCard className="p-6 sm:p-8">
+          <h2 className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
+          <ul className="mt-4 space-y-2 text-sm text-slate-600">
+            {references.map((reference) => (
+              <li key={reference.href} className="rounded-2xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                <cite className="not-italic">
+                  <a
+                    href={reference.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-amber-700 underline underline-offset-4"
+                  >
+                    {reference.label}
+                  </a>
+                </cite>
+              </li>
+            ))}
+          </ul>
         </GlassCard>
 
         <GlassCard className="p-6 sm:p-8">
@@ -314,6 +337,7 @@ export default function MarketingArticlePage() {
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
 
     </article>

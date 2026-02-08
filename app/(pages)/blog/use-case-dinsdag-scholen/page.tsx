@@ -1,12 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-scholen/"
 const publishedDate = "2025-12-09T08:00:00+01:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Use Case Dinsdag #3: 3D printen voor scholen",
@@ -195,32 +198,32 @@ const lessonFramework = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "schools-materials", label: "Materiaalkeuze" },
+  { id: "schools-workflow", label: "Workflowprincipes" },
+  { id: "schools-troubleshooting", label: "Problemen oplossen" },
+  { id: "schools-collaboration", label: "Samenwerken" },
+  { id: "schools-planning", label: "Planning" },
+  { id: "schools-maintenance", label: "Onderhoud en lesstructuur" },
+  { id: "schools-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "Prusa: Material guide (PLA, PETG, TPU)", href: "https://help.prusa3d.com/filament-material-guide" },
+  { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
+  { label: "Bambu Lab: Filament material safety", href: "https://wiki.bambulab.com/en/filament/material-safety" },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Use Case Dinsdag #3: 3D printen voor scholen",
-  description:
-    "Handleiding voor onderwijsinstellingen over veilige materialen, low-failure workflows en samenwerking met X3DPrints.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
 
 function SectionDivider() {
   return (
@@ -269,6 +272,8 @@ export default function UseCaseDinsdagScholenPage() {
               gids toont hoe je een voorspelbare workflow opzet, welke materialen veilig werken en wanneer je externe hulp
               inschakelt.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=use-case-scholen">Vraag schooladvies</ShimmerButton>
               <Link
@@ -300,7 +305,7 @@ export default function UseCaseDinsdagScholenPage() {
 
       <SectionDivider />
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="schools-materials" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -362,7 +367,7 @@ export default function UseCaseDinsdagScholenPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="schools-workflow" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -398,7 +403,7 @@ export default function UseCaseDinsdagScholenPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="schools-troubleshooting" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -426,7 +431,7 @@ export default function UseCaseDinsdagScholenPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="schools-collaboration" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -455,7 +460,7 @@ export default function UseCaseDinsdagScholenPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="schools-planning" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -473,7 +478,7 @@ export default function UseCaseDinsdagScholenPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="schools-maintenance" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -518,6 +523,32 @@ export default function UseCaseDinsdagScholenPage() {
         </div>
       </section>
 
+      <section id="schools-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
           <Reveal>
@@ -547,6 +578,7 @@ export default function UseCaseDinsdagScholenPage() {
     </main>
   )
 }
+
 
 
 

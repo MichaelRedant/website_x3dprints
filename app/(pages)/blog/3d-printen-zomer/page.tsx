@@ -5,11 +5,12 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-zomer/"
 const datePublished = "2024-07-15"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "3D printen voor de zomer | X3DPrints Blog",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   alternates: { canonical },
   openGraph: {
     title: "3D printen voor de zomer",
-    description: "Tuin- en stranddecor, nautische themaâ€™s en custom holders. Materialen, slicer-tips, levering en ontwerpservice.",
+    description: "Tuin- en stranddecor, nautische thema’s en custom holders. Materialen, slicer-tips, levering en ontwerpservice.",
   url: canonical,
     type: "article",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte zomer decor" }],
@@ -37,7 +38,7 @@ const tips = [
   "Gebruik PETG voor outdoor decor: beter tegen zon en vocht. PLA Silk/Marble voor luxe tafeldecor binnen.",
   "Layerhoogte 0,2 mm voor grotere stukken; 0,16 mm voor sierlijke details. Wanddikte >1,6 mm voor items in de zon.",
   "TPU voor antislip feet onder trays of beach-gear. Combineer PLA of PETG bovenop voor stijve structuur.",
-  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan â‚¬45/uur.",
+  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan €45/uur.",
   "Voor drinkware-holders: voorzie drainagegaten en afronden randen voor comfort.",
 ]
 
@@ -48,6 +49,28 @@ const checklist = [
   "Leveroptie: EV-zone of pakketdienst; afhalen kan. Voeg je deadline toe (festival, tuinfeest, strandtrip).",
 ]
 
+const materialRows = [
+  { material: "PETG", use: "Outdoor decor, trays, nautische props", note: "Beter tegen zon en vocht" },
+  { material: "PLA Silk/Marble", use: "Indoor tafeldecor, luxe props", note: "Visuele finish, minder hittebestendig" },
+  { material: "TPU", use: "Antislip feet, grips", note: "Print trager, flexibel" },
+]
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "zomer-materials", label: "Materialen & checklist" },
+  { id: "zomer-examples", label: "Voorbeelden" },
+  { id: "zomer-why", label: "Waarom nu plannen" },
+  { id: "zomer-faq", label: "FAQ" },
+  { id: "zomer-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "UltiMaker PETG material properties", href: "https://ultimaker.com/materials/s-series-petg/" },
+  { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
+  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-1B6AA02D-B8E5-4F54-ADC7-11C5B900E05F" },
+]
+
 const faqItems = [
   {
     q: "Welke materialen raden jullie aan voor buiten?",
@@ -55,15 +78,15 @@ const faqItems = [
   },
   {
     q: "Kan ik strand- of nautische props laten maken?",
-    a: "Ja. Ankertjes, vuurtorens, schelpen of custom holders voor drinkware en gadgets. Lever STL/STEP of laat ontwerpen aan â‚¬45/uur.",
+    a: "Ja. Ankertjes, vuurtorens, schelpen of custom holders voor drinkware en gadgets. Lever STL/STEP of laat ontwerpen aan €45/uur.",
   },
   {
     q: "Hoe lever je breekbare stukken veilig?",
-    a: "We verpakken gescheiden met schuim en leveren via EV-zones (Zone 1 â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45) of pakketdienst. Afhalen in Herzele kan gratis.",
+    a: "We verpakken gescheiden met schuim en leveren via EV-zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) of pakketdienst. Afhalen in Herzele kan gratis.",
   },
   {
     q: "Is het 3D model inbegrepen?",
-    a: "Nee. Ontwerpbestand is niet inbegrepen; je levert STL/STEP of kiest ontwerpservice aan â‚¬45/uur. We optimaliseren wanddiktes en supports.",
+    a: "Nee. Ontwerpbestand is niet inbegrepen; je levert STL/STEP of kiest ontwerpservice aan €45/uur. We optimaliseren wanddiktes en supports.",
   },
   {
     q: "Hoe voorkom je vervorming in de zon?",
@@ -111,9 +134,11 @@ export default function BlogSummer() {
               3D printen voor de zomer
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Terrasdecor, nautische themaâ€™s en custom holders voor festivals of beach trips. Ontwerpbestand niet inbegrepen; lever
-              STL/STEP of kies ontwerpservice (â‚¬45/uur). EV-levering voor breekbare stukken of pakketdienst indien verder weg.
+              Terrasdecor, nautische thema’s en custom holders voor festivals of beach trips. Ontwerpbestand niet inbegrepen; lever
+              STL/STEP of kies ontwerpservice (€45/uur). EV-levering voor breekbare stukken of pakketdienst indien verder weg.
             </p>
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact">Plan je zomerprints</ShimmerButton>
               <Link
@@ -133,11 +158,31 @@ export default function BlogSummer() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="zomer-materials" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
               <h2 className="text-2xl font-bold tracking-tight text-slate-900">Materialen & settings</h2>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="text-xs uppercase tracking-wide text-slate-500">
+                      <th className="py-2 pr-4">Materiaal</th>
+                      <th className="py-2 pr-4">Gebruik</th>
+                      <th className="py-2 pr-4">Notities</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {materialRows.map((row) => (
+                      <tr key={row.material}>
+                        <td className="py-3 pr-4 font-semibold text-slate-900">{row.material}</td>
+                        <td className="py-3 pr-4">{row.use}</td>
+                        <td className="py-3 pr-4">{row.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {tips.map((tip) => (
                   <li key={tip} className="flex gap-2">
@@ -177,7 +222,7 @@ export default function BlogSummer() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="zomer-examples" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -208,7 +253,7 @@ export default function BlogSummer() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="zomer-why" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
@@ -223,7 +268,7 @@ export default function BlogSummer() {
                 <li>Optioneel primer/schuren zodat je direct kan schilderen of afwerken.</li>
               </ul>
               <p className="mt-3 text-sm text-slate-700">
-                Herinnering: het 3D model is niet inbegrepen in de printprijs. Lever STL/STEP of laat ons ontwerpen aan â‚¬45/uur.
+                Herinnering: het 3D model is niet inbegrepen in de printprijs. Lever STL/STEP of laat ons ontwerpen aan €45/uur.
                 Vermeld je eventdatum en leveroptie bij de aanvraag.
               </p>
             </GlassCard>
@@ -233,8 +278,8 @@ export default function BlogSummer() {
             <GlassCard className="p-6">
               <h3 className="text-xl font-semibold tracking-tight text-slate-900">SEO inspiratiehoek</h3>
               <p className="mt-2 text-sm text-slate-700">
-                Zoek je â€œ3D geprinte zomer decorâ€, â€œ3D print outdoor decorâ€, â€œPETG beach propsâ€, â€œTPU antislip trayâ€ of â€œnautische
-                3D printsâ€? Hier vind je materiaalkeuze (PETG, PLA Silk/Marble, TPU), support- en wanddikte tips om snel te beslissen.
+                Zoek je “3D geprinte zomer decor”, “3D print outdoor decor”, “PETG beach props”, “TPU antislip tray” of “nautische
+                3D prints”? Hier vind je materiaalkeuze (PETG, PLA Silk/Marble, TPU), support- en wanddikte tips om snel te beslissen.
               </p>
               <p className="mt-3 text-sm text-slate-700">
                 Populaire opdrachten: nautische sets (ankers, schelpen, vuurtorens), outdoor lantaarns, custom drinkware-houders,
@@ -254,7 +299,7 @@ export default function BlogSummer() {
         </div>
       </section>
 
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+      <section id="zomer-faq" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -279,6 +324,32 @@ export default function BlogSummer() {
         </div>
       </section>
 
+      <section id="zomer-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
@@ -286,6 +357,8 @@ export default function BlogSummer() {
     </main>
   )
 }
+
+
 
 
 

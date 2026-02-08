@@ -120,7 +120,7 @@ const references = [
   },
   {
     label: "Prusa material guide (PLA, PETG, TPU)",
-    href: "https://help.prusa3d.com/article/material-guide_220",
+    href: "https://help.prusa3d.com/filament-material-guide",
   },
   {
     label: "All3DP FDM process explainer",

@@ -11,7 +11,7 @@ import { buildOrganizerSchemas } from "@/lib/organizers"
 import { SITE, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 const PAGE = ORGANIZER_PAGES.modugrid
-const PAGE_URL = `${SITE.url}/en/organizers/${PAGE.slug}`
+const PAGE_URL = `${SITE.url}/en/organizers/${PAGE.slug}/`
 const CAROUSEL_ITEMS = [
   { src: "/images/organizers/modugrid/ModuGrid1.jpg", alt: "Gridfinity drawer overview (gridfinity alternative)", width: 1200, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid2.jpg", alt: "Gridfinity drawer with screws and bits, made-to-fit", width: 1200, height: 900 },
@@ -67,9 +67,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: PAGE_URL,
     languages: {
-      "nl-BE": `${SITE.url}/organizers/${PAGE.slug}`,
+      "nl-BE": `${SITE.url}/organizers/${PAGE.slug}/`,
       "en-BE": PAGE_URL,
-      "x-default": `${SITE.url}/organizers/${PAGE.slug}`,
+      "x-default": `${SITE.url}/organizers/${PAGE.slug}/`,
     },
   },
   openGraph: {

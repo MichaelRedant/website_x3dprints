@@ -1,12 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-stem/"
 const publishedDate = "2026-01-13T08:00:00+01:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Use Case Dinsdag #8: 3D printen voor makerspaces & STEM-academies",
@@ -79,17 +82,17 @@ const materials = [
 const settings = [
   {
     material: "PLA",
-    values: ["Nozzle 215 degC", "Bed 60 degC", "0.20 mm layer height", "Fan 70-100%", "Supports enkel indien nodig"],
+    values: ["Nozzle 215 °C", "Bed 60 °C", "0.20 mm layer height", "Fan 70-100%", "Supports enkel indien nodig"],
     ref: { label: "Bestanden voor 3D printen", href: "/blog/bestanden-voor-3d-printen" },
   },
   {
     material: "PETG",
-    values: ["Nozzle 240 degC", "Bed 80 degC", "Fan max 40%", "Let op stringing"],
-    ref: { label: "Bambu PETG profiel", href: "https://wiki.bambulab.com/en/materials/petg" },
+    values: ["Nozzle 240 °C", "Bed 80 °C", "Fan max 40%", "Let op stringing"],
+    ref: { label: "Prusament PETG materiaalfiche", href: "https://prusament.com/materials/petg/" },
   },
   {
     material: "TPU",
-    values: ["Nozzle 220-240 degC", "Lage snelheid", "Minimale retraction", "Zorg voor gecontroleerde filamentloop"],
+    values: ["Nozzle 220-240 °C", "Lage snelheid", "Minimale retraction", "Zorg voor gecontroleerde filamentloop"],
   },
 ]
 
@@ -170,8 +173,8 @@ const whenToUse = [
   {
     title: "Laat het links liggen wanneer je",
     bullets: [
-      "Industriele toleranties onder 0.05 mm nodig hebt.",
-      "Objecten vlak naast hittebronnen (>80 degC) wilt plaatsen.",
+      "Industriële toleranties onder 0.05 mm nodig hebt.",
+      "Objecten vlak naast hittebronnen (>80 °C) wilt plaatsen.",
       "Geen begeleider hebt die printers kan monitoren tijdens de les.",
     ],
   },
@@ -187,32 +190,42 @@ const ctaLinks = [
   { label: "Pricing & offerte", href: "/pricing" },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Use Case Dinsdag #8: 3D printen voor makerspaces en STEM-academies",
-  description:
-    "Hoe scholen en makerspaces veilige, schaalbare 3D print workflows opzetten met PLA, PETG en TPU. Inclusief instellingen, projectvoorbeelden en tips.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "stem-why", label: "Waarom FDM werkt" },
+  { id: "stem-materials", label: "Materiaalkeuze" },
+  { id: "stem-settings", label: "Instellingen" },
+  { id: "stem-workflow", label: "Workflow" },
+  { id: "stem-projects", label: "Projectvoorbeelden" },
+  { id: "stem-mistakes", label: "Typische fouten" },
+  { id: "stem-setup", label: "Setup tips" },
+  { id: "stem-cost", label: "Kosten & planning" },
+  { id: "stem-when", label: "Wanneer wel/niet" },
+  { id: "stem-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
+  { label: "UltiMaker PETG material properties", href: "https://ultimaker.com/materials/s-series-petg/" },
+  { label: "Prusament TPU 95A materiaalfiche", href: "https://prusament.com/materials/prusament-tpu-95a/" },
+  { label: "NIST: STEP (ISO 10303) resources", href: "https://www.nist.gov/services-resources/software/step" },
+]
+
+const settingsTable = [
+  { material: "PLA", nozzle: "215 °C", bed: "60 °C", fan: "70-100%", note: "Supports enkel indien nodig." },
+  { material: "PETG", nozzle: "240 °C", bed: "80 °C", fan: "Max 40%", note: "Let op stringing." },
+  { material: "TPU", nozzle: "220-240 °C", bed: "Optioneel", fan: "Laag", note: "Lage snelheid, minimale retraction." },
+]
 
 function SectionDivider() {
   return (
@@ -264,6 +277,8 @@ export default function UseCaseDinsdagStemPage() {
               Deze gids toont hoe je PLA Matte als veilige basis gebruikt, wanneer PETG en TPU wel waarde toevoegen en hoe je
               low-failure workflows bouwt voor leerkrachten en leerlingen.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=use-case-stem">Vraag onderwijsadvies</ShimmerButton>
               <Link
@@ -295,7 +310,7 @@ export default function UseCaseDinsdagStemPage() {
 
       <SectionDivider />
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="stem-why" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           {fdmReasons.map((reason) => (
             <Reveal key={reason.title}>
@@ -308,7 +323,7 @@ export default function UseCaseDinsdagStemPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="stem-materials" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -342,11 +357,35 @@ export default function UseCaseDinsdagStemPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="stem-settings" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">3. Instellingen die foutmarges beperken</h2>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="text-xs uppercase tracking-wide text-slate-500">
+                      <th className="py-2 pr-4">Materiaal</th>
+                      <th className="py-2 pr-4">Nozzle</th>
+                      <th className="py-2 pr-4">Bed</th>
+                      <th className="py-2 pr-4">Fan</th>
+                      <th className="py-2 pr-4">Notitie</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {settingsTable.map((row) => (
+                      <tr key={row.material}>
+                        <td className="py-3 pr-4 font-semibold text-slate-900">{row.material}</td>
+                        <td className="py-3 pr-4">{row.nozzle}</td>
+                        <td className="py-3 pr-4">{row.bed}</td>
+                        <td className="py-3 pr-4">{row.fan}</td>
+                        <td className="py-3 pr-4">{row.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <div className="mt-4 grid gap-4 md:grid-cols-3">
                 {settings.map((setting) => (
                   <div key={setting.material} className="rounded-2xl border border-slate-100 bg-white/75 p-4">
@@ -373,7 +412,7 @@ export default function UseCaseDinsdagStemPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="stem-workflow" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -405,7 +444,7 @@ export default function UseCaseDinsdagStemPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="stem-projects" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           {stemProjects.map((project) => (
             <Reveal key={project.title}>
@@ -418,7 +457,7 @@ export default function UseCaseDinsdagStemPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="stem-mistakes" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -436,7 +475,7 @@ export default function UseCaseDinsdagStemPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="stem-setup" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -451,7 +490,7 @@ export default function UseCaseDinsdagStemPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="stem-cost" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -473,7 +512,7 @@ export default function UseCaseDinsdagStemPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="stem-when" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           {whenToUse.map((block) => (
             <Reveal key={block.title}>
@@ -506,6 +545,32 @@ export default function UseCaseDinsdagStemPage() {
                 </Link>{" "}
                 en verwijs in de klas naar materiaalblogs zodat leerlingen zelf kunnen bijleren.
               </p>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="stem-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
         </div>
@@ -546,6 +611,7 @@ export default function UseCaseDinsdagStemPage() {
     </main>
   )
 }
+
 
 
 

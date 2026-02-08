@@ -4,9 +4,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-petg/"
 const publishedDate = "2025-09-12T08:00:00+02:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "PETG 3D Printen: Sterk, taai en outdoor proof | X3DPrints",
@@ -158,7 +160,7 @@ const resourceLinks = [
   { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool", description: "Laat de wizard een voorstel doen." },
 ]
 
-const externalReferences = [
+const references = [
   {
     label: "Prusa Knowledge Base - PETG",
     href: "https://help.prusa3d.com/category/petg_207",
@@ -183,32 +185,17 @@ const upcomingPosts = [
   { label: "Filament Vergelijking: welk filament kies je?", href: "/blog" },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "PETG 3D Printen: Sterk, taai en outdoor proof",
   description:
     "Filament Vrijdag #2 van X3DPrints. Leer wanneer PETG slimmer is dan PLA, welke instellingen werken en hoe je het inzet voor functionele onderdelen.",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/og-x3dprints.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+  dateModified,
+  image: "/images/og-home.jpg",
+})
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
 function SectionDivider() {
   return (
@@ -257,6 +244,7 @@ export default function FilamentVrijdagPetgPage() {
               outdoor omgevingen. In deze aflevering tonen we waar PETG echt verschil maakt, hoe we het stabiel printen op de
               Bambu X1C en wanneer je toch beter TPU of ASA inzet.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/contact?material=PETG">Vraag PETG advies</ShimmerButton>
               <Link
@@ -591,12 +579,12 @@ export default function FilamentVrijdagPetgPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en verder lezen</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Combineer deze blog met betrouwbare documentatie. Zo bouw je autoriteit op richting Google en geef je klanten transparant advies.
               </p>
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
-                {externalReferences.map((ref) => (
+                {references.map((ref) => (
                   <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/60 p-4">
                     <Link
                       href={ref.href}

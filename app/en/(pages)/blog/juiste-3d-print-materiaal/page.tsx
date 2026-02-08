@@ -12,7 +12,8 @@ const toolHref = `/en/materials${utm}#material-suggestion-tool`
 const contactHref = `/en/contact${utm}`
 const publishedDate = "2024-09-10"
 const datePublished = "2024-09-10"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
   title: "How do you choose the right 3D print material? | X3DPrints",
@@ -133,11 +134,28 @@ const scenarios = [
   },
 ]
 
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
+  },
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
+
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "How do you choose the right 3D print material?",
-  description:
-    "Step-by-step guide from X3DPrints to determine the right 3D print material. Compare PLA Matte, PETG and TPU on use case, environment and budget.",
+  description: metadata.description ?? "",
   datePublished,
   dateModified,
   image: "/images/filament/pla_matte_Car_PC.webp",
@@ -272,7 +290,8 @@ export default function RightMaterialGuideEnPage() {
             <GlassCard className="border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Material mapping</p>
               <h2 className="mt-2 text-2xl font-semibold text-slate-900">When to choose which blend?</h2>
-              <div className="mt-6 grid gap-4 md:grid-cols-3">
+                          <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
                 {materialMappings.map((item) => (
                   <div key={item.material} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
                     <h3 className="text-lg font-semibold text-slate-900">{item.material}</h3>
@@ -311,7 +330,8 @@ export default function RightMaterialGuideEnPage() {
             <GlassCard className="border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Scenarios</p>
               <h2 className="mt-2 text-2xl font-semibold text-slate-900">What fits your request?</h2>
-              <div className="mt-6 grid gap-4 md:grid-cols-3">
+                          <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
                 {scenarios.map((scenario) => (
                   <div key={scenario.title} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
                     <h3 className="text-lg font-semibold text-slate-900">{scenario.title}</h3>
@@ -425,8 +445,26 @@ export default function RightMaterialGuideEnPage() {
           </Reveal>
         </div>
       </section>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
     </main>
   )
 }
+
+

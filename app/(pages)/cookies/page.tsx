@@ -1,16 +1,16 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 
 const canonical = "https://www.x3dprints.be/cookies/"
 
 export const metadata: Metadata = {
-  title: "Cookiebeleid â€“ X3DPrints",
+  title: "Cookiebeleid – X3DPrints",
   description:
-    "Lees hoe X3DPrints cookies inzet voor essentiÃ«le functies en anonieme analytics, met tips om je voorkeuren te beheren.",
+    "Lees hoe X3DPrints cookies inzet voor essentiële functies en anonieme analytics, met tips om je voorkeuren te beheren.",
   alternates: { canonical },
   openGraph: {
-    title: "Cookiebeleid â€“ X3DPrints",
+    title: "Cookiebeleid – X3DPrints",
     description:
-      "Lees hoe X3DPrints cookies inzet voor essentiÃ«le functies en anonieme analytics, met tips om je voorkeuren te beheren.",
+      "Lees hoe X3DPrints cookies inzet voor essentiële functies en anonieme analytics, met tips om je voorkeuren te beheren.",
     url: canonical,
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -22,7 +22,7 @@ const pageJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Cookiebeleid",
-  description: metadata.description,
+  description: metadata.description ?? "",
   url: canonical,
   inLanguage: "nl-BE",
   isPartOf: {
@@ -41,7 +41,7 @@ export default function CookiePolicyPage() {
           <p className="text-slate-600">
             Onze website gebruikt cookies om alles soepel te laten draaien en om geanonimiseerde statistieken te verzamelen.
             Hieronder lees je welke cookies dat zijn, waarom ze bestaan en hoe je je voorkeuren aanpast. We beloven dat we ze
-            niet stiekem opeten â€“ hoe graag we echte koekjes ook hebben.
+            niet stiekem opeten – hoe graag we echte koekjes ook hebben.
           </p>
         </header>
 

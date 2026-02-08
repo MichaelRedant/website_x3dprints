@@ -6,13 +6,17 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-back-to-school/"
+const datePublished = "2025-07-15"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Back to School: 3D printen voor school | X3DPrints Blog",
   description:
-    "Pennenhouders, naamplaatjes, bureau organizers en STEM-modellen. Educatief 3D printen in PLA/PETG met snelle levering voor augustusâ€“september.",
+    "Pennenhouders, naamplaatjes, bureau organizers en STEM-modellen. Educatief 3D printen in PLA/PETG met snelle levering voor augustus–september.",
   alternates: { canonical },
   openGraph: {
     title: "Back to School: 3D printen voor school",
@@ -36,15 +40,37 @@ const tips = [
   "Gebruik afgeronde hoeken en min. 0,6 mm tekstdiepte voor leesbaarheid.",
   "Integreer antislipvoetjes in TPU of maak pockets voor rubber pads.",
   "Layerhoogte 0,16-0,24 mm voor een nette look zonder overdreven printtijd.",
-  "Vraag klas/naam varianten in Ã©Ã©n keer; we batchen voor consistente kleur en finish.",
+  "Vraag klas/naam varianten in één keer; we batchen voor consistente kleur en finish.",
 ]
 
 const checklist = [
   "Toepassing: pennenhouder, naamplaatje, bureau organizer of STEM-model.",
   "Materiaal: PLA Matte (look), PETG (sterk), TPU (grip). Kleur? Geef HEX/RGB of schoolkleur.",
   "Afwerking: raw of licht geschuurd; primer optioneel als je wil schilderen.",
-  "Deadline: augustusâ€“september (back-to-school) + leveroptie (EV-zone of pakketdienst).",
+  "Deadline: augustus–september (back-to-school) + leveroptie (EV-zone of pakketdienst).",
   "Bestand: STL/STEP. Ontwerp nodig? Ontwerpservice EUR 45/uur.",
+]
+
+const materialRows = [
+  { material: "PLA Matte", use: "Naamplaatjes, pennenhouders", note: "Leesbare tekst, veilige randen" },
+  { material: "PETG", use: "Organizers en robuuste onderdelen", note: "Sterker, hittebestendiger" },
+  { material: "TPU", use: "Antislip pads en clips", note: "Flexibel, extra grip" },
+]
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "school-materials", label: "Materialen & checklist" },
+  { id: "school-examples", label: "Voorbeelden" },
+  { id: "school-video", label: "Video" },
+  { id: "school-faq", label: "FAQ" },
+  { id: "school-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
+  { label: "Prusament PETG materiaalfiche", href: "https://prusament.com/materials/petg/" },
+  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-1B6AA02D-B8E5-4F54-ADC7-11C5B900E05F" },
 ]
 
 const faqItems = [
@@ -53,11 +79,11 @@ const faqItems = [
     a: "PLA Matte voor cleane tekst en zachte feel, PETG voor sterkere organizers. TPU voor antislip pads of clips. Alles zonder scherpe hoeken.",
   },
   {
-    q: "Kunnen we meerdere namen in Ã©Ã©n batch laten maken?",
+    q: "Kunnen we meerdere namen in één batch laten maken?",
     a: "Ja. Lever een lijst of pas STL/STEP per naam aan; wij batchen de prints zodat kleur en finish consistent zijn.",
   },
   {
-    q: "Hoe snel kunnen we leveren rond augustusâ€“september?",
+    q: "Hoe snel kunnen we leveren rond augustus–september?",
     a: "Meestal binnen enkele werkdagen. Meld je deadline; we plannen realistisch zonder vaste beloftes.",
   },
   {
@@ -85,31 +111,19 @@ const videos = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: "nl-BE",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Back to School: 3D printen voor school",
-  description: metadata.description,
-  author: { "@type": "Organization", name: "X3DPrints" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/images/og-home.jpg" },
-  },
-  datePublished: "2025-07-15",
-  dateModified: "2025-07-15",
+  description: metadata.description ?? "",
+  datePublished,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-  mainEntityOfPage: canonical,
-  keywords: [
-    "3D printen voor school",
-    "educatief 3D printen",
-    "gepersonaliseerde schoolmaterialen",
-    "pennenhouders 3D print",
-    "naamplaatjes 3D print",
-  ],
-}
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  items: faqItems,
+})
 
 export default function BlogBackToSchool() {
   return (
@@ -126,8 +140,10 @@ export default function BlogBackToSchool() {
               Back to School 3D printen
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Pennenhouders, naamplaatjes, bureau organizers en educatieve STEM-modellen. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice (EUR 45/uur). Snelle planning voor augustusâ€“september.
+              Pennenhouders, naamplaatjes, bureau organizers en educatieve STEM-modellen. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice (EUR 45/uur). Snelle planning voor augustus–september.
             </p>
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <p className="mt-3 max-w-3xl text-pretty text-base text-slate-700">
               Koppel je briefing aan interne resources: bekijk{" "}
               <Link href="/segments/3d-printing-back-to-school" className="font-semibold text-lime-700 underline">
@@ -162,11 +178,31 @@ export default function BlogBackToSchool() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="school-materials" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
               <h2 className="text-2xl font-bold tracking-tight text-slate-900">Materialen & settings</h2>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="text-xs uppercase tracking-wide text-slate-500">
+                      <th className="py-2 pr-4">Materiaal</th>
+                      <th className="py-2 pr-4">Gebruik</th>
+                      <th className="py-2 pr-4">Notities</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {materialRows.map((row) => (
+                      <tr key={row.material}>
+                        <td className="py-3 pr-4 font-semibold text-slate-900">{row.material}</td>
+                        <td className="py-3 pr-4">{row.use}</td>
+                        <td className="py-3 pr-4">{row.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {tips.map((tip) => (
                   <li key={tip} className="flex gap-2">
@@ -179,7 +215,7 @@ export default function BlogBackToSchool() {
                 PLA Matte is ideaal voor leesbare tekst en veilige randen. Voor robuustere organizers gebruik je PETG. TPU pads zorgen voor grip op bureaus.
               </p>
               <p className="mt-3 text-sm text-slate-700">
-                Levering: EV-zones of pakketdienst. Breekbare delen verpakken we gescheiden; geef aantallen en klasgroepen door zodat we efficiÃ«nt kunnen batchen.
+                Levering: EV-zones of pakketdienst. Breekbare delen verpakken we gescheiden; geef aantallen en klasgroepen door zodat we efficiënt kunnen batchen.
               </p>
             </GlassCard>
           </Reveal>
@@ -222,7 +258,7 @@ export default function BlogBackToSchool() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="school-examples" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -253,7 +289,7 @@ export default function BlogBackToSchool() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="school-video" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -279,7 +315,7 @@ export default function BlogBackToSchool() {
         </div>
       </section>
 
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+      <section id="school-faq" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -304,12 +340,40 @@ export default function BlogBackToSchool() {
         </div>
       </section>
 
+      <section id="school-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
 
     </main>
   )
 }
+
 
 
 

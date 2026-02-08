@@ -11,7 +11,8 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 const canonical = "https://www.x3dprints.be/en/blog/pla-vs-petg/"
 const nlCanonical = "https://www.x3dprints.be/blog/pla-vs-petg/"
 const datePublished = "2024-08-25"
-const dateModified = "2026-02-07"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 const contactHref =
   "/en/contact?material=pla-matte&quote=PLA%20vs%20PETG%20material%20advice%20request"
 const materialsHref = "/en/materials#material-suggestion-tool"
@@ -112,7 +113,7 @@ const faqItems = [
 const references = [
   {
     label: "Prusa material guide (PLA, PETG, TPU)",
-    href: "https://help.prusa3d.com/article/material-guide_220",
+    href: "https://help.prusa3d.com/filament-material-guide",
   },
   {
     label: "All3DP FDM process explainer",
@@ -127,8 +128,7 @@ const references = [
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "PLA vs PETG: which material should you choose?",
-  description:
-    "Practical PLA versus PETG comparison for aesthetics, durability, heat and cost.",
+  description: metadata.description ?? "",
   datePublished,
   dateModified,
   image: "/Logo.webp",
@@ -301,6 +301,7 @@ export default function BlogPlaVsPetgEnPage() {
                 </ul>
               </GlassCard>
             </div>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-5 flex flex-wrap gap-3">
               <ShimmerButton
                 href={materialsHref}
@@ -356,3 +357,5 @@ export default function BlogPlaVsPetgEnPage() {
     </main>
   )
 }
+
+

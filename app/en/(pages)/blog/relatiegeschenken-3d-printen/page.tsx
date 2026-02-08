@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -6,9 +6,12 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/relatiegeschenken-3d-printen/"
 const publishedDate = "2025-08-20T08:00:00+01:00"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
   title: "B2B corporate gifts with 3D printing | X3DPrints Blog",
@@ -45,7 +48,7 @@ const tips = [
   "Silk PLA for a luxe gloss; Matte PLA for a soft feel and legible text. PETG for stronger keychains or desk items.",
   "Text depth min. 0.6 mm; round edges for a pleasant feel. Add pockets for magnets or TPU pads.",
   "Layer height 0.16-0.24 mm: clean lines without long print time. Batch names/initials per colour.",
-  "Provide STL/STEP or use design service (â‚¬45/hour). Add logo as vector or STL in the brief.",
+  "Provide STL/STEP or use design service (ï¿½45/hour). Add logo as vector or STL in the brief.",
   "Plan lead time: usually a few business days; share event date and delivery method (EV zones or parcel).",
 ]
 
@@ -60,7 +63,7 @@ const checklist = [
 const faqItems = [
   {
     q: "Can you integrate names, initials or logos?",
-    a: "Yes. Provide STL/STEP or use design service (â‚¬45/hour). We keep at least 0.6 mm text depth and rounded edges.",
+    a: "Yes. Provide STL/STEP or use design service (ï¿½45/hour). We keep at least 0.6 mm text depth and rounded edges.",
   },
   {
     q: "Which materials fit corporate gifts?",
@@ -72,7 +75,7 @@ const faqItems = [
   },
   {
     q: "Is the 3D model included?",
-    a: "No. The design file is not included. Provide STL/STEP or choose design service at â‚¬45/hour; we optimise for readability and comfort.",
+    a: "No. The design file is not included. Provide STL/STEP or choose design service at ï¿½45/hour; we optimise for readability and comfort.",
   },
 ]
 
@@ -91,27 +94,40 @@ const videos = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "B2B corporate gifts with 3D printing",
-  description:
-    "Personalised keychains, desk items and awards in Silk/Matte/PETG with guidance on legibility, materials and delivery.",
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
   },
-  mainEntityOfPage: canonical,
-  url: canonical,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "B2B corporate gifts with 3D printing",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: "2026-02-06",
+  dateModified,
+  image: "https://www.x3dprints.be/images/og-home.jpg",
   inLanguage: "en-BE",
-}
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  mainEntityOfPage: canonical,
+  items: faqItems,
+})
+
 
 export default function CorporateGiftsBlogEn() {
   return (
@@ -130,6 +146,7 @@ export default function CorporateGiftsBlogEn() {
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Custom keychains, desk items and awards with your logo or names. We keep edges rounded, text readable and plan delivery ahead of your event.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact?material=PLA">Plan a gift batch</ShimmerButton>
               <Link
@@ -261,12 +278,32 @@ export default function CorporateGiftsBlogEn() {
           <VideoGallery videos={videos} highlightIds={[]} />
         </div>
       </section>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
     </main>
   )
 }
+
+
+
 
 
 

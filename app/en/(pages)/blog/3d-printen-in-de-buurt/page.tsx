@@ -11,7 +11,8 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-in-de-buurt/"
 const nlCanonical = "https://www.x3dprints.be/blog/3d-printen-in-de-buurt/"
 const datePublished = "2024-07-01"
-const dateModified = "2026-02-07"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 const contactHref =
   "/en/contact?material=pla-matte&quote=Local%203D%20printing%20project%20request"
 const pricingHref = "/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=local-3d-printing-en"
@@ -123,15 +124,14 @@ const references = [
   },
   {
     label: "Prusa material guide",
-    href: "https://help.prusa3d.com/article/material-guide_220",
+    href: "https://help.prusa3d.com/filament-material-guide",
   },
 ]
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "Local 3D printing near Ghent, Aalst and Dendermonde",
-  description:
-    "Local 3D printing guide with practical delivery, pickup and workflow options.",
+  description: metadata.description ?? "",
   datePublished,
   dateModified,
   image: "/Logo.webp",
@@ -256,7 +256,8 @@ export default function LocalArticleEnPage() {
                   </li>
                 ))}
               </ol>
-              <div className="mt-5 flex flex-wrap gap-3">
+                          <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <div className="mt-5 flex flex-wrap gap-3">
                 <ShimmerButton
                   href={pricingHref}
                   event={{ action: "cta_click", category: "blog_local_en_mid", label: "pricing" }}
@@ -351,3 +352,5 @@ export default function LocalArticleEnPage() {
     </main>
   )
 }
+
+

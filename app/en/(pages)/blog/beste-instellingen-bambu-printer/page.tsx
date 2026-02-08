@@ -7,6 +7,8 @@ import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/beste-instellingen-bambu-printer/"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
   title: "Best settings for your Bambu printer | X3DPrints Blog",
@@ -69,7 +71,7 @@ const materialPresets = [
 
 const calibrationTips = [
   "Run flow calibration when switching brands/colours, especially for translucent or silk PLA.",
-  "Check first-layer squish; Bambu beds can be aggressive—avoid elephants foot by reducing first layer overlap.",
+  "Check first-layer squish; Bambu beds can be aggressiveâ€”avoid elephants foot by reducing first layer overlap.",
   "AMS: dry filament, use desiccant, and avoid excessive retractions on TPU.",
   "For PETG stringing, dry at 65 C, lower fan and drop nozzle 5 C before tweaking retraction.",
   "Use timelapse/monitoring for long PETG runs; pause to clean nozzle if blobs appear.",
@@ -94,13 +96,30 @@ const troubleshoot = [
   },
 ]
 
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
+  },
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
+
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "Best settings for your Bambu printer",
-  description:
-    "Use these presets for PLA, PETG and TPU on Bambu printers: temperatures, speeds, retract and calibration. Includes tips for flow, AMS and maintenance.",
+  description: metadata.description ?? "",
   datePublished: "2024-09-01",
-  dateModified: "2024-09-01",
+  dateModified,
   image: "/images/portfolio/20241024_081839-1.jpg",
   inLanguage: "en-BE",
 })
@@ -137,6 +156,7 @@ export default function BambuSettingsBlogEn() {
             <p className="text-lg text-slate-700">
               PLA, PETG and TPU presets we use in the studio, with flow calibration, AMS tips and maintenance to keep your prints consistent.
             </p>
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="flex flex-wrap gap-3">
               <ShimmerButton href="/en/pricing">View pricing</ShimmerButton>
               <Link
@@ -227,10 +247,28 @@ export default function BambuSettingsBlogEn() {
           </Reveal>
         </div>
       </section>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogReadMore />
     </main>
   )
 }
+
+
 

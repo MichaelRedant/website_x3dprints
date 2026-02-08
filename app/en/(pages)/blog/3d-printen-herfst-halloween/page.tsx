@@ -1,13 +1,17 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import { buildFaqPageSchema } from "@/lib/seo"
+import { buildFaqPageSchema, buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-herfst-halloween/"
+const datePublished = "2025-09-15"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
+
 
 export const metadata: Metadata = {
   title: "3D printing for autumn and Halloween | X3DPrints Blog",
@@ -43,7 +47,7 @@ const tips = [
   "Layer height 0.16-0.2 mm; keep wall thickness >1.2 mm for sturdy decor to hang or place.",
   "Orient visible faces upward and keep the bottom flat for stable placement.",
   "Integrate cable holes or magnets for LED strips or battery packs and ensure ventilation for warmer LEDs.",
-  "Design/model not included: provide STL/STEP or choose design service at â‚¬45/hour.",
+  "Design/model not included: provide STL/STEP or choose design service at ï¿½45/hour.",
 ]
 
 const checklist = [
@@ -56,7 +60,7 @@ const checklist = [
 const faqItems = [
   {
     q: "Can you print pumpkins hollow?",
-    a: "Yes. We use 2-3 perimeters, tuned infill and openings for LEDs/batteries. Provide STL/STEP or let us design at â‚¬45/hour.",
+    a: "Yes. We use 2-3 perimeters, tuned infill and openings for LEDs/batteries. Provide STL/STEP or let us design at ï¿½45/hour.",
   },
   {
     q: "What is the best material for spooky props?",
@@ -64,11 +68,11 @@ const faqItems = [
   },
   {
     q: "How do you ship fragile decor safely?",
-    a: "Packed separately with foam; EV delivery in zones (Zone 1 â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45) or parcel service. Pickup is free.",
+    a: "Packed separately with foam; EV delivery in zones (Zone 1 ï¿½15, Zone 2 ï¿½30, Zone 3 ï¿½45) or parcel service. Pickup is free.",
   },
   {
     q: "Is the 3D model included?",
-    a: "No. The design file is not included in the print price. Provide STL/STEP or choose design service at â‚¬45/hour; we optimise wall thickness and supports.",
+    a: "No. The design file is not included in the print price. Provide STL/STEP or choose design service at ï¿½45/hour; we optimise wall thickness and supports.",
   },
   {
     q: "Can you prime or deliver paint-ready?",
@@ -76,27 +80,34 @@ const faqItems = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "3D printing for autumn & Halloween",
-  description:
-    "Pumpkins, haunted props and mood lanterns in Silk, Marble and Translucent PLA. Tips for supports, light diffusion and delivery.",
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
   },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "3D printing for autumn & Halloween",
+  description: metadata.description ?? "",
+  datePublished: datePublished,
+  dateModified,
   image: ["https://www.x3dprints.be/images/og-home.jpg"],
-  datePublished: "2025-09-15",
-  dateModified: "2026-02-06",
   inLanguage: "en-BE",
-}
+})
+
 
 const faqJsonLd = buildFaqPageSchema({
   inLanguage: "en-BE",
@@ -127,9 +138,10 @@ export default function BlogAutumnHalloweenEn() {
               3D printing for autumn and Halloween
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Pumpkins, spooky props and lanterns for cosy nights. Design file not included; provide STL/STEP or choose design service (â‚¬45/hour). EV
+              Pumpkins, spooky props and lanterns for cosy nights. Design file not included; provide STL/STEP or choose design service (ï¿½45/hour). EV
               delivery for fragile decor or parcel service elsewhere.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact?material=PLA">Plan Halloween prints</ShimmerButton>
               <Link
@@ -157,7 +169,7 @@ export default function BlogAutumnHalloweenEn() {
                 ))}
               </ul>
               <p className="mt-4 text-sm text-slate-700">
-                Keep light channels clear for LEDs, reinforce loops for hanging, and avoid dark PLA in direct sun if decor goes outdoorsâ€”use PETG instead.
+                Keep light channels clear for LEDs, reinforce loops for hanging, and avoid dark PLA in direct sun if decor goes outdoorsï¿½use PETG instead.
                 We can split larger pieces into modules for safer shipping and assembly.
               </p>
             </GlassCard>
@@ -246,6 +258,22 @@ export default function BlogAutumnHalloweenEn() {
           </Reveal>
         </div>
       </section>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -253,6 +281,9 @@ export default function BlogAutumnHalloweenEn() {
     </main>
   )
 }
+
+
+
 
 
 

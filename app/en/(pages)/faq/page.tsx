@@ -125,7 +125,7 @@ export default function Page() {
   ]
   const references = [
     { label: "ISO/ASTM 52900 additive manufacturing terminology", url: "https://www.astm.org/f2997-13r21.html" },
-    { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+    { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
     { label: "Autodesk additive manufacturing overview", url: "https://www.autodesk.com/solutions/additive-manufacturing/what-is-additive-manufacturing" },
   ]
   const lastUpdatedLabel = "Last updated: February 6, 2026"

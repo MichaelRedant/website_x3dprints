@@ -4,9 +4,12 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-pla-marble/"
 const publishedDate = "2025-10-10T08:00:00+02:00"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
   title: "PLA Marble 3D printing: stone look without weight | X3DPrints",
@@ -115,7 +118,7 @@ const resourceLinks = [
   { label: "Pricing & calculator", href: "/en/pricing", description: "See how material choice impacts the quote." },
 ]
 
-const externalReferences = [
+const references = [
   {
     label: "Bambu Lab PLA material guide",
     href: "https://wiki.bambulab.com/en/filament/pla",
@@ -128,26 +131,16 @@ const externalReferences = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "PLA Marble 3D printing: stone look without weight",
-  description:
-    "PLA Marble guide: variants, settings, troubleshooting and when to use it. Part of the Filament Friday series by X3DPrints.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/og-x3dprints.jpg" },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
   inLanguage: "en-BE",
-}
+})
+
 
 export default function FilamentFridayPlaMarbleEnPage() {
   return (
@@ -184,6 +177,7 @@ export default function FilamentFridayPlaMarbleEnPage() {
             <p className="mt-4 text-lg text-slate-700">
               Use this guide to print PLA Marble confidently: which blends to pick, how to set temps, and how to avoid texture issues or stringing.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/en/materials">See PLA variants</ShimmerButton>
               <Link
@@ -356,7 +350,7 @@ export default function FilamentFridayPlaMarbleEnPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Resources and references</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 <div className="rounded-2xl border border-slate-100 bg-white/70 p-4">
                   <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Internal links</p>
@@ -372,9 +366,9 @@ export default function FilamentFridayPlaMarbleEnPage() {
                   </ul>
                 </div>
                 <div className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                  <p className="text-xs uppercase tracking-[0.3em] text-slate-500">External references</p>
+                  <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Sources and references</p>
                   <ul className="mt-2 space-y-2 text-sm text-slate-600">
-                    {externalReferences.map((ref) => (
+                    {references.map((ref) => (
                       <li key={ref.href}>
                         <a
                           href={ref.href}
@@ -422,4 +416,7 @@ export default function FilamentFridayPlaMarbleEnPage() {
     </main>
   )
 }
+
+
+
 

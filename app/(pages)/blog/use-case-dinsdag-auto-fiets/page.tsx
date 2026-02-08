@@ -1,12 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-auto-fiets/"
 const publishedDate = "2025-11-25T08:00:00+01:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Use Case Dinsdag #1: 3D printen voor auto- en fietsaccessoires",
@@ -55,8 +58,8 @@ const heroStats = [
 ]
 
 const materialTable = [
-  { material: "PLA", warmte: "55-60 degC wordt zacht", vibraties: "Bros, microcracks", uv: "Verkleurt snel" },
-  { material: "PETG", warmte: "Tot ca. 80 degC stabiel", vibraties: "Taai, buigt mee", uv: "Betere weerstand" },
+  { material: "PLA", warmte: "55-60 °C wordt zacht", vibraties: "Bros, microcracks", uv: "Verkleurt snel" },
+  { material: "PETG", warmte: "Tot ca. 80 °C stabiel", vibraties: "Taai, buigt mee", uv: "Betere weerstand" },
   { material: "TPU", warmte: "Geen probleem", vibraties: "Absorbeert trillingen", uv: "Blend-afhankelijk" },
 ]
 
@@ -111,32 +114,33 @@ const doNotPrint = [
   "Lange PLA brackets die permanent zon zien.",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Use Case Dinsdag #1: 3D printen voor auto- en fietsaccessoires",
-  description:
-    "Welke onderdelen kun je betrouwbaar 3D printen voor voertuigen? Gids met materiaalkeuze, ontwerpregels voor warmte/UV en toepassingstips.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "auto-pla", label: "PLA vs voertuigcontext" },
+  { id: "auto-petg-tpu", label: "PETG & TPU keuzes" },
+  { id: "auto-heat", label: "Warmte, UV & vibraties" },
+  { id: "auto-applications", label: "Toepassingen" },
+  { id: "auto-avoid", label: "Wat je niet print" },
+  { id: "auto-finish", label: "Afwerking" },
+  { id: "auto-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
+  { label: "UltiMaker PETG material properties", href: "https://ultimaker.com/materials/s-series-petg/" },
+  { label: "Prusament TPU 95A materiaalfiche", href: "https://prusament.com/materials/prusament-tpu-95a/" },
+  { label: "ISO/ASTM 52900: Additive manufacturing terminology", href: "https://www.iso.org/standard/74514.html" },
+]
 
 function SectionDivider() {
   return (
@@ -184,6 +188,8 @@ export default function UseCaseDinsdagAutoFietsPage() {
               Onderweg krijg je te maken met warmte, UV, trillingen en onverwachte impact. Deze gids toont welke onderdelen je
               betrouwbaar kunt printen, hoe je ze ontwerpt en welk materiaal je kiest voor auto&apos;s en fietsen.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=use-case-auto-fiets">Vraag projectadvies</ShimmerButton>
               <Link
@@ -215,13 +221,13 @@ export default function UseCaseDinsdagAutoFietsPage() {
 
       <SectionDivider />
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="auto-pla" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">1. PLA faalt sneller dan je denkt</h2>
               <p className="mt-2 text-sm text-slate-600">
-                PLA is prachtig voor interieurs, maar in voertuigen wordt het zacht rond 55-60 degC, verkleurt onder UV en scheurt
+                PLA is prachtig voor interieurs, maar in voertuigen wordt het zacht rond 55-60 °C, verkleurt onder UV en scheurt
                 door vibraties. Gebruik het enkel voor decoratieve elementen die niet warm worden. Voor functionele onderdelen
                 kies je PETG of TPU.
               </p>
@@ -237,13 +243,13 @@ export default function UseCaseDinsdagAutoFietsPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="auto-petg-tpu" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">2. PETG: werkpaard voor voertuigen</h2>
               <p className="mt-2 text-sm text-slate-600">
-                PETG is hitteresistent tot ca. 80 degC, taai, vochtbestendig en veroudert trager in zonlicht. Perfect voor mounts,
+                PETG is hitteresistent tot ca. 80 °C, taai, vochtbestendig en veroudert trager in zonlicht. Perfect voor mounts,
                 sensorbehuizingen, kofferorganizers en fietslicht-houders.
               </p>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-600">
@@ -286,7 +292,7 @@ export default function UseCaseDinsdagAutoFietsPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="auto-heat" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -314,7 +320,7 @@ export default function UseCaseDinsdagAutoFietsPage() {
                 </table>
               </div>
               <p className="mt-4 text-sm text-slate-600">
-                Dashboardtesten tonen dat zwarte PETG 70-80 degC aankan zonder schade, maar ontwerp brede bases en chamfers zodat
+                Dashboardtesten tonen dat zwarte PETG 70-80 °C aankan zonder schade, maar ontwerp brede bases en chamfers zodat
                 krimp geen kans krijgt. Zie{" "}
                 <Link
                   href="/blog/maker-monday-warping-layer-cracks"
@@ -342,7 +348,7 @@ export default function UseCaseDinsdagAutoFietsPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="auto-applications" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           {applications.map((block) => (
             <Reveal key={block.title}>
@@ -359,7 +365,7 @@ export default function UseCaseDinsdagAutoFietsPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="auto-avoid" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -379,7 +385,7 @@ export default function UseCaseDinsdagAutoFietsPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="auto-finish" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -416,6 +422,32 @@ export default function UseCaseDinsdagAutoFietsPage() {
         </div>
       </section>
 
+      <section id="auto-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
           <Reveal>
@@ -445,6 +477,7 @@ export default function UseCaseDinsdagAutoFietsPage() {
     </main>
   )
 }
+
 
 
 

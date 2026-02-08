@@ -1,12 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/maker-monday-snapfits/"
 const publishedDate = "2025-10-27T08:00:00+01:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Maker Monday #4: Printbare clips, klemmen en snapfits | X3DPrints",
@@ -16,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Maker Monday #4: Zo ontwerp je betrouwbare 3D geprinte snapfits",
     description:
-      "Richtlijnen voor FDM clips en klemmen: wanddiktes, flex-oriÃ«ntatie, tolerantie en materiaalkeuze voor PLA, PETG en TPU.",
+      "Richtlijnen voor FDM clips en klemmen: wanddiktes, flex-oriëntatie, tolerantie en materiaalkeuze voor PLA, PETG en TPU.",
     url: canonical,
     type: "article",
     publishedTime: publishedDate,
@@ -43,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Maker Monday #4: Printbare clips & snapfits",
     description:
-      "Materiaalkeuze, wanddiktes, oriÃ«ntatie en tolerantie voor PLA, PETG en TPU clips. Inclusief testmethodes en ribs.",
+      "Materiaalkeuze, wanddiktes, oriëntatie en tolerantie voor PLA, PETG en TPU clips. Inclusief testmethodes en ribs.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -66,32 +69,45 @@ const tolerances = [
   { material: "TPU", snap: "+0.50 mm", glide: "+0.40 mm" },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "snapfit-material", label: "Materiaalkeuze" },
+  { id: "snapfit-orientation", label: "Oriëntatie" },
+  { id: "snapfit-dimensions", label: "Wanddiktes en lengtes" },
+  { id: "snapfit-geometry", label: "Geometrie van de clip" },
+  { id: "snapfit-tolerances", label: "Toleranties" },
+  { id: "snapfit-ribs", label: "Ribs en versteviging" },
+  { id: "snapfit-pla", label: "Waarom PLA faalt" },
+  { id: "snapfit-tpu", label: "Wanneer TPU beter is" },
+  { id: "snapfit-testing", label: "Testen voor productie" },
+  { id: "snapfit-when", label: "Wanneer X3DPrints helpt" },
+  { id: "snapfit-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  {
+    label: "Covestro: Snap-fit joints for plastics (design guide)",
+    href: "https://assets.covestro.com/image/upload/v1689251920/PCI/pcs/Infopool/Library/Design_Guide/Snap-fit_joints_for_plastic_-_A_design_guide.pdf",
+  },
+  {
+    label: "Ultimaker: Design for FFF 3D printing",
+    href: "https://ultimaker.com/learn/design-for-fff-3d-printing/",
+  },
+  {
+    label: "Prusa: Material guide (PLA, PETG, TPU)",
+    href: "https://help.prusa3d.com/filament-material-guide",
+  },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Maker Monday #4: Hoe ontwerp je printbare clips, klemmen en snapfits?",
-  description:
-    "Handleiding voor FDM clips: materiaalkeuze, wanddiktes, tolerantie, ribs en testmethodes voor PLA, PETG en TPU.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
 
 function SectionDivider() {
   return (
@@ -136,10 +152,12 @@ export default function MakerMondaySnapfitsPage() {
               Hoe ontwerp je printbare clips, klemmen en snapfits?
             </h1>
             <p className="mt-4 text-lg text-slate-700">
-              Snapfits falen meestal door ontwerp, niet door het printproces. Te dunne armen, verkeerde oriÃ«ntatie, geen fillets
+              Snapfits falen meestal door ontwerp, niet door het printproces. Te dunne armen, verkeerde oriëntatie, geen fillets
               of foutieve tolerantie zorgen ervoor dat een clip na twee cycli breekt. Deze gids toont hoe wij PLA, PETG en TPU
-              klemmen wÃ©l betrouwbaar maken.
+              klemmen wél betrouwbaar maken.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=maker-monday-snapfits">Vraag clip-review</ShimmerButton>
               <Link
@@ -155,7 +173,7 @@ export default function MakerMondaySnapfitsPage() {
                 Zie prijsimpact
               </Link>
             </div>
-            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 27 oktober 2025 â€¢ Deel van Maker Monday.</p>
+            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 27 oktober 2025 • Deel van Maker Monday.</p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
             {heroStats.map((stat) => (
@@ -175,7 +193,9 @@ export default function MakerMondaySnapfitsPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">1. Materiaalkeuze: 50% van je succes</h2>
+              <h2 id="snapfit-material" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                1. Materiaalkeuze: 50% van je succes
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Kies het materiaal dat past bij de flex en cycli. Gebruik{" "}
                 <Link href="/blog/filament-vrijdag-pla" className="font-semibold text-indigo-600 transition hover:text-indigo-500">
@@ -190,7 +210,7 @@ export default function MakerMondaySnapfitsPage() {
                   TPU
                 </Link>{" "}
                 is dan weer ideaal voor anti-tril klemmen en soft latches. Het materiaal bepaalt hoeveel wanddikte, tolerantie en
-                oriÃ«ntatie je nodig hebt.
+                oriëntatie je nodig hebt.
               </p>
               <p className="mt-4 text-sm text-slate-600">
                 Toch een ABS, ASA of nylon vraagstuk? Laat het weten tijdens de intake. Onze productie draait op PLA, PETG en TPU
@@ -201,7 +221,9 @@ export default function MakerMondaySnapfitsPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">2. OriÃ«ntatie: buig in X/Y, niet in Z</h2>
+              <h2 id="snapfit-orientation" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                2. Oriëntatie: buig in X/Y, niet in Z
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Clips breken wanneer de buigkracht de layer-lines uit elkaar trekt. Leg de clip zo neer dat de flex-arm in de X/Y
                 richting buigt. De lagen lopen dan mee en de arm gedraagt zich als een veer. Staat de arm rechtop in Z, dan breekt
@@ -223,7 +245,9 @@ export default function MakerMondaySnapfitsPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">3. Wanddiktes en lengtes voor clip-armen</h2>
+              <h2 id="snapfit-dimensions" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                3. Wanddiktes en lengtes voor clip-armen
+              </h2>
               <div className="mt-4 overflow-x-auto">
                 <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
                   <thead>
@@ -267,9 +291,11 @@ export default function MakerMondaySnapfitsPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">4. Geometrie van een betrouwbare snapfit</h2>
+              <h2 id="snapfit-geometry" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                4. Geometrie van een betrouwbare snapfit
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
-                Een haakhoek van 15-25Â° zorgt voor een gecontroleerde klik. Voeg 1-2 mm fillet aan de binnenkant van de haak en
+                Een haakhoek van 15-25° zorgt voor een gecontroleerde klik. Voeg 1-2 mm fillet aan de binnenkant van de haak en
                 2-4 mm fillet aan de basis van de arm. Voorzie een duidelijke schouder waar de clip tegen stopt. Zonder deze
                 details breekt de arm exact op de overgang.
               </p>
@@ -277,7 +303,9 @@ export default function MakerMondaySnapfitsPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">5. Toleranties voor snapfits</h2>
+              <h2 id="snapfit-tolerances" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                5. Toleranties voor snapfits
+              </h2>
               <div className="mt-4 overflow-x-auto">
                 <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
                   <thead>
@@ -318,7 +346,9 @@ export default function MakerMondaySnapfitsPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">6. Ribs voor extra sterkte</h2>
+              <h2 id="snapfit-ribs" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                6. Ribs voor extra sterkte
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Ribs geven stijfheid zonder massa. Hou de ribdikte rond 1.0-1.2 mm, gebruik 2 mm fillets aan de basis en plaats
                 ribs langs de arm (halverwege) in plaats van vlak bij de voet. Een rib die te dicht bij de basis staat, maakt de
@@ -328,7 +358,9 @@ export default function MakerMondaySnapfitsPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">7. Waarom PLA vaak faalt</h2>
+              <h2 id="snapfit-pla" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                7. Waarom PLA vaak faalt
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 PLA is stijf en gedetailleerd maar bros. Micro-cracks aan de basis, warmteopbouw tijdens klikken en beperkte
                 buiging zorgen voor snelle breuk. Gebruik het alleen voor clips die zelden buigen. Voor functionele klemmen kies
@@ -343,7 +375,9 @@ export default function MakerMondaySnapfitsPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">8. Wanneer TPU beter is</h2>
+              <h2 id="snapfit-tpu" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                8. Wanneer TPU beter is
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 TPU is perfect voor bundelklemmen, dempers, flexstrips en soft latches. Hou rekening met hogere wrijving: ontwerp
                 ruime speling en zorg dat de geometrie de rek opvangt in plaats van scherpe klikhaken. Combineer desnoods een PETG
@@ -353,10 +387,12 @@ export default function MakerMondaySnapfitsPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">9. Testen voor de finale print</h2>
+              <h2 id="snapfit-testing" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                9. Testen voor de finale print
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Voer altijd een mini-test uit: print een clip op 20-30% schaal met identieke parameters, voer een flex-test tot
-                10-15Â° en test de clip op het doelobject. Zo vang je tolerantie- of oriÃ«ntatiefouten voordat je een volledige
+                10-15° en test de clip op het doelobject. Zo vang je tolerantie- of oriëntatiefouten voordat je een volledige
                 serie print.
               </p>
             </GlassCard>
@@ -368,10 +404,12 @@ export default function MakerMondaySnapfitsPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">10. Wanneer X3DPrints inschakelen?</h2>
+              <h2 id="snapfit-when" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                10. Wanneer X3DPrints inschakelen?
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Laat ons meekijken als je clip mechanisch kritiek is, PETG of TPU combineert, of als de klem naadloos moet klikken.
-                We optimaliseren wanddiktes, tolerantie, oriÃ«ntatie en materiaalkeuze zodat je ontwerp meteen slaagt. Meer weten
+                We optimaliseren wanddiktes, tolerantie, oriëntatie en materiaalkeuze zodat je ontwerp meteen slaagt. Meer weten
                 over aanpak en tarieven? Check{" "}
                 <Link href="/pricing" className="font-semibold text-indigo-600 transition hover:text-indigo-500">
                   pricing
@@ -400,6 +438,32 @@ export default function MakerMondaySnapfitsPage() {
                 <li>Focus eerst op wanddiktes en ribs (Maker Monday #2), daarna op tolerantie (Maker Monday #3).</li>
                 <li>Zorg dat elke clip minstens 3 perimeterlijnen bevat voor consistente buiging.</li>
                 <li>Gebruik de testmethodes hierboven en log welke speling werkt voor jouw printer.</li>
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="snapfit-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
               </ul>
             </GlassCard>
           </Reveal>
@@ -437,6 +501,7 @@ export default function MakerMondaySnapfitsPage() {
     </main>
   )
 }
+
 
 
 

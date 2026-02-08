@@ -1,12 +1,17 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-vaderdag-moederdag/"
+const datePublished = "2025-04-30"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
+
 
 export const metadata: Metadata = {
   title: "Father&apos;s Day & Mother&apos;s Day 3D printing | X3DPrints Blog",
@@ -77,27 +82,40 @@ const inspirationImages = [
   { src: "/images/portfolio/vaas-capsule-planter-scaled.webp", alt: "Small decor gift idea" },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "Father&apos;s Day & Mother&apos;s Day 3D printing",
-  description:
-    "Personalised gifts in Silk/Matte/PETG with guidance on legibility, rounded edges and delivery for May-June.",
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
   },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "Father&apos;s Day & Mother&apos;s Day 3D printing",
+  description: metadata.description ?? "",
+  datePublished: datePublished,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-  datePublished: "2025-04-30",
-  dateModified: "2026-02-06",
   inLanguage: "en-BE",
-}
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  mainEntityOfPage: canonical,
+  items: faqItems,
+})
+
 
 export default function FathersMothersDayBlogEn() {
   return (
@@ -117,6 +135,7 @@ export default function FathersMothersDayBlogEn() {
               Personalised keychains, desk items and name gifts in Silk, Matte or PETG. Design file not included; provide STL/STEP or choose design service
               (EUR 45/hour). Rounded edges and legible text for daily use.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact?material=PLA">Plan my gift</ShimmerButton>
               <Link
@@ -235,12 +254,31 @@ export default function FathersMothersDayBlogEn() {
           </Reveal>
         </div>
       </section>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
     </main>
   )
 }
+
+
 
 
 

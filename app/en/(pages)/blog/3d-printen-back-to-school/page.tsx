@@ -6,8 +6,13 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-back-to-school/"
+const datePublished = "2025-07-15"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
+
 
 export const metadata: Metadata = {
   title: "Back to School: 3D printing for school | X3DPrints Blog",
@@ -51,7 +56,7 @@ const checklist = [
   "Material: PLA Matte (look), PETG (strength), TPU (grip). Colour? Share HEX/RGB or school colour.",
   "Finish: raw or lightly sanded; primer optional if you paint.",
   "Deadline: August-September (back-to-school) + delivery option (EV zone or parcel service).",
-  "File: STL/STEP. Need design? Design service €45/hour.",
+  "File: STL/STEP. Need design? Design service ï¿½45/hour.",
 ]
 
 const faqItems = [
@@ -69,7 +74,7 @@ const faqItems = [
   },
   {
     q: "Is the 3D model included?",
-    a: "No. Provide STL/STEP or choose design service (€45/hour). We check wall thickness, rounding and readability.",
+    a: "No. Provide STL/STEP or choose design service (ï¿½45/hour). We check wall thickness, rounding and readability.",
   },
 ]
 
@@ -84,31 +89,40 @@ const videos = [
   { id: "yEN9ZY75pDg", title: "Pencil holder on request", description: "Custom pen holder in PLA Matte." },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  headline: "Back to School: 3D printing for school",
-  description: metadata.description,
-  author: { "@type": "Organization", name: "X3DPrints" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/images/og-home.jpg" },
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
   },
-  datePublished: "2025-07-15",
-  dateModified: "2025-07-15",
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "Back to School: 3D printing for school",
+  description: metadata.description ?? "",
+  datePublished: datePublished,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-  mainEntityOfPage: canonical,
-  keywords: [
-    "3D printing for school",
-    "educational 3D printing",
-    "personalised school supplies",
-    "3D printed pen holders",
-    "3D printed nameplates",
-  ],
   inLanguage: "en-BE",
-}
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  mainEntityOfPage: canonical,
+  items: faqItems,
+})
+
 
 export default function BlogBackToSchoolEn() {
   return (
@@ -126,7 +140,7 @@ export default function BlogBackToSchoolEn() {
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Pen holders, nameplates, desk organizers and educational STEM models. Design file not included; provide STL/STEP or choose design service
-              (€45/hour). Fast planning for August-September.
+              (ï¿½45/hour). Fast planning for August-September.
             </p>
             <p className="mt-3 max-w-3xl text-pretty text-base text-slate-700">
               Tie your brief to internal resources: see the{" "}
@@ -143,6 +157,7 @@ export default function BlogBackToSchoolEn() {
               </Link>{" "}
               and send references.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact?material=pla-matte">Plan school prints</ShimmerButton>
               <Link
@@ -282,10 +297,30 @@ export default function BlogBackToSchoolEn() {
           </Reveal>
         </div>
       </section>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
     </main>
   )
 }
+
+
+
 

@@ -2,10 +2,12 @@
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
-import ShimmerButton from "@/components/ShimmerButton"
+import ShimmerButton from "@/components/ShimmerButton"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/finishing-friday-schuren-primen-lakken/"
 const publishedDate = "2025-10-03T08:00:00+02:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Finishing Friday: 3D prints schuren, primen en lakken (en waarom we dat meestal niet doen) | X3DPrints",
@@ -15,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Finishing Friday: schuren, primen en lakken van 3D prints",
     description:
-      "Overzicht van finishing technieken zoals schuren, primen en lakken. Inclusief nuance: resin/SLA vraagt vaak mÃ©Ã©r nabewerking dan nette FDM-prints, dus focust X3DPrints op FDM zonder lakwerk.",
+      "Overzicht van finishing technieken zoals schuren, primen en lakken. Inclusief nuance: resin/SLA vraagt vaak méér nabewerking dan nette FDM-prints, dus focust X3DPrints op FDM zonder lakwerk.",
     url: canonical,
     type: "article",
     publishedTime: publishedDate,
@@ -66,7 +68,7 @@ const fdmVsSlaRows = [
   {
     property: "Kost finishing",
     fdm: "Beperkt tot wat handwerk als je het wil; meeste onderdelen gaan rechtstreeks in gebruik.",
-    sla: "Altijd extra tijd, IPA/verbruiksmateriaal en beschermingsmiddelen nodig â†’ finishing kost snel meer dan de print.",
+    sla: "Altijd extra tijd, IPA/verbruiksmateriaal en beschermingsmiddelen nodig -> finishing kost snel meer dan de print.",
   },
   {
     property: "Typische toepassingen",
@@ -148,7 +150,7 @@ const resourceLinks = [
   { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool", description: "Laat de wizard een materiaalvoorstel doen." },
 ]
 
-const externalReferences = [
+const references = [
   {
     label: "Prusa - How to sand & paint 3D prints",
     href: "https://blog.prusa3d.com/how-to-smooth-and-paint-3d-prints_12547/",
@@ -171,32 +173,18 @@ const externalReferences = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Finishing Friday: 3D prints schuren, primen, lakken",
-  description:
-    "Finishing Friday van X3DPrints. Uitleg over schuren, primen en lakken van 3D prints plus nuance: netjes FDM printen volstaat vaak, finishing doen we niet standaard in-house.",
+  description: "Finishing Friday van X3DPrints. Uitleg over schuren, primen en lakken van 3D prints plus nuance: netjes FDM printen volstaat vaak, finishing doen we niet standaard in-house.",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/og-x3dprints.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
+
+
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
 function SectionDivider() {
   return (
@@ -246,6 +234,7 @@ export default function FinishingFridaySchurenPrimenLakkenPage() {
               layerlijnen. In deze Finishing Friday delen we hoe een volledig afwerkingstraject eruit ziet, maar vooral waarom X3DPrints focust op strak
               geprinte basisonderdelen in plaats van lakwerk.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/contact">Bespreek een finishing case</ShimmerButton>
               <Link
@@ -277,7 +266,7 @@ export default function FinishingFridaySchurenPrimenLakkenPage() {
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">FDM vs SLA: welke basis kies je?</h2>
               <p className="mt-2 text-sm text-slate-600">
-                Op fotoâ€™s zie je vaak resin miniaturen met een spiegelgladde finish, maar achter de schermen komt daar een hele
+                Op foto’s zie je vaak resin miniaturen met een spiegelgladde finish, maar achter de schermen komt daar een hele
                 was- en uithardingscyclus bij kijken. FDM toont duidelijker waar de lagen lopen, maar de onderdelen zijn droog,
                 stevig en meteen bruikbaar. Hieronder zie je welke techniek echt de meeste finishing vraagt.
               </p>
@@ -303,7 +292,7 @@ export default function FinishingFridaySchurenPrimenLakkenPage() {
               </div>
               <p className="mt-3 text-sm text-slate-600">
                 Voor brute functionaliteit volstaat FDM meestal en hoef je niet te schuren. SLA is pas toonbaar nadat je chemisch
-                gereinigd, uitgehard en opnieuw geschuurd hebtâ€”precies waarom wij inzetten op nette FDM-basisprints.
+                gereinigd, uitgehard en opnieuw geschuurd hebt—precies waarom wij inzetten op nette FDM-basisprints.
               </p>
             </GlassCard>
           </Reveal>
@@ -460,11 +449,11 @@ export default function FinishingFridaySchurenPrimenLakkenPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en verder lezen
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties
               </h2>
               <p className="mt-2 text-sm text-slate-600">Dit zijn degelijke guides als je zelf wil experimenteren met finishing.</p>
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
-                {externalReferences.map((ref) => (
+                {references.map((ref) => (
                   <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/60 p-4">
                     <Link
                       href={ref.href}
@@ -510,6 +499,10 @@ export default function FinishingFridaySchurenPrimenLakkenPage() {
     </main>
   )
 }
+
+
+
+
 
 
 

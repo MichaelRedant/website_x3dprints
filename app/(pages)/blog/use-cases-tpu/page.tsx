@@ -1,12 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/use-cases-tpu/"
 const publishedDate = "2025-10-03T08:00:00+02:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "TPU Use Cases: hoe klanten flexibele prints inzetten | X3DPrints",
@@ -69,7 +72,7 @@ const caseStudies = [
     approach: [
       "TPU Soft (92A) met ribbels die elke 8 mm herhalen voor consistente compressie.",
       "Open uiteinde zodat grip over bestaande handvatten geschoven kan worden, vastgezet met twee klik tabs.",
-      "Accelerated aging test (48u bij 60 Â°C) om olie absorptie te controleren.",
+      "Accelerated aging test (48u bij 60 °C) om olie absorptie te controleren.",
     ],
     link: { label: "Vraag TPU prototype aan", href: "/contact?material=TPU" },
   },
@@ -81,7 +84,7 @@ const caseStudies = [
     approach: [
       "Hybride print: PLA Matte cover + TPU demper insert die klikvast vergrendelt.",
       "Dempers enkel op impactzones geplaatst om materiaal te besparen.",
-      "AMS-batchplanning zodat alle TPU onderdelen in Ã©Ã©n run gedroogd en geprint worden.",
+      "AMS-batchplanning zodat alle TPU onderdelen in één run gedroogd en geprint worden.",
     ],
     link: { label: "Bekijk marketing segment", href: "/segments/3d-printing-marketing" },
   },
@@ -113,7 +116,7 @@ const playbooks = [
     bulletPoints: [
       "Combineer TPU voor dragers met PLA/PETG covers voor branding.",
       "Integreer magneten of NFC-tags tijdens de print met pauzes (M601).",
-      "Gebruik Translucent TPU + leds om impact te visualiseren tijdens demoâ€™s.",
+      "Gebruik Translucent TPU + leds om impact te visualiseren tijdens demo’s.",
     ],
   },
 ]
@@ -126,35 +129,41 @@ const resourceLinks = [
     description: "Wizard die PLA, PETG en TPU vergelijkt op basis van jouw context.",
   },
   { label: "Prijzen & calculator", href: "/pricing", description: "Zie impact van trage prints en extra machine-uren." },
-  { label: "Viewer upload", href: "/viewer", description: "Upload STL/STEP, voeg fotoâ€™s toe en vraag feedback." },
+  { label: "Viewer upload", href: "/viewer", description: "Upload STL/STEP, voeg foto’s toe en vraag feedback." },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Use cases: hoe klanten TPU in de praktijk inzetten",
-  description:
-    "Casestudies en playbooks voor TPU 3D prints. Leer hoe bedrijven sleeves, grips en dempers inzetten en hoe X3DPrints het aanpakt.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/og-x3dprints.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "tpu-why", label: "Waarom TPU rendeert" },
+  { id: "tpu-cases", label: "Case studies" },
+  { id: "tpu-playbooks", label: "Playbooks per sector" },
+  { id: "tpu-process", label: "Van idee tot ingebruikname" },
+  { id: "tpu-resources", label: "Interne resources" },
+  { id: "tpu-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "Prusament TPU 95A materiaalfiche", href: "https://prusament.com/materials/prusament-tpu-95a/" },
+  { label: "ISO/ASTM 52900: Additive manufacturing terminology", href: "https://www.iso.org/standard/74514.html" },
+  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-1B6AA02D-B8E5-4F54-ADC7-11C5B900E05F" },
+  { label: "NIST: STEP (ISO 10303) resources", href: "https://www.nist.gov/services-resources/software/step" },
+]
+
+const caseSummaryRows = [
+  { title: "Sensorhoezen", sector: "Industrieel IoT", impact: "Kabelbescherming + snellere assemblage." },
+  { title: "Soft-touch grips", sector: "Field service", impact: "Meer grip, minder krassen en schade." },
+  { title: "Retail dempers", sector: "Retail & events", impact: "Transportbescherming zonder designverlies." },
+]
 
 function SectionDivider() {
   return (
@@ -201,8 +210,10 @@ export default function UseCasesTpuPage() {
             <p className="mt-4 text-lg text-slate-700">
               TPU klinkt abstract tot je ziet wat het oplost. In deze bonus-aflevering bundelen we projecten waar flexibele prints
               schade beperken, ergonomie verbeteren of marketingacties laten opvallen. Je krijgt concrete instellingen, planningstips
-              en CTAâ€™s zodat je meteen je eigen use case kan aftoetsen.
+              en CTA’s zodat je meteen je eigen use case kan aftoetsen.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/contact?material=TPU">Plan TPU workshop</ShimmerButton>
               <Link
@@ -219,7 +230,7 @@ export default function UseCasesTpuPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-slate-500">
-              Gepubliceerd op 3 oktober 2025 â€“ sluit aan op Filament Vrijdag #3 over TPU.
+              Gepubliceerd op 3 oktober 2025 – sluit aan op Filament Vrijdag #3 over TPU.
             </p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
@@ -236,7 +247,7 @@ export default function UseCasesTpuPage() {
 
       <SectionDivider />
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="tpu-why" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -269,11 +280,11 @@ export default function UseCasesTpuPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
-                  <span>Lever fotoâ€™s van het eindproduct. We positioneren ribbels of relief precies op de impactzones.</span>
+                  <span>Lever foto’s van het eindproduct. We positioneren ribbels of relief precies op de impactzones.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
-                  <span>Plan batches: bundel TPU onderdelen zodat we Ã©Ã©n droogcyclus en AMS-profiel kunnen gebruiken.</span>
+                  <span>Plan batches: bundel TPU onderdelen zodat we één droogcyclus en AMS-profiel kunnen gebruiken.</span>
                 </li>
               </ul>
             </GlassCard>
@@ -281,8 +292,33 @@ export default function UseCasesTpuPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="tpu-cases" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl space-y-6">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Case summary</h2>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="text-xs uppercase tracking-wide text-slate-500">
+                      <th className="py-2 pr-4">Case</th>
+                      <th className="py-2 pr-4">Sector</th>
+                      <th className="py-2 pr-4">Impact</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {caseSummaryRows.map((row) => (
+                      <tr key={row.title}>
+                        <td className="py-3 pr-4 font-semibold text-slate-900">{row.title}</td>
+                        <td className="py-3 pr-4">{row.sector}</td>
+                        <td className="py-3 pr-4">{row.impact}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </GlassCard>
+          </Reveal>
           {caseStudies.map((study) => (
             <Reveal key={study.title}>
               <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -314,7 +350,7 @@ export default function UseCasesTpuPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="tpu-playbooks" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -353,29 +389,29 @@ export default function UseCasesTpuPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="tpu-process" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">Van idee tot ingebruikname</h2>
               <ol className="mt-4 space-y-3 text-sm text-slate-600">
                 <li>
-                  <span className="font-semibold text-slate-900">1. Intake & suggestie</span> â€“ Gebruik de{" "}
+                  <span className="font-semibold text-slate-900">1. Intake & suggestie</span> – Gebruik de{" "}
                   <Link href="/materials#material-suggestion-tool" className="text-indigo-600 underline underline-offset-4">
                     Material Suggestion Tool
                   </Link>{" "}
                   en voeg extra context toe in het formulier. We checken meteen of TPU de juiste keuze is.
                 </li>
                 <li>
-                  <span className="font-semibold text-slate-900">2. Mini-prototype</span> â€“ We print een beperkte batch (1-3 stuks)
+                  <span className="font-semibold text-slate-900">2. Mini-prototype</span> – We print een beperkte batch (1-3 stuks)
                   zodat je passing en ergonomie kan testen. Feedback volgt binnen 48 uur.
                 </li>
                 <li>
-                  <span className="font-semibold text-slate-900">3. Batch productie</span> â€“ We groeperen jobs per kleur/shore. Droogtijd,
+                  <span className="font-semibold text-slate-900">3. Batch productie</span> – We groeperen jobs per kleur/shore. Droogtijd,
                   print en QA zitten in hetzelfde slot zodat lead time voorspelbaar blijft.
                 </li>
                 <li>
-                  <span className="font-semibold text-slate-900">4. Implementatie & naservice</span> â€“ We delen montage-notes
+                  <span className="font-semibold text-slate-900">4. Implementatie & naservice</span> – We delen montage-notes
                   (bijv. ideale spanning voor zip-ties) en houden reserveonderdelen klaar in case je moet opschalen.
                 </li>
               </ol>
@@ -384,7 +420,7 @@ export default function UseCasesTpuPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="tpu-resources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -409,6 +445,32 @@ export default function UseCasesTpuPage() {
         </div>
       </section>
 
+      <section id="tpu-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
           <Reveal>
@@ -417,7 +479,7 @@ export default function UseCasesTpuPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Volgende stap</p>
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900">Test je TPU idee zonder risico.</h2>
                 <p className="mt-2 text-sm text-slate-600">
-                  Deel bestanden, fotoâ€™s of zelfs een voice memo. We geven eerlijk advies of TPU de juiste call is en welke blend het
+                  Deel bestanden, foto’s of zelfs een voice memo. We geven eerlijk advies of TPU de juiste call is en welke blend het
                   best past.
                 </p>
               </div>
@@ -438,6 +500,7 @@ export default function UseCasesTpuPage() {
     </main>
   )
 }
+
 
 
 

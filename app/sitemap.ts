@@ -36,13 +36,20 @@ async function latestMtime(paths: string[]): Promise<Date | null> {
   return new Date(Math.max(...mtimes))
 }
 
+function withTrailingSlash(target: string) {
+  if (target === "/") return target
+  return target.endsWith("/") ? target : `${target}/`
+}
+
 function buildAlternates(nlPath?: string, enPath?: string) {
   if (!nlPath || !enPath) return undefined
+  const nl = withTrailingSlash(nlPath)
+  const en = withTrailingSlash(enPath)
   return {
     languages: {
-      "nl-BE": `${BASE_URL}${nlPath.endsWith("/") ? nlPath : `${nlPath}/`}`,
-      "en-BE": `${BASE_URL}${enPath.endsWith("/") ? enPath : `${enPath}/`}`,
-      "x-default": `${BASE_URL}${nlPath.endsWith("/") ? nlPath : `${nlPath}/`}`,
+      "nl-BE": `${BASE_URL}${nl}`,
+      "en-BE": `${BASE_URL}${en}`,
+      "x-default": `${BASE_URL}${nl}`,
     },
   }
 }
@@ -61,12 +68,12 @@ async function toRouteEntries(config: StaticRouteConfig): Promise<MetadataRoute.
   }
 
   const entries: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}${config.nl}`, ...baseEntry },
+    { url: `${BASE_URL}${withTrailingSlash(config.nl)}`, ...baseEntry },
   ]
 
   if (config.en) {
     entries.push({
-      url: `${BASE_URL}${config.en}`,
+      url: `${BASE_URL}${withTrailingSlash(config.en)}`,
       ...baseEntry,
     })
   }
@@ -212,7 +219,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
       return [
         (async () => ({
-          url: `${BASE_URL}/blog/${slug}`,
+          url: `${BASE_URL}${withTrailingSlash(`/blog/${slug}`)}`,
           priority: 0.6,
           changeFrequency: "monthly" as const,
           lastModified: (await latestMtime(sources)) ?? new Date(),
@@ -221,7 +228,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         ...(enPath
           ? [
               (async () => ({
-                url: `${BASE_URL}${enPath}`,
+                url: `${BASE_URL}${withTrailingSlash(enPath)}`,
                 priority: 0.6,
                 changeFrequency: "monthly" as const,
                 lastModified: (await latestMtime(sources)) ?? new Date(),
@@ -237,7 +244,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     enBlogSlugs
       .filter((slug) => !nlBlogSlugs.includes(slug))
       .map(async (slug) => ({
-        url: `${BASE_URL}/en/blog/${slug}`,
+        url: `${BASE_URL}${withTrailingSlash(`/en/blog/${slug}`)}`,
         priority: 0.6,
         changeFrequency: "monthly" as const,
         lastModified:
@@ -256,14 +263,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       const alternates = buildAlternates(`/segments/${slug}`, `/en/segments/${slug}`)
       return [
         (async () => ({
-          url: `${BASE_URL}/segments/${slug}`,
+          url: `${BASE_URL}${withTrailingSlash(`/segments/${slug}`)}`,
           lastModified: (await latestMtime(sources)) ?? new Date(),
           changeFrequency: "monthly" as const,
           priority: 0.6,
           alternates,
         }))(),
         (async () => ({
-          url: `${BASE_URL}/en/segments/${slug}`,
+          url: `${BASE_URL}${withTrailingSlash(`/en/segments/${slug}`)}`,
           lastModified: (await latestMtime(sources)) ?? new Date(),
           changeFrequency: "monthly" as const,
           priority: 0.6,
@@ -286,14 +293,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
       return [
         (async () => ({
-          url: `${BASE_URL}/materials/${slug}`,
+          url: `${BASE_URL}${withTrailingSlash(`/materials/${slug}`)}`,
           lastModified: (await latestMtime(sources)) ?? new Date(),
           changeFrequency: "monthly" as const,
           priority: 0.7,
           alternates,
         }))(),
         (async () => ({
-          url: `${BASE_URL}/en/materials/${slug}`,
+          url: `${BASE_URL}${withTrailingSlash(`/en/materials/${slug}`)}`,
           lastModified: (await latestMtime(sources)) ?? new Date(),
           changeFrequency: "monthly" as const,
           priority: 0.7,
@@ -311,7 +318,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         : undefined
       return [
         (async () => ({
-          url: `${BASE_URL}/${slug}`,
+          url: `${BASE_URL}${withTrailingSlash(`/${slug}`)}`,
           lastModified: (await getLocationMtime(slug)) ?? new Date(),
           changeFrequency: "weekly" as const,
           priority: 0.7,
@@ -320,7 +327,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         ...(hasEn
           ? [
               (async () => ({
-                url: `${BASE_URL}/en/${slug}`,
+                url: `${BASE_URL}${withTrailingSlash(`/en/${slug}`)}`,
                 lastModified: (await getLocationMtime(slug)) ?? new Date(),
                 changeFrequency: "weekly" as const,
                 priority: 0.7,

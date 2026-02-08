@@ -10,7 +10,7 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 
 const canonical = "https://www.x3dprints.be/blog/juiste-3d-print-materiaal/"
 const datePublished = "2024-09-10"
-const dateModified = "2026-02-06"
+const dateModified = "2026-02-08"
 const toolHref = "/materials?utm_source=blog&utm_medium=cta&utm_campaign=juiste-3d-print-materiaal#material-suggestion-tool"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=juiste-3d-print-materiaal"
 const contactHref = "/contact?material=petg&quote=Materiaaladvies%20voor%20mijn%203D-printproject"
@@ -143,15 +143,15 @@ const faqItems = [
 const references = [
   {
     label: "Prusa material guide (PLA, PETG, TPU)",
-    href: "https://help.prusa3d.com/article/material-guide_220",
+    href: "https://help.prusa3d.com/filament-material-guide",
   },
   {
-    label: "All3DP FDM process explainer",
-    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+    label: "Ultimaker: Design for FFF 3D printing",
+    href: "https://ultimaker.com/learn/design-for-fff-3d-printing/",
   },
   {
-    label: "ISO/ASTM additive manufacturing terminology",
-    href: "https://www.astm.org/f2997-13r21.html",
+    label: "ISO/ASTM 52900: Additive manufacturing terminology",
+    href: "https://www.astm.org/standards/isoastm52900",
   },
 ]
 
@@ -232,7 +232,7 @@ export default function RightMaterialGuidePage() {
             Deze gids helpt je 3d print materialen vergelijken en het juiste materiaal voor 3d printen kiezen per use-case.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 6 februari 2026
+            Laatst bijgewerkt: 8 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton

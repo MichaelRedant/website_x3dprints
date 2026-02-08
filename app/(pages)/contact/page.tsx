@@ -1,4 +1,4 @@
-﻿// app/(pages)/contact/page.tsx
+// app/(pages)/contact/page.tsx
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Suspense } from "react"
@@ -101,7 +101,7 @@ const NL_COPY = {
       a: "Ja. Deel wat je al hebt (link, foto of korte beschrijving). We helpen je met de volgende stap richting een printbaar model.",
     },
   ],
-  jsonLdUrl: "https://www.x3dprints.be/contact",
+  jsonLdUrl: "https://www.x3dprints.be/contact/",
   description: NL_METADATA.description ?? "",
 }
 
@@ -116,7 +116,7 @@ const EN_COPY = {
   directHeading: "Direct",
   emailLabel: "Email",
   regionLabel: "Region",
-  regionValue: "Herzele â€“ deliveries in Greater Ghent/Aalst possible",
+  regionValue: "Herzele – deliveries in Greater Ghent/Aalst possible",
   filesLabel: "Files",
   filesValue: "STL, STEP. Add the link, tolerance or finish in your description.",
   helpfulHeading: "Useful to mention",
@@ -144,7 +144,7 @@ const EN_COPY = {
       a: "Yes. Share what you have (link, photo or short brief). We guide the next step towards a printable model.",
     },
   ],
-  jsonLdUrl: "https://www.x3dprints.be/en/contact",
+  jsonLdUrl: "https://www.x3dprints.be/en/contact/",
   description: EN_METADATA.description ?? "",
 }
 
@@ -173,12 +173,12 @@ export default function ContactPage({ locale }: PageProps) {
   const references = isEn
     ? [
         { label: "Google structured data docs", url: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" },
-        { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
         { label: "ISO/ASTM additive manufacturing terminology", url: "https://www.astm.org/f2997-13r21.html" },
       ]
     : [
         { label: "Google documentatie over structured data", url: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" },
-        { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
         { label: "ISO/ASTM terminologie voor additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
       ]
   const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"

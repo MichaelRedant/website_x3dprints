@@ -1,18 +1,19 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd } from "@/lib/seo"
 
-const canonical = "https://www.x3dprints.be/blog/hoe-lang-duurt-3d-printen/";
-const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=hoe-lang-duurt-3d-printen";
-const datePublished = "2024-09-15";
-const dateModified = "2026-02-04";
-const contactHref = `/contact${utm}`;
-const toolHref = `/materials${utm}#material-suggestion-tool`;
-const pricingHref = `/pricing${utm}`;
+const canonical = "https://www.x3dprints.be/blog/hoe-lang-duurt-3d-printen/"
+const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=hoe-lang-duurt-3d-printen"
+const datePublished = "2024-09-15"
+const dateModified = "2026-02-08"
+const contactHref = `/contact${utm}`
+const toolHref = `/materials${utm}#material-suggestion-tool`
+const pricingHref = `/pricing${utm}`
 
 export const metadata: Metadata = {
   title: "Hoe lang duurt 3D printen? | X3DPrints Blog",
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hoe lang duurt 3D printen?",
     description:
-      "Ontdek hoe materiaal, afwerking en logistiek de levertijd beÃ¯nvloeden. Inclusief scenarioâ€™s en tips om projecten te versnellen.",
+      "Ontdek hoe materiaal, afwerking en logistiek de levertijd beïnvloeden. Inclusief scenario’s en tips om projecten te versnellen.",
     url: canonical,
     images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "Hoe lang duurt 3D printen" }],
     locale: "nl_BE",
@@ -60,9 +61,26 @@ const factors = [
 ]
 
 const rushTips = [
-  "Stuur meerdere varianten in Ã©Ã©n batch zodat we machine-uren efficiÃ«nt clusteren.",
+  "Stuur meerdere varianten in één batch zodat we machine-uren efficiënt clusteren.",
   "Kies standaard PLA Matte of PETG kleuren die op voorraad zijn om wachttijd over materiaalleveringen te vermijden.",
   "Laat ons weten welke stukken essentieel zijn. We kunnen kritieke onderdelen prioriteit geven en rest later nasturen.",
+]
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "leadtime-factors", label: "Factoren die timing bepalen" },
+  { id: "leadtime-overview", label: "Overzichtstabel" },
+  { id: "leadtime-planning", label: "Ruwe planning" },
+  { id: "leadtime-rush", label: "Sneller leveren" },
+  { id: "leadtime-faq", label: "Veelgestelde vragen" },
+  { id: "leadtime-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "PrusaSlicer: G-code viewer (print time estimate)", href: "https://help.prusa3d.com/article/g-code-viewer_78984" },
+  { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
+  { label: "Prusa: Materials overview", href: "https://help.prusa3d.com/filament-material-guide" },
 ]
 
 const faq = [
@@ -122,6 +140,8 @@ export default function LeadTimeArticle() {
             <p className="mt-4 text-lg text-slate-700">
               Doorlooptijden lopen uiteen van express (ruwe prints binnen 24 uur) tot enkele weken (grote batches met finishing). Hieronder lees je welke factoren meespelen en hoe jij je project sneller in de queue krijgt.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
               <ShimmerButton href={pricingHref}>Bekijk richtprijzen & timing</ShimmerButton>
               <Link
@@ -141,7 +161,7 @@ export default function LeadTimeArticle() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="leadtime-factors" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
           {factors.map((factor) => (
             <Reveal key={factor.title}>
@@ -154,7 +174,33 @@ export default function LeadTimeArticle() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="leadtime-overview" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="overflow-x-auto border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Overzichtstabel: wat schuift je timing?</h2>
+              <table className="mt-5 min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                <thead>
+                  <tr className="text-xs uppercase tracking-wide text-slate-500">
+                    <th className="py-2 pr-4">Factor</th>
+                    <th className="py-2 pr-4">Impact op doorlooptijd</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {factors.map((factor) => (
+                    <tr key={factor.title}>
+                      <td className="py-3 pr-4 font-medium text-slate-900">{factor.title}</td>
+                      <td className="py-3 pr-4">{factor.description}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="leadtime-planning" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -164,14 +210,14 @@ export default function LeadTimeArticle() {
                 grote batches of speciale materialen vragen meer marge. We overlopen samen je deadline en reserveren machine-uren in functie van complexiteit.
               </p>
               <p className="mt-3 text-xs text-slate-500">
-                Tip: stuur STL/STEP + context in Ã©Ã©n keer door, dan hoeven we geen extra feedbackronde te plannen en kan het project sneller naar productie.
+                Tip: stuur STL/STEP + context in één keer door, dan hoeven we geen extra feedbackronde te plannen en kan het project sneller naar productie.
               </p>
             </GlassCard>
           </Reveal>
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="leadtime-rush" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -189,7 +235,7 @@ export default function LeadTimeArticle() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="leadtime-faq" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -202,6 +248,32 @@ export default function LeadTimeArticle() {
                   </div>
                 ))}
               </div>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="leadtime-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
         </div>

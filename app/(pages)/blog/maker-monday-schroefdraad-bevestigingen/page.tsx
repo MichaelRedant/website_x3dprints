@@ -1,12 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/maker-monday-schroefdraad-bevestigingen/"
 const publishedDate = "2025-11-17T08:00:00+01:00"
+const dateModified = "2026-02-08T08:00:00+01:00"
 
 export const metadata: Metadata = {
   title: "Schroefdraad en inserts in 3D prints | Maker Monday #7",
@@ -49,35 +52,35 @@ export const metadata: Metadata = {
 }
 
 const heroStats = [
-  { label: "Insert pocket", value: "â‰¥ 2 mm wall", detail: "Materiaal rondom messing insert" },
-  { label: "Self-tapper voorboor", value: "M3 â†’ 2.4 mm", detail: "Voorkomt scheuren in PLA/PETG" },
+  { label: "Insert pocket", value: "≥ 2 mm wall", detail: "Materiaal rondom messing insert" },
+  { label: "Self-tapper voorboor", value: "M3 -> 2.4 mm", detail: "Voorkomt scheuren in PLA/PETG" },
   { label: "Geprinte draad", value: "M20+", detail: "Clearance +0.15 mm radiaal" },
 ]
 
 const printedThreadTable = [
-  { size: "M10 â€“ M16", clearance: "+0.10 mm", notes: "Alleen PETG; PLA bros, TPU te flexibel" },
-  { size: "M20 â€“ M30", clearance: "+0.15 mm", notes: "Layer height â‰¤ 0.20 mm, snelheid Â±35 mm/s" },
+  { size: "M10 – M16", clearance: "+0.10 mm", notes: "Alleen PETG; PLA bros, TPU te flexibel" },
+  { size: "M20 – M30", clearance: "+0.15 mm", notes: "Layer height ≤ 0.20 mm, snelheid ±35 mm/s" },
   { size: "Buisdraad/props", clearance: "+0.20 mm", notes: "PLA prime voor props, geen belasting" },
 ]
 
 const selfTappingTable = [
   { screw: "M2.5 Plastite", pilot: "2.0 mm", materials: "PLA/PETG", remark: "Niet loodrecht op layer-lines" },
-  { screw: "M3 thread-forming", pilot: "2.4 â€“ 2.5 mm", materials: "PETG ideaal", remark: "PLA enkel licht belast" },
-  { screw: "M4 Plastite", pilot: "3.2 â€“ 3.3 mm", materials: "PETG", remark: "Gebruik bosses â‰¥ Ã˜8 mm" },
+  { screw: "M3 thread-forming", pilot: "2.4 – 2.5 mm", materials: "PETG ideaal", remark: "PLA enkel licht belast" },
+  { screw: "M4 Plastite", pilot: "3.2 – 3.3 mm", materials: "PETG", remark: "Gebruik bosses ≥ Ø8 mm" },
 ]
 
 const insertTable = [
-  { insert: "M2.5", pocket: "Ã˜3.4 mm", comment: "Perfect in PLA Matte; voeg 0.3 mm chamfer toe" },
-  { insert: "M3", pocket: "Ã˜4.0 mm", comment: "Meest gebruikt; PETG + inserts = serviceable behuizing" },
-  { insert: "M4", pocket: "Ã˜5.2 mm", comment: "Pak PETG voor torsie, PLA enkel licht belast" },
+  { insert: "M2.5", pocket: "Ø3.4 mm", comment: "Perfect in PLA Matte; voeg 0.3 mm chamfer toe" },
+  { insert: "M3", pocket: "Ø4.0 mm", comment: "Meest gebruikt; PETG + inserts = serviceable behuizing" },
+  { insert: "M4", pocket: "Ø5.2 mm", comment: "Pak PETG voor torsie, PLA enkel licht belast" },
 ]
 
 const mistakes = [
-  "Wanddikte < 2 mm rond een schroefgat â†’ delaminatie.",
-  "Gaten tekenen op nominale maat â†’ schroef drukt materiaal weg en scheurt PLA.",
+  "Wanddikte < 2 mm rond een schroefgat -> delaminatie.",
+  "Gaten tekenen op nominale maat -> schroef drukt materiaal weg en scheurt PLA.",
   "Schroeven loodrecht op layer-lines plaatsen zonder boss of rib.",
-  "Geen tolerantie voorzien: FDM variatie van Â±0.1 mm genegeerd.",
-  "Impact tools gebruiken op PLA/PETG â†’ insert of boss scheurt los.",
+  "Geen tolerantie voorzien: FDM variatie van ±0.1 mm genegeerd.",
+  "Impact tools gebruiken op PLA/PETG -> insert of boss scheurt los.",
 ]
 
 const materialHighlights = [
@@ -103,39 +106,38 @@ const materialHighlights = [
 
 const checklist = [
   "Minimaal 2 mm materiaal rond elk schroefgat; bosses zijn beter dan vlakke wanden.",
-  "Boss diameter = 2â€“2.5Ã— schroefdiameter, hoogte = â‰¥ 3 lagen.",
-  "Insert oriÃ«ntatie parallel aan layer-lines zodat de kracht niet dwars op de lagen trekt.",
-  "Voorboren volgens tabel; rely niet op â€œklemmen tot het pastâ€.",
+  "Boss diameter = 2–2.5× schroefdiameter, hoogte = ≥ 3 lagen.",
+  "Insert oriëntatie parallel aan layer-lines zodat de kracht niet dwars op de lagen trekt.",
+  "Voorboren volgens tabel; rely niet op “klemmen tot het past”.",
   "PETG voor functionele bevestigingen, PLA enkel cosmetisch, TPU enkel voor inserts/dempers.",
-  "Plan tolerantie (Â±0.1 mm) en vermeld bij intake welk schroeftype je verwacht.",
+  "Plan tolerantie (±0.1 mm) en vermeld bij intake welk schroeftype je verwacht.",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "fasteners-printed", label: "Geprinte schroefdraad" },
+  { id: "fasteners-selftapping", label: "Zelftappende schroeven" },
+  { id: "fasteners-inserts", label: "Heat-set inserts" },
+  { id: "fasteners-mistakes", label: "Veelgemaakte fouten" },
+  { id: "fasteners-checklist", label: "Checklist voor je CAD" },
+  { id: "fasteners-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "PEM: Threaded inserts for plastics", href: "https://www.pemnet.com/products/fastening-products-for-plastics/" },
+  { label: "ISO/ASTM 52900 terminology", href: "https://www.astm.org/standards/isoastm52900" },
+  { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Maker Monday #7: Schroefdraad en inserts in 3D prints",
-  description:
-    "How-to gids voor geprinte schroefdraad, zelftappende schroeven en heat set inserts in PLA, PETG en TPU. Inclusief toleranties en ontwerpregels.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
 
 function SectionDivider() {
   return (
@@ -181,9 +183,11 @@ export default function MakerMondaySchroefdraadBevestigingenPage() {
             </h1>
             <p className="mt-4 text-lg text-slate-700">
               Schroefdraad en FDM hoeven geen vijanden te zijn zolang je ontwerpt volgens de regels van het proces. Laagopbouw,
-              materiaalkeuze en oriÃ«ntatie bepalen of je draad drie cycli overleeft of jarenlang meegaat. In deze Maker Monday
-              overlopen we de drie echte strategieÃ«n: geprinte schroefdraad, zelftappende schroeven en heat set inserts.
+              materiaalkeuze en oriëntatie bepalen of je draad drie cycli overleeft of jarenlang meegaat. In deze Maker Monday
+              overlopen we de drie echte strategieën: geprinte schroefdraad, zelftappende schroeven en heat set inserts.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=maker-monday-fasteners">Vraag bevestigingsadvies</ShimmerButton>
               <Link
@@ -199,7 +203,7 @@ export default function MakerMondaySchroefdraadBevestigingenPage() {
                 Pricing & lead times
               </Link>
             </div>
-            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 17 november 2025 â€¢ Maker Monday knowledge hub.</p>
+            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 17 november 2025 • Maker Monday knowledge hub.</p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
             {heroStats.map((stat) => (
@@ -219,7 +223,9 @@ export default function MakerMondaySchroefdraadBevestigingenPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">1. Geprinte schroefdraad: wanneer wel, wanneer niet?</h2>
+              <h2 id="fasteners-printed" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                1. Geprinte schroefdraad: wanneer wel, wanneer niet?
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Draad printen is prima voor grote diameters of niet-kritieke verbindingen (caps, doppen, prototyping). Kleine
                 schroeven (M3-M8) scheuren laaglijnen open, zeker in PLA. Gebruik deze richtlijnen:
@@ -245,7 +251,7 @@ export default function MakerMondaySchroefdraadBevestigingenPage() {
                 </table>
               </div>
               <p className="mt-4 text-sm text-slate-600">
-                Tip: print trager (Â±35 mm/s), gebruik 0.2 mm layer height en disable agressieve cooling als je PETG draad
+                Tip: print trager (±35 mm/s), gebruik 0.2 mm layer height en disable agressieve cooling als je PETG draad
                 produceert. Voor kritisch draadsysteem? Gebruik inserts.
               </p>
             </GlassCard>
@@ -270,14 +276,42 @@ export default function MakerMondaySchroefdraadBevestigingenPage() {
         </div>
       </section>
 
+      <section id="fasteners-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">2. Zelftappende schroeven in FDM</h2>
+              <h2 id="fasteners-selftapping" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                2. Zelftappende schroeven in FDM
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Zelftappers zijn snel, goedkoop en verrassend betrouwbaar zolang je ontwerp klopt. Kies altijd thread-forming
-                varianten (Plastite/PT) zodat je geen spanen creÃ«ert. Gebruik onderstaande pilotmaten:
+                varianten (Plastite/PT) zodat je geen spanen creëert. Gebruik onderstaande pilotmaten:
               </p>
               <div className="mt-4 overflow-x-auto">
                 <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
@@ -302,7 +336,7 @@ export default function MakerMondaySchroefdraadBevestigingenPage() {
                 </table>
               </div>
               <p className="mt-4 text-sm text-slate-600">
-                Zorg voor bosses (diameter â‰¥ 2Ã— schroef) en schroef nooit met impacttools. Reken op een beperkt aantal cycli;
+                Zorg voor bosses (diameter ≥ 2× schroef) en schroef nooit met impacttools. Reken op een beperkt aantal cycli;
                 moet het vaker los/vast? Gebruik inserts.
               </p>
             </GlassCard>
@@ -314,7 +348,9 @@ export default function MakerMondaySchroefdraadBevestigingenPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">3. Heat set inserts: industriÃ«le standaard</h2>
+              <h2 id="fasteners-inserts" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                3. Heat set inserts: industriële standaard
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Voor behuizingen, fixtures en alles dat serviceable moet blijven, zijn heat set inserts onklopbaar. Messing inserts
                 met knurling smelten zichzelf in PETG of PLA en leveren een metalen draad.
@@ -324,7 +360,7 @@ export default function MakerMondaySchroefdraadBevestigingenPage() {
                   <thead>
                     <tr className="text-xs uppercase tracking-wide text-slate-500">
                       <th className="py-2 pr-4">Insert</th>
-                      <th className="py-2 pr-4">Gat Ã˜</th>
+                      <th className="py-2 pr-4">Gat Ø</th>
                       <th className="py-2 pr-4">Opmerking</th>
                     </tr>
                   </thead>
@@ -340,7 +376,7 @@ export default function MakerMondaySchroefdraadBevestigingenPage() {
                 </table>
               </div>
               <p className="mt-4 text-sm text-slate-600">
-                Gebruik een soldeerbout of nozzle-tip op 260â€“300 Â°C, druk langzaam tot het vlak is, laat afkoelen. Plaats inserts
+                Gebruik een soldeerbout of nozzle-tip op 260–300 °C, druk langzaam tot het vlak is, laat afkoelen. Plaats inserts
                 altijd zo dat de belastingskracht parallel loopt met de layer-lines. Zo voorkom je scheuren.
               </p>
               <p className="mt-2 text-sm text-slate-600">
@@ -352,12 +388,12 @@ export default function MakerMondaySchroefdraadBevestigingenPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h3 className="text-xl font-semibold text-slate-900">Temperatuur & oriÃ«ntatie</h3>
+              <h3 className="text-xl font-semibold text-slate-900">Temperatuur & oriëntatie</h3>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-600">
-                <li>Soldeerbout/nozzle-tip op 260â€“300 Â°C.</li>
-                <li>Voeg 0.3â€“0.5 mm chamfer toe zodat de insert zichzelf centreert.</li>
-                <li>Druk in Ã©Ã©n vloeiende beweging en laat het materiaal rondom volledig afkoelen.</li>
-                <li>OriÃ«nteer het onderdeel zodat de insert parallel aan de layers belast wordt.</li>
+                <li>Soldeerbout/nozzle-tip op 260–300 °C.</li>
+                <li>Voeg 0.3–0.5 mm chamfer toe zodat de insert zichzelf centreert.</li>
+                <li>Druk in één vloeiende beweging en laat het materiaal rondom volledig afkoelen.</li>
+                <li>Oriënteer het onderdeel zodat de insert parallel aan de layers belast wordt.</li>
               </ul>
             </GlassCard>
           </Reveal>
@@ -368,7 +404,9 @@ export default function MakerMondaySchroefdraadBevestigingenPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">4. Veelgemaakte fouten</h2>
+              <h2 id="fasteners-mistakes" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                4. Veelgemaakte fouten
+              </h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-600">
                 {mistakes.map((item) => (
                   <li key={item} className="rounded-2xl border border-slate-100 bg-white/70 p-3">
@@ -380,7 +418,9 @@ export default function MakerMondaySchroefdraadBevestigingenPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">5. Checklist voor je CAD</h2>
+              <h2 id="fasteners-checklist" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                5. Checklist voor je CAD
+              </h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-600">
                 {checklist.map((item) => (
                   <li key={item} className="rounded-2xl border border-slate-100 bg-white/70 p-3">
@@ -452,6 +492,7 @@ export default function MakerMondaySchroefdraadBevestigingenPage() {
     </main>
   )
 }
+
 
 
 

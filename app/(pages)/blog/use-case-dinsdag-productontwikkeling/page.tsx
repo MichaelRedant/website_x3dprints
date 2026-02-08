@@ -1,12 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-productontwikkeling/"
 const publishedDate = "2025-12-23T08:00:00+01:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Use Case Dinsdag #5: 3D printen voor productontwikkeling",
@@ -156,32 +159,31 @@ const reasonsToPartner = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "product-phases", label: "Prototypefases" },
+  { id: "product-hybrid", label: "Hybride aanpak" },
+  { id: "product-design", label: "Ontwerpregels" },
+  { id: "product-testing", label: "Testfase en kosten" },
+  { id: "product-why", label: "Waarom X3DPrints" },
+  { id: "product-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
+  { label: "Prusa: Material guide (PLA, PETG, TPU)", href: "https://help.prusa3d.com/filament-material-guide" },
+  { label: "ISO/ASTM 52900: Additive manufacturing terminology", href: "https://www.astm.org/standards/isoastm52900" },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Use Case Dinsdag #5: 3D printen voor productontwikkeling",
-  description:
-    "Van form study modellen tot high-fidelity prototypes met PLA, PETG en hybride constructies. Inclusief ontwerpregels en testchecklist.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
 
 function SectionDivider() {
   return (
@@ -229,6 +231,8 @@ export default function UseCaseDinsdagProductontwikkelingPage() {
               Productteams moeten vorm, ergonomie, sterkte en visuele impact tegelijk beoordelen. Deze gids toont hoe je PLA, PETG
               en esthetische blends combineert tot een iteratief traject dat beslissingen versnelt.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=use-case-productontwikkeling">Vraag productadvies</ShimmerButton>
               <Link
@@ -260,7 +264,7 @@ export default function UseCaseDinsdagProductontwikkelingPage() {
 
       <SectionDivider />
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="product-phases" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-3">
           {prototypePhases.map((phase) => (
             <Reveal key={phase.title}>
@@ -289,7 +293,7 @@ export default function UseCaseDinsdagProductontwikkelingPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="product-hybrid" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -316,7 +320,7 @@ export default function UseCaseDinsdagProductontwikkelingPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="product-design" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -343,7 +347,7 @@ export default function UseCaseDinsdagProductontwikkelingPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="product-testing" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -382,7 +386,7 @@ export default function UseCaseDinsdagProductontwikkelingPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="product-why" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -399,6 +403,32 @@ export default function UseCaseDinsdagProductontwikkelingPage() {
                 Klaar voor volgende stappen zoals harsprints of silicone molds? We koppelen je door zodra het prototype aangeeft
                 dat detail of volume daarom vraagt.
               </p>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="product-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
         </div>
@@ -433,6 +463,7 @@ export default function UseCaseDinsdagProductontwikkelingPage() {
     </main>
   )
 }
+
 
 
 

@@ -4,12 +4,13 @@ import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
-import { buildFaqPageSchema } from "@/lib/seo"
+import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-herfst-halloween/"
 const datePublished = "2024-10-01"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "3D printen voor herfst en Halloween | X3DPrints Blog",
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
 const tips = [
   "Gebruik PLA Silk of Marble voor pumpkins en statues; Translucent voor lantaarns met leds of fairy lights.",
   "Layerhoogte 0,16-0,2 mm; houd wanddikte >1,2 mm voor stevige decor die je kunt ophangen of neerzetten.",
-  "OriÃ«nteer zichtzijden omhoog en laat onderkant vlak voor stabiele plaatsing.",
+  "Oriënteer zichtzijden omhoog en laat onderkant vlak voor stabiele plaatsing.",
   "Integreer kabelgaten of magneten voor led-strips of battery packs en zorg voor ventilatie bij warmere leds.",
-  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan â‚¬45/uur.",
+  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan €45/uur.",
 ]
 
 const checklist = [
@@ -49,10 +50,32 @@ const checklist = [
   "Leveroptie: EV-zones of pakketdienst; afhalen kan. Voeg deadline toe.",
 ]
 
+const materialRows = [
+  { material: "PLA Silk/Marble", use: "Pumpkins, statues, decor", note: "Glans of steenlook, indoor" },
+  { material: "Translucent PLA", use: "Lantaarns en lichtobjecten", note: "Wanddikte 1,6-2 mm voor glow" },
+  { material: "PETG", use: "Outdoor decor", note: "Beter tegen UV en vocht" },
+]
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "herfst-materials", label: "Materialen & checklist" },
+  { id: "herfst-examples", label: "Voorbeelden" },
+  { id: "herfst-why", label: "Waarom nu plannen" },
+  { id: "herfst-faq", label: "FAQ" },
+  { id: "herfst-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
+  { label: "UltiMaker PETG material properties", href: "https://ultimaker.com/materials/s-series-petg/" },
+  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-1B6AA02D-B8E5-4F54-ADC7-11C5B900E05F" },
+]
+
 const faqItems = [
   {
     q: "Kunnen jullie pumpkins hol printen?",
-    a: "Ja. We houden 2-3 perimeter lagen, aangepaste infill en openingsgaten voor leds/batterijen. Lever STL/STEP of laat ons ontwerpen aan â‚¬45/uur.",
+    a: "Ja. We houden 2-3 perimeter lagen, aangepaste infill en openingsgaten voor leds/batterijen. Lever STL/STEP of laat ons ontwerpen aan €45/uur.",
   },
   {
     q: "Wat is het beste materiaal voor spooky props?",
@@ -60,11 +83,11 @@ const faqItems = [
   },
   {
     q: "Hoe lever je breekbare decor veilig?",
-    a: "Gescheiden verpakt met schuim; EV-levering in zones (Zone 1 â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45) of pakketdienst. Afhalen kan gratis.",
+    a: "Gescheiden verpakt met schuim; EV-levering in zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) of pakketdienst. Afhalen kan gratis.",
   },
   {
     q: "Is het 3D model inbegrepen?",
-    a: "Nee. Het ontwerpbestand is niet inbegrepen in de printprijs. Lever STL/STEP of kies ontwerpservice aan â‚¬45/uur; we optimaliseren wanddiktes en supports.",
+    a: "Nee. Het ontwerpbestand is niet inbegrepen in de printprijs. Lever STL/STEP of kies ontwerpservice aan €45/uur; we optimaliseren wanddiktes en supports.",
   },
   {
     q: "Kun je primeren of schilderklaar leveren?",
@@ -72,27 +95,15 @@ const faqItems = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: "nl-BE",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "3D printen voor herfst & Halloween",
   description:
     "Pumpkins, haunted props en sfeerlantaarns in Silk, Marble en Translucent PLA. Tips voor supports, lichtdiffusie en levering.",
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
-  },
-  mainEntityOfPage: canonical,
   datePublished,
   dateModified,
-  url: canonical,
-  image: ["https://www.x3dprints.be/images/og-home.jpg"],
-}
+  image: "https://www.x3dprints.be/images/og-home.jpg",
+})
 
 const faqJsonLd = buildFaqPageSchema({
   inLanguage: "nl-BE",
@@ -124,8 +135,10 @@ export default function BlogAutumnHalloween() {
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Pumpkins, haunted props en sfeerlantaarns in Silk, Marble en Translucent PLA. Ontwerpbestand niet inbegrepen; lever
-              STL/STEP of kies ontwerpservice (â‚¬45/uur). EV-levering voor breekbare onderdelen of pakketdienst als je verder zit.
+              STL/STEP of kies ontwerpservice (€45/uur). EV-levering voor breekbare onderdelen of pakketdienst als je verder zit.
             </p>
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact">Plan je Halloween print</ShimmerButton>
               <Link
@@ -145,11 +158,31 @@ export default function BlogAutumnHalloween() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="herfst-materials" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
               <h2 className="text-2xl font-bold tracking-tight text-slate-900">Materialen & settings</h2>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="text-xs uppercase tracking-wide text-slate-500">
+                      <th className="py-2 pr-4">Materiaal</th>
+                      <th className="py-2 pr-4">Gebruik</th>
+                      <th className="py-2 pr-4">Notities</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {materialRows.map((row) => (
+                      <tr key={row.material}>
+                        <td className="py-3 pr-4 font-semibold text-slate-900">{row.material}</td>
+                        <td className="py-3 pr-4">{row.use}</td>
+                        <td className="py-3 pr-4">{row.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {tips.map((tip) => (
                   <li key={tip} className="flex gap-2">
@@ -189,7 +222,7 @@ export default function BlogAutumnHalloween() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="herfst-examples" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -220,7 +253,7 @@ export default function BlogAutumnHalloween() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="herfst-why" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
@@ -235,7 +268,7 @@ export default function BlogAutumnHalloween() {
                 <li>Optioneel primer/schuren zodat je direct kan schilderen.</li>
               </ul>
               <p className="mt-3 text-sm text-slate-700">
-                Herinnering: het 3D model is niet inbegrepen in de printprijs. Lever STL/STEP of laat ons ontwerpen aan â‚¬45/uur.
+                Herinnering: het 3D model is niet inbegrepen in de printprijs. Lever STL/STEP of laat ons ontwerpen aan €45/uur.
                 Vermeld je eventdatum en leveroptie bij de aanvraag.
               </p>
             </GlassCard>
@@ -245,8 +278,8 @@ export default function BlogAutumnHalloween() {
             <GlassCard className="p-6">
               <h3 className="text-xl font-semibold tracking-tight text-slate-900">SEO inspiratiehoek</h3>
               <p className="mt-2 text-sm text-slate-700">
-                Zoek je â€œ3D geprinte Halloween decorâ€, â€œ3D print pumpkinâ€, â€œtranslucent lantaarnâ€, â€œSilk PLA spooky propsâ€ of
-                â€œcustom Halloween giftâ€? Hier vind je materiaalkeuze (Silk/Marble/Translucent, PETG, TPU) en support-tips om snel
+                Zoek je “3D geprinte Halloween decor”, “3D print pumpkin”, “translucent lantaarn”, “Silk PLA spooky props” of
+                “custom Halloween gift”? Hier vind je materiaalkeuze (Silk/Marble/Translucent, PETG, TPU) en support-tips om snel
                 te beslissen.
               </p>
               <p className="mt-3 text-sm text-slate-700">
@@ -268,7 +301,7 @@ export default function BlogAutumnHalloween() {
         </div>
       </section>
 
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+      <section id="herfst-faq" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -293,6 +326,32 @@ export default function BlogAutumnHalloween() {
         </div>
       </section>
 
+      <section id="herfst-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
@@ -300,6 +359,8 @@ export default function BlogAutumnHalloween() {
     </main>
   )
 }
+
+
 
 
 

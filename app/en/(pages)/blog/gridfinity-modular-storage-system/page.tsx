@@ -4,9 +4,30 @@ import Image from "next/image"
 import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
 import Faq from "@/components/Faq"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/gridfinity-modular-storage-system/"
 const publishedDate = "2026-01-30T08:00:00+01:00"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
+
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
+  },
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
 
 const GRID_IMAGES = [
   { src: "/images/organizers/modugrid/ModuGrid1.jpg", alt: "Gridfinity drawer overview (top view)", width: 1600, height: 900 },
@@ -26,7 +47,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Which magnets fit Gridfinity?",
-    a: "Standard 6×2 mm magnets in each corner. For heavy duty we can add M3 screws to lock baseplates or bins.",
+    a: "Standard 6Ã—2 mm magnets in each corner. For heavy duty we can add M3 screws to lock baseplates or bins.",
   },
   {
     q: "Which material should I choose?",
@@ -34,7 +55,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Can you make a custom bin for one tool?",
-    a: "Yes. Send a top-down photo, L×W×H (or diameter × height), desired orientation and quantity. We model a pocket, share a preview and adjust until it fits.",
+    a: "Yes. Send a top-down photo, LÃ—WÃ—H (or diameter Ã— height), desired orientation and quantity. We model a pocket, share a preview and adjust until it fits.",
   },
   {
     q: "Does Gridfinity work inside Packout cases?",
@@ -49,7 +70,7 @@ const FAQ_ITEMS = [
 export const metadata: Metadata = {
   title: "Gridfinity: modular storage, custom-fit by X3DPrints",
   description:
-    "Gridfinity explained: 42×42 grid, 7 mm units, magnets, labels, use cases and how X3DPrints designs custom bins and Packout-ready inlays.",
+    "Gridfinity explained: 42Ã—42 grid, 7 mm units, magnets, labels, use cases and how X3DPrints designs custom bins and Packout-ready inlays.",
   alternates: {
     canonical,
     languages: {
@@ -72,20 +93,36 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "Gridfinity: modular storage, custom-fit by X3DPrints",
+  description: metadata.description ?? "",
+  datePublished: publishedDate,
+  dateModified,
+  image: "/images/organizers/modugrid/ModuGrid3.webp",
+  inLanguage: "en-BE",
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "en-BE",
+  mainEntityOfPage: canonical,
+  items: FAQ_ITEMS,
+})
+
 export default function GridfinityBlogEn() {
   return (
     <main className="px-6 pb-16 sm:px-8 lg:px-12">
       <article className="mx-auto max-w-4xl space-y-12">
         <header className="space-y-4 pt-10 sm:pt-14">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-700">Gridfinity · guide</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-700">Gridfinity Â· guide</p>
           <h1 className="text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
             Gridfinity: the modular storage system transforming workshops and teams
           </h1>
           <p className="text-lg text-slate-700 dark:text-slate-200">
-            Why the 42×42×7 mm grid wins, and how X3DPrints designs custom bins, starter kits and Packout-ready inlays so you buy calm and time—not plastic.
+            Why the 42Ã—42Ã—7 mm grid wins, and how X3DPrints designs custom bins, starter kits and Packout-ready inlays so you buy calm and timeâ€”not plastic.
           </p>
           <div className="flex flex-wrap gap-3 text-sm text-slate-600">
-            <span>Last update: 30 January 2026</span>
+            <span>{lastUpdatedLabel}</span>
             <span className="inline-flex items-center gap-1 rounded-full bg-cyan-50 px-2 py-1 text-xs font-semibold text-cyan-700 ring-1 ring-cyan-100">
               Gridfinity explained
             </span>
@@ -95,7 +132,7 @@ export default function GridfinityBlogEn() {
         <section className="space-y-3 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">What is Gridfinity?</h2>
           <p>
-            Gridfinity uses a standardized 42 × 42 mm grid and 7‑mm height units. Bins snap per grid cell and stack per U. Magnet pockets for 6×2‑mm magnets keep trays planted; M3 screws add lock-down if needed. Label edges (e.g. 9‑mm tape) keep layouts readable. PLA or PETG deliver crisp, strong prints.
+            Gridfinity uses a standardized 42 Ã— 42 mm grid and 7â€‘mm height units. Bins snap per grid cell and stack per U. Magnet pockets for 6Ã—2â€‘mm magnets keep trays planted; M3 screws add lock-down if needed. Label edges (e.g. 9â€‘mm tape) keep layouts readable. PLA or PETG deliver crisp, strong prints.
           </p>
           <ul className="list-disc space-y-2 pl-5">
             <li>Cross-compatible designs between makers and printers.</li>
@@ -107,7 +144,7 @@ export default function GridfinityBlogEn() {
         <section className="space-y-3 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Why the hype?</h2>
           <ol className="list-decimal space-y-2 pl-5">
-            <li><strong>Modular perfection:</strong> the 42‑mm grid keeps baseplates and bins compatible.</li>
+            <li><strong>Modular perfection:</strong> the 42â€‘mm grid keeps baseplates and bins compatible.</li>
             <li><strong>Personalizable:</strong> any tool can get an exact-fit bin.</li>
             <li><strong>Scalable:</strong> start small, grow without breaking standards.</li>
           </ol>
@@ -117,9 +154,9 @@ export default function GridfinityBlogEn() {
         <section className="space-y-4 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Technical core</h2>
           <GlassCard className="space-y-2">
-            <p><strong>Grid & sizes:</strong> 42×42 mm, 7‑mm U; nominal bin width 41.5 mm for smooth fit.</p>
-            <p><strong>Magnets:</strong> 6×2‑mm magnet pockets in corners; M3 screws optional for transport.</p>
-            <p><strong>Labels:</strong> label edge fits 9‑mm tape for fast identification.</p>
+            <p><strong>Grid & sizes:</strong> 42Ã—42 mm, 7â€‘mm U; nominal bin width 41.5 mm for smooth fit.</p>
+            <p><strong>Magnets:</strong> 6Ã—2â€‘mm magnet pockets in corners; M3 screws optional for transport.</p>
+            <p><strong>Labels:</strong> label edge fits 9â€‘mm tape for fast identification.</p>
             <p><strong>Materials:</strong> PLA Matte for desks/drawers; PETG for transport or warmer settings.</p>
             <p>
               <strong>Generators:</strong> web tools (GridfinityCreator, Perplexing Labs) and parametric libs (Build123d, CadQuery, OpenSCAD) create custom bins in minutes.
@@ -135,7 +172,7 @@ export default function GridfinityBlogEn() {
             <li><strong>Home:</strong> make-up, office supplies, sewing gear, kitchen drawers.</li>
           </ul>
           <p>
-            Integrations with case systems (Milwaukee Packout, DeWALT ToughSystem, Stanley TSTAK) are booming: print baseplates that fit the case and keep the 42‑mm grid. We make Packout-compatible Gridfinity inlays that respect your tray height units.
+            Integrations with case systems (Milwaukee Packout, DeWALT ToughSystem, Stanley TSTAK) are booming: print baseplates that fit the case and keep the 42â€‘mm grid. We make Packout-compatible Gridfinity inlays that respect your tray height units.
           </p>
         </section>
 
@@ -254,36 +291,27 @@ export default function GridfinityBlogEn() {
         </section>
       </article>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline: "Gridfinity: modular storage system",
-            description:
-              "Gridfinity explained: grid, magnets, labels, applications and how X3DPrints delivers custom bins, starter kits and Packout inlays.",
-            datePublished: publishedDate,
-            dateModified: publishedDate,
-            author: { "@type": "Person", name: "X3DPrints" },
-            publisher: {
-              "@type": "Organization",
-              name: "X3DPrints",
-              logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/og-home.jpg" },
-            },
-            mainEntityOfPage: canonical,
-            image: "https://www.x3dprints.be/images/organizers/modugrid/ModuGrid3.webp",
-            mainEntity: {
-              "@type": "FAQPage",
-              mainEntity: FAQ_ITEMS.map((item) => ({
-                "@type": "Question",
-                name: item.q,
-                acceptedAnswer: { "@type": "Answer", text: item.a },
-              })),
-            },
-          }),
-        }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
     </main>
   )
 }
+
+

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -9,7 +9,8 @@ import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-winter-kerst-nieuwjaar/"
 const datePublished = "2024-11-15"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
   title: "3D printing for winter, Christmas and New Year | X3DPrints Blog",
@@ -43,7 +44,7 @@ const tips = [
   "Silk or Marble PLA for shiny ornaments and table pieces; multicolour PLA for playful baubles.",
   "Translucent PLA for light objects; wall thickness 1.6-2 mm for a soft glow.",
   "Layer height 0.16-0.2 mm; ensure sturdy hang loops on ornaments.",
-  "Design/model not included: provide STL/STEP or choose design service at â‚¬45/hour.",
+  "Design/model not included: provide STL/STEP or choose design service at €45/hour.",
 ]
 
 const checklist = [
@@ -56,7 +57,7 @@ const checklist = [
 const faqItems = [
   {
     q: "Can you also design the ornament?",
-    a: "Yes, optionally. Design is not included. Provide STL/STEP or choose design service (â‚¬45/hour). We tune wall thickness, loops and text for printability.",
+    a: "Yes, optionally. Design is not included. Provide STL/STEP or choose design service (€45/hour). We tune wall thickness, loops and text for printability.",
   },
   {
     q: "What materials are best for light objects?",
@@ -64,7 +65,7 @@ const faqItems = [
   },
   {
     q: "How do you pack fragile items?",
-    a: "We pack separately with foam and deliver via EV zones (Zone 1 â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45) or parcel service. Pickup in Herzele is free.",
+    a: "We pack separately with foam and deliver via EV zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) or parcel service. Pickup in Herzele is free.",
   },
   {
     q: "Can you rush before the holidays?",
@@ -81,11 +82,28 @@ const inspirationImages = [
   { src: "/images/portfolio/IMG-20241106-WA0000.jpg", alt: "3D printed winter decor 6" },
 ]
 
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
+  },
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
+
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "3D printing for winter, Christmas and New Year",
-  description:
-    "Snowflakes, ornaments, place cards and party props in Silk, Marble and Translucent PLA. Tips for light objects, mounting and delivery. Design file not included.",
+  description: metadata.description ?? "",
   datePublished,
   dateModified,
   inLanguage: "en-BE",
@@ -112,8 +130,9 @@ export default function WinterHolidaysBlogEn() {
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Snowflakes, ornaments, place cards and party props with gloss or glow. Design file not included; provide STL/STEP or choose design service
-              (â‚¬45/hour). EV delivery in Belgium, parcel elsewhere; Bpost export for EU/UK gifting on request.
+              (€45/hour). EV delivery in Belgium, parcel elsewhere; Bpost export for EU/UK gifting on request.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact?material=PLA">Plan holiday prints</ShimmerButton>
               <Link
@@ -229,6 +248,22 @@ export default function WinterHolidaysBlogEn() {
           </Reveal>
         </div>
       </section>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -236,6 +271,9 @@ export default function WinterHolidaysBlogEn() {
     </main>
   )
 }
+
+
+
 
 
 

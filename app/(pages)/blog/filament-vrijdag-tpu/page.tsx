@@ -3,10 +3,12 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
+import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-tpu/"
 const publishedDate = "2025-09-19T08:00:00+02:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "TPU 3D Printen: Flexibel, sterk en schokdempend | X3DPrints",
@@ -168,7 +170,7 @@ const resourceLinks = [
   },
 ]
 
-const externalReferences = [
+const references = [
   {
     label: "Prusa Knowledge Base - Flexibele materialen",
     href: "https://help.prusa3d.com/category/flexible-materials_210",
@@ -193,32 +195,18 @@ const upcomingPosts = [
   { label: "Use cases: hoe klanten TPU in de praktijk inzetten", href: "/blog/use-cases-tpu" },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "TPU 3D Printen: Flexibel, sterk en schokdempend",
-  description:
-    "Filament Vrijdag #3 van X3DPrints. Leer wanneer TPU slimmer is dan PLA of PETG, welke instellingen werken en hoe je het inzet voor flexibele onderdelen.",
+  description: "Filament Vrijdag #3 van X3DPrints. Leer wanneer TPU slimmer is dan PLA of PETG, welke instellingen werken en hoe je het inzet voor flexibele onderdelen.",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/og-x3dprints.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
+
+
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
 function SectionDivider() {
   return (
@@ -268,6 +256,7 @@ export default function FilamentVrijdagTpuPage() {
               veel miserie uitsparen. In deze Filament Vrijdag tonen we waar TPU schittert, welke instellingen we gebruiken en
               wanneer je beter bij een hard materiaal blijft.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/contact?material=TPU">Vraag TPU advies</ShimmerButton>
               <Link
@@ -606,13 +595,13 @@ export default function FilamentVrijdagTpuPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en verder lezen</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Wil je zelf nog dieper in TPU duiken, dan zijn dit goede vertrekpunten. Combineer ze met de praktijkervaring uit
                 deze blog en je komt snel tot stabiele profielen.
               </p>
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
-                {externalReferences.map((ref) => (
+                {references.map((ref) => (
                   <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/60 p-4">
                     <Link
                       href={ref.href}
@@ -660,6 +649,10 @@ export default function FilamentVrijdagTpuPage() {
     </main>
   )
 }
+
+
+
+
 
 
 

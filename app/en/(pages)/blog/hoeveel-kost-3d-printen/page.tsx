@@ -8,7 +8,8 @@ import { buildArticleJsonLd } from "@/lib/seo"
 const canonical = "https://www.x3dprints.be/en/blog/hoeveel-kost-3d-printen/"
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=how-much-3d-printing-cost"
 const datePublished = "2024-10-01"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 const pricingHref = `/en/pricing${utm}`
 const contactHref = `/en/contact${utm}`
 const materialsHref = `/en/materials${utm}#material-suggestion-tool`
@@ -92,11 +93,28 @@ const faq = [
   },
 ]
 
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
+  },
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
+
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "How much does 3D printing cost?",
-  description:
-    "Guide to 3D printing cost factors: material, machine hours, complexity, finishing and logistics, plus example pricing.",
+  description: metadata.description ?? "",
   datePublished,
   dateModified,
   image: "/images/portfolio/2d-6-1-1.webp",
@@ -116,6 +134,7 @@ export default function CostArticleEn() {
           <p className="text-lg text-slate-700">
             A clear breakdown of what drives price for every 3d model print: material choice, machine hours, complexity, finishing and logistics. Use it to budget realistically before you request a quote.
           </p>
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton href={pricingHref} event={{ action: "cta_click", category: "blog_top", label: "pricing_cost_en" }}>
               View pricing & calculator
@@ -136,7 +155,7 @@ export default function CostArticleEn() {
               <p className="mt-2 text-sm text-slate-700">{factor.description}</p>
               <p className="mt-2 text-xs text-slate-500">{factor.tip}</p>
               <Link href={factor.link.href} className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 hover:text-indigo-500">
-                {factor.link.label} <span aria-hidden>→</span>
+                {factor.link.label} <span aria-hidden>â†’</span>
               </Link>
             </GlassCard>
           ))}
@@ -169,15 +188,15 @@ export default function CostArticleEn() {
             <div className="mt-4 space-y-3 text-sm text-slate-700">
               <div className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
                 <p className="text-sm font-semibold text-slate-900">Small: keychain or clip</p>
-                <p className="mt-1">PLA Matte, ~30–60 min print, minimal supports. ~€5–€9 ex. shipping.</p>
+                <p className="mt-1">PLA Matte, ~30â€“60 min print, minimal supports. ~€5â€“€9 ex. shipping.</p>
               </div>
               <div className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
                 <p className="text-sm font-semibold text-slate-900">Medium: enclosure 10x10x8 cm</p>
-                <p className="mt-1">PLA or PETG, ~3–5 h print, light supports. ~€20–€35 depending on material and finish.</p>
+                <p className="mt-1">PLA or PETG, ~3â€“5 h print, light supports. ~€20â€“€35 depending on material and finish.</p>
               </div>
               <div className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
                 <p className="text-sm font-semibold text-slate-900">Large: decor piece 20x20x20 cm</p>
-                <p className="mt-1">PLA Matte/Silk, ~10–18 h print, support-heavy if overhangs. ~€49–€95 depending on complexity and infill.</p>
+                <p className="mt-1">PLA Matte/Silk, ~10â€“18 h print, support-heavy if overhangs. ~€49â€“€95 depending on complexity and infill.</p>
               </div>
             </div>
           </GlassCard>
@@ -218,9 +237,28 @@ export default function CostArticleEn() {
           secondaryLinks={[]}
         />
       </article>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
     </main>
   )
 }
+
+
+
 

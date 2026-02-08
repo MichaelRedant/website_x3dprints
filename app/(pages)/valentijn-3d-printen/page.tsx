@@ -100,7 +100,7 @@ export default function ValentijnLandingPage() {
       <section className="px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <GlassCard className="p-6">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900">IdeeÃ«n voor Valentijn</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900">Ideeën voor Valentijn</h2>
             <ul className="mt-3 space-y-2 text-sm text-slate-700">
               {ideas.map((idea) => (
                 <li key={idea} className="flex gap-2">

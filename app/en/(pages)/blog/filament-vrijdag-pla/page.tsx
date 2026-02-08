@@ -4,9 +4,12 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-pla/"
 const publishedDate = "2025-09-05T08:00:00+02:00"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
   title: "PLA 3D printing: properties, uses and expert tips | X3DPrints",
@@ -164,7 +167,7 @@ const resourceLinks = [
   { label: "Material Suggestion Tool", href: "/en/materials#material-suggestion-tool", description: "Let the wizard propose a material." },
 ]
 
-const externalReferences = [
+const references = [
   {
     label: "Prusa Knowledge Base - PLA",
     href: "https://help.prusa3d.com/category/pla_204",
@@ -177,26 +180,16 @@ const externalReferences = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "PLA 3D printing: properties, uses and expert tips",
-  description:
-    "PLA guide from X3DPrints: when to use it, variants, settings, limitations and how it compares to PETG/TPU. Part of Filament Friday.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/og-x3dprints.jpg" },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
   inLanguage: "en-BE",
-}
+})
+
 
 export default function FilamentFridayPlaEnPage() {
   return (
@@ -234,6 +227,7 @@ export default function FilamentFridayPlaEnPage() {
               This guide shows where PLA excels, where it fails and how to pick the right variant (Matte, Marble, Wood). Use the settings below as a
               reliable starting point for studio-quality prints.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/en/materials/pla-matte">View PLA Matte</ShimmerButton>
               <Link
@@ -406,7 +400,7 @@ export default function FilamentFridayPlaEnPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Resources and references</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 <div className="rounded-2xl border border-slate-100 bg-white/70 p-4">
                   <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Internal links</p>
@@ -422,9 +416,9 @@ export default function FilamentFridayPlaEnPage() {
                   </ul>
                 </div>
                 <div className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                  <p className="text-xs uppercase tracking-[0.3em] text-slate-500">External references</p>
+                  <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Sources and references</p>
                   <ul className="mt-2 space-y-2 text-sm text-slate-600">
-                    {externalReferences.map((ref) => (
+                    {references.map((ref) => (
                       <li key={ref.href}>
                         <a
                           href={ref.href}
@@ -472,3 +466,6 @@ export default function FilamentFridayPlaEnPage() {
     </main>
   )
 }
+
+
+

@@ -11,7 +11,7 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 const canonical = "https://www.x3dprints.be/blog/bestanden-voor-3d-printen/"
 const enCanonical = "https://www.x3dprints.be/en/blog/bestanden-voor-3d-printen/"
 const datePublished = "2024-08-01"
-const dateModified = "2026-02-07"
+const dateModified = "2026-02-08"
 const viewerHref = "/viewer?utm_source=blog&utm_medium=cta&utm_campaign=bestanden"
 const contactHref = "/contact?material=pla-matte&quote=Bestandscheck%20voor%203D%20printen"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=bestanden"
@@ -102,16 +102,16 @@ const faqItems = [
 
 const references = [
   {
-    label: "Prusa material guide",
-    href: "https://help.prusa3d.com/article/material-guide_220",
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
   },
   {
-    label: "All3DP FDM process explainer",
-    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+    label: "Autodesk: What is a STEP file?",
+    href: "https://www.autodesk.com/solutions/what-is-a-step-file",
   },
   {
-    label: "Google Search docs: crawlable links",
-    href: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+    label: "ISO/ASTM 52900: Additive manufacturing terminology",
+    href: "https://www.astm.org/standards/isoastm52900",
   },
 ]
 
@@ -191,7 +191,7 @@ export default function FilesArticlePage() {
             Een goede bestandsaanlevering voorkomt vertraging. Met de juiste export en context start je project veel sneller, zeker wanneer je met 3d stl of andere 3d modellen om te printen werkt.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 7 februari 2026
+            Laatst bijgewerkt: 8 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton

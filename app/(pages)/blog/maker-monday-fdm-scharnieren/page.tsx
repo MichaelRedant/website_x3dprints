@@ -1,17 +1,20 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/maker-monday-fdm-scharnieren/"
 const publishedDate = "2025-12-08T08:00:00+01:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Maker Monday #1: FDM scharnieren ontwerpen die echt werken | X3DPrints",
   description:
-    "How-to gids voor FDM scharnieren. Materiaalkeuze, oriÃ«ntatie, wanddiktes, pin-toleranties en verstevigingen zodat PLA, PETG of TPU scharnieren betrouwbaar openen.",
+    "How-to gids voor FDM scharnieren. Materiaalkeuze, oriëntatie, wanddiktes, pin-toleranties en verstevigingen zodat PLA, PETG of TPU scharnieren betrouwbaar openen.",
   alternates: { canonical },
   openGraph: {
     title: "Maker Monday #1: Zo ontwerp je sterke FDM scharnieren",
@@ -50,8 +53,8 @@ export const metadata: Metadata = {
 
 const heroStats = [
   { label: "Aanbevolen materiaal", value: "PETG", detail: "Taai, buigt voor het breekt" },
-  { label: "Min. wanddikte", value: "2.4 â€“ 3.2 mm", detail: "Afhankelijk van materiaal en impactzone" },
-  { label: "Pin speling", value: "+0.20 â€“ 0.40 mm", detail: "PLA het minst, TPU het meest" },
+  { label: "Min. wanddikte", value: "2.4 – 3.2 mm", detail: "Afhankelijk van materiaal en impactzone" },
+  { label: "Pin speling", value: "+0.20 – 0.40 mm", detail: "PLA het minst, TPU het meest" },
 ]
 
 const materials = [
@@ -79,7 +82,7 @@ const materials = [
     name: "TPU",
     highlights: [
       "Voor flex-hinges en snaps",
-      "Ideaal als silent damper of geÃ¯ntegreerde bumper",
+      "Ideaal als silent damper of geïntegreerde bumper",
       "Link: Filament Vrijdag TPU",
     ],
     link: "/blog/filament-vrijdag-tpu",
@@ -107,18 +110,18 @@ const wallGuidelines = [
 ]
 
 const pinGuidelines = [
-  { type: "Kleine doosjes", pin: "2.5 â€“ 3 mm", tolerances: "PLA +0.20 mm, PETG +0.25 mm" },
-  { type: "Middelgrote deksels", pin: "3.5 â€“ 4 mm", tolerances: "Zelfde spelingsregels, socket ruimer houden" },
-  { type: "Zware covers", pin: "4.5 â€“ 6 mm", tolerances: "PETG +0.30 mm, TPU insert +0.40 mm mogelijk" },
+  { type: "Kleine doosjes", pin: "2.5 – 3 mm", tolerances: "PLA +0.20 mm, PETG +0.25 mm" },
+  { type: "Middelgrote deksels", pin: "3.5 – 4 mm", tolerances: "Zelfde spelingsregels, socket ruimer houden" },
+  { type: "Zware covers", pin: "4.5 – 6 mm", tolerances: "PETG +0.30 mm, TPU insert +0.40 mm mogelijk" },
 ]
 
 const reinforcementTips = [
   {
     title: "Radiale ribs",
-    detail: "Ribs van 1â€“1.2 mm die uit de cilinder vertrekken verhogen de stijfheid met 20â€“30%.",
+    detail: "Ribs van 1–1.2 mm die uit de cilinder vertrekken verhogen de stijfheid met 20–30%.",
   },
   {
-    title: "Fillets van 2â€“4 mm",
+    title: "Fillets van 2–4 mm",
     detail: "Rond de aansluiting van cilinder en body af zodat stress zich kan verspreiden.",
   },
   {
@@ -142,32 +145,44 @@ const finishingTips = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "hinge-material", label: "Materiaalkeuze" },
+  { id: "hinge-orientation", label: "Oriëntatie" },
+  { id: "hinge-walls", label: "Wanddiktes" },
+  { id: "hinge-pins", label: "Pin-diameters en tolerantie" },
+  { id: "hinge-reinforcement", label: "Ribs en fillets" },
+  { id: "hinge-splitting", label: "Slim splitsen" },
+  { id: "hinge-warping", label: "Warping voorkomen" },
+  { id: "hinge-finishing", label: "Nabewerking" },
+  { id: "hinge-when", label: "Wanneer X3DPrints helpt" },
+  { id: "hinge-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  {
+    label: "Ultimaker: Design for FFF 3D printing",
+    href: "https://ultimaker.com/learn/design-for-fff-3d-printing/",
+  },
+  {
+    label: "Prusa: Material guide (PLA, PETG, TPU)",
+    href: "https://help.prusa3d.com/filament-material-guide",
+  },
+  {
+    label: "ISO/ASTM 52900: Additive manufacturing terminology",
+    href: "https://www.astm.org/standards/isoastm52900",
+  },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Maker Monday #1: FDM scharnieren ontwerpen die echt werken",
-  description:
-    "Stap-voor-stap uitleg over materiaalkeuze, orientatie, wanddiktes, pin-toleranties en verstevigingen zodat FDM scharnieren betrouwbaar blijven.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
 
 function SectionDivider() {
   return (
@@ -212,10 +227,12 @@ export default function MakerMondayFdmScharnierenPage() {
               Hoe ontwerp je een FDM scharnier dat niet bij de eerste rotatie breekt?
             </h1>
             <p className="mt-4 text-lg text-slate-700">
-              Een goed scharnier is geen miniatuurdeur. Het faalt niet door filament, maar door ontwerp: slechte oriÃ«ntatie,
+              Een goed scharnier is geen miniatuurdeur. Het faalt niet door filament, maar door ontwerp: slechte oriëntatie,
               te dunne wanden of foute tolerantie. Dit is exact hoe wij scharnieren uit PLA, PETG en TPU laten overleven, cycle
               na cycle.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=maker-monday-hinges">Plan scharnieradvies</ShimmerButton>
               <Link
@@ -232,7 +249,7 @@ export default function MakerMondayFdmScharnierenPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-slate-500">
-              Gepubliceerd op 8 december 2025 â€¢ Deel van de Maker Monday knowledge hub.
+              Gepubliceerd op 8 december 2025 • Deel van de Maker Monday knowledge hub.
             </p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
@@ -253,7 +270,9 @@ export default function MakerMondayFdmScharnierenPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">1. Kies het juiste materiaal</h2>
+              <h2 id="hinge-material" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                1. Kies het juiste materiaal
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Scharnieren falen negen op de tien keer door ontwerp, maar materiaalkeuze bepaalt hoe snel ze breken. Dit zijn de
                 regels die we in onze studio hanteren:
@@ -287,7 +306,9 @@ export default function MakerMondayFdmScharnierenPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">2. OriÃ«ntatie: lagen loodrecht op de as</h2>
+              <h2 id="hinge-orientation" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                2. Oriëntatie: lagen loodrecht op de as
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 De grootste fout? Een scharnier rechtop printen omdat dat minder support geeft. De layers worden dan de
                 zwakste schakel. Houd je aan deze regels:
@@ -312,7 +333,9 @@ export default function MakerMondayFdmScharnierenPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">3. Wanddiktes die iets verdragen</h2>
+              <h2 id="hinge-walls" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                3. Wanddiktes die iets verdragen
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Vuistregel: wanddikte = 4x je nozzle. Maar bij scharnieren gaan we ruimer om layer bonding veilig te houden.
               </p>
@@ -333,7 +356,9 @@ export default function MakerMondayFdmScharnierenPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">4. Pin-diameters en toleranties</h2>
+              <h2 id="hinge-pins" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                4. Pin-diameters en toleranties
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 De verhouding tussen pin en socket bepaalt of je scharnier soepel draait of meteen vastloopt.
               </p>
@@ -377,7 +402,9 @@ export default function MakerMondayFdmScharnierenPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">5. Ribs, fillets en schouders</h2>
+              <h2 id="hinge-reinforcement" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                5. Ribs, fillets en schouders
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Scharnieren leven van compressie en torsie. Versterk dus elk contactvlak.
               </p>
@@ -397,13 +424,15 @@ export default function MakerMondayFdmScharnierenPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">6. Splits slim, niet obsessief</h2>
+              <h2 id="hinge-splitting" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                6. Splits slim, niet obsessief
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Meer wings betekent niet automatisch sterker. Integendeel: elke interlock moet perfect passen of hij breekt.
               </p>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-600">
                 <li>Gebruik een klassieke male-female opbouw.</li>
-                <li>Beperk je tot 2â€“3 tanden per zijde voor makkelijke assemblage.</li>
+                <li>Beperk je tot 2–3 tanden per zijde voor makkelijke assemblage.</li>
                 <li>Laat een steunvlak onder elke tand zodat de pin niet scheef trekt.</li>
               </ul>
               <p className="mt-4 text-sm text-slate-600">
@@ -419,7 +448,9 @@ export default function MakerMondayFdmScharnierenPage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">7. Warping en layer cracks door ontwerp</h2>
+              <h2 id="hinge-warping" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                7. Warping en layer cracks door ontwerp
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Warping is geen printerprobleem maar een ontwerpkeuze. Vermijd lange dunne vleugels, vermijd een cilinder zonder
                 voet en stop scharnieren niet vlak tegen de rand.
@@ -444,7 +475,9 @@ export default function MakerMondayFdmScharnierenPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">8. Nabewerking en frictiebeheer</h2>
+              <h2 id="hinge-finishing" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                8. Nabewerking en frictiebeheer
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Zelfs met perfecte toleranties kan een scharnier stroef openen. Zo lossen we dat op:
               </p>
@@ -468,7 +501,9 @@ export default function MakerMondayFdmScharnierenPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">9. Wanneer X3DPrints inschakelen?</h2>
+              <h2 id="hinge-when" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                9. Wanneer X3DPrints inschakelen?
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Heb je een kritische scharnier nodig? We kunnen je ontwerp reviewen, materialen testen en combinaties printen:
               </p>
@@ -496,6 +531,32 @@ export default function MakerMondayFdmScharnierenPage() {
                   Lees PETG gids
                 </Link>
               </div>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="hinge-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
         </div>
@@ -534,6 +595,7 @@ export default function MakerMondayFdmScharnierenPage() {
     </main>
   )
 }
+
 
 
 

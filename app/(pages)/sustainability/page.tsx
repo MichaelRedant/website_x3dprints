@@ -10,14 +10,14 @@ type PillarLink = { href: string; label: string; external?: boolean }
 type Pillar = { title: string; copy: string; icon: "material" | "energy" | "loop"; links: PillarLink[] }
 
 export const metadata: Metadata = {
-  title: "FuturePrint Lab Â· Duurzaamheid & circulariteit | X3DPrints",
+  title: "FuturePrint Lab · Duurzaamheid & circulariteit | X3DPrints",
   description:
-    "Duurzame 3D-printing vanuit Herzele. X3DPrints focust op slim ontwerp, efficiÃ«nte materiaalkeuzes en lokale levering voor ondernemers, scholen en verenigingen in Oost-Vlaanderen.",
+    "Duurzame 3D-printing vanuit Herzele. X3DPrints focust op slim ontwerp, efficiënte materiaalkeuzes en lokale levering voor ondernemers, scholen en verenigingen in Oost-Vlaanderen.",
   alternates: { canonical: "https://www.x3dprints.be/sustainability/", languages: { "nl-BE": "https://www.x3dprints.be/sustainability/", "en-BE": "https://www.x3dprints.be/en/sustainability/", "x-default": "https://www.x3dprints.be/sustainability/", }, },
   openGraph: {
     title: "Duurzame 3D-printing bij X3DPrints",
     description:
-      "Ontdek hoe X3DPrints als lokale 3D-printstudio in Herzele inzet op efficiÃ«nte productie, lange levensduur en slimme materiaalkeuzes.",
+      "Ontdek hoe X3DPrints als lokale 3D-printstudio in Herzele inzet op efficiënte productie, lange levensduur en slimme materiaalkeuzes.",
     url: "https://www.x3dprints.be/sustainability",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FuturePrint Lab Â· Duurzaamheid & circulariteit",
+    title: "FuturePrint Lab · Duurzaamheid & circulariteit",
     description: "Lees hoe X3DPrints werkt aan praktische en bewuste 3D-printing voor kleine reeksen en prototypes.",
   },
 }
@@ -35,7 +35,7 @@ const stats: Stat[] = [
     label: "Lokale productie",
     value: "Herzele (BE)",
     detail:
-      "Een maker, korte lijnen en directe communicatie. Ideaal voor kmoâ€™s, scholen en verenigingen in Oost-Vlaanderen en de regio Gent/Aalst.",
+      "Een maker, korte lijnen en directe communicatie. Ideaal voor kmo’s, scholen en verenigingen in Oost-Vlaanderen en de regio Gent/Aalst.",
   },
   {
     label: "On-demand printing",
@@ -44,7 +44,7 @@ const stats: Stat[] = [
   },
   {
     label: "Gerichte materiaalkeuze",
-    value: "PLA Â· PETG Â· TPU",
+    value: "PLA · PETG · TPU",
     detail: "Per toepassing kiezen we het materiaal dat het langst meegaat en het doel van het onderdeel echt dient.",
   },
   {
@@ -58,7 +58,7 @@ const pillars: Pillar[] = [
   {
     title: "Slim ontwerp en minder verspilling",
     copy:
-      "Elke print start bij het model. We kijken mee naar wanddikte, infill en oriÃ«ntatie zodat je minder materiaal nodig hebt en onderdelen langer meegaan. Zo wordt 3D-printing een doordachte oplossing in plaats van een gadget.",
+      "Elke print start bij het model. We kijken mee naar wanddikte, infill en oriëntatie zodat je minder materiaal nodig hebt en onderdelen langer meegaan. Zo wordt 3D-printing een doordachte oplossing in plaats van een gadget.",
     icon: "material",
     links: [
       { href: "/materials", label: "Bekijk materialen en richtlijnen" },
@@ -66,7 +66,7 @@ const pillars: Pillar[] = [
     ],
   },
   {
-    title: "EfficiÃ«nte productie in kleine reeksen",
+    title: "Efficiënte productie in kleine reeksen",
     copy:
       "X3DPrints is geen massafabriek maar een compacte werkplek waar kleine reeksen en prototypes met zorg worden ingepland. Prints worden waar mogelijk per materiaal en kleur gebundeld om ombouwtijd en purgecycli te beperken.",
     icon: "energy",
@@ -81,7 +81,7 @@ const pillars: Pillar[] = [
       "Afhalen kan op afspraak in Herzele. Voor regio Gent en omliggende gemeenten plannen we leveringen in combinatie met bestaande ritten. Verder maken we gebruik van compacte pakketdiensten.",
     icon: "loop",
     links: [
-      { href: "/locaties", label: "Levering en regioâ€™s" },
+      { href: "/locaties", label: "Levering en regio’s" },
       { href: "/contact", label: "Bespreek een project" },
     ],
   },
@@ -131,14 +131,14 @@ const faqItems = [
       "We proberen mislukte prints te vermijden door het model vooraf te controleren en instellingen juist te zetten. Reststukken worden gescheiden per materiaal bewaard en waar mogelijk hergebruikt voor testen, pasmodellen of R&D.",
   },
   {
-    q: "Kunnen jullie helpen om mijn ontwerp efficiÃ«nter te maken?",
+    q: "Kunnen jullie helpen om mijn ontwerp efficiënter te maken?",
     a:
       "Zeker. We kijken graag mee naar wanddiktes, infill, holtes en verstevigingen. Vaak kan een ontwerp lichter, sneller te printen en toch stevig genoeg zijn. Dat bespaart materiaal, tijd en kostprijs.",
   },
   {
     q: "Werken jullie ook met scholen en verenigingen?",
     a:
-      "Ja. We werken geregeld voor scholen, makerspaces en verenigingen met beperkte budgetten. Daarbij denken we extra mee over kost per stuk, haalbaarheid en hoe Ã©Ã©n ontwerp meerdere doelen kan dienen.",
+      "Ja. We werken geregeld voor scholen, makerspaces en verenigingen met beperkte budgetten. Daarbij denken we extra mee over kost per stuk, haalbaarheid en hoe één ontwerp meerdere doelen kan dienen.",
   },
 ]
 
@@ -151,7 +151,7 @@ const articleJsonLd = {
   inLanguage: "nl-BE",
   headline: "FuturePrint Lab: duurzaamheid bij X3DPrints",
   description:
-    "Overzicht van de praktische duurzaamheidsprincipes van X3DPrints: slim ontwerp, efficiÃ«nte materiaalkeuzes, lokale productie en kleine reeksen op maat.",
+    "Overzicht van de praktische duurzaamheidsprincipes van X3DPrints: slim ontwerp, efficiënte materiaalkeuzes, lokale productie en kleine reeksen op maat.",
   author: { "@type": "Organization", name: "X3DPrints", url: SITE.url },
   publisher: {
     "@type": "Organization",
@@ -229,7 +229,7 @@ export default function SustainabilityPage() {
         </h1>
         <p className="mt-4 text-base text-slate-600 sm:text-lg">
           X3DPrints is een kleine 3D-printstudio in Herzele. Geen massaproductie, wel gerichte oplossingen met aandacht voor slim ontwerp,
-          efficiÃ«nte materiaalkeuzes en lokale levering. Deze pagina bundelt hoe we daar in de praktijk mee omgaan.
+          efficiënte materiaalkeuzes en lokale levering. Deze pagina bundelt hoe we daar in de praktijk mee omgaan.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <ShimmerButton href="/contact">Bespreek een project</ShimmerButton>
@@ -269,7 +269,7 @@ export default function SustainabilityPage() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800"
                     >
-                      {link.label} <span aria-hidden>â†—</span>
+                      {link.label} <span aria-hidden>&nearr;</span>
                     </a>
                   ) : (
                     <Link
@@ -277,7 +277,7 @@ export default function SustainabilityPage() {
                       href={link.href}
                       className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800"
                     >
-                      {link.label} <span aria-hidden>â†’</span>
+                      {link.label} <span aria-hidden>&rarr;</span>
                     </Link>
                   ),
                 )}
@@ -309,10 +309,10 @@ export default function SustainabilityPage() {
             <GlassCard className="p-5">
               <h3 className="text-lg font-semibold text-slate-900">Praktische keuzes in de werkplaats</h3>
               <ul className="mt-3 space-y-2 text-sm text-slate-600">
-                <li>â€¢ Jobs worden waar mogelijk per materiaal en kleur gebundeld om ombouwtijd te beperken.</li>
-                <li>â€¢ Printinstellingen worden afgestemd op doel en levensduur, niet enkel op snelheid.</li>
-                <li>â€¢ Verpakking blijft bewust eenvoudig zodat je geen dozen vol lucht ontvangt.</li>
-                <li>â€¢ We denken mee over reserveonderdelen zodat je niet bij elk defect opnieuw moet ontwerpen.</li>
+                <li>• Jobs worden waar mogelijk per materiaal en kleur gebundeld om ombouwtijd te beperken.</li>
+                <li>• Printinstellingen worden afgestemd op doel en levensduur, niet enkel op snelheid.</li>
+                <li>• Verpakking blijft bewust eenvoudig zodat je geen dozen vol lucht ontvangt.</li>
+                <li>• We denken mee over reserveonderdelen zodat je niet bij elk defect opnieuw moet ontwerpen.</li>
               </ul>
             </GlassCard>
             <GlassCard className="p-5">
@@ -321,9 +321,9 @@ export default function SustainabilityPage() {
                 Deze aanpak is ideaal voor wie geen eigen 3D-printerpark wil uitbouwen, maar wel snel en gericht wil testen of kleine reeksen nodig heeft:
               </p>
               <ul className="mt-3 space-y-2 text-sm text-slate-600">
-                <li>â€¢ Kmoâ€™s die een prototype, jig of custom onderdeel zoeken.</li>
-                <li>â€¢ Scholen en opleidingen die tastbaar lesmateriaal willen zonder overschot.</li>
-                <li>â€¢ Verenigingen en events die beperkte, maar impactvolle aantallen nodig hebben.</li>
+                <li>• Kmo’s die een prototype, jig of custom onderdeel zoeken.</li>
+                <li>• Scholen en opleidingen die tastbaar lesmateriaal willen zonder overschot.</li>
+                <li>• Verenigingen en events die beperkte, maar impactvolle aantallen nodig hebben.</li>
               </ul>
             </GlassCard>
           </div>
@@ -340,17 +340,17 @@ export default function SustainabilityPage() {
               Vaak is het belangrijker dat alles tijdig en degelijk klaar is, dan dat er meteen duizenden stuks geproduceerd worden.
             </p>
             <ul className="mt-4 space-y-2 text-sm text-slate-200">
-              <li>â€¢ Eerst Ã©Ã©n testprint om vorm, leesbaarheid en formaat te controleren.</li>
-              <li>â€¢ Daarna een kleine reeks, afgestemd op het event of project (bv. 8, 20 of 50 stuks).</li>
-              <li>â€¢ Materiaal- en kleurkeuze in overleg, zodat het past bij branding of thema.</li>
+              <li>• Eerst één testprint om vorm, leesbaarheid en formaat te controleren.</li>
+              <li>• Daarna een kleine reeks, afgestemd op het event of project (bv. 8, 20 of 50 stuks).</li>
+              <li>• Materiaal- en kleurkeuze in overleg, zodat het past bij branding of thema.</li>
             </ul>
           </div>
           <div className="rounded-2xl bg-white/5 p-6">
             <p className="text-sm font-semibold text-emerald-300">Wat je mag verwachten</p>
             <ul className="mt-4 space-y-3 text-sm text-slate-200">
-              <li>â€¢ Eerlijke feedback of iets zinvol is om te 3D-printen, of beter op een andere manier opgelost wordt.</li>
-              <li>â€¢ Transparante prijsopbouw met een duidelijk onderscheid tussen ontwerp, testprint en productiereeks.</li>
-              <li>â€¢ Realistische planning: samen bekijken wanneer je het materiaal nodig hebt en hoe we dat haalbaar inplannen.</li>
+              <li>• Eerlijke feedback of iets zinvol is om te 3D-printen, of beter op een andere manier opgelost wordt.</li>
+              <li>• Transparante prijsopbouw met een duidelijk onderscheid tussen ontwerp, testprint en productiereeks.</li>
+              <li>• Realistische planning: samen bekijken wanneer je het materiaal nodig hebt en hoe we dat haalbaar inplannen.</li>
             </ul>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact">Start je project</ShimmerButton>
@@ -358,7 +358,7 @@ export default function SustainabilityPage() {
                 href="/segments/3d-printing-marketing"
                 className="inline-flex items-center gap-2 text-sm text-emerald-300 hover:text-white"
               >
-                3D printing voor marketing en events <span aria-hidden>â†’</span>
+                3D printing voor marketing en events <span aria-hidden>&rarr;</span>
               </Link>
             </div>
           </div>

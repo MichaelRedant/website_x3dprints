@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
@@ -261,12 +261,12 @@ export default function Page({ locale }: PageProps) {
   const references = isEn
     ? [
         { label: "ISO/ASTM terminology for additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
-        { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
         { label: "All3DP FDM process explainer", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
       ]
     : [
         { label: "ISO/ASTM terminologie voor additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
-        { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
         { label: "All3DP uitleg over het FDM-proces", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
       ]
   const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"

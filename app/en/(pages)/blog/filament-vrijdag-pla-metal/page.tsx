@@ -4,9 +4,12 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-pla-metal/"
 const publishedDate = "2025-10-24T08:00:00+02:00"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
   title: "PLA Metal 3D printing: metallic look without the hassle | X3DPrints",
@@ -94,7 +97,7 @@ const resourceLinks = [
   { label: "Material Suggestion Tool", href: "/en/materials#material-suggestion-tool", description: "Let the wizard help pick a material." },
 ]
 
-const externalReferences = [
+const references = [
   {
     label: "Prusa - Different nozzle types",
     href: "https://help.prusa3d.com/article/different-nozzle-types_2193",
@@ -117,26 +120,16 @@ const externalReferences = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "PLA Metal 3D printing: metallic look without the hassle",
-  description:
-    "Filament Friday #7. Learn how PLA Metal works, which settings we use and when metallic PLA blends add real value.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/og-x3dprints.jpg" },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
   inLanguage: "en-BE",
-}
+})
+
 
 function SectionDivider() {
   return (
@@ -184,6 +177,7 @@ export default function FilamentFridayPlaMetalEnPage() {
               Metallic PLA gives you the look without the weight or conductivity. Use this guide to set temps, protect your nozzle and decide when PLA
               Metal is worth it versus basic PLA or PETG.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/en/materials">Compare PLA visuals</ShimmerButton>
               <Link
@@ -335,7 +329,7 @@ export default function FilamentFridayPlaMetalEnPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Resources and references</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 <div className="rounded-2xl border border-slate-100 bg-white/70 p-4">
                   <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Internal links</p>
@@ -351,9 +345,9 @@ export default function FilamentFridayPlaMetalEnPage() {
                   </ul>
                 </div>
                 <div className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                  <p className="text-xs uppercase tracking-[0.3em] text-slate-500">External references</p>
+                  <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Sources and references</p>
                   <ul className="mt-2 space-y-2 text-sm text-slate-600">
-                    {externalReferences.map((ref) => (
+                    {references.map((ref) => (
                       <li key={ref.href}>
                         <a
                           href={ref.href}
@@ -401,4 +395,7 @@ export default function FilamentFridayPlaMetalEnPage() {
     </main>
   )
 }
+
+
+
 

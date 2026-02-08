@@ -11,7 +11,7 @@ import { buildOrganizerContactHref, buildOrganizerSchemas } from "@/lib/organize
 import { SITE, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 const PAGE = ORGANIZER_PAGES.modugrid
-const PAGE_URL = `${SITE.url}/organizers/${PAGE.slug}`
+const PAGE_URL = PAGE.seo.canonical
 
 export const metadata: Metadata = {
   title: PAGE.seo.title,
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: PAGE.seo.canonical,
     languages: {
       "nl-BE": PAGE.seo.canonical,
-      "en-BE": `${SITE.url}/en/organizers/${PAGE.slug}`,
+      "en-BE": `${SITE.url}/en/organizers/${PAGE.slug}/`,
       "x-default": PAGE.seo.canonical,
     },
   },

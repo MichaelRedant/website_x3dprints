@@ -54,7 +54,7 @@ export async function generateMetadata({ params, locale }: PageProps): Promise<M
   const canonicalBase = isEn
     ? "https://www.x3dprints.be/en/materials"
     : "https://www.x3dprints.be/materials"
-  const canonical = `${canonicalBase}/${detail.slug}`
+  const canonical = `${canonicalBase}/${detail.slug}/`
 
   return {
     title: detail.seo.title,
@@ -62,9 +62,9 @@ export async function generateMetadata({ params, locale }: PageProps): Promise<M
     alternates: {
       canonical,
       languages: {
-        "nl-BE": `https://www.x3dprints.be/materials/${detail.slug}`,
-        "en-BE": `https://www.x3dprints.be/en/materials/${detail.slug}`,
-        "x-default": `https://www.x3dprints.be/materials/${detail.slug}`,
+        "nl-BE": `https://www.x3dprints.be/materials/${detail.slug}/`,
+        "en-BE": `https://www.x3dprints.be/en/materials/${detail.slug}/`,
+        "x-default": `https://www.x3dprints.be/materials/${detail.slug}/`,
       },
     },
     openGraph: {

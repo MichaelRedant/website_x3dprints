@@ -1,12 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-tabletop/"
 const publishedDate = "2025-12-16T08:00:00+01:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Use Case Dinsdag #4: 3D printen voor tabletop & props",
@@ -195,32 +198,41 @@ const engagementScenarios = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Use Case Dinsdag #4: 3D printen voor tabletop & props",
-  description:
-    "Gids voor FDM miniaturen, terrain en cosplay props met PLA Matte, Marble, Silk en PETG. Inclusief slicing-, splitting- en painting-tips.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "tabletop-fdm-sla", label: "FDM vs SLA" },
+  { id: "tabletop-materials", label: "Materiaalkeuze" },
+  { id: "tabletop-design", label: "Ontwerp & slicing" },
+  { id: "tabletop-paint", label: "Painting workflow" },
+  { id: "tabletop-workflows", label: "Workflows per type" },
+  { id: "tabletop-mistakes", label: "Veelvoorkomende fouten" },
+  { id: "tabletop-when", label: "Wanneer inschakelen" },
+  { id: "tabletop-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
+  { label: "UltiMaker PETG material properties", href: "https://ultimaker.com/materials/s-series-petg/" },
+  { label: "Prusament PLA materiaaloverzicht", href: "https://prusament.com/materials/pla/" },
+  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-1B6AA02D-B8E5-4F54-ADC7-11C5B900E05F" },
+]
+
+const layerHeightRows = [
+  { use: "Miniaturen (60-80 mm)", height: "0,16 mm", note: "Detail zonder extreme printtijd." },
+  { use: "Bustes", height: "0,12 mm", note: "Extra detail voor gezichten en haar." },
+  { use: "Terrain", height: "0,20 mm", note: "Snel en voldoende detail na drybrush." },
+  { use: "Props (groot)", height: "0,24-0,28 mm", note: "Focus op sterkte en snelheid." },
+]
 
 function SectionDivider() {
   return (
@@ -268,6 +280,8 @@ export default function UseCaseDinsdagTabletopPage() {
               Miniaturen en cosplay onderdelen vragen finesse in plaats van brute sterkte. Deze gids toont hoe je FDM inzet voor
               scherpe details, draagbare props en scenery die verf en transport aankan.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=use-case-tabletop">Vraag tabletop-advies</ShimmerButton>
               <Link
@@ -299,7 +313,7 @@ export default function UseCaseDinsdagTabletopPage() {
 
       <SectionDivider />
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="tabletop-fdm-sla" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           {fdmVsSla.map((block) => (
             <Reveal key={block.title}>
@@ -326,7 +340,7 @@ export default function UseCaseDinsdagTabletopPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="tabletop-materials" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -351,11 +365,31 @@ export default function UseCaseDinsdagTabletopPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="tabletop-design" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">3. Ontwerp- en slicingrichtlijnen</h2>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="text-xs uppercase tracking-wide text-slate-500">
+                      <th className="py-2 pr-4">Toepassing</th>
+                      <th className="py-2 pr-4">Layerhoogte</th>
+                      <th className="py-2 pr-4">Waarom</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {layerHeightRows.map((row) => (
+                      <tr key={row.use}>
+                        <td className="py-3 pr-4 font-semibold text-slate-900">{row.use}</td>
+                        <td className="py-3 pr-4">{row.height}</td>
+                        <td className="py-3 pr-4">{row.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
                 {designTips.map((tip) => (
                   <li key={tip.title} className="rounded-2xl border border-slate-100 bg-white/70 p-3">
@@ -373,7 +407,7 @@ export default function UseCaseDinsdagTabletopPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="tabletop-paint" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -401,7 +435,7 @@ export default function UseCaseDinsdagTabletopPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="tabletop-workflows" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-3">
           {userWorkflows.map((workflow) => (
             <Reveal key={workflow.title}>
@@ -425,7 +459,7 @@ export default function UseCaseDinsdagTabletopPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="tabletop-mistakes" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
@@ -443,11 +477,11 @@ export default function UseCaseDinsdagTabletopPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="tabletop-when" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">6. Wanneer X3DPrints inschakeleni</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">6. Wanneer X3DPrints inschakelen</h2>
               <div className="mt-4 grid gap-4 md:grid-cols-3">
                 {engagementScenarios.map((scenario) => (
                   <div key={scenario.title} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
@@ -472,13 +506,39 @@ export default function UseCaseDinsdagTabletopPage() {
         </div>
       </section>
 
+      <section id="tabletop-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
           <Reveal>
             <GlassCard className="flex flex-col gap-6 border border-white/40 bg-white/85 p-6 shadow-xl backdrop-blur sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Volgende stap</p>
-                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Een tabletop of prop project planneni</h2>
+                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Een tabletop of prop project plannen</h2>
                 <p className="mt-2 text-sm text-slate-600">
                   Deel STL of STEP, vermeld schaal en gewenste afwerking en we koppelen terug met slicingadvies, planning en
                   finishingopties.
@@ -501,6 +561,7 @@ export default function UseCaseDinsdagTabletopPage() {
     </main>
   )
 }
+
 
 
 

@@ -1,15 +1,16 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-winter-kerst-nieuwjaar/"
 const datePublished = "2024-11-15"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "3D printen voor winter, Kerst en Nieuwjaar | X3DPrints Blog",
@@ -38,13 +39,13 @@ const tips = [
   "Silk of Marble PLA voor glansrijke ornamenten en tafelstukjes; multicolor PLA voor speelse kerstballen.",
   "Translucent PLA voor lichtobjecten; wanddikte 1,6-2 mm voor zachte gloed.",
   "Layerhoogte 0,16-0,2 mm; zorg voor stevige hang-oogjes bij ornamenten.",
-  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan â‚¬45/uur.",
+  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan �45/uur.",
 ]
 
 const faqItems = [
   {
     q: "Kan ik gepersonaliseerde kerstballen laten maken?",
-    a: "Ja. Lever een STL/STEP met naam of logo, of laat ons het model ontwerpen aan â‚¬45/uur. We printen in Silk of multicolor PLA voor een luxe of speelse look.",
+    a: "Ja. Lever een STL/STEP met naam of logo, of laat ons het model ontwerpen aan �45/uur. We printen in Silk of multicolor PLA voor een luxe of speelse look.",
   },
   {
     q: "Welke materialen gebruik ik voor lichtobjecten?",
@@ -52,12 +53,35 @@ const faqItems = [
   },
   {
     q: "Hoe worden breekbare prints geleverd?",
-    a: "We verpakken gescheiden met schuim en kraftpapier en leveren met EV in zones. Zone 1 â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45, >75 km maatwerk of pakketdienst. Afhalen kan gratis.",
+    a: "We verpakken gescheiden met schuim en kraftpapier en leveren met EV in zones. Zone 1 �15, Zone 2 �30, Zone 3 �45, >75 km maatwerk of pakketdienst. Afhalen kan gratis.",
   },
   {
     q: "Is het 3D model inbegrepen?",
-    a: "Nee. Je levert STL/STEP aan of laat ons ontwerpen aan â‚¬45/uur. We optimaliseren voor printbaarheid, wanddiktes en supports.",
+    a: "Nee. Je levert STL/STEP aan of laat ons ontwerpen aan �45/uur. We optimaliseren voor printbaarheid, wanddiktes en supports.",
   },
+]
+
+const materialRows = [
+  { material: "PLA Silk / Marble / Multicolor", use: "Ornamenten, naamkaartjes, decor", note: "Indoor, visueel sterk" },
+  { material: "Translucent PLA", use: "Lichtobjecten en lantaarns", note: "Wanddikte 1,6-2 mm voor zachte gloed" },
+  { material: "PETG", use: "Outdoor decor en stevigere props", note: "Hitte- en UV-bestendiger dan PLA" },
+  { material: "TPU", use: "Antislip voeten of flex details", note: "Gebruik spaarzaam, print trager" },
+]
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "winter-why", label: "Waarom nu bestellen?" },
+  { id: "winter-faq", label: "FAQ kerst & nieuwjaar" },
+  { id: "winter-materials", label: "Materialen & settings" },
+  { id: "winter-inspiration", label: "Inspiratie" },
+  { id: "winter-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
+  { label: "Prusa: Material guide (PLA, PETG, TPU)", href: "https://help.prusa3d.com/filament-material-guide" },
+  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm" },
 ]
 
 const articleJsonLd = buildArticleJsonLd({
@@ -86,17 +110,19 @@ export default function BlogWinter() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-700">Seasonal</p>
-            <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              3D printen voor winter, Kerst & Nieuwjaar
-            </h1>
-            <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Ornamenten, sneeuwvlokken en party props in Silk, Marble en Translucent PLA. Ontwerpbestand niet inbegrepen; lever
-              STL/STEP of kies ontwerpservice (â‚¬45/uur).
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact">Plan je kerstprints</ShimmerButton>
-              <Link
-                href="/segments/3d-printing-seasonal"
+          <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
+            3D printen voor winter, Kerst & Nieuwjaar
+          </h1>
+          <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
+            Ornamenten, sneeuwvlokken en party props in Silk, Marble en Translucent PLA. Ontwerpbestand niet inbegrepen; lever
+            STL/STEP of kies ontwerpservice (�45/uur).
+          </p>
+          <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+          <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
+          <div className="mt-6 flex flex-wrap gap-3">
+            <ShimmerButton href="/contact">Plan je kerstprints</ShimmerButton>
+            <Link
+              href="/segments/3d-printing-seasonal"
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
               >
                 Naar seasonal segment
@@ -112,13 +138,13 @@ export default function BlogWinter() {
         </div>
       </section>
 
-      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+      <section id="winter-why" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
               <h2 className="text-2xl font-bold tracking-tight text-slate-900">Waarom nu bestellen?</h2>
               <p className="mt-3 text-sm text-slate-700">
-                Kerst- en nieuwjaarsprints hebben vaak een strakke deadline voor familiefeesten, kantoorpartyâ€™s of retail
+                Kerst- en nieuwjaarsprints hebben vaak een strakke deadline voor familiefeesten, kantoorparty�s of retail
                 etalages. Door tijdig te bestellen krijg je:
               </p>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
@@ -132,7 +158,7 @@ export default function BlogWinter() {
               </p>
               <p className="mt-3 text-sm text-slate-700">
                 Belangrijk: het 3D model is niet inbegrepen in de printprijs. Je levert STL/STEP aan, of we ontwerpen het model
-                tegen â‚¬45/uur. Vermeld dat je kerst- of nieuwjaarsdeadline hebt; we plannen dan productie en levering in functie
+                tegen �45/uur. Vermeld dat je kerst- of nieuwjaarsdeadline hebt; we plannen dan productie en levering in functie
                 van je eventdatum.
               </p>
             </GlassCard>
@@ -142,17 +168,17 @@ export default function BlogWinter() {
             <GlassCard className="p-6">
               <h3 className="text-xl font-semibold tracking-tight text-slate-900">SEO & inspiratiehoek</h3>
               <p className="mt-2 text-sm text-slate-700">
-                Zoek je â€œ3D geprinte kerstballenâ€, â€œ3D print kerst ornamentenâ€, â€œSilk PLA kerst decorâ€, â€œtranslucent kerst
-                lantaarnâ€ of â€œcustom kerst cadeauâ€? Dit artikel bundelt de belangrijkste keuzes: Silk/Marble/Multicolor PLA voor
+                Zoek je �3D geprinte kerstballen�, �3D print kerst ornamenten�, �Silk PLA kerst decor�, �translucent kerst
+                lantaarn� of �custom kerst cadeau�? Dit artikel bundelt de belangrijkste keuzes: Silk/Marble/Multicolor PLA voor
                 luxe en kleur, Translucent PLA voor licht, PETG voor outdoor, TPU voor antislip feet.
               </p>
               <p className="mt-3 text-sm text-slate-700">
                 Populaire opdrachten: sneeuwvlok sets, deur-trims, branded ornaments met logo, tafelkastjes, countdown props,
-                gift card holders en QR-ornamenten (scan voor playlist of eventinfo). We stemmen wanddikte, infill en oriÃ«ntatie
+                gift card holders en QR-ornamenten (scan voor playlist of eventinfo). We stemmen wanddikte, infill en ori�ntatie
                 af op jouw gebruik: display-only, kids-safe of outdoor.
               </p>
               <p className="mt-3 text-sm text-slate-700">
-                Leveropties: Zone 1 (tot 25 km) â‚¬15, Zone 2 â‚¬30, Zone 3 â‚¬45, &gt;75 km maatwerk of
+                Leveropties: Zone 1 (tot 25 km) �15, Zone 2 �30, Zone 3 �45, &gt;75 km maatwerk of
                 pakketdienst. Afhalen in Herzele is gratis. Voeg datum + leveroptie toe bij je aanvraag voor een strakke planning.
               </p>
               <div className="mt-4 flex flex-wrap gap-3 text-sm">
@@ -169,7 +195,7 @@ export default function BlogWinter() {
         </div>
       </section>
 
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+      <section id="winter-faq" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -194,11 +220,31 @@ export default function BlogWinter() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="winter-materials" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
               <h2 className="text-2xl font-bold tracking-tight text-slate-900">Materialen & settings</h2>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="text-xs uppercase tracking-wide text-slate-500">
+                      <th className="py-2 pr-4">Materiaal</th>
+                      <th className="py-2 pr-4">Gebruik</th>
+                      <th className="py-2 pr-4">Notities</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {materialRows.map((row) => (
+                      <tr key={row.material}>
+                        <td className="py-3 pr-4 font-semibold text-slate-900">{row.material}</td>
+                        <td className="py-3 pr-4">{row.use}</td>
+                        <td className="py-3 pr-4">{row.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {tips.map((tip) => (
                   <li key={tip} className="flex gap-2">
@@ -219,7 +265,9 @@ export default function BlogWinter() {
 
           <Reveal delay={0.06}>
             <GlassCard className="p-6">
-              <h3 className="text-xl font-semibold tracking-tight text-slate-900">Inspiratie</h3>
+              <h3 id="winter-inspiration" className="scroll-mt-28 text-xl font-semibold tracking-tight text-slate-900">
+                Inspiratie
+              </h3>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
                 <li>Sneeuwvlokken en stars in Translucent met led string.</li>
                 <li>Kerstballen in Silk of multicolor PLA voor luxe of speels effect.</li>
@@ -252,6 +300,32 @@ export default function BlogWinter() {
         </div>
       </section>
 
+      <section id="winter-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
@@ -259,6 +333,7 @@ export default function BlogWinter() {
     </main>
   )
 }
+
 
 
 

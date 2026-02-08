@@ -17,7 +17,7 @@ const PAGE_EN: OrganizerPageContent = {
     title: "Custom toolbox inserts & pegboard add-ons | X3DPrints",
     description:
       "Photo + dimensions + tool list: we model and print custom toolbox inserts in PLA/PETG with labels and anti-slip. For unique cases, pegboards, Skådis walls and parametric bins in Belgium.",
-    canonical: `${SITE.url}/en/organizers/custom`,
+    canonical: `${SITE.url}/en/organizers/custom/`,
   },
   heroTitle: "Custom toolbox inserts with photo + list",
   heroSubtitle: "Parametric design based on your case and tools.",
@@ -64,7 +64,7 @@ const FAQ_EN = [
   },
 ]
 
-const PAGE_URL = `${SITE.url}/en/organizers/${PAGE_EN.slug}`
+const PAGE_URL = `${SITE.url}/en/organizers/${PAGE_EN.slug}/`
 const contactHref = buildOrganizerContactHref("custom", undefined, "en")
 const schemas = buildOrganizerSchemas(PAGE_EN, PAGE_URL)
 const faqSchema = buildFaqPageSchema({
@@ -96,7 +96,7 @@ const tocItems = [
 const references = [
   { label: "IKEA Skadis product range", url: "https://www.ikea.com/be/en/search/?q=skadis" },
   { label: "ISO/ASTM 52900 terminology", url: "https://www.astm.org/f2997-13r21.html" },
-  { label: "Prusa material guide", url: "https://help.prusa3d.com/article/material-guide_220" },
+  { label: "Prusa material guide", url: "https://help.prusa3d.com/filament-material-guide" },
 ]
 const lastUpdatedLabel = "Last updated: February 6, 2026"
 
@@ -106,9 +106,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: PAGE_URL,
     languages: {
-      "nl-BE": `${SITE.url}/organizers/custom`,
+      "nl-BE": `${SITE.url}/organizers/custom/`,
       "en-BE": PAGE_URL,
-      "x-default": `${SITE.url}/organizers/custom`,
+      "x-default": `${SITE.url}/organizers/custom/`,
     },
   },
   openGraph: {

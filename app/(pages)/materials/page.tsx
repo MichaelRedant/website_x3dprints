@@ -77,12 +77,12 @@ export default function MaterialsPage({ locale }: PageProps) {
       ]
   const references = isEn
     ? [
-        { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
         { label: "Bambu Lab filament guide", url: "https://wiki.bambulab.com/en/filament-acc/filament/overview" },
         { label: "All3DP PLA vs PETG comparison", url: "https://all3dp.com/2/pla-vs-petg-differences-compared/" },
       ]
     : [
-        { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
         { label: "Bambu Lab filamentgids", url: "https://wiki.bambulab.com/en/filament-acc/filament/overview" },
         { label: "All3DP vergelijking PLA vs PETG", url: "https://all3dp.com/2/pla-vs-petg-differences-compared/" },
       ]

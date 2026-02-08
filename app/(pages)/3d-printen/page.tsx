@@ -260,7 +260,7 @@ const tocItems = [
 
 const references = [
   { label: "ISO/ASTM terminologie voor additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
-  { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+  { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
   { label: "All3DP uitleg van FDM 3D printen", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
 ]
 

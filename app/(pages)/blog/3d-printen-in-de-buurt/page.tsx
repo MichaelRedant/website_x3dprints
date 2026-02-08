@@ -11,7 +11,7 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 const canonical = "https://www.x3dprints.be/blog/3d-printen-in-de-buurt/"
 const enCanonical = "https://www.x3dprints.be/en/blog/3d-printen-in-de-buurt/"
 const datePublished = "2024-07-01"
-const dateModified = "2026-02-07"
+const dateModified = "2026-02-08"
 const contactHref = "/contact?material=pla-matte&quote=Lokaal%203D%20printen%20project%20in%20de%20buurt"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=in-de-buurt"
 const locatiesHref = "/locaties?utm_source=blog&utm_medium=cta&utm_campaign=in-de-buurt"
@@ -113,16 +113,16 @@ const faqItems = [
 
 const references = [
   {
-    label: "Google Search docs: crawlable links",
-    href: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
   },
   {
-    label: "All3DP FDM process explainer",
-    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+    label: "Autodesk: What is a STEP file?",
+    href: "https://www.autodesk.com/solutions/what-is-a-step-file",
   },
   {
-    label: "Prusa material guide",
-    href: "https://help.prusa3d.com/article/material-guide_220",
+    label: "Ultimaker: Design for FFF 3D printing",
+    href: "https://ultimaker.com/learn/design-for-fff-3d-printing/",
   },
 ]
 
@@ -203,7 +203,7 @@ export default function LocalArticlePage() {
             van 3D model printen tot het snel uitleveren van 3D print onderdelen.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 7 februari 2026
+            Laatst bijgewerkt: 8 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton

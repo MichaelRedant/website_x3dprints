@@ -5,11 +5,12 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-mini-figuren/"
 const datePublished = "2024-06-10"
-const dateModified = "2026-02-04"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "3D printen van miniaturen voor tabletop gaming | X3DPrints Blog",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "3D printen van miniaturen voor tabletop gaming",
     description:
-      "Leer hoe je haarscherpe D&D en Warhammer miniâ€™s print: materiaalkeuze, detail, supports, primer, schilderen en veilige levering.",
+      "Leer hoe je haarscherpe D&D en Warhammer mini’s print: materiaalkeuze, detail, supports, primer, schilderen en veilige levering.",
   url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte miniaturen en dice tower" }],
     locale: "nl_BE",
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "3D printen van miniaturen voor tabletop gaming",
-    description: "Van STL tot geprinte miniâ€™s: detail, supports, curing en schildertips voor D&D/Warhammer.",
+    description: "Van STL tot geprinte mini’s: detail, supports, curing en schildertips voor D&D/Warhammer.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -38,7 +39,7 @@ type Card = { title: string; body: string }
 const highlights: Card[] = [
   {
     title: "Detail & schaal",
-    body: "Miniâ€™s van 25-35 mm vragen strakke laaghoogtes (0,12-0,16 mm) en fijne nozzles. We plaatsen zichtzijde naar boven voor scherpe gezichten, wapenranden en ornamenten.",
+    body: "Mini’s van 25-35 mm vragen strakke laaghoogtes (0,12-0,16 mm) en fijne nozzles. We plaatsen zichtzijde naar boven voor scherpe gezichten, wapenranden en ornamenten.",
   },
   {
     title: "Podiums & bases",
@@ -65,8 +66,31 @@ const materialTips: Card[] = [
   },
 ]
 
+const qualityRows = [
+  { use: "Mini’s (25-35 mm)", height: "0,12-0,16 mm", note: "Maximaal detail voor gezichten en wapens." },
+  { use: "Terrain & props", height: "0,20 mm", note: "Sneller printen, voldoende detail na drybrush." },
+  { use: "Dice towers", height: "0,20-0,24 mm", note: "Sterkte en snelheid primeren." },
+]
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "mini-detail", label: "Detailprinten" },
+  { id: "mini-materials", label: "Materialen" },
+  { id: "mini-finishing", label: "Afwerking" },
+  { id: "mini-faq", label: "FAQ" },
+  { id: "mini-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
+  { label: "UltiMaker PETG material properties", href: "https://ultimaker.com/materials/s-series-petg/" },
+  { label: "Prusament PLA materiaaloverzicht", href: "https://prusament.com/materials/pla/" },
+  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-1B6AA02D-B8E5-4F54-ADC7-11C5B900E05F" },
+]
+
 const prepList = [
-  "Kies schaal (25/28/32/54 mm) en zorg dat het STL bestand geschaald is vÃ³Ã³r print.",
+  "Kies schaal (25/28/32/54 mm) en zorg dat het STL bestand geschaald is vóór print.",
   "Noteer gewenste laaghoogte: 0,12 mm voor premium detail, 0,16 mm als balans tussen detail en kost.",
   "Geef aan welke zijde boven is (gezicht/ornamenten) om support-scars te vermijden.",
   "Voor speer/zwaard: check dikte >0,8 mm om breuk te vermijden; wij verstevigen indien nodig.",
@@ -85,7 +109,7 @@ const faq = [
   },
   {
     q: "Hoe worden supports gezet?",
-    a: "We oriÃ«nteren minis zodat gezicht en details supportvrij blijven. Supports staan onder mantels, onderzijde van wapens en bases. Na verwijdering schuren we licht als je dat wil.",
+    a: "We oriënteren minis zodat gezicht en details supportvrij blijven. Supports staan onder mantels, onderzijde van wapens en bases. Na verwijdering schuren we licht als je dat wil.",
   },
   {
     q: "Kan ik minis laten primen?",
@@ -124,9 +148,11 @@ export default function BlogMiniaturesPage() {
               3D printen van miniaturen voor Dungeons & Dragons en Warhammer
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Haarscherpe details, stevige bases en veilige levering. Zo printen we miniâ€™s, dice towers en scenery die
+              Haarscherpe details, stevige bases en veilige levering. Zo printen we mini’s, dice towers en scenery die
               direct klaar zijn om te primen, schilderen en te spelen aan je tafel.
             </p>
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact">Upload je STL/STEP</ShimmerButton>
               <Link
@@ -161,7 +187,7 @@ export default function BlogMiniaturesPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="mini-detail" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="h-full p-6">
@@ -177,9 +203,29 @@ export default function BlogMiniaturesPage() {
                 en vangbak glad blijven en dobbelstenen niet stuiteren op support scars.
               </p>
               <p className="mt-3 text-sm text-slate-700">
-                Ontwerp/model is niet inbegrepen in de printkost. Lever een STL/STEP of vraag onze ontwerpservice aan â‚¬45/uur;
+                Ontwerp/model is niet inbegrepen in de printkost. Lever een STL/STEP of vraag onze ontwerpservice aan €45/uur;
                 wij optimaliseren voor printbaarheid en passen wanddiktes aan waar nodig.
               </p>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="text-xs uppercase tracking-wide text-slate-500">
+                      <th className="py-2 pr-4">Toepassing</th>
+                      <th className="py-2 pr-4">Layerhoogte</th>
+                      <th className="py-2 pr-4">Notities</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {qualityRows.map((row) => (
+                      <tr key={row.use}>
+                        <td className="py-3 pr-4 font-semibold text-slate-900">{row.use}</td>
+                        <td className="py-3 pr-4">{row.height}</td>
+                        <td className="py-3 pr-4">{row.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {prepList.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -228,7 +274,7 @@ export default function BlogMiniaturesPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="mini-materials" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal className="grid gap-4 sm:grid-cols-3">
             {materialTips.map((m) => (
@@ -241,7 +287,7 @@ export default function BlogMiniaturesPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+      <section id="mini-finishing" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.2fr,0.8fr]">
           <Reveal>
             <GlassCard className="h-full p-6">
@@ -268,9 +314,9 @@ export default function BlogMiniaturesPage() {
                 met dubbele doos en fragile-label.
               </p>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                <li>Zone 1 (tot 25 km): â‚¬15</li>
-                <li>Zone 2 (25-50 km): â‚¬30</li>
-                <li>Zone 3 (50-75 km): â‚¬45</li>
+                <li>Zone 1 (tot 25 km): €15</li>
+                <li>Zone 2 (25-50 km): €30</li>
+                <li>Zone 3 (50-75 km): €45</li>
                 <li>&gt; 75 km: maatwerk of pakketdienst</li>
               </ul>
             </GlassCard>
@@ -278,7 +324,7 @@ export default function BlogMiniaturesPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-20 sm:px-8 lg:px-12">
+      <section id="mini-faq" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -303,12 +349,40 @@ export default function BlogMiniaturesPage() {
         </div>
       </section>
 
+      <section id="mini-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogReadMore />
 
     </main>
   )
 }
+
+
 
 
 

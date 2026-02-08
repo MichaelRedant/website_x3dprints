@@ -4,8 +4,13 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printing-marketing-events/"
+const datePublished = "2025-06-24"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
+
 
 export const metadata: Metadata = {
   title: "3D printing for marketing & events | X3DPrints Blog",
@@ -91,26 +96,34 @@ const materialSuggestions = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-    headline: "3D printing for marketing & events",
-  description:
-    "How to use 3D printing for marketing and events: props, awards, merch, with planning, materials, logistics and KPIs.",
-  author: { "@type": "Organization", name: "X3DPrints" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/Logo.webp" },
+const references = [
+  {
+    label: "Autodesk: STL file format",
+    href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm",
+    description: "STL basics and export context for 3D printing workflows.",
   },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  {
+    label: "Prusa: Material guide",
+    href: "https://help.prusa3d.com/filament-material-guide",
+    description: "Overview of PLA, PETG and TPU material behaviour and print considerations.",
+  },
+  {
+    label: "UltiMaker PLA material properties",
+    href: "https://ultimaker.com/materials/pla/",
+    description: "PLA characteristics, storage tips and baseline print guidance.",
+  },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "3D printing for marketing & events",
+  description: metadata.description ?? "",
+  datePublished: datePublished,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-  datePublished: "2025-06-24",
-  dateModified: "2026-02-06",
   inLanguage: "en-BE",
-}
+})
+
 
 export default function MarketingEventsBlogEn() {
   return (
@@ -131,6 +144,7 @@ export default function MarketingEventsBlogEn() {
             <p className="mt-4 text-lg text-slate-700">
               Plan props, awards and merch with short lead times. Align on brand colours, finish and logistics so your campaign assets arrive ready to go.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact?topic=marketing-events">Plan a campaign prop</ShimmerButton>
               <Link
@@ -244,11 +258,29 @@ export default function MarketingEventsBlogEn() {
           </Reveal>
         </div>
       </section>
+      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
+          <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            {references.map((ref) => (
+              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                  {ref.label}
+                </a>
+                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogReadMore />
     </main>
   )
 }
+
+
 
 

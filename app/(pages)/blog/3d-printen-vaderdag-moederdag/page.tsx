@@ -5,8 +5,12 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-vaderdag-moederdag/"
+const datePublished = "2025-03-15"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Vaderdag & Moederdag 3D printen | X3DPrints Blog",
@@ -33,7 +37,7 @@ export const metadata: Metadata = {
 const tips = [
   "Silk PLA voor glansrijke gifts, Matte PLA voor zachte look; PETG voor sterkere sleutelhangers/desk items.",
   "Min. 0,6 mm tekstdiepte en afgeronde randen voor prettige feel in dagelijks gebruik.",
-  "TPU pads voor antislip; gebruik pockets of geÃ¯ntegreerde voetjes.",
+  "TPU pads voor antislip; gebruik pockets of geïntegreerde voetjes.",
   "Layerhoogte 0,16-0,24 mm voor nette lijnen zonder lange printtijd.",
   "Batch namen/initialen per print-run voor consistente kleur en finish.",
 ]
@@ -42,8 +46,30 @@ const checklist = [
   "Type gift: sleutelhanger, desk organizer, naamplaat of klein decor.",
   "Materiaal: Silk/Matte PLA voor look; PETG voor sterkte; TPU voor grip.",
   "Afwerking: raw of licht geschuurd; primer optioneel als je wil schilderen.",
-  "Deadline: Vaderdag/Moederdag (meiâ€“juni) + leveroptie (EV-zone of pakketdienst).",
+  "Deadline: Vaderdag/Moederdag (mei–juni) + leveroptie (EV-zone of pakketdienst).",
   "Bestand: STL/STEP. Ontwerp nodig? Ontwerpservice EUR 45/uur.",
+]
+
+const materialRows = [
+  { material: "PLA Silk", use: "Glansrijke gifts", note: "Visueel sterk, indoor" },
+  { material: "PLA Matte", use: "Naamplaten en desk items", note: "Zachte look, leesbare tekst" },
+  { material: "PETG", use: "Sleutelhangers en robuuste items", note: "Sterker en slijtvaster" },
+  { material: "TPU", use: "Antislip pads", note: "Flexibel, extra grip" },
+]
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "ouders-materials", label: "Materialen & checklist" },
+  { id: "ouders-examples", label: "Voorbeelden" },
+  { id: "ouders-faq", label: "FAQ" },
+  { id: "ouders-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
+  { label: "UltiMaker PETG material properties", href: "https://ultimaker.com/materials/s-series-petg/" },
+  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-1B6AA02D-B8E5-4F54-ADC7-11C5B900E05F" },
 ]
 
 const faqItems = [
@@ -74,31 +100,19 @@ const inspirationImages = [
   { src: "/images/portfolio/moederdag3.webp", alt: "Moederdag gepersonaliseerd printcadeau" },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: "nl-BE",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Vaderdag & Moederdag 3D printen",
-  description: metadata.description,
-  author: { "@type": "Organization", name: "X3DPrints" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/images/og-home.jpg" },
-  },
-  datePublished: "2025-03-15",
-  dateModified: "2025-03-15",
+  description: metadata.description ?? "",
+  datePublished,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-  mainEntityOfPage: canonical,
-  keywords: [
-    "3D printen Vaderdag",
-    "3D printen Moederdag",
-    "gepersonaliseerde gifts",
-    "desk items 3D printen",
-    "sleutelhangers 3D print",
-  ],
-}
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  items: faqItems,
+})
 
 export default function BlogParentsDay() {
   return (
@@ -116,8 +130,10 @@ export default function BlogParentsDay() {
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Gepersonaliseerde sleutelhangers, desk items en naamcadeaus in Silk, Matte of PETG. Ontwerpbestand niet inbegrepen;
-              lever STL/STEP of kies ontwerpservice (EUR 45/uur). Planning richting meiâ€“juni zonder overpromise.
+              lever STL/STEP of kies ontwerpservice (EUR 45/uur). Planning richting mei–juni zonder overpromise.
             </p>
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?material=pla-silk">Plan je gift run</ShimmerButton>
               <Link
@@ -137,11 +153,31 @@ export default function BlogParentsDay() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="ouders-materials" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
               <h2 className="text-2xl font-bold tracking-tight text-slate-900">Materialen & settings</h2>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="text-xs uppercase tracking-wide text-slate-500">
+                      <th className="py-2 pr-4">Materiaal</th>
+                      <th className="py-2 pr-4">Gebruik</th>
+                      <th className="py-2 pr-4">Notities</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {materialRows.map((row) => (
+                      <tr key={row.material}>
+                        <td className="py-3 pr-4 font-semibold text-slate-900">{row.material}</td>
+                        <td className="py-3 pr-4">{row.use}</td>
+                        <td className="py-3 pr-4">{row.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {tips.map((tip) => (
                   <li key={tip} className="flex gap-2">
@@ -193,7 +229,7 @@ export default function BlogParentsDay() {
         </div>
       </section>
 
-      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="ouders-examples" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -224,7 +260,7 @@ export default function BlogParentsDay() {
         </div>
       </section>
 
-      <section className="px-6 pb-24 sm:px-8 lg:px-12">
+      <section id="ouders-faq" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
@@ -249,12 +285,40 @@ export default function BlogParentsDay() {
         </div>
       </section>
 
+      <section id="ouders-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="p-6">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
 
     </main>
   )
 }
+
 
 
 

@@ -1,4 +1,4 @@
-﻿// app/(pages)/faq/page.tsx
+// app/(pages)/faq/page.tsx
 import Link from "next/link"
 import type { Metadata } from "next"
 
@@ -215,7 +215,7 @@ export default function Page() {
   ]
   const references = [
     { label: "ISO/ASTM 52900 terminologie voor additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
-    { label: "Prusa materialenoverzicht (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+    { label: "Prusa materialenoverzicht (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
     { label: "Autodesk uitleg over additive manufacturing", url: "https://www.autodesk.com/solutions/additive-manufacturing/what-is-additive-manufacturing" },
   ]
   const lastUpdatedLabel = "Laatst bijgewerkt: 6 februari 2026"

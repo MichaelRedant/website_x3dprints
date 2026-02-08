@@ -1,12 +1,15 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-pla-wood/"
 const publishedDate = "2025-09-26T08:00:00+02:00"
+const dateModified = "2026-02-08"
+const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
   title: "Wood filament 3D printing: PLA Wood and specials | X3DPrints",
@@ -132,7 +135,7 @@ const resourceLinks = [
   { label: "Pricing & calculator", href: "/en/pricing", description: "See impact of longer runtimes and special filaments." },
 ]
 
-const externalReferences = [
+const references = [
   {
     label: "Bambu Lab PLA Wood TDS",
     href: "https://store.bblcdn.com/s4/default/6fda0ae88e5a4e66bb5d58f2968eee42/Bambus_PLA_Wood_Technical_Data_Sheet.pdf",
@@ -140,26 +143,16 @@ const externalReferences = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Wood filament 3D printing: PLA Wood and specials",
-  description:
-    "PLA Wood guide: settings, use cases, limitations and finishing tips, with comparisons to other aesthetic PLA blends. Part of Filament Friday.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/og-x3dprints.jpg" },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
   inLanguage: "en-BE",
-}
+})
+
 
 export default function FilamentFridayPlaWoodEnPage() {
   return (
@@ -197,6 +190,7 @@ export default function FilamentFridayPlaWoodEnPage() {
               Use this guide to print PLA Wood and other special blends reliably: nozzle temps, clog prevention, when to choose it and when a basic PLA or
               Silk/Marble is a better call.
             </p>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/en/materials/pla-wood">View PLA Wood sheet</ShimmerButton>
               <Link
@@ -370,7 +364,7 @@ export default function FilamentFridayPlaWoodEnPage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Resources and references</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 <div className="rounded-2xl border border-slate-100 bg-white/70 p-4">
                   <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Internal links</p>
@@ -386,9 +380,9 @@ export default function FilamentFridayPlaWoodEnPage() {
                   </ul>
                 </div>
                 <div className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                  <p className="text-xs uppercase tracking-[0.3em] text-slate-500">External references</p>
+                  <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Sources and references</p>
                   <ul className="mt-2 space-y-2 text-sm text-slate-600">
-                    {externalReferences.map((ref) => (
+                    {references.map((ref) => (
                       <li key={ref.href}>
                         <a
                           href={ref.href}
@@ -436,3 +430,6 @@ export default function FilamentFridayPlaWoodEnPage() {
     </main>
   )
 }
+
+
+

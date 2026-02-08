@@ -3,15 +3,17 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
+import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pla-marble/"
 const publishedDate = "2025-10-10T08:00:00+02:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "PLA Marble 3D printen: steenlook zonder gewicht | X3DPrints",
   description:
-    "Filament Vrijdag #5. Alles over PLA Marble: varianten, instellingen en use cases voor interieur, retail en cosplay â€“ plus waarom finishing meestal overbodig is.",
+    "Filament Vrijdag #5. Alles over PLA Marble: varianten, instellingen en use cases voor interieur, retail en cosplay – plus waarom finishing meestal overbodig is.",
   alternates: { canonical },
   openGraph: {
     title: "PLA Marble 3D printen: steenlook zonder gewicht",
@@ -44,7 +46,7 @@ export const metadata: Metadata = {
 const heroStats = [
   { label: "Layerhoogte", value: "0.16-0.28 mm", detail: "Grotere lagen = uitgesproken textuur" },
   { label: "Nozzleadvies", value: "0.4-0.6 mm", detail: "0.6 mm vlakt laaglijnen extra af" },
-  { label: "Beste cases", value: "Interieur Â· Cosplay Â· Retail", detail: "Esthetiek primeert, niet sterkte" },
+  { label: "Beste cases", value: "Interieur · Cosplay · Retail", detail: "Esthetiek primeert, niet sterkte" },
 ]
 
 const marbleVariants = [
@@ -88,7 +90,7 @@ const whenToUse = [
 ]
 
 const whenToAvoid = [
-  "Functionele onderdelen met impact of torsie â€“ kies PETG of nylon.",
+  "Functionele onderdelen met impact of torsie – kies PETG of nylon.",
   "Outdoor projecten in direct zonlicht of nabij warmtebronnen.",
   "Dunne clips of flexibele onderdelen (dan kies je TPU of PETG).",
   "Budgetcases waar standaard PLA voldoende is.",
@@ -146,53 +148,39 @@ const resourceLinks = [
   { label: "PLA materialen", href: "/materials", description: "Bekijk alle PLA varianten, inclusief Marble en Matte." },
   { label: "3D printen pillar", href: "/3d-printen", description: "Workflow, materialen en typische studio cases." },
   { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool", description: "Laat de wizard je materiaalkeuze bevestigen." },
-  { label: "Prijzen & calculator", href: "/pricing", description: "Zie hoe materiaalkeuze de offerte beÃ¯nvloedt." },
+  { label: "Prijzen & calculator", href: "/pricing", description: "Zie hoe materiaalkeuze de offerte beïnvloedt." },
 ]
 
-const externalReferences = [
+const references = [
   {
     label: "Bambu Lab PLA materiaalhandleiding",
     href: "https://wiki.bambulab.com/en/filament/pla",
-    description: "OfficiÃ«le baseline voor PLA-profielen op X1/P1 printers (ook bruikbaar voor Marble).",
+    description: "Officiële baseline voor PLA-profielen op X1/P1 printers (ook bruikbaar voor Marble).",
   },
   {
-    label: "Prusa â€“ Painting & post-processing PLA",
+    label: "Prusa – Painting & post-processing PLA",
     href: "https://help.prusa3d.com",
     description: "Handleiding voor wie Marble nadien nog wil schilderen.",
   },
   {
-    label: "MatterHackers â€“ Specialty PLA blends",
+    label: "MatterHackers – Specialty PLA blends",
     href: "https://www.matterhackers.com/articles",
     description: "Overzicht van visuele PLA varianten zoals Marble, Concrete en Sparkle.",
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "PLA Marble 3D printen: steenlook zonder gewicht",
-  description:
-    "Filament Vrijdag #5 van X3DPrints. Leer wat PLA Marble is, hoe je het print en wanneer je het inzet voor designprops, retail en cosplay.",
+  description: "Filament Vrijdag #5 van X3DPrints. Leer wat PLA Marble is, hoe je het print en wanneer je het inzet voor designprops, retail en cosplay.",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/og-x3dprints.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
+
+
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
 function SectionDivider() {
   return (
@@ -240,6 +228,7 @@ export default function FilamentVrijdagPlaMarblePage() {
               Marble filament is de snelste manier om een luxueuze steenlook te krijgen zonder kilo&apos;s materiaal of finishing. De pigmenten camoufleren laaglijnen, breken licht diffuus en laten props
               er meteen premium uitzien. In deze editie delen we de blends die het vaakst door de studio lopen, de instellingen die hun textuur laten stralen en de projecten waarvoor dit filament een echte meerwaarde is.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/contact?material=PLA%20Marble">Plan een PLA Marble print</ShimmerButton>
               <Link
@@ -255,7 +244,7 @@ export default function FilamentVrijdagPlaMarblePage() {
                 Material Suggestion Tool
               </Link>
             </div>
-            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 10 oktober 2025 â€“ Vorige Filament Vrijdag: PLA Wood (26 september 2025).</p>
+            <p className="mt-6 text-sm text-slate-500">Gepubliceerd op 10 oktober 2025 – Vorige Filament Vrijdag: PLA Wood (26 september 2025).</p>
           </Reveal>
           <div className="mt-10 grid gap-4 rounded-3xl border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
             {heroStats.map((stat) => (
@@ -302,7 +291,7 @@ export default function FilamentVrijdagPlaMarblePage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-500" aria-hidden />
-                  <span>PLA-basis blijft rigide en detailvast â€“ goed voor scherpe geometrie.</span>
+                  <span>PLA-basis blijft rigide en detailvast – goed voor scherpe geometrie.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-500" aria-hidden />
@@ -551,10 +540,10 @@ export default function FilamentVrijdagPlaMarblePage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en verder lezen</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <p className="mt-2 text-sm text-slate-600">Zelf experimenteren? Start hier:</p>
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
-                {externalReferences.map((ref) => (
+                {references.map((ref) => (
                   <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/60 p-4">
                     <Link
                       href={ref.href}
@@ -581,7 +570,7 @@ export default function FilamentVrijdagPlaMarblePage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Volgende stap</p>
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900">Steenlook zonder gewicht voor je volgende campagne?</h2>
                 <p className="mt-2 text-sm text-slate-600">
-                  Stuur STL of STEP door, vermeld Marble en vertel waar het stuk komt te staan. We koppelen er een eerlijk materiaal- en prijsadvies aan. Soms is PLA Matte of PETG logischer â€“ dan zeggen we dat ook.
+                  Stuur STL of STEP door, vermeld Marble en vertel waar het stuk komt te staan. We koppelen er een eerlijk materiaal- en prijsadvies aan. Soms is PLA Matte of PETG logischer – dan zeggen we dat ook.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:items-end">
@@ -601,6 +590,10 @@ export default function FilamentVrijdagPlaMarblePage() {
     </main>
   )
 }
+
+
+
+
 
 
 

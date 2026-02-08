@@ -12,7 +12,7 @@ import { buildOrganizerContactHref, buildOrganizerSchemas } from "@/lib/organize
 import { SITE, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 const PAGE = ORGANIZER_PAGES.packout
-const PAGE_URL = `${SITE.url}/organizers/${PAGE.slug}`
+const PAGE_URL = PAGE.seo.canonical
 const CAROUSEL_ITEMS = [
   { src: "/images/organizers/milwaukee/milwaukee2.webp", alt: "Milwaukee Packout organizer met verdeelde vakken", width: 1600, height: 900 },
   { src: "/images/organizers/milwaukee/milwaukee3.webp", alt: "Packout inlay voor bits en schroeven, klemvast", width: 1600, height: 900 },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     canonical: PAGE.seo.canonical,
     languages: {
       "nl-BE": PAGE.seo.canonical,
-      "en-BE": `${SITE.url}/en/organizers/${PAGE.slug}`,
+      "en-BE": `${SITE.url}/en/organizers/${PAGE.slug}/`,
       "x-default": PAGE.seo.canonical,
     },
   },

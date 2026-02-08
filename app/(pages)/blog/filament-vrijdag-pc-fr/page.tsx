@@ -1,17 +1,20 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 
+import { buildArticleJsonLd } from "@/lib/seo"
+
 const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pc-fr/"
 const publishedDate = "2026-01-23T08:00:00+01:00" // vrijdag in januari
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Filament Vrijdag: PC FR (UL94 V-0) 3D printen | X3DPrints",
   description:
-    "PC FR vlamvertragend filament voor industriÃ«le behuizingen. Leer instellingen, droogtijd en wanneer PC FR loont tegenover standaard PC of PETG.",
+    "PC FR vlamvertragend filament voor industriële behuizingen. Leer instellingen, droogtijd en wanneer PC FR loont tegenover standaard PC of PETG.",
   alternates: { canonical },
   openGraph: {
     title: "PC FR 3D printen: UL94 V-0 zonder drama",
@@ -44,8 +47,8 @@ export const metadata: Metadata = {
 
 const heroStats = [
   { label: "Flame rating", value: "UL94 V-0", detail: "Zelfdovend binnen seconden" },
-  { label: "Temperatuur", value: "260-280 Â°C", detail: "Bed 90-110 Â°C, enclosure verplicht" },
-  { label: "Droogtijd", value: "8u @ 80 Â°C", detail: "Warm bewaren tijdens de print" },
+  { label: "Temperatuur", value: "260-280 °C", detail: "Bed 90-110 °C, enclosure verplicht" },
+  { label: "Droogtijd", value: "8u @ 80 °C", detail: "Warm bewaren tijdens de print" },
 ]
 
 const whenToUse = [
@@ -63,27 +66,27 @@ const whenToAvoid = [
 ]
 
 const printSettings = [
-  { label: "Nozzle", value: "260-280 Â°C", note: "Begin op 265 Â°C, verhoog bij dikke wanden." },
-  { label: "Bed", value: "90-110 Â°C + lijmstick", note: "Textured PEI of garolite met brim." },
+  { label: "Nozzle", value: "260-280 °C", note: "Begin op 265 °C, verhoog bij dikke wanden." },
+  { label: "Bed", value: "90-110 °C + lijmstick", note: "Textured PEI of garolite met brim." },
   { label: "Snelheid", value: "30-55 mm/s", note: "Lagere acceleratie voor laaghechting." },
   { label: "Koeling", value: "0-15 %", note: "Alleen voor bridges; te veel koeling = scheuren." },
-  { label: "Droog", value: "8u @ 80 Â°C", note: "Laat in drybox tijdens de run, anders matte lagen." },
-  { label: "Omgeving", value: "Gesloten kamer", note: "20-30 Â°C chamber minimaliseert spanning." },
+  { label: "Droog", value: "8u @ 80 °C", note: "Laat in drybox tijdens de run, anders matte lagen." },
+  { label: "Omgeving", value: "Gesloten kamer", note: "20-30 °C chamber minimaliseert spanning." },
 ]
 
 const comparisonRows = [
   { label: "Vlamvertragend", pc: "Nee", pcfr: "Ja, UL94 V-0" },
-  { label: "Glasovergang", pc: "~110 Â°C", pcfr: "~110 Â°C" },
+  { label: "Glasovergang", pc: "~110 °C", pcfr: "~110 °C" },
   { label: "Transparantie", pc: "Transparant / Helder Zwart", pcfr: "Halftransparant, zwart/grijs/wit" },
   { label: "Use case", pc: "Outdoor, machinecovers, diffusers", pcfr: "Elektronica, rail-kasten, safety" },
-  { label: "Prijs", pc: "â‚¬â‚¬â‚¬", pcfr: "â‚¬â‚¬â‚¬+" },
+  { label: "Prijs", pc: "€€€", pcfr: "€€€+" },
 ]
 
-const externalReferences = [
+const references = [
   {
     label: "Bambu Lab PC FR filament specs",
     href: "https://wiki.bambulab.com/en/filament/pc-fr",
-    description: "OfficiÃ«le nozzle/bed-adviezen en plaatcompatibiliteit voor PC FR.",
+    description: "Officiële nozzle/bed-adviezen en plaatcompatibiliteit voor PC FR.",
   },
   {
     label: "UL94 V-0 (Wikipedia)",
@@ -97,27 +100,20 @@ const externalReferences = [
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Filament Vrijdag: PC FR (UL94 V-0) 3D printen",
-  description:
-    "PC FR vlamvertragend polycarbonaat voor industriÃ«le behuizingen. Instellingen, droogtijd, use cases en alternatieven.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  author: { "@type": "Organization", name: "X3DPrints", url: "https://www.x3dprints.be" },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/og-x3dprints.jpg" },
-  },
-  mainEntityOfPage: canonical,
-  dateModified: "2026-02-04T11:15:50+01:00",
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
 
 type PageProps = { searchParams?: Promise<Record<string, string | string[] | undefined>>; params?: Promise<Record<string, string | string[] | undefined>> }
+
+
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
 function SectionDivider() {
   return (
@@ -166,6 +162,7 @@ export default function FilamentVrijdagPcFrPage({}: PageProps) {
               gecertificeerde vlamvertraging. In deze editie krijg je instellingen, design-aanpak en hoe PC FR zich verhoudt
               tot standaard PC en PETG.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/contact?material=PC%20FR">Plan een PC FR run</ShimmerButton>
               <Link
@@ -203,8 +200,8 @@ export default function FilamentVrijdagPcFrPage({}: PageProps) {
             <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">Wanneer kies je PC FR?</h2>
               <p className="mt-3 text-sm text-slate-600">
-                PC FR is gebouwd voor safety-critical onderdelen: het dooft zichzelf, blijft vormvast rond 110 Â°C en kan UV
-                verdragen. Denk aan PSU covers, rail-kasten en elektronica in machines. Als vlamvertraging gÃ©Ã©n eis is, blijf bij{" "}
+                PC FR is gebouwd voor safety-critical onderdelen: het dooft zichzelf, blijft vormvast rond 110 °C en kan UV
+                verdragen. Denk aan PSU covers, rail-kasten en elektronica in machines. Als vlamvertraging géén eis is, blijf bij{" "}
                 <Link href="/blog/filament-vrijdag-pc" className="text-indigo-600 underline underline-offset-4">
                   standaard PC
                 </Link>{" "}
@@ -285,7 +282,7 @@ export default function FilamentVrijdagPcFrPage({}: PageProps) {
               <h2 className="text-2xl font-semibold text-slate-900">PC FR vs PC</h2>
               <p className="mt-2 text-sm text-slate-600">
                 De kern: kies PC FR als veiligheid of compliance primeert. Kies PC als je transparantie en lagere prijs belangrijk
-                vindt zonder UL-rating. Beide blijven maatvast rond 110 Â°C.
+                vindt zonder UL-rating. Beide blijven maatvast rond 110 °C.
               </p>
               <div className="mt-4 overflow-x-auto">
                 <table className="min-w-[320px] text-sm text-slate-700">
@@ -342,28 +339,28 @@ export default function FilamentVrijdagPcFrPage({}: PageProps) {
                   <Link href="/pricing" className="font-semibold text-emerald-600 transition hover:text-emerald-700">
                     Pricing & calculator
                   </Link>{" "}
-                  â€“ zie prijsimpact van PC FR versus PC (hogere kg-prijs + droogtijd).
+                  – zie prijsimpact van PC FR versus PC (hogere kg-prijs + droogtijd).
                 </li>
                 <li>
                   <Link href="/materials#material-suggestion-tool" className="font-semibold text-emerald-600 transition hover:text-emerald-700">
                     Material Suggestion Tool
                   </Link>{" "}
-                  â€“ laat de wizard beslissen of PC FR echt nodig is.
+                  – laat de wizard beslissen of PC FR echt nodig is.
                 </li>
                 <li>
                   <Link href="/blog/hoeveel-kost-3d-printen" className="font-semibold text-emerald-600 transition hover:text-emerald-700">
                     Kostenblog
                   </Link>{" "}
-                  â€“ begrijp waarom premium materialen extra leadtime vragen.
+                  – begrijp waarom premium materialen extra leadtime vragen.
                 </li>
               </ul>
             </GlassCard>
           </Reveal>
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-3 space-y-3 text-sm text-slate-600">
-                {externalReferences.map((ref) => (
+                {references.map((ref) => (
                   <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/60 p-4">
                     <Link
                       href={ref.href}
@@ -410,6 +407,10 @@ export default function FilamentVrijdagPcFrPage({}: PageProps) {
     </main>
   )
 }
+
+
+
+
 
 
 

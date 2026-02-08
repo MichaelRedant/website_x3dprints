@@ -1,12 +1,15 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/hoe-3d-print-je-onderdelen-voor-buitengebruik/"
 const publishedDate = "2025-11-21T08:00:00+01:00"
+const dateModified = "2026-02-08T08:00:00+01:00"
 
 export const metadata: Metadata = {
   title: "Hoe 3D print je onderdelen voor buitengebruik? | X3DPrints",
@@ -83,51 +86,45 @@ const scenarioMatrix = [
   { application: "Trillende componenten", material: "TPU", reason: "Dempt vibraties en verdeelt belasting rond schroeven." },
 ]
 
-const externalResources = [
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const tocItems = [
+  { id: "outdoor-pla", label: "Waarom PLA buiten faalt" },
+  { id: "outdoor-petg", label: "PETG als standaardkeuze" },
+  { id: "outdoor-tpu", label: "TPU voor grip en demping" },
+  { id: "outdoor-hybrid", label: "Hybride constructies" },
+  { id: "outdoor-attachment", label: "Bevestigen zonder scheuren" },
+  { id: "outdoor-scenarios", label: "Materiaalkeuze per scenario" },
+  { id: "outdoor-cost", label: "Kosten en planning" },
+  { id: "outdoor-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
   {
-    label: "Bambu Lab PETG guide",
+    label: "Bambu Lab: PETG filament guide",
     href: "https://wiki.bambulab.com/en/filament/petg",
-    description: "OfficiAle parameters voor PETG, inclusief droogadvies en AMS tips.",
+    description: "Officiële PETG richtlijnen, inclusief droogadvies en AMS tips.",
   },
   {
-    label: "Prusa: prints voorbereiden voor outdoor gebruik",
+    label: "Prusa: prepare prints for outdoor use",
     href: "https://help.prusa3d.com/article/how-to-prepare-prints-for-outdoor-use_2175",
-    description: "Aanvullende tips rond lakken, UV-coatings en materiaalkeuze.",
+    description: "Aanpak voor UV, coatings en materiaalkeuze bij buitengebruik.",
   },
   {
-    label: "Ultimaker: PETG vs PLA comparison",
-    href: "https://support.makerbot.com/s/article/1667336228714",
-    description: "Vergelijking tussen PLA en PETG over hitte en vochtbestendigheid.",
+    label: "Ultimaker: Design for FFF 3D printing",
+    href: "https://ultimaker.com/learn/design-for-fff-3d-printing/",
+    description: "Ontwerpregels voor wanddikte, oriëntatie en overhangs.",
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: "nl-BE",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Hoe 3D print je onderdelen voor buitengebruik?",
-  description:
-    "Praktische gids voor outdoor 3D print projecten met PETG, TPU en hybride constructies. Inclusief bevestigingstips en kostinschatting.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
 
 export default function OutdoorPrintingGuidePage() {
   return (
@@ -150,6 +147,8 @@ export default function OutdoorPrintingGuidePage() {
               welke materialen standhouden, hoe je bevestigt zonder scheuren en waar PLA toch een rol speelt zonder vroegtijdige
               degradatie.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?material=PETG">Plan een outdoor print</ShimmerButton>
               <Link
@@ -177,7 +176,9 @@ export default function OutdoorPrintingGuidePage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Waarom PLA buiten bijna altijd fout loopt</h2>
+              <h2 id="outdoor-pla" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                Waarom PLA buiten bijna altijd fout loopt
+              </h2>
               <p className="mt-3 text-sm text-slate-600">
                 PLA is fantastisch voor interieur, displays en prototypes, maar buiten brokkelt het razendsnel af. UV-licht tast
                 de polymeren aan, vocht kruipt in micro-scheurtjes en rond 55 degrees C wordt PLA alweer zacht. Een zonnige gevel of een
@@ -200,7 +201,9 @@ export default function OutdoorPrintingGuidePage() {
 
           <Reveal delay={0.1}>
             <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">PETG: de betrouwbare keuze voor buiten</h2>
+              <h2 id="outdoor-petg" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                PETG: de betrouwbare keuze voor buiten
+              </h2>
               <p className="mt-3 text-sm text-slate-600">
                 PETG combineert taaiheid met chemische bestendigheid en blijft maatvast tot ongeveer 80 degrees C. Perfect voor
                 behuizingen, sensoren, tuinverlichting en fietsklemmen die buiten blijven staan.
@@ -239,7 +242,9 @@ export default function OutdoorPrintingGuidePage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
             <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">TPU: grip, demping en tolerantie</h2>
+              <h2 id="outdoor-tpu" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                TPU: grip, demping en tolerantie
+              </h2>
               <p className="mt-3 text-sm text-slate-600">
                 Flexibele onderdelen die buiten gebruikt worden? TPU vangt trillingen op, zorgt voor grip en sluitingen. Perfect
                 voor kabeldoorvoeren, sleeves, afdichtingen en rubberachtige klemmen rond buizen of regenpijpen.
@@ -261,7 +266,9 @@ export default function OutdoorPrintingGuidePage() {
 
           <Reveal delay={0.1}>
             <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Hybride constructies: PLA + PETG + TPU</h2>
+              <h2 id="outdoor-hybrid" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                Hybride constructies: PLA + PETG + TPU
+              </h2>
               <p className="mt-3 text-sm text-slate-600">
                 Soms wil je PLA Matte of Marble look buiten, maar met de zekerheid van PETG. Dat kan door de rollen slim te
                 verdelen:
@@ -284,7 +291,9 @@ export default function OutdoorPrintingGuidePage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Hoe bevestig je outdoor onderdelen?</h2>
+              <h2 id="outdoor-attachment" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                Hoe bevestig je outdoor onderdelen?
+              </h2>
               <p className="mt-3 text-sm text-slate-600">
                 Het juiste filament is een goed begin, maar veel falen is te wijten aan montage. Volg deze best practices:
               </p>
@@ -319,7 +328,9 @@ export default function OutdoorPrintingGuidePage() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Materiaalkeuze per scenario</h2>
+              <h2 id="outdoor-scenarios" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                Materiaalkeuze per scenario
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
                 Gebruik dit overzicht als startpunt. De exacte keuze hangt af van formaat, bevestiging en budget.
               </p>
@@ -359,7 +370,9 @@ export default function OutdoorPrintingGuidePage() {
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <Reveal>
             <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Wat kost een buitenbestendig project?</h2>
+              <h2 id="outdoor-cost" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                Wat kost een buitenbestendig project?
+              </h2>
               <p className="mt-3 text-sm text-slate-600">
                 Outdoor prints vragen meestal PETG of TPU, dikkere wanden en inserts. Dat verhoogt vooral de machine-uren. Check
                 het{" "}
@@ -382,10 +395,12 @@ export default function OutdoorPrintingGuidePage() {
 
           <Reveal delay={0.1}>
             <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Externe bronnen</h2>
+              <h2 id="outdoor-sources" className="scroll-mt-28 text-2xl font-semibold text-slate-900">
+                Bronnen en referenties
+              </h2>
               <p className="mt-2 text-sm text-slate-600">Meer lezen? Deze bronnen bevestigen onze aanbevelingen:</p>
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
-                {externalResources.map((resource) => (
+                {references.map((resource) => (
                   <li key={resource.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
                     <Link
                       href={resource.href}
@@ -433,6 +448,7 @@ export default function OutdoorPrintingGuidePage() {
     </main>
   )
 }
+
 
 
 

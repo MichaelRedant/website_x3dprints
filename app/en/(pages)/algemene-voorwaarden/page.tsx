@@ -27,7 +27,7 @@ const pageJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Terms & Conditions",
-  description: metadata.description,
+  description: metadata.description ?? "",
   url: canonical,
   inLanguage: "en-BE",
   isPartOf: {

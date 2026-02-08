@@ -341,12 +341,12 @@ export default function Page({ locale }: PageProps) {
       ]
   const references = isEn
     ? [
-        { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "Prusa material guide (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
         { label: "All3DP FDM cost factors", url: "https://all3dp.com/2/3d-printing-cost-calculator-great-web-tools/" },
         { label: "Bambu Lab filament overview", url: "https://wiki.bambulab.com/en/filament-acc/filament/overview" },
       ]
     : [
-        { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/article/material-guide_220" },
+        { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
         { label: "All3DP over kostfactoren bij FDM", url: "https://all3dp.com/2/3d-printing-cost-calculator-great-web-tools/" },
         { label: "Bambu Lab filamentoverzicht", url: "https://wiki.bambulab.com/en/filament-acc/filament/overview" },
       ]

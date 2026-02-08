@@ -93,7 +93,7 @@ export const ORGANIZER_PAGES: Record<OrganizerSlug, OrganizerPageContent> = {
     title: "Gridfinity organizers op maat | X3DPrints",
     description:
       "Gridfinity organizers voor bureaulades, werkbanken en koffers. Prefab sets + custom vak per tool, labelzones en antislip. Toolbox inlay op maat in België (Gent/Aalst).",
-      canonical: "https://www.x3dprints.be/organizers/modugrid",
+      canonical: "https://www.x3dprints.be/organizers/modugrid/",
       ogImage: "/images/organizers/modugrid/ModuGrid3.webp",
     },
   },
@@ -179,7 +179,7 @@ export const ORGANIZER_PAGES: Record<OrganizerSlug, OrganizerPageContent> = {
       title: "Packout organizers op maat | X3DPrints",
       description:
         "Milwaukee Packout inlay op maat: accu’s, chargers en handtools zonder rammel. Professioneel, labelbaar en antislip. Packout insert op maat in België voor serviceploegen en camionettes.",
-      canonical: "https://www.x3dprints.be/organizers/packout",
+      canonical: "https://www.x3dprints.be/organizers/packout/",
       ogImage: "/images/organizers/milwaukee/milwaukee1.webp",
     },
   },
@@ -258,7 +258,7 @@ export const ORGANIZER_PAGES: Record<OrganizerSlug, OrganizerPageContent> = {
       title: "TSTAK organizers op maat | X3DPrints",
       description:
         "Stanley/DeWALT TSTAK insert op maat: small parts en allround layouts zonder rammel, met labelzones en antislip. TSTAK organizer op maat in België voor field teams, servicewagens en camionettes.",
-      canonical: "https://www.x3dprints.be/organizers/tstak",
+      canonical: "https://www.x3dprints.be/organizers/tstak/",
       ogImage: "/images/organizers/tstak/tstak0.jpg",
     },
   },
@@ -338,7 +338,7 @@ export const ORGANIZER_PAGES: Record<OrganizerSlug, OrganizerPageContent> = {
       title: "Custom toolbox inserts | X3DPrints",
       description:
         "Custom toolbox insert op maat in België: foto + maten + tool lijst, wij modelleren en printen in PLA/PETG met label en antislip. Ideaal voor unieke koffers, pegboards, Skådis wanden en parametric bins.",
-      canonical: "https://www.x3dprints.be/organizers/custom",
+      canonical: "https://www.x3dprints.be/organizers/custom/",
       ogImage: "/images/organizers/modugrid/ModuGrid10.webp",
     },
   },

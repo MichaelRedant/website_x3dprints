@@ -11,7 +11,7 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 const canonical = "https://www.x3dprints.be/blog/pla-vs-petg/"
 const enCanonical = "https://www.x3dprints.be/en/blog/pla-vs-petg/"
 const datePublished = "2024-08-25"
-const dateModified = "2026-02-07"
+const dateModified = "2026-02-08"
 const contactHref = "/contact?material=pla-matte&quote=Advies%20PLA%20vs%20PETG%20voor%20mijn%20project"
 const materialsHref = "/materials#material-suggestion-tool"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=pla-vs-petg"
@@ -111,15 +111,15 @@ const faqItems = [
 const references = [
   {
     label: "Prusa material guide (PLA, PETG, TPU)",
-    href: "https://help.prusa3d.com/article/material-guide_220",
+    href: "https://help.prusa3d.com/filament-material-guide",
   },
   {
-    label: "All3DP FDM process explainer",
-    href: "https://all3dp.com/2/fdm-3d-printing-explained/",
+    label: "Bambu Lab: PETG filament guide",
+    href: "https://wiki.bambulab.com/en/filament/petg",
   },
   {
-    label: "Google Search docs: crawlable links",
-    href: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+    label: "Ultimaker: Design for FFF 3D printing",
+    href: "https://ultimaker.com/learn/design-for-fff-3d-printing/",
   },
 ]
 
@@ -200,7 +200,7 @@ export default function BlogPlaVsPetgPage() {
             Gebruik deze vergelijking om verschillende 3d print materialen gericht te beoordelen.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 7 februari 2026
+            Laatst bijgewerkt: 8 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton

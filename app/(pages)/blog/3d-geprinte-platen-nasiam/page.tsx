@@ -5,8 +5,11 @@ import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-geprinte-platen-nasiam/"
+const datePublished = "2025-01-15"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "NaSiam x X3DPrints: 3D-geprinte platen met QR | Blog",
@@ -40,7 +43,7 @@ export const metadata: Metadata = {
 
 
 const highlights = [
-  "Twee platen met custom NaSiam-logo, Ã©Ã©n voor events en Ã©Ã©n voor in het salon.",
+  "Twee platen met custom NaSiam-logo, één voor events en één voor in het salon.",
   "Ingebouwde QR-code die naar NaSiam.be leidt voor afspraken en info.",
   "Stevige PLA Matte basis met verzonken logo-inleg en goede leesbaarheid vanaf afstand.",
   "Afmetingen afgestemd op tafels en modulaire standen, makkelijk te verplaatsen.",
@@ -67,7 +70,7 @@ const buildSteps = [
 
 const reuseIdeas = [
   "Gebruik dezelfde plaat als handzame CTA tijdens beurzen of wellness-events; de QR linkt rechtstreeks naar de online agenda.",
-  "Zet de plate in het salon naast de balie of wachtruimte zodat bezoekers meteen kunnen scannen voor promoâ€™s of cadeaubonnen.",
+  "Zet de plate in het salon naast de balie of wachtruimte zodat bezoekers meteen kunnen scannen voor promo’s of cadeaubonnen.",
   "Combineer met het segment marketing & events voor extra props of awards die bij de huisstijl passen.",
   "Koppel de QR aan de Antwerpse landingspagina als je een campagne in de provincie draait, bijvoorbeeld vanuit Sint-Job richting Antwerpen.",
 ]
@@ -83,34 +86,34 @@ a: "PLA Matte geeft weinig schittering onder spotlights en is tegelijkertijd sti
   },
   {
     q: "Kunnen we dezelfde aanpak gebruiken voor andere marketingprops?",
-    a: "Zeker. Het marketingartikel over 3D printing voor events toont hoe we props, awards en QR-integraties schaalbaar maken. Je kunt ook vanuit het segment marketing & events vertrekken om extra ideeÃ«n te verzamelen.",
+    a: "Zeker. Het marketingartikel over 3D printing voor events toont hoe we props, awards en QR-integraties schaalbaar maken. Je kunt ook vanuit het segment marketing & events vertrekken om extra ideeën te verzamelen.",
   },
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-
-  inLanguage: "nl-BE",
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "NaSiam x X3DPrints: 3D-geprinte platen met QR",
   description:
     "Case study over twee herbruikbare 3D-geprinte platen met logo en QR-code voor NaSiam in Sint-Job, inclusief materiaalkeuzes en montageadvies.",
-  author: {
-    "@type": "Person",
-    name: "X3DPrints",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/brand-logo.png",
-    },
-  },
+  datePublished,
+  dateModified,
+  image: "/images/3d-geprinte-platen.webp",
+  inLanguage: "nl-BE",
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
   mainEntityOfPage: canonical,
-  datePublished: "2025-01-15",
-  dateModified: "2025-01-15",
-}
+  items: faq,
+})
+
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+
+const references = [
+  { label: "ISO/ASTM 52900: Additive manufacturing terminology", href: "https://www.iso.org/standard/74514.html" },
+  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-1B6AA02D-B8E5-4F54-ADC7-11C5B900E05F" },
+  { label: "NIST: STEP (ISO 10303) resources", href: "https://www.nist.gov/services-resources/software/step" },
+]
 
 export default function NaSiamArticlePage() {
   return (
@@ -129,7 +132,7 @@ export default function NaSiamArticlePage() {
         <p className="mt-4 text-base text-slate-600">
   Voor massagesalon NaSiam in Sint-Job-in-&apos;t-Goor maakten we twee herbruikbare platen met hun logo en QR-code. 
   NaSiam is een kleinschalige, professionele praktijk voor Thaise massage waar welzijn en persoonlijke aandacht centraal staan. 
-  De platen worden gebruikt in het salon aan Brugstraat 19 Ã©n op events, zodat bezoekers meteen naar{" "}
+  De platen worden gebruikt in het salon aan Brugstraat 19 én op events, zodat bezoekers meteen naar{" "}
   <Link
     href="https://www.nasiam.be"
     target="_blank"
@@ -140,6 +143,7 @@ export default function NaSiamArticlePage() {
   </Link>{" "}
   kunnen doorklikken voor info en afspraken. In deze case lees je hoe we dat aanpakten en welke materialen het verschil maken.
 </p>
+        <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
 
 
         <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
@@ -299,10 +303,30 @@ export default function NaSiamArticlePage() {
           </div>
         </GlassCard>
 
+        <GlassCard className="p-6 sm:p-8">
+          <h2 className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
+          <ul className="mt-4 space-y-2 text-sm text-slate-600">
+            {references.map((reference) => (
+              <li key={reference.href} className="rounded-2xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                <cite className="not-italic">
+                  <a
+                    href={reference.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-amber-700 underline underline-offset-4"
+                  >
+                    {reference.label}
+                  </a>
+                </cite>
+              </li>
+            ))}
+          </ul>
+        </GlassCard>
+
         <GlassCard className="p-6 sm:p-8 text-center">
-          <h2 className="text-xl font-semibold text-slate-900">Wil je ook zoâ€™n herkenbare plaat?</h2>
+          <h2 className="text-xl font-semibold text-slate-900">Wil je ook zo’n herkenbare plaat?</h2>
           <p className="mt-3 text-sm text-slate-600">
-            Laat je logo, QR-code of campagnevisual integreren in een stevige print die jaren meegaat. We stemmen formaat en afwerking af op je eventschema Ã©n de setting in je zaak.
+            Laat je logo, QR-code of campagnevisual integreren in een stevige print die jaren meegaat. We stemmen formaat en afwerking af op je eventschema én de setting in je zaak.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
             <ShimmerButton href="/contact?material=PLA%20Matte">Plan een offertecall</ShimmerButton>
@@ -326,6 +350,7 @@ export default function NaSiamArticlePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogReadMore />
 
     </article>

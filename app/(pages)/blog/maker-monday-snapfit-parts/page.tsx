@@ -1,11 +1,14 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/maker-monday-snapfit-parts/"
 const publishedDate = "2026-01-10T08:00:00+01:00"
+const dateModified = "2026-02-08"
 
 export const metadata: Metadata = {
   title: "Maker Monday #8: Snap-fit parts die blijven klikken | X3DPrints",
@@ -109,34 +112,39 @@ const testChecklist = [
   "Noteer materiaal, nozzle, layer height en orientatie; koppel findings terug in CAD zodat toekomstige runs voorspelbaar zijn.",
 ]
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
-  inLanguage: "nl-BE",
+const tocItems = [
+  { id: "snapfit-types", label: "Snap-fit types" },
+  { id: "snapfit-clearance", label: "Clearance per materiaal" },
+  { id: "snapfit-checklist", label: "Fouten & testplan" },
+  { id: "snapfit-next", label: "Van testclip naar productie" },
+  { id: "snapfit-sources", label: "Bronnen en referenties" },
+]
+
+const references = [
+  {
+    label: "Covestro: Snap-fit joints for plastics (design guide)",
+    href: "https://assets.covestro.com/image/upload/v1689251920/PCI/pcs/Infopool/Library/Design_Guide/Snap-fit_joints_for_plastic_-_A_design_guide.pdf",
+  },
+  {
+    label: "Ultimaker: Design for FFF 3D printing",
+    href: "https://ultimaker.com/learn/design-for-fff-3d-printing/",
+  },
+  {
+    label: "Prusa: Material guide (PLA, PETG, TPU)",
+    href: "https://help.prusa3d.com/filament-material-guide",
+  },
+]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
   headline: "Maker Monday #8: Snap-fit parts die blijven klikken",
-  description:
-    "Ontwerp snap-fit onderdelen voor PLA, PETG en TPU met juiste clearance, fillets, arm-diktes en testprotocol. Bevat interne links naar wanddikte- en tolerantiegidsen.",
+  description: metadata.description ?? "",
   datePublished: publishedDate,
-  dateModified: publishedDate,
-  author: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "X3DPrints",
-    url: "https://www.x3dprints.be",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.x3dprints.be/images/og-home.jpg",
-    },
-  },
-  mainEntityOfPage: canonical,
-  url: canonical,
+  dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
-}
+})
 
 function SectionDivider() {
   return (
@@ -186,6 +194,8 @@ export default function MakerMondaySnapfitPartsPage() {
               tolerantie- en wanddiktedata uit #2 en #3. Zo krijg je behuizingen en covers die herhaalbaar klikken in PLA,
               PETG of TPU.
             </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
+            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=maker-monday-snapfits">Vraag snap-fit review</ShimmerButton>
               <Link
@@ -221,7 +231,9 @@ export default function MakerMondaySnapfitPartsPage() {
           <div className="space-y-6">
             <Reveal className="space-y-3">
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">Types</p>
-              <h2 className="text-2xl font-bold text-slate-900">Drie snap-fit families en wanneer je ze inzet</h2>
+              <h2 id="snapfit-types" className="scroll-mt-28 text-2xl font-bold text-slate-900">
+                Drie snap-fit families en wanneer je ze inzet
+              </h2>
               <p className="text-slate-700">
                 Kies het type snap-fit op basis van richting van belasting en hoeveel cycli je verwacht. Cantilever arms zijn
                 ideaal voor covers, torsieclips voor klemmen en annular snaps voor ronde potjes of buisverbindingen. Test
@@ -320,40 +332,35 @@ export default function MakerMondaySnapfitPartsPage() {
 
           <aside className="space-y-4">
             <GlassCard className="rounded-2xl border border-slate-100 bg-white/80 p-5">
-              <div className="text-sm font-semibold text-slate-900">Clearance per materiaal</div>
+              <h3 id="snapfit-clearance" className="scroll-mt-28 text-sm font-semibold text-slate-900">
+                Clearance per materiaal
+              </h3>
               <p className="mt-2 text-sm text-slate-600">
                 Startwaarden voor de locking features. Combineer met de tolerantie-richtlijnen uit Maker Monday #3 en corrigeer
                 voor elephant&apos;s foot bij brede bases.
               </p>
-              <div className="mt-4 space-y-3">
-                {clearanceTable.map((row) => (
-                  <div key={row.material} className="rounded-xl border border-slate-100 bg-slate-50/70 p-3">
-                    <div className="flex items-center justify-between text-sm font-semibold text-slate-900">
-                      <span>{row.material}</span>
-                      <span className="text-xs uppercase tracking-[0.15em] text-indigo-500">Snap-fit</span>
-                    </div>
-                    <p className="mt-1 text-sm text-slate-700">Cantilever: {row.cantilever}</p>
-                    <p className="text-sm text-slate-700">Annular: {row.annular}</p>
-                    <p className="mt-1 text-xs text-slate-500">{row.notes}</p>
-                  </div>
-                ))}
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-[420px] text-left text-sm text-slate-700">
+                  <thead>
+                    <tr className="border-b border-slate-200/70 text-xs uppercase tracking-wide text-slate-500">
+                      <th className="py-2 pr-4 font-semibold">Materiaal</th>
+                      <th className="py-2 pr-4 font-semibold">Cantilever</th>
+                      <th className="py-2 pr-4 font-semibold">Annular</th>
+                      <th className="py-2 pr-4 font-semibold">Notities</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {clearanceTable.map((row) => (
+                      <tr key={row.material} className="border-b border-slate-200/70 last:border-0">
+                        <td className="py-2 pr-4 font-medium text-slate-900">{row.material}</td>
+                        <td className="py-2 pr-4">{row.cantilever}</td>
+                        <td className="py-2 pr-4">{row.annular}</td>
+                        <td className="py-2 pr-4 text-xs text-slate-500">{row.notes}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
-            </GlassCard>
-
-            <GlassCard className="rounded-2xl border border-amber-200 bg-amber-50/70 p-5">
-              <div className="text-sm font-semibold text-amber-800">Externe referentie</div>
-              <p className="mt-2 text-sm text-amber-800">
-                Wil je nog dieper duiken? Hubs publiceerde een sterke samenvatting van snap-fit ontwerprichtlijnen voor 3D
-                printing.
-              </p>
-              <Link
-                href="https://www.hubs.com/knowledge-base/how-design-snap-fit-joints-3d-printing/"
-                className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-amber-900 underline underline-offset-4"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Naar Hubs gids
-              </Link>
             </GlassCard>
           </aside>
         </div>
@@ -365,7 +372,9 @@ export default function MakerMondaySnapfitPartsPage() {
         <div className="mx-auto max-w-5xl space-y-8">
           <Reveal className="space-y-3">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">Checklist</p>
-            <h2 className="text-2xl font-bold text-slate-900">Veelgemaakte fouten en hoe je ze voorkomt</h2>
+            <h2 id="snapfit-checklist" className="scroll-mt-28 text-2xl font-bold text-slate-900">
+              Veelgemaakte fouten en hoe je ze voorkomt
+            </h2>
             <p className="text-slate-700">
               Snap-fit parts falen vaak op dezelfde punten. Gebruik onderstaande lijst tijdens CAD-review en eerste testprint.
             </p>
@@ -397,13 +406,41 @@ export default function MakerMondaySnapfitPartsPage() {
         </div>
       </section>
 
+      <section id="snapfit-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
+              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                {references.map((reference) => (
+                  <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
+                    <cite className="not-italic">
+                      <a
+                        href={reference.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {reference.label}
+                      </a>
+                    </cite>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       <SectionDivider />
 
       <section className="px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.4fr_1fr]">
           <div className="space-y-3">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">Volgende stappen</p>
-            <h2 className="text-2xl font-bold text-slate-900">Van testclip naar productierun</h2>
+            <h2 id="snapfit-next" className="scroll-mt-28 text-2xl font-bold text-slate-900">
+              Van testclip naar productierun
+            </h2>
             <p className="text-slate-700">
               Combineer deze richtlijnen met de wanddikte- en tolerantiechecklists uit Maker Monday #2 en #3. Voor behuizingen
               die vaak open moeten, kies PETG of TPU voor de clips en PLA Matte voor de cover. Gebruik inserts of zelftappers
@@ -464,6 +501,7 @@ export default function MakerMondaySnapfitPartsPage() {
     </main>
   )
 }
+
 
 
 
