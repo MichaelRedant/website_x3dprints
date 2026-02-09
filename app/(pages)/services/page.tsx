@@ -671,10 +671,11 @@ const SERVICES_COPY_EN = {
   ],
 }
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
 
-export default function Page({ locale }: PageProps) {
-  const normalizedLocale = normalizeLocale(locale)
+export default async function Page({ searchParams }: PageProps) {
+  const params = await searchParams
+  const normalizedLocale = normalizeLocale(params?.lang)
   const isEn = normalizedLocale === "en"
   const copy = isEn ? SERVICES_COPY_EN : SERVICES_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
@@ -1173,4 +1174,5 @@ export default function Page({ locale }: PageProps) {
     </main>
   )
 }
+
 

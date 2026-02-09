@@ -1,14 +1,19 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pla-silk-plus/"
 const publishedDate = "2025-10-31T08:00:00+02:00"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ["filament-vrijdag-pla-silk-plus"]
 
 export const metadata: Metadata = {
   title: "PLA Silk+ 3D printen: high gloss zonder drama | X3DPrints",
@@ -320,6 +325,8 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <SectionDivider />
 
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
@@ -399,6 +406,8 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -437,6 +446,8 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl space-y-6">
           <Reveal>
@@ -474,6 +485,8 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
@@ -531,6 +544,8 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl space-y-6">
           <Reveal>
@@ -574,6 +589,8 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
@@ -671,6 +688,8 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -696,25 +715,29 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Voor wie zelf met silkvarianten wil spelen of nog wat dieper in de materiaalfysica wil duiken:
               </p>
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
                 {references.map((ref) => (
                   <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/60 p-4">
-                    <Link
-                      href={ref.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-base font-semibold text-indigo-600 transition hover:text-indigo-500"
-                    >
-                      {ref.label}
-                    </Link>
+                    <cite className="not-italic">
+                      <Link
+                        href={ref.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-base font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {ref.label}
+                      </Link>
+                    </cite>
                     <p className="mt-1">{ref.description}</p>
                   </li>
                 ))}
@@ -723,6 +746,8 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
@@ -747,7 +772,14 @@ export default function FilamentVrijdagPlaSilkPlusPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
+      <BlogFaq title={faq.title} items={faq.items} />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>

@@ -4,12 +4,17 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ } from "@/content/blog-faq"
 
 import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pc-fr/"
 const publishedDate = "2026-01-23T08:00:00+01:00" // vrijdag in januari
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ["filament-vrijdag-pc-fr"]
 
 export const metadata: Metadata = {
   title: "Filament Vrijdag: PC FR (UL94 V-0) 3D printen | X3DPrints",
@@ -192,6 +197,8 @@ export default function FilamentVrijdagPcFrPage({}: PageProps) {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <SectionDivider />
 
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
@@ -275,6 +282,8 @@ export default function FilamentVrijdagPcFrPage({}: PageProps) {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -329,6 +338,8 @@ export default function FilamentVrijdagPcFrPage({}: PageProps) {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl space-y-6">
           <Reveal>
@@ -358,18 +369,20 @@ export default function FilamentVrijdagPcFrPage({}: PageProps) {
           </Reveal>
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-3 space-y-3 text-sm text-slate-600">
                 {references.map((ref) => (
                   <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/60 p-4">
-                    <Link
-                      href={ref.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-base font-semibold text-indigo-600 transition hover:text-indigo-500"
-                    >
-                      {ref.label}
-                    </Link>
+                    <cite className="not-italic">
+                      <Link
+                        href={ref.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-base font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {ref.label}
+                      </Link>
+                    </cite>
                     <p className="mt-1">{ref.description}</p>
                   </li>
                 ))}
@@ -378,6 +391,8 @@ export default function FilamentVrijdagPcFrPage({}: PageProps) {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
@@ -402,7 +417,14 @@ export default function FilamentVrijdagPcFrPage({}: PageProps) {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
+      <BlogFaq title={faq.title} items={faq.items} />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
     </main>
   )

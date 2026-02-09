@@ -3,12 +3,16 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/maker-monday-snapfit-parts/"
 const publishedDate = "2026-01-10T08:00:00+01:00"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ["maker-monday-snapfit-parts"]
 
 export const metadata: Metadata = {
   title: "Maker Monday #8: Snap-fit parts die blijven klikken | X3DPrints",
@@ -114,14 +118,6 @@ const testChecklist = [
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
-const tocItems = [
-  { id: "snapfit-types", label: "Snap-fit types" },
-  { id: "snapfit-clearance", label: "Clearance per materiaal" },
-  { id: "snapfit-checklist", label: "Fouten & testplan" },
-  { id: "snapfit-next", label: "Van testclip naar productie" },
-  { id: "snapfit-sources", label: "Bronnen en referenties" },
-]
-
 const references = [
   {
     label: "Covestro: Snap-fit joints for plastics (design guide)",
@@ -195,7 +191,6 @@ export default function MakerMondaySnapfitPartsPage() {
               PETG of TPU.
             </p>
             <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=maker-monday-snapfits">Vraag snap-fit review</ShimmerButton>
               <Link
@@ -223,6 +218,8 @@ export default function MakerMondaySnapfitPartsPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <SectionDivider />
 
@@ -366,6 +363,8 @@ export default function MakerMondaySnapfitPartsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <SectionDivider />
 
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
@@ -406,11 +405,13 @@ export default function MakerMondaySnapfitPartsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="snapfit-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-600">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -431,6 +432,8 @@ export default function MakerMondaySnapfitPartsPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <SectionDivider />
 
@@ -494,10 +497,15 @@ export default function MakerMondaySnapfitPartsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
+      <BlogFaq title={faq.title} items={faq.items} />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <BlogAuthorNote locale="nl" />
     </main>
   )
 }

@@ -1,12 +1,13 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
+import BlogContentOverview from "@/components/BlogContentOverview"
 import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
 
 const canonical = "https://www.x3dprints.be/en/blog/bestanden-voor-3d-printen/"
 const nlCanonical = "https://www.x3dprints.be/blog/bestanden-voor-3d-printen/"
@@ -47,14 +48,6 @@ export const metadata: Metadata = {
     images: ["/Logo.webp"],
   },
 }
-
-const tocItems = [
-  { id: "files-formats", label: "Which formats work best?" },
-  { id: "files-export", label: "How do you export correctly?" },
-  { id: "files-context", label: "Which extra context helps most?" },
-  { id: "files-faq", label: "FAQ about file handoff" },
-  { id: "files-sources", label: "Sources and references" },
-]
 
 const formatCards = [
   {
@@ -213,8 +206,9 @@ export default function FilesArticleEnPage() {
               Review pricing anchors
             </Link>
           </div>
-          <ContentTableOfContents title="Contents" items={tocItems} className="max-w-2xl" />
         </header>
+
+      <BlogContentOverview locale="en" />
 
         <section id="files-formats" className="scroll-mt-28">
           <Reveal>
@@ -305,7 +299,7 @@ export default function FilesArticleEnPage() {
         <section id="files-sources" className="scroll-mt-28">
           <Reveal>
             <GlassCard className="p-6 sm:p-8">
-              <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Sources and references</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -326,6 +320,9 @@ export default function FilesArticleEnPage() {
           </Reveal>
         </section>
       </article>
+
+      <BlogAuthorNote locale="en" />
+
 
       <BlogReadMore />
 

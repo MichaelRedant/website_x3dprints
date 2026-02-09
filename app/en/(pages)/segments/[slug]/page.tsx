@@ -23,9 +23,9 @@ const SEGMENTS: Record<string, SegmentData> = {
     material: "petg",
   },
   "3d-printing-back-to-school": {
-    title: "3D Printing For Schools",
+    title: "3D Printing For Back-to-School 2026",
     summary:
-      "Classroom models, STEM demos, and practical teaching props with realistic planning.",
+      "Classroom models, STEM demos, and practical teaching props with realistic planning for August-September 2026.",
     material: "pla-matte",
   },
   "3d-printing-marketing": {
@@ -65,21 +65,21 @@ const SEGMENTS: Record<string, SegmentData> = {
     material: "pla-matte",
   },
   "3d-printing-vaderdag-moederdag": {
-    title: "3D Printing For Gift Campaigns",
+    title: "3D Printing For Father's & Mother's Day 2026",
     summary:
-      "Father's Day and Mother's Day gift runs with personalized finishing options.",
+      "Father's Day and Mother's Day gift runs with personalized finishing options for May-June 2026.",
     material: "pla-silk",
   },
   "3d-printing-valentijn": {
-    title: "3D Printing For Valentine Campaigns",
+    title: "3D Printing For Valentine 2026 Campaigns",
     summary:
-      "Short-run seasonal products and promo gifts for January and February launches.",
+      "Short-run seasonal products and promo gifts for January and February 2026 launches.",
     material: "pla-silk",
   },
   "3d-printing-seasonal": {
-    title: "3D Printing For Seasonal Campaigns",
+    title: "3D Printing For Seasonal Campaigns 2026",
     summary:
-      "Holiday and seasonal campaign production for retail, marketing, and events.",
+      "Holiday and seasonal campaign production for 2026 retail, marketing, and events.",
     material: "pla-silk",
   },
 }
@@ -107,7 +107,7 @@ const references = [
   },
 ]
 
-const lastUpdatedLabel = "Last updated: February 6, 2026"
+const lastUpdatedLabel = "Last updated: February 9, 2026"
 
 export function generateStaticParams(): Array<{ slug: string }> {
   return Object.keys(SEGMENTS).map((slug) => ({ slug }))

@@ -653,10 +653,11 @@ const SEGMENTS_COPY_EN: SegmentCopy = {
   },
 }
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
 
-export default function SegmentsPage({ locale }: PageProps) {
-  const normalizedLocale = normalizeLocale(locale)
+export default async function SegmentsPage({ searchParams }: PageProps) {
+  const params = await searchParams
+  const normalizedLocale = normalizeLocale(params?.lang)
   const isEn = normalizedLocale === "en"
   const copy = normalizedLocale === "en" ? SEGMENTS_COPY_EN : SEGMENTS_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
@@ -904,4 +905,5 @@ export default function SegmentsPage({ locale }: PageProps) {
     </main>
   )
 }
+
 

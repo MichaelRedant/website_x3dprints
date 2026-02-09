@@ -7,6 +7,7 @@ import GlassCard from "@/components/GlassCard"
 import GlassOrb from "@/components/GlassOrb"
 import ContactForm from "@/components/ContactForm"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
+import ReadMoreLinks from "@/components/ReadMoreLinks"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import { buildFaqPageSchema } from "@/lib/seo"
@@ -158,10 +159,11 @@ const EN_COPY = {
   description: EN_METADATA.description ?? "",
 }
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
 
-export default function ContactPage({ locale }: PageProps) {
-  const normalizedLocale = normalizeLocale(locale)
+export default async function ContactPage({ searchParams }: PageProps) {
+  const params = await searchParams
+  const normalizedLocale = normalizeLocale(params?.lang)
   const isEn = normalizedLocale === "en"
   const copy = isEn ? EN_COPY : NL_COPY
   const localize = (href: string) => localizeHref(href, normalizedLocale)
@@ -189,9 +191,18 @@ export default function ContactPage({ locale }: PageProps) {
     : [
         { label: "Google documentatie over structured data", url: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" },
         { label: "Prusa materiaalgids (PLA, PETG, TPU)", url: "https://help.prusa3d.com/filament-material-guide" },
-        { label: "ISO/ASTM terminologie voor additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
-      ]
+      { label: "ISO/ASTM terminologie voor additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
+    ]
   const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"
+  const readMoreCopy = isEn
+    ? {
+        title: "Continue planning your 3D print project",
+        intro: "Jump to services, materials or pricing before you submit your quote.",
+      }
+    : {
+        title: "Verder plannen voor je 3D print project",
+        intro: "Ga door naar services, materialen of pricing voor je je offerte verstuurt.",
+      }
 
   const contactJsonLd = {
     "@context": "https://schema.org",
@@ -201,9 +212,10 @@ export default function ContactPage({ locale }: PageProps) {
   }
 
   const faqJsonLd = buildFaqPageSchema({
-  inLanguage: isEn ? "en-BE" : "nl-BE",
-  items: copy.faq,
-})
+    inLanguage: isEn ? "en-BE" : "nl-BE",
+    mainEntityOfPage: copy.jsonLdUrl,
+    items: copy.faq,
+  })
 
   const quickStartItems = isEn
     ? [
@@ -354,6 +366,12 @@ export default function ContactPage({ locale }: PageProps) {
             </Reveal>
           </div>
 
+          <ReadMoreLinks
+            pageType="contact"
+            title={readMoreCopy.title}
+            intro={readMoreCopy.intro}
+          />
+
           <div id="contact-sources" className="scroll-mt-28 mt-8">
             <Reveal>
               <GlassCard className="p-6 sm:p-8">
@@ -379,4 +397,5 @@ export default function ContactPage({ locale }: PageProps) {
     </main>
   )
 }
+
 

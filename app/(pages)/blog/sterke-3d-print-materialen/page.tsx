@@ -1,12 +1,13 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/sterke-3d-print-materialen/"
 const datePublished = "2026-02-08"
@@ -39,14 +40,6 @@ export const metadata: Metadata = {
     images: ["/Logo.webp"],
   },
 }
-
-const tocItems = [
-  { id: "materiaal-criteria", label: "Welke criteria bepalen sterkte?" },
-  { id: "materiaal-matrix", label: "Vergelijkingstabel voor sterke prints" },
-  { id: "materiaal-scenarios", label: "Scenario's voor functionele onderdelen" },
-  { id: "materiaal-faq", label: "FAQ over sterke 3D prints" },
-  { id: "materiaal-sources", label: "Bronnen en referenties" },
-]
 
 const criteriaCards = [
   {
@@ -258,8 +251,9 @@ export default function BlogStrongMaterialsPage() {
               Upload je model
             </Link>
           </div>
-          <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
         </header>
+
+      <BlogContentOverview locale="nl" />
 
         <section id="materiaal-criteria" className="scroll-mt-28">
           <Reveal>
@@ -364,7 +358,7 @@ export default function BlogStrongMaterialsPage() {
         <section id="materiaal-sources" className="scroll-mt-28">
           <Reveal>
             <GlassCard className="p-6 sm:p-8">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -411,6 +405,7 @@ export default function BlogStrongMaterialsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
     </main>
   )
 }

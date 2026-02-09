@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
@@ -7,9 +7,9 @@ import Faq from "@/components/Faq"
 import { buildFaqPageSchema } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "Valentine 3D prints on demand | X3DPrints",
+  title: "Valentine 2026 3D prints on demand | X3DPrints",
   description:
-    "Heart decor, nameplates and personalised gifts in Silk, Matte and Translucent PLA. Design file not included; send STL/STEP or choose our design service.",
+    "Heart decor, nameplates and personalised gifts for Valentine 2026 in Silk, Matte and Translucent PLA. Design file not included; send STL/STEP or choose our design service.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/valentijn-3d-printen/",
     languages: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Valentine 3D prints on demand",
+    title: "Valentine 2026 3D prints on demand",
     description:
-      "Valentine gifts with gloss or glow. Silk/Matte/Translucent PLA, LED cut-outs and delivery options in Flanders.",
+      "Valentine 2026 gifts with gloss or glow. Silk/Matte/Translucent PLA, LED cut-outs and delivery options in Flanders.",
     url: "https://www.x3dprints.be/en/valentijn-3d-printen/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "en_BE",
@@ -41,7 +41,7 @@ const workflow = [
   "Send STL/STEP or choose design service (EUR 45/hour).",
   "Pick material: Silk/Marble for gloss, Matte for soft look, Translucent for light.",
   "Note finish (raw, lightly sanded, primed) and delivery option (EV zone or parcel).",
-  "We plan together toward 14 February without overpromising.",
+  "We plan together toward 14 February 2026 without overpromising.",
 ]
 
 const faqItems = [
@@ -76,12 +76,12 @@ export default function ValentinesLandingPage() {
       <section className="px-6 pb-16 pt-14 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Seasonal</p>
-          <h1 className="mt-3 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">Valentine 3D prints on demand</h1>
+          <h1 className="mt-3 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">Valentine 2026 3D prints on demand</h1>
           <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-            Heart decor, nameplates and personalised gifts in Silk, Matte and Translucent PLA. Design not included; send STL/STEP or choose design service at EUR 45/hour. Delivery via EV zones or parcel service.
+            Heart decor, nameplates and personalised gifts for Valentine 2026 in Silk, Matte and Translucent PLA. Design not included; send STL/STEP or choose design service at EUR 45/hour. Delivery via EV zones or parcel service.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <ShimmerButton href="/en/contact?material=pla-silk">Plan your Valentine print</ShimmerButton>
+            <ShimmerButton href="/en/contact?material=pla-silk">Plan your Valentine 2026 print</ShimmerButton>
             <Link
               href="/en/segments/3d-printing-valentijn"
               className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -131,7 +131,7 @@ export default function ValentinesLandingPage() {
           </GlassCard>
 
           <GlassCard className="p-6">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900">Workflow toward 14 February</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900">Workflow toward 14 February 2026</h2>
             <ol className="mt-3 space-y-2 text-sm text-slate-700">
               {workflow.map((step, idx) => (
                 <li key={step} className="flex gap-2">
@@ -240,6 +240,8 @@ export default function ValentinesLandingPage() {
     </main>
   )
 }
+
+
 
 
 

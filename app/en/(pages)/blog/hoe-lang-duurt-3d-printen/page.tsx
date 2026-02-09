@@ -1,14 +1,19 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ_EN } from "@/content/blog-faq-en"
 
 const canonical = "https://www.x3dprints.be/en/blog/hoe-lang-duurt-3d-printen/"
 const datePublished = "2024-09-15"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ_EN["hoe-lang-duurt-3d-printen"]
 const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
@@ -69,20 +74,6 @@ const rushTips = [
   "Tell us which parts are critical. We can prioritise those and ship the rest later.",
 ]
 
-const faq = [
-  {
-    q: "Can you deliver within 24 hours?",
-    a: "Yes for small parts in standard PLA. We plan a rush slot and you pick up in Herzele or we deliver at a surcharge.",
-  },
-  {
-    q: "What slows a project down the most?",
-    a: "Missing context (tolerances/finishing), special materials that must be ordered, or extensive finishing such as primer and paint.",
-  },
-  {
-    q: "Can I estimate print time myself?",
-    a: "Use the Small/Medium/Large guide prices on the pricing page. For exact timing we need your STL to generate slicer data.",
-  },
-]
 
 const references = [
   {
@@ -159,6 +150,8 @@ export default function BlogLeadTimesEnPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="en" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
           {factors.map((factor) => (
@@ -214,7 +207,7 @@ export default function BlogLeadTimesEnPage() {
             <GlassCard className="p-6">
               <h2 className="text-xl font-semibold text-slate-900">Frequently asked questions</h2>
               <div className="mt-4 space-y-4 text-sm text-slate-600">
-                {faq.map((item) => (
+                {faq.items.map((item) => (
                   <div key={item.q}>
                     <h3 className="text-base font-semibold text-slate-900">{item.q}</h3>
                     <p className="mt-1">{item.a}</p>
@@ -247,7 +240,7 @@ export default function BlogLeadTimesEnPage() {
       </section>
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <h2 id="sources" className="text-2xl font-semibold text-slate-900">Sources and references</h2>
           <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
           <ul className="mt-4 space-y-3 text-sm text-slate-700">
             {references.map((ref) => (
@@ -262,11 +255,17 @@ export default function BlogLeadTimesEnPage() {
         </div>
       </section>
 
+      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="en" />
+
       <BlogReadMore />
     </main>
   )
 }
+
 
 
 

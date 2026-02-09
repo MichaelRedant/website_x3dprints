@@ -4,12 +4,16 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-events/"
 const publishedDate = "2025-12-30T08:00:00+01:00"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ["use-case-dinsdag-events"]
 
 export const metadata: Metadata = {
   title: "Use Case Dinsdag #6: 3D printen voor evenementen, expo & beurzen",
@@ -166,18 +170,6 @@ const ctaLinks = [
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
-const tocItems = [
-  { id: "events-use-cases", label: "Use-cases" },
-  { id: "events-materials", label: "Materialenmatrix" },
-  { id: "events-heat", label: "Warmte en vervorming" },
-  { id: "events-design", label: "Designprincipes" },
-  { id: "events-popular", label: "Populaire prints" },
-  { id: "events-avoid", label: "Wat we niet doen" },
-  { id: "events-cost", label: "Kost en timing" },
-  { id: "events-when", label: "Wanneer 3D printen" },
-  { id: "events-sources", label: "Bronnen en referenties" },
-]
-
 const references = [
   { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
   { label: "Prusa: Material guide (PLA, PETG, TPU)", href: "https://help.prusa3d.com/filament-material-guide" },
@@ -240,7 +232,6 @@ export default function UseCaseDinsdagEventsPage() {
               Daarom gebruiken eventbureaus en standbouwers steeds vaker FDM-printen voor visuele statements en slimme montages.
             </p>
             <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=use-case-events">Vraag event-advies</ShimmerButton>
               <Link
@@ -270,6 +261,8 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <SectionDivider />
 
       <section id="events-use-cases" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
@@ -284,6 +277,8 @@ export default function UseCaseDinsdagEventsPage() {
           ))}
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="events-materials" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
@@ -344,6 +339,8 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="events-heat" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -369,6 +366,8 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="events-design" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -386,6 +385,8 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="events-popular" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           {popularPrints.map((item) => (
@@ -398,6 +399,8 @@ export default function UseCaseDinsdagEventsPage() {
           ))}
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="events-avoid" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
@@ -423,6 +426,8 @@ export default function UseCaseDinsdagEventsPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="events-cost" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
@@ -466,6 +471,8 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="events-when" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -481,11 +488,13 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="events-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-600">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -506,6 +515,8 @@ export default function UseCaseDinsdagEventsPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
@@ -539,7 +550,14 @@ export default function UseCaseDinsdagEventsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
+      <BlogFaq title={faq.title} items={faq.items} />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>

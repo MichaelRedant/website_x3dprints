@@ -1,26 +1,27 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-vaderdag-moederdag/"
 const datePublished = "2025-03-15"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 
 export const metadata: Metadata = {
-  title: "Vaderdag & Moederdag 3D printen | X3DPrints Blog",
+  title: "3D printen voor Vaderdag & Moederdag 2026 | X3DPrints Blog",
   description:
-    "Gepersonaliseerde sleutelhangers, desk items en naamcadeaus in Silk/Matte/PETG. Tips voor leesbaarheid, afrondingen en levering (mei-juni).",
+    "Gepersonaliseerde sleutelhangers, desk items en naamcadeaus in Silk/Matte/PETG. Tips voor leesbaarheid, afrondingen en levering (mei-juni 2026).",
   alternates: { canonical },
   openGraph: {
-    title: "Vaderdag & Moederdag 3D printen",
+    title: "3D printen voor Vaderdag & Moederdag 2026",
     description:
-      "Custom gifts met naam/initialen, afgeronde randen en antislipvoetjes. Materiaalkeuzes en leveringtips voor Vaderdag/Moederdag.",
+      "Custom gifts voor 2026 met naam/initialen, afgeronde randen en antislipvoetjes. Materiaalkeuzes en leveringtips voor Vaderdag/Moederdag.",
   url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Vaderdag Moederdag 3D prints" }],
     locale: "nl_BE",
@@ -28,8 +29,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vaderdag & Moederdag 3D printen",
-    description: "Gepersonaliseerde gifts in Silk/Matte/PETG met afgeronde randen en snelle levering.",
+    title: "3D printen voor Vaderdag & Moederdag 2026",
+    description: "Gepersonaliseerde 2026 gifts in Silk/Matte/PETG met afgeronde randen en snelle levering.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -46,7 +47,7 @@ const checklist = [
   "Type gift: sleutelhanger, desk organizer, naamplaat of klein decor.",
   "Materiaal: Silk/Matte PLA voor look; PETG voor sterkte; TPU voor grip.",
   "Afwerking: raw of licht geschuurd; primer optioneel als je wil schilderen.",
-  "Deadline: Vaderdag/Moederdag (mei–juni) + leveroptie (EV-zone of pakketdienst).",
+  "Deadline: Vaderdag/Moederdag (mei–juni 2026) + leveroptie (EV-zone of pakketdienst).",
   "Bestand: STL/STEP. Ontwerp nodig? Ontwerpservice EUR 45/uur.",
 ]
 
@@ -57,14 +58,7 @@ const materialRows = [
   { material: "TPU", use: "Antislip pads", note: "Flexibel, extra grip" },
 ]
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
-
-const tocItems = [
-  { id: "ouders-materials", label: "Materialen & checklist" },
-  { id: "ouders-examples", label: "Voorbeelden" },
-  { id: "ouders-faq", label: "FAQ" },
-  { id: "ouders-sources", label: "Bronnen en referenties" },
-]
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
 
 const references = [
   { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
@@ -82,7 +76,7 @@ const faqItems = [
     a: "Silk PLA voor glans, Matte PLA voor zachte feel, PETG voor sterke sleutelhangers of desk items. TPU voor antislipvoetjes.",
   },
   {
-    q: "Hoe snel leveren jullie in mei/juni?",
+    q: "Hoe snel leveren jullie in mei/juni 2026?",
     a: "Meestal binnen enkele werkdagen, afhankelijk van oplage. Meld je datum; we plannen realistisch zonder overpromise.",
   },
   {
@@ -102,7 +96,7 @@ const inspirationImages = [
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
-  headline: "Vaderdag & Moederdag 3D printen",
+  headline: "3D printen voor Vaderdag & Moederdag 2026",
   description: metadata.description ?? "",
   datePublished,
   dateModified,
@@ -126,16 +120,15 @@ export default function BlogParentsDay() {
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-rose-700">Seasonal</p>
             <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              3D printen voor Vaderdag & Moederdag
+              3D printen voor Vaderdag & Moederdag 2026
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Gepersonaliseerde sleutelhangers, desk items en naamcadeaus in Silk, Matte of PETG. Ontwerpbestand niet inbegrepen;
-              lever STL/STEP of kies ontwerpservice (EUR 45/uur). Planning richting mei–juni zonder overpromise.
+              lever STL/STEP of kies ontwerpservice (EUR 45/uur). Planning richting mei–juni 2026 zonder overpromise.
             </p>
             <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact?material=pla-silk">Plan je gift run</ShimmerButton>
+              <ShimmerButton href="/contact?material=pla-silk">Plan je gift run 2026</ShimmerButton>
               <Link
                 href="/segments/3d-printing-vaderdag-moederdag"
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -152,6 +145,8 @@ export default function BlogParentsDay() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="ouders-materials" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
@@ -229,6 +224,8 @@ export default function BlogParentsDay() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="ouders-examples" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -260,6 +257,8 @@ export default function BlogParentsDay() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="ouders-faq" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -285,11 +284,13 @@ export default function BlogParentsDay() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="ouders-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -311,13 +312,20 @@ export default function BlogParentsDay() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>
   )
 }
+
+
+
 
 
 

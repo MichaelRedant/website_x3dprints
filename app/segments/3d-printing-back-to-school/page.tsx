@@ -16,9 +16,9 @@ import {
 } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "Back to School 3D printing | X3DPrints",
+  title: "Back to School 2026 3D printing | X3DPrints",
   description:
-    "Back-to-school prints voor scholen en ouders: naamplaatjes, organizers en educatieve modellen met snelle lokale opvolging.",
+    "Back-to-school prints voor scholen en ouders: naamplaatjes, organizers en educatieve modellen met snelle lokale opvolging voor augustus–september 2026.",
   alternates: {
     canonical: "https://www.x3dprints.be/segments/3d-printing-back-to-school/",
     languages: {
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Back to School 3D printing",
+    title: "Back to School 2026 3D printing",
     description:
-      "Naamplaatjes, pennenhouders en klasprojecten met materiaaladvies en duidelijke planning.",
+      "Naamplaatjes, pennenhouders en klasprojecten voor 2026 met materiaaladvies en duidelijke planning.",
     url: "https://www.x3dprints.be/segments/3d-printing-back-to-school/",
     images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Back to School 3D printing" }],
     locale: "nl_BE",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Back to School 3D printing",
+    title: "Back to School 2026 3D printing",
     description:
-      "Back-to-school prints met snelle lokale productie en heldere communicatie.",
+      "Back-to-school prints voor 2026 met snelle lokale productie en heldere communicatie.",
     images: ["/Logo.webp"],
   },
 }
@@ -49,7 +49,7 @@ const pageUrl = String(
   metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-back-to-school/`,
 )
 const pageDescription = metadata.description ?? SITE.description
-const lastUpdatedLabel = "Laatst bijgewerkt: 7 februari 2026"
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
 
 const tocItems = [
   { id: "segment-overview", label: "Wat levert deze schoolroute op?" },
@@ -103,7 +103,7 @@ const faqItems = [
     a: "Vaak starten we met PLA Matte voor visuals en PETG voor stevigere onderdelen. TPU gebruiken we vooral voor gripdelen.",
   },
   {
-    q: "Hoe vroeg plannen we best voor september?",
+    q: "Hoe vroeg plannen we best voor september 2026?",
     a: "Idealiter enkele weken op voorhand, zodat materiaalkeuze en eventuele herprints zonder stress kunnen gebeuren.",
   },
 ]
@@ -199,10 +199,10 @@ export default function BackToSchoolSegmentPage() {
           <header className="text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Segment</p>
             <h1 className="mt-3 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              Back to School 3D printing
+              Back to School 2026 3D printing
             </h1>
             <p className="mt-4 text-base text-slate-600">
-              Voor naamplaatjes, pennenhouders en klasprojecten met snelle productie en duidelijke communicatie.
+              Voor naamplaatjes, pennenhouders en klasprojecten met snelle productie en duidelijke communicatie richting augustus-september 2026.
             </p>
             <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -210,7 +210,7 @@ export default function BackToSchoolSegmentPage() {
                 href="/contact?material=pla-matte&quote=Back-to-school%20prints%20voor%20klasprojecten"
                 event={{ action: "cta_click", category: "segments_back_to_school", label: "contact_prefill" }}
               >
-                Start schoolaanvraag
+                Start schoolaanvraag 2026
               </ShimmerButton>
               <ShimmerButton
                 href="/materials#material-suggestion-tool"
@@ -366,3 +366,5 @@ export default function BackToSchoolSegmentPage() {
     </main>
   )
 }
+
+

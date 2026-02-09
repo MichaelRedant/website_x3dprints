@@ -478,10 +478,11 @@ const organizationSchema = {
   },
 }
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
 
-export default function Page({ locale }: PageProps) {
-  const normalizedLocale = normalizeLocale(locale)
+export default async function Page({ searchParams }: PageProps) {
+  const params = await searchParams
+  const normalizedLocale = normalizeLocale(params?.lang)
   const copy = normalizedLocale === "en" ? PORTFOLIO_COPY_EN : PORTFOLIO_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
   const isEn = normalizedLocale === "en"
@@ -838,3 +839,4 @@ export default function Page({ locale }: PageProps) {
     </main>
   )
 }
+

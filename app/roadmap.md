@@ -1,77 +1,71 @@
-SEO Roadmap ? Sitewide Content Audit (excl. locaties)
+SEO Roadmap - Sitewide Audit & Reset (excl. locaties)
 
-Datum: 2026-02-08
-Doel: Maximale organische vindbaarheid en conversie, met focus op contentkwaliteit, topical authority en duidelijke intent-routing.
-Scope: Alle pagina?s behalve locatiepagina?s en lokale slugs.
-Methodiek: Content-audit (GEO-structuur), interne linkflow, schema-coverage, snippetkwaliteit, en hygiene (encoding + canonicals).
+Datum: 2026-02-09
+Scope: Alle pagina's behalve locatiepagina's en lokale slugs.
+Methodiek: Code-scan van metadata, schema, content-structuur, interne links, robots/sitemap. Geen build of runtime checks uitgevoerd op dit apparaat.
+
+Kernstats (code-scan)
+- Blogposts totaal: 116 (NL 62, EN 54).
+- Blogposts met Article JSON-LD in pagina of gedeeld content-bestand: 116/116.
+- Blogposts met FAQ JSON-LD via `buildFaqPageSchema` of `BlogFaq`: 112/116 (uitzonderingen = index/wrappers).
+- Blogposts met "Laatst bijgewerkt"/"Last updated": 112/116 (uitzonderingen = index/wrappers).
+- Blogposts met bronnen-sectie (`<cite>`): NL 60/62, EN 5/54.
+- Blogposts met tabel (`<table>`): NL 55/62, EN 16/54.
+- Segmentpagina's (NL): 11/11 met FAQ schema + bronnen.
+- Bilingual parity: 8 NL high‑intent posts zonder EN equivalent.
 
 Executive summary
-- Het fundament is sterk: money pages en recente gidsen zijn consistent, maar de long-tail bloglaag is nog niet uniform (TOC, bronnen, ?last updated?).
-- De grootste SEO-winst zit in contenthygi?ne en bewijsvoering: consistente datums, bronnen, tabellen en betere topical clusters.
-- Canonical + sitemap trailing slash inconsistenties en mojibake vormen onnodige kwaliteitsrisico?s.
+- Technische basis staat goed: metadata aanwezig op vrijwel alle routes, sitemap/robots consistent, money pages hebben schema coverage en bronnen.
+- Grootste SEO-winst zit in content-pariteit en GEO-structuur voor EN content (bronnen + tabellen) en in schema-governance (inline vs helpers).
+- Interne linkflow is sterk op money pages, maar kan consistenter door ReadMoreLinks ook op blogposts te gebruiken.
 
-Audit ? kernbevindingen (sitewide content)
-1) GEO-structuur & scanbaarheid
-- Nieuwe posts voldoen vaak aan TOC/table/last updated, maar veel oudere posts missen 1 of meerdere GEO-elementen.
+Audit - kernbevindingen
+1) Crawl & indexatie
+- `app/robots.ts` en `app/sitemap.ts` zijn aanwezig en consistent met alternates + lastModified.
+- `/crm` is uitgesloten van indexing via robots + noindex layout. OK.
+- Geen build/run validations uitgevoerd; status van `npm run check:seo` onbekend op dit apparaat.
 
-2) E-E-A-T en bewijsvoering
-- Bronnen en referenties zijn niet consistent. Dit verzwakt trust en rijke snippets, vooral op high-intent queries.
+2) Metadata & alternates
+- Alle blogposts hebben metadata; dynamische routes gebruiken `generateMetadata`.
+- Core money pages hebben metadata + OG.
+- Volledige hreflang/alternate coverage niet geverifieerd via scripts.
 
-3) Internal link architecture
-- De flow van blog ? materials/pricing/contact is goed; segment ? blog/portfolio blijft te dun.
+3) Schema coverage & governance
+- Money pages (services/pricing/materials/portfolio/contact/segments) gebruiken helper-gebaseerde schema’s.
+- Inline schema objecten bestaan nog in o.a. `app/layout.tsx`, `app/(pages)/portfolio/page.tsx` en `app/(pages)/blog/BlogPage.tsx`.
+- `BlogFaq` gebruikt helpers, maar zet geen `mainEntityOfPage` (kan consistentie verbeteren).
 
-4) Snippetkwaliteit
-- OG/metadata is deels generiek op oudere posts. Kans op CTR-uplift met onderscheidende headlines en visuals.
+4) Content-structuur (GEO)
+- NL longform posts zijn grotendeels compliant (TOC/H2-anchors, tabellen, bronnen, last-updated).
+- EN content mist vaak bronnen en tabellen (bronnen: 5/54, tabellen: 16/54).
+- Dit verlaagt topical authority en kan rich result kansen beperken op EN slugs.
 
-5) Contenthygi?ne
-- Mojibake/encoding en inconsistent trailing slash beleid geven kwaliteits- en duplicate-signal risico?s.
+5) Interne linkflow
+- ReadMoreLinks staat op money pages en segment detailpages.
+- Veel blogposts hebben geen ReadMoreLinks of centrale mapping (opportunity voor consistent interne link-mesh).
 
-P0 ? Directe SEO-impact (0?2 weken)
-- Contenthygi?ne: ?last updated? + dateModified op top-15 high-intent posts (kosten, materiaalkeuze, design, settings, warping, snapfits).
-- GEO-structuur afdwingen: TOC + 1 tabel + bronnen op alle long-form posts in de top 15.
-- Bronnen upgraden naar primaire, niet-concurrerende referenties (Autodesk, Ultimaker, Prusa, ISO/ASTM, Covestro, Bambu).
-- Canonical/sitemap trailing slash consistent houden (sitewide).
-- Encoding cleanup (mojibake) volledig wegwerken.
+6) Bilingual parity
+- 8 NL high-intent gidsen hebben geen EN variant (o.a. kosten- en materiaalclusters).
+- Twee EN slugs hebben enkel een andere slugnaam t.o.v. NL (Gridfinity/Tool organizers) maar zijn inhoudelijk wél vertaald.
 
-P1 ? Topical authority & conversie (2?6 weken)
-- Cluster-uitbreiding: ?Pricing?, ?Materials? en ?Design/Engineering? met 2?3 nieuwe posts per cluster.
-- Segmentpagina?s versterken met 2 extra interne links naar blog + 1 portfolio proof item.
-- Consistente author/byline + ?over de maker? snippet op alle blogposts.
-- OG/metadata refresh voor top-10 landings (CTR uplift).
+Roadmap (reset)
+P0 - Maximaal SEO effect (0-2 weken)
+- EN blogposts upgraden naar GEO-structuur: voeg bronnen-sectie met `<cite>` en minstens 1 tabel toe op alle EN longform posts zonder deze elementen.
+- BlogFAQ schema consistent maken door `mainEntityOfPage` door te geven (via `BlogFaq` props) op alle posts met FAQ.
+- Run `npm run check:seo` op een zwaardere machine en registreer issues (metadata, schema, links, locale parity).
 
-P2 ? Governance & schaal (6?12 weken)
-- Evergreen refresh cadence: elk kwartaal top-20 posts + nieuwe datumstempel + extra bronnen.
-- Seizoenscontent actualiseren met jaartal en recente CTA?s.
-- Publicatiecadans: 2 posts/maand (1 how-to, 1 use-case) gericht op B2B-segmenten.
+P1 - Governance & schaal (2-6 weken)
+- Verplaats inline schema’s naar helper-fabrieken:
+  - Blog index ItemList/Blog schema → nieuwe helper in `lib/seo.ts`.
+  - Portfolio ImageObject/VideoObject → helper(s) of uitbreiden bestaande helpers.
+  - LocalBusiness in `app/layout.tsx` → `buildLocalBusinessSchema` uitbreiden met geo/hasMap om inline te vermijden.
+- ReadMoreLinks standaardiseren op alle blogposts (pageType = "blog") voor consistente interne linkflow.
 
-KPI?s (90 dagen)
-- +20?30% organische clicks op top 6 money pages.
-- +10?20% CTR uplift door betere snippets en bronsecties.
-- +15% groei in CTA-clicks naar /contact en /pricing vanuit blog.
-- +10% dwell-time op posts met nieuwe TOC + tabellen.
+P2 - Groei & content (6-12 weken)
+- Vertaal 8 NL high‑intent gidsen naar EN en voeg canonical + alternates.
+- Voeg kwartale refresh planning toe voor top-20 blogposts (nieuwe bronnen, interne links, CTA updates).
+- Maak 3 nieuwe “pillar” artikelen (pricing/materials/design) met extra FAQ + HowTo schema en link naar segmenten.
 
-Deliverables per sprint
-Sprint 1 (2 weken)
-- P0 contenthygi?ne: top-15 posts ?last updated?, TOC, tabel, bronnen.
-- Canonical + sitemap trailing slash gefixt sitewide.
-- Encoding cleanup afgerond.
-
-Sprint 2 (2?4 weken)
-- 2 nieuwe clusterposts (Pricing + Materials).
-- Segment ? blog/portfolio linkflow versterken.
-
-Sprint 3 (4?8 weken)
-- Author/byline + About snippet op alle blogposts.
-- OG/metadata refresh top-10.
-
-Sprint 4 (8?12 weken)
-- Evergreen refresh cycle live (eerste 10 posts).
-- Seasonal content geactualiseerd.
-
-Status
-- P0 grotendeels afgerond: encoding cleanup, canonicals en GEO-structuur op key posts (build groen).
-- P1 cluster-uitbreiding gestart en geleverd:
-  - Pricing: 3d-print-offerte-aanvragen, 3d-print-prijs-per-stuk, 3d-print-kosten-besparen.
-  - Materials: sterke-3d-print-materialen, 3d-print-materiaal-voor-zichtwerk, hittebestendig-3d-print-materiaal.
-  - Design/Engineering: 3d-print-ontwerp-checklist, 3d-print-assemblage-gids.
-- P1 afgerond: segment linkflow versterkt (ReadMoreLinks + portfolio + 2 bloglinks), author/byline + over-de-maker snippet op blogs, OG/metadata refresh top-10 landings.
+Openstaande assumpties
+- Geen build of Lighthouse checks uitgevoerd op dit apparaat.
+- Audit gebaseerd op code-scan (geen runtime of SERP-data).

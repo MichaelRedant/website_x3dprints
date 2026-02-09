@@ -4,12 +4,16 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/maker-monday-fdm-scharnieren/"
 const publishedDate = "2025-12-08T08:00:00+01:00"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ["maker-monday-fdm-scharnieren"]
 
 export const metadata: Metadata = {
   title: "Maker Monday #1: FDM scharnieren ontwerpen die echt werken | X3DPrints",
@@ -147,19 +151,6 @@ const finishingTips = [
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
-const tocItems = [
-  { id: "hinge-material", label: "Materiaalkeuze" },
-  { id: "hinge-orientation", label: "Oriëntatie" },
-  { id: "hinge-walls", label: "Wanddiktes" },
-  { id: "hinge-pins", label: "Pin-diameters en tolerantie" },
-  { id: "hinge-reinforcement", label: "Ribs en fillets" },
-  { id: "hinge-splitting", label: "Slim splitsen" },
-  { id: "hinge-warping", label: "Warping voorkomen" },
-  { id: "hinge-finishing", label: "Nabewerking" },
-  { id: "hinge-when", label: "Wanneer X3DPrints helpt" },
-  { id: "hinge-sources", label: "Bronnen en referenties" },
-]
-
 const references = [
   {
     label: "Ultimaker: Design for FFF 3D printing",
@@ -232,7 +223,6 @@ export default function MakerMondayFdmScharnierenPage() {
               na cycle.
             </p>
             <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=maker-monday-hinges">Plan scharnieradvies</ShimmerButton>
               <Link
@@ -263,6 +253,8 @@ export default function MakerMondayFdmScharnierenPage() {
           </div>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <SectionDivider />
 
@@ -328,6 +320,8 @@ export default function MakerMondayFdmScharnierenPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
@@ -398,6 +392,8 @@ export default function MakerMondayFdmScharnierenPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
@@ -443,6 +439,8 @@ export default function MakerMondayFdmScharnierenPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
@@ -497,6 +495,8 @@ export default function MakerMondayFdmScharnierenPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -536,11 +536,13 @@ export default function MakerMondayFdmScharnierenPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="hinge-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-600">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -561,6 +563,8 @@ export default function MakerMondayFdmScharnierenPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
@@ -589,7 +593,14 @@ export default function MakerMondayFdmScharnierenPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
+      <BlogFaq title={faq.title} items={faq.items} />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>

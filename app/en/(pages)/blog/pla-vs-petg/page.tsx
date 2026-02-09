@@ -7,6 +7,7 @@ import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
 
 const canonical = "https://www.x3dprints.be/en/blog/pla-vs-petg/"
 const nlCanonical = "https://www.x3dprints.be/blog/pla-vs-petg/"
@@ -327,7 +328,7 @@ export default function BlogPlaVsPetgEnPage() {
         <section id="material-sources" className="scroll-mt-28">
           <Reveal>
             <GlassCard className="p-6 sm:p-8">
-              <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Sources and references</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -348,6 +349,9 @@ export default function BlogPlaVsPetgEnPage() {
           </Reveal>
         </section>
       </article>
+
+      <BlogAuthorNote locale="en" />
+
 
       <BlogReadMore />
 

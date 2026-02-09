@@ -4,25 +4,15 @@ import Image from "next/image"
 import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
 import Faq from "@/components/Faq"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/gridfinity-modulair-opslagsysteem/"
 const publishedDate = "2026-01-30T08:00:00+01:00"
 const dateModified = "2026-02-08T08:00:00+01:00"
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
-
-const tocItems = [
-  { id: "grid-what", label: "Wat is Gridfinity?" },
-  { id: "grid-why", label: "Waarom zo populair?" },
-  { id: "grid-specs", label: "Gridfinity in cijfers" },
-  { id: "grid-core", label: "Technische kern" },
-  { id: "grid-use", label: "Toepassingen" },
-  { id: "grid-challenges", label: "Uitdagingen & oplossingen" },
-  { id: "grid-why-us", label: "Waarom X3DPrints?" },
-  { id: "grid-sources", label: "Bronnen en referenties" },
-]
 
 const references = [
   { label: "Gridfinity specification (GitHub)", href: "https://github.com/gridfinity-unofficial/specification" },
@@ -123,7 +113,6 @@ export default function GridfinityBlogNl() {
             Waarom het 42×42×7‑mm raster zoveel fans heeft en hoe X3DPrints custom bins, starterkits en Packout-inlays ontwerpt zodat jij orde en
             tijdswinst koopt – niet plastic.
           </p>
-          <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
           <div className="flex flex-wrap gap-3 text-sm text-slate-600">
             <span>{lastUpdatedLabel}</span>
             <span className="inline-flex items-center gap-1 rounded-full bg-cyan-50 px-2 py-1 text-xs font-semibold text-cyan-700 ring-1 ring-cyan-100">
@@ -131,6 +120,8 @@ export default function GridfinityBlogNl() {
             </span>
           </div>
         </header>
+
+      <BlogContentOverview locale="nl" />
 
         <section id="grid-what" className="scroll-mt-28 space-y-3 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Wat is Gridfinity?</h2>
@@ -364,7 +355,7 @@ export default function GridfinityBlogNl() {
 
           <div id="grid-sources" className="scroll-mt-28 mt-8">
             <GlassCard className="space-y-4 p-6">
-              <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-xl font-semibold text-slate-900 dark:text-white">Bronnen en referenties</h2>
               <ul className="space-y-2 text-sm text-slate-700 dark:text-slate-200">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0B0F1A]/80">
@@ -392,6 +383,7 @@ export default function GridfinityBlogNl() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
     </main>
   )
 }

@@ -1,12 +1,13 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
+import BlogContentOverview from "@/components/BlogContentOverview"
 import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
 
 const canonical = "https://www.x3dprints.be/en/blog/ontwerp-3d-printbaar-model/"
 const nlCanonical = "https://www.x3dprints.be/blog/ontwerp-3d-printbaar-model/"
@@ -46,14 +47,6 @@ export const metadata: Metadata = {
     images: ["/Logo.webp"],
   },
 }
-
-const tocItems = [
-  { id: "design-basics", label: "Which design rules should you check first?" },
-  { id: "design-export", label: "How do you make your model print-ready?" },
-  { id: "design-material", label: "Which choices change per material?" },
-  { id: "design-faq", label: "FAQ about printable design" },
-  { id: "design-sources", label: "Sources and references" },
-]
 
 const fundamentals = [
   {
@@ -232,8 +225,9 @@ export default function DesignArticleEnPage() {
               Review pricing anchors
             </Link>
           </div>
-          <ContentTableOfContents title="Contents" items={tocItems} className="max-w-2xl" />
         </header>
+
+      <BlogContentOverview locale="en" />
 
         <section id="design-basics" className="scroll-mt-28">
           <Reveal>
@@ -333,7 +327,7 @@ export default function DesignArticleEnPage() {
         <section id="design-sources" className="scroll-mt-28">
           <Reveal>
             <GlassCard className="p-6 sm:p-8">
-              <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Sources and references</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -354,6 +348,9 @@ export default function DesignArticleEnPage() {
           </Reveal>
         </section>
       </article>
+
+      <BlogAuthorNote locale="en" />
+
 
       <BlogReadMore />
 

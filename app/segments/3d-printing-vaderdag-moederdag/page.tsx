@@ -17,9 +17,9 @@ import {
 } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "Vaderdag en Moederdag 3D printing | X3DPrints",
+  title: "3D printing voor Vaderdag en Moederdag 2026 | X3DPrints",
   description:
-    "Gepersonaliseerde 3D geprinte gifts voor Vaderdag en Moederdag met snelle lokale productie en materiaaladvies.",
+    "Gepersonaliseerde 3D geprinte gifts voor Vaderdag en Moederdag 2026 met snelle lokale productie en materiaaladvies.",
   alternates: {
     canonical: "https://www.x3dprints.be/segments/3d-printing-vaderdag-moederdag/",
     languages: {
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Vaderdag en Moederdag 3D printing",
+    title: "3D printing voor Vaderdag en Moederdag 2026",
     description:
-      "Custom gifts zoals sleutelhangers, desk-items en naamdecor in PLA Silk, Matte of PETG.",
+      "Custom gifts voor 2026 zoals sleutelhangers, desk-items en naamdecor in PLA Silk, Matte of PETG.",
     url: "https://www.x3dprints.be/segments/3d-printing-vaderdag-moederdag/",
     images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Vaderdag en Moederdag 3D printing" }],
     locale: "nl_BE",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vaderdag en Moederdag 3D printing",
+    title: "3D printing voor Vaderdag en Moederdag 2026",
     description:
-      "Gepersonaliseerde gifts met snelle planning en heldere materiaalkeuze.",
+      "Gepersonaliseerde 2026 gifts met snelle planning en heldere materiaalkeuze.",
     images: ["/Logo.webp"],
   },
 }
@@ -50,7 +50,7 @@ const pageUrl = String(
   metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-vaderdag-moederdag/`,
 )
 const pageDescription = metadata.description ?? SITE.description
-const lastUpdatedLabel = "Laatst bijgewerkt: 7 februari 2026"
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
 
 const tocItems = [
   { id: "segment-overview", label: "Wat levert deze gift-route op?" },
@@ -104,7 +104,7 @@ const faqItems = [
     a: "PLA Silk voor glans, PLA Matte voor zachte look en PETG voor extra robuustheid bij gebruiksitems.",
   },
   {
-    q: "Hoe vroeg plan ik best voor mei en juni?",
+    q: "Hoe vroeg plan ik best voor mei en juni 2026?",
     a: "Idealiter enkele weken op voorhand zodat personalisatie, testprint en levering zonder tijdsdruk gebeuren.",
   },
 ]
@@ -209,10 +209,10 @@ export default function ParentsDaySegmentPage() {
           <header className="text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Segment</p>
             <h1 className="mt-3 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              Vaderdag en Moederdag 3D printing
+              3D printing voor Vaderdag en Moederdag 2026
             </h1>
             <p className="mt-4 text-base text-slate-600">
-              Voor gepersonaliseerde gifts zoals sleutelhangers, desk-items en naamdecor met snelle planning rond mei en juni.
+              Voor gepersonaliseerde gifts zoals sleutelhangers, desk-items en naamdecor met snelle planning rond mei en juni 2026.
             </p>
             <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -220,7 +220,7 @@ export default function ParentsDaySegmentPage() {
                 href="/contact?material=pla-silk&quote=Vaderdag%20en%20Moederdag%20gift%20aanvraag"
                 event={{ action: "cta_click", category: "segments_parentsday", label: "contact_prefill" }}
               >
-                Start gift-aanvraag
+                Start Vaderdag & Moederdag 2026-aanvraag
               </ShimmerButton>
               <ShimmerButton
                 href="/materials#material-suggestion-tool"
@@ -380,3 +380,5 @@ export default function ParentsDaySegmentPage() {
     </main>
   )
 }
+
+

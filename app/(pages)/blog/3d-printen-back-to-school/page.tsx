@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
@@ -6,22 +6,23 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-back-to-school/"
 const datePublished = "2025-07-15"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 
 export const metadata: Metadata = {
-  title: "Back to School: 3D printen voor school | X3DPrints Blog",
+  title: "Back to School 2026: 3D printen voor school | X3DPrints Blog",
   description:
-    "Pennenhouders, naamplaatjes, bureau organizers en STEM-modellen. Educatief 3D printen in PLA/PETG met snelle levering voor augustus–september.",
+    "Pennenhouders, naamplaatjes, bureau organizers en STEM-modellen. Educatief 3D printen in PLA/PETG met snelle levering voor augustus–september 2026.",
   alternates: { canonical },
   openGraph: {
-    title: "Back to School: 3D printen voor school",
+    title: "Back to School 2026: 3D printen voor school",
     description:
-      "Educatief 3D printen: gepersonaliseerde schoolmaterialen, pennenhouders en STEM-modellen in PLA/PETG. Materiaal- en leveringtips.",
+      "Educatief 3D printen voor 2026: gepersonaliseerde schoolmaterialen, pennenhouders en STEM-modellen in PLA/PETG. Materiaal- en leveringtips.",
   url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Back to School 3D printen" }],
     locale: "nl_BE",
@@ -29,8 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Back to School: 3D printen voor school",
-    description: "Gepersonaliseerde schoolmaterialen en STEM-modellen. PLA/PETG, matte kleuren en snelle planning.",
+    title: "Back to School 2026: 3D printen voor school",
+    description: "Gepersonaliseerde schoolmaterialen en STEM-modellen voor 2026. PLA/PETG, matte kleuren en snelle planning.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -47,7 +48,7 @@ const checklist = [
   "Toepassing: pennenhouder, naamplaatje, bureau organizer of STEM-model.",
   "Materiaal: PLA Matte (look), PETG (sterk), TPU (grip). Kleur? Geef HEX/RGB of schoolkleur.",
   "Afwerking: raw of licht geschuurd; primer optioneel als je wil schilderen.",
-  "Deadline: augustus–september (back-to-school) + leveroptie (EV-zone of pakketdienst).",
+  "Deadline: augustus–september 2026 (back-to-school) + leveroptie (EV-zone of pakketdienst).",
   "Bestand: STL/STEP. Ontwerp nodig? Ontwerpservice EUR 45/uur.",
 ]
 
@@ -57,15 +58,7 @@ const materialRows = [
   { material: "TPU", use: "Antislip pads en clips", note: "Flexibel, extra grip" },
 ]
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
-
-const tocItems = [
-  { id: "school-materials", label: "Materialen & checklist" },
-  { id: "school-examples", label: "Voorbeelden" },
-  { id: "school-video", label: "Video" },
-  { id: "school-faq", label: "FAQ" },
-  { id: "school-sources", label: "Bronnen en referenties" },
-]
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
 
 const references = [
   { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
@@ -83,7 +76,7 @@ const faqItems = [
     a: "Ja. Lever een lijst of pas STL/STEP per naam aan; wij batchen de prints zodat kleur en finish consistent zijn.",
   },
   {
-    q: "Hoe snel kunnen we leveren rond augustus–september?",
+    q: "Hoe snel kunnen we leveren rond augustus–september 2026?",
     a: "Meestal binnen enkele werkdagen. Meld je deadline; we plannen realistisch zonder vaste beloftes.",
   },
   {
@@ -113,7 +106,7 @@ const videos = [
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
-  headline: "Back to School: 3D printen voor school",
+  headline: "Back to School 2026: 3D printen voor school",
   description: metadata.description ?? "",
   datePublished,
   dateModified,
@@ -137,13 +130,12 @@ export default function BlogBackToSchool() {
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-lime-700">Seasonal</p>
             <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              Back to School 3D printen
+              Back to School 2026: 3D printen
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Pennenhouders, naamplaatjes, bureau organizers en educatieve STEM-modellen. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice (EUR 45/uur). Snelle planning voor augustus–september.
+              Pennenhouders, naamplaatjes, bureau organizers en educatieve STEM-modellen. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice (EUR 45/uur). Snelle planning voor augustus–september 2026.
             </p>
             <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <p className="mt-3 max-w-3xl text-pretty text-base text-slate-700">
               Koppel je briefing aan interne resources: bekijk{" "}
               <Link href="/segments/3d-printing-back-to-school" className="font-semibold text-lime-700 underline">
@@ -160,7 +152,7 @@ export default function BlogBackToSchool() {
               en referenties meesturen.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact?material=pla-matte">Plan schoolprints</ShimmerButton>
+              <ShimmerButton href="/contact?material=pla-matte">Plan schoolprints 2026</ShimmerButton>
               <Link
                 href="/segments/3d-printing-back-to-school"
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -177,6 +169,8 @@ export default function BlogBackToSchool() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="school-materials" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
@@ -258,6 +252,8 @@ export default function BlogBackToSchool() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="school-examples" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -289,6 +285,8 @@ export default function BlogBackToSchool() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="school-video" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -315,6 +313,8 @@ export default function BlogBackToSchool() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="school-faq" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -340,11 +340,13 @@ export default function BlogBackToSchool() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="school-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -366,13 +368,22 @@ export default function BlogBackToSchool() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>
   )
 }
+
+
+
+
+
 
 
 

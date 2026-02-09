@@ -4,12 +4,16 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/hoe-3d-print-je-onderdelen-voor-buitengebruik/"
 const publishedDate = "2025-11-21T08:00:00+01:00"
 const dateModified = "2026-02-08T08:00:00+01:00"
+const faq = BLOG_FAQ["hoe-3d-print-je-onderdelen-voor-buitengebruik"]
 
 export const metadata: Metadata = {
   title: "Hoe 3D print je onderdelen voor buitengebruik? | X3DPrints",
@@ -88,17 +92,6 @@ const scenarioMatrix = [
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
-const tocItems = [
-  { id: "outdoor-pla", label: "Waarom PLA buiten faalt" },
-  { id: "outdoor-petg", label: "PETG als standaardkeuze" },
-  { id: "outdoor-tpu", label: "TPU voor grip en demping" },
-  { id: "outdoor-hybrid", label: "Hybride constructies" },
-  { id: "outdoor-attachment", label: "Bevestigen zonder scheuren" },
-  { id: "outdoor-scenarios", label: "Materiaalkeuze per scenario" },
-  { id: "outdoor-cost", label: "Kosten en planning" },
-  { id: "outdoor-sources", label: "Bronnen en referenties" },
-]
-
 const references = [
   {
     label: "Bambu Lab: PETG filament guide",
@@ -148,7 +141,6 @@ export default function OutdoorPrintingGuidePage() {
               degradatie.
             </p>
             <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?material=PETG">Plan een outdoor print</ShimmerButton>
               <Link
@@ -171,6 +163,8 @@ export default function OutdoorPrintingGuidePage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
@@ -238,6 +232,8 @@ export default function OutdoorPrintingGuidePage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
@@ -287,6 +283,8 @@ export default function OutdoorPrintingGuidePage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -310,6 +308,8 @@ export default function OutdoorPrintingGuidePage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-3">
           {bestPractices.map((practice, index) => (
@@ -323,6 +323,8 @@ export default function OutdoorPrintingGuidePage() {
           ))}
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
@@ -366,6 +368,8 @@ export default function OutdoorPrintingGuidePage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <Reveal>
@@ -402,14 +406,16 @@ export default function OutdoorPrintingGuidePage() {
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
                 {references.map((resource) => (
                   <li key={resource.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                    <Link
-                      href={resource.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-base font-semibold text-indigo-600 transition hover:text-indigo-500"
-                    >
-                      {resource.label}
-                    </Link>
+                    <cite className="not-italic">
+                      <Link
+                        href={resource.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-base font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      >
+                        {resource.label}
+                      </Link>
+                    </cite>
                     <p className="mt-1">{resource.description}</p>
                   </li>
                 ))}
@@ -418,6 +424,8 @@ export default function OutdoorPrintingGuidePage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
@@ -442,7 +450,14 @@ export default function OutdoorPrintingGuidePage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
+      <BlogFaq title={faq.title} items={faq.items} />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>

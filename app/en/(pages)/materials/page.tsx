@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import MaterialsPage from "@/app/(pages)/materials/page"
+import { renderMaterialsPage } from "@/app/(pages)/materials/materials-page"
 
 export const metadata: Metadata = {
   title: "3D printing materials (PLA, PETG, TPU) | X3DPrints",
@@ -25,8 +25,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 }
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
-
-export default function MaterialsPageEn(props: PageProps) {
-  return <MaterialsPage {...props} locale="en" />
+export default function MaterialsPageEn() {
+  return renderMaterialsPage({ locale: "en" })
 }
+

@@ -12,17 +12,17 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: ["/", "/en/"],
-        disallow: ["/api"],
+        disallow: ["/api", "/crm"],
       },
       {
         userAgent: "GPTBot",
         allow: ["/", "/en/"],
-        disallow: ["/api"],
+        disallow: ["/api", "/crm"],
       },
       {
         userAgent: "Google-Extended",
         allow: ["/", "/en/"],
-        disallow: ["/api"],
+        disallow: ["/api", "/crm"],
       },
     ],
     sitemap: [`${BASE_URL}/sitemap.xml`],

@@ -7,17 +7,19 @@ import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-valentijn/"
 const ogImage = "https://www.x3dprints.be/images/og-home.jpg"
 const publishedDate = "2024-01-25"
-const dateModified = "2026-02-08"
-const lastUpdatedLabel = "Last updated: 8 February 2026"
+const dateModified = "2026-02-09"
+const lastUpdatedLabel = "Last updated: 9 February 2026"
 
 export const metadata: Metadata = {
-  title: "3D printing Valentine gifts | X3DPrints Blog",
+  title: "Valentine 2026: 3D printing gifts | X3DPrints Blog",
   description:
-    "Heart decor, personalised gifts and light objects in Silk, Matte and Translucent PLA. Checklist for material, LEDs and delivery options. Design file not included.",
+    "Heart decor, personalised gifts and light objects for Valentine 2026 in Silk, Matte and Translucent PLA. Checklist for material, LEDs and delivery options. Design file not included.",
   alternates: {
     canonical,
     languages: {
@@ -27,8 +29,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "3D printing Valentine gifts",
-    description: "Choose Silk/Matte/Translucent PLA for Valentine gifts, nameplates and light objects. Tips for LEDs, magnets and delivery.",
+    title: "Valentine 2026: 3D printing gifts",
+    description: "Choose Silk/Matte/Translucent PLA for Valentine 2026 gifts, nameplates and light objects. Tips for LEDs, magnets and delivery.",
     url: canonical,
     images: [{ url: ogImage, width: 1200, height: 630, alt: "3D printed Valentine decor" }],
     locale: "en_BE",
@@ -36,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printing Valentine gifts",
-    description: "Silk/Matte/Translucent PLA for hearts, nameplates and gifts. Includes delivery and material checklist.",
+    title: "Valentine 2026: 3D printing gifts",
+    description: "Silk/Matte/Translucent PLA for Valentine 2026 hearts, nameplates and gifts. Includes delivery and material checklist.",
     images: [ogImage],
   },
 }
@@ -55,7 +57,7 @@ const checklist = [
   "Material: Silk/Marble for luxe, Matte for soft look, Translucent for light.",
   "Finish: raw, lightly sanded or primed; note if you will paint.",
   "Mounting: ribbon, magnet or stand? Add holes or pin-holes.",
-  "Deadline around 14 February + delivery option (EV zone or parcel service).",
+  "Deadline around 14 February 2026 + delivery option (EV zone or parcel service).",
 ]
 
 const faqItems = [
@@ -113,7 +115,7 @@ const references = [
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
-  headline: "3D printing Valentine gifts",
+  headline: "3D printed Valentine gifts 2026",
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
@@ -154,7 +156,7 @@ export default function ValentinesBlogEnPage() {
               </ol>
             </nav>
             <h1 className="mt-6 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              3D printed Valentine gifts: materials and checklist
+              3D printed Valentine gifts 2026: materials and checklist
             </h1>
             <p className="mt-4 text-lg text-slate-700">
               Hearts, nameplates or glowing decor? Choose Silk/Marble/Matte for the right look, keep LEDs ventilated and add mounting holes for magnets or
@@ -162,7 +164,7 @@ export default function ValentinesBlogEnPage() {
             </p>
                         <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <ShimmerButton href="/en/contact?material=PLA">Request Valentine prints</ShimmerButton>
+              <ShimmerButton href="/en/contact?material=PLA">Request Valentine 2026 prints</ShimmerButton>
               <Link
                 href="/en/materials#material-suggestion-tool"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
@@ -179,6 +181,8 @@ export default function ValentinesBlogEnPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="en" />
 
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
@@ -303,7 +307,7 @@ export default function ValentinesBlogEnPage() {
       </section>
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <h2 id="sources" className="text-2xl font-semibold text-slate-900">Sources and references</h2>
           <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
           <ul className="mt-4 space-y-3 text-sm text-slate-700">
             {references.map((ref) => (
@@ -320,10 +324,15 @@ export default function ValentinesBlogEnPage() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogAuthorNote locale="en" />
+
       <BlogReadMore />
     </main>
   )
 }
+
+
+
 
 
 

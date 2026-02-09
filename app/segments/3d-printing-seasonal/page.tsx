@@ -16,9 +16,9 @@ import {
 } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "Seasonal 3D designs | X3DPrints",
+  title: "Seasonal 3D designs 2026 | X3DPrints",
   description:
-    "Seizoensgebonden 3D prints voor decor, gifts en eventprops met duidelijke planning en materiaaladvies vanuit Herzele.",
+    "Seizoensgebonden 3D prints voor decor, gifts en eventprops met duidelijke planning en materiaaladvies voor 2026 vanuit Herzele.",
   alternates: {
     canonical: "https://www.x3dprints.be/segments/3d-printing-seasonal/",
     languages: {
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Seasonal 3D designs",
+    title: "Seasonal 3D designs 2026",
     description:
-      "Van valentijn tot kerst: 3D geprinte decorstukken en gifts met snelle lokale opvolging.",
+      "Van valentijn tot kerst 2026: 3D geprinte decorstukken en gifts met snelle lokale opvolging.",
     url: "https://www.x3dprints.be/segments/3d-printing-seasonal/",
     images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Seasonal 3D designs" }],
     locale: "nl_BE",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Seasonal 3D designs",
+    title: "Seasonal 3D designs 2026",
     description:
-      "Seizoensdecor en cadeaus met materiaaladvies en voorspelbare timing.",
+      "Seizoensdecor en cadeaus voor 2026 met materiaaladvies en voorspelbare timing.",
     images: ["/Logo.webp"],
   },
 }
@@ -49,7 +49,7 @@ const pageUrl = String(
   metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-seasonal/`,
 )
 const pageDescription = metadata.description ?? SITE.description
-const lastUpdatedLabel = "Laatst bijgewerkt: 7 februari 2026"
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
 
 const tocItems = [
   { id: "segment-overview", label: "Wat levert deze seasonal-route op?" },
@@ -210,10 +210,10 @@ export default function SeasonalSegmentPage() {
           <header className="text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Segment</p>
             <h1 className="mt-3 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              Seasonal 3D designs
+              Seasonal 3D designs 2026
             </h1>
             <p className="mt-4 text-base text-slate-600">
-              Voor seizoensgebonden decor, gifts en eventprops met snelle lokale opvolging en heldere timing.
+              Voor seizoensgebonden decor, gifts en eventprops met snelle lokale opvolging en heldere timing voor 2026 campagnes.
             </p>
             <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -221,7 +221,7 @@ export default function SeasonalSegmentPage() {
                 href="/contact?material=pla-silk&quote=Seasonal%20campagne%20aanvraag"
                 event={{ action: "cta_click", category: "segments_seasonal", label: "contact_prefill" }}
               >
-                Start seasonal aanvraag
+                Start seasonal aanvraag 2026
               </ShimmerButton>
               <ShimmerButton
                 href="/materials#material-suggestion-tool"
@@ -375,3 +375,5 @@ export default function SeasonalSegmentPage() {
     </main>
   )
 }
+
+

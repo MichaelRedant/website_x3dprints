@@ -1,20 +1,19 @@
 import type { Metadata } from "next"
-import MaterialDetailPage, {
-  generateMetadata as baseGenerateMetadata,
-  generateStaticParams,
-} from "@/app/(pages)/materials/[slug]/page"
+import { generateStaticParams } from "@/app/(pages)/materials/[slug]/page"
+import { getMaterialDetailMetadata, renderMaterialDetail } from "@/app/(pages)/materials/[slug]/material-detail"
 
 type PageProps = {
   params: Promise<{ slug: string }>
-  searchParams?: Promise<{ lang?: string } | undefined>
 }
 
 export { generateStaticParams }
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
-  return baseGenerateMetadata({ ...props, locale: "en" })
+  const { slug } = await props.params
+  return getMaterialDetailMetadata({ slug, locale: "en" })
 }
 
-export default function MaterialDetailPageEn(props: PageProps) {
-  return <MaterialDetailPage {...props} locale="en" />
+export default async function MaterialDetailPageEn({ params }: PageProps) {
+  const { slug } = await params
+  return renderMaterialDetail({ slug, locale: "en" })
 }

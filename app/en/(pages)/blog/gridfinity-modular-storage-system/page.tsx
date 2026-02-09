@@ -5,6 +5,8 @@ import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
 import Faq from "@/components/Faq"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
 
 const canonical = "https://www.x3dprints.be/en/blog/gridfinity-modular-storage-system/"
 const publishedDate = "2026-01-30T08:00:00+01:00"
@@ -140,6 +142,8 @@ export default function GridfinityBlogEn() {
             <li>Scales from one drawer to a full wall or Packout case.</li>
           </ul>
         </section>
+
+      <BlogContentOverview locale="en" />
 
         <section className="space-y-3 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Why the hype?</h2>
@@ -295,7 +299,7 @@ export default function GridfinityBlogEn() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <h2 id="sources" className="text-2xl font-semibold text-slate-900">Sources and references</h2>
           <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
           <ul className="mt-4 space-y-3 text-sm text-slate-700">
             {references.map((ref) => (
@@ -309,6 +313,8 @@ export default function GridfinityBlogEn() {
           </ul>
         </div>
       </section>
+
+      <BlogAuthorNote locale="en" />
 
     </main>
   )

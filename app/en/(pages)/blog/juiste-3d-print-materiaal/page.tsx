@@ -4,6 +4,10 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ_EN } from "@/content/blog-faq-en"
 
 const canonical = "https://www.x3dprints.be/en/blog/juiste-3d-print-materiaal/"
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=right-material"
@@ -13,6 +17,7 @@ const contactHref = `/en/contact${utm}`
 const publishedDate = "2024-09-10"
 const datePublished = "2024-09-10"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ_EN["juiste-3d-print-materiaal"]
 const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
@@ -225,6 +230,8 @@ export default function RightMaterialGuideEnPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="en" />
 
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
@@ -447,7 +454,7 @@ export default function RightMaterialGuideEnPage() {
       </section>
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <h2 id="sources" className="text-2xl font-semibold text-slate-900">Sources and references</h2>
           <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
           <ul className="mt-4 space-y-3 text-sm text-slate-700">
             {references.map((ref) => (
@@ -462,7 +469,11 @@ export default function RightMaterialGuideEnPage() {
         </div>
       </section>
 
+      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="en" />
     </main>
   )
 }

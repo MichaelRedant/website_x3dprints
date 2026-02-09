@@ -1,12 +1,13 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/juiste-3d-print-materiaal/"
 const datePublished = "2024-09-10"
@@ -37,14 +38,6 @@ export const metadata: Metadata = {
     images: ["/Logo.webp"],
   },
 }
-
-const tocItems = [
-  { id: "materiaal-flow", label: "Welke vragen beslissen je materiaal?" },
-  { id: "materiaal-matrix", label: "Welke material match past bij jouw doel?" },
-  { id: "materiaal-scenarios", label: "Wat zijn veelvoorkomende scenario's?" },
-  { id: "materiaal-faq", label: "FAQ over materiaalkeuze" },
-  { id: "materiaal-sources", label: "Bronnen en referenties" },
-]
 
 const decisionFlow = [
   {
@@ -255,8 +248,9 @@ export default function RightMaterialGuidePage() {
               Vraag advies met prefill
             </Link>
           </div>
-          <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
         </header>
+
+      <BlogContentOverview locale="nl" />
 
         <section id="materiaal-flow" className="scroll-mt-28">
           <Reveal>
@@ -337,7 +331,7 @@ export default function RightMaterialGuidePage() {
         <section id="materiaal-sources" className="scroll-mt-28">
           <Reveal>
             <GlassCard className="p-6 sm:p-8">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -378,6 +372,9 @@ export default function RightMaterialGuidePage() {
           </Reveal>
         </section>
       </article>
+
+      <BlogAuthorNote locale="nl" />
+
 
       <BlogReadMore />
 

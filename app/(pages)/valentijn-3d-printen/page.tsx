@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
@@ -7,14 +7,14 @@ import Faq from "@/components/Faq"
 import { buildFaqPageSchema } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "Valentijn 3D prints op maat | X3DPrints",
+  title: "Valentijn 2026 3D prints op maat | X3DPrints",
   description:
-    "Hartdecor, naamplaatjes en gepersonaliseerde cadeaus in Silk, Matte en Translucent PLA. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice.",
+    "Hartdecor, naamplaatjes en gepersonaliseerde cadeaus voor Valentijn 2026 in Silk, Matte en Translucent PLA. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice.",
   alternates: { canonical: "https://www.x3dprints.be/valentijn-3d-printen/", languages: { "nl-BE": "https://www.x3dprints.be/valentijn-3d-printen/", "en-BE": "https://www.x3dprints.be/en/valentijn-3d-printen/", "x-default": "https://www.x3dprints.be/valentijn-3d-printen/", }, },
   openGraph: {
-    title: "Valentijn 3D prints op maat",
+    title: "Valentijn 2026 3D prints op maat",
     description:
-      "Valentijn gifts met glans of lichtgloed. Silk/Matte/Translucent PLA, led-uitsparingen en leveropties in Vlaanderen.",
+      "Valentijn 2026 gifts met glans of lichtgloed. Silk/Matte/Translucent PLA, led-uitsparingen en leveropties in Vlaanderen.",
     url: "https://www.x3dprints.be/valentijn-3d-printen/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "nl_BE",
@@ -34,7 +34,7 @@ const workflow = [
   "Lever STL/STEP of kies ontwerpservice (EUR 45/uur).",
   "Kies materiaal: Silk/Marble voor glans, Matte voor zachte look, Translucent voor licht.",
   "Noteer afwerking (raw, licht geschuurd, geprimed) en leveroptie (EV-zone of pakketdienst).",
-  "We plannen samen richting 14 februari zonder onrealistische beloftes.",
+  "We plannen samen richting 14 februari 2026 zonder onrealistische beloftes.",
 ]
 
 const faqItems = [
@@ -69,12 +69,12 @@ export default function ValentijnLandingPage() {
       <section className="px-6 pb-16 pt-14 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Seasonal</p>
-          <h1 className="mt-3 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">Valentijn 3D prints op maat</h1>
+          <h1 className="mt-3 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">Valentijn 2026 3D prints op maat</h1>
           <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-            Hartdecor, naamplaatjes en gepersonaliseerde cadeaus in Silk, Matte en Translucent PLA. Ontwerp niet inbegrepen; lever STL/STEP of kies ontwerpservice aan EUR 45/uur. Levering via EV-zones of pakketdienst.
+            Hartdecor, naamplaatjes en gepersonaliseerde cadeaus voor Valentijn 2026 in Silk, Matte en Translucent PLA. Ontwerp niet inbegrepen; lever STL/STEP of kies ontwerpservice aan EUR 45/uur. Levering via EV-zones of pakketdienst.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <ShimmerButton href="/contact?material=pla-silk">Plan je Valentijnprint</ShimmerButton>
+            <ShimmerButton href="/contact?material=pla-silk">Plan je Valentijnprint 2026</ShimmerButton>
             <Link
               href="/segments/3d-printing-valentijn"
               className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -124,7 +124,7 @@ export default function ValentijnLandingPage() {
           </GlassCard>
 
           <GlassCard className="p-6">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900">Workflow richting 14 februari</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900">Workflow richting 14 februari 2026</h2>
             <ol className="mt-3 space-y-2 text-sm text-slate-700">
               {workflow.map((step, idx) => (
                 <li key={step} className="flex gap-2">
@@ -203,5 +203,7 @@ export default function ValentijnLandingPage() {
     </main>
   )
 }
+
+
 
 

@@ -1,16 +1,20 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/hoe-lang-duurt-3d-printen/"
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=hoe-lang-duurt-3d-printen"
 const datePublished = "2024-09-15"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ["hoe-lang-duurt-3d-printen"]
 const contactHref = `/contact${utm}`
 const toolHref = `/materials${utm}#material-suggestion-tool`
 const pricingHref = `/pricing${utm}`
@@ -23,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hoe lang duurt 3D printen?",
     description:
-      "Ontdek hoe materiaal, afwerking en logistiek de levertijd beïnvloeden. Inclusief scenario’s en tips om projecten te versnellen.",
+      "Ontdek hoe materiaal, afwerking en logistiek de levertijd beïnvloeden. Inclusief scenario's en tips om projecten te versnellen.",
     url: canonical,
     images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "Hoe lang duurt 3D printen" }],
     locale: "nl_BE",
@@ -68,35 +72,12 @@ const rushTips = [
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
-const tocItems = [
-  { id: "leadtime-factors", label: "Factoren die timing bepalen" },
-  { id: "leadtime-overview", label: "Overzichtstabel" },
-  { id: "leadtime-planning", label: "Ruwe planning" },
-  { id: "leadtime-rush", label: "Sneller leveren" },
-  { id: "leadtime-faq", label: "Veelgestelde vragen" },
-  { id: "leadtime-sources", label: "Bronnen en referenties" },
-]
-
 const references = [
   { label: "PrusaSlicer: G-code viewer (print time estimate)", href: "https://help.prusa3d.com/article/g-code-viewer_78984" },
   { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
   { label: "Prusa: Materials overview", href: "https://help.prusa3d.com/filament-material-guide" },
 ]
 
-const faq = [
-  {
-    q: "Kunnen jullie binnen 24 uur leveren?",
-    a: "Ja, voor kleine onderdelen in standaard PLA. We plannen een rush-slot en je haalt af in Herzele of we rijden uit tegen meerprijs.",
-  },
-  {
-    q: "Wat vertraagt een project het meest?",
-    a: "Gebrek aan info (geen tolerantie/afwerking), speciale materialen die besteld moeten worden, of uitgebreide finishing (primer, lak).",
-  },
-  {
-    q: "Kan ik de printtijd zelf inschatten?",
-    a: "Gebruik de Small/Medium/Large richtprijzen op de pricing pagina. Voor exacte tijd hebben we je STL nodig om slicer-data te genereren.",
-  },
-]
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
@@ -141,7 +122,6 @@ export default function LeadTimeArticle() {
               Doorlooptijden lopen uiteen van express (ruwe prints binnen 24 uur) tot enkele weken (grote batches met finishing). Hieronder lees je welke factoren meespelen en hoe jij je project sneller in de queue krijgt.
             </p>
             <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
               <ShimmerButton href={pricingHref}>Bekijk richtprijzen & timing</ShimmerButton>
               <Link
@@ -161,6 +141,8 @@ export default function LeadTimeArticle() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="leadtime-factors" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
           {factors.map((factor) => (
@@ -173,6 +155,8 @@ export default function LeadTimeArticle() {
           ))}
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="leadtime-overview" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
@@ -200,6 +184,8 @@ export default function LeadTimeArticle() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="leadtime-planning" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -216,6 +202,8 @@ export default function LeadTimeArticle() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="leadtime-rush" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
@@ -235,13 +223,15 @@ export default function LeadTimeArticle() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="leadtime-faq" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
               <h2 className="text-xl font-semibold text-slate-900">Veelgestelde vragen</h2>
               <div className="mt-4 space-y-4 text-sm text-slate-600">
-                {faq.map((item) => (
+                {faq.items.map((item) => (
                   <div key={item.q}>
                     <h3 className="text-base font-semibold text-slate-900">{item.q}</h3>
                     <p className="mt-1">{item.a}</p>
@@ -253,11 +243,13 @@ export default function LeadTimeArticle() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="leadtime-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -278,6 +270,8 @@ export default function LeadTimeArticle() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
@@ -301,12 +295,20 @@ export default function LeadTimeArticle() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
+      <BlogFaq title={faq.title} items={faq.items} />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>
   )
 }
+
 
 
 

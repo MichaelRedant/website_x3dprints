@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "552c855f0dcf1c5d9d46cbd2f1545f71",
-    "previewModeSigningKey": "2e82398d86530c23be221c98a079e86ef814a55b8d731b06e00fd0eb2085175c",
-    "previewModeEncryptionKey": "a4fc7c267d9ff5729ec0113a040dadc3183f87b5deb29d510845c4ee57f97395"
-  }
-}
+{"version":4,"routes":{"/materials/pla-tough":{},"/materials/pla-matte":{},"/materials/pla-glow":{},"/materials/pla-marble":{},"/materials/pla-sparkle":{},"/materials/pla-metal":{},"/materials/pla-galaxy":{},"/materials/pla-aero":{},"/materials/pla-silk":{},"/materials/pla-basic-gradient":{},"/materials/pla-basic":{},"/materials/petg":{},"/materials/pc":{},"/materials/pc-fr":{},"/materials/pla-translucent":{},"/materials/pla-silk-multi-color":{},"/materials/pla-cf":{},"/materials/pla-wood":{},"/materials/tpu":{}},"dynamicRoutes":{"/materials/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/materials/[slug]","routeRegex":"^\\/materials\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"79ada2aa4adc5cabb48247407f317228","previewModeSigningKey":"75ca1aa555e3708db4c92d2624acc7b42b10de12567ae56128bb3ad93f7e127b","previewModeEncryptionKey":"442c96b47b96a215fc4bc314d9cab40c72eb7b20da1b162fe5a90f89cfc88fe6"}}

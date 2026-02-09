@@ -13,6 +13,13 @@ import FaqPromo from "@/components/FaqPromo"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
+import {
+  buildFaqPageSchema,
+  buildLocalBusinessSchema,
+  buildOfferCatalog,
+  buildServiceSchema,
+  type SchemaOfferInput,
+} from "@/lib/seo"
 
 const NL_METADATA: Metadata = {
   title: "3D print prijs en prijzen 3D printen | X3DPrints",
@@ -313,13 +320,16 @@ const PRICING_COPY_EN = {
   },
 }
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
 
-export default function Page({ locale }: PageProps) {
-  const normalizedLocale = normalizeLocale(locale)
+export default async function Page({ searchParams }: PageProps) {
+  const params = await searchParams
+  const normalizedLocale = normalizeLocale(params?.lang)
   const isEn = normalizedLocale === "en"
   const copy = isEn ? PRICING_COPY_EN : PRICING_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
+  const pageUrl = isEn ? "https://www.x3dprints.be/en/pricing/" : "https://www.x3dprints.be/pricing/"
+  const pageDescription = isEn ? EN_METADATA.description ?? "" : NL_METADATA.description ?? ""
   const tocItems = isEn
     ? [
         { id: "pricing-overview", label: "How are the guideline prices structured?" },
@@ -418,26 +428,38 @@ export default function Page({ locale }: PageProps) {
     return localize(`/contact?material=PLA_MATTE&quote=${encodeURIComponent(summary)}`)
   }
 
-  const offerCatalog = {
-    "@context": "https://schema.org",
-    "@type": "OfferCatalog",
-    name: copy.schema.catalogName,
-    itemListElement: tiers.map((t) => ({
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: `3D print - ${t.name}`,
-        description: `${t.size} - ${t.base}`,
-        areaServed: "BE",
-        provider: { "@type": "LocalBusiness", name: "X3DPrints" },
-      },
-      priceSpecification: {
-        "@type": "PriceSpecification",
-        priceCurrency: "EUR",
-        price: String(t.price),
-      },
-    })),
-  }
+  const pricingOffers: SchemaOfferInput[] = tiers.map((tier) => ({
+    serviceName: `3D print - ${tier.name}`,
+    price: `EUR ${tier.price.toFixed(2)}`,
+    description: `${tier.size} · ${tier.base}`,
+    url: pageUrl,
+  }))
+
+  const offerCatalog = buildOfferCatalog(copy.schema.catalogName, pricingOffers)
+  const faqJsonLd = buildFaqPageSchema({
+    items: copy.faqPromo.qaItems,
+    inLanguage: isEn ? "en-BE" : "nl-BE",
+    mainEntityOfPage: pageUrl,
+  })
+  const localBusinessJsonLd = buildLocalBusinessSchema({
+    pageUrl,
+    description: pageDescription,
+    image: "/images/portfolio/2d-6-1-1.webp",
+    priceRange: "EUR 5 - EUR 49",
+    areaServed: "BE",
+    offersName: copy.schema.catalogName,
+    offers: pricingOffers,
+  })
+  const serviceJsonLd = buildServiceSchema(
+    isEn ? "3D printing pricing and quotes" : "3D print prijzen en offertes",
+    pricingOffers,
+    pageUrl,
+    {
+      description: pageDescription,
+      inLanguage: isEn ? "en-BE" : "nl-BE",
+      mainEntityOfPage: pageUrl,
+    },
+  )
 
   return (
     <main className="relative">
@@ -804,7 +826,11 @@ export default function Page({ locale }: PageProps) {
       </section>
 
       {/* JSON-LD */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerCatalog) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
     </main>
   )
 }
+

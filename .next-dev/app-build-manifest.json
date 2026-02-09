@@ -26,11 +26,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/layout.js"
     ],
-    "/(pages)/viewer/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/viewer/page.js"
-    ],
     "/(pages)/blog/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -41,10 +36,35 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/blog/page.js"
     ],
-    "/(pages)/blog/3d-print-offerte-aanvragen/page": [
+    "/(pages)/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/3d-print-offerte-aanvragen/page.js"
+      "static/chunks/app/(pages)/about/page.js"
+    ],
+    "/(pages)/materials/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/materials/page.js"
+    ],
+    "/(pages)/materials/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/materials/[slug]/page.js"
+    ],
+    "/(pages)/organizers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/organizers/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
+    ],
+    "/(pages)/blog/tool-organizers-3d-printen/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/tool-organizers-3d-printen/page.js"
     ]
   }
 }

@@ -2,8 +2,11 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/tool-organizers-3d-printen/";
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=tool-organizers-3d-printen";
@@ -11,19 +14,8 @@ const contactHref = `/contact${utm}`;
 const toolHref = `/materials${utm}#material-suggestion-tool`;
 const publishedDate = "2026-01-29T08:00:00+01:00"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ["tool-organizers-3d-printen"]
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
-
-const tocItems = [
-  { id: "organizers-intake", label: "Intake checklist" },
-  { id: "organizers-choose", label: "Welke organizer kies je?" },
-  { id: "organizers-table", label: "Systeemoverzicht" },
-  { id: "organizers-materials", label: "Materiaalkeuze" },
-  { id: "organizers-labels", label: "Labelzones en kleurcodes" },
-  { id: "organizers-custom", label: "Custom opties" },
-  { id: "organizers-examples", label: "Concrete voorbeelden" },
-  { id: "organizers-leadtime", label: "Lead time en pricing" },
-  { id: "organizers-sources", label: "Bronnen en referenties" },
-]
 
 const systemTable = [
   { system: "Gridfinity (gridfinity-stijl)", bestFor: "Lades, bureaus, hobby en EDC", note: "Modulair raster met custom pockets." },
@@ -86,7 +78,6 @@ export default function ToolOrganizersBlog() {
             Zo kies je het juiste systeem, stuur je een perfecte intake en krijg je een organizer die niet rammelt. Inclusief
             tips voor labels, antislip en materiaalkeuze.
           </p>
-          <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
           <div className="flex flex-wrap gap-3">
             <Link
               href={contactHref}
@@ -114,6 +105,8 @@ export default function ToolOrganizersBlog() {
             </span>
           </div>
         </header>
+
+      <BlogContentOverview locale="nl" />
 
         <section id="organizers-intake" className="scroll-mt-28 space-y-4">
           <h2 className="text-2xl font-bold text-slate-900">Intake checklist (5 minuten)</h2>
@@ -354,7 +347,11 @@ export default function ToolOrganizersBlog() {
         <OrganizerCta />
       </article>
 
+      <BlogFaq title={faq.title} items={faq.items} />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
     </main>
   )
 }

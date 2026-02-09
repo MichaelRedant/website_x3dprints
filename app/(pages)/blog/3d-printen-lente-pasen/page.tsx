@@ -1,26 +1,27 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-lente-pasen/"
 const datePublished = "2024-03-15"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 
 export const metadata: Metadata = {
-  title: "3D printen voor lente en Pasen | X3DPrints Blog",
+  title: "3D printen voor lente & Pasen 2026 | X3DPrints Blog",
   description:
-    "Pastel decor, paasornamenten en lichtobjecten in Silk, Matte en Translucent PLA. Tips voor supports, magneten, levering en ontwerpservice (model niet inbegrepen).",
+    "Pastel decor, paasornamenten en lichtobjecten voor lente & Pasen 2026 in Silk, Matte en Translucent PLA. Tips voor supports, magneten, levering en ontwerpservice (model niet inbegrepen).",
   alternates: { canonical },
   openGraph: {
-    title: "3D printen voor lente en Pasen",
+    title: "3D printen voor lente & Pasen 2026",
     description:
-      "Eieren, konijnen, bloemdecor en lantaarns in pastel PLA of Translucent. Slicer-tips, afwerking en leverzones.",
+      "Eieren, konijnen, bloemdecor en lantaarns voor Pasen 2026 in pastel PLA of Translucent. Slicer-tips, afwerking en leverzones.",
   url: canonical,
     type: "article",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte paasdecor" }],
@@ -29,8 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printen voor lente en Pasen",
-    description: "Pastel PLA en Translucent lantaarns, met tips voor supports, magneten en levering.",
+    title: "3D printen voor lente & Pasen 2026",
+    description: "Pastel PLA en Translucent lantaarns voor Pasen 2026, met tips voor supports, magneten en levering.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -56,15 +57,7 @@ const materialRows = [
   { material: "PETG", use: "Outdoor decor", note: "Beter tegen UV en vocht" },
 ]
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
-
-const tocItems = [
-  { id: "lente-materials", label: "Materialen & checklist" },
-  { id: "lente-examples", label: "Voorbeelden" },
-  { id: "lente-why", label: "Waarom nu plannen" },
-  { id: "lente-faq", label: "FAQ" },
-  { id: "lente-sources", label: "Bronnen en referenties" },
-]
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
 
 const references = [
   { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
@@ -97,9 +90,9 @@ const faqItems = [
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
-  headline: "3D printen voor lente & Pasen",
+  headline: "3D printen voor lente & Pasen 2026",
   description:
-    "Pastel decor, paasornamenten en lichtobjecten in Silk, Matte en Translucent PLA. Tips voor supports, magneten en levering.",
+    "Pastel decor, paasornamenten en lichtobjecten voor lente & Pasen 2026 in Silk, Matte en Translucent PLA. Tips voor supports, magneten en levering.",
   datePublished,
   dateModified,
 })
@@ -129,16 +122,15 @@ export default function BlogSpringEaster() {
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-green-700">Seasonal</p>
             <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              3D printen voor lente & Pasen
+              3D printen voor lente & Pasen 2026
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Paashangers, eieren, konijnen en bloemdecor in pastel PLA of Translucent. Ontwerpbestand niet inbegrepen; lever
               STL/STEP of kies ontwerpservice (€45/uur). EV-levering voor breekbare ornamenten of pakketdienst als je verder zit.
             </p>
             <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact">Plan je paasprints</ShimmerButton>
+              <ShimmerButton href="/contact">Plan je paasprints 2026</ShimmerButton>
               <Link
                 href="/segments/3d-printing-seasonal"
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -155,6 +147,8 @@ export default function BlogSpringEaster() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="lente-materials" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
@@ -220,6 +214,8 @@ export default function BlogSpringEaster() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="lente-examples" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -250,6 +246,8 @@ export default function BlogSpringEaster() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="lente-why" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
@@ -298,6 +296,8 @@ export default function BlogSpringEaster() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="lente-faq" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -323,11 +323,13 @@ export default function BlogSpringEaster() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="lente-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -349,13 +351,20 @@ export default function BlogSpringEaster() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>
   )
 }
+
+
+
 
 
 

@@ -1,4 +1,8 @@
 {
-  "/(home)/page": "app/(home)/page.js",
-  "/(pages)/viewer/page": "app/(pages)/viewer/page.js"
+  "/(pages)/about/page": "app/(pages)/about/page.js",
+  "/(pages)/materials/page": "app/(pages)/materials/page.js",
+  "/(pages)/materials/[slug]/page": "app/(pages)/materials/[slug]/page.js",
+  "/(pages)/organizers/page": "app/(pages)/organizers/page.js",
+  "/(pages)/blog/page": "app/(pages)/blog/page.js",
+  "/(pages)/blog/tool-organizers-3d-printen/page": "app/(pages)/blog/tool-organizers-3d-printen/page.js"
 }

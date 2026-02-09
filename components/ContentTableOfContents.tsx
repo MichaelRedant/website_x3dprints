@@ -7,7 +7,7 @@ type ContentTableOfContentsItem = {
 }
 
 type ContentTableOfContentsProps = {
-  items: ContentTableOfContentsItem[]
+  items: ReadonlyArray<ContentTableOfContentsItem>
   title: string
   className?: string
 }

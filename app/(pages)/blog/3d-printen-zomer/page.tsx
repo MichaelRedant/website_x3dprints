@@ -1,25 +1,26 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-zomer/"
 const datePublished = "2024-07-15"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 
 export const metadata: Metadata = {
-  title: "3D printen voor de zomer | X3DPrints Blog",
+  title: "3D printen voor de zomer 2026 | X3DPrints Blog",
   description:
-    "Outdoor decor, nautische props en terrasaccessoires. PETG voor zon/vocht, PLA Silk/Marble voor luxe tafeldecor, TPU voor grip. Ontwerpbestand niet inbegrepen; ontwerpservice beschikbaar.",
+    "Outdoor decor, nautische props en terrasaccessoires voor zomer 2026. PETG voor zon/vocht, PLA Silk/Marble voor luxe tafeldecor, TPU voor grip. Ontwerpbestand niet inbegrepen; ontwerpservice beschikbaar.",
   alternates: { canonical },
   openGraph: {
-    title: "3D printen voor de zomer",
-    description: "Tuin- en stranddecor, nautische thema’s en custom holders. Materialen, slicer-tips, levering en ontwerpservice.",
+    title: "3D printen voor de zomer 2026",
+    description: "Tuin- en stranddecor voor zomer 2026, nautische thema’s en custom holders. Materialen, slicer-tips, levering en ontwerpservice.",
   url: canonical,
     type: "article",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte zomer decor" }],
@@ -28,8 +29,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printen voor de zomer",
-    description: "Outdoor props en terrastoppers in PETG/TPU of Silk PLA. Tips voor hitte, grip en levering.",
+    title: "3D printen voor de zomer 2026",
+    description: "Outdoor props en terrastoppers voor zomer 2026 in PETG/TPU of Silk PLA. Tips voor hitte, grip en levering.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -55,15 +56,7 @@ const materialRows = [
   { material: "TPU", use: "Antislip feet, grips", note: "Print trager, flexibel" },
 ]
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
-
-const tocItems = [
-  { id: "zomer-materials", label: "Materialen & checklist" },
-  { id: "zomer-examples", label: "Voorbeelden" },
-  { id: "zomer-why", label: "Waarom nu plannen" },
-  { id: "zomer-faq", label: "FAQ" },
-  { id: "zomer-sources", label: "Bronnen en referenties" },
-]
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
 
 const references = [
   { label: "UltiMaker PETG material properties", href: "https://ultimaker.com/materials/s-series-petg/" },
@@ -96,9 +89,9 @@ const faqItems = [
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
-  headline: "3D printen voor de zomer",
+  headline: "3D printen voor de zomer 2026",
   description:
-    "Outdoor decor, nautische props en terrasaccessoires. PETG voor zon/vocht, PLA Silk/Marble voor luxe tafeldecor, TPU voor grip. Ontwerpbestand niet inbegrepen; ontwerpservice beschikbaar.",
+    "Outdoor decor, nautische props en terrasaccessoires voor zomer 2026. PETG voor zon/vocht, PLA Silk/Marble voor luxe tafeldecor, TPU voor grip. Ontwerpbestand niet inbegrepen; ontwerpservice beschikbaar.",
   datePublished,
   dateModified,
   image: "https://www.x3dprints.be/images/og-home.jpg",
@@ -131,16 +124,15 @@ export default function BlogSummer() {
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">Seasonal</p>
             <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              3D printen voor de zomer
+              3D printen voor de zomer 2026
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Terrasdecor, nautische thema’s en custom holders voor festivals of beach trips. Ontwerpbestand niet inbegrepen; lever
               STL/STEP of kies ontwerpservice (€45/uur). EV-levering voor breekbare stukken of pakketdienst indien verder weg.
             </p>
             <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact">Plan je zomerprints</ShimmerButton>
+              <ShimmerButton href="/contact">Plan je zomerprints 2026</ShimmerButton>
               <Link
                 href="/segments/3d-printing-seasonal"
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -157,6 +149,8 @@ export default function BlogSummer() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="zomer-materials" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
@@ -222,6 +216,8 @@ export default function BlogSummer() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="zomer-examples" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -252,6 +248,8 @@ export default function BlogSummer() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="zomer-why" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
@@ -299,6 +297,8 @@ export default function BlogSummer() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="zomer-faq" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -324,11 +324,13 @@ export default function BlogSummer() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="zomer-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -350,13 +352,20 @@ export default function BlogSummer() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>
   )
 }
+
+
+
 
 
 

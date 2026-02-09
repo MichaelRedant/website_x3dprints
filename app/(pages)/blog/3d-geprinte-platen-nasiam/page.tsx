@@ -1,11 +1,13 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
+import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/3d-geprinte-platen-nasiam/"
 const datePublished = "2025-01-15"
@@ -172,6 +174,8 @@ export default function NaSiamArticlePage() {
 
       </header>
 
+      <BlogContentOverview locale="nl" />
+
       <Reveal className="mx-auto mt-12 max-w-5xl space-y-6">
         <GlassCard className="p-6 sm:p-8">
           <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
@@ -304,7 +308,7 @@ export default function NaSiamArticlePage() {
         </GlassCard>
 
         <GlassCard className="p-6 sm:p-8">
-          <h2 className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
+          <h2 id="sources" className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
           <ul className="mt-4 space-y-2 text-sm text-slate-600">
             {references.map((reference) => (
               <li key={reference.href} className="rounded-2xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -351,6 +355,7 @@ export default function NaSiamArticlePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
       <BlogReadMore />
 
     </article>

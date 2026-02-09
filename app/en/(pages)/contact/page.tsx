@@ -7,5 +7,6 @@ export const metadata: Metadata = EN_METADATA
 type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
 
 export default function ContactPageEn(props: PageProps) {
-  return <ContactPage {...props} locale="en" />
+  return <ContactPage {...props} searchParams={Promise.resolve({ lang: "en" })} />
 }
+

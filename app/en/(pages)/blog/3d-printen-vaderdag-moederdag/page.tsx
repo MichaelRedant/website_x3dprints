@@ -6,17 +6,19 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-vaderdag-moederdag/"
 const datePublished = "2025-04-30"
-const dateModified = "2026-02-08"
-const lastUpdatedLabel = "Last updated: 8 February 2026"
+const dateModified = "2026-02-09"
+const lastUpdatedLabel = "Last updated: 9 February 2026"
 
 
 export const metadata: Metadata = {
-  title: "Father&apos;s Day & Mother&apos;s Day 3D printing | X3DPrints Blog",
+  title: "Father&apos;s Day & Mother&apos;s Day 2026 3D printing | X3DPrints Blog",
   description:
-    "Personalised keychains, desk items and name gifts in Silk/Matte/PETG. Tips for legibility, rounded edges and delivery (May-June).",
+    "Personalised keychains, desk items and name gifts in Silk/Matte/PETG. Tips for legibility, rounded edges and delivery (May-June 2026).",
   alternates: {
     canonical,
     languages: {
@@ -26,8 +28,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Father&apos;s Day & Mother&apos;s Day 3D printing",
-    description: "Custom gifts with name/initials, rounded edges and anti-slip feet. Material picks and delivery tips for Father's/Mother's Day.",
+    title: "Father&apos;s Day & Mother&apos;s Day 2026 3D printing",
+    description: "Custom 2026 gifts with name/initials, rounded edges and anti-slip feet. Material picks and delivery tips for Father's/Mother's Day.",
     url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Father's Day Mother's Day 3D prints" }],
     locale: "en_BE",
@@ -35,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Father&apos;s Day & Mother&apos;s Day 3D printing",
-    description: "Personalised gifts in Silk/Matte/PETG with rounded edges and fast delivery.",
+    title: "Father&apos;s Day & Mother&apos;s Day 2026 3D printing",
+    description: "Personalised 2026 gifts in Silk/Matte/PETG with rounded edges and fast delivery.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -53,7 +55,7 @@ const checklist = [
   "Gift type: keychain, desk item, name/initial piece or small decor.",
   "Material: Silk/Matte for looks, PETG for strength, TPU for grip.",
   "Finish: raw or lightly sanded; primer optional if you paint.",
-  "Deadline (May-June) + delivery option (EV zones or parcel).",
+  "Deadline (May-June 2026) + delivery option (EV zones or parcel).",
 ]
 
 const faqItems = [
@@ -102,7 +104,7 @@ const references = [
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
-  headline: "Father&apos;s Day & Mother&apos;s Day 3D printing",
+  headline: "Father&apos;s Day & Mother&apos;s Day 2026 3D printing",
   description: metadata.description ?? "",
   datePublished: datePublished,
   dateModified,
@@ -129,7 +131,7 @@ export default function FathersMothersDayBlogEn() {
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-rose-700">Seasonal</p>
             <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              Father&apos;s Day & Mother&apos;s Day 3D printing
+              Father&apos;s Day & Mother&apos;s Day 2026 3D printing
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Personalised keychains, desk items and name gifts in Silk, Matte or PETG. Design file not included; provide STL/STEP or choose design service
@@ -137,7 +139,7 @@ export default function FathersMothersDayBlogEn() {
             </p>
                         <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/en/contact?material=PLA">Plan my gift</ShimmerButton>
+              <ShimmerButton href="/en/contact?material=PLA">Plan my 2026 gift</ShimmerButton>
               <Link
                 href="/en/materials#material-suggestion-tool"
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -154,6 +156,8 @@ export default function FathersMothersDayBlogEn() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="en" />
 
       <section className="px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
@@ -256,7 +260,7 @@ export default function FathersMothersDayBlogEn() {
       </section>
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <h2 id="sources" className="text-2xl font-semibold text-slate-900">Sources and references</h2>
           <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
           <ul className="mt-4 space-y-3 text-sm text-slate-700">
             {references.map((ref) => (
@@ -273,10 +277,15 @@ export default function FathersMothersDayBlogEn() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogAuthorNote locale="en" />
+
       <BlogReadMore />
     </main>
   )
 }
+
+
+
 
 
 

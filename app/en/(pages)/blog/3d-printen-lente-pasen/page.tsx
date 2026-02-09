@@ -6,16 +6,18 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-lente-pasen/"
 const datePublished = "2024-03-15"
-const dateModified = "2026-02-08"
-const lastUpdatedLabel = "Last updated: 8 February 2026"
+const dateModified = "2026-02-09"
+const lastUpdatedLabel = "Last updated: 9 February 2026"
 
 export const metadata: Metadata = {
-  title: "3D printing for spring and Easter | X3DPrints Blog",
+  title: "3D printing for spring & Easter 2026 | X3DPrints Blog",
   description:
-    "Pastel decor, Easter ornaments and light objects in Silk, Matte and Translucent PLA. Tips for supports, magnets, delivery and design service (model not included).",
+    "Pastel decor, Easter ornaments and light objects for spring & Easter 2026 in Silk, Matte and Translucent PLA. Tips for supports, magnets, delivery and design service (model not included).",
   alternates: {
     canonical,
     languages: {
@@ -25,8 +27,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "3D printing for spring and Easter",
-    description: "Eggs, bunnies, floral decor and lanterns in pastel PLA or Translucent. Slicer tips, finishing and delivery zones.",
+    title: "3D printing for spring & Easter 2026",
+    description: "Eggs, bunnies, floral decor and lanterns for Easter 2026 in pastel PLA or Translucent. Slicer tips, finishing and delivery zones.",
     url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printed Easter decor" }],
     locale: "en_BE",
@@ -34,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printing for spring and Easter",
-    description: "Pastel PLA and Translucent lanterns, with tips for supports, magnets and delivery.",
+    title: "3D printing for spring & Easter 2026",
+    description: "Pastel PLA and Translucent lanterns for Easter 2026, with tips for supports, magnets and delivery.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -94,7 +96,7 @@ const references = [
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
-  headline: "3D printing for spring & Easter",
+  headline: "3D printing for spring & Easter 2026",
   description: metadata.description ?? "",
   datePublished,
   dateModified,
@@ -126,7 +128,7 @@ export default function BlogSpringEasterEn() {
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700">Seasonal</p>
             <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              3D printing for spring and Easter
+              3D printing for spring and Easter 2026
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Pastel ornaments, bunnies and light decor. Design file not included; provide STL/STEP or choose design service (€45/hour). EV delivery for
@@ -134,7 +136,7 @@ export default function BlogSpringEasterEn() {
             </p>
                         <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/en/contact?material=PLA">Plan Easter prints</ShimmerButton>
+              <ShimmerButton href="/en/contact?material=PLA">Plan Easter 2026 prints</ShimmerButton>
               <Link
                 href="/en/segments/3d-printing-seasonal"
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -145,6 +147,8 @@ export default function BlogSpringEasterEn() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="en" />
 
       <section className="px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
@@ -250,7 +254,7 @@ export default function BlogSpringEasterEn() {
       </section>
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <h2 id="sources" className="text-2xl font-semibold text-slate-900">Sources and references</h2>
           <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
           <ul className="mt-4 space-y-3 text-sm text-slate-700">
             {references.map((ref) => (
@@ -267,10 +271,15 @@ export default function BlogSpringEasterEn() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogAuthorNote locale="en" />
+
       <BlogReadMore />
     </main>
   )
 }
+
+
+
 
 
 

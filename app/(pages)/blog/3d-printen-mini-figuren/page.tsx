@@ -5,12 +5,16 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-mini-figuren/"
 const datePublished = "2024-06-10"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ["3d-printen-mini-figuren"]
 
 export const metadata: Metadata = {
   title: "3D printen van miniaturen voor tabletop gaming | X3DPrints Blog",
@@ -20,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "3D printen van miniaturen voor tabletop gaming",
     description:
-      "Leer hoe je haarscherpe D&D en Warhammer mini’s print: materiaalkeuze, detail, supports, primer, schilderen en veilige levering.",
+      "Leer hoe je haarscherpe D&D en Warhammer mini's print: materiaalkeuze, detail, supports, primer, schilderen en veilige levering.",
   url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte miniaturen en dice tower" }],
     locale: "nl_BE",
@@ -29,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "3D printen van miniaturen voor tabletop gaming",
-    description: "Van STL tot geprinte mini’s: detail, supports, curing en schildertips voor D&D/Warhammer.",
+    description: "Van STL tot geprinte mini's: detail, supports, curing en schildertips voor D&D/Warhammer.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -39,7 +43,7 @@ type Card = { title: string; body: string }
 const highlights: Card[] = [
   {
     title: "Detail & schaal",
-    body: "Mini’s van 25-35 mm vragen strakke laaghoogtes (0,12-0,16 mm) en fijne nozzles. We plaatsen zichtzijde naar boven voor scherpe gezichten, wapenranden en ornamenten.",
+    body: "Mini's van 25-35 mm vragen strakke laaghoogtes (0,12-0,16 mm) en fijne nozzles. We plaatsen zichtzijde naar boven voor scherpe gezichten, wapenranden en ornamenten.",
   },
   {
     title: "Podiums & bases",
@@ -67,20 +71,12 @@ const materialTips: Card[] = [
 ]
 
 const qualityRows = [
-  { use: "Mini’s (25-35 mm)", height: "0,12-0,16 mm", note: "Maximaal detail voor gezichten en wapens." },
+  { use: "Mini's (25-35 mm)", height: "0,12-0,16 mm", note: "Maximaal detail voor gezichten en wapens." },
   { use: "Terrain & props", height: "0,20 mm", note: "Sneller printen, voldoende detail na drybrush." },
   { use: "Dice towers", height: "0,20-0,24 mm", note: "Sterkte en snelheid primeren." },
 ]
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
-
-const tocItems = [
-  { id: "mini-detail", label: "Detailprinten" },
-  { id: "mini-materials", label: "Materialen" },
-  { id: "mini-finishing", label: "Afwerking" },
-  { id: "mini-faq", label: "FAQ" },
-  { id: "mini-sources", label: "Bronnen en referenties" },
-]
 
 const references = [
   { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
@@ -98,28 +94,6 @@ const prepList = [
   "Dice tower: deel in modules zodat de binnenhelling perfect glad blijft; wij lijmen of leveren los.",
 ]
 
-const faq = [
-  {
-    q: "Welk materiaal is het beste voor tabletop minis?",
-    a: "PLA Matte voor strak detail en een makkelijk te schuren oppervlak. PETG of PLA Tough als minis veel vallen of in warme tassen zitten. TPU voor rubber feet of dempers.",
-  },
-  {
-    q: "Welke laaghoogte gebruiken jullie?",
-    a: "Voor minis werken we meestal op 0,12-0,16 mm. Grotere props of terrain kunnen op 0,2 mm voor snellere doorlooptijd.",
-  },
-  {
-    q: "Hoe worden supports gezet?",
-    a: "We oriënteren minis zodat gezicht en details supportvrij blijven. Supports staan onder mantels, onderzijde van wapens en bases. Na verwijdering schuren we licht als je dat wil.",
-  },
-  {
-    q: "Kan ik minis laten primen?",
-    a: "Ja, we kunnen licht schuren en een grijze primerlaag zetten zodat je direct kunt schilderen.",
-  },
-  {
-    q: "Hoe lever je minis veilig?",
-    a: "Persoonlijke levering met elektrische wagen in zones rond Herzele/Gent/Antwerpen of stevig verpakt via pakketdienst. Breekbare onderdelen worden gescheiden ingepakt.",
-  },
-]
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
@@ -148,11 +122,10 @@ export default function BlogMiniaturesPage() {
               3D printen van miniaturen voor Dungeons & Dragons en Warhammer
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Haarscherpe details, stevige bases en veilige levering. Zo printen we mini’s, dice towers en scenery die
+              Haarscherpe details, stevige bases en veilige levering. Zo printen we mini's, dice towers en scenery die
               direct klaar zijn om te primen, schilderen en te spelen aan je tafel.
             </p>
             <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact">Upload je STL/STEP</ShimmerButton>
               <Link
@@ -186,6 +159,8 @@ export default function BlogMiniaturesPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="mini-detail" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
@@ -274,6 +249,8 @@ export default function BlogMiniaturesPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="mini-materials" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal className="grid gap-4 sm:grid-cols-3">
@@ -286,6 +263,8 @@ export default function BlogMiniaturesPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="mini-finishing" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.2fr,0.8fr]">
@@ -324,13 +303,15 @@ export default function BlogMiniaturesPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="mini-faq" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
               <h2 className="text-2xl font-bold tracking-tight text-slate-900">FAQ: minis en dice towers</h2>
               <div className="mt-3 space-y-3">
-                {faq.map((item) => (
+                {faq.items.map((item) => (
                   <div key={item.q} className="rounded-xl border border-slate-200/70 bg-white/70 p-3">
                     <p className="text-sm font-semibold text-slate-800">{item.q}</p>
                     <p className="mt-1 text-sm text-slate-700">{item.a}</p>
@@ -349,11 +330,13 @@ export default function BlogMiniaturesPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="mini-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -375,12 +358,20 @@ export default function BlogMiniaturesPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
+      <BlogFaq title={faq.title} items={faq.items} />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>
   )
 }
+
 
 
 

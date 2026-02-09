@@ -4,12 +4,16 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/use-cases-tpu/"
 const publishedDate = "2025-10-03T08:00:00+02:00"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ["use-cases-tpu"]
 
 export const metadata: Metadata = {
   title: "TPU Use Cases: hoe klanten flexibele prints inzetten | X3DPrints",
@@ -143,15 +147,6 @@ const articleJsonLd = buildArticleJsonLd({
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
-const tocItems = [
-  { id: "tpu-why", label: "Waarom TPU rendeert" },
-  { id: "tpu-cases", label: "Case studies" },
-  { id: "tpu-playbooks", label: "Playbooks per sector" },
-  { id: "tpu-process", label: "Van idee tot ingebruikname" },
-  { id: "tpu-resources", label: "Interne resources" },
-  { id: "tpu-sources", label: "Bronnen en referenties" },
-]
-
 const references = [
   { label: "Prusament TPU 95A materiaalfiche", href: "https://prusament.com/materials/prusament-tpu-95a/" },
   { label: "ISO/ASTM 52900: Additive manufacturing terminology", href: "https://www.iso.org/standard/74514.html" },
@@ -213,7 +208,6 @@ export default function UseCasesTpuPage() {
               en CTA’s zodat je meteen je eigen use case kan aftoetsen.
             </p>
             <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="stacked-actions mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
               <ShimmerButton href="/contact?material=TPU">Plan TPU workshop</ShimmerButton>
               <Link
@@ -244,6 +238,8 @@ export default function UseCasesTpuPage() {
           </div>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <SectionDivider />
 
@@ -291,6 +287,8 @@ export default function UseCasesTpuPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="tpu-cases" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl space-y-6">
@@ -350,6 +348,8 @@ export default function UseCasesTpuPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="tpu-playbooks" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -389,6 +389,8 @@ export default function UseCasesTpuPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="tpu-process" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -420,6 +422,8 @@ export default function UseCasesTpuPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="tpu-resources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -445,11 +449,13 @@ export default function UseCasesTpuPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="tpu-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-600">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -470,6 +476,8 @@ export default function UseCasesTpuPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
@@ -494,7 +502,14 @@ export default function UseCasesTpuPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
+      <BlogFaq title={faq.title} items={faq.items} />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>

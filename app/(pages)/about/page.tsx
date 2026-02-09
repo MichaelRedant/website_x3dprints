@@ -234,10 +234,11 @@ const BUILD_VOLUME_CM = 35
 const LEAD_TIME_DAYS = 5
 const TOLERANCE_MM = 0.2
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined>; locale?: string }
+type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
 
-export default function Page({ locale }: PageProps) {
-  const normalizedLocale = normalizeLocale(locale)
+export default async function Page({ searchParams }: PageProps) {
+  const params = await searchParams
+  const normalizedLocale = normalizeLocale(params?.lang)
   const isEn = normalizedLocale === "en"
   const copy = isEn ? ABOUT_COPY_EN : ABOUT_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
@@ -567,4 +568,5 @@ export default function Page({ locale }: PageProps) {
     </main>
   )
 }
+
 

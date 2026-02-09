@@ -6,23 +6,24 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-valentijn/"
 const ogImage = "https://www.x3dprints.be/images/og-home.jpg"
 const datePublished = "2025-01-05"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 
 export const metadata: Metadata = {
-  title: "3D printen voor Valentijn cadeaus | X3DPrints Blog",
+  title: "3D printen voor Valentijn 2026 | X3DPrints Blog",
   description:
-    "Hartdecor, gepersonaliseerde gifts en lichtobjecten in Silk, Matte en Translucent PLA. Checklist voor materiaal, leds en leveringsopties. Ontwerpbestand niet inbegrepen.",
+    "Hartdecor, gepersonaliseerde gifts en lichtobjecten voor Valentijn 2026 in Silk, Matte en Translucent PLA. Checklist voor materiaal, leds en leveringsopties. Ontwerpbestand niet inbegrepen.",
   alternates: { canonical },
   openGraph: {
-    title: "3D printen voor Valentijn cadeaus",
+    title: "3D printen voor Valentijn 2026",
     description:
-      "Kies Silk/Matte/Translucent PLA voor Valentijn gifts, naamplaatjes en lichtobjecten. Tips voor leds, magneten en leverzones.",
+      "Kies Silk/Matte/Translucent PLA voor Valentijn 2026 gifts, naamplaatjes en lichtobjecten. Tips voor leds, magneten en leverzones.",
   url: canonical,
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte Valentijn decor" }],
     locale: "nl_BE",
@@ -30,8 +31,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printen voor Valentijn cadeaus",
-    description: "Silk/Matte/Translucent PLA voor hartdecor, naamplaatjes en gifts. Inclusief lever- en materiaalchecklist.",
+    title: "3D printen voor Valentijn 2026",
+    description: "Silk/Matte/Translucent PLA voor Valentijn 2026 hartdecor, naamplaatjes en gifts. Inclusief lever- en materiaalchecklist.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -56,7 +57,7 @@ const checklist = [
   "Materiaal: Silk/Marble voor luxe, Matte voor zachte look, Translucent voor licht.",
   "Afwerking: raw, licht geschuurd of geprimed; noteer of je zelf schildert.",
   "Bevestiging: lint, magneet of voetje? Voorzie gaten of pin-holes.",
-  "Deadline rond 14 februari + leveroptie (EV-zone of pakketdienst).",
+  "Deadline rond 14 februari 2026 + leveroptie (EV-zone of pakketdienst).",
 ]
 
 const faqItems = [
@@ -94,17 +95,7 @@ const valentijnVideos = [
   },
 ]
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
-
-const tocItems = [
-  { id: "valentine-materials", label: "Materialen & settings" },
-  { id: "valentine-checklist", label: "Checklist" },
-  { id: "valentine-examples", label: "Voorbeelden" },
-  { id: "valentine-video", label: "Video" },
-  { id: "valentine-planning", label: "Waarom nu plannen?" },
-  { id: "valentine-faq", label: "FAQ Valentijn" },
-  { id: "valentine-sources", label: "Bronnen en referenties" },
-]
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
 
 const references = [
   { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
@@ -114,7 +105,7 @@ const references = [
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
-  headline: "3D printen voor Valentijn cadeaus",
+  headline: "3D printen voor Valentijn 2026",
   description: metadata.description ?? "",
   datePublished: datePublished,
   dateModified,
@@ -138,15 +129,14 @@ export default function BlogValentijn() {
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-rose-700">Seasonal</p>
             <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              3D printen voor Valentijn cadeaus
+              3D printen voor Valentijn 2026
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Gepersonaliseerde gifts, tafeldecor en lichtobjecten in Silk, Matte of Translucent PLA. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice (EUR 45/uur). Levering via EV-zones of pakketdienst.
             </p>
             <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact?material=pla-silk">Plan je Valentijnprint</ShimmerButton>
+              <ShimmerButton href="/contact?material=pla-silk">Plan je Valentijnprint 2026</ShimmerButton>
               <Link
                 href="/segments/3d-printing-valentijn"
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
@@ -157,6 +147,8 @@ export default function BlogValentijn() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="valentine-materials" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
@@ -230,6 +222,8 @@ export default function BlogValentijn() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="valentine-examples" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -261,6 +255,8 @@ export default function BlogValentijn() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="valentine-video" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -286,6 +282,8 @@ export default function BlogValentijn() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="valentine-planning" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
@@ -339,6 +337,8 @@ export default function BlogValentijn() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="valentine-faq" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -364,11 +364,13 @@ export default function BlogValentijn() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="valentine-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -390,13 +392,20 @@ export default function BlogValentijn() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>
   )
 }
+
+
+
 
 
 

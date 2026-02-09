@@ -1,12 +1,13 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/3d-print-prijs-per-stuk/"
 const datePublished = "2026-02-08"
@@ -38,14 +39,6 @@ export const metadata: Metadata = {
     images: ["/Logo.webp"],
   },
 }
-
-const tocItems = [
-  { id: "prijs-blokken", label: "Welke kostblokken bepalen prijs per stuk?" },
-  { id: "prijs-tabel", label: "Wat doet schaal met prijs per stuk?" },
-  { id: "prijs-optimalisatie", label: "Hoe verlaag je prijs per stuk?" },
-  { id: "prijs-faq", label: "FAQ over prijs per stuk" },
-  { id: "prijs-sources", label: "Bronnen en referenties" },
-]
 
 const costBlocks = [
   {
@@ -240,8 +233,9 @@ export default function BlogPricePerPiecePage() {
               Vraag offerte
             </Link>
           </div>
-          <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
         </header>
+
+      <BlogContentOverview locale="nl" />
 
         <section id="prijs-blokken" className="scroll-mt-28">
           <Reveal>
@@ -337,7 +331,7 @@ export default function BlogPricePerPiecePage() {
         <section id="prijs-sources" className="scroll-mt-28">
           <Reveal>
             <GlassCard className="p-6 sm:p-8">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -384,6 +378,7 @@ export default function BlogPricePerPiecePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
     </main>
   )
 }

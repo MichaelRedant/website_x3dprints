@@ -4,12 +4,16 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/maker-monday-snapfits/"
 const publishedDate = "2025-10-27T08:00:00+01:00"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ["maker-monday-snapfits"]
 
 export const metadata: Metadata = {
   title: "Maker Monday #4: Printbare clips, klemmen en snapfits | X3DPrints",
@@ -70,20 +74,6 @@ const tolerances = [
 ]
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
-
-const tocItems = [
-  { id: "snapfit-material", label: "Materiaalkeuze" },
-  { id: "snapfit-orientation", label: "Oriëntatie" },
-  { id: "snapfit-dimensions", label: "Wanddiktes en lengtes" },
-  { id: "snapfit-geometry", label: "Geometrie van de clip" },
-  { id: "snapfit-tolerances", label: "Toleranties" },
-  { id: "snapfit-ribs", label: "Ribs en versteviging" },
-  { id: "snapfit-pla", label: "Waarom PLA faalt" },
-  { id: "snapfit-tpu", label: "Wanneer TPU beter is" },
-  { id: "snapfit-testing", label: "Testen voor productie" },
-  { id: "snapfit-when", label: "Wanneer X3DPrints helpt" },
-  { id: "snapfit-sources", label: "Bronnen en referenties" },
-]
 
 const references = [
   {
@@ -157,7 +147,6 @@ export default function MakerMondaySnapfitsPage() {
               klemmen wél betrouwbaar maken.
             </p>
             <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="mt-6 flex flex-wrap gap-3">
               <ShimmerButton href="/contact?topic=maker-monday-snapfits">Vraag clip-review</ShimmerButton>
               <Link
@@ -186,6 +175,8 @@ export default function MakerMondaySnapfitsPage() {
           </div>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <SectionDivider />
 
@@ -241,6 +232,8 @@ export default function MakerMondaySnapfitsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -286,6 +279,8 @@ export default function MakerMondaySnapfitsPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
@@ -342,6 +337,8 @@ export default function MakerMondaySnapfitsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
@@ -371,6 +368,8 @@ export default function MakerMondaySnapfitsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
           <Reveal>
@@ -399,6 +398,8 @@ export default function MakerMondaySnapfitsPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
@@ -444,11 +445,13 @@ export default function MakerMondaySnapfitsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="snapfit-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-600">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -469,6 +472,8 @@ export default function MakerMondaySnapfitsPage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <SectionDivider />
 
@@ -495,7 +500,14 @@ export default function MakerMondaySnapfitsPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
+      <BlogFaq title={faq.title} items={faq.items} />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>

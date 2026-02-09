@@ -1,12 +1,13 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/3d-print-kosten-besparen/"
 const datePublished = "2026-02-08"
@@ -38,14 +39,6 @@ export const metadata: Metadata = {
     images: ["/Logo.webp"],
   },
 }
-
-const tocItems = [
-  { id: "kosten-hefbomen", label: "Welke hefbomen bepalen je kost?" },
-  { id: "kosten-tabel", label: "Impact per optimalisatie in één tabel" },
-  { id: "kosten-quickwins", label: "Snelle wins voor lagere kosten" },
-  { id: "kosten-faq", label: "FAQ over kosten besparen" },
-  { id: "kosten-sources", label: "Bronnen en referenties" },
-]
 
 const costLevers = [
   {
@@ -243,8 +236,9 @@ export default function BlogKostenBesparenPage() {
               Upload je model
             </Link>
           </div>
-          <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
         </header>
+
+      <BlogContentOverview locale="nl" />
 
         <section id="kosten-hefbomen" className="scroll-mt-28">
           <Reveal>
@@ -338,7 +332,7 @@ export default function BlogKostenBesparenPage() {
         <section id="kosten-sources" className="scroll-mt-28">
           <Reveal>
             <GlassCard className="p-6 sm:p-8">
-              <h2 className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -385,6 +379,7 @@ export default function BlogKostenBesparenPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
     </main>
   )
 }

@@ -1,12 +1,13 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
+import BlogContentOverview from "@/components/BlogContentOverview"
 import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-op-bestelling/"
 const nlCanonical = "https://www.x3dprints.be/blog/3d-printen-op-bestelling/"
@@ -47,14 +48,6 @@ export const metadata: Metadata = {
     images: ["/Logo.webp"],
   },
 }
-
-const tocItems = [
-  { id: "order-process", label: "How does the order flow work?" },
-  { id: "order-briefing", label: "What info speeds up quoting?" },
-  { id: "order-repeat", label: "How do repeat orders stay efficient?" },
-  { id: "order-faq", label: "FAQ about ordering" },
-  { id: "order-sources", label: "Sources and references" },
-]
 
 const steps = [
   {
@@ -216,8 +209,9 @@ export default function OrderArticleEnPage() {
               Check model in viewer
             </Link>
           </div>
-          <ContentTableOfContents title="Contents" items={tocItems} className="max-w-2xl" />
         </header>
+
+      <BlogContentOverview locale="en" />
 
         <section id="order-process" className="scroll-mt-28">
           <Reveal>
@@ -302,7 +296,7 @@ export default function OrderArticleEnPage() {
         <section id="order-sources" className="scroll-mt-28">
           <Reveal>
             <GlassCard className="p-6 sm:p-8">
-              <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+              <h2 id="sources" className="text-2xl font-semibold text-slate-900">Sources and references</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -323,6 +317,9 @@ export default function OrderArticleEnPage() {
           </Reveal>
         </section>
       </article>
+
+      <BlogAuthorNote locale="en" />
+
 
       <BlogReadMore />
 

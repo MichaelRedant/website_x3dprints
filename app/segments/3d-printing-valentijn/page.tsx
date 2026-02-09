@@ -17,9 +17,9 @@ import {
 } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "3D printing voor Valentijn cadeaus | X3DPrints",
+  title: "3D printing voor Valentijn 2026 | X3DPrints",
   description:
-    "Valentijn gifts en decor op maat in PLA Silk, Matte en Translucent met snelle lokale opvolging en duidelijke planning.",
+    "Valentijn 2026 gifts en decor op maat in PLA Silk, Matte en Translucent met snelle lokale opvolging en duidelijke planning.",
   alternates: {
     canonical: "https://www.x3dprints.be/segments/3d-printing-valentijn/",
     languages: {
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "3D printing voor Valentijn cadeaus",
+    title: "3D printing voor Valentijn 2026",
     description:
-      "Hartdecor, gifts en gepersonaliseerde prints met materiaaladvies en snelle productie.",
+      "Hartdecor en gepersonaliseerde prints voor Valentijn 2026 met materiaaladvies en snelle productie.",
     url: "https://www.x3dprints.be/segments/3d-printing-valentijn/",
     images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printing voor Valentijn cadeaus" }],
     locale: "nl_BE",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printing voor Valentijn cadeaus",
+    title: "3D printing voor Valentijn 2026",
     description:
-      "Gepersonaliseerde valentijnprints met duidelijke materiaalkeuze en timing.",
+      "Gepersonaliseerde valentijnprints voor 2026 met duidelijke materiaalkeuze en timing.",
     images: ["/Logo.webp"],
   },
 }
@@ -50,7 +50,7 @@ const pageUrl = String(
   metadata.alternates?.canonical ?? `${SITE.url}/segments/3d-printing-valentijn/`,
 )
 const pageDescription = metadata.description ?? SITE.description
-const lastUpdatedLabel = "Laatst bijgewerkt: 7 februari 2026"
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
 
 const tocItems = [
   { id: "segment-overview", label: "Wat levert deze valentijn-route op?" },
@@ -104,7 +104,7 @@ const faqItems = [
     a: "Voor luxe kiezen klanten vaak PLA Silk of PLA Marble; voor soberder design werkt PLA Matte goed.",
   },
   {
-    q: "Wanneer moet ik aanvragen voor 14 februari?",
+    q: "Wanneer moet ik aanvragen voor 14 februari 2026?",
     a: "Plan best enkele weken vooraf zodat personalisatie, testprint en levering zonder tijdsdruk kunnen gebeuren.",
   },
 ]
@@ -206,10 +206,10 @@ export default function ValentijnSegmentPage() {
           <header className="text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Segment</p>
             <h1 className="mt-3 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              3D printing voor Valentijn cadeaus
+              3D printing voor Valentijn 2026
             </h1>
             <p className="mt-4 text-base text-slate-600">
-              Voor hartdecor, gepersonaliseerde gifts en kleine campagnes met heldere timing richting 14 februari.
+              Voor hartdecor, gepersonaliseerde gifts en kleine campagnes met heldere timing richting 14 februari 2026.
             </p>
             <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -217,7 +217,7 @@ export default function ValentijnSegmentPage() {
                 href="/contact?material=pla-silk&quote=Valentijn%20gift%20aanvraag"
                 event={{ action: "cta_click", category: "segments_valentijn", label: "contact_prefill" }}
               >
-                Start valentijn-aanvraag
+                Start Valentijn 2026-aanvraag
               </ShimmerButton>
               <ShimmerButton
                 href="/materials#material-suggestion-tool"
@@ -377,3 +377,5 @@ export default function ValentijnSegmentPage() {
     </main>
   )
 }
+
+

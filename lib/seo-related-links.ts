@@ -11,6 +11,7 @@ export type RelatedLinksPageType =
   | "services"
   | "materials"
   | "pricing"
+  | "contact"
   | "portfolio"
   | "segments"
   | "material-detail"
@@ -179,6 +180,32 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
       ],
     },
   },
+  contact: {
+    primary: {
+      nl: [
+        { label: "3D print service", href: "/services" },
+        { label: "Materialen & richtlijnen", href: "/materials" },
+        { label: "Prijzen & calculator", href: "/pricing" },
+      ],
+      en: [
+        { label: "3D print service", href: "/services" },
+        { label: "Materials and guidelines", href: "/materials" },
+        { label: "Pricing and calculator", href: "/pricing" },
+      ],
+    },
+    secondary: {
+      nl: [
+        { label: "Portfolio", href: "/portfolio" },
+        { label: "Segmenten & cases", href: "/segments" },
+        { label: "Blog & kennisbank", href: "/blog" },
+      ],
+      en: [
+        { label: "Portfolio", href: "/portfolio" },
+        { label: "Segments & cases", href: "/segments" },
+        { label: "Blog & knowledge base", href: "/blog" },
+      ],
+    },
+  },
   portfolio: {
     primary: {
       nl: [
@@ -227,8 +254,8 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
       ],
       en: [
         { label: "Portfolio", href: "/portfolio" },
-        { label: "Price per piece guide", href: "/blog/3d-print-prijs-per-stuk" },
-        { label: "Design checklist", href: "/blog/3d-print-ontwerp-checklist" },
+        { label: "3D printing cost guide", href: "/blog/hoeveel-kost-3d-printen" },
+        { label: "Design for 3D printing", href: "/blog/ontwerp-3d-printbaar-model" },
         { label: "Pricing and calculator", href: "/pricing" },
       ],
     },

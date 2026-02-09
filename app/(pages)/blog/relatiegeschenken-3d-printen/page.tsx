@@ -6,6 +6,8 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import BlogReadMore from "@/components/BlogReadMore"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
 
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
@@ -170,6 +172,8 @@ export default function BlogRelatiegeschenken() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
@@ -233,6 +237,8 @@ export default function BlogRelatiegeschenken() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -264,6 +270,8 @@ export default function BlogRelatiegeschenken() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -290,6 +298,8 @@ export default function BlogRelatiegeschenken() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -315,25 +325,29 @@ export default function BlogRelatiegeschenken() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
               <p className="mt-2 text-sm text-slate-700">
                 Materiaal- en file-format referenties die passen bij relatiegeschenken en gepersonaliseerde batches.
               </p>
               <ul className="mt-4 space-y-3 text-sm text-slate-700">
                 {references.map((ref) => (
                   <li key={ref.href} className="rounded-xl border border-slate-200/70 bg-white/70 p-3">
-                    <Link
-                      href={ref.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="font-semibold text-indigo-700 underline underline-offset-2"
-                    >
-                      {ref.label}
-                    </Link>
+                    <cite className="not-italic">
+                      <Link
+                        href={ref.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-semibold text-indigo-700 underline underline-offset-2"
+                      >
+                        {ref.label}
+                      </Link>
+                    </cite>
                     <p className="mt-1">{ref.description}</p>
                   </li>
                 ))}
@@ -343,8 +357,12 @@ export default function BlogRelatiegeschenken() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>

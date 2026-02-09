@@ -1226,3 +1226,9 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   const handler = {} as typeof import("..\\..\\app\\layout.js")
   handler satisfies LayoutConfig<"/">
 }
+
+// Validate ..\..\app\segments\layout.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\segments\\layout.js")
+  handler satisfies LayoutConfig<"/segments">
+}

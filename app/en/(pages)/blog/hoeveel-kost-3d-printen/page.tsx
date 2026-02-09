@@ -1,14 +1,19 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ_EN } from "@/content/blog-faq-en"
 
 const canonical = "https://www.x3dprints.be/en/blog/hoeveel-kost-3d-printen/"
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=how-much-3d-printing-cost"
 const datePublished = "2024-10-01"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ_EN["hoeveel-kost-3d-printen"]
 const lastUpdatedLabel = "Last updated: 8 February 2026"
 const pricingHref = `/en/pricing${utm}`
 const contactHref = `/en/contact${utm}`
@@ -74,24 +79,6 @@ const costFactors = [
   },
 ]
 
-const faq = [
-  {
-    q: "How fast do I get an exact quote?",
-    a: "Within 1 business day after receiving your STL/STEP, including material choice and delivery. We always share feedback on critical points like wall thickness or orientation.",
-  },
-  {
-    q: "What if I order multiple pieces?",
-    a: "We group prints per material/machine, which creates volume savings once setup time is shared across parts.",
-  },
-  {
-    q: "Can I estimate print time myself?",
-    a: "Yes. Use the Small/Medium/Large guide prices on the pricing page. For precise timing we need your model to analyse slicer data.",
-  },
-  {
-    q: "Why do prices differ between print services?",
-    a: "Each shop uses different machines, material costs, speeds and quality settings. At X3DPrints we use a transparent model based on print duration and material usage for predictable pricing.",
-  },
-]
 
 const references = [
   {
@@ -155,11 +142,13 @@ export default function CostArticleEn() {
               <p className="mt-2 text-sm text-slate-700">{factor.description}</p>
               <p className="mt-2 text-xs text-slate-500">{factor.tip}</p>
               <Link href={factor.link.href} className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 hover:text-indigo-500">
-                {factor.link.label} <span aria-hidden>â†’</span>
+                {factor.link.label} <span aria-hidden>→</span>
               </Link>
             </GlassCard>
           ))}
         </section>
+
+      <BlogContentOverview locale="en" />
 
         <section className="rounded-2xl border border-emerald-100 bg-white/85 p-6 shadow-lg backdrop-blur">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -188,15 +177,15 @@ export default function CostArticleEn() {
             <div className="mt-4 space-y-3 text-sm text-slate-700">
               <div className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
                 <p className="text-sm font-semibold text-slate-900">Small: keychain or clip</p>
-                <p className="mt-1">PLA Matte, ~30?60 min print, minimal supports. ~€5?€9 ex. shipping.</p>
+                <p className="mt-1">PLA Matte, ~30-60 min print, minimal supports. ~€5-€9 ex. shipping.</p>
               </div>
               <div className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
                 <p className="text-sm font-semibold text-slate-900">Medium: enclosure 10x10x8 cm</p>
-                <p className="mt-1">PLA or PETG, ~3?5 h print, light supports. ~€20?€35 depending on material and finish.</p>
+                <p className="mt-1">PLA or PETG, ~3-5 h print, light supports. ~€20-€35 depending on material and finish.</p>
               </div>
               <div className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
                 <p className="text-sm font-semibold text-slate-900">Large: decor piece 20x20x20 cm</p>
-                <p className="mt-1">PLA Matte/Silk, ~10?18 h print, support-heavy if overhangs. ~€49?€95 depending on complexity and infill.</p>
+                <p className="mt-1">PLA Matte/Silk, ~10-18 h print, support-heavy if overhangs. ~€49-€95 depending on complexity and infill.</p>
               </div>
             </div>
           </GlassCard>
@@ -219,7 +208,7 @@ export default function CostArticleEn() {
         </section>
 
         <section className="grid gap-4 md:grid-cols-3">
-          {faq.map((item) => (
+          {faq.items.map((item) => (
             <GlassCard key={item.q} className="p-5">
               <h3 className="text-base font-semibold text-slate-900">{item.q}</h3>
               <p className="mt-2 text-sm text-slate-700">{item.a}</p>
@@ -239,7 +228,7 @@ export default function CostArticleEn() {
       </article>
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <h2 id="sources" className="text-2xl font-semibold text-slate-900">Sources and references</h2>
           <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
           <ul className="mt-4 space-y-3 text-sm text-slate-700">
             {references.map((ref) => (
@@ -254,10 +243,15 @@ export default function CostArticleEn() {
         </div>
       </section>
 
+      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="en" />
     </main>
   )
 }
+
 
 
 

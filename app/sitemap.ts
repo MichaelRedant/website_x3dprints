@@ -29,6 +29,27 @@ async function statIfExists(target: string) {
   }
 }
 
+async function readDateModified(target: string): Promise<Date | null> {
+  try {
+    const fullPath = path.isAbsolute(target) ? target : path.join(ROOT, target)
+    const content = await fs.readFile(fullPath, "utf8")
+    const match = content.match(/const\s+(?:DATE_MODIFIED|dateModified)\s*=\s*["']([^"']+)["']/)
+    if (!match) return null
+    const parsed = new Date(match[1])
+    if (Number.isNaN(parsed.getTime())) return null
+    return parsed
+  } catch {
+    return null
+  }
+}
+
+async function latestDateModified(paths: string[]): Promise<Date | null> {
+  const dates = await Promise.all(paths.map(readDateModified))
+  const times = dates.filter(Boolean).map((d) => (d as Date).getTime())
+  if (!times.length) return null
+  return new Date(Math.max(...times))
+}
+
 async function latestMtime(paths: string[]): Promise<Date | null> {
   const stats = await Promise.all(paths.map(statIfExists))
   const mtimes = stats.filter(Boolean).map((s) => (s as Stats).mtime.getTime())
@@ -209,34 +230,36 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ])
 
   const blogRoutes: MetadataRoute.Sitemap = await Promise.all(
-    nlBlogSlugs.flatMap((slug) => {
+    nlBlogSlugs.map(async (slug) => {
       const enPath = enBlogSlugs.includes(slug) ? `/en/blog/${slug}` : undefined
       const sources = [
         `app/(pages)/blog/${slug}/page.tsx`,
         enPath ? `app/en/(pages)/blog/${slug}/page.tsx` : undefined,
       ].filter(Boolean) as string[]
       const alternates = enPath ? buildAlternates(`/blog/${slug}`, enPath) : undefined
+      const lastModified =
+        (await latestDateModified(sources)) ?? (await latestMtime(sources)) ?? new Date()
 
-      return [
-        (async () => ({
-          url: `${BASE_URL}${withTrailingSlash(`/blog/${slug}`)}`,
-          priority: 0.6,
-          changeFrequency: "monthly" as const,
-          lastModified: (await latestMtime(sources)) ?? new Date(),
-          ...(alternates ? { alternates } : {}),
-        }))(),
-        ...(enPath
-          ? [
-              (async () => ({
-                url: `${BASE_URL}${withTrailingSlash(enPath)}`,
-                priority: 0.6,
-                changeFrequency: "monthly" as const,
-                lastModified: (await latestMtime(sources)) ?? new Date(),
-                alternates,
-              }))(),
-            ]
-          : []),
+      const baseEntry = {
+        priority: 0.6,
+        changeFrequency: "monthly" as const,
+        lastModified,
+        ...(alternates ? { alternates } : {}),
+      }
+
+      const entries: MetadataRoute.Sitemap = [
+        { url: `${BASE_URL}${withTrailingSlash(`/blog/${slug}`)}`, ...baseEntry },
       ]
+
+      if (enPath) {
+        entries.push({
+          url: `${BASE_URL}${withTrailingSlash(enPath)}`,
+          ...baseEntry,
+          alternates,
+        })
+      }
+
+      return entries
     }),
   ).then((entries) => entries.flat())
 
@@ -248,7 +271,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.6,
         changeFrequency: "monthly" as const,
         lastModified:
-          (await latestMtime([`app/en/(pages)/blog/${slug}/page.tsx`])) ?? new Date(),
+          (await latestDateModified([`app/en/(pages)/blog/${slug}/page.tsx`])) ??
+          (await latestMtime([`app/en/(pages)/blog/${slug}/page.tsx`])) ??
+          new Date(),
       })),
   )
 

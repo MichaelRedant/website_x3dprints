@@ -4,8 +4,11 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
-import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-voor-beginners/"
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=3d-printen-voor-beginners"
@@ -15,6 +18,7 @@ const pricingHref = `/pricing${utm}`
 const viewerHref = `/viewer${utm}`
 const datePublished = "2024-08-20"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ["3d-printen-voor-beginners"]
 
 export const metadata: Metadata = {
   title: "3D printen voor beginners | X3DPrints",
@@ -54,14 +58,6 @@ const pitfalls = [
 ]
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
-
-const tocItems = [
-  { id: "beginners-steps", label: "Stappenplan" },
-  { id: "beginners-checklist", label: "Checklist per stap" },
-  { id: "beginners-blocks", label: "Materialen, bestanden en coaching" },
-  { id: "beginners-pitfalls", label: "Veelgemaakte fouten" },
-  { id: "beginners-sources", label: "Bronnen en referenties" },
-]
 
 const checklistRows = [
   { step: "Doel bepalen", focus: "Prototype, decor of functioneel bepaalt materiaal en afwerking." },
@@ -120,7 +116,6 @@ export default function BeginnersArticlePage() {
               Of je nu student, marketeer of maker bent: met een goed bestand en duidelijke context krijg je snel een professioneel resultaat.
             </p>
             <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-2xl" />
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
               <ShimmerButton href={viewerHref} event={{ action: "cta_click", category: "blog_top", label: "viewer_beginners" }}>
                 Upload je eerste model
@@ -142,6 +137,8 @@ export default function BeginnersArticlePage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="beginners-steps" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -159,6 +156,8 @@ export default function BeginnersArticlePage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="beginners-checklist" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
@@ -185,6 +184,8 @@ export default function BeginnersArticlePage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section id="beginners-blocks" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
@@ -222,6 +223,8 @@ export default function BeginnersArticlePage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="beginners-pitfalls" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -240,11 +243,13 @@ export default function BeginnersArticlePage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
       <section id="beginners-sources" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -265,6 +270,8 @@ export default function BeginnersArticlePage() {
           </Reveal>
         </div>
       </section>
+
+      <BlogContentOverview locale="nl" />
 
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
@@ -294,7 +301,14 @@ export default function BeginnersArticlePage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="nl" />
+
+      <BlogFaq title={faq.title} items={faq.items} />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="nl" />
+
       <BlogReadMore />
 
     </main>

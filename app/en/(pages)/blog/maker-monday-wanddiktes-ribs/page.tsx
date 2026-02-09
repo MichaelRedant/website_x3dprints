@@ -5,10 +5,15 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
+import BlogContentOverview from "@/components/BlogContentOverview"
+import BlogAuthorNote from "@/components/BlogAuthorNote"
+import BlogFaq from "@/components/BlogFaq"
+import { BLOG_FAQ_EN } from "@/content/blog-faq-en"
 
 const canonical = "https://www.x3dprints.be/en/blog/maker-monday-wanddiktes-ribs/"
 const publishedDate = "2025-11-10T08:00:00+01:00"
 const dateModified = "2026-02-08"
+const faq = BLOG_FAQ_EN["maker-monday-wanddiktes-ribs"]
 const lastUpdatedLabel = "Last updated: 8 February 2026"
 
 export const metadata: Metadata = {
@@ -143,6 +148,8 @@ export default function MakerMondayWallsEnPage() {
         </div>
       </section>
 
+      <BlogContentOverview locale="en" />
+
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
@@ -233,7 +240,7 @@ export default function MakerMondayWallsEnPage() {
       </section>
       <section className="px-6 pb-24 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Sources and references</h2>
+          <h2 id="sources" className="text-2xl font-semibold text-slate-900">Sources and references</h2>
           <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
           <ul className="mt-4 space-y-3 text-sm text-slate-700">
             {references.map((ref) => (
@@ -248,7 +255,12 @@ export default function MakerMondayWallsEnPage() {
         </div>
       </section>
 
+      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" />
+
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <BlogAuthorNote locale="en" />
+
       <BlogReadMore />
     </main>
   )
