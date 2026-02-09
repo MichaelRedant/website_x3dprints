@@ -71,7 +71,7 @@ const materialPresets = [
 
 const calibrationTips = [
   "Run flow calibration when switching brands/colours, especially for translucent or silk PLA.",
-  "Check first-layer squish; Bambu beds can be aggressiveâ€”avoid elephants foot by reducing first layer overlap.",
+  "Check first-layer squish; Bambu beds can be aggressive?avoid elephants foot by reducing first layer overlap.",
   "AMS: dry filament, use desiccant, and avoid excessive retractions on TPU.",
   "For PETG stringing, dry at 65 C, lower fan and drop nozzle 5 C before tweaking retraction.",
   "Use timelapse/monitoring for long PETG runs; pause to clean nozzle if blobs appear.",

@@ -5,6 +5,7 @@ import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
+import ReadMoreLinks from "@/components/ReadMoreLinks"
 import {
   SITE,
   buildFaqPageSchema,
@@ -346,6 +347,8 @@ export default function EngineersSegmentPage() {
       <section id="segment-faq" className="mx-auto mt-12 max-w-4xl scroll-mt-28">
         <Faq title="FAQ voor engineers" items={faqItems} />
       </section>
+
+      <ReadMoreLinks pageType="segments" />
 
       <section id="segment-sources" className="mx-auto mt-12 max-w-5xl scroll-mt-28">
         <Reveal>

@@ -48,8 +48,8 @@ export const metadata: Metadata = {
 
 const heroStats = [
   { label: "Flame rating", value: "UL94 V-0", detail: "Self-extinguishing within seconds" },
-  { label: "Nozzle / bed", value: "260-280 Ã‚Â°C / 90-110 Ã‚Â°C", detail: "Enclosure + glue stick + brim" },
-  { label: "Drying", value: "8h @ 80 Ã‚Â°C", detail: "Keep in drybox during the print" },
+  { label: "Nozzle / bed", value: "260-280 ?C / 90-110 ?C", detail: "Enclosure + glue stick + brim" },
+  { label: "Drying", value: "8h @ 80 ?C", detail: "Keep in drybox during the print" },
 ]
 
 const whenToUse = [
@@ -67,20 +67,20 @@ const whenToAvoid = [
 ]
 
 const printSettings = [
-  { label: "Nozzle", value: "260-280 Ã‚Â°C", note: "Start ~265 Ã‚Â°C; bump up for thick walls." },
-  { label: "Bed", value: "90-110 Ã‚Â°C + glue stick", note: "Textured PEI or garolite with brim." },
+  { label: "Nozzle", value: "260-280 ?C", note: "Start ~265 ?C; bump up for thick walls." },
+  { label: "Bed", value: "90-110 ?C + glue stick", note: "Textured PEI or garolite with brim." },
   { label: "Speed", value: "30-55 mm/s", note: "Lower accel to keep layer bonding strong." },
   { label: "Cooling", value: "0-15%", note: "Just enough for bridges; too much causes cracks." },
-  { label: "Drying", value: "8h @ 80 Ã‚Â°C", note: "Leave in drybox while printing to avoid matte/bubbly layers." },
-  { label: "Chamber", value: "Warm, enclosed", note: "20-30 Ã‚Â°C chamber cuts warping risk." },
+  { label: "Drying", value: "8h @ 80 ?C", note: "Leave in drybox while printing to avoid matte/bubbly layers." },
+  { label: "Chamber", value: "Warm, enclosed", note: "20-30 ?C chamber cuts warping risk." },
 ]
 
 const comparisonRows = [
   { label: "Flame retardant", pc: "No", pcfr: "Yes, UL94 V-0" },
-  { label: "Glass transition", pc: "~110 Ã‚Â°C", pcfr: "~110 Ã‚Â°C" },
+  { label: "Glass transition", pc: "~110 ?C", pcfr: "~110 ?C" },
   { label: "Transparency", pc: "Transparent / Clear Black", pcfr: "Semi-transparent; black/gray/white" },
   { label: "Use case", pc: "Outdoor, machine covers, diffusers", pcfr: "Electronics, rail enclosures, safety critical" },
-  { label: "Price", pc: "Ã¯Â¿Â½Ã¯Â¿Â½Ã¯Â¿Â½", pcfr: "Ã¯Â¿Â½Ã¯Â¿Â½Ã¯Â¿Â½+" },
+  { label: "Price", pc: "???", pcfr: "???+" },
 ]
 
 const references = [
@@ -196,7 +196,7 @@ export default function FilamentFridayPcFrEnPage() {
             <GlassCard className="h-full border border-white/40 bg-white/85 p-6 shadow-lg backdrop-blur">
               <h2 className="text-2xl font-semibold text-slate-900">When to choose PC FR</h2>
               <p className="mt-3 text-sm text-slate-600">
-                PC FR is built for safety-critical parts: it self-extinguishes, stays dimensionally stable around 110 Ã‚Â°C and
+                PC FR is built for safety-critical parts: it self-extinguishes, stays dimensionally stable around 110 ?C and
                 tolerates UV. Think PSU covers, rail cabinets and electronics near heat. If flame rating is not required, stay with{" "}
                 <Link href="/en/blog/filament-vrijdag-pc" className="text-indigo-600 underline underline-offset-4">
                   standard PC
@@ -280,7 +280,7 @@ export default function FilamentFridayPcFrEnPage() {
               <h2 className="text-2xl font-semibold text-slate-900">PC FR vs PC</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Bottom line: choose PC FR when safety or compliance is key. Choose PC when transparency and lower cost matter
-                without a UL rating. Both hold form around 110 Ã‚Â°C.
+                without a UL rating. Both hold form around 110 ?C.
               </p>
               <div className="mt-4 overflow-x-auto">
                 <table className="min-w-[320px] text-sm text-slate-700">
@@ -337,7 +337,7 @@ export default function FilamentFridayPcFrEnPage() {
                   <Link href="/en/pricing" className="font-semibold text-emerald-600 transition hover:text-emerald-700">
                     Pricing & calculator
                   </Link>{" "}
-                  Ã¢â‚¬â€œ see price impact of PC FR vs PC (higher kg price + drying time).
+                  ? see price impact of PC FR vs PC (higher kg price + drying time).
                 </li>
                 <li>
                   <Link
@@ -346,13 +346,13 @@ export default function FilamentFridayPcFrEnPage() {
                   >
                     Material Suggestion Tool
                   </Link>{" "}
-                  Ã¢â‚¬â€œ let the wizard decide if PC FR is truly needed.
+                  ? let the wizard decide if PC FR is truly needed.
                 </li>
                 <li>
                   <Link href="/en/blog/hoeveel-kost-3d-printen" className="font-semibold text-emerald-600 transition hover:text-emerald-700">
                     Cost guide
                   </Link>{" "}
-                  Ã¢â‚¬â€œ understand why premium materials add lead time.
+                  ? understand why premium materials add lead time.
                 </li>
               </ul>
             </GlassCard>
@@ -386,7 +386,7 @@ export default function FilamentFridayPcFrEnPage() {
             <GlassCard className="flex flex-col gap-6 border border-white/40 bg-white/85 p-6 shadow-xl backdrop-blur sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Next step</p>
-                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Need PC FR? LetÃ¢â‚¬â„¢s plan it together.</h2>
+                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Need PC FR? Let?s plan it together.</h2>
                 <p className="mt-2 text-sm text-slate-600">
                   Share STL/STEP and any safety requirements. We will confirm whether PC FR, standard PC or PETG fits best,
                   with price and timing plus an honest alternative where possible.

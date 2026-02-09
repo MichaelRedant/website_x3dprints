@@ -220,14 +220,16 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
     },
     secondary: {
       nl: [
+        { label: "Portfolio", href: "/portfolio" },
+        { label: "Prijs per stuk gids", href: "/blog/3d-print-prijs-per-stuk" },
+        { label: "Ontwerp checklist", href: "/blog/3d-print-ontwerp-checklist" },
         { label: "Prijzen & calculator", href: "/pricing" },
-        { label: "Blog & kennisbank", href: "/blog" },
-        { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       ],
       en: [
+        { label: "Portfolio", href: "/portfolio" },
+        { label: "Price per piece guide", href: "/blog/3d-print-prijs-per-stuk" },
+        { label: "Design checklist", href: "/blog/3d-print-ontwerp-checklist" },
         { label: "Pricing and calculator", href: "/pricing" },
-        { label: "Blog and knowledge base", href: "/blog" },
-        { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       ],
     },
   },

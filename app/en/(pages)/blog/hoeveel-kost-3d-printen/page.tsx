@@ -188,15 +188,15 @@ export default function CostArticleEn() {
             <div className="mt-4 space-y-3 text-sm text-slate-700">
               <div className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
                 <p className="text-sm font-semibold text-slate-900">Small: keychain or clip</p>
-                <p className="mt-1">PLA Matte, ~30â€“60 min print, minimal supports. ~€5â€“€9 ex. shipping.</p>
+                <p className="mt-1">PLA Matte, ~30?60 min print, minimal supports. ~€5?€9 ex. shipping.</p>
               </div>
               <div className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
                 <p className="text-sm font-semibold text-slate-900">Medium: enclosure 10x10x8 cm</p>
-                <p className="mt-1">PLA or PETG, ~3â€“5 h print, light supports. ~€20â€“€35 depending on material and finish.</p>
+                <p className="mt-1">PLA or PETG, ~3?5 h print, light supports. ~€20?€35 depending on material and finish.</p>
               </div>
               <div className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
                 <p className="text-sm font-semibold text-slate-900">Large: decor piece 20x20x20 cm</p>
-                <p className="mt-1">PLA Matte/Silk, ~10â€“18 h print, support-heavy if overhangs. ~€49â€“€95 depending on complexity and infill.</p>
+                <p className="mt-1">PLA Matte/Silk, ~10?18 h print, support-heavy if overhangs. ~€49?€95 depending on complexity and infill.</p>
               </div>
             </div>
           </GlassCard>

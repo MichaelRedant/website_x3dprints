@@ -95,6 +95,42 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/blog/3d-geprinte-platen-nasiam">
 }
 
+// Validate ..\..\app\(pages)\blog\3d-print-assemblage-gids\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\3d-print-assemblage-gids\\page.js")
+  handler satisfies AppPageConfig<"/blog/3d-print-assemblage-gids">
+}
+
+// Validate ..\..\app\(pages)\blog\3d-print-kosten-besparen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\3d-print-kosten-besparen\\page.js")
+  handler satisfies AppPageConfig<"/blog/3d-print-kosten-besparen">
+}
+
+// Validate ..\..\app\(pages)\blog\3d-print-materiaal-voor-zichtwerk\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\3d-print-materiaal-voor-zichtwerk\\page.js")
+  handler satisfies AppPageConfig<"/blog/3d-print-materiaal-voor-zichtwerk">
+}
+
+// Validate ..\..\app\(pages)\blog\3d-print-offerte-aanvragen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\3d-print-offerte-aanvragen\\page.js")
+  handler satisfies AppPageConfig<"/blog/3d-print-offerte-aanvragen">
+}
+
+// Validate ..\..\app\(pages)\blog\3d-print-ontwerp-checklist\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\3d-print-ontwerp-checklist\\page.js")
+  handler satisfies AppPageConfig<"/blog/3d-print-ontwerp-checklist">
+}
+
+// Validate ..\..\app\(pages)\blog\3d-print-prijs-per-stuk\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\3d-print-prijs-per-stuk\\page.js")
+  handler satisfies AppPageConfig<"/blog/3d-print-prijs-per-stuk">
+}
+
 // Validate ..\..\app\(pages)\blog\3d-printen-back-to-school\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\3d-printen-back-to-school\\page.js")
@@ -251,6 +287,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/blog/gridfinity-modulair-opslagsysteem">
 }
 
+// Validate ..\..\app\(pages)\blog\hittebestendig-3d-print-materiaal\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\hittebestendig-3d-print-materiaal\\page.js")
+  handler satisfies AppPageConfig<"/blog/hittebestendig-3d-print-materiaal">
+}
+
 // Validate ..\..\app\(pages)\blog\hoe-3d-print-je-onderdelen-voor-buitengebruik\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\hoe-3d-print-je-onderdelen-voor-buitengebruik\\page.js")
@@ -351,6 +393,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\relatiegeschenken-3d-printen\\page.js")
   handler satisfies AppPageConfig<"/blog/relatiegeschenken-3d-printen">
+}
+
+// Validate ..\..\app\(pages)\blog\sterke-3d-print-materialen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\sterke-3d-print-materialen\\page.js")
+  handler satisfies AppPageConfig<"/blog/sterke-3d-print-materialen">
 }
 
 // Validate ..\..\app\(pages)\blog\tool-organizers-3d-printen\page.tsx

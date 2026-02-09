@@ -3,12 +3,14 @@ import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/tool-organizers-3d-printen/";
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=tool-organizers-3d-printen";
 const contactHref = `/contact${utm}`;
 const toolHref = `/materials${utm}#material-suggestion-tool`;
 const publishedDate = "2026-01-29T08:00:00+01:00"
+const dateModified = "2026-02-08"
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
 
 const tocItems = [
@@ -60,6 +62,16 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image" },
 }
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "Tool organizers 3D printen: Gridfinity, Packout, TSTAK en custom",
+  description: metadata.description ?? "",
+  datePublished: publishedDate,
+  dateModified,
+  image: "/images/organizers/modugrid/ModuGrid2.jpg",
+  inLanguage: "nl-BE",
+})
 
 export default function ToolOrganizersBlog() {
   return (
@@ -341,6 +353,8 @@ export default function ToolOrganizersBlog() {
 
         <OrganizerCta />
       </article>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
     </main>
   )
 }

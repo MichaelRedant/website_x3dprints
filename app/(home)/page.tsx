@@ -32,7 +32,7 @@ const NL_METADATA: Metadata = {
     description:
       "Van STL/STEP naar strakke 3D prints in België. 3D printen op maat voor projecten in Gent, Aalst en de rest van Vlaanderen.",
     url: "https://www.x3dprints.be/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D print service van X3DPrints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -61,11 +61,16 @@ const EN_METADATA: Metadata = {
     description:
       "From STL/STEP to clean 3D prints in Belgium. Local guidance, shorter lead times and durable finishing for projects in Ghent, Aalst and across Flanders.",
     url: "https://www.x3dprints.be/en/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printing service by X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "3D printing in Belgium | X3DPrints",
+    description: "Fast local 3D printing with material advice, clear pricing and reliable delivery.",
+    images: ["/images/og-home.jpg"],
+  },
 }
 
 void EN_METADATA

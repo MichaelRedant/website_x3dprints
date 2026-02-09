@@ -10,8 +10,8 @@ import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
-const NL_CANONICAL = "https://www.x3dprints.be/blog/octopus-accountancy-3d-print-goodies"
-const EN_CANONICAL = "https://www.x3dprints.be/en/blog/octopus-accountancy-3d-print-goodies"
+const NL_CANONICAL = "https://www.x3dprints.be/blog/octopus-accountancy-3d-print-goodies/"
+const EN_CANONICAL = "https://www.x3dprints.be/en/blog/octopus-accountancy-3d-print-goodies/"
 const PUBLISHED_DATE = "2025-12-16T08:00:00+01:00"
 const DATE_MODIFIED = "2026-02-08"
 

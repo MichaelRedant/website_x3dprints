@@ -4,7 +4,7 @@ import BlogPage from "./BlogPage"
 const NL_METADATA: Metadata = {
   title: "3D print blog & kennisbank | X3DPrints",
   description:
-    "Strategische 3D print artikels over kostprijs, materiaalkeuze, Bambu X1C instellingen en ontwerp best practices. Inclusief links naar calculator en materiaaloverzicht.",
+    "Strategische 3D print artikels over kostprijs, materiaalkeuze, ontwerpchecklists en Bambu X1C instellingen. Inclusief links naar calculator en materiaaloverzicht.",
   alternates: {
     canonical: "https://www.x3dprints.be/blog/",
     languages: {
@@ -16,7 +16,7 @@ const NL_METADATA: Metadata = {
   openGraph: {
     title: "3D print blog & kennisbank | X3DPrints",
     description:
-      "Leer hoe je 3D print projecten plant: kostenraming, PLA vs PETG, Bambu X1C instellingen en designrichtlijnen. Rechtstreekse links naar prijscalculator en materialen.",
+      "Leer hoe je 3D print projecten plant: kostenraming, materiaalkeuze, designchecklists en Bambu X1C instellingen. Rechtstreekse links naar prijscalculator en materialen.",
     url: "https://www.x3dprints.be/blog/",
     images: [{ url: "/images/og-blog.jpg", width: 1200, height: 630, alt: "3D print blog X3DPrints" }],
     locale: "nl_BE",

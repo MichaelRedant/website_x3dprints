@@ -183,7 +183,7 @@ export default function MakerMondayFastenersEnPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Next step</p>
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900">Need help with a fastening strategy?</h2>
                 <p className="mt-2 text-sm text-slate-600">
-                  Send the load case and environment. We will pick the right screw, pilot hole and reinforcementâ€”or suggest a
+                  Send the load case and environment. We will pick the right screw, pilot hole and reinforcement?or suggest a
                   partner process if that is safer.
                 </p>
               </div>

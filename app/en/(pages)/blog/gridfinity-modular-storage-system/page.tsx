@@ -47,7 +47,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Which magnets fit Gridfinity?",
-    a: "Standard 6Ã—2 mm magnets in each corner. For heavy duty we can add M3 screws to lock baseplates or bins.",
+    a: "Standard 6?2 mm magnets in each corner. For heavy duty we can add M3 screws to lock baseplates or bins.",
   },
   {
     q: "Which material should I choose?",
@@ -55,7 +55,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Can you make a custom bin for one tool?",
-    a: "Yes. Send a top-down photo, LÃ—WÃ—H (or diameter Ã— height), desired orientation and quantity. We model a pocket, share a preview and adjust until it fits.",
+    a: "Yes. Send a top-down photo, L?W?H (or diameter ? height), desired orientation and quantity. We model a pocket, share a preview and adjust until it fits.",
   },
   {
     q: "Does Gridfinity work inside Packout cases?",
@@ -70,7 +70,7 @@ const FAQ_ITEMS = [
 export const metadata: Metadata = {
   title: "Gridfinity: modular storage, custom-fit by X3DPrints",
   description:
-    "Gridfinity explained: 42Ã—42 grid, 7 mm units, magnets, labels, use cases and how X3DPrints designs custom bins and Packout-ready inlays.",
+    "Gridfinity explained: 42?42 grid, 7 mm units, magnets, labels, use cases and how X3DPrints designs custom bins and Packout-ready inlays.",
   alternates: {
     canonical,
     languages: {
@@ -114,12 +114,12 @@ export default function GridfinityBlogEn() {
     <main className="px-6 pb-16 sm:px-8 lg:px-12">
       <article className="mx-auto max-w-4xl space-y-12">
         <header className="space-y-4 pt-10 sm:pt-14">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-700">Gridfinity Â· guide</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-700">Gridfinity ? guide</p>
           <h1 className="text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
             Gridfinity: the modular storage system transforming workshops and teams
           </h1>
           <p className="text-lg text-slate-700 dark:text-slate-200">
-            Why the 42Ã—42Ã—7 mm grid wins, and how X3DPrints designs custom bins, starter kits and Packout-ready inlays so you buy calm and timeâ€”not plastic.
+            Why the 42?42?7 mm grid wins, and how X3DPrints designs custom bins, starter kits and Packout-ready inlays so you buy calm and time?not plastic.
           </p>
           <div className="flex flex-wrap gap-3 text-sm text-slate-600">
             <span>{lastUpdatedLabel}</span>
@@ -132,7 +132,7 @@ export default function GridfinityBlogEn() {
         <section className="space-y-3 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">What is Gridfinity?</h2>
           <p>
-            Gridfinity uses a standardized 42 Ã— 42 mm grid and 7â€‘mm height units. Bins snap per grid cell and stack per U. Magnet pockets for 6Ã—2â€‘mm magnets keep trays planted; M3 screws add lock-down if needed. Label edges (e.g. 9â€‘mm tape) keep layouts readable. PLA or PETG deliver crisp, strong prints.
+            Gridfinity uses a standardized 42 ? 42 mm grid and 7?mm height units. Bins snap per grid cell and stack per U. Magnet pockets for 6?2?mm magnets keep trays planted; M3 screws add lock-down if needed. Label edges (e.g. 9?mm tape) keep layouts readable. PLA or PETG deliver crisp, strong prints.
           </p>
           <ul className="list-disc space-y-2 pl-5">
             <li>Cross-compatible designs between makers and printers.</li>
@@ -144,7 +144,7 @@ export default function GridfinityBlogEn() {
         <section className="space-y-3 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Why the hype?</h2>
           <ol className="list-decimal space-y-2 pl-5">
-            <li><strong>Modular perfection:</strong> the 42â€‘mm grid keeps baseplates and bins compatible.</li>
+            <li><strong>Modular perfection:</strong> the 42?mm grid keeps baseplates and bins compatible.</li>
             <li><strong>Personalizable:</strong> any tool can get an exact-fit bin.</li>
             <li><strong>Scalable:</strong> start small, grow without breaking standards.</li>
           </ol>
@@ -154,9 +154,9 @@ export default function GridfinityBlogEn() {
         <section className="space-y-4 text-slate-700 dark:text-slate-200">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Technical core</h2>
           <GlassCard className="space-y-2">
-            <p><strong>Grid & sizes:</strong> 42Ã—42 mm, 7â€‘mm U; nominal bin width 41.5 mm for smooth fit.</p>
-            <p><strong>Magnets:</strong> 6Ã—2â€‘mm magnet pockets in corners; M3 screws optional for transport.</p>
-            <p><strong>Labels:</strong> label edge fits 9â€‘mm tape for fast identification.</p>
+            <p><strong>Grid & sizes:</strong> 42?42 mm, 7?mm U; nominal bin width 41.5 mm for smooth fit.</p>
+            <p><strong>Magnets:</strong> 6?2?mm magnet pockets in corners; M3 screws optional for transport.</p>
+            <p><strong>Labels:</strong> label edge fits 9?mm tape for fast identification.</p>
             <p><strong>Materials:</strong> PLA Matte for desks/drawers; PETG for transport or warmer settings.</p>
             <p>
               <strong>Generators:</strong> web tools (GridfinityCreator, Perplexing Labs) and parametric libs (Build123d, CadQuery, OpenSCAD) create custom bins in minutes.
@@ -172,7 +172,7 @@ export default function GridfinityBlogEn() {
             <li><strong>Home:</strong> make-up, office supplies, sewing gear, kitchen drawers.</li>
           </ul>
           <p>
-            Integrations with case systems (Milwaukee Packout, DeWALT ToughSystem, Stanley TSTAK) are booming: print baseplates that fit the case and keep the 42â€‘mm grid. We make Packout-compatible Gridfinity inlays that respect your tray height units.
+            Integrations with case systems (Milwaukee Packout, DeWALT ToughSystem, Stanley TSTAK) are booming: print baseplates that fit the case and keep the 42?mm grid. We make Packout-compatible Gridfinity inlays that respect your tray height units.
           </p>
         </section>
 

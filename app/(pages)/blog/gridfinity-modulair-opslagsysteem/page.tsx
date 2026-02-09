@@ -5,6 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import OrganizerCta from "@/components/OrganizerCta"
 import Faq from "@/components/Faq"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/gridfinity-modulair-opslagsysteem/"
 const publishedDate = "2026-01-30T08:00:00+01:00"
@@ -65,6 +66,23 @@ const FAQ_ITEMS = [
     a: "Typisch enkele werkdagen na intake, afhankelijk van aantal bins en materiaal. Deel foto + maten + gewenste U-hoogte voor de snelste flow.",
   },
 ]
+
+const articleJsonLd = buildArticleJsonLd({
+  canonical,
+  headline: "Gridfinity: modulair opslagsysteem",
+  description:
+    "Gridfinity uitgelegd: raster, magneten, labels, toepassingen en hoe X3DPrints maatwerk bins, starterkits en Packout-inlays levert.",
+  datePublished: publishedDate,
+  dateModified,
+  image: "/images/organizers/modugrid/ModuGrid3.webp",
+  inLanguage: "nl-BE",
+})
+
+const faqJsonLd = buildFaqPageSchema({
+  inLanguage: "nl-BE",
+  mainEntityOfPage: canonical,
+  items: FAQ_ITEMS.map((item) => ({ q: item.q, a: item.a })),
+})
 
 export const metadata: Metadata = {
   title: "Gridfinity: modulair opslagsysteem + maatwerk door X3DPrints",
@@ -372,36 +390,8 @@ export default function GridfinityBlogNl() {
         </section>
       </article>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline: "Gridfinity: modulair opslagsysteem",
-            description:
-              "Gridfinity uitgelegd: raster, magneten, labels, toepassingen en hoe X3DPrints maatwerk bins, starterkits en Packout-inlays levert.",
-            datePublished: publishedDate,
-            dateModified,
-            author: { "@type": "Person", name: "X3DPrints" },
-            publisher: {
-              "@type": "Organization",
-              name: "X3DPrints",
-              logo: { "@type": "ImageObject", url: "https://www.x3dprints.be/og-home.jpg" },
-            },
-            mainEntityOfPage: canonical,
-            image: "https://www.x3dprints.be/images/organizers/modugrid/ModuGrid3.webp",
-            mainEntity: {
-              "@type": "FAQPage",
-              mainEntity: FAQ_ITEMS.map((item) => ({
-                "@type": "Question",
-                name: item.q,
-                acceptedAnswer: { "@type": "Answer", text: item.a },
-              })),
-            },
-          }),
-        }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     </main>
   )
 }

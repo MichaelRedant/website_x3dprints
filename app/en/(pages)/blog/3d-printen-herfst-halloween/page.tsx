@@ -4,7 +4,8 @@ import Image from "next/image"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
+import BlogReadMore from "@/components/BlogReadMore"
+
 import { buildFaqPageSchema, buildArticleJsonLd } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/blog/3d-printen-herfst-halloween/"
@@ -47,7 +48,7 @@ const tips = [
   "Layer height 0.16-0.2 mm; keep wall thickness >1.2 mm for sturdy decor to hang or place.",
   "Orient visible faces upward and keep the bottom flat for stable placement.",
   "Integrate cable holes or magnets for LED strips or battery packs and ensure ventilation for warmer LEDs.",
-  "Design/model not included: provide STL/STEP or choose design service at ï¿½45/hour.",
+  "Design/model not included: provide STL/STEP or choose design service at €45/hour.",
 ]
 
 const checklist = [
@@ -60,7 +61,7 @@ const checklist = [
 const faqItems = [
   {
     q: "Can you print pumpkins hollow?",
-    a: "Yes. We use 2-3 perimeters, tuned infill and openings for LEDs/batteries. Provide STL/STEP or let us design at ï¿½45/hour.",
+    a: "Yes. We use 2-3 perimeters, tuned infill and openings for LEDs/batteries. Provide STL/STEP or let us design at €45/hour.",
   },
   {
     q: "What is the best material for spooky props?",
@@ -68,11 +69,11 @@ const faqItems = [
   },
   {
     q: "How do you ship fragile decor safely?",
-    a: "Packed separately with foam; EV delivery in zones (Zone 1 ï¿½15, Zone 2 ï¿½30, Zone 3 ï¿½45) or parcel service. Pickup is free.",
+    a: "Packed separately with foam; EV delivery in zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) or parcel service. Pickup is free.",
   },
   {
     q: "Is the 3D model included?",
-    a: "No. The design file is not included in the print price. Provide STL/STEP or choose design service at ï¿½45/hour; we optimise wall thickness and supports.",
+    a: "No. The design file is not included in the print price. Provide STL/STEP or choose design service at €45/hour; we optimise wall thickness and supports.",
   },
   {
     q: "Can you prime or deliver paint-ready?",
@@ -138,7 +139,7 @@ export default function BlogAutumnHalloweenEn() {
               3D printing for autumn and Halloween
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Pumpkins, spooky props and lanterns for cosy nights. Design file not included; provide STL/STEP or choose design service (ï¿½45/hour). EV
+              Pumpkins, spooky props and lanterns for cosy nights. Design file not included; provide STL/STEP or choose design service (€45/hour). EV
               delivery for fragile decor or parcel service elsewhere.
             </p>
                         <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
@@ -169,7 +170,7 @@ export default function BlogAutumnHalloweenEn() {
                 ))}
               </ul>
               <p className="mt-4 text-sm text-slate-700">
-                Keep light channels clear for LEDs, reinforce loops for hanging, and avoid dark PLA in direct sun if decor goes outdoorsï¿½use PETG instead.
+                Keep light channels clear for LEDs, reinforce loops for hanging, and avoid dark PLA in direct sun if decor goes outdoors—use PETG instead.
                 We can split larger pieces into modules for safer shipping and assembly.
               </p>
             </GlassCard>

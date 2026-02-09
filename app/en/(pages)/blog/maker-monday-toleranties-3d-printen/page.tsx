@@ -14,7 +14,7 @@ const lastUpdatedLabel = "Last updated: 8 February 2026"
 export const metadata: Metadata = {
   title: "Maker Monday #3: tolerances for 3D printing | X3DPrints",
   description:
-    "Clearance tables for sliding fits, press fits, snap-fits and hinges in PLA, PETG and TPU. Includes slicer notes on elephantâ€™s foot and hole compensation.",
+    "Clearance tables for sliding fits, press fits, snap-fits and hinges in PLA, PETG and TPU. Includes slicer notes on elephant?s foot and hole compensation.",
   alternates: {
     canonical,
     languages: {

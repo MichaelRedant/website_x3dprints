@@ -670,6 +670,114 @@ const TOPICS_NL: Topic[] = [
     category: "materials-pricing",
   },
   {
+    id: "3d-print-prijs-per-stuk",
+    title: "3D print prijs per stuk: single vs serie",
+    summary:
+      "Uitleg van setupkosten, printtijd en schaal met een tabel voor prijs per stuk en optimalisatietips.",
+    highlights: [
+      "Kostblokken uitgelegd met focus op schaalvoordeel.",
+      "Tabel met indicatieve ranges per stuk voor 1, 10 en 50 stuks.",
+      "CTA's naar pricing calculator, materiaaltool en offerte.",
+    ],
+    links: [
+      { label: "Lees het prijs per stuk artikel", href: "/blog/3d-print-prijs-per-stuk" },
+      { label: "Open pricing calculator", href: "/pricing" },
+      { label: "Vraag offerte", href: "/contact?material=pla-matte&quote=Prijs%20per%20stuk%20inschatting" },
+    ],
+    intent: "transactional",
+    category: "materials-pricing",
+  },
+  {
+    id: "3d-print-kosten-besparen",
+    title: "3D print kosten besparen: 7 slimme optimalisaties",
+    summary:
+      "Bespaartips voor 3D prints met impacttabel en concrete optimalisaties voor printtijd en materiaal.",
+    highlights: [
+      "Impacttabel met support, laaghoogte, infill en batching.",
+      "Snelle wins voor lagere kosten per stuk.",
+      "CTA's naar pricing calculator, materialen en offerte.",
+    ],
+    links: [
+      { label: "Lees de bespaar tips", href: "/blog/3d-print-kosten-besparen" },
+      { label: "Open pricing calculator", href: "/pricing" },
+      { label: "Vraag offerte", href: "/contact?material=pla-matte&quote=Kostenoptimalisatie%20voor%203D%20print" },
+    ],
+    intent: "informational",
+    category: "materials-pricing",
+  },
+  {
+    id: "3d-print-materiaal-voor-zichtwerk",
+    title: "3D print materiaal voor zichtwerk: PLA Matte vs Silk",
+    summary:
+      "Vergelijk zichtwerk-materialen met een matrix, scenario's en beslisregels voor designprints.",
+    highlights: [
+      "Matrix met look, duurzaamheid en beste use-case per materiaal.",
+      "Scenario's voor awards, retail displays en interieur.",
+      "CTA's naar materiaaltool, pricing en viewer.",
+    ],
+    links: [
+      { label: "Lees de zichtwerk gids", href: "/blog/3d-print-materiaal-voor-zichtwerk" },
+      { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+      { label: "Vraag materiaaladvies", href: "/contact?material=pla-matte&quote=Materiaaladvies%20voor%20zichtwerk" },
+    ],
+    intent: "informational",
+    category: "materials-pricing",
+  },
+  {
+    id: "hittebestendig-3d-print-materiaal",
+    title: "Hittebestendig 3D print materiaal: PETG vs PC",
+    summary:
+      "Vergelijk PLA Tough+, PETG, PC en PC FR voor hittebestendige 3D prints met een matrix en scenario's.",
+    highlights: [
+      "Matrix met hitte, UV en beste use-case per materiaal.",
+      "Scenario's voor elektronica, outdoor brackets en safety parts.",
+      "CTA's naar materiaaltool, pricing en viewer.",
+    ],
+    links: [
+      { label: "Lees de hittebestendige gids", href: "/blog/hittebestendig-3d-print-materiaal" },
+      { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+      { label: "Vraag materiaaladvies", href: "/contact?material=pc&quote=Hittebestendig%20materiaal%20advies" },
+    ],
+    intent: "informational",
+    category: "materials-pricing",
+  },
+  {
+    id: "sterke-3d-print-materialen",
+    title: "Sterke 3D prints: materiaalkeuze voor functionele onderdelen",
+    summary:
+      "Vergelijk PLA Tough+, PETG, TPU en PC voor functionele onderdelen met een matrix, scenario's en snelle beslisregels.",
+    highlights: [
+      "Matrix met sterkte, flexibiliteit en hitte/UV zodat je sneller het juiste materiaal kiest.",
+      "Scenario's voor klemmen, behuizingen en dempers met concrete materiaaladviezen.",
+      "CTA's naar materiaaltool, pricing en contact met advies-prefill.",
+    ],
+    links: [
+      { label: "Lees de materiaalvergelijking", href: "/blog/sterke-3d-print-materialen" },
+      { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+      { label: "Vraag materiaaladvies", href: "/contact?material=pla-tough&quote=Materiaaladvies%20functionele%20onderdelen" },
+    ],
+    intent: "informational",
+    category: "materials-pricing",
+  },
+  {
+    id: "3d-print-offerte-aanvragen",
+    title: "3D print offerte aanvragen: snelle checklist",
+    summary:
+      "Snelle offerte? Deze checklist toont welke input je nodig hebt, hoe de prijs is opgebouwd en hoe je deadlines en materiaalkeuze duidelijk maakt.",
+    highlights: [
+      "Checklist met bestanden, afmetingen, aantallen en deadline zodat intake direct klopt.",
+      "Prijsopbouw met kostblokken (printtijd, materiaal, nabewerking, levering) plus link naar pricing.",
+      "CTA's naar viewer upload, material tool en contact met offerte-prefill.",
+    ],
+    links: [
+      { label: "Lees de offerte checklist", href: "/blog/3d-print-offerte-aanvragen" },
+      { label: "Open pricing calculator", href: "/pricing" },
+      { label: "Vraag offerte met prefill", href: "/contact?material=pla-matte&quote=Offerte%20aanvraag" },
+    ],
+    intent: "transactional",
+    category: "materials-pricing",
+  },
+  {
     id: "pla-vs-petg",
     title: "PLA vs PETG: welke moet je kiezen?",
     summary:
@@ -955,6 +1063,42 @@ const TOPICS_NL: Topic[] = [
       { label: "Ontwerpservice aanvragen", href: "/contact" },
     ],
     intent: "informational",
+    category: "how-to",
+  },
+  {
+    id: "3d-print-ontwerp-checklist",
+    title: "3D print ontwerp checklist: model printklaar",
+    summary:
+      "Checklist voor printklare modellen met richtwaarden voor wanddikte, overhang, tolerantie en assemblage.",
+    highlights: [
+      "Zes praktische checks om reprints te vermijden en sneller te plannen.",
+      "Tabel met richtwaarden voor PLA/PETG versus TPU.",
+      "CTA's naar viewer upload, materiaaltool en ontwerpcheck.",
+    ],
+    links: [
+      { label: "Lees de ontwerp checklist", href: "/blog/3d-print-ontwerp-checklist" },
+      { label: "Upload je model", href: "/viewer" },
+      { label: "Vraag ontwerpcheck", href: "/contact?material=pla-tough&quote=Ontwerpcheck%20voor%203D%20print" },
+    ],
+    intent: "how-to",
+    category: "how-to",
+  },
+  {
+    id: "3d-print-assemblage-gids",
+    title: "3D print assemblage gids: paspennen en inserts",
+    summary:
+      "Assemblage gids met paspennen, speling en bevestiging voor 3D prints inclusief richtwaarden.",
+    highlights: [
+      "Checklist met deling, paspennen en speling voor betrouwbare montage.",
+      "Tabel met richtwaarden voor PLA/PETG en TPU.",
+      "CTA's naar viewer, materiaaltool en assemblageadvies.",
+    ],
+    links: [
+      { label: "Lees de assemblage gids", href: "/blog/3d-print-assemblage-gids" },
+      { label: "Upload je model", href: "/viewer" },
+      { label: "Vraag assemblageadvies", href: "/contact?material=pla-tough&quote=Assemblageadvies%20voor%203D%20print" },
+    ],
+    intent: "how-to",
     category: "how-to",
   },
   {

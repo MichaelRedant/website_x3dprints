@@ -28,7 +28,12 @@ export const metadata: Metadata = {
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "3D printen op maat in België | X3DPrints",
+    description: "Lokale 3D print service met materiaaladvies, snelle offerte en duidelijke planning.",
+    images: ["/images/og-home.jpg"],
+  },
 }
 
 const useCases = [

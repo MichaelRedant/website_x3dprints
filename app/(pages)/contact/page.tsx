@@ -32,7 +32,12 @@ const NL_METADATA: Metadata = {
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact X3DPrints | 3D print offerte",
+    description: "Vraag een offerte voor 3D printen in PLA, PETG of TPU met duidelijke prijs en planning.",
+    images: ["/images/portfolio/20230916_085011.webp"],
+  },
 }
 
 const EN_METADATA: Metadata = {
@@ -56,7 +61,12 @@ const EN_METADATA: Metadata = {
     locale: "en_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact X3DPrints | 3D printing quote",
+    description: "Request a 3D printing quote with clear pricing and lead times.",
+    images: ["/images/portfolio/20230916_085011.webp"],
+  },
 }
 
 export const metadata: Metadata = NL_METADATA

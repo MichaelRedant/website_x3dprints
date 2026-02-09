@@ -236,6 +236,26 @@ export default function FilesArticlePage() {
                 </GlassCard>
               ))}
             </div>
+            <div className="mt-6 overflow-x-auto">
+              <table className="min-w-[640px] text-left text-sm text-slate-700">
+                <thead>
+                  <tr className="border-b border-slate-200/70 text-slate-500">
+                    <th className="py-2 pr-4 font-semibold">Formaat</th>
+                    <th className="py-2 pr-4 font-semibold">Ideaal voor</th>
+                    <th className="py-2 pr-4 font-semibold">Snelle tip</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {formatCards.map((card) => (
+                    <tr key={card.format} className="border-b border-slate-200/70 last:border-0">
+                      <td className="py-2 pr-4 font-medium text-slate-900">{card.format}</td>
+                      <td className="py-2 pr-4">{card.description}</td>
+                      <td className="py-2 pr-4">{card.tips[0]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </Reveal>
         </section>
 

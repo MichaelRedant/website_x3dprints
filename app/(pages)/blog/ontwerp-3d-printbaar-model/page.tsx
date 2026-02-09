@@ -285,6 +285,24 @@ export default function DesignArticlePage() {
                 </GlassCard>
               ))}
             </div>
+            <div className="mt-6 overflow-x-auto">
+              <table className="min-w-[520px] text-left text-sm text-slate-700">
+                <thead>
+                  <tr className="border-b border-slate-200/70 text-slate-500">
+                    <th className="py-2 pr-4 font-semibold">Materiaal</th>
+                    <th className="py-2 pr-4 font-semibold">Ontwerpfocus</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {materialGuidance.map((item) => (
+                    <tr key={item.material} className="border-b border-slate-200/70 last:border-0">
+                      <td className="py-2 pr-4 font-medium text-slate-900">{item.material}</td>
+                      <td className="py-2 pr-4">{item.guidance}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
             <p className="mt-4 text-sm text-slate-600">
               Combineer dit met{" "}
               <Link href="/materials#material-suggestion-tool" className="font-semibold text-indigo-600 hover:text-indigo-500">

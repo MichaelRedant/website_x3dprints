@@ -186,7 +186,7 @@ export default function MakerMondayWarpingEnPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Next step</p>
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900">Battling a tricky part?</h2>
                 <p className="mt-2 text-sm text-slate-600">
-                  Show us the model and environment. We will propose splits, chamfers and materials to keep it flatâ€”and tell you if a
+                  Show us the model and environment. We will propose splits, chamfers and materials to keep it flat?and tell you if a
                   different process is safer.
                 </p>
               </div>

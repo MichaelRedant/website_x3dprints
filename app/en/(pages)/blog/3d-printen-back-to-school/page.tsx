@@ -56,7 +56,7 @@ const checklist = [
   "Material: PLA Matte (look), PETG (strength), TPU (grip). Colour? Share HEX/RGB or school colour.",
   "Finish: raw or lightly sanded; primer optional if you paint.",
   "Deadline: August-September (back-to-school) + delivery option (EV zone or parcel service).",
-  "File: STL/STEP. Need design? Design service ï¿½45/hour.",
+  "File: STL/STEP. Need design? Design service €45/hour.",
 ]
 
 const faqItems = [
@@ -74,7 +74,7 @@ const faqItems = [
   },
   {
     q: "Is the 3D model included?",
-    a: "No. Provide STL/STEP or choose design service (ï¿½45/hour). We check wall thickness, rounding and readability.",
+    a: "No. Provide STL/STEP or choose design service (€45/hour). We check wall thickness, rounding and readability.",
   },
 ]
 
@@ -140,7 +140,7 @@ export default function BlogBackToSchoolEn() {
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Pen holders, nameplates, desk organizers and educational STEM models. Design file not included; provide STL/STEP or choose design service
-              (ï¿½45/hour). Fast planning for August-September.
+              (€45/hour). Fast planning for August-September.
             </p>
             <p className="mt-3 max-w-3xl text-pretty text-base text-slate-700">
               Tie your brief to internal resources: see the{" "}

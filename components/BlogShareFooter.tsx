@@ -31,6 +31,11 @@ export default function BlogShareFooter() {
         body: "Share your STL/STEP and tell us the context. We pick the material together and plan production.",
         primary: { label: "Request a quote", href: "/en/contact" },
         secondary: { label: "Material Suggestion Tool", href: "/en/materials#material-suggestion-tool" },
+        about: {
+          kicker: "About the maker",
+          body: "X3DPrints is a one-person studio in Herzele. I help with material choice, print strategy and planning for prototypes and short runs.",
+          linkLabel: "About the maker",
+        },
       }
     : {
         kicker: "Afronden",
@@ -38,6 +43,11 @@ export default function BlogShareFooter() {
         body: "Stuur je STL/STEP en context door. We kiezen samen het materiaal en plannen de productie.",
         primary: { label: "Offerte aanvragen", href: "/contact" },
         secondary: { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+        about: {
+          kicker: "Over de maker",
+          body: "X3DPrints is een 1-persoonsstudio in Herzele. Ik help met materiaalkeuze, printstrategie en planning voor prototypes en korte reeksen.",
+          linkLabel: "Meer over de maker",
+        },
       }
 
   return (
@@ -61,6 +71,15 @@ export default function BlogShareFooter() {
             >
               {ctaCopy.secondary.label}
             </Link>
+          </div>
+          <div className="mt-4 rounded-2xl border border-slate-200/70 bg-white/70 p-4 text-left text-sm text-slate-600">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">{ctaCopy.about.kicker}</p>
+            <p className="mt-2">
+              {ctaCopy.about.body}{" "}
+              <Link href={authorHref} className="font-semibold text-indigo-600 underline underline-offset-4">
+                {ctaCopy.about.linkLabel}
+              </Link>
+            </p>
           </div>
         </div>
 

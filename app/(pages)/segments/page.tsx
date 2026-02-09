@@ -85,7 +85,12 @@ const NL_METADATA: Metadata = {
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "3D printing per segment | X3DPrints",
+    description: "Segmenten voor prototypes, onderwijs, modelbouwers en engineers met duidelijke CTA's.",
+    images: ["/images/og-segments.jpg"],
+  },
 }
 
 const EN_METADATA: Metadata = {
@@ -107,7 +112,12 @@ const EN_METADATA: Metadata = {
     locale: "en_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "3D printing by segment | X3DPrints",
+    description: "Segment guidance for prototypes, education, model builders and engineers with clear CTAs.",
+    images: ["/images/og-segments.jpg"],
+  },
 }
 
 

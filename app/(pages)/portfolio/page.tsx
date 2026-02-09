@@ -16,7 +16,7 @@ import path from "node:path"
 const NL_METADATA: Metadata = {
   title: "3D print portfolio België | 3D print projecten | X3DPrints",
   description:
-    "Bekijk 3D print projecten op maat in België: functionele onderdelen, merchandising en gifts geproduceerd in Herzele (regio Gent).",
+    "Bekijk 3D print projecten op maat in België: functionele onderdelen, merchandising en gifts met casefoto’s uit het atelier in Herzele (regio Gent).",
   alternates: {
     canonical: "https://www.x3dprints.be/portfolio/",
     languages: {
@@ -28,7 +28,7 @@ const NL_METADATA: Metadata = {
   openGraph: {
     title: "3D print portfolio België | X3DPrints",
     description:
-      "Fotoreeksen en timelapses van 3D printen op maat: prototypes, merchandising en gepersonaliseerde cadeaus uit het atelier in Herzele.",
+      "Fotoreeksen en timelapses van 3D printen op maat: prototypes, merchandising en gepersonaliseerde cadeaus met duidelijke casecontext.",
     url: "https://www.x3dprints.be/portfolio/",
     images: [{ url: "/images/portfolio/2d-5-3.webp", width: 1200, height: 630, alt: "Portfolio van 3D print projecten" }],
     locale: "nl_BE",
@@ -38,7 +38,7 @@ const NL_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D print projecten in België | X3DPrints",
     description:
-      "Functionele prototypes, merchandising en gifts: ontdek hoe X3DPrints 3D print projecten op maat oplevert.",
+      "Functionele prototypes, merchandising en gifts: ontdek hoe X3DPrints 3D print projecten op maat oplevert met casefoto’s.",
     images: ["/images/portfolio/2d-5-3.webp"],
   },
 }

@@ -29,7 +29,7 @@ const NL_METADATA: Metadata = {
   openGraph: {
     title: "3D print prijs: wat kost 3D printen?",
     description:
-      "Kosten 3D printen: vanaf EUR 5 (small), EUR 20 (medium) en EUR 49 (large). Materialen: PLA, PETG en TPU. Levering in heel Belgie.",
+      "Kosten 3D printen: vanaf EUR 5 (small), EUR 20 (medium) en EUR 49 (large). Gebruik de calculator voor actuele simulaties in België.",
     url: "https://www.x3dprints.be/pricing/",
     images: [{ url: "/images/portfolio/2d-6-1-1.webp", width: 1200, height: 630, alt: "Prijzen voor 3D printen" }],
     locale: "nl_BE",
@@ -39,7 +39,7 @@ const NL_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D print prijs en kosten",
     description:
-      "Indicatieve kosten 3D printen voor prototypes en zowel kleine als grotere series. Materialen: PLA (standaard), PLA+ varianten, PETG en TPU.",
+      "Indicatieve kosten 3D printen voor prototypes en series. Gebruik de calculator om impact van materiaal en grootte te zien.",
     images: ["/images/portfolio/2d-6-1-1.webp"],
   },
 }

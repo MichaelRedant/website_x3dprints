@@ -31,7 +31,12 @@ export const metadata: Metadata = {
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "Realtime 3D Model Viewer voor STL's",
+    description: "Upload STL/OBJ/GLB en check je model direct in de browser met privacy en snelle interactie.",
+    images: ["/images/portfolio/20241024_081839-1.jpg"],
+  },
 }
 
 export default function Page() {

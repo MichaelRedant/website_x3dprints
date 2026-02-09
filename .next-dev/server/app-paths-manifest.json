@@ -1,7 +1,4 @@
 {
-  "/(pages)/blog/page": "app/(pages)/blog/page.js",
-  "/(pages)/blog/maker-monday-wanddiktes-ribs/page": "app/(pages)/blog/maker-monday-wanddiktes-ribs/page.js",
-  "/(pages)/blog/3d-printen-voor-beginners/page": "app/(pages)/blog/3d-printen-voor-beginners/page.js",
-  "/en/(pages)/blog/3d-printen-voor-beginners/page": "app/en/(pages)/blog/3d-printen-voor-beginners/page.js",
-  "/(pages)/blog/use-case-dinsdag-auto-fiets/page": "app/(pages)/blog/use-case-dinsdag-auto-fiets/page.js"
+  "/(home)/page": "app/(home)/page.js",
+  "/(pages)/viewer/page": "app/(pages)/viewer/page.js"
 }
