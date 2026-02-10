@@ -1,97 +1,80 @@
 <?php
 declare(strict_types=1);
 
-require_once __DIR__ . '/crm-common.php';
-
-function crmPasswordIsValid(string $input): bool
-{
-    $hash = trim((string) (getenv('CRM_PASSWORD_HASH') ?: ''));
-    if ($hash === '') {
-        return false;
-    }
-    return password_verify($input, $hash);
+$bootstrap = __DIR__ . "/bff/src/bootstrap.php";
+if (!file_exists($bootstrap)) {
+  $bootstrap = __DIR__ . "/../bff/src/bootstrap.php";
+}
+if (!file_exists($bootstrap)) {
+  http_response_code(500);
+  header("Content-Type: application/json; charset=utf-8");
+  echo json_encode(["error" => "CRM bootstrap not found"]);
+  exit;
 }
 
-function crmConfigReady(): bool
-{
-    $hash = trim((string) (getenv('CRM_PASSWORD_HASH') ?: ''));
-    return $hash !== '';
+require $bootstrap;
+
+header("Content-Type: application/json; charset=utf-8");
+header("X-Robots-Tag: noindex, nofollow");
+
+$secure = (!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] !== "off");
+session_name("x3dprints_crm");
+session_set_cookie_params([
+  "lifetime" => 0,
+  "path" => "/",
+  "secure" => $secure,
+  "httponly" => true,
+  "samesite" => "Strict",
+]);
+session_start();
+
+$method = $_SERVER["REQUEST_METHOD"] ?? "GET";
+
+if ($method === "GET") {
+  echo json_encode(["authed" => !empty($_SESSION["crm_auth"])]);
+  exit;
 }
 
-function clearCrmSession(): void
-{
-    crmSessionStart();
-    $_SESSION = [];
-    if (ini_get('session.use_cookies')) {
-        $params = session_get_cookie_params();
-        setcookie(
-            session_name(),
-            '',
-            time() - 42000,
-            $params['path'] ?? '/',
-            $params['domain'] ?? '',
-            (bool) ($params['secure'] ?? false),
-            (bool) ($params['httponly'] ?? true),
-        );
-    }
-    session_destroy();
+if ($method === "DELETE") {
+  $_SESSION = [];
+  if (ini_get("session.use_cookies")) {
+    $params = session_get_cookie_params();
+    setcookie(session_name(), "", time() - 42000, $params["path"], $params["domain"] ?? "", $params["secure"], $params["httponly"]);
+  }
+  session_destroy();
+  echo json_encode(["ok" => true]);
+  exit;
 }
 
-$method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
-
-if (!crmConfigReady()) {
-    crmRespond(500, ['ok' => false, 'error' => 'CRM auth is not configured']);
+if ($method !== "POST") {
+  http_response_code(405);
+  echo json_encode(["error" => "Method not allowed"]);
+  exit;
 }
 
-if ($method === 'GET') {
-    crmRespond(200, ['ok' => true, 'authed' => crmIsAuthenticated()]);
+$payload = readJsonBody();
+$password = (string)($payload["password"] ?? "");
+
+$plain = env("CRM_PASSWORD");
+$hash = env("CRM_PASSWORD_HASH");
+if (!$plain && !$hash) {
+  http_response_code(500);
+  echo json_encode(["error" => "CRM password not configured"]);
+  exit;
 }
 
-if ($method === 'DELETE') {
-    clearCrmSession();
-    crmRespond(200, ['ok' => true, 'authed' => false]);
+$ok = false;
+if ($hash) {
+  $ok = password_verify($password, $hash);
+} elseif ($plain) {
+  $ok = hash_equals($plain, $password);
 }
 
-if ($method !== 'POST') {
-    crmRespond(405, ['ok' => false, 'error' => 'Method not allowed']);
+if (!$ok) {
+  http_response_code(401);
+  echo json_encode(["ok" => false, "error" => "Wachtwoord klopt niet."]);
+  exit;
 }
 
-crmSessionStart();
-$now = time();
-$attemptWindow = 15 * 60;
-$maxAttempts = 8;
-
-$firstAttempt = (int) ($_SESSION['crm_login_first_attempt'] ?? 0);
-$attempts = (int) ($_SESSION['crm_login_attempts'] ?? 0);
-
-if ($firstAttempt > 0 && ($now - $firstAttempt) > $attemptWindow) {
-    $firstAttempt = 0;
-    $attempts = 0;
-}
-
-if ($attempts >= $maxAttempts) {
-    crmRespond(429, ['ok' => false, 'error' => 'Too many attempts, try again later']);
-}
-
-$raw = file_get_contents('php://input');
-$payload = json_decode((string) $raw, true);
-$password = trim((string) ($payload['password'] ?? ''));
-
-if ($password === '') {
-    crmRespond(400, ['ok' => false, 'error' => 'Password is required']);
-}
-
-if (!crmPasswordIsValid($password)) {
-    if ($firstAttempt === 0) {
-        $firstAttempt = $now;
-    }
-    $_SESSION['crm_login_first_attempt'] = $firstAttempt;
-    $_SESSION['crm_login_attempts'] = $attempts + 1;
-    crmRespond(401, ['ok' => false, 'error' => 'Invalid credentials']);
-}
-
-session_regenerate_id(true);
-$_SESSION['crm_auth'] = true;
-unset($_SESSION['crm_login_first_attempt'], $_SESSION['crm_login_attempts']);
-
-crmRespond(200, ['ok' => true, 'authed' => true]);
+$_SESSION["crm_auth"] = true;
+echo json_encode(["ok" => true]);

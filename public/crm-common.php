@@ -20,8 +20,11 @@ function crmDataDir(): string
     if ($fromEnv !== '') {
         return rtrim($fromEnv, DIRECTORY_SEPARATOR);
     }
-    // Keep CRM data outside web root by default.
-    return dirname(__DIR__) . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR . 'crm';
+    $legacy = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR . 'crm';
+    if (is_dir($legacy)) {
+        return $legacy;
+    }
+    return __DIR__ . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR . 'crm';
 }
 
 function crmDataPath(string $fileName): string

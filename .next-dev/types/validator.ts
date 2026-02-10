@@ -113,6 +113,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/blog/3d-print-materiaal-voor-zichtwerk">
 }
 
+// Validate ..\..\app\(pages)\blog\3d-print-materialen-gids\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\3d-print-materialen-gids\\page.js")
+  handler satisfies AppPageConfig<"/blog/3d-print-materialen-gids">
+}
+
 // Validate ..\..\app\(pages)\blog\3d-print-offerte-aanvragen\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\3d-print-offerte-aanvragen\\page.js")
@@ -125,10 +131,22 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/blog/3d-print-ontwerp-checklist">
 }
 
+// Validate ..\..\app\(pages)\blog\3d-print-ontwerp-gids\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\3d-print-ontwerp-gids\\page.js")
+  handler satisfies AppPageConfig<"/blog/3d-print-ontwerp-gids">
+}
+
 // Validate ..\..\app\(pages)\blog\3d-print-prijs-per-stuk\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\3d-print-prijs-per-stuk\\page.js")
   handler satisfies AppPageConfig<"/blog/3d-print-prijs-per-stuk">
+}
+
+// Validate ..\..\app\(pages)\blog\3d-print-prijzen-gids\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\3d-print-prijzen-gids\\page.js")
+  handler satisfies AppPageConfig<"/blog/3d-print-prijzen-gids">
 }
 
 // Validate ..\..\app\(pages)\blog\3d-printen-back-to-school\page.tsx
@@ -479,6 +497,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/cookies">
 }
 
+// Validate ..\..\app\(pages)\crm\orders\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\crm\\orders\\page.js")
+  handler satisfies AppPageConfig<"/crm/orders">
+}
+
 // Validate ..\..\app\(pages)\crm\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\crm\\page.js")
@@ -581,6 +605,30 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/services">
 }
 
+// Validate ..\..\app\(pages)\shop\[slug]\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\shop\\[slug]\\page.js")
+  handler satisfies AppPageConfig<"/shop/[slug]">
+}
+
+// Validate ..\..\app\(pages)\shop\cart\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\shop\\cart\\page.js")
+  handler satisfies AppPageConfig<"/shop/cart">
+}
+
+// Validate ..\..\app\(pages)\shop\checkout\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\shop\\checkout\\page.js")
+  handler satisfies AppPageConfig<"/shop/checkout">
+}
+
+// Validate ..\..\app\(pages)\shop\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\shop\\page.js")
+  handler satisfies AppPageConfig<"/shop">
+}
+
 // Validate ..\..\app\(pages)\sustainability\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\sustainability\\page.js")
@@ -645,6 +693,60 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\3d-geprinte-platen-nasiam\\page.js")
   handler satisfies AppPageConfig<"/en/blog/3d-geprinte-platen-nasiam">
+}
+
+// Validate ..\..\app\en\(pages)\blog\3d-print-assemblage-gids\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\3d-print-assemblage-gids\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/3d-print-assemblage-gids">
+}
+
+// Validate ..\..\app\en\(pages)\blog\3d-print-kosten-besparen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\3d-print-kosten-besparen\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/3d-print-kosten-besparen">
+}
+
+// Validate ..\..\app\en\(pages)\blog\3d-print-materiaal-voor-zichtwerk\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\3d-print-materiaal-voor-zichtwerk\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/3d-print-materiaal-voor-zichtwerk">
+}
+
+// Validate ..\..\app\en\(pages)\blog\3d-print-materialen-gids\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\3d-print-materialen-gids\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/3d-print-materialen-gids">
+}
+
+// Validate ..\..\app\en\(pages)\blog\3d-print-offerte-aanvragen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\3d-print-offerte-aanvragen\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/3d-print-offerte-aanvragen">
+}
+
+// Validate ..\..\app\en\(pages)\blog\3d-print-ontwerp-checklist\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\3d-print-ontwerp-checklist\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/3d-print-ontwerp-checklist">
+}
+
+// Validate ..\..\app\en\(pages)\blog\3d-print-ontwerp-gids\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\3d-print-ontwerp-gids\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/3d-print-ontwerp-gids">
+}
+
+// Validate ..\..\app\en\(pages)\blog\3d-print-prijs-per-stuk\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\3d-print-prijs-per-stuk\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/3d-print-prijs-per-stuk">
+}
+
+// Validate ..\..\app\en\(pages)\blog\3d-print-prijzen-gids\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\3d-print-prijzen-gids\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/3d-print-prijzen-gids">
 }
 
 // Validate ..\..\app\en\(pages)\blog\3d-printen-back-to-school\page.tsx
@@ -803,6 +905,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/en/blog/gridfinity-modular-storage-system">
 }
 
+// Validate ..\..\app\en\(pages)\blog\hittebestendig-3d-print-materiaal\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\hittebestendig-3d-print-materiaal\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/hittebestendig-3d-print-materiaal">
+}
+
 // Validate ..\..\app\en\(pages)\blog\hoe-3d-print-je-onderdelen-voor-buitengebruik\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\hoe-3d-print-je-onderdelen-voor-buitengebruik\\page.js")
@@ -903,6 +1011,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\relatiegeschenken-3d-printen\\page.js")
   handler satisfies AppPageConfig<"/en/blog/relatiegeschenken-3d-printen">
+}
+
+// Validate ..\..\app\en\(pages)\blog\sterke-3d-print-materialen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\sterke-3d-print-materialen\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/sterke-3d-print-materialen">
 }
 
 // Validate ..\..\app\en\(pages)\blog\tool-organizers-3d-printing\page.tsx
@@ -1085,6 +1199,30 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/en/services">
 }
 
+// Validate ..\..\app\en\(pages)\shop\[slug]\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\shop\\[slug]\\page.js")
+  handler satisfies AppPageConfig<"/en/shop/[slug]">
+}
+
+// Validate ..\..\app\en\(pages)\shop\cart\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\shop\\cart\\page.js")
+  handler satisfies AppPageConfig<"/en/shop/cart">
+}
+
+// Validate ..\..\app\en\(pages)\shop\checkout\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\shop\\checkout\\page.js")
+  handler satisfies AppPageConfig<"/en/shop/checkout">
+}
+
+// Validate ..\..\app\en\(pages)\shop\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\shop\\page.js")
+  handler satisfies AppPageConfig<"/en/shop">
+}
+
 // Validate ..\..\app\en\(pages)\sustainability\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\sustainability\\page.js")
@@ -1203,6 +1341,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies LayoutConfig<"/">
 }
 
+// Validate ..\..\app\(pages)\shop\layout.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\shop\\layout.js")
+  handler satisfies LayoutConfig<"/shop">
+}
+
 // Validate ..\..\app\en\(home)\layout.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(home)\\layout.js")
@@ -1213,6 +1357,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\layout.js")
   handler satisfies LayoutConfig<"/en/blog">
+}
+
+// Validate ..\..\app\en\(pages)\shop\layout.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\shop\\layout.js")
+  handler satisfies LayoutConfig<"/en/shop">
 }
 
 // Validate ..\..\app\en\layout.tsx

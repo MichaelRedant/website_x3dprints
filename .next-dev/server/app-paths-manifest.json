@@ -1,8 +1,8 @@
 {
-  "/(pages)/about/page": "app/(pages)/about/page.js",
-  "/(pages)/materials/page": "app/(pages)/materials/page.js",
-  "/(pages)/materials/[slug]/page": "app/(pages)/materials/[slug]/page.js",
-  "/(pages)/organizers/page": "app/(pages)/organizers/page.js",
-  "/(pages)/blog/page": "app/(pages)/blog/page.js",
-  "/(pages)/blog/tool-organizers-3d-printen/page": "app/(pages)/blog/tool-organizers-3d-printen/page.js"
+  "/(pages)/services/page": "app/(pages)/services/page.js",
+  "/(pages)/shop/checkout/page": "app/(pages)/shop/checkout/page.js",
+  "/(pages)/shop/page": "app/(pages)/shop/page.js",
+  "/(pages)/crm/page": "app/(pages)/crm/page.js",
+  "/(pages)/shop/[slug]/page": "app/(pages)/shop/[slug]/page.js",
+  "/(pages)/shop/cart/page": "app/(pages)/shop/cart/page.js"
 }

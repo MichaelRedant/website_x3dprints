@@ -345,6 +345,87 @@ export function buildServiceSchema(
   }
 }
 
+type ProductSchemaInput = {
+  name: string
+  description: string
+  url: string
+  image?: string | string[]
+  sku?: string
+  brandName?: string
+  inLanguage?: string | string[]
+  price: number
+  priceCurrency?: string
+  availability?: "InStock" | "PreOrder" | "OutOfStock" | "LimitedAvailability"
+  priceValidUntil?: string
+  leadTimeDays?: { min: number; max: number }
+  shippingCountry?: string
+}
+
+export function buildProductSchema({
+  name,
+  description,
+  url,
+  image,
+  sku,
+  brandName,
+  inLanguage,
+  price,
+  priceCurrency = "EUR",
+  availability = "InStock",
+  priceValidUntil,
+  leadTimeDays,
+  shippingCountry = "BE",
+}: ProductSchemaInput) {
+  const images = Array.isArray(image) ? image : image ? [image] : []
+  const resolvedImages = images.map((img) => resolveSchemaUrl(img))
+  const shippingDetails = leadTimeDays
+    ? {
+        "@type": "OfferShippingDetails",
+        shippingDestination: {
+          "@type": "DefinedRegion",
+          addressCountry: shippingCountry,
+        },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: {
+            "@type": "QuantitativeValue",
+            minValue: leadTimeDays.min,
+            maxValue: leadTimeDays.max,
+            unitCode: "d",
+          },
+        },
+      }
+    : undefined
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name,
+    description,
+    ...(sku ? { sku } : {}),
+    ...(resolvedImages.length ? { image: resolvedImages } : {}),
+    ...(inLanguage ? { inLanguage } : {}),
+    brand: {
+      "@type": "Brand",
+      name: brandName ?? SITE.name,
+    },
+    offers: {
+      "@type": "Offer",
+      price: Number(price.toFixed(2)),
+      priceCurrency,
+      availability: `https://schema.org/${availability}`,
+      url: resolveSchemaUrl(url),
+      ...(priceValidUntil ? { priceValidUntil } : {}),
+      ...(shippingDetails ? { shippingDetails } : {}),
+      seller: {
+        "@type": "Organization",
+        name: SITE.name,
+        url: SITE.url,
+      },
+    },
+  }
+}
+
 type FaqPageSchemaInput = {
   items: SchemaFaqInput[]
   inLanguage?: string | string[]

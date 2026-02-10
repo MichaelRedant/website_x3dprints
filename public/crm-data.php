@@ -1,35 +1,225 @@
 <?php
 declare(strict_types=1);
 
-require_once __DIR__ . '/crm-common.php';
-
-crmRequireAuth();
-
-if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'GET') {
-    crmRespond(405, ['ok' => false, 'error' => 'Method not allowed']);
+$bootstrap = __DIR__ . "/bff/src/bootstrap.php";
+if (!file_exists($bootstrap)) {
+  $bootstrap = __DIR__ . "/../bff/src/bootstrap.php";
+}
+if (!file_exists($bootstrap)) {
+  http_response_code(500);
+  header("Content-Type: application/json; charset=utf-8");
+  echo json_encode(["error" => "CRM bootstrap not found"]);
+  exit;
 }
 
-$type = trim((string) ($_GET['type'] ?? ''));
-$map = [
-    'logs' => 'contact-log.json',
-    'replies' => 'contact-replies.json',
-    'material-stock' => 'material-stock.json',
-];
+require $bootstrap;
+require_once __DIR__ . "/crm-common.php";
 
-if (!isset($map[$type])) {
-    crmRespond(400, ['ok' => false, 'error' => 'Invalid type']);
+header("Content-Type: application/json; charset=utf-8");
+header("X-Robots-Tag: noindex, nofollow");
+
+$secure = (!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] !== "off");
+session_name("x3dprints_crm");
+session_set_cookie_params([
+  "lifetime" => 0,
+  "path" => "/",
+  "secure" => $secure,
+  "httponly" => true,
+  "samesite" => "Strict",
+]);
+session_start();
+
+if (empty($_SESSION["crm_auth"])) {
+  http_response_code(401);
+  echo json_encode(["error" => "Unauthorized"]);
+  exit;
 }
 
-$fileName = $map[$type];
-$payload = crmReadJsonFile(crmDataPath($fileName));
+$type = $_GET["type"] ?? "";
+$download = isset($_GET["download"]);
+$orderMetaFile = crmDataPath("order-meta.json");
+$orderMeta = crmReadJsonFile($orderMetaFile);
+if (!is_array($orderMeta)) {
+  $orderMeta = [];
+}
 
-$download = isset($_GET['download']) && $_GET['download'] === '1';
-if ($download) {
-    header('Content-Type: application/json; charset=utf-8');
-    header('Content-Disposition: attachment; filename="' . $fileName . '"');
-    echo json_encode($payload, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+function writeCsv(array $headers, array $rows): void
+{
+  header("Content-Type: text/csv; charset=utf-8");
+  header("Content-Disposition: attachment; filename=\"crm-export.csv\"");
+  $out = fopen("php://output", "w");
+  fputcsv($out, $headers);
+  foreach ($rows as $row) {
+    fputcsv($out, $row);
+  }
+  fclose($out);
+  exit;
+}
+
+if ($type === "material-stock") {
+  $file = crmDataPath("material-stock.json");
+  $data = crmReadJsonFile($file);
+  if (!$data) {
+    $data = new stdClass();
+  }
+  echo json_encode($data);
+  exit;
+}
+
+if ($type === "replies") {
+  $file = crmDataPath("crm-replies.json");
+  $data = crmReadJsonFile($file);
+  if ($download) {
+    $rows = array_map(function ($item) {
+      return [
+        $item["ts"] ?? "",
+        $item["to"] ?? "",
+        $item["subject"] ?? "",
+        $item["sent"] ? "true" : "false",
+      ];
+    }, $data);
+    writeCsv(["ts", "to", "subject", "sent"], $rows);
+  }
+  echo json_encode($data);
+  exit;
+}
+
+if ($type === "shipping-methods") {
+  try {
+    $pdo = getPdo();
+    $stmt = $pdo->query(
+      "SELECT id, label_nl, label_en, price_cents, active FROM shop_shipping_methods ORDER BY price_cents ASC, id ASC",
+    );
+    $rows = $stmt->fetchAll();
+    $methods = array_map(function ($row) {
+      return [
+        "id" => $row["id"],
+        "labelNl" => $row["label_nl"],
+        "labelEn" => $row["label_en"],
+        "priceEur" => round(((int)$row["price_cents"]) / 100, 2),
+        "active" => (bool)$row["active"],
+      ];
+    }, $rows);
+    echo json_encode($methods);
     exit;
+  } catch (Throwable $error) {
+    logError("crm_shipping_methods", ["message" => $error->getMessage()]);
+    http_response_code(500);
+    echo json_encode(["error" => "Cannot load shipping methods"]);
+    exit;
+  }
 }
 
-crmRespond(200, $payload);
+if ($type === "products") {
+  try {
+    $pdo = getPdo();
+    $stmt = $pdo->query(
+      "SELECT slug, name_nl, name_en, price_cents, is_live FROM shop_products ORDER BY sort_order ASC, id ASC",
+    );
+    $rows = $stmt->fetchAll();
+    $products = array_map(function ($row) {
+      return [
+        "slug" => $row["slug"],
+        "nameNl" => $row["name_nl"],
+        "nameEn" => $row["name_en"],
+        "priceEur" => round(((int)$row["price_cents"]) / 100, 2),
+        "isLive" => (bool)$row["is_live"],
+      ];
+    }, $rows);
+    echo json_encode($products);
+    exit;
+  } catch (Throwable $error) {
+    logError("crm_products", ["message" => $error->getMessage()]);
+    http_response_code(500);
+    echo json_encode(["error" => "Cannot load products"]);
+    exit;
+  }
+}
 
+if ($type === "orders") {
+  try {
+    $pdo = getPdo();
+    $stmt = $pdo->query(
+      "SELECT id, cart_id, order_code, status, email, locale, shipping_method_id, total_cents, mollie_payment_id, created_at
+       FROM shop_orders ORDER BY created_at DESC LIMIT 200",
+    );
+    $orders = [];
+    while ($row = $stmt->fetch()) {
+      $cartIdStmt = $pdo->prepare(
+        "SELECT l.product_slug, l.quantity, l.total_cents, p.name_nl, p.name_en
+         FROM shop_cart_lines l
+         LEFT JOIN shop_products p ON p.slug = l.product_slug
+         WHERE l.cart_id = :cart_id
+         ORDER BY l.created_at ASC",
+      );
+      $cartIdStmt->execute(["cart_id" => $row["cart_id"]]);
+      $lines = $cartIdStmt->fetchAll();
+      $locale = ($row["locale"] ?? "nl") === "en" ? "en" : "nl";
+      $items = [];
+      foreach ($lines as $line) {
+        $name = $locale === "en" ? ($line["name_en"] ?: $line["product_slug"]) : ($line["name_nl"] ?: $line["product_slug"]);
+        $items[] = [
+          "productSlug" => $line["product_slug"],
+          "name" => $name,
+          "quantity" => (int)$line["quantity"],
+          "totalEur" => round(((int)$line["total_cents"]) / 100, 2),
+        ];
+      }
+      $itemsSummary = implode(" | ", array_map(function ($item) {
+        return $item["name"] . " x" . $item["quantity"];
+      }, $items));
+      $metaEntry = [];
+      if (isset($orderMeta[$row["id"]]) && is_array($orderMeta[$row["id"]])) {
+        $metaEntry = $orderMeta[$row["id"]];
+      }
+
+      $orders[] = [
+        "id" => $row["id"],
+        "orderCode" => $row["order_code"],
+        "status" => $row["status"],
+        "email" => $row["email"],
+        "locale" => $row["locale"],
+        "shippingMethodId" => $row["shipping_method_id"],
+        "source" => !empty($row["mollie_payment_id"]) ? "mollie" : "manual",
+        "totalEur" => round(((int)$row["total_cents"]) / 100, 2),
+        "createdAt" => $row["created_at"],
+        "items" => $items,
+        "itemsSummary" => $itemsSummary,
+        "notes" => isset($metaEntry["notes"]) ? (string)$metaEntry["notes"] : "",
+        "archived" => !empty($metaEntry["archived"]),
+        "timeline" => isset($metaEntry["timeline"]) && is_array($metaEntry["timeline"]) ? $metaEntry["timeline"] : [],
+      ];
+    }
+
+    if ($download) {
+      $rows = array_map(function ($item) {
+        return [
+          $item["orderCode"] ?? "",
+          $item["status"] ?? "",
+          $item["email"] ?? "",
+          $item["totalEur"] ?? "",
+          $item["createdAt"] ?? "",
+          $item["itemsSummary"] ?? "",
+        ];
+      }, $orders);
+      writeCsv(["order_code", "status", "email", "total_eur", "created_at", "items"], $rows);
+    }
+
+    echo json_encode($orders);
+    exit;
+  } catch (Throwable $error) {
+    logError("crm_orders", ["message" => $error->getMessage()]);
+    http_response_code(500);
+    echo json_encode(["error" => "Cannot load orders"]);
+    exit;
+  }
+}
+
+if ($type === "logs") {
+  $file = crmDataPath("contact-log.json");
+  echo json_encode(crmReadJsonFile($file));
+  exit;
+}
+
+http_response_code(400);
+echo json_encode(["error" => "Unknown type"]);

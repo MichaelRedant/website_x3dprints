@@ -26,45 +26,55 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/layout.js"
     ],
-    "/(pages)/blog/layout": [
+    "/(pages)/shop/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/layout.js"
+      "static/chunks/app/(pages)/shop/layout.js"
     ],
-    "/(pages)/blog/page": [
+    "/(pages)/shop/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/page.js"
+      "static/chunks/app/(pages)/shop/page.js"
     ],
-    "/(pages)/about/page": [
+    "/(pages)/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/about/page.js"
+      "static/chunks/app/(pages)/[slug]/page.js"
     ],
-    "/(pages)/materials/page": [
+    "/(pages)/shop/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/materials/page.js"
+      "static/chunks/app/(pages)/shop/[slug]/page.js"
     ],
-    "/(pages)/materials/[slug]/page": [
+    "/(pages)/shop/cart/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/materials/[slug]/page.js"
+      "static/chunks/app/(pages)/shop/cart/page.js"
     ],
-    "/(pages)/organizers/page": [
+    "/(pages)/algemene-voorwaarden/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/organizers/page.js"
+      "static/chunks/app/(pages)/algemene-voorwaarden/page.js"
     ],
-    "/_not-found/page": [
+    "/(pages)/shop/checkout/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/(pages)/shop/checkout/page.js"
     ],
-    "/(pages)/blog/tool-organizers-3d-printen/page": [
+    "/(pages)/services/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/tool-organizers-3d-printen/page.js"
+      "static/chunks/app/(pages)/services/page.js"
+    ],
+    "/(pages)/crm/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/crm/layout.js"
+    ],
+    "/(pages)/crm/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/crm/page.js"
     ]
   }
 }

@@ -8,6 +8,7 @@ export type RelatedLink = {
 export type RelatedLinksPageType =
   | "default"
   | "blog"
+  | "shop"
   | "services"
   | "materials"
   | "pricing"
@@ -73,6 +74,32 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
         { label: "3D print service", href: "/services" },
         { label: "Segments & cases", href: "/segments" },
         { label: "Find 3D models", href: "/3d-modellen-vinden" },
+      ],
+    },
+  },
+  shop: {
+    primary: {
+      nl: [
+        { label: "Materialen & richtlijnen", href: "/materials" },
+        { label: "Prijzen & calculator", href: "/pricing" },
+        { label: "Offerte aanvragen", href: "/contact" },
+      ],
+      en: [
+        { label: "Materials and guidelines", href: "/materials" },
+        { label: "Pricing and calculator", href: "/pricing" },
+        { label: "Request a quote", href: "/contact" },
+      ],
+    },
+    secondary: {
+      nl: [
+        { label: "3D print service", href: "/services" },
+        { label: "Portfolio", href: "/portfolio" },
+        { label: "Segmenten & cases", href: "/segments" },
+      ],
+      en: [
+        { label: "3D print service", href: "/services" },
+        { label: "Portfolio", href: "/portfolio" },
+        { label: "Segments & cases", href: "/segments" },
       ],
     },
   },

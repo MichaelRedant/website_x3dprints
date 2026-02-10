@@ -1,54 +1,68 @@
 <?php
 declare(strict_types=1);
 
-require_once __DIR__ . '/crm-common.php';
-
-$dataFile = crmDataPath('material-stock.json');
-$method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
-
-if ($method === 'GET') {
-    crmRespond(200, crmReadJsonFile($dataFile));
+$bootstrap = __DIR__ . "/bff/src/bootstrap.php";
+if (!file_exists($bootstrap)) {
+  $bootstrap = __DIR__ . "/../bff/src/bootstrap.php";
+}
+if (!file_exists($bootstrap)) {
+  http_response_code(500);
+  header("Content-Type: application/json; charset=utf-8");
+  echo json_encode(["error" => "CRM bootstrap not found"]);
+  exit;
 }
 
-if ($method !== 'POST') {
-    crmRespond(405, ['ok' => false, 'error' => 'Method not allowed']);
+require $bootstrap;
+require_once __DIR__ . "/crm-common.php";
+
+header("Content-Type: application/json; charset=utf-8");
+header("X-Robots-Tag: noindex, nofollow");
+
+$secure = (!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] !== "off");
+session_name("x3dprints_crm");
+session_set_cookie_params([
+  "lifetime" => 0,
+  "path" => "/",
+  "secure" => $secure,
+  "httponly" => true,
+  "samesite" => "Strict",
+]);
+session_start();
+
+if (empty($_SESSION["crm_auth"])) {
+  http_response_code(401);
+  echo json_encode(["error" => "Unauthorized"]);
+  exit;
 }
 
-crmRequireAuth();
+$payload = readJsonBody();
+$key = (string)($payload["key"] ?? "");
+$label = (string)($payload["label"] ?? "");
+$reset = !empty($payload["reset"]);
+$inStock = isset($payload["inStock"]) ? (bool)$payload["inStock"] : null;
 
-$input = file_get_contents('php://input');
-$decoded = json_decode((string) $input, true);
-if (!is_array($decoded) || !isset($decoded['key'], $decoded['label'])) {
-    crmRespond(400, ['ok' => false, 'error' => 'Invalid payload, expected { key, label, inStock|reset }']);
+if ($key === "" || $label === "") {
+  http_response_code(400);
+  echo json_encode(["error" => "Missing payload"]);
+  exit;
 }
 
-$key = trim((string) $decoded['key']);
-$label = trim((string) $decoded['label']);
-$reset = isset($decoded['reset']) ? (bool) $decoded['reset'] : false;
-$inStock = $reset
-    ? null
-    : filter_var($decoded['inStock'] ?? null, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE);
-
-if ($key === '' || $label === '' || (!$reset && $inStock === null)) {
-    crmRespond(400, ['ok' => false, 'error' => 'Invalid key/label/inStock values']);
-}
-
-$current = crmReadJsonFile($dataFile);
-if (!isset($current[$key]) || !is_array($current[$key])) {
-    $current[$key] = [];
-}
+$file = crmDataPath("material-stock.json");
+$data = crmReadJsonFile($file);
 
 if ($reset) {
-    unset($current[$key][$label]);
-    if (empty($current[$key])) {
-        unset($current[$key]);
+  if (isset($data[$key][$label])) {
+    unset($data[$key][$label]);
+    if (empty($data[$key])) {
+      unset($data[$key]);
     }
+  }
 } else {
-    $current[$key][$label] = (bool) $inStock;
+  if (!isset($data[$key]) || !is_array($data[$key])) {
+    $data[$key] = [];
+  }
+  $data[$key][$label] = $inStock === null ? true : $inStock;
 }
 
-if (!crmWriteJsonFile($dataFile, $current)) {
-    crmRespond(500, ['ok' => false, 'error' => 'Could not write material stock file']);
-}
-
-crmRespond(200, ['ok' => true, 'overrides' => $current]);
+crmWriteJsonFile($file, $data);
+echo json_encode(["ok" => true]);

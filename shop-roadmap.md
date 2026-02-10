@@ -1,4 +1,4 @@
-# SEO-First Shop Roadmap (Next.js + Vendure)
+# SEO-First Shop Roadmap (Next.js static + PHP BFF)
 
 ## 1. Vision & Principles
 - The shop is an extension of the existing site, not a replacement.
@@ -31,21 +31,20 @@
 
 ## 3. High-Level Architecture
 - Runtime:
-  - Next.js frontend in `apps/web`.
-  - Vendure headless backend in `apps/commerce`.
-  - MySQL for commerce data only.
-  - Mollie handles payments via redirect and webhook callbacks.
-- Vendure is isolated:
+  - Next.js frontend (static export) for all shop UI.
+  - PHP BFF (`/bff`) on shared hosting for catalog, carts, checkout, orders.
+  - MySQL for shop data (products, carts, orders).
+  - Mollie handles payments via redirect + webhook callbacks.
+  - Hosting constraint: no Node runtime in production.
+- BFF is isolated:
   - Not publicly crawled or indexed.
-  - Accessed by Next.js server routes or server actions only.
-  - Network-level restriction (private service or allowlist).
-  - Robots disallow and auth on any public endpoints.
+  - Accessed by the frontend only; CORS allowlist enforced.
+  - Robots disallow and auth on any public utility endpoints.
 - Logical flow:
-  - User -> Next.js -> Vendure -> Mollie -> Vendure -> Next.js.
+  - User -> Next.js (static) -> PHP BFF -> Mollie -> PHP BFF -> Next.js.
 - Separation of concerns:
   - Next.js owns routing, rendering, SEO, and content.
-  - Vendure owns catalog, carts, orders, and payment orchestration.
-  - No direct browser access to Vendure APIs.
+  - PHP BFF owns catalog, carts, orders, payment orchestration, CRM data.
 
 ## 4. Shop Scope Definition (MVP First)
 Phase 1 scope (minimal footprint):
@@ -55,6 +54,7 @@ Phase 1 scope (minimal footprint):
 - No instant pricing or dynamic configurators.
 - Variants only if strictly necessary (e.g., size or color).
 - Simple shipping rules (one region, flat rate or single tier).
+- Launch sequencing: start with 1 product later; keep /shop noindex until first SKU is live.
 - Minimum content standards per product page (unique copy, specs, images).
 
 Out of scope in Phase 1 (and why):
@@ -71,6 +71,7 @@ Out of scope in Phase 1 (and why):
   - `/shop/[slug]` (product detail)
   - `/shop/cart` (noindex)
   - `/shop/checkout` (noindex)
+  - EN equivalents under `/en/shop`, `/en/shop/[slug]`, `/en/shop/cart`, `/en/shop/checkout`.
 - Forbidden routes:
   - `/products`, `/store`, or any rewrite of existing paths.
   - Indexable search or filter URLs (`/shop?color=...`).
@@ -105,25 +106,30 @@ Out of scope in Phase 1 (and why):
 - Baseline current sitemap, index counts, and top landing pages.
 - Freeze existing routes and canonicals in a documented registry.
 - Define allowed shop routes and robots rules before any merge.
-- Stand up staging with separate crawler rules for Vendure.
+- Stand up staging with separate crawler rules for the BFF.
 - Validate that build and dev do not depend on live commerce APIs.
 - Define rollout gates: max index delta, 404 rate, LCP budget, and rollback triggers.
 - Define product content standards and metadata templates.
 - Set up parameter handling rules and sitemap partitioning.
+- Confirm bilingual shop routing (nl + en) and hreflang strategy.
 
 ### Phase 1 - Minimal Shop MVP
 - Features:
   - Basic catalog, product detail pages, cart, checkout.
-  - Single currency, simple tax, and flat shipping.
-  - Mollie redirect + webhook order confirmation.
+  - Single currency (EUR), BE-only shipping.
+  - Shipping: EUR 7.50 up to 3kg, pickup by appointment (EUR 0).
+  - Internal finance note: VAT exemption (kleine onderneming). Do not display this on the storefront UI.
+  - Mollie redirect + webhook order confirmation + order emails.
 - SEO guarantees:
   - Zero changes to existing URLs and canonicals.
   - New routes limited to `/shop` and product detail pages.
   - Cart/checkout remain noindex.
 - Technical deliverables:
-  - Vendure setup with MySQL in `apps/commerce`.
-  - Next.js shop pages in `apps/web` with server-side fetching.
-  - Product import pipeline (CSV or simple seed).
+  - PHP BFF (`/bff`) with MySQL schema and Mollie integration.
+  - Next.js shop pages (NL/EN) with static export + BFF fetch.
+  - Product seed/import pipeline (SQL or simple seed).
+  - Order confirmation emails (admin + customer) via SMTP.
+  - CRM login for contact logs, replies, stock toggles, orders view.
   - Monitoring for 404s, canonicals, and index bloat.
   - Product lifecycle rules: out-of-stock, discontinued, and merged SKU handling.
   - Sitemap generation for shop URLs only, with strict inclusion rules.
@@ -149,12 +155,29 @@ Out of scope in Phase 1 (and why):
 - Requires a separate discovery phase and dedicated QA for crawl impact.
 
 ## 8. Local Development & Build Safety
-- `npm run dev` runs Next.js and Vendure locally with MySQL in docker.
-- `npm run build` must not call live Vendure or Mollie endpoints.
+- `npm run dev` runs Next.js locally; PHP BFF must be served separately for CRM/login.
+- `npm run build` must not call live Mollie endpoints.
 - Use environment variables for API endpoints and secrets; fail fast if missing.
-- All payment calls occur at runtime only (server action or API route).
+- All payment calls occur at runtime only (BFF routes).
 - Build-time data uses stubs or cached fixtures where required.
 - CI must block builds that point to production commerce endpoints.
+- Production stays static-exported; no Next API/server actions in production runtime.
+
+## 8.1 Go-live checklist (BFF + Mollie)
+- [ ] Update BFF `.env` for production:
+  - `SHOP_SITE_URL=https://x3dprints.be`
+  - `BFF_BASE_URL=https://api.x3dprints.be`
+  - `MOLLIE_API_KEY=<live key when ready>`
+  - `APP_DEBUG=false`
+- [ ] Set CRM + mail in BFF `.env`:
+  - `CRM_PASSWORD=<strong password>`
+  - `SMTP_HOST/PORT/USER/PASS`, `MAIL_FROM`, `MAIL_TO`
+- [ ] Ensure DB schema imported (`bff/schema.sql`) and demo products exist.
+- [ ] Verify BFF health: `https://api.x3dprints.be/index.php?path=/health&debug=1`.
+- [ ] Build/export on main machine (`npm run build`) and upload `out/`.
+- [ ] Upload `public/crm-*.php`, `public/material-stock.php`, `public/contact-reply.php`, `public/storage/.htaccess`.
+- [ ] Confirm `/shop/checkout/` exists on the live site.
+- [ ] End-to-end test: add item -> checkout -> Mollie redirect -> back to `/shop/checkout/?order=...`.
 
 ## 9. Risk Register
 | Risk | Likelihood | Impact | Mitigation |
@@ -166,7 +189,7 @@ Out of scope in Phase 1 (and why):
 | Crawl budget dilution | Medium | High | Minimal new routes and clean sitemap |
 | Thin product content | Medium | Medium | Minimum content standards per PDP |
 | Performance regression on shop pages | Medium | High | LCP budgets and image optimization |
-| Vendure publicly crawled | Low | High | Isolate backend and restrict routes |
+| BFF publicly crawled | Low | High | Isolate backend and restrict routes |
 | Mollie webhook failures | Medium | High | Retries, logging, and manual reconciliation |
 | Inventory mismatch | Medium | Medium | Periodic sync jobs and alerts |
 | Robots or sitemap misconfig | Medium | High | Pre-merge checks and staging validation |
@@ -198,3 +221,67 @@ Out of scope in Phase 1 (and why):
 - Primary dependencies: clean product data, stable slugs, and webhook reliability.
 - Highest risk area is SEO integrity; mitigated by strict routing and robots rules.
 - MVP can be delivered incrementally without touching existing pages.
+
+## 12. Repo Scan Summary (current repo)
+- `next.config.ts` uses `output: "export"`, `trailingSlash: true`, and unoptimized images.
+- `app/robots.ts` currently only allows `/` and `/en` and disallows `/api` + `/crm`.
+- `app/sitemap.ts` is explicit and does not include any `/shop` routes yet.
+- JSON-LD helper factories are centralized in `lib/seo.ts`.
+- Related-links mappings are centralized in `lib/seo-related-links.ts`.
+- `app/api/contact/route.ts` exists but requires Node runtime (not compatible with static-only production).
+- SEO checks already exist in `package.json` (`npm run check:seo`).
+- PHP BFF lives in `/bff` with MySQL schema + Mollie integration.
+- CRM endpoints are PHP scripts in `/public` and require `CRM_PASSWORD` in `bff/.env`.
+
+## 13. Backlog (static export, BE, EN, VAT exempt)
+### Phase 0 - Guardrails & Decisions
+- [ ] Add shop route registry + indexation rules; update robots for `/shop/cart`, `/shop/checkout`, filters/params.
+- [ ] Extend sitemap generation for indexable shop URLs only (exclude cart/checkout).
+- [ ] Add Product JSON-LD helper in `lib/seo.ts` and wire schema tests.
+- [x] Define BFF endpoints + env vars; ensure build-time uses stubs/fixtures.
+- [x] Confirm bilingual `/shop` + `/en/shop` routing and hreflang mapping.
+
+### Phase 1 - MVP (no product live)
+- [x] Stand up PHP BFF + MySQL + Mollie; restrict public access.
+- [x] Configure BE-only shipping: EUR 7.50 up to 3kg; pickup by appointment EUR 0.
+- [x] Configure VAT exempt: no tax; internal note only (do not display on storefront).
+- [x] Implement static shop pages (NL/EN): `/shop`, `/shop/[slug]`, `/shop/cart`, `/shop/checkout`.
+- [ ] Keep `/shop` and product pages `noindex` until first SKU is live; always `noindex` cart/checkout.
+- [x] Add product seed/import pipeline (SQL seed) + content template (unique copy/specs/images).
+- [x] Add order confirmation email (admin + customer) via SMTP.
+- [x] Add CRM login + orders view.
+- [ ] Add monitoring for canonicals, 404s, and webhook failures.
+
+### Phase 2 - First product live
+- [ ] Add product content + assets; lock slug.
+- [ ] Remove `noindex` from `/shop` + product page; add to sitemap.
+- [ ] Run SEO checks + build; verify index delta and canonical integrity.
+
+## 14. BFF API Contract (draft)
+Base URL: separate backend service (no browser access). CORS allowlist = x3dprints.be only.
+
+### Endpoints (public to Next)
+- `GET /health` -> `{ ok: true, version }`
+- `GET /shop/products?locale=nl|en` -> `{ products: [{ slug, name, summary, price: { amount: number, currency: "EUR", vatApplicable: false }, availability, image }] }`
+- `GET /shop/products/{slug}?locale=nl|en` -> `{ product }` (same shape as list)
+- `POST /shop/cart` -> `{ cartId, currency: "EUR", lines: [], totals, shippingMethods }`
+- `POST /shop/cart/{cartId}/lines` -> `{ lineId, productSlug, quantity, totals }`
+- `PATCH /shop/cart/{cartId}/lines/{lineId}` -> `{ lineId, quantity, totals }`
+- `DELETE /shop/cart/{cartId}/lines/{lineId}` -> `{ cartId, totals }`
+- `POST /shop/checkout` -> `{ checkoutUrl, orderCode }`
+
+### Shipping methods
+- `be_flat` -> `EUR 7.50` (<= 3 kg), `area: "BE"`
+- `pickup` -> `EUR 0.00`, `label: "Afhalen op afspraak"`
+
+### Webhooks (Mollie -> BFF)
+- `POST /shop/webhooks/mollie` -> `{ ok: true }` (verify signature + idempotency key)
+
+### Common rules
+- All prices in EUR. Internal VAT exemption applies; keep storefront copy VAT-neutral.
+- Product slugs are stable; no duplicate URLs per variant.
+
+## 15. Product Seed Template (content-first)
+- Single source of truth: `content/shop-products.ts` (NL + EN fields).
+- `SHOP_INDEXABLE` stays `false` until first SKU is live.
+- `SHOP_PRODUCT_SLUGS` only includes `isLive: true` products.

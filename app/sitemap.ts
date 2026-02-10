@@ -6,6 +6,7 @@ import path from "path"
 import { SITE } from "@/lib/seo"
 import { EN_LOCATION_SLUGS, getAllLocationSlugs } from "@/lib/locations"
 import { MATERIAL_DETAIL_SLUGS } from "@/content/material-details"
+import { SHOP_INDEXABLE, SHOP_PRODUCT_SLUGS } from "@/content/shop-products"
 
 const BASE_URL = SITE.url.replace(/\/+$/, "") // https://www.x3dprints.be
 const ROOT = process.cwd()
@@ -135,6 +136,18 @@ async function getLocationMtime(slug: string) {
 export const dynamic = "force-static"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const shopRouteConfigs: StaticRouteConfig[] = SHOP_INDEXABLE
+    ? [
+        {
+          nl: "/shop",
+          en: "/en/shop",
+          changeFrequency: "weekly",
+          priority: 0.7,
+          sources: ["app/(pages)/shop/page.tsx", "app/en/(pages)/shop/page.tsx", "content/shop-products.ts"],
+        },
+      ]
+    : []
+
   const staticRouteConfigs: StaticRouteConfig[] = [
     { nl: "/", en: "/en/", changeFrequency: "weekly", priority: 0.8, sources: ["app/(home)/page.tsx", "app/en/(home)/page.tsx"] },
     { nl: "/3d-printen", en: "/en/3d-printen", changeFrequency: "weekly", priority: 0.8, sources: ["app/(pages)/3d-printen/page.tsx", "app/en/(pages)/3d-printen/page.tsx"] },
@@ -219,6 +232,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         "app/en/(pages)/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem/page.tsx",
       ],
     },
+    ...shopRouteConfigs,
   ]
 
   const staticRoutes = (await Promise.all(staticRouteConfigs.map(toRouteEntries))).flat()
@@ -335,6 +349,37 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }),
   ).then((entries) => entries.flat())
 
+  const shopProductRoutes: MetadataRoute.Sitemap = SHOP_INDEXABLE
+    ? await Promise.all(
+        SHOP_PRODUCT_SLUGS.flatMap((slug) => {
+          const sources = [
+            "content/shop-products.ts",
+            `app/(pages)/shop/${slug}/page.tsx`,
+            `app/en/(pages)/shop/${slug}/page.tsx`,
+          ]
+
+          const alternates = buildAlternates(`/shop/${slug}`, `/en/shop/${slug}`)
+
+          return [
+            (async () => ({
+              url: `${BASE_URL}${withTrailingSlash(`/shop/${slug}`)}`,
+              lastModified: (await latestMtime(sources)) ?? new Date(),
+              changeFrequency: "monthly" as const,
+              priority: 0.7,
+              alternates,
+            }))(),
+            (async () => ({
+              url: `${BASE_URL}${withTrailingSlash(`/en/shop/${slug}`)}`,
+              lastModified: (await latestMtime(sources)) ?? new Date(),
+              changeFrequency: "monthly" as const,
+              priority: 0.7,
+              alternates,
+            }))(),
+          ]
+        }),
+      ).then((entries) => entries.flat())
+    : []
+
   const locationRoutes: MetadataRoute.Sitemap = await Promise.all(
     getAllLocationSlugs().flatMap((slug) => {
       const hasEn = EN_LOCATION_SLUGS.has(slug)
@@ -369,6 +414,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...blogRouteEntries,
     ...segmentRoutes,
     ...materialDetailRoutes,
+    ...shopProductRoutes,
     ...locationRoutes,
   ]
 }
