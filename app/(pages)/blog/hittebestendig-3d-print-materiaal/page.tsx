@@ -11,13 +11,15 @@ import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/hittebestendig-3d-print-materiaal/"
 const datePublished = "2026-02-08"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const materialsHref =
   "/materials?utm_source=blog&utm_medium=cta&utm_campaign=hittebestendig-materiaal#material-suggestion-tool"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=hittebestendig-materiaal"
 const viewerHref = "/viewer?utm_source=blog&utm_medium=cta&utm_campaign=hittebestendig-materiaal"
 const contactHref =
   "/contact?material=pc&quote=Hittebestendig%20materiaal%20voor%203D%20print"
+const materialsGuideHref =
+  "/blog/3d-print-materialen-gids?utm_source=blog&utm_medium=internal&utm_campaign=hittebestendig-materiaal"
 
 export const metadata: Metadata = {
   title: "Hittebestendig 3D print materiaal: PETG vs PC | X3DPrints",
@@ -223,7 +225,7 @@ export default function BlogHittebestendigPage() {
             is de beste optie voor hoge hitte of technische toepassingen. Gebruik deze matrix om sneller te kiezen.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 8 februari 2026
+            Laatst bijgewerkt: 9 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton
@@ -248,7 +250,7 @@ export default function BlogHittebestendigPage() {
           </div>
         </header>
 
-      <BlogContentOverview locale="nl" />
+        <BlogContentOverview locale="nl" />
 
         <section id="hitte-criteria" className="scroll-mt-28">
           <Reveal>
@@ -305,6 +307,13 @@ export default function BlogHittebestendigPage() {
                   Material Suggestion Tool
                 </Link>{" "}
                 voor gericht advies.
+              </p>
+              <p className="mt-2 text-sm text-slate-600">
+                Meer context? Lees de{" "}
+                <Link href={materialsGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print materialen gids
+                </Link>
+                .
               </p>
             </GlassCard>
           </Reveal>

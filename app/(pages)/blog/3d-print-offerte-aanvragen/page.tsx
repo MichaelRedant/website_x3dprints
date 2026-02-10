@@ -11,11 +11,13 @@ import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/3d-print-offerte-aanvragen/"
 const datePublished = "2026-02-08"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=offerte-checklist"
 const materialsHref = "/materials?utm_source=blog&utm_medium=cta&utm_campaign=offerte-checklist#material-suggestion-tool"
 const viewerHref = "/viewer?utm_source=blog&utm_medium=cta&utm_campaign=offerte-checklist"
 const contactHref = "/contact?material=pla-matte&quote=Offerte%20aanvraag%20voor%20mijn%203D-print"
+const pricingGuideHref =
+  "/blog/3d-print-prijzen-gids?utm_source=blog&utm_medium=internal&utm_campaign=offerte-checklist"
 
 export const metadata: Metadata = {
   title: "3D print offerte aanvragen: snelle checklist | X3DPrints",
@@ -241,7 +243,7 @@ export default function BlogOffertePage() {
             Deze checklist toont wat we nodig hebben, hoe de prijs is opgebouwd en hoe je direct kunt plannen.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 8 februari 2026
+            Laatst bijgewerkt: 9 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton
@@ -266,7 +268,7 @@ export default function BlogOffertePage() {
           </div>
         </header>
 
-      <BlogContentOverview locale="nl" />
+        <BlogContentOverview locale="nl" />
 
         <section id="offerte-input" className="scroll-mt-28">
           <Reveal>
@@ -350,6 +352,13 @@ export default function BlogOffertePage() {
                   pricing calculator
                 </Link>{" "}
                 gebruiken.
+              </p>
+              <p className="mt-2 text-sm text-slate-600">
+                Meer context? Lees de{" "}
+                <Link href={pricingGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print prijzen gids
+                </Link>
+                .
               </p>
             </GlassCard>
           </Reveal>

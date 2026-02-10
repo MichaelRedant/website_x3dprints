@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import BlogReadMore from "@/components/BlogReadMore"
 import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
@@ -12,10 +11,12 @@ import BlogContentOverview from "@/components/BlogContentOverview"
 const canonical = "https://www.x3dprints.be/blog/bestanden-voor-3d-printen/"
 const enCanonical = "https://www.x3dprints.be/en/blog/bestanden-voor-3d-printen/"
 const datePublished = "2024-08-01"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const viewerHref = "/viewer?utm_source=blog&utm_medium=cta&utm_campaign=bestanden"
 const contactHref = "/contact?material=pla-matte&quote=Bestandscheck%20voor%203D%20printen"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=bestanden"
+const designGuideHref =
+  "/blog/3d-print-ontwerp-gids?utm_source=blog&utm_medium=internal&utm_campaign=bestanden"
 
 export const metadata: Metadata = {
   title: "Welke bestanden heb je nodig voor 3D printen? | X3DPrints",
@@ -184,7 +185,7 @@ export default function FilesArticlePage() {
             Een goede bestandsaanlevering voorkomt vertraging. Met de juiste export en context start je project veel sneller, zeker wanneer je met 3d stl of andere 3d modellen om te printen werkt.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 8 februari 2026
+            Laatst bijgewerkt: 9 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton
@@ -209,7 +210,7 @@ export default function FilesArticlePage() {
           </div>
         </header>
 
-      <BlogContentOverview locale="nl" />
+        <BlogContentOverview locale="nl" />
 
         <section id="files-formats" className="scroll-mt-28">
           <Reveal>
@@ -307,6 +308,13 @@ export default function FilesArticlePage() {
                 </Link>{" "}
                 voor snellere beslissing.
               </p>
+              <p className="mt-2 text-sm text-slate-600">
+                Meer detail nodig? Lees de{" "}
+                <Link href={designGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print ontwerp gids
+                </Link>
+                .
+              </p>
             </GlassCard>
           </Reveal>
         </section>
@@ -343,7 +351,6 @@ export default function FilesArticlePage() {
       <BlogAuthorNote locale="nl" />
 
 
-      <BlogReadMore />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />

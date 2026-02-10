@@ -304,9 +304,9 @@ export default function GridfinityBlogEn() {
           <ul className="mt-4 space-y-3 text-sm text-slate-700">
             {references.map((ref) => (
               <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                <cite className="not-italic"><a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
                   {ref.label}
-                </a>
+                </a></cite>
                 <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
               </li>
             ))}
@@ -319,5 +319,7 @@ export default function GridfinityBlogEn() {
     </main>
   )
 }
+
+
 
 

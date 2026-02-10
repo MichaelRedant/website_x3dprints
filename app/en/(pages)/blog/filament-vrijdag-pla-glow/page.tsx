@@ -3,7 +3,6 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 import BlogContentOverview from "@/components/BlogContentOverview"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
@@ -333,14 +332,14 @@ export default function FilamentFridayPlaGlowEnPage() {
                   <ul className="mt-2 space-y-2 text-sm text-slate-600">
                     {references.map((ref) => (
                       <li key={ref.href}>
-                        <a
+                        <cite className="not-italic"><a
                           href={ref.href}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-indigo-600 transition hover:text-indigo-500"
                         >
                           {ref.label}
-                        </a>
+                        </a></cite>
                         <p className="text-xs text-slate-500">{ref.description}</p>
                       </li>
                     ))}
@@ -374,16 +373,17 @@ export default function FilamentFridayPlaGlowEnPage() {
         </div>
       </section>
 
-      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" />
+      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" mainEntityOfPage={canonical} />
 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogAuthorNote locale="en" />
 
-      <BlogReadMore />
     </main>
   )
 }
+
+
 
 
 

@@ -3,7 +3,6 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogContentOverview from "@/components/BlogContentOverview"
@@ -559,13 +558,12 @@ export default function UseCaseDinsdagInterieurPage() {
 
       <BlogContentOverview locale="nl" />
 
-      <BlogFaq title={faq.title} items={faq.items} />
+      <BlogFaq title={faq.title} items={faq.items} mainEntityOfPage={canonical} />
 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogAuthorNote locale="nl" />
 
-      <BlogReadMore />
 
     </main>
   )

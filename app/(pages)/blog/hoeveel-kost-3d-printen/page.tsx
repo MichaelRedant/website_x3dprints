@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import BlogReadMore from "@/components/BlogReadMore"
 import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
@@ -11,11 +10,13 @@ import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/hoeveel-kost-3d-printen/"
 const datePublished = "2024-10-01"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=hoeveel-kost-3d-printen"
 const materialsHref = "/materials?utm_source=blog&utm_medium=cta&utm_campaign=hoeveel-kost-3d-printen#material-suggestion-tool"
 const contactHref =
   "/contact?material=pla-matte&quote=Kostprijsanalyse%20voor%20mijn%203D-printproject"
+const pricingGuideHref =
+  "/blog/3d-print-prijzen-gids?utm_source=blog&utm_medium=internal&utm_campaign=hoeveel-kost-3d-printen"
 
 export const metadata: Metadata = {
   title: "3D print prijs: hoeveel kost 3D printen in 2026? | X3DPrints",
@@ -212,7 +213,7 @@ export default function BlogCostPage() {
             Gebruik deze gids als referentie voor je 3d printen prijs en vergelijk prijs 3d printen per formaat.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 8 februari 2026
+            Laatst bijgewerkt: 9 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton
@@ -237,7 +238,7 @@ export default function BlogCostPage() {
           </div>
         </header>
 
-      <BlogContentOverview locale="nl" />
+        <BlogContentOverview locale="nl" />
 
         <section id="kost-factors" className="scroll-mt-28">
           <Reveal>
@@ -289,6 +290,13 @@ export default function BlogCostPage() {
               </div>
               <p className="mt-4 text-sm text-slate-600">
                 Tip: gebruik altijd de <Link href="/pricing" className="font-semibold text-emerald-600 hover:text-emerald-700">pricing calculator</Link> voor actuele simulaties.
+              </p>
+              <p className="mt-2 text-sm text-slate-600">
+                Meer context? Lees de{" "}
+                <Link href={pricingGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print prijzen gids
+                </Link>
+                .
               </p>
             </GlassCard>
           </Reveal>
@@ -377,7 +385,6 @@ export default function BlogCostPage() {
       <BlogAuthorNote locale="nl" />
 
 
-      <BlogReadMore />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />

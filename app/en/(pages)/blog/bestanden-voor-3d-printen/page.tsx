@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import BlogReadMore from "@/components/BlogReadMore"
 import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
@@ -12,13 +11,15 @@ import BlogAuthorNote from "@/components/BlogAuthorNote"
 const canonical = "https://www.x3dprints.be/en/blog/bestanden-voor-3d-printen/"
 const nlCanonical = "https://www.x3dprints.be/blog/bestanden-voor-3d-printen/"
 const datePublished = "2024-08-01"
-const dateModified = "2026-02-08"
-const lastUpdatedLabel = "Last updated: 8 February 2026"
+const dateModified = "2026-02-09"
+const lastUpdatedLabel = "Last updated: 9 February 2026"
 const viewerHref = "/en/viewer?utm_source=blog&utm_medium=cta&utm_campaign=files-en"
 const pricingHref = "/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=files-en"
 const materialsHref = "/en/materials#material-suggestion-tool"
 const locatiesHref = "/en/locaties?utm_source=blog&utm_medium=cta&utm_campaign=files-en"
 const contactHref = "/en/contact?material=pla-matte&quote=File%20check%20for%203D%20printing"
+const designGuideHref =
+  "/en/blog/3d-print-ontwerp-gids?utm_source=blog&utm_medium=internal&utm_campaign=files-en"
 
 export const metadata: Metadata = {
   title: "Which files do you need for 3D printing? | X3DPrints",
@@ -288,6 +289,13 @@ export default function FilesArticleEnPage() {
                 </Link>
                 .
               </p>
+              <p className="mt-2 text-sm text-slate-600">
+                Need more detail? Read the{" "}
+                <Link href={designGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print design guide
+                </Link>
+                .
+              </p>
             </GlassCard>
           </Reveal>
         </section>
@@ -303,16 +311,16 @@ export default function FilesArticleEnPage() {
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
-                    <cite className="not-italic">
-                      <a
+                    
+                      <cite className="not-italic"><a
                         href={reference.href}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="font-semibold text-indigo-600 hover:text-indigo-500"
                       >
                         {reference.label}
-                      </a>
-                    </cite>
+                      </a></cite>
+                    
                   </li>
                 ))}
               </ul>
@@ -324,7 +332,6 @@ export default function FilesArticleEnPage() {
       <BlogAuthorNote locale="en" />
 
 
-      <BlogReadMore />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -332,5 +339,6 @@ export default function FilesArticleEnPage() {
     </main>
   )
 }
+
 
 

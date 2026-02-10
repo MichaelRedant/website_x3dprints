@@ -5,7 +5,6 @@ import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
-import BlogReadMore from "@/components/BlogReadMore"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import { localizeHref } from "@/lib/i18n/paths"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
@@ -798,7 +797,6 @@ export function renderOctopusCase(locale: Locale) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogAuthorNote locale={locale} />
-      <BlogReadMore />
     </article>
   )
 }

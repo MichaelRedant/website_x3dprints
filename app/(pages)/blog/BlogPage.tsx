@@ -7,6 +7,7 @@ import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import OrganizerCta from "@/components/OrganizerCta"
+import { buildBlogItemListSchema, buildBlogSchema } from "@/lib/seo"
 
 type TopicCategory = "filament-friday" | "maker-monday" | "use-case-dinsdag" | "materials-pricing" | "segments-cases" | "how-to"
 
@@ -634,6 +635,24 @@ const TOPICS_NL: Topic[] = [
     category: "filament-friday",
   },
   {
+    id: "3d-print-ontwerp-gids",
+    title: "3D print ontwerp gids: van CAD naar print",
+    summary:
+      "Pillar gids met ontwerpregels, toleranties en workflow zodat je CAD-model meteen printbaar is.",
+    highlights: [
+      "Tolerantietabel en checklist om herprints te vermijden.",
+      "Links naar ontwerp checklist, assemblage gids en viewer.",
+      "CTA voor design review met prefill zodat intake sneller loopt.",
+    ],
+    links: [
+      { label: "Lees de ontwerp gids", href: "/blog/3d-print-ontwerp-gids" },
+      { label: "Upload in de viewer", href: "/viewer" },
+      { label: "Vraag design review", href: "/contact?material=pla-matte&quote=Ontwerpcheck%20voor%20mijn%203D%20print" },
+    ],
+    intent: "how-to",
+    category: "how-to",
+  },
+  {
     id: "use-cases-tpu",
     title: "Use cases: hoe klanten TPU in de praktijk inzetten",
     summary:
@@ -650,6 +669,42 @@ const TOPICS_NL: Topic[] = [
     ],
     intent: "informational",
     category: "how-to",
+  },
+  {
+    id: "3d-print-prijzen-gids",
+    title: "3D print prijzen gids: kosten & prijsankers",
+    summary:
+      "Pillar gids met kostblokken, prijsranges per projecttype en optimalisaties om je prijs per stuk te verlagen.",
+    highlights: [
+      "Prijsankers per prototype, serie en branding prop.",
+      "Uitleg van kostblokken: materiaal, printtijd, setup en logistiek.",
+      "CTA's naar pricing calculator, materiaaltool en offerte.",
+    ],
+    links: [
+      { label: "Lees de prijzen gids", href: "/blog/3d-print-prijzen-gids" },
+      { label: "Open pricing calculator", href: "/pricing" },
+      { label: "Vraag prijsindicatie", href: "/contact?material=pla-matte&quote=Prijsindicatie%20voor%20mijn%203D%20print" },
+    ],
+    intent: "transactional",
+    category: "materials-pricing",
+  },
+  {
+    id: "3d-print-materialen-gids",
+    title: "3D print materialen gids: PLA, PETG, TPU",
+    summary:
+      "Pillar gids met materialenmatrix, use cases en beslisregels voor de juiste materiaalkeuze.",
+    highlights: [
+      "Matrix met sterkte, hitte en beste toepassing per materiaal.",
+      "Snelle 3-stappen flow voor materiaalkeuze.",
+      "CTA's naar materiaaltool, pricing en advies.",
+    ],
+    links: [
+      { label: "Lees de materialen gids", href: "/blog/3d-print-materialen-gids" },
+      { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+      { label: "Vraag materiaaladvies", href: "/contact?material=pla-matte&quote=Materiaaladvies%20voor%20mijn%203D%20print" },
+    ],
+    intent: "informational",
+    category: "materials-pricing",
   },
   {
     id: "hoeveel-kost-3d-printen",
@@ -1775,6 +1830,24 @@ const TOPICS_EN: Topic[] = [
     category: "filament-friday",
   },
   {
+    id: "3d-print-ontwerp-gids",
+    title: "3D print design guide: from CAD to print",
+    summary:
+      "Pillar guide with design rules, tolerances and workflow so your CAD model is ready to print.",
+    highlights: [
+      "Tolerance table and checklist to avoid reprints.",
+      "Links to the design checklist, assembly guide and viewer.",
+      "CTA for a design review with prefill to speed up intake.",
+    ],
+    links: [
+      { label: "Read the design guide", href: "/en/blog/3d-print-ontwerp-gids" },
+      { label: "Upload in the viewer", href: "/en/viewer" },
+      { label: "Request design review", href: "/en/contact?material=pla-matte&quote=Design%20check%20for%20my%203D%20print" },
+    ],
+    intent: "how-to",
+    category: "how-to",
+  },
+  {
     id: "use-cases-tpu",
     title: "Use cases: how customers use TPU in practice",
     summary:
@@ -1793,6 +1866,42 @@ const TOPICS_EN: Topic[] = [
     category: "segments-cases",
   },
   {
+    id: "3d-print-prijzen-gids",
+    title: "3D print pricing guide: costs & anchors",
+    summary:
+      "Pillar guide with cost blocks, price ranges per project type and optimisation tips to lower your price per part.",
+    highlights: [
+      "Price anchors for prototypes, batches and branding props.",
+      "Breakdown of cost blocks: material, print time, setup and logistics.",
+      "CTAs to the pricing calculator, material tool and quote.",
+    ],
+    links: [
+      { label: "Read the pricing guide", href: "/en/blog/3d-print-prijzen-gids" },
+      { label: "Open pricing calculator", href: "/en/pricing" },
+      { label: "Request price range", href: "/en/contact?material=pla-matte&quote=Price%20indication%20for%20my%203D%20print" },
+    ],
+    intent: "transactional",
+    category: "materials-pricing",
+  },
+  {
+    id: "3d-print-materialen-gids",
+    title: "3D print materials guide: PLA, PETG, TPU",
+    summary:
+      "Pillar guide with a materials matrix, use cases and decision rules for selecting the right filament.",
+    highlights: [
+      "Matrix with strength, heat and best use case per material.",
+      "Fast 3-step flow for material selection.",
+      "CTAs to the material tool, pricing and advice.",
+    ],
+    links: [
+      { label: "Read the materials guide", href: "/en/blog/3d-print-materialen-gids" },
+      { label: "Material Suggestion Tool", href: "/en/materials#material-suggestion-tool" },
+      { label: "Request material advice", href: "/en/contact?material=pla-matte&quote=Material%20advice%20for%20my%203D%20print" },
+    ],
+    intent: "informational",
+    category: "materials-pricing",
+  },
+  {
     id: "hoeveel-kost-3d-printen",
     title: "How much does 3D printing cost?",
     summary:
@@ -1806,6 +1915,114 @@ const TOPICS_EN: Topic[] = [
       { label: "Read full article", href: "/blog/hoeveel-kost-3d-printen" },
       { label: "View pricing and calculator", href: "/pricing" },
       { label: "Request a quote", href: "/contact" },
+    ],
+    intent: "transactional",
+    category: "materials-pricing",
+  },
+  {
+    id: "3d-print-prijs-per-stuk",
+    title: "3D print price per part: single vs batch",
+    summary:
+      "Breakdown of setup cost, print time and scale with a per-part price table and optimisation tips.",
+    highlights: [
+      "Cost blocks explained with focus on scale benefits.",
+      "Table with indicative ranges per part for 1, 10 and 50 pieces.",
+      "CTAs to pricing calculator, material tool and quote.",
+    ],
+    links: [
+      { label: "Read the price per part article", href: "/blog/3d-print-prijs-per-stuk" },
+      { label: "Open pricing calculator", href: "/pricing" },
+      { label: "Request a quote", href: "/contact?material=pla-matte&quote=Price%20per%20part%20estimate" },
+    ],
+    intent: "transactional",
+    category: "materials-pricing",
+  },
+  {
+    id: "3d-print-kosten-besparen",
+    title: "Save 3D print costs: 7 smart optimisations",
+    summary:
+      "Savings tips with an impact table and concrete optimisations for print time and material.",
+    highlights: [
+      "Impact table for supports, layer height, infill and batching.",
+      "Quick wins for lower cost per part.",
+      "CTAs to pricing calculator, materials and quote.",
+    ],
+    links: [
+      { label: "Read the savings tips", href: "/blog/3d-print-kosten-besparen" },
+      { label: "Open pricing calculator", href: "/pricing" },
+      { label: "Request a quote", href: "/contact?material=pla-matte&quote=Cost%20optimisation%20for%203D%20print" },
+    ],
+    intent: "informational",
+    category: "materials-pricing",
+  },
+  {
+    id: "3d-print-materiaal-voor-zichtwerk",
+    title: "3D print display materials: PLA Matte vs Silk",
+    summary:
+      "Compare display materials with a matrix, scenarios and decision rules for design prints.",
+    highlights: [
+      "Matrix with look, durability and best use case per material.",
+      "Scenarios for awards, retail displays and interior.",
+      "CTAs to material tool, pricing and viewer.",
+    ],
+    links: [
+      { label: "Read the display guide", href: "/blog/3d-print-materiaal-voor-zichtwerk" },
+      { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+      { label: "Request material advice", href: "/contact?material=pla-matte&quote=Display%20material%20advice" },
+    ],
+    intent: "informational",
+    category: "materials-pricing",
+  },
+  {
+    id: "hittebestendig-3d-print-materiaal",
+    title: "Heat-resistant 3D print material: PETG vs PC",
+    summary:
+      "Compare PLA Tough+, PETG, PC and PC FR for heat-resistant 3D prints with a matrix and scenarios.",
+    highlights: [
+      "Matrix with heat, UV and best use case per material.",
+      "Scenarios for electronics, outdoor brackets and safety parts.",
+      "CTAs to material tool, pricing and viewer.",
+    ],
+    links: [
+      { label: "Read the heat-resistant guide", href: "/blog/hittebestendig-3d-print-materiaal" },
+      { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+      { label: "Request material advice", href: "/contact?material=pc&quote=Heat%20resistant%20material%20advice" },
+    ],
+    intent: "informational",
+    category: "materials-pricing",
+  },
+  {
+    id: "sterke-3d-print-materialen",
+    title: "Strong 3D prints: material choice for functional parts",
+    summary:
+      "Compare PLA Tough+, PETG, TPU and PC for functional parts with a matrix, scenarios and quick decision rules.",
+    highlights: [
+      "Matrix with strength, flexibility and heat/UV so you pick faster.",
+      "Scenarios for clamps, enclosures and dampers with clear material advice.",
+      "CTAs to material tool, pricing and contact with advice prefill.",
+    ],
+    links: [
+      { label: "Read the material comparison", href: "/blog/sterke-3d-print-materialen" },
+      { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+      { label: "Request material advice", href: "/contact?material=pla-tough&quote=Functional%20parts%20material%20advice" },
+    ],
+    intent: "informational",
+    category: "materials-pricing",
+  },
+  {
+    id: "3d-print-offerte-aanvragen",
+    title: "Request a 3D print quote: fast checklist",
+    summary:
+      "Need a quick quote? This checklist shows the required input, pricing structure and how to share deadlines and material choices.",
+    highlights: [
+      "Checklist with files, dimensions, quantities and deadline for a clean intake.",
+      "Pricing breakdown with cost blocks (print time, material, finishing, delivery) plus a pricing link.",
+      "CTAs to viewer upload, material tool and contact with quote prefill.",
+    ],
+    links: [
+      { label: "Read the quote checklist", href: "/blog/3d-print-offerte-aanvragen" },
+      { label: "Open pricing calculator", href: "/pricing" },
+      { label: "Request a prefilled quote", href: "/contact?material=pla-matte&quote=Quote%20request" },
     ],
     intent: "transactional",
     category: "materials-pricing",
@@ -2096,6 +2313,42 @@ const TOPICS_EN: Topic[] = [
       { label: "Request design service", href: "/contact" },
     ],
     intent: "informational",
+    category: "how-to",
+  },
+  {
+    id: "3d-print-ontwerp-checklist",
+    title: "3D print design checklist: print-ready model",
+    summary:
+      "Checklist for print-ready models with reference values for wall thickness, overhang, tolerance and assembly.",
+    highlights: [
+      "Six practical checks to avoid reprints and plan faster.",
+      "Reference table for PLA/PETG versus TPU.",
+      "CTAs to viewer upload, material tool and design check.",
+    ],
+    links: [
+      { label: "Read the design checklist", href: "/blog/3d-print-ontwerp-checklist" },
+      { label: "Upload your model", href: "/viewer" },
+      { label: "Request design check", href: "/contact?material=pla-tough&quote=Design%20check%20for%203D%20print" },
+    ],
+    intent: "how-to",
+    category: "how-to",
+  },
+  {
+    id: "3d-print-assemblage-gids",
+    title: "3D print assembly guide: alignment pins and inserts",
+    summary:
+      "Assembly guide with alignment pins, clearance and fastening for 3D prints including reference values.",
+    highlights: [
+      "Checklist for splits, alignment pins and clearance for reliable assembly.",
+      "Table with reference values for PLA/PETG and TPU.",
+      "CTAs to viewer, material tool and assembly advice.",
+    ],
+    links: [
+      { label: "Read the assembly guide", href: "/blog/3d-print-assemblage-gids" },
+      { label: "Upload your model", href: "/viewer" },
+      { label: "Request assembly advice", href: "/contact?material=pla-tough&quote=Assembly%20advice%20for%203D%20print" },
+    ],
+    intent: "how-to",
     category: "how-to",
   },
   {
@@ -2565,41 +2818,30 @@ export default function BlogPage({ locale }: BlogPageProps) {
     ),
   }))
 
-  const articleListJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
+  const articleListJsonLd = buildBlogItemListSchema({
     name: copy.schema.articleListName,
-    itemListElement: topicsWithDate.map((topic, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      item: {
-        "@type": "Article",
-
-        inLanguage: copy.schema.language,
-        headline: topic.title,
-        description: topic.summary,
-        url: toAbsolute(`/blog/${topic.id}`),
-        datePublished: topic.date,
-        dateModified: topic.date,
-      },
-    })),
-  }
-
-  const blogJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    name: copy.schema.blogName,
-    url: toAbsolute("/blog"),
     inLanguage: copy.schema.language,
-    blogPost: topicsWithDate.map((topic) => ({
-      "@type": "BlogPosting",
+    articles: topicsWithDate.map((topic) => ({
       headline: topic.title,
       description: topic.summary,
       url: toAbsolute(`/blog/${topic.id}`),
       datePublished: topic.date,
       dateModified: topic.date,
     })),
-  }
+  })
+
+  const blogJsonLd = buildBlogSchema({
+    name: copy.schema.blogName,
+    url: toAbsolute("/blog"),
+    inLanguage: copy.schema.language,
+    posts: topicsWithDate.map((topic) => ({
+      headline: topic.title,
+      description: topic.summary,
+      url: toAbsolute(`/blog/${topic.id}`),
+      datePublished: topic.date,
+      dateModified: topic.date,
+    })),
+  })
 
   const topicCardProps = {
     intentLabels: copy.intentLabels,

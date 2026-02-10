@@ -1,9 +1,8 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogContentOverview from "@/components/BlogContentOverview"
@@ -13,11 +12,13 @@ import { BLOG_FAQ } from "@/content/blog-faq"
 const canonical = "https://www.x3dprints.be/blog/hoe-lang-duurt-3d-printen/"
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=hoe-lang-duurt-3d-printen"
 const datePublished = "2024-09-15"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const faq = BLOG_FAQ["hoe-lang-duurt-3d-printen"]
 const contactHref = `/contact${utm}`
 const toolHref = `/materials${utm}#material-suggestion-tool`
 const pricingHref = `/pricing${utm}`
+const pricingGuideHref =
+  "/blog/3d-print-prijzen-gids?utm_source=blog&utm_medium=internal&utm_campaign=hoe-lang-duurt-3d-printen"
 
 export const metadata: Metadata = {
   title: "Hoe lang duurt 3D printen? | X3DPrints Blog",
@@ -70,7 +71,7 @@ const rushTips = [
   "Laat ons weten welke stukken essentieel zijn. We kunnen kritieke onderdelen prioriteit geven en rest later nasturen.",
 ]
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
 
 const references = [
   { label: "PrusaSlicer: G-code viewer (print time estimate)", href: "https://help.prusa3d.com/article/g-code-viewer_78984" },
@@ -179,6 +180,13 @@ export default function LeadTimeArticle() {
                   ))}
                 </tbody>
               </table>
+              <p className="mt-4 text-sm text-slate-600">
+                Meer context? Lees de{" "}
+                <Link href={pricingGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print prijzen gids
+                </Link>
+                .
+              </p>
             </GlassCard>
           </Reveal>
         </div>
@@ -297,13 +305,12 @@ export default function LeadTimeArticle() {
 
       <BlogContentOverview locale="nl" />
 
-      <BlogFaq title={faq.title} items={faq.items} />
+      <BlogFaq title={faq.title} items={faq.items} mainEntityOfPage={canonical} />
 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogAuthorNote locale="nl" />
 
-      <BlogReadMore />
 
     </main>
   )

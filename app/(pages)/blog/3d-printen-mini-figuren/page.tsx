@@ -1,10 +1,9 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogContentOverview from "@/components/BlogContentOverview"
@@ -122,7 +121,7 @@ export default function BlogMiniaturesPage() {
               3D printen van miniaturen voor Dungeons & Dragons en Warhammer
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Haarscherpe details, stevige bases en veilige levering. Zo printen we mini's, dice towers en scenery die
+              Haarscherpe details, stevige bases en veilige levering. Zo printen we mini’s, dice towers en scenery die
               direct klaar zijn om te primen, schilderen en te spelen aan je tafel.
             </p>
             <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
@@ -360,13 +359,12 @@ export default function BlogMiniaturesPage() {
 
       <BlogContentOverview locale="nl" />
 
-      <BlogFaq title={faq.title} items={faq.items} />
+      <BlogFaq title={faq.title} items={faq.items} mainEntityOfPage={canonical} />
 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogAuthorNote locale="nl" />
 
-      <BlogReadMore />
 
     </main>
   )

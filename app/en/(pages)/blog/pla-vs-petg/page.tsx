@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import BlogReadMore from "@/components/BlogReadMore"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
@@ -12,12 +11,14 @@ import BlogAuthorNote from "@/components/BlogAuthorNote"
 const canonical = "https://www.x3dprints.be/en/blog/pla-vs-petg/"
 const nlCanonical = "https://www.x3dprints.be/blog/pla-vs-petg/"
 const datePublished = "2024-08-25"
-const dateModified = "2026-02-08"
-const lastUpdatedLabel = "Last updated: 8 February 2026"
+const dateModified = "2026-02-09"
+const lastUpdatedLabel = "Last updated: 9 February 2026"
 const contactHref =
   "/en/contact?material=pla-matte&quote=PLA%20vs%20PETG%20material%20advice%20request"
 const materialsHref = "/en/materials#material-suggestion-tool"
 const pricingHref = "/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=pla-vs-petg-en"
+const materialsGuideHref =
+  "/en/blog/3d-print-materialen-gids?utm_source=blog&utm_medium=internal&utm_campaign=pla-vs-petg-en"
 
 export const metadata: Metadata = {
   title: "PLA vs PETG: which material should you choose? | X3DPrints",
@@ -272,6 +273,13 @@ export default function BlogPlaVsPetgEnPage() {
                   </tbody>
                 </table>
               </div>
+              <p className="mt-4 text-sm text-slate-600">
+                Need more context? Read the{" "}
+                <Link href={materialsGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print materials guide
+                </Link>
+                .
+              </p>
             </GlassCard>
           </Reveal>
         </section>
@@ -353,7 +361,6 @@ export default function BlogPlaVsPetgEnPage() {
       <BlogAuthorNote locale="en" />
 
 
-      <BlogReadMore />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -361,5 +368,6 @@ export default function BlogPlaVsPetgEnPage() {
     </main>
   )
 }
+
 
 

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
@@ -12,12 +12,14 @@ import { BLOG_FAQ_EN } from "@/content/blog-faq-en"
 const canonical = "https://www.x3dprints.be/en/blog/hoeveel-kost-3d-printen/"
 const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=how-much-3d-printing-cost"
 const datePublished = "2024-10-01"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const faq = BLOG_FAQ_EN["hoeveel-kost-3d-printen"]
-const lastUpdatedLabel = "Last updated: 8 February 2026"
+const lastUpdatedLabel = "Last updated: 9 February 2026"
 const pricingHref = `/en/pricing${utm}`
 const contactHref = `/en/contact${utm}`
 const materialsHref = `/en/materials${utm}#material-suggestion-tool`
+const pricingGuideHref =
+  "/en/blog/3d-print-prijzen-gids?utm_source=blog&utm_medium=internal&utm_campaign=how-much-3d-printing-cost"
 
 export const metadata: Metadata = {
   title: "How much does 3D printing cost? | X3DPrints Blog",
@@ -142,7 +144,7 @@ export default function CostArticleEn() {
               <p className="mt-2 text-sm text-slate-700">{factor.description}</p>
               <p className="mt-2 text-xs text-slate-500">{factor.tip}</p>
               <Link href={factor.link.href} className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 hover:text-indigo-500">
-                {factor.link.label} <span aria-hidden>→</span>
+                {factor.link.label} <span aria-hidden>?</span>
               </Link>
             </GlassCard>
           ))}
@@ -170,6 +172,13 @@ export default function CostArticleEn() {
             </div>
           </div>
         </section>
+        <p className="text-sm text-slate-600">
+          Want the full breakdown? Read the{" "}
+          <Link href={pricingGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+            3D print pricing guide
+          </Link>
+          .
+        </p>
 
         <section className="grid gap-6 lg:grid-cols-[1.05fr_.95fr]">
           <GlassCard className="p-6 sm:p-8">
@@ -233,9 +242,9 @@ export default function CostArticleEn() {
           <ul className="mt-4 space-y-3 text-sm text-slate-700">
             {references.map((ref) => (
               <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                <cite className="not-italic"><a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
                   {ref.label}
-                </a>
+                </a></cite>
                 <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
               </li>
             ))}
@@ -243,7 +252,7 @@ export default function CostArticleEn() {
         </div>
       </section>
 
-      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" />
+      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" mainEntityOfPage={canonical} />
 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
@@ -251,6 +260,8 @@ export default function CostArticleEn() {
     </main>
   )
 }
+
+
 
 
 

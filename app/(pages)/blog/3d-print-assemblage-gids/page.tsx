@@ -11,13 +11,15 @@ import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/3d-print-assemblage-gids/"
 const datePublished = "2026-02-08"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const materialsHref =
   "/materials?utm_source=blog&utm_medium=cta&utm_campaign=assemblage-gids#material-suggestion-tool"
 const viewerHref = "/viewer?utm_source=blog&utm_medium=cta&utm_campaign=assemblage-gids"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=assemblage-gids"
 const contactHref =
   "/contact?material=pla-tough&quote=Assemblageadvies%20voor%20mijn%203D%20print"
+const designGuideHref =
+  "/blog/3d-print-ontwerp-gids?utm_source=blog&utm_medium=internal&utm_campaign=assemblage-gids"
 
 export const metadata: Metadata = {
   title: "3D print assemblage gids: paspennen en inserts | X3DPrints",
@@ -219,7 +221,7 @@ export default function BlogAssemblageGidsPage() {
             inserts toe waar je herhaalbaar wil monteren en kies het materiaal dat de belasting aankan.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 8 februari 2026
+            Laatst bijgewerkt: 9 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton
@@ -244,7 +246,7 @@ export default function BlogAssemblageGidsPage() {
           </div>
         </header>
 
-      <BlogContentOverview locale="nl" />
+        <BlogContentOverview locale="nl" />
 
         <section id="assemblage-checklist" className="scroll-mt-28">
           <Reveal>
@@ -295,6 +297,13 @@ export default function BlogAssemblageGidsPage() {
                   viewer
                 </Link>{" "}
                 om kritieke zones te controleren.
+              </p>
+              <p className="mt-2 text-sm text-slate-600">
+                Meer context? Lees de{" "}
+                <Link href={designGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print ontwerp gids
+                </Link>
+                .
               </p>
             </GlassCard>
           </Reveal>

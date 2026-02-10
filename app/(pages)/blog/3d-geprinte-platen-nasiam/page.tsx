@@ -4,7 +4,6 @@ import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 import BlogContentOverview from "@/components/BlogContentOverview"
@@ -356,7 +355,6 @@ export default function NaSiamArticlePage() {
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogAuthorNote locale="nl" />
-      <BlogReadMore />
 
     </article>
   )

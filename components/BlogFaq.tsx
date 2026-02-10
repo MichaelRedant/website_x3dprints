@@ -6,14 +6,16 @@ type BlogFaqProps = {
   items: { q: string; a: string }[]
   inLanguage?: string
   sectionId?: string
+  mainEntityOfPage?: string
 }
 
-export default function BlogFaq({ title, items, inLanguage = "nl-BE", sectionId = "faq" }: BlogFaqProps) {
+export default function BlogFaq({ title, items, inLanguage = "nl-BE", sectionId = "faq", mainEntityOfPage }: BlogFaqProps) {
   if (!items || items.length === 0) return null
 
   const faqJsonLd = buildFaqPageSchema({
     inLanguage,
     items,
+    mainEntityOfPage,
   })
 
   return (

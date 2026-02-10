@@ -3,7 +3,6 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogContentOverview from "@/components/BlogContentOverview"
@@ -12,8 +11,10 @@ import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-petg/"
 const publishedDate = "2025-09-12T08:00:00+02:00"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const faq = BLOG_FAQ["filament-vrijdag-petg"]
+const materialsGuideHref =
+  "/blog/3d-print-materialen-gids?utm_source=blog&utm_medium=internal&utm_campaign=filament-vrijdag-petg"
 
 export const metadata: Metadata = {
   title: "PETG 3D Printen: Sterk, taai en outdoor proof | X3DPrints",
@@ -200,7 +201,7 @@ const articleJsonLd = buildArticleJsonLd({
   image: "/images/og-home.jpg",
 })
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
 
 function SectionDivider() {
   return (
@@ -589,6 +590,13 @@ export default function FilamentVrijdagPetgPage() {
                   </div>
                 ))}
               </div>
+              <p className="mt-4 text-sm text-slate-600">
+                Meer context? Lees de{" "}
+                <Link href={materialsGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print materialen gids
+                </Link>
+                .
+              </p>
             </GlassCard>
           </Reveal>
         </div>
@@ -652,13 +660,12 @@ export default function FilamentVrijdagPetgPage() {
 
       <BlogContentOverview locale="nl" />
 
-      <BlogFaq title={faq.title} items={faq.items} />
+      <BlogFaq title={faq.title} items={faq.items} mainEntityOfPage={canonical} />
 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogAuthorNote locale="nl" />
 
-      <BlogReadMore />
 
     </main>
   )

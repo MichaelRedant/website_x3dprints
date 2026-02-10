@@ -3,7 +3,6 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogContentOverview from "@/components/BlogContentOverview"
@@ -12,7 +11,7 @@ import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/maker-monday-toleranties-3d-printen/"
 const publishedDate = "2025-10-20T08:00:00+02:00"
-const dateModified = "2026-02-08T08:00:00+02:00"
+const dateModified = "2026-02-09T08:00:00+02:00"
 const faq = BLOG_FAQ["maker-monday-toleranties-3d-printen"]
 
 export const metadata: Metadata = {
@@ -94,7 +93,9 @@ const clearanceUseCases = [
   { use: "Sliding cover / rail", pla: "0.20 mm", petg: "0.30 mm", tpu: "0.40 mm" },
 ]
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
+const designGuideHref =
+  "/blog/3d-print-ontwerp-gids?utm_source=blog&utm_medium=internal&utm_campaign=maker-monday-tolerances"
 
 const references = [
   { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
@@ -451,6 +452,13 @@ export default function MakerMondayTolerantiesPage() {
           <Reveal>
             <GlassCard className="p-6">
               <h2 id="sources" className="text-xl font-semibold text-slate-900">Bronnen en referenties</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Meer context? Lees de{" "}
+                <Link href={designGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print ontwerp gids
+                </Link>
+                .
+              </p>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -503,13 +511,12 @@ export default function MakerMondayTolerantiesPage() {
 
       <BlogContentOverview locale="nl" />
 
-      <BlogFaq title={faq.title} items={faq.items} />
+      <BlogFaq title={faq.title} items={faq.items} mainEntityOfPage={canonical} />
 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogAuthorNote locale="nl" />
 
-      <BlogReadMore />
 
     </main>
   )

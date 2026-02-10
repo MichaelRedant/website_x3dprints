@@ -1,9 +1,8 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 import BlogContentOverview from "@/components/BlogContentOverview"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
@@ -12,9 +11,11 @@ import { BLOG_FAQ_EN } from "@/content/blog-faq-en"
 
 const canonical = "https://www.x3dprints.be/en/blog/hoe-lang-duurt-3d-printen/"
 const datePublished = "2024-09-15"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const faq = BLOG_FAQ_EN["hoe-lang-duurt-3d-printen"]
-const lastUpdatedLabel = "Last updated: 8 February 2026"
+const lastUpdatedLabel = "Last updated: 9 February 2026"
+const pricingGuideHref =
+  "/en/blog/3d-print-prijzen-gids?utm_source=blog&utm_medium=internal&utm_campaign=3d-printing-lead-time"
 
 export const metadata: Metadata = {
   title: "How long does 3D printing take? | X3DPrints",
@@ -178,6 +179,13 @@ export default function BlogLeadTimesEnPage() {
               <p className="mt-3 text-xs text-slate-500">
                 Tip: send STL/STEP plus context in one go so we avoid extra feedback rounds and can move to production faster.
               </p>
+              <p className="mt-4 text-sm text-slate-600">
+                Want the full price breakdown? Read the{" "}
+                <Link href={pricingGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print pricing guide
+                </Link>
+                .
+              </p>
             </GlassCard>
           </Reveal>
         </div>
@@ -245,9 +253,9 @@ export default function BlogLeadTimesEnPage() {
           <ul className="mt-4 space-y-3 text-sm text-slate-700">
             {references.map((ref) => (
               <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                <cite className="not-italic"><a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
                   {ref.label}
-                </a>
+                </a></cite>
                 <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
               </li>
             ))}
@@ -255,16 +263,17 @@ export default function BlogLeadTimesEnPage() {
         </div>
       </section>
 
-      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" />
+      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" mainEntityOfPage={canonical} />
 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogAuthorNote locale="en" />
 
-      <BlogReadMore />
     </main>
   )
 }
+
+
 
 
 

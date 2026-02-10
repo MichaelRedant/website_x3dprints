@@ -11,13 +11,15 @@ import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/sterke-3d-print-materialen/"
 const datePublished = "2026-02-08"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const materialsHref =
   "/materials?utm_source=blog&utm_medium=cta&utm_campaign=sterke-3d-print-materialen#material-suggestion-tool"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=sterke-3d-print-materialen"
 const viewerHref = "/viewer?utm_source=blog&utm_medium=cta&utm_campaign=sterke-3d-print-materialen"
 const contactHref =
   "/contact?material=pla-tough&quote=Materiaaladvies%20voor%20functionele%203D%20prints"
+const materialsGuideHref =
+  "/blog/3d-print-materialen-gids?utm_source=blog&utm_medium=internal&utm_campaign=sterke-3d-print-materialen"
 
 export const metadata: Metadata = {
   title: "Sterke 3D prints: materiaalkeuze voor gebruik | X3DPrints",
@@ -228,7 +230,7 @@ export default function BlogStrongMaterialsPage() {
             te beslissen en plan je offerte zonder gedoe.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 8 februari 2026
+            Laatst bijgewerkt: 9 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton
@@ -253,7 +255,7 @@ export default function BlogStrongMaterialsPage() {
           </div>
         </header>
 
-      <BlogContentOverview locale="nl" />
+        <BlogContentOverview locale="nl" />
 
         <section id="materiaal-criteria" className="scroll-mt-28">
           <Reveal>
@@ -315,6 +317,13 @@ export default function BlogStrongMaterialsPage() {
                   Material Suggestion Tool
                 </Link>{" "}
                 voor gericht advies.
+              </p>
+              <p className="mt-2 text-sm text-slate-600">
+                Meer context? Lees de{" "}
+                <Link href={materialsGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print materialen gids
+                </Link>
+                .
               </p>
             </GlassCard>
           </Reveal>

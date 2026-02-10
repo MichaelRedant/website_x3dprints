@@ -3,7 +3,6 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 import BlogContentOverview from "@/components/BlogContentOverview"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
@@ -11,9 +10,11 @@ import BlogFaq from "@/components/BlogFaq"
 import { BLOG_FAQ_EN } from "@/content/blog-faq-en"
 
 const canonical = "https://www.x3dprints.be/en/blog/beste-instellingen-bambu-printer/"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const faq = BLOG_FAQ_EN["beste-instellingen-bambu-printer"]
-const lastUpdatedLabel = "Last updated: 8 February 2026"
+const lastUpdatedLabel = "Last updated: 9 February 2026"
+const designGuideHref =
+  "/en/blog/3d-print-ontwerp-gids?utm_source=blog&utm_medium=internal&utm_campaign=bambu-settings"
 
 export const metadata: Metadata = {
   title: "Best settings for your Bambu printer | X3DPrints Blog",
@@ -210,6 +211,13 @@ export default function BambuSettingsBlogEn() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-4 text-sm text-slate-600">
+                Need more detail? Read the{" "}
+                <Link href={designGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print design guide
+                </Link>
+                .
+              </p>
             </GlassCard>
           </Reveal>
         </div>
@@ -261,9 +269,9 @@ export default function BambuSettingsBlogEn() {
           <ul className="mt-4 space-y-3 text-sm text-slate-700">
             {references.map((ref) => (
               <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                <cite className="not-italic"><a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
                   {ref.label}
-                </a>
+                </a></cite>
                 <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
               </li>
             ))}
@@ -271,16 +279,17 @@ export default function BambuSettingsBlogEn() {
         </div>
       </section>
 
-      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" />
+      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" mainEntityOfPage={canonical} />
 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogAuthorNote locale="en" />
 
-      <BlogReadMore />
     </main>
   )
 }
+
+
 
 
 

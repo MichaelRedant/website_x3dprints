@@ -1,9 +1,8 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogContentOverview from "@/components/BlogContentOverview"
@@ -12,8 +11,10 @@ import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/beste-instellingen-bambu-printer/"
 const datePublished = "2024-09-01"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const faq = BLOG_FAQ["beste-instellingen-bambu-printer"]
+const designGuideHref =
+  "/blog/3d-print-ontwerp-gids?utm_source=blog&utm_medium=internal&utm_campaign=bambu-instellingen"
 
 export const metadata: Metadata = {
   title: "Beste instellingen voor jouw Bambu printer | X3DPrints Blog",
@@ -78,7 +79,7 @@ const settingTable = [
   { param: "Pressure advance", pla: "0.032-0.035", petg: "0.028", tpu: "0.015" },
 ]
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
 
 const references = [
   { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
@@ -225,6 +226,13 @@ export default function BambuSettingsPage() {
                   ))}
                 </tbody>
               </table>
+              <p className="mt-4 text-sm text-slate-600">
+                Meer detail nodig? Lees de{" "}
+                <Link href={designGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print ontwerp gids
+                </Link>
+                .
+              </p>
             </GlassCard>
           </Reveal>
         </div>
@@ -350,13 +358,12 @@ export default function BambuSettingsPage() {
 
       <BlogContentOverview locale="nl" />
 
-      <BlogFaq title={faq.title} items={faq.items} />
+      <BlogFaq title={faq.title} items={faq.items} mainEntityOfPage={canonical} />
 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogAuthorNote locale="nl" />
 
-      <BlogReadMore />
 
     </main>
   )

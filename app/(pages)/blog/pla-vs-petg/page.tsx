@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import BlogReadMore from "@/components/BlogReadMore"
 import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
@@ -12,10 +11,12 @@ import BlogContentOverview from "@/components/BlogContentOverview"
 const canonical = "https://www.x3dprints.be/blog/pla-vs-petg/"
 const enCanonical = "https://www.x3dprints.be/en/blog/pla-vs-petg/"
 const datePublished = "2024-08-25"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const contactHref = "/contact?material=pla-matte&quote=Advies%20PLA%20vs%20PETG%20voor%20mijn%20project"
 const materialsHref = "/materials#material-suggestion-tool"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=pla-vs-petg"
+const materialsGuideHref =
+  "/blog/3d-print-materialen-gids?utm_source=blog&utm_medium=internal&utm_campaign=pla-vs-petg"
 
 export const metadata: Metadata = {
   title: "PLA vs PETG: welk materiaal kies je? | X3DPrints",
@@ -193,7 +194,7 @@ export default function BlogPlaVsPetgPage() {
             Gebruik deze vergelijking om verschillende 3d print materialen gericht te beoordelen.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 8 februari 2026
+            Laatst bijgewerkt: 9 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton
@@ -218,7 +219,7 @@ export default function BlogPlaVsPetgPage() {
           </div>
         </header>
 
-      <BlogContentOverview locale="nl" />
+        <BlogContentOverview locale="nl" />
 
         <section id="material-difference" className="scroll-mt-28">
           <Reveal>
@@ -265,6 +266,13 @@ export default function BlogPlaVsPetgPage() {
                   </tbody>
                 </table>
               </div>
+              <p className="mt-4 text-sm text-slate-600">
+                Meer context? Lees de{" "}
+                <Link href={materialsGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print materialen gids
+                </Link>
+                .
+              </p>
             </GlassCard>
           </Reveal>
         </section>
@@ -345,7 +353,6 @@ export default function BlogPlaVsPetgPage() {
       <BlogAuthorNote locale="nl" />
 
 
-      <BlogReadMore />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />

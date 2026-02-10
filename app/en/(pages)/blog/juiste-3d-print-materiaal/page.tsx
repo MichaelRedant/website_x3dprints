@@ -14,11 +14,12 @@ const utm = "?utm_source=blog&utm_medium=cta&utm_campaign=right-material"
 const pricingHref = `/en/pricing${utm}`
 const toolHref = `/en/materials${utm}#material-suggestion-tool`
 const contactHref = `/en/contact${utm}`
+const materialsGuideHref = "/en/blog/3d-print-materialen-gids?utm_source=blog&utm_medium=internal&utm_campaign=right-material"
 const publishedDate = "2024-09-10"
 const datePublished = "2024-09-10"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const faq = BLOG_FAQ_EN["juiste-3d-print-materiaal"]
-const lastUpdatedLabel = "Last updated: 8 February 2026"
+const lastUpdatedLabel = "Last updated: 9 February 2026"
 
 export const metadata: Metadata = {
   title: "How do you choose the right 3D print material? | X3DPrints",
@@ -298,7 +299,7 @@ export default function RightMaterialGuideEnPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Material mapping</p>
               <h2 className="mt-2 text-2xl font-semibold text-slate-900">When to choose which blend?</h2>
                           <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
-            <div className="mt-6 grid gap-4 md:grid-cols-3">
+              <div className="mt-6 grid gap-4 md:grid-cols-3">
                 {materialMappings.map((item) => (
                   <div key={item.material} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
                     <h3 className="text-lg font-semibold text-slate-900">{item.material}</h3>
@@ -326,6 +327,13 @@ export default function RightMaterialGuideEnPage() {
                   </div>
                 ))}
               </div>
+              <p className="mt-4 text-sm text-slate-600">
+                Need more context? Read the{" "}
+                <Link href={materialsGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print materials guide
+                </Link>
+                .
+              </p>
             </GlassCard>
           </Reveal>
         </div>
@@ -459,9 +467,9 @@ export default function RightMaterialGuideEnPage() {
           <ul className="mt-4 space-y-3 text-sm text-slate-700">
             {references.map((ref) => (
               <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
+                <cite className="not-italic"><a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
                   {ref.label}
-                </a>
+                </a></cite>
                 <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
               </li>
             ))}
@@ -469,7 +477,7 @@ export default function RightMaterialGuideEnPage() {
         </div>
       </section>
 
-      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" />
+      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" mainEntityOfPage={canonical} />
 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
@@ -477,5 +485,7 @@ export default function RightMaterialGuideEnPage() {
     </main>
   )
 }
+
+
 
 

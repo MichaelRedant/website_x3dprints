@@ -3,7 +3,6 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 import BlogContentOverview from "@/components/BlogContentOverview"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
@@ -12,9 +11,11 @@ import { BLOG_FAQ_EN } from "@/content/blog-faq-en"
 
 const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-tpu/"
 const publishedDate = "2025-09-19T08:00:00+02:00"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const faq = BLOG_FAQ_EN["filament-vrijdag-tpu"]
-const lastUpdatedLabel = "Last updated: 8 February 2026"
+const lastUpdatedLabel = "Last updated: 9 February 2026"
+const materialsGuideHref =
+  "/en/blog/3d-print-materialen-gids?utm_source=blog&utm_medium=internal&utm_campaign=filament-friday-tpu"
 
 export const metadata: Metadata = {
   title: "TPU 3D printing: flexible, shock-absorbing parts | X3DPrints",
@@ -85,6 +86,13 @@ const comparisonRows = [
   { property: "Outdoor/UV", pla: "Indoor only", petg: "Good outdoor choice", tpu: "Blend dependent, often fine" },
   { property: "Finish", pla: "Crisp, many variants", petg: "Semi-gloss", tpu: "Rubber look, visible lines" },
   { property: "Cost per print", pla: "Lowest", petg: "Slightly higher", tpu: "Higher + longer runtimes" },
+]
+
+const resourceLinks = [
+  { label: "3D printing pillar", href: "/en/3d-printen", description: "End-to-end workflow, materials and FAQs." },
+  { label: "TPU material profile", href: "/en/materials/tpu", description: "Variants, stock and TPU-specific notes." },
+  { label: "Pricing & calculator", href: "/en/pricing", description: "See how slower TPU runs affect cost." },
+  { label: "Material Suggestion Tool", href: "/en/materials#material-suggestion-tool", description: "Wizard to pick between PLA, PETG and TPU." },
 ]
 
 const references = [
@@ -357,29 +365,57 @@ export default function FilamentFridayTpuEnPage() {
         <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
           <h2 id="sources" className="text-2xl font-semibold text-slate-900">Sources and references</h2>
           <p className="mt-2 text-sm text-slate-600">Primary references that support the material and workflow guidance in this article.</p>
-          <ul className="mt-4 space-y-3 text-sm text-slate-700">
-            {references.map((ref) => (
-              <li key={ref.href} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                <a href={ref.href} target="_blank" rel="noreferrer" className="text-base font-semibold text-indigo-600">
-                  {ref.label}
-                </a>
-                <p className="mt-1 text-sm text-slate-600">{ref.description}</p>
-              </li>
-            ))}
-          </ul>
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
+            <div className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Internal links</p>
+              <ul className="mt-2 space-y-2 text-sm text-slate-600">
+                {resourceLinks.map((resource) => (
+                  <li key={resource.href}>
+                    <Link href={resource.href} className="text-indigo-600 transition hover:text-indigo-500">
+                      {resource.label}
+                    </Link>
+                    <p className="text-xs text-slate-500">{resource.description}</p>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-3 text-sm text-slate-600">
+                Need more context? Read the{" "}
+                <Link href={materialsGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print materials guide
+                </Link>
+                .
+              </p>
+            </div>
+            <div className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Sources and references</p>
+              <ul className="mt-2 space-y-2 text-sm text-slate-600">
+                {references.map((ref) => (
+                  <li key={ref.href}>
+                    <cite className="not-italic">
+                      <a href={ref.href} target="_blank" rel="noreferrer" className="text-indigo-600 transition hover:text-indigo-500">
+                        {ref.label}
+                      </a>
+                    </cite>
+                    <p className="text-xs text-slate-500">{ref.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" />
+      <BlogFaq title={faq.title} items={faq.items} inLanguage="en-BE" mainEntityOfPage={canonical} />
 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogAuthorNote locale="en" />
 
-      <BlogReadMore />
     </main>
   )
 }
+
+
 
 
 

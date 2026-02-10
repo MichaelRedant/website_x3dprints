@@ -10,6 +10,14 @@ import ReadMoreLinks from "@/components/ReadMoreLinks"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
+import {
+  SITE,
+  buildImageGallerySchema,
+  buildImageObjectSchema,
+  buildItemListSchema,
+  buildOrganizationReference,
+  buildVideoCollectionSchema,
+} from "@/lib/seo"
 import { readdirSync, statSync } from "node:fs"
 import path from "node:path"
 
@@ -79,7 +87,7 @@ void EN_METADATA
 export const metadata: Metadata = NL_METADATA
 
 const portfolioDir = path.join(process.cwd(), "public/images/portfolio")
-const siteUrl = "https://www.x3dprints.be"
+const siteUrl = SITE.url
 
 const toTitleCase = (value: string) =>
   value
@@ -468,15 +476,7 @@ const newVideoIds = new Set([
   "js1994tDE18",
 ])
 
-const organizationSchema = {
-  "@type": "Organization",
-  name: "X3DPrints",
-  url: siteUrl,
-  logo: {
-    "@type": "ImageObject",
-    url: `${siteUrl}/og-x3dprints.jpg`,
-  },
-}
+const organizationSchema = buildOrganizationReference({ url: siteUrl })
 
 type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
 
@@ -530,67 +530,51 @@ export default async function Page({ searchParams }: PageProps) {
   const focusAreas = copy.focus.items
   const stats = copy.stats
 
-  const imageObjects = photos.map((p, index) => {
-    const absoluteUrl = `${siteUrl}${p.src}`
-    return {
-      "@type": "ImageObject",
-      "@id": `${portfolioUrl}#image-${index + 1}`,
-      contentUrl: absoluteUrl,
-      url: absoluteUrl,
-      caption: p.alt,
-      description: p.info,
+  const imageObjects = photos.map((photo, index) =>
+    buildImageObjectSchema({
+      id: `${portfolioUrl}#image-${index + 1}`,
+      url: photo.src,
+      caption: photo.alt,
+      description: photo.info,
       inLanguage: copy.schema.language,
       creditText: "X3DPrints",
       creator: organizationSchema,
       copyrightHolder: organizationSchema,
       representativeOfPage: index === 0,
-    }
-  })
+    }),
+  )
 
-  const imageJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ImageGallery",
+  const imageJsonLd = buildImageGallerySchema({
     name: copy.schema.imageGalleryName,
     description: copy.schema.imageGalleryDescription,
     url: portfolioUrl,
     publisher: organizationSchema,
-    mainEntity: {
-      "@type": "ItemList",
-      itemListElement: imageObjects.map((item, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        item,
-      })),
-    },
-  }
+    images: imageObjects,
+    inLanguage: copy.schema.language,
+  })
 
-  const videoJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
+  const videoJsonLd = buildVideoCollectionSchema({
     name: copy.schema.portfolioName,
     url: portfolioUrl,
     publisher: organizationSchema,
-    hasPart: videos.map((video) => ({
-      "@type": "VideoObject",
+    inLanguage: copy.schema.language,
+    videos: videos.map((video) => ({
       name: video.title,
       description: video.description,
       thumbnailUrl: `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`,
       embedUrl: `https://www.youtube.com/watch?v=${video.id}`,
     })),
-  }
+  })
 
-  const itemListJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
+  const itemListJsonLd = buildItemListSchema({
     name: copy.schema.itemListName,
-    itemListElement: photos.map((photo, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      url: `${siteUrl}${photo.src}`,
+    inLanguage: copy.schema.language,
+    items: photos.map((photo) => ({
+      url: photo.src,
       name: photo.alt,
       description: photo.info,
     })),
-  }
+  })
 
   return (
     <main className="relative overflow-hidden">

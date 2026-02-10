@@ -11,13 +11,15 @@ import BlogContentOverview from "@/components/BlogContentOverview"
 
 const canonical = "https://www.x3dprints.be/blog/3d-print-materiaal-voor-zichtwerk/"
 const datePublished = "2026-02-08"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const materialsHref =
   "/materials?utm_source=blog&utm_medium=cta&utm_campaign=materiaal-voor-zichtwerk#material-suggestion-tool"
 const pricingHref = "/pricing?utm_source=blog&utm_medium=cta&utm_campaign=materiaal-voor-zichtwerk"
 const viewerHref = "/viewer?utm_source=blog&utm_medium=cta&utm_campaign=materiaal-voor-zichtwerk"
 const contactHref =
   "/contact?material=pla-matte&quote=Materiaaladvies%20voor%20zichtwerk%203D%20prints"
+const materialsGuideHref =
+  "/blog/3d-print-materialen-gids?utm_source=blog&utm_medium=internal&utm_campaign=materiaal-voor-zichtwerk"
 
 export const metadata: Metadata = {
   title: "3D print materiaal voor zichtwerk: PLA Matte vs Silk | X3DPrints",
@@ -230,7 +232,7 @@ export default function BlogMaterialZichtwerkPage() {
             showpieces, en PETG gebruik je wanneer het object ook duurzaam moet zijn. Met deze matrix kies je sneller.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-            Laatst bijgewerkt: 8 februari 2026
+            Laatst bijgewerkt: 9 februari 2026
           </p>
           <div className="flex flex-wrap gap-3">
             <ShimmerButton
@@ -255,7 +257,7 @@ export default function BlogMaterialZichtwerkPage() {
           </div>
         </header>
 
-      <BlogContentOverview locale="nl" />
+        <BlogContentOverview locale="nl" />
 
         <section id="zichtwerk-criteria" className="scroll-mt-28">
           <Reveal>
@@ -312,6 +314,13 @@ export default function BlogMaterialZichtwerkPage() {
                   Material Suggestion Tool
                 </Link>{" "}
                 voor gericht advies.
+              </p>
+              <p className="mt-2 text-sm text-slate-600">
+                Meer context? Lees de{" "}
+                <Link href={materialsGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print materialen gids
+                </Link>
+                .
               </p>
             </GlassCard>
           </Reveal>

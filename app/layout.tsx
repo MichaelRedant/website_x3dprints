@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import {
   SITE,
   buildBreadcrumbSchema,
-  buildOfferCatalog,
+  buildLocalBusinessSchema,
   buildOrganizationSchema,
   buildWebsiteSchema,
   type SchemaOfferInput,
@@ -64,95 +64,71 @@ function buildSchema() {
     { serviceName: "Tool organizers", price: "EUR 0", description: "Custom inserts and organizers", url: `${SITE.url}/organizers` },
   ]
 
-  const offerCatalog = buildOfferCatalog("3D Print Services", offerItems)
+  const bilingualNames = ["X3DPrints", "X3DPrints (English)"]
+  const bilingualLanguage = ["nl-BE", "en-BE"]
+  const baseLocalBusinessId = `${SITE.url}#x3dprints-main`
+  const baseOffers = [{ serviceName: "3D Print Service" }]
 
-  const baseLocalBusiness = {
-    "@type": "LocalBusiness",
-    "@id": `${SITE.url}#x3dprints-main`,
-    name: SITE.name,
-    url: SITE.url,
-    telephone: SITE.phone,
-    priceRange: SITE.priceRange,
-    image: `${SITE.url}${SITE.ogImage}`,
-    inLanguage: ["nl-BE", "en-BE"],
-    alternateName: ["X3DPrints", "X3DPrints (English)"],
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: SITE.address.street,
-      addressLocality: SITE.address.locality,
-      addressRegion: SITE.address.region,
-      postalCode: SITE.address.postalCode,
-      addressCountry: SITE.address.country,
-    },
-    sameAs: SITE.sameAs,
+  const baseLocalBusiness = buildLocalBusinessSchema({
+    id: baseLocalBusinessId,
+    pageUrl: SITE.url,
+    inLanguage: bilingualLanguage,
+    alternateName: bilingualNames,
     areaServed: "Belgium",
-    makesOffer: [{ "@type": "Offer", itemOffered: { "@type": "Service", name: "3D Print Service" } }],
-    hasOfferCatalog: offerCatalog,
-    geo: { "@type": "GeoCoordinates", latitude: 50.8839, longitude: 3.8932 },
+    sameAs: SITE.sameAs,
+    geo: { latitude: 50.8839, longitude: 3.8932 },
     hasMap: "https://www.google.com/maps/search/?api=1&query=Provincieweg+34a+9552+Herzele",
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "08:00",
-        closes: "20:00",
-      },
-    ],
-  }
+    makesOffer: baseOffers,
+    offersName: "3D Print Services",
+    offers: offerItems,
+    includeContext: false,
+  })
 
   const clusterLocalBusinesses = [
-    {
-      "@type": "LocalBusiness",
-      "@id": `${SITE.url}#x3dprints-gent`,
+    buildLocalBusinessSchema({
+      id: `${SITE.url}#x3dprints-gent`,
       name: "X3DPrints Gent & Vlaamse Ardennen",
-      url: `${SITE.url}/locaties`,
-      telephone: SITE.phone,
-      address: baseLocalBusiness.address,
-      inLanguage: baseLocalBusiness.inLanguage,
-      alternateName: baseLocalBusiness.alternateName,
+      pageUrl: `${SITE.url}/locaties`,
+      inLanguage: bilingualLanguage,
+      alternateName: bilingualNames,
       areaServed: ["Gent", "Zottegem", "Geraardsbergen", "Oudenaarde", "Ninove"],
-      makesOffer: baseLocalBusiness.makesOffer,
-      parentOrganization: { "@id": baseLocalBusiness["@id"] },
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": `${SITE.url}#x3dprints-dender`,
+      makesOffer: baseOffers,
+      parentOrganizationId: baseLocalBusinessId,
+      includeContext: false,
+    }),
+    buildLocalBusinessSchema({
+      id: `${SITE.url}#x3dprints-dender`,
       name: "X3DPrints Aalst & Denderstreek",
-      url: `${SITE.url}/locaties`,
-      telephone: SITE.phone,
-      address: baseLocalBusiness.address,
-      inLanguage: baseLocalBusiness.inLanguage,
-      alternateName: baseLocalBusiness.alternateName,
+      pageUrl: `${SITE.url}/locaties`,
+      inLanguage: bilingualLanguage,
+      alternateName: bilingualNames,
       areaServed: ["Aalst", "Denderleeuw", "Ninove", "Haaltert"],
-      makesOffer: baseLocalBusiness.makesOffer,
-      parentOrganization: { "@id": baseLocalBusiness["@id"] },
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": `${SITE.url}#x3dprints-waasland`,
+      makesOffer: baseOffers,
+      parentOrganizationId: baseLocalBusinessId,
+      includeContext: false,
+    }),
+    buildLocalBusinessSchema({
+      id: `${SITE.url}#x3dprints-waasland`,
       name: "X3DPrints Waasland",
-      url: `${SITE.url}/locaties`,
-      telephone: SITE.phone,
-      address: baseLocalBusiness.address,
-      inLanguage: baseLocalBusiness.inLanguage,
-      alternateName: baseLocalBusiness.alternateName,
+      pageUrl: `${SITE.url}/locaties`,
+      inLanguage: bilingualLanguage,
+      alternateName: bilingualNames,
       areaServed: ["Sint-Niklaas", "Beveren", "Lokeren", "Temse"],
-      makesOffer: baseLocalBusiness.makesOffer,
-      parentOrganization: { "@id": baseLocalBusiness["@id"] },
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": `${SITE.url}#x3dprints-kortrijk`,
+      makesOffer: baseOffers,
+      parentOrganizationId: baseLocalBusinessId,
+      includeContext: false,
+    }),
+    buildLocalBusinessSchema({
+      id: `${SITE.url}#x3dprints-kortrijk`,
       name: "X3DPrints Kortrijk & Leievallei",
-      url: `${SITE.url}/locaties`,
-      telephone: SITE.phone,
-      address: baseLocalBusiness.address,
-      inLanguage: baseLocalBusiness.inLanguage,
-      alternateName: baseLocalBusiness.alternateName,
+      pageUrl: `${SITE.url}/locaties`,
+      inLanguage: bilingualLanguage,
+      alternateName: bilingualNames,
       areaServed: ["Kortrijk", "Waregem", "Deinze", "Zulte"],
-      makesOffer: baseLocalBusiness.makesOffer,
-      parentOrganization: { "@id": baseLocalBusiness["@id"] },
-    },
+      makesOffer: baseOffers,
+      parentOrganizationId: baseLocalBusinessId,
+      includeContext: false,
+    }),
   ]
 
   return {

@@ -3,7 +3,6 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
 import { buildArticleJsonLd } from "@/lib/seo"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogContentOverview from "@/components/BlogContentOverview"
@@ -17,8 +16,10 @@ const toolHref = `/materials${utm}#material-suggestion-tool`
 const pricingHref = `/pricing${utm}`
 const viewerHref = `/viewer${utm}`
 const datePublished = "2024-08-20"
-const dateModified = "2026-02-08"
+const dateModified = "2026-02-09"
 const faq = BLOG_FAQ["3d-printen-voor-beginners"]
+const designGuideHref =
+  "/blog/3d-print-ontwerp-gids?utm_source=blog&utm_medium=internal&utm_campaign=3d-printen-voor-beginners"
 
 export const metadata: Metadata = {
   title: "3D printen voor beginners | X3DPrints",
@@ -57,7 +58,7 @@ const pitfalls = [
   "Vergeten afwerking. Geef aan of je ruw, geschuurd of gelakt wil; dat beïnvloedt de prijs en planning.",
 ]
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
 
 const checklistRows = [
   { step: "Doel bepalen", focus: "Prototype, decor of functioneel bepaalt materiaal en afwerking." },
@@ -180,6 +181,13 @@ export default function BeginnersArticlePage() {
                   ))}
                 </tbody>
               </table>
+              <p className="mt-4 text-sm text-slate-600">
+                Meer detail nodig? Lees de{" "}
+                <Link href={designGuideHref} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                  3D print ontwerp gids
+                </Link>
+                .
+              </p>
             </GlassCard>
           </Reveal>
         </div>
@@ -303,13 +311,12 @@ export default function BeginnersArticlePage() {
 
       <BlogContentOverview locale="nl" />
 
-      <BlogFaq title={faq.title} items={faq.items} />
+      <BlogFaq title={faq.title} items={faq.items} mainEntityOfPage={canonical} />
 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <BlogAuthorNote locale="nl" />
 
-      <BlogReadMore />
 
     </main>
   )

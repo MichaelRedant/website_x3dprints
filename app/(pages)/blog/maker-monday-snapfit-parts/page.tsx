@@ -499,7 +499,7 @@ export default function MakerMondaySnapfitPartsPage() {
 
       <BlogContentOverview locale="nl" />
 
-      <BlogFaq title={faq.title} items={faq.items} />
+      <BlogFaq title={faq.title} items={faq.items} mainEntityOfPage={canonical} />
 
       <script
         type="application/ld+json"

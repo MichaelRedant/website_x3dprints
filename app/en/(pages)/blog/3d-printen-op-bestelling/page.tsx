@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import BlogReadMore from "@/components/BlogReadMore"
 import Faq from "@/components/Faq"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
@@ -300,16 +299,16 @@ export default function OrderArticleEnPage() {
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
-                    <cite className="not-italic">
-                      <a
+                    
+                      <cite className="not-italic"><a
                         href={reference.href}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="font-semibold text-indigo-600 hover:text-indigo-500"
                       >
                         {reference.label}
-                      </a>
-                    </cite>
+                      </a></cite>
+                    
                   </li>
                 ))}
               </ul>
@@ -321,7 +320,6 @@ export default function OrderArticleEnPage() {
       <BlogAuthorNote locale="en" />
 
 
-      <BlogReadMore />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -329,5 +327,6 @@ export default function OrderArticleEnPage() {
     </main>
   )
 }
+
 
 
