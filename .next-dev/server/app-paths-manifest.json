@@ -1,7 +1,7 @@
 {
-  "/(home)/page": "app/(home)/page.js",
+  "/(pages)/services/page": "app/(pages)/services/page.js",
   "/(pages)/crm/page": "app/(pages)/crm/page.js",
-  "/(pages)/shop/page": "app/(pages)/shop/page.js",
   "/(pages)/shop/cart/page": "app/(pages)/shop/cart/page.js",
-  "/(pages)/shop/[slug]/page": "app/(pages)/shop/[slug]/page.js"
+  "/(pages)/shop/[slug]/page": "app/(pages)/shop/[slug]/page.js",
+  "/(pages)/shop/page": "app/(pages)/shop/page.js"
 }

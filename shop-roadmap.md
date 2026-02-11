@@ -286,3 +286,36 @@ Base URL: separate backend service (no browser access). CORS allowlist = x3dprin
 - Single source of truth: `content/shop-products.ts` (NL + EN fields).
 - `SHOP_INDEXABLE` stays `false` until first SKU is live.
 - `SHOP_PRODUCT_SLUGS` only includes `isLive: true` products.
+
+## 16. Shop SEO Audit (2026-02-11)
+Scope: `/shop`, `/shop/[slug]`, `/shop/cart`, `/shop/checkout` and EN equivalents. Noindex ignored for assessment.
+
+### Key positives
+- Metadata, canonical, and hreflang are present on `/shop` and `/shop/[slug]`.
+- Product pages include Product + BreadcrumbList JSON-LD via helpers.
+- ReadMoreLinks + CTAs keep internal linking consistent.
+- Product images have localized alt text from data.
+
+### Gaps & improvements
+- Shop listing has no ItemList schema; add a helper and emit ItemList with product URLs.
+- `/shop` routes are not in `app/sitemap.ts` when indexable; add them when live.
+- `app/en/(pages)/shop/layout.tsx` hard-codes noindex; should mirror `SHOP_INDEXABLE`.
+- Product metadata depends on `summary`; empty summaries can cause duplicate descriptions.
+- Product schema lacks shipping rate and price-valid-until fields (optional, but helpful).
+- No shop FAQ on `/shop` or PDPs; add a small FAQ + `buildFaqPageSchema`.
+- Product copy is thin (demo placeholders); add unique descriptions/specs before indexing.
+
+### Priority actions
+P0
+- Add ItemList schema on `/shop` (NL+EN).
+- Add `/shop` + product slugs to sitemap when indexable.
+- Mirror `SHOP_INDEXABLE` in EN shop layout.
+- Enforce non-empty product summaries in `content/shop-products.ts` or BFF.
+
+P1
+- Add FAQ section on `/shop` with schema helpers.
+- Add shipping/pickup policy content on shop index or PDPs.
+
+P2
+- Expand product content depth (specs, use-case, materials, images).
+- Add contextual links from relevant blog/organizers pages to top shop SKUs.

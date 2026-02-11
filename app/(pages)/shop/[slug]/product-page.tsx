@@ -151,10 +151,9 @@ export function buildShopProductMetadata(product: ShopProduct, locale: ShopLocal
   const name = localizeText(product.name, locale)
   const basePath = locale === "en" ? "/en" : ""
   const canonical = `${SITE.url}${basePath}/shop/${product.slug}/`
-  const description = normalizeMetaDescription(
-    localizeText(product.summary, locale),
-    COPY[locale].descriptionFallback,
-  )
+  const summary = localizeText(product.summary, locale).trim()
+  const descriptionInput = summary || (product.description ? localizeText(product.description, locale).trim() : "")
+  const description = normalizeMetaDescription(descriptionInput, COPY[locale].descriptionFallback)
   const imageUrl = product.image?.url || SITE.ogImage
 
   return {
@@ -196,10 +195,10 @@ export function renderShopProductPage({
 }) {
   const copy = COPY[locale]
   const productName = localizeText(product.name, locale)
-  const productSummary = localizeText(product.summary, locale)
-  const productDescription = product.description
-    ? localizeText(product.description, locale)
-    : productSummary
+  const rawSummary = localizeText(product.summary, locale).trim()
+  const rawDescription = product.description ? localizeText(product.description, locale).trim() : ""
+  const productSummary = rawSummary || rawDescription || copy.descriptionFallback
+  const productDescription = rawDescription || productSummary
   const productImageUrl = product.image?.url || SITE.ogImage
   const productImageAlt = product.image?.alt
     ? localizeText(product.image.alt, locale)

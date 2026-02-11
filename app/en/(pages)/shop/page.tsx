@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import ShopProductGrid from "@/components/ShopProductGrid"
-import { SITE } from "@/lib/seo"
+import { SITE, buildItemListSchema } from "@/lib/seo"
 import { getShopProducts } from "@/lib/shop-data"
 
 export const metadata: Metadata = {
@@ -70,6 +70,17 @@ const ORDER_STEPS: ShopStep[] = [
 
 export default async function ShopPageEn() {
   const liveProducts = (await getShopProducts("en")).filter((product) => product.isLive)
+  const itemListJsonLd =
+    liveProducts.length > 0
+      ? buildItemListSchema({
+          name: "Shop collection",
+          inLanguage: "en-BE",
+          items: liveProducts.map((product) => ({
+            name: product.name.en,
+            url: `${SITE.url}/en/shop/${product.slug}/`,
+          })),
+        })
+      : null
 
   return (
     <main className="flex-1">
@@ -140,6 +151,9 @@ export default async function ShopPageEn() {
       </section>
 
       <ReadMoreLinks pageType="shop" />
+      {itemListJsonLd ? (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
+      ) : null}
     </main>
   )
 }
