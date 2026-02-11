@@ -27,6 +27,7 @@ export type ShopProduct = {
   name: LocalizedText
   summary: LocalizedText
   description?: LocalizedText
+  tags?: string[]
   priceEur: number
   image: { url: string; alt: LocalizedText }
   categories?: ShopCategoryKey[]
@@ -52,6 +53,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       nl: "Deze demo-clip toont hoe we productpagina's en contentvelden structureren.",
       en: "This demo clip shows how we structure product pages and content fields.",
     },
+    tags: ["desk", "cable", "office"],
     priceEur: 12.5,
     image: {
       url: "/images/filament/pla_basic_domino-tuya.webp",
@@ -116,6 +118,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       nl: "Gebruik deze demo om variaties in specs en highlights te testen.",
       en: "Use this demo to test variations in specs and highlights.",
     },
+    tags: ["organizer", "tools", "desk"],
     priceEur: 24.95,
     image: {
       url: "/images/filament/petg_1.webp",

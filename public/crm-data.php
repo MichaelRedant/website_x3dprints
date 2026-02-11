@@ -18,22 +18,8 @@ require_once __DIR__ . "/crm-common.php";
 header("Content-Type: application/json; charset=utf-8");
 header("X-Robots-Tag: noindex, nofollow");
 
-$secure = (!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] !== "off");
-session_name("x3dprints_crm");
-session_set_cookie_params([
-  "lifetime" => 0,
-  "path" => "/",
-  "secure" => $secure,
-  "httponly" => true,
-  "samesite" => "Strict",
-]);
-session_start();
-
-if (empty($_SESSION["crm_auth"])) {
-  http_response_code(401);
-  echo json_encode(["error" => "Unauthorized"]);
-  exit;
-}
+crmSessionStart();
+crmRequireAuth();
 
 $type = $_GET["type"] ?? "";
 $download = isset($_GET["download"]);
@@ -54,6 +40,46 @@ function writeCsv(array $headers, array $rows): void
   }
   fclose($out);
   exit;
+}
+
+function tableExists(PDO $pdo, string $table): bool
+{
+  try {
+    $stmt = $pdo->query("SHOW TABLES LIKE " . $pdo->quote($table));
+    return (bool)$stmt->fetchColumn();
+  } catch (Throwable $error) {
+    return false;
+  }
+}
+
+function columnExists(PDO $pdo, string $table, string $column): bool
+{
+  try {
+    $stmt = $pdo->query("SHOW COLUMNS FROM {$table} LIKE " . $pdo->quote($column));
+    return (bool)$stmt->fetch();
+  } catch (Throwable $error) {
+    return false;
+  }
+}
+
+function defaultShippingMethods(): array
+{
+  return [
+    [
+      "id" => "be_flat",
+      "labelNl" => "Levering in Belgie (tot 3 kg)",
+      "labelEn" => "Delivery in Belgium (up to 3 kg)",
+      "priceEur" => 7.5,
+      "active" => true,
+    ],
+    [
+      "id" => "pickup",
+      "labelNl" => "Afhalen op afspraak",
+      "labelEn" => "Pickup by appointment",
+      "priceEur" => 0,
+      "active" => true,
+    ],
+  ];
 }
 
 if ($type === "material-stock") {
@@ -87,6 +113,10 @@ if ($type === "replies") {
 if ($type === "shipping-methods") {
   try {
     $pdo = getPdo();
+    if (!tableExists($pdo, "shop_shipping_methods")) {
+      echo json_encode(defaultShippingMethods());
+      exit;
+    }
     $stmt = $pdo->query(
       "SELECT id, label_nl, label_en, price_cents, active FROM shop_shipping_methods ORDER BY price_cents ASC, id ASC",
     );
@@ -104,8 +134,7 @@ if ($type === "shipping-methods") {
     exit;
   } catch (Throwable $error) {
     logError("crm_shipping_methods", ["message" => $error->getMessage()]);
-    http_response_code(500);
-    echo json_encode(["error" => "Cannot load shipping methods"]);
+    echo json_encode(defaultShippingMethods());
     exit;
   }
 }
@@ -113,8 +142,13 @@ if ($type === "shipping-methods") {
 if ($type === "products") {
   try {
     $pdo = getPdo();
+    if (!tableExists($pdo, "shop_products")) {
+      echo json_encode([]);
+      exit;
+    }
+    $deletedClause = shopProductsHasDeletedColumn($pdo) ? " WHERE is_deleted = 0" : "";
     $stmt = $pdo->query(
-      "SELECT slug, name_nl, name_en, price_cents, is_live FROM shop_products ORDER BY sort_order ASC, id ASC",
+      "SELECT slug, name_nl, name_en, price_cents, is_live FROM shop_products{$deletedClause} ORDER BY sort_order ASC, id ASC",
     );
     $rows = $stmt->fetchAll();
     $products = array_map(function ($row) {
@@ -130,8 +164,7 @@ if ($type === "products") {
     exit;
   } catch (Throwable $error) {
     logError("crm_products", ["message" => $error->getMessage()]);
-    http_response_code(500);
-    echo json_encode(["error" => "Cannot load products"]);
+    echo json_encode([]);
     exit;
   }
 }
@@ -139,9 +172,32 @@ if ($type === "products") {
 if ($type === "orders") {
   try {
     $pdo = getPdo();
+    if (!tableExists($pdo, "shop_orders") || !tableExists($pdo, "shop_cart_lines")) {
+      echo json_encode([]);
+      exit;
+    }
+    $hasLocale = columnExists($pdo, "shop_orders", "locale");
+    $hasShipping = columnExists($pdo, "shop_orders", "shipping_method_id");
+    $hasTotal = columnExists($pdo, "shop_orders", "total_cents");
+    $hasMollie = columnExists($pdo, "shop_orders", "mollie_payment_id");
+    $hasCreated = columnExists($pdo, "shop_orders", "created_at");
+
+    $selectParts = [
+      "id",
+      "cart_id",
+      "order_code",
+      "status",
+      "email",
+      $hasLocale ? "locale" : "'nl' AS locale",
+      $hasShipping ? "shipping_method_id" : "NULL AS shipping_method_id",
+      $hasTotal ? "total_cents" : "0 AS total_cents",
+      $hasMollie ? "mollie_payment_id" : "NULL AS mollie_payment_id",
+      $hasCreated ? "created_at" : "NULL AS created_at",
+    ];
+    $orderBy = $hasCreated ? "created_at DESC" : "id DESC";
+
     $stmt = $pdo->query(
-      "SELECT id, cart_id, order_code, status, email, locale, shipping_method_id, total_cents, mollie_payment_id, created_at
-       FROM shop_orders ORDER BY created_at DESC LIMIT 200",
+      "SELECT " . implode(", ", $selectParts) . " FROM shop_orders ORDER BY {$orderBy} LIMIT 200",
     );
     $orders = [];
     while ($row = $stmt->fetch()) {

@@ -354,8 +354,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         SHOP_PRODUCT_SLUGS.flatMap((slug) => {
           const sources = [
             "content/shop-products.ts",
-            `app/(pages)/shop/${slug}/page.tsx`,
-            `app/en/(pages)/shop/${slug}/page.tsx`,
+            "app/(pages)/shop/[slug]/page.tsx",
+            "app/en/(pages)/shop/[slug]/page.tsx",
           ]
 
           const alternates = buildAlternates(`/shop/${slug}`, `/en/shop/${slug}`)

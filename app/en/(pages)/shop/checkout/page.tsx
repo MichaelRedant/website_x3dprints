@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Checkout | X3DPrints",
   description:
     "Complete your order. Choose shipping and proceed to secure payment. Delivery in Belgium: EUR 7.50 up to 3 kg or pickup by appointment.",
+  robots: { index: false, follow: false },
   alternates: {
     canonical: `${SITE.url}/en/shop/checkout/`,
     languages: {

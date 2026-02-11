@@ -32,57 +32,26 @@ const FILTER_LABELS: Record<ShopLocale, Record<FilterKey, string>> = {
   },
 }
 
-const TEASERS: Record<ShopLocale, Array<{ title: string; description: string }>> = {
-  nl: [
-    {
-      title: "Binnenkort: custom organizers",
-      description: "Modulaire trays en inserts op maat van je tools.",
-    },
-    {
-      title: "Binnenkort: kabelmanagement",
-      description: "Slimme clips en guides voor bureau en werkbank.",
-    },
-    {
-      title: "Binnenkort: limited runs",
-      description: "Kleine batches voor events, giveaways of teams.",
-    },
-  ],
-  en: [
-    {
-      title: "Coming soon: custom organizers",
-      description: "Modular trays and inserts tailored to your tools.",
-    },
-    {
-      title: "Coming soon: cable management",
-      description: "Smart clips and guides for desks and workbenches.",
-    },
-    {
-      title: "Coming soon: limited runs",
-      description: "Small batches for events, giveaways or teams.",
-    },
-  ],
-}
-
 const COPY = {
   nl: {
-    eyebrow: "Demo producten",
-    title: "Testlisting voor de shop",
+    eyebrow: "Shop selectie",
+    title: "Kies je 3D print",
     filters: "Filters",
     empty: "Nieuwe items volgen binnenkort.",
     cta: "Bekijk product",
-    teaserTitle: "Teasers",
     leadTimeLabel: "Levertijd",
     cartLabel: "Winkelmandje",
+    quantityLabel: "Aantal",
   },
   en: {
-    eyebrow: "Demo products",
-    title: "Shop listing preview",
+    eyebrow: "Shop selection",
+    title: "Pick your 3D print",
     filters: "Filters",
     empty: "New items are coming soon.",
     cta: "View product",
-    teaserTitle: "Teasers",
     leadTimeLabel: "Lead time",
     cartLabel: "Cart",
+    quantityLabel: "Quantity",
   },
 }
 
@@ -112,10 +81,16 @@ function formatLeadTime(locale: ShopLocale, min: number, max: number) {
   return locale === "en" ? `${range} business days` : `${range} werkdagen`
 }
 
+function clampQuantity(value: number) {
+  if (!Number.isFinite(value) || value <= 0) return 1
+  return Math.min(Math.max(Math.round(value), 1), 99)
+}
+
 export default function ShopProductGrid({ products, locale }: ShopProductGridProps) {
   const copy = locale === "en" ? COPY.en : COPY.nl
   const { itemCount } = useShopCart()
   const cartHref = locale === "en" ? "/en/shop/cart" : "/shop/cart"
+  const [quantities, setQuantities] = useState<Record<string, number>>({})
   const availableCategories = useMemo(() => {
     const set = new Set<ShopCategoryKey>()
     for (const product of products) {
@@ -137,8 +112,13 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
     return products.filter((product) => product.categories?.includes(activeFilter))
   }, [activeFilter, products])
 
+  const resolveQuantity = (slug: string) => quantities[slug] ?? 1
+  const updateQuantity = (slug: string, value: number) => {
+    setQuantities((prev) => ({ ...prev, [slug]: clampQuantity(value) }))
+  }
+
   return (
-    <section className="px-6 pb-12 sm:px-8 lg:px-12">
+    <section id="shop-collection" className="px-6 pb-12 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-5xl space-y-6">
         <Reveal>
           <GlassCard>
@@ -176,11 +156,15 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
               )}
               <Link
                 href={cartHref}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+                className="inline-flex items-center gap-3 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-100"
               >
+                <span className="i-lucide-shopping-cart text-base" aria-hidden />
                 {copy.cartLabel}
-                {itemCount > 0 ? ` (${itemCount})` : ""}
-                <span className="i-lucide-shopping-cart" aria-hidden />
+                {itemCount > 0 ? (
+                  <span className="inline-flex min-w-[1.5rem] items-center justify-center rounded-full bg-indigo-600 px-2 py-0.5 text-xs font-semibold text-white">
+                    {itemCount}
+                  </span>
+                ) : null}
               </Link>
             </div>
 
@@ -199,6 +183,8 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
                   const leadTime = product.leadTimeDays
                     ? formatLeadTime(locale, product.leadTimeDays.min, product.leadTimeDays.max)
                     : null
+                  const quantity = resolveQuantity(product.slug)
+                  const isUnavailable = product.availability === "OutOfStock"
                   return (
                     <div key={product.slug} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
                       <div className="overflow-hidden rounded-xl border border-slate-100 bg-white">
@@ -233,10 +219,46 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
                         </div>
                       )}
                       <p className="mt-3 text-sm font-semibold text-slate-900">{formatEur(product.priceEur)}</p>
-                      <div className="mt-3 flex flex-wrap items-center gap-2">
+                      <div className="mt-3 flex flex-wrap items-center gap-3">
+                        <div className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 shadow-sm">
+                          <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-slate-500">
+                            {copy.quantityLabel}
+                          </span>
+                          <div className="flex items-center gap-2">
+                            <button
+                              type="button"
+                              onClick={() => updateQuantity(product.slug, quantity - 1)}
+                              disabled={isUnavailable}
+                              className="h-7 w-7 rounded-full border border-slate-200 bg-white text-xs font-semibold text-slate-700 hover:text-slate-900 disabled:opacity-50"
+                              aria-label={copy.quantityLabel}
+                            >
+                              -
+                            </button>
+                            <input
+                              type="number"
+                              min={1}
+                              max={99}
+                              value={quantity}
+                              onChange={(event) => updateQuantity(product.slug, Number(event.target.value))}
+                              disabled={isUnavailable}
+                              className="w-12 rounded-lg border border-slate-200 bg-white px-2 py-1 text-center text-xs font-semibold text-slate-900"
+                              aria-label={copy.quantityLabel}
+                            />
+                            <button
+                              type="button"
+                              onClick={() => updateQuantity(product.slug, quantity + 1)}
+                              disabled={isUnavailable}
+                              className="h-7 w-7 rounded-full border border-slate-200 bg-white text-xs font-semibold text-slate-700 hover:text-slate-900 disabled:opacity-50"
+                              aria-label={copy.quantityLabel}
+                            >
+                              +
+                            </button>
+                          </div>
+                        </div>
                         <ShopAddToCartButton
                           product={product}
                           locale={locale}
+                          quantity={quantity}
                           className="px-4 py-2 text-xs"
                         />
                         <Link
@@ -255,19 +277,6 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
           </GlassCard>
         </Reveal>
 
-        <Reveal>
-          <GlassCard>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.teaserTitle}</p>
-            <div className="mt-4 grid gap-4 md:grid-cols-3">
-              {TEASERS[locale].map((teaser) => (
-                <div key={teaser.title} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                  <p className="text-sm font-semibold text-slate-900">{teaser.title}</p>
-                  <p className="mt-2 text-sm text-slate-600">{teaser.description}</p>
-                </div>
-              ))}
-            </div>
-          </GlassCard>
-        </Reveal>
       </div>
     </section>
   )

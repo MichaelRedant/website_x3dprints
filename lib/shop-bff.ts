@@ -18,6 +18,7 @@ export type BffProduct = {
   price: BffPrice
   availability?: string
   image: BffImage
+  tags?: string[]
 }
 
 export type BffCartLine = {

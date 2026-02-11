@@ -61,11 +61,35 @@ $scheme = (!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] !== "off") ? "https" :
 $host = $_SERVER["HTTP_HOST"] ?? "";
 $bffBaseUrl = env("BFF_BASE_URL");
 if (!$bffBaseUrl && $host) {
-  $bffBaseUrl = $scheme . "://" . $host;
+  $isLocalHost = strpos($host, "localhost") === 0 || strpos($host, "127.0.0.1") === 0;
+  if (envBool("APP_DEBUG", false) && $isLocalHost) {
+    $bffBaseUrl = $scheme . "://" . $host;
+  } else {
+    logError("bff_base_url_missing", ["host" => $host]);
+    $bffBaseUrl = "";
+  }
+}
+
+$siteUrl = env("SHOP_SITE_URL");
+if ($siteUrl === null || $siteUrl === "" || strtolower($siteUrl) === "auto") {
+  if ($host) {
+    $lowerHost = strtolower($host);
+    $isLocalHost = strpos($lowerHost, "localhost") === 0 || strpos($lowerHost, "127.0.0.1") === 0;
+    if ($isLocalHost) {
+      $siteUrl = $scheme . "://" . $host;
+    } else {
+      $isApiSubdomain = strpos($lowerHost, "api.") === 0;
+      $isX3dprints = substr($lowerHost, -12) === "x3dprints.be";
+      $siteUrl = ($isApiSubdomain && $isX3dprints) ? "https://x3dprints.be" : "https://x3dprints.be";
+    }
+  }
+}
+if (!$siteUrl) {
+  $siteUrl = "https://x3dprints.be";
 }
 
 $service = new ShopService(getPdo(), [
-  "siteUrl" => env("SHOP_SITE_URL", "https://x3dprints.be"),
+  "siteUrl" => $siteUrl,
   "bffBaseUrl" => $bffBaseUrl,
   "mollieKey" => env("MOLLIE_API_KEY"),
   "debug" => envBool("APP_DEBUG", false),

@@ -18,22 +18,8 @@ require_once __DIR__ . "/crm-common.php";
 header("Content-Type: application/json; charset=utf-8");
 header("X-Robots-Tag: noindex, nofollow");
 
-$secure = (!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] !== "off");
-session_name("x3dprints_crm");
-session_set_cookie_params([
-  "lifetime" => 0,
-  "path" => "/",
-  "secure" => $secure,
-  "httponly" => true,
-  "samesite" => "Strict",
-]);
-session_start();
-
-if (empty($_SESSION["crm_auth"])) {
-  http_response_code(401);
-  echo json_encode(["error" => "Unauthorized"]);
-  exit;
-}
+crmSessionStart();
+crmRequireAuth();
 
 $payload = readJsonBody();
 $key = (string)($payload["key"] ?? "");

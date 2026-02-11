@@ -4,6 +4,8 @@ import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import ShopAddToCartButton from "@/components/ShopAddToCartButton"
+import ShopAddToCartPanel from "@/components/ShopAddToCartPanel"
+import ShopCartStickySummary from "@/components/ShopCartStickySummary"
 import {
   SITE,
   buildBreadcrumbSchema,
@@ -18,6 +20,7 @@ type ShopCopy = {
   shopLabel: string
   titleSuffix: string
   descriptionFallback: string
+  backToShop: string
   priceLabel: string
   shippingTitle: string
   shippingBody: string
@@ -26,6 +29,9 @@ type ShopCopy = {
   highlightsTitle: string
   specsTitle: string
   specsFallback: string
+  crossSellTitle: string
+  crossSellBody: string
+  crossSellCta: string
   ctaPrimary: string
   ctaSecondary: string
   ctaMaterials: string
@@ -39,6 +45,7 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     titleSuffix: "3D print shop",
     descriptionFallback:
       "Geprint op bestelling in Belgie. Levering: EUR 7.50 tot 3 kg of afhalen op afspraak.",
+    backToShop: "Terug naar shop",
     priceLabel: "Vanaf",
     shippingTitle: "Levering in Belgie",
     shippingBody: "Vaste verzending binnen Belgie: EUR 7.50 tot 3 kg.",
@@ -47,6 +54,9 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     highlightsTitle: "Waarom dit product",
     specsTitle: "Specificaties",
     specsFallback: "Specificaties worden toegevoegd zodra het product live gaat.",
+    crossSellTitle: "Combineer met",
+    crossSellBody: "Past goed bij dit item en maakt je bestelling compleet.",
+    crossSellCta: "Bekijk product",
     ctaPrimary: "Offerte aanvragen",
     ctaSecondary: "Material Suggestion Tool",
     ctaMaterials: "Materialen bekijken",
@@ -58,6 +68,7 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     titleSuffix: "3D print shop",
     descriptionFallback:
       "Made to order in Belgium. Delivery: EUR 7.50 up to 3 kg or pickup by appointment.",
+    backToShop: "Back to shop",
     priceLabel: "From",
     shippingTitle: "Delivery in Belgium",
     shippingBody: "Flat-rate shipping in Belgium: EUR 7.50 up to 3 kg.",
@@ -66,6 +77,9 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     highlightsTitle: "Why this product",
     specsTitle: "Specifications",
     specsFallback: "Specs will be added once the product is live.",
+    crossSellTitle: "Combine with",
+    crossSellBody: "Pairs well with this item and rounds out your order.",
+    crossSellCta: "View product",
     ctaPrimary: "Request a quote",
     ctaSecondary: "Material Suggestion Tool",
     ctaMaterials: "View materials",
@@ -174,9 +188,11 @@ export function buildShopProductMetadata(product: ShopProduct, locale: ShopLocal
 export function renderShopProductPage({
   product,
   locale,
+  relatedProducts = [],
 }: {
   product: ShopProduct
   locale: ShopLocale
+  relatedProducts?: ShopProduct[]
 }) {
   const copy = COPY[locale]
   const productName = localizeText(product.name, locale)
@@ -199,6 +215,7 @@ export function renderShopProductPage({
   const contactUrl = `${basePath}/contact`
   const materialsUrl = `${basePath}/materials`
   const suggestionUrl = `${basePath}/materials#material-suggestion-tool`
+  const shopUrl = `${basePath}/shop`
 
   const highlightItems = product.highlights?.length
     ? product.highlights.map((item) => ({
@@ -243,6 +260,13 @@ export function renderShopProductPage({
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">{copy.shopLabel}</p>
+            <Link
+              href={shopUrl}
+              className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+            >
+              <span className="i-lucide-arrow-left" aria-hidden />
+              {copy.backToShop}
+            </Link>
             <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
               {productName}
             </h1>
@@ -309,14 +333,16 @@ export function renderShopProductPage({
                     </p>
                   ) : null}
                 </div>
-                <div className="mt-5 flex flex-wrap gap-3">
-                  <ShopAddToCartButton product={product} locale={locale} />
-                  <Link
-                    href={contactUrl}
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
-                  >
-                    {copy.ctaPrimary}
-                  </Link>
+                <div className="mt-5">
+                  <ShopAddToCartPanel product={product} locale={locale} />
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    <Link
+                      href={contactUrl}
+                      className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                    >
+                      {copy.ctaPrimary}
+                    </Link>
+                  </div>
                 </div>
                 <div className="mt-4 flex flex-wrap gap-4">
                   <Link
@@ -344,10 +370,58 @@ export function renderShopProductPage({
                   <p className="mt-1 text-sm text-slate-600">{copy.pickupBody}</p>
                 </div>
               </GlassCard>
+
+              <ShopCartStickySummary locale={locale} className="lg:sticky lg:top-24" />
             </div>
           </div>
         </div>
       </section>
+
+      {relatedProducts.length ? (
+        <section className="px-6 pb-12 sm:px-8 lg:px-12">
+          <div className="mx-auto max-w-6xl">
+            <GlassCard>
+              <h2 className="text-lg font-semibold text-slate-900">{copy.crossSellTitle}</h2>
+              <p className="mt-2 text-sm text-slate-600">{copy.crossSellBody}</p>
+              <div className="mt-4 grid gap-4 md:grid-cols-2">
+                {relatedProducts.map((item) => {
+                  const name = localizeText(item.name, locale)
+                  const summary = localizeText(item.summary, locale)
+                  const imageAlt = item.image.alt ? localizeText(item.image.alt, locale) : name
+                  const href = `${basePath}/shop/${item.slug}`
+                  return (
+                    <div key={item.slug} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                      <div className="overflow-hidden rounded-xl border border-slate-100 bg-white">
+                        <Image
+                          src={item.image.url}
+                          alt={imageAlt}
+                          width={1200}
+                          height={900}
+                          className="h-auto w-full object-cover"
+                          sizes="(min-width: 768px) 30vw, 90vw"
+                        />
+                      </div>
+                      <h3 className="mt-4 text-lg font-semibold text-slate-900">{name}</h3>
+                      <p className="mt-2 text-sm text-slate-600">{summary}</p>
+                      <p className="mt-3 text-sm font-semibold text-slate-900">{formatEur(item.priceEur)}</p>
+                      <div className="mt-3 flex flex-wrap items-center gap-2">
+                        <ShopAddToCartButton product={item} locale={locale} className="px-4 py-2 text-xs" />
+                        <Link
+                          href={href}
+                          className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+                        >
+                          {copy.crossSellCta}
+                          <span className="i-lucide-arrow-right" aria-hidden />
+                        </Link>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            </GlassCard>
+          </div>
+        </section>
+      ) : null}
 
       <ReadMoreLinks pageType="shop" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />

@@ -41,9 +41,12 @@ class ShopService
 
   public function listProducts(string $locale): array
   {
+    $deletedClause = shopProductsHasDeletedColumn($this->pdo) ? " AND is_deleted = 0" : "";
+    $tagsSelect = shopProductsHasTagsColumn($this->pdo) ? ", tags" : "";
     $stmt = $this->pdo->query(
       "SELECT slug, name_nl, name_en, summary_nl, summary_en, price_cents, availability, image_url, image_alt_nl, image_alt_en
-       FROM shop_products WHERE is_live = 1 ORDER BY sort_order ASC, id ASC",
+       {$tagsSelect}
+       FROM shop_products WHERE is_live = 1{$deletedClause} ORDER BY sort_order ASC, id ASC",
     );
     $rows = $stmt->fetchAll();
 
@@ -52,9 +55,12 @@ class ShopService
 
   public function getProduct(string $slug, string $locale): ?array
   {
+    $deletedClause = shopProductsHasDeletedColumn($this->pdo) ? " AND is_deleted = 0" : "";
+    $tagsSelect = shopProductsHasTagsColumn($this->pdo) ? ", tags" : "";
     $stmt = $this->pdo->prepare(
       "SELECT slug, name_nl, name_en, summary_nl, summary_en, price_cents, availability, image_url, image_alt_nl, image_alt_en
-       FROM shop_products WHERE slug = :slug AND is_live = 1 LIMIT 1",
+       {$tagsSelect}
+       FROM shop_products WHERE slug = :slug AND is_live = 1{$deletedClause} LIMIT 1",
     );
     $stmt->execute(["slug" => $slug]);
     $row = $stmt->fetch();
@@ -275,6 +281,7 @@ class ShopService
   private function mapProduct(array $row, string $locale): array
   {
     $isEn = $locale === "en";
+    $tags = array_key_exists("tags", $row) ? $this->parseTags($row["tags"]) : [];
     return [
       "slug" => $row["slug"],
       "name" => $isEn ? $row["name_en"] : $row["name_nl"],
@@ -285,7 +292,18 @@ class ShopService
         "url" => $row["image_url"],
         "alt" => $isEn ? $row["image_alt_en"] : $row["image_alt_nl"],
       ],
+      "tags" => $tags,
     ];
+  }
+
+  private function parseTags(?string $raw): array
+  {
+    if (!$raw) {
+      return [];
+    }
+    $parts = array_filter(array_map("trim", explode(",", $raw)));
+    $parts = array_map(fn($tag) => strtolower($tag), $parts);
+    return array_values(array_unique($parts));
   }
 
   private function fetchOrderByPaymentId(string $paymentId): ?array
@@ -648,8 +666,9 @@ class ShopService
 
   private function fetchProductRow(string $slug): ?array
   {
+    $deletedClause = shopProductsHasDeletedColumn($this->pdo) ? " AND is_deleted = 0" : "";
     $stmt = $this->pdo->prepare(
-      "SELECT slug, price_cents FROM shop_products WHERE slug = :slug AND is_live = 1 LIMIT 1",
+      "SELECT slug, price_cents FROM shop_products WHERE slug = :slug AND is_live = 1{$deletedClause} LIMIT 1",
     );
     $stmt->execute(["slug" => $slug]);
     $row = $stmt->fetch();

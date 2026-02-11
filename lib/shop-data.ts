@@ -38,12 +38,14 @@ function mapBffProduct(product: BffProduct): ShopProduct {
   const name = product.name ?? product.slug
   const summary = product.summary ?? ""
   const imageAlt = product.image?.alt ?? name
+  const tags = Array.isArray(product.tags) ? product.tags : []
 
   return {
     slug: product.slug,
     name: toLocalizedText(name),
     summary: toLocalizedText(summary),
     description: summary ? toLocalizedText(summary) : undefined,
+    tags,
     priceEur: product.price?.amount ?? 0,
     image: {
       url: product.image?.url ?? "/images/og-home.jpg",

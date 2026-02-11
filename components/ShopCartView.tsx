@@ -1,12 +1,15 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import { cn } from "@/lib/utils"
 import { useShopCart } from "@/components/ShopCartState"
+import { getShopProducts } from "@/lib/shop-data"
+import { collectTagsForSlugs, pickRelatedProducts } from "@/lib/shop-related"
+import { SHOP_PRODUCTS } from "@/content/shop-products"
 import type { LocalizedText } from "@/content/shop-products"
 
 type ShopLocale = "nl" | "en"
@@ -20,12 +23,12 @@ type ShopCartViewProps = {
 const COPY = {
   nl: {
     title: "Winkelmandje",
-    cartSubtitle: "Controleer je demo-items en ga verder naar checkout.",
+    cartSubtitle: "Controleer je items en ga verder naar checkout.",
     cartSubtitleLive: "Controleer je items en ga verder naar checkout.",
-    checkoutSubtitle: "Plaats je demo-order om de flow te testen.",
+    checkoutSubtitle: "Kies verzendmethode en ga veilig naar betaling.",
     checkoutSubtitleLive: "Kies verzendmethode en ga veilig naar betaling.",
     emptyTitle: "Winkelmandje is leeg",
-    emptyBody: "Kies eerst een demo-product om de flow te testen.",
+    emptyBody: "Kies eerst een product om je bestelling te starten.",
     continueShopping: "Verder shoppen",
     subtotal: "Subtotaal",
     shipping: "Verzending (BE)",
@@ -38,11 +41,11 @@ const COPY = {
     checkout: "Verder naar checkout",
     request: "Offerte aanvragen",
     items: "Items",
-    placeOrder: "Plaats demo order",
+    placeOrder: "Plaats bestelling",
     payment: "Ga naar betaling",
     paymentLoading: "Bezig met betaling...",
-    successTitle: "Demo order geplaatst",
-    successBody: "Je demo-bestelling is opgeslagen. In productie volgt hier een betaalstap.",
+    successTitle: "Bestelling geplaatst",
+    successBody: "Je bestelling is opgeslagen. Bij livegang volgt hier de betaalstap.",
     successNote: "Je kan nu terug naar de shop of een offerte aanvragen.",
     backToShop: "Terug naar shop",
     steps: ["Winkelmandje", "Checkout", "Bevestiging"],
@@ -53,6 +56,8 @@ const COPY = {
     itemCount: "Items",
     totalLabel: "Totaal",
     shippingMethod: "Verzendmethode",
+    shippingChoiceTitle: "Kies levering of afhalen",
+    shippingChoiceNote: "Afhalen op afspraak is gratis.",
     emailLabel: "E-mail voor bevestiging",
     emailPlaceholder: "jij@bedrijf.be",
     emailRequired: "Vul een geldig e-mailadres in.",
@@ -60,16 +65,19 @@ const COPY = {
     checkoutError: "We konden de checkout niet starten. Probeer opnieuw.",
     backendDown: "Shop backend is momenteel niet bereikbaar.",
     liveNote: "Je wordt doorgestuurd naar Mollie voor betaling.",
-    demoNote: "Totalen zijn indicatief voor demo-doeleinden.",
+    demoNote: "Totalen zijn indicatief tot de shop live gaat.",
+    crossSellTitle: "Maak het compleet",
+    crossSellBody: "Past goed bij je huidige selectie.",
+    crossSellCta: "Bekijk product",
   },
   en: {
     title: "Cart",
-    cartSubtitle: "Review your demo items and continue to checkout.",
+    cartSubtitle: "Review your items and continue to checkout.",
     cartSubtitleLive: "Review your items and continue to checkout.",
-    checkoutSubtitle: "Place your demo order to test the flow.",
+    checkoutSubtitle: "Choose shipping and proceed to payment.",
     checkoutSubtitleLive: "Choose shipping and proceed to payment.",
     emptyTitle: "Your cart is empty",
-    emptyBody: "Pick a demo product to test the flow.",
+    emptyBody: "Pick a product to start your order.",
     continueShopping: "Continue shopping",
     subtotal: "Subtotal",
     shipping: "Shipping (BE)",
@@ -82,11 +90,11 @@ const COPY = {
     checkout: "Proceed to checkout",
     request: "Request a quote",
     items: "Items",
-    placeOrder: "Place demo order",
+    placeOrder: "Place order",
     payment: "Proceed to payment",
     paymentLoading: "Opening payment...",
-    successTitle: "Demo order placed",
-    successBody: "Your demo order has been stored. In production this becomes a payment step.",
+    successTitle: "Order placed",
+    successBody: "Your order has been stored. Payment goes live when the shop launches.",
     successNote: "You can return to the shop or request a quote.",
     backToShop: "Back to shop",
     steps: ["Cart", "Checkout", "Confirmation"],
@@ -97,6 +105,8 @@ const COPY = {
     itemCount: "Items",
     totalLabel: "Total",
     shippingMethod: "Shipping method",
+    shippingChoiceTitle: "Choose delivery or pickup",
+    shippingChoiceNote: "Pickup by appointment is free.",
     emailLabel: "Confirmation email",
     emailPlaceholder: "you@company.be",
     emailRequired: "Enter a valid email address.",
@@ -104,7 +114,10 @@ const COPY = {
     checkoutError: "We could not start checkout. Please try again.",
     backendDown: "Shop backend is currently unavailable.",
     liveNote: "You will be redirected to Mollie for payment.",
-    demoNote: "Totals are indicative for demo purposes.",
+    demoNote: "Totals are indicative until the shop goes live.",
+    crossSellTitle: "Complete your order",
+    crossSellBody: "Pairs well with your current selection.",
+    crossSellCta: "View product",
   },
 }
 
@@ -131,6 +144,7 @@ function isValidEmail(value: string) {
 
 export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewProps) {
   const copy = locale === "en" ? COPY.en : COPY.nl
+  const [catalog, setCatalog] = useState(SHOP_PRODUCTS)
   const {
     mode,
     items,
@@ -162,6 +176,36 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
   const contactHref = locale === "en" ? "/en/contact" : "/contact"
   const shippingLabel = isLiveCheckout ? copy.shipping : copy.shippingEstimate
   const totalLabel = isLiveCheckout ? copy.total : copy.totalEstimate
+
+  useEffect(() => {
+    let active = true
+    getShopProducts(locale)
+      .then((products) => {
+        if (active && products.length) {
+          setCatalog(products)
+        }
+      })
+      .catch(() => null)
+    return () => {
+      active = false
+    }
+  }, [locale])
+
+  const cartSlugs = useMemo(() => items.map((item) => item.slug), [items])
+  const crossSellTags = useMemo(
+    () => collectTagsForSlugs(catalog, cartSlugs),
+    [catalog, cartSlugs],
+  )
+  const crossSellProducts = useMemo(
+    () =>
+      pickRelatedProducts({
+        products: catalog,
+        tags: crossSellTags,
+        excludeSlugs: cartSlugs,
+        limit: 3,
+      }),
+    [catalog, cartSlugs, crossSellTags],
+  )
 
   const resolvedShippingMethods = shippingMethods.length ? shippingMethods : []
   const selectedShippingId =
@@ -320,14 +364,22 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                       : copy.cartSubtitle}
                 </p>
               </div>
-              <button
-                type="button"
-                onClick={() => void clearCart()}
-                className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500 transition hover:text-slate-700"
-                disabled={isSyncing}
-              >
-                {copy.clear}
-              </button>
+              <div className="flex flex-wrap items-center gap-3">
+                <Link
+                  href={shopHref}
+                  className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500 transition hover:text-slate-700"
+                >
+                  {copy.continueShopping}
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => void clearCart()}
+                  className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500 transition hover:text-slate-700"
+                  disabled={isSyncing}
+                >
+                  {copy.clear}
+                </button>
+              </div>
             </div>
             <div className="mt-4 flex flex-wrap gap-2">
               {copy.steps.map((label, index) => (
@@ -355,9 +407,14 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                   const name = localize(item.name, locale)
                   const alt = localize(item.imageAlt, locale)
                   const itemTotal = item.lineTotalEur ?? item.priceEur * item.quantity
+                  const itemHref = locale === "en" ? `/en/shop/${item.slug}` : `/shop/${item.slug}`
                   return (
                     <div key={item.slug} className="flex flex-col gap-4 rounded-2xl border border-slate-100 bg-white/70 p-4 sm:flex-row sm:items-center">
-                      <div className="w-full max-w-[140px] overflow-hidden rounded-xl border border-slate-100 bg-white">
+                      <Link
+                        href={itemHref}
+                        className="w-full max-w-[140px] overflow-hidden rounded-xl border border-slate-100 bg-white transition hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                        aria-label={name}
+                      >
                         <Image
                           src={item.imageUrl}
                           alt={alt}
@@ -366,10 +423,17 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                           className="h-auto w-full object-cover"
                           sizes="(min-width: 768px) 140px, 60vw"
                         />
-                      </div>
+                      </Link>
                       <div className="flex-1 space-y-2">
                         <div className="flex flex-wrap items-center justify-between gap-2">
-                          <h3 className="text-lg font-semibold text-slate-900">{name}</h3>
+                          <h3 className="text-lg font-semibold text-slate-900">
+                            <Link
+                              href={itemHref}
+                              className="transition hover:text-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                            >
+                              {name}
+                            </Link>
+                          </h3>
                           <p className="text-sm font-semibold text-slate-900">{formatEur(itemTotal)}</p>
                         </div>
                         <p className="text-sm text-slate-600">{formatEur(item.priceEur)} / stuk</p>
@@ -432,63 +496,64 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                   </div>
                 </div>
 
-                {isCheckout && resolvedShippingMethods.length > 0 ? (
-                  <div className="mt-4 space-y-4">
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-                        {copy.shippingMethod}
-                      </p>
-                      <div className="mt-2 space-y-2">
-                        {resolvedShippingMethods.map((method) => {
-                          const label =
-                            SHIPPING_LABELS[locale][method.id] ?? method.label ?? method.id
-                          const isSelected = selectedShippingId === method.id
-                          return (
-                            <label
-                              key={method.id}
-                              className={cn(
-                                "flex cursor-pointer items-center justify-between rounded-xl border px-3 py-2 text-sm",
-                                isSelected
-                                  ? "border-indigo-500 bg-indigo-50 text-slate-900"
-                                  : "border-slate-200 bg-white text-slate-600",
-                              )}
-                            >
-                              <span className="flex items-center gap-2">
-                                <input
-                                  type="radio"
-                                  name="shipping-method"
-                                  className="h-4 w-4"
-                                  checked={isSelected}
-                                  onChange={() => setShippingMethod(method.id)}
-                                />
-                                {label}
-                              </span>
-                              <span className="font-semibold text-slate-900">
-                                {formatEur(method.priceEur)}
-                              </span>
-                            </label>
-                          )
-                        })}
-                      </div>
+              {resolvedShippingMethods.length > 0 ? (
+                <div className="mt-4 space-y-4">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                      {copy.shippingChoiceTitle}
+                    </p>
+                    <p className="mt-1 text-xs text-slate-500">{copy.shippingChoiceNote}</p>
+                    <div className="mt-3 space-y-2">
+                      {resolvedShippingMethods.map((method) => {
+                        const label =
+                          SHIPPING_LABELS[locale][method.id] ?? method.label ?? method.id
+                        const isSelected = selectedShippingId === method.id
+                        return (
+                          <label
+                            key={method.id}
+                            className={cn(
+                              "flex cursor-pointer items-center justify-between rounded-xl border px-3 py-2 text-sm",
+                              isSelected
+                                ? "border-indigo-500 bg-indigo-50 text-slate-900"
+                                : "border-slate-200 bg-white text-slate-600",
+                            )}
+                          >
+                            <span className="flex items-center gap-2">
+                              <input
+                                type="radio"
+                                name="shipping-method"
+                                className="h-4 w-4"
+                                checked={isSelected}
+                                onChange={() => setShippingMethod(method.id)}
+                              />
+                              {label}
+                            </span>
+                            <span className="font-semibold text-slate-900">
+                              {formatEur(method.priceEur)}
+                            </span>
+                          </label>
+                        )
+                      })}
                     </div>
-
-                    {isLiveCheckout ? (
-                      <label className="block">
-                        <span className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-                          {copy.emailLabel}
-                        </span>
-                        <input
-                          type="email"
-                          value={email}
-                          onChange={(event) => setEmail(event.target.value)}
-                          placeholder={copy.emailPlaceholder}
-                          autoComplete="email"
-                          className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus:border-indigo-500 focus:outline-none"
-                        />
-                      </label>
-                    ) : null}
                   </div>
-                ) : null}
+
+                  {isCheckout && isLiveCheckout ? (
+                    <label className="block">
+                      <span className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                        {copy.emailLabel}
+                      </span>
+                      <input
+                        type="email"
+                        value={email}
+                        onChange={(event) => setEmail(event.target.value)}
+                        placeholder={copy.emailPlaceholder}
+                        autoComplete="email"
+                        className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus:border-indigo-500 focus:outline-none"
+                      />
+                    </label>
+                  ) : null}
+                </div>
+              ) : null}
 
                 <div className="mt-4 flex flex-col gap-3">
                   {isCheckout ? (
@@ -539,9 +604,15 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                       {copy.request}
                     </Link>
                   ) : (
-                    <p className="text-xs text-slate-500">
-                      {isLiveCheckout ? copy.liveNote : copy.demoNote}
-                    </p>
+                    <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500">
+                      <p>{isLiveCheckout ? copy.liveNote : copy.demoNote}</p>
+                      <Link
+                        href={shopHref}
+                        className="font-semibold uppercase tracking-[0.3em] text-slate-500 transition hover:text-slate-700"
+                      >
+                        {copy.continueShopping}
+                      </Link>
+                    </div>
                   )}
 
                   {(checkoutError || error) && (
@@ -551,6 +622,52 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                   )}
                 </div>
               </GlassCard>
+
+              {crossSellProducts.length ? (
+                <GlassCard>
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                    {copy.crossSellTitle}
+                  </p>
+                  <p className="mt-2 text-sm text-slate-600">{copy.crossSellBody}</p>
+                  <div className="mt-4 space-y-3">
+                    {crossSellProducts.map((product) => {
+                      const name = localize(product.name, locale)
+                      const summary = localize(product.summary, locale)
+                      const href = locale === "en" ? `/en/shop/${product.slug}` : `/shop/${product.slug}`
+                      return (
+                        <div key={product.slug} className="rounded-2xl border border-slate-100 bg-white/70 p-3">
+                          <div className="flex items-start gap-3">
+                            <div className="w-20 overflow-hidden rounded-xl border border-slate-100 bg-white">
+                              <Image
+                                src={product.image.url}
+                                alt={localize(product.image.alt, locale)}
+                                width={320}
+                                height={240}
+                                className="h-auto w-full object-cover"
+                                sizes="80px"
+                              />
+                            </div>
+                            <div className="flex-1">
+                              <p className="text-sm font-semibold text-slate-900">{name}</p>
+                              <p className="mt-1 text-xs text-slate-600">{summary}</p>
+                              <div className="mt-2 flex items-center justify-between text-xs text-slate-600">
+                                <span className="font-semibold text-slate-900">{formatEur(product.priceEur)}</span>
+                                <Link
+                                  href={href}
+                                  className="inline-flex items-center gap-1 font-semibold text-indigo-600 transition hover:text-indigo-500"
+                                >
+                                  {copy.crossSellCta}
+                                  <span className="i-lucide-arrow-right" aria-hidden />
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </GlassCard>
+              ) : null}
 
               <GlassCard>
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">

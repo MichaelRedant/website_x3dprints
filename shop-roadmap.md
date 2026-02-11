@@ -169,6 +169,7 @@ Out of scope in Phase 1 (and why):
   - `BFF_BASE_URL=https://api.x3dprints.be`
   - `MOLLIE_API_KEY=<live key when ready>`
   - `APP_DEBUG=false`
+  - Local dev: set `SHOP_SITE_URL=auto` (or leave empty) to use current host.
 - [ ] Set CRM + mail in BFF `.env`:
   - `CRM_PASSWORD=<strong password>`
   - `SMTP_HOST/PORT/USER/PASS`, `MAIL_FROM`, `MAIL_TO`

@@ -161,6 +161,36 @@ function getPdo(): PDO
   return $pdo;
 }
 
+function shopProductsHasDeletedColumn(PDO $pdo): bool
+{
+  static $cache = null;
+  if ($cache !== null) {
+    return $cache;
+  }
+  try {
+    $stmt = $pdo->query("SHOW COLUMNS FROM shop_products LIKE 'is_deleted'");
+    $cache = (bool)$stmt->fetch();
+  } catch (Throwable $error) {
+    $cache = false;
+  }
+  return $cache;
+}
+
+function shopProductsHasTagsColumn(PDO $pdo): bool
+{
+  static $cache = null;
+  if ($cache !== null) {
+    return $cache;
+  }
+  try {
+    $stmt = $pdo->query("SHOW COLUMNS FROM shop_products LIKE 'tags'");
+    $cache = (bool)$stmt->fetch();
+  } catch (Throwable $error) {
+    $cache = false;
+  }
+  return $cache;
+}
+
 if (envBool("APP_DEBUG", false)) {
   ini_set("display_errors", "1");
   ini_set("display_startup_errors", "1");

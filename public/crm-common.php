@@ -72,7 +72,7 @@ function crmSessionStart(): void
     }
 
     $isSecure = !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off';
-    session_name('x3dcrm');
+    session_name('x3dprints_crm');
     session_set_cookie_params([
         'lifetime' => 0,
         'path' => '/',
@@ -87,6 +87,40 @@ function crmSessionStart(): void
         'cookie_secure' => $isSecure ? 1 : 0,
         'cookie_samesite' => 'Strict',
     ]);
+}
+
+function crmLogin(): void
+{
+    crmSessionStart();
+    session_regenerate_id(true);
+    $_SESSION['crm_auth'] = true;
+}
+
+function crmLogout(): void
+{
+    crmSessionStart();
+    $_SESSION = [];
+    if (ini_get('session.use_cookies')) {
+        $params = session_get_cookie_params();
+        setcookie(session_name(), '', time() - 42000, $params['path'], $params['domain'] ?? '', $params['secure'], $params['httponly']);
+    }
+    session_destroy();
+}
+
+function crmClientIp(): string
+{
+    $trustProxy = function_exists('envBool') ? envBool('CRM_TRUST_PROXY', false) : false;
+    if ($trustProxy) {
+        $forwarded = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? '';
+        if ($forwarded !== '') {
+            $parts = explode(',', $forwarded);
+            $candidate = trim($parts[0] ?? '');
+            if ($candidate !== '') {
+                return $candidate;
+            }
+        }
+    }
+    return $_SERVER['REMOTE_ADDR'] ?? 'unknown';
 }
 
 function crmIsAuthenticated(): bool

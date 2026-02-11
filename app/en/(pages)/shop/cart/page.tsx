@@ -5,11 +5,16 @@ import ShimmerButton from "@/components/ShimmerButton"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import ShopCartView from "@/components/ShopCartView"
 import { SITE } from "@/lib/seo"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
+
+const IS_LIVE = SHOP_INDEXABLE
 
 export const metadata: Metadata = {
-  title: "Cart coming soon | X3DPrints",
-  description:
-    "The cart is in preparation. Request advice or start with material selection. Delivery in Belgium: EUR 7.50 up to 3 kg or pickup by appointment.",
+  title: IS_LIVE ? "Cart | X3DPrints" : "Cart coming soon | X3DPrints",
+  description: IS_LIVE
+    ? "Review your items and proceed to checkout."
+    : "The cart is in preparation. Request advice or start with material selection. Delivery in Belgium: EUR 7.50 up to 3 kg or pickup by appointment.",
+  robots: { index: false, follow: false },
   alternates: {
     canonical: `${SITE.url}/en/shop/cart/`,
     languages: {
@@ -19,8 +24,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Cart (coming soon)",
-    description: "Shop features will be enabled soon.",
+    title: IS_LIVE ? "Cart" : "Cart (coming soon)",
+    description: IS_LIVE ? "Review your items and proceed to checkout." : "Shop features will be enabled soon.",
     url: `${SITE.url}/en/shop/cart/`,
     images: [{ url: SITE.ogImage, width: 1200, height: 630 }],
     locale: "en_BE",
@@ -28,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cart | X3DPrints",
-    description: "Shop features will be enabled soon.",
+    title: IS_LIVE ? "Cart | X3DPrints" : "Cart (coming soon) | X3DPrints",
+    description: IS_LIVE ? "Review your items and proceed to checkout." : "Shop features will be enabled soon.",
     images: [SITE.ogImage],
   },
 }
@@ -42,11 +47,12 @@ export default function ShopCartPageEn() {
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
             <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
-              The cart is in preparation
+              {IS_LIVE ? "Cart" : "The cart is in preparation"}
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-slate-600">
-              The cart will go live once the first products are available. Until then, request
-              advice or discuss material selection with us.
+              {IS_LIVE
+                ? "Review your items and proceed to checkout."
+                : "The cart will go live once the first products are available. Until then, request advice or discuss material selection with us."}
             </p>
           </Reveal>
           <div className="mt-8 flex flex-wrap gap-3">

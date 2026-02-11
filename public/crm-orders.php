@@ -28,22 +28,8 @@ require_once $shopServicePath;
 header("Content-Type: application/json; charset=utf-8");
 header("X-Robots-Tag: noindex, nofollow");
 
-$secure = (!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] !== "off");
-session_name("x3dprints_crm");
-session_set_cookie_params([
-  "lifetime" => 0,
-  "path" => "/",
-  "secure" => $secure,
-  "httponly" => true,
-  "samesite" => "Strict",
-]);
-session_start();
-
-if (empty($_SESSION["crm_auth"])) {
-  http_response_code(401);
-  echo json_encode(["error" => "Unauthorized"]);
-  exit;
-}
+crmSessionStart();
+crmRequireAuth();
 
 if (($_SERVER["REQUEST_METHOD"] ?? "GET") !== "POST") {
   http_response_code(405);
@@ -142,7 +128,8 @@ function fetchShippingMethod(PDO $pdo, string $id): ?array
 
 function fetchProduct(PDO $pdo, string $slug): ?array
 {
-  $stmt = $pdo->prepare("SELECT slug, price_cents FROM shop_products WHERE slug = :slug LIMIT 1");
+  $deletedClause = shopProductsHasDeletedColumn($pdo) ? " AND is_deleted = 0" : "";
+  $stmt = $pdo->prepare("SELECT slug, price_cents FROM shop_products WHERE slug = :slug{$deletedClause} LIMIT 1");
   $stmt->execute(["slug" => $slug]);
   $row = $stmt->fetch();
   return $row ?: null;

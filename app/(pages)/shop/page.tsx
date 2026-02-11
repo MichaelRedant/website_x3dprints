@@ -9,9 +9,9 @@ import { SITE } from "@/lib/seo"
 import { getShopProducts } from "@/lib/shop-data"
 
 export const metadata: Metadata = {
-  title: "Shop voor 3D prints in voorbereiding | X3DPrints",
+  title: "Kleinschalige 3D print shop | X3DPrints",
   description:
-    "Onze shop start binnenkort met een select aanbod. Tot dan: vraag advies en plan je 3D print. Levering in Belgie: EUR 7.50 tot 3 kg of afhalen op afspraak.",
+    "Persoonlijk gemaakte 3D prints in kleine oplages. Direct contact met de maker, levering in Belgie of gratis afhalen op afspraak.",
   alternates: {
     canonical: `${SITE.url}/shop/`,
     languages: {
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Shop voor 3D prints (in voorbereiding)",
+    title: "Kleinschalige 3D print shop",
     description:
-      "Select aanbod op komst. Vraag advies, kies materialen en plan je print. Levering in Belgie of afhalen op afspraak.",
+      "Kleine, zorgvuldig geselecteerde collectie met persoonlijke afwerking en directe ondersteuning.",
     url: `${SITE.url}/shop/`,
     images: [{ url: SITE.ogImage, width: 1200, height: 630 }],
     locale: "nl_BE",
@@ -31,45 +31,41 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shop voor 3D prints | X3DPrints",
-    description: "Select aanbod op komst. Vraag advies en plan je print.",
+    title: "Kleinschalige 3D print shop | X3DPrints",
+    description: "Persoonlijk gemaakte 3D prints, kleine oplages en directe ondersteuning.",
     images: [SITE.ogImage],
   },
 }
 
 const HIGHLIGHTS = [
   {
-    title: "Levering in Belgie",
-    description: "Vaste verzending binnen Belgie. EUR 7.50 tot 3 kg.",
+    title: "Kleinschalig gemaakt",
+    description: "Elke print wordt in huis geproduceerd en gecontroleerd.",
   },
   {
-    title: "Afhalen op afspraak",
-    description: "Liever ophalen? Dat kan op afspraak in de regio.",
+    title: "Levering of afhalen",
+    description: "Levering in Belgie of gratis afhalen op afspraak.",
   },
   {
-    title: "Kwaliteitscheck",
-    description: "Elke print wordt gecontroleerd op passing en afwerking.",
+    title: "Persoonlijk contact",
+    description: "Vragen over materiaal of afwerking? Je spreekt direct met de maker.",
   },
 ]
 
-const NEXT_STEPS = [
+type ShopStep = { title: string; description: string; href?: string; label?: string }
+
+const ORDER_STEPS: ShopStep[] = [
   {
-    title: "Vraag advies voor je project",
-    description: "Stuur je toepassing of model door, dan adviseren we materiaal en planning.",
-    href: "/contact",
-    label: "Offerte aanvragen",
+    title: "Kies je product",
+    description: "Selecteer je item en bekijk materiaal, kleur en levertijd.",
   },
   {
-    title: "Material Suggestion Tool",
-    description: "Snelle vragen, helder advies en een prefill naar contact.",
-    href: "/materials#material-suggestion-tool",
-    label: "Start tool",
+    title: "Kies aantal en levering",
+    description: "Stel je aantal in en kies levering of gratis afhalen.",
   },
   {
-    title: "Bekijk materialen en richtlijnen",
-    description: "Vergelijk PLA, PETG en TPU en zie wanneer je welk materiaal kiest.",
-    href: "/materials",
-    label: "Materialen",
+    title: "Betaal veilig",
+    description: "Betaal via Mollie, daarna printen en controleren wij je order.",
   },
 ]
 
@@ -83,20 +79,20 @@ export default async function ShopPage() {
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
             <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
-              De shop is in voorbereiding
+              Kleinschalige 3D print shop, persoonlijk gemaakt
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-slate-600">
-              We starten binnenkort met een select aanbod. Tot dan helpen we je graag met advies,
-              materiaalkeuze en een heldere planning voor je 3D print.
+              Kleine oplages, directe communicatie en zorgvuldige afwerking. Elk item wordt in huis geprint,
+              gecontroleerd en met zorg verzonden of klaargezet voor gratis afhaling.
             </p>
           </Reveal>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ShimmerButton href="/contact">Offerte aanvragen</ShimmerButton>
+            <ShimmerButton href="/shop#shop-collection">Bekijk collectie</ShimmerButton>
             <Link
-              href="/materials#material-suggestion-tool"
+              href="/contact"
               className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
             >
-              Material Suggestion Tool
+              Vraag persoonlijk advies
             </Link>
           </div>
         </div>
@@ -120,19 +116,23 @@ export default async function ShopPage() {
       <section className="px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <GlassCard>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Wat kan je nu al doen</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+              Zo werkt bestellen
+            </p>
             <div className="mt-4 grid gap-4 md:grid-cols-3">
-              {NEXT_STEPS.map((item) => (
+              {ORDER_STEPS.map((item) => (
                 <div key={item.title} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
                   <h3 className="text-base font-semibold text-slate-900">{item.title}</h3>
                   <p className="mt-2 text-sm text-slate-600">{item.description}</p>
-                  <Link
-                    href={item.href}
-                    className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
-                  >
-                    {item.label}
-                    <span className="i-lucide-arrow-right" aria-hidden />
-                  </Link>
+                  {item.href && item.label ? (
+                    <Link
+                      href={item.href}
+                      className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+                    >
+                      {item.label}
+                      <span className="i-lucide-arrow-right" aria-hidden />
+                    </Link>
+                  ) : null}
                 </div>
               ))}
             </div>

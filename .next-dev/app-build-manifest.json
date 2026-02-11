@@ -26,6 +26,26 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/layout.js"
     ],
+    "/(pages)/crm/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/crm/layout.js"
+    ],
+    "/(pages)/crm/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/crm/page.js"
+    ],
+    "/(pages)/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/[slug]/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
+    ],
     "/(pages)/shop/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -36,45 +56,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/shop/page.js"
     ],
-    "/(pages)/[slug]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/[slug]/page.js"
-    ],
-    "/(pages)/shop/[slug]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/shop/[slug]/page.js"
-    ],
     "/(pages)/shop/cart/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/shop/cart/page.js"
     ],
-    "/(pages)/algemene-voorwaarden/page": [
+    "/(pages)/shop/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/algemene-voorwaarden/page.js"
-    ],
-    "/(pages)/shop/checkout/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/shop/checkout/page.js"
-    ],
-    "/(pages)/services/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/services/page.js"
-    ],
-    "/(pages)/crm/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/crm/layout.js"
-    ],
-    "/(pages)/crm/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/crm/page.js"
+      "static/chunks/app/(pages)/shop/[slug]/page.js"
     ]
   }
 }

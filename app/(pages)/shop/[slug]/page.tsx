@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import { getShopProductBySlug, getShopProductSlugs } from "@/lib/shop-data"
+import { getShopProductBySlug, getShopProductSlugs, getShopProducts } from "@/lib/shop-data"
+import { pickRelatedProducts } from "@/lib/shop-related"
 import { buildShopProductMetadata, renderShopProductPage } from "./product-page"
 
 export async function generateStaticParams() {
@@ -32,5 +33,13 @@ export default async function ShopProductPage({
   const { slug } = await params
   const product = await getShopProductBySlug(slug, "nl")
   if (!product) return notFound()
-  return renderShopProductPage({ product, locale: "nl" })
+  const products = await getShopProducts("nl")
+  const seedTags = product.tags?.length ? product.tags : product.categories ?? []
+  const relatedProducts = pickRelatedProducts({
+    products,
+    tags: seedTags,
+    excludeSlugs: [product.slug],
+    limit: 4,
+  })
+  return renderShopProductPage({ product, locale: "nl", relatedProducts })
 }

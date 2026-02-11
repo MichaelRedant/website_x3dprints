@@ -9,9 +9,9 @@ import { SITE } from "@/lib/seo"
 import { getShopProducts } from "@/lib/shop-data"
 
 export const metadata: Metadata = {
-  title: "Shop for 3D prints (coming soon) | X3DPrints",
+  title: "Small-batch 3D print shop | X3DPrints",
   description:
-    "Our shop launches soon with a curated selection. Until then, request advice and plan your print. Delivery in Belgium: EUR 7.50 up to 3 kg or pickup by appointment.",
+    "Small-batch 3D prints with personal quality checks. Direct maker contact, delivery in Belgium or free pickup by appointment.",
   alternates: {
     canonical: `${SITE.url}/en/shop/`,
     languages: {
@@ -21,9 +21,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Shop for 3D prints (coming soon)",
-    description:
-      "A curated selection is on the way. Get advice, pick materials and plan your print.",
+    title: "Small-batch 3D print shop",
+    description: "A small, curated collection with personal finishing and direct support.",
     url: `${SITE.url}/en/shop/`,
     images: [{ url: SITE.ogImage, width: 1200, height: 630 }],
     locale: "en_BE",
@@ -31,45 +30,41 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shop for 3D prints | X3DPrints",
-    description: "A curated selection is on the way. Get advice and plan your print.",
+    title: "Small-batch 3D print shop | X3DPrints",
+    description: "Small-batch 3D prints with personal finishing and direct support.",
     images: [SITE.ogImage],
   },
 }
 
 const HIGHLIGHTS = [
   {
-    title: "Delivery in Belgium",
-    description: "Flat-rate shipping in Belgium. EUR 7.50 up to 3 kg.",
+    title: "Small-batch made",
+    description: "Every print is produced and checked in-house.",
   },
   {
-    title: "Pickup by appointment",
-    description: "Prefer pickup? We can schedule it on request.",
+    title: "Delivery or pickup",
+    description: "Delivery in Belgium or free pickup by appointment.",
   },
   {
-    title: "Quality check",
-    description: "Every print is checked for fit and finish.",
+    title: "Personal support",
+    description: "Questions about material or finish? You speak with the maker.",
   },
 ]
 
-const NEXT_STEPS = [
+type ShopStep = { title: string; description: string; href?: string; label?: string }
+
+const ORDER_STEPS: ShopStep[] = [
   {
-    title: "Request project advice",
-    description: "Send your use-case or model and we advise material and timing.",
-    href: "/contact",
-    label: "Request a quote",
+    title: "Pick your product",
+    description: "Select your item and review material, color and lead time.",
   },
   {
-    title: "Material Suggestion Tool",
-    description: "Quick questions, clear advice and a prefilled contact flow.",
-    href: "/materials#material-suggestion-tool",
-    label: "Start tool",
+    title: "Choose quantity and delivery",
+    description: "Set your quantity and pick delivery or free pickup.",
   },
   {
-    title: "Review materials",
-    description: "Compare PLA, PETG and TPU and pick the right trade-offs.",
-    href: "/materials",
-    label: "Materials",
+    title: "Pay securely",
+    description: "Pay via Mollie, then we print and inspect your order.",
   },
 ]
 
@@ -83,20 +78,20 @@ export default async function ShopPageEn() {
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
             <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
-              The shop is in preparation
+              Small-batch 3D print shop, personally made
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-slate-600">
-              We will launch soon with a curated selection. For now, we are happy to advise on
-              materials and help plan your 3D print.
+              Small runs, direct communication, and careful finishing. Every item is printed in-house,
+              checked for fit, and shipped with care or prepared for free pickup.
             </p>
           </Reveal>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ShimmerButton href="/contact">Request a quote</ShimmerButton>
+            <ShimmerButton href="/en/shop#shop-collection">View collection</ShimmerButton>
             <Link
-              href="/materials#material-suggestion-tool"
+              href="/en/contact"
               className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
             >
-              Material Suggestion Tool
+              Ask for personal advice
             </Link>
           </div>
         </div>
@@ -120,19 +115,23 @@ export default async function ShopPageEn() {
       <section className="px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <GlassCard>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">What you can do now</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+              How ordering works
+            </p>
             <div className="mt-4 grid gap-4 md:grid-cols-3">
-              {NEXT_STEPS.map((item) => (
+              {ORDER_STEPS.map((item) => (
                 <div key={item.title} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
                   <h3 className="text-base font-semibold text-slate-900">{item.title}</h3>
                   <p className="mt-2 text-sm text-slate-600">{item.description}</p>
-                  <Link
-                    href={item.href}
-                    className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
-                  >
-                    {item.label}
-                    <span className="i-lucide-arrow-right" aria-hidden />
-                  </Link>
+                  {item.href && item.label ? (
+                    <Link
+                      href={item.href}
+                      className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+                    >
+                      {item.label}
+                      <span className="i-lucide-arrow-right" aria-hidden />
+                    </Link>
+                  ) : null}
                 </div>
               ))}
             </div>

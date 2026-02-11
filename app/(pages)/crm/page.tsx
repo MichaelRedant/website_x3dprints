@@ -2,6 +2,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Link from "next/link"
 import { useSearchParams } from "next/navigation"
 import { MATERIALS, MATERIAL_ORDER, type MaterialKey } from "@/lib/materials"
 
@@ -53,6 +54,44 @@ type OrderProductOption = {
   nameEn: string
   priceEur: number
   isLive: boolean
+}
+
+type ProductEntry = {
+  slug: string
+  nameNl: string
+  nameEn: string
+  summaryNl: string
+  summaryEn: string
+  priceEur: number
+  availability?: string | null
+  tags?: string
+  imageUrl: string
+  imageAltNl: string
+  imageAltEn: string
+  leadTimeMin?: number | null
+  leadTimeMax?: number | null
+  isLive: boolean
+  sortOrder: number
+  isDeleted: boolean
+}
+
+type ProductDraft = {
+  slug: string
+  nameNl: string
+  nameEn: string
+  summaryNl: string
+  summaryEn: string
+  priceEur: string
+  availability: string
+  tags: string
+  imageUrl: string
+  imageAltNl: string
+  imageAltEn: string
+  leadTimeMin: string
+  leadTimeMax: string
+  sortOrder: string
+  isLive: boolean
+  isDeleted: boolean
 }
 
 type OrderItem = {
@@ -111,6 +150,7 @@ const STOCK_KEY = "x3dprints-crm-filament-stock"
 const AUTH_ENDPOINT = "/crm-auth.php"
 const CRM_DATA_ENDPOINT = "/crm-data.php"
 const CRM_ORDERS_ENDPOINT = "/crm-orders.php"
+const CRM_PRODUCTS_ENDPOINT = "/crm-products.php"
 
 const EUR_FORMATTER = new Intl.NumberFormat("nl-BE", { style: "currency", currency: "EUR" })
 const formatEur = (value: number) => EUR_FORMATTER.format(value)
@@ -166,12 +206,95 @@ const ORDER_SOURCE_LABELS: Record<string, string> = {
   manual: "Handmatig",
 }
 
+const PRODUCT_AVAILABILITY_OPTIONS = [
+  { value: "", label: "Geen" },
+  { value: "InStock", label: "Op voorraad" },
+  { value: "PreOrder", label: "Op bestelling" },
+  { value: "LimitedAvailability", label: "Beperkt" },
+  { value: "OutOfStock", label: "Niet beschikbaar" },
+]
+
+const EMPTY_PRODUCT_DRAFT: ProductDraft = {
+  slug: "",
+  nameNl: "",
+  nameEn: "",
+  summaryNl: "",
+  summaryEn: "",
+  priceEur: "",
+  availability: "",
+  tags: "",
+  imageUrl: "",
+  imageAltNl: "",
+  imageAltEn: "",
+  leadTimeMin: "",
+  leadTimeMax: "",
+  sortOrder: "0",
+  isLive: false,
+  isDeleted: false,
+}
+
+function toProductDraft(product: ProductEntry): ProductDraft {
+  return {
+    slug: product.slug,
+    nameNl: product.nameNl,
+    nameEn: product.nameEn,
+    summaryNl: product.summaryNl,
+    summaryEn: product.summaryEn,
+    priceEur: Number.isFinite(product.priceEur) ? product.priceEur.toFixed(2) : "",
+    availability: product.availability ?? "",
+    tags: product.tags ?? "",
+    imageUrl: product.imageUrl,
+    imageAltNl: product.imageAltNl,
+    imageAltEn: product.imageAltEn,
+    leadTimeMin: product.leadTimeMin !== null && product.leadTimeMin !== undefined ? String(product.leadTimeMin) : "",
+    leadTimeMax: product.leadTimeMax !== null && product.leadTimeMax !== undefined ? String(product.leadTimeMax) : "",
+    sortOrder: Number.isFinite(product.sortOrder) ? String(product.sortOrder) : "0",
+    isLive: product.isLive,
+    isDeleted: product.isDeleted ?? false,
+  }
+}
+
+function toProductPayload(draft: ProductDraft) {
+  return {
+    slug: draft.slug.trim(),
+    nameNl: draft.nameNl.trim(),
+    nameEn: draft.nameEn.trim(),
+    summaryNl: draft.summaryNl.trim(),
+    summaryEn: draft.summaryEn.trim(),
+    priceEur: Number(draft.priceEur),
+    availability: draft.availability || null,
+    tags: draft.tags.trim(),
+    imageUrl: draft.imageUrl.trim(),
+    imageAltNl: draft.imageAltNl.trim(),
+    imageAltEn: draft.imageAltEn.trim(),
+    leadTimeMin: draft.leadTimeMin === "" ? null : Number(draft.leadTimeMin),
+    leadTimeMax: draft.leadTimeMax === "" ? null : Number(draft.leadTimeMax),
+    sortOrder: draft.sortOrder === "" ? 0 : Number(draft.sortOrder),
+    isLive: draft.isLive,
+  }
+}
+
+function hasRequiredProductFields(draft: ProductDraft, requireSlug: boolean) {
+  const slugOk = !requireSlug || draft.slug.trim().length > 1
+  return (
+    slugOk &&
+    draft.nameNl.trim() !== "" &&
+    draft.nameEn.trim() !== "" &&
+    draft.summaryNl.trim() !== "" &&
+    draft.summaryEn.trim() !== "" &&
+    draft.imageUrl.trim() !== "" &&
+    draft.imageAltNl.trim() !== "" &&
+    draft.imageAltEn.trim() !== "" &&
+    draft.priceEur.trim() !== ""
+  )
+}
+
 export default function CrmGate() {
   const searchParams = useSearchParams()
   const viewParam = searchParams?.get("view") ?? ""
   const tabParam = searchParams?.get("tab") ?? ""
   const ordersOnly = viewParam === "orders"
-  const [tab, setTab] = useState<"contact" | "orders" | "stock">("contact")
+  const [tab, setTab] = useState<"contact" | "orders" | "stock" | "products">("contact")
   const [input, setInput] = useState("")
   const [isAuthed, setIsAuthed] = useState(false)
   const [authLoading, setAuthLoading] = useState(true)
@@ -188,6 +311,14 @@ export default function CrmGate() {
   const [showArchivedOrders, setShowArchivedOrders] = useState(false)
   const [shippingMethods, setShippingMethods] = useState<OrderShippingMethod[]>([])
   const [products, setProducts] = useState<OrderProductOption[]>([])
+  const [productList, setProductList] = useState<ProductDraft[]>([])
+  const [productLoading, setProductLoading] = useState(false)
+  const [productError, setProductError] = useState("")
+  const [productSuccess, setProductSuccess] = useState("")
+  const [productSaving, setProductSaving] = useState(false)
+  const [productSearch, setProductSearch] = useState("")
+  const [showDeletedProducts, setShowDeletedProducts] = useState(false)
+  const [productForm, setProductForm] = useState<ProductDraft>(EMPTY_PRODUCT_DRAFT)
   const [orderEdit, setOrderEdit] = useState<OrderEditDraft | null>(null)
   const [orderSaving, setOrderSaving] = useState(false)
   const [orderSaveError, setOrderSaveError] = useState("")
@@ -258,7 +389,7 @@ export default function CrmGate() {
       setOrderSourceFilter((prev) => (prev === "all" ? "mollie" : prev))
       return
     }
-    if (tabParam === "orders" || tabParam === "stock" || tabParam === "contact") {
+    if (tabParam === "orders" || tabParam === "stock" || tabParam === "contact" || tabParam === "products") {
       setTab(tabParam)
     }
   }, [ordersOnly, tabParam])
@@ -354,6 +485,37 @@ export default function CrmGate() {
       cancelled = true
     }
   }, [isAuthed])
+
+  useEffect(() => {
+    if (!isAuthed || tab !== "products") return
+    let cancelled = false
+    async function loadProducts() {
+      try {
+        setProductLoading(true)
+        setProductError("")
+        setProductSuccess("")
+        const res = await fetch(CRM_PRODUCTS_ENDPOINT, { cache: "no-store", credentials: "same-origin" })
+        if (res.status === 401) {
+          setIsAuthed(false)
+          throw new Error("Unauthorized")
+        }
+        if (!res.ok) throw new Error(`Status ${res.status}`)
+        const json = (await res.json()) as ProductEntry[]
+        if (!cancelled) {
+          const mapped = Array.isArray(json) ? json.map((item) => toProductDraft(item)) : []
+          setProductList(mapped)
+        }
+      } catch {
+        if (!cancelled) setProductError("Kon producten niet laden.")
+      } finally {
+        if (!cancelled) setProductLoading(false)
+      }
+    }
+    loadProducts()
+    return () => {
+      cancelled = true
+    }
+  }, [isAuthed, tab])
 
   useEffect(() => {
     if (!shippingMethods.length) return
@@ -797,6 +959,214 @@ export default function CrmGate() {
     }
   }
 
+  async function reloadProducts() {
+    try {
+      setProductLoading(true)
+      setProductError("")
+      const res = await fetch(CRM_PRODUCTS_ENDPOINT, { cache: "no-store", credentials: "same-origin" })
+      if (res.status === 401) {
+        setIsAuthed(false)
+        throw new Error("Unauthorized")
+      }
+      if (!res.ok) throw new Error(`Status ${res.status}`)
+      const json = (await res.json()) as ProductEntry[]
+      const mapped = Array.isArray(json) ? json.map((item) => toProductDraft(item)) : []
+      setProductList(mapped)
+    } catch {
+      setProductError("Kon producten niet laden.")
+    } finally {
+      setProductLoading(false)
+    }
+  }
+
+  async function submitProductAction(payload: Record<string, unknown>) {
+    const res = await fetch(CRM_PRODUCTS_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "same-origin",
+      body: JSON.stringify(payload),
+    })
+    if (res.status === 401) {
+      setIsAuthed(false)
+      throw new Error("Unauthorized")
+    }
+    const json = (await res.json().catch(() => null)) as { error?: string } | null
+    if (!res.ok) {
+      throw new Error(json?.error || `Status ${res.status}`)
+    }
+  }
+
+  function updateProductForm<K extends keyof ProductDraft>(key: K, value: ProductDraft[K]) {
+    setProductForm((prev) => ({ ...prev, [key]: value }))
+  }
+
+  function updateProductField(slug: string, key: keyof ProductDraft, value: ProductDraft[keyof ProductDraft]) {
+    setProductList((prev) =>
+      prev.map((product) => (product.slug === slug ? { ...product, [key]: value } : product)),
+    )
+  }
+
+  async function createProduct(e: React.FormEvent) {
+    e.preventDefault()
+    if (!hasRequiredProductFields(productForm, true)) return
+    try {
+      setProductSaving(true)
+      setProductError("")
+      setProductSuccess("")
+      const payload = toProductPayload({ ...productForm, slug: productForm.slug.toLowerCase() })
+      await submitProductAction({ action: "create", product: payload })
+      setProductSuccess("Product toegevoegd.")
+      setProductForm(EMPTY_PRODUCT_DRAFT)
+      await reloadProducts()
+    } catch (err) {
+      setProductError(err instanceof Error ? err.message : "Product aanmaken mislukt.")
+    } finally {
+      setProductSaving(false)
+    }
+  }
+
+  async function saveProduct(slug: string) {
+    const draft = productList.find((item) => item.slug === slug)
+    if (!draft || !hasRequiredProductFields(draft, true)) return
+    try {
+      setProductSaving(true)
+      setProductError("")
+      setProductSuccess("")
+      const payload = toProductPayload(draft)
+      await submitProductAction({ action: "update", product: payload })
+      setProductSuccess("Product opgeslagen.")
+      await reloadProducts()
+    } catch (err) {
+      setProductError(err instanceof Error ? err.message : "Product opslaan mislukt.")
+    } finally {
+      setProductSaving(false)
+    }
+  }
+
+  async function toggleProductVisibility(slug: string, isLive: boolean) {
+    try {
+      setProductSaving(true)
+      setProductError("")
+      setProductSuccess("")
+      await submitProductAction({ action: "visibility", slug, isLive })
+      setProductSuccess(isLive ? "Product gepubliceerd." : "Product verborgen.")
+      await reloadProducts()
+    } catch (err) {
+      setProductError(err instanceof Error ? err.message : "Product aanpassen mislukt.")
+    } finally {
+      setProductSaving(false)
+    }
+  }
+
+  async function deleteProduct(slug: string) {
+    if (!confirm(`Verwijder product ${slug}?`)) return
+    try {
+      setProductSaving(true)
+      setProductError("")
+      setProductSuccess("")
+      await submitProductAction({ action: "delete", slug })
+      setProductSuccess("Product verwijderd.")
+      await reloadProducts()
+    } catch (err) {
+      setProductError(err instanceof Error ? err.message : "Product verwijderen mislukt.")
+    } finally {
+      setProductSaving(false)
+    }
+  }
+
+  function suggestDuplicateSlug(sourceSlug: string) {
+    const existing = new Set(productList.map((item) => item.slug))
+    const candidate = `${sourceSlug}-copy`
+    if (!existing.has(candidate)) return candidate
+    let index = 2
+    while (existing.has(`${sourceSlug}-copy-${index}`)) {
+      index += 1
+    }
+    return `${sourceSlug}-copy-${index}`
+  }
+
+  async function softDeleteProduct(slug: string) {
+    if (!confirm(`Product ${slug} verbergen en verwijderen uit de shop?`)) return
+    try {
+      setProductSaving(true)
+      setProductError("")
+      setProductSuccess("")
+      await submitProductAction({ action: "soft-delete", slug })
+      setProductSuccess("Product verwijderd (soft).")
+      await reloadProducts()
+    } catch (err) {
+      setProductError(err instanceof Error ? err.message : "Product verwijderen mislukt.")
+    } finally {
+      setProductSaving(false)
+    }
+  }
+
+  async function restoreProduct(slug: string) {
+    if (!confirm(`Herstel product ${slug}?`)) return
+    try {
+      setProductSaving(true)
+      setProductError("")
+      setProductSuccess("")
+      await submitProductAction({ action: "restore", slug })
+      setProductSuccess("Product hersteld.")
+      await reloadProducts()
+    } catch (err) {
+      setProductError(err instanceof Error ? err.message : "Product herstellen mislukt.")
+    } finally {
+      setProductSaving(false)
+    }
+  }
+
+  async function duplicateProduct(sourceSlug: string) {
+    const suggested = suggestDuplicateSlug(sourceSlug)
+    const input = prompt("Nieuwe slug voor duplicaat:", suggested)
+    if (!input) return
+    const slug = input.trim().toLowerCase()
+    if (slug === "") return
+    if (!/^[a-z0-9-]{2,120}$/.test(slug)) {
+      setProductError("Ongeldige slug. Gebruik a-z, 0-9 en -.")
+      return
+    }
+    if (productList.some((item) => item.slug === slug)) {
+      setProductError("Slug bestaat al.")
+      return
+    }
+    if (slug === sourceSlug) {
+      setProductError("Duplicaat slug moet verschillen van het origineel.")
+      return
+    }
+    try {
+      setProductSaving(true)
+      setProductError("")
+      setProductSuccess("")
+      await submitProductAction({ action: "duplicate", sourceSlug, slug })
+      setProductSuccess("Product gedupliceerd.")
+      await reloadProducts()
+    } catch (err) {
+      setProductError(err instanceof Error ? err.message : "Product dupliceren mislukt.")
+    } finally {
+      setProductSaving(false)
+    }
+  }
+
+  const filteredProducts = productList.filter((product) => {
+    const term = productSearch.trim().toLowerCase()
+    if (!showDeletedProducts && product.isDeleted) return false
+    if (!term) return true
+    return (
+      product.slug.toLowerCase().includes(term) ||
+      product.nameNl.toLowerCase().includes(term) ||
+      product.nameEn.toLowerCase().includes(term)
+    )
+  })
+
+  const productTotals = {
+    total: productList.length,
+    live: productList.filter((product) => product.isLive && !product.isDeleted).length,
+    hidden: productList.filter((product) => !product.isLive && !product.isDeleted).length,
+    deleted: productList.filter((product) => product.isDeleted).length,
+  }
+
   const filteredStock = stock.filter((item) => {
     const term = stockSearch.trim().toLowerCase()
     const isLow = item.availableGrams <= 250
@@ -997,7 +1367,7 @@ export default function CrmGate() {
       />
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-800/10" />
 
-      <div className="mx-auto flex min-h-screen max-w-5xl flex-col px-6 py-16 sm:px-10 lg:px-12">
+      <div className="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-12 sm:px-10 lg:px-16">
         <header className="mb-10 text-center sm:text-left">
           <h1 className="text-balance text-4xl font-extrabold text-white sm:text-5xl">CRM toegang</h1>
           <p className="mt-3 text-lg text-slate-300">
@@ -1061,77 +1431,90 @@ export default function CrmGate() {
             </section>
           </div>
         ) : (
-          <section className="w-full rounded-2xl border border-white/10 bg-white/5 p-8 shadow-xl backdrop-blur">
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-              {ordersOnly ? (
-                <div className="flex items-center gap-3">
-                  <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white">
-                    Orders hub
-                  </span>
-                  <a
-                    href="/crm"
-                    className="rounded-full border border-white/20 px-3 py-2 text-xs font-semibold text-white transition hover:bg-white/10"
-                  >
-                    Naar CRM overzicht
-                  </a>
-                </div>
-              ) : (
-                <div className="flex flex-wrap items-center gap-2 rounded-full border border-white/10 bg-white/5 p-1">
-                  {[{ key: "contact", label: "Contact" }, { key: "orders", label: "Orders" }, { key: "stock", label: "Filament" }].map((t) => (
-                    <button
-                      key={t.key}
-                      type="button"
-                      onClick={() => setTab(t.key as typeof tab)}
-                      className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
-                        tab === t.key ? "bg-white text-slate-900 shadow" : "text-white/70 hover:text-white hover:bg-white/10"
-                      }`}
+          <section className="w-full rounded-2xl border border-white/10 bg-white/5 p-10 shadow-xl backdrop-blur">
+            <div className="grid gap-6 lg:grid-cols-[280px_1fr]">
+              <aside className="h-max rounded-2xl border border-white/10 bg-white/5 p-6 lg:sticky lg:top-10">
+                {ordersOnly ? (
+                  <div className="space-y-4">
+                    <span className="inline-flex rounded-full border border-white/10 bg-white/5 px-5 py-3 text-base font-semibold text-white">
+                      Orders hub
+                    </span>
+                    <Link
+                      href="/crm"
+                      className="inline-flex w-full items-center justify-center rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
                     >
-                      {t.label}
-                    </button>
-                  ))}
-                </div>
-              )}
-              <div className="flex items-center gap-2">
-                {tab === "contact" ? (
-                  <>
-                    <button
-                      type="button"
-                      onClick={exportCsv}
-                      className="rounded-lg border border-white/20 px-3 py-2 text-xs font-semibold text-white transition hover:bg-white/10"
-                    >
-                      Exporteer CSV
-                    </button>
+                      Naar CRM overzicht
+                    </Link>
+                  </div>
+                ) : (
+                  <div className="space-y-4">
+                    <p className="text-xs uppercase tracking-[0.35em] text-slate-400">Navigatie</p>
+                    <div className="flex flex-col gap-2">
+                      {[
+                        { key: "contact", label: "Contact" },
+                        { key: "orders", label: "Orders" },
+                        { key: "products", label: "Producten" },
+                        { key: "stock", label: "Filament" },
+                      ].map((t) => (
+                        <button
+                          key={t.key}
+                          type="button"
+                          onClick={() => setTab(t.key as typeof tab)}
+                          className={`w-full rounded-2xl px-5 py-3 text-left text-base font-semibold transition ${
+                            tab === t.key
+                              ? "bg-white text-slate-900 shadow"
+                              : "text-white/70 hover:text-white hover:bg-white/10"
+                          }`}
+                        >
+                          {t.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <div className="mt-6 space-y-2 border-t border-white/10 pt-5">
+                  {tab === "contact" ? (
+                    <>
+                      <button
+                        type="button"
+                        onClick={exportCsv}
+                        className="w-full rounded-lg border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+                      >
+                        Exporteer CSV
+                      </button>
+                      <a
+                        href={`${CRM_DATA_ENDPOINT}?type=logs&download=1`}
+                        className="inline-flex w-full items-center justify-center rounded-lg border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Download log
+                      </a>
+                    </>
+                  ) : null}
+                  {tab === "orders" ? (
                     <a
-                      href={`${CRM_DATA_ENDPOINT}?type=logs&download=1`}
-                      className="rounded-lg border border-white/20 px-3 py-2 text-xs font-semibold text-white transition hover:bg-white/10"
+                      href={`${CRM_DATA_ENDPOINT}?type=orders&download=1`}
+                      className="inline-flex w-full items-center justify-center rounded-lg border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Download log
+                      Download orders
                     </a>
-                  </>
-                ) : null}
-                {tab === "orders" ? (
-                  <a
-                    href={`${CRM_DATA_ENDPOINT}?type=orders&download=1`}
-                    className="rounded-lg border border-white/20 px-3 py-2 text-xs font-semibold text-white transition hover:bg-white/10"
-                    target="_blank"
-                    rel="noreferrer"
+                  ) : null}
+                  <button
+                    type="button"
+                    onClick={handleLogout}
+                    className="w-full rounded-lg border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
                   >
-                    Download orders
-                  </a>
-                ) : null}
-                <button
-                  type="button"
-                  onClick={handleLogout}
-                  className="rounded-lg border border-white/20 px-3 py-2 text-xs font-semibold text-white transition hover:bg-white/10"
-                >
-                  Afmelden
-                </button>
-              </div>
-            </div>
+                    Afmelden
+                  </button>
+                </div>
+              </aside>
 
-            {tab === "contact" ? (
+              <div className="space-y-6">
+                {tab === "contact" ? (
               <>
                 <div className="mt-6 grid gap-4 sm:grid-cols-3">
                   <div className="rounded-xl border border-white/10 bg-white/5 p-4">
@@ -1844,6 +2227,496 @@ export default function CrmGate() {
                   )}
                 </div>
               </>
+            ) : tab === "products" ? (
+              <>
+                <div className="mt-6 grid gap-4 sm:grid-cols-4">
+                  <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Totaal</p>
+                    <p className="mt-1 text-2xl font-bold text-white">{productTotals.total}</p>
+                  </div>
+                  <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Live</p>
+                    <p className="mt-1 text-2xl font-bold text-white">{productTotals.live}</p>
+                  </div>
+                  <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Verborgen</p>
+                    <p className="mt-1 text-2xl font-bold text-white">{productTotals.hidden}</p>
+                  </div>
+                  <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Verwijderd</p>
+                    <p className="mt-1 text-2xl font-bold text-white">{productTotals.deleted}</p>
+                  </div>
+                </div>
+
+                {productError ? <p className="mt-3 text-sm text-rose-300">{productError}</p> : null}
+                {productSuccess ? <p className="mt-2 text-sm text-emerald-300">{productSuccess}</p> : null}
+
+                <div className="mt-6 grid gap-4 lg:grid-cols-[1.1fr_.9fr]">
+                  <div className="rounded-xl border border-white/10 bg-black/20 p-4">
+                    <form className="grid gap-3" onSubmit={createProduct}>
+                      <div className="grid gap-3 sm:grid-cols-3">
+                        <label className="grid gap-1 text-sm font-semibold text-white">
+                          Slug
+                          <input
+                            value={productForm.slug}
+                            onChange={(e) => updateProductForm("slug", e.target.value)}
+                            required
+                            className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                            placeholder="desk-clip"
+                          />
+                        </label>
+                        <label className="grid gap-1 text-sm font-semibold text-white">
+                          Prijs (EUR)
+                          <input
+                            type="number"
+                            min={0}
+                            step="0.01"
+                            value={productForm.priceEur}
+                            onChange={(e) => updateProductForm("priceEur", e.target.value)}
+                            required
+                            className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                            placeholder="12.50"
+                          />
+                        </label>
+                        <label className="grid gap-1 text-sm font-semibold text-white">
+                          Sortering
+                          <input
+                            type="number"
+                            step="1"
+                            value={productForm.sortOrder}
+                            onChange={(e) => updateProductForm("sortOrder", e.target.value)}
+                            className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                            placeholder="10"
+                          />
+                        </label>
+                      </div>
+                      <div className="grid gap-3 sm:grid-cols-2">
+                        <label className="grid gap-1 text-sm font-semibold text-white">
+                          Naam (NL)
+                          <input
+                            value={productForm.nameNl}
+                            onChange={(e) => updateProductForm("nameNl", e.target.value)}
+                            required
+                            className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                            placeholder="Bureaublad clip"
+                          />
+                        </label>
+                        <label className="grid gap-1 text-sm font-semibold text-white">
+                          Naam (EN)
+                          <input
+                            value={productForm.nameEn}
+                            onChange={(e) => updateProductForm("nameEn", e.target.value)}
+                            required
+                            className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                            placeholder="Desk clip"
+                          />
+                        </label>
+                      </div>
+                      <div className="grid gap-3 sm:grid-cols-2">
+                        <label className="grid gap-1 text-sm font-semibold text-white">
+                          Samenvatting (NL)
+                          <textarea
+                            value={productForm.summaryNl}
+                            onChange={(e) => updateProductForm("summaryNl", e.target.value)}
+                            rows={3}
+                            required
+                            className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                            placeholder="Korte productomschrijving."
+                          />
+                        </label>
+                        <label className="grid gap-1 text-sm font-semibold text-white">
+                          Samenvatting (EN)
+                          <textarea
+                            value={productForm.summaryEn}
+                            onChange={(e) => updateProductForm("summaryEn", e.target.value)}
+                            rows={3}
+                            required
+                            className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                            placeholder="Short product summary."
+                          />
+                        </label>
+                      </div>
+                      <label className="grid gap-1 text-sm font-semibold text-white">
+                        Tags (komma-gescheiden)
+                        <input
+                          value={productForm.tags}
+                          onChange={(e) => updateProductForm("tags", e.target.value)}
+                          className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                          placeholder="desk, cable, office"
+                        />
+                      </label>
+                      <div className="grid gap-3 sm:grid-cols-2">
+                        <label className="grid gap-1 text-sm font-semibold text-white">
+                          Beschikbaarheid
+                          <select
+                            value={productForm.availability}
+                            onChange={(e) => updateProductForm("availability", e.target.value)}
+                            className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                          >
+                            {PRODUCT_AVAILABILITY_OPTIONS.map((option) => (
+                              <option key={option.value} value={option.value}>
+                                {option.label}
+                              </option>
+                            ))}
+                          </select>
+                        </label>
+                        <label className="mt-6 flex items-center gap-2 text-sm font-semibold text-white">
+                          <input
+                            type="checkbox"
+                            checked={productForm.isLive}
+                            onChange={(e) => updateProductForm("isLive", e.target.checked)}
+                            className="h-4 w-4 rounded border-white/30 bg-transparent text-indigo-400 focus:ring-indigo-400"
+                          />
+                          Publiek zichtbaar
+                        </label>
+                      </div>
+                      <div className="grid gap-3 sm:grid-cols-2">
+                        <label className="grid gap-1 text-sm font-semibold text-white">
+                          Lead time min (dagen)
+                          <input
+                            type="number"
+                            min={0}
+                            step="1"
+                            value={productForm.leadTimeMin}
+                            onChange={(e) => updateProductForm("leadTimeMin", e.target.value)}
+                            className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                            placeholder="5"
+                          />
+                        </label>
+                        <label className="grid gap-1 text-sm font-semibold text-white">
+                          Lead time max (dagen)
+                          <input
+                            type="number"
+                            min={0}
+                            step="1"
+                            value={productForm.leadTimeMax}
+                            onChange={(e) => updateProductForm("leadTimeMax", e.target.value)}
+                            className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                            placeholder="10"
+                          />
+                        </label>
+                      </div>
+                      <div className="grid gap-3 sm:grid-cols-2">
+                        <label className="grid gap-1 text-sm font-semibold text-white">
+                          Image URL
+                          <input
+                            value={productForm.imageUrl}
+                            onChange={(e) => updateProductForm("imageUrl", e.target.value)}
+                            required
+                            className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                            placeholder="/images/..."
+                          />
+                        </label>
+                        <label className="grid gap-1 text-sm font-semibold text-white">
+                          Alt (NL)
+                          <input
+                            value={productForm.imageAltNl}
+                            onChange={(e) => updateProductForm("imageAltNl", e.target.value)}
+                            required
+                            className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                            placeholder="Alt tekst"
+                          />
+                        </label>
+                      </div>
+                      <label className="grid gap-1 text-sm font-semibold text-white">
+                        Alt (EN)
+                        <input
+                          value={productForm.imageAltEn}
+                          onChange={(e) => updateProductForm("imageAltEn", e.target.value)}
+                          required
+                          className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                          placeholder="Alt text"
+                        />
+                      </label>
+                      <div className="flex items-center gap-2">
+                        <button
+                          type="submit"
+                          disabled={productSaving || !hasRequiredProductFields(productForm, true)}
+                          className="inline-flex items-center justify-center rounded-xl bg-indigo-500 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20 transition hover:-translate-y-0.5 hover:bg-indigo-400 disabled:opacity-60"
+                        >
+                          {productSaving ? "Opslaan..." : "Product toevoegen"}
+                        </button>
+                        <p className="text-xs text-slate-400">Slug blijft vast na aanmaken.</p>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div className="rounded-xl border border-white/10 bg-black/20 p-4">
+                    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                      <input
+                        type="search"
+                        placeholder="Filter op slug of naam"
+                        value={productSearch}
+                        onChange={(e) => setProductSearch(e.target.value)}
+                        className="w-full rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20 sm:max-w-sm"
+                      />
+                      <div className="flex flex-wrap items-center gap-3">
+                        <label className="flex items-center gap-2 text-xs font-semibold text-white">
+                          <input
+                            type="checkbox"
+                            checked={showDeletedProducts}
+                            onChange={(e) => setShowDeletedProducts(e.target.checked)}
+                            className="h-4 w-4 rounded border-white/30 bg-transparent text-indigo-400 focus:ring-indigo-400"
+                          />
+                          Toon verwijderd
+                        </label>
+                        <button
+                          type="button"
+                          onClick={reloadProducts}
+                          className="rounded-lg border border-white/20 px-3 py-2 text-xs font-semibold text-white transition hover:bg-white/10"
+                        >
+                          Refresh
+                        </button>
+                      </div>
+                    </div>
+                    <div className="mt-4 space-y-3">
+                      {productLoading ? (
+                        <p className="text-sm text-slate-300">Laden...</p>
+                      ) : filteredProducts.length === 0 ? (
+                        <p className="text-sm text-slate-300">Geen producten gevonden.</p>
+                      ) : (
+                        filteredProducts.map((product) => {
+                          const isDeleted = product.isDeleted
+                          const canSave = !isDeleted && hasRequiredProductFields(product, true)
+                          const fieldDisabled = productSaving || isDeleted
+                          return (
+                            <div
+                              key={product.slug}
+                              className="rounded-lg border border-white/10 bg-white/5 p-4 shadow-sm shadow-black/30"
+                            >
+                              <div className="flex flex-wrap items-center justify-between gap-2">
+                                <div>
+                                  <p className="text-sm font-semibold text-white">
+                                    {product.nameNl || product.slug}
+                                  </p>
+                                  <p className="text-xs text-slate-400">{product.slug}</p>
+                                </div>
+                                <div className="flex flex-wrap items-center gap-2">
+                                  {isDeleted ? (
+                                    <span className="rounded-full border border-rose-400/60 bg-rose-500/10 px-2 py-0.5 text-[11px] font-semibold text-rose-100">
+                                      Verwijderd
+                                    </span>
+                                  ) : (
+                                    <span
+                                      className={`rounded-full border px-2 py-0.5 text-[11px] font-semibold ${
+                                        product.isLive
+                                          ? "border-emerald-400/60 bg-emerald-400/10 text-emerald-100"
+                                          : "border-white/20 bg-white/5 text-white/70"
+                                      }`}
+                                    >
+                                      {product.isLive ? "Live" : "Verborgen"}
+                                    </span>
+                                  )}
+                                  <button
+                                    type="button"
+                                    onClick={() => duplicateProduct(product.slug)}
+                                    disabled={productSaving}
+                                    className="rounded-md border border-white/20 px-2 py-1 text-[11px] font-semibold text-white transition hover:bg-white/10 disabled:opacity-60"
+                                  >
+                                    Dupliceer
+                                  </button>
+                                  {isDeleted ? (
+                                    <button
+                                      type="button"
+                                      onClick={() => restoreProduct(product.slug)}
+                                      disabled={productSaving}
+                                      className="rounded-md border border-emerald-400/40 px-2 py-1 text-[11px] font-semibold text-emerald-100 transition hover:bg-emerald-500/20 disabled:opacity-60"
+                                    >
+                                      Herstel
+                                    </button>
+                                  ) : (
+                                    <>
+                                      <button
+                                        type="button"
+                                        onClick={() => saveProduct(product.slug)}
+                                        disabled={productSaving || !canSave}
+                                        className="rounded-md border border-white/20 px-2 py-1 text-[11px] font-semibold text-white transition hover:bg-white/10 disabled:opacity-60"
+                                      >
+                                        Opslaan
+                                      </button>
+                                      <button
+                                        type="button"
+                                        onClick={() => toggleProductVisibility(product.slug, !product.isLive)}
+                                        disabled={productSaving}
+                                        className="rounded-md border border-white/20 px-2 py-1 text-[11px] font-semibold text-white transition hover:bg-white/10 disabled:opacity-60"
+                                      >
+                                        {product.isLive ? "Verberg" : "Publiceer"}
+                                      </button>
+                                      <button
+                                        type="button"
+                                        onClick={() => softDeleteProduct(product.slug)}
+                                        disabled={productSaving}
+                                        className="rounded-md border border-amber-400/40 px-2 py-1 text-[11px] font-semibold text-amber-100 transition hover:bg-amber-500/20 disabled:opacity-60"
+                                      >
+                                        Verwijder (soft)
+                                      </button>
+                                    </>
+                                  )}
+                                  <button
+                                    type="button"
+                                    onClick={() => deleteProduct(product.slug)}
+                                    disabled={productSaving}
+                                    className="rounded-md border border-rose-400/40 px-2 py-1 text-[11px] font-semibold text-rose-200 transition hover:bg-rose-500/20 disabled:opacity-60"
+                                  >
+                                    Permanent verwijderen
+                                  </button>
+                                </div>
+                              </div>
+                              <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                                <label className="grid gap-1 text-xs font-semibold text-slate-200">
+                                  Naam (NL)
+                                  <input
+                                    value={product.nameNl}
+                                    onChange={(e) => updateProductField(product.slug, "nameNl", e.target.value)}
+                                    disabled={fieldDisabled}
+                                    className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                                  />
+                                </label>
+                                <label className="grid gap-1 text-xs font-semibold text-slate-200">
+                                  Naam (EN)
+                                  <input
+                                    value={product.nameEn}
+                                    onChange={(e) => updateProductField(product.slug, "nameEn", e.target.value)}
+                                    disabled={fieldDisabled}
+                                    className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                                  />
+                                </label>
+                              </div>
+                              <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                                <label className="grid gap-1 text-xs font-semibold text-slate-200">
+                                  Samenvatting (NL)
+                                  <textarea
+                                    value={product.summaryNl}
+                                    onChange={(e) => updateProductField(product.slug, "summaryNl", e.target.value)}
+                                    disabled={fieldDisabled}
+                                    rows={2}
+                                    className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                                  />
+                                </label>
+                                <label className="grid gap-1 text-xs font-semibold text-slate-200">
+                                  Samenvatting (EN)
+                                  <textarea
+                                    value={product.summaryEn}
+                                    onChange={(e) => updateProductField(product.slug, "summaryEn", e.target.value)}
+                                    disabled={fieldDisabled}
+                                    rows={2}
+                                    className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                                  />
+                                </label>
+                              </div>
+                              <label className="mt-3 grid gap-1 text-xs font-semibold text-slate-200">
+                                Tags (komma-gescheiden)
+                                <input
+                                  value={product.tags}
+                                  onChange={(e) => updateProductField(product.slug, "tags", e.target.value)}
+                                  disabled={fieldDisabled}
+                                  className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                                  placeholder="desk, cable, office"
+                                />
+                              </label>
+                              <div className="mt-3 grid gap-3 sm:grid-cols-3">
+                                <label className="grid gap-1 text-xs font-semibold text-slate-200">
+                                  Prijs (EUR)
+                                  <input
+                                    type="number"
+                                    min={0}
+                                    step="0.01"
+                                    value={product.priceEur}
+                                    onChange={(e) => updateProductField(product.slug, "priceEur", e.target.value)}
+                                    disabled={fieldDisabled}
+                                    className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                                  />
+                                </label>
+                                <label className="grid gap-1 text-xs font-semibold text-slate-200">
+                                  Beschikbaarheid
+                                  <select
+                                    value={product.availability}
+                                    onChange={(e) => updateProductField(product.slug, "availability", e.target.value)}
+                                    disabled={fieldDisabled}
+                                    className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                                  >
+                                    {PRODUCT_AVAILABILITY_OPTIONS.map((option) => (
+                                      <option key={option.value} value={option.value}>
+                                        {option.label}
+                                      </option>
+                                    ))}
+                                  </select>
+                                </label>
+                                <label className="grid gap-1 text-xs font-semibold text-slate-200">
+                                  Sortering
+                                  <input
+                                    type="number"
+                                    step="1"
+                                    value={product.sortOrder}
+                                    onChange={(e) => updateProductField(product.slug, "sortOrder", e.target.value)}
+                                    disabled={fieldDisabled}
+                                    className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                                  />
+                                </label>
+                              </div>
+                              <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                                <label className="grid gap-1 text-xs font-semibold text-slate-200">
+                                  Lead time min
+                                  <input
+                                    type="number"
+                                    min={0}
+                                    step="1"
+                                    value={product.leadTimeMin}
+                                    onChange={(e) => updateProductField(product.slug, "leadTimeMin", e.target.value)}
+                                    disabled={fieldDisabled}
+                                    className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                                  />
+                                </label>
+                                <label className="grid gap-1 text-xs font-semibold text-slate-200">
+                                  Lead time max
+                                  <input
+                                    type="number"
+                                    min={0}
+                                    step="1"
+                                    value={product.leadTimeMax}
+                                    onChange={(e) => updateProductField(product.slug, "leadTimeMax", e.target.value)}
+                                    disabled={fieldDisabled}
+                                    className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                                  />
+                                </label>
+                              </div>
+                              <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                                <label className="grid gap-1 text-xs font-semibold text-slate-200">
+                                  Image URL
+                                  <input
+                                    value={product.imageUrl}
+                                    onChange={(e) => updateProductField(product.slug, "imageUrl", e.target.value)}
+                                    disabled={fieldDisabled}
+                                    className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                                  />
+                                </label>
+                                <label className="grid gap-1 text-xs font-semibold text-slate-200">
+                                  Alt (NL)
+                                  <input
+                                    value={product.imageAltNl}
+                                    onChange={(e) => updateProductField(product.slug, "imageAltNl", e.target.value)}
+                                    disabled={fieldDisabled}
+                                    className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                                  />
+                                </label>
+                              </div>
+                              <label className="mt-3 grid gap-1 text-xs font-semibold text-slate-200">
+                                Alt (EN)
+                                <input
+                                  value={product.imageAltEn}
+                                  onChange={(e) => updateProductField(product.slug, "imageAltEn", e.target.value)}
+                                  disabled={fieldDisabled}
+                                  className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20"
+                                />
+                              </label>
+                            </div>
+                          )
+                        })
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </>
             ) : (
               <>
                 <div className="mt-6 grid gap-4 sm:grid-cols-3">
@@ -2089,6 +2962,8 @@ export default function CrmGate() {
                 </div>
               </>
             )}
+              </div>
+            </div>
           </section>
         )}
       </div>

@@ -5,11 +5,16 @@ import ShimmerButton from "@/components/ShimmerButton"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import ShopCartView from "@/components/ShopCartView"
 import { SITE } from "@/lib/seo"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
+
+const IS_LIVE = SHOP_INDEXABLE
 
 export const metadata: Metadata = {
-  title: "Winkelmandje in voorbereiding | X3DPrints",
-  description:
-    "Het winkelmandje is in voorbereiding. Vraag intussen advies of start met materiaalkeuze. Levering in Belgie: EUR 7.50 tot 3 kg of afhalen op afspraak.",
+  title: IS_LIVE ? "Winkelmandje | X3DPrints" : "Winkelmandje in voorbereiding | X3DPrints",
+  description: IS_LIVE
+    ? "Controleer je items en rond je bestelling af."
+    : "Het winkelmandje is in voorbereiding. Vraag intussen advies of start met materiaalkeuze. Levering in Belgie: EUR 7.50 tot 3 kg of afhalen op afspraak.",
+  robots: { index: false, follow: false },
   alternates: {
     canonical: `${SITE.url}/shop/cart/`,
     languages: {
@@ -19,8 +24,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Winkelmandje (in voorbereiding)",
-    description: "Shopfuncties worden binnenkort geactiveerd.",
+    title: IS_LIVE ? "Winkelmandje" : "Winkelmandje (in voorbereiding)",
+    description: IS_LIVE ? "Controleer je items en rond je bestelling af." : "Shopfuncties worden binnenkort geactiveerd.",
     url: `${SITE.url}/shop/cart/`,
     images: [{ url: SITE.ogImage, width: 1200, height: 630 }],
     locale: "nl_BE",
@@ -28,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Winkelmandje | X3DPrints",
-    description: "Shopfuncties worden binnenkort geactiveerd.",
+    title: IS_LIVE ? "Winkelmandje | X3DPrints" : "Winkelmandje (in voorbereiding) | X3DPrints",
+    description: IS_LIVE ? "Controleer je items en rond je bestelling af." : "Shopfuncties worden binnenkort geactiveerd.",
     images: [SITE.ogImage],
   },
 }
@@ -42,11 +47,12 @@ export default function ShopCartPage() {
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
             <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
-              Winkelmandje is in voorbereiding
+              {IS_LIVE ? "Winkelmandje" : "Winkelmandje is in voorbereiding"}
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-slate-600">
-              Het winkelmandje wordt geactiveerd zodra de eerste producten live staan. Tot dan kan
-              je advies vragen of materiaalkeuze bespreken.
+              {IS_LIVE
+                ? "Controleer je items en ga verder naar checkout."
+                : "Het winkelmandje wordt geactiveerd zodra de eerste producten live staan. Tot dan kan je advies vragen of materiaalkeuze bespreken."}
             </p>
           </Reveal>
           <div className="mt-8 flex flex-wrap gap-3">

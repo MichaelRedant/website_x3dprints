@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Checkout | X3DPrints",
   description:
     "Rond je bestelling af. Kies verzendmethode en ga veilig naar betaling. Levering in Belgie: EUR 7.50 tot 3 kg of afhalen op afspraak.",
+  robots: { index: false, follow: false },
   alternates: {
     canonical: `${SITE.url}/shop/checkout/`,
     languages: {
