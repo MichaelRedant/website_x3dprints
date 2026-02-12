@@ -1,374 +1,108 @@
-# SEO-First Shop Roadmap (Next.js static + PHP BFF)
+# Shop & CRM Roadmap (Update 2026-02-12)
 
-## 1. Vision & Principles
-- The shop is an extension of the existing site, not a replacement.
-- Content and blog remain the primary acquisition channels; shop supports conversion.
-- SEO-first commerce principles:
-  - Zero URL changes to existing routes.
-  - Additive routing only; no refactors of current paths.
-  - Preserve all canonicals and internal links as-is.
-  - Only high-value pages become indexable; utility pages stay noindex.
-- Must NEVER do (SEO anti-patterns):
-  - Renaming, redirecting, or consolidating existing URLs.
-  - Replacing blog or pricing pages with product pages.
-  - Indexing cart, checkout, search, or filter pages.
-  - Generating duplicate product pages per filter or variant.
-  - Adding Product schema to non-product pages.
-  - Publishing thin or template-only product pages.
-  - Creating multiple indexable URLs for the same SKU.
+## 1. Doel en scope
+Deze roadmap stuurt de uitbouw van de webshop en CRM zonder SEO-regressies of breuken in de huidige site.
 
-## 2. Non-Negotiable SEO Constraints
-- URL stability: all current URLs remain unchanged and reachable.
-- Canonical integrity: current canonicals remain; shop pages are self-canonical.
-- Internal link preservation: no removal or rerouting of existing links.
-- Crawl budget protection: keep new indexable routes minimal.
-- Duplicate content prevention: one product page per canonical SKU.
-- Filter/indexing strategy: parameterized filters are `noindex, follow` and use stable canonicals; also disallow in robots.
-- Pagination strategy: page 2+ is `noindex, follow` with canonical to page 1 unless explicitly approved.
-- Parameter handling: only whitelisted params; all others stripped in canonical URLs.
-- Sitemap discipline: only indexable URLs are listed; cart/checkout/search/filter never included.
-- Product vs blog intent separation: product intent stays in /shop only.
+- Shop blijft een add-on op de bestaande website, geen vervanging.
+- Architectuur blijft: Next.js static export + PHP BFF + MySQL + Mollie.
+- CRM-login flow blijft ongewijzigd (`/crm-auth.php`, session cookie, `CRM_PASSWORD_HASH`).
+- NL + EN shoproutes blijven parallel ondersteund.
 
-## 3. High-Level Architecture
-- Runtime:
-  - Next.js frontend (static export) for all shop UI.
-  - PHP BFF (`/bff`) on shared hosting for catalog, carts, checkout, orders.
-  - MySQL for shop data (products, carts, orders).
-  - Mollie handles payments via redirect + webhook callbacks.
-  - Hosting constraint: no Node runtime in production.
-- BFF is isolated:
-  - Not publicly crawled or indexed.
-  - Accessed by the frontend only; CORS allowlist enforced.
-  - Robots disallow and auth on any public utility endpoints.
-- Logical flow:
-  - User -> Next.js (static) -> PHP BFF -> Mollie -> PHP BFF -> Next.js.
-- Separation of concerns:
-  - Next.js owns routing, rendering, SEO, and content.
-  - PHP BFF owns catalog, carts, orders, payment orchestration, CRM data.
+## 2. Huidige status (as-is)
 
-## 4. Shop Scope Definition (MVP First)
-Phase 1 scope (minimal footprint):
-- Standard fixed-price products with simple descriptions.
-- Made-to-order allowed only with a fixed lead time.
-- No file upload or custom quote logic.
-- No instant pricing or dynamic configurators.
-- Variants only if strictly necessary (e.g., size or color).
-- Simple shipping rules (one region, flat rate or single tier).
-- Launch sequencing: start with 1 product later; keep /shop noindex until first SKU is live.
-- Minimum content standards per product page (unique copy, specs, images).
+### 2.1 Shop frontend
+- [x] Shop index NL/EN: `/shop`, `/en/shop`
+- [x] PDP NL/EN: `/shop/[slug]`, `/en/shop/[slug]`
+- [x] Cart + checkout NL/EN (noindex): `/shop/cart`, `/shop/checkout`, EN equivalenten
+- [x] Productlist met zoek/filter/sort + quantity + add-to-cart
+- [x] Cart/checkout flow met live BFF mode + local demo fallback
+- [x] Order success notice + ordercode copy
+- [x] Copywriting geoptimaliseerd over listing/PDP/cart/checkout
 
-Out of scope in Phase 1 (and why):
-- Upload-to-print: high operational and SEO complexity.
-- Dynamic pricing calculators: risk of thin content and crawl bloat.
-- Complex variants and bundles: increases duplicate content risk.
-- Subscriptions, gift cards, loyalty: not required for MVP revenue.
-- Multi-currency or multi-warehouse: adds operational overhead early.
+### 2.2 SEO en indexatie
+- [x] `SHOP_INDEXABLE` toggle in `content/shop-products.ts`
+- [x] Noindex policy in beide shop layouts (`app/(pages)/shop/layout.tsx`, `app/en/(pages)/shop/layout.tsx`)
+- [x] Product schema + breadcrumb schema op PDP
+- [x] ItemList schema op shop listing (NL + EN)
+- [x] Robots disallow voor cart/checkout/search/param-URL's
+- [x] Sitemap ondersteunt conditionele opname van shoproutes wanneer indexable
 
-## 5. SEO-Safe URL Strategy
-- Allowed routes:
-  - `/shop`
-  - `/shop/category/[slug]` (optional in MVP)
-  - `/shop/[slug]` (product detail)
-  - `/shop/cart` (noindex)
-  - `/shop/checkout` (noindex)
-  - EN equivalents under `/en/shop`, `/en/shop/[slug]`, `/en/shop/cart`, `/en/shop/checkout`.
-- Forbidden routes:
-  - `/products`, `/store`, or any rewrite of existing paths.
-  - Indexable search or filter URLs (`/shop?color=...`).
-  - Duplicate product URLs per variant or material.
-- Coexistence with existing pages:
-  - Blog, pricing, materials, and service pages remain unchanged.
-  - Product pages never replace or canonicalize to content pages.
-- Slug governance:
-  - Stable, human-readable slugs; no changes after publish unless unavoidable.
-  - If a slug changes, use a permanent redirect and update internal links.
-- Internal linking:
-  - Blog -> shop links are contextual and optional.
-  - Shop -> blog links only when editorially relevant.
-  - No forced redirects from content to shop.
+### 2.3 BFF en checkout
+- [x] Product endpoints, cart lifecycle, checkout endpoint
+- [x] Mollie redirect flow + webhook pad
+- [x] Shipping methods: `be_flat` + `pickup`
+- [x] Order opslag + resend email via CRM
 
-## 6. Structured Data & Indexation Strategy
-- Product schema only on product detail pages.
-- Category and listing pages use generic ItemList or none.
-- Include Offer fields only when price and availability are stable.
-- Avoid schema conflicts:
-  - One primary schema type per page.
-  - Article schema remains exclusive to blog pages.
-- Use site JSON-LD helpers for consistency and QA.
-- BreadcrumbList for product pages when categories exist.
-- Reviews/ratings schema only if real, verified reviews exist.
-- Indexation rules:
-  - Product pages indexable with self-canonical.
-  - Cart, checkout, account pages noindex and disallow in robots.
+### 2.4 CRM admin
+- [x] Sidebar + hero metrics + toast stack componenten
+- [x] Product CRUD: create/update/visibility/inline-update/soft-delete/restore/duplicate/delete
+- [x] Orders: create/update/archive/resend-email + timeline
+- [x] Dashboard metrics endpoint (`type=dashboard-metrics`)
+- [ ] Klantenmodule (`crm-customers.php` + UI)
+- [ ] Strikte order status transition guards server-side
+- [ ] Audit log tabel en UI-haakjes
 
-## 7. Phased Roadmap
-### Phase 0 - Pre-flight & Safety Checks
-- Baseline current sitemap, index counts, and top landing pages.
-- Freeze existing routes and canonicals in a documented registry.
-- Define allowed shop routes and robots rules before any merge.
-- Stand up staging with separate crawler rules for the BFF.
-- Validate that build and dev do not depend on live commerce APIs.
-- Define rollout gates: max index delta, 404 rate, LCP budget, and rollback triggers.
-- Define product content standards and metadata templates.
-- Set up parameter handling rules and sitemap partitioning.
-- Confirm bilingual shop routing (nl + en) and hreflang strategy.
+## 3. Niet-onderhandelbare guardrails
+- Geen bestaande URL's hernoemen, redirecten of samenvoegen.
+- Geen indexatie van cart/checkout/filter/search/account routes.
+- Slechts 1 canonieke URL per productslug.
+- Geen shopschema's op niet-shoppagina's.
+- Geen Node runtime dependency in productiepad.
 
-### Phase 1 - Minimal Shop MVP
-- Features:
-  - Basic catalog, product detail pages, cart, checkout.
-  - Single currency (EUR), BE-only shipping.
-  - Shipping: EUR 7.50 up to 3kg, pickup by appointment (EUR 0).
-  - Internal finance note: VAT exemption (kleine onderneming). Do not display this on the storefront UI.
-  - Mollie redirect + webhook order confirmation + order emails.
-- SEO guarantees:
-  - Zero changes to existing URLs and canonicals.
-  - New routes limited to `/shop` and product detail pages.
-  - Cart/checkout remain noindex.
-- Technical deliverables:
-  - PHP BFF (`/bff`) with MySQL schema and Mollie integration.
-  - Next.js shop pages (NL/EN) with static export + BFF fetch.
-  - Product seed/import pipeline (SQL or simple seed).
-  - Order confirmation emails (admin + customer) via SMTP.
-  - CRM login for contact logs, replies, stock toggles, orders view.
-  - Monitoring for 404s, canonicals, and index bloat.
-  - Product lifecycle rules: out-of-stock, discontinued, and merged SKU handling.
-  - Sitemap generation for shop URLs only, with strict inclusion rules.
-  - Metadata, OpenGraph, and canonical QA checks for new pages.
+## 4. Belangrijkste open punten (prioriteit)
 
-### Phase 2 - Variants & Logistics
-- Add limited variants (material, color, finish).
-- Lead time logic for made-to-order items.
-- Stock vs made-to-order rules with clear availability messaging.
-- Shipping zones if needed, still minimal and SEO-safe.
-- If category pages become indexable, require unique editorial content and breadcrumbs.
+### P0 - launchkritisch
+1. Beslis live-indexatie moment:
+   - `SHOP_INDEXABLE` staat nu op `false` terwijl demo SKU's op `isLive: true` staan.
+   - Voor livegang: echte SKU-content klaarzetten en pas dan indexatie aan.
+2. Harden order workflow in CRM:
+   - server-side whitelist voor status transitions (nu te vrij).
+3. Klantenbeheer toevoegen:
+   - minimaal read/search + koppeling op order-email.
+4. Productdata productieklaar maken:
+   - demo-copy vervangen door echte SKU-copy, beelden, specs, pricing.
 
-### Phase 3 - Conversion Optimization
-- PDP UX improvements: better images, FAQs, trust signals.
-- Cross-linking strategy from high-performing blog posts.
-- Measurement: conversion funnel events without page duplication.
-- A/B testing only on non-indexed or canonicalized pages.
-- Reviews or UGC only if fully moderated and schema-safe.
+### P1 - operationeel belangrijk
+1. CRM datamodel uitbreiden met categorie/SKU/voorraad-aantallen.
+2. Audit trail voor product/order mutaties.
+3. E2E monitoring op checkout/webhook/mail + simpele alerting.
 
-### Phase 4 - Advanced Commerce (Future)
-- Upload-to-print, automated pricing, and B2B logic.
-- Deferred due to high complexity and SEO risk.
-- Requires a separate discovery phase and dedicated QA for crawl impact.
+### P2 - optimalisatie
+1. FAQ op `/shop` + schema.
+2. Cross-linking vanuit topblogposts naar relevante SKU's.
+3. Conversie-events en funnel dashboards.
 
-## 8. Local Development & Build Safety
-- `npm run dev` runs Next.js locally; PHP BFF must be served separately for CRM/login.
-- `npm run build` must not call live Mollie endpoints.
-- Use environment variables for API endpoints and secrets; fail fast if missing.
-- All payment calls occur at runtime only (BFF routes).
-- Build-time data uses stubs or cached fixtures where required.
-- CI must block builds that point to production commerce endpoints.
-- Production stays static-exported; no Next API/server actions in production runtime.
+## 5. Databasetraject
 
-## 8.1 Go-live checklist (BFF + Mollie)
-- [ ] Update BFF `.env` for production:
-  - `SHOP_SITE_URL=https://x3dprints.be`
-  - `BFF_BASE_URL=https://api.x3dprints.be`
-  - `MOLLIE_API_KEY=<live key when ready>`
-  - `APP_DEBUG=false`
-  - Local dev: set `SHOP_SITE_URL=auto` (or leave empty) to use current host.
-- [ ] Set CRM + mail in BFF `.env`:
-  - `CRM_PASSWORD=<strong password>`
-  - `SMTP_HOST/PORT/USER/PASS`, `MAIL_FROM`, `MAIL_TO`
-- [ ] Ensure DB schema imported (`bff/schema.sql`) and demo products exist.
-- [ ] Verify BFF health: `https://api.x3dprints.be/index.php?path=/health&debug=1`.
-- [ ] Build/export on main machine (`npm run build`) and upload `out/`.
-- [ ] Upload `public/crm-*.php`, `public/material-stock.php`, `public/contact-reply.php`, `public/storage/.htaccess`.
-- [ ] Confirm `/shop/checkout/` exists on the live site.
-- [ ] End-to-end test: add item -> checkout -> Mollie redirect -> back to `/shop/checkout/?order=...`.
+### 5.1 Basisschema (reeds actief)
+Actieve tabellen in scope:
+- `shop_products`
+- `shop_carts`
+- `shop_cart_lines`
+- `shop_orders`
+- `shop_shipping_methods`
 
-## 9. Risk Register
-| Risk | Likelihood | Impact | Mitigation |
-| --- | --- | --- | --- |
-| Accidental URL changes to existing pages | Low | Critical | Route freeze registry and CI checks |
-| Index bloat from filters/search | Medium | High | Noindex + robots disallow for filters |
-| Canonical mistakes on product pages | Medium | High | Canonical tests + sitemap validation |
-| Duplicate product pages per variant | Medium | High | Single canonical SKU policy |
-| Crawl budget dilution | Medium | High | Minimal new routes and clean sitemap |
-| Thin product content | Medium | Medium | Minimum content standards per PDP |
-| Performance regression on shop pages | Medium | High | LCP budgets and image optimization |
-| BFF publicly crawled | Low | High | Isolate backend and restrict routes |
-| Mollie webhook failures | Medium | High | Retries, logging, and manual reconciliation |
-| Inventory mismatch | Medium | Medium | Periodic sync jobs and alerts |
-| Robots or sitemap misconfig | Medium | High | Pre-merge checks and staging validation |
-| Parameter explosion in URLs | Medium | High | Whitelisted params and canonical stripping |
-| Duplicate titles/meta descriptions | Medium | Medium | Metadata QA and content templates |
+Belangrijke actieve velden:
+- Product archive flow: `shop_products.is_deleted`
+- Product tags: `shop_products.tags`
+- Orders: `locale`, `shipping_method_id`, `total_cents`, `mollie_payment_id`, `created_at`
 
-## 10. Success Metrics
-- SEO safety:
-  - No ranking loss for top 50 existing landing pages.
-  - Index count increases only by approved shop URLs.
-  - Zero new 404s on existing pages.
-  - Crawl stats stable (no sudden spikes).
-  - Canonical mismatch rate < 1%.
-  - Coverage errors in Search Console do not increase.
-- Conversion:
-  - Checkout completion rate.
-  - Add-to-cart rate from product pages.
-  - Revenue per visit from shop entry pages.
-- Engagement:
-  - CTR from blog to shop pages.
-  - Time on product pages and scroll depth.
-- Technical:
-  - LCP < 2.5s on shop pages.
-  - Error rate < 1% on checkout.
-  - Webhook success rate > 99%.
+### 5.2 Aanbevolen volgende migraties (voor CRM v2)
+Voer enkel uit na pre-checks in staging.
 
-## 11. Feasibility Check
-- Feasible with current stack and constraints if routes remain additive.
-- Primary dependencies: clean product data, stable slugs, and webhook reliability.
-- Highest risk area is SEO integrity; mitigated by strict routing and robots rules.
-- MVP can be delivered incrementally without touching existing pages.
-
-## 12. Repo Scan Summary (current repo)
-- `next.config.ts` uses `output: "export"`, `trailingSlash: true`, and unoptimized images.
-- `app/robots.ts` currently only allows `/` and `/en` and disallows `/api` + `/crm`.
-- `app/sitemap.ts` is explicit and does not include any `/shop` routes yet.
-- JSON-LD helper factories are centralized in `lib/seo.ts`.
-- Related-links mappings are centralized in `lib/seo-related-links.ts`.
-- `app/api/contact/route.ts` exists but requires Node runtime (not compatible with static-only production).
-- SEO checks already exist in `package.json` (`npm run check:seo`).
-- PHP BFF lives in `/bff` with MySQL schema + Mollie integration.
-- CRM endpoints are PHP scripts in `/public` and require `CRM_PASSWORD` in `bff/.env`.
-
-## 13. Backlog (static export, BE, EN, VAT exempt)
-### Phase 0 - Guardrails & Decisions
-- [ ] Add shop route registry + indexation rules; update robots for `/shop/cart`, `/shop/checkout`, filters/params.
-- [ ] Extend sitemap generation for indexable shop URLs only (exclude cart/checkout).
-- [ ] Add Product JSON-LD helper in `lib/seo.ts` and wire schema tests.
-- [x] Define BFF endpoints + env vars; ensure build-time uses stubs/fixtures.
-- [x] Confirm bilingual `/shop` + `/en/shop` routing and hreflang mapping.
-
-### Phase 1 - MVP (no product live)
-- [x] Stand up PHP BFF + MySQL + Mollie; restrict public access.
-- [x] Configure BE-only shipping: EUR 7.50 up to 3kg; pickup by appointment EUR 0.
-- [x] Configure VAT exempt: no tax; internal note only (do not display on storefront).
-- [x] Implement static shop pages (NL/EN): `/shop`, `/shop/[slug]`, `/shop/cart`, `/shop/checkout`.
-- [ ] Keep `/shop` and product pages `noindex` until first SKU is live; always `noindex` cart/checkout.
-- [x] Add product seed/import pipeline (SQL seed) + content template (unique copy/specs/images).
-- [x] Add order confirmation email (admin + customer) via SMTP.
-- [x] Add CRM login + orders view.
-- [ ] Add monitoring for canonicals, 404s, and webhook failures.
-
-### Phase 2 - First product live
-- [ ] Add product content + assets; lock slug.
-- [ ] Remove `noindex` from `/shop` + product page; add to sitemap.
-- [ ] Run SEO checks + build; verify index delta and canonical integrity.
-
-## 14. BFF API Contract (draft)
-Base URL: separate backend service (no browser access). CORS allowlist = x3dprints.be only.
-
-### Endpoints (public to Next)
-- `GET /health` -> `{ ok: true, version }`
-- `GET /shop/products?locale=nl|en` -> `{ products: [{ slug, name, summary, price: { amount: number, currency: "EUR", vatApplicable: false }, availability, image }] }`
-- `GET /shop/products/{slug}?locale=nl|en` -> `{ product }` (same shape as list)
-- `POST /shop/cart` -> `{ cartId, currency: "EUR", lines: [], totals, shippingMethods }`
-- `POST /shop/cart/{cartId}/lines` -> `{ lineId, productSlug, quantity, totals }`
-- `PATCH /shop/cart/{cartId}/lines/{lineId}` -> `{ lineId, quantity, totals }`
-- `DELETE /shop/cart/{cartId}/lines/{lineId}` -> `{ cartId, totals }`
-- `POST /shop/checkout` -> `{ checkoutUrl, orderCode }`
-
-### Shipping methods
-- `be_flat` -> `EUR 7.50` (<= 3 kg), `area: "BE"`
-- `pickup` -> `EUR 0.00`, `label: "Afhalen op afspraak"`
-
-### Webhooks (Mollie -> BFF)
-- `POST /shop/webhooks/mollie` -> `{ ok: true }` (verify signature + idempotency key)
-
-### Common rules
-- All prices in EUR. Internal VAT exemption applies; keep storefront copy VAT-neutral.
-- Product slugs are stable; no duplicate URLs per variant.
-
-## 15. Product Seed Template (content-first)
-- Single source of truth: `content/shop-products.ts` (NL + EN fields).
-- `SHOP_INDEXABLE` stays `false` until first SKU is live.
-- `SHOP_PRODUCT_SLUGS` only includes `isLive: true` products.
-
-## 16. Shop SEO Audit (2026-02-11)
-Scope: `/shop`, `/shop/[slug]`, `/shop/cart`, `/shop/checkout` and EN equivalents. Noindex ignored for assessment.
-
-### Key positives
-- Metadata, canonical, and hreflang are present on `/shop` and `/shop/[slug]`.
-- Product pages include Product + BreadcrumbList JSON-LD via helpers.
-- ReadMoreLinks + CTAs keep internal linking consistent.
-- Product images have localized alt text from data.
-
-### Gaps & improvements
-- Shop listing has no ItemList schema; add a helper and emit ItemList with product URLs.
-- `/shop` routes are not in `app/sitemap.ts` when indexable; add them when live.
-- `app/en/(pages)/shop/layout.tsx` hard-codes noindex; should mirror `SHOP_INDEXABLE`.
-- Product metadata depends on `summary`; empty summaries can cause duplicate descriptions.
-- Product schema lacks shipping rate and price-valid-until fields (optional, but helpful).
-- No shop FAQ on `/shop` or PDPs; add a small FAQ + `buildFaqPageSchema`.
-- Product copy is thin (demo placeholders); add unique descriptions/specs before indexing.
-
-### Priority actions
-P0
-- Add ItemList schema on `/shop` (NL+EN).
-- Add `/shop` + product slugs to sitemap when indexable.
-- Mirror `SHOP_INDEXABLE` in EN shop layout.
-- Enforce non-empty product summaries in `content/shop-products.ts` or BFF.
-
-P1
-- Add FAQ section on `/shop` with schema helpers.
-- Add shipping/pickup policy content on shop index or PDPs.
-
-P2
-- Expand product content depth (specs, use-case, materials, images).
-- Add contextual links from relevant blog/organizers pages to top shop SKUs.
-
-## 17. CRM Admin v2 Blueprint (login unchanged)
-Goal: redesign `/crm` into a widescreen-first webshop admin panel with complete CRUD for products, orders, and customers, while keeping current authentication behavior intact.
-
-### 17.1 Non-negotiable compatibility rules
-- Keep existing CRM login flow unchanged:
-  - `POST/GET/DELETE /crm-auth.php`
-  - session cookie `x3dprints_crm`
-  - password verification via `CRM_PASSWORD_HASH`
-  - existing IP-based rate limiting (`crm-auth-rate.json`)
-- Keep current auth guard behavior:
-  - frontend checks `GET /crm-auth.php` for `{ authed: true|false }`
-  - all CRM data endpoints continue to call `crmRequireAuth()`
-- Keep `/crm` non-indexable:
-  - route blocked in `robots.ts`
-  - `X-Robots-Tag: noindex, nofollow` on CRM PHP endpoints
-
-### 17.2 Target backend architecture (PHP BFF-first)
-- Pattern:
-  - UI (`app/(pages)/crm/page.tsx`) -> CRM PHP endpoints (`public/crm-*.php`) -> MySQL + JSON meta files.
-- Keep current endpoints and extend them incrementally:
-  - `/crm-data.php` for dashboard/listing reads + exports.
-  - `/crm-products.php` for product CRUD.
-  - `/crm-orders.php` for order status + manual order ops.
-  - new `/crm-customers.php` for customer CRUD/read history.
-- Keep state-changing calls auditable:
-  - add audit trail table for product/order/customer changes.
-  - append timeline records on every order status change.
-
-### 17.3 Suggested directory split for maintainability
-Current `app/(pages)/crm/page.tsx` is large. Split without changing route/auth:
-- `app/(pages)/crm/page.tsx`: auth gate + high-level layout shell only.
-- `components/crm/Sidebar.tsx`: left navigation module list.
-- `components/crm/HeroMetrics.tsx`: KPI cards (omzet, openstaande orders, lage voorraad).
-- `components/crm/products/ProductTable.tsx`: searchable/filterable CRUD table.
-- `components/crm/products/ProductModal.tsx`: create/edit modal.
-- `components/crm/orders/OrderTable.tsx`: order list with statuses.
-- `components/crm/orders/OrderDetailDrawer.tsx`: detail view + invoice block + timeline.
-- `components/crm/customers/CustomerTable.tsx`: customer list/search.
-- `components/crm/customers/CustomerDetailDrawer.tsx`: customer profile + orders.
-- `components/crm/ToastProvider.tsx`: global toasts for confirmations/errors.
-- `lib/crm/api.ts`: typed fetch clients for `crm-*.php`.
-- `lib/crm/types.ts`: shared TS types for products/orders/customers.
-- `lib/crm/status.ts`: allowed order transitions + badge mappings.
-
-### 17.4 Data model upgrade (MySQL)
-Current schema supports products/orders but misses explicit SKU/category/customer entities. Add:
-
+Pre-checks:
 ```sql
-CREATE TABLE shop_categories (
+SHOW COLUMNS FROM shop_products LIKE 'sku';
+SHOW COLUMNS FROM shop_products LIKE 'category_id';
+SHOW COLUMNS FROM shop_products LIKE 'stock_qty';
+SHOW COLUMNS FROM shop_products LIKE 'stock_status';
+SHOW TABLES LIKE 'shop_categories';
+SHOW TABLES LIKE 'shop_customers';
+```
+
+Migraties:
+```sql
+CREATE TABLE IF NOT EXISTS shop_categories (
   id INT AUTO_INCREMENT PRIMARY KEY,
   slug VARCHAR(120) NOT NULL UNIQUE,
   name_nl VARCHAR(255) NOT NULL,
@@ -380,17 +114,17 @@ ALTER TABLE shop_products
   ADD COLUMN sku VARCHAR(120) NULL,
   ADD COLUMN category_id INT NULL,
   ADD COLUMN stock_qty INT NOT NULL DEFAULT 0,
-  ADD COLUMN stock_status VARCHAR(32) NOT NULL DEFAULT 'in_stock',
-  ADD COLUMN archived_at TIMESTAMP NULL DEFAULT NULL,
-  ADD COLUMN archived_by VARCHAR(128) NULL,
-  ADD CONSTRAINT fk_shop_products_category
-    FOREIGN KEY (category_id) REFERENCES shop_categories(id);
+  ADD COLUMN stock_status VARCHAR(32) NOT NULL DEFAULT 'in_stock';
 
 CREATE UNIQUE INDEX idx_shop_products_sku ON shop_products(sku);
-CREATE INDEX idx_shop_products_stock_status ON shop_products(stock_status);
 CREATE INDEX idx_shop_products_category_id ON shop_products(category_id);
+CREATE INDEX idx_shop_products_stock_status ON shop_products(stock_status);
 
-CREATE TABLE shop_customers (
+ALTER TABLE shop_products
+  ADD CONSTRAINT fk_shop_products_category
+  FOREIGN KEY (category_id) REFERENCES shop_categories(id);
+
+CREATE TABLE IF NOT EXISTS shop_customers (
   id CHAR(32) PRIMARY KEY,
   email VARCHAR(255) NOT NULL UNIQUE,
   first_name VARCHAR(120) NULL,
@@ -404,186 +138,98 @@ CREATE TABLE shop_customers (
 
 ALTER TABLE shop_orders
   ADD COLUMN customer_id CHAR(32) NULL,
-  ADD COLUMN invoice_number VARCHAR(64) NULL,
-  ADD COLUMN invoice_url VARCHAR(255) NULL,
-  ADD COLUMN invoice_status VARCHAR(32) NOT NULL DEFAULT 'pending',
-  ADD CONSTRAINT fk_shop_orders_customer
-    FOREIGN KEY (customer_id) REFERENCES shop_customers(id);
-
-CREATE INDEX idx_shop_orders_status ON shop_orders(status);
-CREATE INDEX idx_shop_orders_customer_id ON shop_orders(customer_id);
-
-CREATE TABLE crm_audit_log (
-  id BIGINT AUTO_INCREMENT PRIMARY KEY,
-  actor VARCHAR(128) NOT NULL,
-  entity_type VARCHAR(40) NOT NULL,
-  entity_id VARCHAR(120) NOT NULL,
-  action VARCHAR(40) NOT NULL,
-  before_json JSON NULL,
-  after_json JSON NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+  ADD INDEX idx_shop_orders_status_created_at (status, created_at),
+  ADD INDEX idx_shop_orders_email (email);
 ```
 
-Notes:
-- Soft delete keeps `shop_products.is_deleted` as source of truth for archive behavior.
-- `archived_at`/`archived_by` improve history without breaking existing reads.
-- Customer link on orders can be progressively filled from `email`.
+Opmerking:
+- Voer `ALTER TABLE` statements niet blind uit op productie als kolommen/indexen al bestaan.
+- Gebruik altijd backup + staging-run vooraf.
 
-### 17.5 CRUD contract by module
-Products (inventory):
-- Create:
-  - required fields: `name`, `sku`, `categoryId`, `priceEur`, `stockStatus`
-  - optional: localized copy/images/tags/lead time.
-- Read:
-  - paginated table with search on `name|sku`
-  - filters: category, stock status, archived flag, live flag.
-- Update:
-  - inline patch for `priceEur`, `stockQty`, `stockStatus`
-  - full edit in modal for all product fields.
-- Delete:
-  - soft delete only (`is_deleted = 1`, `is_live = 0`, set archive metadata)
-  - restore action available from archive filter.
+## 6. API contract status
 
-Orders:
-- List + filter:
-  - filters on status, source (`mollie|manual`), archive.
-- Detail:
-  - invoice metadata (`invoice_number`, `invoice_url`, `invoice_status`)
-  - line items + totals + timeline + notes.
-- Update:
-  - status transitions via guarded rules
-  - shipping method and notes updates where allowed.
+### Actief
+- `GET /shop/products?locale=nl|en`
+- `GET /shop/products/{slug}?locale=nl|en`
+- `POST /shop/cart`
+- `POST /shop/cart/{cartId}/lines`
+- `PATCH /shop/cart/{cartId}/lines/{lineId}`
+- `DELETE /shop/cart/{cartId}/lines/{lineId}`
+- `POST /shop/checkout`
 
-Customers:
-- Read:
-  - searchable list by name/email/company.
-  - detail pane with latest orders and total spend.
-- Update:
-  - contact/company/vat fields editable.
-- Delete:
-  - no hard delete in MVP; optional archive flag in phase 2.
+### CRM actief
+- `GET|POST|DELETE /crm-auth.php`
+- `GET /crm-data.php?type=orders|products|shipping-methods|dashboard-metrics|...`
+- `POST /crm-products.php` (actiegebaseerd)
+- `POST /crm-orders.php` (actiegebaseerd)
 
-### 17.6 Endpoint plan (compatible migration)
-Keep existing action-based endpoints for backward compatibility, but normalize payloads:
-- `GET /crm-products.php` -> list products.
-- `POST /crm-products.php` with action:
-  - `create`, `update`, `soft-delete`, `restore`, `visibility`, `duplicate`.
-  - add `inline-update` for fast table edits (`priceEur`, `stockQty`, `stockStatus`).
-- `GET /crm-data.php?type=orders` -> order listing.
-- `POST /crm-orders.php` with action:
-  - `update`, `archive`, `create`, `update-items`, `set-invoice`.
-- `GET /crm-customers.php` -> customer list (new).
-- `POST /crm-customers.php` with action:
-  - `update`, `merge`, `archive` (later phase).
+### Nog toe te voegen
+- `GET/POST /crm-customers.php`
+- Gestandaardiseerde response envelope op alle write endpoints (`{ ok, data, error }`)
 
-Response envelope convention (new writes):
-- success: `{ ok: true, data?: ..., message?: string }`
-- error: `{ ok: false, error: string, code?: string }`
+## 7. Sprintplanning (bijgewerkt)
 
-### 17.7 Order workflow and status policy
-Allowed transitions:
-- `open -> pending -> paid -> fulfilled`
-- `open|pending -> canceled`
-- `paid|fulfilled -> refunded`
-- `failed`, `expired`, `charged_back` are terminal unless manually corrected.
+### Sprint A - Hardening (kort)
+- [ ] Status transition matrix afdwingen in `crm-orders.php`
+- [ ] Onbekende statuswaarden blokkeren met nette foutcodes
+- [ ] Checkout + webhook + resend-email logging opschonen
 
-Each transition:
-- validated server-side,
-- written to order row,
-- appended to `timeline`,
-- logged in `crm_audit_log`.
+Definition of done:
+- Geen vrije statusmutaties meer buiten whitelist.
+- Geen regressie op bestaande orderupdates in CRM UI.
 
-### 17.8 Widescreen UI layout blueprint (PC-first)
-Global shell:
-- two-column desktop layout:
-  - left fixed sidebar: 280px
-  - right content area: fluid
-- top row in content = hero/KPI section.
-- sticky filter/action bar above each datatable.
+### Sprint B - Customer module
+- [ ] `shop_customers` migratie uitvoeren
+- [ ] `crm-customers.php` (list + detail + update)
+- [ ] CRM tab "Klanten" met zoek en orderhistoriek
 
-Tailwind grid guidance:
-- shell: `grid min-h-screen grid-cols-[280px_1fr]`
-- content container: `px-8 2xl:px-12 py-8`
-- hero metrics: `grid gap-4 xl:grid-cols-4`
-- module workspace: `grid gap-6 xl:grid-cols-12`
+Definition of done:
+- Klantrecord op email vindbaar vanuit orderdetail.
+- Minstens basis CRUD-update werkt zonder loginwijziging.
 
-Sidebar modules:
-- Dashboard
-- Producten
-- Bestellingen
-- Klanten
-- Categorieen
-- Archief
+### Sprint C - Product inventory v2
+- [ ] SKU/category/stock_qty/stock_status actief maken in DB + UI
+- [ ] Producttable filters op categorie en stockstatus
+- [ ] Inline updates uitbreiden met stock_qty
 
-Dashboard hero (required):
-- KPI cards:
-  - omzet vandaag
-  - omzet 30 dagen
-  - openstaande orders
-  - lage voorraad (stock alert)
-- secondary widgets:
-  - recente orders
-  - voorraadwaarschuwingen.
+Definition of done:
+- CRM productbeheer ondersteunt volledige inventarisflow zonder hard delete.
 
-Products table UX:
-- columns:
-  - naam, SKU, categorie, prijs, voorraad qty, voorraadstatus, live, acties.
-- interactions:
-  - inline edit for price and stock,
-  - modal for create/edit,
-  - archive/restore button in row actions.
-- feedback:
-  - toast after save/archive/restore.
+### Sprint D - SEO live switch
+- [ ] Echte SKU-content publiceren (geen demo-copy)
+- [ ] `SHOP_INDEXABLE=true` pas na content + QA
+- [ ] Sitemap en canonicals valideren na switch
 
-Orders UX:
-- list with status chips and search.
-- click row opens detail drawer/pane:
-  - customer snapshot
-  - invoice block
-  - order lines
-  - timeline.
-- status change from dropdown with immediate confirmation toast.
+Definition of done:
+- Enkel bedoelde shop URL's indexeren.
+- Geen nieuwe coverage/canonical errors in Search Console.
 
-Customers UX:
-- list + search + quick filters.
-- right-side detail drawer:
-  - identity/contact/company,
-  - order history,
-  - lifetime value indicator.
+## 8. Go-live checklist (praktisch)
+- [ ] `bff/.env` productieklare waarden:
+  - `SHOP_SITE_URL=https://x3dprints.be`
+  - `BFF_BASE_URL=https://api.x3dprints.be`
+  - `MOLLIE_API_KEY=<live>`
+  - `APP_DEBUG=false`
+- [ ] `CRM_PASSWORD` en SMTP-waarden ingesteld
+- [ ] DB schema up-to-date op productie
+- [ ] Health check: `/index.php?path=/health&debug=1`
+- [ ] End-to-end test:
+  - add to cart -> checkout -> Mollie -> return `?order=...`
+- [ ] Verify:
+  - cart/checkout noindex
+  - shoproutes enkel in sitemap als `SHOP_INDEXABLE=true`
 
-### 17.9 Modal + Toast behavior (required)
-- Modals:
-  - product create/edit
-  - order note/invoice update
-  - destructive confirmation (archive/restore)
-- Toasts (top-right, auto-dismiss):
-  - "Product succesvol opgeslagen"
-  - "Voorraad bijgewerkt"
-  - "Product gearchiveerd"
-  - "Orderstatus bijgewerkt"
-  - "Klantgegevens opgeslagen"
+## 9. Risico's en mitigatie
+| Risico | Impact | Mitigatie |
+| --- | --- | --- |
+| Te vroege indexatie van demo-shop | Hoog | `SHOP_INDEXABLE` op `false` houden tot echte SKU-live |
+| Ongecontroleerde orderstatus updates | Hoog | Transition whitelist server-side |
+| Datamodel groeit sneller dan UI | Middel | Gefaseerde migraties + backwards compatible endpoint acties |
+| Mollie/webhook regressie | Hoog | E2E tests + retries + logging |
+| SEO regressie op bestaande pagina's | Kritiek | Additive routing + canonical/sitemap checks in CI |
 
-### 17.10 Performance, safety, and QA targets
-- Server-side pagination for products/orders/customers.
-- DB indexes on `sku`, `status`, `category_id`, `stock_status`, `email`.
-- Always validate write payloads server-side.
-- Keep destructive actions soft where possible.
-- Record audit logs for critical operations.
-- Desktop QA focus:
-  - 1440p and ultrawide layout checks,
-  - keyboard navigation in table/modals,
-  - high contrast for chips/toasts/forms.
-
-### 17.11 Implementation sequence
-Sprint 1:
-- split `/crm` UI into module components + shared typed API layer.
-- add toast system + product modal + inline price/stock patch.
-
-Sprint 2:
-- add category + SKU + stock schema migration and wire filters.
-- add customer endpoint/module and order detail invoice block.
-
-Sprint 3:
-- add dashboard KPIs + low-stock alerting + audit log UI hooks.
-- finalize archive views, exports, and transition guards.
+## 10. Volgende concrete actie (aanbevolen)
+1. Sprint A afronden (status guardrails + logging).
+2. Daarna Sprint B (customers) zodat "Bestellingen & Klanten" module volledig is.
+3. Pas dan SKU/category/stock migrations breed uitrollen in Sprint C.
+4. SEO live switch pas in Sprint D na content-QA.
