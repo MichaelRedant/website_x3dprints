@@ -288,6 +288,35 @@ try {
     jsonResponse(["ok" => true]);
   }
 
+  if ($action === "inline-update") {
+    $slug = strtolower(sanitizeText($payload["slug"] ?? ""));
+    if ($slug === "") {
+      errorResponse("Missing slug", 400);
+    }
+    $priceCents = parsePriceEur($payload["priceEur"] ?? null);
+    if ($priceCents === null) {
+      errorResponse("Invalid price", 400);
+    }
+    $availability = normalizeAvailability($payload["availability"] ?? null);
+    $clause = $hasDeleted ? " AND is_deleted = 0" : "";
+    $exists = $pdo->prepare("SELECT slug FROM shop_products WHERE slug = :slug{$clause} LIMIT 1");
+    $exists->execute(["slug" => $slug]);
+    if (!$exists->fetch()) {
+      errorResponse("Product not found", 404);
+    }
+    $stmt = $pdo->prepare(
+      "UPDATE shop_products
+       SET price_cents = :price_cents, availability = :availability
+       WHERE slug = :slug{$clause}",
+    );
+    $stmt->execute([
+      "slug" => $slug,
+      "price_cents" => $priceCents,
+      "availability" => $availability,
+    ]);
+    jsonResponse(["ok" => true]);
+  }
+
   if ($action === "soft-delete") {
     if (!$hasDeleted) {
       errorResponse("Soft delete requires schema update", 400);

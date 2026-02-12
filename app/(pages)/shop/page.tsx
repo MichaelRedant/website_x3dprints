@@ -9,9 +9,9 @@ import { SITE, buildItemListSchema } from "@/lib/seo"
 import { getShopProducts } from "@/lib/shop-data"
 
 export const metadata: Metadata = {
-  title: "Kleinschalige 3D print shop | X3DPrints",
+  title: "3D print shop in kleine oplage | X3DPrints",
   description:
-    "Persoonlijk gemaakte 3D prints in kleine oplages. Direct contact met de maker, levering in Belgie of gratis afhalen op afspraak.",
+    "Bestel kleinschalige 3D prints uit live CRM-voorraad. Persoonlijke kwaliteitscheck, veilige betaling via Mollie en levering in Belgie of gratis afhalen op afspraak.",
   alternates: {
     canonical: `${SITE.url}/shop/`,
     languages: {
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Kleinschalige 3D print shop",
+    title: "3D print shop in kleine oplage",
     description:
-      "Kleine, zorgvuldig geselecteerde collectie met persoonlijke afwerking en directe ondersteuning.",
+      "Actuele collectie met persoonlijke afwerking, live voorraad en directe ondersteuning.",
     url: `${SITE.url}/shop/`,
     images: [{ url: SITE.ogImage, width: 1200, height: 630 }],
     locale: "nl_BE",
@@ -31,25 +31,31 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kleinschalige 3D print shop | X3DPrints",
-    description: "Persoonlijk gemaakte 3D prints, kleine oplages en directe ondersteuning.",
+    title: "3D print shop in kleine oplage | X3DPrints",
+    description: "Actuele 3D print collectie met live voorraad, Mollie-betaling en persoonlijke service.",
     images: [SITE.ogImage],
   },
 }
 
 const HIGHLIGHTS = [
   {
-    title: "Kleinschalig gemaakt",
-    description: "Elke print wordt in huis geproduceerd en gecontroleerd.",
+    title: "In-house geprint en gecontroleerd",
+    description: "Elke order krijgt een manuele kwaliteitscontrole voor verzending.",
   },
   {
-    title: "Levering of afhalen",
-    description: "Levering in Belgie of gratis afhalen op afspraak.",
+    title: "Heldere levering",
+    description: "Vaste verzending in Belgie of gratis afhalen op afspraak.",
   },
   {
-    title: "Persoonlijk contact",
-    description: "Vragen over materiaal of afwerking? Je spreekt direct met de maker.",
+    title: "Direct contact met de maker",
+    description: "Je krijgt snel advies over materiaal, afwerking en toepassing.",
   },
+]
+
+const HERO_POINTS = [
+  "Actuele voorraad uit CRM",
+  "Veilig betalen via Mollie",
+  "Snelle levering of afhalen op afspraak",
 ]
 
 type ShopStep = { title: string; description: string; href?: string; label?: string }
@@ -57,15 +63,15 @@ type ShopStep = { title: string; description: string; href?: string; label?: str
 const ORDER_STEPS: ShopStep[] = [
   {
     title: "Kies je product",
-    description: "Selecteer je item en bekijk materiaal, kleur en levertijd.",
+    description: "Filter op categorie, vergelijk details en stel je aantal in.",
   },
   {
-    title: "Kies aantal en levering",
-    description: "Stel je aantal in en kies levering of gratis afhalen.",
+    title: "Kies levering en e-mail",
+    description: "Selecteer verzending of gratis afhalen en vul je e-mail in.",
   },
   {
-    title: "Betaal veilig",
-    description: "Betaal via Mollie, daarna printen en controleren wij je order.",
+    title: "Rond veilig af",
+    description: "Je betaalt via Mollie en ontvangt direct je orderbevestiging.",
   },
 ]
 
@@ -85,34 +91,50 @@ export default async function ShopPage() {
 
   return (
     <main className="flex-1">
-      <section className="px-6 pb-12 pt-20 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+      <section className="px-6 pb-14 pt-20 sm:px-8 lg:px-12 xl:pb-16">
+        <div className="mx-auto max-w-7xl">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
-            <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
-              Kleinschalige 3D print shop, persoonlijk gemaakt
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg text-slate-600">
-              Kleine oplages, directe communicatie en zorgvuldige afwerking. Elk item wordt in huis geprint,
-              gecontroleerd en met zorg verzonden of klaargezet voor gratis afhaling.
-            </p>
+            <div className="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-white/80 p-6 sm:p-8 xl:p-10">
+              <div aria-hidden className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-indigo-200/45 blur-3xl" />
+              <div aria-hidden className="pointer-events-none absolute -bottom-24 left-10 h-56 w-56 rounded-full bg-cyan-200/40 blur-3xl" />
+              <div className="relative">
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
+                <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
+                  3D prints in kleine oplage, direct bestelbaar
+                </h1>
+                <p className="mt-4 max-w-3xl text-lg text-slate-600">
+                  Bestel functionele en decoratieve prints die in-house worden geproduceerd en gecontroleerd.
+                  Je ziet live voorraad, kiest zelf levering of afhalen, en rekent veilig af via Mollie.
+                </p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {HERO_POINTS.map((point) => (
+                    <span
+                      key={point}
+                      className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-600"
+                    >
+                      {point}
+                    </span>
+                  ))}
+                </div>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <ShimmerButton href="/shop#shop-collection">Shop nu</ShimmerButton>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                  >
+                    Krijg advies op maat
+                  </Link>
+                </div>
+              </div>
+            </div>
           </Reveal>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <ShimmerButton href="/shop#shop-collection">Bekijk collectie</ShimmerButton>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
-            >
-              Vraag persoonlijk advies
-            </Link>
-          </div>
         </div>
       </section>
 
       <ShopProductGrid products={liveProducts} locale="nl" />
 
-      <section className="px-6 pb-14 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-5xl gap-4 md:grid-cols-3">
+      <section className="px-6 pb-16 sm:px-8 lg:px-12 xl:pb-20">
+        <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3 xl:gap-5">
           {HIGHLIGHTS.map((item) => (
             <Reveal key={item.title} delay={0.05}>
               <GlassCard className="h-full">
@@ -124,11 +146,11 @@ export default async function ShopPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-20 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+      <section className="px-6 pb-20 sm:px-8 lg:px-12 xl:pb-24">
+        <div className="mx-auto max-w-7xl">
           <GlassCard>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-              Zo werkt bestellen
+              Zo bestel je
             </p>
             <div className="mt-4 grid gap-4 md:grid-cols-3">
               {ORDER_STEPS.map((item) => (

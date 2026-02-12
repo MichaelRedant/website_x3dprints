@@ -44,7 +44,8 @@ class ShopService
     $deletedClause = shopProductsHasDeletedColumn($this->pdo) ? " AND is_deleted = 0" : "";
     $tagsSelect = shopProductsHasTagsColumn($this->pdo) ? ", tags" : "";
     $stmt = $this->pdo->query(
-      "SELECT slug, name_nl, name_en, summary_nl, summary_en, price_cents, availability, image_url, image_alt_nl, image_alt_en
+      "SELECT slug, name_nl, name_en, summary_nl, summary_en, price_cents, availability, image_url, image_alt_nl, image_alt_en,
+              lead_time_min, lead_time_max
        {$tagsSelect}
        FROM shop_products WHERE is_live = 1{$deletedClause} ORDER BY sort_order ASC, id ASC",
     );
@@ -58,7 +59,8 @@ class ShopService
     $deletedClause = shopProductsHasDeletedColumn($this->pdo) ? " AND is_deleted = 0" : "";
     $tagsSelect = shopProductsHasTagsColumn($this->pdo) ? ", tags" : "";
     $stmt = $this->pdo->prepare(
-      "SELECT slug, name_nl, name_en, summary_nl, summary_en, price_cents, availability, image_url, image_alt_nl, image_alt_en
+      "SELECT slug, name_nl, name_en, summary_nl, summary_en, price_cents, availability, image_url, image_alt_nl, image_alt_en,
+              lead_time_min, lead_time_max
        {$tagsSelect}
        FROM shop_products WHERE slug = :slug AND is_live = 1{$deletedClause} LIMIT 1",
     );
@@ -282,17 +284,41 @@ class ShopService
   {
     $isEn = $locale === "en";
     $tags = array_key_exists("tags", $row) ? $this->parseTags($row["tags"]) : [];
+    $nameNl = trim((string)($row["name_nl"] ?? $row["slug"] ?? ""));
+    $nameEn = trim((string)($row["name_en"] ?? $nameNl));
+    $summaryNl = trim((string)($row["summary_nl"] ?? ""));
+    $summaryEn = trim((string)($row["summary_en"] ?? ""));
+    $imageUrl = trim((string)($row["image_url"] ?? ""));
+    $imageAltNl = trim((string)($row["image_alt_nl"] ?? $nameNl));
+    $imageAltEn = trim((string)($row["image_alt_en"] ?? $nameEn));
+    $leadTimeMin = $row["lead_time_min"] !== null ? (int)$row["lead_time_min"] : null;
+    $leadTimeMax = $row["lead_time_max"] !== null ? (int)$row["lead_time_max"] : null;
+    $leadTimeDays = null;
+    if ($leadTimeMin !== null && $leadTimeMax !== null && $leadTimeMin >= 0 && $leadTimeMax >= $leadTimeMin) {
+      $leadTimeDays = [
+        "min" => $leadTimeMin,
+        "max" => $leadTimeMax,
+      ];
+    }
     return [
       "slug" => $row["slug"],
-      "name" => $isEn ? $row["name_en"] : $row["name_nl"],
-      "summary" => $isEn ? $row["summary_en"] : $row["summary_nl"],
+      "name" => $isEn ? $nameEn : $nameNl,
+      "nameNl" => $nameNl,
+      "nameEn" => $nameEn,
+      "summary" => $isEn ? $summaryEn : $summaryNl,
+      "summaryNl" => $summaryNl,
+      "summaryEn" => $summaryEn,
       "price" => $this->money((int)$row["price_cents"]),
       "availability" => $row["availability"] ?: null,
       "image" => [
-        "url" => $row["image_url"],
-        "alt" => $isEn ? $row["image_alt_en"] : $row["image_alt_nl"],
+        "url" => $imageUrl !== "" ? $imageUrl : "/images/og-home.jpg",
+        "alt" => $isEn ? $imageAltEn : $imageAltNl,
+        "altNl" => $imageAltNl,
+        "altEn" => $imageAltEn,
       ],
       "tags" => $tags,
+      "leadTimeDays" => $leadTimeDays,
+      "isLive" => true,
     ];
   }
 

@@ -44,77 +44,77 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     shopLabel: "Shop",
     titleSuffix: "3D print shop",
     descriptionFallback:
-      "Geprint op bestelling in Belgie. Levering: EUR 7.50 tot 3 kg of afhalen op afspraak.",
-    backToShop: "Terug naar shop",
-    priceLabel: "Vanaf",
-    shippingTitle: "Levering in Belgie",
-    shippingBody: "Vaste verzending binnen Belgie: EUR 7.50 tot 3 kg.",
-    pickupTitle: "Afhalen op afspraak",
-    pickupBody: "Ophalen in de regio is mogelijk na afstemming.",
-    highlightsTitle: "Waarom dit product",
+      "Kleinschalig geproduceerd in Belgie. Levering: EUR 7.50 tot 3 kg of gratis afhalen op afspraak.",
+    backToShop: "Terug naar collectie",
+    priceLabel: "Prijs",
+    shippingTitle: "Levering en planning",
+    shippingBody: "Levering in Belgie: EUR 7.50 tot 3 kg. Productie- en verzendtijd hangen af van materiaal en volume.",
+    pickupTitle: "Gratis afhalen op afspraak",
+    pickupBody: "Afhalen kan na bevestiging van je order en tijdslot.",
+    highlightsTitle: "Waarom klanten dit kiezen",
     specsTitle: "Specificaties",
-    specsFallback: "Specificaties worden toegevoegd zodra het product live gaat.",
-    crossSellTitle: "Combineer met",
-    crossSellBody: "Past goed bij dit item en maakt je bestelling compleet.",
+    specsFallback: "Specificaties volgen. Vraag intussen gerust advies op maat.",
+    crossSellTitle: "Past hier goed bij",
+    crossSellBody: "Handig om samen te bestellen en opvolging te vereenvoudigen.",
     crossSellCta: "Bekijk product",
-    ctaPrimary: "Offerte aanvragen",
-    ctaSecondary: "Material Suggestion Tool",
-    ctaMaterials: "Materialen bekijken",
-    availabilityLabel: "Beschikbaarheid",
-    leadTimeLabel: "Levertijd",
+    ctaPrimary: "Vraag offerte voor dit product",
+    ctaSecondary: "Hulp bij materiaalkeuze",
+    ctaMaterials: "Vergelijk materialen",
+    availabilityLabel: "Status",
+    leadTimeLabel: "Productietijd",
   },
   en: {
     shopLabel: "Shop",
     titleSuffix: "3D print shop",
     descriptionFallback:
-      "Made to order in Belgium. Delivery: EUR 7.50 up to 3 kg or pickup by appointment.",
-    backToShop: "Back to shop",
-    priceLabel: "From",
-    shippingTitle: "Delivery in Belgium",
-    shippingBody: "Flat-rate shipping in Belgium: EUR 7.50 up to 3 kg.",
-    pickupTitle: "Pickup by appointment",
-    pickupBody: "Pickup in the region is possible on request.",
-    highlightsTitle: "Why this product",
+      "Small-batch made in Belgium. Delivery: EUR 7.50 up to 3 kg or free pickup by appointment.",
+    backToShop: "Back to collection",
+    priceLabel: "Price",
+    shippingTitle: "Delivery and planning",
+    shippingBody: "Delivery in Belgium: EUR 7.50 up to 3 kg. Production and shipping time depend on material and volume.",
+    pickupTitle: "Free pickup by appointment",
+    pickupBody: "Pickup is available after order confirmation and time-slot agreement.",
+    highlightsTitle: "Why customers choose this",
     specsTitle: "Specifications",
-    specsFallback: "Specs will be added once the product is live.",
-    crossSellTitle: "Combine with",
-    crossSellBody: "Pairs well with this item and rounds out your order.",
+    specsFallback: "Specifications will follow. Ask us for tailored guidance in the meantime.",
+    crossSellTitle: "Works well with",
+    crossSellBody: "Useful add-ons to order together and simplify follow-up.",
     crossSellCta: "View product",
-    ctaPrimary: "Request a quote",
-    ctaSecondary: "Material Suggestion Tool",
-    ctaMaterials: "View materials",
-    availabilityLabel: "Availability",
-    leadTimeLabel: "Lead time",
+    ctaPrimary: "Request quote for this product",
+    ctaSecondary: "Get material guidance",
+    ctaMaterials: "Compare materials",
+    availabilityLabel: "Status",
+    leadTimeLabel: "Production time",
   },
 }
 
 const DEFAULT_HIGHLIGHTS: Record<ShopLocale, { title: string; description: string }[]> = {
   nl: [
     {
-      title: "Geprint op bestelling",
-      description: "We print on demand en stemmen afwerking af op je use-case.",
+      title: "Kleinschalig en op maat",
+      description: "We print op bestelling en stemmen details af op je toepassing.",
     },
     {
-      title: "Materiaal advies",
-      description: "We helpen je de juiste balans te vinden tussen look, sterkte en prijs.",
+      title: "Materiaaladvies inbegrepen",
+      description: "Je krijgt advies op basis van sterkte, look en budget.",
     },
     {
-      title: "Kwaliteitscheck",
-      description: "Elke print wordt gecheckt op passing, afwerking en maatvoering.",
+      title: "Controle voor verzending",
+      description: "Elke print wordt nagekeken op maatvoering en afwerking.",
     },
   ],
   en: [
     {
-      title: "Made to order",
-      description: "We print on demand and align finishing with your use-case.",
+      title: "Small-batch and tailored",
+      description: "We print to order and align details with your use case.",
     },
     {
-      title: "Material advice",
-      description: "We help you balance look, strength and price.",
+      title: "Material guidance included",
+      description: "You get advice based on strength, look, and budget.",
     },
     {
-      title: "Quality check",
-      description: "Every print is checked for fit, finish and dimensions.",
+      title: "Checked before shipping",
+      description: "Every print is reviewed for dimensions and finish.",
     },
   ],
 }
@@ -209,6 +209,8 @@ export function renderShopProductPage({
   const leadTime = product.leadTimeDays
     ? formatLeadTime(locale, product.leadTimeDays.min, product.leadTimeDays.max)
     : null
+  const tags = (product.tags ?? []).slice(0, 5)
+  const categories = (product.categories ?? []).slice(0, 3)
   const basePath = locale === "en" ? "/en" : ""
   const productUrl = `${SITE.url}${basePath}/shop/${product.slug}/`
   const contactUrl = `${basePath}/contact`
@@ -255,26 +257,56 @@ export function renderShopProductPage({
 
   return (
     <main className="flex-1">
-      <section className="px-6 pb-12 pt-20 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl">
+      <section className="px-6 pb-14 pt-20 sm:px-8 lg:px-12 xl:pb-16">
+        <div className="mx-auto max-w-7xl">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">{copy.shopLabel}</p>
-            <Link
-              href={shopUrl}
-              className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
-            >
-              <span className="i-lucide-arrow-left" aria-hidden />
-              {copy.backToShop}
-            </Link>
-            <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
-              {productName}
-            </h1>
-            <p className="mt-4 max-w-3xl text-lg text-slate-600">{productSummary}</p>
+            <div className="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-white/80 p-6 sm:p-8 xl:p-10">
+              <div aria-hidden className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-indigo-200/45 blur-3xl" />
+              <div aria-hidden className="pointer-events-none absolute -bottom-24 left-8 h-56 w-56 rounded-full bg-cyan-200/40 blur-3xl" />
+              <div className="relative">
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">{copy.shopLabel}</p>
+                <Link
+                  href={shopUrl}
+                  className="mt-3 inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                >
+                  <span className="i-lucide-arrow-left" aria-hidden />
+                  {copy.backToShop}
+                </Link>
+                <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
+                  {productName}
+                </h1>
+                <p className="mt-4 max-w-3xl text-lg text-slate-600">{productSummary}</p>
+
+                <div className="mt-5 flex flex-wrap items-center gap-2 text-xs font-semibold">
+                  <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2 py-1 text-emerald-700">
+                    {copy.availabilityLabel}: {availabilityLabel}
+                  </span>
+                  {leadTime ? (
+                    <span className="rounded-full border border-sky-200 bg-sky-50 px-2 py-1 text-sky-700">
+                      {copy.leadTimeLabel}: {leadTime}
+                    </span>
+                  ) : null}
+                  <span className="rounded-full border border-slate-200 bg-white px-2 py-1 text-slate-700">
+                    {copy.priceLabel}: {productPrice}
+                  </span>
+                  {categories.map((category) => (
+                    <span key={category} className="rounded-full border border-slate-200 bg-white px-2 py-1 text-slate-600">
+                      {category}
+                    </span>
+                  ))}
+                  {tags.map((tag) => (
+                    <span key={tag} className="rounded-full border border-slate-200 bg-white px-2 py-1 text-slate-600">
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </Reveal>
 
-          <div className="mt-8 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="mt-8 grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
             <div className="space-y-6">
-              <GlassCard>
+              <GlassCard className="border-slate-200/80 bg-white/80">
                 <h2 className="text-lg font-semibold text-slate-900">{copy.highlightsTitle}</h2>
                 <div className="mt-4 grid gap-4 md:grid-cols-3">
                   {highlightItems.map((item) => (
@@ -286,7 +318,7 @@ export function renderShopProductPage({
                 </div>
               </GlassCard>
 
-              <GlassCard>
+              <GlassCard className="border-slate-200/80 bg-white/80">
                 <h2 className="text-lg font-semibold text-slate-900">{copy.specsTitle}</h2>
                 {specsItems.length > 0 ? (
                   <div className="mt-4 overflow-hidden rounded-2xl border border-slate-100 bg-white/70">
@@ -307,8 +339,8 @@ export function renderShopProductPage({
               </GlassCard>
             </div>
 
-            <div className="space-y-6">
-              <GlassCard>
+            <div className="space-y-6 lg:sticky lg:top-24 lg:self-start">
+              <GlassCard className="border-slate-200/80 bg-white/80">
                 <div className="overflow-hidden rounded-2xl border border-slate-100 bg-white/70">
                   <Image
                     src={productImageUrl}
@@ -361,7 +393,7 @@ export function renderShopProductPage({
                 </div>
               </GlassCard>
 
-              <GlassCard>
+              <GlassCard className="border-slate-200/80 bg-white/80">
                 <h2 className="text-lg font-semibold text-slate-900">{copy.shippingTitle}</h2>
                 <p className="mt-2 text-sm text-slate-600">{copy.shippingBody}</p>
                 <div className="mt-4">
@@ -377,12 +409,12 @@ export function renderShopProductPage({
       </section>
 
       {relatedProducts.length ? (
-        <section className="px-6 pb-12 sm:px-8 lg:px-12">
-          <div className="mx-auto max-w-6xl">
-            <GlassCard>
+        <section className="px-6 pb-14 sm:px-8 lg:px-12 xl:pb-16">
+          <div className="mx-auto max-w-7xl">
+            <GlassCard className="border-slate-200/80 bg-white/80">
               <h2 className="text-lg font-semibold text-slate-900">{copy.crossSellTitle}</h2>
               <p className="mt-2 text-sm text-slate-600">{copy.crossSellBody}</p>
-              <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                 {relatedProducts.map((item) => {
                   const name = localizeText(item.name, locale)
                   const summary = localizeText(item.summary, locale)

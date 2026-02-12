@@ -1,12 +1,14 @@
 "use client"
 
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShopAddToCartButton from "@/components/ShopAddToCartButton"
 import { useShopCart } from "@/components/ShopCartState"
+import { SHOP_BFF_ENABLED } from "@/lib/shop-config"
+import { getShopProducts } from "@/lib/shop-data"
 import { cn } from "@/lib/utils"
 import type { LocalizedText, ShopCategoryKey, ShopProduct } from "@/content/shop-products"
 
@@ -18,6 +20,8 @@ type ShopProductGridProps = {
 }
 
 type FilterKey = "all" | ShopCategoryKey
+
+type SortKey = "featured" | "priceAsc" | "priceDesc" | "nameAsc"
 
 const FILTER_LABELS: Record<ShopLocale, Record<FilterKey, string>> = {
   nl: {
@@ -34,28 +38,54 @@ const FILTER_LABELS: Record<ShopLocale, Record<FilterKey, string>> = {
 
 const COPY = {
   nl: {
-    eyebrow: "Shop selectie",
-    title: "Kies je 3D print",
-    filters: "Filters",
-    empty: "Nieuwe items volgen binnenkort.",
-    cta: "Bekijk product",
-    leadTimeLabel: "Levertijd",
-    cartLabel: "Winkelmandje",
+    eyebrow: "Actuele collectie",
+    title: "Vind het juiste product in enkele klikken",
+    filters: "Categorie",
+    searchLabel: "Zoek product",
+    searchPlaceholder: "Zoek op productnaam, materiaal of tag",
+    sortLabel: "Sorteer",
+    empty: "Geen producten gevonden. Pas je filters aan of reset je selectie.",
+    clear: "Reset selectie",
+    cta: "Bekijk details",
+    leadTimeLabel: "Productietijd",
+    cartLabel: "Bekijk mandje",
     quantityLabel: "Aantal",
+    decrease: "Aantal verlagen",
+    increase: "Aantal verhogen",
+    results: "resultaten",
+    availabilityLabel: "Status",
+    sortOptions: {
+      featured: "Meest relevant",
+      priceAsc: "Prijs: laag naar hoog",
+      priceDesc: "Prijs: hoog naar laag",
+      nameAsc: "Naam: A-Z",
+    },
   },
   en: {
-    eyebrow: "Shop selection",
-    title: "Pick your 3D print",
-    filters: "Filters",
-    empty: "New items are coming soon.",
-    cta: "View product",
-    leadTimeLabel: "Lead time",
-    cartLabel: "Cart",
+    eyebrow: "Live collection",
+    title: "Find the right product in a few clicks",
+    filters: "Category",
+    searchLabel: "Search products",
+    searchPlaceholder: "Search by product name, material, or tag",
+    sortLabel: "Sort by",
+    empty: "No products found. Adjust filters or reset your selection.",
+    clear: "Reset filters",
+    cta: "View details",
+    leadTimeLabel: "Production time",
+    cartLabel: "View cart",
     quantityLabel: "Quantity",
+    decrease: "Decrease quantity",
+    increase: "Increase quantity",
+    results: "results",
+    availabilityLabel: "Status",
+    sortOptions: {
+      featured: "Most relevant",
+      priceAsc: "Price: low to high",
+      priceDesc: "Price: high to low",
+      nameAsc: "Name: A-Z",
+    },
   },
 }
-
-const formatEur = (value: number) => `EUR ${value.toFixed(2)}`
 
 const AVAILABILITY_LABELS: Record<ShopLocale, Record<string, string>> = {
   nl: {
@@ -71,6 +101,15 @@ const AVAILABILITY_LABELS: Record<ShopLocale, Record<string, string>> = {
     OutOfStock: "Out of stock",
   },
 }
+
+const AVAILABILITY_CLASSES: Record<string, string> = {
+  InStock: "border-emerald-200 bg-emerald-50 text-emerald-700",
+  PreOrder: "border-sky-200 bg-sky-50 text-sky-700",
+  LimitedAvailability: "border-amber-200 bg-amber-50 text-amber-700",
+  OutOfStock: "border-rose-200 bg-rose-50 text-rose-700",
+}
+
+const formatEur = (value: number) => `EUR ${value.toFixed(2)}`
 
 function localize(text: LocalizedText, locale: ShopLocale) {
   return locale === "en" ? text.en : text.nl
@@ -90,47 +129,153 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
   const copy = locale === "en" ? COPY.en : COPY.nl
   const { itemCount } = useShopCart()
   const cartHref = locale === "en" ? "/en/shop/cart" : "/shop/cart"
+
+  const [liveProducts, setLiveProducts] = useState<ShopProduct[]>(products)
   const [quantities, setQuantities] = useState<Record<string, number>>({})
+  const [activeFilter, setActiveFilter] = useState<FilterKey>("all")
+  const [searchTerm, setSearchTerm] = useState("")
+  const [sortBy, setSortBy] = useState<SortKey>("featured")
+
+  useEffect(() => {
+    setLiveProducts(products)
+  }, [products])
+
+  useEffect(() => {
+    if (!SHOP_BFF_ENABLED) return
+    let cancelled = false
+
+    async function loadLiveProducts() {
+      try {
+        const latest = await getShopProducts(locale)
+        if (!cancelled) {
+          setLiveProducts(latest.filter((product) => product.isLive))
+        }
+      } catch {
+        // Keep current state if live refresh fails.
+      }
+    }
+
+    void loadLiveProducts()
+    const timer = window.setInterval(() => {
+      void loadLiveProducts()
+    }, 60000)
+
+    return () => {
+      cancelled = true
+      window.clearInterval(timer)
+    }
+  }, [locale])
+
   const availableCategories = useMemo(() => {
     const set = new Set<ShopCategoryKey>()
-    for (const product of products) {
+    for (const product of liveProducts) {
       for (const category of product.categories ?? []) {
         set.add(category)
       }
     }
     return Array.from(set)
-  }, [products])
+  }, [liveProducts])
 
-  const filters: FilterKey[] = useMemo(
-    () => ["all", ...availableCategories],
-    [availableCategories],
-  )
-  const [activeFilter, setActiveFilter] = useState<FilterKey>("all")
+  const filters: FilterKey[] = useMemo(() => ["all", ...availableCategories], [availableCategories])
+
+  useEffect(() => {
+    if (activeFilter !== "all" && !filters.includes(activeFilter)) {
+      setActiveFilter("all")
+    }
+  }, [activeFilter, filters])
 
   const filteredProducts = useMemo(() => {
-    if (activeFilter === "all") return products
-    return products.filter((product) => product.categories?.includes(activeFilter))
-  }, [activeFilter, products])
+    const query = searchTerm.trim().toLowerCase()
+
+    const base = liveProducts.filter((product) => {
+      if (activeFilter !== "all" && !product.categories?.includes(activeFilter)) return false
+      if (!query) return true
+
+      const name = localize(product.name, locale).toLowerCase()
+      const summary = localize(product.summary, locale).toLowerCase()
+      const tags = (product.tags ?? []).join(" ").toLowerCase()
+      return name.includes(query) || summary.includes(query) || tags.includes(query)
+    })
+
+    if (sortBy === "priceAsc") {
+      return [...base].sort((a, b) => a.priceEur - b.priceEur)
+    }
+    if (sortBy === "priceDesc") {
+      return [...base].sort((a, b) => b.priceEur - a.priceEur)
+    }
+    if (sortBy === "nameAsc") {
+      return [...base].sort((a, b) => localize(a.name, locale).localeCompare(localize(b.name, locale)))
+    }
+    return base
+  }, [activeFilter, liveProducts, locale, searchTerm, sortBy])
 
   const resolveQuantity = (slug: string) => quantities[slug] ?? 1
+
   const updateQuantity = (slug: string, value: number) => {
     setQuantities((prev) => ({ ...prev, [slug]: clampQuantity(value) }))
   }
 
-  return (
-    <section id="shop-collection" className="px-6 pb-12 sm:px-8 lg:px-12">
-      <div className="mx-auto max-w-5xl space-y-6">
-        <Reveal>
-          <GlassCard>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.eyebrow}</p>
-            <h2 className="mt-2 text-2xl font-semibold text-slate-900">{copy.title}</h2>
+  const resetFilters = () => {
+    setActiveFilter("all")
+    setSearchTerm("")
+    setSortBy("featured")
+  }
 
-            <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
-              {filters.length > 1 ? (
+  return (
+    <section id="shop-collection" className="px-6 pb-14 sm:px-8 lg:px-12 xl:pb-16">
+      <div className="mx-auto max-w-7xl space-y-6">
+        <Reveal>
+          <GlassCard className="relative overflow-hidden border-slate-200/80 bg-white/80 xl:p-8">
+            <div aria-hidden className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-indigo-200/45 blur-3xl" />
+            <div aria-hidden className="pointer-events-none absolute -bottom-24 left-16 h-56 w-56 rounded-full bg-cyan-200/40 blur-3xl" />
+
+            <div className="relative">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.eyebrow}</p>
+              <h2 className="mt-2 text-2xl font-semibold text-slate-900">{copy.title}</h2>
+
+              <div className="mt-6 grid gap-3 lg:grid-cols-[1fr_auto_auto] lg:items-center">
+                <label className="block">
+                  <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">{copy.searchLabel}</span>
+                  <input
+                    type="search"
+                    value={searchTerm}
+                    onChange={(event) => setSearchTerm(event.target.value)}
+                    placeholder={copy.searchPlaceholder}
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus:border-indigo-500 focus:outline-none"
+                  />
+                </label>
+
+                <label className="block min-w-[170px]">
+                  <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">{copy.sortLabel}</span>
+                  <select
+                    value={sortBy}
+                    onChange={(event) => setSortBy(event.target.value as SortKey)}
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus:border-indigo-500 focus:outline-none"
+                  >
+                    <option value="featured">{copy.sortOptions.featured}</option>
+                    <option value="priceAsc">{copy.sortOptions.priceAsc}</option>
+                    <option value="priceDesc">{copy.sortOptions.priceDesc}</option>
+                    <option value="nameAsc">{copy.sortOptions.nameAsc}</option>
+                  </select>
+                </label>
+
+                <Link
+                  href={cartHref}
+                  className="inline-flex items-center justify-center gap-3 rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-3 text-sm font-semibold text-indigo-700 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-100"
+                >
+                  <span className="i-lucide-shopping-cart text-base" aria-hidden />
+                  {copy.cartLabel}
+                  {itemCount > 0 ? (
+                    <span className="inline-flex min-w-[1.5rem] items-center justify-center rounded-full bg-indigo-600 px-2 py-0.5 text-xs font-semibold text-white">
+                      {itemCount}
+                    </span>
+                  ) : null}
+                </Link>
+              </div>
+
+              <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-                    {copy.filters}
-                  </span>
+                  <span className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.filters}</span>
                   {filters.map((filter) => {
                     const label = FILTER_LABELS[locale][filter]
                     const isActive = activeFilter === filter
@@ -151,132 +296,150 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
                     )
                   })}
                 </div>
-              ) : (
-                <span />
-              )}
-              <Link
-                href={cartHref}
-                className="inline-flex items-center gap-3 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-100"
-              >
-                <span className="i-lucide-shopping-cart text-base" aria-hidden />
-                {copy.cartLabel}
-                {itemCount > 0 ? (
-                  <span className="inline-flex min-w-[1.5rem] items-center justify-center rounded-full bg-indigo-600 px-2 py-0.5 text-xs font-semibold text-white">
-                    {itemCount}
-                  </span>
-                ) : null}
-              </Link>
-            </div>
 
-            {filteredProducts.length === 0 ? (
-              <p className="mt-6 text-sm text-slate-600">{copy.empty}</p>
-            ) : (
-              <div className="mt-6 grid gap-4 md:grid-cols-2">
-                {filteredProducts.map((product) => {
-                  const name = localize(product.name, locale)
-                  const summary = localize(product.summary, locale)
-                  const imageAlt = localize(product.image.alt, locale)
-                  const href = locale === "en" ? `/en/shop/${product.slug}` : `/shop/${product.slug}`
-                  const availability = product.availability
-                    ? AVAILABILITY_LABELS[locale][product.availability] ?? product.availability
-                    : null
-                  const leadTime = product.leadTimeDays
-                    ? formatLeadTime(locale, product.leadTimeDays.min, product.leadTimeDays.max)
-                    : null
-                  const quantity = resolveQuantity(product.slug)
-                  const isUnavailable = product.availability === "OutOfStock"
-                  return (
-                    <div key={product.slug} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                      <div className="overflow-hidden rounded-xl border border-slate-100 bg-white">
-                        <Image
-                          src={product.image.url}
-                          alt={imageAlt}
-                          width={1200}
-                          height={900}
-                          className="h-auto w-full object-cover"
-                          sizes="(min-width: 768px) 30vw, 90vw"
-                        />
-                      </div>
-                      <h3 className="mt-4 text-lg font-semibold text-slate-900">{name}</h3>
-                      <p className="mt-2 text-sm text-slate-600">{summary}</p>
-                      {(product.categories?.length || availability || leadTime) && (
-                        <div className="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
-                          {product.categories?.map((category) => (
-                            <span key={category} className="rounded-full border border-slate-200 bg-white px-2 py-0.5">
-                              {FILTER_LABELS[locale][category]}
-                            </span>
-                          ))}
-                          {availability && (
-                            <span className="rounded-full border border-slate-200 bg-white px-2 py-0.5">
-                              {availability}
-                            </span>
-                          )}
-                          {leadTime && (
-                            <span className="rounded-full border border-slate-200 bg-white px-2 py-0.5">
-                              {copy.leadTimeLabel}: {leadTime}
-                            </span>
-                          )}
-                        </div>
-                      )}
-                      <p className="mt-3 text-sm font-semibold text-slate-900">{formatEur(product.priceEur)}</p>
-                      <div className="mt-3 flex flex-wrap items-center gap-3">
-                        <div className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 shadow-sm">
-                          <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-slate-500">
-                            {copy.quantityLabel}
-                          </span>
-                          <div className="flex items-center gap-2">
-                            <button
-                              type="button"
-                              onClick={() => updateQuantity(product.slug, quantity - 1)}
-                              disabled={isUnavailable}
-                              className="h-7 w-7 rounded-full border border-slate-200 bg-white text-xs font-semibold text-slate-700 hover:text-slate-900 disabled:opacity-50"
-                              aria-label={copy.quantityLabel}
-                            >
-                              -
-                            </button>
-                            <input
-                              type="number"
-                              min={1}
-                              max={99}
-                              value={quantity}
-                              onChange={(event) => updateQuantity(product.slug, Number(event.target.value))}
-                              disabled={isUnavailable}
-                              className="w-12 rounded-lg border border-slate-200 bg-white px-2 py-1 text-center text-xs font-semibold text-slate-900"
-                              aria-label={copy.quantityLabel}
-                            />
-                            <button
-                              type="button"
-                              onClick={() => updateQuantity(product.slug, quantity + 1)}
-                              disabled={isUnavailable}
-                              className="h-7 w-7 rounded-full border border-slate-200 bg-white text-xs font-semibold text-slate-700 hover:text-slate-900 disabled:opacity-50"
-                              aria-label={copy.quantityLabel}
-                            >
-                              +
-                            </button>
-                          </div>
-                        </div>
-                        <ShopAddToCartButton
-                          product={product}
-                          locale={locale}
-                          quantity={quantity}
-                          className="px-4 py-2 text-xs"
-                        />
+                <div className="flex items-center gap-3 text-xs text-slate-500">
+                  <span>
+                    {filteredProducts.length} {copy.results}
+                  </span>
+                  {(searchTerm || activeFilter !== "all" || sortBy !== "featured") && (
+                    <button
+                      type="button"
+                      onClick={resetFilters}
+                      className="font-semibold uppercase tracking-[0.2em] text-slate-600 transition hover:text-slate-900"
+                    >
+                      {copy.clear}
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              {filteredProducts.length === 0 ? (
+                <div className="mt-6 rounded-2xl border border-dashed border-slate-300 bg-white/70 px-4 py-8 text-center">
+                  <p className="text-sm text-slate-600">{copy.empty}</p>
+                </div>
+              ) : (
+                <div className="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+                  {filteredProducts.map((product) => {
+                    const name = localize(product.name, locale)
+                    const summary = localize(product.summary, locale)
+                    const imageAlt = localize(product.image.alt, locale)
+                    const href = locale === "en" ? `/en/shop/${product.slug}` : `/shop/${product.slug}`
+                    const availabilityKey = product.availability ?? "InStock"
+                    const availability = AVAILABILITY_LABELS[locale][availabilityKey] ?? availabilityKey
+                    const leadTime = product.leadTimeDays
+                      ? formatLeadTime(locale, product.leadTimeDays.min, product.leadTimeDays.max)
+                      : null
+                    const quantity = resolveQuantity(product.slug)
+                    const isUnavailable = availabilityKey === "OutOfStock"
+
+                    return (
+                      <article
+                        key={product.slug}
+                        className="group flex h-full flex-col rounded-2xl border border-slate-200/80 bg-white/85 p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg xl:p-5"
+                      >
                         <Link
                           href={href}
-                          className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+                          className="block overflow-hidden rounded-xl border border-slate-100 bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                         >
-                          {copy.cta}
-                          <span className="i-lucide-arrow-right" aria-hidden />
+                          <div className="relative aspect-[4/3]">
+                            <Image
+                              src={product.image.url}
+                              alt={imageAlt}
+                              fill
+                              className="object-cover transition duration-300 group-hover:scale-[1.03]"
+                              sizes="(min-width: 1536px) 18vw, (min-width: 1280px) 24vw, (min-width: 640px) 46vw, 96vw"
+                            />
+                          </div>
                         </Link>
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
-            )}
+
+                        <div className="mt-4 flex flex-1 flex-col">
+                          <div className="flex items-start justify-between gap-3">
+                            <h3 className="text-lg font-semibold text-slate-900">
+                              <Link
+                                href={href}
+                                className="transition hover:text-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                              >
+                                {name}
+                              </Link>
+                            </h3>
+                            <p className="text-sm font-semibold text-slate-900">{formatEur(product.priceEur)}</p>
+                          </div>
+
+                          <p className="mt-2 line-clamp-3 text-sm text-slate-600">{summary}</p>
+
+                          <div className="mt-3 flex flex-wrap gap-2">
+                            <span
+                              className={cn(
+                                "rounded-full border px-2 py-0.5 text-[11px] font-semibold",
+                                AVAILABILITY_CLASSES[availabilityKey] ?? "border-slate-200 bg-slate-50 text-slate-700",
+                              )}
+                            >
+                              {copy.availabilityLabel}: {availability}
+                            </span>
+                            {leadTime && (
+                              <span className="rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[11px] font-semibold text-slate-600">
+                                {copy.leadTimeLabel}: {leadTime}
+                              </span>
+                            )}
+                          </div>
+
+                          <div className="mt-4 flex flex-wrap items-center gap-3">
+                            <div className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 shadow-sm">
+                              <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-slate-500">
+                                {copy.quantityLabel}
+                              </span>
+                              <div className="flex items-center gap-2">
+                                <button
+                                  type="button"
+                                  onClick={() => updateQuantity(product.slug, quantity - 1)}
+                                  disabled={isUnavailable}
+                                  className="h-7 w-7 rounded-full border border-slate-200 bg-white text-xs font-semibold text-slate-700 transition hover:border-slate-300 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-50"
+                                  aria-label={`${copy.decrease}: ${name}`}
+                                >
+                                  -
+                                </button>
+                                <input
+                                  type="number"
+                                  min={1}
+                                  max={99}
+                                  value={quantity}
+                                  onChange={(event) => updateQuantity(product.slug, Number(event.target.value))}
+                                  disabled={isUnavailable}
+                                  inputMode="numeric"
+                                  className="w-12 rounded-lg border border-slate-200 bg-white px-2 py-1 text-center text-xs font-semibold text-slate-900 focus:border-indigo-500 focus:outline-none"
+                                  aria-label={`${copy.quantityLabel}: ${name}`}
+                                />
+                                <button
+                                  type="button"
+                                  onClick={() => updateQuantity(product.slug, quantity + 1)}
+                                  disabled={isUnavailable}
+                                  className="h-7 w-7 rounded-full border border-slate-200 bg-white text-xs font-semibold text-slate-700 transition hover:border-slate-300 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-50"
+                                  aria-label={`${copy.increase}: ${name}`}
+                                >
+                                  +
+                                </button>
+                              </div>
+                            </div>
+
+                            <ShopAddToCartButton product={product} locale={locale} quantity={quantity} className="px-4 py-2 text-xs" />
+                          </div>
+
+                          <Link
+                            href={href}
+                            className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+                          >
+                            {copy.cta}
+                            <span className="i-lucide-arrow-right" aria-hidden />
+                          </Link>
+                        </div>
+                      </article>
+                    )
+                  })}
+                </div>
+              )}
+            </div>
           </GlassCard>
         </Reveal>
-
       </div>
     </section>
   )

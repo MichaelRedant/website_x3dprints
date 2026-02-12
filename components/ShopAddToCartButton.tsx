@@ -16,16 +16,18 @@ type ShopAddToCartButtonProps = {
 
 const COPY = {
   nl: {
-    add: "Voeg toe aan winkelmandje",
+    add: "In winkelmand",
     added: "Toegevoegd",
     adding: "Toevoegen...",
-    unavailable: "Niet beschikbaar",
+    unavailable: "Uitverkocht",
+    unavailableHint: "Tijdelijk niet beschikbaar",
   },
   en: {
     add: "Add to cart",
     added: "Added",
     adding: "Adding...",
     unavailable: "Out of stock",
+    unavailableHint: "Temporarily unavailable",
   },
 }
 
@@ -79,17 +81,19 @@ export default function ShopAddToCartButton({
       onClick={handleClick}
       disabled={isAdding || isUnavailable}
       className={cn(
-        "inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold text-white",
-        "bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] shadow-[0_10px_30px_rgba(99,102,241,.35)]",
-        "transition-[box-shadow,filter] hover:shadow-[0_12px_40px_rgba(99,102,241,.55)] hover:brightness-110",
-        isAdding || isUnavailable ? "opacity-70" : "",
+        "inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition-[box-shadow,filter]",
+        isUnavailable
+          ? "cursor-not-allowed border border-slate-300 bg-slate-200 text-slate-600 shadow-none"
+          : "text-white bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] shadow-[0_10px_30px_rgba(99,102,241,.35)] hover:shadow-[0_12px_40px_rgba(99,102,241,.55)] hover:brightness-110",
+        isAdding ? "opacity-80" : "",
         className,
       )}
       aria-live="polite"
       aria-busy={isAdding}
+      title={isUnavailable ? copy.unavailableHint : undefined}
     >
       {label}
-      <span className="i-lucide-shopping-cart" aria-hidden />
+      <span className={added ? "i-lucide-check" : "i-lucide-shopping-cart"} aria-hidden />
     </button>
   )
 }

@@ -11,6 +11,7 @@ import {
   type BffCart,
   type BffShippingMethod,
 } from "@/lib/shop-bff"
+import { SHOP_BFF_ENABLED } from "@/lib/shop-config"
 
 export type ShopCartItem = {
   slug: string
@@ -64,10 +65,6 @@ const LOCAL_SHIPPING_METHODS: ShopShippingMethod[] = [
   { id: "be_flat", priceEur: 7.5 },
   { id: "pickup", priceEur: 0 },
 ]
-
-const BFF_ENABLED =
-  process.env.NEXT_PUBLIC_SHOP_BFF_ENABLED === "true" &&
-  Boolean(process.env.NEXT_PUBLIC_SHOP_BFF_URL)
 
 function emitCartEvent() {
   if (typeof window === "undefined") return
@@ -247,7 +244,7 @@ function mapBffCart(
 }
 
 export function useShopCart() {
-  const [mode] = useState<"bff" | "local">(BFF_ENABLED ? "bff" : "local")
+  const [mode] = useState<"bff" | "local">(SHOP_BFF_ENABLED ? "bff" : "local")
   const [items, setItems] = useState<ShopCartItem[]>([])
   const [totals, setTotals] = useState<ShopCartTotals>({
     subtotal: 0,

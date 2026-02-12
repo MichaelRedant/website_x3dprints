@@ -319,3 +319,271 @@ P1
 P2
 - Expand product content depth (specs, use-case, materials, images).
 - Add contextual links from relevant blog/organizers pages to top shop SKUs.
+
+## 17. CRM Admin v2 Blueprint (login unchanged)
+Goal: redesign `/crm` into a widescreen-first webshop admin panel with complete CRUD for products, orders, and customers, while keeping current authentication behavior intact.
+
+### 17.1 Non-negotiable compatibility rules
+- Keep existing CRM login flow unchanged:
+  - `POST/GET/DELETE /crm-auth.php`
+  - session cookie `x3dprints_crm`
+  - password verification via `CRM_PASSWORD_HASH`
+  - existing IP-based rate limiting (`crm-auth-rate.json`)
+- Keep current auth guard behavior:
+  - frontend checks `GET /crm-auth.php` for `{ authed: true|false }`
+  - all CRM data endpoints continue to call `crmRequireAuth()`
+- Keep `/crm` non-indexable:
+  - route blocked in `robots.ts`
+  - `X-Robots-Tag: noindex, nofollow` on CRM PHP endpoints
+
+### 17.2 Target backend architecture (PHP BFF-first)
+- Pattern:
+  - UI (`app/(pages)/crm/page.tsx`) -> CRM PHP endpoints (`public/crm-*.php`) -> MySQL + JSON meta files.
+- Keep current endpoints and extend them incrementally:
+  - `/crm-data.php` for dashboard/listing reads + exports.
+  - `/crm-products.php` for product CRUD.
+  - `/crm-orders.php` for order status + manual order ops.
+  - new `/crm-customers.php` for customer CRUD/read history.
+- Keep state-changing calls auditable:
+  - add audit trail table for product/order/customer changes.
+  - append timeline records on every order status change.
+
+### 17.3 Suggested directory split for maintainability
+Current `app/(pages)/crm/page.tsx` is large. Split without changing route/auth:
+- `app/(pages)/crm/page.tsx`: auth gate + high-level layout shell only.
+- `components/crm/Sidebar.tsx`: left navigation module list.
+- `components/crm/HeroMetrics.tsx`: KPI cards (omzet, openstaande orders, lage voorraad).
+- `components/crm/products/ProductTable.tsx`: searchable/filterable CRUD table.
+- `components/crm/products/ProductModal.tsx`: create/edit modal.
+- `components/crm/orders/OrderTable.tsx`: order list with statuses.
+- `components/crm/orders/OrderDetailDrawer.tsx`: detail view + invoice block + timeline.
+- `components/crm/customers/CustomerTable.tsx`: customer list/search.
+- `components/crm/customers/CustomerDetailDrawer.tsx`: customer profile + orders.
+- `components/crm/ToastProvider.tsx`: global toasts for confirmations/errors.
+- `lib/crm/api.ts`: typed fetch clients for `crm-*.php`.
+- `lib/crm/types.ts`: shared TS types for products/orders/customers.
+- `lib/crm/status.ts`: allowed order transitions + badge mappings.
+
+### 17.4 Data model upgrade (MySQL)
+Current schema supports products/orders but misses explicit SKU/category/customer entities. Add:
+
+```sql
+CREATE TABLE shop_categories (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  slug VARCHAR(120) NOT NULL UNIQUE,
+  name_nl VARCHAR(255) NOT NULL,
+  name_en VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+ALTER TABLE shop_products
+  ADD COLUMN sku VARCHAR(120) NULL,
+  ADD COLUMN category_id INT NULL,
+  ADD COLUMN stock_qty INT NOT NULL DEFAULT 0,
+  ADD COLUMN stock_status VARCHAR(32) NOT NULL DEFAULT 'in_stock',
+  ADD COLUMN archived_at TIMESTAMP NULL DEFAULT NULL,
+  ADD COLUMN archived_by VARCHAR(128) NULL,
+  ADD CONSTRAINT fk_shop_products_category
+    FOREIGN KEY (category_id) REFERENCES shop_categories(id);
+
+CREATE UNIQUE INDEX idx_shop_products_sku ON shop_products(sku);
+CREATE INDEX idx_shop_products_stock_status ON shop_products(stock_status);
+CREATE INDEX idx_shop_products_category_id ON shop_products(category_id);
+
+CREATE TABLE shop_customers (
+  id CHAR(32) PRIMARY KEY,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  first_name VARCHAR(120) NULL,
+  last_name VARCHAR(120) NULL,
+  phone VARCHAR(64) NULL,
+  company VARCHAR(160) NULL,
+  vat_number VARCHAR(64) NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+ALTER TABLE shop_orders
+  ADD COLUMN customer_id CHAR(32) NULL,
+  ADD COLUMN invoice_number VARCHAR(64) NULL,
+  ADD COLUMN invoice_url VARCHAR(255) NULL,
+  ADD COLUMN invoice_status VARCHAR(32) NOT NULL DEFAULT 'pending',
+  ADD CONSTRAINT fk_shop_orders_customer
+    FOREIGN KEY (customer_id) REFERENCES shop_customers(id);
+
+CREATE INDEX idx_shop_orders_status ON shop_orders(status);
+CREATE INDEX idx_shop_orders_customer_id ON shop_orders(customer_id);
+
+CREATE TABLE crm_audit_log (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  actor VARCHAR(128) NOT NULL,
+  entity_type VARCHAR(40) NOT NULL,
+  entity_id VARCHAR(120) NOT NULL,
+  action VARCHAR(40) NOT NULL,
+  before_json JSON NULL,
+  after_json JSON NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+Notes:
+- Soft delete keeps `shop_products.is_deleted` as source of truth for archive behavior.
+- `archived_at`/`archived_by` improve history without breaking existing reads.
+- Customer link on orders can be progressively filled from `email`.
+
+### 17.5 CRUD contract by module
+Products (inventory):
+- Create:
+  - required fields: `name`, `sku`, `categoryId`, `priceEur`, `stockStatus`
+  - optional: localized copy/images/tags/lead time.
+- Read:
+  - paginated table with search on `name|sku`
+  - filters: category, stock status, archived flag, live flag.
+- Update:
+  - inline patch for `priceEur`, `stockQty`, `stockStatus`
+  - full edit in modal for all product fields.
+- Delete:
+  - soft delete only (`is_deleted = 1`, `is_live = 0`, set archive metadata)
+  - restore action available from archive filter.
+
+Orders:
+- List + filter:
+  - filters on status, source (`mollie|manual`), archive.
+- Detail:
+  - invoice metadata (`invoice_number`, `invoice_url`, `invoice_status`)
+  - line items + totals + timeline + notes.
+- Update:
+  - status transitions via guarded rules
+  - shipping method and notes updates where allowed.
+
+Customers:
+- Read:
+  - searchable list by name/email/company.
+  - detail pane with latest orders and total spend.
+- Update:
+  - contact/company/vat fields editable.
+- Delete:
+  - no hard delete in MVP; optional archive flag in phase 2.
+
+### 17.6 Endpoint plan (compatible migration)
+Keep existing action-based endpoints for backward compatibility, but normalize payloads:
+- `GET /crm-products.php` -> list products.
+- `POST /crm-products.php` with action:
+  - `create`, `update`, `soft-delete`, `restore`, `visibility`, `duplicate`.
+  - add `inline-update` for fast table edits (`priceEur`, `stockQty`, `stockStatus`).
+- `GET /crm-data.php?type=orders` -> order listing.
+- `POST /crm-orders.php` with action:
+  - `update`, `archive`, `create`, `update-items`, `set-invoice`.
+- `GET /crm-customers.php` -> customer list (new).
+- `POST /crm-customers.php` with action:
+  - `update`, `merge`, `archive` (later phase).
+
+Response envelope convention (new writes):
+- success: `{ ok: true, data?: ..., message?: string }`
+- error: `{ ok: false, error: string, code?: string }`
+
+### 17.7 Order workflow and status policy
+Allowed transitions:
+- `open -> pending -> paid -> fulfilled`
+- `open|pending -> canceled`
+- `paid|fulfilled -> refunded`
+- `failed`, `expired`, `charged_back` are terminal unless manually corrected.
+
+Each transition:
+- validated server-side,
+- written to order row,
+- appended to `timeline`,
+- logged in `crm_audit_log`.
+
+### 17.8 Widescreen UI layout blueprint (PC-first)
+Global shell:
+- two-column desktop layout:
+  - left fixed sidebar: 280px
+  - right content area: fluid
+- top row in content = hero/KPI section.
+- sticky filter/action bar above each datatable.
+
+Tailwind grid guidance:
+- shell: `grid min-h-screen grid-cols-[280px_1fr]`
+- content container: `px-8 2xl:px-12 py-8`
+- hero metrics: `grid gap-4 xl:grid-cols-4`
+- module workspace: `grid gap-6 xl:grid-cols-12`
+
+Sidebar modules:
+- Dashboard
+- Producten
+- Bestellingen
+- Klanten
+- Categorieen
+- Archief
+
+Dashboard hero (required):
+- KPI cards:
+  - omzet vandaag
+  - omzet 30 dagen
+  - openstaande orders
+  - lage voorraad (stock alert)
+- secondary widgets:
+  - recente orders
+  - voorraadwaarschuwingen.
+
+Products table UX:
+- columns:
+  - naam, SKU, categorie, prijs, voorraad qty, voorraadstatus, live, acties.
+- interactions:
+  - inline edit for price and stock,
+  - modal for create/edit,
+  - archive/restore button in row actions.
+- feedback:
+  - toast after save/archive/restore.
+
+Orders UX:
+- list with status chips and search.
+- click row opens detail drawer/pane:
+  - customer snapshot
+  - invoice block
+  - order lines
+  - timeline.
+- status change from dropdown with immediate confirmation toast.
+
+Customers UX:
+- list + search + quick filters.
+- right-side detail drawer:
+  - identity/contact/company,
+  - order history,
+  - lifetime value indicator.
+
+### 17.9 Modal + Toast behavior (required)
+- Modals:
+  - product create/edit
+  - order note/invoice update
+  - destructive confirmation (archive/restore)
+- Toasts (top-right, auto-dismiss):
+  - "Product succesvol opgeslagen"
+  - "Voorraad bijgewerkt"
+  - "Product gearchiveerd"
+  - "Orderstatus bijgewerkt"
+  - "Klantgegevens opgeslagen"
+
+### 17.10 Performance, safety, and QA targets
+- Server-side pagination for products/orders/customers.
+- DB indexes on `sku`, `status`, `category_id`, `stock_status`, `email`.
+- Always validate write payloads server-side.
+- Keep destructive actions soft where possible.
+- Record audit logs for critical operations.
+- Desktop QA focus:
+  - 1440p and ultrawide layout checks,
+  - keyboard navigation in table/modals,
+  - high contrast for chips/toasts/forms.
+
+### 17.11 Implementation sequence
+Sprint 1:
+- split `/crm` UI into module components + shared typed API layer.
+- add toast system + product modal + inline price/stock patch.
+
+Sprint 2:
+- add category + SKU + stock schema migration and wire filters.
+- add customer endpoint/module and order detail invoice block.
+
+Sprint 3:
+- add dashboard KPIs + low-stock alerting + audit log UI hooks.
+- finalize archive views, exports, and transition guards.

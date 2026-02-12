@@ -12,8 +12,8 @@ const IS_LIVE = SHOP_INDEXABLE
 export const metadata: Metadata = {
   title: IS_LIVE ? "Cart | X3DPrints" : "Cart coming soon | X3DPrints",
   description: IS_LIVE
-    ? "Review your items and proceed to checkout."
-    : "The cart is in preparation. Request advice or start with material selection. Delivery in Belgium: EUR 7.50 up to 3 kg or pickup by appointment.",
+    ? "Review your items, adjust quantities, and continue to checkout."
+    : "The cart is currently in preparation. Request advice or start with material selection. Delivery in Belgium: EUR 7.50 up to 3 kg or pickup by appointment.",
   robots: { index: false, follow: false },
   alternates: {
     canonical: `${SITE.url}/en/shop/cart/`,
@@ -25,7 +25,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: IS_LIVE ? "Cart" : "Cart (coming soon)",
-    description: IS_LIVE ? "Review your items and proceed to checkout." : "Shop features will be enabled soon.",
+    description: IS_LIVE
+      ? "Review your items, adjust quantities, and continue to checkout."
+      : "Shop features will be enabled soon.",
     url: `${SITE.url}/en/shop/cart/`,
     images: [{ url: SITE.ogImage, width: 1200, height: 630 }],
     locale: "en_BE",
@@ -34,7 +36,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: IS_LIVE ? "Cart | X3DPrints" : "Cart (coming soon) | X3DPrints",
-    description: IS_LIVE ? "Review your items and proceed to checkout." : "Shop features will be enabled soon.",
+    description: IS_LIVE
+      ? "Review your items, adjust quantities, and continue to checkout."
+      : "Shop features will be enabled soon.",
     images: [SITE.ogImage],
   },
 }
@@ -42,28 +46,36 @@ export const metadata: Metadata = {
 export default function ShopCartPageEn() {
   return (
     <main className="flex-1">
-      <section className="px-6 pb-12 pt-20 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+      <section className="px-6 pb-14 pt-20 sm:px-8 lg:px-12 xl:pb-16">
+        <div className="mx-auto max-w-7xl">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
-            <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
-              {IS_LIVE ? "Cart" : "The cart is in preparation"}
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg text-slate-600">
-              {IS_LIVE
-                ? "Review your items and proceed to checkout."
-                : "The cart will go live once the first products are available. Until then, request advice or discuss material selection with us."}
-            </p>
+            <div className="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-white/80 p-6 sm:p-8 xl:p-10">
+              <div aria-hidden className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-indigo-200/45 blur-3xl" />
+              <div aria-hidden className="pointer-events-none absolute -bottom-24 left-10 h-56 w-56 rounded-full bg-cyan-200/40 blur-3xl" />
+              <div className="relative">
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
+                <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
+                  {IS_LIVE ? "Your cart" : "The cart is in preparation"}
+                </h1>
+                <p className="mt-4 max-w-3xl text-lg text-slate-600">
+                  {IS_LIVE
+                    ? "Review your items, adjust quantities, and continue to checkout in a few steps."
+                    : "The cart will go live once the first products are available. Until then, request advice or discuss material selection with us."}
+                </p>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <ShimmerButton href={IS_LIVE ? "/en/shop" : "/en/contact"}>
+                    {IS_LIVE ? "Continue shopping" : "Request advice"}
+                  </ShimmerButton>
+                  <Link
+                    href="/en/materials#material-suggestion-tool"
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                  >
+                    Get material guidance
+                  </Link>
+                </div>
+              </div>
+            </div>
           </Reveal>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <ShimmerButton href="/contact">Request a quote</ShimmerButton>
-            <Link
-              href="/materials#material-suggestion-tool"
-              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
-            >
-              Material Suggestion Tool
-            </Link>
-          </div>
         </div>
       </section>
 

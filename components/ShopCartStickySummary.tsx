@@ -14,18 +14,20 @@ type ShopCartStickySummaryProps = {
 
 const COPY = {
   nl: {
-    title: "Je winkelmand",
+    title: "Snelle samenvatting",
     items: "Items",
+    subtotal: "Subtotaal",
     total: "Totaal",
-    toCart: "Naar winkelmand",
-    toCheckout: "Afrekenen",
+    toCart: "Bekijk mandje",
+    toCheckout: "Ga naar checkout",
   },
   en: {
-    title: "Your cart",
+    title: "Quick summary",
     items: "Items",
+    subtotal: "Subtotal",
     total: "Total",
-    toCart: "Go to cart",
-    toCheckout: "Checkout",
+    toCart: "View cart",
+    toCheckout: "Go to checkout",
   },
 }
 
@@ -44,11 +46,14 @@ export default function ShopCartStickySummary({ locale, className }: ShopCartSti
   return (
     <>
       <div className={cn("hidden lg:block", className)}>
-        <div className="rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+        <div className="rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm backdrop-blur">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.title}</p>
           <div className="mt-3 space-y-1 text-sm text-slate-600">
             <p>
               <span className="font-semibold text-slate-900">{copy.items}:</span> {itemCount}
+            </p>
+            <p>
+              <span className="font-semibold text-slate-900">{copy.subtotal}:</span> {formatEur(totals.subtotal)}
             </p>
             <p>
               <span className="font-semibold text-slate-900">{copy.total}:</span> {totalLabel}
@@ -64,7 +69,7 @@ export default function ShopCartStickySummary({ locale, className }: ShopCartSti
             </Link>
             <Link
               href={checkoutHref}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:brightness-110"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:brightness-110"
             >
               {copy.toCheckout}
               <span className="i-lucide-credit-card" aria-hidden />
@@ -74,20 +79,27 @@ export default function ShopCartStickySummary({ locale, className }: ShopCartSti
       </div>
 
       <div className="fixed bottom-4 left-4 right-4 z-40 rounded-2xl border border-slate-200 bg-white/95 p-4 shadow-xl backdrop-blur lg:hidden">
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.title}</p>
             <p className="mt-1 text-sm text-slate-700">
-              {itemCount} {copy.items.toLowerCase()} · <span className="font-semibold text-slate-900">{totalLabel}</span>
+              {itemCount} {copy.items.toLowerCase()} | <span className="font-semibold text-slate-900">{totalLabel}</span>
             </p>
           </div>
-          <Link
-            href={cartHref}
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:brightness-110"
-          >
-            {copy.toCart}
-            <span className="i-lucide-arrow-right" aria-hidden />
-          </Link>
+          <div className="grid w-full grid-cols-2 gap-2 sm:w-auto sm:grid-cols-none sm:auto-cols-max sm:grid-flow-col">
+            <Link
+              href={cartHref}
+              className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50"
+            >
+              {copy.toCart}
+            </Link>
+            <Link
+              href={checkoutHref}
+              className="inline-flex items-center justify-center rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-3 py-2 text-xs font-semibold text-white shadow-sm transition hover:brightness-110"
+            >
+              {copy.toCheckout}
+            </Link>
+          </div>
         </div>
       </div>
     </>

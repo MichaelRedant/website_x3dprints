@@ -1,3 +1,5 @@
+import { SHOP_BFF_URL } from "@/lib/shop-config"
+
 export type ShopLocale = "nl" | "en"
 
 export type BffPrice = {
@@ -9,16 +11,24 @@ export type BffPrice = {
 export type BffImage = {
   url: string
   alt: string
+  altNl?: string
+  altEn?: string
 }
 
 export type BffProduct = {
   slug: string
   name: string
+  nameNl?: string
+  nameEn?: string
   summary: string
+  summaryNl?: string
+  summaryEn?: string
   price: BffPrice
   availability?: string
   image: BffImage
   tags?: string[]
+  leadTimeDays?: { min: number; max: number } | null
+  isLive?: boolean
 }
 
 export type BffCartLine = {
@@ -54,19 +64,39 @@ export type BffCheckout = {
   orderCode: string
 }
 
-const RAW_BASE_URL = process.env.NEXT_PUBLIC_SHOP_BFF_URL ?? ""
-const BFF_BASE_URL = RAW_BASE_URL.replace(/\/+$/, "")
+const BFF_BASE_URL = SHOP_BFF_URL.replace(/\/+$/, "")
 
-function getBffUrl(path: string) {
+function normalizePath(path: string): { pathname: string; search: string } {
+  if (!path) return { pathname: "/", search: "" }
+  const normalized = path.startsWith("/") ? path : `/${path}`
+  const queryIndex = normalized.indexOf("?")
+  if (queryIndex === -1) {
+    return { pathname: normalized, search: "" }
+  }
+  return {
+    pathname: normalized.slice(0, queryIndex) || "/",
+    search: normalized.slice(queryIndex + 1),
+  }
+}
+
+function buildBffUrls(path: string): string[] {
   if (!BFF_BASE_URL) {
     throw new Error("NEXT_PUBLIC_SHOP_BFF_URL is not set.")
   }
-  if (!path.startsWith("/")) return `${BFF_BASE_URL}/${path}`
-  return `${BFF_BASE_URL}${path}`
+  const { pathname, search } = normalizePath(path)
+  const queryParams = new URLSearchParams(search)
+  queryParams.set("path", pathname)
+  const queryString = queryParams.toString()
+
+  const directUrl = `${BFF_BASE_URL}${pathname}${search ? `?${search}` : ""}`
+  const indexBase = BFF_BASE_URL.endsWith("/index.php") ? BFF_BASE_URL : `${BFF_BASE_URL}/index.php`
+  const pathUrl = `${indexBase}?${queryString}`
+
+  return Array.from(new Set([pathUrl, directUrl]))
 }
 
 async function bffFetch<T>(path: string, options: RequestInit & { json?: unknown } = {}) {
-  const url = getBffUrl(path)
+  const urls = buildBffUrls(path)
   const headers = new Headers(options.headers)
   if (!headers.has("Accept")) {
     headers.set("Accept", "application/json")
@@ -77,19 +107,32 @@ async function bffFetch<T>(path: string, options: RequestInit & { json?: unknown
     body = JSON.stringify(options.json)
   }
 
-  const response = await fetch(url, {
-    ...options,
-    body,
-    headers,
-    cache: "no-store",
-  })
+  const errors: string[] = []
 
-  if (!response.ok) {
-    const text = await response.text().catch(() => "")
-    throw new Error(`[shop-bff] ${response.status} ${response.statusText} ${text}`.trim())
+  for (const url of urls) {
+    try {
+      const response = await fetch(url, {
+        ...options,
+        body,
+        headers,
+        cache: "no-store",
+      })
+
+      if (!response.ok) {
+        const text = await response.text().catch(() => "")
+        errors.push(`[shop-bff] ${response.status} ${response.statusText} @ ${url} ${text}`.trim())
+        continue
+      }
+
+      const json = (await response.json()) as T
+      return json
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error)
+      errors.push(`[shop-bff] network @ ${url} ${message}`)
+    }
   }
 
-  return (await response.json()) as T
+  throw new Error(errors[0] || "[shop-bff] Request failed.")
 }
 
 export async function fetchShopProducts(locale: ShopLocale) {

@@ -16,13 +16,13 @@ type ShopAddToCartPanelProps = {
 const COPY = {
   nl: {
     quantity: "Aantal",
-    decrease: "Minder",
-    increase: "Meer",
+    decrease: "Aantal verlagen",
+    increase: "Aantal verhogen",
   },
   en: {
     quantity: "Quantity",
-    decrease: "Decrease",
-    increase: "Increase",
+    decrease: "Decrease quantity",
+    increase: "Increase quantity",
   },
 }
 
@@ -33,6 +33,7 @@ function clampQuantity(value: number) {
 
 export default function ShopAddToCartPanel({ product, locale, className }: ShopAddToCartPanelProps) {
   const copy = locale === "en" ? COPY.en : COPY.nl
+  const productName = locale === "en" ? product.name.en : product.name.nl
   const [quantity, setQuantity] = useState(1)
   const isUnavailable = product.availability === "OutOfStock"
 
@@ -45,15 +46,15 @@ export default function ShopAddToCartPanel({ product, locale, className }: ShopA
 
   return (
     <div className={cn("flex flex-wrap items-center gap-3", className)}>
-      <div className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm">
+      <div className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-3 py-2 text-sm text-slate-700 shadow-sm">
         <span className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.quantity}</span>
         <div className="flex items-center gap-2">
           <button
             type="button"
             onClick={() => setQuantity((prev) => clampQuantity(prev - 1))}
             disabled={isUnavailable}
-            className="h-8 w-8 rounded-full border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:text-slate-900 disabled:opacity-50"
-            aria-label={copy.decrease}
+            className="h-8 w-8 rounded-full border border-slate-200 bg-white text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-50"
+            aria-label={`${copy.decrease}: ${productName}`}
           >
             -
           </button>
@@ -64,15 +65,16 @@ export default function ShopAddToCartPanel({ product, locale, className }: ShopA
             value={displayQuantity}
             onChange={(event) => handleInput(event.target.value)}
             disabled={isUnavailable}
-            className="w-16 rounded-lg border border-slate-200 bg-white px-2 py-1 text-center text-sm font-semibold text-slate-900"
-            aria-label={copy.quantity}
+            inputMode="numeric"
+            className="w-16 rounded-lg border border-slate-200 bg-white px-2 py-1 text-center text-sm font-semibold text-slate-900 focus:border-indigo-500 focus:outline-none"
+            aria-label={`${copy.quantity}: ${productName}`}
           />
           <button
             type="button"
             onClick={() => setQuantity((prev) => clampQuantity(prev + 1))}
             disabled={isUnavailable}
-            className="h-8 w-8 rounded-full border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:text-slate-900 disabled:opacity-50"
-            aria-label={copy.increase}
+            className="h-8 w-8 rounded-full border border-slate-200 bg-white text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-50"
+            aria-label={`${copy.increase}: ${productName}`}
           >
             +
           </button>

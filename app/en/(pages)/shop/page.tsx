@@ -9,9 +9,9 @@ import { SITE, buildItemListSchema } from "@/lib/seo"
 import { getShopProducts } from "@/lib/shop-data"
 
 export const metadata: Metadata = {
-  title: "Small-batch 3D print shop | X3DPrints",
+  title: "Small-batch 3D print shop online | X3DPrints",
   description:
-    "Small-batch 3D prints with personal quality checks. Direct maker contact, delivery in Belgium or free pickup by appointment.",
+    "Order small-batch 3D prints from live CRM stock. Personal quality checks, secure Mollie payment, and delivery in Belgium or free pickup by appointment.",
   alternates: {
     canonical: `${SITE.url}/en/shop/`,
     languages: {
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Small-batch 3D print shop",
-    description: "A small, curated collection with personal finishing and direct support.",
+    title: "Small-batch 3D print shop online",
+    description: "Live stock, personal finishing, and direct support from the maker.",
     url: `${SITE.url}/en/shop/`,
     images: [{ url: SITE.ogImage, width: 1200, height: 630 }],
     locale: "en_BE",
@@ -30,25 +30,31 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Small-batch 3D print shop | X3DPrints",
-    description: "Small-batch 3D prints with personal finishing and direct support.",
+    title: "Small-batch 3D print shop online | X3DPrints",
+    description: "Live-stock 3D prints with secure Mollie checkout and direct maker support.",
     images: [SITE.ogImage],
   },
 }
 
 const HIGHLIGHTS = [
   {
-    title: "Small-batch made",
-    description: "Every print is produced and checked in-house.",
+    title: "In-house production and checks",
+    description: "Every order gets a manual quality check before shipping.",
   },
   {
-    title: "Delivery or pickup",
-    description: "Delivery in Belgium or free pickup by appointment.",
+    title: "Clear delivery options",
+    description: "Flat-rate delivery in Belgium or free pickup by appointment.",
   },
   {
-    title: "Personal support",
-    description: "Questions about material or finish? You speak with the maker.",
+    title: "Direct maker support",
+    description: "Get quick advice on material, finish, and practical use.",
   },
+]
+
+const HERO_POINTS = [
+  "Live stock from CRM",
+  "Secure Mollie checkout",
+  "Fast delivery or pickup by appointment",
 ]
 
 type ShopStep = { title: string; description: string; href?: string; label?: string }
@@ -56,15 +62,15 @@ type ShopStep = { title: string; description: string; href?: string; label?: str
 const ORDER_STEPS: ShopStep[] = [
   {
     title: "Pick your product",
-    description: "Select your item and review material, color and lead time.",
+    description: "Filter by category, compare details, and set your quantity.",
   },
   {
-    title: "Choose quantity and delivery",
-    description: "Set your quantity and pick delivery or free pickup.",
+    title: "Choose delivery and email",
+    description: "Select shipping or free pickup and add your confirmation email.",
   },
   {
     title: "Pay securely",
-    description: "Pay via Mollie, then we print and inspect your order.",
+    description: "Pay through Mollie and receive your order confirmation right away.",
   },
 ]
 
@@ -84,34 +90,50 @@ export default async function ShopPageEn() {
 
   return (
     <main className="flex-1">
-      <section className="px-6 pb-12 pt-20 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+      <section className="px-6 pb-14 pt-20 sm:px-8 lg:px-12 xl:pb-16">
+        <div className="mx-auto max-w-7xl">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
-            <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
-              Small-batch 3D print shop, personally made
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg text-slate-600">
-              Small runs, direct communication, and careful finishing. Every item is printed in-house,
-              checked for fit, and shipped with care or prepared for free pickup.
-            </p>
+            <div className="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-white/80 p-6 sm:p-8 xl:p-10">
+              <div aria-hidden className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-indigo-200/45 blur-3xl" />
+              <div aria-hidden className="pointer-events-none absolute -bottom-24 left-10 h-56 w-56 rounded-full bg-cyan-200/40 blur-3xl" />
+              <div className="relative">
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
+                <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
+                  Small-batch 3D prints, ready to order
+                </h1>
+                <p className="mt-4 max-w-3xl text-lg text-slate-600">
+                  Order functional and decorative prints produced and checked in-house.
+                  See live stock, choose delivery or pickup, and pay securely via Mollie.
+                </p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {HERO_POINTS.map((point) => (
+                    <span
+                      key={point}
+                      className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-600"
+                    >
+                      {point}
+                    </span>
+                  ))}
+                </div>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <ShimmerButton href="/en/shop#shop-collection">Shop now</ShimmerButton>
+                  <Link
+                    href="/en/contact"
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                  >
+                    Get tailored advice
+                  </Link>
+                </div>
+              </div>
+            </div>
           </Reveal>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <ShimmerButton href="/en/shop#shop-collection">View collection</ShimmerButton>
-            <Link
-              href="/en/contact"
-              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
-            >
-              Ask for personal advice
-            </Link>
-          </div>
         </div>
       </section>
 
       <ShopProductGrid products={liveProducts} locale="en" />
 
-      <section className="px-6 pb-14 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-5xl gap-4 md:grid-cols-3">
+      <section className="px-6 pb-16 sm:px-8 lg:px-12 xl:pb-20">
+        <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3 xl:gap-5">
           {HIGHLIGHTS.map((item) => (
             <Reveal key={item.title} delay={0.05}>
               <GlassCard className="h-full">
@@ -123,11 +145,11 @@ export default async function ShopPageEn() {
         </div>
       </section>
 
-      <section className="px-6 pb-20 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
+      <section className="px-6 pb-20 sm:px-8 lg:px-12 xl:pb-24">
+        <div className="mx-auto max-w-7xl">
           <GlassCard>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-              How ordering works
+              How to order
             </p>
             <div className="mt-4 grid gap-4 md:grid-cols-3">
               {ORDER_STEPS.map((item) => (
