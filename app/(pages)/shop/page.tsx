@@ -92,21 +92,21 @@ export default async function ShopPage() {
   return (
     <main className="flex-1">
       <section className="px-6 pb-14 pt-20 sm:px-8 lg:px-12 xl:pb-16">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[96rem] 2xl:max-w-[108rem]">
           <Reveal>
             <div className="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-white/80 p-6 sm:p-8 xl:p-10">
               <div aria-hidden className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-indigo-200/45 blur-3xl" />
               <div aria-hidden className="pointer-events-none absolute -bottom-24 left-10 h-56 w-56 rounded-full bg-cyan-200/40 blur-3xl" />
-              <div className="relative">
+              <div className="relative md:text-center lg:text-left">
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
                 <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
                   3D prints in kleine oplage, direct bestelbaar
                 </h1>
-                <p className="mt-4 max-w-3xl text-lg text-slate-600">
+                <p className="mt-4 max-w-3xl text-lg text-slate-600 md:mx-auto lg:mx-0">
                   Bestel functionele en decoratieve prints die in-house worden geproduceerd en gecontroleerd.
                   Je ziet live voorraad, kiest zelf levering of afhalen, en rekent veilig af via Mollie.
                 </p>
-                <div className="mt-5 flex flex-wrap gap-2">
+                <div className="mt-5 flex flex-wrap gap-2 md:justify-center lg:justify-start">
                   {HERO_POINTS.map((point) => (
                     <span
                       key={point}
@@ -116,11 +116,17 @@ export default async function ShopPage() {
                     </span>
                   ))}
                 </div>
-                <div className="mt-8 flex flex-wrap gap-3">
-                  <ShimmerButton href="/shop#shop-collection">Shop nu</ShimmerButton>
+                <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:justify-center lg:justify-start">
+                  <ShimmerButton
+                    href="/shop#shop-collection"
+                    wrapperClassName="w-full sm:w-auto"
+                    className="w-full justify-center sm:w-auto"
+                  >
+                    Shop nu
+                  </ShimmerButton>
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-auto"
                   >
                     Krijg advies op maat
                   </Link>
@@ -134,10 +140,10 @@ export default async function ShopPage() {
       <ShopProductGrid products={liveProducts} locale="nl" />
 
       <section className="px-6 pb-16 sm:px-8 lg:px-12 xl:pb-20">
-        <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3 xl:gap-5">
+        <div className="mx-auto grid max-w-[96rem] gap-4 md:grid-cols-3 xl:gap-5 2xl:max-w-[108rem]">
           {HIGHLIGHTS.map((item) => (
             <Reveal key={item.title} delay={0.05}>
-              <GlassCard className="h-full">
+              <GlassCard className="h-full md:text-center lg:text-left">
                 <h2 className="text-lg font-semibold text-slate-900">{item.title}</h2>
                 <p className="mt-2 text-sm text-slate-600">{item.description}</p>
               </GlassCard>
@@ -147,20 +153,20 @@ export default async function ShopPage() {
       </section>
 
       <section className="px-6 pb-20 sm:px-8 lg:px-12 xl:pb-24">
-        <div className="mx-auto max-w-7xl">
-          <GlassCard>
+        <div className="mx-auto max-w-[96rem] 2xl:max-w-[108rem]">
+          <GlassCard className="md:text-center lg:text-left">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
               Zo bestel je
             </p>
             <div className="mt-4 grid gap-4 md:grid-cols-3">
               {ORDER_STEPS.map((item) => (
-                <div key={item.title} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                <div key={item.title} className="rounded-2xl border border-slate-100 bg-white/70 p-4 md:text-center lg:text-left">
                   <h3 className="text-base font-semibold text-slate-900">{item.title}</h3>
                   <p className="mt-2 text-sm text-slate-600">{item.description}</p>
                   {item.href && item.label ? (
                     <Link
                       href={item.href}
-                      className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+                      className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 md:justify-center lg:justify-start"
                     >
                       {item.label}
                       <span className="i-lucide-arrow-right" aria-hidden />
@@ -180,3 +186,4 @@ export default async function ShopPage() {
     </main>
   )
 }
+

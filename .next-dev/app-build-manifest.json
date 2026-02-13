@@ -41,31 +41,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/[slug]/page.js"
     ],
-    "/(pages)/shop/[slug]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/shop/[slug]/page.js"
-    ],
-    "/(pages)/shop/cart/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/shop/cart/page.js"
-    ],
-    "/(pages)/algemene-voorwaarden/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/algemene-voorwaarden/page.js"
-    ],
-    "/(pages)/shop/checkout/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/shop/checkout/page.js"
-    ],
-    "/(pages)/services/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/services/page.js"
-    ],
     "/(pages)/crm/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -75,6 +50,26 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/crm/page.js"
+    ],
+    "/en/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/layout.js"
+    ],
+    "/en/(home)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/(home)/layout.js"
+    ],
+    "/en/(home)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/(home)/page.js"
+    ],
+    "/(pages)/shop/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/shop/[slug]/page.js"
     ]
   }
 }

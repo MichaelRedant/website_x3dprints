@@ -9,6 +9,7 @@ type Props = {
   href: string
   children: React.ReactNode
   className?: string
+  wrapperClassName?: string
   onClick?: () => void
   event?: {
     action: string
@@ -18,14 +19,18 @@ type Props = {
   }
 }
 
-export default function ShimmerButton({ href, children, className, onClick, event }: Props) {
+export default function ShimmerButton({ href, children, className, wrapperClassName, onClick, event }: Props) {
   const handleClick = () => {
     if (event) trackEvent(event)
     if (onClick) onClick()
   }
 
   return (
-    <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="relative inline-flex">
+    <motion.div
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+      className={cn("relative inline-flex", wrapperClassName)}
+    >
       <Link
         href={href}
         onClick={handleClick}

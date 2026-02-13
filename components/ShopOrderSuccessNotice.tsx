@@ -68,12 +68,12 @@ export default function ShopOrderSuccessNotice({ locale }: ShopOrderSuccessNotic
               className="pointer-events-none absolute -bottom-20 left-14 h-48 w-48 rounded-full bg-indigo-200/40 blur-3xl"
             />
 
-            <div className="relative">
-              <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+            <div className="relative md:text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 md:mx-auto lg:mx-0 md:w-fit">
                 <span className="i-lucide-circle-check-big text-sm" aria-hidden />
                 {locale === "en" ? "Order confirmed" : "Bestelling bevestigd"}
               </div>
-              <div className="mt-4 flex flex-wrap items-start gap-4">
+              <div className="mt-4 flex flex-col items-start gap-3 sm:flex-row sm:items-start md:flex-col md:items-center lg:flex-row lg:items-start">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                   <span className="i-lucide-check text-2xl" aria-hidden />
                 </div>
@@ -84,7 +84,7 @@ export default function ShopOrderSuccessNotice({ locale }: ShopOrderSuccessNotic
                 </div>
               </div>
 
-              <div className="mt-4 flex flex-wrap items-center gap-3 rounded-2xl border border-slate-200/80 bg-white/90 p-3">
+              <div className="mt-4 flex flex-col items-start gap-2 rounded-2xl border border-slate-200/80 bg-white/90 p-3 sm:flex-row sm:flex-wrap sm:items-center md:justify-center lg:justify-start">
                 <span className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
                   {copy.orderLabel}
                 </span>
@@ -100,17 +100,17 @@ export default function ShopOrderSuccessNotice({ locale }: ShopOrderSuccessNotic
                 </button>
               </div>
 
-              <div className="mt-4 flex flex-wrap gap-3">
+              <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:justify-center lg:justify-start">
                 <Link
                   href={shopHref}
-                  className="inline-flex items-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:brightness-110"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:brightness-110 sm:w-auto"
                 >
                   {copy.backToShop}
                   <span className="i-lucide-arrow-right" aria-hidden />
                 </Link>
                 <Link
                   href={contactHref}
-                  className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-auto"
                 >
                   {copy.request}
                   <span className="i-lucide-arrow-right" aria-hidden />
@@ -123,3 +123,4 @@ export default function ShopOrderSuccessNotice({ locale }: ShopOrderSuccessNotic
     </section>
   )
 }
+

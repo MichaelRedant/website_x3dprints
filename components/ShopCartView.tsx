@@ -299,8 +299,8 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                 aria-hidden
                 className="pointer-events-none absolute -bottom-24 left-10 h-56 w-56 rounded-full bg-indigo-200/40 blur-3xl"
               />
-              <div className="relative">
-              <div className="flex items-center gap-4">
+              <div className="relative md:text-center lg:text-left">
+              <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center md:flex-col md:justify-center lg:flex-row lg:justify-start">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                   <span className="i-lucide-check text-2xl" aria-hidden />
                 </div>
@@ -309,10 +309,10 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                   <p className="mt-2 text-sm text-slate-600">{copy.successBody}</p>
                 </div>
               </div>
-              <div className="mt-4 grid gap-4 sm:grid-cols-[1.2fr_0.8fr]">
+              <div className="mt-4 grid gap-4 sm:grid-cols-[1.2fr_0.8fr] md:mx-auto lg:mx-0 md:max-w-3xl lg:max-w-none">
                 <div className="rounded-2xl border border-slate-100 bg-white/70 p-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.orderCodeLabel}</p>
-                  <div className="mt-2 flex flex-wrap items-center gap-3">
+                  <div className="mt-2 flex flex-col items-start gap-2 sm:flex-row sm:flex-wrap sm:items-center md:justify-center lg:justify-start">
                     <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-slate-900">
                       {orderCode ?? "DEMO"}
                     </span>
@@ -342,7 +342,7 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
               <p className="mt-4 text-sm text-slate-600">{copy.successNote}</p>
               <Link
                 href={shopHref}
-                className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:brightness-110"
+                className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:brightness-110 sm:w-fit md:mx-auto lg:mx-0"
               >
                 {copy.backToShop}
                 <span className="i-lucide-arrow-right" aria-hidden />
@@ -365,12 +365,12 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                 aria-hidden
                 className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-indigo-200/45 blur-3xl"
               />
-              <div className="relative">
+              <div className="relative md:text-center lg:text-left">
               <h2 className="text-2xl font-semibold text-slate-900">{copy.emptyTitle}</h2>
               <p className="mt-2 text-sm text-slate-600">{copy.emptyBody}</p>
               <Link
                 href={shopHref}
-                className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:brightness-110"
+                className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:brightness-110 sm:w-fit md:mx-auto lg:mx-0"
               >
                 {copy.continueShopping}
                 <span className="i-lucide-arrow-right" aria-hidden />
@@ -398,7 +398,7 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
             />
 
             <div className="relative">
-              <div className="flex flex-wrap items-start justify-between gap-4">
+              <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between md:flex-col md:items-center md:text-center md:justify-center lg:flex-row lg:items-start lg:text-left lg:justify-between">
                 <div>
                   <h2 className="text-2xl font-semibold text-slate-900">{sectionTitle}</h2>
                   <p className="mt-2 text-sm text-slate-600">
@@ -423,17 +423,17 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                   </div>
                   <p className="mt-2 text-xs text-slate-500">{isLiveCheckout ? copy.modeBodyLive : copy.modeBodyDemo}</p>
                 </div>
-                <div className="flex flex-wrap items-center gap-3">
+                <div className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center md:justify-center lg:justify-start">
                   <Link
                     href={shopHref}
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-600 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-600 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-auto"
                   >
                     {copy.continueShopping}
                   </Link>
                   <button
                     type="button"
                     onClick={() => void clearCart()}
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-600 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-60"
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-600 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
                     disabled={isSyncing}
                   >
                     {copy.clear}
@@ -441,12 +441,12 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                 </div>
               </div>
 
-              <div className="mt-4 flex flex-wrap gap-2">
+              <div className="mt-4 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:flex-wrap md:justify-center md:overflow-visible md:pb-0 lg:justify-start">
                 {copy.steps.map((label, index) => (
                   <span
                     key={label}
                     className={cn(
-                      "inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold shadow-sm",
+                      "inline-flex whitespace-nowrap items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold shadow-sm",
                       index <= stepIndex
                         ? "bg-indigo-600 text-white"
                         : "border border-slate-200 bg-white text-slate-500",
@@ -472,7 +472,7 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
           <div className="grid gap-6 xl:gap-8 xl:grid-cols-[1.35fr_0.65fr] 2xl:grid-cols-[1.4fr_0.6fr]">
             <GlassCard className="overflow-hidden border-slate-200/80 bg-white/80 p-0">
               <div className="border-b border-slate-100 bg-white/60 px-6 py-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.items}</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500 md:text-center lg:text-left">{copy.items}</p>
               </div>
               <div className="divide-y divide-slate-100">
                 {items.map((item) => {
@@ -483,11 +483,11 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                   return (
                     <div
                       key={item.slug}
-                      className="flex flex-col gap-4 bg-white/70 px-6 py-5 transition sm:flex-row sm:items-center xl:px-7"
+                      className="flex flex-col gap-4 bg-white/70 px-6 py-5 transition sm:flex-row sm:items-center md:text-center lg:text-left xl:px-7"
                     >
                       <Link
                         href={itemHref}
-                        className="w-full max-w-[144px] overflow-hidden rounded-xl border border-slate-100 bg-white transition hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                        className="w-full max-w-full overflow-hidden rounded-xl border border-slate-100 bg-white transition hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:max-w-[144px] md:mx-auto lg:mx-0"
                         aria-label={name}
                       >
                         <Image
@@ -499,8 +499,8 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                           sizes="(min-width: 768px) 140px, 60vw"
                         />
                       </Link>
-                      <div className="flex-1 space-y-2">
-                        <div className="flex flex-wrap items-center justify-between gap-2">
+                      <div className="flex-1 space-y-2 md:flex md:flex-col md:items-center lg:block">
+                        <div className="flex flex-col items-start gap-1 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between md:flex-col md:justify-center lg:flex-row lg:justify-between">
                           <h3 className="text-lg font-semibold text-slate-900">
                             <Link
                               href={itemHref}
@@ -514,7 +514,7 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                         <p className="text-sm text-slate-600">
                           {formatEur(item.priceEur)} {copy.perUnit}
                         </p>
-                        <div className="flex flex-wrap items-center gap-3">
+                        <div className="flex flex-col items-start gap-2 sm:flex-row sm:flex-wrap sm:items-center md:justify-center lg:justify-start">
                           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
                             {copy.quantity}
                           </span>
@@ -556,18 +556,18 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
             </GlassCard>
 
             <div className="space-y-6 xl:sticky xl:top-24 xl:self-start">
-              <GlassCard className="border-slate-200/80 bg-white/80">
+              <GlassCard className="border-slate-200/80 bg-white/80 md:text-center lg:text-left">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.summaryLabel}</p>
                 <div className="mt-3 space-y-2 text-sm text-slate-600">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between md:justify-center lg:justify-between md:gap-3">
                     <span>{copy.subtotal}</span>
                     <span className="font-semibold text-slate-900">{formatEur(totals.subtotal)}</span>
                   </div>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between md:justify-center lg:justify-between md:gap-3">
                     <span>{shippingLabel}</span>
                     <span className="font-semibold text-slate-900">{formatEur(totals.shipping)}</span>
                   </div>
-                  <div className="flex items-center justify-between border-t border-slate-200 pt-2 text-base font-semibold text-slate-900">
+                  <div className="flex items-center justify-between border-t border-slate-200 pt-2 text-base font-semibold text-slate-900 md:justify-center lg:justify-between md:gap-3">
                     <span>{totalLabel}</span>
                     <span>{formatEur(totals.total)}</span>
                   </div>
@@ -580,7 +580,7 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                         {copy.shippingChoiceTitle}
                       </p>
                       <p className="mt-1 text-xs text-slate-500">{copy.shippingChoiceNote}</p>
-                      <div className="mt-3 space-y-2">
+                      <div className="mt-3 space-y-2 md:mx-auto lg:mx-0 md:max-w-xl lg:max-w-none">
                         {resolvedShippingMethods.map((method) => {
                           const label =
                             SHIPPING_LABELS[locale][method.id] ?? method.label ?? method.id
@@ -589,13 +589,13 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                             <label
                               key={method.id}
                               className={cn(
-                                "flex cursor-pointer items-center justify-between rounded-xl border px-3 py-2 text-sm transition",
+                                "flex cursor-pointer items-start gap-2 rounded-xl border px-3 py-2 text-sm transition sm:items-center sm:justify-between",
                                 isSelected
                                   ? "border-indigo-500 bg-indigo-50 text-slate-900"
                                   : "border-slate-200 bg-white text-slate-600 hover:border-slate-300",
                               )}
                             >
-                              <span className="flex items-center gap-2">
+                              <span className="flex items-start gap-2 sm:items-center">
                                 <input
                                   type="radio"
                                   name="shipping-method"
@@ -645,7 +645,7 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                           !selectedShippingId
                         }
                         className={cn(
-                          "inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold text-white shadow-sm",
+                          "inline-flex w-full items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold text-white shadow-sm",
                           "bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] transition hover:brightness-110",
                           (isSyncing || redirecting) && "opacity-70",
                         )}
@@ -657,7 +657,7 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                       <button
                         type="button"
                         onClick={handleDemoOrder}
-                        className="inline-flex items-center justify-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:brightness-110"
+                        className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:brightness-110"
                       >
                         {copy.placeOrder}
                         <span className="i-lucide-check" aria-hidden />
@@ -666,7 +666,7 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                   ) : (
                     <Link
                       href={checkoutHref}
-                      className="inline-flex items-center justify-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:brightness-110"
+                      className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:brightness-110"
                     >
                       {copy.checkout}
                       <span className="i-lucide-arrow-right" aria-hidden />
@@ -676,12 +676,12 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                   {isCheckout ? (
                     <Link
                       href={contactHref}
-                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-600 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                      className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-600 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
                     >
                       {copy.request}
                     </Link>
                   ) : (
-                    <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500">
+                    <div className="flex flex-col items-start gap-2 text-xs text-slate-500 sm:flex-row sm:flex-wrap sm:items-center md:justify-center lg:justify-start">
                       <p>{isLiveCheckout ? copy.liveNote : copy.demoNote}</p>
                       <Link
                         href={shopHref}
@@ -701,7 +701,7 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
               </GlassCard>
 
               {crossSellProducts.length ? (
-                <GlassCard className="border-slate-200/80 bg-white/80">
+                <GlassCard className="border-slate-200/80 bg-white/80 md:text-center lg:text-left">
                   <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
                     {copy.crossSellTitle}
                   </p>
@@ -716,8 +716,8 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                           key={product.slug}
                           className="rounded-2xl border border-slate-200/80 bg-white/90 p-3 transition hover:-translate-y-0.5 hover:shadow-md"
                         >
-                          <div className="flex items-start gap-3">
-                            <div className="w-20 overflow-hidden rounded-xl border border-slate-100 bg-white">
+                          <div className="flex flex-col gap-3 sm:flex-row sm:items-start md:flex-col md:items-center lg:flex-row lg:items-start">
+                            <div className="w-full overflow-hidden rounded-xl border border-slate-100 bg-white sm:w-20">
                               <Image
                                 src={product.image.url}
                                 alt={localize(product.image.alt, locale)}
@@ -730,7 +730,7 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                             <div className="flex-1">
                               <p className="text-sm font-semibold text-slate-900">{name}</p>
                               <p className="mt-1 text-xs text-slate-600">{summary}</p>
-                              <div className="mt-2 flex items-center justify-between text-xs text-slate-600">
+                              <div className="mt-2 flex items-center justify-between text-xs text-slate-600 md:justify-center lg:justify-between md:gap-3">
                                 <span className="font-semibold text-slate-900">{formatEur(product.priceEur)}</span>
                                 <Link
                                   href={href}
@@ -749,14 +749,14 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
                 </GlassCard>
               ) : null}
 
-              <GlassCard className="border-slate-200/80 bg-white/80">
+              <GlassCard className="border-slate-200/80 bg-white/80 md:text-center lg:text-left">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
                   {copy.helpTitle}
                 </p>
                 <p className="mt-2 text-sm text-slate-600">{copy.helpBody}</p>
                 <Link
                   href={contactHref}
-                  className="mt-3 inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                  className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-fit md:mx-auto lg:mx-0"
                 >
                   {copy.request}
                   <span className="i-lucide-arrow-right" aria-hidden />
@@ -769,3 +769,4 @@ export default function ShopCartView({ locale, variant = "cart" }: ShopCartViewP
     </section>
   )
 }
+

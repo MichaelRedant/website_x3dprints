@@ -78,10 +78,10 @@ export default function ShopCartStickySummary({ locale, className }: ShopCartSti
         </div>
       </div>
 
-      <div className="fixed bottom-4 left-4 right-4 z-40 rounded-2xl border border-slate-200 bg-white/95 p-4 shadow-xl backdrop-blur lg:hidden">
+      <div className="fixed bottom-3 left-3 right-3 z-40 rounded-2xl border border-slate-200 bg-white/95 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-xl backdrop-blur sm:bottom-4 sm:left-4 sm:right-4 sm:p-4 sm:pb-[max(1rem,env(safe-area-inset-bottom))] lg:hidden">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.title}</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500 sm:tracking-[0.3em]">{copy.title}</p>
             <p className="mt-1 text-sm text-slate-700">
               {itemCount} {copy.items.toLowerCase()} | <span className="font-semibold text-slate-900">{totalLabel}</span>
             </p>
@@ -89,13 +89,13 @@ export default function ShopCartStickySummary({ locale, className }: ShopCartSti
           <div className="grid w-full grid-cols-2 gap-2 sm:w-auto sm:grid-cols-none sm:auto-cols-max sm:grid-flow-col">
             <Link
               href={cartHref}
-              className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50"
+              className="inline-flex min-h-10 items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50"
             >
               {copy.toCart}
             </Link>
             <Link
               href={checkoutHref}
-              className="inline-flex items-center justify-center rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-3 py-2 text-xs font-semibold text-white shadow-sm transition hover:brightness-110"
+              className="inline-flex min-h-10 items-center justify-center rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-3 py-2 text-xs font-semibold text-white shadow-sm transition hover:brightness-110"
             >
               {copy.toCheckout}
             </Link>

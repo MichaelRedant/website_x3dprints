@@ -45,8 +45,8 @@ export default function ShopAddToCartPanel({ product, locale, className }: ShopA
   }
 
   return (
-    <div className={cn("flex flex-wrap items-center gap-3", className)}>
-      <div className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-3 py-2 text-sm text-slate-700 shadow-sm">
+    <div className={cn("flex flex-col items-stretch gap-3 sm:flex-row sm:items-center md:justify-center lg:justify-start", className)}>
+      <div className="flex w-full items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white/90 px-3 py-2 text-sm text-slate-700 shadow-sm sm:w-auto sm:justify-start">
         <span className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.quantity}</span>
         <div className="flex items-center gap-2">
           <button
@@ -66,7 +66,7 @@ export default function ShopAddToCartPanel({ product, locale, className }: ShopA
             onChange={(event) => handleInput(event.target.value)}
             disabled={isUnavailable}
             inputMode="numeric"
-            className="w-16 rounded-lg border border-slate-200 bg-white px-2 py-1 text-center text-sm font-semibold text-slate-900 focus:border-indigo-500 focus:outline-none"
+            className="w-14 rounded-lg border border-slate-200 bg-white px-2 py-1 text-center text-sm font-semibold text-slate-900 focus:border-indigo-500 focus:outline-none"
             aria-label={`${copy.quantity}: ${productName}`}
           />
           <button
@@ -80,7 +80,13 @@ export default function ShopAddToCartPanel({ product, locale, className }: ShopA
           </button>
         </div>
       </div>
-      <ShopAddToCartButton product={product} locale={locale} quantity={displayQuantity} />
+      <ShopAddToCartButton
+        product={product}
+        locale={locale}
+        quantity={displayQuantity}
+        className="w-full justify-center sm:w-auto"
+      />
     </div>
   )
 }
+

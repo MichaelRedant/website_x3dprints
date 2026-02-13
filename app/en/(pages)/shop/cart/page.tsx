@@ -52,23 +52,27 @@ export default function ShopCartPageEn() {
             <div className="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-white/80 p-6 sm:p-8 xl:p-10">
               <div aria-hidden className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-indigo-200/45 blur-3xl" />
               <div aria-hidden className="pointer-events-none absolute -bottom-24 left-10 h-56 w-56 rounded-full bg-cyan-200/40 blur-3xl" />
-              <div className="relative">
+              <div className="relative md:text-center lg:text-left">
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
                 <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
                   {IS_LIVE ? "Your cart" : "The cart is in preparation"}
                 </h1>
-                <p className="mt-4 max-w-3xl text-lg text-slate-600">
+                <p className="mt-4 max-w-3xl text-lg text-slate-600 md:mx-auto lg:mx-0">
                   {IS_LIVE
                     ? "Review your items, adjust quantities, and continue to checkout in a few steps."
                     : "The cart will go live once the first products are available. Until then, request advice or discuss material selection with us."}
                 </p>
-                <div className="mt-8 flex flex-wrap gap-3">
-                  <ShimmerButton href={IS_LIVE ? "/en/shop" : "/en/contact"}>
+                <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:justify-center lg:justify-start">
+                  <ShimmerButton
+                    href={IS_LIVE ? "/en/shop" : "/en/contact"}
+                    wrapperClassName="w-full sm:w-auto"
+                    className="w-full justify-center sm:w-auto"
+                  >
                     {IS_LIVE ? "Continue shopping" : "Request advice"}
                   </ShimmerButton>
                   <Link
                     href="/en/materials#material-suggestion-tool"
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-auto"
                   >
                     Get material guidance
                   </Link>
@@ -85,3 +89,5 @@ export default function ShopCartPageEn() {
     </main>
   )
 }
+
+

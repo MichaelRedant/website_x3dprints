@@ -35,6 +35,8 @@ type ShopCopy = {
   ctaPrimary: string
   ctaSecondary: string
   ctaMaterials: string
+  cartCta: string
+  checkoutCta: string
   availabilityLabel: string
   leadTimeLabel: string
 }
@@ -60,6 +62,8 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     ctaPrimary: "Vraag offerte voor dit product",
     ctaSecondary: "Hulp bij materiaalkeuze",
     ctaMaterials: "Vergelijk materialen",
+    cartCta: "Bekijk mandje",
+    checkoutCta: "Ga naar checkout",
     availabilityLabel: "Status",
     leadTimeLabel: "Productietijd",
   },
@@ -83,6 +87,8 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     ctaPrimary: "Request quote for this product",
     ctaSecondary: "Get material guidance",
     ctaMaterials: "Compare materials",
+    cartCta: "View cart",
+    checkoutCta: "Go to checkout",
     availabilityLabel: "Status",
     leadTimeLabel: "Production time",
   },
@@ -217,6 +223,8 @@ export function renderShopProductPage({
   const materialsUrl = `${basePath}/materials`
   const suggestionUrl = `${basePath}/materials#material-suggestion-tool`
   const shopUrl = `${basePath}/shop`
+  const cartUrl = `${basePath}/shop/cart`
+  const checkoutUrl = `${basePath}/shop/checkout`
 
   const highlightItems = product.highlights?.length
     ? product.highlights.map((item) => ({
@@ -258,16 +266,16 @@ export function renderShopProductPage({
   return (
     <main className="flex-1">
       <section className="px-6 pb-14 pt-20 sm:px-8 lg:px-12 xl:pb-16">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[96rem] 2xl:max-w-[108rem]">
           <Reveal>
             <div className="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-white/80 p-6 sm:p-8 xl:p-10">
               <div aria-hidden className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-indigo-200/45 blur-3xl" />
               <div aria-hidden className="pointer-events-none absolute -bottom-24 left-8 h-56 w-56 rounded-full bg-cyan-200/40 blur-3xl" />
-              <div className="relative">
+              <div className="relative md:text-center lg:text-left">
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">{copy.shopLabel}</p>
                 <Link
                   href={shopUrl}
-                  className="mt-3 inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                  className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-fit md:mx-auto lg:mx-0"
                 >
                   <span className="i-lucide-arrow-left" aria-hidden />
                   {copy.backToShop}
@@ -275,9 +283,9 @@ export function renderShopProductPage({
                 <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
                   {productName}
                 </h1>
-                <p className="mt-4 max-w-3xl text-lg text-slate-600">{productSummary}</p>
+                <p className="mt-4 max-w-3xl text-lg text-slate-600 md:mx-auto lg:mx-0">{productSummary}</p>
 
-                <div className="mt-5 flex flex-wrap items-center gap-2 text-xs font-semibold">
+                <div className="mt-5 flex flex-wrap items-center gap-2 text-xs font-semibold md:justify-center lg:justify-start">
                   <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2 py-1 text-emerald-700">
                     {copy.availabilityLabel}: {availabilityLabel}
                   </span>
@@ -304,13 +312,13 @@ export function renderShopProductPage({
             </div>
           </Reveal>
 
-          <div className="mt-8 grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
+          <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] xl:gap-8">
             <div className="space-y-6">
-              <GlassCard className="border-slate-200/80 bg-white/80">
+              <GlassCard className="border-slate-200/80 bg-white/80 md:text-center lg:text-left">
                 <h2 className="text-lg font-semibold text-slate-900">{copy.highlightsTitle}</h2>
                 <div className="mt-4 grid gap-4 md:grid-cols-3">
                   {highlightItems.map((item) => (
-                    <div key={item.title} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                    <div key={item.title} className="rounded-2xl border border-slate-100 bg-white/70 p-4 md:text-center lg:text-left">
                       <p className="text-sm font-semibold text-slate-900">{item.title}</p>
                       <p className="mt-2 text-sm text-slate-600">{item.description}</p>
                     </div>
@@ -318,11 +326,11 @@ export function renderShopProductPage({
                 </div>
               </GlassCard>
 
-              <GlassCard className="border-slate-200/80 bg-white/80">
+              <GlassCard className="border-slate-200/80 bg-white/80 md:text-center lg:text-left">
                 <h2 className="text-lg font-semibold text-slate-900">{copy.specsTitle}</h2>
                 {specsItems.length > 0 ? (
-                  <div className="mt-4 overflow-hidden rounded-2xl border border-slate-100 bg-white/70">
-                    <table className="w-full text-left text-sm text-slate-600">
+                  <div className="mt-4 overflow-x-auto rounded-2xl border border-slate-100 bg-white/70">
+                    <table className="min-w-[420px] w-full text-left text-sm text-slate-600 md:text-left">
                       <tbody>
                         {specsItems.map((spec) => (
                           <tr key={spec.label} className="border-b border-slate-100 last:border-b-0">
@@ -340,15 +348,14 @@ export function renderShopProductPage({
             </div>
 
             <div className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-              <GlassCard className="border-slate-200/80 bg-white/80">
-                <div className="overflow-hidden rounded-2xl border border-slate-100 bg-white/70">
+              <GlassCard className="border-slate-200/80 bg-white/80 md:text-center lg:text-left">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-slate-100 bg-slate-100">
                   <Image
                     src={productImageUrl}
                     alt={productImageAlt}
-                    width={1200}
-                    height={900}
-                    className="h-auto w-full object-cover"
-                    sizes="(min-width: 1024px) 40vw, 90vw"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 1536px) 30vw, (min-width: 1024px) 40vw, 92vw"
                     priority
                   />
                 </div>
@@ -364,28 +371,44 @@ export function renderShopProductPage({
                     </p>
                   ) : null}
                 </div>
-                <div className="mt-5">
+                <div className="mt-5 space-y-3">
                   <ShopAddToCartPanel product={product} locale={locale} />
-                  <div className="mt-4 flex flex-wrap gap-3">
+                  <div className="grid gap-2 sm:grid-cols-2">
+                    <Link
+                      href={cartUrl}
+                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                    >
+                      {copy.cartCta}
+                      <span className="i-lucide-shopping-cart" aria-hidden />
+                    </Link>
+                    <Link
+                      href={checkoutUrl}
+                      className="inline-flex items-center justify-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:brightness-110"
+                    >
+                      {copy.checkoutCta}
+                      <span className="i-lucide-credit-card" aria-hidden />
+                    </Link>
+                  </div>
+                  <div className="mt-1 flex flex-wrap gap-3 md:justify-center lg:justify-start">
                     <Link
                       href={contactUrl}
-                      className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                      className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-auto"
                     >
                       {copy.ctaPrimary}
                     </Link>
                   </div>
                 </div>
-                <div className="mt-4 flex flex-wrap gap-4">
+                <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:justify-center lg:justify-start">
                   <Link
                     href={suggestionUrl}
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+                    className="inline-flex w-full items-center justify-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 sm:w-auto"
                   >
                     {copy.ctaSecondary}
                     <span className="i-lucide-arrow-right" aria-hidden />
                   </Link>
                   <Link
                     href={materialsUrl}
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+                    className="inline-flex w-full items-center justify-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 sm:w-auto"
                   >
                     {copy.ctaMaterials}
                     <span className="i-lucide-arrow-right" aria-hidden />
@@ -393,7 +416,7 @@ export function renderShopProductPage({
                 </div>
               </GlassCard>
 
-              <GlassCard className="border-slate-200/80 bg-white/80">
+              <GlassCard className="border-slate-200/80 bg-white/80 md:text-center lg:text-left">
                 <h2 className="text-lg font-semibold text-slate-900">{copy.shippingTitle}</h2>
                 <p className="mt-2 text-sm text-slate-600">{copy.shippingBody}</p>
                 <div className="mt-4">
@@ -410,18 +433,18 @@ export function renderShopProductPage({
 
       {relatedProducts.length ? (
         <section className="px-6 pb-14 sm:px-8 lg:px-12 xl:pb-16">
-          <div className="mx-auto max-w-7xl">
-            <GlassCard className="border-slate-200/80 bg-white/80">
+          <div className="mx-auto max-w-[96rem] 2xl:max-w-[108rem]">
+            <GlassCard className="border-slate-200/80 bg-white/80 md:text-center lg:text-left">
               <h2 className="text-lg font-semibold text-slate-900">{copy.crossSellTitle}</h2>
               <p className="mt-2 text-sm text-slate-600">{copy.crossSellBody}</p>
-              <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
                 {relatedProducts.map((item) => {
                   const name = localizeText(item.name, locale)
                   const summary = localizeText(item.summary, locale)
                   const imageAlt = item.image.alt ? localizeText(item.image.alt, locale) : name
                   const href = `${basePath}/shop/${item.slug}`
                   return (
-                    <div key={item.slug} className="rounded-2xl border border-slate-100 bg-white/70 p-4">
+                    <div key={item.slug} className="rounded-2xl border border-slate-100 bg-white/70 p-4 md:text-center lg:text-left">
                       <div className="overflow-hidden rounded-xl border border-slate-100 bg-white">
                         <Image
                           src={item.image.url}
@@ -435,11 +458,15 @@ export function renderShopProductPage({
                       <h3 className="mt-4 text-lg font-semibold text-slate-900">{name}</h3>
                       <p className="mt-2 text-sm text-slate-600">{summary}</p>
                       <p className="mt-3 text-sm font-semibold text-slate-900">{formatEur(item.priceEur)}</p>
-                      <div className="mt-3 flex flex-wrap items-center gap-2">
-                        <ShopAddToCartButton product={item} locale={locale} className="px-4 py-2 text-xs" />
+                      <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center md:justify-center lg:justify-start">
+                        <ShopAddToCartButton
+                          product={item}
+                          locale={locale}
+                          className="w-full justify-center px-4 py-2 text-xs sm:w-auto"
+                        />
                         <Link
                           href={href}
-                          className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+                          className="inline-flex w-full items-center justify-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 sm:w-auto"
                         >
                           {copy.crossSellCta}
                           <span className="i-lucide-arrow-right" aria-hidden />
@@ -460,3 +487,4 @@ export function renderShopProductPage({
     </main>
   )
 }
+
