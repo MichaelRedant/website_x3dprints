@@ -26,50 +26,45 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/layout.js"
     ],
-    "/(pages)/shop/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/shop/layout.js"
-    ],
-    "/(pages)/shop/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/shop/page.js"
-    ],
     "/(pages)/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/[slug]/page.js"
     ],
-    "/(pages)/crm/layout": [
+    "/(pages)/blog/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/crm/layout.js"
+      "static/chunks/app/(pages)/blog/layout.js"
     ],
-    "/(pages)/crm/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/crm/page.js"
+      "static/chunks/app/_not-found/page.js"
     ],
-    "/en/layout": [
+    "/(pages)/blog/3d-printen-lente-pasen/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/en/layout.js"
+      "static/chunks/app/(pages)/blog/3d-printen-lente-pasen/page.js"
     ],
-    "/en/(home)/layout": [
+    "/segments/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/en/(home)/layout.js"
+      "static/chunks/app/segments/layout.js"
     ],
-    "/en/(home)/page": [
+    "/segments/3d-printing-seasonal/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/en/(home)/page.js"
+      "static/chunks/app/segments/3d-printing-seasonal/page.js"
     ],
-    "/(pages)/shop/[slug]/page": [
+    "/(pages)/blog/3d-printen-valentijn/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/shop/[slug]/page.js"
+      "static/chunks/app/(pages)/blog/3d-printen-valentijn/page.js"
+    ],
+    "/(pages)/blog/3d-printen-herfst-halloween/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/3d-printen-herfst-halloween/page.js"
     ]
   }
 }

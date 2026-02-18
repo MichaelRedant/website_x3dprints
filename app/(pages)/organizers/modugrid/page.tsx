@@ -102,7 +102,7 @@ export default function ModuGridPage() {
     <>
       <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-20">
         <Reveal className="space-y-6">
-          <div className="inline-flex items-center gap-2 rounded-full bg-cyan-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-800 ring-1 ring-cyan-100 dark:bg-[#0f162c] dark:text-cyan-200">
+          <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-800 ring-1 ring-amber-100 dark:bg-[#0f162c] dark:text-amber-200">
             Gridfinity · open-source raster zonder losse bakjes
           </div>
 
@@ -123,19 +123,19 @@ export default function ModuGridPage() {
             <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-xl" />
 
           <div className="flex flex-wrap gap-3 text-sm">
-            <a href="#bundles" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+            <a href="#bundles" className="underline decoration-amber-400 hover:decoration-amber-700">
               Bundels & presets
             </a>
-            <a href="#carousel" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+            <a href="#carousel" className="underline decoration-amber-400 hover:decoration-amber-700">
               Foto’s
             </a>
-            <a href="#faq" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+            <a href="#faq" className="underline decoration-amber-400 hover:decoration-amber-700">
               FAQ
             </a>
-            <Link href="/blog/gridfinity-modulair-opslagsysteem" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+            <Link href="/blog/gridfinity-modulair-opslagsysteem" className="underline decoration-amber-400 hover:decoration-amber-700">
               Gridfinity gids
             </Link>
-            <a href="#modugrid-sources" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+            <a href="#modugrid-sources" className="underline decoration-amber-400 hover:decoration-amber-700">
               Bronnen
             </a>
           </div>
@@ -144,7 +144,7 @@ export default function ModuGridPage() {
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
             <div className="flex flex-wrap gap-3">
               <Link href={contactHref} className="no-underline">
-                <div className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:brightness-110 dark:bg-cyan-500">
+                <div className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:brightness-110 dark:bg-amber-500">
                   Plan een Gridfinity indeling
                   <span className="i-lucide-arrow-right" aria-hidden />
                 </div>
@@ -152,7 +152,7 @@ export default function ModuGridPage() {
 
               <Link
                 href="#bundles"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900 dark:border-slate-700 dark:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-900 dark:border-slate-700 dark:text-slate-100"
               >
                 Ga naar bundels
                 <span className="i-lucide-layout-grid" aria-hidden />
@@ -160,7 +160,7 @@ export default function ModuGridPage() {
 
               <Link
                 href="#carousel"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900 dark:border-slate-700 dark:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-900 dark:border-slate-700 dark:text-slate-100"
               >
                 Bekijk foto’s
                 <span className="i-lucide-image" aria-hidden />
@@ -178,7 +178,7 @@ export default function ModuGridPage() {
                 key={item}
                 className="flex items-center gap-2 rounded-xl bg-white/70 px-4 py-3 text-sm font-semibold text-slate-800 ring-1 ring-white/60 backdrop-blur dark:bg-[#0B0F1A]/70 dark:text-slate-100 dark:ring-0"
               >
-                <span className="i-lucide-check-circle-2 text-cyan-600" aria-hidden />
+                <span className="i-lucide-check-circle-2 text-amber-600" aria-hidden />
                 {item}
               </li>
             ))}
@@ -189,7 +189,7 @@ export default function ModuGridPage() {
         <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
           <div className="grid gap-4 lg:grid-cols-[1.1fr_.9fr] lg:items-start">
             <div className="space-y-3">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700">Wat is Gridfinity?</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-700">Wat is Gridfinity?</p>
               <h2 className="text-xl font-bold text-slate-900 dark:text-white">
                 Modulaire basis (gridfinity-stijl) voor bureau, lade of koffer
               </h2>
@@ -210,15 +210,15 @@ export default function ModuGridPage() {
               <p className="font-semibold text-slate-900 dark:text-white">Toepassingen</p>
               <ul className="mt-2 space-y-2">
                 <li className="flex items-start gap-2">
-                  <span className="i-lucide-briefcase text-cyan-600" aria-hidden />
+                  <span className="i-lucide-briefcase text-amber-600" aria-hidden />
                   <span>Professioneel: ESD-lades, servicekoffers, meetapparatuur met vaste posities.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="i-lucide-pencil-ruler text-cyan-600" aria-hidden />
+                  <span className="i-lucide-pencil-ruler text-amber-600" aria-hidden />
                   <span>Werkbank: bits, boren, schroeven, drivers en handgereedschap per zone.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="i-lucide-palette text-cyan-600" aria-hidden />
+                  <span className="i-lucide-palette text-amber-600" aria-hidden />
                   <span>Hobby: verfpotjes, miniaturen, hobbysnijgereedschap en soldeeraccessoires netjes samen.</span>
                 </li>
               </ul>
@@ -232,7 +232,7 @@ export default function ModuGridPage() {
         <div className="mx-auto max-w-6xl space-y-10">
           <Reveal className="grid gap-6 rounded-3xl bg-white/70 p-6 ring-1 ring-white/60 backdrop-blur dark:bg-[#0B0F1A]/70 dark:ring-0 md:grid-cols-[1fr_1fr] md:gap-10">
             <div className="space-y-3">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-700">Wat los je op</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Wat los je op</p>
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Rust in je koffer of lade</h2>
 
               <p className="text-slate-700 dark:text-slate-200">
@@ -247,7 +247,7 @@ export default function ModuGridPage() {
                   key={pain}
                   className="flex items-center gap-3 rounded-2xl border border-slate-100 bg-white/70 px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm shadow-slate-900/5 dark:border-slate-800 dark:bg-[#0f162c] dark:text-slate-100"
                 >
-                  <span className="i-lucide-minus-circle text-cyan-600" aria-hidden />
+                  <span className="i-lucide-minus-circle text-amber-600" aria-hidden />
                   {pain}
                 </li>
               ))}
@@ -257,7 +257,7 @@ export default function ModuGridPage() {
           <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 shadow-lg shadow-slate-900/5 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-700">Zo werkt het</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Zo werkt het</p>
                 <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Geen STL, geen technische praat</h2>
 
                 <p className="mt-2 max-w-2xl text-slate-700 dark:text-slate-200">
@@ -267,7 +267,7 @@ export default function ModuGridPage() {
 
               <Link
                 href={contactHref}
-                className="text-sm font-semibold text-cyan-700 underline-offset-4 hover:text-cyan-900 hover:underline dark:text-cyan-200 dark:hover:text-cyan-100"
+                className="text-sm font-semibold text-amber-700 underline-offset-4 hover:text-amber-900 hover:underline dark:text-amber-200 dark:hover:text-amber-100"
               >
                 Start met jouw lade/koffer maten
               </Link>
@@ -279,7 +279,7 @@ export default function ModuGridPage() {
                   key={step.title}
                   className="rounded-2xl border border-slate-100 bg-slate-50/70 p-4 text-slate-800 ring-1 ring-white/60 dark:border-slate-800 dark:bg-[#0f162c] dark:text-slate-100"
                 >
-                  <div className="mb-2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-cyan-600 text-sm font-bold text-white">
+                  <div className="mb-2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-amber-600 text-sm font-bold text-white">
                     {index + 1}
                   </div>
                   <h3 className="text-base font-semibold">{step.title}</h3>
@@ -308,7 +308,7 @@ export default function ModuGridPage() {
 
           <Reveal className="grid gap-6 rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="space-y-3">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-700">Prijs & afspraken</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Prijs & afspraken</p>
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Duidelijk maatwerk, scherpe focus op pasvorm</h2>
 
               <p className="text-slate-700 dark:text-slate-200">
@@ -321,14 +321,14 @@ export default function ModuGridPage() {
                     key={upsell}
                     className="flex items-center gap-2 rounded-xl bg-slate-50 px-3 py-2 ring-1 ring-slate-100 dark:bg-[#0f162c] dark:ring-0"
                   >
-                    <span className="i-lucide-plus-circle text-cyan-600" aria-hidden />
+                    <span className="i-lucide-plus-circle text-amber-600" aria-hidden />
                     {upsell}
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="space-y-3 rounded-2xl bg-gradient-to-br from-cyan-600 to-indigo-600 p-5 text-white shadow-xl">
+            <div className="space-y-3 rounded-2xl bg-gradient-to-br from-amber-600 to-amber-600 p-5 text-white shadow-xl">
               <h3 className="text-lg font-semibold">Waarom dit werkt</h3>
               <ul className="space-y-2 text-sm font-semibold leading-6">
                 <li className="flex items-center gap-2">
@@ -367,7 +367,7 @@ export default function ModuGridPage() {
           <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
             <div className="grid gap-4 lg:grid-cols-[1.1fr_.9fr] lg:items-start">
               <div className="space-y-3">
-                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700">Custom per tool</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-700">Custom per tool</p>
                 <h2 className="text-xl font-bold text-slate-900 dark:text-white">Standaard bakjes of eigen vak per tool</h2>
 
                 <p className="text-slate-700 dark:text-slate-200">
@@ -380,19 +380,19 @@ export default function ModuGridPage() {
                 <p className="font-semibold text-slate-900 dark:text-white">Gegevens die we nodig hebben:</p>
                 <ul className="mt-2 space-y-2">
                   <li className="flex items-start gap-2">
-                    <span className="i-lucide-camera text-cyan-600" aria-hidden />
+                    <span className="i-lucide-camera text-amber-600" aria-hidden />
                     <span>Foto van de tool in je koffer of op een blad, van bovenaf.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="i-lucide-ruler text-cyan-600" aria-hidden />
+                    <span className="i-lucide-ruler text-amber-600" aria-hidden />
                     <span>Belangrijkste maatvoering (L x B x H). Bij ronde tools: diameter x hoogte.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="i-lucide-align-vertical-justify-center text-cyan-600" aria-hidden />
+                    <span className="i-lucide-align-vertical-justify-center text-amber-600" aria-hidden />
                     <span>Hoe de tool moet liggen: plat, rechtop of onder een hoek.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="i-lucide-clipboard-list text-cyan-600" aria-hidden />
+                    <span className="i-lucide-clipboard-list text-amber-600" aria-hidden />
                     <span>Naam van de tool + aantal stuks die je in dezelfde lade wil.</span>
                   </li>
                 </ul>
@@ -412,7 +412,7 @@ export default function ModuGridPage() {
         <div className="mt-8 flex flex-col gap-3 rounded-2xl border border-slate-100 bg-slate-900 px-5 py-6 text-white shadow-lg shadow-slate-900/30 dark:border-slate-800">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">Klaar om orde te brengen?</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">Klaar om orde te brengen?</p>
               <h2 className="text-lg font-bold">Stuur je lijst of foto door, wij tekenen de indeling.</h2>
               <p className="mt-1 text-sm text-white/80">
                 Eén korte intake is vaak genoeg om je lade of koffer meteen “werk-klaar” te maken.
@@ -448,7 +448,7 @@ export default function ModuGridPage() {
               {references.map((reference) => (
                 <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
                   <cite className="not-italic">
-                    <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                    <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-amber-600 hover:text-amber-500">
                       {reference.label}
                     </Link>
                   </cite>
@@ -474,3 +474,4 @@ export default function ModuGridPage() {
     </>
   )
 }
+

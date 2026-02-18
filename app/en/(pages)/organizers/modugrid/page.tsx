@@ -159,7 +159,7 @@ export default function ModuGridPageEn() {
     <>
       <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-20">
         <Reveal className="space-y-6">
-          <div className="inline-flex items-center gap-2 rounded-full bg-cyan-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-800 ring-1 ring-cyan-100 dark:bg-[#0f162c] dark:text-cyan-200">
+          <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-800 ring-1 ring-amber-100 dark:bg-[#0f162c] dark:text-amber-200">
             Gridfinity · open-source grid without loose bins
           </div>
           <div className="space-y-4">
@@ -175,19 +175,19 @@ export default function ModuGridPageEn() {
             <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <ContentTableOfContents title="Contents" items={tocItems} className="max-w-xl" />
             <div className="flex flex-wrap gap-3 text-sm">
-              <a href="#bundles" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+              <a href="#bundles" className="underline decoration-amber-400 hover:decoration-amber-700">
                 Bundles & presets
               </a>
-              <a href="#carousel" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+              <a href="#carousel" className="underline decoration-amber-400 hover:decoration-amber-700">
                 Photos
               </a>
-              <a href="#faq" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+              <a href="#faq" className="underline decoration-amber-400 hover:decoration-amber-700">
                 FAQ
               </a>
-              <Link href="/en/blog/gridfinity-modular-storage-system" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+              <Link href="/en/blog/gridfinity-modular-storage-system" className="underline decoration-amber-400 hover:decoration-amber-700">
                 Gridfinity guide
               </Link>
-              <a href="#modugrid-sources" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+              <a href="#modugrid-sources" className="underline decoration-amber-400 hover:decoration-amber-700">
                 Sources
               </a>
             </div>
@@ -196,21 +196,21 @@ export default function ModuGridPageEn() {
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
             <div className="flex flex-wrap gap-3">
               <Link href={contactHref} className="no-underline">
-                <div className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:brightness-110 dark:bg-cyan-500">
+                <div className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:brightness-110 dark:bg-amber-500">
                   Plan a Gridfinity layout
                   <span className="i-lucide-arrow-right" aria-hidden />
                 </div>
               </Link>
               <Link
                 href="#bundles"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900 dark:border-slate-700 dark:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-900 dark:border-slate-700 dark:text-slate-100"
               >
                 Go to bundles
                 <span className="i-lucide-layout-grid" aria-hidden />
               </Link>
               <Link
                 href="#carousel"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900 dark:border-slate-700 dark:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-900 dark:border-slate-700 dark:text-slate-100"
               >
                 View photos
                 <span className="i-lucide-image" aria-hidden />
@@ -261,7 +261,7 @@ export default function ModuGridPageEn() {
               {references.map((reference) => (
                 <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
                   <cite className="not-italic">
-                    <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                    <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-amber-600 hover:text-amber-500">
                       {reference.label}
                     </Link>
                   </cite>
@@ -287,3 +287,4 @@ export default function ModuGridPageEn() {
     </>
   )
 }
+

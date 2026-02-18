@@ -9,6 +9,7 @@ import ShimmerButton from "@/components/ShimmerButton"
 import Catchphrase from "@/components/Catchphrase"
 import GlassOrb from "@/components/GlassOrb"
 import GlassCard from "@/components/GlassCard"
+import GoogleReviewHighlights from "@/components/GoogleReviewHighlights"
 import MaterialSwatches, { type Swatch } from "@/components/MaterialSwatches"
 import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
@@ -16,9 +17,9 @@ import { buildFaqPageSchema } from "@/lib/seo"
 
 
 const NL_METADATA: Metadata = {
-  title: "3D print & 3D printen op maat in België | X3DPrints",
+  title: "3D printen voor bedrijven in België | X3DPrints",
   description:
-    "3D print service België vanuit Herzele (regio Gent). Laat je 3D model printen in PLA, PETG of TPU voor prototypes, displays en functionele onderdelen.",
+    "3D print service België voor bedrijven: prototypes, jigs, fixtures en onderdelen op maat. Vanuit Herzele met direct materiaaladvies en duidelijke offertes.",
   alternates: {
     canonical: "https://www.x3dprints.be/",
     languages: {
@@ -28,9 +29,9 @@ const NL_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "3D print service België | X3DPrints",
+    title: "3D print service voor bedrijven in België | X3DPrints",
     description:
-      "Van STL/STEP naar strakke 3D prints in België. 3D printen op maat voor projecten in Gent, Aalst en de rest van Vlaanderen.",
+      "Van STL/STEP naar strakke 3D prints voor bedrijven in België. Prototypes, tooling en onderdelen op maat met korte lijnen.",
     url: "https://www.x3dprints.be/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D print service van X3DPrints" }],
     locale: "nl_BE",
@@ -38,16 +39,16 @@ const NL_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D print service België | X3DPrints",
-    description: "3D printen op maat in België. Upload je model en ontvang snel materiaaladvies en prijs.",
+    title: "3D printen voor bedrijven in België | X3DPrints",
+    description: "B2B 3D print service in België voor prototypes, jigs en onderdelen op maat.",
     images: ["/images/og-home.jpg"],
   },
 }
 
 const EN_METADATA: Metadata = {
-  title: "3D printing in Belgium | X3DPrints Herzele",
+  title: "3D printing for businesses in Belgium | X3DPrints",
   description:
-    "Precision 3D printing in Belgium and Flanders. Fast turnaround from Herzele with advice on PLA, PETG, ABS/ASA, Nylon and PA-CF for prototypes, displays and functional parts.",
+    "B2B 3D printing in Belgium from Herzele. We produce prototypes, jigs, fixtures and custom parts with clear quotes and reliable lead times.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/",
     languages: {
@@ -57,9 +58,9 @@ const EN_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "X3DPrints - 3D print service in Belgium",
+    title: "3D printing for businesses in Belgium | X3DPrints",
     description:
-      "From STL/STEP to clean 3D prints in Belgium. Local guidance, shorter lead times and durable finishing for projects in Ghent, Aalst and across Flanders.",
+      "From STL/STEP to production-ready prints for business use cases: prototypes, tooling and custom parts in Belgium.",
     url: "https://www.x3dprints.be/en/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printing service by X3DPrints" }],
     locale: "en_BE",
@@ -67,8 +68,8 @@ const EN_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printing in Belgium | X3DPrints",
-    description: "Fast local 3D printing with material advice, clear pricing and reliable delivery.",
+    title: "3D printing for businesses in Belgium | X3DPrints",
+    description: "B2B 3D printing for prototypes, jigs, fixtures and custom parts in Belgium.",
     images: ["/images/og-home.jpg"],
   },
 }
@@ -127,19 +128,19 @@ function getSeasonCta(date: Date, isEn: boolean) {
 
 const HOME_COPY_NL = {
   hero: {
-    badge: "Lokale 3D print service in Vlaanderen",
-    catchphrase: "3D printen op maat voor Gent, Aalst en Vlaanderen",
-    title: "3D printen op maat in België vanuit Herzele.",
-    subtitle: "Engineeringkwaliteit, transparante prijzen en korte lijnen",
+    badge: "3D print service voor bedrijven in Vlaanderen",
+    catchphrase: "Prototypes, jigs, fixtures en onderdelen op maat",
+    title: "3D printen voor bedrijven in België, vanuit Herzele.",
+    subtitle: "Engineeringkwaliteit, directe communicatie en transparante prijzen",
     intro:
-      "X3DPrints is een Belgische 3D-printstudio uit Herzele, vlak bij Gent. Wil je een 3D model laten printen? We begeleiden makers, engineers en bedrijven door elke stap van hun 3D printproject in Belgie: van STL/STEP-check en materiaaladvies tot verzending. Als eenpersoonsstudio plannen we in samenspraak, meestal binnen enkele werkdagen afhankelijk van complexiteit en planning.",
+      "X3DPrints helpt KMO's, engineers en productteams met 3D printen op maat in Belgie. Van STL/STEP-check en materiaaladvies tot levering van prototypes, jigs, fixtures en onderdelen op maat. Je werkt rechtstreeks met mij als maker: korte lijnen, realistische planning en onderdelen die functioneel kloppen.",
     ctas: {
       quote: "Offerte aanvragen",
-      consumerAdvice: "Particulieren advies",
+      consumerAdvice: "B2B diensten",
       organizers: "Tool organizers",
-      knowledge: "Kennisbank",
-      guide: "3D printen gids",
-      tool: "Material Suggestion Tool (retail & hobby)",
+      knowledge: "Cases voor bedrijven",
+      guide: "Kennisbank",
+      tool: "Particulieren advies",
     },
   },
   heroStats: [
@@ -150,10 +151,8 @@ const HOME_COPY_NL = {
   local: {
     kicker: "Lokaal & 100% Belgisch",
     title: "Herzeelse handelaar, verankerd in Vlaanderen.",
-    bodyStart:
-      "We produceren in Herzele en leveren in Vlaanderen. Als lid van de Werkgroep Ondernemend Herzele werken we met Belgische partners, transparante prijzen en korte lijnen. Betalen kan ook met de ",
-    linkLabel: "Herzeelse Euro (Heuro)",
-    bodyEnd: ".",
+    body:
+      "We produceren in Herzele en leveren in Vlaanderen. Als lid van de Werkgroep Ondernemend Herzele werken we met Belgische partners, transparante prijzen en korte lijnen.",
     ctas: {
       primary: "Bekijk onze lokale aanpak",
       secondary: "Gemeente Herzele",
@@ -164,7 +163,7 @@ const HOME_COPY_NL = {
     body1:
       "Eenpersoonsstudio in bijberoep. Je schakelt een Belgische 3D print service in met rechtstreeks contact met de maker die ook produceert, test en afwerkt. Geen tickets of callcenters, wel korte lijnen, duidelijke afspraken en onderdelen die passen.",
     body2:
-      "Actief in regio Gent, Aalst, Geraardsbergen en Oudenaarde. Van functionele prototypes en zowel kleine als grotere series tot winkelmateriaal, gepersonaliseerde cadeaus en maatwerk. Zo leveren we 3D prints voor Vlaanderen die perfect aansluiten bij jouw toepassing.",
+      "Actief in regio Gent, Aalst, Geraardsbergen en Oudenaarde. Voor bedrijven printen we prototypes, jigs, fixtures, displays en kleine series. Daarnaast maken we ook maatwerk en personalisaties voor particulieren.",
     ctas: {
       services: "Diensten",
       materials: "Materialen",
@@ -184,10 +183,19 @@ const HOME_COPY_NL = {
     badge: "Print-on-demand in België · Gridfinity/Packout/TSTAK/custom",
   },
   segments: {
-    title: "Voor wie we printen",
+    title: "Voor welke bedrijven we printen",
     body:
-      "Geen one-size-fits-all. We printen wat jij nodig hebt en denken mee over materiaal en geometrie. Zo maak je gebruik van een lokale 3D print service in Belgie en Vlaanderen die mee bouwt aan jouw product.",
+      "We ondersteunen teams die snel willen itereren of functionele onderdelen nodig hebben. Van productontwikkeling tot retail en onderhoud: je krijgt een lokale 3D print service in Belgie die mee denkt met je toepassing.",
     cards: [
+      {
+        title: "Bedrijven",
+        items: [
+          "Prototypes voor productontwikkeling",
+          "Jigs, fixtures en hulpmallen",
+          "Displays, houders en POS-materiaal",
+          "Kleine series en onderdelen op maat",
+        ],
+      },
       {
         title: "Particulieren",
         items: [
@@ -196,20 +204,12 @@ const HOME_COPY_NL = {
           "Unieke accessoires en mini-sculpturen",
         ],
       },
-      {
-        title: "Bedrijven",
-        items: [
-          "Etalage- en winkelmateriaal, displays en houders",
-          "Bedrijfscadeaus en promotieartikelen",
-          "Prototyping, jigs, fixtures en zowel kleine als grotere series",
-        ],
-      },
     ],
     ctas: {
       gallery: "Galerij bekijken",
-      start: "Start je Belgisch 3D printproject",
+      start: "Start je B2B printproject",
     },
-    tags: ["Retail & marketing props", "Tabletop & hobby runs", "Particulieren prints"],
+    tags: ["Prototypes & productontwikkeling", "Jigs, fixtures & tooling", "Kleine series & onderdelen op maat"],
   },
   personalization: {
     title: "Personalisatie",
@@ -361,18 +361,18 @@ const HOME_COPY_NL = {
       "Let op bij voedselcontact: reinig grondig, vermijd hitte en overweeg gecertificeerde alternatieven indien food-safe essentieel is.",
   },
   pricing: {
-    title: "Prijzen & levering",
+    title: "Prijs, planning & levering voor B2B",
     body:
-      "Benieuwd naar je 3D print prijs? We werken met transparante tarieven op basis van complexiteit, afmetingen, materiaal en afwerking. We communiceren vooraf over planning en oplevering en helpen je kiezen wat het beste werkt voor jouw 3D print in Belgie.",
+      "Je krijgt een duidelijke offerte op basis van functie, afmetingen, materiaal en afwerking. We stemmen planning op voorhand af en adviseren waar je ontwerp sneller of kostenefficiënter kan zonder kwaliteitsverlies.",
     cards: [
       {
         title: "Prijsopbouw",
         description:
-          "Materiaal, printtijd, afwerking en eventuele montage. We denken mee over optimalisatie voor Belgisch 3D printen.",
+          "Materiaal, printtijd, afwerking en eventuele montage. We sturen op kost-efficiëntie voor bedrijven.",
       },
       {
         title: "Levertijd",
-        description: "We mikken op oplevering binnen enkele werkdagen; spoed kan in overleg voor klanten in Belgie.",
+        description: "Planning in overleg, vaak binnen enkele werkdagen. Spoed is mogelijk voor kritieke deadlines.",
       },
       {
         title: "Verzending/afhalen",
@@ -381,13 +381,13 @@ const HOME_COPY_NL = {
     ],
     ctas: {
       pricing: "Prijzen bekijken",
-      request: "Vraag je print aan",
+      request: "Vraag je B2B offerte",
     },
   },
   closing: {
-    title: "Klaar om te 3D printen",
+    title: "Klaar om je onderdeel te laten printen?",
     body:
-      "Stuur je model door en je krijgt snel een heldere prijs met het beste materiaaladvies voor jouw toepassing, rechtstreeks van een Belgische 3D print partner.",
+      "Stuur je model of use-case door en je ontvangt snel een duidelijke B2B-offerte met materiaaladvies en realistische timing.",
     ctas: {
       quote: "Offerte aanvragen",
       gallery: "Galerij bekijken",
@@ -403,35 +403,35 @@ const HOME_COPY_NL = {
       a: "Vaak enkele werkdagen, afhankelijk van planning, materiaal en eventuele nabewerking. We stemmen de planning samen af.",
     },
     {
-      q: "Wat kost 3D printen en hoe snel krijg ik een prijs?",
-      a: "Richtprijzen starten vanaf kleine prints, maar de exacte 3D print prijs hangt af van model, materiaal en printtijd. Je krijgt meestal binnen 24 uur een duidelijke offerte.",
+      q: "Kunnen jullie ook kleine series voor bedrijven produceren?",
+      a: "Ja. Naast prototypes en enkelstuks produceren we ook kleine series voor functionele toepassingen, interne tooling en eindgebruik.",
+    },
+    {
+      q: "Wat kost 3D printen voor bedrijven?",
+      a: "De prijs hangt af van functie, geometrie, materiaal, printtijd en afwerking. Je krijgt meestal binnen 24 uur een heldere offerte met advies.",
     },
     {
       q: "Wat is het maximale bouwvolume?",
-      a: "Tot 20 x 20 x 20 cm per stuk in een geheel. Groter kan door onderdelen te splitsen en te monteren.",
-    },
-    {
-      q: "Is PLA geschikt voor voedselcontact?",
-      a: "PLA is niet-toxisch, maar geprinte oppervlakken bevatten micro-porien. Gebruik alleen met zorg, reinig grondig en vermijd hitte. Vraag naar alternatieven als food-safe cruciaal is.",
+      a: "Tot 35 x 32 x 35 cm per onderdeel. Grotere onderdelen kunnen we opdelen en nadien functioneel assembleren.",
     },
   ],
 }
 
 const HOME_COPY_EN = {
   hero: {
-    badge: "Local 3D print service in Flanders",
-    catchphrase: "3D printing for Ghent, Aalst and Flanders",
-    title: "Custom 3D prints from Herzele, Belgium.",
-    subtitle: "Engineering-grade output, transparent pricing and direct communication",
+    badge: "3D printing service for businesses in Flanders",
+    catchphrase: "Prototypes, jigs, fixtures and custom parts",
+    title: "3D printing for businesses in Belgium, from Herzele.",
+    subtitle: "Engineering-grade output, direct communication and transparent pricing",
     intro:
-      "X3DPrints is a Belgian 3D printing studio in Herzele, near Ghent. We guide makers, engineers and businesses through every step of a 3D print project in Belgium: from STL/STEP checks and material advice to shipping. As a one-person studio, we plan together and deliver in a few business days depending on complexity and schedule.",
+      "X3DPrints supports SMEs, engineers and product teams with custom 3D printing in Belgium. From STL/STEP checks and material guidance to delivery of prototypes, jigs, fixtures and custom parts. You work directly with me as the maker: short lines, realistic planning and function-first output.",
     ctas: {
       quote: "Request a quote",
-      consumerAdvice: "Advice for individuals",
+      consumerAdvice: "B2B services",
       organizers: "Tool organizers",
-      knowledge: "Knowledge base",
-      guide: "3D printing guide",
-      tool: "Material Suggestion Tool (retail & hobby)",
+      knowledge: "Business case studies",
+      guide: "Knowledge base",
+      tool: "Advice for individuals",
     },
   },
   heroStats: [
@@ -442,10 +442,8 @@ const HOME_COPY_EN = {
   local: {
     kicker: "Local & 100% Belgian",
     title: "Herzele-based, rooted in Flanders.",
-    bodyStart:
-      "We produce in Herzele and deliver across Flanders. As a member of the Werkgroep Ondernemend Herzele we work with Belgian partners, transparent pricing and direct communication. You can also pay with the ",
-    linkLabel: "Herzele Euro (Heuro)",
-    bodyEnd: ".",
+    body:
+      "We produce in Herzele and deliver across Flanders. As a member of the Werkgroep Ondernemend Herzele we work with Belgian partners, transparent pricing and direct communication.",
     ctas: {
       primary: "See our local approach",
       secondary: "Municipality of Herzele",
@@ -456,7 +454,7 @@ const HOME_COPY_EN = {
     body1:
       "One-person studio (part-time). You work directly with the maker who prints, tests and finishes every part. No tickets or call centers, just direct communication, clear commitments and parts that fit.",
     body2:
-      "Active in the Ghent, Aalst, Geraardsbergen and Oudenaarde region. From functional prototypes and small to large series to retail props, personalized gifts and custom parts. We deliver 3D prints for Flanders that fit your use case.",
+      "Active in the Ghent, Aalst, Geraardsbergen and Oudenaarde region. For businesses we produce prototypes, jigs, fixtures, displays and short runs. We also provide custom and personalized work for individuals.",
     ctas: {
       services: "Services",
       materials: "Materials",
@@ -476,10 +474,19 @@ const HOME_COPY_EN = {
     badge: "Print-on-demand in Belgium · Gridfinity/Packout/TSTAK/custom",
   },
   segments: {
-    title: "Who we print for",
+    title: "Business teams we support",
     body:
-      "No one-size-fits-all. We print what you need and think along on material and geometry. That means a local 3D print service in Belgium and Flanders that helps build your product.",
+      "We support teams that need fast iteration or functional parts. From product development to retail and maintenance, you get a local Belgian 3D printing partner that designs for practical use.",
     cards: [
+      {
+        title: "Businesses",
+        items: [
+          "Prototypes for product development",
+          "Jigs, fixtures and tooling aids",
+          "Displays, holders and POS parts",
+          "Short runs and custom replacement parts",
+        ],
+      },
       {
         title: "Individuals",
         items: [
@@ -488,20 +495,12 @@ const HOME_COPY_EN = {
           "Unique accessories and mini sculptures",
         ],
       },
-      {
-        title: "Businesses",
-        items: [
-          "Retail and window displays, holders and fixtures",
-          "Corporate gifts and promo items",
-          "Prototyping, jigs, fixtures and small to large series",
-        ],
-      },
     ],
     ctas: {
       gallery: "View gallery",
-      start: "Start your Belgian 3D print project",
+      start: "Start your B2B print project",
     },
-    tags: ["Retail & marketing props", "Tabletop & hobby runs", "Consumer prints"],
+    tags: ["Prototypes & product development", "Jigs, fixtures & tooling", "Short runs & custom parts"],
   },
   personalization: {
     title: "Personalization",
@@ -653,17 +652,17 @@ const HOME_COPY_EN = {
       "Food contact note: clean thoroughly, avoid heat and consider certified alternatives if food-safe is essential.",
   },
   pricing: {
-    title: "Pricing & delivery",
+    title: "Pricing, planning & delivery for B2B",
     body:
-      "Transparent rates based on complexity, size, material and finishing. We align on schedule up front and help you choose what works best for your 3D print in Belgium.",
+      "You get a clear quote based on function, geometry, material and finishing. We align planning up front and advise where your part can be faster or more cost-efficient without quality loss.",
     cards: [
       {
         title: "Pricing breakdown",
-        description: "Material, print time, finishing and any assembly. We help optimize for Belgian 3D printing.",
+        description: "Material, print time, finishing and any assembly. We optimize for business cost-efficiency.",
       },
       {
         title: "Lead time",
-        description: "We aim for delivery within a few business days; rush is possible by agreement in Belgium.",
+        description: "Planned together and often delivered within a few business days. Rush is possible for critical deadlines.",
       },
       {
         title: "Shipping/pickup",
@@ -672,13 +671,13 @@ const HOME_COPY_EN = {
     ],
     ctas: {
       pricing: "See pricing",
-      request: "Request your print",
+      request: "Request your B2B quote",
     },
   },
   closing: {
-    title: "Ready to 3D print?",
+    title: "Ready to print your part?",
     body:
-      "Send your model and you will get a clear price with the best material advice for your use case, directly from a Belgian 3D print partner.",
+      "Send your model or use case and you will receive a clear B2B quote with material guidance and realistic timing.",
     ctas: {
       quote: "Request a quote",
       gallery: "View gallery",
@@ -694,12 +693,16 @@ const HOME_COPY_EN = {
       a: "Often a few business days, depending on schedule, material and any post-processing. We align the planning together.",
     },
     {
-      q: "What is the maximum build volume?",
-      a: "Up to 20 x 20 x 20 cm per piece as a single part. Larger is possible by splitting and assembling.",
+      q: "Can you also produce short runs for businesses?",
+      a: "Yes. Besides prototypes and single parts, we also produce short runs for functional use, internal tooling and end-use parts.",
     },
     {
-      q: "Is PLA suitable for food contact?",
-      a: "PLA is non-toxic, but printed surfaces contain micro-pores. Use with care, clean thoroughly and avoid heat. Ask for alternatives if food-safe is critical.",
+      q: "How is B2B pricing determined?",
+      a: "Pricing depends on function, geometry, material, print time and finishing. You usually receive a clear quote within 24 hours.",
+    },
+    {
+      q: "What is the maximum build volume?",
+      a: "Up to 35 x 32 x 35 cm per part. Larger parts can be split and assembled with functional fit.",
     },
   ],
 }
@@ -789,31 +792,31 @@ export default async function HomePage({ searchParams }: PageProps) {
                 {copy.hero.ctas.quote}
               </ShimmerButton>
               <Link
-                href={localize("/contact?material=PLA_MATTE")}
+                href={localize("/services")}
                 className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-indigo-50/80 px-5 py-3 text-sm font-semibold text-indigo-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-indigo-50"
               >
                 {copy.hero.ctas.consumerAdvice}
               </Link>
               <Link
-                href="#organizers"
+                href={localize("/organizers")}
                 className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >
                 {copy.hero.ctas.organizers}
               </Link>
               <Link
-                href={localize("/blog")}
+                href={localize("/portfolio")}
                 className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >
                 {copy.hero.ctas.knowledge}
               </Link>
               <Link
-                href={localize("/3d-printen")}
+                href={localize("/blog")}
                 className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >
                 {copy.hero.ctas.guide}
               </Link>
               <Link
-                href={localize("/materials#material-suggestion-tool")}
+                href={localize("/segments/3d-printing-makers")}
                 className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >
                 {copy.hero.ctas.tool}
@@ -880,25 +883,15 @@ export default async function HomePage({ searchParams }: PageProps) {
                     {copy.local.title}
                   </h2>
                   <p className="mt-2 text-sm text-slate-700 sm:text-base">
-                    {copy.local.bodyStart}
-                    <Link
-                      href="https://www.herzele.be/heuro"
-                      target="_blank"
-                      rel="noreferrer"
-                      prefetch={false}
-                      className="font-semibold text-indigo-700 underline decoration-indigo-200 hover:decoration-indigo-500"
-                    >
-                      {copy.local.linkLabel}
-                    </Link>
-                    {copy.local.bodyEnd}
+                    {copy.local.body}
                   </p>
                   <div className="mt-4 flex flex-wrap gap-3">
-                <ShimmerButton
-                  href={localize("/lokaal-belgisch")}
-                  event={{ action: "cta_click", category: "home_local", label: "lokaal-belgisch" }}
-                >
-                  {copy.local.ctas.primary}
-                </ShimmerButton>
+                    <ShimmerButton
+                      href={localize("/lokaal-belgisch")}
+                      event={{ action: "cta_click", category: "home_local", label: "lokaal-belgisch" }}
+                    >
+                      {copy.local.ctas.primary}
+                    </ShimmerButton>
                     <Link
                       href="https://www.herzele.be"
                       target="_blank"
@@ -915,6 +908,15 @@ export default async function HomePage({ searchParams }: PageProps) {
                 </div>
               </div>
             </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* REVIEWS */}
+      <section className="px-6 pb-6 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GoogleReviewHighlights locale={normalizedLocale} variant="full" />
           </Reveal>
         </div>
       </section>
@@ -963,11 +965,11 @@ export default async function HomePage({ searchParams }: PageProps) {
 
       {/* ORGANIZERS SALES SECTION */}
       <section id="organizers" className="relative overflow-hidden px-6 py-20 sm:px-8 lg:px-12">
-        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_20%_20%,rgba(99,102,241,0.25),transparent),radial-gradient(50%_50%_at_80%_10%,rgba(34,211,238,0.3),transparent),radial-gradient(45%_45%_at_50%_90%,rgba(255,0,168,0.16),transparent)]" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_20%_20%,rgba(51,65,85,0.24),transparent),radial-gradient(50%_50%_at_80%_10%,rgba(148,163,184,0.2),transparent),radial-gradient(45%_45%_at_50%_90%,rgba(245,158,11,0.14),transparent)]" />
         <div className="mx-auto max-w-6xl">
           <Reveal className="grid gap-8 lg:grid-cols-[1.15fr_.85fr] lg:items-center">
             <div className="space-y-4">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-indigo-900 drop-shadow-[0_0_12px_rgba(255,255,255,.6)]">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-800 drop-shadow-[0_0_10px_rgba(255,255,255,.45)]">
                 {copy.organizers.kicker}
               </p>
               <h2 className="text-balance text-3xl font-extrabold text-slate-900 sm:text-4xl">
@@ -978,9 +980,9 @@ export default async function HomePage({ searchParams }: PageProps) {
                 {["Gridfinity", "Packout", "TSTAK", "Custom inserts"].map((chip) => (
                   <span
                     key={chip}
-                    className="inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-indigo-800 ring-1 ring-white/60 backdrop-blur dark:bg-[#0f162c]/90 dark:text-cyan-100"
+                    className="inline-flex items-center gap-2 rounded-full bg-white/85 px-3 py-1 text-xs font-semibold text-slate-800 ring-1 ring-slate-200/70 backdrop-blur dark:bg-[#111827]/90 dark:text-slate-100 dark:ring-slate-600/60"
                   >
-                    <span className="i-lucide-sparkle text-indigo-500 dark:text-cyan-300" aria-hidden />
+                    <span className="i-lucide-sparkle text-amber-600 dark:text-amber-300" aria-hidden />
                     {chip}
                   </span>
                 ))}
@@ -1037,12 +1039,12 @@ export default async function HomePage({ searchParams }: PageProps) {
                   <Link
                     key={item.href}
                     href={localize(item.href)}
-                    className={`group inline-flex flex-col gap-1 rounded-2xl border border-white/60 bg-white/80 px-4 py-3 text-left shadow-sm transition hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-[#0f162c] ${
-                      item.highlight ? "ring-2 ring-indigo-300 dark:ring-cyan-400" : ""
+                    className={`group inline-flex flex-col gap-1 rounded-2xl border border-slate-200/80 bg-white/85 px-4 py-3 text-left shadow-sm transition hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-[#111827] ${
+                      item.highlight ? "ring-2 ring-amber-300 dark:ring-amber-400/80" : ""
                     }`}
                   >
                     <span className="flex items-center gap-2 text-sm font-semibold text-slate-900 dark:text-white">
-                      <span className="i-lucide-arrow-up-right text-indigo-500 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 dark:text-cyan-300" />
+                      <span className="i-lucide-arrow-up-right text-amber-600 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 dark:text-amber-300" />
                       {item.label}
                     </span>
                     <span className="text-xs text-slate-700 dark:text-slate-300">{item.desc}</span>
@@ -1058,7 +1060,7 @@ export default async function HomePage({ searchParams }: PageProps) {
                 </ShimmerButton>
                 <Link
                   href={localize("/contact?material=organizers")}
-                  className="inline-flex items-center gap-2 rounded-xl border border-white/60 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-[#0f162c]"
+                  className="inline-flex items-center gap-2 rounded-xl border border-slate-200/80 bg-white/85 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-[#111827]"
                 >
                   {copy.organizers.ctas.secondary}
                 </Link>
@@ -1067,8 +1069,8 @@ export default async function HomePage({ searchParams }: PageProps) {
                 {copy.organizers.badge}
               </p>
             </div>
-            <GlassCard className="group border-white/40 bg-gradient-to-br from-white/90 via-white/70 to-indigo-50/70 p-6 shadow-2xl shadow-indigo-500/15 ring-1 ring-white/60 transition-transform hover:-translate-y-1 dark:border-[#0F203C] dark:bg-[radial-gradient(140%_140%_at_20%_10%,rgba(0,230,255,0.12),transparent),radial-gradient(120%_120%_at_80%_0%,rgba(215,38,61,0.12),transparent),#0B0F1A] dark:ring-0">
-              <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.26em] text-indigo-700 dark:text-cyan-200">
+            <GlassCard className="group border-slate-200/70 bg-gradient-to-br from-white/95 via-slate-50/85 to-amber-50/65 p-6 shadow-2xl shadow-slate-900/10 ring-1 ring-white/70 transition-transform hover:-translate-y-1 dark:border-slate-700 dark:bg-[radial-gradient(140%_140%_at_20%_10%,rgba(148,163,184,0.2),transparent),radial-gradient(120%_120%_at_80%_0%,rgba(245,158,11,0.16),transparent),#0f172a] dark:ring-0">
+              <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.26em] text-amber-700 dark:text-amber-200">
                 <span className="i-lucide-wrench" aria-hidden />
                 Bundels & aanpak
               </div>
@@ -1087,7 +1089,7 @@ export default async function HomePage({ searchParams }: PageProps) {
                 ))}
               </ul>
               <div className="mt-5 grid gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-600 dark:text-slate-300">
-                <span className="rounded-xl bg-slate-900 px-3 py-2 text-[11px] font-bold text-white shadow-sm ring-1 ring-white/10 dark:bg-cyan-500/90">
+                <span className="rounded-xl bg-slate-900 px-3 py-2 text-[11px] font-bold text-white shadow-sm ring-1 ring-white/10 dark:bg-amber-500/90">
                   Geen rammel · Geen losse bakjes · Layouts die passen in je koffer
                 </span>
                 <span className="rounded-xl bg-white/80 px-3 py-2 text-[11px] font-semibold text-slate-800 ring-1 ring-white/60 dark:bg-[#0f162c] dark:text-slate-100 dark:ring-0">
@@ -1097,13 +1099,13 @@ export default async function HomePage({ searchParams }: PageProps) {
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link
                   href={localize("/organizers")}
-                  className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                  className="inline-flex items-center gap-2 rounded-xl border border-slate-300/80 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
                 >
                   Naar de hub
                 </Link>
                 <Link
                   href={localize("/materials#material-suggestion-tool")}
-                  className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/40 px-4 py-2 text-sm font-semibold text-indigo-800 transition hover:-translate-y-0.5 hover:bg-white"
+                  className="inline-flex items-center gap-2 rounded-xl border border-amber-200/80 bg-amber-50/60 px-4 py-2 text-sm font-semibold text-amber-900 transition hover:-translate-y-0.5 hover:bg-amber-50 dark:border-amber-300/40 dark:bg-amber-400/10 dark:text-amber-100"
                 >
                   Vraag materiaaladvies
                 </Link>
@@ -1367,6 +1369,35 @@ export default async function HomePage({ searchParams }: PageProps) {
             >
               {copy.pricing.ctas.request}
             </ShimmerButton>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ CONTENT (visible + schema-aligned) */}
+      <section className="px-6 py-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="mb-6">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              {isEn ? "Frequently asked questions" : "Veelgestelde vragen"}
+            </h2>
+            <p className="mt-2 max-w-3xl text-slate-600">
+              {isEn
+                ? "Common questions from business and private clients about files, lead times, pricing and production capacity."
+                : "Veelgestelde vragen van bedrijven en particulieren over bestanden, levertijd, prijs en productiecapaciteit."}
+            </p>
+          </Reveal>
+          <div className="grid gap-3">
+            {copy.faq.map((item) => (
+              <details
+                key={item.q}
+                className="rounded-2xl border border-white/50 bg-gradient-to-br from-white/85 to-white/60 p-5 shadow-sm ring-1 ring-white/50"
+              >
+                <summary className="cursor-pointer list-none text-base font-semibold text-slate-900">
+                  {item.q}
+                </summary>
+                <p className="mt-2 text-sm text-slate-600 sm:text-base">{item.a}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>

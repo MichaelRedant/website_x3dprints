@@ -252,7 +252,7 @@ export default function PackoutPageEn() {
             href="https://www.milwaukeetool.eu/en-eu/storage/packout/packout-organisers/"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-700 underline underline-offset-4 hover:text-indigo-900"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-amber-700 underline underline-offset-4 hover:text-amber-900"
           >
             View Milwaukee Packout organizers
             <span className="i-lucide-external-link" aria-hidden />
@@ -389,7 +389,7 @@ export default function PackoutPageEn() {
                 {references.map((reference) => (
                   <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
                     <cite className="not-italic">
-                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-amber-600 hover:text-amber-500">
                         {reference.label}
                       </Link>
                     </cite>
@@ -416,3 +416,4 @@ export default function PackoutPageEn() {
     </>
   )
 }
+

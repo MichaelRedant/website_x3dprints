@@ -15,14 +15,14 @@ import {
 } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "3D printen op maat in België | 3D print service Gent | X3DPrints",
+  title: "3D printen voor bedrijven in Belgie | Prototypes & tooling | X3DPrints",
   description:
-    "3D printen op maat voor bedrijven en particulieren. Lokale 3D print service België vanuit Herzele (tussen Gent en Aalst) met advies over 3D model printen, materiaal, prijs en workflow.",
+    "Lokale 3D print service in Belgie vanuit Herzele voor KMO's en productteams: prototypes, jigs, fixtures, onderdelen op maat en kleine series. Ook advies voor particulieren.",
   alternates: { canonical: "https://www.x3dprints.be/3d-printen/", languages: { "nl-BE": "https://www.x3dprints.be/3d-printen/", "en-BE": "https://www.x3dprints.be/en/3d-printen/", "x-default": "https://www.x3dprints.be/3d-printen/", }, },
   openGraph: {
-    title: "3D print service België | 3D printen op maat | X3DPrints",
+    title: "3D print service voor bedrijven in Belgie | X3DPrints",
     description:
-      "3D printen in België voor prototypes, marketingprops en onderdelen. Lokale 3D print service in regio Gent met materiaaladvies en snelle offerte.",
+      "Van STL/STEP naar bruikbare onderdelen: prototypes, tooling, displays en functionele parts. 3D printen in Belgie met snelle intake en duidelijke planning.",
     url: "https://www.x3dprints.be/3d-printen/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printen landing" }],
     locale: "nl_BE",
@@ -30,44 +30,44 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printen op maat in België | X3DPrints",
-    description: "Lokale 3D print service met materiaaladvies, snelle offerte en duidelijke planning.",
+    title: "3D printen voor bedrijven in Belgie | X3DPrints",
+    description: "B2B 3D print service voor prototypes, jigs, fixtures en onderdelen op maat.",
     images: ["/images/og-home.jpg"],
   },
 }
 
 const useCases = [
   {
-    title: "Prototypes",
+    title: "Prototypes voor productontwikkeling",
     body:
-      "Snel itereren met PLA Matte of PLA Silk. 3D printen met feedback op oriëntatie, wanddikte en toleranties voor een voorspelbare passing.",
-    link: "/portfolio",
+      "Valideer vorm, passing en functie zonder lange productieruns. We adviseren over orientatie, wanddikte en toleranties voor voorspelbare iteraties.",
+    link: "/segments/3d-printing-prototypes",
   },
   {
-    title: "Jigs & fixtures",
+    title: "Jigs & fixtures voor productie",
     body:
-      "Functionele hulpstukken in PETG voor hitte- en chemiebestendigheid. Meestal +/-0,2 mm tolerantie en afgestemde infill bij 3D geprinte tools.",
+      "Functionele hulpstukken in PETG of sterker materiaal, afgestemd op repetitieve taken, montage en kwaliteitscontrole op de werkvloer.",
     link: "/services",
   },
   {
-    title: "Behuizingen",
+    title: "Onderdelen en behuizingen op maat",
     body:
-      "Custom behuizingen en brackets met nette afwerking. 3D printen in matte of silk looks; inserts en passtukken in overleg.",
+      "Custom behuizingen, brackets en vervangonderdelen met nette afwerking. Inclusief advies rond inserts, passing en montage.",
     link: "/materials",
   },
   {
-    title: "Marketing props",
+    title: "Retail displays en event props",
     body:
-      "Kleine runs van props, displays en awards in Silk/Marble/Translucent PLA. 3D-prints klaar voor fotoshoots en events.",
+      "Kleine runs van props, displays en awards in opvallende materialen. Klaar voor etalage, beursstand, fotoshoot of activatie.",
     link: "/segments/3d-printing-marketing",
   },
 ]
 
 const focusSegments = [
   {
-    title: "Winkels & etalages",
+    title: "Retail, events en etalages",
     description:
-      "3D printen voor marketingmateriaal dat opvalt in het rek, de etalage of op events. We printen accenten, display-elementen, signage en POS props die passen bij je merk en campagne.",
+      "3D printen voor marketingmateriaal dat opvalt in rek, etalage of event. We printen display-elementen, signage en POS props die matchen met je campagne.",
     highlights: [
       "Kleine runs van logo-detail, letters en visuele cues in PLA Silk/Marble",
       "Sterkere PETG-onderdelen voor buitengebruik of exposities",
@@ -77,41 +77,41 @@ const focusSegments = [
     ctaText: "Marketing cases",
   },
   {
-    title: "Tabletop games",
+    title: "Makers, tabletop en hobby",
     description:
-      "Rijke, gedetailleerde 3D prints in een niche community. Van miniatures en diorama’s tot tokens, terrain en accessoires voor je club of Kickstarter.",
+      "Gedetailleerde 3D prints voor miniatures, terrain, organizers en custom onderdelen. Handig voor clubs, creators en pre-order batches.",
     highlights: [
       "Miniatures en terrain in hoog detail (0,12 mm layers) met PLA Matte of Silk",
       "Dice towers, organizers en upgrades voor hobby-kasten",
       "Kleine runs, pre-order batches of prototypes met snelle opvolging",
     ],
-    cta: "/segments/3d-printing-tabletop",
-    ctaText: "Voor tabletop",
+    cta: "/segments/3d-printing-makers",
+    ctaText: "Voor makers",
   },
   {
     title: "Particulieren",
     description:
-      "Functionele onderdelen, recreatieve gadgets en decoratieve statements. 3D printen van praktische tools, vervangstukken, lampen, plantenhangers en cosplay props.",
+      "Functionele onderdelen en decoratieve prints op maat. Denk aan vervangstukken, gadgets, naamplaatjes en persoonlijke gifts.",
     highlights: [
       "Functioneel: connectors, houdertjes, gereedschap, prototypes van eigen ontwerpen",
       "Recreatie: speelstukken, gifts, gadgets en fandom art",
       "Decoratief: lichtobjecten, sculpturen en statement pieces in kleur of transparant",
     ],
-    cta: "/contact",
+    cta: "/contact?material=pla-matte",
     ctaText: "Vraag advies",
   },
 ]
 
 const consultationOffers: SchemaOfferInput[] = [
   {
-    serviceName: "Marketing & retail advies",
+    serviceName: "B2B prototype intake",
     price: "EUR 0",
-    description: "Gratis adviesgesprek over 3D printen voor winkelmateriaal of etalages.",
+    description: "Intake voor prototypes, passing checks en iteratieruns voor productteams.",
   },
   {
-    serviceName: "Tabletop / hobby batch",
-    price: "EUR 35",
-    description: "Kleine 3D print-runs voor tabletop games, inclusief finishing tips.",
+    serviceName: "Tooling & fixture intake",
+    price: "EUR 0",
+    description: "Advies over materiaalkeuze en ontwerp voor jigs, fixtures en werkvloertoepassingen.",
   },
   {
     serviceName: "Particulier 3D print advies",
@@ -127,26 +127,26 @@ const materials = [
 ]
 
 const pricing = [
-  { k: "Small (ca. 5x5x5 cm)", v: "Vanaf ~EUR 5 in PLA Matte" },
-  { k: "Medium (ca. 10x10x10 cm)", v: "Vanaf ~EUR 20 in PLA Matte" },
-  { k: "Large (ca. 20x20x20 cm)", v: "Vanaf ~EUR 49 in PLA Matte" },
+  { size: "Small (ca. 5x5x5 cm)", price: "Vanaf ~EUR 5 in PLA Matte", useCase: "Naamplaatjes, clips, kleine adapters" },
+  { size: "Medium (ca. 10x10x10 cm)", price: "Vanaf ~EUR 20 in PLA Matte", useCase: "Houders, brackets, mock-ups" },
+  { size: "Large (ca. 20x20x20 cm)", price: "Vanaf ~EUR 49 in PLA Matte", useCase: "Displays, behuizingen, tools" },
 ]
 
 const differentiators = [
   {
     title: "Lokale expertise in 3D printen",
     copy:
-      "3D printen vanuit Herzele met een directe lijn naar de maker. Snelle feedback en transparante planning zonder ticketsystemen of anonieme portals.",
+      "3D print service vanuit Herzele met directe lijn naar de maker. Snelle feedback en transparante planning zonder anonieme portals.",
   },
   {
     title: "Materiaaladvies op maat",
     copy:
-      "PLA, PETG en TPU op voorraad, specials zoals Silk of Marble op aanvraag. We helpen kiezen welk filament het best bij jouw 3D print past.",
+      "PLA, PETG en TPU op voorraad, specials op aanvraag. We koppelen materiaalkeuze aan functie, omgeving en gewenste afwerking.",
   },
   {
-    title: "Focus op efficiënt 3D printen",
+    title: "Focus op efficient 3D printen",
     copy:
-      "We helpen je model optimaliseren zodat je minder support, kortere printtijd en sterkere onderdelen krijgt. Dat maakt 3D printen sneller én goedkoper.",
+      "We optimaliseren je model voor minder support, kortere printtijd en sterkere onderdelen. Dat maakt 3D printen sneller en kostenefficiënter.",
   },
   {
     title: "Bewuste aanpak",
@@ -159,12 +159,12 @@ const workflow = [
   {
     title: "1) Upload & context",
     detail:
-      "Stuur je STL- of STEP-bestand met info over toepassing, kritieke maten en gewenste afwerking. Hoe beter de context, hoe gerichter we kunnen 3D printen.",
+      "Stuur je STL- of STEP-bestand met toepassing, kritieke maten en gewenste afwerking. Hoe beter de briefing, hoe gerichter de oplossing.",
   },
   {
     title: "2) Materiaal + prijs",
     detail:
-      "We matchen PLA/PETG/TPU met jouw case en delen een voorstel voor 3D printen binnen een werkdag, inclusief richtprijs en planning.",
+      "We matchen PLA/PETG/TPU met jouw case en delen een voorstel met richtprijs, planning en eventuele ontwerpoptimalisaties.",
   },
   {
     title: "3) Productie & check",
@@ -180,14 +180,14 @@ const workflow = [
 
 const knowledgeLinks = [
   {
-    title: "Filament Vrijdag",
-    description: "Wekelijkse deep dives in PLA, PETG, TPU, PC en andere materialen voor 3D printen.",
-    href: "/blog/filament-vrijdag-pla",
+    title: "B2B dienstenoverzicht",
+    description: "Alle 3D print diensten voor bedrijven: prototypes, tooling, displays en kleine series.",
+    href: "/services",
   },
   {
-    title: "Maker Monday",
-    description: "Ontwerp- en engineeringtips rond scharnieren, tolerantie en wanddiktes voor FDM 3D printen.",
-    href: "/blog/maker-monday-fdm-scharnieren",
+    title: "Portfolio en cases",
+    description: "Concrete voorbeelden van onderdelen, props en functionele toepassingen voor bedrijven.",
+    href: "/portfolio",
   },
   {
     title: "Prijzen & calculator",
@@ -196,15 +196,15 @@ const knowledgeLinks = [
   },
   {
     title: "Materialenbibliotheek",
-    description: "Alle filamenten, kleuren en FAQ's inclusief PC, PETG en PLA Wood cases.",
+    description: "Overzicht van filamenten, kleuren, eigenschappen en materiaaladvies per toepassing.",
     href: "/materials",
   },
 ]
 
 const fileChecklist = [
-  "STL of STEP-bestand zonder niet-manifolde vlakken of losse shells",
-  "Oriëntatievoorkeur en kritieke maatvoering (schroefgaten, scharnierpennen)",
-  "Info over omgeving: binnen/buiten, chemie, hitte (helpt bij materiaalkeuze)",
+  "STL of STEP-bestand zonder niet-manifold vlakken of losse shells",
+  "Orientatievoorkeur en kritieke maatvoering (schroefgaten, passing, pennen)",
+  "Info over omgeving: binnen/buiten, chemie, UV of hitte (helpt bij materiaalkeuze)",
   "Gewenste afwerking (mat, silk, translucent) en eventuele nabewerking",
   "Deadline of eventdatum zodat we planning voor 3D printen correct opzetten",
 ]
@@ -218,7 +218,7 @@ const faq = [
   {
     q: "Hoe snel kan ik mijn 3D-prints krijgen?",
     a:
-      "Typisch 2-5 werkdagen na akkoord, afhankelijk van oplage en materiaal. Spoed in overleg, zeker voor kleinere 3D print-projecten.",
+      "Meestal binnen enkele werkdagen na akkoord, afhankelijk van oplage, materiaal en afwerking. Spoed blijft mogelijk in overleg.",
   },
   {
     q: "Wat kost 3D printen?",
@@ -233,7 +233,7 @@ const faq = [
   {
     q: "Hoe groot kan een 3D-geprint onderdeel zijn?",
     a:
-      "Tot ca. 35 x 32 x 35 cm in één stuk. Grotere projecten kunnen door slim te splitsen en nadien te monteren toch 3D geprint worden.",
+      "Tot ca. 35 x 32 x 35 cm in een stuk. Grotere projecten kunnen we slim opsplitsen en functioneel assembleren.",
   },
   {
     q: "Bieden jullie 3D printen aan in mijn regio?",
@@ -269,7 +269,7 @@ const references = [
   { label: "All3DP uitleg van FDM 3D printen", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
 ]
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 6 februari 2026"
+const lastUpdatedLabel = "Laatst bijgewerkt: 16 februari 2026"
 
 const pageUrl = String(
   metadata.openGraph?.url ?? metadata.alternates?.canonical ?? "https://www.x3dprints.be/3d-printen",
@@ -323,11 +323,18 @@ export default function Page() {
           <Reveal className="stacked-content">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">3D printen</p>
             <h1 className="mt-4 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              3D printen op maat in België voor bedrijven en particulieren.
+              3D printen op maat in Belgie voor bedrijven en particulieren.
             </h1>
             <p className="mt-3 max-w-3xl text-lg text-slate-700">
-              Lokale 3D print service vanuit Herzele (tussen Gent en Aalst). Heb je een STL/STEP-bestand of wil je een 3D model laten
-              printen? We adviseren over ontwerp, materiaal en planning zodat je 3D prints snel inzetbaar zijn.
+              3D print service Belgie vanuit Herzele voor prototypes, tooling, displays en onderdelen op maat. Heb je een STL/STEP-bestand
+              of wil je hulp bij materiaalkeuze? We adviseren pragmatisch zodat je 3D prints snel inzetbaar zijn.
+            </p>
+            <p className="mt-2 max-w-3xl text-sm text-slate-600">
+              Actief in Vlaanderen met focus op regio Gent, Aalst en Oudenaarde. Bekijk ook de{" "}
+              <Link href="/locaties" className="font-semibold text-indigo-600 underline underline-offset-4">
+                locatiepagina&apos;s
+              </Link>{" "}
+              voor lokale vindbaarheid per gemeente.
             </p>
             <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -367,9 +374,8 @@ export default function Page() {
                 oriëntatie en eerlijk advies wanneer een ontwerp beter herwerkt wordt alvorens te 3D printen.
               </p>
               <p className="mt-3 text-sm text-slate-600">
-                Zoek je een “3D print bureau” voor marketingprops, tabletop of functionele onderdelen? Deze pagina koppelt je direct
-                aan de juiste resources: materialen, prijzen, upload en segmenten. Zo bouw je sneller autoriteit en vertrouwen op
-                richting stakeholders én Google.
+                Zoek je een &quot;3D print bureau&quot; voor bedrijven of particulieren? Deze pagina koppelt je direct aan de juiste
+                resources: diensten, materialen, prijzen, upload en segmenten. Zo vind je sneller de juiste route per use-case.
               </p>
               <p className="mt-3 text-sm text-slate-600">
                 Wil je dieper duiken? Gebruik de onderstaande kennisbanklinks of start meteen in de{" "}
@@ -383,8 +389,8 @@ export default function Page() {
             <GlassCard className="h-full p-6 sm:p-8">
               <h2 className="text-xl font-semibold text-slate-900">Kennisbank en checklist</h2>
               <p className="mt-2 text-sm text-slate-600">
-                Elk 3D printproject start met goede input. Deze links bundelen de populairste gidsen en de checklist toont wat we
-                graag ontvangen bij een aanvraag.
+                Elk 3D printproject start met goede input. Deze links sturen je naar de belangrijkste conversion-pagina&apos;s en de checklist
+                toont wat we graag ontvangen bij een aanvraag.
               </p>
               <ul className="mt-4 space-y-3 text-sm text-slate-700">
                 {knowledgeLinks.map((item) => (
@@ -483,11 +489,11 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-6 max-w-3xl">
             <h2 id="printen-segmenten" className="scroll-mt-28 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-              3D printen voor marketing, tabletop en particulieren
+              3D printen voor marketing, makers en particulieren
             </h2>
             <p className="mt-2 text-slate-600">
-              Deze segmenten vragen extra aandacht: van opvallende etalage-elementen over gritty tabletop miniatures tot
-              functionele en decoratieve 3D prints voor thuis. We stemmen materiaal, afwerking en timing af op jouw doeleinden.
+              Deze segmenten vragen extra aandacht: van etalage-elementen en makers-projecten tot functionele en decoratieve 3D prints.
+              We stemmen materiaal, afwerking en timing af op je doel.
             </p>
           </Reveal>
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -522,13 +528,13 @@ export default function Page() {
               3D printen voor retail & marketing
             </Link>
             <Link
-              href="/segments/3d-printing-tabletop"
+              href="/segments/3d-printing-makers"
               className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-800 transition hover:bg-white"
             >
-              3D printen voor tabletop & hobby
+              3D printen voor makers & hobby
             </Link>
             <Link
-              href="/contact?material=PLA_MATTE"
+              href="/contact?material=pla-matte"
               className="inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-indigo-700 transition hover:bg-white"
             >
               3D printen voor particulieren
@@ -573,20 +579,30 @@ export default function Page() {
             <GlassCard className="p-6 sm:p-8">
               <h2 className="text-xl font-semibold text-slate-900">Prijsvoorbeelden voor 3D printen</h2>
               <p className="mt-2 text-sm text-slate-600">
-                Richtprijzen in PLA Matte (standaard). Opslagen voor specials (Silk/Marble/Translucent) en PETG/TPU zijn typisch
-                20-30 %. Je krijgt altijd een concrete offerte per 3D print-project.
+                Richtprijzen in PLA Matte (standaard) als snelle benchmark. Specials en engineeringmaterialen kunnen hoger uitvallen.
+                Je krijgt altijd een concrete offerte per 3D print-project.
               </p>
-              <dl className="mt-4 space-y-2 text-sm text-slate-700">
-                {pricing.map((p) => (
-                  <div
-                    key={p.k}
-                    className="flex items-start justify-between rounded-xl border border-slate-200/70 bg-white/80 px-3 py-2"
-                  >
-                    <dt className="pr-4 font-semibold text-slate-900">{p.k}</dt>
-                    <dd className="text-slate-700">{p.v}</dd>
-                  </div>
-                ))}
-              </dl>
+              <div className="mt-4 overflow-hidden rounded-xl border border-slate-200/70 bg-white/80">
+                <table className="w-full text-left text-sm text-slate-700">
+                  <caption className="sr-only">Richtprijzen voor 3D printen in PLA Matte</caption>
+                  <thead className="bg-slate-50 text-xs uppercase tracking-wide text-slate-500">
+                    <tr>
+                      <th scope="col" className="px-3 py-2 font-semibold">Formaat</th>
+                      <th scope="col" className="px-3 py-2 font-semibold">Richtprijs</th>
+                      <th scope="col" className="px-3 py-2 font-semibold">Typische toepassing</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {pricing.map((p) => (
+                      <tr key={p.size} className="border-t border-slate-200/70">
+                        <th scope="row" className="px-3 py-2 font-semibold text-slate-900">{p.size}</th>
+                        <td className="px-3 py-2">{p.price}</td>
+                        <td className="px-3 py-2">{p.useCase}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <div className="mt-4 flex flex-wrap gap-3">
                 <Link
                   href="/pricing"

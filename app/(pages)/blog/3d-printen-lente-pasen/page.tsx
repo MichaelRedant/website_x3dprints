@@ -1,99 +1,144 @@
 import type { Metadata } from "next"
-import Link from "next/link"
 import Image from "next/image"
-import Reveal from "@/components/Reveal"
-import GlassCard from "@/components/GlassCard"
-import ShimmerButton from "@/components/ShimmerButton"
-import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
+import Link from "next/link"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogContentOverview from "@/components/BlogContentOverview"
+import GlassCard from "@/components/GlassCard"
+import Reveal from "@/components/Reveal"
+import ShimmerButton from "@/components/ShimmerButton"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-lente-pasen/"
 const datePublished = "2024-03-15"
-const dateModified = "2026-02-09"
+const dateModified = "2026-02-18"
+const lastUpdatedLabel = "Laatst bijgewerkt: 18 februari 2026"
 
 export const metadata: Metadata = {
-  title: "3D printen voor lente & Pasen 2026 | X3DPrints Blog",
+  title: "3D printen voor lente en Pasen 2026 | X3DPrints Blog",
   description:
-    "Pastel decor, paasornamenten en lichtobjecten voor lente & Pasen 2026 in Silk, Matte en Translucent PLA. Tips voor supports, magneten, levering en ontwerpservice (model niet inbegrepen).",
+    "3D printen voor lente en Pasen 2026: paashangers, eieren, tafeldecor en lichtobjecten in PLA, Translucent of PETG. Inclusief checklist, materiaalkeuze en FAQ.",
   alternates: { canonical },
   openGraph: {
-    title: "3D printen voor lente & Pasen 2026",
+    title: "3D printen voor lente en Pasen 2026",
     description:
-      "Eieren, konijnen, bloemdecor en lantaarns voor Pasen 2026 in pastel PLA of Translucent. Slicer-tips, afwerking en leverzones.",
-  url: canonical,
+      "Praktische gids voor paashangers, eieren, tafeldecor en lichtobjecten met de juiste materiaalkeuze, afwerking en planning.",
+    url: canonical,
     type: "article",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte paasdecor" }],
+    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte lente en paasdecor" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printen voor lente & Pasen 2026",
-    description: "Pastel PLA en Translucent lantaarns voor Pasen 2026, met tips voor supports, magneten en levering.",
+    title: "3D printen voor lente en Pasen 2026",
+    description:
+      "Praktische gids voor 3D geprinte paasdecoratie met materiaalkeuze, checklist en leverplanning.",
     images: ["/images/og-home.jpg"],
   },
 }
 
-const tips = [
-  "Gebruik Silk of Matte PLA in pastelkleuren voor eieren, konijnen en ornamenten; Translucent voor lichtobjecten.",
-  "Layerhoogte 0,16-0,2 mm; houd wanddikte >1,2 mm voor stevige hangers aan takken.",
-  "Integreer oogjes of pin-holes voor haakjes/magneten zodat ornamenten niet breken.",
-  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan €45/uur.",
-  "Voor buiten decor: kies PETG voor betere UV/vocht bestendigheid en vermijd donkere kleuren in volle zon.",
+const materialRows = [
+  { material: "PLA Matte/Silk", use: "Paashangers, eieren, tafeldecor", note: "Nette visuele finish voor indoor" },
+  { material: "Translucent PLA", use: "Lichtobjecten en lantaarns", note: "Wanddikte 1.6-2 mm voor zachte gloed" },
+  { material: "PETG", use: "Outdoor decor en vochtige omgeving", note: "Beter tegen UV en vocht dan PLA" },
+]
+
+const materialTips = [
+  "Gebruik layerhoogte 0.16-0.20 mm voor scherpe details op ornamenten en naamtags.",
+  "Houd wanddikte boven 1.2 mm voor hangers die met lint of haakjes gebruikt worden.",
+  "Voor lichtobjecten werkt Translucent PLA het best met dunne, gelijkmatige wanden.",
+  "Ontwerpbestand is niet inbegrepen: lever STL/STEP aan of kies ontwerpservice aan EUR 45/uur.",
+  "Voor buitengebruik in lenteweer kies je beter PETG dan standaard PLA.",
+]
+
+const useCases = [
+  {
+    title: "Retail en etalage",
+    body: "Seizoensdecor, paasprops en QR-houders voor winkels, boetieks en horeca.",
+  },
+  {
+    title: "Events en tafeldecor",
+    body: "Naamplaatjes, centerpieces en branding-elementen voor brunches en bedrijfsevents.",
+  },
+  {
+    title: "Particulier maatwerk",
+    body: "Paashangers, gepersonaliseerde eieren en cadeau-items in pastel of translucent look.",
+  },
+]
+
+const workflowSteps = [
+  {
+    title: "1. Input",
+    body: "Je stuurt STL/STEP of een duidelijke referentie met formaat, kleur en deadline.",
+  },
+  {
+    title: "2. Technische check",
+    body: "We beoordelen wanddikte, supports, bevestiging en materiaalkeuze per toepassing.",
+  },
+  {
+    title: "3. Productie",
+    body: "We printen, controleren passing en doen indien nodig lichte nabewerking.",
+  },
+  {
+    title: "4. Levering",
+    body: "Afhalen in Herzele of verzending met beschermde verpakking voor breekbare onderdelen.",
+  },
 ]
 
 const checklist = [
-  "Noteer formaat en ophangwijze (lint, haak, magneet) en of er leds/batterijen in moeten.",
-  "Materiaalkeuze: pastel Silk/Matte PLA voor look, Translucent voor glow, PETG voor outdoor.",
-  "Afwerking: raw, licht geschuurd of geprimed. Vermeld of je direct wil schilderen.",
-  "Leveroptie: EV-zone of pakketdienst; afhalen kan. Geef deadline en bestemming mee.",
-]
-
-const materialRows = [
-  { material: "PLA Silk/Matte", use: "Pastel decor en ornamenten", note: "Visuele finish, indoor" },
-  { material: "Translucent PLA", use: "Lichtobjecten en lantaarns", note: "Wanddikte 1,6-2 mm voor glow" },
-  { material: "PETG", use: "Outdoor decor", note: "Beter tegen UV en vocht" },
-]
-
-const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
-
-const references = [
-  { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
-  { label: "UltiMaker PETG material properties", href: "https://ultimaker.com/materials/s-series-petg/" },
-  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-1B6AA02D-B8E5-4F54-ADC7-11C5B900E05F" },
+  "Gebruik: hanger, tafelstuk, display of lichtobject.",
+  "Materiaalkeuze: PLA Matte/Silk, Translucent PLA of PETG.",
+  "Bevestiging: lint, haak, magneet of voetje.",
+  "Afwerking: raw, licht geschuurd of geprimed.",
+  "Deadline en leveroptie vermelden in je aanvraag.",
 ]
 
 const faqItems = [
   {
-    q: "Kunnen jullie gepersonaliseerde paaseieren of naamhangers printen?",
-    a: "Ja. Lever een STL/STEP met naam of logo, of laat ons ontwerpen aan €45/uur. We printen in Silk of Matte pastel PLA voor een nette afwerking.",
+    q: "Kunnen jullie gepersonaliseerde paasdecor printen met naam of logo?",
+    a: "Ja. Lever een STL/STEP aan of laat het ontwerp uitwerken via ontwerpservice aan EUR 45/uur.",
   },
   {
-    q: "Wat is het beste materiaal voor lichtgevende paasdecor?",
-    a: "Translucent PLA met wanddikte 1,6-2 mm geeft een zachte gloed. Houd openingen voor leds/batterijen en zorg voor ventilatie bij warme leds.",
+    q: "Welk materiaal is het best voor lichtgevende paasdecoratie?",
+    a: "Translucent PLA met wanddikte rond 1.6-2 mm geeft de beste lichtspreiding voor kleine led-opstellingen.",
   },
   {
-    q: "Hoe worden breekbare decorstukken geleverd?",
-    a: "We verpakken gescheiden met schuim en leveren via EV-zones (Zone 1 €15, Zone 2 €30, Zone 3 €45) of pakketdienst. Afhalen in Herzele kan gratis.",
+    q: "Kan 3D geprinte paasdecoratie ook buiten gebruikt worden?",
+    a: "Voor buiten raden we PETG aan omdat het beter bestand is tegen vocht en zon dan standaard PLA.",
   },
   {
-    q: "Is het 3D model inbegrepen?",
-    a: "Nee. Het ontwerpbestand is niet inbegrepen in de printprijs. Lever STL/STEP of kies onze ontwerpservice aan €45/uur; we optimaliseren wanddiktes en supports.",
+    q: "Is het 3D model inbegrepen in de printprijs?",
+    a: "Nee. Je levert zelf STL/STEP aan, of je kiest aanvullende ontwerpservice.",
   },
   {
-    q: "Welke afwerking raden jullie aan?",
-    a: "Voor pastel PLA volstaat vaak raw of licht schuren. Wil je schilderen, vraag dan een grijze primer. Voor Translucent lichtobjecten is primer niet nodig.",
+    q: "Hoe snel kunnen jullie leveren voor Pasen 2026?",
+    a: "Dat hangt af van oplage en afwerking. Met vroege aanvraag kunnen we productie en levering stabiel inplannen.",
   },
+]
+
+const references = [
+  { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
+  { label: "UltiMaker PETG material properties", href: "https://ultimaker.com/materials/s-series-petg/" },
+  { label: "Prusa filament material guide", href: "https://help.prusa3d.com/filament-material-guide" },
+  { label: "Autodesk STL export basics", href: "https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-1B6AA02D-B8E5-4F54-ADC7-11C5B900E05F" },
+]
+
+const inspirationImages = [
+  { src: "/images/portfolio/easter1.webp", alt: "3D geprinte paasdecor set met eieren en hangers" },
+  { src: "/images/portfolio/Easter2.webp", alt: "3D geprinte paashangers in pastelkleuren" },
+  { src: "/images/portfolio/Easter3.webp", alt: "3D geprinte paasornamenten voor tafeldecoratie" },
+  { src: "/images/portfolio/Easter4.webp", alt: "3D geprinte translucent paaslantaarn" },
+  { src: "/images/portfolio/Easter5.webp", alt: "3D geprinte combinatie van paasdecor en seizoensdisplay" },
 ]
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
-  headline: "3D printen voor lente & Pasen 2026",
-  description:
-    "Pastel decor, paasornamenten en lichtobjecten voor lente & Pasen 2026 in Silk, Matte en Translucent PLA. Tips voor supports, magneten en levering.",
+  headline: "3D printen voor lente en Pasen 2026",
+  description: metadata.description ?? "",
   datePublished,
   dateModified,
+  image: "https://www.x3dprints.be/images/og-home.jpg",
+  inLanguage: "nl-BE",
 })
 
 const faqJsonLd = buildFaqPageSchema({
@@ -101,59 +146,71 @@ const faqJsonLd = buildFaqPageSchema({
   items: faqItems,
 })
 
-const inspirationImages = [
-  { src: "/images/portfolio/easter1.webp", alt: "3D geprinte paasdecor set 1" },
-  { src: "/images/portfolio/Easter2.webp", alt: "3D geprinte paasdecor set 2" },
-  { src: "/images/portfolio/Easter3.webp", alt: "3D geprinte paasdecor set 3" },
-  { src: "/images/portfolio/Easter4.webp", alt: "3D geprinte paasdecor set 4" },
-  { src: "/images/portfolio/Easter5.webp", alt: "3D geprinte paasdecor set 5" },
-]
-
 export default function BlogSpringEaster() {
   return (
     <main className="relative overflow-clip">
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-lime-50 via-white to-amber-50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 via-white to-amber-50" />
+        <div className="absolute -left-24 -top-24 h-80 w-80 rounded-full bg-emerald-200/30 blur-3xl" />
+        <div className="absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-amber-200/30 blur-3xl" />
       </div>
 
-      <section className="px-6 pb-12 pt-14 sm:px-8 lg:px-12">
+      <section className="px-6 pb-10 pt-14 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-green-700">Seasonal</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700">Seasonal</p>
             <h1 className="mt-2 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              3D printen voor lente & Pasen 2026
+              3D printen voor lente en Pasen 2026
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Paashangers, eieren, konijnen en bloemdecor in pastel PLA of Translucent. Ontwerpbestand niet inbegrepen; lever
-              STL/STEP of kies ontwerpservice (€45/uur). EV-levering voor breekbare ornamenten of pakketdienst als je verder zit.
+              Wil je paasdecoratie laten maken met 3D printen? In deze gids krijg je direct de juiste materiaalkeuze,
+              technische richtlijnen en planning voor paashangers, eieren, tafeldecor en lichtobjecten. Zo beslis je
+              sneller en voorkom je misprints vlak voor Pasen.
             </p>
             <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact">Plan je paasprints 2026</ShimmerButton>
+              <ShimmerButton href="/contact?quote=Paasdecor%202026">Plan je paasprints 2026</ShimmerButton>
               <Link
                 href="/segments/3d-printing-seasonal"
-                className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+                className="rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:bg-white"
               >
                 Naar seasonal segment
               </Link>
               <Link
                 href="/materials#material-suggestion-tool"
-                className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+                className="rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:bg-white"
               >
-                Material Suggestion Tool
+                Material suggestion tool
               </Link>
             </div>
+            <nav aria-label="Snelle sectienavigatie" className="mt-6 flex flex-wrap gap-2 text-xs font-semibold text-slate-700">
+              <Link href="#lente-materialen" className="rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 hover:bg-white">
+                Materialen
+              </Link>
+              <Link href="#lente-toepassingen" className="rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 hover:bg-white">
+                Toepassingen
+              </Link>
+              <Link href="#lente-planning" className="rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 hover:bg-white">
+                Planning
+              </Link>
+              <Link href="#lente-faq" className="rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 hover:bg-white">
+                FAQ
+              </Link>
+              <Link href="#sources" className="rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 hover:bg-white">
+                Bronnen
+              </Link>
+            </nav>
           </Reveal>
         </div>
       </section>
 
       <BlogContentOverview locale="nl" />
 
-      <section id="lente-materials" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="lente-materialen" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Materialen & settings</h2>
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Materiaalkeuze voor lente- en paasprints</h2>
               <div className="mt-4 overflow-x-auto">
                 <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
                   <thead>
@@ -175,56 +232,72 @@ export default function BlogSpringEaster() {
                 </table>
               </div>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
-                {tips.map((tip) => (
+                {materialTips.map((tip) => (
                   <li key={tip} className="flex gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-green-500" aria-hidden />
+                    <span className="mt-1 h-2 w-2 rounded-full bg-emerald-500" aria-hidden />
                     <span>{tip}</span>
                   </li>
                 ))}
               </ul>
               <p className="mt-4 text-sm text-slate-700">
-                Voor tafelcentrumstukken kies je Marble of Silk PLA. Voor buiten decor is PETG beter tegen zon/vocht. Wil je licht
-                doorlaten, kies Translucent en vermijd te dikke wanden om hotspots te voorkomen.
-              </p>
-              <p className="mt-3 text-sm text-slate-700">
-                Levering: EV-zones of pakketdienst. Breekbare delen verpakken we gescheiden; grote decor kan in modules zodat de
-                binnenkant netjes blijft.
+                Meer vergelijkingen vind je op de{" "}
+                <Link href="/materials" className="font-semibold text-emerald-700 underline underline-offset-2">
+                  materialenpagina
+                </Link>
+                . Twijfel je tussen PLA en PETG, dan helpt de material suggestion tool op basis van toepassing en omgeving.
               </p>
             </GlassCard>
           </Reveal>
 
           <Reveal delay={0.06}>
             <GlassCard className="p-6">
-              <h3 className="text-xl font-semibold tracking-tight text-slate-900">Checklist</h3>
-              <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                {checklist.map((item) => (
-                  <li key={item} className="flex gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-indigo-500" aria-hidden />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <h3 className="text-xl font-semibold tracking-tight text-slate-900">Design en aanlevering</h3>
               <p className="mt-3 text-sm text-slate-700">
-                Extra: pin-holes voor magneten (2x1 of 3x2 mm) voor displays en paasbomen. Vraag primer als je wil schilderen; anders
-                volstaat raw voor pastel PLA.
+                Voor 3D printen van paasdecoratie werkt STL of STEP het best. Voeg steeds afmetingen, gewenste kleur en
+                montagewijze toe. Zo kunnen we supports, oriëntatie en wanddiktes technisch correct zetten.
               </p>
+              <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                <li>Bestandsformaten: STL of STEP.</li>
+                <li>Ontwerpservice: EUR 45/uur (optioneel).</li>
+                <li>Model niet inbegrepen in printprijs.</li>
+              </ul>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <Link
+                  href="/3d-modellen-vinden"
+                  className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-white"
+                >
+                  Waar vind je 3D modellen?
+                </Link>
+                <Link
+                  href="/contact?quote=STL%20voor%20paasdecor"
+                  className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-100"
+                >
+                  Stuur je bestand door
+                </Link>
+              </div>
             </GlassCard>
           </Reveal>
         </div>
       </section>
 
-      <BlogContentOverview locale="nl" />
-
-      <section id="lente-examples" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="lente-toepassingen" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Voorbeelden</h2>
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Toepassingen voor bedrijven en particulieren</h2>
+              <div className="mt-4 grid gap-3 md:grid-cols-3">
+                {useCases.map((item) => (
+                  <article key={item.title} className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
+                    <h3 className="text-base font-semibold text-slate-900">{item.title}</h3>
+                    <p className="mt-2 text-sm text-slate-700">{item.body}</p>
+                  </article>
+                ))}
+              </div>
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
                 {inspirationImages.map((img, idx) => (
                   <div
                     key={img.src}
-                    className={`overflow-hidden rounded-xl border border-white/60 bg-white/80 shadow ${idx === inspirationImages.length - 1 ? "sm:col-span-2" : ""}`}
+                    className={`overflow-hidden rounded-xl border border-white/70 bg-white/80 shadow-sm ${idx === inspirationImages.length - 1 ? "sm:col-span-2" : ""}`}
                   >
                     <Image
                       src={img.src}
@@ -238,97 +311,81 @@ export default function BlogSpringEaster() {
                   </div>
                 ))}
               </div>
-              <p className="mt-3 text-xs text-slate-600">
-                Foto&apos;s tonen pastel PLA en Translucent paasdecor: eieren, ornamenten, lantaarns en mand/decor sets (Easter1-5).
-              </p>
             </GlassCard>
           </Reveal>
         </div>
       </section>
 
-      <BlogContentOverview locale="nl" />
-
-      <section id="lente-why" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="lente-planning" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Waarom nu plannen?</h2>
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Planning en doorlooptijd richting Pasen</h2>
               <p className="mt-3 text-sm text-slate-700">
-                Lente- en paasdecor kent piekperiodes in maart-april. Door op tijd te boeken kunnen we ontwerpen optimaliseren
-                (wanddikte, supports, splitsing) en levering inplannen voor events of retail.
+                Voor paasprojecten ontstaan pieken in maart en april. Vroege intake voorkomt bottlenecks en geeft ruimte
+                voor een extra testprint. Zo krijg je voorspelbare timing zonder last-minute druk.
               </p>
-              <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                <li>Snelle iteraties op formaat, bevestigingen en materiaalkeuze.</li>
-                <li>EV-levering voor breekbare sets of pakketdienst voor verder weg.</li>
-                <li>Optioneel primer/schuren zodat je direct kan schilderen.</li>
-              </ul>
-              <p className="mt-3 text-sm text-slate-700">
-                Herinnering: het 3D model is niet inbegrepen in de printprijs. Lever STL/STEP of laat ons ontwerpen aan €45/uur.
-                Vermeld je eventdatum en leveroptie bij de aanvraag.
-              </p>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                {workflowSteps.map((step) => (
+                  <div key={step.title} className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
+                    <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-slate-900">{step.title}</h3>
+                    <p className="mt-2 text-sm text-slate-700">{step.body}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <ShimmerButton href="/contact?quote=Paasproject%20met%20deadline">Vraag timing en offerte</ShimmerButton>
+                <Link
+                  href="/pricing"
+                  className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-white"
+                >
+                  Bekijk prijzen en opties
+                </Link>
+              </div>
             </GlassCard>
           </Reveal>
 
           <Reveal delay={0.06}>
             <GlassCard className="p-6">
-              <h3 className="text-xl font-semibold tracking-tight text-slate-900">SEO inspiratiehoek</h3>
-              <p className="mt-2 text-sm text-slate-700">
-                Zoek je “3D geprinte paasdecor”, “3D print paas eieren”, “Translucent paas lantaarn”, “pastel PLA konijn” of
-                “custom paas hangers”? Dit artikel bundelt materiaalkeuze (Silk/Matte pastel, Translucent, PETG, TPU) en
-                support-tips zodat je snel beslist.
-              </p>
-              <p className="mt-3 text-sm text-slate-700">
-                Populaire opdrachten: paasei sets met naam, bunny ornaments, bloem-embellishments, centerpieces, lantaarns met
-                fairy lights en antislip feet in TPU voor trays. Wanddikte &gt;1,2 mm voor hangers, 1,6-2 mm voor lantaarns.
-              </p>
-              <div className="mt-4 flex flex-wrap gap-3 text-sm">
-                <ShimmerButton href="/contact">Start je paasaanvraag</ShimmerButton>
-                <Link
-                  href="/segments/3d-printing-seasonal"
-                  className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
-                >
-                  Seasonal segment
-                </Link>
-              </div>
+              <h3 className="text-xl font-semibold tracking-tight text-slate-900">Aanvraagchecklist</h3>
+              <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                {checklist.map((item) => (
+                  <li key={item} className="flex gap-2">
+                    <span className="mt-1 h-2 w-2 rounded-full bg-indigo-500" aria-hidden />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
         </div>
       </section>
 
-      <BlogContentOverview locale="nl" />
-
-      <section id="lente-faq" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
+      <section id="lente-faq" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">FAQ lente & Pasen</h2>
-              <div className="mt-3 space-y-3 text-sm text-slate-700">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">FAQ: 3D printen voor lente en Pasen</h2>
+              <div className="mt-4 space-y-3 text-sm text-slate-700">
                 {faqItems.map((item) => (
-                  <div key={item.q} className="rounded-xl border border-slate-200/70 bg-white/70 p-3">
-                    <p className="font-semibold text-slate-800">{item.q}</p>
+                  <article key={item.q} className="rounded-xl border border-slate-200/70 bg-white/70 p-4">
+                    <h3 className="font-semibold text-slate-800">{item.q}</h3>
                     <p className="mt-1">{item.a}</p>
-                  </div>
+                  </article>
                 ))}
               </div>
-              <p className="mt-4 text-sm text-slate-700">
-                Niet gevonden wat je zoekt? Stuur je vraag en model via{" "}
-                <Link href="/contact" className="text-indigo-700 underline underline-offset-2">
-                  contact
-                </Link>{" "}
-                met deadline en leveroptie.
-              </p>
             </GlassCard>
           </Reveal>
         </div>
       </section>
-
-      <BlogContentOverview locale="nl" />
 
       <section id="lente-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 id="sources" className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-bold tracking-tight text-slate-900">
+                Bronnen en referenties
+              </h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -350,25 +407,9 @@ export default function BlogSpringEaster() {
         </div>
       </section>
 
-      <BlogContentOverview locale="nl" />
-
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogAuthorNote locale="nl" />
-
-
     </main>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
-

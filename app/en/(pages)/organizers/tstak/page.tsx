@@ -146,7 +146,7 @@ export default function TstakPageEn() {
     <>
       <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-20">
         <Reveal className="space-y-6">
-          <div className="inline-flex items-center gap-2 rounded-full bg-yellow-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-800 ring-1 ring-yellow-100 dark:bg-[#0f162c] dark:text-yellow-200">
+          <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-800 ring-1 ring-amber-100 dark:bg-[#0f162c] dark:text-amber-200">
             Stanley / DeWALT TSTAK
           </div>
           <div className="space-y-4">
@@ -169,19 +169,19 @@ export default function TstakPageEn() {
               />
             </div>
             <div className="flex flex-wrap gap-3 text-sm">
-              <a href="#bundles" className="underline decoration-yellow-400 hover:decoration-yellow-700">
+              <a href="#bundles" className="underline decoration-amber-400 hover:decoration-amber-700">
                 Bundles & presets
               </a>
-              <a href="#carousel" className="underline decoration-yellow-400 hover:decoration-yellow-700">
+              <a href="#carousel" className="underline decoration-amber-400 hover:decoration-amber-700">
                 Photos
               </a>
-              <a href="#faq" className="underline decoration-yellow-400 hover:decoration-yellow-700">
+              <a href="#faq" className="underline decoration-amber-400 hover:decoration-amber-700">
                 FAQ
               </a>
-              <Link href="/en/blog/tool-organizers-3d-printing" className="underline decoration-yellow-400 hover:decoration-yellow-700">
+              <Link href="/en/blog/tool-organizers-3d-printing" className="underline decoration-amber-400 hover:decoration-amber-700">
                 Organizers blog
               </Link>
-              <a href="#tstak-sources" className="underline decoration-yellow-400 hover:decoration-yellow-700">
+              <a href="#tstak-sources" className="underline decoration-amber-400 hover:decoration-amber-700">
                 Sources
               </a>
             </div>
@@ -190,14 +190,14 @@ export default function TstakPageEn() {
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
             <div className="flex flex-wrap gap-3">
               <Link href={contactHref} className="no-underline">
-                <div className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:brightness-110 dark:bg-yellow-500">
+                <div className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:brightness-110 dark:bg-amber-500">
                   Plan a TSTAK layout
                   <span className="i-lucide-arrow-right" aria-hidden />
                 </div>
               </Link>
               <Link
                 href="#bundles"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-yellow-400 hover:text-yellow-900 dark:border-slate-700 dark:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-900 dark:border-slate-700 dark:text-slate-100"
               >
                 Jump to bundles
                 <span className="i-lucide-sparkles" aria-hidden />
@@ -206,7 +206,7 @@ export default function TstakPageEn() {
                 href="https://www.dewalt.com/product/dwst17814/tstak%C2%AE-4-compartment-box"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-yellow-400 hover:text-yellow-900 dark:border-slate-700 dark:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-900 dark:border-slate-700 dark:text-slate-100"
               >
                 View TSTAK cases
                 <span className="i-lucide-external-link" aria-hidden />
@@ -223,7 +223,7 @@ export default function TstakPageEn() {
                 key={item}
                 className="flex items-center gap-2 rounded-xl bg-white/70 px-4 py-3 text-sm font-semibold text-slate-800 ring-1 ring-white/60 backdrop-blur dark:bg-[#0B0F1A]/70 dark:text-slate-100 dark:ring-0"
               >
-                <span className="i-lucide-check-circle-2 text-yellow-600" aria-hidden />
+                <span className="i-lucide-check-circle-2 text-amber-600" aria-hidden />
                 {item}
               </li>
             ))}
@@ -235,7 +235,7 @@ export default function TstakPageEn() {
         <div className="mx-auto max-w-6xl space-y-10">
           <Reveal className="grid gap-6 rounded-3xl bg-white/70 p-6 ring-1 ring-white/60 backdrop-blur dark:bg-[#0B0F1A]/70 dark:ring-0 md:grid-cols-[1fr_1fr] md:gap-10">
             <div className="space-y-3">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-yellow-700">What you solve</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">What you solve</p>
               <h2 id="tstak-overview" className="scroll-mt-28 text-2xl font-bold text-slate-900 dark:text-white">Order in every tray</h2>
               <p className="text-slate-700 dark:text-slate-200">Fixed pockets that keep parts apart and stay put upright.</p>
             </div>
@@ -245,7 +245,7 @@ export default function TstakPageEn() {
                   key={pain}
                   className="flex items-center gap-3 rounded-2xl border border-slate-100 bg-white/70 px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm shadow-slate-900/5 dark:border-slate-800 dark:bg-[#0f162c] dark:text-slate-100"
                 >
-                  <span className="i-lucide-minus-circle text-yellow-600" aria-hidden />
+                  <span className="i-lucide-minus-circle text-amber-600" aria-hidden />
                   {pain}
                 </li>
               ))}
@@ -255,13 +255,13 @@ export default function TstakPageEn() {
           <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 shadow-lg shadow-slate-900/5 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-yellow-700">How it works</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">How it works</p>
                 <h2 className="text-2xl font-bold text-slate-900 dark:text-white">No foam, just fitted inserts</h2>
                 <p className="mt-2 max-w-2xl text-slate-700 dark:text-slate-200">{PAGE_EN.summary}</p>
               </div>
               <Link
                 href={contactHref}
-                className="text-sm font-semibold text-yellow-700 underline-offset-4 hover:text-yellow-900 hover:underline dark:text-yellow-200 dark:hover:text-yellow-100"
+                className="text-sm font-semibold text-amber-700 underline-offset-4 hover:text-amber-900 hover:underline dark:text-amber-200 dark:hover:text-amber-100"
               >
                 Start with your TSTAK model
               </Link>
@@ -272,7 +272,7 @@ export default function TstakPageEn() {
                   key={step.title}
                   className="rounded-2xl border border-slate-100 bg-slate-50/70 p-4 text-slate-800 ring-1 ring-white/60 dark:border-slate-800 dark:bg-[#0f162c] dark:text-slate-100"
                 >
-                  <div className="mb-2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-yellow-600 text-sm font-bold text-white">
+                  <div className="mb-2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-amber-600 text-sm font-bold text-white">
                     {index + 1}
                   </div>
                   <h3 className="text-base font-semibold">{step.title}</h3>
@@ -292,12 +292,12 @@ export default function TstakPageEn() {
           <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
             <div className="mb-4 flex items-center justify-between gap-3">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-yellow-700">Gallery</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Gallery</p>
                 <h2 className="text-xl font-bold text-slate-900 dark:text-white">TSTAK layouts</h2>
               </div>
               <Link
                 href={contactHref}
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-yellow-400 hover:text-yellow-900 dark:border-slate-700 dark:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-900 dark:border-slate-700 dark:text-slate-100"
               >
                 Plan your TSTAK
                 <span className="i-lucide-arrow-right" aria-hidden />
@@ -353,7 +353,7 @@ export default function TstakPageEn() {
                 {references.map((reference) => (
                   <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
                     <cite className="not-italic">
-                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-amber-600 hover:text-amber-500">
                         {reference.label}
                       </Link>
                     </cite>
@@ -387,3 +387,4 @@ export default function TstakPageEn() {
     </>
   )
 }
+

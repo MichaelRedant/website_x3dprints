@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 
 export const EN_METADATA: Metadata = {
-  title: "3D printing in Belgium | X3DPrints Herzele",
+  title: "3D printing for businesses in Belgium | X3DPrints",
   description:
-    "Precision 3D printing in Belgium and Flanders. Fast turnaround from Herzele with advice on PLA, PETG, ABS/ASA, Nylon and PA-CF for prototypes, displays and functional parts.",
+    "B2B 3D printing in Belgium from Herzele. We produce prototypes, jigs, fixtures and custom parts with clear quotes and reliable lead times.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/",
     languages: {
@@ -13,14 +13,18 @@ export const EN_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "X3DPrints - 3D print service in Belgium",
+    title: "3D printing for businesses in Belgium | X3DPrints",
     description:
-      "From STL/STEP to clean 3D prints in Belgium. Local guidance, shorter lead times and durable finishing for projects in Ghent, Aalst and across Flanders.",
+      "From STL/STEP to production-ready prints for business use cases: prototypes, tooling and custom parts in Belgium.",
     url: "https://www.x3dprints.be/en/",
     images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "3D printing for businesses in Belgium | X3DPrints",
+    description: "B2B 3D printing for prototypes, jigs, fixtures and custom parts in Belgium.",
+    images: ["/images/og-home.jpg"],
+  },
 }
-

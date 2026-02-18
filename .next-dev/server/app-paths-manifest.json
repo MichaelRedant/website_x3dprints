@@ -1,7 +1,7 @@
 {
-  "/(home)/page": "app/(home)/page.js",
-  "/(pages)/shop/page": "app/(pages)/shop/page.js",
-  "/(pages)/crm/page": "app/(pages)/crm/page.js",
-  "/(pages)/shop/[slug]/page": "app/(pages)/shop/[slug]/page.js",
-  "/en/(home)/page": "app/en/(home)/page.js"
+  "/(pages)/[slug]/page": "app/(pages)/[slug]/page.js",
+  "/segments/3d-printing-seasonal/page": "app/segments/3d-printing-seasonal/page.js",
+  "/(pages)/blog/3d-printen-lente-pasen/page": "app/(pages)/blog/3d-printen-lente-pasen/page.js",
+  "/(pages)/blog/3d-printen-valentijn/page": "app/(pages)/blog/3d-printen-valentijn/page.js",
+  "/(pages)/blog/3d-printen-herfst-halloween/page": "app/(pages)/blog/3d-printen-herfst-halloween/page.js"
 }

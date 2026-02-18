@@ -1,12 +1,12 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import { getShopProductBySlug, getShopProductSlugs, getShopProducts } from "@/lib/shop-data"
+import { SHOP_PRODUCT_SLUGS } from "@/content/shop-products"
+import { getShopProductBySlug, getShopProducts } from "@/lib/shop-data"
 import { pickRelatedProducts } from "@/lib/shop-related"
 import { buildShopProductMetadata, renderShopProductPage } from "./product-page"
 
-export async function generateStaticParams() {
-  const slugs = await getShopProductSlugs("nl")
-  return slugs.map((slug) => ({ slug }))
+export function generateStaticParams() {
+  return SHOP_PRODUCT_SLUGS.map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({

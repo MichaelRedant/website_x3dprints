@@ -127,7 +127,7 @@ export default function CustomOrganizersPageEn() {
     <>
       <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-20">
         <Reveal className="space-y-6">
-          <div className="inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-800 ring-1 ring-indigo-100 dark:bg-[#0f162c] dark:text-indigo-200">
+          <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-800 ring-1 ring-amber-100 dark:bg-[#0f162c] dark:text-amber-200">
             Custom toolbox inserts
           </div>
           <div className="space-y-4">
@@ -140,7 +140,7 @@ export default function CustomOrganizersPageEn() {
               For unique cases: photography, measurement gear, makers, RC/FPV, medical kits and more.
             </p>
             <div className="grid gap-2 rounded-2xl border border-white/70 bg-white/70 p-4 text-sm text-slate-800 ring-1 ring-white/60 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/70 dark:text-slate-100 dark:ring-0">
-              <div className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-700">Common custom setups</div>
+              <div className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">Common custom setups</div>
               <div className="grid gap-2 sm:grid-cols-2">
                 <span className="flex items-center gap-2">
                   <span className="i-lucide-cube" aria-hidden /> Pegboards with magnetic labels
@@ -162,35 +162,35 @@ export default function CustomOrganizersPageEn() {
             <div className="flex flex-wrap gap-3 text-sm">
               <Link
                 href={contactHref}
-                className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:brightness-110 dark:bg-indigo-500"
+                className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:brightness-110 dark:bg-amber-500"
               >
                 Request your custom insert
                 <span className="i-lucide-arrow-right" aria-hidden />
               </Link>
               <Link
                 href="#bundles"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-indigo-400 hover:text-indigo-900 dark:border-slate-700 dark:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-900 dark:border-slate-700 dark:text-slate-100"
               >
                 Jump to options
                 <span className="i-lucide-list-checks" aria-hidden />
               </Link>
               <Link
                 href="#howto"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-indigo-400 hover:text-indigo-900 dark:border-slate-700 dark:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-900 dark:border-slate-700 dark:text-slate-100"
               >
                 Intake steps
                 <span className="i-lucide-sticky-note" aria-hidden />
               </Link>
               <Link
                 href="/en/materials#material-suggestion-tool"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-indigo-400 hover:text-indigo-900 dark:border-slate-700 dark:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-900 dark:border-slate-700 dark:text-slate-100"
               >
                 See materials
               </Link>
-              <a href="#faq" className="underline decoration-indigo-400 hover:decoration-indigo-700">
+              <a href="#faq" className="underline decoration-amber-400 hover:decoration-amber-700">
                 FAQ
               </a>
-              <a href="#custom-sources" className="underline decoration-indigo-400 hover:decoration-indigo-700">
+              <a href="#custom-sources" className="underline decoration-amber-400 hover:decoration-amber-700">
                 Sources
               </a>
             </div>
@@ -202,7 +202,7 @@ export default function CustomOrganizersPageEn() {
                 key={item}
                 className="flex items-center gap-2 rounded-xl bg-white/70 px-4 py-3 text-sm font-semibold text-slate-800 ring-1 ring-white/60 backdrop-blur dark:bg-[#0B0F1A]/70 dark:text-slate-100 dark:ring-0"
               >
-                <span className="i-lucide-check-circle-2 text-indigo-600" aria-hidden />
+                <span className="i-lucide-check-circle-2 text-amber-600" aria-hidden />
                 {item}
               </li>
             ))}
@@ -214,7 +214,7 @@ export default function CustomOrganizersPageEn() {
         <div className="mx-auto max-w-6xl space-y-10">
           <Reveal className="grid gap-6 rounded-3xl bg-white/70 p-6 ring-1 ring-white/60 backdrop-blur dark:bg-[#0B0F1A]/70 dark:ring-0 md:grid-cols-[1fr_1fr] md:gap-10">
             <div className="space-y-3">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">What you solve</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">What you solve</p>
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white">A calm case for unique tools</h2>
               <p className="text-slate-700 dark:text-slate-200">
                 No generic bins. One fixed layout that fits your exact tools, with labels and optional anti-slip.
@@ -226,7 +226,7 @@ export default function CustomOrganizersPageEn() {
                   key={pain}
                   className="flex items-center gap-3 rounded-2xl border border-slate-100 bg-white/70 px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm shadow-slate-900/5 dark:border-slate-800 dark:bg-[#0f162c] dark:text-slate-100"
                 >
-                  <span className="i-lucide-minus-circle text-indigo-600" aria-hidden />
+                  <span className="i-lucide-minus-circle text-amber-600" aria-hidden />
                   {pain}
                 </li>
               ))}
@@ -239,13 +239,13 @@ export default function CustomOrganizersPageEn() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">How it works</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">How it works</p>
                 <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Photo in, calm toolbox out</h2>
                 <p className="mt-2 max-w-2xl text-slate-700 dark:text-slate-200">{PAGE_EN.summary}</p>
               </div>
               <Link
                 href={contactHref}
-                className="text-sm font-semibold text-indigo-700 underline-offset-4 hover:text-indigo-900 hover:underline dark:text-indigo-200 dark:hover:text-indigo-100"
+                className="text-sm font-semibold text-amber-700 underline-offset-4 hover:text-amber-900 hover:underline dark:text-amber-200 dark:hover:text-amber-100"
               >
                 Start with a photo + dimensions
               </Link>
@@ -256,7 +256,7 @@ export default function CustomOrganizersPageEn() {
                   key={step.title}
                   className="rounded-2xl border border-slate-100 bg-slate-50/70 p-4 text-slate-800 ring-1 ring-white/60 dark:border-slate-800 dark:bg-[#0f162c] dark:text-slate-100"
                 >
-                  <div className="mb-2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-indigo-600 text-sm font-bold text-white">
+                  <div className="mb-2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-amber-600 text-sm font-bold text-white">
                     {index + 1}
                   </div>
                   <h3 className="text-base font-semibold">{step.title}</h3>
@@ -301,7 +301,7 @@ export default function CustomOrganizersPageEn() {
                 {references.map((reference) => (
                   <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
                     <cite className="not-italic">
-                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-amber-600 hover:text-amber-500">
                         {reference.label}
                       </Link>
                     </cite>
@@ -335,3 +335,4 @@ export default function CustomOrganizersPageEn() {
     </>
   )
 }
+

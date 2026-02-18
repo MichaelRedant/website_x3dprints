@@ -12,6 +12,7 @@ import GlassCard from "@/components/GlassCard"
 import Markdown from "@/components/Markdown"
 import MiniToc from "@/components/MiniToc"
 import Faq from "@/components/Faq"
+import GoogleReviewHighlights from "@/components/GoogleReviewHighlights"
 
 import { renderMarkdown, splitMarkdown } from "@/lib/markdown"
 import { extractHeadings } from "@/lib/headings"
@@ -273,6 +274,19 @@ export default async function LocationEnPage({ params }: { params: Promise<{ slu
                 <Image src={svgSrc} alt={keyphrase} width={1200} height={630} className="h-auto w-full rounded-2xl border border-white/40" />
               </div>
             </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <GoogleReviewHighlights
+              locale="en"
+              variant="compact"
+              city={loc.city}
+              seed={loc.slug}
+            />
           </Reveal>
         </div>
       </section>

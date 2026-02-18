@@ -35,9 +35,9 @@ const SEGMENTS: Record<string, SegmentData> = {
     material: "pla-silk",
   },
   "3d-printing-makers": {
-    title: "3D Printing For Makers",
+    title: "3D Printing For Makers And Private Projects",
     summary:
-      "Functional parts and small runs for hobby, repair, and custom one-off projects.",
+      "Functional parts and small runs for hobby, repair, cosplay, and custom one-off projects.",
     material: "pla-matte",
   },
   "3d-printing-tabletop": {
@@ -84,7 +84,7 @@ const SEGMENTS: Record<string, SegmentData> = {
   },
 }
 
-const tocItems = [
+const baseTocItems = [
   { id: "segment-overview", label: "What this segment needs" },
   { id: "segment-workflow", label: "Workflow and planning" },
   { id: "segment-next", label: "Recommended next steps" },
@@ -159,6 +159,17 @@ export default async function SegmentDetailEnPage(
   const { slug } = await params
   const segment = SEGMENTS[slug]
   if (!segment) notFound()
+  const isMakersSegment = slug === "3d-printing-makers"
+  const tocItems = isMakersSegment
+    ? [
+        baseTocItems[0],
+        baseTocItems[1],
+        { id: "segment-model-finder", label: "No 3D model yet? Start here" },
+        baseTocItems[2],
+        baseTocItems[3],
+        baseTocItems[4],
+      ]
+    : baseTocItems
 
   const pageUrl = `${SITE.url}/en/segments/${slug}/`
   const faqItems = [
@@ -174,6 +185,14 @@ export default async function SegmentDetailEnPage(
       q: "Can we request design support too?",
       a: "Yes. You can send STL/STEP files or ask for design support via the contact form for scoped assistance.",
     },
+    ...(isMakersSegment
+      ? [
+          {
+            q: "I do not have my own 3D model yet. Can I still start?",
+            a: 'Yes. Use our <a href="/en/3d-modellen-vinden">3D model finder page</a> to pick reliable sources, then send us the model link and target dimensions.',
+          },
+        ]
+      : []),
   ]
 
   const faqJsonLd = buildFaqPageSchema({
@@ -250,6 +269,13 @@ export default async function SegmentDetailEnPage(
                     View services
                   </Link>
                 </li>
+                {isMakersSegment ? (
+                  <li>
+                    <Link href="/en/3d-modellen-vinden" className="font-semibold text-indigo-700 underline">
+                      Find printable 3D models
+                    </Link>
+                  </li>
+                ) : null}
                 <li>
                   <Link href="/en/blog" className="font-semibold text-indigo-700 underline">
                     Read blog guides
@@ -270,6 +296,52 @@ export default async function SegmentDetailEnPage(
           </div>
         </Reveal>
       </section>
+
+      {isMakersSegment ? (
+        <section id="segment-model-finder" className="mx-auto mt-10 max-w-5xl scroll-mt-28">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">No own 3D model? Here is the fastest way to start</h2>
+              <p className="mt-3 text-sm text-slate-700">
+                If you want a part printed but do not want to model it yourself, start with existing model libraries. We can then
+                validate printability, scale, orientation and material before production.
+              </p>
+              <ol className="mt-4 space-y-2 text-sm text-slate-700">
+                <li>
+                  1. Browse{" "}
+                  <Link href="/en/3d-modellen-vinden" className="font-semibold text-indigo-700 underline">
+                    3D model finder
+                  </Link>{" "}
+                  and shortlist a relevant model.
+                </li>
+                <li>2. Send the model link, expected dimensions and use context.</li>
+                <li>3. Receive practical advice on material and setup before your quote.</li>
+              </ol>
+              <p className="mt-4 text-sm text-slate-700">
+                Need a custom geometry instead of an existing model? We can scope a separate design phase via{" "}
+                <Link href="/en/3d-modelleren" className="font-semibold text-indigo-700 underline">
+                  3D modelling
+                </Link>
+                .
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Link
+                  href="/en/3d-modellen-vinden"
+                  className="rounded-xl border border-slate-300/70 bg-white/85 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm"
+                >
+                  Find 3D models
+                </Link>
+                <Link
+                  href="/en/contact?material=pla-matte&quote=I%20found%20a%20model%20and%20need%20print%20advice"
+                  className="rounded-xl border border-slate-300/70 bg-white/85 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm"
+                >
+                  Send model for review
+                </Link>
+              </div>
+            </GlassCard>
+          </Reveal>
+        </section>
+      ) : null}
 
       <section id="segment-faq" className="mx-auto mt-10 max-w-5xl scroll-mt-28">
         <Faq title="Frequently asked questions" items={faqItems} />

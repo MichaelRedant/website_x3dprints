@@ -59,6 +59,7 @@ type RecommendationCard = {
   slug: string
   priceNote: string
   reasons: string[]
+  score: number
 }
 
 const LOOK_PRIORITY: Partial<Record<LookAnswer, MaterialKey[]>> = {
@@ -89,6 +90,7 @@ type LocalizedCopy = {
   matchLook: (label: string) => string
   bestForPrefix: string
   petgReasons: string[]
+  difficultyLabels: { easy: string; medium: string; advanced: string }
   labels: {
     recommended: string
     budgetAlternative: string
@@ -99,10 +101,27 @@ type LocalizedCopy = {
     quoteCta: string
     viewMaterial: string
     stepOf: (current: number, total: number) => string
+    remaining: (count: number) => string
     reset: string
     flowTag: string
     prev: string
+    selected: string
+    quickPickHint: string
+    summaryTitle: string
+    summaryFilled: string
+    summaryEmpty: string
+    jumpToStep: (index: number) => string
     adjustHint: string
+    resultReady: string
+    resultIntro: string
+    fitScore: string
+    highlights: string
+    strength: string
+    outdoorFit: string
+    printDifficulty: string
+    compareCta: string
+    manualCta: string
+    emptyStateTitle: string
     emptyState: string
   }
   howTo: { name: string; description: string }
@@ -161,13 +180,20 @@ function impactLabel(score: number, copy: LocalizedCopy): string {
   return copy.impactLabels.low
 }
 
+function difficultyLabel(score: number, copy: LocalizedCopy): string {
+  if (score <= 2) return copy.difficultyLabels.easy
+  if (score <= 3) return copy.difficultyLabels.medium
+  return copy.difficultyLabels.advanced
+}
+
+function locationSuitabilityKey(location: LocationAnswer): keyof MaterialSuggestionRecord["environment"]["suitability"] {
+  if (location === "indoor") return "indoor"
+  if (location === "outdoorSeasonal") return "outdoorSeasonal"
+  return "outdoorPermanent"
+}
+
 function buildReasons(record: MaterialSuggestionRecord, answers: SolidAnswers, copy: LocalizedCopy): string[] {
-  const suitabilityKey =
-    answers.location === "indoor"
-      ? "indoor"
-      : answers.location === "outdoorSeasonal"
-        ? "outdoorSeasonal"
-        : "outdoorPermanent"
+  const suitabilityKey = locationSuitabilityKey(answers.location)
   const envScore = record.environment.suitability[suitabilityKey]
   const location = copy.locationCopy[answers.location]
   const envReason =
@@ -202,8 +228,7 @@ function calculateScore(record: MaterialSuggestionRecord, answers: SolidAnswers)
   let score = 0
 
   // Location weighting
-  const locationKey =
-    answers.location === "indoor" ? "indoor" : answers.location === "outdoorSeasonal" ? "outdoorSeasonal" : "outdoorPermanent"
+  const locationKey = locationSuitabilityKey(answers.location)
   score += record.environment.suitability[locationKey] * 4
   if (answers.location !== "indoor") {
     score += record.environment.uvResistance * 2
@@ -285,6 +310,7 @@ function buildRecommendationCards(answers: Answers, copy: LocalizedCopy): Recomm
         slug: MATERIAL_SLUGS[tpuRecord.materialKey] || "tpu",
         priceNote: priceNote(tpuRecord.economics.priceLevel, solidAnswers.budget, copy),
         reasons: buildReasons(tpuRecord, solidAnswers, copy),
+        score: 100,
       },
     ]
     if (petgRecord) {
@@ -294,6 +320,7 @@ function buildRecommendationCards(answers: Answers, copy: LocalizedCopy): Recomm
         slug: MATERIAL_SLUGS[petgRecord.materialKey] || "petg",
         priceNote: priceNote(petgRecord.economics.priceLevel, solidAnswers.budget, copy),
         reasons: [...copy.petgReasons, `${copy.bestForPrefix} ${petgRecord.bestFor.slice(0, 3).join(", ")}`],
+        score: 72,
       })
     }
     return cards
@@ -323,6 +350,7 @@ function buildRecommendationCards(answers: Answers, copy: LocalizedCopy): Recomm
   if (scored.length === 0) return null
 
   const sortedRecords = scored.sort((a, b) => b.score - a.score).map((item) => item.record)
+  const scoreByMaterial = new Map(scored.map(({ record, score }) => [record.materialKey, score]))
 
   const recommended =
     forcedKeys.map((key) => sortedRecords.find((record) => record.materialKey === key)).find((item) => item) ?? sortedRecords[0]
@@ -350,6 +378,7 @@ function buildRecommendationCards(answers: Answers, copy: LocalizedCopy): Recomm
       slug: MATERIAL_SLUGS[record.materialKey] || record.id,
       priceNote: priceNote(record.economics.priceLevel, solidAnswers.budget, copy),
       reasons: buildReasons(record, solidAnswers, copy),
+      score: scoreByMaterial.get(record.materialKey) ?? 0,
     }
   })
 }
@@ -375,6 +404,24 @@ export default function MaterialSuggestionTool() {
   const recommendationCards = useMemo(() => buildRecommendationCards(answers, copy), [answers, copy])
   const currentStep = steps[step]
   const isLastStep = step === steps.length - 1
+  const answeredCount = steps.reduce((count, item) => count + (answers[item.id] ? 1 : 0), 0)
+  const remainingCount = Math.max(steps.length - answeredCount, 0)
+  const completeAnswers = isComplete(answers) ? answers : null
+  const activeLocationKey = completeAnswers ? locationSuitabilityKey(completeAnswers.location) : "indoor"
+  const maxRecommendationScore = recommendationCards
+    ? Math.max(...recommendationCards.map((card) => card.score), 1)
+    : 1
+  const answerSummary = steps.map((item, index) => {
+    const selectedValue = answers[item.id]
+    const selectedLabel = item.options.find((option) => option.value === selectedValue)?.label
+    return {
+      id: item.id,
+      stepIndex: index,
+      title: item.title,
+      selectedLabel: selectedLabel ?? null,
+      filled: Boolean(selectedValue),
+    }
+  })
 
   function selectOption(value: string) {
     setAnswers((prev) => ({ ...prev, [currentStep.id]: value }))
@@ -401,7 +448,6 @@ export default function MaterialSuggestionTool() {
   const howToJsonLd = {
     "@context": "https://schema.org",
     "@type": "HowTo",
-
     inLanguage: locale === "en" ? "en-BE" : "nl-BE",
     name: copy.howTo.name,
     description: copy.howTo.description,
@@ -418,6 +464,7 @@ export default function MaterialSuggestionTool() {
       <GlassCard className="h-full border border-white/50 bg-white/90 p-6 shadow-lg backdrop-blur">
         <div className="flex flex-wrap items-center justify-between gap-3 text-xs uppercase tracking-[0.3em] text-slate-500">
           <span>{copy.labels.stepOf(step + 1, steps.length)}</span>
+          <span>{copy.labels.remaining(remainingCount)}</span>
           <button
             type="button"
             onClick={resetTool}
@@ -437,6 +484,7 @@ export default function MaterialSuggestionTool() {
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-500">{copy.labels.flowTag}</p>
           <h2 className="text-2xl font-semibold text-slate-900">{currentStep.title}</h2>
           <p className="text-sm text-slate-600">{currentStep.description}</p>
+          <p className="text-xs text-slate-500">{copy.labels.quickPickHint}</p>
         </div>
 
         <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -452,11 +500,41 @@ export default function MaterialSuggestionTool() {
                   active ? "border-indigo-500 bg-indigo-50 text-indigo-900" : "border-slate-200 bg-white/95 text-slate-900",
                 )}
               >
-                {option.label}
+                <div className="flex items-start justify-between gap-3">
+                  <span>{option.label}</span>
+                  {active ? (
+                    <span className="rounded-full border border-indigo-200 bg-indigo-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-indigo-700">
+                      {copy.labels.selected}
+                    </span>
+                  ) : null}
+                </div>
                 {option.helper ? <p className="mt-1 text-xs font-normal text-slate-500">{option.helper}</p> : null}
               </button>
             )
           })}
+        </div>
+
+        <div className="mt-6 rounded-2xl border border-slate-200/80 bg-slate-50/80 p-4">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">{copy.labels.summaryTitle}</p>
+          <div className="mt-3 grid gap-2 sm:grid-cols-2">
+            {answerSummary.map((item) => (
+              <button
+                key={item.id}
+                type="button"
+                onClick={() => setStep(item.stepIndex)}
+                className="rounded-xl border border-slate-200/80 bg-white px-3 py-2 text-left transition hover:border-indigo-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                aria-label={copy.labels.jumpToStep(item.stepIndex + 1)}
+              >
+                <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">
+                  {copy.labels.jumpToStep(item.stepIndex + 1)}
+                </p>
+                <p className="mt-0.5 line-clamp-1 text-xs font-semibold text-slate-900">{item.title}</p>
+                <p className={cn("mt-1 line-clamp-1 text-xs", item.filled ? "text-emerald-700" : "text-slate-500")}>
+                  {item.filled ? `${copy.labels.summaryFilled}: ${item.selectedLabel}` : copy.labels.summaryEmpty}
+                </p>
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="mt-6 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500">
@@ -498,45 +576,97 @@ export default function MaterialSuggestionTool() {
 
       <div className="grid gap-4">
         {recommendationCards ? (
-          recommendationCards.map((card) => {
-            const contactHref = localizeHref(
-              `/contact?material=${encodeURIComponent(card.slug)}`,
-              locale,
-            )
-            return (
-      <GlassCard key={card.record.id} className="border border-emerald-100 bg-white/95 p-5 shadow-lg backdrop-blur">
-        <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-500">{card.label}</p>
-        <h3 className="mt-2 text-xl font-semibold text-slate-900">{card.record.name}</h3>
-        <p className="mt-1 text-sm text-slate-600">{card.record.descriptionShort}</p>
-        <div className="mt-3 rounded-2xl border border-amber-100 bg-amber-50 px-4 py-2 text-xs font-semibold text-amber-700">
-          {copy.labels.priceImpact}: {card.priceNote}
-        </div>
-                <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                  {card.reasons.map((reason) => (
-                    <li key={reason} className="flex items-start gap-2">
-                      <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
-                      <span>{reason}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-3 text-xs text-slate-500">
-                  {copy.labels.colors}: {formatColors(card.record.colors)}
-                </p>
-                <div className="mt-4 flex flex-wrap gap-3">
-                  <ShimmerButton href={contactHref}>{copy.labels.quoteCta}</ShimmerButton>
-                  <Link
-                    href={localizeHref(`/materials/${card.slug}`, locale)}
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                  >
-                    {copy.labels.viewMaterial}
-                  </Link>
-                </div>
-              </GlassCard>
-            )
-          })
+          <>
+            <GlassCard className="border border-indigo-100 bg-white/95 p-4 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-indigo-600">{copy.labels.resultReady}</p>
+              <p className="mt-2 text-sm text-slate-600">{copy.labels.resultIntro}</p>
+            </GlassCard>
+            {recommendationCards.map((card) => {
+              const contactHref = localizeHref(`/contact?material=${encodeURIComponent(card.slug)}`, locale)
+              const fitPercent = Math.max(55, Math.round((card.score / maxRecommendationScore) * 100))
+              const outdoorScore = card.record.environment.suitability[activeLocationKey]
+              return (
+                <GlassCard key={card.record.id} className="border border-emerald-100 bg-white/95 p-5 shadow-lg backdrop-blur">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-500">{card.label}</p>
+                    <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-[11px] font-semibold text-emerald-700">
+                      {copy.labels.fitScore}: {fitPercent}%
+                    </span>
+                  </div>
+                  <h3 className="mt-2 text-xl font-semibold text-slate-900">{card.record.name}</h3>
+                  <p className="mt-1 text-sm text-slate-600">{card.record.descriptionShort}</p>
+                  <div className="mt-3 rounded-2xl border border-amber-100 bg-amber-50 px-4 py-2 text-xs font-semibold text-amber-700">
+                    {copy.labels.priceImpact}: {card.priceNote}
+                  </div>
+                  <div className="mt-3">
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">{copy.labels.highlights}</p>
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {card.record.highlightTags.slice(0, 3).map((tag) => (
+                        <span
+                          key={tag}
+                          className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-semibold text-slate-700"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="mt-4 grid gap-2 sm:grid-cols-3">
+                    <div className="rounded-xl border border-slate-200/80 bg-white px-3 py-2 text-xs text-slate-600">
+                      <p className="font-semibold text-slate-700">{copy.labels.strength}</p>
+                      <p className="mt-1">{card.record.mechanical.strength}/5</p>
+                    </div>
+                    <div className="rounded-xl border border-slate-200/80 bg-white px-3 py-2 text-xs text-slate-600">
+                      <p className="font-semibold text-slate-700">{copy.labels.outdoorFit}</p>
+                      <p className="mt-1">{outdoorScore}/5</p>
+                    </div>
+                    <div className="rounded-xl border border-slate-200/80 bg-white px-3 py-2 text-xs text-slate-600">
+                      <p className="font-semibold text-slate-700">{copy.labels.printDifficulty}</p>
+                      <p className="mt-1">{difficultyLabel(card.record.printProfile.difficulty, copy)}</p>
+                    </div>
+                  </div>
+                  <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                    {card.reasons.map((reason) => (
+                      <li key={reason} className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
+                        <span>{reason}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="mt-3 text-xs text-slate-500">
+                    {copy.labels.colors}: {formatColors(card.record.colors)}
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    <ShimmerButton href={contactHref}>{copy.labels.quoteCta}</ShimmerButton>
+                    <Link
+                      href={localizeHref(`/materials/${card.slug}`, locale)}
+                      className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                    >
+                      {copy.labels.viewMaterial}
+                    </Link>
+                  </div>
+                </GlassCard>
+              )
+            })}
+          </>
         ) : (
           <div className="rounded-3xl border border-dashed border-slate-200 bg-white/60 p-6 text-sm text-slate-600 shadow-inner">
-            {copy.labels.emptyState}
+            <p className="font-semibold text-slate-900">{copy.labels.emptyStateTitle}</p>
+            <p className="mt-2">{copy.labels.emptyState}</p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href={localizeHref("/materials#materials-library", locale)}
+                className="inline-flex items-center rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+              >
+                {copy.labels.compareCta}
+              </Link>
+              <Link
+                href={localizeHref("/contact", locale)}
+                className="inline-flex items-center rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700 shadow-sm transition hover:bg-indigo-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+              >
+                {copy.labels.manualCta}
+              </Link>
+            </div>
           </div>
         )}
       </div>
@@ -605,7 +735,7 @@ function getCopy(locale: Locale): LocalizedCopy {
           description: "We avoid fragile blends on oversized parts.",
           options: [
             { value: "small", label: "Smaller than 10 cm" },
-            { value: "medium", label: "10–20 cm" },
+            { value: "medium", label: "10-20 cm" },
             { value: "large", label: "Larger than 20 cm" },
           ],
         },
@@ -665,7 +795,7 @@ function getCopy(locale: Locale): LocalizedCopy {
           description: "Zo voorkomen we dat fragiele blends op te grote onderdelen worden toegepast.",
           options: [
             { value: "small", label: "Kleiner dan 10 cm" },
-            { value: "medium", label: "10–20 cm" },
+            { value: "medium", label: "10-20 cm" },
             { value: "large", label: "Groter dan 20 cm" },
           ],
         },
@@ -751,6 +881,9 @@ function getCopy(locale: Locale): LocalizedCopy {
           "PETG is semi-flexibel en kan klappen opvangen zonder rubber te zijn.",
           "Geschikt als hybride aanpak: rigide body + TPU inserts.",
         ],
+    difficultyLabels: isEn
+      ? { easy: "Easy setup", medium: "Balanced setup", advanced: "Advanced setup" }
+      : { easy: "Eenvoudige setup", medium: "Gemiddelde setup", advanced: "Geavanceerde setup" },
     labels: {
       recommended: isEn ? "Recommended" : "Aanbevolen",
       budgetAlternative: isEn ? "Budget alternative" : "Budget alternatief",
@@ -761,13 +894,35 @@ function getCopy(locale: Locale): LocalizedCopy {
       quoteCta: isEn ? "Request a quote with this material" : "Vraag een offerte met dit materiaal",
       viewMaterial: isEn ? "View material & examples" : "Bekijk materiaal & voorbeelden",
       stepOf: (current, total) => (isEn ? `Step ${current} / ${total}` : `Stap ${current} / ${total}`),
-      reset: isEn ? "Reset tool" : "Reset tool",
-      flowTag: isEn ? "Material Flow" : "Material Flow",
+      remaining: (count) =>
+        isEn ? `${count} question${count === 1 ? "" : "s"} remaining` : `${count} vraag${count === 1 ? "" : "en"} te gaan`,
+      reset: isEn ? "Reset tool" : "Tool resetten",
+      flowTag: isEn ? "Material Flow" : "Materiaalflow",
       prev: isEn ? "Previous" : "Vorige",
+      selected: isEn ? "Selected" : "Gekozen",
+      quickPickHint: isEn
+        ? "Choose one option to continue. You can adjust answers below at any time."
+        : "Kies een optie om verder te gaan. Je kan je antwoorden hieronder altijd aanpassen.",
+      summaryTitle: isEn ? "Your current input" : "Jouw huidige input",
+      summaryFilled: isEn ? "Selected" : "Gekozen",
+      summaryEmpty: isEn ? "Not answered yet" : "Nog niet beantwoord",
+      jumpToStep: (index) => (isEn ? `Go to step ${index}` : `Ga naar stap ${index}`),
       adjustHint: isEn ? "Click a number to adjust an answer" : "Klik op een nummer om een antwoord aan te passen",
+      resultReady: isEn ? "Recommendations ready" : "Aanbevelingen klaar",
+      resultIntro: isEn
+        ? "Based on your choices, these materials are ranked by technical fit and cost impact."
+        : "Op basis van je keuzes staan deze materialen gerangschikt op technische fit en kostimpact.",
+      fitScore: isEn ? "Fit score" : "Matchscore",
+      highlights: isEn ? "Highlights" : "Sterke punten",
+      strength: isEn ? "Strength" : "Sterkte",
+      outdoorFit: isEn ? "Outdoor fit" : "Outdoor geschiktheid",
+      printDifficulty: isEn ? "Print setup" : "Printcomplexiteit",
+      compareCta: isEn ? "Compare all materials" : "Vergelijk alle materialen",
+      manualCta: isEn ? "Get manual advice" : "Krijg manueel advies",
+      emptyStateTitle: isEn ? "Answer the first question to unlock recommendations" : "Beantwoord de eerste vraag om aanbevelingen te zien",
       emptyState: isEn
         ? "Start with question one. As you make choices, your recommended material with budget and premium options appears here."
-        : "Start met vraag één. Terwijl je keuzes invult, verschijnt hier automatisch je aanbevolen materiaal met budget- en premiumopties.",
+        : "Start met vraag een. Terwijl je keuzes invult, verschijnt hier automatisch je aanbevolen materiaal met budget- en premiumopties.",
     },
     howTo: isEn
       ? {
@@ -780,3 +935,5 @@ function getCopy(locale: Locale): LocalizedCopy {
         },
   }
 }
+
+

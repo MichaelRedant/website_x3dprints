@@ -90,13 +90,13 @@ export default function OrganizersHubPage() {
 
   return (
     <main className="relative overflow-hidden px-6 pb-24 pt-24 sm:px-8 lg:px-12">
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(80%_60%_at_20%_15%,rgba(34,211,238,0.28),transparent),radial-gradient(70%_60%_at_80%_10%,rgba(255,0,168,0.18),transparent),radial-gradient(40%_40%_at_50%_75%,rgba(15,23,42,0.18),transparent)]" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(80%_60%_at_20%_15%,rgba(51,65,85,0.24),transparent),radial-gradient(70%_60%_at_80%_10%,rgba(148,163,184,0.18),transparent),radial-gradient(40%_40%_at_50%_75%,rgba(245,158,11,0.12),transparent)]" />
       <div className="mx-auto max-w-6xl space-y-12">
         {/* Hero / workshop vibe */}
         <Reveal className="relative overflow-hidden rounded-3xl border border-white/40 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-8 shadow-2xl ring-1 ring-white/10 dark:border-[#0F203C] dark:ring-0">
-          <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_140%_at_10%_20%,rgba(0,230,255,0.12),transparent),radial-gradient(120%_140%_at_80%_10%,rgba(215,38,61,0.12),transparent)]" />
+          <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_140%_at_10%_20%,rgba(148,163,184,0.14),transparent),radial-gradient(120%_140%_at_80%_10%,rgba(245,158,11,0.14),transparent)]" />
           <div className="relative space-y-5 text-white">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-cyan-200 ring-1 ring-white/20">
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-amber-200 ring-1 ring-white/20">
               <span className="i-lucide-wrench" aria-hidden /> Tool organizers
             </div>
             <div className="flex flex-wrap items-baseline gap-3">
@@ -116,7 +116,7 @@ export default function OrganizersHubPage() {
             <div className="flex flex-wrap gap-3">
               <Link
                 href="#systems"
-                className="inline-flex items-center gap-2 rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-900 shadow-[0_10px_30px_rgba(34,211,238,0.35)] transition hover:-translate-y-0.5 hover:brightness-110"
+                className="inline-flex items-center gap-2 rounded-xl bg-amber-500 px-5 py-3 text-sm font-semibold text-slate-900 shadow-[0_10px_30px_rgba(217,119,6,0.30)] transition hover:-translate-y-0.5 hover:brightness-110"
               >
                 Bekijk de systemen
                 <span className="i-lucide-arrow-right" aria-hidden />
@@ -138,7 +138,7 @@ export default function OrganizersHubPage() {
                   key={item.label}
                   className="flex items-start gap-3 rounded-2xl bg-white/5 px-4 py-3 text-sm text-slate-100 ring-1 ring-white/10 backdrop-blur"
                 >
-                  <span className={`${item.icon} text-cyan-300`} aria-hidden />
+                  <span className={`${item.icon} text-amber-300`} aria-hidden />
                   <div>
                     <p className="font-semibold text-white">{item.label}</p>
                     <p className="text-slate-200/90">{item.text}</p>
@@ -165,7 +165,7 @@ export default function OrganizersHubPage() {
                     : null
               return (
                 <Reveal key={card.slug} delay={0.05 * index}>
-                  <GlassCard className="group h-full border-white/40 bg-gradient-to-br from-white/90 to-white/70 p-6 shadow-lg ring-1 ring-white/60 transition-transform hover:-translate-y-1 dark:border-[#0F203C] dark:bg-[radial-gradient(140%_140%_at_20%_10%,rgba(0,230,255,0.08),transparent),radial-gradient(120%_120%_at_80%_0%,rgba(215,38,61,0.07),transparent),#0B0F1A] dark:ring-0">
+                  <GlassCard className="group h-full border-white/40 bg-gradient-to-br from-white/90 to-white/70 p-6 shadow-lg ring-1 ring-white/60 transition-transform hover:-translate-y-1 dark:border-[#0F203C] dark:bg-[radial-gradient(140%_140%_at_20%_10%,rgba(148,163,184,0.12),transparent),radial-gradient(120%_120%_at_80%_0%,rgba(245,158,11,0.12),transparent),#0B0F1A] dark:ring-0">
                     <div className="flex items-start justify-between gap-3">
                       <div className="space-y-2">
                         <p className="inline-flex items-center gap-2 rounded-full bg-slate-900/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white ring-1 ring-white/20 dark:bg-[#0f162c]">
@@ -174,7 +174,7 @@ export default function OrganizersHubPage() {
                         <h2 className="text-xl font-bold text-slate-900 dark:text-white">{card.heroTitle}</h2>
                         <p className="text-sm text-slate-700 dark:text-slate-200">{card.heroSubtitle}</p>
                       </div>
-                      <span className="rounded-xl bg-cyan-50 px-3 py-1 text-xs font-semibold text-cyan-800 ring-1 ring-cyan-100 dark:bg-[#0f162c] dark:text-cyan-200">
+                      <span className="rounded-xl bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-800 ring-1 ring-amber-100 dark:bg-[#0f162c] dark:text-amber-200">
                         Klaarzetten
                       </span>
                     </div>
@@ -184,7 +184,7 @@ export default function OrganizersHubPage() {
                         href={externalLink.href}
                         target="_blank"
                         rel="noreferrer"
-                        className="mt-2 inline-flex items-center gap-2 text-xs font-semibold text-indigo-700 underline underline-offset-4 hover:text-indigo-900"
+                        className="mt-2 inline-flex items-center gap-2 text-xs font-semibold text-amber-700 underline underline-offset-4 hover:text-amber-900"
                       >
                         Bekijk {externalLink.label}
                         <span className="i-lucide-external-link" aria-hidden />
@@ -201,13 +201,13 @@ export default function OrganizersHubPage() {
                     <div className="mt-5 flex flex-wrap gap-3">
                       <Link
                         href={ctaHref}
-                        className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                        className="inline-flex items-center gap-2 rounded-xl border border-amber-100/70 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
                       >
                         {ctaLabel}
                       </Link>
                       <Link
                         href="/materials#material-suggestion-tool"
-                        className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/40 px-4 py-2 text-sm font-semibold text-indigo-800 transition hover:-translate-y-0.5 hover:bg-white"
+                        className="inline-flex items-center gap-2 rounded-xl border border-amber-100/70 bg-white/40 px-4 py-2 text-sm font-semibold text-amber-800 transition hover:-translate-y-0.5 hover:bg-white"
                       >
                         Vraag materiaaladvies
                       </Link>
@@ -231,7 +231,7 @@ export default function OrganizersHubPage() {
         <Reveal className="rounded-3xl border border-white/40 bg-white/85 p-6 shadow-xl ring-1 ring-white/60 backdrop-blur dark:border-[#0F203C] dark:bg-[#0B0F1A]/85 dark:ring-0">
           <div className="grid gap-6 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
             <div className="space-y-3">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-indigo-700">Orde geeft rust</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-700">Orde geeft rust</p>
               <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl dark:text-white">Rust in je hoofd, sneller werken</h2>
               <p className="text-slate-700 dark:text-slate-200">
                 Een koffer die stil blijft en logisch ingedeeld is, haalt de ruis uit je werkdag. Minder zoeken, minder dubbel
@@ -242,9 +242,9 @@ export default function OrganizersHubPage() {
                 voor de klus en de klant.
               </p>
             </div>
-            <div className="rounded-2xl border border-indigo-100/70 bg-indigo-50/70 px-5 py-4 text-sm font-semibold text-indigo-900 shadow-sm ring-1 ring-white/60 dark:border-slate-700 dark:bg-[#0f162c] dark:text-cyan-100 dark:ring-0">
+            <div className="rounded-2xl border border-amber-100/70 bg-amber-50/70 px-5 py-4 text-sm font-semibold text-amber-900 shadow-sm ring-1 ring-white/60 dark:border-slate-700 dark:bg-[#0f162c] dark:text-amber-100 dark:ring-0">
               <div className="flex items-center gap-2">
-                <span className="i-lucide-brain text-indigo-600 dark:text-cyan-300" aria-hidden />
+                <span className="i-lucide-brain text-amber-600 dark:text-amber-300" aria-hidden />
                 <span>Micro-checklist voor rust</span>
               </div>
               <ul className="mt-3 space-y-2 text-slate-800 dark:text-slate-100">
@@ -280,7 +280,7 @@ export default function OrganizersHubPage() {
               {references.map((reference) => (
                 <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
                   <cite className="not-italic">
-                    <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                    <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-amber-600 hover:text-amber-500">
                       {reference.label}
                     </Link>
                   </cite>
@@ -322,3 +322,4 @@ export default function OrganizersHubPage() {
     </main>
   )
 }
+

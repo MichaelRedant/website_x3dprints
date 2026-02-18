@@ -18,6 +18,7 @@ import Markdown from "@/components/Markdown"
 import MiniToc from "@/components/MiniToc"
 import CtaBlock from "@/components/CtaBlock"
 import Faq from "@/components/Faq"
+import GoogleReviewHighlights from "@/components/GoogleReviewHighlights"
 
 import { renderMarkdown, splitMarkdown } from "@/lib/markdown"
 import { extractHeadings } from "@/lib/headings"
@@ -657,6 +658,19 @@ export default async function Page(
                 </div>
               </div>
             </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-5xl">
+          <Reveal>
+            <GoogleReviewHighlights
+              locale="nl"
+              variant="compact"
+              city={loc.city}
+              seed={loc.slug}
+            />
           </Reveal>
         </div>
       </section>

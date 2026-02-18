@@ -100,7 +100,7 @@ export default function PackoutPage() {
     <>
       <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-20">
         <Reveal className="space-y-6">
-          <div className="inline-flex items-center gap-2 rounded-full bg-cyan-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-800 ring-1 ring-cyan-100 dark:bg-[#0f162c] dark:text-cyan-200">
+          <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-800 ring-1 ring-amber-100 dark:bg-[#0f162c] dark:text-amber-200">
             Milwaukee Packout
           </div>
           <div className="space-y-4">
@@ -124,19 +124,19 @@ export default function PackoutPage() {
               />
             </div>
           <div className="flex flex-wrap gap-3 text-sm">
-            <a href="#bundles" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+            <a href="#bundles" className="underline decoration-amber-400 hover:decoration-amber-700">
               Bundels & presets
             </a>
-            <a href="#carousel" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+            <a href="#carousel" className="underline decoration-amber-400 hover:decoration-amber-700">
               Foto’s
             </a>
-            <a href="#faq" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+            <a href="#faq" className="underline decoration-amber-400 hover:decoration-amber-700">
               FAQ
             </a>
-            <Link href="/blog/tool-organizers-3d-printen" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+            <Link href="/blog/tool-organizers-3d-printen" className="underline decoration-amber-400 hover:decoration-amber-700">
               Organizers blog
             </Link>
-            <a href="#packout-sources" className="underline decoration-cyan-400 hover:decoration-cyan-700">
+            <a href="#packout-sources" className="underline decoration-amber-400 hover:decoration-amber-700">
               Bronnen
             </a>
           </div>
@@ -145,21 +145,21 @@ export default function PackoutPage() {
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
             <div className="flex flex-wrap gap-3">
               <Link href={contactHref} className="no-underline">
-                <div className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:brightness-110 dark:bg-cyan-500">
+                <div className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:brightness-110 dark:bg-amber-500">
                   Stel jouw Packout layout samen
                   <span className="i-lucide-arrow-right" aria-hidden />
                 </div>
               </Link>
               <Link
                 href="#bundles"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900 dark:border-slate-700 dark:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-900 dark:border-slate-700 dark:text-slate-100"
               >
                 Ga naar bundels
                 <span className="i-lucide-list-checks" aria-hidden />
               </Link>
               <Link
                 href="/materials#material-suggestion-tool"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900 dark:border-slate-700 dark:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-900 dark:border-slate-700 dark:text-slate-100"
               >
                 Bekijk suggestietool
                 <span className="i-lucide-sparkles" aria-hidden />
@@ -176,7 +176,7 @@ export default function PackoutPage() {
                 key={item}
                 className="flex items-center gap-2 rounded-xl bg-white/70 px-4 py-3 text-sm font-semibold text-slate-800 ring-1 ring-white/60 backdrop-blur dark:bg-[#0B0F1A]/70 dark:text-slate-100 dark:ring-0"
               >
-                <span className="i-lucide-check-circle-2 text-cyan-600" aria-hidden />
+                <span className="i-lucide-check-circle-2 text-amber-600" aria-hidden />
                 {item}
               </li>
             ))}
@@ -185,7 +185,7 @@ export default function PackoutPage() {
             href="https://www.milwaukeetool.eu/en-eu/storage/packout/packout-organisers/"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-700 underline underline-offset-4 hover:text-indigo-900"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-amber-700 underline underline-offset-4 hover:text-amber-900"
           >
             Bekijk Milwaukee Packout organizers
             <span className="i-lucide-external-link" aria-hidden />
@@ -197,7 +197,7 @@ export default function PackoutPage() {
         <div className="mx-auto max-w-6xl space-y-10">
           <Reveal className="grid gap-6 rounded-3xl bg-white/70 p-6 ring-1 ring-white/60 backdrop-blur dark:bg-[#0B0F1A]/70 dark:ring-0 md:grid-cols-[1fr_1fr] md:gap-10">
             <div className="space-y-3">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-700">Wat los je op</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Wat los je op</p>
               <h2 id="packout-overview" className="scroll-mt-28 text-2xl font-bold text-slate-900 dark:text-white">Rust in je Packout</h2>
               <p className="text-slate-700 dark:text-slate-200">
                 Geen losse bakjes of schuim die snel kapot gaat. Je krijgt een vaste indeling die tegen transport kan.
@@ -209,7 +209,7 @@ export default function PackoutPage() {
                   key={pain}
                   className="flex items-center gap-3 rounded-2xl border border-slate-100 bg-white/70 px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm shadow-slate-900/5 dark:border-slate-800 dark:bg-[#0f162c] dark:text-slate-100"
                 >
-                  <span className="i-lucide-minus-circle text-cyan-600" aria-hidden />
+                  <span className="i-lucide-minus-circle text-amber-600" aria-hidden />
                   {pain}
                 </li>
               ))}
@@ -219,13 +219,13 @@ export default function PackoutPage() {
           <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 shadow-lg shadow-slate-900/5 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-700">Zo werkt het</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Zo werkt het</p>
                 <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Geen schuim snijden, wel pasvorm</h2>
                 <p className="mt-2 max-w-2xl text-slate-700 dark:text-slate-200">{PAGE.summary}</p>
               </div>
               <Link
                 href={contactHref}
-                className="text-sm font-semibold text-cyan-700 underline-offset-4 hover:text-cyan-900 hover:underline dark:text-cyan-200 dark:hover:text-cyan-100"
+                className="text-sm font-semibold text-amber-700 underline-offset-4 hover:text-amber-900 hover:underline dark:text-amber-200 dark:hover:text-amber-100"
               >
                 Start met jouw Packout modelnummer
               </Link>
@@ -236,7 +236,7 @@ export default function PackoutPage() {
                   key={step.title}
                   className="rounded-2xl border border-slate-100 bg-slate-50/70 p-4 text-slate-800 ring-1 ring-white/60 dark:border-slate-800 dark:bg-[#0f162c] dark:text-slate-100"
                 >
-                  <div className="mb-2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-cyan-600 text-sm font-bold text-white">
+                  <div className="mb-2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-amber-600 text-sm font-bold text-white">
                     {index + 1}
                   </div>
                   <h3 className="text-base font-semibold">{step.title}</h3>
@@ -262,13 +262,13 @@ export default function PackoutPage() {
             <Reveal className="rounded-3xl border border-slate-100 bg-white/80 p-6 ring-1 ring-white/70 backdrop-blur dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0">
             <div className="mb-4 flex items-center justify-between gap-3">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-700">Beelden</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Beelden</p>
                 <h2 className="text-xl font-bold text-slate-900 dark:text-white">Packout layouts in actie</h2>
                 <p className="text-sm text-slate-600 dark:text-slate-300">Foto’s volgen; deze carousel is alvast klaar.</p>
               </div>
               <Link
                 href={contactHref}
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900 dark:border-slate-700 dark:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-900 dark:border-slate-700 dark:text-slate-100"
               >
                 Plan jouw Packout
                 <span className="i-lucide-arrow-right" aria-hidden />
@@ -307,7 +307,7 @@ export default function PackoutPage() {
                 {references.map((reference) => (
                   <li key={reference.url} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3 dark:border-slate-700 dark:bg-[#0f162c]">
                     <cite className="not-italic">
-                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                      <Link href={reference.url} target="_blank" rel="noreferrer" className="font-semibold text-amber-600 hover:text-amber-500">
                         {reference.label}
                       </Link>
                     </cite>
@@ -333,3 +333,4 @@ export default function PackoutPage() {
     </>
   )
 }
+

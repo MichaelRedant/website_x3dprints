@@ -1,114 +1,145 @@
 import type { Metadata } from "next"
-import Link from "next/link"
 import Image from "next/image"
-import Reveal from "@/components/Reveal"
-import GlassCard from "@/components/GlassCard"
-import ShimmerButton from "@/components/ShimmerButton"
-import VideoGallery from "@/components/VideoGallery"
-import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
+import Link from "next/link"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogContentOverview from "@/components/BlogContentOverview"
+import GlassCard from "@/components/GlassCard"
+import Reveal from "@/components/Reveal"
+import ShimmerButton from "@/components/ShimmerButton"
+import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/blog/3d-printen-valentijn/"
-const ogImage = "https://www.x3dprints.be/images/og-home.jpg"
 const datePublished = "2025-01-05"
-const dateModified = "2026-02-09"
+const dateModified = "2026-02-18"
+const lastUpdatedLabel = "Laatst bijgewerkt: 18 februari 2026"
 
 export const metadata: Metadata = {
   title: "3D printen voor Valentijn 2026 | X3DPrints Blog",
   description:
-    "Hartdecor, gepersonaliseerde gifts en lichtobjecten voor Valentijn 2026 in Silk, Matte en Translucent PLA. Checklist voor materiaal, leds en leveringsopties. Ontwerpbestand niet inbegrepen.",
+    "3D printen voor Valentijn 2026: gepersonaliseerde cadeaus, tafeldecor en lichtobjecten in PLA, Translucent PLA of PETG. Inclusief checklist, materiaalkeuze en FAQ.",
   alternates: { canonical },
   openGraph: {
     title: "3D printen voor Valentijn 2026",
     description:
-      "Kies Silk/Matte/Translucent PLA voor Valentijn 2026 gifts, naamplaatjes en lichtobjecten. Tips voor leds, magneten en leverzones.",
-  url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte Valentijn decor" }],
+      "Praktische gids voor gepersonaliseerde Valentijn prints met materiaaladvies, technische richtlijnen en planning.",
+    url: canonical,
+    type: "article",
+    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte Valentijn decoratie" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
   twitter: {
     card: "summary_large_image",
     title: "3D printen voor Valentijn 2026",
-    description: "Silk/Matte/Translucent PLA voor Valentijn 2026 hartdecor, naamplaatjes en gifts. Inclusief lever- en materiaalchecklist.",
+    description:
+      "Gids voor Valentijn 3D prints: materiaalkeuze, checklist en tips voor betrouwbare levering.",
     images: ["/images/og-home.jpg"],
   },
 }
 
-const tips = [
-  "PLA Silk of Marble voor glansrijke hartvormen en naamplaatjes; Matte PLA voor zachte pastels.",
-  "Translucent PLA (wand 1.6-2 mm) voor lichtobjecten met fairy lights; laat ventilatie voor leds.",
-  "Integreer oogjes of pin-holes voor magneten en maak tekst minstens 0.6 mm dik voor leesbaarheid.",
-  "Ontwerp/model niet inbegrepen: lever STL/STEP of kies ontwerpservice aan EUR 45/uur.",
-  "Leveropties: EV-zones of pakketdienst. Breekbare stukken verpakken we gescheiden; afhalen in Herzele kan gratis.",
+const materialRows = [
+  { material: "PLA Silk/Marble", use: "Luxe gifts, naamhangers, decor", note: "Sterke visuele afwerking voor indoor" },
+  { material: "PLA Matte", use: "Subtiele pasteltinten en tafeldecor", note: "Strak oppervlak, stabiele printkwaliteit" },
+  { material: "Translucent PLA", use: "Lichtobjecten en lantaarns", note: "Wanddikte 1.6-2 mm voor diffuse gloed" },
+  { material: "PETG", use: "Warmere ruimtes of semi-outdoor", note: "Betere hitte- en vochtbestendigheid" },
 ]
 
-const materialRows = [
-  { material: "PLA Silk / Marble", use: "Hartdecor, naamplaatjes, gifts", note: "Luxe look, indoor" },
-  { material: "PLA Matte", use: "Zachte pastels en tafeldecor", note: "Strakke finish, snel te printen" },
-  { material: "Translucent PLA", use: "Lichtobjecten en lantaarns", note: "Wand 1.6-2 mm, ventilatie voorzien" },
-  { material: "PETG", use: "Outdoor of warmere omgeving", note: "Hittebestendiger dan PLA" },
+const materialTips = [
+  "Kies 0.16-0.20 mm layerhoogte voor fijne tekst en logo-details.",
+  "Gebruik minimaal 1.2 mm wanddikte voor hangers en sleutelhangers.",
+  "Voor lichtobjecten werkt Translucent PLA met dunne wanden het meest egaal.",
+  "Voor buitengebruik of zonbelasting is PETG veiliger dan standaard PLA.",
+  "Model is niet inbegrepen in de printprijs: STL/STEP aanleveren of ontwerpservice kiezen.",
+]
+
+const useCases = [
+  {
+    title: "B2B relatiegeschenken",
+    body: "Branded gifts, event giveaways en subtiele merkobjecten voor klanten en teams.",
+  },
+  {
+    title: "Retail en etalage",
+    body: "Valentijn displays, naamkaartjes en decorstukken voor winkelpresentatie.",
+  },
+  {
+    title: "Persoonlijke cadeaus",
+    body: "Unieke naamobjecten, duo-ornamenten en gepersonaliseerde decoratie.",
+  },
+]
+
+const workflowSteps = [
+  {
+    title: "1. Briefing",
+    body: "Je deelt model, referentie of idee met formaat, kleur en deadline.",
+  },
+  {
+    title: "2. Technische validatie",
+    body: "We checken wanddikte, leesbaarheid van tekst en bevestigingspunten.",
+  },
+  {
+    title: "3. Productie",
+    body: "Print, kwaliteitscontrole en optioneel lichte nabewerking.",
+  },
+  {
+    title: "4. Levering",
+    body: "Afhalen in Herzele of verzending met beschermde verpakking.",
+  },
 ]
 
 const checklist = [
-  "Formaat + toepassing (tafelstuk, giftbox, etalage, gadget).",
-  "Materiaal: Silk/Marble voor luxe, Matte voor zachte look, Translucent voor licht.",
-  "Afwerking: raw, licht geschuurd of geprimed; noteer of je zelf schildert.",
-  "Bevestiging: lint, magneet of voetje? Voorzie gaten of pin-holes.",
-  "Deadline rond 14 februari 2026 + leveroptie (EV-zone of pakketdienst).",
+  "Doel: cadeau, display, eventprop of lichtobject.",
+  "Materiaal: Silk/Matte, Translucent PLA of PETG.",
+  "Personalisatie: naam, logo, tekst en positie.",
+  "Afwerking: raw, licht geschuurd of geprimed.",
+  "Deadline + leveroptie in aanvraag zetten.",
 ]
 
 const faqItems = [
   {
-    q: "Maken jullie ook het ontwerp?",
-    a: "Ja, optioneel. Het 3D model is niet inbegrepen. Lever STL/STEP of kies ontwerpservice aan EUR 45/uur; we stemmen wanddiktes, tekst en supports af.",
+    q: "Kunnen jullie gepersonaliseerde Valentijn cadeaus met naam printen?",
+    a: "Ja. Je kan STL/STEP aanleveren met naam of logo, of ontwerpservice gebruiken aan EUR 45/uur.",
   },
   {
-    q: "Welke filamentkleuren raden jullie aan?",
-    a: "Silk rood, goud of parel voor luxe gifts. Matte pastel voor zachte look. Translucent voor lantaarns of lichtgevende tafeldecor.",
+    q: "Welk materiaal gebruik ik voor een lichtgevend Valentijn item?",
+    a: "Translucent PLA is meestal de beste keuze voor zachte lichtspreiding met kleine LED-opstellingen.",
   },
   {
-    q: "Kan ik last-minute nog iets laten printen?",
-    a: "Vaak wel, afhankelijk van oplage en afwerking. Vermeld je datum en gewenste levering; we plannen realistisch zonder overpromise.",
+    q: "Is het 3D model inbegrepen in de prijs?",
+    a: "Nee. Printservice en ontwerpservice zijn apart. Je levert dus een model aan of laat het uitwerken.",
   },
   {
-    q: "Zijn leds of magneten inbegrepen?",
-    a: "Nee. We voorzien wel pin-holes of uitsparingen zodat je ze eenvoudig kunt plaatsen. Voeg link of maat van je leds/magneten toe.",
+    q: "Kan ik ook kleine B2B series laten printen voor events?",
+    a: "Ja. Kleine series voor relatiegeschenken en eventitems zijn mogelijk met consistente kwaliteit.",
   },
+  {
+    q: "Hoe vermijd ik last-minute risico voor 14 februari?",
+    a: "Door vroeg te plannen. Zo is er ruimte voor technische check en eventueel een proefprint.",
+  },
+]
+
+const references = [
+  { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
+  { label: "UltiMaker PETG material properties", href: "https://ultimaker.com/materials/s-series-petg/" },
+  { label: "Prusa filament material guide", href: "https://help.prusa3d.com/filament-material-guide" },
+  { label: "Autodesk STL export basics", href: "https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-1B6AA02D-B8E5-4F54-ADC7-11C5B900E05F" },
 ]
 
 const inspirationImages = [
   { src: "/images/portfolio/valentijn2.webp", alt: "3D geprint Valentijn duo decor" },
-  { src: "/images/portfolio/valentijn3.webp", alt: "3D geprinte Valentijn hart decor" },
-  { src: "/images/portfolio/big%20valentijn%20boy%20articulated.webp", alt: "3D geprint Valentijn figuur articulated" },
-  { src: "/images/portfolio/vaas-capsule-planter-scaled.webp", alt: "Valentijn vaas idee" },
-  { src: "/images/portfolio/vaas-spiral-2-3-scaled.webp", alt: "Valentijn decor met spiraal" },
-]
-
-const valentijnVideos = [
-  {
-    id: "js1994tDE18",
-    title: "Valentijn articulated print",
-    description: "Korte video van de articulated Valentijn boy in Silk PLA met flexibele gewrichten.",
-  },
-]
-
-const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"
-
-const references = [
-  { label: "Ultimaker: Design for FFF 3D printing", href: "https://ultimaker.com/learn/design-for-fff-3d-printing/" },
-  { label: "Prusa: Material guide (PLA, PETG, TPU)", href: "https://help.prusa3d.com/filament-material-guide" },
-  { label: "Autodesk: STL file format", href: "https://help.autodesk.com/cloudhelp/2014/ENU/Alias/files/GUID-8ABFA3B8-204B-44E0-A50B-BA4C1C3F9BE8.htm" },
+  { src: "/images/portfolio/valentijn3.webp", alt: "3D geprinte Valentijn hart decoratie" },
+  { src: "/images/portfolio/big%20valentijn%20boy%20articulated.webp", alt: "3D geprint articulated Valentijn figuur" },
+  { src: "/images/portfolio/vaas-capsule-planter-scaled.webp", alt: "3D geprinte Valentijn vaas decoratie" },
+  { src: "/images/portfolio/vaas-spiral-2-3-scaled.webp", alt: "3D geprinte spiraalvaas voor Valentijn setting" },
 ]
 
 const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "3D printen voor Valentijn 2026",
   description: metadata.description ?? "",
-  datePublished: datePublished,
+  datePublished,
   dateModified,
-  image: ogImage,
+  image: "https://www.x3dprints.be/images/og-home.jpg",
+  inLanguage: "nl-BE",
 })
 
 const faqJsonLd = buildFaqPageSchema({
@@ -121,9 +152,11 @@ export default function BlogValentijn() {
     <main className="relative overflow-clip">
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-rose-50 via-white to-amber-50" />
+        <div className="absolute -left-24 -top-24 h-80 w-80 rounded-full bg-rose-200/30 blur-3xl" />
+        <div className="absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-amber-200/30 blur-3xl" />
       </div>
 
-      <section className="px-6 pb-12 pt-14 sm:px-8 lg:px-12">
+      <section className="px-6 pb-10 pt-14 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-rose-700">Seasonal</p>
@@ -131,29 +164,53 @@ export default function BlogValentijn() {
               3D printen voor Valentijn 2026
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-              Gepersonaliseerde gifts, tafeldecor en lichtobjecten in Silk, Matte of Translucent PLA. Ontwerpbestand niet inbegrepen; lever STL/STEP of kies ontwerpservice (EUR 45/uur). Levering via EV-zones of pakketdienst.
+              Wil je een gepersonaliseerd Valentijn cadeau of branded relatiegeschenk laten printen? Deze gids toont direct
+              welke materialen werken, welke technische grenzen belangrijk zijn en hoe je je planning strak houdt richting 14 februari.
             </p>
             <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact?material=pla-silk">Plan je Valentijnprint 2026</ShimmerButton>
+              <ShimmerButton href="/contact?quote=Valentijn%20print%202026">Plan je Valentijnprints 2026</ShimmerButton>
               <Link
                 href="/segments/3d-printing-valentijn"
-                className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"
+                className="rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:bg-white"
               >
                 Naar Valentijn segment
               </Link>
+              <Link
+                href="/materials#material-suggestion-tool"
+                className="rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:bg-white"
+              >
+                Material suggestion tool
+              </Link>
             </div>
+            <nav aria-label="Snelle sectienavigatie" className="mt-6 flex flex-wrap gap-2 text-xs font-semibold text-slate-700">
+              <Link href="#valentijn-materialen" className="rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 hover:bg-white">
+                Materialen
+              </Link>
+              <Link href="#valentijn-toepassingen" className="rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 hover:bg-white">
+                Toepassingen
+              </Link>
+              <Link href="#valentijn-planning" className="rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 hover:bg-white">
+                Planning
+              </Link>
+              <Link href="#valentijn-faq" className="rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 hover:bg-white">
+                FAQ
+              </Link>
+              <Link href="#sources" className="rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 hover:bg-white">
+                Bronnen
+              </Link>
+            </nav>
           </Reveal>
         </div>
       </section>
 
       <BlogContentOverview locale="nl" />
 
-      <section id="valentine-materials" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="valentijn-materialen" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Materialen & settings</h2>
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Materiaalkeuze voor Valentijn prints</h2>
               <div className="mt-4 overflow-x-auto">
                 <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">
                   <thead>
@@ -175,7 +232,7 @@ export default function BlogValentijn() {
                 </table>
               </div>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
-                {tips.map((tip) => (
+                {materialTips.map((tip) => (
                   <li key={tip} className="flex gap-2">
                     <span className="mt-1 h-2 w-2 rounded-full bg-rose-500" aria-hidden />
                     <span>{tip}</span>
@@ -183,56 +240,64 @@ export default function BlogValentijn() {
                 ))}
               </ul>
               <p className="mt-4 text-sm text-slate-700">
-                Voor tafeldecor kies Silk/Marble PLA, voor zachte cadeaus Matte PLA. Voor lichtobjecten werkt Translucent het best met dunne wanden en een diffuse led. Outdoor? Schakel naar PETG en vermijd donkere kleuren in volle zon.
-              </p>
-              <p className="mt-3 text-sm text-slate-700">
-                Levering: EV-zones of pakketdienst. Breekbare delen verpakken we gescheiden; grote decor kan modulair zodat lijmnaden verborgen blijven.
+                Vergelijk alle filamentopties via{" "}
+                <Link href="/materials" className="font-semibold text-rose-700 underline underline-offset-2">
+                  materialen
+                </Link>
+                . Voor visuele gifts werkt Silk/Matte meestal best; voor robuustere toepassingen is PETG vaak logischer.
               </p>
             </GlassCard>
           </Reveal>
 
           <Reveal delay={0.06}>
             <GlassCard className="p-6">
-              <h3 id="valentine-checklist" className="scroll-mt-28 text-xl font-semibold tracking-tight text-slate-900">
-                Checklist
-              </h3>
-              <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                {checklist.map((item) => (
-                  <li key={item} className="flex gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-indigo-500" aria-hidden />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <h3 className="text-xl font-semibold tracking-tight text-slate-900">Design en bestanden</h3>
               <p className="mt-3 text-sm text-slate-700">
-                Extra: voeg je kleurenpalet of PMS/HEX-codes toe; we matchen met Silk/Marble/Translucent varianten. Wil je inspiratie of STL&apos;s zoeken, kijk op{" "}
-                <Link
-                  href="https://www.printables.com"
-                  className="text-rose-700 underline"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Printables (extern)
-                </Link>{" "}
-                en stuur referenties mee.
+                STL of STEP is het startpunt voor productie. Voeg tekst, afmetingen en kleurvoorkeur toe zodat we meteen
+                kunnen adviseren op leesbaarheid, support en printoriëntatie.
               </p>
+              <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                <li>Bestanden: STL of STEP.</li>
+                <li>Ontwerpservice optioneel: EUR 45/uur.</li>
+                <li>Model niet inbegrepen in standaard printprijs.</li>
+              </ul>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <Link
+                  href="/3d-modellen-vinden"
+                  className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-white"
+                >
+                  Waar vind je modellen?
+                </Link>
+                <Link
+                  href="/contact?quote=STL%20Valentijn"
+                  className="rounded-full border border-rose-200 bg-rose-50 px-4 py-2 text-sm font-semibold text-rose-800 transition hover:bg-rose-100"
+                >
+                  Stuur je bestand door
+                </Link>
+              </div>
             </GlassCard>
           </Reveal>
         </div>
       </section>
 
-      <BlogContentOverview locale="nl" />
-
-      <section id="valentine-examples" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="valentijn-toepassingen" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Voorbeelden</h2>
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Toepassingen voor B2B en persoonlijk gebruik</h2>
+              <div className="mt-4 grid gap-3 md:grid-cols-3">
+                {useCases.map((item) => (
+                  <article key={item.title} className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
+                    <h3 className="text-base font-semibold text-slate-900">{item.title}</h3>
+                    <p className="mt-2 text-sm text-slate-700">{item.body}</p>
+                  </article>
+                ))}
+              </div>
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
                 {inspirationImages.map((img, idx) => (
                   <div
                     key={img.src}
-                    className={`overflow-hidden rounded-xl border border-white/60 bg-white/80 shadow ${idx === inspirationImages.length - 1 ? "sm:col-span-2" : ""}`}
+                    className={`overflow-hidden rounded-xl border border-white/70 bg-white/80 shadow-sm ${idx === inspirationImages.length - 1 ? "sm:col-span-2" : ""}`}
                   >
                     <Image
                       src={img.src}
@@ -246,130 +311,81 @@ export default function BlogValentijn() {
                   </div>
                 ))}
               </div>
-              <p className="mt-3 text-xs text-slate-600">
-                Plaatshouders totdat we extra Valentijn foto&apos;s toevoegen. Denk aan hartvormige naamplaatjes, ringenhouders en lantaarns.
-              </p>
             </GlassCard>
           </Reveal>
         </div>
       </section>
 
-      <BlogContentOverview locale="nl" />
-
-      <section id="valentine-video" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-5xl">
-          <Reveal>
-            <GlassCard className="p-6">
-              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                <div>
-                  <h2 className="text-2xl font-bold tracking-tight text-slate-900">Video</h2>
-                  <p className="text-sm text-slate-700">Bekijk de articulated Valentijn print in actie (lichte embed, speelt op de pagina).</p>
-                </div>
-                <Link
-                  href="https://youtu.be/js1994tDE18"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-sm font-semibold text-rose-700 underline decoration-rose-200 underline-offset-2"
-                >
-                  Open op YouTube -&gt;
-                </Link>
-              </div>
-              <div className="mt-4">
-                <VideoGallery videos={valentijnVideos} highlightIds={["js1994tDE18"]} />
-              </div>
-            </GlassCard>
-          </Reveal>
-        </div>
-      </section>
-
-      <BlogContentOverview locale="nl" />
-
-      <section id="valentine-planning" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="valentijn-planning" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Waarom nu plannen?</h2>
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">Planning en doorlooptijd richting 14 februari</h2>
               <p className="mt-3 text-sm text-slate-700">
-                Valentijn piekt midden februari. Door op tijd te boeken kunnen we modellen optimaliseren (tekstdiepte, wanddikte, magneet/led uitsparingen) en productie inplannen zonder rush fees.
+                Vroege intake geeft ruimte voor technische optimalisatie en voorkomt rush-risico. Dat is belangrijk voor
+                gepersonaliseerde items waar tekst en detail foutloos moeten zijn.
               </p>
-              <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                <li>Snelle iteraties op tekst, font en formaat.</li>
-                <li>EV-levering voor breekbare sets, pakketdienst voor verder weg.</li>
-                <li>Optioneel primer/schuren zodat je meteen kan schilderen.</li>
-              </ul>
-              <p className="mt-3 text-sm text-slate-700">
-                Belangrijk: ontwerpbestand niet inbegrepen. Lever STL/STEP of laat ons ontwerpen (EUR 45/uur). Voeg deadline + leveroptie toe in{" "}
-                <Link href="/contact" className="text-rose-700 underline">
-                  je aanvraag
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                {workflowSteps.map((step) => (
+                  <div key={step.title} className="rounded-2xl border border-slate-200/70 bg-white/80 p-4">
+                    <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-slate-900">{step.title}</h3>
+                    <p className="mt-2 text-sm text-slate-700">{step.body}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <ShimmerButton href="/contact?quote=Valentijn%20deadline">Vraag timing en offerte</ShimmerButton>
+                <Link
+                  href="/pricing"
+                  className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-white"
+                >
+                  Bekijk prijzen
                 </Link>
-                .
-              </p>
+              </div>
             </GlassCard>
           </Reveal>
 
           <Reveal delay={0.06}>
             <GlassCard className="p-6">
-              <h3 className="text-xl font-semibold tracking-tight text-slate-900">SEO inspiratiehoek</h3>
-              <p className="mt-2 text-sm text-slate-700">
-                Zoek je &quot;3D geprint Valentijn cadeau&quot;, &quot;Silk PLA hart&quot;, &quot;Translucent lantaarn&quot;, &quot;gepersonaliseerde naamplaat&quot; of &quot;Valentijn etalage prop&quot;? Dit artikel bundelt materiaalkeuze (Silk/Matte/Translucent, PETG, TPU) en support-tips.
-              </p>
-              <p className="mt-3 text-sm text-slate-700">
-                Populaire opdrachten: naamplaatjes, ring trays, sleutelhangers, tafeldecor met led, QR-ornamenten naar een playlist en giftbox inserts. Wanddikte &gt;1.2 mm voor hangers, 1.6-2 mm voor lichtobjecten.
-              </p>
-              <div className="mt-4 flex flex-wrap gap-3 text-sm">
-                <ShimmerButton href="/contact?material=pla-silk">Start je Valentijn aanvraag</ShimmerButton>
-                <Link
-                  href="/segments/3d-printing-valentijn"
-                  className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
-                >
-                  Valentijn segment
-                </Link>
-                <Link
-                  href="/materials#material-suggestion-tool"
-                  className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
-                >
-                  Material Suggestion Tool
-                </Link>
-              </div>
+              <h3 className="text-xl font-semibold tracking-tight text-slate-900">Aanvraagchecklist</h3>
+              <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                {checklist.map((item) => (
+                  <li key={item} className="flex gap-2">
+                    <span className="mt-1 h-2 w-2 rounded-full bg-indigo-500" aria-hidden />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </GlassCard>
           </Reveal>
         </div>
       </section>
 
-      <BlogContentOverview locale="nl" />
-
-      <section id="valentine-faq" className="scroll-mt-28 px-6 pb-24 sm:px-8 lg:px-12">
+      <section id="valentijn-faq" className="scroll-mt-28 px-6 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900">FAQ Valentijn</h2>
-              <div className="mt-3 space-y-3 text-sm text-slate-700">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">FAQ: 3D printen voor Valentijn</h2>
+              <div className="mt-4 space-y-3 text-sm text-slate-700">
                 {faqItems.map((item) => (
-                  <div key={item.q} className="rounded-xl border border-slate-200/70 bg-white/70 p-3">
-                    <p className="font-semibold text-slate-800">{item.q}</p>
+                  <article key={item.q} className="rounded-xl border border-slate-200/70 bg-white/70 p-4">
+                    <h3 className="font-semibold text-slate-800">{item.q}</h3>
                     <p className="mt-1">{item.a}</p>
-                  </div>
+                  </article>
                 ))}
               </div>
-              <p className="mt-4 text-sm text-slate-700">
-                Niet gevonden wat je zoekt? Stuur je vraag en model via{" "}
-                <Link href="/contact" className="text-rose-700 underline underline-offset-2">
-                  contact
-                </Link>{" "}
-                met deadline en leveroptie.
-              </p>
             </GlassCard>
           </Reveal>
         </div>
       </section>
 
-      <BlogContentOverview locale="nl" />
-
-      <section id="valentine-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+      <section id="valentijn-sources" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <GlassCard className="p-6">
-              <h2 id="sources" className="text-2xl font-bold tracking-tight text-slate-900">Bronnen en referenties</h2>
+              <h2 id="sources" className="text-2xl font-bold tracking-tight text-slate-900">
+                Bronnen en referenties
+              </h2>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 {references.map((reference) => (
                   <li key={reference.href} className="rounded-xl border border-slate-200/70 bg-white/80 px-4 py-3">
@@ -378,7 +394,7 @@ export default function BlogValentijn() {
                         href={reference.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-semibold text-rose-700 hover:text-rose-600"
+                        className="font-semibold text-rose-700 transition hover:text-rose-600"
                       >
                         {reference.label}
                       </a>
@@ -391,24 +407,9 @@ export default function BlogValentijn() {
         </div>
       </section>
 
-      <BlogContentOverview locale="nl" />
-
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <BlogAuthorNote locale="nl" />
-
-
     </main>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
