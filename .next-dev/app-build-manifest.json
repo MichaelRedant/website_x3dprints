@@ -20,51 +20,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(home)/page.js"
-    ],
-    "/(pages)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/layout.js"
-    ],
-    "/(pages)/[slug]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/[slug]/page.js"
-    ],
-    "/(pages)/blog/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/layout.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
-    ],
-    "/(pages)/blog/3d-printen-lente-pasen/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/3d-printen-lente-pasen/page.js"
-    ],
-    "/segments/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/segments/layout.js"
-    ],
-    "/segments/3d-printing-seasonal/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/segments/3d-printing-seasonal/page.js"
-    ],
-    "/(pages)/blog/3d-printen-valentijn/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/3d-printen-valentijn/page.js"
-    ],
-    "/(pages)/blog/3d-printen-herfst-halloween/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/3d-printen-herfst-halloween/page.js"
     ]
   }
 }
