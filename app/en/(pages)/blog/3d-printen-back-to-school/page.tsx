@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "Practical guide for educational and personalized school prints with clear material and timing choices.",
     url: canonical,
     type: "article",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Back to School 3D prints" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "Back to School 3D prints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Back to School 2026: 3D printing for school",
     description:
       "Guide for Back to School 3D prints with material strategy, checklist and delivery planning.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -156,7 +156,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

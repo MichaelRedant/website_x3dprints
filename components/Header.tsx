@@ -88,6 +88,7 @@ const APPLICATIONS_GROUP = {
   label: { nl: "Toepassingen", en: "Use cases" },
   items: [
     { href: "/blog", label: { nl: "Kennisbank", en: "Knowledge base" } },
+    { href: "/cases", label: { nl: "Cases", en: "Cases" } },
     { href: "/organizers", label: { nl: "Organizers", en: "Organizers" } },
     { href: "/3d-printen", label: { nl: "3D printen", en: "3D printing" } },
     { href: "/about", label: { nl: "Over ons", en: "About" } },

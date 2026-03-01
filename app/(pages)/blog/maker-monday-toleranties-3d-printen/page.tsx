@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     ],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "Grafiek met 3D print toleranties",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Maker Monday: Toleranties voor PLA, PETG en TPU",
     description:
       "Checklist voor FDM speling: pen-gat, snapfits, schuiven en scharnieren. Inclusief slicer tips en testprints.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -108,7 +108,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 function SectionDivider() {

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     tags: ["PLA Wood", "Wood filament", "Filament Vrijdag", "PLA specials"],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "PLA Wood advies door X3DPrints",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Filament Vrijdag #4: PLA Wood en specials",
     description:
       "Wood filament voor design, props en interieur. Leer hoe PLA Wood en andere special blends zich gedragen in de studio.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -214,7 +214,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: "Filament Vrijdag #4 van X3DPrints. Leer wanneer PLA Wood en speciale PLA filamenten zinvol zijn, welke instellingen werken en hoe je ze inzet voor esthetische 3D prints.",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 

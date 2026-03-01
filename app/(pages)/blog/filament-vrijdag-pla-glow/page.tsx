@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     tags: ["PLA Glow", "Glow in the dark filament", "Filament Vrijdag", "3D print materiaal"],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "PLA Glow filament advies door X3DPrints",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Filament Vrijdag: PLA Glow 3D printen",
     description: "PLA Glow instellingen, nozzlekeuze en toepassingen voor interieur, signage, design en cosplay.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -188,7 +188,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: "Filament Vrijdag #6. Leer hoe PLA Glow werkt, welke instellingen je gebruikt en wanneer glow-in-the-dark PLA echt waarde toevoegt.",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 

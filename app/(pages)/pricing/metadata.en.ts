@@ -17,7 +17,7 @@ export const EN_METADATA: Metadata = {
     description:
       "3D printing from EUR 5 (small), EUR 20 (medium) and EUR 49 (large). PLA, PETG and TPU. Delivery across Belgium.",
     url: "https://www.x3dprints.be/en/pricing/",
-    images: [{ url: "/images/portfolio/2d-6-1-1.webp", width: 1200, height: 630, alt: "3D printing prices" }],
+    images: [{ url: "/images/og-pricing-en.svg", width: 1200, height: 630, alt: "3D printing prices" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -26,7 +26,7 @@ export const EN_METADATA: Metadata = {
     title: "3D printing prices",
     description:
       "Indicative rates for prototypes and small to large batches. Materials: PLA (standard), PLA+ variants, PETG and TPU. Delivery across Belgium.",
-    images: ["/images/portfolio/2d-6-1-1.webp"],
+    images: ["/images/og-pricing-en.svg"],
   },
 }
 

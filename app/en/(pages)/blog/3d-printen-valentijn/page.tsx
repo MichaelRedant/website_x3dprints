@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "Practical guide for personalized Valentine prints with clear material choices, technical limits and planning tips.",
     url: canonical,
     type: "article",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printed Valentine decor" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "3D printed Valentine decor" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "3D printing for Valentine's Day 2026",
     description:
       "Guide to Valentine 3D prints: material selection, checklist and production planning.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -145,7 +145,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

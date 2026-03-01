@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description:
       "Understand what impacts 3D printing lead time: machine hours, queueing, finishing and shipping. Includes rush tips.",
     url: canonical,
-    images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "How long does 3D printing take" }],
+    images: [{ url: "/images/og-services-en.svg", width: 1200, height: 630, alt: "How long does 3D printing take" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How long does 3D printing take?",
     description: "Lead time guide for 3D printing with practical rush tips and planning advice.",
-    images: ["/images/portfolio/20241030_080710-1.jpg"],
+    images: ["/images/og-services-en.svg"],
   },
 }
 
@@ -100,7 +100,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "/images/portfolio/20241030_080710-1.jpg",
+  image: "/images/og-services-en.svg",
   inLanguage: "en-BE",
 })
 

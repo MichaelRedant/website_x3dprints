@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     ],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "3D geprinte clip en snapfit voorbeelden",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Maker Monday #4: Printbare clips & snapfits",
     description:
       "Materiaalkeuze, wanddiktes, oriëntatie en tolerantie voor PLA, PETG en TPU clips. Inclusief testmethodes en ribs.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -95,7 +95,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 function SectionDivider() {

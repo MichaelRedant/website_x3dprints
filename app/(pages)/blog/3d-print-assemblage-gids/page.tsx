@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Praktische assemblage gids met paspennen, inserts, tolerantie en een tabel met richtwaarden per materiaal.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print assemblage gids" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "3D print assemblage gids" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print assemblage gids: paspennen en inserts",
     description: "Assemblage tips en richtwaarden voor printbare onderdelen.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -152,7 +152,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Assemblage gids met paspennen, speling en bevestiging voor 3D prints inclusief richtwaarden.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

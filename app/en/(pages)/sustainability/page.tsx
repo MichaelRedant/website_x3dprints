@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description:
       "Discover how X3DPrints, a local 3D printing studio in Herzele, focuses on efficient production, long lifespan and smart material choices.",
     url: "https://www.x3dprints.be/en/sustainability/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630 }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -162,7 +162,7 @@ const articleJsonLd = {
   publisher: {
     "@type": "Organization",
     name: "X3DPrints",
-    logo: { "@type": "ImageObject", url: `${SITE.url}/og-x3dprints.jpg` },
+    logo: { "@type": "ImageObject", url: `${SITE.url}/images/og-default.svg` },
   },
   datePublished: "2024-12-01",
   dateModified: "2026-02-06",

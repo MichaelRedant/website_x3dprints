@@ -141,14 +141,14 @@ export async function generateMetadata(
       url: canonical,
       type: "website",
       locale: "en_BE",
-      images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: title }],
+      images: [{ url: "/images/og-segments-en.svg", width: 1200, height: 630, alt: title }],
       siteName: "X3DPrints",
     },
     twitter: {
       card: "summary_large_image",
       title,
       description: segment.summary,
-      images: ["/images/og-home.jpg"],
+      images: ["/images/og-segments-en.svg"],
     },
   }
 }

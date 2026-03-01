@@ -1,0 +1,226 @@
+{
+  "version": "2026-03-01",
+  "description": "Baseline keyword governance for NL/EN money pages. Phrases are normalized by the checker before matching.",
+  "targets": [
+    {
+      "route": "/",
+      "files": ["app/(home)/page.tsx"],
+      "keywords": ["3d printen", "3d print service", "belgie"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["3d printen"], "minMatches": 1 },
+        "h1": { "keywords": ["3d printen"], "minMatches": 1 },
+        "intro": { "keywords": ["3d print"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/en/",
+      "files": ["app/(home)/page.tsx", "app/(home)/metadata.en.ts"],
+      "keywords": ["3d printing", "belgium", "3d print"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["3d printing"], "minMatches": 1 },
+        "h1": { "keywords": ["3d printing"], "minMatches": 1 },
+        "intro": { "keywords": ["3d print"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/services/",
+      "files": ["app/(pages)/services/page.tsx"],
+      "keywords": ["3d print service", "3d printen", "belgie"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["3d print service"], "minMatches": 1 },
+        "h1": { "keywords": ["3d print service"], "minMatches": 1 },
+        "intro": { "keywords": ["3d print"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/en/services/",
+      "files": ["app/(pages)/services/page.tsx", "app/(pages)/services/metadata.en.ts"],
+      "keywords": ["3d print service", "3d print", "3d printing", "belgium"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["3d print service"], "minMatches": 1 },
+        "h1": { "keywords": ["3d print service"], "minMatches": 1 },
+        "intro": { "keywords": ["3d printing"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/materials/",
+      "files": ["app/(pages)/materials/page.tsx", "app/(pages)/materials/materials-page.tsx"],
+      "keywords": ["3d print materiaal", "3d print materialen", "pla"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["3d print materialen"], "minMatches": 1 },
+        "h1": { "keywords": ["materiaal"], "minMatches": 1 },
+        "intro": { "keywords": ["3d print materiaal"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/en/materials/",
+      "files": ["app/en/(pages)/materials/page.tsx", "app/(pages)/materials/materials-page.tsx"],
+      "keywords": ["3d printing materials", "3d print", "pla", "petg"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["3d printing materials"], "minMatches": 1 },
+        "h1": { "keywords": ["materials"], "minMatches": 1 },
+        "intro": { "keywords": ["3d printing materials"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/pricing/",
+      "files": ["app/(pages)/pricing/page.tsx"],
+      "keywords": ["3d printen prijs", "kosten 3d printen", "offerte"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["3d print"], "minMatches": 1 },
+        "h1": { "keywords": ["prijs"], "minMatches": 1 },
+        "intro": { "keywords": ["offerte"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/en/pricing/",
+      "files": ["app/(pages)/pricing/page.tsx", "app/(pages)/pricing/metadata.en.ts"],
+      "keywords": ["3d printing prices", "3d print", "quote", "cost"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["3d printing"], "minMatches": 1 },
+        "h1": { "keywords": ["pricing"], "minMatches": 1 },
+        "intro": { "keywords": ["quote"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/contact/",
+      "files": ["app/(pages)/contact/page.tsx"],
+      "keywords": ["3d print", "offerte", "contact"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["contact"], "minMatches": 1 },
+        "h1": { "keywords": ["contact"], "minMatches": 1 },
+        "intro": { "keywords": ["3d print"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/en/contact/",
+      "files": ["app/(pages)/contact/page.tsx", "app/(pages)/contact/metadata.en.ts"],
+      "keywords": ["3d print", "3d printing", "quote", "contact"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["contact"], "minMatches": 1 },
+        "h1": { "keywords": ["contact"], "minMatches": 1 },
+        "intro": { "keywords": ["3d printing"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/portfolio/",
+      "files": ["app/(pages)/portfolio/page.tsx"],
+      "keywords": ["portfolio", "3d print", "project"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["portfolio"], "minMatches": 1 },
+        "h1": { "keywords": ["portfolio"], "minMatches": 1 },
+        "intro": { "keywords": ["3d print"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/en/portfolio/",
+      "files": ["app/(pages)/portfolio/page.tsx", "app/(pages)/portfolio/metadata.en.ts"],
+      "keywords": ["portfolio", "3d print", "3d printing", "project"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["portfolio"], "minMatches": 1 },
+        "h1": { "keywords": ["portfolio"], "minMatches": 1 },
+        "intro": { "keywords": ["3d printing"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/segments/",
+      "files": ["app/(pages)/segments/page.tsx"],
+      "keywords": ["segment", "3d print", "use case"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["segment"], "minMatches": 1 },
+        "h1": { "keywords": ["segment"], "minMatches": 1 },
+        "intro": { "keywords": ["3d print"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/en/segments/",
+      "files": ["app/(pages)/segments/page.tsx", "app/(pages)/segments/metadata.en.ts"],
+      "keywords": ["segments", "3d print", "3d printing", "use case"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["segments"], "minMatches": 1 },
+        "h1": { "keywords": ["segments"], "minMatches": 1 },
+        "intro": { "keywords": ["3d printing"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/viewer/",
+      "files": ["app/(pages)/viewer/page.tsx"],
+      "keywords": ["3d print", "3d model", "viewer", "stl"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["viewer"], "minMatches": 1 },
+        "h1": { "keywords": ["3d model"], "minMatches": 1 },
+        "intro": { "keywords": ["stl"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/en/viewer/",
+      "files": ["app/en/(pages)/viewer/page.tsx"],
+      "keywords": ["3d print", "3d model", "viewer", "stl"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["viewer"], "minMatches": 1 },
+        "h1": { "keywords": ["3d model"], "minMatches": 1 },
+        "intro": { "keywords": ["stl"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/shop/",
+      "files": ["app/(pages)/shop/page.tsx"],
+      "keywords": ["3d print", "3d print shop", "kleine oplage", "mollie"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["3d print shop"], "minMatches": 1 },
+        "h1": { "keywords": ["3d prints"], "minMatches": 1 },
+        "intro": { "keywords": ["mollie"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/en/shop/",
+      "files": ["app/en/(pages)/shop/page.tsx"],
+      "keywords": ["3d print", "3d print shop", "small batch", "mollie"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["3d print shop"], "minMatches": 1 },
+        "h1": { "keywords": ["3d print"], "minMatches": 1 },
+        "intro": { "keywords": ["mollie"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/cases/",
+      "files": ["app/(pages)/cases/page.tsx", "app/(pages)/cases/CasesPage.tsx"],
+      "keywords": ["case", "3d print", "case studies"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["case"], "minMatches": 1 },
+        "h1": { "keywords": ["case"], "minMatches": 1 },
+        "intro": { "keywords": ["3d print"], "minMatches": 1 }
+      }
+    },
+    {
+      "route": "/en/cases/",
+      "files": ["app/(pages)/cases/metadata.en.ts", "app/(pages)/cases/CasesPage.tsx"],
+      "keywords": ["case studies", "3d print", "3d printing", "case"],
+      "minMatches": 2,
+      "sections": {
+        "title": { "keywords": ["case studies"], "minMatches": 1 },
+        "h1": { "keywords": ["case"], "minMatches": 1 },
+        "intro": { "keywords": ["case"], "minMatches": 1 }
+      }
+    }
+  ]
+}

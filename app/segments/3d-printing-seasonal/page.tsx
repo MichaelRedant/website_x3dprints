@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Van valentijn tot kerst 2026: 3D geprinte decorstukken en gifts met snelle lokale opvolging.",
     url: "https://www.x3dprints.be/segments/3d-printing-seasonal/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Seasonal 3D designs" }],
+    images: [{ url: "/images/og-segments-nl.svg", width: 1200, height: 630, alt: "Seasonal 3D designs" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Seasonal 3D designs 2026",
     description:
       "Seizoensdecor en cadeaus voor 2026 met materiaaladvies en voorspelbare timing.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-segments-nl.svg"],
   },
 }
 
@@ -152,7 +152,7 @@ const serviceOffers: SchemaOfferInput[] = [
 const localBusinessJsonLd = buildLocalBusinessSchema({
   pageUrl,
   description: pageDescription,
-  image: "/Logo.webp",
+  image: "/images/og-segments-nl.svg",
   areaServed: "Gent en Vlaanderen",
   priceRange: "EUR 5 - EUR 49",
 })

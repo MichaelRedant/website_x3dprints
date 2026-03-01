@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "Praktische gids voor paashangers, eieren, tafeldecor en lichtobjecten met de juiste materiaalkeuze, afwerking en planning.",
     url: canonical,
     type: "article",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte lente en paasdecor" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "3D geprinte lente en paasdecor" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "3D printen voor lente en Pasen 2026",
     description:
       "Praktische gids voor 3D geprinte paasdecoratie met materiaalkeuze, checklist en leverplanning.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -137,7 +137,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
   inLanguage: "nl-BE",
 })
 

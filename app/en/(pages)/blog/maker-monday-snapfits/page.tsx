@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["Maker Monday", "Snap-fit design", "FDM design"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Snap-fit design" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "Snap-fit design" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Maker Monday #4: snap-fit clips that do not break",
     description: "Arm sizing, fillets and tolerances for PLA, PETG and TPU snap-fits.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -87,7 +87,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

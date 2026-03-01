@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["Interior 3D printing", "Decor objects", "Use Case Tuesday"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Interior decor 3D prints" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "Interior decor 3D prints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Use Case Tuesday: interior & decor",
     description: "Material and finish picks for premium interior 3D prints.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -85,7 +85,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

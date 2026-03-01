@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Vergelijk hittebestendige 3D print materialen met een matrix, scenario's en duidelijke CTA's.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Hittebestendig 3D print materiaal" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "Hittebestendig 3D print materiaal" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hittebestendig 3D print materiaal: PETG vs PC",
     description: "Matrix en scenario's voor hittebestendige 3D prints.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -156,7 +156,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Vergelijk PLA Tough+, PETG, PC en PC FR voor hittebestendige 3D prints met een matrix en scenario's.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

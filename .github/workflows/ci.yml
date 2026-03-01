@@ -7,9 +7,9 @@ on:
       - main
 
 jobs:
-  build-and-seo-checks:
+  build-and-seo-fast:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 75
 
     steps:
       - name: Checkout
@@ -24,5 +24,30 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Verify (lint + security + build + SEO)
-        run: npm run verify
+      - name: Verify fast gate (lint + security + build + SEO fast)
+        run: npm run verify:ci
+
+  seo-deep-main:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build-and-seo-fast
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build export for deep SEO checks
+        run: npm run build
+
+      - name: Run deep SEO checks
+        run: npm run check:seo:deep

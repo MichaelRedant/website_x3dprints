@@ -4,9 +4,7 @@ import { EN_METADATA } from "@/app/(pages)/portfolio/metadata.en"
 
 export const metadata: Metadata = EN_METADATA
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
-
-export default function PortfolioPageEn(props: PageProps) {
-  return <PortfolioPage {...props} searchParams={Promise.resolve({ lang: "en" })} />
+export default function PortfolioPageEn() {
+  return <PortfolioPage localeOverride="en" />
 }
 

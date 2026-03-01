@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "Practical guide for personalized gifts with clear material choices and planning toward May and June deadlines.",
     url: canonical,
     type: "article",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printed Father's Day and Mother's Day gifts" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "3D printed Father's Day and Mother's Day gifts" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Father's Day and Mother's Day 2026 3D printing",
     description:
       "Guide for 3D printed gifts with material selection, checklist and planning for May-June 2026.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -143,7 +143,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

@@ -209,6 +209,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { nl: "/portfolio/", en: "/en/portfolio/", changeFrequency: "weekly", priority: 0.95, sources: ["app/(pages)/portfolio/page.tsx", "app/en/(pages)/portfolio/page.tsx"] },
     { nl: "/valentijn-3d-printen", en: "/en/valentijn-3d-printen", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/valentijn-3d-printen/page.tsx", "app/en/(pages)/valentijn-3d-printen/page.tsx"] },
     { nl: "/segments", en: "/en/segments", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/segments/page.tsx", "app/en/(pages)/segments/page.tsx"] },
+    { nl: "/cases", en: "/en/cases", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/cases/page.tsx", "app/en/(pages)/cases/page.tsx"] },
     { nl: "/blog/", en: "/en/blog/", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/blog/page.tsx", "app/en/(pages)/blog/page.tsx"] },
     { nl: "/viewer", en: "/en/viewer", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/viewer/page.tsx", "app/en/(pages)/viewer/page.tsx"] },
     { nl: "/3d-modelleren", en: "/en/3d-modelleren", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/3d-modelleren/page.tsx", "app/en/(pages)/3d-modelleren/page.tsx"] },

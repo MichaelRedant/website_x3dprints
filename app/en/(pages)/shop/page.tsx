@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Small-batch 3D print shop online",
     description: "Live stock, personal finishing, and direct support from the maker.",
     url: `${SITE.url}/en/shop/`,
-    images: [{ url: SITE.ogImage, width: 1200, height: 630 }],
+    images: [{ url: "/images/og-shop-en.svg", width: 1200, height: 630 }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Small-batch 3D print shop online | X3DPrints",
     description: "Live-stock 3D prints with secure Mollie checkout and direct maker support.",
-    images: [SITE.ogImage],
+    images: ["/images/og-shop-en.svg"],
   },
 }
 

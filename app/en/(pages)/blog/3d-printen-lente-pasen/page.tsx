@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "Practical guide for Easter ornaments, eggs, table decor and light objects with clear material and planning choices.",
     url: canonical,
     type: "article",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printed spring and Easter decor" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "3D printed spring and Easter decor" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "3D printing for spring and Easter 2026",
     description:
       "Guide to 3D printed Easter decor with material choices, checklist and production planning.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -144,7 +144,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "Practical summer guide with clear material choices for indoor and outdoor 3D printing use cases.",
     url: canonical,
     type: "article",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printed summer decor" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "3D printed summer decor" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "3D printing for summer decor 2026",
     description:
       "Guide for summer 3D prints with material advice, planning and checklist for reliable delivery.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -146,7 +146,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

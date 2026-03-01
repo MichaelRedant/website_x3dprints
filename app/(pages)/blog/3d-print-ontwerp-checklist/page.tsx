@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description:
       "Checklist met richtwaarden voor wanddikte, overhang, tolerantie en assemblage zodat je model direct printbaar is.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print ontwerp checklist" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "3D print ontwerp checklist" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print ontwerp checklist: model printklaar",
     description: "Maak je model printklaar met deze ontwerp-checklist.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -156,7 +156,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Checklist voor printklare 3D modellen met richtwaarden voor wanddikte, overhang en toleranties.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

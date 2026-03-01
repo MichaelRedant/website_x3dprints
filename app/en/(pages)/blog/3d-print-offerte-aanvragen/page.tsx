@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Checklist for a fast 3D print quote with the right input, pricing breakdown and planning tips.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print quote request" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "3D print quote request" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print quote request: fast checklist",
     description: "Input checklist, pricing breakdown and planning tips for quick quotes.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -179,7 +179,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Checklist with intake input, pricing breakdown and planning tips so you receive a 3D print quote faster.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

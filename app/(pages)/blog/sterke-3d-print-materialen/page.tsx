@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Vergelijk PLA Tough+, PETG, TPU en PC voor functionele onderdelen met beslisregels en snelle CTA's.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Sterke 3D print materialen" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "Sterke 3D print materialen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sterke 3D prints: materiaalkeuze voor gebruik",
     description: "Materiaalkeuze voor functionele 3D onderdelen in één overzicht.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -160,7 +160,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Vergelijk PLA Tough+, PETG, TPU en PC voor functionele onderdelen met beslisregels en scenario's.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

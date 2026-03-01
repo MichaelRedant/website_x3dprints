@@ -15,6 +15,7 @@ export type RelatedLinksPageType =
   | "contact"
   | "portfolio"
   | "segments"
+  | "cases"
   | "material-detail"
 
 type LocaleLinks = Record<Locale, RelatedLink[]>
@@ -284,6 +285,32 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
         { label: "3D printing cost guide", href: "/blog/hoeveel-kost-3d-printen" },
         { label: "Design for 3D printing", href: "/blog/ontwerp-3d-printbaar-model" },
         { label: "Pricing and calculator", href: "/pricing" },
+      ],
+    },
+  },
+  cases: {
+    primary: {
+      nl: [
+        { label: "Offerte aanvragen", href: "/contact" },
+        { label: "Prijzen & calculator", href: "/pricing" },
+        { label: "Materialen & richtlijnen", href: "/materials" },
+      ],
+      en: [
+        { label: "Request a quote", href: "/contact" },
+        { label: "Pricing and calculator", href: "/pricing" },
+        { label: "Materials and guidelines", href: "/materials" },
+      ],
+    },
+    secondary: {
+      nl: [
+        { label: "3D print service", href: "/services" },
+        { label: "Segmenten", href: "/segments" },
+        { label: "Blog & kennisbank", href: "/blog" },
+      ],
+      en: [
+        { label: "3D print service", href: "/services" },
+        { label: "Segments", href: "/segments" },
+        { label: "Blog and knowledge base", href: "/blog" },
       ],
     },
   },

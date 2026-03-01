@@ -2,13 +2,16 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Suspense } from "react"
+import { Clock3, MapPin, Target } from "lucide-react"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import GlassOrb from "@/components/GlassOrb"
 import ContactForm from "@/components/ContactForm"
+import HeroTrustBar, { type HeroTrustItem } from "@/components/HeroTrustBar"
+import LeadTimeStatus from "@/components/LeadTimeStatus"
+import QuickContactActions from "@/components/QuickContactActions"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
-import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import { buildFaqPageSchema } from "@/lib/seo"
 
@@ -29,7 +32,7 @@ const NL_METADATA: Metadata = {
     description:
       "Vraag een offerte aan voor 3D printen in PLA, PETG of TPU. Lokale service in regio Gent met heldere prijs en levertijd.",
     url: "https://www.x3dprints.be/contact/",
-    images: [{ url: "/images/portfolio/20230916_085011.webp", width: 1200, height: 630, alt: "Contact X3DPrints" }],
+    images: [{ url: "/images/og-contact-nl.svg", width: 1200, height: 630, alt: "Contact X3DPrints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -37,7 +40,7 @@ const NL_METADATA: Metadata = {
     card: "summary_large_image",
     title: "Contact X3DPrints | 3D print offerte",
     description: "Vraag een offerte voor 3D printen in PLA, PETG of TPU met duidelijke prijs en planning.",
-    images: ["/images/portfolio/20230916_085011.webp"],
+    images: ["/images/og-contact-nl.svg"],
   },
 }
 
@@ -58,7 +61,7 @@ const EN_METADATA: Metadata = {
     description:
       "Request a quote for PLA, PETG or TPU prints. Direct communication, clear on price and lead time.",
     url: "https://www.x3dprints.be/en/contact/",
-    images: [{ url: "/images/portfolio/20230916_085011.webp", width: 1200, height: 630, alt: "Contact X3DPrints" }],
+    images: [{ url: "/images/og-contact-en.svg", width: 1200, height: 630, alt: "Contact X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -66,7 +69,7 @@ const EN_METADATA: Metadata = {
     card: "summary_large_image",
     title: "Contact X3DPrints | 3D printing quote",
     description: "Request a 3D printing quote with clear pricing and lead times.",
-    images: ["/images/portfolio/20230916_085011.webp"],
+    images: ["/images/og-contact-en.svg"],
   },
 }
 
@@ -159,11 +162,10 @@ const EN_COPY = {
   description: EN_METADATA.description ?? "",
 }
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+type PageProps = { localeOverride?: "nl" | "en" }
 
-export default async function ContactPage({ searchParams }: PageProps) {
-  const params = await searchParams
-  const normalizedLocale = normalizeLocale(params?.lang)
+export default function ContactPage({ localeOverride = "nl" }: PageProps) {
+  const normalizedLocale = localeOverride
   const isEn = normalizedLocale === "en"
   const copy = isEn ? EN_COPY : NL_COPY
   const localize = (href: string) => localizeHref(href, normalizedLocale)
@@ -203,6 +205,17 @@ export default async function ContactPage({ searchParams }: PageProps) {
         title: "Verder plannen voor je 3D print project",
         intro: "Ga door naar services, materialen of pricing voor je je offerte verstuurt.",
       }
+  const heroTrustFacts: HeroTrustItem[] = isEn
+    ? [
+        { icon: MapPin, label: "Local studio & region", value: "Herzele, Ghent and all of Belgium" },
+        { icon: Clock3, label: "Response speed", value: "First answer usually within 24 hours" },
+        { icon: Target, label: "Use-case focus", value: "Quotes for prototypes and functional parts" },
+      ]
+    : [
+        { icon: MapPin, label: "Lokale studio & regio", value: "Herzele, Gent en heel Belgie" },
+        { icon: Clock3, label: "Reactiesnelheid", value: "Eerste antwoord meestal binnen 24 uur" },
+        { icon: Target, label: "Use-case focus", value: "Offertes voor prototypes en functionele onderdelen" },
+      ]
 
   const contactJsonLd = {
     "@context": "https://schema.org",
@@ -274,6 +287,14 @@ export default async function ContactPage({ searchParams }: PageProps) {
             </h1>
             <p className="mt-3 text-lg text-slate-600">{copy.heroIntro}</p>
             <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
+            <LeadTimeStatus locale={normalizedLocale} className="mt-6 max-w-2xl" />
+            <HeroTrustBar items={heroTrustFacts} className="mt-6" />
+            <QuickContactActions
+              locale={normalizedLocale}
+              trackingCategory="contact_hero"
+              showQuote={false}
+              className="mt-6"
+            />
             <ContentTableOfContents
               title={isEn ? "Contents" : "Inhoud"}
               items={tocItems}

@@ -8,7 +8,6 @@ import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
-import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import {
   SITE,
@@ -38,7 +37,7 @@ const NL_METADATA: Metadata = {
     description:
       "Fotoreeksen en timelapses van 3D printen op maat: prototypes, merchandising en gepersonaliseerde cadeaus met duidelijke casecontext.",
     url: "https://www.x3dprints.be/portfolio/",
-    images: [{ url: "/images/portfolio/2d-5-3.webp", width: 1200, height: 630, alt: "Portfolio van 3D print projecten" }],
+    images: [{ url: "/images/og-portfolio-nl.svg", width: 1200, height: 630, alt: "Portfolio van 3D print projecten" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -47,7 +46,7 @@ const NL_METADATA: Metadata = {
     title: "3D print projecten in België | X3DPrints",
     description:
       "Functionele prototypes, merchandising en gifts: ontdek hoe X3DPrints 3D print projecten op maat oplevert met casefoto’s.",
-    images: ["/images/portfolio/2d-5-3.webp"],
+    images: ["/images/og-portfolio-nl.svg"],
   },
 }
 
@@ -68,7 +67,7 @@ const EN_METADATA: Metadata = {
     description:
       "Photo series and timelapses of custom 3D prints: prototypes, merchandising and personalized gifts from the Herzele studio.",
     url: "https://www.x3dprints.be/en/portfolio/",
-    images: [{ url: "/images/portfolio/2d-5-3.webp", width: 1200, height: 630, alt: "3D printing portfolio projects" }],
+    images: [{ url: "/images/og-portfolio-en.svg", width: 1200, height: 630, alt: "3D printing portfolio projects" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -77,7 +76,7 @@ const EN_METADATA: Metadata = {
     title: "3D printing portfolio & case studies | X3DPrints",
     description:
       "Functional prototypes, merchandising and gifts: see how X3DPrints delivers projects for SMEs, events and designers.",
-    images: ["/images/portfolio/2d-5-3.webp"],
+    images: ["/images/og-portfolio-en.svg"],
   },
 }
 
@@ -478,11 +477,10 @@ const newVideoIds = new Set([
 
 const organizationSchema = buildOrganizationReference({ url: siteUrl })
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+type PageProps = { localeOverride?: "nl" | "en" }
 
-export default async function Page({ searchParams }: PageProps) {
-  const params = await searchParams
-  const normalizedLocale = normalizeLocale(params?.lang)
+export default function Page({ localeOverride = "nl" }: PageProps) {
+  const normalizedLocale = localeOverride
   const copy = normalizedLocale === "en" ? PORTFOLIO_COPY_EN : PORTFOLIO_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
   const isEn = normalizedLocale === "en"

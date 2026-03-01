@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     siteName: "X3DPrints",
     type: "website",
     locale: "en_BE",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "FAQ 3D printing" }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630, alt: "FAQ 3D printing" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "3D printing FAQ | X3DPrints",
     description: "Answers on 3D printing, materials and shipping. Clear and concise.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home.svg"],
   },
   keywords: [
     "3D printing FAQ",

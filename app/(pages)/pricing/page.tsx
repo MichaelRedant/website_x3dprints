@@ -1,17 +1,17 @@
 // app/(pages)/pricing/page.tsx
 import type { Metadata } from "next"
 import Link from "next/link"
-import { CheckCircle2, Clock3, MapPin, Wallet } from "lucide-react"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
 import PriceEstimator from "@/components/PriceEstimator"
+import LeadTimeStatus from "@/components/LeadTimeStatus"
+import QuickContactActions from "@/components/QuickContactActions"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { GRAMS_PER_TIER, calcUnitPrice, type Quality, type Tier } from "@/lib/pricing"
 import type { MaterialKey } from "@/lib/materials"
 import FaqPromo from "@/components/FaqPromo"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
-import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import {
   buildFaqPageSchema,
@@ -38,7 +38,7 @@ const NL_METADATA: Metadata = {
     description:
       "Kosten 3D printen: vanaf EUR 5 (small), EUR 20 (medium) en EUR 49 (large). Gebruik de calculator voor actuele simulaties in België.",
     url: "https://www.x3dprints.be/pricing/",
-    images: [{ url: "/images/portfolio/2d-6-1-1.webp", width: 1200, height: 630, alt: "Prijzen voor 3D printen" }],
+    images: [{ url: "/images/og-pricing-nl.svg", width: 1200, height: 630, alt: "Prijzen voor 3D printen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -47,7 +47,7 @@ const NL_METADATA: Metadata = {
     title: "3D print prijs en kosten",
     description:
       "Indicatieve kosten 3D printen voor prototypes en series. Gebruik de calculator om impact van materiaal en grootte te zien.",
-    images: ["/images/portfolio/2d-6-1-1.webp"],
+    images: ["/images/og-pricing-nl.svg"],
   },
 }
 
@@ -68,7 +68,7 @@ const EN_METADATA: Metadata = {
     description:
       "3D printing from EUR 5 (small), EUR 20 (medium) and EUR 49 (large). PLA, PETG and TPU. Delivery across Belgium.",
     url: "https://www.x3dprints.be/en/pricing/",
-    images: [{ url: "/images/portfolio/2d-6-1-1.webp", width: 1200, height: 630, alt: "3D printing prices" }],
+    images: [{ url: "/images/og-pricing-en.svg", width: 1200, height: 630, alt: "3D printing prices" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -77,7 +77,7 @@ const EN_METADATA: Metadata = {
     title: "3D printing prices",
     description:
       "Indicative rates for prototypes and small to large batches. Materials: PLA (standard), PLA+ variants, PETG and TPU. Delivery across Belgium.",
-    images: ["/images/portfolio/2d-6-1-1.webp"],
+    images: ["/images/og-pricing-en.svg"],
   },
 }
 
@@ -183,6 +183,7 @@ const PRICING_COPY_NL = {
     secondary: [
       { label: "Portfolio", href: "/portfolio" },
       { label: "Segments & cases", href: "/segments" },
+      { label: "Case studies", href: "/cases" },
       { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       { label: "Kostprijs gids", href: "/blog/hoeveel-kost-3d-printen" },
     ],
@@ -300,6 +301,7 @@ const PRICING_COPY_EN = {
     secondary: [
       { label: "Portfolio", href: "/en/portfolio" },
       { label: "Segments & cases", href: "/en/segments" },
+      { label: "Case studies", href: "/en/cases" },
       { label: "Material Suggestion Tool", href: "/en/materials#material-suggestion-tool" },
       { label: "Cost guide", href: "/en/blog/hoeveel-kost-3d-printen" },
     ],
@@ -320,11 +322,10 @@ const PRICING_COPY_EN = {
   },
 }
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+type PageProps = { localeOverride?: "nl" | "en" }
 
-export default async function Page({ searchParams }: PageProps) {
-  const params = await searchParams
-  const normalizedLocale = normalizeLocale(params?.lang)
+export default function Page({ localeOverride = "nl" }: PageProps) {
+  const normalizedLocale = localeOverride
   const isEn = normalizedLocale === "en"
   const copy = isEn ? PRICING_COPY_EN : PRICING_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
@@ -392,27 +393,44 @@ export default async function Page({ searchParams }: PageProps) {
         subtitle: "Laatste stap",
         cta: "Start deze offerte-route",
       }
-  const heroFacts = isEn
+  const snapshotCopy = isEn
+    ? {
+        title: "Price snapshot",
+        subtitle: "Key rates and modifiers.",
+        tiersLabel: "PLA Matte base",
+        materialModsLabel: "Material",
+        qualityModsLabel: "Quality",
+        fastPath: "Fast quote path",
+      }
+    : {
+        title: "Prijs snapshot",
+        subtitle: "Kernprijzen en modifiers.",
+        tiersLabel: "PLA Matte basis",
+        materialModsLabel: "Materiaal",
+        qualityModsLabel: "Kwaliteit",
+        fastPath: "Snelle offerte-route",
+      }
+  const snapshotMaterialMods = isEn
     ? [
-        { icon: Wallet, label: "Baseline rates", value: "EUR 5, EUR 20, EUR 49" },
-        { icon: Clock3, label: "Quote response", value: "Usually within 24 hours" },
-        { icon: MapPin, label: "Coverage", value: "Herzele, Ghent and all of Belgium" },
+        { label: "PLA+ / specials", mod: "+20%" },
+        { label: "PETG (dried)", mod: "+20%" },
+        { label: "TPU (dried)", mod: "+30%" },
       ]
     : [
-        { icon: Wallet, label: "Richtprijzen", value: "EUR 5, EUR 20, EUR 49" },
-        { icon: Clock3, label: "Offerteantwoord", value: "Meestal binnen 24 uur" },
-        { icon: MapPin, label: "Dekking", value: "Herzele, Gent en heel Belgie" },
+        { label: "PLA+ / specials", mod: "+20%" },
+        { label: "PETG (gedroogd)", mod: "+20%" },
+        { label: "TPU (gedroogd)", mod: "+30%" },
       ]
-  const heroTrustPoints = isEn
+  const snapshotQualityMods = isEn
     ? [
-        "Clear 3D print price model for prototypes and small to large batches",
-        "Material-linked cost logic for PLA, PETG and TPU",
-        "Fast route from estimate to quote-ready contact",
+        { label: "Standard", mod: "0%" },
+        { label: "Fine", mod: "+15%" },
+        { label: "Ultra", mod: "+25%" },
       ]
     : [
-        "Duidelijk 3D print prijsmodel voor prototypes en kleine reeksen",
-        "Materiaalgebonden kostenlogica voor PLA, PETG en TPU",
-        "Snelle route van schatting naar offerteklare aanvraag",
+        { label: "Standaard", mod: "0%" },
+        { label: "Fijn", mod: "+15%" },
+        { label: "Ultra", mod: "+25%" },
       ]
   const tiersLead = isEn
     ? "These guideline tiers are optimized for quick decisions around 3D printing cost and feasibility."
@@ -444,7 +462,7 @@ export default async function Page({ searchParams }: PageProps) {
   const localBusinessJsonLd = buildLocalBusinessSchema({
     pageUrl,
     description: pageDescription,
-    image: "/images/portfolio/2d-6-1-1.webp",
+    image: "/images/og-pricing-nl.svg",
     priceRange: "EUR 5 - EUR 49",
     areaServed: "BE",
     offersName: copy.schema.catalogName,
@@ -480,6 +498,7 @@ export default async function Page({ searchParams }: PageProps) {
               </h1>
               <p className="mt-3 max-w-3xl text-slate-600">{copy.hero.body}</p>
               <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
+              <LeadTimeStatus locale={normalizedLocale} className="mt-5 max-w-2xl" />
               <div className="mt-6 flex flex-wrap gap-3">
                 <ShimmerButton
                   href={localize("/contact")}
@@ -505,6 +524,12 @@ export default async function Page({ searchParams }: PageProps) {
                   {copy.hero.ctas.tool}
                 </Link>
               </p>
+              <QuickContactActions
+                locale={normalizedLocale}
+                trackingCategory="pricing_hero"
+                showQuote={false}
+                className="mt-4"
+              />
               <ContentTableOfContents
                 title={isEn ? "Contents" : "Inhoud"}
                 items={tocItems}
@@ -512,35 +537,93 @@ export default async function Page({ searchParams }: PageProps) {
               />
             </Reveal>
             <Reveal delay={0.05}>
-              <GlassCard className="p-6 sm:p-7">
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-                  {isEn ? "Pricing snapshot" : "Prijs-snapshot"}
-                </p>
-                <ul className="mt-4 space-y-3">
-                  {heroFacts.map((fact) => (
-                    <li key={fact.label} className="flex gap-3 rounded-2xl border border-slate-200/70 bg-white/75 p-3">
-                      <fact.icon className="mt-0.5 h-5 w-5 text-indigo-600" aria-hidden />
-                      <div>
-                        <p className="text-xs uppercase tracking-wide text-slate-500">{fact.label}</p>
-                        <p className="text-sm font-semibold text-slate-900">{fact.value}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-                <ul className="mt-5 space-y-2 text-sm text-slate-600">
-                  {heroTrustPoints.map((point) => (
-                    <li key={point} className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 text-emerald-600" aria-hidden />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href="#pricing-fastpath"
-                  className="mt-5 inline-flex items-center text-sm font-semibold text-indigo-700 transition hover:text-indigo-600"
-                >
-                  {isEn ? "Jump to fastest quote route" : "Ga naar snelste offerte-route"} <span className="ml-1" aria-hidden>-&gt;</span>
-                </Link>
+              <GlassCard className="overflow-hidden p-0">
+                <div className="border-b border-slate-200/70 bg-gradient-to-r from-indigo-50/80 via-white to-emerald-50/70 px-6 py-5 sm:px-7">
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{snapshotCopy.title}</p>
+                  <p className="mt-2 text-sm text-slate-600">{snapshotCopy.subtitle}</p>
+                </div>
+
+                <div className="grid gap-3 px-4 py-4 sm:px-6 sm:py-5">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{snapshotCopy.tiersLabel}</p>
+                    <div className="mt-2 grid grid-cols-3 gap-2">
+                      {tiers.map((tier) => (
+                        <div
+                          key={`snapshot-tier-${tier.name}`}
+                          className="rounded-lg border border-slate-200/70 bg-white/85 p-2 shadow-sm"
+                        >
+                          <p className="text-[10px] font-semibold uppercase tracking-wide text-slate-500">{tier.name}</p>
+                          <p className="mt-0.5 text-xs font-semibold text-slate-900 sm:text-sm">{tier.priceLabel}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 sm:hidden">
+                    <details className="group overflow-hidden rounded-lg border border-slate-200/70 bg-white/85">
+                      <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-600 [&::-webkit-details-marker]:hidden">
+                        <span>{snapshotCopy.materialModsLabel}</span>
+                        <span className="text-slate-400 transition group-open:rotate-45">+</span>
+                      </summary>
+                      <ul className="space-y-1.5 border-t border-slate-200/70 px-3 py-2 text-sm text-slate-700">
+                        {snapshotMaterialMods.map((item) => (
+                          <li key={`snapshot-material-${item.label}`} className="flex items-center justify-between gap-2">
+                            <span>{item.label}</span>
+                            <span className="font-semibold text-slate-900">{item.mod}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                    <details className="group overflow-hidden rounded-lg border border-slate-200/70 bg-white/85">
+                      <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-600 [&::-webkit-details-marker]:hidden">
+                        <span>{snapshotCopy.qualityModsLabel}</span>
+                        <span className="text-slate-400 transition group-open:rotate-45">+</span>
+                      </summary>
+                      <ul className="space-y-1.5 border-t border-slate-200/70 px-3 py-2 text-sm text-slate-700">
+                        {snapshotQualityMods.map((item) => (
+                          <li key={`snapshot-quality-${item.label}`} className="flex items-center justify-between gap-2">
+                            <span>{item.label}</span>
+                            <span className="font-semibold text-slate-900">{item.mod}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  </div>
+
+                  <div className="hidden gap-3 sm:grid sm:grid-cols-2">
+                    <div className="rounded-xl border border-slate-200/70 bg-white/85 p-3">
+                      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{snapshotCopy.materialModsLabel}</p>
+                      <ul className="mt-2 space-y-1.5 text-sm text-slate-700">
+                        {snapshotMaterialMods.map((item) => (
+                          <li key={`snapshot-desktop-material-${item.label}`} className="flex items-center justify-between gap-3">
+                            <span>{item.label}</span>
+                            <span className="font-semibold text-slate-900">{item.mod}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="rounded-xl border border-slate-200/70 bg-white/85 p-3">
+                      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{snapshotCopy.qualityModsLabel}</p>
+                      <ul className="mt-2 space-y-1.5 text-sm text-slate-700">
+                        {snapshotQualityMods.map((item) => (
+                          <li key={`snapshot-desktop-quality-${item.label}`} className="flex items-center justify-between gap-3">
+                            <span>{item.label}</span>
+                            <span className="font-semibold text-slate-900">{item.mod}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="border-t border-slate-200/70 pt-4">
+                    <Link
+                      href="#pricing-fastpath"
+                      className="inline-flex items-center text-sm font-semibold text-indigo-700 transition hover:text-indigo-600"
+                    >
+                      {snapshotCopy.fastPath} <span className="ml-1" aria-hidden>-&gt;</span>
+                    </Link>
+                  </div>
+                </div>
               </GlassCard>
             </Reveal>
           </div>

@@ -256,9 +256,9 @@ export async function generateMetadata(
       siteName: "X3DPrints",
       type: "website",
       locale: "nl_BE",
-      images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: keyphrase }],
+      images: [{ url: "/images/og-home.svg", width: 1200, height: 630, alt: keyphrase }],
     },
-    twitter: { card: "summary_large_image", title: seoTitle, description, images: ["/images/og-home.jpg"] },
+    twitter: { card: "summary_large_image", title: seoTitle, description, images: ["/images/og-home.svg"] },
   }
 }
 
@@ -395,7 +395,7 @@ export default async function Page(
     "@type": "LocalBusiness",
     name: "X3DPrints",
     url: "https://www.x3dprints.be",
-    image: "https://www.x3dprints.be/og-x3dprints.jpg",
+    image: "https://www.x3dprints.be/images/og-default.svg",
     description: seoDescription,
     inLanguage: "nl-BE",
     alternateName: ["X3DPrints", "X3DPrints (English)"],

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["3D print outdoor", "PETG", "TPU", "buitenprojecten"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Outdoor 3D print advies door X3DPrints" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "Outdoor 3D print advies door X3DPrints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How-to: 3D print onderdelen voor buitengebruik",
     description: "Materialen, bevestiging en ontwerpregels zodat je prints zon, regen en trillingen overleven.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -115,7 +115,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 export default function OutdoorPrintingGuidePage() {

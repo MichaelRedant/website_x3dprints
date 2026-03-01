@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     ],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "Schroefdraad en inserts in 3D prints",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Maker Monday #7: Schroefdraad & inserts in FDM",
     description:
       "Wanneer gebruik je geprinte draad, zelftappers of heat set inserts? Hier vind je de regels voor PLA, PETG en TPU.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -130,7 +130,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 function SectionDivider() {

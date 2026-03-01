@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description:
       "Valentijn 2026 gifts met glans of lichtgloed. Silk/Matte/Translucent PLA, led-uitsparingen en leveropties in Vlaanderen.",
     url: "https://www.x3dprints.be/valentijn-3d-printen/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },

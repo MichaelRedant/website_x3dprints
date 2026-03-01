@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     tags: ["TPU 3D printen", "Filament Vrijdag", "3D print materiaal"],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "TPU filament advies door X3DPrints",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Filament Vrijdag #3: TPU 3D Printen gids",
     description:
       "TPU eigenschappen, instellingen en typische toepassingen voor flexibele, schokdempende onderdelen. Uitgelegd door een lokale 3D print studio.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -208,7 +208,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: "Filament Vrijdag #3 van X3DPrints. Leer wanneer TPU slimmer is dan PLA of PETG, welke instellingen werken en hoe je het inzet voor flexibele onderdelen.",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 

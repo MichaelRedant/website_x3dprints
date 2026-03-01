@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Korte iteraties in PLA Matte, PLA Tough+ of PETG met focus op pasvorm, planning en heldere communicatie.",
     url: "https://www.x3dprints.be/segments/3d-printing-prototypes/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printing voor prototypes" }],
+    images: [{ url: "/images/og-segments-nl.svg", width: 1200, height: 630, alt: "3D printing voor prototypes" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "3D printing voor prototypes",
     description:
       "Korte iteraties in PLA Matte, PLA Tough+ of PETG met focus op pasvorm, planning en heldere communicatie.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-segments-nl.svg"],
   },
 }
 
@@ -147,7 +147,7 @@ const serviceOffers: SchemaOfferInput[] = [
 const localBusinessJsonLd = buildLocalBusinessSchema({
   pageUrl,
   description: pageDescription,
-  image: "/Logo.webp",
+  image: "/images/og-segments-nl.svg",
   areaServed: "Gent & Vlaanderen",
   priceRange: "EUR 5 - EUR 49",
 })

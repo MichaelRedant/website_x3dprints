@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description:
       "Design rules, tolerance table and workflow to turn CAD models into printable parts.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print design guide" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "3D print design guide" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print design guide 2026",
     description: "Design rules, tolerances and workflow for printable CAD.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -150,7 +150,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Design rules, tolerance table and workflow to make CAD models printable.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

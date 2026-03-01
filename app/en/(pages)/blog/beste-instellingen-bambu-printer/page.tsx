@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description:
       "Studio-tested settings for PLA, PETG and TPU including flow calibration, AMS tips and maintenance to keep prints flawless.",
     url: canonical,
-    images: [{ url: "/images/portfolio/20241024_081839-1.jpg", width: 1200, height: 630, alt: "Bambu printer settings" }],
+    images: [{ url: "/images/og-viewer-en.svg", width: 1200, height: 630, alt: "Bambu printer settings" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Best settings for your Bambu printer",
     description: "Optimize your Bambu printer with our PLA/PETG/TPU presets, calibration tips and troubleshoot checklist.",
-    images: ["/images/portfolio/20241024_081839-1.jpg"],
+    images: ["/images/og-viewer-en.svg"],
   },
 }
 
@@ -126,7 +126,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: "2024-09-01",
   dateModified,
-  image: "/images/portfolio/20241024_081839-1.jpg",
+  image: "/images/og-viewer-en.svg",
   inLanguage: "en-BE",
 })
 

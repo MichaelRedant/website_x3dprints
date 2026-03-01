@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description:
       "Checklist with reference values for wall thickness, overhang, tolerance and assembly so your model prints cleanly.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print design checklist" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "3D print design checklist" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print design checklist: print-ready model",
     description: "Make your model print-ready with this design checklist.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -163,7 +163,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Design checklist with wall thickness, overhang and tolerance guidance so your model is print-ready.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

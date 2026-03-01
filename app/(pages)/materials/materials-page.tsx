@@ -1,15 +1,19 @@
 // app/(pages)/materials/materials-page.tsx
 import Link from "next/link"
-import { CheckCircle2, Clock3, Layers3, MapPin } from "lucide-react"
+import { Clock3, MapPin, Target } from "lucide-react"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import { MATERIAL_ORDER, MATERIAL_SLUGS, materialsByLocale } from "@/lib/materials"
 import MaterialGrid from "@/components/MaterialGrid"
 import FaqPromo from "@/components/FaqPromo"
 import GlassCard from "@/components/GlassCard"
+import HeroTrustBar, { type HeroTrustItem } from "@/components/HeroTrustBar"
+import LeadTimeStatus from "@/components/LeadTimeStatus"
+import QuickContactActions from "@/components/QuickContactActions"
 import OrganizerCta from "@/components/OrganizerCta"
 import { MATERIAL_DETAILS } from "@/content/material-details"
 import MaterialSuggestionToolLoader from "@/components/MaterialSuggestionToolLoader"
+import MaterialDecisionAssistant from "@/components/MaterialDecisionAssistant"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
 import {
   buildFaqPageSchema,
@@ -31,6 +35,7 @@ export function renderMaterialsPage({ locale }: RenderArgs) {
   const tocItems = isEn
     ? [
         { id: "material-suggestion-tool", label: "How does the Material Suggestion Tool work?" },
+        { id: "materials-quick-chooser", label: "What is the fastest material route?" },
         { id: "materials-library", label: "Which 3D printing materials are available?" },
         { id: "materials-compare", label: "How do key materials compare?" },
         { id: "materials-faq", label: "FAQ and next steps" },
@@ -38,6 +43,7 @@ export function renderMaterialsPage({ locale }: RenderArgs) {
       ]
     : [
         { id: "material-suggestion-tool", label: "Hoe werkt de Material Suggestion Tool?" },
+        { id: "materials-quick-chooser", label: "Wat is de snelste materiaalroute?" },
         { id: "materials-library", label: "Welke 3D-printmaterialen zijn beschikbaar?" },
         { id: "materials-compare", label: "Hoe vergelijken de kernmaterialen?" },
         { id: "materials-faq", label: "FAQ en volgende stappen" },
@@ -187,7 +193,7 @@ export function renderMaterialsPage({ locale }: RenderArgs) {
 
   const comparisonCopy = isEn
     ? {
-        title: "Quick material comparison for real projects",
+        title: "Benefit matrix: quick material comparison for real projects",
         intro:
           "Use this table for faster material decisions on quote-ready projects. Final choice still depends on your geometry, wall thickness and print direction.",
         caption: "3D printing material comparison for use case, outdoor use and price impact",
@@ -202,7 +208,7 @@ export function renderMaterialsPage({ locale }: RenderArgs) {
         ctaSecondary: "View pricing",
       }
     : {
-        title: "Snelle materiaalvergelijking voor echte projecten",
+        title: "Benefit matrix: snelle materiaalvergelijking voor echte projecten",
         intro:
           "Gebruik deze tabel om sneller een materiaalkeuze te maken voor offerteklare projecten. De definitieve keuze hangt nog af van je geometrie, wanddikte en printoriëntatie.",
         caption: "Vergelijking van 3D-printmaterialen op use-case, outdoor gebruik en prijsimpact",
@@ -232,27 +238,16 @@ export function renderMaterialsPage({ locale }: RenderArgs) {
         { material: "TPU", bestFor: "Grips, bumpers, flexibele interfaces", outdoor: "Sterk", flexibility: "Flexibel", priceImpact: "+30%" },
         { material: "PLA Silk/Marble", bestFor: "Premium visuele props en gifts", outdoor: "Beperkt", flexibility: "Stijf", priceImpact: "+20%" },
       ]
-  const heroFacts = isEn
+  const heroFacts: HeroTrustItem[] = isEn
     ? [
-        { icon: Layers3, label: "Material options", value: `${materials.length}+ active material profiles` },
-        { icon: Clock3, label: "Advice speed", value: "Material route in about 2 minutes" },
-        { icon: MapPin, label: "Production context", value: "Local 3D print service in Belgium" },
+        { icon: MapPin, label: "Local studio & region", value: "Herzele, Ghent and all of Belgium" },
+        { icon: Clock3, label: "Response speed", value: "Material route in about 2 minutes" },
+        { icon: Target, label: "Use-case focus", value: "Material choice for prototypes and functional parts" },
       ]
     : [
-        { icon: Layers3, label: "Materiaalopties", value: `${materials.length}+ actieve materiaalprofielen` },
-        { icon: Clock3, label: "Advies-snelheid", value: "Materiaalroute in ongeveer 2 minuten" },
-        { icon: MapPin, label: "Productiecontext", value: "Lokale 3D print service in Belgie" },
-      ]
-  const heroTrustPoints = isEn
-    ? [
-        "Built for practical 3D model printing and quote-ready decisions",
-        "Direct links from material advice to pricing and contact",
-        "Keyword-focused around 3D print materials, PETG, TPU and PLA variants",
-      ]
-    : [
-        "Gebouwd voor praktisch 3D model printen en offerteklare beslissingen",
-        "Directe links van materiaaladvies naar pricing en contact",
-        "Keyword-focus op 3D print materiaal, PETG, TPU en PLA-varianten",
+        { icon: MapPin, label: "Lokale studio & regio", value: "Herzele, Gent en heel Belgie" },
+        { icon: Clock3, label: "Reactiesnelheid", value: "Materiaalroute in ongeveer 2 minuten" },
+        { icon: Target, label: "Use-case focus", value: "Materiaalkeuze voor prototypes en functionele onderdelen" },
       ]
   const libraryLead = isEn
     ? "Compare all major 3D printing material profiles before finalizing your quote route."
@@ -403,7 +398,7 @@ export function renderMaterialsPage({ locale }: RenderArgs) {
   const localBusinessJsonLd = buildLocalBusinessSchema({
     pageUrl: canonicalUrl,
     description: pageDescription,
-    image: "/images/portfolio/20241024_081839-1.jpg",
+    image: "/images/og-viewer.svg",
     priceRange: "EUR 0 - EUR 15",
     areaServed: "BE",
   })
@@ -437,6 +432,7 @@ export function renderMaterialsPage({ locale }: RenderArgs) {
                 </Link>
               </p>
               <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
+              <LeadTimeStatus locale={locale} className="mt-5 max-w-2xl" />
               <div className="mt-6 flex flex-wrap gap-3">
                 <ShimmerButton
                   href="#material-suggestion-tool"
@@ -457,6 +453,12 @@ export function renderMaterialsPage({ locale }: RenderArgs) {
                   {isEn ? "Request material quote" : "Vraag materiaalofferte"} <span aria-hidden className="ml-1">-&gt;</span>
                 </Link>
               </div>
+              <QuickContactActions
+                locale={locale}
+                trackingCategory="materials_hero"
+                showQuote={false}
+                className="mt-4"
+              />
               <ContentTableOfContents
                 title={isEn ? "Contents" : "Inhoud"}
                 items={tocItems}
@@ -468,25 +470,7 @@ export function renderMaterialsPage({ locale }: RenderArgs) {
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
                   {isEn ? "Material snapshot" : "Materiaal-snapshot"}
                 </p>
-                <ul className="mt-4 space-y-3">
-                  {heroFacts.map((fact) => (
-                    <li key={fact.label} className="flex gap-3 rounded-2xl border border-slate-200/70 bg-white/75 p-3">
-                      <fact.icon className="mt-0.5 h-5 w-5 text-indigo-600" aria-hidden />
-                      <div>
-                        <p className="text-xs uppercase tracking-wide text-slate-500">{fact.label}</p>
-                        <p className="text-sm font-semibold text-slate-900">{fact.value}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-                <ul className="mt-5 space-y-2 text-sm text-slate-600">
-                  {heroTrustPoints.map((point) => (
-                    <li key={point} className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 text-emerald-600" aria-hidden />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
+                <HeroTrustBar items={heroFacts} className="mt-4" />
               </GlassCard>
             </Reveal>
           </div>
@@ -550,6 +534,13 @@ export function renderMaterialsPage({ locale }: RenderArgs) {
         </div>
       </section>
 
+      <section id="materials-quick-chooser" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <MaterialDecisionAssistant locale={locale} />
+          </Reveal>
+        </div>
+      </section>
 
       <section id="materials-library" className="scroll-mt-28 px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto mb-6 max-w-6xl">

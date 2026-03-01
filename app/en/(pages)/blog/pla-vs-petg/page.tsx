@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description:
       "Hands-on comparison with use-case matrix and fast decision criteria.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "PLA vs PETG comparison" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "PLA vs PETG comparison" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PLA vs PETG: which material should you choose?",
     description: "Material guide with clear decision support for your print.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -133,7 +133,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

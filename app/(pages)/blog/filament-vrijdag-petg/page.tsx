@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     tags: ["PETG 3D printen", "Filament Vrijdag", "3D print materiaal"],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "PETG filament advies door X3DPrints",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Filament Vrijdag #2: PETG 3D Printen gids",
     description: "PETG eigenschappen, instellingen en buitentoepassingen uitgelegd door een lokale 3D print studio.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -198,7 +198,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Filament Vrijdag #2 van X3DPrints. Leer wanneer PETG slimmer is dan PLA, welke instellingen werken en hoe je het inzet voor functionele onderdelen.",
   datePublished: publishedDate,
   dateModified,
-  image: "/images/og-home.jpg",
+  image: "/images/og-home-nl.svg",
 })
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"

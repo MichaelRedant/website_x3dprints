@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Impact table and practical tips to lower your 3D printing budget.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Save 3D print costs" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "Save 3D print costs" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Save 3D print costs: 7 smart optimisations",
     description: "Optimisations to lower your 3D printing budget.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -152,7 +152,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Practical levers to reduce 3D printing costs with an impact table and quick wins.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

@@ -20,6 +20,66 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(home)/page.js"
+    ],
+    "/(pages)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/layout.js"
+    ],
+    "/(pages)/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/contact/page.js"
+    ],
+    "/(pages)/services/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/services/page.js"
+    ],
+    "/(pages)/3d-modelleren/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/3d-modelleren/page.js"
+    ],
+    "/(pages)/pricing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/pricing/page.js"
+    ],
+    "/(pages)/3d-printen/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/3d-printen/page.js"
+    ],
+    "/(pages)/blog/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/layout.js"
+    ],
+    "/(pages)/blog/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/page.js"
+    ],
+    "/(pages)/blog/kapot-onderdeel-laten-printen/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/kapot-onderdeel-laten-printen/page.js"
+    ],
+    "/(pages)/blog/ikea-onderdelen-3d-printen/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/ikea-onderdelen-3d-printen/page.js"
+    ],
+    "/(pages)/cases/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/cases/page.js"
+    ],
+    "/(pages)/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem/page.js"
     ]
   }
 }

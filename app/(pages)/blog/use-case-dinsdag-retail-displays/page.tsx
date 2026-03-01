@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "merchandising props",
       "Use Case Dinsdag",
     ],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte retail displays en etalages" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "3D geprinte retail displays en etalages" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Use Case Dinsdag: Retail displays 3D printen",
     description:
       "Welke filamenten kies je voor winkelprops? Deze gids bundelt materiaalkeuze, ontwerpregels en realistische toepassingen.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -123,7 +123,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 function SectionDivider() {

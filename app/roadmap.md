@@ -1,78 +1,208 @@
-SEO Roadmap - Sitewide Audit & Reset (excl. locaties)
+SEO Growth Roadmap - Audit na marktaandeel-analyse
 
-Datum: 2026-02-09
-Scope: Alle pagina's behalve locatiepagina's en lokale slugs.
-Methodiek: Code-scan van metadata, schema, content-structuur, interne links, robots/sitemap + `npm run check:seo`.
+Datum: 2026-03-01  
+Scope: Sitewide on-page SEO en conversie (locatiepagina's apart traject).  
+Doel: Vindbaarheid verhogen zonder regressies in build, indexatie of UX.
 
-Kernstats (code-scan)
-- Blogposts totaal: 128 (NL 64, EN 64).
-- Blogposts met Article JSON-LD in pagina of gedeeld content-bestand: 126/128.
-- Blogposts met FAQ JSON-LD via `buildFaqPageSchema` of `BlogFaq`: 126/128 (uitzonderingen = index/wrappers).
-- Blogposts met "Laatst bijgewerkt"/"Last updated": 126/128 (uitzonderingen = index/wrappers).
-- Blogposts met bronnen-sectie (`<cite>`): NL 63/64, EN 63/64 (EN uitzondering = octopus wrapper gebruikt gedeeld content-bestand).
-- Blogposts met tabel (`<table>`): NL 58/64, EN 27/64 (tabels in gedeelde componenten tellen niet mee in deze scan).
-- Segmentpagina's (NL): 11/11 met FAQ schema + bronnen.
-- Bilingual parity: 0 NL high-intent posts zonder EN equivalent.
+Status update (2026-03-01):
+- [x] P0.1 SEO checks + CI gating gestabiliseerd (fast/deep split, noindex-aware checks, regex scan fix).
+- [x] P0.2 Hero trust-framework standaardiseren op alle money pages.
+- [x] Static-render safety op money pages (geen `await searchParams` meer op statische routes).
+- [x] P1.3 Snelle contactroute + event tracking (zonder WhatsApp).
+- [x] P1.4 Capaciteitssignaal met centrale bron + zichtbaarheid op money pages.
+- [x] P1.5 OG/CTR governance hardening (top-landing policy + route-specifieke OG/Twitter checks; geen logo-fallback op top routes).
+- [x] P1.5b OG CTR copy polish: route-specifieke SVG copy/chips aangescherpt op alle top landings.
+- [x] P1.5c Locale split OG assets: aparte NL/EN OG-SVG's voor alle top money pages + governance check geupdate.
+- [x] P1.5d Locale split doorgetrokken op detailcontent: blogposts, segmentdetails en cases (NL/EN OG varianten).
+- [x] P3.8 Materials micro-interacties: quick chooser + benefit matrix copy op `/materials` en `/en/materials`.
+- [x] P3.9 Keyword governance uitgebreid: versiebeheerde baseline (`lib/seo-keyword-governance.json`) + title/H1/intro checks op NL/EN money pages.
+- [x] P2.6 Cluster A voltooid (2/2): `/blog/kapot-onderdeel-laten-printen` en `/blog/vervangstuk-huishoudtoestel-3d-printen` (beide met EN-variant).
+- [x] P2.6 Cluster B voltooid (2/2): `/blog/ikea-onderdelen-3d-printen` en `/blog/kabelmanagement-3d-printen` (beide met EN-variant).
+- [x] P2.6 Cluster C voltooid (2/2): `/blog/prototyping-kleine-reeksen-3d-printen` en `/blog/retail-pos-3d-printen` (beide met EN-variant).
+- [x] P2.7 Case engine opgestart: `/cases` + `/en/cases` live met herhaalbaar case-format, 6-case pipeline en extra interne linkinjecties.
+- [x] P2.7 Case hub impact upgrade: intent-matrix, quick-start routes, bottom CTA en HowTo JSON-LD toegevoegd.
+- [x] P2.7 Tone + funnel polish: minder SEO-jargon op `/cases`, dedicated OG assets (`/images/og-cases-nl.svg` + `/images/og-cases-en.svg`) en route-matrices doorgetrokken naar `/services` en `/segments`.
 
-Executive summary
-- Technische basis staat goed: metadata aanwezig op vrijwel alle routes, sitemap/robots consistent, money pages hebben schema coverage en bronnen.
-- Grootste SEO-winst zit in content-pariteit en GEO-structuur voor EN content (bronnen + tabellen) en in schema-governance (inline vs helpers).
-- Interne linkflow is sterk op money pages, maar kan consistenter door ReadMoreLinks ook op blogposts te gebruiken.
+---
 
-Audit - kernbevindingen
-1) Crawl & indexatie
-- `app/robots.ts` en `app/sitemap.ts` zijn aanwezig en consistent met alternates + lastModified.
-- `/crm` is uitgesloten van indexing via robots + noindex layout. OK.
-- `npm run check:seo` uitgevoerd en OK op dit apparaat (2026-02-09).
+## 1) Reality check op de Copilot-analyse
 
-2) Metadata & alternates
-- Alle blogposts hebben metadata; dynamische routes gebruiken `generateMetadata`.
-- Core money pages hebben metadata + OG.
-- Volledige hreflang/alternate coverage niet geverifieerd via scripts.
+Kernconclusie: de analyse is directioneel bruikbaar, maar op meerdere punten verouderd t.o.v. de huidige codebase.
 
-3) Schema coverage & governance
-- Money pages (services/pricing/materials/portfolio/contact/segments) gebruiken helper-gebaseerde schema's.
-- Inline schema objecten voor layout, portfolio en blog index zijn gemigreerd naar helper-fabrieken in `lib/seo.ts`.
-- `BlogFaq` gebruikt helpers en geeft `mainEntityOfPage` door (consistent).
+Wat de analyse correct ziet:
+- Lokale positioning en meertaligheid zijn sterke assets.
+- Verdere winst zit in content intent-clusters + conversieoptimalisatie.
+- Casestudies en gebruiksgerichte pagina's blijven een groeiversneller.
 
-4) Content-structuur (GEO)
-- NL longform posts zijn grotendeels compliant (TOC/H2-anchors, tabellen, bronnen, last-updated).
-- EN content: bronnen met `<cite>` zijn nu grotendeels consistent (52/53).
-- EN tabellen: audit uitgevoerd; code-scan ondertelt tabellen uit gedeelde componenten.
-- Dit kan topical authority en rich result kansen beperken op EN slugs.
+Wat intussen al (grotendeels) opgelost is:
+- Structured data is al breed aanwezig (helper-gedreven via `lib/seo.ts` op veel money/content routes).
+- Interne links zijn sterk verbeterd via `ReadMoreLinks` en CTA-injecties.
+- Pricing is geen dunne pagina meer; er staat al pricing-structuur met vanafprijzen, calculator-flow en quotepad.
+- Contentdekking is veel breder dan de analyse veronderstelt (64 NL blogslugs + 64 EN blogslugs, meerdere segmenten).
+- Mediaformaat is grotendeels modern (`public`: voornamelijk `.webp`).
 
-5) Interne linkflow
-- ReadMoreLinks staat op money pages en segment detailpages.
-- ReadMoreLinks is nu standaard op alle blogposts via de blog layout.
+Punten die nog wel valide zijn:
+- OG/CTR governance op top landingspagina's kan nog scherper.
+- Static-render discipline moet bewaakt blijven bij nieuwe route-wijzigingen.
+- Case cadence kan strakker en zakelijker gestuurd worden.
 
-6) Bilingual parity
-- Alle high-intent NL gidsen hebben nu een EN variant.
-- Twee EN slugs hebben enkel een andere slugnaam t.o.v. NL (Gridfinity/Tool organizers) maar zijn inhoudelijk wel vertaald.
+---
 
-Roadmap (reset)
-P0 - Maximaal SEO effect (0-2 weken)
-- EN blogposts upgraden naar GEO-structuur: bronnen-sectie met `<cite>` toegevoegd op alle EN posts; tabel-audit uitgevoerd (code-scan ondertelt gedeelde tabellen).
-- BlogFAQ schema consistent maken door `mainEntityOfPage` door te geven (via `BlogFaq` props) op alle posts met FAQ.
-- `npm run check:seo` gedraaid en OK.
+## 2) Huidige sterke basis (behouden)
 
-P1 - Governance & schaal (2-6 weken)
-- Inline schema's gemigreerd naar helper-fabrieken:
-  - Blog index ItemList/Blog schema -> helpers in `lib/seo.ts` toegevoegd.
-  - Portfolio ImageObject/VideoObject -> helpers in `lib/seo.ts` toegevoegd.
-  - LocalBusiness in `app/layout.tsx` -> `buildLocalBusinessSchema` uitgebreid met geo/hasMap en refs.
-- ReadMoreLinks standaardiseren op alle blogposts (pageType = "blog") voor consistente interne linkflow (afgerond via blog layout).
+Technisch:
+- Next.js App Router met duidelijke route-architectuur en locale varianten.
+- Robuuste metadata/alternates-setup + recente canonical/hreflang hygiëne.
+- JSON-LD helpers aanwezig en veel gebruikt (`buildArticleJsonLd`, `buildLocalBusinessSchema`, `buildServiceSchema`, `buildOfferCatalog`, `buildFaqPageSchema`).
 
-P2 - Groei & content (6-12 weken)
-- Vertaal 8 NL high-intent gidsen naar EN en voeg canonical + alternates (afgerond).
-- Voeg kwartaal refresh planning toe voor top-20 blogposts (nieuwe bronnen, interne links, CTA updates) (afgerond).
-- Maak 3 nieuwe "pillar" artikelen (pricing/materials/design) met extra FAQ + HowTo schema en link naar segmenten (afgerond: `/blog/3d-print-prijzen-gids`, `/blog/3d-print-materialen-gids`, `/blog/3d-print-ontwerp-gids`).
+Content:
+- Grote topical dekking in blog + segmentpagina's.
+- Sterke FAQ- en how-to-structuur.
+- Duidelijke materiaalpositionering (PLA/PETG/TPU + varianten).
 
-Kwartaal refresh planning (2026)
-- Q1 (maart): `/blog/3d-print-prijs-per-stuk` (refreshed 2026-02-09), `/blog/3d-print-kosten-besparen` (refreshed 2026-02-09), `/blog/3d-print-offerte-aanvragen` (refreshed 2026-02-09), `/blog/3d-print-ontwerp-checklist` (refreshed 2026-02-09), `/blog/3d-print-assemblage-gids` (refreshed 2026-02-09)
-- Q2 (juni): `/blog/3d-print-materiaal-voor-zichtwerk` (refreshed 2026-02-09), `/blog/hittebestendig-3d-print-materiaal` (refreshed 2026-02-09), `/blog/sterke-3d-print-materialen` (refreshed 2026-02-09), `/blog/juiste-3d-print-materiaal` (refreshed 2026-02-09), `/blog/pla-vs-petg` (refreshed 2026-02-09)
-- Q3 (september): `/blog/hoeveel-kost-3d-printen` (refreshed 2026-02-09), `/blog/hoe-lang-duurt-3d-printen` (refreshed 2026-02-09), `/blog/bestanden-voor-3d-printen` (refreshed 2026-02-09), `/blog/3d-printen-voor-beginners` (refreshed 2026-02-09), `/blog/beste-instellingen-bambu-printer` (refreshed 2026-02-09)
-- Q4 (december): `/blog/filament-vrijdag-pla` (refreshed 2026-02-09), `/blog/filament-vrijdag-petg` (refreshed 2026-02-09), `/blog/filament-vrijdag-tpu` (refreshed 2026-02-09), `/blog/maker-monday-wanddiktes-ribs` (refreshed 2026-02-09), `/blog/maker-monday-toleranties-3d-printen` (refreshed 2026-02-09)
+Conversie:
+- Duidelijke quote- en contactflow.
+- Pricing bevat concrete instapniveaus en vervolgstappen.
+- Meertalige CTA's op kernroutes.
 
-Openstaande assumpties
-- `npm run check:seo` en `npm run build` uitgevoerd op dit apparaat (2026-02-09).
-- Audit gebaseerd op code-scan (geen runtime of SERP-data).
+---
+
+## 3) Gaps met hoogste impact (haalbaar voor 1-persoonsstudio)
+
+P0 - Kritisch (nu eerst)
+1. SEO checks stabiliseren en hard in CI
+- Probleem: regressiechecks moeten snel, betrouwbaar en standaard meedraaien.
+- Actie:
+  - `check:seo` opdelen in snelle gates + optionele deep checks.
+  - Timeouts/performantie van linkcheck oplossen zodat CI niet blokkeert.
+  - CI workflow afdwingen op `lint + build + check:seo`.
+- DoD:
+  - Checks < 5 min op CI.
+  - `main` heeft groene pipeline zonder flaky failures.
+
+2. Hero trust-framework standaardiseren op money pages
+- Actie:
+  - Uniforme trustbalk op home/services/pricing/materials/contact:
+    - lokale studio + regio
+    - duidelijke responstijd
+    - heldere use-case focus
+  - Primaire CTA altijd zichtbaar boven de fold.
+- DoD:
+  - Zelfde trust-structuur op alle money pages.
+  - Geen visuele regressie mobiel/desktop.
+
+P1 - Hoge groei-impact
+3. Conversieversneller: snelle contactroute + tracking (zonder WhatsApp)
+- Actie:
+  - Snelle contactknoppen op money pages: `Offerte aanvragen`, `Mail direct`, `Bel nu`.
+  - Prefill-routes vanuit use-cases behouden/uitbreiden (`/contact?material=...&quote=...`).
+  - Event tracking toevoegen op contact-starts (CTA click, mail click, tel click, form submit).
+- DoD:
+  - Alle money pages hebben minimaal 2 snelle contactacties boven de fold.
+  - Eventmeting zichtbaar in analytics voor CTA, mail, tel en form submit.
+
+4. Capaciteitssignaal ("huidige doorlooptijd")
+- Actie:
+  - Klein, centraal beheerd statusblok (bijv. config/ENV driven) op home/contact/pricing.
+  - Copy met realistische bandbreedte i.p.v. harde belofte.
+- DoD:
+  - 1 bron voor lead-time status.
+  - Status zichtbaar op minstens 3 money pages.
+
+5. OG/CTR governance verder harden
+- Actie:
+  - OG-afbeelding-per-route policy documenteren en valideren in checkscript.
+  - Top 20 landingspagina's op unieke OG/Twitter assets houden.
+- DoD:
+  - Geen fallback-spam met dezelfde OG op top pages.
+  - Check faalt bij ontbrekende/ongeldige OG op money pages.
+- Status: Done (2026-03-01).
+
+P2 - Content moat (SEO marktaandeel)
+6. 3 probleemgerichte clusters (transactioneel + lokaal)
+- Cluster A: kapot/vervangonderdeel
+- Cluster B: home/workshop practicals (IKEA, kabelmanagement, organizers)
+- Cluster C: B2B retail/POS/prototyping
+- Actie:
+  - 2 pagina's per cluster (1 pillar + 1 commerciële use case) = 6 nieuwe URL's.
+  - Iedere pagina: FAQ + tabel + bronsectie + duidelijke CTA.
+- DoD:
+  - 6 live pagina's NL + minimaal 3 EN-varianten voor top performers.
+  - Interne links vanuit bestaande relevante blogs/segmenten.
+
+7. Case engine (herhaalbaar format)
+- Actie:
+  - Vast template: uitdaging -> materiaalkeuze -> tijd/kost -> resultaat -> CTA.
+  - Ritme: 2 cases/maand i.p.v. ad hoc.
+- DoD:
+  - Case-template componentized.
+  - Pipeline van volgende 6 cases gepland.
+
+P3 - Verdere optimalisatie
+8. Micro-interacties materials / keuzehulp
+- Actie:
+  - UX-verfijning van materiaalkeuze (benefit matrix, progressive disclosure).
+  - Focus op beginnersbegrip zonder technische overload.
+- DoD:
+  - Lagere bounce op materials.
+  - Meer CTA-clicks naar contact/quote.
+
+9. Keyword governance uitbreiden (niet alleen locaties)
+- Actie:
+  - Money-page keyword checks toevoegen (`check:seo:keywords`) op titels/H1/intro.
+  - Regressiealerts bij verlies van kernintentie.
+- DoD:
+  - Script in CI.
+  - Baseline keyword set versies onder versiebeheer.
+
+---
+
+## 4) 90-dagen uitvoerplan
+
+Week 1-2
+- P0.1 SEO checks/CI stabiel maken
+- P0.2 Hero trust-framework uitrollen
+
+Week 3-5
+- P1.4 Capaciteitssignaal
+- P1.5 OG governance checks
+
+Week 6-10
+- P2.6 6 nieuwe clusterpagina's
+- P2.7 Case-engine + eerste 4 cases
+
+Week 11-12
+- P3.8 materials micro-interacties
+- P3.9 keyword governance uitbreiden
+
+---
+
+## 5) KPI-kader (zakelijk en haalbaar)
+
+Primary KPI's:
+- Organisch verkeer naar money pages
+- CTR op branded + non-branded money queries
+- Contact/quote conversieratio vanaf SEO landingspagina's
+
+Secondary KPI's:
+- Gemiddelde positie op clusterkeywords
+- Assisted conversions (blog -> services/pricing/contact)
+- CTA click-through op hero en contactroutes
+
+Guardrails:
+- Geen daling in build-stabiliteit
+- Geen stijging in indexatieproblemen (Search Console)
+- Geen regressie op Core Web Vitals budget
+
+---
+
+## 6) Beslisregel voor implementatie
+
+Eerst uitvoeren:
+1) P0.1 (checks + CI stabiliteit)
+2) P0.2 (hero trust standaard)
+3) P1.3 (snelle contactroute + tracking, zonder WhatsApp)
+4) P1.5 (OG governance checks)
+
+Pas daarna:
+- Nieuwe contentclusters/cases op schaal publiceren.

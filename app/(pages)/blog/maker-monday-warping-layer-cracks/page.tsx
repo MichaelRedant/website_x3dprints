@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     ],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "Illustratie warping en layer cracks in FDM",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Maker Monday: Warping & layer cracks voorkomen",
     description:
       "Checklist om warping, layer cracks en slechte bridging te vermijden via CAD-ontwerp. PLA, PETG en TPU design rules.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -151,7 +151,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 function SectionDivider() {

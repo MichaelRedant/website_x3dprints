@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["TPU 3D printing", "Filament Friday", "Flexible filament"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "TPU filament guidance by X3DPrints" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "TPU filament guidance by X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Filament Friday #3: TPU 3D printing guide",
     description: "TPU properties, settings and use cases for flexible parts from a local 3D print studio.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -119,7 +119,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

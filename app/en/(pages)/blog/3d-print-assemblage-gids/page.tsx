@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description:
       "Practical assembly guide with alignment pins, inserts, tolerances and a material clearance table.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print assembly guide" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "3D print assembly guide" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print assembly guide: alignment pins & inserts",
     description: "Assembly tips and reference values for printable parts.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -159,7 +159,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Assembly guide with alignment pins, clearance and fastening for 3D prints including reference values.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

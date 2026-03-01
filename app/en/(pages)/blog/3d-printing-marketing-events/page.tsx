@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "3D printing for marketing & events",
     description: "Guide for marketers to use 3D printing strategically: from briefing to logistics and measurement.",
     url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printing marketing props" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "3D printing marketing props" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D printing for marketing & events",
     description: "Plan eye-catching props and awards with a local 3D print partner. Tips on timing, materials and ROI.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -124,7 +124,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: datePublished,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

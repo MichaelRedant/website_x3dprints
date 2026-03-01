@@ -15,10 +15,15 @@ export const EN_METADATA: Metadata = {
     title: "3D printing by segment",
     description: "Find the right 3D printing guidance for prototypes, education, model builders and engineers.",
     url: "https://www.x3dprints.be/en/segments/",
-    images: [{ url: "/images/og-segments.jpg", width: 1200, height: 630, alt: "3D printing segments by X3DPrints" }],
+    images: [{ url: "/images/og-segments-en.svg", width: 1200, height: 630, alt: "3D printing segments by X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "3D printing by segment | X3DPrints",
+    description: "Landing pages for prototypes, schools, makers, marketing and engineering teams.",
+    images: ["/images/og-segments-en.svg"],
+  },
 }
 

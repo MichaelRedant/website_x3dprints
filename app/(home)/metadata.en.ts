@@ -17,7 +17,7 @@ export const EN_METADATA: Metadata = {
     description:
       "From STL/STEP to production-ready prints for business use cases: prototypes, tooling and custom parts in Belgium.",
     url: "https://www.x3dprints.be/en/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630 }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -25,6 +25,6 @@ export const EN_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D printing for businesses in Belgium | X3DPrints",
     description: "B2B 3D printing for prototypes, jigs, fixtures and custom parts in Belgium.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }

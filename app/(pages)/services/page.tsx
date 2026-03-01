@@ -12,10 +12,9 @@ import {
   Box,
   Sparkles,
   Puzzle,
-  CheckCircle2,
   Clock3,
   MapPin,
-  ShieldCheck,
+  Target,
 } from "lucide-react"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
@@ -23,10 +22,12 @@ import CtaBlock from "@/components/CtaBlock"
 import OrganizerCta from "@/components/OrganizerCta"
 import Faq from "@/components/Faq"
 import ShimmerButton from "@/components/ShimmerButton"
+import HeroTrustBar, { type HeroTrustItem } from "@/components/HeroTrustBar"
+import LeadTimeStatus from "@/components/LeadTimeStatus"
+import QuickContactActions from "@/components/QuickContactActions"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
 import { buildFaqPageSchema, buildLocalBusinessSchema, buildOfferCatalog, buildServiceSchema } from "@/lib/seo"
-import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import { servicesFaqByLocale } from "@/content/services-faq"
 
@@ -47,7 +48,7 @@ const NL_METADATA: Metadata = {
     description:
       "3D printen op maat voor klanten in Gent, Aalst en Vlaanderen. Kleine en grotere oplages met heldere timing en materiaaladvies.",
     url: "https://www.x3dprints.be/services/",
-    images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "3D print service in Herzele" }],
+    images: [{ url: "/images/og-services-nl.svg", width: 1200, height: 630, alt: "3D print service in Herzele" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -56,7 +57,7 @@ const NL_METADATA: Metadata = {
     title: "3D print service België",
     description:
       "3D printen op maat vanuit Herzele. Kleine en grotere oplages met materiaaladvies en transparante opvolging.",
-    images: ["/images/portfolio/20241030_080710-1.jpg"],
+    images: ["/images/og-services-nl.svg"],
   },
 }
 
@@ -77,7 +78,7 @@ const EN_METADATA: Metadata = {
     description:
       "Small to large batches, fast follow-up and pragmatic advice on material and design. Part-time studio in Herzele/Ghent.",
     url: "https://www.x3dprints.be/en/services/",
-    images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "3D printing service in Belgium" }],
+    images: [{ url: "/images/og-services-en.svg", width: 1200, height: 630, alt: "3D printing service in Belgium" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -86,7 +87,7 @@ const EN_METADATA: Metadata = {
     title: "3D print service in Belgium",
     description:
       "Small to large batches, fast follow-up and pragmatic advice on material and design. Part-time studio in Herzele/Ghent.",
-    images: ["/images/portfolio/20241030_080710-1.jpg"],
+    images: ["/images/og-services-en.svg"],
   },
 }
 
@@ -367,6 +368,7 @@ const SERVICES_COPY_NL = {
     secondaryLinks: [
       { label: "Portfolio", href: "/portfolio" },
       { label: "Segmenten & cases", href: "/segments" },
+      { label: "Case studies", href: "/cases" },
       { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
     ],
   },
@@ -652,6 +654,7 @@ const SERVICES_COPY_EN = {
     secondaryLinks: [
       { label: "Portfolio", href: "/portfolio" },
       { label: "Segments & cases", href: "/segments" },
+      { label: "Case studies", href: "/cases" },
       { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
     ],
   },
@@ -671,11 +674,10 @@ const SERVICES_COPY_EN = {
   ],
 }
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+type PageProps = { localeOverride?: "nl" | "en" }
 
-export default async function Page({ searchParams }: PageProps) {
-  const params = await searchParams
-  const normalizedLocale = normalizeLocale(params?.lang)
+export default function Page({ localeOverride = "nl" }: PageProps) {
+  const normalizedLocale = localeOverride
   const isEn = normalizedLocale === "en"
   const copy = isEn ? SERVICES_COPY_EN : SERVICES_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
@@ -685,6 +687,7 @@ export default async function Page({ searchParams }: PageProps) {
       { id: "service-approach", label: "How does the service approach work?" },
       { id: "service-use-cases", label: "Which 3D printing use cases do we cover?" },
       { id: "service-quick-paths", label: "What is the fastest route for my project?" },
+      { id: "service-routing", label: "Which route should I take first?" },
       { id: "service-segments", label: "Which segments do we support?" },
       { id: "service-specs", label: "What are the key specs and inclusions?" },
       { id: "service-workflow", label: "What is the workflow from file to delivery?" },
@@ -695,6 +698,7 @@ export default async function Page({ searchParams }: PageProps) {
       { id: "service-approach", label: "Hoe werkt onze aanpak als 3D print service?" },
       { id: "service-use-cases", label: "Welke 3D print-toepassingen ondersteunen we?" },
       { id: "service-quick-paths", label: "Wat is de snelste route voor jouw project?" },
+      { id: "service-routing", label: "Welke route kies je best eerst?" },
       { id: "service-segments", label: "Voor welke segmenten printen we?" },
       { id: "service-specs", label: "Wat zijn de belangrijkste specs en inclusies?" },
       { id: "service-workflow", label: "Hoe loopt de workflow van bestand tot levering?" },
@@ -713,27 +717,16 @@ export default async function Page({ searchParams }: PageProps) {
         { label: "All3DP uitleg van het FDM-proces", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
       ]
   const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"
-  const heroFacts = isEn
+  const heroFacts: HeroTrustItem[] = isEn
     ? [
-        { icon: Clock3, label: "Lead time", value: "Usually a few business days" },
-        { icon: MapPin, label: "Service area", value: "Herzele, Ghent and all of Belgium" },
-        { icon: ShieldCheck, label: "Production style", value: "Direct contact with one maker" },
+        { icon: MapPin, label: "Local studio & region", value: "Herzele, Ghent and all of Belgium" },
+        { icon: Clock3, label: "Response speed", value: "First proposal usually within 24 hours" },
+        { icon: Target, label: "Use-case focus", value: "Prototypes, tooling and functional parts" },
       ]
     : [
-        { icon: Clock3, label: "Doorlooptijd", value: "Meestal enkele werkdagen" },
-        { icon: MapPin, label: "Servicegebied", value: "Herzele, Gent en heel Belgie" },
-        { icon: ShieldCheck, label: "Werkwijze", value: "Rechtstreeks met een maker" },
-      ]
-  const heroTrustPoints = isEn
-    ? [
-        "Local FDM 3D print service in Belgium",
-        "Clear quote route for prototypes and small to large batches",
-        "Material advice for PLA, PETG and TPU",
-      ]
-    : [
-        "Lokale FDM 3D print service Belgie",
-        "Heldere offerteflow voor prototypes en kleine reeksen",
-        "Materiaaladvies voor PLA, PETG en TPU",
+        { icon: MapPin, label: "Lokale studio & regio", value: "Herzele, Gent en heel Belgie" },
+        { icon: Clock3, label: "Reactiesnelheid", value: "Eerste voorstel meestal binnen 24 uur" },
+        { icon: Target, label: "Use-case focus", value: "Prototypes, tooling en functionele onderdelen" },
       ]
   const servicesSectionLead = isEn
     ? "From 3D model printing to small to large batch production: this is the complete service stack for practical, measurable results."
@@ -741,6 +734,60 @@ export default async function Page({ searchParams }: PageProps) {
   const knowledgeSectionIntro = isEn
     ? "These pages support faster decisions around pricing, materials and local production planning."
     : "Deze pagina's helpen je sneller beslissen rond prijs, materiaalkeuze en lokale productieplanning."
+  const routingTitle = isEn ? "Fast route matrix" : "Snelle route-matrix"
+  const routingIntro = isEn
+    ? "Pick the route that matches your request and go straight to the next action."
+    : "Kies de route die bij je vraag past en ga direct naar de volgende stap."
+  const routingHeaders = isEn
+    ? { request: "Request", start: "Best start", next: "Next action" }
+    : { request: "Vraag", start: "Beste start", next: "Volgende actie" }
+  const routingRows = isEn
+    ? [
+        {
+          request: "Prototype or test part",
+          startLabel: "Prototype segment",
+          startHref: "/segments/3d-printing-prototypes",
+          nextLabel: "Request a quote",
+          nextHref: "/contact?topic=prototype-intake",
+        },
+        {
+          request: "Replacement part or repair",
+          startLabel: "Broken part case",
+          startHref: "/blog/kapot-onderdeel-laten-printen",
+          nextLabel: "Start repair intake",
+          nextHref: "/contact?topic=repair-intake",
+        },
+        {
+          request: "Retail display or POS",
+          startLabel: "Retail POS case",
+          startHref: "/blog/retail-pos-3d-printen",
+          nextLabel: "Open pricing",
+          nextHref: "/pricing",
+        },
+      ]
+    : [
+        {
+          request: "Prototype of testonderdeel",
+          startLabel: "Prototype segment",
+          startHref: "/segments/3d-printing-prototypes",
+          nextLabel: "Vraag offerte",
+          nextHref: "/contact?topic=prototype-intake",
+        },
+        {
+          request: "Vervangstuk of repair",
+          startLabel: "Kapot onderdeel case",
+          startHref: "/blog/kapot-onderdeel-laten-printen",
+          nextLabel: "Start repair intake",
+          nextHref: "/contact?topic=repair-intake",
+        },
+        {
+          request: "Retail display of POS",
+          startLabel: "Retail POS case",
+          startHref: "/blog/retail-pos-3d-printen",
+          nextLabel: "Open pricing",
+          nextHref: "/pricing",
+        },
+      ]
 
   const safeUrl = isEn ? "https://www.x3dprints.be/en/services" : "https://www.x3dprints.be/services"
   const faqJsonLd = buildFaqPageSchema({
@@ -752,7 +799,7 @@ export default async function Page({ searchParams }: PageProps) {
   const localBusinessJsonLd = buildLocalBusinessSchema({
     pageUrl: safeUrl,
     description: copy.meta.description,
-    image: "/images/portfolio/20241030_080710-1.jpg",
+    image: "/images/og-services-nl.svg",
     priceRange: "EUR 5 - EUR 49",
     areaServed: copy.areaServed,
     offersName: copy.catalogName,
@@ -783,6 +830,7 @@ export default async function Page({ searchParams }: PageProps) {
                 {copy.hero.intro}
               </p>
               <p className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
+              <LeadTimeStatus locale={normalizedLocale} className="mt-5 max-w-2xl" />
               <div className="mt-6 flex flex-wrap gap-3">
                 <ShimmerButton
                   href={localize("/contact")}
@@ -803,6 +851,12 @@ export default async function Page({ searchParams }: PageProps) {
                   {copy.hero.ctas.blog} <span aria-hidden className="ml-1">-&gt;</span>
                 </Link>
               </div>
+              <QuickContactActions
+                locale={normalizedLocale}
+                trackingCategory="services_hero"
+                showQuote={false}
+                className="mt-4"
+              />
               <ContentTableOfContents
                 title={isEn ? "Contents" : "Inhoud"}
                 items={tocItems}
@@ -815,25 +869,7 @@ export default async function Page({ searchParams }: PageProps) {
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
                   {isEn ? "At a glance" : "In een oogopslag"}
                 </p>
-                <ul className="mt-4 space-y-3">
-                  {heroFacts.map((fact) => (
-                    <li key={fact.label} className="flex gap-3 rounded-2xl border border-slate-200/70 bg-white/75 p-3">
-                      <fact.icon className="mt-0.5 h-5 w-5 text-indigo-600" aria-hidden />
-                      <div>
-                        <p className="text-xs uppercase tracking-wide text-slate-500">{fact.label}</p>
-                        <p className="text-sm font-semibold text-slate-900">{fact.value}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-                <ul className="mt-5 space-y-2 text-sm text-slate-600">
-                  {heroTrustPoints.map((point) => (
-                    <li key={point} className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 text-emerald-600" aria-hidden />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
+                <HeroTrustBar items={heroFacts} className="mt-4" />
               </GlassCard>
             </Reveal>
           </div>
@@ -1000,6 +1036,51 @@ export default async function Page({ searchParams }: PageProps) {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <h2
+              id="service-routing"
+              className="scroll-mt-28 text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl"
+            >
+              {routingTitle}
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm text-slate-600">{routingIntro}</p>
+          </Reveal>
+          <Reveal delay={0.04}>
+            <div className="mt-4 overflow-x-auto rounded-2xl border border-slate-200/70 bg-white/80">
+              <table className="min-w-full text-left text-sm text-slate-700">
+                <caption className="sr-only">{routingTitle}</caption>
+                <thead className="bg-slate-50 text-xs uppercase tracking-wide text-slate-500">
+                  <tr>
+                    <th className="px-4 py-3">{routingHeaders.request}</th>
+                    <th className="px-4 py-3">{routingHeaders.start}</th>
+                    <th className="px-4 py-3">{routingHeaders.next}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {routingRows.map((row) => (
+                    <tr key={row.request} className="border-t border-slate-200/60">
+                      <td className="px-4 py-3 font-semibold text-slate-900">{row.request}</td>
+                      <td className="px-4 py-3">
+                        <Link href={localize(row.startHref)} className="font-semibold text-indigo-600 hover:text-indigo-500">
+                          {row.startLabel}
+                        </Link>
+                      </td>
+                      <td className="px-4 py-3">
+                        <Link href={localize(row.nextHref)} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                          {row.nextLabel}
+                        </Link>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </Reveal>
         </div>
       </section>
 

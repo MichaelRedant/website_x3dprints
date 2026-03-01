@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description:
       "Hartdecor en gepersonaliseerde prints voor Valentijn 2026 met materiaaladvies en snelle productie.",
     url: "https://www.x3dprints.be/segments/3d-printing-valentijn/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printing voor Valentijn cadeaus" }],
+    images: [{ url: "/images/og-segments-nl.svg", width: 1200, height: 630, alt: "3D printing voor Valentijn cadeaus" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "3D printing voor Valentijn 2026",
     description:
       "Gepersonaliseerde valentijnprints voor 2026 met duidelijke materiaalkeuze en timing.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-segments-nl.svg"],
   },
 }
 
@@ -148,7 +148,7 @@ const serviceOffers: SchemaOfferInput[] = [
 const localBusinessJsonLd = buildLocalBusinessSchema({
   pageUrl,
   description: pageDescription,
-  image: "/Logo.webp",
+  image: "/images/og-segments-nl.svg",
   areaServed: "Gent en Vlaanderen",
   priceRange: "EUR 5 - EUR 49",
 })

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "Use Case Dinsdag",
       "low-volume productie",
     ],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Productontwikkeling prototypes" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "Productontwikkeling prototypes" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Use Case Dinsdag: Productontwikkeling 3D printen",
     description: "Van idee naar marktklare prototypes met PLA, PETG en hybride constructies.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -176,7 +176,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 function SectionDivider() {

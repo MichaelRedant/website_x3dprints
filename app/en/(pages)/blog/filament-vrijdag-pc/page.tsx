@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["polycarbonate 3D printing", "PC filament settings", "PC filament drying", "Filament Friday"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Polycarbonate 3D printing advice by X3DPrints" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "Polycarbonate 3D printing advice by X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Filament Friday: polycarbonate (PC) 3D printing",
     description: "Pros/cons, drying, settings and cost considerations for PC filament.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -128,7 +128,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

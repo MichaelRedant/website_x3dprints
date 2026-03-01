@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "404 | Pagina niet gevonden",
     description: "Deze pagina bestaat niet. Terug naar home of vraag een offerte.",
     url: "https://www.x3dprints.be/404",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630 }],
     siteName: "X3DPrints",
     locale: "nl_BE",
   },

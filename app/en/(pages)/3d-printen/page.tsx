@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description:
       "3D printing for marketing materials, tabletop runs and consumers. Local 3D printing from Herzele (between Ghent and Aalst) with a clear workflow and material advice.",
     url: "https://www.x3dprints.be/en/3d-printen/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printing landing" }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630, alt: "3D printing landing" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Price ranges per part, explanation of the cost blocks and tips to optimise your 3D printing budget.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print price per part" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "3D print price per part" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print price per part: single vs batch",
     description: "Price per part explained with a table and optimisation tips.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -148,7 +148,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Breakdown of setup costs, print time and scale with a table for price per part and optimisation tips.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

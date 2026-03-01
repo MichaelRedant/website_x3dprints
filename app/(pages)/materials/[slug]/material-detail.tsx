@@ -30,6 +30,7 @@ type LocalizedMaterialArgs = {
 
 export function getMaterialDetailMetadata({ slug, locale }: LocalizedMaterialArgs): Metadata {
   const isEn = locale === "en"
+  const ogImage = isEn ? "/images/og-materials-en.svg" : "/images/og-materials-nl.svg"
   const detail = isEn
     ? MATERIAL_DETAILS_BY_SLUG_EN[slug] ?? MATERIAL_DETAILS_BY_SLUG[slug]
     : MATERIAL_DETAILS_BY_SLUG[slug]
@@ -65,9 +66,9 @@ export function getMaterialDetailMetadata({ slug, locale }: LocalizedMaterialArg
       url: canonical,
       siteName: "X3DPrints",
       locale: isEn ? "en_BE" : "nl_BE",
-      images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: `${detail.seo.title} by X3DPrints` }],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: `${detail.seo.title} by X3DPrints` }],
     },
-    twitter: { card: "summary_large_image" },
+    twitter: { card: "summary_large_image", images: [ogImage] },
   }
 }
 

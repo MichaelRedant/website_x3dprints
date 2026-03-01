@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       "marketing displays 3D printen",
       "Use Case Dinsdag",
     ],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Event props en expo displays" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "Event props en expo displays" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Use Case Dinsdag: 3D printen voor evenementen",
     description:
       "Wanneer gebruik je PLA Matte, Marble of PETG voor branding, props en standbouwers? Deze gids geeft antwoorden.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -181,7 +181,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 function SectionDivider() {

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["Finishing 3D prints", "Sanding 3D prints", "Painting 3D prints"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Finishing 3D prints" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "Finishing 3D prints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Finishing Friday: sanding, priming and painting 3D prints",
     description: "Realistic finishing workflow plus why many FDM jobs do not need paint.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -93,7 +93,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

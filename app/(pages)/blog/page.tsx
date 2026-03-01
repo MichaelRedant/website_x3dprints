@@ -18,7 +18,7 @@ const NL_METADATA: Metadata = {
     description:
       "Leer hoe je 3D print projecten plant: kostenraming, materiaalkeuze, designchecklists en Bambu X1C instellingen. Rechtstreekse links naar prijscalculator en materialen.",
     url: "https://www.x3dprints.be/blog/",
-    images: [{ url: "/images/og-blog.jpg", width: 1200, height: 630, alt: "3D print blog X3DPrints" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "3D print blog X3DPrints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -26,7 +26,7 @@ const NL_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D print blog & kennisbank | X3DPrints",
     description: "Strategische content over 3D print kosten, materiaalkeuze, Bambu X1C instellingen en ontwerpaanpak.",
-    images: ["/images/og-blog.jpg"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 

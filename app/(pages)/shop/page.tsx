@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description:
       "Actuele collectie met persoonlijke afwerking, live voorraad en directe ondersteuning.",
     url: `${SITE.url}/shop/`,
-    images: [{ url: SITE.ogImage, width: 1200, height: 630 }],
+    images: [{ url: "/images/og-shop-nl.svg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print shop in kleine oplage | X3DPrints",
     description: "Actuele 3D print collectie met live voorraad, Mollie-betaling en persoonlijke service.",
-    images: [SITE.ogImage],
+    images: ["/images/og-shop-nl.svg"],
   },
 }
 

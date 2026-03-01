@@ -39,14 +39,14 @@ export const metadata: Metadata = {
     siteName: "X3DPrints",
     type: "website",
     locale: "nl_BE",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "FAQ 3D printen" }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630, alt: "FAQ 3D printen" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FAQ 3D printen | X3DPrints",
     description:
       "Antwoorden op vragen over 3D printen, materialen en verzending. Kort en duidelijk.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home.svg"],
   },
   keywords: [
     "FAQ 3D printen",

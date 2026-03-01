@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "Praktische gids voor Halloween en herfstprints met duidelijke materiaalkeuze en planning.",
     url: canonical,
     type: "article",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte Halloween decoratie" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "3D geprinte Halloween decoratie" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "3D printen voor herfst en Halloween 2026",
     description:
       "Gids voor Halloween 3D prints met materiaalkeuze, technische tips en planningschecklist.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -138,7 +138,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
   inLanguage: "nl-BE",
 })
 

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "PLA matte miniatures",
       "Use Case Dinsdag",
     ],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte tabletop terrain en props" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "3D geprinte tabletop terrain en props" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Use Case Dinsdag: Tabletop & props 3D printen",
     description:
       "FDM miniaturen en cosplay onderdelen met PLA Matte, Marble, Silk en PETG. Inclusief painting- en splittingtips plus Maker Monday verwijzingen.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -207,7 +207,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"

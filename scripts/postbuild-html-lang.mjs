@@ -5,7 +5,6 @@ const ROOT = process.cwd()
 const OUT_DIR = path.join(ROOT, "out")
 const SITE_URL = "https://www.x3dprints.be"
 const SITE_HOST = "www.x3dprints.be"
-const TIMELESS_OG_IMAGE = `${SITE_URL}/Logo.webp`
 const META_TAG_RE = /<meta\b[^>]*>/gi
 const ANCHOR_RE = /<a\b[^>]*href=(['"])(.*?)\1[^>]*>/gi
 const TITLE_RE = /<title\b[^>]*>([\s\S]*?)<\/title>/i
@@ -42,12 +41,6 @@ function extractTagAttr(tag, attrName) {
   const attrRegex = new RegExp(`\\s${attrName}\\s*=\\s*(['"])(.*?)\\1`, "i")
   const match = attrRegex.exec(tag)
   return match?.[2] ?? null
-}
-
-function isOgImageMetaTag(tag) {
-  const property = extractTagAttr(tag, "property")?.toLowerCase()
-  const name = extractTagAttr(tag, "name")?.toLowerCase()
-  return property === "og:image" || name === "twitter:image"
 }
 
 function setTagAttr(tag, attrName, value) {
@@ -276,7 +269,6 @@ async function main() {
   const existingPaths = buildExistingPathSet(outFiles)
   let changed = 0
   let changedLang = 0
-  let changedOg = 0
   let changedLinks = 0
   let changedSnippets = 0
 
@@ -314,10 +306,6 @@ async function main() {
 
       let patched = tag
 
-      if (isOgImageMetaTag(tag)) {
-        patched = setTagAttr(patched, "content", TIMELESS_OG_IMAGE)
-      }
-
       if (name === "description" || property === "og:description" || name === "twitter:description") {
         patched = setTagAttr(patched, "content", normalizedDescription)
       }
@@ -328,7 +316,6 @@ async function main() {
 
       if (patched !== tag) {
         changedSnippets += 1
-        if (isOgImageMetaTag(tag)) changedOg += 1
       }
       return patched
     })
@@ -360,7 +347,7 @@ async function main() {
   }
 
   console.log(
-    `[postbuild:html-lang] OK - patched ${changed} HTML files (lang: ${changedLang}, og/twitter tags: ${changedOg}, locale links: ${changedLinks}, seo snippets: ${changedSnippets})`,
+    `[postbuild:html-lang] OK - patched ${changed} HTML files (lang: ${changedLang}, locale links: ${changedLinks}, seo snippets: ${changedSnippets})`,
   )
 }
 

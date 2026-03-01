@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       "Handleiding voor marketeers om 3D printing strategisch in te zetten: van briefing tot logistiek en metingen.",
   url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printing marketing props" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "3D printing marketing props" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D printing voor marketing & events",
     description: "Plan eye-catching props en awards met een lokale 3D print partner. Tips voor timing, materialen en ROI.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -106,7 +106,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Strategische gids voor marketeers en event teams die 3D printing willen inzetten voor props, awards en merchandising.",
   datePublished,
   dateModified,
-  image: "/images/og-home.jpg",
+  image: "/images/og-home-nl.svg",
   inLanguage: "nl-BE",
 })
 

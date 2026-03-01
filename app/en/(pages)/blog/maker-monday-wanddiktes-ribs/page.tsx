@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["Maker Monday", "Wall thickness", "FDM design"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Wall thickness and ribs" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "Wall thickness and ribs" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Maker Monday #2: wall thickness and ribs",
     description: "Design rules for strong FDM parts without wasting material on infill.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -87,7 +87,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

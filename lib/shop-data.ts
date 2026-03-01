@@ -88,7 +88,7 @@ function mapBffProduct(product: BffProduct): ShopProduct {
     categories,
     priceEur: product.price?.amount ?? 0,
     image: {
-      url: product.image?.url ?? "/images/og-home.jpg",
+      url: product.image?.url ?? "/images/og-home.svg",
       alt: toLocalizedText(imageAltNl, imageAltEn),
     },
     availability: toAvailability(product.availability),

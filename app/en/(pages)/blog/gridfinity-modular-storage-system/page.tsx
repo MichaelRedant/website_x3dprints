@@ -34,7 +34,7 @@ const references = [
 const GRID_IMAGES = [
   { src: "/images/organizers/modugrid/ModuGrid1.jpg", alt: "Gridfinity drawer overview (top view)", width: 1600, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid2.jpg", alt: "Gridfinity drawer with screws and bits", width: 1600, height: 900 },
-  { src: "/images/organizers/modugrid/ModuGrid3.webp", alt: "Gridfinity bins with labels and anti-slip", width: 1600, height: 900 },
+  { src: "/images/og-blog-en.svg", alt: "Gridfinity bins with labels and anti-slip", width: 1600, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid4.webp", alt: "Gridfinity bins for desk tools", width: 1600, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid5.webp", alt: "Gridfinity detail with label edge", width: 1600, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid6.webp", alt: "Gridfinity insert with anti-slip", width: 1600, height: 900 },
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["gridfinity", "tool organizer", "packout inlay", "custom bins"],
-    images: [{ url: "/images/organizers/modugrid/ModuGrid3.webp", width: 1200, height: 630, alt: "Gridfinity bins made to fit" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "Gridfinity bins made to fit" }],
   },
   twitter: { card: "summary_large_image" },
 }
@@ -101,7 +101,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "/images/organizers/modugrid/ModuGrid3.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

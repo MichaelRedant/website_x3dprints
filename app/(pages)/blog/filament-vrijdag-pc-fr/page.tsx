@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "Filament Vrijdag",
     ],
     images: [
-      { url: "/images/og-home.jpg", width: 1200, height: 630, alt: "PC FR 3D print advies" },
+      { url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "PC FR 3D print advies" },
     ],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Filament Vrijdag: PC FR (UL94 V-0) filament",
     description:
       "Wanneer kies je PC FR? Tips over drogen, printen, design en wanneer PC of PETG beter past.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -110,7 +110,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 type PageProps = { searchParams?: Promise<Record<string, string | string[] | undefined>>; params?: Promise<Record<string, string | string[] | undefined>> }

@@ -3,7 +3,6 @@ import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
-import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import OrganizerCta from "@/components/OrganizerCta"
 import { buildFaqPageSchema } from "@/lib/seo"
@@ -81,7 +80,7 @@ const NL_METADATA: Metadata = {
     title: "3D printing per segment",
     description: "Vind de juiste 3D print informatie voor prototypes, onderwijs, modelbouwers en engineers.",
     url: "https://www.x3dprints.be/segments/",
-    images: [{ url: "/images/og-segments.jpg", width: 1200, height: 630, alt: "3D printing segmenten van X3DPrints" }],
+    images: [{ url: "/images/og-segments-nl.svg", width: 1200, height: 630, alt: "3D printing segmenten van X3DPrints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -89,7 +88,7 @@ const NL_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D printing per segment | X3DPrints",
     description: "Segmenten voor prototypes, onderwijs, modelbouwers en engineers met duidelijke CTA's.",
-    images: ["/images/og-segments.jpg"],
+    images: ["/images/og-segments-nl.svg"],
   },
 }
 
@@ -108,7 +107,7 @@ const EN_METADATA: Metadata = {
     title: "3D printing by segment",
     description: "Find the right 3D printing guidance for prototypes, education, model builders and engineers.",
     url: "https://www.x3dprints.be/en/segments/",
-    images: [{ url: "/images/og-segments.jpg", width: 1200, height: 630, alt: "3D printing segments by X3DPrints" }],
+    images: [{ url: "/images/og-segments-en.svg", width: 1200, height: 630, alt: "3D printing segments by X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -116,7 +115,7 @@ const EN_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D printing by segment | X3DPrints",
     description: "Segment guidance for prototypes, education, model builders and engineers with clear CTAs.",
-    images: ["/images/og-segments.jpg"],
+    images: ["/images/og-segments-en.svg"],
   },
 }
 
@@ -140,6 +139,7 @@ const SEGMENTS_COPY_NL: SegmentCopy = {
     chips: [
       { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       { label: "Lees de blog", href: "/blog" },
+      { label: "Bekijk cases", href: "/cases" },
     ],
   },
   sections: {
@@ -404,6 +404,7 @@ const SEGMENTS_COPY_EN: SegmentCopy = {
     chips: [
       { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       { label: "Read the blog", href: "/blog" },
+      { label: "View cases", href: "/cases" },
     ],
   },
   sections: {
@@ -653,11 +654,10 @@ const SEGMENTS_COPY_EN: SegmentCopy = {
   },
 }
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+type PageProps = { localeOverride?: "nl" | "en" }
 
-export default async function SegmentsPage({ searchParams }: PageProps) {
-  const params = await searchParams
-  const normalizedLocale = normalizeLocale(params?.lang)
+export default function SegmentsPage({ localeOverride = "nl" }: PageProps) {
+  const normalizedLocale = localeOverride
   const isEn = normalizedLocale === "en"
   const copy = normalizedLocale === "en" ? SEGMENTS_COPY_EN : SEGMENTS_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
@@ -666,6 +666,7 @@ export default async function SegmentsPage({ searchParams }: PageProps) {
     ? [
         { id: "segments-core", label: "Core 3D printing segments" },
         { id: "segments-seasonal", label: "Seasonal and campaign segments" },
+        { id: "segments-routing", label: "Which segment path fits your request?" },
         { id: "segments-interlinks", label: "How are segments linked?" },
         { id: "segments-faq", label: "Segment FAQ" },
         { id: "segments-sources", label: "Sources and references" },
@@ -673,6 +674,7 @@ export default async function SegmentsPage({ searchParams }: PageProps) {
     : [
         { id: "segments-core", label: "Kernsegmenten voor 3D printen" },
         { id: "segments-seasonal", label: "Seasonal en campagne-segmenten" },
+        { id: "segments-routing", label: "Welke segmentroute past bij jouw vraag?" },
         { id: "segments-interlinks", label: "Hoe linken segmenten onderling?" },
         { id: "segments-faq", label: "Segment FAQ" },
         { id: "segments-sources", label: "Bronnen en referenties" },
@@ -714,6 +716,60 @@ export default async function SegmentsPage({ searchParams }: PageProps) {
     mainEntityOfPage: pageUrl,
     items: copy.faq.items.map((item) => ({ q: item.q, a: item.a })),
   })
+  const routingTitle = isEn ? "Segment route matrix" : "Segment route-matrix"
+  const routingIntro = isEn
+    ? "Use this matrix to choose the best segment path and move directly to the next action."
+    : "Gebruik deze matrix om de beste segmentroute te kiezen en meteen naar de volgende actie te gaan."
+  const routingHeaders = isEn
+    ? { request: "Request", segment: "Best segment", next: "Next action" }
+    : { request: "Vraag", segment: "Beste segment", next: "Volgende actie" }
+  const routingRows = isEn
+    ? [
+        {
+          request: "Need fast prototype iterations",
+          segmentLabel: "3D printing for prototypes",
+          segmentHref: "/segments/3d-printing-prototypes",
+          nextLabel: "Request prototype intake",
+          nextHref: "/contact?topic=prototype-intake",
+        },
+        {
+          request: "Need campaign props or displays",
+          segmentLabel: "3D printing for marketing and events",
+          segmentHref: "/segments/3d-printing-marketing",
+          nextLabel: "View retail POS case",
+          nextHref: "/blog/retail-pos-3d-printen",
+        },
+        {
+          request: "Need hobby or tabletop parts",
+          segmentLabel: "3D printing for makers and hobbyists",
+          segmentHref: "/segments/3d-printing-makers",
+          nextLabel: "Open material tool",
+          nextHref: "/materials#material-suggestion-tool",
+        },
+      ]
+    : [
+        {
+          request: "Snelle prototype-iteraties nodig",
+          segmentLabel: "3D printing voor prototypes",
+          segmentHref: "/segments/3d-printing-prototypes",
+          nextLabel: "Vraag prototype intake",
+          nextHref: "/contact?topic=prototype-intake",
+        },
+        {
+          request: "Campagneprops of displays nodig",
+          segmentLabel: "3D printing voor marketing en events",
+          segmentHref: "/segments/3d-printing-marketing",
+          nextLabel: "Bekijk retail POS case",
+          nextHref: "/blog/retail-pos-3d-printen",
+        },
+        {
+          request: "Hobby of tabletop onderdelen nodig",
+          segmentLabel: "3D printing voor makers en hobbyisten",
+          segmentHref: "/segments/3d-printing-makers",
+          nextLabel: "Open materiaaltool",
+          nextHref: "/materials#material-suggestion-tool",
+        },
+      ]
 
   return (
     <main className="relative overflow-clip px-4 pb-24 pt-12 sm:px-6 lg:px-8">
@@ -834,6 +890,42 @@ export default async function SegmentsPage({ searchParams }: PageProps) {
             ) : null}
           </GlassCard>
         ))}
+      </section>
+
+      <section id="segments-routing" className="scroll-mt-28 mx-auto mt-12 max-w-5xl space-y-4 px-2">
+        <GlassCard className="p-6 sm:p-8">
+          <h2 className="text-2xl font-semibold text-slate-900">{routingTitle}</h2>
+          <p className="mt-2 text-sm text-slate-700">{routingIntro}</p>
+          <div className="mt-4 overflow-x-auto rounded-2xl border border-slate-200/70 bg-white/80">
+            <table className="min-w-full text-left text-sm text-slate-700">
+              <caption className="sr-only">{routingTitle}</caption>
+              <thead className="bg-slate-50 text-xs uppercase tracking-wide text-slate-500">
+                <tr>
+                  <th className="px-4 py-3">{routingHeaders.request}</th>
+                  <th className="px-4 py-3">{routingHeaders.segment}</th>
+                  <th className="px-4 py-3">{routingHeaders.next}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {routingRows.map((row) => (
+                  <tr key={row.request} className="border-t border-slate-200/60">
+                    <td className="px-4 py-3 font-semibold text-slate-900">{row.request}</td>
+                    <td className="px-4 py-3">
+                      <Link href={localize(row.segmentHref)} className="font-semibold text-indigo-600 hover:text-indigo-500">
+                        {row.segmentLabel}
+                      </Link>
+                    </td>
+                    <td className="px-4 py-3">
+                      <Link href={localize(row.nextHref)} className="font-semibold text-emerald-600 hover:text-emerald-700">
+                        {row.nextLabel}
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </GlassCard>
       </section>
 
       <section id="segments-interlinks" className="scroll-mt-28 mx-auto mt-10 max-w-5xl space-y-4 px-2">

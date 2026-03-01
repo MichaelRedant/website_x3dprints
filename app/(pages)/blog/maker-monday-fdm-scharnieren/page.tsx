@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     ],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "FDM scharnier ontwerp tips van X3DPrints",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Maker Monday: FDM scharnieren die niet breken",
     description:
       "Stap-voor-stap handleiding voor sterke 3D geprinte scharnieren. Materiaal, wanddikte, pinnen, ribs en nabewerking.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -171,7 +171,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 function SectionDivider() {

@@ -94,6 +94,7 @@ async function main() {
     const html = await fs.readFile(htmlFile, "utf8")
     const currentRoute = routeFromHtmlFile(htmlFile)
 
+    ANCHOR_RE.lastIndex = 0
     let match
     while ((match = ANCHOR_RE.exec(html)) !== null) {
       const fullAnchor = match[0]

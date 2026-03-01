@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["tool organizers", "gridfinity alternatief", "Packout inlay", "TSTAK insert", "custom toolbox insert"],
-    images: [{ url: "/images/organizers/modugrid/ModuGrid2.jpg", width: 1200, height: 630, alt: "Tool organizers op maat" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "Tool organizers op maat" }],
   },
   twitter: { card: "summary_large_image" },
 }
@@ -61,7 +61,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "/images/organizers/modugrid/ModuGrid2.jpg",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

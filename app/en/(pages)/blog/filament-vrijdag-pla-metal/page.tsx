@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["PLA Metal", "Metallic filament", "Filament Friday", "3D print material"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "PLA Metal filament guidance by X3DPrints" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "PLA Metal filament guidance by X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Filament Friday: PLA Metal 3D printing",
     description: "PLA Metal settings and applications for props, industrial aesthetics and design prints.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -130,7 +130,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Learn what to send, how planning works and how to speed up repeat orders.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printing on demand" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "3D printing on demand" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D printing on demand",
     description: "Order flow with intake, production milestones and delivery options.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -116,7 +116,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

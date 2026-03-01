@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description:
       "Praktische vergelijking met gebruiksscenario's, materiaalmatrix en snelle beslisregels.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "PLA vs PETG vergelijking" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "PLA vs PETG vergelijking" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PLA vs PETG: welk materiaal kies je?",
     description: "Materialengids met duidelijke keuzehulp voor jouw 3D print.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -124,7 +124,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Praktische vergelijking van PLA en PETG voor esthetiek, sterkte, hitte en kost.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

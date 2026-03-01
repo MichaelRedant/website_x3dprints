@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     tags: ["PLA 3D printen", "Filament Vrijdag", "3D print materiaal"],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "PLA filament advies door X3DPrints",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Filament Vrijdag #1: PLA 3D Printen gids",
     description: "PLA eigenschappen, beperkingen, instellingen en alternatieven van een lokale 3D print studio.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -206,7 +206,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Filament Vrijdag #1 van X3DPrints. Leer wanneer PLA werkt, wanneer het faalt, welke varianten bestaan en hoe je instellingen optimaliseert.",
   datePublished: publishedDate,
   dateModified,
-  image: "/images/og-home.jpg",
+  image: "/images/og-home-nl.svg",
 })
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 9 februari 2026"

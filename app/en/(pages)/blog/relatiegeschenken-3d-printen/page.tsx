@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     url: canonical,
     type: "article",
     publishedTime: publishedDate,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printed corporate gifts" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "3D printed corporate gifts" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D printed corporate gifts | B2B",
     description: "Custom keychains, desk items and awards in Silk/Matte/PETG. Material and delivery tips.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -119,7 +119,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

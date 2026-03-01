@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Learn how to print razor-sharp D&D and Warhammer minis: material choice, detail, supports, primer, painting and safe delivery.",
     url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printed miniatures and dice tower" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "3D printed miniatures and dice tower" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D printing miniatures for tabletop gaming",
     description: "From STL to printed minis: detail, supports, curing and painting tips for D&D/Warhammer.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -110,7 +110,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: datePublished,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

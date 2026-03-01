@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "Use Case Dinsdag",
       "PLA scholen",
     ],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printen in het onderwijs" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "3D printen in het onderwijs" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Use Case Dinsdag: 3D printen voor scholen",
     description:
       "Gids voor veilige materialen, grote prints en low-failure workflows in het onderwijs. Inclusief checklist en samenwerkingsopties.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -215,7 +215,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 function SectionDivider() {

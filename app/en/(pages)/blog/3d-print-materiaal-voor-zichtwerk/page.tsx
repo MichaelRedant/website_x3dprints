@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description:
       "Compare display materials with a matrix, scenarios and targeted CTAs to materials and pricing.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print material for display" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "3D print material for display" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print material for display: PLA Matte vs Silk",
     description: "Material guide for display and design prints.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -170,7 +170,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Display material guide comparing PLA Matte, Silk, Marble, Metal and PETG with a practical matrix.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

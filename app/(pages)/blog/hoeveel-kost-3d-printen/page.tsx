@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description:
       "Praktische kostengids met voorbeelden, prijsfactoren en directe links naar pricing, materialen en offerte voor snelle prijsinschatting.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Hoeveel kost 3D printen?" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "Hoeveel kost 3D printen?" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print prijs in 2026",
     description: "Kostengids met concrete kostenfactoren en praktische beslisregels.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -143,7 +143,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Praktische kostengids over materiaal, printtijd, complexiteit en logistiek met concrete prijsvoorbeelden.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

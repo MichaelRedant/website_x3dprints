@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "Ontwerpen die printbaar zijn: Fusion 360 voor precisie, Tinkercad voor snelle iteraties en af en toe Blender voor organische vormen.",
     url: "https://www.x3dprints.be/3d-modelleren/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },

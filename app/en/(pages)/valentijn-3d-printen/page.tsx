@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "Valentine 2026 gifts with gloss or glow. Silk/Matte/Translucent PLA, LED cut-outs and delivery options in Flanders.",
     url: "https://www.x3dprints.be/en/valentijn-3d-printen/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630 }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },

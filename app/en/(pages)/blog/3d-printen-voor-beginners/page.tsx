@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description:
       "Step-by-step guide to getting your first 3D print made: materials, files, examples and guidance from Herzele.",
     url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printing for beginners" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "3D printing for beginners" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "3D printing for beginners",
     description:
       "Practical guide for anyone starting with 3D printing. Includes tips, mistakes to avoid and coaching options.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -89,7 +89,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "/images/portfolio/20241024_081839-1.jpg",
+  image: "/images/og-viewer-en.svg",
   inLanguage: "en-BE",
 })
 

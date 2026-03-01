@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Laat eye-catching props en campagne-assets printen met korte lijnen en duidelijke timing.",
     url: "https://www.x3dprints.be/segments/3d-printing-marketing/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printing voor marketing en events" }],
+    images: [{ url: "/images/og-segments-nl.svg", width: 1200, height: 630, alt: "3D printing voor marketing en events" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D printing voor marketing en events",
     description: "Campagne-assets met snelle productie en heldere opvolging.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-segments-nl.svg"],
   },
 }
 
@@ -136,7 +136,7 @@ const serviceOffers: SchemaOfferInput[] = [
 const localBusinessJsonLd = buildLocalBusinessSchema({
   pageUrl,
   description: pageDescription,
-  image: "/Logo.webp",
+  image: "/images/og-segments-nl.svg",
   areaServed: "Gent en Vlaanderen",
   priceRange: "EUR 5 - EUR 49",
 })

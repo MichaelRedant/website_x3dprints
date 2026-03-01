@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description:
       "Design guide for printable geometry with rules for wall thickness, snap-fits, tolerances and handoff.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Design a 3D printable model" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "Design a 3D printable model" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How do you design a 3D printable model?",
     description: "From CAD to print with practical design rules that reduce failed prints.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -135,7 +135,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

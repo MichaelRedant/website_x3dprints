@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Klasprojecten, STEM-modellen en educatieve batches met praktische materiaalkeuze.",
     url: "https://www.x3dprints.be/segments/3d-printing-scholen/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printing voor scholen" }],
+    images: [{ url: "/images/og-segments-nl.svg", width: 1200, height: 630, alt: "3D printing voor scholen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "3D printing voor scholen",
     description:
       "Educatieve 3D prints met batchaanpak, materiaaladvies en duidelijke opvolging.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-segments-nl.svg"],
   },
 }
 
@@ -156,7 +156,7 @@ const serviceOffers: SchemaOfferInput[] = [
 const localBusinessJsonLd = buildLocalBusinessSchema({
   pageUrl,
   description: pageDescription,
-  image: "/Logo.webp",
+  image: "/images/og-segments-nl.svg",
   areaServed: "Gent en Vlaanderen",
   priceRange: "EUR 5 - EUR 49",
 })

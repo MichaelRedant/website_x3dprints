@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Vergelijk zichtwerk-materialen met een matrix, scenario's en gerichte CTA's naar materialen en pricing.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print materiaal voor zichtwerk" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "3D print materiaal voor zichtwerk" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print materiaal voor zichtwerk: PLA Matte vs Silk",
     description: "Materiaalgids voor zichtwerk en designprints.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -163,7 +163,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Vergelijk zichtwerk-materialen met een matrix, scenario's en beslisregels voor designprints.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

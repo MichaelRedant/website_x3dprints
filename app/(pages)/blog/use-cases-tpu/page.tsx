@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     tags: ["TPU 3D printen", "Use cases", "Filament Vrijdag"],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "TPU use cases door X3DPrints",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Use cases: hoe klanten TPU in de praktijk inzetten",
     description:
       "Concrete TPU projecten: van sensorhoezen tot retailgrips. Zie hoe we flexibele prints ontwerpen, testen en leveren.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -141,7 +141,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"

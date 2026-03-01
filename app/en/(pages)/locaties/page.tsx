@@ -77,7 +77,7 @@ export default function LocationsPageEn() {
   const localBusinessJsonLd = buildLocalBusinessSchema({
     description: pageDescription,
     pageUrl: canonical,
-    image: "/images/og-home.jpg",
+    image: "/images/og-home.svg",
     areaServed: "Ghent, Herzele, Aalst and surroundings",
     priceRange: "EUR 0 - EUR 5",
   })

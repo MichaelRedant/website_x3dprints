@@ -147,6 +147,7 @@ const breadcrumbNl = buildBreadcrumbSchema({
     { name: "Portfolio", url: `${SITE.url}/portfolio/` },
     { name: "Pricing", url: `${SITE.url}/pricing/` },
     { name: "Contact", url: `${SITE.url}/contact/` },
+    { name: "Cases", url: `${SITE.url}/cases/` },
     { name: "Blog", url: `${SITE.url}/blog/` },
   ],
 })
@@ -161,6 +162,7 @@ const breadcrumbEn = buildBreadcrumbSchema({
     { name: "Portfolio", url: `${SITE.url}/en/portfolio/` },
     { name: "Pricing", url: `${SITE.url}/en/pricing/` },
     { name: "Contact", url: `${SITE.url}/en/contact/` },
+    { name: "Cases", url: `${SITE.url}/en/cases/` },
     { name: "Blog", url: `${SITE.url}/en/blog/` },
   ],
 })

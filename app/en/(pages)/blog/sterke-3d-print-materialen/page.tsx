@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description:
       "Compare PLA Tough+, PETG, TPU and PC for functional parts with decision rules and fast CTAs.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Strong 3D print materials" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "Strong 3D print materials" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Strong 3D prints: material choice for use",
     description: "Material choice for functional 3D parts in one overview.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -167,7 +167,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Functional material guide comparing PLA Tough+, PETG, TPU and PC with decision rules and a table.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

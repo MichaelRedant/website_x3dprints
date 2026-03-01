@@ -134,6 +134,7 @@ async function main() {
     const html = await fs.readFile(htmlFile, "utf8")
     const currentRoute = routeFromHtmlFile(htmlFile)
 
+    LINK_RE.lastIndex = 0
     let match
     while ((match = LINK_RE.exec(html)) !== null) {
       const pathname = normalizeInternalPath(match[1], currentRoute)

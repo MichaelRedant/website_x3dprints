@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description:
       "Upload een STL, OBJ of GLB en bekijk meteen hoe je print eruitziet. Privacyvriendelijk, performant en in de stijl van X3DPrints.",
     url: "https://www.x3dprints.be/viewer/",
-    images: [{ url: "/images/portfolio/20241024_081839-1.jpg", width: 1200, height: 630, alt: "3D viewer" }],
+    images: [{ url: "/images/og-viewer-nl.svg", width: 1200, height: 630, alt: "3D viewer" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Realtime 3D Model Viewer voor STL's",
     description: "Upload STL/OBJ/GLB en check je model direct in de browser met privacy en snelle interactie.",
-    images: ["/images/portfolio/20241024_081839-1.jpg"],
+    images: ["/images/og-viewer-nl.svg"],
   },
 }
 

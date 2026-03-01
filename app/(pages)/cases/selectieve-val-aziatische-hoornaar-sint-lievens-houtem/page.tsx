@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "X3DPrints",
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-cases-nl.svg",
         width: 1200,
         height: 630,
         alt: "Case Study - Selectieve val tegen Aziatische hoornaar door X3DPrints",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Case Study: Selectieve Val tegen Aziatische Hoornaar",
     description: "Lokale impact met 3D-printen: van ontwerp tot schaalbare productie en communicatie.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-cases-nl.svg"],
   },
 }
 
@@ -155,20 +155,20 @@ const articleJsonLd = {
     url: "https://www.x3dprints.be",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.x3dprints.be/og-x3dprints.jpg",
+      url: "https://www.x3dprints.be/images/og-default.svg",
     },
   },
   mainEntityOfPage: canonical,
   url: canonical,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-cases-nl.svg",
   inLanguage: "nl-BE",
 }
 
 const imageObjectJsonLd = {
   "@context": "https://schema.org",
   "@type": "ImageObject",
-  contentUrl: `${SITE.url}/Logo.webp`,
-  thumbnail: `${SITE.url}/Logo.webp`,
+  contentUrl: `${SITE.url}/images/og-cases-nl.svg`,
+  thumbnail: `${SITE.url}/images/og-cases-nl.svg`,
   caption: "Selectieve val tegen Aziatische hoornaar - 3D print case",
 }
 
@@ -222,7 +222,7 @@ export default function CaseStudySelectiveTrapPage() {
               <ol className="flex flex-wrap gap-2">
                 <li>
                   <Link
-                    href="/blog#segments-cases"
+                    href="/cases"
                     className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                   >
                     Cases

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Schaalmodellen, scenery en detailonderdelen met sterke materiaalkeuze en praktische workflow.",
     url: "https://www.x3dprints.be/segments/3d-printing-modelbouwers/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printing voor modelbouwers" }],
+    images: [{ url: "/images/og-segments-nl.svg", width: 1200, height: 630, alt: "3D printing voor modelbouwers" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "3D printing voor modelbouwers",
     description:
       "Modelbouwprints met detailfocus, materiaaladvies en heldere planning.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-segments-nl.svg"],
   },
 }
 
@@ -147,7 +147,7 @@ const serviceOffers: SchemaOfferInput[] = [
 const localBusinessJsonLd = buildLocalBusinessSchema({
   pageUrl,
   description: pageDescription,
-  image: "/Logo.webp",
+  image: "/images/og-segments-nl.svg",
   areaServed: "Gent en Vlaanderen",
   priceRange: "EUR 5 - EUR 49",
 })

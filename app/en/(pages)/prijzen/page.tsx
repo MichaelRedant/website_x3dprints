@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Pricing & calculator | X3DPrints",
     description: "We send you straight to the active pricing page.",
     url: `${SITE.url}${TARGET}/`,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "X3DPrints" }],
+    images: [{ url: "/images/og-pricing.svg", width: 1200, height: 630, alt: "X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },

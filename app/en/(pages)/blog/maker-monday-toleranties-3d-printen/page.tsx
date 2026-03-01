@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["Maker Monday", "3D print tolerances", "Clearance tables"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D print tolerances" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "3D print tolerances" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Maker Monday #3: tolerances for 3D printing",
     description: "Practical clearance tables for PLA, PETG and TPU fits.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -88,7 +88,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

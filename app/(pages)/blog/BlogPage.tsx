@@ -73,6 +73,120 @@ const CATEGORY_SECTIONS_EN: CategorySection[] = [
 
 const TOPICS_NL: Topic[] = [
   {
+    id: "kapot-onderdeel-laten-printen",
+    title: "Kapot onderdeel laten 3D printen: praktische gids",
+    date: "2026-03-01",
+    summary:
+      "Nieuwe gids voor vervangonderdelen met intakeflow, materiaalkeuze (PLA/PETG/TPU), prijsranges en testfit-aanpak.",
+    highlights: [
+      "Sterke interne linkflow naar pricing, materialen, services en oudere high-intent blogs.",
+      "Bevat stappenplan, vergelijkingstabel en FAQ voor transactionele zoekintentie.",
+      "Directe CTA naar contact met prefilled vervangstuk-context.",
+    ],
+    links: [
+      { label: "Lees de gids", href: "/blog/kapot-onderdeel-laten-printen" },
+      { label: "Vraag vervangstuk aan", href: "/contact?material=PETG&quote=Kapot%20onderdeel%20laten%203D%20printen" },
+      { label: "Prijzen bekijken", href: "/pricing" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
+    id: "vervangstuk-huishoudtoestel-3d-printen",
+    title: "Vervangstuk huishoudtoestel met 3D printen",
+    date: "2026-03-01",
+    summary:
+      "Commerciele use-case gids voor kapotte clips, beugels en kappen in huishoudtoestellen met intake, materiaalmatrix en prijsranges.",
+    highlights: [
+      "Zelfde opbouw als de andere high-intent blogs: overzicht, tabellen, FAQ, bronnen en duidelijke CTA's.",
+      "Interne links naar oudere pricing-, materiaal- en offertesartikels voor sterke topical authority.",
+      "Directe prefilled contactroute voor snelle intake van vervangonderdelen.",
+    ],
+    links: [
+      { label: "Lees de gids", href: "/blog/vervangstuk-huishoudtoestel-3d-printen" },
+      { label: "Start intake", href: "/contact?material=PETG&quote=Vervangstuk%20huishoudtoestel" },
+      { label: "Open pricing", href: "/pricing" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
+    id: "ikea-onderdelen-3d-printen",
+    title: "IKEA onderdelen 3D printen: praktische aanpak",
+    date: "2026-03-01",
+    summary:
+      "Praktische home/workshop gids voor kapotte of ontbrekende IKEA onderdelen met intakechecklist, materiaalmatrix en kostsnapshot.",
+    highlights: [
+      "Zelfde SEO-opbouw als de andere nieuwe guides: duidelijke intent, tabellen, FAQ en bronnen.",
+      "Interne links naar oudere money en blogpagina's voor sterke topiccluster.",
+      "Prefilled CTA flow naar contact voor snelle conversie.",
+    ],
+    links: [
+      { label: "Lees de gids", href: "/blog/ikea-onderdelen-3d-printen" },
+      { label: "Start IKEA intake", href: "/contact?material=PETG&quote=IKEA%20onderdeel%20laten%203D%20printen" },
+      { label: "Open pricing", href: "/pricing" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
+    id: "kabelmanagement-3d-printen",
+    title: "Kabelmanagement met 3D printen: praktische gids",
+    date: "2026-03-01",
+    summary:
+      "Praktische home/workshop gids voor kabelclips, doorvoeren en houders op maat met intake, ontwerpregels en kostenrange.",
+    highlights: [
+      "Sterke interne links naar oudere TPU-, snapfit-, offerte- en pricing content.",
+      "Zelfde SEO opbouw met matrix-tabellen, FAQ, bronnen en duidelijke CTA-flow.",
+      "Prefilled contactroute voor snelle conversie naar kabelmanagement projecten.",
+    ],
+    links: [
+      { label: "Lees de gids", href: "/blog/kabelmanagement-3d-printen" },
+      { label: "Start intake", href: "/contact?material=TPU&quote=Kabelmanagement%20met%203D%20printen" },
+      { label: "Open pricing", href: "/pricing" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
+    id: "prototyping-kleine-reeksen-3d-printen",
+    title: "B2B prototyping en kleine reeksen met 3D printen",
+    date: "2026-03-01",
+    summary:
+      "B2B gids voor snelle iteraties en gecontroleerd opschalen: fase-aanpak, materiaalkeuze, prijsranges en intakeflow.",
+    highlights: [
+      "Sterke interne links naar bestaande productontwikkeling-, pricing- en materiaalgidsen.",
+      "Zelfde structuur als andere clusterposts: tabellen, FAQ, bronnen en duidelijke CTA's.",
+      "Prefilled contactroute voor prototype- en pilot-runs.",
+    ],
+    links: [
+      { label: "Lees de gids", href: "/blog/prototyping-kleine-reeksen-3d-printen" },
+      { label: "Start B2B intake", href: "/contact?material=PETG&quote=B2B%20prototyping%20en%20kleine%20reeks" },
+      { label: "Open pricing", href: "/pricing" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
+    id: "retail-pos-3d-printen",
+    title: "Retail POS 3D printen: displays en winkelmateriaal",
+    date: "2026-03-01",
+    summary:
+      "Commerciele gids voor retail displays en POS materiaal: van conceptvalidatie en pilot runs tot materiaalkeuze en kostenrange.",
+    highlights: [
+      "Sterke interne links naar bestaande retail, marketing en pricing content.",
+      "Zelfde SEO-opbouw als andere clusters: tabellen, FAQ, bronnen en CTA's.",
+      "Prefilled intakeflow voor snelle B2B conversie.",
+    ],
+    links: [
+      { label: "Lees de gids", href: "/blog/retail-pos-3d-printen" },
+      { label: "Start POS intake", href: "/contact?material=PETG&quote=Retail%20POS%203D%20printen" },
+      { label: "Bekijk portfolio", href: "/portfolio" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
     id: "tool-organizers-3d-printen",
     title: "Tool organizers 3D printen: van Gridfinity tot Packout",
     date: "2026-01-29",
@@ -1249,6 +1363,120 @@ const TOPICS_NL: Topic[] = [
 ]
 
 const TOPICS_EN: Topic[] = [
+  {
+    id: "kapot-onderdeel-laten-printen",
+    title: "Broken part replacement with 3D printing",
+    date: "2026-03-01",
+    summary:
+      "New practical guide for replacement parts with intake workflow, PLA/PETG/TPU selection, price ranges and fit-check steps.",
+    highlights: [
+      "Built with strong internal links to pricing, materials, services and earlier high-intent guides.",
+      "Includes workflow table, FAQ and clear conversion path for transactional intent.",
+      "Direct CTA to prefilled contact flow for broken-part replacement.",
+    ],
+    links: [
+      { label: "Read the guide", href: "/en/blog/kapot-onderdeel-laten-printen" },
+      { label: "Start replacement intake", href: "/en/contact?material=PETG&quote=Broken%20part%20replacement%20request" },
+      { label: "Open pricing", href: "/en/pricing" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
+    id: "vervangstuk-huishoudtoestel-3d-printen",
+    title: "Appliance spare part replacement with 3D printing",
+    date: "2026-03-01",
+    summary:
+      "Commercial use-case guide for broken appliance clips, brackets and covers with intake checklist, material matrix and price ranges.",
+    highlights: [
+      "Built in the same style as other high-intent guides: overview, tables, FAQ, sources and direct CTA flow.",
+      "Strong internal links to earlier pricing, material and quote-request articles.",
+      "Prefilled contact route for faster replacement-part conversion.",
+    ],
+    links: [
+      { label: "Read the guide", href: "/en/blog/vervangstuk-huishoudtoestel-3d-printen" },
+      { label: "Start intake", href: "/en/contact?material=PETG&quote=Appliance%20spare%20part%20replacement" },
+      { label: "Open pricing", href: "/en/pricing" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
+    id: "ikea-onderdelen-3d-printen",
+    title: "3D printed IKEA parts: practical workflow",
+    date: "2026-03-01",
+    summary:
+      "Practical home/workshop guide for broken or missing IKEA parts with intake checklist, material matrix and cost snapshot.",
+    highlights: [
+      "Same SEO structure as other new guides: clear intent, tables, FAQ and sources.",
+      "Internal links to established money pages and older high-intent blog content.",
+      "Prefilled CTA route to contact for fast conversion.",
+    ],
+    links: [
+      { label: "Read the guide", href: "/en/blog/ikea-onderdelen-3d-printen" },
+      { label: "Start IKEA intake", href: "/en/contact?material=PETG&quote=IKEA%20part%20replacement" },
+      { label: "Open pricing", href: "/en/pricing" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
+    id: "kabelmanagement-3d-printen",
+    title: "3D printed cable management: practical guide",
+    date: "2026-03-01",
+    summary:
+      "Practical home/workshop guide for custom cable clips, guides and holders with intake, design rules and pricing ranges.",
+    highlights: [
+      "Strong internal links to existing TPU, snapfit, quote and pricing guides.",
+      "Same SEO structure with comparison tables, FAQ, sources and direct CTA path.",
+      "Prefilled contact route for faster cable-management conversions.",
+    ],
+    links: [
+      { label: "Read the guide", href: "/en/blog/kabelmanagement-3d-printen" },
+      { label: "Start intake", href: "/en/contact?material=TPU&quote=3D%20printed%20cable%20management" },
+      { label: "Open pricing", href: "/en/pricing" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
+    id: "prototyping-kleine-reeksen-3d-printen",
+    title: "B2B prototyping and small-batch 3D printing",
+    date: "2026-03-01",
+    summary:
+      "B2B guide for fast iterations and controlled scaling with phased workflow, material choices, pricing ranges and intake flow.",
+    highlights: [
+      "Strong internal linking to existing product-development, pricing and material guides.",
+      "Same structure as other cluster posts: tables, FAQ, sources and clear CTA paths.",
+      "Prefilled contact route for prototype and pilot runs.",
+    ],
+    links: [
+      { label: "Read the guide", href: "/en/blog/prototyping-kleine-reeksen-3d-printen" },
+      { label: "Start B2B intake", href: "/en/contact?material=PETG&quote=B2B%20prototyping%20and%20small%20batch" },
+      { label: "Open pricing", href: "/en/pricing" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
+  {
+    id: "retail-pos-3d-printen",
+    title: "Retail POS 3D printing: displays and store assets",
+    date: "2026-03-01",
+    summary:
+      "Commercial guide for retail displays and POS assets: from concept validation and pilot runs to material choice and pricing ranges.",
+    highlights: [
+      "Strong internal links to existing retail, marketing and pricing content.",
+      "Same SEO structure as other cluster posts: tables, FAQ, sources and direct CTA flow.",
+      "Prefilled intake path for faster B2B conversion.",
+    ],
+    links: [
+      { label: "Read the guide", href: "/en/blog/retail-pos-3d-printen" },
+      { label: "Start POS intake", href: "/en/contact?material=PETG&quote=Retail%20POS%203D%20printing" },
+      { label: "View portfolio", href: "/en/portfolio" },
+    ],
+    intent: "transactional",
+    category: "segments-cases",
+  },
   {
     id: "tool-organizers-3d-printing",
     title: "3D printing tool organizers: Gridfinity, Packout and custom",
@@ -2552,6 +2780,7 @@ const QUICK_LINKS_NL = [
   { label: "Use Case Dinsdag", href: "#use-case-dinsdag" },
   { label: "Materialen & pricing", href: "#materials-pricing" },
   { label: "Segmenten & cases", href: "#segments-cases" },
+  { label: "Case hub", href: "/cases" },
   { label: "How-to & workflows", href: "#how-to" },
   { label: "Organizers gids", href: "/blog/tool-organizers-3d-printen" },
 ]
@@ -2562,6 +2791,7 @@ const QUICK_LINKS_EN = [
   { label: "Use Case Tuesday", href: "#use-case-dinsdag" },
   { label: "Materials & pricing", href: "#materials-pricing" },
   { label: "Segments & cases", href: "#segments-cases" },
+  { label: "Case hub", href: "/en/cases" },
   { label: "How-to & workflows", href: "#how-to" },
   { label: "Organizers guide", href: "/en/blog/tool-organizers-3d-printing" },
 ]

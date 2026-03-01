@@ -329,10 +329,28 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/blog/hoeveel-kost-3d-printen">
 }
 
+// Validate ..\..\app\(pages)\blog\ikea-onderdelen-3d-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\ikea-onderdelen-3d-printen\\page.js")
+  handler satisfies AppPageConfig<"/blog/ikea-onderdelen-3d-printen">
+}
+
 // Validate ..\..\app\(pages)\blog\juiste-3d-print-materiaal\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\juiste-3d-print-materiaal\\page.js")
   handler satisfies AppPageConfig<"/blog/juiste-3d-print-materiaal">
+}
+
+// Validate ..\..\app\(pages)\blog\kabelmanagement-3d-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\kabelmanagement-3d-printen\\page.js")
+  handler satisfies AppPageConfig<"/blog/kabelmanagement-3d-printen">
+}
+
+// Validate ..\..\app\(pages)\blog\kapot-onderdeel-laten-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\kapot-onderdeel-laten-printen\\page.js")
+  handler satisfies AppPageConfig<"/blog/kapot-onderdeel-laten-printen">
 }
 
 // Validate ..\..\app\(pages)\blog\maker-monday-fdm-scharnieren\page.tsx
@@ -407,10 +425,22 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/blog/pla-vs-petg">
 }
 
+// Validate ..\..\app\(pages)\blog\prototyping-kleine-reeksen-3d-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\prototyping-kleine-reeksen-3d-printen\\page.js")
+  handler satisfies AppPageConfig<"/blog/prototyping-kleine-reeksen-3d-printen">
+}
+
 // Validate ..\..\app\(pages)\blog\relatiegeschenken-3d-printen\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\relatiegeschenken-3d-printen\\page.js")
   handler satisfies AppPageConfig<"/blog/relatiegeschenken-3d-printen">
+}
+
+// Validate ..\..\app\(pages)\blog\retail-pos-3d-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\retail-pos-3d-printen\\page.js")
+  handler satisfies AppPageConfig<"/blog/retail-pos-3d-printen">
 }
 
 // Validate ..\..\app\(pages)\blog\sterke-3d-print-materialen\page.tsx
@@ -477,6 +507,18 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\use-cases-tpu\\page.js")
   handler satisfies AppPageConfig<"/blog/use-cases-tpu">
+}
+
+// Validate ..\..\app\(pages)\blog\vervangstuk-huishoudtoestel-3d-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\vervangstuk-huishoudtoestel-3d-printen\\page.js")
+  handler satisfies AppPageConfig<"/blog/vervangstuk-huishoudtoestel-3d-printen">
+}
+
+// Validate ..\..\app\(pages)\cases\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\cases\\page.js")
+  handler satisfies AppPageConfig<"/cases">
 }
 
 // Validate ..\..\app\(pages)\cases\selectieve-val-aziatische-hoornaar-sint-lievens-houtem\page.tsx
@@ -929,10 +971,28 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/en/blog/hoeveel-kost-3d-printen">
 }
 
+// Validate ..\..\app\en\(pages)\blog\ikea-onderdelen-3d-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\ikea-onderdelen-3d-printen\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/ikea-onderdelen-3d-printen">
+}
+
 // Validate ..\..\app\en\(pages)\blog\juiste-3d-print-materiaal\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\juiste-3d-print-materiaal\\page.js")
   handler satisfies AppPageConfig<"/en/blog/juiste-3d-print-materiaal">
+}
+
+// Validate ..\..\app\en\(pages)\blog\kabelmanagement-3d-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\kabelmanagement-3d-printen\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/kabelmanagement-3d-printen">
+}
+
+// Validate ..\..\app\en\(pages)\blog\kapot-onderdeel-laten-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\kapot-onderdeel-laten-printen\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/kapot-onderdeel-laten-printen">
 }
 
 // Validate ..\..\app\en\(pages)\blog\maker-monday-fdm-scharnieren\page.tsx
@@ -1007,10 +1067,22 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/en/blog/pla-vs-petg">
 }
 
+// Validate ..\..\app\en\(pages)\blog\prototyping-kleine-reeksen-3d-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\prototyping-kleine-reeksen-3d-printen\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/prototyping-kleine-reeksen-3d-printen">
+}
+
 // Validate ..\..\app\en\(pages)\blog\relatiegeschenken-3d-printen\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\relatiegeschenken-3d-printen\\page.js")
   handler satisfies AppPageConfig<"/en/blog/relatiegeschenken-3d-printen">
+}
+
+// Validate ..\..\app\en\(pages)\blog\retail-pos-3d-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\retail-pos-3d-printen\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/retail-pos-3d-printen">
 }
 
 // Validate ..\..\app\en\(pages)\blog\sterke-3d-print-materialen\page.tsx
@@ -1077,6 +1149,18 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\use-cases-tpu\\page.js")
   handler satisfies AppPageConfig<"/en/blog/use-cases-tpu">
+}
+
+// Validate ..\..\app\en\(pages)\blog\vervangstuk-huishoudtoestel-3d-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\vervangstuk-huishoudtoestel-3d-printen\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/vervangstuk-huishoudtoestel-3d-printen">
+}
+
+// Validate ..\..\app\en\(pages)\cases\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\cases\\page.js")
+  handler satisfies AppPageConfig<"/en/cases">
 }
 
 // Validate ..\..\app\en\(pages)\cases\selectieve-val-aziatische-hoornaar-sint-lievens-houtem\page.tsx

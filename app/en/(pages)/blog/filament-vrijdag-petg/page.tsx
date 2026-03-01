@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["PETG 3D printing", "Filament Friday", "3D print material"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "PETG filament guidance by X3DPrints" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "PETG filament guidance by X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Filament Friday #2: PETG guide",
     description: "PETG properties, settings, applications and fixes for stringing, warping and adhesion.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -136,7 +136,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

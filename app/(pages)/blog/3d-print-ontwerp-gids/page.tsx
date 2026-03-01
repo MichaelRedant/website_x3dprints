@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description:
       "Ontwerpregels, toleranties en workflow om CAD-modellen printbaar te maken.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print ontwerp gids" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "3D print ontwerp gids" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print ontwerp gids 2026",
     description: "Ontwerpregels, toleranties en workflow voor printbare CAD.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -142,7 +142,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Design rules, tolerantie-tabel en workflow om CAD-modellen printbaar te maken.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["PLA Silk 3D printing", "PLA Silk+", "Filament Friday", "glossy filament"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "PLA Silk+ filament guidance by X3DPrints" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "PLA Silk+ filament guidance by X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Filament Friday: PLA Silk+ 3D printing",
     description: "PLA Silk+ properties, settings and practical advice for brand objects, displays and decorative prints.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -110,7 +110,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

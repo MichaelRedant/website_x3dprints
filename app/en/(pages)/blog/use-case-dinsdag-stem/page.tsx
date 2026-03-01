@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["STEM 3D printing", "Education", "Use Case Tuesday"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "STEM 3D printing parts" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "STEM 3D printing parts" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Use Case Tuesday: STEM & labs",
     description: "Plan sturdy, classroom-friendly 3D prints for STEM sessions.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -85,7 +85,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

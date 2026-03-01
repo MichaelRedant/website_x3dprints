@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Gebruik deze gids om snel te beslissen tussen PLA, PETG en TPU, met directe links naar materialen, pricing en contact.",
     url: canonical,
     type: "article",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Juiste 3D print materiaal kiezen" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "Juiste 3D print materiaal kiezen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Juiste 3D print materiaal kiezen",
     description: "Stap voor stap beslissen tussen PLA, PETG en TPU.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -156,7 +156,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Beslisgids voor PLA, PETG en TPU met matrix, scenario's en directe links naar materiaaladvies en pricing.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description:
       "Ontdek hoe materiaal, afwerking en logistiek de levertijd beïnvloeden. Inclusief scenario's en tips om projecten te versnellen.",
     url: canonical,
-    images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "Hoe lang duurt 3D printen" }],
+    images: [{ url: "/images/og-services-nl.svg", width: 1200, height: 630, alt: "Hoe lang duurt 3D printen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hoe lang duurt 3D printen?",
     description: "Planning guide voor 3D prints: machine-uren, nabewerking en logistiek stap voor stap uitgelegd.",
-    images: ["/images/portfolio/20241030_080710-1.jpg"],
+    images: ["/images/og-services-nl.svg"],
   },
 }
 
@@ -87,7 +87,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Praktische gids over de doorlooptijd van 3D prints met aandacht voor machine-uren, nabewerking en logistiek.",
   datePublished,
   dateModified,
-  image: "/images/portfolio/20241030_080710-1.jpg",
+  image: "/images/og-services-nl.svg",
 })
 
 export default function LeadTimeArticle() {

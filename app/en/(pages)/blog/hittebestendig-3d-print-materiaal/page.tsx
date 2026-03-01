@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description:
       "Compare heat-resistant 3D print materials with a matrix, scenarios and clear CTAs.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Heat-resistant 3D print material" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "Heat-resistant 3D print material" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Heat-resistant 3D print material: PETG vs PC",
     description: "Matrix and scenarios for heat-resistant 3D prints.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -163,7 +163,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Heat-resistant material guide comparing PLA Tough+, PETG, PC and PC FR with a practical matrix.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

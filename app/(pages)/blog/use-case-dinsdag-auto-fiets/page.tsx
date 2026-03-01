@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     ],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "3D geprinte auto- en fietsaccessoires",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Use Case Dinsdag: Auto & fiets 3D prints",
     description:
       "Welke onderdelen kun je betrouwbaar 3D printen voor voertuigen? Deze gids bundelt toepassingen, ontwerpregels en materiaaladvies.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -123,7 +123,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"

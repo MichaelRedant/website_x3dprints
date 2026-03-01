@@ -4,9 +4,6 @@ import { EN_METADATA } from "@/app/(home)/metadata.en"
 
 export const metadata: Metadata = EN_METADATA
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
-
-export default async function HomePageEn({ searchParams }: PageProps) {
-  const params = (await searchParams) ?? {}
-  return <HomePage searchParams={Promise.resolve({ ...params, lang: "en" })} />
+export default function HomePageEn() {
+  return <HomePage localeOverride="en" />
 }

@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     description:
       "Gridfinity inserts with label zones and anti-slip. Custom pockets per tool, made in Belgium.",
     url: PAGE_URL,
-    images: [{ url: `${SITE.url}/images/organizers/modugrid/ModuGrid3.webp`, width: 1200, height: 630 }],
+    images: [{ url: `${SITE.url}/images/og-shop.svg`, width: 1200, height: 630 }],
     siteName: SITE.name,
     locale: "en_BE",
   },

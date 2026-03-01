@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Naamplaatjes, pennenhouders en klasprojecten voor 2026 met materiaaladvies en duidelijke planning.",
     url: "https://www.x3dprints.be/segments/3d-printing-back-to-school/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Back to School 3D printing" }],
+    images: [{ url: "/images/og-segments-nl.svg", width: 1200, height: 630, alt: "Back to School 3D printing" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Back to School 2026 3D printing",
     description:
       "Back-to-school prints voor 2026 met snelle lokale productie en heldere communicatie.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-segments-nl.svg"],
   },
 }
 
@@ -141,7 +141,7 @@ const serviceOffers: SchemaOfferInput[] = [
 const localBusinessJsonLd = buildLocalBusinessSchema({
   pageUrl,
   description: pageDescription,
-  image: "/Logo.webp",
+  image: "/images/og-segments-nl.svg",
   areaServed: "Gent en Vlaanderen",
   priceRange: "EUR 5 - EUR 49",
 })

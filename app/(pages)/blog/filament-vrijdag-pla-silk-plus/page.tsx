@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     tags: ["PLA Silk 3D printen", "PLA Silk+", "Filament Vrijdag", "glossy filament"],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "PLA Silk+ filament advies door X3DPrints",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Filament Vrijdag: PLA Silk+ 3D printen",
     description:
       "PLA Silk+ eigenschappen, instellingen en praktijkadvies voor merkobjecten, display en decoratieve prints.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 const heroStats = [
@@ -239,7 +239,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: "Filament Vrijdag van X3DPrints. Leer hoe PLA Silk+ zich gedraagt, welke instellingen wij gebruiken en wanneer je Silk+ inzet voor premium zichtwerk.",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 

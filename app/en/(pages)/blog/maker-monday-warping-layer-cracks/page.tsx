@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["Maker Monday", "Warping", "Layer cracks"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Prevent warping in FDM" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "Prevent warping in FDM" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Maker Monday #6: prevent warping and layer cracks",
     description: "Design rules for stable FDM prints and better bridges.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -86,7 +86,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

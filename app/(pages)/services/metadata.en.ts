@@ -17,7 +17,7 @@ export const EN_METADATA: Metadata = {
     description:
       "Small to large batches, fast follow-up and pragmatic advice on material and design for 3D printing Gent and Belgium projects.",
     url: "https://www.x3dprints.be/en/services/",
-    images: [{ url: "/images/portfolio/20241030_080710-1.jpg", width: 1200, height: 630, alt: "3D printing service in Belgium" }],
+    images: [{ url: "/images/og-services-en.svg", width: 1200, height: 630, alt: "3D printing service in Belgium" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -26,6 +26,6 @@ export const EN_METADATA: Metadata = {
     title: "3D print service in Belgium",
     description:
       "Small to large batches, fast follow-up and pragmatic advice on material and design for 3D printing Gent and Belgium projects.",
-    images: ["/images/portfolio/20241030_080710-1.jpg"],
+    images: ["/images/og-services-en.svg"],
   },
 }

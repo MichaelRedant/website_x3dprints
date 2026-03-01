@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description:
       "Gids met de beste platformen om 3D modellen te downloaden en direct te laten printen, inclusief kwaliteitscheck en materiaaladvies.",
     url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D modellen vinden" }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630, alt: "3D modellen vinden" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },

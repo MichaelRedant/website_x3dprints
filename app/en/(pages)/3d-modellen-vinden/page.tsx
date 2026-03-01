@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description:
       "Guide to the best platforms for downloadable 3D models with quality checks and local production guidance.",
     url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "Find 3D models" }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630, alt: "Find 3D models" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },

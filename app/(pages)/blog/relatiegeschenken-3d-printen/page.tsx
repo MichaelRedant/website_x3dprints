@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   url: canonical,
     type: "article",
     publishedTime: publishedDate,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte relatiegeschenken" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "3D geprinte relatiegeschenken" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Relatiegeschenken 3D printen | B2B gifts",
     description: "Custom sleutelhangers, desk items en awards in Silk/Matte/PETG. Materiaal- en leveringtips.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -125,7 +125,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 const faqJsonLd = buildFaqPageSchema({

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     ],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "Maker Monday snap-fit parts",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Maker Monday #8: Snap-fit parts die blijven klikken",
     description:
       "Hoe ontwerp je snap-fit clips voor PLA, PETG en TPU? Types, toleranties, arm-diktes, ribbing en testplan in \u00e9\u00e9n gids.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -139,7 +139,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 function SectionDivider() {

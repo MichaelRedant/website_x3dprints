@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description:
       "Tabel met impact per optimalisatie en concrete tips om je 3D print budget te verlagen.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print kosten besparen" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "3D print kosten besparen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print kosten besparen: 7 slimme optimalisaties",
     description: "Optimalisaties om je 3D print budget te verlagen.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -146,7 +146,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Bespaartips voor 3D prints met impacttabel en concrete optimalisaties voor printtijd en materiaal.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

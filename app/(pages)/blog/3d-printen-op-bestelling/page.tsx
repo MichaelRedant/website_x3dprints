@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description:
       "Lees hoe je snel bestelt, welke info nodig is en hoe herhaalorders efficiënter worden.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printen op bestelling" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "3D printen op bestelling" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D printen op bestelling in België",
     description: "Gids met intake, productieflow, levering en repeat-order tips voor snelle offertes.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -115,7 +115,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Praktische gids voor 3d printen op bestelling met intake, 3d model printen, materiaaladvies, levering en repeat-order aanpak.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

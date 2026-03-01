@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description:
       "Matrix met materiaalkeuze, sterkte en hittebestendigheid plus snelle beslisregels voor jouw project.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print materialen gids" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "3D print materialen gids" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print materialen gids 2026",
     description: "Materialenmatrix, use cases en beslisregels voor 3D prints.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -157,7 +157,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Matrix en beslisregels voor PLA, PETG, TPU en PC met snelle materiaalkeuze per projecttype.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

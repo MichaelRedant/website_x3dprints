@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["PC FR filament", "flame-retardant 3D printing", "UL94 V-0", "Filament Friday"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "PC FR 3D printing advice" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "PC FR 3D printing advice" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Filament Friday: PC FR (UL94 V-0) filament",
     description:
       "When to pick PC FR: drying, settings, design guidance and when standard PC or PETG is enough.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -111,7 +111,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

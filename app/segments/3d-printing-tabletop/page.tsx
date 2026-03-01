@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Minis, terrain en accessories voor tabletop spelers met duidelijke materiaalkeuze en planning.",
     url: "https://www.x3dprints.be/segments/3d-printing-tabletop/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printing voor tabletop minis" }],
+    images: [{ url: "/images/og-segments-nl.svg", width: 1200, height: 630, alt: "3D printing voor tabletop minis" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "3D printing voor tabletop minis",
     description:
       "Scherpe details voor miniatures, bases en dice towers met veilige verpakking en levering.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-segments-nl.svg"],
   },
 }
 
@@ -147,7 +147,7 @@ const serviceOffers: SchemaOfferInput[] = [
 const localBusinessJsonLd = buildLocalBusinessSchema({
   pageUrl,
   description: pageDescription,
-  image: "/Logo.webp",
+  image: "/images/og-segments-nl.svg",
   areaServed: "Gent en Vlaanderen",
   priceRange: "EUR 5 - EUR 49",
 })

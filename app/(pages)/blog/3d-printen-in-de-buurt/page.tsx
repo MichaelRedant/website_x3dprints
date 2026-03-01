@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description:
       "Lees hoe lokale productie, afhaling en levering werken voor snelle 3D printprojecten.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printen in de buurt" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "3D printen in de buurt" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D printen in de buurt",
     description: "Lokale productie met snelle route van briefing tot levering.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -125,7 +125,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Lokale gids voor 3D printen in de buurt met praktische info over levering, afhaling en workflow.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

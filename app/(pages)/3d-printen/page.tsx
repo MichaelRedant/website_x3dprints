@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description:
       "Van STL/STEP naar bruikbare onderdelen: prototypes, tooling, displays en functionele parts. 3D printen in Belgie met snelle intake en duidelijke planning.",
     url: "https://www.x3dprints.be/3d-printen/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printen landing" }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630, alt: "3D printen landing" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D printen voor bedrijven in Belgie | X3DPrints",
     description: "B2B 3D print service voor prototypes, jigs, fixtures en onderdelen op maat.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home.svg"],
   },
 }
 
@@ -297,7 +297,7 @@ const descriptionText = metadata.description ?? ""
 const localBusinessJsonLd = buildLocalBusinessSchema({
   pageUrl,
   description: descriptionText,
-  image: "/images/og-home.jpg",
+  image: "/images/og-home.svg",
   priceRange: "EUR 0 - EUR 49",
   areaServed: "Gent, Aalst, Herzele & Vlaanderen",
 })

@@ -22,7 +22,7 @@ const references = [
 const GRID_IMAGES = [
   { src: "/images/organizers/modugrid/ModuGrid1.jpg", alt: "Gridfinity lade overzicht (bovenaan)", width: 1600, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid2.jpg", alt: "Gridfinity lade met schroeven en bits", width: 1600, height: 900 },
-  { src: "/images/organizers/modugrid/ModuGrid3.webp", alt: "Gridfinity bakjes met labels en antislip", width: 1600, height: 900 },
+  { src: "/images/og-blog-nl.svg", alt: "Gridfinity bakjes met labels en antislip", width: 1600, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid4.webp", alt: "Gridfinity bakjes voor bureau tools", width: 1600, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid5.webp", alt: "Gridfinity detail met labelrand", width: 1600, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid6.webp", alt: "Gridfinity insert met antislip", width: 1600, height: 900 },
@@ -64,7 +64,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Gridfinity uitgelegd: raster, magneten, labels, toepassingen en hoe X3DPrints maatwerk bins, starterkits en Packout-inlays levert.",
   datePublished: publishedDate,
   dateModified,
-  image: "/images/organizers/modugrid/ModuGrid3.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["gridfinity", "tool organizer", "packout inlay", "custom bins"],
-    images: [{ url: "/images/organizers/modugrid/ModuGrid3.webp", width: 1200, height: 630, alt: "Gridfinity bins op maat" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "Gridfinity bins op maat" }],
   },
   twitter: { card: "summary_large_image" },
 }

@@ -81,6 +81,20 @@ function countH1(html) {
   return (html.match(/<h1\b/gi) ?? []).length
 }
 
+function isNoindexPage(html) {
+  const metaTags = html.match(/<meta\b[^>]*>/gi) ?? []
+  for (const tag of metaTags) {
+    const name = parseAttr(tag, "name")?.toLowerCase()
+    if (name !== "robots" && name !== "googlebot") continue
+
+    const content = (parseAttr(tag, "content") ?? "").toLowerCase()
+    if (content.includes("noindex") || content.includes("none")) {
+      return true
+    }
+  }
+  return false
+}
+
 function isSkippableRoute(route) {
   return route === "/_not-found/" || route === "/404"
 }
@@ -97,12 +111,18 @@ async function main() {
   const failures = []
   const warnings = []
   let checked = 0
+  let skippedNoindex = 0
 
   for (const file of files) {
     const route = routeFromHtmlFile(file)
     if (isSkippableRoute(route)) continue
 
     const html = await fs.readFile(file, "utf8")
+    if (isNoindexPage(html)) {
+      skippedNoindex += 1
+      continue
+    }
+
     checked += 1
 
     const title = extractTitle(html)
@@ -148,7 +168,7 @@ async function main() {
 
   if (warnings.length > 0) {
     console.log(
-      `[seo:quality] WARN - checked ${checked} HTML files, ${warnings.length} optimization warnings (showing first ${Math.min(WARNING_SAMPLE_LIMIT, warnings.length)}):`,
+      `[seo:quality] WARN - checked ${checked} indexable HTML files, skipped ${skippedNoindex} noindex files, ${warnings.length} optimization warnings (showing first ${Math.min(WARNING_SAMPLE_LIMIT, warnings.length)}):`,
     )
     for (const warning of warnings.slice(0, WARNING_SAMPLE_LIMIT)) {
       console.log(`  - ${warning}`)
@@ -156,7 +176,9 @@ async function main() {
     return
   }
 
-  console.log(`[seo:quality] OK - checked ${checked} HTML files, no quality warnings`)
+  console.log(
+    `[seo:quality] OK - checked ${checked} indexable HTML files, skipped ${skippedNoindex} noindex files, no quality warnings`,
+  )
 }
 
 main().catch((error) => {

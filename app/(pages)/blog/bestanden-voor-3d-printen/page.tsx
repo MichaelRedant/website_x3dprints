@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description:
       "Praktische checklist voor export, meshcontrole en documentatie bij 3D printaanvragen.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Bestanden voor 3D printen" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "Bestanden voor 3D printen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Welke bestanden heb je nodig voor 3D printen?",
     description: "Complete checklist om je 3D printaanvraag direct verwerkbaar te maken.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -116,7 +116,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Gids voor 3d stl, STEP en bestandscheck zodat je aanvraag sneller naar productie en 3d model printen gaat.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

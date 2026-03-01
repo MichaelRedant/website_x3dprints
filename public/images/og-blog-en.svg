@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">3D Printing Knowledge Base</title>
+  <desc id="d">Practical guides on design, materials and cost</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="55%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.78" cy="0.18" r="0.55">
+      <stop offset="0%" stop-color="rgba(34,211,238,.45)"/>
+      <stop offset="100%" stop-color="rgba(34,211,238,0)"/>
+    </radialGradient>
+    <style>.bg{fill:url(#bg)}.panel{fill:rgba(255,255,255,.08);stroke:rgba(255,255,255,.28);stroke-width:1}.k{font:700 22px 'Segoe UI',Arial,sans-serif;fill:#c7d2fe;letter-spacing:2px;text-transform:uppercase}.h{font:800 72px 'Segoe UI',Arial,sans-serif;fill:#f8fafc}.s{font:500 30px 'Segoe UI',Arial,sans-serif;fill:#cbd5e1}.b{font:600 26px 'Segoe UI',Arial,sans-serif;fill:#e2e8f0}</style>
+  </defs>
+  <rect width="1200" height="630" class="bg"/>
+  <rect width="1200" height="630" fill="url(#halo)"/>
+  <g opacity=".25">
+    <circle cx="1040" cy="92" r="210" fill="rgba(99,102,241,.55)"/>
+    <circle cx="130" cy="560" r="180" fill="rgba(16,185,129,.42)"/>
+  </g>
+  <g>
+    <rect x="40" y="38" width="1120" height="554" rx="28" ry="28" class="panel"/>
+    <text x="62" y="108" class="k">X3DPrints</text>
+    <text x="60" y="216" class="h">3D Printing Knowledge Base</text>
+    <text x="60" y="272" class="s">Practical guides on design, materials and cost</text>
+    <rect x="60" y="412" rx="22" ry="22" width="220" height="40" fill="rgba(15,23,42,.38)" stroke="rgba(148,163,184,.35)"/><text x="84" y="438" class="b">Design tips</text>
+      <rect x="60" y="466" rx="22" ry="22" width="220" height="40" fill="rgba(15,23,42,.38)" stroke="rgba(148,163,184,.35)"/><text x="84" y="492" class="b">Material picks</text>
+      <rect x="60" y="520" rx="22" ry="22" width="221" height="40" fill="rgba(15,23,42,.38)" stroke="rgba(148,163,184,.35)"/><text x="84" y="546" class="b">Cost control</text>
+    <text x="60" y="572" class="b">www.x3dprints.be</text>
+  </g>
+</svg>

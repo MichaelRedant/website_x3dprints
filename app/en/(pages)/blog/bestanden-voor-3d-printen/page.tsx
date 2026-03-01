@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description:
       "Use this file handoff checklist to avoid delays: format choice, mesh checks, naming and project context.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Files for 3D printing" }],
+    images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "Files for 3D printing" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Which files do you need for 3D printing?",
     description: "Complete STL and STEP checklist for faster 3D print processing.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -118,7 +118,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

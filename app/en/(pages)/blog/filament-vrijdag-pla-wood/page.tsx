@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["PLA Wood", "Wood filament", "Filament Friday", "PLA specials"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "PLA Wood advice by X3DPrints" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "PLA Wood advice by X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Filament Friday #4: PLA Wood and specials",
     description:
       "Wood filament for design, props and interior. Learn how PLA Wood and other special blends behave in the studio.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -153,7 +153,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-en.svg",
   inLanguage: "en-BE",
 })
 

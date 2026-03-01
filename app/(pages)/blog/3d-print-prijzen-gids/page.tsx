@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description:
       "Kostgids met prijsankers, kostblokken en optimalisaties om je 3D print budget te sturen.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print prijzen gids" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "3D print prijzen gids" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print prijzen gids 2026",
     description: "Prijsankers, kostfactoren en tips om je budget te beheren.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -177,7 +177,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Overzicht van kostblokken, prijsankers per projecttype en optimalisatietips voor 3D printen.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

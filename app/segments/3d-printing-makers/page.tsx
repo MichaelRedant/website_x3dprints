@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Laat je 3D model printen voor hobby, cosplay of repair met duidelijke materiaalkeuze, prijsindicatie en planning in Vlaanderen.",
     url: "https://www.x3dprints.be/segments/3d-printing-makers/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printing voor makers en hobbyisten" }],
+    images: [{ url: "/images/og-segments-nl.svg", width: 1200, height: 630, alt: "3D printing voor makers en hobbyisten" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "3D printen voor particulieren en makers",
     description:
       "Van cosplay tot repair parts: lokale 3D print service voor particulieren met direct overleg.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-segments-nl.svg"],
   },
 }
 
@@ -211,7 +211,7 @@ const serviceOffers: SchemaOfferInput[] = [
 const localBusinessJsonLd = buildLocalBusinessSchema({
   pageUrl,
   description: pageDescription,
-  image: "/Logo.webp",
+  image: "/images/og-segments-nl.svg",
   areaServed: "Gent en Vlaanderen",
   priceRange: "EUR 5 - EUR 49",
 })

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description:
       "Full breakdown of material price, machine hours, finishing and logistics. Use our pricing calculator and request a quote.",
     url: canonical,
-    images: [{ url: "/images/portfolio/2d-6-1-1.webp", width: 1200, height: 630, alt: "3D printing cost breakdown" }],
+    images: [{ url: "/images/og-pricing-en.svg", width: 1200, height: 630, alt: "3D printing cost breakdown" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How much does 3D printing cost?",
     description: "Strategic guide to estimating 3D print costs, including an example calculation.",
-    images: ["/images/portfolio/2d-6-1-1.webp"],
+    images: ["/images/og-pricing-en.svg"],
   },
 }
 
@@ -106,7 +106,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "/images/portfolio/2d-6-1-1.webp",
+  image: "/images/og-pricing-en.svg",
   inLanguage: "en-BE",
 })
 

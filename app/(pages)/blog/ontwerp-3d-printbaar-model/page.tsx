@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description:
       "Praktische ontwerpgids met richtlijnen voor wanddikte, snap-fits, tolerantie en bestandsaanlevering.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "Ontwerp een 3D printbaar model" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "Ontwerp een 3D printbaar model" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hoe ontwerp je een 3D printbaar model?",
     description: "Van CAD naar print met designregels die productie versnellen.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -127,7 +127,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Praktische designgids om 3d ontwerp printen en 3d modellen printen sneller productie-klaar te maken.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

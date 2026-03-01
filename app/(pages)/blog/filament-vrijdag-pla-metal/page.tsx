@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     tags: ["PLA Metal", "Metallic filament", "Filament Vrijdag", "3D print materiaal"],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "PLA Metal filament advies door X3DPrints",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Filament Vrijdag: PLA Metal 3D printen",
     description: "PLA Metal instellingen en toepassingen voor props, industriële esthetiek en designprints.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -184,7 +184,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: "Filament Vrijdag #7. Leer hoe PLA Metal werkt, welke instellingen wij gebruiken en wanneer metallic PLA-blends echt meerwaarde bieden.",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 

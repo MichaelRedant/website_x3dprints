@@ -4,9 +4,34 @@ import path from "node:path"
 const ROOT = process.cwd()
 const OUT_DIR = path.join(ROOT, "out")
 const SITE_HOST = "www.x3dprints.be"
-const REQUIRED_OG_PATH = "/Logo.webp"
-const REQUIRED_OG_URL = `https://${SITE_HOST}${REQUIRED_OG_PATH}`
+const FALLBACK_OG_PATH = "/images/og-default.svg"
 const META_TAG_RE = /<meta\b[^>]*>/gi
+
+// Top landing pages that should keep intent-specific social previews.
+const TOP_LANDING_EXPECTED_OG = new Map([
+  ["/", "/images/og-home-nl.svg"],
+  ["/en/", "/images/og-home-en.svg"],
+  ["/services/", "/images/og-services-nl.svg"],
+  ["/en/services/", "/images/og-services-en.svg"],
+  ["/materials/", "/images/og-materials-nl.svg"],
+  ["/en/materials/", "/images/og-materials-en.svg"],
+  ["/pricing/", "/images/og-pricing-nl.svg"],
+  ["/en/pricing/", "/images/og-pricing-en.svg"],
+  ["/contact/", "/images/og-contact-nl.svg"],
+  ["/en/contact/", "/images/og-contact-en.svg"],
+  ["/portfolio/", "/images/og-portfolio-nl.svg"],
+  ["/en/portfolio/", "/images/og-portfolio-en.svg"],
+  ["/blog/", "/images/og-blog-nl.svg"],
+  ["/en/blog/", "/images/og-blog-en.svg"],
+  ["/cases/", "/images/og-cases-nl.svg"],
+  ["/en/cases/", "/images/og-cases-en.svg"],
+  ["/segments/", "/images/og-segments-nl.svg"],
+  ["/en/segments/", "/images/og-segments-en.svg"],
+  ["/viewer/", "/images/og-viewer-nl.svg"],
+  ["/en/viewer/", "/images/og-viewer-en.svg"],
+  ["/shop/", "/images/og-shop-nl.svg"],
+  ["/en/shop/", "/images/og-shop-en.svg"],
+])
 
 async function walk(dir) {
   const entries = await fs.readdir(dir, { withFileTypes: true })
@@ -85,10 +110,25 @@ function extractMetaValue(tag, attrName) {
   return match?.[1] ?? null
 }
 
-function isTargetMetaTag(tag) {
+function isNoindexPage(tags) {
+  for (const tag of tags) {
+    const name = extractMetaValue(tag, "name")?.toLowerCase()
+    if (name !== "robots" && name !== "googlebot") continue
+
+    const content = (extractMetaValue(tag, "content") ?? "").toLowerCase()
+    if (content.includes("noindex") || content.includes("none")) {
+      return true
+    }
+  }
+  return false
+}
+
+function getImageTagKind(tag) {
   const property = extractMetaValue(tag, "property")?.toLowerCase()
   const name = extractMetaValue(tag, "name")?.toLowerCase()
-  return property === "og:image" || name === "twitter:image"
+  if (property === "og:image") return "og"
+  if (name === "twitter:image") return "twitter"
+  return null
 }
 
 function normalizeInternalPath(rawValue, currentRoute) {
@@ -106,6 +146,11 @@ function normalizeInternalPath(rawValue, currentRoute) {
   return decodeURIComponent(url.pathname)
 }
 
+function formatPathSet(values) {
+  if (values.size === 0) return "(none)"
+  return Array.from(values).sort().join(", ")
+}
+
 async function main() {
   try {
     await fs.access(OUT_DIR)
@@ -117,56 +162,91 @@ async function main() {
   const outFiles = await walk(OUT_DIR)
   const htmlFiles = outFiles.filter((file) => file.endsWith(".html"))
   const existingPaths = buildExistingPathSet(outFiles)
-  const requiredAssetExists = hasAssetPath(REQUIRED_OG_PATH, existingPaths)
-  if (!requiredAssetExists) {
-    console.error(`[seo:og] FAILED - required timeless OG asset missing in out/: ${REQUIRED_OG_PATH}`)
-    process.exit(1)
-  }
-
-  let checked = 0
   const failures = []
+  const routeImages = new Map()
+  let checked = 0
+  let skippedNoindex = 0
 
   for (const htmlFile of htmlFiles) {
     const html = await fs.readFile(htmlFile, "utf8")
     const currentRoute = routeFromHtmlFile(htmlFile)
+    const sourceRef = relative(htmlFile)
     const tags = html.match(META_TAG_RE) ?? []
+    if (isNoindexPage(tags)) {
+      skippedNoindex += 1
+      continue
+    }
+
+    const routeState = { og: new Set(), twitter: new Set(), sourceRef }
+    routeImages.set(currentRoute, routeState)
 
     for (const tag of tags) {
-      if (!isTargetMetaTag(tag)) continue
+      const kind = getImageTagKind(tag)
+      if (!kind) continue
+
       const content = extractMetaValue(tag, "content")
-      if (!content) continue
+      if (!content) {
+        failures.push(`${currentRoute} has a ${kind}:image tag without content (${sourceRef})`)
+        continue
+      }
 
       const pathname = normalizeInternalPath(content, currentRoute)
-      const sourceRef = relative(htmlFile)
-
       if (!pathname) {
-        failures.push(`invalid or non-site OG URL "${content}" (referenced from ${sourceRef})`)
+        failures.push(`${currentRoute} has invalid or non-site ${kind}:image URL "${content}" (${sourceRef})`)
         continue
       }
 
       checked += 1
-
       if (!hasAssetPath(pathname, existingPaths)) {
-        failures.push(`${pathname} (referenced from ${sourceRef})`)
+        failures.push(`${currentRoute} references missing ${kind}:image asset "${pathname}" (${sourceRef})`)
         continue
       }
 
-      if (pathname !== REQUIRED_OG_PATH) {
-        failures.push(`${pathname} (expected ${REQUIRED_OG_PATH}) in ${sourceRef}`)
-      }
+      routeState[kind].add(pathname)
+    }
+  }
+
+  for (const [route, expectedPath] of TOP_LANDING_EXPECTED_OG.entries()) {
+    if (!hasAssetPath(expectedPath, existingPaths)) {
+      failures.push(`policy asset missing from out/: ${expectedPath} (required by ${route})`)
+      continue
+    }
+
+    const state = routeImages.get(route)
+    if (!state) {
+      failures.push(`top landing route missing in out/: ${route}`)
+      continue
+    }
+
+    if (state.og.size === 0) {
+      failures.push(`${route} is missing og:image (${state.sourceRef})`)
+    } else if (!state.og.has(expectedPath)) {
+      failures.push(`${route} expected og:image ${expectedPath} but got ${formatPathSet(state.og)}`)
+    }
+
+    if (state.twitter.size === 0) {
+      failures.push(`${route} is missing twitter:image (${state.sourceRef})`)
+    } else if (!state.twitter.has(expectedPath)) {
+      failures.push(`${route} expected twitter:image ${expectedPath} but got ${formatPathSet(state.twitter)}`)
+    }
+
+    if (state.og.has(FALLBACK_OG_PATH) || state.twitter.has(FALLBACK_OG_PATH)) {
+      failures.push(`${route} still uses fallback OG image ${FALLBACK_OG_PATH}`)
     }
   }
 
   if (failures.length > 0) {
-    console.error("[seo:og] FAILED - OG/Twitter images must use the timeless logo on all pages:")
-    console.error(`  - required image: ${REQUIRED_OG_URL}`)
+    console.error("[seo:og] FAILED - OG/Twitter governance violations detected:")
     for (const failure of failures) {
       console.error(`  - ${failure}`)
     }
     process.exit(1)
   }
 
-  console.log(`[seo:og] OK - checked ${checked} OG/Twitter image references, all pinned to ${REQUIRED_OG_PATH}`)
+  const uniqueTopAssets = new Set(TOP_LANDING_EXPECTED_OG.values()).size
+  console.log(
+    `[seo:og] OK - checked ${checked} OG/Twitter image references on indexable pages, skipped ${skippedNoindex} noindex pages, and validated ${TOP_LANDING_EXPECTED_OG.size} top landing routes (${uniqueTopAssets} unique OG assets).`,
+  )
 }
 
 main().catch((error) => {

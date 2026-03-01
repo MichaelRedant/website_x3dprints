@@ -17,7 +17,7 @@ export const EN_METADATA: Metadata = {
     description:
       "Photo series and timelapses of custom 3D prints: prototypes, merchandising and personalized gifts from the Herzele studio.",
     url: "https://www.x3dprints.be/en/portfolio/",
-    images: [{ url: "/images/portfolio/2d-5-3.webp", width: 1200, height: 630, alt: "3D printing portfolio projects" }],
+    images: [{ url: "/images/og-portfolio-en.svg", width: 1200, height: 630, alt: "3D printing portfolio projects" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -26,7 +26,7 @@ export const EN_METADATA: Metadata = {
     title: "3D printing portfolio & case studies | X3DPrints",
     description:
       "Functional prototypes, merchandising and gifts: see how X3DPrints delivers projects for SMEs, events and designers.",
-    images: ["/images/portfolio/2d-5-3.webp"],
+    images: ["/images/og-portfolio-en.svg"],
   },
 }
 

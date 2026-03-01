@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description:
       "Studio-geteste instellingen voor PLA, PETG en TPU inclusief flow kalibratie, AMS tips en onderhoud zodat je prints foutloos uit de Bambu komt.",
   url: canonical,
-    images: [{ url: "/images/portfolio/20241024_081839-1.jpg", width: 1200, height: 630, alt: "Bambu printer instellingen" }],
+    images: [{ url: "/images/og-viewer-nl.svg", width: 1200, height: 630, alt: "Bambu printer instellingen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Beste instellingen voor jouw Bambu printer",
     description:
       "Optimaliseer je Bambu printer met onze PLA/PETG/TPU presets, kalibratietips en troubleshoot-checklist.",
-    images: ["/images/portfolio/20241024_081839-1.jpg"],
+    images: ["/images/og-viewer-nl.svg"],
   },
 }
 
@@ -116,7 +116,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Gebruik deze presets voor PLA, PETG en TPU op Bambu printers: temperaturen, snelheden, retract en kalibratie. Inclusief tips voor flow, AMS en onderhoud.",
   datePublished,
   dateModified,
-  image: "/images/portfolio/20241024_081839-1.jpg",
+  image: "/images/og-viewer-nl.svg",
 })
 
 export default function BambuSettingsPage() {

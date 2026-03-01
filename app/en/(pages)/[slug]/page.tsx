@@ -95,9 +95,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       siteName: "X3DPrints",
       type: "website",
       locale: "en_BE",
-      images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: keyphrase }],
+      images: [{ url: "/images/og-home.svg", width: 1200, height: 630, alt: keyphrase }],
     },
-    twitter: { card: "summary_large_image", title: seoTitle, description, images: ["/images/og-home.jpg"] },
+    twitter: { card: "summary_large_image", title: seoTitle, description, images: ["/images/og-home.svg"] },
   }
 }
 
@@ -163,7 +163,7 @@ export default async function LocationEnPage({ params }: { params: Promise<{ slu
   const localBusinessJsonLd = buildLocalBusinessSchema({
     pageUrl,
     description: pageDescription,
-    image: "/Logo.webp",
+    image: "/images/og-default.svg",
     inLanguage: "en-BE",
     areaServed: `${loc.city}, Belgium`,
   })

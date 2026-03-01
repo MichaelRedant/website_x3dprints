@@ -204,6 +204,12 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
               category: "lead",
               label: data.material || "unknown",
             })
+            trackEvent({
+              action: "form_submit",
+              category: "contact_form",
+              label: "success",
+              value: 1,
+            })
             return
           }
 

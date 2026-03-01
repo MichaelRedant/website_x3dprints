@@ -26,11 +26,16 @@ export const metadata: Metadata = {
     description:
       "Upload an STL, OBJ or GLB and see immediately how your print looks. Privacy-friendly, performant and in X3DPrints style.",
     url: "https://www.x3dprints.be/en/viewer/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og-viewer-en.svg", width: 1200, height: 630, alt: "3D model viewer" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "Realtime 3D Model Viewer for STLs",
+    description: "Upload STL/OBJ/GLB and inspect your model quickly in-browser before requesting a quote.",
+    images: ["/images/og-viewer-en.svg"],
+  },
 }
 
 export default function Page() {

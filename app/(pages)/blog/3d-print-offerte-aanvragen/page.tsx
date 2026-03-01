@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description:
       "Checklist voor een snelle 3D print offerte met de juiste input, prijsopbouw en planningstips.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print offerte aanvragen" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "3D print offerte aanvragen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print offerte aanvragen: snelle checklist",
     description: "Input checklist, prijsopbouw en planningstips voor snelle offertes.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -172,7 +172,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Checklist met intake-input, prijsopbouw en planningstips zodat je sneller een 3D print offerte ontvangt.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

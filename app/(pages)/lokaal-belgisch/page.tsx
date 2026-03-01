@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "X3DPrints is een Herzeelse handelaar en 100% Belgische 3D printstudio. Korte keten, duidelijke afspraken en trotse partner van Werkgroep Ondernemend Herzele.",
     url: "https://www.x3dprints.be/lokaal-belgisch",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },

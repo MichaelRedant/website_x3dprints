@@ -9,7 +9,6 @@ import GlassOrb from "@/components/GlassOrb"
 import GlassCard from "@/components/GlassCard"
 import FaqPromo from "@/components/FaqPromo"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
-import { normalizeLocale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 
 const NL_METADATA: Metadata = {
@@ -29,7 +28,7 @@ const NL_METADATA: Metadata = {
     description:
       "Compacte 3D-printstudio in Herzele. PLA als standaard, met PETG, ABS/ASA, Nylon en PA-CF wanneer het project dat vraagt.",
     url: "https://www.x3dprints.be/about",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630 }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -53,7 +52,7 @@ const EN_METADATA: Metadata = {
     description:
       "Compact 3D printing studio in Herzele. PLA as standard, with PETG, ABS/ASA, Nylon and PA-CF when the project demands it.",
     url: "https://www.x3dprints.be/en/about",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og-home.svg", width: 1200, height: 630 }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -234,11 +233,10 @@ const BUILD_VOLUME_CM = 35
 const LEAD_TIME_DAYS = 5
 const TOLERANCE_MM = 0.2
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+type PageProps = { localeOverride?: "nl" | "en" }
 
-export default async function Page({ searchParams }: PageProps) {
-  const params = await searchParams
-  const normalizedLocale = normalizeLocale(params?.lang)
+export default function Page({ localeOverride = "nl" }: PageProps) {
+  const normalizedLocale = localeOverride
   const isEn = normalizedLocale === "en"
   const copy = isEn ? ABOUT_COPY_EN : ABOUT_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)

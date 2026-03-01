@@ -2,6 +2,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import type { ReactNode } from "react"
+import { Clock3, MapPin, Target } from "lucide-react"
 import Reveal from "@/components/Reveal"
 import Parallax from "@/components/Parallax"
 import FilamentHeroVisual from "@/components/FilamentHeroVisual"
@@ -10,9 +11,11 @@ import Catchphrase from "@/components/Catchphrase"
 import GlassOrb from "@/components/GlassOrb"
 import GlassCard from "@/components/GlassCard"
 import GoogleReviewHighlights from "@/components/GoogleReviewHighlights"
+import HeroTrustBar, { type HeroTrustItem } from "@/components/HeroTrustBar"
+import LeadTimeStatus from "@/components/LeadTimeStatus"
+import QuickContactActions from "@/components/QuickContactActions"
 import MaterialSwatches, { type Swatch } from "@/components/MaterialSwatches"
-import { normalizeLocale } from "@/lib/i18n/locales"
-import { localizeHref } from "@/lib/i18n/paths"
+import { localizeHref } from "@/lib/i18n/paths"
 import { buildFaqPageSchema } from "@/lib/seo"
 
 
@@ -33,7 +36,7 @@ const NL_METADATA: Metadata = {
     description:
       "Van STL/STEP naar strakke 3D prints voor bedrijven in België. Prototypes, tooling en onderdelen op maat met korte lijnen.",
     url: "https://www.x3dprints.be/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D print service van X3DPrints" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "3D print service van X3DPrints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +44,7 @@ const NL_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D printen voor bedrijven in België | X3DPrints",
     description: "B2B 3D print service in België voor prototypes, jigs en onderdelen op maat.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -62,7 +65,7 @@ const EN_METADATA: Metadata = {
     description:
       "From STL/STEP to production-ready prints for business use cases: prototypes, tooling and custom parts in Belgium.",
     url: "https://www.x3dprints.be/en/",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D printing service by X3DPrints" }],
+    images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "3D printing service by X3DPrints" }],
     locale: "en_BE",
     siteName: "X3DPrints",
   },
@@ -70,7 +73,7 @@ const EN_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D printing for businesses in Belgium | X3DPrints",
     description: "B2B 3D printing for prototypes, jigs, fixtures and custom parts in Belgium.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-en.svg"],
   },
 }
 
@@ -707,15 +710,25 @@ const HOME_COPY_EN = {
   ],
 }
 
-type PageProps = { searchParams?: Promise<{ lang?: string } | undefined> }
+type PageProps = { localeOverride?: "nl" | "en" }
 
-export default async function HomePage({ searchParams }: PageProps) {
-  const params = await searchParams
-  const normalizedLocale = normalizeLocale(params?.lang)
+export default function HomePage({ localeOverride = "nl" }: PageProps) {
+  const normalizedLocale = localeOverride
   const isEn = normalizedLocale === "en"
   const localize = (href: string) => localizeHref(href, normalizedLocale)
   const copy = isEn ? HOME_COPY_EN : HOME_COPY_NL
   const seasonCta = getSeasonCta(new Date(), isEn)
+  const heroTrustFacts: HeroTrustItem[] = isEn
+    ? [
+        { icon: MapPin, label: "Local studio & region", value: "Herzele, Ghent and all of Flanders" },
+        { icon: Clock3, label: "Response speed", value: "First response usually within 24 hours" },
+        { icon: Target, label: "Use-case focus", value: "Prototypes, tooling and custom parts" },
+      ]
+    : [
+        { icon: MapPin, label: "Lokale studio & regio", value: "Herzele, Gent en heel Vlaanderen" },
+        { icon: Clock3, label: "Reactiesnelheid", value: "Eerste antwoord meestal binnen 24 uur" },
+        { icon: Target, label: "Use-case focus", value: "Prototypes, tooling en onderdelen op maat" },
+      ]
   function icon(shape: ReactNode) {
     return (
       <svg
@@ -784,6 +797,7 @@ export default async function HomePage({ searchParams }: PageProps) {
             <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 sm:text-lg">
               {copy.hero.intro}
             </p>
+            <LeadTimeStatus locale={normalizedLocale} className="mt-6 max-w-2xl" />
             <div className="stacked-actions mt-10 flex flex-wrap items-center gap-3 justify-center sm:justify-start">
               <ShimmerButton
                 href={localize("/contact")}
@@ -816,6 +830,12 @@ export default async function HomePage({ searchParams }: PageProps) {
                 {copy.hero.ctas.guide}
               </Link>
               <Link
+                href={localize("/cases")}
+                className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
+              >
+                {isEn ? "Case studies" : "Case studies"}
+              </Link>
+              <Link
                 href={localize("/segments/3d-printing-makers")}
                 className="inline-flex items-center gap-2 rounded-xl border border-indigo-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white"
               >
@@ -828,45 +848,16 @@ export default async function HomePage({ searchParams }: PageProps) {
                 {seasonCta.label}
               </Link>
             </div>
+            <QuickContactActions
+              locale={normalizedLocale}
+              trackingCategory="home_hero"
+              showQuote={false}
+              className="mt-4 justify-center sm:justify-start"
+            />
           </Reveal>
 
-          <Reveal delay={0.15} className="mt-16 grid gap-6 sm:grid-cols-3">
-            {[
-              {
-                ...copy.heroStats[0],
-                icon: icon(<path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 12h16M4 16h16" />),
-              },
-              {
-                ...copy.heroStats[1],
-                icon: icon(
-                  <>
-                    <circle cx={12} cy={12} r={9} />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l2 2" />
-                  </>
-                ),
-              },
-              {
-                ...copy.heroStats[2],
-                icon: icon(
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21 16V8l-9-5-9 5v8l9 5 9-5ZM12 3v18M3 8l9 4 9-4"
-                  />
-                ),
-              },
-            ].map((item) => (
-            <GlassCard
-              key={item.label}
-              className="group border-white/40 bg-gradient-to-br from-white/80 to-white/40 p-5 text-center shadow-lg ring-1 ring-white/60 transition-transform hover:-translate-y-1 dark:border-[#0F203C] dark:bg-[radial-gradient(140%_140%_at_20%_10%,rgba(0,230,255,0.08),transparent),radial-gradient(120%_120%_at_80%_0%,rgba(215,38,61,0.07),transparent),#0B0F1A] dark:ring-0 dark:shadow-[0_18px_50px_rgba(0,0,0,0.55),0_0_0_1px_rgba(0,230,255,0.15)]"
-            >
-              <div className="flex items-center justify-center text-indigo-600 dark:text-[#00E6FF]">
-                {item.icon}
-              </div>
-              <div className="text-sm font-medium text-slate-500 dark:text-slate-100">{item.label}</div>
-              <div className="mt-1 text-xl font-semibold text-slate-900 dark:text-white">{item.value}</div>
-            </GlassCard>
-            ))}
+          <Reveal delay={0.15} className="mt-12">
+            <HeroTrustBar items={heroTrustFacts} />
           </Reveal>
         </div>
       </section>

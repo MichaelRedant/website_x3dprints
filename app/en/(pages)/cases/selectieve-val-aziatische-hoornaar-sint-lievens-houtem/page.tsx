@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "X3DPrints",
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-cases-en.svg",
         width: 1200,
         height: 630,
         alt: "Case Study - Selective trap against Asian hornet by X3DPrints",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Case Study: Selective Trap for Asian Hornet",
     description: "Local impact with 3D printing: from design to scalable production and communication.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-cases-en.svg"],
   },
 }
 
@@ -147,12 +147,12 @@ const articleJsonLd = {
     url: "https://www.x3dprints.be",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.x3dprints.be/og-x3dprints.jpg",
+      url: "https://www.x3dprints.be/images/og-default.svg",
     },
   },
   mainEntityOfPage: canonical,
   url: canonical,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-cases-en.svg",
   inLanguage: "en-BE",
 }
 
@@ -183,7 +183,7 @@ export default function CaseStudySelectiveTrapEnPage() {
               <ol className="flex flex-wrap gap-2">
                 <li>
                   <Link
-                    href="/en/blog#segments-cases"
+                    href="/en/cases"
                     className="font-medium text-indigo-600 transition hover:text-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                   >
                     Cases

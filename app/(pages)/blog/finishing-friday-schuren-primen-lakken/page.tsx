@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     tags: ["3D print afwerking", "schuren van 3D prints", "primen en lakken", "Finishing Friday"],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "3D print finishing advies door X3DPrints",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Finishing Friday: schuren, primen en lakken",
     description:
       "Schuren, primen en lakken van 3D prints uitgelegd. Wanneer zinvol, wanneer overkill, en waarom X3DPrints zich focust op nette FDM-prints.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -185,7 +185,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: "Finishing Friday van X3DPrints. Uitleg over schuren, primen en lakken van 3D prints plus nuance: netjes FDM printen volstaat vaak, finishing doen we niet standaard in-house.",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 

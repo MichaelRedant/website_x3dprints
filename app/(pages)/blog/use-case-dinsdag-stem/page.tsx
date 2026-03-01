@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     publishedTime: publishedDate,
     authors: ["https://www.x3dprints.be"],
     tags: ["3D printen STEM", "3D printen onderwijs", "makerspace workflows", "Use Case Dinsdag"],
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "STEM en makerspace 3D prints" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "STEM en makerspace 3D prints" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Use Case Dinsdag: 3D printen voor STEM & makerspaces",
     description:
       "Betrouwbare educatieve workflows met PLA, PETG en TPU. Inclusief instellingen, projectvoorbeelden en tips voor scholen.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -199,7 +199,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"

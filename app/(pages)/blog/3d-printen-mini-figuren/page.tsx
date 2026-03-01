@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description:
       "Leer hoe je haarscherpe D&D en Warhammer mini's print: materiaalkeuze, detail, supports, primer, schilderen en veilige levering.",
   url: canonical,
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte miniaturen en dice tower" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "3D geprinte miniaturen en dice tower" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D printen van miniaturen voor tabletop gaming",
     description: "Van STL tot geprinte mini's: detail, supports, curing en schildertips voor D&D/Warhammer.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 

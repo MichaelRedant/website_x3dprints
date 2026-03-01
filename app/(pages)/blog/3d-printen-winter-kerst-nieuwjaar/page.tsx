@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "Praktische gids voor eindejaarsprints met materiaaladvies, technische tips en planning.",
     url: canonical,
     type: "article",
-    images: [{ url: "/images/og-home.jpg", width: 1200, height: 630, alt: "3D geprinte kerstdecoratie" }],
+    images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "3D geprinte kerstdecoratie" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "3D printen voor winter, Kerst en Nieuwjaar 2026",
     description:
       "Gids voor winterse 3D prints met materiaalkeuze, checklist en planning richting eindejaar.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -139,7 +139,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
   inLanguage: "nl-BE",
 })
 

@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     authors: ["https://www.x3dprints.be"],
     tags: ["choose 3D print material", "PLA vs PETG vs TPU", "how-to"],
     images: [
-      { url: "/images/filament/pla_matte_Car_PC.webp", width: 1200, height: 630, alt: "Overview of 3D print materials by X3DPrints" },
+      { url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "Overview of 3D print materials by X3DPrints" },
     ],
     locale: "en_BE",
     siteName: "X3DPrints",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How-to: choose the right 3D print material",
     description: "From PLA Matte to PETG and TPU: how to select the best material for your 3D print job.",
-    images: ["/images/filament/pla_matte_Car_PC.webp"],
+    images: ["/images/og-blog-en.svg"],
   },
 }
 
@@ -164,7 +164,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: metadata.description ?? "",
   datePublished,
   dateModified,
-  image: "/images/filament/pla_matte_Car_PC.webp",
+  image: "/images/og-blog-en.svg",
   inLanguage: "en-BE",
 })
 

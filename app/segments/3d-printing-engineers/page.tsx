@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Jigs, fixtures en functionele prototypes met korte communicatielijnen en realistische planning.",
     url: "https://www.x3dprints.be/segments/3d-printing-engineers/",
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D printing voor engineers" }],
+    images: [{ url: "/images/og-segments-nl.svg", width: 1200, height: 630, alt: "3D printing voor engineers" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "3D printing voor engineers",
     description:
       "Functionele onderdelen met duidelijke tolerantierichtlijnen en materiaaladvies.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-segments-nl.svg"],
   },
 }
 
@@ -147,7 +147,7 @@ const serviceOffers: SchemaOfferInput[] = [
 const localBusinessJsonLd = buildLocalBusinessSchema({
   pageUrl,
   description: pageDescription,
-  image: "/Logo.webp",
+  image: "/images/og-segments-nl.svg",
   areaServed: "Gent en Vlaanderen",
   priceRange: "EUR 5 - EUR 49",
 })

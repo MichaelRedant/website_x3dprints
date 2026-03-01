@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.x3dprints.be/materials/",
     images: [
       {
-        url: "/images/filament/petg_1.webp",
+        url: "/images/og-materials-nl.svg",
         width: 1200,
         height: 630,
         alt: "Materialen voor 3D printen bij X3DPrints",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "3D print materialen | X3DPrints",
     description:
       "Vergelijk 3D print materiaal: PLA-varianten, PETG en TPU met kleuren, specs en voorraadstatus.",
-    images: ["/images/filament/petg_1.webp"],
+    images: ["/images/og-materials-nl.svg"],
   },
 }
 

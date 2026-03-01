@@ -14,12 +14,14 @@
     "check:security:crm-auth": "node scripts/check-security-crm-auth.mjs",
     "check:security": "npm run check:security:public-data && npm run check:security:crm-auth",
     "verify": "npm run lint && npm run check:security && npm run build && npm run check:seo",
+    "verify:ci": "npm run lint && npm run check:security && npm run build && npm run check:seo:fast",
     "test": "vitest run",
     "check:seo:metadata": "node scripts/check-seo-metadata.mjs",
     "check:seo:locale-diff": "node scripts/check-seo-locale-diff.mjs",
     "check:seo:locale-links": "node scripts/check-seo-locale-links.mjs",
     "check:seo:templates": "node scripts/check-seo-templates.mjs",
     "check:seo:quality": "node scripts/check-seo-quality.mjs",
+    "check:seo:capacity-copy": "node scripts/check-seo-capacity-copy.mjs",
     "check:seo:html-lang": "node scripts/check-seo-html-lang.mjs",
     "check:seo:schema": "node scripts/check-seo-schema.mjs",
     "check:seo:schema:locale": "node scripts/check-seo-schema-locale.mjs",
@@ -33,7 +35,9 @@
     "fix:seo:location-keywords": "node scripts/fix-seo-location-keywords.mjs",
     "check:seo:locations": "node scripts/check-seo-location-locality.mjs",
     "fix:seo:locations": "node scripts/fix-seo-location-locality.mjs",
-    "check:seo": "npm run check:seo:metadata && npm run check:seo:locale-diff && npm run check:seo:locale-links && npm run check:seo:templates && npm run check:seo:quality && npm run check:seo:html-lang && npm run check:seo:schema && npm run check:seo:schema:locale && npm run check:seo:og && npm run check:seo:robots && npm run check:seo:sitemap && npm run check:seo:links && npm run check:seo:refresh && npm run check:seo:keywords && npm run check:seo:location-keywords && npm run check:seo:locations"
+    "check:seo:fast": "npm run check:seo:metadata && npm run check:seo:locale-diff && npm run check:seo:templates && npm run check:seo:quality && npm run check:seo:html-lang && npm run check:seo:schema && npm run check:seo:schema:locale && npm run check:seo:og && npm run check:seo:robots && npm run check:seo:sitemap && npm run check:seo:links && npm run check:seo:keywords && npm run check:seo:location-keywords && npm run check:seo:locations",
+    "check:seo:deep": "npm run check:seo:locale-links && npm run check:seo:refresh",
+    "check:seo": "npm run check:seo:fast && npm run check:seo:deep"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",

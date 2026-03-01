@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Leer stap voor stap hoe je jouw eerste 3D print laat maken: materiaal, files, voorbeelden en begeleiding vanuit Herzele.",
     url: canonical,
-    images: [{ url: "/images/portfolio/20241024_081839-1.jpg", width: 1200, height: 630, alt: "3D printen voor beginners" }],
+    images: [{ url: "/images/og-viewer-nl.svg", width: 1200, height: 630, alt: "3D printen voor beginners" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "3D printen voor beginners",
     description:
       "Een praktische gids voor iedereen die net begint met 3D printen. Inclusief tips, fouten die je vermijdt en opleidingsmogelijkheden.",
-    images: ["/images/portfolio/20241024_081839-1.jpg"],
+    images: ["/images/og-viewer-nl.svg"],
   },
 }
 
@@ -80,7 +80,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Gids voor beginners met stappenplan, materiaalkeuze en veelgemaakte fouten. Inclusief tips voor begeleiding en opleiding.",
   datePublished,
   dateModified,
-  image: "/images/portfolio/20241024_081839-1.jpg",
+  image: "/images/og-viewer-nl.svg",
   inLanguage: "nl-BE",
 })
 

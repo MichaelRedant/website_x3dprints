@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description:
       "Tabel met prijsranges per stuk, uitleg van de kostblokken en tips om je 3D print budget te optimaliseren.",
     url: canonical,
-    images: [{ url: "/Logo.webp", width: 1200, height: 630, alt: "3D print prijs per stuk" }],
+    images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "3D print prijs per stuk" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D print prijs per stuk: single vs serie",
     description: "Prijs per stuk uitgelegd met tabel en optimalisatietips.",
-    images: ["/Logo.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -142,7 +142,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Uitleg van setupkosten, printtijd en schaal met een tabel voor prijs per stuk en optimalisatietips.",
   datePublished,
   dateModified,
-  image: "/Logo.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 

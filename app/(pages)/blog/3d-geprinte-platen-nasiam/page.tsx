@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   url: canonical,
     images: [
       {
-        url: "/images/3d-geprinte-platen.webp",
+        url: "/images/og-blog-nl.svg",
         width: 1200,
         height: 630,
         alt: "3D-geprinte platen met QR-code voor NaSiam",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "NaSiam x X3DPrints: 3D-geprinte platen met QR",
     description:
       "Case: herbruikbare platen met QR-code voor massagesalon NaSiam in Sint-Job-in-'t-Goor, inzetbaar op events en in het salon.",
-    images: ["/images/3d-geprinte-platen.webp"],
+    images: ["/images/og-blog-nl.svg"],
   },
 }
 
@@ -98,7 +98,7 @@ const articleJsonLd = buildArticleJsonLd({
     "Case study over twee herbruikbare 3D-geprinte platen met logo en QR-code voor NaSiam in Sint-Job, inclusief materiaalkeuzes en montageadvies.",
   datePublished,
   dateModified,
-  image: "/images/3d-geprinte-platen.webp",
+  image: "/images/og-blog-nl.svg",
   inLanguage: "nl-BE",
 })
 
@@ -197,7 +197,7 @@ export default function NaSiamArticlePage() {
             </div>
             <div className="relative overflow-hidden rounded-3xl border border-white/60 bg-white/80 shadow-lg">
               <Image
-                src="/images/3d-geprinte-platen.webp"
+                src="/images/og-blog-nl.svg"
                 alt="3D-geprinte NaSiam platen met logo en QR-code"
                 width={960}
                 height={720}

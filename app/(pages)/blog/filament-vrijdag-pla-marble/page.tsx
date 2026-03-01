@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     tags: ["Filament Vrijdag", "PLA Marble", "Speciale PLA", "Design props"],
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-home-nl.svg",
         width: 1200,
         height: 630,
         alt: "PLA Marble advies door X3DPrints",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Filament Vrijdag #5: PLA Marble 3D printen",
     description: "Steenlook zonder gewicht: PLA Marble varianten, instellingen en toepassingen vanuit de X3DPrints studio.",
-    images: ["/images/og-home.jpg"],
+    images: ["/images/og-home-nl.svg"],
   },
 }
 
@@ -180,7 +180,7 @@ const articleJsonLd = buildArticleJsonLd({
   description: "Filament Vrijdag #5 van X3DPrints. Leer wat PLA Marble is, hoe je het print en wanneer je het inzet voor designprops, retail en cosplay.",
   datePublished: publishedDate,
   dateModified,
-  image: "https://www.x3dprints.be/images/og-home.jpg",
+  image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
 
