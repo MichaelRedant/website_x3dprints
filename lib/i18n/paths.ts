@@ -13,6 +13,7 @@ const EN_PATHS = new Set<string>([
   "/organizers/custom",
   "/blog",
   "/contact",
+  "/contact/bedankt",
   "/3d-printen",
   "/3d-modelleren",
   "/sustainability",

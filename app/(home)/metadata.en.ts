@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 
 export const EN_METADATA: Metadata = {
-  title: "3D printing for businesses in Belgium | X3DPrints",
+  title: "Custom 3D printing for businesses and individuals | X3DPrints",
   description:
-    "B2B 3D printing in Belgium from Herzele. We produce prototypes, jigs, fixtures and custom parts with clear quotes and reliable lead times.",
+    "From replacement parts and organizers to prototypes, retail items, fidget toys and figurines. Local production in Belgium with fast communication.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/",
     languages: {
@@ -13,9 +13,9 @@ export const EN_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "3D printing for businesses in Belgium | X3DPrints",
+    title: "Custom 3D printing for businesses and individuals | X3DPrints",
     description:
-      "From STL/STEP to production-ready prints for business use cases: prototypes, tooling and custom parts in Belgium.",
+      "Replacement parts, organizers, prototypes, retail items, fidget toys and figurines. Printed fast and local in Belgium.",
     url: "https://www.x3dprints.be/en/",
     images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630 }],
     locale: "en_BE",
@@ -23,8 +23,8 @@ export const EN_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printing for businesses in Belgium | X3DPrints",
-    description: "B2B 3D printing for prototypes, jigs, fixtures and custom parts in Belgium.",
+    title: "Custom 3D printing for businesses and individuals | X3DPrints",
+    description: "3D printing in Belgium for parts, organizers, prototypes, retail items and more.",
     images: ["/images/og-home-en.svg"],
   },
 }

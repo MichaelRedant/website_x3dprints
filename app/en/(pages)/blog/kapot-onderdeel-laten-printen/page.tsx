@@ -60,7 +60,7 @@ const decisionCards = [
   {
     title: "Faster than waiting for imports",
     body:
-      "For one-offs and small batches, printing usually beats slow international sourcing.",
+      "For one-offs and Short production runs, printing usually beats slow international sourcing.",
     link: { href: "/en/blog/3d-printen-op-bestelling", label: "Read: 3D printing on demand" },
   },
   {
@@ -90,7 +90,7 @@ const processSteps = [
   {
     title: "4. Test fit and final run",
     body:
-      "For critical parts we start with a fit sample, then schedule final production or a small batch.",
+      "For critical parts we start with a fit sample, then schedule final production or a Short production run.",
   },
 ]
 
@@ -149,7 +149,7 @@ const faqItems = [
     a: "Usually within 24 hours when enough context is provided. STL/STEP speeds this up.",
   },
   {
-    q: "Can you scale to a small batch after fit validation?",
+    q: "Can you scale to a Short production run after fit validation?",
     a: "Yes. Once fit is confirmed we can run a repeatable small-batch setup.",
   },
 ]

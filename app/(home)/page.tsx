@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import type { ReactNode } from "react"
@@ -20,9 +20,9 @@ import { buildFaqPageSchema } from "@/lib/seo"
 
 
 const NL_METADATA: Metadata = {
-  title: "3D printen voor bedrijven in België | X3DPrints",
+  title: "3D printen op maat voor bedrijven en particulieren | X3DPrints",
   description:
-    "3D print service België voor bedrijven: prototypes, jigs, fixtures en onderdelen op maat. Vanuit Herzele met direct materiaaladvies en duidelijke offertes.",
+    "Van onderdelen en organizers tot prototypes, etalage-items, fidget toys en beeldjes. Lokale 3D printservice in Belgie met snelle opvolging.",
   alternates: {
     canonical: "https://www.x3dprints.be/",
     languages: {
@@ -32,9 +32,9 @@ const NL_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "3D print service voor bedrijven in België | X3DPrints",
+    title: "3D printen op maat voor bedrijven en particulieren | X3DPrints",
     description:
-      "Van STL/STEP naar strakke 3D prints voor bedrijven in België. Prototypes, tooling en onderdelen op maat met korte lijnen.",
+      "Onderdelen, organizers, prototypes, etalage-items, fidget toys en beeldjes. Snel en lokaal geprint in Belgie.",
     url: "https://www.x3dprints.be/",
     images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "3D print service van X3DPrints" }],
     locale: "nl_BE",
@@ -42,16 +42,16 @@ const NL_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printen voor bedrijven in België | X3DPrints",
-    description: "B2B 3D print service in België voor prototypes, jigs en onderdelen op maat.",
+    title: "3D printen op maat voor bedrijven en particulieren | X3DPrints",
+    description: "3D printservice in Belgie voor onderdelen, organizers, prototypes, etalage-items en meer.",
     images: ["/images/og-home-nl.svg"],
   },
 }
 
 const EN_METADATA: Metadata = {
-  title: "3D printing for businesses in Belgium | X3DPrints",
+  title: "Custom 3D printing for businesses and individuals | X3DPrints",
   description:
-    "B2B 3D printing in Belgium from Herzele. We produce prototypes, jigs, fixtures and custom parts with clear quotes and reliable lead times.",
+    "From replacement parts and organizers to prototypes, retail items, fidget toys and figurines. Local production in Belgium with fast communication.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/",
     languages: {
@@ -61,9 +61,9 @@ const EN_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "3D printing for businesses in Belgium | X3DPrints",
+    title: "Custom 3D printing for businesses and individuals | X3DPrints",
     description:
-      "From STL/STEP to production-ready prints for business use cases: prototypes, tooling and custom parts in Belgium.",
+      "Replacement parts, organizers, prototypes, retail items, fidget toys and figurines. Printed fast and local in Belgium.",
     url: "https://www.x3dprints.be/en/",
     images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "3D printing service by X3DPrints" }],
     locale: "en_BE",
@@ -71,12 +71,11 @@ const EN_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printing for businesses in Belgium | X3DPrints",
-    description: "B2B 3D printing for prototypes, jigs, fixtures and custom parts in Belgium.",
+    title: "Custom 3D printing for businesses and individuals | X3DPrints",
+    description: "3D printing in Belgium for parts, organizers, prototypes, retail items and more.",
     images: ["/images/og-home-en.svg"],
   },
 }
-
 void EN_METADATA
 
 export const metadata: Metadata = NL_METADATA
@@ -131,19 +130,19 @@ function getSeasonCta(date: Date, isEn: boolean) {
 
 const HOME_COPY_NL = {
   hero: {
-    badge: "3D print service voor bedrijven in Vlaanderen",
-    catchphrase: "Prototypes, jigs, fixtures en onderdelen op maat",
-    title: "3D printen voor bedrijven in België, vanuit Herzele.",
-    subtitle: "Engineeringkwaliteit, directe communicatie en transparante prijzen",
+    badge: "3D printservice op maat in Belgie",
+    catchphrase: "Van idee tot afgewerkt 3D product, snel en lokaal geprint",
+    title: "3D printen op aanvraag voor bedrijven en particulieren.",
+    subtitle: "Functioneel of creatief: gemaakt om te gebruiken en op te vallen",
     intro:
-      "X3DPrints helpt KMO's, engineers en productteams met 3D printen op maat in Belgie. Van STL/STEP-check en materiaaladvies tot levering van prototypes, jigs, fixtures en onderdelen op maat. Je werkt rechtstreeks met mij als maker: korte lijnen, realistische planning en onderdelen die functioneel kloppen.",
+      "X3DPrints print op maat voor bedrijven en particulieren in Belgie. Van onderdelen, organizers en prototypes tot etalage-items, fidget toys en beeldjes. Jij brengt het idee of model, ik verzorg materiaaladvies, print en afwerking met snelle, duidelijke opvolging.",
     ctas: {
       quote: "Offerte aanvragen",
-      consumerAdvice: "B2B diensten",
+      consumerAdvice: "Diensten voor bedrijven",
       organizers: "Tool organizers",
-      knowledge: "Cases voor bedrijven",
+      knowledge: "Cases & toepassingen",
       guide: "Kennisbank",
-      tool: "Particulieren advies",
+      tool: "Advies voor particulieren",
     },
   },
   heroStats: [
@@ -166,7 +165,7 @@ const HOME_COPY_NL = {
     body1:
       "Eenpersoonsstudio in bijberoep. Je schakelt een Belgische 3D print service in met rechtstreeks contact met de maker die ook produceert, test en afwerkt. Geen tickets of callcenters, wel korte lijnen, duidelijke afspraken en onderdelen die passen.",
     body2:
-      "Actief in regio Gent, Aalst, Geraardsbergen en Oudenaarde. Voor bedrijven printen we prototypes, jigs, fixtures, displays en kleine series. Daarnaast maken we ook maatwerk en personalisaties voor particulieren.",
+      "Actief in regio Gent, Aalst, Geraardsbergen en Oudenaarde. We printen alles van functionele onderdelen, organizers en prototypes tot etalage-items, gadgets en persoonlijke stukken voor bedrijven en particulieren.",
     ctas: {
       services: "Diensten",
       materials: "Materialen",
@@ -176,14 +175,14 @@ const HOME_COPY_NL = {
     kicker: "Tool organizers op maat",
     title: "Perfect georganiseerde gereedschapskoffers, op maat van jouw systeem.",
     body:
-      "Eén hub met organizers voor Gridfinity, Packout, TSTAK en custom koffers. Geen STL’s of losse bakjes: vaste layouts, labelbaar en fit per ladehoogte. Gridfinity krijgt extra aandacht: open-source raster, hyper-flexibel en volledig op maat te printen.",
+      "EÃƒÆ’Ã‚Â©n hub met organizers voor Gridfinity, Packout, TSTAK en custom koffers. Geen STLÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s of losse bakjes: vaste layouts, labelbaar en fit per ladehoogte. Gridfinity krijgt extra aandacht: open-source raster, hyper-flexibel en volledig op maat te printen.",
     pains: ["Schroeven door elkaar", "Lege ruimte in koffers", "Tijdverlies bij zoeken", "Slecht overzicht"],
     solutions: ["Klemvaste trays zonder rammel", "Labelzones en kleurcodes", "Antislip optioneel", "Pasvorm per ladehoogte"],
     ctas: {
       primary: "Bekijk organizers",
       secondary: "Vraag je indeling aan",
     },
-    badge: "Print-on-demand in België · Gridfinity/Packout/TSTAK/custom",
+    badge: "Print-on-demand in BelgiÃƒÆ’Ã‚Â« Ãƒâ€šÃ‚Â· Gridfinity/Packout/TSTAK/custom",
   },
   segments: {
     title: "Voor welke bedrijven we printen",
@@ -196,7 +195,7 @@ const HOME_COPY_NL = {
           "Prototypes voor productontwikkeling",
           "Jigs, fixtures en hulpmallen",
           "Displays, houders en POS-materiaal",
-          "Kleine series en onderdelen op maat",
+          "Korte reeksen en onderdelen op maat",
         ],
       },
       {
@@ -212,7 +211,7 @@ const HOME_COPY_NL = {
       gallery: "Galerij bekijken",
       start: "Start je B2B printproject",
     },
-    tags: ["Prototypes & productontwikkeling", "Jigs, fixtures & tooling", "Kleine series & onderdelen op maat"],
+    tags: ["Prototypes & productontwikkeling", "Jigs, fixtures & tooling", "Korte reeksen & onderdelen op maat"],
   },
   personalization: {
     title: "Personalisatie",
@@ -366,12 +365,12 @@ const HOME_COPY_NL = {
   pricing: {
     title: "Prijs, planning & levering voor B2B",
     body:
-      "Je krijgt een duidelijke offerte op basis van functie, afmetingen, materiaal en afwerking. We stemmen planning op voorhand af en adviseren waar je ontwerp sneller of kostenefficiënter kan zonder kwaliteitsverlies.",
+      "Je krijgt een duidelijke offerte op basis van functie, afmetingen, materiaal en afwerking. We stemmen planning op voorhand af en adviseren waar je ontwerp sneller of kostenefficiÃƒÆ’Ã‚Â«nter kan zonder kwaliteitsverlies.",
     cards: [
       {
         title: "Prijsopbouw",
         description:
-          "Materiaal, printtijd, afwerking en eventuele montage. We sturen op kost-efficiëntie voor bedrijven.",
+          "Materiaal, printtijd, afwerking en eventuele montage. We sturen op kost-efficiÃƒÆ’Ã‚Â«ntie voor bedrijven.",
       },
       {
         title: "Levertijd",
@@ -406,8 +405,8 @@ const HOME_COPY_NL = {
       a: "Vaak enkele werkdagen, afhankelijk van planning, materiaal en eventuele nabewerking. We stemmen de planning samen af.",
     },
     {
-      q: "Kunnen jullie ook kleine series voor bedrijven produceren?",
-      a: "Ja. Naast prototypes en enkelstuks produceren we ook kleine series voor functionele toepassingen, interne tooling en eindgebruik.",
+      q: "Kunnen jullie ook Korte reeksen voor bedrijven produceren?",
+      a: "Ja. Naast prototypes en enkelstuks produceren we ook Korte reeksen voor functionele toepassingen, interne tooling en eindgebruik.",
     },
     {
       q: "Wat kost 3D printen voor bedrijven?",
@@ -422,17 +421,17 @@ const HOME_COPY_NL = {
 
 const HOME_COPY_EN = {
   hero: {
-    badge: "3D printing service for businesses in Flanders",
-    catchphrase: "Prototypes, jigs, fixtures and custom parts",
-    title: "3D printing for businesses in Belgium, from Herzele.",
-    subtitle: "Engineering-grade output, direct communication and transparent pricing",
+    badge: "Custom 3D printing service in Belgium",
+    catchphrase: "From idea to finished 3D product, printed fast and local",
+    title: "3D printing on demand for businesses and individuals.",
+    subtitle: "Functional or creative: made to use, made to stand out",
     intro:
-      "X3DPrints supports SMEs, engineers and product teams with custom 3D printing in Belgium. From STL/STEP checks and material guidance to delivery of prototypes, jigs, fixtures and custom parts. You work directly with me as the maker: short lines, realistic planning and function-first output.",
+      "X3DPrints delivers custom 3D printing for businesses and private clients in Belgium. From replacement parts, organizers and prototypes to retail items, fidget toys and figurines. You bring the idea or model, I handle material guidance, printing and finishing with fast, clear communication.",
     ctas: {
       quote: "Request a quote",
-      consumerAdvice: "B2B services",
+      consumerAdvice: "Business services",
       organizers: "Tool organizers",
-      knowledge: "Business case studies",
+      knowledge: "Cases & use cases",
       guide: "Knowledge base",
       tool: "Advice for individuals",
     },
@@ -457,7 +456,7 @@ const HOME_COPY_EN = {
     body1:
       "One-person studio (part-time). You work directly with the maker who prints, tests and finishes every part. No tickets or call centers, just direct communication, clear commitments and parts that fit.",
     body2:
-      "Active in the Ghent, Aalst, Geraardsbergen and Oudenaarde region. For businesses we produce prototypes, jigs, fixtures, displays and short runs. We also provide custom and personalized work for individuals.",
+      "Active in the Ghent, Aalst, Geraardsbergen and Oudenaarde region. We print everything from functional parts, organizers and prototypes to retail items, gadgets and personalized pieces for businesses and individuals.",
     ctas: {
       services: "Services",
       materials: "Materials",
@@ -474,7 +473,7 @@ const HOME_COPY_EN = {
       primary: "Explore organizers",
       secondary: "Request your layout",
     },
-    badge: "Print-on-demand in Belgium · Gridfinity/Packout/TSTAK/custom",
+    badge: "Print-on-demand in Belgium Ãƒâ€šÃ‚Â· Gridfinity/Packout/TSTAK/custom",
   },
   segments: {
     title: "Business teams we support",
@@ -710,10 +709,16 @@ const HOME_COPY_EN = {
   ],
 }
 
-type PageProps = { localeOverride?: "nl" | "en" }
+const resolveLocaleOverride = (props: unknown): "nl" | "en" => {
+  if (typeof props !== "object" || props === null) {
+    return "nl"
+  }
+  const localeOverride = (props as { localeOverride?: unknown }).localeOverride
+  return localeOverride === "en" ? "en" : "nl"
+}
 
-export default function HomePage({ localeOverride = "nl" }: PageProps) {
-  const normalizedLocale = localeOverride
+export default function HomePage(props: unknown) {
+  const normalizedLocale = resolveLocaleOverride(props)
   const isEn = normalizedLocale === "en"
   const localize = (href: string) => localizeHref(href, normalizedLocale)
   const copy = isEn ? HOME_COPY_EN : HOME_COPY_NL
@@ -1066,10 +1071,10 @@ export default function HomePage({ localeOverride = "nl" }: PageProps) {
                 Bundels & aanpak
               </div>
               <h3 className="mt-2 text-xl font-bold text-slate-900 dark:text-white">
-                Eén hub, vier systemen
+                EÃƒÆ’Ã‚Â©n hub, vier systemen
               </h3>
               <p className="mt-2 text-sm text-slate-700 dark:text-slate-200">
-                Eén centrale hub: Gridfinity, Packout, TSTAK en custom inserts. Jij kiest je systeem, wij leveren klemvaste trays die stil liggen en meteen inzetbaar zijn.
+                EÃƒÆ’Ã‚Â©n centrale hub: Gridfinity, Packout, TSTAK en custom inserts. Jij kiest je systeem, wij leveren klemvaste trays die stil liggen en meteen inzetbaar zijn.
               </p>
               <ul className="mt-4 space-y-2 text-sm text-slate-800 dark:text-slate-200">
                 {copy.organizers.solutions.map((sol) => (
@@ -1081,10 +1086,10 @@ export default function HomePage({ localeOverride = "nl" }: PageProps) {
               </ul>
               <div className="mt-5 grid gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-600 dark:text-slate-300">
                 <span className="rounded-xl bg-slate-900 px-3 py-2 text-[11px] font-bold text-white shadow-sm ring-1 ring-white/10 dark:bg-amber-500/90">
-                  Geen rammel · Geen losse bakjes · Layouts die passen in je koffer
+                  Geen rammel Ãƒâ€šÃ‚Â· Geen losse bakjes Ãƒâ€šÃ‚Â· Layouts die passen in je koffer
                 </span>
                 <span className="rounded-xl bg-white/80 px-3 py-2 text-[11px] font-semibold text-slate-800 ring-1 ring-white/60 dark:bg-[#0f162c] dark:text-slate-100 dark:ring-0">
-                  Prefill contact: kies systeem, voeg foto’s toe, wij tekenen de indeling
+                  Prefill contact: kies systeem, voeg fotoÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s toe, wij tekenen de indeling
                 </span>
               </div>
               <div className="mt-6 flex flex-wrap gap-3">
@@ -1435,6 +1440,7 @@ export default function HomePage({ localeOverride = "nl" }: PageProps) {
     </main>
   )
 }
+
 
 
 

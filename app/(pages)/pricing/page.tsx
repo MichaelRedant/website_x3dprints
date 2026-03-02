@@ -22,9 +22,9 @@ import {
 } from "@/lib/seo"
 
 const NL_METADATA: Metadata = {
-  title: "3D print prijs en prijzen 3D printen | X3DPrints",
+  title: "3D print prijs in Belgie voor bedrijven en particulieren | X3DPrints",
   description:
-    "Wat kost 3D printen? Bekijk je 3D print prijs vanaf EUR 5 (small), EUR 20 (medium) en EUR 49 (large), inclusief materiaalkeuze en heldere offerte binnen 24 uur.",
+    "Wat kost 3D printen in Belgie? Richtprijzen voor bedrijven en particulieren vanaf EUR 5 (small), EUR 20 (medium) en EUR 49 (large), met heldere offerte en materiaaladvies.",
   alternates: {
     canonical: "https://www.x3dprints.be/pricing/",
     languages: {
@@ -34,9 +34,9 @@ const NL_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "3D print prijs: wat kost 3D printen?",
+    title: "3D print prijs in Belgie | X3DPrints",
     description:
-      "Kosten 3D printen: vanaf EUR 5 (small), EUR 20 (medium) en EUR 49 (large). Gebruik de calculator voor actuele simulaties in België.",
+      "Kosten 3D printen voor bedrijven en particulieren: vanaf EUR 5 (small), EUR 20 (medium) en EUR 49 (large). Gebruik de calculator voor actuele simulaties.",
     url: "https://www.x3dprints.be/pricing/",
     images: [{ url: "/images/og-pricing-nl.svg", width: 1200, height: 630, alt: "Prijzen voor 3D printen" }],
     locale: "nl_BE",
@@ -44,17 +44,17 @@ const NL_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D print prijs en kosten",
+    title: "3D print prijs in Belgie",
     description:
-      "Indicatieve kosten 3D printen voor prototypes en series. Gebruik de calculator om impact van materiaal en grootte te zien.",
+      "Indicatieve kosten voor onderdelen, organizers, prototypes en maatwerk. Gebruik de calculator om impact van materiaal en grootte te zien.",
     images: ["/images/og-pricing-nl.svg"],
   },
 }
 
 const EN_METADATA: Metadata = {
-  title: "3D Printing Prices | X3DPrints",
+  title: "3D printing prices in Belgium for businesses and individuals | X3DPrints",
   description:
-    "3D printing prices from EUR 5 (small), EUR 20 (medium) and EUR 49 (large). PLA, PETG and TPU with a clear quote within 24 hours.",
+    "3D printing prices in Belgium from EUR 5 (small), EUR 20 (medium) and EUR 49 (large) for businesses and individuals. Clear quote and material advice.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/pricing/",
     languages: {
@@ -64,9 +64,9 @@ const EN_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "3D printing prices",
+    title: "3D printing prices in Belgium | X3DPrints",
     description:
-      "3D printing from EUR 5 (small), EUR 20 (medium) and EUR 49 (large). PLA, PETG and TPU. Delivery across Belgium.",
+      "3D printing rates for businesses and individuals: EUR 5 (small), EUR 20 (medium), EUR 49 (large). Parts, organizers, prototypes and custom pieces.",
     url: "https://www.x3dprints.be/en/pricing/",
     images: [{ url: "/images/og-pricing-en.svg", width: 1200, height: 630, alt: "3D printing prices" }],
     locale: "en_BE",
@@ -74,9 +74,9 @@ const EN_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printing prices",
+    title: "3D printing prices in Belgium",
     description:
-      "Indicative rates for prototypes and small to large batches. Materials: PLA (standard), PLA+ variants, PETG and TPU. Delivery across Belgium.",
+      "Indicative rates for parts, organizers, prototypes and custom pieces. Materials: PLA, PLA+ variants, PETG and TPU.",
     images: ["/images/og-pricing-en.svg"],
   },
 }
@@ -90,7 +90,7 @@ const PRICING_COPY_NL = {
   hero: {
     title: "Prijzen 3D printen",
     body:
-      "Zoek je een snelle 3D print prijs? Richtprijzen: kleine prints starten rond EUR 5, medium rond EUR 20 en grotere stukken rond EUR 49. PLA Matte is standaard; PLA+ varianten, PETG en TPU zijn beschikbaar voor extra look of performance. Droogbehandeling voor PETG/TPU is inbegrepen. Klaar om te bestellen? Vraag meteen je offerte.",
+      "Zoek je een snelle 3D print prijs? Voor bedrijven en particulieren starten richtprijzen rond EUR 5 (small), EUR 20 (medium) en EUR 49 (large). PLA Matte is standaard; PLA+ varianten, PETG en TPU zijn beschikbaar voor extra look of performance. Van onderdelen en organizers tot prototypes, etalage-items en persoonlijke stukken: je krijgt heldere prijsopbouw en duidelijke timing.",
     ctas: {
       quote: "Offerte aanvragen",
       materials: "Materialen & kleuren",
@@ -208,7 +208,7 @@ const PRICING_COPY_EN = {
   hero: {
     title: "3D printing pricing",
     body:
-      "Guideline pricing: small prints start around EUR 5, medium around EUR 20 and larger parts around EUR 49. PLA Matte is standard; PLA+ variants, PETG and TPU are available for extra look or performance. Drying for PETG/TPU is included. Ready to order? Request a quote right away.",
+      "Guideline pricing for businesses and individuals: small prints start around EUR 5, medium around EUR 20 and larger parts around EUR 49. PLA Matte is standard; PLA+ variants, PETG and TPU are available for extra look or performance. From parts and organizers to prototypes, retail items and personalized pieces, you get clear pricing logic and planning.",
     ctas: {
       quote: "Request a quote",
       materials: "Materials & colors",
@@ -322,10 +322,16 @@ const PRICING_COPY_EN = {
   },
 }
 
-type PageProps = { localeOverride?: "nl" | "en" }
+const resolveLocaleOverride = (props: unknown): "nl" | "en" => {
+  if (typeof props !== "object" || props === null) {
+    return "nl"
+  }
+  const localeOverride = (props as { localeOverride?: unknown }).localeOverride
+  return localeOverride === "en" ? "en" : "nl"
+}
 
-export default function Page({ localeOverride = "nl" }: PageProps) {
-  const normalizedLocale = localeOverride
+export default function Page(props: unknown) {
+  const normalizedLocale = resolveLocaleOverride(props)
   const isEn = normalizedLocale === "en"
   const copy = isEn ? PRICING_COPY_EN : PRICING_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)

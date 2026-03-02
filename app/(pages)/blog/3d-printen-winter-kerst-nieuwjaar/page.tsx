@@ -90,7 +90,7 @@ const checklist = [
   "Type project: ornament, tafeldecor, display of eventprop.",
   "Indoor/outdoor context en verwachte belasting delen.",
   "Materiaalkeuze op basis van look en omstandigheden.",
-  "Bevestiging en montagepunten vooraf definiëren.",
+  "Bevestiging en montagepunten vooraf definiÃ«ren.",
   "Deadline en leverwijze duidelijk aangeven.",
 ]
 
@@ -104,7 +104,7 @@ const faqItems = [
     a: "Ja. Translucent PLA met aangepaste wanddikte is geschikt voor zachte lichtspreiding.",
   },
   {
-    q: "Kunnen jullie kleine series voor bedrijfsevents leveren?",
+    q: "Kunnen jullie Korte reeksen voor bedrijfsevents leveren?",
     a: "Ja. Kleine en middelgrote reeksen voor events en retailcampagnes zijn mogelijk.",
   },
   {

@@ -16,9 +16,9 @@ import { localizeHref } from "@/lib/i18n/paths"
 import { buildFaqPageSchema } from "@/lib/seo"
 
 const NL_METADATA: Metadata = {
-  title: "3D print service België | Contact X3DPrints",
+  title: "Contact voor 3D printen in Belgie voor bedrijven en particulieren | X3DPrints",
   description:
-    "Vraag een offerte aan voor 3D printen in België: prototypes of kleine en grotere series. Snelle reactie, duidelijk over prijs en timing, regio Gent/Herzele.",
+    "Vraag een offerte aan voor 3D printen in Belgie voor bedrijven en particulieren: onderdelen, organizers, prototypes, etalage-items en maatwerk. Snelle reactie met duidelijke prijs en timing.",
   alternates: {
     canonical: "https://www.x3dprints.be/contact/",
     languages: {
@@ -28,9 +28,9 @@ const NL_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "Contact voor 3D print service in België | X3DPrints",
+    title: "Contact voor 3D printen in Belgie | X3DPrints",
     description:
-      "Vraag een offerte aan voor 3D printen in PLA, PETG of TPU. Lokale service in regio Gent met heldere prijs en levertijd.",
+      "Vraag een offerte aan voor onderdelen, organizers, prototypes en maatwerk in PLA, PETG of TPU. Lokale service met heldere prijs en levertijd.",
     url: "https://www.x3dprints.be/contact/",
     images: [{ url: "/images/og-contact-nl.svg", width: 1200, height: 630, alt: "Contact X3DPrints" }],
     locale: "nl_BE",
@@ -38,16 +38,16 @@ const NL_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact X3DPrints | 3D print offerte",
-    description: "Vraag een offerte voor 3D printen in PLA, PETG of TPU met duidelijke prijs en planning.",
+    title: "Contact X3DPrints | 3D print offerte in Belgie",
+    description: "Offerte voor bedrijven en particulieren: onderdelen, organizers, prototypes en maatwerk met duidelijke prijs en planning.",
     images: ["/images/og-contact-nl.svg"],
   },
 }
 
 const EN_METADATA: Metadata = {
-  title: "Contact | X3DPrints Belgium",
+  title: "Contact for custom 3D printing in Belgium | X3DPrints",
   description:
-    "Request a 3D printing quote: prototypes or small to large batches. Fast, clear and no fluff. Based in Herzele/Ghent region.",
+    "Request a 3D printing quote in Belgium for businesses and individuals: parts, organizers, prototypes, retail items and custom pieces. Fast response and clear pricing.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/contact/",
     languages: {
@@ -57,9 +57,9 @@ const EN_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "Contact | X3DPrints Belgium",
+    title: "Contact for custom 3D printing in Belgium | X3DPrints",
     description:
-      "Request a quote for PLA, PETG or TPU prints. Direct communication, clear on price and lead time.",
+      "Request a quote for parts, organizers, prototypes and custom pieces in PLA, PETG or TPU. Direct communication with clear pricing and lead time.",
     url: "https://www.x3dprints.be/en/contact/",
     images: [{ url: "/images/og-contact-en.svg", width: 1200, height: 630, alt: "Contact X3DPrints" }],
     locale: "en_BE",
@@ -67,8 +67,8 @@ const EN_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact X3DPrints | 3D printing quote",
-    description: "Request a 3D printing quote with clear pricing and lead times.",
+    title: "Contact X3DPrints | 3D printing quote in Belgium",
+    description: "Quotes for businesses and individuals with clear pricing and lead-time follow-up.",
     images: ["/images/og-contact-en.svg"],
   },
 }
@@ -76,9 +76,9 @@ const EN_METADATA: Metadata = {
 export const metadata: Metadata = NL_METADATA
 
 const NL_COPY = {
-  heroTitle: "Offerte voor 3D printen in België?",
+  heroTitle: "Offerte of vraag over 3D printen in Belgie?",
   heroIntro:
-    "STL-link, korte context en gewenst materiaal volstaan. Wil je een 3D model laten printen? Je krijgt snel een heldere prijs en timing, meestal binnen 24 uur.",
+    "STL-link, korte context en gewenst materiaal volstaan. Van onderdelen en organizers tot prototypes, etalage-items en persoonlijke stukken: je krijgt snel een heldere prijs en timing, meestal binnen 24 uur.",
   formHeading: "Contactformulier",
   formIntro: "Vul zo concreet mogelijk in. Voeg link(s) naar STL/STEP toe in het bericht.",
   formLoading: "Formulier wordt geladen...",
@@ -120,8 +120,8 @@ const NL_COPY = {
 }
 
 const EN_COPY = {
-  heroTitle: "Quote or question? Happy to help.",
-  heroIntro: "A STL link, short context and preferred material are enough. You'll get a clear price and lead time quickly, usually within 24 hours.",
+  heroTitle: "Quote or question for custom 3D printing?",
+  heroIntro: "A STL link, short context and preferred material are enough. From parts and organizers to prototypes, retail items and personalized pieces, you'll get a clear price and lead time quickly, usually within 24 hours.",
   formHeading: "Contact form",
   formIntro: "Be as specific as you can. Add link(s) to STL/STEP in your message.",
   formLoading: "Loading form...",
@@ -162,10 +162,16 @@ const EN_COPY = {
   description: EN_METADATA.description ?? "",
 }
 
-type PageProps = { localeOverride?: "nl" | "en" }
+const resolveLocaleOverride = (props: unknown): "nl" | "en" => {
+  if (typeof props !== "object" || props === null) {
+    return "nl"
+  }
+  const localeOverride = (props as { localeOverride?: unknown }).localeOverride
+  return localeOverride === "en" ? "en" : "nl"
+}
 
-export default function ContactPage({ localeOverride = "nl" }: PageProps) {
-  const normalizedLocale = localeOverride
+export default function ContactPage(props: unknown) {
+  const normalizedLocale = resolveLocaleOverride(props)
   const isEn = normalizedLocale === "en"
   const copy = isEn ? EN_COPY : NL_COPY
   const localize = (href: string) => localizeHref(href, normalizedLocale)
@@ -209,12 +215,12 @@ export default function ContactPage({ localeOverride = "nl" }: PageProps) {
     ? [
         { icon: MapPin, label: "Local studio & region", value: "Herzele, Ghent and all of Belgium" },
         { icon: Clock3, label: "Response speed", value: "First answer usually within 24 hours" },
-        { icon: Target, label: "Use-case focus", value: "Quotes for prototypes and functional parts" },
+        { icon: Target, label: "Use-case focus", value: "Quotes for parts, organizers, prototypes and custom pieces" },
       ]
     : [
         { icon: MapPin, label: "Lokale studio & regio", value: "Herzele, Gent en heel Belgie" },
         { icon: Clock3, label: "Reactiesnelheid", value: "Eerste antwoord meestal binnen 24 uur" },
-        { icon: Target, label: "Use-case focus", value: "Offertes voor prototypes en functionele onderdelen" },
+        { icon: Target, label: "Use-case focus", value: "Offertes voor onderdelen, organizers, prototypes en maatwerk" },
       ]
 
   const contactJsonLd = {

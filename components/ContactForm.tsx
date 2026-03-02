@@ -2,7 +2,7 @@
 "use client"
 
 import { useEffect, useMemo, useRef, useState } from "react"
-import { useSearchParams } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 import { MATERIALS, MATERIAL_KEY_BY_SLUG, materialSlug, type MaterialKey } from "@/lib/materials"
 import { useLocale } from "./LocaleProvider"
 import { trackEvent } from "@/lib/analytics"
@@ -25,6 +25,8 @@ const row = "grid gap-2"
 const groupCls =
   "rounded-2xl border border-slate-200 bg-white/70 p-4 sm:p-5 dark:border-[#1f2336] dark:bg-[#0B0F1A]/70"
 const headingCls = "text-sm font-semibold text-slate-900 dark:text-slate-100"
+const LEAD_FIRST_NAME_KEY = "x3dprints_lead_first_name"
+const LEAD_MATERIAL_NAME_KEY = "x3dprints_lead_material_name"
 
 type ContactFormProps = {
   defaultMaterial?: string
@@ -99,6 +101,7 @@ function resolveMaterialName(raw: string) {
 }
 
 export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) {
+  const router = useRouter()
   const searchParams = useSearchParams()
   const { locale } = useLocale()
   const copy = locale === "en" ? COPY.en : COPY.nl
@@ -185,18 +188,45 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
       if (data.material) form.append("material", data.material)
       if (data.quote) form.append("quote", data.quote)
 
-      const endpoints = ["/contact.php", "/api/contact"]
+      const endpoints = ["/api/contact", "/contact.php"]
       let lastError = ""
 
       for (const endpoint of endpoints) {
         try {
           const res = await fetch(endpoint, { method: "POST", body: form })
-          const contentType = res.headers.get("content-type") || ""
-          const isJson = contentType.includes("application/json")
-          const result = isJson ? await res.json().catch(() => null) : null
-          const ok = isJson ? Boolean(result?.success || result?.ok) : false
+          const raw = await res.text()
+          let result: { success?: boolean; ok?: boolean; error?: string } | null = null
+          if (raw) {
+            try {
+              result = JSON.parse(raw) as { success?: boolean; ok?: boolean; error?: string }
+            } catch {
+              result = null
+            }
+          }
+          const ok = Boolean(result?.success || result?.ok)
 
           if (ok) {
+            const firstName = data.name.trim().split(/\s+/)[0]?.slice(0, 40) || ""
+            const normalizedMaterial = materialSlug(resolveMaterialName(data.material))
+            const materialKey = MATERIAL_KEY_BY_SLUG[normalizedMaterial]
+            const materialParam = materialKey ? normalizedMaterial : ""
+            const materialName = materialKey ? MATERIALS[materialKey].name : ""
+
+            try {
+              if (firstName) {
+                sessionStorage.setItem(LEAD_FIRST_NAME_KEY, firstName)
+              } else {
+                sessionStorage.removeItem(LEAD_FIRST_NAME_KEY)
+              }
+              if (materialName) {
+                sessionStorage.setItem(LEAD_MATERIAL_NAME_KEY, materialName)
+              } else {
+                sessionStorage.removeItem(LEAD_MATERIAL_NAME_KEY)
+              }
+            } catch {
+              // Ignore storage errors in strict/privacy browser modes.
+            }
+
             setStatus("ok")
             setData({ name: "", email: "", message: "", quantity: "", material: "", quote: "", hp: "" })
             trackEvent({
@@ -210,12 +240,21 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
               label: "success",
               value: 1,
             })
+            const redirectPath = locale === "en" ? "/en/contact/bedankt" : "/contact/bedankt"
+            const redirectParams = new URLSearchParams()
+            if (materialParam) {
+              redirectParams.set("material", materialParam)
+            }
+            const redirectHref = redirectParams.toString()
+              ? `${redirectPath}?${redirectParams.toString()}`
+              : redirectPath
+            router.push(redirectHref)
             return
           }
 
           const endpointError =
             result?.error ||
-            (!isJson ? copy.errorUnexpected : res.statusText || copy.errorUnknown)
+            (!res.ok ? `HTTP ${res.status}` : copy.errorUnexpected || copy.errorUnknown)
           lastError = endpointError
         } catch (err) {
           lastError = err instanceof Error ? err.message : copy.errorNetwork

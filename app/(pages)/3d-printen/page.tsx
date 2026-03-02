@@ -15,14 +15,14 @@ import {
 } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "3D printen voor bedrijven in Belgie | Prototypes & tooling | X3DPrints",
+  title: "3D printen op maat in Belgie voor bedrijven en particulieren | X3DPrints",
   description:
-    "Lokale 3D print service in Belgie vanuit Herzele voor KMO's en productteams: prototypes, jigs, fixtures, onderdelen op maat en kleine series. Ook advies voor particulieren.",
+    "Lokale 3D print service in Belgie vanuit Herzele voor bedrijven en particulieren: onderdelen, organizers, prototypes, etalage-items, gadgets en maatwerk.",
   alternates: { canonical: "https://www.x3dprints.be/3d-printen/", languages: { "nl-BE": "https://www.x3dprints.be/3d-printen/", "en-BE": "https://www.x3dprints.be/en/3d-printen/", "x-default": "https://www.x3dprints.be/3d-printen/", }, },
   openGraph: {
-    title: "3D print service voor bedrijven in Belgie | X3DPrints",
+    title: "3D printen op maat in Belgie | X3DPrints",
     description:
-      "Van STL/STEP naar bruikbare onderdelen: prototypes, tooling, displays en functionele parts. 3D printen in Belgie met snelle intake en duidelijke planning.",
+      "Van STL/STEP naar bruikbare prints: onderdelen, organizers, prototypes, etalage-items en maatwerk. 3D printen in Belgie met snelle intake en duidelijke planning.",
     url: "https://www.x3dprints.be/3d-printen/",
     images: [{ url: "/images/og-home.svg", width: 1200, height: 630, alt: "3D printen landing" }],
     locale: "nl_BE",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D printen voor bedrijven in Belgie | X3DPrints",
-    description: "B2B 3D print service voor prototypes, jigs, fixtures en onderdelen op maat.",
+    title: "3D printen op maat in Belgie | X3DPrints",
+    description: "3D print service voor bedrijven en particulieren: onderdelen, organizers, prototypes en maatwerk.",
     images: ["/images/og-home.svg"],
   },
 }
@@ -146,7 +146,7 @@ const differentiators = [
   {
     title: "Focus op efficient 3D printen",
     copy:
-      "We optimaliseren je model voor minder support, kortere printtijd en sterkere onderdelen. Dat maakt 3D printen sneller en kostenefficiënter.",
+      "We optimaliseren je model voor minder support, kortere printtijd en sterkere onderdelen. Dat maakt 3D printen sneller en kostenefficiÃ«nter.",
   },
   {
     title: "Bewuste aanpak",
@@ -181,7 +181,7 @@ const workflow = [
 const knowledgeLinks = [
   {
     title: "B2B dienstenoverzicht",
-    description: "Alle 3D print diensten voor bedrijven: prototypes, tooling, displays en kleine series.",
+    description: "Alle 3D print diensten voor bedrijven: prototypes, tooling, displays en Korte reeksen.",
     href: "/services",
   },
   {
@@ -238,7 +238,7 @@ const faq = [
   {
     q: "Bieden jullie 3D printen aan in mijn regio?",
     a:
-      "Ja. We leveren 3D print service in heel België, met focus op Vlaanderen (onder andere Gent en Aalst). Afhalen in Herzele is mogelijk op afspraak.",
+      "Ja. We leveren 3D print service in heel BelgiÃ«, met focus op Vlaanderen (onder andere Gent en Aalst). Afhalen in Herzele is mogelijk op afspraak.",
   },
   {
     q: "Kan ik een 3D model laten printen zonder eigen ontwerp?",
@@ -371,7 +371,7 @@ export default function Page() {
               <p className="mt-3 text-sm text-slate-600">
                 X3DPrints is een FDM 3D printservice in Vlaanderen. We printen met PLA, PETG, TPU en specials, allemaal op
                 pro-printers in een gesloten omgeving. Dat betekent: strakke toleranties (+/-0,2 mm), controle over support en
-                oriëntatie en eerlijk advies wanneer een ontwerp beter herwerkt wordt alvorens te 3D printen.
+                oriÃ«ntatie en eerlijk advies wanneer een ontwerp beter herwerkt wordt alvorens te 3D printen.
               </p>
               <p className="mt-3 text-sm text-slate-600">
                 Zoek je een &quot;3D print bureau&quot; voor bedrijven of particulieren? Deze pagina koppelt je direct aan de juiste
@@ -462,7 +462,7 @@ export default function Page() {
           <Reveal className="mb-6 max-w-3xl">
             <h2 id="printen-toepassingen" className="scroll-mt-28 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Typische 3D print-toepassingen</h2>
             <p className="mt-2 text-slate-600">
-              Enkele concrete cases waarvoor klanten 3D printen inzetten. Kies je toepassing en we helpen met materiaal, oriëntatie en planning.
+              Enkele concrete cases waarvoor klanten 3D printen inzetten. Kies je toepassing en we helpen met materiaal, oriÃ«ntatie en planning.
             </p>
           </Reveal>
           <div className="grid gap-6 md:grid-cols-2">

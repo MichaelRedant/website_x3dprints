@@ -477,10 +477,16 @@ const newVideoIds = new Set([
 
 const organizationSchema = buildOrganizationReference({ url: siteUrl })
 
-type PageProps = { localeOverride?: "nl" | "en" }
+const resolveLocaleOverride = (props: unknown): "nl" | "en" => {
+  if (typeof props !== "object" || props === null) {
+    return "nl"
+  }
+  const localeOverride = (props as { localeOverride?: unknown }).localeOverride
+  return localeOverride === "en" ? "en" : "nl"
+}
 
-export default function Page({ localeOverride = "nl" }: PageProps) {
-  const normalizedLocale = localeOverride
+export default function Page(props: unknown) {
+  const normalizedLocale = resolveLocaleOverride(props)
   const copy = normalizedLocale === "en" ? PORTFOLIO_COPY_EN : PORTFOLIO_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)
   const isEn = normalizedLocale === "en"

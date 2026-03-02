@@ -654,10 +654,16 @@ const SEGMENTS_COPY_EN: SegmentCopy = {
   },
 }
 
-type PageProps = { localeOverride?: "nl" | "en" }
+const resolveLocaleOverride = (props: unknown): "nl" | "en" => {
+  if (typeof props !== "object" || props === null) {
+    return "nl"
+  }
+  const localeOverride = (props as { localeOverride?: unknown }).localeOverride
+  return localeOverride === "en" ? "en" : "nl"
+}
 
-export default function SegmentsPage({ localeOverride = "nl" }: PageProps) {
-  const normalizedLocale = localeOverride
+export default function SegmentsPage(props: unknown) {
+  const normalizedLocale = resolveLocaleOverride(props)
   const isEn = normalizedLocale === "en"
   const copy = normalizedLocale === "en" ? SEGMENTS_COPY_EN : SEGMENTS_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)

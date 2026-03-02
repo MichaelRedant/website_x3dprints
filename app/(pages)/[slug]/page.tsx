@@ -605,10 +605,6 @@ export default async function Page(
                   </p>
                   <p className="flex items-start gap-2">
                     <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
-                    <span>{SITE.phone}</span>
-                  </p>
-                  <p className="flex items-start gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
                     <a href="mailto:michael@xinudesign.be" className="underline decoration-slate-300 hover:decoration-slate-600">
                       michael@xinudesign.be
                     </a>

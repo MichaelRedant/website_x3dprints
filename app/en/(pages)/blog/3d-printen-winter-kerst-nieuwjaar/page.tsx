@@ -111,7 +111,7 @@ const faqItems = [
     a: "Yes. Translucent PLA with adjusted wall thickness is suitable for soft light diffusion.",
   },
   {
-    q: "Can you deliver small series for business events?",
+    q: "Can you deliver Short production runs for business events?",
     a: "Yes. Small and medium batches for events and retail campaigns are supported.",
   },
   {

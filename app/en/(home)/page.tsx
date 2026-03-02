@@ -4,6 +4,8 @@ import { EN_METADATA } from "@/app/(home)/metadata.en"
 
 export const metadata: Metadata = EN_METADATA
 
+const HomePageWithLocale = HomePage as unknown as (props: { localeOverride: "en" }) => ReturnType<typeof HomePage>
+
 export default function HomePageEn() {
-  return <HomePage localeOverride="en" />
+  return <HomePageWithLocale localeOverride="en" />
 }

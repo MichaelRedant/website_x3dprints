@@ -8,6 +8,8 @@ export type CaseStudyEntry = {
   materials: string[]
   publishedOn: string
   kpi: { nl: string; en: string }
+  status?: "draft" | "scheduled" | "published"
+  publishAt?: string
 }
 
 export type LocalizedCaseStudy = {
@@ -37,6 +39,14 @@ export type LocalizedCasePipelineEntry = {
   angle: string
 }
 
+export type LiveCaseDetailRoute = {
+  id: string
+  slug: string
+  href: string
+  enHref: string
+  publishedOn: string
+}
+
 export const CASE_STUDIES: CaseStudyEntry[] = [
   {
     id: "selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
@@ -54,11 +64,13 @@ export const CASE_STUDIES: CaseStudyEntry[] = [
     materials: ["PETG Matte"],
     publishedOn: "2026-02-01",
     kpi: { nl: "Lage instapkost, snelle batch-opvolging", en: "Low entry price, fast batch cadence" },
+    status: "published",
+    publishAt: "2026-02-01T08:00:00+01:00",
   },
   {
     id: "octopus-accountancy-3d-print-goodies",
-    href: "/blog/octopus-accountancy-3d-print-goodies",
-    enHref: "/en/blog/octopus-accountancy-3d-print-goodies",
+    href: "/cases/octopus-accountancy-3d-print-goodies",
+    enHref: "/en/cases/octopus-accountancy-3d-print-goodies",
     title: {
       nl: "Case: Octopus x X3DPrints event-goodies",
       en: "Case: Octopus x X3DPrints event goodies",
@@ -69,13 +81,15 @@ export const CASE_STUDIES: CaseStudyEntry[] = [
     },
     sector: { nl: "B2B marketing", en: "B2B marketing" },
     materials: ["PLA Matte", "PLA Silk+"],
-    publishedOn: "2026-01-24",
+    publishedOn: "2026-03-10",
     kpi: { nl: "Snelle event doorlooptijd met consistente branding", en: "Fast event lead time with consistent branding" },
+    status: "scheduled",
+    publishAt: "2026-03-10T08:00:00+01:00",
   },
   {
     id: "3d-geprinte-platen-nasiam",
-    href: "/blog/3d-geprinte-platen-nasiam",
-    enHref: "/en/blog/3d-geprinte-platen-nasiam",
+    href: "/cases/3d-geprinte-platen-nasiam",
+    enHref: "/en/cases/3d-geprinte-platen-nasiam",
     title: {
       nl: "Case: 3D-geprinte platen voor NaSiam",
       en: "Case: 3D printed signs for NaSiam",
@@ -86,13 +100,15 @@ export const CASE_STUDIES: CaseStudyEntry[] = [
     },
     sector: { nl: "Retail service", en: "Retail service" },
     materials: ["PLA Matte", "PETG"],
-    publishedOn: "2025-12-22",
+    publishedOn: "2026-03-17",
     kpi: { nl: "Herbruikbare assets voor online -> offline traffic", en: "Reusable assets for online to offline traffic" },
+    status: "scheduled",
+    publishAt: "2026-03-17T08:00:00+01:00",
   },
   {
     id: "prototyping-kleine-reeksen-3d-printen",
-    href: "/blog/prototyping-kleine-reeksen-3d-printen",
-    enHref: "/en/blog/prototyping-kleine-reeksen-3d-printen",
+    href: "/cases/prototyping-kleine-reeksen-3d-printen",
+    enHref: "/en/cases/prototyping-kleine-reeksen-3d-printen",
     title: {
       nl: "B2B flow: prototyping en kleine reeksen",
       en: "B2B flow: prototyping and short runs",
@@ -103,13 +119,15 @@ export const CASE_STUDIES: CaseStudyEntry[] = [
     },
     sector: { nl: "Productontwikkeling", en: "Product development" },
     materials: ["PLA Matte", "PETG", "TPU"],
-    publishedOn: "2026-03-01",
+    publishedOn: "2026-03-24",
     kpi: { nl: "Kortere iteratielus tussen ontwerp en test", en: "Shorter loop between design and validation" },
+    status: "scheduled",
+    publishAt: "2026-03-24T08:00:00+01:00",
   },
   {
     id: "retail-pos-3d-printen",
-    href: "/blog/retail-pos-3d-printen",
-    enHref: "/en/blog/retail-pos-3d-printen",
+    href: "/cases/retail-pos-3d-printen",
+    enHref: "/en/cases/retail-pos-3d-printen",
     title: {
       nl: "Retail POS: displays en winkelmateriaal",
       en: "Retail POS: displays and store assets",
@@ -120,13 +138,15 @@ export const CASE_STUDIES: CaseStudyEntry[] = [
     },
     sector: { nl: "Retail POS", en: "Retail POS" },
     materials: ["PLA Matte", "PETG"],
-    publishedOn: "2026-03-01",
+    publishedOn: "2026-04-07",
     kpi: { nl: "Snelle pilot-runs voor meerdere locaties", en: "Fast pilot runs across multiple locations" },
+    status: "scheduled",
+    publishAt: "2026-04-07T08:00:00+01:00",
   },
   {
     id: "kapot-onderdeel-laten-printen",
-    href: "/blog/kapot-onderdeel-laten-printen",
-    enHref: "/en/blog/kapot-onderdeel-laten-printen",
+    href: "/cases/kapot-onderdeel-laten-printen",
+    enHref: "/en/cases/kapot-onderdeel-laten-printen",
     title: {
       nl: "Repair caseflow: kapot onderdeel laten printen",
       en: "Repair workflow: print a broken part",
@@ -137,8 +157,10 @@ export const CASE_STUDIES: CaseStudyEntry[] = [
     },
     sector: { nl: "Repair", en: "Repair" },
     materials: ["PETG", "TPU", "PLA Matte"],
-    publishedOn: "2026-03-01",
+    publishedOn: "2026-04-21",
     kpi: { nl: "Minder downtime met snelle vervangonderdelen", en: "Lower downtime with fast replacement parts" },
+    status: "scheduled",
+    publishAt: "2026-04-21T08:00:00+01:00",
   },
 ]
 
@@ -241,8 +263,48 @@ export const CASE_PIPELINE: CasePipelineEntry[] = [
   },
 ]
 
-export function getLocalizedCaseStudies(locale: "nl" | "en"): LocalizedCaseStudy[] {
-  return CASE_STUDIES.map((entry) => ({
+function parseCaseDate(value: string | undefined): Date | null {
+  if (!value) return null
+  const parsed = new Date(value)
+  if (Number.isNaN(parsed.getTime())) return null
+  return parsed
+}
+
+function getCaseLiveDate(entry: CaseStudyEntry): Date | null {
+  return parseCaseDate(entry.publishAt) ?? parseCaseDate(entry.publishedOn)
+}
+
+export function isCaseStudyLive(entry: CaseStudyEntry, now: Date = new Date()) {
+  if (entry.status === "draft") return false
+  const liveDate = getCaseLiveDate(entry)
+  if (!liveDate) return entry.status !== "scheduled"
+  return liveDate.getTime() <= now.getTime()
+}
+
+type CaseStudySelectionOptions = {
+  includeFuture?: boolean
+  now?: Date
+}
+
+function sortCasesByDateDesc(a: CaseStudyEntry, b: CaseStudyEntry) {
+  const aTime = getCaseLiveDate(a)?.getTime() ?? 0
+  const bTime = getCaseLiveDate(b)?.getTime() ?? 0
+  return bTime - aTime
+}
+
+export function getCaseStudies(options: CaseStudySelectionOptions = {}): CaseStudyEntry[] {
+  const { includeFuture = false, now = new Date() } = options
+  const scoped = includeFuture
+    ? CASE_STUDIES.filter((entry) => entry.status !== "draft")
+    : CASE_STUDIES.filter((entry) => isCaseStudyLive(entry, now))
+  return [...scoped].sort(sortCasesByDateDesc)
+}
+
+export function getLocalizedCaseStudies(
+  locale: "nl" | "en",
+  options: CaseStudySelectionOptions = {},
+): LocalizedCaseStudy[] {
+  return getCaseStudies(options).map((entry) => ({
     id: entry.id,
     href: locale === "en" ? entry.enHref : entry.href,
     title: entry.title[locale],
@@ -252,6 +314,26 @@ export function getLocalizedCaseStudies(locale: "nl" | "en"): LocalizedCaseStudy
     publishedOn: entry.publishedOn,
     kpi: entry.kpi[locale],
   }))
+}
+
+export function getLiveCaseDetailRoutes(now: Date = new Date()): LiveCaseDetailRoute[] {
+  return getCaseStudies({ now })
+    .filter((entry) => entry.href.startsWith("/cases/") && entry.enHref.startsWith("/en/cases/"))
+    .map((entry) => ({
+      id: entry.id,
+      slug: entry.href.replace(/^\/cases\//, ""),
+      href: entry.href,
+      enHref: entry.enHref,
+      publishedOn: entry.publishedOn,
+    }))
+}
+
+export function getCaseStudyBySlug(slug: string): CaseStudyEntry | null {
+  return (
+    CASE_STUDIES.find(
+      (entry) => entry.href === `/cases/${slug}` || entry.enHref === `/en/cases/${slug}`,
+    ) ?? null
+  )
 }
 
 export function getLocalizedCasePipeline(locale: "nl" | "en"): LocalizedCasePipelineEntry[] {

@@ -52,6 +52,11 @@ function errorMessage(e: unknown): string {
   return "Onbekende fout"
 }
 
+function isDevSmtpSoftFail(msgRaw: string) {
+  if (process.env.NODE_ENV === "production") return false
+  return /ECONNREFUSED|ENOTFOUND|EAI_AGAIN|ETIMEDOUT|ECONNRESET|SMTP_|MAIL_|DKIM_|HOST|PORT/i.test(msgRaw)
+}
+
 export async function POST(req: Request) {
   try {
     const form = await req.formData()
@@ -152,6 +157,15 @@ ${payload.message}
   } catch (e: unknown) {
     const msgRaw = errorMessage(e)
     console.error("[/api/contact] error:", msgRaw)
+
+    if (isDevSmtpSoftFail(msgRaw)) {
+      console.warn("[/api/contact] dev SMTP soft-fail: returning ok without mail delivery")
+      return NextResponse.json({
+        ok: true,
+        devMode: true,
+        warning: "SMTP lokaal niet beschikbaar; mail is niet verzonden.",
+      })
+    }
 
     const userSafe =
       /SMTP_|SMTP|MAIL_|DKIM_|\.env|HOST|PORT/i.test(msgRaw)

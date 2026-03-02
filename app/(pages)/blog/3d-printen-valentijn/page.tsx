@@ -109,7 +109,7 @@ const faqItems = [
   },
   {
     q: "Kan ik ook kleine B2B series laten printen voor events?",
-    a: "Ja. Kleine series voor relatiegeschenken en eventitems zijn mogelijk met consistente kwaliteit.",
+    a: "Ja. Korte reeksen voor relatiegeschenken en eventitems zijn mogelijk met consistente kwaliteit.",
   },
   {
     q: "Hoe vermijd ik last-minute risico voor 14 februari?",
@@ -254,7 +254,7 @@ export default function BlogValentijn() {
               <h3 className="text-xl font-semibold tracking-tight text-slate-900">Design en bestanden</h3>
               <p className="mt-3 text-sm text-slate-700">
                 STL of STEP is het startpunt voor productie. Voeg tekst, afmetingen en kleurvoorkeur toe zodat we meteen
-                kunnen adviseren op leesbaarheid, support en printoriëntatie.
+                kunnen adviseren op leesbaarheid, support en printoriÃ«ntatie.
               </p>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
                 <li>Bestanden: STL of STEP.</li>

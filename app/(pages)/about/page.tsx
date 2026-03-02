@@ -233,10 +233,16 @@ const BUILD_VOLUME_CM = 35
 const LEAD_TIME_DAYS = 5
 const TOLERANCE_MM = 0.2
 
-type PageProps = { localeOverride?: "nl" | "en" }
+const resolveLocaleOverride = (props: unknown): "nl" | "en" => {
+  if (typeof props !== "object" || props === null) {
+    return "nl"
+  }
+  const localeOverride = (props as { localeOverride?: unknown }).localeOverride
+  return localeOverride === "en" ? "en" : "nl"
+}
 
-export default function Page({ localeOverride = "nl" }: PageProps) {
-  const normalizedLocale = localeOverride
+export default function Page(props: unknown) {
+  const normalizedLocale = resolveLocaleOverride(props)
   const isEn = normalizedLocale === "en"
   const copy = isEn ? ABOUT_COPY_EN : ABOUT_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)

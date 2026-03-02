@@ -164,6 +164,7 @@ async function main() {
   const existingPaths = buildExistingPathSet(outFiles)
   const failures = []
   const routeImages = new Map()
+  const noindexRoutes = new Set()
   let checked = 0
   let skippedNoindex = 0
 
@@ -173,6 +174,7 @@ async function main() {
     const sourceRef = relative(htmlFile)
     const tags = html.match(META_TAG_RE) ?? []
     if (isNoindexPage(tags)) {
+      noindexRoutes.add(currentRoute)
       skippedNoindex += 1
       continue
     }
@@ -207,6 +209,10 @@ async function main() {
   }
 
   for (const [route, expectedPath] of TOP_LANDING_EXPECTED_OG.entries()) {
+    if (noindexRoutes.has(route)) {
+      continue
+    }
+
     if (!hasAssetPath(expectedPath, existingPaths)) {
       failures.push(`policy asset missing from out/: ${expectedPath} (required by ${route})`)
       continue

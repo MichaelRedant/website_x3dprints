@@ -7,6 +7,7 @@ import { SITE } from "@/lib/seo"
 import { EN_LOCATION_SLUGS, getAllLocationSlugs } from "@/lib/locations"
 import { MATERIAL_DETAIL_SLUGS } from "@/content/material-details"
 import { SHOP_INDEXABLE, SHOP_PRODUCT_SLUGS } from "@/content/shop-products"
+import { getLiveCaseDetailRoutes } from "@/content/case-studies"
 
 const BASE_URL = SITE.url.replace(/\/+$/, "") // https://www.x3dprints.be
 const ROOT = process.cwd()
@@ -223,20 +224,52 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { nl: "/privacy", en: "/en/privacy", changeFrequency: "yearly", priority: 0.2, sources: ["app/(pages)/privacy/page.tsx", "app/en/(pages)/privacy/page.tsx"] },
     { nl: "/cookies", en: "/en/cookies", changeFrequency: "yearly", priority: 0.2, sources: ["app/(pages)/cookies/page.tsx", "app/en/(pages)/cookies/page.tsx"] },
     { nl: "/algemene-voorwaarden", en: "/en/algemene-voorwaarden", changeFrequency: "yearly", priority: 0.2, sources: ["app/(pages)/algemene-voorwaarden/page.tsx", "app/en/(pages)/algemene-voorwaarden/page.tsx"] },
-    {
-      nl: "/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
-      en: "/en/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
-      changeFrequency: "monthly",
-      priority: 0.6,
-      sources: [
-        "app/(pages)/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem/page.tsx",
-        "app/en/(pages)/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem/page.tsx",
-      ],
-    },
     ...shopRouteConfigs,
   ]
 
   const staticRoutes = (await Promise.all(staticRouteConfigs.map(toRouteEntries))).flat()
+
+  const caseDetailRoutes: MetadataRoute.Sitemap = await Promise.all(
+    getLiveCaseDetailRoutes().map(async (entry) => {
+      const nlDirectSource = `app/(pages)/cases/${entry.slug}/page.tsx`
+      const enDirectSource = `app/en/(pages)/cases/${entry.slug}/page.tsx`
+      const nlDynamicSource = "app/(pages)/cases/[slug]/page.tsx"
+      const enDynamicSource = "app/en/(pages)/cases/[slug]/page.tsx"
+
+      const [nlDirect, enDirect, nlDynamic, enDynamic] = await Promise.all([
+        statIfExists(nlDirectSource),
+        statIfExists(enDirectSource),
+        statIfExists(nlDynamicSource),
+        statIfExists(enDynamicSource),
+      ])
+
+      const nlSource = nlDirect ? nlDirectSource : nlDynamic ? nlDynamicSource : null
+      const enSource = enDirect ? enDirectSource : enDynamic ? enDynamicSource : null
+
+      if (!nlSource || !enSource) return []
+
+      const sources = [nlSource, enSource]
+
+      const alternates = buildAlternates(entry.href, entry.enHref)
+      const publishedFallback = new Date(entry.publishedOn)
+      const lastModified =
+        (await latestDateModified(sources)) ??
+        (await latestMtime(sources)) ??
+        (Number.isNaN(publishedFallback.getTime()) ? new Date() : publishedFallback)
+
+      const baseEntry = {
+        changeFrequency: "monthly" as const,
+        priority: 0.6,
+        lastModified,
+        ...(alternates ? { alternates } : {}),
+      }
+
+      return [
+        { url: `${BASE_URL}${withTrailingSlash(entry.href)}`, ...baseEntry },
+        { url: `${BASE_URL}${withTrailingSlash(entry.enHref)}`, ...baseEntry },
+      ]
+    }),
+  ).then((entries) => entries.flat())
 
   const [nlBlogSlugs, enBlogSlugs, segmentSlugs] = await Promise.all([
     getBlogSlugs("nl"),
@@ -412,6 +445,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     ...staticRoutes,
+    ...caseDetailRoutes,
     ...blogRouteEntries,
     ...segmentRoutes,
     ...materialDetailRoutes,

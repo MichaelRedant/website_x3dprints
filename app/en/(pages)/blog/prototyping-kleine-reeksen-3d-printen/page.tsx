@@ -27,7 +27,7 @@ const viewerHref =
 export const metadata: Metadata = {
   title: "B2B prototyping and small-batch 3D printing | X3DPrints",
   description:
-    "From prototype to small batch: practical B2B guide with phase planning, material choices, pricing ranges and intake for fast iterations.",
+    "From prototype to Short production run: practical B2B guide with phase planning, material choices, pricing ranges and intake for fast iterations.",
   alternates: {
     canonical,
     languages: {
@@ -62,9 +62,9 @@ const whyCards = [
     label: "Read product development use-case",
   },
   {
-    title: "Move from test to small batch",
+    title: "Move from test to Short production run",
     body:
-      "After fit and function validation, scale to small batches with repeatable settings.",
+      "After fit and function validation, scale to Short production runs with repeatable settings.",
     href: "/en/blog/3d-print-prijs-per-stuk",
     label: "Read price per part",
   },
@@ -91,7 +91,7 @@ const phaseRows = [
     output: "Small test batch",
   },
   {
-    phase: "Phase 3 - small batch",
+    phase: "Phase 3 - Short production run",
     goal: "Repeatable production and planning",
     material: "Use-case based",
     output: "10-100 units (indicative)",
@@ -108,7 +108,7 @@ const setupChecklist = [
 const pricingRows = [
   { type: "Prototype run", qty: "1-3 units", range: "from EUR 5/unit", leadTime: "2-4 working days" },
   { type: "Validation batch", qty: "5-20 units", range: "geometry dependent", leadTime: "3-6 working days" },
-  { type: "Small batch", qty: "20-100 units", range: "volume dependent", leadTime: "planned slot" },
+  { type: "Short production run", qty: "20-100 units", range: "volume dependent", leadTime: "planned slot" },
 ]
 
 const relatedLinks = [
@@ -120,7 +120,7 @@ const relatedLinks = [
 
 const faqItems = [
   {
-    q: "When should you move from prototype to small batch?",
+    q: "When should you move from prototype to Short production run?",
     a: "Once fit, function and material choice are stable. Then scaling with fixed settings is most efficient.",
   },
   {
@@ -147,7 +147,7 @@ const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "B2B prototyping and small-batch 3D printing",
   description:
-    "Practical guide for B2B teams moving from prototype to small batch with phased planning and material choices.",
+    "Practical guide for B2B teams moving from prototype to Short production run with phased planning and material choices.",
   datePublished,
   dateModified,
   image: "/images/og-blog-en.svg",
@@ -161,7 +161,7 @@ const faqJsonLd = buildFaqPageSchema({
 })
 
 const howToJsonLd = buildHowToSchema({
-  name: "Move from prototype to small batch with 3D printing",
+  name: "Move from prototype to Short production run with 3D printing",
   description: "Use a phased workflow to iterate quickly and scale in a controlled way.",
   inLanguage: "en-BE",
   mainEntityOfPage: canonical,
@@ -195,7 +195,7 @@ export default function PrototypingSmallBatchGuideEnPage() {
                 </Link>
               </li>
               <li aria-hidden>/</li>
-              <li className="font-medium text-slate-700">B2B prototyping and small batches</li>
+              <li className="font-medium text-slate-700">B2B prototyping and Short production runs</li>
             </ol>
           </nav>
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600">B2B use-cases</p>
@@ -203,7 +203,7 @@ export default function PrototypingSmallBatchGuideEnPage() {
             B2B prototyping and small-batch 3D printing
           </h1>
           <p className="max-w-3xl text-lg text-slate-700">
-            Short answer: work in phases. Validate quickly first, run functional tests second, then scale to a small batch with stable settings.
+            Short answer: work in phases. Validate quickly first, run functional tests second, then scale to a Short production run with stable settings.
           </p>
           <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
           <div className="flex flex-wrap gap-3">
@@ -250,7 +250,7 @@ export default function PrototypingSmallBatchGuideEnPage() {
 
         <section id="prototyping-phases" className="scroll-mt-28">
           <Reveal>
-            <h2 className="text-2xl font-semibold text-slate-900">Phased workflow: prototype to small batch</h2>
+            <h2 className="text-2xl font-semibold text-slate-900">Phased workflow: prototype to Short production run</h2>
             <div className="mt-4 overflow-x-auto rounded-2xl border border-slate-200/70 bg-white/80">
               <table className="min-w-full text-left text-sm text-slate-700">
                 <caption className="sr-only">Phased workflow for B2B prototyping and small-batch runs</caption>
@@ -279,7 +279,7 @@ export default function PrototypingSmallBatchGuideEnPage() {
 
         <section id="small-batch-setup" className="scroll-mt-28">
           <Reveal>
-            <h2 className="text-2xl font-semibold text-slate-900">How to set up a stable small batch</h2>
+            <h2 className="text-2xl font-semibold text-slate-900">How to set up a stable Short production run</h2>
             <GlassCard className="mt-4 p-6">
               <ul className="list-disc space-y-2 pl-5 text-sm text-slate-700">
                 {setupChecklist.map((item) => (

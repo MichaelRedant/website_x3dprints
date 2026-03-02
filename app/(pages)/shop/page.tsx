@@ -9,7 +9,7 @@ import { SITE, buildItemListSchema } from "@/lib/seo"
 import { getShopProducts } from "@/lib/shop-data"
 
 export const metadata: Metadata = {
-  title: "3D print shop in kleine oplage | X3DPrints",
+  title: "3D print shop in beperkte oplage | X3DPrints",
   description:
     "Bestel kleinschalige 3D prints uit live CRM-voorraad. Persoonlijke kwaliteitscheck, veilige betaling via Mollie en levering in Belgie of gratis afhalen op afspraak.",
   alternates: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "3D print shop in kleine oplage",
+    title: "3D print shop in beperkte oplage",
     description:
       "Actuele collectie met persoonlijke afwerking, live voorraad en directe ondersteuning.",
     url: `${SITE.url}/shop/`,
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D print shop in kleine oplage | X3DPrints",
+    title: "3D print shop in beperkte oplage | X3DPrints",
     description: "Actuele 3D print collectie met live voorraad, Mollie-betaling en persoonlijke service.",
     images: ["/images/og-shop-nl.svg"],
   },
@@ -100,7 +100,7 @@ export default async function ShopPage() {
               <div className="relative md:text-center lg:text-left">
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
                 <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
-                  3D prints in kleine oplage, direct bestelbaar
+                  3D prints in beperkte oplage, direct bestelbaar
                 </h1>
                 <p className="mt-4 max-w-3xl text-lg text-slate-600 md:mx-auto lg:mx-0">
                   Bestel functionele en decoratieve prints die in-house worden geproduceerd en gecontroleerd.

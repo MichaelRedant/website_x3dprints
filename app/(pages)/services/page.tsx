@@ -32,9 +32,9 @@ import { localizeHref } from "@/lib/i18n/paths"
 import { servicesFaqByLocale } from "@/content/services-faq"
 
 const NL_METADATA: Metadata = {
-  title: "3D print service België | 3D printen op maat | X3DPrints",
+  title: "3D print service in Belgie voor bedrijven en particulieren | X3DPrints",
   description:
-    "Lokale FDM 3D print service België vanuit Herzele (regio Gent). 3D printen op maat in PLA, PETG of TPU met materiaaladvies en duidelijke planning.",
+    "Lokale 3D print service in Belgie vanuit Herzele voor bedrijven en particulieren. Onderdelen, organizers, prototypes, etalage-items en maatwerk in PLA, PETG of TPU.",
   alternates: {
     canonical: "https://www.x3dprints.be/services/",
     languages: {
@@ -44,9 +44,9 @@ const NL_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "3D print service België vanuit Herzele",
+    title: "3D print service in Belgie op maat | X3DPrints",
     description:
-      "3D printen op maat voor klanten in Gent, Aalst en Vlaanderen. Kleine en grotere oplages met heldere timing en materiaaladvies.",
+      "3D printen op maat voor bedrijven en particulieren: functionele onderdelen, organizers, prototypes en visuele stukken met heldere timing en materiaaladvies.",
     url: "https://www.x3dprints.be/services/",
     images: [{ url: "/images/og-services-nl.svg", width: 1200, height: 630, alt: "3D print service in Herzele" }],
     locale: "nl_BE",
@@ -54,17 +54,17 @@ const NL_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D print service België",
+    title: "3D print service in Belgie op maat",
     description:
-      "3D printen op maat vanuit Herzele. Kleine en grotere oplages met materiaaladvies en transparante opvolging.",
+      "3D printen op maat vanuit Herzele voor bedrijven en particulieren. Van onderdelen en organizers tot prototypes en etalage-items.",
     images: ["/images/og-services-nl.svg"],
   },
 }
 
 const EN_METADATA: Metadata = {
-  title: "3D Print Service in Belgium | X3DPrints",
+  title: "Custom 3D printing in Belgium for businesses and individuals | X3DPrints",
   description:
-    "Local FDM 3D printing from Herzele (part-time studio). Prototypes and small to large batches in PLA, PETG or TPU with honest advice and direct communication.",
+    "Local 3D printing in Belgium from Herzele for businesses and individuals. Parts, organizers, prototypes, retail items and custom pieces in PLA, PETG or TPU.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/services/",
     languages: {
@@ -74,9 +74,9 @@ const EN_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "3D print service in Belgium",
+    title: "Custom 3D printing in Belgium | X3DPrints",
     description:
-      "Small to large batches, fast follow-up and pragmatic advice on material and design. Part-time studio in Herzele/Ghent.",
+      "From functional parts and organizers to prototypes, retail items and custom pieces. Fast follow-up and clear material advice from a local studio.",
     url: "https://www.x3dprints.be/en/services/",
     images: [{ url: "/images/og-services-en.svg", width: 1200, height: 630, alt: "3D printing service in Belgium" }],
     locale: "en_BE",
@@ -84,9 +84,9 @@ const EN_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D print service in Belgium",
+    title: "Custom 3D printing in Belgium",
     description:
-      "Small to large batches, fast follow-up and pragmatic advice on material and design. Part-time studio in Herzele/Ghent.",
+      "3D printing for businesses and individuals: parts, organizers, prototypes and custom pieces with clear planning.",
     images: ["/images/og-services-en.svg"],
   },
 }
@@ -99,12 +99,12 @@ export const metadata: Metadata = NL_METADATA
 const SERVICES_COPY_NL = {
   meta: {
     description:
-      "Lokale FDM 3D print service België vanuit Herzele (regio Gent). 3D printen op maat in PLA, PETG of TPU voor prototypes en kleine reeksen.",
+      "Lokale 3D print service in Belgie vanuit Herzele voor bedrijven en particulieren. 3D printen op maat in PLA, PETG of TPU voor onderdelen, organizers, prototypes en maatwerk.",
   },
   hero: {
-    title: "3D print service in België vanuit Herzele",
+    title: "3D print service in Belgie voor bedrijven en particulieren",
     intro:
-      "X3DPrints is een eenmansstudio in bijberoep. Wil je een 3D model laten printen? Je spreekt rechtstreeks met de maker, krijgt eerlijke planning (meestal enkele werkdagen) en materiaaladvies dat past bij jouw project en budget in regio Gent en de rest van Vlaanderen. Ook voor 3D print bedrijven die tijdelijk capaciteit zoeken zijn we een flexibel 3D printen bedrijf voor pieken en kleine reeksen.",
+      "X3DPrints is een eenmansstudio in bijberoep. Wil je een 3D model laten printen? Je spreekt rechtstreeks met de maker, krijgt eerlijke planning (meestal enkele werkdagen) en materiaaladvies dat past bij je toepassing en budget. Van functionele onderdelen, organizers en prototypes tot etalage-items, gadgets en persoonlijke stukken: we printen lokaal in Belgie met duidelijke opvolging.",
     ctas: {
       quote: "Offerte aanvragen",
       tool: "Material Suggestion Tool",
@@ -391,12 +391,12 @@ const SERVICES_COPY_NL = {
 const SERVICES_COPY_EN = {
   meta: {
     description:
-      "Local FDM 3D printing from Herzele (part-time studio). Prototypes and small to large batches in PLA, PETG or TPU with honest advice and direct communication.",
+      "Local 3D printing in Belgium from Herzele for businesses and individuals. Parts, organizers, prototypes, retail items and custom pieces in PLA, PETG or TPU.",
   },
   hero: {
-    title: "3D print service from Herzele (part-time studio)",
+    title: "Custom 3D printing in Belgium for businesses and individuals",
     intro:
-      "X3DPrints is a one-person studio running part-time. You speak directly with the maker, get honest planning (usually a few business days) and material advice that fits your project and budget.",
+      "X3DPrints is a one-person studio running part-time. You speak directly with the maker, get honest planning (usually a few business days) and material advice that fits your use case and budget. From functional parts, organizers and prototypes to retail items, gadgets and personalized pieces: we print locally in Belgium with clear follow-up.",
     ctas: {
       quote: "Request a quote",
       tool: "Material Suggestion Tool",
@@ -674,10 +674,16 @@ const SERVICES_COPY_EN = {
   ],
 }
 
-type PageProps = { localeOverride?: "nl" | "en" }
+const resolveLocaleOverride = (props: unknown): "nl" | "en" => {
+  if (typeof props !== "object" || props === null) {
+    return "nl"
+  }
+  const localeOverride = (props as { localeOverride?: unknown }).localeOverride
+  return localeOverride === "en" ? "en" : "nl"
+}
 
-export default function Page({ localeOverride = "nl" }: PageProps) {
-  const normalizedLocale = localeOverride
+export default function Page(props: unknown) {
+  const normalizedLocale = resolveLocaleOverride(props)
   const isEn = normalizedLocale === "en"
   const copy = isEn ? SERVICES_COPY_EN : SERVICES_COPY_NL
   const localize = (href: string) => localizeHref(href, normalizedLocale)

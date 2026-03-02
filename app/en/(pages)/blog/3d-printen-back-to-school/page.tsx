@@ -69,7 +69,7 @@ const useCases = [
     body: "Name labels, pen holders and organizers for students and staff.",
   },
   {
-    title: "Small batches",
+    title: "Short production runs",
     body: "Multi-name or multi-class production with consistent color and finish quality.",
   },
 ]

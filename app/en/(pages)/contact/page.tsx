@@ -4,7 +4,9 @@ import { EN_METADATA } from "@/app/(pages)/contact/metadata.en"
 
 export const metadata: Metadata = EN_METADATA
 
+const ContactPageWithLocale = ContactPage as unknown as (props: { localeOverride: "en" }) => ReturnType<typeof ContactPage>
+
 export default function ContactPageEn() {
-  return <ContactPage localeOverride="en" />
+  return <ContactPageWithLocale localeOverride="en" />
 }
 

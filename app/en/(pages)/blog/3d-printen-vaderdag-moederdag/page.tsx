@@ -68,7 +68,7 @@ const useCases = [
     body: "Custom keychains, desk pieces and name-based gift items for parents.",
   },
   {
-    title: "Small series",
+    title: "Short production runs",
     body: "Consistent production batches with controlled color and finish quality.",
   },
 ]

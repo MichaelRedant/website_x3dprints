@@ -4,7 +4,9 @@ import { EN_METADATA } from "@/app/(pages)/segments/metadata.en"
 
 export const metadata: Metadata = EN_METADATA
 
+const SegmentsPageWithLocale = SegmentsPage as unknown as (props: { localeOverride: "en" }) => ReturnType<typeof SegmentsPage>
+
 export default function SegmentsPageEn() {
-  return <SegmentsPage localeOverride="en" />
+  return <SegmentsPageWithLocale localeOverride="en" />
 }
 

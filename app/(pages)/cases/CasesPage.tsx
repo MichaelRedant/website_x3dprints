@@ -35,6 +35,8 @@ type PageCopy = {
   materialsLabel: string
   kpiLabel: string
   ctaLabel: string
+  liveCasesEmptyTitle: string
+  liveCasesEmptyBody: string
   intentBoardTitle: string
   intentBoardIntro: string
   intentHeaders: { intent: string; bestPage: string; nextStep: string }
@@ -137,6 +139,9 @@ const COPY: Record<"nl" | "en", PageCopy> = {
     materialsLabel: "Materialen",
     kpiLabel: "Kernresultaat",
     ctaLabel: "Bekijk case",
+    liveCasesEmptyTitle: "Nieuwe cases komen binnenkort live",
+    liveCasesEmptyBody:
+      "We publiceren cases zodra de inhoud en interne links volledig klaar staan. Bekijk intussen de pipeline hieronder.",
     intentBoardTitle: "Welke case past bij je vraag?",
     intentBoardIntro:
       "Gebruik deze matrix als snelle routekaart van vraag naar concrete actie.",
@@ -301,6 +306,9 @@ const COPY: Record<"nl" | "en", PageCopy> = {
     materialsLabel: "Materials",
     kpiLabel: "Core result",
     ctaLabel: "View case",
+    liveCasesEmptyTitle: "New cases are coming soon",
+    liveCasesEmptyBody:
+      "We publish cases only when content and internal links are fully ready. In the meantime, use the pipeline below.",
     intentBoardTitle: "Which case matches your request?",
     intentBoardIntro:
       "Use this matrix as a fast path from request to concrete action.",
@@ -437,6 +445,9 @@ export default function CasesPage({ locale }: CasesPageProps) {
   const language = isEn ? "en-BE" : "nl-BE"
   const cases = getLocalizedCaseStudies(locale)
   const pipeline = getLocalizedCasePipeline(locale)
+  const trustCards = copy.trustCards.map((card, index) =>
+    index === 0 ? { ...card, value: String(cases.length) } : card,
+  )
 
   const itemListJsonLd = buildItemListSchema({
     name: copy.schemaName,
@@ -559,7 +570,7 @@ export default function CasesPage({ locale }: CasesPageProps) {
 
           <section aria-label={isEn ? "Trust signals" : "Trust signalen"}>
             <div className="grid gap-4 rounded-3xl border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur md:grid-cols-3">
-              {copy.trustCards.map((card) => (
+              {trustCards.map((card) => (
                 <div key={card.label}>
                   <p className="text-xs uppercase tracking-[0.3em] text-slate-500">{card.label}</p>
                   <p className="mt-2 text-2xl font-semibold text-slate-900">{card.value}</p>
@@ -592,26 +603,33 @@ export default function CasesPage({ locale }: CasesPageProps) {
               <h2 className="text-2xl font-semibold text-slate-900">{copy.liveCasesTitle}</h2>
               <p className="mt-2 text-slate-700">{copy.liveCasesIntro}</p>
               <div className="mt-4 grid gap-4 md:grid-cols-2">
-                {cases.map((entry) => (
-                  <GlassCard key={entry.id} className="h-full p-6">
-                    <div className="flex flex-wrap gap-2 text-xs text-slate-500">
-                      <span>{copy.publishedPrefix}: {formatPublishedDate(entry.publishedOn, locale)}</span>
-                      <span aria-hidden>-</span>
-                      <span>{copy.sectorLabel}: {entry.sector}</span>
-                    </div>
-                    <h3 className="mt-2 text-lg font-semibold text-slate-900">{entry.title}</h3>
-                    <p className="mt-2 text-sm text-slate-700">{entry.summary}</p>
-                    <p className="mt-3 text-sm text-slate-700">
-                      <span className="font-semibold text-slate-900">{copy.materialsLabel}:</span> {entry.materials.join(", ")}
-                    </p>
-                    <p className="mt-2 text-sm text-slate-700">
-                      <span className="font-semibold text-slate-900">{copy.kpiLabel}:</span> {entry.kpi}
-                    </p>
-                    <Link href={entry.href} className="mt-4 inline-flex text-sm font-semibold text-indigo-600 hover:text-indigo-500">
-                      {copy.ctaLabel}
-                    </Link>
+                {cases.length > 0 ? (
+                  cases.map((entry) => (
+                    <GlassCard key={entry.id} className="h-full p-6">
+                      <div className="flex flex-wrap gap-2 text-xs text-slate-500">
+                        <span>{copy.publishedPrefix}: {formatPublishedDate(entry.publishedOn, locale)}</span>
+                        <span aria-hidden>-</span>
+                        <span>{copy.sectorLabel}: {entry.sector}</span>
+                      </div>
+                      <h3 className="mt-2 text-lg font-semibold text-slate-900">{entry.title}</h3>
+                      <p className="mt-2 text-sm text-slate-700">{entry.summary}</p>
+                      <p className="mt-3 text-sm text-slate-700">
+                        <span className="font-semibold text-slate-900">{copy.materialsLabel}:</span> {entry.materials.join(", ")}
+                      </p>
+                      <p className="mt-2 text-sm text-slate-700">
+                        <span className="font-semibold text-slate-900">{copy.kpiLabel}:</span> {entry.kpi}
+                      </p>
+                      <Link href={entry.href} className="mt-4 inline-flex text-sm font-semibold text-indigo-600 hover:text-indigo-500">
+                        {copy.ctaLabel}
+                      </Link>
+                    </GlassCard>
+                  ))
+                ) : (
+                  <GlassCard className="p-6 md:col-span-2">
+                    <h3 className="text-lg font-semibold text-slate-900">{copy.liveCasesEmptyTitle}</h3>
+                    <p className="mt-2 text-sm text-slate-700">{copy.liveCasesEmptyBody}</p>
                   </GlassCard>
-                ))}
+                )}
               </div>
             </Reveal>
           </section>

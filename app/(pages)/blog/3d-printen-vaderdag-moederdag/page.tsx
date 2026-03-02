@@ -61,7 +61,7 @@ const useCases = [
     body: "Naamcadeaus, sleutelhangers en bureau-items op maat voor ouders.",
   },
   {
-    title: "Kleine series",
+    title: "Korte reeksen",
     body: "Consistente batches in dezelfde kleur en afwerking voor grotere aantallen.",
   },
 ]

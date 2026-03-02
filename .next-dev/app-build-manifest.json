@@ -36,50 +36,30 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/services/page.js"
     ],
-    "/(pages)/3d-modelleren/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/3d-modelleren/page.js"
-    ],
-    "/(pages)/pricing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/pricing/page.js"
-    ],
-    "/(pages)/3d-printen/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/3d-printen/page.js"
-    ],
     "/(pages)/blog/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/blog/layout.js"
     ],
-    "/(pages)/blog/page": [
+    "/(pages)/blog/retail-pos-3d-printen/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/page.js"
+      "static/chunks/app/(pages)/blog/retail-pos-3d-printen/page.js"
     ],
-    "/(pages)/blog/kapot-onderdeel-laten-printen/page": [
+    "/api/contact/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/kapot-onderdeel-laten-printen/page.js"
+      "static/chunks/app/api/contact/route.js"
     ],
-    "/(pages)/blog/ikea-onderdelen-3d-printen/page": [
+    "/(pages)/contact/bedankt/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/ikea-onderdelen-3d-printen/page.js"
+      "static/chunks/app/(pages)/contact/bedankt/page.js"
     ],
     "/(pages)/cases/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/cases/page.js"
-    ],
-    "/(pages)/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem/page.js"
     ]
   }
 }

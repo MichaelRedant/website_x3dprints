@@ -116,7 +116,7 @@ const faqItems = [
   },
   {
     q: "Can you produce small B2B series for events?",
-    a: "Yes. Small batches for business gifts and event items are supported with consistent quality.",
+    a: "Yes. Short production runs for business gifts and event items are supported with consistent quality.",
   },
   {
     q: "How do I reduce last-minute risk before February 14?",

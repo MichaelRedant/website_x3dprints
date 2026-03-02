@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "B2B prototyping en kleine reeksen",
     description:
-      "Praktische workflow voor productontwikkeling, validatie en kleine series met 3D printen.",
+      "Praktische workflow voor productontwikkeling, validatie en Korte reeksen met 3D printen.",
     url: canonical,
     images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "B2B prototyping en kleine reeksen" }],
     locale: "nl_BE",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "B2B prototyping en kleine reeksen",
-    description: "Gids voor iteraties, materiaalkeuze en schaalbare kleine series.",
+    description: "Gids voor iteraties, materiaalkeuze en schaalbare Korte reeksen.",
     images: ["/images/og-blog-nl.svg"],
   },
 }
@@ -253,7 +253,7 @@ export default function PrototypingSmallBatchGuidePage() {
             <h2 className="text-2xl font-semibold text-slate-900">Fase-aanpak: van prototype naar kleine reeks</h2>
             <div className="mt-4 overflow-x-auto rounded-2xl border border-slate-200/70 bg-white/80">
               <table className="min-w-full text-left text-sm text-slate-700">
-                <caption className="sr-only">Fase-aanpak voor B2B prototyping en kleine series</caption>
+                <caption className="sr-only">Fase-aanpak voor B2B prototyping en Korte reeksen</caption>
                 <thead className="bg-slate-50 text-xs uppercase tracking-wide text-slate-500">
                   <tr>
                     <th className="px-4 py-3">Fase</th>

@@ -515,6 +515,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/blog/vervangstuk-huishoudtoestel-3d-printen">
 }
 
+// Validate ..\..\app\(pages)\cases\[slug]\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\cases\\[slug]\\page.js")
+  handler satisfies AppPageConfig<"/cases/[slug]">
+}
+
 // Validate ..\..\app\(pages)\cases\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\cases\\page.js")
@@ -525,6 +531,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\cases\\selectieve-val-aziatische-hoornaar-sint-lievens-houtem\\page.js")
   handler satisfies AppPageConfig<"/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem">
+}
+
+// Validate ..\..\app\(pages)\contact\bedankt\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\contact\\bedankt\\page.js")
+  handler satisfies AppPageConfig<"/contact/bedankt">
 }
 
 // Validate ..\..\app\(pages)\contact\page.tsx
@@ -1157,6 +1169,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/en/blog/vervangstuk-huishoudtoestel-3d-printen">
 }
 
+// Validate ..\..\app\en\(pages)\cases\[slug]\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\cases\\[slug]\\page.js")
+  handler satisfies AppPageConfig<"/en/cases/[slug]">
+}
+
 // Validate ..\..\app\en\(pages)\cases\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\cases\\page.js")
@@ -1167,6 +1185,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\cases\\selectieve-val-aziatische-hoornaar-sint-lievens-houtem\\page.js")
   handler satisfies AppPageConfig<"/en/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem">
+}
+
+// Validate ..\..\app\en\(pages)\contact\bedankt\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\contact\\bedankt\\page.js")
+  handler satisfies AppPageConfig<"/en/contact/bedankt">
 }
 
 // Validate ..\..\app\en\(pages)\contact\page.tsx

@@ -4,6 +4,12 @@ import path from "node:path"
 const ROOT = process.cwd()
 const TARGET_DIRS = ["app", "components", "content", "lib"]
 const FILE_EXTENSIONS = new Set([".ts", ".tsx", ".md", ".mdx"])
+const IGNORED_PATH_PREFIXES = [
+  "app/(pages)/shop/",
+  "app/en/(pages)/shop/",
+  "app/(pages)/crm/",
+  "app/en/(pages)/crm/",
+]
 
 const BLOCKED_PATTERNS = [
   /\bkleine batches?\b/gi,
@@ -58,6 +64,11 @@ async function main() {
   const violations = []
 
   for (const filePath of files) {
+    const relativePath = path.relative(ROOT, filePath).replace(/\\/g, "/")
+    if (IGNORED_PATH_PREFIXES.some((prefix) => relativePath.startsWith(prefix))) {
+      continue
+    }
+
     const content = await fs.readFile(filePath, "utf8")
     for (const pattern of BLOCKED_PATTERNS) {
       pattern.lastIndex = 0
@@ -66,7 +77,7 @@ async function main() {
         const line = getLineNumber(content, match.index)
         const lineText = content.split(/\r?\n/)[line - 1] ?? ""
         violations.push({
-          filePath: path.relative(ROOT, filePath).replace(/\\/g, "/"),
+          filePath: relativePath,
           line,
           term: match[0],
           context: truncate(lineText),

@@ -247,7 +247,6 @@ export default async function LocationEnPage({ params }: { params: Promise<{ slu
               <h2 className="text-xl font-semibold text-slate-900">Address & contact</h2>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
                 <li>{SITE.address.street}, {SITE.address.postalCode} {SITE.address.locality}</li>
-                <li>{SITE.phone}</li>
                 <li>
                   <a href="mailto:michael@xinudesign.be" className="text-indigo-600 underline underline-offset-4">michael@xinudesign.be</a>
                 </li>
