@@ -194,7 +194,7 @@ const TOPICS_NL: Topic[] = [
       "Alles wat je moet weten om organizers te laten printen: intake, materiaalkeuze, labelzones, anti-slip en wanneer je kiest voor Gridfinity, Packout, TSTAK of een custom insert.",
     highlights: [
       "Bevat interne links naar de organizers hub, materialen en pricing zodat je meteen kunt plannen.",
-      "Uitleg per systeem (Gridfinity, Packout, TSTAK, custom/Skådis) met intakechecklist.",
+      "Uitleg per systeem (Gridfinity, Packout, TSTAK, custom/Sk\u00E5dis) met intakechecklist.",
       "Externe context over pegboards en Packout ecosystemen om EEAT te versterken.",
     ],
     links: [
@@ -210,7 +210,7 @@ const TOPICS_NL: Topic[] = [
     title: "Gridfinity: modulair opslagsysteem met maatwerk door X3DPrints",
     date: "2026-01-30",
     summary:
-      "Uitleg van het 42×42×7 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
+      "Uitleg van het 42\u00D742\u00D77 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
     highlights: [
       "Technische kern: raster, magneten, labels, materialen en generators.",
       "Toepassingen van werkplaats tot keuken en Packout-koffers.",
@@ -1485,7 +1485,7 @@ const TOPICS_EN: Topic[] = [
       "Complete guide to printed organizers: intake checklist, materials, label zones, anti-slip and when to choose Gridfinity, Packout, TSTAK or fully custom inserts.",
     highlights: [
       "Internal links to the organizers hub, materials and pricing so you can plan fast.",
-      "System-by-system guidance (Gridfinity/gridfinity-style, Packout, TSTAK, custom/Skådis) plus what to send during intake.",
+      "System-by-system guidance (Gridfinity/gridfinity-style, Packout, TSTAK, custom/Sk\u00E5dis) plus what to send during intake.",
       "External context on pegboards and Packout ecosystems to strengthen EEAT.",
     ],
     links: [
@@ -1501,7 +1501,7 @@ const TOPICS_EN: Topic[] = [
     title: "Gridfinity: modular storage system, custom-fit by X3DPrints",
     date: "2026-01-30",
     summary:
-      "Explains the 42×42×7 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
+      "Explains the 42\u00D742\u00D77 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
     highlights: [
       "Technical core: grid, magnets, labels, materials and generators.",
       "Use cases from workshops to kitchens and Packout cases.",
@@ -2623,7 +2623,7 @@ const TOPICS_EN: Topic[] = [
       "Alles wat je moet weten om organizers te laten printen: intake, materiaalkeuze, labelzones, anti-slip en wanneer je kiest voor Gridfinity, Packout, TSTAK of een custom insert.",
     highlights: [
       "Bevat interne links naar de organizers hub, materialen en pricing zodat je meteen kunt plannen.",
-      "Uitleg per systeem (Gridfinity/gridfinity-stijl, Packout, TSTAK, custom/Skådis) met intakechecklist.",
+      "Uitleg per systeem (Gridfinity/gridfinity-stijl, Packout, TSTAK, custom/Sk\u00E5dis) met intakechecklist.",
       "Externe context over pegboards en Packout ecosystemen om EEAT te versterken.",
     ],
     links: [
@@ -2639,7 +2639,7 @@ const TOPICS_EN: Topic[] = [
     title: "Gridfinity: modular storage system, custom-fit by X3DPrints",
     date: "2026-01-30",
     summary:
-      "Explains the 42×42×7 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
+      "Explains the 42\u00D742\u00D77 mm grid, magnets, labels, Packout integrations and why X3DPrints is the partner for custom bins and starter kits.",
     highlights: [
       "Technical core: grid, magnets, labels, materials and generators.",
       "Use cases from workshops to kitchens and Packout cases.",
@@ -2658,7 +2658,7 @@ const TOPICS_EN: Topic[] = [
     title: "Gridfinity: modulair opslagsysteem met maatwerk door X3DPrints",
     date: "2026-12-30",
     summary:
-      "Uitleg van het 42×42×7 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
+      "Uitleg van het 42\u00D742\u00D77 mm raster, magneten, labels, Packout-integraties en waarom X3DPrints de partner is voor custom bins en starterkits.",
     highlights: [
       "Technische kern: raster, magneten, labels, materialen en generators.",
       "Toepassingen van werkplaats tot keuken en Packout-koffers.",
@@ -2929,7 +2929,7 @@ type TopicCardProps = {
 
 function TopicCard({ topic, intentLabels, seoIntentLabel, localize }: TopicCardProps) {
   return (
-    <GlassCard className="h-full border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
+    <GlassCard className="h-full min-w-0 border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
       <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
         <span>{intentLabels[topic.intent]}</span>
         <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" aria-hidden />
@@ -2937,22 +2937,22 @@ function TopicCard({ topic, intentLabels, seoIntentLabel, localize }: TopicCardP
           {seoIntentLabel}: {topic.intent}
         </span>
       </div>
-      <h3 className="mt-3 text-xl font-semibold text-slate-900">{topic.title}</h3>
-      <p className="mt-2 text-sm text-slate-700">{topic.summary}</p>
+      <h3 className="mt-3 break-words text-xl font-semibold text-slate-900">{topic.title}</h3>
+      <p className="mt-2 break-words text-sm text-slate-700">{topic.summary}</p>
       <ul className="mt-4 space-y-2 text-sm text-slate-600">
         {topic.highlights.slice(0, 2).map((item) => (
           <li key={item} className="flex items-start gap-2">
             <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
-            <span>{item}</span>
+            <span className="min-w-0 break-words">{item}</span>
           </li>
         ))}
       </ul>
-      <div className="mt-6 flex flex-wrap gap-3">
+      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         {topic.links.slice(0, 2).map((link) => (
           <Link
             key={`${topic.id}-${link.href}`}
             href={localize(link.href)}
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+            className="inline-flex w-full items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-left text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white sm:w-auto sm:justify-start"
           >
             {link.label}
           </Link>
@@ -3096,17 +3096,17 @@ export default function BlogPage({ locale }: BlogPageProps) {
             </h1>
             <p className="text-lg text-slate-700">{copy.hero.body}</p>
             <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <ShimmerButton href={localize("/pricing")}>{copy.hero.ctas.pricing}</ShimmerButton>
               <Link
                 href={localize("/materials")}
-                className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white sm:w-auto"
               >
                 {copy.hero.ctas.materials}
               </Link>
               <Link
                 href={localize("/blog/finishing-friday-schuren-primen-lakken")}
-                className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-white/30 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white sm:w-auto"
               >
                 {copy.hero.ctas.finishing}
               </Link>
@@ -3128,7 +3128,7 @@ export default function BlogPage({ locale }: BlogPageProps) {
                   <li key={link.href}>
                     <Link
                       href={localize(link.href)}
-                      className="inline-flex items-center gap-2 rounded-xl border border-slate-100 bg-white/80 px-3 py-2 font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-white"
+                      className="inline-flex w-full items-center justify-between gap-2 rounded-xl border border-slate-100 bg-white/80 px-3 py-2 font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-white"
                     >
                       {link.label}
                       <span aria-hidden>-&gt;</span>
@@ -3155,7 +3155,7 @@ export default function BlogPage({ locale }: BlogPageProps) {
               </div>
               <Link
                 href={localize(filamentTopics[0]?.links[0]?.href ?? "/blog")}
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                className="inline-flex w-full items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white sm:w-auto sm:justify-start"
               >
                 {copy.sections.filamentFriday.cta}
                 <span aria-hidden>-&gt;</span>
@@ -3196,7 +3196,7 @@ export default function BlogPage({ locale }: BlogPageProps) {
                 </div>
                 <Link
                   href={localize(makerMondayTopics[0]?.links[0]?.href ?? "/blog")}
-                  className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                  className="inline-flex w-full items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white sm:w-auto sm:justify-start"
                 >
                   {copy.sections.makerMonday.cta}
                   <span aria-hidden>-&gt;</span>
@@ -3238,7 +3238,7 @@ export default function BlogPage({ locale }: BlogPageProps) {
                 </div>
                 <Link
                   href={localize(useCaseTopics[0]?.links[0]?.href ?? "/blog")}
-                  className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                  className="inline-flex w-full items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white sm:w-auto sm:justify-start"
                 >
                   {copy.sections.useCase.cta}
                   <span aria-hidden>-&gt;</span>
@@ -3281,7 +3281,7 @@ export default function BlogPage({ locale }: BlogPageProps) {
                   </div>
                   <Link
                     href="#blog-search"
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                    className="inline-flex w-full items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white sm:w-auto sm:justify-start"
                   >
                     {copy.groupedSection.cta}
                     <span aria-hidden>-&gt;</span>

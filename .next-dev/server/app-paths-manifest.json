@@ -1,7 +1,4 @@
 {
-  "/(pages)/contact/page": "app/(pages)/contact/page.js",
-  "/(pages)/services/page": "app/(pages)/services/page.js",
-  "/(pages)/contact/bedankt/page": "app/(pages)/contact/bedankt/page.js",
-  "/(pages)/cases/page": "app/(pages)/cases/page.js",
-  "/(pages)/blog/retail-pos-3d-printen/page": "app/(pages)/blog/retail-pos-3d-printen/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(home)/page": "app/(home)/page.js"
 }

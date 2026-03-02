@@ -551,7 +551,7 @@ export default function CasesPage({ locale }: CasesPageProps) {
             <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">{copy.title}</h1>
             <p className="max-w-3xl text-lg text-slate-700">{copy.intro}</p>
             <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{copy.lastUpdated}</p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <ShimmerButton
                 href={copy.contactHref}
                 event={{ action: "cta_click", category: `cases_${locale}_top`, label: "contact_prefill" }}
@@ -589,7 +589,10 @@ export default function CasesPage({ locale }: CasesPageProps) {
                   <GlassCard key={card.title} className="h-full p-6">
                     <h3 className="text-lg font-semibold text-slate-900">{card.title}</h3>
                     <p className="mt-2 text-sm text-slate-700">{card.body}</p>
-                    <Link href={card.href} className="mt-4 inline-flex text-sm font-semibold text-indigo-600 hover:text-indigo-500">
+                    <Link
+                      href={card.href}
+                      className="mt-4 inline-flex w-full items-center justify-between text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:w-auto sm:justify-start"
+                    >
                       {card.cta}
                     </Link>
                   </GlassCard>
@@ -608,7 +611,7 @@ export default function CasesPage({ locale }: CasesPageProps) {
                     <GlassCard key={entry.id} className="h-full p-6">
                       <div className="flex flex-wrap gap-2 text-xs text-slate-500">
                         <span>{copy.publishedPrefix}: {formatPublishedDate(entry.publishedOn, locale)}</span>
-                        <span aria-hidden>-</span>
+                        <span aria-hidden className="hidden sm:inline">-</span>
                         <span>{copy.sectorLabel}: {entry.sector}</span>
                       </div>
                       <h3 className="mt-2 text-lg font-semibold text-slate-900">{entry.title}</h3>
@@ -619,7 +622,10 @@ export default function CasesPage({ locale }: CasesPageProps) {
                       <p className="mt-2 text-sm text-slate-700">
                         <span className="font-semibold text-slate-900">{copy.kpiLabel}:</span> {entry.kpi}
                       </p>
-                      <Link href={entry.href} className="mt-4 inline-flex text-sm font-semibold text-indigo-600 hover:text-indigo-500">
+                      <Link
+                        href={entry.href}
+                        className="mt-4 inline-flex w-full items-center justify-between text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:w-auto sm:justify-start"
+                      >
                         {copy.ctaLabel}
                       </Link>
                     </GlassCard>
@@ -736,7 +742,7 @@ export default function CasesPage({ locale }: CasesPageProps) {
                 </p>
                 <h2 className="mt-2 text-2xl font-semibold text-slate-900">{copy.bottomCta.title}</h2>
                 <p className="mt-2 text-slate-700">{copy.bottomCta.body}</p>
-                <div className="mt-4 flex flex-wrap gap-3">
+                <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                   <ShimmerButton
                     href={copy.bottomCta.primaryHref}
                     event={{ action: "cta_click", category: `cases_${locale}_bottom`, label: "contact_prefill" }}
@@ -745,7 +751,7 @@ export default function CasesPage({ locale }: CasesPageProps) {
                   </ShimmerButton>
                   <Link
                     href={copy.bottomCta.secondaryHref}
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300 hover:bg-slate-50"
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300 hover:bg-slate-50 sm:w-auto"
                   >
                     {copy.bottomCta.secondaryLabel}
                   </Link>

@@ -175,14 +175,14 @@ const HOME_COPY_NL = {
     kicker: "Tool organizers op maat",
     title: "Perfect georganiseerde gereedschapskoffers, op maat van jouw systeem.",
     body:
-      "EÃƒÆ’Ã‚Â©n hub met organizers voor Gridfinity, Packout, TSTAK en custom koffers. Geen STLÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s of losse bakjes: vaste layouts, labelbaar en fit per ladehoogte. Gridfinity krijgt extra aandacht: open-source raster, hyper-flexibel en volledig op maat te printen.",
+      "E\u00E9n hub met organizers voor Gridfinity, Packout, TSTAK en custom koffers. Geen STL's of losse bakjes: vaste layouts, labelbaar en fit per ladehoogte. Gridfinity krijgt extra aandacht: open-source raster, hyper-flexibel en volledig op maat te printen.",
     pains: ["Schroeven door elkaar", "Lege ruimte in koffers", "Tijdverlies bij zoeken", "Slecht overzicht"],
     solutions: ["Klemvaste trays zonder rammel", "Labelzones en kleurcodes", "Antislip optioneel", "Pasvorm per ladehoogte"],
     ctas: {
       primary: "Bekijk organizers",
       secondary: "Vraag je indeling aan",
     },
-    badge: "Print-on-demand in BelgiÃƒÆ’Ã‚Â« Ãƒâ€šÃ‚Â· Gridfinity/Packout/TSTAK/custom",
+    badge: "Print-on-demand in Belgi\u00EB \u00B7 Gridfinity/Packout/TSTAK/custom",
   },
   segments: {
     title: "Voor welke bedrijven we printen",
@@ -365,12 +365,12 @@ const HOME_COPY_NL = {
   pricing: {
     title: "Prijs, planning & levering voor B2B",
     body:
-      "Je krijgt een duidelijke offerte op basis van functie, afmetingen, materiaal en afwerking. We stemmen planning op voorhand af en adviseren waar je ontwerp sneller of kostenefficiÃƒÆ’Ã‚Â«nter kan zonder kwaliteitsverlies.",
+      "Je krijgt een duidelijke offerte op basis van functie, afmetingen, materiaal en afwerking. We stemmen planning op voorhand af en adviseren waar je ontwerp sneller of kosteneffici\u00EBnter kan zonder kwaliteitsverlies.",
     cards: [
       {
         title: "Prijsopbouw",
         description:
-          "Materiaal, printtijd, afwerking en eventuele montage. We sturen op kost-efficiÃƒÆ’Ã‚Â«ntie voor bedrijven.",
+          "Materiaal, printtijd, afwerking en eventuele montage. We sturen op kost-effici\u00EBntie voor bedrijven.",
       },
       {
         title: "Levertijd",
@@ -473,7 +473,7 @@ const HOME_COPY_EN = {
       primary: "Explore organizers",
       secondary: "Request your layout",
     },
-    badge: "Print-on-demand in Belgium Ãƒâ€šÃ‚Â· Gridfinity/Packout/TSTAK/custom",
+    badge: "Print-on-demand in Belgium \u00B7 Gridfinity/Packout/TSTAK/custom",
   },
   segments: {
     title: "Business teams we support",
@@ -1071,10 +1071,10 @@ export default function HomePage(props: unknown) {
                 Bundels & aanpak
               </div>
               <h3 className="mt-2 text-xl font-bold text-slate-900 dark:text-white">
-                EÃƒÆ’Ã‚Â©n hub, vier systemen
+                E\u00E9n hub, vier systemen
               </h3>
               <p className="mt-2 text-sm text-slate-700 dark:text-slate-200">
-                EÃƒÆ’Ã‚Â©n centrale hub: Gridfinity, Packout, TSTAK en custom inserts. Jij kiest je systeem, wij leveren klemvaste trays die stil liggen en meteen inzetbaar zijn.
+                E\u00E9n centrale hub: Gridfinity, Packout, TSTAK en custom inserts. Jij kiest je systeem, wij leveren klemvaste trays die stil liggen en meteen inzetbaar zijn.
               </p>
               <ul className="mt-4 space-y-2 text-sm text-slate-800 dark:text-slate-200">
                 {copy.organizers.solutions.map((sol) => (
@@ -1086,10 +1086,10 @@ export default function HomePage(props: unknown) {
               </ul>
               <div className="mt-5 grid gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-600 dark:text-slate-300">
                 <span className="rounded-xl bg-slate-900 px-3 py-2 text-[11px] font-bold text-white shadow-sm ring-1 ring-white/10 dark:bg-amber-500/90">
-                  Geen rammel Ãƒâ€šÃ‚Â· Geen losse bakjes Ãƒâ€šÃ‚Â· Layouts die passen in je koffer
+                  Geen rammel \u00B7 Geen losse bakjes \u00B7 Layouts die passen in je koffer
                 </span>
                 <span className="rounded-xl bg-white/80 px-3 py-2 text-[11px] font-semibold text-slate-800 ring-1 ring-white/60 dark:bg-[#0f162c] dark:text-slate-100 dark:ring-0">
-                  Prefill contact: kies systeem, voeg fotoÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s toe, wij tekenen de indeling
+                  Prefill contact: kies systeem, voeg foto&apos;s toe, wij tekenen de indeling
                 </span>
               </div>
               <div className="mt-6 flex flex-wrap gap-3">

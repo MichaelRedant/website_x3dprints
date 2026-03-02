@@ -207,18 +207,18 @@ export function renderCaseDetail({ slug, locale }: CaseDetailParams) {
             <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">{copy.heroTitle}</h1>
             <p className="text-lg text-slate-700">{copy.heroIntro}</p>
 
-            <div className="flex flex-wrap gap-3 text-sm text-slate-600">
+            <div className="flex flex-col gap-2 text-sm text-slate-600 sm:flex-row sm:flex-wrap sm:gap-3">
               <span>
                 {isEn ? "Scheduled publication" : "Geplande publicatie"}: <strong className="text-slate-900">{publishDateLabel}</strong>
               </span>
-              <span aria-hidden>-</span>
+              <span aria-hidden className="hidden sm:inline">-</span>
               <span>
                 {isEn ? "Status" : "Status"}:{" "}
                 <strong className={isLive ? "text-emerald-700" : "text-amber-700"}>{isLive ? (isEn ? "Live" : "Live") : "Scheduled"}</strong>
               </span>
             </div>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <ShimmerButton href={contactHref}>{copy.ctaPrimaryLabel}</ShimmerButton>
               <ShimmerButton
                 href={materialHref}
@@ -233,7 +233,7 @@ export function renderCaseDetail({ slug, locale }: CaseDetailParams) {
                 <p className="text-sm text-slate-700">
                   {isEn
                     ? "This case is already prepared and will be indexed after publication."
-                    : "Deze case staat klaar en wordt pas geïndexeerd na publicatie."}
+                    : "Deze case staat klaar en wordt pas ge\u00EFndexeerd na publicatie."}
                 </p>
               </GlassCard>
             ) : null}
@@ -268,12 +268,12 @@ export function renderCaseDetail({ slug, locale }: CaseDetailParams) {
 
           <section className="rounded-3xl border border-slate-200/70 bg-white/80 p-6">
             <h2 className="text-2xl font-semibold text-slate-900">{isEn ? "Related links" : "Relevante links"}</h2>
-            <div className="mt-4 grid gap-3 md:grid-cols-3">
+            <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {copy.links.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 hover:border-slate-300 hover:bg-slate-50"
+                  className="min-w-0 break-words rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 hover:border-slate-300 hover:bg-slate-50"
                 >
                   {item.label}
                 </Link>
