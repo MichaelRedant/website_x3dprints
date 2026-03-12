@@ -19,6 +19,7 @@ import MiniToc from "@/components/MiniToc"
 import CtaBlock from "@/components/CtaBlock"
 import Faq from "@/components/Faq"
 import GoogleReviewHighlights from "@/components/GoogleReviewHighlights"
+import LocationShowcase from "@/components/LocationShowcase"
 
 import { renderMarkdown, splitMarkdown } from "@/lib/markdown"
 import { extractHeadings } from "@/lib/headings"
@@ -590,6 +591,8 @@ export default async function Page(
           </Reveal>
         </div>
       </section>
+
+      <LocationShowcase locale="nl" city={loc.city} />
 
       {/* NAP + servicegebied */}
       <section className="px-6 pb-12 sm:px-8 lg:px-12">

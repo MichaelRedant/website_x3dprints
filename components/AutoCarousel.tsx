@@ -1,5 +1,6 @@
 "use client"
 
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion"
 import Image from "next/image"
 import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import { createPortal } from "react-dom"
@@ -21,6 +22,7 @@ export default function AutoCarousel({
   itemClass = "aspect-[4/3] sm:aspect-[3/2] lg:aspect-[16/10]",
   visibleCount = 3,
   newCount = 0,
+  premium = false,
 }: {
   items: Photo[]
   className?: string
@@ -31,8 +33,11 @@ export default function AutoCarousel({
   visibleCount?: number
   /** Markeer eerste N items als nieuw */
   newCount?: number
+  /** Gebruik extra motion en top progress-animatie */
+  premium?: boolean
 }) {
   const { locale } = useLocale()
+  const prefersReducedMotion = useReducedMotion()
   const copy = locale === "en"
     ? {
         ariaLabel: "Portfolio carousel",
@@ -70,9 +75,10 @@ export default function AutoCarousel({
 
   useEffect(() => {
     if (items.length <= 1) return
+    if (active) return
     const id = setInterval(() => goTo(1), speed * 1000)
     return () => clearInterval(id)
-  }, [items.length, speed, goTo])
+  }, [active, items.length, speed, goTo])
 
   useEffect(() => {
     if (items.length === 0) return
@@ -93,7 +99,15 @@ export default function AutoCarousel({
   }, [active])
 
   const visibleItems = useMemo(
-    () => Array.from({ length: Math.min(visibleCount, items.length) }, (_, i) => items[(index + i) % items.length]),
+    () =>
+      Array.from({ length: Math.min(visibleCount, items.length) }, (_, i) => {
+        const itemIndex = (index + i) % items.length
+        return {
+          photo: items[itemIndex],
+          itemIndex,
+          slotIndex: i,
+        }
+      }),
     [index, items, visibleCount],
   )
 
@@ -113,6 +127,7 @@ export default function AutoCarousel({
       aria-label={copy.ariaLabel}
       className={[
         "group relative overflow-hidden rounded-3xl ring-1 ring-white/30 bg-white/55 backdrop-blur-xl shadow-glass",
+        premium ? "border border-indigo-100/40 shadow-[0_22px_65px_rgba(30,41,59,0.18)]" : "",
         className,
       ].join(" ")}
     >
@@ -120,60 +135,107 @@ export default function AutoCarousel({
         aria-hidden
         className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-r from-cyan-200/30 via-transparent to-teal-200/30"
       />
+      {premium ? (
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white/70 via-indigo-50/35 to-transparent"
+        />
+      ) : null}
 
       <div className="relative w-full overflow-hidden">
-        <div
-          className={`grid grid-cols-1 ${smColsClass} ${colsClass} gap-4 transition-transform duration-500`}
-          style={{ transform: `translateX(${0}px)` }}
-        >
-          {visibleItems.map((photo, idx) => (
-            <button
-              key={`${photo.src}-${idx}`}
-              onClick={() => setActive(photo)}
-              aria-label={copy.zoomLabel(photo.alt)}
-              className={[
-                "group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/50",
-                "bg-white/95 shadow-[0_18px_45px_rgba(15,23,42,0.12)] backdrop-blur",
-                "transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(15,23,42,0.18)]",
-              ].join(" ")}
-            >
-              {newCount > 0 && idx < newCount && (
-                <span className="absolute left-3 top-3 z-10 inline-flex items-center rounded-full bg-indigo-600/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white shadow-sm ring-1 ring-white/40">
-                  {copy.newLabel}
-                </span>
-              )}
-              <div className={`relative w-full ${itemClass}`}>
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  fill
-                  sizes="(max-width: 768px) 90vw, (max-width: 1200px) 60vw, 720px"
-                  className="object-contain transition duration-300 group-hover:scale-[1.01]"
-                  loading="lazy"
-                />
-              </div>
-              <div className="mt-2 px-3 pb-3 text-center">
-                <span className="inline-block rounded-md bg-white/85 px-3 py-1 text-[12px] font-medium text-slate-800 shadow-sm">
-                  {photo.alt}
-                </span>
-              </div>
-            </button>
-          ))}
-        </div>
+        {premium && items.length > 1 ? (
+          <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 z-10 h-1 overflow-hidden bg-white/40">
+            <motion.div
+              key={`progress-${index}`}
+              className="h-full bg-gradient-to-r from-cyan-400 via-indigo-500 to-emerald-400"
+              initial={prefersReducedMotion ? { x: "0%" } : { x: "-100%" }}
+              animate={{ x: "0%" }}
+              transition={prefersReducedMotion ? { duration: 0 } : { duration: speed, ease: "linear" }}
+            />
+          </div>
+        ) : null}
+
+        <AnimatePresence initial={false} mode={prefersReducedMotion ? "sync" : "wait"}>
+          <motion.div
+            key={`carousel-frame-${index}-${visibleCount}`}
+            className={`grid grid-cols-1 ${smColsClass} ${colsClass} gap-4`}
+            initial={prefersReducedMotion ? false : premium ? { opacity: 0, y: 20 } : { opacity: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={prefersReducedMotion ? { opacity: 1 } : premium ? { opacity: 0, y: -16 } : { opacity: 0 }}
+            transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
+          >
+            {visibleItems.map(({ photo, itemIndex, slotIndex }) => (
+              <motion.button
+                key={`${photo.src}-${itemIndex}`}
+                type="button"
+                onClick={() => setActive(photo)}
+                aria-label={copy.zoomLabel(photo.alt)}
+                className={[
+                  "group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/50",
+                  "bg-white/95 shadow-[0_18px_45px_rgba(15,23,42,0.12)] backdrop-blur",
+                  "transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(15,23,42,0.18)]",
+                  premium ? "hover:-translate-y-1.5" : "",
+                ].join(" ")}
+                initial={prefersReducedMotion ? false : premium ? { opacity: 0, y: 28, scale: 0.985 } : { opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={
+                  prefersReducedMotion
+                    ? { duration: 0 }
+                    : {
+                        duration: 0.5,
+                        ease: [0.22, 1, 0.36, 1],
+                        delay: premium ? slotIndex * 0.05 : 0,
+                      }
+                }
+              >
+                {newCount > 0 && itemIndex < newCount && (
+                  <span className="absolute left-3 top-3 z-10 inline-flex items-center rounded-full bg-indigo-600/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white shadow-sm ring-1 ring-white/40">
+                    {copy.newLabel}
+                  </span>
+                )}
+                <div className={`relative w-full ${itemClass}`}>
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    sizes="(max-width: 768px) 90vw, (max-width: 1200px) 60vw, 720px"
+                    className="object-contain transition duration-300 group-hover:scale-[1.01]"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="mt-2 px-3 pb-3 text-center">
+                  <span className="inline-block rounded-md bg-white/85 px-3 py-1 text-[12px] font-medium text-slate-800 shadow-sm">
+                    {photo.alt}
+                  </span>
+                </div>
+              </motion.button>
+            ))}
+          </motion.div>
+        </AnimatePresence>
 
         {items.length > 1 && (
           <>
             <button
               aria-label={copy.prevLabel}
               onClick={prev}
-              className="absolute left-3 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-lg bg-white/85 text-slate-900 shadow-sm backdrop-blur transition hover:bg-white"
+              type="button"
+              className={[
+                "absolute left-3 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-lg",
+                "bg-white/85 text-slate-900 shadow-sm backdrop-blur transition hover:bg-white",
+                premium ? "border border-white/70 hover:-translate-y-[54%] hover:shadow-lg" : "",
+              ].join(" ")}
             >
               <FaChevronLeft aria-hidden />
             </button>
             <button
               aria-label={copy.nextLabel}
               onClick={next}
-              className="absolute right-3 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-lg bg-white/85 text-slate-900 shadow-sm backdrop-blur transition hover:bg-white"
+              type="button"
+              className={[
+                "absolute right-3 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-lg",
+                "bg-white/85 text-slate-900 shadow-sm backdrop-blur transition hover:bg-white",
+                premium ? "border border-white/70 hover:-translate-y-[54%] hover:shadow-lg" : "",
+              ].join(" ")}
             >
               <FaChevronRight aria-hidden />
             </button>

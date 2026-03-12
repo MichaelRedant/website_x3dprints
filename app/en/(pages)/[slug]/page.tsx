@@ -13,6 +13,7 @@ import Markdown from "@/components/Markdown"
 import MiniToc from "@/components/MiniToc"
 import Faq from "@/components/Faq"
 import GoogleReviewHighlights from "@/components/GoogleReviewHighlights"
+import LocationShowcase from "@/components/LocationShowcase"
 
 import { renderMarkdown, splitMarkdown } from "@/lib/markdown"
 import { extractHeadings } from "@/lib/headings"
@@ -239,6 +240,8 @@ export default async function LocationEnPage({ params }: { params: Promise<{ slu
           </Reveal>
         </div>
       </section>
+
+      <LocationShowcase locale="en" city={loc.city} />
 
       <section className="px-6 pb-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
