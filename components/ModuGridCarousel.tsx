@@ -6,8 +6,8 @@ import { useId, useRef } from "react"
 type CarouselImage = { src: string; alt: string }
 
 const IMAGES: CarouselImage[] = [
-  { src: "/images/organizers/modugrid/ModuGrid1.jpg", alt: "Gridfinity lade overzicht" },
-  { src: "/images/organizers/modugrid/ModuGrid2.jpg", alt: "Gridfinity lade met schroeven en bits" },
+  { src: "/images/organizers/modugrid/ModuGrid1.webp", alt: "Gridfinity lade overzicht" },
+  { src: "/images/organizers/modugrid/ModuGrid2.webp", alt: "Gridfinity lade met schroeven en bits" },
   { src: "/images/organizers/modugrid/ModuGrid3.webp", alt: "Gridfinity lade met bits en schroeven" },
   { src: "/images/organizers/modugrid/ModuGrid4.webp", alt: "Gridfinity bakjes voor bureau tools" },
   { src: "/images/organizers/modugrid/ModuGrid5.webp", alt: "Gridfinity detail met labels" },

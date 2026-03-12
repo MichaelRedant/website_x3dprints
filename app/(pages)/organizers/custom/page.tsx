@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     images: PAGE.seo.ogImage
       ? [{ url: PAGE.seo.ogImage, width: 1200, height: 630, alt: "Custom toolbox insert op maat" }]
-      : [{ url: "/images/organizers/custom/custom1.jpg", width: 1200, height: 900, alt: "Custom toolbox insert op maat" }],
+      : [{ url: "/images/organizers/modugrid/ModuGrid10.webp", width: 1200, height: 900, alt: "Custom toolbox insert op maat" }],
     siteName: SITE.name,
     locale: SITE.locale,
   },

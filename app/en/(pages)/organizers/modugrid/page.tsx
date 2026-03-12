@@ -13,8 +13,8 @@ import { SITE, buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 const PAGE = ORGANIZER_PAGES.modugrid
 const PAGE_URL = `${SITE.url}/en/organizers/${PAGE.slug}/`
 const CAROUSEL_ITEMS = [
-  { src: "/images/organizers/modugrid/ModuGrid1.jpg", alt: "Gridfinity drawer overview (gridfinity alternative)", width: 1200, height: 900 },
-  { src: "/images/organizers/modugrid/ModuGrid2.jpg", alt: "Gridfinity drawer with screws and bits, made-to-fit", width: 1200, height: 900 },
+  { src: "/images/organizers/modugrid/ModuGrid1.webp", alt: "Gridfinity drawer overview (gridfinity alternative)", width: 1200, height: 900 },
+  { src: "/images/organizers/modugrid/ModuGrid2.webp", alt: "Gridfinity drawer with screws and bits, made-to-fit", width: 1200, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid3.webp", alt: "Gridfinity tray with bits and screws, label-ready", width: 1200, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid4.webp", alt: "Gridfinity bins for desk tools and EDC", width: 1200, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid5.webp", alt: "Gridfinity detail with labels and anti-slip", width: 1200, height: 900 },

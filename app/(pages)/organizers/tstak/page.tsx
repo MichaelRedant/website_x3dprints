@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     images: PAGE.seo.ogImage
       ? [{ url: PAGE.seo.ogImage, width: 1200, height: 630, alt: "TSTAK organizer op maat" }]
-      : [{ url: "/images/organizers/tstak/tstak1.jpg", width: 1200, height: 900, alt: "TSTAK organizer op maat" }],
+      : [{ url: "/images/organizers/tstak/tstak1.webp", width: 1200, height: 900, alt: "TSTAK organizer op maat" }],
     siteName: SITE.name,
     locale: SITE.locale,
   },
@@ -93,7 +93,7 @@ export default function TstakPage() {
             <ContentTableOfContents title="Inhoud" items={tocItems} className="max-w-xl" />
             <div className="overflow-hidden rounded-2xl border border-white/60 shadow-lg ring-1 ring-white/60 dark:border-slate-800 dark:ring-0">
               <Image
-                src="/images/organizers/tstak/tstak0.jpg"
+                src="/images/organizers/tstak/tstak0.webp"
                 alt="TSTAK organizer overzicht in de koffer"
                 width={1600}
                 height={900}
@@ -251,9 +251,9 @@ export default function TstakPage() {
               speed={4}
               itemClass="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]"
               items={[
-                { src: "/images/organizers/tstak/tstak1.jpg", alt: "TSTAK organizer met verdeelde vakken", width: 1600, height: 900 },
-                { src: "/images/organizers/tstak/tstak2.jpg", alt: "TSTAK insert voor small parts en bits", width: 1600, height: 900 },
-                { src: "/images/organizers/tstak/tstak3.jpeg", alt: "TSTAK low-profile layout met labelzones", width: 1600, height: 900 },
+                { src: "/images/organizers/tstak/tstak1.webp", alt: "TSTAK organizer met verdeelde vakken", width: 1600, height: 900 },
+                { src: "/images/organizers/tstak/tstak2.webp", alt: "TSTAK insert voor small parts en bits", width: 1600, height: 900 },
+                { src: "/images/organizers/tstak/tstak3.webp", alt: "TSTAK low-profile layout met labelzones", width: 1600, height: 900 },
                 { src: "/images/organizers/tstak/tstak4.webp", alt: "TSTAK insert met antislip optie", width: 1600, height: 900 },
                 { src: "/images/organizers/tstak/tstak5.webp", alt: "TSTAK organizer detail met kleurcode", width: 1600, height: 900 },
                 { src: "/images/organizers/tstak/tstak6.webp", alt: "TSTAK layout voor handtools en verbruiksmateriaal", width: 1600, height: 900 },

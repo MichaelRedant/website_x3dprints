@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     images: PAGE.seo.ogImage
       ? [{ url: PAGE.seo.ogImage, width: 1200, height: 630, alt: "Gridfinity organizer op maat" }]
-      : [{ url: "/images/organizers/modugrid/ModuGrid2.jpg", width: 1200, height: 900, alt: "Gridfinity organizer op maat" }],
+      : [{ url: "/images/organizers/modugrid/ModuGrid2.webp", width: 1200, height: 900, alt: "Gridfinity organizer op maat" }],
     siteName: SITE.name,
     locale: SITE.locale,
   },
@@ -41,8 +41,8 @@ export default function ModuGridPage() {
   const contactHref = buildOrganizerContactHref(PAGE.slug)
   const schemas = buildOrganizerSchemas(PAGE, PAGE_URL)
   const carouselItems = [
-    { src: "/images/organizers/modugrid/ModuGrid1.jpg", alt: "Gridfinity lade overzicht (gridfinity alternatief)", width: 1200, height: 900 },
-    { src: "/images/organizers/modugrid/ModuGrid2.jpg", alt: "Gridfinity lade met schroeven en bits (tool organizer op maat)", width: 1200, height: 900 },
+    { src: "/images/organizers/modugrid/ModuGrid1.webp", alt: "Gridfinity lade overzicht (gridfinity alternatief)", width: 1200, height: 900 },
+    { src: "/images/organizers/modugrid/ModuGrid2.webp", alt: "Gridfinity lade met schroeven en bits (tool organizer op maat)", width: 1200, height: 900 },
     { src: "/images/organizers/modugrid/ModuGrid3.webp", alt: "Gridfinity lade met bits en schroeven, labelbaar", width: 1200, height: 900 },
     { src: "/images/organizers/modugrid/ModuGrid4.webp", alt: "Gridfinity bakjes voor bureau tools en EDC", width: 1200, height: 900 },
     { src: "/images/organizers/modugrid/ModuGrid5.webp", alt: "Gridfinity detail met labels en antislip", width: 1200, height: 900 },

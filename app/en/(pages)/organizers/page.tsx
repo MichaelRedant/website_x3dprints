@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "Choose your system: Gridfinity, Packout, TSTAK or custom inserts. Quiet, labelable layouts that stay put in vans and workshops.",
     url: "https://www.x3dprints.be/en/organizers/",
     images: [
-      { url: `${SITE.url}/images/organizers/modugrid/ModuGrid2.jpg`, width: 1200, height: 630, alt: "Tool organizers, made to fit" },
+      { url: `${SITE.url}/images/organizers/modugrid/ModuGrid2.webp`, width: 1200, height: 630, alt: "Tool organizers, made to fit" },
     ],
     locale: "en_BE",
     siteName: SITE.name,

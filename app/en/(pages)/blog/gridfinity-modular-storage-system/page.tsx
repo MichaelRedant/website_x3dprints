@@ -32,8 +32,8 @@ const references = [
 ]
 
 const GRID_IMAGES = [
-  { src: "/images/organizers/modugrid/ModuGrid1.jpg", alt: "Gridfinity drawer overview (top view)", width: 1600, height: 900 },
-  { src: "/images/organizers/modugrid/ModuGrid2.jpg", alt: "Gridfinity drawer with screws and bits", width: 1600, height: 900 },
+  { src: "/images/organizers/modugrid/ModuGrid1.webp", alt: "Gridfinity drawer overview (top view)", width: 1600, height: 900 },
+  { src: "/images/organizers/modugrid/ModuGrid2.webp", alt: "Gridfinity drawer with screws and bits", width: 1600, height: 900 },
   { src: "/images/og-blog-en.svg", alt: "Gridfinity bins with labels and anti-slip", width: 1600, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid4.webp", alt: "Gridfinity bins for desk tools", width: 1600, height: 900 },
   { src: "/images/organizers/modugrid/ModuGrid5.webp", alt: "Gridfinity detail with label edge", width: 1600, height: 900 },

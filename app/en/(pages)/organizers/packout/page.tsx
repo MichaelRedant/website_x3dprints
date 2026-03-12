@@ -90,9 +90,9 @@ const CAROUSEL_ITEMS = [
   { src: "/images/organizers/milwaukee/milwaukee5.webp", alt: "Packout low-profile organizer with label zones", width: 1600, height: 900 },
   { src: "/images/organizers/milwaukee/milwaukee6.webp", alt: "Packout compact organizer with anti-slip option", width: 1600, height: 900 },
   { src: "/images/organizers/milwaukee/milwaukee7.webp", alt: "Packout layout for service van, no loose parts", width: 1600, height: 900 },
-  { src: "/images/organizers/milwaukee/milwaukee8.jpg", alt: "Packout inlay with color coding and label rows", width: 1600, height: 900 },
-  { src: "/images/organizers/milwaukee/milwaukee9.jfif", alt: "Packout organizer mixing batteries and hand tools", width: 1600, height: 900 },
-  { src: "/images/organizers/milwaukee/milwaukee10.jpeg", alt: "Packout low-profile compact for small consumables", width: 1600, height: 900 },
+  { src: "/images/organizers/milwaukee/milwaukee8.webp", alt: "Packout inlay with color coding and label rows", width: 1600, height: 900 },
+  { src: "/images/organizers/milwaukee/milwaukee9.webp", alt: "Packout organizer mixing batteries and hand tools", width: 1600, height: 900 },
+  { src: "/images/organizers/milwaukee/milwaukee10.webp", alt: "Packout low-profile compact for small consumables", width: 1600, height: 900 },
 ]
 
 const PAGE_URL = PAGE_EN.seo.canonical

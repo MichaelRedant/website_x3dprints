@@ -20,9 +20,9 @@ const CAROUSEL_ITEMS = [
   { src: "/images/organizers/milwaukee/milwaukee5.webp", alt: "Packout low-profile organizer met labelzones", width: 1600, height: 900 },
   { src: "/images/organizers/milwaukee/milwaukee6.webp", alt: "Packout compact organizer met antislip optie", width: 1600, height: 900 },
   { src: "/images/organizers/milwaukee/milwaukee7.webp", alt: "Packout layout voor servicewagen, geen losse onderdelen", width: 1600, height: 900 },
-  { src: "/images/organizers/milwaukee/milwaukee8.jpg", alt: "Packout inlay met kleurcode en labelbare rijen", width: 1600, height: 900 },
-  { src: "/images/organizers/milwaukee/milwaukee9.jfif", alt: "Packout organizer met mix van accu’s en handtools", width: 1600, height: 900 },
-  { src: "/images/organizers/milwaukee/milwaukee10.jpeg", alt: "Packout low-profile compact voor kleinverbruik", width: 1600, height: 900 },
+  { src: "/images/organizers/milwaukee/milwaukee8.webp", alt: "Packout inlay met kleurcode en labelbare rijen", width: 1600, height: 900 },
+  { src: "/images/organizers/milwaukee/milwaukee9.webp", alt: "Packout organizer met mix van accu’s en handtools", width: 1600, height: 900 },
+  { src: "/images/organizers/milwaukee/milwaukee10.webp", alt: "Packout low-profile compact voor kleinverbruik", width: 1600, height: 900 },
 ]
 
 export const metadata: Metadata = {

@@ -136,8 +136,8 @@ const inspirationImages = [
   { src: "/images/portfolio/XmasBalls2.webp", alt: "3D printed Christmas decor set 2" },
   { src: "/images/portfolio/XmasDoorTrim.webp", alt: "3D printed Christmas decor set 3" },
   { src: "/images/portfolio/XmasScene.webp", alt: "3D printed Christmas decor set 4" },
-  { src: "/images/portfolio/xmasTree.jpg", alt: "3D printed Christmas decor set 5" },
-  { src: "/images/portfolio/IMG-20241106-WA0000.jpg", alt: "3D printed Christmas decor set 6" },
+  { src: "/images/portfolio/xmasTree.webp", alt: "3D printed Christmas decor set 5" },
+  { src: "/images/portfolio/IMG-20241106-WA0000.webp", alt: "3D printed Christmas decor set 6" },
 ]
 
 const articleJsonLd = buildArticleJsonLd({

@@ -225,7 +225,7 @@ function mapBffCart(
       slug: line.productSlug,
       name: info?.name ?? { nl: line.productSlug, en: line.productSlug },
       priceEur,
-      imageUrl: info?.imageUrl ?? "/images/og-home.jpg",
+      imageUrl: info?.imageUrl ?? "/images/og-home.webp",
       imageAlt: info?.imageAlt ?? { nl: line.productSlug, en: line.productSlug },
       quantity,
       lineId: line.lineId,

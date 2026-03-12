@@ -15,8 +15,11 @@ import HeroTrustBar, { type HeroTrustItem } from "@/components/HeroTrustBar"
 import LeadTimeStatus from "@/components/LeadTimeStatus"
 import QuickContactActions from "@/components/QuickContactActions"
 import MaterialSwatches, { type Swatch } from "@/components/MaterialSwatches"
+import AutoCarousel from "@/components/AutoCarousel"
 import { localizeHref } from "@/lib/i18n/paths"
 import { buildFaqPageSchema } from "@/lib/seo"
+import { readdirSync, statSync } from "node:fs"
+import path from "node:path"
 
 
 const NL_METADATA: Metadata = {
@@ -79,6 +82,57 @@ const EN_METADATA: Metadata = {
 void EN_METADATA
 
 export const metadata: Metadata = NL_METADATA
+
+const portfolioDir = path.join(process.cwd(), "public/images/portfolio")
+const organizerSpotlightPhoto = {
+  src: "/images/organizers/modugrid/ModuGrid10.webp",
+  alt: "Tool organizer op maat",
+}
+
+const toPortfolioTitle = (value: string) =>
+  value
+    .split(" ")
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ")
+
+const latestPortfolioPhotos = (() => {
+  try {
+    const portfolioEntries = readdirSync(portfolioDir)
+      .filter((file) => /\.webp$/i.test(file))
+      .map((file) => ({ file, mtime: statSync(path.join(portfolioDir, file)).mtimeMs }))
+      .sort((a, b) => b.mtime - a.mtime)
+
+    const sanitizedPortfolioEntries = portfolioEntries.filter(({ file }) => {
+      const normalizedFileName = file.toLowerCase()
+      if (normalizedFileName.includes("hoornaarval")) return false
+      if (normalizedFileName === "back2school (1).webp") return false
+      return true
+    })
+
+    const portfolioPhotos = sanitizedPortfolioEntries
+      .slice(0, 9)
+      .map(({ file }, index) => {
+        const baseLabel = file
+          .replace(/\.[^.]+$/, "")
+          .replace(/[-_]+/g, " ")
+          .replace(/\s+/g, " ")
+          .trim()
+        const cleaned = baseLabel
+          .replace(/^(afbeelding|image|img|foto)\s*/i, "")
+          .replace(/^\d+$/, "")
+          .trim()
+        return {
+          src: `/images/portfolio/${encodeURIComponent(file)}`,
+          alt: cleaned ? toPortfolioTitle(cleaned) : `Portfolio ontwerp ${index + 1}`,
+        }
+      })
+
+    return [organizerSpotlightPhoto, ...portfolioPhotos].slice(0, 10)
+  } catch {
+    return []
+  }
+})()
 
 function getSeasonCta(date: Date, isEn: boolean) {
   const MS_IN_DAY = 86_400_000
@@ -150,6 +204,12 @@ const HOME_COPY_NL = {
     { label: "Doorlooptijd", value: "Enkele werkdagen (in overleg)" },
     { label: "Bouwvolume", value: "Tot 35 x 32 x 35 cm" },
   ],
+  portfolioCarousel: {
+    kicker: "Recente 3D print projecten",
+    title: "10 voorbeeldontwerpen uit ons 3D print atelier",
+    body: "Een representatieve mix van maatwerk, seizoensprints en functionele onderdelen. Zie wat mogelijk is voor jouw idee en vraag snel een offerte op maat aan.",
+    cta: "Bekijk alle 3D print projecten",
+  },
   local: {
     kicker: "Lokaal & 100% Belgisch",
     title: "Herzeelse handelaar, verankerd in Vlaanderen.",
@@ -441,6 +501,12 @@ const HOME_COPY_EN = {
     { label: "Lead time", value: "A few business days (by agreement)" },
     { label: "Build volume", value: "Up to 35 x 32 x 35 cm" },
   ],
+  portfolioCarousel: {
+    kicker: "Recent 3D printing projects",
+    title: "10 showcase designs from our 3D printing studio",
+    body: "A representative mix of custom work, seasonal prints and functional parts. See what is possible for your idea and request a tailored quote fast.",
+    cta: "View all 3D printing projects",
+  },
   local: {
     kicker: "Local & 100% Belgian",
     title: "Herzele-based, rooted in Flanders.",
@@ -866,6 +932,36 @@ export default function HomePage(props: unknown) {
           </Reveal>
         </div>
       </section>
+
+      {latestPortfolioPhotos.length > 0 ? (
+        <section className="px-6 pb-14 sm:px-8 lg:px-12">
+          <div className="mx-auto max-w-6xl">
+            <Reveal className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <div className="max-w-3xl">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-indigo-600">{copy.portfolioCarousel.kicker}</p>
+                <h2 className="mt-2 text-balance text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                  {copy.portfolioCarousel.title}
+                </h2>
+                <p className="mt-2 text-sm text-slate-600 sm:text-base">{copy.portfolioCarousel.body}</p>
+              </div>
+              <Link
+                href={localize("/portfolio")}
+                className="inline-flex items-center justify-center rounded-xl border border-indigo-100/70 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+              >
+                {copy.portfolioCarousel.cta}
+              </Link>
+            </Reveal>
+            <Reveal delay={0.08} className="mt-8">
+              <AutoCarousel
+                items={latestPortfolioPhotos}
+                speed={10}
+                visibleCount={4}
+                itemClass="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]"
+              />
+            </Reveal>
+          </div>
+        </section>
+      ) : null}
 
       {/* LOKAAL */}
       <section className="px-6 pb-12 sm:px-8 lg:px-12">

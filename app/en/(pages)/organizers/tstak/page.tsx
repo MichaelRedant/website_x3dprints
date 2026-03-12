@@ -19,7 +19,7 @@ const PAGE_EN: OrganizerPageContent = {
     description:
       "Stanley/DeWALT TSTAK inserts for small parts and all-round kits: no rattle, clear label zones and optional anti-slip. Custom TSTAK insert in Belgium for field teams and vans.",
     canonical: `${SITE.url}/en/organizers/tstak/`,
-    ogImage: "/images/organizers/tstak/tstak0.jpg",
+    ogImage: "/images/organizers/tstak/tstak0.webp",
   },
   heroTitle: "TSTAK inserts with fixed layouts",
   heroSubtitle: "Preset sets for small parts and all-round cases, custom possible.",
@@ -160,7 +160,7 @@ export default function TstakPageEn() {
             <ContentTableOfContents title="Contents" items={tocItems} className="max-w-xl" />
             <div className="overflow-hidden rounded-2xl border border-white/60 shadow-lg ring-1 ring-white/60 dark:border-slate-800 dark:ring-0">
               <Image
-                src="/images/organizers/tstak/tstak0.jpg"
+                src="/images/organizers/tstak/tstak0.webp"
                 alt="TSTAK organizer overview in the case"
                 width={1600}
                 height={900}
@@ -308,9 +308,9 @@ export default function TstakPageEn() {
               speed={4}
               itemClass="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]"
               items={[
-                { src: "/images/organizers/tstak/tstak1.jpg", alt: "TSTAK organizer with divided bins", width: 1600, height: 900 },
-                { src: "/images/organizers/tstak/tstak2.jpg", alt: "TSTAK insert for small parts and bits", width: 1600, height: 900 },
-                { src: "/images/organizers/tstak/tstak3.jpeg", alt: "TSTAK low-profile layout with label zones", width: 1600, height: 900 },
+                { src: "/images/organizers/tstak/tstak1.webp", alt: "TSTAK organizer with divided bins", width: 1600, height: 900 },
+                { src: "/images/organizers/tstak/tstak2.webp", alt: "TSTAK insert for small parts and bits", width: 1600, height: 900 },
+                { src: "/images/organizers/tstak/tstak3.webp", alt: "TSTAK low-profile layout with label zones", width: 1600, height: 900 },
                 { src: "/images/organizers/tstak/tstak4.webp", alt: "TSTAK insert with anti-slip option", width: 1600, height: 900 },
                 { src: "/images/organizers/tstak/tstak5.webp", alt: "TSTAK organizer detail with color coding", width: 1600, height: 900 },
                 { src: "/images/organizers/tstak/tstak6.webp", alt: "TSTAK layout for hand tools and consumables", width: 1600, height: 900 },

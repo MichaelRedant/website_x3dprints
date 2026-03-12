@@ -96,7 +96,7 @@ const toTitleCase = (value: string) =>
     .join(" ")
 
 const photoEntries = readdirSync(portfolioDir)
-  .filter((file) => /\.(?:png|jpe?g|webp)$/i.test(file))
+  .filter((file) => /\.webp$/i.test(file))
   .map((file) => {
     const stats = statSync(path.join(portfolioDir, file))
     return { file, mtime: stats.mtimeMs }
