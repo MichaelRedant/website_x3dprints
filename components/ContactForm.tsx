@@ -100,6 +100,14 @@ function resolveMaterialName(raw: string) {
   return value
 }
 
+function resolveQuantityValue(raw: string) {
+  const cleaned = raw.replace(/[^\d]/g, "").slice(0, 3)
+  if (!cleaned) return ""
+  const parsed = Number(cleaned)
+  if (!Number.isFinite(parsed) || parsed <= 0) return ""
+  return String(Math.min(Math.round(parsed), 999))
+}
+
 export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) {
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -107,6 +115,7 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
   const copy = locale === "en" ? COPY.en : COPY.nl
   const materialFromQuery = searchParams.get("material") || ""
   const quoteFromQuery = searchParams.get("quote") || ""
+  const quantityFromQuery = searchParams.get("quantity") || ""
   const decodedQueryMaterial = useMemo(() => {
     if (!materialFromQuery) return ""
     try {
@@ -123,15 +132,17 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
       return quoteFromQuery
     }
   }, [quoteFromQuery])
+  const decodedQuantity = useMemo(() => resolveQuantityValue(quantityFromQuery), [quantityFromQuery])
   const initialMaterial = decodedQueryMaterial || defaultMaterial
 
   const appliedDefaultRef = useRef(initialMaterial)
   const appliedQuoteRef = useRef(decodedQuote)
+  const appliedQuantityRef = useRef(decodedQuantity)
   const [data, setData] = useState<FormDataShape>({
     name: "",
     email: "",
     message: "",
-    quantity: "",
+    quantity: decodedQuantity,
     material: initialMaterial,
     quote: decodedQuote ? decodedQuote : "",
     hp: "",
@@ -166,6 +177,18 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
     })
     appliedQuoteRef.current = decodedQuote
   }, [decodedQuote])
+
+  useEffect(() => {
+    if (!decodedQuantity) return
+    setData(prev => {
+      if (prev.quantity && prev.quantity !== appliedQuantityRef.current) return prev
+      return {
+        ...prev,
+        quantity: decodedQuantity,
+      }
+    })
+    appliedQuantityRef.current = decodedQuantity
+  }, [decodedQuantity])
 
   const emailValid = useMemo(() => /\S+@\S+\.\S+/.test(data.email), [data.email])
 

@@ -2,7 +2,7 @@
 
 import type { FormEvent } from "react"
 import type { ProductDraft } from "@/lib/crm/types"
-import { PRODUCT_AVAILABILITY_OPTIONS } from "@/lib/crm/types"
+import { PRODUCT_AVAILABILITY_OPTIONS, PRODUCT_PURCHASE_MODE_OPTIONS } from "@/lib/crm/types"
 
 type ProductModalProps = {
   open: boolean
@@ -153,6 +153,35 @@ export default function ProductModal({
                   </option>
                 ))}
               </select>
+            </label>
+            <label className="grid gap-1 text-sm font-semibold text-white">
+              Koopmodus
+              <select
+                value={draft.purchaseMode}
+                onChange={(event) => onChange("purchaseMode", event.target.value as ProductDraft["purchaseMode"])}
+                className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white"
+              >
+                {PRODUCT_PURCHASE_MODE_OPTIONS.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2">
+            <label className="grid gap-1 text-sm font-semibold text-white">
+              Stock count
+              <input
+                type="number"
+                min={0}
+                step="1"
+                value={draft.stockCount}
+                onChange={(event) => onChange("stockCount", event.target.value)}
+                className="rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-400"
+                placeholder="13"
+              />
             </label>
             <label className="mt-6 flex items-center gap-2 text-sm font-semibold text-white">
               <input

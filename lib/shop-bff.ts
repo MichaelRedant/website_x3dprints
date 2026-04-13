@@ -25,6 +25,8 @@ export type BffProduct = {
   summaryEn?: string
   price: BffPrice
   availability?: string
+  stockCount?: number | null
+  purchaseMode?: "cart" | "inquiry" | null
   image: BffImage
   tags?: string[]
   leadTimeDays?: { min: number; max: number } | null

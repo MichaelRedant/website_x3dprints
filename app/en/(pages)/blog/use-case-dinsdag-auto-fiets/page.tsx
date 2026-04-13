@@ -11,9 +11,9 @@ import { BLOG_FAQ_EN } from "@/content/blog-faq-en"
 
 const canonical = "https://www.x3dprints.be/en/blog/use-case-dinsdag-auto-fiets/"
 const publishedDate = "2025-11-25T08:00:00+01:00"
-const dateModified = "2026-02-08"
+const dateModified = "2026-04-12"
 const faq = BLOG_FAQ_EN["use-case-dinsdag-auto-fiets"]
-const lastUpdatedLabel = "Last updated: 8 February 2026"
+const lastUpdatedLabel = "Last updated: April 12, 2026"
 
 export const metadata: Metadata = {
   title: "Use Case Tuesday #1: 3D printing for cars and bikes | X3DPrints",
@@ -245,6 +245,16 @@ export default function UseCaseAutoBikeEnPage() {
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900">Need a mount or clamp printed?</h2>
                 <p className="mt-2 text-sm text-slate-600">
                   Share STL/STEP and the environment (sun, heat, vibration). We reply with material advice, planning and price.
+                </p>
+                <p className="mt-3 text-sm text-slate-600">
+                  For a more focused bike example around fit and visual integration, also see{" "}
+                  <Link
+                    href="/en/blog/use-case-dinsdag-headset-spacer-racefiets"
+                    className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                  >
+                    the custom race bike headset spacer case
+                  </Link>
+                  .
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:items-end">

@@ -30,6 +30,7 @@ import {
 import {
   EMPTY_PRODUCT_DRAFT,
   PRODUCT_AVAILABILITY_OPTIONS,
+  PRODUCT_PURCHASE_MODE_OPTIONS,
   hasRequiredProductFields,
   toProductPayload,
   type CrmDashboardMetrics,
@@ -1132,13 +1133,35 @@ export default function CrmGate() {
         slug,
         priceEur,
         availability: draft.availability || null,
+        stockCount: draft.stockCount === "" ? null : Number(draft.stockCount),
+        purchaseMode: draft.purchaseMode,
       })
-      setProductSuccess("Prijs en voorraadstatus bijgewerkt.")
+      setProductSuccess("Prijs, stock en koopmodus bijgewerkt.")
       await reloadProducts()
-      pushToast("Voorraad bijgewerkt", "success")
+      pushToast("Product bijgewerkt", "success")
     } catch (err) {
       setProductError(err instanceof Error ? err.message : "Inline update mislukt.")
       pushToast("Inline update mislukt", "error")
+    } finally {
+      setProductSaving(false)
+    }
+  }
+
+  async function syncStarterCatalog() {
+    if (!confirm("Startercatalogus syncen naar de backend? Bestaande operationele stock- en koopmodusvelden blijven behouden.")) {
+      return
+    }
+    try {
+      setProductSaving(true)
+      setProductError("")
+      setProductSuccess("")
+      await submitProductAction({ action: "sync-starter-catalog" })
+      await reloadProducts()
+      setProductSuccess("Startercatalogus gesynchroniseerd.")
+      pushToast("Startercatalogus gesynchroniseerd", "success")
+    } catch (err) {
+      setProductError(err instanceof Error ? err.message : "Startercatalogus sync mislukt.")
+      pushToast("Startercatalogus sync mislukt", "error")
     } finally {
       setProductSaving(false)
     }
@@ -2473,6 +2496,14 @@ export default function CrmGate() {
                         >
                           Refresh
                         </button>
+                        <button
+                          type="button"
+                          onClick={syncStarterCatalog}
+                          disabled={productSaving}
+                          className="rounded-lg border border-emerald-300/30 bg-emerald-500/15 px-3 py-2 text-xs font-semibold text-emerald-100 transition hover:bg-emerald-500/25 disabled:opacity-60"
+                        >
+                          Sync startercatalogus
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -2490,6 +2521,8 @@ export default function CrmGate() {
                               <th className="px-4 py-3">Product</th>
                               <th className="px-4 py-3">Prijs</th>
                               <th className="px-4 py-3">Voorraadstatus</th>
+                              <th className="px-4 py-3">Stock</th>
+                              <th className="px-4 py-3">Koopmodus</th>
                               <th className="px-4 py-3">Lead time</th>
                               <th className="px-4 py-3">Status</th>
                               <th className="px-4 py-3">Acties</th>
@@ -2529,6 +2562,32 @@ export default function CrmGate() {
                                       className="w-44 rounded-lg border border-white/10 bg-white/10 px-2 py-1.5 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
                                     >
                                       {PRODUCT_AVAILABILITY_OPTIONS.map((option) => (
+                                        <option key={option.value} value={option.value}>
+                                          {option.label}
+                                        </option>
+                                      ))}
+                                    </select>
+                                  </td>
+                                  <td className="px-4 py-3 align-top">
+                                    <input
+                                      type="number"
+                                      min={0}
+                                      step="1"
+                                      value={product.stockCount}
+                                      onChange={(e) => updateProductField(product.slug, "stockCount", e.target.value)}
+                                      disabled={fieldDisabled}
+                                      className="w-24 rounded-lg border border-white/10 bg-white/10 px-2 py-1.5 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
+                                      placeholder="-"
+                                    />
+                                  </td>
+                                  <td className="px-4 py-3 align-top">
+                                    <select
+                                      value={product.purchaseMode}
+                                      onChange={(e) => updateProductField(product.slug, "purchaseMode", e.target.value as ProductDraft["purchaseMode"])}
+                                      disabled={fieldDisabled}
+                                      className="w-44 rounded-lg border border-white/10 bg-white/10 px-2 py-1.5 text-sm text-white focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
+                                    >
+                                      {PRODUCT_PURCHASE_MODE_OPTIONS.map((option) => (
                                         <option key={option.value} value={option.value}>
                                           {option.label}
                                         </option>

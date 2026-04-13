@@ -11,8 +11,8 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 const canonical = "https://www.x3dprints.be/blog/prototyping-kleine-reeksen-3d-printen/"
 const enCanonical = "https://www.x3dprints.be/en/blog/prototyping-kleine-reeksen-3d-printen/"
 const datePublished = "2026-03-01"
-const dateModified = "2026-03-01"
-const lastUpdatedLabel = "Laatst bijgewerkt: 1 maart 2026"
+const dateModified = "2026-04-12"
+const lastUpdatedLabel = "Laatst bijgewerkt: 12 april 2026"
 
 const contactHref =
   "/contact?material=PETG&quote=B2B%20prototyping%20en%20kleine%20reeks%20-%20ik%20wil%20snelle%20iteratie"
@@ -113,6 +113,7 @@ const pricingRows = [
 
 const relatedLinks = [
   { label: "Use Case Dinsdag: productontwikkeling", href: "/blog/use-case-dinsdag-productontwikkeling" },
+  { label: "Case: custom headset spacer voor racefiets", href: "/blog/use-case-dinsdag-headset-spacer-racefiets" },
   { label: "3D print prijzen gids", href: "/blog/3d-print-prijzen-gids" },
   { label: "Juiste 3D print materiaal", href: "/blog/juiste-3d-print-materiaal" },
   { label: "3D print offerte aanvragen", href: "/blog/3d-print-offerte-aanvragen" },

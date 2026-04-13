@@ -69,6 +69,8 @@ export type ProductEntry = {
   summaryEn: string
   priceEur: number
   availability?: string | null
+  stockCount?: number | null
+  purchaseMode?: "cart" | "inquiry" | null
   tags?: string
   imageUrl: string
   imageAltNl: string
@@ -88,6 +90,8 @@ export type ProductDraft = {
   summaryEn: string
   priceEur: string
   availability: string
+  stockCount: string
+  purchaseMode: "cart" | "inquiry"
   tags: string
   imageUrl: string
   imageAltNl: string
@@ -107,6 +111,8 @@ export type ProductPayload = {
   summaryEn: string
   priceEur: number
   availability: string | null
+  stockCount: number | null
+  purchaseMode: "cart" | "inquiry"
   tags: string
   imageUrl: string
   imageAltNl: string
@@ -155,6 +161,11 @@ export const PRODUCT_AVAILABILITY_OPTIONS = [
   { value: "OutOfStock", label: "Niet beschikbaar" },
 ] as const
 
+export const PRODUCT_PURCHASE_MODE_OPTIONS = [
+  { value: "cart", label: "Direct via winkelmand" },
+  { value: "inquiry", label: "Via aanvraag" },
+] as const
+
 export const EMPTY_PRODUCT_DRAFT: ProductDraft = {
   slug: "",
   nameNl: "",
@@ -163,6 +174,8 @@ export const EMPTY_PRODUCT_DRAFT: ProductDraft = {
   summaryEn: "",
   priceEur: "",
   availability: "",
+  stockCount: "",
+  purchaseMode: "cart",
   tags: "",
   imageUrl: "",
   imageAltNl: "",
@@ -183,6 +196,8 @@ export function toProductDraft(product: ProductEntry): ProductDraft {
     summaryEn: product.summaryEn,
     priceEur: Number.isFinite(product.priceEur) ? product.priceEur.toFixed(2) : "",
     availability: product.availability ?? "",
+    stockCount: product.stockCount !== null && product.stockCount !== undefined ? String(product.stockCount) : "",
+    purchaseMode: product.purchaseMode === "inquiry" ? "inquiry" : "cart",
     tags: product.tags ?? "",
     imageUrl: product.imageUrl,
     imageAltNl: product.imageAltNl,
@@ -204,6 +219,8 @@ export function toProductPayload(draft: ProductDraft): ProductPayload {
     summaryEn: draft.summaryEn.trim(),
     priceEur: Number(draft.priceEur),
     availability: draft.availability || null,
+    stockCount: draft.stockCount === "" ? null : Number(draft.stockCount),
+    purchaseMode: draft.purchaseMode === "inquiry" ? "inquiry" : "cart",
     tags: draft.tags.trim(),
     imageUrl: draft.imageUrl.trim(),
     imageAltNl: draft.imageAltNl.trim(),

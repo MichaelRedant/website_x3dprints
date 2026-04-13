@@ -467,6 +467,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/blog/use-case-dinsdag-events">
 }
 
+// Validate ..\..\app\(pages)\blog\use-case-dinsdag-headset-spacer-racefiets\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\use-case-dinsdag-headset-spacer-racefiets\\page.js")
+  handler satisfies AppPageConfig<"/blog/use-case-dinsdag-headset-spacer-racefiets">
+}
+
 // Validate ..\..\app\(pages)\blog\use-case-dinsdag-interieur\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\use-case-dinsdag-interieur\\page.js")
@@ -1119,6 +1125,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\use-case-dinsdag-events\\page.js")
   handler satisfies AppPageConfig<"/en/blog/use-case-dinsdag-events">
+}
+
+// Validate ..\..\app\en\(pages)\blog\use-case-dinsdag-headset-spacer-racefiets\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\use-case-dinsdag-headset-spacer-racefiets\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/use-case-dinsdag-headset-spacer-racefiets">
 }
 
 // Validate ..\..\app\en\(pages)\blog\use-case-dinsdag-interieur\page.tsx

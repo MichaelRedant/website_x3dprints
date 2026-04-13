@@ -3,15 +3,16 @@ import Link from "next/link"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
-import ShopAddToCartButton from "@/components/ShopAddToCartButton"
 import ShopAddToCartPanel from "@/components/ShopAddToCartPanel"
 import ShopCartStickySummary from "@/components/ShopCartStickySummary"
+import ShopProductActionButton from "@/components/ShopProductActionButton"
 import {
   SITE,
   buildBreadcrumbSchema,
   buildProductSchema,
   normalizeMetaDescription,
 } from "@/lib/seo"
+import { buildShopInquiryHref, isInquiryProduct } from "@/lib/shop-purchase"
 import type { LocalizedText, ShopProduct } from "@/content/shop-products"
 
 export type ShopLocale = "nl" | "en"
@@ -24,8 +25,10 @@ type ShopCopy = {
   priceLabel: string
   shippingTitle: string
   shippingBody: string
+  shippingBodyInquiry: string
   pickupTitle: string
   pickupBody: string
+  pickupBodyInquiry: string
   highlightsTitle: string
   specsTitle: string
   specsFallback: string
@@ -33,12 +36,18 @@ type ShopCopy = {
   crossSellBody: string
   crossSellCta: string
   ctaPrimary: string
+  ctaInquiryPrimary: string
+  ctaInquirySupport: string
   ctaSecondary: string
   ctaMaterials: string
   cartCta: string
   checkoutCta: string
   availabilityLabel: string
+  stockLabel: string
   leadTimeLabel: string
+  inquiryBadge: string
+  inquiryNoticeTitle: string
+  inquiryNoticeBody: string
 }
 
 const COPY: Record<ShopLocale, ShopCopy> = {
@@ -51,8 +60,11 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     priceLabel: "Prijs",
     shippingTitle: "Levering en planning",
     shippingBody: "Levering in Belgie: EUR 7.50 tot 3 kg. Productie- en verzendtijd hangen af van materiaal en volume.",
+    shippingBodyInquiry:
+      "Na je aanvraag bevestigen we beschikbare aantallen, verzendkost en hoe snel we kunnen verzenden.",
     pickupTitle: "Gratis afhalen op afspraak",
     pickupBody: "Afhalen kan na bevestiging van je order en tijdslot.",
+    pickupBodyInquiry: "Afhalen in Herzele kan zodra je aantal en timing bevestigd zijn.",
     highlightsTitle: "Waarom klanten dit kiezen",
     specsTitle: "Specificaties",
     specsFallback: "Specificaties volgen. Vraag intussen gerust advies op maat.",
@@ -60,12 +72,19 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     crossSellBody: "Handig om samen te bestellen en opvolging te vereenvoudigen.",
     crossSellCta: "Bekijk product",
     ctaPrimary: "Vraag offerte voor dit product",
+    ctaInquiryPrimary: "Open bestelaanvraag",
+    ctaInquirySupport: "Vraag stockcheck of extra info",
     ctaSecondary: "Hulp bij materiaalkeuze",
     ctaMaterials: "Vergelijk materialen",
     cartCta: "Bekijk mandje",
     checkoutCta: "Ga naar checkout",
     availabilityLabel: "Status",
+    stockLabel: "Voorraad",
     leadTimeLabel: "Productietijd",
+    inquiryBadge: "Bestellen via aanvraag",
+    inquiryNoticeTitle: "Voorlopig nog geen directe checkout",
+    inquiryNoticeBody:
+      "Deze startershop werkt voor dit item via aanvraag. Je krijgt eerst bevestiging van beschikbaar aantal, verzendkost en afhaalmogelijkheid.",
   },
   en: {
     shopLabel: "Shop",
@@ -76,8 +95,11 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     priceLabel: "Price",
     shippingTitle: "Delivery and planning",
     shippingBody: "Delivery in Belgium: EUR 7.50 up to 3 kg. Production and shipping time depend on material and volume.",
+    shippingBodyInquiry:
+      "After your request, we confirm available quantity, shipping cost, and how fast we can dispatch.",
     pickupTitle: "Free pickup by appointment",
     pickupBody: "Pickup is available after order confirmation and time-slot agreement.",
+    pickupBodyInquiry: "Pickup in Herzele is possible once quantity and timing are confirmed.",
     highlightsTitle: "Why customers choose this",
     specsTitle: "Specifications",
     specsFallback: "Specifications will follow. Ask us for tailored guidance in the meantime.",
@@ -85,12 +107,19 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     crossSellBody: "Useful add-ons to order together and simplify follow-up.",
     crossSellCta: "View product",
     ctaPrimary: "Request quote for this product",
+    ctaInquiryPrimary: "Open order request",
+    ctaInquirySupport: "Ask for a stock check or extra info",
     ctaSecondary: "Get material guidance",
     ctaMaterials: "Compare materials",
     cartCta: "View cart",
     checkoutCta: "Go to checkout",
     availabilityLabel: "Status",
+    stockLabel: "Stock",
     leadTimeLabel: "Production time",
+    inquiryBadge: "Ordered through request",
+    inquiryNoticeTitle: "Direct checkout is not live yet",
+    inquiryNoticeBody:
+      "This starter shop handles this item through a request flow for now. You first receive confirmation on available quantity, shipping cost, and pickup options.",
   },
 }
 
@@ -160,7 +189,7 @@ export function buildShopProductMetadata(product: ShopProduct, locale: ShopLocal
   const summary = localizeText(product.summary, locale).trim()
   const descriptionInput = summary || (product.description ? localizeText(product.description, locale).trim() : "")
   const description = normalizeMetaDescription(descriptionInput, COPY[locale].descriptionFallback)
-  const imageUrl = product.image?.url || SITE.ogImage
+  const imageUrl = product.ogImage ? localizeText(product.ogImage, locale) : product.image?.url || SITE.ogImage
 
   return {
     title: `${name} | ${COPY[locale].titleSuffix} | X3DPrints`,
@@ -212,6 +241,8 @@ export function renderShopProductPage({
   const productPrice = formatEur(product.priceEur)
   const availability = product.availability ?? "InStock"
   const availabilityLabel = getAvailabilityLabel(locale, availability)
+  const isInquiryMode = isInquiryProduct(product)
+  const stockCount = Number.isFinite(product.stockCount) ? product.stockCount : null
   const leadTime = product.leadTimeDays
     ? formatLeadTime(locale, product.leadTimeDays.min, product.leadTimeDays.max)
     : null
@@ -225,6 +256,7 @@ export function renderShopProductPage({
   const shopUrl = `${basePath}/shop`
   const cartUrl = `${basePath}/shop/cart`
   const checkoutUrl = `${basePath}/shop/checkout`
+  const inquiryHref = buildShopInquiryHref({ product, locale })
 
   const highlightItems = product.highlights?.length
     ? product.highlights.map((item) => ({
@@ -289,9 +321,19 @@ export function renderShopProductPage({
                   <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2 py-1 text-emerald-700">
                     {copy.availabilityLabel}: {availabilityLabel}
                   </span>
+                  {stockCount ? (
+                    <span className="rounded-full border border-teal-200 bg-teal-50 px-2 py-1 text-teal-700">
+                      {copy.stockLabel}: {stockCount}
+                    </span>
+                  ) : null}
                   {leadTime ? (
                     <span className="rounded-full border border-sky-200 bg-sky-50 px-2 py-1 text-sky-700">
                       {copy.leadTimeLabel}: {leadTime}
+                    </span>
+                  ) : null}
+                  {isInquiryMode ? (
+                    <span className="rounded-full border border-amber-200 bg-amber-50 px-2 py-1 text-amber-700">
+                      {copy.inquiryBadge}
                     </span>
                   ) : null}
                   <span className="rounded-full border border-slate-200 bg-white px-2 py-1 text-slate-700">
@@ -365,6 +407,11 @@ export function renderShopProductPage({
                   <p>
                     <span className="font-semibold text-slate-900">{copy.availabilityLabel}:</span> {availabilityLabel}
                   </p>
+                  {stockCount ? (
+                    <p>
+                      <span className="font-semibold text-slate-900">{copy.stockLabel}:</span> {stockCount}
+                    </p>
+                  ) : null}
                   {leadTime ? (
                     <p>
                       <span className="font-semibold text-slate-900">{copy.leadTimeLabel}:</span> {leadTime}
@@ -373,39 +420,68 @@ export function renderShopProductPage({
                 </div>
                 <div className="mt-5 space-y-3">
                   <ShopAddToCartPanel product={product} locale={locale} />
-                  <div className="grid gap-2 sm:grid-cols-2">
-                    <Link
-                      href={cartUrl}
-                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
-                    >
-                      {copy.cartCta}
-                      <span className="i-lucide-shopping-cart" aria-hidden />
-                    </Link>
-                    <Link
-                      href={checkoutUrl}
-                      className="inline-flex items-center justify-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:brightness-110"
-                    >
-                      {copy.checkoutCta}
-                      <span className="i-lucide-credit-card" aria-hidden />
-                    </Link>
-                  </div>
-                  <div className="mt-1 flex flex-wrap gap-3 md:justify-center lg:justify-start">
-                    <Link
-                      href={contactUrl}
-                      className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-auto"
-                    >
-                      {copy.ctaPrimary}
-                    </Link>
-                  </div>
+                  {isInquiryMode ? (
+                    <>
+                      <div className="rounded-2xl border border-amber-200 bg-amber-50/80 p-4 text-sm text-amber-950">
+                        <p className="font-semibold">{copy.inquiryNoticeTitle}</p>
+                        <p className="mt-2 text-amber-900">{copy.inquiryNoticeBody}</p>
+                      </div>
+                      <div className="mt-1 flex flex-wrap gap-3 md:justify-center lg:justify-start">
+                        <Link
+                          href={contactUrl}
+                          className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-auto"
+                        >
+                          {copy.ctaInquirySupport}
+                        </Link>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div className="grid gap-2 sm:grid-cols-2">
+                        <Link
+                          href={cartUrl}
+                          className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50"
+                        >
+                          {copy.cartCta}
+                          <span className="i-lucide-shopping-cart" aria-hidden />
+                        </Link>
+                        <Link
+                          href={checkoutUrl}
+                          className="inline-flex items-center justify-center gap-2 rounded-xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:brightness-110"
+                        >
+                          {copy.checkoutCta}
+                          <span className="i-lucide-credit-card" aria-hidden />
+                        </Link>
+                      </div>
+                      <div className="mt-1 flex flex-wrap gap-3 md:justify-center lg:justify-start">
+                        <Link
+                          href={contactUrl}
+                          className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-auto"
+                        >
+                          {copy.ctaPrimary}
+                        </Link>
+                      </div>
+                    </>
+                  )}
                 </div>
                 <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:justify-center lg:justify-start">
-                  <Link
-                    href={suggestionUrl}
-                    className="inline-flex w-full items-center justify-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 sm:w-auto"
-                  >
-                    {copy.ctaSecondary}
-                    <span className="i-lucide-arrow-right" aria-hidden />
-                  </Link>
+                  {isInquiryMode ? (
+                    <Link
+                      href={inquiryHref}
+                      className="inline-flex w-full items-center justify-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 sm:w-auto"
+                    >
+                      {copy.ctaInquiryPrimary}
+                      <span className="i-lucide-arrow-right" aria-hidden />
+                    </Link>
+                  ) : (
+                    <Link
+                      href={suggestionUrl}
+                      className="inline-flex w-full items-center justify-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 sm:w-auto"
+                    >
+                      {copy.ctaSecondary}
+                      <span className="i-lucide-arrow-right" aria-hidden />
+                    </Link>
+                  )}
                   <Link
                     href={materialsUrl}
                     className="inline-flex w-full items-center justify-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 sm:w-auto"
@@ -418,14 +494,20 @@ export function renderShopProductPage({
 
               <GlassCard className="border-slate-200/80 bg-white/80 md:text-center lg:text-left">
                 <h2 className="text-lg font-semibold text-slate-900">{copy.shippingTitle}</h2>
-                <p className="mt-2 text-sm text-slate-600">{copy.shippingBody}</p>
+                <p className="mt-2 text-sm text-slate-600">
+                  {isInquiryMode ? copy.shippingBodyInquiry : copy.shippingBody}
+                </p>
                 <div className="mt-4">
                   <h3 className="text-sm font-semibold text-slate-900">{copy.pickupTitle}</h3>
-                  <p className="mt-1 text-sm text-slate-600">{copy.pickupBody}</p>
+                  <p className="mt-1 text-sm text-slate-600">
+                    {isInquiryMode ? copy.pickupBodyInquiry : copy.pickupBody}
+                  </p>
                 </div>
               </GlassCard>
 
-              <ShopCartStickySummary locale={locale} className="lg:sticky lg:top-24" />
+              {!isInquiryMode ? (
+                <ShopCartStickySummary locale={locale} className="lg:sticky lg:top-24" />
+              ) : null}
             </div>
           </div>
         </div>
@@ -459,7 +541,7 @@ export function renderShopProductPage({
                       <p className="mt-2 text-sm text-slate-600">{summary}</p>
                       <p className="mt-3 text-sm font-semibold text-slate-900">{formatEur(item.priceEur)}</p>
                       <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center md:justify-center lg:justify-start">
-                        <ShopAddToCartButton
+                        <ShopProductActionButton
                           product={item}
                           locale={locale}
                           className="w-full justify-center px-4 py-2 text-xs sm:w-auto"

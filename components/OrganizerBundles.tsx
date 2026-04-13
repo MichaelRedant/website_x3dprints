@@ -20,6 +20,9 @@ export default function OrganizerBundles({ systemSlug, systemName, bundles }: Or
   const pathname = usePathname()
   const locale = pathname?.startsWith("/en") ? "en" : "nl"
   const localize = (href: string) => localizeHref(href, locale)
+  const initialCardState = prefersReducedMotion ? false : { opacity: 0.72, y: 14 }
+  const revealCardState = prefersReducedMotion ? {} : { opacity: 1, y: 0 }
+  const cardViewport = { once: true, amount: 0.08, margin: "0px 0px 12% 0px" as const }
   const copy =
     locale === "en"
       ? {
@@ -66,10 +69,10 @@ export default function OrganizerBundles({ systemSlug, systemName, bundles }: Or
             <motion.article
               key={bundle.slug}
               className="group relative flex h-full flex-col justify-between rounded-2xl border border-slate-100 bg-white/80 p-5 shadow-lg shadow-slate-900/5 ring-1 ring-white/70 backdrop-blur transition hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-[#0B0F1A]/80 dark:ring-0"
-              initial={prefersReducedMotion ? false : { opacity: 0, y: 16 }}
-              whileInView={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.45, ease: "easeOut", delay }}
+              initial={initialCardState}
+              whileInView={revealCardState}
+              viewport={cardViewport}
+              transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1], delay }}
             >
               <div className="space-y-3">
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">{bundle.name}</h3>

@@ -1,7 +1,7 @@
 "use client"
 
 import { useMemo, useState } from "react"
-import ShopAddToCartButton from "@/components/ShopAddToCartButton"
+import ShopProductActionButton from "@/components/ShopProductActionButton"
 import { cn } from "@/lib/utils"
 import type { ShopProduct } from "@/content/shop-products"
 
@@ -80,7 +80,7 @@ export default function ShopAddToCartPanel({ product, locale, className }: ShopA
           </button>
         </div>
       </div>
-      <ShopAddToCartButton
+      <ShopProductActionButton
         product={product}
         locale={locale}
         quantity={displayQuantity}

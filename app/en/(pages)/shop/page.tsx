@@ -9,9 +9,9 @@ import { SITE, buildItemListSchema } from "@/lib/seo"
 import { getShopProducts } from "@/lib/shop-data"
 
 export const metadata: Metadata = {
-  title: "Small-batch 3D print shop online | X3DPrints",
+  title: "Starter 3D print shop for Bambu spools | X3DPrints",
   description:
-    "Order small-batch 3D prints from live CRM stock. Personal quality checks, secure Mollie payment, and delivery in Belgium or free pickup by appointment.",
+    "Starter 3D print shop with Bambu reusable spools from small-batch leftover stock. Currently 13 units available at EUR 5.00 per item excl. shipping.",
   alternates: {
     canonical: `${SITE.url}/en/shop/`,
     languages: {
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Small-batch 3D print shop online",
-    description: "Live stock, personal finishing, and direct support from the maker.",
+    title: "Starter 3D print shop for Bambu spools",
+    description: "Original Bambu reusable spools from leftover stock, presented cleanly and easy to request.",
     url: `${SITE.url}/en/shop/`,
     images: [{ url: "/images/og-shop-en.svg", width: 1200, height: 630 }],
     locale: "en_BE",
@@ -30,47 +30,48 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Small-batch 3D print shop online | X3DPrints",
-    description: "Live-stock 3D prints with secure Mollie checkout and direct maker support.",
+    title: "Starter 3D print shop for Bambu spools | X3DPrints",
+    description: "Starter collection with checked Bambu reusable spools from leftover stock.",
     images: ["/images/og-shop-en.svg"],
   },
 }
 
 const HIGHLIGHTS = [
   {
-    title: "In-house production and checks",
-    description: "Every order gets a manual quality check before shipping.",
+    title: "Checked leftover stock",
+    description: "Only items that are still useful and worth selling make it into this starter shop.",
   },
   {
-    title: "Clear delivery options",
-    description: "Flat-rate delivery in Belgium or free pickup by appointment.",
+    title: "Low-threshold refill setup",
+    description: "An extra reusable spool is an easy, low-cost way to keep using Bambu refills.",
   },
   {
-    title: "Direct maker support",
-    description: "Get quick advice on material, finish, and practical use.",
+    title: "Fast follow-up",
+    description: "You get confirmation on available quantity, shipping, or pickup by appointment.",
   },
 ]
 
 const HERO_POINTS = [
-  "Live stock from CRM",
-  "Secure Mollie checkout",
-  "Fast delivery or pickup by appointment",
+  "Original Bambu reusable spools",
+  "13 units currently in stock",
+  "EUR 5.00 per item excl. shipping",
+  "Pickup or shipping after request",
 ]
 
 type ShopStep = { title: string; description: string; href?: string; label?: string }
 
 const ORDER_STEPS: ShopStep[] = [
   {
-    title: "Pick your product",
-    description: "Filter by category, compare details, and set your quantity.",
+    title: "Pick your item",
+    description: "Open the product, review the details, and set the quantity you want right away.",
   },
   {
-    title: "Choose delivery and email",
-    description: "Select shipping or free pickup and add your confirmation email.",
+    title: "Send your request",
+    description: "Start from the product page with a prefilled request and selected quantity.",
   },
   {
-    title: "Pay securely",
-    description: "Pay through Mollie and receive your order confirmation right away.",
+    title: "Confirm delivery",
+    description: "You receive a reply with availability, shipping cost, or a pickup moment.",
   },
 ]
 
@@ -99,11 +100,11 @@ export default async function ShopPageEn() {
               <div className="relative md:text-center lg:text-left">
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
                 <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
-                  Small-batch 3D prints, ready to order
+                  Starter shop for Bambu reusable spools and other 3D print products in progress
                 </h1>
                 <p className="mt-4 max-w-3xl text-lg text-slate-600 md:mx-auto lg:mx-0">
-                  Order functional and decorative prints produced and checked in-house.
-                  See live stock, choose delivery or pickup, and pay securely via Mollie.
+                  We are intentionally starting small with original Bambu reusable spools left over from our own stock.
+                  There are currently 13 units available at EUR 5.00 per item excl. shipping. This 3D print shop for small-batch items is expanding step by step; for this first drop, ordering still runs through a request flow and not through Mollie checkout yet.
                 </p>
                 <div className="mt-5 flex flex-wrap gap-2 md:justify-center lg:justify-start">
                   {HERO_POINTS.map((point) => (
@@ -117,17 +118,17 @@ export default async function ShopPageEn() {
                 </div>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:justify-center lg:justify-start">
                   <ShimmerButton
-                    href="/en/shop#shop-collection"
+                    href="/en/shop/bambu-reusable-spool"
                     wrapperClassName="w-full sm:w-auto"
                     className="w-full justify-center sm:w-auto"
                   >
-                    Shop now
+                    View the reusable spool
                   </ShimmerButton>
                   <Link
                     href="/en/contact"
                     className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-auto"
                   >
-                    Get tailored advice
+                    Ask for multiple units
                   </Link>
                 </div>
               </div>

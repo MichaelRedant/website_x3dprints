@@ -3,6 +3,7 @@ import {
   SHOP_PRODUCT_SLUGS,
   type LocalizedText,
   type ShopCategoryKey,
+  type ShopPurchaseMode,
   type ShopProduct,
 } from "@/content/shop-products"
 import {
@@ -32,6 +33,11 @@ function toAvailability(value?: string): ShopProduct["availability"] {
     : undefined
 }
 
+function toPurchaseMode(value?: string | null): ShopPurchaseMode | undefined {
+  if (value === "cart" || value === "inquiry") return value
+  return undefined
+}
+
 function normalizeTags(tags: unknown): string[] {
   if (!Array.isArray(tags)) return []
   const cleaned = tags
@@ -45,8 +51,66 @@ function inferCategories(tags: string[]): ShopCategoryKey[] | undefined {
   for (const tag of tags) {
     if (tag.includes("clip")) categories.add("clips")
     if (tag.includes("organizer")) categories.add("organizers")
+    if (tag.includes("spool") || tag.includes("refill") || tag.includes("bambu")) categories.add("spools")
   }
   return categories.size > 0 ? Array.from(categories) : undefined
+}
+
+function getLocalLiveProducts() {
+  return SHOP_PRODUCTS.filter((product) => product.isLive)
+}
+
+function pickLocalizedText(primary: LocalizedText | undefined, fallback: LocalizedText | undefined) {
+  if (!primary) return fallback
+  if (!fallback) return primary
+  return {
+    nl: primary.nl || fallback.nl,
+    en: primary.en || fallback.en,
+  }
+}
+
+function mergeShopProduct(localProduct: ShopProduct, remoteProduct: ShopProduct): ShopProduct {
+  return {
+    ...localProduct,
+    ...remoteProduct,
+    name: pickLocalizedText(remoteProduct.name, localProduct.name) ?? localProduct.name,
+    summary: pickLocalizedText(remoteProduct.summary, localProduct.summary) ?? localProduct.summary,
+    description: pickLocalizedText(localProduct.description, remoteProduct.description),
+    image: {
+      url: remoteProduct.image?.url || localProduct.image.url,
+      alt: pickLocalizedText(remoteProduct.image?.alt, localProduct.image.alt) ?? localProduct.image.alt,
+    },
+    ogImage: localProduct.ogImage ?? remoteProduct.ogImage,
+    tags: remoteProduct.tags?.length ? remoteProduct.tags : localProduct.tags,
+    categories: remoteProduct.categories?.length ? remoteProduct.categories : localProduct.categories,
+    priceEur: remoteProduct.priceEur,
+    availability: remoteProduct.availability ?? localProduct.availability,
+    stockCount: remoteProduct.stockCount ?? localProduct.stockCount,
+    leadTimeDays: remoteProduct.leadTimeDays ?? localProduct.leadTimeDays,
+    highlights: localProduct.highlights ?? remoteProduct.highlights,
+    specs: localProduct.specs ?? remoteProduct.specs,
+    purchaseMode: remoteProduct.purchaseMode ?? localProduct.purchaseMode,
+    isLive: remoteProduct.isLive,
+  }
+}
+
+function mergeWithLocalProducts(remoteProducts: ShopProduct[]) {
+  const merged = new Map<string, ShopProduct>()
+
+  for (const localProduct of getLocalLiveProducts()) {
+    merged.set(localProduct.slug, localProduct)
+  }
+
+  for (const remoteProduct of remoteProducts) {
+    if (!remoteProduct.isLive) continue
+    const localProduct = merged.get(remoteProduct.slug)
+    merged.set(
+      remoteProduct.slug,
+      localProduct ? mergeShopProduct(localProduct, remoteProduct) : remoteProduct,
+    )
+  }
+
+  return Array.from(merged.values())
 }
 
 function normalizeLeadTime(product: BffProduct): ShopProduct["leadTimeDays"] {
@@ -92,20 +156,22 @@ function mapBffProduct(product: BffProduct): ShopProduct {
       alt: toLocalizedText(imageAltNl, imageAltEn),
     },
     availability: toAvailability(product.availability),
+    stockCount: Number.isFinite(product.stockCount) ? Math.max(0, Math.round(product.stockCount ?? 0)) : undefined,
     leadTimeDays,
+    purchaseMode: toPurchaseMode(product.purchaseMode),
     isLive: product.isLive ?? true,
   }
 }
 
 export async function getShopProducts(locale: ShopLocale): Promise<ShopProduct[]> {
-  if (!SHOP_BFF_ENABLED) return SHOP_PRODUCTS
+  if (!SHOP_BFF_ENABLED) return getLocalLiveProducts()
   try {
     const { products } = await fetchShopProducts(locale)
-    if (!Array.isArray(products)) return []
-    return products.map((product) => mapBffProduct(product)).filter((product) => product.isLive)
+    if (!Array.isArray(products)) return getLocalLiveProducts()
+    return mergeWithLocalProducts(products.map((product) => mapBffProduct(product)))
   } catch (error) {
     console.error("[shop-data] Could not load shop products from BFF.", error)
-    return SHOP_PRODUCTS
+    return getLocalLiveProducts()
   }
 }
 
@@ -113,14 +179,16 @@ export async function getShopProductBySlug(
   slug: string,
   locale: ShopLocale,
 ): Promise<ShopProduct | undefined> {
-  if (!SHOP_BFF_ENABLED) return SHOP_PRODUCTS.find((product) => product.slug === slug)
+  const localProduct = getLocalLiveProducts().find((product) => product.slug === slug)
+  if (!SHOP_BFF_ENABLED) return localProduct
   try {
     const { product } = await fetchShopProduct(slug, locale)
     const mapped = product ? mapBffProduct(product) : undefined
-    return mapped?.isLive ? mapped : undefined
+    if (!mapped?.isLive) return localProduct
+    return localProduct ? mergeShopProduct(localProduct, mapped) : mapped
   } catch (error) {
     console.error(`[shop-data] Could not load product '${slug}' from BFF.`, error)
-    return SHOP_PRODUCTS.find((product) => product.slug === slug)
+    return localProduct
   }
 }
 
@@ -128,12 +196,12 @@ export async function getShopProductSlugs(locale: ShopLocale): Promise<string[]>
   if (!SHOP_BFF_ENABLED) return SHOP_PRODUCT_SLUGS
   try {
     const { products } = await fetchShopProducts(locale)
-    if (!Array.isArray(products)) return []
-    const slugs = products
+    if (!Array.isArray(products)) return SHOP_PRODUCT_SLUGS
+    const remoteSlugs = products
       .filter((product) => product.isLive !== false)
       .map((product) => String(product.slug || "").trim())
       .filter(Boolean)
-    return Array.from(new Set(slugs))
+    return Array.from(new Set([...SHOP_PRODUCT_SLUGS, ...remoteSlugs]))
   } catch (error) {
     console.error("[shop-data] Could not load shop slugs from BFF.", error)
     return SHOP_PRODUCT_SLUGS

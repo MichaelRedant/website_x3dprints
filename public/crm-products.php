@@ -14,6 +14,7 @@ if (!file_exists($bootstrap)) {
 
 require $bootstrap;
 require_once __DIR__ . "/crm-common.php";
+require_once dirname($bootstrap) . "/StarterCatalogSync.php";
 
 header("Content-Type: application/json; charset=utf-8");
 header("X-Robots-Tag: noindex, nofollow");
@@ -35,11 +36,24 @@ function normalizeAvailability(?string $value): ?string
   return in_array($value, $allowed, true) ? $value : null;
 }
 
+function normalizePurchaseMode(?string $value): string
+{
+  return $value === "inquiry" ? "inquiry" : "cart";
+}
+
 function parseOptionalInt($value): ?int
 {
   if ($value === null || $value === "") return null;
   if (!is_numeric($value)) return null;
   return (int)$value;
+}
+
+function parseOptionalStockCount($value): ?int
+{
+  if ($value === null || $value === "") return null;
+  if (!is_numeric($value)) return null;
+  $parsed = (int)$value;
+  return $parsed < 0 ? null : $parsed;
 }
 
 function parsePriceEur($value): ?int
@@ -70,9 +84,11 @@ if ($method === "GET") {
     $pdo = getPdo();
     $hasDeleted = shopProductsHasDeletedColumn($pdo);
     $hasTags = shopProductsHasTagsColumn($pdo);
+    $hasStockCount = shopProductsHasStockCountColumn($pdo);
+    $hasPurchaseMode = shopProductsHasPurchaseModeColumn($pdo);
     $stmt = $pdo->query(
       "SELECT slug, name_nl, name_en, summary_nl, summary_en, price_cents, availability, image_url, image_alt_nl, image_alt_en,
-              lead_time_min, lead_time_max, is_live, sort_order" . ($hasDeleted ? ", is_deleted" : "") . ($hasTags ? ", tags" : "") . "
+              lead_time_min, lead_time_max, is_live, sort_order" . ($hasDeleted ? ", is_deleted" : "") . ($hasTags ? ", tags" : "") . ($hasStockCount ? ", stock_count" : "") . ($hasPurchaseMode ? ", purchase_mode" : "") . "
        FROM shop_products ORDER BY sort_order ASC, id ASC",
     );
     $rows = $stmt->fetchAll();
@@ -94,6 +110,8 @@ if ($method === "GET") {
         "sortOrder" => (int)$row["sort_order"],
         "isDeleted" => array_key_exists("is_deleted", $row) ? (bool)$row["is_deleted"] : false,
         "tags" => array_key_exists("tags", $row) ? (string)$row["tags"] : "",
+        "stockCount" => array_key_exists("stock_count", $row) && $row["stock_count"] !== null ? (int)$row["stock_count"] : null,
+        "purchaseMode" => array_key_exists("purchase_mode", $row) ? normalizePurchaseMode((string)$row["purchase_mode"]) : "cart",
       ];
     }, $rows);
     jsonResponse($products);
@@ -137,6 +155,8 @@ function readProductPayload(array $payload, bool $requireSlug = true): array
   $imageAltEn = sanitizeText($input["imageAltEn"] ?? "");
   $priceCents = parsePriceEur($input["priceEur"] ?? null);
   $availability = normalizeAvailability($input["availability"] ?? null);
+  $stockCount = parseOptionalStockCount($input["stockCount"] ?? null);
+  $purchaseMode = normalizePurchaseMode($input["purchaseMode"] ?? null);
   $tags = normalizeTags($input["tags"] ?? "");
   $leadTimeMin = parseOptionalInt($input["leadTimeMin"] ?? null);
   $leadTimeMax = parseOptionalInt($input["leadTimeMax"] ?? null);
@@ -170,6 +190,8 @@ function readProductPayload(array $payload, bool $requireSlug = true): array
     "imageAltEn" => $imageAltEn,
     "priceCents" => $priceCents,
     "availability" => $availability,
+    "stockCount" => $stockCount,
+    "purchaseMode" => $purchaseMode,
     "tags" => $tags,
     "leadTimeMin" => $leadTimeMin,
     "leadTimeMax" => $leadTimeMax,
@@ -182,6 +204,8 @@ try {
   $pdo = getPdo();
   $hasDeleted = shopProductsHasDeletedColumn($pdo);
   $hasTags = shopProductsHasTagsColumn($pdo);
+  $hasStockCount = shopProductsHasStockCountColumn($pdo);
+  $hasPurchaseMode = shopProductsHasPurchaseModeColumn($pdo);
 
   if ($action === "create") {
     $product = readProductPayload($payload, true);
@@ -192,9 +216,9 @@ try {
       errorResponse("Slug already exists", 409);
     }
     $columns = "slug, name_nl, name_en, summary_nl, summary_en, price_cents, availability, image_url, image_alt_nl, image_alt_en,
-        lead_time_min, lead_time_max, is_live, sort_order" . ($hasDeleted ? ", is_deleted" : "") . ($hasTags ? ", tags" : "");
+        lead_time_min, lead_time_max, is_live, sort_order" . ($hasDeleted ? ", is_deleted" : "") . ($hasTags ? ", tags" : "") . ($hasStockCount ? ", stock_count" : "") . ($hasPurchaseMode ? ", purchase_mode" : "");
     $values = ":slug, :name_nl, :name_en, :summary_nl, :summary_en, :price_cents, :availability, :image_url, :image_alt_nl, :image_alt_en,
-        :lead_time_min, :lead_time_max, :is_live, :sort_order" . ($hasDeleted ? ", :is_deleted" : "") . ($hasTags ? ", :tags" : "");
+        :lead_time_min, :lead_time_max, :is_live, :sort_order" . ($hasDeleted ? ", :is_deleted" : "") . ($hasTags ? ", :tags" : "") . ($hasStockCount ? ", :stock_count" : "") . ($hasPurchaseMode ? ", :purchase_mode" : "");
     $stmt = $pdo->prepare("INSERT INTO shop_products ({$columns}) VALUES ({$values})");
     $params = [
       "slug" => $slug,
@@ -208,6 +232,8 @@ try {
       "image_alt_nl" => $product["imageAltNl"],
       "image_alt_en" => $product["imageAltEn"],
       "tags" => $product["tags"],
+      "stock_count" => $product["stockCount"],
+      "purchase_mode" => $product["purchaseMode"],
       "lead_time_min" => $product["leadTimeMin"],
       "lead_time_max" => $product["leadTimeMax"],
       "is_live" => $product["isLive"] ? 1 : 0,
@@ -218,6 +244,12 @@ try {
     }
     if (!$hasTags) {
       unset($params["tags"]);
+    }
+    if (!$hasStockCount) {
+      unset($params["stock_count"]);
+    }
+    if (!$hasPurchaseMode) {
+      unset($params["purchase_mode"]);
     }
     $stmt->execute($params);
     jsonResponse(["ok" => true]);
@@ -243,6 +275,8 @@ try {
         image_alt_nl = :image_alt_nl,
         image_alt_en = :image_alt_en,
         " . ($hasTags ? "tags = :tags," : "") . "
+        " . ($hasStockCount ? "stock_count = :stock_count," : "") . "
+        " . ($hasPurchaseMode ? "purchase_mode = :purchase_mode," : "") . "
         lead_time_min = :lead_time_min,
         lead_time_max = :lead_time_max,
         is_live = :is_live,
@@ -261,6 +295,8 @@ try {
       "image_alt_nl" => $product["imageAltNl"],
       "image_alt_en" => $product["imageAltEn"],
       "tags" => $product["tags"],
+      "stock_count" => $product["stockCount"],
+      "purchase_mode" => $product["purchaseMode"],
       "lead_time_min" => $product["leadTimeMin"],
       "lead_time_max" => $product["leadTimeMax"],
       "is_live" => $product["isLive"] ? 1 : 0,
@@ -268,6 +304,12 @@ try {
     ];
     if (!$hasTags) {
       unset($params["tags"]);
+    }
+    if (!$hasStockCount) {
+      unset($params["stock_count"]);
+    }
+    if (!$hasPurchaseMode) {
+      unset($params["purchase_mode"]);
     }
     $stmt->execute($params);
     jsonResponse(["ok" => true]);
@@ -298,6 +340,8 @@ try {
       errorResponse("Invalid price", 400);
     }
     $availability = normalizeAvailability($payload["availability"] ?? null);
+    $stockCount = parseOptionalStockCount($payload["stockCount"] ?? null);
+    $purchaseMode = normalizePurchaseMode($payload["purchaseMode"] ?? null);
     $clause = $hasDeleted ? " AND is_deleted = 0" : "";
     $exists = $pdo->prepare("SELECT slug FROM shop_products WHERE slug = :slug{$clause} LIMIT 1");
     $exists->execute(["slug" => $slug]);
@@ -306,14 +350,23 @@ try {
     }
     $stmt = $pdo->prepare(
       "UPDATE shop_products
-       SET price_cents = :price_cents, availability = :availability
+       SET price_cents = :price_cents, availability = :availability" . ($hasStockCount ? ", stock_count = :stock_count" : "") . ($hasPurchaseMode ? ", purchase_mode = :purchase_mode" : "") . "
        WHERE slug = :slug{$clause}",
     );
-    $stmt->execute([
+    $params = [
       "slug" => $slug,
       "price_cents" => $priceCents,
       "availability" => $availability,
-    ]);
+      "stock_count" => $stockCount,
+      "purchase_mode" => $purchaseMode,
+    ];
+    if (!$hasStockCount) {
+      unset($params["stock_count"]);
+    }
+    if (!$hasPurchaseMode) {
+      unset($params["purchase_mode"]);
+    }
+    $stmt->execute($params);
     jsonResponse(["ok" => true]);
   }
 
@@ -353,7 +406,7 @@ try {
       errorResponse("Invalid slug", 400);
     }
     $stmt = $pdo->prepare("SELECT slug, name_nl, name_en, summary_nl, summary_en, price_cents, availability, image_url, image_alt_nl, image_alt_en,
-      lead_time_min, lead_time_max, sort_order" . ($hasTags ? ", tags" : "") . " FROM shop_products WHERE slug = :slug LIMIT 1");
+      lead_time_min, lead_time_max, sort_order" . ($hasTags ? ", tags" : "") . ($hasStockCount ? ", stock_count" : "") . ($hasPurchaseMode ? ", purchase_mode" : "") . " FROM shop_products WHERE slug = :slug LIMIT 1");
     $stmt->execute(["slug" => $sourceSlug]);
     $row = $stmt->fetch();
     if (!$row) {
@@ -365,9 +418,9 @@ try {
       errorResponse("Slug already exists", 409);
     }
     $columns = "slug, name_nl, name_en, summary_nl, summary_en, price_cents, availability, image_url, image_alt_nl, image_alt_en,
-      lead_time_min, lead_time_max, is_live, sort_order" . ($hasDeleted ? ", is_deleted" : "") . ($hasTags ? ", tags" : "");
+      lead_time_min, lead_time_max, is_live, sort_order" . ($hasDeleted ? ", is_deleted" : "") . ($hasTags ? ", tags" : "") . ($hasStockCount ? ", stock_count" : "") . ($hasPurchaseMode ? ", purchase_mode" : "");
     $values = ":slug, :name_nl, :name_en, :summary_nl, :summary_en, :price_cents, :availability, :image_url, :image_alt_nl, :image_alt_en,
-      :lead_time_min, :lead_time_max, :is_live, :sort_order" . ($hasDeleted ? ", :is_deleted" : "") . ($hasTags ? ", :tags" : "");
+      :lead_time_min, :lead_time_max, :is_live, :sort_order" . ($hasDeleted ? ", :is_deleted" : "") . ($hasTags ? ", :tags" : "") . ($hasStockCount ? ", :stock_count" : "") . ($hasPurchaseMode ? ", :purchase_mode" : "");
     $stmt = $pdo->prepare("INSERT INTO shop_products ({$columns}) VALUES ({$values})");
     $params = [
       "slug" => $newSlug,
@@ -383,6 +436,8 @@ try {
       "lead_time_min" => $row["lead_time_min"],
       "lead_time_max" => $row["lead_time_max"],
       "tags" => $hasTags ? ($row["tags"] ?? "") : "",
+      "stock_count" => $hasStockCount ? ($row["stock_count"] ?? null) : null,
+      "purchase_mode" => $hasPurchaseMode ? normalizePurchaseMode((string)($row["purchase_mode"] ?? "cart")) : "cart",
       "is_live" => 0,
       "sort_order" => (int)$row["sort_order"] + 1,
     ];
@@ -392,8 +447,19 @@ try {
     if (!$hasTags) {
       unset($params["tags"]);
     }
+    if (!$hasStockCount) {
+      unset($params["stock_count"]);
+    }
+    if (!$hasPurchaseMode) {
+      unset($params["purchase_mode"]);
+    }
     $stmt->execute($params);
     jsonResponse(["ok" => true]);
+  }
+
+  if ($action === "sync-starter-catalog") {
+    $result = syncStarterCatalog($pdo);
+    jsonResponse($result);
   }
 
   if ($action === "delete") {

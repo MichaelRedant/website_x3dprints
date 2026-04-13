@@ -463,6 +463,23 @@ export const BLOG_FAQ_EN: Record<string, BlogFaqBlock> = {
       },
     ],
   },
+  "use-case-dinsdag-headset-spacer-racefiets": {
+    title: "FAQ about the custom headset spacer case",
+    items: [
+      {
+        q: "Is a custom headset spacer the same as a structural steering part?",
+        a: "No. We review fit, load and use case first. For safety-critical parts we do not make blind promises without additional validation.",
+      },
+      {
+        q: "What do you need to start a made-to-fit bike part like this?",
+        a: "Ideally photos of the cockpit, reference dimensions, details about the current headset setup and your goal: visual integration, fit, stack height or a combination of those.",
+      },
+      {
+        q: "Can you handle the CAD design if I do not have a model yet?",
+        a: "Yes. We can cover the route from analysis and Fusion 360 modeling to prototype and final 3D print.",
+      },
+    ],
+  },
   "use-case-dinsdag-events": {
     title: "FAQ about event prints",
     items: [

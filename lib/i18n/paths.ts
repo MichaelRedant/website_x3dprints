@@ -78,6 +78,7 @@ const EN_BLOG_SLUGS = new Set<string>([
   "3d-printen-winter-kerst-nieuwjaar",
   "relatiegeschenken-3d-printen",
   "3d-geprinte-platen-nasiam",
+  "use-case-dinsdag-headset-spacer-racefiets",
   "use-case-dinsdag-auto-fiets",
   "use-case-dinsdag-events",
   "use-case-dinsdag-interieur",

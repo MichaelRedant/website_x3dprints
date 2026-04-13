@@ -35,3 +35,5 @@ Runtime errors are logged to `bff/storage/logs/bff.log` (create the folder if it
   - `ALTER TABLE shop_orders ADD COLUMN locale VARCHAR(5) NOT NULL DEFAULT 'nl', ADD COLUMN email_sent_at TIMESTAMP NULL DEFAULT NULL;`
   - `ALTER TABLE shop_products ADD COLUMN is_deleted TINYINT(1) NOT NULL DEFAULT 0;`
   - `ALTER TABLE shop_products ADD COLUMN tags TEXT DEFAULT NULL;`
+  - `ALTER TABLE shop_products ADD COLUMN stock_count INT DEFAULT NULL;`
+  - `ALTER TABLE shop_products ADD COLUMN purchase_mode VARCHAR(20) NOT NULL DEFAULT 'cart';`

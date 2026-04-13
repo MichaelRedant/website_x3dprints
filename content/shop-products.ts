@@ -15,7 +15,9 @@ export type ShopProductSpec = {
   value: LocalizedText
 }
 
-export type ShopCategoryKey = "clips" | "organizers"
+export type ShopCategoryKey = "clips" | "organizers" | "spools"
+
+export type ShopPurchaseMode = "cart" | "inquiry"
 
 export type LeadTimeDays = {
   min: number
@@ -30,11 +32,14 @@ export type ShopProduct = {
   tags?: string[]
   priceEur: number
   image: { url: string; alt: LocalizedText }
+  ogImage?: LocalizedText
   categories?: ShopCategoryKey[]
   availability?: "InStock" | "PreOrder" | "OutOfStock" | "LimitedAvailability"
+  stockCount?: number
   leadTimeDays?: LeadTimeDays
   highlights?: ShopProductHighlight[]
   specs?: ShopProductSpec[]
+  purchaseMode?: ShopPurchaseMode
   isLive: boolean
 }
 
@@ -102,7 +107,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
         value: { nl: "ca. 12 g", en: "approx. 12 g" },
       },
     ],
-    isLive: true,
+    isLive: false,
   },
   {
     slug: "demo-tool-organizer",
@@ -165,6 +170,89 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       {
         label: { nl: "Gewicht", en: "Weight" },
         value: { nl: "ca. 35 g", en: "approx. 35 g" },
+      },
+    ],
+    isLive: false,
+  },
+  {
+    slug: "bambu-reusable-spool",
+    name: {
+      nl: "Bambu reusable spool",
+      en: "Bambu reusable spool",
+    },
+    summary: {
+      nl: "Originele Bambu reusable spool uit reststock, gecontroleerd en direct klaar voor een refill. EUR 5.00 per stuk, excl. verzending.",
+      en: "Original Bambu reusable spool from leftover stock, checked and ready for a refill. EUR 5.00 per item, excl. shipping.",
+    },
+    description: {
+      nl: "Een laagdrempelige shopstarter voor makers die al met Bambu refills werken. Deze originele reusable spool is gebruikt, maar gecontroleerd op bruikbaarheid en klaar om opnieuw ingezet te worden voor je volgende filament refill.",
+      en: "A low-threshold shop starter for makers already using Bambu refills. This original reusable spool is used, but checked for usability and ready to be deployed again for your next filament refill.",
+    },
+    tags: ["bambu", "spool", "reusable", "refill", "filament", "reststock"],
+    priceEur: 5,
+    image: {
+      url: "/images/webshop/reusable_spool.png",
+      alt: {
+        nl: "Bambu reusable spool uit reststock",
+        en: "Bambu reusable spool from leftover stock",
+      },
+    },
+    ogImage: {
+      nl: "/images/og-bambu-reusable-spool-nl.svg",
+      en: "/images/og-bambu-reusable-spool-en.svg",
+    },
+    categories: ["spools"],
+    availability: "InStock",
+    stockCount: 13,
+    leadTimeDays: { min: 1, max: 3 },
+    purchaseMode: "inquiry",
+    highlights: [
+      {
+        title: { nl: "Originele Bambu basis", en: "Original Bambu base" },
+        description: {
+          nl: "Geen generieke clone, maar een originele reusable spool voor Bambu refills.",
+          en: "Not a generic clone, but an original reusable spool for Bambu refills.",
+        },
+      },
+      {
+        title: { nl: "Refill-ready", en: "Refill-ready" },
+        description: {
+          nl: "Ideaal als extra spool wanneer je losse refills gebruikt of reserve wil houden.",
+          en: "Ideal as an extra spool when you use loose refills or want a spare on hand.",
+        },
+      },
+      {
+        title: { nl: "Beperkte reststock", en: "Limited leftover stock" },
+        description: {
+          nl: "Beschikbaarheid hangt af van de actuele reststock. Daarom loopt bestelling voorlopig via aanvraag zodat stock correct bevestigd blijft.",
+          en: "Availability depends on the current leftover stock. That is why ordering still runs through a request flow so stock can be confirmed correctly.",
+        },
+      },
+    ],
+    specs: [
+      {
+        label: { nl: "Type", en: "Type" },
+        value: { nl: "Bambu reusable spool", en: "Bambu reusable spool" },
+      },
+      {
+        label: { nl: "Conditie", en: "Condition" },
+        value: { nl: "Gebruikt, gecontroleerd en opnieuw inzetbaar", en: "Used, checked, and ready to reuse" },
+      },
+      {
+        label: { nl: "Compatibiliteit", en: "Compatibility" },
+        value: { nl: "Voor Bambu filament refills", en: "For Bambu filament refills" },
+      },
+      {
+        label: { nl: "Prijs", en: "Price" },
+        value: { nl: "EUR 5.00 per stuk excl. verzending", en: "EUR 5.00 per item excl. shipping" },
+      },
+      {
+        label: { nl: "Voorraad", en: "Stock" },
+        value: { nl: "Actuele stock zichtbaar op de productpagina", en: "Current stock shown on the product page" },
+      },
+      {
+        label: { nl: "Afhandeling", en: "Fulfilment" },
+        value: { nl: "Bestellen via aanvraag, afhalen of verzending", en: "Order via request, pickup or shipping" },
       },
     ],
     isLive: true,

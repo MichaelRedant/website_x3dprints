@@ -11,8 +11,8 @@ import { buildArticleJsonLd, buildFaqPageSchema, buildHowToSchema } from "@/lib/
 const canonical = "https://www.x3dprints.be/en/blog/prototyping-kleine-reeksen-3d-printen/"
 const nlCanonical = "https://www.x3dprints.be/blog/prototyping-kleine-reeksen-3d-printen/"
 const datePublished = "2026-03-01"
-const dateModified = "2026-03-01"
-const lastUpdatedLabel = "Last updated: March 1, 2026"
+const dateModified = "2026-04-12"
+const lastUpdatedLabel = "Last updated: April 12, 2026"
 
 const contactHref =
   "/en/contact?material=PETG&quote=B2B%20prototyping%20and%20small%20batch%20-%20I%20need%20fast%20iterations"
@@ -113,6 +113,7 @@ const pricingRows = [
 
 const relatedLinks = [
   { label: "Use Case Tuesday: product development", href: "/en/blog/use-case-dinsdag-productontwikkeling" },
+  { label: "Case: custom race bike headset spacer", href: "/en/blog/use-case-dinsdag-headset-spacer-racefiets" },
   { label: "3D printing pricing guide", href: "/en/blog/3d-print-prijzen-gids" },
   { label: "How to choose the right material", href: "/en/blog/juiste-3d-print-materiaal" },
   { label: "How to request a quote", href: "/en/blog/3d-print-offerte-aanvragen" },

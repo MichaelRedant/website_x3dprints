@@ -10,6 +10,7 @@
     "start": "npm run preview",
     "preview": "npx serve -s out -l 3000",
     "lint": "eslint",
+    "shop:sync:starter": "php scripts/sync-starter-catalog.php",
     "check:security:public-data": "node scripts/check-security-public-data.mjs",
     "check:security:crm-auth": "node scripts/check-security-crm-auth.mjs",
     "check:security": "npm run check:security:public-data && npm run check:security:crm-auth",

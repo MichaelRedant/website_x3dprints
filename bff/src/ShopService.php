@@ -43,10 +43,12 @@ class ShopService
   {
     $deletedClause = shopProductsHasDeletedColumn($this->pdo) ? " AND is_deleted = 0" : "";
     $tagsSelect = shopProductsHasTagsColumn($this->pdo) ? ", tags" : "";
+    $stockSelect = shopProductsHasStockCountColumn($this->pdo) ? ", stock_count" : "";
+    $purchaseModeSelect = shopProductsHasPurchaseModeColumn($this->pdo) ? ", purchase_mode" : "";
     $stmt = $this->pdo->query(
       "SELECT slug, name_nl, name_en, summary_nl, summary_en, price_cents, availability, image_url, image_alt_nl, image_alt_en,
               lead_time_min, lead_time_max
-       {$tagsSelect}
+       {$tagsSelect}{$stockSelect}{$purchaseModeSelect}
        FROM shop_products WHERE is_live = 1{$deletedClause} ORDER BY sort_order ASC, id ASC",
     );
     $rows = $stmt->fetchAll();
@@ -58,10 +60,12 @@ class ShopService
   {
     $deletedClause = shopProductsHasDeletedColumn($this->pdo) ? " AND is_deleted = 0" : "";
     $tagsSelect = shopProductsHasTagsColumn($this->pdo) ? ", tags" : "";
+    $stockSelect = shopProductsHasStockCountColumn($this->pdo) ? ", stock_count" : "";
+    $purchaseModeSelect = shopProductsHasPurchaseModeColumn($this->pdo) ? ", purchase_mode" : "";
     $stmt = $this->pdo->prepare(
       "SELECT slug, name_nl, name_en, summary_nl, summary_en, price_cents, availability, image_url, image_alt_nl, image_alt_en,
               lead_time_min, lead_time_max
-       {$tagsSelect}
+       {$tagsSelect}{$stockSelect}{$purchaseModeSelect}
        FROM shop_products WHERE slug = :slug AND is_live = 1{$deletedClause} LIMIT 1",
     );
     $stmt->execute(["slug" => $slug]);
@@ -94,9 +98,10 @@ class ShopService
     $priceCents = (int)$product["price_cents"];
 
     $line = $this->fetchLineByProduct($cartId, $productSlug);
+    $nextQuantity = $line ? ((int)$line["quantity"] + $quantity) : $quantity;
+    $this->assertProductPurchasable($product, $nextQuantity);
     if ($line) {
-      $newQuantity = $line["quantity"] + $quantity;
-      $this->updateLineQuantity($line["id"], $newQuantity, $priceCents);
+      $this->updateLineQuantity($line["id"], $nextQuantity, $priceCents);
     } else {
       $lineId = $this->generateId();
       $totalCents = $priceCents * $quantity;
@@ -132,7 +137,9 @@ class ShopService
       if (!$product) {
         throw new RuntimeException("Product not found");
       }
-      $this->updateLineQuantity($lineId, $this->normalizeQuantity($quantity), (int)$product["price_cents"]);
+      $quantity = $this->normalizeQuantity($quantity);
+      $this->assertProductPurchasable($product, $quantity);
+      $this->updateLineQuantity($lineId, $quantity, (int)$product["price_cents"]);
     }
 
     return $this->buildCartResponse($cartId, $locale);
@@ -293,6 +300,10 @@ class ShopService
     $imageAltEn = trim((string)($row["image_alt_en"] ?? $nameEn));
     $leadTimeMin = $row["lead_time_min"] !== null ? (int)$row["lead_time_min"] : null;
     $leadTimeMax = $row["lead_time_max"] !== null ? (int)$row["lead_time_max"] : null;
+    $stockCount = array_key_exists("stock_count", $row) && $row["stock_count"] !== null
+      ? max(0, (int)$row["stock_count"])
+      : null;
+    $purchaseMode = $this->normalizePurchaseMode($row["purchase_mode"] ?? null);
     $leadTimeDays = null;
     if ($leadTimeMin !== null && $leadTimeMax !== null && $leadTimeMin >= 0 && $leadTimeMax >= $leadTimeMin) {
       $leadTimeDays = [
@@ -310,6 +321,8 @@ class ShopService
       "summaryEn" => $summaryEn,
       "price" => $this->money((int)$row["price_cents"]),
       "availability" => $row["availability"] ?: null,
+      "stockCount" => $stockCount,
+      "purchaseMode" => $purchaseMode,
       "image" => [
         "url" => $imageUrl !== "" ? $imageUrl : "/images/og-home.jpg",
         "alt" => $isEn ? $imageAltEn : $imageAltNl,
@@ -693,12 +706,38 @@ class ShopService
   private function fetchProductRow(string $slug): ?array
   {
     $deletedClause = shopProductsHasDeletedColumn($this->pdo) ? " AND is_deleted = 0" : "";
+    $stockSelect = shopProductsHasStockCountColumn($this->pdo) ? ", stock_count" : "";
+    $purchaseModeSelect = shopProductsHasPurchaseModeColumn($this->pdo) ? ", purchase_mode" : "";
     $stmt = $this->pdo->prepare(
-      "SELECT slug, price_cents FROM shop_products WHERE slug = :slug AND is_live = 1{$deletedClause} LIMIT 1",
+      "SELECT slug, price_cents, availability{$stockSelect}{$purchaseModeSelect}
+       FROM shop_products WHERE slug = :slug AND is_live = 1{$deletedClause} LIMIT 1",
     );
     $stmt->execute(["slug" => $slug]);
     $row = $stmt->fetch();
     return $row ?: null;
+  }
+
+  private function normalizePurchaseMode(?string $value): string
+  {
+    return $value === "inquiry" ? "inquiry" : "cart";
+  }
+
+  private function assertProductPurchasable(array $product, int $quantity): void
+  {
+    if (($product["availability"] ?? null) === "OutOfStock") {
+      throw new RuntimeException("Product is out of stock");
+    }
+
+    if ($this->normalizePurchaseMode($product["purchase_mode"] ?? null) !== "cart") {
+      throw new RuntimeException("Product is not available for direct checkout");
+    }
+
+    if (array_key_exists("stock_count", $product) && $product["stock_count"] !== null) {
+      $stockCount = max(0, (int)$product["stock_count"]);
+      if ($stockCount <= 0 || $quantity > $stockCount) {
+        throw new RuntimeException("Insufficient stock");
+      }
+    }
   }
 
   private function fetchLineByProduct(string $cartId, string $productSlug): ?array

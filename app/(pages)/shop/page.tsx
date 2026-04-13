@@ -9,9 +9,9 @@ import { SITE, buildItemListSchema } from "@/lib/seo"
 import { getShopProducts } from "@/lib/shop-data"
 
 export const metadata: Metadata = {
-  title: "3D print shop in beperkte oplage | X3DPrints",
+  title: "Starter 3D print shop voor Bambu spools | X3DPrints",
   description:
-    "Bestel kleinschalige 3D prints uit live CRM-voorraad. Persoonlijke kwaliteitscheck, veilige betaling via Mollie en levering in Belgie of gratis afhalen op afspraak.",
+    "Starter 3D print shop met Bambu reusable spools uit kleine oplage reststock. Momenteel 13 stuks beschikbaar aan EUR 5.00 per stuk excl. verzending.",
   alternates: {
     canonical: `${SITE.url}/shop/`,
     languages: {
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "3D print shop in beperkte oplage",
+    title: "Starter 3D print shop voor Bambu spools",
     description:
-      "Actuele collectie met persoonlijke afwerking, live voorraad en directe ondersteuning.",
+      "Originele Bambu reusable spools uit reststock, netjes gepresenteerd en eenvoudig aan te vragen.",
     url: `${SITE.url}/shop/`,
     images: [{ url: "/images/og-shop-nl.svg", width: 1200, height: 630 }],
     locale: "nl_BE",
@@ -31,47 +31,48 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D print shop in beperkte oplage | X3DPrints",
-    description: "Actuele 3D print collectie met live voorraad, Mollie-betaling en persoonlijke service.",
+    title: "Starter 3D print shop voor Bambu spools | X3DPrints",
+    description: "Originele Bambu reusable spools uit reststock, EUR 5.00 per stuk excl. verzending.",
     images: ["/images/og-shop-nl.svg"],
   },
 }
 
 const HIGHLIGHTS = [
   {
-    title: "In-house geprint en gecontroleerd",
-    description: "Elke order krijgt een manuele kwaliteitscontrole voor verzending.",
+    title: "Gecontroleerde reststock",
+    description: "Alleen items die nog bruikbaar en verkoopbaar zijn, komen in deze startershop terecht.",
   },
   {
-    title: "Heldere levering",
-    description: "Vaste verzending in Belgie of gratis afhalen op afspraak.",
+    title: "Lage instap voor Bambu refills",
+    description: "Een extra reusable spool is een snelle, goedkope manier om met refills te blijven werken.",
   },
   {
-    title: "Direct contact met de maker",
-    description: "Je krijgt snel advies over materiaal, afwerking en toepassing.",
+    title: "Snelle opvolging",
+    description: "Je krijgt een bevestiging over beschikbaar aantal, verzending of afhalen op afspraak.",
   },
 ]
 
 const HERO_POINTS = [
-  "Actuele voorraad uit CRM",
-  "Veilig betalen via Mollie",
-  "Snelle levering of afhalen op afspraak",
+  "Originele Bambu reusable spools",
+  "13 stuks momenteel op voorraad",
+  "EUR 5.00 per stuk excl. verzending",
+  "Afhalen of verzending na aanvraag",
 ]
 
 type ShopStep = { title: string; description: string; href?: string; label?: string }
 
 const ORDER_STEPS: ShopStep[] = [
   {
-    title: "Kies je product",
-    description: "Filter op categorie, vergelijk details en stel je aantal in.",
+    title: "Kies je item",
+    description: "Open het product, bekijk de details en geef meteen je gewenste aantal door.",
   },
   {
-    title: "Kies levering en e-mail",
-    description: "Selecteer verzending of gratis afhalen en vul je e-mail in.",
+    title: "Verstuur je aanvraag",
+    description: "Je vertrekt vanuit de productpagina met een vooringevulde aanvraag en hoeveelheid.",
   },
   {
-    title: "Rond veilig af",
-    description: "Je betaalt via Mollie en ontvangt direct je orderbevestiging.",
+    title: "Bevestig levering",
+    description: "Je krijgt antwoord met beschikbaarheid, verzendkost of afhaalmoment.",
   },
 ]
 
@@ -100,11 +101,11 @@ export default async function ShopPage() {
               <div className="relative md:text-center lg:text-left">
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Shop</p>
                 <h1 className="mt-4 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">
-                  3D prints in beperkte oplage, direct bestelbaar
+                  Startershop voor Bambu reusable spools en andere 3D prints in opbouw
                 </h1>
                 <p className="mt-4 max-w-3xl text-lg text-slate-600 md:mx-auto lg:mx-0">
-                  Bestel functionele en decoratieve prints die in-house worden geproduceerd en gecontroleerd.
-                  Je ziet live voorraad, kiest zelf levering of afhalen, en rekent veilig af via Mollie.
+                  We starten bewust klein: met originele Bambu reusable spools die overblijven uit eigen stock.
+                  Momenteel zijn er 13 stuks beschikbaar aan EUR 5.00 per stuk excl. verzending. Deze 3D print shop voor kleine oplage items groeit stapsgewijs; voor deze eerste drop loopt bestellen nog via aanvraag en nog niet via Mollie checkout.
                 </p>
                 <div className="mt-5 flex flex-wrap gap-2 md:justify-center lg:justify-start">
                   {HERO_POINTS.map((point) => (
@@ -118,17 +119,17 @@ export default async function ShopPage() {
                 </div>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:justify-center lg:justify-start">
                   <ShimmerButton
-                    href="/shop#shop-collection"
+                    href="/shop/bambu-reusable-spool"
                     wrapperClassName="w-full sm:w-auto"
                     className="w-full justify-center sm:w-auto"
                   >
-                    Shop nu
+                    Bekijk de reusable spool
                   </ShimmerButton>
                   <Link
                     href="/contact"
                     className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-auto"
                   >
-                    Krijg advies op maat
+                    Vraag meerdere stuks aan
                   </Link>
                 </div>
               </div>

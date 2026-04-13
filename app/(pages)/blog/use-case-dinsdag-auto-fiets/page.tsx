@@ -11,7 +11,7 @@ import { BLOG_FAQ } from "@/content/blog-faq"
 
 const canonical = "https://www.x3dprints.be/blog/use-case-dinsdag-auto-fiets/"
 const publishedDate = "2025-11-25T08:00:00+01:00"
-const dateModified = "2026-02-08"
+const dateModified = "2026-04-12"
 const faq = BLOG_FAQ["use-case-dinsdag-auto-fiets"]
 
 export const metadata: Metadata = {
@@ -126,7 +126,7 @@ const articleJsonLd = buildArticleJsonLd({
   image: "https://www.x3dprints.be/images/og-home-nl.svg",
 })
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+const lastUpdatedLabel = "Laatst bijgewerkt: 12 april 2026"
 
 const references = [
   { label: "UltiMaker PLA material properties", href: "https://ultimaker.com/materials/pla/" },
@@ -466,6 +466,16 @@ export default function UseCaseDinsdagAutoFietsPage() {
                 <p className="mt-2 text-sm text-slate-600">
                   Deel je STL of STEP, vermeld materiaal en toepassing en we koppelen terug met ontwerpadvies, planning en kost in
                   lijn met onze workflow.
+                </p>
+                <p className="mt-3 text-sm text-slate-600">
+                  Voor een concreet fietsvoorbeeld met sterkere focus op passing en visuele integratie, bekijk ook{" "}
+                  <Link
+                    href="/blog/use-case-dinsdag-headset-spacer-racefiets"
+                    className="font-semibold text-indigo-600 transition hover:text-indigo-500"
+                  >
+                    de case van de custom headset spacer voor een racefiets
+                  </Link>
+                  .
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:items-end">

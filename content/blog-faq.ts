@@ -463,6 +463,23 @@ export const BLOG_FAQ: Record<string, BlogFaqBlock> = {
       },
     ],
   },
+  "use-case-dinsdag-headset-spacer-racefiets": {
+    title: "FAQ over de custom headset spacer case",
+    items: [
+      {
+        q: "Is een custom headset spacer hetzelfde als een structureel stuuronderdeel?",
+        a: "Nee. We beoordelen per case passing, belasting en toepassing. Voor safety-critical onderdelen doen we geen blinde aannames zonder extra validatie.",
+      },
+      {
+        q: "Wat hebben jullie nodig om zo'n fietsonderdeel op maat te starten?",
+        a: "Idealiter foto's van de cockpit, referentiematen, info over de huidige headsetopbouw en je doel: visuele integratie, passing, stackhoogte of een combinatie daarvan.",
+      },
+      {
+        q: "Kunnen jullie ook het CAD-ontwerp maken als ik nog geen model heb?",
+        a: "Ja. We kunnen het traject opnemen van analyse en modelleren in Fusion 360 tot prototype en finale 3D print.",
+      },
+    ],
+  },
   "use-case-dinsdag-events": {
     title: "FAQ over 3D printen voor events",
     items: [

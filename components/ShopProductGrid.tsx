@@ -5,10 +5,11 @@ import Image from "next/image"
 import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
-import ShopAddToCartButton from "@/components/ShopAddToCartButton"
+import ShopProductActionButton from "@/components/ShopProductActionButton"
 import { useShopCart } from "@/components/ShopCartState"
 import { SHOP_BFF_ENABLED } from "@/lib/shop-config"
 import { getShopProducts } from "@/lib/shop-data"
+import { getShopPurchaseMode } from "@/lib/shop-purchase"
 import { cn } from "@/lib/utils"
 import type { LocalizedText, ShopCategoryKey, ShopProduct } from "@/content/shop-products"
 
@@ -28,18 +29,20 @@ const FILTER_LABELS: Record<ShopLocale, Record<FilterKey, string>> = {
     all: "Alles",
     clips: "Clips",
     organizers: "Organizers",
+    spools: "Spools",
   },
   en: {
     all: "All",
     clips: "Clips",
     organizers: "Organizers",
+    spools: "Spools",
   },
 }
 
 const COPY = {
   nl: {
-    eyebrow: "Actuele collectie",
-    title: "Vind het juiste product in enkele klikken",
+    eyebrow: "Startercollectie",
+    title: "Bekijk beschikbare shopitems en start meteen je aanvraag",
     filters: "Categorie",
     searchLabel: "Zoek product",
     searchPlaceholder: "Zoek op productnaam, materiaal of tag",
@@ -54,6 +57,7 @@ const COPY = {
     increase: "Aantal verhogen",
     results: "resultaten",
     availabilityLabel: "Status",
+    stockLabel: "Voorraad",
     sortOptions: {
       featured: "Meest relevant",
       priceAsc: "Prijs: laag naar hoog",
@@ -62,8 +66,8 @@ const COPY = {
     },
   },
   en: {
-    eyebrow: "Live collection",
-    title: "Find the right product in a few clicks",
+    eyebrow: "Starter collection",
+    title: "Browse the available shop items and start your request right away",
     filters: "Category",
     searchLabel: "Search products",
     searchPlaceholder: "Search by product name, material, or tag",
@@ -78,6 +82,7 @@ const COPY = {
     increase: "Increase quantity",
     results: "results",
     availabilityLabel: "Status",
+    stockLabel: "Stock",
     sortOptions: {
       featured: "Most relevant",
       priceAsc: "Price: low to high",
@@ -176,6 +181,11 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
     return Array.from(set)
   }, [liveProducts])
 
+  const hasCartProducts = useMemo(
+    () => liveProducts.some((product) => getShopPurchaseMode(product) === "cart"),
+    [liveProducts],
+  )
+
   const filters: FilterKey[] = useMemo(() => ["all", ...availableCategories], [availableCategories])
 
   useEffect(() => {
@@ -259,18 +269,20 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
                   </select>
                 </label>
 
-                <Link
-                  href={cartHref}
-                  className="inline-flex w-full items-center justify-center gap-3 rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-3 text-sm font-semibold text-indigo-700 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-100 md:col-span-2 md:w-auto lg:col-span-1"
-                >
-                  <span className="i-lucide-shopping-cart text-base" aria-hidden />
-                  {copy.cartLabel}
-                  {itemCount > 0 ? (
-                    <span className="inline-flex min-w-[1.5rem] items-center justify-center rounded-full bg-indigo-600 px-2 py-0.5 text-xs font-semibold text-white">
-                      {itemCount}
-                    </span>
-                  ) : null}
-                </Link>
+                {hasCartProducts ? (
+                  <Link
+                    href={cartHref}
+                    className="inline-flex w-full items-center justify-center gap-3 rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-3 text-sm font-semibold text-indigo-700 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-100 md:col-span-2 md:w-auto lg:col-span-1"
+                  >
+                    <span className="i-lucide-shopping-cart text-base" aria-hidden />
+                    {copy.cartLabel}
+                    {itemCount > 0 ? (
+                      <span className="inline-flex min-w-[1.5rem] items-center justify-center rounded-full bg-indigo-600 px-2 py-0.5 text-xs font-semibold text-white">
+                        {itemCount}
+                      </span>
+                    ) : null}
+                  </Link>
+                ) : null}
               </div>
 
               <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between md:flex-col md:justify-center lg:flex-row lg:justify-between">
@@ -326,6 +338,7 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
                     const href = locale === "en" ? `/en/shop/${product.slug}` : `/shop/${product.slug}`
                     const availabilityKey = product.availability ?? "InStock"
                     const availability = AVAILABILITY_LABELS[locale][availabilityKey] ?? availabilityKey
+                    const stockCount = Number.isFinite(product.stockCount) ? product.stockCount : null
                     const leadTime = product.leadTimeDays
                       ? formatLeadTime(locale, product.leadTimeDays.min, product.leadTimeDays.max)
                       : null
@@ -376,6 +389,11 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
                             >
                               {copy.availabilityLabel}: {availability}
                             </span>
+                            {stockCount ? (
+                              <span className="rounded-full border border-teal-200 bg-teal-50 px-2 py-0.5 text-[11px] font-semibold text-teal-700">
+                                {copy.stockLabel}: {stockCount}
+                              </span>
+                            ) : null}
                             {leadTime && (
                               <span className="rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[11px] font-semibold text-slate-600">
                                 {copy.leadTimeLabel}: {leadTime}
@@ -421,7 +439,7 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
                               </div>
                             </div>
 
-                            <ShopAddToCartButton
+                            <ShopProductActionButton
                               product={product}
                               locale={locale}
                               quantity={quantity}

@@ -533,6 +533,25 @@ const TOPICS_NL: Topic[] = [
     category: "use-case-dinsdag",
   },
   {
+    id: "use-case-dinsdag-headset-spacer-racefiets",
+    title: "Use Case Dinsdag #9: custom headset spacer voor racefiets",
+    summary:
+      "Case over een custom fietsonderdeel met 3D printing: een geintegreerde headset spacer voor een racefiets, ontworpen op maat van frame, cockpit en visuele flow.",
+    highlights: [
+      "Laat zien hoe een standaard stack van headset ringen vervangen werd door een made-to-fit onderdeel met veel strakkere integratie.",
+      "Bundelt analyse, CAD in Fusion 360, prototyping en finale productie in een salesgerichte case study.",
+      "Sterke match voor zoekintenties rond custom fietsonderdeel, headset spacer fiets, 3D print fiets onderdelen en custom bike parts.",
+    ],
+    links: [
+      { label: "Lees Use Case Dinsdag #9", href: "/blog/use-case-dinsdag-headset-spacer-racefiets" },
+      { label: "Bekijk portfolio", href: "/portfolio" },
+      { label: "Vraag een eerste inschatting", href: "/contact?topic=use-case-headset-spacer-racefiets" },
+    ],
+    date: "2026-04-12",
+    intent: "how-to",
+    category: "use-case-dinsdag",
+  },
+  {
     id: "use-case-dinsdag-retail-displays",
     title: "Use Case Dinsdag #2: Retail displays en etalages",
     summary:
@@ -1842,6 +1861,25 @@ const TOPICS_EN: Topic[] = [
     category: "use-case-dinsdag",
   },
   {
+    id: "use-case-dinsdag-headset-spacer-racefiets",
+    title: "Use Case Tuesday #9: custom race bike headset spacer",
+    summary:
+      "Case study of a custom bike part with 3D printing: an integrated headset spacer designed around the frame, cockpit and cleaner visual flow of a race bike.",
+    highlights: [
+      "Shows how a standard ring stack was replaced by a made-to-fit part with much cleaner integration.",
+      "Covers analysis, Fusion 360 CAD, prototyping and final production in a conversion-focused case article.",
+      "Strong match for searches around custom bike part, bike headset spacer, 3D printed bike parts and custom bike parts.",
+    ],
+    links: [
+      { label: "Read Use Case Tuesday #9", href: "/blog/use-case-dinsdag-headset-spacer-racefiets" },
+      { label: "View portfolio", href: "/portfolio" },
+      { label: "Request a first assessment", href: "/contact?topic=use-case-headset-spacer-racefiets" },
+    ],
+    date: "2026-04-12",
+    intent: "how-to",
+    category: "use-case-dinsdag",
+  },
+  {
     id: "use-case-dinsdag-retail-displays",
     title: "Use Case Tuesday #2: Retail displays and shop windows",
     summary:
@@ -3008,7 +3046,7 @@ export default function BlogPage({ locale }: BlogPageProps) {
         { label: "Schema.org BlogPosting", url: "https://schema.org/BlogPosting" },
         { label: "Google docs over structured data", url: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" },
       ]
-  const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"
+  const lastUpdatedLabel = isEn ? "Last updated: April 12, 2026" : "Laatst bijgewerkt: 12 april 2026"
   const topicsWithDate = topics.filter((topic): topic is Topic & { date: string } => Boolean(topic.date))
 
   const SORT_PREFERENCE: Record<TopicCategory, "featured" | "az"> = {
@@ -3088,13 +3126,13 @@ export default function BlogPage({ locale }: BlogPageProps) {
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-200/[0.08]" />
 
       <section className="px-6 pb-12 pt-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl space-y-8">
-          <Reveal className="space-y-4">
+        <div className="mx-auto max-w-6xl space-y-6">
+          <Reveal className="max-w-4xl space-y-4">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.hero.eyebrow}</p>
             <h1 className="text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
               {copy.hero.title}
             </h1>
-            <p className="text-lg text-slate-700">{copy.hero.body}</p>
+            <p className="max-w-4xl text-lg text-slate-700">{copy.hero.body}</p>
             <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <ShimmerButton href={localize("/pricing")}>{copy.hero.ctas.pricing}</ShimmerButton>
@@ -3111,33 +3149,42 @@ export default function BlogPage({ locale }: BlogPageProps) {
                 {copy.hero.ctas.finishing}
               </Link>
             </div>
-            <ContentTableOfContents
-              title={isEn ? "Contents" : "Inhoud"}
-              items={tocItems}
-              className="max-w-2xl"
-            />
           </Reveal>
-          <div className="grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(240px,1fr)]">
+          <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_280px] lg:items-start xl:grid-cols-[minmax(0,1fr)_300px]">
+            <Reveal>
+              <ContentTableOfContents
+                title={isEn ? "Contents" : "Inhoud"}
+                items={tocItems}
+                className="h-full max-w-none"
+              />
+            </Reveal>
+            <Reveal delay={0.06} className="lg:justify-self-end">
+              <GlassCard className="h-full border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur lg:w-[280px] xl:w-[300px]">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.quickLinks.label}</p>
+                <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                  {quickLinks.map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={localize(link.href)}
+                        className="inline-flex w-full items-center justify-between gap-2 rounded-xl border border-slate-100 bg-white/80 px-3 py-2 font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-white"
+                      >
+                        {link.label}
+                        <span aria-hidden>-&gt;</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4 text-xs text-slate-500">{copy.quickLinks.hint(topics.length)}</p>
+              </GlassCard>
+            </Reveal>
+          </div>
+          <Reveal delay={0.1}>
             <div id="blog-search">
               <BlogSearch topics={topics} />
             </div>
-            <GlassCard className="h-full border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.quickLinks.label}</p>
-              <ul className="mt-4 space-y-2 text-sm text-slate-700">
-                {quickLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={localize(link.href)}
-                      className="inline-flex w-full items-center justify-between gap-2 rounded-xl border border-slate-100 bg-white/80 px-3 py-2 font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-white"
-                    >
-                      {link.label}
-                      <span aria-hidden>-&gt;</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4 text-xs text-slate-500">{copy.quickLinks.hint(topics.length)}</p>
-            </GlassCard>
+          </Reveal>
+          <div className="pt-1">
+            <span aria-hidden className="block h-px bg-gradient-to-r from-transparent via-slate-300/70 to-transparent" />
           </div>
         </div>
       </section>
