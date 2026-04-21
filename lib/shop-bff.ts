@@ -97,16 +97,23 @@ function buildBffUrls(path: string): string[] {
   return Array.from(new Set([pathUrl, directUrl]))
 }
 
-async function bffFetch<T>(path: string, options: RequestInit & { json?: unknown } = {}) {
+async function bffFetch<T>(
+  path: string,
+  options: (RequestInit & { json?: unknown; cacheMode?: RequestCache }) = {},
+) {
+  const { json, cacheMode = "no-store", ...requestOptions } = options as RequestInit & {
+    json?: unknown
+    cacheMode?: RequestCache
+  }
   const urls = buildBffUrls(path)
-  const headers = new Headers(options.headers)
+  const headers = new Headers(requestOptions.headers)
   if (!headers.has("Accept")) {
     headers.set("Accept", "application/json")
   }
-  let body = options.body
-  if (options.json !== undefined) {
+  let body = requestOptions.body
+  if (json !== undefined) {
     headers.set("Content-Type", "application/json")
-    body = JSON.stringify(options.json)
+    body = JSON.stringify(json)
   }
 
   const errors: string[] = []
@@ -114,10 +121,10 @@ async function bffFetch<T>(path: string, options: RequestInit & { json?: unknown
   for (const url of urls) {
     try {
       const response = await fetch(url, {
-        ...options,
+        ...requestOptions,
         body,
         headers,
-        cache: "no-store",
+        cache: cacheMode,
       })
 
       if (!response.ok) {
@@ -137,12 +144,23 @@ async function bffFetch<T>(path: string, options: RequestInit & { json?: unknown
   throw new Error(errors[0] || "[shop-bff] Request failed.")
 }
 
-export async function fetchShopProducts(locale: ShopLocale) {
-  return bffFetch<{ products: BffProduct[] }>(`/shop/products?locale=${locale}`)
+export async function fetchShopProducts(
+  locale: ShopLocale,
+  options?: {
+    cacheMode?: RequestCache
+  },
+) {
+  return bffFetch<{ products: BffProduct[] }>(`/shop/products?locale=${locale}`, options)
 }
 
-export async function fetchShopProduct(slug: string, locale: ShopLocale) {
-  return bffFetch<{ product: BffProduct }>(`/shop/products/${slug}?locale=${locale}`)
+export async function fetchShopProduct(
+  slug: string,
+  locale: ShopLocale,
+  options?: {
+    cacheMode?: RequestCache
+  },
+) {
+  return bffFetch<{ product: BffProduct }>(`/shop/products/${slug}?locale=${locale}`, options)
 }
 
 export async function createCart() {

@@ -30,19 +30,21 @@ const FILTER_LABELS: Record<ShopLocale, Record<FilterKey, string>> = {
     clips: "Clips",
     organizers: "Organizers",
     spools: "Spools",
+    outdoor: "Outdoor",
   },
   en: {
     all: "All",
     clips: "Clips",
     organizers: "Organizers",
     spools: "Spools",
+    outdoor: "Outdoor",
   },
 }
 
 const COPY = {
   nl: {
-    eyebrow: "Startercollectie",
-    title: "Bekijk beschikbare shopitems en start meteen je aanvraag",
+    eyebrow: "Shopcollectie",
+    title: "Bekijk beschikbare 3D print producten en vraag je offerte aan",
     filters: "Categorie",
     searchLabel: "Zoek product",
     searchPlaceholder: "Zoek op productnaam, materiaal of tag",
@@ -66,8 +68,8 @@ const COPY = {
     },
   },
   en: {
-    eyebrow: "Starter collection",
-    title: "Browse the available shop items and start your request right away",
+    eyebrow: "Shop collection",
+    title: "Browse available 3D print products and request your quote",
     filters: "Category",
     searchLabel: "Search products",
     searchPlaceholder: "Search by product name, material, or tag",
@@ -123,6 +125,14 @@ function localize(text: LocalizedText, locale: ShopLocale) {
 function formatLeadTime(locale: ShopLocale, min: number, max: number) {
   const range = min === max ? `${min}` : `${min}-${max}`
   return locale === "en" ? `${range} business days` : `${range} werkdagen`
+}
+
+function getProductImageClassName(product: ShopProduct) {
+  if (product.imageFit === "contain") {
+    return "object-contain object-center p-3"
+  }
+
+  return "object-cover transition duration-300 group-hover:scale-[1.03]"
 }
 
 function clampQuantity(value: number) {
@@ -243,8 +253,8 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.eyebrow}</p>
               <h2 className="mt-2 text-2xl font-semibold text-slate-900">{copy.title}</h2>
 
-              <div className="mt-6 grid gap-3 sm:gap-4 md:mx-auto lg:mx-0 md:max-w-5xl lg:max-w-none md:grid-cols-2 lg:grid-cols-[1fr_auto_auto] lg:items-center">
-                <label className="block">
+              <div className="mt-6 grid gap-3 sm:gap-4 md:mx-auto lg:mx-0 md:max-w-5xl md:grid-cols-2 lg:max-w-none lg:grid-cols-[minmax(0,1fr)_minmax(170px,220px)_auto] lg:items-center">
+                <label className="block min-w-0">
                   <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">{copy.searchLabel}</span>
                   <input
                     type="search"
@@ -272,7 +282,7 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
                 {hasCartProducts ? (
                   <Link
                     href={cartHref}
-                    className="inline-flex w-full items-center justify-center gap-3 rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-3 text-sm font-semibold text-indigo-700 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-100 md:col-span-2 md:w-auto lg:col-span-1"
+                    className="inline-flex w-full items-center justify-center gap-3 rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-3 text-center text-sm font-semibold text-indigo-700 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-100 md:col-span-2 md:w-auto lg:col-span-1"
                   >
                     <span className="i-lucide-shopping-cart text-base" aria-hidden />
                     {copy.cartLabel}
@@ -338,7 +348,7 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
                     const href = locale === "en" ? `/en/shop/${product.slug}` : `/shop/${product.slug}`
                     const availabilityKey = product.availability ?? "InStock"
                     const availability = AVAILABILITY_LABELS[locale][availabilityKey] ?? availabilityKey
-                    const stockCount = Number.isFinite(product.stockCount) ? product.stockCount : null
+                    const stockCount: number | null = typeof product.stockCount === "number" ? product.stockCount : null
                     const leadTime = product.leadTimeDays
                       ? formatLeadTime(locale, product.leadTimeDays.min, product.leadTimeDays.max)
                       : null
@@ -348,7 +358,7 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
                     return (
                       <article
                         key={product.slug}
-                        className="group flex h-full flex-col rounded-2xl border border-slate-200/80 bg-white/85 p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg sm:p-5 md:items-center md:text-center lg:items-stretch lg:text-left xl:p-5"
+                        className="group flex min-w-0 h-full flex-col rounded-2xl border border-slate-200/80 bg-white/85 p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg sm:p-5 md:items-center md:text-center lg:items-stretch lg:text-left xl:p-5"
                       >
                         <Link
                           href={href}
@@ -359,51 +369,51 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
                               src={product.image.url}
                               alt={imageAlt}
                               fill
-                              className="object-cover transition duration-300 group-hover:scale-[1.03]"
+                              className={getProductImageClassName(product)}
                               sizes="(min-width: 1536px) 18vw, (min-width: 1280px) 24vw, (min-width: 640px) 46vw, 96vw"
                             />
                           </div>
                         </Link>
 
-                        <div className="mt-4 flex flex-1 flex-col">
-                          <div className="flex flex-col items-start gap-1 md:items-center lg:flex-row lg:items-start lg:justify-between">
-                            <h3 className="text-lg font-semibold text-slate-900">
+                        <div className="mt-4 flex min-w-0 flex-1 flex-col">
+                          <div className="flex min-w-0 flex-col items-start gap-1 md:items-center lg:flex-row lg:items-start lg:justify-between lg:gap-3">
+                            <h3 className="min-w-0 text-lg font-semibold text-slate-900">
                               <Link
                                 href={href}
-                                className="transition hover:text-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                                className="inline break-words transition hover:text-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                               >
                                 {name}
                               </Link>
                             </h3>
-                            <p className="text-sm font-semibold text-slate-900 sm:text-base lg:text-sm">{formatEur(product.priceEur)}</p>
+                            <p className="shrink-0 text-sm font-semibold text-slate-900 sm:text-base lg:text-sm">{formatEur(product.priceEur)}</p>
                           </div>
 
-                          <p className="mt-2 line-clamp-3 text-sm text-slate-600">{summary}</p>
+                          <p className="mt-2 line-clamp-3 break-words text-sm text-slate-600">{summary}</p>
 
-                          <div className="mt-3 flex flex-wrap gap-2 md:justify-center lg:justify-start">
+                          <div className="mt-3 flex min-w-0 flex-wrap gap-2 md:justify-center lg:justify-start">
                             <span
                               className={cn(
-                                "rounded-full border px-2 py-0.5 text-[11px] font-semibold",
+                                "inline-flex max-w-full items-center rounded-2xl border px-2 py-0.5 text-left text-[11px] font-semibold leading-4 break-words sm:rounded-full",
                                 AVAILABILITY_CLASSES[availabilityKey] ?? "border-slate-200 bg-slate-50 text-slate-700",
                               )}
                             >
                               {copy.availabilityLabel}: {availability}
                             </span>
-                            {stockCount ? (
-                              <span className="rounded-full border border-teal-200 bg-teal-50 px-2 py-0.5 text-[11px] font-semibold text-teal-700">
+                            {stockCount !== null ? (
+                              <span className="inline-flex max-w-full items-center rounded-2xl border border-teal-200 bg-teal-50 px-2 py-0.5 text-left text-[11px] font-semibold leading-4 text-teal-700 break-words sm:rounded-full">
                                 {copy.stockLabel}: {stockCount}
                               </span>
                             ) : null}
                             {leadTime && (
-                              <span className="rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[11px] font-semibold text-slate-600">
+                              <span className="inline-flex max-w-full items-center rounded-2xl border border-slate-200 bg-white px-2 py-0.5 text-left text-[11px] font-semibold leading-4 text-slate-600 break-words sm:rounded-full">
                                 {copy.leadTimeLabel}: {leadTime}
                               </span>
                             )}
                           </div>
 
                           <div className="mt-4 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center md:items-center md:justify-center lg:justify-start">
-                            <div className="flex w-full items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 shadow-sm sm:w-auto sm:justify-start">
-                              <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-slate-500">
+                            <div className="flex w-full min-w-0 flex-wrap items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 shadow-sm sm:w-auto sm:flex-nowrap sm:justify-start">
+                              <span className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.25em] text-slate-500">
                                 {copy.quantityLabel}
                               </span>
                               <div className="flex items-center gap-2">
@@ -443,13 +453,13 @@ export default function ShopProductGrid({ products, locale }: ShopProductGridPro
                               product={product}
                               locale={locale}
                               quantity={quantity}
-                              className="w-full justify-center px-4 py-2 text-xs sm:w-auto"
+                              className="w-full min-w-0 justify-center px-4 py-2 text-center text-xs sm:w-auto"
                             />
                           </div>
 
                           <Link
                             href={href}
-                            className="mt-3 inline-flex w-full items-center justify-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 sm:w-auto md:justify-center lg:justify-start"
+                            className="mt-3 inline-flex w-full items-center justify-center gap-2 text-center text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 sm:w-auto md:justify-center lg:justify-start"
                           >
                             {copy.cta}
                             <span className="i-lucide-arrow-right" aria-hidden />

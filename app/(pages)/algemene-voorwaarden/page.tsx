@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 
 const canonical = "https://www.x3dprints.be/algemene-voorwaarden/"
 
@@ -91,9 +92,19 @@ export default function TermsPage() {
             <h2 className="text-xl font-semibold text-slate-900">Herroepingsrecht</h2>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
               <li>
-                Aangezien 3D-prints maatwerk zijn, geldt het wettelijke herroepingsrecht van 14 dagen niet (art. VI.53, 3° WER).
+                Voor standaard shopproducten voor consumenten geldt in principe het wettelijke herroepingsrecht bij verkoop op afstand.
               </li>
-              <li>Herroepingsrecht geldt wel voor standaardproducten/accessoires.</li>
+              <li>
+                Voor goederen die op maat volgens de specificaties van de klant worden gemaakt of duidelijk gepersonaliseerd zijn,
+                kan het herroepingsrecht wettelijk uitgesloten zijn.
+              </li>
+              <li>
+                De praktische regeling en verdere toelichting staan op de pagina{" "}
+                <Link href="/retour-herroepingsrecht" className="underline-offset-2 hover:underline">
+                  retour &amp; herroepingsrecht
+                </Link>
+                .
+              </li>
             </ul>
           </li>
           <li>

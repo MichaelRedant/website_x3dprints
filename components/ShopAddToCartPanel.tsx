@@ -45,9 +45,9 @@ export default function ShopAddToCartPanel({ product, locale, className }: ShopA
   }
 
   return (
-    <div className={cn("flex flex-col items-stretch gap-3 sm:flex-row sm:items-center md:justify-center lg:justify-start", className)}>
-      <div className="flex w-full items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white/90 px-3 py-2 text-sm text-slate-700 shadow-sm sm:w-auto sm:justify-start">
-        <span className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.quantity}</span>
+    <div className={cn("flex min-w-0 flex-col items-stretch gap-3 sm:flex-row sm:items-center md:justify-center lg:justify-start", className)}>
+      <div className="flex w-full min-w-0 flex-wrap items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white/90 px-3 py-2 text-sm text-slate-700 shadow-sm sm:w-auto sm:flex-nowrap sm:justify-start">
+        <span className="shrink-0 text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{copy.quantity}</span>
         <div className="flex items-center gap-2">
           <button
             type="button"
@@ -84,7 +84,7 @@ export default function ShopAddToCartPanel({ product, locale, className }: ShopA
         product={product}
         locale={locale}
         quantity={displayQuantity}
-        className="w-full justify-center sm:w-auto"
+        className="w-full min-w-0 justify-center text-center sm:w-auto"
       />
     </div>
   )

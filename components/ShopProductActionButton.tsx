@@ -1,9 +1,9 @@
 "use client"
 
-import Link from "next/link"
 import ShopAddToCartButton from "@/components/ShopAddToCartButton"
+import ShopInquiryModal from "@/components/ShopInquiryModal"
 import type { ShopProduct } from "@/content/shop-products"
-import { buildShopInquiryHref, isInquiryProduct, type ShopLocale } from "@/lib/shop-purchase"
+import { isInquiryProduct, type ShopLocale } from "@/lib/shop-purchase"
 import { cn } from "@/lib/utils"
 
 type ShopProductActionButtonProps = {
@@ -11,15 +11,17 @@ type ShopProductActionButtonProps = {
   locale: ShopLocale
   className?: string
   quantity?: number
+  variant?: "solid" | "text"
+  labelOverride?: string
 }
 
 const COPY = {
   nl: {
-    inquiry: "Bestel via aanvraag",
+    inquiry: "Vraag offerte aan",
     availability: "Vraag beschikbaarheid",
   },
   en: {
-    inquiry: "Order via request",
+    inquiry: "Request a quote",
     availability: "Request availability",
   },
 }
@@ -29,6 +31,8 @@ export default function ShopProductActionButton({
   locale,
   className,
   quantity,
+  variant = "solid",
+  labelOverride,
 }: ShopProductActionButtonProps) {
   if (!isInquiryProduct(product)) {
     return (
@@ -42,20 +46,16 @@ export default function ShopProductActionButton({
   }
 
   const copy = locale === "en" ? COPY.en : COPY.nl
-  const href = buildShopInquiryHref({ product, locale, quantity })
-  const label = product.availability === "OutOfStock" ? copy.availability : copy.inquiry
+  const label = labelOverride || (product.availability === "OutOfStock" ? copy.availability : copy.inquiry)
 
   return (
-    <Link
-      href={href}
-      className={cn(
-        "inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold text-white transition-[box-shadow,filter]",
-        "bg-[linear-gradient(90deg,#0f766e,45%,#22c55e)] shadow-[0_10px_30px_rgba(15,118,110,.24)] hover:shadow-[0_12px_40px_rgba(15,118,110,.36)] hover:brightness-105",
-        className,
-      )}
-    >
-      {label}
-      <span className="i-lucide-arrow-right" aria-hidden />
-    </Link>
+    <ShopInquiryModal
+      product={product}
+      locale={locale}
+      quantity={quantity}
+      variant={variant}
+      label={label}
+      className={cn(className)}
+    />
   )
 }

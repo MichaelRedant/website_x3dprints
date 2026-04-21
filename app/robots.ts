@@ -37,6 +37,11 @@ export default function robots(): MetadataRoute.Robots {
         disallow,
       },
       {
+        userAgent: "OAI-SearchBot",
+        allow: ["/", "/en/"],
+        disallow,
+      },
+      {
         userAgent: "Google-Extended",
         allow: ["/", "/en/"],
         disallow,

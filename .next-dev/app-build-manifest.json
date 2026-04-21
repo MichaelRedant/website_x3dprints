@@ -11,25 +11,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
+    "/(home)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(home)/layout.js"
+    ],
+    "/(home)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(home)/page.js"
+    ],
     "/(pages)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/layout.js"
-    ],
-    "/(pages)/crm/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/crm/layout.js"
-    ],
-    "/(pages)/crm/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/crm/page.js"
-    ],
-    "/(pages)/[slug]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/[slug]/page.js"
     ],
     "/(pages)/shop/layout": [
       "static/chunks/webpack.js",
@@ -46,10 +41,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/shop/[slug]/page.js"
     ],
-    "/(pages)/contact/page": [
+    "/(pages)/machine-readable-resources/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/contact/page.js"
+      "static/chunks/app/(pages)/machine-readable-resources/page.js"
+    ],
+    "/(pages)/retour-herroepingsrecht/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/retour-herroepingsrecht/page.js"
     ]
   }
 }

@@ -63,7 +63,8 @@ export async function POST(req: Request) {
 
     // honeypot
     const hp = String(form.get("hp") || "")
-    if (hp) return NextResponse.json({ ok: true })
+    const website = String(form.get("website") || "")
+    if (hp || website) return NextResponse.json({ ok: true })
 
     // payload
     const type = (String(form.get("type") || "private") as ContactType)
@@ -79,6 +80,9 @@ export async function POST(req: Request) {
       address: clamp(String(form.get("address") || "").trim(), 200),
       quantity: clamp(String(form.get("quantity") || "").trim(), 20),
       material,
+      quote: clamp(String(form.get("quote") || "").trim(), 800),
+      requestContext: clamp(String(form.get("requestContext") || "").trim(), 120),
+      source: clamp(String(form.get("source") || "").trim(), 40),
     }
 
     // Basis validatie
@@ -112,20 +116,32 @@ export async function POST(req: Request) {
 
     try { await transporter.verify() } catch { /* sommige servers weigeren verify() */ }
 
-    const subject = `[Contact] ${payload.type === "business" ? "Bedrijf" : "Particulier"} - ${payload.name}`
-    const text = `
-Naam: ${payload.name}
-E-mail: ${payload.email}
-Type: ${payload.type}
-Bedrijf: ${payload.company}
-BTW: ${payload.vat}
-Adres: ${payload.address}
-Aantal: ${payload.quantity}
-Materiaal: ${payload.material}
-
-Bericht:
-${payload.message}
-`.trim()
+    const subjectParts = [
+      "[Contact]",
+      payload.source === "shop" ? "Shop" : "",
+      payload.requestContext || "",
+      payload.type === "business" ? "Bedrijf" : "Particulier",
+      payload.name,
+    ].filter(Boolean)
+    const subject = subjectParts.join(" - ")
+    const textLines = [
+      `Naam: ${payload.name}`,
+      `E-mail: ${payload.email}`,
+      `Type: ${payload.type}`,
+      `Bedrijf: ${payload.company || "-"}`,
+      `BTW: ${payload.vat || "-"}`,
+      `Adres: ${payload.address || "-"}`,
+      `Aantal: ${payload.quantity || "-"}`,
+      `Materiaal: ${payload.material || "-"}`,
+      `Product/context: ${payload.requestContext || "-"}`,
+      `Bron: ${payload.source || "-"}`,
+    ]
+    if (payload.quote) {
+      textLines.push("Indicatieve schatting:")
+      textLines.push(payload.quote)
+    }
+    textLines.push("", "Bericht:", payload.message)
+    const text = textLines.join("\n")
 
     const html = `
 <h2>Nieuwe contactaanvraag</h2>
@@ -138,6 +154,9 @@ ${payload.message}
   ${payload.address ? `<li><strong>Adres:</strong> ${escapeHtml(payload.address)}</li>` : ""}
   ${payload.quantity ? `<li><strong>Aantal:</strong> ${escapeHtml(payload.quantity)}</li>` : ""}
   ${payload.material ? `<li><strong>Materiaal:</strong> ${escapeHtml(payload.material)}</li>` : ""}
+  ${payload.requestContext ? `<li><strong>Product/context:</strong> ${escapeHtml(payload.requestContext)}</li>` : ""}
+  ${payload.source ? `<li><strong>Bron:</strong> ${escapeHtml(payload.source)}</li>` : ""}
+  ${payload.quote ? `<li><strong>Indicatieve schatting:</strong> ${escapeHtml(payload.quote)}</li>` : ""}
 </ul>
 <p><strong>Bericht:</strong></p>
 <pre style="white-space:pre-wrap;font-family:ui-monospace,Menlo,monospace">${escapeHtml(payload.message)}</pre>

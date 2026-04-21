@@ -214,6 +214,20 @@ export default function OutdoorPrintingGuidePage() {
                 </Link>{" "}
                 voor studio-instellingen en droogtips.
               </p>
+              <p className="mt-4 text-sm text-slate-600">
+                Een concreet voorbeeld is ons{" "}
+                <Link href="/shop/selectieve-hoornaarval-deksel" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  hoornaarval deksel voor selectieve hoornaarvallen
+                </Link>
+                . Dat product wordt in PETG geprint voor buitengebruik en sluit aan op de{" "}
+                <Link
+                  href="/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem"
+                  className="font-semibold text-indigo-600 hover:text-indigo-500"
+                >
+                  uitgewerkte case uit Sint-Lievens-Houtem
+                </Link>
+                .
+              </p>
               <p className="mt-4 text-xs text-slate-500">
                 Extra lektuur:{" "}
                 <Link

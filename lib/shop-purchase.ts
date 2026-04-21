@@ -38,8 +38,8 @@ export function buildShopInquiryHref({
   const params = new URLSearchParams()
   const quote =
     locale === "en"
-      ? `Order request: ${name} (${resolvedQuantity}x, ${formatEur(product.priceEur)} per item excl. shipping)`
-      : `Bestelaanvraag: ${name} (${resolvedQuantity}x, ${formatEur(product.priceEur)} per stuk excl. verzending)`
+      ? `Quote request: ${name} (${resolvedQuantity}x, ${formatEur(product.priceEur)} per item excl. shipping)`
+      : `Offerteaanvraag: ${name} (${resolvedQuantity}x, ${formatEur(product.priceEur)} per stuk excl. verzending)`
 
   params.set("quote", quote)
   params.set("quantity", String(resolvedQuantity))

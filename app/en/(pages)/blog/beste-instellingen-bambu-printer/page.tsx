@@ -15,6 +15,8 @@ const faq = BLOG_FAQ_EN["beste-instellingen-bambu-printer"]
 const lastUpdatedLabel = "Last updated: 9 February 2026"
 const designGuideHref =
   "/en/blog/3d-print-ontwerp-gids?utm_source=blog&utm_medium=internal&utm_campaign=bambu-settings"
+const shopHref = "/en/shop"
+const spoolHref = "/en/shop/bambu-reusable-spool"
 
 export const metadata: Metadata = {
   title: "Best settings for your Bambu printer | X3DPrints Blog",
@@ -276,6 +278,31 @@ export default function BambuSettingsBlogEn() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="px-6 pb-16 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-4xl">
+          <Reveal>
+            <GlassCard className="flex flex-col gap-6 border border-white/40 bg-white/85 p-6 shadow-xl backdrop-blur sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Next step</p>
+                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Need extra Bambu spools or print help?</h2>
+                <p className="mt-2 text-sm text-slate-600">
+                  If you use Bambu refills and need extra spools, check the live reusable spool page in the shop. If you would rather outsource the print or need tuned settings, contact us directly.
+                </p>
+              </div>
+              <div className="flex flex-col gap-3 sm:items-end">
+                <ShimmerButton href={spoolHref}>View reusable spool</ShimmerButton>
+                <Link href={shopHref} className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
+                  Browse shop & stocked items
+                </Link>
+                <Link href="/en/contact" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
+                  Ask for a settings review
+                </Link>
+              </div>
+            </GlassCard>
+          </Reveal>
         </div>
       </section>
 

@@ -70,6 +70,7 @@ function DesktopDropdown({
 const PRIMARY_LINKS = [
   { href: "/materials", label: { nl: "Materialen", en: "Materials" } },
   { href: "/portfolio", label: { nl: "Portfolio", en: "Portfolio" } },
+  { href: "/shop", label: { nl: "Shop", en: "Shop" } },
   { href: "/pricing", label: { nl: "Prijzen", en: "Pricing" } },
 ]
 

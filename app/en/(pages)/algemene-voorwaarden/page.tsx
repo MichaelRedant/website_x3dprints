@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 
 const canonical = "https://www.x3dprints.be/en/algemene-voorwaarden/"
 
@@ -42,7 +43,7 @@ export default function TermsPageEn() {
     <main className="px-6 py-12 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-3xl">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900">Terms &amp; Conditions</h1>
-        <ol className="mt-6 space-y-6 list-decimal pl-5">
+        <ol className="mt-6 list-decimal space-y-6 pl-5">
           <li>
             <h2 className="text-xl font-semibold text-slate-900">Seller identity</h2>
             <p className="mt-2 text-slate-600">
@@ -50,7 +51,8 @@ export default function TermsPageEn() {
               Contact:{" "}
               <a href="mailto:michael@xinudesign.be" className="underline-offset-2 hover:underline">
                 michael@xinudesign.be
-              </a>.
+              </a>
+              .
             </p>
           </li>
           <li>
@@ -95,8 +97,15 @@ export default function TermsPageEn() {
           <li>
             <h2 className="text-xl font-semibold text-slate-900">Right of withdrawal</h2>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
-              <li>Because 3D prints are custom-made, the 14-day right of withdrawal does not apply (Art. VI.53, 3° WER).</li>
-              <li>Right of withdrawal applies to standard products/accessories.</li>
+              <li>For standard consumer-facing shop products, we generally start from the ordinary legal framework for distance selling.</li>
+              <li>For goods made to the customer&apos;s specifications or clearly personalised, the withdrawal right may be excluded by law.</li>
+              <li>
+                The practical framework and further explanation are available on the{" "}
+                <Link href="/en/retour-herroepingsrecht" className="underline-offset-2 hover:underline">
+                  returns &amp; withdrawal policy
+                </Link>
+                .
+              </li>
             </ul>
           </li>
           <li>

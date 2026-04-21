@@ -181,23 +181,23 @@
     {
       "route": "/shop/",
       "files": ["app/(pages)/shop/page.tsx"],
-      "keywords": ["3d print", "3d print shop", "kleine oplage", "mollie"],
+      "keywords": ["3d print", "3d print shop", "3d print producten", "accessoires", "organizers"],
       "minMatches": 2,
       "sections": {
         "title": { "keywords": ["3d print shop"], "minMatches": 1 },
-        "h1": { "keywords": ["3d prints"], "minMatches": 1 },
-        "intro": { "keywords": ["mollie"], "minMatches": 1 }
+        "h1": { "keywords": ["3d print shop"], "minMatches": 1 },
+        "intro": { "keywords": ["3d print producten", "accessoires"], "minMatches": 1 }
       }
     },
     {
       "route": "/en/shop/",
       "files": ["app/en/(pages)/shop/page.tsx"],
-      "keywords": ["3d print", "3d print shop", "small batch", "mollie"],
+      "keywords": ["3d print", "3d print shop", "3d print products", "accessories", "organizers"],
       "minMatches": 2,
       "sections": {
         "title": { "keywords": ["3d print shop"], "minMatches": 1 },
         "h1": { "keywords": ["3d print"], "minMatches": 1 },
-        "intro": { "keywords": ["mollie"], "minMatches": 1 }
+        "intro": { "keywords": ["3d print products", "accessories"], "minMatches": 1 }
       }
     },
     {

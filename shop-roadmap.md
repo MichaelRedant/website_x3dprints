@@ -1,205 +1,226 @@
 # SEO-First Shop Roadmap
 
-Date: 2026-02-16  
-Scope: Incremental commerce rollout on the existing Next.js website with zero SEO regression tolerance.
+Date: 2026-04-20  
+Scope: Huidige quote-first shopstrategie voor de bestaande Next.js website, zonder SEO-regressie en zonder onnodige checkoutcomplexiteit.
 
 ## Baseline Audit & Feasibility Verdict
 
-Current-state audit (repository + scripts):
-- The website already has a large indexed footprint: `out/sitemap.xml` contains 1038 URLs.
-- Existing SEO controls are mature and automated (`npm run check:seo:sitemap` and `npm run check:seo:robots` pass).
-- Current shop routes already exist under `/shop` and `/en/shop`, with `SHOP_INDEXABLE` gating and noindex on cart/checkout.
-- The current commerce backend is a separate PHP BFF with MySQL + Mollie.
-- Repository is currently single-app (no `apps/web`, no `apps/commerce`, no `docker/` directory).
-- `npm run build` currently fails in baseline due static-export constraints on `/shop/[slug]`; this must be resolved before any migration starts.
+Current-state audit:
+- De website heeft al een sterk organisch fundament met een grote bestaande indexatie.
+- De shop bestaat al onder `/shop/` en `/en/shop/` als additieve laag bovenop de bestaande contentsite.
+- De huidige shop werkt via productpagina's en offerte-/aanvraagflows, niet via een volautomatische checkout.
+- De private backend gebruikt MySQL voor productdata, stock, zichtbaarheid en koopmodus.
+- De huidige shop past operationeel beter bij een kleine, gecontroleerde catalogus dan bij een brede direct-checkoutstrategie.
+- De huidige bouwstenen laten toe om productroutes, sitemap en structured data stabiel te houden zonder een payment provider te forceren.
 
 Feasibility verdict:
-- Feasible: Yes, with a staged, SEO-first migration.
-- Risk level: Medium, mostly due to build/runtime mode alignment and crawl/indexation guardrails.
-- Critical prerequisite: Stabilize build/export behavior before introducing Vendure.
+- Feasible: Ja.
+- Aanbevolen model: quote-first shop, directe betaling uitgesteld.
+- Risiconiveau: Low to medium, vooral op SEO-consistentie, copyduidelijkheid en frontend/backend-sync.
+- Kritieke voorwaarde: frontendcopy, live stockstatus en shopdata moeten op elk moment dezelfde werkelijkheid tonen.
 
 ---
 
 ## 1. Vision & Principles
 
-The shop is an extension of the existing site, not a replacement.
-- The current website remains the canonical acquisition engine.
-- Blog, materials, service, location, and segment pages remain primary discovery channels.
-- Commerce is introduced as an additive conversion layer for qualified visitors.
+De shop is een uitbreiding van de bestaande site, geen vervanging.
+- De huidige website blijft de hoofdbron voor organische instroom.
+- Blog, materialen, diensten, locaties, segmenten en cases blijven de sterkste acquisitielaag.
+- De shop moet die instroom omzetten in concrete aanvragen, niet de rest van de site verdringen.
 
-SEO-first commerce principles:
-- Zero URL changes for existing indexed pages.
-- Additive routing only for new shop functionality.
-- No removal, rename, or restructuring of existing content hubs.
-- Canonical ownership remains in the current Next.js web app.
-- Commerce data must support, not override, existing informational intent.
+SEO-first commerce principes:
+- Zero URL changes voor alle bestaande indexeerbare pagina's.
+- Additive routing only voor shopfunctionaliteit.
+- Blog en content blijven de primaire acquisitiekanalen.
+- Productpagina's mogen commercieel zijn, maar moeten inhoudelijk duidelijk en geloofwaardig blijven.
+- De shop werkt in fase 1 quote-first: eerst aanvraag, dan bevestiging en afhandeling.
 
-What must never be done (SEO anti-patterns):
-- Never mass-redirect existing informational pages to shop pages.
-- Never change canonical URLs of already indexed pages to new shop URLs.
-- Never move blog content into product pages.
-- Never index cart, checkout, account, search-parameter, or faceted parameter pages.
-- Never allow Vendure admin/api endpoints to be crawlable.
-- Never generate near-duplicate product pages per filter/sort/query state.
+Wat nooit mag gebeuren:
+- Bestaande content-URL's herschrijven, samenvoegen of redirecten naar de shop.
+- Cart- of checkoutlogica prominent maken terwijl de echte flow nog via aanvraag loopt.
+- Canonicals van bestaande sterke contentpagina's naar shop-URL's laten wijzen.
+- Productpagina's vullen met generieke of bijna identieke templatecopy.
+- Prijs-, stock- of leverbeloftes tonen die operationeel niet hard gemaakt kunnen worden.
+- Indexeerbare filter-, sorteer- of querypagina's aanmaken zonder unieke inhoud.
 
 ---
 
 ## 2. Non-Negotiable SEO Constraints
 
 - URL stability:
-  - All existing paths remain byte-for-byte stable.
-  - Existing trailing slash behavior remains unchanged.
+  - Alle bestaande paden blijven exact stabiel.
+  - Nieuwe shop-URL's komen alleen onder het bestaande `/shop/` namespace.
 - Canonical integrity:
-  - Exactly one canonical per indexable URL.
-  - Existing canonical map remains unchanged for legacy pages.
+  - Exact een canonical per indexeerbare URL.
+  - Bestaande canonicals buiten de shop blijven onaangeroerd.
 - Internal link preservation:
-  - Existing internal links between blog/materials/services/segments remain intact.
-  - No automated replacement of current links with shop links.
+  - Huidige interne links tussen blog, materials, services, segments, cases en locatiepagina's blijven intact.
+  - Shoplinks worden additief toegevoegd, niet in de plaats van bestaande sterke links.
 - Crawl budget protection:
-  - Noindex + robots disallow for cart, checkout, account, search/filter params.
-  - Avoid infinite crawl surfaces from parameterized navigation.
+  - Utility-routes en toekomstige checkoutroutes blijven non-indexable.
+  - Geen indexeerbare querystates, filters of sorteer-URL's.
 - Duplicate content prevention:
-  - One indexable product URL per product slug and locale.
-  - Filter/sort states are non-indexable and canonicalized away.
+  - Een indexeerbare product-URL per locale en per productslug.
+  - Geen dunne duplicaten per variant, filter of use case.
 - Filter/indexing strategy:
-  - Facets remain user UX features, not indexable pages, unless explicitly promoted with unique content.
+  - Filters zijn UX-functionaliteit, geen SEO-landingspagina's.
+  - Een categoriepagina mag pas indexeerbaar worden als die unieke inhoud en meerdere relevante producten heeft.
 - Product vs blog intent separation:
-  - Blog answers informational intent.
-  - Product pages answer transactional intent.
-  - No intent cannibalization by cloning blog copy into product descriptions.
+  - Blog en cases bedienen informatieve en probleemgerichte intent.
+  - Productpagina's bedienen aanvraag- en aankoopintentie.
+  - Geen intentkannibalisatie door blogcopy letterlijk in productslugs te kopieren.
 
 ---
 
 ## 3. High-Level Architecture
 
-Runtime architecture:
-- `apps/web`: Existing Next.js frontend remains the only public crawl surface.
-- `apps/commerce`: Vendure headless backend, private API surface for commerce operations.
-- `docker/`: Local MySQL and optional admin tooling (for development only).
-- Mollie: payment redirect + webhook handled by Vendure payment flow.
+Runtime architecture in de huidige fase:
+- `Next.js` blijft de enige publieke crawlbare frontendlaag.
+- Een private product- en CRM-backend levert live catalogusdata, voorraad, zichtbaarheid en aankoopmodus.
+- `MySQL` bewaart productrecords, stock, visibility flags en operationele shopdata.
+- De bestaande offerte-/contactflow blijft de primaire conversielaag voor de shop.
 
-Why Vendure is isolated and not publicly crawled:
-- Vendure endpoints are operational APIs, not SEO landing pages.
-- Crawling API/admin endpoints wastes crawl budget and creates noise.
-- Isolate via subdomain/network controls + robots/header hardening + no public linking.
+Waarom de backend niet publiek crawlbaar mag zijn:
+- Backend- en CRM-endpoints zijn operationele APIs, geen landingspagina's.
+- Crawlen van admin- of API-endpoints voegt ruis toe en verspilt crawlbudget.
+- Shop-SEO moet volledig geconcentreerd blijven op de Next.js frontend-URL's.
 
-How MySQL is used:
-- Single source of truth for products, variants, inventory, orders, shipping, and payment states.
-- Separate commerce schema from content/marketing data to reduce coupling.
+Hoe MySQL wordt gebruikt:
+- Een bron van waarheid voor:
+  - slug
+  - prijs
+  - availability
+  - stockstatus
+  - purchase mode
+  - zichtbaarheid
+- Geen directe afhankelijkheid van een payment provider voor fase 1.
 
-How Mollie integrates:
-- Checkout starts in `apps/web` via commerce action.
-- Vendure creates payment and returns Mollie redirect URL.
-- User pays at Mollie.
-- Mollie webhook updates payment/order state in Vendure.
-- Web app shows confirmation from trusted order state.
+Hoe de quote-first shopflow werkt:
+- Gebruiker bezoekt `/shop/` of een productpagina.
+- Gebruiker kiest `Vraag offerte aan` of opent de shopmodal.
+- Next.js stuurt de aanvraag naar de bestaande contact-/CRM-flow.
+- De opvolging gebeurt manueel: bevestiging, verzending of afhaling, en eventuele betalingsafspraak.
+- De bedankpagina bevestigt de aanvraag, niet een online betaling.
+
+Mollie in deze architectuur:
+- Mollie is bewust geen onderdeel van fase 1.
+- Er is momenteel geen nood aan een redirect-checkout of webhookketen voor de huidige catalogus.
+- Als directe betaling later zinvol wordt, blijft dat een optionele, runtime-only uitbreiding en nooit een build-time afhankelijkheid.
 
 Logical flow:
-- User -> Next.js (`apps/web`) -> Vendure (`apps/commerce`) -> Mollie -> Vendure webhook -> Next.js confirmation UI
+- User -> Next.js shop/home/product page -> quote modal or contact flow -> CRM/backend -> manual follow-up -> thank-you / confirmation
 
 Separation of concerns:
 - Next.js web:
-  - SEO, metadata, canonical policy, internal linking, content marketing, UX shell.
-- Vendure:
-  - Catalog, cart, checkout, pricing, stock logic, order state machine, Mollie integration.
-- MySQL:
-  - Durable transactional storage.
-
-Local dev vs production (safe differences):
-- Local:
-  - `docker` MySQL, seeded test catalog, Mollie test mode.
-- Production:
-  - Managed MySQL, strict env separation, live Mollie key only in commerce runtime.
-- Shared rule:
-  - No secret commerce credentials in frontend public env.
+  - SEO
+  - metadata
+  - canonical policy
+  - internal linking
+  - shop-UI
+  - productlandingspagina's
+- Private backend + MySQL:
+  - live productdata
+  - voorraad
+  - koopmodus
+  - product visibility
+  - administratieve opvolging
+- Operations:
+  - aanvraagopvolging
+  - verzending of afhaling
+  - latere betalingsafhandeling indien nodig
 
 ---
 
 ## 4. Shop Scope Definition (MVP First)
 
-Phase 1 scope (minimal footprint):
-- Product types:
-  - Standard fixed-price products.
-  - Made-to-order products with explicit lead time ranges.
-- Product detail:
-  - Core gallery, summary, specs, availability, lead time.
-- Variants:
-  - Only where mandatory (for example one material or one size axis).
-- Shipping:
-  - Simple flat-rate shipping + pickup option.
-- Checkout:
-  - Basic cart, checkout, Mollie redirect, success/failure handling.
+Phase 1 scope:
+- Kleine catalogus met duidelijke, vaste productslugs.
+- Standaard stockproducten met vaste prijs.
+- Made-to-order producten met duidelijke lead time.
+- Geen file upload.
+- Geen instant pricing.
+- Alleen beperkte varianten als ze echt nodig zijn.
+- Simpele verzend- of afhaalregels.
+- Offerte-/aanvraagflow als standaard bestelwijze.
+- Geen directe online betaling.
 
-Explicitly out of scope in Phase 1 (and why):
-- File upload:
-  - Deferred to avoid security/storage complexity and UX debt at launch.
-- Instant pricing calculator:
-  - Deferred because geometry-based pricing is high-risk and easy to misprice.
-- Complex variant matrix:
-  - Deferred to avoid index bloat and inventory complexity.
-- B2B workflows (quotes, net terms, company approval chains):
-  - Deferred until baseline D2C funnel and operations are stable.
-- Advanced promotions and bundling engine:
-  - Deferred to keep MVP predictable and testable.
+Expliciet buiten scope in fase 1:
+- Directe checkout:
+  - niet nodig voor de huidige shopbreedte en verhoogt de operationele complexiteit.
+- Mollie:
+  - uitgesteld tot er genoeg vaste, voorspelbare stockproducten zijn.
+- Upload-to-print:
+  - te veel opslag-, support- en prijscomplexiteit voor de huidige fase.
+- Geautomatiseerde prijsberekening:
+  - risicovol voor marges en foutgevoelig voor maatwerk.
+- Complexe variantmatrix:
+  - vergroot kans op dunne of verwarrende productstructuren.
+- Geavanceerde B2B-orderlogica:
+  - pas later zinvol zodra de productflow en aanvraagwerking stabiel zijn.
 
 ---
 
 ## 5. SEO-Safe URL Strategy
 
-Allowed shop routes (indexable where relevant):
+Allowed indexable shop routes:
 - `/shop/`
 - `/shop/[slug]/`
 - `/en/shop/`
 - `/en/shop/[slug]/`
 
-Allowed non-indexable transactional routes:
-- `/shop/cart/`
-- `/shop/checkout/`
-- `/en/shop/cart/`
-- `/en/shop/checkout/`
+Allowed non-indexable utility routes:
+- toekomstige cart- of checkoutroutes, enkel indien later functioneel nodig
+- interne modal- of querystates
+- eventuele filter- of sorteerstates
 
 Forbidden route patterns:
-- New top-level commerce namespaces that duplicate intent (for example `/products/`, `/store/`, `/catalog/`) during MVP.
-- Indexable query-state URLs such as `?sort=`, `?filter=`, `?page=` unless explicitly approved as landing pages.
-- Any route rename of existing content URLs.
+- nieuwe top-level shopnamespaces zoals `/store/`, `/products/` of `/catalog/`
+- indexeerbare query-URL's zoals `?filter=`, `?sort=` of `?page=`
+- elke wijziging aan bestaande content-URL's buiten `/shop/`
 
-Coexistence with current content architecture:
-- Blog/materials/pricing/segments/services remain unchanged.
-- Product pages target purchase intent only.
-- Existing educational pages keep priority in navigation and linking hierarchy.
+Coexistence met de rest van de site:
+- Blog, pricing, services, segments, organizers, materials, portfolio en cases behouden hun eigen functie.
+- Productpagina's moeten transactiewaarde toevoegen zonder de contentsite te overschaduwen.
+- De shop blijft een conversion layer binnen de bredere site-architectuur.
 
 Internal linking policy:
-- Recommended: blog -> relevant shop PDP/listing when transactional intent is clear.
-- Do not force global shop backlinks from every existing page.
-- Shop pages may include selective context links, but avoid aggressive template-wide reciprocal linking that distorts intent.
+- Blog, gidsen, cases en services linken naar de shop wanneer de intent logisch koopgericht wordt.
+- Niet elke pagina hoeft naar de shop te linken.
+- Shoproutes mogen contextlinks teruggeven naar relevante gidsen of cases, maar niet geforceerd of op elke template-identieke manier.
 
 ---
 
 ## 6. Structured Data & Indexation Strategy
 
 Product schema policy:
-- Add `Product` schema only on indexable product detail pages.
-- Add `ItemList` on `/shop/` listing pages.
-- Keep cart/checkout schema-free (non-indexable transactional pages).
+- `Product` schema alleen op indexeerbare productdetailpagina's.
+- `ItemList` op de shop-home en later op categoriepagina's.
+- `FAQPage` alleen waar de FAQ zichtbaar op de pagina staat.
 
-Offers, availability, and price:
-- `offers.price`, `priceCurrency`, and `availability` must match the commerce source of truth.
-- If price or availability cannot be trusted at render time, do not emit stale offer data.
-- Use explicit in-stock/preorder/out-of-stock signals aligned with UI.
+Price, availability en offers:
+- Price en availability in schema moeten overeenkomen met zichtbare UI en live productdata.
+- Bij twijfel geen overdreven of onbetrouwbare offer claims uitsturen.
+- `InStock`, `PreOrder` en `OutOfStock` moeten aansluiten op de echte bestelrealiteit.
 
-When schema is added vs skipped:
-- Add schema when the page has stable, user-visible data.
-- Skip schema on placeholder/prelaunch products, test SKUs, and pages behind temporary toggles.
+Wanneer schema wel of niet wordt toegevoegd:
+- Wel:
+  - live productslugs
+  - shop-home
+  - latere categoriepagina's met echte inhoud
+- Niet:
+  - placeholderproducten
+  - utilityroutes
+  - verborgen of tijdelijke test-SKU's
 
-Conflict prevention with existing schemas:
-- Keep `Article` schema only on blog pages.
-- Keep FAQ/HowTo schemas tied to the pages that visibly contain that content.
-- Do not combine unrelated `Article` and `Product` entities on a single URL unless the page truly serves both intents.
+Conflict prevention met bestaande schema's:
+- `Article` alleen op blogpagina's.
+- `FAQPage` en `HowTo` alleen waar de inhoud zichtbaar is.
+- Geen ongecontroleerde mix van product- en artikelintentie op een URL.
 
 Indexation control:
-- Maintain noindex on cart/checkout and any utility pages.
-- Ensure sitemap only includes intended indexable shop URLs.
-- Keep canonical self-referential for each final product URL.
+- Sitemap bevat alleen goedgekeurde indexeerbare shoproutes.
+- Utility- of toekomstige checkoutroutes blijven buiten sitemap en buiten indexatie.
+- Elke productslug houdt een self-referential canonical.
 
 ---
 
@@ -207,111 +228,123 @@ Indexation control:
 
 ### Phase 0 - Pre-flight & Safety Checks
 
-Preconditions before any shop migration merge:
-- Freeze SEO baseline:
-  - Export full route inventory, canonical map, robots policy, sitemap snapshot, and internal linking baseline.
-- Resolve baseline build safety:
-  - Fix current `npm run build` static-export failure on `/shop/[slug]`.
-- Introduce migration safety rails:
-  - Feature flags for catalog visibility and indexability.
-  - Contract tests for canonical tags, robots directives, and sitemap inclusion.
-- Define monorepo transition plan:
-  - Introduce `apps/web`, `apps/commerce`, and `docker/` without route behavior change.
-- Add observability prerequisites:
-  - Track crawl/index errors, 404/5xx, structured-data errors, and checkout failures.
+Preconditions:
+- Bevries de huidige SEO-baseline:
+  - route-inventaris
+  - canonical map
+  - robots policy
+  - sitemap snapshot
+  - interne links
+- Houd build en shoprouting stabiel:
+  - geen regressies op `npm run build`
+  - geen regressies op shop sitemap / canonical / metadata
+- Zorg dat frontendcopy en live backenddata niet uit elkaar lopen.
+- Maak een duidelijke beslisregel voor welk product echt live mag gaan.
 
 Technical deliverables:
-- Approved architecture decision record.
-- Baseline SEO snapshot artifacts committed to repository.
-- CI gates that fail on route/canonical/sitemap regressions.
+- shop-growth-roadmap als uitvoeringsdocument
+- product launch checklist
+- regressiechecks voor sitemap, robots en shop-SEO
 
-### Phase 1 - Minimal Shop MVP
+### Phase 1 - Minimal Quote-First Shop MVP
 
 Features:
-- Vendure catalog with minimal product model.
-- Shop listing and product detail pages under existing `/shop` namespace.
-- Cart and checkout with Mollie redirect and webhook confirmation.
-- No file upload, no instant quote engine.
+- indexeerbare shop-home onder `/shop/`
+- indexeerbare productdetailpagina's onder `/shop/[slug]/`
+- shop-specifieke offerte-/aanvraagmodal
+- kleine live catalogus met vaste prijzen of made-to-order pricing context
+- duidelijke verzend- en afhaalcopy
 
 SEO guarantees:
-- Existing non-shop routes untouched.
-- Product schema only on live, indexable PDPs.
-- Cart/checkout always non-indexable.
-- Sitemap inclusion only for approved live product slugs.
+- bestaande niet-shoproutes blijven onaangeraakt
+- productschema alleen op live, zichtbare productpagina's
+- utilityroutes blijven non-indexable
+- shop-home en productslugs blijven inhoudelijk uniek
 
 Technical deliverables:
-- `apps/commerce` Vendure service with MySQL.
-- `apps/web` commerce adapters and shop pages wired to Vendure read model.
-- Feature-flagged release toggle for indexability.
+- stabiele productdataflow tussen frontend en backend
+- offerteflow die shopcontext meeneemt
+- duidelijke thank-you / confirmation flow
 
 ### Phase 2 - Variants & Logistics
 
 Features:
-- Controlled variant support (for example material/color where justified).
-- Lead-time logic by variant.
-- Stock-managed vs made-to-order product mode.
-- Basic shipping zone/rule refinements.
+- beperkte varianten waar functioneel nodig
+- duidelijkere lead times
+- stock versus made-to-order logica
+- meer consistente verzendcopy per producttype
 
 SEO guarantees:
-- Variant states do not create new indexable URLs by default.
-- Canonical remains at parent PDP unless a variant URL has unique value and approved SEO intent.
+- geen nieuwe indexeerbare URL's per variant tenzij daar expliciet SEO-rechtvaardiging voor is
+- parent slug blijft canonical
 
 Technical deliverables:
-- Extended product model in Vendure.
-- Inventory + lead-time service rules.
-- Updated schema mapping for availability signals.
+- uitgebreidere productdata
+- betere availability mapping
+- consistente backend/frontend productcopy per producttype
 
 ### Phase 3 - Conversion Optimization
 
 Features:
-- Product page UX improvements (trust blocks, clearer CTAs, friction reduction).
-- Lightweight recommendation blocks based on intent.
-- Controlled cross-linking from high-intent content to shop pages.
+- sterkere product-UX
+- betere CTA-copy
+- meer use-case links van content naar product
+- heldere trust- en leveringsblokken
 
 SEO guarantees:
-- No auto-generated thin pages.
-- No broad template-level link flooding.
-- Controlled experimentation with rollback-ready flags.
+- geen dunne landingspagina's
+- geen geforceerde interne linkspam
+- geen checkout-copy die niet matcht met de echte flow
 
 Technical deliverables:
-- Event tracking for funnel steps.
-- A/B testing framework constrained to UX components, not URL architecture.
-- Reporting dashboard for SEO + conversion joint health.
+- verbeterde producttemplate
+- related links en productresources
+- meetbare shopofferteflow
 
-### Phase 4 - Advanced Commerce (Future)
+### Phase 4 - Optional Direct Checkout
 
 Deferred capabilities:
-- Upload-to-print workflows.
-- Automated geometry/material pricing.
-- B2B account logic, quote approvals, and contract pricing.
+- cart- en checkoutautomatisatie
+- directe online betaling
+- Mollie redirect + webhook
+- order status automation
+- refund en payment state handling
 
-Why deferred:
-- High complexity and operational risk.
-- Higher probability of SEO side effects if rushed.
-- Requires proven baseline checkout stability and data governance first.
+Mollie pas toevoegen wanneer alle onderstaande voorwaarden tegelijk gehaald zijn:
+- er zijn minstens 5 tot 10 vaste stockproducten met voorspelbare prijzen
+- verzending en afhaling zijn voldoende gestandaardiseerd
+- productpagina's vragen nog zelden manuele prijs- of projectvalidatie
+- de offerteflow wordt aantoonbaar een rem op conversie
+- refunds, annulaties en supportafhandeling zijn operationeel uitgewerkt
+- webhook monitoring en order-state opvolging zijn voorzien
+
+Waarom dit uitgesteld blijft:
+- directe betaling voegt geen SEO-voordeel toe op zichzelf
+- voor een kleine of hybride catalogus verhoogt het vooral beheerlast
+- te vroege checkout maakt de shop complexer zonder bewezen rendement
 
 ---
 
 ## 8. Local Development & Build Safety
 
-How `npm run dev` should work:
-- Start `apps/web` (Next.js) and `apps/commerce` (Vendure) concurrently.
-- MySQL runs via `docker` compose.
-- If commerce is unavailable, web dev mode should degrade safely with fixture catalog data for non-transactional rendering.
+How `npm run dev` moet werken:
+- Next.js draait los van live backendafhankelijkheden.
+- Shoproutes kunnen veilig renderen met lokale of fallbackdata.
+- De offerteflow mag lokaal getest worden zonder een payment provider.
 
-How `npm run build` stays safe:
-- Build must not depend on live Vendure or Mollie connectivity.
-- Build uses deterministic catalog inputs (fixtures, snapshots, or pre-fetched artifacts).
-- Any checkout/payment call remains runtime-only.
+How `npm run build` veilig blijft:
+- Build hangt niet af van live product- of paymentconnecties.
+- Shopmetadata, sitemap en productroutes moeten reproduceerbaar zijn.
+- Geen enkele betalings- of checkoutcall mag tijdens build uitgevoerd worden.
 
 Environment variable discipline:
-- Public frontend env only for non-secret values.
-- Vendure secrets (`MOLLIE_API_KEY`, DB credentials, webhook secrets) only in `apps/commerce` runtime env.
-- Separate local/staging/production env files with strict naming and validation.
+- Frontend public env alleen voor niet-geheime waarden.
+- Backend- en CRM-credentials alleen server-side.
+- Mollie-credentials zijn geen vereiste voor fase 1 en horen dus niet tot de kritieke buildvereisten.
 
 Payment/build safety rule:
-- No payment API call is executed during static generation or CI build.
-- Payment integration is exercised only in runtime/integration test paths.
+- In fase 1 bestaat er geen nood aan payment calls in build of runtime.
+- Als Mollie later wordt toegevoegd, blijft dat volledig runtime-only en strikt gescheiden van static generation.
 
 ---
 
@@ -319,45 +352,44 @@ Payment/build safety rule:
 
 | Risk | Likelihood | Impact | Mitigation Strategy |
 | --- | --- | --- | --- |
-| Existing URL changes during monorepo move | Medium | Critical | Route snapshot tests + hard rule: no path changes, additive only |
-| Canonical drift on legacy pages | Medium | Critical | Canonical regression tests in CI; block merge on diffs |
-| Index bloat from filter/query URLs | High | High | noindex + robots disallow + canonical-to-base + no sitemap inclusion |
-| Duplicate product pages across locale/variants | Medium | High | One canonical per slug/locale; controlled variant URL policy |
-| Vendure endpoints crawled/indexed | Medium | Medium | Isolated subdomain/network, no public links, robots and auth hardening |
-| Build instability from live commerce dependency | High | High | Build-time fixture/snapshot strategy; no live API required for build |
-| Payment state desync (Mollie redirect/webhook/order state) | Medium | High | Idempotent webhook handling + retry + order-state reconciliation job |
-| Data mismatch between schema and UI price/availability | Medium | High | Schema generated from the same read model as UI; freshness checks |
-| Internal linking over-optimization harming intent focus | Medium | Medium | Editorial link governance with intent-based linking rules |
-| Operational load spikes during rollout | Medium | Medium | Feature flags, phased release, canary monitoring, rollback playbook |
+| URL- of canonical drift op bestaande pagina's | Medium | Critical | route- en canonical-regressiechecks in CI |
+| Frontend/backend mismatch in stock of availability | Medium | High | een bron van waarheid, handmatige verificatie bij live updates |
+| Dikke shopcopy die niet klopt met echte offerteflow | Medium | High | quote-first copy governance, geen checkout-copy zonder checkout |
+| Index bloat via filters of utilityroutes | Medium | High | geen indexeerbare querystates, geen sitemap-opname |
+| Te vroege checkout/Mollie-introductie | Medium | High | pas toestaan na vaste fase-4 criteria |
+| Dunne categoriepagina's met te weinig producten | High | Medium | categorieen pas vanaf meerdere sterke productslugs |
+| Backend/API-endpoints publiek crawlbaar | Low | Medium | geen publieke linking, noindex/no crawl op operationele endpoints |
+| Productdata wel live in backend maar niet visueel klaar op frontend | Medium | Medium | live backendwijzigingen altijd toetsen aan assets en frontendcopy |
+| Handmatige opvolging wordt operationeel traag | Medium | Medium | duidelijke SLA, kleine catalogus, pas automatiseren wanneer echt nodig |
 
 ---
 
 ## 10. Success Metrics
 
 SEO safety KPIs:
-- 0 net loss in organic sessions on existing non-shop landing pages (rolling 8 weeks).
-- 0 unexpected changes in indexed URL count for non-shop namespaces.
-- 0 critical canonical/coverage errors introduced in Search Console post-release.
-- Shop indexation confined to approved `/shop` listing + PDP URLs only.
+- geen rankingverlies op bestaande niet-shoppagina's
+- geen onverwachte indexgroei buiten goedgekeurde shoproutes
+- shopindexatie beperkt tot `/shop/`, `/en/shop/` en goedgekeurde productslugs
+- geen regressies in structured data, canonicals of sitemap
 
 Conversion KPIs:
-- Product page to cart rate.
-- Cart to checkout start rate.
-- Checkout completion rate.
-- Revenue per organic shop session.
+- doorklik van `/shop/` naar productpagina's
+- offerteaanvragen vanaf productpagina's
+- offerteaanvragen vanaf shopmodal
+- percentage shopaanvragen dat effectief wordt opgevolgd of besteld
 
 Engagement KPIs:
-- Blog-to-shop assisted session rate.
-- Product detail engagement depth (specs, shipping info, CTA interactions).
-- Return visitor conversion uplift for commerce pages.
+- assisted conversions van blog/cases/services naar shop
+- interactie met FAQ, specs en resource links op productpagina's
+- stijging van productgerichte zoekimpressies
 
 Technical KPIs:
-- `npm run build` pass rate in CI: 100% on main.
-- Commerce API availability target (for example >= 99.9%).
-- Webhook processing success rate and retry resolution SLA.
-- Structured data validity rate on shop PDP templates.
+- `npm run build` blijft groen
+- shop-SEO checks blijven groen
+- frontend/backend productdata blijven consistent
+- geen broken image- of broken link-regressies op live shopproducten
 
 ---
 
 Execution rule:
-- Do not start Phase 1 until Phase 0 gates pass and baseline SEO regression checks are green.
+- Geen directe checkout of Mollie toevoegen voordat de quote-first shop stabiel draait, operationeel beheersbaar blijft en de Phase 4 criteria aantoonbaar gehaald zijn.

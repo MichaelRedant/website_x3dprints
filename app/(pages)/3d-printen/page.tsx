@@ -199,6 +199,16 @@ const knowledgeLinks = [
     description: "Overzicht van filamenten, kleuren, eigenschappen en materiaaladvies per toepassing.",
     href: "/materials",
   },
+  {
+    title: "Bambu reusable spool op voorraad",
+    description: "Gebruik je Bambu refills? Bekijk de live productpagina voor actuele voorraad, prijs en shopaanvraag.",
+    href: "/shop/bambu-reusable-spool",
+  },
+  {
+    title: "Selectieve hoornaarval als outdoor product",
+    description: "PETG deksel voor een selectieve hoornaarval, bedoeld voor buitengebruik en kleine aanvragen per stuk of batch.",
+    href: "/shop/selectieve-hoornaarval-deksel",
+  },
 ]
 
 const fileChecklist = [

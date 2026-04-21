@@ -14,6 +14,9 @@ import {
 import { SHOP_BFF_ENABLED } from "@/lib/shop-config"
 
 export type ShopLocale = "nl" | "en"
+type ShopDataOptions = {
+  cacheMode?: RequestCache
+}
 
 const AVAILABILITY_VALUES: Array<NonNullable<ShopProduct["availability"]>> = [
   "InStock",
@@ -52,6 +55,9 @@ function inferCategories(tags: string[]): ShopCategoryKey[] | undefined {
     if (tag.includes("clip")) categories.add("clips")
     if (tag.includes("organizer")) categories.add("organizers")
     if (tag.includes("spool") || tag.includes("refill") || tag.includes("bambu")) categories.add("spools")
+    if (tag.includes("outdoor") || tag.includes("hornet") || tag.includes("hoornaar") || tag.includes("trap")) {
+      categories.add("outdoor")
+    }
   }
   return categories.size > 0 ? Array.from(categories) : undefined
 }
@@ -73,13 +79,14 @@ function mergeShopProduct(localProduct: ShopProduct, remoteProduct: ShopProduct)
   return {
     ...localProduct,
     ...remoteProduct,
-    name: pickLocalizedText(remoteProduct.name, localProduct.name) ?? localProduct.name,
-    summary: pickLocalizedText(remoteProduct.summary, localProduct.summary) ?? localProduct.summary,
+    name: pickLocalizedText(localProduct.name, remoteProduct.name) ?? localProduct.name,
+    summary: pickLocalizedText(localProduct.summary, remoteProduct.summary) ?? localProduct.summary,
     description: pickLocalizedText(localProduct.description, remoteProduct.description),
     image: {
-      url: remoteProduct.image?.url || localProduct.image.url,
-      alt: pickLocalizedText(remoteProduct.image?.alt, localProduct.image.alt) ?? localProduct.image.alt,
+      url: localProduct.image.url || remoteProduct.image?.url,
+      alt: pickLocalizedText(localProduct.image.alt, remoteProduct.image?.alt) ?? localProduct.image.alt,
     },
+    gallery: localProduct.gallery ?? remoteProduct.gallery,
     ogImage: localProduct.ogImage ?? remoteProduct.ogImage,
     tags: remoteProduct.tags?.length ? remoteProduct.tags : localProduct.tags,
     categories: remoteProduct.categories?.length ? remoteProduct.categories : localProduct.categories,
@@ -163,10 +170,13 @@ function mapBffProduct(product: BffProduct): ShopProduct {
   }
 }
 
-export async function getShopProducts(locale: ShopLocale): Promise<ShopProduct[]> {
+export async function getShopProducts(
+  locale: ShopLocale,
+  options: ShopDataOptions = {},
+): Promise<ShopProduct[]> {
   if (!SHOP_BFF_ENABLED) return getLocalLiveProducts()
   try {
-    const { products } = await fetchShopProducts(locale)
+    const { products } = await fetchShopProducts(locale, { cacheMode: options.cacheMode })
     if (!Array.isArray(products)) return getLocalLiveProducts()
     return mergeWithLocalProducts(products.map((product) => mapBffProduct(product)))
   } catch (error) {
@@ -178,24 +188,31 @@ export async function getShopProducts(locale: ShopLocale): Promise<ShopProduct[]
 export async function getShopProductBySlug(
   slug: string,
   locale: ShopLocale,
+  options: ShopDataOptions = {},
 ): Promise<ShopProduct | undefined> {
   const localProduct = getLocalLiveProducts().find((product) => product.slug === slug)
   if (!SHOP_BFF_ENABLED) return localProduct
   try {
-    const { product } = await fetchShopProduct(slug, locale)
+    const { product } = await fetchShopProduct(slug, locale, { cacheMode: options.cacheMode })
     const mapped = product ? mapBffProduct(product) : undefined
     if (!mapped?.isLive) return localProduct
     return localProduct ? mergeShopProduct(localProduct, mapped) : mapped
   } catch (error) {
+    if (localProduct && error instanceof Error && error.message.includes("404")) {
+      return localProduct
+    }
     console.error(`[shop-data] Could not load product '${slug}' from BFF.`, error)
     return localProduct
   }
 }
 
-export async function getShopProductSlugs(locale: ShopLocale): Promise<string[]> {
+export async function getShopProductSlugs(
+  locale: ShopLocale,
+  options: ShopDataOptions = {},
+): Promise<string[]> {
   if (!SHOP_BFF_ENABLED) return SHOP_PRODUCT_SLUGS
   try {
-    const { products } = await fetchShopProducts(locale)
+    const { products } = await fetchShopProducts(locale, { cacheMode: options.cacheMode })
     if (!Array.isArray(products)) return SHOP_PRODUCT_SLUGS
     const remoteSlugs = products
       .filter((product) => product.isLive !== false)

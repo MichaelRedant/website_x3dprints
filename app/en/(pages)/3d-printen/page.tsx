@@ -200,6 +200,16 @@ const knowledgeLinks = [
     description: "All filaments, colours and FAQs including PC, PETG and PLA Wood cases.",
     href: "/en/materials",
   },
+  {
+    title: "Bambu reusable spool in stock",
+    description: "Using Bambu refills? Check the live product page for current stock, price, and shop quote flow.",
+    href: "/en/shop/bambu-reusable-spool",
+  },
+  {
+    title: "Selective hornet trap lid for outdoor use",
+    description: "PETG lid for a selective hornet trap, suited to outdoor use and small request-based quantities.",
+    href: "/en/shop/selectieve-hoornaarval-deksel",
+  },
 ]
 
 const fileChecklist = [

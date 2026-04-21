@@ -318,6 +318,13 @@ export default function FilamentFridayPlaEnPage() {
                   </tbody>
                 </table>
               </div>
+              <p className="mt-4 text-sm text-slate-600">
+                Running Bambu refills and want to keep multiple PLA colours ready faster? An extra{" "}
+                <Link href="/en/shop/bambu-reusable-spool" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  Bambu reusable spool
+                </Link>{" "}
+                is useful as a spare or refill base in that workflow.
+              </p>
             </GlassCard>
           </Reveal>
         </div>

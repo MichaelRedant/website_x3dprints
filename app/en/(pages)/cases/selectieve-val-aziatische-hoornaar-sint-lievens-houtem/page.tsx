@@ -73,6 +73,11 @@ const externalLinks = [
 ]
 
 const internalLinks = [
+  {
+    label: "Shop: order a selective hornet trap lid",
+    href: "/en/shop/selectieve-hoornaarval-deksel",
+    desc: "Request this 3D printed hornet trap lid as a standalone shop product, per piece or in a small batch.",
+  },
   { label: "3D printing pillar", href: "/en/3d-printen", desc: "Workflow, quality guardrails and outdoor planning." },
   { label: "Materials: PETG", href: "/en/materials/petg", desc: "Why PETG/PC is right for outdoor parts." },
   { label: "Pricing & calculator", href: "/en/pricing", desc: "Realistic cost per batch and lead time." },
@@ -478,6 +483,12 @@ export default function CaseStudySelectiveTrapEnPage() {
                 <ShimmerButton href="/en/contact?topic=case-selective-trap&material=PETG%20Matte">
                   Start a similar project
                 </ShimmerButton>
+                <Link
+                  href="/en/shop/selectieve-hoornaarval-deksel"
+                  className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-5 py-3 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                >
+                  View the lid in the shop
+                </Link>
                 <Link
                   href="/en/segments"
                   className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-5 py-3 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"

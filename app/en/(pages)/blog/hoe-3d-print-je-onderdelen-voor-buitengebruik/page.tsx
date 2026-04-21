@@ -231,6 +231,20 @@ export default function OutdoorPrintingGuideEnPage() {
                 </Link>{" "}
                 for studio settings and drying tips.
               </p>
+              <p className="mt-4 text-sm text-slate-600">
+                A concrete example is our{" "}
+                <Link href="/en/shop/selectieve-hoornaarval-deksel" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  selective hornet trap lid for outdoor use
+                </Link>
+                . It is printed in PETG for outdoor use and ties back to the{" "}
+                <Link
+                  href="/en/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem"
+                  className="font-semibold text-indigo-600 hover:text-indigo-500"
+                >
+                  full Sint-Lievens-Houtem case
+                </Link>
+                .
+              </p>
               <p className="mt-4 text-xs text-slate-500">
                 Extra reading:{" "}
                 <Link

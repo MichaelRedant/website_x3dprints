@@ -300,6 +300,44 @@ const TOP_SLUG_DECISION_GUIDE: Record<string, { nl: DecisionGuide; en: DecisionG
     },
   },
 }
+
+type MaterialProductSpotlight = {
+  eyebrow: string
+  title: string
+  description: string
+  primaryHref: string
+  primaryCta: string
+  secondaryHref: string
+  secondaryCta: string
+}
+
+const MATERIAL_PRODUCT_SPOTLIGHT: Partial<
+  Record<string, { nl: MaterialProductSpotlight; en: MaterialProductSpotlight }>
+> = {
+  petg: {
+    nl: {
+      eyebrow: "PETG in de praktijk",
+      title: "Selectieve hoornaarval als echt outdoor onderdeel",
+      description:
+        "Wil je zien hoe PETG zich vertaalt naar een concreet product? Dit 3D geprinte deksel voor een selectieve hoornaarval is ontwikkeld voor buitengebruik, kleine batches en lokale acties.",
+      primaryHref: "/shop/selectieve-hoornaarval-deksel",
+      primaryCta: "Bekijk het PETG product",
+      secondaryHref: "/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
+      secondaryCta: "Lees de case",
+    },
+    en: {
+      eyebrow: "PETG in practice",
+      title: "Selective hornet trap as a real outdoor part",
+      description:
+        "Want to see how PETG translates into a concrete product? This 3D printed lid for a selective hornet trap was developed for outdoor use, small batches, and local initiatives.",
+      primaryHref: "/shop/selectieve-hoornaarval-deksel",
+      primaryCta: "View the PETG product",
+      secondaryHref: "/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
+      secondaryCta: "Read the case",
+    },
+  },
+}
+
 const FILAMENT_FRIDAY_LINKS_NL: Partial<
   Record<
     MaterialKey,
@@ -584,6 +622,8 @@ export async function renderMaterialDetail({ slug, locale }: LocalizedMaterialAr
     detail.key === "PC" ? comparison?.otherLabel.PC : detail.key === "PC_FR" ? comparison?.otherLabel.PC_FR : null
   const decisionGuideEntry = TOP_SLUG_DECISION_GUIDE[detail.slug]
   const decisionGuide = decisionGuideEntry ? decisionGuideEntry[isEn ? "en" : "nl"] : null
+  const productSpotlightEntry = MATERIAL_PRODUCT_SPOTLIGHT[detail.slug]
+  const productSpotlight = productSpotlightEntry ? productSpotlightEntry[isEn ? "en" : "nl"] : null
   const decisionContactHref = decisionGuide
     ? localize(
         `/contact?material=${encodeURIComponent(decisionGuide.contactMaterial)}&quote=${encodeURIComponent(
@@ -751,6 +791,34 @@ export async function renderMaterialDetail({ slug, locale }: LocalizedMaterialAr
               </div>
             ) : null}
           </Reveal>
+
+          {productSpotlight ? (
+            <Reveal>
+              <GlassCard className="mt-6 p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-500">
+                  {productSpotlight.eyebrow}
+                </p>
+                <h2 className="mt-3 text-2xl font-semibold text-slate-900">{productSpotlight.title}</h2>
+                <p className="mt-2 text-sm text-slate-600">{productSpotlight.description}</p>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <Link
+                    href={localize(productSpotlight.primaryHref)}
+                    className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
+                  >
+                    {productSpotlight.primaryCta}
+                    <span aria-hidden>-&gt;</span>
+                  </Link>
+                  <Link
+                    href={localize(productSpotlight.secondaryHref)}
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                  >
+                    {productSpotlight.secondaryCta}
+                    <span aria-hidden>-&gt;</span>
+                  </Link>
+                </div>
+              </GlassCard>
+            </Reveal>
+          ) : null}
 
           {comparison && otherSlug ? (
             <Reveal>

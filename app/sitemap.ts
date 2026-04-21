@@ -218,12 +218,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { nl: "/about", en: "/en/about", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/about/page.tsx", "app/en/(pages)/about/page.tsx"] },
     { nl: "/sustainability", en: "/en/sustainability", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/sustainability/page.tsx", "app/en/(pages)/sustainability/page.tsx"] },
     { nl: "/3d-modellen-vinden", en: "/en/3d-modellen-vinden", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/3d-modellen-vinden/page.tsx", "app/en/(pages)/3d-modellen-vinden/page.tsx"] },
+    {
+      nl: "/machine-readable-resources",
+      en: "/en/machine-readable-resources",
+      changeFrequency: "monthly",
+      priority: 0.3,
+      sources: ["app/(pages)/machine-readable-resources/page.tsx", "app/en/(pages)/machine-readable-resources/page.tsx", "lib/machine-readable.ts", "public/llms.txt"],
+    },
     { nl: "/contact", en: "/en/contact", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/contact/page.tsx", "app/en/(pages)/contact/page.tsx"] },
     { nl: "/faq", en: "/en/faq", changeFrequency: "monthly", priority: 0.55, sources: ["app/(pages)/faq/page.tsx", "app/en/(pages)/faq/page.tsx"] },
     { nl: "/locaties", en: "/en/locaties", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/locaties/page.tsx", "app/en/(pages)/locaties/page.tsx"] },
     { nl: "/privacy", en: "/en/privacy", changeFrequency: "yearly", priority: 0.2, sources: ["app/(pages)/privacy/page.tsx", "app/en/(pages)/privacy/page.tsx"] },
     { nl: "/cookies", en: "/en/cookies", changeFrequency: "yearly", priority: 0.2, sources: ["app/(pages)/cookies/page.tsx", "app/en/(pages)/cookies/page.tsx"] },
     { nl: "/algemene-voorwaarden", en: "/en/algemene-voorwaarden", changeFrequency: "yearly", priority: 0.2, sources: ["app/(pages)/algemene-voorwaarden/page.tsx", "app/en/(pages)/algemene-voorwaarden/page.tsx"] },
+    { nl: "/retour-herroepingsrecht", en: "/en/retour-herroepingsrecht", changeFrequency: "yearly", priority: 0.25, sources: ["app/(pages)/retour-herroepingsrecht/page.tsx", "app/en/(pages)/retour-herroepingsrecht/page.tsx", "components/ReturnPolicyPage.tsx"] },
     ...shopRouteConfigs,
   ]
 

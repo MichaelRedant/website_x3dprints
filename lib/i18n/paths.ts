@@ -21,6 +21,7 @@ const EN_PATHS = new Set<string>([
   "/valentijn-3d-printen",
   "/viewer",
   "/3d-modellen-vinden",
+  "/machine-readable-resources",
   "/materials",
   "/portfolio",
   "/pricing",
@@ -31,6 +32,7 @@ const EN_PATHS = new Set<string>([
   "/cookies",
   "/faq",
   "/algemene-voorwaarden",
+  "/retour-herroepingsrecht",
   "/locaties",
 ])
 

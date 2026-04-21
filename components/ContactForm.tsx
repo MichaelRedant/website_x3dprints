@@ -27,6 +27,7 @@ const groupCls =
 const headingCls = "text-sm font-semibold text-slate-900 dark:text-slate-100"
 const LEAD_FIRST_NAME_KEY = "x3dprints_lead_first_name"
 const LEAD_MATERIAL_NAME_KEY = "x3dprints_lead_material_name"
+const LEAD_CONTEXT_NAME_KEY = "x3dprints_lead_context_name"
 
 type ContactFormProps = {
   defaultMaterial?: string
@@ -246,6 +247,7 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
               } else {
                 sessionStorage.removeItem(LEAD_MATERIAL_NAME_KEY)
               }
+              sessionStorage.removeItem(LEAD_CONTEXT_NAME_KEY)
             } catch {
               // Ignore storage errors in strict/privacy browser modes.
             }

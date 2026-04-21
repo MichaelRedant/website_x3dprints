@@ -2,7 +2,6 @@ import "./globals.css"
 import type { Metadata } from "next"
 import {
   SITE,
-  buildBreadcrumbSchema,
   buildLocalBusinessSchema,
   buildOrganizationSchema,
   buildWebsiteSchema,
@@ -137,36 +136,6 @@ function buildSchema() {
   }
 }
 
-const breadcrumbNl = buildBreadcrumbSchema({
-  id: `${SITE.url}/#breadcrumb-nl`,
-  inLanguage: "nl-BE",
-  items: [
-    { name: "Home", url: `${SITE.url}/` },
-    { name: "Services", url: `${SITE.url}/services/` },
-    { name: "Materialen", url: `${SITE.url}/materials/` },
-    { name: "Portfolio", url: `${SITE.url}/portfolio/` },
-    { name: "Pricing", url: `${SITE.url}/pricing/` },
-    { name: "Contact", url: `${SITE.url}/contact/` },
-    { name: "Cases", url: `${SITE.url}/cases/` },
-    { name: "Blog", url: `${SITE.url}/blog/` },
-  ],
-})
-
-const breadcrumbEn = buildBreadcrumbSchema({
-  id: `${SITE.url}/en/#breadcrumb-en`,
-  inLanguage: "en-BE",
-  items: [
-    { name: "Home", url: `${SITE.url}/en/` },
-    { name: "Services", url: `${SITE.url}/en/services/` },
-    { name: "Materials", url: `${SITE.url}/en/materials/` },
-    { name: "Portfolio", url: `${SITE.url}/en/portfolio/` },
-    { name: "Pricing", url: `${SITE.url}/en/pricing/` },
-    { name: "Contact", url: `${SITE.url}/en/contact/` },
-    { name: "Cases", url: `${SITE.url}/en/cases/` },
-    { name: "Blog", url: `${SITE.url}/en/blog/` },
-  ],
-})
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const schema = buildSchema()
   const localeBootstrapScript = `(() => {
@@ -186,8 +155,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: localeBootstrapScript }} />
         {children}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbNl) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbEn) }} />
       </body>
     </html>
   )

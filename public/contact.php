@@ -53,6 +53,8 @@ $quantity = sanitize((string)($_POST['quantity'] ?? ''), 20);
 $material = sanitize((string)($_POST['material'] ?? ''), 60);
 $quote = trim((string)($_POST['quote'] ?? ''));
 $quote = $quote !== '' ? clamp($quote, 800) : '';
+$requestContext = sanitize((string)($_POST['requestContext'] ?? ''), 120);
+$source = sanitize((string)($_POST['source'] ?? ''), 40);
 
 if ($name === '' || $email === '' || $message === '') {
     respond(400, ['success' => false, 'error' => 'Naam, e-mail en bericht zijn verplicht.']);
@@ -67,7 +69,13 @@ $to = cleanLine(getenv('MAIL_TO') ?: 'michael@xinudesign.be');
 $fromHeader = cleanLine(getenv('MAIL_FROM') ?: 'X3DPrints <michael@xinudesign.be>');
 
 // Admin subject
-$subjectParts = array_filter(['[Contact]', $material !== '' ? $material : null, $name]);
+$subjectParts = array_filter([
+    '[Contact]',
+    $source === 'shop' ? 'Shop' : null,
+    $requestContext !== '' ? $requestContext : null,
+    $material !== '' ? $material : null,
+    $name,
+]);
 $subject = encodeHeader(implode(' ', $subjectParts));
 
 // Tekstversie (geen HTML nodig voor deliverability)
@@ -76,6 +84,8 @@ $textLines = [
     "E-mail: {$email}",
     "Aantal: " . ($quantity !== '' ? $quantity : '-'),
     "Materiaal: " . ($material !== '' ? $material : '-'),
+    "Product/context: " . ($requestContext !== '' ? $requestContext : '-'),
+    "Bron: " . ($source !== '' ? $source : '-'),
 ];
 if ($quote !== '') {
     $textLines[] = "Indicatieve schatting:";
@@ -88,7 +98,7 @@ $textBody = implode("\n", $textLines);
 
 // Bevestigingsmail (multipart: tekst + lichte HTML met inline styles)
 $confirmSubject = encodeHeader('We hebben je aanvraag ontvangen');
-$confirmText = "Hey {$name},\n\nBedankt voor je bericht! We bekijken je aanvraag en sturen snel een reactie met prijs en timing.\n\nSamenvatting:\n- Materiaal: ".($material !== '' ? $material : '-')."\n- Aantal: ".($quantity !== '' ? $quantity : '-')."\n\nJe bericht:\n{$message}\n\nTot snel,\nMichael van X3DPrints\n\nP.S. Geen stress als je bestand 'final_v3_definitief.stl' heet, dat zien we wel vaker ;)";
+$confirmText = "Hey {$name},\n\nBedankt voor je bericht! We bekijken je aanvraag en sturen snel een reactie met prijs en timing.\n\nSamenvatting:\n- Product/context: ".($requestContext !== '' ? $requestContext : '-')."\n- Materiaal: ".($material !== '' ? $material : '-')."\n- Aantal: ".($quantity !== '' ? $quantity : '-')."\n\nJe bericht:\n{$message}\n\nTot snel,\nMichael van X3DPrints\n\nP.S. Geen stress als je bestand 'final_v3_definitief.stl' heet, dat zien we wel vaker ;)";
 $confirmHtml = '<!doctype html><html lang="nl"><head><meta charset="UTF-8"><title>Bevestiging</title></head><body style="margin:0;padding:0;background:#0b1224;font-family:Segoe UI,Arial,sans-serif;color:#e5e7eb;">'
     . '<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:radial-gradient(140% 120% at 50% 0%, rgba(99,102,241,0.12), rgba(11,18,36,1));padding:24px 12px;">'
     . '<tr><td align="center"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:640px;background:linear-gradient(150deg, rgba(17,24,39,0.94), rgba(15,23,42,0.96));border:1px solid rgba(148,163,184,0.18);border-radius:16px;padding:22px;box-shadow:0 16px 50px rgba(0,0,0,0.25);">'
@@ -96,6 +106,7 @@ $confirmHtml = '<!doctype html><html lang="nl"><head><meta charset="UTF-8"><titl
     . '<tr><td style="padding-top:6px;"><div style="font-size:22px;font-weight:800;color:#f8fafc;line-height:1.25;">Bedankt voor je aanvraag</div></td></tr>'
     . '<tr><td style="padding-top:12px;font-size:14px;color:#cbd5e1;line-height:1.6;">We bekijken je vraag en sturen snel een concreet voorstel met prijs en timing. Hieronder de samenvatting.</td></tr>'
     . '<tr><td style="padding-top:18px;"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:separate;border-spacing:0 8px;">'
+    . '<tr><td width="140" style="color:#94a3b8;font-size:13px;">Product/context</td><td style="color:#e2e8f0;font-size:14px;font-weight:600;">'.htmlspecialchars($requestContext !== '' ? $requestContext : '-', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8').'</td></tr>'
     . '<tr><td width="140" style="color:#94a3b8;font-size:13px;">Materiaal</td><td style="color:#e2e8f0;font-size:14px;font-weight:600;">'.htmlspecialchars($material !== '' ? $material : '-', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8').'</td></tr>'
     . '<tr><td width="140" style="color:#94a3b8;font-size:13px;">Aantal</td><td style="color:#e2e8f0;font-size:14px;">'.htmlspecialchars($quantity !== '' ? $quantity : '-', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8').'</td></tr>'
     . '<tr><td width="140" style="color:#94a3b8;font-size:13px;vertical-align:top;padding-top:6px;">Je bericht</td><td style="padding-top:6px;"><div style="background:#0f172a;border:1px solid rgba(148,163,184,0.25);border-radius:10px;padding:12px 14px;color:#e2e8f0;font-size:14px;line-height:1.55;">'.nl2br(htmlspecialchars($message, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8')).'</div></td></tr>'
@@ -186,6 +197,8 @@ $logEntry = [
     'quantity' => $quantity,
     'material' => $material,
     'quote' => $quote,
+    'requestContext' => $requestContext,
+    'source' => $source,
     'adminSent' => $adminSent,
     'confirmSent' => $confirmSent,
     'ip' => $_SERVER['REMOTE_ADDR'] ?? '',

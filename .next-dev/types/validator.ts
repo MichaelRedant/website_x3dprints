@@ -587,6 +587,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/lokaal-belgisch">
 }
 
+// Validate ..\..\app\(pages)\machine-readable-resources\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\machine-readable-resources\\page.js")
+  handler satisfies AppPageConfig<"/machine-readable-resources">
+}
+
 // Validate ..\..\app\(pages)\materials\[slug]\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\materials\\[slug]\\page.js")
@@ -651,6 +657,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\privacy\\page.js")
   handler satisfies AppPageConfig<"/privacy">
+}
+
+// Validate ..\..\app\(pages)\retour-herroepingsrecht\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\retour-herroepingsrecht\\page.js")
+  handler satisfies AppPageConfig<"/retour-herroepingsrecht">
 }
 
 // Validate ..\..\app\(pages)\segments\page.tsx
@@ -1235,6 +1247,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/en/lokaal-belgisch">
 }
 
+// Validate ..\..\app\en\(pages)\machine-readable-resources\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\machine-readable-resources\\page.js")
+  handler satisfies AppPageConfig<"/en/machine-readable-resources">
+}
+
 // Validate ..\..\app\en\(pages)\materials\[slug]\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\materials\\[slug]\\page.js")
@@ -1299,6 +1317,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\privacy\\page.js")
   handler satisfies AppPageConfig<"/en/privacy">
+}
+
+// Validate ..\..\app\en\(pages)\retour-herroepingsrecht\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\retour-herroepingsrecht\\page.js")
+  handler satisfies AppPageConfig<"/en/retour-herroepingsrecht">
 }
 
 // Validate ..\..\app\en\(pages)\segments\[slug]\page.tsx
@@ -1431,6 +1455,18 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\api\\contact\\route.js")
   handler satisfies RouteHandlerConfig<"/api/contact">
+}
+
+// Validate ..\..\app\data\[feed]\route.ts
+{
+  const handler = {} as typeof import("..\\..\\app\\data\\[feed]\\route.js")
+  handler satisfies RouteHandlerConfig<"/data/[feed]">
+}
+
+// Validate ..\..\app\en\data\[feed]\route.ts
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\data\\[feed]\\route.js")
+  handler satisfies RouteHandlerConfig<"/en/data/[feed]">
 }
 
 

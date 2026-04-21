@@ -75,6 +75,7 @@ type LocalBusinessSchemaInput = {
   makesOffer?: LocalBusinessOfferInput[]
   parentOrganizationId?: string
   openingHoursSpecification?: OpeningHoursInput[]
+  hasMerchantReturnPolicy?: Record<string, unknown> | Record<string, unknown>[]
 }
 
 export type SchemaOfferInput = {
@@ -121,6 +122,7 @@ type OrganizationSchemaInput = {
   inLanguage?: string | string[]
   sameAs?: ReadonlyArray<string>
   alternateName?: string | string[]
+  hasMerchantReturnPolicy?: Record<string, unknown> | Record<string, unknown>[]
 }
 
 export function buildOrganizationSchema(options: OrganizationSchemaInput = {}) {
@@ -131,6 +133,7 @@ export function buildOrganizationSchema(options: OrganizationSchemaInput = {}) {
     ...(options.inLanguage ? { inLanguage: options.inLanguage } : {}),
     ...(options.sameAs ? { sameAs: options.sameAs } : {}),
     ...(options.alternateName ? { alternateName: options.alternateName } : {}),
+    ...(options.hasMerchantReturnPolicy ? { hasMerchantReturnPolicy: options.hasMerchantReturnPolicy } : {}),
   }
 }
 
@@ -277,9 +280,44 @@ export function buildLocalBusinessSchema(options: LocalBusinessSchemaInput = {})
       : {}),
     ...(options.parentOrganizationId ? { parentOrganization: { "@id": options.parentOrganizationId } } : {}),
     ...(openingHoursSpecification.length ? { openingHoursSpecification } : {}),
+    ...(options.hasMerchantReturnPolicy ? { hasMerchantReturnPolicy: options.hasMerchantReturnPolicy } : {}),
   }
 
   return schema
+}
+
+type MerchantReturnPolicySchemaInput = {
+  applicableCountry?: string | string[]
+  merchantReturnDays?: number
+  merchantReturnLink?: string
+  returnPolicyCategory?: string
+  returnFees?: string
+  returnMethod?: string | string[]
+  refundType?: string | string[]
+  inLanguage?: string | string[]
+}
+
+export function buildMerchantReturnPolicySchema({
+  applicableCountry,
+  merchantReturnDays,
+  merchantReturnLink,
+  returnPolicyCategory,
+  returnFees,
+  returnMethod,
+  refundType,
+  inLanguage,
+}: MerchantReturnPolicySchemaInput) {
+  return {
+    "@type": "MerchantReturnPolicy",
+    ...(inLanguage ? { inLanguage } : {}),
+    ...(applicableCountry ? { applicableCountry } : {}),
+    ...(returnPolicyCategory ? { returnPolicyCategory } : {}),
+    ...(typeof merchantReturnDays === "number" ? { merchantReturnDays } : {}),
+    ...(merchantReturnLink ? { merchantReturnLink: resolveSchemaUrl(merchantReturnLink) } : {}),
+    ...(returnFees ? { returnFees } : {}),
+    ...(returnMethod ? { returnMethod } : {}),
+    ...(refundType ? { refundType } : {}),
+  }
 }
 
 export function buildOfferCatalog(name: string, offers: SchemaOfferInput[]) {

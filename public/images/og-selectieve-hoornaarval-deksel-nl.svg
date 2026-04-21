@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">3D geprint deksel voor selectieve hoornaarval</title>
+  <desc id="d">Shopproduct op aanvraag voor het 3D geprinte deksel van een selectieve hoornaarval</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#172554"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.2" r="0.6">
+      <stop offset="0%" stop-color="rgba(16,185,129,.38)"/>
+      <stop offset="100%" stop-color="rgba(16,185,129,0)"/>
+    </radialGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <style>
+      .bg{fill:url(#bg)}
+      .panel{fill:rgba(255,255,255,.08);stroke:rgba(255,255,255,.22);stroke-width:1}
+      .eyebrow{font:700 22px 'Segoe UI',Arial,sans-serif;fill:#a5f3fc;letter-spacing:2.5px;text-transform:uppercase}
+      .title{font:800 62px 'Segoe UI',Arial,sans-serif;fill:#f8fafc}
+      .sub{font:500 28px 'Segoe UI',Arial,sans-serif;fill:#dbe4ee}
+      .chip{font:700 24px 'Segoe UI',Arial,sans-serif;fill:#ecfeff}
+      .meta{font:600 24px 'Segoe UI',Arial,sans-serif;fill:#e2e8f0}
+      .fine{font:600 22px 'Segoe UI',Arial,sans-serif;fill:#cbd5e1}
+    </style>
+  </defs>
+  <rect width="1200" height="630" class="bg"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g opacity=".18">
+    <circle cx="1030" cy="110" r="190" fill="#22c55e"/>
+    <circle cx="150" cy="560" r="180" fill="#38bdf8"/>
+  </g>
+  <g>
+    <rect x="40" y="38" width="1120" height="554" rx="28" ry="28" class="panel"/>
+    <text x="60" y="105" class="eyebrow">X3DPrints Shop</text>
+    <text x="60" y="195" class="title">Selectieve hoornaarval</text>
+    <text x="60" y="255" class="title">deksel</text>
+    <text x="60" y="310" class="sub">3D geprint deksel voor glazen potten tegen de Aziatische hoornaar.</text>
+
+    <rect x="60" y="352" rx="24" ry="24" width="214" height="48" fill="url(#badge)"/>
+    <text x="88" y="383" class="chip">Alleen het deksel</text>
+
+    <rect x="60" y="418" rx="22" ry="22" width="318" height="42" fill="rgba(15,23,42,.4)" stroke="rgba(148,163,184,.35)"/>
+    <text x="85" y="446" class="meta">EUR 4 per stuk, op aanvraag</text>
+
+    <rect x="60" y="474" rx="22" ry="22" width="290" height="42" fill="rgba(15,23,42,.4)" stroke="rgba(148,163,184,.35)"/>
+    <text x="85" y="502" class="meta">Pot niet inbegrepen</text>
+
+    <text x="60" y="555" class="fine">x3dprints.be/shop/selectieve-hoornaarval-deksel</text>
+  </g>
+
+  <g transform="translate(790 112)">
+    <rect x="88" y="250" width="184" height="150" rx="28" fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.45)" stroke-width="4"/>
+    <path d="M118 248h124c12 0 22 10 22 22v12H96v-12c0-12 10-22 22-22z" fill="#dbeafe" fill-opacity=".95"/>
+    <path d="M120 210h120l-26 40H146z" fill="#22c55e" fill-opacity=".95"/>
+    <path d="M160 140h40l54 70H106z" fill="#86efac" fill-opacity=".95"/>
+    <circle cx="128" cy="228" r="8" fill="#0f172a" fill-opacity=".55"/>
+    <circle cx="232" cy="228" r="8" fill="#0f172a" fill-opacity=".55"/>
+    <circle cx="180" cy="228" r="8" fill="#0f172a" fill-opacity=".55"/>
+    <path d="M180 110c22 0 40 10 54 28" stroke="#fde68a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M232 106l26 -8 -8 24" fill="none" stroke="#fde68a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="180" cy="275" r="78" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="80"/>
+  </g>
+</svg>
+

@@ -15,6 +15,8 @@ const dateModified = "2026-02-09"
 const faq = BLOG_FAQ["beste-instellingen-bambu-printer"]
 const designGuideHref =
   "/blog/3d-print-ontwerp-gids?utm_source=blog&utm_medium=internal&utm_campaign=bambu-instellingen"
+const shopHref = "/shop"
+const spoolHref = "/shop/bambu-reusable-spool"
 
 export const metadata: Metadata = {
   title: "Beste instellingen voor jouw Bambu printer | X3DPrints Blog",
@@ -340,15 +342,18 @@ export default function BambuSettingsPage() {
             <GlassCard className="flex flex-col gap-6 border border-white/40 bg-white/85 p-6 shadow-xl backdrop-blur sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Volgende stap</p>
-                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Printen wij jouw onderdelen?</h2>
+                <h2 className="mt-3 text-2xl font-semibold text-slate-900">Extra Bambu spool of hulp bij je print?</h2>
                 <p className="mt-2 text-sm text-slate-600">
-                  Lever STL/STEP en noteer je materiaalvoorkeur. We sturen binnen een werkdag een voorstel inclusief eventuele design-optimalisaties.
+                  Gebruik je Bambu refills en heb je extra spools nodig? Bekijk de live reusable spool in de shop of contacteer ons als je liever het printwerk of een settings review laat opvolgen.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href="/contact">Plan een gesprek</ShimmerButton>
-                <Link href="/pricing" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
-                  Bekijk prijzen
+                <ShimmerButton href={spoolHref}>Bekijk reusable spool</ShimmerButton>
+                <Link href={shopHref} className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
+                  Bekijk shop & voorraaditems
+                </Link>
+                <Link href="/contact" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
+                  Plan een gesprek
                 </Link>
               </div>
             </GlassCard>
