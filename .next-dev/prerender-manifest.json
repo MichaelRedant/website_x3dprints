@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/shop/bambu-reusable-spool":{},"/shop/selectieve-hoornaarval-deksel":{}},"dynamicRoutes":{"/shop/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/shop/[slug]","routeRegex":"^\\/shop\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"aea4bd4baaff76ab8f91df4e5bb1caf3","previewModeSigningKey":"096c8dfc24603e4ab8557575776cfc5e540e710d95bba139a5fea42318bebfc9","previewModeEncryptionKey":"05608fc3ddf6c837817e6a3a6a83a64fff3de4740cf3e284ea59cc6e101493f2"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "3a608d4bba56ed05a8ff7df51e6b3b8e",
+    "previewModeSigningKey": "b347d874155a7cca479c9d7377bed1c8a8d21aa74cb9eefd27f86d0f1489e51a",
+    "previewModeEncryptionKey": "bdf555cfea5aa2972b33514cb673e006a70c45fd608d9f07c57c23a471ed946f"
+  }
+}

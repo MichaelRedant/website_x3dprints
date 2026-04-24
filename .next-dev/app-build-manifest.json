@@ -20,36 +20,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(home)/page.js"
-    ],
-    "/(pages)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/layout.js"
-    ],
-    "/(pages)/shop/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/shop/layout.js"
-    ],
-    "/(pages)/shop/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/shop/page.js"
-    ],
-    "/(pages)/shop/[slug]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/shop/[slug]/page.js"
-    ],
-    "/(pages)/machine-readable-resources/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/machine-readable-resources/page.js"
-    ],
-    "/(pages)/retour-herroepingsrecht/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/retour-herroepingsrecht/page.js"
     ]
   }
 }

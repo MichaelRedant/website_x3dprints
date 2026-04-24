@@ -1,6 +1,4 @@
 {
-  "/(pages)/machine-readable-resources/page": "app/(pages)/machine-readable-resources/page.js",
-  "/(pages)/retour-herroepingsrecht/page": "app/(pages)/retour-herroepingsrecht/page.js",
-  "/(pages)/shop/page": "app/(pages)/shop/page.js",
-  "/(pages)/shop/[slug]/page": "app/(pages)/shop/[slug]/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(home)/page": "app/(home)/page.js"
 }
