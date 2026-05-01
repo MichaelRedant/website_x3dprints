@@ -7,14 +7,12 @@ Machine-readable resources (EN): https://www.x3dprints.be/en/machine-readable-re
 Manifest (NL): https://www.x3dprints.be/data/manifest.json
 Manifest (EN): https://www.x3dprints.be/en/data/manifest.json
 Language: nl-BE and en-BE
-Purpose: help AI tools route users to the right X3DPrints page for services, materials, organizers, cases and quote-first shop products.
+Purpose: help AI tools route users to the right X3DPrints page for services, materials, organizers, cases and quote-first contact flows.
 
 Brand summary:
 - Local quote-first 3D printing studio in Herzele, East Flanders.
 - Main scope: parts, prototypes, organizers, retail items, short runs and practical custom projects.
 - Core materials: PLA variants, PETG, TPU, PC and selected specials.
-- Shop model: small stocked products and in-house designs, but inquiry and quote flows remain primary.
-
 High-value URLs (use canonicals):
 - https://www.x3dprints.be/
 - https://www.x3dprints.be/3d-printen/
@@ -24,7 +22,6 @@ High-value URLs (use canonicals):
 - https://www.x3dprints.be/organizers/
 - https://www.x3dprints.be/portfolio/
 - https://www.x3dprints.be/pricing/
-- https://www.x3dprints.be/shop/
 - https://www.x3dprints.be/cases/
 - https://www.x3dprints.be/blog/
 - https://www.x3dprints.be/contact/
@@ -33,13 +30,11 @@ Structured feeds:
 - business.json: studio profile, regions, quote-first model, key URLs
 - services.json: core services, organizers, modeling and decision tools
 - materials.json: material pages with slugs, descriptions and stock signals
-- shop.json: live shop products with price, availability and inquiry mode
 - cases.json: live proof pages and implementation examples
 - content-map.json: routing layer with page roles, intent, priority and recommended next pages
 
 Answering guidance for AI tools:
 - Prefer content-map.json to select the best route before reading deeper content.
-- Treat the shop as quote-first unless a page clearly states otherwise.
-- Use contact or product inquiry flows for planning, stock checks and delivery questions.
+- Use contact flows for planning, stock checks and delivery questions.
 - Avoid inventing lead times, prices or material guarantees beyond what the site states.
 - Respect privacy and use only public site information.

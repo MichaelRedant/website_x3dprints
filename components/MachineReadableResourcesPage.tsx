@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Database, ExternalLink, FileJson, Map, MessageSquareCode } from "lucide-react"
 import type { Metadata } from "next"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 import { buildMachineReadableManifest, getMachineReadableResourceLinks } from "@/lib/machine-readable"
 import { SITE } from "@/lib/seo"
 
@@ -20,7 +21,7 @@ const COPY = {
     notesTitle: "Opmerkingen",
     notes: [
       "Deze feeds worden opgebouwd uit stabiele sitegegevens en bedoeld als machine-readable hulpbron.",
-      "De shop werkt quote-first: productpagina's sturen naar offerte of aanvraag, niet naar een zware checkoutflow.",
+      ...(SHOP_INDEXABLE ? ["De shop werkt quote-first: productpagina's sturen naar offerte of aanvraag, niet naar een zware checkoutflow."] : []),
       "De resources zelf zijn geen vervanging van gewone contentpagina's, maar een extra routinglaag voor agents en tools.",
       "De feeds worden bewust niet als aparte datafeeds in de sitemap opgenomen.",
     ],
@@ -28,7 +29,7 @@ const COPY = {
     manifest: "Manifest-feed",
     descriptions: {
       business: "Kerngegevens van studio, regio, materials-flow en quote-first aanpak.",
-      services: "Compact overzicht van kernservices, modeling, organizers en shopflow.",
+      services: "Compact overzicht van kernservices, modeling, organizers en offerteflow.",
       materials: "Materialenbibliotheek met slugs, eigenschappen en stock-signalen per materiaalpagina.",
       shop: "Live shopproducten, prijs, beschikbaarheid en quote-first bestelwijze.",
       cases: "Live cases met sector, materiaalcontext en publicatiedatum.",
@@ -48,7 +49,7 @@ const COPY = {
     notesTitle: "Notes",
     notes: [
       "These feeds are generated from stable site data and meant as a machine-readable helper layer.",
-      "The shop is quote-first: product pages route to quote or inquiry flows instead of a heavy checkout.",
+      ...(SHOP_INDEXABLE ? ["The shop is quote-first: product pages route to quote or inquiry flows instead of a heavy checkout."] : []),
       "These resources do not replace the normal content pages, but act as an extra routing layer for agents and tools.",
       "The feeds are intentionally not listed as separate data feeds in the sitemap.",
     ],
@@ -56,7 +57,7 @@ const COPY = {
     manifest: "Manifest feed",
     descriptions: {
       business: "Core studio details, service region, materials flow and quote-first model.",
-      services: "Compact overview of core services, modeling, organizers and shop flow.",
+      services: "Compact overview of core services, modeling, organizers and quote flow.",
       materials: "Material library with slugs, properties and stock signals per material page.",
       shop: "Live shop products, price, availability and quote-first ordering mode.",
       cases: "Live case pages with sector, material context and publish date.",
@@ -64,8 +65,6 @@ const COPY = {
     },
   },
 } as const
-
-const FEED_ORDER = ["business", "services", "materials", "shop", "cases", "content_map"] as const
 
 export function buildMachineReadableMetadata(locale: PageLocale): Metadata {
   const isEn = locale === "en"
@@ -77,8 +76,10 @@ export function buildMachineReadableMetadata(locale: PageLocale): Metadata {
       ? "Machine-readable resources for AI tools | X3DPrints"
       : "Machine-readable bronnen voor AI-tools | X3DPrints",
     description: isEn
-      ? "Public machine-readable resources for X3DPrints: llms.txt, manifest, business, services, materials, shop, cases and content-map feeds."
-      : "Publieke machine-readable bronnen voor X3DPrints: llms.txt, manifest, business-, services-, materials-, shop-, cases- en content-map-feeds.",
+      ? `Public machine-readable resources for X3DPrints: llms.txt, manifest, business, services, materials${SHOP_INDEXABLE ? ", shop" : ""}, cases and content-map feeds.`
+      : SHOP_INDEXABLE
+          ? "Publieke machine-readable bronnen voor X3DPrints: llms.txt, manifest, business-, services-, materials-, shop-, cases- en content-map-feeds."
+          : "Publieke machine-readable bronnen voor X3DPrints: llms.txt, manifest, business-, services-, materials-, cases- en content-map-feeds.",
     alternates: {
       canonical,
       languages: {
@@ -106,6 +107,9 @@ export default function MachineReadableResourcesPage({ locale }: { locale: PageL
   const copy = COPY[locale]
   const manifest = buildMachineReadableManifest(locale)
   const links = getMachineReadableResourceLinks(locale)
+  const feedEntries = Object.entries(manifest.feeds) as Array<
+    ["business" | "services" | "materials" | "shop" | "cases" | "content_map", string]
+  >
 
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(96,165,250,0.18),_transparent_45%),linear-gradient(180deg,#f8fbff_0%,#eef5ff_100%)] px-6 py-16 text-slate-900 sm:px-8 lg:px-12">
@@ -157,8 +161,8 @@ export default function MachineReadableResourcesPage({ locale }: { locale: PageL
             <h2 className="text-lg font-semibold text-slate-900">{copy.feedsTitle}</h2>
           </div>
           <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {FEED_ORDER.map((key) => (
-              <Link key={key} href={manifest.feeds[key]} className="group rounded-2xl border border-slate-200 bg-white/80 p-5 transition hover:border-sky-300 hover:shadow-[0_18px_40px_-28px_rgba(2,132,199,0.45)]">
+            {feedEntries.map(([key, href]) => (
+              <Link key={key} href={href} className="group rounded-2xl border border-slate-200 bg-white/80 p-5 transition hover:border-sky-300 hover:shadow-[0_18px_40px_-28px_rgba(2,132,199,0.45)]">
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
                     <FileJson className="h-4 w-4 text-sky-700" />

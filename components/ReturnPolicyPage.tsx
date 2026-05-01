@@ -10,6 +10,7 @@ import {
   buildLocalBusinessSchema,
   buildMerchantReturnPolicySchema,
 } from "@/lib/seo"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 
 export const RETURN_POLICY_DATE_MODIFIED = "2026-04-21"
 
@@ -391,7 +392,6 @@ export default function ReturnPolicyPage({ locale }: { locale: ReturnPolicyLocal
   const inLanguage = locale === "en" ? "en-BE" : "nl-BE"
   const homeUrl = locale === "en" ? `${SITE.url}/en/` : `${SITE.url}/`
   const contactHref = `${prefix}/contact?quote=${encodeURIComponent(locale === "en" ? "Return policy question" : "Vraag over retour en herroeping")}`
-  const shopHref = `${prefix}/shop`
   const sectionIds = {
     summary: copy.toc[0].id,
     standard: copy.toc[1].id,
@@ -473,12 +473,14 @@ export default function ReturnPolicyPage({ locale }: { locale: ReturnPolicyLocal
                 >
                   {copy.contactPrimary}
                 </Link>
-                <Link
-                  href={shopHref}
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-center text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-auto"
-                >
-                  {copy.contactSecondary}
-                </Link>
+                {SHOP_INDEXABLE ? (
+                  <Link
+                    href={`${prefix}/shop`}
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-center text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 sm:w-auto"
+                  >
+                    {copy.contactSecondary}
+                  </Link>
+                ) : null}
               </div>
             </div>
           </div>
@@ -607,13 +609,15 @@ export default function ReturnPolicyPage({ locale }: { locale: ReturnPolicyLocal
                 >
                   {copy.contactPrimary}
                 </Link>
-                <Link
-                  href={shopHref}
-                  className="inline-flex w-full items-center justify-center gap-2 text-center text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 sm:w-auto"
-                >
-                  {copy.contactSecondary}
-                  <span className="i-lucide-arrow-right" aria-hidden />
-                </Link>
+                {SHOP_INDEXABLE ? (
+                  <Link
+                    href={`${prefix}/shop`}
+                    className="inline-flex w-full items-center justify-center gap-2 text-center text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 sm:w-auto"
+                  >
+                    {copy.contactSecondary}
+                    <span className="i-lucide-arrow-right" aria-hidden />
+                  </Link>
+                ) : null}
               </div>
             </GlassCard>
           </Reveal>

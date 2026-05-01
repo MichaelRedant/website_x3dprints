@@ -5,6 +5,7 @@ import ContentTableOfContents from "@/components/ContentTableOfContents"
 import Reveal from "@/components/Reveal"
 import GlassCard from "@/components/GlassCard"
 import ShimmerButton from "@/components/ShimmerButton"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 import {
   buildFaqPageSchema,
   buildHowToSchema,
@@ -199,16 +200,20 @@ const knowledgeLinks = [
     description: "Overzicht van filamenten, kleuren, eigenschappen en materiaaladvies per toepassing.",
     href: "/materials",
   },
-  {
-    title: "Bambu reusable spool op voorraad",
-    description: "Gebruik je Bambu refills? Bekijk de live productpagina voor actuele voorraad, prijs en shopaanvraag.",
-    href: "/shop/bambu-reusable-spool",
-  },
-  {
-    title: "Selectieve hoornaarval als outdoor product",
-    description: "PETG deksel voor een selectieve hoornaarval, bedoeld voor buitengebruik en kleine aanvragen per stuk of batch.",
-    href: "/shop/selectieve-hoornaarval-deksel",
-  },
+  ...(SHOP_INDEXABLE
+    ? [
+        {
+          title: "Bambu reusable spool op voorraad",
+          description: "Gebruik je Bambu refills? Bekijk de live productpagina voor actuele voorraad, prijs en shopaanvraag.",
+          href: "/shop/bambu-reusable-spool",
+        },
+        {
+          title: "Selectieve hoornaarval als outdoor product",
+          description: "PETG deksel voor een selectieve hoornaarval, bedoeld voor buitengebruik en kleine aanvragen per stuk of batch.",
+          href: "/shop/selectieve-hoornaarval-deksel",
+        },
+      ]
+    : []),
 ]
 
 const fileChecklist = [

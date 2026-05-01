@@ -8,6 +8,7 @@ import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogContentOverview from "@/components/BlogContentOverview"
 import BlogFaq from "@/components/BlogFaq"
 import { BLOG_FAQ } from "@/content/blog-faq"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 
 const canonical = "https://www.x3dprints.be/blog/hoe-3d-print-je-onderdelen-voor-buitengebruik/"
 const publishedDate = "2025-11-21T08:00:00+01:00"
@@ -216,7 +217,10 @@ export default function OutdoorPrintingGuidePage() {
               </p>
               <p className="mt-4 text-sm text-slate-600">
                 Een concreet voorbeeld is ons{" "}
-                <Link href="/shop/selectieve-hoornaarval-deksel" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                <Link
+                  href={SHOP_INDEXABLE ? "/shop/selectieve-hoornaarval-deksel" : "/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem"}
+                  className="font-semibold text-indigo-600 hover:text-indigo-500"
+                >
                   hoornaarval deksel voor selectieve hoornaarvallen
                 </Link>
                 . Dat product wordt in PETG geprint voor buitengebruik en sluit aan op de{" "}

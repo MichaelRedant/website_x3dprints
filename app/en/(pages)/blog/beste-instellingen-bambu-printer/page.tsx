@@ -8,6 +8,7 @@ import BlogContentOverview from "@/components/BlogContentOverview"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogFaq from "@/components/BlogFaq"
 import { BLOG_FAQ_EN } from "@/content/blog-faq-en"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 
 const canonical = "https://www.x3dprints.be/en/blog/beste-instellingen-bambu-printer/"
 const dateModified = "2026-02-09"
@@ -15,8 +16,6 @@ const faq = BLOG_FAQ_EN["beste-instellingen-bambu-printer"]
 const lastUpdatedLabel = "Last updated: 9 February 2026"
 const designGuideHref =
   "/en/blog/3d-print-ontwerp-gids?utm_source=blog&utm_medium=internal&utm_campaign=bambu-settings"
-const shopHref = "/en/shop"
-const spoolHref = "/en/shop/bambu-reusable-spool"
 
 export const metadata: Metadata = {
   title: "Best settings for your Bambu printer | X3DPrints Blog",
@@ -289,14 +288,18 @@ export default function BambuSettingsBlogEn() {
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Next step</p>
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900">Need extra Bambu spools or print help?</h2>
                 <p className="mt-2 text-sm text-slate-600">
-                  If you use Bambu refills and need extra spools, check the live reusable spool page in the shop. If you would rather outsource the print or need tuned settings, contact us directly.
+                  {SHOP_INDEXABLE
+                    ? "If you use Bambu refills and need extra spools, check the live reusable spool page in the shop. If you would rather outsource the print or need tuned settings, contact us directly."
+                    : "If you use Bambu refills and need extra spools, contact us directly for availability, print help, or tuned settings."}
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href={spoolHref}>View reusable spool</ShimmerButton>
-                <Link href={shopHref} className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
-                  Browse shop & stocked items
-                </Link>
+                {SHOP_INDEXABLE ? <ShimmerButton href="/en/shop/bambu-reusable-spool">View reusable spool</ShimmerButton> : null}
+                {SHOP_INDEXABLE ? (
+                  <Link href="/en/shop" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
+                    Browse shop & stocked items
+                  </Link>
+                ) : null}
                 <Link href="/en/contact" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
                   Ask for a settings review
                 </Link>

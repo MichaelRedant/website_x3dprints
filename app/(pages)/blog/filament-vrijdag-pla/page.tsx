@@ -8,6 +8,7 @@ import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogContentOverview from "@/components/BlogContentOverview"
 import BlogFaq from "@/components/BlogFaq"
 import { BLOG_FAQ } from "@/content/blog-faq"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 
 const canonical = "https://www.x3dprints.be/blog/filament-vrijdag-pla/"
 const publishedDate = "2025-09-05T08:00:00+02:00"
@@ -580,7 +581,7 @@ export default function FilamentVrijdagPlaPage() {
               </div>
               <p className="mt-4 text-sm text-slate-600">
                 Werk je met Bambu refills en wil je meerdere PLA kleuren sneller kunnen klaarzetten? Dan is een extra{" "}
-                <Link href="/shop/bambu-reusable-spool" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                <Link href={SHOP_INDEXABLE ? "/shop/bambu-reusable-spool" : "/contact?topic=bambu-refills"} className="font-semibold text-indigo-600 hover:text-indigo-500">
                   Bambu reusable spool
                 </Link>{" "}
                 handig als reserve of refill-basis in je workflow.

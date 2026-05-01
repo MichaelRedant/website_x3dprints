@@ -1,4 +1,5 @@
 import type { Locale } from "@/lib/i18n/locales"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 
 export type RelatedLink = {
   label: string
@@ -43,13 +44,13 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
       nl: [
         { label: "Segmenten & cases", href: "/segments" },
         { label: "Portfolio", href: "/portfolio" },
-        { label: "Shop & voorraaditems", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & voorraaditems", href: "/shop" }] : []),
         { label: "Offerte aanvragen", href: "/contact" },
       ],
       en: [
         { label: "Segments & cases", href: "/segments" },
         { label: "Portfolio", href: "/portfolio" },
-        { label: "Shop & stocked items", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & stocked items", href: "/shop" }] : []),
         { label: "Request a quote", href: "/contact" },
       ],
     },
@@ -59,13 +60,13 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
       nl: [
         { label: "Materialen & richtlijnen", href: "/materials" },
         { label: "Prijzen & calculator", href: "/pricing" },
-        { label: "Shop & voorraaditems", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & voorraaditems", href: "/shop" }] : []),
         { label: "Offerte aanvragen", href: "/contact" },
       ],
       en: [
         { label: "Materials and guidelines", href: "/materials" },
         { label: "Pricing and calculator", href: "/pricing" },
-        { label: "Shop & stocked items", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & stocked items", href: "/shop" }] : []),
         { label: "Request a quote", href: "/contact" },
       ],
     },
@@ -125,13 +126,13 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
       nl: [
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segmenten & cases", href: "/segments" },
-        { label: "Shop & voorraaditems", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & voorraaditems", href: "/shop" }] : []),
         { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       ],
       en: [
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segments & cases", href: "/segments" },
-        { label: "Shop & stocked items", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & stocked items", href: "/shop" }] : []),
         { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       ],
     },
@@ -153,13 +154,13 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
       nl: [
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segmenten & cases", href: "/segments" },
-        { label: "Shop & voorraaditems", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & voorraaditems", href: "/shop" }] : []),
         { label: "3D modellen vinden", href: "/3d-modellen-vinden" },
       ],
       en: [
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segments & cases", href: "/segments" },
-        { label: "Shop & stocked items", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & stocked items", href: "/shop" }] : []),
         { label: "Find 3D models", href: "/3d-modellen-vinden" },
       ],
     },
@@ -207,13 +208,13 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
       nl: [
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segmenten & cases", href: "/segments" },
-        { label: "Shop & voorraaditems", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & voorraaditems", href: "/shop" }] : []),
         { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       ],
       en: [
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segments & cases", href: "/segments" },
-        { label: "Shop & stocked items", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & stocked items", href: "/shop" }] : []),
         { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       ],
     },
@@ -235,13 +236,13 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
       nl: [
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segmenten & cases", href: "/segments" },
-        { label: "Shop & voorraaditems", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & voorraaditems", href: "/shop" }] : []),
         { label: "Blog & kennisbank", href: "/blog" },
       ],
       en: [
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segments & cases", href: "/segments" },
-        { label: "Shop & stocked items", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & stocked items", href: "/shop" }] : []),
         { label: "Blog & knowledge base", href: "/blog" },
       ],
     },
@@ -262,13 +263,13 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
     secondary: {
       nl: [
         { label: "Segmenten & cases", href: "/segments" },
-        { label: "Shop & voorraaditems", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & voorraaditems", href: "/shop" }] : []),
         { label: "3D viewer", href: "/viewer" },
         { label: "Offerte aanvragen", href: "/contact" },
       ],
       en: [
         { label: "Segments & cases", href: "/segments" },
-        { label: "Shop & stocked items", href: "/shop" },
+        ...(SHOP_INDEXABLE ? [{ label: "Shop & stocked items", href: "/shop" }] : []),
         { label: "3D viewer", href: "/viewer" },
         { label: "Request a quote", href: "/contact" },
       ],

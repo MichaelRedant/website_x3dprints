@@ -5,6 +5,7 @@ import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import BlogReadMore from "@/components/BlogReadMore"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 import { SITE, buildFaqPageSchema } from "@/lib/seo"
 
 const slug = "selectieve-val-aziatische-hoornaar-sint-lievens-houtem"
@@ -73,11 +74,15 @@ const externalLinks = [
 ]
 
 const internalLinks = [
-  {
-    label: "Shop: hoornaarval deksel bestellen",
-    href: "/shop/selectieve-hoornaarval-deksel",
-    desc: "Vraag dit 3D geprinte hoornaarval deksel aan voor selectieve hoornaarvallen, per stuk of in kleine batch.",
-  },
+  ...(SHOP_INDEXABLE
+    ? [
+        {
+          label: "Shop: hoornaarval deksel bestellen",
+          href: "/shop/selectieve-hoornaarval-deksel",
+          desc: "Vraag dit 3D geprinte hoornaarval deksel aan voor selectieve hoornaarvallen, per stuk of in kleine batch.",
+        },
+      ]
+    : []),
   {
     label: "3D printen (pillar)",
     href: "/3d-printen",
@@ -524,12 +529,14 @@ export default function CaseStudySelectiveTrapPage() {
                 <ShimmerButton href="/contact?topic=case-selectieve-val&material=PETG%20Matte">
                   Start een gelijkaardig project
                 </ShimmerButton>
-                <Link
-                  href="/shop/selectieve-hoornaarval-deksel"
-                  className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-5 py-3 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
-                >
-                  Bekijk het deksel in de shop
-                </Link>
+                {SHOP_INDEXABLE ? (
+                  <Link
+                    href="/shop/selectieve-hoornaarval-deksel"
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-5 py-3 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                  >
+                    Bekijk het deksel in de shop
+                  </Link>
+                ) : null}
                 <Link
                   href="/segments"
                   className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-5 py-3 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"

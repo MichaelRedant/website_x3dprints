@@ -1,11 +1,13 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import GlassCard from "@/components/GlassCard"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
-import BlogReadMore from "@/components/BlogReadMore"
+import BlogReadMore from "@/components/BlogReadMore"
+
 import { buildFaqPageSchema } from "@/lib/seo"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 
 const slug = "selectieve-val-aziatische-hoornaar-sint-lievens-houtem"
 const canonical = `https://www.x3dprints.be/en/cases/${slug}/`
@@ -73,11 +75,15 @@ const externalLinks = [
 ]
 
 const internalLinks = [
-  {
-    label: "Shop: order a selective hornet trap lid",
-    href: "/en/shop/selectieve-hoornaarval-deksel",
-    desc: "Request this 3D printed hornet trap lid as a standalone shop product, per piece or in a small batch.",
-  },
+  ...(SHOP_INDEXABLE
+    ? [
+        {
+          label: "Shop: order a selective hornet trap lid",
+          href: "/en/shop/selectieve-hoornaarval-deksel",
+          desc: "Request this 3D printed hornet trap lid as a standalone shop product, per piece or in a small batch.",
+        },
+      ]
+    : []),
   { label: "3D printing pillar", href: "/en/3d-printen", desc: "Workflow, quality guardrails and outdoor planning." },
   { label: "Materials: PETG", href: "/en/materials/petg", desc: "Why PETG/PC is right for outdoor parts." },
   { label: "Pricing & calculator", href: "/en/pricing", desc: "Realistic cost per batch and lead time." },
@@ -483,12 +489,14 @@ export default function CaseStudySelectiveTrapEnPage() {
                 <ShimmerButton href="/en/contact?topic=case-selective-trap&material=PETG%20Matte">
                   Start a similar project
                 </ShimmerButton>
-                <Link
-                  href="/en/shop/selectieve-hoornaarval-deksel"
-                  className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-5 py-3 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
-                >
-                  View the lid in the shop
-                </Link>
+                {SHOP_INDEXABLE ? (
+                  <Link
+                    href="/en/shop/selectieve-hoornaarval-deksel"
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-5 py-3 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                  >
+                    View the lid in the shop
+                  </Link>
+                ) : null}
                 <Link
                   href="/en/segments"
                   className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-5 py-3 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
@@ -589,5 +597,6 @@ export default function CaseStudySelectiveTrapEnPage() {
     </main>
   )
 }
+
 
 

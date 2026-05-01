@@ -9,6 +9,7 @@ import { Suspense, useEffect, useRef, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import LanguageSwitcher from "./LanguageSwitcher"
 import { useLocale } from "./LocaleProvider"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 import { localizeHref } from "@/lib/i18n/paths"
 import { cn } from "@/lib/utils"
 
@@ -70,7 +71,7 @@ function DesktopDropdown({
 const PRIMARY_LINKS = [
   { href: "/materials", label: { nl: "Materialen", en: "Materials" } },
   { href: "/portfolio", label: { nl: "Portfolio", en: "Portfolio" } },
-  { href: "/shop", label: { nl: "Shop", en: "Shop" } },
+  ...(SHOP_INDEXABLE ? [{ href: "/shop", label: { nl: "Shop", en: "Shop" } }] : []),
   { href: "/pricing", label: { nl: "Prijzen", en: "Pricing" } },
 ]
 

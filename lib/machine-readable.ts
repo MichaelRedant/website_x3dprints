@@ -1,4 +1,5 @@
 import { getCaseStudies } from "@/content/case-studies"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 import { MATERIAL_ORDER, MATERIAL_SLUGS, materialsByLocale } from "@/lib/materials"
 import { SITE } from "@/lib/seo"
 import { getShopProducts } from "@/lib/shop-data"
@@ -39,7 +40,7 @@ type FeedLinkMap = {
   business: string
   services: string
   materials: string
-  shop: string
+  shop?: string
   cases: string
   content_map: string
 }
@@ -110,16 +111,20 @@ const CURATED_SERVICES: Record<FeedLocale, ServiceFeedItem[]> = {
       conversion_value: "high",
       keywords: ["tool organizers", "gridfinity op maat", "packout organizer", "tstak insert"],
     },
-    {
-      id: "shop-products",
-      title: "Shopproducten op aanvraag",
-      summary: "Quote-first shop met kleine voorraaditems en eigen ontwerpen zonder zware checkoutlaag.",
-      url: `${BASE_URL}/shop/`,
-      page_type: "shop_hub",
-      primary_intent: "commercial",
-      conversion_value: "high",
-      keywords: ["3d print shop", "3d print producten", "3d print accessoires"],
-    },
+    ...(SHOP_INDEXABLE
+      ? [
+          {
+            id: "shop-products",
+            title: "Shopproducten op aanvraag",
+            summary: "Quote-first shop met kleine voorraaditems en eigen ontwerpen zonder zware checkoutlaag.",
+            url: `${BASE_URL}/shop/`,
+            page_type: "shop_hub",
+            primary_intent: "commercial" as const,
+            conversion_value: "high" as const,
+            keywords: ["3d print shop", "3d print producten", "3d print accessoires"],
+          },
+        ]
+      : []),
   ],
   en: [
     {
@@ -162,16 +167,20 @@ const CURATED_SERVICES: Record<FeedLocale, ServiceFeedItem[]> = {
       conversion_value: "high",
       keywords: ["tool organizers", "gridfinity custom", "packout insert", "tstak organizer"],
     },
-    {
-      id: "shop-products",
-      title: "Quote-first shop products",
-      summary: "Low-friction shop for stocked items and in-house designs without a heavy checkout flow.",
-      url: `${BASE_URL}/en/shop/`,
-      page_type: "shop_hub",
-      primary_intent: "commercial",
-      conversion_value: "high",
-      keywords: ["3d print shop", "3d printed products", "3d print accessories"],
-    },
+    ...(SHOP_INDEXABLE
+      ? [
+          {
+            id: "shop-products",
+            title: "Quote-first shop products",
+            summary: "Low-friction shop for stocked items and in-house designs without a heavy checkout flow.",
+            url: `${BASE_URL}/en/shop/`,
+            page_type: "shop_hub",
+            primary_intent: "commercial" as const,
+            conversion_value: "high" as const,
+            keywords: ["3d print shop", "3d printed products", "3d print accessories"],
+          },
+        ]
+      : []),
   ],
 }
 
@@ -366,7 +375,7 @@ function buildFeedLinks(locale: FeedLocale): FeedLinkMap {
     business: `${base}/business.json`,
     services: `${base}/services.json`,
     materials: `${base}/materials.json`,
-    shop: `${base}/shop.json`,
+    ...(SHOP_INDEXABLE ? { shop: `${base}/shop.json` } : {}),
     cases: `${base}/cases.json`,
     content_map: `${base}/content-map.json`,
   }
@@ -377,7 +386,6 @@ function buildCoreContentMap(locale: FeedLocale): ContentMapItem[] {
   const quoteUrl = `${BASE_URL}${p}/contact/`
   const materialsUrl = `${BASE_URL}${p}/materials/`
   const servicesUrl = `${BASE_URL}${p}/services/`
-  const shopUrl = `${BASE_URL}${p}/shop/`
   const returnPolicyUrl = `${BASE_URL}${p}/retour-herroepingsrecht/`
   const organizersUrl = `${BASE_URL}${p}/organizers/`
   return [
@@ -474,37 +482,41 @@ function buildCoreContentMap(locale: FeedLocale): ContentMapItem[] {
       url: materialsUrl,
       xref: "pages.materials",
     },
-    {
-      aliases: [],
-      avoid_when: ["custom_modeling_only"],
-      cluster: "shop",
-      cluster_role: "primary",
-      conversion_value: "high",
-      description:
-        locale === "en"
-          ? "Quote-first shop for small stocked products, reusable spools and in-house designs."
-          : "Quote-first shop voor kleine voorraadproducten, reusable spools en eigen ontwerpen.",
-      keywords:
-        locale === "en"
-          ? ["3d print shop", "3d printed products", "shop accessories"]
-          : ["3d print shop", "3d print producten", "shop accessoires"],
-      namespace: "pages",
-      page_type: "shop_hub",
-      primary_intent: "commercial",
-      primary_topic: locale === "en" ? "3D print shop" : "3D print shop",
-      priority_score: 88,
-      recommended_when: ["product_query", "small_stock_item_query"],
-      rel_url: `${p}/shop/`,
-      related_pages: [
-        { title: locale === "en" ? "Find my 3D model" : "Vind mijn 3D model", url: `${BASE_URL}${p}/3d-modellen-vinden/`, xref: "pages.find-model" },
-        { title: locale === "en" ? "3D modeling" : "3D modelleren", url: `${BASE_URL}${p}/3d-modelleren/`, xref: "pages.modeling" },
-        { title: locale === "en" ? "Contact" : "Contact", url: quoteUrl, xref: "pages.contact" },
-      ],
-      secondary_topics: locale === "en" ? ["quote flow", "stock items", "pickup or shipping"] : ["offerteflow", "voorraaditems", "afhalen of verzending"],
-      title: locale === "en" ? "Shop" : "Shop",
-      url: shopUrl,
-      xref: "pages.shop",
-    },
+    ...(SHOP_INDEXABLE
+      ? [
+          {
+            aliases: [],
+            avoid_when: ["custom_modeling_only"],
+            cluster: "shop",
+            cluster_role: "primary",
+            conversion_value: "high" as const,
+            description:
+              locale === "en"
+                ? "Quote-first shop for small stocked products, reusable spools and in-house designs."
+                : "Quote-first shop voor kleine voorraadproducten, reusable spools en eigen ontwerpen.",
+            keywords:
+              locale === "en"
+                ? ["3d print shop", "3d printed products", "shop accessories"]
+                : ["3d print shop", "3d print producten", "shop accessoires"],
+            namespace: "pages",
+            page_type: "shop_hub",
+            primary_intent: "commercial" as const,
+            primary_topic: locale === "en" ? "3D print shop" : "3D print shop",
+            priority_score: 88,
+            recommended_when: ["product_query", "small_stock_item_query"],
+            rel_url: `${p}/shop/`,
+            related_pages: [
+              { title: locale === "en" ? "Find my 3D model" : "Vind mijn 3D model", url: `${BASE_URL}${p}/3d-modellen-vinden/`, xref: "pages.find-model" },
+              { title: locale === "en" ? "3D modeling" : "3D modelleren", url: `${BASE_URL}${p}/3d-modelleren/`, xref: "pages.modeling" },
+              { title: locale === "en" ? "Contact" : "Contact", url: quoteUrl, xref: "pages.contact" },
+            ],
+            secondary_topics: locale === "en" ? ["quote flow", "stock items", "pickup or shipping"] : ["offerteflow", "voorraaditems", "afhalen of verzending"],
+            title: locale === "en" ? "Shop" : "Shop",
+            url: `${BASE_URL}${p}/shop/`,
+            xref: "pages.shop",
+          },
+        ]
+      : []),
     {
       aliases: [],
       avoid_when: ["non_organizer_query"],
@@ -561,7 +573,6 @@ function buildCoreContentMap(locale: FeedLocale): ContentMapItem[] {
       recommended_when: ["return_policy_query", "withdrawal_question", "refund_or_fault_issue"],
       rel_url: `${p}/retour-herroepingsrecht/`,
       related_pages: [
-        { title: locale === "en" ? "Shop" : "Shop", url: shopUrl, xref: "pages.shop" },
         { title: locale === "en" ? "Contact" : "Contact", url: quoteUrl, xref: "pages.contact" },
       ],
       secondary_topics:
@@ -596,7 +607,7 @@ function buildCoreContentMap(locale: FeedLocale): ContentMapItem[] {
       related_pages: [
         { title: locale === "en" ? "Services" : "Services", url: servicesUrl, xref: "pages.services" },
         { title: locale === "en" ? "Materials" : "Materialen", url: materialsUrl, xref: "pages.materials" },
-        { title: locale === "en" ? "Shop" : "Shop", url: shopUrl, xref: "pages.shop" },
+        ...(SHOP_INDEXABLE ? [{ title: locale === "en" ? "Shop" : "Shop", url: `${BASE_URL}${p}/shop/`, xref: "pages.shop" }] : []),
       ],
       secondary_topics: locale === "en" ? ["context upload", "material choice", "lead time"] : ["context upload", "materiaalkeuze", "lead time"],
       title: locale === "en" ? "Contact" : "Contact",
@@ -616,13 +627,13 @@ export function buildMachineReadableManifest(locale: FeedLocale): ManifestFeed {
         ? [
             "These feeds are generated from stable site data and should be treated as a routing layer for agents and developer tools.",
             "Prefer content-map.json to choose the best page for a user intent before reading deeper page content.",
-            "Shop pages are quote-first: use contact or product inquiry flows instead of assuming instant checkout.",
+            ...(SHOP_INDEXABLE ? ["Shop pages are quote-first: use contact or product inquiry flows instead of assuming instant checkout."] : []),
             "These feeds are additive resources and are intentionally not included as separate URLs in the sitemap.",
           ]
         : [
             "Deze feeds worden opgebouwd uit stabiele sitegegevens en dienen als routinglaag voor agents en developer tools.",
             "Gebruik content-map.json om eerst de beste pagina voor een intent te kiezen voor je dieper leest.",
-            "Shoppagina's werken quote-first: ga uit van contact- of productaanvragen, niet van instant checkout.",
+            ...(SHOP_INDEXABLE ? ["Shoppagina's werken quote-first: ga uit van contact- of productaanvragen, niet van instant checkout."] : []),
             "Deze feeds zijn additieve resources en worden bewust niet als aparte URLs in de sitemap gezet.",
           ],
     schema_version: SCHEMA_VERSION,
@@ -650,10 +661,10 @@ export function buildMachineReadableBusiness(locale: FeedLocale) {
       same_as: SITE.sameAs,
       primary_quote_url: `${BASE_URL}${prefix(locale)}/contact/`,
       materials_url: `${BASE_URL}${prefix(locale)}/materials/`,
-      shop_url: `${BASE_URL}${prefix(locale)}/shop/`,
+      ...(SHOP_INDEXABLE ? { shop_url: `${BASE_URL}${prefix(locale)}/shop/` } : {}),
       return_policy_url: `${BASE_URL}${prefix(locale)}/retour-herroepingsrecht/`,
       languages: ["nl-BE", "en-BE"],
-      quote_first_shop: true,
+      ...(SHOP_INDEXABLE ? { quote_first_shop: true } : {}),
     },
   }
 }
@@ -692,6 +703,8 @@ export function buildMachineReadableMaterials(locale: FeedLocale) {
 }
 
 async function getMachineReadableShopItems(locale: FeedLocale) {
+  if (!SHOP_INDEXABLE) return []
+
   const products = (await getShopProducts(locale, { cacheMode: "force-cache" })).filter(
     (product) => product.isLive,
   )
@@ -798,8 +811,8 @@ export async function buildMachineReadableContentMap(locale: FeedLocale) {
     recommended_when: ["specific_product_query", "small_stock_item_query"],
     rel_url: item.rel_url,
     related_pages: [
-      { title: locale === "en" ? "Shop" : "Shop", url: abs(`${p}/shop/`), xref: "pages.shop" },
       { title: locale === "en" ? "Contact" : "Contact", url: abs(`${p}/contact/`), xref: "pages.contact" },
+      ...(SHOP_INDEXABLE ? [{ title: locale === "en" ? "Shop" : "Shop", url: abs(`${p}/shop/`), xref: "pages.shop" }] : []),
     ],
     secondary_topics: [item.availability ?? "", item.purchase_mode ?? "inquiry"].filter(Boolean),
     title: item.name,
@@ -865,14 +878,22 @@ export async function buildMachineReadableContentMap(locale: FeedLocale) {
         ? [
             "Prefer items whose primary_intent matches the user request.",
             "If multiple items fit, prefer higher priority_score values.",
-            "Use conversion_value high items for quote-first or shop-adjacent requests.",
-            "Use materials pages for material questions, cases for proof/example requests and shop product pages for specific stocked items.",
+            SHOP_INDEXABLE
+              ? "Use conversion_value high items for quote-first or shop-adjacent requests."
+              : "Use conversion_value high items for quote-first or direct buying intent.",
+            SHOP_INDEXABLE
+              ? "Use materials pages for material questions, cases for proof/example requests and shop product pages for specific stocked items."
+              : "Use materials pages for material questions, cases for proof/example requests and contact for direct buying intent.",
           ]
         : [
             "Kies eerst items waarvan primary_intent overeenkomt met de vraag van de gebruiker.",
             "Als meerdere items passen, geef voorrang aan hogere priority_score waarden.",
-            "Gebruik conversion_value high items voor quote-first of shopgerichte vragen.",
-            "Gebruik materiaalpagina's voor materiaalvragen, cases voor bewijs/voorbeelden en shopproducten voor specifieke voorraaditems.",
+            SHOP_INDEXABLE
+              ? "Gebruik conversion_value high items voor quote-first of shopgerichte vragen."
+              : "Gebruik conversion_value high items voor offerte- of koopgerichte vragen.",
+            SHOP_INDEXABLE
+              ? "Gebruik materiaalpagina's voor materiaalvragen, cases voor bewijs/voorbeelden en shopproducten voor specifieke voorraaditems."
+              : "Gebruik materiaalpagina's voor materiaalvragen, cases voor bewijs/voorbeelden en contact voor directe koopintentie.",
           ],
     schema_version: SCHEMA_VERSION,
   }

@@ -677,30 +677,6 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/services">
 }
 
-// Validate ..\..\app\(pages)\shop\[slug]\page.tsx
-{
-  const handler = {} as typeof import("..\\..\\app\\(pages)\\shop\\[slug]\\page.js")
-  handler satisfies AppPageConfig<"/shop/[slug]">
-}
-
-// Validate ..\..\app\(pages)\shop\cart\page.tsx
-{
-  const handler = {} as typeof import("..\\..\\app\\(pages)\\shop\\cart\\page.js")
-  handler satisfies AppPageConfig<"/shop/cart">
-}
-
-// Validate ..\..\app\(pages)\shop\checkout\page.tsx
-{
-  const handler = {} as typeof import("..\\..\\app\\(pages)\\shop\\checkout\\page.js")
-  handler satisfies AppPageConfig<"/shop/checkout">
-}
-
-// Validate ..\..\app\(pages)\shop\page.tsx
-{
-  const handler = {} as typeof import("..\\..\\app\\(pages)\\shop\\page.js")
-  handler satisfies AppPageConfig<"/shop">
-}
-
 // Validate ..\..\app\(pages)\sustainability\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\sustainability\\page.js")
@@ -1341,30 +1317,6 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\services\\page.js")
   handler satisfies AppPageConfig<"/en/services">
-}
-
-// Validate ..\..\app\en\(pages)\shop\[slug]\page.tsx
-{
-  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\shop\\[slug]\\page.js")
-  handler satisfies AppPageConfig<"/en/shop/[slug]">
-}
-
-// Validate ..\..\app\en\(pages)\shop\cart\page.tsx
-{
-  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\shop\\cart\\page.js")
-  handler satisfies AppPageConfig<"/en/shop/cart">
-}
-
-// Validate ..\..\app\en\(pages)\shop\checkout\page.tsx
-{
-  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\shop\\checkout\\page.js")
-  handler satisfies AppPageConfig<"/en/shop/checkout">
-}
-
-// Validate ..\..\app\en\(pages)\shop\page.tsx
-{
-  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\shop\\page.js")
-  handler satisfies AppPageConfig<"/en/shop">
 }
 
 // Validate ..\..\app\en\(pages)\sustainability\page.tsx

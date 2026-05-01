@@ -8,6 +8,7 @@ import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogContentOverview from "@/components/BlogContentOverview"
 import BlogFaq from "@/components/BlogFaq"
 import { BLOG_FAQ } from "@/content/blog-faq"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 
 const canonical = "https://www.x3dprints.be/blog/beste-instellingen-bambu-printer/"
 const datePublished = "2024-09-01"
@@ -15,8 +16,6 @@ const dateModified = "2026-02-09"
 const faq = BLOG_FAQ["beste-instellingen-bambu-printer"]
 const designGuideHref =
   "/blog/3d-print-ontwerp-gids?utm_source=blog&utm_medium=internal&utm_campaign=bambu-instellingen"
-const shopHref = "/shop"
-const spoolHref = "/shop/bambu-reusable-spool"
 
 export const metadata: Metadata = {
   title: "Beste instellingen voor jouw Bambu printer | X3DPrints Blog",
@@ -344,14 +343,18 @@ export default function BambuSettingsPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Volgende stap</p>
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900">Extra Bambu spool of hulp bij je print?</h2>
                 <p className="mt-2 text-sm text-slate-600">
-                  Gebruik je Bambu refills en heb je extra spools nodig? Bekijk de live reusable spool in de shop of contacteer ons als je liever het printwerk of een settings review laat opvolgen.
+                  {SHOP_INDEXABLE
+                    ? "Gebruik je Bambu refills en heb je extra spools nodig? Bekijk de live reusable spool in de shop of contacteer ons als je liever het printwerk of een settings review laat opvolgen."
+                    : "Gebruik je Bambu refills en heb je extra spools nodig? Contacteer ons dan rechtstreeks voor beschikbaarheid, printwerk of een settings review."}
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:items-end">
-                <ShimmerButton href={spoolHref}>Bekijk reusable spool</ShimmerButton>
-                <Link href={shopHref} className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
-                  Bekijk shop & voorraaditems
-                </Link>
+                {SHOP_INDEXABLE ? <ShimmerButton href="/shop/bambu-reusable-spool">Bekijk reusable spool</ShimmerButton> : null}
+                {SHOP_INDEXABLE ? (
+                  <Link href="/shop" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
+                    Bekijk shop & voorraaditems
+                  </Link>
+                ) : null}
                 <Link href="/contact" className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700">
                   Plan een gesprek
                 </Link>

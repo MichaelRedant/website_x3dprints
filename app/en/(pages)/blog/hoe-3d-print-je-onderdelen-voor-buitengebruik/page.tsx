@@ -8,6 +8,7 @@ import BlogContentOverview from "@/components/BlogContentOverview"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogFaq from "@/components/BlogFaq"
 import { BLOG_FAQ_EN } from "@/content/blog-faq-en"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 
 const canonical = "https://www.x3dprints.be/en/blog/hoe-3d-print-je-onderdelen-voor-buitengebruik/"
 const publishedDate = "2025-11-21T08:00:00+01:00"
@@ -233,7 +234,10 @@ export default function OutdoorPrintingGuideEnPage() {
               </p>
               <p className="mt-4 text-sm text-slate-600">
                 A concrete example is our{" "}
-                <Link href="/en/shop/selectieve-hoornaarval-deksel" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                <Link
+                  href={SHOP_INDEXABLE ? "/en/shop/selectieve-hoornaarval-deksel" : "/en/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem"}
+                  className="font-semibold text-indigo-600 hover:text-indigo-500"
+                >
                   selective hornet trap lid for outdoor use
                 </Link>
                 . It is printed in PETG for outdoor use and ties back to the{" "}

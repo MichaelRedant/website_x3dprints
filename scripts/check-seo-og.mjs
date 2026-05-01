@@ -29,8 +29,6 @@ const TOP_LANDING_EXPECTED_OG = new Map([
   ["/en/segments/", "/images/og-segments-en.svg"],
   ["/viewer/", "/images/og-viewer-nl.svg"],
   ["/en/viewer/", "/images/og-viewer-en.svg"],
-  ["/shop/", "/images/og-shop-nl.svg"],
-  ["/en/shop/", "/images/og-shop-en.svg"],
 ])
 
 async function walk(dir) {

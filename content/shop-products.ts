@@ -1,4 +1,4 @@
-export const SHOP_INDEXABLE = true
+export const SHOP_INDEXABLE = false
 
 export type LocalizedText = {
   nl: string
@@ -636,4 +636,6 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
   },
 ]
 
-export const SHOP_PRODUCT_SLUGS = SHOP_PRODUCTS.filter((product) => product.isLive).map((product) => product.slug)
+export const SHOP_PRODUCT_SLUGS = SHOP_INDEXABLE
+  ? SHOP_PRODUCTS.filter((product) => product.isLive).map((product) => product.slug)
+  : []

@@ -21,6 +21,7 @@ import {
   materialGalleryByLocale,
   type MaterialGalleryItem,
 } from "@/content/material-gallery"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 import { buildFaqPageSchema, buildHowToSchema } from "@/lib/seo"
 
 type LocalizedMaterialArgs = {
@@ -320,8 +321,8 @@ const MATERIAL_PRODUCT_SPOTLIGHT: Partial<
       title: "Selectieve hoornaarval als echt outdoor onderdeel",
       description:
         "Wil je zien hoe PETG zich vertaalt naar een concreet product? Dit 3D geprinte deksel voor een selectieve hoornaarval is ontwikkeld voor buitengebruik, kleine batches en lokale acties.",
-      primaryHref: "/shop/selectieve-hoornaarval-deksel",
-      primaryCta: "Bekijk het PETG product",
+      primaryHref: SHOP_INDEXABLE ? "/shop/selectieve-hoornaarval-deksel" : "/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
+      primaryCta: SHOP_INDEXABLE ? "Bekijk het PETG product" : "Bekijk de PETG case",
       secondaryHref: "/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
       secondaryCta: "Lees de case",
     },
@@ -330,8 +331,8 @@ const MATERIAL_PRODUCT_SPOTLIGHT: Partial<
       title: "Selective hornet trap as a real outdoor part",
       description:
         "Want to see how PETG translates into a concrete product? This 3D printed lid for a selective hornet trap was developed for outdoor use, small batches, and local initiatives.",
-      primaryHref: "/shop/selectieve-hoornaarval-deksel",
-      primaryCta: "View the PETG product",
+      primaryHref: SHOP_INDEXABLE ? "/shop/selectieve-hoornaarval-deksel" : "/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
+      primaryCta: SHOP_INDEXABLE ? "View the PETG product" : "View the PETG case",
       secondaryHref: "/cases/selectieve-val-aziatische-hoornaar-sint-lievens-houtem",
       secondaryCta: "Read the case",
     },

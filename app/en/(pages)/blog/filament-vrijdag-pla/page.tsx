@@ -8,6 +8,7 @@ import BlogContentOverview from "@/components/BlogContentOverview"
 import BlogAuthorNote from "@/components/BlogAuthorNote"
 import BlogFaq from "@/components/BlogFaq"
 import { BLOG_FAQ_EN } from "@/content/blog-faq-en"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 
 const canonical = "https://www.x3dprints.be/en/blog/filament-vrijdag-pla/"
 const publishedDate = "2025-09-05T08:00:00+02:00"
@@ -320,7 +321,7 @@ export default function FilamentFridayPlaEnPage() {
               </div>
               <p className="mt-4 text-sm text-slate-600">
                 Running Bambu refills and want to keep multiple PLA colours ready faster? An extra{" "}
-                <Link href="/en/shop/bambu-reusable-spool" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                <Link href={SHOP_INDEXABLE ? "/en/shop/bambu-reusable-spool" : "/en/contact?topic=bambu-refills"} className="font-semibold text-indigo-600 hover:text-indigo-500">
                   Bambu reusable spool
                 </Link>{" "}
                 is useful as a spare or refill base in that workflow.

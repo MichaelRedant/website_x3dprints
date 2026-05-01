@@ -7,6 +7,7 @@ import {
   buildMachineReadableServices,
   buildMachineReadableShop,
 } from "@/lib/machine-readable"
+import { SHOP_INDEXABLE } from "@/content/shop-products"
 
 export const dynamic = "force-static"
 
@@ -17,7 +18,7 @@ const FEEDS = {
   "manifest.json": () => buildMachineReadableManifest("nl"),
   "materials.json": () => buildMachineReadableMaterials("nl"),
   "services.json": () => buildMachineReadableServices("nl"),
-  "shop.json": () => buildMachineReadableShop("nl"),
+  ...(SHOP_INDEXABLE ? { "shop.json": () => buildMachineReadableShop("nl") } : {}),
 } as const satisfies Record<string, () => unknown | Promise<unknown>>
 
 export function generateStaticParams() {
