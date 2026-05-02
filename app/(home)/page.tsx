@@ -18,13 +18,14 @@ import MaterialSwatches, { type Swatch } from "@/components/MaterialSwatches"
 import AutoCarousel from "@/components/AutoCarousel"
 import { localizeHref } from "@/lib/i18n/paths"
 import { buildFaqPageSchema } from "@/lib/seo"
+import {
+  getActiveSeasonalCampaign,
+  getOutOfSeasonPhotoSources,
+  isOutOfSeasonByKeyword,
+  type CarouselPhoto,
+} from "@/lib/seasonal-campaigns"
 import { existsSync, readdirSync, statSync } from "node:fs"
 import path from "node:path"
-
-type CarouselPhoto = {
-  src: string
-  alt: string
-}
 
 const NL_METADATA: Metadata = {
   title: "3D printen op maat voor bedrijven en particulieren | X3DPrints",
@@ -166,60 +167,6 @@ const getFixedPriorityPortfolioPhotos = (isEn: boolean) => {
   return photos
 }
 
-const SEASONAL_CAROUSEL_PHOTOS: Record<string, CarouselPhoto[]> = {
-  "/valentijn-3d-printen": [
-    {
-      src: "/images/portfolio/big%20valentijn%20boy%20articulated.webp",
-      alt: "3D geprinte articulated Valentijn figuur",
-    },
-  ],
-  "/blog/3d-printen-vaderdag-moederdag": [
-    { src: "/images/portfolio/vaderdag.webp", alt: "3D geprinte Vaderdag sleutelhangers" },
-    { src: "/images/portfolio/vaderdag2.webp", alt: "3D geprinte Vaderdag desk items" },
-    { src: "/images/portfolio/vaderdag3.webp", alt: "3D geprint gepersonaliseerd Vaderdag cadeau" },
-    { src: "/images/portfolio/moederdag.webp", alt: "3D geprint Moederdag cadeau in Silk PLA" },
-    { src: "/images/portfolio/moederdag2.webp", alt: "3D geprinte Moederdag organizer set" },
-    { src: "/images/portfolio/moederdag3.webp", alt: "3D geprint Moederdag naamcadeau" },
-  ],
-  "/blog/3d-printen-back-to-school": [
-    { src: "/images/portfolio/back2school%20(1).webp", alt: "Back to School set met pennenhouder en naamplaat" },
-    { src: "/images/portfolio/back2school%20(2).webp", alt: "Gepersonaliseerde bureau organizer voor school" },
-    { src: "/images/portfolio/back2school%20(3).webp", alt: "Back to School kit met labels en houder" },
-  ],
-  "/blog/3d-printen-winter-kerst-nieuwjaar": [
-    { src: "/images/portfolio/XmasBalls.webp", alt: "3D geprinte kerstdecor set 1" },
-    { src: "/images/portfolio/XmasBalls2.webp", alt: "3D geprinte kerstdecor set 2" },
-    { src: "/images/portfolio/XmasDoorTrim.webp", alt: "3D geprinte kerstdecor set 3" },
-    { src: "/images/portfolio/XmasScene.webp", alt: "3D geprinte kerstdecor set 4" },
-    { src: "/images/portfolio/xmasTree.webp", alt: "3D geprinte kerstdecor set 5" },
-    { src: "/images/portfolio/IMG-20241106-WA0000.webp", alt: "3D geprinte kerstdecor set 6" },
-  ],
-  "/blog/3d-printen-lente-pasen": [
-    { src: "/images/portfolio/easter1.webp", alt: "3D geprinte paasdecor set met eieren en hangers" },
-    { src: "/images/portfolio/Easter2.webp", alt: "3D geprinte paashangers in pastelkleuren" },
-    { src: "/images/portfolio/Easter3.webp", alt: "3D geprinte paasornamenten voor tafeldecoratie" },
-    { src: "/images/portfolio/Easter4.webp", alt: "3D geprinte translucent paaslantaarn" },
-    { src: "/images/portfolio/Easter5.webp", alt: "3D geprinte combinatie van paasdecor en seizoensdisplay" },
-  ],
-  "/blog/3d-printen-zomer": [
-    { src: "/images/portfolio/summer1.webp", alt: "3D geprinte zomerdecor set 1" },
-    { src: "/images/portfolio/Summer2.webp", alt: "3D geprinte zomerdecor set 2" },
-    { src: "/images/portfolio/Summer3.webp", alt: "3D geprinte zomerdecor set 3" },
-    { src: "/images/portfolio/Summer4.webp", alt: "3D geprinte zomerdecor set 4" },
-    { src: "/images/portfolio/Summer5.webp", alt: "3D geprinte zomerdecor set 5" },
-    { src: "/images/portfolio/Summer6.webp", alt: "3D geprinte zomerdecor set 6" },
-    { src: "/images/portfolio/Summer7.webp", alt: "3D geprinte zomerdecor set 7" },
-  ],
-  "/blog/3d-printen-herfst-halloween": [
-    { src: "/images/portfolio/halloween1.webp", alt: "3D geprinte Halloween decor set 1" },
-    { src: "/images/portfolio/Halloween2.webp", alt: "3D geprinte Halloween decor set 2" },
-    { src: "/images/portfolio/Halloween3.webp", alt: "3D geprinte Halloween decor set 3" },
-    { src: "/images/portfolio/Halloween4.webp", alt: "3D geprinte Halloween decor set 4" },
-    { src: "/images/portfolio/Halloween5.webp", alt: "3D geprinte Halloween decor set 5" },
-    { src: "/images/portfolio/Halloween6.webp", alt: "3D geprinte Halloween decor set 6" },
-  ],
-}
-
 const mergePhotosWithoutDuplicates = (photos: CarouselPhoto[]) => {
   const seen = new Set<string>()
   return photos.filter((photo) => {
@@ -229,98 +176,6 @@ const mergePhotosWithoutDuplicates = (photos: CarouselPhoto[]) => {
     seen.add(photo.src)
     return true
   })
-}
-
-const getOutOfSeasonPhotoSources = (activeSeasonHref: string) => {
-  const outOfSeasonSources = new Set<string>()
-  for (const [seasonHref, seasonPhotos] of Object.entries(SEASONAL_CAROUSEL_PHOTOS)) {
-    if (seasonHref === activeSeasonHref) continue
-    for (const photo of seasonPhotos) {
-      outOfSeasonSources.add(photo.src.toLowerCase())
-    }
-  }
-  return outOfSeasonSources
-}
-
-const getSeasonKeyFromHref = (seasonHref: string) => {
-  if (seasonHref === "/valentijn-3d-printen") return "valentine"
-  if (seasonHref === "/blog/3d-printen-vaderdag-moederdag") return "parents"
-  if (seasonHref === "/blog/3d-printen-back-to-school") return "back-to-school"
-  if (seasonHref === "/blog/3d-printen-winter-kerst-nieuwjaar") return "winter"
-  if (seasonHref === "/blog/3d-printen-lente-pasen") return "spring"
-  if (seasonHref === "/blog/3d-printen-zomer") return "summer"
-  return "autumn"
-}
-
-const SEASON_KEYWORDS: Record<string, string[]> = {
-  valentine: ["valentijn", "valentine"],
-  parents: ["vaderdag", "moederdag", "father", "mother"],
-  "back-to-school": ["back2school", "back-to-school"],
-  winter: ["xmas", "kerst", "winter", "christmas", "newyear", "nieuwjaar", "holiday"],
-  spring: ["easter", "pasen", "lente", "spring"],
-  summer: ["summer", "zomer"],
-  autumn: ["halloween", "herfst", "autumn", "fall"],
-}
-
-const isOutOfSeasonByKeyword = (photoSrc: string, activeSeasonHref: string) => {
-  const normalizedSrc = decodeURIComponent(photoSrc).toLowerCase()
-  const activeSeasonKey = getSeasonKeyFromHref(activeSeasonHref)
-  const matchedSeasons = Object.entries(SEASON_KEYWORDS)
-    .filter(([, keywords]) => keywords.some((keyword) => normalizedSrc.includes(keyword)))
-    .map(([seasonKey]) => seasonKey)
-
-  if (matchedSeasons.length === 0) {
-    return false
-  }
-  return !matchedSeasons.includes(activeSeasonKey)
-}
-
-function getSeasonCta(date: Date, isEn: boolean) {
-  const MS_IN_DAY = 86_400_000
-  const isWithinWindow = (target: Date, daysBefore: number, daysAfter: number) => {
-    const diff = target.getTime() - date.getTime()
-    return diff <= daysAfter * MS_IN_DAY && diff >= -daysBefore * MS_IN_DAY
-  }
-  const getNthWeekday = (month: number, weekday: number, n: number) => {
-    // month is 1-12, weekday 0=Sun..6=Sat
-    const first = new Date(Date.UTC(date.getUTCFullYear(), month - 1, 1))
-    const firstWeekday = first.getUTCDay()
-    const offset = (weekday - firstWeekday + 7) % 7
-    const day = 1 + offset + 7 * (n - 1)
-    return new Date(Date.UTC(date.getUTCFullYear(), month - 1, day))
-  }
-
-  const month = date.getUTCMonth() + 1 // 1-12
-  const day = date.getUTCDate()
-  const after = (m: number, d: number) => month > m || (month === m && day >= d)
-  const before = (m: number, d: number) => month < m || (month === m && day <= d)
-  // Belgie: Moederdag = 2e zondag mei, Vaderdag = 2e zondag juni (uitgezonderd Antwerpen)
-  const mothersDay = getNthWeekday(5, 0, 2)
-  const fathersDay = getNthWeekday(6, 0, 2)
-
-  const isValentijnWindow = (month === 1 && day >= 15) || (month === 2 && day <= 16)
-  const isParentsWindow =
-    isWithinWindow(mothersDay, 21, 1) || isWithinWindow(fathersDay, 21, 1) // 3 weken ervoor t/m dag zelf
-  const isBackToSchoolWindow = month === 8 || month === 9
-  if (isValentijnWindow) {
-    return { label: isEn ? "Valentine gifts" : "Valentijn cadeaus", href: "/valentijn-3d-printen" }
-  }
-  if (isParentsWindow) {
-    return { label: isEn ? "Mother's Day & Father's Day" : "Vaderdag & Moederdag", href: "/blog/3d-printen-vaderdag-moederdag" }
-  }
-  if (isBackToSchoolWindow) {
-    return { label: "Back to School", href: "/blog/3d-printen-back-to-school" }
-  }
-  if (after(11, 11) || before(2, 10)) {
-    return { label: isEn ? "Winter & holidays" : "Winter, Kerst & Nieuwjaar", href: "/blog/3d-printen-winter-kerst-nieuwjaar" }
-  }
-  if (after(2, 11) && before(5, 10)) {
-    return { label: isEn ? "Spring & Easter" : "Lente & Pasen", href: "/blog/3d-printen-lente-pasen" }
-  }
-  if (after(5, 11) && before(9, 10)) {
-    return { label: isEn ? "Summer decor" : "Zomer decor", href: "/blog/3d-printen-zomer" }
-  }
-  return { label: isEn ? "Autumn & Halloween" : "Herfst & Halloween", href: "/blog/3d-printen-herfst-halloween" }
 }
 
 const HOME_COPY_NL = {
@@ -929,14 +784,15 @@ export default function HomePage(props: unknown) {
   const isEn = normalizedLocale === "en"
   const localize = (href: string) => localizeHref(href, normalizedLocale)
   const copy = isEn ? HOME_COPY_EN : HOME_COPY_NL
-  const seasonCta = getSeasonCta(new Date(), isEn)
-  const outOfSeasonPhotoSources = getOutOfSeasonPhotoSources(seasonCta.href)
+  const activeSeasonalCampaign = getActiveSeasonalCampaign({ date: new Date(), locale: normalizedLocale })
+  const seasonCta = { label: activeSeasonalCampaign.label, href: activeSeasonalCampaign.href }
+  const outOfSeasonPhotoSources = getOutOfSeasonPhotoSources(activeSeasonalCampaign.key)
   const nonSeasonalPortfolioPhotos = latestPortfolioPhotos.filter(
     (photo) =>
       !outOfSeasonPhotoSources.has(photo.src.toLowerCase()) &&
-      !isOutOfSeasonByKeyword(photo.src, seasonCta.href),
+      !isOutOfSeasonByKeyword(photo.src, activeSeasonalCampaign.key),
   )
-  const seasonCarouselPhotos = SEASONAL_CAROUSEL_PHOTOS[seasonCta.href] ?? []
+  const seasonCarouselPhotos = activeSeasonalCampaign.photos
   const fixedPriorityPortfolioPhotos = getFixedPriorityPortfolioPhotos(isEn)
   const homeCarouselPhotos = mergePhotosWithoutDuplicates([
     ...seasonCarouselPhotos,
@@ -1110,7 +966,7 @@ export default function HomePage(props: unknown) {
                 items={homeCarouselPhotos}
                 speed={10}
                 visibleCount={4}
-                newCount={Math.min(seasonCarouselPhotos.length, homeCarouselPhotos.length)}
+                newCount={Math.min(activeSeasonalCampaign.minimumHomeSeasonalSlots, homeCarouselPhotos.length)}
                 premium
                 itemClass="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]"
               />

@@ -4,13 +4,31 @@ import path from "node:path"
 
 import AutoCarousel from "@/components/AutoCarousel"
 import Reveal from "@/components/Reveal"
+import {
+  getActiveSeasonalCampaign,
+  getOutOfSeasonPhotoSources,
+  isOutOfSeasonByKeyword,
+  type CarouselPhoto,
+  type Locale,
+} from "@/lib/seasonal-campaigns"
 
-type Locale = "nl" | "en"
-
-type CarouselPhoto = {
-  src: string
-  alt: string
+const hashString = (value: string) => {
+  let hash = 0
+  for (let index = 0; index < value.length; index += 1) {
+    hash = (hash * 31 + value.charCodeAt(index)) >>> 0
+  }
+  return hash
 }
+
+const deterministicOrderPhotos = (photos: CarouselPhoto[], seed: string) =>
+  [...photos].sort((left, right) => {
+    const leftRank = hashString(`${seed}:${left.src}`)
+    const rightRank = hashString(`${seed}:${right.src}`)
+    if (leftRank === rightRank) {
+      return left.src.localeCompare(right.src)
+    }
+    return leftRank - rightRank
+  })
 
 const portfolioDir = path.join(process.cwd(), "public/images/portfolio")
 const organizerSpotlightPhoto: CarouselPhoto = {
@@ -91,60 +109,6 @@ const getFixedPriorityPortfolioPhotos = (isEn: boolean) => {
   return photos
 }
 
-const SEASONAL_CAROUSEL_PHOTOS: Record<string, CarouselPhoto[]> = {
-  "/valentijn-3d-printen": [
-    {
-      src: "/images/portfolio/big%20valentijn%20boy%20articulated.webp",
-      alt: "3D geprinte articulated Valentijn figuur",
-    },
-  ],
-  "/blog/3d-printen-vaderdag-moederdag": [
-    { src: "/images/portfolio/vaderdag.webp", alt: "3D geprinte Vaderdag sleutelhangers" },
-    { src: "/images/portfolio/vaderdag2.webp", alt: "3D geprinte Vaderdag desk items" },
-    { src: "/images/portfolio/vaderdag3.webp", alt: "3D geprint gepersonaliseerd Vaderdag cadeau" },
-    { src: "/images/portfolio/moederdag.webp", alt: "3D geprint Moederdag cadeau in Silk PLA" },
-    { src: "/images/portfolio/moederdag2.webp", alt: "3D geprinte Moederdag organizer set" },
-    { src: "/images/portfolio/moederdag3.webp", alt: "3D geprint Moederdag naamcadeau" },
-  ],
-  "/blog/3d-printen-back-to-school": [
-    { src: "/images/portfolio/back2school%20(1).webp", alt: "Back to School set met pennenhouder en naamplaat" },
-    { src: "/images/portfolio/back2school%20(2).webp", alt: "Gepersonaliseerde bureau organizer voor school" },
-    { src: "/images/portfolio/back2school%20(3).webp", alt: "Back to School kit met labels en houder" },
-  ],
-  "/blog/3d-printen-winter-kerst-nieuwjaar": [
-    { src: "/images/portfolio/XmasBalls.webp", alt: "3D geprinte kerstdecor set 1" },
-    { src: "/images/portfolio/XmasBalls2.webp", alt: "3D geprinte kerstdecor set 2" },
-    { src: "/images/portfolio/XmasDoorTrim.webp", alt: "3D geprinte kerstdecor set 3" },
-    { src: "/images/portfolio/XmasScene.webp", alt: "3D geprinte kerstdecor set 4" },
-    { src: "/images/portfolio/xmasTree.webp", alt: "3D geprinte kerstdecor set 5" },
-    { src: "/images/portfolio/IMG-20241106-WA0000.webp", alt: "3D geprinte kerstdecor set 6" },
-  ],
-  "/blog/3d-printen-lente-pasen": [
-    { src: "/images/portfolio/easter1.webp", alt: "3D geprinte paasdecor set met eieren en hangers" },
-    { src: "/images/portfolio/Easter2.webp", alt: "3D geprinte paashangers in pastelkleuren" },
-    { src: "/images/portfolio/Easter3.webp", alt: "3D geprinte paasornamenten voor tafeldecoratie" },
-    { src: "/images/portfolio/Easter4.webp", alt: "3D geprinte translucent paaslantaarn" },
-    { src: "/images/portfolio/Easter5.webp", alt: "3D geprinte combinatie van paasdecor en seizoensdisplay" },
-  ],
-  "/blog/3d-printen-zomer": [
-    { src: "/images/portfolio/summer1.webp", alt: "3D geprinte zomerdecor set 1" },
-    { src: "/images/portfolio/Summer2.webp", alt: "3D geprinte zomerdecor set 2" },
-    { src: "/images/portfolio/Summer3.webp", alt: "3D geprinte zomerdecor set 3" },
-    { src: "/images/portfolio/Summer4.webp", alt: "3D geprinte zomerdecor set 4" },
-    { src: "/images/portfolio/Summer5.webp", alt: "3D geprinte zomerdecor set 5" },
-    { src: "/images/portfolio/Summer6.webp", alt: "3D geprinte zomerdecor set 6" },
-    { src: "/images/portfolio/Summer7.webp", alt: "3D geprinte zomerdecor set 7" },
-  ],
-  "/blog/3d-printen-herfst-halloween": [
-    { src: "/images/portfolio/halloween1.webp", alt: "3D geprinte Halloween decor set 1" },
-    { src: "/images/portfolio/Halloween2.webp", alt: "3D geprinte Halloween decor set 2" },
-    { src: "/images/portfolio/Halloween3.webp", alt: "3D geprinte Halloween decor set 3" },
-    { src: "/images/portfolio/Halloween4.webp", alt: "3D geprinte Halloween decor set 4" },
-    { src: "/images/portfolio/Halloween5.webp", alt: "3D geprinte Halloween decor set 5" },
-    { src: "/images/portfolio/Halloween6.webp", alt: "3D geprinte Halloween decor set 6" },
-  ],
-}
-
 const mergePhotosWithoutDuplicates = (photos: CarouselPhoto[]) => {
   const seen = new Set<string>()
   return photos.filter((photo) => {
@@ -156,112 +120,36 @@ const mergePhotosWithoutDuplicates = (photos: CarouselPhoto[]) => {
   })
 }
 
-const getOutOfSeasonPhotoSources = (activeSeasonHref: string) => {
-  const outOfSeasonSources = new Set<string>()
-  for (const [seasonHref, seasonPhotos] of Object.entries(SEASONAL_CAROUSEL_PHOTOS)) {
-    if (seasonHref === activeSeasonHref) continue
-    for (const photo of seasonPhotos) {
-      outOfSeasonSources.add(photo.src.toLowerCase())
-    }
-  }
-  return outOfSeasonSources
-}
-
-const getSeasonKeyFromHref = (seasonHref: string) => {
-  if (seasonHref === "/valentijn-3d-printen") return "valentine"
-  if (seasonHref === "/blog/3d-printen-vaderdag-moederdag") return "parents"
-  if (seasonHref === "/blog/3d-printen-back-to-school") return "back-to-school"
-  if (seasonHref === "/blog/3d-printen-winter-kerst-nieuwjaar") return "winter"
-  if (seasonHref === "/blog/3d-printen-lente-pasen") return "spring"
-  if (seasonHref === "/blog/3d-printen-zomer") return "summer"
-  return "autumn"
-}
-
-const SEASON_KEYWORDS: Record<string, string[]> = {
-  valentine: ["valentijn", "valentine"],
-  parents: ["vaderdag", "moederdag", "father", "mother"],
-  "back-to-school": ["back2school", "back-to-school"],
-  winter: ["xmas", "kerst", "winter", "christmas", "newyear", "nieuwjaar", "holiday"],
-  spring: ["easter", "pasen", "lente", "spring"],
-  summer: ["summer", "zomer"],
-  autumn: ["halloween", "herfst", "autumn", "fall"],
-}
-
-const isOutOfSeasonByKeyword = (photoSrc: string, activeSeasonHref: string) => {
-  const normalizedSrc = decodeURIComponent(photoSrc).toLowerCase()
-  const activeSeasonKey = getSeasonKeyFromHref(activeSeasonHref)
-  const matchedSeasons = Object.entries(SEASON_KEYWORDS)
-    .filter(([, keywords]) => keywords.some((keyword) => normalizedSrc.includes(keyword)))
-    .map(([seasonKey]) => seasonKey)
-
-  if (matchedSeasons.length === 0) {
-    return false
-  }
-  return !matchedSeasons.includes(activeSeasonKey)
-}
-
-function getSeasonCta(date: Date, isEn: boolean) {
-  const MS_IN_DAY = 86_400_000
-  const isWithinWindow = (target: Date, daysBefore: number, daysAfter: number) => {
-    const diff = target.getTime() - date.getTime()
-    return diff <= daysAfter * MS_IN_DAY && diff >= -daysBefore * MS_IN_DAY
-  }
-  const getNthWeekday = (month: number, weekday: number, n: number) => {
-    const first = new Date(Date.UTC(date.getUTCFullYear(), month - 1, 1))
-    const firstWeekday = first.getUTCDay()
-    const offset = (weekday - firstWeekday + 7) % 7
-    const day = 1 + offset + 7 * (n - 1)
-    return new Date(Date.UTC(date.getUTCFullYear(), month - 1, day))
-  }
-
-  const month = date.getUTCMonth() + 1
-  const day = date.getUTCDate()
-  const after = (m: number, d: number) => month > m || (month === m && day >= d)
-  const before = (m: number, d: number) => month < m || (month === m && day <= d)
-  const mothersDay = getNthWeekday(5, 0, 2)
-  const fathersDay = getNthWeekday(6, 0, 2)
-
-  const isValentijnWindow = (month === 1 && day >= 15) || (month === 2 && day <= 16)
-  const isParentsWindow =
-    isWithinWindow(mothersDay, 21, 1) || isWithinWindow(fathersDay, 21, 1)
-  const isBackToSchoolWindow = month === 8 || month === 9
-  if (isValentijnWindow) {
-    return { label: isEn ? "Valentine gifts" : "Valentijn cadeaus", href: "/valentijn-3d-printen" }
-  }
-  if (isParentsWindow) {
-    return { label: isEn ? "Mother's Day & Father's Day" : "Vaderdag & Moederdag", href: "/blog/3d-printen-vaderdag-moederdag" }
-  }
-  if (isBackToSchoolWindow) {
-    return { label: "Back to School", href: "/blog/3d-printen-back-to-school" }
-  }
-  if (after(11, 11) || before(2, 10)) {
-    return { label: isEn ? "Winter & holidays" : "Winter, Kerst & Nieuwjaar", href: "/blog/3d-printen-winter-kerst-nieuwjaar" }
-  }
-  if (after(2, 11) && before(5, 10)) {
-    return { label: isEn ? "Spring & Easter" : "Lente & Pasen", href: "/blog/3d-printen-lente-pasen" }
-  }
-  if (after(5, 11) && before(9, 10)) {
-    return { label: isEn ? "Summer decor" : "Zomer decor", href: "/blog/3d-printen-zomer" }
-  }
-  return { label: isEn ? "Autumn & Halloween" : "Herfst & Halloween", href: "/blog/3d-printen-herfst-halloween" }
-}
-
 export default function LocationShowcase({ locale, city }: { locale: Locale; city: string }) {
   const isEn = locale === "en"
-  const localize = (href: string) => (isEn ? `/en${href}` : href)
-  const seasonCta = getSeasonCta(new Date(), isEn)
-  const outOfSeasonPhotoSources = getOutOfSeasonPhotoSources(seasonCta.href)
+  const localize = (href: string) => (locale === "en" ? `/en${href}` : href)
+  const activeSeasonalCampaign = getActiveSeasonalCampaign({ date: new Date(), locale })
+  const carouselSeed = `${locale}:${city.trim().toLowerCase()}:${activeSeasonalCampaign.href}`
+  const outOfSeasonPhotoSources = getOutOfSeasonPhotoSources(activeSeasonalCampaign.key)
   const nonSeasonalPortfolioPhotos = latestPortfolioPhotos.filter(
     (photo) =>
       !outOfSeasonPhotoSources.has(photo.src.toLowerCase()) &&
-      !isOutOfSeasonByKeyword(photo.src, seasonCta.href),
+      !isOutOfSeasonByKeyword(photo.src, activeSeasonalCampaign.key),
   )
-  const seasonCarouselPhotos = SEASONAL_CAROUSEL_PHOTOS[seasonCta.href] ?? []
-  const fixedPriorityPortfolioPhotos = getFixedPriorityPortfolioPhotos(isEn)
+  const seasonCarouselPhotos = deterministicOrderPhotos(
+    activeSeasonalCampaign.photos,
+    `${carouselSeed}:season`,
+  )
+  const featuredSeasonalPhotos = seasonCarouselPhotos.slice(0, activeSeasonalCampaign.minimumLocationSeasonalSlots)
+  const remainingSeasonalPhotos = seasonCarouselPhotos.slice(activeSeasonalCampaign.minimumLocationSeasonalSlots)
+  const fixedPriorityPortfolioPhotos = deterministicOrderPhotos(
+    getFixedPriorityPortfolioPhotos(locale === "en"),
+    `${carouselSeed}:priority`,
+  )
+  const diversifiedPortfolioPhotos = deterministicOrderPhotos(
+    nonSeasonalPortfolioPhotos,
+    `${carouselSeed}:portfolio`,
+  )
   const homeCarouselPhotos = mergePhotosWithoutDuplicates([
-    ...seasonCarouselPhotos,
+    ...featuredSeasonalPhotos,
     ...fixedPriorityPortfolioPhotos,
-    ...nonSeasonalPortfolioPhotos,
+    ...remainingSeasonalPhotos,
+    ...diversifiedPortfolioPhotos,
   ]).slice(0, 20)
 
   const copy = isEn
@@ -305,7 +193,7 @@ export default function LocationShowcase({ locale, city }: { locale: Locale; cit
             items={homeCarouselPhotos}
             speed={10}
             visibleCount={4}
-            newCount={Math.min(seasonCarouselPhotos.length, homeCarouselPhotos.length)}
+            newCount={Math.min(featuredSeasonalPhotos.length, homeCarouselPhotos.length)}
             premium
             itemClass="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]"
           />
