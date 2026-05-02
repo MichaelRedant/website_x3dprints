@@ -2,17 +2,11 @@
 
 Date: 2026-05-02
 Scope: Alle lokale landingspagina's onder `/locaties/` en `/3d-printen-in-*`.
-Goal: De lokale cluster iteratief versterken tot unieke, people-first lokale SEO-pagina's die veilig kunnen groeien, zonder de sterke basis die nu al werkt kapot te maken.
+Goal: De lokale cluster ombouwen van brede template-dekking naar unieke, people-first lokale SEO-pagina's die veilig kunnen groeien, inclusief Limburg.
 
 ---
 
 ## 1. Hoofddoel
-
-De lokale pagina's doen al goed werk. Dit traject is dus geen volledige herbouw, maar een gerichte kwaliteitsupgrade.
-
-Belangrijke productregel:
-- uiteindelijk moeten alle lokale pagina's naar topniveau gebracht worden
-- dat gebeurt gefaseerd via een sterkere basis, niet via eenmalige brute herschrijving van de volledige cluster
 
 We willen geen grotere massa aan bijna identieke stadspagina's.
 
@@ -22,7 +16,7 @@ We willen:
 - minder risico op doorway-signalen
 - betere interne linking vanuit de pillar pages
 - meer visuele variatie zonder SEO-regressie
-- een schaalbaar model waarmee we later ook nieuwe regio's veilig kunnen toevoegen
+- een groeipad naar Limburg zonder opnieuw in een template-val te lopen
 
 ---
 
@@ -58,10 +52,6 @@ Huidige hoofdproblemen die eerst aangepakt moeten worden:
 - de projectcarousel op lokale pagina's is te uniform en te seasonal-heavy
 - er zitten nog copyfouten en outputfouten in sommige lokale pagina's
 
-Belangrijke nuance:
-- veel lokale pagina's doen nu al nuttig werk en hoeven niet volledig herschreven te worden
-- de winst zit vooral in gerichte upgrades van template, carousel, FAQ, bronnen en lokale context
-
 Gevolg:
 - de lokale cluster oogt eerder als schaalcontent dan als redactioneel verzorgde lokale landingspagina's
 - dat beperkt de kans op sterke lokale rankings en verhoogt het risico op quality-demotions
@@ -70,27 +60,14 @@ Gevolg:
 
 ## 4. Gewenste eindstructuur
 
-We bouwen de lokale SEO in 4 lagen op.
+We bouwen de lokale SEO in 3 lagen op.
 
 ### Laag A - Core hubs
 - `/3d-printen/`
 - `/locaties/`
+- later: `/3d-printen-in-limburg/`
 
-### Laag B - Provinciehubs voor bestaande dekking
-Deze bouwen we eerst op basis van de pagina's die al bestaan.
-
-- `/3d-printen-in-oost-vlaanderen/`
-- `/3d-printen-in-antwerpen/`
-- `/3d-printen-in-vlaams-brabant/`
-- `/3d-printen-in-west-vlaanderen/` zodra de bestaande lokale set daar inhoudelijk voldoende sterk gegroepeerd is
-
-Doel van deze hubs:
-- betere browse- en interne linkstructuur
-- sterkere clustering van steden en gemeenten
-- minder afhankelijkheid van losse gemeentepagina's
-- betere route voor users die op provincieniveau zoeken
-
-### Laag C - Prioriteitssteden
+### Laag B - Prioriteitssteden
 Dit zijn de pagina's die eerst het meeste aandacht krijgen.
 
 Bestaand kerngebied:
@@ -103,10 +80,17 @@ Bestaand kerngebied:
 - Leuven
 - Kortrijk
 
-### Laag D - Long-tail gemeenten
+Nieuwe Limburg-pool:
+- Hasselt
+- Genk
+- Sint-Truiden
+- Tongeren-Borgloon
+- Maasmechelen
+
+### Laag C - Long-tail gemeenten
 - enkel behouden of toevoegen als ze inhoudelijk afgeleid kunnen worden van een echte stadshub
 - geen volwaardige indexeerbare pagina zonder unieke lokale laag
-- zwakke pagina's later evalueren voor gerichte upgrade naar topniveau
+- zwakke pagina's later evalueren voor samenvoegen, herschrijven of noindex
 
 ---
 
@@ -274,51 +258,43 @@ Deze pagina's eerst naar topniveau brengen:
 - Lokeren
 - Mechelen
 
-### P2B - Volledige clusterupgrade
-- na P1 en P2 wordt de rest van de bestaande lokale cluster systematisch opgetrokken
-- doel blijft: alle bestaande indexeerbare lokale pagina's naar een geloofwaardig topniveau brengen
-- prioriteit gebeurt op basis van huidige dekking, interne rol in het cluster en commerciële relevantie
-
-### P3 - Provinciehubs
-Pas starten nadat P0 en P1 stabiel staan.
 
 Aanpak:
-- eerst `/3d-printen-in-oost-vlaanderen/`
-- daarna `/3d-printen-in-antwerpen/`
-- daarna `/3d-printen-in-vlaams-brabant/`
-- daarna evalueren of `/3d-printen-in-west-vlaanderen/` inhoudelijk klaar is
-
-### P4 - Nieuwe regio's later
-- Limburg blijft voorlopig buiten scope
-- pas heropenen nadat de bestaande provinciestructuur en prioriteitssteden aantoonbaar sterk werken
+- eerst `/3d-printen-in-limburg/`
+- daarna `/3d-printen-in-hasselt/`
+- daarna `/3d-printen-in-genk/`
+- daarna alleen uitbreiden als performance en inhoudsniveau goed genoeg zijn
 
 ---
 
-## 9. Provinciehub-plan
+## 9. Limburg-plan
 
-We bouwen eerst provinciehubs voor de gebieden waar al lokale pagina's bestaan.
+Limburg moet niet als losse massa pagina's starten.
 
 ### Fase 1
-Maak de eerste provinciehub:
-- `/3d-printen-in-oost-vlaanderen/`
+Maak 1 provinciehub:
+- `/3d-printen-in-limburg/`
 
 Die pagina moet:
-- de bestaande Oost-Vlaamse steden en gemeenten logisch bundelen
-- levering, afhalen en kernuse-cases op provincieniveau samenvatten
-- linken naar de sterkste stadspagina's zoals Herzele, Gent, Aalst, Oudenaarde en Geraardsbergen
+- Limburg als geheel afdekken
+- lever- en afhaalcontext geven
+- use cases voor maakindustrie, retail, events en particulieren benoemen
+- linken naar Hasselt en Genk zodra die live zijn
 
 ### Fase 2
-Maak bijkomende hubs:
-- `/3d-printen-in-antwerpen/`
-- `/3d-printen-in-vlaams-brabant/`
+Maak 2 sterke stadspagina's:
+- `/3d-printen-in-hasselt/`
+- `/3d-printen-in-genk/`
 
 ### Fase 3
-Evalueer of een West-Vlaanderen-hub inhoudelijk voldoende basis heeft:
-- `/3d-printen-in-west-vlaanderen/`
+Alleen verder uitbreiden als nodig:
+- `/3d-printen-in-sint-truiden/`
+- `/3d-printen-in-tongeren-borgloon/`
+- `/3d-printen-in-maasmechelen/`
 
 Kernregel:
-- provinciehubs moeten een navigatie- en contextlaag zijn boven bestaande lokale pagina's
-- geen lege SEO-hubs zonder duidelijke interne structuur en use-case waarde
+- Limburg groeit via hubs en prioriteitssteden
+- niet via brute volume-uitbreiding
 
 ---
 
@@ -378,7 +354,6 @@ Voor livegang moet elke lokale pagina slagen op:
 SEO:
 - meer impressies op lokale stad- en provincietermen
 - hogere CTR op prioriteitssteden
-- hogere CTR en engagement op nieuwe provinciehubs
 - meer indexeerbare lokale pagina's die echt verkeer trekken
 - minder dunne pagina's zonder impressies
 
@@ -402,11 +377,9 @@ Conversie:
 4. Herwerk de lokale carousel naar seasonal-first plus deterministische randomisatie.
 5. Herschrijf Herzele, Gent, Aalst, Oudenaarde, Geraardsbergen en Antwerpen volledig.
 6. Maak `/locaties/` redactioneel sterker en minder massa-gedreven.
-7. Trek daarna de rest van de bestaande lokale cluster op via dezelfde verbeterde template.
-8. Bouw daarna `/3d-printen-in-oost-vlaanderen/`.
-9. Voeg daarna `/3d-printen-in-antwerpen/` en `/3d-printen-in-vlaams-brabant/` toe.
-10. Evalueer daarna of `/3d-printen-in-west-vlaanderen/` genoeg inhoudelijke basis heeft.
-11. Meet performance en beslis pas daarna over nieuwe regio's buiten de huidige dekking.
+7. Bouw daarna pas `/3d-printen-in-limburg/`.
+8. Voeg daarna Hasselt en Genk toe.
+9. Meet performance en beslis pas dan over extra Limburgse steden.
 
 ---
 
@@ -417,11 +390,6 @@ Nieuwe lokale pagina's mogen pas live als:
 - de pagina unieke lokale waarde heeft
 - de carousel niet dezelfde standaardset toont als elke andere pagina
 - de pagina meer is dan een zoekterm-variant op bestaande content
-
-Nieuwe provinciehubs mogen pas live als:
-- ze minstens 5 sterke onderliggende lokale pagina's logisch bundelen
-- ze een eigen intro, use-case laag en provinciecontext hebben
-- ze meer doen dan een alfabetisch lijstje van bestaande links tonen
 
 Als een nieuwe pagina deze drempel niet haalt:
 - niet publiceren
