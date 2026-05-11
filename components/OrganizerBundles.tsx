@@ -48,13 +48,13 @@ export default function OrganizerBundles({ systemSlug, systemName, bundles }: Or
     <section className="mx-auto max-w-6xl space-y-8">
       <header className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-700">{copy.kicker}</p>
-          <h2 className="text-balance text-3xl font-extrabold text-slate-900 sm:text-4xl">{copy.title}</h2>
-          <p className="mt-2 max-w-2xl text-slate-700">{copy.body}</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-700 dark:text-cyan-300">{copy.kicker}</p>
+          <h2 className="text-balance text-3xl font-extrabold text-slate-900 dark:text-white sm:text-4xl">{copy.title}</h2>
+          <p className="mt-2 max-w-2xl text-slate-700 dark:text-slate-300">{copy.body}</p>
         </div>
         <Link
           href={localize("/materials#material-suggestion-tool")}
-          className="text-sm font-semibold text-cyan-700 underline-offset-4 hover:text-cyan-900 hover:underline"
+          className="text-sm font-semibold text-cyan-700 underline-offset-4 hover:text-cyan-900 hover:underline dark:text-cyan-300 dark:hover:text-cyan-100"
         >
           {copy.materialTool}
         </Link>

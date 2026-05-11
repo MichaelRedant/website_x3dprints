@@ -11,7 +11,7 @@ import { SITE } from "@/lib/seo"
 export const metadata: Metadata = {
   title: "Tool organizers made to fit | X3DPrints",
   description:
-    "Gridfinity organizers, Packout inserts, TSTAK inserts and fully custom toolbox layouts from Belgium. No STL hassle—fixed, labelable, anti-slip layouts for vans and workbenches.",
+    "Gridfinity organizers, Packout inserts, TSTAK inserts and fully custom toolbox layouts from Belgium. No STL hassle - fixed, labelable, anti-slip layouts for vans and workbenches.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/organizers/",
     languages: {
@@ -165,7 +165,7 @@ export default function OrganizersHubPageEn() {
 
         <section id="systems">
         <Reveal className="space-y-4">
-          <p className="text-sm font-semibold uppercase tracking-[0.26em] text-slate-600">Choose your system</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.26em] text-slate-600 dark:text-slate-300">Choose your system</p>
           <div className="grid gap-6 lg:grid-cols-2">
             {cards.map((card, index) => {
               const ctaHref = `/en/organizers/${card.slug}`
@@ -197,7 +197,7 @@ export default function OrganizersHubPageEn() {
                         href={externalLink.href}
                         target="_blank"
                         rel="noreferrer"
-                        className="mt-2 inline-flex items-center gap-2 text-xs font-semibold text-amber-700 underline underline-offset-4 hover:text-amber-900"
+                        className="mt-2 inline-flex items-center gap-2 text-xs font-semibold text-amber-700 underline underline-offset-4 hover:text-amber-900 dark:text-amber-200 dark:hover:text-amber-100"
                       >
                         View {externalLink.label}
                         <span className="i-lucide-external-link" aria-hidden />
@@ -206,7 +206,7 @@ export default function OrganizersHubPageEn() {
                     <ul className="mt-4 grid gap-2 text-sm text-slate-800 dark:text-slate-200">
                       {card.pains.slice(0, 4).map((pain) => (
                         <li key={pain} className="flex items-center gap-2">
-                          <span className="i-lucide-hammer text-slate-500" aria-hidden />
+                          <span className="i-lucide-hammer text-slate-500 dark:text-slate-300" aria-hidden />
                           {pain}
                         </li>
                       ))}
@@ -214,13 +214,13 @@ export default function OrganizersHubPageEn() {
                     <div className="mt-5 flex flex-wrap gap-3">
                       <Link
                         href={ctaHref}
-                        className="inline-flex items-center gap-2 rounded-xl border border-amber-100/70 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                        className="inline-flex items-center gap-2 rounded-xl border border-amber-100/70 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-slate-900 dark:text-slate-50 dark:hover:bg-slate-800"
                       >
                         {ctaLabel}
                       </Link>
                       <Link
                         href="/en/materials#material-suggestion-tool"
-                        className="inline-flex items-center gap-2 rounded-xl border border-amber-100/70 bg-white/40 px-4 py-2 text-sm font-semibold text-amber-800 transition hover:-translate-y-0.5 hover:bg-white"
+                        className="inline-flex items-center gap-2 rounded-xl border border-amber-100/70 bg-white/40 px-4 py-2 text-sm font-semibold text-amber-800 transition hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-slate-950/70 dark:text-amber-200 dark:hover:bg-slate-900"
                       >
                         Ask material advice
                       </Link>

@@ -94,12 +94,12 @@ P0 - Kritisch (nu eerst)
 P1 - Hoge groei-impact
 3. Conversieversneller: snelle contactroute + tracking (zonder WhatsApp)
 - Actie:
-  - Snelle contactknoppen op money pages: `Offerte aanvragen`, `Mail direct`, `Bel nu`.
+  - Snelle contactknoppen op money pages: `Offerte aanvragen`, `Mail direct`, `Project uploaden`.
   - Prefill-routes vanuit use-cases behouden/uitbreiden (`/contact?material=...&quote=...`).
-  - Event tracking toevoegen op contact-starts (CTA click, mail click, tel click, form submit).
+  - Event tracking toevoegen op contact-starts (CTA click, mail click, project upload click, form submit).
 - DoD:
   - Alle money pages hebben minimaal 2 snelle contactacties boven de fold.
-  - Eventmeting zichtbaar in analytics voor CTA, mail, tel en form submit.
+  - Eventmeting zichtbaar in analytics voor CTA, mail, project upload en form submit.
 
 4. Capaciteitssignaal ("huidige doorlooptijd")
 - Actie:

@@ -103,8 +103,8 @@ function chooseMaterials(useCase: UseCase, environment: Environment, priority: P
 
 function optionClass(active: boolean) {
   return active
-    ? "border-indigo-400 bg-indigo-50 text-indigo-700"
-    : "border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:bg-slate-50"
+    ? "border-indigo-400 bg-indigo-50 text-indigo-700 dark:border-indigo-300/40 dark:bg-indigo-400/10 dark:text-indigo-200"
+    : "border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-600 dark:hover:bg-slate-800"
 }
 
 export default function MaterialDecisionAssistant({ locale }: { locale: Locale }) {
@@ -130,14 +130,14 @@ export default function MaterialDecisionAssistant({ locale }: { locale: Locale }
     : localize("/contact?quote=Materiaaladvies")
 
   return (
-    <div className="rounded-3xl border border-slate-200/70 bg-white/80 p-6 shadow-lg backdrop-blur sm:p-7">
-      <p className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">
+    <div className="rounded-3xl border border-slate-200/70 bg-white/80 p-6 shadow-lg backdrop-blur dark:border-slate-700/70 dark:bg-slate-950/75 sm:p-7">
+      <p className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500 dark:text-slate-400">
         {isEn ? "Quick chooser" : "Snelle keuzehulp"}
       </p>
-      <h2 className="mt-3 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-3 text-2xl font-semibold text-slate-900 dark:text-slate-50">
         {isEn ? "Start with 3 quick answers" : "Start met 3 snelle antwoorden"}
       </h2>
-      <p className="mt-2 text-sm text-slate-600">
+      <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
         {isEn
           ? "Pick use case, environment and priority. We instantly suggest the best material route."
           : "Kies use-case, omgeving en prioriteit. Je krijgt direct de beste materiaalroute."}
@@ -145,7 +145,7 @@ export default function MaterialDecisionAssistant({ locale }: { locale: Locale }
 
       <div className="mt-5 grid gap-5 lg:grid-cols-3">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
             {isEn ? "Step 1 - Use case" : "Stap 1 - Use-case"}
           </p>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -168,7 +168,7 @@ export default function MaterialDecisionAssistant({ locale }: { locale: Locale }
         </div>
 
         <div className={`transition ${useCase ? "opacity-100" : "opacity-45"}`}>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
             {isEn ? "Step 2 - Environment" : "Stap 2 - Omgeving"}
           </p>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -182,7 +182,7 @@ export default function MaterialDecisionAssistant({ locale }: { locale: Locale }
                 aria-pressed={environment === item.value}
                 onClick={() => setEnvironment(item.value)}
                 disabled={!useCase}
-                className={`rounded-full border px-3 py-1.5 text-sm font-semibold transition disabled:cursor-not-allowed ${optionClass(environment === item.value)}`}
+                className={`rounded-full border px-3 py-1.5 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-60 ${optionClass(environment === item.value)}`}
               >
                 {isEn ? item.en : item.nl}
               </button>
@@ -191,7 +191,7 @@ export default function MaterialDecisionAssistant({ locale }: { locale: Locale }
         </div>
 
         <div className={`transition ${environment ? "opacity-100" : "opacity-45"}`}>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
             {isEn ? "Step 3 - Priority" : "Stap 3 - Prioriteit"}
           </p>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -206,7 +206,7 @@ export default function MaterialDecisionAssistant({ locale }: { locale: Locale }
                 aria-pressed={priority === item.value}
                 onClick={() => setPriority(item.value)}
                 disabled={!environment}
-                className={`rounded-full border px-3 py-1.5 text-sm font-semibold transition disabled:cursor-not-allowed ${optionClass(priority === item.value)}`}
+                className={`rounded-full border px-3 py-1.5 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-60 ${optionClass(priority === item.value)}`}
               >
                 {isEn ? item.en : item.nl}
               </button>
@@ -215,23 +215,23 @@ export default function MaterialDecisionAssistant({ locale }: { locale: Locale }
         </div>
       </div>
 
-      <div className={`mt-6 rounded-2xl border border-slate-200/70 bg-slate-50/80 p-4 transition ${selected ? "opacity-100" : "opacity-70"}`}>
+      <div className={`mt-6 rounded-2xl border border-slate-200/70 bg-slate-50/80 p-4 transition dark:border-slate-700/70 dark:bg-slate-900/70 ${selected ? "opacity-100" : "opacity-70"}`}>
         {selected ? (
           <>
-            <p className="text-sm font-semibold text-slate-900">
+            <p className="text-sm font-semibold text-slate-900 dark:text-slate-50">
               {isEn ? "Recommended route" : "Aanbevolen route"}
             </p>
             <div className="mt-3 grid gap-3 sm:grid-cols-3">
               {recommendations.map((item, index) => (
-                <div key={item.slug} className="rounded-xl border border-slate-200 bg-white p-3">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                <div key={item.slug} className="rounded-xl border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-950/80">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
                     {index === 0 ? (isEn ? "Best match" : "Beste match") : isEn ? "Alternative" : "Alternatief"}
                   </p>
-                  <p className="mt-1 text-sm font-semibold text-slate-900">{isEn ? item.nameEn : item.nameNl}</p>
-                  <p className="mt-1 text-xs text-slate-600">{isEn ? item.reasonEn : item.reasonNl}</p>
+                  <p className="mt-1 text-sm font-semibold text-slate-900 dark:text-slate-50">{isEn ? item.nameEn : item.nameNl}</p>
+                  <p className="mt-1 text-xs text-slate-600 dark:text-slate-300">{isEn ? item.reasonEn : item.reasonNl}</p>
                   <Link
                     href={localize(`/materials/${item.slug}`)}
-                    className="mt-2 inline-flex text-xs font-semibold text-indigo-600 transition hover:text-indigo-500"
+                    className="mt-2 inline-flex text-xs font-semibold text-indigo-600 transition hover:text-indigo-500 dark:text-indigo-300 dark:hover:text-indigo-200"
                   >
                     {isEn ? "Open material page" : "Open materiaalfiche"}
                   </Link>
@@ -247,14 +247,14 @@ export default function MaterialDecisionAssistant({ locale }: { locale: Locale }
               </ShimmerButton>
               <Link
                 href="#material-suggestion-tool"
-                className="inline-flex items-center rounded-xl border border-slate-200/80 bg-white px-4 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+                className="inline-flex items-center rounded-xl border border-slate-200/80 bg-white px-4 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
               >
                 {isEn ? "Need deeper guidance?" : "Toch meer detail nodig?"}
               </Link>
             </div>
           </>
         ) : (
-          <p className="text-sm text-slate-600">
+          <p className="text-sm text-slate-600 dark:text-slate-300">
             {isEn
               ? "Select all 3 steps to unlock your recommended materials and direct quote CTA."
               : "Doorloop de 3 stappen om je aanbevolen materialen en directe offerte-CTA te zien."}

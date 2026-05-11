@@ -32,16 +32,14 @@ function DesktopDropdown({
       <button
         type="button"
         className={cn(
-          "group inline-flex items-center gap-1 px-3 py-2 text-sm font-semibold transition hover:text-slate-900 dark:text-[#e7f5ff] dark:hover:text-white md:text-[13px] lg:text-sm",
+          "group inline-flex items-center gap-1 px-3 py-2 text-sm font-semibold transition hover:text-slate-900 dark:text-slate-200 dark:hover:text-white md:text-[13px] lg:text-sm",
           scrolled ? "text-slate-800" : "text-slate-700",
         )}
       >
-        <span className="relative drop-shadow-[0_0_12px_rgba(0,230,255,.4)] group-hover:drop-shadow-[0_0_16px_rgba(255,0,168,.5)]">
-          {label}
-        </span>
+        <span>{label}</span>
         <span className="i-lucide-chevron-down text-xs opacity-80" aria-hidden />
       </button>
-      <div className="pointer-events-none invisible absolute left-0 top-full z-[1200] w-64 translate-y-1 rounded-2xl border border-slate-200/70 bg-white/95 p-3 shadow-2xl shadow-slate-900/10 opacity-0 transition duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto dark:border-[#1f2336] dark:bg-[#0B0F1A]/95 dark:shadow-black/40">
+      <div className="pointer-events-none invisible absolute left-0 top-full z-[1200] w-64 translate-y-1 rounded-2xl border border-slate-200/70 bg-white/95 p-3 shadow-2xl shadow-slate-900/10 opacity-0 transition duration-150 group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 dark:border-slate-700/70 dark:bg-slate-950/95 dark:shadow-black/30">
         <ul className="space-y-1 text-sm">
           {group.items.map((item) => {
             const href = hrefFn(item.href)
@@ -52,8 +50,8 @@ function DesktopDropdown({
                 <Link
                   href={href}
                   className={cn(
-                    "flex items-center justify-between rounded-xl px-3 py-2 transition hover:bg-slate-100 dark:hover:bg-[#111525]",
-                    active ? "bg-slate-100 font-semibold dark:bg-[#111525]" : "text-slate-700 dark:text-slate-200",
+                    "flex items-center justify-between rounded-xl px-3 py-2 transition hover:bg-slate-100 dark:hover:bg-slate-900",
+                    active ? "bg-slate-100 font-semibold dark:bg-slate-900" : "text-slate-700 dark:text-slate-200",
                   )}
                 >
                   {itemLabel}
@@ -146,10 +144,8 @@ export default function Header() {
         "fixed inset-x-0 top-0 isolate overflow-visible transition-all duration-500",
         open ? "z-[1200]" : "z-[200]",
         scrolled
-          ? "bg-white/80 shadow-[0_12px_34px_rgba(0,0,0,.08)] border-b border-slate-200/70 supports-[backdrop-filter]:backdrop-blur-2xl supports-[backdrop-filter]:backdrop-saturate-150 dark:border-[#161821] dark:bg-[#0B0F1A]/92 dark:shadow-[0_18px_36px_rgba(0,0,0,.55)]"
-          : "bg-transparent border-b border-transparent shadow-none dark:before:opacity-0 dark:after:opacity-0",
-        scrolled &&
-          "dark:before:pointer-events-none dark:before:absolute dark:before:inset-0 dark:before:bg-[linear-gradient(90deg,rgba(0,230,255,0.12),transparent,rgba(215,38,61,0.12))] dark:before:opacity-70 dark:after:pointer-events-none dark:after:absolute dark:after:inset-x-0 dark:after:bottom-0 dark:after:h-px dark:after:bg-[radial-gradient(circle_at_10%_50%,rgba(0,230,255,0.4),transparent),radial-gradient(circle_at_90%_50%,rgba(215,38,61,0.35),transparent)]",
+          ? "border-b border-slate-200/70 bg-white/80 shadow-[0_12px_34px_rgba(0,0,0,.08)] supports-[backdrop-filter]:backdrop-blur-2xl supports-[backdrop-filter]:backdrop-saturate-150 dark:border-slate-800/70 dark:bg-slate-950/88 dark:shadow-[0_18px_36px_rgba(2,6,23,.45)]"
+          : "border-b border-transparent bg-transparent shadow-none",
       )}
     >
       <div
@@ -158,9 +154,9 @@ export default function Header() {
           scrolled ? "opacity-100" : "opacity-0",
         )}
       >
-        <div className="absolute -left-10 top-[-35%] h-48 w-48 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(0,230,255,0.32),transparent_55%)] blur-3xl opacity-80" />
-        <div className="absolute right-[-18%] top-1/2 h-52 w-52 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_70%_40%,rgba(255,0,168,0.28),transparent_60%)] blur-3xl opacity-70" />
-        <div className="absolute bottom-[-28%] left-1/4 h-28 w-64 rounded-full bg-[conic-gradient(from_120deg_at_50%_50%,rgba(255,255,255,0.35),rgba(0,230,255,0.12),rgba(255,0,168,0.14),rgba(255,255,255,0.35))] blur-2xl opacity-60" />
+        <div className="absolute -left-10 top-[-35%] h-48 w-48 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(99,102,241,0.18),transparent_55%)] blur-3xl opacity-80 dark:bg-[radial-gradient(circle_at_30%_30%,rgba(148,163,184,0.14),transparent_55%)]" />
+        <div className="absolute right-[-18%] top-1/2 h-52 w-52 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_70%_40%,rgba(34,211,238,0.18),transparent_60%)] blur-3xl opacity-70 dark:bg-[radial-gradient(circle_at_70%_40%,rgba(71,85,105,0.18),transparent_60%)]" />
+        <div className="absolute bottom-[-28%] left-1/4 h-28 w-64 rounded-full bg-[conic-gradient(from_120deg_at_50%_50%,rgba(255,255,255,0.3),rgba(99,102,241,0.08),rgba(34,211,238,0.08),rgba(255,255,255,0.3))] blur-2xl opacity-60 dark:bg-[conic-gradient(from_120deg_at_50%_50%,rgba(255,255,255,0.12),rgba(71,85,105,0.1),rgba(30,41,59,0.08),rgba(255,255,255,0.12))]" />
       </div>
       <Container
         className={cn(
@@ -184,11 +180,7 @@ export default function Header() {
             )}
           />
           <span
-            className={cn(
-              "font-semibold tracking-tight transition-all duration-500",
-              scrolled ? "text-[14px]" : "text-[15px]",
-              "text-slate-900 dark:text-slate-100",
-            )}
+            className={cn("font-semibold tracking-tight transition-all duration-500 text-slate-900 dark:text-slate-100", scrolled ? "text-[14px]" : "text-[15px]")}
           >
             X3DPrints
           </span>
@@ -207,21 +199,16 @@ export default function Header() {
                 key={item.href}
                 href={href}
                 className={cn(
-                  "group relative px-3 py-2 text-sm font-semibold transition hover:text-slate-900 dark:text-[#e7f5ff] dark:hover:text-white md:text-[13px] lg:text-sm",
+                  "group relative px-3 py-2 text-sm font-semibold transition hover:text-slate-900 dark:text-slate-200 dark:hover:text-white md:text-[13px] lg:text-sm",
                   scrolled ? "text-slate-800" : "text-slate-700",
                 )}
               >
-                <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(0,230,255,0.55),transparent)] opacity-30" />
-                <span className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,0,168,0.55),transparent)] opacity-0 transition duration-200 group-hover:opacity-100" />
-                <span className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_200%,rgba(0,230,255,0.12),transparent)] opacity-0 transition duration-200 group-hover:opacity-70" />
-                <span className="relative drop-shadow-[0_0_12px_rgba(0,230,255,.4)] group-hover:drop-shadow-[0_0_16px_rgba(255,0,168,.5)]">
-                  {label}
-                </span>
+                <span className="relative">{label}</span>
                 <AnimatePresence>
                   {active && (
                     <motion.span
                       layoutId="nav-active-underline"
-                      className="absolute inset-x-1 -bottom-0.5 h-[2px] rounded-full bg-slate-900 dark:bg-[#FF00A8] dark:shadow-[0_0_14px_rgba(255,0,168,.8)]"
+                      className="absolute inset-x-1 -bottom-0.5 h-[2px] rounded-full bg-slate-900 dark:bg-sky-400"
                       initial={{ opacity: 0, y: 2 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 2 }}
@@ -238,7 +225,7 @@ export default function Header() {
           <ThemeToggle className="ml-2" />
           <Link
             href={localizedHref("/contact")}
-            className="ml-2 inline-flex items-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(99,102,241,.35)] transition hover:brightness-110 dark:border-[#1f2336] dark:bg-[linear-gradient(90deg,#D7263D,45%,#7A00FF)] dark:shadow-[0_8px_24px_rgba(215,38,61,.4)] dark:ring-1 dark:ring-[#00E6FF]/40"
+            className="ml-2 inline-flex items-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(99,102,241,.35)] transition hover:brightness-110 dark:border-slate-700 dark:bg-[linear-gradient(90deg,#334155,45%,#1e293b)] dark:shadow-[0_8px_24px_rgba(15,23,42,.35)]"
           >
             {quoteLabel}
           </Link>
@@ -249,7 +236,7 @@ export default function Header() {
           aria-label="Open menu"
           aria-expanded={open}
           onClick={() => setOpen(true)}
-          className="relative inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200/60 bg-white/70 text-slate-900 shadow-sm backdrop-blur transition hover:border-slate-300 dark:border-[#1f2336] dark:bg-[#0B0F1A] dark:text-slate-100 lg:hidden"
+          className="relative inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200/60 bg-white/70 text-slate-900 shadow-sm backdrop-blur transition hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 lg:hidden"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
             <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
@@ -271,7 +258,7 @@ export default function Header() {
                 exit={{ opacity: 0 }}
               />
               <motion.div
-                className="fixed left-1/2 top-3 z-[1220] w-[94%] max-w-md -translate-x-1/2 overflow-hidden rounded-2xl border border-slate-200/70 bg-white/90 p-4 shadow-xl backdrop-blur lg:hidden dark:border-[#1f2336] dark:bg-[#0B0F1A]/95 dark:text-slate-100 max-h-[calc(100vh-1.5rem)] overflow-y-auto"
+                className="fixed left-1/2 top-3 z-[1220] max-h-[calc(100vh-1.5rem)] w-[94%] max-w-md -translate-x-1/2 overflow-y-auto overflow-hidden rounded-2xl border border-slate-200/70 bg-white/90 p-4 shadow-xl backdrop-blur dark:border-slate-700/70 dark:bg-slate-950/95 dark:text-slate-100 lg:hidden"
                 role="dialog"
                 aria-modal="true"
                 initial={{ y: -16, opacity: 0 }}
@@ -286,14 +273,14 @@ export default function Header() {
                       alt="X3DPrints logo"
                       width={40}
                       height={40}
-                      className="h-10 w-10 object-contain drop-shadow-[0_0_12px_rgba(255,0,56,.35)]"
+                      className="h-10 w-10 object-contain"
                     />
                     <span className="text-sm font-semibold">X3DPrints</span>
                   </div>
                   <button
                     aria-label="Sluit"
                     onClick={() => setOpen(false)}
-                    className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200/60 bg-white/70 dark:border-[#1f2336] dark:bg-[#0B0F1A]"
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200/60 bg-white/70 dark:border-slate-700 dark:bg-slate-900"
                   >
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
                       <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
@@ -317,8 +304,8 @@ export default function Header() {
                             className={[
                               "rounded-xl px-3 py-2.5 text-base font-medium transition",
                               active
-                                ? "bg-white text-slate-900 shadow-sm dark:bg-[#111525] dark:text-white"
-                                : "text-slate-700 hover:bg-white hover:text-slate-900 dark:text-slate-200 dark:hover:bg-[#111525] dark:hover:text-white",
+                                ? "bg-white text-slate-900 shadow-sm dark:bg-slate-900 dark:text-white"
+                                : "text-slate-700 hover:bg-white hover:text-slate-900 dark:text-slate-200 dark:hover:bg-slate-900 dark:hover:text-white",
                             ].join(" ")}
                           >
                             {label}
@@ -343,8 +330,8 @@ export default function Header() {
                             className={[
                               "rounded-xl px-3 py-2.5 text-base font-medium transition",
                               active
-                                ? "bg-white text-slate-900 shadow-sm dark:bg-[#111525] dark:text-white"
-                                : "text-slate-700 hover:bg-white hover:text-slate-900 dark:text-slate-200 dark:hover:bg-[#111525] dark:hover:text-white",
+                                ? "bg-white text-slate-900 shadow-sm dark:bg-slate-900 dark:text-white"
+                                : "text-slate-700 hover:bg-white hover:text-slate-900 dark:text-slate-200 dark:hover:bg-slate-900 dark:hover:text-white",
                             ].join(" ")}
                           >
                             {label}
@@ -369,8 +356,8 @@ export default function Header() {
                             className={[
                               "rounded-xl px-3 py-2.5 text-base font-medium transition",
                               active
-                                ? "bg-white text-slate-900 shadow-sm dark:bg-[#111525] dark:text-white"
-                                : "text-slate-700 hover:bg-white hover:text-slate-900 dark:text-slate-200 dark:hover:bg-[#111525] dark:hover:text-white",
+                                ? "bg-white text-slate-900 shadow-sm dark:bg-slate-900 dark:text-white"
+                                : "text-slate-700 hover:bg-white hover:text-slate-900 dark:text-slate-200 dark:hover:bg-slate-900 dark:hover:text-white",
                             ].join(" ")}
                           >
                             {label}
@@ -394,7 +381,7 @@ export default function Header() {
                   <Link
                     href={localizedHref("/contact")}
                     onClick={() => setOpen(false)}
-                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#D7263D,45%,#7A00FF)] px-4 py-2.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(215,38,61,.35)] transition hover:brightness-110 dark:border-[#1f2336]"
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(99,102,241,.35)] transition hover:brightness-110 dark:border-slate-700 dark:bg-[linear-gradient(90deg,#334155,45%,#1e293b)] dark:shadow-[0_8px_24px_rgba(15,23,42,.35)]"
                   >
                     {locale === "en" ? "Request a quote" : "Offerte aanvragen"}
                   </Link>

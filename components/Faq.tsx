@@ -1,9 +1,9 @@
-// components/Faq.tsx
+﻿// components/Faq.tsx
 import React from "react"
 
 interface FaqItem {
   q: string
-  /** Mag HTML bevatten (links naar /materials, /pricing, …) */
+  /** Mag HTML bevatten (links naar /materials, /pricing, ...) */
   a: string
 }
 
@@ -14,7 +14,7 @@ interface Props {
   title?: string
 }
 
-/** Simpele slugifier voor anchor-id’s */
+/** Simpele slugifier voor anchor-ids */
 function toId(s: string) {
   return s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "-").replace(/(^-|-$)/g, "")
 }
@@ -38,11 +38,12 @@ export default function Faq({ city, items, className = "", title }: Props) {
     >
       <div
         className="
-          rounded-3xl bg-white/55 p-6 sm:p-8 ring-1 ring-white/30 backdrop-blur-xl shadow-glass
-          animate-[fadeInUp_.6s_ease_out_0s_both]
+          rounded-3xl bg-white/55 p-6 ring-1 ring-white/30 shadow-glass backdrop-blur-xl
+          dark:border dark:border-slate-700/70 dark:bg-slate-950/82 dark:ring-slate-800/70
+          sm:p-8 animate-[fadeInUp_.6s_ease_out_0s_both]
         "
       >
-        <h2 id="faq-title" className="text-xl font-extrabold tracking-tight text-slate-900">
+        <h2 id="faq-title" className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50">
           {heading}
         </h2>
 
@@ -54,6 +55,7 @@ export default function Faq({ city, items, className = "", title }: Props) {
                 key={id}
                 className="
                   rounded-2xl border border-white/30 bg-white/65 p-0 backdrop-blur
+                  dark:border-slate-700/70 dark:bg-slate-900/88
                   transition-[transform,box-shadow] duration-300
                   hover:-translate-y-0.5 hover:shadow-[0_16px_48px_rgba(0,0,0,0.08)]
                   animate-[fadeInUp_.6s_ease_out_0s_both]
@@ -70,17 +72,17 @@ export default function Faq({ city, items, className = "", title }: Props) {
                     id={id}
                     className="
                       flex cursor-pointer select-none items-center justify-between gap-3 rounded-2xl px-4 py-3 text-left
-                      font-semibold text-slate-900 outline-none
-                      transition-colors hover:bg-white/70
+                      font-semibold text-slate-900 outline-none transition-colors hover:bg-white/70
+                      dark:text-slate-50 dark:hover:bg-slate-800/90
                       focus-visible:ring-2 focus-visible:ring-cyan-400/60
                     "
                     aria-controls={`${id}-panel`}
                   >
-                    <span itemProp="name" className="text-[15px] leading-6">
+                    <span itemProp="name" className="text-[15px] leading-6 text-slate-900 dark:text-slate-50">
                       {q}
                     </span>
                     <svg
-                      className="size-5 shrink-0 text-slate-500 transition-transform duration-300 group-open:rotate-180"
+                      className="size-5 shrink-0 text-slate-500 transition-transform duration-300 group-open:rotate-180 dark:text-slate-400"
                       viewBox="0 0 20 20"
                       fill="none"
                       aria-hidden="true"
@@ -95,24 +97,23 @@ export default function Faq({ city, items, className = "", title }: Props) {
                     </svg>
                   </summary>
 
-                  {/* Smooth content reveal zonder JS: grid-rows trick */}
                   <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-open:grid-rows-[1fr]">
                     <div
                       id={`${id}-panel`}
-                      className="overflow-hidden px-4 pb-4 pt-1 text-sm text-slate-700"
+                      className="overflow-hidden px-4 pb-4 pt-1 text-sm text-slate-700 dark:text-slate-300"
                       itemScope
                       itemProp="acceptedAnswer"
                       itemType="https://schema.org/Answer"
                     >
                       <div
                         className="
-                          prose prose-slate max-w-none text-[15px] leading-7
+                          prose prose-slate max-w-none text-[15px] leading-7 dark:prose-invert
+                          prose-a:text-cyan-700 dark:prose-a:text-cyan-300
                           prose-a:underline prose-a:decoration-cyan-500 prose-a:underline-offset-4 hover:prose-a:text-slate-900
+                          dark:hover:prose-a:text-slate-100
                         "
-                        // HTML toelaten voor interne links en opmaak
                         dangerouslySetInnerHTML={{ __html: a }}
                       />
-                      {/* Tekstversie voor microdata parsers die innerHTML negeren */}
                       <meta itemProp="text" content={stripTags(a)} />
                     </div>
                   </div>
@@ -123,10 +124,8 @@ export default function Faq({ city, items, className = "", title }: Props) {
         </ul>
       </div>
 
-      {/* Soft glow hairline */}
-      <div className="pointer-events-none absolute inset-x-0 -top-1 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 -top-1 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent dark:via-slate-700/60" />
 
-      {/* Keyframes + reduced motion */}
       <style
         dangerouslySetInnerHTML={{
           __html: `

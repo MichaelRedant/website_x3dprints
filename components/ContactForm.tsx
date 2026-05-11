@@ -18,12 +18,12 @@ type FormDataShape = {
 }
 
 const inputBase =
-  "w-full rounded-lg border border-slate-300 bg-white/90 px-3 py-2.5 text-sm text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 dark:border-slate-600 dark:bg-[#0F1324]/80 dark:text-white dark:placeholder:text-slate-400 dark:focus:border-[#00E6FF] dark:focus:ring-[#00E6FF]/20"
+  "w-full rounded-lg border border-slate-300 bg-white/90 px-3 py-2.5 text-sm text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 dark:border-slate-700 dark:bg-slate-900/80 dark:text-white dark:placeholder:text-slate-500 dark:focus:border-sky-400 dark:focus:ring-sky-400/20"
 
 const labelCls = "text-xs font-semibold text-slate-700 dark:text-slate-200"
 const row = "grid gap-2"
 const groupCls =
-  "rounded-2xl border border-slate-200 bg-white/70 p-4 sm:p-5 dark:border-[#1f2336] dark:bg-[#0B0F1A]/70"
+  "rounded-2xl border border-slate-200 bg-white/70 p-4 sm:p-5 dark:border-slate-700/70 dark:bg-slate-950/60"
 const headingCls = "text-sm font-semibold text-slate-900 dark:text-slate-100"
 const LEAD_FIRST_NAME_KEY = "x3dprints_lead_first_name"
 const LEAD_MATERIAL_NAME_KEY = "x3dprints_lead_material_name"
@@ -420,7 +420,7 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
         <button
           type="submit"
           disabled={status === "loading" || !emailValid}
-          className="rounded-xl border border-slate-300 bg-white/90 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white disabled:opacity-60 dark:border-slate-600 dark:bg-[#0F1324] dark:text-white dark:hover:bg-[#111a2d]"
+          className="rounded-xl border border-slate-300 bg-white/90 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white disabled:opacity-60 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:hover:bg-slate-800"
         >
           {status === "loading" ? copy.submitting : copy.submit}
         </button>

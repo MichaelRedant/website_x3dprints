@@ -14,7 +14,8 @@ on:
         options:
           - auto
           - valentine
-          - parents
+          - mothers-day
+          - fathers-day
           - back-to-school
           - winter
           - spring

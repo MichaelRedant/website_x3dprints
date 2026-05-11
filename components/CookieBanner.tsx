@@ -78,25 +78,25 @@ export default function CookieBanner() {
         aria-labelledby="cookie-banner-title"
         tabIndex={-1}
         className={cn(
-          "pointer-events-auto w-full max-w-3xl rounded-2xl border border-slate-200/70 bg-white/90 shadow-xl backdrop-blur",
+          "pointer-events-auto w-full max-w-3xl rounded-2xl border border-slate-200/70 bg-white/90 shadow-xl backdrop-blur dark:border-slate-700/70 dark:bg-slate-950/92",
           "ring-1 ring-black/5",
         )}
       >
         <div className="grid gap-4 p-5 sm:grid-cols-[1fr_auto] sm:items-center sm:gap-6 sm:p-6">
           <div>
-            <p id="cookie-banner-title" className="text-sm font-semibold tracking-tight text-slate-900">
+            <p id="cookie-banner-title" className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-50">
               Cookies voor analyse
             </p>
-            <p className="mt-2 text-sm leading-relaxed text-slate-600">
+            <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
               We gebruiken Google Analytics om de prestaties van onze website te meten. We plaatsen alleen analytische cookies
               nadat je hiervoor toestemming hebt gegeven. Lees meer in ons{" "}
-              <Link href={localize("/cookies")} className="font-medium text-slate-900 underline-offset-2 hover:underline">
+              <Link href={localize("/cookies")} className="font-medium text-slate-900 underline-offset-2 hover:underline dark:text-slate-100">
                 cookiebeleid
               </Link>
               .
             </p>
             {lastChoice && (
-              <p className="mt-2 text-xs text-slate-500">
+              <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
                 Huidige keuze: {lastChoice === "granted" ? "cookies toegestaan" : "cookies geweigerd"}.
               </p>
             )}
@@ -105,7 +105,7 @@ export default function CookieBanner() {
             <button
               type="button"
               onClick={() => handleChoice("denied")}
-              className="inline-flex items-center justify-center rounded-xl border border-slate-200/70 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-white"
+              className="inline-flex items-center justify-center rounded-xl border border-slate-200/70 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-white dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
             >
               Weigeren
             </button>

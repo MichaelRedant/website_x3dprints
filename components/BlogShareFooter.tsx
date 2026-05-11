@@ -52,14 +52,14 @@ export default function BlogShareFooter() {
 
   return (
     <section className="mx-auto mt-8 max-w-5xl px-4 pb-14 sm:px-6 lg:px-8">
-      <div className="rounded-3xl border border-slate-200/70 bg-slate-50/85 p-6 shadow-sm backdrop-blur-sm">
+      <div className="rounded-3xl border border-slate-200/70 bg-slate-50/85 p-6 shadow-sm backdrop-blur-sm dark:border-slate-700/70 dark:bg-slate-950/75">
         <div className="mx-auto max-w-3xl space-y-4 text-center">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">{ctaCopy.kicker}</p>
-          <h2 className="text-2xl font-semibold text-slate-900">{ctaCopy.title}</h2>
-          <p className="text-sm text-slate-600">{ctaCopy.body}</p>
-          <p className="text-sm text-slate-600">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">{ctaCopy.kicker}</p>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-50">{ctaCopy.title}</h2>
+          <p className="text-sm text-slate-600 dark:text-slate-300">{ctaCopy.body}</p>
+          <p className="text-sm text-slate-600 dark:text-slate-300">
             {isEn ? "Author" : "Auteur"}:{" "}
-            <Link href={authorHref} rel="author" className="font-medium text-slate-800 underline underline-offset-4">
+            <Link href={authorHref} rel="author" className="font-medium text-slate-800 underline underline-offset-4 dark:text-slate-100">
               {SITE.author.name}
             </Link>
           </p>
@@ -67,24 +67,24 @@ export default function BlogShareFooter() {
             <ShimmerButton href={ctaCopy.primary.href}>{ctaCopy.primary.label}</ShimmerButton>
             <Link
               href={ctaCopy.secondary.href}
-              className="inline-flex items-center text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+              className="inline-flex items-center text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 dark:text-indigo-300 dark:hover:text-indigo-200"
             >
               {ctaCopy.secondary.label}
             </Link>
           </div>
-          <div className="mt-4 rounded-2xl border border-slate-200/70 bg-white/70 p-4 text-left text-sm text-slate-600">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">{ctaCopy.about.kicker}</p>
+          <div className="mt-4 rounded-2xl border border-slate-200/70 bg-white/70 p-4 text-left text-sm text-slate-600 dark:border-slate-700/70 dark:bg-slate-900/80 dark:text-slate-300">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">{ctaCopy.about.kicker}</p>
             <p className="mt-2">
               {ctaCopy.about.body}{" "}
-              <Link href={authorHref} className="font-semibold text-indigo-600 underline underline-offset-4">
+              <Link href={authorHref} className="font-semibold text-indigo-600 underline underline-offset-4 dark:text-indigo-300">
                 {ctaCopy.about.linkLabel}
               </Link>
             </p>
           </div>
         </div>
 
-        <div className="mx-auto mt-6 max-w-3xl space-y-2 rounded-2xl border border-slate-200/70 bg-white/70 p-4">
-          <p className="text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+        <div className="mx-auto mt-6 max-w-3xl space-y-2 rounded-2xl border border-slate-200/70 bg-white/70 p-4 dark:border-slate-700/70 dark:bg-slate-900/80">
+          <p className="text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
             {isEn ? "Share this page" : "Deel deze pagina"}
           </p>
           <div className="flex justify-center">

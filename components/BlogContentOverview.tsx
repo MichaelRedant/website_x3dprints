@@ -71,12 +71,12 @@ export default function BlogContentOverview({ locale }: BlogContentOverviewProps
     <section id="content-overview" className="px-6 pb-12 sm:px-8 lg:px-12">
       <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.05fr_0.95fr]">
         <ContentTableOfContents title={copy.tocTitle} items={copy.tocItems} />
-        <GlassCard id="key-choices" className="border border-white/40 bg-white/85 p-5 shadow-lg backdrop-blur">
-          <h2 className="text-2xl font-semibold text-slate-900">{copy.tableTitle}</h2>
+        <GlassCard id="key-choices" className="border border-white/40 bg-white/85 p-5 shadow-lg backdrop-blur dark:border-slate-700/70 dark:bg-slate-950/75">
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-50">{copy.tableTitle}</h2>
           <div className="mt-4 overflow-x-auto">
-            <table className="min-w-[360px] text-sm text-slate-700">
+            <table className="min-w-[360px] text-sm text-slate-700 dark:text-slate-300">
               <thead>
-                <tr className="text-left text-slate-500">
+                <tr className="text-left text-slate-500 dark:text-slate-400">
                   {copy.headers.map((header) => (
                     <th key={header} className="py-2 pr-4 font-semibold">
                       {header}
@@ -86,8 +86,8 @@ export default function BlogContentOverview({ locale }: BlogContentOverviewProps
               </thead>
               <tbody>
                 {copy.rows.map((row) => (
-                  <tr key={row.choice} className="border-t border-slate-200/70">
-                    <td className="py-2 pr-4 font-medium text-slate-900">{row.choice}</td>
+                  <tr key={row.choice} className="border-t border-slate-200/70 dark:border-slate-700/70">
+                    <td className="py-2 pr-4 font-medium text-slate-900 dark:text-slate-100">{row.choice}</td>
                     <td className="py-2 pr-4">{row.when}</td>
                     <td className="py-2 pr-4">{row.impact}</td>
                   </tr>
@@ -95,7 +95,7 @@ export default function BlogContentOverview({ locale }: BlogContentOverviewProps
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-slate-500">
+          <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
             {copy.note}
           </p>
         </GlassCard>

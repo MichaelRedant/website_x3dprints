@@ -39,19 +39,19 @@ export default function MaterialCard({
           <div>
             <h2
               id={`${(anchorId || "mat")}-title`}
-              className="text-lg font-semibold text-slate-900"
+              className="text-lg font-semibold text-slate-900 dark:text-slate-50"
             >
               {title}
             </h2>
             {description ? (
-              <p className="mt-1 text-sm text-slate-600">{description}</p>
+              <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{description}</p>
             ) : null}
           </div>
         </div>
 
         {/* Features */}
         {features.length > 0 && (
-          <ul className="mt-4 grid gap-1.5 text-sm text-slate-600">
+          <ul className="mt-4 grid gap-1.5 text-sm text-slate-600 dark:text-slate-300">
             {features.map((f) => (
               <li key={f} className="flex items-start gap-2">
                 <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" aria-hidden />
@@ -87,7 +87,7 @@ export default function MaterialCard({
                     />
                   )}
                 </div>
-                <div className="mt-1 text-[11px] text-slate-500 text-center">{s.label}</div>
+                <div className="mt-1 text-center text-[11px] text-slate-500 dark:text-slate-400">{s.label}</div>
               </div>
             )
           })}
@@ -97,7 +97,7 @@ export default function MaterialCard({
           <div className="mt-6">
             <Link
               href={href}
-              className="inline-flex items-center gap-1 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 dark:text-indigo-300 dark:hover:text-indigo-200"
             >
               {ctaLabel ?? "Meer lezen"}
               <span aria-hidden>&rarr;</span>

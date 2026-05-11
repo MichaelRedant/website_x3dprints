@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import Link from "next/link"
 import { useEffect, useMemo, useState } from "react"
@@ -103,12 +103,12 @@ export default function ContactThankYouPanel({ locale }: ContactThankYouPanelPro
   }, [materialName])
 
   return (
-    <div className="rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm sm:p-8">
-      <h1 className="text-balance text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+    <div className="rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm dark:border-slate-700/70 dark:bg-slate-950/75 sm:p-8">
+      <h1 className="text-balance text-3xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">
         {copy.title(firstName)}
       </h1>
-      <p className="mt-3 text-slate-600">{copy.lead}</p>
-      <p className="mt-2 text-slate-600">
+      <p className="mt-3 text-slate-600 dark:text-slate-300">{copy.lead}</p>
+      <p className="mt-2 text-slate-600 dark:text-slate-300">
         {materialName
           ? copy.materialSelected(materialName)
           : storedContextName
@@ -121,21 +121,21 @@ export default function ContactThankYouPanel({ locale }: ContactThankYouPanelPro
         {materialDetailSlug ? (
           <Link
             href={localize(`/materials/${materialDetailSlug}`)}
-            className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
+            className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-900"
           >
             {copy.materialDetailCta}
           </Link>
         ) : (
           <Link
             href={localize("/materials#material-suggestion-tool")}
-            className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
+            className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-900"
           >
             {copy.materialsCta}
           </Link>
         )}
         <Link
           href={localize("/pricing")}
-          className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
+          className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-900"
         >
           {copy.pricingCta}
         </Link>
