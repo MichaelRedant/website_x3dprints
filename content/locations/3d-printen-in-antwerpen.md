@@ -1,162 +1,212 @@
-# 3D printen in Antwerpen: van haven tot binnenstad
+# 3D printen in Antwerpen: prototypes, events en havenprojecten
 
-Zoek je een betrouwbare partner voor **3D printen in Antwerpen**? X3DPrints staat klaar voor teams in de haven, bureaus aan het Eilandje, makers in Borgerhout en studenten rond de Universiteit Antwerpen. Vanuit onze studio in Herzele leveren we prototypes, kleine en grotere series en maatwerk onderdelen die klaar zijn voor de Scheldestad.
+Zoek je **3D printen in Antwerpen** voor een prototype, maquette, display, technisch onderdeel of kleine serie? X3DPrints print vanuit Herzele en levert richting Antwerpen, de districten en de rand rond de stad. Je krijgt materiaaladvies, een duidelijke offerte en een praktische planning voor PLA, PETG, TPU en technische materialen.
 
-Met onze **3D print service Antwerpen** krijg je snelle offertes, scherpe prijzen en duidelijke materiaalkeuzes. We denken mee over passing, orientatie en afwerking zodat je model meteen inzetbaar is, of je nu een maquette wilt voor een pitch aan de Meir, een functioneel onderdeel in de diamantwijk of een display voor een expo in het MAS of KMSKA.
+Antwerpen vraagt een andere aanpak dan een gewone locatiepagina. De stad combineert haven en logistiek, retail en events, musea, campussen, creatieve bureaus en maakbedrijven. Daarom behandelen we Antwerpen als hub: deze pagina helpt je snel kiezen tussen zichtwerk, functionele onderdelen, eventprops, studentprojecten en B2B prototypes.
 
----
-
-## Waarom X3DPrints voor Antwerpen?
-
-- Snel geleverd: meestal binnen enkele werkdagen richting Eilandje, Linkeroever of de Singel.
-- Precisie: strakke toleranties voor onderdelen die moeten passen in het Havenhuis, labs op Campus Groenenborger of standen op de Meir.
-- Flexibel in materiaal: PLA Matte voor zichtwerk in het Zuid, PETG voor stevige toepassingen in de haven, TPU voor flexibele onderdelen zoals bumpers of grips.
-- Persoonlijke aanpak: korte lijnen, duidelijke communicatie en foto-updates tijdens productie.
-
-**Lokale touch:** we kennen de mix van industrie en creativiteit in Antwerpen. Denk aan scheepswerven en logistiek langs het Albertkanaal, expo's op het Eilandje en Park Spoor Noord, cleantech rond Blue Gate, start-ups nabij station Antwerpen-Centraal en Designcenter De Winkelhaak, en ambachtslui in het Zuid. Die variatie vraagt maatwerk; precies wat we bieden met onze **3D printing service Antwerpen**.
+Laatst bijgewerkt: 18 mei 2026
 
 ---
 
+## Waarom X3DPrints voor 3D printen in Antwerpen?
 
+- **Functionele onderdelen:** PETG, TPU en technische materialen voor houders, covers, clips, jigs en testopstellingen.
+- **Zichtwerk en presentaties:** PLA Matte, kleurkeuze en nabewerking voor maquettes, pitchmodellen, beursmateriaal en winkelpresentaties.
+- **Snelle iteratie:** geschikt voor bureaus, engineers en studenten die niet weken willen wachten op een eerste tastbaar model.
+- **Duidelijke logistiek:** verzending naar Antwerpen is standaard; afhalen in Herzele kan op afspraak.
+- **Persoonlijke controle:** je schakelt rechtstreeks met de maker, niet met een anoniem uploadplatform.
+
+Voor een aanvraag stuur je bij voorkeur een STL- of STEP-bestand, gewenste aantallen, kleur, materiaalvoorkeur en gebruikscontext via [contact](/contact). Als passing belangrijk is, vermeld dan ook waar het onderdeel in moet klikken, schuiven of schroeven.
+
+---
+
+## Antwerpse toepassingen die commercieel interessant zijn
+
+| Type project | Typische Antwerpse context | Aanpak |
+| :-- | :-- | :-- |
+| Haven en logistiek | scannerhouders, labels, beugels, beschermkappen, kleine tooling | PETG of technische materialen, focus op passing en herhaalbaarheid |
+| Retail en horeca | displays, menukaarthouders, logo-objecten, tijdelijke campagneprops | PLA Matte of PETG met nette zichtzijde en kleurafspraak |
+| Musea en cultuur | maquettes, sokkelstukken, rekwisieten, installatiedelen | detailrijke print, eventueel schuren/primen/lakken |
+| Events en beurzen | signage, giveaways, modulair POS-materiaal, standonderdelen | schaalbaar ontwerp, compacte montage en transportvriendelijke onderdelen |
+| Onderwijs en onderzoek | robotica-onderdelen, proefopstellingen, behuizingen, thesisprototypes | snelle iteraties en duidelijke feedback op printbaarheid |
+
+---
 
 ## Lokale focus in Antwerpen
 
-In Antwerpen helpen we makers en bedrijven met 3D prints die vlot passen en lang meegaan.
+Antwerpen is groot genoeg om per buurt anders te werken. Voor een bureau in het Zuid telt presentatiekwaliteit; voor een team aan de haven telt robuustheid; voor een student op Campus Groenenborger telt snelle feedback. We stemmen materiaal, wanddikte, oriëntatie en nabewerking af op die context.
 
-- Behuizingen en covers voor elektronica, sensoren of prototypes.
-- Displays en maquettes voor presentaties, events of showroomwerk.
-- Vervangonderdelen en clips om machines snel weer op gang te krijgen.
-
-## Materialen voor projecten in Antwerpen
-
-| Materiaal     | Belangrijkste eigenschap          | Ideaal voor |
-| :------------ | :-------------------------------- | :---------- |
-| **PLA Matte** | Strak en detailrijk, veel kleuren | Maquettes voor pitches in MAS of KMSKA, display props voor retail in de Stadsfeestzaal |
-| **PETG**      | Sterk en temperatuurbestendig     | Functionele onderdelen voor havenapparatuur of logistieke hulpmiddelen langs de kaaien |
-| **TPU**       | Flexibel en schokdempend          | Beschermhoezen, bumpers voor flightcases, custom grips voor tools in magazijnen |
-
-*Tip:* wil je een behuizing voor sensoren aan de kaaien of een schaalmodel voor een pitch in Designcenter De Winkelhaak? Kies PETG voor stevigheid en PLA voor maximale esthetiek. Twijfel je? Vraag materiaaladvies mee met je bestand via [contact](/contact).
+- Voor **haven en logistiek**: PETG, TPU of technische materialen voor functionele onderdelen, testopstellingen, beschermers en montagehulpen.
+- Voor **retail, horeca en events**: merkobjecten, tafelhouders, servetringen, displays en tijdelijke campagnestukken.
+- Voor **musea en culturele huizen**: decorstukken, maquettes, sokkels en experimentele vormen met strakke afwerking.
+- Voor **onderwijs en makers**: betaalbare prototypes, robotica, elektronica-behuizingen en iteraties op studentenprojecten.
 
 ---
 
-## Voor wie in Antwerpen?
+## Districts van Antwerpen die we actief coveren
 
-### Havenbedrijven en logistiek
-Reserveonderdelen, hulpmiddelen en custom mounts voor scanners of camera's, snel geleverd richting kaaien, Blue Gate of logistieke hubs langs de Noorderlaan.
+Sinds Borsbeek in 2025 het tiende district werd, bestaat stad Antwerpen uit tien districten. Voor SEO en gebruiksgemak krijgt elk belangrijk district een eigen pagina, maar deze hub verbindt ze inhoudelijk.
 
-### Creatieve bureaus en musea
-Displays, props en maquettes voor expo's in het MAS, deSingel of het Letterenhuis. Combineer fijne details met een nette afwerking.
-
-### Studenten en onderzoek
-Makers op Campus Paardenmarkt of Groenenborger krijgen snel prototypes voor projecten, thesis-onderzoek of robotica.
-
-### Kmo's en start-ups
-Van proof-of-concept tot kleine serie. Ideaal voor hardware-teams in Berchem, Borgerhout of rond Centraal Station en Kievitplein die snel willen itereren.
+- [Buurpagina: 3D printen in Berchem](/3d-printen-in-berchem) - Zurenborg, Groen Kwartier, station Antwerpen-Berchem, Post X en Antwerp Expo.
+- [Buurpagina: 3D printen in Borgerhout](/3d-printen-in-borgerhout) - Turnhoutsebaan, De Roma, Spoor Oost, Krugerplein en creatieve makers.
+- [Buurpagina: 3D printen in Deurne](/3d-printen-in-deurne) - Rivierenhof, Sportpaleis/AFAS Dome, Lotto Arena en maakbedrijven richting oost.
+- [Buurpagina: 3D printen in Ekeren](/3d-printen-in-ekeren) - Rozemaai, Leugenberg, Veltwijckpark en de noordelijke havenrand.
+- [Buurpagina: 3D printen in Hoboken](/3d-printen-in-hoboken) - Blue Gate, Hobokense Polder, Scheldekant en technische projecten.
+- [Buurpagina: 3D printen in Merksem](/3d-printen-in-merksem) - Bredabaan, Albertkanaal, Sportpaleisomgeving en retailprops.
+- [Buurpagina: 3D printen in Wilrijk](/3d-printen-in-wilrijk) - Campus Drie Eiken, A12-corridor, Bist en technische studentenprojecten.
+- [Buurpagina: 3D printen in Borsbeek](/3d-printen-in-borsbeek) - Fort 3, lokale verenigingen en projecten tussen Deurne en Mortsel.
+- [Buurpagina: 3D printen in Berendrecht-Zandvliet-Lillo](/3d-printen-in-berendrecht-zandvliet-lillo) - haven, polderdorpen, Lillo-Fort en logistieke onderdelen.
 
 ---
 
-## Districts van Antwerpen die we ook bedienen
+## Randgemeenten rond Antwerpen
 
-We leveren in heel Antwerpen en hebben aparte pagina's voor de districten. Zo krijg je meteen de juiste info per buurt.
+Niet elk project komt uit het stadscentrum. Daarom coveren we ook de rand rond Antwerpen, vooral waar veel kmo's, winkels, scholen, makers en technische teams zitten.
 
-- [3D printen in Berchem](/3d-printen-in-berchem)
-- [3D printen in Berendrecht-Zandvliet-Lillo](/3d-printen-in-berendrecht-zandvliet-lillo)
-- [3D printen in Borgerhout](/3d-printen-in-borgerhout)
-- [3D printen in Borsbeek](/3d-printen-in-borsbeek)
-- [3D printen in Deurne](/3d-printen-in-deurne)
-- [3D printen in Ekeren](/3d-printen-in-ekeren)
-- [3D printen in Hoboken](/3d-printen-in-hoboken)
-- [3D printen in Merksem](/3d-printen-in-merksem)
-- [3D printen in Wilrijk](/3d-printen-in-wilrijk)
+- [Buurpagina: 3D printen in Mortsel](/3d-printen-in-mortsel)
+- [Buurpagina: 3D printen in Edegem](/3d-printen-in-edegem)
+- [Buurpagina: 3D printen in Kontich](/3d-printen-in-kontich)
+- [Buurpagina: 3D printen in Aartselaar](/3d-printen-in-aartselaar)
+- [Buurpagina: 3D printen in Wommelgem](/3d-printen-in-wommelgem)
+- [Buurpagina: 3D printen in Wijnegem](/3d-printen-in-wijnegem)
+- [Buurpagina: 3D printen in Schoten](/3d-printen-in-schoten)
+- [Buurpagina: 3D printen in Brasschaat](/3d-printen-in-brasschaat)
+- [Buurpagina: 3D printen in Kapellen](/3d-printen-in-kapellen)
+- [Buurpagina: 3D printen in Boechout](/3d-printen-in-boechout)
+- [Buurpagina: 3D printen in Boom](/3d-printen-in-boom)
+- [Buurpagina: 3D printen in Rumst](/3d-printen-in-rumst)
+- [Buurpagina: 3D printen in Zwijndrecht](/3d-printen-in-zwijndrecht)
 
-### Rand rond Antwerpen die je nog kan coveren
-Voor fijnmazige SEO en hyperlokale intent kun je de randgemeenten mee opnemen. Suggesties:
+---
 
-- [3D printen in Mortsel](/3d-printen-in-mortsel)
-- [3D printen in Edegem](/3d-printen-in-edegem)
-- [3D printen in Kontich](/3d-printen-in-kontich)
-- [3D printen in Aartselaar](/3d-printen-in-aartselaar)
-- [3D printen in Wommelgem](/3d-printen-in-wommelgem)
-- [3D printen in Wijnegem](/3d-printen-in-wijnegem)
-- [3D printen in Schilde](/3d-printen-in-schilde)
-- [3D printen in Schoten](/3d-printen-in-schoten)
-- [3D printen in Brasschaat](/3d-printen-in-brasschaat)
-- [3D printen in Kapellen](/3d-printen-in-kapellen)
-- [3D printen in Hove](/3d-printen-in-hove)
-- [3D printen in Lint](/3d-printen-in-lint)
-- [3D printen in Boechout](/3d-printen-in-boechout)
-- [3D printen in Boom](/3d-printen-in-boom)
-- [3D printen in Rumst](/3d-printen-in-rumst)
+## Lokale punten, bezienswaardigheden en events
 
-Heb je nu al een project in een van deze districten? Stuur je bestand mee; we houden rekening met levering en timing in jouw buurt.
+Deze lokale context helpt om beter te begrijpen welke projecten in Antwerpen logisch zijn. We gebruiken ze niet als losse keywordvulling, maar als praktische aanleiding voor 3D printwerk.
+
+- **MAS en het Eilandje:** geschikt voor maquettes, museale props, sokkels en presentatiemodellen.
+- **KMSKA en het Zuid:** sterk voor designobjecten, expo-onderdelen, creatieve pitches en premium zichtwerk.
+- **Sportpaleis/AFAS Dome en Lotto Arena:** relevant voor eventprops, tijdelijke displays, backstage tooling en merchandise.
+- **Spoor Oost en Sinksenfoor:** interessant voor tijdelijke signalisatie, props, repair parts en standonderdelen.
+- **Grote Markt, Groenplaats en Winter in Antwerpen:** logisch voor retail, horeca, kerstmarktprops, gepersonaliseerde gifts en lichtgewicht displays.
+- **Antwerp Pride en Bollekesfeest:** nuttig voor activaties, unieke giveaways, standen, logo-objecten en kleurrijke campagnestukken.
+- **UAntwerpen campussen:** relevant voor robotica, proefopstellingen, onderzoek, studentprojecten en technische prototypes.
+- **The Beacon en havenecosysteem:** interessant voor IoT-behuizingen, smart city demo's, sensorhouders en proof-of-concepts.
+
+---
+
+## Materiaalkeuze voor Antwerpen
+
+| Materiaal | Beste keuze voor | Wanneer vermijden |
+| :-- | :-- | :-- |
+| **PLA Matte** | maquettes, displays, props, gifts, presentatiemodellen | bij veel warmte, zware belasting of langdurig buitengebruik |
+| **PETG** | functionele onderdelen, outdoor lichte belasting, houders en covers | wanneer maximale detailafwerking belangrijker is dan sterkte |
+| **TPU** | grips, bumpers, dempers, beschermhoezen en flexibele delen | bij onderdelen die stijf moeten blijven |
+| **ASA/ABS of Nylon** | technische onderdelen, hogere temperatuur, zwaardere toepassing | alleen op aanvraag en na materiaalcheck |
+
+Twijfel je? Stuur je toepassing mee. Een onderdeel voor een beursstand vraagt iets anders dan een clip voor een magazijnscanner of een sokkel voor een museale presentatie.
+
+---
+
+## Hoe aanvragen vanuit Antwerpen werkt
+
+1. Upload je STL/STEP via [contact](/contact).
+2. Vermeld toepassing, aantallen, materiaal, kleur, deadline en leveradres.
+3. We checken printbaarheid, oriëntatie, risicozones en materiaalkeuze.
+4. Je krijgt een duidelijke offerte en planning.
+5. Na akkoord printen we, controleren we de onderdelen en verzenden we naar Antwerpen of leggen we afhaling vast.
+
+Voor kritische passing is één teststuk vaak verstandiger dan meteen een volledige batch. Dat voorkomt verspilling en geeft sneller zekerheid.
 
 ---
 
 ## Veelgestelde vragen rond 3D printen in Antwerpen
 
-**Welke bestandsformaten accepteren jullie?**  
-STL of STEP werken het best. Voeg foto's of schetsen toe als de orientatie of zichtzijde belangrijk is.
+**Leveren jullie in alle districten van Antwerpen?**  
+Ja. We verzenden naar Antwerpen, Berchem, Borgerhout, Deurne, Ekeren, Hoboken, Merksem, Wilrijk, Borsbeek en Berendrecht-Zandvliet-Lillo. Afhalen in Herzele kan op afspraak.
 
-**Hoe snel krijg ik een offerte?**  
-Meestal binnen een werkdag. Vermeld aantallen, materiaalvoorkeur en gewenste leverdatum voor de haven of binnenstad.
+**Kunnen jullie ook eventmateriaal of retail displays maken?**  
+Ja. Denk aan displays, logo-objecten, prijskaartjes, standonderdelen, giveaways, tafeldecoratie en modulaire props. We letten op afwerking, transport en montage.
 
-**Kan ik afhalen?**  
-Afhalen kan op afspraak in Herzele; verzending naar Antwerpen is standaard mogelijk volgens de [prijzen](/pricing).
+**Is 3D printen geschikt voor haven- of logistieke toepassingen?**  
+Voor veel kleine tooling, beschermers, scannerhouders, clips en testopstellingen wel. Bij belasting, warmte of veiligheid bekijken we materiaal, wanddikte en gebruiksrisico vooraf.
 
-**Hebben jullie ervaring met technische onderdelen?**  
-Ja. We leveren regelmatig functionele onderdelen aan engineers en makers. Zie ook ons segment voor [engineers](/segments/3d-printing-engineers) en [makers](/segments/3d-printing-makers).
+**Kan ik een bestand laten controleren voor ik bestel?**  
+Ja. Stuur STL of STEP met een korte uitleg. We kijken naar wanddikte, maatvoering, oriëntatie en printbaarheid.
+
+**Wat als ik alleen foto's of een kapot onderdeel heb?**  
+Stuur foto's om de haalbaarheid te bespreken. Voor reproductie of reverse engineering moet het object meestal fysiek langskomen, zeker als passing belangrijk is.
 
 ---
 
 ## Handige interne links voor Antwerpen
 
-- [Materialen en richtlijnen](/materials) - kies het juiste filament en zie afmetingen.
+- [3D print services](/services) - productie, nabewerking, montage en projectaanpak.
+- [Materialen en richtlijnen](/materials) - PLA, PETG, TPU en technische keuzes.
 - [Prijzen](/pricing) - transparant over formaat, materiaal en nabewerking.
-- [3D viewer](/viewer) - snel STL of STEP checken op orientatie en oppervlakte.
-- [Portfolio](/portfolio) - voorbeelden van prototypes en zowel kleine als grotere series.
-- [Segmenten](/segments/3d-printing-engineers) - doorsturen naar engineering-teams.
+- [3D viewer](/viewer) - STL of STEP snel checken op oriëntatie en oppervlakte.
+- [Portfolio](/portfolio) - voorbeelden van prototypes, props, gifts en functionele onderdelen.
+- [3D printen in de buurt](/blog/3d-printen-in-de-buurt) - hoe lokale aanvragen en levering werken.
+- [Retail POS 3D printen](/blog/retail-pos-3d-printen) - relevant voor winkels, events en activaties.
+- [Marketing en events](/segments/3d-printing-marketing) - voor displays, props en branded objecten.
+
+---
+
+## Bronnen en lokale context
+
+- [Stad Antwerpen over de 10 districten](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
+- [Port of Antwerp-Bruges](https://www.portofantwerpbruges.com/)
+- [Universiteit Antwerpen campussen](https://www.uantwerpen.be/en/about-uantwerp/campuses/)
+- [MAS - Museum aan de Stroom](https://mas.be/en/page/about-mas)
+- [KMSKA Antwerpen](https://kmska.be/en/about-kmska)
+- [Sportpaleis/AFAS Dome Antwerpen](https://www.sportpaleis.be/en/about-us/about-sportpaleis-antwerpen)
+- [The Beacon Antwerp](https://www.thebeacon.eu/about-us/)
+- [Antwerp Pride events](https://www.antwerppride.com/en/events)
+- [Bollekesfeest via Stad Antwerpen](https://www.antwerpen.be/product/bollekesfeest-standplaats)
+- [Winter in Antwerpen via Stad Antwerpen](https://www.antwerpen.be/product/vendor-at-christmas-market)
 
 ---
 
 ## Vraag je offerte aan voor 3D printen in Antwerpen
 
-Klaar om te starten met je project in Antwerpen of een van de districten? Upload je model via [contact](/contact) en ontvang snel een voorstel. We helpen je van eerste prototype tot schaalbare serie, met een aanpak die even helder is als de skyline langs de Schelde.
+Klaar om te starten met een prototype, display, technisch onderdeel of kleine serie in Antwerpen? Upload je model via [contact](/contact). Vermeld je toepassing, deadline en aantal stuks, dan krijg je gericht advies over materiaal, afwerking en planning.
 
 <!-- LOCAL_ENRICH_START -->
-## Leverdetails rond Antwerpen
+## Antwerpse clusterversterking
 
-- Dekking: Antwerpen, Antwerpen centrum, Linkeroever, Berchem, Borgerhout, Haven; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Antwerpen.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+- Hoofdfocus: 3D printen in Antwerpen voor haven/logistiek, retail, events, onderwijs, musea en creatieve bureaus.
+- Dekking: Antwerpen centrum, Linkeroever, Berchem, Borgerhout, Deurne, Ekeren, Hoboken, Merksem, Wilrijk, Borsbeek, Berendrecht-Zandvliet-Lillo en de randgemeenten.
+- Sterke commerciële use cases: scannerhouders, displays, maquettes, servetringen, signage, sensorbehuizingen, jigs en beursprops.
+- Bestanden: STL/STEP versnellen de offerte; foto's helpen om de haalbaarheid te bespreken, maar voor reverse engineering moet het object meestal fysiek langskomen.
+- Doorlooptijd: meestal enkele werkdagen na akkoord; spoed en levering naar Antwerpen in overleg.
 
 ## Gerelateerde buurtpagina's
 - [Buurpagina: 3D printen in Berchem](/3d-printen-in-berchem)
 - [Buurpagina: 3D printen in Borgerhout](/3d-printen-in-borgerhout)
+- [Buurpagina: 3D printen in Deurne](/3d-printen-in-deurne)
+- [Buurpagina: 3D printen in Ekeren](/3d-printen-in-ekeren)
+- [Buurpagina: 3D printen in Hoboken](/3d-printen-in-hoboken)
+- [Buurpagina: 3D printen in Merksem](/3d-printen-in-merksem)
+- [Buurpagina: 3D printen in Wilrijk](/3d-printen-in-wilrijk)
+- [Buurpagina: 3D printen in Borsbeek](/3d-printen-in-borsbeek)
+- [Buurpagina: 3D printen in Berendrecht-Zandvliet-Lillo](/3d-printen-in-berendrecht-zandvliet-lillo)
 
 ## Lokale punten in Antwerpen
-- Centrum van Antwerpen
-- Lokale bedrijvenzone in Antwerpen
-- Sporthal in Antwerpen
-
-
-## Klantenspotlight
-- Haven/logistiek tools: kleine reeksen met vaste settings rond Antwerpen centrum.
-- Vaak gevraagd: 3D print service Antwerpen; we adviseren materiaal en afwerking.
-- Afhalen in Herzele; verzending naar Antwerpen en Antwerpen centrum.
-
-## Locaties die we bedienen nabij Antwerpen
-- Centrum van Antwerpen
-- Lokale bedrijvenzone in Antwerpen
-- Sporthal in Antwerpen
+- MAS en het Eilandje
+- KMSKA en het Zuid
+- Sportpaleis/AFAS Dome en Lotto Arena
+- Spoor Oost en Sinksenfoor
+- Grote Markt, Groenplaats en Winter in Antwerpen
+- Campus Groenenborger, Drie Eiken en Stadscampus
+- The Beacon en het havenecosysteem
 
 ## Sectorfocus nabij Antwerpen
-- Haven/logistiek tools (Antwerpen)
-- Marketing/props voor events Antwerpen
-- Onderwijs en labs in Antwerpen
+- Haven en logistiek: houders, beschermers, sensormounts en technische prototypes.
+- Retail en horeca: displays, tafeldecoratie, menuhouders en branded objecten.
+- Events en cultuur: props, signage, lichtgewicht standonderdelen en giveaways.
+- Onderwijs en onderzoek: robotica, proefopstellingen, labonderdelen en thesisprototypes.
 
 ## Typische aanvragen rond Antwerpen
-- 3D print service Antwerpen
-- rapid prototyping Antwerpen
-- 3D printing bedrijf Antwerpen
+- 3D print service Antwerpen voor prototypes en functionele onderdelen.
+- 3D model laten printen Antwerpen voor studenten, makers en bureaus.
+- Rapid prototyping Antwerpen voor engineering, retail en events.
 <!-- LOCAL_ENRICH_END -->

@@ -71,6 +71,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/3d-printen">
 }
 
+// Validate ..\..\app\(pages)\3d-scannen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\3d-scannen\\page.js")
+  handler satisfies AppPageConfig<"/3d-scannen">
+}
+
 // Validate ..\..\app\(pages)\[slug]\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\[slug]\\page.js")
@@ -717,6 +723,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\3d-printen\\page.js")
   handler satisfies AppPageConfig<"/en/3d-printen">
+}
+
+// Validate ..\..\app\en\(pages)\3d-scannen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\3d-scannen\\page.js")
+  handler satisfies AppPageConfig<"/en/3d-scannen">
 }
 
 // Validate ..\..\app\en\(pages)\[slug]\page.tsx

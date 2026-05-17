@@ -78,6 +78,7 @@ const SERVICES_GROUP = {
   items: [
     { href: "/services", label: { nl: "Onze services", en: "Our services" } },
     { href: "/3d-modelleren", label: { nl: "3D modelleren", en: "3D modelling" } },
+    { href: "/3d-scannen", label: { nl: "3D scannen", en: "3D scanning" } },
     { href: "/segments", label: { nl: "Segmenten", en: "Segments" } },
     { href: "/viewer", label: { nl: "3D viewer", en: "3D viewer" } },
     { href: "/3d-modellen-vinden", label: { nl: "Vind mijn 3D model", en: "Find my 3D model" } },

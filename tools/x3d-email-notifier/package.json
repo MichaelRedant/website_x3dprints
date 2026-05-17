@@ -1,0 +1,20 @@
+{
+  "name": "x3d-email-notifier",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Subtle desktop email notifier for X3DPrints on Windows.",
+  "scripts": {
+    "start": "node src/notifier.mjs",
+    "once": "node src/notifier.mjs --once",
+    "test:toast": "node src/notifier.mjs --test",
+    "companion": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/companion-notifier.ps1",
+    "screen-info": "node src/notifier.mjs --screen-info",
+    "show-config": "node src/notifier.mjs --show-config",
+    "install:startup": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install-startup.ps1",
+    "uninstall:startup": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/uninstall-startup.ps1"
+  },
+  "dependencies": {
+    "imapflow": "^1.0.194"
+  }
+}

@@ -20,11 +20,12 @@ import {
   buildServiceSchema,
   type SchemaOfferInput,
 } from "@/lib/seo"
+import { SCAN_PRICES, formatScanPrice } from "@/lib/scanning-prices"
 
 const NL_METADATA: Metadata = {
-  title: "3D print prijs in Belgie voor bedrijven en particulieren | X3DPrints",
+  title: "3D print en 3D scan prijzen in Belgie | X3DPrints",
   description:
-    "Wat kost 3D printen in Belgie? Richtprijzen voor bedrijven en particulieren vanaf EUR 5 (small), EUR 20 (medium) en EUR 49 (large), met heldere offerte en materiaaladvies.",
+    "Heldere 3D print en 3D scan prijzen in Belgie: printen vanaf EUR 5 en 3D scanning vanaf EUR 45. Richtprijzen, calculator en offerte.",
   alternates: {
     canonical: "https://www.x3dprints.be/pricing/",
     languages: {
@@ -34,9 +35,9 @@ const NL_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "3D print prijs in Belgie | X3DPrints",
+    title: "3D print en 3D scan prijzen in Belgie | X3DPrints",
     description:
-      "Kosten 3D printen voor bedrijven en particulieren: vanaf EUR 5 (small), EUR 20 (medium) en EUR 49 (large). Gebruik de calculator voor actuele simulaties.",
+      "Kosten voor 3D printen en 3D scanning: printen vanaf EUR 5, scan + mesh vanaf EUR 45. Gebruik de calculator of vraag offerte aan.",
     url: "https://www.x3dprints.be/pricing/",
     images: [{ url: "/images/og-pricing-nl.svg", width: 1200, height: 630, alt: "Prijzen voor 3D printen" }],
     locale: "nl_BE",
@@ -52,9 +53,9 @@ const NL_METADATA: Metadata = {
 }
 
 const EN_METADATA: Metadata = {
-  title: "3D printing prices in Belgium for businesses and individuals | X3DPrints",
+  title: "3D printing and 3D scanning prices in Belgium | X3DPrints",
   description:
-    "3D printing prices in Belgium from EUR 5 (small), EUR 20 (medium) and EUR 49 (large) for businesses and individuals. Clear quote and material advice.",
+    "Clear 3D printing and 3D scanning prices in Belgium: printing from EUR 5 and 3D scanning from EUR 45. Price guide and quote.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/pricing/",
     languages: {
@@ -64,9 +65,9 @@ const EN_METADATA: Metadata = {
     },
   },
   openGraph: {
-    title: "3D printing prices in Belgium | X3DPrints",
+    title: "3D printing and 3D scanning prices in Belgium | X3DPrints",
     description:
-      "3D printing rates for businesses and individuals: EUR 5 (small), EUR 20 (medium), EUR 49 (large). Parts, organizers, prototypes and custom pieces.",
+      "Costs for 3D printing and 3D scanning: printing from EUR 5, scan + mesh from EUR 45. Use the calculator or request a quote.",
     url: "https://www.x3dprints.be/en/pricing/",
     images: [{ url: "/images/og-pricing-en.svg", width: 1200, height: 630, alt: "3D printing prices" }],
     locale: "en_BE",
@@ -88,13 +89,14 @@ export const metadata: Metadata = NL_METADATA
 
 const PRICING_COPY_NL = {
   hero: {
-    title: "Prijzen 3D printen",
+    title: "Prijzen 3D printen en 3D scannen",
     body:
-      "Zoek je een snelle 3D print prijs? Voor bedrijven en particulieren starten richtprijzen rond EUR 5 (small), EUR 20 (medium) en EUR 49 (large). PLA Matte is standaard; PLA+ varianten, PETG en TPU zijn beschikbaar voor extra look of performance. Van onderdelen en organizers tot prototypes, etalage-items en persoonlijke stukken: je krijgt heldere prijsopbouw en duidelijke timing.",
+      "Zoek je snel een prijs? Start hier: 3D printen vanaf EUR 5, 3D scannen vanaf EUR 45 en ontwerp/CAD vanaf EUR 45/uur. De calculator en detailuitleg staan lager op de pagina, maar de belangrijkste vanafprijzen zie je meteen.",
     ctas: {
       quote: "Offerte aanvragen",
       materials: "Materialen & kleuren",
       blog: "Kostenblog",
+      scan: "3D scanprijzen",
       tool: "Material Suggestion Tool",
     },
   },
@@ -159,12 +161,14 @@ const PRICING_COPY_NL = {
     ],
   },
   design: {
-    title: "Ontwerpservice",
+    title: "Ontwerpservice en CAD",
     items: [
       { k: "Eigen ontwerp (STL/STEP)", v: "Gratis beoordeling + offerte" },
       { k: "Ontwerp op maat", v: "EUR 45/uur (incl. digitaal voorbeeld voor productie)" },
+      { k: "3D scan intake", v: "Gratis haalbaarheidscheck op basis van foto's, afmetingen en gewenste output" },
+      { k: "CAD na scan", v: "EUR 45/uur voor CAD-heropbouw, texture cleanup of testprinttraject" },
     ],
-    note: "Voor CAD-hertekenen of complexe aanpassingen stemmen we de aanpak vooraf af.",
+    note: "Scanprijzen staan apart hierboven. Voor CAD-hertekenen, texture cleanup of complexe scan-to-print projecten stemmen we de aanpak vooraf af.",
   },
   cta: {
     title: "Offerte nodig?",
@@ -184,6 +188,7 @@ const PRICING_COPY_NL = {
       { label: "Portfolio", href: "/portfolio" },
       { label: "Segments & cases", href: "/segments" },
       { label: "Case studies", href: "/cases" },
+      { label: "3D scanning vanafprijzen", href: "/3d-scannen" },
       { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       { label: "Kostprijs gids", href: "/blog/hoeveel-kost-3d-printen" },
     ],
@@ -196,23 +201,25 @@ const PRICING_COPY_NL = {
       { q: "Welke materialen printen jullie?", a: "Standaard PLA Matte, plus PETG en TPU. Op aanvraag ABS/ASA, Nylon, PA-CF." },
       { q: "Wat is de gebruikelijke doorlooptijd?", a: "Doorgaans enkele werkdagen, afhankelijk van complexiteit en oplage." },
       { q: "Hoe vraag ik een offerte aan?", a: "Bezorg je STL/STEP en korte context via het formulier. Je krijgt snel prijs en timing." },
+      { q: "Wat kost 3D scannen?", a: "De intake is gratis. Scanprijzen starten vanaf EUR 45 en het afgesproken digitale scanbestand is inbegrepen. Scannen en CAD/modelleerwerk staan als eenmalige posten op de offerte en worden niet per geprint stuk vermenigvuldigd." },
       { q: "Kan ik al starten zonder exacte materiaalkeuze?", a: "Ja. Start met PLA Matte als basis; wij adviseren daarna of PETG/TPU of specials beter passen." },
     ],
   },
   schema: {
-    catalogName: "X3DPrints indicatieve 3D-printtarieven",
+    catalogName: "X3DPrints indicatieve 3D print en scan prijzen",
   },
 }
 
 const PRICING_COPY_EN = {
   hero: {
-    title: "3D printing pricing",
+    title: "3D printing and 3D scanning pricing",
     body:
-      "Guideline pricing for businesses and individuals: small prints start around EUR 5, medium around EUR 20 and larger parts around EUR 49. PLA Matte is standard; PLA+ variants, PETG and TPU are available for extra look or performance. From parts and organizers to prototypes, retail items and personalized pieces, you get clear pricing logic and planning.",
+      "Need a fast price? Start here: 3D printing from EUR 5, 3D scanning from EUR 45 and design/CAD from EUR 45/hour. The calculator and detailed explanation sit lower on the page, but the key starting prices are visible immediately.",
     ctas: {
       quote: "Request a quote",
       materials: "Materials & colors",
       blog: "Cost guide",
+      scan: "3D scan prices",
       tool: "Material Suggestion Tool",
     },
   },
@@ -277,12 +284,14 @@ const PRICING_COPY_EN = {
     ],
   },
   design: {
-    title: "Design services",
+    title: "Design services and CAD",
     items: [
       { k: "Your own design (STL/STEP)", v: "Free review + quote" },
       { k: "Custom design", v: "EUR 45/hour (incl. digital preview for production)" },
+      { k: "3D scan intake", v: "Free feasibility check based on photos, dimensions and desired output" },
+      { k: "CAD after scan", v: "EUR 45/hour for CAD rebuild, texture cleanup or test print route" },
     ],
-    note: "For CAD redraws or complex edits, we align the approach first.",
+    note: "Scan prices are listed separately above. For CAD redraws, texture cleanup or complex scan-to-print projects, we align the approach upfront.",
   },
   cta: {
     title: "Need a quote?",
@@ -302,6 +311,7 @@ const PRICING_COPY_EN = {
       { label: "Portfolio", href: "/en/portfolio" },
       { label: "Segments & cases", href: "/en/segments" },
       { label: "Case studies", href: "/en/cases" },
+      { label: "3D scanning starting prices", href: "/en/3d-scannen" },
       { label: "Material Suggestion Tool", href: "/en/materials#material-suggestion-tool" },
       { label: "Cost guide", href: "/en/blog/hoeveel-kost-3d-printen" },
     ],
@@ -314,11 +324,12 @@ const PRICING_COPY_EN = {
       { q: "Which materials do you print?", a: "Standard PLA Matte, plus PETG and TPU. ABS/ASA, Nylon, PA-CF on request." },
       { q: "What is the usual lead time?", a: "Typically a few business days, depending on complexity and quantity." },
       { q: "How do I request a quote?", a: "Send your STL/STEP and short context via the form. You get pricing and timing quickly." },
+      { q: "What does 3D scanning cost?", a: "The intake is free. Scan prices start from EUR 45 and the agreed digital scan file is included. Scanning and CAD/modelling are one-time quote items and are not multiplied by printed quantity." },
       { q: "Can I start without choosing a material yet?", a: "Yes. Start from PLA Matte as baseline; we can then advise PETG/TPU or specials." },
     ],
   },
   schema: {
-    catalogName: "X3DPrints indicative 3D printing pricing",
+    catalogName: "X3DPrints indicative 3D printing and scanning prices",
   },
 }
 
@@ -340,18 +351,20 @@ export default function Page(props: unknown) {
   const tocItems = isEn
     ? [
         { id: "pricing-overview", label: "How are the guideline prices structured?" },
+        { id: "pricing-scanning", label: "What does 3D scanning cost?" },
         { id: "pricing-modifiers", label: "How do materials and quality affect price?" },
         { id: "pricing-estimator", label: "How can I estimate my project quickly?" },
-        { id: "pricing-shipping", label: "What are delivery and design costs?" },
+        { id: "pricing-shipping", label: "What are delivery, design and scan costs?" },
         { id: "pricing-faq", label: "FAQ and quote next step" },
         { id: "pricing-sources", label: "Sources and references" },
         { id: "pricing-fastpath", label: "What is the fastest quote path?" },
       ]
     : [
         { id: "pricing-overview", label: "Hoe zijn de richtprijzen opgebouwd?" },
+        { id: "pricing-scanning", label: "Wat kost 3D scannen?" },
         { id: "pricing-modifiers", label: "Welke impact hebben materiaal en kwaliteit?" },
         { id: "pricing-estimator", label: "Hoe maak je snel een schatting?" },
-        { id: "pricing-shipping", label: "Wat kosten levering en ontwerpwerk?" },
+        { id: "pricing-shipping", label: "Wat kosten levering, ontwerpwerk en 3D scanning?" },
         { id: "pricing-faq", label: "FAQ en offerte-stap" },
         { id: "pricing-sources", label: "Bronnen en referenties" },
         { id: "pricing-fastpath", label: "Wat is de snelste offerte-route?" },
@@ -383,6 +396,13 @@ export default function Page(props: unknown) {
       priceLabel: copy.tiers.priceLabel(price),
     }
   })
+  const scanPriceRows = SCAN_PRICES.map((item) => ({
+    ...item,
+    label: isEn ? item.labelEn : item.labelNl,
+    description: isEn ? item.descriptionEn : item.descriptionNl,
+    priceLabel: formatScanPrice(item.price),
+  }))
+  const designPriceRows = copy.design.items.slice(0, 3)
 
   const quickPathCopy = isEn
     ? {
@@ -401,49 +421,27 @@ export default function Page(props: unknown) {
       }
   const snapshotCopy = isEn
     ? {
-        title: "Price snapshot",
-        subtitle: "Key rates and modifiers.",
-        tiersLabel: "PLA Matte base",
-        materialModsLabel: "Material",
-        qualityModsLabel: "Quality",
-        fastPath: "Fast quote path",
+        title: "Quick price overview",
+        subtitle: "The most important starting prices before you dive into the calculator.",
+        tiersLabel: "3D printing",
+        scanLabel: "3D scanning",
+        designLabel: "Design/CAD",
+        fastPath: "Go to fastest quote path",
       }
     : {
-        title: "Prijs snapshot",
-        subtitle: "Kernprijzen en modifiers.",
-        tiersLabel: "PLA Matte basis",
-        materialModsLabel: "Materiaal",
-        qualityModsLabel: "Kwaliteit",
-        fastPath: "Snelle offerte-route",
+        title: "Snel prijsoverzicht",
+        subtitle: "De belangrijkste vanafprijzen voordat je naar de calculator gaat.",
+        tiersLabel: "3D printen",
+        scanLabel: "3D scannen",
+        designLabel: "Ontwerp/CAD",
+        fastPath: "Ga naar snelste offerte-route",
       }
-  const snapshotMaterialMods = isEn
-    ? [
-        { label: "PLA+ / specials", mod: "+20%" },
-        { label: "PETG (dried)", mod: "+20%" },
-        { label: "TPU (dried)", mod: "+30%" },
-      ]
-    : [
-        { label: "PLA+ / specials", mod: "+20%" },
-        { label: "PETG (gedroogd)", mod: "+20%" },
-        { label: "TPU (gedroogd)", mod: "+30%" },
-      ]
-  const snapshotQualityMods = isEn
-    ? [
-        { label: "Standard", mod: "0%" },
-        { label: "Fine", mod: "+15%" },
-        { label: "Ultra", mod: "+25%" },
-      ]
-    : [
-        { label: "Standaard", mod: "0%" },
-        { label: "Fijn", mod: "+15%" },
-        { label: "Ultra", mod: "+25%" },
-      ]
   const tiersLead = isEn
     ? "These guideline tiers are optimized for quick decisions around 3D printing cost and feasibility."
     : "Deze richtklassen zijn geoptimaliseerd voor snelle beslissingen rond kosten 3D printen en haalbaarheid."
   const estimatorLead = isEn
-    ? "Use the estimator first, then open the fastest quote path at the bottom for direct conversion."
-    : "Gebruik eerst de calculator en open onderaan de snelste offerte-route voor directe conversie."
+    ? "Use the estimator for print-only, scan-only, CAD-only or scan-to-print projects, then send the same context through the quote form."
+    : "Gebruik de calculator voor print-only, scan-only, CAD-only of scan-to-print projecten en stuur daarna dezelfde context door via het offerteformulier."
 
   const buildTierQuoteHref = (tierName: Tier) => {
     const summary = isEn
@@ -458,6 +456,22 @@ export default function Page(props: unknown) {
     description: `${tier.size} · ${tier.base}`,
     url: pageUrl,
   }))
+  pricingOffers.push(
+    {
+      serviceName: isEn ? "3D scan intake" : "3D scan intake",
+      price: "EUR 0",
+      description: isEn
+        ? "Free feasibility check based on photos, dimensions and desired output."
+        : "Gratis haalbaarheidscheck op basis van foto's, afmetingen en gewenste output.",
+      url: pageUrl,
+    },
+    ...scanPriceRows.map((item) => ({
+      serviceName: item.label,
+      price: formatScanPrice(item.price),
+      description: item.description,
+      url: pageUrl,
+    })),
+  )
 
   const offerCatalog = buildOfferCatalog(copy.schema.catalogName, pricingOffers)
   const faqJsonLd = buildFaqPageSchema({
@@ -469,7 +483,7 @@ export default function Page(props: unknown) {
     pageUrl,
     description: pageDescription,
     image: "/images/og-pricing-nl.svg",
-    priceRange: "EUR 5 - EUR 49",
+    priceRange: "EUR 0 - EUR 250+",
     areaServed: "BE",
     offersName: copy.schema.catalogName,
     offers: pricingOffers,
@@ -526,6 +540,9 @@ export default function Page(props: unknown) {
                 <Link href={localize("/blog/hoeveel-kost-3d-printen")} className="font-medium text-indigo-600 transition hover:text-indigo-500">
                   {copy.hero.ctas.blog}
                 </Link>
+                <Link href="#pricing-scanning" className="font-medium text-indigo-600 transition hover:text-indigo-500">
+                  {copy.hero.ctas.scan}
+                </Link>
                 <Link href={localize("/materials#material-suggestion-tool")} className="font-medium text-indigo-600 transition hover:text-indigo-500">
                   {copy.hero.ctas.tool}
                 </Link>
@@ -565,60 +582,36 @@ export default function Page(props: unknown) {
                     </div>
                   </div>
 
-                  <div className="space-y-2 sm:hidden">
-                    <details className="group overflow-hidden rounded-lg border border-slate-200/70 bg-white/85">
-                      <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-600 [&::-webkit-details-marker]:hidden">
-                        <span>{snapshotCopy.materialModsLabel}</span>
-                        <span className="text-slate-400 transition group-open:rotate-45">+</span>
-                      </summary>
-                      <ul className="space-y-1.5 border-t border-slate-200/70 px-3 py-2 text-sm text-slate-700">
-                        {snapshotMaterialMods.map((item) => (
-                          <li key={`snapshot-material-${item.label}`} className="flex items-center justify-between gap-2">
-                            <span>{item.label}</span>
-                            <span className="font-semibold text-slate-900">{item.mod}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </details>
-                    <details className="group overflow-hidden rounded-lg border border-slate-200/70 bg-white/85">
-                      <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-600 [&::-webkit-details-marker]:hidden">
-                        <span>{snapshotCopy.qualityModsLabel}</span>
-                        <span className="text-slate-400 transition group-open:rotate-45">+</span>
-                      </summary>
-                      <ul className="space-y-1.5 border-t border-slate-200/70 px-3 py-2 text-sm text-slate-700">
-                        {snapshotQualityMods.map((item) => (
-                          <li key={`snapshot-quality-${item.label}`} className="flex items-center justify-between gap-2">
-                            <span>{item.label}</span>
-                            <span className="font-semibold text-slate-900">{item.mod}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </details>
+                  <div className="rounded-xl border border-cyan-200/70 bg-cyan-50/75 p-3">
+                    <div className="flex items-center justify-between gap-3">
+                      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-800">{snapshotCopy.scanLabel}</p>
+                      <Link href="#pricing-scanning" className="text-xs font-semibold text-cyan-800 underline underline-offset-4">
+                        {isEn ? "Full list" : "Volledige lijst"}
+                      </Link>
+                    </div>
+                    <dl className="mt-2 grid gap-2 text-sm">
+                      {scanPriceRows.slice(0, 4).map((item) => (
+                        <div key={`snapshot-scan-${item.key}`} className="flex items-start justify-between gap-3 rounded-lg bg-white/80 px-3 py-2">
+                          <dt className="text-slate-700">{item.label}</dt>
+                          <dd className="shrink-0 font-semibold text-slate-950">{item.priceLabel}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                    <p className="mt-2 text-xs font-medium text-cyan-900">
+                      {isEn ? "Agreed scan file included." : "Afgesproken scanbestand inbegrepen."}
+                    </p>
                   </div>
 
-                  <div className="hidden gap-3 sm:grid sm:grid-cols-2">
-                    <div className="rounded-xl border border-slate-200/70 bg-white/85 p-3">
-                      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{snapshotCopy.materialModsLabel}</p>
-                      <ul className="mt-2 space-y-1.5 text-sm text-slate-700">
-                        {snapshotMaterialMods.map((item) => (
-                          <li key={`snapshot-desktop-material-${item.label}`} className="flex items-center justify-between gap-3">
-                            <span>{item.label}</span>
-                            <span className="font-semibold text-slate-900">{item.mod}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="rounded-xl border border-slate-200/70 bg-white/85 p-3">
-                      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{snapshotCopy.qualityModsLabel}</p>
-                      <ul className="mt-2 space-y-1.5 text-sm text-slate-700">
-                        {snapshotQualityMods.map((item) => (
-                          <li key={`snapshot-desktop-quality-${item.label}`} className="flex items-center justify-between gap-3">
-                            <span>{item.label}</span>
-                            <span className="font-semibold text-slate-900">{item.mod}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                  <div className="rounded-xl border border-slate-200/70 bg-white/85 p-3">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{snapshotCopy.designLabel}</p>
+                    <dl className="mt-2 grid gap-2 text-sm">
+                      {designPriceRows.map((item) => (
+                        <div key={`snapshot-design-${item.k}`} className="flex items-start justify-between gap-3">
+                          <dt className="text-slate-700">{item.k}</dt>
+                          <dd className="max-w-[11rem] text-right font-semibold text-slate-950">{item.v}</dd>
+                        </div>
+                      ))}
+                    </dl>
                   </div>
 
                   <div className="border-t border-slate-200/70 pt-4">
@@ -700,6 +693,61 @@ export default function Page(props: unknown) {
         </div>
       </section>
 
+      {/* SCANNING */}
+      <section id="pricing-scanning" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="mb-6 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-700">
+              {isEn ? "3D scanning" : "3D scanning"}
+            </p>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              {isEn ? "3D scan prices" : "3D scanprijzen"}
+            </h2>
+            <p className="mt-2 text-slate-600">
+              {isEn
+                ? "These are guideline prices for suitable objects with basic cleanup. The agreed digital scan file is included. Scanning and CAD/modelling are one-time quote items; 3D printing and complex prep are quoted separately."
+                : "Dit zijn richtprijzen voor geschikte objecten met basis cleanup. Het afgesproken digitale scanbestand is inbegrepen. Scannen en CAD/modelleerwerk zijn eenmalige offerteposten; 3D printen en complexe voorbereiding worden apart geoffreerd."}
+            </p>
+          </Reveal>
+          <Reveal>
+            <GlassCard className="overflow-hidden border-cyan-200/70 bg-white/88 p-0 shadow-[0_10px_34px_rgba(8,145,178,0.08)]">
+              <div className="grid gap-0 divide-y divide-slate-200/70 md:grid-cols-2 md:divide-x md:divide-y-0">
+                <dl className="divide-y divide-slate-200/70">
+                  {scanPriceRows.slice(0, 4).map((item) => (
+                    <div key={`scan-price-left-${item.key}`} className="grid gap-2 px-5 py-4 sm:grid-cols-[1fr_auto] sm:items-center">
+                      <div>
+                        <dt className="font-semibold text-slate-900">{item.label}</dt>
+                        <dd className="mt-1 text-sm leading-6 text-slate-600">{item.description}</dd>
+                      </div>
+                      <dd className="text-lg font-bold text-cyan-800">{item.priceLabel}</dd>
+                    </div>
+                  ))}
+                </dl>
+                <dl className="divide-y divide-slate-200/70">
+                  {scanPriceRows.slice(4).map((item) => (
+                    <div key={`scan-price-right-${item.key}`} className="grid gap-2 px-5 py-4 sm:grid-cols-[1fr_auto] sm:items-center">
+                      <div>
+                        <dt className="font-semibold text-slate-900">{item.label}</dt>
+                        <dd className="mt-1 text-sm leading-6 text-slate-600">{item.description}</dd>
+                      </div>
+                      <dd className="text-lg font-bold text-cyan-800">{item.priceLabel}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+              <div className="border-t border-cyan-100 bg-cyan-50/70 px-5 py-4 text-sm text-cyan-950">
+                {isEn
+                  ? "Best place for detailed scanning pricing: the 3D scanning page. Every scan includes the agreed digital scan file, usually STL, OBJ or PLY. Scan and CAD work are one-time quote items."
+                  : "Beste plaats voor gedetailleerde scanprijzen: de 3D-scannenpagina. Bij elke scan krijg je het afgesproken digitale scanbestand mee, meestal STL, OBJ of PLY. Scan- en CAD-werk zijn eenmalige offerteposten."}
+                <Link href={localize("/3d-scannen")} className="ml-2 font-semibold underline underline-offset-4">
+                  {isEn ? "View scanning service" : "Bekijk 3D scannen"}
+                </Link>
+              </div>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+
       {/* MODIFIERS */}
       <section id="pricing-modifiers" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
@@ -744,18 +792,30 @@ export default function Page(props: unknown) {
       </section>
 
       {/* ESTIMATOR */}
-      <section id="pricing-estimator" className="scroll-mt-28 px-6 pb-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl">
+      <section
+        id="pricing-estimator"
+        className="relative isolate scroll-mt-28 overflow-hidden bg-slate-950 py-16 sm:py-20"
+      >
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_20%,rgba(16,185,129,0.30),transparent_30%),radial-gradient(circle_at_82%_8%,rgba(6,182,212,0.28),transparent_28%),linear-gradient(135deg,#020617,#0f172a_54%,#042f2e)]"
+        />
+        <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-px bg-gradient-to-r from-transparent via-emerald-300/70 to-transparent" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-slate-100/[0.05]" />
+        <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           <Reveal>
-            <GlassCard className="p-6">
-              <h2 className="text-xl font-semibold tracking-tight text-slate-900">
-                {isEn ? "Estimate your 3D print cost in 1 minute" : "Schat je 3D print kost in 1 minuut"}
+            <div className="mb-8 max-w-3xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-emerald-300">
+                {isEn ? "Interactive estimate" : "Interactieve prijsinschatting"}
+              </p>
+              <h2 className="mt-3 text-3xl font-black tracking-tight text-white sm:text-4xl">
+                {isEn
+                  ? "Estimate 3D printing, scanning and CAD in 1 minute"
+                  : "Schat 3D printen, scannen en CAD in 1 minuut"}
               </h2>
-              <p className="mt-2 text-sm text-slate-600">{estimatorLead}</p>
-              <div className="mt-4">
-                <PriceEstimator locale={normalizedLocale} />
-              </div>
-            </GlassCard>
+              <p className="mt-3 text-base leading-7 text-slate-300">{estimatorLead}</p>
+            </div>
+            <PriceEstimator locale={normalizedLocale} />
           </Reveal>
         </div>
       </section>

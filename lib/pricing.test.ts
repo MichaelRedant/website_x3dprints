@@ -28,6 +28,18 @@ describe("pricing", () => {
   it("applies drying cost for PC without margin multiplication", () => {
     expect(calculateDryingCost("PC", 10)).toBeCloseTo(5.5, 2);
   });
+
+  it("uses EUR 45 per hour for design and CAD by default", () => {
+    const breakdown = calculatePrintJob({
+      filamentWeightGrams: 100,
+      printingTimeHours: 1,
+      material: "PLA_BASIC",
+      quantity: 1,
+      designHours: 2,
+    });
+
+    expect(breakdown.designCostEur).toBe(90);
+  });
 });
 
 describe("estimateProductionTime", () => {

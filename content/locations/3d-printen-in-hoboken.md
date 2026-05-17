@@ -72,39 +72,41 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en deadline; we bezorgen snel een voorstel voor **3D printen in Hoboken**.
 
 <!-- LOCAL_ENRICH_START -->
-## Lokale accenten voor Hoboken
+## Hoboken als Schelde- en Blue Gate-zone
 
-- Dekking: Hoboken, Hoboken centrum, Blue Gate, Kiel/Hoboken grens, A12-corridor, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Hoboken.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Hoboken krijgt een technische invalshoek: Blue Gate, de Scheldekant, de A12-corridor en lokale industrie maken functionele onderdelen belangrijker dan puur decor. We focussen hier op prototypes, tooling, covers en onderdelen die praktisch inzetbaar moeten zijn.
 
-## Nabijgelegen pagina's
-- [Overzicht lokale 3D print pagina's](/locaties)
+- Dekking: Hoboken centrum, Blue Gate, Kiel/Hoboken grens, Polderstad, Hobokense Polder, A12-corridor en de Scheldekant.
+- Typische opdrachten: beschermkappen, houderwerk, montagehulpen, sensorbehuizingen, machineclips, testopstellingen en robuuste kleine series.
+- Beste materiaalfit: PETG of technische materialen voor functionele onderdelen, TPU voor bescherming, PLA Matte voor maquettes of pitchstukken.
+- Praktisch: voor onderdelen aan machines of installaties bekijken we belasting, warmte, vocht en bevestiging vooraf.
+
+## Gerelateerde buurtpagina's
+- [Hoofdpagina: 3D printen in Antwerpen](/3d-printen-in-antwerpen)
+- [Buurpagina: 3D printen in Wilrijk](/3d-printen-in-wilrijk)
+- [Buurpagina: 3D printen in Aartselaar](/3d-printen-in-aartselaar)
+- [Buurpagina: 3D printen in Zwijndrecht](/3d-printen-in-zwijndrecht)
+- [Buurpagina: 3D printen in Boom](/3d-printen-in-boom)
 
 ## Lokale punten in Hoboken
-- Centrum van Hoboken
-- Lokale bedrijvenzone in Hoboken
-- Sporthal in Hoboken
+- Blue Gate Antwerp
+- Hobokense Polder
+- Polderstad
+- Kioskplaats
+- Scheldekant en A12-corridor
 
+## Lokale voorbeelden voor Hoboken
+- Een technisch team kan PETG-testbehuizingen laten printen voor sensoren of kabeldoorvoer.
+- Een bedrijf rond Blue Gate kan jigs, passtukken of montagehulpen laten itereren in kleine oplage.
+- Een vereniging of winkel kan zichtwerk, awards of promotieobjecten laten maken met nette afwerking.
 
-## Lokale spotlight
-- Schelde/industrie projecten: PLA/PETG onderdelen afgestemd op projecten rond Hoboken centrum.
-- Vaak gevraagd: 3D print service Hoboken; we adviseren materiaal en afwerking.
-- Leverfocus: Hoboken, Hoboken centrum, Blue Gate.
+## Bronnen en lokale context
+- [Blue Gate Antwerp](https://www.bluegateantwerp.eu/)
+- [Stad Antwerpen over de districten](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
+- [Port of Antwerp-Bruges](https://www.portofantwerpbruges.com/)
 
-## Plaatsen waar we vaak leveren rond Hoboken
-- Centrum van Hoboken
-- Lokale bedrijvenzone in Hoboken
-- Sporthal in Hoboken
-
-## Sectoren die we vaak helpen in Hoboken
-- Schelde/industrie projecten (Hoboken)
-- Tooling voor Blue Gate bedrijven (Hoboken)
-- Props/retail voor Kiel/Hoboken
-
-## Veelgevraagde zoekopdrachten in Hoboken
-- 3D print service Hoboken
-- rapid prototyping Hoboken
-- 3D printing bedrijf Hoboken
+## Typische aanvragen rond Hoboken
+- 3D print service Hoboken voor beschermkappen, houders en technische kleine series.
+- 3D model laten printen Hoboken voor Blue Gate-demo's, maquettes en pitchstukken.
+- rapid prototyping Hoboken voor cleantech, sensorbehuizingen en testopstellingen.
 <!-- LOCAL_ENRICH_END -->

@@ -72,39 +72,41 @@ In Wilrijk helpen we makers en bedrijven met 3D prints die vlot passen en lang m
 Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en aantallen; je krijgt snel een voorstel voor **3D printen in Wilrijk**.
 
 <!-- LOCAL_ENRICH_START -->
-## Wat je moet weten in Wilrijk
+## Wilrijk als campus- en A12-zone
 
-- Dekking: Wilrijk, Wilrijk centrum, Campus Drie Eiken, A12-corridor, Hoboken/Wilrijk grens, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Wilrijk.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Wilrijk krijgt een eigen focus door Campus Drie Eiken, de A12-corridor, lokale KMO's en studentenprojecten. De vraag zit hier vaak in technische prototypes, labonderdelen, robuuste behuizingen en kleine series voor teams die snel willen testen.
 
-## Dichtbij gelegen locaties
-- [Overzicht lokale 3D print pagina's](/locaties)
+- Dekking: Wilrijk centrum, Bist, Campus Drie Eiken, Valaar, A12-corridor, Hoboken/Wilrijk grens en Edegem-rand.
+- Typische opdrachten: robotica-onderdelen, testopstellingen, PETG-behuizingen, montagebeugels, presentatieonderdelen en custom organizers.
+- Beste materiaalfit: PETG voor technische onderdelen, PLA Matte voor studiemodellen en presentaties, TPU voor demping of bescherming.
+- Praktisch: voeg bij student- of labprojecten altijd maatvoering, functie en gewenste passing toe.
+
+## Gerelateerde buurtpagina's
+- [Hoofdpagina: 3D printen in Antwerpen](/3d-printen-in-antwerpen)
+- [Buurpagina: 3D printen in Hoboken](/3d-printen-in-hoboken)
+- [Buurpagina: 3D printen in Berchem](/3d-printen-in-berchem)
+- [Buurpagina: 3D printen in Edegem](/3d-printen-in-edegem)
+- [Buurpagina: 3D printen in Aartselaar](/3d-printen-in-aartselaar)
 
 ## Lokale punten in Wilrijk
-- Centrum van Wilrijk
-- Lokale bedrijvenzone in Wilrijk
-- Sporthal in Wilrijk
+- Campus Drie Eiken
+- Bist
+- Valaar
+- A12-corridor
+- Wilrijkse Plein-rand
 
+## Lokale voorbeelden voor Wilrijk
+- Een studententeam kan iteraties laten printen voor robotica, medische of technische proefopstellingen.
+- Een KMO langs de A12 kan houderwerk, covers of productietools in PETG laten testen.
+- Een vereniging kan awards, decorstukken of gepersonaliseerde items laten produceren.
 
-## Spotlight rond Wilrijk
-- Onderwijs/UAntwerpen Drie Eiken: behuizingen en pasmallen voor teams in Wilrijk centrum.
-- Terugkerende order: 3D print service Wilrijk; we bewaren je instellingen.
-- Leverfocus: Wilrijk, Wilrijk centrum, Campus Drie Eiken.
+## Bronnen en lokale context
+- [Universiteit Antwerpen campussen](https://www.uantwerpen.be/en/about-uantwerp/campuses/)
+- [Campus Drie Eiken via UAntwerpen](https://www.uantwerpen.be/en/about-uantwerp/campuses/campus-drie-eiken/)
+- [Stad Antwerpen over de districten](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
 
-## Landmarks in de buurt van Wilrijk
-- Centrum van Wilrijk
-- Lokale bedrijvenzone in Wilrijk
-- Sporthal in Wilrijk
-
-## Teams die we ondersteunen rond Wilrijk
-- Onderwijs/UAntwerpen Drie Eiken (Wilrijk)
-- KMO's langs A12 (Wilrijk)
-- Props/events voor lokale organisaties (Wilrijk)
-
-## Wat vaak wordt gevraagd in Wilrijk
-- 3D print service Wilrijk
-- rapid prototyping Wilrijk
-- 3D printing bedrijf Wilrijk
+## Typische aanvragen rond Wilrijk
+- 3D print service Wilrijk voor labonderdelen, behuizingen en montagebeugels.
+- 3D model laten printen Wilrijk voor studentprojecten, demo's en presentaties.
+- rapid prototyping Wilrijk voor labs en productteams rond Campus Drie Eiken.
 <!-- LOCAL_ENRICH_END -->

@@ -84,7 +84,7 @@ export default function Page() {
     },
     {
       q: "Kunnen jullie 3D-scannen?",
-      a: "Nee, maar met duidelijke foto's, metingen of een fysiek voorbeeld kunnen we het model digitaliseren en voorbereiden op print.",
+      a: "Ja. Bekijk <a href=\"/3d-scannen\">3D scanning</a> voor reserveonderdelen, prototypes, decor, persoonsscans en scan-to-print trajecten. De intake is gratis; foto's dienen voor haalbaarheid, maar voor de echte scan moet het object op afspraak langskomen.",
     },
     {
       q: "Wat is jullie gemiddelde reactietijd?",

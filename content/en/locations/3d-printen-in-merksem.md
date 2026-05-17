@@ -1,6 +1,6 @@
-# 3D printing in Merksem: local, fast and tailored
+# 3D printing in Merksem: Bredabaan displays and event support
 
-Need **3D printing in Merksem**? X3DPrints prints in Herzele and ships quickly to Merksem and nearby Bredabaan. Local 3D printing for Merksem, Bredabaan and Sportpaleis omgeving: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Merksem** for a Bredabaan display, event prop, cable guide or practical holder? X3DPrints prints from Herzele and ships to Merksem, the Sportpaleis/AFAS Dome edge, Albertkanaal and the Ekeren border.
 
 ---
 
@@ -38,18 +38,21 @@ We frequently deliver to: Merksem, Merksem city center, Bredabaan, Sportpaleis o
 
 ---
 
-## Landmarks we often deliver to around Merksem
+## Local anchors around Merksem
 
-- Merksem town center
-- local business park in Merksem
-- sports hall in Merksem
+- Bredabaan
+- Bouckenborghpark
+- AFAS Dome/Sportpaleis edge
+- Albertkanaal
+- Groenendaallaan
 
 ---
 
 ## Who we support around Merksem
 
-- Retail/marketing/events in Merksem: displays, props and branded pieces.
-- SMEs and industry near Merksem: fixtures, enclosures and small to large batches.
+- Shops and hospitality teams needing displays, price tags or branded table pieces.
+- Event suppliers preparing lightweight setup aids, markers or cable clips.
+- SMEs near Albertkanaal and Groenendaallaan ordering repeatable PETG holders.
 
 ---
 
@@ -106,32 +109,41 @@ We frequently deliver to: Merksem, Merksem city center, Bredabaan, Sportpaleis o
 Send your files today and get a clear, fast proposal for **3D printing in Merksem**. Nearby production, personal support and reliable quality.
 
 <!-- LOCAL_ENRICH_START -->
-## What matters locally in Merksem
+## Merksem as retail and event link
 
-- Coverage: Merksem, Merksem city center, Bredabaan, Sportpaleis omgeving, Ekeren/Merksem border area, Pickup in Herzele; delivery from Herzele, pickup available.
-- Frequent jobs: prototypes, housings and brackets tailored for teams in Merksem.
-- File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
-- Turnaround: usually a few working days; rush possible on request.
+Merksem combines retail around Bredabaan, event flows toward AFAS Dome/Sportpaleis and practical SME requests near Albertkanaal and Groenendaallaan. That makes it different from Hoboken, Ekeren or Berchem.
 
-## Nearby locations
-- [Local 3D printing overview](/en/locaties)
+- Coverage: Bredabaan, Merksem centre, Bouckenborghpark, Sportpaleis area, Albertkanaal, Groenendaallaan and the Ekeren border.
+- Frequent jobs: shop props, price tags, booth material, cable guides, holders, small tooling and event parts.
+- Material fit: PLA Matte for retail and visible work, PETG for holders and mounting, TPU for bumpers or protection.
+- Planning: for event or retail deadlines, one short test print before the batch is often the safest route.
 
-## Spotlight near Merksem
-- Retail/marketing/events in Merksem: displays, signage, props.
-- Frequent order: 3D printing service in Merksem; we keep settings for reorders.
-- Delivery focus: Merksem, Merksem city center, Bredabaan.
+## Related nearby pages
+- [Parent page: 3D printing in Antwerp](/en/3d-printen-in-antwerpen)
+- [Nearby: 3D printing in Deurne](/en/3d-printen-in-deurne)
+- [Nearby: 3D printing in Ekeren](/en/3d-printen-in-ekeren)
+- [Nearby: 3D printing in Borgerhout](/en/3d-printen-in-borgerhout)
+- [Nearby: 3D printing in Schoten](/en/3d-printen-in-schoten)
 
-## Landmarks around Merksem
-- Merksem town center
-- local business park in Merksem
-- sports hall in Merksem
+## Local points in Merksem
+- Bredabaan
+- Bouckenborghpark
+- AFAS Dome/Sportpaleis edge
+- Albertkanaal
+- Groenendaallaan
 
-## Teams we support around Merksem
-- Retail/marketing/events in Merksem: displays, signage, props.
-- SMEs/industry near Merksem: prototypes, fixtures, housings.
+## Merksem project examples
+- Shops can print custom displays or price tags for a temporary campaign.
+- Event suppliers can produce cable clips, markers or lightweight setup aids.
+- SMEs can reorder PETG holders or small production tools with the same geometry.
 
-## Frequently asked in Merksem
-- 3D printing service in Merksem
-- Custom 3D printing in Merksem
-- 3D model printing in Merksem
+## Sources and local context
+- [AFAS Dome/Sportpaleis Antwerp](https://www.sportpaleis.be/en/about-us/about-sportpaleis-antwerpen)
+- [City of Antwerp about the districts](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
+- [District Merksem via City of Antwerp](https://www.antwerpen.be/nl/overzicht/district-merksem)
+
+## Common requests around Merksem
+- 3D printing service in Merksem for shop props, event parts and SME tooling.
+- Custom 3D printing in Merksem for displays, price tags and campaign objects.
+- 3D model printing in Merksem for short test runs near Bredabaan or Albertkanaal.
 <!-- LOCAL_ENRICH_END -->

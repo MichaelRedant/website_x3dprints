@@ -1,6 +1,6 @@
-# 3D printing in Deurne: local, fast and tailored
+# 3D printing in Deurne: event props and robust repair parts
 
-Need **3D printing in Deurne**? X3DPrints prints in Herzele and ships quickly to Deurne and nearby Rivierenhof. Local 3D printing for Deurne, Rivierenhof and Sportpaleis omgeving, Haven-Zuid: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Deurne** for event support, repair parts, bicycle accessories or practical prototypes? X3DPrints prints from Herzele and ships to Deurne, Rivierenhof, the Sportpaleis/AFAS Dome area and the connection toward Borgerhout and Merksem.
 
 ---
 
@@ -38,18 +38,21 @@ We frequently deliver to: Deurne, Deurne city center, Rivierenhof, Sportpaleis o
 
 ---
 
-## Places we serve near Deurne
+## Local anchors around Deurne
 
-- Deurne town center
-- local business park in Deurne
-- sports hall in Deurne
+- Rivierenhof
+- AFAS Dome/Sportpaleis and Lotto Arena
+- Bosuil
+- Bisschoppenhoflaan
+- Te Boelaerpark edge
 
 ---
 
-## Sectors we back near Deurne
+## Teams we often help near Deurne
 
-- Retail/marketing/events in Deurne: displays, props and branded pieces.
-- Local teams in Deurne: custom 3D printing for prototypes and functional parts.
+- Event teams needing lightweight signage, cable clips or setup aids.
+- Local repair and maker projects where PETG or TPU parts solve a practical issue.
+- Schools, associations and small teams that need quick visual or functional prototypes.
 - SMEs and industry near Deurne: fixtures, enclosures and small to large batches.
 
 ---
@@ -107,33 +110,41 @@ We frequently deliver to: Deurne, Deurne city center, Rivierenhof, Sportpaleis o
 Send your files today and get a clear, fast proposal for **3D printing in Deurne**. Nearby production, personal support and reliable quality.
 
 <!-- LOCAL_ENRICH_START -->
-## Delivery details around Deurne
+## Deurne as event and maker district
 
-- Coverage: Deurne, Deurne city center, Rivierenhof, Sportpaleis omgeving, Haven-Zuid, Borgerhout/Antwerpen oost; delivery from Herzele, pickup available.
-- Frequent jobs: prototypes, housings and brackets tailored for teams in Deurne.
-- File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
-- Turnaround: usually a few working days; rush possible on request.
+Deurne is relevant because Rivierenhof, AFAS Dome/Sportpaleis, Lotto Arena, local maker teams and practical repair needs sit close together. This page focuses on event props, technical holders, repair parts and robust short runs.
+
+- Coverage: Deurne centre, Rivierenhof, Bosuil, Sportpaleis area, Lotto Arena, Bisschoppenhoflaan and the link to Borgerhout, Merksem and Borsbeek.
+- Frequent jobs: backstage aids, display parts, cable guides, protective covers, bicycle parts, holders and functional prototypes.
+- Material fit: PETG for sturdy parts, TPU for damping, PLA Matte for presentation and decor pieces.
+- Planning: event deadlines should be shared early; temporary parts often need transport-friendly assembly.
 
 ## Related nearby pages
-- [Parent page: 3D printing in Borsbeek](/en/3d-printen-in-borsbeek)
+- [Parent page: 3D printing in Antwerp](/en/3d-printen-in-antwerpen)
+- [Nearby: 3D printing in Borgerhout](/en/3d-printen-in-borgerhout)
+- [Nearby: 3D printing in Merksem](/en/3d-printen-in-merksem)
+- [Nearby: 3D printing in Borsbeek](/en/3d-printen-in-borsbeek)
+- [Nearby: 3D printing in Ekeren](/en/3d-printen-in-ekeren)
 
-## Customer spotlight
-- Retail/marketing/events in Deurne: displays, signage, props.
-- Common request: 3D printing service in Deurne; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Rivierenhof and Sportpaleis omgeving.
+## Local points in Deurne
+- Rivierenhof
+- AFAS Dome/Sportpaleis and Lotto Arena
+- Bosuil
+- Bisschoppenhoflaan
+- Te Boelaerpark edge
 
-## Where we drop off near Deurne
-- Deurne town center
-- local business park in Deurne
-- sports hall in Deurne
+## Deurne project examples
+- Event teams can print lightweight signage, cable clips or setup aids for a show.
+- Cyclists and technicians can request TPU protection or PETG holders.
+- Schools and associations can produce affordable prototypes, awards or decor pieces.
 
-## Sectors we back near Deurne
-- Retail/marketing/events in Deurne: displays, signage, props.
-- Local teams in Deurne: custom 3D printing for prototypes and functional parts.
-- SMEs/industry near Deurne: prototypes, fixtures, housings.
+## Sources and local context
+- [AFAS Dome/Sportpaleis Antwerp](https://www.sportpaleis.be/en/about-us/about-sportpaleis-antwerpen)
+- [City of Antwerp about the districts](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
+- [Rivierenhof via Province of Antwerp](https://www.provincieantwerpen.be/aanbod/dvt/rivierenhof.html)
 
 ## Common requests around Deurne
-- 3D printing service in Deurne
-- Custom 3D printing in Deurne
-- 3D model printing in Deurne
+- 3D printing service in Deurne for event props, cable guides and bicycle parts.
+- Custom 3D printing in Deurne for sports clubs, schools and makers.
+- 3D model printing in Deurne for functional tests before an event or proof-of-concept.
 <!-- LOCAL_ENRICH_END -->

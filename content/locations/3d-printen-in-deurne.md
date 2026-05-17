@@ -73,39 +73,41 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur en deadline; we bezorgen snel een helder voorstel voor **3D printen in Deurne**.
 
 <!-- LOCAL_ENRICH_START -->
-## Leverdetails rond Deurne
+## Deurne als event- en maakdistrict
 
-- Dekking: Deurne, Deurne centrum, Rivierenhof, Sportpaleis omgeving, Haven-Zuid, Borgerhout/Antwerpen oost; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Deurne.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Deurne is interessant door de combinatie van Rivierenhof, AFAS Dome/Sportpaleis, Lotto Arena, lokale maakbedrijven en woonwijken met veel praktische herstelvragen. De pagina focust daarom op eventprops, technische houders, repair parts en robuuste kleine series.
+
+- Dekking: Deurne centrum, Rivierenhof, Bosuil, Sportpaleisomgeving, Lotto Arena, Bisschoppenhoflaan en de aansluiting naar Borgerhout, Merksem en Borsbeek.
+- Typische opdrachten: backstage hulpmiddelen, displayparts, kabelgeleiders, beschermkappen, fietsonderdelen, houders en functionele prototypes.
+- Beste materiaalfit: PETG voor stevige onderdelen, TPU voor demping, PLA Matte voor presentatie- en decorstukken.
+- Planning: deadlines rond events best vroeg doorgeven; tijdelijke onderdelen moeten vaak transport- en montagevriendelijk zijn.
 
 ## Gerelateerde buurtpagina's
-- [Hoofdpagina: 3D printen in Borsbeek](/3d-printen-in-borsbeek)
+- [Hoofdpagina: 3D printen in Antwerpen](/3d-printen-in-antwerpen)
+- [Buurpagina: 3D printen in Borgerhout](/3d-printen-in-borgerhout)
+- [Buurpagina: 3D printen in Merksem](/3d-printen-in-merksem)
+- [Buurpagina: 3D printen in Borsbeek](/3d-printen-in-borsbeek)
+- [Buurpagina: 3D printen in Ekeren](/3d-printen-in-ekeren)
 
 ## Lokale punten in Deurne
-- Centrum van Deurne
-- Lokale bedrijvenzone in Deurne
-- Sporthal in Deurne
+- Rivierenhof
+- AFAS Dome/Sportpaleis en Lotto Arena
+- Bosuil
+- Bisschoppenhoflaan
+- Te Boelaerpark-rand
 
+## Lokale voorbeelden voor Deurne
+- Een eventteam kan lichtgewicht signage, kabelclips of montagehulpjes laten maken voor een show.
+- Een fietser of technieker kan TPU-bescherming of PETG-houders laten printen op maat.
+- Een school of vereniging kan betaalbare prototypes, awards of decorstukken laten produceren.
 
-## Klantenspotlight
-- Events/props rond Sportpaleis: kleine reeksen met vaste settings rond Deurne centrum.
-- Vaak gevraagd: 3D print service Deurne; we adviseren materiaal en afwerking.
-- Afhalen in Herzele; verzending naar Deurne en Deurne centrum.
-
-## Locaties die we bedienen nabij Deurne
-- Centrum van Deurne
-- Lokale bedrijvenzone in Deurne
-- Sporthal in Deurne
-
-## Sectorfocus nabij Deurne
-- Events/props rond Sportpaleis (Deurne)
-- Tooling voor maakbedrijven Deurne/Antwerpen
-- Onderwijs/techniek Deurne
+## Bronnen en lokale context
+- [Sportpaleis/AFAS Dome Antwerpen](https://www.sportpaleis.be/en/about-us/about-sportpaleis-antwerpen)
+- [Stad Antwerpen over de districten](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
+- [Rivierenhof via Provincie Antwerpen](https://www.provincieantwerpen.be/aanbod/dvt/rivierenhof.html)
 
 ## Typische aanvragen rond Deurne
-- 3D print service Deurne
-- rapid prototyping Deurne
-- 3D printing bedrijf Deurne
+- 3D print service Deurne voor eventprops, kabelgeleiders en fietsonderdelen.
+- 3D model laten printen Deurne voor sportclubs, scholen en makers.
+- rapid prototyping Deurne voor functionele tests voor een event of proof-of-concept.
 <!-- LOCAL_ENRICH_END -->

@@ -9,6 +9,7 @@ import {
   Layers,
   Package,
   Ruler,
+  ScanLine,
   Box,
   Sparkles,
   Puzzle,
@@ -34,7 +35,7 @@ import { servicesFaqByLocale } from "@/content/services-faq"
 const NL_METADATA: Metadata = {
   title: "3D print service in Belgie voor bedrijven en particulieren | X3DPrints",
   description:
-    "Lokale 3D print service in Belgie vanuit Herzele voor bedrijven en particulieren. Onderdelen, organizers, prototypes, etalage-items en maatwerk in PLA, PETG of TPU.",
+    "Lokale 3D print en 3D scanning service in Belgie vanuit Herzele. Onderdelen, prototypes, decor, persoonsscans, scan-to-print en maatwerk.",
   alternates: {
     canonical: "https://www.x3dprints.be/services/",
     languages: {
@@ -46,7 +47,7 @@ const NL_METADATA: Metadata = {
   openGraph: {
     title: "3D print service in Belgie op maat | X3DPrints",
     description:
-      "3D printen op maat voor bedrijven en particulieren: functionele onderdelen, organizers, prototypes en visuele stukken met heldere timing en materiaaladvies.",
+      "3D printen en 3D scanning op maat: onderdelen, organizers, prototypes, decor, persoonsscans en scan-to-print met heldere timing.",
     url: "https://www.x3dprints.be/services/",
     images: [{ url: "/images/og-services-nl.svg", width: 1200, height: 630, alt: "3D print service in Herzele" }],
     locale: "nl_BE",
@@ -56,7 +57,7 @@ const NL_METADATA: Metadata = {
     card: "summary_large_image",
     title: "3D print service in Belgie op maat",
     description:
-      "3D printen op maat vanuit Herzele voor bedrijven en particulieren. Van onderdelen en organizers tot prototypes en etalage-items.",
+      "3D printen en 3D scanning vanuit Herzele. Van onderdelen en organizers tot prototypes, decor, persoonsscans en scan-to-print.",
     images: ["/images/og-services-nl.svg"],
   },
 }
@@ -64,7 +65,7 @@ const NL_METADATA: Metadata = {
 const EN_METADATA: Metadata = {
   title: "Custom 3D printing in Belgium for businesses and individuals | X3DPrints",
   description:
-    "Local 3D printing in Belgium from Herzele for businesses and individuals. Parts, organizers, prototypes, retail items and custom pieces in PLA, PETG or TPU.",
+    "Local 3D printing and 3D scanning in Belgium from Herzele. Parts, organizers, prototypes, decor, person scans, scan-to-print and custom work.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/services/",
     languages: {
@@ -76,7 +77,7 @@ const EN_METADATA: Metadata = {
   openGraph: {
     title: "Custom 3D printing in Belgium | X3DPrints",
     description:
-      "From functional parts and organizers to prototypes, retail items and custom pieces. Fast follow-up and clear material advice from a local studio.",
+      "From functional parts and organizers to 3D scanning, prototypes, decor, person scans and scan-to-print. Clear planning from a local studio.",
     url: "https://www.x3dprints.be/en/services/",
     images: [{ url: "/images/og-services-en.svg", width: 1200, height: 630, alt: "3D printing service in Belgium" }],
     locale: "en_BE",
@@ -86,7 +87,7 @@ const EN_METADATA: Metadata = {
     card: "summary_large_image",
     title: "Custom 3D printing in Belgium",
     description:
-      "3D printing for businesses and individuals: parts, organizers, prototypes and custom pieces with clear planning.",
+      "3D printing and 3D scanning for parts, organizers, prototypes, decor, person scans and scan-to-print with clear planning.",
     images: ["/images/og-services-en.svg"],
   },
 }
@@ -99,7 +100,7 @@ export const metadata: Metadata = NL_METADATA
 const SERVICES_COPY_NL = {
   meta: {
     description:
-      "Lokale 3D print service in Belgie vanuit Herzele voor bedrijven en particulieren. 3D printen op maat in PLA, PETG of TPU voor onderdelen, organizers, prototypes en maatwerk.",
+      "Lokale 3D print en 3D scanning service in Belgie vanuit Herzele. 3D printen op maat en objecten scannen voor onderdelen, prototypes, decor en persoonsscans.",
   },
   hero: {
     title: "3D print service in Belgie voor bedrijven en particulieren",
@@ -164,6 +165,11 @@ const SERVICES_COPY_NL = {
       description: "Pragmatisch advies over wanddikte, infill en toleranties zodat prints vlot en betrouwbaar blijven.",
     },
     {
+      icon: ScanLine,
+      title: "3D scanning",
+      description: "Objecten digitaliseren naar mesh, CAD-referentie of scan-to-print route voor reserveonderdelen, prototypes, decor en persoonsscans.",
+    },
+    {
       icon: Package,
       title: "Prototypes en kleine reeksen",
       description: "Ideaal voor een stuk tot korte runs. Heldere planning en transparante prijs per batch.",
@@ -210,6 +216,12 @@ const SERVICES_COPY_NL = {
         body: "Overzichtspagina met use-cases, richtprijzen en FAQ. Goed startpunt voor nieuwe klanten.",
         href: "/3d-printen",
         cta: "Lees artikel",
+      },
+      {
+        title: "3D scanning service",
+        body: "Nieuw: lokale scan-to-print service voor reserveonderdelen, prototypes, decor en persoonsscans. Intake gratis, scan vanaf EUR 45.",
+        href: "/3d-scannen",
+        cta: "Bekijk 3D scanning",
       },
       {
         title: "3D modellen vinden",
@@ -391,7 +403,7 @@ const SERVICES_COPY_NL = {
 const SERVICES_COPY_EN = {
   meta: {
     description:
-      "Local 3D printing in Belgium from Herzele for businesses and individuals. Parts, organizers, prototypes, retail items and custom pieces in PLA, PETG or TPU.",
+      "Local 3D printing and 3D scanning in Belgium from Herzele. Custom printing plus object scanning for parts, prototypes, decor and person scans.",
   },
   hero: {
     title: "Custom 3D printing in Belgium for businesses and individuals",
@@ -456,6 +468,11 @@ const SERVICES_COPY_EN = {
       description: "Pragmatic advice on wall thickness, infill and tolerances so prints stay reliable.",
     },
     {
+      icon: ScanLine,
+      title: "3D scanning",
+      description: "Digitise objects into mesh, CAD reference or scan-to-print route for replacement parts, prototypes, decor and person scans.",
+    },
+    {
       icon: Package,
       title: "Prototypes and small to large batches",
       description: "Ideal for one-offs to short runs. Clear planning and transparent batch pricing.",
@@ -502,6 +519,12 @@ const SERVICES_COPY_EN = {
         body: "Overview page with use cases, price ranges and FAQ. A strong starting point for new clients.",
         href: "/3d-printen",
         cta: "Read article",
+      },
+      {
+        title: "3D scanning service",
+        body: "New: local scan-to-print service for replacement parts, prototypes, decor and person scans. Free intake, scan from EUR 45.",
+        href: "/3d-scannen",
+        cta: "View 3D scanning",
       },
     ],
   },
@@ -764,6 +787,13 @@ export default function Page(props: unknown) {
           nextHref: "/contact?topic=repair-intake",
         },
         {
+          request: "Physical object without 3D file",
+          startLabel: "3D scanning service",
+          startHref: "/3d-scannen",
+          nextLabel: "Request scan intake",
+          nextHref: "/contact?topic=3d-scanning",
+        },
+        {
           request: "Retail display or POS",
           startLabel: "Retail POS case",
           startHref: "/blog/retail-pos-3d-printen",
@@ -785,6 +815,13 @@ export default function Page(props: unknown) {
           startHref: "/blog/kapot-onderdeel-laten-printen",
           nextLabel: "Start repair intake",
           nextHref: "/contact?topic=repair-intake",
+        },
+        {
+          request: "Fysiek object zonder 3D-bestand",
+          startLabel: "3D scanning service",
+          startHref: "/3d-scannen",
+          nextLabel: "Vraag scan-intake",
+          nextHref: "/contact?topic=3d-scanning",
         },
         {
           request: "Retail display of POS",

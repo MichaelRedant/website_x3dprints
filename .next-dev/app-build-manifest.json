@@ -21,15 +21,55 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(home)/page.js"
     ],
+    "/en/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/layout.js"
+    ],
+    "/en/(home)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/(home)/layout.js"
+    ],
+    "/en/(home)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/(home)/page.js"
+    ],
     "/(pages)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/layout.js"
     ],
+    "/(pages)/portfolio/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/portfolio/page.js"
+    ],
+    "/(pages)/services/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/services/page.js"
+    ],
+    "/(pages)/3d-scannen/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/3d-scannen/page.js"
+    ],
+    "/(pages)/faq/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/faq/page.js"
+    ],
     "/(pages)/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/[slug]/page.js"
+    ],
+    "/(pages)/pricing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/pricing/page.js"
     ]
   }
 }

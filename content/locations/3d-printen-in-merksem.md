@@ -72,39 +72,41 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en aantallen; je ontvangt snel een voorstel voor **3D printen in Merksem**.
 
 <!-- LOCAL_ENRICH_START -->
-## Wat je moet weten in Merksem
+## Merksem als retail- en eventschakel
 
-- Dekking: Merksem, Merksem centrum, Bredabaan, Sportpaleis omgeving, Ekeren/Merksem grens, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Merksem.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Merksem heeft een andere zoekintentie dan Hoboken of Ekeren. Hier combineren we retail rond de Bredabaan, eventstromen richting Sportpaleis/AFAS Dome en praktische KMO-vragen langs Albertkanaal en Groenendaallaan.
 
-## Dichtbij gelegen locaties
-- [Overzicht lokale 3D print pagina's](/locaties)
+- Dekking: Bredabaan, Merksem centrum, Bouckenborghpark, Sportpaleisomgeving, Albertkanaal, Groenendaallaan en de grens met Ekeren.
+- Typische opdrachten: winkelprops, prijskaartjes, standmateriaal, kabelgeleiders, houderwerk, kleine tooling en onderdelen voor events.
+- Beste materiaalfit: PLA Matte voor zichtwerk en retail, PETG voor houders en montage, TPU voor bumpers of bescherming.
+- Planning: voor event- of retaildeadlines werken we best met een korte testprint vóór de reeks.
+
+## Gerelateerde buurtpagina's
+- [Hoofdpagina: 3D printen in Antwerpen](/3d-printen-in-antwerpen)
+- [Buurpagina: 3D printen in Deurne](/3d-printen-in-deurne)
+- [Buurpagina: 3D printen in Ekeren](/3d-printen-in-ekeren)
+- [Buurpagina: 3D printen in Borgerhout](/3d-printen-in-borgerhout)
+- [Buurpagina: 3D printen in Schoten](/3d-printen-in-schoten)
 
 ## Lokale punten in Merksem
-- Centrum van Merksem
-- Lokale bedrijvenzone in Merksem
-- Sporthal in Merksem
+- Bredabaan
+- Bouckenborghpark
+- Sportpaleis/AFAS Dome-rand
+- Albertkanaal
+- Groenendaallaan
 
+## Lokale voorbeelden voor Merksem
+- Een winkel kan maatwerk displays of prijskaartjes laten printen voor een tijdelijke actie.
+- Een eventleverancier kan kabelclips, markeringen of lichtgewicht montagehulpjes laten maken.
+- Een KMO kan PETG-houders of kleine productietools in dezelfde geometrie opnieuw bestellen.
 
-## Spotlight rond Merksem
-- Retail/props Bredabaan: behuizingen en pasmallen voor teams in Merksem centrum.
-- Terugkerende order: 3D print service Merksem; we bewaren je instellingen.
-- Leverfocus: Merksem, Merksem centrum, Bredabaan.
+## Bronnen en lokale context
+- [Sportpaleis/AFAS Dome Antwerpen](https://www.sportpaleis.be/en/about-us/about-sportpaleis-antwerpen)
+- [Stad Antwerpen over de districten](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
+- [District Merksem via Stad Antwerpen](https://www.antwerpen.be/nl/overzicht/district-merksem)
 
-## Landmarks in de buurt van Merksem
-- Centrum van Merksem
-- Lokale bedrijvenzone in Merksem
-- Sporthal in Merksem
-
-## Teams die we ondersteunen rond Merksem
-- Retail/props Bredabaan (Merksem)
-- Events/Sportpaleis omgeving (Merksem)
-- KMO tooling in Merksem/Ekeren
-
-## Wat vaak wordt gevraagd in Merksem
-- 3D print service Merksem
-- rapid prototyping Merksem
-- 3D printing bedrijf Merksem
+## Typische aanvragen rond Merksem
+- 3D print service Merksem voor winkelprops, eventonderdelen en kmo-tooling.
+- 3D model laten printen Merksem voor displays, prijskaartjes en campagneobjecten.
+- rapid prototyping Merksem voor korte testreeksen richting Bredabaan of Albertkanaal.
 <!-- LOCAL_ENRICH_END -->

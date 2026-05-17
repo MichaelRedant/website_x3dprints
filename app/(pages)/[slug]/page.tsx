@@ -344,7 +344,6 @@ export default async function Page(
     })
     .filter((value): value is { slug: string; city: string } => Boolean(value))
 
-  const visibleKeywordPhrases = uniqueValues([keyphrase, ...phrases]).slice(0, 8)
   const structuredAreaServed = uniqueValues([
     loc.city,
     ...(loc.province ? [loc.province] : []),
@@ -696,22 +695,6 @@ export default async function Page(
             </div>
             <div className="pointer-events-none absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
           </header>
-
-          {visibleKeywordPhrases.length > 0 && (
-            <section className="mx-auto mt-6 max-w-3xl rounded-2xl border border-white/30 bg-white/50 p-4 backdrop-blur-xl shadow-[0_8px_26px_rgba(0,0,0,0.05)]">
-              <h2 className="text-sm font-semibold text-slate-900">Veel gezochte termen in {loc.city}</h2>
-              <ul className="mt-3 flex flex-wrap gap-2">
-                {visibleKeywordPhrases.map((phrase) => (
-                  <li
-                    key={phrase}
-                    className="rounded-full border border-slate-200/70 bg-white/80 px-3 py-1 text-xs text-slate-700"
-                  >
-                    {phrase}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
 
           <MiniToc items={tocItems} className="mt-8" defaultCollapsed dismissible storageKey={`mini-toc:${loc.slug}`} />
 

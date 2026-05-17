@@ -11,6 +11,7 @@ export type RelatedLinksPageType =
   | "blog"
   | "shop"
   | "services"
+  | "scanning"
   | "materials"
   | "pricing"
   | "contact"
@@ -125,15 +126,45 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
     secondary: {
       nl: [
         { label: "Portfolio", href: "/portfolio" },
+        { label: "3D scanning service", href: "/3d-scannen" },
         { label: "Segmenten & cases", href: "/segments" },
         ...(SHOP_INDEXABLE ? [{ label: "Shop & voorraaditems", href: "/shop" }] : []),
         { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       ],
       en: [
         { label: "Portfolio", href: "/portfolio" },
+        { label: "3D scanning service", href: "/3d-scannen" },
         { label: "Segments & cases", href: "/segments" },
         ...(SHOP_INDEXABLE ? [{ label: "Shop & stocked items", href: "/shop" }] : []),
         { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
+      ],
+    },
+  },
+  scanning: {
+    primary: {
+      nl: [
+        { label: "Vraag gratis scan-intake aan", href: "/contact?topic=3d-scanning" },
+        { label: "3D modelleren", href: "/3d-modelleren" },
+        { label: "3D print service", href: "/services" },
+      ],
+      en: [
+        { label: "Request free scan intake", href: "/contact?topic=3d-scanning" },
+        { label: "3D modelling", href: "/3d-modelleren" },
+        { label: "3D print service", href: "/services" },
+      ],
+    },
+    secondary: {
+      nl: [
+        { label: "Materialen & richtlijnen", href: "/materials" },
+        { label: "Prijzen & calculator", href: "/pricing" },
+        { label: "Portfolio", href: "/portfolio" },
+        { label: "Kapot onderdeel laten printen", href: "/blog/kapot-onderdeel-laten-printen" },
+      ],
+      en: [
+        { label: "Materials and guidelines", href: "/materials" },
+        { label: "Pricing and calculator", href: "/pricing" },
+        { label: "Portfolio", href: "/portfolio" },
+        { label: "Broken part guide", href: "/blog/kapot-onderdeel-laten-printen" },
       ],
     },
   },
@@ -208,12 +239,14 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
       nl: [
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segmenten & cases", href: "/segments" },
+        { label: "3D scanning vanafprijzen", href: "/3d-scannen" },
         ...(SHOP_INDEXABLE ? [{ label: "Shop & voorraaditems", href: "/shop" }] : []),
         { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       ],
       en: [
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segments & cases", href: "/segments" },
+        { label: "3D scanning starting prices", href: "/3d-scannen" },
         ...(SHOP_INDEXABLE ? [{ label: "Shop & stocked items", href: "/shop" }] : []),
         { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       ],
