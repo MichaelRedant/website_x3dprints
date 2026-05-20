@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import AutoCarousel from "@/components/AutoCarousel"
 import GlassCard from "@/components/GlassCard"
 import GlassOrb from "@/components/GlassOrb"
+import PortfolioGallery from "@/components/PortfolioGallery"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
@@ -756,13 +756,7 @@ export default function Page(props: unknown) {
             <p className="mt-2 text-slate-600">{copy.gallery.body}</p>
           </Reveal>
           <Reveal className="mt-10">
-            <AutoCarousel
-              items={photos}
-              speed={14}
-              visibleCount={4}
-              newCount={8}
-              itemClass="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]"
-            />
+            <PortfolioGallery items={photos} locale={normalizedLocale} newCount={8} />
           </Reveal>
         </div>
       </section>

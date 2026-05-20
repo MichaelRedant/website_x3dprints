@@ -1,7 +1,4 @@
 {
-  "/(pages)/services/page": "app/(pages)/services/page.js",
-  "/(pages)/faq/page": "app/(pages)/faq/page.js",
-  "/(pages)/[slug]/page": "app/(pages)/[slug]/page.js",
-  "/(pages)/pricing/page": "app/(pages)/pricing/page.js",
-  "/(pages)/3d-scannen/page": "app/(pages)/3d-scannen/page.js"
+  "/(home)/page": "app/(home)/page.js",
+  "/(pages)/portfolio/page": "app/(pages)/portfolio/page.js"
 }
