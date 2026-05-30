@@ -72,39 +72,41 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur en aantal; we bezorgen snel een voorstel voor **3D printen in Borgerhout**.
 
 <!-- LOCAL_ENRICH_START -->
-## Leverdetails rond Borgerhout
+## Borgerhout als creatieve satelliet van Antwerpen
 
-- Dekking: Borgerhout, Turnhoutsebaan, Spoor Oost, De Roma, Borgerhout centrum, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Borgerhout.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Borgerhout krijgt een andere focus dan Berchem of Deurne: hier draait de vraag vaker rond cultuur, kleine ondernemers, repair, props en zichtwerk voor creatieve teams. Turnhoutsebaan, De Roma, Spoor Oost en Krugerplein zijn logische ankerpunten voor maatwerk in kleine oplage.
+
+- Dekking: Turnhoutsebaan, De Roma, Krugerplein, Spoor Oost, Gitschotellei en de aansluiting richting Berchem en Deurne.
+- Typische opdrachten: podiumprops, displaystukken, signage, repair parts, custom mounts, kleine reeksen voor makers en horeca.
+- Beste materiaalfit: PLA Matte voor decor en zichtwerk, PETG voor stevige houders, TPU voor dempers of beschermers.
+- Praktisch: foto's zijn nuttig voor context, maar voor exacte reproductie van een kapot onderdeel moet het object meestal fysiek langskomen.
 
 ## Gerelateerde buurtpagina's
 - [Hoofdpagina: 3D printen in Antwerpen](/3d-printen-in-antwerpen)
+- [Buurpagina: 3D printen in Berchem](/3d-printen-in-berchem)
+- [Buurpagina: 3D printen in Deurne](/3d-printen-in-deurne)
+- [Buurpagina: 3D printen in Merksem](/3d-printen-in-merksem)
+- [Buurpagina: 3D printen in Borsbeek](/3d-printen-in-borsbeek)
 
 ## Lokale punten in Borgerhout
-- Centrum van Borgerhout
-- Lokale bedrijvenzone in Borgerhout
-- Sporthal in Borgerhout
+- Turnhoutsebaan
+- De Roma
+- Spoor Oost en Sinksenfoor
+- Krugerplein
+- Te Boelaerpark-rand richting Deurne
 
+## Lokale voorbeelden voor Borgerhout
+- Een cultuurhuis kan lichtgewicht props of decorstukken laten printen voor een productie.
+- Een winkel of horecazaak kan menuhouders, kleine displays of gevelsignage laten maken in beperkte oplage.
+- Een repair café of maker kan clips, dopjes, houders of kabelgeleiders laten namaken of verbeteren.
 
-## Klantenspotlight
-- Culturele events en props: kleine reeksen met vaste settings rond Turnhoutsebaan.
-- Vaak gevraagd: 3D print service Borgerhout; we adviseren materiaal en afwerking.
-- Afhalen in Herzele; verzending naar Borgerhout en Turnhoutsebaan.
-
-## Locaties die we bedienen nabij Borgerhout
-- Centrum van Borgerhout
-- Lokale bedrijvenzone in Borgerhout
-- Sporthal in Borgerhout
-
-## Sectorfocus nabij Borgerhout
-- Culturele events en props (Borgerhout)
-- Prototypes voor creatieve bureaus (Borgerhout)
-- Retail/interieur in Borgerhout
+## Bronnen en lokale context
+- [Stad Antwerpen over de districten](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
+- [Sinksenfoor via Stad Antwerpen pers](https://pers.antwerpen.be/persuitnodiging-sinksenfoor-2026-voorstelling-programma)
+- [De Roma](https://www.deroma.be/)
 
 ## Typische aanvragen rond Borgerhout
-- 3D print service Borgerhout
-- rapid prototyping Borgerhout
-- 3D printing bedrijf Borgerhout
+- 3D print service Borgerhout voor props, displays en repair parts.
+- 3D model laten printen Borgerhout voor makers, horeca en cultuurteams.
+- rapid prototyping Borgerhout voor kleine series en tastbare concepten.
 <!-- LOCAL_ENRICH_END -->

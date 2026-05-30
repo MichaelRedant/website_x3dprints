@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal"
 import Link from "next/link"
 import Image from "next/image"
 import { useEffect, useMemo, useRef, useState } from "react"
+import { Play } from "lucide-react"
 import { useLocale } from "./LocaleProvider"
 
 type Video = { id: string; title: string; description: string }
@@ -73,8 +74,8 @@ function LiteVideo({ videoId, title, copy }: { videoId: string; title: string; c
           />
           <span className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" aria-hidden />
           <span className="absolute inset-0 grid place-items-center">
-            <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-white/90 text-lg font-semibold text-slate-900 shadow-lg transition group-hover:scale-105">
-              ▶
+            <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-white/90 text-lg font-semibold text-slate-900 shadow-lg transition group-hover:scale-105 dark:bg-slate-900/90 dark:text-slate-50">
+              <Play className="h-5 w-5 fill-current" aria-hidden />
             </span>
           </span>
         </button>
@@ -82,7 +83,6 @@ function LiteVideo({ videoId, title, copy }: { videoId: string; title: string; c
     </div>
   )
 }
-
 export default function VideoGallery({ videos, highlightIds }: Props) {
   const { locale } = useLocale()
   const copy: VideoCopy =
@@ -110,8 +110,8 @@ export default function VideoGallery({ videos, highlightIds }: Props) {
       <div className="grid gap-10 md:grid-cols-2">
         {videos.slice(0, visible).map((video, index) => (
           <Reveal key={video.id} delay={0.1 + index * 0.03} className="h-full">
-            <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/40 bg-white/70 p-4 shadow-lg backdrop-blur transition-transform hover:-translate-y-1 hover:shadow-xl">
-              <div className="relative overflow-hidden rounded-2xl border border-slate-200/60">
+            <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/40 bg-white/70 p-4 shadow-lg backdrop-blur transition-transform hover:-translate-y-1 hover:shadow-xl dark:border-slate-700/70 dark:bg-slate-950/75">
+              <div className="relative overflow-hidden rounded-2xl border border-slate-200/60 dark:border-slate-700/70">
                 <div
                   className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-slate-900/0 via-slate-900/0 to-slate-900/10 opacity-0 transition-opacity group-hover:opacity-100"
                   aria-hidden
@@ -124,13 +124,13 @@ export default function VideoGallery({ videos, highlightIds }: Props) {
                 )}
               </div>
               <div className="mt-4 flex flex-1 flex-col">
-                <h3 className="text-lg font-semibold text-slate-900">{video.title}</h3>
-                <p className="mt-2 flex-1 text-sm text-slate-600">{video.description}</p>
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-50">{video.title}</h3>
+                <p className="mt-2 flex-1 text-sm text-slate-600 dark:text-slate-300">{video.description}</p>
                 <Link
                   href={`https://www.youtube.com/watch?v=${video.id}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 transition hover:text-emerald-700"
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 transition hover:text-emerald-700 dark:text-emerald-300 dark:hover:text-emerald-200"
                 >
                   {copy.watchOnYoutube}
                   <span aria-hidden>-&gt;</span>
@@ -144,7 +144,7 @@ export default function VideoGallery({ videos, highlightIds }: Props) {
         <div className="mt-8 flex justify-center">
           <button
             type="button"
-            className="rounded-full border border-slate-300 px-6 py-2 text-sm font-semibold text-slate-900 shadow transition hover:-translate-y-px hover:bg-white"
+            className="rounded-full border border-slate-300 px-6 py-2 text-sm font-semibold text-slate-900 shadow transition hover:-translate-y-px hover:bg-white dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
             onClick={() => setVisible((prev) => Math.min(videos.length, prev + 10))}
           >
             {copy.loadMore}

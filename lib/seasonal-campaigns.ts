@@ -7,7 +7,8 @@ export type CarouselPhoto = {
 
 export type SeasonalCampaignKey =
   | "valentine"
-  | "parents"
+  | "mothers-day"
+  | "fathers-day"
   | "back-to-school"
   | "winter"
   | "spring"
@@ -60,7 +61,7 @@ const getNthWeekdayUtc = (year: number, month: number, weekday: number, n: numbe
 
 const isWithinWindow = (date: Date, target: Date, daysBefore: number, daysAfter: number) => {
   const diff = target.getTime() - date.getTime()
-  return diff <= daysAfter * DAY_MS && diff >= -daysBefore * DAY_MS
+  return diff <= daysBefore * DAY_MS && diff >= -daysAfter * DAY_MS
 }
 
 const getMonth = (date: Date) => date.getUTCMonth() + 1
@@ -104,36 +105,15 @@ const campaigns: SeasonalCampaign[] = [
     isActive: (date) => (getMonth(date) === 1 && getDay(date) >= 15) || (getMonth(date) === 2 && getDay(date) <= 16),
   },
   {
-    key: "parents",
+    key: "mothers-day",
     type: "holiday",
-    priority: 90,
+    priority: 95,
     href: "/blog/3d-printen-vaderdag-moederdag",
-    label: { nl: "Vaderdag & Moederdag", en: "Mother's Day & Father's Day" },
-    keywords: ["vaderdag", "moederdag", "father", "mother"],
+    label: { nl: "Moederdag cadeaus", en: "Mother's Day gifts" },
+    keywords: ["moederdag", "mother"],
     minimumHomeSeasonalSlots: 2,
     minimumLocationSeasonalSlots: 2,
     photos: [
-      {
-        src: "/images/portfolio/vaderdag.webp",
-        alt: {
-          nl: "3D geprinte Vaderdag sleutelhangers",
-          en: "3D printed Father's Day keychains",
-        },
-      },
-      {
-        src: "/images/portfolio/vaderdag2.webp",
-        alt: {
-          nl: "3D geprinte Vaderdag desk items",
-          en: "3D printed Father's Day desk items",
-        },
-      },
-      {
-        src: "/images/portfolio/vaderdag3.webp",
-        alt: {
-          nl: "3D geprint gepersonaliseerd Vaderdag cadeau",
-          en: "3D printed personalized Father's Day gift",
-        },
-      },
       {
         src: "/images/portfolio/moederdag.webp",
         alt: {
@@ -159,8 +139,45 @@ const campaigns: SeasonalCampaign[] = [
     isActive: (date) => {
       const year = date.getUTCFullYear()
       const mothersDay = getNthWeekdayUtc(year, 5, 0, 2)
+      return isWithinWindow(date, mothersDay, 21, 1)
+    },
+  },
+  {
+    key: "fathers-day",
+    type: "holiday",
+    priority: 90,
+    href: "/blog/3d-printen-vaderdag-moederdag",
+    label: { nl: "Vaderdag cadeaus", en: "Father's Day gifts" },
+    keywords: ["vaderdag", "father"],
+    minimumHomeSeasonalSlots: 2,
+    minimumLocationSeasonalSlots: 2,
+    photos: [
+      {
+        src: "/images/portfolio/vaderdag.webp",
+        alt: {
+          nl: "3D geprinte Vaderdag sleutelhangers",
+          en: "3D printed Father's Day keychains",
+        },
+      },
+      {
+        src: "/images/portfolio/vaderdag2.webp",
+        alt: {
+          nl: "3D geprinte Vaderdag desk items",
+          en: "3D printed Father's Day desk items",
+        },
+      },
+      {
+        src: "/images/portfolio/vaderdag3.webp",
+        alt: {
+          nl: "3D geprint gepersonaliseerd Vaderdag cadeau",
+          en: "3D printed personalized Father's Day gift",
+        },
+      },
+    ],
+    isActive: (date) => {
+      const year = date.getUTCFullYear()
       const fathersDay = getNthWeekdayUtc(year, 6, 0, 2)
-      return isWithinWindow(date, mothersDay, 21, 1) || isWithinWindow(date, fathersDay, 21, 1)
+      return isWithinWindow(date, fathersDay, 21, 1)
     },
   },
   {

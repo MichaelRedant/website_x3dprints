@@ -69,39 +69,41 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Berendrecht, Z
 Upload je STL- of STEP-bestand via [contact](/contact). Voeg aantallen en materiaalvoorkeur toe; we bezorgen snel een voorstel voor je project in Berendrecht, Zandvliet of Lillo.
 
 <!-- LOCAL_ENRICH_START -->
-## Lokale accenten voor Berendrecht-Zandvliet-Lillo
+## Polderdistrict en havenfocus
 
-- Dekking: Berendrecht-Zandvliet-Lillo, Berendrecht, Zandvliet, Lillo, Ekeren, Havengebied; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Berendrecht-Zandvliet-Lillo.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Berendrecht-Zandvliet-Lillo krijgt geen creatieve binnenstadscopy. De sterkte van deze pagina zit in haven, polder, logistiek en robuust maatwerk. Denk aan beschermkappen, houders, teststukken, labels, beugels en prototypes die tegen praktisch gebruik moeten kunnen.
 
-## Nabijgelegen pagina's
+- Dekking: Berendrecht, Zandvliet, Lillo, Lillo-Fort, Scheldelaan, Kanaaldokzone, Havengebied en de verbinding richting Ekeren.
+- Typische opdrachten: PETG-houders, scannerclips, sensorbehuizingen, montagehulpen, veiligheidsmarkeringen, technische proefstukken en kleine series.
+- Beste materiaalfit: PETG voor sterkte, TPU voor demping of bescherming, ASA/ABS/Nylon op aanvraag voor zwaardere technische context.
+- Praktisch: vermeld buitengebruik, chemische omgeving, warmte, bevestiging en gewenste levensduur meteen in de aanvraag.
+
+## Gerelateerde buurtpagina's
+- [Hoofdpagina: 3D printen in Antwerpen](/3d-printen-in-antwerpen)
 - [Buurpagina: 3D printen in Ekeren](/3d-printen-in-ekeren)
+- [Buurpagina: 3D printen in Merksem](/3d-printen-in-merksem)
+- [Buurpagina: 3D printen in Kapellen](/3d-printen-in-kapellen)
+- [Buurpagina: 3D printen in Zwijndrecht](/3d-printen-in-zwijndrecht)
 
 ## Lokale punten in Berendrecht-Zandvliet-Lillo
-- Centrum van Berendrecht-Zandvliet-Lillo
-- Lokale bedrijvenzone in Berendrecht-Zandvliet-Lillo
-- Sporthal in Berendrecht-Zandvliet-Lillo
+- Berendrecht
+- Zandvliet
+- Lillo en Lillo-Fort
+- Scheldelaan
+- Havengebied en dokkenzone
 
+## Lokale voorbeelden voor Berendrecht-Zandvliet-Lillo
+- Een logistiek team kan scannerhouders of labels laten printen voor een testopstelling.
+- Een onderhoudsploeg kan PETG-beschermkappen of montagehulpen laten maken in kleine serie.
+- Een lokaal event of vereniging kan stevige signalisatie of decorstukken laten printen.
 
-## Lokale spotlight
-- Havenprojecten en tooling: PLA/PETG onderdelen afgestemd op projecten rond Berendrecht.
-- Vaak gevraagd: 3D print service Berendrecht; we adviseren materiaal en afwerking.
-- Leverfocus: Berendrecht-Zandvliet-Lillo, Berendrecht, Zandvliet.
+## Bronnen en lokale context
+- [Port of Antwerp-Bruges](https://www.portofantwerpbruges.com/)
+- [Stad Antwerpen over de districten](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
+- [District Berendrecht-Zandvliet-Lillo via Stad Antwerpen](https://www.antwerpen.be/nl/overzicht/district-berendrecht-zandvliet-lillo)
 
-## Plaatsen waar we vaak leveren rond Berendrecht-Zandvliet-Lillo
-- Centrum van Berendrecht-Zandvliet-Lillo
-- Lokale bedrijvenzone in Berendrecht-Zandvliet-Lillo
-- Sporthal in Berendrecht-Zandvliet-Lillo
-
-## Sectoren die we vaak helpen in Berendrecht-Zandvliet-Lillo
-- Havenprojecten en tooling (Berendrecht-Zandvliet-Lillo)
-- Industrieel maatwerk nabij PSA/DP World (Berendrecht-Zandvliet-Lillo)
-- Onderwijs en labs in de regio (Berendrecht-Zandvliet-Lillo)
-
-## Veelgevraagde zoekopdrachten in Berendrecht-Zandvliet-Lillo
-- 3D print service Berendrecht
-- 3D printen Zandvliet
-- 3D printing bedrijf Lillo
+## Typische aanvragen rond Berendrecht-Zandvliet-Lillo
+- 3D print service Berendrecht-Zandvliet-Lillo voor haventooling en robuuste houders.
+- 3D model laten printen Berendrecht-Zandvliet-Lillo voor technische proefstukken.
+- rapid prototyping Berendrecht-Zandvliet-Lillo voor kleine series met praktische belasting.
 <!-- LOCAL_ENRICH_END -->

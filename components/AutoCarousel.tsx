@@ -152,26 +152,26 @@ export default function AutoCarousel({
     <section
       aria-label={copy.ariaLabel}
       className={[
-        "group relative overflow-hidden rounded-3xl ring-1 ring-white/30 bg-white/55 backdrop-blur-xl shadow-glass",
+        "group relative overflow-hidden rounded-3xl bg-white/55 ring-1 ring-white/30 shadow-glass backdrop-blur-xl dark:border dark:border-slate-700/70 dark:bg-slate-950/75 dark:ring-slate-800/60",
         premium ? "border border-indigo-100/40 shadow-[0_22px_65px_rgba(30,41,59,0.18)]" : "",
         className,
       ].join(" ")}
     >
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-r from-cyan-200/30 via-transparent to-teal-200/30"
+        className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-r from-cyan-200/30 via-transparent to-teal-200/30 dark:from-slate-800/40 dark:to-slate-700/20"
       />
       {premium ? (
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white/70 via-indigo-50/35 to-transparent"
+          className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white/70 via-indigo-50/35 to-transparent dark:from-slate-900/70 dark:via-slate-800/30"
         />
       ) : null}
 
-      <div className="relative overflow-hidden rounded-[1.7rem] border border-white/55 bg-white/55 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.45)] sm:p-4">
+      <div className="relative overflow-hidden rounded-[1.7rem] border border-white/55 bg-white/55 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.45)] dark:border-slate-700/70 dark:bg-slate-950/65 dark:shadow-[inset_0_1px_0_rgba(51,65,85,0.4)] sm:p-4">
         {items.length > 1 ? (
           <div className="relative z-10 mb-4 flex items-center justify-between gap-3">
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/80 px-3 py-1.5 text-xs font-semibold text-slate-700 shadow-sm">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/80 px-3 py-1.5 text-xs font-semibold text-slate-700 shadow-sm dark:border-slate-700 dark:bg-slate-900/90 dark:text-slate-200">
               <span className="inline-flex h-2 w-2 rounded-full bg-indigo-500" aria-hidden />
               {copy.positionLabel(currentPosition, items.length)}
             </div>
@@ -182,7 +182,7 @@ export default function AutoCarousel({
                 type="button"
                 className={[
                   "inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/80",
-                  "bg-white/85 text-slate-900 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:bg-white hover:shadow-md",
+                  "bg-white/85 text-slate-900 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:bg-white hover:shadow-md dark:border-slate-700 dark:bg-slate-900/90 dark:text-slate-100 dark:hover:bg-slate-800",
                   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500/70",
                 ].join(" ")}
               >
@@ -194,7 +194,7 @@ export default function AutoCarousel({
                 type="button"
                 className={[
                   "inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/80",
-                  "bg-white/85 text-slate-900 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:bg-white hover:shadow-md",
+                  "bg-white/85 text-slate-900 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:bg-white hover:shadow-md dark:border-slate-700 dark:bg-slate-900/90 dark:text-slate-100 dark:hover:bg-slate-800",
                   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500/70",
                 ].join(" ")}
               >
@@ -207,14 +207,14 @@ export default function AutoCarousel({
         <div className="relative w-full overflow-hidden rounded-[1.35rem]">
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-y-0 left-0 z-10 hidden w-16 bg-gradient-to-r from-white/75 to-transparent sm:block"
+            className="pointer-events-none absolute inset-y-0 left-0 z-10 hidden w-16 bg-gradient-to-r from-white/75 to-transparent dark:from-slate-950/85 sm:block"
           />
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-y-0 right-0 z-10 hidden w-16 bg-gradient-to-l from-white/75 to-transparent sm:block"
+            className="pointer-events-none absolute inset-y-0 right-0 z-10 hidden w-16 bg-gradient-to-l from-white/75 to-transparent dark:from-slate-950/85 sm:block"
           />
           {premium && items.length > 1 ? (
-            <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 z-10 h-1 overflow-hidden bg-white/40">
+            <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 z-10 h-1 overflow-hidden bg-white/40 dark:bg-slate-800/80">
               <motion.div
                 key={`progress-${index}`}
                 className="h-full bg-gradient-to-r from-cyan-400 via-indigo-500 to-emerald-400"
@@ -242,7 +242,7 @@ export default function AutoCarousel({
                   aria-label={copy.zoomLabel(photo.alt)}
                   className={[
                     "group relative flex h-full flex-col overflow-hidden rounded-[1.4rem] border border-slate-200/70",
-                    "bg-white/92 shadow-[0_14px_36px_rgba(15,23,42,0.10)] backdrop-blur",
+                    "bg-white/92 shadow-[0_14px_36px_rgba(15,23,42,0.10)] backdrop-blur dark:border-slate-700/70 dark:bg-slate-900/90 dark:shadow-[0_18px_40px_rgba(2,6,23,0.35)]",
                     "transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(15,23,42,0.16)]",
                     premium ? "hover:-translate-y-1.5" : "",
                   ].join(" ")}
@@ -263,7 +263,7 @@ export default function AutoCarousel({
                       {copy.newLabel}
                     </span>
                   )}
-                  <div className={`relative w-full overflow-hidden bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.85),rgba(241,245,249,0.92))] ${itemClass}`}>
+                  <div className={`relative w-full overflow-hidden bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.85),rgba(241,245,249,0.92))] dark:bg-[radial-gradient(circle_at_top,rgba(30,41,59,0.9),rgba(15,23,42,0.96))] ${itemClass}`}>
                     <Image
                       src={photo.src}
                       alt={photo.alt}
@@ -273,12 +273,12 @@ export default function AutoCarousel({
                       loading="lazy"
                     />
                   </div>
-                  <div className="border-t border-slate-100/90 bg-white/92 px-4 pb-4 pt-3 text-left">
-                    <p className="overflow-hidden text-sm font-semibold leading-5 text-slate-900 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2]">
+                  <div className="border-t border-slate-100/90 bg-white/92 px-4 pb-4 pt-3 text-left dark:border-slate-800/80 dark:bg-slate-900/95">
+                    <p className="overflow-hidden text-sm font-semibold leading-5 text-slate-900 dark:text-slate-50 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2]">
                       {photo.alt}
                     </p>
                     {photo.info ? (
-                      <p className="mt-1 text-xs text-slate-600 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2]">
+                      <p className="mt-1 text-xs text-slate-600 dark:text-slate-300 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2]">
                         {photo.info}
                       </p>
                     ) : null}
@@ -323,7 +323,7 @@ export default function AutoCarousel({
             <div
               className="
                 relative mx-4 w-full max-w-5xl overflow-hidden rounded-3xl border border-white/20
-                bg-white/85 p-3 shadow-2xl backdrop-blur-xl
+                 bg-white/85 p-3 shadow-2xl backdrop-blur-xl dark:border-slate-700/70 dark:bg-slate-950/95
                 animate-[popIn_.18s_ease-out_both]
               "
               onClick={(e) => e.stopPropagation()}
@@ -343,7 +343,7 @@ export default function AutoCarousel({
                 <button
                   aria-label={copy.closeLabel}
                   onClick={() => setActive(null)}
-                  className="absolute right-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/85 text-slate-900 shadow-sm backdrop-blur transition hover:bg-white"
+                  className="absolute right-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/85 text-slate-900 shadow-sm backdrop-blur transition hover:bg-white dark:bg-slate-900/90 dark:text-slate-100 dark:hover:bg-slate-800"
                 >
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
                     <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
@@ -351,8 +351,8 @@ export default function AutoCarousel({
                 </button>
               </div>
               <div className="mt-3 px-1 pb-1">
-                <h3 className="text-base font-semibold text-slate-900">{active.alt}</h3>
-                {active.info && <p className="mt-1 text-sm text-slate-700">{active.info}</p>}
+                <h3 className="text-base font-semibold text-slate-900 dark:text-slate-50">{active.alt}</h3>
+                {active.info && <p className="mt-1 text-sm text-slate-700 dark:text-slate-300">{active.info}</p>}
               </div>
             </div>
           </div>,

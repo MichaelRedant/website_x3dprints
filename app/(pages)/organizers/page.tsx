@@ -37,11 +37,11 @@ const ORDER = ["modugrid", "packout", "tstak", "custom"] as const
 const FAQ_ITEMS = [
   {
     q: "Hoe werkt de intake voor een organizer?",
-    a: "Kies je systeem (Gridfinity/Packout/TSTAK/Custom), voeg foto’s en een lijst tools toe. We tekenen een indeling, sturen een preview en printen on-demand.",
+    a: "Kies je systeem (Gridfinity/Packout/TSTAK/Custom), voeg foto's en een lijst tools toe. We tekenen een indeling, sturen een preview en printen on-demand.",
   },
   {
     q: "Moet ik STL-bestanden aanleveren?",
-    a: "Nee. We modelleren de indeling voor je koffer of lade. Jij levert enkel maten of foto’s; wij zorgen voor de passende trays.",
+    a: "Nee. We modelleren de indeling voor je koffer of lade. Jij levert enkel maten of foto's; wij zorgen voor de passende trays.",
   },
   {
     q: "Welke materialen gebruiken jullie?",
@@ -152,7 +152,7 @@ export default function OrganizersHubPage() {
         {/* Systems grid */}
         <section id="systems">
         <Reveal className="space-y-4">
-          <p className="text-sm font-semibold uppercase tracking-[0.26em] text-slate-600">Kies je systeem</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.26em] text-slate-600 dark:text-slate-300">Kies je systeem</p>
           <div className="grid gap-6 lg:grid-cols-2">
             {cards.map((card, index) => {
               const ctaHref = `/organizers/${card.slug}`
@@ -184,7 +184,7 @@ export default function OrganizersHubPage() {
                         href={externalLink.href}
                         target="_blank"
                         rel="noreferrer"
-                        className="mt-2 inline-flex items-center gap-2 text-xs font-semibold text-amber-700 underline underline-offset-4 hover:text-amber-900"
+                        className="mt-2 inline-flex items-center gap-2 text-xs font-semibold text-amber-700 underline underline-offset-4 hover:text-amber-900 dark:text-amber-200 dark:hover:text-amber-100"
                       >
                         Bekijk {externalLink.label}
                         <span className="i-lucide-external-link" aria-hidden />
@@ -193,7 +193,7 @@ export default function OrganizersHubPage() {
                     <ul className="mt-4 grid gap-2 text-sm text-slate-800 dark:text-slate-200">
                     {card.pains.slice(0, 4).map((pain) => (
                         <li key={pain} className="flex items-center gap-2">
-                          <span className="i-lucide-hammer text-slate-500" aria-hidden />
+                          <span className="i-lucide-hammer text-slate-500 dark:text-slate-300" aria-hidden />
                           {pain}
                         </li>
                       ))}
@@ -201,13 +201,13 @@ export default function OrganizersHubPage() {
                     <div className="mt-5 flex flex-wrap gap-3">
                       <Link
                         href={ctaHref}
-                        className="inline-flex items-center gap-2 rounded-xl border border-amber-100/70 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                        className="inline-flex items-center gap-2 rounded-xl border border-amber-100/70 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-slate-900 dark:text-slate-50 dark:hover:bg-slate-800"
                       >
                         {ctaLabel}
                       </Link>
                       <Link
                         href="/materials#material-suggestion-tool"
-                        className="inline-flex items-center gap-2 rounded-xl border border-amber-100/70 bg-white/40 px-4 py-2 text-sm font-semibold text-amber-800 transition hover:-translate-y-0.5 hover:bg-white"
+                        className="inline-flex items-center gap-2 rounded-xl border border-amber-100/70 bg-white/40 px-4 py-2 text-sm font-semibold text-amber-800 transition hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-slate-950/70 dark:text-amber-200 dark:hover:bg-slate-900"
                       >
                         Vraag materiaaladvies
                       </Link>
@@ -231,7 +231,7 @@ export default function OrganizersHubPage() {
         <Reveal className="rounded-3xl border border-white/40 bg-white/85 p-6 shadow-xl ring-1 ring-white/60 backdrop-blur dark:border-[#0F203C] dark:bg-[#0B0F1A]/85 dark:ring-0">
           <div className="grid gap-6 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
             <div className="space-y-3">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-700">Orde geeft rust</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-700 dark:text-amber-200">Orde geeft rust</p>
               <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl dark:text-white">Rust in je hoofd, sneller werken</h2>
               <p className="text-slate-700 dark:text-slate-200">
                 Een koffer die stil blijft en logisch ingedeeld is, haalt de ruis uit je werkdag. Minder zoeken, minder dubbel
@@ -249,19 +249,19 @@ export default function OrganizersHubPage() {
               </div>
               <ul className="mt-3 space-y-2 text-slate-800 dark:text-slate-100">
                 <li className="flex items-center gap-2">
-                  <span className="i-lucide-check text-emerald-600" aria-hidden />
-                  Eén plek per tool, geen dubbels
+                  <span className="i-lucide-check text-emerald-600 dark:text-emerald-300" aria-hidden />
+                  Een plek per tool, geen dubbels
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="i-lucide-check text-emerald-600" aria-hidden />
+                  <span className="i-lucide-check text-emerald-600 dark:text-emerald-300" aria-hidden />
                   Labelzones en kleurcodes per taak
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="i-lucide-check text-emerald-600" aria-hidden />
+                  <span className="i-lucide-check text-emerald-600 dark:text-emerald-300" aria-hidden />
                   Antislip waar nodig, geen rammel
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="i-lucide-check text-emerald-600" aria-hidden />
+                  <span className="i-lucide-check text-emerald-600 dark:text-emerald-300" aria-hidden />
                   Prefill contact met foto + lijst = snelle start
                 </li>
               </ul>

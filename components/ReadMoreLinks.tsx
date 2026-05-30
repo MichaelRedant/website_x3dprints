@@ -58,29 +58,29 @@ export default function ReadMoreLinks({
     <section className="px-6 pb-24 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-5xl">
         <Reveal>
-          <GlassCard className="border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur">
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">{copy.eyebrow}</p>
-            <h2 className="mt-2 text-2xl font-semibold text-slate-900">{resolvedTitle}</h2>
-            <p className="mt-2 text-sm text-slate-600">{resolvedIntro}</p>
+          <GlassCard className="border border-white/40 bg-white/80 p-6 shadow-lg backdrop-blur dark:border-slate-700/70 dark:bg-slate-950/75">
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500 dark:text-slate-400">{copy.eyebrow}</p>
+            <h2 className="mt-2 text-2xl font-semibold text-slate-900 dark:text-slate-50">{resolvedTitle}</h2>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{resolvedIntro}</p>
             <div className="mt-4 grid gap-4 md:grid-cols-2">
-              <div className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                <p className="text-xs uppercase tracking-[0.3em] text-slate-500">{copy.primaryTitle}</p>
-                <ul className="mt-2 space-y-2 text-sm text-slate-600">
+              <div className="rounded-2xl border border-slate-100 bg-white/70 p-4 dark:border-slate-700 dark:bg-slate-900/80">
+                <p className="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">{copy.primaryTitle}</p>
+                <ul className="mt-2 space-y-2 text-sm text-slate-600 dark:text-slate-300">
                   {localizedPrimary.map((item) => (
                     <li key={item.href}>
-                      <Link href={item.href} className="text-indigo-600 transition hover:text-indigo-500">
+                      <Link href={item.href} className="text-indigo-600 transition hover:text-indigo-500 dark:text-indigo-300 dark:hover:text-indigo-200">
                         {item.label}
                       </Link>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="rounded-2xl border border-slate-100 bg-white/70 p-4">
-                <p className="text-xs uppercase tracking-[0.3em] text-slate-500">{copy.secondaryTitle}</p>
-                <ul className="mt-2 space-y-2 text-sm text-slate-600">
+              <div className="rounded-2xl border border-slate-100 bg-white/70 p-4 dark:border-slate-700 dark:bg-slate-900/80">
+                <p className="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">{copy.secondaryTitle}</p>
+                <ul className="mt-2 space-y-2 text-sm text-slate-600 dark:text-slate-300">
                   {localizedSecondary.map((item) => (
                     <li key={item.href}>
-                      <Link href={item.href} className="text-indigo-600 transition hover:text-indigo-500">
+                      <Link href={item.href} className="text-indigo-600 transition hover:text-indigo-500 dark:text-indigo-300 dark:hover:text-indigo-200">
                         {item.label}
                       </Link>
                     </li>

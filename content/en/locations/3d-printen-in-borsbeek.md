@@ -1,6 +1,6 @@
-# 3D printing in Borsbeek: local, fast and tailored
+# 3D printing in Borsbeek: Fort 3 repairs and local custom parts
 
-Need **3D printing in Borsbeek**? X3DPrints prints in Herzele and ships quickly to Borsbeek and nearby Fort 3. Local 3D printing for Borsbeek, Fort 3 and Luchthavenzone, Deurne: PLA, PETG and TPU with optional finishing and quick delivery.
+Need **3D printing in Borsbeek** for a repair part, school project, local display or small custom object? X3DPrints prints from Herzele and ships to Borsbeek, Fort 3, Robianostraat, Deurne, Mortsel and Wommelgem.
 
 ---
 
@@ -38,19 +38,21 @@ We frequently deliver to: Borsbeek, Borsbeek city center, Fort 3, Luchthavenzone
 
 ---
 
-## Places we serve near Borsbeek
+## Local anchors around Borsbeek
 
-- Borsbeek town center
-- local business park in Borsbeek
-- sports hall in Borsbeek
+- Fort 3
+- Robianostraat and district house
+- Borsbeek centre
+- Deurne edge
+- Mortsel and Wommelgem connection
 
 ---
 
-## Sectors we back near Borsbeek
+## Teams we often help near Borsbeek
 
-- Local teams in Borsbeek: custom 3D printing for prototypes and functional parts.
-- SMEs and industry near Borsbeek: fixtures, enclosures and small to large batches.
-- Retail/marketing/events in Borsbeek: displays, props and branded pieces.
+- Associations ordering awards, nameplates or decor pieces in small batches.
+- Families and makers assessing broken plastic parts for reproduction.
+- Local shops producing counter displays, napkin rings or logo objects.
 
 ---
 
@@ -107,33 +109,41 @@ We frequently deliver to: Borsbeek, Borsbeek city center, Fort 3, Luchthavenzone
 Send your files today and get a clear, fast proposal for **3D printing in Borsbeek**. Nearby production, personal support and reliable quality.
 
 <!-- LOCAL_ENRICH_START -->
-## Delivery details around Borsbeek
+## Borsbeek as Antwerp's tenth district
 
-- Coverage: Borsbeek, Borsbeek city center, Fort 3, Luchthavenzone, Deurne, Pickup in Herzele; delivery from Herzele, pickup available.
-- Frequent jobs: prototypes, housings and brackets tailored for teams in Borsbeek.
-- File prep: STL/STEP with fit, finish and quantity info helps us quote faster.
-- Turnaround: usually a few working days; rush possible on request.
+Borsbeek became part of the City of Antwerp in 2025 and deserves a local angle of its own. Requests here are often practical: parts for associations, local shops, repairs, school projects and SMEs between Deurne, Mortsel and Wommelgem.
+
+- Coverage: Borsbeek centre, Fort 3, Robianostraat, Deurne edge, Mortsel edge, Wommelgem edge and the airport area.
+- Frequent jobs: repair parts, holders, clips, small displays, personalised gifts, school projects and functional prototypes.
+- Material fit: PLA Matte for gifts and visible work, PETG for functional parts, TPU for soft protection.
+- Practical note: for replacement parts, the physical object or clear dimensions with photos are strongly preferred.
 
 ## Related nearby pages
+- [Parent page: 3D printing in Antwerp](/en/3d-printen-in-antwerpen)
 - [Nearby: 3D printing in Deurne](/en/3d-printen-in-deurne)
+- [Nearby: 3D printing in Mortsel](/en/3d-printen-in-mortsel)
+- [Nearby: 3D printing in Wommelgem](/en/3d-printen-in-wommelgem)
+- [Nearby: 3D printing in Berchem](/en/3d-printen-in-berchem)
 
-## Customer spotlight
-- Local teams in Borsbeek: custom 3D printing for prototypes and functional parts.
-- Common request: 3D printing service in Borsbeek; we pick material and finish for the use case.
-- Pickup in Herzele; shipping to Fort 3 and Luchthavenzone.
+## Local points in Borsbeek
+- Fort 3
+- Robianostraat and district house
+- Borsbeek centre
+- Deurne edge
+- Mortsel and Wommelgem connection
 
-## Where we drop off near Borsbeek
-- Borsbeek town center
-- local business park in Borsbeek
-- sports hall in Borsbeek
+## Borsbeek project examples
+- Associations can print awards, nameplates or decor pieces in small batches.
+- Families or makers can have broken plastic parts assessed for reproduction.
+- Local shops can order counter displays, napkin rings or logo objects.
 
-## Sectors we back near Borsbeek
-- Local teams in Borsbeek: custom 3D printing for prototypes and functional parts.
-- SMEs/industry near Borsbeek: prototypes, fixtures, housings.
-- Retail/marketing/events in Borsbeek: displays, signage, props.
+## Sources and local context
+- [City of Antwerp: Borsbeek as district](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
+- [Borsbeek district house](https://www.antwerpen.be/info/67477cec88fcb25c7d6cb1e5/districtshuis-borsbeek)
+- [Borsbeek district council](https://www.antwerpen.be/info/673e2e8143d3b4706d3a2bf1/samenstelling-districtsraad-borsbeek)
 
 ## Common requests around Borsbeek
-- 3D printing service in Borsbeek
-- Custom 3D printing in Borsbeek
-- 3D model printing in Borsbeek
+- 3D printing service in Borsbeek for repair parts, school projects and local displays.
+- Custom 3D printing in Borsbeek for gifts, associations and small shops.
+- 3D model printing in Borsbeek for feasible test pieces between Deurne, Mortsel and Wommelgem.
 <!-- LOCAL_ENRICH_END -->

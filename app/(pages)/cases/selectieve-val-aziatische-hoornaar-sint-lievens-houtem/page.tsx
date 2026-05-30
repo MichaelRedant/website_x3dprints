@@ -192,7 +192,6 @@ const serviceJsonLd = {
     "@type": "LocalBusiness",
     name: SITE.name,
     url: SITE.url,
-    ...(SITE.phone ? { telephone: SITE.phone } : {}),
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",

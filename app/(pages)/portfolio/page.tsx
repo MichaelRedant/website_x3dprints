@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import AutoCarousel from "@/components/AutoCarousel"
 import GlassCard from "@/components/GlassCard"
 import GlassOrb from "@/components/GlassOrb"
+import PortfolioGallery from "@/components/PortfolioGallery"
 import Reveal from "@/components/Reveal"
 import ShimmerButton from "@/components/ShimmerButton"
 import VideoGallery from "@/components/VideoGallery"
@@ -95,6 +95,12 @@ const toTitleCase = (value: string) =>
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(" ")
 
+const photoLabelOverrides: Record<string, string> = {
+  "batman-on-printbed.webp": "Batman on printbed",
+  "custom-led-spot-armatuur.webp": "Custom LED-spot armatuur",
+  "octopus-servetringen-op-maat.webp": "Octopus servetringen op maat",
+}
+
 const photoEntries = readdirSync(portfolioDir)
   .filter((file) => /\.webp$/i.test(file))
   .map((file) => {
@@ -113,6 +119,7 @@ const photoEntries = readdirSync(portfolioDir)
       .replace(/^\d+$/, "")
       .trim()
     return {
+      file: entry.file,
       src: `/images/portfolio/${encodeURIComponent(entry.file)}`,
       label: cleaned,
     }
@@ -136,7 +143,14 @@ const PORTFOLIO_COPY_NL = {
   },
   highlight: {
     title: "Nieuw in de kijker",
-    body: "Vijf recente projecten die de veelzijdigheid van 3D-printing tonen.",
+    body: "Vijf recente maatwerkcases uit de fotogalerij, gekozen op commerciële toepasbaarheid.",
+    items: [
+      "Automotive dashboardvent met honingraatstructuur",
+      "Custom LED-spot armatuur op maat",
+      "Servetringen op maat voor Octopus.be",
+      "Racefiets headset spacer op maat",
+      "Custom gitaar-pickguard template",
+    ],
   },
   focus: {
     title: "Waar we op focussen",
@@ -309,7 +323,14 @@ const PORTFOLIO_COPY_EN = {
   },
   highlight: {
     title: "New highlights",
-    body: "Five recent projects that show the versatility of 3D printing.",
+    body: "Five recent custom cases from the photo gallery, selected for commercial relevance.",
+    items: [
+      "Automotive dashboard honeycomb vent",
+      "Custom LED spot fixture",
+      "Custom napkin rings for Octopus.be",
+      "Custom race bike headset spacer",
+      "Custom guitar pickguard template",
+    ],
   },
   focus: {
     title: "What we focus on",
@@ -522,7 +543,7 @@ export default function Page(props: unknown) {
 
   const photos = photoEntries.map((photo, index) => {
     const fallback = `${copy.photo.fallbackLabel} ${index + 1}`
-    const label = toTitleCase(photo.label || fallback)
+    const label = photoLabelOverrides[photo.file] ?? toTitleCase(photo.label || fallback)
     return {
       src: photo.src,
       alt: `${label} - ${copy.photo.altSuffix}`,
@@ -659,10 +680,10 @@ export default function Page(props: unknown) {
                 <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">{copy.highlight.title}</h2>
                 <p className="mt-2 text-sm text-slate-600">{copy.highlight.body}</p>
                 <ul className="mt-4 space-y-2 text-sm text-slate-700">
-                  {videos.slice(0, 5).map((video) => (
-                    <li key={video.id} className="flex items-start gap-2">
+                  {copy.highlight.items.map((item) => (
+                    <li key={item} className="flex items-start gap-2">
                       <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" aria-hidden />
-                      <span>{video.title}</span>
+                      <span>{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -735,13 +756,7 @@ export default function Page(props: unknown) {
             <p className="mt-2 text-slate-600">{copy.gallery.body}</p>
           </Reveal>
           <Reveal className="mt-10">
-            <AutoCarousel
-              items={photos}
-              speed={14}
-              visibleCount={4}
-              newCount={8}
-              itemClass="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]"
-            />
+            <PortfolioGallery items={photos} locale={normalizedLocale} newCount={8} />
           </Reveal>
         </div>
       </section>

@@ -11,10 +11,10 @@ const copy = {
     title: "Perfect georganiseerde gereedschapskoffers, op maat van jouw systeem.",
     body: "Gridfinity, Milwaukee Packout, TSTAK en volledig custom inserts. Geen rammel, labelbaar, antislip optioneel.",
     bullets: [
-      "Gridfinity · open-source grid voor lades/bureaus/koffers",
+      "Gridfinity - open-source grid voor lades, bureaus en koffers",
       "Packout inlays die stil blijven in de camionette",
       "TSTAK inserts met labelzones en antislip",
-      "Custom pegboard/Skådis, bins of parametric organizers",
+      "Custom pegboard/Skadis, bins of parametric organizers",
     ],
     primary: "Bekijk tool organizers",
     secondary: "Plan een indeling",
@@ -25,10 +25,10 @@ const copy = {
     title: "Perfectly organized tool cases, tailored to your system.",
     body: "Gridfinity, Milwaukee Packout, TSTAK and fully custom inserts. No rattle, label-ready, anti-slip optional.",
     bullets: [
-      "Gridfinity · open-source grid for drawers/desks/cases",
+      "Gridfinity - open-source grid for drawers, desks and cases",
       "Packout inlays that stay quiet in the van",
       "TSTAK inserts with label zones and anti-slip",
-      "Custom pegboard/Skådis, bins or parametric organizers",
+      "Custom pegboard/Skadis, bins or parametric organizers",
     ],
     primary: "See tool organizers",
     secondary: "Plan a layout",
@@ -47,14 +47,15 @@ export default function OrganizerCta({
 }) {
   const t = copy[locale]
   const localize = (href: string) => localizeHref(href, locale)
-  const dark = variant === "dark"
+  const darkVariant = variant === "dark"
+
   return (
     <Reveal
       className={cn(
         "relative overflow-hidden rounded-3xl border px-6 py-7 shadow-[0_18px_45px_rgba(15,23,42,0.08)] transition",
-        dark
+        darkVariant
           ? "border-slate-800 bg-[#0B0F1A]/90 ring-0"
-          : "border-slate-100 bg-white/85 ring-1 ring-white/70 backdrop-blur",
+          : "border-slate-100 bg-white/85 ring-1 ring-white/70 backdrop-blur dark:border-slate-700/70 dark:bg-slate-950/80 dark:ring-0",
         className,
       )}
     >
@@ -64,12 +65,21 @@ export default function OrganizerCta({
       />
       <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
         <div className="space-y-2">
-          <p className={cn("text-xs font-semibold uppercase tracking-[0.24em]", dark ? "text-cyan-200" : "text-cyan-700")}>
+          <p
+            className={cn(
+              "text-xs font-semibold uppercase tracking-[0.24em]",
+              darkVariant ? "text-cyan-200" : "text-cyan-700 dark:text-cyan-300",
+            )}
+          >
             {t.kicker}
           </p>
-          <h2 className={cn("text-xl font-bold sm:text-2xl", dark ? "text-white" : "text-slate-900")}>{t.title}</h2>
-          <p className={cn("max-w-3xl text-sm", dark ? "text-slate-200" : "text-slate-700")}>{t.body}</p>
-          <ul className={cn("grid gap-1 text-sm", dark ? "text-slate-100" : "text-slate-800")}>
+          <h2 className={cn("text-xl font-bold sm:text-2xl", darkVariant ? "text-white" : "text-slate-900 dark:text-white")}>
+            {t.title}
+          </h2>
+          <p className={cn("max-w-3xl text-sm", darkVariant ? "text-slate-200" : "text-slate-700 dark:text-slate-300")}>
+            {t.body}
+          </p>
+          <ul className={cn("grid gap-1 text-sm", darkVariant ? "text-slate-100" : "text-slate-800 dark:text-slate-200")}>
             {t.bullets.map((b) => (
               <li key={b} className="flex items-center gap-2">
                 <span className="i-lucide-sparkles text-cyan-500" aria-hidden />
@@ -83,9 +93,9 @@ export default function OrganizerCta({
             href={localize("/organizers")}
             className={cn(
               "inline-flex items-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold transition",
-              dark
+              darkVariant
                 ? "bg-white text-slate-900 shadow-sm hover:-translate-y-0.5"
-                : "bg-slate-900 text-white shadow-lg shadow-slate-900/15 hover:-translate-y-0.5",
+                : "bg-slate-900 text-white shadow-lg shadow-slate-900/15 hover:-translate-y-0.5 dark:bg-slate-100 dark:text-slate-900",
             )}
           >
             {t.primary}
@@ -95,9 +105,9 @@ export default function OrganizerCta({
             href={localize("/contact?material=organizers")}
             className={cn(
               "inline-flex items-center gap-2 rounded-xl border px-4 py-3 text-sm font-semibold transition",
-              dark
+              darkVariant
                 ? "border-slate-700 text-slate-100 hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-100"
-                : "border-slate-200 text-slate-900 hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900",
+                : "border-slate-200 text-slate-900 hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900 dark:border-slate-700 dark:text-slate-100 dark:hover:border-cyan-300 dark:hover:text-cyan-100",
             )}
           >
             {t.secondary}
@@ -107,9 +117,9 @@ export default function OrganizerCta({
             href={localize("/materials#material-suggestion-tool")}
             className={cn(
               "inline-flex items-center gap-2 rounded-xl border px-4 py-3 text-sm font-semibold transition",
-              dark
+              darkVariant
                 ? "border-slate-700 text-slate-100 hover:-translate-y-0.5 hover:border-cyan-300 hover:text-cyan-100"
-                : "border-slate-200 text-slate-900 hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900",
+                : "border-slate-200 text-slate-900 hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-900 dark:border-slate-700 dark:text-slate-100 dark:hover:border-cyan-300 dark:hover:text-cyan-100",
             )}
           >
             {t.tertiary}

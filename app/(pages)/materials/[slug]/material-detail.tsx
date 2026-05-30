@@ -139,7 +139,7 @@ const DETAIL_COPY_EN = {
     titleSuffix: "?",
     body:
       "We are happy to advise on design tweaks and finishing so your print fits the application perfectly.",
-    cta: "Plan a call",
+    cta: "Request advice",
   },
   readMore: {
     titlePrefix: "More about",

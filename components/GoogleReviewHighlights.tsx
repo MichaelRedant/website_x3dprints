@@ -1,4 +1,4 @@
-import Link from "next/link"
+﻿import Link from "next/link"
 import GlassCard from "@/components/GlassCard"
 import { localizeHref } from "@/lib/i18n/paths"
 import type { Locale } from "@/lib/i18n/locales"
@@ -60,22 +60,22 @@ export default function GoogleReviewHighlights({
 
   if (variant === "compact" && selectedReview) {
     return (
-      <GlassCard className="border border-emerald-100/80 bg-white/90 p-6 shadow-lg">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600">{copy.kicker}</p>
-        <h2 className="mt-2 text-xl font-semibold text-slate-900">{copy.titleLocal}</h2>
-        <p className="mt-2 text-sm text-slate-600">{copy.compactIntro}</p>
+      <GlassCard className="border border-emerald-100/80 bg-white/90 p-6 shadow-lg dark:border-slate-700/70 dark:bg-slate-950/75">
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600 dark:text-emerald-300">{copy.kicker}</p>
+        <h2 className="mt-2 text-xl font-semibold text-slate-900 dark:text-slate-50">{copy.titleLocal}</h2>
+        <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{copy.compactIntro}</p>
         <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
-          <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 font-semibold text-amber-700">
+          <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 font-semibold text-amber-700 dark:border-amber-300/30 dark:bg-amber-400/10 dark:text-amber-200">
             {stars(GOOGLE_REVIEW_SUMMARY.ratingValue)} {GOOGLE_REVIEW_SUMMARY.ratingValue.toFixed(1)}/5
           </span>
-          <span className="text-slate-600">{copy.basedOn(GOOGLE_REVIEW_SUMMARY.reviewCount)}</span>
+          <span className="text-slate-600 dark:text-slate-300">{copy.basedOn(GOOGLE_REVIEW_SUMMARY.reviewCount)}</span>
         </div>
-        <blockquote className="mt-4 rounded-2xl border border-slate-200/80 bg-white/85 p-4">
-          <p className="text-sm leading-6 text-slate-700">
+        <blockquote className="mt-4 rounded-2xl border border-slate-200/80 bg-white/85 p-4 dark:border-slate-700/70 dark:bg-slate-900/85">
+          <p className="text-sm leading-6 text-slate-700 dark:text-slate-200">
             &ldquo;{selectedReview.quote[locale]}&rdquo;
           </p>
-          <footer className="mt-3 text-xs text-slate-500">
-            <span className="font-semibold text-slate-700">{selectedReview.author}</span>
+          <footer className="mt-3 text-xs text-slate-500 dark:text-slate-400">
+            <span className="font-semibold text-slate-700 dark:text-slate-100">{selectedReview.author}</span>
             {" · "}
             {selectedReview.relativeDate[locale]}
           </footer>
@@ -86,13 +86,13 @@ export default function GoogleReviewHighlights({
             target="_blank"
             rel="noopener noreferrer"
             prefetch={false}
-            className="inline-flex items-center rounded-xl border border-slate-200/80 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50"
+            className="inline-flex items-center rounded-xl border border-slate-200/80 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
           >
             {copy.view}
           </Link>
           <Link
             href={localized("/portfolio")}
-            className="inline-flex items-center rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 shadow-sm transition hover:bg-emerald-100"
+            className="inline-flex items-center rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 shadow-sm transition hover:bg-emerald-100 dark:border-emerald-300/30 dark:bg-emerald-400/10 dark:text-emerald-200 dark:hover:bg-emerald-400/15"
           >
             {copy.portfolio}
           </Link>
@@ -102,30 +102,30 @@ export default function GoogleReviewHighlights({
   }
 
   return (
-    <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg ring-1 ring-white/60 sm:p-8">
+    <GlassCard className="border border-white/40 bg-white/85 p-6 shadow-lg ring-1 ring-white/60 dark:border-slate-700/70 dark:bg-slate-950/75 dark:ring-slate-800/60 sm:p-8">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div className="max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600">{copy.kicker}</p>
-          <h2 className="mt-2 text-balance text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{copy.title}</h2>
-          <p className="mt-2 text-sm text-slate-600 sm:text-base">{copy.intro}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-600 dark:text-emerald-300">{copy.kicker}</p>
+          <h2 className="mt-2 text-balance text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-3xl">{copy.title}</h2>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 sm:text-base">{copy.intro}</p>
         </div>
-        <div className="rounded-2xl border border-amber-200/70 bg-amber-50/80 px-4 py-3 text-sm">
-          <p className="font-semibold text-amber-700">{copy.ratingLabel}</p>
-          <p className="mt-1 text-lg font-bold text-amber-800">
+        <div className="rounded-2xl border border-amber-200/70 bg-amber-50/80 px-4 py-3 text-sm dark:border-amber-300/30 dark:bg-amber-400/10">
+          <p className="font-semibold text-amber-700 dark:text-amber-200">{copy.ratingLabel}</p>
+          <p className="mt-1 text-lg font-bold text-amber-800 dark:text-amber-100">
             {stars(GOOGLE_REVIEW_SUMMARY.ratingValue)} {GOOGLE_REVIEW_SUMMARY.ratingValue.toFixed(1)}/5
           </p>
-          <p className="text-xs text-amber-700">{copy.basedOn(GOOGLE_REVIEW_SUMMARY.reviewCount)}</p>
+          <p className="text-xs text-amber-700 dark:text-amber-200">{copy.basedOn(GOOGLE_REVIEW_SUMMARY.reviewCount)}</p>
         </div>
       </div>
 
       <div className="mt-6 grid gap-4 md:grid-cols-2">
         {GOOGLE_REVIEW_ENTRIES.map((review) => (
-          <article key={review.id} className="rounded-2xl border border-slate-200/80 bg-white/80 p-4 shadow-sm">
-            <p className="text-sm leading-6 text-slate-700">
+          <article key={review.id} className="rounded-2xl border border-slate-200/80 bg-white/80 p-4 shadow-sm dark:border-slate-700/70 dark:bg-slate-900/85">
+            <p className="text-sm leading-6 text-slate-700 dark:text-slate-200">
               &ldquo;{review.quote[locale]}&rdquo;
             </p>
-            <footer className="mt-3 text-xs text-slate-500">
-              <span className="font-semibold text-slate-700">{review.author}</span>
+            <footer className="mt-3 text-xs text-slate-500 dark:text-slate-400">
+              <span className="font-semibold text-slate-700 dark:text-slate-100">{review.author}</span>
               {" · "}
               {review.relativeDate[locale]}
             </footer>
@@ -139,7 +139,7 @@ export default function GoogleReviewHighlights({
           target="_blank"
           rel="noopener noreferrer"
           prefetch={false}
-          className="inline-flex items-center rounded-xl border border-slate-200/80 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50"
+          className="inline-flex items-center rounded-xl border border-slate-200/80 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
         >
           {copy.view}
         </Link>
@@ -148,13 +148,13 @@ export default function GoogleReviewHighlights({
           target="_blank"
           rel="noopener noreferrer"
           prefetch={false}
-          className="inline-flex items-center rounded-xl border border-emerald-200 bg-emerald-50 px-5 py-3 text-sm font-semibold text-emerald-700 shadow-sm transition hover:bg-emerald-100"
+          className="inline-flex items-center rounded-xl border border-emerald-200 bg-emerald-50 px-5 py-3 text-sm font-semibold text-emerald-700 shadow-sm transition hover:bg-emerald-100 dark:border-emerald-300/30 dark:bg-emerald-400/10 dark:text-emerald-200 dark:hover:bg-emerald-400/15"
         >
           {copy.leave}
         </Link>
         <Link
           href={localized("/portfolio")}
-          className="inline-flex items-center rounded-xl border border-indigo-200 bg-indigo-50 px-5 py-3 text-sm font-semibold text-indigo-700 shadow-sm transition hover:bg-indigo-100"
+          className="inline-flex items-center rounded-xl border border-indigo-200 bg-indigo-50 px-5 py-3 text-sm font-semibold text-indigo-700 shadow-sm transition hover:bg-indigo-100 dark:border-indigo-300/30 dark:bg-indigo-400/10 dark:text-indigo-200 dark:hover:bg-indigo-400/15"
         >
           {copy.portfolio}
         </Link>

@@ -71,7 +71,7 @@ export default function Page() {
     },
     {
       q: "Do you offer 3D scanning?",
-      a: "No, but with clear photos, measurements or a sample we can model and prep for print.",
+      a: "Yes. See <a href=\"/en/3d-scannen\">3D scanning</a> for replacement parts, prototypes, decor, person scans and scan-to-print routes. Intake is free; photos are for feasibility, but the actual scan requires the object to be brought in by appointment.",
     },
     { q: "Typical response time?", a: "Usually within one business day. If urgent, mention your deadline and we’ll explore rush options." },
     { q: "What does AM mean?", a: "Additive Manufacturing: building parts layer by layer from a 3D model." },

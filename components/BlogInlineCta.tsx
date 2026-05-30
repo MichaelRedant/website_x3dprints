@@ -1,4 +1,4 @@
- "use client"
+﻿"use client"
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -48,11 +48,11 @@ export default function BlogInlineCta({ variant = "top" }: Props) {
     <section className={`${isTop ? "pt-6" : "pt-4"} pb-4 sm:pb-6`}>
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl">
-          <GlassCard className="flex flex-col gap-4 border border-slate-200/70 bg-slate-50/80 p-5 shadow-sm backdrop-blur-sm sm:flex-row sm:items-end sm:justify-between">
+          <GlassCard className="flex flex-col gap-4 border border-slate-200/70 bg-slate-50/80 p-5 shadow-sm backdrop-blur-sm dark:border-slate-700/70 dark:bg-slate-950/70 sm:flex-row sm:items-end sm:justify-between">
             <div className="max-w-2xl">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">{copy.kicker}</p>
-              <h2 className="mt-1 text-lg font-semibold text-slate-900">{copy.title}</h2>
-              <p className="mt-1 text-sm text-slate-600">{copy.body}</p>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">{copy.kicker}</p>
+              <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">{copy.title}</h2>
+              <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{copy.body}</p>
             </div>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 sm:justify-end">
               <ShimmerButton
@@ -65,14 +65,14 @@ export default function BlogInlineCta({ variant = "top" }: Props) {
               </ShimmerButton>
               <Link
                 href={pricingHref}
-                className="text-sm font-semibold text-indigo-600 transition hover:text-indigo-500"
+                className="text-sm font-semibold text-indigo-600 transition hover:text-indigo-500 dark:text-indigo-300 dark:hover:text-indigo-200"
                 onClick={() => trackEvent({ action: "cta_click", category: "blog_cta", label: "pricing", value: 1 })}
               >
                 {copy.pricing}
               </Link>
               <Link
                 href={toolHref}
-                className="text-sm font-semibold text-slate-700 transition hover:text-slate-900"
+                className="text-sm font-semibold text-slate-700 transition hover:text-slate-900 dark:text-slate-300 dark:hover:text-slate-100"
                 onClick={() => trackEvent({ action: "cta_click", category: "blog_cta", label: "material_tool", value: 1 })}
               >
                 {copy.tool}

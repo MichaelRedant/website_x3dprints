@@ -16,6 +16,7 @@ const EN_PATHS = new Set<string>([
   "/contact/bedankt",
   "/3d-printen",
   "/3d-modelleren",
+  "/3d-scannen",
   "/sustainability",
   "/lokaal-belgisch",
   "/valentijn-3d-printen",

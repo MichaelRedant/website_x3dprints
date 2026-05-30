@@ -31,14 +31,14 @@ export default function ModuGridCarousel() {
   return (
     <div className="space-y-3">
       <h2 className="text-xl font-bold text-slate-900 dark:text-white">Gridfinity in beeld</h2>
-      <p className="text-slate-700 dark:text-slate-200">Lades, bureaus en koffers met één systeem. Eigen foto’s, geen renders.</p>
-      <div className="relative overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm ring-1 ring-white/70 dark:border-slate-800 dark:bg-[#0B0F1A]">
+      <p className="text-slate-700 dark:text-slate-200">Lades, bureaus en koffers met een systeem. Eigen foto&apos;s, geen renders.</p>
+      <div className="relative overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm ring-1 ring-white/70 dark:border-slate-700/70 dark:bg-slate-950/80 dark:ring-slate-800/70">
         <div className="flex items-center justify-between px-3 py-2 text-slate-700 dark:text-slate-200">
           <span className="text-sm font-semibold">Blader door de voorbeelden</span>
           <div className="flex gap-2">
             <button
               type="button"
-              className="group inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-600 active:translate-y-0 dark:border-slate-700 dark:bg-[#0f162c] dark:text-slate-100"
+              className="group inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-600 active:translate-y-0 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-cyan-300 dark:hover:text-cyan-200"
               onClick={() => scroll(-900)}
               aria-label="Vorige foto's"
               aria-controls={carouselId}
@@ -47,7 +47,7 @@ export default function ModuGridCarousel() {
             </button>
             <button
               type="button"
-              className="group inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-600 active:translate-y-0 dark:border-slate-700 dark:bg-[#0f162c] dark:text-slate-100"
+              className="group inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-600 active:translate-y-0 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-cyan-300 dark:hover:text-cyan-200"
               onClick={() => scroll(900)}
               aria-label="Volgende foto's"
               aria-controls={carouselId}
@@ -64,7 +64,7 @@ export default function ModuGridCarousel() {
           {IMAGES.map((img, i) => (
             <div
               key={img.src}
-              className="w-full max-w-[340px] flex-shrink-0 snap-start md:max-w-[420px] lg:max-w-[33%] border-l border-slate-100 last:border-r dark:border-slate-800"
+              className="w-full max-w-[340px] flex-shrink-0 snap-start border-l border-slate-100 last:border-r dark:border-slate-800 md:max-w-[420px] lg:max-w-[33%]"
             >
               <Image
                 src={img.src}

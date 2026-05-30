@@ -69,13 +69,13 @@ export default function ShareActions({ url, title, summary, layout = "card", loc
         }
 
   const baseClasses =
-    "inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/95 px-3 py-2 text-xs font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:border-slate-300 hover:bg-white"
+    "inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/95 px-3 py-2 text-xs font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:border-slate-300 hover:bg-white dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-slate-600 dark:hover:bg-slate-800"
 
   const iconColorByPlatform: Record<Platform, string> = {
     linkedin: "text-[#0A66C2]",
     facebook: "text-[#1877F2]",
-    x: "text-slate-900",
-    threads: "text-slate-900",
+    x: "text-slate-900 dark:text-slate-100",
+    threads: "text-slate-900 dark:text-slate-100",
     email: "text-emerald-600",
     copy: "text-slate-700",
   }
@@ -104,7 +104,7 @@ export default function ShareActions({ url, title, summary, layout = "card", loc
     <div
       className={
         layout === "card"
-          ? "flex flex-wrap gap-2 rounded-2xl border border-slate-100 bg-white/70 p-3"
+          ? "flex flex-wrap gap-2 rounded-2xl border border-slate-100 bg-white/70 p-3 dark:border-slate-700 dark:bg-slate-900/80"
           : "flex flex-wrap gap-2"
       }
     >
@@ -116,7 +116,7 @@ export default function ShareActions({ url, title, summary, layout = "card", loc
               <span className="hidden sm:inline">{labels.copy}</span>
               <span className="sr-only">{labels.copy}</span>
               {copied ? (
-                <span aria-live="polite" className="text-emerald-600">
+                <span aria-live="polite" className="text-emerald-600 dark:text-emerald-300">
                   {labels.copied}
                 </span>
               ) : null}

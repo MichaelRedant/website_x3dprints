@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useCallback, useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -34,11 +34,11 @@ export default function BackToTop() {
           onClick={scrollToTop}
           className={cn(
             "fixed bottom-4 right-4 z-[70] inline-flex items-center gap-2 rounded-2xl border border-white/60 bg-white/90 px-3 py-1.5 text-xs font-semibold text-slate-900 shadow-[0_12px_30px_rgba(15,23,42,0.16)] backdrop-blur transition hover:-translate-y-0.5 hover:bg-white sm:bottom-6 sm:right-6 sm:px-4 sm:py-2 sm:text-sm",
-            "dark:border-[#00E6FF]/40 dark:bg-[radial-gradient(circle_at_20%_20%,rgba(0,230,255,0.18),transparent),linear-gradient(120deg,#0F1324,#0B0F1A)] dark:text-white dark:shadow-[0_20px_60px_rgba(0,0,0,0.65),0_0_0_1px_rgba(0,230,255,0.15)]",
+            "dark:border-slate-700/80 dark:bg-slate-950/98 dark:text-slate-100 dark:shadow-[0_20px_60px_rgba(2,6,23,0.55)] dark:hover:bg-slate-900",
           )}
           aria-label="Terug naar boven"
         >
-          <span className="inline-flex h-7 w-7 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500/90 to-cyan-400/90 text-base text-white shadow-inner dark:from-[#FF00A8] dark:to-[#00E6FF] sm:h-8 sm:w-8">
+          <span className="inline-flex h-7 w-7 items-center justify-center rounded-xl border border-slate-200/70 bg-slate-100 text-base text-slate-900 shadow-inner dark:border-slate-700/80 dark:bg-slate-900 dark:text-slate-50 sm:h-8 sm:w-8">
             ↑
           </span>
           Naar boven

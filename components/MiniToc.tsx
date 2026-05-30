@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 type Props = {
   items: TOCItem[]
   className?: string
-  /** Onthoud UI-state per route; verander dit als je meerdere TOC’s op 1 site hebt */
+  /** Onthoud UI-state per route; verander dit als je meerdere TOC's op 1 site hebt */
   storageKey?: string
   /** Start in ingeklapte staat */
   defaultCollapsed?: boolean
@@ -32,8 +32,7 @@ export default function MiniToc({
   defaultCollapsed = false,
   dismissible = true,
 }: Props) {
-  const escapeId = (id: string) =>
-    typeof CSS !== "undefined" && CSS.escape ? CSS.escape(id) : id
+  const escapeId = (id: string) => (typeof CSS !== "undefined" && CSS.escape ? CSS.escape(id) : id)
   const headings = useMemo(
     () =>
       items.map((i) => ({
@@ -49,7 +48,6 @@ export default function MiniToc({
   const [hasMounted, setHasMounted] = useState(false)
   const observerRef = useRef<IntersectionObserver | null>(null)
 
-  // hydrate UI-state uit localStorage
   useEffect(() => {
     setHasMounted(true)
     const ls = safeLocalStorage()
@@ -66,7 +64,6 @@ export default function MiniToc({
     }
   }, [storageKey])
 
-  // schrijf UI-state naar localStorage
   useEffect(() => {
     if (!hasMounted) return
     const ls = safeLocalStorage()
@@ -78,7 +75,6 @@ export default function MiniToc({
     }
   }, [collapsed, dismissed, storageKey, hasMounted])
 
-  // Active heading via IntersectionObserver
   useEffect(() => {
     if (!("IntersectionObserver" in window)) return
     if (!headings.length) return
@@ -105,10 +101,8 @@ export default function MiniToc({
     return () => obs.disconnect()
   }, [headings])
 
-  // Als geen headings: niets renderen
   if (!headings.length) return null
 
-  // Reopen chip (zichtbaar wanneer dismissed)
   if (dismissed) {
     return (
       <button
@@ -116,7 +110,7 @@ export default function MiniToc({
         aria-label="Open inhoudsopgave"
         onClick={() => setDismissed(false)}
         className={cn(
-          "fixed bottom-4 right-4 z-20 rounded-full border border-slate-200 bg-white/90 px-3 py-2 text-sm font-semibold text-slate-700 shadow-md backdrop-blur transition hover:bg-white",
+          "fixed bottom-4 right-4 z-20 rounded-full border border-slate-200 bg-white/90 px-3 py-2 text-sm font-semibold text-slate-700 shadow-md backdrop-blur transition hover:bg-white dark:border-slate-700 dark:bg-slate-950/95 dark:text-slate-100 dark:hover:bg-slate-900",
           "focus:outline-none focus:ring-2 focus:ring-cyan-500",
         )}
       >
@@ -129,31 +123,27 @@ export default function MiniToc({
     <nav
       aria-label="Inhoudsopgave"
       className={cn(
-        "not-prose sticky top-4 z-10 mx-auto mb-6 max-w-3xl rounded-2xl border border-white/30 bg-white/70 backdrop-blur shadow-[0_10px_30px_rgba(0,0,0,0.06)]",
+        "not-prose sticky top-4 z-10 mx-auto mb-6 max-w-3xl rounded-2xl border border-white/30 bg-white/70 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur dark:border-slate-700/70 dark:bg-slate-950/80 dark:shadow-[0_18px_40px_rgba(2,6,23,0.35)]",
         className,
       )}
     >
-      {/* Header-balk met titel + controls */}
       <div className="flex items-center justify-between gap-2 px-3 py-2">
         <div className="flex items-center gap-2">
-          <span className="text-xs font-medium text-slate-600">Op deze pagina</span>
-          {/* actueel sectietje tonen (compact) */}
+          <span className="text-xs font-medium text-slate-600 dark:text-slate-300">Op deze pagina</span>
           {activeId && (
-            <span className="hidden truncate rounded-full border border-white/50 bg-white/70 px-2 py-0.5 text-xs text-slate-700 sm:inline">
+            <span className="hidden truncate rounded-full border border-white/50 bg-white/70 px-2 py-0.5 text-xs text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 sm:inline">
               #{activeId}
             </span>
           )}
         </div>
 
         <div className="flex items-center gap-1">
-          {/* Collapse/expand */}
           <button
             type="button"
             onClick={() => setCollapsed((v) => !v)}
             aria-label={collapsed ? "Inhoudsopgave uitklappen" : "Inhoudsopgave inklappen"}
-            className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-white/50 bg-white/70 text-slate-700 shadow-sm transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
+            className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-white/50 bg-white/70 text-slate-700 shadow-sm transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
           >
-            {/* Chevron icoon */}
             <svg
               width="18"
               height="18"
@@ -172,15 +162,13 @@ export default function MiniToc({
             </svg>
           </button>
 
-          {/* Dismiss volledig (optioneel) */}
           {dismissible && (
             <button
               type="button"
               onClick={() => setDismissed(true)}
               aria-label="Inhoudsopgave sluiten"
-              className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-white/50 bg-white/70 text-slate-700 shadow-sm transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-rose-400"
+              className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-white/50 bg-white/70 text-slate-700 shadow-sm transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-rose-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
             >
-              {/* X icoon */}
               <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   d="M18 6L6 18M6 6l12 12"
@@ -196,7 +184,6 @@ export default function MiniToc({
         </div>
       </div>
 
-      {/* Body: pills; collapse/expand */}
       <div
         className={cn(
           "overflow-hidden px-3 pb-3",
@@ -208,9 +195,9 @@ export default function MiniToc({
             const isActive = activeId === h.id
             const pill = cn(
               "inline-flex items-center gap-1 rounded-full px-3 py-1 text-sm transition",
-              "border border-white/40 bg-white/60 text-slate-700 hover:bg-white",
-              isActive && "border-cyan-400 bg-white text-slate-900 shadow-sm",
-              h.level === 3 && "opacity-80", // subtieler voor H3
+              "border border-white/40 bg-white/60 text-slate-700 hover:bg-white dark:border-slate-700 dark:bg-slate-900/80 dark:text-slate-200 dark:hover:bg-slate-800",
+              isActive && "border-cyan-400 bg-white text-slate-900 shadow-sm dark:border-cyan-300 dark:bg-slate-800 dark:text-slate-50",
+              h.level === 3 && "opacity-80",
             )
             return (
               <Link key={h.id} href={`#${h.id}`} className={pill}>

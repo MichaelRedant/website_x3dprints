@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 export const EN_METADATA: Metadata = {
   title: "Custom 3D printing in Belgium for businesses and individuals | X3DPrints",
   description:
-    "Local 3D printing in Belgium from Herzele for businesses and individuals. Parts, organizers, prototypes, retail items and custom pieces in PLA, PETG or TPU.",
+    "Local 3D printing and 3D scanning in Belgium from Herzele. Parts, organizers, prototypes, scan to CAD and custom pieces in PLA, PETG or TPU.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/services/",
     languages: {
@@ -15,7 +15,7 @@ export const EN_METADATA: Metadata = {
   openGraph: {
     title: "Custom 3D printing in Belgium | X3DPrints",
     description:
-      "From functional parts and organizers to prototypes, retail items and custom pieces. Fast follow-up and clear material advice from a local studio.",
+      "From functional parts and organizers to 3D scanning, prototypes, retail items and custom pieces. Clear planning from a local studio.",
     url: "https://www.x3dprints.be/en/services/",
     images: [{ url: "/images/og-services-en.svg", width: 1200, height: 630, alt: "3D printing service in Belgium" }],
     locale: "en_BE",
@@ -25,7 +25,7 @@ export const EN_METADATA: Metadata = {
     card: "summary_large_image",
     title: "Custom 3D printing in Belgium",
     description:
-      "3D printing for businesses and individuals: parts, organizers, prototypes and custom pieces with clear planning.",
+      "3D printing and 3D scanning for parts, organizers, prototypes and custom pieces with clear planning.",
     images: ["/images/og-services-en.svg"],
   },
 }

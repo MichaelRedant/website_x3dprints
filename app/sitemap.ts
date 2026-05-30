@@ -214,6 +214,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { nl: "/blog/", en: "/en/blog/", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/blog/page.tsx", "app/en/(pages)/blog/page.tsx"] },
     { nl: "/viewer", en: "/en/viewer", changeFrequency: "weekly", priority: 0.7, sources: ["app/(pages)/viewer/page.tsx", "app/en/(pages)/viewer/page.tsx"] },
     { nl: "/3d-modelleren", en: "/en/3d-modelleren", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/3d-modelleren/page.tsx", "app/en/(pages)/3d-modelleren/page.tsx"] },
+    { nl: "/3d-scannen", en: "/en/3d-scannen", changeFrequency: "monthly", priority: 0.75, sources: ["app/(pages)/3d-scannen/page.tsx", "app/en/(pages)/3d-scannen/page.tsx"] },
     { nl: "/lokaal-belgisch", en: "/en/lokaal-belgisch", changeFrequency: "monthly", priority: 0.7, sources: ["app/(pages)/lokaal-belgisch/page.tsx", "app/en/(pages)/lokaal-belgisch/page.tsx"] },
     { nl: "/about", en: "/en/about", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/about/page.tsx", "app/en/(pages)/about/page.tsx"] },
     { nl: "/sustainability", en: "/en/sustainability", changeFrequency: "monthly", priority: 0.6, sources: ["app/(pages)/sustainability/page.tsx", "app/en/(pages)/sustainability/page.tsx"] },

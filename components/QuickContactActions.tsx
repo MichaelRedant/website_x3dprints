@@ -54,7 +54,7 @@ export default function QuickContactActions({
       <a
         href={mailHref}
         onClick={() => trackEvent({ action: "contact_start", category: trackingCategory, label: "mail", value: 1 })}
-        className="inline-flex items-center gap-2 rounded-xl border border-slate-200/80 bg-white/80 px-4 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+        className="inline-flex items-center gap-2 rounded-xl border border-slate-200/80 bg-white/80 px-4 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
       >
         <Mail className="h-4 w-4" aria-hidden />
         {copy.mail}

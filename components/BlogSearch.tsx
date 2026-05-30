@@ -80,42 +80,42 @@ export default function BlogSearch({ topics }: BlogSearchProps) {
   }, [normalized, topics])
 
   return (
-    <div className="rounded-3xl border border-white/40 bg-white/80 p-5 shadow-lg backdrop-blur">
-      <label className="block text-sm font-semibold text-slate-700">
+    <div className="rounded-3xl border border-white/40 bg-white/80 p-5 shadow-lg backdrop-blur dark:border-slate-700/70 dark:bg-slate-950/75">
+      <label className="block text-sm font-semibold text-slate-700 dark:text-slate-200">
         {copy.label}
         <input
           type="search"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder={copy.placeholder}
-          className="mt-2 w-full rounded-2xl border border-slate-200/80 bg-white px-4 py-3 text-base text-slate-900 shadow-inner focus:border-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+          className="mt-2 w-full rounded-2xl border border-slate-200/80 bg-white px-4 py-3 text-base text-slate-900 shadow-inner focus:border-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-200 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-emerald-300 dark:focus:ring-emerald-400/20"
           aria-label={copy.label}
         />
       </label>
       {normalized === "" ? (
-        <p className="mt-3 text-sm text-slate-500">{copy.hint}</p>
+        <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">{copy.hint}</p>
       ) : results.length ? (
         <ul className="mt-4 space-y-3" aria-live="polite">
           {results.map((topic) => (
-            <li key={topic.id} className="rounded-2xl border border-slate-100 bg-white/90 px-4 py-3 shadow-sm">
-              <div className="flex flex-wrap items-center justify-between gap-2 text-xs uppercase tracking-[0.25em] text-slate-500">
+            <li key={topic.id} className="rounded-2xl border border-slate-100 bg-white/90 px-4 py-3 shadow-sm dark:border-slate-700 dark:bg-slate-900/85">
+              <div className="flex flex-wrap items-center justify-between gap-2 text-xs uppercase tracking-[0.25em] text-slate-500 dark:text-slate-400">
                 <span>{copy.categoryLabels[topic.category] ?? copy.fallbackCategory}</span>
-                <span className="font-semibold text-slate-400">
+                <span className="font-semibold text-slate-400 dark:text-slate-500">
                   {topic.links[0]?.label ?? copy.defaultLinkLabel}
                 </span>
               </div>
               <Link
                 href={localizeHref(`/blog/${topic.id}`, locale)}
-                className="mt-1 block text-base font-semibold text-slate-900 hover:text-indigo-600"
+                className="mt-1 block text-base font-semibold text-slate-900 hover:text-indigo-600 dark:text-slate-100 dark:hover:text-indigo-300"
               >
                 {topic.title}
               </Link>
-              <p className="text-sm text-slate-600">{topic.summary}</p>
+              <p className="text-sm text-slate-600 dark:text-slate-300">{topic.summary}</p>
             </li>
           ))}
         </ul>
       ) : (
-        <p className="mt-4 text-sm text-rose-600">{copy.noResults(query)}</p>
+        <p className="mt-4 text-sm text-rose-600 dark:text-rose-300">{copy.noResults(query)}</p>
       )}
     </div>
   )

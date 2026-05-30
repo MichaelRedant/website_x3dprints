@@ -18,7 +18,7 @@ const ThemeContext = createContext<ThemeContextValue | undefined>(undefined)
 function applyTheme(next: Theme) {
   const root = document.documentElement
   root.classList.toggle("dark", next === "dark")
-  root.dataset.theme = next === "dark" ? "hawkins" : "light"
+  root.dataset.theme = next
   localStorage.setItem(STORAGE_KEY, next)
 }
 

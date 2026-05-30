@@ -72,42 +72,42 @@ Zoek je 3D printen in Berchem? We denken mee over passing, sterkte en look zodat
 Stuur je STL- of STEP-bestand via [contact](/contact) en vermeld kleur, aantal en gewenste leverdatum. Je ontvangt snel een voorstel zodat je project in Berchem zonder vertraging vooruitgaat.
 
 <!-- LOCAL_ENRICH_START -->
-## Lokale accenten voor Berchem
+## Berchem als aparte 3D printpagina
 
-- Dekking: Berchem, Berchem centrum, Zurenborg, Groen Kwartier, Antwerpen-Zuid, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Berchem.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Berchem krijgt een eigen invalshoek omdat de vraag hier vaak rond presentatie, mobiliteit en kantooromgevingen draait. Denk aan maquettes voor Zurenborg, pitchmodellen voor Post X, POS-materiaal voor de De Koninck-site en functionele onderdelen voor teams rond station Antwerpen-Berchem.
 
-## Nabijgelegen pagina's
-- [Hoofdpagina: 3D printen in Kluisbergen](/3d-printen-in-kluisbergen)
-- [Hoofdpagina: 3D printen in Kwaremont](/3d-printen-in-kwaremont)
-- [Hoofdpagina: 3D printen in Ruien](/3d-printen-in-ruien)
+- Dekking: Zurenborg, Groen Kwartier, Berchem Station, Post X, De Koninck-site, Cogels-Osylei en de aansluiting richting Antwerp Expo.
+- Typische opdrachten: maquettes, pitchmodellen, bureaudisplays, montageclips, elektronica-behuizingen en compacte beursprops.
+- Beste materiaalfit: PLA Matte voor zichtwerk, PETG voor houders en covers, TPU voor grips of beschermranden.
+- Doorlooptijd: meestal enkele werkdagen na akkoord; deadlines voor pitches of expo's altijd vooraf vermelden.
+
+## Gerelateerde buurtpagina's
 - [Hoofdpagina: 3D printen in Antwerpen](/3d-printen-in-antwerpen)
+- [Buurpagina: 3D printen in Borgerhout](/3d-printen-in-borgerhout)
+- [Buurpagina: 3D printen in Deurne](/3d-printen-in-deurne)
+- [Buurpagina: 3D printen in Wilrijk](/3d-printen-in-wilrijk)
+- [Buurpagina: 3D printen in Mortsel](/3d-printen-in-mortsel)
+- [Buurpagina: 3D printen in Edegem](/3d-printen-in-edegem)
 
 ## Lokale punten in Berchem
-- Centrum van Berchem
-- Lokale bedrijvenzone in Berchem
-- Sporthal in Berchem
+- Cogels-Osylei en Zurenborg
+- Groen Kwartier en De Koninck-site
+- Station Antwerpen-Berchem en Post X
+- De Singel en Antwerp Expo
+- Grotesteenweg en Driekoningenstraat
 
+## Lokale voorbeelden voor Berchem
+- Een vastgoedteam kan PLA-maquettes laten printen voor een presentatie rond Zurenborg.
+- Een agency kan branded displays of tafelhouders laten maken voor een campagne in Antwerp Expo.
+- Een productteam rond Post X kan PETG-behuizingen of montageclips testen voor een proof-of-concept.
 
-## Lokale spotlight
-- Interieur/props voor Zurenborg boutiques: PLA/PETG onderdelen afgestemd op projecten rond Berchem centrum.
-- Vaak gevraagd: 3D print service Berchem; we adviseren materiaal en afwerking.
-- Leverfocus: Berchem, Berchem centrum, Zurenborg.
+## Bronnen en lokale context
+- [Stad Antwerpen over de districten](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
+- [Antwerp Expo](https://www.antwerpexpo.be/)
+- [Universiteit Antwerpen campussen](https://www.uantwerpen.be/en/about-uantwerp/campuses/)
 
-## Plaatsen waar we vaak leveren rond Berchem
-- Centrum van Berchem
-- Lokale bedrijvenzone in Berchem
-- Sporthal in Berchem
-
-## Sectoren die we vaak helpen in Berchem
-- Interieur/props voor Zurenborg boutiques (Berchem)
-- Prototyping voor creatieve bureaus (Berchem)
-- Onderwijs/kunstacademies Berchem
-
-## Veelgevraagde zoekopdrachten in Berchem
-- 3D print service Berchem
-- rapid prototyping Berchem
-- 3D printing bedrijf Berchem
+## Typische aanvragen rond Berchem
+- 3D model laten printen Berchem voor vastgoedmaquettes en pitchmodellen.
+- 3D print service Berchem voor displays, montageclips en behuizingen.
+- rapid prototyping Berchem voor productteams rond Post X.
 <!-- LOCAL_ENRICH_END -->

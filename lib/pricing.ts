@@ -61,7 +61,7 @@ export const DEFAULT_ELECTRICITY_COST_EUR_PER_KWH = 0.23;
 export const DEFAULT_PRINTER_POWER_KW = 1;
 export const DEFAULT_MATERIAL_MARKUP = 0.2; // +20%
 export const DEFAULT_PROFIT_FACTOR = 3; // 200% marge => basiskost * 3
-export const DEFAULT_DESIGN_RATE_EUR_PER_HOUR = 40;
+export const DEFAULT_DESIGN_RATE_EUR_PER_HOUR = 45;
 
 export type PriceInput = {
   printingTimeHours: number;

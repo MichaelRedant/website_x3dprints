@@ -72,39 +72,41 @@ Zoek je 3D printen in Ekeren? We denken mee over passing, sterkte en look zodat 
 Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur en aantal; je krijgt snel een voorstel voor **3D printen in Ekeren**.
 
 <!-- LOCAL_ENRICH_START -->
-## Leverdetails rond Ekeren
+## Ekeren als noordelijke schakel richting haven
 
-- Dekking: Ekeren, Ekeren centrum, Rozemaai, Leugenberg, Ekeren-Donk, Kapellen grens; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Ekeren.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Ekeren verschilt van de binnenstad omdat de vraag vaker komt van KMO's, technische teams en projecten richting havenrand, Kapellen en Brasschaat. De focus ligt op stevige onderdelen, praktische hulpmiddelen en kleine series die betrouwbaar moeten passen.
+
+- Dekking: Ekeren centrum, Rozemaai, Leugenberg, Ekeren-Donk, Mariaburg-rand, Kapellen grens en de noordelijke havenzone.
+- Typische opdrachten: PETG-houders, kabelgeleiders, beschermkappen, sensorbehuizingen, kleine tooling en prototypes voor lokale KMO's.
+- Beste materiaalfit: PETG voor robuust gebruik, TPU voor demping, PLA Matte voor presentatiemodellen en signalisatie.
+- Praktisch: vermeld buitengebruik, warmte, schroefpunten of trillingen meteen bij de aanvraag.
 
 ## Gerelateerde buurtpagina's
-- [Hoofdpagina: 3D printen in Berendrecht-Zandvliet-Lillo](/3d-printen-in-berendrecht-zandvliet-lillo)
+- [Hoofdpagina: 3D printen in Antwerpen](/3d-printen-in-antwerpen)
+- [Buurpagina: 3D printen in Merksem](/3d-printen-in-merksem)
+- [Buurpagina: 3D printen in Berendrecht-Zandvliet-Lillo](/3d-printen-in-berendrecht-zandvliet-lillo)
+- [Buurpagina: 3D printen in Kapellen](/3d-printen-in-kapellen)
+- [Buurpagina: 3D printen in Brasschaat](/3d-printen-in-brasschaat)
 
 ## Lokale punten in Ekeren
-- Centrum van Ekeren
-- Lokale bedrijvenzone in Ekeren
-- Sporthal in Ekeren
+- Veltwijckpark en Ekeren centrum
+- Rozemaai
+- Leugenberg
+- Ekeren-Donk
+- Noordelijke havenrand
 
+## Lokale voorbeelden voor Ekeren
+- Een onderhoudsteam kan PETG-beschermkappen of kabelgeleiders laten printen voor terugkerende installaties.
+- Een KMO kan testbehuizingen laten maken voor elektronica of sensoren.
+- Een vereniging kan awards, signalisatie of kleine decorstukken laten produceren in een herkenbare kleur.
 
-## Klantenspotlight
-- Haven/industrie tooling Ekeren: kleine reeksen met vaste settings rond Ekeren centrum.
-- Vaak gevraagd: 3D print service Ekeren; we adviseren materiaal en afwerking.
-- Afhalen in Herzele; verzending naar Ekeren en Ekeren centrum.
-
-## Locaties die we bedienen nabij Ekeren
-- Centrum van Ekeren
-- Lokale bedrijvenzone in Ekeren
-- Sporthal in Ekeren
-
-## Sectorfocus nabij Ekeren
-- Haven/industrie tooling Ekeren
-- Retail/props Bredabaan (Ekeren)
-- Prototyping voor KMO's Ekeren/Kapellen
+## Bronnen en lokale context
+- [Stad Antwerpen over de districten](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
+- [Port of Antwerp-Bruges](https://www.portofantwerpbruges.com/)
+- [District Ekeren via Stad Antwerpen](https://www.antwerpen.be/nl/overzicht/district-ekeren)
 
 ## Typische aanvragen rond Ekeren
-- 3D print service Ekeren
-- rapid prototyping Ekeren
-- 3D printing bedrijf Ekeren
+- 3D print service Ekeren voor robuuste onderdelen aan de noordrand.
+- 3D model laten printen Ekeren voor presentaties, tooling en teststukken.
+- rapid prototyping Ekeren voor kmo's die eerst een passend teststuk willen.
 <!-- LOCAL_ENRICH_END -->

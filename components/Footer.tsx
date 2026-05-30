@@ -1,6 +1,5 @@
-"use client"
+﻿"use client"
 
-// components/Footer.tsx
 import Link from "next/link"
 import Image from "next/image"
 import Container from "./Container"
@@ -148,21 +147,19 @@ export default function Footer() {
 
   return (
     <footer className="relative mt-24">
-      {/* top gradient hairline */}
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300/60 to-transparent" />
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300/60 to-transparent dark:via-slate-700/70" />
 
-      {/* CTA strip */}
       <div className="px-6 sm:px-8 lg:px-12">
         <div className="mx-auto -mt-10 max-w-6xl">
-          <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 text-center shadow-sm backdrop-blur sm:flex sm:items-center sm:justify-between sm:text-left sm:p-8">
+          <div className="rounded-2xl border border-slate-200/70 bg-white/70 p-6 text-center shadow-sm backdrop-blur dark:border-slate-700/70 dark:bg-slate-950/80 sm:flex sm:items-center sm:justify-between sm:text-left sm:p-8">
             <div className="space-y-1">
-              <p className="text-sm font-semibold tracking-tight text-slate-900">{copy.cta.title}</p>
-              <p className="text-sm text-slate-600">{copy.cta.body}</p>
+              <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-50">{copy.cta.title}</p>
+              <p className="text-sm text-slate-600 dark:text-slate-300">{copy.cta.body}</p>
             </div>
             <div className="mt-4 flex justify-center sm:mt-0 sm:justify-end">
               <Link
                 href={localize("/contact")}
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(99,102,241,.35)] transition hover:brightness-110"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(99,102,241,.35)] transition hover:brightness-110 dark:border-slate-700/70"
               >
                 {copy.cta.button}
               </Link>
@@ -171,16 +168,14 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* main footer */}
-      <div className="mt-10 border-t bg-white/60 backdrop-blur">
-        <Container className="grid gap-10 py-12 text-center text-sm text-slate-600 md:grid-cols-5 md:text-left">
-          {/* brand */}
+      <div className="mt-10 border-t bg-white/60 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
+        <Container className="grid gap-10 py-12 text-center text-sm text-slate-600 dark:text-slate-300 md:grid-cols-5 md:text-left">
           <div className="md:col-span-2">
             <Link href={localize("/")} className="inline-flex items-center gap-3">
               <Image src="/Logo.webp" alt="X3DPrints logo" width={44} height={44} className="h-11 w-11 object-contain" />
-              <span className="text-base font-semibold tracking-tight text-slate-900">X3DPrints</span>
+              <span className="text-base font-semibold tracking-tight text-slate-900 dark:text-slate-50">X3DPrints</span>
             </Link>
-            <p className="mt-3 mx-auto max-w-prose md:mx-0">{copy.brand.description}</p>
+            <p className="mx-auto mt-3 max-w-prose md:mx-0">{copy.brand.description}</p>
 
             <div className="mt-4 flex items-center justify-center gap-3 md:justify-start">
               {socials.map(({ href, label, icon }) => (
@@ -190,7 +185,7 @@ export default function Footer() {
                   aria-label={label}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200/70 bg-white/70 text-slate-700 transition hover:text-slate-900"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200/70 bg-white/70 text-slate-700 transition hover:text-slate-900 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:text-slate-50"
                 >
                   <SocialIcon type={icon} className="h-4 w-4" />
                 </Link>
@@ -198,9 +193,8 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* contact */}
           <div className="space-y-1">
-            <div className="font-semibold text-slate-900">{copy.contact.title}</div>
+            <div className="font-semibold text-slate-900 dark:text-slate-50">{copy.contact.title}</div>
             <ul className="mt-3 space-y-1">
               <li>{copy.contact.location}</li>
               <li>
@@ -213,25 +207,24 @@ export default function Footer() {
               href={googleReviewLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 rounded-full border border-amber-200 bg-white/80 px-3 py-1.5 text-xs font-semibold text-amber-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+              className="mt-4 inline-flex items-center gap-2 rounded-full border border-amber-200 bg-white/80 px-3 py-1.5 text-xs font-semibold text-amber-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-white dark:border-amber-300/30 dark:bg-slate-900 dark:text-amber-200 dark:hover:bg-slate-800"
             >
-              <span aria-hidden className="text-base">⭐</span>
+              <span aria-hidden className="text-base leading-none">★</span>
               {copy.contact.review}
             </a>
           </div>
 
-          {/* statische links */}
           <div>
-            <div className="font-semibold text-slate-900">{copy.links.title}</div>
-            <ul className="mt-3 grid grid-cols-2 gap-2 text-left text-sm text-slate-700 sm:grid-cols-2">
+            <div className="font-semibold text-slate-900 dark:text-slate-50">{copy.links.title}</div>
+            <ul className="mt-3 grid grid-cols-2 gap-2 text-left text-sm text-slate-700 dark:text-slate-300 sm:grid-cols-2">
               {copy.links.items.map((item) => (
                 <li key={item.href}>
                   {item.external ? (
-                    <a href={item.href} className="inline-flex items-center gap-1 hover:text-slate-900">
+                    <a href={item.href} className="inline-flex items-center gap-1 hover:text-slate-900 dark:hover:text-slate-50">
                       {item.label}
                     </a>
                   ) : (
-                    <Link href={localize(item.href)} className="inline-flex items-center gap-1 hover:text-slate-900">
+                    <Link href={localize(item.href)} className="inline-flex items-center gap-1 hover:text-slate-900 dark:hover:text-slate-50">
                       {item.label}
                     </Link>
                   )}
@@ -240,27 +233,25 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* lokale zoek */}
           <div>
-            <div className="font-semibold text-slate-900">{copy.local.title}</div>
-            <p className="mt-2 text-xs text-slate-600">{copy.local.body}</p>
+            <div className="font-semibold text-slate-900 dark:text-slate-50">{copy.local.title}</div>
+            <p className="mt-2 text-xs text-slate-600 dark:text-slate-400">{copy.local.body}</p>
             <div className="mt-3">
               <FooterLocationFinder />
             </div>
           </div>
         </Container>
 
-        {/* bottom bar */}
-        <div className="border-t">
-          <Container className="flex flex-col items-center justify-center gap-4 py-6 text-center text-xs text-slate-500">
+        <div className="border-t dark:border-slate-800">
+          <Container className="flex flex-col items-center justify-center gap-4 py-6 text-center text-xs text-slate-500 dark:text-slate-400">
             <p>
               (c) {new Date().getFullYear()} X3DPrints. {copy.copyright}
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <CookieSettingsButton className="text-slate-500 hover:text-slate-900" />
+              <CookieSettingsButton className="text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" />
               <Link
                 href="https://www.pixapop.be"
-                className="group flex items-center gap-3 rounded-2xl border border-slate-200/80 bg-white/80 px-3 py-2 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-slate-300 hover:bg-white"
+                className="group flex items-center gap-3 rounded-2xl border border-slate-200/80 bg-white/80 px-3 py-2 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-slate-300 hover:bg-white dark:border-slate-700 dark:bg-slate-900 dark:hover:border-slate-600 dark:hover:bg-slate-800"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -269,13 +260,13 @@ export default function Footer() {
                   alt="Pixapop partner"
                   width={120}
                   height={32}
-                  className="h-6 w-auto opacity-90 transition group-hover:opacity-100"
+                  className="h-6 w-auto opacity-90 transition group-hover:opacity-100 dark:brightness-200 dark:invert"
                 />
                 <div className="flex flex-col">
-                  <span className="text-[11px] font-semibold uppercase tracking-wide text-slate-700">
+                  <span className="text-[11px] font-semibold uppercase tracking-wide text-slate-700 dark:text-slate-200">
                     {copy.pixapop.title}
                   </span>
-                  <span className="max-w-[240px] text-slate-500 sm:max-w-none">
+                  <span className="max-w-[240px] text-slate-500 dark:text-slate-400 sm:max-w-none">
                     {copy.pixapop.body}
                   </span>
                 </div>

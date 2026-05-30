@@ -461,19 +461,19 @@ export default function MaterialSuggestionTool() {
 
   return (
     <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-      <GlassCard className="h-full border border-white/50 bg-white/90 p-6 shadow-lg backdrop-blur">
-        <div className="flex flex-wrap items-center justify-between gap-3 text-xs uppercase tracking-[0.3em] text-slate-500">
+      <GlassCard className="h-full border border-white/50 bg-white/90 p-6 shadow-lg backdrop-blur dark:border-slate-700/70 dark:bg-slate-950/75">
+        <div className="flex flex-wrap items-center justify-between gap-3 text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">
           <span>{copy.labels.stepOf(step + 1, steps.length)}</span>
           <span>{copy.labels.remaining(remainingCount)}</span>
           <button
             type="button"
             onClick={resetTool}
-            className="text-[11px] font-semibold text-indigo-600 transition hover:text-indigo-500"
+            className="text-[11px] font-semibold text-indigo-600 transition hover:text-indigo-500 dark:text-indigo-300 dark:hover:text-indigo-200"
           >
             {copy.labels.reset}
           </button>
         </div>
-        <div className="mt-4 rounded-full bg-slate-100 p-1" aria-hidden>
+        <div className="mt-4 rounded-full bg-slate-100 p-1 dark:bg-slate-800" aria-hidden>
           <div
             className="h-2 rounded-full bg-gradient-to-r from-indigo-500 to-emerald-400 transition-all"
             style={{ width: `${((step + 1) / steps.length) * 100}%` }}
@@ -481,10 +481,10 @@ export default function MaterialSuggestionTool() {
         </div>
 
         <div className="mt-6 space-y-2">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-500">{copy.labels.flowTag}</p>
-          <h2 className="text-2xl font-semibold text-slate-900">{currentStep.title}</h2>
-          <p className="text-sm text-slate-600">{currentStep.description}</p>
-          <p className="text-xs text-slate-500">{copy.labels.quickPickHint}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-500 dark:text-amber-300">{copy.labels.flowTag}</p>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-50">{currentStep.title}</h2>
+          <p className="text-sm text-slate-600 dark:text-slate-300">{currentStep.description}</p>
+          <p className="text-xs text-slate-500 dark:text-slate-400">{copy.labels.quickPickHint}</p>
         </div>
 
         <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -497,39 +497,46 @@ export default function MaterialSuggestionTool() {
                 onClick={() => selectOption(option.value)}
                 className={cn(
                   "rounded-2xl border px-4 py-3 text-left text-sm font-semibold shadow-sm transition hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500",
-                  active ? "border-indigo-500 bg-indigo-50 text-indigo-900" : "border-slate-200 bg-white/95 text-slate-900",
+                  active
+                    ? "border-indigo-500 bg-indigo-50 text-indigo-900 dark:border-indigo-300/40 dark:bg-indigo-400/10 dark:text-indigo-100"
+                    : "border-slate-200 bg-white/95 text-slate-900 dark:border-slate-700 dark:bg-slate-900/85 dark:text-slate-100",
                 )}
               >
                 <div className="flex items-start justify-between gap-3">
                   <span>{option.label}</span>
                   {active ? (
-                    <span className="rounded-full border border-indigo-200 bg-indigo-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-indigo-700">
+                    <span className="rounded-full border border-indigo-200 bg-indigo-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-indigo-700 dark:border-indigo-300/30 dark:bg-indigo-400/15 dark:text-indigo-200">
                       {copy.labels.selected}
                     </span>
                   ) : null}
                 </div>
-                {option.helper ? <p className="mt-1 text-xs font-normal text-slate-500">{option.helper}</p> : null}
+                {option.helper ? <p className="mt-1 text-xs font-normal text-slate-500 dark:text-slate-400">{option.helper}</p> : null}
               </button>
             )
           })}
         </div>
 
-        <div className="mt-6 rounded-2xl border border-slate-200/80 bg-slate-50/80 p-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">{copy.labels.summaryTitle}</p>
+        <div className="mt-6 rounded-2xl border border-slate-200/80 bg-slate-50/80 p-4 dark:border-slate-700/70 dark:bg-slate-900/80">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500 dark:text-slate-400">{copy.labels.summaryTitle}</p>
           <div className="mt-3 grid gap-2 sm:grid-cols-2">
             {answerSummary.map((item) => (
               <button
                 key={item.id}
                 type="button"
                 onClick={() => setStep(item.stepIndex)}
-                className="rounded-xl border border-slate-200/80 bg-white px-3 py-2 text-left transition hover:border-indigo-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="rounded-xl border border-slate-200/80 bg-white px-3 py-2 text-left transition hover:border-indigo-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 dark:border-slate-700 dark:bg-slate-950 dark:hover:border-indigo-300/50"
                 aria-label={copy.labels.jumpToStep(item.stepIndex + 1)}
               >
-                <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">
+                <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
                   {copy.labels.jumpToStep(item.stepIndex + 1)}
                 </p>
-                <p className="mt-0.5 line-clamp-1 text-xs font-semibold text-slate-900">{item.title}</p>
-                <p className={cn("mt-1 line-clamp-1 text-xs", item.filled ? "text-emerald-700" : "text-slate-500")}>
+                <p className="mt-0.5 line-clamp-1 text-xs font-semibold text-slate-900 dark:text-slate-100">{item.title}</p>
+                <p
+                  className={cn(
+                    "mt-1 line-clamp-1 text-xs",
+                    item.filled ? "text-emerald-700 dark:text-emerald-300" : "text-slate-500 dark:text-slate-400",
+                  )}
+                >
                   {item.filled ? `${copy.labels.summaryFilled}: ${item.selectedLabel}` : copy.labels.summaryEmpty}
                 </p>
               </button>
@@ -537,7 +544,7 @@ export default function MaterialSuggestionTool() {
           </div>
         </div>
 
-        <div className="mt-6 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500">
+        <div className="mt-6 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500 dark:text-slate-400">
           <div className="flex flex-wrap gap-2">
             {steps.map((item, index) => {
               const filled = Boolean(answers[item.id])
@@ -549,10 +556,10 @@ export default function MaterialSuggestionTool() {
                   className={cn(
                     "rounded-full border px-3 py-1 font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500",
                     index === step
-                      ? "border-indigo-500 text-indigo-600"
+                      ? "border-indigo-500 text-indigo-600 dark:border-indigo-300/40 dark:text-indigo-200"
                       : filled
-                        ? "border-emerald-400 text-emerald-600"
-                        : "border-slate-200 text-slate-400",
+                        ? "border-emerald-400 text-emerald-600 dark:border-emerald-300/40 dark:text-emerald-300"
+                        : "border-slate-200 text-slate-400 dark:border-slate-700 dark:text-slate-500",
                   )}
                 >
                   {index + 1}
@@ -565,11 +572,11 @@ export default function MaterialSuggestionTool() {
               type="button"
               onClick={goBack}
               disabled={step === 0}
-              className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 transition enabled:hover:text-slate-900 disabled:opacity-50"
+              className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 transition enabled:hover:text-slate-900 disabled:opacity-50 dark:border-slate-700 dark:text-slate-300 dark:enabled:hover:text-slate-50"
             >
               {copy.labels.prev}
             </button>
-            <span className="text-[11px] text-slate-400">{copy.labels.adjustHint}</span>
+            <span className="text-[11px] text-slate-400 dark:text-slate-500">{copy.labels.adjustHint}</span>
           </div>
         </div>
       </GlassCard>
@@ -577,34 +584,34 @@ export default function MaterialSuggestionTool() {
       <div className="grid gap-4">
         {recommendationCards ? (
           <>
-            <GlassCard className="border border-indigo-100 bg-white/95 p-4 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-indigo-600">{copy.labels.resultReady}</p>
-              <p className="mt-2 text-sm text-slate-600">{copy.labels.resultIntro}</p>
+            <GlassCard className="border border-indigo-100 bg-white/95 p-4 shadow-sm dark:border-indigo-300/20 dark:bg-slate-950/75">
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-indigo-600 dark:text-indigo-300">{copy.labels.resultReady}</p>
+              <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{copy.labels.resultIntro}</p>
             </GlassCard>
             {recommendationCards.map((card) => {
               const contactHref = localizeHref(`/contact?material=${encodeURIComponent(card.slug)}`, locale)
               const fitPercent = Math.max(55, Math.round((card.score / maxRecommendationScore) * 100))
               const outdoorScore = card.record.environment.suitability[activeLocationKey]
               return (
-                <GlassCard key={card.record.id} className="border border-emerald-100 bg-white/95 p-5 shadow-lg backdrop-blur">
+                <GlassCard key={card.record.id} className="border border-emerald-100 bg-white/95 p-5 shadow-lg backdrop-blur dark:border-emerald-300/20 dark:bg-slate-950/75">
                   <div className="flex flex-wrap items-center justify-between gap-2">
-                    <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-500">{card.label}</p>
-                    <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-[11px] font-semibold text-emerald-700">
+                    <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-500 dark:text-emerald-300">{card.label}</p>
+                    <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-[11px] font-semibold text-emerald-700 dark:border-emerald-300/25 dark:bg-emerald-400/10 dark:text-emerald-200">
                       {copy.labels.fitScore}: {fitPercent}%
                     </span>
                   </div>
-                  <h3 className="mt-2 text-xl font-semibold text-slate-900">{card.record.name}</h3>
-                  <p className="mt-1 text-sm text-slate-600">{card.record.descriptionShort}</p>
-                  <div className="mt-3 rounded-2xl border border-amber-100 bg-amber-50 px-4 py-2 text-xs font-semibold text-amber-700">
+                  <h3 className="mt-2 text-xl font-semibold text-slate-900 dark:text-slate-50">{card.record.name}</h3>
+                  <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{card.record.descriptionShort}</p>
+                  <div className="mt-3 rounded-2xl border border-amber-100 bg-amber-50 px-4 py-2 text-xs font-semibold text-amber-700 dark:border-amber-300/25 dark:bg-amber-400/10 dark:text-amber-200">
                     {copy.labels.priceImpact}: {card.priceNote}
                   </div>
                   <div className="mt-3">
-                    <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">{copy.labels.highlights}</p>
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">{copy.labels.highlights}</p>
                     <div className="mt-2 flex flex-wrap gap-2">
                       {card.record.highlightTags.slice(0, 3).map((tag) => (
                         <span
                           key={tag}
-                          className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-semibold text-slate-700"
+                          className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-semibold text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200"
                         >
                           {tag}
                         </span>
@@ -612,20 +619,20 @@ export default function MaterialSuggestionTool() {
                     </div>
                   </div>
                   <div className="mt-4 grid gap-2 sm:grid-cols-3">
-                    <div className="rounded-xl border border-slate-200/80 bg-white px-3 py-2 text-xs text-slate-600">
-                      <p className="font-semibold text-slate-700">{copy.labels.strength}</p>
+                    <div className="rounded-xl border border-slate-200/80 bg-white px-3 py-2 text-xs text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                      <p className="font-semibold text-slate-700 dark:text-slate-100">{copy.labels.strength}</p>
                       <p className="mt-1">{card.record.mechanical.strength}/5</p>
                     </div>
-                    <div className="rounded-xl border border-slate-200/80 bg-white px-3 py-2 text-xs text-slate-600">
-                      <p className="font-semibold text-slate-700">{copy.labels.outdoorFit}</p>
+                    <div className="rounded-xl border border-slate-200/80 bg-white px-3 py-2 text-xs text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                      <p className="font-semibold text-slate-700 dark:text-slate-100">{copy.labels.outdoorFit}</p>
                       <p className="mt-1">{outdoorScore}/5</p>
                     </div>
-                    <div className="rounded-xl border border-slate-200/80 bg-white px-3 py-2 text-xs text-slate-600">
-                      <p className="font-semibold text-slate-700">{copy.labels.printDifficulty}</p>
+                    <div className="rounded-xl border border-slate-200/80 bg-white px-3 py-2 text-xs text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                      <p className="font-semibold text-slate-700 dark:text-slate-100">{copy.labels.printDifficulty}</p>
                       <p className="mt-1">{difficultyLabel(card.record.printProfile.difficulty, copy)}</p>
                     </div>
                   </div>
-                  <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                  <ul className="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-300">
                     {card.reasons.map((reason) => (
                       <li key={reason} className="flex items-start gap-2">
                         <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden />
@@ -633,14 +640,14 @@ export default function MaterialSuggestionTool() {
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-3 text-xs text-slate-500">
+                  <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
                     {copy.labels.colors}: {formatColors(card.record.colors)}
                   </p>
                   <div className="mt-4 flex flex-wrap gap-3">
                     <ShimmerButton href={contactHref}>{copy.labels.quoteCta}</ShimmerButton>
                     <Link
                       href={localizeHref(`/materials/${card.slug}`, locale)}
-                      className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                      className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
                     >
                       {copy.labels.viewMaterial}
                     </Link>
@@ -650,19 +657,19 @@ export default function MaterialSuggestionTool() {
             })}
           </>
         ) : (
-          <div className="rounded-3xl border border-dashed border-slate-200 bg-white/60 p-6 text-sm text-slate-600 shadow-inner">
-            <p className="font-semibold text-slate-900">{copy.labels.emptyStateTitle}</p>
+          <div className="rounded-3xl border border-dashed border-slate-200 bg-white/60 p-6 text-sm text-slate-600 shadow-inner dark:border-slate-700 dark:bg-slate-950/60 dark:text-slate-300">
+            <p className="font-semibold text-slate-900 dark:text-slate-50">{copy.labels.emptyStateTitle}</p>
             <p className="mt-2">{copy.labels.emptyState}</p>
             <div className="mt-4 flex flex-wrap gap-3">
               <Link
                 href={localizeHref("/materials#materials-library", locale)}
-                className="inline-flex items-center rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="inline-flex items-center rounded-xl border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
               >
                 {copy.labels.compareCta}
               </Link>
               <Link
                 href={localizeHref("/contact", locale)}
-                className="inline-flex items-center rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700 shadow-sm transition hover:bg-indigo-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="inline-flex items-center rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700 shadow-sm transition hover:bg-indigo-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 dark:border-indigo-300/30 dark:bg-indigo-400/10 dark:text-indigo-200 dark:hover:bg-indigo-400/15"
               >
                 {copy.labels.manualCta}
               </Link>

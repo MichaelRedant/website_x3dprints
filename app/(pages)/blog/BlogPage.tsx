@@ -2941,7 +2941,7 @@ const BLOG_COPY_EN = {
     eyebrow: "Next step",
     title: "Ready for an intake?",
     body: "Upload your models, note your material preference and let the calculator give a first estimate. We send feedback within 1 business day, including suggestions if another filament makes more sense.",
-    primary: "Plan a call",
+    primary: "Request advice",
     secondary: "Upload STL/STEP",
   },
   showMore: (count: number) => `Show ${count} more articles`,
