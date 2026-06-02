@@ -1,4 +1,4 @@
-# EspoCRM op Vimexx
+# EspoCRM op Vimexx via DirectAdmin
 
 Doel: EspoCRM draait apart op `https://crm.x3dprints.be`, los van de bestaande X3DPrints website en de bestaande `public/crm-*.php` shopbeheer-endpoints.
 
@@ -14,73 +14,62 @@ Controleer dit eerst in Vimexx/DirectAdmin of via support:
 
 Stop als de database alleen MySQL 5.7 is. De huidige EspoCRM 9.x vereisten vragen MySQL 8.0+ of MariaDB 10.3+.
 
-## 2. Vimexx voorbereiden
+## 2. DirectAdmin voorbereiden
 
-1. Maak of controleer de subdomain `crm.x3dprints.be`.
-2. Noteer de document root van die subdomain.
-   - In DirectAdmin kan dit bv. een pad onder `/domains/x3dprints.be/public_html/crm` zijn.
-   - Gebruik het exacte pad uit DirectAdmin als deploy target.
-3. Maak een nieuwe database, gebruiker en sterk wachtwoord.
-4. Zet PHP voor de subdomain op 8.3 of hoger.
-5. Zet gratis SSL/Let's Encrypt aan voor de subdomain.
+1. Open DirectAdmin bij Vimexx.
+2. Controleer de subdomain `crm.x3dprints.be`.
+3. Noteer de document root van die subdomain.
+   - Vaak is dit iets zoals `/domains/x3dprints.be/public_html/crm`.
+   - Gebruik altijd het exacte pad dat DirectAdmin toont.
+4. Zet PHP voor deze subdomain op 8.3 of hoger.
+5. Zet gratis SSL/Let's Encrypt aan voor `crm.x3dprints.be`.
+6. Maak een nieuwe database en databasegebruiker aan.
 
-## 3. GitHub deploy secrets/vars
+Noteer veilig:
 
-De workflow `.github/workflows/deploy-espocrm.yml` gebruikt deze waarden:
+```text
+DB host:
+DB naam:
+DB gebruiker:
+DB wachtwoord:
+CRM document root:
+```
 
-- `CRM_FTP_SERVER`
-- `CRM_FTP_USERNAME`
-- `CRM_FTP_PASSWORD`
-- `CRM_FTP_SERVER_DIR`
+## 3. EspoCRM uploaden
 
-`CRM_FTP_SERVER` en `CRM_FTP_USERNAME` mogen terugvallen op de bestaande `FTP_SERVER` en `FTP_USERNAME`, maar `CRM_FTP_SERVER_DIR` moet expliciet gezet worden en naar de document root van `crm.x3dprints.be` wijzen.
+1. Download de nieuwste EspoCRM zip van de officiele EspoCRM downloadpagina.
+2. Open in DirectAdmin **File Manager**.
+3. Ga naar de document root van `crm.x3dprints.be`.
+4. Maak de map leeg als daar placeholder-bestanden staan.
+5. Upload de EspoCRM zip.
+6. Gebruik **Extract** in DirectAdmin.
+7. Als de zip uitpakt naar een submap zoals `EspoCRM-9.x.x`, verplaats dan de inhoud van die submap naar de document root.
+8. Verwijder daarna de zip en lege uitpakmap.
 
-Gebruik een pad met `crm` in de naam. De workflow weigert anders te deployen om te voorkomen dat EspoCRM per ongeluk over de publieke website wordt gezet.
+Na het uitpakken moet `index.php` direct in de document root van `crm.x3dprints.be` staan.
 
-## 4. EspoCRM uploaden
+Als DirectAdmin de zip niet goed kan uitpakken, pak de zip lokaal uit en upload de uitgepakte bestanden via SFTP/FTP naar dezelfde document root.
 
-1. Ga in GitHub naar **Actions**.
-2. Kies **Deploy EspoCRM**.
-3. Run eerst met:
-   - `version`: `latest`
-   - `dry_run`: `true`
-4. Als dat lukt, run opnieuw met:
-   - `version`: `latest`
-   - `dry_run`: `false`
-
-De workflow downloadt de officiele release op deploytijd. Hij commit geen EspoCRM-zip of vendorcode in deze repo.
-
-De upload sluit runtime-data uit bij latere runs:
-
-- `data/config.php`
-- `data/config-internal.php`
-- `data/cache/**`
-- `data/logs/**`
-- `data/tmp/**`
-- `data/upload/**`
-- `custom/**`
-- `client/custom/**`
-
-Gebruik deze workflow voor de eerste bestandsupload. Gebruik voor echte upgrades bij voorkeur de officiele EspoCRM upgradeflow vanuit de applicatie of CLI, zodat database-migraties netjes lopen.
-
-## 5. Web installer
+## 4. Web installer
 
 Na upload:
 
 1. Open `https://crm.x3dprints.be`.
-2. Vul de databasegegevens in.
-3. Maak een admin gebruiker aan.
-4. Zet de site URL op `https://crm.x3dprints.be`.
-5. Login en controleer **Administration > System Requirements**.
+2. Volg de EspoCRM installer.
+3. Vul de databasegegevens in.
+4. Maak een admin gebruiker aan.
+5. Zet de site URL op `https://crm.x3dprints.be`.
+6. Login en controleer **Administration > System Requirements**.
 
-## 6. Cronjob
+## 5. Cronjob
 
 EspoCRM heeft een cronjob nodig voor scheduled jobs, e-mail, reminders en automatisering.
 
 1. Login in EspoCRM als admin.
 2. Ga naar **Administration > Scheduled Jobs**.
 3. Kopieer het cron-commando dat EspoCRM toont.
-4. Zet dit in DirectAdmin bij **Cronjobs**.
+4. Open in DirectAdmin **Cronjobs**.
+5. Voeg het commando toe.
 
 Vimexx gebruikt paden zoals `/opt/alt/php83/usr/bin/php`. Een typisch commando ziet er zo uit:
 
@@ -90,7 +79,7 @@ Vimexx gebruikt paden zoals `/opt/alt/php83/usr/bin/php`. Een typisch commando z
 
 Gebruik het exacte pad naar `cron.php` uit jouw subdomain document root.
 
-## 7. Eerste CRM-inrichting
+## 6. Eerste CRM-inrichting
 
 Minimale setup voor X3DPrints:
 
@@ -102,7 +91,7 @@ Minimale setup voor X3DPrints:
 
 Voor offertes/facturen blijft Octopus de officiele bron. In EspoCRM slaan we eerst alleen offerte-opvolging op: klant, contact, materiaal, prijsindicatie, status, deadline, notities en link/verwijzing naar Octopus of PDF.
 
-## 8. Later: ChatGPT-koppeling
+## 7. Later: ChatGPT-koppeling
 
 Pas na een werkende EspoCRM-installatie:
 
