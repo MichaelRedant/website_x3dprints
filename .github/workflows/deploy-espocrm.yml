@@ -1,0 +1,158 @@
+name: Deploy EspoCRM
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "EspoCRM version to deploy, or latest"
+        required: true
+        default: latest
+      dry_run:
+        description: "List files without uploading"
+        required: true
+        default: false
+        type: boolean
+
+concurrency:
+  group: espocrm-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment: production
+    permissions:
+      contents: read
+
+    steps:
+      - name: Install deploy tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp unzip jq
+
+      - name: Resolve EspoCRM release
+        id: release
+        env:
+          VERSION: ${{ inputs.version }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ "${VERSION}" = "latest" ]; then
+            release_json="$(curl -fsSL -H "Accept: application/vnd.github+json" https://api.github.com/repos/espocrm/espocrm/releases/latest)"
+            tag="$(printf "%s" "${release_json}" | jq -r '.tag_name')"
+            asset_url="$(printf "%s" "${release_json}" | jq -r '.assets[] | select(.name | test("^EspoCRM-[0-9.]+\\.zip$")) | .browser_download_url' | head -n 1)"
+          else
+            tag="${VERSION}"
+            asset_url="https://github.com/espocrm/espocrm/releases/download/${VERSION}/EspoCRM-${VERSION}.zip"
+          fi
+
+          [ -n "${tag}" ] || { echo "::error::Could not resolve EspoCRM tag"; exit 1; }
+          [ -n "${asset_url}" ] || { echo "::error::Could not resolve EspoCRM release asset"; exit 1; }
+
+          echo "tag=${tag}" >> "$GITHUB_OUTPUT"
+          echo "asset_url=${asset_url}" >> "$GITHUB_OUTPUT"
+          echo "Resolved EspoCRM ${tag}"
+
+      - name: Download and prepare EspoCRM
+        id: prepare
+        env:
+          ASSET_URL: ${{ steps.release.outputs.asset_url }}
+          TAG: ${{ steps.release.outputs.tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          curl -fL "${ASSET_URL}" -o espocrm.zip
+          mkdir -p espocrm-dist
+          unzip -q espocrm.zip -d espocrm-dist
+
+          root="$(find espocrm-dist -maxdepth 1 -mindepth 1 -type d | head -n 1)"
+          if [ -z "${root}" ]; then
+            root="espocrm-dist"
+          fi
+
+          [ -f "${root}/index.php" ] || { echo "::error::EspoCRM index.php not found after extraction"; exit 1; }
+
+          cat > "${root}/robots.txt" <<'ROBOTS'
+          User-agent: *
+          Disallow: /
+          ROBOTS
+
+          printf "EspoCRM %s\nDeployed by X3DPrints GitHub Actions.\n" "${TAG}" > "${root}/.x3dprints-espocrm-version"
+          echo "root=${root}" >> "$GITHUB_OUTPUT"
+          echo "Prepared ${root}"
+
+      - name: Validate CRM deploy configuration
+        env:
+          CRM_FTP_SERVER: ${{ vars.CRM_FTP_SERVER || secrets.CRM_FTP_SERVER || vars.FTP_SERVER || secrets.FTP_SERVER }}
+          CRM_FTP_USERNAME: ${{ vars.CRM_FTP_USERNAME || secrets.CRM_FTP_USERNAME || vars.FTP_USERNAME || secrets.FTP_USERNAME }}
+          CRM_FTP_PASSWORD: ${{ secrets.CRM_FTP_PASSWORD || secrets.FTP_PASSWORD }}
+          CRM_FTP_SERVER_DIR: ${{ vars.CRM_FTP_SERVER_DIR || secrets.CRM_FTP_SERVER_DIR }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          [ -n "${CRM_FTP_SERVER}" ] || { echo "::error::CRM_FTP_SERVER is missing"; exit 1; }
+          [ -n "${CRM_FTP_USERNAME}" ] || { echo "::error::CRM_FTP_USERNAME is missing"; exit 1; }
+          [ -n "${CRM_FTP_PASSWORD}" ] || { echo "::error::CRM_FTP_PASSWORD is missing"; exit 1; }
+          [ -n "${CRM_FTP_SERVER_DIR}" ] || { echo "::error::CRM_FTP_SERVER_DIR is missing"; exit 1; }
+
+          case "${CRM_FTP_SERVER_DIR}" in
+            *crm*|*CRM*) echo "CRM target directory accepted: ${CRM_FTP_SERVER_DIR}" ;;
+            *) echo "::error::CRM_FTP_SERVER_DIR should point to the crm.x3dprints.be document root and include 'crm' in the path"; exit 1 ;;
+          esac
+
+      - name: Show upload set
+        if: ${{ inputs.dry_run }}
+        env:
+          ESPO_ROOT: ${{ steps.prepare.outputs.root }}
+        shell: bash
+        run: |
+          find "${ESPO_ROOT}" -maxdepth 2 -type f | sed "s#^${ESPO_ROOT}/##" | sort | head -n 200
+          echo "Dry run only. No files uploaded."
+
+      - name: Upload EspoCRM via FTPS
+        if: ${{ !inputs.dry_run }}
+        env:
+          CRM_FTP_SERVER: ${{ vars.CRM_FTP_SERVER || secrets.CRM_FTP_SERVER || vars.FTP_SERVER || secrets.FTP_SERVER }}
+          CRM_FTP_USERNAME: ${{ vars.CRM_FTP_USERNAME || secrets.CRM_FTP_USERNAME || vars.FTP_USERNAME || secrets.FTP_USERNAME }}
+          CRM_FTP_PASSWORD: ${{ secrets.CRM_FTP_PASSWORD || secrets.FTP_PASSWORD }}
+          CRM_FTP_SERVER_DIR: ${{ vars.CRM_FTP_SERVER_DIR || secrets.CRM_FTP_SERVER_DIR }}
+          ESPO_ROOT: ${{ steps.prepare.outputs.root }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          lftp <<EOF
+          set cmd:fail-exit true
+          set net:max-retries 2
+          set net:timeout 30
+          set ftp:passive-mode true
+          set ftp:ssl-force true
+          set ftp:ssl-protect-data true
+          set ssl:verify-certificate false
+          set xfer:clobber on
+          open -u "${CRM_FTP_USERNAME}","${CRM_FTP_PASSWORD}" "${CRM_FTP_SERVER}"
+          mkdir -p "${CRM_FTP_SERVER_DIR}"
+          cd "${CRM_FTP_SERVER_DIR}"
+          mirror --reverse --verbose --parallel=4 \
+            --exclude-glob data/config.php \
+            --exclude-glob data/config-internal.php \
+            --exclude-glob data/cache/** \
+            --exclude-glob data/logs/** \
+            --exclude-glob data/tmp/** \
+            --exclude-glob data/upload/** \
+            --exclude-glob custom/** \
+            --exclude-glob client/custom/** \
+            "${ESPO_ROOT}/" .
+          bye
+          EOF
+
+      - name: Deployment summary
+        env:
+          TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          echo "EspoCRM ${TAG} deploy job completed."
+          echo "Next: open https://crm.x3dprints.be and complete the installer if this is the first deploy."
