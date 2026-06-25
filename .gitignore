@@ -46,3 +46,10 @@ next-env.d.ts
 /tools/x3d-email-notifier/node_modules/
 /tools/x3d-email-notifier/data/
 
+
+# design-sync — generated outputs and runtime cache (config + previews + notes ARE committed)
+/.ds-sync/
+/ds-bundle/
+/.design-sync/.cache/
+/.design-sync/styles-built.css
+/.design-sync/node_modules
