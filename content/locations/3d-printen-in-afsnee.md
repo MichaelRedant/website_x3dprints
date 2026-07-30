@@ -1,27 +1,17 @@
 # 3D printen in Afsnee: innovatie langs de Leie
 
-**3D printen in Afsnee** brengt moderne maaktechnologie tot in deze groene wijk van Gent. X3DPrints is niet gevestigd in Afsnee, maar levert er wel actief prototypes, onderdelen en creatieve prints. Dankzij **3D printen in Afsnee** hoeven bewoners niet naar verre steden om hun ideeën te realiseren.
+Een onderdeel, maquette of gepersonaliseerd object laten maken in Afsnee? X3DPrints produceert vanuit Herzele en levert 3D prints in Afsnee en de westelijke rand van Gent.
 
 ---
 
-## Waarom 3D printen in Afsnee?
+## Waarom kiezen voor 3D printen in Afsnee?
 
-- **Snelle service**: projecten voor **3D printen in Afsnee** worden meestal binnen enkele dagen afgewerkt.
-- **Lokale levering**: geen lange ritten dankzij **3D printen in Afsnee**.
-- **Transparante prijzen**: duidelijke offertes houden **3D printen in Afsnee** betaalbaar.
-- **Herstellingen op maat**: oude apparaten krijgen nieuw leven via **3D printen in Afsnee**.
-- **Ondersteuning voor verenigingen**: decorstukken en gadgets ontstaan met **3D printen in Afsnee**.
-- **Maatwerk**: van hobbyproject tot prototype, alles kan met **3D printen in Afsnee**.
+- Eén exemplaar is mogelijk; je hoeft geen grote reeks te bestellen.
+- We controleren wanddikte en maakbaarheid voordat de productie start.
+- De offerte vermeldt materiaal, aantallen en een haalbare planning.
+- Verzending naar Afsnee of afhaling in Herzele wordt vooraf afgesproken.
 
 ---
-
-## Lokale focus in Afsnee
-
-In Afsnee helpen we projecten rond Afsnee sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
-
-- Prototypes om vorm en werking te testen.
-- Behuizingen en beschermkappen voor elektronica of sensoren.
-- Pasmallen en sjablonen voor montage en assemblage.
 
 ## Materialen voor 3D printen in Afsnee
 
@@ -64,7 +54,7 @@ Met **rapid prototyping** via **3D printen in Afsnee** doorloop je sneller de on
 
 1. Stuur je ontwerp (STL of STEP) via de [contactpagina](/contact).
 2. Kies materiaal en gewenste afwerking.
-3. Ontvang binnen 24 uur een offerte voor **3D printen in Afsnee**.
+3. Ontvang een offerte met prijs en haalbare planning voor **3D printen in Afsnee**.
 4. Na akkoord starten we met **3D printen in Afsnee**.
 5. Ophalen of verzending volgens afspraak.
 
@@ -72,21 +62,10 @@ Met **rapid prototyping** via **3D printen in Afsnee** doorloop je sneller de on
 
 ## Levertijd en verzending
 
-- **Standaard**: 2 tot 5 werkdagen.
+- **Planning**: wordt bevestigd na controle van formaat, materiaal, afwerking en actuele capaciteit.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: volgens tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de regio Gent.
-
----
-
-## Toepassingen van 3D printen in Afsnee
-
-- Prototypes voor productontwikkeling
-- Reserveonderdelen voor machines
-- Decoratieve objecten en kunst
-- Gepersonaliseerde gadgets
-- Educatieve modellen voor scholen
-- Requisieten voor evenementen
+- **Afhaling**: op afspraak in de studio in Herzele.
 
 ---
 
@@ -118,48 +97,36 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Afsnee of afha
 
 ## Offerte voor 3D printen in Afsnee
 
-Benieuwd hoe **3D printen in Afsnee** jouw idee versterkt? Vraag een **gratis offerte** aan.
-
-- **Betaalbaar**: duidelijke tarieven voor **3D printen in Afsnee**
-- **Snel**: korte doorlooptijden bij **3D printen in Afsnee**
-- **Lokaal**: directe service in je eigen regio
-
-➡️ [Vraag een offerte aan](/contact) en ontdek de mogelijkheden van **3D printen in Afsnee**.
+Stuur je STL of STEP met afmetingen, toepassing en aantallen via [contact](/contact). Heb je nog geen bestand, voeg dan foto's en maatvoering toe. We bekijken welke voorbereiding nodig is en bezorgen daarna een voorstel.
 
 <!-- LOCAL_ENRICH_START -->
-## Lokale accenten voor Afsnee
+## 3D print service Afsnee voor de Leiestreek
 
-- Dekking: Afsnee; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Afsnee.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Afsnee is residentieel en kleinschalig. Daardoor ligt de lokale vraag minder bij grote productie en vaker bij één goed passend onderdeel, een interieurtoepassing of een visueel model. Voor **3D printen in Afsnee** produceren we in Herzele en verzenden we het afgewerkte werk naar de klant.
 
-## Nabijgelegen pagina's
-- [Overzicht lokale 3D print pagina's](/locaties)
+- Een niet meer verkrijgbare knop, klem of afdekplaat opnieuw ontwerpen en printen.
+- Een maquette of presentatiemodel voor een woning- of landschapsproject langs de Leie.
+- Een gepersonaliseerde houder, organizer of decoratief object op maat.
+- Een eerste pasmodel voordat een definitief onderdeel in PETG wordt gemaakt.
+
+Heb je alleen het bestaande voorwerp, dan bekijken we via [3D scannen](/3d-scannen) of [3D modelleren](/3d-modelleren) hoe er een bruikbaar bestand van kan worden gemaakt. Foto's zijn geschikt voor de haalbaarheidscheck; voor een scan is het fysieke object nodig.
 
 ## Lokale punten in Afsnee
-- Centrum van Afsnee
-- Lokale bedrijvenzone in Afsnee
-- Sporthal in Afsnee
 
+- De dorpskern rond de Sint-Jan-de-Doperkerk.
+- De Leie en de verbinding richting Sint-Martens-Latem.
+- De N60-corridor en de aansluiting met Sint-Denijs-Westrem.
+- De fiets- en woonomgeving tussen Afsnee en Drongen.
 
-## Lokale spotlight
-- Lokale teams in Afsnee: PLA/PETG onderdelen afgestemd op projecten rond Afsnee.
-- Vaak gevraagd: 3D print service afsnee; we adviseren materiaal en afwerking.
-- Leverfocus: Afsnee.
+## Nabijgelegen pagina's
 
-## Plaatsen waar we vaak leveren rond Afsnee
-- Centrum van Afsnee
-- Lokale bedrijvenzone in Afsnee
-- Sporthal in Afsnee
+- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+- [3D printen in Drongen](/3d-printen-in-drongen)
+- [3D printen in Sint-Denijs-Westrem](/3d-printen-in-sint-denijs-westrem)
+- [Alle lokale 3D printpagina's](/locaties)
 
-## Sectoren die we vaak helpen in Afsnee
-- KMO's en makers in Afsnee: pasmallen en behuizingen.
-- Retail/events rond Afsnee: displays en props.
-- Onderwijs/labs in Afsnee: lesklare prints.
+## Bronnen en lokale context
 
-## Veelgevraagde zoekopdrachten in Afsnee
-- 3D print service afsnee
-- rapid prototyping afsnee
-- 3D printing bedrijf afsnee
+- [Stad Gent: plannen en projecten per wijk](https://stad.gent/nl/plannen-en-projecten)
+- [Visit Gent](https://visit.gent.be/nl)
 <!-- LOCAL_ENRICH_END -->

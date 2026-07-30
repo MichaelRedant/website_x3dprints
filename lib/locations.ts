@@ -5171,7 +5171,8 @@ export const locations: Location[] = [
       "3D printen nabij gent",
       "3D model laten printen gent",
     ],
-    metaDescription: "Professionele 3D prints in Gent voor prototypes, mallen en functionele onderdelen. Upload je model en ontvang snel een offerte bij X3DPrints.",
+    metaDescription:
+      "3D printen in Gent voor prototypes, onderdelen, maquettes en kleine series. Materiaaladvies, modelleren en levering vanuit de studio in Herzele.",
     servicedAreas: ["Gent centrum", "Zwijnaarde", "Destelbergen", "Merelbeke", "Drongen", "Gent Zeehaven", "Afhalen Herzele"],
     sectors: [
       "Prototyping voor start-ups (Tech Lane Zwijnaarde)",
@@ -7952,6 +7953,204 @@ export const locations: Location[] = [
       "Makers en onderwijs in Lennik",
     ],
   },
+  {
+    slug: "3d-printen-in-limburg",
+    city: "Limburg",
+    province: "Limburg",
+    relatedPhrases: [
+      "3D printservice Limburg",
+      "3D printing Limburg Belgie",
+      "rapid prototyping Limburg",
+      "3D print bedrijf Limburg",
+      "3D model laten printen Limburg",
+      "3D scannen Limburg",
+    ],
+    metaDescription:
+      "3D printservice voor Limburg met prototypes, onderdelen, kleine series, modelleren en scan-to-print. Productie in Herzele en levering in Belgisch Limburg.",
+    servicedAreas: ["Hasselt", "Genk", "Sint-Truiden", "Beringen", "Lommel", "Pelt", "Maasmechelen", "Tongeren-Borgloon"],
+    sectors: [
+      "Maakindustrie en technische KMO's in Limburg",
+      "Retail, horeca en evenementen in Limburg",
+      "Onderwijs, onderzoek en productontwikkeling",
+      "Toerisme, erfgoed en streekproducenten",
+    ],
+  },
+  {
+    slug: "3d-printen-in-hasselt",
+    city: "Hasselt",
+    province: "Limburg",
+    relatedPhrases: [
+      "3D print service Hasselt",
+      "rapid prototyping Hasselt",
+      "3D printing bedrijf Hasselt",
+      "3D model laten printen Hasselt",
+      "3D printen Corda Campus",
+      "3D printen voor events Hasselt",
+    ],
+    metaDescription:
+      "3D printen in Hasselt voor prototypes, displays, technische onderdelen en kleine series. Persoonlijk advies en levering vanuit de studio in Herzele.",
+    servicedAreas: ["Hasselt centrum", "Kuringen", "Kermt", "Corda Campus", "Quartier Bleu", "Genk", "Sint-Truiden", "Beringen"],
+    sectors: [
+      "Techbedrijven en start-ups rond Corda Campus",
+      "Retail en horeca in Hasselt centrum en Quartier Bleu",
+      "Events, cultuur en merkactivaties",
+      "Onderwijs en productontwikkeling",
+    ],
+  },
+  {
+    slug: "3d-printen-in-genk",
+    city: "Genk",
+    province: "Limburg",
+    relatedPhrases: [
+      "3D print service Genk",
+      "rapid prototyping Genk",
+      "3D printing bedrijf Genk",
+      "3D model laten printen Genk",
+      "3D printen Thor Park",
+      "3D printen maakindustrie Genk",
+    ],
+    metaDescription:
+      "3D printen in Genk voor maakindustrie, energie, smart-city prototypes en kleine series. FDM-maatwerk met materiaaladvies en levering vanuit Herzele.",
+    servicedAreas: ["Genk centrum", "Thor Park", "C-mine", "Waterschei", "Winterslag", "Hasselt", "Maasmechelen", "Limburg"],
+    sectors: [
+      "Slimme maakindustrie en engineering rond Thor Park",
+      "Energie- en smart-city prototypes",
+      "Onderwijs en technische opleidingen op T2-campus",
+      "Cultuur, events en creatieve productie rond C-mine",
+    ],
+  },
+  {
+    slug: "3d-printen-in-sint-truiden",
+    city: "Sint-Truiden",
+    province: "Limburg",
+    relatedPhrases: [
+      "3D print service Sint-Truiden",
+      "rapid prototyping Sint-Truiden",
+      "3D printing bedrijf Sint-Truiden",
+      "3D model laten printen Sint-Truiden",
+      "3D printen DronePort",
+      "3D printen Haspengouw",
+    ],
+    metaDescription:
+      "3D printen in Sint-Truiden voor droneprototypes, landbouw, onderdelen en presentatiemodellen. Productie in Herzele met levering volgens offerte.",
+    servicedAreas: ["Sint-Truiden centrum", "Brustem", "Zepperen", "Velm", "DronePort Campus", "Hasselt", "Tongeren-Borgloon", "Limburg"],
+    sectors: [
+      "Drone-, luchtvaart- en testprojecten rond DronePort",
+      "Fruitteelt, landbouw en technische hulpmiddelen",
+      "Lokale handel en gepersonaliseerde producten",
+      "Onderwijs, verenigingen en events",
+    ],
+  },
+  {
+    slug: "3d-printen-in-beringen",
+    city: "Beringen",
+    province: "Limburg",
+    relatedPhrases: [
+      "3D print service Beringen",
+      "rapid prototyping Beringen",
+      "3D printing bedrijf Beringen",
+      "3D model laten printen Beringen",
+      "3D printen be-MINE",
+      "3D printen industrie Beringen",
+    ],
+    metaDescription:
+      "3D printen in Beringen voor tooling, vervangstukken, eventmateriaal en kleine series. Transparante offerte en levering vanuit Herzele.",
+    servicedAreas: ["Beringen centrum", "Beverlo", "Koersel", "Paal", "be-MINE", "Hasselt", "Pelt", "Limburg"],
+    sectors: [
+      "Industrie, onderhoud en technische diensten",
+      "Eventmateriaal en displays rond be-MINE",
+      "Retail, horeca en verenigingen",
+      "Prototypes en hulpmiddelen voor lokale KMO's",
+    ],
+  },
+  {
+    slug: "3d-printen-in-lommel",
+    city: "Lommel",
+    province: "Limburg",
+    relatedPhrases: [
+      "3D print service Lommel",
+      "rapid prototyping Lommel",
+      "3D printing bedrijf Lommel",
+      "3D model laten printen Lommel",
+      "3D printen Kristalpark",
+      "3D printen maakindustrie Lommel",
+    ],
+    metaDescription:
+      "3D printen in Lommel voor industriële prototypes, jigs, behuizingen en kleine series. Materiaaladvies en levering vanuit Herzele.",
+    servicedAreas: ["Lommel centrum", "Kristalpark", "Balendijk", "Kerkhoven", "Kattenbos", "Pelt", "Beringen", "Limburg"],
+    sectors: [
+      "Maakindustrie en productontwikkeling",
+      "Automotive, testopstellingen en technische prototypes",
+      "Onderhoud, tooling en vervangstukken",
+      "Lokale retail en vrijetijdsprojecten",
+    ],
+  },
+  {
+    slug: "3d-printen-in-pelt",
+    city: "Pelt",
+    province: "Limburg",
+    relatedPhrases: [
+      "3D print service Pelt",
+      "rapid prototyping Pelt",
+      "3D printing bedrijf Pelt",
+      "3D model laten printen Pelt",
+      "3D printen Nolimpark",
+      "3D printen Noord-Limburg",
+    ],
+    metaDescription:
+      "3D printen in Pelt en Noord-Limburg voor functionele onderdelen, prototypes en kleine series. Productie in Herzele en levering op afspraak.",
+    servicedAreas: ["Pelt centrum", "Neerpelt", "Overpelt", "Nolimpark", "Heikesveld", "Lommel", "Beringen", "Limburg"],
+    sectors: [
+      "KMO's en productiebedrijven op Nolimpark",
+      "Machinebouw, onderhoud en werkplaatshulpen",
+      "Retail, zorg en lokale dienstverlening",
+      "Scholen, makers en verenigingen in Noord-Limburg",
+    ],
+  },
+  {
+    slug: "3d-printen-in-maasmechelen",
+    city: "Maasmechelen",
+    province: "Limburg",
+    relatedPhrases: [
+      "3D print service Maasmechelen",
+      "rapid prototyping Maasmechelen",
+      "3D printing bedrijf Maasmechelen",
+      "3D model laten printen Maasmechelen",
+      "3D printen Maasmechelen Village",
+      "3D printen retail Maasland",
+    ],
+    metaDescription:
+      "3D printen in Maasmechelen voor retaildisplays, horeca, toerisme, onderdelen en prototypes. Persoonlijke FDM-service met levering vanuit Herzele.",
+    servicedAreas: ["Maasmechelen centrum", "Eisden", "Terhills", "Maasmechelen Village", "Opgrimbie", "Genk", "Tongeren-Borgloon", "Limburg"],
+    sectors: [
+      "Retail, visual merchandising en horeca",
+      "Toerisme, events en bezoekersbeleving",
+      "Technische KMO's en onderhoud",
+      "Creatieve makers en gepersonaliseerde producten",
+    ],
+  },
+  {
+    slug: "3d-printen-in-tongeren-borgloon",
+    city: "Tongeren-Borgloon",
+    province: "Limburg",
+    relatedPhrases: [
+      "3D print service Tongeren-Borgloon",
+      "3D printen Tongeren",
+      "3D printen Borgloon",
+      "rapid prototyping Tongeren",
+      "3D model laten printen Borgloon",
+      "3D printen Haspengouw",
+    ],
+    metaDescription:
+      "3D printen in Tongeren-Borgloon voor erfgoed, handel, fruitteelt, maquettes en functionele onderdelen. Levering vanuit Herzele volgens offerte.",
+    servicedAreas: ["Tongeren", "Borgloon", "Hoepertingen", "Kortessem", "Haspengouw", "Sint-Truiden", "Maasmechelen", "Limburg"],
+    sectors: [
+      "Erfgoed, musea en presentatiemodellen",
+      "Fruitteelt, streekproducten en verkooppresentatie",
+      "Lokale handel, horeca en antiek",
+      "Technische onderdelen en prototypes voor KMO's",
+    ],
+  },
 ];
 // --- HELPERS -------------------------------------------------
 function normSlug(s: string): string {
@@ -7982,6 +8181,10 @@ function provinceRegionTerms(province?: string): string[] {
 
   if (normalized === "west-vlaanderen") {
     return ["West-Vlaanderen", "Kustregio", "Westhoek", "Middenkust"]
+  }
+
+  if (normalized === "limburg") {
+    return ["Limburg", "Haspengouw", "Noord-Limburg", "Maasland", "Mijnstreek"]
   }
 
   return [province!.trim()]

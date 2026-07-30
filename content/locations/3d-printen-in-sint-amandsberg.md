@@ -1,27 +1,17 @@
 # 3D printen in Sint-Amandsberg: zicht op Campo Santo
 
-**3D printen in Sint-Amandsberg** brengt moderne maaktechnologie tot in deze groene wijk van Gent. X3DPrints is niet gevestigd in Sint-Amandsberg, maar levert er wel actief prototypes, onderdelen en creatieve prints. Dankzij **3D printen in Sint-Amandsberg** hoeven bewoners niet naar verre steden om hun ideeën te realiseren.
+Een ontbrekend onderdeel, prototype of display laten 3D printen in Sint-Amandsberg? X3DPrints maakt het in Herzele en levert richting Dampoort en de oostelijke stadsrand.
 
 ---
 
-## Waarom 3D printen in Sint-Amandsberg?
+## Waarom 3D printen op aanvraag?
 
-- **Snelle service**: projecten voor **3D printen in Sint-Amandsberg** worden meestal binnen enkele dagen afgewerkt.
-- **Lokale levering**: geen lange ritten dankzij **3D printen in Sint-Amandsberg**.
-- **Transparante prijzen**: duidelijke offertes houden **3D printen in Sint-Amandsberg** betaalbaar.
-- **Herstellingen op maat**: oude apparaten krijgen nieuw leven via **3D printen in Sint-Amandsberg**.
-- **Ondersteuning voor verenigingen**: decorstukken en gadgets ontstaan met **3D printen in Sint-Amandsberg**.
-- **Maatwerk**: van hobbyproject tot prototype, alles kan met **3D printen in Sint-Amandsberg**.
+- Geschikt voor unieke maten en vormen die je niet in de winkel vindt.
+- Materiaaladvies voor decoratief of functioneel gebruik.
+- Eén exemplaar en compacte series zonder grote minimumafname.
+- Duidelijke offerte met productie- en leverplanning.
 
 ---
-
-## Lokale focus in Sint-Amandsberg
-
-In Sint-Amandsberg helpen we projecten rond Sint-Amandsberg sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
-
-- Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine en grotere series onderdelen met consistente passing.
-- Prototypes om vorm en werking te testen.
 
 ## Materialen voor 3D printen in Sint-Amandsberg
 
@@ -64,7 +54,7 @@ Met **rapid prototyping** via **3D printen in Sint-Amandsberg** doorloop je snel
 
 1. Stuur je ontwerp (STL of STEP) via de [contactpagina](/contact).
 2. Kies materiaal en gewenste afwerking.
-3. Ontvang binnen 24 uur een offerte voor **3D printen in Sint-Amandsberg**.
+3. Ontvang een offerte met prijs en haalbare planning voor **3D printen in Sint-Amandsberg**.
 4. Na akkoord starten we met **3D printen in Sint-Amandsberg**.
 5. Ophalen of verzending volgens afspraak.
 
@@ -72,21 +62,10 @@ Met **rapid prototyping** via **3D printen in Sint-Amandsberg** doorloop je snel
 
 ## Levertijd en verzending
 
-- **Standaard**: 2 tot 5 werkdagen.
+- **Planning**: wordt bevestigd na controle van formaat, materiaal, afwerking en actuele capaciteit.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: volgens tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de regio Gent.
-
----
-
-## Toepassingen van 3D printen in Sint-Amandsberg
-
-- Prototypes voor productontwikkeling
-- Reserveonderdelen voor machines
-- Decoratieve objecten en kunst
-- Gepersonaliseerde gadgets
-- Educatieve modellen voor scholen
-- Requisieten voor evenementen
+- **Afhaling**: op afspraak in de studio in Herzele.
 
 ---
 
@@ -96,7 +75,7 @@ Met **rapid prototyping** via **3D printen in Sint-Amandsberg** doorloop je snel
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Amandsberg of afhalen in Herzele.
 
 **Hoe werkt een offerte voor 3D printen in Sint-Amandsberg?**
-Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
+Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een duidelijke prijs en een planning die rekening houdt met de actuele productiecapaciteit.
 
 **Welke bestanden kan ik aanleveren voor Sint-Amandsberg?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
@@ -118,48 +97,36 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Sint-Amandsberg
 
-Benieuwd hoe **3D printen in Sint-Amandsberg** jouw idee versterkt? Vraag een **gratis offerte** aan.
-
-- **Betaalbaar**: duidelijke tarieven voor **3D printen in Sint-Amandsberg**
-- **Snel**: korte doorlooptijden bij **3D printen in Sint-Amandsberg**
-- **Lokaal**: directe service in je eigen regio
-
-➡️ [Vraag een offerte aan](/contact) en ontdek de mogelijkheden van **3D printen in Sint-Amandsberg**.
+Via [contact](/contact) kun je een bestand, schets of foto's bezorgen. Vermeld de afmetingen en het gebruik; daarna ontvang je een voorstel voor modelleren, printen en levering in Sint-Amandsberg.
 
 <!-- LOCAL_ENRICH_START -->
-## Lokale accenten voor Sint-Amandsberg
+## 3D print service Sint-Amandsberg tussen Dampoort en Oostakker
 
-- Dekking: Sint-Amandsberg; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Amandsberg.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Sint-Amandsberg is dichtbebouwd en ligt vlak bij Dampoort, de Antwerpsesteenweg en de oostelijke stadsrand. Bij **3D printen in Sint-Amandsberg** gaat het daarom vaak om compacte oplossingen voor wonen, handel, fietsen, elektronica of een creatieve nevenactiviteit.
 
-## Nabijgelegen pagina's
-- [Overzicht lokale 3D print pagina's](/locaties)
+- Een specifieke muurbeugel, kabelgeleider of organizer op maat.
+- Een display, logo-object of tafelhouder voor een winkel of horecazaak.
+- Een vervangende clip, knop of afdekstuk voor een bestaand product.
+- Een prototype of maquette voor een zelfstandige, student of ontwerper.
+
+Voor een onderdeel dat exact moet passen, ontvangen we graag maatvoering en foto's van de montageplaats. Is de vorm moeilijk op te meten, dan beoordelen we of [3D scanning](/3d-scannen) een zinvolle route is.
 
 ## Lokale punten in Sint-Amandsberg
-- Centrum van Sint-Amandsberg
-- Lokale bedrijvenzone in Sint-Amandsberg
-- Sporthal in Sint-Amandsberg
 
+- Dampoort en de Antwerpsesteenweg.
+- Campo Santo en de historische dorpskern.
+- Rozebroeken en de verbinding richting Oostakker.
+- De grens met Gentbrugge, Destelbergen en Lochristi.
 
-## Lokale spotlight
-- Lokale teams in Sint-Amandsberg: PLA/PETG onderdelen afgestemd op projecten rond Sint-Amandsberg.
-- Vaak gevraagd: 3D print service sint-amandsberg; we adviseren materiaal en afwerking.
-- Leverfocus: Sint-Amandsberg.
+## Nabijgelegen pagina's
 
-## Plaatsen waar we vaak leveren rond Sint-Amandsberg
-- Centrum van Sint-Amandsberg
-- Lokale bedrijvenzone in Sint-Amandsberg
-- Sporthal in Sint-Amandsberg
+- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+- [3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
+- [3D printen in Oostakker](/3d-printen-in-oostakker)
+- [3D printen in Destelbergen](/3d-printen-in-destelbergen)
 
-## Sectoren die we vaak helpen in Sint-Amandsberg
-- KMO's en makers in Sint-Amandsberg: pasmallen en behuizingen.
-- Retail/events rond Sint-Amandsberg: displays en props.
-- Onderwijs/labs in Sint-Amandsberg: lesklare prints.
+## Bronnen en lokale context
 
-## Veelgevraagde zoekopdrachten in Sint-Amandsberg
-- 3D print service sint-amandsberg
-- rapid prototyping sint-amandsberg
-- 3D printing bedrijf sint-amandsberg
+- [Stad Gent: plannen en projecten in Sint-Amandsberg](https://stad.gent/nl/plannen-en-projecten)
+- [Stad Gent](https://stad.gent/nl)
 <!-- LOCAL_ENRICH_END -->

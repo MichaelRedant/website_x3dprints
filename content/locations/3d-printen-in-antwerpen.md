@@ -4,7 +4,7 @@ Zoek je **3D printen in Antwerpen** voor een prototype, maquette, display, techn
 
 Antwerpen vraagt een andere aanpak dan een gewone locatiepagina. De stad combineert haven en logistiek, retail en events, musea, campussen, creatieve bureaus en maakbedrijven. Daarom behandelen we Antwerpen als hub: deze pagina helpt je snel kiezen tussen zichtwerk, functionele onderdelen, eventprops, studentprojecten en B2B prototypes.
 
-Laatst bijgewerkt: 18 mei 2026
+Laatst bijgewerkt: 30 juli 2026
 
 ---
 
@@ -141,6 +141,8 @@ Stuur foto's om de haalbaarheid te bespreken. Voor reproductie of reverse engine
 ## Handige interne links voor Antwerpen
 
 - [3D print services](/services) - productie, nabewerking, montage en projectaanpak.
+- [3D scannen](/3d-scannen) - van bestaand object naar digitaal bestand, met een fysieke scan in de studio of op locatie.
+- [3D modelleren](/3d-modelleren) - een schets, idee of technisch concept printklaar laten uitwerken.
 - [Materialen en richtlijnen](/materials) - PLA, PETG, TPU en technische keuzes.
 - [Prijzen](/pricing) - transparant over formaat, materiaal en nabewerking.
 - [3D viewer](/viewer) - STL of STEP snel checken op oriëntatie en oppervlakte.

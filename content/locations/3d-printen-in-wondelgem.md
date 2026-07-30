@@ -1,27 +1,17 @@
 # 3D printen in Wondelgem: creativiteit bij het station
 
-**3D printen in Wondelgem** brengt moderne maaktechnologie tot in deze groene wijk van Gent. X3DPrints is niet gevestigd in Wondelgem, maar levert er wel actief prototypes, onderdelen en creatieve prints. Dankzij **3D printen in Wondelgem** hoeven bewoners niet naar verre steden om hun ideeën te realiseren.
+Voor 3D printen in Wondelgem maakt X3DPrints prototypes, hersteldelen en kleine series vanuit Herzele. Verzending naar Wondelgem en afhaling in de studio zijn mogelijk.
 
 ---
 
-## Waarom 3D printen in Wondelgem?
+## Waarom maatwerk laten printen?
 
-- **Snelle service**: projecten voor **3D printen in Wondelgem** worden meestal binnen enkele dagen afgewerkt.
-- **Lokale levering**: geen lange ritten dankzij **3D printen in Wondelgem**.
-- **Transparante prijzen**: duidelijke offertes houden **3D printen in Wondelgem** betaalbaar.
-- **Herstellingen op maat**: oude apparaten krijgen nieuw leven via **3D printen in Wondelgem**.
-- **Ondersteuning voor verenigingen**: decorstukken en gadgets ontstaan met **3D printen in Wondelgem**.
-- **Maatwerk**: van hobbyproject tot prototype, alles kan met **3D printen in Wondelgem**.
+- Een oplossing op maat wanneer een standaardonderdeel niet past.
+- Eerst een prototype testen voordat je meerdere stuks bestelt.
+- Keuze uit materialen voor zichtwerk, sterkte of flexibiliteit.
+- Een offerte zonder productie te starten voordat je akkoord geeft.
 
 ---
-
-## Lokale focus in Wondelgem
-
-In Wondelgem helpen we projecten rond Wondelgem sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
-
-- Behuizingen en beschermkappen voor elektronica of sensoren.
-- Pasmallen en sjablonen voor montage en assemblage.
-- Montagehulpstukken en klemmen voor snelle herstellingen.
 
 ## Materialen voor 3D printen in Wondelgem
 
@@ -64,7 +54,7 @@ Met **rapid prototyping** via **3D printen in Wondelgem** doorloop je sneller de
 
 1. Stuur je ontwerp (STL of STEP) via de [contactpagina](/contact).
 2. Kies materiaal en gewenste afwerking.
-3. Ontvang binnen 24 uur een offerte voor **3D printen in Wondelgem**.
+3. Ontvang een offerte met prijs en haalbare planning voor **3D printen in Wondelgem**.
 4. Na akkoord starten we met **3D printen in Wondelgem**.
 5. Ophalen of verzending volgens afspraak.
 
@@ -72,21 +62,10 @@ Met **rapid prototyping** via **3D printen in Wondelgem** doorloop je sneller de
 
 ## Levertijd en verzending
 
-- **Standaard**: 2 tot 5 werkdagen.
+- **Planning**: wordt bevestigd na controle van formaat, materiaal, afwerking en actuele capaciteit.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: volgens tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de regio Gent.
-
----
-
-## Toepassingen van 3D printen in Wondelgem
-
-- Prototypes voor productontwikkeling
-- Reserveonderdelen voor machines
-- Decoratieve objecten en kunst
-- Gepersonaliseerde gadgets
-- Educatieve modellen voor scholen
-- Requisieten voor evenementen
+- **Afhaling**: op afspraak in de studio in Herzele.
 
 ---
 
@@ -118,48 +97,36 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Wondelgem
 
-Benieuwd hoe **3D printen in Wondelgem** jouw idee versterkt? Vraag een **gratis offerte** aan.
-
-- **Betaalbaar**: duidelijke tarieven voor **3D printen in Wondelgem**
-- **Snel**: korte doorlooptijden bij **3D printen in Wondelgem**
-- **Lokaal**: directe service in je eigen regio
-
-➡️ [Vraag een offerte aan](/contact) en ontdek de mogelijkheden van **3D printen in Wondelgem**.
+Bezorg je bestand of foto's via [contact](/contact), samen met maatvoering en aantallen. We beoordelen of direct printen, modelleren of scannen de meest logische aanpak is.
 
 <!-- LOCAL_ENRICH_START -->
-## Lokale accenten voor Wondelgem
+## 3D print service Wondelgem voor de noordwestelijke stadsrand
 
-- Dekking: Wondelgem; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Wondelgem.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Wondelgem ligt tussen woonwijken, de Evergemsesteenweg en de bedrijvigheid langs de Wiedauwkaai. Daardoor varieert **3D printen in Wondelgem** van een kleine herstelling voor thuis tot een houder, mal of beschermkap voor professioneel gebruik.
 
-## Nabijgelegen pagina's
-- [Overzicht lokale 3D print pagina's](/locaties)
+- Vervangende kunststof clips, knoppen en afdekstukken.
+- Houders en behuizingen voor gereedschap, elektronica of sensoren.
+- Een testmodel om passing of montage vooraf te controleren.
+- Een display, organizer of gepersonaliseerd item in één exemplaar of kleine reeks.
+
+Voor ontbrekende onderdelen kan [3D modelleren](/3d-modelleren) voldoende zijn wanneer er goede maten beschikbaar zijn. Bij organische of complexe vormen bekijken we of [3D scannen](/3d-scannen) technisch en economisch zinvol is.
 
 ## Lokale punten in Wondelgem
-- Centrum van Wondelgem
-- Lokale bedrijvenzone in Wondelgem
-- Sporthal in Wondelgem
 
+- Wondelgem centrum en het station.
+- Evergemsesteenweg en Botestraat.
+- Wiedauwkaai en de industriële noordrand.
+- De verbinding met Mariakerke, Evergem en Meulestede.
 
-## Lokale spotlight
-- Lokale teams in Wondelgem: PLA/PETG onderdelen afgestemd op projecten rond Wondelgem.
-- Vaak gevraagd: 3D print service wondelgem; we adviseren materiaal en afwerking.
-- Leverfocus: Wondelgem.
+## Nabijgelegen pagina's
 
-## Plaatsen waar we vaak leveren rond Wondelgem
-- Centrum van Wondelgem
-- Lokale bedrijvenzone in Wondelgem
-- Sporthal in Wondelgem
+- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+- [3D printen in Mariakerke](/3d-printen-in-mariakerke)
+- [3D printen in Evergem](/3d-printen-in-evergem)
+- [Alle locaties](/locaties)
 
-## Sectoren die we vaak helpen in Wondelgem
-- KMO's en makers in Wondelgem: pasmallen en behuizingen.
-- Retail/events rond Wondelgem: displays en props.
-- Onderwijs/labs in Wondelgem: lesklare prints.
+## Bronnen en lokale context
 
-## Veelgevraagde zoekopdrachten in Wondelgem
-- 3D print service wondelgem
-- rapid prototyping wondelgem
-- 3D printing bedrijf wondelgem
+- [Stad Gent: plannen en projecten per wijk](https://stad.gent/nl/plannen-en-projecten)
+- [Stad Gent](https://stad.gent/nl)
 <!-- LOCAL_ENRICH_END -->

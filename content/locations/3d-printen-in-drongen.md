@@ -1,27 +1,17 @@
 # 3D printen in Drongen: ideeën bij de Sint-Gertrudisabdij
 
-**3D printen in Drongen** brengt moderne maaktechnologie tot in deze groene wijk van Gent. X3DPrints is niet gevestigd in Drongen, maar levert er wel actief prototypes, onderdelen en creatieve prints. Dankzij **3D printen in Drongen** hoeven bewoners niet naar verre steden om hun ideeën te realiseren.
+Zoek je een 3D print service voor Drongen? X3DPrints maakt prototypes, functionele onderdelen en kleine series in Herzele en verzendt ze naar Drongen, Baarle en omgeving.
 
 ---
 
-## Waarom 3D printen in Drongen?
+## Waarom X3DPrints voor Drongen?
 
-- **Snelle service**: projecten voor **3D printen in Drongen** worden meestal binnen enkele dagen afgewerkt.
-- **Lokale levering**: geen lange ritten dankzij **3D printen in Drongen**.
-- **Transparante prijzen**: duidelijke offertes houden **3D printen in Drongen** betaalbaar.
-- **Herstellingen op maat**: oude apparaten krijgen nieuw leven via **3D printen in Drongen**.
-- **Ondersteuning voor verenigingen**: decorstukken en gadgets ontstaan met **3D printen in Drongen**.
-- **Maatwerk**: van hobbyproject tot prototype, alles kan met **3D printen in Drongen**.
+- Geschikt voor unieke onderdelen en terugkerende kleine series.
+- Praktisch advies over materiaal, passing en printoriëntatie.
+- Mogelijkheid tot modelleren wanneer je nog geen printbaar bestand hebt.
+- Duidelijke prijs en planning op basis van het echte model.
 
 ---
-
-## Lokale focus in Drongen
-
-Voor Drongen leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Drongen en Drongen.
-
-- Pasmallen en sjablonen voor montage en assemblage.
-- Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Drongen
 
@@ -64,7 +54,7 @@ Met **rapid prototyping** via **3D printen in Drongen** doorloop je sneller de o
 
 1. Stuur je ontwerp (STL of STEP) via de [contactpagina](/contact).
 2. Kies materiaal en gewenste afwerking.
-3. Ontvang binnen 24 uur een offerte voor **3D printen in Drongen**.
+3. Ontvang een offerte met prijs en haalbare planning voor **3D printen in Drongen**.
 4. Na akkoord starten we met **3D printen in Drongen**.
 5. Ophalen of verzending volgens afspraak.
 
@@ -72,28 +62,17 @@ Met **rapid prototyping** via **3D printen in Drongen** doorloop je sneller de o
 
 ## Levertijd en verzending
 
-- **Standaard**: 2 tot 5 werkdagen.
+- **Planning**: wordt bevestigd na controle van formaat, materiaal, afwerking en actuele capaciteit.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: volgens tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de regio Gent.
-
----
-
-## Toepassingen van 3D printen in Drongen
-
-- Prototypes voor productontwikkeling
-- Reserveonderdelen voor machines
-- Decoratieve objecten en kunst
-- Gepersonaliseerde gadgets
-- Educatieve modellen voor scholen
-- Requisieten voor evenementen
+- **Afhaling**: op afspraak in de studio in Herzele.
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Drongen
 
 **Hoe werkt een offerte voor 3D printen in Drongen?**
-Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
+Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een duidelijke prijs en een planning die rekening houdt met de actuele productiecapaciteit.
 
 **Welke bestanden kan ik aanleveren voor Drongen?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
@@ -119,48 +98,36 @@ Ja. We maken zowel kleine als grotere series met consistente passing en duidelij
 
 ## Offerte voor 3D printen in Drongen
 
-Benieuwd hoe **3D printen in Drongen** jouw idee versterkt? Vraag een **gratis offerte** aan.
-
-- **Betaalbaar**: duidelijke tarieven voor **3D printen in Drongen**
-- **Snel**: korte doorlooptijden bij **3D printen in Drongen**
-- **Lokaal**: directe service in je eigen regio
-
-➡️ [Vraag een offerte aan](/contact) en ontdek de mogelijkheden van **3D printen in Drongen**.
+Bezorg je bestand, gewenste materiaal en aantal via [contact](/contact). We controleren de printbaarheid en sturen een voorstel met de kosten en verwachte planning voor levering in Drongen.
 
 <!-- LOCAL_ENRICH_START -->
-## Leverdetails rond Drongen
+## Rapid prototyping Drongen en maatwerk
 
-- Dekking: Drongen; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Drongen.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Door de ligging aan de E40 en de combinatie van woonkernen en bedrijvigheid krijgen we voor **3D printen in Drongen** uiteenlopende aanvragen. Bedrijven zoeken vaak een montagehulp of prototype; particulieren hebben vaker een vervangstuk, organizer of gepersonaliseerd object nodig.
 
-## Gerelateerde buurtpagina's
-- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+- Een pasmodel om maatvoering te controleren voordat een functioneel onderdeel wordt geprint.
+- Een klem, montagebeugel of boormal voor werkplaatsgebruik.
+- Een nette display, schaalmodel of award voor een presentatie.
+- Een ontbrekend kunststof onderdeel reconstrueren via modelleren of scanning.
+
+Voor herhaalwerk bewaren we materiaal, oriëntatie en relevante instellingen. Daardoor kan een vervolgreeks consistenter worden geproduceerd zonder dat het hele traject opnieuw begint.
 
 ## Lokale punten in Drongen
-- Centrum van Drongen
-- Lokale bedrijvenzone in Drongen
-- Sporthal in Drongen
 
+- Drongen centrum en het station.
+- Baarle en de verbinding richting Deinze.
+- De Oude Abdij van Drongen en de Leieomgeving.
+- De E40, N466 en het bedrijventerrein aan de westzijde van Gent.
 
-## Klantenspotlight
-- Lokale teams in Drongen: kleine reeksen met vaste settings rond Drongen.
-- Vaak gevraagd: 3D print service drongen; we adviseren materiaal en afwerking.
-- Afhalen in Herzele; verzending naar Drongen en Drongen.
+## Gerelateerde buurtpagina's
 
-## Locaties die we bedienen nabij Drongen
-- Centrum van Drongen
-- Lokale bedrijvenzone in Drongen
-- Sporthal in Drongen
+- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+- [3D printen in Afsnee](/3d-printen-in-afsnee)
+- [3D printen in Mariakerke](/3d-printen-in-mariakerke)
+- [3D printen in Deinze](/3d-printen-in-deinze)
 
-## Sectorfocus nabij Drongen
-- KMO's en makers in Drongen: pasmallen en behuizingen.
-- Retail/events rond Drongen: displays en props.
-- Onderwijs/labs in Drongen: lesklare prints.
+## Bronnen en lokale context
 
-## Typische aanvragen rond Drongen
-- 3D print service drongen
-- rapid prototyping drongen
-- 3D printing bedrijf drongen
+- [Stad Gent: plannen en projecten in Drongen](https://stad.gent/nl/plannen-en-projecten)
+- [Visit Gent](https://visit.gent.be/nl)
 <!-- LOCAL_ENRICH_END -->

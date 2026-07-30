@@ -46,7 +46,7 @@ Werk je in Deurne? We leveren snelle prototypes en zowel kleine als grotere seri
 
 ## Levering
 
-Dagelijkse verzending naar Deurne. Deadline? Vermeld datum en locatie, dan plannen we productie en levering. Afhalen in Herzele kan na afspraak.
+Verzending naar Deurne gebeurt volgens de afgesproken projectplanning. Vermeld datum en locatie als er een deadline is, zodat we de haalbaarheid vooraf kunnen bevestigen. Afhalen in Herzele kan na afspraak.
 
 ---
 
@@ -56,7 +56,7 @@ Dagelijkse verzending naar Deurne. Deadline? Vermeld datum en locatie, dan plann
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Deurne of afhalen in Herzele.
 
 **Hoe werkt een offerte voor 3D printen in Deurne?**
-Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
+Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een duidelijke prijs en een planning die rekening houdt met de actuele productiecapaciteit.
 
 **Welke bestanden kan ik aanleveren voor Deurne?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.

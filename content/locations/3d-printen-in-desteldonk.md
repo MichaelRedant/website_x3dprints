@@ -1,27 +1,17 @@
 # 3D printen in Desteldonk: vakmanschap tussen kanaal en polders
 
-**3D printen in Desteldonk** brengt moderne maaktechnologie tot in deze groene wijk van Gent. X3DPrints is niet gevestigd in Desteldonk, maar levert er wel actief prototypes, onderdelen en creatieve prints. Dankzij **3D printen in Desteldonk** hoeven bewoners niet naar verre steden om hun ideeën te realiseren.
+Voor een technisch prototype, montagehulp of vervangstuk in Desteldonk produceert X3DPrints vanuit Herzele. We leveren richting Desteldonk en de Gentse kanaalzone met materiaaladvies vooraf.
 
 ---
 
-## Waarom 3D printen in Desteldonk?
+## Waarom een onderdeel laten 3D printen in Desteldonk?
 
-- **Snelle service**: projecten voor **3D printen in Desteldonk** worden meestal binnen enkele dagen afgewerkt.
-- **Lokale levering**: geen lange ritten dankzij **3D printen in Desteldonk**.
-- **Transparante prijzen**: duidelijke offertes houden **3D printen in Desteldonk** betaalbaar.
-- **Herstellingen op maat**: oude apparaten krijgen nieuw leven via **3D printen in Desteldonk**.
-- **Ondersteuning voor verenigingen**: decorstukken en gadgets ontstaan met **3D printen in Desteldonk**.
-- **Maatwerk**: van hobbyproject tot prototype, alles kan met **3D printen in Desteldonk**.
+- Je kunt eerst één pasmodel laten maken voordat je een reeks bestelt.
+- PETG, TPU, ASA en technische materialen worden volgens de toepassing gekozen.
+- We bespreken passing, belasting en bevestiging bij functionele onderdelen.
+- Je ontvangt een offerte voordat productie of nabewerking wordt ingepland.
 
 ---
-
-## Lokale focus in Desteldonk
-
-Voor Desteldonk leveren we snel en denken we mee over sterkte en afwerking, ideaal voor projecten nabij Desteldonk en Desteldonk.
-
-- Kleine en grotere series onderdelen met consistente passing.
-- Prototypes om vorm en werking te testen.
-- Behuizingen en beschermkappen voor elektronica of sensoren.
 
 ## Materialen voor 3D printen in Desteldonk
 
@@ -64,7 +54,7 @@ Met **rapid prototyping** via **3D printen in Desteldonk** doorloop je sneller d
 
 1. Stuur je ontwerp (STL of STEP) via de [contactpagina](/contact).
 2. Kies materiaal en gewenste afwerking.
-3. Ontvang binnen 24 uur een offerte voor **3D printen in Desteldonk**.
+3. Ontvang een offerte met prijs en haalbare planning voor **3D printen in Desteldonk**.
 4. Na akkoord starten we met **3D printen in Desteldonk**.
 5. Ophalen of verzending volgens afspraak.
 
@@ -72,21 +62,10 @@ Met **rapid prototyping** via **3D printen in Desteldonk** doorloop je sneller d
 
 ## Levertijd en verzending
 
-- **Standaard**: 2 tot 5 werkdagen.
+- **Planning**: wordt bevestigd na controle van formaat, materiaal, afwerking en actuele capaciteit.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: volgens tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de regio Gent.
-
----
-
-## Toepassingen van 3D printen in Desteldonk
-
-- Prototypes voor productontwikkeling
-- Reserveonderdelen voor machines
-- Decoratieve objecten en kunst
-- Gepersonaliseerde gadgets
-- Educatieve modellen voor scholen
-- Requisieten voor evenementen
+- **Afhaling**: op afspraak in de studio in Herzele.
 
 ---
 
@@ -99,7 +78,7 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Desteldonk of afhalen in Herzele.
 
 **Hoe werkt een offerte voor 3D printen in Desteldonk?**
-Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
+Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een duidelijke prijs en een planning die rekening houdt met de actuele productiecapaciteit.
 
 ## Interne links rond 3D printen in Gent
 - [3D printen in Afsnee](/3d-printen-in-afsnee)
@@ -118,48 +97,36 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte voor 3D printen in Desteldonk
 
-Benieuwd hoe **3D printen in Desteldonk** jouw idee versterkt? Vraag een **gratis offerte** aan.
-
-- **Betaalbaar**: duidelijke tarieven voor **3D printen in Desteldonk**
-- **Snel**: korte doorlooptijden bij **3D printen in Desteldonk**
-- **Lokaal**: directe service in je eigen regio
-
-➡️ [Vraag een offerte aan](/contact) en ontdek de mogelijkheden van **3D printen in Desteldonk**.
+Vraag een offerte aan via [contact](/contact) en vermeld functie, belasting, omgeving en gewenste aantallen. Zo kunnen we materiaal en prijs voor je onderdeel in Desteldonk correct beoordelen.
 
 <!-- LOCAL_ENRICH_START -->
-## Lokale accenten voor Desteldonk
+## 3D print service Desteldonk voor de kanaalzone
 
-- Dekking: Desteldonk; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Desteldonk.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Desteldonk ligt tussen een landelijke dorpskern en de Gentse havenactiviteiten. Dat maakt **3D printen in Desteldonk** vooral interessant voor functionele onderdelen die snel getest of vervangen moeten worden. Denk aan een sensorhouder, beschermkap, kabelgeleider, boormal of passtuk voor onderhoud.
 
-## Nabijgelegen pagina's
-- [Overzicht lokale 3D print pagina's](/locaties)
+Voor technische aanvragen vragen we meer dan alleen een STL. Vermeld waar het onderdeel wordt gemonteerd, welke krachten erop komen en of warmte, vocht of buitengebruik een rol spelen. Zo kunnen we beoordelen of PETG, ASA, TPU of een technisch materiaal past.
+
+- Prototypes voor montage en interne praktijktesten.
+- Jigs en eenvoudige hulpmiddelen voor werkplaats of onderhoud.
+- Behuizingen voor elektronica, sensoren en meetopstellingen.
+- Kleine series met vaste passing en gedocumenteerde printinstellingen.
 
 ## Lokale punten in Desteldonk
-- Centrum van Desteldonk
-- Lokale bedrijvenzone in Desteldonk
-- Sporthal in Desteldonk
 
+- Desteldonkdorp en de Grote Dries.
+- De R4 en de aansluiting op de Gentse kanaalzone.
+- Het Kanaal Gent-Terneuzen en North Sea Port.
+- De verbinding met Oostakker, Mendonk en Sint-Kruis-Winkel.
 
-## Lokale spotlight
-- Lokale teams in Desteldonk: PLA/PETG onderdelen afgestemd op projecten rond Desteldonk.
-- Vaak gevraagd: 3D print service desteldonk; we adviseren materiaal en afwerking.
-- Leverfocus: Desteldonk.
+## Gerelateerde buurtpagina's
 
-## Plaatsen waar we vaak leveren rond Desteldonk
-- Centrum van Desteldonk
-- Lokale bedrijvenzone in Desteldonk
-- Sporthal in Desteldonk
+- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+- [3D printen in Mendonk](/3d-printen-in-mendonk)
+- [3D printen in Sint-Kruis-Winkel](/3d-printen-in-sint-kruis-winkel)
+- [3D printen in Oostakker](/3d-printen-in-oostakker)
 
-## Sectoren die we vaak helpen in Desteldonk
-- KMO's en makers in Desteldonk: pasmallen en behuizingen.
-- Retail/events rond Desteldonk: displays en props.
-- Onderwijs/labs in Desteldonk: lesklare prints.
+## Bronnen en lokale context
 
-## Veelgevraagde zoekopdrachten in Desteldonk
-- 3D print service desteldonk
-- rapid prototyping desteldonk
-- 3D printing bedrijf desteldonk
+- [Stad Gent: geschiedenis van de Gentse kanaaldorpen](https://stad.gent/nl/gentse-kanaaldorpen-en-zone/geschiedenis-van-de-gentse-kanaaldorpen-en-zone)
+- [North Sea Port](https://www.northseaport.com/)
 <!-- LOCAL_ENRICH_END -->

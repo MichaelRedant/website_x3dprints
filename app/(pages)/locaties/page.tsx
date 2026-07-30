@@ -11,7 +11,7 @@ export const revalidate = 21600 // 6u heropbouw
 export const metadata: Metadata = {
   title: "3D printen België per stad | X3DPrints",
   description:
-    "Overzicht van lokale landingspaginas voor 3D printen in België, inclusief regio's zoals Gent, Aalst en Herzele. Navigeer snel naar je stad en vraag offerte.",
+    "Vind 3D printservices per stad en regio, met clusters voor Gent, Antwerpen, Limburg, Aalst en Herzele. Bekijk mogelijkheden en vraag een offerte.",
   alternates: { canonical: "https://www.x3dprints.be/locaties/" },
   openGraph: {
     title: "3D printen in België per stad",
@@ -28,6 +28,7 @@ export const metadata: Metadata = {
 export default function Page() {
   const tocItems = [
     { id: "locations-pillars", label: "Start met de 3D-printen pillar" },
+    { id: "locations-limburg", label: "3D printen in Limburg" },
     { id: "locations-overview", label: "Overzicht per stad" },
     { id: "locations-sources", label: "Bronnen en referenties" },
   ]
@@ -35,14 +36,36 @@ export default function Page() {
     { label: "Google docs: local SEO basics", url: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide" },
     { label: "Schema.org ItemList", url: "https://schema.org/ItemList" },
     { label: "Google docs: crawlable links", url: "https://developers.google.com/search/docs/crawling-indexing/links-crawlable" },
+    { label: "POM Limburg: economische sectorwerking", url: "https://pomlimburg.be/sectorwerking/" },
   ]
-  const lastUpdatedLabel = "Laatst bijgewerkt: 6 februari 2026"
+  const lastUpdatedLabel = "Laatst bijgewerkt: 31 juli 2026"
 
   // Lijst bouwen en sorteren
   const slugs = getAllLocationSlugs()
   const locations = slugs
     .map((slug) => ({ slug, city: getLocationBySlug(slug)?.city ?? slug }))
     .sort((a, b) => a.city.localeCompare(b.city, "nl"))
+  const prioritySlugs = [
+    "3d-printen-in-gent",
+    "3d-printen-in-antwerpen",
+    "3d-printen-in-limburg",
+    "3d-printen-in-hasselt",
+    "3d-printen-in-genk",
+    "3d-printen-in-sint-truiden",
+    "3d-printen-in-beringen",
+    "3d-printen-in-lommel",
+    "3d-printen-in-pelt",
+    "3d-printen-in-maasmechelen",
+    "3d-printen-in-tongeren-borgloon",
+    "3d-printen-in-herzele",
+    "3d-printen-in-aalst",
+  ]
+  const highlightedLocations = [
+    ...prioritySlugs
+      .map((slug) => locations.find((location) => location.slug === slug))
+      .filter((location): location is { slug: string; city: string } => Boolean(location)),
+    ...locations.filter((location) => !prioritySlugs.includes(location.slug)),
+  ].slice(0, 12)
 
   // Groeperen op initiaal
   const grouped: Record<string, { slug: string; city: string }[]> = {}
@@ -56,11 +79,19 @@ export default function Page() {
   const localOffers: SchemaOfferInput[] = [
     { serviceName: "3D printen in Herzele", price: "EUR 5", description: "Snel prototyping en zowel kleine als grotere batches." },
     { serviceName: "3D printen in Gent", price: "EUR 5", description: "PLA, PETG en TPU voor creatieve teams." },
+    { serviceName: "3D printen in Antwerpen", price: "EUR 5", description: "Prototypes, functionele onderdelen en maatwerk met levering naar alle districten." },
+    { serviceName: "3D printen in Limburg", price: "EUR 5", description: "Prototypes, onderdelen en kleine series met productie in Herzele en levering in Limburg." },
     { serviceName: "3D printen in Aalst", price: "EUR 0", description: "Gratis intake + material suggestion call." },
   ]
 
   // JSON-LD ItemList (cap op 100)
-  const itemList = locations.slice(0, 100).map((loc, i) => ({
+  const structuredLocations = [
+    ...prioritySlugs
+      .map((slug) => locations.find((location) => location.slug === slug))
+      .filter((location): location is { slug: string; city: string } => Boolean(location)),
+    ...locations.filter((location) => !prioritySlugs.includes(location.slug)),
+  ]
+  const itemList = structuredLocations.slice(0, 100).map((loc, i) => ({
     "@type": "ListItem",
     position: i + 1,
     url: `https://www.x3dprints.be/${loc.slug}`,
@@ -75,7 +106,7 @@ export default function Page() {
     description: pageDescription,
     pageUrl: canonicalUrl,
     image: "/images/og-home.svg",
-    areaServed: "Gent, Herzele, Aalst en omstreken",
+    areaServed: "Gent, Antwerpen, Limburg, Hasselt, Genk, Herzele, Aalst en omstreken",
     priceRange: "EUR 0 - EUR 5",
   })
   const serviceJsonLd = buildServiceSchema("Lokale 3D print service", localOffers, canonicalUrl)
@@ -199,6 +230,39 @@ export default function Page() {
         </div>
       </section>
 
+      <section id="locations-limburg" className="scroll-mt-28 mx-auto mt-10 max-w-5xl">
+        <div className="rounded-3xl border border-emerald-100/80 bg-gradient-to-br from-white/85 via-emerald-50/75 to-cyan-50/70 px-6 py-7 shadow-[0_16px_45px_rgba(15,118,110,0.10)] backdrop-blur sm:px-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-emerald-700">Nieuwe provinciecluster</p>
+          <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-950">3D printen in Limburg, geleverd vanuit Herzele</h2>
+          <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-700">
+            De Limburgse cluster verbindt een provinciepagina met aparte landingspagina&apos;s voor Hasselt, Genk,
+            Sint-Truiden, Beringen, Lommel, Pelt, Maasmechelen en Tongeren-Borgloon. X3DPrints heeft geen vestiging
+            in Limburg: we produceren in Herzele en verzenden volgens de planning in je offerte.
+          </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {[
+              ["Limburg", "3d-printen-in-limburg"],
+              ["Hasselt", "3d-printen-in-hasselt"],
+              ["Genk", "3d-printen-in-genk"],
+              ["Sint-Truiden", "3d-printen-in-sint-truiden"],
+              ["Beringen", "3d-printen-in-beringen"],
+              ["Lommel", "3d-printen-in-lommel"],
+              ["Pelt", "3d-printen-in-pelt"],
+              ["Maasmechelen", "3d-printen-in-maasmechelen"],
+              ["Tongeren-Borgloon", "3d-printen-in-tongeren-borgloon"],
+            ].map(([label, slug]) => (
+              <Link
+                key={slug}
+                href={`/${slug}`}
+                className="rounded-full border border-emerald-200/80 bg-white/85 px-3 py-1.5 text-xs font-semibold text-slate-800 transition hover:-translate-y-0.5 hover:border-emerald-300 hover:bg-white"
+              >
+                3D printen {label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* OVERZICHT */}
       <section
         id="locations-overview"
@@ -213,7 +277,7 @@ export default function Page() {
           <div className="animate-[fadeIn_.6s_ease_out_.05s_both]">
             <h2 className="text-sm font-semibold text-slate-900">Aanbevolen steden</h2>
             <ul className="mt-3 flex flex-wrap gap-2">
-              {locations.slice(0, 12).map((loc) => (
+              {highlightedLocations.map((loc) => (
                 <li key={loc.slug}>
                   <Link
                     href={`/${loc.slug}`}

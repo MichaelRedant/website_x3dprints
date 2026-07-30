@@ -35,7 +35,7 @@ Zoek je een partner voor **3D printen in Berchem** die meedenkt met je ontwerp e
 
 ## Leveren of afhalen
 
-We verzenden dagelijks naar Berchem. Timing nodig voor een pitch? Vermeld de datum bij je aanvraag. Afhalen in Herzele kan op afspraak; verzending volgens [prijzen](/pricing).
+We verzenden naar Berchem volgens de afgesproken projectplanning. Timing nodig voor een pitch? Vermeld de datum bij je aanvraag. Afhalen in Herzele kan op afspraak; verzending volgt de tarieven op de [prijzenpagina](/pricing).
 
 ---
 
@@ -48,7 +48,7 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Berchem of afhalen in Herzele.
 
 **Hoe werkt een offerte voor 3D printen in Berchem?**
-Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
+Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een duidelijke prijs en een planning die rekening houdt met de actuele productiecapaciteit.
 
 
 

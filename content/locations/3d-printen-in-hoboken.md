@@ -45,7 +45,7 @@ Zoek je 3D printen in Hoboken? We denken mee over passing, sterkte en look zodat
 
 ## Logistiek
 
-Dagelijkse verzending naar Hoboken. Deadline voor een demo? Vermeld het in je aanvraag; we plannen productie en levering. Afhalen in Herzele kan na afspraak.
+Verzending naar Hoboken gebeurt volgens de afgesproken projectplanning. Vermeld een demo- of testdatum bij je aanvraag, zodat we productie en levering realistisch kunnen inplannen. Afhalen in Herzele kan na afspraak.
 
 ---
 

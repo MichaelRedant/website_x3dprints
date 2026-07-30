@@ -116,13 +116,46 @@ const photoLabelOverrides: Record<string, string> = {
   "white-mannequin-jewelry-display-bust.webp": "White mannequin jewelry display bust",
 }
 
+const RECENT_PORTFOLIO_FILES = [
+  "romantic-heart-couple-sculpture-guy-maggy.webp",
+  "gold-bicycle-race-trophy-zilveren-helmen.webp",
+  "ribbed-white-vase-with-pampas-grass.webp",
+  "large-white-dog-head-sculpture.webp",
+  "brown-bear-rider-sculpture-on-printbed.webp",
+  "custom-horse-memorial-trophy-kilowatt.webp",
+  "custom-family-portrait-busts-and-figures.webp",
+  "white-mannequin-jewelry-display-bust.webp",
+  "white-hand-ring-holder-display-set.webp",
+  "pink-smiley-planter-pot-with-arms.webp",
+  "black-batman-miniature-on-printbed.webp",
+  "white-barn-owl-sculpture-closeup.webp",
+  "octopus-servetringen-op-maat-closeup.webp",
+  "custom-electrical-lamp-adapter-repair-part.webp",
+  "black-fantasy-alien-jester-miniatures.webp",
+] as const
+
+const recentPortfolioOrder = new Map<string, number>(
+  RECENT_PORTFOLIO_FILES.map((file, index) => [file, index]),
+)
+
 const photoEntries = readdirSync(portfolioDir)
   .filter((file) => /\.webp$/i.test(file))
   .map((file) => {
     const stats = statSync(path.join(portfolioDir, file))
     return { file, mtime: stats.mtimeMs }
   })
-  .sort((a, b) => b.mtime - a.mtime)
+  .sort((a, b) => {
+    const aPriority = recentPortfolioOrder.get(a.file)
+    const bPriority = recentPortfolioOrder.get(b.file)
+
+    if (aPriority !== undefined || bPriority !== undefined) {
+      if (aPriority === undefined) return 1
+      if (bPriority === undefined) return -1
+      return aPriority - bPriority
+    }
+
+    return b.mtime - a.mtime
+  })
   .map((entry) => {
     const baseLabel = entry.file
       .replace(/\.[^.]+$/, "")
@@ -771,7 +804,11 @@ export default function Page(props: unknown) {
             <p className="mt-2 text-slate-600">{copy.gallery.body}</p>
           </Reveal>
           <Reveal className="mt-10">
-            <PortfolioGallery items={photos} locale={normalizedLocale} newCount={15} />
+            <PortfolioGallery
+              items={photos}
+              locale={normalizedLocale}
+              newCount={RECENT_PORTFOLIO_FILES.length}
+            />
           </Reveal>
         </div>
       </section>

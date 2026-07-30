@@ -45,7 +45,7 @@ Voor projecten in Borgerhout combineren we korte doorlooptijd met strakke afwerk
 
 ## Levering
 
-We verzenden dagelijks naar Borgerhout. Geef je deadline door, dan plannen we mee. Afhalen in Herzele kan op afspraak; verzending volgens [prijzen](/pricing).
+We verzenden naar Borgerhout volgens de afgesproken planning. Geef je deadline door, dan bevestigen we wat haalbaar is. Afhalen in Herzele kan op afspraak; verzending volgt de tarieven op de [prijzenpagina](/pricing).
 
 ---
 
@@ -58,7 +58,7 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Borgerhout of afhalen in Herzele.
 
 **Hoe werkt een offerte voor 3D printen in Borgerhout?**
-Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
+Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een duidelijke prijs en een planning die rekening houdt met de actuele productiecapaciteit.
 
 ## Interne links rond Antwerpen
 - [3D printen in Antwerpen](/3d-printen-in-antwerpen)

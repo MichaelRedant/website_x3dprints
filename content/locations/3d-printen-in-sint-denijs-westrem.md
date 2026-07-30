@@ -1,27 +1,17 @@
 # 3D printen in Sint-Denijs-Westrem: oplossingen aan Flanders Expo
 
-**3D printen in Sint-Denijs-Westrem** brengt moderne maaktechnologie tot in deze groene wijk van Gent. X3DPrints is niet gevestigd in Sint-Denijs-Westrem, maar levert er wel actief prototypes, onderdelen en creatieve prints. Dankzij **3D printen in Sint-Denijs-Westrem** hoeven bewoners niet naar verre steden om hun ideeën te realiseren.
+Een beursmodel, display of technisch prototype nodig in Sint-Denijs-Westrem? X3DPrints produceert vanuit Herzele en levert richting Flanders Expo, The Loop en de Gentse stadsrand.
 
 ---
 
-## Waarom 3D printen in Sint-Denijs-Westrem?
+## Waarom 3D printen voor een beurs of presentatie?
 
-- **Snelle service**: projecten voor **3D printen in Sint-Denijs-Westrem** worden meestal binnen enkele dagen afgewerkt.
-- **Lokale levering**: geen lange ritten dankzij **3D printen in Sint-Denijs-Westrem**.
-- **Transparante prijzen**: duidelijke offertes houden **3D printen in Sint-Denijs-Westrem** betaalbaar.
-- **Herstellingen op maat**: oude apparaten krijgen nieuw leven via **3D printen in Sint-Denijs-Westrem**.
-- **Ondersteuning voor verenigingen**: decorstukken en gadgets ontstaan met **3D printen in Sint-Denijs-Westrem**.
-- **Maatwerk**: van hobbyproject tot prototype, alles kan met **3D printen in Sint-Denijs-Westrem**.
+- Kleine oplages zonder klassieke productietool of mal.
+- Maatwerk in kleur, vorm en merkuitstraling.
+- Lichtgewicht onderdelen die praktisch te vervoeren zijn.
+- Planning op basis van je echte event- of presentatiedatum.
 
 ---
-
-## Lokale focus in Sint-Denijs-Westrem
-
-Werk je in Sint-Denijs-Westrem? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Denijs-Westrem.
-
-- Pasmallen en sjablonen voor montage en assemblage.
-- Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Sint-Denijs-Westrem
 
@@ -64,7 +54,7 @@ Met **rapid prototyping** via **3D printen in Sint-Denijs-Westrem** doorloop je 
 
 1. Stuur je ontwerp (STL of STEP) via de [contactpagina](/contact).
 2. Kies materiaal en gewenste afwerking.
-3. Ontvang binnen 24 uur een offerte voor **3D printen in Sint-Denijs-Westrem**.
+3. Ontvang een offerte met prijs en haalbare planning voor **3D printen in Sint-Denijs-Westrem**.
 4. Na akkoord starten we met **3D printen in Sint-Denijs-Westrem**.
 5. Ophalen of verzending volgens afspraak.
 
@@ -72,28 +62,17 @@ Met **rapid prototyping** via **3D printen in Sint-Denijs-Westrem** doorloop je 
 
 ## Levertijd en verzending
 
-- **Standaard**: 2 tot 5 werkdagen.
+- **Planning**: wordt bevestigd na controle van formaat, materiaal, afwerking en actuele capaciteit.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: volgens tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de regio Gent.
-
----
-
-## Toepassingen van 3D printen in Sint-Denijs-Westrem
-
-- Prototypes voor productontwikkeling
-- Reserveonderdelen voor machines
-- Decoratieve objecten en kunst
-- Gepersonaliseerde gadgets
-- Educatieve modellen voor scholen
-- Requisieten voor evenementen
+- **Afhaling**: op afspraak in de studio in Herzele.
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Sint-Denijs-Westrem
 
 **Hoe werkt een offerte voor 3D printen in Sint-Denijs-Westrem?**
-Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
+Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een duidelijke prijs en een planning die rekening houdt met de actuele productiecapaciteit.
 
 **Welke bestanden kan ik aanleveren voor Sint-Denijs-Westrem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
@@ -118,48 +97,36 @@ Ja. We maken zowel kleine als grotere series met consistente passing en duidelij
 
 ## Offerte voor 3D printen in Sint-Denijs-Westrem
 
-Benieuwd hoe **3D printen in Sint-Denijs-Westrem** jouw idee versterkt? Vraag een **gratis offerte** aan.
-
-- **Betaalbaar**: duidelijke tarieven voor **3D printen in Sint-Denijs-Westrem**
-- **Snel**: korte doorlooptijden bij **3D printen in Sint-Denijs-Westrem**
-- **Lokaal**: directe service in je eigen regio
-
-➡️ [Vraag een offerte aan](/contact) en ontdek de mogelijkheden van **3D printen in Sint-Denijs-Westrem**.
+Voor beurs- of presentatiewerk vermeld je via [contact](/contact) best meteen de eventdatum, aantallen, kleur en gewenste afwerking. We bevestigen vervolgens wat binnen de beschikbare productietijd haalbaar is.
 
 <!-- LOCAL_ENRICH_START -->
-## Leverdetails rond Sint-Denijs-Westrem
+## 3D print service Sint-Denijs-Westrem rond Flanders Expo
 
-- Dekking: Sint-Denijs-Westrem; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Sint-Denijs-Westrem.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Sint-Denijs-Westrem heeft door Flanders Expo, The Loop en de Kortrijksesteenweg een duidelijke commerciële en evenementgerichte vraag. **3D printen in Sint-Denijs-Westrem** is geschikt voor presentatiemodellen en displays, maar ook voor functionele onderdelen voor kantoren, winkels en technische teams.
 
-## Gerelateerde buurtpagina's
-- [Overzicht lokale 3D print pagina's](/locaties)
+- Lichtgewicht beursprops, logo-objecten en tafelhouders.
+- Maquettes en pitchmodellen voor vastgoed of productpresentaties.
+- Kabelmanagement, montagebeugels en behuizingen voor tijdelijke installaties.
+- Kleine series awards, badges of gepersonaliseerde relatiegeschenken.
+
+Bij een beursdeadline plannen we achterwaarts vanaf de gewenste leverdatum. Vermeld formaat, aantallen en afwerking meteen, zodat we geen snelheid beloven die door nabewerking of assemblage niet haalbaar is.
 
 ## Lokale punten in Sint-Denijs-Westrem
-- Centrum van Sint-Denijs-Westrem
-- Lokale bedrijvenzone in Sint-Denijs-Westrem
-- Sporthal in Sint-Denijs-Westrem
 
+- Flanders Expo en The Loop.
+- Kortrijksesteenweg en de handelszone.
+- Maaltebruggepark en de dorpskern.
+- E40, R4 en de verbinding met Afsnee en Zwijnaarde.
 
-## Klantenspotlight
-- Lokale teams in Sint-Denijs-Westrem: kleine reeksen met vaste settings rond Sint-Denijs-Westrem.
-- Vaak gevraagd: 3D print service sint-denijs-westrem; we adviseren materiaal en afwerking.
-- Afhalen in Herzele; verzending naar Sint-Denijs-Westrem en Sint-Denijs-Westrem.
+## Gerelateerde buurtpagina's
 
-## Locaties die we bedienen nabij Sint-Denijs-Westrem
-- Centrum van Sint-Denijs-Westrem
-- Lokale bedrijvenzone in Sint-Denijs-Westrem
-- Sporthal in Sint-Denijs-Westrem
+- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+- [3D printen in Afsnee](/3d-printen-in-afsnee)
+- [3D printen in Zwijnaarde](/3d-printen-in-zwijnaarde)
+- [3D printen in De Pinte](/3d-printen-in-de-pinte)
 
-## Sectorfocus nabij Sint-Denijs-Westrem
-- KMO's en makers in Sint-Denijs-Westrem: pasmallen en behuizingen.
-- Retail/events rond Sint-Denijs-Westrem: displays en props.
-- Onderwijs/labs in Sint-Denijs-Westrem: lesklare prints.
+## Bronnen en lokale context
 
-## Typische aanvragen rond Sint-Denijs-Westrem
-- 3D print service sint-denijs-westrem
-- rapid prototyping sint-denijs-westrem
-- 3D printing bedrijf sint-denijs-westrem
+- [Flanders Expo](https://www.flandersexpo.be/)
+- [Stad Gent: plannen en projecten per wijk](https://stad.gent/nl/plannen-en-projecten)
 <!-- LOCAL_ENRICH_END -->
