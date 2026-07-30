@@ -97,8 +97,23 @@ const toTitleCase = (value: string) =>
 
 const photoLabelOverrides: Record<string, string> = {
   "batman-on-printbed.webp": "Batman on printbed",
+  "black-batman-miniature-on-printbed.webp": "Black Batman miniature on printbed",
+  "black-fantasy-alien-jester-miniatures.webp": "Black fantasy alien and jester miniatures",
+  "brown-bear-rider-sculpture-on-printbed.webp": "Bear rider sculpture on printbed",
+  "custom-electrical-lamp-adapter-repair-part.webp": "Custom electrical lamp adapter repair part",
+  "custom-family-portrait-busts-and-figures.webp": "Custom portrait busts and figures",
+  "custom-horse-memorial-trophy-kilowatt.webp": "Custom horse memorial trophy Kilowatt",
   "custom-led-spot-armatuur.webp": "Custom LED-spot armatuur",
+  "gold-bicycle-race-trophy-zilveren-helmen.webp": "Gold bicycle trophy Zilveren Helmen",
+  "large-white-dog-head-sculpture.webp": "Large white dog head sculpture",
   "octopus-servetringen-op-maat.webp": "Octopus servetringen op maat",
+  "octopus-servetringen-op-maat-closeup.webp": "Octopus servetringen op maat close-up",
+  "pink-smiley-planter-pot-with-arms.webp": "Pink smiley planter pot with arms",
+  "ribbed-white-vase-with-pampas-grass.webp": "Ribbed white vase with pampas grass",
+  "romantic-heart-couple-sculpture-guy-maggy.webp": "Romantic heart sculpture Guy and Maggy",
+  "white-barn-owl-sculpture-closeup.webp": "White barn owl sculpture",
+  "white-hand-ring-holder-display-set.webp": "White hand ring holder display set",
+  "white-mannequin-jewelry-display-bust.webp": "White mannequin jewelry display bust",
 }
 
 const photoEntries = readdirSync(portfolioDir)
@@ -756,7 +771,7 @@ export default function Page(props: unknown) {
             <p className="mt-2 text-slate-600">{copy.gallery.body}</p>
           </Reveal>
           <Reveal className="mt-10">
-            <PortfolioGallery items={photos} locale={normalizedLocale} newCount={8} />
+            <PortfolioGallery items={photos} locale={normalizedLocale} newCount={15} />
           </Reveal>
         </div>
       </section>

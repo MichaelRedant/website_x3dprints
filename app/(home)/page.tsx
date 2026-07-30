@@ -106,6 +106,83 @@ const FIXED_PRIORITY_CAROUSEL_SLOTS = [
     altEn: "Custom 3D printed Funko-style figurine",
   },
 ] as const
+const FEATURED_RECENT_CAROUSEL_SLOTS = [
+  {
+    file: "white-barn-owl-sculpture-closeup.webp",
+    altNl: "Witte kerkuil sculptuur in 3D print",
+    altEn: "White barn owl sculpture in 3D print",
+  },
+  {
+    file: "custom-horse-memorial-trophy-kilowatt.webp",
+    altNl: "Gepersonaliseerde paarden trofee Kilowatt",
+    altEn: "Personalized horse memorial trophy Kilowatt",
+  },
+  {
+    file: "gold-bicycle-race-trophy-zilveren-helmen.webp",
+    altNl: "Gouden fiets trofee voor Slag der Zilveren Helmen",
+    altEn: "Gold bicycle trophy for Slag der Zilveren Helmen",
+  },
+  {
+    file: "octopus-servetringen-op-maat-closeup.webp",
+    altNl: "Servetringen op maat voor Octopus",
+    altEn: "Custom napkin rings for Octopus",
+  },
+  {
+    file: "pink-smiley-planter-pot-with-arms.webp",
+    altNl: "Roze smiley plantenpot met armen",
+    altEn: "Pink smiley planter pot with arms",
+  },
+  {
+    file: "white-mannequin-jewelry-display-bust.webp",
+    altNl: "Witte mannequin buste voor juwelenpresentatie",
+    altEn: "White mannequin bust for jewelry display",
+  },
+  {
+    file: "brown-bear-rider-sculpture-on-printbed.webp",
+    altNl: "Bruine sculptuur van beer met ruiter op printbed",
+    altEn: "Brown bear rider sculpture on print bed",
+  },
+  {
+    file: "custom-electrical-lamp-adapter-repair-part.webp",
+    altNl: "Elektrisch lampadapter onderdeel op maat",
+    altEn: "Custom electrical lamp adapter repair part",
+  },
+  {
+    file: "black-batman-miniature-on-printbed.webp",
+    altNl: "Zwarte Batman miniatuur op printbed",
+    altEn: "Black Batman miniature on print bed",
+  },
+  {
+    file: "custom-family-portrait-busts-and-figures.webp",
+    altNl: "Gepersonaliseerde portretbustes en figuren",
+    altEn: "Personalized portrait busts and figures",
+  },
+  {
+    file: "romantic-heart-couple-sculpture-guy-maggy.webp",
+    altNl: "Romantische hartsculptuur voor Guy en Maggy",
+    altEn: "Romantic heart sculpture for Guy and Maggy",
+  },
+  {
+    file: "white-hand-ring-holder-display-set.webp",
+    altNl: "Witte handsculpturen als ringhouders",
+    altEn: "White hand sculptures as ring holders",
+  },
+  {
+    file: "large-white-dog-head-sculpture.webp",
+    altNl: "Grote witte hondenkop sculptuur",
+    altEn: "Large white dog head sculpture",
+  },
+  {
+    file: "black-fantasy-alien-jester-miniatures.webp",
+    altNl: "Zwarte fantasy alien en jester miniaturen",
+    altEn: "Black fantasy alien and jester miniatures",
+  },
+  {
+    file: "ribbed-white-vase-with-pampas-grass.webp",
+    altNl: "Geribbelde witte vaas met pampasgras",
+    altEn: "Ribbed white vase with pampas grass",
+  },
+] as const
 
 const toPortfolioTitle = (value: string) =>
   value
@@ -166,6 +243,14 @@ const getFixedPriorityPortfolioPhotos = (isEn: boolean) => {
   }
   return photos
 }
+
+const getFeaturedRecentPortfolioPhotos = (isEn: boolean) =>
+  FEATURED_RECENT_CAROUSEL_SLOTS
+    .filter(({ file }) => existsSync(path.join(portfolioDir, file)))
+    .map(({ file, altNl, altEn }) => ({
+      src: `/images/portfolio/${encodeURIComponent(file)}`,
+      alt: isEn ? altEn : altNl,
+    }))
 
 const mergePhotosWithoutDuplicates = (photos: CarouselPhoto[]) => {
   const seen = new Set<string>()
@@ -793,12 +878,15 @@ export default function HomePage(props: unknown) {
       !isOutOfSeasonByKeyword(photo.src, activeSeasonalCampaign.key),
   )
   const seasonCarouselPhotos = activeSeasonalCampaign.photos
+  const featuredRecentPortfolioPhotos = getFeaturedRecentPortfolioPhotos(isEn)
+  const featuredRecentPortfolioPhotoSources = featuredRecentPortfolioPhotos.map((photo) => photo.src)
   const fixedPriorityPortfolioPhotos = getFixedPriorityPortfolioPhotos(isEn)
   const homeCarouselPhotos = mergePhotosWithoutDuplicates([
     ...seasonCarouselPhotos,
+    ...featuredRecentPortfolioPhotos,
     ...fixedPriorityPortfolioPhotos,
     ...nonSeasonalPortfolioPhotos,
-  ]).slice(0, 20)
+  ]).slice(0, 24)
   const heroTrustFacts: HeroTrustItem[] = isEn
     ? [
         { icon: MapPin, label: "Local studio & region", value: "Herzele, Ghent and all of Flanders" },
@@ -966,8 +1054,9 @@ export default function HomePage(props: unknown) {
                 items={homeCarouselPhotos}
                 speed={10}
                 visibleCount={4}
-                newCount={Math.min(activeSeasonalCampaign.minimumHomeSeasonalSlots, homeCarouselPhotos.length)}
+                newItemSources={featuredRecentPortfolioPhotoSources}
                 premium
+                advanceByPage
                 itemClass="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]"
               />
             </Reveal>
