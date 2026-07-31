@@ -1,27 +1,17 @@
 # 3D printen in Zwijnaarde: hightech aan het Technologiepark
 
-**3D printen in Zwijnaarde** brengt moderne maaktechnologie tot in deze groene wijk van Gent. X3DPrints is niet gevestigd in Zwijnaarde, maar levert er wel actief prototypes, onderdelen en creatieve prints. Dankzij **3D printen in Zwijnaarde** hoeven bewoners niet naar verre steden om hun ideeën te realiseren.
+Voor rapid prototyping in Zwijnaarde ondersteunt X3DPrints studenten, onderzoeksteams, start-ups en bedrijven met pasmodellen, behuizingen en functionele testonderdelen.
 
 ---
 
-## Waarom 3D printen in Zwijnaarde?
+## Waarom rapid prototyping in Zwijnaarde?
 
-- **Snelle service**: projecten voor **3D printen in Zwijnaarde** worden meestal binnen enkele dagen afgewerkt.
-- **Lokale levering**: geen lange ritten dankzij **3D printen in Zwijnaarde**.
-- **Transparante prijzen**: duidelijke offertes houden **3D printen in Zwijnaarde** betaalbaar.
-- **Herstellingen op maat**: oude apparaten krijgen nieuw leven via **3D printen in Zwijnaarde**.
-- **Ondersteuning voor verenigingen**: decorstukken en gadgets ontstaan met **3D printen in Zwijnaarde**.
-- **Maatwerk**: van hobbyproject tot prototype, alles kan met **3D printen in Zwijnaarde**.
+- Fysieke iteraties tonen snel waar passing of bediening nog fout zit.
+- Eén teststuk is mogelijk voordat een definitieve kleine reeks start.
+- Materiaal en printoriëntatie worden aan de proefopstelling gekoppeld.
+- CAD-aanpassingen kunnen als eenmalige modelleerkost worden opgenomen.
 
 ---
-
-## Lokale focus in Zwijnaarde
-
-In Zwijnaarde helpen we projecten rond Zwijnaarde sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
-
-- Pasmallen en sjablonen voor montage en assemblage.
-- Montagehulpstukken en klemmen voor snelle herstellingen.
-- Kleine en grotere series onderdelen met consistente passing.
 
 ## Materialen voor 3D printen in Zwijnaarde
 
@@ -64,7 +54,7 @@ Met **rapid prototyping** via **3D printen in Zwijnaarde** doorloop je sneller d
 
 1. Stuur je ontwerp (STL of STEP) via de [contactpagina](/contact).
 2. Kies materiaal en gewenste afwerking.
-3. Ontvang binnen 24 uur een offerte voor **3D printen in Zwijnaarde**.
+3. Ontvang een offerte met prijs en haalbare planning voor **3D printen in Zwijnaarde**.
 4. Na akkoord starten we met **3D printen in Zwijnaarde**.
 5. Ophalen of verzending volgens afspraak.
 
@@ -72,28 +62,17 @@ Met **rapid prototyping** via **3D printen in Zwijnaarde** doorloop je sneller d
 
 ## Levertijd en verzending
 
-- **Standaard**: 2 tot 5 werkdagen.
+- **Planning**: wordt bevestigd na controle van formaat, materiaal, afwerking en actuele capaciteit.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: volgens tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de regio Gent.
-
----
-
-## Toepassingen van 3D printen in Zwijnaarde
-
-- Prototypes voor productontwikkeling
-- Reserveonderdelen voor machines
-- Decoratieve objecten en kunst
-- Gepersonaliseerde gadgets
-- Educatieve modellen voor scholen
-- Requisieten voor evenementen
+- **Afhaling**: op afspraak in de studio in Herzele.
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Zwijnaarde
 
 **Hoe werkt een offerte voor 3D printen in Zwijnaarde?**
-Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
+Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een duidelijke prijs en een planning die rekening houdt met de actuele productiecapaciteit.
 
 **Welke bestanden kan ik aanleveren voor Zwijnaarde?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.
@@ -119,48 +98,36 @@ Ja. We maken zowel kleine als grotere series met consistente passing en duidelij
 
 ## Offerte voor 3D printen in Zwijnaarde
 
-Benieuwd hoe **3D printen in Zwijnaarde** jouw idee versterkt? Vraag een **gratis offerte** aan.
-
-- **Betaalbaar**: duidelijke tarieven voor **3D printen in Zwijnaarde**
-- **Snel**: korte doorlooptijden bij **3D printen in Zwijnaarde**
-- **Lokaal**: directe service in je eigen regio
-
-➡️ [Vraag een offerte aan](/contact) en ontdek de mogelijkheden van **3D printen in Zwijnaarde**.
+Stuur je CAD-bestand, toepassing en kritieke maten via [contact](/contact). Vermeld ook of het om een pasmodel, functionele test of definitieve kleine reeks gaat; dat bepaalt materiaal en afwerking.
 
 <!-- LOCAL_ENRICH_START -->
-## Wat je moet weten in Zwijnaarde
+## Rapid prototyping Zwijnaarde voor Tech Lane
 
-- Dekking: Zwijnaarde; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Zwijnaarde.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Zwijnaarde is een van de sterkste locaties rond Gent voor onderzoek, productontwikkeling en technische start-ups. Rond Tech Lane Ghent Science Park en Campus Ardoyen draait **3D printen in Zwijnaarde** vaak om iteraties: eerst een pasmodel, daarna een functionele versie en pas dan een kleine reeks.
 
-## Dichtbij gelegen locaties
-- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+- Behuizingen voor sensoren, elektronica en proefopstellingen.
+- Robotica-onderdelen, montagebeugels en kabelmanagement.
+- Studiemodellen en demonstratieonderdelen voor onderzoek of onderwijs.
+- Jigs, passtukken en fixtures om een test reproduceerbaar uit te voeren.
+
+Voor technische prototypes bespreken we de kritieke maatvoering en de richting van de belasting. We kunnen een ontwerp aanpassen via [3D modelleren](/3d-modelleren), maar valideren geen medische of veiligheidskritische toepassing zonder de nodige externe expertise.
 
 ## Lokale punten in Zwijnaarde
-- Centrum van Zwijnaarde
-- Lokale bedrijvenzone in Zwijnaarde
-- Sporthal in Zwijnaarde
 
+- Tech Lane Ghent Science Park en Campus Ardoyen.
+- Zwijnaarde centrum en de N60.
+- De knooppunten E17, E40 en R4.
+- De verbinding met De Pinte, Merelbeke-Melle en Sint-Denijs-Westrem.
 
-## Spotlight rond Zwijnaarde
-- Lokale teams in Zwijnaarde: behuizingen en pasmallen voor teams in Zwijnaarde.
-- Terugkerende order: 3D print service zwijnaarde; we bewaren je instellingen.
-- Leverfocus: Zwijnaarde.
+## Dichtbij gelegen locaties
 
-## Landmarks in de buurt van Zwijnaarde
-- Centrum van Zwijnaarde
-- Lokale bedrijvenzone in Zwijnaarde
-- Sporthal in Zwijnaarde
+- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+- [3D printen in Sint-Denijs-Westrem](/3d-printen-in-sint-denijs-westrem)
+- [3D printen in De Pinte](/3d-printen-in-de-pinte)
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 
-## Teams die we ondersteunen rond Zwijnaarde
-- KMO's en makers in Zwijnaarde: pasmallen en behuizingen.
-- Retail/events rond Zwijnaarde: displays en props.
-- Onderwijs/labs in Zwijnaarde: lesklare prints.
+## Bronnen en lokale context
 
-## Wat vaak wordt gevraagd in Zwijnaarde
-- 3D print service zwijnaarde
-- rapid prototyping zwijnaarde
-- 3D printing bedrijf zwijnaarde
+- [UGent: Tech Lane Ghent Science Park, Campus Ardoyen](https://www.ugent.be/ea/intec/en/contact)
+- [UGent: campussen van de Faculteit Wetenschappen](https://www.ugent.be/we/nl/contact)
 <!-- LOCAL_ENRICH_END -->

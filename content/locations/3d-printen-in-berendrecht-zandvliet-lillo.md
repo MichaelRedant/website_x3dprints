@@ -45,7 +45,7 @@ Voor projecten in Berendrecht, Zandvliet en Lillo combineren we korte doorloopti
 
 ## Logistiek
 
-We versturen dagelijks richting de noordelijke districten. Spoed nodig? Vermeld het in je aanvraag, dan plannen we productie en verzending in lijn met je deadline. Afhalen in Herzele kan op afspraak.
+We verzenden richting de noordelijke districten volgens de afgesproken projectplanning. Vermeld een deadline bij je aanvraag, dan bevestigen we vooraf wat haalbaar is. Afhalen in Herzele kan op afspraak.
 
 ---
 

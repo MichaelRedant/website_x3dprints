@@ -1,27 +1,17 @@
 # 3D printen in Oostakker: produceren bij de Lourdesbasiliek
 
-**3D printen in Oostakker** brengt moderne maaktechnologie tot in deze groene wijk van Gent. X3DPrints is niet gevestigd in Oostakker, maar levert er wel actief prototypes, onderdelen en creatieve prints. Dankzij **3D printen in Oostakker** hoeven bewoners niet naar verre steden om hun ideeën te realiseren.
+Voor prototypes, montagehulpen en vervangstukken in Oostakker produceert X3DPrints vanuit Herzele. Je krijgt advies over materiaal en passing voordat het onderdeel wordt geprint.
 
 ---
 
-## Waarom 3D printen in Oostakker?
+## Waarom technisch 3D printwerk in Oostakker?
 
-- **Snelle service**: projecten voor **3D printen in Oostakker** worden meestal binnen enkele dagen afgewerkt.
-- **Lokale levering**: geen lange ritten dankzij **3D printen in Oostakker**.
-- **Transparante prijzen**: duidelijke offertes houden **3D printen in Oostakker** betaalbaar.
-- **Herstellingen op maat**: oude apparaten krijgen nieuw leven via **3D printen in Oostakker**.
-- **Ondersteuning voor verenigingen**: decorstukken en gadgets ontstaan met **3D printen in Oostakker**.
-- **Maatwerk**: van hobbyproject tot prototype, alles kan met **3D printen in Oostakker**.
+- Snel een geometrie of passing testen zonder productiemal.
+- Functionele onderdelen in PETG, TPU, ASA of technisch materiaal.
+- Mogelijkheid om één teststuk en daarna een kleine reeks te maken.
+- Vooraf een realistische beoordeling van belasting en beperkingen.
 
 ---
-
-## Lokale focus in Oostakker
-
-In Oostakker helpen we projecten rond Oostakker sneller vooruit met prints die direct passen. Je krijgt advies over wanddiktes, toleranties en een heldere planning.
-
-- Prototypes om vorm en werking te testen.
-- Behuizingen en beschermkappen voor elektronica of sensoren.
-- Pasmallen en sjablonen voor montage en assemblage.
 
 ## Materialen voor 3D printen in Oostakker
 
@@ -64,7 +54,7 @@ Met **rapid prototyping** via **3D printen in Oostakker** doorloop je sneller de
 
 1. Stuur je ontwerp (STL of STEP) via de [contactpagina](/contact).
 2. Kies materiaal en gewenste afwerking.
-3. Ontvang binnen 24 uur een offerte voor **3D printen in Oostakker**.
+3. Ontvang een offerte met prijs en haalbare planning voor **3D printen in Oostakker**.
 4. Na akkoord starten we met **3D printen in Oostakker**.
 5. Ophalen of verzending volgens afspraak.
 
@@ -72,21 +62,10 @@ Met **rapid prototyping** via **3D printen in Oostakker** doorloop je sneller de
 
 ## Levertijd en verzending
 
-- **Standaard**: 2 tot 5 werkdagen.
+- **Planning**: wordt bevestigd na controle van formaat, materiaal, afwerking en actuele capaciteit.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: volgens tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de regio Gent.
-
----
-
-## Toepassingen van 3D printen in Oostakker
-
-- Prototypes voor productontwikkeling
-- Reserveonderdelen voor machines
-- Decoratieve objecten en kunst
-- Gepersonaliseerde gadgets
-- Educatieve modellen voor scholen
-- Requisieten voor evenementen
+- **Afhaling**: op afspraak in de studio in Herzele.
 
 ---
 
@@ -118,48 +97,36 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Oostakker of a
 
 ## Offerte voor 3D printen in Oostakker
 
-Benieuwd hoe **3D printen in Oostakker** jouw idee versterkt? Vraag een **gratis offerte** aan.
-
-- **Betaalbaar**: duidelijke tarieven voor **3D printen in Oostakker**
-- **Snel**: korte doorlooptijden bij **3D printen in Oostakker**
-- **Lokaal**: directe service in je eigen regio
-
-➡️ [Vraag een offerte aan](/contact) en ontdek de mogelijkheden van **3D printen in Oostakker**.
+Stuur je model, aantallen en technische eisen via [contact](/contact). Bij een vervangstuk helpen foto's van het originele onderdeel en de montageplaats om de haalbaarheid beter te beoordelen.
 
 <!-- LOCAL_ENRICH_START -->
-## Leverdetails rond Oostakker
+## Rapid prototyping Oostakker en technische onderdelen
 
-- Dekking: Oostakker; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Oostakker.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Oostakker ligt dicht bij de R4, John Kennedylaan en de industriële noordrand van Gent. Daardoor krijgt **3D printen in Oostakker** een duidelijke technische component. We helpen met prototypes en hulpmiddelen, maar ook met individuele herstellingen en maatwerk voor bewoners of verenigingen.
 
-## Gerelateerde buurtpagina's
-- [Overzicht lokale 3D print pagina's](/locaties)
+- Montagebeugels, sensorhouders en beschermkappen.
+- Pasmallen en eenvoudige fixtures voor controle of assemblage.
+- Een vervangstuk waarvoor geen standaardonderdeel beschikbaar is.
+- Een kleine reeks organizers, clips of productonderdelen met vaste instellingen.
+
+Een functioneel onderdeel beoordelen we op passing, wanddikte, oriëntatie en materiaal. Voor productieomgevingen bespreken we ook warmte, chemische belasting en veiligheid. 3D printen is niet voor ieder kritisch machineonderdeel de juiste techniek; die grens benoemen we vooraf.
 
 ## Lokale punten in Oostakker
-- Centrum van Oostakker
-- Lokale bedrijvenzone in Oostakker
-- Sporthal in Oostakker
 
+- Oostakker centrum en Oostakker-Lourdes.
+- R4, John Kennedylaan en de noordelijke bedrijvenzones.
+- De verbinding met Desteldonk en de Gentse kanaalzone.
+- Lochristi en Sint-Amandsberg aan de oostzijde.
 
-## Klantenspotlight
-- Lokale teams in Oostakker: kleine reeksen met vaste settings rond Oostakker.
-- Vaak gevraagd: 3D print service oostakker; we adviseren materiaal en afwerking.
-- Afhalen in Herzele; verzending naar Oostakker en Oostakker.
+## Gerelateerde buurtpagina's
 
-## Locaties die we bedienen nabij Oostakker
-- Centrum van Oostakker
-- Lokale bedrijvenzone in Oostakker
-- Sporthal in Oostakker
+- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+- [3D printen in Desteldonk](/3d-printen-in-desteldonk)
+- [3D printen in Sint-Amandsberg](/3d-printen-in-sint-amandsberg)
+- [3D printen in Lochristi](/3d-printen-in-lochristi)
 
-## Sectorfocus nabij Oostakker
-- KMO's en makers in Oostakker: pasmallen en behuizingen.
-- Retail/events rond Oostakker: displays en props.
-- Onderwijs/labs in Oostakker: lesklare prints.
+## Bronnen en lokale context
 
-## Typische aanvragen rond Oostakker
-- 3D print service oostakker
-- rapid prototyping oostakker
-- 3D printing bedrijf oostakker
+- [Stad Gent: plannen en projecten in Oostakker](https://stad.gent/nl/plannen-en-projecten)
+- [North Sea Port](https://www.northseaport.com/)
 <!-- LOCAL_ENRICH_END -->

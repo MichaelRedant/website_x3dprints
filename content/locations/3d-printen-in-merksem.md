@@ -45,7 +45,7 @@ In Merksem helpen we makers en bedrijven met 3D prints die vlot passen en lang m
 
 ## Levering
 
-Dagelijkse verzending naar Merksem. Spoed nodig? Vermeld je deadline; we plannen productie en levering. Afhalen in Herzele kan na afspraak.
+Verzending naar Merksem gebeurt volgens de afgesproken projectplanning. Vermeld je deadline, dan bevestigen we vooraf of productie en levering tijdig haalbaar zijn. Afhalen in Herzele kan na afspraak.
 
 ---
 
@@ -55,7 +55,7 @@ Dagelijkse verzending naar Merksem. Spoed nodig? Vermeld je deadline; we plannen
 Meestal enkele werkdagen. Spoed kan in overleg; levering richting Merksem of afhalen in Herzele.
 
 **Hoe werkt een offerte voor 3D printen in Merksem?**
-Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
+Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een duidelijke prijs en een planning die rekening houdt met de actuele productiecapaciteit.
 
 **Welke bestanden kan ik aanleveren voor Merksem?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.

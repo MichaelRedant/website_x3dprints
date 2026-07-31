@@ -35,14 +35,14 @@ Voor **3D printen in Wilrijk** helpt X3DPrints bedrijven rond de UA-campus Drie 
 
 ## Levering
 
-Dagelijkse verzending naar Wilrijk. Heb je een deadline? Vermeld datum en toepassing; we plannen productie en transport. Afhalen in Herzele kan na afspraak.
+Verzending naar Wilrijk gebeurt volgens de afgesproken projectplanning. Vermeld datum en toepassing bij een deadline, zodat we productie en transport vooraf kunnen beoordelen. Afhalen in Herzele kan na afspraak.
 
 ---
 
 ## Veelgestelde vragen over 3D printen in Wilrijk
 
 **Hoe werkt een offerte voor 3D printen in Wilrijk?**
-Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.
+Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een duidelijke prijs en een planning die rekening houdt met de actuele productiecapaciteit.
 
 **Welke bestanden kan ik aanleveren voor Wilrijk?**
 STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor je start.

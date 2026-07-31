@@ -1,27 +1,17 @@
 # 3D printen in Ledeberg: creativiteit rond het Ledebergplein
 
-**3D printen in Ledeberg** brengt moderne maaktechnologie tot in deze groene wijk van Gent. X3DPrints is niet gevestigd in Ledeberg, maar levert er wel actief prototypes, onderdelen en creatieve prints. Dankzij **3D printen in Ledeberg** hoeven bewoners niet naar verre steden om hun ideeën te realiseren.
+Een display, vervangstuk of prototype laten 3D printen in Ledeberg? We produceren vanuit Herzele en leveren maatwerk aan bewoners, zelfstandigen en creatieve teams in Ledeberg.
 
 ---
 
-## Waarom 3D printen in Ledeberg?
+## Waarom lokaal maatwerk voor Ledeberg?
 
-- **Snelle service**: projecten voor **3D printen in Ledeberg** worden meestal binnen enkele dagen afgewerkt.
-- **Lokale levering**: geen lange ritten dankzij **3D printen in Ledeberg**.
-- **Transparante prijzen**: duidelijke offertes houden **3D printen in Ledeberg** betaalbaar.
-- **Herstellingen op maat**: oude apparaten krijgen nieuw leven via **3D printen in Ledeberg**.
-- **Ondersteuning voor verenigingen**: decorstukken en gadgets ontstaan met **3D printen in Ledeberg**.
-- **Maatwerk**: van hobbyproject tot prototype, alles kan met **3D printen in Ledeberg**.
+- Kleine oplages zijn mogelijk zonder industriële minimumafname.
+- PLA Matte is beschikbaar voor net zichtwerk en displays.
+- PETG en TPU bieden opties voor praktische gebruiksonderdelen.
+- Je krijgt vooraf duidelijkheid over kosten, afwerking en levering.
 
 ---
-
-## Lokale focus in Ledeberg
-
-Werk je in Ledeberg? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Ledeberg.
-
-- Behuizingen en beschermkappen voor elektronica of sensoren.
-- Pasmallen en sjablonen voor montage en assemblage.
-- Montagehulpstukken en klemmen voor snelle herstellingen.
 
 ## Materialen voor 3D printen in Ledeberg
 
@@ -64,7 +54,7 @@ Met **rapid prototyping** via **3D printen in Ledeberg** doorloop je sneller de 
 
 1. Stuur je ontwerp (STL of STEP) via de [contactpagina](/contact).
 2. Kies materiaal en gewenste afwerking.
-3. Ontvang binnen 24 uur een offerte voor **3D printen in Ledeberg**.
+3. Ontvang een offerte met prijs en haalbare planning voor **3D printen in Ledeberg**.
 4. Na akkoord starten we met **3D printen in Ledeberg**.
 5. Ophalen of verzending volgens afspraak.
 
@@ -72,21 +62,10 @@ Met **rapid prototyping** via **3D printen in Ledeberg** doorloop je sneller de 
 
 ## Levertijd en verzending
 
-- **Standaard**: 2 tot 5 werkdagen.
+- **Planning**: wordt bevestigd na controle van formaat, materiaal, afwerking en actuele capaciteit.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: volgens tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de regio Gent.
-
----
-
-## Toepassingen van 3D printen in Ledeberg
-
-- Prototypes voor productontwikkeling
-- Reserveonderdelen voor machines
-- Decoratieve objecten en kunst
-- Gepersonaliseerde gadgets
-- Educatieve modellen voor scholen
-- Requisieten voor evenementen
+- **Afhaling**: op afspraak in de studio in Herzele.
 
 ---
 
@@ -118,48 +97,36 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Offerte voor 3D printen in Ledeberg
 
-Benieuwd hoe **3D printen in Ledeberg** jouw idee versterkt? Vraag een **gratis offerte** aan.
-
-- **Betaalbaar**: duidelijke tarieven voor **3D printen in Ledeberg**
-- **Snel**: korte doorlooptijden bij **3D printen in Ledeberg**
-- **Lokaal**: directe service in je eigen regio
-
-➡️ [Vraag een offerte aan](/contact) en ontdek de mogelijkheden van **3D printen in Ledeberg**.
+Stuur je model en een korte uitleg via [contact](/contact). Voor zichtwerk kun je ook de gewenste kleur, bedrukking of nabewerking vermelden. Je ontvangt daarna een voorstel voor productie en levering in Ledeberg.
 
 <!-- LOCAL_ENRICH_START -->
-## Leverdetails rond Ledeberg
+## 3D print service Ledeberg voor winkels, makers en bewoners
 
-- Dekking: Ledeberg; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Ledeberg.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Voor **3D printen in Ledeberg** ligt de nadruk vaak op compact maatwerk: een houder voor een toonbank, een vervangstuk voor thuis, een presentatiemodel of een kleine reeks voor een lokale zaak. We produceren vanuit Herzele en verzenden naar Ledeberg en de omliggende Gentse wijken.
 
-## Gerelateerde buurtpagina's
-- [Hoofdpagina: 3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
+- Branded tafelhouders, prijskaartjeshouders en kleine displays.
+- Clips, knoppen, adapters en andere onderdelen die niet meer verkrijgbaar zijn.
+- Maquettes en studiemodellen voor ontwerp- of renovatieprojecten.
+- Organizers, kabelhouders en oplossingen voor beperkte ruimtes.
+
+Een foto is nuttig om te beoordelen of een bestaand onderdeel kan worden nagemaakt. Voor de productie blijft een correct model nodig. Dat kan via maatvoering, [3D modelleren](/3d-modelleren) of, wanneer de vorm daarvoor geschikt is, [3D scannen](/3d-scannen).
 
 ## Lokale punten in Ledeberg
-- Centrum van Ledeberg
-- Lokale bedrijvenzone in Ledeberg
-- Sporthal in Ledeberg
 
+- Ledebergplein en de wekelijkse markt.
+- Hundelgemsesteenweg en Brusselsesteenweg.
+- De Bellevuewijk en de verbinding met Gent-Sint-Pieters.
+- De grens met Gentbrugge, Moscou en Merelbeke-Melle.
 
-## Klantenspotlight
-- Lokale teams in Ledeberg: kleine reeksen met vaste settings rond Ledeberg.
-- Vaak gevraagd: 3D print service ledeberg; we adviseren materiaal en afwerking.
-- Afhalen in Herzele; verzending naar Ledeberg en Ledeberg.
+## Gerelateerde buurtpagina's
 
-## Locaties die we bedienen nabij Ledeberg
-- Centrum van Ledeberg
-- Lokale bedrijvenzone in Ledeberg
-- Sporthal in Ledeberg
+- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
+- [3D printen in Gentbrugge](/3d-printen-in-gentbrugge)
+- [3D printen in Zwijnaarde](/3d-printen-in-zwijnaarde)
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
 
-## Sectorfocus nabij Ledeberg
-- KMO's en makers in Ledeberg: pasmallen en behuizingen.
-- Retail/events rond Ledeberg: displays en props.
-- Onderwijs/labs in Ledeberg: lesklare prints.
+## Bronnen en lokale context
 
-## Typische aanvragen rond Ledeberg
-- 3D print service ledeberg
-- rapid prototyping ledeberg
-- 3D printing bedrijf ledeberg
+- [Stad Gent: plannen en projecten in Ledeberg](https://stad.gent/nl/plannen-en-projecten)
+- [Stad Gent](https://stad.gent/nl)
 <!-- LOCAL_ENRICH_END -->

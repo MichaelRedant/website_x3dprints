@@ -22,7 +22,9 @@ export default function AutoCarousel({
   itemClass = "aspect-[4/3] sm:aspect-[3/2] lg:aspect-[16/10]",
   visibleCount = 3,
   newCount = 0,
+  newItemSources,
   premium = false,
+  advanceByPage = false,
 }: {
   items: Photo[]
   className?: string
@@ -33,8 +35,12 @@ export default function AutoCarousel({
   visibleCount?: number
   /** Markeer eerste N items als nieuw */
   newCount?: number
+  /** Markeer expliciete afbeeldingen als nieuw, onafhankelijk van hun positie */
+  newItemSources?: string[]
   /** Gebruik extra motion en top progress-animatie */
   premium?: boolean
+  /** Laat vorige/volgende per zichtbare set bewegen in plaats van per losse afbeelding */
+  advanceByPage?: boolean
 }) {
   const { locale } = useLocale()
   const prefersReducedMotion = useReducedMotion()
@@ -43,8 +49,8 @@ export default function AutoCarousel({
         ariaLabel: "Portfolio carousel",
         zoomLabel: (alt: string) => `Enlarge image: ${alt}`,
         newLabel: "New",
-        prevLabel: "Previous image",
-        nextLabel: "Next image",
+        prevLabel: advanceByPage ? "Previous set of images" : "Previous image",
+        nextLabel: advanceByPage ? "Next set of images" : "Next image",
         closeLabel: "Close image viewer",
         positionLabel: (current: number, total: number) => `${current} / ${total}`,
         jumpLabel: (target: number, total: number) => `Jump to image ${target} of ${total}`,
@@ -53,8 +59,8 @@ export default function AutoCarousel({
         ariaLabel: "Portfolio carrousel",
         zoomLabel: (alt: string) => `Vergroot afbeelding: ${alt}`,
         newLabel: "Nieuw",
-        prevLabel: "Vorige afbeelding",
-        nextLabel: "Volgende afbeelding",
+        prevLabel: advanceByPage ? "Vorige set afbeeldingen" : "Vorige afbeelding",
+        nextLabel: advanceByPage ? "Volgende set afbeeldingen" : "Volgende afbeelding",
         closeLabel: "Sluit afbeeldingsweergave",
         positionLabel: (current: number, total: number) => `${current} / ${total}`,
         jumpLabel: (target: number, total: number) => `Ga naar afbeelding ${target} van ${total}`,
@@ -63,18 +69,20 @@ export default function AutoCarousel({
   const [index, setIndex] = useState(0)
   const [mounted, setMounted] = useState(false)
   const preloaded = useRef<Set<string>>(new Set())
+  const explicitNewItemSources = useMemo(() => new Set(newItemSources ?? []), [newItemSources])
 
   useEffect(() => setMounted(true), [])
 
   const goTo = useCallback(
     (direction: 1 | -1) => {
       if (items.length <= 1) return
+      const step = advanceByPage ? Math.max(1, Math.min(visibleCount, items.length)) : 1
       setIndex((current) => {
-        const nextIndex = (current + direction + items.length) % items.length
+        const nextIndex = (current + direction * step + items.length) % items.length
         return nextIndex
       })
     },
-    [items.length],
+    [advanceByPage, items.length, visibleCount],
   )
 
   useEffect(() => {
@@ -82,7 +90,7 @@ export default function AutoCarousel({
     if (active) return
     const id = setInterval(() => goTo(1), speed * 1000)
     return () => clearInterval(id)
-  }, [active, items.length, speed, goTo])
+  }, [active, index, items.length, speed, goTo])
 
   useEffect(() => {
     if (items.length === 0) return
@@ -258,7 +266,7 @@ export default function AutoCarousel({
                         }
                   }
                 >
-                  {newCount > 0 && itemIndex < newCount && (
+                  {(newItemSources ? explicitNewItemSources.has(photo.src) : newCount > 0 && itemIndex < newCount) && (
                     <span className="absolute left-3 top-3 z-10 inline-flex items-center rounded-full bg-indigo-600/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white shadow-sm ring-1 ring-white/40">
                       {copy.newLabel}
                     </span>

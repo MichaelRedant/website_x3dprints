@@ -97,9 +97,46 @@ const toTitleCase = (value: string) =>
 
 const photoLabelOverrides: Record<string, string> = {
   "batman-on-printbed.webp": "Batman on printbed",
+  "black-batman-miniature-on-printbed.webp": "Black Batman miniature on printbed",
+  "black-fantasy-alien-jester-miniatures.webp": "Black fantasy alien and jester miniatures",
+  "brown-bear-rider-sculpture-on-printbed.webp": "Bear rider sculpture on printbed",
+  "custom-electrical-lamp-adapter-repair-part.webp": "Custom electrical lamp adapter repair part",
+  "custom-family-portrait-busts-and-figures.webp": "Custom portrait busts and figures",
+  "custom-horse-memorial-trophy-kilowatt.webp": "Custom horse memorial trophy Kilowatt",
   "custom-led-spot-armatuur.webp": "Custom LED-spot armatuur",
+  "gold-bicycle-race-trophy-zilveren-helmen.webp": "Gold bicycle trophy Zilveren Helmen",
+  "large-white-dog-head-sculpture.webp": "Large white dog head sculpture",
   "octopus-servetringen-op-maat.webp": "Octopus servetringen op maat",
+  "octopus-servetringen-op-maat-closeup.webp": "Octopus servetringen op maat close-up",
+  "pink-smiley-planter-pot-with-arms.webp": "Pink smiley planter pot with arms",
+  "ribbed-white-vase-with-pampas-grass.webp": "Ribbed white vase with pampas grass",
+  "romantic-heart-couple-sculpture-guy-maggy.webp": "Romantic heart sculpture Guy and Maggy",
+  "white-barn-owl-sculpture-closeup.webp": "White barn owl sculpture",
+  "white-hand-ring-holder-display-set.webp": "White hand ring holder display set",
+  "white-mannequin-jewelry-display-bust.webp": "White mannequin jewelry display bust",
 }
+
+const RECENT_PORTFOLIO_FILES = [
+  "romantic-heart-couple-sculpture-guy-maggy.webp",
+  "gold-bicycle-race-trophy-zilveren-helmen.webp",
+  "ribbed-white-vase-with-pampas-grass.webp",
+  "large-white-dog-head-sculpture.webp",
+  "brown-bear-rider-sculpture-on-printbed.webp",
+  "custom-horse-memorial-trophy-kilowatt.webp",
+  "custom-family-portrait-busts-and-figures.webp",
+  "white-mannequin-jewelry-display-bust.webp",
+  "white-hand-ring-holder-display-set.webp",
+  "pink-smiley-planter-pot-with-arms.webp",
+  "black-batman-miniature-on-printbed.webp",
+  "white-barn-owl-sculpture-closeup.webp",
+  "octopus-servetringen-op-maat-closeup.webp",
+  "custom-electrical-lamp-adapter-repair-part.webp",
+  "black-fantasy-alien-jester-miniatures.webp",
+] as const
+
+const recentPortfolioOrder = new Map<string, number>(
+  RECENT_PORTFOLIO_FILES.map((file, index) => [file, index]),
+)
 
 const photoEntries = readdirSync(portfolioDir)
   .filter((file) => /\.webp$/i.test(file))
@@ -107,7 +144,18 @@ const photoEntries = readdirSync(portfolioDir)
     const stats = statSync(path.join(portfolioDir, file))
     return { file, mtime: stats.mtimeMs }
   })
-  .sort((a, b) => b.mtime - a.mtime)
+  .sort((a, b) => {
+    const aPriority = recentPortfolioOrder.get(a.file)
+    const bPriority = recentPortfolioOrder.get(b.file)
+
+    if (aPriority !== undefined || bPriority !== undefined) {
+      if (aPriority === undefined) return 1
+      if (bPriority === undefined) return -1
+      return aPriority - bPriority
+    }
+
+    return b.mtime - a.mtime
+  })
   .map((entry) => {
     const baseLabel = entry.file
       .replace(/\.[^.]+$/, "")
@@ -756,7 +804,11 @@ export default function Page(props: unknown) {
             <p className="mt-2 text-slate-600">{copy.gallery.body}</p>
           </Reveal>
           <Reveal className="mt-10">
-            <PortfolioGallery items={photos} locale={normalizedLocale} newCount={8} />
+            <PortfolioGallery
+              items={photos}
+              locale={normalizedLocale}
+              newCount={RECENT_PORTFOLIO_FILES.length}
+            />
           </Reveal>
         </div>
       </section>

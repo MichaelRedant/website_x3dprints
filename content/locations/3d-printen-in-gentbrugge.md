@@ -1,165 +1,106 @@
-# 3D Printen in Gentbrugge: Van Digitaal Ontwerp tot Lokaal Resultaat
+# 3D printen in Gentbrugge voor prototypes en maatwerk
 
-Heeft u een innovatief idee dat wacht op realisatie? Zoekt u een snelle en betrouwbare partner voor **3D printen in Gentbrugge**? X3DPrints, gevestigd in het nabijgelegen Borsbeke, is uw lokale specialist voor het omzetten van digitale ontwerpen naar hoogwaardige, tastbare objecten.
+Een prototype, vervangstuk, maquette of kleine serie laten 3D printen in Gentbrugge? X3DPrints produceert vanuit Herzele en levert in Gentbrugge, Ledeberg en de ruimere Gentse regio.
 
-Wij bieden een complete **3D print service** voor creatieve ondernemers, studenten, kmo's en hobbyisten in de regio Gentbrugge. Of het nu gaat om een enkel prototype of een kleine serie, wij garanderen een persoonlijke aanpak, heldere prijzen en een snelle levering. Voor professioneel **3D printen in Gentbrugge** bent u bij ons aan het juiste adres.
-
----
-
-## Waarom kiezen voor X3DPrints in de regio Gentbrugge?
-
--   ⚡ **Razendsnelle Service**: Uw onderdelen worden doorgaans binnen 2 tot 5 werkdagen geproduceerd.
--   🎯 **Hoge Precisie**: Perfect voor gedetailleerde prototypes en functioneel inzetbare onderdelen.
--   💶 **Transparante Kosten**: U ontvangt een duidelijke offerte zonder onverwachte kosten.
--   🤝 **Persoonlijk Advies**: We denken met u mee over materiaal en de beste aanpak voor uw project.
-
-**Lokale troef:** Gentbrugge, de groene long van Gent, combineert een rustige, residentiële sfeer met een dynamische groei. Denk aan de creatieve energie rond de Gentbrugse Meersen of de innovatieve bedrijvigheid nabij de E17. **3D printen in Gentbrugge** sluit perfect aan bij deze unieke mix: het brengt duurzame, lokale productie binnen handbereik van ontwerpers, ingenieurs en makers die hier wonen en werken.
+Je kunt een STL, STEP of 3MF aanleveren. Heb je nog geen printbaar bestand, dan bekijken we of [3D modelleren](/3d-modelleren) of [3D scannen](/3d-scannen) nodig is. Je ontvangt voor de start een offerte met materiaal, afwerking en een haalbare planning.
 
 ---
 
+## Wat kun je laten 3D printen in Gentbrugge?
 
+- Functionele beugels, houders en kabelgeleiders.
+- Behuizingen en covers voor elektronica of sensoren.
+- Maquettes en presentatiemodellen voor ontwerp- of renovatieprojecten.
+- Displays, tafelhouders en gepersonaliseerde objecten voor bedrijven en horeca.
+- Pasmallen, boormallen en eenvoudige werkplaatshulpen.
+- Vervangstukken voor kunststof onderdelen die niet meer verkrijgbaar zijn.
 
-## Lokale focus in Gentbrugge
-
-Zoek je 3D printen in Gentbrugge? We denken mee over passing, sterkte en look zodat je onderdeel meteen werkt.
-
-- Functionele beugels, houders en kabelgeleiders voor installaties.
-- Jigs, montagehulpen en boormallen voor snelle assemblage.
-- Behuizingen en covers voor elektronica, sensoren of prototypes.
-
-## Materialen voor Elk Project
-
-| Materiaal | Belangrijkste Eigenschap     | Perfect voor                                             |
-| :---------- | :-------------------------- | :------------------------------------------------------- |
-| **PLA Matte** | Stijf, zeer gedetailleerd     | Visuele prototypes, maquettes, decoratieve objecten      |
-| **PETG**    | Sterk, chemisch bestendig   | Functionele onderdelen, mechanische stukken, kleine en grotere series |
-| **TPU**     | Flexibel en schokabsorberend | Beschermhoezen, grips, afdichtingen, draagbare items     |
-
-**Tip:** Voor een architecturale maquette of een presentatiemodel volstaat **PLA**. Heeft u een robuust onderdeel nodig dat tegen een stootje kan? Kies dan voor **PETG**. Voor flexibele toepassingen, zoals een demper of een gepersonaliseerde grip, is **TPU** de ideale oplossing.
+Eén exemplaar is mogelijk. Voor kleine series kunnen we na een goedgekeurd teststuk dezelfde relevante productie-instellingen opnieuw gebruiken.
 
 ---
 
-## Voor wie is 3D printen in Gentbrugge een uitkomst?
+## Materialen voor een project in Gentbrugge
 
-### 📐 Architecten & Ontwerpers
+| Materiaal | Eigenschap | Typische toepassing |
+| :-- | :-- | :-- |
+| **PLA Matte** | detailrijk en netjes voor zichtwerk | maquettes, displays, decor en presentatiemodellen |
+| **PETG** | taai en beter bestand tegen vocht | houders, montageonderdelen en beschermkappen |
+| **TPU** | flexibel en schokdempend | grips, doppen, dempers en beschermranden |
+| **ASA** | beter bestand tegen weer en uv | geselecteerde buitentoepassingen na beoordeling |
 
-Visualiseer uw ontwerpen met gedetailleerde maquettes en schaalmodellen. Een snelle en betaalbare manier om projecten aan klanten te presenteren.
-
-### 🎓 Studenten & Academici
-
-Bent u bezig met een eindwerk of onderzoeksproject? Met **3D printen in Gentbrugge** kunt u uw concepten snel en efficiënt omzetten in fysieke modellen voor testen en validatie.
-
-### 🏭 Kmo's & Zelfstandigen
-
-Produceer functionele prototypes, op maat gemaakte mallen of vervangonderdelen zonder de hoge kosten van traditionele productiemethoden. Onze **rapid prototyping service in Gentbrugge** versnelt uw innovatiecyclus aanzienlijk.
-
-### 🎨 Creatievelingen & Hobbyisten
-
-Maak unieke kunstobjecten, gepersonaliseerde geschenken of onderdelen voor uw doe-het-zelfprojecten. Uw creativiteit is de enige limiet.
-
-### Gentbrugge en de link met Gent
-
-- [Stad Gent](https://stad.gent) investeert in duurzame maakinitiatieven.
-- X3DPrints levert 3D prints in Gentbrugge en alle Gentse buurten.
+De toepassing bepaalt de materiaalkeuze. Voor een machineonderdeel of montagepunt vragen we naar belasting, warmte, vocht en kritieke passing. Voor een beursmodel of display zijn kleur, zichtzijde en afwerking belangrijker.
 
 ---
 
-## Rapid Prototyping in Gentbrugge
+## Rapid prototyping Gentbrugge
 
-Met onze **rapid prototyping service** in de regio Gentbrugge kunt u uw ontwerpproces aanzienlijk versnellen. Ontvang binnen enkele dagen een fysiek model om de pasvorm, functionaliteit en esthetiek te controleren. Dit stelt u in staat om snel aanpassingen door te voeren en uw product sneller op de markt te brengen. Dit is de kern van efficiënt **3D printen in Gentbrugge**.
+Met rapid prototyping kun je een ontwerp eerst fysiek beoordelen voordat je een definitieve versie of kleine reeks bestelt. Een eenvoudig pasmodel maakt problemen met maatvoering, bereikbaarheid van schroeven of kabeldoorvoer vaak snel zichtbaar.
 
----
+Voor een gerichte offerte ontvangen we graag:
 
-## Hoe werkt het?
-
-1.  **Stuur uw ontwerp**: Lever uw **.STL- of .STEP-bestand** aan via onze [contactpagina](/contact).
-2.  **Specificeer uw wensen**: Geef het gewenste materiaal (PLA, PETG, TPU), de kleur en het aantal stuks door.
-3.  **Ontvang uw offerte**: Binnen 24 uur krijgt u van ons een vrijblijvende offerte met een duidelijke prijs en levertijd.
-
----
-
-## Levering & Afhaling
-
--   **Standaardproductie**: 2–5 werkdagen.
--   **Spoedlevering**: Mogelijk in overleg voor dringende projecten.
--   **Verzending**: Veilige en snelle verzending volgens de tarieven op onze [prijzenpagina](/pricing).
--   **Afhalen**: Ophalen in Borsbeke is mogelijk op afspraak.
+1. Het 3D bestand of duidelijke foto's en maatvoering.
+2. De functie en gewenste aantallen.
+3. Kritieke maten of montagevlakken.
+4. Het gewenste materiaal of de omstandigheden waarin het onderdeel wordt gebruikt.
+5. Een deadline als het project aan een presentatie, beurs of testmoment is gekoppeld.
 
 ---
 
-## Populaire Toepassingen
+## Levering naar Gentbrugge
 
--   ⚙️ **Functionele prototypes** voor productontwikkeling.
--   🏠 **Architecturale maquettes** voor bouwprojecten.
--   🔧 **Vervangonderdelen** voor machines en apparaten.
--   🎁 **Gepersonaliseerde merchandise** en relatiegeschenken.
--   💡 **Educatieve modellen** voor scholen en workshops.
+De productie gebeurt in de studio in Herzele. We verzenden naar Gentbrugge volgens de planning in de offerte; afhalen in Herzele kan op afspraak. De doorlooptijd hangt af van formaat, materiaal, aantallen en eventuele nabewerking. Een vaste deadline moet daarom bij de eerste aanvraag worden vermeld.
+
+Bekijk de [prijzenpagina](/pricing) voor richtprijzen of het [portfolio](/portfolio) voor voorbeelden van functionele en visuele prints.
 
 ---
-## Veelgestelde vragen over 3D printen in gentbrugge
 
-**Kunnen jullie kleine en grotere series leveren in gentbrugge?**
-Ja. We maken zowel kleine als grotere series met consistente passing en duidelijke kwaliteitsspecificaties.
+## Veelgestelde vragen over 3D printen in Gentbrugge
 
-**Welk materiaal past het best bij een project in gentbrugge?**
-PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
+**Is X3DPrints gevestigd in Gentbrugge?**
+Nee. We produceren in Herzele en verzenden naar Gentbrugge en omgeving. Afhalen in de studio kan op afspraak.
 
-**Hoe snel is 3D printen in gentbrugge?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting gentbrugge of afhalen in Herzele.
+**Kunnen jullie een kapot onderdeel namaken?**
+Vaak wel, maar eerst beoordelen we vorm, materiaal en belasting. Foto's helpen bij die eerste controle. Voor modelleren of scannen hebben we daarna maatvoering of het fysieke onderdeel nodig.
 
-## Interne links rond 3D printen in Gent
-- [3D printen in Afsnee](/3d-printen-in-afsnee)
-- [3D printen in Desteldonk](/3d-printen-in-desteldonk)
-- [3D printen in Drongen](/3d-printen-in-drongen)
+**Hoe snel kan een 3D print in Gentbrugge worden geleverd?**
+Dat hangt af van het model, materiaal, aantal en de actuele planning. Je offerte bevat een concrete inschatting. Vermeld een harde deadline meteen.
+
+**Kan ik een kleine serie bestellen?**
+Ja. We adviseren meestal eerst één testexemplaar wanneer passing of afwerking belangrijk is.
+
+---
+
+## Interne links rond Gentbrugge
+
+- [Hoofdpagina: 3D printen in Gent](/3d-printen-in-gent)
 - [3D printen in Ledeberg](/3d-printen-in-ledeberg)
-- [3D printen in Mariakerke](/3d-printen-in-mariakerke)
-- [3D printen in Mendonk](/3d-printen-in-mendonk)
-- [3D printen in Oostakker](/3d-printen-in-oostakker)
 - [3D printen in Sint-Amandsberg](/3d-printen-in-sint-amandsberg)
-- [3D printen in Sint-Kruis-Winkel](/3d-printen-in-sint-kruis-winkel)
-- [3D printen in Sint-Denijs-Westrem](/3d-printen-in-sint-denijs-westrem)
-- [3D printen in Wondelgem](/3d-printen-in-wondelgem)
-- [3D printen in Zwijnaarde](/3d-printen-in-zwijnaarde)
----
-
-## Vraag Vandaag Nog Uw Offerte Aan
-
-Klaar om uw project te lanceren? Ontdek zelf de voordelen van lokaal **3D printen in Gentbrugge**. Vraag nu uw gratis offerte aan en laat ons u helpen uw ideeën te realiseren.
+- [3D printen in Merelbeke](/3d-printen-in-merelbeke)
+- [Alle lokale 3D printpagina's](/locaties)
 
 <!-- LOCAL_ENRICH_START -->
-## Leverdetails rond Gentbrugge
+## 3D print service Gentbrugge voor Ledeberg en de Arsenaalsite
 
-- Dekking: Gentbrugge, Gentbrugge centrum, Ledeberg, Oostakker/Gentbrugge grens, Scheldekaai, Afhalen Herzele; levering vanuit Herzele, afhalen kan.
-- Typische opdrachten: prototypes, behuizingen en beugels voor teams in Gentbrugge.
-- Bestanden: STL/STEP met info over passing, afwerking en aantallen versnellen de offerte.
-- Doorlooptijd: meestal enkele werkdagen; spoed mogelijk in overleg.
+Gentbrugge combineert woonwijken, creatieve herontwikkeling en een goede aansluiting op E17, R4 en de rest van Gent. De lokale vraag loopt daardoor van een praktisch reserveonderdeel tot een presentatiemodel of compacte reeks voor een bedrijf.
 
-## Gerelateerde buurtpagina's
-- [Buurpagina: 3D printen in Ledeberg](/3d-printen-in-ledeberg)
+- PETG-behuizingen en montageclips voor elektronica of sensoren.
+- PLA-maquettes en pitchmodellen voor ontwerp- en renovatieprojecten.
+- Displays en tafelhouders voor horeca, winkels of events.
+- Pasmallen en werkplaatshulpen voor technische teams.
 
 ## Lokale punten in Gentbrugge
-- Centrum van Gentbrugge
-- Lokale bedrijvenzone in Gentbrugge
-- Sporthal in Gentbrugge
 
+- De Arsenaalsite en de omgeving van Gentbrugge station.
+- De Gentbrugse Meersen.
+- Brusselsesteenweg en de verbinding met Ledeberg.
+- De Schelde, E17 en R4 rond Gentbrugge.
 
-## Klantenspotlight
-- Prototyping voor KMO's in Gentbrugge/Ledeberg: kleine reeksen met vaste settings rond Gentbrugge centrum.
-- Vaak gevraagd: 3D print service gentbrugge; we adviseren materiaal en afwerking.
-- Afhalen in Herzele; verzending naar Gentbrugge en Gentbrugge centrum.
+## Bronnen en lokale context
 
-## Locaties die we bedienen nabij Gentbrugge
-- Centrum van Gentbrugge
-- Lokale bedrijvenzone in Gentbrugge
-- Sporthal in Gentbrugge
+- [Stad Gent: plannen en projecten in Gentbrugge](https://stad.gent/nl/plannen-en-projecten)
+- [Stad Gent](https://stad.gent/nl)
 
-## Sectorfocus nabij Gentbrugge
-- Prototyping voor KMO's in Gentbrugge/Ledeberg
-- Retail/props voor Gentbrugse wijken (Gentbrugge)
-- Tooling voor bedrijven langs R4/Schelde (Gentbrugge)
+## Offerte voor 3D printen in Gentbrugge
 
-## Typische aanvragen rond Gentbrugge
-- 3D print service gentbrugge
-- rapid prototyping gentbrugge
-- 3D printing bedrijf gentbrugge
+Stuur je bestand, aantallen en toepassing via [contact](/contact). Zonder 3D bestand kun je foto's en maten toevoegen voor een eerste haalbaarheidscontrole.
 <!-- LOCAL_ENRICH_END -->

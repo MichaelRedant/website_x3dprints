@@ -57,6 +57,7 @@ export default function PortfolioGallery({ items, locale = "nl", newCount = 0 }:
         items={items}
         speed={14}
         visibleCount={4}
+        advanceByPage
         newCount={newCount}
         itemClass="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]"
       />

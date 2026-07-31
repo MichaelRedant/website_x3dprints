@@ -35,7 +35,7 @@ Heb je **3D printen in Ekeren** nodig voor prototypes, tools of maquettes? X3DPr
 
 ## Levering
 
-Dagelijkse verzending naar Ekeren. Spoedproject? Geef je deadline mee; we plannen accordingly. Afhalen in Herzele kan na afspraak.
+Verzending naar Ekeren gebeurt volgens de afgesproken planning. Geef een deadline meteen mee; we bevestigen daarna wat binnen de beschikbare productietijd haalbaar is. Afhalen in Herzele kan na afspraak.
 
 ---
 
