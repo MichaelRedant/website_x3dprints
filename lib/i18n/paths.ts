@@ -92,6 +92,7 @@ const EN_BLOG_SLUGS = new Set<string>([
   "use-case-dinsdag-tabletop",
   "tool-organizers-3d-printing",
   "gridfinity-modular-storage-system",
+  "flushpoint-plafondsokkel-spuitplafond",
   "3d-print-assemblage-gids",
   "3d-print-kosten-besparen",
   "3d-print-materiaal-voor-zichtwerk",

@@ -2,6 +2,7 @@ export type GoogleReviewEntry = {
   id: string
   author: string
   authorMeta: string
+  sourceUrl?: string
   relativeDate: {
     nl: string
     en: string
@@ -14,12 +15,40 @@ export type GoogleReviewEntry = {
 
 export const GOOGLE_REVIEW_SUMMARY = {
   ratingValue: 5,
-  reviewCount: 4,
+  reviewCount: 6,
   viewUrl: "https://www.google.com/maps/search/?api=1&query=X3DPrints+Herzele",
   leaveUrl: "https://g.page/r/CSpxVPgHhTzZEAE/review",
 } as const
 
 export const GOOGLE_REVIEW_ENTRIES: GoogleReviewEntry[] = [
+  {
+    id: "robin-geets",
+    author: "Robin Geets",
+    authorMeta: "Local Guide · 42 reviews · 25 foto's",
+    sourceUrl: "https://www.google.com/maps/contrib/117977116725604115687/reviews?hl=nl",
+    relativeDate: {
+      nl: "3 weken geleden",
+      en: "3 weeks ago",
+    },
+    quote: {
+      nl: "Het contact met Michael was zeer fijn. Hij nam dit project ter harte met de nodige empathie voor ons verlies. Tijdens ons mailverkeer heb ik mij steeds geholpen & gesteund gevoeld. Dit is een totaalservice.",
+      en: "Communication with Michael was excellent. He approached this memorial project with genuine empathy for our loss, and I felt supported throughout our email exchange. This is a complete service.",
+    },
+  },
+  {
+    id: "louis-philippe",
+    author: "Louis-Philippe",
+    authorMeta: "1 review",
+    sourceUrl: "https://www.google.com/maps/contrib/103749009985284263773/reviews?hl=nl",
+    relativeDate: {
+      nl: "2 maanden geleden",
+      en: "2 months ago",
+    },
+    quote: {
+      nl: "Ik heb een hoornaarval laten printen en past mooi op mijn chocopot. Staat in de tuin, laat ze maar komen de hoornaars!",
+      en: "I had a hornet trap printed and it fits perfectly on my chocolate spread jar. It is now in the garden—bring on the hornets!",
+    },
+  },
   {
     id: "david-opstaele",
     author: "David Opstaele",

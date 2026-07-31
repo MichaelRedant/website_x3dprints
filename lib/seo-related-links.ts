@@ -128,6 +128,7 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
         { label: "Portfolio", href: "/portfolio" },
         { label: "3D scanning service", href: "/3d-scannen" },
         { label: "Segmenten & cases", href: "/segments" },
+        { label: "FlushPoint plafondcase", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
         ...(SHOP_INDEXABLE ? [{ label: "Shop & voorraaditems", href: "/shop" }] : []),
         { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       ],
@@ -135,6 +136,7 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
         { label: "Portfolio", href: "/portfolio" },
         { label: "3D scanning service", href: "/3d-scannen" },
         { label: "Segments & cases", href: "/segments" },
+        { label: "FlushPoint ceiling case", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
         ...(SHOP_INDEXABLE ? [{ label: "Shop & stocked items", href: "/shop" }] : []),
         { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       ],
@@ -185,12 +187,14 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
       nl: [
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segmenten & cases", href: "/segments" },
+        { label: "FlushPoint plafondcase", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
         ...(SHOP_INDEXABLE ? [{ label: "Shop & voorraaditems", href: "/shop" }] : []),
         { label: "3D modellen vinden", href: "/3d-modellen-vinden" },
       ],
       en: [
         { label: "Portfolio", href: "/portfolio" },
         { label: "Segments & cases", href: "/segments" },
+        { label: "FlushPoint ceiling case", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
         ...(SHOP_INDEXABLE ? [{ label: "Shop & stocked items", href: "/shop" }] : []),
         { label: "Find 3D models", href: "/3d-modellen-vinden" },
       ],
@@ -213,11 +217,13 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
       nl: [
         { label: "3D print service", href: "/services" },
         { label: "Portfolio", href: "/portfolio" },
+        { label: "FlushPoint PETG-case", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
         { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       ],
       en: [
         { label: "3D print service", href: "/services" },
         { label: "Portfolio", href: "/portfolio" },
+        { label: "FlushPoint PETG case", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
         { label: "Material Suggestion Tool", href: "/materials#material-suggestion-tool" },
       ],
     },
@@ -296,12 +302,14 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
     secondary: {
       nl: [
         { label: "Segmenten & cases", href: "/segments" },
+        { label: "FlushPoint plafondcase", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
         ...(SHOP_INDEXABLE ? [{ label: "Shop & voorraaditems", href: "/shop" }] : []),
         { label: "3D viewer", href: "/viewer" },
         { label: "Offerte aanvragen", href: "/contact" },
       ],
       en: [
         { label: "Segments & cases", href: "/segments" },
+        { label: "FlushPoint ceiling case", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
         ...(SHOP_INDEXABLE ? [{ label: "Shop & stocked items", href: "/shop" }] : []),
         { label: "3D viewer", href: "/viewer" },
         { label: "Request a quote", href: "/contact" },
@@ -324,12 +332,14 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
     secondary: {
       nl: [
         { label: "Portfolio", href: "/portfolio" },
+        { label: "FlushPoint plafondcase", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
         { label: "Prijs per stuk gids", href: "/blog/3d-print-prijs-per-stuk" },
         { label: "Ontwerp checklist", href: "/blog/3d-print-ontwerp-checklist" },
         { label: "Prijzen & calculator", href: "/pricing" },
       ],
       en: [
         { label: "Portfolio", href: "/portfolio" },
+        { label: "FlushPoint ceiling case", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
         { label: "3D printing cost guide", href: "/blog/hoeveel-kost-3d-printen" },
         { label: "Design for 3D printing", href: "/blog/ontwerp-3d-printbaar-model" },
         { label: "Pricing and calculator", href: "/pricing" },
@@ -353,11 +363,13 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
       nl: [
         { label: "3D print service", href: "/services" },
         { label: "Segmenten", href: "/segments" },
+        { label: "FlushPoint plafondcase", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
         { label: "Blog & kennisbank", href: "/blog" },
       ],
       en: [
         { label: "3D print service", href: "/services" },
         { label: "Segments", href: "/segments" },
+        { label: "FlushPoint ceiling case", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
         { label: "Blog and knowledge base", href: "/blog" },
       ],
     },

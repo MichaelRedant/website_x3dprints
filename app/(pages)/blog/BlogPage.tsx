@@ -73,6 +73,28 @@ const CATEGORY_SECTIONS_EN: CategorySection[] = [
 
 const TOPICS_NL: Topic[] = [
   {
+    id: "flushpoint-plafondsokkel-spuitplafond",
+    title: "FlushPoint: plafondsokkel voor een akoestisch spuitplafond",
+    date: "2026-07-31",
+    summary:
+      "Uitgelichte projectcase over 60 modulaire PETG-plafondsokkels voor hanglampen, inbouwspots en reservepunten in een naadloos akoestisch spuitplafond.",
+    highlights: [
+      "Van SketchUp-concept en testprints naar een gevalideerde serie voor een nieuwbouwwoning in Munte.",
+      "Toont hoe meergangige schroefdraad, twee sokkelvarianten en gefaseerde productie een werfprobleem oplossen.",
+      "Inclusief projectbeelden, vergelijkingstabel, FAQ en technische randvoorwaarden voor gelijkaardige toepassingen.",
+    ],
+    links: [
+      { label: "Lees de FlushPoint case", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
+      { label: "Bekijk 3D modelleren", href: "/3d-modelleren" },
+      {
+        label: "Bespreek een gelijkaardig project",
+        href: "/contact?material=petg&quote=FlushPoint%20-%20modulaire%20plafondsokkel%20voor%20een%20spuitplafond",
+      },
+    ],
+    intent: "informational",
+    category: "segments-cases",
+  },
+  {
     id: "kapot-onderdeel-laten-printen",
     title: "Kapot onderdeel laten 3D printen: praktische gids",
     date: "2026-03-01",
@@ -1382,6 +1404,28 @@ const TOPICS_NL: Topic[] = [
 ]
 
 const TOPICS_EN: Topic[] = [
+  {
+    id: "flushpoint-plafondsokkel-spuitplafond",
+    title: "FlushPoint: ceiling mount for an acoustic spray ceiling",
+    date: "2026-07-31",
+    summary:
+      "Featured project case about 60 modular PETG ceiling mounts for pendant lights, recessed spots and spare points in a seamless acoustic spray ceiling.",
+    highlights: [
+      "From the client's SketchUp concept and test prints to a validated series for a new-build home in Munte.",
+      "Shows how a multi-start thread, two base variants and phased production solved a real site constraint.",
+      "Includes project imagery, a comparison table, FAQ and technical boundaries for similar applications.",
+    ],
+    links: [
+      { label: "Read the FlushPoint case", href: "/blog/flushpoint-plafondsokkel-spuitplafond" },
+      { label: "Explore 3D modelling", href: "/3d-modelleren" },
+      {
+        label: "Discuss a similar project",
+        href: "/contact?material=petg&quote=FlushPoint%20-%20modular%20ceiling%20mount%20for%20an%20acoustic%20spray%20ceiling",
+      },
+    ],
+    intent: "informational",
+    category: "segments-cases",
+  },
   {
     id: "kapot-onderdeel-laten-printen",
     title: "Broken part replacement with 3D printing",
@@ -3046,7 +3090,7 @@ export default function BlogPage({ locale }: BlogPageProps) {
         { label: "Schema.org BlogPosting", url: "https://schema.org/BlogPosting" },
         { label: "Google docs over structured data", url: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" },
       ]
-  const lastUpdatedLabel = isEn ? "Last updated: April 12, 2026" : "Laatst bijgewerkt: 12 april 2026"
+  const lastUpdatedLabel = isEn ? "Last updated: July 31, 2026" : "Laatst bijgewerkt: 31 juli 2026"
   const topicsWithDate = topics.filter((topic): topic is Topic & { date: string } => Boolean(topic.date))
 
   const SORT_PREFERENCE: Record<TopicCategory, "featured" | "az"> = {

@@ -20,6 +20,56 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(home)/page.js"
+    ],
+    "/(pages)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/layout.js"
+    ],
+    "/(pages)/blog/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/layout.js"
+    ],
+    "/(pages)/blog/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/page.js"
+    ],
+    "/(pages)/blog/flushpoint-plafondsokkel-spuitplafond/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog/flushpoint-plafondsokkel-spuitplafond/page.js"
+    ],
+    "/en/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/layout.js"
+    ],
+    "/en/(home)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/(home)/layout.js"
+    ],
+    "/en/(home)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/(home)/page.js"
+    ],
+    "/en/(pages)/blog/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/(pages)/blog/layout.js"
+    ],
+    "/en/(pages)/blog/flushpoint-plafondsokkel-spuitplafond/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/en/(pages)/blog/flushpoint-plafondsokkel-spuitplafond/page.js"
+    ],
+    "/(pages)/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/[slug]/page.js"
     ]
   }
 }
