@@ -192,6 +192,11 @@ const mitigationTips = [
 ]
 
 const resourceLinks = [
+  {
+    label: "PLA Silk+ in de praktijk",
+    href: "/blog/vliezelse-beer-3d-beeldjes-berenfeesten",
+    description: "Bekijk hoe bronskleurige Silk+ werd gebruikt voor de Vliezelse beer en twee sokkelafwerkingen.",
+  },
   { label: "3D printen pillar", href: "/3d-printen", description: "Overzicht van technologie, workflow en materialen." },
   {
     label: "Materialenbibliotheek",

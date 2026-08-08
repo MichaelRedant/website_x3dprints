@@ -1,0 +1,7 @@
+{
+  "autodeskProduct": "Fusion360",
+  "type": "script",
+  "author": "X3DPrints",
+  "description": "Universal support-friendly outdoor doorbell/camera pan-tilt mount",
+  "supportedOS": "windows|mac"
+}

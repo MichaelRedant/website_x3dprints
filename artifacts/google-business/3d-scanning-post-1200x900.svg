@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020715"/>
+      <stop offset="0.58" stop-color="#071324"/>
+      <stop offset="1" stop-color="#17264a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#13d5ee" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#13d5ee" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#6f82a5" stroke-opacity="0.11"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <ellipse cx="870" cy="510" rx="500" ry="410" fill="url(#glow)"/>
+  <rect width="1200" height="900" fill="url(#grid)"/>
+
+  <g font-family="Bahnschrift, 'Segoe UI', sans-serif">
+    <g transform="translate(76 92)">
+      <rect y="14" width="32" height="3" rx="1.5" fill="#19d8f2"/>
+      <text x="47" y="23" fill="#20dcf7" font-size="18" font-weight="600" letter-spacing="5">NIEUW BIJ X3DPRINTS</text>
+
+      <text y="148" fill="#f7f9ff" font-size="76" font-weight="600" letter-spacing="-2">3D SCANNING</text>
+      <text y="232" fill="#cbd5e8" font-size="44" font-weight="400">Van object naar</text>
+      <text y="290" fill="#19d8f2" font-size="54" font-weight="600">3D-bestand.</text>
+    </g>
+
+    <g transform="translate(76 690)">
+      <text fill="#ffffff" font-size="24" font-weight="600" letter-spacing="1.5">SCAN + MESH VANAF €45</text>
+      <text y="48" fill="#8fa0bd" font-size="21">Onderdelen · prototypes · decor · personen</text>
+    </g>
+
+    <text x="76" y="835" fill="#f7f9ff" font-family="Bahnschrift, 'Segoe UI', sans-serif" font-size="22" font-weight="600">x3dprints.be/3d-scannen</text>
+  </g>
+
+  <rect y="895" width="1200" height="5" fill="#3156ff"/>
+  <rect x="370" y="895" width="510" height="5" fill="#16d7f3"/>
+</svg>

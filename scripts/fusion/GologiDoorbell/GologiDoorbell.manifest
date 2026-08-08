@@ -1,0 +1,11 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "script",
+  "author": "OpenAI Codex",
+  "description": {
+    "": "Printable Gologi doorbell mount based on beugel.obj"
+  },
+  "version": "1.0.0",
+  "supportedOS": "windows",
+  "editEnabled": true
+}

@@ -7,11 +7,7 @@ import FooterLocationFinder from "./FooterLocationFinder"
 import CookieSettingsButton from "./CookieSettingsButton"
 import { useLocale } from "./LocaleProvider"
 import { localizeHref } from "@/lib/i18n/paths"
-
-const socials = [
-  { href: "https://www.linkedin.com/in/michael-redant/", label: "LinkedIn", icon: "linkedin" },
-  { href: "https://www.instagram.com/x3d_prints/", label: "Instagram", icon: "instagram" },
-]
+import { SOCIAL_PROFILES } from "@/lib/social-profiles"
 
 const googleReviewLink = "https://g.page/r/CSpxVPgHhTzZEAE/review"
 
@@ -117,6 +113,30 @@ const COPY = {
 }
 
 function SocialIcon({ type, className }: { type: string; className?: string }) {
+  if (type === "pinterest") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden className={className}>
+        <path
+          fill="currentColor"
+          d="M12 2a10 10 0 0 0-3.64 19.31c-.09-1.64-.02-3.61.41-5.46l1.29-5.46s-.32-.66-.32-1.63c0-1.53.88-2.67 1.99-2.67.94 0 1.39.7 1.39 1.55 0 .94-.6 2.35-.91 3.66-.26 1.09.55 1.98 1.62 1.98 1.94 0 3.44-2.05 3.44-5.01 0-2.62-1.88-4.45-4.57-4.45-3.11 0-4.94 2.33-4.94 4.75 0 .94.36 1.95.82 2.5.09.11.1.2.08.31l-.3 1.23c-.05.2-.16.24-.37.15-1.39-.65-2.26-2.68-2.26-4.31 0-3.51 2.55-6.73 7.35-6.73 3.86 0 6.86 2.75 6.86 6.42 0 3.83-2.42 6.92-5.77 6.92-1.13 0-2.19-.59-2.55-1.28l-.69 2.64c-.25.97-.93 2.18-1.39 2.92.99.31 2.04.48 3.13.48A10 10 0 0 0 12 2Z"
+        />
+      </svg>
+    )
+  }
+  if (type === "youtube") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden className={className}>
+        <path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z" />
+      </svg>
+    )
+  }
+  if (type === "facebook") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden className={className}>
+        <path fill="currentColor" d="M24 12a12 12 0 1 0-13.88 11.85v-8.39H7.08V12h3.04V9.36c0-3 1.79-4.66 4.53-4.66 1.31 0 2.69.23 2.69.23v2.96h-1.51c-1.49 0-1.95.92-1.95 1.87V12h3.32l-.53 3.46h-2.79v8.39A12 12 0 0 0 24 12Z" />
+      </svg>
+    )
+  }
   if (type === "linkedin") {
     return (
       <svg viewBox="0 0 24 24" aria-hidden className={className}>
@@ -178,7 +198,7 @@ export default function Footer() {
             <p className="mx-auto mt-3 max-w-prose md:mx-0">{copy.brand.description}</p>
 
             <div className="mt-4 flex items-center justify-center gap-3 md:justify-start">
-              {socials.map(({ href, label, icon }) => (
+              {SOCIAL_PROFILES.map(({ href, label, icon }) => (
                 <Link
                   key={href}
                   href={href}

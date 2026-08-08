@@ -85,6 +85,11 @@ const mitigationTips = [
 ]
 
 const resourceLinks = [
+  {
+    label: "PLA Silk+ in a real project",
+    href: "/en/blog/vliezelse-beer-3d-beeldjes-berenfeesten",
+    description: "See bronze-look Silk+ used for the Vliezelse bear with two different plinth finishes.",
+  },
   { label: "3D printing pillar", href: "/en/3d-printen", description: "Workflow, materials and typical studio cases." },
   { label: "Materials library", href: "/en/materials", description: "See PLA Silk+, Matte, Marble and other visuals." },
   { label: "Material Suggestion Tool", href: "/en/materials#material-suggestion-tool", description: "Wizard to confirm your material choice." },

@@ -30,6 +30,8 @@ export default function LocaleProvider({
       typeof navigator !== "undefined" ? navigator.language ?? navigator.languages?.[0] : null
 
     if (fromQuery) return normalizeLocale(fromQuery)
+    // An explicit /en route must win over a previously stored language preference.
+    if (fromPath === "en") return "en"
     if (fromStorage) return normalizeLocale(fromStorage)
     if (fromPath) return normalizeLocale(fromPath)
     if (fromNavigator) return fromNavigator.toLowerCase().startsWith("nl") ? "nl" : "en"

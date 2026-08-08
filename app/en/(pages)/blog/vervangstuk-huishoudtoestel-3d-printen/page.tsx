@@ -37,10 +37,15 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    type: "article",
     title: "Appliance spare part replacement with 3D printing",
     description:
       "Practical workflow for broken clips, brackets and covers: intake, material choice and quote path.",
     url: canonical,
+    publishedTime: datePublished,
+    modifiedTime: dateModified,
+    authors: ["https://www.x3dprints.be/en/about/"],
+    tags: ["3D printed spare part", "appliance repair", "reverse engineering", "PETG"],
     images: [{ url: "/images/og-blog-en.svg", width: 1200, height: 630, alt: "Appliance spare part replacement with 3D printing" }],
     locale: "en_BE",
     siteName: "X3DPrints",

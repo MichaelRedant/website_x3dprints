@@ -37,10 +37,15 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    type: "article",
     title: "Vervangstuk voor huishoudtoestel met 3D printen",
     description:
       "Praktische aanpak voor kapotte clips, beugels en covers: intake, materiaalkeuze en snelle prijsroute.",
     url: canonical,
+    publishedTime: datePublished,
+    modifiedTime: dateModified,
+    authors: ["https://www.x3dprints.be/about/"],
+    tags: ["3D geprint vervangstuk", "huishoudtoestel reparatie", "reverse engineering", "PETG"],
     images: [{ url: "/images/og-blog-nl.svg", width: 1200, height: 630, alt: "Vervangstuk huishoudtoestel met 3D printen" }],
     locale: "nl_BE",
     siteName: "X3DPrints",

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="0.85">
+      <stop offset="0" stop-color="#020716"/>
+      <stop offset="0.54" stop-color="#071020"/>
+      <stop offset="1" stop-color="#182345"/>
+    </linearGradient>
+    <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#06cce8" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#06cce8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#4055c8" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#4055c8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#637394" stroke-opacity="0.1" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="1040" fill="url(#background)"/>
+  <ellipse cx="1000" cy="820" rx="600" ry="360" fill="url(#cyanGlow)"/>
+  <ellipse cx="1450" cy="170" rx="620" ry="480" fill="url(#blueGlow)"/>
+  <rect width="1600" height="1040" fill="url(#grid)"/>
+
+  <g font-family="Bahnschrift, 'Segoe UI', sans-serif">
+    <g transform="translate(100 152)">
+      <rect x="0" y="17" width="34" height="2" rx="1" fill="#16d7f3"/>
+      <text x="48" y="25" fill="#20dcf7" font-size="19" font-weight="600" letter-spacing="6">3D-PRINTATELIER · BELGIË</text>
+
+      <text x="0" y="160" fill="#f6f8ff" font-size="112" font-weight="600" letter-spacing="-4">X3DPrints</text>
+
+      <text x="0" y="244" fill="#c8d1e4" font-size="43" font-weight="400" letter-spacing="-1">
+        Where design meets <tspan fill="#16d7f3">dimension</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(100 840)">
+      <text x="0" y="0" fill="#8190ab" font-size="25" font-weight="400">Prototypes</text>
+      <circle cx="188" cy="-8" r="4" fill="#657590"/>
+      <text x="230" y="0" fill="#8190ab" font-size="25" font-weight="400">Onderdelen op maat</text>
+      <circle cx="510" cy="-8" r="4" fill="#657590"/>
+      <text x="552" y="0" fill="#f4f7ff" font-size="25" font-weight="600">x3dprints.be</text>
+    </g>
+  </g>
+
+  <rect y="1036" width="1600" height="4" fill="#3156ff"/>
+  <rect x="530" y="1036" width="660" height="4" fill="#14d2e8"/>
+</svg>

@@ -1,0 +1,10 @@
+{
+  "autodeskProduct": "Fusion360",
+  "type": "script",
+  "author": "X3DPrints",
+  "description": {
+    "": "Modern support-free house-number and name plaque"
+  },
+  "supportedOS": "windows|mac",
+  "editEnabled": true
+}

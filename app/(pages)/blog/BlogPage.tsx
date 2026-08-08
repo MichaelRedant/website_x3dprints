@@ -73,6 +73,28 @@ const CATEGORY_SECTIONS_EN: CategorySection[] = [
 
 const TOPICS_NL: Topic[] = [
   {
+    id: "vliezelse-beer-3d-beeldjes-berenfeesten",
+    title: "De Vliezelse beer: van foto's naar 3D-beeldjes",
+    date: "2026-07-31",
+    summary:
+      "Projectcase over hoe vier foto's via ChatGPT, Hitem3D en technische printvoorbereiding veranderden in bronskleurige 3D-beeldjes voor de Berenfeesten in Vlierzele.",
+    highlights: [
+      "ChatGPT maakte een 3D-vriendelijke referentie; Hitem3D leverde het digitale startmodel.",
+      "Beer, kind en sokkel werden in een geheel geprint in formaten van 15 en 30 cm.",
+      "PLA Silk+ brons werd gecombineerd met een marmer-look en later een donkergrijze sokkel.",
+    ],
+    links: [
+      { label: "Lees de Berenfeesten-case", href: "/blog/vliezelse-beer-3d-beeldjes-berenfeesten" },
+      { label: "Bekijk 3D modelleren", href: "/3d-modelleren" },
+      {
+        label: "Bespreek een beeldjesproject",
+        href: "/contact?material=PLA%20Silk%2B&quote=Beeld%20of%20mascotte%20omzetten%20naar%203D-beeldje",
+      },
+    ],
+    intent: "informational",
+    category: "segments-cases",
+  },
+  {
     id: "flushpoint-plafondsokkel-spuitplafond",
     title: "FlushPoint: plafondsokkel voor een akoestisch spuitplafond",
     date: "2026-07-31",
@@ -1404,6 +1426,28 @@ const TOPICS_NL: Topic[] = [
 ]
 
 const TOPICS_EN: Topic[] = [
+  {
+    id: "vliezelse-beer-3d-beeldjes-berenfeesten",
+    title: "The Vliezelse bear: from photographs to 3D figurines",
+    date: "2026-07-31",
+    summary:
+      "Project case showing how four photographs became bronze-look 3D figurines for the Berenfeesten in Vlierzele through ChatGPT, Hitem3D and technical print preparation.",
+    highlights: [
+      "ChatGPT prepared a 3D-friendly reference image; Hitem3D produced the initial digital model.",
+      "The bear, child and plinth were printed as one piece at 15 cm and 30 cm.",
+      "Bronze-look PLA Silk+ was paired with a marble-look and later a dark grey plinth.",
+    ],
+    links: [
+      { label: "Read the Berenfeesten case", href: "/blog/vliezelse-beer-3d-beeldjes-berenfeesten" },
+      { label: "Explore 3D modelling", href: "/3d-modelleren" },
+      {
+        label: "Discuss a figurine project",
+        href: "/contact?material=PLA%20Silk%2B&quote=Turn%20a%20statue%20or%20mascot%20into%20a%203D%20figurine",
+      },
+    ],
+    intent: "informational",
+    category: "segments-cases",
+  },
   {
     id: "flushpoint-plafondsokkel-spuitplafond",
     title: "FlushPoint: ceiling mount for an acoustic spray ceiling",

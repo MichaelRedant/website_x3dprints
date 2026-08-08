@@ -1,4 +1,6 @@
-﻿const BUSINESS_PHONE = process.env.NEXT_PUBLIC_BUSINESS_PHONE ?? ""
+﻿import { ORGANIZATION_SOCIAL_URLS } from "@/lib/social-profiles"
+
+const BUSINESS_PHONE = process.env.NEXT_PUBLIC_BUSINESS_PHONE ?? ""
 const BUSINESS_PRICE_RANGE = process.env.NEXT_PUBLIC_PRICE_RANGE ?? "€€"
 const BUSINESS_AUTHOR_NAME = process.env.NEXT_PUBLIC_AUTHOR_NAME ?? "Eigenaar X3DPrints"
 const BUSINESS_AUTHOR_URL = process.env.NEXT_PUBLIC_AUTHOR_URL ?? "https://www.x3dprints.be/about/"
@@ -24,10 +26,7 @@ export const SITE = {
     postalCode: "9552",
     country: "BE",
   },
-  sameAs: [
-    "https://www.linkedin.com/company/x3dprints",
-    "https://www.instagram.com/x3dprints",
-  ],
+  sameAs: ORGANIZATION_SOCIAL_URLS,
 } as const
 
 type PostalAddressInput = Partial<{

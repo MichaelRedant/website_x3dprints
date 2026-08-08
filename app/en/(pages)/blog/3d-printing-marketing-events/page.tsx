@@ -29,9 +29,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    type: "article",
     title: "3D printing for marketing & events",
     description: "Guide for marketers to use 3D printing strategically: from briefing to logistics and measurement.",
     url: canonical,
+    publishedTime: datePublished,
+    modifiedTime: dateModified,
+    authors: ["https://www.x3dprints.be/en/about/"],
+    tags: ["3D printing marketing", "event props", "awards", "merchandise", "small series"],
     images: [{ url: "/images/og-home-en.svg", width: 1200, height: 630, alt: "3D printing marketing props" }],
     locale: "en_BE",
     siteName: "X3DPrints",
@@ -217,6 +222,12 @@ export default function MarketingEventsBlogEn() {
                   </div>
                 ))}
               </div>
+              <Link
+                href="/en/blog/vliezelse-beer-3d-beeldjes-berenfeesten"
+                className="mt-5 inline-flex text-sm font-semibold text-indigo-600 underline underline-offset-4"
+              >
+                Read the Berenfeesten figurine case
+              </Link>
             </GlassCard>
           </Reveal>
         </div>

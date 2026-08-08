@@ -17,10 +17,15 @@ export const metadata: Metadata = {
     "Ontdek hoe 3D printing campagnes versterkt: props, awards en merch met korte lijnen. Inclusief planningstips, materiaaladvies en KPI-ideeën.",
   alternates: { canonical },
   openGraph: {
+    type: "article",
     title: "3D printing voor marketing & events",
     description:
       "Handleiding voor marketeers om 3D printing strategisch in te zetten: van briefing tot logistiek en metingen.",
-  url: canonical,
+    url: canonical,
+    publishedTime: datePublished,
+    modifiedTime: dateModified,
+    authors: ["https://www.x3dprints.be/about/"],
+    tags: ["3D printing marketing", "event props", "awards", "merchandise", "kleine reeksen"],
     images: [{ url: "/images/og-home-nl.svg", width: 1200, height: 630, alt: "3D printing marketing props" }],
     locale: "nl_BE",
     siteName: "X3DPrints",
@@ -79,6 +84,7 @@ const kpiIdeas = [
 
 
 const ctaLinks = [
+  { label: "Case: beeldjes voor de Berenfeesten", href: "/blog/vliezelse-beer-3d-beeldjes-berenfeesten" },
   { label: "Materialen voor eye-catchers", href: "/materials#material-suggestion-tool" },
   { label: "Segment: marketing & events", href: "/segments/3d-printing-marketing" },
   { label: "Portfolio inspiratie", href: "/portfolio" },
