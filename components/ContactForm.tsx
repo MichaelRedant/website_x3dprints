@@ -207,6 +207,7 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
       })
       // PHP honeypot verwacht "website"
       form.append("website", data.hp || "")
+      form.append("locale", locale)
       // Optioneel: human-friendly extra velden naar PHP (zelfde handler voegt ze onderaan toe)
       if (data.quantity) form.append("quantity", data.quantity)
       if (data.material) form.append("material", data.material)
