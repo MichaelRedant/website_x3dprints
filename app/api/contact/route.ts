@@ -12,6 +12,22 @@ type ContactType = "private" | "business"
 type Material = "PLA" | "PETG" | "TPU" | "PLA Plus" | "ABS/ASA" | "Nylon" | "PA-CF" | ""
 type Locale = "nl" | "en"
 
+type ContactSubmission = {
+  name: string
+  email: string
+  message: string
+  type: ContactType
+  company: string
+  vat: string
+  address: string
+  quantity: string
+  material: Material
+  quote: string
+  requestContext: string
+  source: string
+  locale: Locale
+}
+
 type CustomerConfirmationPayload = {
   name: string
   message: string
@@ -65,6 +81,81 @@ function errorMessage(e: unknown): string {
 function isDevSmtpSoftFail(msgRaw: string) {
   if (process.env.NODE_ENV === "production") return false
   return /ECONNREFUSED|ENOTFOUND|EAI_AGAIN|ETIMEDOUT|ECONNRESET|SMTP_|MAIL_|DKIM_|HOST|PORT/i.test(msgRaw)
+}
+
+function splitLeadName(name: string) {
+  const parts = name.trim().split(/\s+/).filter(Boolean)
+  if (parts.length <= 1) return { firstName: null, lastName: parts[0] || name }
+  return { firstName: parts[0], lastName: parts.slice(1).join(" ") }
+}
+
+function buildLeadDescription(payload: ContactSubmission) {
+  const lines = [
+    "Aanvraag via website",
+    "",
+    `Type: ${payload.type === "business" ? "Bedrijf" : "Particulier"}`,
+    `Bedrijf: ${payload.company || "-"}`,
+    `BTW: ${payload.vat || "-"}`,
+    `Adres: ${payload.address || "-"}`,
+    `Aantal: ${payload.quantity || "-"}`,
+    `Materiaal: ${payload.material || "-"}`,
+    `Product/context: ${payload.requestContext || "-"}`,
+    `Formulierbron: ${payload.source || "contactformulier"}`,
+    `Taal: ${payload.locale.toUpperCase()}`,
+  ]
+  if (payload.quote) lines.push("", "Indicatieve schatting:", payload.quote)
+  lines.push("", "Bericht:", payload.message)
+  return lines.join("\n")
+}
+
+async function createEspoLead(payload: ContactSubmission) {
+  const url = process.env.ESPO_LEAD_CAPTURE_URL?.trim()
+  if (!url) return false
+
+  let parsed: URL
+  try {
+    parsed = new URL(url)
+  } catch {
+    console.error("[/api/contact] invalid ESPO_LEAD_CAPTURE_URL")
+    return false
+  }
+  if (
+    parsed.protocol !== "https:" ||
+    parsed.hostname !== "crm.x3dprints.be" ||
+    !parsed.pathname.startsWith("/api/v1/LeadCapture/")
+  ) {
+    console.error("[/api/contact] unsafe ESPO_LEAD_CAPTURE_URL")
+    return false
+  }
+
+  const { firstName, lastName } = splitLeadName(payload.name)
+  const controller = new AbortController()
+  const timeout = setTimeout(() => controller.abort(), 6_000)
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        firstName,
+        lastName,
+        emailAddress: payload.email,
+        description: buildLeadDescription(payload),
+        accountName: payload.company || null,
+      }),
+      cache: "no-store",
+      signal: controller.signal,
+    })
+    if (!response.ok) {
+      console.error("[/api/contact] EspoCRM lead error:", response.status)
+      return false
+    }
+    return true
+  } catch (error) {
+    console.error("[/api/contact] EspoCRM lead unavailable:", errorMessage(error))
+    return false
+  } finally {
+    clearTimeout(timeout)
+  }
 }
 
 const VACATION_AUTOREPLY_START_UTC = Date.UTC(2026, 7, 11, 22, 0, 0)
@@ -287,7 +378,7 @@ export async function POST(req: Request) {
     const material = (String(form.get("material") || "") as Material)
     const locale = String(form.get("locale") || "").toLowerCase() === "en" ? "en" : "nl"
 
-    const payload = {
+    const payload: ContactSubmission = {
       name: clamp(String(form.get("name") || "").trim(), MAX_NAME),
       email: String(form.get("email") || "").trim(),
       message: clamp(String(form.get("message") || "").trim(), MAX_MESSAGE),
@@ -389,6 +480,9 @@ export async function POST(req: Request) {
       html,
     })
 
+    // CRM is deliberately best-effort: a temporary CRM outage must never lose an enquiry.
+    const leadCreated = await createEspoLead(payload)
+
     const confirmation = buildCustomerConfirmation(payload)
     let confirmationMessageId = ""
     try {
@@ -406,7 +500,11 @@ export async function POST(req: Request) {
     }
 
     console.log("[/api/contact] mail sent:", info.messageId, "confirmation:", confirmationMessageId || "failed")
-    return NextResponse.json({ ok: true, confirmationSent: Boolean(confirmationMessageId) })
+    return NextResponse.json({
+      ok: true,
+      confirmationSent: Boolean(confirmationMessageId),
+      leadCreated,
+    })
   } catch (e: unknown) {
     const msgRaw = errorMessage(e)
     console.error("[/api/contact] error:", msgRaw)

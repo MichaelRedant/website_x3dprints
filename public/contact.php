@@ -49,6 +49,11 @@ $name = sanitize((string)($_POST['name'] ?? ''), 80);
 $emailRaw = cleanLine((string)($_POST['email'] ?? ''));
 $email = filter_var($emailRaw, FILTER_SANITIZE_EMAIL);
 $message = clamp(trim((string)($_POST['message'] ?? '')), 3000);
+$typeRaw = strtolower(sanitize((string)($_POST['type'] ?? 'private'), 20));
+$type = $typeRaw === 'business' ? 'business' : 'private';
+$company = sanitize((string)($_POST['company'] ?? ''), 120);
+$vat = sanitize((string)($_POST['vat'] ?? ''), 40);
+$address = sanitize((string)($_POST['address'] ?? ''), 200);
 $quantity = sanitize((string)($_POST['quantity'] ?? ''), 20);
 $material = sanitize((string)($_POST['material'] ?? ''), 60);
 $quote = trim((string)($_POST['quote'] ?? ''));
@@ -84,6 +89,10 @@ $subject = encodeHeader(implode(' ', $subjectParts));
 $textLines = [
     "Naam: {$name}",
     "E-mail: {$email}",
+    "Type: {$type}",
+    "Bedrijf: " . ($company !== '' ? $company : '-'),
+    "BTW: " . ($vat !== '' ? $vat : '-'),
+    "Adres: " . ($address !== '' ? $address : '-'),
     "Aantal: " . ($quantity !== '' ? $quantity : '-'),
     "Materiaal: " . ($material !== '' ? $material : '-'),
     "Product/context: " . ($requestContext !== '' ? $requestContext : '-'),
@@ -340,8 +349,140 @@ function saveLog(array $entry): void {
     crmWriteJsonFile($file, $existing);
 }
 
+function x3dSplitLeadName(string $name): array {
+    $parts = preg_split('/\s+/u', trim($name)) ?: [];
+    $parts = array_values(array_filter($parts, static fn(string $part): bool => $part !== ''));
+    if (count($parts) <= 1) {
+        return ['', $parts[0] ?? $name];
+    }
+
+    $firstName = array_shift($parts) ?? '';
+    return [$firstName, implode(' ', $parts)];
+}
+
+function x3dLeadCaptureUrl(): string {
+    $url = trim((string)(getenv('ESPO_LEAD_CAPTURE_URL') ?: ''));
+    if ($url === '') {
+        $configFile = __DIR__ . '/contact-config.php';
+        if (is_file($configFile)) {
+            $config = require $configFile;
+            if (is_array($config)) {
+                $url = trim((string)($config['espoLeadCaptureUrl'] ?? ''));
+            }
+        }
+    }
+
+    if ($url === '' || filter_var($url, FILTER_VALIDATE_URL) === false) {
+        return '';
+    }
+
+    $parts = parse_url($url);
+    $scheme = strtolower((string)($parts['scheme'] ?? ''));
+    $host = strtolower((string)($parts['host'] ?? ''));
+    $path = (string)($parts['path'] ?? '');
+    if ($scheme !== 'https' || $host !== 'crm.x3dprints.be' || !str_starts_with($path, '/api/v1/LeadCapture/')) {
+        return '';
+    }
+
+    return $url;
+}
+
+function x3dBuildLeadDescription(array $payload): string {
+    $lines = [
+        'Aanvraag via website',
+        '',
+        'Type: ' . ($payload['type'] === 'business' ? 'Bedrijf' : 'Particulier'),
+        'Bedrijf: ' . ($payload['company'] !== '' ? $payload['company'] : '-'),
+        'BTW: ' . ($payload['vat'] !== '' ? $payload['vat'] : '-'),
+        'Adres: ' . ($payload['address'] !== '' ? $payload['address'] : '-'),
+        'Aantal: ' . ($payload['quantity'] !== '' ? $payload['quantity'] : '-'),
+        'Materiaal: ' . ($payload['material'] !== '' ? $payload['material'] : '-'),
+        'Product/context: ' . ($payload['requestContext'] !== '' ? $payload['requestContext'] : '-'),
+        'Formulierbron: ' . ($payload['source'] !== '' ? $payload['source'] : 'contactformulier'),
+        'Taal: ' . strtoupper($payload['locale']),
+    ];
+    if ($payload['quote'] !== '') {
+        $lines[] = '';
+        $lines[] = 'Indicatieve schatting:';
+        $lines[] = $payload['quote'];
+    }
+    $lines[] = '';
+    $lines[] = 'Bericht:';
+    $lines[] = $payload['message'];
+
+    return implode("\n", $lines);
+}
+
+function x3dCreateEspoLead(array $payload): bool {
+    $url = x3dLeadCaptureUrl();
+    if ($url === '') {
+        return false;
+    }
+
+    [$firstName, $lastName] = x3dSplitLeadName($payload['name']);
+    $body = json_encode([
+        'firstName' => $firstName !== '' ? $firstName : null,
+        'lastName' => $lastName,
+        'emailAddress' => $payload['email'],
+        'description' => x3dBuildLeadDescription($payload),
+        'accountName' => $payload['company'] !== '' ? $payload['company'] : null,
+    ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+    if ($body === false) {
+        return false;
+    }
+
+    if (function_exists('curl_init')) {
+        $curl = curl_init($url);
+        if ($curl === false) {
+            return false;
+        }
+        curl_setopt_array($curl, [
+            CURLOPT_POST => true,
+            CURLOPT_POSTFIELDS => $body,
+            CURLOPT_HTTPHEADER => ['Content-Type: application/json'],
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_CONNECTTIMEOUT => 3,
+            CURLOPT_TIMEOUT => 6,
+        ]);
+        curl_exec($curl);
+        $status = (int)curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        $error = curl_errno($curl);
+        curl_close($curl);
+        return $error === 0 && $status >= 200 && $status < 300;
+    }
+
+    $context = stream_context_create([
+        'http' => [
+            'method' => 'POST',
+            'header' => "Content-Type: application/json\r\n",
+            'content' => $body,
+            'timeout' => 6,
+            'ignore_errors' => true,
+        ],
+    ]);
+    @file_get_contents($url, false, $context);
+    $statusLine = $http_response_header[0] ?? '';
+    return preg_match('/\s2\d{2}\s/', $statusLine) === 1;
+}
+
 // Stuur altijd adminmail; bevestiging proberen maar admin heeft prioriteit
 $adminSent = sendTextMail($to, $subject, $textBody, $email, $fromHeader);
+$leadPayload = [
+    'name' => $name,
+    'email' => $email,
+    'message' => $message,
+    'type' => $type,
+    'company' => $company,
+    'vat' => $vat,
+    'address' => $address,
+    'quantity' => $quantity,
+    'material' => $material,
+    'quote' => $quote,
+    'requestContext' => $requestContext,
+    'source' => $source,
+    'locale' => $locale,
+];
+$leadCreated = $adminSent ? x3dCreateEspoLead($leadPayload) : false;
 $confirmSent = $email ? sendMultipartMail($email, $confirmSubject, $confirmText, $confirmHtml, $to, $fromHeader) : false;
 
 // Log de poging lokaal voor fallback/CRM
@@ -350,12 +491,17 @@ $logEntry = [
     'name' => $name,
     'email' => $email,
     'message' => $message,
+    'type' => $type,
+    'company' => $company,
+    'vat' => $vat,
+    'address' => $address,
     'quantity' => $quantity,
     'material' => $material,
     'quote' => $quote,
     'requestContext' => $requestContext,
     'source' => $source,
     'adminSent' => $adminSent,
+    'leadCreated' => $leadCreated,
     'confirmSent' => $confirmSent,
     'vacationAutoReply' => $vacationAutoReply,
     'ip' => $_SERVER['REMOTE_ADDR'] ?? '',
@@ -364,7 +510,11 @@ $logEntry = [
 saveLog($logEntry);
 
 if ($adminSent) {
-    respond(200, ['success' => true, 'confirmationSent' => $confirmSent]);
+    respond(200, [
+        'success' => true,
+        'confirmationSent' => $confirmSent,
+        'leadCreated' => $leadCreated,
+    ]);
 }
 
 respond(500, ['success' => false, 'error' => 'Versturen mislukt. Probeer later opnieuw.']);
