@@ -70,14 +70,6 @@ jobs:
       - name: Verify full production gate
         run: npm run verify
 
-      - name: Configure EspoCRM integrations
-        env:
-          ESPO_LEAD_CAPTURE_URL: ${{ secrets.ESPO_LEAD_CAPTURE_URL }}
-          ESPO_API_KEY: ${{ secrets.ESPO_API_KEY }}
-          ESPO_EMAIL_WEBHOOK_ID: ${{ secrets.ESPO_EMAIL_WEBHOOK_ID }}
-          ESPO_EMAIL_WEBHOOK_SECRET: ${{ secrets.ESPO_EMAIL_WEBHOOK_SECRET }}
-        run: node scripts/write-contact-config.mjs
-
       - name: Install lftp
         run: |
           sudo apt-get update

@@ -380,7 +380,7 @@ function x3dLeadCaptureUrl(): string {
     $scheme = strtolower((string)($parts['scheme'] ?? ''));
     $host = strtolower((string)($parts['host'] ?? ''));
     $path = (string)($parts['path'] ?? '');
-    if ($scheme !== 'https' || $host !== 'crm.x3dprints.be' || !str_starts_with($path, '/api/v1/LeadCapture/')) {
+    if ($scheme !== 'https' || $host !== 'crm.x3dprints.be' || strpos($path, '/api/v1/LeadCapture/') !== 0) {
         return '';
     }
 

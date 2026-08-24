@@ -54,7 +54,11 @@ if ($providedSignature === '' || !hash_equals($expectedSignature, $providedSigna
 }
 
 $records = json_decode($rawPayload, true);
-if (!is_array($records) || !array_is_list($records) || count($records) > 50) {
+if (
+    !is_array($records) ||
+    ($records !== [] && array_keys($records) !== range(0, count($records) - 1)) ||
+    count($records) > 50
+) {
     x3dRespond(400, ['ok' => false, 'error' => 'Invalid payload']);
 }
 
@@ -72,7 +76,7 @@ function x3dCleanText(string $value, int $maxLength = 10000): string
     return mb_substr(trim($value), 0, $maxLength, 'UTF-8');
 }
 
-function x3dExtractAddress(mixed $value): string
+function x3dExtractAddress($value): string
 {
     if (is_array($value)) {
         foreach ($value as $item) {
@@ -101,7 +105,7 @@ function x3dOwnOrAutomatedSender(string $email): bool
     }
 
     foreach (['mailer-daemon', 'postmaster', 'no-reply', 'noreply', 'do-not-reply', 'donotreply'] as $blocked) {
-        if (str_contains($localPart, $blocked)) {
+        if (strpos($localPart, $blocked) !== false) {
             return true;
         }
     }
