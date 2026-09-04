@@ -11,12 +11,12 @@ import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/3d-modellen-vinden/"
 const datePublished = "2026-02-06"
-const dateModified = "2026-02-06"
+const dateModified = "2026-09-04"
 
 export const metadata: Metadata = {
   title: "3D modellen printen: waar vind je goede bestanden? | X3DPrints",
   description:
-    "Vind 3D modellen om te printen via Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults en Thangs. Ideaal als je een 3D model wil laten printen in België.",
+    "Vind printbare 3D modellen via Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults, Thangs en 3DModels.org, met tips voor schaal en printbaarheid.",
   alternates: {
     canonical,
     languages: {
@@ -101,6 +101,19 @@ const sources = [
     bestFor: "Vergelijken en alternatieven vinden",
     qualitySignal: "Bronverwijzing + variantvergelijking",
   },
+  {
+    name: "3DModels.org",
+    url: "https://3dmodels.org/",
+    badge: "Voertuigen",
+    description:
+      "Op 3DModels.org vind je vooral voertuigen en blueprints in uiteenlopende bestandsformaten. Voor 3D-printing kun je een printklare STL-versie laten voorbereiden.",
+    notes: [
+      "Controleer of de printklare STL-optie in je bestelling zit",
+      "Geef de gewenste schaal en detaillering mee",
+    ],
+    bestFor: "Voertuigen en specifieke 3D-objecten",
+    qualitySignal: "Bestandsformaten + printklare optie",
+  },
 ]
 
 const faqItems = [
@@ -141,7 +154,7 @@ const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "Waar 3D modellen vinden om te laten printen",
   description:
-    "Overzicht van de beste plaatsen om 3D modellen te downloaden (Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults en Thangs) met kwaliteitschecks.",
+    "Overzicht van platformen om 3D modellen te downloaden, waaronder Printables, MakerWorld en 3DModels.org, met praktische kwaliteitschecks.",
   datePublished,
   dateModified,
   inLanguage: "nl-BE",
@@ -166,6 +179,7 @@ const references = [
   { label: "MyMiniFactory", url: "https://www.myminifactory.com/" },
   { label: "Cults3D", url: "https://cults3d.com/" },
   { label: "Thangs", url: "https://thangs.com/" },
+  { label: "3DModels.org", url: "https://3dmodels.org/" },
 ]
 
 export default function FindModelsPage() {
@@ -188,11 +202,11 @@ export default function FindModelsPage() {
                 </h1>
                 <p className="text-lg text-slate-700">
                   Je vindt de meest printklare 3D modellen op Printables en MakerWorld, met Thingiverse, MyMiniFactory,
-                  Cults en Thangs als extra bronnen. Wil je een 3D model laten printen? Stuur ons de model-link, wij
-                  doen de kwaliteitscheck en printen lokaal in Belgie.
+                  Cults, Thangs en 3DModels.org als extra bronnen. Wil je een 3D model laten printen? Stuur ons de
+                  model-link, wij doen de kwaliteitscheck en printen lokaal in Belgie.
                 </p>
                 <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-                  Laatst bijgewerkt: 6 februari 2026
+                  Laatst bijgewerkt: 4 september 2026
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <ShimmerButton href="/contact?quote=Link%20naar%203D%20model">Stuur je link</ShimmerButton>
@@ -234,8 +248,11 @@ export default function FindModelsPage() {
               </p>
             </Reveal>
             <div className="grid gap-5 lg:grid-cols-3">
-              {sources.map((source) => (
-                <Reveal key={source.name}>
+              {sources.map((source, index) => (
+                <Reveal
+                  key={source.name}
+                  className={sources.length % 3 === 1 && index === sources.length - 1 ? "lg:col-start-2" : undefined}
+                >
                   <GlassCard className="h-full p-5">
                     <div className="flex items-center justify-between gap-3">
                       <div>

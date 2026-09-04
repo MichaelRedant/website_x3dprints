@@ -11,12 +11,12 @@ import { buildArticleJsonLd, buildFaqPageSchema } from "@/lib/seo"
 
 const canonical = "https://www.x3dprints.be/en/3d-modellen-vinden/"
 const datePublished = "2026-02-06"
-const dateModified = "2026-02-06"
+const dateModified = "2026-09-04"
 
 export const metadata: Metadata = {
   title: "Where to find 3D models to print | X3DPrints",
   description:
-    "Find print-ready 3D models on Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults and Thangs. We validate scale and printability, then print locally in Belgium.",
+    "Find printable 3D models on Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults, Thangs and 3DModels.org, with checks for scale and printability.",
   alternates: {
     canonical,
     languages: {
@@ -98,6 +98,19 @@ const sources = [
     bestFor: "Comparing options quickly",
     qualitySignal: "Source mapping + variant indexing",
   },
+  {
+    name: "3DModels.org",
+    url: "https://3dmodels.org/",
+    badge: "Vehicles",
+    description:
+      "3DModels.org mainly offers vehicles and blueprints in a wide range of file formats. For printing, you can order a print-ready STL version.",
+    notes: [
+      "Confirm that the print-ready STL option is included in your order",
+      "Specify the required scale and level of detail",
+    ],
+    bestFor: "Vehicles and specific 3D assets",
+    qualitySignal: "File formats + print-ready option",
+  },
 ]
 
 const faqItems = [
@@ -138,7 +151,7 @@ const articleJsonLd = buildArticleJsonLd({
   canonical,
   headline: "Where to find 3D models to print",
   description:
-    "Practical overview of the best places to download 3D models (Printables, MakerWorld, Thingiverse, MyMiniFactory, Cults and Thangs) with quality checks.",
+    "Overview of platforms for downloadable 3D models, including Printables, MakerWorld and 3DModels.org, with practical quality checks.",
   datePublished,
   dateModified,
   inLanguage: "en-BE",
@@ -163,6 +176,7 @@ const references = [
   { label: "MyMiniFactory", url: "https://www.myminifactory.com/" },
   { label: "Cults3D", url: "https://cults3d.com/" },
   { label: "Thangs", url: "https://thangs.com/" },
+  { label: "3DModels.org", url: "https://3dmodels.org/" },
 ]
 
 export default function FindModelsPage() {
@@ -185,11 +199,11 @@ export default function FindModelsPage() {
                 </h1>
                 <p className="text-lg text-slate-700">
                   The most print-ready files are usually on Printables and MakerWorld, with Thingiverse, MyMiniFactory,
-                  Cults and Thangs as secondary sources. Send us the model link and we handle validation plus local
-                  production in Belgium.
+                  Cults, Thangs and 3DModels.org as secondary sources. Send us the model link and we handle validation
+                  plus local production in Belgium.
                 </p>
                 <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-500">
-                  Last updated: February 6, 2026
+                  Last updated: September 4, 2026
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <ShimmerButton href="/en/contact?quote=Link%20to%203D%20model">Send your link</ShimmerButton>
@@ -231,8 +245,11 @@ export default function FindModelsPage() {
               </p>
             </Reveal>
             <div className="grid gap-5 lg:grid-cols-3">
-              {sources.map((source) => (
-                <Reveal key={source.name}>
+              {sources.map((source, index) => (
+                <Reveal
+                  key={source.name}
+                  className={sources.length % 3 === 1 && index === sources.length - 1 ? "lg:col-start-2" : undefined}
+                >
                   <GlassCard className="h-full p-5">
                     <div className="flex items-center justify-between gap-3">
                       <div>
