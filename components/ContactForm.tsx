@@ -6,6 +6,12 @@ import { useRouter, useSearchParams } from "next/navigation"
 import { MATERIALS, MATERIAL_KEY_BY_SLUG, materialSlug, type MaterialKey } from "@/lib/materials"
 import { useLocale } from "./LocaleProvider"
 import { trackEvent } from "@/lib/analytics"
+import {
+  MODEL_UPLOAD_ACCEPT,
+  formatUploadSize,
+  validateModelUploads,
+  type ModelUploadValidationError,
+} from "@/lib/contact-upload"
 
 type FormDataShape = {
   name: string
@@ -47,8 +53,17 @@ const COPY = {
     unknownMaterial: "Onzeker, graag advies",
     estimateHeading: "Indicatieve schatting uit calculator (excl. btw en levering)",
     estimateHelp: "Deze berekening kan printen, scannen en/of modelleren bevatten. Scan- en modelleerkosten zijn eenmalige offerteposten, niet per geprint stuk.",
+    filesHeading: "3D-bestanden",
+    filesLabel: "STL- of 3MF-bestanden (optioneel)",
+    filesHelp: "Maximaal 3 bestanden, 10 MB per bestand en 15 MB samen. Is je bestand groter? Plaats dan een downloadlink in de beschrijving.",
+    selectedFiles: "Geselecteerde bestanden",
+    clearFiles: "Bestanden verwijderen",
+    fileTooMany: "Selecteer maximaal 3 bestanden.",
+    fileUnsupported: "Alleen STL- en 3MF-bestanden zijn toegelaten.",
+    fileTooLarge: "Dit bestand is groter dan 10 MB.",
+    filesTotalTooLarge: "De bestanden mogen samen maximaal 15 MB groot zijn.",
     descriptionHeading: "Beschrijving",
-    descriptionPlaceholder: "Downloadlink(s) naar STL/STEP, afmetingen, gewenste afwerking, deadline...",
+    descriptionPlaceholder: "Afmetingen, gewenste afwerking, deadline of downloadlink voor grotere bestanden...",
     submit: "Verstuur aanvraag",
     submitting: "Versturen...",
     success: "Verzonden. Bedankt!",
@@ -70,8 +85,17 @@ const COPY = {
     unknownMaterial: "Not sure, need advice",
     estimateHeading: "Indicative calculator estimate (excl. VAT and delivery)",
     estimateHelp: "This calculation may include printing, scanning and/or modelling. Scan and modelling costs are one-time quote items, not per printed piece.",
+    filesHeading: "3D files",
+    filesLabel: "STL or 3MF files (optional)",
+    filesHelp: "Up to 3 files, 10 MB per file and 15 MB combined. For a larger file, add a download link in the description.",
+    selectedFiles: "Selected files",
+    clearFiles: "Remove files",
+    fileTooMany: "Select no more than 3 files.",
+    fileUnsupported: "Only STL and 3MF files are accepted.",
+    fileTooLarge: "This file is larger than 10 MB.",
+    filesTotalTooLarge: "The files may be up to 15 MB combined.",
     descriptionHeading: "Description",
-    descriptionPlaceholder: "Download link(s) to STL/STEP, dimensions, desired finish, deadline...",
+    descriptionPlaceholder: "Dimensions, desired finish, deadline or a download link for larger files...",
     submit: "Send request",
     submitting: "Sending...",
     success: "Sent. Thank you!",
@@ -80,6 +104,22 @@ const COPY = {
     errorUnknown: "Unknown error.",
     errorNetwork: "Network error",
   },
+}
+
+function getUploadErrorMessage(
+  copy: (typeof COPY)[keyof typeof COPY],
+  error: ModelUploadValidationError,
+) {
+  switch (error.code) {
+    case "too_many_files":
+      return copy.fileTooMany
+    case "unsupported_type":
+      return `${error.fileName}: ${copy.fileUnsupported}`
+    case "file_too_large":
+      return `${error.fileName}: ${copy.fileTooLarge}`
+    case "total_too_large":
+      return copy.filesTotalTooLarge
+  }
 }
 
 function resolveMaterialName(raw: string) {
@@ -139,6 +179,7 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
   const appliedDefaultRef = useRef(initialMaterial)
   const appliedQuoteRef = useRef(decodedQuote)
   const appliedQuantityRef = useRef(decodedQuantity)
+  const fileInputRef = useRef<HTMLInputElement>(null)
   const [data, setData] = useState<FormDataShape>({
     name: "",
     email: "",
@@ -150,6 +191,8 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
   })
   const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">("idle")
   const [serverError, setServerError] = useState<string>("")
+  const [files, setFiles] = useState<File[]>([])
+  const [fileError, setFileError] = useState("")
 
   function update<K extends keyof FormDataShape>(key: K, value: FormDataShape[K]) {
     setData(prev => ({ ...prev, [key]: value }))
@@ -193,10 +236,35 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
 
   const emailValid = useMemo(() => /\S+@\S+\.\S+/.test(data.email), [data.email])
 
+  function onFilesSelected(event: React.ChangeEvent<HTMLInputElement>) {
+    const nextFiles = Array.from(event.currentTarget.files ?? [])
+    const validationError = validateModelUploads(nextFiles)
+    if (validationError) {
+      setFiles([])
+      setFileError(getUploadErrorMessage(copy, validationError))
+      event.currentTarget.value = ""
+      return
+    }
+
+    setFiles(nextFiles)
+    setFileError("")
+  }
+
+  function clearFiles() {
+    setFiles([])
+    setFileError("")
+    if (fileInputRef.current) fileInputRef.current.value = ""
+  }
+
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault()
     if (data.hp) return // honeypot gevuld => bot
     if (!emailValid) return
+    const validationError = validateModelUploads(files)
+    if (validationError) {
+      setFileError(getUploadErrorMessage(copy, validationError))
+      return
+    }
 
     try {
       setStatus("loading")
@@ -212,6 +280,7 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
       if (data.quantity) form.append("quantity", data.quantity)
       if (data.material) form.append("material", data.material)
       if (data.quote) form.append("quote", data.quote)
+      files.forEach(file => form.append("files[]", file, file.name))
 
       const endpoints = ["/api/contact", "/contact.php"]
       let lastError = ""
@@ -255,16 +324,18 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
 
             setStatus("ok")
             setData({ name: "", email: "", message: "", quantity: "", material: "", quote: "", hp: "" })
+            clearFiles()
             trackEvent({
-              action: "contact_submit",
+              action: "generate_lead",
               category: "lead",
-              label: data.material || "unknown",
-            })
-            trackEvent({
-              action: "form_submit",
-              category: "contact_form",
-              label: "success",
-              value: 1,
+              label: materialParam || "unspecified",
+              parameters: {
+                form_id: "contact_form",
+                lead_type: "quote_request",
+                material: materialParam || "unspecified",
+                content_language: locale,
+                attachment_count: files.length,
+              },
             })
             const redirectPath = locale === "en" ? "/en/contact/bedankt" : "/contact/bedankt"
             const redirectParams = new URLSearchParams()
@@ -388,6 +459,57 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
         </section>
       ) : null}
 
+      <section className={groupCls} aria-labelledby="files-legend">
+        <h3 id="files-legend" className={headingCls}>{copy.filesHeading}</h3>
+        <div className="mt-3 grid gap-2">
+          <label className={labelCls} htmlFor="model-files">{copy.filesLabel}</label>
+          <input
+            ref={fileInputRef}
+            id="model-files"
+            name="files[]"
+            type="file"
+            accept={MODEL_UPLOAD_ACCEPT}
+            multiple
+            className={`${inputBase} cursor-pointer file:mr-3 file:rounded-md file:border-0 file:bg-indigo-50 file:px-3 file:py-2 file:text-xs file:font-semibold file:text-indigo-700 hover:file:bg-indigo-100 dark:file:bg-slate-800 dark:file:text-slate-100 dark:hover:file:bg-slate-700`}
+            onChange={onFilesSelected}
+            aria-describedby="model-files-help model-files-error"
+            aria-invalid={Boolean(fileError)}
+          />
+          <p id="model-files-help" className="text-xs leading-5 text-slate-600 dark:text-slate-400">
+            {copy.filesHelp}
+          </p>
+          {fileError ? (
+            <p id="model-files-error" role="alert" className="text-sm font-medium text-red-600 dark:text-red-400">
+              {fileError}
+            </p>
+          ) : (
+            <span id="model-files-error" className="sr-only" aria-live="polite" />
+          )}
+          {files.length > 0 ? (
+            <div className="mt-1 rounded-xl border border-emerald-200 bg-emerald-50/70 p-3 dark:border-emerald-900/70 dark:bg-emerald-950/30">
+              <div className="flex items-center justify-between gap-3">
+                <p className="text-xs font-semibold text-emerald-900 dark:text-emerald-200">{copy.selectedFiles}</p>
+                <button
+                  type="button"
+                  onClick={clearFiles}
+                  className="text-xs font-semibold text-emerald-800 underline decoration-emerald-300 underline-offset-4 hover:text-emerald-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 dark:text-emerald-200 dark:hover:text-white"
+                >
+                  {copy.clearFiles}
+                </button>
+              </div>
+              <ul className="mt-2 space-y-1 text-xs text-emerald-900 dark:text-emerald-100">
+                {files.map(file => (
+                  <li key={`${file.name}-${file.size}`} className="flex min-w-0 justify-between gap-3">
+                    <span className="min-w-0 break-all">{file.name}</span>
+                    <span className="shrink-0">{formatUploadSize(file.size, locale)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+        </div>
+      </section>
+
       {/* Beschrijving */}
       <section className={groupCls} aria-labelledby="message-legend">
         <h3 id="message-legend" className={headingCls}>{copy.descriptionHeading}</h3>
@@ -420,7 +542,8 @@ export default function ContactForm({ defaultMaterial = "" }: ContactFormProps) 
       <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
         <button
           type="submit"
-          disabled={status === "loading" || !emailValid}
+          disabled={status === "loading" || !emailValid || Boolean(fileError)}
+          aria-busy={status === "loading"}
           className="rounded-xl border border-slate-300 bg-white/90 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white disabled:opacity-60 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:hover:bg-slate-800"
         >
           {status === "loading" ? copy.submitting : copy.submit}

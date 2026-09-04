@@ -4,6 +4,7 @@ import path from "node:path"
 const ROOT = process.cwd()
 const OUT_DIR = path.join(ROOT, "out")
 const TARGET = path.join(OUT_DIR, ".htaccess")
+const PHP_USER_INI_TARGET = path.join(OUT_DIR, ".user.ini")
 
 const HTACCESS = `# X3DPrints static export routing for Apache
 Options -MultiViews
@@ -41,10 +42,16 @@ DirectoryIndex index.html
 </IfModule>
 `
 
+const PHP_USER_INI = `upload_max_filesize = 10M
+post_max_size = 18M
+max_file_uploads = 3
+`
+
 async function main() {
   await fs.mkdir(OUT_DIR, { recursive: true })
   await fs.writeFile(TARGET, HTACCESS, "utf8")
-  console.log("[postbuild:htaccess] OK - wrote out/.htaccess")
+  await fs.writeFile(PHP_USER_INI_TARGET, PHP_USER_INI, "utf8")
+  console.log("[postbuild:apache] OK - wrote out/.htaccess and out/.user.ini")
 }
 
 main().catch((error) => {

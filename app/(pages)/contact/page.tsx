@@ -78,9 +78,9 @@ export const metadata: Metadata = NL_METADATA
 const NL_COPY = {
   heroTitle: "Offerte of vraag over 3D printen in Belgie?",
   heroIntro:
-    "STL-link, korte context en gewenst materiaal volstaan. Van onderdelen en organizers tot prototypes, etalage-items en persoonlijke stukken: je krijgt snel een heldere prijs en timing, meestal binnen 24 uur.",
+    "Een STL- of 3MF-bestand, korte context en gewenst materiaal volstaan. Van onderdelen en organizers tot prototypes, etalage-items en persoonlijke stukken: je krijgt snel een heldere prijs en timing, meestal binnen 24 uur.",
   formHeading: "Contactformulier",
-  formIntro: "Vul zo concreet mogelijk in. Voeg link(s) naar STL/STEP toe in het bericht.",
+  formIntro: "Upload je STL- of 3MF-bestand meteen. Voor grotere bestanden of STEP kun je een downloadlink toevoegen.",
   formLoading: "Formulier wordt geladen...",
   quickStartTitle: "Snelle start (met prefill)",
   quickStartIntro: "Kies je meest voorkomende scenario. We vullen materiaal en prijscontext meteen voor je in.",
@@ -89,7 +89,7 @@ const NL_COPY = {
   regionLabel: "Regio",
   regionValue: "Herzele - leveringen in groot Gent/Aalst mogelijk",
   filesLabel: "Bestanden",
-  filesValue: "STL, STEP. Voeg de link, tolerantie of afwerking toe in je beschrijving.",
+  filesValue: "STL en 3MF kun je meteen uploaden. Gebruik voor grotere bestanden of STEP een downloadlink.",
   helpfulHeading: "Handig om te vermelden",
   helpfulItems: [
     "Toepassing en omgeving (binnen/buiten, warmte/UV)",
@@ -100,11 +100,11 @@ const NL_COPY = {
   faq: [
     {
       q: "Hoe snel krijg ik antwoord?",
-      a: "Meestal binnen 24 uur. Voeg STL/STEP en gewenste timing toe voor een gericht voorstel.",
+      a: "Meestal binnen 24 uur. Voeg je STL of 3MF en gewenste timing toe voor een gericht voorstel.",
     },
     {
       q: "Welke bestanden kan ik doorsturen?",
-      a: "STL en STEP zijn ideaal. Vermeld kritieke maten, toepassing en gewenst materiaal.",
+      a: "Je kunt maximaal drie STL- of 3MF-bestanden uploaden, tot 10 MB per bestand en 15 MB samen. Gebruik voor grotere bestanden of STEP een downloadlink.",
     },
     {
       q: "Kunnen jullie materiaal adviseren?",
@@ -121,9 +121,9 @@ const NL_COPY = {
 
 const EN_COPY = {
   heroTitle: "Quote or question for custom 3D printing?",
-  heroIntro: "A STL link, short context and preferred material are enough. From parts and organizers to prototypes, retail items and personalized pieces, you'll get a clear price and lead time quickly, usually within 24 hours.",
+  heroIntro: "An STL or 3MF file, short context and preferred material are enough. From parts and organizers to prototypes, retail items and personalized pieces, you'll get a clear price and lead time quickly, usually within 24 hours.",
   formHeading: "Contact form",
-  formIntro: "Be as specific as you can. Add link(s) to STL/STEP in your message.",
+  formIntro: "Upload your STL or 3MF file directly. For larger files or STEP, add a download link.",
   formLoading: "Loading form...",
   quickStartTitle: "Quick start (prefilled)",
   quickStartIntro: "Pick your common scenario and we prefill material and pricing context right away.",
@@ -132,7 +132,7 @@ const EN_COPY = {
   regionLabel: "Region",
   regionValue: "Herzele – deliveries in Greater Ghent/Aalst possible",
   filesLabel: "Files",
-  filesValue: "STL, STEP. Add the link, tolerance or finish in your description.",
+  filesValue: "Upload STL and 3MF directly. For larger files or STEP, use a download link.",
   helpfulHeading: "Useful to mention",
   helpfulItems: [
     "Application and environment (indoor/outdoor, heat/UV)",
@@ -143,11 +143,11 @@ const EN_COPY = {
   faq: [
     {
       q: "How fast do I get a reply?",
-      a: "Usually within 24 hours. Add STL/STEP and desired timing for a targeted proposal.",
+      a: "Usually within 24 hours. Add your STL or 3MF file and desired timing for a targeted proposal.",
     },
     {
       q: "Which files can I send?",
-      a: "STL and STEP are ideal. Mention critical dimensions, use case and desired material.",
+      a: "You can upload up to three STL or 3MF files, with a limit of 10 MB per file and 15 MB combined. For larger files or STEP, use a download link.",
     },
     {
       q: "Can you advise on material?",
