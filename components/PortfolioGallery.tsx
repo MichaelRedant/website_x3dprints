@@ -62,7 +62,7 @@ export default function PortfolioGallery({ items, locale = "nl", newCount = 0 }:
         itemClass="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]"
       />
 
-      <div className="rounded-3xl border border-white/60 bg-white/72 p-4 shadow-[0_18px_48px_rgba(15,23,42,0.10)] backdrop-blur-xl sm:p-5">
+      <div className="rounded-3xl border border-white/60 bg-white/72 p-4 shadow-[0_18px_48px_rgba(15,23,42,0.10)] backdrop-blur-xl dark:border-slate-700/70 dark:bg-slate-950/80 dark:shadow-[0_22px_55px_rgba(2,6,23,0.42)] sm:p-5">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-700">{copy.eyebrow}</p>
@@ -78,8 +78,8 @@ export default function PortfolioGallery({ items, locale = "nl", newCount = 0 }:
               "inline-flex min-h-12 items-center justify-center rounded-2xl px-5 py-3 text-sm font-bold shadow-sm transition",
               "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2",
               isOpen
-                ? "border border-slate-200 bg-white text-slate-950 hover:-translate-y-0.5 hover:bg-slate-50"
-                : "bg-slate-950 text-white hover:-translate-y-0.5 hover:bg-slate-800",
+                ? "border border-slate-200 bg-white text-slate-950 hover:-translate-y-0.5 hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-50 dark:hover:bg-slate-800"
+                : "bg-slate-950 text-white hover:-translate-y-0.5 hover:bg-slate-800 dark:bg-cyan-300 dark:text-slate-950 dark:hover:bg-cyan-200",
             ].join(" ")}
           >
             {isOpen ? copy.close : copy.open(items.length)}
@@ -106,13 +106,13 @@ export default function PortfolioGallery({ items, locale = "nl", newCount = 0 }:
               transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.48, ease: [0.22, 1, 0.36, 1] }}
               className="overflow-hidden"
             >
-              <div className="mt-6 border-t border-slate-200/80 pt-6">
+              <div className="mt-6 border-t border-slate-200/80 pt-6 dark:border-slate-700/80">
                 <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
                   <p className="text-sm font-semibold text-slate-800">{copy.loaded(items.length)}</p>
                   <button
                     type="button"
                     onClick={() => setIsOpen(false)}
-                    className="text-sm font-semibold text-cyan-800 underline underline-offset-4 hover:text-cyan-950"
+                    className="rounded-md text-sm font-semibold text-cyan-800 underline underline-offset-4 hover:text-cyan-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 dark:text-cyan-300 dark:hover:text-cyan-100"
                   >
                     {copy.close}
                   </button>
@@ -138,9 +138,9 @@ export default function PortfolioGallery({ items, locale = "nl", newCount = 0 }:
                         show: { opacity: 1, y: 0, scale: 1 },
                       }}
                       transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.36, ease: [0.22, 1, 0.36, 1] }}
-                      className="group overflow-hidden rounded-3xl border border-slate-200/80 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(15,23,42,0.14)]"
+                      className="group overflow-hidden rounded-3xl border border-slate-200/80 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(15,23,42,0.14)] dark:border-slate-700/80 dark:bg-slate-900 dark:hover:border-cyan-300/40 dark:hover:shadow-[0_20px_50px_rgba(2,6,23,0.5)]"
                     >
-                      <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                      <div className="relative aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-950">
                         {newCount > 0 && photo.index < newCount ? (
                           <span className="absolute left-3 top-3 z-10 rounded-full bg-indigo-600 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-white shadow-sm">
                             {copy.newLabel}
@@ -155,7 +155,7 @@ export default function PortfolioGallery({ items, locale = "nl", newCount = 0 }:
                           className="object-contain p-2 transition duration-500 group-hover:scale-[1.03]"
                         />
                       </div>
-                      <figcaption className="border-t border-slate-100 bg-white px-4 py-3">
+                      <figcaption className="border-t border-slate-100 bg-white px-4 py-3 dark:border-slate-700 dark:bg-slate-900">
                         <p className="text-sm font-semibold leading-5 text-slate-950 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2]">
                           {photo.alt}
                         </p>
@@ -172,7 +172,7 @@ export default function PortfolioGallery({ items, locale = "nl", newCount = 0 }:
                   <button
                     type="button"
                     onClick={() => setIsOpen(false)}
-                    className="inline-flex min-h-12 items-center justify-center rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-950 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2"
+                    className="inline-flex min-h-12 items-center justify-center rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-950 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-50 dark:ring-offset-slate-950 dark:hover:bg-slate-800"
                   >
                     {copy.close}
                   </button>

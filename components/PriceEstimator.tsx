@@ -46,14 +46,14 @@ const QUALITY_LABELS: Record<Quality, { nl: string; en: string }> = {
 }
 
 const inputClass =
-  "h-12 rounded-2xl border border-slate-300 bg-white px-3 text-sm font-medium text-slate-900 shadow-sm outline-none ring-0 focus:border-emerald-400 focus:ring-4 focus:ring-emerald-500/10"
+  "h-12 rounded-2xl border border-slate-300 bg-white px-3 text-sm font-medium text-slate-900 shadow-sm outline-none ring-0 focus:border-emerald-400 focus:ring-4 focus:ring-emerald-500/10 dark:border-slate-600 dark:bg-slate-950 dark:text-slate-50 dark:focus:border-cyan-300 dark:focus:ring-cyan-400/20"
 
 const routeCardClass = (active: boolean) =>
   [
     "flex min-h-32 cursor-pointer gap-3 rounded-3xl border p-4 transition sm:p-5",
     active
-      ? "border-emerald-400 bg-emerald-50 shadow-[0_16px_36px_rgba(16,185,129,0.18)]"
-      : "border-slate-200 bg-white/80 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-sm",
+      ? "border-emerald-400 bg-emerald-50 shadow-[0_16px_36px_rgba(16,185,129,0.18)] dark:border-emerald-300/70 dark:bg-emerald-400/10 dark:shadow-[0_16px_36px_rgba(16,185,129,0.12)]"
+      : "border-slate-200 bg-white/80 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-sm dark:border-slate-700 dark:bg-slate-950/80 dark:hover:border-cyan-300/50",
   ].join(" ")
 
 function clampNumber(value: string, min: number, fallback: number) {
@@ -359,10 +359,10 @@ export default function PriceEstimator({ locale = "nl" }: Props) {
   }, [includePrint, includeScan, isEn, material, quoteSummary, locale])
 
   return (
-    <div className="relative overflow-hidden rounded-[2rem] border border-emerald-200/70 bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.22),transparent_34%),linear-gradient(135deg,#f8fafc,#ecfeff_52%,#f0fdf4)] p-1 shadow-[0_24px_70px_rgba(15,23,42,0.16)]">
+    <div className="relative overflow-hidden rounded-[2rem] border border-emerald-200/70 bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.22),transparent_34%),linear-gradient(135deg,#f8fafc,#ecfeff_52%,#f0fdf4)] p-1 shadow-[0_24px_70px_rgba(15,23,42,0.16)] dark:border-emerald-300/30 dark:bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.18),transparent_34%),linear-gradient(135deg,#0f172a,#082f49_52%,#020617)] dark:shadow-[0_28px_80px_rgba(2,6,23,0.5)]">
       <div aria-hidden className="pointer-events-none absolute -right-12 -top-16 h-48 w-48 rounded-full bg-cyan-300/35 blur-3xl" />
       <div aria-hidden className="pointer-events-none absolute -bottom-20 left-10 h-56 w-56 rounded-full bg-emerald-300/25 blur-3xl" />
-      <div className="relative rounded-[1.75rem] bg-white/95 p-5 backdrop-blur sm:p-7 lg:p-8">
+      <div className="relative rounded-[1.75rem] bg-white/95 p-5 backdrop-blur dark:bg-slate-950/95 sm:p-7 lg:p-8">
         <div className="grid gap-5 lg:grid-cols-[1fr_22rem] lg:items-start">
           <div>
             <span className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-800">
@@ -401,7 +401,7 @@ export default function PriceEstimator({ locale = "nl" }: Props) {
           </div>
         </div>
 
-        <div className="mt-6 rounded-3xl border border-slate-200 bg-slate-50/90 p-4 shadow-inner">
+        <div className="mt-6 rounded-3xl border border-slate-200 bg-slate-50/90 p-4 shadow-inner dark:border-slate-700 dark:bg-slate-900/80">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">{copy.labels.route}</p>
           <div className="mt-3 grid gap-3 md:grid-cols-3">
             <label className={routeCardClass(includePrint)}>
@@ -567,7 +567,7 @@ export default function PriceEstimator({ locale = "nl" }: Props) {
         ) : null}
 
         <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900/85">
             <div className="text-xs uppercase tracking-wide text-slate-500">{copy.cards.print}</div>
             <div className="mt-1 text-2xl font-semibold text-slate-900">{printBreakdown ? euro.format(printSubtotal) : "-"}</div>
             <div className="text-xs text-slate-500">
@@ -576,13 +576,13 @@ export default function PriceEstimator({ locale = "nl" }: Props) {
                 : copy.cards.notSelected}
             </div>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900/85">
             <div className="text-xs uppercase tracking-wide text-slate-500">{copy.cards.scan}</div>
             <div className="mt-1 text-2xl font-semibold text-slate-900">{includeScan ? euro.format(scanCost) : "-"}</div>
             <div className="text-xs text-slate-500">{includeScan ? selectedScanLabel : copy.cards.notSelected}</div>
             {includeScan ? <div className="mt-2 text-xs font-semibold text-cyan-800">{copy.summary.oneTime}</div> : null}
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900/85">
             <div className="text-xs uppercase tracking-wide text-slate-500">{copy.cards.modeling}</div>
             <div className="mt-1 text-2xl font-semibold text-slate-900">{includeModeling ? euro.format(modelingCost) : "-"}</div>
             <div className="text-xs text-slate-500">

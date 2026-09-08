@@ -11,95 +11,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/(home)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(home)/layout.js"
-    ],
-    "/(home)/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(home)/page.js"
-    ],
-    "/(pages)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/layout.js"
-    ],
-    "/(pages)/blog/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/layout.js"
-    ],
-    "/(pages)/blog/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/page.js"
-    ],
-    "/sitemap.xml/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/sitemap.xml/route.js"
-    ],
     "/en/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/en/layout.js"
     ],
-    "/en/(pages)/blog/layout": [
+    "/en/(home)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/en/(pages)/blog/layout.js"
+      "static/chunks/app/en/(home)/layout.js"
     ],
-    "/en/(pages)/blog/asa-3d-printen/page": [
+    "/en/(home)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/en/(pages)/blog/asa-3d-printen/page.js"
-    ],
-    "/(pages)/blog/asa-3d-printen/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/asa-3d-printen/page.js"
-    ],
-    "/en/(pages)/blog/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/en/(pages)/blog/page.js"
-    ],
-    "/(pages)/blog/hoe-werkt-3d-scanning/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/hoe-werkt-3d-scanning/page.js"
-    ],
-    "/en/(pages)/blog/hoe-werkt-3d-scanning/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/en/(pages)/blog/hoe-werkt-3d-scanning/page.js"
-    ],
-    "/(pages)/3d-scannen/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/3d-scannen/page.js"
-    ],
-    "/en/(pages)/3d-scannen/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/en/(pages)/3d-scannen/page.js"
-    ],
-    "/(pages)/pricing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/pricing/page.js"
-    ],
-    "/(pages)/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/contact/page.js"
-    ],
-    "/en/(pages)/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/en/(pages)/contact/page.js"
+      "static/chunks/app/en/(home)/page.js"
     ]
   }
 }

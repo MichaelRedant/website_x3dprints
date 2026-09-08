@@ -226,7 +226,7 @@ export default function Header() {
           <ThemeToggle className="ml-2" />
           <Link
             href={localizedHref("/contact")}
-            className="ml-2 inline-flex items-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(99,102,241,.35)] transition hover:brightness-110 dark:border-slate-700 dark:bg-[linear-gradient(90deg,#334155,45%,#1e293b)] dark:shadow-[0_8px_24px_rgba(15,23,42,.35)]"
+            className="ml-2 inline-flex items-center gap-2 rounded-xl border border-slate-200/70 bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-4 py-2 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(99,102,241,.35)] transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:border-cyan-300/50 dark:bg-[linear-gradient(105deg,#4338ca,#0369a1)] dark:text-white dark:shadow-[0_10px_30px_rgba(8,145,178,.24)] dark:ring-offset-slate-950"
           >
             {quoteLabel}
           </Link>

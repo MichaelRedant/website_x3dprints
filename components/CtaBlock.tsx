@@ -104,7 +104,7 @@ export default function CtaBlock({
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link
               href={contactHref}
-              className="has-shimmer inline-flex items-center gap-2 rounded-2xl bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 ring-1 ring-slate-900/10 backdrop-blur transition hover:bg-white/90 hover:shadow-lg"
+              className="has-shimmer inline-flex items-center gap-2 rounded-2xl bg-[linear-gradient(90deg,#6366f1,45%,#22d3ee)] px-5 py-3 text-sm font-semibold text-white ring-1 ring-indigo-500/20 transition hover:brightness-110 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 dark:border dark:border-cyan-300/50 dark:bg-[linear-gradient(105deg,#4338ca,#0369a1)] dark:text-white dark:ring-offset-slate-950"
             >
               {copy.primaryCta}
               <FaArrowRight aria-hidden />
