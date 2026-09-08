@@ -159,12 +159,14 @@ const RELATED_LINKS_BY_PAGE_TYPE: Record<RelatedLinksPageType, RelatedLinksConfi
     },
     secondary: {
       nl: [
+        { label: "Complete gids: hoe werkt 3D scanning?", href: "/blog/hoe-werkt-3d-scanning" },
         { label: "Materialen & richtlijnen", href: "/materials" },
         { label: "Prijzen & calculator", href: "/pricing" },
         { label: "Portfolio", href: "/portfolio" },
         { label: "Kapot onderdeel laten printen", href: "/blog/kapot-onderdeel-laten-printen" },
       ],
       en: [
+        { label: "Complete guide: how does 3D scanning work?", href: "/blog/hoe-werkt-3d-scanning" },
         { label: "Materials and guidelines", href: "/materials" },
         { label: "Pricing and calculator", href: "/pricing" },
         { label: "Portfolio", href: "/portfolio" },

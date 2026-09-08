@@ -1,0 +1,9 @@
+{
+  "relationshipPanels": {
+    "x3dAiQuotes": {
+      "label": "AI-offerteconcepten",
+      "orderBy": "createdAt",
+      "orderDirection": "desc"
+    }
+  }
+}

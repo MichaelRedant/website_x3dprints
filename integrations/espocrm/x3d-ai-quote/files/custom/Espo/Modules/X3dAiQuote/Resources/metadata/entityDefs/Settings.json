@@ -1,0 +1,13 @@
+{
+  "fields": {
+    "x3dOpenAiApiKey": {
+      "type": "password",
+      "tooltip": true
+    },
+    "x3dOpenAiModel": {
+      "type": "varchar",
+      "default": "gpt-5.4-mini",
+      "tooltip": true
+    }
+  }
+}

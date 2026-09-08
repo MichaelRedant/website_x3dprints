@@ -12,9 +12,9 @@ import { SHOP_INDEXABLE } from "@/content/shop-products"
 
 const canonical = "https://www.x3dprints.be/en/blog/hoe-3d-print-je-onderdelen-voor-buitengebruik/"
 const publishedDate = "2025-11-21T08:00:00+01:00"
-const dateModified = "2026-02-08"
+const dateModified = "2026-09-08"
 const faq = BLOG_FAQ_EN["hoe-3d-print-je-onderdelen-voor-buitengebruik"]
-const lastUpdatedLabel = "Last updated: 8 February 2026"
+const lastUpdatedLabel = "Last updated: 8 September 2026"
 
 export const metadata: Metadata = {
   title: "How to 3D print parts for outdoor use | X3DPrints",
@@ -163,6 +163,13 @@ export default function OutdoorPrintingGuideEnPage() {
             <p className="mt-4 text-lg text-slate-700">
               Outdoor 3D prints seem simple until sun, rain and temperature swings get involved. This guide shows which materials hold up, how to mount
               without cracks and where PLA still plays a role without early failure.
+            </p>
+            <p className="mt-4 max-w-3xl text-sm leading-6 text-slate-600">
+              Will a part remain in direct sunlight? Also read the in-depth guide to{" "}
+              <Link href="/en/blog/asa-3d-printen" className="font-semibold text-indigo-600 underline underline-offset-4">
+                ASA 3D printing for outdoor use
+              </Link>
+              . ASA is more UV-stable than most standard filaments, but places stricter demands on design and production.
             </p>
                         <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">

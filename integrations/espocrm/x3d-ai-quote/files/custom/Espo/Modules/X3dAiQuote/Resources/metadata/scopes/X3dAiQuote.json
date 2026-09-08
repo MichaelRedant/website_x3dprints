@@ -1,0 +1,9 @@
+{
+  "module": "X3dAiQuote",
+  "entity": true,
+  "object": true,
+  "acl": true,
+  "tab": true,
+  "importable": false,
+  "stream": true
+}

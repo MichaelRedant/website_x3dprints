@@ -1,4 +1,4 @@
-import type { MaterialKey } from "./materials";
+import { X3D_FILAMENT_PRICE_EUR_PER_KG, type MaterialKey } from "./material-prices";
 
 export type Tier = "Small" | "Medium" | "Large";
 
@@ -28,30 +28,7 @@ export const QUALITY_MULTIPLIER = QUALITY_TIME_MULTIPLIER;
 
 export type DeliveryType = "afhaling" | "post" | "24h" | "48h";
 
-// Filamentprijzen (EUR/kg) op basis van aangeleverde tabel
-const BASE_FILAMENT_PRICE_EUR_PER_KG: Record<MaterialKey, number> = {
-  PLA_BASIC: 23.38,
-  PLA_BASIC_GRADIENT: 33.54,
-  PLA_MATTE: 23.38,
-  PLA_GLOW: 33.54,
-  PLA_MARBLE: 33.54,
-  PLA_SPARKLE: 33.54,
-  PLA_METAL: 33.54,
-  PLA_GALAXY: 32.52,
-  PLA_AERO: 23.38,
-  PLA_SILK_PLUS: 33.54,
-  PLA_SILK_MULTI_COLOR: 33.54,
-  PLA_CF: 39.64,
-  PLA_WOOD: 28.46,
-  PLA_TRANSLUCENT: 23.38,
-  PLA_TOUGH_PLUS: 23.38,
-  PETG: 23.38,
-  PC: 42.99,
-  PC_FR: 56.99,
-  TPU: 25.5,
-};
-
-const BASE_PRICE_FALLBACK_EUR_PER_KG = 23.38; // valt terug op PLA Basic
+const BASE_PRICE_FALLBACK_EUR_PER_KG = X3D_FILAMENT_PRICE_EUR_PER_KG.PLA_BASIC;
 
 export const DRYING_FILAMENTS = new Set<MaterialKey>(["TPU", "PLA_WOOD", "PETG", "PC", "PC_FR"]);
 export const DRYING_FIXED_SURCHARGE_EUR = 5;
@@ -62,6 +39,7 @@ export const DEFAULT_PRINTER_POWER_KW = 1;
 export const DEFAULT_MATERIAL_MARKUP = 0.2; // +20%
 export const DEFAULT_PROFIT_FACTOR = 3; // 200% marge => basiskost * 3
 export const DEFAULT_DESIGN_RATE_EUR_PER_HOUR = 45;
+export const PUBLIC_ESTIMATE_BUFFER = 1.1; // Publieke indicatie blijft bewust 10% boven de interne calculatie.
 
 export type PriceInput = {
   printingTimeHours: number;
@@ -77,6 +55,7 @@ export type PriceInput = {
   printerPowerKw?: number;
   materialMarkup?: number;
   profitFactor?: number;
+  publicEstimateBuffer?: number;
   designRateEurPerHour?: number;
 };
 
@@ -108,9 +87,10 @@ export function calculateDeliveryCost(
   deliveryType: DeliveryType,
   subtotalBeforeDelivery: number,
 ): number {
+  void subtotalBeforeDelivery;
   if (deliveryType === "24h") return 20;
   if (deliveryType === "48h") return 15;
-  if (deliveryType === "post") return subtotalBeforeDelivery < 50 ? 7 : 5;
+  if (deliveryType === "post") return 7.5;
   return 0;
 }
 
@@ -126,6 +106,7 @@ export function calculatePrintJob(job: PriceInput): PriceBreakdown {
 
   const materialMarkup = job.materialMarkup ?? DEFAULT_MATERIAL_MARKUP;
   const profitFactor = job.profitFactor ?? DEFAULT_PROFIT_FACTOR;
+  const publicEstimateBuffer = job.publicEstimateBuffer ?? PUBLIC_ESTIMATE_BUFFER;
   const designRate = job.designRateEurPerHour ?? DEFAULT_DESIGN_RATE_EUR_PER_HOUR;
   const electricityCost = job.electricityCostPerKwh ?? DEFAULT_ELECTRICITY_COST_EUR_PER_KWH;
   const printerPower = job.printerPowerKw ?? DEFAULT_PRINTER_POWER_KW;
@@ -133,7 +114,7 @@ export function calculatePrintJob(job: PriceInput): PriceBreakdown {
   const qualityMultiplier = QUALITY_TIME_MULTIPLIER[quality] ?? 1;
 
   const materialPricePerKg =
-    BASE_FILAMENT_PRICE_EUR_PER_KG[job.material] ?? BASE_PRICE_FALLBACK_EUR_PER_KG;
+    X3D_FILAMENT_PRICE_EUR_PER_KG[job.material] ?? BASE_PRICE_FALLBACK_EUR_PER_KG;
   const unitFilamentCostEur = (job.filamentWeightGrams / 1000) * materialPricePerKg;
   const unitFilamentWithMarkupEur = unitFilamentCostEur * (1 + materialMarkup);
 
@@ -141,15 +122,15 @@ export function calculatePrintJob(job: PriceInput): PriceBreakdown {
   const unitElectricityEur = effectivePrintHours * printerPower * electricityCost;
 
   const unitBaseCostEur = unitFilamentWithMarkupEur + unitElectricityEur;
-  const unitSellPriceEur = unitBaseCostEur * profitFactor;
-
-  const printsSubtotalEur = unitSellPriceEur * job.quantity;
-  const designCostEur = (job.designHours ?? 0) * designRate;
   const dryingCostEur = calculateDryingCost(job.material, job.quantity);
+  const totalDirectPrintCostEur = unitBaseCostEur * job.quantity + dryingCostEur;
+  const printsSubtotalEur = totalDirectPrintCostEur * profitFactor * publicEstimateBuffer;
+  const unitSellPriceEur = printsSubtotalEur / job.quantity;
+  const designCostEur = (job.designHours ?? 0) * designRate;
   const extraAllowancesEur = job.extraAllowancesEur ?? 0;
 
   const subtotalBeforeDeliveryEur =
-    printsSubtotalEur + designCostEur + dryingCostEur + extraAllowancesEur;
+    printsSubtotalEur + designCostEur + extraAllowancesEur;
   const deliveryType = job.deliveryType ?? "afhaling";
   const deliveryCostEur = calculateDeliveryCost(deliveryType, subtotalBeforeDeliveryEur);
 

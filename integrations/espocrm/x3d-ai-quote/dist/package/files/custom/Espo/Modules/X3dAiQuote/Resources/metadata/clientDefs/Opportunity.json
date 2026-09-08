@@ -1,0 +1,33 @@
+{
+  "bottomPanels": {
+    "detail": [
+      "__APPEND__",
+      {
+        "name": "x3dAiQuoteAssistant",
+        "label": "Offerte maken",
+        "view": "x3d-ai-quote:views/record/panels/quote-assistant",
+        "aclScope": "Opportunity",
+        "acl": "edit",
+        "isForm": true
+      }
+    ],
+    "detailSmall": [
+      "__APPEND__",
+      {
+        "name": "x3dAiQuoteAssistant",
+        "label": "Offerte maken",
+        "view": "x3d-ai-quote:views/record/panels/quote-assistant",
+        "aclScope": "Opportunity",
+        "acl": "edit",
+        "isForm": true
+      }
+    ]
+  },
+  "relationshipPanels": {
+    "x3dAiQuotes": {
+      "label": "AI-offerteconcepten",
+      "orderBy": "createdAt",
+      "orderDirection": "desc"
+    }
+  }
+}

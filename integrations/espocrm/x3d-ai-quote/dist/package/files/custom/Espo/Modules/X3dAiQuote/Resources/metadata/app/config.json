@@ -1,0 +1,10 @@
+{
+  "params": {
+    "x3dOpenAiApiKey": {
+      "level": "internal"
+    },
+    "x3dOpenAiModel": {
+      "level": "admin"
+    }
+  }
+}

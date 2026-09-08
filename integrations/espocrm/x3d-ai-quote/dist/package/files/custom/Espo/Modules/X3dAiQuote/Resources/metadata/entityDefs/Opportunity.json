@@ -1,0 +1,23 @@
+{
+  "fields": {
+    "x3dMaterialCostEur": {"type": "float", "decimalPlaces": 2},
+    "x3dElectricityCostEur": {"type": "float", "decimalPlaces": 2},
+    "x3dDryerCostEur": {"type": "float", "decimalPlaces": 2},
+    "x3dModelingCostEur": {"type": "float", "decimalPlaces": 2},
+    "x3dScanCostEur": {"type": "float", "decimalPlaces": 2},
+    "x3dDeliveryCostEur": {"type": "float", "decimalPlaces": 2},
+    "x3dExtraCostsEur": {"type": "float", "decimalPlaces": 2},
+    "x3dQuoteAmountEur": {"type": "float", "decimalPlaces": 2},
+    "x3dDiscountAmountEur": {"type": "float", "decimalPlaces": 2},
+    "x3dFinalAmountEur": {"type": "float", "decimalPlaces": 2},
+    "x3dShippingCostEur": {"type": "float", "decimalPlaces": 2}
+  },
+  "links": {
+    "x3dAiQuotes": {
+      "type": "hasMany",
+      "entity": "X3dAiQuote",
+      "foreign": "opportunity",
+      "audited": true
+    }
+  }
+}

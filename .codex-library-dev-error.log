@@ -1,0 +1,17 @@
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: EPERM: operation not permitted, rename 'C:\Users\donmi\Documents\website_x3dprints\.next-dev\cache\webpack\client-development\1.pack.gz_' -> 'C:\Users\donmi\Documents\website_x3dprints\.next-dev\cache\webpack\client-development\1.pack.gz'
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/bibliotheek'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/bibliotheek'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/bibliotheek'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/bibliotheek'
+}

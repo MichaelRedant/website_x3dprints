@@ -1,0 +1,12 @@
+[
+  {
+    "rows": [
+      [{"name": "name"}, {"name": "status"}],
+      [{"name": "calculatedTotalExclVat"}, {"name": "totalExclVat"}],
+      [{"name": "requestSummary", "fullWidth": true}],
+      [{"name": "customerText", "fullWidth": true}],
+      [{"name": "projectSummary", "fullWidth": true}],
+      [{"name": "missingInformation", "fullWidth": true}]
+    ]
+  }
+]

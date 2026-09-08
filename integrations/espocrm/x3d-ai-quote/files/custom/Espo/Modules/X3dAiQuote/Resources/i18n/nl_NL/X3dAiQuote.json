@@ -1,0 +1,69 @@
+{
+  "labels": {
+    "Create X3dAiQuote": "AI-offerteconcept maken"
+  },
+  "fields": {
+    "name": "Titel",
+    "status": "Status",
+    "lead": "Lead",
+    "opportunity": "Project / verkoopkans",
+    "x3dImport": "X3DImport",
+    "email": "Bronmail",
+    "sourceRecordType": "Brontype",
+    "sourceRecordId": "Bron-ID",
+    "sourceRecordName": "Bronnaam",
+    "sourceType": "Herkomst aanvraag",
+    "requestSummary": "Samenvatting aanvraag",
+    "customerLanguage": "Taal klantmail",
+    "customerSubject": "Onderwerp klantmail",
+    "sourceText": "Originele aanvraagtekst",
+    "internalText": "Interne kostprijsanalyse",
+    "lineItemsText": "Offerteposten (audit)",
+    "assumptions": "Aannames en voorwaarden",
+    "missingInformation": "Ontbrekende informatie",
+    "customerText": "Voorstel voor klant",
+    "projectSummary": "CRM-projectsamenvatting",
+    "currency": "Valuta",
+    "totalExclVat": "Totaal excl. btw",
+    "calculatedTotalExclVat": "Berekend totaal",
+    "commercialAdjustment": "Commerciële aanpassing",
+    "optionsTotal": "Totaal opties",
+    "totalWithOptions": "Totaal met alle opties",
+    "vatRate": "Btw-percentage",
+    "vatAmount": "Btw-bedrag",
+    "totalInclVat": "Totaal incl. btw",
+    "vatStatement": "Btw-vermelding",
+    "validUntil": "Geldig tot",
+    "priceRulesVersion": "Versie prijsregels",
+    "aiModel": "AI-model",
+    "aiResponseId": "AI response-ID",
+    "promptVersion": "Promptversie",
+    "assignedUser": "Toegewezen gebruiker",
+    "teams": "Teams",
+    "createdAt": "Aangemaakt op",
+    "modifiedAt": "Gewijzigd op"
+  },
+  "links": {
+    "lead": "Lead",
+    "opportunity": "Project / verkoopkans",
+    "x3dImport": "X3DImport",
+    "email": "Bronmail",
+    "assignedUser": "Toegewezen gebruiker",
+    "teams": "Teams"
+  },
+  "options": {
+    "status": {
+      "Draft": "Concept",
+      "Reviewed": "Gecontroleerd",
+      "Sent": "Verzonden",
+      "Accepted": "Aanvaard",
+      "Rejected": "Afgewezen"
+    },
+    "sourceType": {
+      "WebsiteForm": "Websiteformulier",
+      "Email": "E-mail",
+      "X3DImport": "X3DImport",
+      "Manual": "Handmatig"
+    }
+  }
+}

@@ -41,7 +41,7 @@ import { localizeHref } from "@/lib/i18n/paths"
 import type { Locale } from "@/lib/i18n/locales"
 
 const datePublished = "2026-05-18"
-const dateModified = "2026-05-18"
+const dateModified = "2026-09-08"
 const scannerImage = "/images/CR-Scan_Otter_3.webp"
 
 const NL_METADATA: Metadata = {
@@ -124,7 +124,7 @@ const SCANNING_COPY_NL = {
     primaryCta: "Vraag gratis scan-intake aan",
     secondaryCta: "Bekijk 3D modelleren",
     tertiaryCta: "Portfolio bekijken",
-    lastUpdated: "Laatst bijgewerkt: 18 mei 2026",
+    lastUpdated: "Laatst bijgewerkt: 8 september 2026",
     imageAlt: "CR-Scan Otter 3D scanner als parallax beeld op de 3D scanning servicepagina",
   },
   heroFacts: [
@@ -395,9 +395,15 @@ const SCANNING_COPY_NL = {
   referencesIntro:
     "Deze bronnen gebruiken we voor scannercontext, terminologie en CAD/3D-print workflow. Concrete projectresultaten hangen altijd af van object, oppervlak en doel.",
   references: [
-    { label: "Creality CR-Scan Otter productinformatie", url: "https://store.creality.com/products/cr-scan-otter-3d-scanner" },
-    { label: "ISO/ASTM 52900 terminologie voor additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
-    { label: "Autodesk Fusion 360 productpagina voor CAD-workflows", url: "https://www.autodesk.com/products/fusion-360/overview" },
+    { label: "Smithsonian 3D Digitization Program", url: "https://3d.si.edu/about" },
+    {
+      label: "NIST-onderzoek naar de prestaties van 3D-imagingsystemen",
+      url: "https://www.nist.gov/publications/characterization-range-performance-3d-imaging-system-nist-tn-1695",
+    },
+    {
+      label: "Europeana-richtlijnen voor 3D digital assets",
+      url: "https://pro.europeana.eu/project/advanced-documentation-of-3d-digital-assets",
+    },
   ],
   schema: {
     serviceName: "3D scanning service",
@@ -449,7 +455,7 @@ const SCANNING_COPY_EN: RouteCopy = {
     primaryCta: "Request free scan intake",
     secondaryCta: "View 3D modelling",
     tertiaryCta: "View portfolio",
-    lastUpdated: "Last updated: May 18, 2026",
+    lastUpdated: "Last updated: September 8, 2026",
     imageAlt: "CR-Scan Otter 3D scanner as parallax image on the 3D scanning service page",
   },
   heroFacts: [
@@ -720,9 +726,15 @@ const SCANNING_COPY_EN: RouteCopy = {
   referencesIntro:
     "These sources guide scanner context, terminology and CAD/3D printing workflow. Concrete project results always depend on object, surface and goal.",
   references: [
-    { label: "Creality CR-Scan Otter product information", url: "https://store.creality.com/products/cr-scan-otter-3d-scanner" },
-    { label: "ISO/ASTM 52900 terminology for additive manufacturing", url: "https://www.astm.org/f2997-13r21.html" },
-    { label: "Autodesk Fusion 360 product page for CAD workflows", url: "https://www.autodesk.com/products/fusion-360/overview" },
+    { label: "Smithsonian 3D Digitization Program", url: "https://3d.si.edu/about" },
+    {
+      label: "NIST research into 3D imaging system performance",
+      url: "https://www.nist.gov/publications/characterization-range-performance-3d-imaging-system-nist-tn-1695",
+    },
+    {
+      label: "Europeana guidance for 3D digital assets",
+      url: "https://pro.europeana.eu/project/advanced-documentation-of-3d-digital-assets",
+    },
   ],
   schema: {
     serviceName: "3D scanning service",

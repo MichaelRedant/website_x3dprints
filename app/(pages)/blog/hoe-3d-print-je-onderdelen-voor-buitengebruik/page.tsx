@@ -12,7 +12,7 @@ import { SHOP_INDEXABLE } from "@/content/shop-products"
 
 const canonical = "https://www.x3dprints.be/blog/hoe-3d-print-je-onderdelen-voor-buitengebruik/"
 const publishedDate = "2025-11-21T08:00:00+01:00"
-const dateModified = "2026-02-08T08:00:00+01:00"
+const dateModified = "2026-09-08T09:00:00+02:00"
 const faq = BLOG_FAQ["hoe-3d-print-je-onderdelen-voor-buitengebruik"]
 
 export const metadata: Metadata = {
@@ -90,7 +90,7 @@ const scenarioMatrix = [
   { application: "Trillende componenten", material: "TPU", reason: "Dempt vibraties en verdeelt belasting rond schroeven." },
 ]
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 8 februari 2026"
+const lastUpdatedLabel = "Laatst bijgewerkt: 8 september 2026"
 
 const references = [
   {
@@ -139,6 +139,13 @@ export default function OutdoorPrintingGuidePage() {
               Outdoor 3D prints lijken simpel, tot zon, regen en temperatuurschommelingen hun werk doen. In deze gids leer je
               welke materialen standhouden, hoe je bevestigt zonder scheuren en waar PLA toch een rol speelt zonder vroegtijdige
               degradatie.
+            </p>
+            <p className="mt-4 max-w-3xl text-sm leading-6 text-slate-600">
+              Blijft een onderdeel permanent in direct zonlicht? Lees dan ook de verdiepende gids over{" "}
+              <Link href="/blog/asa-3d-printen" className="font-semibold text-indigo-600 underline underline-offset-4">
+                ASA 3D printen voor buitengebruik
+              </Link>
+              . ASA is UV-stabieler dan de meeste standaardfilamenten, maar stelt strengere eisen aan ontwerp en productie.
             </p>
             <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">

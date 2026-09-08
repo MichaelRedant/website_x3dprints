@@ -1,0 +1,10 @@
+{
+  "fields": {
+    "x3dOpenAiApiKey": "OpenAI API-sleutel",
+    "x3dOpenAiModel": "OpenAI-model"
+  },
+  "tooltips": {
+    "x3dOpenAiApiKey": "Server-side sleutel voor de Responses API. Deze waarde mag nooit in client-JavaScript staan.",
+    "x3dOpenAiModel": "Standaard: gpt-5.4-mini. Wijzig alleen naar een model dat Structured Outputs ondersteunt."
+  }
+}

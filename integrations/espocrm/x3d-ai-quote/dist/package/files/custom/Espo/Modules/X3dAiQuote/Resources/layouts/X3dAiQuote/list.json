@@ -1,0 +1,8 @@
+[
+  {"name": "name", "link": true},
+  {"name": "status", "width": 15},
+  {"name": "sourceRecordName", "width": 25},
+  {"name": "totalExclVat", "width": 15},
+  {"name": "validUntil", "width": 15},
+  {"name": "createdAt", "width": 18}
+]

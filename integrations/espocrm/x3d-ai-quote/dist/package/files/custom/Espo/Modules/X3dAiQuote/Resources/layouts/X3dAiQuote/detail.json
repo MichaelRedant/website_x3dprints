@@ -1,0 +1,25 @@
+[
+  {
+    "rows": [
+      [{"name": "name"}, {"name": "status"}],
+      [{"name": "lead"}, {"name": "opportunity"}],
+      [{"name": "x3dImport"}, {"name": "email"}],
+      [{"name": "sourceType"}, {"name": "validUntil"}],
+      [{"name": "customerLanguage"}, {"name": "customerSubject"}],
+      [{"name": "calculatedTotalExclVat"}, {"name": "commercialAdjustment"}],
+      [{"name": "totalExclVat"}, {"name": "optionsTotal"}],
+      [{"name": "totalWithOptions"}, {"name": "vatStatement"}],
+      [{"name": "requestSummary", "fullWidth": true}],
+      [{"name": "internalText", "fullWidth": true}],
+      [{"name": "customerText", "fullWidth": true}],
+      [{"name": "projectSummary", "fullWidth": true}],
+      [{"name": "missingInformation", "fullWidth": true}],
+      [{"name": "assumptions", "fullWidth": true}],
+      [{"name": "lineItemsText", "fullWidth": true}],
+      [{"name": "sourceText", "fullWidth": true}],
+      [{"name": "priceRulesVersion"}, {"name": "aiModel"}],
+      [{"name": "promptVersion"}, {"name": "aiResponseId"}],
+      [{"name": "assignedUser"}, {"name": "teams"}]
+    ]
+  }
+]

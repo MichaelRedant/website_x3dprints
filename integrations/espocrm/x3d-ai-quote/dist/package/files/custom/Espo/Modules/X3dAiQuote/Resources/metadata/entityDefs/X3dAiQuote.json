@@ -1,0 +1,211 @@
+{
+  "fields": {
+    "name": {
+      "type": "varchar",
+      "maxLength": 180,
+      "required": true
+    },
+    "status": {
+      "type": "enum",
+      "options": ["Draft", "Reviewed", "Sent", "Accepted", "Rejected"],
+      "default": "Draft",
+      "style": {
+        "Draft": "info",
+        "Reviewed": "primary",
+        "Sent": "warning",
+        "Accepted": "success",
+        "Rejected": "danger"
+      }
+    },
+    "lead": {
+      "type": "link"
+    },
+    "opportunity": {
+      "type": "link"
+    },
+    "x3dImport": {
+      "type": "link"
+    },
+    "email": {
+      "type": "link"
+    },
+    "sourceRecordType": {
+      "type": "enum",
+      "options": ["Email", "Lead", "Opportunity", "X3dImport"],
+      "required": true
+    },
+    "sourceRecordId": {
+      "type": "varchar",
+      "maxLength": 26,
+      "required": true
+    },
+    "sourceRecordName": {
+      "type": "varchar",
+      "maxLength": 255
+    },
+    "sourceType": {
+      "type": "enum",
+      "options": ["WebsiteForm", "Email", "X3DImport", "Manual"],
+      "default": "Manual"
+    },
+    "requestSummary": {
+      "type": "text"
+    },
+    "customerLanguage": {
+      "type": "enum",
+      "options": ["nl", "fr", "en", "de"],
+      "default": "nl"
+    },
+    "customerSubject": {
+      "type": "varchar",
+      "maxLength": 255
+    },
+    "sourceText": {
+      "type": "text"
+    },
+    "internalText": {
+      "type": "text"
+    },
+    "lineItemsText": {
+      "type": "text"
+    },
+    "assumptions": {
+      "type": "text"
+    },
+    "missingInformation": {
+      "type": "text"
+    },
+    "customerText": {
+      "type": "text"
+    },
+    "projectSummary": {
+      "type": "text"
+    },
+    "currency": {
+      "type": "enum",
+      "options": ["EUR"],
+      "default": "EUR"
+    },
+    "totalExclVat": {
+      "type": "float",
+      "decimalPlaces": 2,
+      "default": 0
+    },
+    "calculatedTotalExclVat": {
+      "type": "float",
+      "decimalPlaces": 2,
+      "default": 0
+    },
+    "commercialAdjustment": {
+      "type": "float",
+      "decimalPlaces": 2,
+      "default": 0
+    },
+    "optionsTotal": {
+      "type": "float",
+      "decimalPlaces": 2,
+      "default": 0
+    },
+    "totalWithOptions": {
+      "type": "float",
+      "decimalPlaces": 2,
+      "default": 0
+    },
+    "vatRate": {
+      "type": "float",
+      "decimalPlaces": 2,
+      "default": 0
+    },
+    "vatAmount": {
+      "type": "float",
+      "decimalPlaces": 2,
+      "default": 0
+    },
+    "totalInclVat": {
+      "type": "float",
+      "decimalPlaces": 2,
+      "default": 0
+    },
+    "vatStatement": {
+      "type": "varchar",
+      "maxLength": 255
+    },
+    "validUntil": {
+      "type": "date"
+    },
+    "priceRulesVersion": {
+      "type": "varchar",
+      "maxLength": 80
+    },
+    "aiModel": {
+      "type": "varchar",
+      "maxLength": 100
+    },
+    "aiResponseId": {
+      "type": "varchar",
+      "maxLength": 100
+    },
+    "promptVersion": {
+      "type": "varchar",
+      "maxLength": 100
+    },
+    "assignedUser": {
+      "type": "link"
+    },
+    "teams": {
+      "type": "linkMultiple"
+    },
+    "createdAt": {
+      "type": "datetime",
+      "readOnly": true
+    },
+    "modifiedAt": {
+      "type": "datetime",
+      "readOnly": true
+    }
+  },
+  "links": {
+    "lead": {
+      "type": "belongsTo",
+      "entity": "Lead",
+      "foreign": "x3dAiQuotes"
+    },
+    "opportunity": {
+      "type": "belongsTo",
+      "entity": "Opportunity",
+      "foreign": "x3dAiQuotes"
+    },
+    "x3dImport": {
+      "type": "belongsTo",
+      "entity": "X3dImport",
+      "foreign": "x3dAiQuotes"
+    },
+    "email": {
+      "type": "belongsTo",
+      "entity": "Email",
+      "foreign": "x3dAiQuotes"
+    },
+    "assignedUser": {
+      "type": "belongsTo",
+      "entity": "User"
+    },
+    "teams": {
+      "type": "hasMany",
+      "entity": "Team",
+      "relationName": "entityTeam"
+    }
+  },
+  "indexes": {
+    "sourceRecord": {
+      "columns": ["sourceRecordType", "sourceRecordId"]
+    },
+    "status": {
+      "columns": ["status"]
+    }
+  },
+  "collection": {
+    "textFilterFields": ["name", "requestSummary", "sourceRecordName"],
+    "orderBy": "createdAt",
+    "order": "desc"
+  }
+}

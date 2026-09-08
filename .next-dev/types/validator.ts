@@ -227,6 +227,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/blog/3d-printing-marketing-events">
 }
 
+// Validate ..\..\app\(pages)\blog\asa-3d-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\asa-3d-printen\\page.js")
+  handler satisfies AppPageConfig<"/blog/asa-3d-printen">
+}
+
 // Validate ..\..\app\(pages)\blog\bestanden-voor-3d-printen\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\bestanden-voor-3d-printen\\page.js")
@@ -305,6 +311,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/blog/finishing-friday-schuren-primen-lakken">
 }
 
+// Validate ..\..\app\(pages)\blog\flushpoint-plafondsokkel-spuitplafond\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\flushpoint-plafondsokkel-spuitplafond\\page.js")
+  handler satisfies AppPageConfig<"/blog/flushpoint-plafondsokkel-spuitplafond">
+}
+
 // Validate ..\..\app\(pages)\blog\gridfinity-modulair-opslagsysteem\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\gridfinity-modulair-opslagsysteem\\page.js")
@@ -327,6 +339,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\hoe-lang-duurt-3d-printen\\page.js")
   handler satisfies AppPageConfig<"/blog/hoe-lang-duurt-3d-printen">
+}
+
+// Validate ..\..\app\(pages)\blog\hoe-werkt-3d-scanning\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\hoe-werkt-3d-scanning\\page.js")
+  handler satisfies AppPageConfig<"/blog/hoe-werkt-3d-scanning">
 }
 
 // Validate ..\..\app\(pages)\blog\hoeveel-kost-3d-printen\page.tsx
@@ -527,6 +545,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/blog/vervangstuk-huishoudtoestel-3d-printen">
 }
 
+// Validate ..\..\app\(pages)\blog\vliezelse-beer-3d-beeldjes-berenfeesten\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\(pages)\\blog\\vliezelse-beer-3d-beeldjes-berenfeesten\\page.js")
+  handler satisfies AppPageConfig<"/blog/vliezelse-beer-3d-beeldjes-berenfeesten">
+}
+
 // Validate ..\..\app\(pages)\cases\[slug]\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\cases\\[slug]\\page.js")
@@ -699,6 +723,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\viewer\\page.js")
   handler satisfies AppPageConfig<"/viewer">
+}
+
+// Validate ..\..\app\bibliotheek\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\bibliotheek\\page.js")
+  handler satisfies AppPageConfig<"/bibliotheek">
 }
 
 // Validate ..\..\app\en\(home)\page.tsx
@@ -881,6 +911,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/en/blog/3d-printing-marketing-events">
 }
 
+// Validate ..\..\app\en\(pages)\blog\asa-3d-printen\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\asa-3d-printen\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/asa-3d-printen">
+}
+
 // Validate ..\..\app\en\(pages)\blog\bestanden-voor-3d-printen\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\bestanden-voor-3d-printen\\page.js")
@@ -959,6 +995,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/en/blog/finishing-friday-schuren-primen-lakken">
 }
 
+// Validate ..\..\app\en\(pages)\blog\flushpoint-plafondsokkel-spuitplafond\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\flushpoint-plafondsokkel-spuitplafond\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/flushpoint-plafondsokkel-spuitplafond">
+}
+
 // Validate ..\..\app\en\(pages)\blog\gridfinity-modular-storage-system\page.tsx
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\gridfinity-modular-storage-system\\page.js")
@@ -981,6 +1023,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\hoe-lang-duurt-3d-printen\\page.js")
   handler satisfies AppPageConfig<"/en/blog/hoe-lang-duurt-3d-printen">
+}
+
+// Validate ..\..\app\en\(pages)\blog\hoe-werkt-3d-scanning\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\hoe-werkt-3d-scanning\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/hoe-werkt-3d-scanning">
 }
 
 // Validate ..\..\app\en\(pages)\blog\hoeveel-kost-3d-printen\page.tsx
@@ -1179,6 +1227,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\vervangstuk-huishoudtoestel-3d-printen\\page.js")
   handler satisfies AppPageConfig<"/en/blog/vervangstuk-huishoudtoestel-3d-printen">
+}
+
+// Validate ..\..\app\en\(pages)\blog\vliezelse-beer-3d-beeldjes-berenfeesten\page.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\en\\(pages)\\blog\\vliezelse-beer-3d-beeldjes-berenfeesten\\page.js")
+  handler satisfies AppPageConfig<"/en/blog/vliezelse-beer-3d-beeldjes-berenfeesten">
 }
 
 // Validate ..\..\app\en\(pages)\cases\[slug]\page.tsx
@@ -1465,6 +1519,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("..\\..\\app\\(pages)\\shop\\layout.js")
   handler satisfies LayoutConfig<"/shop">
+}
+
+// Validate ..\..\app\bibliotheek\layout.tsx
+{
+  const handler = {} as typeof import("..\\..\\app\\bibliotheek\\layout.js")
+  handler satisfies LayoutConfig<"/bibliotheek">
 }
 
 // Validate ..\..\app\en\(home)\layout.tsx

@@ -361,6 +361,25 @@ const TOPICS_NL: Topic[] = [
     category: "filament-friday",
   },
   {
+    id: "asa-3d-printen",
+    title: "ASA 3D printen: complete gids voor buitengebruik",
+    date: "2026-09-08",
+    summary:
+      "Wanneer kies je ASA voor een 3D print? Deze kennisbankgids behandelt UV, weer, warmte, warping, ventilatie en de afweging tegenover PETG, ABS en PC.",
+    highlights: [
+      "Concrete buitentoepassingen en duidelijke grenzen voor veiligheid, waterdichtheid en certificatie.",
+      "Vergelijkingstabel, ontwerpregels, offertechecklist en primaire bronnen van Prusa, Bambu Lab, UltiMaker en NIOSH.",
+      "Lokale dienstverlening vanuit Herzele met levering naar Gent, Antwerpen, Hasselt, Genk en de rest van Belgie.",
+    ],
+    links: [
+      { label: "Lees de ASA materiaalgids", href: "/blog/asa-3d-printen" },
+      { label: "Vergelijk alle materialen", href: "/materials#material-suggestion-tool" },
+      { label: "Vraag een ASA-offerte", href: "/contact?material=ABS%2FASA" },
+    ],
+    intent: "informational",
+    category: "materials-pricing",
+  },
+  {
     id: "filament-vrijdag-pc",
     title: "Filament Vrijdag #5: polycarbonaat (PC) 3D printen",
     summary:
@@ -720,6 +739,25 @@ const TOPICS_NL: Topic[] = [
     ],
     intent: "how-to",
     category: "use-case-dinsdag",
+  },
+  {
+    id: "hoe-werkt-3d-scanning",
+    title: "Hoe werkt 3D scanning? Van object naar 3D-model",
+    date: "2026-09-08",
+    summary:
+      "Complete gids over objectscans, scan-to-print, reverse engineering, STL, OBJ, PLY en STEP, met eerlijke uitleg over scanbaarheid en nauwkeurigheid.",
+    highlights: [
+      "Maakt duidelijk dat foto's alleen voor de haalbaarheidscheck dienen en het fysieke object voor de scan naar Herzele komt.",
+      "Vergelijkt scanroutes en bestandsformaten, inclusief het verschil tussen een mesh en bewerkbaar CAD-model.",
+      "Bevat acht praktische FAQ's, lokale servicelinks en bronnen van Smithsonian, NIST, Europeana, Library of Congress en Arteveldehogeschool.",
+    ],
+    links: [
+      { label: "Lees de complete 3D-scanninggids", href: "/blog/hoe-werkt-3d-scanning" },
+      { label: "Bekijk de 3D scanservice", href: "/3d-scannen" },
+      { label: "Vraag een gratis scan-intake", href: "/contact?topic=3d-scanning" },
+    ],
+    intent: "how-to",
+    category: "how-to",
   },
   {
     id: "juiste-3d-print-materiaal",
@@ -1715,6 +1753,25 @@ const TOPICS_EN: Topic[] = [
     category: "filament-friday",
   },
   {
+    id: "asa-3d-printen",
+    title: "ASA 3D printing: complete outdoor-use guide",
+    date: "2026-09-08",
+    summary:
+      "When should you specify ASA for a 3D print? This knowledge-base guide covers UV, weather, heat, warping, ventilation and the trade-off versus PETG, ABS and PC.",
+    highlights: [
+      "Practical outdoor applications and clear limits around safety, waterproofing and certification.",
+      "Comparison table, design rules, quote checklist and primary sources from Prusa, Bambu Lab, UltiMaker and NIOSH.",
+      "Production in Herzele with delivery to Ghent, Antwerp, Hasselt, Genk and the rest of Belgium.",
+    ],
+    links: [
+      { label: "Read the ASA material guide", href: "/blog/asa-3d-printen" },
+      { label: "Compare all materials", href: "/materials#material-suggestion-tool" },
+      { label: "Request an ASA quote", href: "/contact?material=ABS%2FASA" },
+    ],
+    intent: "informational",
+    category: "materials-pricing",
+  },
+  {
     id: "filament-vrijdag-pc",
     title: "Filament Friday #5: polycarbonate (PC) 3D printing",
     summary:
@@ -2092,6 +2149,25 @@ const TOPICS_EN: Topic[] = [
     ],
     intent: "how-to",
     category: "use-case-dinsdag",
+  },
+  {
+    id: "hoe-werkt-3d-scanning",
+    title: "How does 3D scanning work? From object to 3D model",
+    date: "2026-09-08",
+    summary:
+      "Complete guide to object scanning, scan-to-print, reverse engineering, STL, OBJ, PLY and STEP, with realistic guidance on scannability and accuracy.",
+    highlights: [
+      "Explains that photos are only used for feasibility review and the physical object must come to Herzele for capture.",
+      "Compares scanning routes and file formats, including the difference between a mesh and an editable CAD model.",
+      "Includes eight practical FAQs, local service links and sources from Smithsonian, NIST, Europeana, Library of Congress and Artevelde University of Applied Sciences.",
+    ],
+    links: [
+      { label: "Read the complete 3D scanning guide", href: "/blog/hoe-werkt-3d-scanning" },
+      { label: "View the 3D scanning service", href: "/3d-scannen" },
+      { label: "Request a free scan intake", href: "/contact?topic=3d-scanning" },
+    ],
+    intent: "how-to",
+    category: "how-to",
   },
   {
     id: "juiste-3d-print-materiaal",
@@ -3134,7 +3210,7 @@ export default function BlogPage({ locale }: BlogPageProps) {
         { label: "Schema.org BlogPosting", url: "https://schema.org/BlogPosting" },
         { label: "Google docs over structured data", url: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" },
       ]
-  const lastUpdatedLabel = isEn ? "Last updated: July 31, 2026" : "Laatst bijgewerkt: 31 juli 2026"
+  const lastUpdatedLabel = isEn ? "Last updated: September 8, 2026" : "Laatst bijgewerkt: 8 september 2026"
   const topicsWithDate = topics.filter((topic): topic is Topic & { date: string } => Boolean(topic.date))
 
   const SORT_PREFERENCE: Record<TopicCategory, "featured" | "az"> = {

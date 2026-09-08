@@ -1,0 +1,34 @@
+{
+  "labels": {
+    "Create X3dAiQuote": "Create AI Quote Draft"
+  },
+  "fields": {
+    "name": "Title",
+    "status": "Status",
+    "lead": "Lead",
+    "opportunity": "Opportunity",
+    "x3dImport": "X3DImport",
+    "email": "Source email",
+    "sourceRecordName": "Source record",
+    "sourceType": "Request source",
+    "requestSummary": "Request summary",
+    "customerLanguage": "Customer email language",
+    "customerSubject": "Customer email subject",
+    "sourceText": "Original request",
+    "internalText": "Internal cost analysis",
+    "lineItemsText": "Line items (audit)",
+    "assumptions": "Assumptions",
+    "missingInformation": "Missing information",
+    "customerText": "Customer proposal",
+    "projectSummary": "CRM project summary",
+    "totalExclVat": "Total excl. VAT",
+    "calculatedTotalExclVat": "Calculated total",
+    "commercialAdjustment": "Commercial adjustment",
+    "optionsTotal": "Options total",
+    "totalWithOptions": "Total with all options",
+    "vatAmount": "VAT amount",
+    "totalInclVat": "Total incl. VAT",
+    "vatStatement": "VAT statement",
+    "validUntil": "Valid until"
+  }
+}

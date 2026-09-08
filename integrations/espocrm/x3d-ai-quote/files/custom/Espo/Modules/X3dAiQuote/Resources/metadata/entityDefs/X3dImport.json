@@ -1,0 +1,10 @@
+{
+  "links": {
+    "x3dAiQuotes": {
+      "type": "hasMany",
+      "entity": "X3dAiQuote",
+      "foreign": "x3dImport",
+      "audited": true
+    }
+  }
+}

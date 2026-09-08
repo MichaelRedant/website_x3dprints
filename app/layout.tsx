@@ -9,6 +9,7 @@ import {
 } from "@/lib/seo"
 import { Orbitron, JetBrains_Mono } from "next/font/google"
 import { cn } from "@/lib/utils"
+import BusinessEmailClickTracking from "@/components/BusinessEmailClickTracking"
 
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
 const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron", weight: ["400", "500", "600", "700"] })
@@ -154,6 +155,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={cn("min-h-screen flex flex-col antialiased", orbitron.variable, mono.variable)}>
         <script dangerouslySetInnerHTML={{ __html: localeBootstrapScript }} />
         {children}
+        <BusinessEmailClickTracking />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       </body>
     </html>

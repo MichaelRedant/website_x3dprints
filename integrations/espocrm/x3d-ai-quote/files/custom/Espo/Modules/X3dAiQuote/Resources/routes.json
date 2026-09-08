@@ -1,0 +1,7 @@
+[
+  {
+    "route": "/X3dAiQuote/analyze",
+    "method": "post",
+    "actionClassName": "Espo\\Modules\\X3dAiQuote\\Api\\PostAnalyze"
+  }
+]

@@ -53,6 +53,8 @@ const EN_BLOG_SLUGS = new Set<string>([
   "filament-vrijdag-tpu",
   "filament-vrijdag-pla",
   "filament-vrijdag-petg",
+  "asa-3d-printen",
+  "hoe-werkt-3d-scanning",
   "filament-vrijdag-pla-wood",
   "filament-vrijdag-pla-marble",
   "filament-vrijdag-pla-glow",
