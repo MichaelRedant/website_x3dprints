@@ -38,7 +38,7 @@ Voor **3D printen in Zemst** leveren we prototypes, behuizingen en tooling richt
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via A12/E19; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

@@ -158,7 +158,7 @@ const differentiators = [
 
 const workflow = [
   {
-    title: "1) Upload & context",
+    title: "1) Bestandslink & context",
     detail:
       "Stuur je STL- of STEP-bestand met toepassing, kritieke maten en gewenste afwerking. Hoe beter de briefing, hoe gerichter de oplossing.",
   },
@@ -300,7 +300,7 @@ const howToJsonLd = buildHowToSchema({
   inLanguage: "nl-BE",
   mainEntityOfPage: pageUrl,
   name: "3D printen aanvragen bij X3DPrints",
-  description: "Upload STL/STEP, ontvang materiaaladvies en prijs, wij 3D printen en leveren of jij haalt af.",
+  description: "Deel een STL/STEP-link, ontvang materiaaladvies en prijs, wij 3D printen en leveren of jij haalt af.",
   steps: workflow.map((w) => ({ name: w.title, text: w.detail })),
   toolNames: ["FDM 3D-printer met PLA, PETG of TPU"],
   supplyNames: ["STL- of STEP-bestand voor 3D printen"],
@@ -390,7 +390,7 @@ export default function Page() {
               </p>
               <p className="mt-3 text-sm text-slate-600">
                 Zoek je een &quot;3D print bureau&quot; voor bedrijven of particulieren? Deze pagina koppelt je direct aan de juiste
-                resources: diensten, materialen, prijzen, upload en segmenten. Zo vind je sneller de juiste route per use-case.
+                resources: diensten, materialen, prijzen, bestandslinks en segmenten. Zo vind je sneller de juiste route per use-case.
               </p>
               <p className="mt-3 text-sm text-slate-600">
                 Wil je dieper duiken? Gebruik de onderstaande kennisbanklinks of start meteen in de{" "}
@@ -441,7 +441,7 @@ export default function Page() {
               Waarom 3D printen bij X3DPrints?
             </h2>
             <p className="mt-2 text-slate-600">
-              Geen anonieme uploadportal, wel concrete samenwerking rond 3D printen. Deze pijlers maken het verschil wanneer je lokaal wil laten printen.
+              Geen anoniem bestandsportaal, wel concrete samenwerking rond 3D printen. Deze pijlers maken het verschil wanneer je lokaal wil laten printen.
             </p>
           </Reveal>
           <div className="grid gap-4 md:grid-cols-2">
@@ -681,7 +681,7 @@ export default function Page() {
                     href="/viewer"
                     className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:-translate-y-0.5 hover:bg-white"
                   >
-                    STL/STEP uploaden
+                    STL/STEP-link delen
                   </Link>
                 </div>
               </div>

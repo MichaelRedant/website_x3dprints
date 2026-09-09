@@ -101,4 +101,4 @@ We verzenden vanuit Herzele naar Maasmechelen. Er is geen lokaal afhaalpunt; afh
 
 ## Offerte voor 3D printen in Maasmechelen
 
-Upload je model, logo of schets via [contact](/contact). Beschrijf waar het stuk wordt gebruikt, hoeveel exemplaren je nodig hebt en welke zichtzijde het belangrijkst is.
+Deel een link naar je model, logo of schets via [contact](/contact). Beschrijf waar het stuk wordt gebruikt, hoeveel exemplaren je nodig hebt en welke zichtzijde het belangrijkst is.

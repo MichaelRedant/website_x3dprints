@@ -38,7 +38,7 @@ Voor **3D printen in Drogenbos** leveren we prototypes, behuizingen en tooling r
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via kanaalzone/R0; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

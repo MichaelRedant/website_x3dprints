@@ -35,7 +35,7 @@ Zoek je 3D printen in Volkegem (Oudenaarde)? We denken mee over passing, sterkte
 
 ## Stappen
 
-1) Upload STL/STEP via [contact](/contact) met context en aantallen.  
+1) Deel een STL/STEP-link via [contact](/contact) met context en aantallen.  
 2) We adviseren orientatie en materiaalkeuze.  
 3) Print, QC en levering in Volkegem of afhalen.
 

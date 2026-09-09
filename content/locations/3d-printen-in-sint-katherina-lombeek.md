@@ -98,7 +98,7 @@ Zoek je 3D printen in Sint? We denken mee over passing, sterkte en look zodat je
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Sint-Katherina-Lombeek**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Sint-Katherina-Lombeek**.
 
 
 

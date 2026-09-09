@@ -78,7 +78,7 @@ De gemeente Haaltert, met haar idyllische landschappen, sterke gemeenschapszin e
 
 ## Hoe Werkt het Bestellen van Uw 3D Print?
 
-1.  **Stuur uw bestand**: Upload uw **.STL- of .STEP-bestand** eenvoudig via onze [contactpagina](/contact).
+1.  **Stuur uw bestand**: Deel een link naar uw **.STL- of .STEP-bestand** via onze [contactpagina](/contact).
 2.  **Kies uw Materiaal**: Geef het gewenste materiaal (PLA, PETG, TPU), kleur en het aantal stuks door.
 3.  **Ontvang Offerte**: Binnen 24 uur ontvangt u van ons een heldere, vrijblijvende prijsopgave en een inschatting van de levertijd voor uw **3D printen in Haaltert** project.
 

@@ -68,7 +68,7 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte aanvragen
 
-Upload je bestand via [contact](/contact) en vermeld materiaal en deadline. We bezorgen snel een voorstel voor **3D printen in Leest**.
+Deel een link naar je bestand via [contact](/contact) en vermeld materiaal en deadline. We bezorgen snel een voorstel voor **3D printen in Leest**.
 
 <!-- LOCAL_ENRICH_START -->
 ## Leverdetails rond Leest

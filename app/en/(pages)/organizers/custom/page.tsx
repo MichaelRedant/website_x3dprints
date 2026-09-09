@@ -23,7 +23,7 @@ const PAGE_EN: OrganizerPageContent = {
   heroSubtitle: "Parametric design based on your case and tools.",
   intro:
     "No Packout/Gridfinity/TSTAK? We design a made-to-fit insert with your photo, measurements and tool list. For hobbyists and professionals with unique cases.",
-  summary: "Upload a photo and dimensions, we send a preview and print on demand.",
+  summary: "Share a link to a photo and dimensions, we send a preview and print on demand.",
 }
 const FAQ_EN = [
   {
@@ -84,7 +84,7 @@ const howToSchema = buildHowToSchema({
     { name: "Take a photo", text: "Photo of the open case, foam removed if present." },
     { name: "Measure the inside", text: "Inner length/width/height or diameter x height in millimetres." },
     { name: "List tools", text: "Name + quantity per tool and how they should lie (flat/upright)." },
-    { name: "Send via contact form", text: "Use the contact form with custom prefill to upload everything." },
+    { name: "Send via contact form", text: "Use the contact form with custom prefill to share an accessible link and all details." },
   ],
 })
 const tocItems = [

@@ -35,7 +35,7 @@ Zoek je 3D printen in Houtem (Veurne)? We denken mee over passing, sterkte en lo
 
 ## Workflow
 
-1. Upload STL/STEP via [contact](/contact) en duid de toepassing aan (defensie, industrie, landbouw)
+1. Deel een STL/STEP-link via [contact](/contact) en duid de toepassing aan (defensie, industrie, landbouw)
 2. We toetsen materiaal en toleranties aan je eisen en delen een planning
 3. Productie, supportverwijdering en inspectie volgen onze [3d-printen](/3d-printen) runbook
 4. Levering of afhaling volgens afspraak; dringende jobs krijgen prioriteitsslots

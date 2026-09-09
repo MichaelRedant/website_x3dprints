@@ -38,7 +38,7 @@ Met **3D printen in Linkebeek** leveren we prototypes, behuizingen en tooling vo
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via R0 zuid; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

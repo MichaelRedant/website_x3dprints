@@ -64,7 +64,7 @@ Sint-Antelinks is een deelgemeente van Herzele en sluit aan bij de vooruitstreve
 
 ## Hoe werkt bestellen van 3D printen in Sint-Antelinks?
 
-1. Upload je bestand via de [contactpagina](/contact).  
+1. Deel een link naar je bestand via de [contactpagina](/contact).  
 2. Kies je materiaal, afwerking en aantallen.  
 3. Ontvang een transparante offerte binnen 24 uur.  
 4. Na akkoord start de productie.  

@@ -35,7 +35,7 @@ Voor projecten in Ouwegem combineren we korte doorlooptijd met strakke afwerking
 
 ## Workflow
 
-1) Upload STL/STEP via [contact](/contact) met afmetingen en toepassing.  
+1) Deel een STL/STEP-link via [contact](/contact) met afmetingen en toepassing.  
 2) Wij adviseren orientatie en materiaal.  
 3) Print, QC en levering in Ouwegem of afhalen.
 

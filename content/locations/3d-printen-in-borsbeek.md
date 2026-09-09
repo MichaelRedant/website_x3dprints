@@ -66,7 +66,7 @@ Voor projecten in Borsbeek combineren we korte doorlooptijd met strakke afwerkin
 
 ## Offerte voor 3D printen in Borsbeek
 
-Upload je STL- of STEP-bestand via [contact](/contact). Vermeld aantallen en materiaalkeuze; we sturen snel een voorstel zodat je project in Borsbeek vooruitgaat.
+Deel een link naar je STL- of STEP-bestand via [contact](/contact). Vermeld aantallen en materiaalkeuze; we sturen snel een voorstel zodat je project in Borsbeek vooruitgaat.
 
 <!-- LOCAL_ENRICH_START -->
 ## Borsbeek als tiende Antwerpse district

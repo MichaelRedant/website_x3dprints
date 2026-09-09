@@ -41,7 +41,7 @@ We kennen de noden van aviation/logistiek en kantoorprojecten rond Zaventem. Daa
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen, deadline en gewenste afwerking.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen, deadline en gewenste afwerking.
 - Levering richting Brussels Airport, Sterrebeek en Nossegem; afhalen in Herzele mogelijk.
 - Optionele finish (schuren/primen) voor glad zichtwerk.
 

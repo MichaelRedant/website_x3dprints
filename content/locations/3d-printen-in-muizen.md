@@ -68,7 +68,7 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte aanvragen
 
-Upload je bestand via [contact](/contact) en vermeld materiaal en deadline. Je krijgt snel een voorstel voor **3D printen in Muizen**.
+Deel een link naar je bestand via [contact](/contact) en vermeld materiaal en deadline. Je krijgt snel een voorstel voor **3D printen in Muizen**.
 
 <!-- LOCAL_ENRICH_START -->
 ## Leverdetails rond Muizen

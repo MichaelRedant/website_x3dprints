@@ -56,7 +56,7 @@ export default function CustomOrganizerPage() {
       { name: "Foto maken", text: "Foto van de open koffer, schuim verwijderd." },
       { name: "Maten noteren", text: "Binnenlengte, -breedte, -hoogte (of diameter x hoogte) in mm." },
       { name: "Tools oplijsten", text: "Naam + aantal per tool en gewenste ligging (plat/rechtop)." },
-      { name: "Uploaden", text: "Gebruik het contactformulier (custom prefill) om alles te sturen." },
+      { name: "Bestandslink delen", text: "Gebruik het contactformulier (custom prefill) om een toegankelijke link en alle details te sturen." },
     ],
   })
   const tocItems = [

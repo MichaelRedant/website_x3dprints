@@ -38,7 +38,7 @@ Voor **3D printen in Steenokkerzeel** leveren we prototypes en tooling richting 
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en deadline.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en deadline.
 - Levering via Brucargo/luchthaven; afhalen in Herzele kan.
 - Optioneel schuren/primen voor glad zichtwerk.
 

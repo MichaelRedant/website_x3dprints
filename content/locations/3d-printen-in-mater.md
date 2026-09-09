@@ -35,7 +35,7 @@ Voor projecten in Mater (Oudenaarde) combineren we korte doorlooptijd met strakk
 
 ## Zo werkt het
 
-1) Upload STL/STEP via [contact](/contact) met context (omgeving/belasting).  
+1) Deel een STL/STEP-link via [contact](/contact) met context (omgeving/belasting).  
 2) Wij stemmen materiaal en orientatie af.  
 3) Productie, QC en levering in Mater of afhalen.
 

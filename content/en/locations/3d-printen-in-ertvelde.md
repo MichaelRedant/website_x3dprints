@@ -74,7 +74,7 @@ We frequently deliver to: Ertvelde, Ertvelde city center, Rieme, Evergem, Kluize
 
 ## Plan your order
 
-1. Upload STL/STEP via [contact](/en/contact).
+1. Share an STL/STEP link via [contact](/en/contact).
 2. Note material (PLA/PETG/TPU), colour and quantity.
 3. Receive quote + timing within one business day.
 

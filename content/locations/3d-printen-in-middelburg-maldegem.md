@@ -19,7 +19,7 @@ X3DPrints ondersteunt Middelburg met snelle 3D prints voor kmo’s en makers ron
 
 ## Workflow
 
-1) Upload STL/STEP via [contact](/contact) met korte context.  
+1) Deel een STL/STEP-link via [contact](/contact) met korte context.  
 2) Wij adviseren materiaal en orientatie voor sterkte of look.  
 3) Productie (2-5 werkdagen) en levering naar Middelburg of afhalen.
 

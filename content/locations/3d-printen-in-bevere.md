@@ -35,7 +35,7 @@ Voor projecten in Bevere (Oudenaarde) combineren we korte doorlooptijd met strak
 
 ## Stappenplan
 
-1) Upload je STL/STEP via [contact](/contact) met afmetingen en aantallen.  
+1) Deel een link naar je STL/STEP via [contact](/contact) met afmetingen en aantallen.  
 2) We adviseren materiaal, orientatie en layerhoogte.  
 3) We printen, controleren en leveren in Bevere of laten afhalen.
 

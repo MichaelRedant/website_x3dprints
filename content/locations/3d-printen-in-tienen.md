@@ -41,7 +41,7 @@ We kennen de mix van voeding, logistiek en maakbedrijven rond Tiense Suiker. Daa
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en gewenste finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en gewenste finish.
 - Levering via E40; afhalen in Herzele mogelijk.
 - We voorzien kleur/afwerking zodat onderdelen meteen inzetbaar zijn.
 

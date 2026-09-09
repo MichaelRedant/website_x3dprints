@@ -35,7 +35,7 @@ Werk je in Welden (Oudenaarde)? We leveren snelle prototypes en zowel kleine als
 
 ## Werkwijze
 
-1) Upload STL/STEP via [contact](/contact) met afmetingen en toepassing.  
+1) Deel een STL/STEP-link via [contact](/contact) met afmetingen en toepassing.  
 2) Wij adviseren orientatie en materiaal.  
 3) We printen, checken en leveren in Welden of laten afhalen.
 

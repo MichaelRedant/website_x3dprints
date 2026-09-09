@@ -1,11 +1,6 @@
 // app/api/contact/route.ts
 import { NextResponse } from "next/server"
 import nodemailer from "nodemailer"
-import {
-  getModelUploadExtension,
-  validateModelUploads,
-  type ModelUploadValidationError,
-} from "@/lib/contact-upload"
 
 export const runtime = "nodejs"
 export const maxDuration = 30
@@ -23,14 +18,8 @@ type CustomerConfirmationPayload = {
   quantity: string
   material: string
   requestContext: string
+  fileLink: string
   locale: Locale
-  attachments: string[]
-}
-
-type MailAttachment = {
-  filename: string
-  content: Buffer
-  contentType: "model/stl" | "model/3mf"
 }
 
 function clamp(s: string, max: number) { return s.length > max ? s.slice(0, max) : s }
@@ -40,87 +29,6 @@ function escapeHtml(s: string) {
     .replace(/&/g, "&amp;").replace(/</g, "&lt;")
     .replace(/>/g, "&gt;").replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;")
-}
-
-function uploadErrorMessage(locale: Locale, error: ModelUploadValidationError) {
-  const copy = locale === "en"
-    ? {
-        tooMany: "You can upload up to 3 files.",
-        unsupported: "Only STL and 3MF files are accepted.",
-        fileTooLarge: "A file is larger than 10 MB.",
-        totalTooLarge: "The files may be up to 15 MB combined.",
-      }
-    : {
-        tooMany: "Je kunt maximaal 3 bestanden uploaden.",
-        unsupported: "Alleen STL- en 3MF-bestanden zijn toegelaten.",
-        fileTooLarge: "Een bestand is groter dan 10 MB.",
-        totalTooLarge: "De bestanden mogen samen maximaal 15 MB groot zijn.",
-      }
-
-  switch (error.code) {
-    case "too_many_files": return copy.tooMany
-    case "unsupported_type": return `${error.fileName}: ${copy.unsupported}`
-    case "file_too_large": return `${error.fileName}: ${copy.fileTooLarge}`
-    case "total_too_large": return copy.totalTooLarge
-  }
-}
-
-function safeAttachmentName(fileName: string, extension: "stl" | "3mf") {
-  const baseName = fileName.replaceAll("\\", "/").split("/").pop() ?? "model"
-  const stem = baseName.slice(0, -(extension.length + 1))
-  const safeStem = stem.replace(/[^A-Za-z0-9._-]+/g, "-").replace(/^[._-]+|[._-]+$/g, "") || "model"
-  return `${safeStem.slice(0, 100)}.${extension}`
-}
-
-function looksLikeStl(content: Buffer) {
-  if (content.length < 15) return false
-  const head = content.subarray(0, 2048).toString("latin1").trimStart()
-  if (/^solid\b/i.test(head) && /\bfacet\b/i.test(head)) return true
-  if (content.length < 84) return false
-  const triangleCount = content.readUInt32LE(80)
-  return triangleCount > 0 && 84 + (triangleCount * 50) <= content.length
-}
-
-function looksLike3mf(content: Buffer) {
-  if (content.length < 4 || content[0] !== 0x50 || content[1] !== 0x4b) return false
-  const archiveText = content.toString("latin1")
-  return archiveText.includes("[Content_Types].xml") && /3D\/.+\.model/i.test(archiveText)
-}
-
-async function collectMailAttachments(form: FormData, locale: Locale) {
-  const files = form.getAll("files[]").filter((entry): entry is File => typeof entry !== "string")
-  const validationError = validateModelUploads(files)
-  if (validationError) {
-    return {
-      error: uploadErrorMessage(locale, validationError),
-      status: validationError.code === "file_too_large" || validationError.code === "total_too_large" ? 413 : 400,
-      attachments: [] as MailAttachment[],
-    }
-  }
-
-  const attachments: MailAttachment[] = []
-  for (const file of files) {
-    const extension = getModelUploadExtension(file.name)
-    if (!extension) continue
-    const content = Buffer.from(await file.arrayBuffer())
-    const validContent = extension === "stl" ? looksLikeStl(content) : looksLike3mf(content)
-    if (!validContent) {
-      return {
-        error: locale === "en"
-          ? `${file.name}: this does not appear to be a valid STL or 3MF model.`
-          : `${file.name}: dit lijkt geen geldig STL- of 3MF-model te zijn.`,
-        status: 400,
-        attachments: [] as MailAttachment[],
-      }
-    }
-    attachments.push({
-      filename: safeAttachmentName(file.name, extension),
-      content,
-      contentType: extension === "stl" ? "model/stl" : "model/3mf",
-    })
-  }
-
-  return { error: "", status: 200, attachments }
 }
 
 function getEnv() {
@@ -194,14 +102,14 @@ function buildConfirmationHtml({
         product: "Product/context",
         material: "Material",
         quantity: "Quantity",
-        files: "Files",
+        fileLink: "File link",
         message: "Your message",
       }
     : {
         product: "Product/context",
         material: "Materiaal",
         quantity: "Aantal",
-        files: "Bestanden",
+        fileLink: "Bestandslink",
         message: "Je bericht",
       }
 
@@ -211,8 +119,8 @@ function buildConfirmationHtml({
   const psRow = ps
     ? `<tr><td style="padding-top:10px;font-size:12px;color:#94a3b8;">${escapeHtml(ps)}</td></tr>`
     : ""
-  const filesRow = payload.attachments.length > 0
-    ? `<tr><td width="140" style="color:#94a3b8;font-size:13px;vertical-align:top;">${labels.files}</td><td style="color:#e2e8f0;font-size:14px;">${escapeHtml(payload.attachments.join(", "))}</td></tr>`
+  const fileLinkRow = payload.fileLink
+    ? `<tr><td width="140" style="color:#94a3b8;font-size:13px;vertical-align:top;">${labels.fileLink}</td><td style="color:#e2e8f0;font-size:14px;word-break:break-all;">${escapeHtml(payload.fileLink)}</td></tr>`
     : ""
 
   return `<!doctype html><html lang="${lang}"><head><meta charset="UTF-8"><title>${escapeHtml(title)}</title></head><body style="margin:0;padding:0;background:#0b1224;font-family:Segoe UI,Arial,sans-serif;color:#e5e7eb;">
@@ -226,7 +134,7 @@ ${badgeRow}
 <tr><td width="140" style="color:#94a3b8;font-size:13px;">${labels.product}</td><td style="color:#e2e8f0;font-size:14px;font-weight:600;">${escapeHtml(payload.requestContext || "-")}</td></tr>
 <tr><td width="140" style="color:#94a3b8;font-size:13px;">${labels.material}</td><td style="color:#e2e8f0;font-size:14px;font-weight:600;">${escapeHtml(payload.material || "-")}</td></tr>
 <tr><td width="140" style="color:#94a3b8;font-size:13px;">${labels.quantity}</td><td style="color:#e2e8f0;font-size:14px;">${escapeHtml(payload.quantity || "-")}</td></tr>
-${filesRow}
+${fileLinkRow}
 <tr><td width="140" style="color:#94a3b8;font-size:13px;vertical-align:top;padding-top:6px;">${labels.message}</td><td style="padding-top:6px;"><div style="background:#0f172a;border:1px solid rgba(148,163,184,0.25);border-radius:10px;padding:12px 14px;color:#e2e8f0;font-size:14px;line-height:1.55;">${nl2brEscaped(payload.message)}</div></td></tr>
 </table></td></tr>
 <tr><td style="padding-top:18px;font-size:14px;color:#cbd5e1;">${signoffHtml}</td></tr>
@@ -238,8 +146,8 @@ function buildCustomerConfirmation(payload: CustomerConfirmationPayload) {
   const product = payload.requestContext || "-"
   const material = payload.material || "-"
   const quantity = payload.quantity || "-"
-  const filesLineEn = payload.attachments.length > 0 ? `- Files: ${payload.attachments.join(", ")}\n` : ""
-  const filesLineNl = payload.attachments.length > 0 ? `- Bestanden: ${payload.attachments.join(", ")}\n` : ""
+  const fileLinkLineEn = payload.fileLink ? `- File link: ${payload.fileLink}\n` : ""
+  const fileLinkLineNl = payload.fileLink ? `- Bestandslink: ${payload.fileLink}\n` : ""
   const isVacation = isVacationAutoReplyActive()
 
   if (payload.locale === "en") {
@@ -255,7 +163,7 @@ Summary:
 - Product/context: ${product}
 - Material: ${material}
 - Quantity: ${quantity}
-${filesLineEn}
+${fileLinkLineEn}
 
 Your message:
 ${payload.message}
@@ -288,7 +196,7 @@ Summary:
 - Product/context: ${product}
 - Material: ${material}
 - Quantity: ${quantity}
-${filesLineEn}
+${fileLinkLineEn}
 
 Your message:
 ${payload.message}
@@ -321,7 +229,7 @@ Samenvatting:
 - Product/context: ${product}
 - Materiaal: ${material}
 - Aantal: ${quantity}
-${filesLineNl}
+${fileLinkLineNl}
 
 Je bericht:
 ${payload.message}
@@ -354,15 +262,13 @@ Samenvatting:
 - Product/context: ${product}
 - Materiaal: ${material}
 - Aantal: ${quantity}
-${filesLineNl}
+${fileLinkLineNl}
 
 Je bericht:
 ${payload.message}
 
 Tot snel,
-Michael van X3DPrints
-
-P.S. Geen stress als je bestand 'final_v3_definitief.stl' heet, dat zien we wel vaker ;)`
+Michael van X3DPrints`
 
   return {
     subject,
@@ -373,7 +279,6 @@ P.S. Geen stress als je bestand 'final_v3_definitief.stl' heet, dat zien we wel 
       intro: "We bekijken je vraag en sturen snel een concreet voorstel met prijs en timing. Hieronder de samenvatting.",
       payload,
       signoffHtml: "Tot snel,<br>Michael van X3DPrints",
-      ps: 'P.S. Geen stress als je bestand "final_v3_definitief.stl" heet, dat zien we wel vaker ;)',
     }),
   }
 }
@@ -405,8 +310,8 @@ export async function POST(req: Request) {
       quote: clamp(String(form.get("quote") || "").trim(), 800),
       requestContext: clamp(String(form.get("requestContext") || "").trim(), 120),
       source: clamp(String(form.get("source") || "").trim(), 40),
+      fileLink: clamp(String(form.get("fileLink") || "").trim(), 500),
       locale: locale as Locale,
-      attachments: [] as string[],
     }
 
     // Basis validatie
@@ -422,16 +327,6 @@ export async function POST(req: Request) {
         { status: 400 },
       )
     }
-
-    const uploadResult = await collectMailAttachments(form, payload.locale)
-    if (uploadResult.error) {
-      return NextResponse.json(
-        { ok: false, error: uploadResult.error },
-        { status: uploadResult.status },
-      )
-    }
-    const mailAttachments = uploadResult.attachments
-    payload.attachments = mailAttachments.map(attachment => attachment.filename)
 
     // === SMTP Transport ===
     const env = getEnv()
@@ -474,9 +369,7 @@ export async function POST(req: Request) {
       textLines.push("Indicatieve schatting:")
       textLines.push(payload.quote)
     }
-    if (payload.attachments.length > 0) {
-      textLines.push("Bestanden:", ...payload.attachments.map(fileName => `- ${fileName}`))
-    }
+    if (payload.fileLink) textLines.push(`Bestandslink: ${payload.fileLink}`)
     textLines.push("", "Bericht:", payload.message)
     const text = textLines.join("\n")
 
@@ -494,7 +387,7 @@ export async function POST(req: Request) {
   ${payload.requestContext ? `<li><strong>Product/context:</strong> ${escapeHtml(payload.requestContext)}</li>` : ""}
   ${payload.source ? `<li><strong>Bron:</strong> ${escapeHtml(payload.source)}</li>` : ""}
   ${payload.quote ? `<li><strong>Indicatieve schatting:</strong> ${escapeHtml(payload.quote)}</li>` : ""}
-  ${payload.attachments.length > 0 ? `<li><strong>Bestanden:</strong> ${escapeHtml(payload.attachments.join(", "))}</li>` : ""}
+  ${payload.fileLink ? `<li><strong>Bestandslink:</strong> ${escapeHtml(payload.fileLink)}</li>` : ""}
 </ul>
 <p><strong>Bericht:</strong></p>
 <pre style="white-space:pre-wrap;font-family:ui-monospace,Menlo,monospace">${escapeHtml(payload.message)}</pre>
@@ -507,7 +400,6 @@ export async function POST(req: Request) {
       subject,
       text,
       html,
-      attachments: mailAttachments,
     })
 
     const confirmation = buildCustomerConfirmation(payload)
@@ -530,7 +422,6 @@ export async function POST(req: Request) {
     return NextResponse.json({
       ok: true,
       confirmationSent: Boolean(confirmationMessageId),
-      attachmentCount: mailAttachments.length,
     })
   } catch (e: unknown) {
     const msgRaw = errorMessage(e)

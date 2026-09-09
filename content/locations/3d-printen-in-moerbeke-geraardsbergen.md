@@ -51,7 +51,7 @@ Stuur STL of STEP via [contact](/contact) met aantallen en deadline. Onderdelen 
 
 ## Offerte aanvragen
 
-Upload je bestand en ontvang snel een voorstel voor **3D printen in Moerbeke-Geraardsbergen**.
+Deel een link naar je bestand en ontvang snel een voorstel voor **3D printen in Moerbeke-Geraardsbergen**.
 
 
 ## Veelgestelde vragen over 3D printen in Moerbeke (Geraardsbergen)

@@ -63,7 +63,7 @@ In Brecht helpen we makers en bedrijven met 3D prints die vlot passen en lang me
 
 ## Offerte voor 3D printen in Brecht
 
-Upload je bestand via [contact](/contact). We bezorgen snel een voorstel zodat je project in Brecht geen vertraging oploopt.
+Deel een link naar je bestand via [contact](/contact). We bezorgen snel een voorstel zodat je project in Brecht geen vertraging oploopt.
 
 
 ## Veelgestelde vragen over 3D printen in Brecht

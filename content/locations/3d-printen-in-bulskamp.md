@@ -35,7 +35,7 @@ Werk je in Bulskamp? We leveren snelle prototypes en zowel kleine als grotere se
 
 ## Workflow
 
-1. Upload STL/STEP via [contact](/contact) met info over toepassing en omgeving
+1. Deel een STL/STEP-link via [contact](/contact) met info over toepassing en omgeving
 2. Wij koppelen materiaaladvies terug en ramen de leadtime
 3. Productie, supportverwijdering en kwaliteitscontrole volgen onze [3d-printen](/3d-printen) checklist
 4. Je ontvangt foto-updates en tracking zodra alles klaar staat

@@ -58,7 +58,7 @@ export default function TstakPage() {
       { name: "Model delen", text: "Geef het TSTAK modelnummer of foto van de open koffer." },
       { name: "Maten doorgeven", text: "Binnenmaten in mm indien gekend." },
       { name: "Tools oplijsten", text: "Small parts, handtools of mix met aantallen." },
-      { name: "Uploaden", text: "Gebruik het contactformulier (TSTAK prefill) om alles te sturen." },
+      { name: "Bestandslink delen", text: "Gebruik het contactformulier (TSTAK prefill) om een toegankelijke link en alle details te sturen." },
     ],
   })
   const tocItems = [

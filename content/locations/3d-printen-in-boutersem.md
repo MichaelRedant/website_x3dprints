@@ -38,7 +38,7 @@ Met **3D printen in Boutersem** leveren we prototypes, behuizingen en tooling ri
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via N3/Tiense steenweg; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

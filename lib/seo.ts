@@ -10,7 +10,7 @@ export const SITE = {
   url: "https://www.x3dprints.be",
   title: "X3DPrints — 3D Print Service",
   description:
-    "Professionele 3D print service in Belgie. Snel, nauwkeurig en betaalbaar. Upload je model en ontvang een offerte.",
+    "Professionele 3D print service in Belgie. Snel, nauwkeurig en betaalbaar. Deel een link naar je model en ontvang een offerte.",
   ogImage: "/images/og-default.svg",
   locale: "nl_BE",
   phone: BUSINESS_PHONE,

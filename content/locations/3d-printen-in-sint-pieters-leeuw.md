@@ -41,7 +41,7 @@ We kennen de mix van logistiek, retail en events in de Zennevallei. Daardoor ste
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via R0/N6; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor zichtwerk.
 

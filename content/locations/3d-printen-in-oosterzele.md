@@ -68,7 +68,7 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte aanvragen
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Oosterzele**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Oosterzele**.
 
 <!-- LOCAL_ENRICH_START -->
 ## Wat je moet weten in Oosterzele

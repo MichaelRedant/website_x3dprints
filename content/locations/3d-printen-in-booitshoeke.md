@@ -35,7 +35,7 @@ In Booitshoeke helpen we makers en bedrijven met 3D prints die vlot passen en la
 
 ## Workflow
 
-1. Upload STL/STEP met gewenste materiaalkeuze via [contact](/contact)
+1. Deel een STL/STEP-link met gewenste materiaalkeuze via [contact](/contact)
 2. We adviseren over wanddikte, infill en bevestiging gebaseerd op je toepassing
 3. Print, afwerking en controle volgens de stappen in onze [3d-printen](/3d-printen) hub
 4. Levering naar Booitshoeke of afhalen in Herzele; tracking delen we meteen

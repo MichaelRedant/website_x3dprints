@@ -34,7 +34,7 @@ Voor projecten in Wulveringem combineren we korte doorlooptijd met strakke afwer
 
 ## Workflow
 
-1. Upload STL/STEP en context via [contact](/contact)
+1. Deel een STL/STEP-link en context via [contact](/contact)
 2. We toetsen materiaal en afwerking aan de locatie en gewenste uitstraling
 3. Productie en kwaliteitscontrole volgen onze [3d-printen](/3d-printen) checklist
 4. Levering of afhaling plannen we samen; dringende expo-deadlines krijgen voorrang

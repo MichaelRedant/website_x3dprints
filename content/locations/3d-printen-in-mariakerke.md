@@ -97,7 +97,7 @@ Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een du
 
 ## Offerte voor 3D printen in Mariakerke
 
-Upload je STL of STEP via [contact](/contact) en beschrijf waarvoor het onderdeel dient. Zonder bestand kun je foto's en maten meesturen voor een eerste haalbaarheidscheck.
+Deel een link naar je STL of STEP via [contact](/contact) en beschrijf waarvoor het onderdeel dient. Zonder bestand kun je foto's en maten meesturen voor een eerste haalbaarheidscheck.
 
 <!-- LOCAL_ENRICH_START -->
 ## 3D print service Mariakerke voor de westelijke stadsrand

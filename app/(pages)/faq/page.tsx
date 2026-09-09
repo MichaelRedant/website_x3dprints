@@ -135,7 +135,7 @@ export default function Page() {
     },
     {
       q: "Kan ik mijn eigen bestand aanleveren?",
-      a: "Ja. Upload STL/STEP via <a href=\"/contact\">/contact</a> of gebruik de <a href=\"/viewer\">viewer</a> om te dubbelchecken.",
+      a: "Ja. Deel een STL/STEP-link via <a href=\"/contact\">/contact</a> of gebruik de <a href=\"/viewer\">viewer</a> om je model lokaal te controleren.",
     },
     {
       q: "Hoe snel kunnen jullie leveren?",
@@ -179,7 +179,7 @@ export default function Page() {
     },
     {
       q: "Hoe vraag ik een offerte aan?",
-      a: "Upload je bestand via <a href=\"/contact\">/contact</a>. Je krijgt meestal binnen 24 uur een duidelijk voorstel.",
+      a: "Deel een link naar je bestand via <a href=\"/contact\">/contact</a>. Je krijgt meestal binnen 24 uur een duidelijk voorstel.",
     },
     {
       q: "Printen jullie ook een enkel stuk?",
@@ -333,7 +333,7 @@ export default function Page() {
               <GlassCard className="animate-[fadeInUp_.8s_ease_out_both]">
                 <div className="text-sm font-semibold text-slate-800">Check de viewer</div>
                 <p className="mt-2 text-sm text-slate-600">
-                  Upload je STL/STEP in de{" "}
+                  Deel een link naar je STL/STEP via de{" "}
                   <Link href="/viewer" className="text-teal-700 underline underline-offset-2">
                     viewer
                   </Link>{" "}

@@ -41,7 +41,7 @@ We kennen de combinatie van kantoren, logistiek en airport-projecten. Daardoor s
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via R0/airportzone; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

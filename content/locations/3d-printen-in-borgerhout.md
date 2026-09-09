@@ -69,7 +69,7 @@ Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een du
 
 ## Vraag je offerte aan
 
-Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur en aantal; we bezorgen snel een voorstel voor **3D printen in Borgerhout**.
+Deel een link naar je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur en aantal; we bezorgen snel een voorstel voor **3D printen in Borgerhout**.
 
 <!-- LOCAL_ENRICH_START -->
 ## Borgerhout als creatieve satelliet van Antwerpen

@@ -38,7 +38,7 @@ Voor **3D printen in Geetbets** leveren we prototypes, behuizingen en tooling ri
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via Demerzone; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

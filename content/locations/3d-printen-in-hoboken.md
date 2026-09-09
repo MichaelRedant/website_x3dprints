@@ -69,7 +69,7 @@ PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basi
 
 ## Vraag je offerte aan
 
-Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en deadline; we bezorgen snel een voorstel voor **3D printen in Hoboken**.
+Deel een link naar je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en deadline; we bezorgen snel een voorstel voor **3D printen in Hoboken**.
 
 <!-- LOCAL_ENRICH_START -->
 ## Hoboken als Schelde- en Blue Gate-zone

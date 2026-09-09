@@ -98,7 +98,7 @@ In Parike helpen we makers en bedrijven met 3D prints die vlot passen en lang me
 
 
 
-Upload je bestand via [contact](/contact). Je ontvangt snel een voorstel voor **3D printen in Parike**.
+Deel een link naar je bestand via [contact](/contact). Je ontvangt snel een voorstel voor **3D printen in Parike**.
 
 
 

@@ -62,7 +62,7 @@ const tocItems = [
 
 const steps = [
   {
-    title: "1. Upload STL of STEP",
+    title: "1. Deel een STL- of STEP-link",
     copy: "Stuur je bestand met context: doel, testcriteria, kritieke maten en deadline.",
   },
   {

@@ -41,7 +41,7 @@ We kennen de mix van media, logistiek en KMO's rond Vilvoorde. Daardoor stemmen 
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact); voeg aantallen en gewenste finish toe.
+- Deel een STL/STEP-link via [contact](/contact); voeg aantallen en gewenste finish toe.
 - Levering via R0/Brussels kanaal, afhalen in Herzele mogelijk.
 - We adviseren over oriëntatie, layer height en nabehandeling.
 

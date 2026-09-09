@@ -14,7 +14,7 @@ Laatst bijgewerkt: 30 juli 2026
 - **Zichtwerk en presentaties:** PLA Matte, kleurkeuze en nabewerking voor maquettes, pitchmodellen, beursmateriaal en winkelpresentaties.
 - **Snelle iteratie:** geschikt voor bureaus, engineers en studenten die niet weken willen wachten op een eerste tastbaar model.
 - **Duidelijke logistiek:** verzending naar Antwerpen is standaard; afhalen in Herzele kan op afspraak.
-- **Persoonlijke controle:** je schakelt rechtstreeks met de maker, niet met een anoniem uploadplatform.
+- **Persoonlijke controle:** je schakelt rechtstreeks met de maker, niet met een anoniem bestandsportaal.
 
 Voor een aanvraag stuur je bij voorkeur een STL- of STEP-bestand, gewenste aantallen, kleur, materiaalvoorkeur en gebruikscontext via [contact](/contact). Als passing belangrijk is, vermeld dan ook waar het onderdeel in moet klikken, schuiven of schroeven.
 
@@ -109,7 +109,7 @@ Twijfel je? Stuur je toepassing mee. Een onderdeel voor een beursstand vraagt ie
 
 ## Hoe aanvragen vanuit Antwerpen werkt
 
-1. Upload je STL/STEP via [contact](/contact).
+1. Deel een link naar je STL/STEP via [contact](/contact).
 2. Vermeld toepassing, aantallen, materiaal, kleur, deadline en leveradres.
 3. We checken printbaarheid, oriëntatie, risicozones en materiaalkeuze.
 4. Je krijgt een duidelijke offerte en planning.
@@ -170,7 +170,7 @@ Stuur foto's om de haalbaarheid te bespreken. Voor reproductie of reverse engine
 
 ## Vraag je offerte aan voor 3D printen in Antwerpen
 
-Klaar om te starten met een prototype, display, technisch onderdeel of kleine serie in Antwerpen? Upload je model via [contact](/contact). Vermeld je toepassing, deadline en aantal stuks, dan krijg je gericht advies over materiaal, afwerking en planning.
+Klaar om te starten met een prototype, display, technisch onderdeel of kleine serie in Antwerpen? Deel een link naar je model via [contact](/contact). Vermeld je toepassing, deadline en aantal stuks, dan krijg je gericht advies over materiaal, afwerking en planning.
 
 <!-- LOCAL_ENRICH_START -->
 ## Antwerpse clusterversterking

@@ -104,4 +104,4 @@ Er is geen afhaalpunt in Lommel. We verzenden vanuit Herzele; afhalen in de stud
 
 ## Offerte voor 3D printen in Lommel
 
-Upload je model via [contact](/contact). Geef bij een technisch onderdeel ook kritieke maten, montagewijze, belasting en gewenste aantallen mee.
+Deel een link naar je model via [contact](/contact). Geef bij een technisch onderdeel ook kritieke maten, montagewijze, belasting en gewenste aantallen mee.

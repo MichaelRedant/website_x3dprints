@@ -69,7 +69,7 @@ In Wilrijk helpen we makers en bedrijven met 3D prints die vlot passen en lang m
 
 ## Offerte aanvragen
 
-Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en aantallen; je krijgt snel een voorstel voor **3D printen in Wilrijk**.
+Deel een link naar je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en aantallen; je krijgt snel een voorstel voor **3D printen in Wilrijk**.
 
 <!-- LOCAL_ENRICH_START -->
 ## Wilrijk als campus- en A12-zone

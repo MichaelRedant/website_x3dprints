@@ -35,7 +35,7 @@ Zoek je 3D printen in Ename (Oudenaarde)? We denken mee over passing, sterkte en
 
 ## Aanpak
 
-1) Upload je STL/STEP via [contact](/contact) en noteer toepassing + aantallen.  
+1) Deel een link naar je STL/STEP via [contact](/contact) en noteer toepassing + aantallen.  
 2) Wij adviseren materiaal en orientatie.  
 3) Print, QC en levering in Ename of afhalen.
 

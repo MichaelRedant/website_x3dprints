@@ -35,7 +35,7 @@ In Kruisem helpen we makers en bedrijven met 3D prints die vlot passen en lang m
 
 ## Workflow
 
-1) Upload STL/STEP via [contact](/contact) met afmetingen en toepassing.  
+1) Deel een STL/STEP-link via [contact](/contact) met afmetingen en toepassing.  
 2) We adviseren materiaal, orientatie en layerhoogte.  
 3) We printen, controleren en leveren in Kruisem of laten afhalen.
 

@@ -442,7 +442,7 @@ export default function OutdoorPrintingGuideEnPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-500">Next step</p>
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900">Want to be sure your design survives outdoors?</h2>
                 <p className="mt-2 text-sm text-slate-600">
-                  Upload your STL/STEP and tell us how the part will be used (sun, vibration, mounting). We send a clear proposal with material choice,
+                  Share a link to your STL/STEP and tell us how the part will be used (sun, vibration, mounting). We send a clear proposal with material choice,
                   mounting tips and budget indication.
                 </p>
               </div>

@@ -38,7 +38,7 @@ Met **3D printen in Tremelo** leveren we prototypes, behuizingen en tooling rich
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via N19; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

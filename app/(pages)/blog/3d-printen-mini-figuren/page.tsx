@@ -126,7 +126,7 @@ export default function BlogMiniaturesPage() {
             </p>
             <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ShimmerButton href="/contact">Upload je STL/STEP</ShimmerButton>
+              <ShimmerButton href="/contact">Deel je STL/STEP-link</ShimmerButton>
               <Link
                 href="/pricing"
                 className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/20"

@@ -74,7 +74,7 @@ Wie naast een 3D project ook een salesgerichte website laten maken in erpe-mere 
 
 ## Hoe Werkt het Bestellen van Uw 3D Print?
 
-1.  **Bestand Uploaden**: Stuur uw **.STL- of .STEP-bestand** via onze gebruiksvriendelijke [contactpagina](/contact).
+1.  **Bestand delen**: Stuur uw **.STL- of .STEP-bestand** via onze gebruiksvriendelijke [contactpagina](/contact).
 2.  **Keuze van Materiaal**: Geef aan welk materiaal (PLA, PETG, TPU) en de gewenste kleur u wenst, samen met de aantallen.
 3.  **Ontvang Offerte**: Binnen 24 uur ontvangt u een heldere, vrijblijvende prijsopgave en een inschatting van de levertijd voor uw **3D printen in Erpe-Mere** project.
 

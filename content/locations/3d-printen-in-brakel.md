@@ -118,7 +118,7 @@ Voor projecten in Brakel combineren we korte doorlooptijd met strakke afwerking.
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel met materiaaladvies en leveroptie voor Brakel.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel met materiaaladvies en leveroptie voor Brakel.
 
 
 

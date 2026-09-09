@@ -101,4 +101,4 @@ Die hangt af van model, materiaal, aantallen en actuele capaciteit. Je offerte b
 
 ## Vraag een offerte aan voor Hasselt
 
-Upload je bestand via [contact](/contact) en vermeld dat de levering naar Hasselt moet. Voeg toepassing, aantallen, kleur en deadline toe voor een gerichte beoordeling.
+Deel een link naar je bestand via [contact](/contact) en vermeld dat de levering naar Hasselt moet. Voeg toepassing, aantallen, kleur en deadline toe voor een gerichte beoordeling.

@@ -63,7 +63,7 @@ Het dorp ligt rond het Sint-Hubertusplein en het recente Wantenplein, een verwij
 
 ## Hoe bestellen bij X3DPrints?
 
-1. Upload je model via de [contactpagina](/contact).
+1. Deel een link naar je model via de [contactpagina](/contact).
 2. Kies materiaal en afwerking voor **3D printen in Sint-Maria-Oudenhove**.
 3. Ontvang binnen 24 uur een offerte.
 4. Na akkoord starten we met **3D printen in Sint-Maria-Oudenhove**.

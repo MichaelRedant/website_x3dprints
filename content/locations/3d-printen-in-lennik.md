@@ -38,7 +38,7 @@ Met **3D printen in Lennik** leveren we prototypes, behuizingen en tooling richt
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via Ninoofsesteenweg; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

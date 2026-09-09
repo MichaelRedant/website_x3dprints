@@ -53,7 +53,7 @@ Voor scannen moet het object fysiek beschikbaar zijn. De afgesproken scan wordt 
 
 ## Zo bestellen klanten uit Beringen
 
-1. Upload STL, STEP of 3MF, of stuur foto's en afmetingen.
+1. Deel een link naar je STL-, STEP- of 3MF-bestand, of stuur foto's en afmetingen.
 2. Beschrijf functie, aantallen en gebruiksomgeving.
 3. We adviseren materiaal en benoemen onzekerheden.
 4. Je ontvangt prijs en planning, inclusief eenmalig modelwerk indien nodig.

@@ -19,7 +19,7 @@ Van Canada War Cemetery tot N49-corridor: X3DPrints verzorgt 3D prints voor Adeg
 
 ## Workflow in 3 stappen
 
-1) **Upload STL/STEP** via [contact](/contact) met afmetingen en aantallen.  
+1) **Deel een STL/STEP-link** via [contact](/contact) met afmetingen en aantallen.  
 2) **Advies** op materiaal, layerhoogte en orientatie.  
 3) **Print & levering** binnen 2-5 werkdagen, spoed in overleg.
 

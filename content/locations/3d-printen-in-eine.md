@@ -35,7 +35,7 @@ Voor projecten in Eine (Oudenaarde) combineren we korte doorlooptijd met strakke
 
 ## Workflow
 
-1) Upload STL/STEP via [contact](/contact) met toepassing en aantallen.  
+1) Deel een STL/STEP-link via [contact](/contact) met toepassing en aantallen.  
 2) Wij adviseren materiaal, orientatie en layerhoogte.  
 3) Productie (2-5 werkdagen) en levering in Eine of afhalen.
 

@@ -38,7 +38,7 @@ Met **3D printen in Pepingen** leveren we prototypes, behuizingen en tooling ric
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via Pajotse verbindingswegen; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

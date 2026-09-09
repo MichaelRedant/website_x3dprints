@@ -35,7 +35,7 @@ In Nederename (Oudenaarde) helpen we makers en bedrijven met 3D prints die vlot 
 
 ## Werkwijze
 
-1) Upload STL/STEP via [contact](/contact) met afmetingen en toepassing.  
+1) Deel een STL/STEP-link via [contact](/contact) met afmetingen en toepassing.  
 2) Wij adviseren orientatie en materiaal.  
 3) Productie, controle en levering in Nederename of afhalen.
 

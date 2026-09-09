@@ -81,7 +81,7 @@ export default function ModuGridPage() {
       { name: "Noteer maten", text: "Lengte, breedte en hoogte (of diameter x hoogte) in millimeter." },
       { name: "Kies positie", text: "Geef aan of de tool plat of rechtop moet liggen." },
       { name: "Aantal stuks", text: "Meld hoeveel identieke tools in dezelfde lade moeten passen." },
-      { name: "Stuur door", text: "Upload alles via het contactformulier (prefill Gridfinity)." },
+      { name: "Stuur door", text: "Deel een toegankelijke bestandslink via het contactformulier (prefill Gridfinity)." },
     ],
   })
   const tocItems = [

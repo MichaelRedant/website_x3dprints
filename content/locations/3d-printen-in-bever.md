@@ -38,7 +38,7 @@ Met **3D printen in Bever** leveren we behuizingen, props en tooling voor landel
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering op afspraak; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

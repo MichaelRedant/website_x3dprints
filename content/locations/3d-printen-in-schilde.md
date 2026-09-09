@@ -42,7 +42,7 @@ Met **3D printen in Schilde** krijg je snelle, nauwkeurige onderdelen voor ateli
 
 ## Bestellen
 
-- Upload **STL/STEP** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
+- Deel een **STL/STEP-link** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
 
 - Onderdelen tot **35 x 32 x 35 cm** printen we in één stuk; grotere items delen we slim op.
 

@@ -38,7 +38,7 @@ Voor **3D printen in Wemmel** leveren we prototypes, props en tooling richting d
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via R0/Romeinsesteenweg; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

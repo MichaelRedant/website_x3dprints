@@ -609,7 +609,7 @@ function buildCoreContentMap(locale: FeedLocale): ContentMapItem[] {
         { title: locale === "en" ? "Materials" : "Materialen", url: materialsUrl, xref: "pages.materials" },
         ...(SHOP_INDEXABLE ? [{ title: locale === "en" ? "Shop" : "Shop", url: `${BASE_URL}${p}/shop/`, xref: "pages.shop" }] : []),
       ],
-      secondary_topics: locale === "en" ? ["context upload", "material choice", "lead time"] : ["context upload", "materiaalkeuze", "lead time"],
+      secondary_topics: locale === "en" ? ["file sharing", "material choice", "lead time"] : ["bestandslink delen", "materiaalkeuze", "lead time"],
       title: locale === "en" ? "Contact" : "Contact",
       url: quoteUrl,
       xref: "pages.contact",

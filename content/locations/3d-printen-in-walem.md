@@ -68,7 +68,7 @@ Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, mee
 
 ## Offerte aanvragen
 
-Upload je bestand via [contact](/contact). Je krijgt snel een helder voorstel voor **3D printen in Walem**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een helder voorstel voor **3D printen in Walem**.
 
 <!-- LOCAL_ENRICH_START -->
 ## Wat je moet weten in Walem

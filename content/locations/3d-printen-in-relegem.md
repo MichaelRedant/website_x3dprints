@@ -88,7 +88,7 @@ Voor **3D printen in Relegem** leveren we prototypes en functionele onderdelen r
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Relegem**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Relegem**.
 
 
 

@@ -98,7 +98,7 @@ In Kobbegem helpen we makers en bedrijven met 3D prints die vlot passen en lang 
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Kobbegem**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Kobbegem**.
 
 
 

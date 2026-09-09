@@ -98,7 +98,7 @@ Werk je in Affligem? We leveren snelle prototypes en zowel kleine als grotere se
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Affligem**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Affligem**.
 
 
 

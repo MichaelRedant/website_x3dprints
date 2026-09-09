@@ -7,11 +7,6 @@ header('Content-Type: application/json; charset=utf-8');
 mb_language('uni');
 mb_internal_encoding('UTF-8');
 
-const X3D_MAX_UPLOAD_FILES = 3;
-const X3D_MAX_UPLOAD_FILE_BYTES = 10 * 1024 * 1024;
-const X3D_MAX_UPLOAD_TOTAL_BYTES = 15 * 1024 * 1024;
-const X3D_MAX_REQUEST_BYTES = 18 * 1024 * 1024;
-
 function respond(int $status, array $data): void {
     http_response_code($status);
     echo json_encode($data, JSON_UNESCAPED_UNICODE);
@@ -20,11 +15,6 @@ function respond(int $status, array $data): void {
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     respond(405, ['success' => false, 'error' => 'Method not allowed']);
-}
-
-$contentLength = (int)($_SERVER['CONTENT_LENGTH'] ?? 0);
-if ($contentLength > X3D_MAX_REQUEST_BYTES) {
-    respond(413, ['success' => false, 'error' => 'De aanvraag is te groot. The request is too large.']);
 }
 
 // Honeypot veld (hp of website) blokkeert bots stilletjes
@@ -44,144 +34,6 @@ function cleanLine(string $value): string {
 
 function sanitize(string $value, int $max): string {
     return clamp(cleanLine($value), $max);
-}
-
-function x3dUploadError(string $locale, string $nl, string $en, int $status = 400): void {
-    respond($status, ['success' => false, 'error' => $locale === 'en' ? $en : $nl]);
-}
-
-function x3dSafeAttachmentName(string $name, string $extension): string {
-    $baseName = basename(str_replace('\\', '/', $name));
-    $stem = pathinfo($baseName, PATHINFO_FILENAME);
-    $safeStem = preg_replace('/[^A-Za-z0-9._-]+/u', '-', $stem) ?: 'model';
-    $safeStem = trim($safeStem, '.-_');
-    if ($safeStem === '') {
-        $safeStem = 'model';
-    }
-    return substr($safeStem, 0, 100) . '.' . $extension;
-}
-
-function x3dLooksLikeStl(string $tmpPath, int $size): bool {
-    if ($size < 15) {
-        return false;
-    }
-
-    $handle = @fopen($tmpPath, 'rb');
-    if ($handle === false) {
-        return false;
-    }
-    $head = (string)fread($handle, 2048);
-    fclose($handle);
-
-    $asciiHead = ltrim($head);
-    if (stripos($asciiHead, 'solid') === 0 && stripos($asciiHead, 'facet') !== false) {
-        return true;
-    }
-
-    if ($size < 84 || strlen($head) < 84) {
-        return false;
-    }
-    $triangleData = unpack('Vcount', substr($head, 80, 4));
-    $triangleCount = (int)($triangleData['count'] ?? 0);
-    return $triangleCount > 0 && (84 + ($triangleCount * 50)) <= $size;
-}
-
-function x3dLooksLike3mf(string $tmpPath): bool {
-    $handle = @fopen($tmpPath, 'rb');
-    if ($handle === false) {
-        return false;
-    }
-    $signature = (string)fread($handle, 4);
-    fclose($handle);
-    if (substr($signature, 0, 2) !== 'PK') {
-        return false;
-    }
-
-    if (!class_exists('ZipArchive')) {
-        return true;
-    }
-
-    $zip = new ZipArchive();
-    if ($zip->open($tmpPath) !== true) {
-        return false;
-    }
-    $hasContentTypes = $zip->locateName('[Content_Types].xml', ZipArchive::FL_NODIR) !== false;
-    $hasModel = false;
-    for ($index = 0; $index < $zip->numFiles; $index++) {
-        $entryName = (string)$zip->getNameIndex($index);
-        if (preg_match('#^3D/.+\.model$#i', $entryName) === 1) {
-            $hasModel = true;
-            break;
-        }
-    }
-    $zip->close();
-    return $hasContentTypes && $hasModel;
-}
-
-function x3dCollectAttachments(string $locale): array {
-    if (!isset($_FILES['files'])) {
-        return [];
-    }
-
-    $field = $_FILES['files'];
-    $names = is_array($field['name'] ?? null) ? $field['name'] : [$field['name'] ?? ''];
-    $tmpNames = is_array($field['tmp_name'] ?? null) ? $field['tmp_name'] : [$field['tmp_name'] ?? ''];
-    $errors = is_array($field['error'] ?? null) ? $field['error'] : [$field['error'] ?? UPLOAD_ERR_NO_FILE];
-    $sizes = is_array($field['size'] ?? null) ? $field['size'] : [$field['size'] ?? 0];
-
-    $attachments = [];
-    $totalSize = 0;
-    foreach ($names as $index => $originalName) {
-        $error = (int)($errors[$index] ?? UPLOAD_ERR_NO_FILE);
-        if ($error === UPLOAD_ERR_NO_FILE) {
-            continue;
-        }
-        if ($error === UPLOAD_ERR_INI_SIZE || $error === UPLOAD_ERR_FORM_SIZE) {
-            x3dUploadError($locale, 'Een bestand is groter dan 10 MB.', 'A file is larger than 10 MB.', 413);
-        }
-        if ($error !== UPLOAD_ERR_OK) {
-            x3dUploadError($locale, 'Een bestand kon niet veilig worden ontvangen. Probeer opnieuw.', 'A file could not be received safely. Please try again.');
-        }
-        if (count($attachments) >= X3D_MAX_UPLOAD_FILES) {
-            x3dUploadError($locale, 'Je kunt maximaal 3 bestanden uploaden.', 'You can upload up to 3 files.');
-        }
-
-        $tmpPath = (string)($tmpNames[$index] ?? '');
-        if ($tmpPath === '' || !is_uploaded_file($tmpPath)) {
-            x3dUploadError($locale, 'Een bestand kon niet veilig worden ontvangen. Probeer opnieuw.', 'A file could not be received safely. Please try again.');
-        }
-        $size = (int)@filesize($tmpPath);
-        if ($size <= 0) {
-            $size = (int)($sizes[$index] ?? 0);
-        }
-        if ($size <= 0 || $size > X3D_MAX_UPLOAD_FILE_BYTES) {
-            x3dUploadError($locale, 'Een bestand is leeg of groter dan 10 MB.', 'A file is empty or larger than 10 MB.', 413);
-        }
-        $totalSize += $size;
-        if ($totalSize > X3D_MAX_UPLOAD_TOTAL_BYTES) {
-            x3dUploadError($locale, 'De bestanden mogen samen maximaal 15 MB groot zijn.', 'The files may be up to 15 MB combined.', 413);
-        }
-
-        $extension = strtolower((string)pathinfo((string)$originalName, PATHINFO_EXTENSION));
-        if (!in_array($extension, ['stl', '3mf'], true)) {
-            x3dUploadError($locale, 'Alleen STL- en 3MF-bestanden zijn toegelaten.', 'Only STL and 3MF files are accepted.');
-        }
-        $contentIsValid = $extension === 'stl'
-            ? x3dLooksLikeStl($tmpPath, $size)
-            : x3dLooksLike3mf($tmpPath);
-        if (!$contentIsValid) {
-            x3dUploadError($locale, 'Een bestand lijkt geen geldig STL- of 3MF-model te zijn.', 'A file does not appear to be a valid STL or 3MF model.');
-        }
-
-        $attachments[] = [
-            'name' => x3dSafeAttachmentName((string)$originalName, $extension),
-            'tmpPath' => $tmpPath,
-            'size' => $size,
-            'mime' => $extension === 'stl' ? 'model/stl' : 'model/3mf',
-        ];
-    }
-
-    return $attachments;
 }
 
 function parseFromAddress(string $from): ?string {
@@ -208,13 +60,9 @@ $quote = trim((string)($_POST['quote'] ?? ''));
 $quote = $quote !== '' ? clamp($quote, 800) : '';
 $requestContext = sanitize((string)($_POST['requestContext'] ?? ''), 120);
 $source = sanitize((string)($_POST['source'] ?? ''), 40);
+$fileLink = sanitize((string)($_POST['fileLink'] ?? ''), 500);
 $localeRaw = strtolower(sanitize((string)($_POST['locale'] ?? ''), 8));
 $locale = $localeRaw === 'en' ? 'en' : 'nl';
-$attachments = x3dCollectAttachments($locale);
-$attachmentMetadata = array_map(
-    static fn(array $attachment): array => ['name' => $attachment['name'], 'size' => $attachment['size']],
-    $attachments
-);
 
 if ($name === '' || $email === '' || $message === '') {
     respond(400, ['success' => false, 'error' => 'Naam, e-mail en bericht zijn verplicht.']);
@@ -255,11 +103,8 @@ if ($quote !== '') {
     $textLines[] = "Indicatieve schatting:";
     $textLines[] = $quote;
 }
-if ($attachmentMetadata !== []) {
-    $textLines[] = 'Bestanden:';
-    foreach ($attachmentMetadata as $attachment) {
-        $textLines[] = sprintf('- %s (%.1f MB)', $attachment['name'], $attachment['size'] / 1024 / 1024);
-    }
+if ($fileLink !== '') {
+    $textLines[] = "Bestandslink: {$fileLink}";
 }
 $textLines[] = '';
 $textLines[] = 'Bericht:';
@@ -273,8 +118,8 @@ $confirmation = x3dBuildCustomerConfirmation([
     'quantity' => $quantity,
     'material' => $material,
     'requestContext' => $requestContext,
+    'fileLink' => $fileLink,
     'locale' => $locale,
-    'attachments' => $attachmentMetadata,
 ]);
 $confirmSubject = encodeHeader($confirmation['subject']);
 $confirmText = $confirmation['text'];
@@ -303,20 +148,19 @@ function x3dBuildConfirmationHtml(string $lang, string $title, string $intro, ?s
             'product' => 'Product/context',
             'material' => 'Material',
             'quantity' => 'Quantity',
-            'files' => 'Files',
+            'fileLink' => 'File link',
             'message' => 'Your message',
         ]
         : [
             'product' => 'Product/context',
             'material' => 'Materiaal',
             'quantity' => 'Aantal',
-            'files' => 'Bestanden',
+            'fileLink' => 'Bestandslink',
             'message' => 'Je bericht',
         ];
 
-    $attachmentNames = array_map(static fn(array $attachment): string => $attachment['name'], $payload['attachments'] ?? []);
-    $filesRow = $attachmentNames !== []
-        ? '<tr><td width="140" style="color:#94a3b8;font-size:13px;vertical-align:top;">'.$labels['files'].'</td><td style="color:#e2e8f0;font-size:14px;">'.x3dHtml(implode(', ', $attachmentNames)).'</td></tr>'
+    $fileLinkRow = ($payload['fileLink'] ?? '') !== ''
+        ? '<tr><td width="140" style="color:#94a3b8;font-size:13px;vertical-align:top;">'.$labels['fileLink'].'</td><td style="color:#e2e8f0;font-size:14px;word-break:break-all;">'.x3dHtml($payload['fileLink']).'</td></tr>'
         : '';
 
     $badgeRow = $badge !== null
@@ -337,7 +181,7 @@ function x3dBuildConfirmationHtml(string $lang, string $title, string $intro, ?s
         . '<tr><td width="140" style="color:#94a3b8;font-size:13px;">'.$labels['product'].'</td><td style="color:#e2e8f0;font-size:14px;font-weight:600;">'.x3dHtml($payload['requestContext'] !== '' ? $payload['requestContext'] : '-').'</td></tr>'
         . '<tr><td width="140" style="color:#94a3b8;font-size:13px;">'.$labels['material'].'</td><td style="color:#e2e8f0;font-size:14px;font-weight:600;">'.x3dHtml($payload['material'] !== '' ? $payload['material'] : '-').'</td></tr>'
         . '<tr><td width="140" style="color:#94a3b8;font-size:13px;">'.$labels['quantity'].'</td><td style="color:#e2e8f0;font-size:14px;">'.x3dHtml($payload['quantity'] !== '' ? $payload['quantity'] : '-').'</td></tr>'
-        . $filesRow
+        . $fileLinkRow
         . '<tr><td width="140" style="color:#94a3b8;font-size:13px;vertical-align:top;padding-top:6px;">'.$labels['message'].'</td><td style="padding-top:6px;"><div style="background:#0f172a;border:1px solid rgba(148,163,184,0.25);border-radius:10px;padding:12px 14px;color:#e2e8f0;font-size:14px;line-height:1.55;">'.x3dNl2brEscaped($payload['message']).'</div></td></tr>'
         . '</table></td></tr>'
         . '<tr><td style="padding-top:18px;font-size:14px;color:#cbd5e1;">'.$signoffHtml.'</td></tr>'
@@ -349,9 +193,8 @@ function x3dBuildCustomerConfirmation(array $payload): array {
     $product = $payload['requestContext'] !== '' ? $payload['requestContext'] : '-';
     $materialValue = $payload['material'] !== '' ? $payload['material'] : '-';
     $quantityValue = $payload['quantity'] !== '' ? $payload['quantity'] : '-';
-    $attachmentNames = array_map(static fn(array $attachment): string => $attachment['name'], $payload['attachments'] ?? []);
-    $filesLineEn = $attachmentNames !== [] ? '- Files: '.implode(', ', $attachmentNames)."\n" : '';
-    $filesLineNl = $attachmentNames !== [] ? '- Bestanden: '.implode(', ', $attachmentNames)."\n" : '';
+    $fileLinkLineEn = ($payload['fileLink'] ?? '') !== '' ? '- File link: '.$payload['fileLink']."\n" : '';
+    $fileLinkLineNl = ($payload['fileLink'] ?? '') !== '' ? '- Bestandslink: '.$payload['fileLink']."\n" : '';
     $isVacation = x3dVacationAutoReplyActive();
 
     if ($payload['locale'] === 'en') {
@@ -360,7 +203,7 @@ function x3dBuildCustomerConfirmation(array $payload): array {
             $text = "Hi {$payload['name']},\n\n"
                 . "Thanks for your message. Your request was received.\n\n"
                 . "I am on holiday from 12 August through 20 August 2026. New requests will therefore be followed up a little slower than usual. From 21 August I will pick requests back up and come back with pricing, timing or extra questions.\n\n"
-                . "Summary:\n- Product/context: {$product}\n- Material: {$materialValue}\n- Quantity: {$quantityValue}\n{$filesLineEn}\n"
+                . "Summary:\n- Product/context: {$product}\n- Material: {$materialValue}\n- Quantity: {$quantityValue}\n{$fileLinkLineEn}\n"
                 . "Your message:\n{$payload['message']}\n\n"
                 . "If you have extra info, photos or a deadline in the meantime, feel free to reply to this email so everything is grouped together when I review your request.\n\n"
                 . "Talk soon,\nMichael from X3DPrints";
@@ -383,7 +226,7 @@ function x3dBuildCustomerConfirmation(array $payload): array {
         $subject = 'We received your request';
         $text = "Hi {$payload['name']},\n\n"
             . "Thanks for your message. We will review your request and send a concrete reply with pricing and timing soon.\n\n"
-            . "Summary:\n- Product/context: {$product}\n- Material: {$materialValue}\n- Quantity: {$quantityValue}\n{$filesLineEn}\n"
+            . "Summary:\n- Product/context: {$product}\n- Material: {$materialValue}\n- Quantity: {$quantityValue}\n{$fileLinkLineEn}\n"
             . "Your message:\n{$payload['message']}\n\n"
             . "Talk soon,\nMichael from X3DPrints";
 
@@ -407,7 +250,7 @@ function x3dBuildCustomerConfirmation(array $payload): array {
         $text = "Hey {$payload['name']},\n\n"
             . "Bedankt voor je bericht! Je aanvraag is goed ontvangen.\n\n"
             . "Ik ben met vakantie van 12 augustus t.e.m. 20 augustus 2026. Daardoor worden nieuwe aanvragen iets trager opgevolgd dan gewoonlijk. Vanaf 21 augustus neem ik de aanvragen opnieuw verder op en kom ik terug met prijs, timing of bijkomende vragen.\n\n"
-            . "Samenvatting:\n- Product/context: {$product}\n- Materiaal: {$materialValue}\n- Aantal: {$quantityValue}\n{$filesLineNl}\n"
+            . "Samenvatting:\n- Product/context: {$product}\n- Materiaal: {$materialValue}\n- Aantal: {$quantityValue}\n{$fileLinkLineNl}\n"
             . "Je bericht:\n{$payload['message']}\n\n"
             . "Heb je intussen extra info, foto's of een deadline? Antwoord gerust op deze mail, dan zit alles meteen samen wanneer ik je aanvraag bekijk.\n\n"
             . "Tot snel,\nMichael van X3DPrints";
@@ -430,10 +273,9 @@ function x3dBuildCustomerConfirmation(array $payload): array {
     $subject = 'We hebben je aanvraag ontvangen';
     $text = "Hey {$payload['name']},\n\n"
         . "Bedankt voor je bericht! We bekijken je aanvraag en sturen snel een reactie met prijs en timing.\n\n"
-        . "Samenvatting:\n- Product/context: {$product}\n- Materiaal: {$materialValue}\n- Aantal: {$quantityValue}\n{$filesLineNl}\n"
+        . "Samenvatting:\n- Product/context: {$product}\n- Materiaal: {$materialValue}\n- Aantal: {$quantityValue}\n{$fileLinkLineNl}\n"
         . "Je bericht:\n{$payload['message']}\n\n"
-        . "Tot snel,\nMichael van X3DPrints\n\n"
-        . "P.S. Geen stress als je bestand 'final_v3_definitief.stl' heet, dat zien we wel vaker ;)";
+        . "Tot snel,\nMichael van X3DPrints";
 
     return [
         'subject' => $subject,
@@ -444,8 +286,7 @@ function x3dBuildCustomerConfirmation(array $payload): array {
             'We bekijken je vraag en sturen snel een concreet voorstel met prijs en timing. Hieronder de samenvatting.',
             null,
             $payload,
-            'Tot snel,<br>Michael van X3DPrints',
-            'P.S. Geen stress als je bestand "final_v3_definitief.stl" heet, dat zien we wel vaker ;)'
+            'Tot snel,<br>Michael van X3DPrints'
         ),
         'vacationAutoReply' => false,
     ];
@@ -458,47 +299,25 @@ function encodeHeader(string $text): string {
     return '=?UTF-8?B?' . base64_encode($text) . '?=';
 }
 
-function sendTextMail(string $to, string $subject, string $body, string $replyTo, string $fromHeader, array $attachments = []): bool {
+function sendTextMail(string $to, string $subject, string $body, string $replyTo, string $fromHeader): bool {
     $headers = "From: {$fromHeader}\r\n";
     if ($replyTo !== '') {
         $headers .= "Reply-To: {$replyTo}\r\n";
     }
     $headers .= "MIME-Version: 1.0\r\n";
-    if ($attachments === []) {
-        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-        $headers .= "Content-Transfer-Encoding: 8bit\r\n";
-        $mailBody = $body;
-    } else {
-        $boundary = 'mixed-' . bin2hex(random_bytes(12));
-        $headers .= "Content-Type: multipart/mixed; boundary=\"{$boundary}\"\r\n";
-        $mailBody = "--{$boundary}\r\n";
-        $mailBody .= "Content-Type: text/plain; charset=UTF-8\r\n";
-        $mailBody .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
-        $mailBody .= $body . "\r\n";
-        foreach ($attachments as $attachment) {
-            $fileContent = @file_get_contents($attachment['tmpPath']);
-            if ($fileContent === false) {
-                return false;
-            }
-            $mailBody .= "--{$boundary}\r\n";
-            $mailBody .= "Content-Type: {$attachment['mime']}; name=\"{$attachment['name']}\"\r\n";
-            $mailBody .= "Content-Disposition: attachment; filename=\"{$attachment['name']}\"\r\n";
-            $mailBody .= "Content-Transfer-Encoding: base64\r\n\r\n";
-            $mailBody .= chunk_split(base64_encode($fileContent)) . "\r\n";
-        }
-        $mailBody .= "--{$boundary}--";
-    }
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $headers .= "Content-Transfer-Encoding: 8bit\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 
     $envelopeFrom = parseFromAddress($fromHeader) ?: null;
     if ($envelopeFrom) {
         ini_set('sendmail_from', $envelopeFrom);
         // probeer met envelope -f; bij falen fallback zonder -f (sommige hosts blokkeren dit)
-        if (@mail($to, $subject, $mailBody, $headers, "-f {$envelopeFrom}")) {
+        if (@mail($to, $subject, $body, $headers, "-f {$envelopeFrom}")) {
             return true;
         }
     }
-    return @mail($to, $subject, $mailBody, $headers);
+    return @mail($to, $subject, $body, $headers);
 }
 
 function sendMultipartMail(string $to, string $subject, string $textBody, string $htmlBody, string $replyTo, string $fromHeader): bool {
@@ -599,12 +418,9 @@ function x3dBuildLeadDescription(array $payload): string {
         $lines[] = 'Indicatieve schatting:';
         $lines[] = $payload['quote'];
     }
-    if (($payload['attachments'] ?? []) !== []) {
+    if (($payload['fileLink'] ?? '') !== '') {
         $lines[] = '';
-        $lines[] = 'Bestanden:';
-        foreach ($payload['attachments'] as $attachment) {
-            $lines[] = sprintf('- %s (%.1f MB)', $attachment['name'], $attachment['size'] / 1024 / 1024);
-        }
+        $lines[] = 'Bestandslink: ' . $payload['fileLink'];
     }
     $lines[] = '';
     $lines[] = 'Bericht:';
@@ -666,7 +482,7 @@ function x3dCreateEspoLead(array $payload): bool {
 }
 
 // Stuur altijd adminmail; bevestiging proberen maar admin heeft prioriteit
-$adminSent = sendTextMail($to, $subject, $textBody, $email, $fromHeader, $attachments);
+$adminSent = sendTextMail($to, $subject, $textBody, $email, $fromHeader);
 $leadPayload = [
     'name' => $name,
     'email' => $email,
@@ -680,8 +496,8 @@ $leadPayload = [
     'quote' => $quote,
     'requestContext' => $requestContext,
     'source' => $source,
+    'fileLink' => $fileLink,
     'locale' => $locale,
-    'attachments' => $attachmentMetadata,
 ];
 $leadCreated = $adminSent ? x3dCreateEspoLead($leadPayload) : false;
 $confirmSent = $email ? sendMultipartMail($email, $confirmSubject, $confirmText, $confirmHtml, $to, $fromHeader) : false;
@@ -701,7 +517,7 @@ $logEntry = [
     'quote' => $quote,
     'requestContext' => $requestContext,
     'source' => $source,
-    'attachments' => $attachmentMetadata,
+    'fileLink' => $fileLink,
     'adminSent' => $adminSent,
     'leadCreated' => $leadCreated,
     'confirmSent' => $confirmSent,
@@ -716,7 +532,6 @@ if ($adminSent) {
         'success' => true,
         'confirmationSent' => $confirmSent,
         'leadCreated' => $leadCreated,
-        'attachmentCount' => count($attachmentMetadata),
     ]);
 }
 

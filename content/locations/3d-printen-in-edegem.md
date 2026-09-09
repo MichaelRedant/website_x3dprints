@@ -42,7 +42,7 @@ Met **3D printen in Edegem** help je projecten vooruit rond Fort 5, UZA/UZ Antwe
 
 ## Praktische aanpak
 
-- Upload **STL/STEP** via [contact](/contact) met aantallen, gewenste leverdatum en materiaalvoorkeur.
+- Deel een **STL/STEP-link** via [contact](/contact) met aantallen, gewenste leverdatum en materiaalvoorkeur.
 
 - Onderdelen tot **35 x 32 x 35 cm** printen we in één stuk; grotere delen worden slim opgesplitst.
 

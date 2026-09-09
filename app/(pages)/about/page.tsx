@@ -99,7 +99,7 @@ const ABOUT_COPY_NL = {
     ],
     howTitle: "Hoe we werken",
     howItems: [
-      "Upload je STL/STEP met toepassing en gewenste afwerking",
+      "Deel een link naar je STL/STEP met toepassing en gewenste afwerking",
       "Eerlijk materiaaladvies en transparante offerte",
       "Productie, kwaliteitscheck en eventuele nabewerking",
       "Verzending in BE of afhalen in regio Herzele/Gent",
@@ -182,7 +182,7 @@ const ABOUT_COPY_EN = {
     ],
     howTitle: "How we work",
     howItems: [
-      "Upload your STL/STEP with use case and desired finish",
+      "Share a link to your STL/STEP with use case and desired finish",
       "Honest material advice and a transparent quote",
       "Production, quality checks and any post-processing",
       "Shipping in Belgium or pickup around Herzele/Ghent",

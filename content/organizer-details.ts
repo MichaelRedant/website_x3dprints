@@ -269,7 +269,7 @@ export const ORGANIZER_PAGES: Record<OrganizerSlug, OrganizerPageContent> = {
     heroSubtitle: "Parametrisch ontwerp op basis van jouw koffer en tools.",
     intro:
       "Geen Packout/Gridfinity/TSTAK We modelleren een insert op maat met jouw foto, maten en tool-lijst. Geschikt voor hobbyisten en professionals met unieke koffers.",
-    summary: "Upload foto en afmetingen, wij sturen een preview en printen on-demand.",
+    summary: "Deel een link naar foto en afmetingen, wij sturen een preview en printen on-demand.",
     pains: ["Onregelmatige tools", "Geen passend raster", "Meetwerk zonder guidance", "Tijdverlies door zoeken"],
     steps: [
       { title: "Foto & maten", description: "Stuur een foto van de open koffer + binnenmaten." },

@@ -41,7 +41,7 @@ We kennen de combinatie van events, retail en KMO's in de Druivenstreek. Daardoo
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via E411/R0; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

@@ -535,7 +535,7 @@ export default function UseCaseDinsdagInterieurPage() {
                   Wil je een sculptuur, wandobject of decoratief design laten printen?
                 </h2>
                 <p className="mt-2 text-sm text-slate-600">
-                  Upload STL/STEP of vraag advies. We stemmen materiaal, textuur en planning af op jouw project of collectie.
+                  Deel een STL/STEP-link of vraag advies. We stemmen materiaal, textuur en planning af op jouw project of collectie.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-3 text-sm font-semibold text-indigo-600">
                   {ctaLinks.map((link) => (

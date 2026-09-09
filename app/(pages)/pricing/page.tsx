@@ -172,7 +172,7 @@ const PRICING_COPY_NL = {
   },
   cta: {
     title: "Offerte nodig?",
-    body: "Upload STL/STEP met een korte beschrijving. Je krijgt snel een voorstel met materiaaladvies, prijs en levertermijn.",
+    body: "Deel een STL/STEP-link met een korte beschrijving. Je krijgt snel een voorstel met materiaaladvies, prijs en levertermijn.",
     primary: "Offerte aanvragen",
     secondary: "Services bekijken",
   },
@@ -295,7 +295,7 @@ const PRICING_COPY_EN = {
   },
   cta: {
     title: "Need a quote?",
-    body: "Upload STL/STEP with a short description. You get a fast proposal with material advice, price and lead time.",
+    body: "Share an STL/STEP link with a short description. You get a fast proposal with material advice, price and lead time.",
     primary: "Request a quote",
     secondary: "View services",
   },

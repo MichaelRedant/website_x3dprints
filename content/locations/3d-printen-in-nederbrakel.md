@@ -98,7 +98,7 @@ Werk je in Nederbrakel? We leveren snelle prototypes en zowel kleine als grotere
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Nederbrakel**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Nederbrakel**.
 
 
 

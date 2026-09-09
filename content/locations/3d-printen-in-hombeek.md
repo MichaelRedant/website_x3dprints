@@ -68,7 +68,7 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Hombeek of afh
 
 ## Offerte aanvragen
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel zodat je project in Hombeek vooruitgaat.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel zodat je project in Hombeek vooruitgaat.
 
 <!-- LOCAL_ENRICH_START -->
 ## Wat je moet weten in Hombeek

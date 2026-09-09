@@ -35,7 +35,7 @@ Zoek je 3D printen in Zingem? We denken mee over passing, sterkte en look zodat 
 
 ## Werkwijze
 
-1) Upload STL/STEP via [contact](/contact) met toepassing en aantallen.  
+1) Deel een STL/STEP-link via [contact](/contact) met toepassing en aantallen.  
 2) Wij adviseren orientatie en materiaal.  
 3) Print, QC en levering in Zingem of afhalen.
 

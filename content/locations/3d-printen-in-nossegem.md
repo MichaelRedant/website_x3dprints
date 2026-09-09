@@ -38,7 +38,7 @@ Voor **3D printen in Nossegem** leveren we prototypes, behuizingen en zowel klei
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via Leuvensesteenweg; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

@@ -38,7 +38,7 @@ Voor **3D printen in Meise** leveren we prototypes, props en tooling richting de
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via A12; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

@@ -79,7 +79,7 @@ export default function PackoutPage() {
       { name: "Model delen", text: "Geef het Packout modelnummer of foto van de open koffer." },
       { name: "Maten doorgeven", text: "Binnenmaten in mm indien gekend." },
       { name: "Tools oplijsten", text: "Accu's, opladers, bits, handtools met aantallen." },
-      { name: "Uploaden", text: "Gebruik het contactformulier (Packout prefill) om alles te sturen." },
+      { name: "Bestandslink delen", text: "Gebruik het contactformulier (Packout prefill) om een toegankelijke link en alle details te sturen." },
     ],
   })
   const tocItems = [

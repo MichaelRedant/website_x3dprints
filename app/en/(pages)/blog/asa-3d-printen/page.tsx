@@ -439,9 +439,7 @@ export default function Asa3dPrintingPage() {
                 are prepared in Herzele and then collected by appointment or shipped. See service information for
                 <Link href="/en/3d-printen-in-herzele" className="mx-1 font-semibold text-indigo-600 underline underline-offset-4">Herzele</Link>,
                 <Link href="/en/3d-printen-in-gent" className="mx-1 font-semibold text-indigo-600 underline underline-offset-4">Ghent</Link>,
-                <Link href="/en/3d-printen-in-antwerpen" className="mx-1 font-semibold text-indigo-600 underline underline-offset-4">Antwerp</Link>,
-                <Link href="/en/3d-printen-in-hasselt" className="mx-1 font-semibold text-indigo-600 underline underline-offset-4">Hasselt</Link> and
-                <Link href="/en/3d-printen-in-genk" className="mx-1 font-semibold text-indigo-600 underline underline-offset-4">Genk</Link>, or browse the full
+                <Link href="/en/3d-printen-in-antwerpen" className="mx-1 font-semibold text-indigo-600 underline underline-offset-4">Antwerp</Link>, or browse the full
                 <Link href="/en/locaties" className="ml-1 font-semibold text-indigo-600 underline underline-offset-4">delivery area</Link>.
               </p>
             </GlassCard>

@@ -42,7 +42,7 @@ Voor **3D printen in Boechout** leveren we vanuit Herzele prototypes en function
 
 ## Praktische info
 
-- Upload **STL/STEP** via [contact](/contact) met aantallen en materiaalvoorkeur; we denken mee over oriëntatie en finish.
+- Deel een **STL/STEP-link** via [contact](/contact) met aantallen en materiaalvoorkeur; we denken mee over oriëntatie en finish.
 
 - Maximaal **35 x 32 x 35 cm** per onderdeel; grotere stukken worden slim opgesplitst en gelijmd.
 

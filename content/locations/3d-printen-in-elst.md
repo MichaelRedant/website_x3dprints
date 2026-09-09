@@ -98,7 +98,7 @@ In Elst helpen we makers en bedrijven met 3D prints die vlot passen en lang meeg
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Elst**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Elst**.
 
 
 

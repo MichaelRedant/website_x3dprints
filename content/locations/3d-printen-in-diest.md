@@ -41,7 +41,7 @@ We kennen de mix van erfgoed, toerisme en KMO's rond Diest. Daardoor krijg je pr
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en gewenste afwerking.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en gewenste afwerking.
 - Levering via E314/N29; afhalen in Herzele mogelijk.
 - Optionele nabehandeling: schuren/primen/lakken voor zichtwerk.
 

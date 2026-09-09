@@ -93,7 +93,7 @@ export default function Page() {
       q: "Which materials do you offer?",
       a: "PLA, PETG and TPU are standard. PLA for detail, PETG for strength/heat, TPU for flexibility. Details on <a href=\"/en/materials\">/materials</a>.",
     },
-    { q: "Can I supply my own file?", a: "Yes. Upload STL/STEP via <a href=\"/en/contact\">/contact</a> or double-check with the <a href=\"/en/viewer\">viewer</a>." },
+    { q: "Can I supply my own file?", a: "Yes. Share an STL/STEP link via <a href=\"/en/contact\">/contact</a> or inspect the model locally with the <a href=\"/en/viewer\">viewer</a>." },
     { q: "How fast can you deliver?", a: "Typically 2-5 business days depending on complexity and volume. Rush possible on request via <a href=\"/en/contact\">/contact</a>." },
     {
       q: "What does a 3D print cost?",

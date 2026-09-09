@@ -41,7 +41,7 @@ We kennen events, retail en KMO's in de Druivenstreek. Daardoor stemmen we mater
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via E411; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

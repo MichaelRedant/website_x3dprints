@@ -78,9 +78,9 @@ export const metadata: Metadata = NL_METADATA
 const NL_COPY = {
   heroTitle: "Offerte of vraag over 3D printen in Belgie?",
   heroIntro:
-    "Een STL- of 3MF-bestand, korte context en gewenst materiaal volstaan. Van onderdelen en organizers tot prototypes, etalage-items en persoonlijke stukken: je krijgt snel een heldere prijs en timing, meestal binnen 24 uur.",
+    "Een link naar je 3D-bestand, korte context en gewenst materiaal volstaan. Van onderdelen en organizers tot prototypes, etalage-items en persoonlijke stukken: je krijgt snel een heldere prijs en timing, meestal binnen 24 uur.",
   formHeading: "Contactformulier",
-  formIntro: "Upload je STL- of 3MF-bestand meteen. Voor grotere bestanden of STEP kun je een downloadlink toevoegen.",
+  formIntro: "Voeg een toegankelijke deel- of downloadlink naar je 3D-bestand, foto's of referenties toe.",
   formLoading: "Formulier wordt geladen...",
   quickStartTitle: "Snelle start (met prefill)",
   quickStartIntro: "Kies je meest voorkomende scenario. We vullen materiaal en prijscontext meteen voor je in.",
@@ -88,11 +88,12 @@ const NL_COPY = {
   emailLabel: "E-mail",
   regionLabel: "Regio",
   regionValue: "Herzele - leveringen in groot Gent/Aalst mogelijk",
-  filesLabel: "Bestanden",
-  filesValue: "STL en 3MF kun je meteen uploaden. Gebruik voor grotere bestanden of STEP een downloadlink.",
+  filesLabel: "Bestandslink",
+  filesValue: "Deel je STL, 3MF, STEP, foto's of referenties via een toegankelijke link.",
   helpfulHeading: "Handig om te vermelden",
   helpfulItems: [
     "Toepassing en omgeving (binnen/buiten, warmte/UV)",
+    "Een toegankelijke link naar je 3D-bestand, foto's of referenties",
     "Gewenst materiaal (PLA, PETG, TPU, etc.) en kleur",
     "Afwerking: rauw, geschuurd, geprimed, gelakt",
     "Aantal stuks en gewenste leverdatum",
@@ -100,11 +101,11 @@ const NL_COPY = {
   faq: [
     {
       q: "Hoe snel krijg ik antwoord?",
-      a: "Meestal binnen 24 uur. Voeg je STL of 3MF en gewenste timing toe voor een gericht voorstel.",
+      a: "Meestal binnen 24 uur. Voeg een link naar je STL, 3MF of STEP en je gewenste timing toe voor een gericht voorstel.",
     },
     {
-      q: "Welke bestanden kan ik doorsturen?",
-      a: "Je kunt maximaal drie STL- of 3MF-bestanden uploaden, tot 10 MB per bestand en 15 MB samen. Gebruik voor grotere bestanden of STEP een downloadlink.",
+      q: "Hoe bezorg ik mijn bestanden?",
+      a: "Plaats een toegankelijke deel- of downloadlink naar je STL, 3MF, STEP, foto's of referentiebestanden in het formulier. Zorg dat de link zonder extra toestemming geopend kan worden.",
     },
     {
       q: "Kunnen jullie materiaal adviseren?",
@@ -121,9 +122,9 @@ const NL_COPY = {
 
 const EN_COPY = {
   heroTitle: "Quote or question for custom 3D printing?",
-  heroIntro: "An STL or 3MF file, short context and preferred material are enough. From parts and organizers to prototypes, retail items and personalized pieces, you'll get a clear price and lead time quickly, usually within 24 hours.",
+  heroIntro: "A link to your 3D file, short context and preferred material are enough. From parts and organizers to prototypes, retail items and personalized pieces, you'll get a clear price and lead time quickly, usually within 24 hours.",
   formHeading: "Contact form",
-  formIntro: "Upload your STL or 3MF file directly. For larger files or STEP, add a download link.",
+  formIntro: "Add an accessible share or download link to your 3D file, photos or references.",
   formLoading: "Loading form...",
   quickStartTitle: "Quick start (prefilled)",
   quickStartIntro: "Pick your common scenario and we prefill material and pricing context right away.",
@@ -131,11 +132,12 @@ const EN_COPY = {
   emailLabel: "Email",
   regionLabel: "Region",
   regionValue: "Herzele – deliveries in Greater Ghent/Aalst possible",
-  filesLabel: "Files",
-  filesValue: "Upload STL and 3MF directly. For larger files or STEP, use a download link.",
+  filesLabel: "File link",
+  filesValue: "Share your STL, 3MF, STEP, photos or references through an accessible link.",
   helpfulHeading: "Useful to mention",
   helpfulItems: [
     "Application and environment (indoor/outdoor, heat/UV)",
+    "An accessible link to your 3D file, photos or references",
     "Preferred material (PLA, PETG, TPU, etc.) and colour",
     "Finish: raw, sanded, primed, painted",
     "Quantity and desired delivery date",
@@ -143,11 +145,11 @@ const EN_COPY = {
   faq: [
     {
       q: "How fast do I get a reply?",
-      a: "Usually within 24 hours. Add your STL or 3MF file and desired timing for a targeted proposal.",
+      a: "Usually within 24 hours. Add a link to your STL, 3MF or STEP file and desired timing for a targeted proposal.",
     },
     {
-      q: "Which files can I send?",
-      a: "You can upload up to three STL or 3MF files, with a limit of 10 MB per file and 15 MB combined. For larger files or STEP, use a download link.",
+      q: "How do I provide my files?",
+      a: "Add an accessible share or download link to your STL, 3MF, STEP, photos or reference files in the form. Make sure the link can be opened without requesting additional permission.",
     },
     {
       q: "Can you advise on material?",

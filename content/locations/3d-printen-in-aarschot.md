@@ -41,7 +41,7 @@ We kennen de combinatie van productie, retail en onderwijs rond Aarschot. Daardo
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en deadline.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en deadline.
 - Levering via E314-corridor; afhalen in Herzele mogelijk.
 - Optionele nabehandeling (schuren/primen) voor zichtwerk.
 

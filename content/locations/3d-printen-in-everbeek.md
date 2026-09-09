@@ -98,7 +98,7 @@ Voor projecten in Everbeek combineren we korte doorlooptijd met strakke afwerkin
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Everbeek**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Everbeek**.
 
 
 

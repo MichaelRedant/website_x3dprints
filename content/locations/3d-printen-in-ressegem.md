@@ -77,7 +77,7 @@ Meer weten? Lees ook:
 
 ## 🛒 Hoe bestellen in Ressegem?
 
-1. Upload je **STL/STEP-bestand** via de [contactpagina](/contact)  
+1. Deel een link naar je **STL/STEP-bestand** via de [contactpagina](/contact)  
 2. Kies materiaal en kleur  
 3. Ontvang een offerte binnen **24 uur**  
 4. Start productie na akkoord  

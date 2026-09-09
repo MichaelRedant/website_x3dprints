@@ -38,7 +38,7 @@ Voor **3D printen in Opwijk** leveren we prototypes, behuizingen en tooling rich
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering tussen Aalst en Brussel; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

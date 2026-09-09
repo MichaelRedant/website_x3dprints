@@ -35,7 +35,7 @@ Voor projecten in Wannegem combineren we korte doorlooptijd met strakke afwerkin
 
 ## Workflow
 
-1) Upload STL/STEP via [contact](/contact) met afmetingen en toepassing.  
+1) Deel een STL/STEP-link via [contact](/contact) met afmetingen en toepassing.  
 2) Wij adviseren orientatie en materiaalkeuze.  
 3) Print, QC en levering in Wannegem-Lede of afhalen.
 

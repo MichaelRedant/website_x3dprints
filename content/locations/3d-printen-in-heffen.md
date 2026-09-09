@@ -68,7 +68,7 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte aanvragen
 
-Upload je bestand via [contact](/contact) en noteer materiaal en deadline. We bezorgen snel een voorstel voor **3D printen in Heffen**.
+Deel een link naar je bestand via [contact](/contact) en noteer materiaal en deadline. We bezorgen snel een voorstel voor **3D printen in Heffen**.
 
 <!-- LOCAL_ENRICH_START -->
 ## Lokale accenten voor Heffen

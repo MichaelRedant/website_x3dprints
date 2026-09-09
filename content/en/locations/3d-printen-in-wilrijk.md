@@ -76,7 +76,7 @@ We frequently deliver to: Wilrijk, Wilrijk city center, Campus Drie Eiken, A12-c
 
 ## Ordering steps
 
-1. Upload STL/STEP via [contact](/en/contact).
+1. Share an STL/STEP link via [contact](/en/contact).
 2. Note material (PLA/PETG/TPU), colour and quantity.
 3. Receive quote + timing within one business day.
 

@@ -35,7 +35,7 @@ Voor projecten in Steenkerke combineren we korte doorlooptijd met strakke afwerk
 
 ## Workflow
 
-1. Upload STL/STEP en context via [contact](/contact)
+1. Deel een STL/STEP-link en context via [contact](/contact)
 2. We valideren materiaalkeuze en eventuele inserts volgens de richtlijnen uit [3d-printen](/3d-printen)
 3. Na goedkeuring plannen we productie, doen nacontrole en delen foto-updates
 4. Levering richting Steenkerke of afhalen in Herzele, afhankelijk van jouw voorkeur

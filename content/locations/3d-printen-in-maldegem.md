@@ -38,7 +38,7 @@ In Maldegem helpen we makers en bedrijven met 3D prints die vlot passen en lang 
 
 ## Zo werken we
 
-1) **Upload STL/STEP** via [contact](/contact) en noteer afmeting + toepassing.  
+1) **Deel een STL/STEP-link** via [contact](/contact) en noteer afmeting + toepassing.  
 2) **Materiaalkeuze**: we adviseren snel (PLA/PETG/TPU) en layerhoogte.  
 3) **Productie & levering**: printen, kwaliteitscheck, dan levering/afhalen.
 

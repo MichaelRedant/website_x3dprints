@@ -42,7 +42,7 @@ Voor **3D printen in Rumst** leveren we onderdelen die klaar zijn voor de werven
 
 ## Bestellen
 
-- Upload **STL/STEP** via [contact](/contact) met aantallen, materiaalvoorkeur en gewenste leverdatum.
+- Deel een **STL/STEP-link** via [contact](/contact) met aantallen, materiaalvoorkeur en gewenste leverdatum.
 
 - Onderdelen tot **35 x 32 x 35 cm** printen we in één stuk; grotere delen splitsen we slim.
 

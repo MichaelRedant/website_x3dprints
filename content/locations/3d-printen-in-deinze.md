@@ -62,7 +62,7 @@ Werk je in Deinze? We leveren snelle prototypes en zowel kleine als grotere seri
 
 ## Offerte voor 3D printen in Deinze
 
-Upload je bestand via [contact](/contact). Je ontvangt snel een voorstel zodat je project in Deinze of de Leiestreek zonder vertraging vooruitgaat.
+Deel een link naar je bestand via [contact](/contact). Je ontvangt snel een voorstel zodat je project in Deinze of de Leiestreek zonder vertraging vooruitgaat.
 
 
 ## Veelgestelde vragen over 3D printen in Deinze

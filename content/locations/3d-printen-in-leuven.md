@@ -43,7 +43,7 @@ Werk je in Leuven? We zorgen dat je onderdeel direct inzetbaar is.
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en gewenste afwerking.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en gewenste afwerking.
 - Levering via E40/E314, EV-optie voor kwetsbare prints; afhalen in Herzele kan.
 - We adviseren over oriëntatie en nabehandeling zodat je onderdeel meteen werkt.
 

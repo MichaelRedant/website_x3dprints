@@ -38,7 +38,7 @@ Voor **3D printen in Galmaarden** leveren we prototypes, behuizingen en tooling 
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via Ninoofsesteenweg/N8; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

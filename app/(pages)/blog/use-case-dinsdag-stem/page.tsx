@@ -597,7 +597,7 @@ export default function UseCaseDinsdagStemPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">Volgende stap</p>
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900">Klaar voor een veilige klasworkflow?</h2>
                 <p className="mt-2 text-sm text-slate-600">
-                  Upload STL of STEP, deel lesdoelen en we stemmen materialen, planning en begeleiding af op jouw STEM-programma.
+                  Deel een link naar je STL of STEP, vermeld de lesdoelen en we stemmen materialen, planning en begeleiding af op jouw STEM-programma.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-3 text-sm font-semibold text-indigo-600">
                   {ctaLinks.map((link) => (

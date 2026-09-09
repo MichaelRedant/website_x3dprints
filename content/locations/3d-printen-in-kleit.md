@@ -35,7 +35,7 @@ Voor projecten in Kleit combineren we korte doorlooptijd met strakke afwerking.
 
 ## Volgende stap
 
-1) Upload je STL/STEP via [contact](/contact).  
+1) Deel een link naar je STL/STEP via [contact](/contact).  
 2) Noteer omgeving en belasting; we adviseren orientatie en materiaal.  
 3) Check kleuren op [materials](/materials) en zet de planning vast.
 

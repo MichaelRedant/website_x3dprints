@@ -363,7 +363,7 @@ const SERVICES_COPY_NL = {
   workflow: {
     title: "Workflow",
     steps: [
-      "Upload STL/STEP en vermeld toepassing, kleur en gewenste afwerking",
+      "Deel een STL/STEP-link en vermeld toepassing, kleur en gewenste afwerking",
       "Materiaaladvies en offerte, doorgaans binnen 24 uur",
       "Productie, kwaliteitscheck en basis nabewerking (support verwijderen)",
       "Verzending of afhalen in Herzele; factuur digitaal",
@@ -660,7 +660,7 @@ const SERVICES_COPY_EN = {
   workflow: {
     title: "Workflow",
     steps: [
-      "Upload STL/STEP and specify use case, color and desired finish",
+      "Share an STL/STEP link and specify use case, color and desired finish",
       "Material advice and quote, usually within 24 hours",
       "Production, quality check and basic post-processing (support removal)",
       "Shipping or pickup in Herzele; invoice digitally",

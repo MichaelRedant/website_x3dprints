@@ -38,7 +38,7 @@ Met **3D printen in Merchtem** leveren we prototypes, behuizingen en tooling ric
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering tussen Brussel en Aalst; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

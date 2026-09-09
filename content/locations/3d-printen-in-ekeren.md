@@ -69,7 +69,7 @@ Zoek je 3D printen in Ekeren? We denken mee over passing, sterkte en look zodat 
 
 ## Offerte aanvragen
 
-Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur en aantal; je krijgt snel een voorstel voor **3D printen in Ekeren**.
+Deel een link naar je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur en aantal; je krijgt snel een voorstel voor **3D printen in Ekeren**.
 
 <!-- LOCAL_ENRICH_START -->
 ## Ekeren als noordelijke schakel richting haven

@@ -35,7 +35,7 @@ In Kruishoutem helpen we makers en bedrijven met 3D prints die vlot passen en la
 
 ## Stappen
 
-1) Upload STL/STEP via [contact](/contact) met context en aantallen.  
+1) Deel een STL/STEP-link via [contact](/contact) met context en aantallen.  
 2) Wij adviseren orientatie en materiaal.  
 3) Print, QC en levering in Kruishoutem of afhalen.
 

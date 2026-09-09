@@ -159,7 +159,7 @@ const differentiators = [
 
 const workflow = [
   {
-    title: "1) Upload & context",
+    title: "1) File link & context",
     detail:
       "Send your STL or STEP file with details on use case, critical dimensions and desired finish. The better the context, the better the print.",
   },
@@ -294,7 +294,7 @@ const howToJsonLd = buildHowToSchema({
   inLanguage: "en-BE",
   mainEntityOfPage: pageUrl,
   name: "Request 3D printing from X3DPrints",
-  description: "Upload STL/STEP, choose material and receive a clear quote with planning.",
+  description: "Share an STL/STEP link, choose material and receive a clear quote with planning.",
   steps: [
     { name: "Share your 3D file", text: "Send STL/STEP with context and critical dimensions." },
     { name: "Get material advice", text: "We propose PLA, PETG or TPU with price impact." },
@@ -590,7 +590,7 @@ export default function ThreeDPrintingPage() {
                     href="/en/viewer"
                     className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:-translate-y-0.5 hover:bg-white"
                   >
-                    Upload STL/STEP
+                    Share STL/STEP link
                   </Link>
                 </div>
               </div>

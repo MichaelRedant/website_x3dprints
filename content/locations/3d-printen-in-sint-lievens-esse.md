@@ -65,7 +65,7 @@ Sint-Lievens-Esse is een deelgemeente van Herzele en deelt in de vooruitgang van
 
 ## Hoe werkt bestellen van 3D printen in Sint-Lievens-Esse?
 
-1. Upload je ontwerp via de [contactpagina](/contact).  
+1. Deel een link naar je ontwerp via de [contactpagina](/contact).  
 2. Kies materiaal en kleur.  
 3. Ontvang binnen 24 uur een offerte.  
 4. Na goedkeuring starten we de productie.  

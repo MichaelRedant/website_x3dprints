@@ -63,7 +63,7 @@ De dorpskern ligt tussen heuvels en velden in de Zwalmvallei. Via **3D printen i
 
 ## Hoe bestellen bij X3DPrints?
 
-1. Upload je model via de [contactpagina](/contact).
+1. Deel een link naar je model via de [contactpagina](/contact).
 2. Kies materiaal en afwerking voor **3D printen in Sint-Goriks-Oudenhove**.
 3. Ontvang binnen 24 uur een offerte.
 4. Na akkoord starten we met **3D printen in Sint-Goriks-Oudenhove**.

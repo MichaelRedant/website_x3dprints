@@ -41,7 +41,7 @@ We kennen de mix van events, retail en KMO's in de Vlaamse Rand. Daardoor stemme
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en gewenste finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en gewenste finish.
 - Levering via de Ring; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

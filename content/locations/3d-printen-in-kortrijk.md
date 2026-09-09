@@ -35,7 +35,7 @@ In Kortrijk helpen we makers en bedrijven met 3D prints die vlot passen en lang 
 
 ## Workflow
 
-1. Upload STL/STEP met toepassing, kritieke maten en gewenste afwerking  
+1. Deel een STL/STEP-link met toepassing, kritieke maten en gewenste afwerking  
 2. Materiaaladvies (PLA/PETG/TPU) + prijsvoorstel binnen een werkdag  
 3. Print, supportverwijdering en steekproef op kritieke maten  
 4. Afhalen in Herzele of levering richting Kortrijk en Vlaanderen

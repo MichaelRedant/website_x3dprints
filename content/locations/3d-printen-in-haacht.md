@@ -38,7 +38,7 @@ Voor **3D printen in Haacht** leveren we prototypes en zowel kleine als grotere 
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via N19; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

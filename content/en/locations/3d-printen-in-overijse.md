@@ -74,7 +74,7 @@ We frequently deliver to: Overijse, Overijse city center, Jezus-Eik, E411-corrid
 
 ## Ordering steps
 
-1. Upload STL/STEP via [contact](/en/contact).
+1. Share an STL/STEP link via [contact](/en/contact).
 2. Note material (PLA/PETG/TPU), colour and quantity.
 3. Receive quote + timing within one business day.
 

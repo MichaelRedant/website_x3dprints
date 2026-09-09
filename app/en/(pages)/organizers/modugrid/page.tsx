@@ -138,7 +138,7 @@ export default function ModuGridPageEn() {
       { name: "Measure", text: "Length, width and height (or diameter x height) in millimetres." },
       { name: "Choose orientation", text: "Flat or upright placement." },
       { name: "Qty", text: "Tell how many identical tools go in the same drawer." },
-      { name: "Send", text: "Upload via the contact form (prefill Gridfinity)." },
+      { name: "Send", text: "Share an accessible file link via the contact form (prefill Gridfinity)." },
     ],
   })
   const tocItems = [

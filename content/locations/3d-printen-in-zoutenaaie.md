@@ -35,7 +35,7 @@ Voor projecten in Zoutenaaie combineren we korte doorlooptijd met strakke afwerk
 
 ## Workflow
 
-1. Upload STL/STEP en doel via [contact](/contact)
+1. Deel een STL/STEP-link en doel via [contact](/contact)
 2. Wij helpen kiezen tussen PLA, PETG of TPU en stemmen planning af
 3. Productie volgt het stappenplan uit onze [3d-printen](/3d-printen) gids
 4. Levering of afhaling volgens afspraak, inclusief tracking

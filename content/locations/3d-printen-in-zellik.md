@@ -98,7 +98,7 @@ Werk je in Zellik? We leveren snelle prototypes en zowel kleine als grotere seri
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Zellik**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Zellik**.
 
 
 

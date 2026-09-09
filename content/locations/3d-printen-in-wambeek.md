@@ -98,7 +98,7 @@ In Wambeek helpen we makers en bedrijven met 3D prints die vlot passen en lang m
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Wambeek**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Wambeek**.
 
 
 

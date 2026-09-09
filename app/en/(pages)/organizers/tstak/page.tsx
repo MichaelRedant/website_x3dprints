@@ -102,7 +102,7 @@ const howToSchema = buildHowToSchema({
     { name: "Share model", text: "Model number of your TSTAK or a photo of the open case." },
     { name: "Add dimensions", text: "Inner length/width/height in millimetres if available." },
     { name: "List tools", text: "Small parts, hand tools or mix with quantities." },
-    { name: "Upload via form", text: "Use the contact form with TSTAK prefill to send it." },
+    { name: "Share a file link", text: "Use the contact form with TSTAK prefill to send an accessible link and all details." },
   ],
 })
 const tocItems = [

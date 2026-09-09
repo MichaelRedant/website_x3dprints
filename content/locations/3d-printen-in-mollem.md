@@ -88,7 +88,7 @@ Voor **3D printen in Mollem** leveren we prototypes en zowel kleine als grotere 
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Mollem**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Mollem**.
 
 
 

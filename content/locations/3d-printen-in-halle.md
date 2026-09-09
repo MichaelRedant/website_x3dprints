@@ -41,7 +41,7 @@ We kennen de mix van food/logistiek (Colruyt Group), retail en events rond Halle
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en deadline.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en deadline.
 - Levering via E429/R0; afhalen in Herzele kan op afspraak.
 - We stemmen finish (schuren/primen) en kleur af op je toepassing.
 

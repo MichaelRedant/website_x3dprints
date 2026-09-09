@@ -450,7 +450,7 @@ export default function MakerMondaySnapfitPartsPage() {
               (zie Maker Monday #5 en #7) als een deel van de constructie schroefbaar moet blijven.
             </p>
             <div className="flex flex-wrap gap-3">
-              <ShimmerButton href="/contact?topic=maker-monday-snapfits">Upload je model</ShimmerButton>
+              <ShimmerButton href="/contact?topic=maker-monday-snapfits">Deel je bestandslink</ShimmerButton>
               <Link
                 href="/blog/maker-monday-toleranties-3d-printen"
                 className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white/80 px-4 py-2.5 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-white"

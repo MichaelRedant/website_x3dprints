@@ -35,7 +35,7 @@ Voor projecten in Deurle combineren we korte doorlooptijd met strakke afwerking.
 
 ## Werkwijze
 
-1) Upload STL/STEP via [contact](/contact) met toepassing en aantallen.  
+1) Deel een STL/STEP-link via [contact](/contact) met toepassing en aantallen.  
 2) Wij adviseren orientatie en materiaal.  
 3) Print, QC en levering in Deurle of afhalen.
 

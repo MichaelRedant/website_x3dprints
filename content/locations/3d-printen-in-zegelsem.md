@@ -98,7 +98,7 @@ In Zegelsem helpen we makers en bedrijven met 3D prints die vlot passen en lang 
 
 
 
-Upload je bestand via [contact](/contact) en ontvang snel een voorstel voor **3D printen in Zegelsem**.
+Deel een link naar je bestand via [contact](/contact) en ontvang snel een voorstel voor **3D printen in Zegelsem**.
 
 
 

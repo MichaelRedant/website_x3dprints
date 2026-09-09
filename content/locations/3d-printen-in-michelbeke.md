@@ -98,7 +98,7 @@ Voor projecten in Michelbeke combineren we korte doorlooptijd met strakke afwerk
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Michelbeke**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Michelbeke**.
 
 
 

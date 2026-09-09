@@ -14,7 +14,7 @@ Last updated: May 18, 2026
 - **Visual work and presentations:** PLA Matte, colour matching and optional finishing for models, pitch pieces, expo assets and retail displays.
 - **Fast iteration:** useful for agencies, engineers and students who need a tangible model quickly.
 - **Clear logistics:** shipping to Antwerp is standard; pickup in Herzele is possible by appointment.
-- **Direct communication:** you work with the maker instead of an anonymous upload platform.
+- **Direct communication:** you work with the maker instead of an anonymous file portal.
 
 For a quote, send STL or STEP, quantity, colour, material preference and use context via [contact](/en/contact). If fit matters, explain where the part needs to click, slide, screw or align.
 
@@ -109,7 +109,7 @@ If you are unsure, send the use case. A fair booth component is not the same as 
 
 ## How Antwerp requests work
 
-1. Upload STL/STEP via [contact](/en/contact).
+1. Share an STL/STEP link via [contact](/en/contact).
 2. Add use case, quantity, material, colour, deadline and delivery address.
 3. We check printability, orientation, risk zones and material choice.
 4. You receive a clear quote and planning.
@@ -168,7 +168,7 @@ Send photos to discuss feasibility. For reproduction or reverse engineering, the
 
 ## Request a quote for 3D printing in Antwerp
 
-Ready to start a prototype, display, technical part or short run in Antwerp? Upload your model via [contact](/en/contact). Mention the use case, deadline and quantity so we can advise on material, finishing and planning.
+Ready to start a prototype, display, technical part or short run in Antwerp? Share a link to your model via [contact](/en/contact). Mention the use case, deadline and quantity so we can advise on material, finishing and planning.
 
 <!-- LOCAL_ENRICH_START -->
 ## Antwerp cluster depth

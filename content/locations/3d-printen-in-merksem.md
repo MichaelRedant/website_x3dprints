@@ -69,7 +69,7 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte aanvragen
 
-Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en aantallen; je ontvangt snel een voorstel voor **3D printen in Merksem**.
+Deel een link naar je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal en aantallen; je ontvangt snel een voorstel voor **3D printen in Merksem**.
 
 <!-- LOCAL_ENRICH_START -->
 ## Merksem als retail- en eventschakel

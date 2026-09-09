@@ -41,7 +41,7 @@ We kennen de mix van events, retail en industrie in de Noordrand. Daardoor stemm
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via Ring Noord en kanaal; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

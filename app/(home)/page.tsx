@@ -538,8 +538,8 @@ const HOME_COPY_NL = {
   },
   faq: [
     {
-      q: "Welke bestanden kan ik uploaden?",
-      a: "Je kunt STL en 3MF rechtstreeks uploaden via het contactformulier. Gebruik voor grotere bestanden of STEP een downloadlink en vermeld toepassing, afwerking en toleranties.",
+      q: "Hoe bezorg ik mijn bestanden?",
+      a: "Deel via het contactformulier een toegankelijke link naar je STL, 3MF, STEP, foto's of referenties en vermeld toepassing, afwerking en toleranties.",
     },
     {
       q: "Welke levertijd mag ik verwachten?",
@@ -834,8 +834,8 @@ const HOME_COPY_EN = {
   },
   faq: [
     {
-      q: "Which files can I upload?",
-      a: "You can upload STL and 3MF files directly through the contact form. For larger files or STEP, use a download link and include the use case, finish and tolerances.",
+      q: "How do I provide my files?",
+      a: "Share an accessible link to your STL, 3MF, STEP, photos or references through the contact form and include the use case, finish and tolerances.",
     },
     {
       q: "What lead time can I expect?",

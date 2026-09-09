@@ -78,7 +78,7 @@ De gemeente Lede, met haar idyllische landschappen langs de Dender, haar sterke 
 
 ## Hoe werkt het bestellen van uw 3D print?
 
-1.  **stuur uw bestand**: upload uw **.STL- of .STEP-bestand** eenvoudig via onze [contactpagina](/contact).
+1.  **stuur uw bestand**: deel een link naar uw **.STL- of .STEP-bestand** via onze [contactpagina](/contact).
 2.  **kies uw materiaal**: geef het gewenste materiaal (PLA, PETG, TPU), kleur en het aantal stuks door.
 3.  **ontvang offerte**: binnen 24 uur ontvangt u van ons een heldere, vrijblijvende prijsopgave en een inschatting van de levertijd voor uw **3D printen in Lede** project.
 

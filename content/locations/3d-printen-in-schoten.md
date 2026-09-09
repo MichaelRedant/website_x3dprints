@@ -42,7 +42,7 @@ Voor **3D printen in Schoten** leveren we snelle en nauwkeurige onderdelen richt
 
 ## Bestellen
 
-- Upload **STL/STEP** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
+- Deel een **STL/STEP-link** via [contact](/contact) met aantallen, materiaal en gewenste leverdatum.
 
 - Onderdelen tot **35 x 32 x 35 cm** printen we in één stuk; grotere items splitsen we slim.
 

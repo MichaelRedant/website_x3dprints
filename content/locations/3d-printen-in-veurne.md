@@ -62,7 +62,7 @@ Voor projecten in Veurne combineren we korte doorlooptijd met strakke afwerking.
 
 
 
-1. Upload STL of STEP via [contact](/contact) en vermeld of het stuk binnen of buiten gebruikt wordt
+1. Deel een STL- of STEP-link via [contact](/contact) en vermeld of het stuk binnen of buiten gebruikt wordt
 
 2. We geven advies over materiaal, ori?ntatie en bevestiging volgens de richtlijnen uit onze [3d-printen](/3d-printen) hub
 

@@ -35,7 +35,7 @@ In Leupegem (Oudenaarde) helpen we makers en bedrijven met 3D prints die vlot pa
 
 ## Werkwijze
 
-1) Upload STL/STEP via [contact](/contact) met afmetingen, aantallen en toepassing.  
+1) Deel een STL/STEP-link via [contact](/contact) met afmetingen, aantallen en toepassing.  
 2) Wij adviseren orientatie en materiaalkeuze.  
 3) We printen, controleren en leveren in Leupegem of voorzien afhalen.
 

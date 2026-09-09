@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 }
 
 const steps = [
-  "Upload STL/STEP with critical dimensions and load cases.",
+  "Share an STL/STEP link with critical dimensions and load cases.",
   "Pick material: PLA Matte for form studies, PETG for functional loads, TPU for soft interfaces.",
   "Decide on wall thickness and ribs before infill. See Maker Monday #2.",
   "Lock tolerances and inserts early to avoid reprints later.",

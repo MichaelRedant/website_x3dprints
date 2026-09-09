@@ -66,7 +66,7 @@ Meestal enkele werkdagen. Spoed kan in overleg; levering richting Berendrecht, Z
 
 ## Start je aanvraag
 
-Upload je STL- of STEP-bestand via [contact](/contact). Voeg aantallen en materiaalvoorkeur toe; we bezorgen snel een voorstel voor je project in Berendrecht, Zandvliet of Lillo.
+Deel een link naar je STL- of STEP-bestand via [contact](/contact). Voeg aantallen en materiaalvoorkeur toe; we bezorgen snel een voorstel voor je project in Berendrecht, Zandvliet of Lillo.
 
 <!-- LOCAL_ENRICH_START -->
 ## Polderdistrict en havenfocus

@@ -38,7 +38,7 @@ Met **3D printen in Wezembeek-Oppem** leveren we prototypes, behuizingen en tool
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via N3/R0; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 

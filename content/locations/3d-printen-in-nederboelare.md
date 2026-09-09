@@ -51,7 +51,7 @@ Stuur STL of STEP via [contact](/contact) met aantallen, materiaal en deadline. 
 
 ## Offerte aanvragen
 
-Upload je bestand en ontvang snel een voorstel voor **3D printen in Nederboelare**.
+Deel een link naar je bestand en ontvang snel een voorstel voor **3D printen in Nederboelare**.
 
 
 ## Veelgestelde vragen over 3D printen in Nederboelare

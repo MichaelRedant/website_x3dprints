@@ -70,7 +70,7 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Start nu
 
-Upload je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur en deadline; we bezorgen snel een helder voorstel voor **3D printen in Deurne**.
+Deel een link naar je STL- of STEP-bestand via [contact](/contact). Vermeld materiaal, kleur en deadline; we bezorgen snel een helder voorstel voor **3D printen in Deurne**.
 
 <!-- LOCAL_ENRICH_START -->
 ## Deurne als event- en maakdistrict

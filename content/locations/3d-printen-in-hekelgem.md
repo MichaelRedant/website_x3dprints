@@ -98,7 +98,7 @@ Zoek je 3D printen in Hekelgem? We denken mee over passing, sterkte en look zoda
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Hekelgem**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Hekelgem**.
 
 
 

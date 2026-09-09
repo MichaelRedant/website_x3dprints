@@ -98,7 +98,7 @@ Zoek je 3D printen in Teralfene? We denken mee over passing, sterkte en look zod
 
 
 
-Upload je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Teralfene**.
+Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorstel voor **3D printen in Teralfene**.
 
 
 

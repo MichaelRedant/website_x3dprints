@@ -41,7 +41,7 @@ We kennen de combinatie van events, toerisme en KMO's rond Beersel. Daardoor ste
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en gewenste finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en gewenste finish.
 - Levering via E19; afhalen in Herzele mogelijk.
 - Optionele nabehandeling: schuren/primen voor glad zichtwerk.
 

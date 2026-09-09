@@ -459,7 +459,7 @@ export default function OutdoorPrintingGuidePage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-500">Volgende stap</p>
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900">Wil je zeker zijn dat je ontwerp buiten overleeft?</h2>
                 <p className="mt-2 text-sm text-slate-600">
-                  Upload je STL/STEP en vertel hoe het onderdeel gebruikt wordt (zon, trillingen, montage). We sturen een eerlijk
+                  Deel een link naar je STL/STEP en vertel hoe het onderdeel gebruikt wordt (zon, trillingen, montage). We sturen een eerlijk
                   voorstel met materiaalkeuze, bevestigingstips en budgetindicatie.
                 </p>
               </div>

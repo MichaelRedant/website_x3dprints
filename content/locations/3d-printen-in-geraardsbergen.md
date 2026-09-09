@@ -72,7 +72,7 @@ STL of STEP is ideaal. We controleren wanddikte, pasvorm en materiaalkeuze voor 
 
 ## Offerte voor 3D printen in Geraardsbergen
 
-Upload je bestand via [contact](/contact). Je ontvangt snel een voorstel zodat je project in Geraardsbergen vooruitgaat.
+Deel een link naar je bestand via [contact](/contact). Je ontvangt snel een voorstel zodat je project in Geraardsbergen vooruitgaat.
 
 <!-- LOCAL_ENRICH_START -->
 ## Lokale accenten voor Geraardsbergen

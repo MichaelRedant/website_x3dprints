@@ -35,7 +35,7 @@ Zoek je 3D printen in Huise (Kruisem)? We denken mee over passing, sterkte en lo
 
 ## Stappen
 
-1) Upload STL/STEP via [contact](/contact) met afmetingen en toepassing.  
+1) Deel een STL/STEP-link via [contact](/contact) met afmetingen en toepassing.  
 2) Wij adviseren orientatie en materiaal.  
 3) Productie, QC en levering in Huise of afhalen.
 

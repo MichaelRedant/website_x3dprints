@@ -38,7 +38,7 @@ Met **3D printen in Rotselaar** leveren we prototypes, displays en tooling richt
 
 ## Praktisch
 
-- Upload STL/STEP via [contact](/contact) met aantallen en finish.
+- Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
 - Levering via E314; afhalen in Herzele mogelijk.
 - Optioneel schuren/primen voor glad zichtwerk.
 
