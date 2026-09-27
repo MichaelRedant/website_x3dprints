@@ -1,0 +1,2469 @@
+{
+  "stl": {
+    "stl\\tysha_A_body.stl": {
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          174.743,
+          248.673,
+          30.0
+        ]
+      ],
+      "size": [
+        174.743,
+        248.673,
+        30.0
+      ],
+      "faces": 4640,
+      "watertight": true,
+      "volume": 82973.15,
+      "components": 1,
+      "component_volumes": [
+        82973.15
+      ],
+      "z_levels": [
+        0.0,
+        20.0,
+        22.0,
+        22.5,
+        23.0,
+        24.0,
+        24.5793,
+        28.2,
+        28.341,
+        29.1837,
+        29.5,
+        29.6223,
+        30.0
+      ]
+    },
+    "stl\\tysha_A_front.stl": {
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          174.743,
+          248.673,
+          3.0
+        ]
+      ],
+      "size": [
+        174.743,
+        248.673,
+        3.0
+      ],
+      "faces": 6542,
+      "watertight": true,
+      "volume": 15539.97,
+      "components": 1,
+      "component_volumes": [
+        15539.97
+      ],
+      "z_levels": [
+        0.0,
+        1.8,
+        3.0
+      ]
+    },
+    "stl\\tysha_H_body.stl": {
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          388.397,
+          247.258,
+          30.0
+        ]
+      ],
+      "size": [
+        388.397,
+        247.258,
+        30.0
+      ],
+      "faces": 7046,
+      "watertight": true,
+      "volume": 138203.6,
+      "components": 1,
+      "component_volumes": [
+        138203.6
+      ],
+      "z_levels": [
+        0.0,
+        20.0,
+        22.0,
+        22.5,
+        23.0,
+        23.6304,
+        24.0,
+        24.5792,
+        25.7631,
+        26.7892,
+        27.4208,
+        28.2,
+        29.5,
+        30.0
+      ]
+    },
+    "stl\\tysha_H_front.stl": {
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          388.397,
+          247.258,
+          3.0
+        ]
+      ],
+      "size": [
+        388.397,
+        247.258,
+        3.0
+      ],
+      "faces": 9706,
+      "watertight": true,
+      "volume": 24346.75,
+      "components": 1,
+      "component_volumes": [
+        24346.75
+      ],
+      "z_levels": [
+        0.0,
+        1.8,
+        3.0
+      ]
+    },
+    "stl\\tysha_S_body.stl": {
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          158.825,
+          244.067,
+          30.0
+        ]
+      ],
+      "size": [
+        158.825,
+        244.067,
+        30.0
+      ],
+      "faces": 5582,
+      "watertight": true,
+      "volume": 78699.77,
+      "components": 1,
+      "component_volumes": [
+        78699.77
+      ],
+      "z_levels": [
+        0.0,
+        20.0,
+        22.0,
+        22.5,
+        23.0,
+        23.8589,
+        24.0,
+        24.8135,
+        27.1593,
+        27.4484,
+        27.8143,
+        28.2,
+        29.2695,
+        29.5,
+        29.5282,
+        30.0
+      ]
+    },
+    "stl\\tysha_S_front.stl": {
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          158.825,
+          244.067,
+          3.0
+        ]
+      ],
+      "size": [
+        158.825,
+        244.067,
+        3.0
+      ],
+      "faces": 9084,
+      "watertight": true,
+      "volume": 13975.92,
+      "components": 1,
+      "component_volumes": [
+        13975.92
+      ],
+      "z_levels": [
+        0.0,
+        1.8,
+        3.0
+      ]
+    },
+    "stl\\tysha_T_body.stl": {
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          298.903,
+          218.252,
+          30.0
+        ]
+      ],
+      "size": [
+        298.903,
+        218.252,
+        30.0
+      ],
+      "faces": 2858,
+      "watertight": true,
+      "volume": 65884.13,
+      "components": 1,
+      "component_volumes": [
+        65884.13
+      ],
+      "z_levels": [
+        0.0,
+        20.0,
+        22.0,
+        22.5,
+        23.0,
+        24.0,
+        28.2,
+        29.5,
+        30.0
+      ]
+    },
+    "stl\\tysha_T_front.stl": {
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          298.903,
+          218.252,
+          3.0
+        ]
+      ],
+      "size": [
+        298.903,
+        218.252,
+        3.0
+      ],
+      "faces": 3190,
+      "watertight": true,
+      "volume": 11972.66,
+      "components": 1,
+      "component_volumes": [
+        11972.66
+      ],
+      "z_levels": [
+        0.0,
+        1.8,
+        3.0
+      ]
+    },
+    "stl\\tysha_Y_body.stl": {
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          204.81,
+          221.436,
+          30.0
+        ]
+      ],
+      "size": [
+        204.81,
+        221.436,
+        30.0
+      ],
+      "faces": 2938,
+      "watertight": true,
+      "volume": 56404.97,
+      "components": 1,
+      "component_volumes": [
+        56404.97
+      ],
+      "z_levels": [
+        0.0,
+        20.0,
+        22.0,
+        22.5,
+        23.0,
+        23.009,
+        23.4901,
+        24.0,
+        24.4644,
+        27.2465,
+        27.2743,
+        28.2,
+        28.4352,
+        28.4418,
+        29.0748,
+        29.5,
+        30.0
+      ]
+    },
+    "stl\\tysha_Y_front.stl": {
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          204.81,
+          221.436,
+          3.0
+        ]
+      ],
+      "size": [
+        204.81,
+        221.436,
+        3.0
+      ],
+      "faces": 3738,
+      "watertight": true,
+      "volume": 11462.88,
+      "components": 1,
+      "component_volumes": [
+        11462.88
+      ],
+      "z_levels": [
+        0.0,
+        1.8,
+        3.0
+      ]
+    },
+    "tysha_S_achterplaat.stl": {
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          159.2372,
+          244.3385,
+          30.0
+        ]
+      ],
+      "size": [
+        159.2372,
+        244.3385,
+        30.0
+      ],
+      "faces": 24868,
+      "watertight": true,
+      "volume": 80551.51,
+      "components": 1,
+      "component_volumes": [
+        80551.51
+      ],
+      "z_levels": [
+        0.0,
+        20.0,
+        22.0,
+        22.5,
+        23.0,
+        23.5234,
+        23.8302,
+        24.0,
+        27.5246,
+        27.9267,
+        28.2,
+        29.5,
+        30.0
+      ]
+    },
+    "tysha_S_front.stl": {
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          159.2372,
+          244.3385,
+          3.0
+        ]
+      ],
+      "size": [
+        159.2372,
+        244.3385,
+        3.0
+      ],
+      "faces": 43700,
+      "watertight": true,
+      "volume": 14195.47,
+      "components": 1,
+      "component_volumes": [
+        14195.47
+      ],
+      "z_levels": [
+        0.0,
+        1.8,
+        3.0
+      ]
+    }
+  },
+  "3mf": {
+    "files\\TYSHA_lijn1_bak_H2S.3mf": {
+      "objects": [
+        {
+          "id": "2",
+          "name": "TYSHA sierlijn deel 1 bak (PETG)",
+          "extruder": "2",
+          "local": {
+            "bounds": [
+              [
+                -165.0005,
+                -48.3805,
+                -14.1
+              ],
+              [
+                165.0005,
+                48.3805,
+                14.1
+              ]
+            ],
+            "size": [
+              330.001,
+              96.7609,
+              28.2
+            ],
+            "faces": 1574,
+            "watertight": true,
+            "volume": 35920.05,
+            "components": 1,
+            "component_volumes": [
+              35920.05
+            ],
+            "z_levels": [
+              -14.1,
+              -12.7,
+              -12.5,
+              -12.2,
+              14.1
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              580.037517
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              72.1088898
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              14.1000004
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            330.001,
+            96.761,
+            28.2
+          ]
+        },
+        {
+          "id": "4",
+          "name": "TYSHA sierlijn deel 2 bak (PETG)",
+          "extruder": "2",
+          "local": {
+            "bounds": [
+              [
+                -165.0005,
+                -25.0272,
+                -14.1
+              ],
+              [
+                165.0005,
+                25.0272,
+                14.1
+              ]
+            ],
+            "size": [
+              330.001,
+              50.0544,
+              28.2
+            ],
+            "faces": 1560,
+            "watertight": true,
+            "volume": 30294.91,
+            "components": 1,
+            "component_volumes": [
+              30294.91
+            ],
+            "z_levels": [
+              -14.1,
+              -12.7,
+              -12.5,
+              14.1
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              581.615178
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              278.401108
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              14.1000004
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            330.001,
+            50.054,
+            28.2
+          ]
+        },
+        {
+          "id": "6",
+          "name": "TYSHA sierlijn deel 3 bak (PETG)",
+          "extruder": "2",
+          "local": {
+            "bounds": [
+              [
+                -164.9734,
+                -86.1746,
+                -14.1
+              ],
+              [
+                164.9734,
+                86.1746,
+                14.1
+              ]
+            ],
+            "size": [
+              329.9468,
+              172.3492,
+              28.2
+            ],
+            "faces": 1352,
+            "watertight": true,
+            "volume": 36338.11,
+            "components": 1,
+            "component_volumes": [
+              36338.11
+            ],
+            "z_levels": [
+              -14.1,
+              -12.7,
+              -12.5,
+              -12.2,
+              14.1
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              575.638321
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              139.721341
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              14.1000004
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            329.947,
+            172.349,
+            28.2
+          ]
+        },
+        {
+          "id": "10",
+          "name": "Montage",
+          "extruder": "4",
+          "local": {
+            "bounds": [
+              [
+                -167.2771,
+                -140.4593,
+                -1.5
+              ],
+              [
+                167.2771,
+                140.4593,
+                1.5
+              ]
+            ],
+            "size": [
+              334.5541,
+              280.9186,
+              3.0
+            ],
+            "faces": 1740,
+            "watertight": true,
+            "volume": 38632.94,
+            "components": 3,
+            "component_volumes": [
+              11177.02,
+              15225.5,
+              12230.43
+            ],
+            "z_levels": [
+              -1.5,
+              0.3,
+              1.5
+            ]
+          },
+          "build_transform": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              169.173963
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              162.827421
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            334.554,
+            280.919,
+            3.0
+          ]
+        }
+      ],
+      "metadata": {
+        "settings": {
+          "printer_model": "Bambu Lab H2S",
+          "printer_settings_id": "Bambu Lab H2S 0.4 nozzle",
+          "filament_type": [
+            "PLA",
+            "PLA",
+            "PLA",
+            "PLA",
+            "PC"
+          ],
+          "filament_colour": [
+            "#000000",
+            "#FFFFFF",
+            "#4D3324",
+            "#4F3F24",
+            "#000000"
+          ],
+          "filament_settings_id": [
+            "Bambu PLA Matte @BBL H2S",
+            "Bambu PLA Matte @BBL H2S",
+            "Bambu PLA Matte @BBL H2S",
+            "Bambu PLA Wood @BBL H2S",
+            "Bambu PC @BBL H2S"
+          ],
+          "layer_height": "0.2",
+          "wall_loops": "2",
+          "sparse_infill_density": "0%",
+          "top_shell_layers": "4",
+          "bottom_shell_layers": "3",
+          "enable_support": "0",
+          "nozzle_diameter": [
+            "0.4"
+          ],
+          "filament_diameter": [
+            "1.75",
+            "1.75",
+            "1.75",
+            "1.75",
+            "1.75"
+          ]
+        },
+        "color_changes": [],
+        "object_settings": {
+          "6": "<object id=\"6\">\n    <metadata key=\"name\" value=\"TYSHA sierlijn deel 3 bak (PETG)\" />\n    <metadata key=\"extruder\" value=\"2\" />\n    <metadata face_count=\"1352\" />\n    <part id=\"5\" subtype=\"normal_part\" uuid=\"bdedd082-4517-4bdb-8a28-16ff7bfd6b0c\">\n      <metadata key=\"name\" value=\"TYSHA sierlijn deel 3 bak (PETG)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"TYSHA_lijn3_bak_H2S.3mf\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"164.97340393066406\" />\n      <metadata key=\"source_offset_y\" value=\"86.174598693847656\" />\n      <metadata key=\"source_offset_z\" value=\"14.100000381469727\" />\n      <mesh_stat face_count=\"1352\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  ",
+          "2": "<object id=\"2\">\n    <metadata key=\"name\" value=\"TYSHA sierlijn deel 1 bak (PETG)\" />\n    <metadata key=\"extruder\" value=\"2\" />\n    <metadata face_count=\"1574\" />\n    <part id=\"1\" subtype=\"normal_part\" uuid=\"8d62cd3c-5d08-48ba-a54d-eac3f0fe90ad\">\n      <metadata key=\"name\" value=\"TYSHA sierlijn deel 1 bak (PETG)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"TYSHA_lijn1_bak_H2S.3mf\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"165.00050354003906\" />\n      <metadata key=\"source_offset_y\" value=\"48.380451202392578\" />\n      <metadata key=\"source_offset_z\" value=\"14.100000381469727\" />\n      <mesh_stat face_count=\"1574\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  ",
+          "4": "<object id=\"4\">\n    <metadata key=\"name\" value=\"TYSHA sierlijn deel 2 bak (PETG)\" />\n    <metadata key=\"extruder\" value=\"2\" />\n    <metadata face_count=\"1560\" />\n    <part id=\"3\" subtype=\"normal_part\" uuid=\"5ba931b1-9be8-462d-9ece-e18abac0fce7\">\n      <metadata key=\"name\" value=\"TYSHA sierlijn deel 2 bak (PETG)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"TYSHA_lijn2_bak_H2S.3mf\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"165.00050354003906\" />\n      <metadata key=\"source_offset_y\" value=\"25.027200698852539\" />\n      <metadata key=\"source_offset_z\" value=\"14.100000381469727\" />\n      <mesh_stat face_count=\"1560\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  ",
+          "10": "<object id=\"10\">\n    <metadata key=\"name\" value=\"Montage\" />\n    <metadata key=\"extruder\" value=\"4\" />\n    <metadata face_count=\"1740\" />\n    <part id=\"7\" subtype=\"normal_part\" uuid=\"fb758af0-2aca-4d71-97f1-5b287cb69dc8\">\n      <metadata key=\"name\" value=\"TYSHA sierlijn deel 1 front (PLA Wood)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 -2.2765552537962321 0 1 0 92.078834083520604 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"TYSHA_lijn1_front_H2S.3mf\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"165.00050354003906\" />\n      <metadata key=\"source_offset_y\" value=\"48.380451202392578\" />\n      <metadata key=\"source_offset_z\" value=\"1.5\" />\n      <metadata key=\"extruder\" value=\"4\" />\n      <mesh_stat face_count=\"672\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n    <part id=\"8\" subtype=\"normal_part\" uuid=\"fc205eee-a28a-4730-a71d-29a4159a506b\">\n      <metadata key=\"name\" value=\"TYSHA sierlijn deel 2 front (PLA Wood)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 1.7805026308463994 0 1 0 -115.43208458706067 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"TYSHA_lijn2_front_H2S.3mf\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"165.00050354003906\" />\n      <metadata key=\"source_offset_y\" value=\"25.027200698852539\" />\n      <metadata key=\"source_offset_z\" value=\"1.5\" />\n      <metadata key=\"extruder\" value=\"4\" />\n      <mesh_stat face_count=\"600\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n    <part id=\"9\" subtype=\"normal_part\" uuid=\"442cbcee-99a2-4034-a369-f19ff70ceaa5\">\n      <metadata key=\"name\" value=\"TYSHA sierlijn deel 3 front (PLA Wood)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 2.3036548631712321 0 1 0 4.6866723841517057 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"TYSHA_lijn3_front_H2S.3mf\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"164.97340393066406\" />\n      <metadata key=\"source_offset_y\" value=\"86.174598693847656\" />\n      <metadata key=\"source_offset_z\" value=\"1.5\" />\n      <metadata key=\"extruder\" value=\"4\" />\n      <mesh_stat face_count=\"468\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  "
+        }
+      }
+    },
+    "files\\TYSHA_lijn1_front_H2S.3mf": {
+      "objects": [
+        {
+          "id": "2",
+          "name": "TYSHA sierlijn deel 1 front (PLA Wood)",
+          "extruder": "1",
+          "local": {
+            "bounds": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                330.001,
+                96.7609,
+                3.0
+              ]
+            ],
+            "size": [
+              330.001,
+              96.7609,
+              3.0
+            ],
+            "faces": 672,
+            "watertight": true,
+            "volume": 11177.02,
+            "components": 1,
+            "component_volumes": [
+              11177.02
+            ],
+            "z_levels": [
+              0.0,
+              1.8,
+              3.0
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              4.9995
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              111.6195
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            330.001,
+            96.761,
+            3.0
+          ]
+        }
+      ],
+      "metadata": {
+        "settings": {
+          "printer_model": "Bambu Lab H2S",
+          "printer_settings_id": "Bambu Lab H2S 0.4 nozzle",
+          "filament_type": [
+            "PLA",
+            "PETG"
+          ],
+          "filament_colour": [
+            "#8B6A45",
+            "#DFF3F7"
+          ],
+          "filament_settings_id": [
+            "Bambu PLA Wood @BBL H2S",
+            "Bambu PETG Translucent @BBL H2S"
+          ],
+          "layer_height": 0.16,
+          "wall_loops": 3,
+          "sparse_infill_density": "0%",
+          "top_shell_layers": 6,
+          "bottom_shell_layers": 6,
+          "enable_support": 0,
+          "nozzle_diameter": [
+            "0.4"
+          ],
+          "filament_diameter": [
+            "1.75",
+            "1.75"
+          ]
+        },
+        "color_changes": [],
+        "object_settings": {
+          "2": "<object id=\"2\">\n    <metadata key=\"name\" value=\"TYSHA sierlijn deel 1 front (PLA Wood)\" />\n    <metadata key=\"extruder\" value=\"1\" />\n    <metadata face_count=\"672\" />\n    <part id=\"1\" subtype=\"normal_part\">\n      <metadata key=\"name\" value=\"TYSHA sierlijn deel 1 front (PLA Wood)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"extruder\" value=\"1\" />\n      <mesh_stat face_count=\"672\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  "
+        }
+      }
+    },
+    "files\\TYSHA_lijn2_bak_H2S.3mf": {
+      "objects": [
+        {
+          "id": "2",
+          "name": "TYSHA sierlijn deel 2 bak (PETG)",
+          "extruder": "2",
+          "local": {
+            "bounds": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                330.001,
+                50.0544,
+                28.2
+              ]
+            ],
+            "size": [
+              330.001,
+              50.0544,
+              28.2
+            ],
+            "faces": 1560,
+            "watertight": true,
+            "volume": 30294.91,
+            "components": 1,
+            "component_volumes": [
+              30294.91
+            ],
+            "z_levels": [
+              0.0,
+              1.4,
+              1.6,
+              28.2
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              4.9995
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              134.9728
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            330.001,
+            50.054,
+            28.2
+          ]
+        }
+      ],
+      "metadata": {
+        "settings": {
+          "printer_model": "Bambu Lab H2S",
+          "printer_settings_id": "Bambu Lab H2S 0.4 nozzle",
+          "filament_type": [
+            "PLA",
+            "PETG"
+          ],
+          "filament_colour": [
+            "#8B6A45",
+            "#DFF3F7"
+          ],
+          "filament_settings_id": [
+            "Generic PLA Silk @BBL H2S",
+            "Bambu PETG Translucent @BBL H2S"
+          ],
+          "layer_height": 0.2,
+          "wall_loops": 3,
+          "sparse_infill_density": "0%",
+          "top_shell_layers": 5,
+          "bottom_shell_layers": 7,
+          "enable_support": 0,
+          "nozzle_diameter": [
+            "0.4"
+          ],
+          "filament_diameter": [
+            "1.75",
+            "1.75"
+          ]
+        },
+        "color_changes": [],
+        "object_settings": {
+          "2": "<object id=\"2\">\n    <metadata key=\"name\" value=\"TYSHA sierlijn deel 2 bak (PETG)\" />\n    <metadata key=\"extruder\" value=\"2\" />\n    <metadata face_count=\"1560\" />\n    <part id=\"1\" subtype=\"normal_part\">\n      <metadata key=\"name\" value=\"TYSHA sierlijn deel 2 bak (PETG)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"extruder\" value=\"2\" />\n      <mesh_stat face_count=\"1560\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  "
+        }
+      }
+    },
+    "files\\TYSHA_lijn2_front_H2S.3mf": {
+      "objects": [
+        {
+          "id": "2",
+          "name": "TYSHA sierlijn deel 2 front (PLA Wood)",
+          "extruder": "1",
+          "local": {
+            "bounds": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                330.001,
+                50.0544,
+                3.0
+              ]
+            ],
+            "size": [
+              330.001,
+              50.0544,
+              3.0
+            ],
+            "faces": 600,
+            "watertight": true,
+            "volume": 15225.5,
+            "components": 1,
+            "component_volumes": [
+              15225.5
+            ],
+            "z_levels": [
+              0.0,
+              1.8,
+              3.0
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              4.9995
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              134.9728
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            330.001,
+            50.054,
+            3.0
+          ]
+        }
+      ],
+      "metadata": {
+        "settings": {
+          "printer_model": "Bambu Lab H2S",
+          "printer_settings_id": "Bambu Lab H2S 0.4 nozzle",
+          "filament_type": [
+            "PLA",
+            "PETG"
+          ],
+          "filament_colour": [
+            "#8B6A45",
+            "#DFF3F7"
+          ],
+          "filament_settings_id": [
+            "Bambu PLA Wood @BBL H2S",
+            "Bambu PETG Translucent @BBL H2S"
+          ],
+          "layer_height": 0.16,
+          "wall_loops": 3,
+          "sparse_infill_density": "0%",
+          "top_shell_layers": 6,
+          "bottom_shell_layers": 6,
+          "enable_support": 0,
+          "nozzle_diameter": [
+            "0.4"
+          ],
+          "filament_diameter": [
+            "1.75",
+            "1.75"
+          ]
+        },
+        "color_changes": [],
+        "object_settings": {
+          "2": "<object id=\"2\">\n    <metadata key=\"name\" value=\"TYSHA sierlijn deel 2 front (PLA Wood)\" />\n    <metadata key=\"extruder\" value=\"1\" />\n    <metadata face_count=\"600\" />\n    <part id=\"1\" subtype=\"normal_part\">\n      <metadata key=\"name\" value=\"TYSHA sierlijn deel 2 front (PLA Wood)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"extruder\" value=\"1\" />\n      <mesh_stat face_count=\"600\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  "
+        }
+      }
+    },
+    "files\\TYSHA_lijn3_bak_H2S.3mf": {
+      "objects": [
+        {
+          "id": "2",
+          "name": "TYSHA sierlijn deel 3 bak (PETG)",
+          "extruder": "2",
+          "local": {
+            "bounds": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                329.9468,
+                172.3492,
+                28.2
+              ]
+            ],
+            "size": [
+              329.9468,
+              172.3492,
+              28.2
+            ],
+            "faces": 1352,
+            "watertight": true,
+            "volume": 36338.12,
+            "components": 1,
+            "component_volumes": [
+              36338.12
+            ],
+            "z_levels": [
+              0.0,
+              1.4,
+              1.6,
+              1.9,
+              28.2
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              5.0266
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              73.8254
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            329.947,
+            172.349,
+            28.2
+          ]
+        }
+      ],
+      "metadata": {
+        "settings": {
+          "printer_model": "Bambu Lab H2S",
+          "printer_settings_id": "Bambu Lab H2S 0.4 nozzle",
+          "filament_type": [
+            "PLA",
+            "PETG"
+          ],
+          "filament_colour": [
+            "#8B6A45",
+            "#DFF3F7"
+          ],
+          "filament_settings_id": [
+            "Generic PLA Silk @BBL H2S",
+            "Bambu PETG Translucent @BBL H2S"
+          ],
+          "layer_height": 0.2,
+          "wall_loops": 3,
+          "sparse_infill_density": "0%",
+          "top_shell_layers": 5,
+          "bottom_shell_layers": 7,
+          "enable_support": 0,
+          "nozzle_diameter": [
+            "0.4"
+          ],
+          "filament_diameter": [
+            "1.75",
+            "1.75"
+          ]
+        },
+        "color_changes": [],
+        "object_settings": {
+          "2": "<object id=\"2\">\n    <metadata key=\"name\" value=\"TYSHA sierlijn deel 3 bak (PETG)\" />\n    <metadata key=\"extruder\" value=\"2\" />\n    <metadata face_count=\"1352\" />\n    <part id=\"1\" subtype=\"normal_part\">\n      <metadata key=\"name\" value=\"TYSHA sierlijn deel 3 bak (PETG)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"extruder\" value=\"2\" />\n      <mesh_stat face_count=\"1352\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  "
+        }
+      }
+    },
+    "files\\TYSHA_lijn3_front_H2S.3mf": {
+      "objects": [
+        {
+          "id": "2",
+          "name": "TYSHA sierlijn deel 3 front (PLA Wood)",
+          "extruder": "1",
+          "local": {
+            "bounds": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                329.9468,
+                172.3492,
+                3.0
+              ]
+            ],
+            "size": [
+              329.9468,
+              172.3492,
+              3.0
+            ],
+            "faces": 468,
+            "watertight": true,
+            "volume": 12230.43,
+            "components": 1,
+            "component_volumes": [
+              12230.43
+            ],
+            "z_levels": [
+              0.0,
+              1.8,
+              3.0
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              5.0266
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              73.8254
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            329.947,
+            172.349,
+            3.0
+          ]
+        }
+      ],
+      "metadata": {
+        "settings": {
+          "printer_model": "Bambu Lab H2S",
+          "printer_settings_id": "Bambu Lab H2S 0.4 nozzle",
+          "filament_type": [
+            "PLA",
+            "PETG"
+          ],
+          "filament_colour": [
+            "#8B6A45",
+            "#DFF3F7"
+          ],
+          "filament_settings_id": [
+            "Bambu PLA Wood @BBL H2S",
+            "Bambu PETG Translucent @BBL H2S"
+          ],
+          "layer_height": 0.16,
+          "wall_loops": 3,
+          "sparse_infill_density": "0%",
+          "top_shell_layers": 6,
+          "bottom_shell_layers": 6,
+          "enable_support": 0,
+          "nozzle_diameter": [
+            "0.4"
+          ],
+          "filament_diameter": [
+            "1.75",
+            "1.75"
+          ]
+        },
+        "color_changes": [],
+        "object_settings": {
+          "2": "<object id=\"2\">\n    <metadata key=\"name\" value=\"TYSHA sierlijn deel 3 front (PLA Wood)\" />\n    <metadata key=\"extruder\" value=\"1\" />\n    <metadata face_count=\"468\" />\n    <part id=\"1\" subtype=\"normal_part\">\n      <metadata key=\"name\" value=\"TYSHA sierlijn deel 3 front (PLA Wood)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"extruder\" value=\"1\" />\n      <mesh_stat face_count=\"468\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  "
+        }
+      }
+    },
+    "stl\\TYSHA_S_bak_H2S.3mf": {
+      "objects": [
+        {
+          "id": "2",
+          "name": "TYSHA S bak (PETG translucent)",
+          "extruder": "2",
+          "local": {
+            "bounds": [
+              [
+                -79.4126,
+                -122.0332,
+                -14.1
+              ],
+              [
+                79.4126,
+                122.0332,
+                14.1
+              ]
+            ],
+            "size": [
+              158.8251,
+              244.0665,
+              28.2
+            ],
+            "faces": 6984,
+            "watertight": true,
+            "volume": 65947.17,
+            "components": 1,
+            "component_volumes": [
+              65947.17
+            ],
+            "z_levels": [
+              -14.1,
+              -12.7,
+              -12.5,
+              -12.2,
+              14.1
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              169.999952
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              159.999949
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              14.1000004
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            158.825,
+            244.066,
+            28.2
+          ]
+        }
+      ],
+      "metadata": {
+        "settings": {
+          "printer_model": "Bambu Lab H2S",
+          "printer_settings_id": "Bambu Lab H2S 0.4 nozzle",
+          "filament_type": [
+            "PLA",
+            "PETG"
+          ],
+          "filament_colour": [
+            "#8B6A45",
+            "#DFF3F7"
+          ],
+          "filament_settings_id": [
+            "Generic PLA Silk @BBL H2S",
+            "Bambu PETG Translucent @BBL H2S"
+          ],
+          "layer_height": "0.2",
+          "wall_loops": "2",
+          "sparse_infill_density": "0%",
+          "top_shell_layers": "4",
+          "bottom_shell_layers": "3",
+          "enable_support": "0",
+          "nozzle_diameter": [
+            "0.4"
+          ],
+          "filament_diameter": [
+            "1.75",
+            "1.75"
+          ]
+        },
+        "color_changes": [],
+        "object_settings": {
+          "2": "<object id=\"2\">\n    <metadata key=\"name\" value=\"TYSHA S bak (PETG translucent)\" />\n    <metadata key=\"extruder\" value=\"2\" />\n    <metadata face_count=\"6984\" />\n    <part id=\"1\" subtype=\"normal_part\" uuid=\"fc439bdd-782b-4cf4-a720-fffc04dbd5a9\">\n      <metadata key=\"name\" value=\"TYSHA S bak (PETG translucent)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"TYSHA_S_bak_H2S.3mf\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"79.412551879882812\" />\n      <metadata key=\"source_offset_y\" value=\"122.03324890136719\" />\n      <metadata key=\"source_offset_z\" value=\"14.100000381469727\" />\n      <mesh_stat face_count=\"6984\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  "
+        }
+      }
+    },
+    "stl\\TYSHA_S_front_H2S.3mf": {
+      "objects": [
+        {
+          "id": "2",
+          "name": "TYSHA S front (PLA Wood)",
+          "extruder": "1",
+          "local": {
+            "bounds": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                158.8251,
+                244.0665,
+                3.0
+              ]
+            ],
+            "size": [
+              158.8251,
+              244.0665,
+              3.0
+            ],
+            "faces": 4896,
+            "watertight": true,
+            "volume": 18921.41,
+            "components": 1,
+            "component_volumes": [
+              18921.41
+            ],
+            "z_levels": [
+              0.0,
+              1.8,
+              3.0
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              90.5874
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              37.9667
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            158.825,
+            244.066,
+            3.0
+          ]
+        }
+      ],
+      "metadata": {
+        "settings": {
+          "printer_model": "Bambu Lab H2S",
+          "printer_settings_id": "Bambu Lab H2S 0.4 nozzle",
+          "filament_type": [
+            "PLA",
+            "PETG"
+          ],
+          "filament_colour": [
+            "#8B6A45",
+            "#DFF3F7"
+          ],
+          "filament_settings_id": [
+            "Bambu PLA Wood @BBL H2S",
+            "Bambu PETG Translucent @BBL H2S"
+          ],
+          "layer_height": 0.16,
+          "wall_loops": 3,
+          "sparse_infill_density": "0%",
+          "top_shell_layers": 6,
+          "bottom_shell_layers": 6,
+          "enable_support": 0,
+          "nozzle_diameter": [
+            "0.4"
+          ],
+          "filament_diameter": [
+            "1.75",
+            "1.75"
+          ]
+        },
+        "color_changes": [],
+        "object_settings": {
+          "2": "<object id=\"2\">\n    <metadata key=\"name\" value=\"TYSHA S front (PLA Wood)\" />\n    <metadata key=\"extruder\" value=\"1\" />\n    <metadata face_count=\"4896\" />\n    <part id=\"1\" subtype=\"normal_part\">\n      <metadata key=\"name\" value=\"TYSHA S front (PLA Wood)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"extruder\" value=\"1\" />\n      <mesh_stat face_count=\"4896\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  "
+        }
+      }
+    },
+    "stl\\tysha_T_body.3mf": {
+      "objects": [
+        {
+          "id": "2",
+          "name": "tysha_T_body.stl",
+          "extruder": "3",
+          "local": {
+            "bounds": [
+              [
+                -149.4515,
+                -109.126,
+                -15.0
+              ],
+              [
+                149.4515,
+                109.126,
+                15.0
+              ]
+            ],
+            "size": [
+              298.903,
+              218.252,
+              30.0
+            ],
+            "faces": 2858,
+            "watertight": true,
+            "volume": 65884.13,
+            "components": 1,
+            "component_volumes": [
+              65884.13
+            ],
+            "z_levels": [
+              -15.0,
+              5.0,
+              7.0,
+              7.5,
+              8.0,
+              9.0,
+              13.2,
+              14.5,
+              15.0
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              578.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              160.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              15.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            298.903,
+            218.252,
+            30.0
+          ]
+        },
+        {
+          "id": "4",
+          "name": "tysha_T_front.stl",
+          "extruder": "1",
+          "local": {
+            "bounds": [
+              [
+                -149.4515,
+                -109.126,
+                -1.5
+              ],
+              [
+                149.4515,
+                109.126,
+                1.5
+              ]
+            ],
+            "size": [
+              298.903,
+              218.252,
+              3.0
+            ],
+            "faces": 3190,
+            "watertight": true,
+            "volume": 11972.66,
+            "components": 1,
+            "component_volumes": [
+              11972.66
+            ],
+            "z_levels": [
+              -1.5,
+              0.3,
+              1.5
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              170.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              160.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            298.903,
+            218.252,
+            3.0
+          ]
+        },
+        {
+          "id": "6",
+          "name": "tysha_Y_body.stl",
+          "extruder": "3",
+          "local": {
+            "bounds": [
+              [
+                -102.405,
+                -110.718,
+                -15.0
+              ],
+              [
+                102.405,
+                110.718,
+                15.0
+              ]
+            ],
+            "size": [
+              204.81,
+              221.436,
+              30.0
+            ],
+            "faces": 2938,
+            "watertight": true,
+            "volume": 56404.97,
+            "components": 1,
+            "component_volumes": [
+              56404.97
+            ],
+            "z_levels": [
+              -15.0,
+              5.0,
+              7.0,
+              7.5,
+              8.0,
+              8.009,
+              8.4901,
+              9.0,
+              9.4644,
+              12.2465,
+              12.2743,
+              13.2,
+              13.4352,
+              13.4418,
+              14.0748,
+              14.5,
+              15.0
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              170.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0,
+              -224.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              15.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            204.81,
+            221.436,
+            30.0
+          ]
+        },
+        {
+          "id": "8",
+          "name": "tysha_Y_front.stl",
+          "extruder": "1",
+          "local": {
+            "bounds": [
+              [
+                -102.405,
+                -110.718,
+                -1.5
+              ],
+              [
+                102.405,
+                110.718,
+                1.5
+              ]
+            ],
+            "size": [
+              204.81,
+              221.436,
+              3.0
+            ],
+            "faces": 3738,
+            "watertight": true,
+            "volume": 11462.88,
+            "components": 1,
+            "component_volumes": [
+              11462.88
+            ],
+            "z_levels": [
+              -1.5,
+              0.3,
+              1.5
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              986.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              160.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            204.81,
+            221.436,
+            3.0
+          ]
+        },
+        {
+          "id": "10",
+          "name": "tysha_A_body.stl",
+          "extruder": "3",
+          "local": {
+            "bounds": [
+              [
+                -87.3715,
+                -124.3365,
+                -15.0
+              ],
+              [
+                87.3715,
+                124.3365,
+                15.0
+              ]
+            ],
+            "size": [
+              174.743,
+              248.673,
+              30.0
+            ],
+            "faces": 4640,
+            "watertight": true,
+            "volume": 82973.15,
+            "components": 1,
+            "component_volumes": [
+              82973.15
+            ],
+            "z_levels": [
+              -15.0,
+              5.0,
+              7.0,
+              7.5,
+              8.0,
+              9.0,
+              9.5793,
+              13.2,
+              13.341,
+              14.1837,
+              14.5,
+              14.6223,
+              15.0
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              578.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0,
+              -224.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              15.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            174.743,
+            248.673,
+            30.0
+          ]
+        },
+        {
+          "id": "12",
+          "name": "tysha_A_front.stl",
+          "extruder": "3",
+          "local": {
+            "bounds": [
+              [
+                -87.3715,
+                -124.3365,
+                -1.5
+              ],
+              [
+                87.3715,
+                124.3365,
+                1.5
+              ]
+            ],
+            "size": [
+              174.743,
+              248.673,
+              3.0
+            ],
+            "faces": 6542,
+            "watertight": true,
+            "volume": 15539.97,
+            "components": 1,
+            "component_volumes": [
+              15539.97
+            ],
+            "z_levels": [
+              -1.5,
+              0.3,
+              1.5
+            ]
+          },
+          "build_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              986.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -224.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            174.743,
+            248.673,
+            3.0
+          ]
+        }
+      ],
+      "metadata": {
+        "settings": {
+          "printer_model": "Bambu Lab H2S",
+          "printer_settings_id": "Bambu Lab H2S 0.4 nozzle",
+          "filament_type": [
+            "PLA",
+            "PLA",
+            "PETG"
+          ],
+          "filament_colour": [
+            "#FFF144",
+            "#042F56",
+            "#DCDCDC"
+          ],
+          "filament_settings_id": [
+            "Generic PLA Silk @BBL H2S",
+            "Bambu PLA Matte @BBL H2S",
+            "Bambu PETG Basic @BBL H2S"
+          ],
+          "layer_height": "0.2",
+          "wall_loops": "5",
+          "sparse_infill_density": "0%",
+          "top_shell_layers": "5",
+          "bottom_shell_layers": "3",
+          "enable_support": "1",
+          "nozzle_diameter": [
+            "0.4"
+          ],
+          "filament_diameter": [
+            "1.75",
+            "1.75",
+            "1.75"
+          ]
+        },
+        "color_changes": [],
+        "object_settings": {
+          "6": "<object id=\"6\">\n    <metadata key=\"name\" value=\"tysha_Y_body.stl\" />\n    <metadata key=\"extruder\" value=\"3\" />\n    <metadata face_count=\"2938\" />\n    <part id=\"5\" subtype=\"normal_part\" uuid=\"e8c033b2-296b-4e71-a9dc-7aec2804b036\">\n      <metadata key=\"name\" value=\"tysha_Y_body.stl\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"tysha_Y_body.stl\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"102.40499877929688\" />\n      <metadata key=\"source_offset_y\" value=\"110.71800231933594\" />\n      <metadata key=\"source_offset_z\" value=\"15\" />\n      <mesh_stat face_count=\"2938\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  ",
+          "2": "<object id=\"2\">\n    <metadata key=\"name\" value=\"tysha_T_body.stl\" />\n    <metadata key=\"extruder\" value=\"3\" />\n    <metadata face_count=\"2858\" />\n    <part id=\"1\" subtype=\"normal_part\" uuid=\"ad4dcdc1-a0fa-4e12-ae6c-44014b918da9\">\n      <metadata key=\"name\" value=\"tysha_T_body.stl\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"tysha_T_body.stl\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"149.45150756835938\" />\n      <metadata key=\"source_offset_y\" value=\"109.12599945068359\" />\n      <metadata key=\"source_offset_z\" value=\"15\" />\n      <mesh_stat face_count=\"2858\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  ",
+          "4": "<object id=\"4\">\n    <metadata key=\"name\" value=\"tysha_T_front.stl\" />\n    <metadata key=\"extruder\" value=\"1\" />\n    <metadata face_count=\"3190\" />\n    <part id=\"3\" subtype=\"normal_part\" uuid=\"b9fd3c0e-abbb-4d1d-aa86-5ab77c40b4d3\">\n      <metadata key=\"name\" value=\"tysha_T_front.stl\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"tysha_T_front.stl\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"149.45150756835938\" />\n      <metadata key=\"source_offset_y\" value=\"109.12599945068359\" />\n      <metadata key=\"source_offset_z\" value=\"1.5\" />\n      <mesh_stat face_count=\"3190\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  ",
+          "8": "<object id=\"8\">\n    <metadata key=\"name\" value=\"tysha_Y_front.stl\" />\n    <metadata key=\"extruder\" value=\"1\" />\n    <metadata face_count=\"3738\" />\n    <part id=\"7\" subtype=\"normal_part\" uuid=\"f678e2fd-4de9-47a6-8866-a794bf295c78\">\n      <metadata key=\"name\" value=\"tysha_Y_front.stl\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"tysha_Y_front.stl\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"102.40499877929688\" />\n      <metadata key=\"source_offset_y\" value=\"110.71800231933594\" />\n      <metadata key=\"source_offset_z\" value=\"1.5\" />\n      <mesh_stat face_count=\"3738\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  ",
+          "12": "<object id=\"12\">\n    <metadata key=\"name\" value=\"tysha_A_front.stl\" />\n    <metadata key=\"extruder\" value=\"3\" />\n    <metadata face_count=\"6542\" />\n    <part id=\"11\" subtype=\"normal_part\" uuid=\"70cecfd6-8d5c-4182-8e65-98132aa840bf\">\n      <metadata key=\"name\" value=\"tysha_A_front.stl\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"tysha_A_front.stl\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"87.371498107910156\" />\n      <metadata key=\"source_offset_y\" value=\"124.33650207519531\" />\n      <metadata key=\"source_offset_z\" value=\"1.5\" />\n      <mesh_stat face_count=\"6542\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  ",
+          "10": "<object id=\"10\">\n    <metadata key=\"name\" value=\"tysha_A_body.stl\" />\n    <metadata key=\"extruder\" value=\"3\" />\n    <metadata face_count=\"4640\" />\n    <part id=\"9\" subtype=\"normal_part\" uuid=\"d3fe7bc5-899b-4470-862c-4d3f161895d7\">\n      <metadata key=\"name\" value=\"tysha_A_body.stl\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"tysha_A_body.stl\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"87.371498107910156\" />\n      <metadata key=\"source_offset_y\" value=\"124.33650207519531\" />\n      <metadata key=\"source_offset_z\" value=\"15\" />\n      <mesh_stat face_count=\"4640\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  "
+        }
+      }
+    },
+    "stl\\tysha_T_front.3mf": {
+      "objects": [
+        {
+          "id": "2",
+          "name": "tysha_T_front.stl",
+          "extruder": "4",
+          "local": {
+            "bounds": [
+              [
+                -149.4515,
+                -109.126,
+                -1.5
+              ],
+              [
+                149.4515,
+                109.126,
+                1.5
+              ]
+            ],
+            "size": [
+              298.903,
+              218.252,
+              3.0
+            ],
+            "faces": 3190,
+            "watertight": true,
+            "volume": 11972.66,
+            "components": 1,
+            "component_volumes": [
+              11972.66
+            ],
+            "z_levels": [
+              -1.5,
+              0.3,
+              1.5
+            ]
+          },
+          "build_transform": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              170.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              160.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            298.903,
+            218.252,
+            3.0
+          ]
+        },
+        {
+          "id": "4",
+          "name": "tysha_Y_front.stl",
+          "extruder": "4",
+          "local": {
+            "bounds": [
+              [
+                -102.405,
+                -110.718,
+                -1.5
+              ],
+              [
+                102.405,
+                110.718,
+                1.5
+              ]
+            ],
+            "size": [
+              204.81,
+              221.436,
+              3.0
+            ],
+            "faces": 3738,
+            "watertight": true,
+            "volume": 11462.88,
+            "components": 1,
+            "component_volumes": [
+              11462.88
+            ],
+            "z_levels": [
+              -1.5,
+              0.3,
+              1.5
+            ]
+          },
+          "build_transform": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              628.980559
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              172.036676
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            204.81,
+            221.436,
+            3.0
+          ]
+        },
+        {
+          "id": "6",
+          "name": "tysha_S_front.stl",
+          "extruder": "4",
+          "local": {
+            "bounds": [
+              [
+                -79.4125,
+                -122.0335,
+                -1.5
+              ],
+              [
+                79.4125,
+                122.0335,
+                1.5
+              ]
+            ],
+            "size": [
+              158.825,
+              244.067,
+              3.0
+            ],
+            "faces": 9084,
+            "watertight": true,
+            "volume": 13975.92,
+            "components": 1,
+            "component_volumes": [
+              13975.92
+            ],
+            "z_levels": [
+              -1.5,
+              0.3,
+              1.5
+            ]
+          },
+          "build_transform": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              501.222542
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              131.097962
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            158.825,
+            244.067,
+            3.0
+          ]
+        },
+        {
+          "id": "8",
+          "name": "TYSHA H deel 2 front (PLA Wood)",
+          "extruder": "4",
+          "local": {
+            "bounds": [
+              [
+                -131.6983,
+                -123.629,
+                -1.5
+              ],
+              [
+                131.6983,
+                123.629,
+                1.5
+              ]
+            ],
+            "size": [
+              263.3965,
+              247.2579,
+              3.0
+            ],
+            "faces": 2172,
+            "watertight": true,
+            "volume": 17297.82,
+            "components": 2,
+            "component_volumes": [
+              6090.49,
+              11207.34
+            ],
+            "z_levels": [
+              -1.5,
+              0.3,
+              1.5
+            ]
+          },
+          "build_transform": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              200.947681
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -257.552189
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            263.397,
+            247.258,
+            3.0
+          ]
+        },
+        {
+          "id": "10",
+          "name": "TYSHA H deel 1 front (PLA Wood)",
+          "extruder": "4",
+          "local": {
+            "bounds": [
+              [
+                -62.5,
+                -118.3213,
+                -1.5
+              ],
+              [
+                62.5,
+                118.3213,
+                1.5
+              ]
+            ],
+            "size": [
+              125.0,
+              236.6425,
+              3.0
+            ],
+            "faces": 3360,
+            "watertight": true,
+            "volume": 15885.41,
+            "components": 1,
+            "component_volumes": [
+              15885.41
+            ],
+            "z_levels": [
+              -1.5,
+              0.3,
+              1.5
+            ]
+          },
+          "build_transform": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              209.396743
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -185.464074
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            125.0,
+            236.643,
+            3.0
+          ]
+        },
+        {
+          "id": "12",
+          "name": "TYSHA A front (PLA Wood)",
+          "extruder": "4",
+          "local": {
+            "bounds": [
+              [
+                -87.3715,
+                -124.3364,
+                -1.5
+              ],
+              [
+                87.3715,
+                124.3364,
+                1.5
+              ]
+            ],
+            "size": [
+              174.743,
+              248.6728,
+              3.0
+            ],
+            "faces": 4184,
+            "watertight": true,
+            "volume": 21436.88,
+            "components": 1,
+            "component_volumes": [
+              21436.88
+            ],
+            "z_levels": [
+              -1.5,
+              0.3,
+              1.5
+            ]
+          },
+          "build_transform": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              88.2566481
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -202.202025
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "placed_size": [
+            174.743,
+            248.673,
+            3.0
+          ]
+        }
+      ],
+      "metadata": {
+        "settings": {
+          "printer_model": "Bambu Lab H2S",
+          "printer_settings_id": "Bambu Lab H2S 0.4 nozzle",
+          "filament_type": [
+            "PLA",
+            "PETG",
+            "PLA",
+            "PLA",
+            "PLA"
+          ],
+          "filament_colour": [
+            "#FFF144",
+            "#FFFFFF",
+            "#000000",
+            "#4F3F24",
+            "#DCDCDC"
+          ],
+          "filament_settings_id": [
+            "Generic PLA Silk @BBL H2S",
+            "Bambu PETG Basic @BBL H2S",
+            "Bambu PLA Matte @BBL H2S",
+            "Bambu PLA Wood @BBL H2S",
+            "Bambu PLA Translucent @BBL H2S"
+          ],
+          "layer_height": "0.2",
+          "wall_loops": "4",
+          "sparse_infill_density": "15%",
+          "top_shell_layers": "5",
+          "bottom_shell_layers": "3",
+          "enable_support": "0",
+          "nozzle_diameter": [
+            "0.4"
+          ],
+          "filament_diameter": [
+            "1.75",
+            "1.75",
+            "1.75",
+            "1.75",
+            "1.75"
+          ]
+        },
+        "color_changes": [],
+        "object_settings": {
+          "12": "<object id=\"12\">\n    <metadata key=\"name\" value=\"TYSHA A front (PLA Wood)\" />\n    <metadata key=\"extruder\" value=\"4\" />\n    <metadata face_count=\"4184\" />\n    <part id=\"11\" subtype=\"normal_part\" uuid=\"e19f0ec3-c70b-4f57-9f82-04eeed758718\">\n      <metadata key=\"name\" value=\"TYSHA A front (PLA Wood)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"TYSHA_A_front_H2S.3mf\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"87.371498107910156\" />\n      <metadata key=\"source_offset_y\" value=\"124.33640289306641\" />\n      <metadata key=\"source_offset_z\" value=\"1.5\" />\n      <mesh_stat face_count=\"4184\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  ",
+          "8": "<object id=\"8\">\n    <metadata key=\"name\" value=\"TYSHA H deel 2 front (PLA Wood)\" />\n    <metadata key=\"extruder\" value=\"4\" />\n    <metadata face_count=\"2172\" />\n    <part id=\"7\" subtype=\"normal_part\" uuid=\"4bf1adc9-f374-4069-9029-ff7365e6929f\">\n      <metadata key=\"name\" value=\"TYSHA H deel 2 front (PLA Wood)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"TYSHA_H2_front_H2S.3mf\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"131.69825744628906\" />\n      <metadata key=\"source_offset_y\" value=\"123.62895202636719\" />\n      <metadata key=\"source_offset_z\" value=\"1.5\" />\n      <mesh_stat face_count=\"2172\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  ",
+          "10": "<object id=\"10\">\n    <metadata key=\"name\" value=\"TYSHA H deel 1 front (PLA Wood)\" />\n    <metadata key=\"extruder\" value=\"4\" />\n    <metadata face_count=\"3360\" />\n    <part id=\"9\" subtype=\"normal_part\" uuid=\"c039ec57-f866-4568-9ae4-2626dbb555d7\">\n      <metadata key=\"name\" value=\"TYSHA H deel 1 front (PLA Wood)\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"TYSHA_H1_front_H2S.3mf\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"62.5\" />\n      <metadata key=\"source_offset_y\" value=\"118.32125091552734\" />\n      <metadata key=\"source_offset_z\" value=\"1.5\" />\n      <mesh_stat face_count=\"3360\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  ",
+          "4": "<object id=\"4\">\n    <metadata key=\"name\" value=\"tysha_Y_front.stl\" />\n    <metadata key=\"extruder\" value=\"4\" />\n    <metadata face_count=\"3738\" />\n    <part id=\"3\" subtype=\"normal_part\" uuid=\"9faa9f53-b70d-4f19-98ea-e28510450c69\">\n      <metadata key=\"name\" value=\"tysha_Y_front.stl\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"tysha_Y_front.stl\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"102.40499877929688\" />\n      <metadata key=\"source_offset_y\" value=\"110.71800231933594\" />\n      <metadata key=\"source_offset_z\" value=\"1.5\" />\n      <mesh_stat face_count=\"3738\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  ",
+          "2": "<object id=\"2\">\n    <metadata key=\"name\" value=\"tysha_T_front.stl\" />\n    <metadata key=\"extruder\" value=\"4\" />\n    <metadata face_count=\"3190\" />\n    <part id=\"1\" subtype=\"normal_part\" uuid=\"f6b60516-bd97-4c7c-a9fe-463f379c0787\">\n      <metadata key=\"name\" value=\"tysha_T_front.stl\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"tysha_T_front.stl\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"149.45150756835938\" />\n      <metadata key=\"source_offset_y\" value=\"109.12599945068359\" />\n      <metadata key=\"source_offset_z\" value=\"1.5\" />\n      <mesh_stat face_count=\"3190\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  ",
+          "6": "<object id=\"6\">\n    <metadata key=\"name\" value=\"tysha_S_front.stl\" />\n    <metadata key=\"extruder\" value=\"4\" />\n    <metadata face_count=\"9084\" />\n    <part id=\"5\" subtype=\"normal_part\" uuid=\"a3d4c17c-b24b-4eca-9490-529518fe564b\">\n      <metadata key=\"name\" value=\"tysha_S_front.stl\" />\n      <metadata key=\"matrix\" value=\"1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1\" />\n      <metadata key=\"source_file\" value=\"tysha_S_front.stl\" />\n      <metadata key=\"source_object_id\" value=\"0\" />\n      <metadata key=\"source_volume_id\" value=\"0\" />\n      <metadata key=\"source_offset_x\" value=\"79.412498474121094\" />\n      <metadata key=\"source_offset_y\" value=\"122.03350067138672\" />\n      <metadata key=\"source_offset_z\" value=\"1.5\" />\n      <mesh_stat face_count=\"9084\" edges_fixed=\"0\" degenerate_facets=\"0\" facets_removed=\"0\" facets_reversed=\"0\" backwards_edges=\"0\" />\n    </part>\n  </object>\n  "
+        }
+      }
+    }
+  },
+  "pdf_fonts": [
+    [
+      "/R21",
+      "/IVADOM+HelloParisSerif-Regular",
+      "/Type0"
+    ],
+    [
+      "/R15",
+      "/EZVBCT+Livvic-Regular",
+      "/Type0"
+    ]
+  ]
+}

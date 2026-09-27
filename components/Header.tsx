@@ -12,6 +12,7 @@ import { useLocale } from "./LocaleProvider"
 import { SHOP_INDEXABLE } from "@/content/shop-products"
 import { localizeHref } from "@/lib/i18n/paths"
 import { cn } from "@/lib/utils"
+import PrivateModelPreviewShortcut from "./PrivateModelPreviewShortcut"
 
 function DesktopDropdown({
   group,
@@ -220,6 +221,7 @@ export default function Header() {
               </Link>
             )
           })}
+          <PrivateModelPreviewShortcut />
           <Suspense fallback={null}>
             <LanguageSwitcher className="ml-2" />
           </Suspense>
@@ -368,6 +370,9 @@ export default function Header() {
                     </div>
                   </div>
 
+                  <div className="mt-2">
+                    <PrivateModelPreviewShortcut mobile />
+                  </div>
                   <div className="mt-2">
                     <Suspense fallback={null}>
                       <LanguageSwitcher className="w-full justify-between" />
