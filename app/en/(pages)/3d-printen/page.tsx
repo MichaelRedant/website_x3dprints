@@ -204,8 +204,8 @@ const knowledgeLinks = [
   ...(SHOP_INDEXABLE
     ? [
         {
-          title: "Bambu reusable spool in stock",
-          description: "Using Bambu refills? Check the live product page for current stock, price, and shop quote flow.",
+          title: "Bambu reusable spool",
+          description: "Using Bambu refills? Check the product page for current availability, price, and the shop request flow.",
           href: "/en/shop/bambu-reusable-spool",
         },
         {

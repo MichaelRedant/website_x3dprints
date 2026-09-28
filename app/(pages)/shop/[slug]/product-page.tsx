@@ -225,7 +225,7 @@ function getAvailabilityLabel(locale: ShopLocale, availability: string) {
   if (availability === "InStock") return "Op voorraad"
   if (availability === "PreOrder") return "Op bestelling"
   if (availability === "LimitedAvailability") return "Beperkt"
-  if (availability === "OutOfStock") return "Niet beschikbaar"
+  if (availability === "OutOfStock") return "Niet op voorraad"
   return availability
 }
 
@@ -396,6 +396,14 @@ export function renderShopProductPage({
   const productPrice = formatEur(product.priceEur)
   const availability = product.availability ?? "InStock"
   const availabilityLabel = getAvailabilityLabel(locale, availability)
+  const availabilityBadgeClass =
+    availability === "OutOfStock"
+      ? "border-rose-200 bg-rose-50 text-rose-700"
+      : availability === "LimitedAvailability"
+        ? "border-amber-200 bg-amber-50 text-amber-700"
+        : availability === "PreOrder"
+          ? "border-sky-200 bg-sky-50 text-sky-700"
+          : "border-emerald-200 bg-emerald-50 text-emerald-700"
   const isInquiryMode = isInquiryProduct(product)
   const stockCount: number | null = typeof product.stockCount === "number" ? product.stockCount : null
   const leadTime = product.leadTimeDays
@@ -501,7 +509,7 @@ export function renderShopProductPage({
                 <p className="mt-4 max-w-3xl break-words text-lg text-slate-600 md:mx-auto lg:mx-0">{productSummary}</p>
 
                 <div className="mt-5 flex min-w-0 flex-wrap items-center gap-2 text-xs font-semibold md:justify-center lg:justify-start">
-                  <span className="inline-flex max-w-full items-center rounded-2xl border border-emerald-200 bg-emerald-50 px-2 py-1 text-left leading-4 text-emerald-700 break-words sm:rounded-full">
+                  <span className={`inline-flex max-w-full items-center rounded-2xl border px-2 py-1 text-left leading-4 break-words sm:rounded-full ${availabilityBadgeClass}`}>
                     {copy.availabilityLabel}: {availabilityLabel}
                   </span>
                   {stockCount !== null ? (

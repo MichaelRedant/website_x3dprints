@@ -267,8 +267,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       en: "Bambu reusable spool",
     },
     summary: {
-      nl: "Originele Bambu reusable spool uit reststock, gecontroleerd en direct klaar voor een refill. Per stuk of in kleine reeks aan te vragen, met afhalen of verzending na bevestiging.",
-      en: "Original Bambu reusable spool from leftover stock, checked and ready for a refill. Available per piece or in small quantities, with pickup or shipping confirmed afterwards.",
+      nl: "Originele Bambu reusable spool voor filament refills. Momenteel niet op voorraad; je kunt wel een aanvraag achterlaten voor zodra er opnieuw spools beschikbaar zijn.",
+      en: "Original Bambu reusable spool for filament refills. Currently out of stock; you can still submit a request for when spools become available again.",
     },
     description: {
       nl: "Een laagdrempelige shopstarter voor makers die al met Bambu refills werken. Deze originele reusable spool is gebruikt, maar gecontroleerd op bruikbaarheid en klaar om opnieuw ingezet te worden voor je volgende filament refill.",
@@ -297,8 +297,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       en: "/images/og-bambu-reusable-spool-en.svg",
     },
     categories: ["spools"],
-    availability: "InStock",
-    stockCount: 13,
+    availability: "OutOfStock",
+    stockCount: 0,
     leadTimeDays: { min: 1, max: 3 },
     purchaseMode: "inquiry",
     highlights: [
@@ -317,10 +317,10 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
         },
       },
       {
-        title: { nl: "Beperkte reststock", en: "Limited leftover stock" },
+        title: { nl: "Momenteel uit voorraad", en: "Currently out of stock" },
         description: {
-          nl: "Beschikbaarheid hangt af van de actuele reststock. Daarom loopt bestelling voorlopig via aanvraag zodat stock correct bevestigd blijft.",
-          en: "Availability depends on the current leftover stock. That is why ordering still runs through a request flow so stock can be confirmed correctly.",
+          nl: "Nieuwe voorraad is nog niet bevestigd. Laat gerust een aanvraag achter als je een melding wilt zodra er opnieuw spools beschikbaar zijn.",
+          en: "New stock has not been confirmed yet. Submit a request if you want to be notified when spools become available again.",
         },
       },
     ],

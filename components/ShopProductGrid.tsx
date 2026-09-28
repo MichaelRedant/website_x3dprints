@@ -99,7 +99,7 @@ const AVAILABILITY_LABELS: Record<ShopLocale, Record<string, string>> = {
     InStock: "Op voorraad",
     PreOrder: "Op bestelling",
     LimitedAvailability: "Beperkt",
-    OutOfStock: "Niet beschikbaar",
+    OutOfStock: "Niet op voorraad",
   },
   en: {
     InStock: "In stock",

@@ -203,8 +203,8 @@ const knowledgeLinks = [
   ...(SHOP_INDEXABLE
     ? [
         {
-          title: "Bambu reusable spool op voorraad",
-          description: "Gebruik je Bambu refills? Bekijk de live productpagina voor actuele voorraad, prijs en shopaanvraag.",
+          title: "Bambu reusable spool",
+          description: "Gebruik je Bambu refills? Bekijk de productpagina voor de actuele beschikbaarheid, prijs en shopaanvraag.",
           href: "/shop/bambu-reusable-spool",
         },
         {
