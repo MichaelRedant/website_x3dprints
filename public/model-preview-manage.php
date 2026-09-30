@@ -3,7 +3,8 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/model-preview-common.php';
 
-const MODEL_PREVIEW_CHUNK_BYTES = 1048576;
+const MODEL_PREVIEW_LEGACY_CHUNK_BYTES = 1048576;
+const MODEL_PREVIEW_MAX_CHUNK_BYTES = 4194304;
 const MODEL_PREVIEW_MAX_BYTES = 262144000;
 const MODEL_PREVIEW_MAX_ACTIVE_UPLOADS = 3;
 const MODEL_PREVIEW_MAX_ACTIVE_PREVIEWS = 200;
@@ -73,9 +74,11 @@ function modelPreviewLoadUpload(string $uploadId): ?array
     if (!modelPreviewValidId((string) ($decoded['projectId'] ?? ''))) return null;
     if (!in_array((string) ($decoded['format'] ?? ''), ['stl', 'obj', 'glb'], true)) return null;
     $size = (int) ($decoded['size'] ?? 0);
+    $chunkBytes = (int) ($decoded['chunkBytes'] ?? MODEL_PREVIEW_LEGACY_CHUNK_BYTES);
     $expectedChunks = (int) ($decoded['expectedChunks'] ?? 0);
     if ($size < 1 || $size > MODEL_PREVIEW_MAX_BYTES) return null;
-    if ($expectedChunks !== (int) ceil($size / MODEL_PREVIEW_CHUNK_BYTES)) return null;
+    if ($chunkBytes < MODEL_PREVIEW_LEGACY_CHUNK_BYTES || $chunkBytes > MODEL_PREVIEW_MAX_CHUNK_BYTES) return null;
+    if ($expectedChunks !== (int) ceil($size / $chunkBytes)) return null;
     return $decoded;
 }
 
@@ -285,12 +288,16 @@ if ($action === 'start') {
     $unit = strtolower(modelPreviewClean((string) ($body['unit'] ?? 'mm'), 4));
     $days = max(1, min(90, (int) ($body['days'] ?? 14)));
     $size = (int) ($body['size'] ?? 0);
+    $chunkBytes = (int) ($body['chunkBytes'] ?? MODEL_PREVIEW_LEGACY_CHUNK_BYTES);
     if ($title === '') modelPreviewJson(400, ['ok' => false, 'error' => 'Vul een projectnaam in.']);
     if ($clientEmail !== '' && !filter_var($clientEmail, FILTER_VALIDATE_EMAIL)) modelPreviewJson(400, ['ok' => false, 'error' => 'Vul een geldig klant-e-mailadres in.']);
     if ($projectId !== '' && !modelPreviewValidId($projectId)) modelPreviewJson(400, ['ok' => false, 'error' => 'Ongeldig project.']);
     if (!in_array($format, ['stl', 'obj', 'glb'], true)) modelPreviewJson(400, ['ok' => false, 'error' => 'Dit bestandsformaat wordt niet ondersteund.']);
     if (!in_array($unit, ['mm', 'cm', 'm'], true)) modelPreviewJson(400, ['ok' => false, 'error' => 'Ongeldige maateenheid.']);
     if ($size < 1 || $size > MODEL_PREVIEW_MAX_BYTES) modelPreviewJson(400, ['ok' => false, 'error' => 'Het model mag maximaal 250 MB groot zijn.']);
+    if ($chunkBytes < MODEL_PREVIEW_LEGACY_CHUNK_BYTES || $chunkBytes > MODEL_PREVIEW_MAX_CHUNK_BYTES) {
+        modelPreviewJson(400, ['ok' => false, 'error' => 'De gekozen uploadblokgrootte wordt niet ondersteund.']);
+    }
     if (count(modelPreviewList()) >= MODEL_PREVIEW_MAX_ACTIVE_PREVIEWS) {
         modelPreviewJson(409, ['ok' => false, 'error' => 'Er staan te veel actieve previews. Verwijder eerst een oude preview.']);
     }
@@ -327,7 +334,8 @@ if ($action === 'start') {
         'unit' => $unit,
         'days' => $days,
         'size' => $size,
-        'expectedChunks' => (int) ceil($size / MODEL_PREVIEW_CHUNK_BYTES),
+        'chunkBytes' => $chunkBytes,
+        'expectedChunks' => (int) ceil($size / $chunkBytes),
         'createdAt' => gmdate('c'),
     ];
     $encoded = json_encode($metadata, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
@@ -347,11 +355,12 @@ if ($action === 'chunk') {
     $metadata = modelPreviewLoadUpload($uploadId);
     if ($metadata === null) modelPreviewJson(404, ['ok' => false, 'error' => 'Uploadsessie verlopen of ongeldig.']);
     $expectedChunks = (int) $metadata['expectedChunks'];
+    $chunkBytes = (int) ($metadata['chunkBytes'] ?? MODEL_PREVIEW_LEGACY_CHUNK_BYTES);
     if ($index >= $expectedChunks) modelPreviewJson(400, ['ok' => false, 'error' => 'Ongeldig uploaddeel.']);
 
     $expectedBytes = $index === $expectedChunks - 1
-        ? (int) $metadata['size'] - ($index * MODEL_PREVIEW_CHUNK_BYTES)
-        : MODEL_PREVIEW_CHUNK_BYTES;
+        ? (int) $metadata['size'] - ($index * $chunkBytes)
+        : $chunkBytes;
     $contentLength = (int) ($_SERVER['CONTENT_LENGTH'] ?? 0);
     if ($contentLength > 0 && $contentLength !== $expectedBytes) {
         modelPreviewJson(400, ['ok' => false, 'error' => 'Uploaddeel heeft een ongeldige grootte.']);
@@ -381,6 +390,7 @@ if ($action === 'finish') {
     if ($count !== (int) $metadata['expectedChunks']) {
         modelPreviewJson(400, ['ok' => false, 'error' => 'Het aantal uploaddelen klopt niet.']);
     }
+    $chunkBytes = (int) ($metadata['chunkBytes'] ?? MODEL_PREVIEW_LEGACY_CHUNK_BYTES);
 
     $uploadDirectory = modelPreviewUploadDirectory($uploadId);
     $id = (string) $metadata['id'];
@@ -401,8 +411,8 @@ if ($action === 'finish') {
     for ($index = 0; $index < $count; $index++) {
         $chunkPath = $uploadDirectory . DIRECTORY_SEPARATOR . sprintf('chunk-%05d.part', $index);
         $expectedBytes = $index === $count - 1
-            ? (int) $metadata['size'] - ($index * MODEL_PREVIEW_CHUNK_BYTES)
-            : MODEL_PREVIEW_CHUNK_BYTES;
+            ? (int) $metadata['size'] - ($index * $chunkBytes)
+            : $chunkBytes;
         if (!is_file($chunkPath) || filesize($chunkPath) !== $expectedBytes) {
             fclose($target);
             modelPreviewDeleteDirectory($directory);

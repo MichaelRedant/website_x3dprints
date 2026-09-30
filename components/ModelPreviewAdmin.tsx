@@ -47,7 +47,18 @@ type ProjectGroup = {
 }
 
 const ENDPOINT = "/model-preview-manage.php"
-const CHUNK_SIZE = 1024 * 1024
+const CHUNK_SIZE = 4 * 1024 * 1024
+const CHUNK_RETRY_DELAYS_MS = [1000, 2000, 4000, 8000]
+
+class ModelPreviewRequestError extends Error {
+  readonly retryable: boolean
+
+  constructor(message: string, status: number) {
+    super(message)
+    this.name = "ModelPreviewRequestError"
+    this.retryable = status === 408 || status === 425 || status === 429 || status >= 500
+  }
+}
 
 function readableSize(bytes: number) {
   if (bytes < 1024 * 1024) return `${Math.max(1, Math.round(bytes / 1024))} KB`
@@ -90,9 +101,38 @@ function groupProjects(items: PreviewItem[]): ProjectGroup[] {
 }
 
 async function responsePayload(response: Response) {
-  const payload = await response.json().catch(() => null) as ManageResponse | null
-  if (!response.ok || !payload?.ok) throw new Error(payload?.error || "De server kon de actie niet uitvoeren.")
+  const raw = await response.text()
+  let payload: ManageResponse | null = null
+  try {
+    payload = JSON.parse(raw) as ManageResponse
+  } catch {
+    payload = null
+  }
+  if (!response.ok || !payload?.ok) {
+    let fallback = `De server kon de actie niet uitvoeren (HTTP ${response.status}).`
+    if (response.status === 413) fallback = "Een uploaddeel is te groot voor de server."
+    else if (response.status === 429) fallback = "De server ontvangt tijdelijk te veel verzoeken. Probeer zo meteen opnieuw."
+    else if (response.status >= 500) fallback = "De server is tijdelijk niet beschikbaar. Probeer zo meteen opnieuw."
+    throw new ModelPreviewRequestError(payload?.error || fallback, response.status)
+  }
   return payload
+}
+
+async function uploadChunkWithRetry(url: string, options: RequestInit, onRetry: (attempt: number) => void) {
+  for (let attempt = 0; attempt <= CHUNK_RETRY_DELAYS_MS.length; attempt += 1) {
+    try {
+      return await responsePayload(await fetch(url, options))
+    } catch (reason) {
+      const retryable = !(reason instanceof ModelPreviewRequestError) || reason.retryable
+      if (!retryable || attempt === CHUNK_RETRY_DELAYS_MS.length) {
+        if (reason instanceof ModelPreviewRequestError) throw reason
+        throw new Error("De verbinding met de server werd onderbroken. Probeer de upload opnieuw.")
+      }
+      onRetry(attempt + 2)
+      await new Promise((resolve) => window.setTimeout(resolve, CHUNK_RETRY_DELAYS_MS[attempt]))
+    }
+  }
+  throw new Error("De upload kon niet worden voltooid.")
 }
 
 export default function ModelPreviewAdmin() {
@@ -221,6 +261,7 @@ export default function ModelPreviewAdmin() {
           days: Number(form.get("days") ?? 14),
           format,
           size: uploadFile.size,
+          chunkBytes: CHUNK_SIZE,
         }),
       }))
       if (!startPayload.uploadId) throw new Error("De upload kon niet worden gestart.")
@@ -230,11 +271,11 @@ export default function ModelPreviewAdmin() {
       for (let index = 0; index < chunks; index += 1) {
         setStatus(`Model uploaden: deel ${index + 1} van ${chunks}`)
         const chunk = uploadFile.slice(index * CHUNK_SIZE, Math.min((index + 1) * CHUNK_SIZE, uploadFile.size))
-        await responsePayload(await fetch(`${ENDPOINT}?action=chunk&uploadId=${startPayload.uploadId}&index=${index}`, {
+        await uploadChunkWithRetry(`${ENDPOINT}?action=chunk&uploadId=${startPayload.uploadId}&index=${index}`, {
           method: "POST",
           headers: { "Content-Type": "application/octet-stream", "X-CSRF-Token": csrf },
           body: chunk,
-        }))
+        }, (attempt) => setStatus(`Verbinding herstellen voor deel ${index + 1} van ${chunks} (poging ${attempt})...`))
         setProgress(Math.round(((index + 1) / chunks) * 100))
       }
 

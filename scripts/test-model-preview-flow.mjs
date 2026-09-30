@@ -22,6 +22,10 @@ facet normal 0 0 1
 endfacet
 endsolid test
 `)
+const LARGE_STL_TRIANGLES = 90000
+const LARGE_STL = Buffer.alloc(84 + (LARGE_STL_TRIANGLES * 50))
+LARGE_STL.write("X3DPrints multi-chunk integration test", 0, "ascii")
+LARGE_STL.writeUInt32LE(LARGE_STL_TRIANGLES, 80)
 
 const directory = await mkdtemp(path.join(tmpdir(), "x3d-preview-flow-"))
 const port = 18000 + Math.floor(Math.random() * 2000)
@@ -74,7 +78,7 @@ async function list() {
   return payload.items
 }
 
-async function uploadRevision({ projectId = "", version }) {
+async function uploadRevision({ projectId = "", version, model = STL, chunkBytes = 1024 * 1024 }) {
   const start = await adminAction("start", {
     projectId,
     title: "Mesh handvaten",
@@ -85,15 +89,19 @@ async function uploadRevision({ projectId = "", version }) {
     unit: "mm",
     days: 14,
     format: "stl",
-    size: STL.length,
+    size: model.length,
+    chunkBytes,
   })
-  const chunkResponse = await request(`/model-preview-manage.php?action=chunk&uploadId=${start.uploadId}&index=0`, {
-    method: "POST",
-    headers: { "Content-Type": "application/octet-stream", "X-CSRF-Token": csrf },
-    body: STL,
-  })
-  assert.equal(chunkResponse.ok, true, (await json(chunkResponse))?.error)
-  const finish = await adminAction("finish", { uploadId: start.uploadId, chunks: 1 })
+  const chunks = Math.ceil(model.length / chunkBytes)
+  for (let index = 0; index < chunks; index += 1) {
+    const chunkResponse = await request(`/model-preview-manage.php?action=chunk&uploadId=${start.uploadId}&index=${index}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/octet-stream", "X-CSRF-Token": csrf },
+      body: model.subarray(index * chunkBytes, Math.min((index + 1) * chunkBytes, model.length)),
+    })
+    assert.equal(chunkResponse.ok, true, (await json(chunkResponse))?.error)
+  }
+  const finish = await adminAction("finish", { uploadId: start.uploadId, chunks })
   return finish.id
 }
 
@@ -160,7 +168,7 @@ try {
   await adminAction("reactivate", { id: v1Id })
   assert.equal((await request(`/model-preview-file.php?id=${v1Id}&file=manifest.json`)).status, 200)
 
-  const v2Id = await uploadRevision({ projectId: v1.projectId, version: "V2" })
+  const v2Id = await uploadRevision({ projectId: v1.projectId, version: "V2", model: LARGE_STL, chunkBytes: 4 * 1024 * 1024 })
   assert.notEqual(v2Id, v1Id)
   items = await list()
   const v2 = items.find((item) => item.id === v2Id)
