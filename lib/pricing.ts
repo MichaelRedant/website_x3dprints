@@ -53,6 +53,10 @@ export type PriceInput = {
   printingTimeHours: number;
   filamentWeightGrams: number;
   material: MaterialKey;
+  /** Prijs per kg voor materialen buiten MaterialKey (prijswijzer); overschrijft de materiaalprijs. */
+  materialPricePerKg?: number;
+  /** Overschrijft of het materiaal gedroogd moet worden. */
+  requiresDrying?: boolean;
   quality?: Quality;
   quantity: number;
   designHours?: number;
@@ -127,7 +131,9 @@ export function calculatePrintJob(job: PriceInput): PriceBreakdown {
   const qualityMultiplier = QUALITY_TIME_MULTIPLIER[quality] ?? 1;
 
   const materialPricePerKg =
-    X3D_FILAMENT_PRICE_EUR_PER_KG[job.material] ?? BASE_PRICE_FALLBACK_EUR_PER_KG;
+    job.materialPricePerKg ??
+    X3D_FILAMENT_PRICE_EUR_PER_KG[job.material] ??
+    BASE_PRICE_FALLBACK_EUR_PER_KG;
   const unitFilamentCostEur = (job.filamentWeightGrams / 1000) * materialPricePerKg;
   const unitFilamentWithMarkupEur = unitFilamentCostEur * (1 + materialMarkup);
 
@@ -135,7 +141,12 @@ export function calculatePrintJob(job: PriceInput): PriceBreakdown {
   const unitElectricityEur = effectivePrintHours * printerPower * electricityCost;
 
   const unitBaseCostEur = unitFilamentWithMarkupEur + unitElectricityEur;
-  const dryingCostEur = calculateDryingCost(job.material, job.quantity);
+  const dryingCostEur =
+    job.requiresDrying === undefined
+      ? calculateDryingCost(job.material, job.quantity)
+      : job.requiresDrying
+        ? DRYING_FIXED_SURCHARGE_EUR + DRYING_COST_PER_PRINT_EUR * job.quantity
+        : 0;
   const totalDirectPrintCostEur = unitBaseCostEur * job.quantity + dryingCostEur;
   const printsSubtotalEur = Math.max(
     totalDirectPrintCostEur * profitFactor * publicEstimateBuffer,
