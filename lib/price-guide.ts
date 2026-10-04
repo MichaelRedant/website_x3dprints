@@ -31,7 +31,7 @@ type GuideMaterial = {
 const GUIDE_MATERIALS = {
   PLA_MATTE: { label: "PLA Matte", materialKey: "PLA_MATTE" },
   PLA_SPECIAL: { label: "PLA Silk+ / Marble", materialKey: "PLA_MARBLE" },
-  PLA_TOUGH_PLUS: { label: "PLA Tough+", materialKey: "PLA_TOUGH_PLUS" },
+  PLA_BASIC: { label: "PLA Basic", materialKey: "PLA_BASIC" },
   PETG: { label: "PETG", materialKey: "PETG" },
   PC: { label: "PC", materialKey: "PC" },
   TPU: { label: "TPU", materialKey: "TPU" },
@@ -97,11 +97,11 @@ export const GUIDE_OPTIONS: Record<GuideUse, GuideOptionDef[]> = {
   functional: [
     {
       level: "basis",
-      material: "PLA_TOUGH_PLUS",
+      material: "PLA_BASIC",
       quality: "Standaard",
       why: {
-        nl: "Steviger dan gewone PLA. Prima voor lichte functionele stukken binnen.",
-        en: "Tougher than regular PLA. Fine for light functional parts indoors.",
+        nl: "Voordelig en maatvast. Prima voor lichte functionele stukken binnen, niet in de buurt van warmte.",
+        en: "Affordable and dimensionally accurate. Fine for light functional parts indoors, away from heat.",
       },
     },
     {
