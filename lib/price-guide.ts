@@ -1,16 +1,16 @@
 // Prijswijzer: vertaalt "waarvoor gebruik je het" naar materiaaladvies en 2 à 3 richtprijzen.
-// Prijzen komen uit lib/pricing.ts (zelfde formule, buffer, ondergrens en afronding als de calculator).
-import { GUIDE_ONLY_FILAMENT_PRICE_EUR_PER_KG } from "./material-prices"
+// Veilig voor de browser: rekent enkel met PublicRates (verkooptarieven), nooit met aankoopprijzen.
 import {
   DEFAULT_DESIGN_RATE_EUR_PER_HOUR,
   GRAMS_PER_TIER,
   PRINT_TIME_HOURS_PER_TIER,
-  calculatePrintJob,
+  calculatePublicPrintJob,
   floorPublicEur,
+  type PublicRates,
   type Quality,
   type Tier,
-} from "./pricing"
-import type { MaterialKey } from "./materials"
+} from "./pricing-public"
+import type { MaterialKey } from "./material-prices"
 import { SCAN_PRICES } from "./scanning-prices"
 
 export type GuideStart = "file" | "broken" | "idea" | "scan"
@@ -21,41 +21,26 @@ export type GuideLocale = "nl" | "en"
 type Bilingual = { nl: string; en: string }
 
 type GuideMaterial = {
-  label: string
-  /** Materiaal in de calculator; voor materialen zonder eigen pagina enkel als technische sleutel. */
-  materialKey: MaterialKey
-  pricePerKg?: number
-  requiresDrying?: boolean
+  label: Bilingual
+  /** Sleutel in PublicRates.materialEurPerGram. */
+  rateKey: string
+  /** Materiaal met een eigen pagina op /materials; zonder pagina linkt de wijzer naar het overzicht. */
+  page?: MaterialKey
 }
 
-const GUIDE_MATERIALS = {
-  PLA_MATTE: { label: "PLA Matte", materialKey: "PLA_MATTE" },
-  PLA_SPECIAL: { label: "PLA Silk+ / Marble", materialKey: "PLA_MARBLE" },
-  PLA_BASIC: { label: "PLA Basic", materialKey: "PLA_BASIC" },
-  PETG: { label: "PETG", materialKey: "PETG" },
-  PC: { label: "PC", materialKey: "PC" },
-  TPU: { label: "TPU", materialKey: "TPU" },
-  ASA: {
-    label: "ASA",
-    materialKey: "PLA_BASIC",
-    pricePerKg: GUIDE_ONLY_FILAMENT_PRICE_EUR_PER_KG.ASA,
-    requiresDrying: true,
-  },
-  ASA_CF: {
-    label: "ASA-CF",
-    materialKey: "PLA_BASIC",
-    pricePerKg: GUIDE_ONLY_FILAMENT_PRICE_EUR_PER_KG.ASA_CF,
-    requiresDrying: true,
-  },
-  PAHT_CF: {
-    label: "PAHT-CF",
-    materialKey: "PLA_BASIC",
-    pricePerKg: GUIDE_ONLY_FILAMENT_PRICE_EUR_PER_KG.PAHT_CF,
-    requiresDrying: true,
-  },
+export const GUIDE_MATERIALS = {
+  PLA_MATTE: { label: { nl: "PLA Matte", en: "PLA Matte" }, rateKey: "PLA_MATTE", page: "PLA_MATTE" },
+  PLA_BASIC: { label: { nl: "PLA Basic", en: "PLA Basic" }, rateKey: "PLA_BASIC", page: "PLA_BASIC" },
+  PLA_SPECIAL: { label: { nl: "PLA Marble of Silk+", en: "PLA Marble or Silk+" }, rateKey: "PLA_MARBLE", page: "PLA_MARBLE" },
+  PETG: { label: { nl: "PETG", en: "PETG" }, rateKey: "PETG", page: "PETG" },
+  PC: { label: { nl: "Polycarbonaat", en: "Polycarbonate" }, rateKey: "PC", page: "PC" },
+  TPU: { label: { nl: "TPU (flexibel)", en: "TPU (flexible)" }, rateKey: "TPU", page: "TPU" },
+  ASA: { label: { nl: "ASA", en: "ASA" }, rateKey: "ASA" },
+  ASA_CF: { label: { nl: "ASA Carbon Fibre", en: "ASA Carbon Fibre" }, rateKey: "ASA_CF" },
+  PAHT_CF: { label: { nl: "Nylon Carbon Fibre (PAHT-CF)", en: "Nylon Carbon Fibre (PAHT-CF)" }, rateKey: "PAHT_CF" },
 } satisfies Record<string, GuideMaterial>
 
-type GuideMaterialId = keyof typeof GUIDE_MATERIALS
+export type GuideMaterialId = keyof typeof GUIDE_MATERIALS
 
 type GuideOptionDef = {
   level: GuideLevel
@@ -89,8 +74,8 @@ export const GUIDE_OPTIONS: Record<GuideUse, GuideOptionDef[]> = {
       material: "PLA_SPECIAL",
       quality: "Ultra",
       why: {
-        nl: "Zijde- of marmerlook met de fijnste laag, voor een stuk dat in het oog moet springen.",
-        en: "Silk or marble look with the finest layer, for a piece that should stand out.",
+        nl: "Marmer- of zijdelook met de fijnste laag, voor een stuk dat in het oog moet springen.",
+        en: "Marble or silk look with the finest layer, for a piece that should stand out.",
       },
     },
   ],
@@ -138,7 +123,7 @@ export const GUIDE_OPTIONS: Record<GuideUse, GuideOptionDef[]> = {
       material: "ASA_CF",
       quality: "Standaard",
       why: {
-        nl: "ASA met koolstofvezel: stijver, met een strakke matte afwerking.",
+        nl: "ASA met carbon fibre: stijver, met een strakke matte afwerking.",
         en: "ASA with carbon fibre: stiffer, with a clean matte finish.",
       },
     },
@@ -207,20 +192,15 @@ export const GUIDE_OPTIONS: Record<GuideUse, GuideOptionDef[]> = {
       material: "PAHT_CF",
       quality: "Standaard",
       why: {
-        nl: "Nylon met koolstofvezel: zeer stijf, sterk en hittebestendig, en neemt weinig vocht op.",
+        nl: "Nylon met carbon fibre: zeer stijf, sterk en hittebestendig, en neemt weinig vocht op.",
         en: "Nylon with carbon fibre: very stiff, strong and heat resistant, with low moisture uptake.",
       },
     },
   ],
 }
 
-/** Ingeschatte ontwerptijd per vertrekpunt (schatting, aanpasbaar in de wijzer). */
-export const DEFAULT_MODEL_HOURS: Record<GuideStart, number> = {
-  file: 0,
-  broken: 1,
-  idea: 2,
-  scan: 0,
-}
+/** Standaard ontwerptijd bij een kapot onderdeel of een idee: 1 uur. */
+export const GUIDE_MODEL_HOURS = 1
 
 export type GuideInput = {
   start: GuideStart
@@ -229,13 +209,13 @@ export type GuideInput = {
   quantity: number
   customGrams?: number
   customHours?: number
-  modelHours?: number
   scanKey?: string
   includePrint: boolean
 }
 
 export type GuideOptionResult = {
   level: GuideLevel
+  materialId: GuideMaterialId
   materialLabel: string
   quality: Quality
   why: string
@@ -252,13 +232,22 @@ export type GuideResult = {
   scanLabel: string
 }
 
-export function computeGuide(input: GuideInput, locale: GuideLocale): GuideResult {
+export function guideMaterialLabel(materialId: GuideMaterialId, locale: GuideLocale = "nl"): string {
+  return GUIDE_MATERIALS[materialId].label[locale]
+}
+
+export function guideMaterialPage(materialId: GuideMaterialId): MaterialKey | undefined {
+  const material: GuideMaterial = GUIDE_MATERIALS[materialId]
+  return material.page
+}
+
+export function computeGuide(input: GuideInput, locale: GuideLocale, rates: PublicRates): GuideResult {
   const quantity = Math.max(1, Math.round(input.quantity))
   const grams = input.size === "custom" ? Math.max(1, input.customGrams ?? 1) : GRAMS_PER_TIER[input.size]
   const hours =
     input.size === "custom" ? Math.max(0.1, input.customHours ?? 0.1) : PRINT_TIME_HOURS_PER_TIER[input.size]
 
-  const modelHours = input.start === "broken" || input.start === "idea" ? Math.max(0.5, input.modelHours ?? 0) : 0
+  const modelHours = input.start === "broken" || input.start === "idea" ? GUIDE_MODEL_HOURS : 0
   const modelingCost = floorPublicEur(modelHours * DEFAULT_DESIGN_RATE_EUR_PER_HOUR)
 
   const scan = input.start === "scan" ? SCAN_PRICES.find((s) => s.key === input.scanKey) ?? SCAN_PRICES[0] : undefined
@@ -267,25 +256,19 @@ export function computeGuide(input: GuideInput, locale: GuideLocale): GuideResul
 
   const options = input.includePrint
     ? GUIDE_OPTIONS[input.use].map((def) => {
-        const material: GuideMaterial = GUIDE_MATERIALS[def.material]
-        const breakdown = calculatePrintJob({
-          filamentWeightGrams: grams,
-          printingTimeHours: hours,
-          material: material.materialKey,
-          materialPricePerKg: material.pricePerKg,
-          requiresDrying: material.requiresDrying,
-          quality: def.quality,
-          quantity,
-        })
-        const total = floorPublicEur(breakdown.totalEur + modelingCost + scanCost)
+        const print = calculatePublicPrintJob(
+          { grams, hours, material: GUIDE_MATERIALS[def.material].rateKey, quality: def.quality, quantity },
+          rates,
+        )
         return {
           level: def.level,
-          materialLabel: material.label,
+          materialId: def.material,
+          materialLabel: guideMaterialLabel(def.material, locale),
           quality: def.quality,
           why: def.why[locale],
-          printTotal: breakdown.totalEur,
-          perPiece: breakdown.pricePerPrintEur,
-          total,
+          printTotal: print.totalEur,
+          perPiece: print.pricePerPrintEur,
+          total: floorPublicEur(print.totalEur + modelingCost + scanCost),
         }
       })
     : []
@@ -294,21 +277,22 @@ export function computeGuide(input: GuideInput, locale: GuideLocale): GuideResul
 }
 
 /** Richtprijs per formaat voor een materiaal uit de wijzer (voor de server-gerenderde prijstabel). */
-export function guideUnitPrice(materialId: GuideMaterialId, size: Tier, quality: Quality = "Standaard"): number {
-  const material: GuideMaterial = GUIDE_MATERIALS[materialId]
-  return calculatePrintJob({
-    filamentWeightGrams: GRAMS_PER_TIER[size],
-    printingTimeHours: PRINT_TIME_HOURS_PER_TIER[size],
-    material: material.materialKey,
-    materialPricePerKg: material.pricePerKg,
-    requiresDrying: material.requiresDrying,
-    quality,
-    quantity: 1,
-  }).pricePerPrintEur
+export function guideUnitPrice(
+  materialId: GuideMaterialId,
+  size: Tier,
+  rates: PublicRates,
+  quality: Quality = "Standaard",
+): number {
+  return calculatePublicPrintJob(
+    {
+      grams: GRAMS_PER_TIER[size],
+      hours: PRINT_TIME_HOURS_PER_TIER[size],
+      material: GUIDE_MATERIALS[materialId].rateKey,
+      quality,
+      quantity: 1,
+    },
+    rates,
+  ).pricePerPrintEur
 }
 
 export const GUIDE_TABLE_MATERIALS: GuideMaterialId[] = ["PLA_MATTE", "PETG", "ASA", "TPU", "PC"]
-
-export function guideMaterialLabel(materialId: GuideMaterialId): string {
-  return GUIDE_MATERIALS[materialId].label
-}

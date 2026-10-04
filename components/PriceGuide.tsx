@@ -6,13 +6,14 @@ import { ArrowLeft, ArrowRight, Check, Minus, Plus } from "lucide-react"
 import { trackEvent } from "@/lib/analytics"
 import { localizeHref } from "@/lib/i18n/paths"
 import {
-  DEFAULT_MODEL_HOURS,
   computeGuide,
+  guideMaterialPage,
   type GuideLevel,
   type GuideStart,
   type GuideUse,
 } from "@/lib/price-guide"
-import type { Quality, Tier } from "@/lib/pricing"
+import { MATERIAL_SLUGS } from "@/lib/materials"
+import type { PublicRates, Quality, Tier } from "@/lib/pricing-public"
 import { SCAN_PRICES } from "@/lib/scanning-prices"
 import { cn } from "@/lib/utils"
 
@@ -73,18 +74,12 @@ const COPY = {
       levels: { basis: "Basis", advice: "Mijn advies", premium: "Premium" } satisfies Record<GuideLevel, string>,
       quality: { Standaard: "standaard laag", Fijn: "fijne laag", Ultra: "ultrafijne laag" } satisfies Record<Quality, string>,
       perPiece: (amount: string, qty: number) => `${amount} per stuk bij ${qty} stuks`,
-      includesModel: (hours: string, amount: string) => `Inclusief ${hours} ontwerptijd (${amount}, schatting)`,
+      includesModel: (amount: string) => `Inclusief 1 uur ontwerp (${amount})`,
       includesScan: (label: string, amount: string) => `Inclusief 3D-scan: ${label} (${amount})`,
       cta: "Vraag deze prijs aan",
       ctaScan: "Vraag deze scan aan",
-      modelHours: "Ontwerptijd (schatting)",
-      modelHoursHint: "Na het bekijken van je foto's en maten weet ik dit precies.",
-      lessHours: "Een half uur minder",
-      moreHours: "Een half uur meer",
-      hoursUnit: (h: number) => `${String(h).replace(".", ",")} u`,
-      note:
-        "Richtprijs zonder verzending. Btw niet toegepast (kleineondernemersregeling). Ik reken hier bewust ruim: na het bekijken van je bestand valt de offerte meestal lager uit.",
-      restart: "Opnieuw beginnen",
+      materialLink: (label: string) => `Meer over ${label}`,
+      note: "Richtprijs zonder verzending. Btw niet toegepast (kleineondernemersregeling).",
       quoteIntro: "Richtprijs via de prijswijzer",
       seriesNote: "Bij grotere aantallen kan ik de prijs verder optimaliseren.",
     },
@@ -141,18 +136,12 @@ const COPY = {
       levels: { basis: "Basic", advice: "My advice", premium: "Premium" } satisfies Record<GuideLevel, string>,
       quality: { Standaard: "standard layer", Fijn: "fine layer", Ultra: "ultra fine layer" } satisfies Record<Quality, string>,
       perPiece: (amount: string, qty: number) => `${amount} per piece for ${qty} pieces`,
-      includesModel: (hours: string, amount: string) => `Includes ${hours} of design time (${amount}, estimate)`,
+      includesModel: (amount: string) => `Includes 1 hour of design (${amount})`,
       includesScan: (label: string, amount: string) => `Includes 3D scan: ${label} (${amount})`,
       cta: "Request this price",
       ctaScan: "Request this scan",
-      modelHours: "Design time (estimate)",
-      modelHoursHint: "Once I have seen your photos and dimensions, I know this exactly.",
-      lessHours: "Half an hour less",
-      moreHours: "Half an hour more",
-      hoursUnit: (h: number) => `${h} h`,
-      note:
-        "Guide price excluding shipping. No VAT charged (Belgian small business scheme). I estimate on the generous side here: once I have seen your file, the quote usually comes out lower.",
-      restart: "Start over",
+      materialLink: (label: string) => `More about ${label}`,
+      note: "Guide price excluding shipping. No VAT charged (Belgian small business scheme).",
       quoteIntro: "Guide price from the price guide",
       seriesNote: "For larger quantities I can optimise the price further.",
     },
@@ -167,7 +156,7 @@ function track(label: string, action = "price_guide_step") {
   trackEvent({ action, category: "pricing_guide", label })
 }
 
-export default function PriceGuide({ locale }: { locale: Locale }) {
+export default function PriceGuide({ locale, rates }: { locale: Locale; rates: PublicRates }) {
   const t = COPY[locale]
   const reduceMotion = useReducedMotion()
   const euro = useMemo(
@@ -190,7 +179,6 @@ export default function PriceGuide({ locale }: { locale: Locale }) {
   const [quantity, setQuantity] = useState(1)
   const [customGrams, setCustomGrams] = useState(150)
   const [customHours, setCustomHours] = useState(5)
-  const [modelHours, setModelHours] = useState(1)
 
   const includePrint = start !== "scan" || scanAlsoPrint
   const steps: StepId[] = useMemo(() => {
@@ -219,7 +207,6 @@ export default function PriceGuide({ locale }: { locale: Locale }) {
 
   const chooseStart = (value: GuideStart) => {
     setStart(value)
-    setModelHours(Math.max(1, DEFAULT_MODEL_HOURS[value]))
     track(`start:${value}`)
     goTo(value === "scan" ? "scan" : "use")
   }
@@ -239,13 +226,13 @@ export default function PriceGuide({ locale }: { locale: Locale }) {
         quantity,
         customGrams,
         customHours,
-        modelHours,
         scanKey,
         includePrint: includePrint && use !== null,
       },
       locale,
+      rates,
     )
-  }, [start, use, size, quantity, customGrams, customHours, modelHours, scanKey, includePrint, locale])
+  }, [start, use, size, quantity, customGrams, customHours, scanKey, includePrint, locale, rates])
 
   const resultTracked = useRef(false)
   useEffect(() => {
@@ -256,20 +243,16 @@ export default function PriceGuide({ locale }: { locale: Locale }) {
     if (stepId !== "result") resultTracked.current = false
   }, [stepId, result, start, use, size])
 
-  const restart = () => {
-    setStart(null)
-    setUse(null)
-    setScanAlsoPrint(false)
-    setQuantity(1)
-    setSize("Medium")
-    track("restart")
-    goTo("start")
-  }
 
   const buildQuoteHref = (materialLabel: string, lines: string[]) => {
     const quote = [t.result.quoteIntro, ...lines].join(" | ")
     const params = new URLSearchParams({ material: materialLabel, quote, quantity: String(quantity) })
     return localizeHref(`/contact?${params.toString()}`, locale)
+  }
+
+  const materialHref = (materialId: Parameters<typeof guideMaterialPage>[0]) => {
+    const page = guideMaterialPage(materialId)
+    return localizeHref(page ? `/materials/${MATERIAL_SLUGS[page]}` : "/materials", locale)
   }
 
   const answerLines = (): string[] => {
@@ -489,7 +472,7 @@ export default function PriceGuide({ locale }: { locale: Locale }) {
                       const advice = option.level === "advice"
                       const lines = [
                         ...answerLines(),
-                        `${t.result.levels[option.level]}: ${option.materialLabel}, ${t.result.quality[option.quality]}`,
+                        `${t.result.levels[option.level]}: ${option.materialLabel}${option.quality === "Standaard" ? "" : `, ${t.result.quality[option.quality]}`}`,
                         `${euro.format(option.total)}`,
                       ]
                       return (
@@ -507,7 +490,9 @@ export default function PriceGuide({ locale }: { locale: Locale }) {
                           </p>
                           <p className="mt-1 text-lg font-semibold text-white">
                             {option.materialLabel}
-                            <span className="font-normal text-slate-400">, {t.result.quality[option.quality]}</span>
+                            {option.quality !== "Standaard" ? (
+                              <span className="font-normal text-slate-400">, {t.result.quality[option.quality]}</span>
+                            ) : null}
                           </p>
                           <p className="mt-4 text-4xl font-bold tracking-tight text-white tabular-nums">
                             {euro.format(option.total)}
@@ -519,13 +504,20 @@ export default function PriceGuide({ locale }: { locale: Locale }) {
                           {result.modelingCost > 0 || result.scanCost > 0 ? (
                             <ul className="mt-4 space-y-1 text-xs text-slate-400">
                               {result.modelingCost > 0 ? (
-                                <li>{t.result.includesModel(t.result.hoursUnit(result.modelHours), euro.format(result.modelingCost))}</li>
+                                <li>{t.result.includesModel(euro.format(result.modelingCost))}</li>
                               ) : null}
                               {result.scanCost > 0 ? (
                                 <li>{t.result.includesScan(result.scanLabel, euro.format(result.scanCost))}</li>
                               ) : null}
                             </ul>
                           ) : null}
+                          <a
+                            href={materialHref(option.materialId)}
+                            onClick={() => track(`material:${option.materialId}`, "price_guide_material_click")}
+                            className="mt-4 inline-flex w-fit text-sm font-semibold text-emerald-300 underline decoration-emerald-300/40 underline-offset-4 transition hover:decoration-emerald-300"
+                          >
+                            {t.result.materialLink(option.materialLabel)}
+                          </a>
                           <div className="mt-auto pt-6">
                           <a
                             href={buildQuoteHref(option.materialLabel, lines)}
@@ -562,43 +554,12 @@ export default function PriceGuide({ locale }: { locale: Locale }) {
                   </div>
                 )}
 
-                {start === "broken" || start === "idea" ? (
-                  <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-2xl border border-slate-700/80 bg-slate-900/60 p-4">
-                    <Stepper
-                      label={t.result.modelHours}
-                      value={modelHours}
-                      display={t.result.hoursUnit(modelHours)}
-                      onChange={(v) => setModelHours(Math.min(20, Math.max(0.5, v)))}
-                      step={0.5}
-                      decreaseLabel={t.result.lessHours}
-                      increaseLabel={t.result.moreHours}
-                    />
-                    <p className="max-w-sm text-sm text-slate-300">{t.result.modelHoursHint}</p>
-                  </div>
-                ) : null}
 
                 <div className="mt-6 space-y-2 text-sm text-slate-300">
                   {quantity >= 10 ? <p>{t.result.seriesNote}</p> : null}
                   <p className="max-w-3xl">{t.result.note}</p>
                 </div>
 
-                <div className="mt-6 flex flex-wrap gap-3">
-                  <button
-                    type="button"
-                    onClick={() => goTo(steps[Math.max(0, stepIndex - 1)])}
-                    className="inline-flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-slate-300 transition hover:bg-slate-800 hover:text-white"
-                  >
-                    <ArrowLeft aria-hidden className="h-4 w-4" />
-                    {t.back}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={restart}
-                    className="inline-flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-slate-300 underline-offset-4 transition hover:text-white hover:underline"
-                  >
-                    {t.result.restart}
-                  </button>
-                </div>
               </div>
             ) : null}
           </motion.div>

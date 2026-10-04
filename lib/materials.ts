@@ -1,6 +1,7 @@
 // lib/materials.ts
 
-import { X3D_FILAMENT_PRICE_EUR_PER_KG, type MaterialKey } from "./material-prices"
+// Enkel het type: aankoopprijzen mogen niet mee in de browserbundel (zie scripts/check-no-cost-leak.mjs).
+import type { MaterialKey } from "./material-prices"
 
 export type { MaterialKey } from "./material-prices"
 
@@ -377,7 +378,7 @@ export const MATERIALS: Record<MaterialKey, MaterialInfo> = {
   },
 };
 
-export const MATERIAL_COST_EUR_PER_KG = X3D_FILAMENT_PRICE_EUR_PER_KG
+
 
 
 export const MATERIAL_ORDER: MaterialKey[] = [

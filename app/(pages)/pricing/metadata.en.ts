@@ -1,8 +1,9 @@
 import type { Metadata } from "next"
 import { guideUnitPrice } from "@/lib/price-guide"
+import { buildPublicRates } from "@/lib/pricing"
 
 // Bedragen komen uit dezelfde prijsberekening als de pagina, zodat ze nooit uit elkaar lopen.
-const [SMALL, MEDIUM, LARGE] = (["Small", "Medium", "Large"] as const).map((tier) => guideUnitPrice("PLA_MATTE", tier))
+const [SMALL, MEDIUM, LARGE] = (["Small", "Medium", "Large"] as const).map((tier) => guideUnitPrice("PLA_MATTE", tier, buildPublicRates()))
 
 export const EN_METADATA: Metadata = {
   title: "3D printing prices in Belgium for businesses and individuals | X3DPrints",

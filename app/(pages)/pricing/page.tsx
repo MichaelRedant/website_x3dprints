@@ -8,8 +8,10 @@ import PriceEstimator from "@/components/PriceEstimator"
 import LeadTimeStatus from "@/components/LeadTimeStatus"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
-import { DEFAULT_DESIGN_RATE_EUR_PER_HOUR, GRAMS_PER_TIER, SHIPPING_RATES_EUR, type Tier } from "@/lib/pricing"
-import { GUIDE_TABLE_MATERIALS, guideMaterialLabel, guideUnitPrice } from "@/lib/price-guide"
+import { buildPublicRates } from "@/lib/pricing"
+import { DEFAULT_DESIGN_RATE_EUR_PER_HOUR, GRAMS_PER_TIER, SHIPPING_RATES_EUR, type Tier } from "@/lib/pricing-public"
+import { GUIDE_TABLE_MATERIALS, guideMaterialLabel, guideMaterialPage, guideUnitPrice } from "@/lib/price-guide"
+import { MATERIAL_SLUGS } from "@/lib/materials"
 import { localizeHref } from "@/lib/i18n/paths"
 import {
   buildBreadcrumbSchema,
@@ -85,7 +87,7 @@ const COPY = {
     table: {
       title: "Wat kost 3D printen?",
       answer: (s: string, m: string, l: string) =>
-        `Een klein stuk in PLA Matte kost ongeveer EUR ${s}, een middelgroot stuk ongeveer EUR ${m} en een groot stuk ongeveer EUR ${l}. Hoe sterker of hittebestendiger het materiaal, hoe hoger de prijs. Hieronder zie je de richtprijs per stuk voor de materialen die ik het vaakst gebruik.`,
+        `Een klein stuk in PLA Matte kost ongeveer EUR ${s}, een middelgroot stuk ongeveer EUR ${m} en een groot stuk ongeveer EUR ${l}. Hoe sterker of hittebestendiger het materiaal, hoe hoger de prijs. Hieronder zie je de richtprijs per stuk voor de materialen die ik het vaakst gebruik. Klik op een materiaal voor de eigenschappen en kleuren.`,
       caption: "Kosten 3D printen: richtprijs per stuk volgens formaat en materiaal, bij standaard laagdikte",
       sizeHeader: "Formaat",
       sizes: {
@@ -95,13 +97,13 @@ const COPY = {
       } satisfies Record<Tier, { name: string; detail: string }>,
       grams: (g: number) => `± ${g} g`,
       note:
-        "Richtprijzen, naar beneden afgerond, zonder verzending. Het echte gewicht en de printtijd ken ik pas als ik je bestand zie. Daarom valt de offerte meestal lager uit.",
+        "Richtprijzen, naar beneden afgerond, zonder verzending. Het echte gewicht en de printtijd ken ik pas als ik je bestand zie.",
     },
     factors: {
       title: "Wat bepaalt de prijs?",
       intro: "Vier dingen, en ik reken ze alle vier open uit in je offerte.",
       items: [
-        { k: "Materiaal", v: "Elk materiaal heeft zijn eigen prijs per kilo. PLA en PETG zijn het voordeligst, technische materialen zoals PC of nylon met koolstofvezel het duurst." },
+        { k: "Materiaal", v: "Elk materiaal heeft zijn eigen prijs. PLA en PETG zijn het voordeligst, technische materialen zoals polycarbonaat of nylon met carbon fibre het duurst." },
         { k: "Gewicht en formaat", v: "Meer volume is meer filament. Een hol of slim ontworpen stuk weegt vaak veel minder dan je denkt." },
         { k: "Printtijd en laagdikte", v: "Een fijnere laag geeft een mooiere afwerking, maar de printer doet er langer over." },
         { k: "Aantal", v: "Bij grotere aantallen kan ik de prijs verder optimaliseren. Vermeld het aantal gewoon in je aanvraag." },
@@ -109,11 +111,11 @@ const COPY = {
       groupsTitle: "Materialen in drie prijsklassen",
       groups: [
         { label: "PLA (Matte, Basic, Silk, Wood, Marble ...), PETG, ABS, ASA", mod: "Basisprijs" },
-        { label: "TPU (flexibel), PC", mod: "Hoger" },
-        { label: "Vezelversterkt (CF/GF) en nylon", mod: "Hoogst" },
+        { label: "TPU (flexibel), polycarbonaat", mod: "Hoger" },
+        { label: "Carbon fibre, glasvezel en nylon", mod: "Hoogst" },
       ],
       drying:
-        "Materiaal dat vooraf gedroogd moet worden (PETG, TPU, PC, houtlook) krijgt een kleine droogtoeslag per opdracht. Dat zit al in de prijswijzer.",
+        "Materiaal dat vooraf gedroogd moet worden (onder meer PETG, ASA, TPU, polycarbonaat en houtlook) krijgt een kleine droogtoeslag per opdracht. Dat zit al in de prijswijzer.",
       materialsLink: "Alle materialen en kleuren bekijken",
     },
     scan: {
@@ -145,7 +147,7 @@ const COPY = {
       steps: [
         { k: "Je stuurt wat je hebt", v: "Een bestand, foto's met maten of een beschrijving. Een link naar je bestand volstaat." },
         { k: "Ik bekijk het zelf", v: "Ik controleer of het printbaar is, kies het materiaal en zeg eerlijk als iets anders beter werkt." },
-        { k: "Je krijgt één eindprijs", v: "Zonder verrassingen achteraf. Meestal onder de richtprijs van de prijswijzer." },
+        { k: "Je krijgt één eindprijs", v: "Duidelijk en zonder verrassingen achteraf." },
       ],
       same: "Particulieren en bedrijven betalen dezelfde prijs. Btw niet toegepast (kleineondernemersregeling).",
       cta: "Vraag je offerte aan",
@@ -158,8 +160,8 @@ const COPY = {
           a: `Een klein stuk in PLA Matte kost ongeveer EUR ${s}, een middelgroot stuk ongeveer EUR ${m} en een groot stuk ongeveer EUR ${l}. De prijs hangt af van materiaal, gewicht, printtijd en aantal. Met de prijswijzer op deze pagina zie je in vier stappen wat jouw stuk ongeveer kost.`,
         },
         {
-          q: "Waarom verschilt mijn offerte van de prijswijzer?",
-          a: "De prijswijzer rekent met gemiddelden en bewust ruim. Zodra ik je bestand of je stuk bekeken heb, ken ik het echte gewicht en de printtijd. Meestal valt de offerte dan lager uit.",
+          q: "Waarom kan mijn offerte verschillen van de prijswijzer?",
+          a: "De prijswijzer rekent met gemiddelden per formaat. Zodra ik je bestand of je stuk bekeken heb, ken ik het echte gewicht en de printtijd, en daarop baseer ik je offerte.",
         },
         {
           q: "Welk materiaal moet ik kiezen?",
@@ -245,7 +247,7 @@ const COPY = {
     table: {
       title: "What does 3D printing cost?",
       answer: (s: string, m: string, l: string) =>
-        `A small part in PLA Matte costs about EUR ${s}, a medium part about EUR ${m} and a large part about EUR ${l}. The stronger or more heat resistant the material, the higher the price. Below is the guide price per piece for the materials I use most.`,
+        `A small part in PLA Matte costs about EUR ${s}, a medium part about EUR ${m} and a large part about EUR ${l}. The stronger or more heat resistant the material, the higher the price. Below is the guide price per piece for the materials I use most. Click a material for its properties and colours.`,
       caption: "3D printing prices: guide price per piece by size and material, at standard layer height",
       sizeHeader: "Size",
       sizes: {
@@ -255,13 +257,13 @@ const COPY = {
       } satisfies Record<Tier, { name: string; detail: string }>,
       grams: (g: number) => `± ${g} g`,
       note:
-        "Guide prices, rounded down, excluding shipping. I only know the real weight and print time once I see your file, which is why the quote usually comes out lower.",
+        "Guide prices, rounded down, excluding shipping. I only know the real weight and print time once I see your file.",
     },
     factors: {
       title: "What determines the price?",
       intro: "Four things, and I spell out all four in your quote.",
       items: [
-        { k: "Material", v: "Every material has its own price per kilo. PLA and PETG are the most affordable, technical materials such as PC or carbon fibre nylon the most expensive." },
+        { k: "Material", v: "Every material has its own price. PLA and PETG are the most affordable, technical materials such as polycarbonate or carbon fibre nylon the most expensive." },
         { k: "Weight and size", v: "More volume means more filament. A hollow or well designed part often weighs much less than you expect." },
         { k: "Print time and layer height", v: "A finer layer gives a nicer finish, but the printer takes longer." },
         { k: "Quantity", v: "For larger quantities I can optimise the price further. Just mention the quantity in your request." },
@@ -269,11 +271,11 @@ const COPY = {
       groupsTitle: "Materials in three price classes",
       groups: [
         { label: "PLA (Matte, Basic, Silk, Wood, Marble ...), PETG, ABS, ASA", mod: "Base price" },
-        { label: "TPU (flexible), PC", mod: "Higher" },
-        { label: "Fibre reinforced (CF/GF) and nylon", mod: "Highest" },
+        { label: "TPU (flexible), polycarbonate", mod: "Higher" },
+        { label: "Carbon fibre, glass fibre and nylon", mod: "Highest" },
       ],
       drying:
-        "Materials that need drying first (PETG, TPU, PC, wood fill) get a small drying surcharge per order. The price guide already includes it.",
+        "Materials that need drying first (including PETG, ASA, TPU, polycarbonate and wood fill) get a small drying surcharge per order. The price guide already includes it.",
       materialsLink: "See all materials and colours",
     },
     scan: {
@@ -305,7 +307,7 @@ const COPY = {
       steps: [
         { k: "You send what you have", v: "A file, photos with dimensions or a description. A link to your file is enough." },
         { k: "I review it myself", v: "I check whether it prints well, choose the material and tell you honestly if something else works better." },
-        { k: "You get one final price", v: "No surprises afterwards. Usually below the guide price from the price guide." },
+        { k: "You get one final price", v: "Clear, with no surprises afterwards." },
       ],
       same: "Individuals and businesses pay the same price. No VAT charged (Belgian small business scheme).",
       cta: "Request your quote",
@@ -318,8 +320,8 @@ const COPY = {
           a: `A small part in PLA Matte costs about EUR ${s}, a medium part about EUR ${m} and a large part about EUR ${l}. The price depends on material, weight, print time and quantity. The price guide on this page shows in four steps what your part roughly costs.`,
         },
         {
-          q: "Why does my quote differ from the price guide?",
-          a: "The price guide works with averages and estimates on the generous side. Once I have seen your file or your part, I know the real weight and print time. The quote then usually comes out lower.",
+          q: "Why can my quote differ from the price guide?",
+          a: "The price guide works with averages per size. Once I have seen your file or your part, I know the real weight and print time, and I base your quote on those.",
         },
         {
           q: "Which material should I choose?",
@@ -395,13 +397,15 @@ export default function Page(props: unknown) {
   const siteUrl = "https://www.x3dprints.be"
   const pageUrl = isEn ? `${siteUrl}/en/pricing/` : `${siteUrl}/pricing/`
 
-  // Eén bron: alle bedragen op de pagina komen uit lib/pricing via de prijswijzer-helpers.
+  // Eén bron: alle bedragen komen uit dezelfde verkooptarieven als de prijswijzer.
+  // Enkel de tarieven gaan naar de browser, nooit de aankoopprijzen.
+  const rates = buildPublicRates()
   const priceTable = TIERS.map((tier) => ({
     tier,
     grams: GRAMS_PER_TIER[tier],
-    prices: GUIDE_TABLE_MATERIALS.map((material) => ({ material, price: guideUnitPrice(material, tier) })),
+    prices: GUIDE_TABLE_MATERIALS.map((material) => ({ material, price: guideUnitPrice(material, tier, rates) })),
   }))
-  const [small, medium, large] = TIERS.map((tier) => fmt(guideUnitPrice("PLA_MATTE", tier)))
+  const [small, medium, large] = TIERS.map((tier) => fmt(guideUnitPrice("PLA_MATTE", tier, rates)))
   const faqItems = copy.faq.items(small, medium, large)
 
   const shippingRows = [
@@ -418,7 +422,7 @@ export default function Page(props: unknown) {
       row.prices
         .filter((p) => p.material === "PLA_MATTE" || p.material === "PETG")
         .map((p) => ({
-          serviceName: copy.schema.offer(copy.table.sizes[row.tier].name.toLowerCase(), guideMaterialLabel(p.material)),
+          serviceName: copy.schema.offer(copy.table.sizes[row.tier].name.toLowerCase(), guideMaterialLabel(p.material, locale)),
           price: `EUR ${p.price}`,
           description: `${copy.table.sizes[row.tier].detail}, ${copy.table.grams(row.grams)}`,
           url: pageUrl,
@@ -534,7 +538,7 @@ export default function Page(props: unknown) {
             <p className="mt-3 max-w-[62ch] text-base leading-7 text-slate-300">{copy.guide.intro}</p>
           </div>
           <div className="mt-10">
-            <PriceGuide locale={locale} />
+            <PriceGuide locale={locale} rates={rates} />
           </div>
           <details className="group mt-8 rounded-3xl border border-slate-700/70 bg-slate-950/40">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 text-sm font-semibold text-slate-200 transition hover:text-white [&::-webkit-details-marker]:hidden">
@@ -542,7 +546,7 @@ export default function Page(props: unknown) {
               <span aria-hidden className="text-lg text-emerald-300 transition group-open:rotate-45">+</span>
             </summary>
             <div className="px-3 pb-3 sm:px-4 sm:pb-4">
-              <PriceEstimator locale={locale} />
+              <PriceEstimator locale={locale} rates={rates} />
             </div>
           </details>
         </div>
@@ -566,7 +570,17 @@ export default function Page(props: unknown) {
                   </th>
                   {GUIDE_TABLE_MATERIALS.map((material) => (
                     <th key={material} scope="col" className="whitespace-nowrap px-4 py-4 text-right font-medium sm:px-5">
-                      {guideMaterialLabel(material)}
+                      {(() => {
+                        const page = guideMaterialPage(material)
+                        return (
+                          <Link
+                            href={localize(page ? `/materials/${MATERIAL_SLUGS[page]}` : "/materials")}
+                            className="text-indigo-600 underline decoration-indigo-300 underline-offset-4 transition hover:text-indigo-500"
+                          >
+                            {guideMaterialLabel(material, locale)}
+                          </Link>
+                        )
+                      })()}
                     </th>
                   ))}
                 </tr>

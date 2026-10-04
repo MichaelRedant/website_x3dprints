@@ -1,218 +1,199 @@
 "use client"
 
-import Link from "next/link"
-import { useEffect, useMemo, useState } from "react"
-import { MATERIALS } from "@/lib/materials"
+// Uitgebreide calculator: alle knoppen zelf instellen (materiaal, kwaliteit, gewicht, printtijd, aantal,
+// verzending, scan en ontwerp). Rekent enkel met PublicRates, nooit met aankoopprijzen.
+import { useMemo, useState } from "react"
+import { ArrowRight, Minus, Plus } from "lucide-react"
+import { MATERIALS, MATERIAL_ORDER, MATERIAL_SLUGS, type MaterialKey } from "@/lib/materials"
 import {
   DEFAULT_DESIGN_RATE_EUR_PER_HOUR,
   GRAMS_PER_TIER,
   PRINT_TIME_HOURS_PER_TIER,
-  calculatePrintJob,
+  calculateDeliveryCost,
+  calculatePublicPrintJob,
   floorPublicEur,
+  type DeliveryType,
+  type PublicRates,
   type Quality,
   type Tier,
-} from "@/lib/pricing"
+} from "@/lib/pricing-public"
+import { trackEvent } from "@/lib/analytics"
 import type { Locale } from "@/lib/i18n/locales"
 import { localizeHref } from "@/lib/i18n/paths"
 import { SCAN_PRICES } from "@/lib/scanning-prices"
-
-type MaterialKey = keyof typeof MATERIALS
+import { cn } from "@/lib/utils"
 
 type Props = {
   locale?: Locale
+  rates: PublicRates
 }
 
-function safeMaterialKey(key: string): MaterialKey {
-  return (Object.prototype.hasOwnProperty.call(MATERIALS, key)
-    ? key
-    : "PLA_MATTE") as MaterialKey
+type EstimatorMaterial = { id: string; label: string; page?: MaterialKey; group: "pla" | "petg" | "technical" | "flex" }
+
+// Leesbare namen: afkortingen uitgeschreven zoals klanten ze kennen.
+const LABEL_OVERRIDES: Partial<Record<string, { nl: string; en: string }>> = {
+  PC: { nl: "Polycarbonaat", en: "Polycarbonate" },
+  PC_FR: { nl: "Polycarbonaat FR (brandvertragend)", en: "Polycarbonate FR (flame retardant)" },
+  PLA_CF: { nl: "PLA Carbon Fibre", en: "PLA Carbon Fibre" },
+  TPU: { nl: "TPU (flexibel)", en: "TPU (flexible)" },
 }
 
-const SIZE_CM_PER_TIER: Record<Tier, number> = {
-  Small: 5,
-  Medium: 10,
-  Large: 20,
-}
-
-const PRESET_POINTS = [
-  { size: 5, weight: 50, hours: 2 },
-  { size: 10, weight: 200, hours: 6.5 },
-  { size: 20, weight: 500, hours: 15 },
+const GUIDE_ONLY: Array<{ id: string; label: { nl: string; en: string }; group: EstimatorMaterial["group"] }> = [
+  { id: "ASA", label: { nl: "ASA", en: "ASA" }, group: "technical" },
+  { id: "ASA_CF", label: { nl: "ASA Carbon Fibre", en: "ASA Carbon Fibre" }, group: "technical" },
+  { id: "PAHT_CF", label: { nl: "Nylon Carbon Fibre (PAHT-CF)", en: "Nylon Carbon Fibre (PAHT-CF)" }, group: "technical" },
 ]
 
-const QUALITY_LABELS: Record<Quality, { nl: string; en: string }> = {
-  Standaard: { nl: "Standaard", en: "Standard" },
-  Fijn: { nl: "Fijn", en: "Fine" },
-  Ultra: { nl: "Ultra", en: "Ultra" },
+function groupOf(key: MaterialKey): EstimatorMaterial["group"] {
+  if (key === "TPU") return "flex"
+  if (key === "PETG") return "petg"
+  if (key === "PC" || key === "PC_FR") return "technical"
+  return "pla"
 }
 
-const inputClass =
-  "h-12 rounded-2xl border border-slate-300 bg-white px-3 text-sm font-medium text-slate-900 shadow-sm outline-none ring-0 focus:border-emerald-400 focus:ring-4 focus:ring-emerald-500/10 dark:border-slate-600 dark:bg-slate-950 dark:text-slate-50 dark:focus:border-cyan-300 dark:focus:ring-cyan-400/20"
+const SIZE_CM: Record<Tier, number> = { Small: 5, Medium: 10, Large: 20 }
 
-const routeCardClass = (active: boolean) =>
-  [
-    "flex min-h-32 cursor-pointer gap-3 rounded-3xl border p-4 transition sm:p-5",
-    active
-      ? "border-emerald-400 bg-emerald-50 shadow-[0_16px_36px_rgba(16,185,129,0.18)] dark:border-emerald-300/70 dark:bg-emerald-400/10 dark:shadow-[0_16px_36px_rgba(16,185,129,0.12)]"
-      : "border-slate-200 bg-white/80 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-sm dark:border-slate-700 dark:bg-slate-950/80 dark:hover:border-cyan-300/50",
-  ].join(" ")
-
-function clampNumber(value: string, min: number, fallback: number) {
-  const parsed = Number(value)
-  if (!Number.isFinite(parsed)) return fallback
-  return Math.max(min, parsed)
-}
-
-function interpolateHours(value: number, points: Array<{ x: number; y: number }>): number {
-  const sorted = [...points].sort((a, b) => a.x - b.x)
-  if (value <= sorted[0].x) return sorted[0].y * (value / Math.max(sorted[0].x, 1))
-  for (let i = 0; i < sorted.length - 1; i++) {
-    const a = sorted[i]
-    const b = sorted[i + 1]
-    if (value <= b.x) {
-      const t = (value - a.x) / Math.max(b.x - a.x, 1)
-      return a.y + (b.y - a.y) * t
-    }
-  }
-  const last = sorted[sorted.length - 1]
-  const prev = sorted[sorted.length - 2]
-  const slope = (last.y - prev.y) / Math.max(last.x - prev.x, 1)
-  return last.y + (value - last.x) * slope
-}
-
+// Printtijd afleiden uit gewicht en grootte, op basis van de drie referentieformaten.
 function estimatePrintHours(weightGrams: number, sizeCm: number): number {
-  const hoursFromWeight = interpolateHours(weightGrams, PRESET_POINTS.map((p) => ({ x: p.weight, y: p.hours })))
-  const hoursFromSize =
-    sizeCm > 0 ? interpolateHours(sizeCm, PRESET_POINTS.map((p) => ({ x: p.size, y: p.hours }))) : null
-  const blended = hoursFromSize ? (hoursFromWeight + hoursFromSize) / 2 : hoursFromWeight
-  return Math.max(0.5, blended)
+  const points = (["Small", "Medium", "Large"] as Tier[]).map((t) => ({
+    w: GRAMS_PER_TIER[t],
+    s: SIZE_CM[t],
+    h: PRINT_TIME_HOURS_PER_TIER[t],
+  }))
+  const interpolate = (x: number, xs: number[], ys: number[]) => {
+    if (x <= xs[0]) return ys[0] * (x / xs[0])
+    for (let i = 0; i < xs.length - 1; i++) {
+      if (x <= xs[i + 1]) return ys[i] + ((ys[i + 1] - ys[i]) * (x - xs[i])) / (xs[i + 1] - xs[i])
+    }
+    const n = xs.length - 1
+    return ys[n] + ((ys[n] - ys[n - 1]) / (xs[n] - xs[n - 1])) * (x - xs[n])
+  }
+  const hs = points.map((p) => p.h)
+  const fromWeight = interpolate(weightGrams, points.map((p) => p.w), hs)
+  const fromSize = interpolate(sizeCm, points.map((p) => p.s), hs)
+  return Math.max(0.5, Math.round(((fromWeight + fromSize) / 2) * 2) / 2)
 }
 
-export default function PriceEstimator({ locale = "nl" }: Props) {
-  const isEn = locale === "en"
-  const copy = isEn
-    ? {
-        badge: "Pricing tool",
-        title: "Project calculator for print, scan and CAD",
-        intro:
-          "Choose whether your project needs printing, scanning, CAD modelling or a scan-to-print route. The estimate combines the selected services into one realistic project budget.",
-        labels: {
-          route: "What do you need?",
-          printRoute: "3D printing",
-          scanRoute: "3D scanning",
-          modelRoute: "3D modelling / CAD",
-          scanType: "Scan type",
-          scanQty: "Number of scans",
-          modelHours: "Modelling hours",
-          preset: "Size preset",
-          material: "Material",
-          quality: "Quality",
-          weight: "Weight per piece (g)",
-          size: "Longest side (cm)",
-          qty: "Quantity",
-        },
-        help: {
-          drying: "Drying included for TPU/PLA Wood/PETG/PC/PC FR.",
-          scanFile: "The agreed digital scan file is included.",
-          modelRate: `CAD and modelling are estimated at EUR ${DEFAULT_DESIGN_RATE_EUR_PER_HOUR}/hour.`,
-          oneTime: "Scanning and CAD/modelling are one-time quote items, not multiplied by print quantity.",
-        },
-        cards: {
-          projectTotal: "Project total",
-          print: "3D printing",
-          scan: "3D scanning",
-          modeling: "CAD / modelling",
-          route: "Selected route",
-          perPiece: "Print estimate per piece",
-          includes: "Includes",
-          basedOn: "Based on",
-          pieces: "pcs",
-          notSelected: "Not selected",
-        },
-        summary: {
-          route: "Route",
-          perPiece: "Per piece",
-          total: "Project total",
-          printSubtotal: "Print subtotal",
-          scan: "3D scan",
-          modeling: "CAD/modelling",
-          oneTime: "one-time quote item",
-          size: "Size",
-          weight: "Weight",
-          material: "Material",
-          quality: "Quality",
-          pieces: "pcs",
-          longestSide: "longest side",
-          hours: "hours",
-        },
-        cta: {
-          nextStep: "Ready for a precise quote?",
-          send: "Send this estimate",
-          note:
-            "Guide price, excluding delivery. No VAT charged (Belgian small business scheme). Final quote after reviewing your model, object or scan request.",
-        },
-      }
-    : {
-        badge: "Prijscalculator",
-        title: "Projectcalculator voor print, scan en CAD",
-        intro:
-          "Kies of je project printen, scannen, CAD-modelleren of een scan-to-print route nodig heeft. De calculator telt de geselecteerde diensten samen tot een realistische projectindicatie.",
-        labels: {
-          route: "Wat heb je nodig?",
-          printRoute: "3D printen",
-          scanRoute: "3D scannen",
-          modelRoute: "3D modelleren / CAD",
-          scanType: "Type scan",
-          scanQty: "Aantal scans",
-          modelHours: "Modelleeruren",
-          preset: "Formaat preset",
-          material: "Materiaal",
-          quality: "Kwaliteit",
-          weight: "Gewicht per stuk (g)",
-          size: "Langste maat (cm)",
-          qty: "Aantal stuks",
-        },
-        help: {
-          drying: "Droogbehandeling inbegrepen voor TPU/PLA Wood/PETG/PC/PC FR.",
-          scanFile: "Het afgesproken digitale scanbestand is inbegrepen.",
-          modelRate: `CAD en modelleren worden geschat aan EUR ${DEFAULT_DESIGN_RATE_EUR_PER_HOUR}/uur.`,
-          oneTime: "Scannen en CAD/modelleren zijn eenmalige offerteposten, niet per geprint stuk.",
-        },
-        cards: {
-          projectTotal: "Projecttotaal",
-          print: "3D printen",
-          scan: "3D scannen",
-          modeling: "CAD / modelleren",
-          route: "Gekozen route",
-          perPiece: "Printindicatie per stuk",
-          includes: "Incl.",
-          basedOn: "Op basis van",
-          pieces: "st",
-          notSelected: "Niet geselecteerd",
-        },
-        summary: {
-          route: "Route",
-          perPiece: "Per stuk",
-          total: "Projecttotaal",
-          printSubtotal: "Print subtotaal",
-          scan: "3D scan",
-          modeling: "CAD/modelleren",
-          oneTime: "eenmalige offertepost",
-          size: "Formaat",
-          weight: "Gewicht",
-          material: "Materiaal",
-          quality: "Kwaliteit",
-          pieces: "st",
-          longestSide: "langste zijde",
-          hours: "uur",
-        },
-        cta: {
-          nextStep: "Klaar voor een exacte offerte?",
-          send: "Verstuur deze inschatting",
-          note: "Richtprijs, zonder levering. Btw niet toegepast (kleineondernemersregeling). De definitieve prijs volgt na controle van je model, object of scanvraag.",
-        },
-      }
+const COPY = {
+  nl: {
+    title: "Uitgebreide calculator",
+    intro: "Stel alles zelf in. Handig als je het gewicht en de printtijd uit je slicer kent, of als je print, scan en ontwerp wil combineren.",
+    services: "Wat heb je nodig?",
+    print: "3D printen",
+    scan: "3D scannen",
+    design: "Ontwerp of natekenen",
+    printTitle: "Printen",
+    material: "Materiaal",
+    groups: { pla: "PLA", petg: "PETG", technical: "Technisch en buiten", flex: "Flexibel" },
+    materialLink: (label: string) => `Meer over ${label}`,
+    quality: "Laagdikte",
+    qualities: {
+      Standaard: { label: "Standaard", hint: "Functionele stukken" },
+      Fijn: { label: "Fijn", hint: "Zichtwerk, strakkere rondingen" },
+      Ultra: { label: "Ultrafijn", hint: "Fijnste detail" },
+    } satisfies Record<Quality, { label: string; hint: string }>,
+    size: "Formaat",
+    sizes: { Small: "Klein (± 5 cm)", Medium: "Middelgroot (± 10 cm)", Large: "Groot (± 20 cm)" } satisfies Record<Tier, string>,
+    weight: "Gewicht per stuk (g)",
+    longest: "Langste zijde (cm)",
+    hours: "Printtijd per stuk (uur)",
+    hoursAuto: "Geschat uit gewicht en grootte.",
+    hoursManual: "Zelf ingevuld.",
+    hoursReset: "Opnieuw schatten",
+    quantity: "Aantal stuks",
+    delivery: "Levering",
+    pickup: "Gratis afhalen (afhaalbox Herzele, 24 op 7)",
+    shipping: "Verzenden",
+    scanTitle: "3D scannen",
+    scanType: "Wat wil je laten scannen?",
+    scanQty: "Aantal scans",
+    designTitle: "Ontwerp of natekenen",
+    designHours: "Aantal uren",
+    designHint: `EUR ${DEFAULT_DESIGN_RATE_EUR_PER_HOUR} per uur, één keer aangerekend, niet per stuk.`,
+    less: "Minder",
+    more: "Meer",
+    summary: "Jouw richtprijs",
+    lines: {
+      print: (qty: number, label: string) => `Printen: ${qty} × ${label}`,
+      drying: "inclusief droogtoeslag",
+      perPiece: (amount: string) => `${amount} per stuk`,
+      scan: (qty: number, label: string) => `${qty} × ${label}`,
+      design: (hours: string) => `Ontwerp: ${hours} uur`,
+      shipping: "Verzending",
+      pickup: "Afhalen",
+      free: "Gratis",
+      onRequest: "Op aanvraag",
+    },
+    total: "Totaal",
+    note: "Richtprijs. Btw niet toegepast (kleineondernemersregeling).",
+    cta: "Vraag deze prijs aan",
+    quoteIntro: "Richtprijs via de uitgebreide calculator",
+    nothing: "Kies minstens één dienst.",
+  },
+  en: {
+    title: "Detailed calculator",
+    intro: "Set everything yourself. Handy if you know weight and print time from your slicer, or want to combine printing, scanning and design.",
+    services: "What do you need?",
+    print: "3D printing",
+    scan: "3D scanning",
+    design: "Design or redrawing",
+    printTitle: "Printing",
+    material: "Material",
+    groups: { pla: "PLA", petg: "PETG", technical: "Technical and outdoor", flex: "Flexible" },
+    materialLink: (label: string) => `More about ${label}`,
+    quality: "Layer height",
+    qualities: {
+      Standaard: { label: "Standard", hint: "Functional parts" },
+      Fijn: { label: "Fine", hint: "Visual work, smoother curves" },
+      Ultra: { label: "Ultra fine", hint: "Finest detail" },
+    } satisfies Record<Quality, { label: string; hint: string }>,
+    size: "Size",
+    sizes: { Small: "Small (± 5 cm)", Medium: "Medium (± 10 cm)", Large: "Large (± 20 cm)" } satisfies Record<Tier, string>,
+    weight: "Weight per piece (g)",
+    longest: "Longest side (cm)",
+    hours: "Print time per piece (hours)",
+    hoursAuto: "Estimated from weight and size.",
+    hoursManual: "Entered by you.",
+    hoursReset: "Estimate again",
+    quantity: "Quantity",
+    delivery: "Delivery",
+    pickup: "Free pickup (pickup box Herzele, 24/7)",
+    shipping: "Shipping",
+    scanTitle: "3D scanning",
+    scanType: "What would you like scanned?",
+    scanQty: "Number of scans",
+    designTitle: "Design or redrawing",
+    designHours: "Hours",
+    designHint: `EUR ${DEFAULT_DESIGN_RATE_EUR_PER_HOUR} per hour, charged once, not per piece.`,
+    less: "Less",
+    more: "More",
+    summary: "Your guide price",
+    lines: {
+      print: (qty: number, label: string) => `Printing: ${qty} × ${label}`,
+      drying: "including drying surcharge",
+      perPiece: (amount: string) => `${amount} per piece`,
+      scan: (qty: number, label: string) => `${qty} × ${label}`,
+      design: (hours: string) => `Design: ${hours} hours`,
+      shipping: "Shipping",
+      pickup: "Pickup",
+      free: "Free",
+      onRequest: "On request",
+    },
+    total: "Total",
+    note: "Guide price. No VAT charged (Belgian small business scheme).",
+    cta: "Request this price",
+    quoteIntro: "Guide price from the detailed calculator",
+    nothing: "Pick at least one service.",
+  },
+} as const
 
+const fieldClass =
+  "mt-2 block h-11 w-full rounded-xl border border-slate-700 bg-slate-900 px-3 text-base font-medium tabular-nums text-white focus:border-emerald-300 focus:outline-none"
+const labelClass = "block text-sm font-medium text-slate-300"
+
+export default function PriceEstimator({ locale = "nl", rates }: Props) {
+  const isEn = locale === "en"
+  const t = COPY[isEn ? "en" : "nl"]
   const euro = useMemo(
     () =>
       new Intl.NumberFormat(isEn ? "en-BE" : "nl-BE", {
@@ -224,397 +205,417 @@ export default function PriceEstimator({ locale = "nl" }: Props) {
     [isEn],
   )
 
-  const defaultMaterial: MaterialKey = "PLA_MATTE"
-  const [tier, setTier] = useState<Tier>("Medium")
-  const [material, setMaterial] = useState<MaterialKey>(defaultMaterial)
-  const [quality, setQuality] = useState<Quality>("Standaard")
-  const [qty, setQty] = useState<number>(1)
-  const [weight, setWeight] = useState<number>(GRAMS_PER_TIER[tier])
-  const [sizeCm, setSizeCm] = useState<number>(SIZE_CM_PER_TIER[tier])
-  const [printHours, setPrintHours] = useState<number>(PRINT_TIME_HOURS_PER_TIER[tier])
-  const [includePrint, setIncludePrint] = useState(true)
-  const [includeScan, setIncludeScan] = useState(false)
-  const [includeModeling, setIncludeModeling] = useState(false)
-  const [scanKey, setScanKey] = useState(SCAN_PRICES[0]?.key ?? "small-object")
-  const [scanQty, setScanQty] = useState(1)
-  const [modelHours, setModelHours] = useState(1)
-
-  useEffect(() => {
-    setWeight(GRAMS_PER_TIER[tier])
-    setSizeCm(SIZE_CM_PER_TIER[tier])
-    setPrintHours(PRINT_TIME_HOURS_PER_TIER[tier])
-  }, [tier])
-
-  useEffect(() => {
-    setPrintHours(estimatePrintHours(Math.max(1, weight), Math.max(1, sizeCm)))
-  }, [weight, sizeCm])
-
-  const printBreakdown = useMemo(
-    () =>
-      includePrint
-        ? calculatePrintJob({
-            filamentWeightGrams: Math.max(1, weight),
-            printingTimeHours: Math.max(0.1, printHours),
-            material,
-            quality,
-            quantity: Math.max(1, qty),
-          })
-        : null,
-    [includePrint, weight, printHours, material, quality, qty],
+  const materials: EstimatorMaterial[] = useMemo(
+    () => [
+      ...MATERIAL_ORDER.map((key) => ({
+        id: key,
+        label: LABEL_OVERRIDES[key]?.[isEn ? "en" : "nl"] ?? MATERIALS[key].name,
+        page: key,
+        group: groupOf(key),
+      })),
+      ...GUIDE_ONLY.map((m) => ({ id: m.id, label: m.label[isEn ? "en" : "nl"], group: m.group })),
+    ],
+    [isEn],
   )
 
-  const qualityLabel = QUALITY_LABELS[quality]?.[isEn ? "en" : "nl"] ?? quality
-  const selectedScan = SCAN_PRICES.find((item) => item.key === scanKey) ?? SCAN_PRICES[0]
-  const selectedScanLabel = selectedScan ? (isEn ? selectedScan.labelEn : selectedScan.labelNl) : ""
-  const scanCost = includeScan && selectedScan ? selectedScan.price * Math.max(1, scanQty) : 0
-  const modelingCost = includeModeling
-    ? floorPublicEur(Math.max(0.25, modelHours) * DEFAULT_DESIGN_RATE_EUR_PER_HOUR)
-    : 0
-  const printSubtotal = printBreakdown?.totalEur ?? 0
-  const projectTotal = floorPublicEur(printSubtotal + scanCost + modelingCost)
-  const projectPerPiece = includePrint ? floorPublicEur(projectTotal / Math.max(1, qty)) : projectTotal
+  const [includePrint, setIncludePrint] = useState(true)
+  const [includeScan, setIncludeScan] = useState(false)
+  const [includeDesign, setIncludeDesign] = useState(false)
+  const [materialId, setMaterialId] = useState("PLA_MATTE")
+  const [quality, setQuality] = useState<Quality>("Standaard")
+  const [tier, setTier] = useState<Tier | null>("Medium")
+  const [grams, setGrams] = useState(GRAMS_PER_TIER.Medium)
+  const [sizeCm, setSizeCm] = useState(SIZE_CM.Medium)
+  const [manualHours, setManualHours] = useState<number | null>(null)
+  const [quantity, setQuantity] = useState(1)
+  const [delivery, setDelivery] = useState<DeliveryType>("afhaling")
+  const [scanKey, setScanKey] = useState(SCAN_PRICES[0]?.key ?? "small-object")
+  const [scanQty, setScanQty] = useState(1)
+  const [designHours, setDesignHours] = useState(1)
 
-  const setRoute = (route: "print" | "scan" | "model", active: boolean) => {
-    const activeCount = Number(includePrint) + Number(includeScan) + Number(includeModeling)
-    if (!active && activeCount <= 1) return
-    if (route === "print") setIncludePrint(active)
-    if (route === "scan") setIncludeScan(active)
-    if (route === "model") setIncludeModeling(active)
+  const estimatedHours = tier && manualHours === null ? PRINT_TIME_HOURS_PER_TIER[tier] : estimatePrintHours(grams, sizeCm)
+  const hours = manualHours ?? estimatedHours
+  const material = materials.find((m) => m.id === materialId) ?? materials[0]
+
+  const chooseTier = (next: Tier) => {
+    setTier(next)
+    setGrams(GRAMS_PER_TIER[next])
+    setSizeCm(SIZE_CM[next])
+    setManualHours(null)
   }
 
-  const selectedRoutes = [
-    includePrint ? copy.labels.printRoute : null,
-    includeScan ? copy.labels.scanRoute : null,
-    includeModeling ? copy.labels.modelRoute : null,
-  ].filter(Boolean)
-  const routeSummary = selectedRoutes.join(" + ")
+  const print = includePrint
+    ? calculatePublicPrintJob({ grams, hours, material: material.id, quality, quantity }, rates)
+    : null
+  const printLine = print ? floorPublicEur(print.printsSubtotalEur) : 0
+  const scan = SCAN_PRICES.find((s) => s.key === scanKey) ?? SCAN_PRICES[0]
+  const scanLine = includeScan && scan ? scan.price * scanQty : 0
+  const designLine = includeDesign ? floorPublicEur(designHours * DEFAULT_DESIGN_RATE_EUR_PER_HOUR) : 0
+  const shippingLine = includePrint && delivery === "verzending" ? calculateDeliveryCost("verzending", grams * quantity) : 0
+  const total = floorPublicEur(printLine + scanLine + designLine + (shippingLine ?? 0))
+  const nothingSelected = !includePrint && !includeScan && !includeDesign
 
-  const quoteSummary = useMemo(() => {
-    const parts = [
-      `${copy.summary.route}: ${routeSummary}`,
-      `${copy.summary.total}: EUR ${projectTotal}`,
-    ]
-    if (includePrint && printBreakdown) {
-      parts.push(
-        `${copy.summary.perPiece}: EUR ${projectPerPiece} (${printBreakdown.input.quantity} ${copy.summary.pieces})`,
-        `${copy.summary.printSubtotal}: EUR ${printSubtotal}`,
-        `${copy.summary.size}: ~${sizeCm} cm ${copy.summary.longestSide} | ${copy.summary.weight}: ~${weight} g`,
-        `${copy.summary.material}: ${materialLabel(material)} | ${copy.summary.quality}: ${qualityLabel}`,
-      )
-    }
-    if (includeScan && selectedScan) {
-      parts.push(
-        `${copy.summary.scan}: ${selectedScanLabel} x ${Math.max(1, scanQty)} = EUR ${scanCost} (${copy.summary.oneTime})`,
-      )
-    }
-    if (includeModeling) {
-      parts.push(
-        `${copy.summary.modeling}: ${Math.max(0.25, modelHours)} ${copy.summary.hours} x EUR ${DEFAULT_DESIGN_RATE_EUR_PER_HOUR} = EUR ${modelingCost} (${copy.summary.oneTime})`,
-      )
-    }
-    return parts.join(" | ")
-  }, [
-    copy.summary.hours,
-    copy.summary.modeling,
-    copy.summary.printSubtotal,
-    copy.summary.route,
-    copy.summary.scan,
-    copy.summary.oneTime,
-    copy.summary.perPiece,
-    copy.summary.pieces,
-    copy.summary.material,
-    copy.summary.quality,
-    copy.summary.size,
-    copy.summary.total,
-    copy.summary.weight,
-    copy.summary.longestSide,
-    includeModeling,
-    includePrint,
-    includeScan,
-    modelHours,
-    modelingCost,
-    printBreakdown,
-    printSubtotal,
-    projectPerPiece,
-    projectTotal,
-    routeSummary,
-    scanCost,
-    scanQty,
-    selectedScan,
-    selectedScanLabel,
-    sizeCm,
-    weight,
-    material,
-    qualityLabel,
-  ])
+  const formatHours = (h: number) => (isEn ? String(h) : String(h).replace(".", ","))
 
-  const contactHref = useMemo(() => {
-    const materialContext = includePrint
-      ? materialLabel(material)
-      : includeScan
-        ? isEn
-          ? "3D scanning"
-          : "3D scannen"
-        : isEn
-          ? "3D modelling / CAD"
-          : "3D modelleren / CAD"
-    const href = `/contact?material=${encodeURIComponent(materialContext)}&quote=${encodeURIComponent(quoteSummary)}`
-    return localizeHref(href, locale)
-  }, [includePrint, includeScan, isEn, material, quoteSummary, locale])
+  const quoteHref = useMemo(() => {
+    const lines: string[] = [t.quoteIntro]
+    if (includePrint) {
+      lines.push(
+        t.lines.print(quantity, material.label),
+        `${grams} g, ${sizeCm} cm, ${formatHours(hours)} h, ${t.qualities[quality].label}`,
+        `${t.delivery}: ${delivery === "afhaling" ? t.lines.pickup : t.lines.shipping}`,
+      )
+    }
+    if (includeScan && scan) lines.push(t.lines.scan(scanQty, isEn ? scan.labelEn : scan.labelNl))
+    if (includeDesign) lines.push(t.lines.design(formatHours(designHours)))
+    lines.push(`${t.total}: ${euro.format(total)}`)
+    const params = new URLSearchParams({
+      material: includePrint ? material.label : includeScan ? (isEn ? "3D scanning" : "3D scannen") : t.design,
+      quote: lines.join(" | "),
+      quantity: String(quantity),
+    })
+    return localizeHref(`/contact?${params.toString()}`, locale)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [includePrint, includeScan, includeDesign, material, quantity, grams, sizeCm, hours, quality, delivery, scanQty, scan, designHours, total, locale])
+
+  const toggleClass = (active: boolean) =>
+    cn(
+      "flex cursor-pointer items-center gap-3 rounded-2xl border px-4 py-3 text-sm font-semibold transition",
+      "has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-emerald-300",
+      active ? "border-emerald-300/80 bg-emerald-400/10 text-white" : "border-slate-700 bg-slate-900/60 text-slate-300 hover:border-slate-500",
+    )
 
   return (
-    <div className="relative overflow-hidden rounded-[2rem] border border-emerald-200/70 bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.22),transparent_34%),linear-gradient(135deg,#f8fafc,#ecfeff_52%,#f0fdf4)] p-1 shadow-[0_24px_70px_rgba(15,23,42,0.16)] dark:border-emerald-300/30 dark:bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.18),transparent_34%),linear-gradient(135deg,#0f172a,#082f49_52%,#020617)] dark:shadow-[0_28px_80px_rgba(2,6,23,0.5)]">
-      <div aria-hidden className="pointer-events-none absolute -right-12 -top-16 h-48 w-48 rounded-full bg-cyan-300/35 blur-3xl" />
-      <div aria-hidden className="pointer-events-none absolute -bottom-20 left-10 h-56 w-56 rounded-full bg-emerald-300/25 blur-3xl" />
-      <div className="relative rounded-[1.75rem] bg-white/95 p-5 backdrop-blur dark:bg-slate-950/95 sm:p-7 lg:p-8">
-        <div className="grid gap-5 lg:grid-cols-[1fr_22rem] lg:items-start">
-          <div>
-            <span className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-800">
-              {copy.badge}
-            </span>
-            <h3 className="mt-3 max-w-3xl text-2xl font-black tracking-tight text-slate-950 sm:text-3xl">
-              {copy.title}
-            </h3>
-            <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-600 sm:text-base">{copy.intro}</p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              <span className="rounded-full bg-slate-950 px-3 py-1.5 text-xs font-semibold text-white">
-                {copy.labels.printRoute}
-              </span>
-              <span className="rounded-full bg-cyan-100 px-3 py-1.5 text-xs font-semibold text-cyan-900">
-                {copy.help.scanFile}
-              </span>
-              <span className="rounded-full bg-amber-100 px-3 py-1.5 text-xs font-semibold text-amber-950">
-                {copy.help.modelRate}
-              </span>
-              <span className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 ring-1 ring-slate-200">
-                {copy.help.oneTime}
-              </span>
-            </div>
-          </div>
+    <div className="grid gap-6 rounded-[1.75rem] bg-slate-950/60 p-5 text-slate-100 sm:p-7 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start">
+      <div className="min-w-0">
+        <h3 className="text-xl font-bold tracking-tight text-white sm:text-2xl">{t.title}</h3>
+        <p className="mt-2 max-w-[60ch] text-sm leading-6 text-slate-300">{t.intro}</p>
 
-          <div className="rounded-3xl border border-slate-900 bg-slate-950 p-5 text-white shadow-[0_22px_50px_rgba(15,23,42,0.28)]">
-            <div className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-300">{copy.cards.projectTotal}</div>
-            <div className="mt-2 text-4xl font-black tracking-tight">{euro.format(projectTotal)}</div>
-            <div className="mt-3 rounded-2xl border border-white/10 bg-white/10 p-3">
-              <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-300">{copy.cards.route}</div>
-              <div className="mt-1 text-sm font-semibold text-white">{routeSummary}</div>
-              <div className="mt-1 text-xs text-slate-300">
-                {includePrint ? `${euro.format(projectPerPiece)} ${copy.summary.perPiece.toLowerCase()}` : copy.cards.basedOn}
-              </div>
-            </div>
+        <fieldset className="mt-6">
+          <legend className={labelClass}>{t.services}</legend>
+          <div className="mt-2 grid gap-2 sm:grid-cols-3">
+            {[
+              { label: t.print, active: includePrint, set: setIncludePrint },
+              { label: t.scan, active: includeScan, set: setIncludeScan },
+              { label: t.design, active: includeDesign, set: setIncludeDesign },
+            ].map((service) => (
+              <label key={service.label} className={toggleClass(service.active)}>
+                <input
+                  type="checkbox"
+                  checked={service.active}
+                  onChange={(e) => service.set(e.target.checked)}
+                  className="h-4 w-4 accent-emerald-400"
+                />
+                {service.label}
+              </label>
+            ))}
           </div>
-        </div>
-
-        <div className="mt-6 rounded-3xl border border-slate-200 bg-slate-50/90 p-4 shadow-inner dark:border-slate-700 dark:bg-slate-900/80">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">{copy.labels.route}</p>
-          <div className="mt-3 grid gap-3 md:grid-cols-3">
-            <label className={routeCardClass(includePrint)}>
-              <input
-                type="checkbox"
-                className="mt-1 h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
-                checked={includePrint}
-                onChange={(event) => setRoute("print", event.target.checked)}
-              />
-              <span>
-                <span className="block text-sm font-semibold text-slate-900">{copy.labels.printRoute}</span>
-                <span className="mt-1 block text-xs text-slate-600">
-                  {isEn ? "Material, quality, size and quantity." : "Materiaal, kwaliteit, formaat en aantal."}
-                </span>
-              </span>
-            </label>
-            <label className={routeCardClass(includeScan)}>
-              <input
-                type="checkbox"
-                className="mt-1 h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
-                checked={includeScan}
-                onChange={(event) => setRoute("scan", event.target.checked)}
-              />
-              <span>
-                <span className="block text-sm font-semibold text-slate-900">{copy.labels.scanRoute}</span>
-                <span className="mt-1 block text-xs text-slate-600">{copy.help.scanFile}</span>
-                <span className="mt-2 inline-flex rounded-full bg-cyan-100 px-2.5 py-1 text-[11px] font-semibold text-cyan-900">
-                  {copy.summary.oneTime}
-                </span>
-              </span>
-            </label>
-            <label className={routeCardClass(includeModeling)}>
-              <input
-                type="checkbox"
-                className="mt-1 h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
-                checked={includeModeling}
-                onChange={(event) => setRoute("model", event.target.checked)}
-              />
-              <span>
-                <span className="block text-sm font-semibold text-slate-900">{copy.labels.modelRoute}</span>
-                <span className="mt-1 block text-xs text-slate-600">{copy.help.modelRate}</span>
-                <span className="mt-2 inline-flex rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold text-amber-950">
-                  {copy.summary.oneTime}
-                </span>
-              </span>
-            </label>
-          </div>
-        </div>
+        </fieldset>
 
         {includePrint ? (
-          <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="flex flex-col gap-1">
-              <label className="text-xs font-semibold text-slate-600">{copy.labels.preset}</label>
-              <select className={inputClass} value={tier} onChange={(e) => setTier(e.target.value as Tier)}>
-                <option value="Small">Small (~5 cm, {GRAMS_PER_TIER.Small}g)</option>
-                <option value="Medium">Medium (~10 cm, {GRAMS_PER_TIER.Medium}g)</option>
-                <option value="Large">Large (~20 cm, {GRAMS_PER_TIER.Large}g)</option>
-              </select>
+          <section className="mt-8 border-t border-slate-800 pt-6" aria-label={t.printTitle}>
+            <h4 className="text-base font-semibold text-white">{t.printTitle}</h4>
+
+            <div className="mt-4 grid gap-5 sm:grid-cols-2">
+              <label className="block">
+                <span className={labelClass}>{t.material}</span>
+                <select
+                  className={fieldClass}
+                  value={material.id}
+                  onChange={(e) => {
+                    setMaterialId(e.target.value)
+                    trackEvent({ action: "estimator_material", category: "pricing_estimator", label: e.target.value })
+                  }}
+                >
+                  {(Object.keys(t.groups) as Array<keyof typeof t.groups>).map((group) => (
+                    <optgroup key={group} label={t.groups[group]}>
+                      {materials
+                        .filter((m) => m.group === group)
+                        .map((m) => (
+                          <option key={m.id} value={m.id}>
+                            {m.label}
+                          </option>
+                        ))}
+                    </optgroup>
+                  ))}
+                </select>
+                <a
+                  href={localizeHref(material.page ? `/materials/${MATERIAL_SLUGS[material.page]}` : "/materials", locale)}
+                  className="mt-2 inline-flex text-sm font-semibold text-emerald-300 underline decoration-emerald-300/40 underline-offset-4 hover:decoration-emerald-300"
+                >
+                  {t.materialLink(material.label)}
+                </a>
+              </label>
+
+              <div>
+                <span className={labelClass}>{t.quantity}</span>
+                <NumberStepper label={t.quantity} value={quantity} min={1} max={999} step={1} onChange={setQuantity} lessLabel={t.less} moreLabel={t.more} />
+              </div>
             </div>
 
-            <div className="flex flex-col gap-1">
-              <label className="text-xs font-semibold text-slate-600">{copy.labels.material}</label>
-              <select className={inputClass} value={material} onChange={(e) => setMaterial(safeMaterialKey(e.target.value))}>
-                {Object.entries(MATERIALS).map(([k, v]) => (
-                  <option key={k} value={k}>
-                    {v.name}
-                  </option>
+            <fieldset className="mt-6">
+              <legend className={labelClass}>{t.quality}</legend>
+              <div className="mt-2 grid gap-2 sm:grid-cols-3">
+                {(Object.keys(t.qualities) as Quality[]).map((q) => (
+                  <label key={q} className={cn(toggleClass(quality === q), "flex-col items-start gap-0.5")}>
+                    <input type="radio" name="estimator-quality" value={q} checked={quality === q} onChange={() => setQuality(q)} className="sr-only" />
+                    <span>{t.qualities[q].label}</span>
+                    <span className="text-xs font-normal text-slate-400">{t.qualities[q].hint}</span>
+                  </label>
                 ))}
-              </select>
-              <span className="text-[11px] text-slate-500">{copy.help.drying}</span>
-            </div>
+              </div>
+            </fieldset>
 
-            <div className="flex flex-col gap-1">
-              <label className="text-xs font-semibold text-slate-600">{copy.labels.quality}</label>
-              <select className={inputClass} value={quality} onChange={(e) => setQuality(e.target.value as Quality)}>
-                <option value="Standaard">{QUALITY_LABELS.Standaard[isEn ? "en" : "nl"]}</option>
-                <option value="Fijn">{QUALITY_LABELS.Fijn[isEn ? "en" : "nl"]}</option>
-                <option value="Ultra">{QUALITY_LABELS.Ultra[isEn ? "en" : "nl"]}</option>
-              </select>
-            </div>
-
-            <div className="flex flex-col gap-1">
-              <label className="text-xs font-semibold text-slate-600">{copy.labels.weight}</label>
-              <input
-                type="number"
-                min={1}
-                className={inputClass}
-                value={weight}
-                onChange={(e) => setWeight(clampNumber(e.target.value, 1, 1))}
-              />
-            </div>
-
-            <div className="flex flex-col gap-1">
-              <label className="text-xs font-semibold text-slate-600">{copy.labels.size}</label>
-              <input
-                type="number"
-                min={1}
-                step={0.5}
-                className={inputClass}
-                value={sizeCm}
-                onChange={(e) => setSizeCm(clampNumber(e.target.value, 1, 1))}
-              />
-            </div>
-
-            <div className="flex flex-col gap-1">
-              <label className="text-xs font-semibold text-slate-600">{copy.labels.qty}</label>
-              <input
-                type="number"
-                min={1}
-                className={inputClass}
-                value={qty}
-                onChange={(e) => setQty(clampNumber(e.target.value, 1, 1))}
-              />
-            </div>
-          </div>
-        ) : null}
-
-        {includeScan || includeModeling ? (
-          <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-3">
-            {includeScan ? (
-              <>
-                <div className="flex flex-col gap-1 sm:col-span-2">
-                  <label className="text-xs font-semibold text-slate-600">{copy.labels.scanType}</label>
-                  <select className={inputClass} value={scanKey} onChange={(e) => setScanKey(e.target.value)}>
-                    {SCAN_PRICES.map((item) => (
-                      <option key={item.key} value={item.key}>
-                        {isEn ? item.labelEn : item.labelNl} - EUR {item.price}
-                      </option>
-                    ))}
-                  </select>
-                  <span className="text-[11px] text-slate-500">{copy.help.scanFile}</span>
-                  <span className="text-[11px] font-semibold text-cyan-800">{copy.help.oneTime}</span>
-                </div>
-                <div className="flex flex-col gap-1">
-                  <label className="text-xs font-semibold text-slate-600">{copy.labels.scanQty}</label>
+            <fieldset className="mt-6">
+              <legend className={labelClass}>{t.size}</legend>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {(Object.keys(t.sizes) as Tier[]).map((s) => (
+                  <button
+                    key={s}
+                    type="button"
+                    aria-pressed={tier === s}
+                    onClick={() => chooseTier(s)}
+                    className={cn(
+                      "rounded-full border px-4 py-2 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300",
+                      tier === s ? "border-emerald-300 bg-emerald-300 text-slate-950" : "border-slate-700 text-slate-300 hover:border-slate-500",
+                    )}
+                  >
+                    {t.sizes[s]}
+                  </button>
+                ))}
+              </div>
+              <div className="mt-4 grid gap-4 sm:grid-cols-3">
+                <label className="block">
+                  <span className={labelClass}>{t.weight}</span>
                   <input
                     type="number"
+                    inputMode="decimal"
                     min={1}
-                    className={inputClass}
-                    value={scanQty}
-                    onChange={(e) => setScanQty(clampNumber(e.target.value, 1, 1))}
+                    value={grams}
+                    onChange={(e) => {
+                      setGrams(Math.max(1, Number(e.target.value) || 1))
+                      setTier(null)
+                    }}
+                    className={fieldClass}
                   />
-                </div>
-              </>
-            ) : null}
-
-            {includeModeling ? (
-              <div className="flex flex-col gap-1">
-                <label className="text-xs font-semibold text-slate-600">{copy.labels.modelHours}</label>
-                <input
-                  type="number"
-                  min={0.25}
-                  step={0.25}
-                  className={inputClass}
-                  value={modelHours}
-                  onChange={(e) => setModelHours(clampNumber(e.target.value, 0.25, 1))}
-                />
-                <span className="text-[11px] text-slate-500">{copy.help.modelRate}</span>
-                <span className="text-[11px] font-semibold text-amber-800">{copy.help.oneTime}</span>
+                </label>
+                <label className="block">
+                  <span className={labelClass}>{t.longest}</span>
+                  <input
+                    type="number"
+                    inputMode="decimal"
+                    min={1}
+                    step={0.5}
+                    value={sizeCm}
+                    onChange={(e) => {
+                      setSizeCm(Math.max(1, Number(e.target.value) || 1))
+                      setTier(null)
+                    }}
+                    className={fieldClass}
+                  />
+                </label>
+                <label className="block">
+                  <span className={labelClass}>{t.hours}</span>
+                  <input
+                    type="number"
+                    inputMode="decimal"
+                    min={0.1}
+                    step={0.5}
+                    value={hours}
+                    onChange={(e) => setManualHours(Math.max(0.1, Number(e.target.value) || 0.1))}
+                    className={fieldClass}
+                  />
+                  <span className="mt-1 block text-xs text-slate-400">
+                    {manualHours === null ? (
+                      t.hoursAuto
+                    ) : (
+                      <>
+                        {t.hoursManual}{" "}
+                        <button type="button" onClick={() => setManualHours(null)} className="font-semibold text-emerald-300 underline underline-offset-2">
+                          {t.hoursReset}
+                        </button>
+                      </>
+                    )}
+                  </span>
+                </label>
               </div>
-            ) : null}
-          </div>
+            </fieldset>
+
+            <fieldset className="mt-6">
+              <legend className={labelClass}>{t.delivery}</legend>
+              <div className="mt-2 grid gap-2 sm:grid-cols-2">
+                {(["afhaling", "verzending"] as DeliveryType[]).map((d) => (
+                  <label key={d} className={toggleClass(delivery === d)}>
+                    <input type="radio" name="estimator-delivery" value={d} checked={delivery === d} onChange={() => setDelivery(d)} className="sr-only" />
+                    {d === "afhaling" ? t.pickup : t.shipping}
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+          </section>
         ) : null}
 
-        <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900/85">
-            <div className="text-xs uppercase tracking-wide text-slate-500">{copy.cards.print}</div>
-            <div className="mt-1 text-2xl font-semibold text-slate-900">{printBreakdown ? euro.format(printSubtotal) : "-"}</div>
-            <div className="text-xs text-slate-500">
-              {printBreakdown
-                ? `${printBreakdown.input.quantity} ${copy.cards.pieces} / ${materialLabel(material)}`
-                : copy.cards.notSelected}
+        {includeScan ? (
+          <section className="mt-8 border-t border-slate-800 pt-6" aria-label={t.scanTitle}>
+            <h4 className="text-base font-semibold text-white">{t.scanTitle}</h4>
+            <div className="mt-4 grid gap-5 sm:grid-cols-[minmax(0,1fr)_auto]">
+              <label className="block">
+                <span className={labelClass}>{t.scanType}</span>
+                <select className={fieldClass} value={scanKey} onChange={(e) => setScanKey(e.target.value)}>
+                  {SCAN_PRICES.map((item) => (
+                    <option key={item.key} value={item.key}>
+                      {isEn ? item.labelEn : item.labelNl}: {euro.format(item.price)}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <div>
+                <span className={labelClass}>{t.scanQty}</span>
+                <NumberStepper label={t.scanQty} value={scanQty} min={1} max={50} step={1} onChange={setScanQty} lessLabel={t.less} moreLabel={t.more} />
+              </div>
             </div>
-          </div>
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900/85">
-            <div className="text-xs uppercase tracking-wide text-slate-500">{copy.cards.scan}</div>
-            <div className="mt-1 text-2xl font-semibold text-slate-900">{includeScan ? euro.format(scanCost) : "-"}</div>
-            <div className="text-xs text-slate-500">{includeScan ? selectedScanLabel : copy.cards.notSelected}</div>
-            {includeScan ? <div className="mt-2 text-xs font-semibold text-cyan-800">{copy.summary.oneTime}</div> : null}
-          </div>
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900/85">
-            <div className="text-xs uppercase tracking-wide text-slate-500">{copy.cards.modeling}</div>
-            <div className="mt-1 text-2xl font-semibold text-slate-900">{includeModeling ? euro.format(modelingCost) : "-"}</div>
-            <div className="text-xs text-slate-500">
-              {includeModeling
-                ? `${Math.max(0.25, modelHours)} ${copy.summary.hours} x EUR ${DEFAULT_DESIGN_RATE_EUR_PER_HOUR}`
-                : copy.cards.notSelected}
-            </div>
-            {includeModeling ? <div className="mt-2 text-xs font-semibold text-amber-800">{copy.summary.oneTime}</div> : null}
-          </div>
-        </div>
+          </section>
+        ) : null}
 
-        <div className="mt-6 rounded-3xl border border-slate-900 bg-slate-950 p-4 text-white shadow-[0_18px_45px_rgba(15,23,42,0.22)] sm:flex sm:items-center sm:justify-between sm:gap-4">
-          <div>
-            <p className="text-sm font-semibold">{copy.cta.nextStep}</p>
-            <p className="mt-1 text-xs text-slate-300">{copy.cta.note}</p>
-          </div>
-          <Link
-            href={contactHref}
-            className="mt-4 inline-flex w-full items-center justify-center rounded-2xl bg-emerald-400 px-5 py-3 text-sm font-bold text-slate-950 shadow-sm transition hover:-translate-y-0.5 hover:bg-emerald-300 sm:mt-0 sm:w-auto"
-          >
-            {copy.cta.send}
-          </Link>
-        </div>
+        {includeDesign ? (
+          <section className="mt-8 border-t border-slate-800 pt-6" aria-label={t.designTitle}>
+            <h4 className="text-base font-semibold text-white">{t.designTitle}</h4>
+            <div className="mt-4">
+              <span className={labelClass}>{t.designHours}</span>
+              <NumberStepper
+                label={t.designHours}
+                value={designHours}
+                min={0.5}
+                max={40}
+                step={0.5}
+                onChange={setDesignHours}
+                lessLabel={t.less}
+                moreLabel={t.more}
+                format={formatHours}
+              />
+              <span className="mt-2 block text-xs text-slate-400">{t.designHint}</span>
+            </div>
+          </section>
+        ) : null}
       </div>
+
+      <aside className="rounded-3xl border border-emerald-300/40 bg-[linear-gradient(160deg,rgba(16,185,129,0.14),rgba(15,23,42,0.9)_55%)] p-6 lg:sticky lg:top-28">
+        <h4 className="text-sm font-semibold text-emerald-300">{t.summary}</h4>
+        {nothingSelected ? (
+          <p className="mt-4 text-sm text-slate-300">{t.nothing}</p>
+        ) : (
+          <>
+            <dl className="mt-4 space-y-3 text-sm">
+              {includePrint && print ? (
+                <div>
+                  <div className="flex items-baseline justify-between gap-3">
+                    <dt className="text-slate-300">{t.lines.print(quantity, material.label)}</dt>
+                    <dd className="shrink-0 font-semibold tabular-nums text-white">{euro.format(printLine)}</dd>
+                  </div>
+                  <p className="mt-0.5 text-xs text-slate-400">
+                    {quantity > 1 ? t.lines.perPiece(euro.format(floorPublicEur(printLine / quantity))) : null}
+                    {quantity > 1 && print.dryingCostEur > 0 ? ", " : null}
+                    {print.dryingCostEur > 0 ? t.lines.drying : null}
+                  </p>
+                </div>
+              ) : null}
+              {includeScan && scan ? (
+                <div className="flex items-baseline justify-between gap-3">
+                  <dt className="text-slate-300">{t.lines.scan(scanQty, isEn ? scan.labelEn : scan.labelNl)}</dt>
+                  <dd className="shrink-0 font-semibold tabular-nums text-white">{euro.format(scanLine)}</dd>
+                </div>
+              ) : null}
+              {includeDesign ? (
+                <div className="flex items-baseline justify-between gap-3">
+                  <dt className="text-slate-300">{t.lines.design(formatHours(designHours))}</dt>
+                  <dd className="shrink-0 font-semibold tabular-nums text-white">{euro.format(designLine)}</dd>
+                </div>
+              ) : null}
+              {includePrint ? (
+                <div className="flex items-baseline justify-between gap-3">
+                  <dt className="text-slate-300">{delivery === "afhaling" ? t.lines.pickup : t.lines.shipping}</dt>
+                  <dd className="shrink-0 font-semibold tabular-nums text-white">
+                    {delivery === "afhaling" ? t.lines.free : shippingLine === null ? t.lines.onRequest : euro.format(shippingLine)}
+                  </dd>
+                </div>
+              ) : null}
+            </dl>
+            <div className="mt-5 flex items-baseline justify-between gap-3 border-t border-slate-700 pt-4">
+              <span className="text-sm font-semibold text-white">{t.total}</span>
+              <span className="text-4xl font-bold tracking-tight tabular-nums text-white">{euro.format(total)}</span>
+            </div>
+            <p className="mt-2 text-xs text-slate-400">{t.note}</p>
+            <a
+              href={quoteHref}
+              onClick={() => trackEvent({ action: "cta_click", category: "pricing_estimator", label: "quote" })}
+              className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-300 px-4 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300"
+            >
+              {t.cta}
+              <ArrowRight aria-hidden className="h-4 w-4" />
+            </a>
+          </>
+        )}
+      </aside>
     </div>
   )
 }
 
-function materialLabel(key: MaterialKey): string {
-  return MATERIALS[key]?.name ?? key
+function NumberStepper({
+  label,
+  value,
+  min,
+  max,
+  step,
+  onChange,
+  lessLabel,
+  moreLabel,
+  format,
+}: {
+  label: string
+  value: number
+  min: number
+  max: number
+  step: number
+  onChange: (value: number) => void
+  lessLabel: string
+  moreLabel: string
+  format?: (value: number) => string
+}) {
+  const clamp = (v: number) => Math.min(max, Math.max(min, v))
+  return (
+    <span className="mt-2 inline-flex items-center rounded-xl border border-slate-700 bg-slate-900">
+      <button
+        type="button"
+        onClick={() => onChange(clamp(value - step))}
+        aria-label={lessLabel}
+        className="grid h-11 w-11 place-items-center rounded-l-xl text-slate-200 transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300"
+      >
+        <Minus aria-hidden className="h-4 w-4" />
+      </button>
+      {format ? (
+        <output aria-live="polite" aria-label={label} className="min-w-[4rem] px-2 text-center text-base font-semibold tabular-nums text-white">
+          {format(value)}
+        </output>
+      ) : (
+        <input
+          type="number"
+          inputMode="numeric"
+          min={min}
+          max={max}
+          value={value}
+          aria-label={label}
+          onChange={(e) => onChange(clamp(Number(e.target.value) || min))}
+          className="h-11 w-16 border-x border-slate-700 bg-transparent text-center text-base font-semibold tabular-nums text-white focus:outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+        />
+      )}
+      <button
+        type="button"
+        onClick={() => onChange(clamp(value + step))}
+        aria-label={moreLabel}
+        className="grid h-11 w-11 place-items-center rounded-r-xl text-slate-200 transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300"
+      >
+        <Plus aria-hidden className="h-4 w-4" />
+      </button>
+    </span>
+  )
 }

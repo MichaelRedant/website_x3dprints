@@ -1,25 +1,23 @@
 import { describe, expect, it } from "vitest";
 
+import { X3D_FILAMENT_PRICE_EUR_PER_KG } from "./material-prices";
+import { buildPublicRates, estimateProductionTime } from "./pricing";
 import {
-  calcUnitPrice,
   calculateDeliveryCost,
   calculateDryingCost,
-  calculatePrintJob,
-  estimateProductionTime,
+  calculatePublicPrintJob,
   floorPublicEur,
-} from "./pricing";
+  publicUnitPrice,
+} from "./pricing-public";
+
+const rates = buildPublicRates();
 
 describe("pricing", () => {
-  it("keeps the public estimate above the internal production calculation", () => {
-    const breakdown = calculatePrintJob({
-      filamentWeightGrams: 100,
-      printingTimeHours: 1,
-      material: "PLA_BASIC",
-      quantity: 1,
-      profitFactor: 3,
-    });
-
-    expect(breakdown.unitSellPriceEur / breakdown.unitBaseCostEur).toBeCloseTo(3.3, 2);
+  it("turns purchase prices into sell rates: material x1.2, x3 margin, x1.1 public buffer", () => {
+    const perGram = (X3D_FILAMENT_PRICE_EUR_PER_KG.PLA_BASIC / 1000) * 1.2 * 3 * 1.1;
+    expect(rates.materialEurPerGram.PLA_BASIC).toBeCloseTo(perGram, 10);
+    // 2 kW x EUR 0.23/kWh x 3 x 1.1
+    expect(rates.printHourEur).toBeCloseTo(2 * 0.23 * 3 * 1.1, 10);
   });
 
   it("charges shipping per weight band and nothing for pickup", () => {
@@ -31,52 +29,36 @@ describe("pricing", () => {
     expect(calculateDeliveryCost("verzending", 10001)).toBeNull();
   });
 
-  it("never goes below the minimum per print job", () => {
-    const breakdown = calculatePrintJob({
-      filamentWeightGrams: 5,
-      printingTimeHours: 0.5,
-      material: "PLA_BASIC",
-      quantity: 1,
-    });
+  it("adds drying on top of the print price, outside margin and buffer", () => {
+    const result = calculatePublicPrintJob({ grams: 100, hours: 1, material: "PC", quantity: 10 }, rates);
+    const printOnly = (100 * rates.materialEurPerGram.PC + rates.printHourEur) * 10;
 
-    expect(breakdown.printsSubtotalEur).toBe(5);
-    expect(breakdown.totalEur).toBe(5);
+    expect(calculateDryingCost("PC", 10, rates)).toBeCloseTo(5.5, 2);
+    expect(result.printsSubtotalEur).toBeCloseTo(printOnly + 5.5, 6);
+  });
+
+  it("dries ASA and not PLA", () => {
+    expect(calculateDryingCost("ASA", 1, rates)).toBeGreaterThan(0);
+    expect(calculateDryingCost("PLA_MATTE", 1, rates)).toBe(0);
+  });
+
+  it("never goes below the minimum per print job", () => {
+    const result = calculatePublicPrintJob({ grams: 5, hours: 0.5, material: "PLA_BASIC", quantity: 1 }, rates);
+    expect(result.printsSubtotalEur).toBe(5);
+    expect(result.totalEur).toBe(5);
+  });
+
+  it("uses EUR 45 per hour for design and CAD", () => {
+    const result = calculatePublicPrintJob({ grams: 100, hours: 1, material: "PLA_BASIC", quantity: 1, designHours: 2 }, rates);
+    expect(result.designCostEur).toBe(90);
   });
 
   it("rounds public totals down to whole euros", () => {
     expect(floorPublicEur(8.99)).toBe(8);
     expect(floorPublicEur(0.87)).toBe(0.8);
-    expect(calcUnitPrice("Small", "PLA_MATTE")).toBe(6);
-    expect(calcUnitPrice("Medium", "PLA_MATTE")).toBe(25);
-    expect(calcUnitPrice("Large", "PLA_MATTE")).toBe(62);
-  });
-
-  it("adds drying on top of the print price, outside margin and buffer", () => {
-    const breakdown = calculatePrintJob({
-      filamentWeightGrams: 100,
-      printingTimeHours: 1,
-      material: "PC",
-      quantity: 10,
-      profitFactor: 3,
-    });
-
-    expect(calculateDryingCost("PC", 10)).toBeCloseTo(5.5, 2);
-    expect(breakdown.printsSubtotalEur).toBeCloseTo(
-      breakdown.unitBaseCostEur * 10 * 3 * 1.1 + breakdown.dryingCostEur,
-      1,
-    );
-  });
-
-  it("uses EUR 45 per hour for design and CAD by default", () => {
-    const breakdown = calculatePrintJob({
-      filamentWeightGrams: 100,
-      printingTimeHours: 1,
-      material: "PLA_BASIC",
-      quantity: 1,
-      designHours: 2,
-    });
-
-    expect(breakdown.designCostEur).toBe(90);
+    expect(publicUnitPrice("Small", "PLA_MATTE", rates)).toBe(6);
+    expect(publicUnitPrice("Medium", "PLA_MATTE", rates)).toBe(25);
+    expect(publicUnitPrice("Large", "PLA_MATTE", rates)).toBe(62);
   });
 });
 

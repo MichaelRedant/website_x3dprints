@@ -6,7 +6,7 @@
     "dev": "node scripts/run-next-with-distdir.mjs dev .next-dev",
     "clean": "node scripts/clean-build-artifacts.mjs",
     "build": "next build",
-    "postbuild": "node scripts/postbuild-html-lang.mjs && node scripts/write-apache-htaccess.mjs",
+    "postbuild": "node scripts/postbuild-html-lang.mjs && node scripts/write-apache-htaccess.mjs && node scripts/check-no-cost-leak.mjs",
     "start": "npm run preview",
     "preview": "npx serve -s out -l 3000",
     "share:model": "node scripts/create-model-preview.mjs",
