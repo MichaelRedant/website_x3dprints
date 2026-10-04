@@ -51,7 +51,7 @@ describe("pricing", () => {
     expect(calcUnitPrice("Large", "PLA_MATTE")).toBe(74);
   });
 
-  it("includes drying in direct print cost before the profit factor", () => {
+  it("adds drying on top of the print price, outside margin and buffer", () => {
     const breakdown = calculatePrintJob({
       filamentWeightGrams: 100,
       printingTimeHours: 1,
@@ -62,7 +62,7 @@ describe("pricing", () => {
 
     expect(calculateDryingCost("PC", 10)).toBeCloseTo(5.5, 2);
     expect(breakdown.printsSubtotalEur).toBeCloseTo(
-      (breakdown.unitBaseCostEur * 10 + breakdown.dryingCostEur) * 3 * 1.1,
+      breakdown.unitBaseCostEur * 10 * 3 * 1.1 + breakdown.dryingCostEur,
       1,
     );
   });

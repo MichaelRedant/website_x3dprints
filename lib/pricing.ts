@@ -30,6 +30,7 @@ export type DeliveryType = "afhaling" | "verzending";
 
 const BASE_PRICE_FALLBACK_EUR_PER_KG = X3D_FILAMENT_PRICE_EUR_PER_KG.PLA_BASIC;
 
+// Alles wat vooraf gedroogd moet worden krijgt de droogtoeslag (ASA en vezelmaterialen: zie price-guide).
 export const DRYING_FILAMENTS = new Set<MaterialKey>(["TPU", "PLA_WOOD", "PETG", "PC", "PC_FR"]);
 export const DRYING_FIXED_SURCHARGE_EUR = 5;
 export const DRYING_COST_PER_PRINT_EUR = 0.05;
@@ -147,11 +148,11 @@ export function calculatePrintJob(job: PriceInput): PriceBreakdown {
       : job.requiresDrying
         ? DRYING_FIXED_SURCHARGE_EUR + DRYING_COST_PER_PRINT_EUR * job.quantity
         : 0;
-  const totalDirectPrintCostEur = unitBaseCostEur * job.quantity + dryingCostEur;
-  const printsSubtotalEur = Math.max(
-    totalDirectPrintCostEur * profitFactor * publicEstimateBuffer,
-    MINIMUM_PRINT_JOB_EUR,
-  );
+  // Droogtoeslag komt bovenop de printprijs en gaat niet mee in marge of buffer.
+  const totalDirectPrintCostEur = unitBaseCostEur * job.quantity;
+  const printsSubtotalEur =
+    Math.max(totalDirectPrintCostEur * profitFactor * publicEstimateBuffer, MINIMUM_PRINT_JOB_EUR) +
+    dryingCostEur;
   const unitSellPriceEur = printsSubtotalEur / job.quantity;
   const designCostEur = (job.designHours ?? 0) * designRate;
   const extraAllowancesEur = job.extraAllowancesEur ?? 0;

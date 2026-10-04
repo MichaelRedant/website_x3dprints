@@ -39,13 +39,13 @@ const GUIDE_MATERIALS = {
     label: "ASA",
     materialKey: "PLA_BASIC",
     pricePerKg: GUIDE_ONLY_FILAMENT_PRICE_EUR_PER_KG.ASA,
-    requiresDrying: false,
+    requiresDrying: true,
   },
   ASA_CF: {
     label: "ASA-CF",
     materialKey: "PLA_BASIC",
     pricePerKg: GUIDE_ONLY_FILAMENT_PRICE_EUR_PER_KG.ASA_CF,
-    requiresDrying: false,
+    requiresDrying: true,
   },
   PAHT_CF: {
     label: "PAHT-CF",
