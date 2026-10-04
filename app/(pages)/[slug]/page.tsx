@@ -422,12 +422,12 @@ export default async function Page(
   const fallbackFaqItems = [
     { q: `Welke materialen kan ik laten 3D printen in ${loc.city}?`, aHtml: `Standaard <strong>PLA Matte</strong>, plus <strong>PETG</strong> en <strong>TPU</strong>. Op aanvraag: ABS/ASA, Nylon of PA-CF. Bekijk <a href="/materials">materialen & richtlijnen</a>.` },
     { q: `Wat is de levertijd voor 3D printen in ${loc.city}?`, aHtml: `Meestal <strong>enkele werkdagen</strong>, afhankelijk van complexiteit en oplage. <a href="/contact">Spoed</a> mogelijk in overleg.` },
-    { q: "Hoe worden de prijzen berekend?", aHtml: `Transparant: formaat (<em>Small/Medium/Large/XL</em>), materiaaltoeslag, nabehandeling en aantallen. Zie <a href="/pricing">Prijzen</a>.` },
+    { q: "Hoe worden de prijzen berekend?", aHtml: `Op basis van materiaal, gewicht, printtijd en aantallen. Ontwerp en 3D scan komen er apart bij. Bereken een richtprijs op <a href="/pricing">Prijzen</a>.` },
     { q: "Wat zijn de maximale bouwvolumes?", aHtml: `Tot <strong>35 x 32 x 35 cm</strong> per onderdeel. Grotere onderdelen splitsen we in segmenten met nette passing.` },
     { q: "Welke bestandsformaten accepteer je?", aHtml: `<strong>STL</strong> of <strong>STEP</strong>. Voeg toelichting toe: gewenste sterkte, zichtzijde, afwerking, aantallen.` },
     { q: "Welke toleranties haal je typisch?", aHtml: `Richtwaarde <strong>+/-0,2 mm</strong> bij PLA/PETG, afhankelijk van geometrie en orientatie. Functionele passing? Vermeld dit in je aanvraag.` },
     { q: "Bieden jullie ontwerp op maat of aanpassingen?", aHtml: `Ja. CAD-aanpassingen en ontwerp op maat aan <strong>EUR 45/uur</strong>. Vraag een voorstel via <a href="/contact">contact</a>.` },
-    { q: `Kan ik afhalen i.p.v. verzending in ${loc.city}?`, aHtml: `Afhalen kan op afspraak. Verzending: <strong>&lt; EUR 50 = EUR 7</strong>, <strong>EUR 50-100 = EUR 5</strong>, <strong>&gt; EUR 100 = gratis</strong>. Zie <a href="/pricing">Prijzen</a>.` },
+    { q: `Kan ik afhalen i.p.v. verzending in ${loc.city}?`, aHtml: `Ja. Afhalen is gratis, 24 op 7 in de beveiligde afhaalbox in Herzele. Verzending kost vanaf <strong>EUR 7,50</strong>, volgens het gewicht van je pakket. Zie <a href="/pricing">Prijzen</a>.` },
   ].map((it) => ({ ...it, aText: stripTags(it.aHtml) }))
 
   const faqItems = faqFromMarkdown.length

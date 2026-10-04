@@ -137,7 +137,7 @@ export default async function LocationEnPage({ params }: { params: Promise<{ slu
   const faqItems = [
     { q: `Which materials can I order in ${loc.city}?`, a: "Standard: PLA Matte, PETG and TPU. On request: ABS/ASA, Nylon or PA-CF. See the materials overview." },
     { q: "What are the usual lead times?", a: "Typically a few working days after approval. Rush possible on request; shipping or pickup from Herzele." },
-    { q: "How do you price a print?", a: "Transparent: size (Small/Medium/Large/XL), material surcharge, finishing and quantity. See the pricing page." },
+    { q: "How do you price a print?", a: "Based on material, weight, print time and quantity. Design and 3D scanning are quoted separately. Get a guide price on the pricing page." },
     { q: "What build volume can you handle?", a: "Up to 35 x 32 x 35 cm per part. Larger parts are split into segments with clean joints." },
     { q: "Which file formats do you accept?", a: "STL or STEP. Add context: strength, visible face, finish, quantities." },
   ]

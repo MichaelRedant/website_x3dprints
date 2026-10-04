@@ -8,7 +8,7 @@ import PriceEstimator from "@/components/PriceEstimator"
 import LeadTimeStatus from "@/components/LeadTimeStatus"
 import QuickContactActions from "@/components/QuickContactActions"
 import ContentTableOfContents from "@/components/ContentTableOfContents"
-import { GRAMS_PER_TIER, calcUnitPrice, type Quality, type Tier } from "@/lib/pricing"
+import { GRAMS_PER_TIER, SHIPPING_RATES_EUR, calcUnitPrice, type Quality, type Tier } from "@/lib/pricing"
 import type { MaterialKey } from "@/lib/materials"
 import FaqPromo from "@/components/FaqPromo"
 import ReadMoreLinks from "@/components/ReadMoreLinks"
@@ -87,6 +87,10 @@ void EN_METADATA
 
 export const metadata: Metadata = NL_METADATA
 
+// Publieke prijzen zijn naar beneden afgerond: hele euro's tonen zonder decimalen.
+const formatEurNl = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(2).replace(".", ","))
+const formatEurEn = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(2))
+
 const PRICING_COPY_NL = {
   hero: {
     title: "Prijzen 3D printen en 3D scannen",
@@ -102,9 +106,9 @@ const PRICING_COPY_NL = {
   },
   tiers: {
     baseMaterialLabel: "PLA Matte (standaard)",
-    priceLabel: (price: number) => `EUR ${price.toFixed(2)} / stuk`,
-    summary:
-      "Richtprijzen bij standaard kwaliteit: Small ~ EUR 5, Medium ~ EUR 20, Large ~ EUR 49. Grotere of zwaardere modellen vergen meer materiaal en tijd.",
+    priceLabel: (price: number) => `EUR ${formatEurNl(price)} / stuk`,
+    summary: (small: number, medium: number, large: number) =>
+      `Richtprijzen bij standaard kwaliteit: Small ~ EUR ${formatEurNl(small)}, Medium ~ EUR ${formatEurNl(medium)}, Large ~ EUR ${formatEurNl(large)}. Grotere of zwaardere modellen vragen meer materiaal en printtijd.`,
     note: "Exacte prijs volgt na modelanalyse; we stemmen levering en afwerking af op jouw use-case.",
     items: [
       {
@@ -126,39 +130,34 @@ const PRICING_COPY_NL = {
   },
   mods: {
     material: {
-      title: "Materiaal-opslagen",
+      title: "Wat het materiaal doet met de prijs",
       items: [
-        { label: "PLA+ / specials (Silk, Wood, Marble, Translucent)", mod: "+20%" },
-        { label: "PETG (incl. droogbehandeling)", mod: "+20%" },
-        { label: "TPU (incl. droogbehandeling)", mod: "+30%" },
+        { label: "PLA (Matte, Basic, Silk, Wood, Marble ...), PETG, ABS, ASA", mod: "Basisprijs" },
+        { label: "TPU (flexibel), PC", mod: "Hogere materiaalprijs" },
+        { label: "Vezelversterkt (CF/GF) en nylon", mod: "Hoogste materiaalprijs" },
       ],
-      note: "PETG/TPU worden vooraf gedroogd voor optimale kwaliteit. Deze behandeling is meegerekend.",
+      note: "Elk materiaal heeft zijn eigen prijs per kilo, en de calculator rekent daar rechtstreeks mee. Materiaal dat vooraf gedroogd moet worden (PETG, TPU, PC, houtlook) krijgt een kleine droogtoeslag per opdracht.",
     },
     quality: {
       title: "Kwaliteit (layerhoogte)",
       items: [
-        { label: "Standaard layerhoogte (0,2-0,28 mm)", mod: "0%" },
-        { label: "Fijn (~ 0,16 mm)", mod: "+15%" },
-        { label: "Ultra (~ 0,12 mm)", mod: "+25%" },
+        { label: "Standaard layerhoogte (0,2-0,28 mm)", mod: "Basis" },
+        { label: "Fijn (~ 0,16 mm)", mod: "Langere printtijd" },
+        { label: "Ultra (~ 0,12 mm)", mod: "Langste printtijd" },
       ],
-      note: "Kies standaard voor functionele prints. Fijner voor visueel werk of strakkere rondingen.",
+      note: "Een fijnere laag print trager en kost dus iets meer. Kies standaard voor functionele prints, fijner voor visueel werk of strakkere rondingen.",
     },
   },
   shipping: {
-    title: "Verzending & levering",
+    title: "Verzending en afhalen",
     items: [
-      { k: "Persoonlijke levering", v: "Elektrische wagen, veilig voor grote of breekbare prints. Zie zones hieronder." },
-      { k: "Afhalen", v: "Gratis (regio Herzele/Gent, in overleg)" },
-      { k: "Pakketdienst", v: "Op aanvraag via pakketdienst, afhankelijk van formaat/gewicht." },
+      { k: "Afhalen", v: "Gratis, 24 op 7 in de beveiligde afhaalbox in Herzele." },
+      { k: "Verzending", v: "Vaste prijs volgens het gewicht van je pakket." },
     ],
-    deliveryTitle: "Persoonlijke levering (EV)",
-    zones: [
-      { k: "Zone 1 tot 25 km (EV)", v: "Standaard 48-72u: EUR 15" },
-      { k: "Zone 2  25-50 km (EV)", v: "Standaard: EUR 30" },
-      { k: "Zone 3  50-75 km (EV)", v: "Standaard: EUR 45" },
-      { k: "Verder dan 75 km", v: "Maatwerkprijs of pakketdienst, in overleg" },
-      { k: "Vertrekpunt", v: "Afstanden gerekend vanaf Herzele (heen en terug)" },
-    ],
+    deliveryTitle: "Verzendkosten volgens gewicht",
+    zoneLabel: (fromKg: number, toKg: number) => (fromKg === 0 ? `Tot ${toKg} kg` : `${fromKg} tot ${toKg} kg`),
+    zoneHeavy: { k: "Zwaarder dan 10 kg", v: "Op aanvraag" },
+    formatEur: (n: number) => `EUR ${formatEurNl(n)}`,
   },
   design: {
     title: "Ontwerpservice en CAD",
@@ -225,9 +224,9 @@ const PRICING_COPY_EN = {
   },
   tiers: {
     baseMaterialLabel: "PLA Matte (standard)",
-    priceLabel: (price: number) => `EUR ${price.toFixed(2)} / piece`,
-    summary:
-      "Guideline prices at standard quality: Small ~ EUR 5, Medium ~ EUR 20, Large ~ EUR 49. Larger or heavier models require more material and time.",
+    priceLabel: (price: number) => `EUR ${formatEurEn(price)} / piece`,
+    summary: (small: number, medium: number, large: number) =>
+      `Guideline prices at standard quality: Small ~ EUR ${formatEurEn(small)}, Medium ~ EUR ${formatEurEn(medium)}, Large ~ EUR ${formatEurEn(large)}. Larger or heavier models need more material and print time.`,
     note: "Final pricing follows after a model check; we align delivery and finish with your use case.",
     items: [
       {
@@ -249,39 +248,34 @@ const PRICING_COPY_EN = {
   },
   mods: {
     material: {
-      title: "Material surcharges",
+      title: "How material affects the price",
       items: [
-        { label: "PLA+ / specials (Silk, Wood, Marble, Translucent)", mod: "+20%" },
-        { label: "PETG (incl. drying)", mod: "+20%" },
-        { label: "TPU (incl. drying)", mod: "+30%" },
+        { label: "PLA (Matte, Basic, Silk, Wood, Marble ...), PETG, ABS, ASA", mod: "Base price" },
+        { label: "TPU (flexible), PC", mod: "Higher material price" },
+        { label: "Fibre reinforced (CF/GF) and nylon", mod: "Highest material price" },
       ],
-      note: "PETG/TPU are dried before printing for optimal quality. This is included.",
+      note: "Every material has its own price per kilo, and the calculator uses it directly. Materials that need drying first (PETG, TPU, PC, wood fill) get a small drying surcharge per order.",
     },
     quality: {
       title: "Quality (layer height)",
       items: [
-        { label: "Standard layer height (0.2-0.28 mm)", mod: "0%" },
-        { label: "Fine (~ 0.16 mm)", mod: "+15%" },
-        { label: "Ultra (~ 0.12 mm)", mod: "+25%" },
+        { label: "Standard layer height (0.2-0.28 mm)", mod: "Base" },
+        { label: "Fine (~ 0.16 mm)", mod: "Longer print time" },
+        { label: "Ultra (~ 0.12 mm)", mod: "Longest print time" },
       ],
-      note: "Choose standard for functional prints. Finer works well for visual work or smoother curves.",
+      note: "A finer layer prints slower, so it costs a little more. Choose standard for functional prints and finer for visual work or smoother curves.",
     },
   },
   shipping: {
-    title: "Shipping and delivery",
+    title: "Shipping and pickup",
     items: [
-      { k: "Personal delivery", v: "Electric vehicle, safe for large or fragile prints. See zones below." },
-      { k: "Pickup", v: "Free (Herzele/Ghent region, by arrangement)" },
-      { k: "Parcel service", v: "On request via carrier, depending on size and weight." },
+      { k: "Pickup", v: "Free, 24/7 from the secure pickup box in Herzele." },
+      { k: "Shipping", v: "Fixed price based on the weight of your parcel." },
     ],
-    deliveryTitle: "Personal delivery (EV)",
-    zones: [
-      { k: "Zone 1 up to 25 km (EV)", v: "Standard 48-72h: EUR 15" },
-      { k: "Zone 2  25-50 km (EV)", v: "Standard: EUR 30" },
-      { k: "Zone 3  50-75 km (EV)", v: "Standard: EUR 45" },
-      { k: "Beyond 75 km", v: "Custom quote or carrier shipping, by arrangement" },
-      { k: "Starting point", v: "Distances calculated from Herzele (round trip)" },
-    ],
+    deliveryTitle: "Shipping costs by weight",
+    zoneLabel: (fromKg: number, toKg: number) => (fromKg === 0 ? `Up to ${toKg} kg` : `${fromKg} to ${toKg} kg`),
+    zoneHeavy: { k: "Heavier than 10 kg", v: "On request" },
+    formatEur: (n: number) => `EUR ${formatEurEn(n)}`,
   },
   design: {
     title: "Design services and CAD",
@@ -380,7 +374,7 @@ export default function Page(props: unknown) {
         { label: "All3DP over kostfactoren bij FDM", url: "https://all3dp.com/2/3d-printing-cost-calculator-great-web-tools/" },
         { label: "Bambu Lab filamentoverzicht", url: "https://wiki.bambulab.com/en/filament-acc/filament/overview" },
       ]
-  const lastUpdatedLabel = isEn ? "Last updated: February 6, 2026" : "Laatst bijgewerkt: 6 februari 2026"
+  const lastUpdatedLabel = isEn ? "Last updated: October 4, 2026" : "Laatst bijgewerkt: 4 oktober 2026"
 
   const baseMaterial: MaterialKey = "PLA_MATTE"
   const baseQuality: Quality = "Standaard"
@@ -396,6 +390,14 @@ export default function Page(props: unknown) {
       priceLabel: copy.tiers.priceLabel(price),
     }
   })
+  const tiersSummary = copy.tiers.summary(tiers[0].price, tiers[1].price, tiers[2].price)
+  const shippingZones = [
+    ...SHIPPING_RATES_EUR.map((rate, i) => ({
+      k: copy.shipping.zoneLabel(i === 0 ? 0 : SHIPPING_RATES_EUR[i - 1].maxGrams / 1000, rate.maxGrams / 1000),
+      v: copy.shipping.formatEur(rate.priceEur),
+    })),
+    copy.shipping.zoneHeavy,
+  ]
   const scanPriceRows = SCAN_PRICES.map((item) => ({
     ...item,
     label: isEn ? item.labelEn : item.labelNl,
@@ -452,7 +454,7 @@ export default function Page(props: unknown) {
 
   const pricingOffers: SchemaOfferInput[] = tiers.map((tier) => ({
     serviceName: `3D print - ${tier.name}`,
-    price: `EUR ${tier.price.toFixed(2)}`,
+    price: `EUR ${tier.price}`,
     description: `${tier.size} · ${tier.base}`,
     url: pageUrl,
   }))
@@ -662,7 +664,7 @@ export default function Page(props: unknown) {
             ))}
           </div>
           <div className="mt-4 space-y-1 text-xs text-slate-600">
-            <p>{copy.tiers.summary}</p>
+            <p>{tiersSummary}</p>
             <p>{copy.tiers.note}</p>
           </div>
           <div className="mt-6 overflow-x-auto rounded-2xl border border-slate-200/70 bg-white/80">
@@ -838,7 +840,7 @@ export default function Page(props: unknown) {
                 <div className="mt-4 rounded-xl border border-dashed border-teal-200 bg-white/60 p-4">
                   <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">{copy.shipping.deliveryTitle}</p>
                   <div className="mt-2 grid gap-2 sm:grid-cols-2">
-                    {copy.shipping.zones.map((z) => (
+                    {shippingZones.map((z) => (
                       <div key={z.k} className="rounded-lg border border-white/60 bg-white/80 p-3 shadow-sm">
                         <div className="text-sm font-semibold text-slate-800">{z.k}</div>
                         <div className="mt-1 text-sm text-slate-700">{z.v}</div>

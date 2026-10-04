@@ -8,6 +8,7 @@ import {
   GRAMS_PER_TIER,
   PRINT_TIME_HOURS_PER_TIER,
   calculatePrintJob,
+  floorPublicEur,
   type Quality,
   type Tier,
 } from "@/lib/pricing"
@@ -148,7 +149,7 @@ export default function PriceEstimator({ locale = "nl" }: Props) {
           nextStep: "Ready for a precise quote?",
           send: "Send this estimate",
           note:
-            "Guideline price excl. VAT and delivery. Final quote after model, object or scan review.",
+            "Guide price, excluding delivery. No VAT charged (Belgian small business scheme). Final quote after reviewing your model, object or scan request.",
         },
       }
     : {
@@ -208,7 +209,7 @@ export default function PriceEstimator({ locale = "nl" }: Props) {
         cta: {
           nextStep: "Klaar voor een exacte offerte?",
           send: "Verstuur deze inschatting",
-          note: "Richtprijs excl. btw en levering. Finale offerte na controle van model, object of scanvraag.",
+          note: "Richtprijs, zonder levering. Btw niet toegepast (kleineondernemersregeling). De definitieve prijs volgt na controle van je model, object of scanvraag.",
         },
       }
 
@@ -217,7 +218,8 @@ export default function PriceEstimator({ locale = "nl" }: Props) {
       new Intl.NumberFormat(isEn ? "en-BE" : "nl-BE", {
         style: "currency",
         currency: "EUR",
-        minimumFractionDigits: 2,
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 2,
       }),
     [isEn],
   )
@@ -265,10 +267,12 @@ export default function PriceEstimator({ locale = "nl" }: Props) {
   const selectedScan = SCAN_PRICES.find((item) => item.key === scanKey) ?? SCAN_PRICES[0]
   const selectedScanLabel = selectedScan ? (isEn ? selectedScan.labelEn : selectedScan.labelNl) : ""
   const scanCost = includeScan && selectedScan ? selectedScan.price * Math.max(1, scanQty) : 0
-  const modelingCost = includeModeling ? Math.max(0.25, modelHours) * DEFAULT_DESIGN_RATE_EUR_PER_HOUR : 0
+  const modelingCost = includeModeling
+    ? floorPublicEur(Math.max(0.25, modelHours) * DEFAULT_DESIGN_RATE_EUR_PER_HOUR)
+    : 0
   const printSubtotal = printBreakdown?.totalEur ?? 0
-  const projectTotal = printSubtotal + scanCost + modelingCost
-  const projectPerPiece = includePrint ? projectTotal / Math.max(1, qty) : projectTotal
+  const projectTotal = floorPublicEur(printSubtotal + scanCost + modelingCost)
+  const projectPerPiece = includePrint ? floorPublicEur(projectTotal / Math.max(1, qty)) : projectTotal
 
   const setRoute = (route: "print" | "scan" | "model", active: boolean) => {
     const activeCount = Number(includePrint) + Number(includeScan) + Number(includeModeling)
@@ -288,24 +292,24 @@ export default function PriceEstimator({ locale = "nl" }: Props) {
   const quoteSummary = useMemo(() => {
     const parts = [
       `${copy.summary.route}: ${routeSummary}`,
-      `${copy.summary.total}: EUR ${projectTotal.toFixed(2)}`,
+      `${copy.summary.total}: EUR ${projectTotal}`,
     ]
     if (includePrint && printBreakdown) {
       parts.push(
-        `${copy.summary.perPiece}: EUR ${projectPerPiece.toFixed(2)} (${printBreakdown.input.quantity} ${copy.summary.pieces})`,
-        `${copy.summary.printSubtotal}: EUR ${printSubtotal.toFixed(2)}`,
+        `${copy.summary.perPiece}: EUR ${projectPerPiece} (${printBreakdown.input.quantity} ${copy.summary.pieces})`,
+        `${copy.summary.printSubtotal}: EUR ${printSubtotal}`,
         `${copy.summary.size}: ~${sizeCm} cm ${copy.summary.longestSide} | ${copy.summary.weight}: ~${weight} g`,
         `${copy.summary.material}: ${materialLabel(material)} | ${copy.summary.quality}: ${qualityLabel}`,
       )
     }
     if (includeScan && selectedScan) {
       parts.push(
-        `${copy.summary.scan}: ${selectedScanLabel} x ${Math.max(1, scanQty)} = EUR ${scanCost.toFixed(2)} (${copy.summary.oneTime})`,
+        `${copy.summary.scan}: ${selectedScanLabel} x ${Math.max(1, scanQty)} = EUR ${scanCost} (${copy.summary.oneTime})`,
       )
     }
     if (includeModeling) {
       parts.push(
-        `${copy.summary.modeling}: ${Math.max(0.25, modelHours)} ${copy.summary.hours} x EUR ${DEFAULT_DESIGN_RATE_EUR_PER_HOUR} = EUR ${modelingCost.toFixed(2)} (${copy.summary.oneTime})`,
+        `${copy.summary.modeling}: ${Math.max(0.25, modelHours)} ${copy.summary.hours} x EUR ${DEFAULT_DESIGN_RATE_EUR_PER_HOUR} = EUR ${modelingCost} (${copy.summary.oneTime})`,
       )
     }
     return parts.join(" | ")
@@ -528,7 +532,7 @@ export default function PriceEstimator({ locale = "nl" }: Props) {
                   <select className={inputClass} value={scanKey} onChange={(e) => setScanKey(e.target.value)}>
                     {SCAN_PRICES.map((item) => (
                       <option key={item.key} value={item.key}>
-                        {isEn ? item.labelEn : item.labelNl} - EUR {item.price.toFixed(2)}
+                        {isEn ? item.labelEn : item.labelNl} - EUR {item.price}
                       </option>
                     ))}
                   </select>

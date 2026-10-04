@@ -84,9 +84,9 @@ Zoek je 3D printen in Sint? We denken mee over passing, sterkte en look zodat je
 
 - Stuur STL/STEP via [contact](/contact) met aantallen en deadline.
 
-- EV-levering: Zone 1 (tot 25 km) €15; Zone 2 €30; Zone 3 €45; >75 km maatwerk of pakketdienst.
+- Verzending vanaf €7,50, volgens het gewicht van je pakket.
 
-- Afhalen in Herzele op afspraak.
+- Gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 
 

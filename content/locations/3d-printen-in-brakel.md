@@ -84,9 +84,9 @@ Voor projecten in Brakel combineren we korte doorlooptijd met strakke afwerking.
 
 - Stuur STL of STEP via [contact](/contact) met aantallen en deadline.
 
-- Levering met EV: Zone 1 (tot 25 km) €15; Zone 2 €30; Zone 3 €45; >75 km maatwerk of pakketdienst.
+- Verzending vanaf €7,50, volgens het gewicht van je pakket.
 
-- Afhalen kan in Herzele op afspraak; pakketdienst op aanvraag.
+- Gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 
 

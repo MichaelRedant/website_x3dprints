@@ -1,10 +1,12 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  calcUnitPrice,
   calculateDeliveryCost,
   calculateDryingCost,
   calculatePrintJob,
   estimateProductionTime,
+  floorPublicEur,
 } from "./pricing";
 
 describe("pricing", () => {
@@ -20,9 +22,33 @@ describe("pricing", () => {
     expect(breakdown.unitSellPriceEur / breakdown.unitBaseCostEur).toBeCloseTo(3.3, 2);
   });
 
-  it("uses the reference rate for standard post", () => {
-    expect(calculateDeliveryCost("post", 49)).toBe(7.5);
-    expect(calculateDeliveryCost("post", 50)).toBe(7.5);
+  it("charges shipping per weight band and nothing for pickup", () => {
+    expect(calculateDeliveryCost("afhaling", 3000)).toBe(0);
+    expect(calculateDeliveryCost("verzending", 500)).toBe(7.5);
+    expect(calculateDeliveryCost("verzending", 2000)).toBe(7.5);
+    expect(calculateDeliveryCost("verzending", 2001)).toBe(8);
+    expect(calculateDeliveryCost("verzending", 10000)).toBe(9);
+    expect(calculateDeliveryCost("verzending", 10001)).toBeNull();
+  });
+
+  it("never goes below the minimum per print job", () => {
+    const breakdown = calculatePrintJob({
+      filamentWeightGrams: 5,
+      printingTimeHours: 0.5,
+      material: "PLA_BASIC",
+      quantity: 1,
+    });
+
+    expect(breakdown.printsSubtotalEur).toBe(5);
+    expect(breakdown.totalEur).toBe(5);
+  });
+
+  it("rounds public totals down to whole euros", () => {
+    expect(floorPublicEur(8.99)).toBe(8);
+    expect(floorPublicEur(0.87)).toBe(0.8);
+    expect(calcUnitPrice("Small", "PLA_MATTE")).toBe(8);
+    expect(calcUnitPrice("Medium", "PLA_MATTE")).toBe(30);
+    expect(calcUnitPrice("Large", "PLA_MATTE")).toBe(74);
   });
 
   it("includes drying in direct print cost before the profit factor", () => {

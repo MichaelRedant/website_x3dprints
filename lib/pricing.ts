@@ -26,7 +26,7 @@ export const QUALITY_TIME_MULTIPLIER: Record<Quality, number> = {
 // Backwards compat: oude naam blijft beschikbaar
 export const QUALITY_MULTIPLIER = QUALITY_TIME_MULTIPLIER;
 
-export type DeliveryType = "afhaling" | "post" | "24h" | "48h";
+export type DeliveryType = "afhaling" | "verzending";
 
 const BASE_PRICE_FALLBACK_EUR_PER_KG = X3D_FILAMENT_PRICE_EUR_PER_KG.PLA_BASIC;
 
@@ -35,11 +35,19 @@ export const DRYING_FIXED_SURCHARGE_EUR = 5;
 export const DRYING_COST_PER_PRINT_EUR = 0.05;
 
 export const DEFAULT_ELECTRICITY_COST_EUR_PER_KWH = 0.23;
-export const DEFAULT_PRINTER_POWER_KW = 1;
+export const DEFAULT_PRINTER_POWER_KW = 2; // H2S/H2C; zo valt de publieke richtprijs nooit onder de offerte.
 export const DEFAULT_MATERIAL_MARKUP = 0.2; // +20%
 export const DEFAULT_PROFIT_FACTOR = 3; // 200% marge => basiskost * 3
 export const DEFAULT_DESIGN_RATE_EUR_PER_HOUR = 45;
 export const PUBLIC_ESTIMATE_BUFFER = 1.1; // Publieke indicatie blijft bewust 10% boven de interne calculatie.
+export const MINIMUM_PRINT_JOB_EUR = 5; // Ondergrens per printopdracht; niet expliciet vermelden in copy.
+
+// Verzending per gewichtsschijf (max. gewicht in gram, prijs in EUR). Zwaarder: op aanvraag.
+export const SHIPPING_RATES_EUR: ReadonlyArray<{ maxGrams: number; priceEur: number }> = [
+  { maxGrams: 2000, priceEur: 7.5 },
+  { maxGrams: 5000, priceEur: 8 },
+  { maxGrams: 10000, priceEur: 9 },
+];
 
 export type PriceInput = {
   printingTimeHours: number;
@@ -83,15 +91,20 @@ export type PriceBreakdown = {
   pricePerPrintEur: number;
 };
 
+// Geeft null terug als de zending zwaarder is dan de hoogste schijf (prijs op aanvraag).
 export function calculateDeliveryCost(
   deliveryType: DeliveryType,
-  subtotalBeforeDelivery: number,
-): number {
-  void subtotalBeforeDelivery;
-  if (deliveryType === "24h") return 20;
-  if (deliveryType === "48h") return 15;
-  if (deliveryType === "post") return 7.5;
-  return 0;
+  shipmentWeightGrams: number,
+): number | null {
+  if (deliveryType === "afhaling") return 0;
+  const rate = SHIPPING_RATES_EUR.find((r) => shipmentWeightGrams <= r.maxGrams);
+  return rate ? rate.priceEur : null;
+}
+
+// Publieke bedragen naar beneden afronden: hele euro's, onder EUR 1 per tiental cent.
+export function floorPublicEur(n: number): number {
+  if (n >= 1) return Math.floor(n);
+  return Math.floor(n * 10) / 10;
 }
 
 export function calculateDryingCost(material: MaterialKey, quantity: number): number {
@@ -124,7 +137,10 @@ export function calculatePrintJob(job: PriceInput): PriceBreakdown {
   const unitBaseCostEur = unitFilamentWithMarkupEur + unitElectricityEur;
   const dryingCostEur = calculateDryingCost(job.material, job.quantity);
   const totalDirectPrintCostEur = unitBaseCostEur * job.quantity + dryingCostEur;
-  const printsSubtotalEur = totalDirectPrintCostEur * profitFactor * publicEstimateBuffer;
+  const printsSubtotalEur = Math.max(
+    totalDirectPrintCostEur * profitFactor * publicEstimateBuffer,
+    MINIMUM_PRINT_JOB_EUR,
+  );
   const unitSellPriceEur = printsSubtotalEur / job.quantity;
   const designCostEur = (job.designHours ?? 0) * designRate;
   const extraAllowancesEur = job.extraAllowancesEur ?? 0;
@@ -132,14 +148,15 @@ export function calculatePrintJob(job: PriceInput): PriceBreakdown {
   const subtotalBeforeDeliveryEur =
     printsSubtotalEur + designCostEur + extraAllowancesEur;
   const deliveryType = job.deliveryType ?? "afhaling";
-  const deliveryCostEur = calculateDeliveryCost(deliveryType, subtotalBeforeDeliveryEur);
+  const deliveryCostEur =
+    calculateDeliveryCost(deliveryType, job.filamentWeightGrams * job.quantity) ?? 0;
 
   const subtotalBeforeDiscountEur = subtotalBeforeDeliveryEur + deliveryCostEur;
   const discountPercent = Math.min(Math.max(job.discountPercent ?? 0, 0), 100);
   const discountValueEur = subtotalBeforeDiscountEur * (discountPercent / 100);
 
-  const totalEur = subtotalBeforeDiscountEur - discountValueEur;
-  const pricePerPrintEur = totalEur / job.quantity;
+  const totalEur = floorPublicEur(subtotalBeforeDiscountEur - discountValueEur);
+  const pricePerPrintEur = floorPublicEur(totalEur / job.quantity);
 
   return {
     input: job,
@@ -161,8 +178,8 @@ export function calculatePrintJob(job: PriceInput): PriceBreakdown {
     subtotalBeforeDeliveryEur: roundTo2(subtotalBeforeDeliveryEur),
     subtotalBeforeDiscountEur: roundTo2(subtotalBeforeDiscountEur),
     discountValueEur: roundTo2(discountValueEur),
-    totalEur: roundTo2(totalEur),
-    pricePerPrintEur: roundTo2(pricePerPrintEur),
+    totalEur,
+    pricePerPrintEur,
   };
 }
 
