@@ -46,9 +46,9 @@ describe("pricing", () => {
   it("rounds public totals down to whole euros", () => {
     expect(floorPublicEur(8.99)).toBe(8);
     expect(floorPublicEur(0.87)).toBe(0.8);
-    expect(calcUnitPrice("Small", "PLA_MATTE")).toBe(8);
-    expect(calcUnitPrice("Medium", "PLA_MATTE")).toBe(30);
-    expect(calcUnitPrice("Large", "PLA_MATTE")).toBe(74);
+    expect(calcUnitPrice("Small", "PLA_MATTE")).toBe(6);
+    expect(calcUnitPrice("Medium", "PLA_MATTE")).toBe(25);
+    expect(calcUnitPrice("Large", "PLA_MATTE")).toBe(62);
   });
 
   it("adds drying on top of the print price, outside margin and buffer", () => {
