@@ -19,7 +19,7 @@ export type MaterialKey =
   | "PC"
   | "TPU"
 
-// X3DPrints price reference supplied on 2026-08-30. Prices are before the 20% material margin.
+// X3DPrints price reference supplied on 2026-08-30, PETG and PLA Silk+ updated 2026-10-05. Prices are before the 20% material margin.
 export const X3D_FILAMENT_PRICE_EUR_PER_KG: Record<MaterialKey, number> = {
   PLA_BASIC: 25.99,
   PLA_BASIC_GRADIENT: 27.99,
@@ -30,13 +30,13 @@ export const X3D_FILAMENT_PRICE_EUR_PER_KG: Record<MaterialKey, number> = {
   PLA_METAL: 27.99,
   PLA_GALAXY: 27.99,
   PLA_AERO: 49.99,
-  PLA_SILK_PLUS: 25.99,
+  PLA_SILK_PLUS: 19.99,
   PLA_SILK_MULTI_COLOR: 27.99,
   PLA_CF: 26.99,
   PLA_WOOD: 27.99,
   PLA_TRANSLUCENT: 25.99,
   PLA_TOUGH_PLUS: 26.99,
-  PETG: 25.99,
+  PETG: 18.99,
   PC: 42.99,
   PC_FR: 56.99,
   TPU: 43.99,
