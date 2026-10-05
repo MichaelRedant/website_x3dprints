@@ -34,11 +34,14 @@ type EstimatorMaterial = { id: string; label: string; page?: MaterialKey; group:
 const LABEL_OVERRIDES: Partial<Record<string, { nl: string; en: string }>> = {
   PC: { nl: "Polycarbonaat", en: "Polycarbonate" },
   PC_FR: { nl: "Polycarbonaat FR (brandvertragend)", en: "Polycarbonate FR (flame retardant)" },
+  PLA_CF: { nl: "PLA Carbon Fibre", en: "PLA Carbon Fibre" },
   TPU: { nl: "TPU (flexibel)", en: "TPU (flexible)" },
 }
 
 const GUIDE_ONLY: Array<{ id: string; label: { nl: string; en: string }; group: EstimatorMaterial["group"] }> = [
   { id: "ASA", label: { nl: "ASA", en: "ASA" }, group: "technical" },
+  { id: "ASA_CF", label: { nl: "ASA Carbon Fibre", en: "ASA Carbon Fibre" }, group: "technical" },
+  { id: "PAHT_CF", label: { nl: "Nylon Carbon Fibre (PAHT-CF)", en: "Nylon Carbon Fibre (PAHT-CF)" }, group: "technical" },
 ]
 
 function groupOf(key: MaterialKey): EstimatorMaterial["group"] {
@@ -204,8 +207,7 @@ export default function PriceEstimator({ locale = "nl", rates }: Props) {
 
   const materials: EstimatorMaterial[] = useMemo(
     () => [
-      // Carbon Fibre niet op voorraad (2026-10-05): niet aanbieden in de calculator.
-      ...MATERIAL_ORDER.filter((key) => key !== "PLA_CF").map((key) => ({
+      ...MATERIAL_ORDER.map((key) => ({
         id: key,
         label: LABEL_OVERRIDES[key]?.[isEn ? "en" : "nl"] ?? MATERIALS[key].name,
         page: key,

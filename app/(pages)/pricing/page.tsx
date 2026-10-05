@@ -103,15 +103,16 @@ const COPY = {
       title: "Wat bepaalt de prijs?",
       intro: "Vier dingen, en ik reken ze alle vier open uit in je offerte.",
       items: [
-        { k: "Materiaal", v: "Elk materiaal heeft zijn eigen prijs. PLA en PETG zijn het voordeligst, technische materialen zoals polycarbonaat het duurst." },
+        { k: "Materiaal", v: "Elk materiaal heeft zijn eigen prijs. PLA en PETG zijn het voordeligst, technische materialen zoals polycarbonaat of nylon met carbon fibre het duurst." },
         { k: "Gewicht en formaat", v: "Meer volume is meer filament. Een hol of slim ontworpen stuk weegt vaak veel minder dan je denkt." },
         { k: "Printtijd en laagdikte", v: "Een fijnere laag geeft een mooiere afwerking, maar de printer doet er langer over." },
         { k: "Aantal", v: "Bij grotere aantallen kan ik de prijs verder optimaliseren. Vermeld het aantal gewoon in je aanvraag." },
       ],
-      groupsTitle: "Materialen in twee prijsklassen",
+      groupsTitle: "Materialen in drie prijsklassen",
       groups: [
         { label: "PLA (Matte, Basic, Silk, Wood, Marble ...), PETG, ABS, ASA", mod: "Basisprijs" },
         { label: "TPU (flexibel), polycarbonaat", mod: "Hoger" },
+        { label: "Carbon fibre, glasvezel en nylon", mod: "Hoogst" },
       ],
       drying:
         "Materiaal dat vooraf gedroogd moet worden (onder meer PETG, ASA, TPU, polycarbonaat en houtlook) krijgt een kleine droogtoeslag per opdracht. Dat zit al in de prijswijzer.",
@@ -262,15 +263,16 @@ const COPY = {
       title: "What determines the price?",
       intro: "Four things, and I spell out all four in your quote.",
       items: [
-        { k: "Material", v: "Every material has its own price. PLA and PETG are the most affordable, technical materials such as polycarbonate the most expensive." },
+        { k: "Material", v: "Every material has its own price. PLA and PETG are the most affordable, technical materials such as polycarbonate or carbon fibre nylon the most expensive." },
         { k: "Weight and size", v: "More volume means more filament. A hollow or well designed part often weighs much less than you expect." },
         { k: "Print time and layer height", v: "A finer layer gives a nicer finish, but the printer takes longer." },
         { k: "Quantity", v: "For larger quantities I can optimise the price further. Just mention the quantity in your request." },
       ],
-      groupsTitle: "Materials in two price classes",
+      groupsTitle: "Materials in three price classes",
       groups: [
         { label: "PLA (Matte, Basic, Silk, Wood, Marble ...), PETG, ABS, ASA", mod: "Base price" },
         { label: "TPU (flexible), polycarbonate", mod: "Higher" },
+        { label: "Carbon fibre, glass fibre and nylon", mod: "Highest" },
       ],
       drying:
         "Materials that need drying first (including PETG, ASA, TPU, polycarbonate and wood fill) get a small drying surcharge per order. The price guide already includes it.",

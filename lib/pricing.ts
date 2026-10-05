@@ -11,7 +11,7 @@ export const DEFAULT_PROFIT_FACTOR = 3 // 200% marge => basiskost * 3
 export const PUBLIC_ESTIMATE_BUFFER = 1.1 // Publieke indicatie blijft bewust 10% boven de interne calculatie.
 
 // Alles wat vooraf gedroogd moet worden krijgt de droogtoeslag (beslist 2026-10-05).
-export const DRYING_MATERIALS = ["TPU", "PLA_WOOD", "PETG", "PC", "PC_FR", "ASA"]
+export const DRYING_MATERIALS = ["TPU", "PLA_WOOD", "PETG", "PC", "PC_FR", "ASA", "ASA_CF", "PAHT_CF"]
 
 /** Zet aankoopprijzen en marges om naar verkooptarieven voor de browser. */
 export function buildPublicRates(): PublicRates {
