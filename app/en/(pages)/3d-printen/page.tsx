@@ -13,6 +13,14 @@ import {
   buildServiceSchema,
   SchemaOfferInput,
 } from "@/lib/seo"
+import { buildPublicRates } from "@/lib/pricing"
+import { guideUnitPrice } from "@/lib/price-guide"
+
+// Richtprijzen uit dezelfde berekening als /pricing, zodat beide pagina's altijd gelijk lopen.
+const RATES = buildPublicRates()
+const [PRICE_S, PRICE_M, PRICE_L] = (["Small", "Medium", "Large"] as const).map((tier) =>
+  guideUnitPrice("PLA_MATTE", tier, RATES),
+)
 
 export const metadata: Metadata = {
   title: "3D printing in Belgium | Local 3D print service from Herzele",
@@ -129,9 +137,24 @@ const materials = [
 ]
 
 const pricing = [
-  { k: "Small (approx. 5x5x5 cm)", v: "From ~EUR 5 in PLA Matte" },
-  { k: "Medium (approx. 10x10x10 cm)", v: "From ~EUR 20 in PLA Matte" },
-  { k: "Large (approx. 20x20x20 cm)", v: "From ~EUR 49 in PLA Matte" },
+  { k: "Small (approx. 5x5x5 cm)", v: `From ~EUR ${PRICE_S} in PLA Matte` },
+  { k: "Medium (approx. 10x10x10 cm)", v: `From ~EUR ${PRICE_M} in PLA Matte` },
+  { k: "Large (approx. 20x20x20 cm)", v: `From ~EUR ${PRICE_L} in PLA Matte` },
+]
+
+const modelRoutes = [
+  {
+    k: "Model from a website",
+    v: "Send the link to the model on MakerWorld, Printables or Thingiverse. Scale, printability and material are checked first.",
+  },
+  {
+    k: "Your own design",
+    v: "STL, STEP or 3MF. If a wall is too thin or something will not fit, you hear it before anything is printed.",
+  },
+  {
+    k: "No model yet",
+    v: "The model is drawn from photos, dimensions or a sketch, at EUR 45 per hour of design.",
+  },
 ]
 
 const differentiators = [
@@ -239,7 +262,12 @@ const faq = [
   {
     q: "How much does 3D printing cost?",
     a:
-      "Small ~EUR 5, medium ~EUR 20, large ~EUR 49 in PLA Matte. These are guidelines; exact cost depends on model, material and print time. See /pricing.",
+      `Small ~EUR ${PRICE_S}, medium ~EUR ${PRICE_M}, large ~EUR ${PRICE_L} in PLA Matte. These are guidelines; exact cost depends on model, material and print time. See /pricing.`,
+  },
+  {
+    q: "What does it cost to have a 3D model printed?",
+    a:
+      `A small 3D model in PLA costs about EUR ${PRICE_S}, a medium one about EUR ${PRICE_M} and a large one about EUR ${PRICE_L}. If the model still needs to be designed, design time is added at EUR 45 per hour. The price guide on /en/pricing shows in four steps what your model roughly costs.`,
   },
   {
     q: "Which materials can I choose for 3D printing?",
@@ -269,6 +297,7 @@ const tocItems = [
   { id: "print-segments", label: "Who do we print for most?" },
   { id: "print-materials", label: "Which materials and price ranges are available?" },
   { id: "print-differentiators", label: "Why do teams work with X3DPrints?" },
+  { id: "print-model", label: "How do you get a 3D model printed?" },
   { id: "print-workflow", label: "How does the workflow run end-to-end?" },
   { id: "print-faq", label: "FAQ on 3D printing" },
   { id: "print-sources", label: "Sources and references" },
@@ -280,7 +309,7 @@ const references = [
   { label: "All3DP FDM process explainer", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
 ]
 
-const lastUpdatedLabel = "Last updated: February 6, 2026"
+const lastUpdatedLabel = "Last updated: October 5, 2026"
 
 const pageUrl = "https://www.x3dprints.be/en/3d-printen/"
 
@@ -499,6 +528,41 @@ export default function ThreeDPrintingPage() {
                 </GlassCard>
               </Reveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 3D MODEL PRINTING */}
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="max-w-3xl">
+            <h2 id="print-model" className="scroll-mt-28 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              Printing a 3D model: from file or idea to print
+            </h2>
+            <p className="mt-3 text-slate-600">
+              Found a 3D model on MakerWorld, Printables or Thingiverse, or designed one yourself in Fusion, Tinkercad or Blender?
+              You can have it printed here, even without a 3D printer of your own. A small model in PLA costs about EUR {PRICE_S},
+              a medium model about EUR {PRICE_M}.
+            </p>
+          </Reveal>
+          <dl className="mt-8 grid gap-6 md:grid-cols-3">
+            {modelRoutes.map((route) => (
+              <div key={route.k} className="rounded-2xl border border-slate-200/80 bg-white/80 p-5 shadow-sm">
+                <dt className="font-semibold text-slate-900">{route.k}</dt>
+                <dd className="mt-2 text-sm leading-6 text-slate-600">{route.v}</dd>
+              </div>
+            ))}
+          </dl>
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
+            <ShimmerButton
+              href="/en/pricing#pricing-estimator"
+              event={{ action: "cta_click", category: "3d-printen_model", label: "price_guide" }}
+            >
+              Work out your guide price
+            </ShimmerButton>
+            <Link href="/en/3d-modelleren" className="text-sm font-semibold text-indigo-600 underline-offset-4 hover:underline">
+              More about 3D modelling
+            </Link>
           </div>
         </div>
       </section>

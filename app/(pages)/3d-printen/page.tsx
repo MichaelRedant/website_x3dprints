@@ -14,6 +14,14 @@ import {
   buildServiceSchema,
   SchemaOfferInput,
 } from "@/lib/seo"
+import { buildPublicRates } from "@/lib/pricing"
+import { guideUnitPrice } from "@/lib/price-guide"
+
+// Richtprijzen uit dezelfde berekening als /pricing, zodat beide pagina's altijd gelijk lopen.
+const RATES = buildPublicRates()
+const [PRICE_S, PRICE_M, PRICE_L] = (["Small", "Medium", "Large"] as const).map((tier) =>
+  guideUnitPrice("PLA_MATTE", tier, RATES),
+)
 
 export const metadata: Metadata = {
   title: "3D printen op maat in Belgie voor bedrijven en particulieren | X3DPrints",
@@ -128,9 +136,24 @@ const materials = [
 ]
 
 const pricing = [
-  { size: "Small (ca. 5x5x5 cm)", price: "Vanaf ~EUR 5 in PLA Matte", useCase: "Naamplaatjes, clips, kleine adapters" },
-  { size: "Medium (ca. 10x10x10 cm)", price: "Vanaf ~EUR 20 in PLA Matte", useCase: "Houders, brackets, mock-ups" },
-  { size: "Large (ca. 20x20x20 cm)", price: "Vanaf ~EUR 49 in PLA Matte", useCase: "Displays, behuizingen, tools" },
+  { size: "Small (ca. 5x5x5 cm)", price: `Vanaf ~EUR ${PRICE_S} in PLA Matte`, useCase: "Naamplaatjes, clips, kleine adapters" },
+  { size: "Medium (ca. 10x10x10 cm)", price: `Vanaf ~EUR ${PRICE_M} in PLA Matte`, useCase: "Houders, brackets, mock-ups" },
+  { size: "Large (ca. 20x20x20 cm)", price: `Vanaf ~EUR ${PRICE_L} in PLA Matte`, useCase: "Displays, behuizingen, tools" },
+]
+
+const modelRoutes = [
+  {
+    k: "Model van een website",
+    v: "Stuur de link naar het model op MakerWorld, Printables of Thingiverse. Schaal, printbaarheid en materiaal worden vooraf nagekeken.",
+  },
+  {
+    k: "Eigen ontwerp",
+    v: "STL, STEP of 3MF. Is een wand te dun of past iets niet, dan hoor je dat voor er geprint wordt.",
+  },
+  {
+    k: "Nog geen model",
+    v: "Op basis van foto's, maten of een schets wordt het model getekend, aan EUR 45 per uur ontwerp.",
+  },
 ]
 
 const differentiators = [
@@ -147,7 +170,7 @@ const differentiators = [
   {
     title: "Focus op efficient 3D printen",
     copy:
-      "We optimaliseren je model voor minder support, kortere printtijd en sterkere onderdelen. Dat maakt 3D printen sneller en kostenefficiÃ«nter.",
+      "We optimaliseren je model voor minder support, kortere printtijd en sterkere onderdelen. Dat maakt 3D printen sneller en kostenefficiënter.",
   },
   {
     title: "Bewuste aanpak",
@@ -238,7 +261,7 @@ const faq = [
   {
     q: "Wat kost 3D printen?",
     a:
-      "Small ~EUR 5, medium ~EUR 20, large ~EUR 49 in PLA Matte. Dat zijn richtprijzen; de exacte kost voor 3D printen hangt af van model, materiaal en printtijd. Zie ook /pricing.",
+      `Small ~EUR ${PRICE_S}, medium ~EUR ${PRICE_M}, large ~EUR ${PRICE_L} in PLA Matte. Dat zijn richtprijzen; de exacte kost voor 3D printen hangt af van model, materiaal en printtijd. Zie ook /pricing.`,
   },
   {
     q: "Welke materialen kan ik kiezen voor 3D printen?",
@@ -261,6 +284,11 @@ const faq = [
       "Ja. Stuur een link naar een bestaand model of je idee. We helpen met schaal, printbaarheid en materiaalkeuze zodat je 3D model veilig geprint kan worden.",
   },
   {
+    q: "Wat kost het om een 3D model te laten printen?",
+    a:
+      `Een klein 3D model in PLA kost ongeveer EUR ${PRICE_S}, een middelgroot ongeveer EUR ${PRICE_M} en een groot ongeveer EUR ${PRICE_L}. Moet het model nog getekend worden, dan komt er ontwerptijd bij aan EUR 45 per uur. Met de prijswijzer op /pricing zie je in vier stappen wat jouw model ongeveer kost.`,
+  },
+  {
     q: "Hoe snel krijg ik een offerte na mijn aanvraag?",
     a:
       "Meestal binnen 24 uur op werkdagen. Deel je STL/STEP, gewenste materiaalkeuze en deadline, dan kunnen we sneller een concrete prijs en planning geven.",
@@ -273,6 +301,7 @@ const tocItems = [
   { id: "printen-toepassingen", label: "Welke toepassingen zijn typisch?" },
   { id: "printen-segmenten", label: "Voor wie printen we het meest?" },
   { id: "printen-materialen", label: "Welke materialen en richtprijzen zijn mogelijk?" },
+  { id: "printen-model", label: "Hoe laat je een 3D model printen?" },
   { id: "printen-workflow", label: "Hoe loopt de workflow van bestand tot levering?" },
   { id: "printen-faq", label: "FAQ over 3D printen" },
   { id: "printen-bronnen", label: "Bronnen en referenties" },
@@ -284,7 +313,7 @@ const references = [
   { label: "All3DP uitleg van FDM 3D printen", url: "https://all3dp.com/2/fdm-3d-printing-explained/" },
 ]
 
-const lastUpdatedLabel = "Laatst bijgewerkt: 16 februari 2026"
+const lastUpdatedLabel = "Laatst bijgewerkt: 5 oktober 2026"
 
 const pageUrl = String(
   metadata.openGraph?.url ?? metadata.alternates?.canonical ?? "https://www.x3dprints.be/3d-printen",
@@ -313,7 +342,7 @@ const localBusinessJsonLd = buildLocalBusinessSchema({
   pageUrl,
   description: descriptionText,
   image: "/images/og-home.svg",
-  priceRange: "EUR 0 - EUR 49",
+  priceRange: `EUR 0 - EUR ${PRICE_L}`,
   areaServed: "Gent, Aalst, Herzele & Vlaanderen",
 })
 
@@ -386,7 +415,7 @@ export default function Page() {
               <p className="mt-3 text-sm text-slate-600">
                 X3DPrints is een FDM 3D printservice in Vlaanderen. We printen met PLA, PETG, TPU en specials, allemaal op
                 pro-printers in een gesloten omgeving. Dat betekent: strakke toleranties (+/-0,2 mm), controle over support en
-                oriÃ«ntatie en eerlijk advies wanneer een ontwerp beter herwerkt wordt alvorens te 3D printen.
+                oriëntatie en eerlijk advies wanneer een ontwerp beter herwerkt wordt alvorens te 3D printen.
               </p>
               <p className="mt-3 text-sm text-slate-600">
                 Zoek je een &quot;3D print bureau&quot; voor bedrijven of particulieren? Deze pagina koppelt je direct aan de juiste
@@ -477,7 +506,7 @@ export default function Page() {
           <Reveal className="mb-6 max-w-3xl">
             <h2 id="printen-toepassingen" className="scroll-mt-28 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Typische 3D print-toepassingen</h2>
             <p className="mt-2 text-slate-600">
-              Enkele concrete cases waarvoor klanten 3D printen inzetten. Kies je toepassing en we helpen met materiaal, oriÃ«ntatie en planning.
+              Enkele concrete cases waarvoor klanten 3D printen inzetten. Kies je toepassing en we helpen met materiaal, oriëntatie en planning.
             </p>
           </Reveal>
           <div className="grid gap-6 md:grid-cols-2">
@@ -634,6 +663,41 @@ export default function Page() {
               </div>
             </GlassCard>
           </Reveal>
+        </div>
+      </section>
+
+      {/* 3D MODEL PRINTEN */}
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="max-w-3xl">
+            <h2 id="printen-model" className="scroll-mt-28 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              3D model printen: van bestand of idee naar print
+            </h2>
+            <p className="mt-3 text-slate-600">
+              Een 3D model gevonden op MakerWorld, Printables of Thingiverse, of zelf getekend in Fusion, Tinkercad of Blender?
+              Dan kan je het hier laten printen, ook zonder eigen 3D printer. Een klein model in PLA kost ongeveer EUR {PRICE_S},
+              een middelgroot model ongeveer EUR {PRICE_M}.
+            </p>
+          </Reveal>
+          <dl className="mt-8 grid gap-6 md:grid-cols-3">
+            {modelRoutes.map((route) => (
+              <div key={route.k} className="rounded-2xl border border-slate-200/80 bg-white/80 p-5 shadow-sm">
+                <dt className="font-semibold text-slate-900">{route.k}</dt>
+                <dd className="mt-2 text-sm leading-6 text-slate-600">{route.v}</dd>
+              </div>
+            ))}
+          </dl>
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
+            <ShimmerButton
+              href="/pricing#pricing-estimator"
+              event={{ action: "cta_click", category: "3d-printen_model", label: "price_guide" }}
+            >
+              Bereken je richtprijs
+            </ShimmerButton>
+            <Link href="/3d-modelleren" className="text-sm font-semibold text-indigo-600 underline-offset-4 hover:underline">
+              Meer over 3D modelleren
+            </Link>
+          </div>
         </div>
       </section>
 
