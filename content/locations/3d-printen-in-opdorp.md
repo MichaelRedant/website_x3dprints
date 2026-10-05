@@ -73,7 +73,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -89,7 +89,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 ## Veelgestelde vragen over 3D printen in Opdorp
 
 **Hoe snel is 3D printen in Opdorp?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Stenen Molen of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Stenen Molen of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Opdorp?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

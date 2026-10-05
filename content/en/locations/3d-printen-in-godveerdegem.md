@@ -6,7 +6,7 @@ Need **3D printing in Godveerdegem**? X3DPrints prints in Herzele and ships quic
 
 ## Why Godveerdegem teams choose us
 
-- Local delivery to Godveerdegem; pickup in Herzele.
+- Shipping to Godveerdegem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Godveerdegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

@@ -6,7 +6,7 @@ Need **3D printing in Herzele**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Herzele teams choose us
 
-- Local delivery to Herzele; pickup in Herzele.
+- Shipping to Herzele; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Herzele.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Herzele, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Herzele
+## Typical places we serve near Herzele
 
 - Herzele town center
 - local business park in Herzele

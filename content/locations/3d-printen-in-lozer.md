@@ -7,7 +7,7 @@ Lozer staat bekend om het kasteeldomein en de dreven. X3DPrints levert hier snel
 ## Waarom kiezen voor ons?
 
 - **Lead time**: 2-5 werkdagen; spoed mogelijk.  
-- **Levering** richting Lozerkasteel, dreven en Kapelstraat; afhalen in Herzele kan.  
+- **Verzending** naar Lozerkasteel, dreven en Kapelstraat; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA voor decor en displays, PETG voor buitenopstellingen in het park, TPU voor flexibele klemmen.  
 - **Transparante prijzen**: bekijk [pricing](/pricing) of vraag direct via [contact](/contact).
 
@@ -37,7 +37,7 @@ In Lozer (Kruishoutem) helpen we makers en bedrijven met 3D prints die vlot pass
 
 1) Deel een STL/STEP-link via [contact](/contact) met toepassing en aantallen.  
 2) Wij adviseren orientatie en materiaal.  
-3) Print, QC en levering in Lozer of afhalen.
+3) Print, QC en verzending naar Lozer of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Bekijk kleuren op [materials](/materials), controleer je model in de [viewer](/viewer), en vind sectorcases op [segments](/segments). Tips staan in de [blog](/blog).
 

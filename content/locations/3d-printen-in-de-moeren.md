@@ -68,7 +68,7 @@ In De Moeren helpen we makers en bedrijven met 3D prints die vlot passen en lang
 
 3. Productie, nacontrole en verpakking verlopen volgens de stappen op [3d-printen](/3d-printen)
 
-4. Levering of afhaling stemmen we samen af; dringende projecten krijgen prioriteitsslots
+4. Verzending of gratis afhalen in de afhaalbox in Herzele, 24 op 7; dringende projecten krijgen prioriteitsslots
 
 
 
@@ -76,11 +76,11 @@ In De Moeren helpen we makers en bedrijven met 3D prints die vlot passen en lang
 
 
 
-- Route richting De Moeren, Adinkerke en de grensposten gebeurt wekelijks
+- Verzending naar De Moeren, Adinkerke en de grensposten
 
-- Pakketdienst voor partners aan Franse zijde met tracking
+- Verzending naar partners aan Franse zijde op aanvraag, met tracking
 
-- Afhalen in Herzele mogelijk; combineer het met een consult of een kijkje in de [viewer](/viewer)
+- Gratis afhalen in de afhaalbox in Herzele, 24 op 7; combineer het met een consult of een kijkje in de [viewer](/viewer)
 
 
 

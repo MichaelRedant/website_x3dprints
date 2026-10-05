@@ -6,7 +6,7 @@ Need **3D printing in Lokeren**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Lokeren teams choose us
 
-- Local delivery to Lokeren, Eksaarde and Daknam, Moerbeke-Waas; pickup in Herzele.
+- Shipping to Lokeren, Eksaarde and Daknam, Moerbeke-Waas; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Lokeren.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Lokeren, Lokeren city center, Eksaarde, Daknam, Moerbe
 
 ---
 
-## Typical drop-off points near Lokeren
+## Typical places we serve near Lokeren
 
 - Lokeren town center
 - local business park in Lokeren

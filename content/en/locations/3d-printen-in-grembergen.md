@@ -6,7 +6,7 @@ Need **3D printing in Grembergen**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Grembergen teams choose us
 
-- Local delivery to Grembergen; pickup in Herzele.
+- Shipping to Grembergen; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Grembergen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Grembergen, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Grembergen
+## Typical places we serve near Grembergen
 
 - Grembergen town center
 - local business park in Grembergen

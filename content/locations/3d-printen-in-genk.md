@@ -62,7 +62,7 @@ Rond C-mine zijn andere toepassingen logisch: maquettes, sokkels, expo-onderdele
 
 ## Productie in Herzele, levering naar Genk
 
-X3DPrints is niet gevestigd in Genk. Alle prints worden in Herzele geproduceerd en gecontroleerd. We verzenden naar Genk, Waterschei, Winterslag en omliggende gemeenten volgens de overeengekomen planning. Afhalen in Herzele is mogelijk op afspraak.
+X3DPrints is niet gevestigd in Genk. Alle prints worden in Herzele geproduceerd en gecontroleerd. We verzenden naar Genk, Waterschei, Winterslag en omliggende gemeenten volgens de overeengekomen planning. Gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Gebruik de [prijscalculator](/pricing) voor een eerste indicatie en bekijk het [portfolio](/portfolio) voor voorbeelden van functionele en visuele projecten.
 

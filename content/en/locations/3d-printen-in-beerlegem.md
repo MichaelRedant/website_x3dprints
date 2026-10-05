@@ -6,7 +6,7 @@ Need **3D printing in Beerlegem**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Beerlegem teams choose us
 
-- Local delivery to Beerlegem, Zwalm and Nederzwalm-Hermelgem, Munkzwalm; pickup in Herzele.
+- Shipping to Beerlegem, Zwalm and Nederzwalm-Hermelgem, Munkzwalm; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Beerlegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

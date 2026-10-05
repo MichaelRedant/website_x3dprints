@@ -6,7 +6,7 @@ Need **3D printing in Kaprijke**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Kaprijke teams choose us
 
-- Local delivery to Kaprijke, Lembeke and Bentille; pickup in Herzele.
+- Shipping to Kaprijke, Lembeke and Bentille; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Kaprijke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Kaprijke, Kaprijke city center, Lembeke, Bentille, Pic
 
 ---
 
-## Typical drop-off points near Kaprijke
+## Typical places we serve near Kaprijke
 
 - Kaprijke town center
 - local business park in Kaprijke

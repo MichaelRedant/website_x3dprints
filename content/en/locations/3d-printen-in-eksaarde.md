@@ -6,7 +6,7 @@ Need **3D printing in Eksaarde**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Eksaarde teams choose us
 
-- Local delivery to Eksaarde, Lokeren and Daknam, Moerbeke-Waas; pickup in Herzele.
+- Shipping to Eksaarde, Lokeren and Daknam, Moerbeke-Waas; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Eksaarde.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

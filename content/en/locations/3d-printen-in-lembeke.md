@@ -6,7 +6,7 @@ Need **3D printing in Lembeke**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Lembeke teams choose us
 
-- Local delivery to Lembeke, Kaprijke and Bentille; pickup in Herzele.
+- Shipping to Lembeke, Kaprijke and Bentille; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Lembeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Lembeke, Lembeke city center, Kaprijke, Bentille, Pick
 
 ---
 
-## Typical drop-off points near Lembeke
+## Typical places we serve near Lembeke
 
 - Lembeke town center
 - local business park in Lembeke

@@ -12,7 +12,7 @@ type Pillar = { title: string; copy: string; icon: "material" | "energy" | "loop
 export const metadata: Metadata = {
   title: "FuturePrint Lab | Sustainability & circularity | X3DPrints",
   description:
-    "Sustainable 3D printing from Herzele. X3DPrints focuses on smart design, efficient material choices and local delivery for entrepreneurs, schools and associations in East Flanders.",
+    "Sustainable 3D printing from Herzele. X3DPrints focuses on smart design, efficient material choices and local production for entrepreneurs, schools and associations in East Flanders.",
   alternates: {
     canonical: "https://www.x3dprints.be/en/sustainability/",
     languages: {
@@ -85,7 +85,7 @@ const pillars: Pillar[] = [
   {
     title: "Practical and local logistics",
     copy:
-      "Pickup by appointment in Herzele. For Ghent and surrounding towns we combine deliveries with existing routes. Beyond that we use compact parcel services.",
+      "Pickup is free, 24/7, from the secure pickup box in Herzele. For all other addresses we ship in compact packaging.",
     icon: "loop",
     links: [
       { href: "/en/locaties", label: "Delivery and regions" },
@@ -125,7 +125,7 @@ const faqItems = [
   {
     q: "How is 3D printing at X3DPrints more sustainable than classic production?",
     a:
-      "You only make what you need, in the quantities you actually use. No large minimum orders, moulds or stock. Paired with the right material choice and local delivery you avoid unnecessary production and transport.",
+      "You only make what you need, in the quantities you actually use. No large minimum orders, moulds or stock. Paired with the right material choice and local production you avoid unnecessary production and transport.",
   },
   {
     q: "Can I pick a more sustainable material option?",
@@ -243,7 +243,7 @@ export default function SustainabilityPage() {
                 Sustainability in practice, for real projects.
               </h1>
               <p className="text-lg text-slate-700">
-                Small-batch 3D printing that favours smart design, efficient runs and local delivery. Less waste, more longevity - for SMEs, schools and associations.
+                Small-batch 3D printing that favours smart design, efficient runs and local production. Less waste, more longevity - for SMEs, schools and associations.
               </p>
               <div className="flex flex-wrap gap-3">
                 <ShimmerButton href="/en/contact">Plan a project</ShimmerButton>
@@ -337,7 +337,7 @@ export default function SustainabilityPage() {
                   Working locally makes feedback loops faster, reduces transport and keeps commitments realistic.
                 </p>
                 <ul className="mt-3 space-y-2 text-sm text-slate-600">
-                  <li>- Shorter delivery routes and flexible pickup slots.</li>
+                  <li>- Short supply chain and free 24/7 pickup from the pickup box in Herzele.</li>
                   <li>- Direct contact with the maker - no ticket queues.</li>
                   <li>- Planning that adapts to your sprint or event calendar.</li>
                 </ul>

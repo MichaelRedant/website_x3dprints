@@ -8,7 +8,7 @@ Voor **3D printen in Beersel** leveren we prototypes, props en tooling richting 
 
 - Offerte binnen een werkdag, met realistische planning.
 - PLA Matte, PETG en TPU voor zichtwerk en stevige onderdelen.
-- EV-levering richting E19/Beersel, afhalen in Herzele kan.
+- Verzending naar Beersel; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Advies over oriëntatie en afwerking voor consistente batches.
 
 We kennen de combinatie van events, toerisme en KMO's rond Beersel. Daardoor stemmen we materiaal en finish af op props, fixtures en functionele parts.
@@ -42,7 +42,7 @@ We kennen de combinatie van events, toerisme en KMO's rond Beersel. Daardoor ste
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en gewenste finish.
-- Levering via E19; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optionele nabehandeling: schuren/primen voor glad zichtwerk.
 
 ---

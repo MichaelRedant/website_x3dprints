@@ -6,7 +6,7 @@ Need **3D printing in Vinkem**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Vinkem teams choose us
 
-- Local delivery to Vinkem, Cabourduinen and grenszone and Beauvoorde omgeving, De Moeren and Adinkerke; pickup in Herzele.
+- Shipping to Vinkem, Cabourduinen and grenszone and Beauvoorde omgeving, De Moeren and Adinkerke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Vinkem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Vinkem, Vinkem village center, Cabourduinen and grensz
 
 ---
 
-## Typical drop-off points near Vinkem
+## Typical places we serve near Vinkem
 
 - Vinkem town center
 - local business park in Vinkem

@@ -9,7 +9,7 @@
 - **Snelle offerte**: u weet snel waar u aan toe bent.
 - **Korte doorlooptijd**: meestal enkele werkdagen.
 - **Nauwkeurige prints**: geschikt voor prototypes en functionele onderdelen.
-- **Lokale levering**: in alle deelgemeenten van Assenede.
+- **Verzending**: naar alle deelgemeenten van Assenede; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -73,7 +73,7 @@ Met rapid prototyping test u vorm en pasvorm snel, zodat u sneller kan bijsturen
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -92,7 +92,7 @@ Met rapid prototyping test u vorm en pasvorm snel, zodat u sneller kan bijsturen
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Assenede?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting De dorpskern met de Sint-Petrus en Martinuskerk. of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar de dorpskern met de Sint-Petrus en Martinuskerk of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Assenede?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

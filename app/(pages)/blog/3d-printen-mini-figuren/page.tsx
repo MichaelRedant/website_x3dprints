@@ -287,15 +287,16 @@ export default function BlogMiniaturesPage() {
             <GlassCard className="h-full p-6">
               <h3 className="text-xl font-semibold tracking-tight text-slate-900">Levering zonder schade</h3>
               <p className="mt-2 text-sm text-slate-700">
-                Breekbare minis en scenery leveren we persoonlijk (elektrisch) in zones vanaf Herzele. We verpakken
-                onderdelen gescheiden met schuim en kraftpapier. Verder dan 75 km? Dan schakelen we over op pakketdienst
-                met dubbele doos en fragile-label.
+                Breekbare minis en scenery verzenden we zorgvuldig: we verpakken onderdelen gescheiden met schuim en
+                kraftpapier, in een dubbele doos met fragile-label. Liever zelf ophalen? Afhalen is gratis, 24 op 7, in de
+                beveiligde afhaalbox in Herzele.
               </p>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                <li>Zone 1 (tot 25 km): €15</li>
-                <li>Zone 2 (25-50 km): €30</li>
-                <li>Zone 3 (50-75 km): €45</li>
-                <li>&gt; 75 km: maatwerk of pakketdienst</li>
+                <li>Verzending tot 2 kg: €7,50</li>
+                <li>Verzending tot 5 kg: €8</li>
+                <li>Verzending tot 10 kg: €9</li>
+                <li>Zwaarder dan 10 kg: op aanvraag</li>
+                <li>Afhalen in de afhaalbox in Herzele: gratis</li>
               </ul>
             </GlassCard>
           </Reveal>
@@ -322,7 +323,7 @@ export default function BlogMiniaturesPage() {
                 <Link href="/contact" className="text-indigo-700 underline underline-offset-2">
                   contact
                 </Link>{" "}
-                met schaal, materiaal en leverzone. We antwoorden doorgaans binnen een werkdag.
+                met schaal, materiaal en je voorkeur voor verzending of afhalen. We antwoorden doorgaans binnen een werkdag.
               </p>
             </GlassCard>
           </Reveal>

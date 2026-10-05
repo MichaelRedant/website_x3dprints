@@ -6,7 +6,7 @@ Need **3D printing in Hekelgem**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Hekelgem teams choose us
 
-- Local delivery to Hekelgem; pickup in Herzele.
+- Shipping to Hekelgem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Hekelgem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Hekelgem, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Hekelgem
+## Typical places we serve near Hekelgem
 
 - Hekelgem town center
 - local business park in Hekelgem

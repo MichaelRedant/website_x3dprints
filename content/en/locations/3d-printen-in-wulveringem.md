@@ -6,7 +6,7 @@ Need **3D printing in Wulveringem**? X3DPrints prints in Herzele and ships quick
 
 ## Why Wulveringem teams choose us
 
-- Local delivery to Wulveringem, Kasteel Beauvoorde and Alveringem and Veurne corridor, Polderbedrijven towards Vinkem; pickup in Herzele.
+- Shipping to Wulveringem, Kasteel Beauvoorde and Alveringem and Veurne corridor, Polderbedrijven towards Vinkem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Wulveringem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

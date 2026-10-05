@@ -39,7 +39,7 @@ export const servicesFaqNl = [
   },
   {
     q: "Welke regio leveren jullie?",
-    a: 'Productie gebeurt vanuit Herzele/Gent; we verzenden binnen Belgie of je haalt af in overleg. Zie lokale pagina\'s onder <a href="/locaties">/locaties</a>.',
+    a: 'Productie gebeurt vanuit Herzele/Gent; we verzenden binnen Belgie of je haalt gratis af, 24 op 7, in de afhaalbox in Herzele. Zie lokale pagina\'s onder <a href="/locaties">/locaties</a>.',
   },
 ]
 
@@ -82,7 +82,7 @@ export const servicesFaqEn = [
   },
   {
     q: "Which region do you serve?",
-    a: 'Production happens in Herzele/Ghent; we ship within Belgium or you can pick up by arrangement. See local pages under <a href="/en/locaties">/locaties</a>.',
+    a: 'Production happens in Herzele/Ghent; we ship within Belgium or you can use the free 24/7 pickup box in Herzele. See local pages under <a href="/en/locaties">/locaties</a>.',
   },
 ]
 

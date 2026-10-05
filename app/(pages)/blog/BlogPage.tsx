@@ -929,7 +929,7 @@ const TOPICS_NL: Topic[] = [
     highlights: [
       "Basistarieven starten vanaf het PLA Matte referentieprofiel; specials zoals Silk, Marble of TPU hebben een opslag van 20-30%.",
       "Printtijd hangt af van laaghoogte en vulling. Fijne lagen (0.12 mm) zien er top uit, maar hebben 15-25% meer machine-uren.",
-      "Logistiek (Bpost, afhalen of persoonlijke levering) telt mee in de eindfactuur. Binnen regio Herzele/Gent is afhalen gratis.",
+      "Logistiek telt mee in de eindfactuur: verzending kost vanaf EUR 7,50, volgens het gewicht van je pakket. Afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.",
     ],
     links: [
       { label: "Lees volledig artikel", href: "/blog/hoeveel-kost-3d-printen" },
@@ -1073,7 +1073,7 @@ const TOPICS_NL: Topic[] = [
     highlights: [
       "Detail: 0.12-0.16 mm layers en orientatie met gezicht naar boven voor supportvrije features.",
       "Materialen: PLA Matte voor strak zichtwerk, PETG voor robuuste props/terrain, TPU voor rubber feet onder dice towers.",
-      "Levering: persoonlijke EV-levering in zones of pakketdienst; breekbare minis afzonderlijk verpakt.",
+      "Levering: verzending of gratis afhalen in de afhaalbox in Herzele, 24 op 7; breekbare minis afzonderlijk verpakt.",
     ],
     links: [
       { label: "Lees volledig artikel", href: "/blog/3d-printen-mini-figuren" },
@@ -1087,7 +1087,7 @@ const TOPICS_NL: Topic[] = [
     id: "3d-printen-herfst-halloween",
     title: "3D printen voor herfst & Halloween",
     summary:
-      "Pumpkins, haunted props en lantaarns in Silk/Marble/Translucent PLA. Incl. tips voor leds, wanddiktes en leverzones.",
+      "Pumpkins, haunted props en lantaarns in Silk/Marble/Translucent PLA. Incl. tips voor leds, wanddiktes en verzending.",
     highlights: [
       "Silk/Marble voor luxe glans, Translucent voor lichtgloed.",
       "Layer 0.16-0.2 mm; wand > 1.2 mm voor stevige decor.",
@@ -1141,7 +1141,7 @@ const TOPICS_NL: Topic[] = [
     id: "3d-printen-winter-kerst-nieuwjaar",
     title: "3D printen voor winter, Kerst & Nieuwjaar",
     summary:
-      "Ornamenten, sneeuwvlokken en party props in Silk/Marble/Translucent PLA. Levering via EV-zones of pakketdienst.",
+      "Ornamenten, sneeuwvlokken en party props in Silk/Marble/Translucent PLA. Verzending of gratis afhalen in de afhaalbox in Herzele, 24 op 7.",
     highlights: [
       "Silk/Marble voor glans, Translucent voor lichtobjecten.",
       "Oogjes integreren, wand 1.6-2 mm voor diffuse gloed.",
@@ -1181,7 +1181,7 @@ const TOPICS_NL: Topic[] = [
     highlights: [
       "Silk/Marble voor luxe look, Matte voor zachte pastels, Translucent voor led-gloed.",
       "Uitsparingen voor leds/magneten en antislip feet in TPU.",
-      "Ontwerp niet inbegrepen; ontwerpservice 45/uur, leveropties EV of pakketdienst.",
+      "Ontwerp niet inbegrepen; ontwerpservice 45/uur, verzending of gratis afhalen in de afhaalbox in Herzele.",
     ],
     links: [
       { label: "Lees volledig artikel", href: "/blog/3d-printen-valentijn" },
@@ -1199,7 +1199,7 @@ const TOPICS_NL: Topic[] = [
     highlights: [
       "Silk/Matte PLA voor look, PETG voor sterkere items.",
       "Tekstdiepte > 0.6 mm en afgeronde randen voor dagelijks gebruik.",
-      "Ontwerpservice 45/uur, levering via EV of pakketdienst.",
+      "Ontwerpservice 45/uur, verzending of gratis afhalen in de afhaalbox in Herzele.",
     ],
     links: [
       { label: "Lees volledig artikel", href: "/blog/3d-printen-vaderdag-moederdag" },
@@ -1217,7 +1217,7 @@ const TOPICS_NL: Topic[] = [
     highlights: [
       "Silk/Matte voor look, PETG voor sterkte, TPU voor grip.",
       "Tekstdiepte > 0.6 mm en afgeronde randen voor dagelijks gebruik.",
-      "Ontwerpservice 45/uur; levering via EV of pakketdienst.",
+      "Ontwerpservice 45/uur; verzending of gratis afhalen in de afhaalbox in Herzele.",
     ],
     links: [
       { label: "Lees volledig artikel", href: "/blog/relatiegeschenken-3d-printen" },
@@ -1379,7 +1379,7 @@ const TOPICS_NL: Topic[] = [
     highlights: [
       "Machine-uren varieren van minder dan een uur tot meer dan een dag per onderdeel. We adviseren hoe je geometrie optimaliseert.",
       "Door onderdelen te groeperen per materiaal verkort je de wachtrij en hoef je minder vaak van spool te wisselen.",
-      "Afhalen, Bpost of persoonlijke levering: we stemmen logistiek af op jouw deadline zodat het geheel blijft kloppen.",
+      "Verzending of gratis afhalen in de afhaalbox in Herzele, 24 op 7: we plannen de productie op jouw deadline zodat het geheel blijft kloppen.",
     ],
     links: [
       { label: "Lees volledig artikel", href: "/blog/hoe-lang-duurt-3d-printen" },
@@ -1413,8 +1413,8 @@ const TOPICS_NL: Topic[] = [
     summary:
       "X3DPrints levert vanuit Herzele voor Gent, Aalst en Dendermonde. Lees hoe we lokale projecten aanpakken, wat de logistieke opties zijn en welke voorbeelden we al maakten.",
     highlights: [
-      "Korte lijnen: rechtstreeks contact met de maker en afhalen op afspraak in Herzele (tussen Gent en Aalst).",
-      "Persoonlijke levering in Dendermonde, Aalst of Gent bespreekbaar; anders verzenden via Bpost met track en trace.",
+      "Korte lijnen: rechtstreeks contact met de maker en gratis afhalen, 24 op 7, in de afhaalbox in Herzele (tussen Gent en Aalst).",
+      "Verzending naar Dendermonde, Aalst, Gent en de rest van België, met track en trace.",
       "Voorbeelden: winkelmateriaal, prototypes en personalisatie voor events; bekijk de portfolio voor inspiratie.",
     ],
     links: [
@@ -2339,7 +2339,7 @@ const TOPICS_EN: Topic[] = [
     highlights: [
       "Base rates start from the PLA Matte reference profile; specials like Silk, Marble or TPU add 20-30%.",
       "Print time depends on layer height and infill. Fine layers (0.12 mm) look great but add 15-25% more machine hours.",
-      "Logistics (Bpost, pickup or personal delivery) factor into the final invoice. Pickup in the Herzele/Ghent region can be free.",
+      "Logistics factor into the final invoice: shipping starts at EUR 7.50, based on parcel weight. Pickup is free, 24/7, from the pickup box in Herzele.",
     ],
     links: [
       { label: "Read full article", href: "/blog/hoeveel-kost-3d-printen" },
@@ -2483,7 +2483,7 @@ const TOPICS_EN: Topic[] = [
     highlights: [
       "Detail: 0.12-0.16 mm layers and orientation with the face up for support-free features.",
       "Materials: PLA Matte for clean visuals, PETG for sturdy props/terrain, TPU for rubber feet under dice towers.",
-      "Delivery: personal EV delivery by zone or parcel service; fragile minis packed separately.",
+      "Delivery: shipping or free pickup, 24/7, from the pickup box in Herzele; fragile minis packed separately.",
     ],
     links: [
       { label: "Read full article", href: "/blog/3d-printen-mini-figuren" },
@@ -2497,7 +2497,7 @@ const TOPICS_EN: Topic[] = [
     id: "3d-printen-herfst-halloween",
     title: "3D printing for autumn and Halloween",
     summary:
-      "Pumpkins, haunted props and lanterns in Silk/Marble/Translucent PLA. Includes tips for LEDs, wall thickness and delivery zones.",
+      "Pumpkins, haunted props and lanterns in Silk/Marble/Translucent PLA. Includes tips for LEDs, wall thickness and shipping.",
     highlights: [
       "Silk/Marble for premium shine, Translucent for light glow.",
       "Layer 0.16-0.2 mm; wall > 1.2 mm for sturdy decor.",
@@ -2551,7 +2551,7 @@ const TOPICS_EN: Topic[] = [
     id: "3d-printen-winter-kerst-nieuwjaar",
     title: "3D printing for winter, Christmas and New Year",
     summary:
-      "Ornaments, snowflakes and party props in Silk/Marble/Translucent PLA. Delivery via EV zones or parcel service.",
+      "Ornaments, snowflakes and party props in Silk/Marble/Translucent PLA. Shipping or free pickup, 24/7, from the pickup box in Herzele.",
     highlights: [
       "Silk/Marble for shine, Translucent for light objects.",
       "Integrate eyelets, wall 1.6-2 mm for diffuse glow.",
@@ -2591,7 +2591,7 @@ const TOPICS_EN: Topic[] = [
     highlights: [
       "Silk/Marble for premium look, Matte for soft pastels, Translucent for LED glow.",
       "Cutouts for LEDs/magnets and anti-slip feet in TPU.",
-      "Design not included; design service 45/hour, delivery via EV or parcel.",
+      "Design not included; design service 45/hour, shipping or free pickup from the pickup box in Herzele.",
     ],
     links: [
       { label: "Read full article", href: "/blog/3d-printen-valentijn" },
@@ -2609,7 +2609,7 @@ const TOPICS_EN: Topic[] = [
     highlights: [
       "Silk/Matte PLA for looks, PETG for stronger items.",
       "Text depth > 0.6 mm and rounded edges for daily use.",
-      "Design service 45/hour, delivery via EV or parcel.",
+      "Design service 45/hour, shipping or free pickup from the pickup box in Herzele.",
     ],
     links: [
       { label: "Read full article", href: "/blog/3d-printen-vaderdag-moederdag" },
@@ -2627,7 +2627,7 @@ const TOPICS_EN: Topic[] = [
     highlights: [
       "Silk/Matte for looks, PETG for strength, TPU for grip.",
       "Text depth > 0.6 mm and rounded edges for daily use.",
-      "Design service 45/hour; delivery via EV or parcel.",
+      "Design service 45/hour; shipping or free pickup from the pickup box in Herzele.",
     ],
     links: [
       { label: "Read full article", href: "/blog/relatiegeschenken-3d-printen" },
@@ -2789,7 +2789,7 @@ const TOPICS_EN: Topic[] = [
     highlights: [
       "Machine hours range from less than an hour to more than a day per part. We advise on geometry to optimize time.",
       "Grouping parts per material shortens the queue and reduces spool swaps.",
-      "Pickup, Bpost or personal delivery: we align logistics to your deadline so the whole project stays on track.",
+      "Shipping or free pickup, 24/7, from the pickup box in Herzele: we plan production around your deadline so the whole project stays on track.",
     ],
     links: [
       { label: "Read full article", href: "/blog/hoe-lang-duurt-3d-printen" },
@@ -2880,8 +2880,8 @@ const TOPICS_EN: Topic[] = [
     summary:
       "X3DPrints delivers from Herzele for Ghent, Aalst and Dendermonde. Learn how we handle local projects, what logistics options exist and examples we have delivered.",
     highlights: [
-      "Short lines: direct contact with the maker and pickup by appointment in Herzele (between Ghent and Aalst).",
-      "Personal delivery in Dendermonde, Aalst or Ghent possible; otherwise ship via Bpost with track and trace.",
+      "Short lines: direct contact with the maker and free pickup, 24/7, from the pickup box in Herzele (between Ghent and Aalst).",
+      "Shipping to Dendermonde, Aalst, Ghent and the rest of Belgium, with track and trace.",
       "Examples: retail materials, prototypes and event personalization; see the portfolio for inspiration.",
     ],
     links: [

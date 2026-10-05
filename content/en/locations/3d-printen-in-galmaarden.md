@@ -6,7 +6,7 @@ Need **3D printing in Galmaarden**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Galmaarden teams choose us
 
-- Local delivery to Galmaarden, Vollezele and Tollembeek, Levering Pajottenland; pickup in Herzele.
+- Shipping to Galmaarden, Vollezele and Tollembeek, Levering Pajottenland; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Galmaarden.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

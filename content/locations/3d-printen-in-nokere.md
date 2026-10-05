@@ -7,7 +7,7 @@ Nokere is bekend om de Nokereberg en Nokere Koerse. X3DPrints levert hier snelle
 ## Waarom X3DPrints voor Nokere?
 
 - **Snelle levering**: 2-5 werkdagen; spoed in overleg.  
-- **Levering** richting Nokereberg, dorpskern en Nokeredorp; afhalen in Herzele kan.  
+- **Verzending** naar Nokereberg, dorpskern en Nokeredorp; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA voor trofee- en displaywerk, PETG voor outdoor opstellingen langs kasseihellingen, TPU voor flexibele klemmen en dempers.  
 - **Duidelijke prijzen**: zie [pricing](/pricing) of vraag direct via [contact](/contact).
 
@@ -37,7 +37,7 @@ In Nokere helpen we makers en bedrijven met 3D prints die vlot passen en lang me
 
 1) Deel een STL/STEP-link via [contact](/contact) met afmetingen en toepassing.  
 2) Wij adviseren orientatie en materiaalkeuze.  
-3) Print, QC en levering in Nokere of afhalen.
+3) Print, QC en verzending naar Nokere of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Check kleuren op [materials](/materials), controleer je model in de [viewer](/viewer), en bekijk sectorcases op [segments](/segments). Tips vind je in de [blog](/blog).
 

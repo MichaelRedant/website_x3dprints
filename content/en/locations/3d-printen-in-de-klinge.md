@@ -6,7 +6,7 @@ Need **3D printing in De Klinge**? X3DPrints prints in Herzele and ships quickly
 
 ## Why De Klinge teams choose us
 
-- Local delivery to De Klinge, Sint-Gillis-Waas and Meerdonk, Sint-Pauwels; pickup in Herzele.
+- Shipping to De Klinge, Sint-Gillis-Waas and Meerdonk, Sint-Pauwels; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in De Klinge.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: De Klinge, De Klinge city center, Sint-Gillis-Waas, Me
 
 ---
 
-## Typical drop-off points near De Klinge
+## Typical places we serve near De Klinge
 
 - De Klinge town center
 - local business park in De Klinge

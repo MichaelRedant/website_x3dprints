@@ -7,7 +7,7 @@ Deurle ligt langs de Leie met musea zoals Dhondt-Dhaenens en pittoreske natuur. 
 ## Waarom X3DPrints voor Deurle?
 
 - **Snelle doorlooptijd**: 2-5 werkdagen; spoed in overleg.  
-- **Levering** richting Leieboorden, musea en dorpskern; afhalen in Herzele kan.  
+- **Verzending** naar Leieboorden, musea en dorpskern; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA Matte/Silk voor kunst- en designwerk, PETG voor buiten of vochtige omgevingen, TPU voor flexibele klemmen.  
 - **Transparante prijzen**: zie [pricing](/pricing) of vraag via [contact](/contact).
 
@@ -37,7 +37,7 @@ Voor projecten in Deurle combineren we korte doorlooptijd met strakke afwerking.
 
 1) Deel een STL/STEP-link via [contact](/contact) met toepassing en aantallen.  
 2) Wij adviseren orientatie en materiaal.  
-3) Print, QC en levering in Deurle of afhalen.
+3) Print, QC en verzending naar Deurle of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Bekijk ook [materials](/materials), de [viewer](/viewer), sectorcases op [segments](/segments) en tips in de [blog](/blog).
 
@@ -54,7 +54,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Deurle?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 <!-- LOCAL_ENRICH_START -->
 ## Lokale accenten voor Deurle (Sint-Martens-Latem)

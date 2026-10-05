@@ -58,7 +58,7 @@ Ja. We maken zowel kleine als grotere series met consistente passing en duidelij
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Hombeek?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Hombeek of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Hombeek of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ## Interne links
 - [3D printen in Mechelen](/3d-printen-in-mechelen)

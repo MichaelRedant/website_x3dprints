@@ -6,7 +6,7 @@ Need **3D printing in De Moeren**? X3DPrints prints in Herzele and ships quickly
 
 ## Why De Moeren teams choose us
 
-- Local delivery to De Moeren, De Moeren laagte and Landbouwbedrijven langs de plassen; pickup in Herzele.
+- Shipping to De Moeren, De Moeren laagte and Landbouwbedrijven langs de plassen; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in De Moeren.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: De Moeren, De Moeren laagte, border area Frankrijk, Ad
 
 ---
 
-## Typical drop-off points near De Moeren
+## Typical places we serve near De Moeren
 
 - De Moeren town center
 - local business park in De Moeren

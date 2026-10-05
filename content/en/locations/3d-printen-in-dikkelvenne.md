@@ -6,7 +6,7 @@ Need **3D printing in Dikkelvenne**? X3DPrints prints in Herzele and ships quick
 
 ## Why Dikkelvenne teams choose us
 
-- Local delivery to Dikkelvenne, Gavere and Baaigem, Vurste; pickup in Herzele.
+- Shipping to Dikkelvenne, Gavere and Baaigem, Vurste; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Dikkelvenne.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

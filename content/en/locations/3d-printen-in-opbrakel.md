@@ -6,7 +6,7 @@ Need **3D printing in Opbrakel**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Opbrakel teams choose us
 
-- Local delivery to Opbrakel; pickup in Herzele.
+- Shipping to Opbrakel; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Opbrakel.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Opbrakel, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Opbrakel
+## Typical places we serve near Opbrakel
 
 - Opbrakel town center
 - local business park in Opbrakel

@@ -8,7 +8,7 @@ Met **3D printen in Wezembeek-Oppem** leveren we prototypes, behuizingen en tool
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk en sterke onderdelen.
-- EV-levering richting Wezembeek/Oppem en R0; afhalen in Herzele kan.
+- Verzending naar Wezembeek en Oppem; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Met **3D printen in Wezembeek-Oppem** leveren we prototypes, behuizingen en tool
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via N3/R0; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

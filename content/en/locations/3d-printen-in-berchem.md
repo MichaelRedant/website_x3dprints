@@ -6,7 +6,7 @@ Need **3D printing in Berchem** for a presentation model, office prototype or ev
 
 ## Why Berchem teams choose us
 
-- Local delivery to Berchem, Zurenborg and Groen Kwartier, Antwerpen-Zuid; pickup in Herzele.
+- Shipping to Berchem, Zurenborg and Groen Kwartier, Antwerpen-Zuid; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Berchem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

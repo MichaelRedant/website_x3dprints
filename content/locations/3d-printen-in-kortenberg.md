@@ -8,7 +8,7 @@ Voor **3D printen in Kortenberg** leveren we prototypes, behuizingen en tooling 
 
 - Offerte binnen één werkdag, transparante prijzen.
 - PLA Matte, PETG en TPU voor zichtwerk en sterke onderdelen.
-- EV-levering richting Kortenberg en deelgemeenten; afhalen in Herzele kan.
+- Verzending naar Kortenberg en deelgemeenten; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Voor **3D printen in Kortenberg** leveren we prototypes, behuizingen en tooling 
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via E40/N2; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

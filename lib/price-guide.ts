@@ -28,6 +28,7 @@ type GuideMaterial = {
   page?: MaterialKey
 }
 
+// Carbon Fibre-materialen staan er bewust niet in: niet op voorraad (2026-10-05).
 export const GUIDE_MATERIALS = {
   PLA_MATTE: { label: { nl: "PLA Matte", en: "PLA Matte" }, rateKey: "PLA_MATTE", page: "PLA_MATTE" },
   PLA_BASIC: { label: { nl: "PLA Basic", en: "PLA Basic" }, rateKey: "PLA_BASIC", page: "PLA_BASIC" },
@@ -36,8 +37,6 @@ export const GUIDE_MATERIALS = {
   PC: { label: { nl: "Polycarbonaat", en: "Polycarbonate" }, rateKey: "PC", page: "PC" },
   TPU: { label: { nl: "TPU (flexibel)", en: "TPU (flexible)" }, rateKey: "TPU", page: "TPU" },
   ASA: { label: { nl: "ASA", en: "ASA" }, rateKey: "ASA" },
-  ASA_CF: { label: { nl: "ASA Carbon Fibre", en: "ASA Carbon Fibre" }, rateKey: "ASA_CF" },
-  PAHT_CF: { label: { nl: "Nylon Carbon Fibre (PAHT-CF)", en: "Nylon Carbon Fibre (PAHT-CF)" }, rateKey: "PAHT_CF" },
 } satisfies Record<string, GuideMaterial>
 
 export type GuideMaterialId = keyof typeof GUIDE_MATERIALS
@@ -118,15 +117,6 @@ export const GUIDE_OPTIONS: Record<GuideUse, GuideOptionDef[]> = {
         en: "Resists sun, rain and temperature swings. Keeps its shape and colour outdoors.",
       },
     },
-    {
-      level: "premium",
-      material: "ASA_CF",
-      quality: "Standaard",
-      why: {
-        nl: "ASA met carbon fibre: stijver, met een strakke matte afwerking.",
-        en: "ASA with carbon fibre: stiffer, with a clean matte finish.",
-      },
-    },
   ],
   heat: [
     {
@@ -185,15 +175,6 @@ export const GUIDE_OPTIONS: Record<GuideUse, GuideOptionDef[]> = {
       why: {
         nl: "Hoge sterkte en slagvastheid voor zwaarder belaste onderdelen.",
         en: "High strength and impact resistance for parts under heavier load.",
-      },
-    },
-    {
-      level: "premium",
-      material: "PAHT_CF",
-      quality: "Standaard",
-      why: {
-        nl: "Nylon met carbon fibre: zeer stijf, sterk en hittebestendig, en neemt weinig vocht op.",
-        en: "Nylon with carbon fibre: very stiff, strong and heat resistant, with low moisture uptake.",
       },
     },
   ],

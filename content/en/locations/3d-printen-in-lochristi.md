@@ -6,7 +6,7 @@ Need **3D printing in Lochristi**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Lochristi teams choose us
 
-- Local delivery to Lochristi, Beervelde and Zaffelare, Zeveneken; pickup in Herzele.
+- Shipping to Lochristi, Beervelde and Zaffelare, Zeveneken; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Lochristi.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

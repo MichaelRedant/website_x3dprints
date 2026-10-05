@@ -6,7 +6,7 @@ Need **3D printing in Zwijnaarde**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Zwijnaarde teams choose us
 
-- Local delivery to Zwijnaarde; pickup in Herzele.
+- Shipping to Zwijnaarde; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Zwijnaarde.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

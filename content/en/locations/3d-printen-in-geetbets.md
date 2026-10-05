@@ -6,7 +6,7 @@ Need **3D printing in Geetbets**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Geetbets teams choose us
 
-- Local delivery to Geetbets, Grazen and Rummen, Demerzone; pickup in Herzele.
+- Shipping to Geetbets, Grazen and Rummen, Demerzone; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Geetbets.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

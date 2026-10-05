@@ -6,7 +6,7 @@ Need **3D printing in Sinaai**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Sinaai teams choose us
 
-- Local delivery to Sinaai, Sint-Niklaas and Belsele, Lokeren; pickup in Herzele.
+- Shipping to Sinaai, Sint-Niklaas and Belsele, Lokeren; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sinaai.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Sinaai, Sinaai city center, Sint-Niklaas, Belsele, Lok
 
 ---
 
-## Typical drop-off points near Sinaai
+## Typical places we serve near Sinaai
 
 - Sinaai town center
 - local business park in Sinaai

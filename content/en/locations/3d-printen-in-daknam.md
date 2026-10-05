@@ -6,7 +6,7 @@ Need **3D printing in Daknam**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Daknam teams choose us
 
-- Local delivery to Daknam, Lokeren and Eksaarde, Moerbeke-Waas; pickup in Herzele.
+- Shipping to Daknam, Lokeren and Eksaarde, Moerbeke-Waas; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Daknam.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Daknam, Daknam city center, Lokeren, Eksaarde, Moerbek
 
 ---
 
-## Typical drop-off points near Daknam
+## Typical places we serve near Daknam
 
 - Daknam town center
 - local business park in Daknam

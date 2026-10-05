@@ -6,7 +6,7 @@ Need **3D printing in Deftinge**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Deftinge teams choose us
 
-- Local delivery to Deftinge, Lierde and Hemelveerdegem, Sint-Maria-Lierde; pickup in Herzele.
+- Shipping to Deftinge, Lierde and Hemelveerdegem, Sint-Maria-Lierde; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Deftinge.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Deftinge, Deftinge city center, Lierde, Hemelveerdegem
 
 ---
 
-## Typical drop-off points near Deftinge
+## Typical places we serve near Deftinge
 
 - Deftinge town center
 - local business park in Deftinge

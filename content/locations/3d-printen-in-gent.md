@@ -106,7 +106,7 @@ Ook aanvragen uit Destelbergen, Merelbeke-Melle en de ruimere Gentse regio zijn 
 ## Veelgestelde vragen over 3D printen in Gent
 
 **Is X3DPrints gevestigd in Gent?**
-Nee. De studio bevindt zich in Herzele. We produceren daar en verzenden naar Gent en de deelgemeenten. Afhalen in Herzele kan op afspraak.
+Nee. De studio bevindt zich in Herzele. We produceren daar en verzenden naar Gent en de deelgemeenten. Gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe snel ontvang ik mijn 3D print in Gent?**
 Dat hangt af van het model, materiaal, aantal en de actuele planning. Je offerte bevat een concrete inschatting. Vermeld een deadline bij je aanvraag, zodat we vooraf kunnen bevestigen of die haalbaar is.

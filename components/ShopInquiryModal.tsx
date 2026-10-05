@@ -56,7 +56,7 @@ const COPY = {
     notePlaceholder: "Bijvoorbeeld gewenste timing, facturatie-info of extra vraag.",
     shippingTitle: "Levering en afhalen",
     shippingBody:
-      "Levering in Belgie: EUR 7.50 tot 3 kg. Afhalen op afspraak in Herzele blijft mogelijk. We bevestigen eerst aantal en praktische details per mail.",
+      "Verzending in Belgie: EUR 7,50 tot 2 kg, EUR 8 tot 5 kg, EUR 9 tot 10 kg. Afhalen is gratis, 24 op 7, in de afhaalbox in Herzele. We bevestigen eerst aantal en praktische details per mail.",
     stockHint: (count: number) => `Huidige voorraad volgens de shop: ${count} stuks.`,
     close: "Sluiten",
     submit: "Verstuur shopaanvraag",
@@ -95,7 +95,7 @@ const COPY = {
     notePlaceholder: "For example preferred timing, invoicing info, or an extra question.",
     shippingTitle: "Delivery and pickup",
     shippingBody:
-      "Delivery in Belgium: EUR 7.50 up to 3 kg. Pickup by appointment in Herzele remains possible. We first confirm quantity and practical details by email.",
+      "Shipping in Belgium: EUR 7.50 up to 2 kg, EUR 8 up to 5 kg, EUR 9 up to 10 kg. Pickup is free, 24/7, from the pickup box in Herzele. We first confirm quantity and practical details by email.",
     stockHint: (count: number) => `Current stock shown in the shop: ${count} units.`,
     close: "Close",
     submit: "Send shop request",

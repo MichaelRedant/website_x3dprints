@@ -85,7 +85,7 @@ Werk je in Rumst? We leveren snelle prototypes en zowel kleine als grotere serie
 
 **Leveren jullie ook in Rumst?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Rumst?**
 

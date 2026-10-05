@@ -6,7 +6,7 @@ Need **3D printing in Eine (Oudenaarde)**? X3DPrints prints in Herzele and ships
 
 ## Why Eine (Oudenaarde) teams choose us
 
-- Local delivery to Eine (Oudenaarde); pickup in Herzele.
+- Shipping to Eine (Oudenaarde); free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Eine (Oudenaarde).
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

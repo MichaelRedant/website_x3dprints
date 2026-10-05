@@ -6,7 +6,7 @@ Need **3D printing in Schelderode**? X3DPrints prints in Herzele and ships quick
 
 ## Why Schelderode teams choose us
 
-- Local delivery to Schelderode, Merelbeke and Melsen, Munte; pickup in Herzele.
+- Shipping to Schelderode, Merelbeke and Melsen, Munte; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Schelderode.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

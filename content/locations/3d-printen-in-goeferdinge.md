@@ -66,7 +66,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Goeferdinge?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 <!-- LOCAL_ENRICH_START -->
 ## Lokale accenten voor Goeferdinge

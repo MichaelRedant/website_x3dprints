@@ -23,7 +23,7 @@
 
 ## Lokale focus in Petegem-aan-de-Schelde
 
-Werk je in Petegem-aan-de-Schelde? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Petegem-aan-de-Schelde.
+Werk je in Petegem-aan-de-Schelde? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending naar Petegem-aan-de-Schelde.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Kleine en grotere series onderdelen met consistente passing.
@@ -73,7 +73,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -92,7 +92,7 @@ Test onderdelen snel en stuur bij waar nodig.
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Petegem-aan-de-Schelde?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Petegem-aan-de-Schelde of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Petegem-aan-de-Schelde of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Petegem-aan-de-Schelde?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

@@ -7,7 +7,7 @@ Voor projecten rond de abdijsite, Archeopark en Scheldevallei levert X3DPrints n
 ## Waarom X3DPrints in Ename?
 
 - **Korte lijnen**: offerte meestal binnen 24 uur.  
-- **Levering** richting Archeopark, Abdijstraat en Scheldekaaien; afhalen in Herzele kan.  
+- **Verzending** naar Archeopark, Abdijstraat en Scheldekaaien; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaalkeuze**: PLA Matte voor museale maquettes, PETG voor buitenobjecten langs de rivier, TPU voor flexibele beschermers.  
 - **Transparante prijzen**: bekijk [pricing](/pricing) of start via [contact](/contact).
 
@@ -37,7 +37,7 @@ Zoek je 3D printen in Ename (Oudenaarde)? We denken mee over passing, sterkte en
 
 1) Deel een link naar je STL/STEP via [contact](/contact) en noteer toepassing + aantallen.  
 2) Wij adviseren materiaal en orientatie.  
-3) Print, QC en levering in Ename of afhalen.
+3) Print, QC en verzending naar Ename of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Meer weten? Check [materials](/materials), [viewer](/viewer) en sectorcases op [segments](/segments). Tips vind je op de [blog](/blog).
 

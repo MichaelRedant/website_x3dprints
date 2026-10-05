@@ -111,7 +111,7 @@ Ninove vormt samen met haar deelgemeenten een economisch centrum langs de Dender
 2. Kies materiaal en gewenste afwerking.
 3. Ontvang binnen 24 uur een transparante offerte.
 4. Na akkoord starten we met **3D printen in Ninove**.
-5. Ophalen in de regio of verzending volgens afspraak.
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 Alle bestanden worden vertrouwelijk behandeld; bijsturing gebeurt in overleg.
 
@@ -122,7 +122,7 @@ Alle bestanden worden vertrouwelijk behandeld; bijsturing gebeurt in overleg.
 - **Standaard levering**: 2 tot 5 werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: volgens tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Ninove of omgeving.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -145,7 +145,7 @@ Alle bestanden worden vertrouwelijk behandeld; bijsturing gebeurt in overleg.
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Ninove?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Ninove of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Ninove of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Ninove?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

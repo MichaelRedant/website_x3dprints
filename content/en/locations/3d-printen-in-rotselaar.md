@@ -6,7 +6,7 @@ Need **3D printing in Rotselaar**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Rotselaar teams choose us
 
-- Local delivery to Rotselaar, Wezemaal and Werchter, E314-corridor; pickup in Herzele.
+- Shipping to Rotselaar, Wezemaal and Werchter, E314-corridor; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Rotselaar.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Rotselaar, Rotselaar city center, Wezemaal, Werchter, 
 
 ---
 
-## Typical drop-off points near Rotselaar
+## Typical places we serve near Rotselaar
 
 - Rotselaar town center
 - local business park in Rotselaar

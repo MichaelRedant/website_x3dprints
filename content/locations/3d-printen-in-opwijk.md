@@ -8,7 +8,7 @@ Voor **3D printen in Opwijk** leveren we prototypes, behuizingen en tooling rich
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Opwijk/Mazenzele; afhalen in Herzele kan.
+- Verzending naar Opwijk en Mazenzele; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 

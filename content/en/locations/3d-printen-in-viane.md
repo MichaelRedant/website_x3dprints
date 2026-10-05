@@ -6,7 +6,7 @@ Need **3D printing in Viane**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Viane teams choose us
 
-- Local delivery to Viane; pickup in Herzele.
+- Shipping to Viane; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Viane.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

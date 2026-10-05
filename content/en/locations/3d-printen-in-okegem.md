@@ -6,7 +6,7 @@ Need **3D printing in Okegem**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Okegem teams choose us
 
-- Local delivery to Okegem; pickup in Herzele.
+- Shipping to Okegem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Okegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Okegem, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Okegem
+## Typical places we serve near Okegem
 
 - Okegem town center
 - local business park in Okegem

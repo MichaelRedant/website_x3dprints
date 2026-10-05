@@ -1,6 +1,6 @@
 # 3D printen in Tielt-Winge: Hageland langs N2/N29
 
-Met **3D printen in Tielt-Winge** leveren we prototypes, behuizingen en tooling richting Houwaart, Sint-Joris-Winge en Tielt. Snelle offertes, transparante prijzen en leveringen via N2/N29.
+Met **3D printen in Tielt-Winge** leveren we prototypes, behuizingen en tooling richting Houwaart, Sint-Joris-Winge en Tielt. Snelle offertes, transparante prijzen en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Met **3D printen in Tielt-Winge** leveren we prototypes, behuizingen en tooling 
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Tielt-Winge/Hageland; afhalen in Herzele kan.
+- Verzending naar Tielt-Winge en Hageland; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Met **3D printen in Tielt-Winge** leveren we prototypes, behuizingen en tooling 
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via N2/N29; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

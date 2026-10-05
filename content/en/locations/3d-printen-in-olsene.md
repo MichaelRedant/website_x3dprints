@@ -6,7 +6,7 @@ Need **3D printing in Olsene**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Olsene teams choose us
 
-- Local delivery to Olsene, Zulte and Machelen (Zulte), Astene; pickup in Herzele.
+- Shipping to Olsene, Zulte and Machelen (Zulte), Astene; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Olsene.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

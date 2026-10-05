@@ -6,7 +6,7 @@ Need **3D printing in Rupelmonde**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Rupelmonde teams choose us
 
-- Local delivery to Rupelmonde, Kruibeke and Bazel, Burcht; pickup in Herzele.
+- Shipping to Rupelmonde, Kruibeke and Bazel, Burcht; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Rupelmonde.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Rupelmonde, Rupelmonde city center, Kruibeke, Bazel, B
 
 ---
 
-## Typical drop-off points near Rupelmonde
+## Typical places we serve near Rupelmonde
 
 - Rupelmonde town center
 - local business park in Rupelmonde

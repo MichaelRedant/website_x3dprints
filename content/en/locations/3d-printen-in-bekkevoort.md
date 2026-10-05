@@ -6,7 +6,7 @@ Need **3D printing in Bekkevoort**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Bekkevoort teams choose us
 
-- Local delivery to Bekkevoort, Assent and Molenbeek-Wersbeek, N2/N29-corridor; pickup in Herzele.
+- Shipping to Bekkevoort, Assent and Molenbeek-Wersbeek, N2/N29-corridor; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Bekkevoort.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

@@ -6,7 +6,7 @@ Need **3D printing in Sint-Lievens-Houtem**? X3DPrints prints in Herzele and shi
 
 ## Why Sint-Lievens-Houtem teams choose us
 
-- Local delivery to Sint-Lievens-Houtem; pickup in Herzele.
+- Shipping to Sint-Lievens-Houtem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Lievens-Houtem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

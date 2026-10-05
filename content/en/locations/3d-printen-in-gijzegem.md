@@ -6,7 +6,7 @@ Need **3D printing in Gijzegem**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Gijzegem teams choose us
 
-- Local delivery to Gijzegem; pickup in Herzele.
+- Shipping to Gijzegem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Gijzegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

@@ -72,7 +72,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -88,7 +88,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 ## Veelgestelde vragen over 3D printen in Doel
 
 **Hoe snel is 3D printen in Doel?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Hooghuis of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Hooghuis of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Doel?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

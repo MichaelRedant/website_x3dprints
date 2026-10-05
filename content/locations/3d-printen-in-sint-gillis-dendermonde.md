@@ -17,7 +17,7 @@
 
 ## Lokale focus in Sint-Gillis-Dendermonde
 
-Werk je in Sint-Gillis-Dendermonde? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Gillis-Dendermonde.
+Werk je in Sint-Gillis-Dendermonde? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending naar Sint-Gillis-Dendermonde.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Pasmallen en sjablonen voor montage en assemblage.
@@ -67,7 +67,7 @@ Sint-Gillis grenst aan het centrum van Dendermonde en heeft een eigen dynamiek r
 2. Kies materiaal en afwerking voor **3D printen in Sint-Gillis-Dendermonde**.
 3. Ontvang binnen 24 uur een offerte.
 4. Na akkoord starten we met **3D printen in Sint-Gillis-Dendermonde**.
-5. Ophalen in de regio of verzending volgens afspraak.
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 
@@ -76,7 +76,7 @@ Sint-Gillis grenst aan het centrum van Dendermonde en heeft een eigen dynamiek r
 - **Standaard**: 2–5 werkdagen voor **3D printen in Sint-Gillis-Dendermonde**.
 - **Spoed**: in overleg mogelijk.
 - **Verzending**: tarieven volgens [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de buurt van Sint-Gillis of Borsbeke.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

@@ -20,7 +20,7 @@ Voor **3D printen in Everbeek** (Beneden en Boven) leveren we prototypes en func
 
 - Materiaalkeuze: PLA voor zichtwerk, PETG voor robuuste onderdelen, TPU voor flexibele buffers.
 
-- EV-levering voor breekbare of grotere prints.
+- Zorgvuldig verpakte verzending, ook voor grotere of breekbare prints.
 
 
 
@@ -107,7 +107,7 @@ Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorst
 
 **Leveren jullie ook in Everbeek?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Everbeek?**
 

@@ -6,7 +6,7 @@ Need **3D printing in Idegem**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Idegem teams choose us
 
-- Local delivery to Idegem; pickup in Herzele.
+- Shipping to Idegem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Idegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

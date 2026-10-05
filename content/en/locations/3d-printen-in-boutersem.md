@@ -6,7 +6,7 @@ Need **3D printing in Boutersem**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Boutersem teams choose us
 
-- Local delivery to Boutersem, Vertrijk and Kerkom, N3/Tiense steenweg; pickup in Herzele.
+- Shipping to Boutersem, Vertrijk and Kerkom, N3/Tiense steenweg; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Boutersem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Boutersem, Boutersem city center, Vertrijk, Kerkom, N3
 
 ---
 
-## Typical drop-off points near Boutersem
+## Typical places we serve near Boutersem
 
 - Boutersem town center
 - local business park in Boutersem

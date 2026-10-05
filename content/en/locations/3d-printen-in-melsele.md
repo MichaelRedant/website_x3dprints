@@ -6,7 +6,7 @@ Need **3D printing in Melsele**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Melsele teams choose us
 
-- Local delivery to Melsele, Beveren and Haasdonk, Kallo; pickup in Herzele.
+- Shipping to Melsele, Beveren and Haasdonk, Kallo; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Melsele.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Melsele, Melsele city center, Beveren, Haasdonk, Kallo
 
 ---
 
-## Typical drop-off points near Melsele
+## Typical places we serve near Melsele
 
 - Melsele town center
 - local business park in Melsele

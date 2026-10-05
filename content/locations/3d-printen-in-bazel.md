@@ -22,7 +22,7 @@
 
 ## Lokale focus in Bazel
 
-Werk je in Bazel? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Kasteel Wissekerke.
+Werk je in Bazel? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending in de omgeving van Kasteel Wissekerke.
 
 - Maquettes en detailmodellen voor erfgoed en presentaties.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -72,7 +72,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -88,7 +88,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 ## Veelgestelde vragen over 3D printen in Bazel
 
 **Hoe snel is 3D printen in Bazel?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Kasteel Wissekerke of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending in de omgeving van Kasteel Wissekerke of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Bazel?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

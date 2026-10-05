@@ -6,7 +6,7 @@ Need **3D printing in Ruien**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Ruien teams choose us
 
-- Local delivery to Ruien, Kluisbergen and Berchem, Zulzeke; pickup in Herzele.
+- Shipping to Ruien, Kluisbergen and Berchem, Zulzeke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Ruien.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

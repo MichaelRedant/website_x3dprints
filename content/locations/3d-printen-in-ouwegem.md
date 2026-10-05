@@ -7,7 +7,7 @@ X3DPrints levert 3D prints voor Ouwegem met snelle routes richting kerk, Ouwegem
 ## Waarom X3DPrints voor Ouwegem?
 
 - **Lead time**: 2-5 werkdagen; spoed op aanvraag.  
-- **Levering** richting dorpskern, molen en kouterstraten; afhalen in Herzele kan.  
+- **Verzending** naar dorpskern, molen en kouterstraten; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA voor maquettes en visuals, PETG voor buiten- of trillingsgevoelige toepassingen, TPU voor flexibele klemmen.  
 - **Prijs**: indicaties op [pricing](/pricing); vraag direct via [contact](/contact).
 
@@ -37,7 +37,7 @@ Voor projecten in Ouwegem combineren we korte doorlooptijd met strakke afwerking
 
 1) Deel een STL/STEP-link via [contact](/contact) met afmetingen en toepassing.  
 2) Wij adviseren orientatie en materiaal.  
-3) Print, QC en levering in Ouwegem of afhalen.
+3) Print, QC en verzending naar Ouwegem of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Handig: check kleuren op [materials](/materials), controleer je model in de [viewer](/viewer), en bekijk sectorcases op [segments](/segments). Tips vind je op de [blog](/blog).
 
@@ -54,7 +54,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Ouwegem?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 <!-- LOCAL_ENRICH_START -->
 ## Leverdetails rond Ouwegem

@@ -153,7 +153,7 @@ const differentiators = [
   {
     title: "Conscious approach",
     copy:
-      "3D printing with a sustainability mindset: batching jobs, local delivery and waste stream policies. Read more on the FuturePrint Lab page.",
+      "3D printing with a sustainability mindset: batching jobs, compact shipping and waste stream policies. Read more on the FuturePrint Lab page.",
   },
 ]
 
@@ -254,7 +254,7 @@ const faq = [
   {
     q: "Do you serve my region?",
     a:
-      "X3DPrints prints from Herzele, between Ghent and Aalst. We ship across Flanders via parcel services or personal delivery, and pickup is possible by appointment.",
+      "X3DPrints prints from Herzele, between Ghent and Aalst. We ship across Belgium, and pickup is free, 24/7, from the pickup box in Herzele.",
   },
   {
     q: "How fast do I get a quote after sending a request?",

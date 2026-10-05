@@ -6,7 +6,7 @@ Need **3D printing in Hemelveerdegem**? X3DPrints prints in Herzele and ships qu
 
 ## Why Hemelveerdegem teams choose us
 
-- Local delivery to Hemelveerdegem, Lierde and Deftinge, Sint-Maria-Lierde; pickup in Herzele.
+- Shipping to Hemelveerdegem, Lierde and Deftinge, Sint-Maria-Lierde; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Hemelveerdegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Hemelveerdegem, Hemelveerdegem city center, Lierde, De
 
 ---
 
-## Typical drop-off points near Hemelveerdegem
+## Typical places we serve near Hemelveerdegem
 
 - Hemelveerdegem town center
 - local business park in Hemelveerdegem

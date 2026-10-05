@@ -8,7 +8,7 @@ Met **3D printen in Halle** leveren we prototypes en zowel kleine als grotere se
 
 - Offerte binnen één werkdag met heldere prijsopbouw.
 - PLA Matte, PETG en TPU voor zichtwerk en sterke onderdelen.
-- EV-levering richting Halle, Lembeek en Buizingen; veilig verpakt.
+- Verzending naar Halle, Lembeek en Buizingen; veilig verpakt.
 - We denken mee over oriëntatie en afwerking voor herhaalbare kwaliteit.
 
 We kennen de mix van food/logistiek (Colruyt Group), retail en events rond Halle. Daardoor krijg je materiaaladvies dat past bij zware belasting of zichtbaar werk.
@@ -42,7 +42,7 @@ We kennen de mix van food/logistiek (Colruyt Group), retail en events rond Halle
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en deadline.
-- Levering via E429/R0; afhalen in Herzele kan op afspraak.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - We stemmen finish (schuren/primen) en kleur af op je toepassing.
 
 ---

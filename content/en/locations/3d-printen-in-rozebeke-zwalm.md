@@ -6,7 +6,7 @@ Need **3D printing in Rozebeke (Zwalm)**? X3DPrints prints in Herzele and ships 
 
 ## Why Rozebeke (Zwalm) teams choose us
 
-- Local delivery to Rozebeke (Zwalm), Zwalm and Munkzwalm, Nederzwalm-Hermelgem; pickup in Herzele.
+- Shipping to Rozebeke (Zwalm), Zwalm and Munkzwalm, Nederzwalm-Hermelgem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Rozebeke (Zwalm).
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

@@ -8,7 +8,7 @@ Met **3D printen in Overijse** leveren we prototypes en zowel kleine als grotere
 
 - Offerte binnen een werkdag met realistische lead time.
 - PLA Matte, PETG en TPU: van showpieces tot stevige tooling.
-- EV-levering richting E411/Overijse; afhalen in Herzele kan.
+- Verzending naar Overijse; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Consistente batches dankzij vaste slicerprofielen.
 
 We kennen events, retail en KMO's in de Druivenstreek. Daardoor stemmen we materiaal en finish af op zichtwerk en functionele onderdelen.
@@ -42,7 +42,7 @@ We kennen events, retail en KMO's in de Druivenstreek. Daardoor stemmen we mater
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via E411; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

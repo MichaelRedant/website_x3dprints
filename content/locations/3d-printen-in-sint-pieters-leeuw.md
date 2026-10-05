@@ -8,7 +8,7 @@ Met **3D printen in Sint-Pieters-Leeuw** leveren we prototypes en zowel kleine a
 
 - Offerte binnen een werkdag met haalbare lead time.
 - PLA Matte, PETG en TPU voor zichtwerk en sterke onderdelen.
-- EV-levering richting Ruisbroek en Vlezenbeek; afhalen in Herzele kan.
+- Verzending naar Ruisbroek en Vlezenbeek; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Advisering over oriëntatie en afwerking voor repeatable kwaliteit.
 
 We kennen de mix van logistiek, retail en events in de Zennevallei. Daardoor stemmen we materiaalkeuze en finishing af op jouw toepassing.
@@ -42,7 +42,7 @@ We kennen de mix van logistiek, retail en events in de Zennevallei. Daardoor ste
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via R0/N6; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor zichtwerk.
 
 ---

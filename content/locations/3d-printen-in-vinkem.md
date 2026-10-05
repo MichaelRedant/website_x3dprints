@@ -38,13 +38,13 @@ Zoek je 3D printen in Vinkem? We denken mee over passing, sterkte en look zodat 
 1. Deel je STL/STEP en toepassing via [contact](/contact)
 2. We adviseren over materiaal en bevestiging, en koppelen een leverdatum terug
 3. Productie en kwaliteit volgen de stappen op [3d-printen](/3d-printen)
-4. Levering of afhalen volgens afspraak; dringende cases krijgen prioriteit
+4. Verzending of gratis afhalen in de afhaalbox in Herzele, 24 op 7; dringende cases krijgen prioriteit
 
 ## Levering of afhalen
 
-- Koerier richting Vinkem, Beauvoorde en De Moeren
-- Pakketdienst voor partners net over de grens in Frankrijk
-- Afhalen bij ons atelier met de mogelijkheid om de prints vooraf in de [viewer](/viewer) te bekijken
+- Verzending naar Vinkem, Beauvoorde en De Moeren
+- Verzending naar partners net over de grens in Frankrijk op aanvraag
+- Gratis afhalen in de afhaalbox in Herzele, 24 op 7; bekijk de prints vooraf in de [viewer](/viewer)
 
 ## Klaar om te starten?
 

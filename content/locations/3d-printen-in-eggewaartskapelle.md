@@ -41,9 +41,9 @@ In Eggewaartskapelle helpen we makers en bedrijven met 3D prints die vlot passen
 
 ## Levering of afhalen
 
-- Levering richting Eggewaartskapelle, Avekapelle en Veurne centrum in dezelfde ronde
-- Pakketdienst voor partners in Alveringem of Diksmuide die met het project meewerken
-- Afhalen mogelijk in Herzele; combineer met een korte review in de [viewer](/viewer)
+- Verzending naar Eggewaartskapelle, Avekapelle en Veurne centrum
+- Verzending naar partners in Alveringem of Diksmuide die met het project meewerken
+- Gratis afhalen in de afhaalbox in Herzele, 24 op 7; combineer met een korte review in de [viewer](/viewer)
 
 ## Klaar om te starten?
 
@@ -58,7 +58,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Eggewaartskapelle?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Eggewaartskapelle?**
 

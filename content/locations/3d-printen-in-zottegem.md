@@ -120,10 +120,10 @@ Elke stap van **3D printen in Zottegem** gebeurt in overleg zodat je zeker bent 
 
 - **Standaard**: 2 tot 5 werkdagen voor **3D printen in Zottegem**
 - **Spoed**: mogelijk na overleg over **3D printen in Zottegem**
-- **Verzending**: via koerier of afhaalpunt na **3D printen in Zottegem**
-- **Afhaling**: op afspraak na **3D printen in Zottegem**
+- **Verzending**: in heel België na **3D printen in Zottegem**
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele
 
-Door de nabijheid van het centrum zijn afhalingen na **3D printen in Zottegem** eenvoudig te regelen.
+Door de nabijheid van Herzele is gratis afhalen na **3D printen in Zottegem** eenvoudig: de afhaalbox is 24 op 7 bereikbaar.
 
 ---
 

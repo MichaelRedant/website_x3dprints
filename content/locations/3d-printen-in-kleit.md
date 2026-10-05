@@ -7,7 +7,7 @@ Kleit krijgt vlotte 3D print support vanuit X3DPrints. We leveren prototypes, ve
 ## Waarom in Kleit werken met X3DPrints?
 
 - **Snelle doorlooptijd**: 2-5 werkdagen; spoed op aanvraag.  
-- **Levering richting Kleitkalseide en polderzones**; afhalen in Herzele kan.  
+- **Verzending naar Kleit, de Kleitkalseide en de polders**; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materialen op maat**: PLA Matte voor visuals, PETG voor buitengebruik langs Schipdonkkanaal, TPU voor flexibele klemmen.  
 - **Transparante prijzen**: zie [pricing](/pricing) of vraag je voorstel via [contact](/contact).
 

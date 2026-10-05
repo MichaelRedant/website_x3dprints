@@ -8,7 +8,7 @@ Met **3D printen in Grimbergen** leveren we prototypes, fixtures en props voor d
 
 - Offerte binnen een werkdag met haalbare lead time.
 - PLA Matte, PETG en TPU voor zichtwerk en sterke onderdelen.
-- EV-levering richting Strombeek-Bever en Westrode; afhalen in Herzele kan.
+- Verzending naar Strombeek-Bever en Westrode; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Consistente batches dankzij vaste slicerprofielen en QC.
 
 We kennen de mix van events, retail en industrie in de Noordrand. Daardoor stemmen we materiaal en afwerking af op jouw toepassing.
@@ -42,7 +42,7 @@ We kennen de mix van events, retail en industrie in de Noordrand. Daardoor stemm
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via Ring Noord en kanaal; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

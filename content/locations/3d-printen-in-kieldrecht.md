@@ -22,7 +22,7 @@
 
 ## Lokale focus in Kieldrecht
 
-Werk je in Kieldrecht? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Michielskerk.
+Werk je in Kieldrecht? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending in de omgeving van Sint-Michielskerk.
 
 - Displays en presentatiemodellen voor expo's en musea.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -72,7 +72,7 @@ Test snel en verbeter uw ontwerp zonder lange wachttijden.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -94,7 +94,7 @@ Ja. We maken zowel kleine als grotere series met consistente passing en duidelij
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Kieldrecht?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Michielskerk of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending in de omgeving van Sint-Michielskerk of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ## Interne links rond 3D printen in de havenzone
 - [3D printen in Doel](/3d-printen-in-doel)

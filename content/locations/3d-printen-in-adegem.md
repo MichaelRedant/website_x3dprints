@@ -8,7 +8,7 @@ Van Canada War Cemetery tot N49-corridor: X3DPrints verzorgt 3D prints voor Adeg
 
 - **Snelle offertes**: meestal binnen 24 uur. Check indicatieve prijzen op [pricing](/pricing).  
 - **Materiaalkeuze**: PLA voor showpieces, PETG voor weerbestendige montage rond kanaalzones, TPU voor flexibele clips.  
-- **Levering**: bezorging richting Adegem centrum, Kasteeldreef en bedrijventerrein aan de N49; afhalen in Herzele kan ook.  
+- **Levering**: verzending naar Adegem centrum, de Kasteeldreef en het bedrijventerrein aan de N49; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Interne links**: gebruik de [viewer](/viewer) om orientatie te checken en [materials](/materials) voor kleuren.
 
 ## Lokale use-cases
@@ -53,7 +53,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Adegem?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 <!-- LOCAL_ENRICH_START -->
 ## Lokale accenten voor Adegem

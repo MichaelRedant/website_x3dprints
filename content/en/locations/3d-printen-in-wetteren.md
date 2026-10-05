@@ -6,7 +6,7 @@ Need **3D printing in Wetteren**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Wetteren teams choose us
 
-- Local delivery to Wetteren, Massemen and Serskamp, Overbeke; pickup in Herzele.
+- Shipping to Wetteren, Massemen and Serskamp, Overbeke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Wetteren.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

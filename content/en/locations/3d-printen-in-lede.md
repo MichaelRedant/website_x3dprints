@@ -6,7 +6,7 @@ Need **3D printing in Lede**? X3DPrints prints in Herzele and ships quickly to L
 
 ## Why Lede teams choose us
 
-- Local delivery to Lede; pickup in Herzele.
+- Shipping to Lede; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Lede.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Lede, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Lede
+## Typical places we serve near Lede
 
 - Lede town center
 - local business park in Lede

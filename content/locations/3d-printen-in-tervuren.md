@@ -8,7 +8,7 @@ Voor **3D printen in Tervuren** leveren we prototypes, maquettes en zowel kleine
 
 - Offerte binnen een werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk en functionele onderdelen.
-- EV-levering richting Tervuren, afhalen in Herzele kan.
+- Verzending naar Tervuren; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Advies over oriëntatie en finish voor consistente kwaliteit.
 
 We kennen de combinatie van musea, expat-projecten en lokale ondernemers. Daardoor stemmen we materiaalkeuze en afwerking af op props, displays en technische parts.
@@ -42,7 +42,7 @@ We kennen de combinatie van musea, expat-projecten en lokale ondernemers. Daardo
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via Leuvensesteenweg; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

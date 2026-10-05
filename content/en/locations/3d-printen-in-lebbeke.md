@@ -6,7 +6,7 @@ Need **3D printing in Lebbeke**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Lebbeke teams choose us
 
-- Local delivery to Lebbeke, Denderbelle and Wieze, Buggenhout; pickup in Herzele.
+- Shipping to Lebbeke, Denderbelle and Wieze, Buggenhout; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Lebbeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

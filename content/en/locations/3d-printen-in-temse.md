@@ -6,7 +6,7 @@ Need **3D printing in Temse**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Temse teams choose us
 
-- Local delivery to Temse, Tielrode and Elversele, Steendorp; pickup in Herzele.
+- Shipping to Temse, Tielrode and Elversele, Steendorp; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Temse.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Temse, Temse city center, Tielrode, Elversele, Steendo
 
 ---
 
-## Typical drop-off points near Temse
+## Typical places we serve near Temse
 
 - Temse town center
 - local business park in Temse

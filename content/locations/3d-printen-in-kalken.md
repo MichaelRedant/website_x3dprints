@@ -23,7 +23,7 @@
 
 ## Lokale focus in Kalken
 
-Werk je in Kalken? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Kasteel Ter Weiden.
+Werk je in Kalken? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending in de omgeving van Kasteel Ter Weiden.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
@@ -73,7 +73,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -95,7 +95,7 @@ Ja. We maken zowel kleine als grotere series met consistente passing en duidelij
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Kalken?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Kasteel Ter Weiden of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending in de omgeving van Kasteel Ter Weiden of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ## Interne links rond 3D printen in Kalken
 - [3D printen in Laarne](/3d-printen-in-laarne)

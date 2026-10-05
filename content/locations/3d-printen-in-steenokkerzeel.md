@@ -8,7 +8,7 @@ Voor **3D printen in Steenokkerzeel** leveren we prototypes en tooling richting 
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor showpieces én sterke serviceparts.
-- EV-levering richting Brucargo en Steenokkerzeel dorp; afhalen in Herzele kan.
+- Verzending naar Brucargo en Steenokkerzeel dorp; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Voor **3D printen in Steenokkerzeel** leveren we prototypes en tooling richting 
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en deadline.
-- Levering via Brucargo/luchthaven; afhalen in Herzele kan.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

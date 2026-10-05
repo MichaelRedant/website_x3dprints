@@ -6,7 +6,7 @@ Need **3D printing in Sint-Jan-in-Eremo**? X3DPrints prints in Herzele and ships
 
 ## Why Sint-Jan-in-Eremo teams choose us
 
-- Local delivery to Sint-Jan-in-Eremo, Sint-Laureins and Sint-Margriete, Watervliet; pickup in Herzele.
+- Shipping to Sint-Jan-in-Eremo, Sint-Laureins and Sint-Margriete, Watervliet; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Jan-in-Eremo.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Sint-Jan-in-Eremo, Sint-Jan-in-Eremo city center, Sint
 
 ---
 
-## Typical drop-off points near Sint-Jan-in-Eremo
+## Typical places we serve near Sint-Jan-in-Eremo
 
 - Sint-Jan-in-Eremo town center
 - local business park in Sint-Jan-in-Eremo

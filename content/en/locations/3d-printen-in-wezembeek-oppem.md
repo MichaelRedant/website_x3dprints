@@ -6,7 +6,7 @@ Need **3D printing in Wezembeek-Oppem**? X3DPrints prints in Herzele and ships q
 
 ## Why Wezembeek-Oppem teams choose us
 
-- Local delivery to Wezembeek-Oppem, Oppem and N3/Leuvensesteenweg, R0-kruising; pickup in Herzele.
+- Shipping to Wezembeek-Oppem, Oppem and N3/Leuvensesteenweg, R0-kruising; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Wezembeek-Oppem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

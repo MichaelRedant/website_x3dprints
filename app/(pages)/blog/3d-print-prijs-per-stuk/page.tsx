@@ -66,7 +66,7 @@ const costBlocks = [
   {
     title: "Logistiek",
     description:
-      "Afhalen blijft het meest kostefficiënt. Verzending of levering op maat verhogen het totaal.",
+      "Afhalen in de afhaalbox in Herzele is gratis en blijft het meest kostefficiënt. Verzending verhoogt het totaal.",
   },
 ]
 

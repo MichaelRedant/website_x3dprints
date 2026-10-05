@@ -1,6 +1,6 @@
 # 3D printen in Linter: landelijk Hageland
 
-Met **3D printen in Linter** leveren we prototypes, behuizingen en tooling richting Drieslinter, Neerlinter en Orsmaal-Gussenhoven. Snelle offertes, transparante prijzen en leveringen op afspraak.
+Met **3D printen in Linter** leveren we prototypes, behuizingen en tooling richting Drieslinter, Neerlinter en Orsmaal-Gussenhoven. Snelle offertes, transparante prijzen en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Met **3D printen in Linter** leveren we prototypes, behuizingen en tooling richt
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Linter/Hageland; afhalen in Herzele kan.
+- Verzending naar Linter en Hageland; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Met **3D printen in Linter** leveren we prototypes, behuizingen en tooling richt
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering op afspraak; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

@@ -13,7 +13,7 @@ Last updated: May 18, 2026
 - **Functional parts:** PETG, TPU and technical materials for holders, covers, clips, jigs and test setups.
 - **Visual work and presentations:** PLA Matte, colour matching and optional finishing for models, pitch pieces, expo assets and retail displays.
 - **Fast iteration:** useful for agencies, engineers and students who need a tangible model quickly.
-- **Clear logistics:** shipping to Antwerp is standard; pickup in Herzele is possible by appointment.
+- **Clear logistics:** shipping to Antwerp is standard; free pickup, 24/7, from the pickup box in Herzele.
 - **Direct communication:** you work with the maker instead of an anonymous file portal.
 
 For a quote, send STL or STEP, quantity, colour, material preference and use context via [contact](/en/contact). If fit matters, explain where the part needs to click, slide, screw or align.
@@ -122,7 +122,7 @@ For critical fit, one test piece is often smarter than ordering the full batch i
 ## FAQ about 3D printing in Antwerp
 
 **Do you deliver to all Antwerp districts?**  
-Yes. We ship to Antwerp, Berchem, Borgerhout, Deurne, Ekeren, Hoboken, Merksem, Wilrijk, Borsbeek and Berendrecht-Zandvliet-Lillo. Pickup in Herzele is possible by appointment.
+Yes. We ship to Antwerp, Berchem, Borgerhout, Deurne, Ekeren, Hoboken, Merksem, Wilrijk, Borsbeek and Berendrecht-Zandvliet-Lillo. Free pickup, 24/7, from the pickup box in Herzele.
 
 **Can you make event materials or retail displays?**  
 Yes. Examples include displays, logo objects, price tags, booth pieces, giveaways, table decoration and modular props. We consider finishing, transport and assembly.
@@ -177,7 +177,7 @@ Ready to start a prototype, display, technical part or short run in Antwerp? Sha
 - Coverage: Antwerp city centre, Linkeroever, Berchem, Borgerhout, Deurne, Ekeren, Hoboken, Merksem, Wilrijk, Borsbeek, Berendrecht-Zandvliet-Lillo and nearby towns.
 - Strong commercial use cases: scanner holders, displays, models, napkin rings, signage, sensor housings, jigs and fair props.
 - Files: STL/STEP speeds up quoting; photos help discuss feasibility, but reverse engineering usually requires the object to come in physically.
-- Turnaround: usually a few working days after approval; rush and Antwerp delivery by arrangement.
+- Turnaround: usually a few working days after approval; rush by arrangement. Shipping to Antwerp or free pickup, 24/7, from the pickup box in Herzele.
 
 ## Related nearby pages
 - [Nearby: 3D printing in Berchem](/en/3d-printen-in-berchem)

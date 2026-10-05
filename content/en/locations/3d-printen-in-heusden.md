@@ -6,7 +6,7 @@ Need **3D printing in Heusden**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Heusden teams choose us
 
-- Local delivery to Heusden and Destelbergen; pickup in Herzele.
+- Shipping to Heusden and Destelbergen; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Heusden.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Heusden, Heusden city center, Destelbergen, Gent area,
 
 ---
 
-## Typical drop-off points near Heusden
+## Typical places we serve near Heusden
 
 - Heusden town center
 - local business park in Heusden

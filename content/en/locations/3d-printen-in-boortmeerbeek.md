@@ -6,7 +6,7 @@ Need **3D printing in Boortmeerbeek**? X3DPrints prints in Herzele and ships qui
 
 ## Why Boortmeerbeek teams choose us
 
-- Local delivery to Boortmeerbeek, Hever and Schiplaken, Kanaal Leuven-Dijle; pickup in Herzele.
+- Shipping to Boortmeerbeek, Hever and Schiplaken, Kanaal Leuven-Dijle; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Boortmeerbeek.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Boortmeerbeek, Boortmeerbeek city center, Hever, Schip
 
 ---
 
-## Typical drop-off points near Boortmeerbeek
+## Typical places we serve near Boortmeerbeek
 
 - Boortmeerbeek town center
 - local business park in Boortmeerbeek

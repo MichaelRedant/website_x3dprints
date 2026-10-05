@@ -8,7 +8,7 @@ Met **3D printen in Glabbeek** leveren we prototypes, behuizingen en tooling ric
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Glabbeek/Hageland; afhalen in Herzele kan.
+- Verzending naar Glabbeek en Hageland; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Met **3D printen in Glabbeek** leveren we prototypes, behuizingen en tooling ric
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via N29; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

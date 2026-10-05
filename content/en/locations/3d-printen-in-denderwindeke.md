@@ -6,7 +6,7 @@ Need **3D printing in Denderwindeke**? X3DPrints prints in Herzele and ships qui
 
 ## Why Denderwindeke teams choose us
 
-- Local delivery to Denderwindeke; pickup in Herzele.
+- Shipping to Denderwindeke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Denderwindeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Denderwindeke, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Denderwindeke
+## Typical places we serve near Denderwindeke
 
 - Denderwindeke town center
 - local business park in Denderwindeke

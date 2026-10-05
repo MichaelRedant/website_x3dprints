@@ -9,7 +9,7 @@
 - **Snelle offerte**: u weet snel waar u aan toe bent.
 - **Materiaaladvies**: PLA, PETG of TPU op basis van uw gebruik.
 - **Nauwkeurige prints**: geschikt voor functionele onderdelen.
-- **Lokale levering**: in Uitbergen, Berlare en Overmere.
+- **Verzending**: naar Uitbergen, Berlare en Overmere; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -72,7 +72,7 @@ Een testprint bespaart tijd en geeft snelle feedback.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -91,7 +91,7 @@ Een testprint bespaart tijd en geeft snelle feedback.
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Uitbergen?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Pietersbandenkerk of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending in de omgeving van Sint-Pietersbandenkerk of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Uitbergen?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

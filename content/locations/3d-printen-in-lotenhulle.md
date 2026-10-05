@@ -9,7 +9,7 @@
 - **Korte doorlooptijd**: meestal enkele werkdagen.
 - **Heldere offertes**: geen verrassingen achteraf.
 - **Sterke materialen**: PLA, PETG en TPU op maat van uw project.
-- **Flexibele levering**: ophalen of verzending volgens afspraak.
+- **Afhalen of verzenden**: gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 
@@ -22,7 +22,7 @@
 
 ## Lokale focus in Lotenhulle
 
-Werk je in Lotenhulle? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Heilig-Kruiskerk.
+Werk je in Lotenhulle? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending in de omgeving van Heilig-Kruiskerk.
 
 - Maquettes en detailmodellen voor erfgoed en presentaties.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -72,7 +72,7 @@ Test vorm, pasvorm en functie snel met een eerste print.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -91,7 +91,7 @@ Test vorm, pasvorm en functie snel met een eerste print.
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Lotenhulle?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Heilig-Kruiskerk of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending in de omgeving van Heilig-Kruiskerk of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Lotenhulle?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

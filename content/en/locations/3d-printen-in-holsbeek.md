@@ -6,7 +6,7 @@ Need **3D printing in Holsbeek**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Holsbeek teams choose us
 
-- Local delivery to Holsbeek, Kortrijk-Dutsel and Sint-Pieters-Rode, Chartreuzenberg; pickup in Herzele.
+- Shipping to Holsbeek, Kortrijk-Dutsel and Sint-Pieters-Rode, Chartreuzenberg; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Holsbeek.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Holsbeek, Holsbeek city center, Kortrijk-Dutsel, Sint-
 
 ---
 
-## Typical drop-off points near Holsbeek
+## Typical places we serve near Holsbeek
 
 - Holsbeek town center
 - local business park in Holsbeek

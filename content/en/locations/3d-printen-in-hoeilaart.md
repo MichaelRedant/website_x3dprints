@@ -6,7 +6,7 @@ Need **3D printing in Hoeilaart**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Hoeilaart teams choose us
 
-- Local delivery to Hoeilaart, Groenendaal and E411 and ring rond Brussel, Bos- and parkzones towards Tervuren/Overijse; pickup in Herzele.
+- Shipping to Hoeilaart, Groenendaal and E411 and ring rond Brussel, Bos- and parkzones towards Tervuren/Overijse; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Hoeilaart.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

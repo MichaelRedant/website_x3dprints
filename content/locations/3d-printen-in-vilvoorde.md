@@ -8,7 +8,7 @@ Voor **3D printen in Vilvoorde** leveren we prototypes en zowel kleine als grote
 
 - Offerte binnen een werkdag met duidelijke prijsopbouw.
 - FDM in PLA Matte, PETG en TPU; consistente repeatability voor reeksen.
-- EV-levering richting Medialaan, kanaalzone en R0; verpakking afgestemd op kwetsbare prints.
+- Verzending naar Medialaan; verpakking afgestemd op kwetsbare prints.
 - Korte lijnen voor iteraties: pasvorm-check en finishing in overleg.
 
 We kennen de mix van media, logistiek en KMO's rond Vilvoorde. Daardoor stemmen we materiaal en afwerking af op props, fixtures en functionele onderdelen die meteen inzetbaar zijn.
@@ -42,7 +42,7 @@ We kennen de mix van media, logistiek en KMO's rond Vilvoorde. Daardoor stemmen 
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact); voeg aantallen en gewenste finish toe.
-- Levering via R0/Brussels kanaal, afhalen in Herzele mogelijk.
+- Verzending naar Vilvoorde en de kanaalzone; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - We adviseren over oriëntatie, layer height en nabehandeling.
 
 ---
@@ -57,7 +57,7 @@ Stuur je bestand via [contact](/contact). We plannen snel de beste aanpak voor *
 Ja. We printen en herhalen met vaste settings zodat elke prop gelijk is.
 
 **Welke levering gebruiken jullie richting kanaalzone?**
-EV-levering of pakketdienst, afhankelijk van formaat en tijdstip. We stemmen dit mee af in de offerte.
+We verzenden je prints zorgvuldig verpakt, ook naar de kanaalzone. Afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Is PETG geschikt voor magazijngebruik?**
 Ja. PETG is sterk, temperatuurbestendig en goed voor jigs, beugels en klemmen in logistieke omgevingen.

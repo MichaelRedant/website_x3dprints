@@ -75,7 +75,7 @@ const costFactors = [
   {
     title: "Logistics",
     description:
-      "Pickup in Herzele is free. Bpost shipping ranges from ~€6 to €25 depending on weight and speed. Large prints are packed securely for transport.",
+      "Pickup is free, 24/7, from the pickup box in Herzele. Shipping costs €7.50 up to 2 kg, €8 up to 5 kg and €9 up to 10 kg; heavier parcels on request. Large prints are packed securely for transport.",
     tip: "Combine parts in one shipment to reduce cost.",
     link: { href: "/en/pricing", label: "See shipping options" },
   },
@@ -205,7 +205,7 @@ export default function CostArticleEn() {
               <li>- STL/STEP + requested material/colour.</li>
               <li>- Application and any critical dimensions/tolerances.</li>
               <li>- Finish level: raw, light deburr, or do you need primer/paint (via partners)?</li>
-              <li>- Deadline and delivery preference (pickup Herzele / Bpost / local drop-off).</li>
+              <li>- Deadline and delivery preference (free pickup box in Herzele or shipping).</li>
             </ul>
             <div className="mt-4 flex flex-wrap gap-3">
               <ShimmerButton href="/en/contact?quote=Pricing%20request">Share project details</ShimmerButton>

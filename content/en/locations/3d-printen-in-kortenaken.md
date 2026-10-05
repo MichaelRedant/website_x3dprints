@@ -6,7 +6,7 @@ Need **3D printing in Kortenaken**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Kortenaken teams choose us
 
-- Local delivery to Kortenaken, Hoeleden and Ransberg, Kersbeek-Miskom; pickup in Herzele.
+- Shipping to Kortenaken, Hoeleden and Ransberg, Kersbeek-Miskom; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Kortenaken.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Kortenaken, Kortenaken city center, Hoeleden, Ransberg
 
 ---
 
-## Typical drop-off points near Kortenaken
+## Typical places we serve near Kortenaken
 
 - Kortenaken town center
 - local business park in Kortenaken

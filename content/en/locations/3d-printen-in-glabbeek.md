@@ -6,7 +6,7 @@ Need **3D printing in Glabbeek**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Glabbeek teams choose us
 
-- Local delivery to Glabbeek, Kapellen and Attenrode-Wever, Bunsbeek; pickup in Herzele.
+- Shipping to Glabbeek, Kapellen and Attenrode-Wever, Bunsbeek; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Glabbeek.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

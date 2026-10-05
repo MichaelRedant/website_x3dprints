@@ -72,7 +72,7 @@ const costBlocks = [
   {
     title: "Logistics",
     description:
-      "Pickup is the most cost-efficient option. Shipping or custom delivery increases the total.",
+      "Pickup from the pickup box in Herzele is free and the most cost-efficient option. Shipping increases the total.",
   },
 ]
 

@@ -58,7 +58,7 @@ Deel een link naar je bestand en ontvang snel een voorstel voor **3D printen in 
 
 **Leveren jullie ook in Scheldewindeke?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Scheldewindeke?**
 

@@ -6,7 +6,7 @@ Need **3D printing in Zevergem**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Zevergem teams choose us
 
-- Local delivery to Zevergem, De Pinte and Nazareth, Merelbeke; pickup in Herzele.
+- Shipping to Zevergem, De Pinte and Nazareth, Merelbeke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Zevergem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

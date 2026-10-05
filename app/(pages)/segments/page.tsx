@@ -179,7 +179,7 @@ const SEGMENTS_COPY_NL: SegmentCopy = {
       highlights: [
         "Speciale PLA blends (wood, silk, marble)",
         "Tips voor lijm, verf en assemblage",
-        "Lokale afhaling voor fragiele stukken",
+        "Gratis afhalen in de afhaalbox in Herzele voor fragiele stukken",
       ],
     },
     {
@@ -219,7 +219,7 @@ const SEGMENTS_COPY_NL: SegmentCopy = {
       highlights: [
         "0,12-0,16 mm layers voor premium detail",
         "PLA Matte/PETG voor minis en scenery, TPU voor rubber feet",
-        "Persoonlijke levering of pakketdienst voor breekbare prints",
+        "Zorgvuldig verpakte verzending voor breekbare prints",
       ],
     },
   ],
@@ -261,7 +261,7 @@ const SEGMENTS_COPY_NL: SegmentCopy = {
       highlights: [
         "Silk/Marble/Translucent PLA voor feestelijke looks",
         "Outdoor props in PETG, antislip in TPU",
-        "Lokale levering of pakketdienst",
+        "Verzending of gratis afhalen in de afhaalbox in Herzele",
       ],
     },
   ],
@@ -444,7 +444,7 @@ const SEGMENTS_COPY_EN: SegmentCopy = {
       highlights: [
         "Special PLA blends (wood, silk, marble)",
         "Tips for glue, paint and assembly",
-        "Local pickup for fragile parts",
+        "Free pickup from the pickup box in Herzele for fragile parts",
       ],
     },
     {
@@ -484,7 +484,7 @@ const SEGMENTS_COPY_EN: SegmentCopy = {
       highlights: [
         "0.12-0.16 mm layers for premium detail",
         "PLA Matte/PETG for minis and scenery, TPU for rubber feet",
-        "Personal delivery or parcel service for fragile prints",
+        "Carefully packed shipping for fragile prints",
       ],
     },
   ],
@@ -526,7 +526,7 @@ const SEGMENTS_COPY_EN: SegmentCopy = {
       highlights: [
         "Silk/Marble/Translucent PLA for festive looks",
         "Outdoor props in PETG, anti-slip in TPU",
-        "Local delivery or parcel service",
+        "Shipping or free pickup from the pickup box in Herzele",
       ],
     },
   ],

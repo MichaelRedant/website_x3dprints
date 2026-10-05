@@ -6,7 +6,7 @@ Need **3D printing in Linkebeek**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Linkebeek teams choose us
 
-- Local delivery to Linkebeek, Holleken and R0 zuid; pickup in Herzele.
+- Shipping to Linkebeek, Holleken and R0 zuid; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Linkebeek.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

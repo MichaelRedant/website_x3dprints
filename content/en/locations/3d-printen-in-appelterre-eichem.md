@@ -6,7 +6,7 @@ Need **3D printing in Appelterre-Eichem**? X3DPrints prints in Herzele and ships
 
 ## Why Appelterre-Eichem teams choose us
 
-- Local delivery to Appelterre-Eichem; pickup in Herzele.
+- Shipping to Appelterre-Eichem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Appelterre-Eichem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Appelterre-Eichem, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Appelterre-Eichem
+## Typical places we serve near Appelterre-Eichem
 
 - Appelterre-Eichem town center
 - local business park in Appelterre-Eichem

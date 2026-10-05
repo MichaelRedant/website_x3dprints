@@ -6,7 +6,7 @@ Need **3D printing in Bazel**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Bazel teams choose us
 
-- Local delivery to Bazel, Kruibeke and Rupelmonde, Burcht; pickup in Herzele.
+- Shipping to Bazel, Kruibeke and Rupelmonde, Burcht; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Bazel.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

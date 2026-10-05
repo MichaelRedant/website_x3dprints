@@ -6,7 +6,7 @@ Need **3D printing in Asper**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Asper teams choose us
 
-- Local delivery to Asper, Gavere and Semmerzake, Dikkelvenne; pickup in Herzele.
+- Shipping to Asper, Gavere and Semmerzake, Dikkelvenne; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Asper.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Asper, Asper city center, Gavere, Semmerzake, Dikkelve
 
 ---
 
-## Typical drop-off points near Asper
+## Typical places we serve near Asper
 
 - Asper town center
 - local business park in Asper

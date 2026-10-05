@@ -38,17 +38,17 @@ In Booitshoeke helpen we makers en bedrijven met 3D prints die vlot passen en la
 1. Deel een STL/STEP-link met gewenste materiaalkeuze via [contact](/contact)
 2. We adviseren over wanddikte, infill en bevestiging gebaseerd op je toepassing
 3. Print, afwerking en controle volgens de stappen in onze [3d-printen](/3d-printen) hub
-4. Levering naar Booitshoeke of afhalen in Herzele; tracking delen we meteen
+4. Verzending naar Booitshoeke of gratis afhalen in de afhaalbox in Herzele, 24 op 7; tracking delen we meteen
 
 ## Levering of afhalen
 
-- Koerier richting Booitshoekestraat en omliggende hoeven
-- Verzending naar de randgemeenten Avekapelle, Steenkerke en Vinkem in dezelfde ronde
-- Afhalen op Provincieweg 34a met mogelijkheid om ter plekke samples of de [viewer](/viewer) te gebruiken
+- Verzending naar de Booitshoekestraat en omliggende hoeven
+- Verzending naar de randgemeenten Avekapelle, Steenkerke en Vinkem
+- Gratis afhalen in de afhaalbox in Herzele, 24 op 7; bekijk je model vooraf in de [viewer](/viewer)
 
 ## Klaar om te starten?
 
-Laat weten of het om interieur, landbouw of toeristisch zichtwerk gaat. We zorgen dat je binnen een werkdag weet welk materiaal het beste past en wanneer je levering richting Booitshoeke vertrekt.
+Laat weten of het om interieur, landbouw of toeristisch zichtwerk gaat. We zorgen dat je binnen een werkdag weet welk materiaal het beste past en wanneer je zending naar Booitshoeke vertrekt.
 
 
 ## Veelgestelde vragen over 3D printen in Booitshoeke

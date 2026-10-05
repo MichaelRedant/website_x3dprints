@@ -9,7 +9,7 @@
 - **Snelle service**: korte doorlooptijd en heldere planning.
 - **Materiaalkeuze op maat**: PLA, PETG of TPU.
 - **Betrouwbare kwaliteit**: strakke afwerking en goede passing.
-- **Lokale levering**: in heel Assenede en omgeving.
+- **Verzending**: naar heel Assenede en omgeving; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -72,7 +72,7 @@ Snel een testmodel betekent sneller beslissen en minder risico.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -88,7 +88,7 @@ Snel een testmodel betekent sneller beslissen en minder risico.
 ## Veelgestelde vragen over 3D printen in Oosteeklo
 
 **Hoe snel is 3D printen in Oosteeklo?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting De [Abdij van Oosteeklo](https://nl.wikipedia.org/wiki/Abdij_van_Oosteeklo). of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Oosteeklo en de buurt van de [Abdij van Oosteeklo](https://nl.wikipedia.org/wiki/Abdij_van_Oosteeklo), of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Oosteeklo?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

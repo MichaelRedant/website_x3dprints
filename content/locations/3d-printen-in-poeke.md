@@ -9,7 +9,7 @@
 - **Snel en lokaal**: meestal enkele werkdagen.
 - **Maatwerk**: elk stuk afgestemd op uw toepassing.
 - **Materiaaladvies**: PLA, PETG en TPU met duidelijke uitleg.
-- **Flexibele levering**: ophalen of verzending volgens afspraak.
+- **Afhalen of verzenden**: gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 
@@ -72,7 +72,7 @@ Test uw ontwerp snel en pas bij waar nodig, zonder lange doorlooptijden.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

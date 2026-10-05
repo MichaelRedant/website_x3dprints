@@ -8,7 +8,7 @@ Voor **3D printen in Drogenbos** leveren we prototypes, behuizingen en tooling r
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Drogenbos/Sint-Pieters-Leeuw; afhalen in Herzele kan.
+- Verzending naar Drogenbos en Sint-Pieters-Leeuw; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Voor **3D printen in Drogenbos** leveren we prototypes, behuizingen en tooling r
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via kanaalzone/R0; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

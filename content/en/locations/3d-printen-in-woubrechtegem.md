@@ -6,7 +6,7 @@ Need **3D printing in Woubrechtegem**? X3DPrints prints in Herzele and ships qui
 
 ## Why Woubrechtegem teams choose us
 
-- Local delivery to Woubrechtegem; pickup in Herzele.
+- Shipping to Woubrechtegem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Woubrechtegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

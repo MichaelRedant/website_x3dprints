@@ -6,7 +6,7 @@ Need **3D printing in Essene**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Essene teams choose us
 
-- Local delivery to Essene; pickup in Herzele.
+- Shipping to Essene; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Essene.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

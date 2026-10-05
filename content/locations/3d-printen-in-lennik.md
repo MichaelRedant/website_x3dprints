@@ -1,6 +1,6 @@
 # 3D printen in Lennik: Pajottenland en Ninoofsesteenweg
 
-Met **3D printen in Lennik** leveren we prototypes, behuizingen en tooling richting Sint-Kwintens-Lennik, Sint-Martens-Lennik en Eizeringen. Snelle offertes, transparante prijzen en leveringen via Ninoofsesteenweg.
+Met **3D printen in Lennik** leveren we prototypes, behuizingen en tooling richting Sint-Kwintens-Lennik, Sint-Martens-Lennik en Eizeringen. Snelle offertes, transparante prijzen en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Met **3D printen in Lennik** leveren we prototypes, behuizingen en tooling richt
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Lennik/Pajottenland; afhalen in Herzele kan.
+- Verzending naar Lennik en Pajottenland; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Met **3D printen in Lennik** leveren we prototypes, behuizingen en tooling richt
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via Ninoofsesteenweg; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

@@ -95,7 +95,7 @@ export default function Page() {
     { q: "Wat is SLA?", a: "SLA verhardt vloeibare hars met een UV-laser. Zeer hoge nauwkeurigheid en glad oppervlak." },
     {
       q: "Welke verzendopties bieden jullie?",
-      a: "Afhalen op afspraak, lokale levering of verzending via Bpost. Spoedlevering kan in overleg. Geef je gemeente/district door bij <a href=\"/contact\">/contact</a>.",
+      a: "Gratis afhalen, 24 op 7, in de afhaalbox in Herzele of verzending. Spoedlevering kan in overleg. Geef je gemeente/district door bij <a href=\"/contact\">/contact</a>.",
     },
     {
       q: "Waar vind ik voorbeelden van projecten?",
@@ -123,7 +123,7 @@ export default function Page() {
     },
     {
       q: "Bieden jullie levering op locatie?",
-      a: "Ja. Geef gemeente of district door en we plannen EV-levering, koerier of Bpost. Afhalen in Herzele/Gent kan ook.",
+      a: "Ja. We verzenden naar je adres in België; geef je gemeente of district door. Afhalen kan ook: gratis, 24 op 7, in de afhaalbox in Herzele.",
     },
     {
       q: "Wat is 3D printen precies?",

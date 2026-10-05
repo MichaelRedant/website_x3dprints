@@ -8,7 +8,7 @@ Voor **3D printen in Dilbeek** leveren we prototypes en zowel kleine als grotere
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU: van props tot sterke fixtures.
-- EV-levering richting R0/Groot-Bijgaarden; afhalen in Herzele kan.
+- Verzending naar Groot-Bijgaarden; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Consistente batches dankzij vaste slicerprofielen en QC.
 
 We kennen de mix van events, retail en KMO's in de Vlaamse Rand. Daardoor stemmen we materiaal en afwerking af op zichtwerk, jigs en functionele onderdelen.
@@ -42,7 +42,7 @@ We kennen de mix van events, retail en KMO's in de Vlaamse Rand. Daardoor stemme
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en gewenste finish.
-- Levering via de Ring; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

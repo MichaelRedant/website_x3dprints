@@ -6,7 +6,7 @@ Need **3D printing in Semmerzake**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Semmerzake teams choose us
 
-- Local delivery to Semmerzake, Gavere and Vurste, Dikkelvenne; pickup in Herzele.
+- Shipping to Semmerzake, Gavere and Vurste, Dikkelvenne; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Semmerzake.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

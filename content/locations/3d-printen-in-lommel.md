@@ -76,7 +76,7 @@ Dat kan als afzonderlijk ontwerpwerk. De eenmalige modelkost wordt vooraf in de 
 Er bestaat geen universeel sterkste keuze. Richting van de belasting, temperatuur, vocht, uv en geometrie bepalen samen welk materiaal bruikbaar is.
 
 **Kan ik afhalen in Lommel?**
-Er is geen afhaalpunt in Lommel. We verzenden vanuit Herzele; afhalen in de studio kan op afspraak.
+Er is geen afhaalpunt in Lommel. We verzenden vanuit Herzele; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 

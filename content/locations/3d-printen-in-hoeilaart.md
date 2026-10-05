@@ -8,7 +8,7 @@ Voor **3D printen in Hoeilaart** leveren we props, behuizingen en tooling richti
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk en functionele onderdelen.
-- EV-levering richting E411/Groenendaal; afhalen in Herzele kan.
+- Verzending naar Groenendaal; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Advies over oriëntatie en finish voor consistente kwaliteit.
 
 We kennen de combinatie van events, retail en KMO's in de Druivenstreek. Daardoor stemmen we materiaal en afwerking af op jouw toepassing.
@@ -42,7 +42,7 @@ We kennen de combinatie van events, retail en KMO's in de Druivenstreek. Daardoo
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via E411/R0; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

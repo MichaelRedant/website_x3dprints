@@ -6,7 +6,7 @@ Need **3D printing in Evergem**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Evergem teams choose us
 
-- Local delivery to Evergem, Ertvelde and Sleidinge, Kluizen; pickup in Herzele.
+- Shipping to Evergem, Ertvelde and Sleidinge, Kluizen; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Evergem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Evergem, Evergem city center, Ertvelde, Sleidinge, Klu
 
 ---
 
-## Typical drop-off points near Evergem
+## Typical places we serve near Evergem
 
 - Evergem town center
 - local business park in Evergem

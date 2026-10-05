@@ -6,7 +6,7 @@ Need **3D printing in Tielt-Winge**? X3DPrints prints in Herzele and ships quick
 
 ## Why Tielt-Winge teams choose us
 
-- Local delivery to Tielt-Winge, Houwaart and Sint-Joris-Winge, Tielt; pickup in Herzele.
+- Shipping to Tielt-Winge, Houwaart and Sint-Joris-Winge, Tielt; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Tielt-Winge.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Tielt-Winge, Tielt-Winge city center, Houwaart, Sint-J
 
 ---
 
-## Typical drop-off points near Tielt-Winge
+## Typical places we serve near Tielt-Winge
 
 - Tielt-Winge town center
 - local business park in Tielt-Winge

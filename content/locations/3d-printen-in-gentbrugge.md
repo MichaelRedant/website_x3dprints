@@ -48,7 +48,7 @@ Voor een gerichte offerte ontvangen we graag:
 
 ## Levering naar Gentbrugge
 
-De productie gebeurt in de studio in Herzele. We verzenden naar Gentbrugge volgens de planning in de offerte; afhalen in Herzele kan op afspraak. De doorlooptijd hangt af van formaat, materiaal, aantallen en eventuele nabewerking. Een vaste deadline moet daarom bij de eerste aanvraag worden vermeld.
+De productie gebeurt in de studio in Herzele. We verzenden naar Gentbrugge volgens de planning in de offerte; gratis afhalen in de afhaalbox in Herzele, 24 op 7. De doorlooptijd hangt af van formaat, materiaal, aantallen en eventuele nabewerking. Een vaste deadline moet daarom bij de eerste aanvraag worden vermeld.
 
 Bekijk de [prijzenpagina](/pricing) voor richtprijzen of het [portfolio](/portfolio) voor voorbeelden van functionele en visuele prints.
 
@@ -57,7 +57,7 @@ Bekijk de [prijzenpagina](/pricing) voor richtprijzen of het [portfolio](/portfo
 ## Veelgestelde vragen over 3D printen in Gentbrugge
 
 **Is X3DPrints gevestigd in Gentbrugge?**
-Nee. We produceren in Herzele en verzenden naar Gentbrugge en omgeving. Afhalen in de studio kan op afspraak.
+Nee. We produceren in Herzele en verzenden naar Gentbrugge en omgeving. Gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Kunnen jullie een kapot onderdeel namaken?**
 Vaak wel, maar eerst beoordelen we vorm, materiaal en belasting. Foto's helpen bij die eerste controle. Voor modelleren of scannen hebben we daarna maatvoering of het fysieke onderdeel nodig.

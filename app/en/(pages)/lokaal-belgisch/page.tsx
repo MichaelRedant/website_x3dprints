@@ -44,7 +44,7 @@ export default function Page() {
     },
     {
       title: "Short supply chain",
-      desc: "Delivery across Flanders, pickup by appointment in Herzele. Fewer transport kilometres and faster feedback loops.",
+      desc: "Shipping across Flanders, free pickup, 24/7, from the pickup box in Herzele. Fewer transport kilometres and faster feedback loops.",
     },
     {
       title: "Fair agreements",
@@ -150,7 +150,7 @@ export default function Page() {
                 href="/en/locaties"
                 className="inline-flex items-center gap-2 rounded-xl border border-emerald-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
               >
-                Local delivery zones
+                Local regions
               </Link>
             </div>
           </Reveal>

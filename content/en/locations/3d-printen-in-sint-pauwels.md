@@ -6,7 +6,7 @@ Need **3D printing in Sint-Pauwels**? X3DPrints prints in Herzele and ships quic
 
 ## Why Sint-Pauwels teams choose us
 
-- Local delivery to Sint-Pauwels, Sint-Gillis-Waas and De Klinge, Meerdonk; pickup in Herzele.
+- Shipping to Sint-Pauwels, Sint-Gillis-Waas and De Klinge, Meerdonk; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Pauwels.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

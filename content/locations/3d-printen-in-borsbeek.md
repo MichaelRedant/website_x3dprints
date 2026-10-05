@@ -35,7 +35,7 @@ Op zoek naar **3D printen in Borsbeek** voor prototypes of kleine en grotere ser
 
 ## Levering en timing
 
-We versturen dagelijks naar Borsbeek. Geef een deadline mee als je iets nodig hebt voor een demo of expo; we plannen de productie hierop. Afhalen kan op afspraak in Herzele.
+We versturen dagelijks naar Borsbeek. Geef een deadline mee als je iets nodig hebt voor een demo of expo; we plannen de productie hierop. Gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 

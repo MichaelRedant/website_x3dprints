@@ -13,7 +13,7 @@ Laatst bijgewerkt: 30 juli 2026
 - **Functionele onderdelen:** PETG, TPU en technische materialen voor houders, covers, clips, jigs en testopstellingen.
 - **Zichtwerk en presentaties:** PLA Matte, kleurkeuze en nabewerking voor maquettes, pitchmodellen, beursmateriaal en winkelpresentaties.
 - **Snelle iteratie:** geschikt voor bureaus, engineers en studenten die niet weken willen wachten op een eerste tastbaar model.
-- **Duidelijke logistiek:** verzending naar Antwerpen is standaard; afhalen in Herzele kan op afspraak.
+- **Duidelijke logistiek:** verzending naar Antwerpen is standaard; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - **Persoonlijke controle:** je schakelt rechtstreeks met de maker, niet met een anoniem bestandsportaal.
 
 Voor een aanvraag stuur je bij voorkeur een STL- of STEP-bestand, gewenste aantallen, kleur, materiaalvoorkeur en gebruikscontext via [contact](/contact). Als passing belangrijk is, vermeld dan ook waar het onderdeel in moet klikken, schuiven of schroeven.
@@ -122,7 +122,7 @@ Voor kritische passing is één teststuk vaak verstandiger dan meteen een volled
 ## Veelgestelde vragen rond 3D printen in Antwerpen
 
 **Leveren jullie in alle districten van Antwerpen?**  
-Ja. We verzenden naar Antwerpen, Berchem, Borgerhout, Deurne, Ekeren, Hoboken, Merksem, Wilrijk, Borsbeek en Berendrecht-Zandvliet-Lillo. Afhalen in Herzele kan op afspraak.
+Ja. We verzenden naar Antwerpen, Berchem, Borgerhout, Deurne, Ekeren, Hoboken, Merksem, Wilrijk, Borsbeek en Berendrecht-Zandvliet-Lillo. Gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Kunnen jullie ook eventmateriaal of retail displays maken?**  
 Ja. Denk aan displays, logo-objecten, prijskaartjes, standonderdelen, giveaways, tafeldecoratie en modulaire props. We letten op afwerking, transport en montage.
@@ -179,7 +179,7 @@ Klaar om te starten met een prototype, display, technisch onderdeel of kleine se
 - Dekking: Antwerpen centrum, Linkeroever, Berchem, Borgerhout, Deurne, Ekeren, Hoboken, Merksem, Wilrijk, Borsbeek, Berendrecht-Zandvliet-Lillo en de randgemeenten.
 - Sterke commerciële use cases: scannerhouders, displays, maquettes, servetringen, signage, sensorbehuizingen, jigs en beursprops.
 - Bestanden: STL/STEP versnellen de offerte; foto's helpen om de haalbaarheid te bespreken, maar voor reverse engineering moet het object meestal fysiek langskomen.
-- Doorlooptijd: meestal enkele werkdagen na akkoord; spoed en levering naar Antwerpen in overleg.
+- Doorlooptijd: meestal enkele werkdagen na akkoord; spoed in overleg. Verzending naar Antwerpen of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ## Gerelateerde buurtpagina's
 - [Buurpagina: 3D printen in Berchem](/3d-printen-in-berchem)

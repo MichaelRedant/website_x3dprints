@@ -6,7 +6,7 @@ Need **3D printing in Kobbegem**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Kobbegem teams choose us
 
-- Local delivery to Kobbegem; pickup in Herzele.
+- Shipping to Kobbegem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Kobbegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Kobbegem, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Kobbegem
+## Typical places we serve near Kobbegem
 
 - Kobbegem town center
 - local business park in Kobbegem

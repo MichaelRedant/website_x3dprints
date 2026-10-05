@@ -23,7 +23,7 @@
 
 ## Lokale focus in Nazareth-De Pinte
 
-Werk je in Nazareth-De Pinte? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Nazareth-De Pinte.
+Werk je in Nazareth-De Pinte? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending naar Nazareth-De Pinte.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
@@ -73,7 +73,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

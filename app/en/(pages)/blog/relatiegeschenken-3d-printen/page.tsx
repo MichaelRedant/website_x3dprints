@@ -50,7 +50,7 @@ const tips = [
   "Text depth min. 0.6 mm; round edges for a pleasant feel. Add pockets for magnets or TPU pads.",
   "Layer height 0.16-0.24 mm: clean lines without long print time. Batch names/initials per colour.",
   "Provide STL/STEP or use design service (€45/hour). Add logo as vector or STL in the brief.",
-  "Plan lead time: usually a few business days; share event date and delivery method (EV zones or parcel).",
+  "Plan lead time: usually a few business days; share event date and delivery method (shipping or free pickup from the pickup box in Herzele).",
 ]
 
 const checklist = [
@@ -58,7 +58,7 @@ const checklist = [
   "Material: Silk/Matte PLA (look), PETG (strength), TPU (grip).",
   "Finish: raw or lightly sanded; primer optional for painting.",
   "Branding: logo, name, QR code? Provide font/outline.",
-  "Deadline + delivery option: EV zone or parcel service.",
+  "Deadline + delivery option: shipping or free pickup from the pickup box in Herzele.",
 ]
 
 const faqItems = [

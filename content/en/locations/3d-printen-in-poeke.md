@@ -6,7 +6,7 @@ Need **3D printing in Poeke**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Poeke teams choose us
 
-- Local delivery to Poeke, Aalter and Bellem, Knesselare; pickup in Herzele.
+- Shipping to Poeke, Aalter and Bellem, Knesselare; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Poeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

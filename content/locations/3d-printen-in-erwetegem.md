@@ -79,8 +79,8 @@ Erwetegem is nauw verbonden met [Zottegem](https://www.zottegem.be). Door te kie
 
 - **Standaard**: 2 tot 5 werkdagen voor **3D printen in Erwetegem**.
 - **Spoed**: mogelijk na overleg met het team van **3D printen in Erwetegem**.
-- **Verzending**: lokale afhaling of pakketdienst na **3D printen in Erwetegem**.
-- **Afhaling**: op afspraak in de buurt van **3D printen in Erwetegem**.
+- **Verzending**: verzending in heel België na **3D printen in Erwetegem**.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

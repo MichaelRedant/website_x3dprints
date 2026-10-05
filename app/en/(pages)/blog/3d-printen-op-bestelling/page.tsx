@@ -70,7 +70,7 @@ const briefingChecklist = [
   "STL or STEP file with clear version naming",
   "Preferred material and color, or request guidance",
   "Target quantity and deadline",
-  "Delivery preference: pickup, shipping or planned drop-off",
+  "Delivery preference: free pickup from the pickup box in Herzele, or shipping",
 ]
 
 const repeatTips = [

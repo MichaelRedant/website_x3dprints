@@ -1,6 +1,6 @@
 # 3D printen in Zemst: A12/E19-corridor
 
-Voor **3D printen in Zemst** leveren we prototypes, behuizingen en tooling richting Weerde, Hofstade (Vl.Br.) en Eppegem. Snelle offertes, transparante prijzen en leveringen via A12/E19.
+Voor **3D printen in Zemst** leveren we prototypes, behuizingen en tooling richting Weerde, Hofstade (Vl.Br.) en Eppegem. Snelle offertes, transparante prijzen en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Voor **3D printen in Zemst** leveren we prototypes, behuizingen en tooling richt
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Zemst/Weerde; afhalen in Herzele kan.
+- Verzending naar Zemst en Weerde; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Voor **3D printen in Zemst** leveren we prototypes, behuizingen en tooling richt
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via A12/E19; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

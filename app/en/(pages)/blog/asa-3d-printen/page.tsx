@@ -149,7 +149,7 @@ const faqItems = [
   },
   {
     q: "Can ASA parts be delivered across Belgium?",
-    a: "Yes. X3DPrints produces in Herzele and delivers throughout Belgium. Collection in Herzele is available by appointment. Projects from Ghent, Antwerp, Hasselt, Genk and other areas receive the same technical review.",
+    a: "Yes. X3DPrints produces in Herzele and delivers throughout Belgium. Pickup is free, 24/7, from the pickup box in Herzele. Projects from Ghent, Antwerp, Hasselt, Genk and other areas receive the same technical review.",
   },
 ]
 
@@ -436,7 +436,7 @@ export default function Asa3dPrintingPage() {
               </h2>
               <p className="mt-4 leading-7 text-slate-700">
                 X3DPrints is a one-person studio in Herzele. Production does not take place in every city listed here: projects
-                are prepared in Herzele and then collected by appointment or shipped. See service information for
+                are prepared in Herzele and then shipped or collected free of charge from the pickup box in Herzele. See service information for
                 <Link href="/en/3d-printen-in-herzele" className="mx-1 font-semibold text-indigo-600 underline underline-offset-4">Herzele</Link>,
                 <Link href="/en/3d-printen-in-gent" className="mx-1 font-semibold text-indigo-600 underline underline-offset-4">Ghent</Link>,
                 <Link href="/en/3d-printen-in-antwerpen" className="mx-1 font-semibold text-indigo-600 underline underline-offset-4">Antwerp</Link>, or browse the full

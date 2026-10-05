@@ -6,7 +6,7 @@ Need **3D printing in Zele**? X3DPrints prints in Herzele and ships quickly to Z
 
 ## Why Zele teams choose us
 
-- Local delivery to Zele, Heikant (Zele) and Hamme, Dendermonde; pickup in Herzele.
+- Shipping to Zele, Heikant (Zele) and Hamme, Dendermonde; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Zele.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

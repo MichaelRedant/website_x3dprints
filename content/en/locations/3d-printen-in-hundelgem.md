@@ -6,7 +6,7 @@ Need **3D printing in Hundelgem**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Hundelgem teams choose us
 
-- Local delivery to Hundelgem, Zwalm and Nederzwalm-Hermelgem, Munkzwalm; pickup in Herzele.
+- Shipping to Hundelgem, Zwalm and Nederzwalm-Hermelgem, Munkzwalm; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Hundelgem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Hundelgem, Hundelgem city center, Zwalm, Nederzwalm-He
 
 ---
 
-## Typical drop-off points near Hundelgem
+## Typical places we serve near Hundelgem
 
 - Hundelgem town center
 - local business park in Hundelgem

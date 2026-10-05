@@ -6,7 +6,7 @@ Need **3D printing in Sint-Kornelis-Horebeke**? X3DPrints prints in Herzele and 
 
 ## Why Sint-Kornelis-Horebeke teams choose us
 
-- Local delivery to Sint-Kornelis-Horebeke, Horebeke and Sint-Maria-Horebeke; pickup in Herzele.
+- Shipping to Sint-Kornelis-Horebeke, Horebeke and Sint-Maria-Horebeke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Kornelis-Horebeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Sint-Kornelis-Horebeke, Sint-Kornelis-Horebeke city ce
 
 ---
 
-## Typical drop-off points near Sint-Kornelis-Horebeke
+## Typical places we serve near Sint-Kornelis-Horebeke
 
 - Sint-Kornelis-Horebeke town center
 - local business park in Sint-Kornelis-Horebeke

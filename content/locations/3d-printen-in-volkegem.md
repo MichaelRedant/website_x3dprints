@@ -7,7 +7,7 @@ Volkegem ligt op de flanken van de Koppenberg. X3DPrints levert snelle 3D prints
 ## Sterktes voor Volkegem
 
 - **Snelle levering**: 2-5 werkdagen; spoed op aanvraag.  
-- **Levering** richting Koppenberg, Volkegemberg en N8; afhalen in Herzele kan.  
+- **Verzending** naar Koppenberg en Volkegemberg; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA voor trofee- of decorstukken, PETG voor outdoor bevestigingen, TPU voor flexibele klemmen.  
 - **Transparant**: bekijk [pricing](/pricing) of start je aanvraag via [contact](/contact).
 
@@ -37,7 +37,7 @@ Zoek je 3D printen in Volkegem (Oudenaarde)? We denken mee over passing, sterkte
 
 1) Deel een STL/STEP-link via [contact](/contact) met context en aantallen.  
 2) We adviseren orientatie en materiaalkeuze.  
-3) Print, QC en levering in Volkegem of afhalen.
+3) Print, QC en verzending naar Volkegem of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Check ook [materials](/materials), de [viewer](/viewer), sectorcases op [segments](/segments) en tips in de [blog](/blog).
 
@@ -50,7 +50,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Volkegem (Oudenaarde)?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Volkegem (Oudenaarde)?**
 

@@ -6,7 +6,7 @@ Need **3D printing in Sint-Denijs-Westrem**? X3DPrints prints in Herzele and shi
 
 ## Why Sint-Denijs-Westrem teams choose us
 
-- Local delivery to Sint-Denijs-Westrem; pickup in Herzele.
+- Shipping to Sint-Denijs-Westrem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Denijs-Westrem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

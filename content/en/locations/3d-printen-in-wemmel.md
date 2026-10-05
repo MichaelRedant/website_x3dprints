@@ -6,7 +6,7 @@ Need **3D printing in Wemmel**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Wemmel teams choose us
 
-- Local delivery to Wemmel, Romeinsesteenweg and R0 noordrand; pickup in Herzele.
+- Shipping to Wemmel, Romeinsesteenweg and R0 noordrand; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Wemmel.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Wemmel, Wemmel city center, Romeinsesteenweg, R0 noord
 
 ---
 
-## Typical drop-off points near Wemmel
+## Typical places we serve near Wemmel
 
 - Wemmel town center
 - local business park in Wemmel

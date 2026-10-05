@@ -6,7 +6,7 @@ Need **3D printing in Zomergem**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Zomergem teams choose us
 
-- Local delivery to Zomergem, Lievegem and Waarschoot, Ronsele; pickup in Herzele.
+- Shipping to Zomergem, Lievegem and Waarschoot, Ronsele; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Zomergem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Zomergem, Zomergem city center, Lievegem, Waarschoot, 
 
 ---
 
-## Typical drop-off points near Zomergem
+## Typical places we serve near Zomergem
 
 - Zomergem town center
 - local business park in Zomergem

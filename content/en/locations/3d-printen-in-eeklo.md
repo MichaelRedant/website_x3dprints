@@ -6,7 +6,7 @@ Need **3D printing in Eeklo**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Eeklo teams choose us
 
-- Local delivery to Eeklo, Meetjesland and Maldegem, Assenede; pickup in Herzele.
+- Shipping to Eeklo, Meetjesland and Maldegem, Assenede; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Eeklo.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

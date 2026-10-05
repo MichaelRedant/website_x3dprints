@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 const cityCards = [
   {
     city: "Gent",
-    info: "Voor agencies, makers en scholen met snelle afhaling of levering op afspraak en vlot 3D model printen.",
+    info: "Voor agencies, makers en scholen met verzending of gratis afhalen in de afhaalbox in Herzele en vlot 3D model printen.",
     examples: "Retail displays, eventprops en studentenprojecten.",
   },
   {
@@ -58,7 +58,7 @@ const cityCards = [
   },
   {
     city: "Dendermonde",
-    info: "Regelmatige leverroutes plus verzending wanneer dat sneller past.",
+    info: "Verzending of gratis afhalen in de afhaalbox in Herzele, 24 op 7.",
     examples: "Campaign assets, prototypes en korte series.",
   },
 ]
@@ -66,14 +66,14 @@ const cityCards = [
 const processSteps = [
   "Stuur STL of STEP met projectcontext en deadline.",
   "Krijg binnen 1 werkdag een voorstel voor materiaal, timing en budget.",
-  "Kies afhaling, verzending of levering op maat.",
+  "Kies gratis afhalen in de afhaalbox in Herzele of verzending.",
   "Plan vervolgjobs met dezelfde setup voor consistente output.",
 ]
 
 const logisticsRows = [
   {
     option: "Afhalen",
-    speed: "Snelst zodra batch klaar is",
+    speed: "Gratis, 24 op 7, in de afhaalbox in Herzele",
     note: "Ideaal voor lokale iteraties en korte feedbackloops.",
   },
   {
@@ -82,9 +82,9 @@ const logisticsRows = [
     note: "Handig wanneer fysieke afhaling niet haalbaar is.",
   },
   {
-    option: "Levering op maat",
+    option: "Grotere zendingen",
     speed: "Volgens planning",
-    note: "Interessant voor grotere campagnes of meerdere collis.",
+    note: "Zorgvuldig verpakt, ook voor grotere campagnes of meerdere collis.",
   },
 ]
 

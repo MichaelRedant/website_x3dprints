@@ -58,7 +58,7 @@ const COPY = {
     totalLabel: "Totaal",
     shippingMethod: "Verzendmethode",
     shippingChoiceTitle: "Kies verzendmethode",
-    shippingChoiceNote: "Afhalen op afspraak is gratis.",
+    shippingChoiceNote: "Afhalen in de afhaalbox in Herzele is gratis, 24 op 7.",
     emailLabel: "E-mail voor bestelbevestiging",
     emailPlaceholder: "jij@bedrijf.be",
     emailRequired: "Vul een geldig e-mailadres in om verder te gaan.",
@@ -117,7 +117,7 @@ const COPY = {
     totalLabel: "Total",
     shippingMethod: "Shipping method",
     shippingChoiceTitle: "Choose shipping method",
-    shippingChoiceNote: "Pickup by appointment is free.",
+    shippingChoiceNote: "Pickup from the pickup box in Herzele is free, 24/7.",
     emailLabel: "Email for confirmation",
     emailPlaceholder: "you@company.be",
     emailRequired: "Enter a valid email address to continue.",
@@ -144,11 +144,11 @@ const COPY = {
 const SHIPPING_LABELS: Record<ShopLocale, Record<string, string>> = {
   nl: {
     be_flat: "Levering in Belgie (tot 3 kg)",
-    pickup: "Afhalen op afspraak",
+    pickup: "Gratis afhalen in de afhaalbox (Herzele)",
   },
   en: {
     be_flat: "Delivery in Belgium (up to 3 kg)",
-    pickup: "Pickup by appointment",
+    pickup: "Free pickup box (Herzele)",
   },
 }
 

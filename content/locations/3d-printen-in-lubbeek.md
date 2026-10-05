@@ -1,6 +1,6 @@
 # 3D printen in Lubbeek: Leuvense rand en Hageland
 
-Voor **3D printen in Lubbeek** leveren we prototypes, behuizingen en tooling richting Binkom, Pellenberg en Korbeek-Lo rand. Snelle offertes, transparante prijzen en leveringen via de Leuvense as.
+Voor **3D printen in Lubbeek** leveren we prototypes, behuizingen en tooling richting Binkom, Pellenberg en Korbeek-Lo rand. Snelle offertes, transparante prijzen en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Voor **3D printen in Lubbeek** leveren we prototypes, behuizingen en tooling ric
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Lubbeek/Hageland; afhalen in Herzele kan.
+- Verzending naar Lubbeek en Hageland; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Voor **3D printen in Lubbeek** leveren we prototypes, behuizingen en tooling ric
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via Leuvense as; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

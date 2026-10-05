@@ -61,7 +61,7 @@ const factors = [
   {
     title: "Logistiek",
     description:
-      "Afhalen in Herzele kan zodra alles is afgekoeld. Bpost en persoonlijke leveringen plannen we flexibel: we zoeken samen de snelste optie die binnen budget past.",
+      "Afhalen kan zodra alles is afgekoeld: gratis, 24 op 7, in de afhaalbox in Herzele. Verzenden kan ook; we zoeken samen de snelste optie die binnen budget past.",
   },
 ]
 

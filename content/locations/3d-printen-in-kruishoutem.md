@@ -7,7 +7,7 @@ X3DPrints levert 3D prints in Kruishoutem met snelle routes langs E17 en de Vlaa
 ## Waarom kiezen voor ons?
 
 - **Lead time**: 2-5 werkdagen, spoed mogelijk.  
-- **Levering** richting Lozerkasteel, Kerkstraat en industriezone; afhalen in Herzele kan.  
+- **Verzending** naar Lozerkasteel, Kerkstraat en industriezone; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaalkeuze**: PLA voor maquettes en displays, PETG voor buiten of trillingen, TPU voor flexibele koppelingen.  
 - **Prijs**: indicaties op [pricing](/pricing); start je aanvraag via [contact](/contact).
 
@@ -37,7 +37,7 @@ In Kruishoutem helpen we makers en bedrijven met 3D prints die vlot passen en la
 
 1) Deel een STL/STEP-link via [contact](/contact) met context en aantallen.  
 2) Wij adviseren orientatie en materiaal.  
-3) Print, QC en levering in Kruishoutem of afhalen.
+3) Print, QC en verzending naar Kruishoutem of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Meer weten? Bekijk [materials](/materials), de [viewer](/viewer), sectorcases op [segments](/segments) en tips in de [blog](/blog).
 

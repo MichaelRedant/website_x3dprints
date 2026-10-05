@@ -6,7 +6,7 @@ Need **3D printing in Aalst**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Aalst teams choose us
 
-- Local delivery to Aalst, Erembodegem and Hofstade, Ninove; pickup in Herzele.
+- Shipping to Aalst, Erembodegem and Hofstade, Ninove; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Aalst.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Aalst, Aalst city center, Erembodegem, Hofstade, Ninov
 
 ---
 
-## Typical drop-off points near Aalst
+## Typical places we serve near Aalst
 
 - Aalst town center
 - local business park in Aalst

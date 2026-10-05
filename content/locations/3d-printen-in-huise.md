@@ -1,13 +1,13 @@
 # 3D printen in Huise (Kruisem): tussen kouter en kerkplein
 
-X3DPrints verzorgt 3D prints voor Huise, met levering langs kouterwegen en richting Sint-Petruskerk. Ideaal voor prototypes, tools en zowel kleine als grotere series.
+X3DPrints verzorgt 3D prints voor Huise, met verzending naar Huise en de buurt van de Sint-Petruskerk. Ideaal voor prototypes, tools en zowel kleine als grotere series.
 
 ---
 
 ## Waarom X3DPrints voor Huise?
 
 - **Snelle doorlooptijd**: 2-5 werkdagen; spoed op aanvraag.  
-- **Levering** richting dorpskern en verbindingen naar Vlaamse Ardennen; afhalen in Herzele kan.  
+- **Verzending** naar de dorpskern van Huise en de Vlaamse Ardennen; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA voor maquettes en displays, PETG voor buitenopstellingen, TPU voor flexibele koppelingen en dempers.  
 - **Prijs helder**: zie [pricing](/pricing) of start via [contact](/contact).
 
@@ -37,7 +37,7 @@ Zoek je 3D printen in Huise (Kruisem)? We denken mee over passing, sterkte en lo
 
 1) Deel een STL/STEP-link via [contact](/contact) met afmetingen en toepassing.  
 2) Wij adviseren orientatie en materiaal.  
-3) Productie, QC en levering in Huise of afhalen.
+3) Productie, QC en verzending naar Huise of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Bekijk [materials](/materials), de [viewer](/viewer), sectorcases op [segments](/segments) en tips in de [blog](/blog).
 

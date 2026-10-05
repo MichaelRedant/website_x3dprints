@@ -6,7 +6,7 @@ Need **3D printing in Wortegem-Petegem**? X3DPrints prints in Herzele and ships 
 
 ## Why Wortegem-Petegem teams choose us
 
-- Local delivery to Wortegem-Petegem, Wortegem and Petegem-aan-de-Schelde, Moregem; pickup in Herzele.
+- Shipping to Wortegem-Petegem, Wortegem and Petegem-aan-de-Schelde, Moregem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Wortegem-Petegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

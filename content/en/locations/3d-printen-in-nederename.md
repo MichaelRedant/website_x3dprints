@@ -6,7 +6,7 @@ Need **3D printing in Nederename (Oudenaarde)**? X3DPrints prints in Herzele and
 
 ## Why Nederename (Oudenaarde) teams choose us
 
-- Local delivery to Nederename (Oudenaarde); pickup in Herzele.
+- Shipping to Nederename (Oudenaarde); free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Nederename (Oudenaarde).
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

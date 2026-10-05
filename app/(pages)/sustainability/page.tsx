@@ -12,7 +12,7 @@ type Pillar = { title: string; copy: string; icon: "material" | "energy" | "loop
 export const metadata: Metadata = {
   title: "FuturePrint Lab · Duurzaamheid & circulariteit | X3DPrints",
   description:
-    "Duurzame 3D-printing vanuit Herzele. X3DPrints focust op slim ontwerp, efficiënte materiaalkeuzes en lokale levering voor ondernemers, scholen en verenigingen in Oost-Vlaanderen.",
+    "Duurzame 3D-printing vanuit Herzele. X3DPrints focust op slim ontwerp, efficiënte materiaalkeuzes en lokale productie voor ondernemers, scholen en verenigingen in Oost-Vlaanderen.",
   alternates: { canonical: "https://www.x3dprints.be/sustainability/", languages: { "nl-BE": "https://www.x3dprints.be/sustainability/", "en-BE": "https://www.x3dprints.be/en/sustainability/", "x-default": "https://www.x3dprints.be/sustainability/", }, },
   openGraph: {
     title: "Duurzame 3D-printing bij X3DPrints",
@@ -78,7 +78,7 @@ const pillars: Pillar[] = [
   {
     title: "Praktische en lokale logistiek",
     copy:
-      "Afhalen kan op afspraak in Herzele. Voor regio Gent en omliggende gemeenten plannen we leveringen in combinatie met bestaande ritten. Verder maken we gebruik van compacte pakketdiensten.",
+      "Afhalen is gratis, 24 op 7, in de beveiligde afhaalbox in Herzele. Voor alle andere adressen verzenden we compact verpakt.",
     icon: "loop",
     links: [
       { href: "/locaties", label: "Levering en regio’s" },
@@ -118,7 +118,7 @@ const faqItems = [
   {
     q: "Hoe is 3D-printing bij X3DPrints duurzamer dan klassieke productie?",
     a:
-      "Je maakt enkel wat je nodig hebt, in de aantallen die je echt gebruikt. Geen grote minimumafnames, matrijzen of stock. In combinatie met de juiste materiaalkeuze en lokale levering vermijd je onnodige productie en transport.",
+      "Je maakt enkel wat je nodig hebt, in de aantallen die je echt gebruikt. Geen grote minimumafnames, matrijzen of stock. In combinatie met de juiste materiaalkeuze en lokale productie vermijd je onnodige productie en transport.",
   },
   {
     q: "Kan ik kiezen voor een duurzamere materiaaloptie?",
@@ -229,7 +229,7 @@ export default function SustainabilityPage() {
         </h1>
         <p className="mt-4 text-base text-slate-600 sm:text-lg">
           X3DPrints is een kleine 3D-printstudio in Herzele. Geen massaproductie, wel gerichte oplossingen met aandacht voor slim ontwerp,
-          efficiënte materiaalkeuzes en lokale levering. Deze pagina bundelt hoe we daar in de praktijk mee omgaan.
+          efficiënte materiaalkeuzes en lokale productie. Deze pagina bundelt hoe we daar in de praktijk mee omgaan.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <ShimmerButton href="/contact">Bespreek een project</ShimmerButton>

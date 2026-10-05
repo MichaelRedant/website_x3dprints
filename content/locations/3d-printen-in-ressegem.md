@@ -81,7 +81,7 @@ Meer weten? Lees ook:
 2. Kies materiaal en kleur  
 3. Ontvang een offerte binnen **24 uur**  
 4. Start productie na akkoord  
-5. Afhalen of levering volgens afspraak  
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.  
 
 👉 Elke bestelling wordt technisch nagekeken en in overleg bijgestuurd waar nodig. Zo blijft **3D printen in Ressegem betrouwbaar en transparant**.
 
@@ -92,7 +92,7 @@ Meer weten? Lees ook:
 - **Standaard:** 2–5 werkdagen  
 - **Spoed:** mogelijk na overleg  
 - **Verzending:** volgens de [prijzenpagina](/pricing)  
-- **Afhalen:** op afspraak in de regio  
+- **Afhalen:** gratis, 24 op 7, in de beveiligde afhaalbox in Herzele  
 
 ---
 
@@ -139,7 +139,7 @@ Werk je in Ressegem? We leveren snelle prototypes en zowel kleine als grotere se
 
 **Leveren jullie ook in Ressegem?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Ressegem?**
 

@@ -6,7 +6,7 @@ Need **3D printing in Ronse**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Ronse teams choose us
 
-- Local delivery to Ronse, De Klijpe and Louise-Marie, Maarkedal; pickup in Herzele.
+- Shipping to Ronse, De Klijpe and Louise-Marie, Maarkedal; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Ronse.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Ronse, Ronse city center, De Klijpe, Louise-Marie, Maa
 
 ---
 
-## Typical drop-off points near Ronse
+## Typical places we serve near Ronse
 
 - Ronse town center
 - local business park in Ronse

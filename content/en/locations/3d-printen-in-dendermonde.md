@@ -6,7 +6,7 @@ Need **3D printing in Dendermonde**? X3DPrints prints in Herzele and ships quick
 
 ## Why Dendermonde teams choose us
 
-- Local delivery to Dendermonde, Sint-Gillis-bij-Dendermonde and Grembergen, Baasrode; pickup in Herzele.
+- Shipping to Dendermonde, Sint-Gillis-bij-Dendermonde and Grembergen, Baasrode; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Dendermonde.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Dendermonde, Dendermonde city center, Sint-Gillis-bij-
 
 ---
 
-## Typical drop-off points near Dendermonde
+## Typical places we serve near Dendermonde
 
 - Dendermonde town center
 - local business park in Dendermonde

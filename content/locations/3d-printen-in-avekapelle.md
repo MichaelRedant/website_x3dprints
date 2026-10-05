@@ -37,13 +37,13 @@ Zoek je 3D printen in Avekapelle? We denken mee over passing, sterkte en look zo
 1. Deel STL/STEP en toepassing via [contact](/contact)
 2. We toetsen materiaalkeuze aan binnen/buiten, vocht en gewenste look
 3. Na akkoord volgen productie, supportverwijdering en kwaliteitscheck
-4. Levering richting Avekapelle of afhalen in Herzele volgens afspraak
+4. Verzending naar Avekapelle of gratis afhalen in de afhaalbox in Herzele, 24 op 7
 
 ## Levering of afhalen
 
-- Snelle ritten richting Avekapelle, Viconia en de omliggende hoeves
-- Grotere zendingen via pakketdienst met tracking
-- Afhalen in Herzele mogelijk, gecombineerd met overleg over volgende iteraties of een [viewer](/viewer) sessie
+- Verzending naar Avekapelle, Viconia en de omliggende hoeves
+- Ook grotere zendingen, zorgvuldig verpakt en met tracking
+- Gratis afhalen in de afhaalbox in Herzele, 24 op 7, gecombineerd met overleg over volgende iteraties of een [viewer](/viewer) sessie
 
 ## Klaar om te starten?
 
@@ -58,7 +58,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Avekapelle?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Avekapelle?**
 

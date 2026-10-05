@@ -8,7 +8,7 @@ Met **3D printen in Machelen** leveren we prototypes, fixtures en props richting
 
 - Offerte binnen een werkdag met haalbare lead time.
 - PLA Matte, PETG en TPU voor zichtwerk en functionele parts.
-- EV-levering richting Diegem/Brucargo; afhalen in Herzele kan.
+- Verzending naar Diegem en Brucargo; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Consistente batches dankzij vaste slicerprofielen en QC.
 
 We kennen de combinatie van kantoren, logistiek en airport-projecten. Daardoor stemmen we materiaal en afwerking af op props, tooling en behuizingen.
@@ -42,7 +42,7 @@ We kennen de combinatie van kantoren, logistiek en airport-projecten. Daardoor s
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via R0/airportzone; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

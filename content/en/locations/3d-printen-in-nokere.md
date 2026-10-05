@@ -6,7 +6,7 @@ Need **3D printing in Nokere**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Nokere teams choose us
 
-- Local delivery to Nokere; pickup in Herzele.
+- Shipping to Nokere; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Nokere.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Nokere, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Nokere
+## Typical places we serve near Nokere
 
 - Nokere town center
 - local business park in Nokere

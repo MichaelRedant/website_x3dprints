@@ -1,6 +1,6 @@
 # 3D printen in Geetbets: Demerstreek en Hageland
 
-Voor **3D printen in Geetbets** leveren we prototypes, behuizingen en tooling richting Grazen en Rummen. Snelle offertes, transparante prijzen en leveringen op afspraak.
+Voor **3D printen in Geetbets** leveren we prototypes, behuizingen en tooling richting Grazen en Rummen. Snelle offertes, transparante prijzen en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Voor **3D printen in Geetbets** leveren we prototypes, behuizingen en tooling ri
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Geetbets/Demerstreek; afhalen in Herzele kan.
+- Verzending naar Geetbets en Demerstreek; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Voor **3D printen in Geetbets** leveren we prototypes, behuizingen en tooling ri
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via Demerzone; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

@@ -23,7 +23,7 @@
 
 ## Lokale focus in Kwaremont
 
-Werk je in Kwaremont? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Oude Kwaremont.
+Werk je in Kwaremont? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending naar Oude Kwaremont.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Kleine en grotere series onderdelen met consistente passing.
@@ -73,7 +73,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -89,7 +89,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 ## Veelgestelde vragen over 3D printen in Kwaremont
 
 **Hoe snel is 3D printen in Kwaremont?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Oude Kwaremont of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Oude Kwaremont of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Kwaremont?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

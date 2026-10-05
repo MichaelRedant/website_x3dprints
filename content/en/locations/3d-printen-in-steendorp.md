@@ -6,7 +6,7 @@ Need **3D printing in Steendorp**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Steendorp teams choose us
 
-- Local delivery to Steendorp, Temse and Tielrode, Elversele; pickup in Herzele.
+- Shipping to Steendorp, Temse and Tielrode, Elversele; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Steendorp.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

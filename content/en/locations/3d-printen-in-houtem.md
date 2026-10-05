@@ -6,7 +6,7 @@ Need **3D printing in Houtem (Veurne)**? X3DPrints prints in Herzele and ships q
 
 ## Why Houtem (Veurne) teams choose us
 
-- Local delivery to Houtem (Veurne), Militaire site and logistiek kwartier and Veurne I and II bedrijventerreinen, N355 towards De Moeren; pickup in Herzele.
+- Shipping to Houtem (Veurne), Militaire site and logistiek kwartier and Veurne I and II bedrijventerreinen, N355 towards De Moeren; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Houtem (Veurne).
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

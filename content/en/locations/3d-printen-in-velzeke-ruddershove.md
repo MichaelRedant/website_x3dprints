@@ -6,7 +6,7 @@ Need **3D printing in Velzeke-Ruddershove**? X3DPrints prints in Herzele and shi
 
 ## Why Velzeke-Ruddershove teams choose us
 
-- Local delivery to Velzeke-Ruddershove; pickup in Herzele.
+- Shipping to Velzeke-Ruddershove; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Velzeke-Ruddershove.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Velzeke-Ruddershove, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Velzeke-Ruddershove
+## Typical places we serve near Velzeke-Ruddershove
 
 - Velzeke-Ruddershove town center
 - local business park in Velzeke-Ruddershove

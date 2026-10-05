@@ -6,7 +6,7 @@ Need **3D printing in Onkerzele**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Onkerzele teams choose us
 
-- Local delivery to Onkerzele; pickup in Herzele.
+- Shipping to Onkerzele; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Onkerzele.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Onkerzele, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Onkerzele
+## Typical places we serve near Onkerzele
 
 - Onkerzele town center
 - local business park in Onkerzele

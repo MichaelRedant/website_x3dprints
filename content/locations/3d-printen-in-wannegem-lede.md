@@ -7,7 +7,7 @@ X3DPrints ondersteunt Wannegem-Lede met snelle 3D prints voor landbouw, cycling-
 ## Waarom kiezen voor ons?
 
 - **Lead time**: 2-5 werkdagen; spoed op aanvraag.  
-- **Levering** richting Sint-Mattheuskerk, dorpskern en kouterstraten; afhalen in Herzele kan.  
+- **Verzending** naar Sint-Mattheuskerk, dorpskern en kouterstraten; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA voor maquettes en visuals, PETG voor buitengebruik en trillingen, TPU voor flexibele koppelingen.  
 - **Prijsinzicht**: zie [pricing](/pricing) of vraag via [contact](/contact).
 
@@ -37,7 +37,7 @@ Voor projecten in Wannegem combineren we korte doorlooptijd met strakke afwerkin
 
 1) Deel een STL/STEP-link via [contact](/contact) met afmetingen en toepassing.  
 2) Wij adviseren orientatie en materiaalkeuze.  
-3) Print, QC en levering in Wannegem-Lede of afhalen.
+3) Print, QC en verzending naar Wannegem-Lede of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Meer inspiratie: [materials](/materials), [viewer](/viewer), [segments](/segments) en de [blog](/blog).
 

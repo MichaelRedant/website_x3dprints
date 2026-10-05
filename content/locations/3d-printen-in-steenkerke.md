@@ -38,13 +38,13 @@ Voor projecten in Steenkerke combineren we korte doorlooptijd met strakke afwerk
 1. Deel een STL/STEP-link en context via [contact](/contact)
 2. We valideren materiaalkeuze en eventuele inserts volgens de richtlijnen uit [3d-printen](/3d-printen)
 3. Na goedkeuring plannen we productie, doen nacontrole en delen foto-updates
-4. Levering richting Steenkerke of afhalen in Herzele, afhankelijk van jouw voorkeur
+4. Verzending naar Steenkerke of gratis afhalen in de afhaalbox in Herzele, 24 op 7, afhankelijk van jouw voorkeur
 
 ## Levering of afhalen
 
-- Koerier richting Steenkerke, Fintele en omliggende dorpen
-- Pakketdienst voor partners in Lo-Reninge of Veurne centrum
-- Afhalen bij ons atelier inclusief een korte review in de [viewer](/viewer)
+- Verzending naar Steenkerke, Fintele en omliggende dorpen
+- Verzending naar partners in Lo-Reninge of Veurne centrum
+- Gratis afhalen in de afhaalbox in Herzele, 24 op 7; bekijk je model vooraf in de [viewer](/viewer)
 
 ## Klaar om te starten?
 
@@ -64,7 +64,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Steenkerke?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 <!-- LOCAL_ENRICH_START -->
 ## Wat je moet weten in Steenkerke

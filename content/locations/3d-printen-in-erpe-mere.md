@@ -85,7 +85,7 @@ Wie naast een 3D project ook een salesgerichte website laten maken in erpe-mere 
 -   **Standaard**: 2 tot 5 werkdagen, afhankelijk van de complexiteit en omvang van uw bestelling.
 -   **Spoedoptie**: Neem contact met ons op voor de mogelijkheden bij dringende opdrachten.
 -   **Verzending**: Wij verzenden uw bestelling veilig en snel conform de tarieven op onze [prijzenpagina](/pricing).
--   **Ophalen**: Uw afgewerkte 3D prints kunnen op afspraak worden afgehaald in de nabijgelegen regio Borsbeke.
+-   **Ophalen**: Uw afgewerkte 3D prints kunnen gratis worden afgehaald, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

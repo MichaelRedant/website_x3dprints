@@ -6,7 +6,7 @@ Need **3D printing in Machelen**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Machelen teams choose us
 
-- Local delivery to Machelen, Diegem and Industryzone aan de R0, Luchthaven- and Brucargo-corridor; pickup in Herzele.
+- Shipping to Machelen, Diegem and Industryzone aan de R0, Luchthaven- and Brucargo-corridor; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Machelen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Machelen, Machelen city center, Diegem, Industryzone a
 
 ---
 
-## Typical drop-off points near Machelen
+## Typical places we serve near Machelen
 
 - Machelen town center
 - local business park in Machelen

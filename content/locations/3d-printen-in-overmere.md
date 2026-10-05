@@ -9,7 +9,7 @@
 - **Snelle service**: korte doorlooptijd en heldere communicatie.
 - **Materiaal op maat**: PLA, PETG en TPU volgens uw toepassing.
 - **Betrouwbare kwaliteit**: strakke passing en nette afwerking.
-- **Lokale levering**: in Overmere, Berlare en Uitbergen.
+- **Verzending**: naar Overmere, Berlare en Uitbergen; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -72,7 +72,7 @@ Een eerste testprint maakt uw beslissingen sneller en zekerder.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -91,7 +91,7 @@ Een eerste testprint maakt uw beslissingen sneller en zekerder.
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Overmere?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Donkmeer of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Donkmeer of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Overmere?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

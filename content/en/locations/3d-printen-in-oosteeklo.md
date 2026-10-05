@@ -6,7 +6,7 @@ Need **3D printing in Oosteeklo**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Oosteeklo teams choose us
 
-- Local delivery to Oosteeklo, Assenede and Bassevelde, Boekhoute; pickup in Herzele.
+- Shipping to Oosteeklo, Assenede and Bassevelde, Boekhoute; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Oosteeklo.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

@@ -67,7 +67,7 @@ Mespelare ligt tussen velden en wordt gekenmerkt door een rustige dorpskern. Bew
 2. Kies materiaal en afwerking voor **3D printen in Mespelare**.
 3. Ontvang binnen 24 uur een offerte.
 4. Na akkoord starten we met **3D printen in Mespelare**.
-5. Ophalen in de regio of verzending volgens afspraak.
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 
@@ -76,7 +76,7 @@ Mespelare ligt tussen velden en wordt gekenmerkt door een rustige dorpskern. Bew
 - **Standaard**: 2–5 werkdagen voor **3D printen in Mespelare**.
 - **Spoed**: in overleg mogelijk.
 - **Verzending**: tarieven volgens [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de buurt van Mespelare of Borsbeke.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -94,7 +94,7 @@ Mespelare ligt tussen velden en wordt gekenmerkt door een rustige dorpskern. Bew
 ## Veelgestelde vragen over 3D printen in Mespelare
 
 **Hoe snel is 3D printen in Mespelare?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Mespelare of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Mespelare of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Mespelare?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

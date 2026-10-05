@@ -67,7 +67,7 @@ Moorsel ligt aan de rand van de Dendervallei en staat bekend om de Sint-Martinus
 2. Kies materiaal en afwerking voor **3D printen in Moorsel**.
 3. Ontvang binnen 24 uur een offerte.
 4. Na akkoord starten we met **3D printen in Moorsel**.
-5. Ophalen in de regio of verzending volgens afspraak.
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 
@@ -76,7 +76,7 @@ Moorsel ligt aan de rand van de Dendervallei en staat bekend om de Sint-Martinus
 - **Standaard**: 2–5 werkdagen voor **3D printen in Moorsel**.
 - **Spoed**: in overleg mogelijk.
 - **Verzending**: tarieven volgens [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de buurt van Moorsel of Borsbeke.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -100,7 +100,7 @@ Ja. We maken zowel kleine als grotere series met consistente passing en duidelij
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Moorsel?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Moorsel of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Moorsel of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ## Interne links rond 3D printen in Aalst
 - [3D printen in Baardegem](/3d-printen-in-baardegem)

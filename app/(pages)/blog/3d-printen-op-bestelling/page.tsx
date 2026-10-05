@@ -68,7 +68,7 @@ const briefingChecklist = [
   "STL of STEP bestand met duidelijke bestandsnaam en versie",
   "Gewenst materiaal en kleur (of vraag advies via de material tool)",
   "Aantal stuks en targetdatum",
-  "Leverkeuze: afhalen, verzending of levering op maat",
+  "Leverkeuze: gratis afhalen in de afhaalbox in Herzele of verzending",
 ]
 
 const repeatTips = [

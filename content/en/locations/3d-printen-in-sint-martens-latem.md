@@ -6,7 +6,7 @@ Need **3D printing in Sint-Martens-Latem**? X3DPrints prints in Herzele and ship
 
 ## Why Sint-Martens-Latem teams choose us
 
-- Local delivery to Sint-Martens-Latem; pickup in Herzele.
+- Shipping to Sint-Martens-Latem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Martens-Latem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

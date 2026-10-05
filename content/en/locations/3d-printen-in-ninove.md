@@ -6,7 +6,7 @@ Need **3D printing in Ninove**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Ninove teams choose us
 
-- Local delivery to Ninove; pickup in Herzele.
+- Shipping to Ninove; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Ninove.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

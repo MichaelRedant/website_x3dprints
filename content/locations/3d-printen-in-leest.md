@@ -52,7 +52,7 @@ Deel je STL of STEP via [contact](/contact) met aantallen en gewenste leverdatum
 ## Veelgestelde vragen over 3D printen in Leest
 
 **Hoe snel is 3D printen in Leest?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Leest of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Leest of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Leest?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

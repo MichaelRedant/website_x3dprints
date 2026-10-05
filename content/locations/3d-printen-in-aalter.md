@@ -9,7 +9,7 @@
 - **Snelle doorlooptijd**: meestal enkele werkdagen, afhankelijk van complexiteit.
 - **Materiaaladvies**: hulp bij keuze tussen PLA, PETG en TPU.
 - **Nauwkeurige prints**: geschikt voor functionele onderdelen en prototypes.
-- **Lokale afhaling**: ophalen in Herzele of levering op afspraak.
+- **Afhalen of verzenden**: gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending naar Aalter.
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Lokale focus in Aalter
 
-Werk je in Aalter? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Corneliuskerk.
+Werk je in Aalter? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending in de omgeving van Sint-Corneliuskerk.
 
 - Maquettes en detailmodellen voor erfgoed en presentaties.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -73,7 +73,7 @@ Met rapid prototyping test u vorm en pasvorm snel, zodat u fouten vroeg detectee
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

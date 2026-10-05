@@ -6,7 +6,7 @@ Need **3D printing in Booitshoeke**? X3DPrints prints in Herzele and ships quick
 
 ## Why Booitshoeke teams choose us
 
-- Local delivery to Booitshoeke, Lovaart and polderbedrijven and Fintele and De Moeren route; pickup in Herzele.
+- Shipping to Booitshoeke, Lovaart and polderbedrijven and Fintele and De Moeren route; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Booitshoeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Booitshoeke, Booitshoeke village center, Lovaart and p
 
 ---
 
-## Typical drop-off points near Booitshoeke
+## Typical places we serve near Booitshoeke
 
 - Booitshoeke town center
 - local business park in Booitshoeke

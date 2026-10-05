@@ -6,7 +6,7 @@ Need **3D printing in Gent**? X3DPrints prints in Herzele and ships quickly to G
 
 ## Why Gent teams choose us
 
-- Local delivery to Gent, Zwijnaarde and Destelbergen, Merelbeke; pickup in Herzele.
+- Shipping to Gent, Zwijnaarde and Destelbergen, Merelbeke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Gent.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

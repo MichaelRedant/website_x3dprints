@@ -6,7 +6,7 @@ Need **3D printing in Leest**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Leest teams choose us
 
-- Local delivery to Leest; pickup in Herzele.
+- Shipping to Leest; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Leest.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

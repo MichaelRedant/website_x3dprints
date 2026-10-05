@@ -6,7 +6,7 @@ Need **3D printing in Zottegem**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Zottegem teams choose us
 
-- Local delivery to Zottegem; pickup in Herzele.
+- Shipping to Zottegem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Zottegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Zottegem, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Zottegem
+## Typical places we serve near Zottegem
 
 - Zottegem town center
 - local business park in Zottegem

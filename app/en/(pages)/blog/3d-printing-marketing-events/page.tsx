@@ -79,7 +79,7 @@ const planningTips = [
   {
     title: "Logistics",
     detail:
-      "EV delivery in zones near Herzele or parcel service. Fragile parts ship in foam with labels. Consider spares for events that tour.",
+      "Shipping across Belgium, or free pickup, 24/7, from the pickup box in Herzele. Fragile parts ship in foam with labels. Consider spares for events that tour.",
   },
 ]
 

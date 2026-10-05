@@ -6,7 +6,7 @@ Need **3D printing in Nieuwkerken-Waas**? X3DPrints prints in Herzele and ships 
 
 ## Why Nieuwkerken-Waas teams choose us
 
-- Local delivery to Nieuwkerken-Waas, Sint-Niklaas and Belsele, Sinaai; pickup in Herzele.
+- Shipping to Nieuwkerken-Waas, Sint-Niklaas and Belsele, Sinaai; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Nieuwkerken-Waas.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

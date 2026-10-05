@@ -6,7 +6,7 @@ Need **3D printing in Sint-Genesius-Rode**? X3DPrints prints in Herzele and ship
 
 ## Why Sint-Genesius-Rode teams choose us
 
-- Local delivery to Sint-Genesius-Rode and R0 zuid; pickup in Herzele.
+- Shipping to Sint-Genesius-Rode and R0 zuid; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Genesius-Rode.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Sint-Genesius-Rode, Sint-Genesius-Rode city center, Al
 
 ---
 
-## Typical drop-off points near Sint-Genesius-Rode
+## Typical places we serve near Sint-Genesius-Rode
 
 - Sint-Genesius-Rode town center
 - local business park in Sint-Genesius-Rode

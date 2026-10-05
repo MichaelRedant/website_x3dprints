@@ -6,7 +6,7 @@ Need **3D printing in Keerbergen**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Keerbergen teams choose us
 
-- Local delivery to Keerbergen, Grootbroek and Golfzone Keerbergen, Haachtsesteenweg; pickup in Herzele.
+- Shipping to Keerbergen, Grootbroek and Golfzone Keerbergen, Haachtsesteenweg; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Keerbergen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

@@ -6,7 +6,7 @@ Need **3D printing in Parike**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Parike teams choose us
 
-- Local delivery to Parike; pickup in Herzele.
+- Shipping to Parike; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Parike.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

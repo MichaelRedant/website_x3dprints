@@ -6,7 +6,7 @@ Need **3D printing in Impe**? X3DPrints prints in Herzele and ships quickly to I
 
 ## Why Impe teams choose us
 
-- Local delivery to Impe, Lede and Smetlede, Wanzele; pickup in Herzele.
+- Shipping to Impe, Lede and Smetlede, Wanzele; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Impe.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

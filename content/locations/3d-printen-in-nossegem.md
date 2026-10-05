@@ -8,7 +8,7 @@ Voor **3D printen in Nossegem** leveren we prototypes, behuizingen en zowel klei
 
 - Offerte binnen één werkdag, duidelijke prijzen.
 - PLA Matte, PETG en TPU voor zichtwerk en sterke parts.
-- EV-levering richting Nossegem/Zaventem; afhalen in Herzele kan.
+- Verzending naar Nossegem en Zaventem; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Voor **3D printen in Nossegem** leveren we prototypes, behuizingen en zowel klei
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via Leuvensesteenweg; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

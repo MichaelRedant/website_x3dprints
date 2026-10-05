@@ -70,7 +70,7 @@ Neigem grenst aan het uitgestrekte Neigembos en ligt ten oosten van Ninove. De s
 2. Kies materiaal en afwerking.
 3. Ontvang binnen 24 uur een transparante offerte.
 4. Na akkoord starten we met **3D printen in Neigem**.
-5. Ophalen in de regio of verzending volgens afspraak.
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 
@@ -79,7 +79,7 @@ Neigem grenst aan het uitgestrekte Neigembos en ligt ten oosten van Ninove. De s
 - **Standaard levering**: 2 tot 5 werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Ninove of omgeving.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -100,7 +100,7 @@ Neigem grenst aan het uitgestrekte Neigembos en ligt ten oosten van Ninove. De s
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Neigem?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Neigem of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Neigem of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Neigem?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

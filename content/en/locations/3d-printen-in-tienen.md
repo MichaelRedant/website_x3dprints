@@ -6,7 +6,7 @@ Need **3D printing in Tienen**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Tienen teams choose us
 
-- Local delivery to Tienen, Oplinter and Hakendover, Suikerfabrieksite and N3-corridor; pickup in Herzele.
+- Shipping to Tienen, Oplinter and Hakendover, Suikerfabrieksite and N3-corridor; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Tienen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

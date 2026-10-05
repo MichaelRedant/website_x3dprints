@@ -48,7 +48,7 @@ De [materialenbibliotheek](/materials) helpt bij de eerste keuze. Een productdem
 
 ## Levering naar Hasselt zonder valse lokale claim
 
-X3DPrints heeft geen werkplaats in Hasselt. We printen en controleren in Herzele en verzenden naar Hasselt, Kuringen, Kermt en omliggende gemeenten volgens de offerte. Afhalen in Herzele kan op afspraak.
+X3DPrints heeft geen werkplaats in Hasselt. We printen en controleren in Herzele en verzenden naar Hasselt, Kuringen, Kermt en omliggende gemeenten volgens de offerte. Gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Bij verzending houden we rekening met uitstekende delen, krasgevoelige zichtvlakken en assemblage. Grote objecten kunnen soms beter in delen worden ontworpen en na productie worden gemonteerd.
 

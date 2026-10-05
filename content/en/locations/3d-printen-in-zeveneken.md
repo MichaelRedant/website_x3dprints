@@ -6,7 +6,7 @@ Need **3D printing in Zeveneken**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Zeveneken teams choose us
 
-- Local delivery to Zeveneken, Lochristi and Zaffelare, Wachtebeke; pickup in Herzele.
+- Shipping to Zeveneken, Lochristi and Zaffelare, Wachtebeke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Zeveneken.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Zeveneken, Zeveneken city center, Lochristi, Zaffelare
 
 ---
 
-## Typical drop-off points near Zeveneken
+## Typical places we serve near Zeveneken
 
 - Zeveneken town center
 - local business park in Zeveneken

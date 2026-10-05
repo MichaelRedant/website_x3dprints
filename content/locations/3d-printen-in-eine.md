@@ -7,7 +7,7 @@ X3DPrints ondersteunt Eine met snelle 3D prints voor makers, scholen en kmo's ro
 ## Waarom kiezen voor Eine?
 
 - **Snelle offertes**: vaak binnen 24 uur. Check indicatieve prijzen op [pricing](/pricing).  
-- **Levering** richting station Eine, Scheldeoevers en bedrijventerrein; afhalen in Herzele kan.  
+- **Verzending** naar station Eine, Scheldeoevers en bedrijventerrein; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA voor displays en behuizingen, PETG voor vochtige of trillende omgevingen langs de rivier, TPU voor dempers en kabelclips.  
 - **Interne links**: controleer je model in de [viewer](/viewer) en kies kleuren op [materials](/materials).
 
@@ -37,7 +37,7 @@ Voor projecten in Eine (Oudenaarde) combineren we korte doorlooptijd met strakke
 
 1) Deel een STL/STEP-link via [contact](/contact) met toepassing en aantallen.  
 2) Wij adviseren materiaal, orientatie en layerhoogte.  
-3) Productie (2-5 werkdagen) en levering in Eine of afhalen.
+3) Productie (2-5 werkdagen) en verzending naar Eine of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Bekijk ook [segments](/segments) voor sectorvoorbeelden en de [blog](/blog) voor tips zoals PLA vs PETG.
 

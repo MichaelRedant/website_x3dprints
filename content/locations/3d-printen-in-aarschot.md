@@ -1,6 +1,6 @@
 # 3D printen in Aarschot: Hageland en E314-corridor
 
-Met **3D printen in Aarschot** leveren we prototypes en zowel kleine als grotere series richting het centrum, industrieterrein Nieuwland en de dorpen in het Hageland. Snelle offertes, nauwkeurige passing en leveringen via de E314.
+Met **3D printen in Aarschot** leveren we prototypes en zowel kleine als grotere series richting het centrum, industrieterrein Nieuwland en de dorpen in het Hageland. Snelle offertes, nauwkeurige passing en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Met **3D printen in Aarschot** leveren we prototypes en zowel kleine als grotere
 
 - Offerte binnen een werkdag met duidelijke prijsopbouw.
 - PLA Matte, PETG en TPU voor zichtwerk, tooling en flexibele onderdelen.
-- EV-levering richting Aarschot, Gelrode en Langdorp; afhalen in Herzele kan.
+- Verzending naar Aarschot, Gelrode en Langdorp; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Advies over oriëntatie en infill zodat batches consistent blijven.
 
 We kennen de combinatie van productie, retail en onderwijs rond Aarschot. Daardoor krijg je materiaal- en afwerkingskeuzes die direct inzetbaar zijn.
@@ -42,7 +42,7 @@ We kennen de combinatie van productie, retail en onderwijs rond Aarschot. Daardo
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en deadline.
-- Levering via E314-corridor; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optionele nabehandeling (schuren/primen) voor zichtwerk.
 
 ---

@@ -23,7 +23,7 @@
 
 ## Lokale focus in Sleidinge
 
-Werk je in Sleidinge? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Joriskerk (Sleidinge).
+Werk je in Sleidinge? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending in de omgeving van Sint-Joriskerk (Sleidinge).
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Pasmallen en sjablonen voor montage en assemblage.
@@ -73,7 +73,7 @@ Test uw ontwerp snel en optimaliseer zonder lange wachttijden.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

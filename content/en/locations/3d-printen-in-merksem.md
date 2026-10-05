@@ -6,7 +6,7 @@ Need **3D printing in Merksem** for a Bredabaan display, event prop, cable guide
 
 ## Why Merksem teams choose us
 
-- Local delivery to Merksem, Bredabaan and Sportpaleis omgeving; pickup in Herzele.
+- Shipping to Merksem, Bredabaan and Sportpaleis omgeving; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Merksem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

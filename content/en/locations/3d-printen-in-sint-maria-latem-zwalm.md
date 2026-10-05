@@ -6,7 +6,7 @@ Need **3D printing in Sint-Maria-Latem (Zwalm)**? X3DPrints prints in Herzele an
 
 ## Why Sint-Maria-Latem (Zwalm) teams choose us
 
-- Local delivery to Sint-Maria-Latem (Zwalm), Zwalm and Munkzwalm, Nederzwalm-Hermelgem; pickup in Herzele.
+- Shipping to Sint-Maria-Latem (Zwalm), Zwalm and Munkzwalm, Nederzwalm-Hermelgem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Maria-Latem (Zwalm).
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

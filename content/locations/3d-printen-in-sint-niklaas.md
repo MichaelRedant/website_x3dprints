@@ -23,7 +23,7 @@
 
 ## Lokale focus in Sint-Niklaas
 
-Werk je in Sint-Niklaas? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Grote Markt (Sint-Niklaas).
+Werk je in Sint-Niklaas? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending in de omgeving van Grote Markt (Sint-Niklaas).
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Kleine en grotere series onderdelen met consistente passing.
@@ -73,7 +73,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

@@ -6,7 +6,7 @@ Need **3D printing in Zaventem**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Zaventem teams choose us
 
-- Local delivery to Zaventem, Brussels Airport and Brucargo and Nossegem, Sterrebeek; pickup in Herzele.
+- Shipping to Zaventem, Brussels Airport and Brucargo and Nossegem, Sterrebeek; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Zaventem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Zaventem, Zaventem city center, Brussels Airport and B
 
 ---
 
-## Typical drop-off points near Zaventem
+## Typical places we serve near Zaventem
 
 - Zaventem town center
 - local business park in Zaventem

@@ -99,7 +99,7 @@ const campaignRows = [
 ]
 
 const logisticsPoints = [
-  "Afhaling op afspraak in Herzele is mogelijk.",
+  "Afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.",
   "Verzending en levering worden afgestemd op je campagneplanning.",
   "Voor breekbare stukken gebruiken we extra beschermde verpakking.",
 ]

@@ -55,7 +55,7 @@ Stuur STL of STEP via [contact](/contact) met aantallen, materiaal en deadline. 
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Muizen?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Muizen of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Muizen of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Muizen?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

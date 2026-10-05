@@ -6,7 +6,7 @@ Need **3D printing in Sint-Maria-Lierde**? X3DPrints prints in Herzele and ships
 
 ## Why Sint-Maria-Lierde teams choose us
 
-- Local delivery to Sint-Maria-Lierde, Lierde and Deftinge, Hemelveerdegem; pickup in Herzele.
+- Shipping to Sint-Maria-Lierde, Lierde and Deftinge, Hemelveerdegem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Maria-Lierde.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Sint-Maria-Lierde, Sint-Maria-Lierde city center, Lier
 
 ---
 
-## Typical drop-off points near Sint-Maria-Lierde
+## Typical places we serve near Sint-Maria-Lierde
 
 - Sint-Maria-Lierde town center
 - local business park in Sint-Maria-Lierde

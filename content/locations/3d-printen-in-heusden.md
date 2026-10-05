@@ -73,7 +73,7 @@ Laat uw ontwerp snel testen en optimaliseer met korte feedback.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -89,7 +89,7 @@ Laat uw ontwerp snel testen en optimaliseer met korte feedback.
 ## Veelgestelde vragen over 3D printen in Heusden
 
 **Hoe snel is 3D printen in Heusden?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Heilig Kruiskerk (Heusden) of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending in de omgeving van Heilig Kruiskerk (Heusden) of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Heusden?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

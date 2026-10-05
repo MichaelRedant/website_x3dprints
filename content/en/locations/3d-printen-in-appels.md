@@ -6,7 +6,7 @@ Need **3D printing in Appels**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Appels teams choose us
 
-- Local delivery to Appels; pickup in Herzele.
+- Shipping to Appels; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Appels.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

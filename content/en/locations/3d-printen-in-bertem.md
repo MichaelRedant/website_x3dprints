@@ -6,7 +6,7 @@ Need **3D printing in Bertem**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Bertem teams choose us
 
-- Local delivery to Bertem, Korbeek-Dijle and Leefdaal, E40/N3-corridor; pickup in Herzele.
+- Shipping to Bertem, Korbeek-Dijle and Leefdaal, E40/N3-corridor; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Bertem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

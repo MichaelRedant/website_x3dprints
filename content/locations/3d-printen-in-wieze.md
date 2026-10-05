@@ -23,7 +23,7 @@
 
 ## Lokale focus in Wieze
 
-Werk je in Wieze? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Salvatorkerk (Wieze).
+Werk je in Wieze? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending in de omgeving van Sint-Salvatorkerk (Wieze).
 
 - Maquettes en detailmodellen voor erfgoed en presentaties.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -73,7 +73,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

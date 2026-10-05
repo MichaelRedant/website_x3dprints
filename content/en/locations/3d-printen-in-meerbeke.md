@@ -6,7 +6,7 @@ Need **3D printing in Meerbeke**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Meerbeke teams choose us
 
-- Local delivery to Meerbeke; pickup in Herzele.
+- Shipping to Meerbeke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Meerbeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

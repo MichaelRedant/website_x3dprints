@@ -7,7 +7,7 @@ X3DPrints levert 3D prints voor Leupegem met zicht op Schelde, Koppenberg en de 
 ## Sterk voor Leupegem
 
 - **Snelle doorlooptijd**: 2-5 werkdagen; spoed op aanvraag.  
-- **Levering** richting Stationsstraat, Koppenberg-route en Scheldeboorden; afhalen in Herzele kan.  
+- **Verzending** naar Stationsstraat, Koppenberg-route en Scheldeboorden; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA Matte/Silk voor visuele onderdelen, PETG voor buitengebruik langs rivier of kassei, TPU voor flexibele koppelingen.  
 - **Prijsinzicht**: check [pricing](/pricing) of vraag direct via [contact](/contact).
 
@@ -50,7 +50,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Leupegem (Oudenaarde)?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Leupegem (Oudenaarde)?**
 

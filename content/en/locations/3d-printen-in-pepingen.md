@@ -6,7 +6,7 @@ Need **3D printing in Pepingen**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Pepingen teams choose us
 
-- Local delivery to Pepingen, Bogaarden and Beert, Elingen; pickup in Herzele.
+- Shipping to Pepingen, Bogaarden and Beert, Elingen; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Pepingen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

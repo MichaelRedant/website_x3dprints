@@ -53,7 +53,7 @@ Verzending naar Deurne gebeurt volgens de afgesproken projectplanning. Vermeld d
 ## Veelgestelde vragen over 3D printen in Deurne
 
 **Hoe snel is 3D printen in Deurne?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Deurne of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Deurne of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Deurne?**
 Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een duidelijke prijs en een planning die rekening houdt met de actuele productiecapaciteit.

@@ -6,7 +6,7 @@ Need **3D printing in Moerbeke (Geraardsbergen)**? X3DPrints prints in Herzele a
 
 ## Why Moerbeke (Geraardsbergen) teams choose us
 
-- Local delivery to Moerbeke (Geraardsbergen); pickup in Herzele.
+- Shipping to Moerbeke (Geraardsbergen); free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Moerbeke (Geraardsbergen).
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

@@ -76,7 +76,7 @@ Hillegem is een bruisende deelgemeente van Herzele. Lokale productie sluit naadl
 2. Kies het juiste materiaal en kleur.  
 3. Ontvang een duidelijke offerte binnen 24 uur.  
 4. Na akkoord starten we met printen.  
-5. Ophalen of verzenden gebeurt volgens afspraak.  
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.  
 
 Alle bestanden worden nagekeken, en indien nodig gebeurt bijsturing in overleg.
 
@@ -87,7 +87,7 @@ Alle bestanden worden nagekeken, en indien nodig gebeurt bijsturing in overleg.
 - **Standaard:** 2–5 werkdagen  
 - **Spoed:** mogelijk in overleg  
 - **Verzending:** volgens [prijzenpagina](/pricing)  
-- **Afhalen:** op afspraak in Hillegem of regio Herzele  
+- **Afhalen:** gratis, 24 op 7, in de beveiligde afhaalbox in Herzele  
 
 Korte doorlooptijden en flexibiliteit zorgen ervoor dat jouw project altijd op schema blijft.
 
@@ -141,7 +141,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Hillegem?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 <!-- LOCAL_ENRICH_START -->
 ## Wat je moet weten in Hillegem

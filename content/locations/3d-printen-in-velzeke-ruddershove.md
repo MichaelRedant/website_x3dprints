@@ -67,7 +67,7 @@ Velzeke-Ruddershove is bekend om zijn Romeinse verleden en het archeologisch mus
 2. Kies materiaal en afwerking voor **3D printen in Velzeke-Ruddershove**.
 3. Ontvang binnen 24 uur een offerte.
 4. Na akkoord starten we met **3D printen in Velzeke-Ruddershove**.
-5. Ophalen of verzending volgens afspraak.
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 

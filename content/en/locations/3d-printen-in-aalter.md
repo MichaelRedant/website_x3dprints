@@ -6,7 +6,7 @@ Need **3D printing in Aalter**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Aalter teams choose us
 
-- Local delivery to Aalter, Aalter-Brug and Maria-Aalter, Bellem; pickup in Herzele.
+- Shipping to Aalter, Aalter-Brug and Maria-Aalter, Bellem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Aalter.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

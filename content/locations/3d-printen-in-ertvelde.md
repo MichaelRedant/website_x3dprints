@@ -73,7 +73,7 @@ Test snel, verbeter sneller en hou controle over uw planning.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -89,7 +89,7 @@ Test snel, verbeter sneller en hou controle over uw planning.
 ## Veelgestelde vragen over 3D printen in Ertvelde
 
 **Hoe snel is 3D printen in Ertvelde?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Mottekasteel Hoge Wal of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending in de omgeving van Mottekasteel Hoge Wal of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Ertvelde?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

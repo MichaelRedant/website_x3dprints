@@ -6,7 +6,7 @@ Need **3D printing in Machelen (Zulte)**? X3DPrints prints in Herzele and ships 
 
 ## Why Machelen (Zulte) teams choose us
 
-- Local delivery to Machelen (Zulte), Zulte and Olsene, Astene; pickup in Herzele.
+- Shipping to Machelen (Zulte), Zulte and Olsene, Astene; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Machelen (Zulte).
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Machelen (Zulte), Machelen (Zulte) city center, Zulte,
 
 ---
 
-## Typical drop-off points near Machelen (Zulte)
+## Typical places we serve near Machelen (Zulte)
 
 - Machelen (Zulte) town center
 - local business park in Machelen (Zulte)

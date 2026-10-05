@@ -6,7 +6,7 @@ Need **3D printing in Munkzwalm**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Munkzwalm teams choose us
 
-- Local delivery to Munkzwalm, Zwalm and Nederzwalm-Hermelgem, Roborst; pickup in Herzele.
+- Shipping to Munkzwalm, Zwalm and Nederzwalm-Hermelgem, Roborst; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Munkzwalm.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Munkzwalm, Munkzwalm city center, Zwalm, Nederzwalm-He
 
 ---
 
-## Typical drop-off points near Munkzwalm
+## Typical places we serve near Munkzwalm
 
 - Munkzwalm town center
 - local business park in Munkzwalm

@@ -7,7 +7,7 @@ Sint-Martens-Latem combineert kunst, ateliers en groene Leie-oevers. X3DPrints l
 ## Waarom X3DPrints voor Latem?
 
 - **Snelle lead time**: 2-5 werkdagen; spoed op aanvraag.  
-- **Levering** richting Latemse Meersen, Museum Dhondt-Dhaenens en dorpskern; afhalen in Herzele kan.  
+- **Verzending** naar Latemse Meersen, Museum Dhondt-Dhaenens en dorpskern; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA Matte/Silk voor designprops en maquettes, PETG voor buiten bij de Leie, TPU voor flexibele koppelingen.  
 - **Prijs helder**: zie [pricing](/pricing) of start via [contact](/contact).
 
@@ -37,7 +37,7 @@ Voor projecten in Sint combineren we korte doorlooptijd met strakke afwerking.
 
 1) Deel een STL/STEP-link via [contact](/contact) met afmetingen en toepassing.  
 2) Wij adviseren orientatie en materiaalkeuze.  
-3) Print, QC en levering in Sint-Martens-Latem of afhalen.
+3) Print, QC en verzending naar Sint-Martens-Latem of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Bekijk [materials](/materials) voor kleuren, controleer je model in de [viewer](/viewer), en zie sectorcases op [segments](/segments). Extra tips staan in de [blog](/blog).
 
@@ -54,7 +54,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Sint?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 <!-- LOCAL_ENRICH_START -->
 ## Leverdetails rond Sint-Martens-Latem

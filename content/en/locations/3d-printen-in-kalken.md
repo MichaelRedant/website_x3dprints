@@ -6,7 +6,7 @@ Need **3D printing in Kalken**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Kalken teams choose us
 
-- Local delivery to Kalken, Laarne and Wetteren, Destelbergen; pickup in Herzele.
+- Shipping to Kalken, Laarne and Wetteren, Destelbergen; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Kalken.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

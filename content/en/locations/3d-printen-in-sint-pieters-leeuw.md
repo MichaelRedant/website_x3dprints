@@ -6,7 +6,7 @@ Need **3D printing in Sint-Pieters-Leeuw**? X3DPrints prints in Herzele and ship
 
 ## Why Sint-Pieters-Leeuw teams choose us
 
-- Local delivery to Sint-Pieters-Leeuw, Ruisbroek and Negenmanneke, Vlezenbeek; pickup in Herzele.
+- Shipping to Sint-Pieters-Leeuw, Ruisbroek and Negenmanneke, Vlezenbeek; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Pieters-Leeuw.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Sint-Pieters-Leeuw, Sint-Pieters-Leeuw city center, Ru
 
 ---
 
-## Typical drop-off points near Sint-Pieters-Leeuw
+## Typical places we serve near Sint-Pieters-Leeuw
 
 - Sint-Pieters-Leeuw town center
 - local business park in Sint-Pieters-Leeuw

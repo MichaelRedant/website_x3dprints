@@ -1,6 +1,6 @@
 # 3D printen in Huldenberg: Dijlevallei en kantoren
 
-Voor **3D printen in Huldenberg** leveren we prototypes, behuizingen en tooling richting Loonbeek, Ottenburg en Neerijse. Snelle offertes, transparante prijzen en leveringen via de Dijlevallei.
+Voor **3D printen in Huldenberg** leveren we prototypes, behuizingen en tooling richting Loonbeek, Ottenburg en Neerijse. Snelle offertes, transparante prijzen en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Voor **3D printen in Huldenberg** leveren we prototypes, behuizingen en tooling 
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Huldenberg/Overijse/Leuven-rand; afhalen in Herzele kan.
+- Verzending naar Huldenberg, Overijse en Leuven-rand; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Voor **3D printen in Huldenberg** leveren we prototypes, behuizingen en tooling 
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via Dijlevallei/Overijse; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

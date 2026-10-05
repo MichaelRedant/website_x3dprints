@@ -7,7 +7,7 @@ Zingem ligt langs de Schelde en fiets-/wandelroutes. X3DPrints levert snelle 3D 
 ## Waarom X3DPrints?
 
 - **Snelle doorlooptijd**: 2-5 werkdagen; spoed mogelijk.  
-- **Levering** richting Zingembrug, stationsbuurt en natuurgebieden; afhalen in Herzele kan.  
+- **Verzending** naar Zingembrug, stationsbuurt en natuurgebieden; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA voor maquettes en displays, PETG voor vochtige of outdoor projecten langs de rivier, TPU voor flexibele clips en dempers.  
 - **Heldere prijzen**: zie [pricing](/pricing) of start via [contact](/contact).
 
@@ -37,7 +37,7 @@ Zoek je 3D printen in Zingem? We denken mee over passing, sterkte en look zodat 
 
 1) Deel een STL/STEP-link via [contact](/contact) met toepassing en aantallen.  
 2) Wij adviseren orientatie en materiaal.  
-3) Print, QC en levering in Zingem of afhalen.
+3) Print, QC en verzending naar Zingem of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Bekijk ook [materials](/materials), de [viewer](/viewer), sectorcases op [segments](/segments) en tips in de [blog](/blog).
 

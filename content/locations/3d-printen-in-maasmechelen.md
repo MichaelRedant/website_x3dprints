@@ -73,7 +73,7 @@ Dat kan voor decoratieve elementen, signalisatie, maquettes en presentatiehulpen
 Soms. Stuur foto's en maten voor een eerste beoordeling. Veiligheidskritische of zwaar belaste onderdelen worden niet zonder technische context gereproduceerd.
 
 **Hoe ontvang ik mijn bestelling?**
-We verzenden vanuit Herzele naar Maasmechelen. Er is geen lokaal afhaalpunt; afhalen in de studio kan alleen op afspraak.
+We verzenden vanuit Herzele naar Maasmechelen. Er is geen lokaal afhaalpunt; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 

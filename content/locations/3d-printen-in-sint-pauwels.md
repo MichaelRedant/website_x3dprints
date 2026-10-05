@@ -23,7 +23,7 @@
 
 ## Lokale focus in Sint-Pauwels
 
-Werk je in Sint-Pauwels? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Pauwels.
+Werk je in Sint-Pauwels? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending naar Sint-Pauwels.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Pasmallen en sjablonen voor montage en assemblage.
@@ -73,7 +73,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

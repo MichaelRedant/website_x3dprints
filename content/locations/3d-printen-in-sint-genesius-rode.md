@@ -1,6 +1,6 @@
 # 3D printen in Sint-Genesius-Rode: zuidrand van Brussel
 
-Met **3D printen in Sint-Genesius-Rode** leveren we prototypes, behuizingen en tooling voor retail, kantoren en events in de zuidrand. Snelle offertes, transparante prijzen en leveringen via de R0.
+Met **3D printen in Sint-Genesius-Rode** leveren we prototypes, behuizingen en tooling voor retail, kantoren en events in de zuidrand. Snelle offertes, transparante prijzen en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Met **3D printen in Sint-Genesius-Rode** leveren we prototypes, behuizingen en t
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Sint-Genesius-Rode/Alsemberg; afhalen in Herzele kan.
+- Verzending naar Sint-Genesius-Rode en Alsemberg; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Met **3D printen in Sint-Genesius-Rode** leveren we prototypes, behuizingen en t
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via R0 zuid; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

@@ -41,9 +41,9 @@ Voor projecten in Wulveringem combineren we korte doorlooptijd met strakke afwer
 
 ## Levering of afhalen
 
-- Koerier naar Wulveringem, Beauvoorde en omliggende dorpen
-- Pakketdienst voor partners in Veurne of Alveringem
-- Afhalen bij ons atelier mogelijk; we tonen de prints vooraf in de [viewer](/viewer) indien gewenst
+- Verzending naar Wulveringem, Beauvoorde en omliggende dorpen
+- Verzending naar partners in Veurne of Alveringem
+- Gratis afhalen in de afhaalbox in Herzele, 24 op 7; we tonen de prints vooraf in de [viewer](/viewer) indien gewenst
 
 ## Klaar om te starten?
 
@@ -63,7 +63,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Wulveringem?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 <!-- LOCAL_ENRICH_START -->
 ## Wat je moet weten in Wulveringem

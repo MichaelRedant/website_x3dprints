@@ -6,7 +6,7 @@ Need **3D printing in Zelzate**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Zelzate teams choose us
 
-- Local delivery to Zelzate, Evergem and Wachtebeke, Assenede; pickup in Herzele.
+- Shipping to Zelzate, Evergem and Wachtebeke, Assenede; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Zelzate.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Zelzate, Zelzate city center, Evergem, Wachtebeke, Ass
 
 ---
 
-## Typical drop-off points near Zelzate
+## Typical places we serve near Zelzate
 
 - Zelzate town center
 - local business park in Zelzate

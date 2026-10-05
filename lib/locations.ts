@@ -140,7 +140,7 @@ export const locations: Location[] = [
       "3D model laten printen Ursel",
     ],
     metaDescription:
-      "3D printen in Ursel (Aalter) voor sterke onderdelen en prototypes, met lokale levering en materiaaladvies.",
+      "3D printen in Ursel (Aalter) voor sterke onderdelen en prototypes, met verzending vanuit Herzele en materiaaladvies.",
     servicedAreas: ["Ursel centrum", "Aalter", "Bellem", "Knesselare", "Lotenhulle", "Poeke", "Afhalen Herzele"],
     sectors: [
       "Bos- en natuurprojecten",
@@ -2314,7 +2314,7 @@ export const locations: Location[] = [
       "3D model laten printen Berchem",
     ],
     metaDescription:
-      "3D printen in Berchem met snelle levering richting Zurenborg en het station. PLA, PETG en TPU op maat van jouw prototype of serie.",
+      "3D printen in Berchem met snelle verzending naar Zurenborg en de stationsbuurt. PLA, PETG en TPU op maat van jouw prototype of serie.",
     servicedAreas: ["Berchem centrum", "Zurenborg", "Groen Kwartier", "Antwerpen-Zuid", "Afhalen Herzele"],
     sectors: ["Interieur/props voor Zurenborg boutiques", "Prototyping voor creatieve bureaus", "Onderwijs/kunstacademies Berchem"],
   },
@@ -2450,7 +2450,7 @@ export const locations: Location[] = [
       "3D model laten printen Kortrijk",
     ],
     metaDescription:
-      "3D printen in Kortrijk voor prototypes, tools en props. Snelle levering richting Kortrijk Weide, Overleie en R8. PLA, PETG of TPU met persoonlijk advies.",
+      "3D printen in Kortrijk voor prototypes, tools en props. Snelle verzending naar Kortrijk Weide en Overleie. PLA, PETG of TPU met persoonlijk advies.",
     servicedAreas: [
       "Kortrijk centrum",
       "Kortrijk Weide",
@@ -2480,7 +2480,7 @@ export const locations: Location[] = [
       "3D model laten printen Mechelen",
     ],
     metaDescription:
-      "3D printen in Mechelen voor prototypes, tooling en props. Snelle levering richting Mechelen-Zuid, Nekkerhal en KMO-zones. PLA, PETG of TPU met persoonlijk advies.",
+      "3D printen in Mechelen voor prototypes, tooling en props. Snelle verzending naar Mechelen-Zuid, de Nekkerhal en de KMO-zones. PLA, PETG of TPU met persoonlijk advies.",
     servicedAreas: [
       "Mechelen centrum",
       "Mechelen-Zuid",
@@ -2731,7 +2731,7 @@ export const locations: Location[] = [
       "3D model laten printen Lint",
     ],
     metaDescription:
-      "3D printen in Lint met snelle levering richting industriezone Lerenveld en de spoorverbinding Antwerpen-Mechelen. PLA, PETG en TPU beschikbaar.",
+      "3D printen in Lint met snelle verzending naar industriezone Lerenveld en de rest van Lint. PLA, PETG en TPU beschikbaar.",
   },
   {
     slug: "3d-printen-in-boechout",
@@ -3260,7 +3260,7 @@ export const locations: Location[] = [
       "3D model laten printen Nederename",
     ],
     metaDescription:
-      "3D prints in Nederename met vlotte levering richting Schelde en N60. Snelle productie in PLA, PETG of TPU.",
+      "3D prints in Nederename met vlotte verzending naar Nederename en de Scheldevallei. Snelle productie in PLA, PETG of TPU.",
   },
   {
     slug: "3d-printen-in-volkegem",
@@ -5845,7 +5845,7 @@ export const locations: Location[] = [
       "3D model laten printen Relegem",
     ],
     metaDescription:
-      "3D printing in Relegem met leveringen richting R0 en landbouwbedrijven. PLA, PETG of TPU met duidelijke prijzen.",
+      "3D printing in Relegem met verzending naar bedrijven en landbouwbedrijven in Relegem. PLA, PETG of TPU met duidelijke prijzen.",
   },
   {
     slug: "3d-printen-in-bekkerzeel",
@@ -5910,7 +5910,7 @@ export const locations: Location[] = [
       "3D model laten printen Maldegem",
     ],
     metaDescription:
-      "3D printen in Maldegem met levering richting Stoomcentrum en Drongengoed. PLA, PETG en TPU voor prototypes, displays en onderdelen.",
+      "3D printen in Maldegem met verzending naar Stoomcentrum en Drongengoed. PLA, PETG en TPU voor prototypes, displays en onderdelen.",
   },
   {
     slug: "3d-printen-in-adegem",
@@ -5949,7 +5949,7 @@ export const locations: Location[] = [
       "3D model laten printen Kruisem",
     ],
     metaDescription:
-      "3D printen in Kruisem met levering langs E17 en Vlaamse Ardennen. Snelle prototypes en onderdelen in PLA, PETG en TPU.",
+      "3D printen in Kruisem met verzending naar Kruisem en de Vlaamse Ardennen. Snelle prototypes en onderdelen in PLA, PETG en TPU.",
   },
   {
     slug: "3d-printen-in-kruishoutem",
@@ -6014,7 +6014,7 @@ export const locations: Location[] = [
       "3D model laten printen Ouwegem",
     ],
     metaDescription:
-      "3D printing in Ouwegem met levering richting kerk en Scheldevallei. PLA, PETG en TPU voor prototypes en vervangstukken.",
+      "3D printing in Ouwegem met verzending naar Ouwegem en de Scheldevallei. PLA, PETG en TPU voor prototypes en vervangstukken.",
   },
   {
     slug: "3d-printen-in-huise",
@@ -6421,7 +6421,7 @@ export const locations: Location[] = [
       "3D model laten printen Halle",
     ],
     metaDescription:
-      "3D printen in Halle voor retail, logistiek en events. Snelle levering vanuit Herzele met PLA, PETG en TPU, EV-levering langs E429 en R0.",
+      "3D printen in Halle voor retail, logistiek en events. Snelle verzending vanuit Herzele met PLA, PETG en TPU, zorgvuldig verpakt.",
     servicedAreas: [
       "Halle centrum",
       "Sint-Rochus en Essenbeek",
@@ -6448,7 +6448,7 @@ export const locations: Location[] = [
       "3D model laten printen Tienen",
     ],
     metaDescription:
-      "3D printen in Tienen en het Hageland voor onderdelen en maquettes. Snelle offertes, PLA/PETG/TPU met levering via de E40.",
+      "3D printen in Tienen en het Hageland voor onderdelen en maquettes. Snelle offertes, PLA/PETG/TPU met verzending naar Tienen en het Hageland.",
     servicedAreas: [
       "Tienen centrum",
       "Grijpen industriezone",
@@ -6475,7 +6475,7 @@ export const locations: Location[] = [
       "3D model laten printen Diest",
     ],
     metaDescription:
-      "3D printen in Diest en de Demervallei voor maquettes, onderdelen en korte series. Snelle offerte, levering langs E314 en N29.",
+      "3D printen in Diest en de Demervallei voor maquettes, onderdelen en korte series. Snelle offerte, verzending naar Diest en de Demervallei.",
     servicedAreas: [
       "Diest centrum",
       "Schaffen",
@@ -6502,7 +6502,7 @@ export const locations: Location[] = [
       "3D model laten printen Aarschot",
     ],
     metaDescription:
-      "3D printen in Aarschot en het Hageland voor prototypes en zowel kleine als grotere series. Snelle levering via de E314 met PLA, PETG en TPU.",
+      "3D printen in Aarschot en het Hageland voor prototypes en zowel kleine als grotere series. Snelle verzending naar Aarschot met PLA, PETG en TPU.",
     servicedAreas: [
       "Aarschot centrum",
       "Industrieterrein Nieuwland",
@@ -6529,7 +6529,7 @@ export const locations: Location[] = [
       "3D model laten printen Zaventem",
     ],
     metaDescription:
-      "3D printen in Zaventem voor airport- en kantoorprojecten. Prototypes, fixtures en displays met levering richting Brussels Airport en Sterrebeek.",
+      "3D printen in Zaventem voor airport- en kantoorprojecten. Prototypes, fixtures en displays met verzending naar Brussels Airport en Sterrebeek.",
     servicedAreas: [
       "Zaventem centrum",
       "Brussels Airport en Brucargo",
@@ -6556,7 +6556,7 @@ export const locations: Location[] = [
       "3D model laten printen Dilbeek",
     ],
     metaDescription:
-      "3D printen in Dilbeek voor rand rond Brussel: prototypes, props en tooling met levering langs de R0.",
+      "3D printen in Dilbeek voor rand rond Brussel: prototypes, props en tooling met verzending naar Dilbeek en de rand rond Brussel.",
     servicedAreas: [
       "Dilbeek centrum",
       "Groot-Bijgaarden",
@@ -6637,7 +6637,7 @@ export const locations: Location[] = [
       "3D model laten printen Grimbergen",
     ],
     metaDescription:
-      "3D printen in Grimbergen voor de Noordrand: prototypes, fixtures en props met levering langs de Ring en kanaalzone.",
+      "3D printen in Grimbergen voor de Noordrand: prototypes, fixtures en props met verzending naar Grimbergen en de kanaalzone.",
     servicedAreas: [
       "Grimbergen centrum",
       "Strombeek-Bever",
@@ -6717,7 +6717,7 @@ export const locations: Location[] = [
       "3D model laten printen Hoeilaart",
     ],
     metaDescription:
-      "3D printen in Hoeilaart voor Druivenstreek: props, behuizingen en tooling met levering langs E411 en Groenendaal.",
+      "3D printen in Hoeilaart voor Druivenstreek: props, behuizingen en tooling met verzending naar Hoeilaart en Groenendaal.",
     servicedAreas: [
       "Hoeilaart centrum",
       "Groenendaal",
@@ -6769,7 +6769,7 @@ export const locations: Location[] = [
       "3D model laten printen Steenokkerzeel",
     ],
     metaDescription:
-      "3D printen in Steenokkerzeel voor airport- en logistieke teams. Prototypes en tooling met levering richting Brucargo en dorp.",
+      "3D printen in Steenokkerzeel voor airport- en logistieke teams. Prototypes en tooling met verzending naar Brucargo en dorp.",
     servicedAreas: [
       "Steenokkerzeel centrum",
       "Brucargo-kant",
@@ -6795,7 +6795,7 @@ export const locations: Location[] = [
       "3D model laten printen Kortenberg",
     ],
     metaDescription:
-      "3D printen in Kortenberg tussen Brussel en Leuven. Prototypes, behuizingen en tooling met snelle levering langs E40/N2.",
+      "3D printen in Kortenberg tussen Brussel en Leuven. Prototypes, behuizingen en tooling met snelle verzending naar Kortenberg en omgeving.",
     servicedAreas: [
       "Kortenberg centrum",
       "Everberg",
@@ -6822,7 +6822,7 @@ export const locations: Location[] = [
       "3D model laten printen Herent",
     ],
     metaDescription:
-      "3D printen in Herent voor Leuvense rand: prototypes en zowel kleine als grotere series met levering richting Wakkerzeel en Veltem.",
+      "3D printen in Herent voor Leuvense rand: prototypes en zowel kleine als grotere series met verzending naar Wakkerzeel en Veltem.",
     servicedAreas: [
       "Herent centrum",
       "Winksele",
@@ -6927,7 +6927,7 @@ export const locations: Location[] = [
       "3D model laten printen Rotselaar",
     ],
     metaDescription:
-      "3D printen in Rotselaar en Hageland voor prototypes, displays en tooling. Levering richting E314 en meer.",
+      "3D printen in Rotselaar en Hageland voor prototypes, displays en tooling. Verzending naar Rotselaar en het Hageland.",
     servicedAreas: [
       "Rotselaar centrum",
       "Wezemaal",
@@ -6953,7 +6953,7 @@ export const locations: Location[] = [
       "3D model laten printen Haacht",
     ],
     metaDescription:
-      "3D printen in Haacht voor brouwerijsite en industrie. Prototypes en zowel kleine als grotere series met levering richting Tildonk en Wakkerzeel.",
+      "3D printen in Haacht voor brouwerijsite en industrie. Prototypes en zowel kleine als grotere series met verzending naar Tildonk en Wakkerzeel.",
     servicedAreas: [
       "Haacht centrum",
       "Tildonk",
@@ -7005,7 +7005,7 @@ export const locations: Location[] = [
       "3D model laten printen Keerbergen",
     ],
     metaDescription:
-      "3D printen in Keerbergen voor retail, events en technische projecten. Snelle offertes en levering richting Haachtsesteenweg.",
+      "3D printen in Keerbergen voor retail, events en technische projecten. Snelle offertes en verzending naar Keerbergen.",
     servicedAreas: [
       "Keerbergen centrum",
       "Grootbroek",
@@ -7135,7 +7135,7 @@ export const locations: Location[] = [
       "3D model laten printen Londerzeel",
     ],
     metaDescription:
-      "3D printen in Londerzeel tussen Brussel en Antwerpen. Prototypes, behuizingen en tooling met levering langs A12/N17.",
+      "3D printen in Londerzeel tussen Brussel en Antwerpen. Prototypes, behuizingen en tooling met verzending naar Londerzeel en omgeving.",
     servicedAreas: [
       "Londerzeel centrum",
       "Malderen",
@@ -7239,7 +7239,7 @@ export const locations: Location[] = [
       "3D model laten printen Boutersem",
     ],
     metaDescription:
-      "3D printen in Boutersem en N3-corridor voor prototypes en tooling. Snelle levering richting Vertrijk en Kerkom.",
+      "3D printen in Boutersem en N3-corridor voor prototypes en tooling. Snelle verzending naar Vertrijk en Kerkom.",
     servicedAreas: [
       "Boutersem centrum",
       "Vertrijk",
@@ -7265,7 +7265,7 @@ export const locations: Location[] = [
       "3D model laten printen Hoegaarden",
     ],
     metaDescription:
-      "3D printen in Hoegaarden voor brouwerij, events en KMO's. Prototypes en zowel kleine als grotere series met levering richting N29/E40.",
+      "3D printen in Hoegaarden voor brouwerij, events en KMO's. Prototypes en zowel kleine als grotere series met verzending vanuit Herzele.",
     servicedAreas: [
       "Hoegaarden centrum",
       "Meldert (Vlaams-Brabant)",
@@ -7291,7 +7291,7 @@ export const locations: Location[] = [
       "3D model laten printen Tielt-Winge",
     ],
     metaDescription:
-      "3D printen in Tielt-Winge voor Hageland: prototypes, tooling en behuizingen met levering langs N2/N29.",
+      "3D printen in Tielt-Winge voor Hageland: prototypes, tooling en behuizingen met verzending naar Tielt-Winge en omgeving.",
     servicedAreas: [
       "Tielt-Winge centrum",
       "Houwaart",
@@ -7395,7 +7395,7 @@ export const locations: Location[] = [
       "3D model laten printen Linter",
     ],
     metaDescription:
-      "3D printen in Linter voor landelijk Hageland: prototypes, tooling en zowel kleine als grotere series met levering op afspraak.",
+      "3D printen in Linter voor landelijk Hageland: prototypes, tooling en zowel kleine als grotere series met verzending of gratis afhalen in Herzele.",
     servicedAreas: [
       "Linter centrum",
       "Drieslinter",
@@ -7421,7 +7421,7 @@ export const locations: Location[] = [
       "3D model laten printen Landen",
     ],
     metaDescription:
-      "3D printen in Landen voor Haspengouw/Hageland: prototypes, behuizingen en tooling met levering langs E40 en spoor.",
+      "3D printen in Landen voor Haspengouw/Hageland: prototypes, behuizingen en tooling met verzending naar Landen en omgeving.",
     servicedAreas: [
       "Landen centrum",
       "Walsbets",
@@ -7654,7 +7654,7 @@ export const locations: Location[] = [
       "3D model laten printen Holsbeek",
     ],
     metaDescription:
-      "3D printen in Holsbeek voor Hageland: prototypes, props en tooling met levering richting Chartreuzenberg en Kortrijk-Dutsel.",
+      "3D printen in Holsbeek voor Hageland: prototypes, props en tooling met verzending naar Chartreuzenberg en Kortrijk-Dutsel.",
     servicedAreas: [
       "Holsbeek centrum",
       "Kortrijk-Dutsel",
@@ -7732,7 +7732,7 @@ export const locations: Location[] = [
       "3D model laten printen Gooik",
     ],
     metaDescription:
-      "3D printen in Gooik voor Pajottenland: props, tooling en behuizingen met snelle levering via Ninoofsesteenweg.",
+      "3D printen in Gooik voor Pajottenland: props, tooling en behuizingen met snelle verzending naar Gooik en het Pajottenland.",
     servicedAreas: [
       "Gooik centrum",
       "Leerbeek",
@@ -7810,7 +7810,7 @@ export const locations: Location[] = [
       "3D model laten printen Herne",
     ],
     metaDescription:
-      "3D printen in Herne voor Pajotse projecten: behuizingen, props en tooling met levering richting Herfelingen en Sint-Pieters-Kapelle.",
+      "3D printen in Herne voor Pajotse projecten: behuizingen, props en tooling met verzending naar Herfelingen en Sint-Pieters-Kapelle.",
     servicedAreas: [
       "Herne centrum",
       "Herfelingen",
@@ -7861,7 +7861,7 @@ export const locations: Location[] = [
       "3D model laten printen Galmaarden",
     ],
     metaDescription:
-      "3D printen in Galmaarden (Pajottenland) voor prototypes, tooling en zowel kleine als grotere series. Snelle levering via Ninoofsesteenweg.",
+      "3D printen in Galmaarden (Pajottenland) voor prototypes, tooling en zowel kleine als grotere series. Snelle verzending naar Galmaarden en het Pajottenland.",
     servicedAreas: [
       "Galmaarden centrum",
       "Vollezele",
@@ -7887,7 +7887,7 @@ export const locations: Location[] = [
       "3D model laten printen Bever",
     ],
     metaDescription:
-      "3D printen in Bever voor Pajotse projecten: behuizingen, props en tooling met levering op afspraak.",
+      "3D printen in Bever voor Pajotse projecten: behuizingen, props en tooling met verzending of gratis afhalen in Herzele.",
     servicedAreas: [
       "Bever centrum",
       "Akrenbos",
@@ -7939,7 +7939,7 @@ export const locations: Location[] = [
       "3D model laten printen Lennik",
     ],
     metaDescription:
-      "3D printen in Lennik voor lokale KMO's, retail en events in Pajottenland. Transparante prijzen en levering via Ninoofsesteenweg.",
+      "3D printen in Lennik voor lokale KMO's, retail en events in Pajottenland. Transparante prijzen en verzending naar Lennik.",
     servicedAreas: [
       "Lennik centrum",
       "Sint-Kwintens-Lennik",
@@ -8098,7 +8098,7 @@ export const locations: Location[] = [
       "3D printen Noord-Limburg",
     ],
     metaDescription:
-      "3D printen in Pelt en Noord-Limburg voor functionele onderdelen, prototypes en kleine series. Productie in Herzele en levering op afspraak.",
+      "3D printen in Pelt en Noord-Limburg voor functionele onderdelen, prototypes en kleine series. Productie in Herzele en verzending naar Pelt en omgeving.",
     servicedAreas: ["Pelt centrum", "Neerpelt", "Overpelt", "Nolimpark", "Heikesveld", "Lommel", "Beringen", "Limburg"],
     sectors: [
       "KMO's en productiebedrijven op Nolimpark",

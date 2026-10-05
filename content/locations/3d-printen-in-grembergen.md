@@ -67,7 +67,7 @@ Grembergen ligt aan de Dender en staat bekend om zijn pittoreske dorpskern. Bewo
 2. Kies materiaal en afwerking voor **3D printen in Grembergen**.
 3. Ontvang binnen 24 uur een offerte.
 4. Na akkoord starten we met **3D printen in Grembergen**.
-5. Ophalen in de regio of verzending volgens afspraak.
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 
@@ -76,7 +76,7 @@ Grembergen ligt aan de Dender en staat bekend om zijn pittoreske dorpskern. Bewo
 - **Standaard**: 2–5 werkdagen voor **3D printen in Grembergen**.
 - **Spoed**: in overleg mogelijk.
 - **Verzending**: tarieven volgens [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de buurt van Grembergen of Borsbeke.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

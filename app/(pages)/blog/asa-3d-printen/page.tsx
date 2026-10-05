@@ -149,7 +149,7 @@ const faqItems = [
   },
   {
     q: "Kan ik ASA laten printen en laten leveren in Belgie?",
-    a: "Ja. X3DPrints produceert vanuit Herzele en levert in heel Belgie. Afhalen in Herzele kan op afspraak. Aanvragen uit Gent, Antwerpen, Hasselt, Genk en andere regio's worden op dezelfde manier technisch beoordeeld.",
+    a: "Ja. X3DPrints produceert vanuit Herzele en levert in heel Belgie. Afhalen is gratis, 24 op 7, in de afhaalbox in Herzele. Aanvragen uit Gent, Antwerpen, Hasselt, Genk en andere regio's worden op dezelfde manier technisch beoordeeld.",
   },
 ]
 
@@ -450,7 +450,7 @@ export default function Asa3dPrintenPage() {
               </h2>
               <p className="mt-4 leading-7 text-slate-700">
                 X3DPrints is een 1-persoonsstudio in Herzele. Productie gebeurt dus niet in elke vermelde stad: projecten worden
-                in Herzele voorbereid en daarna afgehaald op afspraak of verzonden. Bekijk de service-informatie voor
+                in Herzele voorbereid en daarna verzonden of gratis afgehaald in de afhaalbox in Herzele. Bekijk de service-informatie voor
                 <Link href="/3d-printen-in-herzele" className="mx-1 font-semibold text-indigo-600 underline underline-offset-4">Herzele</Link>,
                 <Link href="/3d-printen-in-gent" className="mx-1 font-semibold text-indigo-600 underline underline-offset-4">Gent</Link>,
                 <Link href="/3d-printen-in-antwerpen" className="mx-1 font-semibold text-indigo-600 underline underline-offset-4">Antwerpen</Link>,

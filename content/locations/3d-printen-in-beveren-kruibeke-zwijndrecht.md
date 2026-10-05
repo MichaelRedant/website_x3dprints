@@ -9,7 +9,7 @@
 - **Snelle offerte**: u weet snel waar u aan toe bent.
 - **Korte doorlooptijd**: meestal enkele werkdagen.
 - **Materiaaladvies**: PLA, PETG of TPU afgestemd op uw toepassing.
-- **Lokale levering**: in elke deelgemeente van de fusiegemeente.
+- **Verzending**: naar elke deelgemeente van de fusiegemeente; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -72,7 +72,7 @@ Met rapid prototyping test u vorm en pasvorm snel, zodat u sneller kan beslissen
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

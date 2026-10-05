@@ -1,4 +1,4 @@
-# 3D printen in Wijnegem: snelle levering langs de Antwerpse ring
+# 3D printen in Wijnegem: snelle verzending naar de Antwerpse rand
 
 
 

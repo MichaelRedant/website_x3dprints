@@ -165,7 +165,7 @@ export default function BlogParentsDay() {
             </h1>
             <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
               Wil je gepersonaliseerde cadeaus laten printen voor Vaderdag of Moederdag? Deze gids geeft je direct de juiste
-              materiaalkeuze en planning voor betrouwbare levering richting mei en juni 2026.
+              materiaalkeuze en planning voor betrouwbare levering in mei en juni 2026.
             </p>
             <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="mt-6 flex flex-wrap gap-3">

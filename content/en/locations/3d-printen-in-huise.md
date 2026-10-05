@@ -6,7 +6,7 @@ Need **3D printing in Huise**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Huise teams choose us
 
-- Local delivery to Huise; pickup in Herzele.
+- Shipping to Huise; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Huise.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Huise, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Huise
+## Typical places we serve near Huise
 
 - Huise town center
 - local business park in Huise

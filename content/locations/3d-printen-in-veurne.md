@@ -68,7 +68,7 @@ Voor projecten in Veurne combineren we korte doorlooptijd met strakke afwerking.
 
 3. Na goedkeuring printen we, verwijderen supports en controleren kritieke maten
 
-4. Je ontvangt foto-updates en planning; levering of afhaling stemmen we samen af
+4. Je ontvangt foto-updates en planning; daarna verzenden we of haal je gratis af in de afhaalbox in Herzele, 24 op 7
 
 
 
@@ -76,11 +76,11 @@ Voor projecten in Veurne combineren we korte doorlooptijd met strakke afwerking.
 
 
 
-- Koerier richting Veurne centrum, Houtem en Veurne I bedrijventerrein
+- Verzending naar Veurne centrum, Houtem en het bedrijventerrein Veurne I
 
 - Verzending naar deelgemeenten zoals Avekapelle, Booitshoeke en Wulveringem in beschermde verpakking
 
-- Afhalen mogelijk op Provincieweg 34a, 9552 Herzele met parking aan de werkplaats
+- Gratis afhalen in de afhaalbox in Herzele, 24 op 7
 
 - Voor visuele check van je model kan je vooraf ook een sessie in de [viewer](/viewer) plannen
 
@@ -98,7 +98,7 @@ Stuur je files door, geef aan of het voor decor, public-facing displays of funct
 
 **Leveren jullie ook in Veurne?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Veurne?**
 

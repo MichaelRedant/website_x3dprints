@@ -20,7 +20,7 @@ Voor **3D printen in Elst** leveren we prototypes en functionele onderdelen rich
 
 - Materiaalkeuze: PLA voor zichtwerk, PETG voor robuuste tools, TPU voor flexibele buffers.
 
-- EV-levering voor breekbare of grotere prints.
+- Zorgvuldig verpakte verzending, ook voor grotere of breekbare prints.
 
 
 

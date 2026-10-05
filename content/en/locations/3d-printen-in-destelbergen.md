@@ -6,7 +6,7 @@ Need **3D printing in Destelbergen**? X3DPrints prints in Herzele and ships quic
 
 ## Why Destelbergen teams choose us
 
-- Local delivery to Destelbergen and Heusden; pickup in Herzele.
+- Shipping to Destelbergen and Heusden; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Destelbergen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

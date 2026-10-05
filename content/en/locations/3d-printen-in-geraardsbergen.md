@@ -6,7 +6,7 @@ Need **3D printing in Geraardsbergen**? X3DPrints prints in Herzele and ships qu
 
 ## Why Geraardsbergen teams choose us
 
-- Local delivery to Geraardsbergen; pickup in Herzele.
+- Shipping to Geraardsbergen; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Geraardsbergen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Geraardsbergen, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Geraardsbergen
+## Typical places we serve near Geraardsbergen
 
 - Geraardsbergen town center
 - local business park in Geraardsbergen

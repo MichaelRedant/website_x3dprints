@@ -6,7 +6,7 @@ Need **3D printing in Eggewaartskapelle**? X3DPrints prints in Herzele and ships
 
 ## Why Eggewaartskapelle teams choose us
 
-- Local delivery to Eggewaartskapelle, Eggewaartskapelle dorpskom and Vaubanrand Veurne, Lampernisse and polders; pickup in Herzele.
+- Shipping to Eggewaartskapelle, Eggewaartskapelle dorpskom and Vaubanrand Veurne, Lampernisse and polders; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Eggewaartskapelle.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Eggewaartskapelle, Eggewaartskapelle dorpskom, Vaubanr
 
 ---
 
-## Typical drop-off points near Eggewaartskapelle
+## Typical places we serve near Eggewaartskapelle
 
 - Eggewaartskapelle town center
 - local business park in Eggewaartskapelle

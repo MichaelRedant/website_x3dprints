@@ -6,7 +6,7 @@ Need **3D printing in Dikkele**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Dikkele teams choose us
 
-- Local delivery to Dikkele, Zwalm and Nederzwalm-Hermelgem, Munkzwalm; pickup in Herzele.
+- Shipping to Dikkele, Zwalm and Nederzwalm-Hermelgem, Munkzwalm; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Dikkele.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Dikkele, Dikkele city center, Zwalm, Nederzwalm-Hermel
 
 ---
 
-## Typical drop-off points near Dikkele
+## Typical places we serve near Dikkele
 
 - Dikkele town center
 - local business park in Dikkele

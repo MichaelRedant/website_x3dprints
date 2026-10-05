@@ -7,7 +7,7 @@ Mater ligt tussen kasseihellingen en open velden. X3DPrints levert snelle 3D pri
 ## Waarom X3DPrints voor Mater?
 
 - **Korte lead time**: 2-5 werkdagen, spoed mogelijk.  
-- **Levering** richting Materplein, Varentstraat en Ronde-hellingen; afhalen in Herzele kan.  
+- **Verzending** naar Materplein, Varentstraat en Ronde-hellingen; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA voor maquettes en displays, PETG voor buitengebruik op hoeves of parcours, TPU voor dempers en flexibele clips.  
 - **Duidelijke prijzen**: zie [pricing](/pricing) of stuur je bestanden via [contact](/contact).
 
@@ -37,7 +37,7 @@ Voor projecten in Mater (Oudenaarde) combineren we korte doorlooptijd met strakk
 
 1) Deel een STL/STEP-link via [contact](/contact) met context (omgeving/belasting).  
 2) Wij stemmen materiaal en orientatie af.  
-3) Productie, QC en levering in Mater of afhalen.
+3) Productie, QC en verzending naar Mater of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Check kleuren op [materials](/materials), controleer je model in de [viewer](/viewer), en vind sectorcases op [segments](/segments). Extra tips: [blog](/blog).
 

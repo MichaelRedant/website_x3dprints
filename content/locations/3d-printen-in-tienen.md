@@ -1,6 +1,6 @@
 # 3D printen in Tienen: suikerstad en Hageland
 
-Voor **3D printen in Tienen** leveren we prototypes, maatwerk en korte reeksen richting de industriezone Grijpen, het centrum en de dorpen in het Hageland. Heldere prijzen, snelle feedback en leveringen via de E40.
+Voor **3D printen in Tienen** leveren we prototypes, maatwerk en korte reeksen richting de industriezone Grijpen, het centrum en de dorpen in het Hageland. Heldere prijzen, snelle feedback en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Voor **3D printen in Tienen** leveren we prototypes, maatwerk en korte reeksen r
 
 - Offerte binnen één werkdag, met realistische lead times.
 - PLA Matte, PETG en TPU: van strakke showpieces tot stevige machineparts.
-- EV-levering richting Tienen, Grijpen en de N3-corridor; veilig verpakt.
+- Verzending naar Tienen en Grijpen; veilig verpakt.
 - Technisch advies over passing, infill en oriëntatie voor duurzame stukken.
 
 We kennen de mix van voeding, logistiek en maakbedrijven rond Tiense Suiker. Daardoor leveren we onderdelen die bestand zijn tegen dagelijkse belasting en audits.
@@ -42,7 +42,7 @@ We kennen de mix van voeding, logistiek en maakbedrijven rond Tiense Suiker. Daa
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en gewenste finish.
-- Levering via E40; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - We voorzien kleur/afwerking zodat onderdelen meteen inzetbaar zijn.
 
 ---

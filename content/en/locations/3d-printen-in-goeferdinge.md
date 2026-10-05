@@ -6,7 +6,7 @@ Need **3D printing in Goeferdinge**? X3DPrints prints in Herzele and ships quick
 
 ## Why Goeferdinge teams choose us
 
-- Local delivery to Goeferdinge; pickup in Herzele.
+- Shipping to Goeferdinge; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Goeferdinge.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Goeferdinge, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Goeferdinge
+## Typical places we serve near Goeferdinge
 
 - Goeferdinge town center
 - local business park in Goeferdinge

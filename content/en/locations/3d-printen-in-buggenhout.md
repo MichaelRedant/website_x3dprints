@@ -6,7 +6,7 @@ Need **3D printing in Buggenhout**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Buggenhout teams choose us
 
-- Local delivery to Buggenhout and Opdorp; pickup in Herzele.
+- Shipping to Buggenhout and Opdorp; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Buggenhout.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Buggenhout, Buggenhout city center, Opdorp, Pickup in 
 
 ---
 
-## Typical drop-off points near Buggenhout
+## Typical places we serve near Buggenhout
 
 - Buggenhout town center
 - local business park in Buggenhout

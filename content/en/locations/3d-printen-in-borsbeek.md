@@ -6,7 +6,7 @@ Need **3D printing in Borsbeek** for a repair part, school project, local displa
 
 ## Why Borsbeek teams choose us
 
-- Local delivery to Borsbeek, Fort 3 and Luchthavenzone, Deurne; pickup in Herzele.
+- Shipping to Borsbeek, Fort 3 and Luchthavenzone, Deurne; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Borsbeek.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

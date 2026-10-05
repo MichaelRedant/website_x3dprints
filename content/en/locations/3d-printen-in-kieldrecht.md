@@ -6,7 +6,7 @@ Need **3D printing in Kieldrecht**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Kieldrecht teams choose us
 
-- Local delivery to Kieldrecht, Doel and Verrebroek, Kallo; pickup in Herzele.
+- Shipping to Kieldrecht, Doel and Verrebroek, Kallo; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Kieldrecht.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Kieldrecht, Kieldrecht city center, Doel, Verrebroek, 
 
 ---
 
-## Typical drop-off points near Kieldrecht
+## Typical places we serve near Kieldrecht
 
 - Kieldrecht town center
 - local business park in Kieldrecht

@@ -6,7 +6,7 @@ Need **3D printing in Waarbeke**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Waarbeke teams choose us
 
-- Local delivery to Waarbeke; pickup in Herzele.
+- Shipping to Waarbeke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Waarbeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

@@ -37,7 +37,7 @@ export default function Page() {
     },
     {
       title: "Korte keten",
-      desc: "Levering in Vlaanderen, afhalen op afspraak in Herzele. Minder transportkilometers en snellere feedbackloops.",
+      desc: "Verzending in Vlaanderen, gratis afhalen in de afhaalbox in Herzele, 24 op 7. Minder transportkilometers en snellere feedbackloops.",
     },
     {
       title: "Eerlijke afspraken",
@@ -145,7 +145,7 @@ export default function Page() {
                 href="/locaties"
                 className="inline-flex items-center gap-2 rounded-xl border border-emerald-100/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
               >
-                Lokale leveringszones
+                Lokale regio&apos;s
               </Link>
             </div>
           </Reveal>

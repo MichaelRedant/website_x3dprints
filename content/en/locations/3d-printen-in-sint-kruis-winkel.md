@@ -6,7 +6,7 @@ Need **3D printing in Sint-Kruis-Winkel**? X3DPrints prints in Herzele and ships
 
 ## Why Sint-Kruis-Winkel teams choose us
 
-- Local delivery to Sint-Kruis-Winkel; pickup in Herzele.
+- Shipping to Sint-Kruis-Winkel; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Kruis-Winkel.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

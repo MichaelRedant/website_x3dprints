@@ -23,7 +23,7 @@
 
 ## Lokale focus in Melle
 
-Werk je in Melle? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Melle.
+Werk je in Melle? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending naar Melle.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -73,7 +73,7 @@ Test onderdelen snel en verbeter zonder tijdverlies.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

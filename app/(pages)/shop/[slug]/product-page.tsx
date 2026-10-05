@@ -65,7 +65,7 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     shopLabel: "Shop",
     titleSuffix: "3D print shop",
     descriptionFallback:
-      "Kleinschalig geproduceerd in Belgie. Levering: EUR 7.50 tot 3 kg of gratis afhalen op afspraak.",
+      "Kleinschalig geproduceerd in Belgie. Verzending: EUR 7,50 tot 2 kg, EUR 8 tot 5 kg, EUR 9 tot 10 kg, of gratis afhalen in de afhaalbox in Herzele, 24 op 7.",
     detailsTitle: "Waarvoor dit product bedoeld is",
     galleryTitle: "Meer beelden",
     resourcesTitle: "Meer context en praktijk",
@@ -76,9 +76,9 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     shippingBody: "Levering in Belgie: EUR 7.50 tot 3 kg. Productie- en verzendtijd hangen af van materiaal en volume.",
     shippingBodyInquiry:
       "Na je aanvraag bevestigen we beschikbare aantallen, verzendkost en hoe snel we kunnen verzenden.",
-    pickupTitle: "Gratis afhalen op afspraak",
-    pickupBody: "Afhalen kan na bevestiging van je order en tijdslot.",
-    pickupBodyInquiry: "Afhalen in Herzele kan zodra je aantal en timing bevestigd zijn.",
+    pickupTitle: "Gratis afhalen, 24 op 7",
+    pickupBody: "Na bevestiging van je order haal je gratis af in de beveiligde afhaalbox in Herzele, 24 op 7.",
+    pickupBodyInquiry: "Zodra je aantal en timing bevestigd zijn, haal je gratis af in de beveiligde afhaalbox in Herzele, 24 op 7.",
     returnsPolicyTitle: "Retour & herroeping",
     returnsPolicyBody:
       "Voor standaard shopproducten voor consumenten geldt in principe het gewone kader voor herroeping bij online verkoop. Maatwerk kan onder een wettelijke uitzondering vallen.",
@@ -109,7 +109,7 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     shopLabel: "Shop",
     titleSuffix: "3D print shop",
     descriptionFallback:
-      "Small-batch made in Belgium. Delivery: EUR 7.50 up to 3 kg or free pickup by appointment.",
+      "Small-batch made in Belgium. Shipping: EUR 7.50 up to 2 kg, EUR 8 up to 5 kg, EUR 9 up to 10 kg, or free pickup, 24/7, from the pickup box in Herzele.",
     detailsTitle: "What this product is for",
     galleryTitle: "More views",
     resourcesTitle: "More context and real-world use",
@@ -120,9 +120,9 @@ const COPY: Record<ShopLocale, ShopCopy> = {
     shippingBody: "Delivery in Belgium: EUR 7.50 up to 3 kg. Production and shipping time depend on material and volume.",
     shippingBodyInquiry:
       "After your request, we confirm available quantity, shipping cost, and how fast we can dispatch.",
-    pickupTitle: "Free pickup by appointment",
-    pickupBody: "Pickup is available after order confirmation and time-slot agreement.",
-    pickupBodyInquiry: "Pickup in Herzele is possible once quantity and timing are confirmed.",
+    pickupTitle: "Free pickup, 24/7",
+    pickupBody: "Once your order is confirmed, pick it up free of charge from the secure pickup box in Herzele, 24/7.",
+    pickupBodyInquiry: "Once quantity and timing are confirmed, pick it up free of charge from the secure pickup box in Herzele, 24/7.",
     returnsPolicyTitle: "Returns & withdrawal",
     returnsPolicyBody:
       "For standard consumer-facing shop products, we generally start from the ordinary withdrawal framework for online sales. Custom-made work can fall under a statutory exception.",

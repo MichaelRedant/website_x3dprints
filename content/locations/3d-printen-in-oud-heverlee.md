@@ -8,7 +8,7 @@ Met **3D printen in Oud-Heverlee** leveren we prototypes, behuizingen en tooling
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Oud-Heverlee/Meerdaalwoud; afhalen in Herzele kan.
+- Verzending naar Oud-Heverlee en Meerdaalwoud; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Met **3D printen in Oud-Heverlee** leveren we prototypes, behuizingen en tooling
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via Haasrode/Meerdaalwoud; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

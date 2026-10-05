@@ -6,7 +6,7 @@ Need **3D printing in Kontich**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Kontich teams choose us
 
-- Local delivery to Kontich; pickup in Herzele.
+- Shipping to Kontich; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Kontich.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Kontich, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Kontich
+## Typical places we serve near Kontich
 
 - Kontich town center
 - local business park in Kontich

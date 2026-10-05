@@ -6,7 +6,7 @@ Need **3D printing in Kemzeke**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Kemzeke teams choose us
 
-- Local delivery to Kemzeke, Stekene and Klein-Sinaai, Houtem (Stekene); pickup in Herzele.
+- Shipping to Kemzeke, Stekene and Klein-Sinaai, Houtem (Stekene); free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Kemzeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

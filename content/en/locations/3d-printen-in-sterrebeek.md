@@ -6,7 +6,7 @@ Need **3D printing in Sterrebeek**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Sterrebeek teams choose us
 
-- Local delivery to Sterrebeek, N2/Leuvensesteenweg and Sterrebeeksebaan; pickup in Herzele.
+- Shipping to Sterrebeek, N2/Leuvensesteenweg and Sterrebeeksebaan; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sterrebeek.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Sterrebeek, Sterrebeek city center, N2/Leuvensesteenwe
 
 ---
 
-## Typical drop-off points near Sterrebeek
+## Typical places we serve near Sterrebeek
 
 - Sterrebeek town center
 - local business park in Sterrebeek

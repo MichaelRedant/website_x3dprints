@@ -6,7 +6,7 @@ Need **3D printing in Steenkerke**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Steenkerke teams choose us
 
-- Local delivery to Steenkerke, Lovaart and Fintele and IJzervlakte, Veurne and Lo-Reninge; pickup in Herzele.
+- Shipping to Steenkerke, Lovaart and Fintele and IJzervlakte, Veurne and Lo-Reninge; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Steenkerke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

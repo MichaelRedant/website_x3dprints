@@ -6,7 +6,7 @@ Need **3D printing in Watervliet**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Watervliet teams choose us
 
-- Local delivery to Watervliet, Sint-Laureins and Sint-Margriete, Waterland-Oudeman; pickup in Herzele.
+- Shipping to Watervliet, Sint-Laureins and Sint-Margriete, Waterland-Oudeman; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Watervliet.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

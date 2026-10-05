@@ -6,7 +6,7 @@ Need **3D printing in Tremelo**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Tremelo teams choose us
 
-- Local delivery to Tremelo, Baal and Ninde, Langs Dijle and N19; pickup in Herzele.
+- Shipping to Tremelo, Baal and Ninde, Langs Dijle and N19; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Tremelo.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Tremelo, Tremelo city center, Baal, Ninde, Langs Dijle
 
 ---
 
-## Typical drop-off points near Tremelo
+## Typical places we serve near Tremelo
 
 - Tremelo town center
 - local business park in Tremelo

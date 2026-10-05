@@ -6,7 +6,7 @@ Need **3D printing in Heffen**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Heffen teams choose us
 
-- Local delivery to Heffen; pickup in Herzele.
+- Shipping to Heffen; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Heffen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Heffen, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Heffen
+## Typical places we serve near Heffen
 
 - Heffen town center
 - local business park in Heffen

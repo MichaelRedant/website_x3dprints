@@ -6,7 +6,7 @@ Need **3D printing in Vilvoorde**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Vilvoorde teams choose us
 
-- Local delivery to Vilvoorde, Medialaan and businesspark and Kanaalzone Vilvoorde-Brussel, Houtem and Peutie; pickup in Herzele.
+- Shipping to Vilvoorde, Medialaan and businesspark and Kanaalzone Vilvoorde-Brussel, Houtem and Peutie; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Vilvoorde.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Vilvoorde, Vilvoorde city center, Medialaan and busine
 
 ---
 
-## Typical drop-off points near Vilvoorde
+## Typical places we serve near Vilvoorde
 
 - Vilvoorde town center
 - local business park in Vilvoorde

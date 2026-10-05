@@ -519,7 +519,7 @@ const HOME_COPY_NL = {
       },
       {
         title: "Verzending/afhalen",
-        description: "Verzending in BE of afhalen in regio Herzele/Gent.",
+        description: "Verzending in BE of gratis afhalen, 24 op 7, in de afhaalbox in Herzele.",
       },
     ],
     ctas: {
@@ -815,7 +815,7 @@ const HOME_COPY_EN = {
       },
       {
         title: "Shipping/pickup",
-        description: "Shipping within BE or pickup in the Herzele/Ghent region.",
+        description: "Shipping within BE or free pickup, 24/7, from the pickup box in Herzele.",
       },
     ],
     ctas: {

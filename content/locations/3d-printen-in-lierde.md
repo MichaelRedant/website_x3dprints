@@ -89,7 +89,7 @@ De gemeente Lierde, met haar glooiende heuvels, sterke gemeenschapszin en openhe
 -   **standaard**: 2 tot 5 werkdagen, afhankelijk van de complexiteit en omvang van uw bestelling.
 -   **spoed**: neem contact met ons op voor de mogelijkheden bij dringende opdrachten, we denken graag met u mee.
 -   **verzending**: wij verzenden uw bestelling veilig en snel conform de tarieven op onze [prijzenpagina](/pricing).
--   **afhalen**: uw afgewerkte 3D prints kunnen op afspraak worden afgehaald in de nabijgelegen regio Borsbeke.
+-   **afhalen**: uw afgewerkte 3D prints kunnen gratis worden afgehaald, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -119,7 +119,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Lierde?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 <!-- LOCAL_ENRICH_START -->
 ## Lokale accenten voor Lierde

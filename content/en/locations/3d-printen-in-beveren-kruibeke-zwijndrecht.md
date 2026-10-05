@@ -6,7 +6,7 @@ Need **3D printing in Beveren-Kruibeke-Zwijndrecht**? X3DPrints prints in Herzel
 
 ## Why Beveren-Kruibeke-Zwijndrecht teams choose us
 
-- Local delivery to Beveren-Kruibeke-Zwijndrecht, Beveren and Kruibeke, Zwijndrecht; pickup in Herzele.
+- Shipping to Beveren-Kruibeke-Zwijndrecht, Beveren and Kruibeke, Zwijndrecht; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Beveren-Kruibeke-Zwijndrecht.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

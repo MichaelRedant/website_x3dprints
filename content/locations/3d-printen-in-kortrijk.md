@@ -1,6 +1,6 @@
 # 3D printen in Kortrijk: prototypes, tooling en props
 
-Welkom in Kortrijk Weide en omgeving. We printen prototypes, fixtures en zichtwerk voor teams in het centrum, Overleie en langs de R8/E17. Kies PLA voor strak zichtwerk, PETG voor stevigheid of TPU voor flexibele onderdelen. Levering via koerier of afhalen in Herzele.
+Welkom in Kortrijk Weide en omgeving. We printen prototypes, fixtures en zichtwerk voor teams in het centrum, Overleie en langs de R8/E17. Kies PLA voor strak zichtwerk, PETG voor stevigheid of TPU voor flexibele onderdelen. Verzending of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ## Waar we vaak voor printen in Kortrijk
 
@@ -38,13 +38,13 @@ In Kortrijk helpen we makers en bedrijven met 3D prints die vlot passen en lang 
 1. Deel een STL/STEP-link met toepassing, kritieke maten en gewenste afwerking  
 2. Materiaaladvies (PLA/PETG/TPU) + prijsvoorstel binnen een werkdag  
 3. Print, supportverwijdering en steekproef op kritieke maten  
-4. Afhalen in Herzele of levering richting Kortrijk en Vlaanderen
+4. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending naar Kortrijk en heel België
 
 ## Levering of afhalen
 
-- Afhalen: Provincieweg 34a, 9552 Herzele (afspraak)  
-- Levering Kortrijk/Kuurne/Harelbeke: in overleg, beschermde verpakking  
-- Bpost/pakketdienst voor andere adressen in Vlaanderen
+- Afhalen: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele  
+- Verzending naar Kortrijk, Kuurne en Harelbeke in beschermde verpakking  
+- Verzending naar andere adressen in heel België
 
 ## Klaar om te starten?
 

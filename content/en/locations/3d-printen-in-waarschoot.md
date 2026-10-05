@@ -6,7 +6,7 @@ Need **3D printing in Waarschoot**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Waarschoot teams choose us
 
-- Local delivery to Waarschoot, Lievegem and Zomergem, Oostwinkel; pickup in Herzele.
+- Shipping to Waarschoot, Lievegem and Zomergem, Oostwinkel; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Waarschoot.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

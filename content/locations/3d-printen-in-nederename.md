@@ -7,7 +7,7 @@ X3DPrints levert snelle 3D prints voor Nederename, ideaal voor kmo's en makers t
 ## Waarom X3DPrints?
 
 - **Snelle lead time**: 2-5 werkdagen; spoed op aanvraag.  
-- **Levering** richting N60, Wijngaardbrug en Scheldeboorden; afhalen in Herzele kan.  
+- **Verzending** naar Wijngaardbrug en Scheldeboorden; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaalkeuze**: PLA voor behuizingen en visuals, PETG voor buiten of trillingsgevoelige setups, TPU voor flexibele dempers en kabelclips.  
 - **Duidelijke prijzen**: zie [pricing](/pricing) of vraag je voorstel via [contact](/contact).
 
@@ -37,7 +37,7 @@ In Nederename (Oudenaarde) helpen we makers en bedrijven met 3D prints die vlot 
 
 1) Deel een STL/STEP-link via [contact](/contact) met afmetingen en toepassing.  
 2) Wij adviseren orientatie en materiaal.  
-3) Productie, controle en levering in Nederename of afhalen.
+3) Productie, controle en verzending naar Nederename of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 Meer inspiratie: [materials](/materials), [viewer](/viewer), [segments](/segments) en de [blog](/blog).
 
@@ -50,7 +50,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Nederename (Oudenaarde)?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Nederename (Oudenaarde)?**
 

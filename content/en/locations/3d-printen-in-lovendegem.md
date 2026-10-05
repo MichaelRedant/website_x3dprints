@@ -6,7 +6,7 @@ Need **3D printing in Lovendegem**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Lovendegem teams choose us
 
-- Local delivery to Lovendegem, Lievegem and Vinderhoute, Zomergem; pickup in Herzele.
+- Shipping to Lovendegem, Lievegem and Vinderhoute, Zomergem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Lovendegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

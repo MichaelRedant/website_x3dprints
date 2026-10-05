@@ -6,7 +6,7 @@ Need **3D printing in Sint-Laureins**? X3DPrints prints in Herzele and ships qui
 
 ## Why Sint-Laureins teams choose us
 
-- Local delivery to Sint-Laureins, Sint-Jan-in-Eremo and Sint-Margriete, Watervliet; pickup in Herzele.
+- Shipping to Sint-Laureins, Sint-Jan-in-Eremo and Sint-Margriete, Watervliet; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Laureins.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

@@ -20,7 +20,7 @@ Voor **3D printen in Zellik** leveren we prototypes en functionele onderdelen ri
 
 - Materiaalkeuze: PLA voor zichtwerk, PETG voor robuuste toepassingen, TPU voor flexibele delen.
 
-- EV-levering voor breekbare of grotere prints.
+- Zorgvuldig verpakte verzending, ook voor grotere of breekbare prints.
 
 
 

@@ -6,7 +6,7 @@ Need **3D printing in Oordegem**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Oordegem teams choose us
 
-- Local delivery to Oordegem, Lede and Smetlede, Wanzele; pickup in Herzele.
+- Shipping to Oordegem, Lede and Smetlede, Wanzele; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Oordegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

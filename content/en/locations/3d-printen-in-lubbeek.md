@@ -6,7 +6,7 @@ Need **3D printing in Lubbeek**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Lubbeek teams choose us
 
-- Local delivery to Lubbeek, Binkom and Pellenberg; pickup in Herzele.
+- Shipping to Lubbeek, Binkom and Pellenberg; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Lubbeek.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

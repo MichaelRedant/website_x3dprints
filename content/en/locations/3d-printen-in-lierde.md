@@ -6,7 +6,7 @@ Need **3D printing in Lierde**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Lierde teams choose us
 
-- Local delivery to Lierde; pickup in Herzele.
+- Shipping to Lierde; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Lierde.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Lierde, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Lierde
+## Typical places we serve near Lierde
 
 - Lierde town center
 - local business park in Lierde

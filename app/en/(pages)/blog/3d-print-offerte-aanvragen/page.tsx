@@ -126,7 +126,7 @@ const pricingRows = [
   },
   {
     label: "Delivery",
-    detail: "Pickup, shipping or custom delivery.",
+    detail: "Free pickup from the pickup box in Herzele, or shipping.",
     range: "EUR 0-12",
   },
 ]

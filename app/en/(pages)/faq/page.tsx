@@ -79,7 +79,7 @@ export default function Page() {
     { q: "What is SLA?", a: "SLA cures liquid resin with a UV laser. Very high accuracy and smooth surfaces." },
     {
       q: "Which shipping options?",
-      a: "Pickup by appointment, local delivery or Bpost. Rush by arrangement. Add your city/district at <a href=\"/en/contact\">/contact</a>.",
+      a: "Free pickup, 24/7, from the pickup box in Herzele, or shipping. Rush by arrangement. Add your city/district at <a href=\"/en/contact\">/contact</a>.",
     },
     { q: "Where to see examples?", a: "See <a href=\"/en/portfolio\">/portfolio</a> for prototypes, minis and functional parts." },
     { q: "Do you deliver in Ghent, Aalst or Antwerp?", a: "Yes. From Herzele we deliver across East Flanders, Dender and Antwerp. See <a href=\"/en/segments\">/segments</a> and <a href=\"/en/locaties\">/locaties</a>." },
@@ -87,7 +87,7 @@ export default function Page() {
     { q: "How do you optimise strength?", a: "We set layer height, infill, orientation and wall thickness for the loads. PETG or TPU for functional parts; PLA Matte for aesthetics." },
     { q: "Do you have an STL/STEP viewer?", a: "Yes, <a href=\"/en/viewer\">/viewer</a> lets you check orientation/scale. Note your preference in the request." },
     { q: "How do you handle AI-generated models?", a: "We check manifold, wall thickness and overhangs. We repair files when needed so they print cleanly." },
-    { q: "Do you deliver on site?", a: "Yes. Provide your city/district and we plan EV delivery, courier or Bpost. Pickup in Herzele/Ghent is possible." },
+    { q: "Do you deliver on site?", a: "Yes. We ship to your address in Belgium; provide your city/district. Pickup is also possible: free, 24/7, from the pickup box in Herzele." },
     { q: "What exactly is 3D printing?", a: "Digital manufacturing building objects layer by layer from STL/STEP. We explain the process in the <a href=\"/en/blog\">blog</a>." },
     {
       q: "Which materials do you offer?",

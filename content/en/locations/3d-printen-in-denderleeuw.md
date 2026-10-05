@@ -6,7 +6,7 @@ Need **3D printing in Denderleeuw**? X3DPrints prints in Herzele and ships quick
 
 ## Why Denderleeuw teams choose us
 
-- Local delivery to Denderleeuw, Iddergem and Welle; pickup in Herzele.
+- Shipping to Denderleeuw, Iddergem and Welle; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Denderleeuw.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Denderleeuw, Denderleeuw city center, Iddergem, Welle,
 
 ---
 
-## Typical drop-off points near Denderleeuw
+## Typical places we serve near Denderleeuw
 
 - Denderleeuw town center
 - local business park in Denderleeuw

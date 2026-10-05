@@ -6,7 +6,7 @@ Need **3D printing in Melsen**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Melsen teams choose us
 
-- Local delivery to Melsen, Merelbeke and Munte, Schelderode; pickup in Herzele.
+- Shipping to Melsen, Merelbeke and Munte, Schelderode; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Melsen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Melsen, Melsen city center, Merelbeke, Munte, Schelder
 
 ---
 
-## Typical drop-off points near Melsen
+## Typical places we serve near Melsen
 
 - Melsen town center
 - local business park in Melsen

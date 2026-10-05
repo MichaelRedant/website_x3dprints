@@ -38,13 +38,13 @@ Voor projecten in Zoutenaaie combineren we korte doorlooptijd met strakke afwerk
 1. Deel een STL/STEP-link en doel via [contact](/contact)
 2. Wij helpen kiezen tussen PLA, PETG of TPU en stemmen planning af
 3. Productie volgt het stappenplan uit onze [3d-printen](/3d-printen) gids
-4. Levering of afhaling volgens afspraak, inclusief tracking
+4. Verzending met tracking, of gratis afhalen in de afhaalbox in Herzele, 24 op 7
 
 ## Levering of afhalen
 
-- Route richting Zoutenaaie, Steenkerke en Alveringem in dezelfde rit
-- Pakketdienst voor partners richting Diksmuide of Nieuwpoort
-- Afhalen in Herzele is mogelijk; we tonen de prints vooraf in de [viewer](/viewer) indien gewenst
+- Verzending naar Zoutenaaie, Steenkerke en Alveringem
+- Verzending naar partners in Diksmuide of Nieuwpoort
+- Gratis afhalen in de afhaalbox in Herzele, 24 op 7; we tonen de prints vooraf in de [viewer](/viewer) indien gewenst
 
 ## Klaar om te starten?
 

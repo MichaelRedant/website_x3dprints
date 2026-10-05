@@ -9,7 +9,7 @@
 - **Korte doorlooptijd**: meestal enkele werkdagen.
 - **Sterke materialen**: PLA, PETG en TPU volgens uw behoefte.
 - **Betrouwbaar advies**: duidelijke communicatie en planning.
-- **Lokale service**: ophalen of verzending op afspraak.
+- **Afhalen of verzenden**: gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending naar Ursel.
 
 ---
 
@@ -22,7 +22,7 @@
 
 ## Lokale focus in Ursel
 
-Werk je in Ursel? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Drongengoedhoeve.
+Werk je in Ursel? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending in de omgeving van Drongengoedhoeve.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -72,7 +72,7 @@ Test uw ontwerp snel en verbeter iteraties zonder grote kosten.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

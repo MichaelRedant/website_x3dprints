@@ -6,7 +6,7 @@ Need **3D printing in Drongen**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Drongen teams choose us
 
-- Local delivery to Drongen; pickup in Herzele.
+- Shipping to Drongen; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Drongen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

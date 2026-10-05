@@ -89,7 +89,7 @@ De gemeente Haaltert, met haar idyllische landschappen, sterke gemeenschapszin e
 -   **Standaard**: 2 tot 5 werkdagen, afhankelijk van de complexiteit en omvang van uw bestelling.
 -   **Spoed**: Neem contact met ons op voor de mogelijkheden bij dringende opdrachten, we denken graag met u mee.
 -   **Verzending**: Wij verzenden uw bestelling veilig en snel conform de tarieven op onze [prijzenpagina](/pricing).
--   **Afhalen**: Uw afgewerkte 3D prints kunnen op afspraak worden afgehaald in de nabijgelegen regio Borsbeke.
+-   **Afhalen**: Uw afgewerkte 3D prints kunnen gratis worden afgehaald, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -111,7 +111,7 @@ Benieuwd hoe **3D printen in Haaltert** uw project kan versnellen of uw idee kan
 
 **Leveren jullie ook in Haaltert?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Haaltert?**
 

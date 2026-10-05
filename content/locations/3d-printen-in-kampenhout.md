@@ -8,7 +8,7 @@ Voor **3D printen in Kampenhout** leveren we prototypes, tooling en behuizingen 
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk en stevige parts.
-- EV-levering richting Kampenhout-Sas; afhalen in Herzele kan.
+- Verzending naar Kampenhout-Sas; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Voor **3D printen in Kampenhout** leveren we prototypes, tooling en behuizingen 
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via Haachtsesteenweg; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

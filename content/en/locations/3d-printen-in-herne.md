@@ -6,7 +6,7 @@ Need **3D printing in Herne**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Herne teams choose us
 
-- Local delivery to Herne, Herfelingen and Sint-Pieters-Kapelle; pickup in Herzele.
+- Shipping to Herne, Herfelingen and Sint-Pieters-Kapelle; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Herne.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Herne, Herne city center, Herfelingen, Sint-Pieters-Ka
 
 ---
 
-## Typical drop-off points near Herne
+## Typical places we serve near Herne
 
 - Herne town center
 - local business park in Herne

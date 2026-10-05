@@ -1,6 +1,6 @@
 # 3D printen in Landen: Haspengouw/Hageland hub
 
-Voor **3D printen in Landen** leveren we prototypes, behuizingen en tooling richting Walsbets, Waasmont en Neerwinden. Snelle offertes, transparante prijzen en leveringen via E40 en spoor.
+Voor **3D printen in Landen** leveren we prototypes, behuizingen en tooling richting Walsbets, Waasmont en Neerwinden. Snelle offertes, transparante prijzen en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Voor **3D printen in Landen** leveren we prototypes, behuizingen en tooling rich
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Landen/Haspengouw; afhalen in Herzele kan.
+- Verzending naar Landen en Haspengouw; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Voor **3D printen in Landen** leveren we prototypes, behuizingen en tooling rich
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via E40/spoor; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

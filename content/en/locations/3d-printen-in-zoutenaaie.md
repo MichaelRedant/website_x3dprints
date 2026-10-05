@@ -6,7 +6,7 @@ Need **3D printing in Zoutenaaie**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Zoutenaaie teams choose us
 
-- Local delivery to Zoutenaaie, Handzamevaart and N8 and Veurne-Diksmuide corridor; pickup in Herzele.
+- Shipping to Zoutenaaie, Handzamevaart and N8 and Veurne-Diksmuide corridor; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Zoutenaaie.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

@@ -52,7 +52,7 @@ Verzending naar Merksem gebeurt volgens de afgesproken projectplanning. Vermeld 
 ## Veelgestelde vragen over 3D printen in Merksem
 
 **Hoe snel is 3D printen in Merksem?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Merksem of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Merksem of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Merksem?**
 Stuur je STL of STEP met de toepassing en aantallen. Na controle krijg je een duidelijke prijs en een planning die rekening houdt met de actuele productiecapaciteit.

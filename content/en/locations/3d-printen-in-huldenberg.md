@@ -6,7 +6,7 @@ Need **3D printing in Huldenberg**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Huldenberg teams choose us
 
-- Local delivery to Huldenberg, Loonbeek and Ottenburg, Neerijse; pickup in Herzele.
+- Shipping to Huldenberg, Loonbeek and Ottenburg, Neerijse; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Huldenberg.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

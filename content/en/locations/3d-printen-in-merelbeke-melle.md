@@ -6,7 +6,7 @@ Need **3D printing in Merelbeke-Melle**? X3DPrints prints in Herzele and ships q
 
 ## Why Merelbeke-Melle teams choose us
 
-- Local delivery to Merelbeke-Melle, Merelbeke and Melle, Bottelare; pickup in Herzele.
+- Shipping to Merelbeke-Melle, Merelbeke and Melle, Bottelare; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Merelbeke-Melle.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

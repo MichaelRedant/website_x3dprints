@@ -56,7 +56,7 @@ Met **rapid prototyping** via **3D printen in Zwijnaarde** doorloop je sneller d
 2. Kies materiaal en gewenste afwerking.
 3. Ontvang een offerte met prijs en haalbare planning voor **3D printen in Zwijnaarde**.
 4. Na akkoord starten we met **3D printen in Zwijnaarde**.
-5. Ophalen of verzending volgens afspraak.
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 
@@ -65,7 +65,7 @@ Met **rapid prototyping** via **3D printen in Zwijnaarde** doorloop je sneller d
 - **Planning**: wordt bevestigd na controle van formaat, materiaal, afwerking en actuele capaciteit.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: volgens tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de studio in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

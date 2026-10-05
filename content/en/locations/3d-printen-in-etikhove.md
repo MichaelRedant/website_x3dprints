@@ -6,7 +6,7 @@ Need **3D printing in Etikhove**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Etikhove teams choose us
 
-- Local delivery to Etikhove, Maarkedal and Maarke-Kerkem, Nukerke; pickup in Herzele.
+- Shipping to Etikhove, Maarkedal and Maarke-Kerkem, Nukerke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Etikhove.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Etikhove, Etikhove city center, Maarkedal, Maarke-Kerk
 
 ---
 
-## Typical drop-off points near Etikhove
+## Typical places we serve near Etikhove
 
 - Etikhove town center
 - local business park in Etikhove

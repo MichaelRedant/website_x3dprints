@@ -6,7 +6,7 @@ Need **3D printing in Kraainem**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Kraainem teams choose us
 
-- Local delivery to Kraainem, Leuvensesteenweg and Ring/R0 aansluiting, Tram/bus-corridor Kraainem; pickup in Herzele.
+- Shipping to Kraainem, Leuvensesteenweg and Ring/R0 aansluiting, Tram/bus-corridor Kraainem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Kraainem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

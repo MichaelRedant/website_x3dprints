@@ -6,7 +6,7 @@ Need **3D printing in Londerzeel**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Londerzeel teams choose us
 
-- Local delivery to Londerzeel, Malderen and Steenhuffel, A12/N17-corridor; pickup in Herzele.
+- Shipping to Londerzeel, Malderen and Steenhuffel, A12/N17-corridor; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Londerzeel.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

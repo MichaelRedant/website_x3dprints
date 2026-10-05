@@ -6,7 +6,7 @@ Need **3D printing in Bentille**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Bentille teams choose us
 
-- Local delivery to Bentille, Bentille center and Kaprijke, Lembeke; pickup in Herzele.
+- Shipping to Bentille, Bentille center and Kaprijke, Lembeke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Bentille.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Bentille, Bentille center, Kaprijke, Lembeke, Pickup i
 
 ---
 
-## Typical drop-off points near Bentille
+## Typical places we serve near Bentille
 
 - Bentille town center
 - local business park in Bentille

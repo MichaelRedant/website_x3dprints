@@ -116,9 +116,9 @@ const SERVICES_COPY_NL = {
     kicker: "Waarom X3DPrints",
     title: "Bijberoep met focus en korte lijnen",
     body:
-      "Productie gebeurt vanuit Herzele en elke job wordt persoonlijk ingepland. Geen ticket-systeem, wel rechtstreeks overleg, transparante communicatie en flexibiliteit voor lokale afhalingen.",
+      "Productie gebeurt vanuit Herzele en elke job wordt persoonlijk ingepland. Geen ticket-systeem, wel rechtstreeks overleg, transparante communicatie en gratis afhalen in de afhaalbox in Herzele, 24 op 7.",
     bullets: [
-      "Afhalen mogelijk voor Gent/Aalst, verzending voor heel Belgie.",
+      "Gratis afhalen, 24 op 7, in de afhaalbox in Herzele; verzending voor heel Belgie.",
       "Planning in overleg: typisch enkele werkdagen, spoed enkel wanneer haalbaar.",
       "Feedback op design en materiaal voor we printen.",
     ],
@@ -207,7 +207,7 @@ const SERVICES_COPY_NL = {
       },
       {
         title: "3D printen in de buurt",
-        body: "Afhalen in Herzele en leveringen richting Gent, Aalst en Antwerpen.",
+        body: "Gratis afhalen in de afhaalbox in Herzele en verzending naar Gent, Aalst en Antwerpen.",
         href: "/blog/3d-printen-in-de-buurt",
         cta: "Lees artikel",
       },
@@ -419,9 +419,9 @@ const SERVICES_COPY_EN = {
     kicker: "Why X3DPrints",
     title: "Part-time studio with focus and direct communication",
     body:
-      "Production runs from Herzele and every job is scheduled personally. No ticket system, just direct contact, transparent updates and flexibility for local pickup.",
+      "Production runs from Herzele and every job is scheduled personally. No ticket system, just direct contact, transparent updates and free 24/7 pickup from the pickup box in Herzele.",
     bullets: [
-      "Pickup for Ghent/Aalst, shipping across Belgium.",
+      "Free pickup, 24/7, from the pickup box in Herzele; shipping across Belgium.",
       "Planning by agreement: typically a few business days, rush only if feasible.",
       "Feedback on design and material before we print.",
     ],
@@ -510,7 +510,7 @@ const SERVICES_COPY_EN = {
       },
       {
         title: "3D printing nearby",
-        body: "Pickup in Herzele and deliveries toward Ghent, Aalst and Antwerp.",
+        body: "Free pickup from the pickup box in Herzele and shipping to Ghent, Aalst and Antwerp.",
         href: "/blog/3d-printen-in-de-buurt",
         cta: "Read article",
       },

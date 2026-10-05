@@ -73,7 +73,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -89,7 +89,7 @@ Test onderdelen snel en stuur bij waar nodig.
 ## Veelgestelde vragen over 3D printen in Wichelen
 
 **Hoe snel is 3D printen in Wichelen?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Wichelen of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Wichelen of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Wichelen?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

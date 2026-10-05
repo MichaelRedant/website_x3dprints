@@ -65,7 +65,7 @@ const factors = [
   {
     title: "Logistics",
     description:
-      "Pickup in Herzele is fastest. Bpost and personal deliveries are flexible: we will propose the quickest option that fits your budget.",
+      "Pickup is fastest: free, 24/7, from the pickup box in Herzele. Shipping is also possible; we will propose the quickest option that fits your budget.",
   },
 ]
 
@@ -135,7 +135,7 @@ export default function BlogLeadTimesEnPage() {
             </h1>
             <p className="mt-4 text-lg text-slate-700">
               Turnaround ranges from express (raw prints within 24 hours) to several weeks (large batches with finishing). Below you will see what
-              influences lead time and how to get your project into the queue faster. We print from Herzele (Ghent area) and ship across Belgium?Bpost export to EU/UK on request.
+              influences lead time and how to get your project into the queue faster. We print from Herzele (Ghent area) and ship across Belgium; export to the EU/UK on request.
             </p>
                         <p className="mt-3 text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{lastUpdatedLabel}</p>
             <div className="stacked-actions mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">

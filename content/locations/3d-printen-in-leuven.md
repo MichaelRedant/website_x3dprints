@@ -9,7 +9,7 @@ Voor **3D printen in Leuven** leveren we prototypes en zowel kleine als grotere 
 - Offerte binnen een werkdag met haalbare lead time.
 - FDM-prints in PLA Matte, PETG en TPU met consistente passing.
 - Heldere prijzen op basis van formaat (S/XL), materiaaltoeslag en aantallen.
-- EV-levering richting Leuven, Haasrode en Gasthuisberg.
+- Verzending naar Leuven, Haasrode en Gasthuisberg; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 We kennen de research- en start-upmix rond KU Leuven, imec en de Vaartkom. Daardoor stemmen we advies en afwerking af op laboprototypes, medische behuizingen en zichtwerk voor events.
 
@@ -44,7 +44,7 @@ Werk je in Leuven? We zorgen dat je onderdeel direct inzetbaar is.
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en gewenste afwerking.
-- Levering via E40/E314, EV-optie voor kwetsbare prints; afhalen in Herzele kan.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - We adviseren over oriëntatie en nabehandeling zodat je onderdeel meteen werkt.
 
 ---

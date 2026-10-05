@@ -73,7 +73,7 @@ Test onderdelen snel en verbeter zonder tijdverlies.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -95,7 +95,7 @@ Ja. We maken zowel kleine als grotere series met consistente passing en duidelij
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Lemberge?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Lemberge of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Lemberge of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ## Interne links rond 3D printen in Lemberge
 - [3D printen in Merelbeke-Melle](/3d-printen-in-merelbeke-melle)

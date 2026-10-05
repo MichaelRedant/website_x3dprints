@@ -6,7 +6,7 @@ Need **3D printing in Deurle (Sint-Martens-Latem)**? X3DPrints prints in Herzele
 
 ## Why Deurle (Sint-Martens-Latem) teams choose us
 
-- Local delivery to Deurle (Sint-Martens-Latem); pickup in Herzele.
+- Shipping to Deurle (Sint-Martens-Latem); free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Deurle (Sint-Martens-Latem).
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Deurle (Sint-Martens-Latem), Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Deurle (Sint-Martens-Latem)
+## Typical places we serve near Deurle (Sint-Martens-Latem)
 
 - Deurle (Sint-Martens-Latem) town center
 - local business park in Deurle (Sint-Martens-Latem)

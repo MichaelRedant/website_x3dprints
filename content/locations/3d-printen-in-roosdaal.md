@@ -1,6 +1,6 @@
 # 3D printen in Roosdaal: Ninoofsesteenweg en Denderstreek
 
-Voor **3D printen in Roosdaal** leveren we prototypes, behuizingen en tooling richting Pamel en Borchtlombeek. Snelle offertes, transparante prijzen en leveringen via Ninoofsesteenweg.
+Voor **3D printen in Roosdaal** leveren we prototypes, behuizingen en tooling richting Pamel en Borchtlombeek. Snelle offertes, transparante prijzen en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Voor **3D printen in Roosdaal** leveren we prototypes, behuizingen en tooling ri
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Roosdaal/Denderstreek; afhalen in Herzele kan.
+- Verzending naar Roosdaal en Denderstreek; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Voor **3D printen in Roosdaal** leveren we prototypes, behuizingen en tooling ri
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via Ninoofsesteenweg; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

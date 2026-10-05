@@ -6,7 +6,7 @@ Need **3D printing in Middelburg (Maldegem)**? X3DPrints prints in Herzele and s
 
 ## Why Middelburg (Maldegem) teams choose us
 
-- Local delivery to Middelburg (Maldegem); pickup in Herzele.
+- Shipping to Middelburg (Maldegem); free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Middelburg (Maldegem).
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Middelburg (Maldegem), Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Middelburg (Maldegem)
+## Typical places we serve near Middelburg (Maldegem)
 
 - Middelburg (Maldegem) town center
 - local business park in Middelburg (Maldegem)

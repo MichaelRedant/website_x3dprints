@@ -6,7 +6,7 @@ Need **3D printing in Veurne**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Veurne teams choose us
 
-- Local delivery to Veurne, Grote Markt and Vaubanvesten and Veurne I and II bedrijventerreinen, Koksijde and De Panne corridor; pickup in Herzele.
+- Shipping to Veurne, Grote Markt and Vaubanvesten and Veurne I and II bedrijventerreinen, Koksijde and De Panne corridor; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Veurne.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

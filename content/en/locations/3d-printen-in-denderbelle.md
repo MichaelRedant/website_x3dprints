@@ -6,7 +6,7 @@ Need **3D printing in Denderbelle**? X3DPrints prints in Herzele and ships quick
 
 ## Why Denderbelle teams choose us
 
-- Local delivery to Denderbelle, Lebbeke and Wieze, Dendermonde; pickup in Herzele.
+- Shipping to Denderbelle, Lebbeke and Wieze, Dendermonde; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Denderbelle.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Denderbelle, Denderbelle city center, Lebbeke, Wieze, 
 
 ---
 
-## Typical drop-off points near Denderbelle
+## Typical places we serve near Denderbelle
 
 - Denderbelle town center
 - local business park in Denderbelle

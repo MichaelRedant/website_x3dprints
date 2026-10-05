@@ -6,7 +6,7 @@ Need **3D printing in Belsele**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Belsele teams choose us
 
-- Local delivery to Belsele, Sint-Niklaas and Nieuwkerken-Waas, Sinaai; pickup in Herzele.
+- Shipping to Belsele, Sint-Niklaas and Nieuwkerken-Waas, Sinaai; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Belsele.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Belsele, Belsele city center, Sint-Niklaas, Nieuwkerke
 
 ---
 
-## Typical drop-off points near Belsele
+## Typical places we serve near Belsele
 
 - Belsele town center
 - local business park in Belsele

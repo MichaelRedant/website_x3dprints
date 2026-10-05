@@ -6,7 +6,7 @@ Need **3D printing in Brecht**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Brecht teams choose us
 
-- Local delivery to Brecht; pickup in Herzele.
+- Shipping to Brecht; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Brecht.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Brecht, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Brecht
+## Typical places we serve near Brecht
 
 - Brecht town center
 - local business park in Brecht

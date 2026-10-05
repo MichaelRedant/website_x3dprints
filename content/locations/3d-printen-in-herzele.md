@@ -154,7 +154,7 @@ We zijn actief in heel Herzele en deelgemeenten zoals **Borsbeke**, **Hillegem**
 
 3. **Productie**: we printen, inspecteren en (optioneel) **schuren/primen/lakken**.  
 
-4. **Levering**: **afhalen** op afspraak of **verzending** volgens tarieven.  
+4. **Levering**: gratis **afhalen**, 24 op 7, in de afhaalbox of **verzending** volgens tarieven.  
 
 5. **Evaluatie**: feedback of vervolgserie? We denken mee.
 
@@ -172,7 +172,7 @@ We zijn actief in heel Herzele en deelgemeenten zoals **Borsbeke**, **Hillegem**
 
 - **Spoed**: in overleg, indien machinecapaciteit het toelaat.  
 
-- **Verzending**: volgens [prijzen](/pricing); afhalen kan op afspraak in de regio.
+- **Verzending**: volgens [prijzen](/pricing); afhalen is gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 
 

@@ -6,7 +6,7 @@ Need **3D printing in Moerzeke**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Moerzeke teams choose us
 
-- Local delivery to Moerzeke, Kastel and Hamme; pickup in Herzele.
+- Shipping to Moerzeke, Kastel and Hamme; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Moerzeke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

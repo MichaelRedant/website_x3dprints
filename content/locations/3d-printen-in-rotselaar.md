@@ -8,7 +8,7 @@ Met **3D printen in Rotselaar** leveren we prototypes, displays en tooling richt
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk en sterke parts.
-- EV-levering richting Rotselaar/Wezemaal; afhalen in Herzele kan.
+- Verzending naar Rotselaar en Wezemaal; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Met **3D printen in Rotselaar** leveren we prototypes, displays en tooling richt
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via E314; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

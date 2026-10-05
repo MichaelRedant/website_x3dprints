@@ -6,7 +6,7 @@ Need **3D printing in Schilde**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Schilde teams choose us
 
-- Local delivery to Schilde; pickup in Herzele.
+- Shipping to Schilde; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Schilde.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Schilde, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Schilde
+## Typical places we serve near Schilde
 
 - Schilde town center
 - local business park in Schilde

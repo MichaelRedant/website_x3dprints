@@ -20,7 +20,7 @@ Voor **3D printen in Sint-Katherina-Lombeek** leveren we prototypes en functione
 
 - Materiaalkeuze: PLA voor zichtwerk, PETG voor robuuste onderdelen, TPU voor flexibele klemmen.
 
-- EV-levering voor breekbare of grotere prints.
+- Zorgvuldig verpakte verzending, ook voor grotere of breekbare prints.
 
 
 

@@ -6,7 +6,7 @@ Need **3D printing in Nazareth-De Pinte**? X3DPrints prints in Herzele and ships
 
 ## Why Nazareth-De Pinte teams choose us
 
-- Local delivery to Nazareth-De Pinte, Nazareth and De Pinte, Eke; pickup in Herzele.
+- Shipping to Nazareth-De Pinte, Nazareth and De Pinte, Eke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Nazareth-De Pinte.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

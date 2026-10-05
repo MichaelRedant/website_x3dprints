@@ -7,7 +7,7 @@ Bevere ligt op een steenworp van het Centrum Ronde van Vlaanderen en de Koppenbe
 ## Waarom X3DPrints voor Bevere?
 
 - **Snelle doorlooptijd**: meestal 2-5 werkdagen; spoed mogelijk.  
-- **Levering** richting Rodelos, Koppenbergroute en N60; afhalen in Herzele kan.  
+- **Verzending** naar Rodelos en Koppenbergroute; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA Matte/Silk voor displays en eventprops, PETG voor buitengebruik langs Schelde- en kasseistroken, TPU voor flexibele klemmen.  
 - **Heldere prijzen**: zie [pricing](/pricing) of vraag direct via [contact](/contact).
 

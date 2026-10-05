@@ -6,7 +6,7 @@ Need **3D printing in Sleidinge**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Sleidinge teams choose us
 
-- Local delivery to Sleidinge, Evergem and Kluizen; pickup in Herzele.
+- Shipping to Sleidinge, Evergem and Kluizen; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sleidinge.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Sleidinge, Sleidinge city center, Evergem, Kluizen, Pi
 
 ---
 
-## Typical drop-off points near Sleidinge
+## Typical places we serve near Sleidinge
 
 - Sleidinge town center
 - local business park in Sleidinge

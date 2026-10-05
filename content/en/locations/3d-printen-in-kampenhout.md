@@ -6,7 +6,7 @@ Need **3D printing in Kampenhout**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Kampenhout teams choose us
 
-- Local delivery to Kampenhout, Berg and Nederokkerzeel, Haachtsesteenweg-corridor; pickup in Herzele.
+- Shipping to Kampenhout, Berg and Nederokkerzeel, Haachtsesteenweg-corridor; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Kampenhout.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Kampenhout, Kampenhout city center, Berg, Nederokkerze
 
 ---
 
-## Typical drop-off points near Kampenhout
+## Typical places we serve near Kampenhout
 
 - Kampenhout town center
 - local business park in Kampenhout

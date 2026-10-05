@@ -7,7 +7,7 @@ X3DPrints ondersteunt Mullem met vlotte 3D prints voor kmo's en makers rond Kast
 ## Pluspunten voor Mullem
 
 - **Snelle offertes**: vaak binnen 24 uur.  
-- **Levering** richting Mullemkouter en Schelde; afhalen in Herzele kan.  
+- **Verzending** naar Mullemkouter en Schelde; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA voor maquettes en decor, PETG voor vochtige of buitenopstellingen, TPU voor flexibele koppelingen.  
 - **Transparante prijzen**: check [pricing](/pricing) of start via [contact](/contact).
 

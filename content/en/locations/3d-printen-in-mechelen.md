@@ -6,7 +6,7 @@ Need **3D printing in Mechelen**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Mechelen teams choose us
 
-- Local delivery to Mechelen, Mechelen-Zuid and Nekkerhal, Battel; pickup in Herzele.
+- Shipping to Mechelen, Mechelen-Zuid and Nekkerhal, Battel; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Mechelen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Mechelen, Mechelen city center, Mechelen-Zuid, Nekkerh
 
 ---
 
-## Typical drop-off points near Mechelen
+## Typical places we serve near Mechelen
 
 - Mechelen town center
 - local business park in Mechelen

@@ -6,7 +6,7 @@ Need **3D printing in Deurne** for event support, repair parts, bicycle accessor
 
 ## Why Deurne teams choose us
 
-- Local delivery to Deurne, Rivierenhof and Sportpaleis omgeving, Haven-Zuid; pickup in Herzele.
+- Shipping to Deurne, Rivierenhof and Sportpaleis omgeving, Haven-Zuid; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Deurne.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

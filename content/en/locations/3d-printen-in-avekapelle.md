@@ -6,7 +6,7 @@ Need **3D printing in Avekapelle**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Avekapelle teams choose us
 
-- Local delivery to Avekapelle, Viconia Kleiputten and Lovaart and surrounding farms; pickup in Herzele.
+- Shipping to Avekapelle, Viconia Kleiputten and Lovaart and surrounding farms; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Avekapelle.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

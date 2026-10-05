@@ -1,6 +1,6 @@
 # 3D printen in Bekkevoort: N2/N29-corridor
 
-Voor **3D printen in Bekkevoort** leveren we prototypes, behuizingen en tooling richting Assent en Molenbeek-Wersbeek. Snelle offertes, transparante prijzen en leveringen via N2/N29.
+Voor **3D printen in Bekkevoort** leveren we prototypes, behuizingen en tooling richting Assent en Molenbeek-Wersbeek. Snelle offertes, transparante prijzen en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Voor **3D printen in Bekkevoort** leveren we prototypes, behuizingen en tooling 
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Bekkevoort; afhalen in Herzele kan.
+- Verzending naar Bekkevoort; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Voor **3D printen in Bekkevoort** leveren we prototypes, behuizingen en tooling 
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via N2/N29; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

@@ -6,7 +6,7 @@ Need **3D printing in Landen**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Landen teams choose us
 
-- Local delivery to Landen, Walsbets and Waasmont, Neerwinden; pickup in Herzele.
+- Shipping to Landen, Walsbets and Waasmont, Neerwinden; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Landen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Landen, Landen city center, Walsbets, Waasmont, Neerwi
 
 ---
 
-## Typical drop-off points near Landen
+## Typical places we serve near Landen
 
 - Landen town center
 - local business park in Landen

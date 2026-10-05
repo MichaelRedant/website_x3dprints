@@ -6,7 +6,7 @@ Need **3D printing in Klein-Sinaai**? X3DPrints prints in Herzele and ships quic
 
 ## Why Klein-Sinaai teams choose us
 
-- Local delivery to Klein-Sinaai, Stekene and Kemzeke, Houtem (Stekene); pickup in Herzele.
+- Shipping to Klein-Sinaai, Stekene and Kemzeke, Houtem (Stekene); free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Klein-Sinaai.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Klein-Sinaai, Klein-Sinaai city center, Stekene, Kemze
 
 ---
 
-## Typical drop-off points near Klein-Sinaai
+## Typical places we serve near Klein-Sinaai
 
 - Klein-Sinaai town center
 - local business park in Klein-Sinaai

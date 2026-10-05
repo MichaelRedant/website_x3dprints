@@ -52,7 +52,7 @@ const tips = [
   "Tekstdiepte min. 0,6 mm; rond randen af voor prettige feel. Voeg pockets toe voor magneten of TPU pads.",
   "Layerhoogte 0,16-0,24 mm: nette lijnen zonder lange printtijd. Batch namen/initialen per kleur.",
   "Lever STL/STEP of kies ontwerpservice (EUR 45/uur). Voeg logo als vector of STL in de briefing.",
-  "Plan lead time: meestal enkele werkdagen; geef eventdatum en afleverwijze (EV-zones of pakketdienst).",
+  "Plan lead time: meestal enkele werkdagen; geef eventdatum en afleverwijze (verzending of gratis afhalen in de afhaalbox in Herzele).",
 ]
 
 const checklist = [
@@ -60,7 +60,7 @@ const checklist = [
   "Materiaal: Silk/Matte PLA (look), PETG (sterk), TPU (grip).",
   "Afwerking: raw of licht geschuurd; primer optioneel voor schilderen.",
   "Branding: logo, naam, QR-code? Geef font/outline mee.",
-  "Deadline + leveroptie: EV-zone of pakketdienst.",
+  "Deadline + leveroptie: verzending of gratis afhalen in de afhaalbox in Herzele.",
 ]
 
 const faqItems = [
@@ -191,7 +191,7 @@ export default function BlogRelatiegeschenken() {
                 sleutelhangers en organizers. TPU pads zorgen voor grip.
               </p>
               <p className="mt-3 text-sm text-slate-700">
-                Levering: EV-zones of pakketdienst. Batch namen/initialen zodat kleur en finish consistent zijn. Vraag primer als je
+                Levering: verzending of gratis afhalen in de afhaalbox in Herzele, 24 op 7. Batch namen/initialen zodat kleur en finish consistent zijn. Vraag primer als je
                 zelf wil schilderen.
               </p>
             </GlassCard>

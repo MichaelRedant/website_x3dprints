@@ -6,7 +6,7 @@ Need **3D printing in Balegem**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Balegem teams choose us
 
-- Local delivery to Balegem; pickup in Herzele.
+- Shipping to Balegem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Balegem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Balegem, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Balegem
+## Typical places we serve near Balegem
 
 - Balegem town center
 - local business park in Balegem

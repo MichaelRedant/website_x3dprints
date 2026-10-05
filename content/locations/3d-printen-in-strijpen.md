@@ -67,7 +67,7 @@ Strijpen ligt in de Zwalmstreek en is verbonden met Zottegem via de Gentsesteenw
 2. Kies materiaal en afwerking voor **3D printen in Strijpen**.
 3. Ontvang binnen 24 uur een offerte.
 4. Na akkoord starten we met **3D printen in Strijpen**.
-5. Ophalen of verzending volgens afspraak.
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 
@@ -97,7 +97,7 @@ Strijpen ligt in de Zwalmstreek en is verbonden met Zottegem via de Gentsesteenw
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Strijpen?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Strijpen of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Strijpen of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Strijpen?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

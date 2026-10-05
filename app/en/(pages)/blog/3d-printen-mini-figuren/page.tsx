@@ -75,7 +75,7 @@ const faqItems = [
   },
   {
     q: "How are minis packed?",
-    a: "Individually wrapped with foam and stiffeners. EV delivery available in zones; parcel shipping possible for further destinations.",
+    a: "Individually wrapped with foam and stiffeners. Shipping is available across Belgium, or use the free 24/7 pickup box in Herzele.",
   },
 ]
 

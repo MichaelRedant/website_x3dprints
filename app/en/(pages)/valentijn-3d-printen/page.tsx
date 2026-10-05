@@ -40,7 +40,7 @@ const ideas = [
 const workflow = [
   "Send STL/STEP or choose design service (EUR 45/hour).",
   "Pick material: Silk/Marble for gloss, Matte for soft look, Translucent for light.",
-  "Note finish (raw, lightly sanded, primed) and delivery option (EV zone or parcel).",
+  "Note finish (raw, lightly sanded, primed) and delivery option (shipping or free pickup from the pickup box in Herzele).",
   "We plan together toward 14 February 2026 without overpromising.",
 ]
 
@@ -55,7 +55,7 @@ const faqItems = [
   },
   {
     q: "How about delivery?",
-    a: "EV zones in Flanders (depending on distance) or parcel service. Pickup in Herzele is free. Fragile pieces are packed separately.",
+    a: "Shipping across Belgium, based on parcel weight. Pickup is free, 24/7, from the pickup box in Herzele. Fragile pieces are packed separately.",
   },
 ]
 
@@ -78,7 +78,7 @@ export default function ValentinesLandingPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Seasonal</p>
           <h1 className="mt-3 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">Valentine 2026 3D prints on demand</h1>
           <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-            Heart decor, nameplates and personalised gifts for Valentine 2026 in Silk, Matte and Translucent PLA. Design not included; send STL/STEP or choose design service at EUR 45/hour. Delivery via EV zones or parcel service.
+            Heart decor, nameplates and personalised gifts for Valentine 2026 in Silk, Matte and Translucent PLA. Design not included; send STL/STEP or choose design service at EUR 45/hour. Shipping or free pickup from the pickup box in Herzele.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <ShimmerButton href="/en/contact?material=pla-silk">Plan your Valentine 2026 print</ShimmerButton>
@@ -145,7 +145,7 @@ export default function ValentinesLandingPage() {
                 href="/en/pricing"
                 className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
               >
-                Pricing & delivery zones
+                Pricing & shipping
               </Link>
               <Link
                 href="/en/segments/3d-printing-seasonal"

@@ -8,7 +8,7 @@ Voor **3D printen in Diest** leveren we prototypes, maquettes en functionele ond
 
 - Offerte binnen een werkdag en realistische lead times.
 - PLA Matte, PETG en TPU voor zichtwerk en stevige onderdelen.
-- Levering langs E314/N29, afhalen in Herzele kan op afspraak.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Meedenken over passing, infill en nabehandeling voor consistente reeksen.
 
 We kennen de mix van erfgoed, toerisme en KMO's rond Diest. Daardoor krijg je prints die passen bij expo's, onderhoud en R&D.
@@ -42,7 +42,7 @@ We kennen de mix van erfgoed, toerisme en KMO's rond Diest. Daardoor krijg je pr
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en gewenste afwerking.
-- Levering via E314/N29; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optionele nabehandeling: schuren/primen/lakken voor zichtwerk.
 
 ---

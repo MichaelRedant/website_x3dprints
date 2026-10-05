@@ -6,7 +6,7 @@ Need **3D printing in Kluizen**? X3DPrints prints in Herzele and ships quickly t
 
 ## Why Kluizen teams choose us
 
-- Local delivery to Kluizen, Sleidinge and Ertvelde, Evergem; pickup in Herzele.
+- Shipping to Kluizen, Sleidinge and Ertvelde, Evergem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Kluizen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Kluizen, Kluizen city center, Sleidinge, Ertvelde, Eve
 
 ---
 
-## Typical drop-off points near Kluizen
+## Typical places we serve near Kluizen
 
 - Kluizen town center
 - local business park in Kluizen

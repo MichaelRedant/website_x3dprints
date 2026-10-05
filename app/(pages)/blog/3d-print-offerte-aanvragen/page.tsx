@@ -119,7 +119,7 @@ const pricingRows = [
   },
   {
     label: "Levering",
-    detail: "Afhalen, verzending of levering op maat.",
+    detail: "Gratis afhalen in de afhaalbox in Herzele of verzending.",
     range: "EUR 0-12",
   },
 ]

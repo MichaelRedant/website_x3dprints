@@ -6,7 +6,7 @@ Need **3D printing in Louise-Marie**? X3DPrints prints in Herzele and ships quic
 
 ## Why Louise-Marie teams choose us
 
-- Local delivery to Louise-Marie, Ronse and De Klijpe, Maarkedal; pickup in Herzele.
+- Shipping to Louise-Marie, Ronse and De Klijpe, Maarkedal; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Louise-Marie.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

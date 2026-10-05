@@ -55,7 +55,7 @@ In Geraardsbergen helpen we makers en bedrijven met 3D prints die vlot passen en
 ## Veelgestelde vragen over 3D printen in Geraardsbergen
 
 **Hoe snel is 3D printen in Geraardsbergen?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Geraardsbergen of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Geraardsbergen of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Geraardsbergen?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

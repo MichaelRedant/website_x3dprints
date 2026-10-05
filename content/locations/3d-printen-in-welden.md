@@ -7,7 +7,7 @@ X3DPrints ondersteunt Welden met snelle 3D prints voor projecten langs de Scheld
 ## Waarom X3DPrints voor Welden?
 
 - **Korte lead time**: 2-5 werkdagen; spoed op aanvraag.  
-- **Levering** richting kerkplein, Schelde en Weldenstraat; afhalen in Herzele kan.  
+- **Verzending** naar kerkplein, Schelde en Weldenstraat; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA voor visuals, PETG voor buitenopstellingen aan de rivier, TPU voor flexibele klemmen en dempers.  
 - **Prijs helder**: zie [pricing](/pricing) of vraag via [contact](/contact).
 

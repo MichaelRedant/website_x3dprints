@@ -6,7 +6,7 @@ Need **3D printing in Welden (Oudenaarde)**? X3DPrints prints in Herzele and shi
 
 ## Why Welden (Oudenaarde) teams choose us
 
-- Local delivery to Welden (Oudenaarde); pickup in Herzele.
+- Shipping to Welden (Oudenaarde); free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Welden (Oudenaarde).
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

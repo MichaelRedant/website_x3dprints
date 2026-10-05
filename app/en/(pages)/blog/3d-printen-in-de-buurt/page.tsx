@@ -68,7 +68,7 @@ const cityCards = [
   },
   {
     city: "Dendermonde",
-    info: "Regular route planning plus shipping options when that fits better.",
+    info: "Shipping, or free pickup, 24/7, from the pickup box in Herzele.",
     examples: "Campaign assets, prototypes and short-run batches.",
   },
 ]
@@ -76,14 +76,14 @@ const cityCards = [
 const processSteps = [
   "Send STL or STEP with context and target deadline.",
   "Get material, timing and budget guidance within one business day.",
-  "Choose pickup, shipping or scheduled drop-off.",
+  "Choose free pickup from the pickup box in Herzele, or shipping.",
   "Reuse setup for repeat work and consistent output.",
 ]
 
 const logisticsRows = [
   {
     option: "Pickup",
-    speed: "Fastest once the batch is ready",
+    speed: "Free, 24/7, from the pickup box in Herzele",
     note: "Best for local iterations and quick review cycles.",
   },
   {
@@ -92,9 +92,9 @@ const logisticsRows = [
     note: "Useful when physical pickup is less practical.",
   },
   {
-    option: "Scheduled drop-off",
+    option: "Larger shipments",
     speed: "Aligned with project timing",
-    note: "Good for larger campaign batches and multi-box orders.",
+    note: "Packed with care, also for larger campaign batches and multi-box orders.",
   },
 ]
 

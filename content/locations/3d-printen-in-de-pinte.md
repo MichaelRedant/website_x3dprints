@@ -23,7 +23,7 @@
 
 ## Lokale focus in De Pinte
 
-Werk je in De Pinte? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting De Pinte.
+Werk je in De Pinte? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending naar De Pinte.
 
 - Behuizingen en beschermkappen voor elektronica of sensoren.
 - Kleine en grotere series onderdelen met consistente passing.
@@ -73,7 +73,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

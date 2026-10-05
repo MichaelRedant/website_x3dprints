@@ -45,7 +45,7 @@ Voor projecten in Berendrecht, Zandvliet en Lillo combineren we korte doorloopti
 
 ## Logistiek
 
-We verzenden richting de noordelijke districten volgens de afgesproken projectplanning. Vermeld een deadline bij je aanvraag, dan bevestigen we vooraf wat haalbaar is. Afhalen in Herzele kan op afspraak.
+We verzenden richting de noordelijke districten volgens de afgesproken projectplanning. Vermeld een deadline bij je aanvraag, dan bevestigen we vooraf wat haalbaar is. Gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -58,7 +58,7 @@ Ja. We maken zowel kleine als grotere series met consistente passing en duidelij
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Berendrecht, Zandvliet en Lillo?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Berendrecht, Zandvliet en Lillo of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Berendrecht, Zandvliet en Lillo of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ## Interne links rond Antwerpen
 - [3D printen in Ekeren](/3d-printen-in-ekeren)

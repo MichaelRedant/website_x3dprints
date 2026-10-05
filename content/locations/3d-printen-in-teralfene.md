@@ -20,7 +20,7 @@ Voor **3D printen in Teralfene** leveren we prototypes en zowel kleine als grote
 
 - Materiaalkeuze: PLA voor zichtwerk, PETG voor robuuste onderdelen, TPU voor flexibele buffers.
 
-- EV-levering voor breekbare of grotere prints.
+- Zorgvuldig verpakte verzending, ook voor grotere of breekbare prints.
 
 
 

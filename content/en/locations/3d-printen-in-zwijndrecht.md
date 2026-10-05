@@ -6,7 +6,7 @@ Need **3D printing in Zwijndrecht**? X3DPrints prints in Herzele and ships quick
 
 ## Why Zwijndrecht teams choose us
 
-- Local delivery to Zwijndrecht, Burcht and Kruibeke, Bazel; pickup in Herzele.
+- Shipping to Zwijndrecht, Burcht and Kruibeke, Bazel; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Zwijndrecht.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

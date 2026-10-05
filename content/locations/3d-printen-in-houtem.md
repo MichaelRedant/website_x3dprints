@@ -38,13 +38,13 @@ Zoek je 3D printen in Houtem (Veurne)? We denken mee over passing, sterkte en lo
 1. Deel een STL/STEP-link via [contact](/contact) en duid de toepassing aan (defensie, industrie, landbouw)
 2. We toetsen materiaal en toleranties aan je eisen en delen een planning
 3. Productie, supportverwijdering en inspectie volgen onze [3d-printen](/3d-printen) runbook
-4. Levering of afhaling volgens afspraak; dringende jobs krijgen prioriteitsslots
+4. Verzending of gratis afhalen in de afhaalbox in Herzele, 24 op 7; dringende jobs krijgen prioriteitsslots
 
 ## Levering of afhalen
 
-- Ritten richting Houtem, militaire site en Veurne I/II bedrijventerreinen
-- Pakketdienst voor partners in Koksijde of Nieuwpoort die meewerken aan hetzelfde project
-- Afhalen in Herzele mogelijk, inclusief live review in de [viewer](/viewer)
+- Verzending naar Houtem, de militaire site en de bedrijventerreinen Veurne I en II
+- Verzending naar partners in Koksijde of Nieuwpoort die meewerken aan hetzelfde project
+- Gratis afhalen in de afhaalbox in Herzele, 24 op 7, inclusief live review in de [viewer](/viewer)
 
 ## Klaar om te starten?
 

@@ -6,7 +6,7 @@ Need **3D printing in Steenokkerzeel**? X3DPrints prints in Herzele and ships qu
 
 ## Why Steenokkerzeel teams choose us
 
-- Local delivery to Steenokkerzeel, Brucargo-kant and Perk; pickup in Herzele.
+- Shipping to Steenokkerzeel, Brucargo-kant and Perk; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Steenokkerzeel.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

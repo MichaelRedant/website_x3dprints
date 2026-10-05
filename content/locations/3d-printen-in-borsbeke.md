@@ -24,7 +24,7 @@ Je profiteert van:
 
 ## Lokale focus in Borsbeke
 
-Werk je in Borsbeke? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Borsbeke.
+Werk je in Borsbeke? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending naar Borsbeke.
 
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
@@ -93,7 +93,7 @@ Borsbeke is een deelgemeente van [Herzele](https://www.herzele.be) en deelt mee 
 2. Kies je materiaal en kleur.  
 3. Ontvang binnen 24 uur een **transparante offerte**.  
 4. Na akkoord starten we de productie.  
-5. Ophalen of verzenden volgens afspraak.  
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.  
 
 Elk ontwerp wordt zorgvuldig nagekeken en waar nodig bijgestuurd in overleg.
 
@@ -104,7 +104,7 @@ Elk ontwerp wordt zorgvuldig nagekeken en waar nodig bijgestuurd in overleg.
 - **Standaard**: 2–5 werkdagen  
 - **Spoed**: mogelijk na overleg  
 - **Verzending**: volgens tarieven op de [prijzenpagina](/pricing)  
-- **Afhalen**: kan op afspraak in de regio  
+- **Afhalen**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele  
 
 De **lokale aanpak** minimaliseert transport en houdt levertijden kort.
 
@@ -135,7 +135,7 @@ Ja. We maken zowel kleine als grotere series met consistente passing en duidelij
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Borsbeke?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Borsbeke of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Borsbeke of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ## Interne links
 - [3D printen in Herzele](/3d-printen-in-herzele)

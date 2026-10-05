@@ -315,8 +315,8 @@ export default async function Page(
         `${loc.city} centrum`,
         `${loc.city} industriezone`,
         `${loc.city} en omliggende deelgemeenten`,
-        "Afhalen Provincieweg 34a, 9552 Herzele",
-        "Levering in Vlaanderen",
+        "Gratis afhalen in de afhaalbox in Herzele, 24 op 7",
+        "Verzending in heel België",
       ]
 
   const sectors = loc.sectors?.length
@@ -366,7 +366,7 @@ export default async function Page(
     }),
     (city: string) => ({
       title: `Laat je 3D modellen printen in ${city} met korte lijnen.`,
-      subtitle: `Snelle feedback, transparante prijzen en levering richting ${city} en Vlaanderen.`,
+      subtitle: `Snelle feedback, transparante prijzen en verzending naar ${city} en heel België.`,
     }),
   ]
   const variantIndex = loc.city
@@ -614,7 +614,7 @@ export default async function Page(
                   <p className="flex items-start gap-2">
                     <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
                     <span>
-                      Serviced areas: {serviceAreaSummary.join(", ")} (afhalen in Herzele, levering op aanvraag).
+                      Serviced areas: {serviceAreaSummary.join(", ")} (gratis afhalen in de afhaalbox in Herzele, verzending in heel België).
                     </span>
                   </p>
                 </div>

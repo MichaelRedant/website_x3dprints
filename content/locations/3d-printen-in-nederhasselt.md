@@ -17,7 +17,7 @@
 
 ## Lokale focus in Nederhasselt
 
-Werk je in Nederhasselt? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Nederhasselt.
+Werk je in Nederhasselt? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending naar Nederhasselt.
 
 - Montagehulpstukken en klemmen voor snelle herstellingen.
 - Kleine en grotere series onderdelen met consistente passing.
@@ -70,7 +70,7 @@ Nederhasselt ligt in het groene Rosdel-landschap ten oosten van Ninove. De stad 
 2. Kies materiaal en afwerking.
 3. Ontvang binnen 24 uur een transparante offerte.
 4. Na akkoord starten we met **3D printen in Nederhasselt**.
-5. Ophalen in de regio of verzending volgens afspraak.
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 
@@ -79,7 +79,7 @@ Nederhasselt ligt in het groene Rosdel-landschap ten oosten van Ninove. De stad 
 - **Standaard levering**: 2 tot 5 werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Ninove of omgeving.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -97,7 +97,7 @@ Nederhasselt ligt in het groene Rosdel-landschap ten oosten van Ninove. De stad 
 ## Veelgestelde vragen over 3D printen in Nederhasselt
 
 **Hoe snel is 3D printen in Nederhasselt?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Nederhasselt of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Nederhasselt of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Nederhasselt?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

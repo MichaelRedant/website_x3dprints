@@ -6,7 +6,7 @@ Need **3D printing in Overmere**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Overmere teams choose us
 
-- Local delivery to Overmere, Donkmeer and Berlare, Uitbergen; pickup in Herzele.
+- Shipping to Overmere, Donkmeer and Berlare, Uitbergen; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Overmere.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

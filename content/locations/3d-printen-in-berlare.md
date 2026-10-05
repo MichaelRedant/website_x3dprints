@@ -9,7 +9,7 @@
 - **Snelle offerte**: u weet snel wat het kost en wanneer het klaar is.
 - **Korte doorlooptijd**: meestal enkele werkdagen.
 - **Materiaaladvies**: PLA, PETG of TPU op basis van uw toepassing.
-- **Lokale levering**: in alle deelgemeenten van Berlare.
+- **Verzending**: naar alle deelgemeenten van Berlare; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -73,7 +73,7 @@ Test en verbeter uw ontwerp in dagen in plaats van weken.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -92,7 +92,7 @@ Test en verbeter uw ontwerp in dagen in plaats van weken.
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Berlare?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Donkmeer of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Donkmeer of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Berlare?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

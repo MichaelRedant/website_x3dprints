@@ -23,7 +23,7 @@
 
 ## Lokale focus in Waarschoot
 
-Werk je in Waarschoot? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sint-Ghislenuskerk (Waarschoot).
+Werk je in Waarschoot? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending in de omgeving van Sint-Ghislenuskerk (Waarschoot).
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Prototypes om vorm en werking te testen.
@@ -73,7 +73,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -92,7 +92,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Waarschoot?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sint-Ghislenuskerk (Waarschoot) of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending in de omgeving van Sint-Ghislenuskerk (Waarschoot) of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Waarschoot?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

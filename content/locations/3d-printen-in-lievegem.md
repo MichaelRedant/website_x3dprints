@@ -23,7 +23,7 @@
 
 ## Lokale focus in Lievegem
 
-Werk je in Lievegem? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Lovendegem.
+Werk je in Lievegem? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending naar Lovendegem.
 
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
@@ -73,7 +73,7 @@ Test uw ontwerp snel en verbeter zonder tijdverlies.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -95,7 +95,7 @@ Ja. We maken zowel kleine als grotere series met consistente passing en duidelij
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Lievegem?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Lovendegem of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Lovendegem of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ## Interne links rond 3D printen in Lievegem
 - [3D printen in Lovendegem](/3d-printen-in-lovendegem)

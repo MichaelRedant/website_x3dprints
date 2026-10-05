@@ -23,7 +23,7 @@
 
 ## Lokale focus in Sinaai
 
-Werk je in Sinaai? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Sinaai.
+Werk je in Sinaai? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending naar Sinaai.
 
 - Prototypes om vorm en werking te testen.
 - Behuizingen en beschermkappen voor elektronica of sensoren.
@@ -73,7 +73,7 @@ Test onderdelen snel en stuur bij waar nodig.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -95,7 +95,7 @@ Ja. We maken zowel kleine als grotere series met consistente passing en duidelij
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Sinaai?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Sinaai of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Sinaai of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ## Interne links rond 3D printen in Sinaai
 - [3D printen in Sint-Niklaas](/3d-printen-in-sint-niklaas)

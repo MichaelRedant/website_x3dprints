@@ -8,7 +8,7 @@ Voor **3D printen in Zaventem** leveren we prototypes, fixtures en displays rich
 
 - Offerte binnen één werkdag met heldere prijsopbouw.
 - PLA Matte, PETG en TPU voor zichtwerk, tooling en flexibele delen.
-- EV-levering richting luchthaven, Sterrebeek en Nossegem; afhalen in Herzele kan.
+- Verzending naar luchthaven, Sterrebeek en Nossegem; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Consistente batches dankzij vaste slicerprofielen en QC.
 
 We kennen de noden van aviation/logistiek en kantoorprojecten rond Zaventem. Daardoor stemmen we materiaalkeuze en finishing af op loadcases en zichtkwaliteit.
@@ -42,7 +42,7 @@ We kennen de noden van aviation/logistiek en kantoorprojecten rond Zaventem. Daa
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen, deadline en gewenste afwerking.
-- Levering richting Brussels Airport, Sterrebeek en Nossegem; afhalen in Herzele mogelijk.
+- Verzending naar Brussels Airport, Sterrebeek en Nossegem; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optionele finish (schuren/primen) voor glad zichtwerk.
 
 ---
@@ -54,7 +54,7 @@ Stuur je bestanden via [contact](/contact). We plannen snel de beste aanpak voor
 ## Veelgestelde vragen over 3D printen in Zaventem
 
 **Leveren jullie ook op Brucargo-tijdsloten?**
-We stemmen af op jouw venster en kunnen EV-levering of pakketdienst inplannen afhankelijk van security en timing.
+We stemmen de productieplanning af op jouw venster en verzenden zorgvuldig verpakt. Afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Is TPU geschikt voor airport-omgevingen?**
 Ja. TPU dempt schokken en is ideaal voor kabelklemmen of bescherming van apparatuur.

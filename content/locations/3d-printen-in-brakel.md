@@ -20,7 +20,7 @@ Voor **3D printen in Brakel** leveren we prototypes en zowel kleine als grotere 
 
 - Materiaalkeuze: PLA Matte voor zichtwerk, PETG voor stevige onderdelen, TPU voor flexibele buffers.
 
-- Persoonlijke levering (EV): breekbare of grotere prints brengen we zelf, met zoneprijzen vanaf Herzele.
+- Zorgvuldig verpakte verzending, ook voor grotere of breekbare prints; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 
 
@@ -127,7 +127,7 @@ Deel een link naar je bestand via [contact](/contact). Je krijgt snel een voorst
 
 **Leveren jullie ook in Brakel?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Brakel?**
 

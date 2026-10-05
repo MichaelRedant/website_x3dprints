@@ -6,7 +6,7 @@ Need **3D printing in Halle**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Halle teams choose us
 
-- Local delivery to Halle, Sint-Rochus and Essenbeek and Lembeek, Buizingen; pickup in Herzele.
+- Shipping to Halle, Sint-Rochus and Essenbeek and Lembeek, Buizingen; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Halle.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Halle, Halle city center, Sint-Rochus and Essenbeek, L
 
 ---
 
-## Typical drop-off points near Halle
+## Typical places we serve near Halle
 
 - Halle town center
 - local business park in Halle

@@ -6,7 +6,7 @@ Need **3D printing in Roosdaal**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Roosdaal teams choose us
 
-- Local delivery to Roosdaal, Pamel and Borchtlombeek, Ninoofsesteenweg-corridor; pickup in Herzele.
+- Shipping to Roosdaal, Pamel and Borchtlombeek, Ninoofsesteenweg-corridor; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Roosdaal.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

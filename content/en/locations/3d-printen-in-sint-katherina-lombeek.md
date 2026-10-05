@@ -6,7 +6,7 @@ Need **3D printing in Sint-Katherina-Lombeek**? X3DPrints prints in Herzele and 
 
 ## Why Sint-Katherina-Lombeek teams choose us
 
-- Local delivery to Sint-Katherina-Lombeek; pickup in Herzele.
+- Shipping to Sint-Katherina-Lombeek; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Sint-Katherina-Lombeek.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Sint-Katherina-Lombeek, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Sint-Katherina-Lombeek
+## Typical places we serve near Sint-Katherina-Lombeek
 
 - Sint-Katherina-Lombeek town center
 - local business park in Sint-Katherina-Lombeek

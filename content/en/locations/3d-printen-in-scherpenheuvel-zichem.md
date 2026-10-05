@@ -6,7 +6,7 @@ Need **3D printing in Scherpenheuvel-Zichem**? X3DPrints prints in Herzele and s
 
 ## Why Scherpenheuvel-Zichem teams choose us
 
-- Local delivery to Scherpenheuvel-Zichem, Zichem and Averbode, Testelt; pickup in Herzele.
+- Shipping to Scherpenheuvel-Zichem, Zichem and Averbode, Testelt; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Scherpenheuvel-Zichem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Scherpenheuvel-Zichem, Scherpenheuvel city center, Zic
 
 ---
 
-## Typical drop-off points near Scherpenheuvel-Zichem
+## Typical places we serve near Scherpenheuvel-Zichem
 
 - Scherpenheuvel-Zichem town center
 - local business park in Scherpenheuvel-Zichem

@@ -17,7 +17,7 @@
 
 ## Lokale focus in Meerbeke
 
-Werk je in Meerbeke? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Meerbeke.
+Werk je in Meerbeke? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending naar Meerbeke.
 
 - Kleine en grotere series onderdelen met consistente passing.
 - Prototypes om vorm en werking te testen.
@@ -70,7 +70,7 @@ Meerbeke is bekend als voormalige aankomstplaats van de Ronde van Vlaanderen en 
 2. Kies materiaal en afwerking.
 3. Ontvang binnen 24 uur een transparante offerte.
 4. Na akkoord starten we met **3D printen in Meerbeke**.
-5. Ophalen in de regio of verzending volgens afspraak.
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 
@@ -79,7 +79,7 @@ Meerbeke is bekend als voormalige aankomstplaats van de Ronde van Vlaanderen en 
 - **Standaard levering**: 2 tot 5 werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Ninove of omgeving.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -100,7 +100,7 @@ Meerbeke is bekend als voormalige aankomstplaats van de Ronde van Vlaanderen en 
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Meerbeke?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Meerbeke of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Meerbeke of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Meerbeke?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

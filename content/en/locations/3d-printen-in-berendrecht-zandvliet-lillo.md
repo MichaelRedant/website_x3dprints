@@ -6,7 +6,7 @@ Need **3D printing in Berendrecht-Zandvliet-Lillo** for port tooling, scanner ho
 
 ## Why Berendrecht-Zandvliet-Lillo teams choose us
 
-- Local delivery to Berendrecht-Zandvliet-Lillo, Berendrecht and Zandvliet, Lillo; pickup in Herzele.
+- Shipping to Berendrecht-Zandvliet-Lillo, Berendrecht and Zandvliet, Lillo; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Berendrecht-Zandvliet-Lillo.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

@@ -6,7 +6,7 @@ Need **3D printing in Hoegaarden**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Hoegaarden teams choose us
 
-- Local delivery to Hoegaarden, Meldert (Vlaams-Brabant) and Outgaarden, N29/E40-corridor; pickup in Herzele.
+- Shipping to Hoegaarden, Meldert (Vlaams-Brabant) and Outgaarden, N29/E40-corridor; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Hoegaarden.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

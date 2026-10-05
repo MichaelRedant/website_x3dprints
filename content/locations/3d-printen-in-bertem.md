@@ -1,6 +1,6 @@
 # 3D printen in Bertem: Leuvense rand en N3/E40
 
-Met **3D printen in Bertem** leveren we prototypes, behuizingen en tooling richting Korbeek-Dijle, Leefdaal en de E40/N3-corridor. Snelle offertes, transparante prijzen en leveringen via de Leuvense as.
+Met **3D printen in Bertem** leveren we prototypes, behuizingen en tooling richting Korbeek-Dijle, Leefdaal en de E40/N3-corridor. Snelle offertes, transparante prijzen en verzending in heel België.
 
 ---
 
@@ -8,7 +8,7 @@ Met **3D printen in Bertem** leveren we prototypes, behuizingen en tooling richt
 
 - Offerte binnen één werkdag met realistische lead time.
 - PLA Matte, PETG en TPU voor zichtwerk, sterke onderdelen en flexibele klemmen.
-- EV-levering richting Bertem/Leuven-rand; afhalen in Herzele kan.
+- Verzending naar Bertem en Leuven-rand; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 ---
 
@@ -39,7 +39,7 @@ Met **3D printen in Bertem** leveren we prototypes, behuizingen en tooling richt
 ## Praktisch
 
 - Deel een STL/STEP-link via [contact](/contact) met aantallen en finish.
-- Levering via N3/E40; afhalen in Herzele mogelijk.
+- Verzending in heel België; gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 - Optioneel schuren/primen voor glad zichtwerk.
 
 ---

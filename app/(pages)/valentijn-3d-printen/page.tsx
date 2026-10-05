@@ -33,7 +33,7 @@ const ideas = [
 const workflow = [
   "Lever STL/STEP of kies ontwerpservice (EUR 45/uur).",
   "Kies materiaal: Silk/Marble voor glans, Matte voor zachte look, Translucent voor licht.",
-  "Noteer afwerking (raw, licht geschuurd, geprimed) en leveroptie (EV-zone of pakketdienst).",
+  "Noteer afwerking (raw, licht geschuurd, geprimed) en leveroptie (verzending of gratis afhalen in de afhaalbox in Herzele).",
   "We plannen samen richting 14 februari 2026 zonder onrealistische beloftes.",
 ]
 
@@ -48,7 +48,7 @@ const faqItems = [
   },
   {
     q: "Hoe zit het met levering?",
-    a: "EV-zones in Vlaanderen (afhankelijk van afstand) of pakketdienst. Afhalen in Herzele kan gratis. Breekbare stukken verpakken we gescheiden.",
+    a: "Verzending in heel België, volgens het gewicht van je pakket. Afhalen is gratis, 24 op 7, in de afhaalbox in Herzele. Breekbare stukken verpakken we gescheiden.",
   },
 ]
 
@@ -71,7 +71,7 @@ export default function ValentijnLandingPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Seasonal</p>
           <h1 className="mt-3 text-balance text-4xl font-extrabold text-slate-900 sm:text-5xl">Valentijn 2026 3D prints op maat</h1>
           <p className="mt-4 max-w-3xl text-pretty text-lg text-slate-700">
-            Hartdecor, naamplaatjes en gepersonaliseerde cadeaus voor Valentijn 2026 in Silk, Matte en Translucent PLA. Ontwerp niet inbegrepen; lever STL/STEP of kies ontwerpservice aan EUR 45/uur. Levering via EV-zones of pakketdienst.
+            Hartdecor, naamplaatjes en gepersonaliseerde cadeaus voor Valentijn 2026 in Silk, Matte en Translucent PLA. Ontwerp niet inbegrepen; lever STL/STEP of kies ontwerpservice aan EUR 45/uur. Verzending of gratis afhalen in de afhaalbox in Herzele.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <ShimmerButton href="/contact?material=pla-silk">Plan je Valentijnprint 2026</ShimmerButton>
@@ -138,7 +138,7 @@ export default function ValentijnLandingPage() {
                 href="/pricing"
                 className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
               >
-                Prijzen & leverzones
+                Prijzen & verzending
               </Link>
               <Link
                 href="/segments/3d-printing-seasonal"

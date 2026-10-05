@@ -373,8 +373,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
           en: "How does ordering or requesting this spool work?",
         },
         answer: {
-          nl: "Voorlopig verloopt dit product via een offerteaanvraag. Zo bevestigen we eerst het gewenste aantal, de actuele stock, de verzendkost of een afhaalmoment in Herzele.",
-          en: "For now, this product runs through a quote request. That lets us confirm the desired quantity, current stock, shipping cost, or a pickup moment in Herzele first.",
+          nl: "Voorlopig verloopt dit product via een offerteaanvraag. Zo bevestigen we eerst het gewenste aantal, de actuele stock en de verzendkost. Afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.",
+          en: "For now, this product runs through a quote request. That lets us confirm the desired quantity, current stock and shipping cost first. Pickup is free, 24/7, from the pickup box in Herzele.",
         },
       },
       {

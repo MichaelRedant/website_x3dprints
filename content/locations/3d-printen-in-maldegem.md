@@ -7,7 +7,7 @@ X3DPrints levert nauwkeurige 3D prints in Maldegem en deelgemeenten. We helpen m
 ## Waarom X3DPrints voor Maldegem?
 
 - **Korte doorlooptijd**: doorgaans 2-5 werkdagen, spoed op aanvraag.  
-- **Levering of afhalen**: bezorging richting Markt, Krommewege en industriezone via N49/E34, of afhalen in Herzele.  
+- **Levering of afhalen**: verzending naar de Markt, Krommewege en de industriezone, of gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Heldere prijzen**: check indicaties op [pricing](/pricing) of vraag een offerte via [contact](/contact).  
 - **Materiaaladvies**: PLA Matte voor displays, PETG voor buitengebruik langs Schipdonk- en Leopoldkanaal, TPU voor dempers en clips.
 
@@ -58,7 +58,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Maldegem?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Maldegem?**
 

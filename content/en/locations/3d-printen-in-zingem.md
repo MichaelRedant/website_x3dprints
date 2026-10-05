@@ -6,7 +6,7 @@ Need **3D printing in Zingem**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Zingem teams choose us
 
-- Local delivery to Zingem; pickup in Herzele.
+- Shipping to Zingem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Zingem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Zingem, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Zingem
+## Typical places we serve near Zingem
 
 - Zingem town center
 - local business park in Zingem

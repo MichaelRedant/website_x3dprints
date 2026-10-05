@@ -152,7 +152,7 @@ const differentiators = [
   {
     title: "Bewuste aanpak",
     copy:
-      "3D printen met oog voor duurzaamheid: bundelen van jobs, lokale levering en reststroombeleid. Lees meer hierover op de FuturePrint Lab pagina.",
+      "3D printen met oog voor duurzaamheid: bundelen van jobs, compacte verzending en reststroombeleid. Lees meer hierover op de FuturePrint Lab pagina.",
   },
 ]
 
@@ -253,7 +253,7 @@ const faq = [
   {
     q: "Bieden jullie 3D printen aan in mijn regio?",
     a:
-      "Ja. We leveren 3D print service in heel BelgiÃ«, met focus op Vlaanderen (onder andere Gent en Aalst). Afhalen in Herzele is mogelijk op afspraak.",
+      "Ja. We leveren 3D print service in heel België, met focus op Vlaanderen (onder andere Gent en Aalst). Afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.",
   },
   {
     q: "Kan ik een 3D model laten printen zonder eigen ontwerp?",

@@ -22,7 +22,7 @@
 
 ## Lokale focus in Kruibeke
 
-Werk je in Kruibeke? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Fort van Kruibeke.
+Werk je in Kruibeke? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending in de omgeving van Fort van Kruibeke.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -72,7 +72,7 @@ Een testprint maakt uw beslissingen sneller en zekerder.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

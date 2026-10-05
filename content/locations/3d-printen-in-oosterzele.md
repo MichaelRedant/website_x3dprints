@@ -52,7 +52,7 @@ Stuur STL of STEP via [contact](/contact) met aantallen en deadline. Onderdelen 
 ## Veelgestelde vragen over 3D printen in Oosterzele
 
 **Hoe snel is 3D printen in Oosterzele?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Oosterzele of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending naar Oosterzele of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Oosterzele?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

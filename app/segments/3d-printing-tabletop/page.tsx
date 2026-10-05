@@ -71,7 +71,7 @@ const workflowSteps = [
   },
   {
     title: "3. Print en bescherming",
-    copy: "Minis worden gecontroleerd, apart verpakt en verzonden of opgehaald op afspraak.",
+    copy: "Minis worden gecontroleerd, apart verpakt en verzonden, of je haalt ze gratis op in de afhaalbox in Herzele.",
   },
 ]
 
@@ -94,7 +94,7 @@ const materialRows = [
 ]
 
 const deliveryPoints = [
-  "Afhaling in Herzele op afspraak is mogelijk.",
+  "Afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.",
   "Verzending gebeurt stevig verpakt met scheiding van breekbare onderdelen.",
   "Voor grotere batches stemmen we timing af op je speeldag of eventdatum.",
 ]

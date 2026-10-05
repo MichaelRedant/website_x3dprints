@@ -6,7 +6,7 @@ Need **3D printing in Kluisbergen**? X3DPrints prints in Herzele and ships quick
 
 ## Why Kluisbergen teams choose us
 
-- Local delivery to Kluisbergen, Berchem and Kwaremont, Ruien; pickup in Herzele.
+- Shipping to Kluisbergen, Berchem and Kwaremont, Ruien; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Kluisbergen.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Kluisbergen, Kluisbergen city center, Berchem, Kwaremo
 
 ---
 
-## Typical drop-off points near Kluisbergen
+## Typical places we serve near Kluisbergen
 
 - Kluisbergen town center
 - local business park in Kluisbergen

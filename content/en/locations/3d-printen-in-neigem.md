@@ -6,7 +6,7 @@ Need **3D printing in Neigem**? X3DPrints prints in Herzele and ships quickly to
 
 ## Why Neigem teams choose us
 
-- Local delivery to Neigem; pickup in Herzele.
+- Shipping to Neigem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Neigem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Neigem, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Neigem
+## Typical places we serve near Neigem
 
 - Neigem town center
 - local business park in Neigem

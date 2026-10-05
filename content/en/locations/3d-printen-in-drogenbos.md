@@ -6,7 +6,7 @@ Need **3D printing in Drogenbos**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Drogenbos teams choose us
 
-- Local delivery to Drogenbos, Industrieterrein Kanaalzone and R0 zuidrand; pickup in Herzele.
+- Shipping to Drogenbos, Industrieterrein Kanaalzone and R0 zuidrand; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Drogenbos.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

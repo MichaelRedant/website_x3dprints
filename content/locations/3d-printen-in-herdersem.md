@@ -17,7 +17,7 @@
 
 ## Lokale focus in Herdersem
 
-Werk je in Herdersem? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met levering richting Herdersem.
+Werk je in Herdersem? We maken prototypes en zowel kleine als grotere series die meteen inzetbaar zijn, met verzending naar Herdersem.
 
 - Pasmallen en sjablonen voor montage en assemblage.
 - Montagehulpstukken en klemmen voor snelle herstellingen.
@@ -67,7 +67,7 @@ Herdersem ligt in de Dendervallei en grenst aan het Groot Park. Bewoners profite
 2. Kies materiaal en afwerking voor **3D printen in Herdersem**.
 3. Ontvang binnen 24 uur een offerte.
 4. Na akkoord starten we met **3D printen in Herdersem**.
-5. Ophalen in de regio of verzending volgens afspraak.
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 
@@ -76,7 +76,7 @@ Herdersem ligt in de Dendervallei en grenst aan het Groot Park. Bewoners profite
 - **Standaard**: 2–5 werkdagen voor **3D printen in Herdersem**.
 - **Spoed**: in overleg mogelijk.
 - **Verzending**: tarieven volgens [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in de buurt van Herdersem of Borsbeke.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

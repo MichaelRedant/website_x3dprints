@@ -39,15 +39,13 @@ export const X3D_FILAMENT_PRICE_EUR_PER_KG: Record<MaterialKey, number> = {
   PETG: 18.99,
   PC: 42.99,
   PC_FR: 56.99,
-  TPU: 43.99,
+  TPU: 39.99, // TPU for AMS (beslist 2026-10-05)
 }
 
 // Materialen die enkel de prijswijzer gebruikt (nog geen eigen materiaalpagina).
 // Bron: prijslijst X3DPrints (vault, sectie 6). Prijzen voor de 20% materiaalmarge.
-export type GuideOnlyMaterialKey = "ASA" | "ASA_CF" | "PAHT_CF"
+export type GuideOnlyMaterialKey = "ASA"
 
 export const GUIDE_ONLY_FILAMENT_PRICE_EUR_PER_KG: Record<GuideOnlyMaterialKey, number> = {
   ASA: 24.99,
-  ASA_CF: 38.99,
-  PAHT_CF: 101.99,
 }

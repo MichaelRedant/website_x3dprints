@@ -6,7 +6,7 @@ Need **3D printing in Schorisse**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Schorisse teams choose us
 
-- Local delivery to Schorisse, Maarkedal and Nukerke, Etikhove; pickup in Herzele.
+- Shipping to Schorisse, Maarkedal and Nukerke, Etikhove; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Schorisse.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

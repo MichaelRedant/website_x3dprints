@@ -6,7 +6,7 @@ Need **3D printing in Beervelde**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Beervelde teams choose us
 
-- Local delivery to Beervelde, Lochristi and Zaffelare, Zeveneken; pickup in Herzele.
+- Shipping to Beervelde, Lochristi and Zaffelare, Zeveneken; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Beervelde.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

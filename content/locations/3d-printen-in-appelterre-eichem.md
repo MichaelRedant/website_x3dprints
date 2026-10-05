@@ -70,7 +70,7 @@ Appelterre-Eichem grenst aan de Dender en sluit naadloos aan bij de stad Ninove.
 2. Kies materiaal en afwerking.
 3. Ontvang binnen 24 uur een transparante offerte.
 4. Na akkoord starten we met **3D printen in Appelterre-Eichem**.
-5. Ophalen in de regio of verzending volgens afspraak.
+5. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending.
 
 ---
 
@@ -79,7 +79,7 @@ Appelterre-Eichem grenst aan de Dender en sluit naadloos aan bij de stad Ninove.
 - **Standaard levering**: 2 tot 5 werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Ninove of omgeving.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 

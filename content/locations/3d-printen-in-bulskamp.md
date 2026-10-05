@@ -42,9 +42,9 @@ Werk je in Bulskamp? We leveren snelle prototypes en zowel kleine als grotere se
 
 ## Levering of afhalen
 
-- We leveren richting Bulskamp, Lo-Reninge en de kanaalzone tijdens vaste Westhoek-ritten
-- Pakketdienst voor dringende zendingen naar partners in De Moeren of Houtem
-- Afhalen in Herzele blijft mogelijk, inclusief een korte doorloop van modellen in de [viewer](/viewer)
+- Verzending naar Bulskamp, Lo-Reninge en de kanaalzone
+- Ook dringende zendingen naar partners in De Moeren of Houtem
+- Gratis afhalen in de afhaalbox in Herzele, 24 op 7, inclusief een korte doorloop van modellen in de [viewer](/viewer)
 
 ## Klaar om te starten?
 
@@ -64,7 +64,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Bulskamp?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 <!-- LOCAL_ENRICH_START -->
 ## Wat je moet weten in Bulskamp

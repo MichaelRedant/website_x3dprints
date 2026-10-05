@@ -72,7 +72,7 @@ Met rapid prototyping test u ontwerpen snel, zonder grote investeringen.
 - **Standaard**: meestal enkele werkdagen.
 - **Spoed**: mogelijk na overleg.
 - **Verzending**: tarieven op de [prijzenpagina](/pricing).
-- **Afhaling**: op afspraak in Herzele.
+- **Afhaling**: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele.
 
 ---
 
@@ -91,7 +91,7 @@ Met rapid prototyping test u ontwerpen snel, zonder grote investeringen.
 PLA voor detail, PETG voor sterkte, TPU voor flexibiliteit. We adviseren op basis van gebruik.
 
 **Hoe snel is 3D printen in Bellem?**
-Meestal enkele werkdagen. Spoed kan in overleg; levering richting Onze-Lieve-Vrouw-Geboortekerk of afhalen in Herzele.
+Meestal enkele werkdagen. Spoed kan in overleg; verzending in de omgeving van Onze-Lieve-Vrouw-Geboortekerk of gratis afhalen in de afhaalbox in Herzele, 24 op 7.
 
 **Hoe werkt een offerte voor 3D printen in Bellem?**
 Stuur je STL/STEP en toepassing. Je krijgt een duidelijke prijs en planning, meestal dezelfde dag of binnen 1 werkdag.

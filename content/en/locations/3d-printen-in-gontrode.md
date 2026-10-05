@@ -6,7 +6,7 @@ Need **3D printing in Gontrode**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Gontrode teams choose us
 
-- Local delivery to Gontrode, Melle and Merelbeke, Wetteren; pickup in Herzele.
+- Shipping to Gontrode, Melle and Merelbeke, Wetteren; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Gontrode.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Gontrode, Gontrode city center, Melle, Merelbeke, Wett
 
 ---
 
-## Typical drop-off points near Gontrode
+## Typical places we serve near Gontrode
 
 - Gontrode town center
 - local business park in Gontrode

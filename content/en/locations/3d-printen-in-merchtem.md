@@ -6,7 +6,7 @@ Need **3D printing in Merchtem**? X3DPrints prints in Herzele and ships quickly 
 
 ## Why Merchtem teams choose us
 
-- Local delivery to Merchtem, Brussegem and Mollem, Hammet; pickup in Herzele.
+- Shipping to Merchtem, Brussegem and Mollem, Hammet; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Merchtem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

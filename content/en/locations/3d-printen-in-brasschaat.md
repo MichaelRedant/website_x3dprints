@@ -6,7 +6,7 @@ Need **3D printing in Brasschaat**? X3DPrints prints in Herzele and ships quickl
 
 ## Why Brasschaat teams choose us
 
-- Local delivery to Brasschaat; pickup in Herzele.
+- Shipping to Brasschaat; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Brasschaat.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

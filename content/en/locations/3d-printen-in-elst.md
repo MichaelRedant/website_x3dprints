@@ -6,7 +6,7 @@ Need **3D printing in Elst**? X3DPrints prints in Herzele and ships quickly to E
 
 ## Why Elst teams choose us
 
-- Local delivery to Elst; pickup in Herzele.
+- Shipping to Elst; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Elst.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Elst, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Elst
+## Typical places we serve near Elst
 
 - Elst town center
 - local business park in Elst

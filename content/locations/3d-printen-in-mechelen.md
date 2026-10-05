@@ -38,13 +38,13 @@ Voor projecten in Mechelen combineren we korte doorlooptijd met strakke afwerkin
 1. Deel een STL/STEP-link met toepassing, kritieke maten en gewenste afwerking  
 2. Materiaaladvies (PLA/PETG/TPU) + prijsvoorstel binnen een werkdag  
 3. Print, supportverwijdering en steekproef op kritieke maten  
-4. Afhalen in Herzele of levering richting Mechelen en Vlaanderen
+4. Gratis afhalen in de afhaalbox in Herzele, 24 op 7, of verzending naar Mechelen en heel België
 
 ## Levering of afhalen
 
-- Afhalen: Provincieweg 34a, 9552 Herzele (afspraak)  
-- Levering Mechelen/Battel/Muizen/Walem/Leest: in overleg, beschermde verpakking  
-- Bpost/pakketdienst voor andere adressen in Vlaanderen
+- Afhalen: gratis, 24 op 7, in de beveiligde afhaalbox in Herzele  
+- Verzending naar Mechelen, Battel, Muizen, Walem en Leest in beschermde verpakking  
+- Verzending naar andere adressen in heel België
 
 ## Klaar om te starten?
 
@@ -63,7 +63,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Mechelen?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 <!-- LOCAL_ENRICH_START -->
 ## Lokale accenten voor Mechelen

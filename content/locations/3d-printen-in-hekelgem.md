@@ -20,7 +20,7 @@ Voor **3D printen in Hekelgem** leveren we prototypes en onderdelen richting Mol
 
 - Materiaalkeuze: PLA voor zichtwerk, PETG voor robuuste delen, TPU voor flexibele buffers.
 
-- EV-levering voor breekbare of grotere prints.
+- Zorgvuldig verpakte verzending, ook voor grotere of breekbare prints.
 
 
 
@@ -111,7 +111,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Hekelgem?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Hekelgem?**
 

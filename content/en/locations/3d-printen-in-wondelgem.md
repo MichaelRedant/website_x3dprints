@@ -6,7 +6,7 @@ Need **3D printing in Wondelgem**? X3DPrints prints in Herzele and ships quickly
 
 ## Why Wondelgem teams choose us
 
-- Local delivery to Wondelgem; pickup in Herzele.
+- Shipping to Wondelgem; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Wondelgem.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Wondelgem, Pickup in Herzele.
 
 ---
 
-## Typical drop-off points near Wondelgem
+## Typical places we serve near Wondelgem
 
 - Wondelgem town center
 - local business park in Wondelgem

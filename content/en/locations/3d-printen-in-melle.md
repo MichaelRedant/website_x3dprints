@@ -6,7 +6,7 @@ Need **3D printing in Melle**? X3DPrints prints in Herzele and ships quickly to 
 
 ## Why Melle teams choose us
 
-- Local delivery to Melle, Gontrode and Merelbeke, Wetteren; pickup in Herzele.
+- Shipping to Melle, Gontrode and Merelbeke, Wetteren; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Melle.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.
@@ -38,7 +38,7 @@ We frequently deliver to: Melle, Melle city center, Gontrode, Merelbeke, Wettere
 
 ---
 
-## Typical drop-off points near Melle
+## Typical places we serve near Melle
 
 - Melle town center
 - local business park in Melle

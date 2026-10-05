@@ -6,7 +6,7 @@ Need **3D printing in Ekeren** for a robust holder, sensor housing, repair part 
 
 ## Why Ekeren teams choose us
 
-- Local delivery to Ekeren, Rozemaai and Leugenberg, Ekeren-Donk; pickup in Herzele.
+- Shipping to Ekeren, Rozemaai and Leugenberg, Ekeren-Donk; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Ekeren.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

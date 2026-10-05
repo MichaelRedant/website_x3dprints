@@ -6,7 +6,7 @@ Need **3D printing in Eke**? X3DPrints prints in Herzele and ships quickly to Ek
 
 ## Why Eke teams choose us
 
-- Local delivery to Eke, Nazareth and De Pinte, Merelbeke; pickup in Herzele.
+- Shipping to Eke, Nazareth and De Pinte, Merelbeke; free pickup, 24/7, from the pickup box in Herzele.
 - Fast quotes: response in one business day with clear pricing.
 - Accurate fits for enclosures, jigs and assemblies used in Eke.
 - Optional finishing (sanding/priming/paint) for customer-facing parts.

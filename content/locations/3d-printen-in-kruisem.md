@@ -1,13 +1,13 @@
 # 3D printen in Kruisem: snel geleverd langs E17 en Vlaamse Ardennen
 
-Kruisem bundelt Kruishoutem, Nokere, Wannegem-Lede en Zingem. X3DPrints levert hier snelle 3D prints voor kmo's, makers en events, met levering via E17 en de N60.
+Kruisem bundelt Kruishoutem, Nokere, Wannegem-Lede en Zingem. X3DPrints levert hier snelle 3D prints voor kmo's, makers en events, met verzending naar Kruishoutem, Nokere, Wannegem-Lede en Zingem.
 
 ---
 
 ## Waarom X3DPrints voor Kruisem?
 
 - **Snelle doorlooptijd**: meestal 2-5 werkdagen; spoed op aanvraag.  
-- **Levering** richting industriezone, Nokeredorp en Zingem station; afhalen in Herzele kan.  
+- **Verzending** naar industriezone, Nokeredorp en Zingem station; gratis afhalen in de afhaalbox in Herzele, 24 op 7.  
 - **Materiaaladvies**: PLA Matte/Silk voor visuals, PETG voor buiten en trillende omgevingen, TPU voor flexibele klemmen.  
 - **Transparante prijzen**: zie [pricing](/pricing) of vraag direct via [contact](/contact).
 
@@ -50,7 +50,7 @@ PLA Matte voor strakke visuals, PETG voor sterke functionele onderdelen en TPU v
 
 **Leveren jullie ook in Kruisem?**
 
-Ja, levering is mogelijk en afhalen in Herzele kan ook. We stemmen dit graag af op je planning.
+Ja, verzenden kan en afhalen is gratis, 24 op 7, in de afhaalbox in Herzele.
 
 **Wat kost 3D printen in Kruisem?**
 
